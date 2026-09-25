@@ -1,0 +1,202 @@
+# Inside Star Citizen: Paws and Claws
+# https://www.youtube.com/watch?v=jXIDcsDwUas
+[    0.0] There are lots of ways to bring life to the worlds of Star Citizen.
+[    3.6] Whether that's the people that inhabit them, the structures they build,
+[    7.4] or the coffee cups and food wrapper decor scattered across their desk.
+[   11.8] But perhaps nothing quite as much as nature's inhabitants.
+[   18.3] Now animals, creatures, fauna, whatever you call them,
+[   22.1] have been one of the long, unfulfilled promises of the persistent universe
+[   26.1] since planets were first introduced in Alpha 3.0.
+[   29.3] And .23 patches later, they've made their much anticipated debut
+[   34.1] with the first of a new herd of offerings that will continue on subsequent releases.
+[   39.3] So let's go now to just some of the team members responsible for their creation
+[   43.3] and get just a small glimpse into what went into their creation.
+[   47.3] Creatures are just going to offer a whole different dimension to the gameplay.
+[   56.6] They bring a sense of life to a world,
+[   61.6] gives an environment a sense of that it's a lived in space.
+[   68.8] There's a lot going on on the planets, but it can feel at times like
+[   72.8] there's not a huge amount going on.
+[   76.3] But with the introduction of creatures, that all changes.
+[   80.3] We have now the ability to create life wherever you look.
+[   91.9] It just takes the game to another level of breathtaking.
+[   94.9] It adds believability to the experience that
+[  101.7] I don't think any feature so far has come to the level of adding immersion that Fauna has.
+[  106.7] In Alpha 3.23, we're adding two new creatures.
+[  137.7] One is the Maric and one is the Copian.
+[  144.2] When you're kind of exploring these planets,
+[  150.4] we are introducing a whole range of different creatures going forward into the future.
+[  156.4] Well, you want to start off simple, right?
+[  158.4] You look at it, you're like, oh cool, you know, should we work on these big creatures straight away?
+[  162.4] Or should we ground down, make sure the pipeline works, make sure the basics work?
+[  166.4] What's more simple than a dog cat and a bird?
+[  170.4] Ultimately, the birds basically prove out these features that they can be done, they are doable.
+[  176.4] Let's start with the Maric bird.
+[  178.4] So this is a fairly simple creature and you'll see them flying around in flux.
+[  184.4] And it's really nice when you're just in your ship looking out the window
+[  188.4] and you see a bunch of birds and life on the surfaces where you wouldn't before.
+[  193.4] I think the Maroc as a bird will add a sense of scale to the world.
+[  197.4] Like, it helps a lot to see a flock of bird and add scale to anything that's bigger in the distance.
+[  204.4] I think this is going to help a lot to that part.
+[  206.4] If you're like walking along the planetary surface and you hear a call in the distance,
+[  211.4] you're like, oh there's Maric so we can go find them, we can go see them.
+[  216.4] With the creature designs, we don't want to make anything that you look at and you go,
+[  220.4] oh that's a pigeon because we're a sci-fi game, we want to make it a bit cooler and a bit weird.
+[  225.4] We don't want to spoil too much about where they are, who they are, what they're doing
+[  228.4] and things like that when it comes to creatures because we basically want the players to find them.
+[  232.4] And we don't want to say, hey, they're on these specific locations, on these specific things
+[  236.4] because they could turn up in areas that you wouldn't expect.
+[  239.4] For the Maroc we wanted the colorful variety of birds that we could use to fill the planets.
+[  244.4] The creatures have different skin depending on the biomes they're in,
+[  249.4] so some are going to be more colorful, some are less colorful.
+[  253.4] They're inspired by real life animals to some extent.
+[  258.4] They have these big, like, gulped chins, they've got these nice flappy wingspans,
+[  263.4] but they're also a bit hairless as well.
+[  265.4] We kind of look at the reference of a featherless bird because for the first batch of creature
+[  272.4] we could not use a lot of feathers and fur, so we went to a more skin type of creatures.
+[  278.4] You know, those cats that don't have any hair, they look a bit like that, but in more of a bird form.
+[  283.4] It's very odd.
+[  285.4] The copion is essentially a hybrid between a dog and a cat.
+[  289.4] It's got four eyes, it's a nice chill social behavior which you can see, you know,
+[  293.4] you see them howling, you hear them howling, you see them walking around
+[  297.4] and kind of, you know, scratching themselves and licking themselves and things like that.
+[  300.4] The copion has a variety of colors. There's one that is more savanna-like,
+[  306.4] there's one that's more forest-like, so it can blend into the environment a bit better.
+[  311.4] There's an arctic one that has kind of the pattern of a snow leopard.
+[  317.4] And then once you're in combat, they're essentially, they're faster than the player sprinting
+[  323.4] and they're usually in packs of like 10 to 14.
+[  328.4] Visually, they're a nice kind of sleek slender look.
+[  331.4] When you think of dogs, you think of them more like worker dogs.
+[  335.4] When somebody asks us, you know, how big is this creature, we reference the German shepherd, for example.
+[  339.4] The copion was designed to have a dust-style look, so it has orange, it has big scales on the back.
+[  347.4] Overall, we wanted something that you look at and you go, oh yeah, we know that's a predator.
+[  351.4] And obviously, you know, you can tell things are predators by the way their eyes are shaped
+[  355.4] and how they move, how their bone structure is, how they're set up visually.
+[  359.4] You can look at that in your brain from evolution, basically, it goes, oh, that is a predator and it's going to hurt me.
+[  366.4] So the maric bird is what we call a boid.
+[  371.3] A boid on the general level, you have to imagine it's like a lot more stupid version of an actor, right?
+[  376.3] It's way less resource-intensive, its behaviors are far more simple
+[  380.3] and it's a lot easier to basically put in without performance costs.
+[  385.3] Boids is a system that was developed a while back but has been used to great effect in lots of films and games.
+[  392.3] It's based on three simple rules that allow some very complex behaviors of what you might call flocking.
+[  400.3] The three rules are that they maintain separation so they don't get too close to each other.
+[  407.3] They remain aligned with each other so they'll follow other members of the pack that go in the same direction
+[  412.3] and cohesion are the three rules in boids that allow this flocking behavior to be generated.
+[  418.3] So they're a group of birds that you stay together in a single area and they fly up, they fly down.
+[  425.3] They're intentionally made to be very simple and what you'd expect from a bird,
+[  430.3] especially if you're hunting them as well because we don't want individual birds flying all around the planet and things like that
+[  435.3] because we want to keep them nicely clustered together in an area where you go, okay, cool, this is where the birds are.
+[  441.3] So the copian is not a bird, it's a fully fledged NPC character.
+[  445.3] When you look at the copian that's what we call an actor, right, and that essentially has the more costly associations
+[  451.3] like being able to use nav meshes, being able to use behavior trees,
+[  455.3] because copians have to make decisions but marics don't.
+[  458.3] So a copian is an NPC creature?
+[  460.3] Yes.
+[  461.3] Does it keep those on different chairs?
+[  464.3] Well, firstly they're not going to be on chairs in the first place.
+[  469.3] Unless you lure one into your spaceship and somehow magically put them on a chair.
+[  475.3] No, they're not going to keep those on chairs.
+[  477.3] So you're going on the record that copians are going to jump on a chair?
+[  481.3] No, I'm not going to say they're not going to jump on a chair.
+[  485.3] The animators task with the creatures is to breathe life into these entities
+[  492.4] because these entities basically are just points in space that are moving around the maric
+[  498.4] When it's kind of flying across the sky, as far as the game's concerned,
+[  503.4] it's just a point in space just moving across the sky.
+[  506.4] But the animators actually create that illusion of life.
+[  508.4] The first step in the process is we have a look at the design doc.
+[  512.4] We basically get an idea and a feel for what the designers are after for the creature.
+[  517.4] We then try and kind of link that to, because these are alien creatures,
+[  521.4] we kind of link that back to what is it like that already exists on Earth.
+[  526.4] And for the maric, it was things like a pelican, that kind of creature.
+[  530.4] So we then gather the reference of pelicans doing all the things that we want the maric to do.
+[  535.4] With that, we will then try and kind of breathe that life, that essence of that creature into the maric.
+[  542.4] So we went through many different iterations of the poses that this copion should be in.
+[  548.4] Very small details can kind of tell a whole different story about the copion.
+[  553.4] In one case, we were creating the aggressive idol pose.
+[  556.4] We had a pose that we thought was kind of really aggressive looking, kind of down low,
+[  561.4] and it was kind of ready to kind of pounce at you.
+[  563.4] But one of the devs said, like, this kind of feels like it's playing with me.
+[  567.4] It kind of feels like it's kind of should be wagging his tail.
+[  570.4] So we just kind of changed a few very subtle things.
+[  573.4] And all of a sudden, like the whole feeling of that pose changes.
+[  577.4] So there's many, many different kind of decisions that we have to make to achieve that final result that we want,
+[  584.4] that result of the copion being this aggressive thing that's out for your blood.
+[  589.4] One of the things we've been doing with copions is trying to get them to attack in packs.
+[  595.4] And we do this by giving them some special formation code that brings them together
+[  601.4] and makes them seem really cohesive in a different way from the boys.
+[  606.4] You want to engage a few things from distances as they are faster than the player when they are sprinting.
+[  610.4] So these will essentially attack you and circle you in packs to think a bit more behaviour akin to wolves.
+[  616.4] If you come across a copion outside in the wild, the first thing you'll probably want to do is back up really quickly
+[  623.4] as they all come charging at you.
+[  625.4] And that can be really quite hazardous if you don't look where you're going and fall down a ravine or something.
+[  631.4] They've got two attacks, which is this really scary pounce attack and then they've got a more short-ranged attack.
+[  636.4] So when the creature is kind of lunging towards you, one of the versions of the animation we had was where it kind of leapt out towards you
+[  645.4] and it had all of its claws out, back feet, front feet, its jaws were open just to make it look as kind of aggressive and as dangerous as possible.
+[  656.4] But it turns out that kind of made it look less dangerous because it was showing its belly.
+[  662.4] So we basically adjusted the back end of the copion, brought its paws in slightly and again that changes the entire kind of feel.
+[  673.4] When the silhouette of this thing coming towards you is just a pair of jaws opening up, ready to kind of clamp down on you and it makes it look a lot more aggressive.
+[  683.4] And they hurt quite a lot. The average hit will take a quarter of your health off, so you've got to kill these things before they come close to you,
+[  690.4] which is a problem when you're in caves.
+[  692.4] So when you're in caves, it's a close quarters environment and the copians have the upper hand.
+[  706.4] So you'll come across a copian in a cave and they'll probably be doing some really cool little idle animation like scratching themselves or shaking themselves with fleas.
+[  723.8] And if you are surprising for the first time and they're on their own, they'll probably get a bit scared and run away and join the other copians.
+[  731.8] If you follow them, then that's when you'll probably get into trouble because a pack of three or four or more copians attacking at the same time could be really quite deadly.
+[  743.8] So with the Maroc, it was a very iterative process and there was a lot of back and forth.
+[  751.9] It started off with experimenting with morphing where you can take one source and morph it with another one.
+[  759.9] And we did a lot of experimentation with using different types of birds like eagles and hawks and owls and morphing it with non-animal source,
+[  769.9] like more like textural, squeaky, squeaky stuff.
+[  773.9] So we started off quite grounded and taking sounds that sounded quite a lot like ravens and crows,
+[  782.7] but we're going more towards a little bit more like dinosaur-esque and a bit more screechy and more alien.
+[  789.7] So yes, trying to find that balance.
+[  792.7] The copian we wanted to make sure that it has a presence in the world.
+[  805.2] You don't just hear it when it's attacking you.
+[  807.2] You can hear it snuffling around and grunting when you're sneaking up on it.
+[  812.2] They're howling, they're communicating with each other.
+[  815.2] We just wanted it to add life and presence to the world.
+[  818.2] So the copian is a very mean-looking predator and we wanted it to sound just as mean as it looks.
+[  824.2] So we started off with a mix of sources from lions and tigers and all sorts of predatory mammals
+[  833.2] and mixing it in with dogs and things like seals, sea lions,
+[  839.2] and trying to bring in an alien element as well with some non-literal sounds.
+[  844.2] I've got a recording of a wet balloon squeaking that I mix in at certain points just to give it a little bit of alien flavour.
+[  854.2] So one of our sound designers, Chris, has this beautiful cocker spaniel that he recorded loads of sounds of at his house
+[  861.2] and we used a little bit of that sprinkled in just to give it that dog characteristic.
+[  867.2] Are you saying that you find sea lions and wet balloons terrifying?
+[  872.2] It can be if you put them in the right order.
+[  880.2] So the sounds of fear are sea lions, wet balloons and cocker spaniels.
+[  887.2] We know some of you don't just want to pet the bird, watch the bird, look at the bird, enjoy the bird, be one with the bird.
+[  909.8] Some of you want to murder the bird.
+[  911.8] Yeah, so I've seen some people going up to the birds and punching them, which is definitely a way to interact with wildlife.
+[  920.3] And if you do that, you will find a pearl in there, I think it's in the base of their mouth and essentially there.
+[  927.3] It's made of like congealed innards and looks incredibly gross.
+[  931.3] So if you manage to kill the coca-cans, you'll see the horn on them and you can loot that and it's basically a valuable commodity of which you can sell on.
+[  938.3] It's going to be exciting for the players to hunt out those creatures and find them in different environments, whether they'll be in the middle of the trees or hiding in caves.
+[  953.3] There's a bit of a challenge there, but there's also that feeling of nature and the wild that you're going to get kind of peering on creatures, performing these kind of behaviors as though they're not being watched by humans before.
+[  967.3] But the nice thing about this is it kind of leads into a wider gameplay loop that we're looking at.
+[  973.3] We talked about crafting quite a lot and this is an example of how crafting gameplay will come into it.
+[  978.3] So it'll be the first step as we're looking at more creatures and more variants and things like that, but obviously we're getting that further detail as we go on.
+[  987.3] The creatures such as fauna in general, obviously we've previously experimented, we've previously played with things as you'll have seen, but now we're in the active development of it.
+[  997.0] So we have a really nice kind of idea of what we want for 1.0 and all the creatures we want for that and looking at how we can make the creatures in the future fit in the stars and the universe.
+[ 1010.0] So we've always been tinkering, we've always been playing, but now we have a pipeline.
+[ 1014.0] That technology is working in and we've basically proven it out now.
+[ 1019.0] So the future of creatures is a lot more easier and convenient to make than some of the more previous challenges.
+[ 1026.0] I think it's very exciting for us and the character team to tackle the creatures.
+[ 1030.0] It's something that the whole team is excited about, we are very proud of the work that we do.
+[ 1036.0] So animating a creature isn't an easy thing at all.
+[ 1039.0] So obviously for the creatures we couldn't mocap.
+[ 1042.0] So hanky in the creatures, it can be difficult to raise the quality up to the level that the rest of the universe is at.
+[ 1051.0] But I think as a team, I think we've really managed to actually achieve that level of quality that we're aiming for.
+[ 1058.0] I think the team's done a great job.
+[ 1060.0] Creatures definitely bring life to the different planet environments that we have.
+[ 1066.0] It allows us to have a different range of kind of gameplay situations where you've got characters attacking you in different ways and allowing us to show a more characterful range of behaviors perhaps.
+[ 1082.0] Creatures, it's not just a static prop, it's something that is alive and breathing and you can react to it and it will react to you and it just gives a bit of gameplay for the player to engage in.
+[ 1095.0] And as we go on, the previous creatures that you've seen, for example the space whale and the space cow, those things are in active development right now.
+[ 1104.5] And you can imagine with creatures that are this large, the question is how do we loot them, how do we do those things.
+[ 1111.5] And that will be a very fun addition and the things we're cooking up are very exciting.
+[ 1118.4] So you'll see creatures in 323 and it's going to be an amazing experience adding true believability to the world.
+[ 1125.4] Happy hunting, good luck getting those horns and try not to switch the pearls, they're a bit gross.
+[ 1130.4] So what have we learned this week?
+[ 1136.2] Well we learned that it takes that confluence of disciplines like art, design, animation, AI and more to bring these creatures to life.
+[ 1143.2] That you don't actually have to hunt these fine fauna, but if you do there are rewards to be had.
+[ 1149.2] And that copians prefer the tundras and savannas they're used to and may not behave well if you forcibly relocate them.
+[ 1156.2] Not that that has ever stopped any one of you.
+[ 1159.2] For Inside Star Citizen, I'm Jared Huckabee.
+[ 1161.2] Thanks for letting us share the process of game development with you and we'll see you all here next week.

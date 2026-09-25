@@ -1,0 +1,1371 @@
+# Star Citizen Live: Rivers and Tech and Bugs, Oh My!
+# https://www.youtube.com/watch?v=5V-pCrB2NLM
+[    5.5] Those were the best.
+[    6.7] That sounds good.
+[    7.5] Three musketeers, because it's not Nugget.
+[    9.1] I don't understand the propensity of putting Nugget
+[   12.7] into these things.
+[   17.8] I mean, you could have been on the wide,
+[   18.8] so you could have been seen too.
+[   21.2] You see it.
+[   22.1] Well good, we're just children, chocolate bars.
+[   23.8] Hi everybody.
+[   25.2] Welcome to Star Citizen Live, Rivers and Tech and Bugs.
+[   29.9] Oh my, I'm your host, Jared Huckabee.
+[   31.8] And joining us on the show, at least for the first half,
+[   34.5] is a community acclaimed river guy.
+[   39.4] What's happening?
+[   40.5] I remember the river guy.
+[   42.0] The river guy, you sent me a picture of the YouTube comment,
+[   44.2] like they just called me river guy.
+[   45.7] Yeah, it was like River Man has struck again or something.
+[   49.0] Was it River Man or River Guy?
+[   50.2] I thought it was River Guy.
+[   51.6] You put River Guy in the event title,
+[   53.4] so that's as official as it gets.
+[   54.5] I feel like it was River Guy.
+[   56.7] So yeah, so that's all we're talking about today.
+[   58.5] I just want to let you know that that's it.
+[   60.7] And take care, everybody.
+[   61.8] See you.
+[   71.0] He did it.
+[   72.3] Um, all right.
+[   75.0] Will, how are you doing, man?
+[   76.0] I'm doing really good.
+[   76.8] How about you?
+[   77.6] I'm doing well.
+[   80.2] It's funny being here, seeing it all.
+[   81.9] This is your first time on this show?
+[   83.3] Yes, only constant, first time seeing it.
+[   85.1] It's pretty cool.
+[   86.0] I like it.
+[   86.9] We spent a couple of hours having to fix the window yesterday.
+[   90.3] The window had a technical problem.
+[   92.0] Yeah, I didn't realize it was a screen, but it is.
+[   94.5] Don't dispel the magic.
+[   95.9] Sorry, it's a window.
+[   96.7] I called it a window over to New Barbers.
+[   98.0] I specifically didn't.
+[  100.5] Technical issues with the window.
+[  103.6] I fired.
+[  104.2] All right, throw up the things for watching.
+[  105.3] Let's just start it again.
+[  110.9] Hi, everybody.
+[  112.3] Take three.
+[  112.9] Welcome to Star Citizen Live.
+[  114.3] I'm your host, Jared Huckabee.
+[  115.6] And if you've never seen Star Citizen Live before,
+[  117.8] it's where we take about an hour to the end of our week.
+[  120.0] And it is true.
+[  122.0] Live Vash Spiegel in Twitch chat.
+[  126.1] It is live.
+[  127.5] You think we would leave that in if it weren't?
+[  129.3] I was going to take about an hour to the end of our week,
+[  131.6] but we hang out.
+[  132.3] We chat.
+[  133.2] We talk about us and who we are and what we do
+[  136.6] and a little bit of what we put into this wonderful project
+[  140.6] we call Star Citizen.
+[  142.4] And sometimes, I'm squadron free too.
+[  144.0] I love some squadron people on today, I think.
+[  146.5] Joining us on the show this week is River Guy himself,
+[  149.9] Mr. Wil Hain.
+[  150.8] Hey, Dylan.
+[  151.3] That's me.
+[  151.8] Yeah, I'm doing good.
+[  153.0] Your title is Engine Programmer 3.
+[  155.8] Yes, indeed.
+[  157.5] I'm going to ask you right off the bat,
+[  159.3] what makes an Engine Programmer 3 better
+[  161.7] than an Engine Programmer 2?
+[  162.8] You know an Engine Programmer 2.
+[  164.0] I want you to throw that person under the bus.
+[  167.8] Honestly, I ask the same question.
+[  169.8] I think it's roughly years of service,
+[  172.2] but I think it's like which year of service you're in,
+[  175.5] because I'm approaching my third year.
+[  177.8] But it's also like not at the same time.
+[  180.9] I've not got a clear answer to anyone.
+[  182.7] It means I'm better than a two, I guess,
+[  184.8] depending on who you ask.
+[  186.2] I'd hope.
+[  186.9] Do you know an Engine Programmer 2?
+[  188.5] Yeah, yeah.
+[  189.6] I don't know a couple.
+[  190.6] Once you're looking at this camera and say,
+[  191.6] I just said I was better than you.
+[  192.9] I just said I was better than you.
+[  195.2] Someone's judgment, anyway.
+[  197.3] Now, is that really years or game dev years?
+[  200.6] So that's here he is.
+[  203.6] And game dev.
+[  204.2] Well, no, no, yeah.
+[  205.1] Game dev years, I guess, if you were coming from somewhere else.
+[  207.1] But this is my first.
+[  207.9] Yeah, game dev years are like presidential years.
+[  211.0] It's like it may have only been three years in a normal calendar.
+[  214.5] But it's been 20 game dev years.
+[  216.1] If you see it in the face.
+[  217.4] I see my life spread before.
+[  219.9] There is in a video I make where there is at least one person going,
+[  222.6] wow, disco looks tired.
+[  223.9] And it's like I got tired once in 2016 and I've never recovered.
+[  230.4] So it's just welcome to game dev years.
+[  233.4] Yeah, Phil.
+[  234.4] Phil's nodding back there.
+[  235.3] He feels like, yeah, like, like, like, like,
+[  237.1] Phil has got this 1,000 yard stair back there.
+[  238.9] He's like, yes, I know what that is.
+[  241.9] We'll talk to Phil later in the show.
+[  244.6] All right, so Will, what do you work on for Star Citizen?
+[  248.7] And what does engine programmer do?
+[  251.7] Well, engine programmer could be anyone, really.
+[  254.1] I'm working on the engine.
+[  255.2] But more specifically, I work on Planet Tech team.
+[  257.7] There's four of us, five, depending on who you count.
+[  261.3] And we work on all of the procedural tools,
+[  263.4] like the rivers, like the planets,
+[  265.6] like some of the graphics-y stuff,
+[  267.5] because we're kind of a graphics team and yet kind of not.
+[  270.9] But generally, I'd say generically,
+[  272.8] an engine programmer's just going to be working on Cortec
+[  274.9] and kind of like low-level engine stuff.
+[  276.7] Specifically, I work on the procedural,
+[  279.7] the building big things from small amounts of data
+[  282.2] very, very quickly, sort of side of things.
+[  284.7] Such as?
+[  286.2] Yeah, such as the planets.
+[  287.5] So it's just the rivers.
+[  288.5] That's what we do, you know?
+[  289.5] We have these enormous, giant-scale planets
+[  292.4] that we build from, like, less than 10 megs of data.
+[  295.8] And we do it runtime as you fly around.
+[  297.9] And that's what my team kind of manage and work on
+[  300.6] and improve and develop new features for.
+[  303.5] So, you know, obviously, we do Inside Start Citizen
+[  308.5] every Thursday, and that's where you're going to see
+[  310.0] the big feature updates and stuff.
+[  312.9] If you haven't checked out yesterday's episode,
+[  315.3] all about tremendous new mining improvements
+[  317.0] that are coming in the next content patch
+[  320.2] after 318 goes out.
+[  323.4] Please, please.
+[  326.3] Phil, Ray, any hope?
+[  329.0] We literally have two of the QA managers
+[  331.2] and the director of QA.
+[  332.2] I'm like, anything?
+[  333.7] Anything?
+[  334.7] Um, what was I going with this?
+[  337.7] I don't know.
+[  338.7] You were going with just, like, what they're seeing
+[  340.2] as the mining stuff.
+[  341.2] But on the Friday show, we like to kick back,
+[  343.7] we like to talk, we like to just explore
+[  345.3] a little bit about the people.
+[  347.2] So, Will, who are you?
+[  350.1] Who are you?
+[  351.1] We talked about what you do, but who are you?
+[  352.7] Who's Will, Hain?
+[  354.1] I'm Will.
+[  355.9] I'm a two-dimensional character.
+[  357.4] I exist purely for clown-imperial games.
+[  360.4] And I went to Uni Down in Cardiff
+[  363.1] where I studied game design and development.
+[  365.4] I've done programming since I was about 11.
+[  367.1] I used to use a program called DS Game Maker
+[  370.8] where you could make very, very bad games
+[  373.9] and then put them on one of those R4 ROM cards.
+[  376.5] You can put your DS with a microSD card in.
+[  378.6] And that's, like, my first kind of exposure to programming.
+[  382.6] But, yeah, just kind of snowball from there.
+[  384.4] I really wanted to do music for a long time,
+[  386.6] but I kind of refused to do it academically
+[  388.7] because I wanted it to be organic.
+[  390.3] And then I kind of thought,
+[  391.8] well, I need to do something that will definitely earn me money
+[  396.1] so that I can afford to do my music.
+[  398.1] And I thought, I'm pretty good at programming,
+[  399.6] so I'll roll with that.
+[  400.8] I did the course in Cardiff, which was great.
+[  403.8] And I did a dissertation in Planet Terrain Generation,
+[  408.7] where I essentially made this GPU-powered
+[  412.8] planet generator based on ridges and rivers,
+[  416.8] which would then propagate out to an entire planet.
+[  419.0] Very bad it was.
+[  420.6] Anyway, I applied to a couple of jobs
+[  423.2] kind of a couple months before I was going to graduate.
+[  425.5] I applied here.
+[  427.0] Marco, you know, Marco, he picked it up, interviewed me.
+[  431.0] Really liked the stuff in the dissertation.
+[  432.5] It was like, so we're doing something similar.
+[  433.9] Just brought up New Babbage on this big screen
+[  435.9] in the interview room.
+[  436.7] And I was like, yeah, that's cool.
+[  439.4] And yeah, that's how I got here.
+[  441.5] That's who I am.
+[  442.7] Seriously, I started in one of those Mario level maker programs.
+[  446.9] Absolutely. I had this game.
+[  448.3] I had this game. No one's allowed to copy this.
+[  450.3] I had this game idea when I was about 11.
+[  452.5] I wanted to create a game called Infection,
+[  454.3] where you were essentially like a little nanobot
+[  456.8] flying around in someone's veins, shooting like viruses.
+[  460.8] Was my concept.
+[  462.3] Anyway, I spent a very long time in MS Paint,
+[  465.1] making 2D backgrounds of veins, I guess,
+[  468.6] and this little ship that would fly around
+[  470.3] and then tried to make that happen.
+[  474.4] And yeah, you could just about like move around.
+[  477.1] We had...we.
+[  478.9] I had this.
+[  480.3] He was we.
+[  481.8] I didn't have a studio at 11.
+[  484.0] I had like the...
+[  486.9] You could paint the map down
+[  488.6] and then you could paint a magenta overlay
+[  491.0] to show where you wanted collision to happen.
+[  493.8] So it was literally just...
+[  494.9] There was no real physics.
+[  495.9] It was just if you hit the magenta,
+[  497.4] you bounced back sort of thing.
+[  499.1] And it was tacky and horrible and terrible.
+[  501.4] But yeah, that was the first thing I did.
+[  503.5] In one of those programs,
+[  505.2] the games that let you make other games.
+[  507.3] It wasn't a game as such.
+[  508.6] It was made by some other young guy.
+[  511.5] I think he was like 15 or 16.
+[  513.8] And it was made in Windows Forms.
+[  515.3] So it was a real program.
+[  517.1] And the idea was you used like one of those
+[  519.8] like game maker-y, scratchy sort of programs.
+[  523.0] You used like event blocks to trigger stuff happening.
+[  526.8] But you could go in and write...
+[  529.2] Look at the code behind those event blocks,
+[  531.0] which I think was in C.
+[  532.3] And so I started like copying events
+[  534.1] and changing little bits to try and make it do something similar.
+[  537.6] I had no idea what I was doing.
+[  539.0] But I just kind of experimented until something worked
+[  541.9] and tested the guy who made this game maker far too much.
+[  546.2] But yeah.
+[  547.3] We all get our start somewhere.
+[  549.4] So school in Cardiff,
+[  551.1] the only thing I know about Cardiff
+[  552.1] is I think that's where Torchwood happened.
+[  554.5] That show...
+[  555.3] Yeah, yeah, yeah.
+[  556.5] Doctor Who. Doctor Who.
+[  557.9] Doctor Who and Torchwood, both down in Cardiff.
+[  559.8] Yeah, Capital Wales.
+[  560.6] That's only where I went to uni though.
+[  561.7] I studied at Yorkshire where I grew up, up in school,
+[  565.0] and that's where I did computer science,
+[  566.6] which was wholly unhelpful.
+[  570.0] My paternal grandfather was from Wales.
+[  572.0] Like that's Huckabee as a Welsh name,
+[  573.5] our code of arms as Welsh.
+[  574.5] But I've never actually been down there.
+[  576.2] Well, there you go.
+[  577.1] Yeah, my maternal grandfather...
+[  579.6] No, my maternal grandmother is Welsh.
+[  582.0] And then we've got some other Welshes in the family too
+[  583.9] through various other uncles, marrying people and stuff.
+[  587.4] So a lot of going on with Wales.
+[  588.5] My partner's Welsh as well.
+[  590.0] So we go back there a lot.
+[  591.4] So let's talk rivers now.
+[  592.8] Yeah, rivers.
+[  593.6] Rivers. Why?
+[  595.8] Why rivers?
+[  596.6] You're brought in.
+[  598.3] You've got all this planet stuff.
+[  600.0] And you could conceivably...
+[  602.1] Your engine program are three.
+[  603.3] You've got some skills.
+[  604.1] I don't mind telling people you've got some skills.
+[  606.1] You could essentially be working on anything you want.
+[  610.2] But then reason here.
+[  611.0] Anything the project demands.
+[  612.1] Yeah, yeah, yeah.
+[  613.9] Why rivers?
+[  615.1] Well, rivers are a funny one.
+[  616.2] So back to that interview with Marco,
+[  618.3] when I'm sitting there looking at a picture of New Babbage
+[  621.1] on the screen and he's saying,
+[  622.3] how do we solve this problem?
+[  623.3] How do we solve that problem?
+[  624.8] And then he says, can I have a look at your dissertation?
+[  626.8] So I bring it up on my laptop and I've got rivers.
+[  629.4] I mean, they're just trenches at this point.
+[  631.5] And I say to Marco, have you got rivers?
+[  633.0] And he says, we haven't got rivers.
+[  635.2] So about five, six months into working at CIG,
+[  639.6] Marco asked me to start working on a terrain modification system.
+[  643.5] You remember we did the first ISE about that.
+[  646.5] Because...
+[  647.2] Your first ISE.
+[  648.0] My first, yeah, not yours.
+[  650.2] Because we had no way of modifying the terrain currently.
+[  652.4] It was fixed because of all the shared data
+[  655.1] and it's nothing being local, blah, blah, blah, blah.
+[  657.1] Anyway, so I started working on a solution to that.
+[  658.8] And then I said to Marco, this is going really well.
+[  661.8] I could use this to make rivers.
+[  663.3] Do you mind if I do?
+[  665.6] And he said, no, that sounds cool.
+[  668.1] So I did.
+[  670.1] That was really, it was really nice to kind of have that freedom.
+[  672.7] And obviously I couldn't put that much time into it to start with
+[  675.1] because it was kind of like a side project.
+[  676.5] But eventually I started, I remember the first version of it.
+[  679.5] We deformed the terrain and then raised the ocean to fill the gap.
+[  684.1] And the ocean kind of, it was a real gimmick.
+[  689.2] It looked really bad.
+[  690.0] The waves were going the wrong way.
+[  691.3] Long shader for an ocean.
+[  692.6] Yeah, yeah.
+[  693.2] And it was the same mesh.
+[  694.2] So we had no kind of like control over it or anything really.
+[  698.3] But it just out worked.
+[  699.2] And anyway, he showed CR and we managed to get some time
+[  702.0] scheduled for it.
+[  702.7] And that's how I started working on rivers, which is, yeah, it was,
+[  705.3] it was really cool to go from saying, I want to work on this to it being a feature.
+[  711.5] And I remember it coming up on the roadmap for the first time and being
+[  714.0] really excited.
+[  715.0] I was like, I've worked on something that's on the roadmap.
+[  718.1] And being able to tell people about it, it was cool.
+[  720.0] It's really, I really like the rivers.
+[  721.3] That's it.
+[  721.5] I still need to do more on them.
+[  723.2] They're still my baby.
+[  724.0] No one else takes rivers.
+[  725.0] There's an aspect of Game of Dev that I probably doesn't get talked about a whole lot.
+[  730.4] Well, the, the, oh, that sounds cool.
+[  732.9] Let's let's do that.
+[  733.9] You know, it's anybody's watched the stuff that, you know, over time, they know I'm
+[  738.5] you know, the only constant game development has changed.
+[  740.5] You know, this game development, not game construction and whatnot.
+[  745.2] It is a lot of things come about because of.
+[  749.7] A serendipity.
+[  751.1] It is you have a person that has an aptitude and a certain thing and you have
+[  758.7] a resources like an engine or a technology that can support the thing.
+[  762.8] And you go, yeah, OK, we can spend a couple of sprints or we can spare this one person
+[  767.9] out of a team of hundreds or whatever to go and explore this kind of stuff.
+[  771.7] And it's actually one of it's one of those aspects.
+[  774.0] It's one of those stories in game development that becomes difficult to tell
+[  777.9] because without context, it sounds unorganized.
+[  784.3] Yeah, it sounds as well.
+[  786.0] Kind of crazy for every the for every one of the Oh, that sounds cool.
+[  790.1] Let's give it a go that you proceed with and get a feature out of there.
+[  793.3] Our hundreds of that sounds like cool.
+[  796.0] Let's give it a go events that don't materialize in anything.
+[  799.6] So you don't know whether to you don't know when something's
+[  802.7] becomes important.
+[  803.6] You don't know when something becomes the the first time rivers were implemented
+[  807.4] or it becomes the first time a feature that we never ever used or never ever
+[  811.4] explored was tried, you know.
+[  813.8] So it doesn't it kind of it gives it it develops kind of importance and.
+[  820.8] I don't know, story ability, story ability by the time it's already important.
+[  826.9] I don't know if you know.
+[  827.6] Well, I get what you're trembling over my words.
+[  829.9] No, I get what you're saying.
+[  831.8] Hey, we're going to do something here.
+[  834.5] Let's switch to switch to Will's camera, Tom.
+[  837.5] Hey, oh, that one.
+[  838.4] Yeah, yeah.
+[  839.3] Well, I want you to talk about why you think rivers are important.
+[  843.6] Chat is going on about some buffering stuff.
+[  845.6] I'm going to go check this out real quick.
+[  846.9] Oh, so I'm going to give you your own camera and you talk you talk to them
+[  849.6] about why they should think rivers matter.
+[  851.9] And I'm going to be back in a minute.
+[  853.0] I'm going to check this out.
+[  854.1] Yo, chat rivers.
+[  855.7] The reason I think rivers are really, really cool and really, really important
+[  858.8] is they are almost just a catalyst to improving the planetary tech in of itself.
+[  865.9] So everything that has been built around rivers and built to allow rivers to work
+[  870.6] has generated improvements on the planetary tech itself.
+[  875.6] So we didn't have terrain modification.
+[  878.4] We wouldn't have taken that as far if there wasn't as big a mandate as rivers.
+[  881.8] We didn't have this specific control over what spawns in what area,
+[  886.6] depending on local features.
+[  888.5] But because we wanted it for rivers, we drove that and now we can use it everywhere.
+[  892.8] Hello.
+[  893.4] So it's not just a cool feature and a cool location.
+[  897.6] And it doesn't just kind of add to the realism of the planets
+[  900.7] and add unique locations that we really didn't have before.
+[  903.8] It is just a way of not only showing off new development in the planet tech
+[  909.8] and the procedural tech, but also a catalyst for generating kind of the need
+[  914.4] for work and the drive to provide these new features.
+[  918.1] It's all well saying, well, I want to be able to control specifically
+[  922.2] at what level all these rocks want to spawn.
+[  924.0] You say, well, why do we need that control?
+[  926.4] What feature demands that?
+[  928.2] But actually what you can say with the rivers, you can say, well, we need it for this.
+[  931.9] So we make it for the rivers and now we've got it for everything
+[  934.6] and we can use it for all the other locations.
+[  936.2] And when we start introducing more unique POIs, we have this control
+[  939.6] and we have this technology that we wouldn't have otherwise.
+[  942.6] There you go.
+[  943.7] Great. And talk about how it gets us to cliff sides and stuff like that.
+[  947.9] Cliff side.
+[  948.4] So the new river cliffs in 318 are really cool, actually.
+[  952.1] So the piece of technology that allows them to exist
+[  954.6] is this thing called on-demand spawn points.
+[  957.1] I won't go into too much technical detail,
+[  960.2] but the spawning system is run by a piece of code called Buying Builder,
+[  964.1] which I helped look after in Planet Tech.
+[  967.6] And that has lots of cells across the planet,
+[  970.8] a grid of cells across the entire planet, each of which have a set of spawn points.
+[  975.5] Spawn points are usually random and then they take their properties
+[  978.1] from the terrain in order to decide what to spawn.
+[  980.8] On-demand spawn points is a little bit of code
+[  983.1] that allows us to hook into that and say, we want a spawn point here.
+[  986.2] We want it right here.
+[  987.5] We want an object to appear.
+[  990.3] And you can even specify some overriding stuff as well, which is pretty cool.
+[  995.0] Now, that was developed for the rivers and then for the cliffs
+[  997.9] to allow us to say, well, yeah, we've got all these rules
+[ 1000.9] about where we want such and such a rock,
+[ 1002.6] but you can't always just cover for this all in rulesets.
+[ 1006.4] Sometimes you need specific art directions.
+[ 1008.1] Sometimes you need to say, well, this is a river gorge.
+[ 1010.9] We need a wall of river cliffs going along the side.
+[ 1013.7] So that's the kind of tech that's driven that.
+[ 1016.4] We want to be able to...
+[ 1019.2] We want to be able to place this on natural forming
+[ 1023.4] and naturally occurring cliffs across the planet as well,
+[ 1026.6] which will be really cool because then when you get those really steep slopes
+[ 1030.0] that kind of naturally appear on our planets anyway,
+[ 1032.9] we will be able to populate them with the really beautiful cliff meshes.
+[ 1035.9] But there's also some rumors and some talks
+[ 1038.5] about going a different direction with that and kind of doing more...
+[ 1042.7] a more of a technical approach, which I won't spoil,
+[ 1045.2] but it will be really cool if we end up doing that.
+[ 1047.6] I hope we do.
+[ 1049.1] But yeah, the on-demand spawn points are driving it at the moment
+[ 1051.0] and they're really cool.
+[ 1052.5] More of a technical approach.
+[ 1054.3] More of a technical approach.
+[ 1055.8] Yeah, GPU-y stuff.
+[ 1058.6] I'm not going to spoil this, not my plan to spoil.
+[ 1061.0] So for those of you who are watching live on Twitch right now,
+[ 1064.8] the ingest is fine.
+[ 1065.8] There are no drop frames or anything like that.
+[ 1067.8] So there's a bunch of people in Twitch
+[ 1070.2] saying that they're experiencing lag and de-sing and stuff.
+[ 1073.1] That's platform related.
+[ 1074.6] It's nothing to do with the ingest here.
+[ 1076.5] So we're sending up a signal to Twitch and they're receiving it just fine.
+[ 1080.0] So that's all that we have control over.
+[ 1081.6] So the best I can offer is that if Twitch is struggling or something right now,
+[ 1086.8] this will be up on YouTube later today as it always is.
+[ 1089.8] So besides rivers,
+[ 1094.9] I know you're working with rivers and done.
+[ 1096.9] You've got this stuff going into 318.
+[ 1098.5] Yeah.
+[ 1099.5] I don't think it's any secret to say that there are bodies of water in Squadron 42.
+[ 1105.1] And you're doing you're working on the stuff for Squadron 42,
+[ 1107.9] some water related stuff for Squadron 42.
+[ 1110.1] We don't want to.
+[ 1111.1] Yeah.
+[ 1113.5] But someday you're going to like, you're going to be like,
+[ 1117.3] yes, that is water.
+[ 1118.8] Yeah.
+[ 1119.2] Water is is is is is a liquid.
+[ 1121.6] And it's good.
+[ 1122.7] And like my time with water.
+[ 1124.3] Yeah, it is complete.
+[ 1126.1] And you're going to move on to something else.
+[ 1128.7] What if you had control over that?
+[ 1131.1] And then Mark goes, we know what Mark goes watching.
+[ 1133.4] Mark goes a big fan.
+[ 1136.5] And if I could choose what I was going to work on next,
+[ 1139.9] God, there's so many things.
+[ 1141.1] I really want to go back to the the spawning and I want to make our planets
+[ 1144.4] more physicalized, which means nothing.
+[ 1148.0] I want the planets to be realistic.
+[ 1150.1] So we currently have our climate.
+[ 1151.5] We have temperature and humidity.
+[ 1153.6] I want more detail, more control, more procedurally, so that you can click a
+[ 1158.2] button with some randomised parameters and generate an entire unique planet
+[ 1161.8] just like that.
+[ 1162.9] So I want it to be.
+[ 1164.0] I want to say, well, this is the local sun on the solar system.
+[ 1167.5] And this is where the planet is.
+[ 1168.7] And these were the materials that were around when he was forming.
+[ 1171.7] So where are we likely to have continents?
+[ 1174.6] Where are we likely to have resources in the soil?
+[ 1177.4] What plants and rocks are likely to have come here?
+[ 1179.7] I'd like to.
+[ 1180.7] And I don't know if we'll ever be able to do this, but I'd like to do
+[ 1183.1] full terrain like simulation from kind of like you could do those cool
+[ 1189.1] simulations where you have a flat piece of terrain and you start introducing
+[ 1191.9] water droplets and it forms the kind of naturally occurring erosion.
+[ 1194.8] Because that's not what the rivers are.
+[ 1196.3] The rivers are finding where a river works, given the current terrain,
+[ 1200.1] because we we can locally edit terrain with the terrain modifier,
+[ 1202.9] but we can't completely reshape the planets because of our procedural
+[ 1206.4] tech is relying on reading these fixed height maps that we have.
+[ 1210.1] We can we can tweak it here and there, but we can't reshape the whole thing
+[ 1213.7] currently, but it'd be really cool to do kind of like a full erosion sort of thing.
+[ 1218.1] Whether that's ever going to find its home in the P.U.
+[ 1220.5] though, in our kind of like our system where we're finding, you know,
+[ 1224.9] hundreds of planets and stuff.
+[ 1226.4] I don't know, but that's the sort of thing I'd love to work on.
+[ 1229.5] Yeah, it's it's it's hard because I mean, I don't think anyway,
+[ 1232.8] it's going to go going to say we don't push things, push technologies and stuff
+[ 1237.6] in ways that maybe other games sometimes don't.
+[ 1240.1] But there are always considerations for the multiplayer aspect,
+[ 1244.4] for the MMO aspect, for the server.
+[ 1246.0] There are things that we could easily do just for a single player.
+[ 1250.0] Yeah, yeah.
+[ 1250.9] Anybody can control the perspective.
+[ 1252.7] You know, it's only being seen.
+[ 1253.9] Exactly. If you've I mean, with the planets, the best example is
+[ 1256.7] if you've got one planet and you've got 20 gigs of hard space, hard drive space,
+[ 1260.9] you can go into so much detail and you can have so much locality.
+[ 1264.6] But actually, that's not where we need to push the push the boundaries.
+[ 1267.9] Well, what we need to do is push the boundaries so that you can have
+[ 1272.0] hundreds and hundreds of planets in minimal, minimal data in one game
+[ 1275.1] download. And as well, if you wanted accurate height maps of Earth,
+[ 1278.3] you know, that's terabytes and you want the kind of level of resolution
+[ 1281.1] that we have on our planets on just, I mean, Earth or something smaller.
+[ 1285.1] Even it's not possible to read it from raw data.
+[ 1288.1] You can't do that.
+[ 1289.3] Like you need to be streaming it in like Microsoft Flight Simulator does.
+[ 1292.7] And even that, that's a really, really, really beautiful game.
+[ 1295.5] But you go to the terrain and it's not the fidelity that you'd expect
+[ 1298.7] when you walk around the terrain. It's a flying game. It's a playing game.
+[ 1301.2] It's designed to look good from above. And it really does.
+[ 1304.5] But yeah, that's not the problem we're trying to solve.
+[ 1306.4] We're trying to generate these beautiful, unique planets.
+[ 1309.3] And we're trying to do it in such a way where it's scalable,
+[ 1311.6] because we don't need a one to one replica of Earth that is down to the
+[ 1315.7] centimeter every single place.
+[ 1317.4] We need fully explorable planets and we need many of them.
+[ 1320.7] And we need it to not take up several terabytes on each of our users
+[ 1324.1] hard drives or SSDs.
+[ 1327.0] So yeah, pushing the boundaries in the right way, I think,
+[ 1330.0] is the right takeaway from that.
+[ 1332.0] You know, there are probably six or seven people
+[ 1335.4] all running to Reddit right now to make a correct...
+[ 1337.7] No, no, no, no, that's correct you.
+[ 1339.4] To make a post about how somebody at CIG said they can't do Earth,
+[ 1344.1] and Earth isn't coming and blah, blah.
+[ 1347.8] We were just talking, we were just talking earlier before the show
+[ 1350.1] about making a light cue and a little music cue
+[ 1352.3] when I have to do these things.
+[ 1353.6] We don't have that yet.
+[ 1354.6] Later we're just talking about today.
+[ 1356.0] But he's talking about the current tech
+[ 1358.4] and the current place that we're at
+[ 1359.6] and the current resources we have
+[ 1360.7] and the current intentions
+[ 1361.5] and the current directions like this.
+[ 1362.9] Obviously folks who have been following the project
+[ 1365.0] for a long time know that Earth still exists
+[ 1367.8] in the 30th century.
+[ 1370.2] And when it comes time for that point
+[ 1372.4] on the development wheel to roll around,
+[ 1374.9] we'll be discussing how and when
+[ 1376.6] and where we'll be doing that and stuff.
+[ 1378.1] So it's just right now.
+[ 1379.5] Yeah, I'm not unconfirming Earth.
+[ 1383.1] I'd say if you're working on Planet Tech
+[ 1385.0] and you wanna make Earth one day,
+[ 1386.1] then each of your decisions kind of loading up to that
+[ 1388.5] needs to take it into account to some description.
+[ 1391.0] You don't wanna accumulate all of that tech debt.
+[ 1394.0] Right.
+[ 1394.8] It is gonna be an interesting challenge
+[ 1395.8] when it comes to because unlike every other planet,
+[ 1398.9] like people can walk outside and see it.
+[ 1400.7] Yeah, you can see, well, that hail by my house.
+[ 1403.0] Yeah.
+[ 1403.9] So it'll be an interesting challenge when the time comes.
+[ 1405.6] It's gonna be a really, really good one.
+[ 1406.9] I'm looking forward to that as well.
+[ 1408.0] We have a phrase in Evergreen.
+[ 1411.8] It's the people who work on ISE and SCL.
+[ 1414.1] We say that's a problem for future us.
+[ 1416.4] Yeah, probably for future us.
+[ 1417.7] Screw those guys.
+[ 1418.5] Ha ha ha ha ha.
+[ 1420.9] So after rivers, you wanna work on spawning.
+[ 1426.1] I wanna work more on the spawning stuff
+[ 1427.3] but I wanna make it all crystallized.
+[ 1428.7] That's one thing.
+[ 1429.7] It doesn't work on any number of things.
+[ 1431.3] I wanna do lava and volcano.
+[ 1432.6] You'll like spawning, I can tell.
+[ 1434.3] It's like, yeah, I like spawning.
+[ 1435.5] Yeah, lava, volcano, is that be cool?
+[ 1438.0] I like to do...
+[ 1439.8] Say volcanoes?
+[ 1441.2] I'd love to do it.
+[ 1442.1] I'm not saying I will.
+[ 1443.0] I'm saying I'd love to.
+[ 1445.2] It's just like a...
+[ 1446.0] I know that phrase.
+[ 1446.9] It's like a vertical river.
+[ 1448.1] I love that mountain.
+[ 1449.7] Just turn that, just turn that on that side.
+[ 1452.6] I mean, maybe for a lava river, you could say that.
+[ 1455.0] It's like a slow moving river with more VFX.
+[ 1458.1] But what if you want the lava to set?
+[ 1459.8] And what if you want to put on your fire hazmat suit
+[ 1464.2] and walk through it?
+[ 1465.1] Oh, you know, there is tech and there is work
+[ 1468.5] and there is more features needed
+[ 1470.2] to just implement something that looks
+[ 1472.5] like an aesthetic change on the surface.
+[ 1474.5] Because it's all the gameplay.
+[ 1475.8] That's what got with rivers as well.
+[ 1478.3] When we got there, when we got it looking good,
+[ 1480.0] when we got it ready to release,
+[ 1481.9] the thing I was working on in the months
+[ 1485.1] leading up to putting out our first river
+[ 1487.3] was not making the rivers look better.
+[ 1489.0] It was the gameplay.
+[ 1489.9] It was making the Gravelette vehicles recognize it.
+[ 1492.3] It was making the player drown
+[ 1495.4] if they take off their helmet underwater.
+[ 1496.9] It was the VFX not spitting up dirt and stuff
+[ 1500.3] when you fly your hoverbike over it.
+[ 1502.5] It was all of the gameplay
+[ 1503.9] and none of the beautification anymore
+[ 1505.9] because there are so many facets
+[ 1507.8] to putting something in a sandbox world like ours.
+[ 1510.8] It's not a simple wall here it is, it's done.
+[ 1513.5] You've got to think about everything the player can do to it,
+[ 1516.1] everything the player can do there.
+[ 1517.5] What's going to look stupid?
+[ 1518.5] What's not going to work?
+[ 1520.1] It's a big job.
+[ 1521.6] It'd be the same for lava when it does come.
+[ 1523.7] I think it will come.
+[ 1524.7] Someone said it would come.
+[ 1526.7] I hope so. I want to work on it.
+[ 1528.9] Look into that camera and say we are definitely doing lava.
+[ 1532.3] I'm not saying that's not my call to make Jared.
+[ 1535.7] Hold on, can I get in there?
+[ 1537.3] Will says we're definitely doing lava at some point.
+[ 1540.6] You can take that to Reddit. Will said so.
+[ 1544.4] Jared said Will said so.
+[ 1546.6] There are some days I just like to watch the world burn.
+[ 1548.9] Oh, you do.
+[ 1550.1] Burning lava.
+[ 1551.3] That's about it, man.
+[ 1552.4] Yeah.
+[ 1553.2] I know you got to catch your train back.
+[ 1554.6] I'm going to catch my train.
+[ 1555.4] You got your folding bike.
+[ 1556.9] My folding bike.
+[ 1557.8] My dad's old Brompton.
+[ 1558.6] That thing's 40 years old.
+[ 1560.3] And it folds up like a suitcase.
+[ 1561.8] It's great. I love it.
+[ 1562.8] Goodbye, Brompton.
+[ 1563.8] I'm not sponsored.
+[ 1564.5] It looked like something Inspector Gadget would have.
+[ 1567.0] It looks like one of those monkey bikes.
+[ 1568.9] You know those old timey circuses?
+[ 1571.4] They put monkeys on bikes.
+[ 1572.3] Not nice.
+[ 1572.7] But you know, they're the tiny wheels.
+[ 1574.1] And they're really high up.
+[ 1574.7] It looks like that when you ride it.
+[ 1575.9] You look like a bit of a gnawk.
+[ 1577.9] Gnawk?
+[ 1579.2] Gnawk.
+[ 1580.1] That's the word.
+[ 1582.5] The views and opinions expressed by Will Haney
+[ 1584.3] do not represent those of Cloud Imperium Games,
+[ 1586.2] Robert Space Industries, or Subsidies.
+[ 1588.0] He's saying that Robert Space Industries wants to put the monkeys
+[ 1590.3] back on the bikes, because I said I don't.
+[ 1595.0] All right.
+[ 1595.6] You're doing so well.
+[ 1596.6] Thank you, Will.
+[ 1597.6] Thank you for taking the time to hang out with us.
+[ 1599.4] I'm going to let you go and get back to your train.
+[ 1602.1] Everybody, stay tuned.
+[ 1603.7] We're going to play a short video.
+[ 1604.7] We're going to go back in the wayback machine.
+[ 1606.8] We're going to play a video from like 2017, 2018, or thing.
+[ 1610.1] When we come back, we'll have a couple of our QA managers
+[ 1613.8] here from the UK studio.
+[ 1615.1] And we'll ask them, where the heck's my patch?
+[ 1617.9] So stay tuned.
+[ 1618.7] We'll be back in a few minutes.
+[ 1629.8] Yalamnana.
+[ 1632.3] Lost all my cargo back on Yalamnana.
+[ 1636.9] All my AUEC on Yalamnana.
+[ 1641.5] It stored my ship for me on Yalamnana.
+[ 1644.2] Can't get it back from Yalamnana.
+[ 1647.9] Go get some cargo, they said to me.
+[ 1652.4] Sell it and double your AUEC.
+[ 1655.7] Oh, oh.
+[ 1657.1] When out there thinking it would be easy,
+[ 1661.6] made my way over to our cork, my knee.
+[ 1665.4] And I was like, oh, cargo with what I could buy of barrel.
+[ 1674.6] And I was like, oh, I made it out past that moe.
+[ 1680.9] And the server crashed.
+[ 1682.6] Oh, no, no, no, no, no.
+[ 1684.6] Yalamnana.
+[ 1687.1] Lost all my cargo back on Yalamnana.
+[ 1691.7] All my AUEC on Yalamnana.
+[ 1696.3] It stored my ship for me on Yalamnana.
+[ 1699.1] Can't get it back from Yalamnana.
+[ 1701.5] Oh, Yalamnana.
+[ 1706.4] Yalamnana.
+[ 1715.4] Yalamnana.
+[ 1717.9] Can't get it back from Yalamnana.
+[ 1740.8] Conons go.
+[ 1742.3] Conons go?
+[ 1743.4] Con, conons go?
+[ 1746.3] Conons CS go.
+[ 1747.7] Conons CS go.
+[ 1748.7] I got it.
+[ 1749.4] Conons CS go.
+[ 1750.1] And Twitch said, that was torture.
+[ 1752.3] What?
+[ 1754.1] Are you serious?
+[ 1755.9] I am shaming you on live Twitch right now.
+[ 1759.1] That was brilliant.
+[ 1760.5] That was Yella Yell by Steen Rose and Friends
+[ 1764.6] from a couple of years ago.
+[ 1766.4] So before we get to the thing, I've
+[ 1768.1] wanted to take a few minutes every show
+[ 1770.9] and showcase a little bit of what we got going on
+[ 1773.7] that makes up our set.
+[ 1776.3] I forgot to grab something because I was too busy watching
+[ 1779.4] Conons CS go.
+[ 1780.8] Let's talk about this.
+[ 1781.7] Let's talk about this thing here.
+[ 1785.4] Oh, there we go.
+[ 1786.8] This is a horde gun.
+[ 1789.9] And presenting a horde gun to someone
+[ 1792.0] means that you are seeking Jamaaharan.
+[ 1796.4] Phil, are you seeking Jamaaharan?
+[ 1797.7] I know you are.
+[ 1799.1] I mean, I would mean.
+[ 1799.7] I'm a bit surprised.
+[ 1800.9] OK, this is Jamaaharan.
+[ 1802.9] If you know, you know.
+[ 1803.9] And if you don't, you can Google.
+[ 1806.7] Turn safe search off.
+[ 1811.2] All right.
+[ 1812.3] Definitely one of those shows.
+[ 1814.1] Joining us now for the back half are some members of our QA
+[ 1817.3] leadership team here in the UK studio.
+[ 1819.5] We've got Ray, and we've got Phil, and we got Rodolfo.
+[ 1823.6] How are you doing, guys?
+[ 1824.3] That went good.
+[ 1825.4] Very good.
+[ 1831.5] I was trying to decide real quick.
+[ 1833.3] Oh, hi, Tom.
+[ 1835.8] Time just wanted in the frame there.
+[ 1838.6] We've gone red on the stream.
+[ 1847.6] In the rage.
+[ 1849.4] Rich is having some problems.
+[ 1851.7] All right, so we'll cut this out of the YouTube.
+[ 1854.0] We won't cut it out of the YouTube.
+[ 1855.3] We don't cut anything out for the YouTube.
+[ 1858.3] Let's introduce ourselves.
+[ 1860.2] The three of you, I don't think have ever been on CIG.
+[ 1862.8] You did one thing the last time, anything.
+[ 1866.1] But no, Phil and Rodolfo, I don't think you've ever
+[ 1867.9] been on CIG video before.
+[ 1869.2] So let's take some time and introduce you to the crew.
+[ 1871.9] We'll start with you since you're closest,
+[ 1873.3] and you've done this before.
+[ 1874.4] Who are you, and what do you do for Star Citizen?
+[ 1876.1] So I am Ray Warner.
+[ 1878.0] I am currently the pillar manager for QA Squadron 42
+[ 1882.3] testing, and that is all I'm going to say about that.
+[ 1886.3] Well, what's a pillar manager?
+[ 1888.2] So I am primarily responsible for all of the project
+[ 1892.1] management of the Squadron 42, as far as QA is concerned,
+[ 1895.0] setting up our testing, covering all of the systems
+[ 1897.8] that need to be covered by development
+[ 1899.5] as they develop the game.
+[ 1903.3] And yeah, pretty much trying to mirror
+[ 1905.0] what Phil's doing with the PU for Squadron
+[ 1906.9] in the kind of run up to the inevitable release.
+[ 1911.4] And Phil?
+[ 1912.3] Yeah, I'm Phil Webster, the PU pillar manager for QA.
+[ 1917.4] I look after the present universe and Star Citizen,
+[ 1920.2] and oversee all of that and testing for all our live
+[ 1923.7] releases.
+[ 1925.9] Don't ask me about 318 coming out, please.
+[ 1929.1] Well, I assume if I have you here for the hour
+[ 1931.6] that I've just pushed back the release of 318
+[ 1933.7] by at least an hour.
+[ 1934.6] It's your fault, really.
+[ 1935.7] Yeah, it's exponential as well, so every minute's actually
+[ 1938.5] much, much longer.
+[ 1939.7] Development years.
+[ 1942.5] He was paying attention.
+[ 1944.1] And Rodolfo, who are you and what do you do?
+[ 1946.2] I'm the global director of QA, and I'm
+[ 1948.6] running the different departments that we have in QA
+[ 1950.8] for the different games.
+[ 1952.6] And we also do some other things, like automation,
+[ 1955.1] test automation into our games.
+[ 1957.2] The global director of QA.
+[ 1958.7] Yes, we have QA teams all around the world
+[ 1961.3] in different studios.
+[ 1963.5] They happen to be the manager that we have here,
+[ 1965.5] but the way we're structured, we also
+[ 1967.5] manage the people who happen to be in other studios.
+[ 1969.5] So for example, if someone is testing something related
+[ 1972.3] to their citizen in Germany or in the US,
+[ 1975.4] feels to the person who takes care of it,
+[ 1978.1] even though we do have people and leads in each studio.
+[ 1981.8] So how many QA people do we have?
+[ 1985.4] Not to say a specific number.
+[ 1986.8] We have an important team, a big team, that is growing.
+[ 1990.0] We're actively hiring right now.
+[ 1992.1] So it's a big team.
+[ 1996.1] More than 10?
+[ 1998.1] Way more than 10.
+[ 2000.2] Significantly more than 10.
+[ 2001.3] Significantly more than 10.
+[ 2003.3] When I started, there was 14.
+[ 2005.6] It's a lot bigger than that now.
+[ 2007.5] You've been here for a while.
+[ 2008.3] You've been here for seven years.
+[ 2009.4] I was going to say, almost the same time.
+[ 2010.9] Ivan, when did you start?
+[ 2013.0] February 2016, I think.
+[ 2015.3] OK, so I'm a bit older than you are as far as 10 you're here.
+[ 2019.1] But yeah, you've seen some incredible growth
+[ 2024.0] in complexity and stuff.
+[ 2025.5] When you started, the P.U. had just come out December 2015.
+[ 2032.5] So yeah, so what was that like?
+[ 2034.8] You come on and come on to a project
+[ 2037.0] that's trying to build a persistent universe,
+[ 2039.5] but they're trying to do it live while they're building it.
+[ 2043.0] Yeah, it was a daunting prospect,
+[ 2045.8] but one that I heartily was really, really eager to get my teeth into.
+[ 2051.3] I was a backer before I started working here.
+[ 2054.5] And Star Citizen is the game I've always wanted to play.
+[ 2058.8] And being able to be a very big part of that in the QA process
+[ 2064.6] was something that was very, very important to me
+[ 2068.0] and very exciting.
+[ 2070.5] And also being able to build a department pretty much
+[ 2074.1] from such a small base to what it needs to be and what it is now.
+[ 2078.6] And making it a department where people can come
+[ 2080.8] and have fun whilst they're working.
+[ 2083.9] You hear a lot of tales from other studios and places,
+[ 2089.1] not even no names or anything,
+[ 2090.4] but you hear horror stories of what it's like to be QA.
+[ 2093.8] And we want to make sure that no one ever felt that way
+[ 2096.2] when they came to work here.
+[ 2097.5] And we pride ourselves on that fact.
+[ 2100.3] I will share a horror story.
+[ 2102.6] I won't name names, but I was at a studio once.
+[ 2106.9] The studio has multiple buildings.
+[ 2110.6] And we were in a building that had a different passkey
+[ 2114.5] than the building where all the developers were.
+[ 2117.6] And we were not allowed access to that building.
+[ 2120.6] We were not allowed to go to the same commissary.
+[ 2122.6] We were not allowed to go to the same thing.
+[ 2124.2] And during the Christmas party, the holiday party,
+[ 2127.6] they rented out a big huge hall, banquet hall at some hotel or whatever.
+[ 2131.7] And when we got there,
+[ 2133.4] there was a cordoned off corner behind little like little stanchions.
+[ 2137.9] And it was like, no, no, no, QA and customer service
+[ 2141.4] and those non-developer roles.
+[ 2144.1] You got to be over there, like in a kennel.
+[ 2147.6] And it was there that I decided that, no,
+[ 2152.2] big giant company with big giant legacy name and everything.
+[ 2156.6] It's not always...
+[ 2157.9] It's so common, I think, in the company.
+[ 2159.9] It's so common that QA witnessed as this wall
+[ 2163.5] that you have to break through at the end of a development cycle
+[ 2165.9] to get your games, the public can start making money.
+[ 2168.7] And I think the progression of streaming services
+[ 2171.9] and things like Steam, Epic and all of these new game things
+[ 2174.7] that are making it so available for people to release things
+[ 2177.3] like Greenlight or Beaters or pre-release games,
+[ 2179.7] it's kind of closing that gap.
+[ 2181.1] And it's a lot better, I think, a lot of the time
+[ 2183.1] with the QA studios in games industries,
+[ 2185.3] it's getting better.
+[ 2186.8] It's getting to a point where it's no longer vision this way
+[ 2189.5] and it's very much part of the development.
+[ 2191.3] But one thing about SIG that I can say since joining in,
+[ 2193.9] also 2016, is we came in and it was like that.
+[ 2196.9] The attitude was very much already,
+[ 2198.5] these guys need to help us make this game
+[ 2200.5] because we're making a universe.
+[ 2202.5] Like, it needs to be iteratively tested.
+[ 2204.9] Can't be done by a developer passed on
+[ 2206.5] because we'd never get patches out.
+[ 2208.1] Let's not talk about 318, but it would be so much worse
+[ 2210.9] if we didn't have such an environment.
+[ 2213.3] And I think that's a good thing.
+[ 2215.1] If we didn't have such influence on the development team.
+[ 2218.5] We have the dedicated, the teams in there.
+[ 2222.3] There's a section in the studio
+[ 2224.9] and I thought it's a bunch of QA stuff.
+[ 2226.8] But one of the things that I really like that we do here
+[ 2229.5] is we also have embedded QA.
+[ 2231.9] People that are sitting at the same desks,
+[ 2235.9] in the same seats right next to designers and engineers
+[ 2239.7] and stuff so that you can just poke over and be like,
+[ 2243.2] look at my screen.
+[ 2245.3] This is the thing happening right here.
+[ 2246.6] That's a super important thing.
+[ 2247.6] It's something that we really missed in lockdown.
+[ 2249.0] Obviously, as you kind of everybody move into that remote situation
+[ 2251.8] we didn't have the ability to just kind of tap a developer
+[ 2254.0] on the shoulder and be like, this is a bug.
+[ 2256.3] But now that we're back in office and we have this
+[ 2258.5] and we're growing those, the team again
+[ 2260.5] and we have so many embedded positions
+[ 2261.9] that are working alongside Dev.
+[ 2263.0] It's super important not only for those kind of look at this bug.
+[ 2266.8] This is so broken.
+[ 2267.9] Can you fix it?
+[ 2268.5] And that kind of on the fly, yes, done, fixed, submitted,
+[ 2271.7] get stuff out faster.
+[ 2273.0] But also the relationship and the processes that we carry them.
+[ 2276.4] QA have so much more visibility across development.
+[ 2279.0] So when people are making these big features
+[ 2280.9] or creating new planets, having new rivers,
+[ 2283.6] putting in a volcano, for example,
+[ 2285.7] they have people next to them who can say
+[ 2288.1] there are limitations to the way that you can do this.
+[ 2290.1] This is what's happening when you spit it out.
+[ 2291.6] One of the things that we see with planets quite a lot
+[ 2293.4] when they do reworks on planets is terrain will shift the height
+[ 2297.3] and none of the bases will.
+[ 2298.8] So you have to have people who are there to go to those bases
+[ 2301.2] and know this kind of thing in the history of these kind of updates
+[ 2303.6] and help development get past those,
+[ 2305.6] especially with the turnaround that we see
+[ 2307.0] and it's like the growth in the turnaround that we see in SIG.
+[ 2309.6] It's so hard sometimes to maintain like developer loyalty
+[ 2314.1] to a very specific feature.
+[ 2315.4] It just rolls through so many people
+[ 2316.9] that we need this kind of point of information.
+[ 2319.4] So it's really, really helpful.
+[ 2321.0] One of the most common misconceptions in about QA
+[ 2324.0] that I've encountered over the years is that it's just playing video games all day.
+[ 2328.8] It's just just playing video games all day.
+[ 2330.7] When we were watching the yellow yell during the thing,
+[ 2334.5] Ray, without missing a beat, he goes,
+[ 2337.1] I forget how pretty this game is sometimes.
+[ 2340.3] And it's because you're not just,
+[ 2342.8] you're not playing the version of the game that even the backers are playing.
+[ 2346.3] You're playing the most broken and incomplete and hellacious versions.
+[ 2352.9] Yeah. I mean, it's super easy to get frustrated about patches not coming out for this game.
+[ 2356.6] But you know, one of the reasons that happens
+[ 2358.5] is so people don't have those situations where they forget how pretty the game is.
+[ 2362.3] They get to experience it at its best possible state that we can get it to at the time.
+[ 2367.4] We don't get to experience that vast majority of our work is replace me's or hitting crashes
+[ 2373.6] and kind of getting those the absolute worst of the broken parts out of the game
+[ 2379.0] prior to putting it into the hands of huge backers for the PTA,
+[ 2382.3] the Vokati releases and getting figuring out the larger scale problems
+[ 2386.8] with server longevity or the amount of players that we have.
+[ 2389.5] Like we want to get the ability to do that before we give it to you.
+[ 2393.1] And that's what we face most of the time.
+[ 2395.4] So there are elements of playing the game and I don't want to...
+[ 2398.1] It's like it's a job, you know, testing, just playing
+[ 2402.2] and there can be laborious and, you know, monotonous parts to it.
+[ 2406.2] But that's not to say we can't have fun and enjoy the game as well.
+[ 2409.7] Because, you know, I can say I was a backer and I enjoy playing the game a lot.
+[ 2414.8] Like I'm a role player and I like to role play in Star Citizen.
+[ 2419.6] If you ever meet a guy called Stranger in there and he asks you to do something,
+[ 2423.2] you might have a decent mission for you to do.
+[ 2426.8] What's now for the voice trailer?
+[ 2429.2] The sandbox nature of the game.
+[ 2431.1] You can make so much fun with what's there.
+[ 2432.8] It's crazy how much you can do and you can have so much fun.
+[ 2438.6] And we do in work as well.
+[ 2441.4] But yeah, it's a hard job and we have a very important part to play.
+[ 2446.4] And it's recognized here at SIG, which is brilliant and fantastic for us.
+[ 2452.6] One of the other things I wanted to talk about along those lines is that when we talk to a lot of people,
+[ 2460.3] QA often comes up as a tremendous point of entry.
+[ 2465.2] You know, it's a great place to learn every aspect of game development
+[ 2470.7] because every aspect of game development needs QA.
+[ 2473.5] There's no aspect that just comes out fully formed and working.
+[ 2476.8] So through QA you can learn just about any discipline that's involved in this.
+[ 2483.6] But the flip side of that can sometimes make it seem like it's not a career in and of itself.
+[ 2490.0] That it is only a thing to get you in the door and then you are meant to leave it.
+[ 2495.6] But some of my favorite people shout out to Vinny Sinatra.
+[ 2502.1] I have tremendous respect for the folks who have determined that this aspect of game development is important
+[ 2511.4] and it is valid and it is essential to the creation of successful creation of any video games.
+[ 2518.3] So they make careers out of it.
+[ 2520.0] You all here as managers and Mr. Global Head of QA, I'm just going to sit back there and I love my guys talking.
+[ 2526.7] He's back there like Don Corleone.
+[ 2528.6] Why? He shouldn't even be here. He's just pulling me out from the backstage, right?
+[ 2533.3] Talk to me about the decision to make this a career.
+[ 2537.1] Not that there's anything wrong with it.
+[ 2539.4] You know, the people who started in QA.
+[ 2541.0] I'm not talking about the people.
+[ 2542.4] I mean, we have a name for people like Phil and I called QA Life as.
+[ 2546.9] And you get people who enter QA through several different means.
+[ 2550.8] Some people pursue the games industry.
+[ 2552.3] Some people want to play games and you know, this idea that it's just playing games.
+[ 2556.0] Like this is what pulls a lot of people into QA.
+[ 2559.2] But there's a specific skill set that comes really natural to a lot of QA tests.
+[ 2564.3] And it's the idea of problem solving and being interested in those problems and finding those solutions.
+[ 2569.2] And it's a real passion for that that drives people to continue a career in QA rather than chasing development.
+[ 2575.3] One of my favorite aspects and don't get me wrong is seeing the development of people's careers.
+[ 2579.5] They come into QA and whether they go up in QA or whether they go up in development or production.
+[ 2583.9] It's all amazing to watch people grow and gain knowledge for the product.
+[ 2588.0] But you get some people who are just wired to find the problem and make that problem worse
+[ 2592.9] and then tell people why it's so broken and then get that fixed.
+[ 2595.5] And it was a particular passion that I found when I moved into QA.
+[ 2598.6] And then obviously as I got better at holding that skill in my 10 years that I was at Sony prior to coming to a CIG.
+[ 2604.8] It became less about how I can branch out and become part of this.
+[ 2610.5] The creative force that make games do the art or do the program on doing the code and become someone who gets to see everything.
+[ 2616.9] Because that's what you get to see in QA.
+[ 2618.4] It's you are one of the few departments who see literally everything that gets put into a game.
+[ 2624.3] And it's such a rare thing to see in the games industry that it was just I fell in love with it and losing hair since it's amazing.
+[ 2631.4] I love it.
+[ 2632.6] The career path thing we have from QA touches everywhere.
+[ 2637.0] You know, it can go into any aspect of game development or game production or staying in QA and leadership and management and looking after people and project management.
+[ 2646.5] It's you got a finger in every pie, you know.
+[ 2651.7] And through that you develop a lot of relationships with all the departments and you build those relationships.
+[ 2657.0] And so you know all the different departments there are and you get really good relationships with there.
+[ 2663.0] So then you are able to help them better because QA is a service, right?
+[ 2667.6] It's a service for the entire company.
+[ 2670.3] And we have to provide that best service that we can and we do that through building great relationships.
+[ 2674.4] And the best way to do that is have people come from us into their ranks and they understand because they've been where we are.
+[ 2680.7] They know what information is great for us, what helps, what doesn't help.
+[ 2684.0] And you know, riffing on that and going forward with that and pushing people forwards.
+[ 2689.1] It's a super really good holder people as well.
+[ 2691.8] It's a really interesting aspect of it is having people move from QA to production or development process because it can change the way that the department or a particular focus works because they go in with so much understanding of what we're going to do to try and ruin that day at the end of it.
+[ 2706.0] We get these huge benefits of people saying, well, I understand how testing works.
+[ 2710.5] Now I understand the process the QA go for.
+[ 2712.6] I understand what they're trying to fix.
+[ 2713.7] I understand the my feature.
+[ 2715.6] This is a big one as though my feature has an interaction point and affects other people's work.
+[ 2721.0] And that knowledge is something that's very, very rare to get when you come out of university and go into development.
+[ 2724.9] And you so siloed to the process that you're doing.
+[ 2728.0] So I love pushing QA into production.
+[ 2730.5] I love pushing QA into dev.
+[ 2731.9] But I do wish sometimes that I could keep them for myself.
+[ 2734.8] It's like an infiltration.
+[ 2735.8] Yeah, absolutely.
+[ 2736.8] We do have guys from QA who have gone to all the areas.
+[ 2739.5] We have people have gone to sound, people who has gone to art.
+[ 2742.2] Of course, a lot of went to production.
+[ 2743.8] It's very, very common that they go to design to gain design and the skills that they get from QA are very useful for that.
+[ 2749.3] But on top of that, we have people who actually counts.
+[ 2751.6] We have people who is doing automation, which includes counting and their relation with the code of the game.
+[ 2755.9] And these people develop skills that are super useful for development, but also for design.
+[ 2761.6] So yeah, it's more technical than what people think.
+[ 2765.8] It's a whole craft.
+[ 2767.3] And I always use an analogy because this happens in software industry a lot that for some reason the QA work is not being appreciated enough.
+[ 2775.3] And the same way as people who have this kind of mindset that is very good for constructing,
+[ 2780.3] it's a constructive mindset.
+[ 2781.3] For QA, you need to have a deconstructive mindset that is a skill in itself is very different.
+[ 2785.6] It's very, very useful.
+[ 2786.8] And in other disciplines, it's not like this.
+[ 2788.8] So for example, in physics, you have the Nobel Prize, right?
+[ 2791.8] And you give the Nobel Prize to people who are theoretical, theoretical physics physicists, people who make theories like Einstein.
+[ 2798.5] But you also give the Nobel Prize to people who are doing experimental physics,
+[ 2801.5] which is basically trying to prove if the theory this guy came up with is valid or not.
+[ 2805.8] And you need to make an experimental design of how to test that, how to test that theory of cosmology or went on physics or whatever.
+[ 2813.1] That's exactly what we do.
+[ 2814.2] It's just we do it with software.
+[ 2815.4] So we're basically, you know, empiricists, you know, like experimentalist scientists working with software instead of working with physics or chemistry.
+[ 2824.7] That's what we're doing.
+[ 2825.7] And there's a lot of techniques behind it, a lot of, you know, knowledge and a process.
+[ 2830.5] And it's not as simple as just playing the game.
+[ 2832.7] There's a way you have to approach it to do it in an efficient way.
+[ 2836.5] Because you cannot just find all the bugs in an infinite universe like we have just by trying to go through it.
+[ 2842.7] It will take you forever.
+[ 2844.4] So you need to do it in a certain way.
+[ 2846.9] You just compare yourself to Einstein?
+[ 2848.7] No, I don't.
+[ 2849.7] I don't.
+[ 2851.9] So, so, yeah, I was talking about experimental physics, not the theoretical ones.
+[ 2856.5] It's completely different.
+[ 2857.7] Yeah.
+[ 2858.1] So, so folks on Twitch, Twitch still seems to be having some trouble.
+[ 2861.6] We've got some QA people here.
+[ 2863.7] Tom, go ahead and do an R underscore display one.
+[ 2866.2] Show me what the frame rate is and delete the user folder.
+[ 2869.9] What else can we do?
+[ 2872.4] Turn it off and on again.
+[ 2873.7] Turn the stream on and off again.
+[ 2875.2] Nice.
+[ 2876.8] I said, folks, whatever's going on with Twitch will be up on YouTube shortly after I appear.
+[ 2882.2] If you want to see the rest of the conversation.
+[ 2886.2] Beyond being this, we've turned this into a QA, a QA recruitment thing.
+[ 2891.2] And by the way, everybody, you can go to cloudimperiumgames.com slash jobs.
+[ 2896.2] Other QA positions and all five studios around the world, including Montreal.
+[ 2900.2] So check that out.
+[ 2902.7] Obviously, there's a lot that can be taught and stuff for QA, but there are some, I have found,
+[ 2909.2] I'm going to propose something.
+[ 2910.8] You tell me if I'm talking out of my butt.
+[ 2913.0] There's a mentality that isn't taught.
+[ 2918.8] It's the ability to see one thing and then change a value and watch it become another thing
+[ 2925.7] and understand why what you changed affected that.
+[ 2929.8] It's basic troubleshooting.
+[ 2931.1] It applies to IT.
+[ 2932.6] It applies to car mechanics.
+[ 2934.7] It applies to QA.
+[ 2935.9] There's a fundamental thing about the way some brains work that make people great mechanics
+[ 2942.3] or great IT people or great QA.
+[ 2945.1] And it's like that.
+[ 2946.1] How do you, does that apply to QA?
+[ 2948.3] Am I right?
+[ 2949.3] I'm parking up there.
+[ 2950.3] That's what I mean when I say things like, you know, there's got to be a very specific
+[ 2953.6] mindset to get into QA and remain good at the job.
+[ 2957.1] It's about problem solving.
+[ 2958.1] It's about, and when I say problem solving, it's not about being presented the problem.
+[ 2961.4] It's about finding the solution.
+[ 2962.4] It's about finding the problem.
+[ 2964.2] And that's very much what you're talking about.
+[ 2965.9] It's about seeing a piece of software or seeing a feature or seeing an element of gameplay
+[ 2969.7] and thinking to yourself, I mean, our backers are great examples of this, but how are people
+[ 2974.7] going to come in and ruin this?
+[ 2976.9] Because they will.
+[ 2977.9] The first thing they want to do, they want to find easier ways to do things or better
+[ 2980.6] ways to get things, ways to exploit the code, ways to exploit the gameplay.
+[ 2984.7] And you know, we have to approach our test methodologies with this in mind from the very,
+[ 2989.3] very get go.
+[ 2990.8] Yeah, it's like right from the start, like in the kickoff meetings, the amount of times
+[ 2994.5] when designers come in and they do the pitch and someone from QA will go, so that could
+[ 2998.6] be weaponized by doing A, B and C, right?
+[ 3000.8] And they faces drop and they're like, oh yeah.
+[ 3004.7] And so, but that saves time and, you know, it gets that fixed before it even hits the
+[ 3009.2] code base.
+[ 3010.2] So, you know, it's very important.
+[ 3012.6] We actually have one of those today, right?
+[ 3014.6] We did that.
+[ 3015.6] It's very important because sometimes, you know, you can have a design that will not
+[ 3021.1] work out in the whole universe and people don't figure it out until it's coded and gets
+[ 3025.7] to QA hands.
+[ 3026.7] So, we actually test it and it's too late because you have to drop the code and start
+[ 3029.1] again.
+[ 3030.1] So, it's so much better when you can have this interaction shortly in the early stages
+[ 3033.2] of the development cycle.
+[ 3035.6] Yeah.
+[ 3036.8] Every QA person has, I have found, and we're going to see if this holds true because it's
+[ 3040.9] the first time we've had this conversation.
+[ 3042.8] Every QA person I've ever talked to has had at least one story of the time a designer
+[ 3050.0] or an engineer, somebody was super excited that they had just, they thought they had
+[ 3054.7] completed their thing.
+[ 3055.8] It worked perfectly on their computer and they were so excited to hand it over and walk
+[ 3060.3] away from it and be done.
+[ 3062.7] And the QA person had to come back to them and be like, no, you're not done.
+[ 3068.8] We had a special bottle for Mark Abin's tears.
+[ 3072.1] Collect them.
+[ 3073.1] Yeah.
+[ 3074.1] So, I want to hear your story.
+[ 3077.4] I want to see, tell me one story at a time where you, there was a developer, obviously
+[ 3081.8] Mark Abin or whatever.
+[ 3082.8] He's like, yeah, this is done.
+[ 3083.8] I'm great.
+[ 3084.8] I'm done.
+[ 3085.8] I'm ready to move on to the next thing.
+[ 3086.8] And you had to be like, no.
+[ 3087.8] Yeah.
+[ 3088.8] I mean, I think one of the easiest draws are some of the dynamic mission stuff that we
+[ 3093.0] do.
+[ 3094.0] Like there's a lot of elements to our dynamic mission because they attract so many player
+[ 3097.5] bases and the unique elements of it, like the address attacking or the flight shows.
+[ 3103.2] And probably one of my favorites, and I apologize Phil, because I'm sure you were probably going
+[ 3107.2] to say this also, is when we bring the address on and they were like, here's the address.
+[ 3112.3] Now everyone can look at it.
+[ 3113.3] It'll be amazing.
+[ 3114.3] And the first thing QA say is someone's going to get it and I take over and then fly around
+[ 3118.2] in the address and they're like, no, that's not possible.
+[ 3120.1] We've de-physicalized all of the floors that we find.
+[ 3122.6] Don't worry about it.
+[ 3123.6] And within what, 10 minutes of the release, someone had clipped through the ceiling, landed
+[ 3127.2] in the sea, got in the sea and started flying around in the address.
+[ 3129.2] And it's like, well, we told you.
+[ 3132.6] But yeah, you know, that always comes up against that kind of, we've done it.
+[ 3135.7] This is it. We're going out live.
+[ 3136.9] This is it.
+[ 3137.9] PT, you released. Damn it.
+[ 3138.8] We're going to have to go back to square one and figure out how to make this work.
+[ 3142.7] And it happens constantly.
+[ 3144.9] It is a great satisfaction.
+[ 3146.0] And I told you so.
+[ 3149.2] Well, you know, Ray totally stole my one.
+[ 3154.2] So I'll just say about, you know, Ray's particular project in Squadron 42, redacted.
+[ 3160.1] So unfortunately, I can't tell you.
+[ 3162.3] Redacted.
+[ 3164.6] Well, you guys have worked at other projects, though.
+[ 3166.3] What about you, Rodapo?
+[ 3169.9] You've got a story of that.
+[ 3171.3] You don't make it to global head of QA.
+[ 3173.1] No, I had some serious.
+[ 3174.5] Some feelings.
+[ 3175.5] Long ago from other projects.
+[ 3177.1] So I don't know if I can share that.
+[ 3178.4] But yeah, we do have.
+[ 3180.2] I do remember, for example, when my very first job in QA, when I was a tester many years
+[ 3185.3] ago, I was just in a mobile game from my OS.
+[ 3188.4] And they were pretty sure they was working perfectly.
+[ 3191.6] It was a simulator physics.
+[ 3192.9] So in some sense, similar to this, you know, the incredible machine.
+[ 3196.7] You remember the old school games?
+[ 3197.7] Well, we made a remake by then in Disney for mobile.
+[ 3200.9] And now I never try to stress it a little bit.
+[ 3204.7] So when you start stressing it, you saw that, you know, all the cables and things start
+[ 3208.4] wobbling around and you can just do whatever you want.
+[ 3210.5] And it's the kind of thing, oh, but now what is going to do that?
+[ 3212.1] Well, we did.
+[ 3212.8] So maybe the place will do as well.
+[ 3214.8] You always have that kind of discussions, right?
+[ 3216.4] Like they only expect people to use it as an intended feature is.
+[ 3220.3] And actually players, if they are allowed to do it, they will do it eventually.
+[ 3224.3] So yeah, we will do half of it.
+[ 3225.8] Why it's down?
+[ 3226.3] That is that that is that progressive.
+[ 3229.5] We're almost out of time.
+[ 3230.5] But I want to ask you about the other thing, the the horror story that that's that's for
+[ 3234.9] the developers, whatever.
+[ 3236.8] But talk to me about.
+[ 3240.5] Can't repro talking about the the reports that no matter what you do, like you've
+[ 3246.8] just you've just beat your head against this thing.
+[ 3249.2] Yeah.
+[ 3249.5] Well, I mean, one of the one, I mean, the six specifically, one of the big problems
+[ 3253.8] that we have is we have the universe that hundreds players, potentially the future
+[ 3257.3] hundred players in the inner server at any one time.
+[ 3259.6] And there are things that happen in the back end when you put that many people
+[ 3263.3] doing random things as we say, people get destructive when they play
+[ 3266.4] video games and when you put 100 of them in and let them do what they want.
+[ 3269.4] It's very, very hard to replicate that in a controlled environment.
+[ 3273.2] And that is fundamentally the baseline for QA.
+[ 3275.8] We need to be in a controlled environment so we can find those steps, find the the
+[ 3280.0] cases of how it happens, when it happens, what you need to do to make it happen.
+[ 3283.3] And when you put a PTU game out and we get 50 crashes or we get the elevators
+[ 3288.1] killing people.
+[ 3288.7] Everybody knows this, right?
+[ 3289.8] Like it's put into a game.
+[ 3291.7] We get 10 people into the game.
+[ 3292.9] We say, just ride elevators for a day and tell us what happens.
+[ 3295.8] And like it's fine.
+[ 3296.7] It runs great and you're like, why are you?
+[ 3299.1] Why is it running great?
+[ 3300.8] And it's really, really hard to replicate and you can do it in the PTU, but you
+[ 3304.1] can't do it in a dev build.
+[ 3305.0] So you can't get the information you require.
+[ 3306.8] And it's super frustrating.
+[ 3308.6] It really is.
+[ 3310.0] And we have to deal with like multiple builds a day, whereas the servers will be
+[ 3314.3] up for days at a time with this amount of people on it.
+[ 3316.9] And so it's the soak time and stuff as well that we just can't replicate because
+[ 3320.8] we have to keep on iterating and getting the fixes in, making sure they do work at
+[ 3324.7] a base level so that we can get it out to the backers and so they can start playing
+[ 3328.4] it and enjoying it as soon as possible.
+[ 3330.7] Yeah.
+[ 3330.9] And then you get Rob Johnson who comes in and goes, oh yeah, I'll fix that.
+[ 3334.7] And it's done.
+[ 3335.3] And it's like, I've been locked in this for a week.
+[ 3337.2] It's a legend.
+[ 3337.9] Yeah.
+[ 3338.1] Absolutely.
+[ 3338.9] Shout out Rob Johnson.
+[ 3340.8] What are my favorite stories?
+[ 3342.8] If you say I started in 2016, this pre dates your time here.
+[ 3348.6] It was in, it was in Arena Commander back.
+[ 3353.2] It was just before the P you had launched.
+[ 3355.2] And there were Hornets that were just randomly exploded.
+[ 3359.8] You just be flying around.
+[ 3360.8] You'd be in free fly.
+[ 3362.6] No, no combatant.
+[ 3363.8] Nobody's shooting at you.
+[ 3365.1] And just occasionally you just explode.
+[ 3368.3] And it's like, and the timing was different.
+[ 3371.5] And they struggled forever to find the common denominator.
+[ 3376.9] And eventually what it came down to was that the default loadout at the time had
+[ 3381.8] a flashlight that hung on the belts of the outfit and it was
+[ 3386.9] physicalized.
+[ 3388.2] And depending on the maneuvers you did and the Gs that you pulled, the
+[ 3393.4] flashlight would beat against the inside of the cockpit and do one point of damage.
+[ 3397.7] One point of damage.
+[ 3398.7] One point of damage.
+[ 3399.9] And so it entirely depended on how you flew and how crazy you flew.
+[ 3405.7] And once I figured that out, I was just like, why, why, why is that?
+[ 3409.9] It reminds me now of a horror story of QA.
+[ 3413.9] He's leading up to one of the citizen cons and one of the demos we were doing.
+[ 3416.4] And we found that going around one of the planets that we've shown off the
+[ 3419.2] first time, there were patches of invisible collision that were around the place.
+[ 3422.4] So we warned everyone, don't land here.
+[ 3425.8] Don't land here.
+[ 3426.8] There's a chance it could just ruin the entire demo and blow up the ship.
+[ 3429.3] And we'd have to restart again.
+[ 3431.1] And we said, just make sure don't land.
+[ 3434.2] It's like, then the instruction was to go and land and obviously you have to pay
+[ 3438.4] the instruction and we were on the edge of our seats the entire time.
+[ 3442.1] Obviously that was fixed by the time it was released, but for the whole demo purposes.
+[ 3447.1] It was terrifying.
+[ 3449.4] We often go through several bottles of rum, during a citizen's fight.
+[ 3452.6] I was trying to make it through.
+[ 3454.4] My favorite citizen, we're out of time.
+[ 3456.4] We'll do this, but Vinny Sinatra on stage.
+[ 3459.6] And one of the do not do's on this demo was when you land here and you get out,
+[ 3466.1] do not go left.
+[ 3468.1] Take no step to that entire cardinal direction of the planet.
+[ 3473.4] It's like, it's like, it's untested and you're falling through the ground and
+[ 3476.2] but it's just, it's, we don't have to go over there.
+[ 3478.6] It just looks pretty.
+[ 3480.0] Do not go over there.
+[ 3481.6] And it was in the rehearsals.
+[ 3484.7] And then live on the stage, he gets out and Chris goes, you know,
+[ 3490.2] Chris goes, I'm not going to do my Chris Roberts, the person I almost did.
+[ 3494.5] That was dangerous.
+[ 3495.4] And Chris Roberts goes, hey, go, he was, go over there, Vinny, and look at that thing.
+[ 3499.9] And Vinny looked at me, I was like, he's looking at me.
+[ 3503.4] And like, like in that moment we became soul brothers.
+[ 3506.7] Like I've seen that face before.
+[ 3508.0] Sorry.
+[ 3509.0] Yeah.
+[ 3509.6] It's just like, yeah, that's, I almost did my Sierra impression.
+[ 3514.7] That was bad.
+[ 3515.7] All right.
+[ 3516.2] Vince has gone through it.
+[ 3517.1] He's, you know, had that hand on his shoulder, make this sniper shot.
+[ 3520.9] Best make it.
+[ 3522.2] Yeah.
+[ 3522.4] The, the, the, the stories of QA and demos are still talk to Glenn and Glenn.
+[ 3527.1] Can't jump.
+[ 3528.0] Yeah.
+[ 3528.6] Glenn still shakes.
+[ 3529.9] Glenn still has the trimmer.
+[ 3532.0] All right.
+[ 3532.8] So that's it, everybody.
+[ 3534.2] Thank you for hanging out with us during this week's Star Citizen Live.
+[ 3538.0] Rivers and Tex and bugs.
+[ 3539.4] Oh my.
+[ 3540.9] The name of the, the, the, the Twitch ingest.
+[ 3543.4] So yeah.
+[ 3543.9] So we'll take a look at that and see if we see what that's something on our end
+[ 3547.1] and see if we can't have that result.
+[ 3548.8] Before next week.
+[ 3551.5] If you haven't tuned into this week's ISC, all kinds of massive changes and
+[ 3556.8] improvements coming to a mining gameplay in the upcoming off of three 19.
+[ 3562.0] And then next week we check back in with a John Griffiths and the Sandbox team
+[ 3567.7] for the current white box progress of the new underground facilities.
+[ 3571.6] They're going to take you on a whole tour of one of the Norse.
+[ 3575.4] They've got 17 rooms, five, six levels underground.
+[ 3581.0] It's, it's pretty cool.
+[ 3582.6] These things that these, these, the, are we introduced in concept at CitizenCon
+[ 3586.3] are already, you know, going through white box, getting a gray box and stuff.
+[ 3589.8] They're making some terrific, terrific progress.
+[ 3591.6] So check that out on ISC next week.
+[ 3595.1] And yeah, for Star Citizen Live, that was Ray and that was Phil and that was
+[ 3599.4] Rodolfo and I'm Jared.
+[ 3600.8] Thank you.
+[ 3601.4] And I'm going to go ahead and talk about the new ISC.
+[ 3604.1] And I'm Jared and thanks everybody.
+[ 3606.8] Take care.
+[ 3607.4] Bye.
