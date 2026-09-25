@@ -34,6 +34,8 @@ def main():
         if line.strip():
             r = json.loads(line)
             whisper[r["id"]] = r
+    # Titles recovered for videos missing from chronology_meta (oEmbed; dates there are estimates).
+    patch = {r["id"]: r for r in json.loads((ROOT / "chronology" / "title_patch.json").read_text(encoding="utf-8"))}
     docs, postings = [], defaultdict(Counter)
 
     def add(doc, text):
@@ -45,7 +47,7 @@ def main():
     for kind in ("captions", "whisper"):
         for f in sorted((ROOT / "transcripts" / kind).glob("*.txt")):
             vid = f.stem
-            m = meta.get(vid) or {}
+            m = meta.get(vid) or patch.get(vid) or {}
             w = whisper.get(vid) or {}
             date = str(m.get("date") or w.get("upload_date") or "")
             if len(date) == 8 and date.isdigit():
