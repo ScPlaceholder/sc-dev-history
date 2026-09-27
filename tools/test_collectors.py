@@ -142,6 +142,9 @@ def main() -> int:
         case("bodies: budget respected (2 articles)", len(state) == 2)
         mr_text = (CC.BODIES / "899.txt").read_text()
         case("bodies: alexandria body with heading", "## Vehicles\nThe Hull C got a new cargo grid" in mr_text)
+        dig = next(r for r in json.loads(CC.RECORDS.read_text()) if "Monthly" in r["title"]).get("digest", "")
+        case("bodies: digest of what the article says replaces the teaser",
+             dig.startswith("Welcome to the September report") and "The Hull C got a new cargo grid" in dig)
         CC.fetch_bodies(client, max_bodies=10)
         CC.fetch_bodies(client, max_bodies=10)
         CC.fetch_bodies(client, max_bodies=10)

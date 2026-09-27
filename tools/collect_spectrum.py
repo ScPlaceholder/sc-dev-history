@@ -28,7 +28,6 @@ POSTS = ROOT / "chronology" / "devtracker.json"
 STATE = ROOT / "chronology" / "devtracker_state.json"
 BODIES = ROOT / "devposts"
 MAX_TRIES = 3
-PAGE_SIZE = 9          # what the site sends; the server answers with 2x this many posts
 
 
 def load(path: Path, default):
@@ -42,15 +41,7 @@ def save(path: Path, data) -> None:
     tmp.replace(path)
 
 
-def tracker_page(client: rsi.Client, page: int, day: str) -> tuple[list[dict], str]:
-    """`day` is the day header already shown above this page; the server only emits a header when the day changes,
-    so passing the right one keeps every post dated."""
-    j = client.json("/api/community/getTrackedPosts", {"pagesize": PAGE_SIZE, "page": page, "date": day})
-    if not j.get("success"):
-        raise RuntimeError(f"getTrackedPosts page {page}: {j.get('code')} {j.get('msg')}")
-    data = j.get("data") or {}
-    return rsi.parse_tracked_posts(data.get("html") or "", current_day=day)
-
+tracker_page = rsi.tracker_page          # shared with the Toolbox's live Dev Tracker tab
 
 def _merge(posts: list[dict], found: list[dict], known: set) -> list[dict]:
     fresh = [p for p in found if p["id"] not in known]

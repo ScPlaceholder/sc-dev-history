@@ -1,7 +1,8 @@
-"""rsi.py - the small, polite HTTP client and HTML/JSON parsers shared by the RSI collectors.
+"""rsi.py - the small, polite HTTP client, HTML/JSON parsers and summarizer shared by the RSI collectors.
 
 Stdlib only (the GitHub Action installs nothing). Everything that knows the SHAPE of an RSI response lives here, so
-when RSI changes a page there is one file to fix and one selftest to update:
+when RSI changes a page there is one file to fix and one selftest to update. SC Toolbox's Dev History tool ships an
+identical copy (tools/Dev_History/core/rsi.py) for its on-demand fetches: keep the two in sync.
 
     python tools/rsi.py --selftest
 
@@ -36,7 +37,9 @@ class Client:
     """Sequential, rate-limited, retrying. One request at a time on purpose: this runs once a day and is not in a
     hurry, and RSI should never notice it."""
 
-    def __init__(self, delay: float = 1.0, timeout: float = 30.0, retries: int = 3, opener=None):
+    def __init__(self, delay: float = 1.0, timeout: float = 30.0, retries: int = 3, opener=None,
+                 user_agent: str = USER_AGENT):
+        self.user_agent = user_agent
         self.delay = delay
         self.timeout = timeout
         self.retries = retries
@@ -53,7 +56,7 @@ class Client:
     def request(self, path: str, body: Optional[dict] = None) -> bytes:
         url = path if path.startswith("http") else BASE + path
         data = json.dumps(body).encode() if body is not None else None
-        headers = {"User-Agent": USER_AGENT, "Accept-Language": "en"}
+        headers = {"User-Agent": self.user_agent, "Accept-Language": "en"}
         if data is not None:
             headers["Content-Type"] = "application/json"
         last_exc: Optional[Exception] = None
@@ -426,6 +429,93 @@ def all_replies(thread: dict) -> Iterable[dict]:
         stack.extend(r.get("replies") or [])
 
 
+# ---- fetch helpers used by both the collectors and the Toolbox --------------------------------------------------------
+def tracker_page(client: Client, page: int, day: str) -> tuple[list[dict], str]:
+    """One Devtracker page. `day` is the day header already shown above this page (the server only emits a header
+    when the day changes); pass tomorrow's date for page 1 so it starts with its own header."""
+    j = client.json("/api/community/getTrackedPosts", {"pagesize": 9, "page": page, "date": day})
+    if not j.get("success"):
+        raise RuntimeError(f"getTrackedPosts page {page}: {j.get('code')} {j.get('msg')}")
+    return parse_tracked_posts((j.get("data") or {}).get("html") or "", current_day=day)
+
+
+class PrivateForum(Exception):
+    """The post is in a forum that needs a login (Focus Testing, Evocati...). Keep the public teaser."""
+
+
+def devpost(client: Client, post: dict) -> dict:
+    """Full text of one tracked post: {'text', 'time'}. Raises PrivateForum for login-only forums."""
+    j = client.json("/api/spectrum/forum/thread/nested",
+                    {"slug": post["slug"], "sort": "newest", "target_reply_id": post.get("reply_id") or None})
+    if not j.get("success"):
+        if j.get("code") == "ErrPermissionDenied":
+            raise PrivateForum(post.get("thread") or post["slug"])
+        raise RuntimeError(f"thread {post['slug']}: {j.get('code')}")
+    reply = find_reply(j.get("data") or {}, post.get("reply_id") or "")
+    if reply is None:
+        raise RuntimeError(f"thread {post['slug']}: reply {post.get('reply_id')} not in payload")
+    return {"text": post_text(reply), "time": reply.get("time_created")}
+
+
+# ---- summaries ----------------------------------------------------------------------------------------------------
+_SENT = re.compile(r"(?<=[.!?])[\"\u201d\u2019)]?\s+(?=[A-Z0-9\"\u201c'(])")
+
+
+def _sentences(text: str) -> list[str]:
+    return [x.strip() for x in _SENT.split(text) if x.strip()]
+
+
+def _first_sentences(text: str, max_chars: int) -> str:
+    out = ""
+    for sent in _sentences(text):
+        if out and len(out) + len(sent) + 1 > max_chars:
+            break
+        out = (out + " " + sent).strip()
+        if len(out) >= max_chars:
+            break
+    if len(out) > max_chars:
+        out = out[:max_chars].rsplit(" ", 1)[0].rstrip(",;:") + "\u2026"
+    return out
+
+
+def summarize(text: str, title: str = "", max_lead: int = 420, max_point: int = 200, max_points: int = 30) -> str:
+    """An extractive digest of an article, built from what it actually says (no model, no network).
+
+    Sectioned articles (Monthly Reports: '## AI Content', '## Animation', ...) become a lead sentence or two plus one
+    line per section: '- AI Content: <its first sentence>'. Anything else becomes its opening sentences.
+    Lines that only repeat the title or are too short to say anything are skipped.
+    Output uses the corpus text conventions ('- ' bullets), so the Toolbox renders it like any other text."""
+    title_l = (title or "").strip().lower()
+    lead_paras: list[str] = []
+    sections: list[tuple[str, list[str]]] = []
+    for line in (text or "").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        if line.startswith("## "):
+            sections.append((line[3:].strip(), []))
+            continue
+        if line.startswith("- "):
+            line = line[2:]
+        if len(line.split()) < 4 or line.lower() == title_l or line.lower() in title_l:
+            continue                     # banner lines: 'PU Monthly Report', 'August 2026', the title again
+        (sections[-1][1] if sections else lead_paras).append(line)
+    lead = _first_sentences(" ".join(lead_paras), max_lead)
+    points = []
+    for head, paras in sections:
+        if not paras:
+            continue
+        sents = _sentences(paras[0])
+        first = _first_sentences(sents[0], max_point) if sents else ""
+        if first:
+            points.append(f"- {head}: {first}")
+    if len(points) >= 2:
+        return "\n".join(([lead] if lead else []) + points[:max_points])
+    # Not sectioned: the opening of the article, headings or not.
+    body = " ".join(p for _h, ps in sections for p in ps)
+    return _first_sentences((" ".join(lead_paras) + " " + body).strip(), max_lead + max_point)
+
+
 # ---- selftest -------------------------------------------------------------------------------------------------------
 def _selftest() -> int:
     ok = True
@@ -509,6 +599,24 @@ def _selftest() -> int:
     case("spectrum: finds a nested reply", find_reply(thread, "102")["id"] == "102")
     case("spectrum: lexical fallback", post_text(find_reply(thread, "102")) == "Nested reply")
     case("spectrum: empty reply id means the opening post", find_reply(thread, "")["id"] == "100")
+    report = ("PU Monthly Report\nAugust 2026\nWelcome to August\u2019s PU Monthly Report! While most teams worked on "
+              "Alpha 4.10, many devs continued with tasks for content coming soon. Read on for more.\n"
+              "## AI Content\nThe recent Alpha 4.10 patch marked a milestone for AI Content. The team also fixed bugs."
+              "\n## Animation\nLast month, animations were worked on for the apex valakkar.\n## Art (Ships)\n"
+              "The UK team began the month with a final polish pass on the Kruger Stingray.\n- A bullet here.")
+    sm = summarize(report, "Star Citizen Monthly Report: August 2026")
+    lines = sm.splitlines()
+    case("summary: lead is the intro, banner lines skipped", lines[0].startswith("Welcome to August"))
+    case("summary: one line per section with its first sentence",
+         lines[1:] == ["- AI Content: The recent Alpha 4.10 patch marked a milestone for AI Content.",
+                       "- Animation: Last month, animations were worked on for the apex valakkar.",
+                       "- Art (Ships): The UK team began the month with a final polish pass on the Kruger Stingray."])
+    plain = ("Greetings Citizens! The Sabre Raven EX evolves its predecessor into a dedicated interdiction craft. "
+             "It carries a new quantum dampener. Pledge now. " + "More words here. " * 80)
+    sp = summarize(plain, "Aegis Sabre Raven EX")
+    case("summary: unsectioned article gives its opening sentences, bounded",
+         sp.startswith("Greetings Citizens! The Sabre Raven EX evolves") and len(sp) <= 640)
+    case("summary: empty in, empty out", summarize("", "x") == "")
     print("rsi selftest:", "PASS" if ok else "FAIL")
     return 0 if ok else 1
 

@@ -9,11 +9,13 @@ Two jobs, both incremental and safe to re-run (the daily GitHub Action runs them
      Priority: Monthly Reports, then engineering / Roadmap Roundups / Q&As, then other transmissions, then
      community and lore. Newest first inside each tier. Results are remembered in chronology/commlink_bodies.json;
      a failure or an empty body (a video-only post, or RSI changed the page) is retried on the next runs, up to
-     three times, then left alone.
+     three times, then left alone. Each fetched article also gets a DIGEST in web_records.json ("digest"): an
+     extractive summary of what it says (rsi.summarize), which the Toolbox shows instead of RSI's one-line teaser.
 
     python tools/collect_commlinks.py                     # both jobs, default budget
     python tools/collect_commlinks.py --max-bodies 50     # smaller run
     python tools/collect_commlinks.py --probe             # fetch 1 listing page + 1 body, print, write nothing
+    python tools/collect_commlinks.py --resummarize       # rebuild digests from saved bodies (no network)
 """
 from __future__ import annotations
 
@@ -133,15 +135,32 @@ def fetch_bodies(client: rsi.Client, max_bodies: int) -> dict:
             stats["empty"] += 1
         else:
             (BODIES / f"{cid}.txt").write_text(text + "\n", encoding="utf-8")
+            r["digest"] = rsi.summarize(text, r.get("title", ""))
             s = {"s": "ok", "w": words}
             stats["ok"] += 1
         state[cid] = s
         if (stats["ok"] + stats["empty"] + stats["err"]) % 50 == 0:
             save(STATE, state)          # checkpoint: a cancelled run keeps what it fetched
+            save(RECORDS, records)
     save(STATE, state)
+    save(RECORDS, records)
     print(f"bodies: {stats['ok']} fetched, {stats['empty']} empty, {stats['err']} failed, "
           f"{stats['remaining']} still to do")
     return stats
+
+
+def resummarize() -> int:
+    """Rebuild every record's digest from the bodies already on disk (after changing rsi.summarize). No network."""
+    records = load(RECORDS, [])
+    n = 0
+    for r in records:
+        f = BODIES / f"{commlink_id(r['url'])}.txt"
+        if f.exists():
+            r["digest"] = rsi.summarize(f.read_text(encoding="utf-8"), r.get("title", ""))
+            n += 1
+    save(RECORDS, records)
+    print(f"digests rebuilt for {n} comm-link(s)")
+    return n
 
 
 def probe(client: rsi.Client) -> int:
@@ -153,6 +172,7 @@ def probe(client: rsi.Client) -> int:
     if mr:
         text = rsi.commlink_body(client, mr["url"])
         print(f"\nbody of {mr['title']!r}: {len(text.split())} words\n" + "\n".join(text.splitlines()[:12]))
+        print("\nsummary:\n" + rsi.summarize(text, mr["title"]))
     return 0 if cards else 1
 
 
@@ -162,7 +182,11 @@ def main(argv=None) -> int:
     ap.add_argument("--delay", type=float, default=1.0, help="seconds between requests")
     ap.add_argument("--skip-listing", action="store_true")
     ap.add_argument("--probe", action="store_true")
+    ap.add_argument("--resummarize", action="store_true", help="rebuild digests from saved bodies, then exit")
     a = ap.parse_args(argv)
+    if a.resummarize:
+        resummarize()
+        return 0
     client = rsi.Client(delay=a.delay)
     if a.probe:
         return probe(client)

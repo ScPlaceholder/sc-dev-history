@@ -25,7 +25,7 @@ one timeline from 2012 to today.
 | `chronology/records.json` | Dated, searchable records built from the transcripts |
 | `chronology/web_records.json` | RSI comm-link records: title, date, URL, short summary (2012-09-12 onward) |
 | `chronology/commlink_index.json` | The raw comm-link archive index (newest first, as RSI lists it) |
-| `commlinks/<id>.txt` | Full text of a comm-link (`<id>` is the number in its URL); `## ` marks a heading |
+| `commlinks/<id>.txt` | Full text of a comm-link (`<id>` is the number in its URL); `## ` marks a heading. Its record in `web_records.json` gets a `digest`: an extractive summary of what it says (the opening plus one line per section) |
 | `chronology/commlink_bodies.json` | Which comm-link bodies are fetched, empty, or failed (so runs resume) |
 | `chronology/devtracker.json` | CIG posts from the Spectrum Devtracker: author, forum, thread, date, teaser, link |
 | `devposts/<id>.txt` | Full text of a Devtracker post (public forums only) |

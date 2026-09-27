@@ -6,7 +6,8 @@ with a count. A client downloads this once (a few MB, gzipped), searches it offl
 from raw.githubusercontent.com only when a result is opened (to show the matching lines, or the whole article).
 
 Document kinds ("k"):  v = dev video transcript   c = RSI comm-link   d = CIG post from the Spectrum Devtracker
-A doc with a "p" has a full text file at that path in this repo. "g": "mr" marks a Monthly Report.
+A doc with a "p" has a full text file at that path in this repo. "g": "mr" marks a Monthly Report. "s" is a summary:
+for comm-links with full text it is a digest of what the article says ("sd": 1), otherwise RSI's teaser.
 
     python tools/build_index.py          # from the repo root
 """
@@ -61,8 +62,10 @@ def main():
                 f.read_text(encoding="utf-8", errors="replace"))
     n_bodies = 0
     for r in json.loads((ROOT / "chronology" / "web_records.json").read_text(encoding="utf-8")):
-        doc = {"id": r["url"], "k": "c", "t": r["title"], "d": r.get("date", ""), "s": r.get("summary", ""),
-               "u": r["url"], "ty": r.get("type", "")}
+        doc = {"id": r["url"], "k": "c", "t": r["title"], "d": r.get("date", ""),
+               "s": r.get("digest") or r.get("summary", ""), "u": r["url"], "ty": r.get("type", "")}
+        if r.get("digest"):
+            doc["sd"] = 1                # "s" is a digest of the article, not RSI's teaser
         if MONTHLY.search(r["title"]):
             doc["g"] = "mr"
         body = ""
