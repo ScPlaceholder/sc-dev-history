@@ -182,6 +182,37 @@ def main() -> int:
         CS.backfill(client, posts, st2, pages=5)
         case("devtracker: backfill resumes, dedupes, and ends when the tracker runs out",
              st2.get("backfill_done") is True and len(posts) == found_before and st2["backfill_page"] == 3)
+        # Importing what a Toolbox fetched live (tools/import_local_cache.py).
+        import import_local_cache as IL
+        CS.save(CS.POSTS, posts)            # what a finished collector run leaves on disk
+        CS.save(CS.STATE, st)
+        live = root / "live"
+        (live / "devposts").mkdir(parents=True)
+        (live / "commlinks").mkdir()
+        (live / "devtracker.json").write_text(json.dumps([
+            {"id": "111", "slug": "life-support", "thread": "Life support?", "author": "X", "date": "2020-01-01"},
+            {"id": "555", "reply_id": "555", "slug": "old", "url": rsi.BASE + "/spectrum/x/555", "author": "Old-CIG",
+             "category": "General", "thread": "An old thread", "teaser": "old", "date": "2017-03-01"}]))
+        (live / "devtracker_state.json").write_text('{"page": 912, "done": true}')
+        (live / "devposts" / "555.txt").write_text("The old post in full.")
+        (live / "devposts" / "111.txt").write_text("SHOULD NOT OVERWRITE")
+        (live / "commlinks" / "500.txt").write_text("Old lore text that the archive could not fetch itself.")
+        r1 = IL.main(["--from", str(live), "--root", str(root)])
+        posts = json.loads(CS.POSTS.read_text())
+        case("import: new post added, existing post keeps the repo's data",
+             r1 == 0 and len(posts) == 4 and next(p for p in posts if p["id"] == "111")["date"] == "2026-09-26")
+        case("import: texts copied, never overwriting the repo's",
+             (CS.BODIES / "555.txt").read_text().startswith("The old post")
+             and (CS.BODIES / "111.txt").read_text().startswith("Hey folks"))
+        st3 = json.loads(CS.STATE.read_text())
+        case("import: body state and finished backfill recorded",
+             st3["bodies"]["555"]["s"] == "ok" and st3.get("backfill_done") is True)
+        rec = next(r for r in json.loads(CC.RECORDS.read_text()) if "Old Lore" in r["title"])
+        case("import: comm-link text lands with a digest",
+             (CC.BODIES / "500.txt").exists() and rec.get("digest", "").startswith("Old lore text")
+             and json.loads(CC.STATE.read_text())["500"]["s"] == "ok")
+        IL.main(["--from", str(live), "--root", str(root)])
+        case("import: running it twice changes nothing", len(json.loads(CS.POSTS.read_text())) == 4)
     print("collectors test:", "PASS" if ok else "FAIL")
     return 0 if ok else 1
 

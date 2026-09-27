@@ -7,17 +7,23 @@ from raw.githubusercontent.com only when a result is opened (to show the matchin
 
 Document kinds ("k"):  v = dev video transcript   c = RSI comm-link   d = CIG post from the Spectrum Devtracker
 A doc with a "p" has a full text file at that path in this repo. "g": "mr" marks a Monthly Report. "s" is a summary:
-for comm-links with full text it is a digest of what the article says ("sd": 1), otherwise RSI's teaser.
+for comm-links and dev posts with full text it is a digest of what they say ("sd": 1; a short dev post is its own
+digest), otherwise the teaser RSI shows.
 
     python tools/build_index.py          # from the repo root
 """
 import gzip
 import json
 import re
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import rsi  # noqa: E402  (summaries of long dev posts)
+
+SHORT_POST = 60        # words; a dev post this short is shown whole instead of summarized
 MONTHLY = re.compile(r"\bmonthly (studio )?report\b", re.I)
 WORD = re.compile(r"[a-z0-9][a-z0-9'\-]{2,}")
 STOP = set("""the and for that this with you are was but not have they what there from just going can all about
@@ -87,6 +93,14 @@ def main():
             body = f.read_text(encoding="utf-8", errors="replace")
             doc["p"] = f"devposts/{f.name}"
             n_dev += 1
+            words = len(body.split())
+            if words <= SHORT_POST:
+                doc["s"] = body.strip()          # short: the whole post is its own summary
+            else:
+                doc["s"] = rsi.summarize(body, doc["t"])
+            doc["sd"] = 1
+        else:                                     # not transcribed yet: enough for a client to fetch it itself
+            doc["slug"], doc["reply_id"] = r.get("slug", ""), r.get("reply_id", "")
         add(doc, f"{doc['t']} {r.get('author', '')} {r.get('category', '')} {r.get('teaser', '')} {body}")
     # Terms in nearly every document carry no signal and dominate the size.
     cap = len(docs) * 0.6

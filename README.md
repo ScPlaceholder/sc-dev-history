@@ -48,6 +48,11 @@ the search index and commits. Everything is incremental and resumable. Run it by
     python tools/collect_commlinks.py --probe # live check: 1 listing page + 1 article body, writes nothing
     python tools/collect_spectrum.py --probe  # live check: 1 Devtracker page + 1 post body, writes nothing
 
+If RSI blocks GitHub's runners, or you fetched things in SC Toolbox (Dev History's "Load full history" / "Download
+all"), bring them in from your PC:
+
+    python tools/import_local_cache.py    # from ~/.sctoolbox/dev_history/live; then build_index.py, commit, push
+
 Posts in private Spectrum forums (Focus Testing, Evocati and the like) keep only the teaser the public Devtracker
 shows; the collector never tries to get past a permission check. Video transcripts are not collected by this
 workflow.
