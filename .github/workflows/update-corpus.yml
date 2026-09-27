@@ -1,0 +1,86 @@
+# Daily: pull new RSI comm-links and CIG Devtracker posts, backfill full text a bounded amount, rebuild the search
+# index the SC Toolbox streams, and commit. Everything is incremental; a failed or cancelled run loses nothing.
+#
+# IMPORTANT: GitHub only runs *scheduled* workflows from the DEFAULT branch. While the corpus lives on the
+# `corpus` branch, this file must ALSO be committed to the default branch (main); it checks out and pushes to
+# CORPUS_BRANCH either way. Once the corpus is merged into main, set CORPUS_BRANCH to main.
+name: Update corpus
+
+on:
+  schedule:
+    - cron: "17 9 * * *"          # daily, 09:17 UTC (off the hour on purpose)
+  workflow_dispatch:
+    inputs:
+      commlink_bodies:
+        description: "Comm-link bodies to fetch this run"
+        default: "800"
+      devtracker_backfill_pages:
+        description: "Older Devtracker pages to walk this run"
+        default: "150"
+      devpost_bodies:
+        description: "Spectrum thread requests this run"
+        default: "1200"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-corpus
+  cancel-in-progress: false
+
+env:
+  CORPUS_BRANCH: corpus
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.CORPUS_BRANCH }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Parser and collector self-tests (no network)
+        run: |
+          python tools/rsi.py --selftest
+          python tools/test_collectors.py
+
+      # Each collector may fail on its own (RSI down, a page changed) without blocking the other or the rebuild.
+      - name: Comm-links (new + bodies)
+        id: commlinks
+        continue-on-error: true
+        run: python tools/collect_commlinks.py --max-bodies "${{ github.event.inputs.commlink_bodies || '800' }}"
+
+      - name: Devtracker (new + backfill + bodies)
+        id: devtracker
+        continue-on-error: true
+        run: >
+          python tools/collect_spectrum.py
+          --backfill-pages "${{ github.event.inputs.devtracker_backfill_pages || '150' }}"
+          --max-bodies "${{ github.event.inputs.devpost_bodies || '1200' }}"
+
+      - name: Rebuild search index
+        run: python tools/build_index.py
+
+      - name: Commit
+        run: |
+          git config user.name  "sc-dev-history-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A chronology commlinks devposts
+          if git diff --cached --quiet; then
+            echo "Nothing new today."
+            exit 0
+          fi
+          git commit -q -m "Corpus update $(date -u +%F)" \
+            -m "comm-links: ${{ steps.commlinks.outcome }}, devtracker: ${{ steps.devtracker.outcome }}"
+          git push origin "HEAD:${CORPUS_BRANCH}"
+
+      - name: Flag a collector failure
+        if: steps.commlinks.outcome == 'failure' || steps.devtracker.outcome == 'failure'
+        run: |
+          echo "::warning::A collector failed (comm-links: ${{ steps.commlinks.outcome }}, devtracker: ${{ steps.devtracker.outcome }}). Whatever it fetched before failing was still committed. If this repeats, RSI may be blocking GitHub's runners or changed a page: run 'python tools/collect_commlinks.py --probe' / 'python tools/collect_spectrum.py --probe' locally."
+          exit 1
