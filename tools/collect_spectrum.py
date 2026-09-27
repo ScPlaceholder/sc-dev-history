@@ -3,7 +3,8 @@
   1. NEW POSTS. Walk the Devtracker newest-first until a whole page is already known; add new posts to
      chronology/devtracker.json (author, forum category, thread, date, the public teaser and a link).
   2. BACKFILL. Walk further back a bounded number of pages per run (--backfill-pages), resuming where the last run
-     stopped, until the Devtracker runs out (it goes back to late 2021, roughly 900 pages).
+     stopped, until the Devtracker runs out. It goes back to Spectrum's launch (2017-02-17): 911 pages of 18 posts,
+     ~16,400 posts, checked 2026-09-27. The default walks all of it in the first run (~15 minutes).
   3. BODIES. Fetch the full text of each tracked post from its public Spectrum thread into devposts/<id>.txt, a bounded
      number per run (--max-bodies). Posts in private forums (Focus Testing, Evocati...) answer "permission denied":
      for those we keep only the teaser the public Devtracker already shows, and never try to get around it.
@@ -186,8 +187,9 @@ def probe(client: rsi.Client) -> int:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--backfill-pages", type=int, default=150)
-    ap.add_argument("--max-bodies", type=int, default=1200, help="thread requests per run")
+    ap.add_argument("--backfill-pages", type=int, default=1000,
+                    help="older pages per run (the whole history is ~911)")
+    ap.add_argument("--max-bodies", type=int, default=2500, help="thread requests per run")
     ap.add_argument("--delay", type=float, default=1.0, help="seconds between requests")
     ap.add_argument("--probe", action="store_true")
     a = ap.parse_args(argv)

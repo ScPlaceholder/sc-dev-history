@@ -15,11 +15,11 @@ on:
         description: "Comm-link bodies to fetch this run"
         default: "800"
       devtracker_backfill_pages:
-        description: "Older Devtracker pages to walk this run"
-        default: "150"
+        description: "Older Devtracker pages to walk this run (whole history is ~911)"
+        default: "1000"
       devpost_bodies:
         description: "Spectrum thread requests this run"
-        default: "1200"
+        default: "2500"
 
 permissions:
   contents: write
@@ -34,7 +34,7 @@ env:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
         with:
@@ -60,8 +60,8 @@ jobs:
         continue-on-error: true
         run: >
           python tools/collect_spectrum.py
-          --backfill-pages "${{ github.event.inputs.devtracker_backfill_pages || '150' }}"
-          --max-bodies "${{ github.event.inputs.devpost_bodies || '1200' }}"
+          --backfill-pages "${{ github.event.inputs.devtracker_backfill_pages || '1000' }}"
+          --max-bodies "${{ github.event.inputs.devpost_bodies || '2500' }}"
 
       - name: Rebuild search index
         run: python tools/build_index.py
