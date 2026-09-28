@@ -143,23 +143,30 @@ def fetch_bodies(client: rsi.Client, posts: list[dict], state: dict, max_bodies:
                 bodies[p["id"]] = {"s": "err", "n": b.get("n", 0) + 1, "e": str(j.get("code"))[:80]}
                 stats["err"] += 1
             continue
-        thread = j.get("data") or {}
-        reply = rsi.find_reply(thread, p["reply_id"])
-        if reply is None:
-            bodies[p["id"]] = {"s": "err", "n": b.get("n", 0) + 1, "e": "reply not in thread payload"}
+        try:
+            thread = j.get("data") or {}
+            reply = rsi.find_reply(thread, p["reply_id"])
+            if reply is None:
+                bodies[p["id"]] = {"s": "err", "n": b.get("n", 0) + 1, "e": "reply not in thread payload"}
+                stats["err"] += 1
+            elif _write_body(p, reply, bodies):
+                stats["ok"] += 1
+            # The same payload often holds other tracked posts from this thread: keep those too, for free.
+            for r in rsi.all_replies(thread):
+                other = by_id.get(str(r.get("id"))) or by_id.get(str(r.get("content_reply_id")))
+                if other is not None and other is not p and (bodies.get(other["id"]) or {}).get("s") != "ok" \
+                        and other.get("slug") == p["slug"]:
+                    if _write_body(other, r, bodies):
+                        stats["ok"] += 1
+        except Exception as exc:        # a post shaped in a way we have not seen: record it, keep going
+            bodies[p["id"]] = {"s": "err", "n": b.get("n", 0) + 1, "e": f"parse: {type(exc).__name__}: {exc}"[:200]}
             stats["err"] += 1
-        elif _write_body(p, reply, bodies):
-            stats["ok"] += 1
-        # The same payload often holds other tracked posts from this thread: keep those too, for free.
-        for r in rsi.all_replies(thread):
-            other = by_id.get(str(r.get("id")))
-            if other is not None and other is not p and (bodies.get(other["id"]) or {}).get("s") != "ok" \
-                    and other.get("slug") == p["slug"]:
-                if _write_body(other, r, bodies):
-                    stats["ok"] += 1
+            print(f"  ! {p['id']} {p.get('thread', '')[:50]}: {bodies[p['id']]['e']}", flush=True)
         if stats["requests"] % 50 == 0:
             save(POSTS, posts)
             save(STATE, state)          # checkpoint: a cancelled run keeps what it fetched
+            print(f"  ... {stats['requests']} threads fetched: {stats['ok']} saved, {stats['private']} private, "
+                  f"{stats['err']} failed", flush=True)
     left = sum(1 for p in posts if (bodies.get(p["id"]) or {}).get("s") not in ("ok", "private")
                and (bodies.get(p["id"]) or {}).get("n", 0) < MAX_TRIES)
     print(f"bodies: {stats['ok']} saved, {stats['private']} private (teaser only), {stats['err']} failed, "

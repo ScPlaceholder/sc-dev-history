@@ -364,8 +364,17 @@ def parse_tracked_posts(fragment: str, current_day: str = "") -> tuple[list[dict
 def spectrum_blocks_text(content_blocks) -> str:
     """Spectrum post bodies are Draft.js blocks: [{type:'text', data:{blocks:[{type,text}]}}, {type:'image'}...]."""
     lines = []
-    for cb in content_blocks or []:
-        for b in ((cb or {}).get("data") or {}).get("blocks") or []:
+    if isinstance(content_blocks, dict):
+        content_blocks = [content_blocks]
+    for cb in content_blocks if isinstance(content_blocks, list) else []:
+        if not isinstance(cb, dict):
+            continue
+        data = cb.get("data")
+        # Usually {"blocks": [...], "entityMap": ...}; older posts store the block list directly, or nothing ([]).
+        blocks = data.get("blocks") if isinstance(data, dict) else data if isinstance(data, list) else []
+        for b in blocks or []:
+            if not isinstance(b, dict):
+                continue
             t = (b.get("text") or "").strip()
             if not t:
                 continue
@@ -403,30 +412,50 @@ def _lexical_text(node) -> str:
     return "\n".join(x.strip() for x in "".join(out).split("\n") if x.strip())
 
 
+def _any_text(node) -> str:
+    """Last resort for a shape we have not seen: every "text" string in the tree, in order."""
+    out: list[str] = []
+
+    def walk(n):
+        if isinstance(n, dict):
+            if isinstance(n.get("text"), str) and n["text"].strip():
+                out.append(n["text"].strip())
+            for v in n.values():
+                if isinstance(v, (dict, list)):
+                    walk(v)
+        elif isinstance(n, list):
+            for v in n:
+                walk(v)
+    walk(node)
+    return "\n".join(out)
+
+
 def post_text(post: dict) -> str:
-    return spectrum_blocks_text(post.get("content_blocks")) or _lexical_text(post.get("lexical_content"))
+    return (spectrum_blocks_text(post.get("content_blocks")) or _lexical_text(post.get("lexical_content"))
+            or _any_text(post.get("content_blocks")) or (post.get("annotation_plaintext") or "").strip())
 
 
 def find_reply(thread: dict, reply_id: str) -> Optional[dict]:
     """The thread itself when reply_id is empty or is the opening post, else the reply anywhere in the tree."""
-    if not reply_id or str(thread.get("id")) == str(reply_id):
+    # A thread's own id is not its opening post's id: the opening post is "content_reply_id".
+    if not reply_id or str(reply_id) in (str(thread.get("id")), str(thread.get("content_reply_id"))):
         return thread
-    stack = list(thread.get("replies") or [])
+    stack = [r for r in thread.get("replies") or [] if isinstance(r, dict)]
     while stack:
         r = stack.pop()
         if str(r.get("id")) == str(reply_id):
             return r
-        stack.extend(r.get("replies") or [])
+        stack.extend(x for x in r.get("replies") or [] if isinstance(x, dict))
     return None
 
 
 def all_replies(thread: dict) -> Iterable[dict]:
     yield thread
-    stack = list(thread.get("replies") or [])
+    stack = [r for r in thread.get("replies") or [] if isinstance(r, dict)]
     while stack:
         r = stack.pop()
         yield r
-        stack.extend(r.get("replies") or [])
+        stack.extend(x for x in r.get("replies") or [] if isinstance(x, dict))
 
 
 # ---- fetch helpers used by both the collectors and the Toolbox --------------------------------------------------------
@@ -599,6 +628,14 @@ def _selftest() -> int:
     case("spectrum: finds a nested reply", find_reply(thread, "102")["id"] == "102")
     case("spectrum: lexical fallback", post_text(find_reply(thread, "102")) == "Nested reply")
     case("spectrum: empty reply id means the opening post", find_reply(thread, "")["id"] == "100")
+    case("spectrum: the opening post is found by its content_reply_id",
+         find_reply(dict(thread, content_reply_id="9151279"), "9151279")["id"] == "100")
+    old_shapes = {"content_blocks": [{"type": "text", "data": [{"type": "unstyled", "text": "Old shape"}]},
+                                     {"type": "image", "data": []}, "junk"]}
+    case("spectrum: older block shapes (list data, empty data, junk) do not crash", post_text(old_shapes) == "Old shape")
+    case("spectrum: unknown shape falls back to any text / plaintext",
+         post_text({"content_blocks": [{"weird": {"text": "deep"}}]}) == "deep"
+         and post_text({"content_blocks": [], "annotation_plaintext": " plain "}) == "plain")
     report = ("PU Monthly Report\nAugust 2026\nWelcome to August\u2019s PU Monthly Report! While most teams worked on "
               "Alpha 4.10, many devs continued with tasks for content coming soon. Read on for more.\n"
               "## AI Content\nThe recent Alpha 4.10 patch marked a milestone for AI Content. The team also fixed bugs."
