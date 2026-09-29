@@ -1,0 +1,9 @@
+Hi,
+There are some really cool things you can do with this tech beyond the potential performance improvements, so we're very much looking forward to trying these out. However mesh/primitive shaders are unfortunately a feature only supported on the very latest hardware.
+So you're left with the following difficult choices:
+- Raise the minimum system requirements - Not an option as currently more than 50% of backers would be unable to play the game (it'd be controversial even if this figure was 1%).
+- Implement new mesh generation features - OK for new/minor features, but most features would need a fallback solution on older hardware, meaning two code-paths and therefore slower development and less time on new features
+- Implement only performance improvements - Takes time away from other optimizations in preference for ones that would only benefit users with the most modern and likely the fastest GPUs. This again means two code-paths so slower development and less time on new features.
+For now we're going to focus on getting the Gen12 renderer up and running, killing DX11, and then we'll take stock and see what hardware features we'd like to take advantage of next. But there's always going to be a difficult balance between quality and development time for features that require two code paths due to the required hardware only being available to a fraction of backers (for now). But we might be able to find some features/ideas that are a good fit for this without too much dev time or two code-paths, such as procedurally generating distant forest meshes where we'd otherwise have to cull them for performance reasons. Once hardware adoption is better I look forward to making more wide-spread use of this tech though!
+Ali Brown
+Director of Graphics Engineering

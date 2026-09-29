@@ -1,0 +1,39 @@
+## Star Citizen Alpha Patch 4.0.2
+Alpha Patch 4.0.2 has been released onto the PTU environment!  Launcher should now show: VERSION 4.0.2-PTU.9567476.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US Servers Only
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:600
+Hangar Spawning: Disabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+4.0.2 Release Goals
+The 4.0.2 release is highly focused on 3 key points to improve and fix as many top key gameplay issues as possible, improve connectivity/stability, and begin the latest Supply or Die Pyro Event.
+- Stability, Performance, and Bugfix Testing
+- Supply or Die Event
+- Tonight's build has further updates for Transit Carriages opening into Incorrect Zones and causing voids.
+- Further Entity Cleanup work has been done to help stop certain entities, such as ships, getting cleaned up when they shouldn't be.
+- Pyro missions for CFP/HH should be not sharable without having sufficient reputation. In Stanton this does not apply.
+## Known Issues
+- Blocker: PU - Transit/Elevators - Elevators are present but panel buttons stop functioning (PTU builds in 4.0.2 have lots of extra logging to find cases of transit issues occurring)
+- Blocker: PU - Stanton - Area18 / New Babbage - Locations / Collisions / Transit - Transit in some Landing Zones have no collision, causing players to fall through the transit floor
+- Blocker: Mission Refactor - PVP Missions dont work
+- Blocker: Mission Refactor - Comm Array Repair - Contract in mobiGlas becomes hidden when another player enters mission location
+- Blocker: PU - Kopions - Mission Content / mobiGlas / Creatures - Kopion related missions are not displaying in Contracts
+- Critical: MISC Starfarer ( All Variants ) - PU - Vehicles / Vehicle Feature - Payment can not be accepted to begin the refueling process
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Mission Refactor - NPE - Multiple Locations - Missions / UI / mobiGlas - Mission stops progressing after landing in hangar
+- Critical: PU - Inventory - Storage Access/Interactables - Storing items from the actor to the Storage Access interface will drop the items and make them lose interactions
+- Critical: Multivehicle - PU - Vehicles / Components / Weapons - Ship Weapons are sometimes not firing
+## Bug Fixes
+- Potential Fix: PU - Stanton - Missions - Mission Content / Enemy AI / HUD / UI - The mission “URGENT: Boarding Action In Progress” does not complete sometimes despite eliminating all enemy AI (STARC-156487)
+- Potential Fix: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel (STARC-138352)
+- Potential Fix: Multivehicle - PU - Audio / Vehicles / Locations - Ship engine and weapon audio missing after spawning in hangar and flying out (STARC-153799)
+- Potential Fix: PU - UI / mobiGlas / Map - Starmap search bar only searches after a character is entered then deleted in search field (STARC-112111)
+- Potential Fix: MISC Prospector - PU - Vehicles / Mining / UI - When cargo capacity is full the HUD displays the string @HUD_MINING_CARGO_FULL
+- Potential Fix: PU - Stanton - Missions - NPE / Tutorial - Storing the Tutorial ship at Spaceport ASOP before entering Hangar blocks 'Your First Flight' flow
+## Technical
+- Fixed 1 Client Crash
+- Fixed 3 Server Crashes

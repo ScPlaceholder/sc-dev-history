@@ -1,0 +1,6 @@
+Hi,
+We already have something like what is described in the paper, however our modularity largely is restricted to features contained within each of 20 or so shader types. Each of these shaders has around 10 optional features that can be enabled in any combination, but we have many features which we want to share between shader types, which is what the recent changes will allow.
+As a second step we also want to move towards a system where we can much more quickly prototype new shader features in a more “plug and play“ style… whether this is a shader graph like Unreal (which brings a TON of its own problems) or a more bespoke system like Naughty Dogs, we’ve not decided yet.
+Hope that helps.
+Ali Brown
+Director of Graphics Engineering

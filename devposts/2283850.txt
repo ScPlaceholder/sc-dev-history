@@ -1,0 +1,10 @@
+Heya,
+thanks for the nice words, happy to help ... head tracking is very important to me and I wanna make it as good as it can get. On your specific points:
+1)  Zooming in
+I need some clarification here ... you are clicking the middle mouse button to zoom in? Or do you mean using scroll wheel?
+2) On MFD use
+Agreed, essentially the zoom makes any head movement more apparent. There are a couple of things we could try to make that work.
+- Dynamically modify threshold settings for FOIP while zoom is active AND we're in interaction mode. Though TrackIR users would be left out of that.
+- Dynamically reduce the effect of head movement while zoom is active AND we're interaction mode. So essentially keeping the effectiveness in line with the current FOV.
+None of these options is easy to do or implement and all of them require loads of play testing. I'll put it in the backlog but I'll likely won't be able to approach them before 3.8.
+3) On snapping when disabled: I agree with this, and it is actually already on the backlog but it is also not a straight forward thing to fix. I would also not expect a fix for that before 3.8.

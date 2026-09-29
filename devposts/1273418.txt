@@ -1,0 +1,56 @@
+## Star Citizen Patch 3.2.0k
+Alpha Patch 3.2.0k has been released to PTU, and is now available to test!  Patch should now show: PTU-792285.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- When QT Linking, the Calibration Progress audio will continue to play for the non-Calibrators even after the Calibration has completed.
+- Attempting to QT link with another player in another seat of your ship will cause a crash.
+- QT Spool Indicator is missing from Flight HUD.
+- Calibration UI is missing from Gladius
+- Attempting to QT to an invalid nav. marker, such as "obstructed", will put the drive into a broken state that requires the ship to be claimed and replaced.
+- Escort missions do not progress past the rendezvous stage.
+- If the master ship player enters QT after calibrating/spooling for a group quantum link, but leaving one more more members behind, the party will have broken quantum travel functionality.
+- There's a large drop in frame rate performing ping scans on the surface of moons .
+- Gimbals are currently locking onto AI ships when activating gimbal lock.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- New "destroy probe" mission.
+- Mining: Scanning, mining, extraction, and Prospector function.
+- Flight and function of the following: Avenger series, 600i, Eclipse, Blade.
+- Orbital quantum travel.
+- G-force effects.
+- Ship power tuning and power triangle usage/effects.
+- Manned and remote turrets.
+- Group system.
+- Quantum linking.
+## Feature Updates
+General
+- Changed the engage behavior of AI pilots so they won't break away as far, as far, or as often.
+Universe
+- Updated ATC landing pad highlights to help clarify landing designations.
+- Added armistice greenzone around GrimHex.
+Missions
+- Moved some missions over to "General" from the "Personal" tab.
+Ships and Vehicles
+- Updated the Prospector's flight behavior to be similar to precision mode when in mining mode.
+- Added impact effects for numerous new and old weapons where they were missing.
+- Changed the thruster color of the 600i from gold to blue.
+- Reduced the red reflection on the interior cockpit of the Blade.
+Arena Commander
+- Increased radar range in Arena Commander to make all ships detectable.
+## Bug Fixes
+- Fixed an issue where shopkeepers were looking in the wrong direction during interactions.
+- It should no longer be possible to find loopholes that allow you to unstow your weapon within armistice zones.
+- Fixed an issue that prevented previous mission spawns from being cleaned up prior to the next mission.
+- Another attempted fix for players becoming stuck in the pilot's chair unable to control their ship.
+- The player should now properly raise their gun when up against a wall.
+- Mission giver notifications should no longer have "title' text.
+- Fixed excessive texture culling from the pilot's point of view in the 600i.
+- The yaw and roll animations on the Vanguard switch should no longer be switched.
+- Possible fix for Levski elevators becoming unresponsive.
+- Shifted the nose weapon hardpoint of the Vanguard to avoid size 5 weapons clipping into the landing gear.
+- Entering remote turrets should no longer remove flight functionality on the parent ship.
+- Switching from CommLink to another mG app should no longer cause the mG to close and then reopen.
+Technical
+- Fixed 7 client crashes.
+- Fixed 2 server crashes.

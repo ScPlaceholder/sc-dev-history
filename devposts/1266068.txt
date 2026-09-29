@@ -1,0 +1,56 @@
+## Star Citizen Patch 3.2.0i
+Alpha Patch 3.2.0i has been released to PTU, and is now available to test!  Patch should now show: PTU-790942.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- The Mustang series, Dragonfly, and Nox have been disabled due to a severe issue and pledge copy has been temporarily turned off.
+- The Slave ship will occasionally encounter permanent effects of being Interdicted after Quantum linking with the Master ship.
+- Purchasing Commodities at GrimHex for your ship will cause it to be 'destroyed' and have to pay the insurance claim, along with losing the cargo.
+- If the master ship player enters QT after calibrating/spooling for a group quantum link, but leaving one more more members behind, the party will have broken quantum travel functionality.
+- Its possible for the master ship in a quantum link to send calibration data from far outside the intended range, breaking the link interaction.
+- Some features may be missing or partially implemented, but not ready for testing and as such are not listed in the initial release notes.
+- Gimbals are currently locking onto AI ships when activating gimbal lock.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- New "destroy probe" missions.
+- Mining: Scanning, mining, extraction, and Prospector function.
+- Flight and function of the following: Avenger series, 600i, Eclipse, Blade, and Hurricane.
+- Orbital quantum travel.
+- G-force effects.
+- Ship power tuning and power triangle usage/effects.
+- Manned and remote turrets.
+- Group system.
+- Quantum linking.
+## New Features
+Missions
+- Added two new probe destroy missions for lawful and outlaw.
+Ships and Vehicles
+- Added UI prompts for hydrogen fuel that inform that pilot at every 1/4 increment of fuel.
+## Feature Updates
+General
+- Players will be removed from the party if they leave game or crash.
+Universe
+- Added orbital quantum nav. point for Levski.
+- Updated the wanted punishment for killing versus destroying empty ships.
+- Updated mineable rock planetary distribution.
+- Added more variation in mineable rock geometry.
+Missions
+- Further updates to mission rewards.
+FPS
+- Updated and added legacy Marine armor.
+- Updated and added legacy Outlaw armor.
+- Added more variations of the Venture armor (available at kiosks).
+Ships and Vehicles
+- Adjusted throttle curve for the mining laser.
+- Increased the health of the Hurricane.
+- The scanning UI element should disappear when the scan is complete.
+- Setup for atmospheric and quantum travel for the Hurricane.
+- Updates for missile lock-on ranges.
+- Increased the power requirement of ship weapons.
+- Further updates to mining UI and VFX.
+- Significantly increased the damage of all ship cannons.
+- Updated the cooldowns on different sizes of quantum drives.
+- Balance pass on Raven EMP, distortion repeaters, and power-plant's distortion resistance.
+- The 600i should now have the ability to carry cargo.
+Star Marine
+- Disabled the Railgun in Star Marine.

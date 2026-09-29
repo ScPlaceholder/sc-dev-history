@@ -1,0 +1,37 @@
+## Star Citizen Alpha Patch 4.9
+Alpha Patch 4.9 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.9.0-PTU.12180844
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Recco Battaglia Repeatable Missions (reputation sped up for tonight)
+- Vehicle Hit Marker Updates
+- Behring CQ7 Bullpup Rifle
+- Vehicle Cleanup Updates
+Known Issues
+- PU - Comms / Audio / VoIP - Proximity VOIP does not take over and party VOIP stops working at 60m meters and below
+- Destroy Narcotics missions disabled temporarily due to a structural refactor
+- PU - Ship Battles - Missions / Locations - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- PU - Ship Battles V2 - EscortShips - Mission Content / AI - Escorted ship does not Quantum Travel away or Go to the Hangar after neutralizing the AI ships in the mission location
+- PU - Missions - Bounty Hunter / Mission Content - When killing the Neutralize target the mission does not progress
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- Multi-System - PU - Locations / Inventory - There's a chance that their primary residence does not contain their items' (Workaround: Recopy account if you need your default local items)
+## Features & Gameplay
+Gameplay
+Abandoned Vehicle Cleanup
+We have updated the new ship cleanup code for Grim Hex, Levski, and other social stations across Nyx. This new code adds ship cleanup rules that will cleanup ships in an abandoned state after 5 hours. This was already applied in the previous build for stations and major landing zones across Stanton and Pyro.
+Ballistic Repeater Balance Pass
+We have done a balance pass on Ballistic Repeater weapons to greatly reduce their damage.
+## Bug Fixes & Technical
+- Fixed 1 client crash
+- Fixed 2 server crashes
+- Potential Fix: Players unable to dock using docking collars. This fix is for one of the largest issues we have been seeing with docking. We suspect that there may be more issues, so if you run into anymore please let us know.
+- Potential Fix: Vanduul Stinger fighters appearing as neutral, human-piloted ships instead of hostile Vanduul during the "Welcome to Nyx" mission QV breaker stations.
+- Potential Fix: Missing or incorrect text in the Battaglia dossier, including reputation text for the Recco organization.
+- Potential Fix: Lowered the reputation rank required to unlock higher rated Battaglia Scan Mine missions from Rank 5 to Rank 2.
+- Potential Fix: There's a chance that the blank memory drive will spawn under the floor during the ASD Delving Mission 2.
+- Potential Fix: Extra Plasma Fuel Cell hologram grid appears outside the Fuel Reactor, and the cell cannot be removed once attached during the ASD Delving Mission 3.
+- Potential Fix: Yormandi creatures freezing in place and failing to move after being staggered.
+- Potential Fix: Proximity voice chat failing to take over, and party voice chat dropping, at close range (60m or less).
+- Potential Fix: Vehicle hit marker audio playing inconsistently.

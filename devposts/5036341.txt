@@ -1,0 +1,4 @@
+Hi,
+It’s impossible for me to say for sure what is running on that CPU from the information here, but yes its quite likely to be shader compilation. This can either be on our end, in which case you’d see this in the log, or it can be at the driver level where it decides to compile specialised versions of each shader in an attempt to improve performance (for which we have no way to know when this is happening). This is not directly related to Gen12, however once we move to Vulkan we will be in greater control of the shader compilation, and one possibility here is to look into “offline“compilation (eg in the main menu), but this is quite a complex topic, especially for a game with as much diverse content as ours. We’re also looking to investigate approaches which may reduce the number of shaders we need by relying on more configurable (branching) shaders.
+Cheers,
+Ali Brown

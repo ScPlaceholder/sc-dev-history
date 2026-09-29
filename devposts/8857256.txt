@@ -1,0 +1,56 @@
+Hi Everyone!
+Time again for another Hotfix Central thread to keep you all up to date on things going on outside of the normal patch cycle in SC Alpha 4.8 LIVE!
+This will be a living document of all the hotfixes applied to the current LIVE environment, along with dates as a timeline and when the HOTFIX channel is open and closed.
+These posts will be locked down to comments as the updates will span the entire 4.8 cycle so please check out the issue council and testing chats for any information you would like to let us know about!
+## Current 4.8 LIVE Status | 7.1.2026
+https://status.robertsspaceindustries.com/
+https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21168-Star-Citizen-Alpha-48
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN
+- Status: Hotfix Channel Currently CLOSED
+- Latest LIVE Client CL: 12122953
+- Latest LIVE DGS CL: 12122953
+► 7.1.2026:  Arena Commander Stability SC Alpha 4.8.3 - 12122953
+The Arena Commander stability fixes for client and server have been merged into the new LIVE update for 4.8.3.
+► 6.19.2026: 12061511 4.8.2 Client/Server Stability and Hotfixes being worked on
+- Client Stability hotfix is now on LIVE. This includes fixes for 3 of the top client crashes
+- Server hotfix has begun rolling out to further servers as they hit server errors. This update includes fixes for 5 of the top server crashes
+► 6.12.2026: 4.8.1 Client/Server Potential Hotfix
+We are currently testing a new Client and Server hotfix with the goal of testing the server side fixes on select shards and opening up the Hotfix Channel later today for over the weekend for the client side. This includes multiple client and server crash fixes along side these noted below. If the server side of the hotfix validates, we will begin rolling it out further.
+// Client Side Fixes
+- Command Module - QT Points are invisible after crossing a server boundary
+- While traveling through Jump Tunnels, QT, or general flight the vehicles may switch into SCM GUN mode
+// Requires both Client / Server
+- Multivehicle - PU - Vehicle / mobiGlas / Service - Ship-to-Ship services absent/not functioning across multiple vehicles
+- PU - Multi-System - Spaceport - Locations / Interactions - Docking / ATC - Unable to Dock using Docking Collars
+- Tailwind Flight Suit - Flight suit causes actor hands and feet to be invisible
+// Server Side Fixes
+- Ship Battles - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- Potential fix for inventories becoming empty or inaccessible
+► 5.28.2026: Service Hotfix
+A service hotfix went out overnight to fix an issue where some ships cannot be claimed through 'Claim Insured Loadouts'. This affected the Shiv and the Cutlass series.
+► 5.21.2026: CL 11875683 - Today's maintenance introduces a new hotfix along with a feature update for implementing individual claim modes for item recovery.
+Individual Claim Mode Update
+Today's maintenance build update includes a new feature to item recovery. Freight elevators now have a new "Claim Mode" button on the terminal that will only be accessible at your home location. This new Claim Mode button brings up a window with all platform (website) owned ship items (other than vehicles, consumables, and items in a vehicle's default loadout) and allows you to claim one ship item at a time back to your home location. Claiming an item will add it to the inventory accessed by the kiosk (may require refreshing the window) and brick the previously owned item. For filtering, an "Exclude Paints" checkbox at the top hides all paints from the list for cleaner access.
+- Multiple Server and Client crash fixes
+- Fixes for Storm Breaker AI not spawning on additional runs
+- Fixes for players clipping through ramps and elevators of vehicles after being refueled
+- Fixes for incorrectly long insurance claim timers
+- Fix for mined ores disappearing after storing a vehicle
+- Additional fixes for TSG locations not cleaning up abandoned vehicles and debris
+- Fix for Ironclad thruster audio
+- Arena Commander fixes for being unable to equip weapons and armor
+- Multiple Client and Server Crash fixes
+- Server: Some vehicles not despawning after being stored and retrieved from the ASOP
+- Server: Multivehicle - PU - Vehicles - If the player calls Landing Services in the hangar when another vehicle is on the pad the other vehicle will be stored
+- Server: Abandoned vehicles are persisting at TSG Locations after the location has been streamed out
+- Server: Fix landing area checking obstruction bounds instead of full bounds when deciding to store a vehicle on the pad
+- Server: Ships without ballistic guns are unable to restock missiles and countermeasures through the landing services inside another ship that provides landing services despite having resources on the cargo grid
+- Server: Multivehicle - PU - Vehicles / Landing Services - Ships without ballistic guns are unable to restock missiles and countermeasures through the landing services inside another ship that provides landing services despite having resources on the cargo grid
+- Client: PU - Loading Screens - Area18 - Server prevents the player actor from moving at all after loading in
+- Client+Server: Fix for ships colliding with each other during auto-undocking execution
+- Client+Server: Ships switch to SCM Master Mode when changing servers
+- Client+Server: Contested Zone airlock access not cycling
+- Service Hotfix: PU - Missions / UI - Mission QT target moving away rapidly through space
+## Using the HOTFIX channel
+The HOTFIX channel will become available for periods of time when the client-side of the game needs the hotfix. This channel will point to the LIVE environment and using this will retain and add progress to your LIVE account as if you were playing normally.
+The best way to play on HOTFIX is to rename your LIVE folder to HOTFIX and verify using the HOTFIX channel on the launcher. Reverse this process to go back to LIVE once it is released or you would like to stop using this channel.

@@ -1,0 +1,2 @@
+Internally, we've always had quite a long list of earlier builds available, though each (I believe) is stored as the full build rather than just deltas from the one before it. Until recently, switching builds locally took quite a long time, for the same reason the launcher took a long time: any PAK that was touched had to be re-copied.
+Several months before 3.0, we switched internally to use the same delta patch system that the new launcher uses, which sped things up as massively as you might imagine, and also heavily tested it so that bugs could be ironed out.

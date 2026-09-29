@@ -1,0 +1,29 @@
+## Star Citizen Patch 3.12.0q
+Alpha Patch 3.12.0q has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.12.0-PTU.6780371.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Gameplay
+Volunteer regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-12-0q
+Known Issues
+- Bounty Mission Completion are removed on character reset and players will not be able to pick up Bounty missions again
+- Selling commodities from personal Inventory causes a service error
+Workaround: Make a commodity cargo box in a ship cargo grid and sell through the ship inventory.
+- Area18 admin office trading terminals will give an error and fail when selling commodities
+- Player eyes are extra reflective in video
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool
+## Bug Fixes
+- Ground vehicles should no longer take intermittent damage during travel across the surface of low gravity moons
+- Players should now be able to activate mining consumables in the Mole using the inner thought UI
+- Players should no longer gain a crimestat after completing bounty missions
+- Fixed an issue causing ships to despawn after a player disembarks for a short duration
+- Contract popups should no longer contain "mission(Title)" instead of the intended text
+## Technical
+- Fixed 4 Client crashes

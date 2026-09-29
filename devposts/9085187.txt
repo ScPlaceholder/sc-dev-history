@@ -1,0 +1,32 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12457370
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (Progression speed increase for PTU)
+- Wikelo Inventory Updates
+Known Issues
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Feature Updates
+Siege of Orison & Instancing Performance
+Completed Siege of Orison instances are now marked for immediate cleanup once all players leave, rather than waiting for the full TTL to expire; this frees up server resources faster after mission completion
+Further Geometry, material, and general performance polish
+## Bug Fixes & Technical
+- Fixed multiple Server Crashes
+- Backend Update: Fixed an issue with entitlement auto-delivery failing silently when the server connection was never established; delivery now retries correctly and failed batches are reported as errors rather than successes
+- Backend Update: Mission system now waits for the Remote World Entity System to be ready before syncing player state, preventing mission state mismatches on login
+- Potential Fix: Mendo Ren becoming unkillable during the final phase of the Siege of Orison boss fight due to an AI mission flow issue blocking her death state from triggering
+- Potential Fix: Siege of Orison mission not automatically accepting when players entered the instance, requiring manual mobiGlas acceptance to begin
+- Potential Fix: Siege of Orison AI enemies missing and the location not resetting correctly when repeating the mission after a previous completion
+- Potential Fix: ARGO ATLS IKTI getting stuck underground after falling from a great height
+- Potential Fix: Context popup window in the inventory appearing offset on widescreen resolutions due to incorrect UI scaling

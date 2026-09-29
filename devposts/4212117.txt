@@ -1,0 +1,5 @@
+Hello!
+Crash dumps provide information on what a program was doing.
+Debugging needs will vary depending on the kind of issue that is being caused so in many situations, this might be all that's needed for the issue to be investigated and fixed. In addition to the dump file, the crash handler also sends us additional information that the dump file doesn't contain, such as the game client log file, just in case that has information that makes it easier to investigate and fix the issue.
+In some cases, developers don't get the information they need to be able to fix something from a crash submission and need specific steps in order to be able to fix the issue.
+In looking at  your crash submission history, a lot of the submissions are graphics card crashes. One thing you can do to help the game client send information that helps fix these is to add r_enable_full_gpu_sync = 2 to your user.cfg file and then reproduce the crash. This makes the game client performance pretty bad so once you've submitted the crash, you'll want to remove it. After that, poke someone to let them know that the info was sent so that it can be looked into.

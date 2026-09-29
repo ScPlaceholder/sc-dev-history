@@ -1,0 +1,49 @@
+## Arena Commander 3.21: Bug Fixes & Technical
+Frontend / Lobby System
+- Added clearer messaging for when a lobby is not ready.
+- Fixed an issue where lobby invites were spammable.
+- Fixed an issue where lobby members would appear multiple times.
+- Fixed an issue where lobby members’ ready status was inaccurate for some members.
+- Fixed an issue where recovery to a lobby that is still on the frontend can put the lobby in a bad state.
+- Fixed an issue where a host leaving then returning to a lobby would put the lobby in a bad state.
+- Fixed an issue where players who accepted lobby invites while in-game would put the lobby and their client in a bad state.
+- Fixed an issue where players could accept multiple invites to the same lobby, which puts the lobby into a bad state.
+Maps
+- In Broken Moon, adjusted the glare of the terraforming laser to be less blinding.
+- In Defford Link, fixed an issue where a large billboard from Winners Circle appeared in the distance.
+- In INS Jericho, removed the vehicle impound area.
+- In Miners Lament, adjusted checkpoint 14 & 15.
+- In Old Vanderval, removed a race camera that was in the centre of the track.
+- Adjusted various checkpoints & their trigger areas in Yadar Valley, Icebreaker & The Snake Pit to better represent the holographic checkpoints.
+Modes
+- In Classic Race, fixed an issue where players appeared in the wrong positions on the scoreboard after completing a match.
+- In Classic Race, fixed an issue where the lap count would not appear until atleast one lap had been complete.
+- In Classic Race, fixed several issues caused by players completing extra laps after a race had concluded, such as their leaderboard stats being nullified or scoreboard displaying incorrect values.
+- In Gun Rush, fixed an issue where players who won would not appear at the top of the scoreboard.
+- In Swarm, fixed an issue where AI would appear 5-8km away from where they should.
+- In Swarm, fixed an issue where AI would only attack players within a 10km radius from the central point.
+- In Swarm, fixed an issue where AI would take fighting above the playable area in Winner’s Circle
+- In Swarm, fixed an issue where the mission would not start if the level loaded, and game began too fast.
+- In Swarm, fixed an issue where the mission would stop progressing if all players were dead at the time of the wave changing.
+System / Misc
+- Added the ability to change vehicle configuration during pre-game.
+- Added the ability to use in-game chat during the post-game. Be sure to let your opponents know it was a good game :blush:.
+- Fixed an issue where players were unable to change their vehicle or loadout within the same match.
+- Fixed an issue where the Win/Loss score bonus was not accounted for in the REC awards.
+- Fixed an issue that caused squad members to be separated in team-based game modes.
+- Fixed an issue where collisions with friendly vehicles would give a positive score.
+- Fixed an issue that caused the players name to not be set properly in the HUD.
+- Fixed an issue that caused the “Rounds Won” counter to appear on the scoreboard for non-round game modes.
+- Fixed an issue where the client did not recognize newly acquired badges until restarted.
+- Fixed an issue where the post-game flow would leave PlayerAwards state earlier than expected and spend longer than intended in the Scoreboard state.
+- Fixed an issue where upon Match Cycling the player would get stuck on “Searching for Match”.
+- Fixed an issue that caused the GMNI S71 Ballistic Rifle to be unavailable in Arena Commander.
+- Fixed an issue that caused the armours for RRS Heavy Mozorov-SH (7 each type) and Light Arden-SL (4 each type) to be unavailable in Arena Commander.
+- Fixed an issue where the TMBL Nova had the wrong career & role set.
+- Fixed an issue that caused the wrong string to display in non-team modes for “Final Kill” UI.
+- Fixed an issue where the local clients player name would sometimes not appear in AC UI.
+- Fixed several instances where the scoreboard would incorrectly order players.
+- Fixed several issues with joining an AC match from the SC Frontend.
+- Fixed an issue where the player numbers on scoreboard past 10 would get cut-off.
+- Fixed an issue where on the scoreboard players stats would go to the right of the screen rather than making the scoreboard scrollable.
+- Fixed an issue where teams were the wrong colours on the scoreboard.

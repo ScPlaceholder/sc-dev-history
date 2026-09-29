@@ -1,0 +1,59 @@
+## Star Citizen Patch 3.19.0 8460184
+Alpha Patch 3.19.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.19.0-PTU.8460184.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Testing Focus
+- General Stability
+- Lorville Skyline 2.0
+- Salvage Contract Missions
+- Tractor Beam - T0.5 - Item Attaching and Detaching
+- Ghost Hollow Reclaimer PVP Mission
+- Mission Density Management
+3.19.0 Features Upcoming in a later PTU build
+- Mining Balancing v01
+- New Player Experience
+Known Issues
+- Missing header dropdowns for Source/Category/Subcategory/Search in shop Kiosks
+- CBD is restricted zone and will impound and teleport players upon arrival
+- AC - PTU/LIVE - WaitForPlayerSpawn Connection Timeout
+- Aegis Reclaimer - Stanton - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction from ship exterior
+- Aegis Reclaimer - All Variants - Stanton - Reclaimer main on-elevator control panels do not respond to input
+- ARGO MOLE - Stanton - Vehicles / UI - The interaction prompts for ALL mining turrets are easy to miss/in unintuitive locations for players
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Global - UI - 21:9 resolution - Hints do not appear when loading into universe on an Ultra Wide setting
+- Multivehicle - Stanton - UI / Vehicles / Mining - Mining UI is appearing in Low Resolution
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Shard - Shards can fail to load after a crash / restart with a "RESOURCE_EXHAUSTED" error during QueryZoneHosts
+- Stanton - Actor Feature - Greycat Multitool / RMC Canister - Issues with RMC Canister reload behavior
+- Stanton - Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Stanton - Multilocation/Multivehicle - Shopping - Store kiosks won't populate locations if certain ships are stored
+- Stanton - Multitool - FPS Hull Scraping - The Salvage attachment has the VFX of the tractor beam and does not function
+- Stanton - Ships - ASOP Terminal - Spawning ships causes the requested ship to spawn outside of the hangars
+- Stanton - Yela - Grim Hex - Mission Giver - AI / Missions - Wallace Klim becomes stuck under the floor near the hangars after being streamed out and streamed back in
+## Feature Updates
+Locations
+- Updated Building Blocks Shop UI Casaba, Dumpers Depot style BB implementation
+- Lorville LOD and Collisions Polish Pass
+Gameplay
+- Added Default Port unlock keybind (r-alt+K)
+- Removed the Old Hint System and Added the Newly Revamped Dynamic Hints UI
+## Bug Fixes
+- Fixed - Actor Feature / Network - Players in a given instance may experience a response latency of up to dozens of seconds for interactions
+- Fixed - PES / OCS - UI - ASOP / Fleet Manager - When players stream out an area and an owned vehicle unstreams, the vehicle does not stream back in and ASOP status "Destroyed"
+- Fixed - Hurston - Lorville - Most of the landing pads on Lorville Skyscrapers are missing collision
+- Fixed - AI / FPS - Enemy combat AI is slow to respond or react
+- Fixed - Area18 - Interactables / Locations - Players can be injured or killed when getting out of the chair in the HAB
+- Fixed - Area 18 - Pharmacy Kiosk - Buying Pharmacy Items at Empire Health results in "Invalid Location" error
+- Fixed - Aegis Redeemer - Ships - Redeemer is missing collision on its floor
+- Fixed - MISC Hull A - Vehicles / Art / Collision - Vehicle Components - A collision wall is blocking the Player from removing Internal components with the tractor beam
+- Fixed - Shopping/Kiosks - All shopping kiosks have misaligned / offset interaction space
+- Fixed - Exploit - Multivehicle - Stanton - CryAstro / Vehicle Repair / Ships / Components - Replacing Detached Components Costs 1 aUEC to Repair, Allowing Cheap Duplication and Selling of Non-Stock Component
+- Fixed - DRAKE Vulture - Tractor / Components - Difficult/impossible to remove internal components due to geometry
+- Fixed - Ghost Hollow - Locations / AI - AI Cutlass Blacks will infinitely spawn in the area
+- Fixed - Arena Commander - UI - Menus - Find match button greyed out until player switches game modes
+## Technical
+- Fixed 1 Client Crashes
+- Fixed 3 Server Crashes

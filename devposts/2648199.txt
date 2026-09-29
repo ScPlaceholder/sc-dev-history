@@ -1,0 +1,61 @@
+## Star Citizen Patch 3.8.0n
+Alpha Patch 3.8.0n has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.0-PTU.3891899.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+If you haven't logged in since the PTU wipe early 12/18 please recopy your account.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- General gameplay and traversal
+- Microtech and updated rest stops
+- New look ahead and third person camera updates
+- Patrol, bounty, and mining claim missions
+- Fine kiosk system
+- Hijacked 890 mission
+- Mining and mining laser head attachments
+- Ship components
+Known Issues
+- Constantine Hurston is missing.
+- Paying a fine at the fine kiosk may not remove the player's crime stat.
+- Once a magazine is emptied for the Animus Launcher the player can no longer equip fresh magazines.
+- The mission marker for black box recovery does not update when arriving at orbital mission locations.
+- Multi-tool scanned mineables remain on the player's HUD when the multi-tool is stowed.
+- If the quantum travel marker is at the edge of a moon or planet they can QT through the moon and explode.
+- Carriable mission items can fall through flooring.
+- The Sentinel is incorrectly labeled as the Harbinger in the ASOP and Comms channel.
+- Purchased commodities will often visually not appear in the ship's hold.
+- Carriable boxes may fall through the flooring.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## New Features
+Gameplay
+- Added a look ahead option that pulls the head toward the cursor if it is visible (disabled by default).
+## Feature Updates
+Gameplay
+- Audio mixing and polish pass for all mining lasers.
+- Further audio polish for melee combat.
+- Tweaked double vision effect in unarmed combat/stun damage.
+- Reworked weapon reload sounds to better line up with animation changes.
+- Smoothed out target offset movement for third person camera.
+## Bug Fixes
+- Players should be able to get up using normal interaction setup when seated on the Mustang Beta's toilet.
+- Multi-tool scanned mineables should no longer remain on the player's HUD when the multi-tool is stowed.
+- Players should no longer be able to cause their character to become invisible when setting options in the character customizer.
+- Weapons should no longer be dropped when swapping between one another.
+- Mineable asteroids should now spawn around ARC-L4 and ARC-L5.
+- NPCs at stations should no longer perform use animations, such as lean or seat, against no props and appear to be floating in the environment.
+- Ships should no longer have incorrect interior shadows and/or light bleeding through when it should not.
+- Disabled bed logout in ships that are in other ships to work around a crash.
+- The player should no longer clip through the ship art when exiting the top bunk bed on the Reliant.
+- Fixed a door that wouldn't open during the Covalex investigation mission.
+- Ships in the hangars at Levski should now correctly appear on the commodity kiosk under "sell".
+- Ships containing cargo should no longer show up as having 0 SCU.
+- Fixed text strings for delivery missions going to new locations.
+- Cacti on planetary surfaces should now have collision.
+Technical
+- Fixed 3 server crashes.
+- Fixed 5 client crashes.

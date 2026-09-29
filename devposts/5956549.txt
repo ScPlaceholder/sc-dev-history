@@ -1,0 +1,8 @@
+Hi DeltaLambda,
+I don’t think there’s a simple answer to all your questions. But I’ll try and fill in some blanks.
+ReBar allows most/all of the GPU memory to be directly accessible to the CPU, whereas usually only a small amount (eg 256mb) is directly visible. This means large memory transfers can become much faster.
+Whether this is beneficial to performance depends on many factors, such as the amount and type of memory/objects being transferred each frame, the rendering engine, and the graphics API it uses (eg DX11/DX12/Vulkan). There should be no downsides, but bugs in games or drivers are always a possibility.
+As for Star Citizen, we’re still using DX11 in our public build, but making good progress on the Vulkan backend internally, which we will roll out this year. This has massively changed now we manage memory. Once this is complete we can investigate ReBar and what gains it brings, and verify it doesn’t cause any bugs.
+Cheers
+Ali Brown
+Senior Director of Graphics Engineering and Procedural Tech

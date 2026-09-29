@@ -1,0 +1,32 @@
+Hello everyone,
+As with previous Patch Watches, we're spotlighting a selection of upcoming features and improvements that don’t appear on the Public Roadmap. So, as we approach release day for Star Citizen Alpha 3.18, here are some of the latest additions making their way into the build.
+## Additional Keybindings
+We're currently working on significant changes to the aiming system, which will not debut in Alpha 3.18 but in a later patch. However, several related keybindings will be available in the upcoming release:
+New Gimbal Swap Commands
+This will allow you to set a gimbal mode of your choice directly:
+- 'G-key short press' will only swap between Fixed and Auto gimbal modes
+- 'G-key long press' will activate Manual gimbal mode
+- Additionally, there are now keybindings to directly select fixed, auto, and manual gimbal modes
+Toggle PIP Type
+We will give you the option to toggle between lead and lag PIP, giving you more flexibility to adjust your aiming.
+In addition to the toggle binding, you can now directly set lead or lag mode with a button.
+ESP
+Two new hold keybindings (for the pilot and turret gunner) will be added to allow you to momentarily enable ESP by holding down the button. This is useful for certain joysticks that feature dual-stage triggers, allowing the first stage to enable ESP and the second stage to fire weapons.
+Separate Keybinds for Deploying & Retracting Landing Gear
+In addition to the current toggle, you will be able to set keys to specifically deploy or retract your landing gear, which is required for hardware switches.
+Stopwatch
+We're adding a stopwatch to the flight HUD as a tool for the racing community. Two keybindings are available (unbound by default):
+- 'Short press' to start and pause the watch
+- 'Long press' to reset the watch
+The stopwatch will only be visible on the flight HUD. Due to some hooking problems, it will not be visible on ground vehicles for now. At a later date, we will move the stopwatch functionality to the visor, where it will also work outside ships. We may extend the stopwatch based on community feedback at a later point as well.
+## Balance changes
+Ballistic Shield Penetration
+Ballistic shield penetration will be largely increased. With this change, even strong shields will only scrub off a few percent of incoming ballistic damage. Related but not quite ready for Alpha 3.18: we're working on a weapon diversification, which will strongly influence weapon performance parameters and ammo counts. This is planned for a later patch next year.
+Health Component / Distortion Pass
+The health of items will be increased to have less chance of being immediately destroyed by a single missile hit.
+Distortion numbers are also changing. Coolers will not be affected by distortion to avoid deadlocking. Powerplants will not scale down their power output with increased distortion damage but instead binarily shut off once distortion damage is too high. Powerplants will then take five minutes to recover, while powered-down items will not receive any more distortion damage.
+These are not the final tuning values for distortion; consider them a temporary measure until we approach related gameplay topics, like slowing ships down.
+## Mining Bugfixes
+Minable gems will be stackable in inventories in Alpha 3.18.
+The team also added minor improvements to the mining gadget UI for better readability.
+That's all for this Patch Watch - keep an eye out for more soon!

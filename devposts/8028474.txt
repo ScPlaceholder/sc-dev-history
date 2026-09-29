@@ -1,0 +1,2 @@
+That one's different. 30,018 timeouts occur when the game is taking way too long to load someone into a shard where the above issue is causing the shards to get into a state where they stop processing their join queue. Unlike the join queue issue, the 30,018 problem almost always recovers and allows us to use the same shard again if we isolate the shard and let it empty out. The join queue issue usually doesn't.
+We do have a separate bug in for that one as well though.

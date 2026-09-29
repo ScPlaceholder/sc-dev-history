@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.0.0ak
+Full patch notes can be found here: https://ptu.cloudimperiumgames.com/spectrum/community/SC/forum/1/thread/star-citizen-patch-3-0-0-ptu-2
+Alpha Patch 3.0.0ak has been released to the PTU, and is now available to test!  Patch should now show: PTU-685145
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Important:
+- Focus:  New patcher, station traversing, ship spawning, StarMap app, quantum travel, landing, air traffic control (ATC) system, quantum fuel usage/balance, hydrogen fuel usage/balance, afterburner, shopping, ship MFDs, missions, core combat (mission related).
+- All the ships are flyable, but the following are the ships that have had the most attention and focus: Gladius, Hornet Series, Sabre, Vanguard, Constellation Series, Cutlass Black, Caterpillar, Nox, Dragonfly, Prospector, Freelancer, Aurora series, Argo series, Buccaneer, Greycat, Starfarer series, Khartu-AL, Avenger series, Gladiator, Mustang series, Herald, Merlin, 300 series, Ursa.
+We would like you to focus on the above for this wave of testing and bug reports.
+NOTE: Other content and features are in and listed in the notes, but currently not the focus of this testing phase as they undergo bug fixes and polish. Additionally, there's content that is not listed in the notes that are intended for live release and will be added iteratively during the testing cycle.
+## Key Game-play How Tos:
+Afterburner:  There is now a single afterburner with the ability to achieve higher top velocity under certain conditions, giving us AB SCM and AB Cruise with the only distinction being two different speeds. You can only enter AB Cruise if your flight path is a straight, forward line. Otherwise you're limited to AB SCM, i.e. while maneuvering/strafing. Once in AB Cruise you can release the afterburner key and go into an AB idle mode to maintain your current speed.  Throttle setting and y-axis strafe level allows incremental speeds, but you will decelerate if you change your vector. If you continue to hold AB and maneuver, you drop to AB SCM speed until you return to straight-line flight. AB Idle holds your current velocity as long as you're not maneuvering and decoupled rotation is allowed while in AB idle.
+Show Location: We have added a command that allows you to find your location in coordinates (useful for bug reporting purposes). Enter "/showlocation" in the chat box (make sure you are in a all chat) to get coordinates.
+Ship Start Up: Approach the entry point of your ship, then press and hold "F" to activate the interaction system. Select from the various inner thought prompts using the cursor or mouse wheel to move between them. Once inside your ship, again press and hold "F" and select the "Flight Ready" prompt to run through complete ship start up. Alternatively, you can press the "F5" key for quick start up.
+Landing: Landing now takes place through an Air Traffic Control (ATC) system. When close to a landing location, request a landing by navigating to your "Comms" menu on the MobiGlas (note: this is incorrectly displayed as a ship icon) and pushing the hail button (wifi symbol).  Wait a moment, and ATC should assign you a landing location.  Note, you may need to request take off to leave Levski (trigger opening of bay doors).
+Quantum Travel: To quantum travel to a destination, open your MobiGlas (F2) and select the StarMap App (diamond shaped symbol). From there, use the mouse to select a destination. Whether or not an object can be selected for QT is determined by gravitational values (The larger the object the further away you can detect it, large objects with small objects in orbit drown out their detection capabilities at long ranges). Meaning you will not be able to travel from point A to B at all times, but instead may need to move into orbit of a larger body to detect destinations also in orbit. For example, to get to a station orbiting a moon that orbits a planet, the route is Planet>Moon>Station. Once you have a destination selected you can "set destination" on your MobiGlas to bring up a quantum travel target.  As before, align with the QT target and press "B" to travel.
+Changes to Default Keybindings: Controls now default to a "basic" mapping that only includes core functions and leaves many things unbound.  Players can then go through keybinds and bind how they wish or import an "advanced" binding from among several presets, to gain full functionality you will want to take one of those two routes.
+Major Known Issues:
+- Control changes are incomplete and may have bugs and issues. Known: Alt modifier activates free look as well. Suicide does not function.
+- Some ships may be spawning without items or without the ability to "flight ready". W/A: If this happens please file an insurance claim to replace the ship.
+- First implementation of persistence bed spawning will have numerous bugs and issues.
+- Items and ships placed in hangars are not persisting between sessions.
+## Focus Feature Updates
+General
+- Added basic keybinding for ship and vehicle lights to keyboard and gamepad.
+Universe
+- Placing admin offices and NPCs at various outposts.
+UI
+- Enabled 3d radar StarMap for all relevant ships.  To access this, enter interaction mode (hold "F") and look at the radar.  Basic controls: Hold middle mouse button and move the mouse up/down to zoom in/out.  Hold the right mouse button to rotate the map and Radar. Hold the left mouse button to move the map and radar around.
+Bug Fixes
+- The interaction prompt for entering the Buccaneer should now correctly highlight the cockpit.
+- Adjusted interaction points on the 300 series so it can be properly made flight ready.
+- The lifts/elevators at Levski should no longer appear to be in different places for different players.
+- The shopkeeper at KCtrending should now have voice and animation.
+- Adjusted piston animation for the rear door of the Cutlass so it works properly.
+- Automated turrets should be operational again.
+- Adjusted the shields on AI pirates.
+- Fixed missing music from Port Olisar.
+- Self destruct sequence and audio should work outside of the cockpit of the Starfarer.
+- Players should no longer be able to retract the landing gear of ships inside the hangar.
+- Using an audio terminal more than once should no longer repeat the audio for the player doing the PI wanted mission.
+- Fixed holographic objects not rendering in Arena Commander ship customization menu.
+Technical
+- Performance Tweak
+## Non-Focus Feature Updates
+Cargo
+- Cosmetic price rebalance for commodities.
+- Added new scrap and waste 1 SCU commodity.
+Known Issues:
+Content missing key elements:
+- User Interface
+- Insurance and Persistence
+- Internal Ship Docking
+- Comm System
+Bugs, issues, and work arounds (W/A):
+- Items and ships placed in hangars are not persisting between sessions.
+- Vehicle customizer app on wrong MobiGlas button and not yet functioning.
+- Repaired wings don't always restore weapons.

@@ -1,0 +1,1 @@
+We're simply doing a ray cast from the ship origin downwards along the gravity vector. The ray is limited to 500m to avoid unnecessary physicalization of terrain. So basically the limited altitude range is a performance optimization. We can probably extend it a bit, I will check back with the physics and terrain tech teams on that.

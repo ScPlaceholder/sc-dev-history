@@ -1,0 +1,54 @@
+## Star Citizen Alpha Patch 3.24
+Alpha Patch 3.24 has now been released onto the LIVE Environment!  Patch should now show: VERSION  3.24.0-LIVE.9296942.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Items not saved to LTP Include:
+- Hangar Decoration Customizations (Decorations will be returned to player's home location inventory)
+- Medpens, Ammo, Ongoing Rentals and Refinery Jobs, and Character Customization (Make sure to Export your Custom Character)
+This Spectrum post is an abridged version of the notes. For the full in-depth details, please visit the main notes at the link below!
+## Full 3.24 Release Notes: https://robertsspaceindustries.com/comm-link//20087-Star-Citizen-Alpha-3240
+## Features and Gameplay
+3.24 fundamentally changes how players interact and organize their belongings. From Cargo, to items to ships. Freight Elevators will introduce a new mechanic for retrieving and storing larger items at various locations. Hangars will now be instanced and in case of personal hangars, persist everything within them including the newly added Hangar Decorations. Ships are now spawned via Ship Elevator and Item Banks now replace the omnipresent local inventory.
+Gameplay
+- New: Personal & Instanced Hangars
+- New: Freight Elevators
+- New: Cargo Hauling Missions
+- New: Item Banks
+- Hangar Decorations
+- Towing and Hull Scraping Law System Updates
+- FPS Tractor Beam Use Adjustments
+- Commodity Kiosk Updates
+- Carry lowered FPS weapon keybind (ALT + R)
+Ships & Vehicles
+- Master Modes Atmo Flight Controller Re-tuning
+- Ship Cockpit 3rd Person Camera Polish
+- Hull-C Shield and Health Updates
+- Addition of Many New Cargo Hauling Rentals to all Rental Shops around Stanton
+Core Tech
+- Ultrawide UI Scaling Updates
+- Added slight boundary violation grace time to Planet Kill Volumes for vehicles
+- Further Ship Debris Collision Physics Performance Improvements
+- Vulkan Performance Polish
+## Known Issues & Information
+For 3.24, Server Crash Recovery will remove all current missions and mark them as abandoned. This behavior is not the intended outcome in the long term and will be changed in an upcoming refactor. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs.
+- There are several known Vulkan Renderer related GPU crashes currently in the build. If you experience frequent crashes while playing and are on Vulkan, test swapping back to DirectX to see if these still occur.
+- Currently, players can get stuck in beds when pressing 'F'. Pressing 'Y' instead should work around this issue while we work on a fix.
+- PU - Missions / UI - There's a chance the mission marker for Hurston and Crusader PvE Bounty missions will not appear
+- PU - Stanton - ASOP / Fleet Manager / UI - Players are unable to Retrieve Ships from ASOP
+- PU - Multiple Locations - Storage Access Kiosk / UI / Locations - Opening the Storage Access Kiosk will cover the player's POV
+- PU - Stanton - Multiple Locations - Inventory / Storage Access / Item Bank - There is a chance when accessing Storage Access that the inventory wont appear and or disappear when accessed/opened
+- PU - Stanton - Multiple Locations - Server Recovery / Locations / Transit - Shuttles and Trams for all Major Landing Zones will disappear after server recovery causing the player to fall to their death at certain positions along their route
+- PU - Stanton - Cargo Hauling - Mission Content / Game Code - After abandoning mission, returned cargo on freight elevator causes "Elevator Obstructed" error
+- PU - Mission / Cargo Hauling - Hull C cargo loads one box and stops loading the rest of cargo mission boxes and remains at 00:00 time
+- PU - Stanton - Locations / Performance - Client framerate drops to single digits at ArcCorp Mining Area 157 on Yela
+- PU - Stanton - Cargo Hauling - Mission Content / Reputation - Players are still able to reaccept the Intro mission despite being "not eligible"
+- PU - Stanton - Locations / Graphics / Personal Hangars - There is a noticeable streaming issues on the exterior geometry of the freight elevator depending on the players location in Self Land Hangars
+- PU - Locations - Transit - Elevator won't show up at Spaceport with high traffic
+- PU - Locations - Personal Hangars / Medical Hangars / Art - Medical elevator panels inside hangars are missing geometry
+- PU - Orison - Locations / Inventory - Storage Access kiosks at The Vision Center at Orison do not display any inventory
+- PU - Kiosks - UI - Item Bank / Freight Manager - Moving items will fail when the dragged item transitions between the two inventories unless you move the item quickly
+- PU - Stanton - Landing Zone (LZ) - Lorville / Area18 / Orison - Freight Elevators - Locations / Art / Graphics - There is a noticeable delay in loading the player's persistent hangar when they arrive via the elevator.
+- Crusader Hercules Starlifter ALL Variants - PU - Vehicles / Animation / Art - Personnel elevator is detached from vehicle and elevator doors do not open
+- PU - Stanton - Location / Mission - Klescher Rehabilitation Facility - Player is sent back to Klescher after completing "Need An Out" prison escape mission
+- PU - Tractor Beam / Physics - Multiple Active Tractor or Tow beams on the same object can make it float without an active tractor beam on it
+- PU - Lorville - Locations - Transit - HAB Elevators - There is a chance that the HAB elevators do not arrive when called

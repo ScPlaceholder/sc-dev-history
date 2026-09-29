@@ -1,0 +1,6 @@
+Hi Vulpine-1
+The teleport at distance implementation was never intended to remain for 4.2.1, we made a further fix to limit it to only docked ships, but this did not take due to an oversight where after testing the code was committed but not the data. This meant it was not possible to hot fix.
+The change to make the teleport only happen when docked is now in 4.3.0. It only happens to those trespassing on a still-owned ship, one the owner has not claimed. If the ship has been claimed, it is counted as abandoned and you may do with it what you want, though I appreciate it might not be clear right now what is and isn't abandoned.
+The only players this should inconvenience now are those stealing ships which are only able to be docked, with the only alternative being to take these to Grim Hex's XL hangar for offloading goods.
+Even this is a temporary solution, but one that might remain a while as we continue to develop our security systems.
+I welcome any feedback on this from those who have tested it in 4.3.0.

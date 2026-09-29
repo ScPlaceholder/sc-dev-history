@@ -1,0 +1,6 @@
+Can you elaborate while Gyro feels clunky? The only the it should do is to keep the turret direction in line with the "word" instead of the "ship".
+We played around with recenter being a toggle ... that did not work well because you can easily forget that you might have pressed it. So we left it as a hold.
+The recenter cannot be relative to the forward direction of the ship as not all turrets are able to do that. So it recenters you to the initial "default" turret angles.
+The spinning can be down to two things:
+1) You friend did not see the VJoy clearly
+2) Does your friend have pedals attached to the PC? If they report as the first input device (hotas 0) then they might cause the movement. We now have default bindings for the turret axis so pedals (which have a "rest" position like a fully extended joystick) could actually start to report inputs and thus cause the movement. Unbinding the rotation axes in the Keybinds / HOTAS 1 menu should resolve that.

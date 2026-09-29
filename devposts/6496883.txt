@@ -1,0 +1,42 @@
+Following our first Alpha 3.22 Patch Watch last week, we're back with details on the next phase of flight development and testing you'll soon see in the game. Like every quarter, many adjustments have been made to the build based on your feedback. This time, we’re giving you an update on how we specifically adjusted Master Modes in the experimental Arena Commander game modes.
+Some Insights From Your Feedback
+==========
+In Alpha 3.20 and 3.21, you got a first glimpse at Master Modes (MM) with the experimental Arena Commander game modes. Our main learnings from data and feedback were:
+- Following the initial changes, combat is closer and feels more engaging
+- Removing the rule that weapon size must be reduced by one if the weapon is to be attached to a gimbal (N-1) had no negative impact on balancing
+- There is no clear advantage in input methods over each other
+- Trichording limiting in general works but is too restrictive outside mouse and keyboard input devices
+- In a 1v1, players sometimes feel "locked in" with no other options than DPS racing
+- Based on the data we received from your play sessions, we have adjusted the playtests for Alpha 3.22. We have updated a few IFCS features, Flight Model tuning, and weapon properties.
+Furthermore, with Alpha 3.22, we will not only focus on dogfighters/light fighters (with the Gladius as a test bed) in the public tests but also collect and analyze much more data from your battles with different ship types. The Vanguard (heavy fighter), the Super Hornet (medium fighter), and the Buccaneer (medium interceptor) have, therefore, also undergone balance adjustments and will be the focus of testing.
+IFCS Changes
+============
+To improve 1v1 mechanics, we added a few things to IFCS to support more diverse flight behaviors and be less prone to cheating and macroing:
+1) IFCS Movement Simulation:
+When a ship is controlled with digital inputs like a keyboard, the actual movement is now simulated. That means a simulated stick or throttle cannot move from 0 to 1 in one frame. This smoothes out general movement and helps with PIP wiggling.
+2) IFCS - Boost Ramping
+Boost can now be ramped up and down. For example, it is not immediately active at full strength, which smoothes out general movement and reduces PIP wiggling, and ramp-up/down times can be balanced independently for each ship.
+3) IFCS - Boost Direction Modifiers
+Boost modifiers can now applied per boost direction, not just per axis. This means we have a lot more control over individual performance parameters. For example, we can disallow boosting backwards.
+4) IFCS - Boosted Rotation Rates
+While boost is held, ships are now able to momentarily reach higher rotation rates. The boost ramping helps smooth that process.
+5) New Trichording Limiter
+The old trichording limiter was too harsh when your ship was not perfectly accelerating along an axis, which easily happens with stick inputs. The new limiter only cuts accelerations back when you hit the side limits. Specifically for racers, that should feel better than in previous MM test runs.
+Flight Tuning
+=============
+MM testing in Alpha 3.20 and 3.21 was mostly about symmetric combat, so now we're turning to ship differences. For this round, we want to figure out if our so-called archetype ships feel "right" in relation to each other. To do that, we're equipping you with four ships that we want to be good in their respective roles. As opposed to the PU ships, the MM ships have been tuned to have less relative flight performance differences between each other. Just to be clear, there are pretty big differences, but they are not as drastic as in the PU.
+The MM ships have been retuned and should feel "nice" in terms of general handling but with clear pros and cons. Instead of listing them all out here, we suggest you try them out. Here is the list:
+- Gladius: Light Fighter --> It is agile but can't take a lot of beating
+- F7CM: Medium Fighter --> Sturdy and impressive agility for the weapon load
+- Buccaneer: Medium Interceptor --> It can't turn well but speeds forward like no other
+- Vanguard: Heavy Fighter --> Not the fastest or most agile ship, but it has a higher damage output than all others
+Weapon Changes
+==============
+Ranges of all weapons have been vastly increased and spread was added to all of them - you can now hit targets from multiple kilometers away. To allow breaking up fire patterns, Gatling guns will heat up so they cannot fire forever.
+Arena Commander
+==========
+There are four different dedicated MM Experimental Modes in AC. They exist in addition to the normal AC modes:
+- Master Modes: Squadron Battle
+- Master Modes: Classic Race
+- Master Modes: Endless Vanduul Swarm
+- Master Modes: Free Flight

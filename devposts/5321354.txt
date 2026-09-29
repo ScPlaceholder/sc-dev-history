@@ -1,0 +1,60 @@
+## Star Citizen Patch 3.17.2a
+Alpha Patch 3.17.2a has been released to the LIVE, and is now available to test!   Patch should now show: VERSION 3.17.2-LIVE.8186206.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here %localappdata%\Star Citizen.
+Database Reset: Yes
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+For more information on this 3.17.2a release please check out this community post!
+https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/alpha-3-17-2-incoming-hotfix
+Known Issues
+- Sabre Raven - VFX - Green flickering light fills the screen when sat in the pilot's seat during weather VFX (Players will receive a loaner Sabre)
+- Players may have to restart the game after getting kicked to the main menu from a 30k server crash
+- Targeting - A ship's targeting pip may be missing or disappear for some players; they cannot be targeted when this happens
+- Multivehicle - Ships floating in the hangar when stored with the engines left on then retrieved again
+- Ships / Character Animation - The player character arm will misalign when seated in ships, causing obstruction of HUD and view
+- Vehicle / Spawning - The Khartu-al spawns on the hangar floor sideways
+- Vehicles / Ships - Shields - Weapon fire penetrates shields when ships are moving
+- Vehicles / ShipRefuel - While docked to a Starfarer multiple vehicle types will continuously tilt instead of remaining stationary and snap away from the arm if any movement is attempted
+- Vehicles – The Argo Raft's elevator controls cannot be interacted with from either deck
+- Crusader Ares - Headlights on Ares are too dim to notice at reasonable range
+- Animation - Weapons - All weapons are held like a pistol whilst moving in EVA
+- Combat AI - UGF Missions are sometimes missing NPC spawns to complete the mission
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- Armor / Weapons / Utility items may disappear between sessions
+- Inventory - Weapons - Weapons looted directly equipped from containers/boxes are missing attachments
+- ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+- Missions - UGF / Bounty Hunter - Turrets around bunkers respawn very quickly, sometimes almost instantaneously
+- Multiple locations - R&R Stations - Stations are variably offset from the Lagrange point they are housed within
+## Feature Updates
+Gameplay
+- Combat Assistance Service Beacons
+Lowered frequency of Low Threat missions. Increased frequency of Moderate, High, Critical Threat missions. Fixed an issue that was causing Combat Assistance Service Beacons to pay much more than intended. Additional balance pass to Combat Assistance Payments and adjusting probabilities of mission difficulties spawn frequency.
+- Changed MAX Button on Shop Kiosks to +10
+- Friends List is Now Sorted Alphabetically
+Ships and Vehicles
+- Reduced the HP of Multiple Parts on the Esperia Blade
+## Bug Fixes
+- Fixed an issue causing multiple Elevators to break and not function
+- Party launching should now work more consistently
+- Fixed an issue causing player medical beacons to not complete mission/payment when player is brought back from incapacitation
+- Fixed an issue causing UGF Missions AI to go missing and block missions from completing
+- Fixed a bug with the Search and Destroy mission where probes destroyed counter reports wrong if you destroy the probes before the mission says you located them
+- Ships should no longer get stored at Klescher upon completion of prison sentence
+- Fixed a cargo hold area of space Derelict Reclaimers that allowed players to clip and see through the hull
+- Hull-A Empyrean, Horizon, and Dusk Paints should no longer be missing
+- The rear of the Drake Mule should no longer start to float if the vehicle navigates over steep inclines / hills
+- NPCs on dropships should no longer be completely unresponsive for an extended period
+- Fixed an issues causing players to have an infinite load screen after recovering from a client crash while in a ship or vehicle
+- Player List in Commlink app will no longer reset scroll position back to the top when the player list updates
+- Fixed an issue that was causing Combat Assistance Service Beacons to pay much more than intended
+- Players should no longer be arrested when using the Orison Spaceport Docking Port elevators
+- Sending aUEC to a player not in the sender's instance will no longer cause the aUEC to disappear into the void
+- Renting ships should no longer give a transaction error
+- The 'go to mission objective' part of the Unauthorized Surveillance Detected missions should no longer fail after player has already completed the mission contract
+- Aegis Gladius Foundation Skin should no longer obscure the Cockpit's View
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 9 Server Crashes
+- Fixed 2 Server Deadlocks
+- Fixed a Backend Service Crash that was causing aUEC wallets to reset to zero
+- Made many backend super pcache improvements to make it more robust

@@ -1,0 +1,51 @@
+## Star Citizen Patch 3.15.1d
+Alpha Patch 3.15.1d has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.1-PTU.7875648.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Current Audience: All Waves
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Easy Anti-Cheat
+With 3.15.1 we are adding EAC into Star Citizen. This currently has a few known issues that we are looking into and may cause a few community tools to not function.
+With this we wanted to gather feedback and edge cases from other software that may cause problems launching the game. This includes running on linux through VM/Wine/Proton, DXVK, or using certain joystick tools like Thrustmaster’s T.A.R.G.E.T. and VPC Configuration Software (Virpil). We would also love extra attention on community tools and mods you may use and all feedback on these working or not working is very appreciated!
+Updates:
+- Reshade v4.9.1 should now be whitelisted (requires renaming of reshade dxgi.dll to d3d11.dll)
+- Devreorder v1.0.3 should now be whitelisted
+Known issues:
+- Investigating 30011 disconnect errors; we may configure some clients to deliberately crash during this error, which allows us to gather more information for this issue
+- Localization tools not working
+- Linux/Wine does not work currently, we are investigating a solution to the problem
+- Symbolic Link not working when linking an environment that does not have EAC files (LIVE: does not have EAC, PTU: has EAC Files)- Work around is to unlink the environment and have seperate folders for each environment.
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Character Customization not saving changes to the PU
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu. Players may need to exit the game and reload after a server crash to fix this error.
+- Players cannot repair, refuel, and rearm at outposts
+- Items not stored in long term persistence such as mined gems are currently not stackable (This is something that will be coming in a future update)
+- After trying on clothing in a store, all equipped items are permanently deleted from the inventory
+- Swapping weapons has a chance to drop or remove weapons
+- The Prospector door and ladder lack animations
+- When in combat, NPCs can get stuck in cover when trying to exit
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round in Arena Commander
+## Feature Updates
+Ships and Vehicles
+- Redeemer Polish Pass
+Made lighting and probe tweaks to reduce cockpit glare issues. Reduced the health of multiple parts around the ship.
+## Bug Fixes
+- Restarting / Quitting and re-joining will no longer get the player out of a downed state or respawn them at their persistence location
+- Fixed an issue causing the New Babbage tram to display the incorrect next destination on the screens in tram interiors
+- Fixed an issue causing Rest Stop delivery lockers to not be able to be used to deliver the Infiltrate / Defend misson boxes
+- Double pressing [RMB] over an item in the location inventory should no longer cause the tooltip to be stretched out from its original position
+- The AR Cards for medical guns should no longer be indefinitely suppressed when aimed at another target after equipping the Tractor Beam Multi-Tool
+- Fixed missing geometry inside the Starfighters missile bay that allowed players to partially see through the ship
+- Fixed an issue that allowed players to use the displacement from dropping a crate to bypass collision and travel through geometry
+- Reequipping a helmet via the PIT menu will now complete correctly without creating duplicate helmet in the location inventory
+- Fixed a shield hole / vulnerability located at top starboard side of the Argo Mole
+## Technical
+- Fixed 1 Client Crash

@@ -1,0 +1,9 @@
+Thanks!
+I can finally say with certainty that the first version of Gen12 will be in 3.18.
+There were a few GPU crashes we were facing and most likely there are still a few left somewhere but it's stable enough to release for 3.18.
+Friendly reminder to add meaningful repro steps in case you still get some crashes which help us devs enormously to understand where a crash might be coming from.
+We still have the whole legacy pipeline included in 3.18 as a safety fallback, but with Gen12 now on for everyone it does mean we can finally nuke the 20 year old legacy CryEngine renderer.
+Let me emphasize again that we didn't spent any time on optimizing it yet and there are still a few things left after 3.18 but it's looking good so far and it will be a tremendous relief for us not having to support two rendering paths anymore.
+Please watch my update video a while back in Inside Star Citizen for more information on Gen12 performance: https://youtu.be/-0cIaf3mPLw?t=368
+So next step will be to finish off Gen12, optimize it and  add Vulkan support for all of you guys and something else i'm personally looking forward to the most :wink:
+2023 will be very exciting for the Engine/Graphics Team!

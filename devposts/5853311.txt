@@ -1,0 +1,9 @@
+This is really hard to answer. Us programmers don't test the game in different environments.
+It's very time consuming and understanding how software+hardware works in tandem is extremely complex.
+My general advice is to take the latest performance test/review and make your decision based on that.
+A great channel for performance reviews is @tenpoundfortytwo (https://www.youtube.com/@tenpoundfortytwo)
+From the engine side i can only repeat which has been said many times before:
+At the moment SC is still heavily bound by single thread performance. That means a CPU with a higher clock rate usually outperforms a CPU with many more cores but less clock rate.
+Of course cache size also plays a role here which makes this even more complicated, but from what we've seen so far SC really likes a big fat L3 Cache.
+The dependence on single threaded performance will change eventually, but it will happen gradually and not in an instant so i wouldn't worry about it too much for now.
+Silvan

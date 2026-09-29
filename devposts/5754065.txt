@@ -1,0 +1,4 @@
+Bugs when transitioning between zones are thankfully much rarer these days, and is why we can do mad things like this: https://twitter.com/SplenectomY/status/1626940676771282944?t=sUyVfNs_3FfhG1xwMmyGIw&s=19
+But zone transition bugs are generally caused by some calculation that was mixing up Zone and World space, or storing a Zone space value which is then not transformed to the new Zone correctly (eg zone space velocity changes when you change zone, even if the apparent speed and direction of your ship don’t change).
+Cheers,
+Ali Brown

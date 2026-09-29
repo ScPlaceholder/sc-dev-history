@@ -1,0 +1,58 @@
+## Star Citizen Alpha Patch 4.9
+Alpha Patch 4.9 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.9.0-PTU.12107679.
+- Audience: Evocati (Standard Evo NDA)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison (Will be focusing on the 1st Island in today's build)
+- New Story Missions: Recco Battaglia
+- Vehicle Armor Hit Marker Feedback
+Warning: There are going to be lots of content items in partial states of finished. Currently all balance and features are WIP
+Known Issues
+- Destroy Narcotics missions disabled temporarily due to a structural refactor
+- PU - Ship Battles - Missions / Locations - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- Front End - Main Menu - Social / Add Friends - UI - Clicking add friends whilst in the main menu will make your UI uninteractable
+- PU - Ship Battles V2 - EscortShips - Mission Content / AI - Escorted ship does not Quantum Travel away or Go to the Hangar after neutralizing the AI ships in the mission location
+- PU - Missions - Bounty Hunter / Mission Content - When killing the Neutralize target the mission does not progress
+- PU - Stanton - Siege of Orison V2 - Instancing / Mission / Locations - Server Error Causes Platforms to Despawn at SoO
+With this issue, if a server error does happen, you will need to leave and create a new instance, potentially reforming the party with a new leader.
+- PU - Stanton - SOO - Transport / Mission Content - Shuttle from Solanki to Hartmoore has no collision
+- PU - Stanton - Siege of Orison - Transport / Mission Content - Shuttle from Arrival Center to Solanki has no collision after leaving the transit at Solanki
+- PU - Stanton - Siege of Orison - There's an invisible wall at the center of the medical hub blocking players from going back to the elevator and clinic rooms on the upper platform of Solanki
+- PU - Stanton - siege_all - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the moment the second forcefield turned green from "Standby"
+Because of these issues, we will only be focusing on the first island of Siege of Orison tonight
+- Multi-System - PU - Locations / Inventory - There's a chance that their primary residence does not contain their items'
+Workaround: Recopy account if you need your default local items
+## Features & Gameplay
+Gameplay
+Battaglia (Recco Battaglia)
+Added weapon racks and specific loot configurations to the QV Station interior. Added loot placements and weapon racks to the Battaglia outlaw asteroid base. Added a minimap to the Battaglia outlaw asteroid bases. Fixed missing ledge grab markup on assets in the Battaglia outlaw asteroid bases' Cargo Room and Central Hub. Fixed missing lever blocking part of Island 1’s tower.
+Instanced Siege of Orison
+Replaced generic loot presets with Siege of Orison-specific variants. Checkpoint respawn flow implemented for the mission. Implemented fusebox interactable for comms tower node. Loot on civilian AI corpses updated to be contextually appropriate (food and drink, rather than knives and ammo). Further areas on Island #1 should now be more available after a fix to the lever missing inside the comms tower node.
+Vehicle Armor Hitmarker Feedback
+Hit markers when firing on vehicles will now reflect the result of each shot based on armor and penetration calculations. Players will see distinct markers to indicate whether a shot hit shields, impacted the hull, penetrated armor, destroyed an internal component, or was deflected entirely.
+- Shield hits
+- Hull hits
+- Armor penetration
+- Internal component destruction
+- Deflection (shot blocked/bounced)
+Note: The hit marker state for component/ship destruction is not yet fully implemented and will be addressed in a follow-up patch
+## Bug Fixes & Technical
+- Fixed 3 Client Crashes
+- Fixed 2 Server Crashes
+- Potential Fix: PU - Refueling - Actor / Vehicles - AI Refuel Beacon / Missions - UI / HUD - When a player dies and respawns after being refueled from an AI beacon, Helpful Hints for Refueling will remain on HUD blocking Notifications from appearing
+- Potential Fix: Players spawning invisible and passing through hab walls when respawning at Orison or New Babbage
+- Potential Fix: Battaglia Missions - Delivery locker sometimes failing to contain the delivery item during the Battaglia Story 3 hauling phase, causing the mission marker to point to an incorrect location
+- Potential Fix: Battaglia Missions - Phase 3 objective in Battaglia contract displaying incorrect objective text ("Go To Mining Base" instead of "Reach Distress Signal")
+- Potential Fix: Hammerhead and Tiburon unable to be entered via elevators or cargo bay due to missing interaction states
+- Potential Fix: SoO -  Lever missing inside the comms tower node, blocking mission progression
+- Potential Fix: Drake Ironclad (all variants) Command Station seat using an incorrect turret MFD setup
+- Potential Fix: FPS compass pointing in incorrect directions inside ship interiors
+- Potential Fix: AI pathfinder taking excessively long to validate whether a path is possible
+- Potential Fix: Defend areas not being correctly assigned within the Siege of Orison instance
+- Potential Fix: Vanduul fighters not spawning during the AssistShipInCombat mission phase in Nyx
+- Potential Fix: Mission not progressing during To and From Escort phases for Defend Destructible Entities and Escort missions
+- Potential Fix: Pitch black walls and floors in the New Deal interior caused by incorrect lighting values
+- Potential Fix: Area 18 NPE tutorial not updating after the player takes the elevator to the lobby
+- Potential Fix: Trip mines dealing no or significantly reduced damage to players

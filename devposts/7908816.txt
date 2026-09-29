@@ -1,0 +1,67 @@
+## Star Citizen Alpha Patch 4.1.1
+Alpha Patch 4.1.1 has been released to all backers to test!   Patch should now show: VERSION 4.1.1-PTU.9728431.
+- Audience: All PTU Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Ship Battle Missions V1 (Patrol, Ambush, and Gilly's Advanced Combat Gauntlet Missions)
+- Handyman Missions
+- PVP Bounties
+- Hunt the Polaris Mission
+- UEE Training Mission
+- Fleet Week Halls
+- Wikelo New Rewards
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback and are subject to removal
+- Mission Meshing Refactor: Animal Missions
+- NPC Comms Call, Dialogue Additions, and Improvements
+- [Redacted]
+## Known Issues
+- Blocker: Multivehicle - PU - Quantum Travel - Quantum travel will no longer align and spool to target destinations
+- Critical: PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- Critical: Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- Critical: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- High: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+## Features & Gameplay
+- Locations
+- Further Expo Hall and Fleet Week Polish Pass
+- Gameplay
+- Enabled PVP Bounty Contracts
+- Removed negative rep gain for Ambush Missions for Foxwell and Headhunters
+- Ships and Vehicles
+- Added on / off Toggles for Ship Speed Limiter
+- RAFT Thruster Retuning after its latest Cargo Update
+- Polaris Turret VFX Polish
+- Weapons and Items
+Ripper SMG
+- Full damage range increased from 20 to 22.5
+- Damage Fall off now starts at 22.5 and scales to 0 at 35m
+Quartz Volt SMG
+- VFX Beam Polish to increase diameter
+- Full damage range decreased from 20 to 15
+- Range reduced from 50 to 25
+This range was tucked in because the damage has linear falloff meaning targets would get damaged but would take minimal damage
+tucking in the damage range makes feeling a good range out of the beam weapon easier
+We intend to make the damage not have a linear fall off in the future
+## Bug Fixes
+- Potential Fix: AEGS Gladius - PU - Vehicles - Firing a missile prevents the Gladius pilot from accessing Mobiglas until they exit the seat (STARC-142109)
+- Potential Fix: PU - Mission Refactor - Missions / Server Meshing - Transitioning between DGS-mesh while travelling around a shard of the PU changes the tracked mission (STARC-146970)
+- Potential Fix: ARGO ATLS All Variants - PU - Vehicles - Physics - ATLS loses collision with surface upon calling ship to hangar (STARC-165277)
+- Potential Fix: ARGO RAFT - PU - Vehicles / Art - Top right maneuvering thruster is missing (STARC-165690)
+- Potential Fix: ARGO Raft - PU - Vehicles / Animation - Crew lift elevator clips on hatch doors when called from lower deck
+- Potential Fix: PU - UI / Art - The 4.1.1 loading screen is showing "RELEASE EDITION 4.1.0" (STARC-165377)
+- Potential Fix: ANVL Gladiator - PU - Vehicles - Gladiators Have Multiple invulnerable spots on the rear top and bottom making it hard to kill (STARC-164065)
+- Potential Fix: PU - Ship Battles V1 - Patrol - Foxwell - Missions - Ace Pilots ships when destroyed can also destroy the body (STARC-165633)
+- Potential Fix: PU - Stanton - Mission Content / AI - Patrol / Hunt the Polaris - UEE Navy ships are hostile to the player when arriving at the mission stage "Protect the Ship"
+- Potential Fix: PU - Fleet Week - Hunt the Polaris - Missions - Party members that get a crimestat 3 fail the mission for everyone
+- Potential Fix: PU - Stanton - Mission Content - Hunt the Polaris - AI - Enemy AI either spawn at every beacon or none at all during Stage 2
+- Potential Fix: PU - Stanton - Mission Content - Hunt the Polaris - mobiGlas - Certain Stage 2 mission objectives appear blank in the mobiGlas
+- Potential Fix: Missile UI does not correctly show min/max distance giving no feedback to player they are not in range
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes

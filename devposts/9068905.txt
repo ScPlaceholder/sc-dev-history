@@ -1,0 +1,42 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12399239
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (reputation speed increase for PTU testing)
+- Wikelo Updates
+Known Issues
+- PU - Inventory / UI - Double-clicking equippable items failed to equip them to empty equipment slots
+- PU - ORS - Missions / MobiGlas - The mission Deliver Medical Aid are missing on the mobiGlas
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Features & Gameplay
+Quantum Drive Spool Time Rebalance
+Spool up times have been adjusted across all quantum drives, this includes most drives receiving a 2-3x longer spool up while a smaller amount have had their spool times reduced slightly.
+Ballistic Gatling S3 Damage
+Ballistic Gatling S3 damage increased to be effective against ships of the same size class as it was previously dealing insufficient damage to be viable in its intended role
+- Projectile damage increased from 19 to 32
+Recco Battaglia Story Mission Rewards
+- Mining modules added to the component reward pool for Battaglia story mission ship rewards
+- Ore pod rewards from Story Mission 3 now correctly appear in the crafting fabricator
+Additional Updates
+- ADS no longer triggers on the fire extinguisher when right-clicking while firing; right-click now has no function while using the extinguisher, matching the correct design intent
+- Performance Update: Fire hazard VFX optimized to reduce CPU overhead
+- Performance Update: Off-screen particle emitters that were spawned as on-screen emitters now correctly expire and are deleted, preventing accumulation of invisible particles that were causing performance degradation over time
+## Bug Fixes & Technical
+- Fixed 1 Client Crash
+- Potential Fix: Players becoming stuck in a respawn queue when multiple players die simultaneously inside an instanced zone, requiring a game restart to resolve
+- Potential Fix: Entities and mechanics inside instanced zones incorrectly emitting events into restricted areas of the parent zone, causing unintended triggers outside the instance boundary
+- Potential Fix: Battaglia Story Mission 3 blueprint rewards displaying as placeholder text and not appearing in the crafting fabricator
+- Potential Fix: Battaglia mission hard drives displaying as placeholder text instead of their correct item name
+- Potential Fix: Instance service calls being routed through the wrong DGS when a DGS that did not originally ensure the instance tried to send heartbeats or other service calls, causing instance stability issues
+- Potential Fix: Battaglia HotCold proximity tracker failing to locate the target after extended searching; the activation range now doubles after five minutes if the target has not been found

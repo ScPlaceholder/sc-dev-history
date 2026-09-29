@@ -1,0 +1,54 @@
+Screenspace Shadows
+- [Desc] Changes the rendering quality settings of screenspace shadows
+- [Affects] Visual quality & GPU performance
+Planet Volumetric Clouds Quality
+- [Desc] Changes the rendering quality settings of planet clouds
+- [Affects] Visual quality & GPU performance
+Gas Clouds
+- [Desc] Changes the rendering quality settings of gas (space) clouds
+- [Affects] Visual quality & GPU performance
+Fog
+- [Desc] Changes the resolution of the local fog (i.e. fog within 500m). Higher settings will preserve more detail in shafts of light, lower values will have a flatter appearance.
+- [Affects] Visual quality, VRAM & GPU performance
+Water Caustics
+- [Desc] Enables water caustics effects (light scattered onto objects beneath the water)
+- [Affects] GPU performance
+Water Simulation
+- [Desc] Controls the number of simultaneous water simulations that can occur at once
+- [Affects] VRAM & GPU performance
+Shader Quality
+- [Desc] Adjusts the quality of some material shader effects, such as parallax occlusion mapping (to add 3D details to otherwise flat surfaces).
+- [Affects] Visual quality & GPU performance
+Post Effects
+- [Desc] Controls the quality of some post effects such as Motion Blur, Bloom, Flares & Refraction
+- [Affects] GPU performance
+Video Comms
+- [Desc] Controls the quality of lighting in video comms calls
+- [Affects] GPU performance
+Visor and Lens Aspect Modifier
+- [Desc] Aspect ratio for the UI displayed on the visor/lens. Useful for ultra wide monitors or multi-monitor setups.
+- [Affects] Visual only
+Field Of View
+- [Desc] Horizontal field of view.
+- [Affects] Can affect both CPU and GPU performance
+Gamma
+- [Desc] Adjusts the midtone brightness curve without changing pure black or white levels. Increase if dark areas appear too dark, decrease if the image looks washed out.
+- [Affects] Visual only
+Brightness
+- [Desc] Controls the overall brightness level of the image. Adjust so that dark scenes are visible but blacks remain true black.
+- [Affects] Visual only
+Contrast
+- [Desc] Adjusts the difference between the darkest and brightest parts of the image. Higher values create more dramatic differences between light and dark areas.
+- [Affects] Visual only
+Motion Blur
+- [Desc] Enables/disables motion blur. Camera rotation does just apply very little blur to mimic saccadic masking and improve clarity, meaning blur should mostly occur with camera translation or object movement. Shutter speed is equivalent to a 60 fps camera with the shutter open half the frame.
+- [Affects] GPU performance & image clarity when moving
+Sharpening
+- [Desc] Applies post-process sharpening to enhance edge definition and perceived detail. Can help counteract softness from upscaling techniques but may introduce artifacts if set too high.
+- [Affects] Visuals only
+Chromatic Aberration
+- [Desc] Simulates lens color fringing effect seen in real cameras. Adds a 'filmic' look but can be disabled for greater clarity.
+- [Affects] Visuals only
+Film Grain
+- [Desc] Adds a subtle grain texture overlay to simulate analog film cameras. Purely aesthetic effect that can be disabled for greater clarity.
+- [Affects] Visuals only

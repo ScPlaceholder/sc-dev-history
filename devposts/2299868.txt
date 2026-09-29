@@ -1,0 +1,21 @@
+## Star Citizen Patch 3.6.1g
+Alpha Patch 3.6.1g has been released to PTU and is now available to test!  Patch should now show: PTU-2437696.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- General gameplay
+Known Issues
+- Recently claimed ships may show as "locked" on the VMA. W/A: App switch or reopen to refresh.
+- 600i interior elevator doors do not open unless the ship is unlocked.
+- Reclaimer interior doors do not open unless the ship is unlocked.
+- The forward lift on the Reclaimer sometimes has collision issues causing damage to the player or the player to fall out.
+- Wheel and suspension animations are not working on wheeled vehicles.
+## Feature Updates
+## Bug Fixes
+- Players should no longer respawn into the same hab as others.
+- Ships should no longer return from claim with all components missing.
+Technical
+- Fixed a memory leak.

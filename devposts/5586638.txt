@@ -1,0 +1,5 @@
+Yes they are truly independent FPS wise.The server doesn't render anything.
+Of course the more player are on a server and in your close proximity the more updating/rendering your game has to do, which brings down your FPS.
+I suspect that's where this myth came from.
+Since the game is frequently MainThread bound even if players are around you but not visible (imagine lots of players on a space station) it will have an impact on your performance.
+Hence, a fresh new server with just you guarantees that you only pay the cost for you and not anyone else which may result in more performance for some people.

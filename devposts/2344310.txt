@@ -1,0 +1,20 @@
+## Star Citizen Patch 3.6.2e
+Alpha Patch 3.6.2e has been released to PTU and is now available!  Patch should now show: PTU-2707980.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- 890 Jump
+Known Issues
+- Large ships (Reclaimer, Hammerhead, and 890) are unable to refuel. W/A: Reclaim your ship.
+- Attempting to move directly from pilot to copilot seat or vice versa will lock the player into the seat.
+## Feature Updates
+Ships and Vehicles
+- Removed damage drop from neutrons and reduced damage to bypass shield penetration issue.
+## Bug Fixes
+- The shield bubble for the 890 should no longer be heavily offset.
+- Neutron weapons should no longer penetrate shields at longer ranges.
+- Players should no longer be able to gain money by interrupting the refueling process.

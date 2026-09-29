@@ -1,0 +1,86 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9159383.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 3 (Wave 4 potentially after monitoring a couple hours)
+Server Info: US/EU - EPTU Channel
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Testing/Feedback Focus
+This build contains further logging for missing ship HUDs while using Vulkan
+- Stability/Performance/Bug Fixing
+- New Features & Gameplay Updates
+Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs.
+- PU - Stanton - Missions - Eliminate Specific objective marker does not update with the target's location even though it has been spawned
+- PU - Missions / Service Beacons - Escort beacons are not visible to other players
+- PU  - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals  for ground vehicles at Lorville gates get stuck on infinite load,  accessing list of ships
+- Graphics - Upscaling / DLSS - Under any upscaling option, ship HUD clarity is significantly affected when QT HUD is displayed
+- PU - Creatures / Kopion - Animation / AI - The Kopion creatures do not move or attack players
+- PU - Multiple Locations - Locations / Art - GrimHEX and Kareah airlocks are missing breathable air and doors
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Locations - Grim Hex - Hospital - Elevator - Elevator is missing at Grim Hex's hospital
+- PU - Stanton - Lorville - Transit / Locations - Trams missing from Perimeter Line West
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+## Features and Gameplay
+Locations
+- Further Distribution Center Lighting, LOD, and Performance Polish Pass
+Gameplay
+- Interior Map Updates
+Hooked up rest of the unified UI overlay for the interior map. New opacity mask for map material to further aid reability for UI panels. Turned on auto-brightness for starmap edge markers.
+- Made Friendly markers fade out after 50 meters
+Weapons and Items
+- Salvage Standalone tool Balancing Pass
+The standalone salvage tool has undergone a complete balance pass to improve it's overall use
+- Doubled the range than the Multitool
+- Increased Gathering and Repair speed
+- Allow to repair a little higher than normal multitool
+- Less efficient (higher loss of material when gathering)
+- Allow toggle to fire
+- Crafting / Filler Station update
+Added Cambio SRT container empty and full to the Filler Station crafting list in the Vulture and Reclaimer
+- General FPS salvage changes
+Allow repair in green zones. Allow gathering to continue with the ammo container being full.
+- CureLife Medical Gun
+Added Interact pose moving the gun closed to the camera to make the screen elements more visible. Made the UI elements always interactable. Fixed issue where you could not interact with the med gun screen in Heal Target Mode.
+Ships & Vehicles
+Added the following ships to in game shops:
+- Fury MX and Fury LX
+- Lynx Rover
+- Hull C
+- Spirit A1
+- Cutter Scout and Cutter Rambler
+- Syulen
+- Spirit C1
+- SRV
+- Storm and Storm AA
+- SAN'TOK.YĀI
+- X1 Base, X1 Force and X1 Velocity
+Core Tech
+- Made Further Server Performance Optimizations
+- AI Navigation Performance Optimizations
+- Physics Performance Optimizations
+- Planetary Streaming Performance Optimizations
+- Further Vulkan Polish Pass
+## Bug Fixes
+- Fixed - Global - PU - Stanton - Actor - UI - FPS / HUD / AR / Markers - Player HUD including AR UI and markers are missing
+- Fixed - Legacy and Newer Hangar AR Markers are visible when players retrieve a ship from ASOP (STARC-106623)
+- Fixed - PU - Stanton - Locations / Shopping / UI - Physical Shopping - Vehicles - Shopping card appears out of frame with display ships
+- Fixed - PU - FPS / UI / Weapons - Dynamic Crosshairs do not function with certain weapons
+- Fixed - PU - Actor / UI - HUD / Actor Status - FPS HUD doesn't show that the player is bleeding out
+- Fixed - Stanton - Quantum Travel Linking - UI elements of group QT appear to be inaccurate or missing
+- Fixed - PU - mobiGlas / UI / Contract Manager - Scrolling through a large list of Contracts causes the list to move out of the players view
+- Fixed - PU - Stanton - Distribution Center (DC) - Spawn Closets / AI / Locations - AI can seemingly get stuck and stay inside of spawn closets
+- Fixed - PU - Stanton - Distribution Centers (DC) - Missions - Courier Missions - The delivery missions for the Distribution Centers cannot be shared
+- Fixed - AC - Multiple Game Modes - Team game modes are not auto balanced which forces all players into the same team
+- Fixed - PU - Physics / Animation / Creatures - Kopion will ragdoll / slide across the ground just after being killed
+- Fixed - PU - Stanton - microTech - Creatures / AI - Kopion are jittering and teleporting when running
+- Fixed - PU - Creatures / Kopion - Animation / AI - The Kopion creatures do not move or attack players
+- Fixed - Talon Shrike has s4 guns by default (STARC-108751)
+- Fixed - New Player Experience - Fixed tutorial mission getting stuck in Phase 2 after dying or crashing
+## Technical
+This build contains further fixes to help alleviate interaction delays
+- Fixed 5 Client Crashes
+- Fixed 9 Server Crashes

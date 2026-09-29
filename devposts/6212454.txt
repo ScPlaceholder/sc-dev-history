@@ -1,0 +1,62 @@
+## Arena Commander 3.20 Patch Notes
+Welcome to Arena Commander 3.20. This patch is the largest Arena Commander has seen since its creation. Below you’ll find all the details for all we’ve been up to during Stage 1 of our revitalization of Arena Commander. This is an important stage in our plan as it sets Arena Commander up for success, though it does deliver a lot of content it unlocks even more. We’re all excited to unlock Arena Commander’s potential and bring it to new heights with each patch. We hope you enjoy everything this patch delivers if you’d like to share your thoughts head over to the Spectrum Feedback forums!
+Thank you,
+Original Systems,
+Arena Commander Feature Team
+Unified Frontend & Lobby System
+Electronic Access, Arena Commander and Star Marine have merged under a single “Arena Commander” frontend menu. This new frontend, powered by Building Blocks, unifies the various simulation module brands and menus into a single easy to use interface.
+Included in this significant refactor is a complete rewrite of Arena Commander’s lobby system allowing you to squad up with people directly from your friends or party list with new squad limits per game mode, which can be seen from the game mode selection tiles.
+This refactor sees Singleplayer, Multiplayer and Private renamed to Offline, Online and Custom respectively.
+Experimental Modes
+An exciting new initiative for Arena Commander has “Experimental Modes” rotate for a limited time throughout a patch cycle. These modes range from simple variants of existing modes like Single Weapon Elimination to brand new modes that explore new mechanics, locations, or even in-development features before they reach the Persistent Universe like part of the new flight model, Master Modes.
+Play each game mode to be eligible for the “999th Test Squadron” Spectrum Badge!
+- Gun Rush
+Gun Rush is a fast-paced elimination mode where each kill changes your weapon. Victory goes to whoever progresses fastest through all ranks to claim a kill with the final weapon.
+- Tank Royale
+Tank Royale faces players off in a free-for-all tank battle across various ground arenas. Prove your skill using the new tank tunings & improved physics in this elimination-based game mode.
+- Team Tank Battle
+Slightly larger scale than Tank Royale Team Tank Battle pits two opposing teams against each other, push forward against the enemy team and declare victory for your team in this team-based elimination mode.
+- Single Weapon Elimination
+Ever wondered how you’d fair on an even playing field? Single Weapon Elimination debuts with the ArcLight pistol, the weapon all players have when beginning their journey in the Persistent Universe.
+- Mirror Match
+Single Vehicle Elimination didn’t quite have a ring to it. Mirror Match equips each player with a communal (no purchase necessary) MIRAI Fury. Prove your dog fighting skills in this 1 vs 1 game mode where each player flies the same ship.
+- Master Modes: Free Flight, Duel & Endless Vanduul Swarm
+Try out the brand new “Endless Vanduul Swarm” during this limited test of Master Modes. Come nose to nose with a swarm of Vanduul Scavengers, Hunters, Alphas and the 7 infamous Vanduul Primes that ravaged humanity for decades. There may never be an end to this swarm; but how long can you survive?
+Experimental Modes: Master Modes (Detailed)
+Experimental Versions of Free Flight, Duel and a special Endless version of Vanduul Swarm will play host a collection of features that update our flight model – the original game modes will be unaffected & remain playable. Dubbed “Master Modes” this feature encompasses many changes to our flight systems, detailed below.
+Note below will detail default keybinds.
+- Flight Model changes:
+- Added Tri-chording and Attitude Limiters: Axis combination of tri-chording and combined pitch yaw movement will not yield higher accelerations or rotates rates anymore. Highest G accelerations are now forward, best rotation axis is defined per ship. This only applies to ships used during the master modes test.
+- Gladius agility was increased
+- Boost and regen were adjusted
+- Master Modes:
+- Master Modes added (press B to swap) between NAV and SCM
+- SCM allows high capacitor regen rates, shields and weapons but restricts max speed
+- Thruster boost / afterburner will temporarily allow you to extend beyond the SCM boundary
+- NAV allows high speed but no shields and weapons. It also heavily restricts regen rates.
+- Swapping between master modes in not immediate
+- Shield face health is stored in a buffer up to a certain ratio when going from SCM to NAV. When going from NAV to SCM that buffer will be quickly pushed back into the faces. The shield face generation from that buffer cannot be interrupted by incoming fire.
+- Gunnery changes:
+- New aiming system is enabled
+- Combined fixed assist was removed.
+- Fixed assist per gun was added.
+- Auto gimbal mode: Instead of keeping of keeping the target in an 8 degree cone you only need to keep the target roughly around your aim point and your gimbals will track. When auto gimbals are not tracking they will act like manual gimbals.
+- Fixed mode: there is one PIP per projectile speed group (you will see one PIP for the KLWEs and one for the GATS).
+- Manual gimbal mode now also has fixed assist for each gun.
+- Added option: show precision lines (for fixed and manual gimbal mode)
+- Added option: Auto gimbal display (focused on average PIP or focused on target with gimbal position indicators)
+- New target bracket
+- Drastically increased ballistic ammo
+- Removed N-1 system: An S3 gimbal will now hold an S3 gun (with penalty)
+- Custom weapon stats for the Gladius weaponry
+- Shield layout for the used Gladius is now Front / Back
+- Targeting changes:
+- Added bindings to allow setting the default convergence distance directly from an input axis, however there is no UI for this yet
+- Added binding to suppress aim assists if the button is held. Use it when you feel that aim assist works against you.
+Spawning & Loadout Module Refactor
+A rewrite of Arena Commander’s Spawning & Loadout Modules has the legacy code updated to modern standards, utilizing Persistent Entity Streaming, new entitlement service and a new spawn screen being introduced to most game modes allowing players to select their vehicle from within the game.
+This is the first part of a series of updates to how spawning & loadouts are handled in Arena Commander, laying the foundations for exciting new additions like in-game loadout customization, multicrew and spawn locations.
+We have removed the ability to customize your undersuit and team-based game modes will now overwrite your armor. Ammo and Medpens are no longer manually equipped, instead players are restocked on respawn. These changes allow us to streamline the loadout customization experience while we continue work towards a refactored UI/UX.
+New Horizon Speedway Revamp
+One of Star Citizens oldest locations sees it updated to include a real, full, planet – Green, the 3rd planet of the Ellis System. Including full atmosphere and refined track layout these new tracks bring a new challenge to Arena Commander’s Classic Race game mode. In addition to the three revamped maps: Old Vanderval, Rikkord Memorial Raceway and Defford Link.
+A 4th addition to the New Horizon Speedway Collection, Halloran Circuit, introduces unique challenges with difficulty rivaling Defford Link, the hardest of all the tracks.

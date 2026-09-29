@@ -1,0 +1,61 @@
+- Weapons:
+System
+- On Button - Turns all weapons and missiles On/Off.
+- Weapon Group On Button- This turns all weapons in the weapon group On/Off.
+- Weapon Group Number - Weapon Group 1 or 2.
+- Weapon Group Throttle - This works exactly like the Power Throttle in all other MFDs and throttles Power for that Weapon Group.
+- Weapons Number - Number of weapons in that Weapon Group.
+- Missiles On Button - This turns all missiles On/Off.
+- Missiles Icon
+- Missiles Number - Number of missiles left.
+Items
+- On Button - This turns individual weapons On/Off.
+- Item Name.
+- Item Name - Weapon Name.
+- Distortion Damage - Appears when distortion damage is received, and disappears when there is none.
+- Weapon Group - The Weapon Group number (there are two). Clicking this specific element switches the fire group to the other fire group (there are currently two fire groups).
+- Ammo Type
+- Ammo
+- Remaining Ammo - Ammo remaining in current reload.
+- Reloads - Ammo reloads remaining.
+- Power - Gun power usage. This will be useful for showing you how much power each gun requires to use.
+- Heat - The current heat the item is generating.
+- Health - How much health each gun has remaining.
+- Wear - How much wear each gun has remaining.
+## Technical
+Menu
+- Added FOV Scale to menu.
+Audio
+- New Low Ammo Audio.
+- New Ship Weapon Audio.
+- New Ship Engine Audio.
+Graphical
+- New "Fog" VFX.
+- New Debris Motion.
+- New Quantum Travel VFX.
+- New Ship Destruction VFX.
+- New Ship "trails" VFX.
+- New layered ship weapon impacts.
+Optimizations
+- Added additional serialization.
+- Improved emitter update performance.
+## Feature Updates
+Universe
+General
+- Updated colorgrade for Crusader.
+ASOP Terminals
+- Added ship selector with more information.
+Shops
+- Adding Magazines and Grenades to Cubby Blast.
+- Added new armors/weapons to Garrity Defense.
+- Added new clothing to various stores.
+Missions
+- Many new job contracts available via the Contract App.
+CrimeStat: Reworked, but still basic implementation of crimes and criminality.
+- Split "wanted" and "criminality" reputations.
+- Only players at wanted level 3 should appear hostile.
+- If criminal is killed by security, they lose wanted levels.
+Grim Hex
+- Additional Props.
+- Updated art assets.
+- Moved ASOP terminals to main railing.

@@ -1,0 +1,63 @@
+## Star Citizen Patch 3.22.0
+Alpha Patch 3.22.0 has been released to the EPTU, and is now available to test! Patch should now show: VERSION 3.22.0-EPTU.8970375.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Database Reset: Yes
+Technical: US/EU EPTU Channel
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- Stability Testing
+- Additional Derelict Settlements
+- Player Hair Update
+- Mineables Balance
+- Procedural FPS Recoil / FPS Weapon Balance
+- Arena Commander Multicrew
+Known Issues
+- AC - Single Weapon Elimination - Game mode infinitely loads
+- PU - Actor / UI - Character spawned headless with EVA crosshair always on screen
+- Stanton - Multiship - When Quantum Travelling the player can be left stranded in space and their ship will disappear
+- Stanton - Spawn Closet - Mission Content / AI - Enemy AI can spawn out of bounds of their intended spawn points (66% repo)
+- Stanton - Mission Feature - UGF missions - Remaining hostiles AI not spawning in UGF bunker mission (4% repo)
+- Pu - Vehicles - Repair services - Unable to repair vehicles that have been soft deathed
+- PU - Actor / Inventory - Player can respawn without backpack after death in Klescher Rehabilitation
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend (44% repo)
+- PU - Stanton - ASOP / Fleet Manager - ATC - When retrieving a ship it may spawn outside the hangar it is assigned to (50% repo)
+- Stanton - Multiship - When Quantum Travelling the player can be left stranded in space and their ship will disappear (10% repo)
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout and equipped items after dying in the armistice zone (100% repo)
+- Multivehicle - PU - Vehicles / UI - Vehicle HUD - When the missiles charge the UI does not update to reflect when they are ready to be fired
+- PU - Stanton - Actor - Player Spawning - Multiple Locations - When multiple players attempt to log in to the same location at the same time they may be assigned the same bed; those that spawn in after the initial player will be stuck
+- Origin 890 Jump - PU - Vehicles - Fleet Manager - When a vehicle is landed in the hangar of the 890J, the 890J can no longer stow correctly via ASOP/Fleet Manager or on logout
+- PU - Tractor Beam / Physics - When multiple players interact with the same cargo container using a Tractor Beam, those players' tractor beams may no longer work correctly on that container
+- Multivehicle - PU/AC - Vehicles / Weapons / Ship Components - All energy-based weapons state "0/0" in Ammo count on naturally spawned ships and cannot fire
+- Multivehicle - Vehicles / UI - Inner Thought - Player cannot exit the ship by using the "Exit Seat" option in PIT
+- AC - All Modes - Card UI Ignores Other Card Layering & Displays Above All Non-Card UI
+## Feature Updates
+Characters
+- Updated Hair Art and Geometry Polish Pass
+Locations
+- Inhabited Derelict Settlements
+Inclusion of 15 new Derelict Settlements with both mission gameplay, social elements, and shops. These new inhabited settlements are spread throughout the wildernesses of Hurston and microTech using the Rastar tool with a larger, expanded library of new and existing assets. Some locations are accessible via the Starmap while other new settlements are more discrete and appear behind missions. All NPCs at these locations are neutral, making up a population of independent civilians and members of the Dusters faction and have been updated to use the new hair tech and faction clothing.
+- New Hurston Locations Include: Zephyr, Maker’s Point, Ludlow, Pickers Field, Finn’s Folly, Weeping Cove, Cutter’s Rig, and Rappel.
+- New MicroTech Locations Include: Frostbite, Razor’s Edge, Bloodshot Ridge, Harper’s Point, Astor’s Clearing, Moreland Hills, and Dunboro.
+Gameplay
+- Inventory: Openable Cargo Containers
+3.22 adds openable cargo containers, allowing players to be able to store commodities and items in. These new 1, 2, 4, and 8 SCU containers can be purchased and sold through shops and dropped from your location inventory into your ship cargo grid. These new cargo containers allow contents to be sold individually, as well as the containers themselves, in which case any unsold contents will be sent to the inventory the container is being held in.
+This also includes work for tractor beams that will make it so cargo is locked onto cargo grids when the ship is locked by the door integrity. Meaning as long as the integrity is sufficient, cargo cannot be removed from cargo grids except by the owner or party members. It is considered a law infraction if Stolen off a cargo grid in a Monitored Zone.
+- Structural Salvage Balance Pass
+Overall balance pass to put Structure Salvage earnings more in line with what is intended. This update will increase the base amount of time it takes to run disintegration and fracturing, reduce the amount of construction materials gained, and reduce the internal storage buffer of the Reclaimer to 140 SCU and the Vulture to 12 SCU. Along with this comes another mechanic to slightly offset those changes to be more skill based. This includes an "alignment field" that reduces the time it takes for disintegration as well as giving more material depending on the distance that player is from the "ideal spot".
+- Structural Salvage UI and VFX Polish Pass
+- Temporarily removed the Hull-A from salvage mission pools
+## Bug Fixes
+- Fixed - Fixed an issue causing entities such as cargo boxes to slide on all ship lifts during animation
+- Fixed - PU - Armor / Inventory - Undersuits are permanently lost when you equip a helmet
+- Fixed - PU - Vehicles - Argo SRV sometimes cannot re-engage the tow beam on a ground vehicle: After losing a towed vehicle through quantum travel
+- Fixed - Stanton - Shopping Kiosks / UI - Utility/Containers - Once you sell from a container, the item will disappear from the sub-category
+- Fixed - Stanton - Shopping Kiosks - Purchasing into the inventory of an armor, backpack, cargo box, etc via the sublocation drop down allows you to ignore item capacity
+- Fixed - MISC Prospector - Headlight Brightness is Extremely Low
+- Fixed an issue causing double personal and local inventory tabs to appear
+## Technical
+- Fixed 1 Client Crash
+- Fixed 7 Server Crashes
+- Fixed a Server Deadlock

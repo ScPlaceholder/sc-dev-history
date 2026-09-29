@@ -1,0 +1,7 @@
+Thanks for reporting and the very detailed YouTube video. This made it really easy for me to see what is going and to reproduce it.
+The good news: It is already fixed in our internal builds and will come with our next patch (3.20).
+Most likely other cockpits are affected as well.
+What was going on?
+One of the HUDs is constantly constructing thousands of nodes in our building blocks system which stalls the entire engine massively.
+It's not happening every frame resulting in this ugly stuttering. I've seen frames where this issue alone takes 70ms (in comparison: 60 FPS are 16ms)
+Silvan-CIG

@@ -1,0 +1,62 @@
+## Star Citizen Alpha Patch 4.5
+Alpha Patch 4.5.0 PTU has been released and is now available for Wave 1 testers! Patch should now show: VERSION 4.5.0-PTU.10825836.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Engineering, Armor, Ship Balance (armor display hookups coming later this week)
+- Vulkan Renderer and Graphics Settings Updates
+- Physicalized Helmets
+- Snub Fighters and Interceptors balance pass
+Not ready for Testing and Feedback
+Updates located here are in partial working state and may be subject to removal from this release. At this time we aren’t requesting feedback for these until the feature is closer to ready.
+- FPS AI Improvements
+- Ship Light Amplification Detection
+- PU Loot Refresh/Collector Rebalance
+- Additional Hairstyles
+Known Issues
+- Multivehicle - PU - Vehicles / Repair - Ships are instantly repaired to 75% with repair tool and can be repaired from the inside
+- Multivehicle - PU / AC - Vehicles / Engineering / Fire - Fire VFX is not visible
+- Multivehicle – PU – Vehicles / Engineering / VFX - Fire is being detected by some clients and not others
+- Multivehicle - PU - Stanton - Fire - Game Code / Vehicles / Resource Network - Extinguished Fires can suddenly re-ignite and spread rapidly
+- Multivehicle - PU - Stanton - Fire - Game Code / Vehicles / Resource Network / Dynamic Atmosphere - Fires are not Extinguished in 0 Atmosphere
+- Multivehicle - PU - Vehicles / Engineering / Components  - Life Support Components not visible on the engineering screen 3D view or mobiGlas Map
+- Multivehicle - PU - Vehicles / Network - Resource Network / Engineering - Engines turn off after transitioning dgs-mesh authority
+- Multivehicle - PU - Vehicles / Engineering / Components / RN - UI / Kiosk - When using the Engineering Kiosk, the vehicle model can become offset by the actor moving around it
+- Multivehicle - PU - Vehicles / Components / Salvaging - Unable to switch to other component modules while in salvaging mode
+- Multivehicle - PU - Vehicles / Salvage / Art - Salvage Ships are unable to detect the scraping surface and is missing the Scraping Laser VFX
+- Multivehicle - PU - Vehicles - Breached doors and ramps do not reset after the vehicle has been repaired and the player is unable to close them
+- PU - Nyx - Sworn Enemies- Mission Content / Reputation / mobiGlas - " Vanduul-Tech Smugglers " is not available after getting to the required reputation rank
+- PU - Mission Content / UI - Patrol Mission progress halts after reaching location markers
+- PU - Pyro - Storm Breaker - AI / Mission Content / Locations - AI are at the Storm breaker facilities in large quantities
+- PU - Pyro - Storm Breaker - Locations / Missions - Opened safes remain open after 2 hour cooldown
+- PU - Mission Content / Locations / Art - PAF - Multiple assets are missing at all PAF II locations
+- PU - Stanton - ASD Delving - Onyx Facility - P3MM - Mission Content / Locations / Design / Art - Pipe status doesn't update when fully repaired
+## Features & Gameplay
+Gameplay
+Engineering and Fire Gameplay Updates
+- Further Resource Network Hookups for many ships. RN Setup: Hull A, Caterpillar, Mirai Guardian, Spartan Ballista, Drake Herald, Argo Mole, Starfarer Variants, Aopoa Nox, Scythe, Glaive, and 890 jump. PDC/MDC Ballistic Gatling s1 and Grin MDCs hooked up to resource network.
+- Interior Map icons adjustment. Removed Toggle Button from relays.
+Ships and Vehicles
+- MRAI Fury LX - Boost Capacitor is now higher as other racing focused ships.
+- Perseus: Fixed Missile controller priorities. Removed ability for any seat being able to control Missile Point Defense Turrets.
+## Bug Fixes
+Star Citizen Alpha 4.5.0 currently contains nearly 140 bugfixes for issues occurring in 4.3.2, 33 of which originated from the issue council.
+- Starfighter Ion Weapon should now fire and animate
+- Fixes for legendary boxes in Tech Smuggler locations missing their contents
+- Potential Fix: GameWide - Lighting - Bright flashing when looking down sights with light on
+- Potential Fix: PU - Stanton - Wikelos Emporium - The Collector - Mission Content / mobiGlas  - " Trade Worm Parts For Favors " has incorrect Irradiated Pearl Grade
+- Potential Fix: PU - Stanton - Orison - Locations - Atmosphere is lacking in several areas around Orison
+- Potential Fix: PU - Stanton - Fire Extinguisher - Art / VFX - Intended VFX for fire extinguishers are lost when used in ships or zones other than where they were acquired from
+- Potential Fix: SC - Characters - Levski - Some guards have red replaceMe undersuits
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Locations / Art / Design - Habs Floors are missing
+- Potential Fix: PU - Nyx / Stanton - Locations / Art / Design - The freight elevators are missing in hangars and on the external freight managers
+- Potential Fix: Multi-Item - PU - Armor / Actor - Helmets Dropped directly from Carry state float in the air and become uninteractable
+- Potential Fix: PU - Tech Smuggler - Warehouse Passcode Disks not respawning
+- Potential Fix: PU - Nyx - Mission Content / Reputation / mobiGlas - " Vanduul-Tech Smugglers " is not available after getting to the required reputation rank
+## Technical
+- Fixed 1 Client Crash
+- Fixed 6 Server Crashes
+- Fixed a Server Deadlock

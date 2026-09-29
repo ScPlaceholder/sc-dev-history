@@ -1,0 +1,82 @@
+## Star Citizen Patch 3.14.0h
+Alpha Patch 3.14.0h has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7630010.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: Wave 1
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Current cloud tech is still in active development and not yet final. There's ongoing work on SDF occlusion which should help alleviate the graphical artifacting (visual dots in the clouds). Additionally, we are working towards having local VFX for the clouds (similar to the gas clouds around rest stops) which will make a big difference in overall quality.
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Known Issues
+- Gas Clouds on Crusader appear to have moving graphical artifacts that appear as dots. Current clouds are still in development and not final. See note at the top of patch notes.
+- Orison objects & textures loading very slowly
+- XXL Hangars in Orison Dunlow Space Port are exhibiting invisible ceiling collision when ships try to disembark, even after hangar doors are fully retracted
+- Missiles do not follow flares as a countermeasure
+- Single location will only appear if the player spools their drive before setting destination on the starmap (Workaround: Spool quantum drive before opening the starmap and then open it and set route)
+- Various UI markers are faded and hard to read
+- Unable to scan for FPS or ROC-sized mining deposits until very close
+- Large black cubes and bright light particles can been seen within the snow storm clouds on microTech & in the "dust" storm on Hurston
+- Security Ships do not recognise illegal goods onboard a ship when being carried by a player
+- Players can clip through the exterior door of the 890 Jump whilst it is docked
+- The Player is unable to QT in Succession without Toggling the QT Drive off/on again
+- Landing gear proxies are missing on certain ships
+- Docked vehicles have misplaced collisions
+- Port Tressler is missing QT marker when Player returns to microTech planet
+## Feature Updates
+Locations
+- Orison Polish Pass
+Added new rolling physics to the orison leaves. Did multiple lighting and performance optimization passes to various areas of Orison landing zone.
+Gameplay
+- Ongoing Ship Capacitor, Balance, and Polish Pass
+We have done further core tuning for ships. S1 to S4 ballistic repeaters and gatlings have been retuned to be extremely powerful but very low on ammo. Changed Caterpillar turrets to repeaters. Decrease weapon regen delay for every energy weapon. Reduced EMP damage. Removed inactive, powered off weapons from convergence calculations. Increased Terrapin hull HP. Increased health of Constellation and variants for various multiple parts.  Slightly decreased health of S1 shields.  Increased health and regen of S2 shields. Reduced p52 and p72 health. Reduced Arrow hull and nose slightly health. Streamlined HP on Reliant. Swapped default loadout of F7C with laser repeaters instead of ballistic gatling due to low ammo. Reduced delays on S3 and S4 shield generators.
+Note on the ballistic change:  Small ship ballistics now have much more limited ammo but significant damage.  They are meant to be used sparingly, carefully, and may not be well suited for drawn out engagements but are very powerful if well timed.
+- Law System Armistice Updates
+Removed missile dumb fire as a crime in armistice zones. Change the Armistice Zone trigger from any hit to hits over the friendly fire threshold.
+- Updated initial default zoom position when opening the Starmap
+- Locked ping controls to scanning mode
+- Added menu option for increasing missile count to loop or not loop
+- Updated IFCS landing dust minimum angles for the directional effect
+- Added Game settings option to lock ping controls to scan mode
+Ships and Vehicles
+- Change the default power plant on the F7C-S Hornet Ghost
+- Slightly widened and softened the aurora entrance proxies to help with placing objects inside
+- Updated lighting for the Constellation cockpits
+- Added new emerald tint for the constellation emerald
+## Major Bug Fixes
+- Joystick control binding settings should now appear in the options menu
+- Fixed a bug that allowed NPCs and players sitting on seats at Everus Harbour to shrink size with each use
+- Fixed an issue causing some party markers to not display to other party members
+- Cycling camera (F4) from 3rd person to 1st person point of should no longer cause the ship scanning UI to temporarily appear
+- Player ships should no longer be impounded after landing at their assigned pad
+- Fixed an issue causing unmaned station turrets to incorrectly trigger Aggravated Assault charges upon destruction
+- Fixed an issue causing hunger and thirst values to decay much faster than intended
+- Fixed an issue causing scanning mode to be incorrectly used while on foot
+- Fixed an issue that allowed AI NPC pilots to turn ships faster than allowed
+- Fixed flickering lighting inside the orison shuttles
+- Fixed an issue causing players not to be able to retrieve weapons placed in the Gladius weapons rack
+- Fixed an issue causing the FOIP Camera to not be focused on character when they are seated in turrets
+- Fixed an issue causing some manned turrets only fire in a very limited range
+- Enter ship animation should no longer be glitchy and jumpy for multiple single seat fighters
+- Hornet variants should no longer sometimes bounce after landing
+- The parasite ship docked with the constellation should no longer be able to be targeted independently of the main ship while it is docked
+- Dining/conference table in the Constellation Phoenix should no longer have an incorrect texture on it
+- Attaching and removing any optics from the Ravager shotgun should no longer cause it to be misaligned and obstruct player view when ADS
+- The parasite ship docked with the constellation should no longer be able to be targeted independently of the main ship while it is docked
+- The Crew Elevator on the RSI Constellation Andromeda should no longer be missing it's platform surface texture
+- Bartender should no longer be missing at G-loc bar in area18
+- Demon Fang Combat Knife asset should no longer be missing
+## Technical
+- Fixed 4 Client crashes
+- Fixed 3 Server crashes
+- Fixed 2 Server Deadlocks
+- Fixed multiple Backend Service crashes

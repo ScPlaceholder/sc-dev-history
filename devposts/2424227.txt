@@ -1,0 +1,47 @@
+## New Features
+Gameplay
+- Added a voice activation option for VOIP transmission available on the options menu.
+- Added ship rental kiosks.
+Ship rental kiosks can be found at Teasa Spaceport in Lorville (Vantage Rentals) and Riker Memorial Spaceport in Area18 (Traveller Rentals).  During rental, players can specify the duration (1, 3, or 30 days) with longer time being a better overall value.  Rented ships are insuranced and customizable. The time remaining on the rental is shown on the mobiGlas and the ASOP terminal.
+- Players can now mine small rocks for valuable commodities while on foot. Details needed: shop location for multi and attachment
+To mine minerals and crystals while on foot, players will need the multi-tool plus a mining attachment which can be found at Area18, Lorville, and Levski.  Once equipped players will be shown a UI interface for mining laser strength and fracture window similar to the mining mechanic on the Prospector.  Once the rock is fractured, valuable minerals will be broken off and can be hand collected and stowed in the players personal inventory.
+- Harvestable objects can now be found and collected at various planetary bodies.
+Harvestable objects are valuable and can be stowed in the players inventory for later sale at commodity kiosks. Currently, harvestables can be found on the surface of Hurston, Ariel, Aberdeen and Daymar as well as within all caves.
+- Added a visor message that should notify the player if they are intentionally not respawned in a ship bed they had previously logged out of to help track down issues with bed logout.
+- Added: Player Personal Inventory
+Player personal inventory can be accessed using interaction mode and selecting an activation dot in the player's view or by using the "TAB" key.  From there a radial menu will appear showing the overall storage available, the percentage fill, and what items are stored.  The amount a player can carry is based on the type of armor they are wearing, with storage capacities shown on kiosks and shop displays. Players can also highlight and drop items as well as store all items in a carriable box, which itself can be stored in the cargo grid of a ship.  Both the cargo grid stored box and the inventory itself can be sold at commodity kiosks.
+- The commodity and trading kiosks now detects the player's personal inventory.
+- Added caves to Daymar, Hurston, and Aberdeen.
+Caves can now be found on the above rocky moons and planet, each contain harvestables and FPS mineable resources.
+- ATC will now restrict landing privileges based on crimestat.
+Most major landing areas will now not grant landing privileges to anyone with a crimestat of two or more.. GrimHex will allow anyone to land, including those in stolen ships. Rest stops and Levski will allow anyone up to wanted level three to land but will not allow stolen ships.
+- New missing person mission set in caves.
+- Flares can now be purchased at Conscientious Objects on Levski, Cubby Blast at Area18, Tammany & Son's at Lorville, and Live Fire at Port Olisar.
+- Added high inventory armor with backpack attachment "Rucksack" available at Conscientious Objects on Levski, Cubby Blast at Area18, and Tammany & Son's at Lorville.
+Flares can be equipped to utility slights, manually activated with the "use" interaction, thrown, and held.
+- Players can now share missions.
+Accepted missions now have the "share" option, which shares the mission with all members of the player's current party.  Upon mission completion, the total payout is divided up among the party members.
+- New Star Marine Elimination Map: The Good Doctor
+"The Good Doctor" map is set in a research station that surveys rock formations, natural gases, flora, and fauna.
+Ships and Vehicles
+- Added: Aegis Vanguard Harbinger
+- Added: Aegis Vanguard Sentinel
+- Added: Banu Defender
+The Banu Defender has a special shield that is best operated by two people via advanced hardening mechanics. This is best operated by a co-pilot adjusting the hardening on their MFD while the pilot focus on flying and engaging enemies.
+- Added a keybind "J" to manually toggle compatible ships into VTOL mode, shifting the ships thrust orientation when desired.
+- Some small ships can now mount size 2 gimbals into size 1 hardpoints, allowing them to gimbal size 1 weapons.  Those ships include the Auroras, Mustangs, Merlin, Archimedes, 85x, Nox, Dragonfly, and Prospector.
+- Added new IFCS system: Proximity Assist
+Proximity assist, which will now replace hover mode for near surface control, dampens ship acceleration when near surfaces to give the pilot better fine control and is enabled by default.  Proximity assist can be disabled in the options menu.
+Weapons and Items
+- New Ship Weapon: Kroneg FL Series Laser Cannons.
+A high damage, long range energy cannon designed for versatile usage at medium to long range. Various sizes can be found at Dumper's Depot on both Port Olisar and Area18 as well as Centermass.
+- New FPS Weapon: Hedeby Salva Frag Pistol.
+While the Salvo can be used as a normal pistol, Hedeby didn’t stop there. With a longer trigger pull, a freezing primer is injected into the chamber and when released, the heavy firing pin hits with enough force to pulverize the supercooled casing. Accidentally developed as an attempt to mitigate overheating, this charged fire option discharges a deadly spray of high-velocity fragments followed by an ear-shattering boom.  The Salva Frag Pistol can be purchased at Livefire at Port Olisar, HUR-L2, CRU-L1, Skutters, and Tammany and Sons.
+- Added additional weapon sight attachments and updated some of the current ones.
+Additional attachments: NVTC 1x Holo, NVTC 2x Holo. Reworked: NVTC 3x Holo, NVTC 4x Telescopic, Red Dot.
+- FPS combat ai will now prioritize targets based on distance, visibility, and incoming damage and should engage the player more effectively.
+- Added new barrel and under-barrel weapon attachments.
+New under-barrel attachments from ARMA including a flashlight, laser sight, suppressor, flash hider (hides muzzle flash), compensator (recoil reduction), and energy stabilizer (recoil reduction).  Like other attachments, these can be found at shops that sell compatible firearms.  Activate attachments with the "U" key.  Note: Weapon descriptions give the compatible sizes for all available attachment slots.
+Core Tech
+- Arena Commander and the Persistent Universe now use separate ship databases.
+Arena Commander and the Persistent Universe now maintain separate ship and item databases.  The status of your ship in the persistent universe, including fuel state, damage state, and whether it is destroyed or not will have no impact on your ship setup in Arena Commander.  Loadout customization is also specific to each game mode and is no longer transferable.  Rented items and ships done in the Arena Commander customization menu will only be available in that mode and vice versa for purchased or rented items and ships in the persistent universe.

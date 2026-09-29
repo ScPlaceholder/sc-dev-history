@@ -1,0 +1,69 @@
+## Star Citizen Patch 3.15.0l
+Alpha Patch 3.15.0l has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.0-PTU.7818165.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: Yes
+Long Term Persistence: DISABLED (Full wipe for all accounts)
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+Personal inventory is still undergoing UI changes as we progress through PTU and a feedback thread will be opened at a later time
+- Healing and Actor Status
+- Hospitals
+- Starlifter Hercules A2
+- Bombs
+- Infiltrate and Defend Missions
+- Loot Generation
+- Orison V2
+- Arena Commander Revamp
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu
+Players will need to exit the game and reload after a server crash to fix this error. This is part of the bug where players used to see a Bad Token after a crash which blocked them from re-entering but with the latest changes, that error is no longer displayed.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Resetting account failed to clear user items
+- Objective markers and QT nav points are greyed out on the player's HUD
+- Ships left at outposts disappear if the player logs out then logs back in or shortly after disembarking
+- Downed players are dropped or bounce/spin out of control when dragged over uneven surfaces and ramps
+- When Collecting Minerals/Metals with the Extraction Mode Laser the Ships Cargo Randomly Empties
+- There is a small area with no gravity in the airlock to the Grim Hex Medical facility
+- When requipping items from a loot box in zero-g, equipping the torso and arms will cause large amounts of inventory camera shaking
+- Players will disappear if they enter a overdosed state when onboard a vehicle
+- Weapon projectiles trajectory will not behave correctly when shooting from one zone inside a ship to another outside
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Destroying mission-spawned reinforcement type ships does not always trigger the ongoing 'Call to Arms' mission rewards
+- Missiles can hit the players ship when they are fired whilst the ship is moving forward
+- AC Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round
+- AC Players can spawn facing the wrong way at the start of the match or after dying
+- Demon Fang Combat Knife asset is missing from the game
+## Feature Updates
+Gameplay
+- Inventory and Looting Polish Pass
+Updated NikNax app to sort categories and types list alphabetically. Filters are now per container instead of global. Added buttons to auto-filter per categories. Added button to open dropdown to allow more control of the filters. Updated drag and drop interaction for attaching magazines and gadgets to equipped armor to be a bit easier. Updated default interaction for Armor & Clothing to be carry instead of equip.
+- Law System Update
+Updated law system to automatically forgive crimes against players unless they actively accept to press charges.
+## Major Bug Fixes
+- Fixed an issue that allowed players to fully unequip their mobiGlas without swapping for another
+- 400i entrance markers should now display
+- Disabling the 400i turret power should no longer cut out the rest of the ship's energy
+- Claiming ship then immediately running to a kiosk to buy any items in quick succession should no longer cause a long but temporary services error
+- Fixed an issue causing ships to show as claim on a terminal instead of retrieve after storing it
+- Medical gun should now work to heal other players while inside a greenzone
+- Fixed an issue that blocked players from using medpens to revive other players in greenzones
+- Emergency elevator and rescue system should now function fully in Grim Hex
+- If a player has their inventory open while leaving a greenzone or a location, the local inventory to that area should no longer remain displayed
+- Fixed an issue causing planetary winds to desync between clients which would cause force reactions to be different for players
+- Fixed multiple visarea issues when entering and exiting ship hangars in Orison
+- Ships should no longer be impounded instead of stored after sitting on their legal landing pad too long
+- "Body Drag" and "Drop Body" should no longer show at the same time when interacting with a body
+- Crusader showroom bartender should no longer be missing
+- 'Drop Item' should no longer allow undersuit to be removed from other actor while wearing armor
+- Players should now be charged with First Degree Battery instead of Grievous Bodily Harm when overdosing another player
+- Aggressor should now receive a higher criminal status when a player they attacked bleeds out after being the victim of an Aggravated Assault
+- Fixed an issue blocking someone from using their firearm again directly after doing a melee takedown on another player or NPC
+## Technical
+- Fixed 8 Client crashes
+- Fixed 7 Server crashes

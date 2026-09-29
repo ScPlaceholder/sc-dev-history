@@ -1,0 +1,63 @@
+## Star Citizen Patch 3.4.0h
+Alpha Patch 3.4.0h has been released to the PTU, and is now available to test!  Patch should now show: PTU-1023741.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- New Ships: Freelancer variants, 600i Touring
+- Lorville Central Business District
+- Hurston mission variants (bounty missions, downed relay missions, FPS AI missions, delivery missions, scramble races)
+Major Known Issues:
+- Downed relay missions may fail to update.
+- All items are missing at rest stop shops.
+## New Features
+General
+- Added dead zone and sensitivty slider for headtracking in the options menu under "comms".
+Ships and Vehicles
+- Added Anvil Hawk.
+- Added voice audio to mining modes.
+## Feature Updates
+Universe
+- Updated lighting around Klim.
+- Updated lighting, signage, and voice audio at the CBD.
+- Updated statues at the CBD.
+- Updated animations on Constatine Hurston.
+Missions
+- Temporarily disabled the admin at Lorville.
+- Updated Battaglia's mission description to state where she is located.
+- Moved the illegal deploy mission to the "personal" tab.
+- Temporarily removed the "recover stolen goods" mission due to outdated mission flow.
+UI
+- Added a "disband group button" for the party leader.'
+FPS
+- Balance pass for the Karna rifle.
+## Bug Fixes
+- Planetary rocks should now be effected by the explosion from shattering during mining.
+- The lift on the 600i should no longer cause the ship to be raised when deployed.
+- Players should now be able to spawn Gravlev vehicles at Olisar.
+- The 600i touring should now have atmospheric entry VFX.
+- FPS combat AI should no longer shoot at the floor instead of at the player when in cover.
+- The passenger room beds should no longer stick out of the 600i touring.
+- The correct text should now appear on train boards.
+- Terminals, kiosks, and the mobiGlas should now work when using crash recovery.
+- The "warning restricted area" message should now show when taking off rom Lorville.
+- Players should no longer occasionally cause recovery to return them to their previous position when they decline.
+- The "distraction" mission should no longer occasionally set the now defunct CryAstro as a location.
+- Fixed party invites showing the party leader joining.
+- Fixed view issues with Ursa Rover remote turret.
+- The mining tractor beam should no longer have a slight wobble during animation.
+- FPS combat AI should now aim correctly when leaning around cover.
+- The Dumper's Depot kiosk at GrimHex should now work properly.
+- The ECN mission around Crusader should now have proper tracking.
+- "0m" markers should no longer remain on the screen after scanning a mineable rock.
+- Fixed placeholder text or blank spaces from mobiGlas entries for Hurston and Klim.
+- "Evict Illegal Occupants" mission UI should now update properly.
+- Fix for Arena Commander UI refreshing inconsistently when player remains idle on respawn screen.
+- Respawn text should no longer appear after game has ended in Star Marine.
+Technical
+- Transit system performance tweak.
+- Fixed 3 client crashes.
+- Fixed a server deadlock.
+- Fixed 3 server crashes.

@@ -1,0 +1,48 @@
+## Star Citizen Patch 3.10.0t
+Alpha Patch 3.10.0t has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.0-PTU.5771442.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- Ship flight in and out of atmosphere
+- Updated building blocks ship UI for all flyable ships.
+- High speed combat changes
+- Turret gameplay
+- Origin M50 Improvements
+- Electron FPS Weapons and Electron Damage
+- Body Dragging
+- Citizen Trading App
+- New Targeting Method
+- Delivery Mission Improvements
+Known Issues
+- Tabbing out can cause the client to crash when loading into the game.
+- Hangar Doors can remain closed when the Hangar is assigned to a Landing Players Ship.
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- Landing gear will take multiple presses of the keybind to activate.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- The Greycat ROC cannot extract all of the child crystals, some are left behind
+- Hammerhead atmo entry effects clipping through interior of the ship
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- Multi-Tool in Klescher Prison Commissary does not come with a OreBit mining attachment
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+- Shots from remote turrets may appear desyned but still connect with the target.
+## Feature Updates
+Gameplay
+- Updated the highlighting intensity of mining deposits to make them clearer
+- Reduced Tachyon cannon damage
+Core Tech
+- Updated login queue messaging
+- Updated the keybind graphic in the options menu to have the latest keybind changes
+## Bug Fixes
+- Fixed an issue that was causing ping scans for mineables to relocate every time a player does subsequent scans.
+## Technical
+- Fixed 1 Client crash
+- Fixed 1 Server crash

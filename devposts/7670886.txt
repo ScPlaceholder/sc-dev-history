@@ -1,0 +1,74 @@
+## Star Citizen Alpha Patch 4.0.1
+Alpha Patch 4.0.1 has been released onto the PTU!  Patch should now show: VERSION 4.0.1-PTU.9491444.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:500
+Hangar Spawning: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Handyman Missions have been removed from 4.0.1 and will return in a future update
+- Stability, Performance, and Bugfix Testing
+- Save Stanton Chapter 2 Event in Pyro
+Chapter 2 of Save Stanton will run throughout the PTU phases in 4.0.1. This is a continuation of the event from 3.24.3 into the Pyro side of events.
+- Fixed - PU - Pyro - Save Stanton - Phase 7 - Missions / UI - Mission Objective Locations narrative is giving random location context compared to its actual location
+- Fixed - PU - Pyro - Save Stanton - Phase 6 - Missions - Hauling - CFP Cargo Hauling missions can be completed by retrieving the cargo then pressing "Submit"
+## Known Issues
+- PU - Location / Hangar / Transit Elevator / Physic - Players can enter Nonowner Personal Hangar, Occasionally ending up out of Boundary without Player Control
+- PU - Pyro - Courier - Mission Content / UI - Boxes are not marked upon accepting the mission
+- PU - Cargo - Hauling Missions - Warehouse orders not counting collected & delivered cargo correctly
+- PU - Cargo Hauling - Mission Content / Mission Refactor / Game Code - Supplies will remain in players warehouse and not successfully deliver
+- PU - Stanton - Locations - Hurston / Rappel - Storage Kiosk - Can't Interact with Storage Kiosk
+- Multivehicle - PU - Vehicles / Exploit - Fuel - Hydrogen and Quantum fuels are not depleted from fuel tanks when performing normal flight or Quantum Travel
+- AC - Pirate Swarm / INS Jericho - AI - Enemy AI does not spawn and will eventually get a disconnection Error: 30000
+- PU - Starlight Service Station - Elevator Terminals / Locations - Calling for Starlight hangar elevator from the hangar may cause you to teleport into an empty elevator shaft
+- PU - Stanton - New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- PU - Actor - Personal Inventory / Storage Access - Loot Box / Armor - Interactions / PIT Wheel - Helmets that are carried then dropped via PIT menu will disappear/become lost
+- PU - Pyro - R&R Station - Stanton Gateway Station - Locations / Shopping - All shops in Galleria are missing items on shelves and in Kiosk
+- PU - Pyro - Frontier Outposts - XS Outpost - Locations / Art / Tech - XS Outpost Main Building interior and Storage Shed interior is missing multiple assets and collision
+- PU - Pyro - Asteroid Bases - Hangar - Locations / Collision - The collision for the hangar doors does not stream in until the player is inside the hangar
+- PU - Pyro - Mission Refactor - Hauling - Mission Content / Reputation - Players are able to access the other intro missions after completing one for a different Org
+- PU - Stanton - Shopping / Selling / Cargo - Commodity Kiosks - Commodity kiosks are empty preventing any purchases or sales
+- PU - mobiGlas - UI - Contract Manager - Contracts can overlap with sections below them when expanded
+- PU - Pyro - Physics - Locations - Contested Zones (CZ) - Plastic Curtains have solid collisions against projectiles and cannot be passed through if ADS
+- RSI Polaris - PU - Vehicles - VLM - Occasionally lose Components By Pressing A New Insurance Claim or Repairing A Damaged Polaris
+- Contested Zones - Weapon intersecting with the ground
+## Features & Gameplay
+- Locations
+- Pyro Outpost Polish Pass to update various floating loot boxes and assets
+- Gameplay
+- ArcCorp & BlacJac Faction Space Bounties now have intro missions
+- Slightly Reduced Rewards for Several Bounty Missions
+- Ships and Vehicles
+- Greatly Increased the Mirai Guardian QI Dampener Health (22x)
+- Refined Drake Herald ship proxy to allow the player to re-place missiles correctly after removing them with the tractor beam
+- Core Tech
+- Physics Network Sync Optimizations
+- RMQ Hybrid-Service Network Optimizations
+- Added Software Cursor CVAR Support to help players on remote desktops. (pl_pit.forceSoftwareCursor 0/1)
+## Bug Fixes
+We have a few Potential Fixes in tonight's build we have put in changes that may help. Please let us know if these are doing ok after these updates!
+- Potential Fix - PU - Transit/Elevators - Elevators are present but panel buttons stop functioning (STARC-121322)
+- Potential Fix - Multivehicle - PU - Vehicles - UI - HUD - Advanced HUD goes away (STARC-145359)
+- Potential Fix - PU - Stanton - AI / Locations / Missions - AI in UGF's can occasionally become stuck in Spawn Closets preventing Players from completing missions in the area (STARC-145988)
+- Fixed - PU - Pyro - Cargo/Hauling - Some Freight Elevators are missing in "First Haul System" mission (STARC-145264)
+- Fixed - Stanton - PU - Multivehicle - Ships / Vehicles / Game Code / Controls - The Power Toggle doesn't power down if some Components are Powered Off (STARC-114537)
+- Fixed - PU - ASOP Terminal / Freight Manager / UI - Accessing an ASOP Terminal / Freight Manager Terminal with a weapon or gadget in-hand can result in user being instantly kicked out of the interface (STARC-147573)
+- Fixed - PU - Pyro - Location / Art - Player fall through the ground by dropping or walking on boxes in an outpost vent/crawlspace (STARC-88025)
+- Fixed - Crusader Industries Mercury Star Runner - Mercury Star Runner (MSR) from inside recreation area has ship texture in doorway (STARC-119553)
+- Fixed - PU - Multi-System - Missions / UI - Defend Ship - Defend Ship missions do not display mission markers for the player (STARC-147044)
+- Fixed - Vehicle - Tints/Liveries - Tumbril Nova Tank : The Badlands and Gunmetal tints for the Tumbril Nova are not applied appropriately (STARC-114071)
+- Fixed - Jump Points - Interference Visuals from Jump Point Distortion build-up is not reflected on the holographic MFDs
+- Fixed - SC - Ships / Art - Anvil Arrow - Anvil Arrow MFDs have a small line between the top and bottom MFDs
+- Fixed - Drake Corsair - Ships / Vehicles - Core Tech - Collision - Player can clip into and get stuck in various points in Corsair Turret compartments
+- Fixed - PU - ANVIL C8R Pisces Rescue - Physics / Vehicles - Player can jump on top of the medical bed, but they cannot get off of it
+- Fixed - PU - Orison - Locations / Art / Collision - User clips through the wall when walking to the sides of the doorway entrance at Orison General Hospital
+- Fixed - PU - Character Customization - The Character Customization screen is blacked out and unusable when the player tries to recustomize their character after exiting to the menu and re-entering PU
+- Updated Mission Giver logic to fix Eckhart, Hurston and Clovus not standing in their usable spot
+## Technical
+- Fixed 11 Client Crashes
+- Fixed 8 Server Crashes
+- Fixed a Server Deadlock
+- Fixed a Hybrid-Service Crash

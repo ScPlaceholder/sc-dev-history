@@ -1,0 +1,83 @@
+## Star Citizen Patch 3.9.0q
+Alpha Patch 3.9.0q has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.9.0-PTU.5076986.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Note: We are investigating issues with desync, where one client sees something entirely different from another.  PM videos with the above settings active to Baior-CIG showing any encountered desync.
+Bug Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-9-0q
+Testing Focus
+- Esperia Prowler
+- Contact and Party System Update
+- Caterpillar Prison Ship Mission
+- New Babbage and microTech's Moons
+- Personal Interaction System
+- Mining: Volatile cargo and mining consumables
+- Prison Systems
+- Actor Status System
+Known Issues
+- There's a chance the party leader will crash on party launch.
+- There's a chance the player will wake up floating in space after getting out of prison.
+- Levski's armistice zone does not cover hangar spaces or exterior areas it is meant to.
+- The player is unable to logout in any of the Starfarer's crew beds.
+- Mission givers can sometimes not speak or animate if a player accepts an invite mission.
+- Server blades are missing from Clovus's downed relay mission.
+- Criminal players killed by player bounty hunters do not end up in prison.
+- Ships are immediately destroyed upon spawn at Area18. W/A: Avoid Area18 for now.
+- The KC Trending shop keeper stands idly and doesn't not interact with the player.
+- Karoby energy bars are missing from all locations.
+- Unmanned turrets do not fire at the player if they have a crimestat.
+- Its possible to get the contact notification window stuck behind the main menu.
+- Being in a large party causes markers to not display correctly while inside a ship.
+## Feature Updates
+Locations
+- Reduced the time player ships are allowed to illegally linger over Grim HEX landing pads before being impounded.
+Gameplay
+- Lowered the amount your character twitches while impacted by fire in combat.
+- Updated mining consumables to have ship manufacturer branding.
+- Balance pass on prison ore deposit merit rewards.
+- Balance pass on mineable distributions inside prison caves.
+Weapons and Items
+- Added Vanguard nose guns into the AC REC Rental Inventories.
+Ships and Vehicles
+- Increased available deadzone range for vjoy by 20%.
+- Set default vjoy deadzone to 4.5%.
+- Restored relative mode optional setting for mouse control (not bound by default).
+- Players can low lock the rotation of their ship using the Rshift key.
+## Bug Fixes
+- Price of Freedom mission should now give the correct mission rewards for completion.
+- Ship AI should now spawn correctly for escort rescue missions.
+- The terrain should no longer clip into the interior of the Hydroponics building at Rayari Kaltag Research Outpost on Calliope.
+- Fixed missing sections of the bar counter at rest stop bars.
+- Security ships should no longer approach a player who has already initiated quantum travel which was causing them to get an evasion crime stat.
+- Prowler cockpit display should no longer be overly reflective with red light.
+- Fixed various overly bright red lights throughout the Prowler.
+- Prison suit loadout should no longer be saved after user exits PU and enters a Hangar module.
+- Fixed an issue in Area18 where some some of the shelf items at Dumper's Depot could not be Interacted with.
+- Exiting pilot's seat or exiting ship in atmosphere should no longer cause the ship to stop hovering and fall.
+- Prison release audio message should no longer play after the character is released and nowhere near prison.
+- Fixed an issue that could cause players to get stuck around the external geometry of derelict caterpillars.
+- Fixed missing walkway segments around Grand Barter in Levski.
+- The Prowler's QT effect should now properly fade in and out
+- Fixed an issue preventing black boxes from spawning when reaching the objective for associated missions.
+- Prison audio should no longer continue to be heard after release and no where near prison.
+- Fixed instant auto-gimbal slew speed.
+- Players should no longer be routed through a distant OM1 when setting long range QT routes.
+- Players should no longer get stuck on loading screen when leaving prison.
+- Players should no longer wake up with their prison suit still on after leaving prison.
+- The side landing gears on the Prowler should no longer visibly clip through the floor when spawned or after landing.
+- Ruto's mission terminal should now correctly function.
+- Stowed knives should now properly be aligned when attached to leg armor.
+- Players should now correctly be able to stow the prison shank.
+- The Euterpe Starfarer space derelict should no longer be in the moons atmosphere, preventing use of EVA due to gravity.
+- Fixed a collision issue inside comm arrays which was covering the majority of the hacking slot making it extremely difficult to put in.
+- Ships at Grim HEX should now properly be impounded for blocking pads or landing without permission.
+- Pad ramming infraction should now send the player to the correct location in Grim HEX.
+- The landing pad on top of ArcCorp tower should now have proper collision.
+- Duplicate trains should no longer appear in Lorville, New Babbage, and Area18.
+Technical
+- Fixed 4 server crashes.
+- Fixed 3 client crashes.
+- Optimizations to reduce network stalls.

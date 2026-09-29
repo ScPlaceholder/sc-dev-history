@@ -1,0 +1,19 @@
+Hey there @SteveWarson ! @PegasusMD has the right idea.  Here's a list of Windows files to help!
+Check for the following files after a Windows reinstall:
+- Make sure you have the latest Media Pack for Windows: https://support.microsoft.com/en-us/help/3145500/media-feature-pack-list-for-windows-n-editions
+- Make sure you have the following Microsoft .NET Framework install, yep both of them: 3.5 https://www.microsoft.com/en-us/download/details.aspx?id=21 and  4.5.2  https://www.microsoft.com/en-us/download/details.aspx?id=42642
+- Ensure the new files are whitelisted in your anti-virus and firewall:  RSI Launcher.exe and StarCitizen.exe
+- Ensure these ports are open on your router: TCP 8000 - 8020 and UDP 64090 - 64110.
+- Make sure all of your Windows updates have fully installed.
+When you open the RSI Delta Launcher, click Settings  and click Verify. If you get a new error or issue, let us know. 
+You can also check the Launcher log for some info to see what is happening.
+- Right click on the Windows icon and select Run.
+- Enter and run %appdata% and click Ok. This opens Users\CurrentProfile\Appdata\Roaming.
+- Open the rsilauncher folder.
+- Open the log.log file. Scroll to the end for the latest action notes and captures of your actions in the Launcher. Sometimes this can give you info on what's happening.
+If you aren't sure if you have all of your Star Citizen game files, you can force update:
+- Delete the folder Bin64 in this location: (install drive)\Program Files\Roberts Space Industries\StarCitizen\LIVE\Bin64.
+- Run the Launcher.
+- Click Settings, and click Verify.
+- All game files will forcefully download and update again.
+Hope this helps!

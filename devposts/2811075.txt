@@ -1,0 +1,48 @@
+## Star Citizen Patch 3.8.2c
+Alpha Patch 3.8.2c has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.2-PTU.4568113.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+NOTE: The Carrack is not yet ready for testing. The primary purpose of this patch is to test long term persistence, which represents a significant change to gameplay.
+Database Persistence Wipe: YES
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- Long Term Persistence (LTP)
+- General gameplay and traversal
+- Bug regression list
+Known Issues
+- Some mission givers may be unresponsive.
+- Escort missions may not proceed after reaching the rendezvous marker.
+- Sometimes repair services are unavailable when they should be present.
+- After a ship is repaired, detachable components will remain attached to the ship when destroyed and a duplicate component will fall off.
+- Repair fails if you select repair and refuel simultaneously.
+Work-around: Select each service individually.
+- Cycling through character customizer options can sometimes cause a client crash.
+- Once an Animus spare magazine has been emptied the player can no longer equip fresh magazines in the same slot.
+- Ships can be displayed as "unknown" after destruction, be available for spawn, but not appear on their specified hangar.
+- Entering or exiting via EVA can sometimes cause the player to turn/spin suddenly and harm themselves.
+- Objects can fall through the floor when dropped.
+- When server FPS is low the mobiGlas can sometimes close immediately after open.
+- An extra static train can appear at Lorville and prevent the use of trains.
+- The visuals of the ships on the rental screen may have missing areas or disappear completely.
+- The Caterpillar will occasionally rock or tip over on itself after landing on a planetary body.
+- CryAstro services may not work at various stations and major ports.
+Work-around: Hover before landing and request services just above the pad.
+- Rentals and/or rental timers may not work when renting a second ship.
+- Party makers will vanish form their respective players if they die far from their respawn point.
+- If a player's ship is destroyed after bed logout they will return to the server at origin.
+- NPCs may sometimes be doing usable animations in places that they shouldn't.
+- Countermeasures are not working as intended to deter missiles.
+- The 890 Jump does not have the correct cargo capacity.
+- The Combine Cannon and distortion weapons are not working as intended.
+- If the quantum travel marker is at the edge of a moon or planet its possible to QT through the moon and explode..
+- Purchased commodities will often visually not appear in the ship's hold.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## Bug Fixes
+- Certain ship beds (ex. Mole) should no longer cause an infinite loading screen on return from using them to logout.
+- Players should now be able to hack away more than 1 crime per Crypto Card.
+Technical
+- Fixed a client crash.

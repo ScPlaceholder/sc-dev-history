@@ -1,0 +1,21 @@
+## Armor Penetration Mechanics
+- Penetration Mechanics: Weapons have a penetration value (e.g., 1 meter for a size 3 ballistic gatling). The amount they penetrate depends on the current armor percentage. Penetration cone, impact radius, and distance radius all affect area on penetration.
+- Linear progression: As you reduce armor, penetration increases linearly. At 0% armor, weapons penetrate at their maximum value.
+- Weapon type matters: Ballistic weapons are less effective against armor compared to energy weapons, which do 1.4x normal damage to armor.
+- Component damage: Penetration is checked within a cone, not just a straight line. If a component is within the cone, it takes damage based on the penetration value and armor percentage.
+- Breaking armor: Even smaller weapons can eventually wear down armor over time, but larger weapons penetrate deeper and faster.
+Example Scenario
+If you use a size 2 weapon against a ship with full armor, you won’t penetrate. But as you keep firing and reduce the armor, you’ll start to penetrate and eventually damage internal components.
+For capital ships, you may need larger weapons to reach deeply buried components.
+Additional Notes
+Armor bar improvements: There are ongoing efforts to fix bugs and make armor health more transparent to players.
+Tooltips: Updated tooltips should help players understand armor, hull, and other systems.
+Penetration cone: The system uses a cone check for penetration, so it’s not just a single bullet path. Multiple components can be affected within the cone.
+## UI
+Giving information about the current state of armor of your ship and your target is just as meaningful as self status of shields and other systems.
+This includes:
+- Health pool of the armor
+- Current effective thickness (the current value modified by the health ratio and the curve)
+- Feedback for shots including aiming reticle/pip provides piercing, not piercing but damaging, or not damaging the armor meaningfully
+- The Engineering Screen mirrors similar feedback on a dedicated panel widget
+- Shop descriptions describe armor-relevant properties of the entities. Guns (FPS/Vehicles): Penetration, Armor Damage Multiplier. Vehicles: Default armor thickness.

@@ -1,0 +1,38 @@
+## Star Citizen Patch 3.10.1b
+Alpha Patch 3.10.1b has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.1-PTU.5835671 .
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- General gameplay, spread out among different areas
+Known Issues
+- The Elevator panel on the Carrack may fail to work on spawn.
+- Private Arena Commander matches are temporarily disabled due to an issue with the updated group system
+- Player character can clip through the external doors of certain outpost buildings and Aid shelter buildings' airlocks when entering
+- Hangar Doors can remain closed when the Hangar is assigned to a Landing Players Ship.
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- Hammerhead atmo entry effects clipping through interior of the ship
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+- Shots from remote turrets may appear desyned but still connect with the target.
+## Feature Updates
+Characters
+- Visual updates to some of the Bartenders.
+Locations
+- Adjusted the kill mesh around Lorville.
+Bug Fixes
+- Players should no longer take collision damage when entering a ship.
+- Players should no longer experience 16k7 lockout issues.
+- Players should no longer experience random 0 UEC balanced or have purchases fail.
+Technical
+- Fixed a server crash.
+- Fixed a client crash.

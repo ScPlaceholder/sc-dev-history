@@ -1,0 +1,47 @@
+Ships & Vehicles
+## Aegis Hammerhead Gold Standard
+The Aegis Hammerhead has received its Gold Standard pass, bringing the ship's interior up to the level of quality established by more recently built and reworked vessels. Every area of the interior has been reviewed and polished from the crew quarters and cargo hold through to the turret cockpits, the captain's quarters, and the service areas below decks. The update also addresses a significant number of functional issues that have been present in the ship since its original release, including missing collision on several interior geometry pieces, visarea and atmosphere problems in the turrets, overloaded life support, and a collection of interaction and UI fixes across the cargo elevator, component bays, and power relay systems.
+Art & Physical Changes
+- Interior art has been fully reworked and brought up to Gold Standard quality
+- A missing locker has been restored to the crew quarters
+- Floating lights in the empty component bay of the cargo room have been corrected
+- Geometry in the fire extinguisher housing has been fixed
+- Bridge sign assets that were missing from the ceiling have been restored
+- Bathroom doors that were floating slightly off the wall have been corrected
+- Multiple LOD issues have been resolved causing many doors and assets in the ship to lose textures or visibility at a distance
+Technical & Functional Changes
+- Component bay doors now open fully; previously they did not open completely
+- Component bay housings have been resized to correctly fit the components they contain
+- Collision has been added to the large component bays inside the cargo area, relay wall pieces throughout the ship, and areas in the captain’s quarters which previously had none
+- A collision box that was blocking the center of a main hallway has been removed
+- The cargo hold ladder is no longer blocked when the Grav Gen door is open
+- A visarea portal issue in the cargo elevator housing has been fixed
+- A door type present throughout the ship had a recurring visarea issue that has been corrected
+- The cargo elevator screen UI is no longer offset from its physical screen geometry
+- The right-side personnel elevators no longer clip out of the ship geometry when lowered
+- The top turret access door on the Gold Standard variant can now be opened correctly
+- Turret MFD UI screens are no longer offset from the physical screen position
+- Turret MFD interaction prompts were mirrored and have been corrected
+- The Power Relay in the cargo bay now has correct interaction prompts
+- Upper deck component bay interaction buttons now have a larger and more reliable hit detection area
+- Special weapon rack doors now correctly play their close animation
+- Audio no longer abruptly cuts or changes when moving between interior zones
+- Bed prompts now correctly show a log-out option; a false "Get Up" prompt when approaching beds before entering them has been removed
+Systems & Balance Changes
+- Life Support was severely overloaded on the Hammerhead. The load has been corrected to function within intended parameters
+- The front right turret cockpit previously had no breathable atmosphere. This has been resolved and the turret is now correctly pressurized
+- Turret cockpit canopies now have collision, closing a previously open issue that allowed boarding through turret access points
+## Ship Projectile Velocities & Armor Penetration Updates
+With this update to 4.8, ship weapon speeds have been balanced across the board with speeds raising at the low end and reducing at the high end.
+This update also brings balancing to heavy fighters armor penetration so the fighter class can all damage one another and prevent heavy fighters not being able to hurt other heavy fighters.
+Weapons & Items
+UltiFlex Crossbow: VFX and art polish for for weapon and projectiles
+## Bug Fixes & Technical
+Fixed 4 Client Crashes
+Fixed 2 Server Crashes
+- Potential Fix: PU - Refuelling - There is an unexpected delay between entering the refuelling node and the nozzle extending, making the interaction feel unresponsive
+- Potential Fix: PU - UI / mobiGlas - CryAstro / Landing Services - Landing Services are not available in some Station's exterior Landing pads - STARC-201396
+- Potential Fix: PU - Stanton - Refinery - Ships / Vehicles / Game Code - When multiple Refined Materials are sent to a Vehicle Cargo Grid they are Placed Overlapping - STARC-200192
+- Potential Fix: Command module may become unclaimable if stored without the rest of the Caterpillar
+- Potential Fix: PU - Tactical Strike Group - Mission Content / UI - Power Relay marker was not present during Beat 2 while under the asteroid
+- Potential Fix: Drake Command Module - PU - Vehicles - Player is unable to exit bed resulting in the player being stuck

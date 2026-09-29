@@ -1,0 +1,55 @@
+## Star Citizen Alpha Patch 4.8
+Alpha Patch 4.8 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.8.0-PTU.11777743.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Disabled in current PTU builds
+## Testing/Feedback Focus
+- Stability, Bugfixes
+- New Mission: Tactical Strike Groups & QV Extraction Stations (New reputation gate tonight)
+- New Event: Return of Xenothreat
+- Item Recovery: Vehicle Loadouts
+- Command Module
+- Flight Suits & G-Force Resistance
+- New Mission: Defend Location - Ship Battles V3
+- Kastak Arms Plasma Grenade
+- Uniflex Crossbow (Blueprint should be fully working as a drop now from TSG)
+- Refueling Missions & Improvements
+- Ship Hangar Service T0
+- Hammerhead Gold Standard
+- Defensecon (will run on a rotation for 24 hours in A18)
+Known Issues
+- PU - Multi-Locations - Shopping Services - Vehicles - Ship Shop Buy Transaction Service Error blocks from purchasing vehicles
+- PU - Stanton - GrimHEX / Lobby - Transport / UI / Locations - GrimHEX elevator do not have an option to designated location
+- Multivehicle - Docking - Keybinds - conflicting keybinds not allowing ship docking to stations
+- PU - Stanton - Pyro Gateway - ATC / Locations / Hangars - Unable to contact ATC via keybinding shortcut
+- PU - Armor / Clothing / Inventory Rework - "Right Click > Equip" does not function if a paper doll slot is occupied, prevents further inventory interactions
+- PU - UI - Party connection Playing on repeat after quantum travel after a party member crashes and reconnects
+- PU - Multisystem - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+- PU - Multi-System - Stall / Freeze - Client - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing and using Commodities Kiosks
+## Features & Gameplay
+Gameplay
+- TSG Polish: Further Performance, audio, art, and LOD polish. Added hostile ships around the power relays.
+- Return of Xenothreat: Further difficulty balance polish
+- Updates to component crafting times on fabricator
+FPS Gear & Items
+- Crossbow damage adjusted from 140 to 123 Crossbow projectile weight from 0.5 to 1
+- Increased KSAR plasma grenade duration from 9 to 10 seconds
+- Added flightsuits to Lorville Tammany and Sons and Cordry's Levski
+- Updates to component crafting times on fabricator
+## Bug Fixes & Technical
+Fixed 1 Client Crash
+- Potential Fix:  Multi-System - PU - Locations / Interaction / Shopping Kiosk - Buy and Sell button in the Shopping Kiosk is not working - STARC-204026
+- Potential Fix: Multivehicle - PU - Vehicles / Commodity / Items - The items/cargos attached to the vehicle's cargo grid will disappear after the vehicle is stored and then retrieved - STARC-204005
+- Potential Fix: RediMake Item Fabricator - PU - Crafting / Interactions / UI - There is a chance that the Fabricator button will lose its interaction after lowering it on the Freight Elevator - STARC-201086
+- Potential Fix: PU - Transport - Carriages at the same gateway can overlap and do not cull players from other zones (Party member sometimes invisible after using elevator) - STARC-203063
+- Potential Fix: Command Module - After quantum travel is initiated the docking connector between the parasite and host disappears - STARC-203874
+- Potential Fix: Grim HEX elevators may block movement between certain areas of the lobby
+- Potential Fix: PU - Nyx - Tactical Strike Group - Locations / UI / StarMap - Location name is set as ' Uninitialized ' in the mobiGlass
+- Potential Fix: PU - Missions - UWC'S HIRING REFUELERS - Mission Content / Locations / Quantum Travel - Players are placed inside the asteroid where the asteroid base is built on when arriving via Quantum Travel
+- Potential Fix: PU - Mission Content / Vehicles - Players are able to shoot open interior doors in the PA Idris gaining access to the rest of the ship
+- Potential Fix: PU - Stanton - Area 18 - Locations / Collision / Assets - Astro Armada Missing Floor - STARC-204417
+- Potential Fix: PU - Tactical Strike Groups - Bombing Run - Exploit / Missions / AI - Mission automatically gets completed when Hostile AIs gets destroyed without completing the objective
+- Potential Fix: Aegis Idris Series - PU/AC - Idris laser's damage does not get propagated to Main Target Vehicle if we're hitting its doors
+- Potential Fix: PU - Tactical Strike Group - Mission Content / Hostility - PA Idris becomes hostile too easily from ship to ship contact when attempting to land
+- Potential Fix: PU - Nyx System - Levski - Mercy Hospital - Locations / Assets / Transit - Elevator has Destination Geometry Clipping - STARC-199339

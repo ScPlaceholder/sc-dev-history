@@ -1,0 +1,42 @@
+## Star Citizen Patch 3.3.0o
+Alpha Patch 3.3.0o has been released to the PTU, and is now available to test!  Patch should now show: PTU-968336.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- Scramble Races
+- FOIP
+- New Ships and Vehicles: Valkyrie, Phoenix, Hammerhead, Mustangs, and Cyclones.
+- Manned turrets.
+- Changes to ship cannons.
+- Power management, overpower, and overclocking ship systems and components.
+Major Known Issues:
+- Mission givers may not be functioning correctly.
+- Inviting someone to party via the mG causes a client crash. W/A: Invite via interaction mode.
+- Ships rented from the front-end do not show up in ship selection list.
+- Airlocks lack lighting.
+- Ships are able to quantum travel to locations they do not have enough fuel to reach.
+## Feature Updates
+Missions
+- Updated the registered racers UI to just be a single count for scramble races.
+- Updated UI flow for the waste disposal mission.
+UI
+- Visual clean up of Starmap including brightness, materials, and 3D outpost icons.
+FPS
+- Reduced side to side head-bob while sprinting.
+- Made the tracer on the Karna thicker for better readability.
+Ships and Vehicles
+- Setup Captain's dashboard on the Hammerhead.
+## Bug Fixes
+- The player should no longer be able to be rewarded twice for completed a mission.
+- Scramble races should now properly end when a player wins the race.
+- EVA entry into the Sabre should no longer be misaligned.
+- Players should no longer climb the weapon crate in Star Marine when equipping new weapons.
+- The player's off-hand should no longer clip through the foregrip of the Custodian while in motion.
+- Finish line and checkpoint barrels for scramble races should no longer appear to stream in late/out early.
+- Players should no longer be counted multiple times if they enter a vehicle inside of the start area of scramble races.
+Technical
+- Fixed 4 server crashes.
+- Fixed 4 client crashes.

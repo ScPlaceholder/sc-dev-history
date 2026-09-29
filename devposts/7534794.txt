@@ -1,0 +1,91 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to Wave 2 testers!  Patch should now show: VERSION 4.0.0-EPTU.9456480.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US Servers
+Audience: Wave 2
+Long Term Persistence: Enabled
+Mesh Configuration: 4:6:500 (4 Servers in Stanton, 6 Servers in Pyro, 500 players total on the mesh)
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Today's build contains further mission inclusions for Hauling, Call To Arms, Destroy Items, Intro, and Unlawful Salvage Missions.
+## This is going to be a spicy build tonight with 2 major known issues. These would normally block EPTU release but we wanted to get test data from the meshing team's major network changes. So be warned! This could be a bit of a rough one so this is your warning!
+- Very High Chance: PU - Multi-System - Multiple Locations - Locations / Hangars - Player's hangar disappears on player arrival
+- 100% Repro: PU - Locations / Inventory - Local inventory is missing at several locations
+Tonight's build we will not test hangar spawning due to the main known issues causing hangars to despawn
+- Server Meshing
+- Pyro Star System and New Locations
+- Contested Zones
+- Jump Points
+## Known Issues
+- PU - Cargo Hauling - Mission Content / Mission Refactor / Game Code - Supplies will remain in players warehouse and not successfully deliver
+- PU - Pyro - Rundown Station (R&R) - Checkmate - Locations / AI - AI are spawning out of bounds floating inside of the station
+- PU - Medical Insurance Terminal / UI - Regeneration kiosk UI does not update after transferring imprint
+- PU - Pyro - Network / Streaming / Locations - Certain Rastar Locations will briefly stream in for all player located in Pyro, regardless of distance
+- PU - Multi-System - Jump Points - Ships / Vehicles / VFX - Ships will have a VFX trail in front of the Cockpit after Jumping whenever the Vehicle moves
+- Stall - Client - PU - Jump Points - Performance - There is a brief client stall when travelling through the Jump Point Tunnels
+- PU - UI - mobiGlas - mobiGlas UI is displaying incorrectly on several pages/tabs
+- MISC Starlancer Max - PU - Vehicles - Starlancer Max landing gear won't deploy but ship speed is limited as if they were
+- PU - Pyro - Locations - Checkmate - Medium Hangar blocked by station geometry
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- Multiweapon - PU - Actor / Animation / Weapons - Both male and female actors do not animate while reloading weapons
+- PU - Pyro - Orbituary - Locations / Art / VisArea - Navigating from assigned hangar elevator to "Entrance" opens to a VisArea portal above medical clinic
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+## Features & Gameplay
+- Locations
+- Further Pyro Outpost and Derelict Polish Pass
+- Pyro Station and Contested Zone Lighting Polish
+- Further Contested Zones Traversal and Art Polish
+- Gameplay
+- Starmap Marker Improvement Polish Pass
+- Vehicle Rental Price Rebalance
+- Ships and Vehicles
+Advanced HUD Polish
+Dashboard and advanced HUD are now mutually exclusive. Added further keybinds. Added separate options for NAV and SCM. Added binding for ship lights on / off. Added binding for text vs icons.
+- MISC Starfarer: Added an Additional Power Plant to Help its Power Deficit
+- MISC Prospector: Updated to Exterior to Make Pods Easier to Attach and Detach
+- Core Tech
+- Network team has implemented loads of new network optimizations and changes in tonight's build that should hopefully make the hybrid behave much better
+- Added new Stow Logic to More Aggressively Clean up Unattended Vehicles and Entities in Landing Zones/Space Stations
+- Character Ragdoll Performance Optimizations
+- Further Player Inventory Performance Optimizations
+- Further RASTAR Point of Interest Polish and Performance Pass
+## Bug Fixes
+- Fixed an issue causing all Quasi Grazer animations to be broken
+- Fixed - Jump Points - It is possible to be be pulled into a Jump Point late that closes on you and then be flung forward (STARC-144281)
+- Fixed - Multivehicle - PU/AC - Vehicles/IFSC - Speed limiter is on even if by default its turned off. Switching to Nav, scales the UI incorrectly for the velocity bar (STARC-130426)
+- Fixed - Drake Interplanetary Corsair - Stanton - Vehicle / Ships / Interactables / Audio - Interior doors do not play audio when opening via the control panels (STARC-50177)
+- Fixed - PU - Stanton/Pyro - Jump Points - Ships / Vehicles / Game Code - The Jump Point can get stuck in the Requesting Jump Phase
+- Fixed - Jump Points - It is possible to encounter asteroids in the last section of a Jump tunnel
+- Fixed - PU - UI Markers are broken with Upscaling
+- Fixed - Jump Points - Code - Quantum Drive UI tells you if you don't have a Jump Drive while close to a Jump Point
+- Fixed - PU - Pyro - R&R Station - Stanton Gateway Station - Locations - No Comm Array at Stanton Gateway station
+- Fixed - PU - Pyro - R&R Station - Stanton Gateway Station - Locations / Shopping - All shops in Galleria are missing items on shelves and in Kiosk
+- Fixed - PU - Pyro - Multilocation - Mission Content / Locations - Mission is still in progress even after killing all enemies
+- Fixed - PU - Multi-System - Jump Points - Ships / Vehicles / SFX - The Jump Point Tuning SFX Persists when Toggling SCM Mode, and Stack when Repeatedly Toggled
+- Fixed - Stanton / Pyro - Exploit / Gameplay / Weapons - Weapons can be drawn and used inside an armistice zone after dying inside your hangar
+- Fixed - Aegis Sabre - PU - Vehicles / Jump Drive - Aegis Sabre variants does not have stock jump drive installed and is empty
+- Fixed - PU - Mission Refactor - Missions - Bounty Hunter / Eliminate Specific - Bounty target NPC does not have the same name as the one in MobiGlass
+- Fixed - PU - Mission Refactor - Missions / Law - Lawful Contracts display and can be accepted by players with a high CrimeStat
+- Fixed - PU - Mission Refactor - Mercenary - Mission Content / mobiGlas - Leaving the mission area will fail the objectives but not the contract
+- Fixed - PU - Pyro - Missions / Reputation - Players affiliated with different factions can share missions with each other
+- Fixed - Multivehicle - PU - Vehicles / Audio / SFX - Many Vehicles are missing engine/thruster power on SFX
+- Fixed - Contested Zones - Dropped items like weapons are intersecting with the floor
+- Fixed - PU - Pyro - Monox - Locations / Art / Graphics - Replace Me balls in Jackson's Swap (STARC-87965)
+- Fixed - Multitool Refactor - Art - UI screen is warped and not in the correct position
+- Fixed - PU - Server Meshing / Subdivision - UI / Vehicle HUD - More then 2 UI Markers are present for vehicles
+- Fixed - PU - Pyro - Mission Content / Game Code - Coverup mission ship does not spawn at the mission location
+- Fixed - Pyro - Contested Zones - If a player dies they retain their loadout on respawn and rob their killer of the chance to loot
+- Fixed - PU - Pyro - Contested Zones (CZ) - Orbituary - Locations / Design - Players can become permanently stuck behind crates in some hangars
+- Fixed - PU - Pyro / Stanton - mobiGlas - UI - Contract Manager - Missions - accepting a Bounty Hunter and Mercenary Missions bring you to accepted mission tab, but never is accepted and loads indefinitely (STARC-143189)
+- Fixed - PU - Stanton - Cellin - Security Outpost Kareah - Core Tech - Locations / Physics / Collision - There is a panel on the upper right and left side of the lookout glass window that lacks collision, allowing players to go under the Outpost
+- Fixed - PU - Stanton - Locations - Klescher Rehabilitation Facility - Graphics / UI / Kiosk - Several prison kiosks appear bright and washed out
+- Fixed - PU - Pyro - Multiple Locations - Rundown Stations - Art / Locations / UI - Various fluff screens within the Refinery Deck have white screens
+- Fixed an issue causing Grenades to have no SFX or VFX when exploding
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed a Server Deadlock

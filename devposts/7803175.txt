@@ -1,0 +1,67 @@
+## Star Citizen Alpha Patch 4.1
+Alpha Patch 4.1 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 4.1.0-PTU.9627438.
+## Build Info
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+- Audience: All Backers
+- Server Info: PTU Channel
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Enabling Orison and Area 18 NPE
+- T0 Item Recovery
+- Ground Vehicle & FPS Mining Updates
+- Ship Collision Physics Updates
+- VOLT Weapons
+- Wikelo Collector Missions (Intro Mission Should now function and allow for subsequent Collector Missions to be completed)
+- New Align and Mine Event
+Tonight's build has further Hathor Location Art/Animation/Audio Polish. Wikelo Collector turn-in requirements are temporarily reduced for PTU testing to about 10% of what will be normally needed.
+This event will utilize 2 new locations in the PU; Hathor Platform Alignment Facilities and Hathor Orbital Laser Platform.
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback
+- Additional Missions updated for Meshing
+## Known Issues
+- Blocker: PU - BWin Spikes and drops to 0 for short stalls
+- Critical: PU - Item Recovery T0 - Upon being incapacitated the UI is showing a Fee + Tax % not meant for T0 (visual only and will not take aUEC)
+- Critical: PU - Personal Inventory - Item Recovery - User will lose their previously equipped loadout upon leaving Klescher Rehabilitation Facility
+- Critical: Mission Refactor - PVP Missions dont work
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- High: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel
+- High: PU - Pyro - Jump Point - Failing a Jump point will displace the player far away from the gateway station
+- PU - Stanton - Mission Refactor - Wikelo Collection - Turning in additional items results in the items disappearing and additional items in the freight elevator
+- PU - ReadyGrip Tractor Module - Locations - Shopping / Kiosks - Vehicle Tractor Beams / Vehicle Components - ReadyGrip Tractor Module is listed at 0 aUEC at shops and can't be purchased
+## Features & Gameplay
+- Locations
+- Wikelo Collector Location: Wikelo's Showroom has been opened to the public. Wikelo Holograph Art and LOD polish
+- Further Hathor Facility and Station Art, Audio, and Lighting Polish
+- Adjusted Hathor Space Station Landing Pad Gravity Volumes
+- AI
+Juvenile Valakkar Polish
+Juvenile Valakkars no longer perform Melee Attacks and will Burrow and Relocate when the Player approaches. Juvinile Valakkars will now stagger more consistently. Juvenile Valakkar Attack and Death Behavior Polish Pass.
+- Gameplay
+- Collector Missions Narrative Polish
+- Increased Green Zone for FPS minables to support better readability on the UI
+- Weapons and Items
+- Slightly Increased Grin Multitool Mining Power
+Volt Rifle Balance Adjustments
+- Added Volt AR Ammo to all stanton weapon shops and all pyro station weapon shops
+- Projectile damage decreased from 15 to 13
+- Beam damage increased from 150 to 210
+## Bug Fixes
+- Potential Fix: PU - Mission Refactor - Missions / UI / mobiGlas - Stanton Mercenary Missions are appearing blank (STARC-133798)
+- Potential Fix: Greycat ROC - PU - Vehicles / Physics - The wheels of the Greycat ROC can Clip through the hangar floor and cause it to be impossible to steer (STARC-122960)
+- Potential Fix: PU - EVA / Network / Actor - Players who are in EVA when streamed in are desynced (STARC-158656)
+- Potential Fix: AC - Endless Vanduul Swarm - AI / Combat - Wave 2 AI does not spawn in Endless Vanduul Swarm (STARC-148132)
+- Potential Fix: PU - Stanton - Mission Refactor - Wikelo Collection - Turning in additional items results in the items disappearing and additional items in the freight elevator
+- Potential Fix: PU - Stanton - Missions - NPE / Tutorial - Retrieving Tutorial ship from Hangar rather than spaceport won't trigger further objectives
+- Potential Fix: MISC Starlancer MAX - PU - Vehicles - Vehicle Experience - Starlancer IFCS Values are changed due to Mass rebalance pass
+- Potential Fix: Pyro - PU - Harvestables - Economy - The Amiant Pod, Flareweed Stalk, and Wuotan Seeds are Priced to Sell at 1auec
+- Potential Fix: PU - Pyro - Asteroid Bases / Executive Hangar - Locations - Players are killed immediately upon entering the executive hangar
+- Potential Fix: AC - AC Menu / AC Frontend - Map Select - The map selection field turns blank when you back to the main menu and re-enter the AC frontend
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 3 Server Crashes

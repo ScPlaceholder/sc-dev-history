@@ -1,0 +1,65 @@
+## Star Citizen Alpha Patch 4.9
+Alpha Patch 4.9 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.9.0-PTU.12098675.
+- Audience: Evocati (Standard Evo NDA)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison (Will be focusing on the 1st Island in today's build)
+- New Story Missions: Recco Battaglia
+Warning: There are going to be lots of content items in partial states of finished. Currently all balance and features are WIP
+Known Issues
+- PU - Ship Battles - Missions / Locations - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- Front End - Main Menu - Social / Add Friends - UI - Clicking add friends whilst in the main menu will make your UI uninteractable
+- PU - Ship Battles V2 - EscortShips - Mission Content / AI - Escorted ship does not Quantum Travel away or Go to the Hangar after neutralizing the AI ships in the mission location
+- PU - Missions - Bounty Hunter / Mission Content - When killing the Neutralize target the mission does not progress
+- PU - Stanton - Siege of Orison V2 - Instancing / Mission / Locations - Server Error Causes Platforms to Despawn at SoO
+With this issue, if a server error does happen, you will need to leave and create a new instance, potentially reforming the party with a new leader.
+- PU - Stanton - SOOV2 - Transport / Mission Content - Shuttle from Solanki to Hartmoore has no collision
+- PU - Stanton - Siege of Orison - Locations - Rooftop balcony cannot be accessed by players naturally on Solanki Platform
+Because of these issues, we will only be focusing on the first island of Siege of Orison tonight
+- Multi-System - PU - Locations / Inventory - There's a chance that their primary residence does not contain their items'
+Workaround: Recopy account if you need your default local items
+## Features & Gameplay
+Gameplay
+Instanced Siege of Orison
+Siege of Orison returns as a fully reworked, instanced co-operative FPS mission. This update introduces Mission Instancing to Star Citizen for the first time, a system that creates a private, closed environment shared only by you and your party.
+This new version of Siege of Orison removes ship combat entirely and redesigns the experience as a focused, three-island FPS mission set in the Inspiration Park cluster. Ninetails have locked down access to the islands, overriding local security systems and stationing their lieutenants and the commander throughout the platforms. Crusader Security has contracted InterSec to get control back. Your objective on each island is the same: clear through the Ninetails resistance, reset the Security Network Control Towers, defeat the island Lieutenant, and flip the IFFI to restore Crusader's airspace control then move to the next island.
+Each island is progressively more difficult, with the final island culminating in a boss fight against Mendo Ren inside the Admin Center barge. Level design across all three islands has been updated for better sightlines, improved combat flow, and navigation that suits the instanced, no-ship format. Tonight's test will focus highly on the 1st island.
+// Instancing & Siege of Orison
+- Closed Instance - Max 4 Players
+When you enter the instance elevator, it locks to you and your party. No other players can join without being invited. The maximum party size for this instance is four. If you try to enter as a group of six, the first four are admitted and the remaining two are notified they cannot enter.
+- Entering & Mission Acceptance
+An optional one-time Intro Contract is available anywhere in Stanton that directs first-time players to the instance entrance at the Crusader Showroom Rooftop. On any subsequent visit, you can enter directly. When you step into the instance, the Siege of Orison mission is automatically accepted for everyone in the party with no manual pickup required.
+- Entering Solo
+You can enter the instance alone and play solo, or share the auto-accepted mission with other players to allow them to join your instance after you are inside.
+- Entrance Location
+Take the elevator to the Crusader Showroom Rooftop in Orison. From there, board the shuttle to the Instance Transit Platform and enter the instance via the elevator on the platform. The transit platform serves as a staging area between islands throughout the mission.
+New Mission Giver: Recco Battaglia
+In tonight's build, we will have the new narrative story missions from Recco Battaglia available. You'll get to play all three chapters for which the first one is available from by default, though Chapters 2 and 3 are available once you've gained enough reputation by completing other repeatable contracts Battaglia is offering. To ensure you get to experience all of these missions in a reasonable timeframe, we've lowered the reputation requirements for the later missions. You will be able to see and accept these missions in the mobiGlas while in Nyx.
+## Bugfixes & Technical
+- Fixed 12 Client Crashes
+- Fixed 7 Server Crashes
+- Fixed 2 Hybrid-Service Crashes
+- Fixed multiple issues causing server hangs
+- Potential Fix: PU - Inventory - Inventory becomes unavailable and contents of backpack/station/loot inventory is empty (STARC-211218)
+- Potential Fix: PU - Stanton - Siege of Orison V2 - Locations / Instancing - Instance will despawn after a short period of time (STARC-212318)
+- Piotential Fix: PU - Stanton - Siege of Orison V2 - Instancing / Mission / Locations - Server Error Causes Platforms to Despawn at SoO
+- Potential Fix: Multi-Item - PU - Crafting / Mineables - Crafting Uses Entire Stack of Gemstones stored in the player's inventory instead of what the recipe requires (STARC-200943)
+- Potential Fix: PU - Actor - Movement / Camera - Head wobble with "Camera Spring Movement" enabled is severe (STARC-212807)
+- Potential Fix: Hull A floating Blade card (STARC-204857)
+- Potential Fix: RSI Pembroke Backpack Set - PU - Actor - Armor - Art - Pembroke Backpacks have incorrect color textures compared to their store references (STARC-117269)
+- Potential Fix: Multi-Location - PU - Stanton - Vehicles / Instanced Hangar / Locations - Retrieving a vehicle while another occupies the hangar platform will cause the retrieved vehicle to instantly spawn & clip through the vehicle occupying the platform (STARC-195834)
+- Potential Fix:  AC - G suit loadout is not on all modes for flight combat (STARC-204867)
+- Potential Fix: PU - Hangar / Vehicles - Retrieving vehicles spawn at the middle of the solar system (STARC-206713)
+- Potential Fix: MULTIVEHICLE - PU - Vehicles - Multiple vehicles spawn incorrect hangar size (STARC-186642)
+- Potential Fix: PU - Creatures - Juvenile Valakkar - Juvenile Emerges then floats in the air
+- Potential Fix: Aegis Hammerhead - PU - Vehicles / Elevators / Quantum Travel - Cockpit elevator that was lowered before quantum travel will move up after quantum travel
+- Potential Fix: Multivehicle - PU - Vehicles - The interaction points for the gadget / handgun weapon slots are offset on the Railen / Tyilui
+- Potential Fix: Gatac Tyilui - PU - Vehicles / Lighting - Shadows present on the steps leading to the cargo hold will draw in and cull at a very noticeable distance from the player
+- Potential Fix: Multivehicle - PU - Vehicles / Medical - The medical bed of a bricked vehicle is still functional
+- Potential Fix: Crusader Hercules Starlifter ( All Variants ) - PU - Vehicles - The back ramp and ramp panels of the ship are not present (STARC-212904)
+- Potential Fix: Esperia Glaive ALL Variants - PU - Vehicles / UI - Esperia Glaive uses Vanduul MFD style instead of Esperia style
+- Potential Fix: PU - UI - Refuelling - Pod integrity bar does not update
+- Potential Fix: PU - Creatures - UI / Narrative - Several creatures display a placeholder string name when ping-scanned from a vehicle
+- Potential Fix: Drake Cutlass ( Some Variants ) - PU - Vehicles - Engineering Screen / Graphics / Vehicle Feature – Engineering Screen are blocked by grey colored panel

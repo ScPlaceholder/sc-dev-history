@@ -1,0 +1,39 @@
+## Bug Fixes
+- Heavy armors should no longer block much of the mobiglas interface
+- Character Customization should now save changes in the PU when editing appearance
+- Fixed an issue causing elevators in ships to disapear and cause players to become invisible
+- Depositing gems in the Klescher Rehabilitation Facility Mining Hopper should no longer give a "transaction error"
+- Players should no longer damage ships while exiting them
+- Fixed an issue causing UI HUD elements to randomly become distorted
+- Fixed an issue causing UGF missions to not spawn all the intended FPS AI
+- Fixed an issue causing Bounty hunter missions to stall indefinitely if leaving the area before it updates on a slow server
+- Fixed and issue causing bounty target markers to disappear
+- Players should now be able to use 'Store' to put Gem Shards or harvestables into their Personal Inventory
+- MFDs should no longer be difficult to interact with due to overriding Inner Thought prompts
+- Items should no longer get in a bad state and highlight as grey instead of green and be unable to update the character loadout and go missing upon logout/login with affected grey highlighted items
+- Minable Rocks should no longer have a small hit box which caused the mining UI to have a hard time tracking the progress of the mining process
+- Players should no longer have the potential to fall through the surface of whatever they're lying on after being revived out of a downed state
+- Capacity UI on equipped armor should no longer appear to be over 100% despite there being not enough items to break capacity
+- Fixed an issue that was causing the main elevators in Grim HEX to duplicate and overlap
+- Fixed an issue causing group bounties to not complete
+- Logging out in a ship bed or crashing, logging in/crash recovery should no longer fail w/ Error 20018, or spawn the ship/player at Stanton star, or return to menu without an error
+- Game should no longer crash after looting an NPC crew member corpse in "Investigate Missing Crew"
+- A Ships Volatile Cargo should no longer suddenly become Critically Unstable
+- The Mining UI should no longer scan deposits every time the Mining Laser is Activated/Deactivated
+- The Mining Consumable Timer should no longer break if Toggling Mining Mode whilst it is active
+- Quantum Traveling towards a party member should no longer cause the player to fly into the planet
+- Moving on hills, stairs, fences, low walls or props should no longer sometimes trip the player, or fling them into the air
+- Player 1 and 2 should no longer lose all control after player 1 attempts to loot player 2's and incapacitated body while player 2 opens inventory
+- Fixed an issue that only allowed players to split one item from a stack at a time
+- Elevator should no longer appear in the entrance to the tram station from the lobby in New Babbage
+- Players should no longer load back into ship beds inside invisible collision after logging out on planet surfaces
+- There should no longer be a high chance for commodity selling to fail at admin kiosks
+- Being knocked unconscious by another player in the escape route in prison should no longer trigger the attempted to escape crime
+- The Argo Raft deck elevator should no longer pop black LODs as it descends from the upper deck
+- Players should no longer encounter deadly wind force reaction when exiting Ship and/or Outpost while carrying a mission crate
+- Fixed an issue causing repair and refuel to not function at outposts
+- Fixed split arrows from not showing when splitting items in personal inventory
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 5 Server Crashes
+- Backend Service Crash Fix

@@ -1,0 +1,53 @@
+## Star Citizen Patch 3.5.0y
+Alpha Patch 3.5.0y has been released to PTU, and is now available to test!  Patch should now show: PTU-1479378.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- AI Pilot Behavior
+- General Gameplay
+Major Known Issues:
+- When exiting the options menu on the character customizer screen, the options will remain up disabling the players' control. W/A: Avoid using the options menu during character customization.
+- If the player exits the game with the mobiGlas still open they will return to the universe with a blurry screen. W/A: Close mobiGlas before exiting.
+- Delivery boxes can fall through the flooring of some ships.
+- Ships do not leave behind cargo when destroyed.
+- Ruto's hologram is missing.
+- Ruto's entry mission will sometimes fail to complete.
+- Some Area18 labs lack atmospheric pressure.
+- Ships can exceed their speed limits by turning slightly while accelerating.
+- Trying on clothing at Casaba can sometimes result in the loss of armor pieces.
+- Ship bed logout may be unreliable or inconsistent.
+- Stowed items can sometimes appear attached to the players' legs.
+- Switching to external camera from the pilot seat and back when reset the HUD and chat.
+## Feature Updates
+Universe
+- Various polish to NPCs and usables around Area18.
+- Lighting polish for Lorville, Area18, and UGFs.
+Missions
+- Added more variation to NPC service beacons.
+Ships and Vehicles
+- Adjusted the HUD element on several ships to avoid offset, overlap, or scaling issues.
+## Bug Fixes
+- The sky bus at Area18 should no longer occasionally hitch in its motion.
+- Missile lock and launch should no longer be unbound by default.
+- Darneely's dialogue and animation should no longer become mangled if the player exits and returns to the interaction area.
+- The no fly zone at Area18 should now properly take control of the ship and not fly the player into the ground.
+- "Restricted Area" warnings should no longer display in 3rd person.
+- Players should no longer occasionally become stuck in a powered off, unexploded ship upon taking critical damage.
+- Fixed weapons should no longer occasionally aim at the predicted location.
+- Players should no longer quantum travel to a point just outside of the radius where further travel destinations are visible.
+- Fixed missing weapons at various displays for Cubby Blast.
+- There should no longer be objects preventing interaction with store items at Cubby Blast.
+- Landing dust should no longer persist even with ship power and engines off.
+- Players should no longer be occasionally blocked by the no-fly zone when attempting to land or take-off from side hangars at Area18.
+- Corrected the "destroy stash" mission to reward the correct amount.
+- The "destroy stash" count should no longer fluctuate occasionally.
+- The Freelancers should no longer have cockpit geometry blinking in and out when entering or exiting hangars.
+- Fix for missing ambient audio at Area18 and some UGFs.
+- The snoopy cap should no longer remain attached to the player after removing the helmet.
+- The player should now be able to move on respawn after dying with chat activated.
+Technical
+- Fixed 9 client crashes.
+- Fixed 7 server crashes.

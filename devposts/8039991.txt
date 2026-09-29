@@ -1,0 +1,65 @@
+## Star Citizen Alpha Patch 4.2 PTU
+Alpha Patch 4.2 has been released to All Backers!  Patch should now show: VERSION 4.2.0-PTU.9837837.
+- Audience: All backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Storm Breaker All Phases
+- Apex Valakkar
+- Dynamic Rain
+- Radiation
+- VOLT Laser "Prism" Shotgun
+- ARGO ATLS IKTI, IKTI GEO, IKTI Rad (Version Found at Storm Breaker)
+- New Wikelo Ship Additions
+- New Hairstyles
+- Sterling Exploration Suit
+Not Ready for Testing and Feedback
+- Lazarus Facility Freight Elevators
+In tonight's build you may notice new freight elevators around the Lazarus Facility and transport hub. These are currently not enabled in tonight's build but will be enabled in an upcoming PTU build for 1 way freight transport out to the transport hub.
+## Known Issues
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- PU - Ship Battles - Ace Pilot/Assault - Proximity Tracker - Action Area - Logic fails to continue when over 20km away from the tracked object or Action Area Origin
+## Features & Gameplay
+Gameplay
+Equipment Swapping Hierarchy
+Equipment swapping now has some hierarchy when swapping out gear using the new UI. This iteration will transfer items equipped to the outside of the armor to the newly swapped out one but not items stored inside. This will also only work using the latest looting UI and not the old interface so using kiosks currently behave like before.
+When the player is attempting to swap equipment, e.g. looting an enemies armor, then: Every item attached to the old armor or undersuit such as weapons, grenades, medpens, and backpacks should attempt to transfer to the relevant slots on the new armor or undersuit. If there is not enough space on the new armor for the items, then they should be placed within the backpack inventory. If there is not enough space within the backpack, then they will be dropped on the floor.
+Storm Breaker and ASD Location Polish
+Added Lighting changes for cool down phase in the data center credential printer. FPS AI Numbers adjustments around Storm Breaker locations to slightly reduce their numbers in key areas. ASD Buildings Art and LOD Pass.
+Apex Valakkar Polish
+Increased Damage and Radius of Valakkar Explosion. Further Valakkar Performance Optimizations
+Ships and Vehicles
+ATLS IKTI Rad
+ASD Location IKTI has been given it's own variant name of Argo ATLS IKTI Rad. This version does not come with the jump pack and is currently only found at the ASD facility.
+Esperia Prowler Polish
+Wing and Joint Health Increases. Lesser Torque Imbalance Multiplier. Small increase to Quantum fuel amount.
+Core Tech
+- Further Cleanup and Server Performance Improvements
+- Further Rain Audio Mixing Polish
+- TAA (Temporal Anti-Aliasing) Enabled for Comms Notifications
+## Bug Fixes
+- Fixed an issue which caused ground turbulence to disappear in the PU. (Players will now notice flight turbulence in storms and when near ground surfaces)
+- Potential Fix: Multivehicle - PU - Vehicles / Physics - Vehicles with revised ground vehicle physics suffer excessive vibration at low speeds or when stopped (STARC-82528)
+- Potential Fix: Esperia Blade - PU - Vehicles / Vehicle Balance - Esperia Blade pitch and yaw values are swapped (STARC-110350)
+- Potential Fix: PU - Storm Breaker / Locations - Apex Valakkar doesn't Spawn after the calling tower countdown is finished and remains Underground (STARC-170601)
+- Potential Fix: PU - Pyro - Storm Breaker - AI / Valakkar / Network - Crash Recovery - Apex Valakkar remains underground after crash recovery
+- Potential Fix: ARGO_ATLS - PU - Vehicles / Mounts / UI / ASOP / Fleet Manager - ARGO ATLS IKTI Geo and ARGO ATLS IKTI have placeholder text
+- Potential Fix: PU - Game Code - Destroyed vehicle zones persist in an invisible state, causing player Actors to transition into them and fall through terrain
+- Potential Fix: PU - Pyro - Storm Breaker - Locations - New safe codes do not open safes after streaming out / in if the safe has previously been opened
+- Potential Fix: PU - GFX - Dynamic Weather - Storm Breaker - Puddles at the Tithonus research labs move with the player
+- Potential Fix: PU - Missions- Storm Breaker - There are 2 batteries in each maintenance shed both Tithonus and Phoenix Lazarus Complexes
+- Potential Fix: ARGO ATLS All Variants - PU - Mounts / Vehicles / ASOP / EXPLOIT / Freight Elevator - Retrieving ATLS via Freight Elevator allows the player to retrieve a duplicate ATLS multiple times
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector - Locations / Missions - Irradiated Juvenile Valakkar Fangs do not count towards the Mission Objective when delivered via Freight Elevator
+- Potential Fix: Esperia Prowler - PU - Ships / Art / VisArea - VisArea issues present near the Prowler copilot seat
+- Potential Fix: PU - Pyro - Storm Breaker - Apex submerges and despawns after recovering from a Server Crash
+- Potential Fix: PU - Storm Breaker - Locations / AI - Irradiated Juvenile Valakkars are floating
+- Potential Fix: PU - Pyro - Storm Breaker - Props - Egg has no visible degradation when its health is at 0%
+- Fixed 315p XC loadout kit to have power plant instead of shield generator

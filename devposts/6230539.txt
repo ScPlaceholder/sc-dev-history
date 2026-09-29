@@ -1,0 +1,7 @@
+All reported client crashes will be gathered in a global database. They accumulate based on where the crash was coming from (callstack, aka precisely which code caused the crash).
+From there they get distributed to the respective teams, e.g. a crash in physics goes to the physics team, crash in graphics goes to graphics etc.
+And from there us developers see them and and can decide who will pick it up and investigate.
+Some crashes are very obvious and can be fixed very quickly. Others like extremely rare race conditions or even GPU crashes can take a tremendous amount of time to find and fix.
+It's a tradeoff between bugfixing and making actual progress on our current tasks.
+For example i don't bother investigating crashes which just happened once. The more they happen though the more important they become and will get raised by production to be fixed asap.
+Silvan

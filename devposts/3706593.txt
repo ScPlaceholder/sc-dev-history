@@ -1,0 +1,37 @@
+## Star Citizen Patch 3.12.0n
+Alpha Patch 3.12.0n has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.12.0-PTU.6732561.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Volunteer Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-12-0n
+Testing Focus
+- General Gameplay
+Note: Per Server Player Limit for this build has been set to 40 players
+Known Issues
+- Player is unable to activate mining consumables (Workaround: Toggling scan mode allows consumables to be used)
+- When logging into some commodity and refinery kiosks, they can display incorrect Commodity Information and Prevent Sales
+- Ship canopy will open and close randomly without input
+- Player eyes are extra reflective in video
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool
+## Feature Updates
+Gameplay
+- Made interim tuning changes to EVA movement that will allow you to turn more easily and also arrest any spin caused by collision more quickly
+- Increased the drop shadow amount on the ship mining UI
+## Bug Fixes
+- Corrected the Constellation increase in hull health that came with 3.12.0 to the correct intended amounts
+- Fixed an issue that could cause players to get an invalid spawn location (20009 error) when joining a server without selecting an initial spawn location or when their last spawn location isn't found or they haven't selected an initial spawn point
+- Players should no longer be able to equip an extra weapon to the left wing on the Aegis Gladius in the VMA
+- Fixed an issue causing the 890j missions to not pay as much as intended
+- Fixed another issue causing blank contract available messages to appear on screen
+- There should no longer be placeholder text for the paints for the Talon and Talon Shrike in the VMA
+- Aegis Hammerhead 2949 BIS edition should now be available in game
+- Aegis Reclaimer 2949 BIS edition should now be available in game
+## Technical
+- Fixed 4 Client crashes
+- Fixed 2 Server crashes
+- Backend service optimizations

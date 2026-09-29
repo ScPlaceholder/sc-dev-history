@@ -1,0 +1,50 @@
+## Star Citizen Alpha Patch 3.23.1
+Alpha Patch 3.23.1 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.23.1-PTU.9174453.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Open PTU
+Server Info: PTU Channel - US Servers Only
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+3.23.1 is mostly Fleet Week related but includes some other fixes and updates that might not have made it in time for 3.23.0 LIVE.
+Expo halls elevator issues have been resolved and halls will run with an accelerated timeframe shortly after this build is released.
+- Stability/Performance/Bug Fixing
+- Fleet Week Events and Rentals :slightly_smiling_face:
+## Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs. This is not the intended final outcome for missions and recovery and further changes are coming in a later release.
+We are expecting ships purchased in game with aUEC right before 3.23.0 went live to come back with 3.23.1 when it goes LIVE.
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - UGF - Locations - Bunker elevator does not return up when called
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals for ground vehicles at Lorville gates get stuck on infinite load, accessing list of ships
+- PU - Stanton - UI - HUD / AR Markers - Misaligned HUD Markers with Ultrawide or TSR graphics upscaling enabled
+- PU - Locations - Transit - Elevators - Internal Transit Elevator shows up when called but doors remain closed, no carriage
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Locations / Vehicles / VMS - Can't repair/refuel/restock at Pyro Gateway Jump Point Station
+- PU - Locations - Distribution Centers - Security Checkpoint elevator vis area and missing collision
+- PU - Stanton - NPE - Missions - Objectives can be softlocked by player leaving bed before their objective record has updated
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - RSI Scorpius Antares - Vehicles/EMP - unable to activate EMP
+- Reclaimer Claw Cannot Deploy: Power Required Error Message (Workaround: Press the power button a second time)
+- AC - Squadron Battle - Friendlies showing up as enemies
+- AC - Grav Race - All Maps - Low gravity can launch players far above the track when hitting bumps or hills
+## Features & Gameplay
+- Medical Bed Respawn Update
+With the release of 3.23.1, we wanted to provide players with a less brutal experience when getting back into action. To help with this, we are making all Medical Bed Tiers be capable of being set as a regen location.
+The range at which you will be able to respawn in them will depend on their size class.
+- T3 medical beds will allow respawning up to 20km away
+- T2 medical beds (which previously allowed respawning up to 20km) will now allow respawning up to 50km away
+These current values for respawn distance will be monitored for balance and will be adjusted if needed. Healing capabilities for all beds will remain the same and players respawning will do so without their equipment they dropped on death and will have to be prepared with extra stored or survive to go back and reloot their corpse.
+## Bug Fixes
+Volunteer Bugfix Survey: https://forms.gle/TBRk61fQq2zWit3y6
+- Fixed - MULTIVEHICLE - PU - Vehicles / Components / Locations - It is possible when vehicles are spawned from fleet manager that radar components and elevator panels can detach from the ship and float permanently in a hangar, causing issues with collisions (STARC-101070)
+- Fixed - Drake Cutlass Black - Vehicles - Drake Cutlass Black is unable to liftoff from landing pads
+- Fixed - PU - Law / Infractions / Notifications - Players cannot press charges against another player if they commit infractions against them
+- Fixed - PU - Stanton - Locations / Inventory - Users are able to place Hangar flare items in public areas where they cannot be picked back up
+- Fixed - MISC Prospector - PU/AC - Vehicles/Balance - Misc Prospector has invulnerable spot for its nose leading to no damage taken (STARC-109000)
+## Technical
+- Fixed 1 Client Crash
+- Fixed 5 Server Crashes

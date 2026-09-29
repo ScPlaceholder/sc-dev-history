@@ -1,0 +1,58 @@
+## Star Citizen Patch 3.18.0-PTU.8381034
+Alpha Patch VERSION 3.18.0-PTU.8381034 has been released to the PTU, and is now available to test!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Server Region: US/EU/AUS/ASIA
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+Please avoid hitting the Escape key while mousing over and using the shopping kiosk search function in this build as this will cause a 100% client crash
+- Shopping / UI - Shopping Kiosks - Hitting "Esc" key while cursor is active in search bar crashes client
+- UI - Quantum Travel - Markers Will Randomly Disappear After Quantum Travel With No Route Set
+- Player Character / Vendors - Players Cannot Open Inventory In Vicinity to Food Vendors
+- Bed Log Out - Avenger Titan - The Player Character Is Spawned Into The Wall Of The Ship On Login
+- Multivehicle - Stanton - Vehicles / Animation - No animation for entering pilot seat, player will snap into the seat
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Wallace Klim is missing from the drug lab in Grim Hex
+- Looted Ammo Clips Drop Off Player
+- Multivehicle - Audio - Missing Audio/SFX with QT travel
+- Scanning not showing advanced statistics and details
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Cargo - Performance - Fully loaded C2 landed at Area 18 results in Slow Framerates or Crash
+- Vehicles/IFCS - When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Cargo - Performance - High capacity cargo vessels, when loaded, can cause a severe performance drop on both client and server
+- Actor Feature / Law - Respawn - If a player is placed into Klescher after being rescued with a crime stat, the player is respawned in the facility still incapacitated
+- Breach & Steal - Design/Missions/Locations - The target Reclaimer "October Rising" will disappear when you get very close to it, makin the mission impossible.
+- Ship / Commodity Trading / Cargo Inventory - Selling some of the cargo while the vehicle is stored cause the cargo to show at max inventory capacity
+- Selling - Commodity Kiosk / Cargo - Large amounts of cargo sold at once will cause the transaction to fail the cargo will be taken and no money will be granted
+- Law & Criminality - Commodities / Cargo - Stolen Cargo does not behave as such and can be sold as legal cargo if the ship with the cargo is stored
+- Ships - Cockpit - Actor animations - Occasionally unable to exit ship seat
+- Locations - Transit - Elevators - Players can fall through Elevators
+- Rest Stops (R&R) / Rundown Station (R&R) - Design / Transit / Location - The player is unable to call elevator from hangar interiors
+- Multiple Locations - ASOP Terminal / Ships - When storing a ship, the ASOP terminal will set the ship status to "Claim" instead of "Retrieve."
+## Bug Fixes
+- Fixed - Missions - Mercenary - Boarding Action in Progress - 890 Boarding mission allows player to pilot the 890
+- Fixed - AC Menus / Ship Components - The UI on the ship customization screen does not update with it's currently equipped component
+- Fixed - Controls / UI - Borderless Mode break mouse icon/bound after returning to the Main Menu
+## Technical
+- Fixed 3 Server Crashes

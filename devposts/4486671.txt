@@ -1,0 +1,80 @@
+## Star Citizen Patch 3.15.0o
+Alpha Patch 3.15.0o has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.0-PTU.7843238.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Audience: Wave 2
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Server Crash Ship Recovery
+- Healing and Actor Status
+- Hospitals
+- Starlifter Hercules A2
+- Origin 400i
+- Bombs
+- Infiltrate and Defend Missions
+- Loot Generation
+- Personal inventory
+- Orison V2
+- Arena Commander Revamp
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu
+Players will need to exit the game and reload after a server crash to fix this error. This is part of the bug where players used to see a Bad Token after a crash which blocked them from re-entering but with the latest changes, that error is no longer displayed.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Medical beacon does not complete mission/payment when player is brought back from incapacitation
+- Items from personal inventory are inaccessible from local inventory after dying and respawning in the same city
+- The QT UI is not central, causing a confusing misalignment / offset when  attempting to calibrate the Quantum Travel jump as the main / central /  weapon reticle is being used
+- New Babbage Train may stop and open the doors at a void where players can run out and fall through geometry
+- The Player can have previously equipped items disappear altogether when they exit and load back in as the opposite gender
+- All Actor Status widgets and weapon ammo count UI will be missing after an Actor 'Grabs' / 'Equips' a Helmet crate or 'Equips' a Helmet directly from corpse
+- Selecting the carry prompt on weapons inside inventory equips the weapon instead
+- When requipping items from a loot box in zero-g, equipping the torso and arms will cause large amounts of inventory camera shaking
+- The Player is unable to Select Ground Vehicles as a Sell Location on Trade Terminals/Kiosks
+- The Player is unable to Select a Stored Ship in the Refinery Terminal
+- Weapon projectiles trajectory will not behave correctly when shooting from one zone inside a ship to another outside
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Destroying mission-spawned reinforcement type ships does not always trigger the ongoing 'Call to Arms' mission rewards
+- Parts of Area18 cityscape can be seen clipping into the surface of the Spaceport highway
+- Missiles can hit the players ship when they are fired whilst the ship is moving forward
+- AC Players can spawn facing the wrong way at the start of the match or after dying
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round
+- Quantum Drive Does Not Engage Consistently
+- Demon Fang Combat Knife asset is missing from the game
+## Feature Updates
+Gameplay
+- Inventory Polish Pass
+Added the ability to unselect a quick filter by clicking it again. Update category filter state when changing the custom filters so they match. Added loot option when interacting with downed player backpacks. Added new contextual option to Equip All from stack to available item ports.
+- Healing, Downed State, and Medical Polish Pass
+New Wear Damage threshold, which once reached, received wear damage should trigger a % chance to trigger the next injury severity. Chance to trigger next injury severity will increase as the wear damage approaches the 100% threshold with a cooldown on how frequently this can trigger. Added toggle control widget on the curelife medical tool should now have hover selected, click feedback, and added icon click animation. Added new healing beacon HUD displays for Help is on the way (when the mission is accepted) and Rescue aborted - awaiting response to new beacon (when the mission was abandoned). This will display updates to Revival service beacon acceptance status & auto-trigger a subsequent beacon if the first is abandoned. Players will now be considered as fully killed if they disconnect from a server while in a downed state.
+- Broken Moon AC Polish
+Removed volumetric clouds from Broken Moon to help increase performance. Redout effect when reaching the edge of the playable area will now start as minimal and increase in severity the longer the player is out of bounds.
+- Made Initial Bounty Hunter missions shareable
+## Major Bug Fixes
+- Fixed a major issue causing players to get 20018 errors or infinite loading after logging out in a ship bed or crashing
+- Players ships should no longer be thrown into an 'unknown' state if they leave a server manually or 30k while they have their ship out on a landing pad
+- Origin 400i fuel intakes should no longer be missing
+- Cutlass Black door ramp should now function correctly
+- New Babbage should no longer have missing dome roofs
+- Fixed an issue causing ship UI to appear to be very bright and sometimes cause the mobiGlas and starmap to be unreadable
+- Fixed an issue causing inventory items to block inventory filter button interaction when partially overlapping the top
+- Items on the far right of the inventory should no longer have the information panel cut off outside the screen when right clicking on them
+- Fixed an issue that was causing Bartenders to never interact with players
+- Fixed an issue causing the weapon Capacitor / ammunition count UI to sometimes disappear after cycling on and off 3rd person camera in ships
+- Ships claimed via insurance should now be correctly restored to the VMA for loadout editing without having to retrieve and store the ship again
+- Fixed an issue causing picked up items to be invisible when 2 players try to loot the same item from a corpse at the same time
+- Fixed an issue causing AI to not react to players and get stuck in a nonreactive state in UGF missions
+- Fixed an issue that allowed players to get trapped inside spawn closets
+- Delivery boxes can now be placed in delivery lockers using the place function on the box
+- Mining Deposits and Harvestables should no longer be able to be obstructed by Rocks and other Geometry
+- Backpack space should now be depleted correctly when minerals are sold at the mining kiosks
+- Walking frames in hospitals should no longer be missing inner through options to allow players to push them around
+- Fixed an issue that allowed players to buy commodities to ships that were not at their current location
+## Technical
+- Fixed 6 Client crashes
+- Fixed 8 Server crashes

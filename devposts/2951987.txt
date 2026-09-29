@@ -1,0 +1,91 @@
+## Star Citizen Patch 3.9.0
+Alpha Patch 3.9.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.9.0-PTU.5047075.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Note: We are investigating issues with desync, where one client sees something entirely different from another. PM videos with the above settings active to Baior-CIG showing any encountered desync.
+Testing Focus
+- Esperia Prowler
+- Contact and Party System Update
+- Caterpillar Prison Ship Mission
+- New Babbage and microTech's Moons
+- Personal Interaction System
+- Mining: Volatile cargo and mining consumables
+- Prison Systems
+- Actor Status System
+Known Issues
+- Ships spawned at Area18 immediately explode. W/A: Avoid Area18.
+- All ships are loadout locked and can't be customized. W/A: Ships can be customized in the hangar and persist into the universe.
+- Missiles and Torpedoes launched beyond 1000 meters may not reach their target.
+- Players can get stuck in a loading screen upon leaving prison or entering a second time.
+- Prison suit loadouts are saved after the player exits prison.
+- Prison suit loadouts can be saved if a user exits the PU and enters the hangar.
+- The KC Trending shop keeper stands idly and doesn't not interact with the player.
+- Karoby energy bars are missing from all locations.
+- Ships outside of New Deal lack interaction prompts.
+- Ground vehicles can not be spawned from ASOP terminals.
+- Changes to the character model do not always persist into the PU.
+- An extra, static train may appear at Area18, Lorville, or New Babbage.
+- Unmanned turrets do not fire at the player if they have a crimestat.
+- All Platinum bay outposts are missing ASOP terminals.
+- Its possible to get the contact notification window stuck behind the main menu.
+- Being in a large party causes markers to not display correctly while inside a ship.
+## New Features
+Characters
+- Added microTech clothing collection.
+Locations
+- Added New Babbage Landing Zone - Interiors
+Enclosed to protect the inhabitants against the freezing elements, New Babbage is a major social and economic trading hub on microTech. Although it features microTech’s flagship store, the landing zone is a haven for smaller tech companies.
+- Added Klescher automated prison
+Players who are directly killed by or die within a short distance of security forces or bounty hunters will now go to prison.  In prison, all player inventory is inaccessible, and instead players are given a stock prison suit and a multi-tool with a mining attachment.  Players can serve their time normally or contribute to society by mining crystals within the attached mining sections. Crystals can be exchanged for "merits" to reduce your sentence using kiosks located near the mines.  Once your sentence is complete, look for the "processing" section of the prison and interact with the kiosk.  You will wake up at your last port.
+- Added microTech Moons: Calliope, Clio, and Euterpe
+- Added caves and cave missions to microTech and its moons.
+- Added food to shops and stands throughout the verse.
+Gameplay
+- New Criminal Mission: Hijacked Caterpillar Prisoner Transport
+- Added mining laser sub-items
+Sub-items are consumable components which attach to advanced mining laser heads and provide a temporary modifier for increased effectiveness. Sub-items can be activated within the cockpit using the interaction system while actively mining. With them you can, for a time, decide to use one to decrease the instability or lower resistance, increase the optimal window, and so on. While most have a duration, some of them have instant effect on the process so they can be used in case of emergencies or as an instant boost.
+- Introduced a volatile mineable ore
+We have introduced Quantainium ore which is available throughout the universe. Quantainium is highly unstable and once mined the player will need to use care in how they transport it and how long they take to transport it. Any impact will cause it to degrade and the ore will also degrade over time.  Once it degrades to a certain extent it will be in danger of exploding. When it becomes dangerous the player will receive a visual/audio warning and will have the option to eject all cargo. Failing to eject risks ship damage and destruction. Given the risk, successful delivery of quantainium will be a lucrative endeavor.
+- Added two new surface harvestables
+- Added in-hand weapon attachment swapping
+Players can now customize weapon attachments by interacting with the weapons themselves when held. Hold down F and click on "customize" on a held weapon that can use custom attachments. This will allow you to change weapon components such as sights, barrel attachments, and under barrel attachments.
+- Added bindings for single axis first person zoom and first person zoom in/out toggle button
+- Players can now exit ezHAB beds using basic (WASD) movement keys
+- Added quick buy option with price to food items in shops
+- New actor status system
+With the variety of extreme environments throughout the verse, players will have to factor in extreme hot and cold temperatures when planning their adventures. If you want to stay safe in these conditions, equip yourself with the new Caldera Pembroke and Novikov suits. If you're not equipped for the temperatures, you'll begin to suffer the negative effects of hyperthermia and hypothermia, eventually resulting in death. As with preparing your equipment for different temperatures, you have to prepare your body as well. We have also added "hunger" and thirst", which will be increasing constantly, so you'll need to stay topped up if you don't want to suffer the effects of dehydration or starvation.  In addition, keeping yourself hydrated and well fed may have positive benefits to motor functions. You can use the commodities inventory to stow away store-able foods and drinks for the journey ahead.  Hunger and thirst are persistent effects that carry over from session to session. A more detailed UI has been added to the player visor to track these various states and is visible when activating the personal inner-thought wheel (F+right click)
+Ships and Vehicles
+- Added Esperia Prowler
+Named after the UEE military designation, the Prowler is a modernized version of the infamous Tevarin boarding craft from the First Tevarin War. With the recent discovery of the lost Tevarin planet in Kabal System, Esperia’s engineers were given unmitigated access to examine the preserved ships found in several of the caches, before meticulously recreating the design choices.
+The Prowler’s effectiveness as a rapid personnel deployment vehicle was mainly due to its silence. The boarding was constructed using a variety of techniques to minimize its signatures and get close to unsuspecting vessels before quickly deploying their boarders via EVA.
+Weapons and Items
+- Added new ship weapon: Esperia Lightstrike Cannons
+An Esperia recreation of Tevarin historic technology, these energy cannons come in sizes 1 to 3 and are designed for medium to long ranges.
+- Added new s hip weapon series: Esperia Deadbolt Cannons
+An Esperia recreation of Tevarin historic technology, the Deadbolt series are ballistic cannons ranging from size 4 to sized 6 and are designed for short range engagements during drops.
+Core Tech
+- Added new contact list and party system flow via unification with Spectrum friend's list
+The in-game friend's list now uses your Spectrum friends and has been entirely reworked.  The main menu now has a "Friends" tab and a "Notifications" tab.  Friends can be added directly by using the "+Add" key and all friends/contact notifications will appear in the notifications tab until dismissed (note: crash recovery will also appear here). When creating a party, a new tab will appear showing party members and leader.  The pre-3.9 in-game contacts list will be merged into your existing Spectrum friend's list once 3.9 goes live, but for now PTU spectrum is where the PTU friend's list can be tested.
+## Feature Updates
+Locations
+- Updated geological aspects of various planetary bodies with new visuals and assets
+- Default spawn location choices have been updated to only include major city locations (New Babbage, Area18, Lorville)
+- Added size 1 gimbals to all shops that carry gimbals
+- Sprint speed while your fists are raised has been increased to match unarmed sprint speed
+- Adjusted atmosphere density for ArcCorp and Hurston
+- Updated arrival radius distance for lagrange points - from 120km to 70km
+- Placed comm arrays around planets and moons and reduced their monitoring radius to cover just those sectors
+- Updated kiosk screens at Port Olisar, Lorville, Levski, Area18, and Grim HEX
+- Increased the brightness of the exterior lights around Levski.
+AI
+- Updated ship AI behavior to include greater speed ranges and improved avoidance
+Gameplay
+- Updated first person radial menu for personal inner-thought interaction system
+The updated Radial menu gives quick access to certain actions which are context specific, such as on foot or in a pilot seat.  These actions include emotes, weapon customizations, helmet removal, and many more.  Each action is also shown with its relevant keybind where applicable.  The menu will save your most used actions as favorites on the main wheel and can be accessed by opening the Personal Thought menu by holding F and right clicking (interact + mouse2).
+- Increased the payout of all criminal missions by 50%
+- Added infraction to immediately impound player ships that collide with ships with the right to be within a landing area
+- Shifted the threshold to obtain lvl 4 and 5 crime stats

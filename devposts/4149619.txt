@@ -1,0 +1,17 @@
+Just to update you all on this. You'll likely see any updates we make based on your feedback in the patch notes and I will make an effort to respond here with all the fixes once we go live, but I can confirm a few things have already been fixed/addressed.
+- Removed trespass zones from all underground facilities (UGFs) on all planets. This has been done before intended as we have not got our security system changes in yet, but I thought it better to remove now as the benefits still outweigh the drawbacks (though as always PTU may show up some unforeseen issues with necessitate rollback).
+- You no longer receive crimes for EMPing or interdicting the ship you are using to do said EMP or interdiction.
+- Destroying a party member's empty vehicle no longer results in a crime
+- We have updated the prison code entry interface and prevented it from resetting the code with incorrect attempts, which we hope will prevent the bug where it does not accept correct codes, but we were not once able to repro the issue even with code beginning with zero.
+- We have made a reduction to the time it takes to remove individual crimes when hacking.
+- The crime for Assaulting a Security Officer should no longer be given outside of a monitored zone
+- Knock-outs no longer kill
+- We fixed an issue where players were receiving a crime for shooting a vehicle as it was destroyed.
+- Fixed an issue when falling into the lower sections of the prison would count as an escape attempt.
+- Fixed a location in the terrain where players could enter the prison from the surface.
+- We have made friendly-fire by splash damage fairer. Should a calculation based on damage and distance (measured from the source of the explosion to the maxRadius) report that the majority of damage was committed on lawfully valid targets, then any damage caused to allies will not incur an infraction or count as friendly-fire (thereby triggering hostility). Should allies be more damaged than enemies in the attack, then the attacker will receive infractions and hostility as usual. Currently any infractions other than damage (such as destroying a ship, killing an actor, etc) will still trigger an infraction no matter whether the splash damage was lawful. However, we found that due to the extremely small radii of even the largest torpedoes, the chance of hitting other ships accidentally is minimal. The main thing that this implementation addresses is “damage” from EMP; allowing players to get away with EMPing allies as long as they do more good than bad.
+- The multiTool dispensed from the Commissary units now shows the Orebit attachment in the PMA after it is stowed
+- Fixed bug with prison mission being failed should any player die or leave the prison
+- Change Armistice Violation so that rather than being triggered by a single hit, the friendly-fire threshold must first be exceeded
+- Improved the hostility system for docked vehicles. Docked vehicle now inherit the parent ship's hostility and become untargetable (as this was causing confusion where players thought they had the parent targeted, but actually had the child). There is also a buffer time which allows for lawful damage and destruction of a non-hostile child ship for a brief period after undocking from a hostile ship.
+I can't comment right now on all the other issues, but many have been reproed internally and assigned to the relevant teams with the hope that they get prioritised for fixing.

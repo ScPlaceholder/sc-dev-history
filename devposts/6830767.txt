@@ -1,0 +1,7 @@
+Hi,
+Does this still occur if you just stand still after spawning, rather than moving around the world?
+Can you check and report your VRAM usage, and whether this increases over time? Also what resolution and upscaling mode are you running?
+I suspect there is a memory leak, and once the memory usage is close to the max of your GPU the performance will really suffer. But if so, the leak could either be based on us loading new content, or simply leaking X amount per frame even when stationary.
+You do have a beefy GPU though, so I’d have thought it’d take a while for any leak to hurt performance as badly as you report.
+Ali Brown
+Senior Director of Graphics

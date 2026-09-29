@@ -1,0 +1,45 @@
+## Star Citizen Patch 3.3.0w
+Alpha Patch 3.3.0w has been released to the PTU, and is now available to test!  Patch should now show: PTU-977866.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- Teach's Ship Shop
+- VOIP and FOIP
+- Missions: FPS combat mission and scramble races
+- New Ships and Vehicles: Valkyrie, Phoenix, Hammerhead, Mustangs, and Cyclones
+- Manned and remote turrets
+- Changes to ship cannons
+Major Known Issues:
+- Large ships fail to spawn on the 00 pad of Port Olisar.
+- Players often drop boxes when entering ships from EVA.
+- Starfarer derelicts currently lack lighting.
+- Mission givers may not be functioning correctly.
+- Inviting someone to party via the mG causes a client crash. W/A: Invite via interaction mode.
+## Feature Updates
+Universe
+- Adjusted composition and elemental properties for mineable rocks.
+Ships and Vehicles
+- Added scanner and ping items to the Valkyrie.
+- Added gyrostabilization to remote turrets.
+- Added UI for EMP charging and status to the Cyclone AA.
+## Bug Fixes
+- Players should no longer get stuck at shopping kiosks.
+- Scramble race UI should no longer have overlapping fields.
+- Fixed an issue where ballistic ammo count was shown instead of countermeasures.
+- Sprinting from prone should no longer cause the player to switch back and forth between prone and sprinting.
+- Added marker distance to delivery missions.
+- Fixed elevator attachment in the 600i.
+- Fixed replaceme balls on the underside of the Eclipse.
+- Rented ships should now properly show up in the ship selection list.
+- The near winning dialogue for scramble races should now correctly play with one player is near winning.
+- Escort missions should now properly fail if the player fails to reach the rendevioux point.
+- Hit markers should now appear properly on other players for FPS combat.
+- Fixed delivery location issues on some outposts.
+- MFDs should no longer reboot when switch in and out of 3rd person.
+- Fixed an issue where QT visual effects were playing backwards for the Starfarer.
+Technical
+- Fixed 3 server crashes.
+- Fixed 4 client crashes.

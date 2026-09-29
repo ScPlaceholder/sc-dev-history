@@ -1,0 +1,8 @@
+The google drive link of the rar file isn't the best solution. What's been happening with the data.p4k errors has been due to a mix of network lag, ISP throttling, networks going down mid download, and a few other things. The data.p4k file is a single large file made up of many small to large files. The smaller files within it download at the beginning, with the largest in the last 10% of the download.  If something happens during the download to any file within the larger data.p4k, it may have issues, need to be verified to fix, and so on.
+The issues are being actively investigated. Add reports to this Issue Council as you have them folks! https://robertsspaceindustries.com/community/issue-council/rsi-launcher/RSIL-45804-Failed_to_verify_file__Data_p4k_file
+For consistent downloads, and to help against network throttling, I highly recommend trying the Concurrent Downloads and Download Speed settings!
+- Open and login to your Launcher.
+- Click Settings.
+- To reduce the number of connections, click the drop -down for Concurrent downloads. Choose a lower amount, like 15 or 10 to start.  (see images below)
+- To reduce the amount of data transferred per connection, click the drop-down for Download speed limit and choose a lower amount. We recommend midrange or lower MB/s. The lowest KB/s may not show significant improvement. (see images below)
+- Setting the options saves changes.
