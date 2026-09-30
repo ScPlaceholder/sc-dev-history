@@ -1,0 +1,51 @@
+Squadron 42 Monthly Report
+July 2024
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 08:07:2024
+REF: CIG UK, CIG DE, CIG LA, CIG TX,
+FAO Squadron 42 Recruits.
+Welcome to July’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including AI group combat, EVA updates, and additional narrative detail.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Features)
+Last month, the AI Features team worked on a combination of fixes and new functionality, including an issue requiring a usable to have an interactable component. A problem was also solved with stance not being updated, causing issues with AI exiting cover.
+The team solved problems with tactical-query system conditions silently failing without setting results, which led to uninitialized memory bugs. For example, when running the ‘reachable,’ condition, it occasionally returned a ‘true’ result when the point was not reachable because the result variable had not been initialized as false. This was blocking the testing of the cover hit-reactions test level.
+An issue with vison raycasting allowing NPCs to see through buildings was rectified alongside bugs with NPCs using the Multi-Tool, including one giving them infinite ammunition in Repair mode. The team also added dynamic object handling to the vision component to fix vision raycasts and entities from being blocked when doors change states. The handling of situation changes during ‘aimed at’ events were improved too.
+New functionality was developed to support and restrict movement within assigned schedule combat areas, including being able to set up schedule areas and tags through the editor rather than just through the schedule. This allows the designers to more carefully control fights by giving the AI areas of interest, in a similar way to the existing tech for defend and attack areas, but on a broader scale.
+The AI team also added a significant piece of new functionality - AI groups. This enables perception data to be shared between AI within the same group, giving the designers more control over how NPCs are brought into fights and how they work together. For this, the team added a variety of entity changes, including:
+- AIGroupEntity - allows the designers to assign NPCs groups
+- AIGroupEntityComponent - a runtime component to define NPC groups that can share knowledge, such as perception data
+- AIGroupEntity - exports group members as part of object container data
+- AIGroupEntity - a Dataforge record
+- OnFriendlyCallToArmsHeard - an event to bring the rest of a group into combat
+Elsewhere, the team reviewed and made improvements to how AI use wildlines, including adding new combat-communication wildlines, such as surrendering, grenade reactions and throwing, investigation, hit reactions, reloading, and perception reactions.
+A script was created to check duplicate and unused communication names in pursuit of the gold-standard wildline setup.
+## AI Tech
+For AI Tech, support was given to the Design teams, with the devs implementing and exposing small functionalities alongside performance improvements. For example, they implemented a new behavior assignment for AI pilots exiting to EVA and fixed issues with NPCs using EVA. Bug fixing and behavior improvements were made for NPCs using elevators and using trolleys to move boxes.
+## AI (Social Strike Team)
+July saw the AI Social strike team introduce new welding helmet animations for engineers in ship corridors, enhancing visual detail, and updating post-welding animations. They also added an inspection phase where engineers now examine their work, providing more realistic and dynamic visuals compared to the previous static animation.
+A new scooch animation for smoother transitions between bathroom lockers and shower cubicles was created too.
+The team then refactored the day/night cycle on the Stanton to ensure AI populate the most popular areas of the ship as soon as the player lands, improving immersion and experience. Idle animations after crate inspections were updated to show characters using their datapads to simulate stocktaking and entering details.
+Animations for entering and exiting the firing range console were improved to address various issues, such as popping and other visual inconsistencies, while holograms on the firing range T-posing when shot was rectified. And, for more realistic character behavior, look-at animations were disabled during inappropriate moments, such as when characters touch their faces or use utensils.
+The team then conducted a comprehensive visual pass on dynamic conversations, fixing numerous missing transitions for smoother dialogue flow. They also adjusted animations to ensure characters appear to be talking, even without active dialogue.
+AI Social began refining player interactions in the Stanton, preventing unintended entity interactions and highlighting important ones to streamline and enhance player engagement.
+## Features (Gameplay)
+Gameplay Features continued improving control surfaces, addressing various tuning issues. For EVA, zero-g traversal markers were implemented. Without a thruster pack, they show green/red to denote when players can/can’t attach. However, with a thruster pack, they only show when close.
+For the multi-function display rework, comms list, hail target, and comm-call functionality were added.
+## Gameplay Story
+At the start of July, the Gameplay Story team maintained and improved several scenes in the campaign’s early chapters. This involved extending a barracks scene to make it 10 times longer, fixing a bad blend in a mess hall start idle, and creating a bespoke ‘crate place’ animation for use in a med-bay. New mo-cap was also used to extend the approach animation of a hangar scene and to create an end transition for a scene in a lounge area. A pass was also done on a scene in a corridor.
+Gameplay Story also progressed with scenes later in the game. For example, they updated a scene in chapter 11 to work with the correct console. They also brought a complicated scene in chapter 12 up to date with everything functioning correctly, while new mo-cap overhauled and improved a scene involving an escape pod.
+## Narrative
+Following on from last month’s report, Narrative tested their work on the in-game Galactapedia and began addressing user-experience improvements, including considerations for UI elements to make finding and organizing information easier.
+The team then began tackling another polish task - naming all the NPCs placed by Design in the game. While featured story NPCs are well established, additional members of the general population and outlaws have been added to help make the game feel more alive and combat encounters more engaging. All of these characters and their ships need names.
+Weekly playthroughs of the game continued too, including finetuning when narrative content triggers and plays. For example, Narrative worked with Design to adjust the placement of a particular piece of dialogue so that the characters have more natural reaction times. All of these adjustments, while individually small, go a long way to making the world feel more immersive.
+## UI
+Last month, the UI team continued polishing in-world screens, optimizing a few existing levels to improve frame rate and creating medical screens for various scenarios. They then made updates to the player’s visor, including taking the first steps toward a more cinematic boot-up sequence.
+The team also improved alien UI, ensuring it tells a story and feels noticeably different to the more traditional Human sci-fi screens players will be used to.
+For UI Tech, the programmers worked on performance improvements to speed up the frame rate of various parts of the UI.
+## VFX
+Finally for July’s report, the VFX team continued to support the Cinematics, Design, and Art teams in various polishing tasks.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

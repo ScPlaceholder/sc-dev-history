@@ -1,0 +1,100 @@
+PU Monthly Report
+August 2023
+As we close in on Alpha 3.20’s Live release, many teams are finalizing their work on the patch’s various new features. Beyond the patch, significant progress is being made on content coming later in the year, so read on for the latest.
+## AI (Features)
+Last month, AI reviewed perception to fix issues where NPCs wouldn’t correctly recognize that a target had died or that they’d seen a situation before. These issues led to various bugs, including the AI constantly calling for med-pens or remaining in combat after it had finished.
+They also revisited cover usage, polishing various functionality and animations to ensure the feature works across a range of situations and environments.
+Changes and fixes were also made to the tactical point system, which is used to drive where the AI moves. This will help identify what needs to be adjusted when reviewing combat in new locations.
+Balancing was done for AI ammunition usage while maintaining reload and ammo-finding functionality to provide realistic and emergent behaviors and gameplay situations.
+The team continued to review, revisit, and polish combat, including low and high-cover reload animations for different weapons and female animations converted from male assets. They also began developing animations for marine squad hand signals to sell group movement and combat.
+## AI (Tech)
+Last month, AI Tech added undo-and-redo functionality to the Apollo Subsumption tool. They also began improving Subsumption data validation for better presentation and more explicit validation errors. This will allow the designers to iterate faster when creating or adjusting missions and behaviors.
+On the boids feature mentioned in last month’s report, AI Tech continued implementing base functionality to allow agents (rats, birds, etc.) to adopt different states, such as wandering, idling, or fleeing, and transition between them. They’re currently looking for a low-cost solution to keep agents on terrain while moving.
+For NPC audio perception, the team implemented new functionality for how audio stimuli is propagated. This involves using the room system and how rooms are connected to determine whether an audio event should be heard.
+They also continued to improve navigation links. Firstly, how links connect navigation triangles from different zones, which wasn’t working as intended. Secondly, they fixed how animations play when they begin and finish in different zones. For example, when NPCs jump to the ground from a hovering ship.
+Finally, investigation began into performance issues relating to the navigation system and pathfinder.
+## Animation
+In August, the animators worked through a number of behavioral lines for background ambiance and flight. They also supported Tech Animation on creature skeletons that will eventually be used in the PU.
+## Art (Characters)
+Last month, Character Art progressed with content for various upcoming events and assets for the Headhunters gang.
+Alongside this, the concept artists explored additional ideas for the Headhunters and worked on a medical outfit and handoff sheets for a new flightsuit.
+## Art (Ships)
+Last month, Ship Art completed their work on the Tumbril Storm, though they’re currently focussing on ongoing issues with the treads and how they appear. Two new variants of an existing vehicle were completed too.
+An all-new ship progressed through whitebox, revealing various areas that require updating from the concept, including an increase to the interior space.
+The Aopoa San'tok.yāi is almost LOD0-complete; final updates are underway, including polishing the pilot compartment. The damage pass is also in progress while the rest of the LOD0 tasks are closed out. Once complete, the team will move on to paints.
+The Origin X1 is currently awaiting whitebox review, though significant changes to item locations have already been made to maximize space. Modeling of the greybox geometry began too.
+## Community
+August saw the return of Ship Showdown, an annual month-long event where the community champions their favorite vehicles by sharing original creations on the Community Hub and social media. The Community team hosted two contests in support of the event, rewarding the top 10 submissions from the Community Hub and the top three most creative videos on the official TikTok channel. After daily head-to-head battles between the top 16 ships, the Drake Corsair was crowned the Ultimate Champion of Ship Showdown 2953. Community also supported the Free Fly event, posted updates on the New Player Guide, and curated media on the Welcome Hub.
+Early August saw the conclusion of the Arlington Gang Screenshot contest, where players submitted screenshots following the launch of the Mission Spotlight series.
+The Community team then supported Tobii’s 22nd anniversary alongside numerous community-driven events, including the Intergalactic Industry & Trade Fair, and the ATMO esports Fight or Flight tournament, which will conclude live at CitizenCon 2953.
+With CitizenCon 2953 approaching, much of August was also spent ramping up preparations, with a focus on finalizing the details of the various presentations, venue layout and design, Cosplay Contest, Community Booths, and much more.
+“It's been four long years since we've had a physical CitizenCon, so whether you're joining us in Los Angeles or watching from home, we can't wait to celebrate our shared universe with you on October 21 and 22! Keep your eyes peeled, as we’re finalizing some details and will share more information with you very soon!” Community Team
+The team continued to support dozens of evergreen publishes (such as this Monthly Report, the postmortem, etc.) alongside planning for a variety of future in and out-of-game engagements to come.
+Lastly, the team attended Gamescom and a trio of Bar Citizen events in Cologne, Germany.
+“The turnout was unbelievable, eclipsing our Gamescom events in the past. We were so happy to meet so many of you, veteran backers and fresh pilots alike. We hope to see you all again soon!”
+## Economy
+The new Economy team planned their upcoming goals, including rebalancing cargo and the related experience. They also began building a tool to investigate the current state of cargo, which could be expanded to other areas of the in-game economy.
+## Features (Arena Commander)
+The Arena Commander Feature team polished and supported Alpha 3.20 while beginning stage two of the Arena Commander revitalization plan.
+Alongside patch work, the Engineering team supported the new top heads-up display, which will feature in all game modes from Alpha 3.20.
+They also assisted the ongoing investigation into the return of Theaters of War. This involved identifying the steps needed to update the new spawning module with several unique Theaters of War features (such as spawn locations and multicrew) and bring them into other game modes.
+Work continued on the new Custom Lobbies feature (previously Private Matches), with several successful tests conducted. The team are currently focussing on finalizing the UI design and hooking up the various interactions. Engineering began restoring the Spectator Module too, which will allow players to spectate matches in Custom Lobbies and other modes. For example, spectating a player who has lost all their respawns in a PvE game mode.
+Design enhanced several outlines for upcoming updates and scouted locations from the PU and beyond for use in Arena Commander. They also began investigating the Theaters of War location Crossroads of Crime to help estimate restoration efforts.
+The team also addressed a large collection of feedback from the Evocati and PTU regarding the frontend and game modes. The frontend game mode selection now shows which modes are new, which have REC multipliers, and which have achievements associated with them. Design also progressed with the spawn-screen UI for in-game vehicle selection, which began internal testing.
+Finally, the team helped create several new game modes requested by other teams, including a 2v2 mode that will host Fight or Flight at CitizenCon.
+## Features (Characters & Weapons)
+August saw the Characters & Weapons Feature team working on weapon poses. Currently, when a player approaches a collision surface, their equipped weapon is raised to avoid clipping through the geometry. The team explored alternatives where the weapon is lowered, moved to the bottom of the first-person view, and rotated toward the body so that it lies diagonally across the abdomen. This is more natural in certain situations, limits clipping, and ensures the majority of the player's view is unobscured, particularly when interacting with screens in the environment.
+Procedural recoil also progressed last month. To ensure that the feel of each weapon can be tweaked to make it feel unique, a large number of curves were exposed to the content creators.
+“These curves allow multiple layers of subtle movement and rotation to be overlaid to create a wide range of interesting results. It is a bit of a manual process and requires significant attention to detail, but it can add a lot to the personality of a weapon.” Features Team
+## Features (Gameplay)
+Gameplay Features continued their ongoing work on the vehicle tractor beam feature, readying it for testing by QA. They also progressed with the Resource Network mentioned in last month’s report and supported the upcoming patch release.
+## Features (Mission)
+The Mission Feature team spent the month working through their upcoming deliverables and bug fixing for Alpha 3.20.
+Away from the upcoming patch, Siege of Orison received various improvements ahead of a future release, with the main focus being keeping players together. Development of Blockade Runner (which will replace Nine Tails Lockdown) continued too, with various technical issues considered and planned for.
+Significant improvements were made to the existing Destroy Drug Stash missions to ensure mission-critical items are spawned when the player arrives. They also made great progress in modularizing the New Player Experience so that it can be used in any landing zone with the correct markup.
+The Steal Evidence at Kareah and Retrieve Consignment missions entered the polish phase, with reputation being hooked up. Work also began on ship-restoration missions, which will require players to restore ships to a saleable condition. Data Heist passed another gate review and will enter internal playtesting to ensure the objectives are clear.
+“The Ship Cargo Steal/Recover Hauling mission has been taken as far as it can until further cargo features are developed. In the meantime, we will make a ‘courier’ version in which small items are the objective.” Mission Feature Team
+The team progressed with reputation-based hostility, devising a mission that allows players to work for the Nine Tails gang. Once completed, they’ll convert most of the nameless criminal missions to Nine Tails until further gangs are added.
+Code work was completed on the highlighting and filtering of mission-critical items in the inventory. This was handed to UI for their pass. Finally, tasks for Ship Trespass progressed, with ‘nested trespassing’ being the main thing holding it back.
+## Features (Vehicle)
+Last month, the team assisted with bug fixing and stability for Alpha 3.20 and beyond, including getting the MISC Hull C ready for release and completing smaller feature work for upcoming ship releases.
+The designers then tuned how racing ships perform in-atmosphere to bring them closer together and converted more ground vehicles to the new physics model, which allows for more realistic behavior than before.
+The mass of Size 1, 2, and 3 items were rebalanced for better consistency across ship loadouts and to improve the tractor beam gameplay of removing and replacing items. Smaller vehicle and weapon balance tweaks were also made.
+## Graphics, VFX Programming & Planet Tech
+In August, improvements were made to the internal implementation of Temporal Super Resolution.
+Further progress was made on water, with the shader gaining improved lighting and foam. Work on the simulation continued too, with foam propagation and bullet-impact support being added.
+The prototype of the glint shading model was completed and comes in three versions with different performance characteristics. The team are now investigating whether they can take one of these into production. Distant lights are now drawn as tiny bright glows that pass through the existing post-effect system, with the aim of replacing the more traditional 'composite flare' system that can't support post-effects.
+On the tooling side, the streaming debugger was expanded and now provides a powerful tool to track the detailed history of any asset or group to diagnose issues and facilitate optimizations. The Mesh Setup Editor was also expanded to allow finer-grained control of how animated meshes are imported.
+The Vulkan sub-team added new extensions, including Synchronization2, Maintenance4, and TimelineSemaphore, to improve various aspects of the backend. Focus is now shifting to unblocking progress on Global Illumination, as the ray-tracing component is Vulkan-only.
+The VFX Programming team implemented smoke spawning on fire along with various other quality improvements to bring the feature to a visually complete and “rather impressive” state.
+Finally, further improvements to lightning effects were made, which will be used in the future within gas clouds.
+## In-Game Branding
+The In-Game Branding team continued to progress with the underground facility exteriors. They’re also working closely with EU Locations 2 on an upcoming event and progressed with some event-related add-ons.
+## Interactables
+Last month saw the Interactables team create new assets for Pyro’s rundown station alongside various Flair items.
+## Lighting
+The Lighting team continued to contribute to Pyro, working on tasks for the colonialism outposts and rundown station. They also worked on an upcoming event.
+## Live Tools
+In August, the Live Tools team released a new version of the crash-handling pipeline, which is now in the maintenance phase.
+For Hex’s Network Operation Center, they worked on general navigation to improve the quality of life for its main users; this included redesigning elements of the discipline module and Entity Graph.
+## Locations (EU)
+The Locations team progressed across various areas last month, including the rundown station and colonialism outposts for Pyro. They also worked on signage and dioramas for an upcoming event.
+The Organics team continued to build Pyro’s planets, including foliage, while the Sandbox team moved the new underground facilities through greybox.
+## Narrative
+The Narrative team continued to focus on Pyro, writing multiple missions and crafting strings to populate new locations with everything from signage to food items. In Stanton, several new mission types were worked on and improvements were made to existing content.
+Alongside the evergreen tasks of naming and describing various in-game items and wearables, Narrative worked with Interactables on interesting ideas for future additions.
+The Narrative Design team worked on NPC behaviors for Pyro and continued to explore how to make NPC behaviors feel unique across the various landing zones.
+On the website, several interesting pieces of lore were published, including an excerpt from “Life/Labor: The Secret History of Hurston Dynamics,” a “Whitley’s Guide to the Constellation Phoenix,” and several new Galactapedia entries.
+The Narrative team will have a new installment of Loremaker’s Community Questions coming up soon, so don’t hesitate to ask your questions in the team’s dedicated Spectrum channel.
+## Online Services
+In August, the Online Service team worked toward finalizing the design and approach for updating several legacy backend social services to gRPC.
+As a quality-of-life update, the team added new Social menu options, with players now able to enable or disable friend requests and friend-request notifications, and choose who they receive party invite notifications and currency transfers from.
+Updates were also made to the discipline service, which is necessary for future anti-cheat enforcement and sanction updates.
+## R&D
+In August, work on the temporal render mode for atmosphere and volumetric clouds continued; various methods to rectify or reject frame history were experimented with.
+Furthermore, a new disocclusion detection system to reject history was implemented that, in spirit, is similar to the general up-sampling solution.
+Additionally, various code was updated to work with recent Gen12 improvements.
+## UI
+As part of the development of Pyro, the UI team created fluff screens and converted flash animations into fluff screens. They also supported Mission Features on Data Heist by uplifting the screen style.
+## VFX
+Last month, the VFX team continued working on various Pyro locations, including some with animated machinery.

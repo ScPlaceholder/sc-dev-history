@@ -1,0 +1,123 @@
+PU Monthly Report
+February 2023
+February was a busy month for all CIG studios, with final bug fixing for the upcoming patch alongside extensive feature and tech work for releases later this year. Read on for everything completed and in progress, including the Lorville rework, a new water system, updates to Arena Commander, and more.
+## AI (Tech)
+AI Tech began February by completing the NPC Transit feature, which manages elevators and trains. Now, NPCs will understand if a transit carriage is present at their location and whether they can move directly inside, if they need to wait, or if they should press a button to call it. They will also understand when they’ve arrived at their destination and will move outside. While in the carriage, NPCs will look for a usable and idle there until they reach their destination. Upon completion, the feature was passed to Design, following which AI Tech addressed feedback and fixed bugs.
+The team then allocated time to improving NPC trolley usage, ensuring that NPCs can use elevators and move trolleys with them if the behavior requests it. To achieve this, they had to write new and update existing behaviors and fix bugs related to path-following while pushing a trolley.
+The team also finished the base skeleton for ‘boids’ (bird-oid objects), which will enable groups of small creatures like birds, fish, and rats. This required them to implement new components, including a system that allows designers to write rules and constraints related to spawning and movement, which were exposed to DataForge for easy access.
+On the navigation-system side, AI Teach continued to work on cost area shapes that will influence the topology of navigation mesh triangles. This will enable the pathfinder to avoid or prefer to use specific areas. As mentioned in last month’s report, this will initially be used to avoid fire hazards and define sidewalks for social AI actors.
+The team also progressed with navigation agent-type override parameters, which are used when creating areas with specific navigation constraints. For example, they enable an NPC to transition from standing in a regular space to crouching in a vent.
+AI Tech also exposed new parameters to specify entity properties during the navigation-generation phase. Now, the designers will be able to mark entities as:
+- Included: The default value - the entity is processed during voxelization and the nav-mesh is generated using that object.
+- Excluded: One entity will be ignored during generation - for the navigation system, it will be equivalent to not having found that object.
+- Ignoring Walkability: The entity will cause the nav-mesh to consider it an obstacle - NPCs will not be able to walk on top of that object.
+## AI (Tools)
+For AI tools, the team progressed their work on Apollo (the Subsumption tool) and added new functionality requested by the designers, including:
+- Mastergraph editing to allow users to select the default state of each parent state.
+- The ability to create new multigraph nodes by dragging functions from the outlier.
+- Support for comments inside XMLs (this was an engine-wide improvement).
+- Support to read object-container information related to platform creation directly from P4K files.
+They also fixed several issues relating to the resizing of the node graph view.
+Work continued on the usable coordinator tool, with the team adding support for multiple input types that can better specify when choosing the next usable or usable group. For example, specifying the number of usables required to determine that a group is ‘complete.’ They also fixed an issue preventing the usable group coordinator from working correctly with object containers and implemented the ability to add multiple instances of the same usable with different properties.
+Finally for AI Tech, the team fixed and investigated issues with Alpha 3.18, including a problem with NPCs standing on chairs. This was caused by the incorrect animation setup of benches and chairs, likely due to a mannequin tag refactor that was not correctly propagated through the usable setup.
+## Art (Ships)
+Last month, UK Vehicle Art approached the end of their work on the Argo SRV. The final art phase is in progress, including LOD and damage passes, and is expected to conclude with the final gate review and go/no-go in March.
+Work also continued on an unannounced ship, which passed its LOD0 review gate and is well into the final-art phase.
+A new variant moved into the LOD0 phase after passing its greybox review in January. Detailing work on the exterior and interior is ongoing.
+The Crusader Spirit continued its greybox pass, with a review gate taking place at the end of the month.
+“While there are still a few visual design tweaks to be made, the Spirit is looking in great shape for the review.” Vehicle Art Team
+The team looked at the MISC Hull C to fix any visual issues that occurred during the ongoing technical setup, while the MISC Freelancer is undergoing some interior tweaks to accommodate physicalized components.
+Greybox on an upcoming vehicle progressed. Testing was done simultaneously on the modeling process to see if the team can reduce the LOD impact on production once they arrive at the final-content phase.
+The Aopoa San'tok.yāi is currently in the greybox stage and is undergoing significant testing to see how far the team can take secondary motion.
+“The goal for us is to make the ship feel as though it is reacting heavily to its inertia. Doing this requires that we apply blendspace animations similar to what we do with characters.” Vehicle Art Team
+## Community
+Throughout February, the Community team supported Coramor (Star Citizen’s take on Valentine’s Day) with a screenshot contest. In tandem, an update was released to the Community Hub that allows them to spotlight content created for specific events, take over the front page of the website, and collate community submissions for events into an archive.
+“Last year’s Bar Citizen World Tour proved to be a huge success, with thousands of players meeting up in person for beverages, camaraderie, and giveaways. We have started planning many more events this year while also putting out the call for suggested locations on Spectrum.” Community Team
+In support of the new Salvage mechanic, the team created a starter guide to coincide with Alpha 3.18 releasing to all waves on the PTU.
+Alongside standard sentiment reporting and general communications and publishes, planning began for CitizenCon 2953 in Los Angeles, California, USA.
+## Engine
+In February, the Physics team made several improvements to box pruning. For example, changes were made to avoid bipartite box pruning inefficiencies, to decide when to run box pruning before obb pruning, and to significantly improve box pruning performance in general. Additional optimizations include using the spaceship's localspace obb for IFCS collision warning sweep checks to reduce the size of the checked volume. Furthermore, support for various unary and binary distance-field operations was added to the physics system as well as support for tapered capsules (aka bispheres) on articulated entities. Lastly, huge pages are now used for physical entity factories.
+On the renderer, Gen12 received motion vector support for render-to-texture pipelines. Also, redundant copying of render target data for partial refractions was eliminated. Moreover, the team spent time improving ultra-wide-screen support. As one of the results, rendering of the in-game console was vastly improved, resulting in clearer text display. Improving the visor for ultra-wide screens is still being worked on. Lastly, the CPU side code for scatter queries was optimized.
+For the core engine, further substantial improvements and performance optimizations were implemented for the remote shader compiler server. Work on streaming system improvements started, and the final touches on p4k v2 support for internal development tools are being wrapped up. The team also started looking into more advanced tool support for memory tracking of both the server and client.
+The remainder of the time was spent supporting Alpha 3.18.
+## Features (Arena Commander)
+February saw the Arena Commander team continuing to develop the Laying the Foundations deliverables for an upcoming patch. This included further work on the spawning and racing system refactors and the delivery of the refactored Rounds Module along with long-awaited bug fixes and quality-of-life changes.
+The Design team focused on the conversion of a new Stanton location into Arena Commander, which will feature all standard game modes bar Classic Race.
+“This location, which we'll talk about more as we get closer to release, has the team tackling some unique challenges with taking PU locations that'll help ease the process for future endeavors.” Features Team
+The team also began work on an all-new atmospheric dogfighting arena, which will be the first fully atmospheric map in Arena Commander.
+## Features (Characters & Weapons)
+In February, the Features team continued to support the upcoming patch release with critical bug fixes, mainly for crashes and player-position desyncs.
+The team also began looking at lockers and how to best create outfits as a pre-defined collection of items that can be equipped or worn in a single action. They’re currently looking at a combination of the item port and inventory systems to store and display large to small items. For example, a coat may appear on a hanger just like in the shops, whereas a small accessory item or weapon attachment could go into an inventory drawer.
+Another inventory aspect in progress is allowing players to perform a reload directly from a backpack or pocket. For example, if ammunition isn't directly available from their suit, players can perform a slower reload where it’s retrieved from their inventory. However, this only works if spare ammunition has been stored prior to engaging in combat.
+## Features (Gameplay)
+The Gameplay Features team continued their work on the tractor beam, enabling ship owners to protect their ship items by locking them using ‘lock exterior’ functionality. They also added an interaction to the Greycat Multi-Tool that will detach unlocked items from ships to allow more control over item detaching.
+The team then expanded on the holo outline that Weapons Features provided to get clear feedback on the attaching rules for ship items. The QATR process for this began alongside QATRs for the Mining update.
+The team continued their work on the Resource Network, which is now known as Engineering gameplay. Gameplay Features will provide a more in-depth look into this feature in an upcoming episode of Inside Star Citizen.
+In the US, the PU team worked on the physicalized cargo refactor. This significant conversion has several goals:
+- Convert the existing cargo render proxy to actual physical entities for each cargo container. This enables them to be manually added and removed from the cargo grid using the tractor beam.
+- Convert all commodities, minerals, and harvestables to a new resource type. This requires refactors of the mining and refinery systems to ensure they worked with the new resources.
+- Recreate the Commodity Kiosk using Building Blocks to give greater flexibility with future changes.
+- Ensure that all missions that use any form of cargo, usually in the form of carryable two-handed entities, still work with the new cargo resource system.
+- Work with the Ships team to mark up all cargo grids to use the new system.
+The PU team worked closely with EUPU Gameplay to ensure the conversion worked not only with the Mining and Refinery systems, but also to ensure that the new Salvage system worked with the new resource system as well.
+“Once we had confirmed that cargo was properly working with the cargo grids, Chris Roberts pointed out the fact that, since ships were always destroyed upon death, the majority of cargo was destroyed, thus reducing the amount that players could interact with the new system. So, we worked with the Arena Commander Feature team to implement Soft Death on ships. This ensures that the majority of the time a ship is ‘destroyed,’ it enters a disabled state, which preserves all of the cargo within the ship so that it can be retrieved by interested parties.” USPU Team
+## Features (Mission)
+February saw Mission Features make a few improvements to the Klescher Rehabilitation Facility, including changing the stashes to lootable containers (boxes for now). This allows them to put whatever items they want inside, such as rarer contraband alongside the typical sustenance and oxy-pens. A full stash should now contain an amount of contraband that can be returned, giving players another non-violent means to reduce their sentence. Players can now also steal minerals from other NPC inmates and, should they do it deep enough in the mines, get away without being caught.
+Given these new options for generating merits, plus the new escape mission and Platinum Bay at the nearby outpost, the team decided to increase the cap on prison sentences to further punish those committing numerous felonies, though lighter sentences will remain the same.
+“Mass murder now has serious consequences, leaving escape a much more tempting prospect.” Mission Feature Team
+Several unannounced missions continued to be prototyped. One of which sees players escorting ships as they quantum travel and land at various locations, potentially allowing players aboard to carry out tasks.
+Finally, after inheriting ownership of the Reputation System, the team began designing out the system as a whole alongside prioritizing which work comes first.
+## Features (Vehicles)
+Last month, the Vehicle Feature team mostly focused on the transit system, which was heavily refactored for the release of Persistent Entity Streaming.
+“As we’ve been pushing through the various PTU waves to release Alpha 3.18, more and more issues have arisen. Most transit bugs do not present locally on machines, so we’ve developed a system where we can remotely log the transit system and observe what happened after a bug occurs. This has been extremely helpful in finding various bugs in the PTU.” Vehicle Features
+For releases further ahead, new features were added to the flight system and some older systems were refactored in support of one of the Ship team’s unannounced vehicles.
+Finally, the MISC Hull C received a significant amount of low-level tech updates as the team worked through its issues.
+## Graphics, VFX Programming & Planet Tech
+Last month, the Graphics team continued to close out the final tasks for Gen12 before they transition to assisting in the completion of the Vulkan graphics API.
+The damage-map system was converted to Gen12, and support for profile groups was added to achieve parity with profiling tools in the legacy renderer. Additionally, the render pipeline was made configurable to allow secondary viewports to balance the desired quality and cost. Finally, legacy lens flares were converted to Gen12 alongside initial support for HDR.
+Support for TSAA is currently being added to secondary viewports, which will significantly improve visual quality, especially for hair. The team also submitted the first iteration of a new render-layer feature to allow easy customization of objects in the world for use with game features such as scanning and the mini-map.
+For features, the Graphics team further developed several shaders, including converting LayerBlend v1 assets to the more recent v2 and adding usability improvements to the new shader. Various improvements were also made to the UI shaders, including stability fixes for anti-aliased borders, the option to render circles on each vertex, and lighting support to allow planets in the Starmap to appear both lit and holographic in a single pass.
+For tools, texture processing was made significantly faster through parallelizing filtering and compression, which will be a significant improvement for the artists and build system. Work started on a new mesh format too, with the goal of vastly improving loading times and render performance.
+The VFX Programming team's time was split between fire, quantum travel, and tool work. For fire, work began on decal shading to achieve glow, burn, and soot on objects within the scene. Quantum travel now has support for 'quantum casting' and ‘red shift’ along with various other code improvements. For tools, usability improvements continued and support was added for referencing particle effects from other particle effects.
+The Planet Tech team worked on better shaping support for asteroid fields, improvements to the harvestable system, and adding support for instancing to terrain chunks.
+Also, the Planet and Graphics teams worked together on a new water system. This is still at an early stage but aims to allow for GPU wave/ripple simulations at multiple scales as well as network-synced impacts for larger events (e.g. spaceships crashing). Shading improvements are also being made to achieve better reflections, refraction, and foam.
+## In-Game Branding (Montreal)
+The In-Game Branding team's work on Lorville’s skyline is coming to an end.
+They also began their tasks for Pyro’s Ruin Station, with the first step being creating the visual identities of the gangs and their environments.
+## Interactables
+The Interactables team continued work on Pyro, creating more assets for Ruin Station.
+“There’s more work to be done on this mandate and we have some really interesting interactable props that we can’t wait to share!” Interactables Team
+The team have also been working closely with Mission Features on new assets that players will be interacting with around the 'verse and progressed with Flair that will reach players at some point this year.
+## Lighting
+Lighting finished their work on the Lorville skyline rework. They then moved fully onto colonial outposts.
+“This is a significant undertaking with many pieces that we need to get right!” Lighting Team
+## Live Tools (Montreal)
+In February, the Live Tools team successfully implemented the first version of the Entity Graph Tool into the Network Operation Center, which is a major milestone in supporting Persistent Entity Streaming.
+The developers are still working on improvements for other internal tools alongside priority bug fixing to support the release of Alpha 3.18.
+Next, the team will start on the design and development of new Network Operation Center modules for Server Meshing.
+## Locations (EU)
+In February, the Locations team completed the exteriors of Seraphim Station and the three Stanton jump points. Work is approaching ‘final art’ on the asteroid clusters for the Resource Rush mission, and the team is working on the last few modules to close out ‘Content Pack 3’, which will enable them to construct and distribute Pyro’s small-to-medium outposts.
+Tasks progressed on Ruin Station and the underground facilities, the latter of which are currently in the whitebox stage. For organics, they prepared and hardened some of their cave initiatives and began looking into additional biome work.
+The Design team worked on new missions for Pyro’s outposts. They also began investigation toward achieving gold-standard outposts, which produced several feature requests to facilitate new and interesting gameplay loops in Pyro relating to the resource network and Reputation System.
+## Narrative
+February began with the Narrative team addressing a handful of issues discovered by the thorough PTU testing of the Alpha 3.18. With tasks for the upcoming release winding down, attention turned to the next patch and beyond. Several items, clothing pieces, and vehicles were branded and named. Work continued on the upcoming Salvage, Mining, and Investigation missions, while improvements were considered for Bounty Hunting v2 and the Contract Manager.
+The team also continued to refine and hone their work toward the gameplay in the Pyro system.
+“Seeing how the system’s lawless nature has the potential to enhance existing gameplay loops has been very exciting for us.” Narrative Team
+They also coordinated with the Environment and Design teams on building interiors. Additionally, progress was made on ‘narrative lootables.’ These are things like journals, articles, and messages that players might one day be able to discover as they explore the universe. Finally, the team’s narrative designers continued to work on expanding and improving player interactions with certain NPCs.
+February also saw the release of a Portfolio expanding the history of Clark Defense Systems and a host of new Galactapedia entries. The Narrative team also appeared on an episode of Star Citizen Live.
+## Online services (Montreal)
+In February, Online Services completed the development of shard isolation and the shard broker, with PTU testing beginning for both. These new features are used for isolating push workers and shard health/lifecycle respectively, with the goal being to maintain shard integrity.
+The team also added inventory query caching to the entity-graph service. This stores the results of inventory queries in a cache to take the load off the database for repeated lookups of the same query, allowing for faster response times and less load on the database. This increases the overall read and write performance of the entity-graph service.
+The team performed a refactor for insurance, ASOP terminals, the VMA backend, and game code, with the goal of improving performance and fixing some long-standing bugs.
+Time was also spent working to stabilize the Alpha 3.18 release with multiple bug fixes.
+## Tech Animation
+Last month, the Tech Animation team was on set at Pinewood Studios in London, working alongside an outsource studio to finalize face scanning to populate the remainder of the gene pool for the head generation systems (DNA). This is relevant for both the PU and Squadron 42.
+“We scanned a broad range of models, young and old, from all facets of Humanity available to us, which will go a long way to truly showing diversity in our game. The scanning went exceptionally well, our chosen outsource studio has a fantastic resource in their facial scanning rig, which delivered exceptional results. Coupled with lots of hard work and a good sense of humor, we made the most of our two weeks.” Tech Animation Team
+## UI
+In February, UI Art and Design worked on several future features, including an interactive 3D UI prototype, a universal marker for the Starmap, and concept work for some of the updated vehicle UI styles.
+The UI Tech team progressed in various areas, including creating a color picker UI for use in interactive screens. They continued to help polish the new Starmap, adding space dust to make it easier to perceive movement, improving the controls, and creating cubic holo volumes.
+They also compelted some workflow fixes too, such as improving comments in Building Blocks files and making it easier to inspect drawn UI. They’ve also made some final fixes for Alpha 3.18.
+## VFX
+Last month, the VFX team continued with their CPU-to-GPU particle library conversion. This has been good practice for some recent new starters in the team, helping them to get a better understanding of the many attributes accessible from the VFX editor.
+They also continued to refine the new quantum-travel effects, and work began on several new vehicles, including one with unusual thrusters.
+Finally, the team carried out improvements to Lorville’s skyline effects, adding more smoke and general ambiance to help sell the industrial theme.

@@ -1,0 +1,57 @@
+Space is a hostile place and even the most skilled pilots will need to have their craft patched up from time to time. Fortunately, there are a number of options available to Citizens to get themselves back up and running.
+Star Citizen’s repair system works in conjunction with the engine’s detailed damage model to create intuitive and engaging gameplay for players wishing to pursue a career in ship repair or for pilots to execute quick field repairs.
+The basis for repair technology in Star Citizen are tools equipped with multipurpose lasers that can trim away damaged material or sinter construction material injected onto a component’s frame, rebuilding its structure
+## Repair Roles
+Any ship with repair capabilities has two roles that must be filled to ensure a successful repair job: the Repair Arm Operator and the Repair Task Manager.
+The Repair Arm Operator is responsible for the control of the robotic repair arm. Mounted with a multi-purpose laser and material injector system, the repair arm is capable of carrying out all manner of repair tasks. The repair arm is the only player controlled method of fully restoring a ship to 100% health but requires skill, knowledge and coordination with the Repair Task Manager to do so effectively.
+The Repair Task Manager relays detailed damage information to the Repair Arm Operator, designates repair tasks to be undertaken and is responsible for the allocation of materials to satisfy part reconstruction requirements.
+## Repair Task Manager
+To initiate workshop repairs, the Repair Task Manager must first use their damage assessment interface to gather damage information and prepare for the repair tasks required.
+## Damage Assessment
+Whilst using their terminal, the Repair Task Manager can access the target ship’s damage diagnostics. This displays the status of ship parts, the hull, systems, weapons and their various connections. The player can toggle and filter between various layers, isolating and displaying their respective elements.
+Damage that has been dealt to a ship’s hull is represented on an AR overlay as a heatmap: no damage displays as green, full damage and holes as red, and partial damage on a gradient in-between. The edges of hull breaches are also highlighted for clarity.
+Highlighting the various parts will display its current health as well as the materials required to repair it. When ready to start a repair job, the Repair Task Manager selects the desired part, opening the Material Panel.
+## Material Panel
+Repairs taking place in a workshop require the consumption of the raw construction materials gathered through Mining, Scavenging and Trade. The Repair Task Manager can assign different materials according to the repair task at hand via their console’s Material Panel.
+Depending on the repair job, certain types and quantities of material are required. When a component is selected, these requirements are displayed in the Repair Compound section of the Material Panel as slots that need to be filled from the repair ship’s Material Stock.
+Each material is graded to reflect how effective it is when assigned to a slot and how it will affect the repair procedure (discussed later in the Repair Arm Operator’s section). To get optimum results the Task Manager must balance the Arm Operators requirements, versus the value of the materials used.
+Once all materials have been assigned, the Repair Arm Operator can then initiate the reconstruction process.
+## Reconstruction
+Damage AR Overlay highlighting debris in need of stripping
+In the event that a ship part or component has been entirely detached or destroyed, it must be reconstructed. To do this the Task Manager selects the missing part from their Damage Assessment panel and assigns the materials as normal.
+Once the composition is confirmed, the missing part’s frame is automatically constructed by the Repair Arm; the process is entirely automatic, using patterns from the repair terminal’s database for reconstruction. After the framework has been constructed, the player can then use patching to build the surface up as normal.
+Before a reconstruction can be started, the attachment point must be cleared of any obstructing debris by the Repair Arm Operator. Whilst an obstruction is present, the part appears as a red hologram on the damage assessment screen with the extraneous material highlighted for removal.
+Clean part attachment point
+Frame reconstruction
+## Repair Arm Operator
+Once the Repair Task Manager has chosen the part and repair material composition, the Repair Arm Operator starts the reconstruction and repair process. By using their terminal, the operator controls the arm’s position and aim remotely via a mounted camera. To avoid overcomplicating controls, the head is translated and aimed directly with an IK solution orientating the rest of the arm to follow.
+The Repair Arm’s laser can be switched between two modes to carry out the various necessary repair stages: Stripping and Patching.
+## Stripping
+Hull stripping is vital for improving the integrity of a ship’s hull that has only sustained light damage, as only missing segments can be patched.
+In stripping mode, the repair arm’s high powered laser is used to cleanly remove parts of a component’s surface without causing structural damage to the surrounding area. Stripped surfaces are converted and collected as a percentage of its raw materials.
+Stripping is also necessary when a component or part has been completely detached. Full component reconstruction requires a clean attachment point requiring the operator to cut away any debris that compromises the area.
+Unstripped surface
+Stripped surface
+## Patching
+Patching is the act of rebuilding a ship or component’s surface and restoring its integrity. When in patching mode, the Repair Arm’s laser is repurposed to directly ‘print’ material onto a ship or component’s frame. As the Repair Arm is aimed, a wireframe hologram is projected showing the edge of the damaged area that can be printed onto. This grid is a high resolution tractor mesh that matches the undamaged surface, supporting the material printed onto the ship.
+The Repair Arm sprays a powdered compound whilst simultaneously firing a laser to heat and bind the compound, creating the new surface. As the repair surface is built up, the mesh gradually contracts to form a new working edge until the area is completely restored.
+The strength of the new surface is dependent on the amount of exposure it is subjected to from the laser. As a surface is being built, it gradually increases in strength until it reaches 100%. If the laser remains focused on that area for much longer however, the integrity decreases as the surface overheats. This creates a sweet spot that the operator must reach before moving on to achieve optimum integrity.
+The player can choose to toggle the AR damage heatmap overlay on and off whilst patching to receive real time feedback as they approach this threshold: the surface turning green as it nears 100% and transitioning back into the red as the surface is overexposed. If a surface becomes overexposed, the Arm Operator will have to restrip that section of the surface before reattempting to patch it.
+The composition of the repair material, as defined by the Repair Task Manager, determines the behaviour of the patch surface as it is being printed: the max integrity level, the size of the peak integrity sweet spot and the rate at which the exposure affects integrity. This presents a player-defined risk-reward loop where the use of cheap materials can achieve the same results as expensive ones, but requires far more skill to accomplish with the crew of the repair ship needing to take their operators abilities into consideration when pricing jobs and assigning materials.
+## Field Repairs
+## Personal Multitool
+Personal Multitool
+The Multitool is a personal item that is equipped with the capabilities of a small-scale version of a workshop’s Repair Arm. It is capable of stripping and patching, allowing it to achieve a wide variety of ship repairs short of full part reconstruction.
+Although the Multitool’s repair abilities are the same as that of the Repair Arm, the size of the laser and low quantity of repair material it can store means that it is only suitable for quick fixes and patch jobs to get a ship back to a proper repair facility.
+## Component Damage
+When your ship takes damage, some of that damage will be transferred from the point of impact on the hull to the nearest system and weapon components. Those components then distribute that damage between itself and whatever Subcomponents are attached inside.
+Subcomponents are the various consumables that are used to run or improve a component or system’s behaviour.
+In general, component field repairs consist of turning off whichever component is having problems, replacing the broken subcomponents, and turning the component back on. In very large components, like those found on capital ships, there may be multiple actions involved in turning a component on or off, including rerouting power or coolant to other parts of the ship. These actions may also involve the use of on-board ship computers.
+## Subcomponents
+Subcomponents provide additional benefits to the component they are attached to, allowing for further customization of a player’s ship. They are divided into three categories, each providing specific areas of improvement.
+## Module Racks
+Module Racks are panels that house the various components used to keep their associative subcomponents running. These can be found on the hull under maintenance hatches in closed-cockpit ships, or internally in the engineering section of larger multi-crew ships.
+Depending on the component installed, different types and numbers of subcomponents are required. Each subcomponent is built for quick removal and replacement allowing for field repairs to be carried out as quickly as possible. If a player attempts to remove a subcomponent from a powered component they risk being electrocuted and receiving damage.
+Replacing a damaged subcomponent is a simple case of interacting with the item in question. The player will then remove it, freeing up the slot. If the player has a replacement in their possession, they can then interact with the empty slot to place it.
+Subcomponent types are universal across ships and components of the same size class, a coolant rod from a Gladius’ laser cannon can replace a Hornet’s coolant rod housed in the shield generator. This provides a great deal of flexibility, allowing players to juggle elements between various systems as needed, as well as opening up opportunities to patch their ship using scavenged parts.
+Components on larger ships, such as the Idris or Retaliator can require a large number of subcomponents to function and/or larger sizes of subcomponents. When damaged, these more complicated systems can take significantly longer to diagnose and physically swap out any compromised subcomponents. To maintain full operation, these ships can contain alternative backup systems. In the case of an emergency, engineers can use their ship terminal to redirect power to the backup, allowing for full ship functionality whilst the engineer repairs the primary system. This can also be achieved manually, should an engineering terminal become inoperable, by physically swapping the whole module rack out, placing the backup system in the primary’s slot.

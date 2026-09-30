@@ -1,0 +1,61 @@
+Squadron 42 Monthly Report
+March 2024
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 04:10:2024
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 Recruits.
+Welcome to March’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including planetary tech, ship behaviors, and fluff terminals.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Content)
+In March, AI Content made improvements to interactivity aboard the Javelin Gauntlet by introducing dynamic conversations, greetings, and “I’m busy” dialogue for NPCs. This was in response to playtesting, as it became evident that players sought closer interactions with NPCs, prompting the integration of reactive responses.
+Also a result of feedback from playtesting, the length of the trolley was reduced to a four-box configuration. This decreases the time spent stacking and unstacking and increases time traveling, which was preferred. Elevator travel with the trolley was also polished to eliminate clipping issues upon exiting elevators. Additionally, an extra front stack spot was incorporated for enhanced trolley functionality, as NPCs looked “robotic” without it.
+The bed mattress was rigged for deformation, enabling realistic movement when NPCs sit or sleep on it, adding an additional layer of detail to the environment.
+The final touches were also applied to bed-bunk animations, enhancing the realism of NPC actions such as sitting, reading, watching TV, and sleeping for a more immersive experience.
+NPC interactions with wall-based buttons, such as those for calling elevators, can now accommodate 45-degree approaches. Furthermore, AI can carry boxes and press buttons simultaneously, eliminating the need to drop items to interact with doors or elevator controls.
+Refinements to scripted walking behaviors within the ship’s corridors are ongoing to ensure NPCs move convincingly while avoiding critical scenes.
+## AI (Features)
+March saw the AI Feature team continuing to iterate and polish features for specific level scenarios. They also worked through some technical debt, refactoring the AI weapon system to remove bugs, simplify the code, and make the development of new functionality and features easier.
+## AI (Tech)
+AI Tech fixed bugs and made small improvements to NPCs using elevators and using trolleys to move boxes.
+They also progressed with the major task of improving and polishing NPCs driving ground vehicles, which involved adding a new pathfollower for driving movement requests. They also implemented an improved controller system for vehicles by utilizing two PID controllers to control steering and requested velocity. Now, NPCs will stick closer to the designated path without overshooting during turns. The next step is iterating on the collision-avoidance system to work as intended when NPCs need to avoid other ground vehicles or characters.
+## Animation
+Last month, the team worked on animations and design work for multiple story scenes and background elements, including life aboard the core ship and on various space stations. Progress was also made on EVA, combat animations for various enemy classes, and assets and design for utility functionality.
+The team are currently improving AI leisure on the core ships and working toward a final result for the first two dressing animations.
+## Gameplay Story
+Gameplay Story made substantial progress on chapter one. This involved revising the ‘golden path’ through the level, which led to several scenes being adjusted.
+“Everyone seems happy with the new layout and the level appears to flow much better now.” Gameplay Story Team
+New mo-cap was shot to overhaul several chapter-one scenes and is currently being implemented.
+“This work looks really promising and we can't wait to see the positive impact this will have on the chapter.”
+Alongside this, text now appears on a character's mobiGlas screen as they dictate a message.
+For chapter four, a huge update was completed on a complex two-person scene. This now uses standard datapads throughout, which can be holstered and unholstered from the characters’ legs before and after the scene. This looks better, brings the scene more in line with the rest of the game world, and makes the setup a lot cleaner
+Finally, the team received further audio and facial data for chapter five, which was incorporated into the relevant scenes.
+## Graphics & VFX Programming
+Throughout March, much of the department’s focus was on bug-fixing the various features initially developed for SQ42 currently being implemented into the Persistent Universe for Alpha 3.23.
+Performance-scaling options were added to the water simulation to ensure it can scale to all hardware, while various improvements were made to water-boundary shading and visor wetness to achieve a seamless effect as players enter water. Support for distance-field collisions was also completed for more accurate collisions from vehicles.
+The Vulkan team worked through several performance issues as they moved closer to matching D3D performance.
+“This precedes the enabling of multi-threading for the next release to hopefully smash D3D performance levels on the CPU (GPU performance should remain similar). However, some performance issues currently remain. So, depending on the location/context, players may see worse performance, hence the BETA label on Vulkan. But the aim is for us to get widespread testing in Alpha 3.23 so that we can enable Vulkan by default in the following release.” Graphics, VFX & Programming Team
+Alongside this, the team are currently reworking shaders to reduce the total number of PSOs (shaders) that need compiling when the game starts.
+Work on Global Illumination continued too, with a focus on performance as the team move toward an internal rollout of the first version for testing by the art teams.
+The Planet Tech team started work on Planet Tech v5, with initial focus on the groundwork required to set up spatial partitioning. They’re currently deciding how this will work with Server Meshing and server-crash recovery. The devs also introduced the concept of ‘default planets’ for the internal editor so that it’s trivial for anyone to create and use a planet for testing.
+On the VFX-programming side, in addition to water improvements, the team continued with networking support for the fire simulation. They’re also making changes to the augmented-reality render layer to enable support for holographic weapons (e.g. muzzle flashes, projectiles, enemies, and impacts).
+## Narrative
+Last month, Narrative continued close-out work, adding additional narrative touches throughout the campaign. This included providing text for numerous “fluff” terminals and screens as well as non-interactable set-dressing items that provide opportunities for worldbuilding. For example, a TV screen that displays news headlines of the day.
+Text passes were completed for several mission-specific discoverable items that needed fleshing out. An example of this work is crafting the specific text inside a data file that players can uncover during a mission.
+The team also made a pass over objective text and map labels to ensure they're as clear as possible. Additionally, a small recording session was held in March to pick up a few lines of voiceover and ambient chatter that were needed to help bring the world to life.
+This was all alongside continuing to review levels with a mind toward polishing and improving the storytelling and narrative pacing of gameplay moments.
+## Tech Design
+March saw Tech Design provide interactables support across multiple entities and chapters. They also began an initiative to optimize the implementation of the AI usable coordinator.
+For flight, the AI was reworked to make enemies more difficult and responsive, and the combat test level was updated to help assess the changes. A small change was also made to ensure that a specific character flies slowly when they lead quantum travel.
+Various bugs were also fixed for flight, including issues with quantum travel target selection, AI not using gimbals, and the Drake Cutlass being invulnerable when shot from behind.
+General support, coordination, and bug fixing was also provided across the project.
+## UI
+March saw the UI team working on player-facing UIs used at specific locations to support key plot points.
+The team are currently optimizing the game’s opening level to improve the player’s first experience with better storytelling and increased framerate.
+Finally, the devs worked on UI seen in cinematic sequences, designed brand visuals, and created screens that the actors can react to at key points.
+## VFX
+Last month, the VFX team continued their ongoing support for other teams. This involved a focus on optimization, particularly for some of the more intensive scenarios in the game.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

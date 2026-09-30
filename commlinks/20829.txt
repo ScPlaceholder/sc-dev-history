@@ -1,0 +1,82 @@
+PU Monthly Report
+September 2025
+With Alpha 4.3.1: Virtue's Descent live and another thrilling update this month, the Star Citizen universe has never been more packed with adventure. Read on for everything done at CIG’s studios throughout September in pursuit of this new content, from updated backend code to all-new missions and more.
+## AI Content
+The AI Content team continued to test updates to some of the landing-zone NPCs, looping in the QA team to help stress test the setup to ensure it can take the strain of extensive use and trigger any potential issues.
+To make stations and cities feel more alive, the team leveraged the med-station behavior used during the regen crisis. Now, shopkeepers will interact more with the people frequenting their store. The team is also looking at an underutilized aspect of landing-zone archetypes and are preparing a proposal to make better use of guards.
+In addition to the ongoing task of setting up comms-call characters for missions, the devs also started looking at mission providers in general and built a new behavior to support face-to-face interactions in the future.
+## AI (Features)
+AI Features updated numerous features last month, beginning with AIWeaponComponent, which will now remain in sync with weapon statuses, allowing them to work better in unison.
+Support was then added for NPCs to systematically target vehicles in combat. Improvements were made to the ‘rocketeer’ behavior, allowing NPCs to switch between using a rocket launcher and pistol depending on the situation. Adjustments to the visuals of various behaviors were made, improving cover usage and fixing multiple asserts.
+Default behaviors were then introduced to the Buddy AI, allowing NPCs to follow their leader and stay in close proximity during combat. ‘TPS Covers Along Path’ was finalized based on feedback, while ammo-looting updates are underway too. This will affect holstering and stowing primary weapons and prevent NPCs from switching to their pistols when looting if they still have primary-weapon ammo.
+Formerly mentioned in previous Monthly Reports as an upcoming creature, the new Yormandi now uses different fire modes in its attacks. Issues with perception giving false positives were also fixed. Further improvements are currently underway for this and existing creatures.
+In addition, new functionality was added for testing first reactions by generating test-cell level variants, making rapid iteration and testing easier for each situation. This includes testing for first reactions and animation flows.
+## AI (Tech)
+September saw AI Tech improve NPCs using elevators by simplifying the set up of the transit carriage. Focus is currently on 3D navigation and NPCs flying ships.
+The team continued to improve the flight-path finder system and 3D collision avoidance using the newer voxel-grid approach for custom environments. The focus is to unify the process flow with the one used for ground requests and pre-emptive adaptation of the pathfinder structure. This will deal with the paths generated if a spatial voxel grid is present. This also includes the introduction of distinct parallel jobs for search and refinement, and how the flight path is constructed. Additionally, hard turns have been introduced alongside allowing ships to get ‘nose on target’ more quickly.
+Development was done on AI perception code, with the team fixing issues with knowledge escalation when seeing enemies between the primary and secondary fields of view.
+Direct perception was also introduced, which simulates knowledge at distance. For example, when NPCs communicate via comms. This enables systemic reactions to NPCs being killed while talking, even without direct line of sight.
+Improvements were then made to the way assignments are queued in relation to the usable builder tool. Crashes during general use were also fixed, such as when changing alignment slots and expanding the line popup edit for geom and helper geom editing.
+Updates were made to the AI sequence system, which manages AI agent scripting in the flowgraph. This enforces the validation of action sequences and ensures the correct execution context is set in the systemic activities, providing a more reliable way to manually script agents and to guarantee actions are validated and executed correctly.
+The critical flow mode for AI agents was brushed up too. While in this mode, action-execution errors are still reported but can now be handled with specific fallback, allowing the flow to proceed instead of failing and potentially stalling. This is still in progress and will be further enhanced going forward.
+StarScript improvements are still being made as the team improve the tool following feedback from the devs. Finally, Subsumption content data improvements were made to reduce errors going forward.
+## AI (Game Intelligence Development Team)
+In September, the Game Intelligence Development team focused on completing the next milestone for Mission System 2.0. They’re currently breaking down the work and discussing the best possible path to approach the implementation.
+They also continued to fix bugs and performance issues, and worked on features suggested by the designers to improve StarScript.
+## Animation
+The Animation team continued to work on an upcoming creature and ‘boss’ fight alongside supporting a new mission giver.
+Facial Animation progressed through new performances that were captured in late August. These include characters that will be present in multiple upcoming releases, including a returning air-traffic control voice.
+The Animation, Narrative, and Mo-cap teams also planned for their next shoot, which will be held at the beginning of October.
+## Art (Characters)
+The Character Art team finalized both new armors and a new gang. Work also continued on polishing the Yormandi.
+The Concept Art team continued iterating on new armors.
+## Art (Ships)
+In the UK, work continued to bring the RSI Aurora and Aegis Hammerhead up to modern standard. The Aurora progressed through the LOD0 and Final stages as improvements were made to the component bays, bed access, dashboard placement, entrance method, VTOL setup, and cargo access on the underside.
+For the Hammerhead, focus was on implementing the improvements made to the base corridor kit from the recent Idris release, alongside making sure the component bays and relays are suitably placed and accessible.
+The Paladin progressed into the LOD0 phase, with final adjustments being made to the main quad turret to ensure its movement is unhindered in both flight and landed states. The downstream teams kicked off their work on the ship too.
+The MISC Hull B is now well into the whitebox phase. The majority of the interior was implemented to the required level, while adjustments are currently being made to the exterior mesh to meet the gate requirements.
+Following last month’s work, the Drake Ironclad and Ironclad Assault (plus the updated Command Module) are approaching their combined whitebox gate review.
+Four unannounced vehicles also continued development throughout September. The first is approaching its LOD0 review, while the second progressed through the LOD0 gate and is now in its final stage.
+The third, a variant of a popular recent release, is receiving greybox and LOD0 work in tandem due to the nature of the changes. The fourth passed its greybox review early in September, with the LOD0 work due early October. Some of the downstream teams began their tasks too.
+The North American teams began the month finalizing fixes for the RSI Apollo ships ahead of their release. Various optimizations were also made following player use in the PTU.
+LOD0 for the RSI Perseus was also passed early on in the month, with the team moving onto the final touches and downstream teams beginning to close out the ship.
+The whitebox phase officially kicked off for the Drake Kraken in the latter half of the month. Last month’s preproduction phase led to numerous improvements and adjustments to navigation, flow, and interactions throughout the ship.
+Two unannounced vehicles progressed too. One moved through the greybox phase, while the second entered whitebox.
+## Community
+The team kicked off the month with the grand finale of this year’s Ship Showdown, where the RSI Polaris claimed the crown. To honor the champion, all backers will receive an in-game commemorative Polaris-themed holographic banner at this year’s Intergalactic Aerospace Expo (IAE). The Anvil Asgard, Anvil Gladiator, and RSI Zeus MK II ES rounded out the top four - all four will receive new 2955 Best in Show paints and posters at IAE.
+Ship Showdown was not the only race to reach its conclusion. The Race for Stanton also crowned its champion, with Hurston Dynamics amassing a staggering 337,131,104 SCU to secure victory, followed by microTech, Crusader, and ArcCorp.
+Pirate Week sailed into port as crew and corsairs proudly flew their colors in the Pirate Flag Design Contest. The team charted the course for the Treasure Hunt by crafting riddles and clues that sent players searching across Stanton and Pyro, while each This Week in Star Citizen during the event spotlighted a pirate organization.
+To support the release of Alpha 4.3.1: Virtue’s Descent, the team published a catch-all post, updated the Onyx Facilities FAQ, and released a dedicated Q&A for the newly flyable RSI Apollo. They also worked closely with internal teams to track sentiment and community feedback, ensuring community notes landed in the right developer hands.
+The team also continued their evergreen tasks, which included publishing This Week in Star Citizen, bi-weekly Roadmap Updates and Roundups, and other updates, such as Monthly Reports like this one. They also gathered pressing questions from the community, followed up with developers, and assembled Comms-Dive #3, which provided detailed answers on topics ranging from ship lights to upcoming UI improvements.
+The Bar Citizen World Tour made two exciting stops in Lisbon, Portugal, and Rome, Italy.
+“We had an incredible time connecting with the community in Portugal and Italy, both of which hosted incredible events!” Community Team
+Finally, CitizenCon Direct 2955 is almost here. The team is working closely with community organizers on several CitizenCon Direct Watch Parties, with key members of CIG attending events across North America and Europe. Be sure to check the locations to join the celebration.
+## Core Gameplay
+As part of ongoing medical gameplay improvements, the team provided support for bespoke ‘take’ and ‘place’ animations, and reworked the implementation of players clearing their respawn point in vehicles. Bug fixes were implemented for the medical screen, along with improved validation to make it easier to spot errors.
+Tiered medical bed spawn ranges were reimplemented for more robust compatibility with Server Meshing. Additionally, new controls were exposed to the designers that allow them to control healing cost per medical bed tier, while additional data was exposed to the UI designers to add new information to the medical screens.
+For engineering, the team continued iterating on playtest feedback and hardening the feature ahead of wider-scale testing.
+The Vehicle Command Module feature continued through its pre-production phase, with the devs completing the prototype and technical design. Additional debug tooling revealed various issues with the underlying docking system, prompting an effort to fix critical flow issues.
+Flight gameplay also progressed throughout September. AI can now correctly utilize Control Surfaces in-atmosphere and adhere to their velocity goals. Annunciators are no longer required to be attached to a dashboard to be functional, allowing for more flexibility in cockpit design. The team also prepared for focus testing of the improved flight model.
+The ongoing inventory rework progressed with the implementation of equipment and equipped-item slots. Further functionality was added to the paperdoll UI and search bar. The team also exposed controls to help Design define the rules for proximity looting.
+## Economy
+The Economy team began the month exploring how to make the players’ impact on freelancing commodity trading more impactful and longer lasting. In the process, they adjusted offer and demand at some locations while tuning profits to fit the current level of the economy.
+The team then evaluated the data on the drop rates of some rare items and made them more prevalent.
+The cargo manifests found in spawned ships were also redesigned so their value doesn’t undermine the intended gameplay for certain missions.
+## Mission Design
+Mission Design began September finalizing the last narrative mission for the ASD facilities before looking forward to the rest of the year’s content. They also began removing old factions players will no longer work with and reorganizing the ones they will.
+Alongside this, the team reviewed bounty missions and added comms notifications for the mission provider. This is part of the ongoing initiative to bring older missions up to standard.
+Mission Design also worked alongside Engineering to solve long-standing issues with spawn closets and made more fixes to the mission-generation systems.
+## Narrative
+In September, the Narrative team focused on tasks to help close out the rest of the year strongly. They focused on crafting scripts that will add additional dynamic conversations, a new Covalex mission representative, vendors, and customers to the game, and spent time generating mission text and lore discoverables for several upcoming events.
+Narrative then worked alongside with the Environment Art and Branding teams on the signage and environmental storytelling for several incoming levels.
+Time was also spent planning narrative initiatives for the next year. This was an excellent opportunity to learn from the recent releases and continue to strengthen the players' narrative experiences across the game.
+## Online Technology
+Last month, the Live Tools team updated the error reporting pipeline, including moving panic migration from Heap to Laravel. The panic webapp tool can now configure stream settings, removing dev time by allowing users to define the configuration of each stream themselves. The symbolizer was also rewritten to be event-driven, making it more stable and scalable.
+Progress was made on a new webapp to configure Bootstrap settings, which will provide a more accessible display for its users.
+For Hex, implementation began of the audit-log UI that will extend the system’s filtering and sorting capabilities. Concepting for Hex 4.0 continued too.
+The Online Services team continued to work on item recovery and the blueprint service, alongside continued bugfixing and support.
+## R&D
+In September, the R&D team’s focus remained exclusively on analyzing performance and optimizing engine and game code.
+## VFX
+For Alpha 4.3.2, VFX finished up their tasks for the ASD locations and final event work, while the RSI Apollo Triage and Medivac received their VFX passes. Production continued on the Yormandi and its related locations too.
+VFX passes also began for vehicles coming later in the year alongside pre-production for upcoming locations and missions starting in the next week or so.

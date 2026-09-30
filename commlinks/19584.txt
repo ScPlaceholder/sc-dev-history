@@ -1,0 +1,68 @@
+Squadron 42 Monthly Report
+October 2023
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 11:01:2023
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 Recruits.
+Welcome to October’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including updates to ship repair animations, a key combat sequence, and medical scenes.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Content)
+In October, AI Content’s focus was on reviewing the functionalities showcased in the ‘I Held the Line’ video shown at CitizenCon, specifically the Stanton’s hangar, med-bay, and new gym area.
+For the hangar, the team concentrated on the visual quality of the deck and utility crew animations. This involved fine-tuning their interactions as they go about their tasks, such as repairing and inspecting the Gladius. Moreover, AI Content incorporated responsive behaviors for NPCs on the hangar sidelines. These characters now dynamically react to the player's actions in the cockpit, significantly amplifying the immersive quality of the in-game environment.
+In the med-bay, focus was on ensuring that animations transitioned smoothly and seamlessly. A new sat-up, sleeping patient was also added to the med-bed; the doctor periodically scans the patient to check their vital signs, which is part of the medical behavior system.
+While not directly related to ‘I Held the Line,’ part of the team worked on a new gym area, setting up usable items like treadmills and dumbbells. NPCs will use the treadmills for running exercise and lift dumbbells for weight training. After these exercises, they will return to a seat to recover before continuing their activities.
+## AI (Features)
+Last month, AI Features focused on gameplay functionality for a key combat encounter. The enemy now learns when the player exploits an attack pattern, damage rates were increased, and weapon cooldown was decreased to ramp up the challenge over the course of the fight. The collision-avoidance system was also implemented to allow the enemy to navigate around obstacles that the player can use in the fight.
+The team then made balance changes to fight tactic TPS queries so that the different tactics (pusher, strafer, and defender) feel more distinctive.
+They also continued to review cover usage, which generated numerous fixes for how NPCs find and move to cover, step out to fire, and exit, particularly when in defend areas.
+AI Features are currently developing an all-encompassing test level for combat that will allow them to test all of their features together. There, they can add various parameters and select different enemies with varying combinations of traits. This new level will be used to test combat consistency across the PU and SQ42 and will provide a solid place to test improvements and bug fixes to AI combat and its related functionality. For example, ammo usage, mounted weapons, attack and defend areas, medics, accuracy, and stealth gameplay.
+## Animation
+The team continued streamlining combat animations, working on the skill-level-one takedowns as well as interactable animations in the environment. They’re also working on the first-select animations for weapons and their malfunctions, continuing to capture animations where needed to complement scenes and locations, and working through the various facial animations for story performances and ambient dialogue.
+## Audio
+Throughout October, Audio implemented and polished sounds for ‘I Held the Line’.
+“Using our newly created multi-band compressor, we improved the weapon sound effects across all guns in Squadron. We also designed some more cinematic assets and provided Foley to key animations throughout the trailer.” Audio Team
+Tech Sound Design spent time ensuring the tech-demonstration videos had the proper sounds and the desired synchronization and timings occurred. Vast improvements were also made to the team’s vehicle systems.
+Audio Code generated new tech that will bring SQ42’s sounds to life and fixed any bugs that came to light.
+The Dialogue team supported content polish for CitizenCon by fixing bugs and implementing the latest dialogue recordings. They also plugged in the breathing system to provide a more immersive experience.
+Development of the Walla system continued too, which will help to create a lively experience as players explore the world. October’s work included a series of internal test recordings.
+## Engine
+The majority of the Engine team’s work last month involved preparing for CitizenCon.
+“All teams were hands on deck to deliver features and support other teams on work related to what we showed at CitizenCon. This is always an interesting time, as it is very stressful but also rewarding when everything comes together due to the focused effort.” Engine Team
+The Core Engine team primarily worked on bug fixes for the live release, including some long-standing memory leaks on the live server.
+The Physics team focused on delivering improvements to the Maelstrom destruction system and cloth and hair tech.
+Lastly, the Entity System Tech team supported the Online team to deliver the Server Meshing demo while continuing to work on editor entity streaming.
+## Features (Gameplay)
+Last month, Gameplay Features polished the new character customizer, working on skin texture and tone, freckles, blemishes, eyes, makeup, and much more.
+On the new Starmap, the team worked to get the markers and labels working correctly on planets. This involved enabling the magnetic cursor to snap to icons, implementing the search box, and a variety of smaller improvements.
+Work also began on a new SQ42-specific frontend, making it feel like an extension of the game world. It will feature a changing environment reflecting how far through the campaign players are and be populated with collected items.
+They also added a sim-pod UI screen to allow players to select which simulation they want to play, seamlessly transition into it, and view ‘how did you do’ screens upon completion.
+## Gameplay Story
+Much of Gameplay Story’s October involved focusing on reviewing new content seen during the ‘I Held the Line’ video. As part of this, they expanded their scenes with the hangar deck crew, adjusting idles and welding animations for the character on top of the Gladius and updating the ladder-climb animation to fix some clipping. They also added more idles to the deck-crew character in the cockpit and added the new mobiGlas effect to the refueling character.
+In the med-bay, various bugs were fixed relating to handheld props, while additional interactions were added to the medical consoles.
+Alongside this, Gameplay Story used some new mo-cap to extend their first scene in chapter one, created a long idle for an early group scene, and added some player-injured lines to the med-bay scenes.
+## Graphics & VFX Programming
+For the Graphics, Planet Tech, and VFX Programming teams, the majority of October was spent touching up the many features demonstrated at CitizenCon, including the water simulation, global illumination, Maelstrom, fire, and rifle scopes.
+The Vulkan sub-team continued tackling the remaining performance and stability issues.
+## Social Narrative team
+In October, the Social Narrative team supported the preparation for ‘I Held the Line’, including the landing and take-off scenarios in the Idris' hangar.
+“Landing is something we’ve been focusing on recently, including tactile deck-crew interactions with both your ship and your fellow wingman, Old Man.” Social Narrative Team
+Work was done on the NPCs repairing the landed Gladius (featuring new welding animations), inspecting the cockpit, and refueling. These animations were layered on top of the systemic AI to move the hangar experience closer to the team’s overall expectations.
+Away from ‘I Held the Line’, the team continued to focus on the Idris interstitials and Fortune's Cross location. For example, they revised a number of medical-room scenes. Previously, medical staff involved in a narrative scene wouldn’t reference the fact that the player could be injured. So, Gameplay Story provided Level Design with new content that addressed this issue, which involves the medical crew pausing at multiple points to tell players to head to the healing station if injured.
+## Narrative
+The Narrative team spent time finalizing content captured last month to get initial animations and audio passes into the game so they could experience the moments in situ. They’ll continue to sync with the Design teams to review the levels as this content is implemented.
+Meanwhile, Narrative continued their work completing the text requirements for the game. As mentioned in previous reports, this includes all the message exchanges that the player will receive (for both gameplay and social messaging), reviewing mission objectives, adding Galactapedia entries, and looking at other environmental content to help sell the story and feel of the various locations.
+“On a personal note, it was tremendously exciting to meet all of you who came out to CitizenCon and hear your reactions to the update video.” Narrative Team
+## R&D
+In October, time was dedicated to cloud-shaping improvements, which will allow the team to author more varied cloud content. For example, it is now easier to break up cloud fronts. The improvements also provide more flexibility in blending shape noise at height. As a result, the consistency of short vs. long-distance reads was improved and tiling from orbit is less noticeable. More improvements are planned, particularly with regards to improving details at cloud fringes.
+The first iteration of ground fog was also made available to the content teams, which follows terrain up to a specified height per location and fully integrates into the atmosphere. As a result, it receives volumetric shadows from both clouds and terrain along with dampening direct and indirect light scattered through the atmosphere into the view ray.
+Moreover, support was added to cast volumetric shadows from clouds into the atmosphere. This includes various optimizations to sample and evaluate volumetric cloud shadows. As a byproduct, volumetric cloud shadows now also update lazily to further reduce cost when the camera or sun isn't moving significantly. Cloud shadow quality at low sun angles was also improved by compressing the available space in the shadow map to allow for more details around the camera. Additionally, a few long-standing issues with cloud rendering have been fixed. For example, the ghost lines on clouds that were occasionally visible when looking at them and towards the virtual planet horizon were fixed, and the setup of LOD constants for cloud-shaping-related texture lookups was updated to avoid excessive blurring when rendering clouds at half resolution.
+Lastly, work on ground fog resulted in various optimizations as well as a fix for subsample-sized holes in planet terrain height maps. These height maps are used for various purposes, such as building planet terrain shadows or spawning GPU particles on the ground. The latter was especially subject to those holes as they could cause infrequently erratic spawning of particles.
+Looking forward, work on the new temporal cloud render mode will commence in November.
+## VFX
+Last month, the VFX team continued working on several cutscenes alongside the Cinematics team. They also continued polishing effects for various locations, some of which were revealed at CitizenCon.
+Several improvements were made to existing weapon and gadget effects, while dynamic fire effects were polished for Squadron 42 and a future Star Citizen patch release.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

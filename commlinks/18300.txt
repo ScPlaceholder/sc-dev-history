@@ -1,0 +1,74 @@
+## This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 09:01:2021
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 recruits.
+Welcome to August’s Squadron 42 development report. Enclosed you’ll find details on the latest progress made across the campaign, including updates to key cinematics, additions to essential vehicles, and engine developments that will benefit the whole project.
+Thank you for you continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Content)
+Throughout August, AI Content supported Level Design by creating a new ‘worker’ behavior. This enables the designers to apply traits to the various AI archetypes, refining which usables they use, such as sitting, leaning, inspecting, and cooking.
+The team modified various usables to utilize the first reaction system, which allows NPCs to break out of usables during animations. For example, if an NPC is typing at a console and hears a gunshot or sees an enemy, they will stop typing and react appropriately. This was completed for the standing and sitting console, leans, seats, stairs, railings, search spots, attack spots, and more. They’re currently working with the Engine and Animation teams to improve the visuals.
+## AI (Feature)
+AI Features continued to work on combat scenarios. Throughout August, they improved visual perception by adjusting the field-of-view form and exposing more information for the designers to tweak. The aim of this is to create a stealth combat mechanism from the player’s perspective, which requires adjustable perception timings and field of view.
+New functionality was also added to the tactical point system. This enables it to compute path distances when selecting viable relocation points or cover locations during combat, rather than just direct distance. NPCs were also set up to use missile turrets.
+## AI (Tech)
+AI Tech improved the pathfinder system to work with planetary navigation mesh tiles, enabling them to place NPCs on planets and move them from one location to another. They also started the work for generating planet navigation mesh automatically based on a player’s proximity.
+One feature delivered this month allows the player to lead a formation of AI ships. This was initially requested for Squadron 42 but should be available in the PU in the future.
+Improvements were also made to the collision avoidance system, including physics optimizations for obstacle queries and a small restructure of related data.
+Significant effort was also directed at improving AI design paths and how NPCs follow them. As the design paths can be quite complex with multiple branches, they were updated to allow NPCs to follow them from any starting place.
+Work also continued on the Subsumption editor, this time completing the multi-graph view.
+## Animation
+The Animation team progressed with zero-g traversal, Vanduul combat, medical-gun self-healing, and various story scenes. The Motion-Capture team supported a story shoot, while the Facial Animation team finalized animations on the newly improved head models.
+For level gameplay, the AI team worked on a useable that exists in one of the level environments to give it life, story context, and provide an opportunity for stealth gameplay. They also supported Tech Animation in pursuit of a more tactile feel to interacting with player outfits, and planned an upcoming Vanduul mo-cap shoot.
+## Art (Characters)
+Character Art continued with their ongoing polish and update passes for character heads, all of which incorporated the new eye assembly and skin shader developed last month.
+They also updated many of the crew outfits and officer uniforms to elevate them to the current quality level. Tech Design also updated their zoos, systematically going through hair, skin, and DNA for the entire project.
+## Art (Environment)
+Environment Art worked on locations for the quarterly milestone, assisting the Flight Design and Cinematic teams in bringing spacescapes and internal spaces to life in the game’s opening chapter.
+“We’ve been super proud of the team’s progress over the past few months and we are extremely excited moving forward in bringing Squadron 42’s environments together.” – Environment Art Team
+Elsewhere, focus was on Archon station and chapters 7, 15, and 19.
+## Cinematics
+At the beginning of the month, Cinematics closed out the remaining tasks on a significant sequence for the Q2 milestone. The sequence features Cydnus mining ticks, and the team ensured the cutaway properly highlights the animation of the articulated legs to help the related teams properly close out the vehicle.
+For the Q3 milestone, the team revisited earlier sequences in the game’s opening chapter to bring them one step closer to final delivery. They can now animate all the bridge consoles and chairs on the Bengal carrier, which wasn’t set up when they last worked on major sequences in that location. So, their most recent pass included proper chair, screen, console, stick, and throttle animations alongside the motion-captured animations.
+“In tradition with other sci-fi universes, there are of course no seat belts on those bridge seats, so when the ship gets hit, we have some nice wiggling and shaking going on.” – Cinematics Team
+The Bengal’s bridge is huge, with the area around the captain alone having eight seated officers, so the team spent time ensuring the whole area had proper animations and polish. For example, crew members properly looking at events or characters.
+Cinematics also improved the blockout for an ‘escape’ level, which is in a state where it’s “safe” to polish the various splines throughout the sequence. This also shows the level artists where they could polish and add further meshes or detail.
+On the character side, a lot of important sequences are now in a state where the team can assess how the current hairstyles and costumes look on key actors. For example, Gary Oldman playing Admiral Bishop.
+Finally, they received a selection of special enemy ships and the ability to animate the M50’s cockpit controls, so lifted a related cutaway to the next level.
+## Engine
+In August, the Physics team progressed with physical quantum travel. In their development stream, they now have a proper quantum grid (per solar system) and a quantum-obstacle component that registers an analytical representation of an obstacle. Some to-be-sorted issues aside, they can now make the equivalent of a blind quantum jump and drop out before hitting a moon along the travel path.
+They also continued to improve performance. Among other things, the destruction of static physical entities now runs time-sliced, while querying and processing parts of a physical entity during collision detection was improved. The physics system code cleanup continued too. For example, the physical world’s time-step function now makes individual phases of the time step clearer.
+The transition to the Gen12 renderer progressed throughout August. Shader activation was made thread-safe and no longer requires explicit synchronization via locks, volumetric fog volumes now run natively in Gen12, and the team refactored the use of several reflected shader parameters throughout render code and shaders. Tint support was added as well as scattering query support for forward-shaded objects, and several pieces of legacy code across the renderer code base were cleaned up.
+Regarding atmosphere and volumetric clouds, time was spent reworking the reprojection and filter chain to ultimately allow raymarching at lower resolutions for improved GPU performance. Improvements were made to the placement of samples for raymarching. This involved reprojecting results from previous frames, filtering and denoising cloud depth, and up-sampling inscatter and transmittance results to full resolution for various problematic view scenarios. These scenarios include orbital views, scenes with high depth complexity, and any scene with strong camera movement. This is all still work in progress, though the team hopes to roll it out shortly.
+Work was submitted to improve cloud shading by better blending between forward and backward scattering inside them, which is important for rendering the silver lining. Moreover, improvements were made to the look of cloud edges to give them a more volumetric feel. The stepping code for local cloud shadow details was reworked to allow more details for the same performance cost.
+On the core-engine side, time was spent optimizing the low-level system. For example, various improvements were made to CigFunction, which serves as a vehicle to capture and pass C++ lambdas (in this particular case code and data for deferred asynchronous execution as a job). The next focus was optimizing the entity unloading stalls plaguing the PU. As a result, several entity-unload bottlenecks were rectified. Furthermore, the management of component events was optimized and code to create and destroy them improved.
+Work was also done to deliver multiple optimizations in the spatial culling system, which will be used for server meshing. Lastly, the entity component update scheduler was changed to allow more than one update per component pass to enable the more flexible use of components.
+## Features (Gameplay)
+The SQ42 Feature team improved the scripting setup of the checkpoint tool. The initial implementation was completed, allowing Design to begin cleaning up their scripting.
+They’re currently adding new functionality for Object Container Streaming to better control what’s loaded in an area, which will allow them to enable it in more locations.
+Temporary UI and nodes were also prototyped to allow the player to dynamically change their character’s gender, allowing Design to see how it fits into the game flow.
+## Gameplay Story
+August saw the Gameplay Story team update the helmet attachment method across all scenes in chapters 1 and 16. Further work is still required, but they’re pleased to see the helmets beginning to function correctly.
+Chapter 4b received several updates: a complicated scene was completely mirrored, two scenes had superfluous footsteps removed, and several scenes in the mess hall were updated with a new, bigger bowl. Gameplay Story also assisted Cinematics with animations for the deck crew during the take-off sequence.
+The biggest visual update of the month was to a key ship that now has a large, animated welding arm at the front. So, the team finalized several scenes with characters using and interacting with it.
+## Graphics & VFX Programming
+Last month, the Graphics team progressed with the render-to-texture system, which is receiving a mini-overhaul to cope with some new UI systems that make extensive use of 3D icons and compositing, such as the personal inventory.
+They enabled dynamically rendered textures to be cached to allow them to generate a large number of high-quality, super-sampled images with minimal cost. They also dynamically reduced texture resolution in out-of-focus areas to reallocate more resources to the rest of the game.
+For Gen12, the shadow and real-time-probe systems were converted and will soon be activated by default. Streaming of real-time probes was also completed and enabled.
+Alongside this, they began adding support for refraction into the GPU particle system, matching the functionality of the CPU particle system and surpassing its visual quality. This marks the end of a long-standing goal to implement counterparts of all legacy mesh and sprite functionality in the new CPU particle system.
+The VFX Programming team also continued with the fire hazard system. It now utilizes the new compressed physics render-mesh, which obtains accurate surface data without relying on lower-resolution and lower-accuracy physics proxy meshes. The way fire spreads through doorways was improved too.
+## Level Design
+The Space/Dogfight team continued the AI implementation for friendly, neutral, and hostile ships. This is an ongoing process alongside the AI Feature team, who are still in the process of developing features like quantum travel boost and scan pulse. They also worked closely with the other Design teams to ensure that the player experience is seamless.
+The Level Design team utilized extra resources to focus on the game flow and pacing details in various chapters. Social Design continued to implement all in-game scenes for review and sign-off.
+## Narrative
+As Art and Design continued to develop the game’s various levels, Narrative began determining what kind of additional documentation was needed. This included a variety of locations requiring sign and branding updates along with proposals for the types of NPC populating the areas.
+Following Design completing a key set piece, the team generated scripts for additional narrative vignettes and wildlines that better reflect the current game flow and story moments. As with other sequences, Narrative will work with Audio to generate placeholder recordings for Design to implement in the level. Once in place, Narrative will iterate on and refine the lines to ensure they have everything they need before organizing a capture session with final performances.
+The team also began initial discussions into their next mo-cap shoot, which included completing some of the work that was postponed due to the pandemic.
+## QA
+QA continued to provide Cinematics with level recordings for review and supported the dev teams by testing changes and investigating issues.
+Support was also given to the AI team, testing their various implementations throughout the campaign. Video recordings were captured and reviewed weekly to ensure that new behaviors and fixes are in line with the intended direction.
+## VFX
+Last month, VFX focusing on a significant space battle scene that features a mixture of cinematic and in-game vehicle destruction along with various cinematic background sequences. The team are putting several techniques and workflow processes to use that they learned while working on a huge destruction sequence in Theaters of War, which proved to be a valuable testbed for Squadron 42 as well as the PU. These techniques include combining bespoke, offline simulations done in third-party software, such as Houdini, with in-engine destruction and particle effects. Work also commenced on a fire propagation sequence that takes place within a key interior location.
+## WE’LL SEE YOU NEXT MONTH…
