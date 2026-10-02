@@ -1,0 +1,129 @@
+Star Citizen Birthday 2020 AMA Recap
+## Each month we host an open submission live Q&A on Spectrum hosted by developers from various specialties across CIG. These questions and answers were collected from the Spectrum AMA on October 9th, 2020.
+While our standard AMAs tend to be focused on a specific topic, for our Birthday we welcomed three special guests joining us today to take any and all of your questions about Star Citizen:
+- Chris Roberts – Founder & CEO
+- Todd Papy – Star Citizen Live Director
+- Tony Zurovec – Persistent Universe Game Director
+This AMA is complete but keep an eye out for upcoming threads for your chance to ask us anything!
+## So what’s the deal with Theatres of War?
+Todd Papy:
+Currently being worked on and tested, ideally Sean and Rich will give an update to everyone once it is ready for everyone to play.
+## What is preventing random FPS AI from appearing on planet/moon surfaces outside of missions or set locations? Is this planned to make the planetary surfaces feel less empty?
+Todd Papy:
+We need some Planetary Nav Mesh work done, we have a fair amount of it completed. Then once that is done we can start to implement it into missions or random encounters. When that is done AI will be able to transition from Ship to Surface smoothly. This will also open us for building creatures (space cow or larger animals) or boids (very small creatures..frogs, birds) to add extra life.
+## Death of a Spaceman was written way back in February 2013. Obviously, there have been some changes since then(e.g. landing zones were planned to have an in-engine cutscene v. now players pilot in manually which is way cooler in everyone’s opinion). While this is probably currently undergoing a design rework, could you tell us what you know to be different now, and what some possible plans are? What’s changed?
+Chris Roberts:
+Later this month there is going to be a Calling All Devs episode on “Death of a Spaceman” with myself and Richard Tyrer, Core Gameplay Director (which includes the Actor teams), where we’ll go into the current plans, which you’ start to see the results of mid next year as we begin to bring in Medical gameplay. So watch for that as we’ll go into the current design which is ready for implementation.
+## How do you envision NPC crew gameplay?
+Todd Papy:
+First steps are building out the player functionality to those roles (Captain, Engineer, etc) similar to pilots and turret gunners. We currently have some of those AI functions, like flying the ship, but we would still need to build the “glue” for AI, like what they do off duty. The capt/owner of the ship will need a way to set what roles he wants the NPCs to do. The Capt will also need a way to interface with the AI to tell them what they want them to do, like fly to a set location or attack a certain target.
+We are still planning to allow players to take remote control of the NPCs.
+## What is the plan for computers and the blades? Currently we only know about using blades for turret automating and slaving, do you have any other ideas currently for what blades could be used for?
+Todd Papy:
+Here is some things that have been discussed that are being thought of for hardware (new blade) or software (loaded on computer or blade), these would be types of ideas that we would bring online over time:
+- -Missile Defense System (Combat) – Automatically fires correct countermeasures to avoid being hit by missiles
+- -Encryption/Decryption Blade (Data Runner) – Able to keep data encrypted to prevent theft and also provides the means to attempt to decrypt data.
+- -Emissions Controller (Combat) – Allows the pilot to set strict limits on emission production, providing additional warnings and shutting down unnecessary systems automatically.
+- -Offensive E-War Blade (Combat) – Enhances existing offensive e-war capability, could speed up or strengthen offensive programs/viruses or offer new ones to run.
+- -Defensive E-War Blade (Combat) – Enhances existing defensive e-war capability, grants further protection and reduces potency of offensive programs.
+- -Mining Blade (Mining) – Speeds up mining scans and provides additional information (pinpointing pockets of ore, mineral density etc.)
+- -Salvage Database (Salvaging) – Speeds up scanning wrecks and provides additional information (pinpoints valuable ship items, shows materials contained within wrecks etc.)
+- -Criminal Database (Bounty Hunter) – Provides a list of known criminals or unlawful activity and the ability to accept bounties to track them down and bring them to justice.
+- -“Hit List” (Pirate) – Similar to the criminal database but to be used by criminals. Bad people can view and accept contracts to take care of people.
+- -Enhanced Route Navigation (Trade / Exploration) – Essentially enhanced starmap/navigation options. Lets the pilot know how dangerous the route is that they are taking, enables them to pick routes based on speed, safety or avoiding certain areas.
+- -Trade Database (Trade) – Allows traders to view buy/sell prices in different places in the universe while on the move, rather than having to be at a trade station.
+- -Shield Management Blade (Combat) – Provides advanced shield control options to allow finer control.
+- -Stellar Charting System (Exploration / General) – Makes it easier to discover jump points if/when they move elsewhere, possibly also makes jump travel easier.
+- -Item Lock Blade (Combat) – Further enhances the targeting system to allow the pilot to lock onto specific parts of the ship, so they are able to take out individual systems.
+- -Cargo Manifest Masker (Smuggling) – Disguises the items in your cargo manifest to allow you to hide contraband from initial ship scans.
+- -Internal Security System (Larger ships) – Provides internal ship info, positions of lifeforms aboard the ship and the ability to lock/unlock individual doors.
+- -Drone Management Blade (Larger ships) – Allows ships to control on-board drones
+## What milestones are left to create dynamic missions?
+Tony Zurovec:
+One of the larger remaining issues relates to the fact that the current mission UI and associated logic aren’t able to deal with real-time parameters and need to be converted from Flash to Building Blocks. This is also related to why more Service Beacons haven’t been introduced, as UI development with the old system is far slower than with the new tech. Quantum is starting to inject some of its simulation data into the back-end services, which the Dynamic Mission Service requires to make these customized missions available, but the first stages involve only a few distinct types of scenarios. Dynamic Events, on the other hand, are routed through the same system and are a bit more mature, and the first demonstration of that tech was last Spring’s Fleet Week, which was activated for only a brief period of time and which existed across all servers. We’re already in the process of constructing more of these dynamic scenarios, some of which are far more sophisticated.
+## Can we have an update on Quantum and Quanta?
+Tony Zurovec:
+We’ve spent a lot of time and effort optimizing the simulation and are now doing tests with as many as two million quanta, but it looks like we won’t need more than 100K per system to get the desired effects. We’ve started to connect some select bits of the simulated data to the backend services that feed the game servers, with things like fuel and repair prices, encounter types and frequencies, and Service Beacons first in line. This will have some dramatic effects on the gameplay experience as it’ll mean that previously disparate things like pirate activity, calls for help, and the price of repairs in an area will finally start to feel like they’re all connected.
+## Out of many gameplay loops such as mining, exploration, cargo hauling and bounty hunting. Which one of these is your favorite, and which one of these do you see to be most fleshed out in the upcoming future?
+## As I’ve talked to some people, bounty hunting seems to be a joke around the Verse. As currently there isn’t a way to utilize the cryopods for example. And catching individual bounties dead/alive is not a thing yet.
+## Are these some of the things that are going to get ironed out once the core gameplay mechanics are finished, and then polish each individual “profession” as it’s needed?
+Tony Zurovec:
+I’m particularly interested in Bounty Hunting. Right now the missions in this area are predominantly geared towards going somewhere and fighting someone, whereas the major enhancements we’ve got planned will make the hunting aspect a much larger part of the challenge. This will be the first usage of the Virtual NPC tech that allows characters to go about their lives regardless of whether any players are in the vicinity, and a new UI will allow bounty hunters to register to receive select bits of information to help with pursuing their prey, like feedback from Comm Arrays, ATC controllers, and NPC informants.
+## There are currently 95 systems, 324 planets, 74 moons, 50 space stations, and 76 asteroid formations in lore. In game and interact with one, we know another is pretty far along, and there should be 2-3 systems that have at least some progress based on progress we can see from Squadron trailers.
+## We have heard that tools can be developed to speed up the process, and you can look at the lore and see some systems are sigificantly easier to develop than others: Gurzil is just an asteroid field, Tanga is 3 hot planets and no landing zone, etc.
+## That all said it’s still hundreds of planets, moons, asteroid belts, and hero zones that you have to go. Even working at pumping out 10 systems a year it’d take you 9 years from tomorrow to get that all out. So without commenting on tools, what realistically is your plan here?
+Todd Papy:
+We are not ready to go full bore on all of the systems. We are building up the tools, knowledge, and people power to be able to deliver the systems quicker.
+Can’t talk about tools? That is what allows us to build faster and faster as they get refined! That is how we have adjusted building a moon in year to building one in 2 weeks. We have the same goals for Space stations.
+A lot of time and work goes into building up the asset packs. Once we have the assets built we can put locations and planets together fairly quick. Putting gameplay hooks into the locations will take time to place and make locations feel special. Obviously the quality and detail level of the solar systems that were initially planned in the very beginning of crowd funding has drastically changed over production of SC. Once we realized the detail level that we could go into with the planets and the landing zones, we wanted to push the limit of fidelity. Comparing SC to the Privateer/Freelancer systems, you are getting exponential amount of gameplay and detail on each planet and moon.
+We are trying to build up the team to deliver solar systems in one drop vs the iterative approach that we are currently doing in Stanton.
+## …pyro?
+Todd Papy:
+Yes!
+## Has there been any progress on the plans for data running and hacking? With the Mercury coming out and the Herald being all but forgotten it seems like at least a baseline commodity transport version of data running would be relatively easy and would add some new options.
+Todd Papy:
+It hasn’t been forgotten, personally it is one of the professions I’m looking forward to the most, we just have some higher priority work that needs to be completed first. We are focused on delivering big physical cargo first.
+## SQ42 is currently 6 years behind its original delivery target. Over recent years there has been little communication on updated delivery targets for SQ42. The last information available was the estimated SQ42 beta in Q3 2020 on the now abandoned roadmap. That date has now passed and there has been no communication on whether SQ42 has entered beta. As it stands the community has completely divided opinions on the expected release date of SQ42 with opinions varying from that SQ42 is in beta currently to it being 5+ years away.
+## You stated in the pledge: “We, the Developer, intend to treat you with the same respect we would give a publisher. You will receive regular updates about the progress of the game.”
+## Given the massive uncertainty on the progress of SQ42 within the community, do you feel as though you have been meeting this objective?
+Chris Roberts:
+Tomorrow we’ll be launching the inaugural episode of the “The Briefing Room” a show focused just on Squadron 42, which we are planning to do every quarter (3 months) until Squadron 42 releases, where we will address some of this.
+We haven’t been happy with how effectively we’ve been showing progress on Squadron 42, as we felt the previous format didn’t do a good job of all in communicating just how much work is going on. The new roadmap format which we’ve been working towards and on since we announced we would be changing it up will do a much better job in show what people are working on at any given time as opposed to just focusing on deliverable features. I briefly discussed our thinking here.
+Squadron 42 is a tricky project to communicate on as we really don’t want to give the experience and story away which can make updating on certain content or features challenging.
+We DO give regular updates on Squadron 42, even though we haven’t updated the Squadron 42 Roadmap since the beginning of this year with the monthly reports. The most recent one was earlier this week. We also occasionally have content or feature updates on things that will be in Squadron, as we did with the new Vanduul ships in the Inside Star Citizen Episode: Enemy Mine
+We also communicate way more than any other developer or publisher than I am aware of in terms of work and progress on Star Citizen, which is the game “The Pledge” was referring to; We have multiple video shows per week, lore updates, developers regularly engage in the forums, have a weekly newsletter and well as regular monthly reports.
+I don’t think the issue is whether we treat our community with respect, as that is core tenet of the entire company, or lack of communication; it’s different people want communication in different forms; some want in depth long talky videos, some want just the sizzle videos with pretty graphics. Some people want huge technical treatises on server meshing and others just want the ELI5 version and finally a lot of people just want to know when a feature or the game will be done.
+And I think that’s the crux of the issue; it’s impossible to please all the people all the time, and with a project as complicated as Star Citizen or even Squadron 42 it’s impossible to have iron clad dates due to the huge amount of ongoing R&D.
+So yes, I do feel like we have been meeting “The Pledge”.
+Does that mean we can’t improve?
+No, we can always improve, and if you follow CIG and Star Citizen close enough you will notice that we are always trying new things and tweaking existing processes both in our development approach and structure in how we communicate and share information with all of you. The new Roadmap will be part of this, as will the Briefing Room.
+Follow up from previous question:
+## I am sorry but this is feels like a non-answer. Can you please state at which stage of development SQ42 is? The old roadmap showed that it should now be in beta but based on the monthly reports that still mention prototyping I think it is safe to assume that this is not the case.
+Chris Roberts:
+- “…finally a lot of people just want to know when a feature or the game will be done. And I think that’s the crux of the issue; it’s impossible to please all the people all the time, and with a project as complicated as Star Citizen or even Squadron 42 it’s impossible to have iron clad dates due to the huge amount of ongoing R&D.
+Emphasis mine.
+I answered the question asked, just not the question YOU wanted answered :)
+You’re not really asking about what is being worked on Squadron 42, you really just want to know when it will be done. The best answer for your question is Squadron 42 will be done when it is done, and will not be released just to make a date but instead once all the tech and content is finished, polished and it plays great. I am not willing to compromise making a game I believe in with all my heart and soul, and even though everyone (including me) wants Squadron 42 sooner than later, it would be doing a huge disservice to everyone working really hard on the project and all of you that are looking forward to it to deliver something that isn’t great.
+The new roadmap will show how we are doing towards that goal and as we get closer to the end it will be more accurate but it will never be a perfect crystal ball of the future as there is always a certain amount of unpredictability in game development, especially when the game is hugely ambitious and has a very high quality bar; Red Dead Redemption 2, Last of US 2 and now Cyberpunk have all taken a lot longer than originally communicated and those projects didn’t even announce a release date until very deep into their production, when most of their tech had been resolved.
+We still have a ways to go before we are in Beta, but everyone on Squadron 42 is working very hard to deliver something great.
+## Last year at Citizen Con we saw NPC moving between physics grids and walking out of the Valkyrie. What is the current status of this?
+NPCs moving in and out of trains (which I guess is the same as the Valkyrie) would make cities feel much more alive in my opinion.
+Todd Papy:
+We currently have a few bugs that we need to work out, that will allow AI to path between ships, planetary surfaces, and man made locations.
+## Are rivers planned?
+Todd Papy:
+Yes
+## What are the plans to make those systemic missions less repetitive and more engaging?
+Todd Papy:
+Doing what we call mission modifiers and leveraging our unique locations.
+Take a basic mission of delivering a cargo crate from an outpost to a space station.
+Add in one or multiple of these basic modifiers:
+- -FPS AI that want that crate
+- -Ship AI that want that crate
+- -A cargo crate that is volatile
+- -Pick up is in a hostile location
+- -Drop off is in a hostile location
+- -List can go on and on.
+## Are there plans to introduce regular/randomized “world/universe” events?
+Tony Zurovec:
+Yes, this is a major area of focus. We call these Dynamic Events and there are multiple ones already in progress, and the plan is to ramp up these efforts even more next year. Fleet Week was triggered via this system – a temporary event that was activated across all of the servers. Going forward, though, you’ll see a lot more sophistication in the events. Some of these will be triggered systemically and others will be activated by us manually. Most will allow for customization so the amount of variety with even a modest library of such scenarios will be pretty significant. The ultimate plan is to periodically break up the routine with distinct events that serve to draw a lot of players to a common cause, although they might not always be on the same side.
+## Can you elaborate on the current thinking on how base building is supposed to work?
+Chris Roberts:
+We have some pretty exciting plans on the base building / player settlement front. One of the fall outs of iCache, which we’ve been working on for full persistence of state and location of all dynamic objects in the universe of Star Citizen, is that recording and restoring a building you’ve just constructed is really no different to remembering where you dropped your coffee cup on some distant planet, or which shelf you placed it on in your hab.
+Basically, iCache will enable us to allow all of you to settle the stars!
+When we first came up with the concept of player built outposts and land claims iCache hadn’t been technically designed, but now we have a system that will have a much higher degree of fidelity in remembering where each building or component is and what state it is in. So rather than just dropping down a singular Outpost, you’ll be able to place down various structures and connect them to things like power generators, turrets, resource collectors, hydroponic domes and so on.
+In parallel with this we’ve been working on tools to build settlements or homestead both for our artists / designers (more of a RTS god like view) and players (a first person view).
+With this we’ve been rethinking how the Pioneer will work to make her more flexible rather than just spitting out a pre-fabricated outpost we want her to me more of a mobile fabrication facility that would be near your building site. With a Pioneer you’ll be able build these structures without having to ship in the component parts as long as you have a supply of raw materials. You don’t need a Pioneer to build a homestead but if you want to build a decent settlement, or you want to build something relatively quickly as opposed to having to fly in prefabricated components from major landing zones you will want to have a Pioneer, or have a friend or someone that is willing to lend their services to you.
+We’re very excited about the gameplay that all of this will provide and can’t wait to see what kind of player settlements sprout up over the huge amount of land area the game has. We will need iCache in and working well before we will see this in the game, so expect to see some updates on this later next year.
+## Would you implement Pyro without server meshing?
+Tony Zurovec:
+Our current plan is to release both Pyro and the server mesh tech at the same time.
+## Chris mentioned the Room System in another post. How in-depth are you looking to go with the management of pipes are resources throughout ships? And will that also apply to Stations and Outposts?
+Todd Papy:
+Pretty in-depth, where you would have to reroute power and/or physically replace an item to keep the ship up and running.
+Yes, we are planning on doing the same for Stations and Outposts. Depending on the setup certain functionality might be accessible to the players and some might not be. For example, on a NPC ran major space station, the player probably wouldn’t have access to turn off gravity or life support in the common play area.
+## In 3.12, your plan is to introduce the push/pull mechanic for large objects, you have also mentioned introducing the tractor beam in the future. That being said, can these future mechanics be used to remove units of cargo off a ships?
+Tony Zurovec:
+Allowing cargo to be manually extracted from ships is high on our list of priorities and will be possible via the tractor beam, but will also require some revisions to the cargo grid system to make it compatible with local storage and iCache.
+## Disclaimer
+The answers accurately reflect development’s intentions at the time of writing, but the company and development team reserve the right to adapt, improve, or change feature and ship designs in response to feedback, playtesting, design revisions, or other considerations to improve balance or the quality of the game overall.
