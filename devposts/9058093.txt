@@ -1,0 +1,47 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12358556
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns
+- Wikelo Updates
+Known Issues
+- Battaglia - Mission / Instance - There's a chance the mission instance might not load
+- PU - Multi-System - ASOP / UI / Locations - Vehicle remains in claim status after insurance claim or free loadout selection (Could become marked as captured and require a recopy to PTU)
+- PU - Stanton - Siege of Orison V2 / Instancing / UI - Instancing elevators missing UI on Call Elevator panels
+- PU - Stanton - Siege of Orison - Missions / Instancing - There is a chance that the force field gate with the "STANDBY" label at Overworld will not open
+- PU - Nyx - Battaglia - Repeatables - Mission Content / AI / Narrative / Dialogue - Battaglia does not go through generic flow of Repeatable missions if they are available to the player (currently blocks mission 3)
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Features & Gameplay
+Recco Battaglia returns
+Recco Battaglia is back as one of the new in-person mission givers with three story missions that introduce players to Nyx, followed by a repeatable contracts. She is located in Levski inside of her workshop acting as a new instanced location. Recco's story missions take you through industrial mining, missing person boarding, FPS gameplay, and locating special people for her. Each one of the 3 story missions are sequentially unlocked once you build a reputation with Recco. Doing all the story missions unlocks special rewards and new repeatable contracts for Recco.
+Note: There is a known issue preventing Mission 2 completion, and as such mission 2 has been disabled in tonight's publish. This will impact the narrative flow but will be re-enabled in a future publish. Additionally, there is a chance an instance might not load initially for Battaglia Mission 1 and require you to to select the Employment Center again for it to load.
+Wikelo Updates
+We have added 3 new Wikelo missions for Armour, Weapons and a new Ship. The Mission for the ship has changed, Wikelo will now give you a blueprint on accept and ask you to craft the item and return it to him so he can give you the ship
+AI & Combat
+AI combat balancing pass for Siege of Orison.
+## Technical & Bugfixes
+- Fixed 3 Client Crashes
+- Fixed 2 Server Crashes
+- Continued conversion of CPU particles to GPU particles for improved performance
+- Potential Fix: Instance entry barriers could block eligible players from passing through after respawning.
+- Potential Fix: Entities in the exteriors of Pyro and Stanton stations now use a two-hour lifetime override for ship cleanup.
+- Potential Fix: TH-01 Propulsor is not correctly physicalized, therefore cannot be delivered once crafted and can brick elevators.
+- Potential Fix: Ship disappears when landing / leaving the Levski Hangar
+- Potential Fix: Missing navmesh in Orison object containers. An intrusive NPC idle spot has also been removed from an Orison location.
+- Potential Fix: Category filters in the inventory could overlap. An additional hover reset pass has been applied.
+- Potential Fix: The actor clips through the habs wall due to an incorrect bed exit animation upon spawning in the habs
+- Potential Fix: Sound effect issues with Battaglia and Super Heavy armour.
+- Potential Fix: Issues with The Collector mission at Wikelos Emporium in the Stanton system not being able to be accepted.
+- Potential Fix: Super Heavy armour — the ammo belt now uses the correct shader.
+- Potential Fix: Super Heavy armour — an arm prop has been replaced with the correct core prop.
+- Potential Fix: Super Heavy armour — a prop could incorrectly be interacted with and carried.

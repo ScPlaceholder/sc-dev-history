@@ -1,0 +1,13 @@
+Choosing a language has so many factors.
+- What frameworks are available?
+- How fast does it need to execute? Is it one off? Is it over time? Is it a looping response system like games?
+- Who will be working on the code base?
+- How well does it need to scale?
+- How well do you need to debug? what tools are available?
+- How quickly do you need to make revisions?
+- What language do the engineers know very well?
+- How well does the framework let you connect to a database for read/write operations?
+- and so on
+The truth of the matter is it made sense for that particular service.
+You can write the service to be in a few different languages depending on the needs of what it needs to operate on. We just primary stick with C++, C#, and a custom scripting language called ooz. For simple systems we stick with C# and ooz. For intense, large data, or operations that need to communicate with game code systems then we use C++.
+If it makes sense to use a language that gets you on your feet faster ( trusted framework and good tooling ) and within the response times ( dgs to services and back ) then use it. If that framework wont work then you build a system that will like our C++ services for persistence.

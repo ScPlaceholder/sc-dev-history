@@ -1,0 +1,2 @@
+No, your headset and OpenXR needs to be ready when starting the engine. Reason for that is that Vulkan needs to enable some extensions coming from OpenXR.
+Technically it is feasible, but this is extremely difficult to pull off since it requires to shutdown the graphics api completely and reinitialize it. Thats why you have to restart the engine as well when changing from Vulkan to DX11 or vice verca.

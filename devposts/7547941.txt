@@ -1,0 +1,88 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to all backers!  Patch should now show: VERSION 4.0.0-EPTU.9461556.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US/EU Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 4:6:500 (4 Servers in Stanton, 6 Servers in Pyro, 500 players total on the mesh)
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Tonight's build has many new inclusions for Mission reputation and Handyman missions.
+- Server Meshing
+- Pyro Star System and New Locations
+- Mission Refactor
+- Contested Zones
+- Jump Points
+- Advanced HUD View
+- Home Location Instanced Hangar Spawning
+## Known Issues
+- PU - Multisystem - Locations / Inventory / Actor - Local and Personal Inventory may disappear when force respawning (Workaround: Force Respawn again)
+- PU - Pyro - Rundown Station (R&R) - Checkmate - Locations / AI - AI are spawning out of bounds floating inside of the station
+- PU - Pyro - Rundown Station (R&R) - Multiple Locations - Locations / Physics / Vehicles - Players flying in the vicinity may explode consistently at random
+- PU - Medical Insurance Terminal / UI - Regeneration kiosk UI does not update after transferring imprint
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+## Features & Gameplay
+- Locations
+- Further Contested Zone Performance Polish Pass
+- Asteroid Base Interior Optimization Pass
+- AI
+- Quasi Grazer: Added More Variation to Sleeping Behavior
+- FPS AI Improvements to Find Cover System
+- Gameplay
+- Temporarily Disabled Sleep and Dance Emotes
+- Increased New Player Experience Mission Completion Reward
+- Updated all Easy PvE Bounty Rewards
+- Ships and Vehicles
+- Origin 400i: Thruster Power Improvement Balance Pass
+- RSI Scorpius: Increased Weapons Powerpool size
+- RSI Polaris: Ambience Audio Polish Pass
+- Reintroduced mass value to all ship thrusters (will help them be physicalized and not float in gravity)
+- Weapons and Items
+- P8-AR Ammunition Added to Further Shops That Sell Rifle Mags
+- Core Tech
+- Full ASOP and VMA Performance and Networking Polish Pass
+- Further Network Performance and Bandwidth Improvements
+- Hybrid Network Stability Improvements
+- Various Entity Physicalization Performance Optimizations
+- Foliage Touch Bending Performance Improvements
+- Quantum Travel Network Performance Improvements
+- Further Jump Point Tunnel Audio and VFX Polish
+## Bug Fixes
+- Fixed - PU - Loading Screens - When attempting to join a server in the PU, players may not connect to an "Authority Server" and eventually encounter a loading timeout (STARC-145171)
+- Fixed - PU - Tractor / Cargo / Hangar / Performance - While in Detaching Tractor Mode, moving Containers in Hangar cause Severe Performance Issue (STARC-138794)
+- Fixed - PU - Pyro - Rundown Stations (R&R) - Locations - Outer panels for Hab elevators are unresponsive (STARC-140525)
+- Fixed - Mission Refactor - Hauling - No reputation awarded when the mission is completed
+- Fixed - Ai are endlessly repeating voice lines like the "Keep it moving" audio
+- Fixed - PU - UI / Vehicles / Mining - AR markers for harvestables in Asteroid fields are missing when within identification range
+- Fixed - PU - Starmap - Routing to various locations in Pyro, including Lagrange Points goes via center of Pyro star
+- Fixed - PU - Stanton - Mining Modules - Ships / Vehicles / Controls - Cannot activate equipped mining modules when mining (STARC-134137)
+- Fixed - PU - Stanton - New Babbage - Tobin Expo Center - Locations - The Tobin Expo Center metro stop is completely missing (STARC-136982)
+- Fixed - PU - Pyro - Frontier Outposts - Locations / AI - Players Receive Trespass zone warning that results into the AI becoming hostile regardless of the player's reputation (STARC-144465)
+- Fixed - PU - Stanton/Pyro - Jump Points - Ships / Vehicles - Jump tunnel closes too early while players are still inside (STARC-144282)
+- Fixed - PU - Vehicle - Drake Corsair - Interactions / Animations - Lifts / Elevators - After calling the lift to any floor for the first time it will become stuck in that position and fail to transition to other floors on subsequent uses (STARC-143505)
+- Fixed - Multivehicle - PU - Vehicles / Fuel - Fuel is not updated properly to the ships fuel tank when crossing DGSmesh (Server authority) (STARC-137758)
+- Fixed - MISC Starfarer Series - ( ALL VARIANTS ) - Stanton - Vehicles - UI - mobiGlas - VMA / Location Inventory - Nozzles purchased from a ship shop cannot be seen or equipped in inventory or VMA (STARC-92356)
+- Fixed - PU - Pyro - Locations - Multiple inventories are missing across Pyro
+- Fixed - Mining - Every mineable asteroid found in Pyro asteroid clusters has a difficulty rating of impossible
+- Fixed - Argo ATLS - PU - Mounts / Weapons - Tractorbeam not functioning / won't fire, and is pointing upwards
+- Fixed - PU - Stanton/Pyro - Jump Points - Ships / Vehicles / Game Code - Ships outside the Jump Tunnel are able to enter the visarea and Intersect through the Tunnel
+- Fixed - PU - Stanton - Mission Refactor - Distribution Centre - Mission Content / Locations - Destroy Items Narcotics - Narcotics are not present in mission location
+- Fixed - Multivehicle - PU - Vehicles / UI / HUD - Vehicle Crosshair becomes very faint when switching Master Modes
+- Fixed - PU - Pyro - Eliminate Specific - Mission Refactor - Mission Content - Mission does not complete after killing NPC
+- Fixed - PU - Pyro - Defend Ship - Mission Content - After killing all AI ships the contract is not completed
+- Fixed an issue causing Outpost NPCs to spawn without their intended loadouts
+- Fixed - PU - Pyro - Contested Zones - can't take or pickup keycards whilst having weapon equipped
+- Fixed - PU - Mission Refactor - Mission Content / UI - Missions do not update the objective after arriving at location and the objective turns green
+- Fixed - Contested Zones - NPCs spawn from spawn closet but don't move / are stationary - expected for them to move or fan out
+- Fixed - Code - Quasigrazer / Creatures - Collision avoidance causes large and fast rotational oscillations when locomoting
+- Fixed - EXPLOIT - PU - Core Tech - Social - UI - AR Chat - Pasting large string into Chat crashes Game Clients for all players on the server (STARC-142062)
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 10 Server Crashes
+- Fixed 2 Server Deadlocks
+- Hybrid Service Crash Fix

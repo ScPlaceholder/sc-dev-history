@@ -1,0 +1,83 @@
+Squadron 42 Monthly Report
+March 2022
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 04:06:2022
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 Recruits
+Welcome to March’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including updates to Vanduul and Human combat, the Archon mining facility, and NPC behaviors.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI Content Team
+Last month, the AI Content team began taking the AI behaviors from test levels and adding them to Squadron 42’s locations.
+The development of the deck-crew wildlines progressed well, with the devs taking placeholder dialogue created by the Narrative team and implementing it into the behavior. AI Content recently gained the ability to trigger wildlines when an NPC enters a usable. For example, an engineer saying, “Let’s see if I can fix this,” as they inspect a damaged pipe. The next step is to have AI react audibly if a ship returns to the hangar without a wing or with heavy damage.
+Using tech recently created by AI Tech, AI Content enabled the deck crew and utility AI behaviors to push movable consoles and trolleys around a hangar. This adds more variety to the background life and makes the location feel more distinctive.
+Until recently, all ‘red shirt' NPCs (procedurally generated characters with randomized faces and bodies) shared the same walk locomotion animations. In March, the team implemented 25 different walk cycles, which led to a significant visual improvement as approximately 70% of the game’s population now walk and run with varying styles and speeds.
+The AI Content team also progressed with several other features currently in development, including the eat and drink behavior that allows NPCs to obtain sustenance from usables, such as the chowline or vending machines. The leisure behavior progressed too, which controls how NPCs spend their downtime. For example, playing games on the arcade machine, talking with each other in the mess hall, or relaxing in their bunk watching TV.
+## AI Feature Team
+AI Features continued to work on Vanduul AI, last month playtesting the first encounter to tighten up the gameplay experience. They then focused on the player shooting down Vanduul waves before they reach close-combat range, with ranged enemies providing covering fire.
+“Having a lot of the main building blocks in place is allowing us to focus on different encounters, making sure we are addressing not only the technical implementation but also the “fun” element of the game." AI Feature Team
+On the Human combat side, AI Features wrapped up support for reactions to dead bodies and continued to work closely with Design to implement their tactic-based combat design. As many technical pieces now work reliably, the designers can dedicate time to polishing and tweaking tactics, with the current focus on three main roles: the defender, pusher, and flanker.
+The team also polished the behavior that allows marines to use the firing range. This allows NPCs to go through the same training as the player, react to their results, and collect weapons from the master-at-arms or environment as necessary. Feature test maps were also created to help maintain the feature.
+## AI Tech
+AI Tech began the month addressing feedback on the initial implementation of planetary navigation tech, which was then passed onto several teams for use in various scenarios.
+One improvement is the addition of a priority manager to help calculate which areas require navigation mesh regeneration; the positions of players, NPCs, and vehicles are currently used to determine where nav-mesh is required.
+To enable the designers to request realistic NPC reinforcements on planets via spaceship (as mentioned in February’s report), the team began developing functionality to allow NPC pilots to spawn and adjust the dynamic landing and take-off splines. They also improved the spline creation process for smoother landings and takeoffs, and adjusted the tactical point system queries to work on planets and find the points where NPCs will move to as they disembark. Simple behaviors were implemented to showcase this new feature too.
+The development of technology allowing NPCs to correctly push and operate movable entities, like trolleys, continued. The team also added further improvements for locomotion and grip-posing on trolleys with different layouts and began implementing parking spots for movable objects.
+Several fixes and improvements were implemented into the Subsumption editor tool, including a full graph map of outlier behaviors, a visual grid and snap functionality, the ability to quick-insert nodes at the mouse cursor position, and an easier way to drop connections from a node.
+AI Tech continued to refactor the NPC movement request system to allow for more consistent synchronization of states between server and client and to unify the way NPC movements are processed to reduce inconsistencies.
+## AI Vehicle Features
+The Vehicle Features team was working alongside AI on behaviors that will benefit both the PU and Squadron 42. The aim is to improve flight behaviors to be more dynamic and closer to how Human players behave in combat. They also focused on a ship tactic for fighters taking on capital ships.
+## Animation
+Throughout March, the Animation team worked on: zero-g movement, helmet equipping, standing at and using tables, work zones, blockouts for Big Benny’s noodles, tactile chair animations, Vanduul combat, consoles, and cowering and surrender.
+They also set up work for female spec-ops development, progressed with generic enter and exit improvements to help streamline the development of AI useables, and worked through the second pass finalization for the story cast characters.
+## Art (Environment)
+Environment Art continued working on three key chapters alongside Design, while R&D and large-asset passes on several late-game chapters began. They also collaborated with the Flight Design team to create an appropriate sense of scale for the overworld spacescapes.
+## Cinematics
+Cinematics predominately worked on three chapters during March; the first featuring the Archon mining facility, the second consisting of FPS sections on a planet, and the third being the opening chapter.
+For the mining facility, they further developed the station's tram system used in several sequences. The station will be approximately 8km in length, with players using the tram to progress. This involved taking the tram cabin into the sequencer to animate its spline. The team are currently investigating how to get impulses from the tram’s exterior to transfer to the physicalized entities and actors inside. The team also prototyped a scene involving a mining tick landing and then walking into the main hangar to be unloaded to a cargo train.
+For the planet-side chapter, an older scene shown during a vertical slice stream was further polished, receiving improved animations, cameras, and player inclusion.
+“We wanted to have the player presence upped in this scene and decided to resurrect more of the original mo-cap for the player. In a lot of scenes, the player mo-cap was done as reference, with the aim to have full agency during the actual conversation. However, we found that during dramatic critical-path scenes, we can justify the player being "locked in" to help build the player's character and presence.” Cinematics Team
+For the opening chapter, the team created splines for fighters, capital ships, the player's hub ship, and more. They also further expanded the Vanduul fleet with newly created ship types and are currently progressing with the remaining battle sequences. They also added more hangar activity scenes that occur before a large battle.
+## Engine
+In March, the Physics team added a new soft-body deformation approach for character cloth. They also implemented island-wide, broad phase collision detection to reduce the number of external parts of entities to check against. The steering of vehicles' rear wheels at high speeds was reduced too.
+For physical damage, initial changes were submitted for the tracking of breakable clusters. Furthermore, an action was added to move a spaceship entity to a specific state in a set amount of time. Lastly, a prototype using batch workers to step physics to improve thread wakeups and concurrency was implemented.
+On the renderer, the transition to Gen12 continued. For example, the handling of decals in RTT passes was refactored, and various bugs caused by the enabling of brush rendering via Gen12 were fixed. Planet terrain rendering was optimized and support for the sunlight render node was added. Various APIs were improved to make them more consistent, efficient, and less verbose to use. The team also started refining the constant correctness of APIs when dealing with returned weak pointers. The shadow mask stage was also refactored to use transient constant buffers and remove reflected constants and binding constants via an explicit layout and buffer instead.
+Planet terrain height maps and planet terrain shadows are now fully ported. Tessellation code for rendering planet terrain patches into height maps was improved for a more consistent triangle density. Meanwhile, a bug in the processing of scattering queries for clouds was revealed to be an application issue and fixed (it was previously worked around).
+On the core engine side, more code was cleaned up using Include-What-You-Use. Additionally, more time was spent on integrating EASTL. Various optimizations were made, including updates to animated lights. More system updates (to the main camera and flagging of vis areas affected by the sun) were moved into parallel jobs to reduce the runtime cost of the main thread. Lastly, global locks were replaced with per-instance locks for fuzzy entity access.
+## Features (Gameplay)
+The Feature team progressed with object container streaming overrides, with the aim to get an example use-case into the game. They also worked on a weapons kiosk screen for the master-at-arms, where players can see what weapons, attachments, and grenades are available along with descriptions and statistics. From there, players can ask the master-at-arms to provide them weapons to try out in the firing range or have them delivered to their weapons locker for use in the next mission.
+## Gameplay Story
+March saw the Gameplay Story team progress with some "big ticket" updates on complicated scenes. As part of this, they polished a walk-and-talk scene in chapter 5, improved a major scene in chapter 12, and progressed with a complicated scene in chapter 14 involving a medical gurney.
+The team also continued to add new audio and facials to the random-to-NPC scenes. They delivered 8 this month, with only a couple remaining. A major scene in chapter 5 with multiple characters quickly boarding a tram was delivered before the team moved onto looking at how characters exit scenes early when the situation changes in-game.
+## Graphics & VFX Programming
+Last month, the Graphics team made updates to various shaders, with submits for the per-material auto C-buffer layout and minor improvements for Booleans as shader parameters.
+For the ongoing Gen12 transition, the team fixed various bugs, such as shadow flickering, LOD ratio issues caused by the porting of skinned meshes, and multiple crash fixes. The team continued with the Gen12 scaleform porting, making modifications to the execution order and interface to match the current behavior of RTTM. Work also began on moving scattering query analytical shadows to Gen12.
+For Vulkan, minor changes were made to descriptor indexing for internal bugs, while fixes were made to a crash relating to headless client metric gathering and warning updates for RenderDoc.
+Specifically for SQ42, fixes were implemented for gas cloud-related bugs and the team continued to develop the retro reflective effect in LayerBlend.
+## Level Design
+The FPS team completed the final gameplay implementation for several early chapters. Work is currently ongoing on moving a number of mechanics and chapters toward Alpha so that they can begin testing and balancing gameplay.
+The Space/Dogfight team supported the other design teams in bringing early chapters to vertical-slice quality. They also worked alongside the Art team to finalize the size and gameplay locations in the Odin system now that the quantum travel and quantum boost mechanics are closer to final.
+Alongside working collaboratively with the other design teams, Social Design continued their long-term task of implementing all in-game scenes.
+## Narrative
+Last month, the Narrative team had several playthrough sessions with the Design team to look closely at the moment-to-moment experiences of two specific levels. This part of the refinement process ensures that the player’s motivations are clear, that the emotions and tone of the world are properly conveyed, and allows the team to see if there are any further opportunities to create a more immersive experience. For example, to better highlight where a sniper nest was located, the team discussed a possible scene addition to draw the player’s attention.
+The team also began creating and implementing discoverable lore throughout the game to help players learn more about the narrative of the universe and provide further rewards for level exploration.
+Following up on last month’s report, development progressed on a new NPC profession, with the initial script being written, adjusted, and recorded as scratch dialogue. The next step is to see how the temporary dialogue feels in-game and make adjustments.
+Finally for Narrative, mo-cap sessions were concluded and selects were made to be processed for implementation.
+## QA
+QA continued to support the Cinematics team by reproducing issues found during development and chasing up outstanding bugs. They also focused on AI bug validation and refactored the JIRA process to help organize existing and future tasks.
+## Tech Animation
+The Technical Animation team spent the month iterating on their rework of the internal DNA system. This update will allow them to expand the gene pool used to create believable heads in-game and ultimately offer more variety to players.
+Alongside this, they revisited several head assets requiring updates and, in some cases, a complete overhaul. The ongoing head-scanning initiative is currently supplying the team with new archetypes that are being extracted and turned into full, game-ready facial rigs.
+Tech Animation also maintained the existing animation pipeline alongside spearheading initiatives to supersede older technology to expedite in-house workflows.
+## UI
+The UI designers and artists worked alongside the system designers on pre-production for a variety of screens, including the layout and visuals of several interactive screens throughout the game. An improved concept for the door UI panels was signed off too.
+The team continued to update the design and look of the mobiGlas and Starmap to fit the feel and gameplay of SQ42. The visor and lens were also set up to run in Building Blocks, which gives the team new optimizations and lays the groundwork for the Actor Feature team to add new features.
+## VFX
+March saw VFX complete an implementation pass on a key location, with involved fully populating the location with representative effects that they’ll return to later to polish and fully optimize.
+They also continued to fine-tune several important weapon effects, including rendering a new muzzle-flash firing texture sequence from Houdini to help emphasize a weapon’s power.
+Great progress was made on a key destruction sequence utilizing some clever simulation techniques to help give the appearance of metal bending and tearing rather than fracturing like stone.
+Finally, the VFX Tech Art team continued to explore the options that the Montreal team’s Mighty Bridge Houdini interface offers.
+## WE'LL SEE YOU NEXT MONTH...
+// END TRANSMISSION

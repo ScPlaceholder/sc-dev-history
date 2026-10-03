@@ -1,0 +1,3 @@
+It's entirely possible that it could be a side-effect from Interdictions/Conventional encounters (perhaps we're still not cleaning things up fast enough), but it could also be a combination of other issues.
+In general, a gradual performance degredation indicates a memory leak somewhere. The longer an instance stays active, the more likely that even the smallest leak can slowly become a much larger issue, but without any data from server performance captures in front of me, I can't say with any certainty.
+Edit: Bolded for emphasis

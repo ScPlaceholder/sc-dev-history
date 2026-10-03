@@ -1,0 +1,61 @@
+## Star Citizen Patch 3.10.0
+Alpha Patch 3.10.0 has been released to Wave 1 PTU, and is now available to test!   Patch should now show: VERSION 3.10.0-PTU.5639290.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting REC for PTU: 50,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+## Testing Focus
+- Ship flight in and out of atmosphere
+- Updated building blocks ship UI for all flyable ships.
+- High speed combat changes
+- Turret gameplay
+- Origin M50 Improvements
+- Electron FPS Weapons and Electron Damage
+- Body Dragging
+- Citizen Trading App
+- New Targeting Method
+- Delivery Mission Improvements
+## Known Issues
+- Attempting to perform an orbital QT to Levski from orbit will instead direct the player to Origin at Orbital QT speed.
+- Players are not able to join friends PU instance from the main menu
+- All 3D icons in personal inventory don't appear correctly when in the PIT
+- Landing gear will take multiple presses of the keybind to activate.
+- When leaving an Exit Spline in some Large Ships, the Ships will not re-enter the Spline correctly and fall towards the Planet without returning control to the Player
+- Security scans won't recognize the drugs on board a players ship during the Drug Production run missions
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- Player may get stuck on a loading screen when leaving prison or respawning
+- Player may get stuck on a prison loading screen if sent back to prison a second time without clearing their crime stat
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+## New Features
+Characters
+- Added mobiGlas Variants
+Adding the initial implementation of mobiGlas Variants which gives the player the ability to switch out their mobiGlas for another one with various colours. Players will be able to purchase these in game at the new Factory Line shop in New Babbage on microTech.
+- Added Helmet Visor Wiping
+Action that lets the player wipe their visor clear when it has become too obstructed by snow/rain/moisture. This action is available through the default keybind of LShift+Z or through the Inner Thought menu.
+AI
+- NPC Improvements: Bartender
+With this addition of Bartenders to the Persistent Universe, we are introducing the standard that all future vendors will be built from. The job of a Bartender is to serve drinks to the many bar patron's of the Persistent Universe. They can take orders from players and serve anything from bottled beer from the fridges or draught beer from the tap, to make a hand-crafted whiskey and cola in front of their customer and serve it. When not serving drinks, Bartenders will be seen keeping their work environment tidy by wiping down counters, disposing bottles, and polishing glasses, and chatting with patrons dynamically. This includes updates to NPCs in bars so they walk up to the bartenders to order drinks and use tables while drinking. Currently the updated bartenders are in GrimHEX, Lorville, Levski, and New Babbage.
+- Cover Usage V1
+Expanding the tactic selection for the NPC-Human Combat to analyze the environment and detect, in absence of full cover, possible positions where they can engage enemies without being fully exposed to them. This includes objects such as small crates, which could potentially provide partial cover.
+- Shotgun Assault Tactic
+Added the ability for combat AI to engage the player using a wider variety of weaponry, react dynamically to both player behavior and the environment, and engage strategically and realistically.
+Gameplay
+- Player Trading App
+We are introducing the first iteration of the Player Trading App onto the mobiGlas. This first implementation will allow players to immediately send in-game aUEC and Merits to another player regardless if they are on or offline or on a different server and will require a percentage tax of the transfer amount to process.
+- Body Dragging
+Adding the initial functionality to allow players to interact with dead and unconscious characters, and move them. Whilst an actor is dragging they can equip, use and holster 1-handed weapons, i.e. pistols and knives (the dragging character holds onto the victim with their left hand, leaving the right hand free).
+- Thruster Efficiency Curves, Jerk, and Aerodynamics
+Thruster efficiency curves drastically change the way thrusters work in differing atmospheres. In atmospheres our thrusters now lose efficiency and become much weaker. This is dependent on the ship and the thruster type to some degree, but ships are now much weaker when in atmospheres and cannot fly in the maneuverable way they used to.
+Aerodynamics - Ships now have individually simulated aerodynamics surfaces that contribute various little forces to the motion of the ship. The result is both much more realistic and enjoyable to fly, and a significantly more detailed simulation. Expect lots of subtle, unique flight characteristics per ship that give them a lot more character. Ships with wings are now able to stall, do level turns, lose speed in tight turns, and various fancy aerodynamic features. The aerodynamic interaction with wind is now more details and expect wind to push and pull on ships in more complex ways. Ship aerodynamics will now change as you switch between configurations. Breakable parts now affect the aerodynamics, so break off a wing and the ship will not fly straight anymore.
+Jerk - This is a core change to how ships move, both in space and in atmosphere that makes them much smoother and feel more weighty. Jerk is a measure how quickly the ship’s acceleration changes, and previously it was infinite. Now it’s a finite quantity that means thrusters do not respond immediately to changes in acceleration. Expect weightier feeling ships but with similar levels of maneuverability
+- Electron Damage
+Electron is a new damage type that consists of energy, distortion, and stun. When a target is hit with electron they become charged and if the target receives a secondary hit while charged it will create an electron detonation that can chain to nearby targets. The size of this detonation is dependent on the initial and subsequent damage values on the target.
+- High Speed Combat
+Ship systems will now suffer the consequences of traveling at high speed, restricting some of the options that players will have at maximum velocity that will push players into engagement at lower speeds. When flying above SCM speeds, weapon accuracy, gimbal assist speed, and missile lock speed will be negatively affected.

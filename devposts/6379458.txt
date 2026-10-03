@@ -1,0 +1,66 @@
+## Star Citizen Patch 3.21.1
+Alpha Patch 3.21.1 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.21.1-PTU.8885209.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Database Reset: Yes
+Server Regions: US/EU Servers only
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- Tonight through the weekend we will be running multiple events on the PTU for all backers!
+- Friday through Sunday Morning: Expo Halls will be run throughout this time for testing'
+- Sunday 10am CST | 16:00 UTC (2 hours) we are doing a test for Jump Town 2 right after the expo hall ends to test this transition
+- Sunday 3pm CST | 21:00 UTC (6 hours) We are running Siege of Orison
+- System - Security - Ship Trespass
+- Mission - Defend - Data Heist
+- New Player Experience - New Babbage
+- Vehicle Headlight Refactor
+- Tractor Beam - T2 - Vehicle Tractor Beam
+- Crusader C1 Spirit
+- ARGO SRV
+- FPS AI Behavior Integration
+- Siege of Orison Global Event Re-Activation
+Known Issues
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- SRV Tow UI shows invalid or no target despite meeting the criteria for a valid target prior to attempting to tow a ship in QT
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- AC - Elimination / Free Flight / Gun Rush - Security Post Kareah - AI are present throughout the location and engage players and themselves in combat
+- PU - Rental Kiosk / ASOP Kiosk - After Renting a ship and letting the rent timer expire. A couple of ships or rows will not be visible at the ASOP
+- PU - Stanton - Data Heist - Mission Content / Game Code - If players fail the Very Easy mission they can't reaccept it
+- PU - Stanton - AI / Mission Content - UGF AI falling through the stairs / floor
+- Multivehicle - ASOP Retrieval - Various vehicles spawn with wings/engines/landing gear in their "in-flight" state instead of their "landed" state when retrieved from ASOP
+- Multivehicle - PU - Vehicles / Usables - Exiting bench seats ignores collision
+- PU - Stanton - Halo - Desync / EVA / Vehicle / Ships - Players can desync when transitioning to or from EVA from one ship to another ship
+- PU - Missions / Reputation - Data Heist - The hard missions are not appearing despite meeting the requirements
+- PU - Stanton - Location - Seraphim - ASOP / Fleet Manager - The ASOP terminal loading screen will not end
+- PU - Shopping Kiosk - "Invalid Sell Price" error occurs while selling specific items
+- PU - Stanton - New Babbage - NPE - Locations/Design - The player will be stuck in their hab's bed if they restart the tutorial by quitting to main menu whilst dead, blocking flow
+## Feature Updates
+Gameplay
+- Made it a crime to tractor beam an owned ship without permission (Party Members)
+Ships and Vehicles
+- Rebalance of Star Runner Atmospheric Flight Speeds after Mass Adjustment
+Weapons and Items
+- Tractor Beam VFX and UI Polish Pass
+## Bug Fixes
+- Put in further fixes to help stop player corpses from clipping through planetary surfaces
+- Fixed an issue causing Grim Hex Main Lifts to kill players
+- Fixed - PU - Stanton - Locations / UI - AR Marker showing your assigned hangar does not appear
+- Fixed - PU - Stanton - Missions / Law and Criminal - Players are considered Trespassing after completing a UGF mission, destroying any ships near the facility
+- Fixed - PU - Lorville - Shopping - Kiosks - Shops do not have any items in their inventory
+- Fixed - PU - Stanton - New Babbage - Locations / Art - There's a large visible hole in the terrain in New Babbage outside of the Commons dome
+- Fixed - Crusader Spirit Series - PU - Vehicles - Enabling auto-gimbal causes fixed wing gun convergence to be set too close
+- Fixed - PU - Stanton - UI / Cargo - Cargo UI markers from inside your ship will appear on your HUD
+- Fixed - PU - Stanton - ArcCorp - Art - Cubby Blast weapon display glass is heavily frosted
+- Fixed - AC - Vanduul Swarm - Broken Moon - No hostile AI spawn
+- Fixed - TRACKING - PU - Stanton - SOO - Mission Content - Solanki ships are marked as NineTails Sympathisers
+- Fixed - PU - Stanton - SOO - Mission Content / Locations - Ships on Solanki and Brushwood Platforms can fall or clip into the environment making them inaccessible
+- Fixed - SoO - Code on the barge doesn't open a shipping container
+- Fixed - Argo SRV - Vehicles / Tractor Beams - The Towing Head Attachment leaves a visual duplicate after destroying and repairing it
+- Fixed - PU - Stanton - Mission Content / Vehicle Tractor Beam - Caterpillar Hijack - The caterpillar can be towed
+- Fixed - PU - Stanton - Data Heist - Interactables / Mission Content - Tigersclaw cards can be quickly interacted with and picked up after they have been inserted into a card slot
+## Technical
+- Fixed 1 Client Crash
+- Fixed 5 Server Crashes
+- Fixed a Server Deadlock

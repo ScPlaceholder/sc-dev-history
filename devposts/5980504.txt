@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.19.1 8499058
+Alpha Patch 3.19.1 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.19.1-PTU.8499058.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Regions: US Servers only
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Testing Focus
+- General Stability and Bug Fixes
+Known Issues
+Important! We have identified a couple major DGS crashes in tonight's build that may degrade performance. We are monitoring this after release to PTU and if these spike up to become too disruptive we may roll back to the previous build tonight.
+- Players cannot see partied player ships when Quantum Linking together
+- New Deal and Vantage Rental Kiosks Are Missing
+- Ships can explode from collision with invisible asteroids
+- Player corpses will not despawn at Grimhex
+- Players are unable to fully back out of the Primary Residence Selection due to the tutorial selection prompt.
+- Art assets will clip through the Train during the journey in Lorville
+- Substenance items lack "Store" option when carrying the item in Inner Thoughts
+- Players cannot see partied player ships when Quantum Linking together
+- Weapon Feature / Game Code - Tractor Beam - If you activate the tractor beam in hangar, you can bring the activated tractor beam back and use it in armistice zone
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Racing - Locations - A specific rock formations on the Yadar Valley race track are visible to some player and not others
+- Crusader - Security Post Kareah - Core Tech - Physics - Actor / Player - Transitioning from EVA onto Kareah's landing pads has a high chance of instantly killing the player
+- Transit - Area18 - Orison - Shuttles/Trains/Trams - Players are falling through sometimes disappearing trams and shuttles to their deaths
+- Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+## Feature Updates
+Locations
+- Lorville Performance and LoD Polish Pass
+Gameplay
+- Tractor Beam QoL
+Now Ignores rotation when attaching Mining items, gimbal, salvage items, and rockets.
+- Mineable Scanning Update
+Made it so that the scan results on the mining HUD account for active laser modifiers, without having to shoot the mineable with the laser.
+- Balance Pass for Salvage, Bounty, and Assassination Mission Types
+Ships and Vehicles
+- Fury Polish
+Made Improvements to Rotational Performance and Fuel Usage
+- Increased Corsair Maneuvering Thruster HP
+## Bug Fixes
+- Fixed - Argo Mole - Ships / Vehicles / UI / Art - The MFD Screens are Black when seated in the Pilot Seat
+- Fixed - Mining - Game Code / Ships / Vehicles / Weapons - Deposits Shattered at Optimal Range cause Damage to the Players Ship
+- Fixed - Vehicles / Salvage - Ship Components - Vehicle Hull Scrapping - Salvage doesn't yield any Material while at 0.0 out of 0.0 RMC counter
+- Fixed - Missions - Boarding Action In Progress - The Hangar above the 300i Will Not Open
+- Fixed - UI - Personal Inventory - Inventory screen mouse cursor drifts after dying in a ship, overriding input from the player
+- Fixed - Mining Gadget - UI - Not all Modifiers are listed under Device Properties on each Mining Gadget
+- Fixed - Mining/UI - The right side of the mining UI disappears after switching modes
+- Fixed - Drake Vulture - PU - Vehicles / Hull Scraping / UI - Vulture Doesn't Display RMC Salvaging Progression Information Panel in the Pilot Seat
+- Fixed - Vehicle - ARGO MOLE- The Mining Turrets in the MOLE do not deploy when players enter them and do not function
+- Fixed - EXPLOIT - Mission Content / Vehicles / Cargo - Cargo Crates from Salvage Contract ships will respawn if the ship is streamed out and back in after removing them causing there to be duplicates
+- Fixed - Mining / UI - Vehicles / Vehicle HUD - Range UI is Squished when the player enters a seat that is already in mining mode
+- Fixed - Mirai Fury Series - AC - Vehicles - UI - Menus - The Mirai brand ship filter in Arena Commander ship menu is out of order with unlocalized mouseover text
+- Fixed - NPE - UI / mobiGlas - Journal - Traversing the 'Verse Journal entry has a doubled note at the bottom
+- Fixed - Shopping/Selling - Drugs - Various Drug Commodities acquired from Salvage Contracts cannot be sold
+## Technical
+- Fixed 1 Client Crashes
+- Fixed 4 Server Crashes

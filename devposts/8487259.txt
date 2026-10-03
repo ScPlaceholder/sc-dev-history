@@ -1,0 +1,37 @@
+## Damage States & Component Health
+How Components Take Damage
+Components can be damaged through various weapon fire penetrating hull/shields, collision impacts with other objects or terrain, Overheating when operating beyond thermal limits, and fire damage.
+Health Percentage System
+Each component has a health value from 0% to 100% which will degrade performance of the component the closer to 0% it becomes.
+Keeping components repaired is essential to full ship performance.
+Component health thresholds will quickly hinder your ship and keeping components repaired is essential to keep full ship performance.
+- 100 and 75% health the components will be at full performance
+- 75-50% health, minor performance degradation
+- 50-25% health, significant performance reduction
+- 25-10% health, Severely reduced performance
+- 10-1% Near failure performance
+- 0% Critically destroyed and non functional. Where power plants will go into critical state and thermal runaway
+Hull Section Damage
+Hull sections have their own health pools
+Known Issues: Once hull sections turn red, they stop registering hit markers. Must damage entire ship to critical before destruction. This creates confusion about whether attacks are landing
+Distortion Damage on Components
+Distortion damage is a core damage type/behavior. Does not cause any physical damage or harm directly. Distortion shuts down powered entities. Components hit by Distortion-type weaponry, the Power Surge malfunction, etc. fill a Distortion pool, which decays over time. Distortion triggers if the pool fills completely, and disappears if the pool decays below a Recovery Ratio. Current behavior: Component shuts off
+## The Wear System
+Understanding Damage vs. Wear
+The Engineering system distinguishes between two types of degradation: Damage and Wear
+Damage: Caused by combat, collisions, fires, and direct actions against the component. These can be repaired and restored to a pre-damage state using multi-tools and materials
+Wear: Accumulated through normal use over time and will gradually degrade maximum component performance. Wear damage cannot be repaired through multi-tool use which means over time, the only way to restore functionality will be to replace the worn out component or repair at a station. Operating time, high-stress operations (combat, high power usage), and environmental exposure will all effect component wear.
+Wear System notes: All components can currently be replaced or repaired at stations. While Size 1 and Size 2 components can be manually replaced while in flight, Size 3 and larger components need to be repaired or replaced while docked at a station.
+## Repair System
+Along with the engineering screens, the primary tools an engineer will use is the multi-tools and repair attachments. Using Repair Material Composite (RMC), the player will be able to directly see the health and status of components, weapons, hulls, relays, and more.
+An engineer can see component damage either by looking on the engineering screen or in person by aiming their repair tool at the component.
+By aiming your repair tool at the damaged item such as a component or ship hull and holding the trigger the player will apply a repair beam that will take time based on component size. This could take quite a bit of time but multiple players working multiple repair tools together can combine their power to speed the process up.
+There are however some current repair limitations:
+- Jump Drives: Currently cannot be repaired (known bug)
+- Unknown Parts: Some components appear on screen but cannot be located physically
+## Component Replacement
+Replacement will become necessary when the component has been fully destroyed (0% health) or the component wear is too high for effective operation. This also applies to fuses or general upgrades you want to make with higher quality parts. Replacement components must match the exact slot size.
+The replacement process for physicalized components is pretty straight forward:
+- Physicalized Ships Removal: Access the component bay/location, interact with the component, and select the "Remove" option. The component will then go to local inventory or drop as physical item.
+- Physicalized Ships Install: Access the component slot, have replacement component in inventory, interact with empty slot, select component to install
+- For Non-Physicalized Ships: Use Vehicle Loadout Manager at stations as these cannot be physically interacted with

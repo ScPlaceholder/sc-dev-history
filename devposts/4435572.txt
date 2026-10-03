@@ -1,0 +1,81 @@
+## Star Citizen Patch 3.15.0m
+Alpha Patch 3.15.0m has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.0-PTU.7822079.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: No
+Long Term Persistence: DISABLED (Full wipe for all accounts)
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+Personal inventory is still undergoing UI changes as we progress through PTU and a feedback thread will be opened at a later time
+- Healing and Actor Status
+- Hospitals
+- Starlifter Hercules A2
+- Bombs
+- Infiltrate and Defend Missions
+- Loot Generation
+- Orison V2
+- Arena Commander Revamp
+- Origin 400i
+Issue Council Updates
+Issue Council - Feature added: Edit
+- Can edit an original report you created until it is confirmed by the community
+- Can edit the details of your contributions or comments at any time
+Current Limitations
+- It is not possible to delete an original report or a contribution at this time
+- It is not possible to change the type of contribution at this time e.g., "Cannot reproduce" > "Can reproduce"
+Future Improvements
+- It will be possible to delete your original report before it is confirmed by the community
+- You will be able to delete your contribution if, for example, you need to change the contribution type
+- You will be able to delete any of your comments
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu
+Players will need to exit the game and reload after a server crash to fix this error. This is part of the bug where players used to see a Bad Token after a crash which blocked them from re-entering but with the latest changes, that error is no longer displayed.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Resetting account failed to clear user items
+- Ships can be despawned or the player dumped during quantum travel if theyre holding down shift and W keys while QTing
+- Ship will QT in the wrong direction when attempting to jump to certain close range targets
+- Objective markers and QT nav points are greyed out on the player's HUD
+- Ships left at outposts disappear if the player logs out then logs back in or shortly after disembarking
+- Downed players are dropped or bounce/spin out of control when dragged over uneven surfaces and ramps
+- When Collecting Minerals/Metals with the Extraction Mode Laser the Ships Cargo Randomly Empties
+- There is a small area with no gravity in the airlock to the Grim Hex Medical facility
+- Many of the Wheelchairs, Walkers and Gurneys within Orison General Hospital have spawned in colliding with geometry, resulting in a constant loud banging / rattling
+- When requipping items from a loot box in zero-g, equipping the torso and arms will cause large amounts of inventory camera shaking
+- Weapon projectiles trajectory will not behave correctly when shooting from one zone inside a ship to another outside
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Destroying mission-spawned reinforcement type ships does not always trigger the ongoing 'Call to Arms' mission rewards
+- Missiles can hit the players ship when they are fired whilst the ship is moving forward
+- AC Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round
+- AC Players can spawn facing the wrong way at the start of the match or after dying
+- BEHR Telescopic S2 X4 sight shoots upwards when ADS
+- Demon Fang Combat Knife asset is missing from the game
+## Feature Updates
+Gameplay
+- Inverted Setting Change
+Using the inverted fps pitch mode will no longer invert the interaction mode cursor
+- Inventory Polish Pass
+Inventory loading and unloading performance pass. Disabled chat while inventory is open.
+- Disabled Actor Status Injuries and Blood Drug levels in Arena Commander and Star Marine
+Ships and Vehicles
+- Origin 400i Polish Pass
+Increased the capacitor pool on the 400i. Swapped the buttons for door and ramp on the interior so that ramp is on the bottom. Adjusted the 400i landed height, ramp, and lift animations to support larger vehicles in the lift.
+## Major Bug Fixes
+- Medical beacon should now correctly complete mission/payment when player is brought back from incapacitation
+- Fixed an issue causing bombs to stream out when dropped from very high above ground surfaces
+- The A2 should no longer be spawned unlocked and openable by non party members
+- Fixed an issue that was blocking bombs from being fully restocked
+- Players should no longer get a trespass warning causing friendly AI to attack players when doing UGF missions to defend them
+- Repeatedly equipping and placing a weapon or multitool into the inventory should no longer remove it from the player until a new weapon is equipped
+- After dropping an attachment via the UI attachment, the attachment should no longer remain in the UI until its closed and reopened
+- Players should no longer be able to load in Grim Hex instead of prison after exiting to menu before their sentence ends
+- Fixed an issue causing Turrets to disappear if a player flies to a UGF, flies away and then comes back
+- Players should no longer disappear if they enter a overdosed state when onboard a vehicle
+## Technical
+- Fixed 10 Client crashes
+- Fixed 2 Server crashes
+- Backend Service Timeout Fix

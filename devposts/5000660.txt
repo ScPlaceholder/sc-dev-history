@@ -1,0 +1,63 @@
+## Star Citizen Patch 3.17.0p
+Alpha Patch 3.17.0p has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.17.0-PTU.8031755.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Current Audience: All Waves
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+This build has additional asset streaming and networking fixes and updates. 3.17 contains new streaming changes that we are testing on the PTU and players may experience infinite loading or very long load times along with possible missing assets in game such as elevators or ships not streaming in. We are updating and fixing these issues as we find them and each new build will hopefully address these more and more.
+- Ship Positional Desync Test
+In 3.17.0 we have put in a networking update that should reduce ship to ship desync. We would like to know how well this update works and if there are any observable knock-ons. Relative to 3.16, you should feel as though the facing direction and position of other player ships are much more accurate and real time. We have created a feedback thread in spectrum so please let us know about any potential issues with this that could include ship jittering, rubberbanding, jittering, and other effects of that nature.
+Due to recent improvements on desync we have uncovered hitreg bugs which we likely cannot resolve for 3.17. In the direction of the velocity vector the collision shape of a ship will be slightly in front of visual model (the exact offset is velocity dependent). There is currently no work-around so avoid hovering inside the velocity vector of another ship and lead your shots a bit more during combat.
+- MISC Hull-A
+- Lorville Hospital and Space Station Clinic Variations
+- River
+- Coffee Shop Vendor
+- Ship-to-Ship Refueling
+- Mining Gadgets
+- Shopping and Selling T0
+- Ship and Ship Components Inventory Updates
+- Player Injury Updates
+- DNA Head Texture Updates
+Known Issues
+- Custom mobiGlas Casings breaks the mobiGlas functionality
+- Turret acceleration changes have been reverted to pre-3.17.0 while we work on rebalancing and will be coming back in a future release
+- Ship retrieval can sometimes stall out and place the ship in Claim state
+- The Player is unable to Place the Mining Gadget on a minable rock
+- Double VisAreas in Elevator in Orison Habitation Building
+- Starfarer Boom Arm not repairing if destroyed
+- Players cannot buy components directly into ship storage (will be coming later in the PTU cycle)
+- AR Markers are present when opening the mobiGlas which can make it hard to read
+- Ships can explode after players exit them
+- Many mineable asteroids can’t be scanned
+- While docked to a Starfarer the Valkyrie will continuously tilt instead of remaining stationary
+- The Refinery Yield Bonuses are incredibly high
+- Unable to interact with the mining attachment for the multi-tool
+- Players with positive health can enter a state similar to being downed without the incapacitated UI or VFX
+- Player is unable to Sell Mixed Mining at the Ore Sales Terminal
+- Shopping Kisok doesn't list mining laser head listed under its sub category when selected
+- Ships are not being aligned correctly during automatic landing if trying to land at very odd angles
+## Feature Updates
+Locations
+- Performance Pass on Lorville Hospital
+Ships and Vehicles
+- Added multiple ships and vehicles to shops in the PU
+Added Aegis Redeemer, Anvil Spartan, ARGO Raft, CO HoverQuad, Drake Cutlass Steel, and Origin 400i.
+- Slowed down the Hurricane's turret movement speed
+- Increased hull health of all Cutlass variants
+- Hull A and Sabre Raven thruster capacitor balance
+## Bug Fixes
+- Players should no longer experience being teleported back into bed shortly after getting out of it
+- Shield management should now correctly work on all ships (Previously wasn't working on ships updated with Size 2 shields)
+- Elevators should no longer pass through areas where player can suffocate while not wearing a helmet
+- Area18 kiosk screens should no longer glitch at a distance
+- Paints applied to the Origin 600i Executive Edition should now correctly appear
+## Technical
+- Fixed 8 Client Crashes (Along with AC specific crashes)
+- Fixed 10 Server Crashes
+- Fixed 2 Server Deadlocks
+- Network performance improvements

@@ -1,0 +1,16 @@
+Hello everyone,
+As with previous Patch Watches, we're spotlighting some of the lesser-known features and improvements coming in Alpha 3.17 that will greatly impact the 'verse. So, as we approach release day, spend some time with us and dive deeper into these upcoming features.
+FPS Weapon Refactor
+This is part of the ongoing refactor to make procedural animations appear more natural when holding weapons in FPS view. For Alpha 3.17, we adjusted the weapon sway and recoil values across a wide range of rifles, SMGs, shotguns, and sniper rifles. Now, your character will move their hands and weapons in a more aesthetically pleasing way, providing some of the weight and movement you expect from Star Citizen's weaponry.
+Alongside this, we also updated some weapon recoil and behaviors. So, you can expect some of the guns to feel a lot heavier and punchier, while some will behave entirely differently than before. For example, the Gallant rifle is now a deadly three-round-burst rifle with an optional five-round burst (with longer shot downtime).
+Turret Acceleration
+We've introduced more realistic acceleration to turret movement; turrets now don't instantly reach max speed based on the current input deflection but accelerate towards it.
+Ship Positional Desync
+In Alpha 3.17, we added a networking update to reduce ship-to-ship desync. We found that ships were desynchronizing, so we made changes to reduce the networking time delay so that ships are synced closer to the correct moment in time, which should reduce a lot of visible desync issues. Compared to Alpha 3.16, you should feel as though the facing direction and position of other players’ ships are much more accurate.
+Air Traffic Control (ATC) Landing
+We’ve added a keybind option to request ATC landing (unbound by default). To assign a keybinding please launch the game, click Options, Keybindings, and then on Advanced Controls Customization at the bottom left.  In the Flight - Movement tab, you'll find Request Landing.
+Player Injury Polish Pass
+We have overhauled the injury system to increase the likelihood of injuries occurring during repeated combat encounters and decrease the chance of instant death. There is now a scaling percent chance of triggering early injuries when taking damage to a body part. This is assessed each time the body part receives additional wear and has a short cooldown between triggers to prevent it from occurring too frequently.
+The Bleed Actor state has been updated to be less severe. Previously, each body part would bleed individually and stack accumulative damage. Based on feedback that this was too severe, the Bleed state now prevents stacking and its damage rate has been reduced. Bleed functionality will likely change again at a later date to be affected by injuries but, for now, this change better represents the intended experience.
+Balance Update for Hunger and Thirst rates
+Hunger and thirst rates are now slightly more aggressive, taking a little less time to progress towards starvation and dehydration. Actions such as sprinting, jumping, punching, etc. also have a slightly increased effect on hunger & thirst. This change moves us closer to the intended experience now that inventory storage (and thus easier access to food and drink) is available.

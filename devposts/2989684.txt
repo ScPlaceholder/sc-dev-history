@@ -1,0 +1,2 @@
+Thanks for posting on this! Definitely not intentional, funnily enough the gamemode param for kicking players in freeflight has been there since at least 2.6 but because it was tied into the scoring module it was never checked, as scoring isnt in FreeFlight. However, I've been refactoring the scoring which has caused the call to increment friendyfire to properly trigger, exposing that kicking was enabled.
+I'll disable friendlyfire checks for FreeFlight, should be in for 3.9.1. Sorry about that!

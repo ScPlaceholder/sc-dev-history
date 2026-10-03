@@ -1,0 +1,61 @@
+## Star Citizen Patch 3.2.0l
+Alpha Patch 3.2.0l has been released to PTU, and is now available to test!  Patch should now show: PTU-793226.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- The Blade is missing its weapons.
+- QT Spool Indicator is missing from Flight HUD.
+- Attempting to QT to an invalid nav. marker, such as "Obstructed", will put the drive into a broken state that requires the ship to be claimed and replaced.
+- Escort missions do not progress past the rendezvous stage.
+- If the master ship player enters QT after calibrating/spooling for a group quantum link, but leaving one more more members behind, the party will have broken quantum travel functionality.
+- Its possible for the master ship in a quantum link to send calibration data from far outside the intended range, breaking the link interaction.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- New "destroy probe" mission.
+- Mining: Scanning, mining, extraction, and Prospector function.
+- Flight and function of the following: Avenger series, 600i, Eclipse, Blade.
+- Orbital quantum travel.
+- G-force effects.
+- Ship power tuning and power triangle usage/effects.
+- Manned and remote turrets.
+- Group system.
+- Quantum linking.
+## Feature Updates
+General
+- Increased party cap from 8 to 64.
+Universe
+- Slowed down the speed of orbital quantum travel.
+Missions
+- Updated destroy probe mission with slightly less difficult AI who spawn in from a single area (not all over) and less wanted level prerequisite.
+- Updated comm array screen interactions.
+Ships and Vehicles
+- 600i changes: Upgraded coolers to size 3, upgraded shield generator to size 3, upgraded turret weapons to size 3, added armor to ship., improved linear acceleration and jerk, slightly increased afterburner speed, increased HP.
+- Reduced the afterburn top speed of the Reclaimer.
+- The remote turrets of the Reclaimer should now function.
+- Updated ship computer audio responses.
+- Increased the range of g-forces and g-effects and reduced the breathing audio trigger threshold.
+- Updates to ping blobs along with function changes to radar focus zoom.
+## Bug Fixes
+- Corrected the hardpoint size for the Khartu-Al's shield.
+- The quantum cooldown bar should no longer stay on the UI after the cooldown is complete.
+- Quantum travel should no longer be able to be activated while on cooldown.
+- The Aquila should no longer be able to equip the extra missiles available on the Andromeda.
+- The copilot of the Ursa should now have working exit interaction nodes.
+- Players should no longer be able to travel through the moon when orbital QTing from OM3 to Tram and Myers on Cellin.
+- Scanning should no longer reveal mineable rocks on the other side of the moon.
+- Chat history on the mG Commlink app should now be retained.
+- Calibration audio should no longer persist on the slave ship when linked.
+- Players should now be able to QT directly to the beacon for escort missions.
+- Mining resource radar and UI locators should now correctly reflection rock locations.
+- The 600i should now have a radar.
+- The beds should now work on the Avengers.
+- Fixed an issue that caused the cargo grid value of the Avenger Titan to decrease.
+- Fixed an issue where the captain's quarters in the Reclaimer lacked collision in the rear.
+- Laranite should spawn correctly in mineable rocks.
+- Players should no longer be able to linger directly above a landing pad without penalty.
+- Sniper scopes should no longer be attached to the barrels of some weapons.
+- Corrected the contact UI back to triangles.
+- The VMA should no longer show all weapons as "available", even those mounted on other ships, and now allows players to select which ships to pull from.
+Technical
+- Fixed 5 client crashes.
+- Fixed 6 server crashes.

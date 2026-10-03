@@ -1,0 +1,54 @@
+Hey everyone,
+We hope you’ve been enjoying the native Experimental VR support we introduced over during the holidays in Alpha 4.5. The response has been absolutely mind-blowing, and seeing it in your hands and the joy it’s bringing has been incredibly rewarding for the team.
+Naturally, there is still a lot of work to do to make it what it’s meant to be. With that in mind, here are the changes we’ve prepared for Alpha 4.6, along with a few additional developer comments from my side:
+## Bug Fixes & Stability
+- Fixed a bunch of crashes, especially when turning VR on. Also added better error descriptions with suggestions for common issues (e.g., uninstalling OpenXR Tools, which does cause issues at the moment).
+- Fixed FOG not affecting transparent objects, especially visible on microTech when caught in a snowstorm.
+- Fixed CameraViewLookBehind not applying HMD tracking.
+- No longer apply the IPD scale to head tracking movements if it's below 1.0f. This caused head movements to slow as you lowered the IPD scale.
+- No longer reset the head tracking in any kind of interaction mode in FPS. This fixes the issue where people wouldn't get close enough to a terminal to read it.
+## New Options
+- Selection for FPS ADS offset to the dominant eye.
+- Extended Mirror Mode - More on that down below.
+- Stereo Cursor Scale, Sensitivity, and Coupling to Head Movement.
+- Eye tracking support for the stereo cursor.
+- Depth of field toggle.
+- MobiGlas Distance.
+## Stereo Cursor Improvements
+- Implemented stereo cursor decoupling from the head motion. This is also the default option now and should feel more natural. Note that the stereo cursor has a range and is anchored to a specific pixel position when it is activated. This can be changed in the settings.
+## Eye Tracking Support
+A small experiment on my part, as I was curious to see how well it would work. I've tried it only with the Pimax Crystal Super, and although it was good enough, it wasn't perfect. Proper calibration is very important.
+You can customize the behavior with these 4 cvars:
+- r_StereoEyeTrackingSmoothing
+- r_StereoEyeTrackingDeadzone
+- r_StereoEyeTrackingCalibrationX
+- r_StereoEyeTrackingCalibrationY
+## Mirror Mode Update
+- r_StereoScreenOutput renamed to r_StereoMirrorMode
+- Added both left & right eye variants for Fill and aspect ratio maintaining
+- Added smoothing, zoom and pan functionality. Can be customized via r_StereoMirrorModeZoom, r_StereoMirrorModeSmoothing, r_StereoMirrorModePanX/Y
+- The smoothing at the moment is a simple roll stabilization, similar to what Half-Life Alyx does. To do that, the view needs to be zoomed in; otherwise, you will get black borders. Note that the fill modes also zoom in more than they did previously as they try to center the view now. You can always manually use the cvars for any custom setups if you want.
+I'm still not super happy with the Mirror Modes, but hopefully that should make it a little bit better for the time being. Ultimately, the best viewing experience is only given with a separate camera. This renders an entirely separate view, which is very expensive. I think we should be able to leverage the RTT system to render a separate camera, with limited capabilities, however. No ETA when this will come.
+## Theater Mode
+- Added theater mode screen curvature support using XR_KHR_composition_layer_cylinder
+This is, unfortunately, a very limited supported extension (SteamVR and Pimax don't support it, but Meta does). This was just a temporary test and will be replaced by a custom solution in the future with many more features.
+What I would like to see: Ambient lighting, 3D Mode, Different Environments (different skybox depending on where you are in the universe!), and more!
+## Launcher Update
+The Launcher will soon get an update to enable/disable VR! This is needed so that SteamVR doesn't launch automatically anymore for some headsets when VR isn't desired.
+This is off by default, so once the launcher update comes, you need to turn on VR explicitly.
+## What's Next?
+The Marker/UI rework is still a work in progress. I can't promise that we will be able to fix it for 4.6, but we are trying!
+Many people have already figured out that you can use r_StereoUILensDepth and CV_r_StereoScaleformDepth to fix it. However, that breaks other stuff. Feel free to experiment with it and find something that works for you.
+Edit 19/01/26:
+- Fixed smurf mode (inverted colors) in VR on Linux
+- Removed all UI/Visor shakes in VR
+- Add new option for Direct Offset control when targeting (ADS). This only does something if the Actor Control Mode is set to Grounded Look (stable image)
+Edit 22/01/26:
+- Fixed a crash that occurred when enabling HDR with a connected headset. HDR is now automatically disabled when VR is enabled to prevent display issues. Added true HDR support for VR as well. Can be enabled with r_StereoModeAllowHDR=1. This requires an HDR Monitor too. Note that using HDR for VR doesn't make any sense and will look wrong if the headset itself does not support HDR.
+- Disabled motion compensation layer by default to prevent crashes (toggle with sys_openxr_layer_disable_motion_compensation=0 in user.cfg)
+- Disabled OpenXR Toolkit by default due to compatibility issues (toggle with sys_openxr_layer_disable_openxr_toolkit=0 in user.cfg)
+- The UI menue is now world-locked in front of the player instead of view-aligned. This significantly improves usability, especially for lower resolution headsets. The old behavior can still be restored with CV_r_StereoUIAttachedToView=1
+Edit 06/03/26:
+The native Pimax OpenXR is no longer blocked by EAC and can be freely used now.
+That's it for now! I will catch you in the 'verse (and hopefully in VR!) :blush:
+- Silvan

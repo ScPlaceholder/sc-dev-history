@@ -1,0 +1,59 @@
+## Star Citizen Patch 3.6.1
+Alpha Patch 3.6.1 has been released to PTU and is now available to test!  Patch should now show: PTU-2320159.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Ship component fix
+- General gameplay
+Known Issues
+- Some landing pads will not highlight when requesting landing.
+- Players are sometimes able to QT through planets, exploding their ship.
+- The Ballista currently can't be restocked at outposts.
+- Constantine Hurston is non-interactable.
+## Feature Updates
+General
+- Updated audio for size 3 ballistic cannons and Ballista missiles.
+- Updated FOIP camera selection with "camera mode" which includes the choice of camera, resolution, framerate, and color space. Recommended modes are marked with a "*" and modes below 320 or above 1920 are excluded.
+Universe
+- Added Ballista class missiles to Centermass store.
+UI
+- Disabled pitch ladder for ground vehicles.
+- Added HUD warning message for security encounter.
+FPS
+- Raised the P8SC sight attachment point.
+Ships and Vehicles
+- Updated dimensions for Freelancer Max and Vanguard to better select landing pads/hangars.
+Items
+- Added CitizenCon 2948 Trophy hangar flair.
+- Added CitizenCon 2948 Knife hangar flair.
+## Bug Fixes
+- Players should no longer experience a dramatic framerate drop when in 1st person.
+- Fixed missing orbital markers at multiple locations.
+- Updated armor tagging for Star Marine so the outlaws now have a complete set.
+- Fixed an issue causing tire trail VFX for the Ballista to not appear.
+- All crew members of the Ballista should now have ship computer audio.
+- Holding LMB should now work to quick place carried items.
+- Security attacking the player should now be flagged as hostile.
+- The UI should now show correct numbers for weapons when not wearing a helmet.
+- The camera should no longer appear to be inside the player's head when respawning in Star Marine.
+- Players should no longer experience an infinite loading screen when logging into the PU.
+- Fixed an issue causing bounty type missions to appear in the same areas around GrimHex.
+- Fixed an issue where the REC total wasn't displaying at the top of the screen on the Arena Commander menu.
+- Destroying an enemy ship when in the presence of security should no longer cause a crimestat.
+- Fixed an issue where mineable asteroids could be detected at much longer ranges than intended.
+- Modified shield proxy for Reclaimer to fix shield holes.
+- Ruto's appointment mission should no longer be offered before the player completes the prerequisite mission.
+- Fixed an issue where missiles were not inheriting velocity.
+- Players should no longer get stuck on a black screen after death.
+- Ships should no longer be missing components upon insurance claim return.
+- There should no longer be excess AI ships around GrimHex, lowering local FPS.
+- Switching genders in the character customizer should no longer cause a skin tone mismatch.
+- Vehicles should now be able to be repaired and restocked at Lorville and Levski.
+- Secondary quantum travel route jump points should no longer be obstructed when traveling to a planetary body.
+- Mission givers should be in their correct positions.
+Technical
+- Fixed 8 client crashes.
+- Fixed 2 server crashes.

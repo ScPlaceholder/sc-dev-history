@@ -1,0 +1,54 @@
+Squadron 42 Monthly Report
+May 2024
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 06:05:2024
+REF: CIG UK, CIG DE, CIG LA, CIG TX,
+FAO Squadron 42 Recruits.
+Welcome to May’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including enemy cover use, zero-g movement, and cinematic effects.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Content)
+AI Content developed a new background manager to handle all non-scene scripted sequences. This update has streamlined the main mission manager, stabilizing it for core flow operations and significantly reducing bugs.
+For the opening level, they completed the R&D for new ‘Look At’ technology. This enhancement significantly improves visuals when NPCs look at the player, featuring profiles that allow them to glance weakly or stare strongly based on the situation, adding a layer of realism and depth to character interactions.
+They also made adjustments to the pathing of scripted walkers in the Stanton to avoid critical scenes and improve visual consistency. In addition, they suppressed greeting dialogue for NPCs shortly after workouts, as the previous content didn't sound appropriately out of breath, ensuring a more realistic experience.
+The chowline was improved by decreasing idle times between interactions, making the AI feel more responsive and realistic. To further enhance dynamic conversations, facial animations were added for additional voice packs.
+Janitor cleaning spots were also adjusted to avoid high-traffic areas, which helped reduce bugs. Furthermore, cleaning-spot regeneration now occurs only when players are not nearby, enhancing both performance and realism.
+## AI (Features)
+Last month, AI Features worked towards consistent behaviors across different combat scenarios, ensuring that AI characters react in believable ways, no matter what situation they’re in. The team began by improving and unifying perception reactions, improving cover use in different scenarios, and making a holistic evaluation of all combat elements to ensure they work as intended.
+This is particularly important with the recent improvements to the hostility system. For example, if an AI comes across two others fighting and they are friendly with both, doing nothing is not a valid response. For the first-pass implementation, the AI will run and cower when this situation arises, though this isn’t ideal and will be improved upon.
+## AI (Tech)
+AI Tech improved the functionality of NPCs pushing trolleys and using elevators alongside updates to behaviors for elevator use. Smoother animations when NPCs move away from trolleys and improved functionality for NPCs parking trolleys were implemented too.
+AI Tech also began work to allow NPCs to understand when cover is being destroyed or when parts of a usable are being destroyed. This will prevent NPCs from attempting to find or use unsuitable cover.
+For Ship AI, the team continued making improvements and fixing bugs related to following splines and back-strafing.
+## Animation
+May saw Gameplay Animation further develop various player-interaction moments, such as interacting with levers, vehicles, clothing, etc. They also worked to improve the feel of zero-g movement and created additional first-select animations, which are used when the player gets a new weapon.
+Combat AI polishing continued, with a focus on refining the motion-capture flow. The team also discussed how entity movement implies enemy logic and how it can be improved.
+The Social team continued to work through multiple chapters, focusing on placement and the creation of ‘life’ animations to give the feeling of a living, breathing ship.
+The Motion Capture team supported both gameplay and story elements and completed a shoot for a new enemy class. They also discussed how to leverage the Mo-cap team’s experience in solving and retargeting to improve burndown in other places.
+Vanduul facial animations progressed too, as well as animations for various tier-two story characters and the player character.
+## Gameplay Story
+Throughout May, Gameplay Story continued polishing characters in chapter 1 following feedback, including fist bumping, looking at the player, fiddling with turret buttons, and walking off with their helmets.
+A tour in chapter 4 also saw improvements. For example, player choice was added to the beginning along with new idle and abandon animations. A key ‘meet’ scene was overhauled with updated mo-cap to make it more robust, while idles and exit animations were improved for another scene.
+New audio was added to scenes in chapters 4a and 5, a scene in chapter 4d was updated to account for a new console position, and a console animation was repaired in chapter 14.
+Several new scenes were created too, including a hiding survivor, a conversation in the mess hall, a moving forklift truck, a medic healing the player, and a deck crew inspecting a Gladius.
+## Level Design
+Social Design continued to work on their ‘focus’ chapters. Alongside addressing review feedback and fixing bugs, part of this involved implementing fail states, objective markers, emails, ship chat, checkpoints, Galactapedia entries, and more.
+This was also an opportunity to clean up loose ends with various scenes. For example, new mo-cap was used to improve several scenes where the narrative content played out well but didn’t close out as cleanly.
+## Narrative
+May saw the Narrative team continuing to drill down on their remaining tasks for Squadron 42. On the production side, they continued reviewing tasks to make sure they represent a comprehensive list but also to see if there are any that could be tackled without waiting on other teams.
+They continued to sit in on playthroughs of levels with other teams as well as on their own to provide feedback on the narrative experience. Narrative also continued writing Galactapedia entries and worked with Core Gameplay to define where they will appear in levels.
+Narrative also worked with several outsourced freelancers to develop collectibles that will be scattered throughout the levels for players to find.
+“It’s been exciting to see the work come in and we’re looking forward to seeing the players react to them.” Narrative Team
+Following up on last month’s report, a new testbed was developed in collaboration with the Gameplay and Audio teams to test the dogfighting combat experience and make sure the wildlines for the various pilots trigger correctly. When complete, this will provide an in-situ environment to ensure the technical setup is working but also that the personalities of the various gangs come through in the way they talk as well as fight.
+## R&D
+For volumetric cloud rendering, stochastic Catmull-Rom texture filtering was implemented for the new half-res render mode upsampler. The number of ray marching steps now also scales with scene depth to improve performance in scenes with near-distance occluders (buildings, cockpit, terrain, etc.).
+Moreover, progress continued on the temporal render mode. All confidence metrics and transmittance filtering received further tweaks and improvements. A first draft of the code was submitted for internal use.
+## Tech Design
+For flight, Tech Design integrated the new AI flight behavior from the PU to SQ42 and began improving various combat encounters.
+They also fixed bugs and made improvements to interactables across multiple chapters. For example, in chapter 1, terminal screen interactions were polished, new UI art was implemented, and the interaction flow was streamlined.
+## VFX
+The VFX team continued to support the Art, Design, and Cinematic teams in May. Several cinematic scenes are reaching ‘edit lock,’ which means the camera positions are mostly finalized, enabling the VFX artists to dial in their effects to match each shot.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

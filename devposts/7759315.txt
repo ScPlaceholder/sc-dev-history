@@ -1,0 +1,29 @@
+## Star Citizen Alpha Patch 4.0.2
+Alpha Patch 4.0.2 has been released onto the PTU environment!  Launcher should now show: VERSION 4.0.2-PTU.9589006.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:600
+Hangar Spawning: Disabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+4.0.2 Release Goals
+The 4.0.2 release is highly focused on 3 key points to improve and fix as many top key gameplay issues as possible, improve connectivity/stability, and begin the latest Supply or Die Event.
+- Stability, Performance, and Bugfix Testing
+- Supply or Die Event
+Tonight's build has further updates to transit self healing code to help reduce further issues with transit getting stuck and not responding.
+4.0.2 has many exploit fixes as well that have been included. Due to the nature of these, we don't mention which are fixed.
+## Known Issues
+- Supply Or Die: Detatrine cargo that has already been destroyed will blow up again when you Quantum Travel, causing damage to your ship and other undamaged cargo. (Workaround: Remove dead cargo from ship before QT)
+- Critical: PU - Transit - Entity carriage is stuck in transit to a gateway, but never arrives which renders the gateway unusable
+- Critical: PU - ASOP / Ship / Cargo - Upon the Ship auto storing through leaving game or leaving hangar; on initial retrieval the Cargo disappears and Cargo Grid is locked from being used
+- Critical: PU - Missions / UI - NPE - The Mission markers are missing from the Tutorial Missions and blocking progression
+- Critical: Mission Refactor - Comm Array Repair - Contract in mobiGlas becomes hidden when another player enters mission location
+- Critical: Mission Refactor - PVP Missions dont work
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- High: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel
+- High: PU - Pyro - Jump Point - Failing a Jump point will displace the player far away from the gateway station
+## Technical
+- Fixed a Client Crash

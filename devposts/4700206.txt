@@ -1,0 +1,47 @@
+## Star Citizen Patch 3.16.0e
+Alpha Patch 3.16.0e has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.16.0-PTU.7908634.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Disabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Gravlev Rework
+- Law system Improvements
+- Atmospheric Bounties
+- Dying Star Updates
+- Area18 Hospital
+Known Issues
+- Players may not be able to add friends on the front menu
+- The doors leading into the Orison Cloudview Center Arcade will not open from the outside
+- Pressing and holding F to "Freelook" does not work when piloting the Nox and prevents start up of vehicle using interaction (keybind will need to be used)
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- Items do not immediately transfer from loot crate to personal inventory
+- Cannot Repair, Refuel, Restock at LEOs
+- Medical bed not healing injury
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+- Bed logging on a moon or planet - ship falls through surface
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Weapon will not holster
+## Feature Updates
+Gameplay
+- Gravlev Polish Pass
+Increased gravlev bike speeds. Updated so that bikes should not get flung up into the air nearly as much when touching geometry such as rocks or buildings. Bikes should now behave much smoother when levitating quickly over meshes such as rocks, plants, ect. Bikes should no longer be able to hover on the side of walls (and get pushed away from them). Bouncing and oscillating in certain places should no longer occur. Speed limiter no longer affects height control. Height control no longer causes the bike to oscillate or shake. Bikes should no longer be flung into the air when disembarking. Bikes should not be randomly or unfairly damaged or explode anymore.
+Weapons and Items
+- Mounted Guns Polish
+Tweaked mounted guns to be more in line as an infantry suppression weapon. This will reduce projectile velocity and RPM, reduce projectile damage per hit, reduce projectile weight (this will reduce force reactions on players), as well as giving projectiles a higher spread. Greatly increased how long players can fire the weapon before it shuts down.
+Core Tech
+- Added 'service unavailable' message when the service request for searching friends fails
+## Bug Fixes
+- Fixed an issue causing UGF missions to not count kills toward the mission objectives
+- Fixed further issues with Bounty hunter missions stalling indefinitely if leaving the area before it updates on a slow server
+- Exiting Gravlev vehicles should no longer cause it to fling you into the air
+- Fixed an issue causing bikes to oscillate up and down on their own
+- Social AI should no longer have difficulty navigating past the archway asset at the Area18 hospital entrance
+- ReplaceMe textures should no longer be seen on the base of various exterior art assets of jumptown locations
+- Fixed an issue causing the Emergency Elevators to not send a valid player to the hospital once the Admit Patients UI has been activated
+- Area18 Hospital pharmacy kiosks should now populate with items for purchasing
+- Players should no longer become trapped on collision surrounding the vending machines in the lobby of the Empire Health Services hospital in Area18

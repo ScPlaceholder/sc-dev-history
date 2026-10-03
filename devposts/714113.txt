@@ -1,0 +1,1 @@
+From a brief glance, I'd say it looks like the atmosphere being applied to the planet twice somehow. Atmosphere is applied to opaque objects as a post-process, but it may be some mistake is causing the shader to think it needs to apply some shading itself. It's something we'd probably just have to look at in RenderDoc and see what it's doing.

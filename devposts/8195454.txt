@@ -1,0 +1,63 @@
+## PTU Update - 10098575
+We have released a new 4.3.0 build onto the PTU environment with much needed fixes for the Wolf.
+- For players on PTU giving the Wolf a spin, let us know if you run into the desync/zone transition issue.
+We're looking for confirmation of big improvement on the exit animation desync issue on the Wolf with the update.
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-176902
+As I mentioned above, one player observer, one pilot. Pilot enters wolf, exits wolf, moves away from the ship. If observer sees player stuck to the ship, bug still present. (Can still desync but it should never be permanent). Repeat multiple times (10+!). Try in hangar and planetary locations.
+## PTU Hotfix Update - 10092193
+We have released a client hotfix to the PTU to resolve a Wolf ship related crash. Let us know if this helps!
+- Potential Fix: PU - ASD Delving - Phase 1_M3 / Phase2_M1 - Missions / Network - Missions will fail to populate in the contract manager on certain shards
+- Further Audio Crash Fixes
+- Main Thread Deadlock Fix
+## Star Citizen Alpha Patch 4.3.0
+Alpha Patch 4.3.0 has been released to all backers! Patch should now show: VERSION 4.3.0-PTU 10082412
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, unstowed vehicles, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Territory Configuration: 7:3:600 (Updated Territory Config)
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Onyx Facilities
+- Mission Distribution Updates
+- Hangar Spawning
+- Dynamic Snow
+- Updated Ladder Improvements
+- Light Fighter Tuning Changes
+- VOLT Laser Sniper "Zenith"
+- Additional Wikelo Special Ships
+- Additional Player Hairstyles
+In tonight's build we have further audio adjustments around ships that may slightly decrease their audio fidelity but will mitigate nearly all crashes until we are able to get a wwise update in an upcoming release.
+Tonight's build has further freight elevator repair work implemented that should self detect many issues encountered and reset the elevator affected. We believe this will help with many of the issues occurring but possibly not all. A side effect of this reset is that it can cause cargo on the lift to be deleted if it breaks while cargo is on it. This should be rare but mentioning here in case this occurs. Please keep an eye out for any new issues occurring!
+## Known Issues
+- Due to issues with beacons, we have disabled medical beacons for 4.3.0
+- PU - Stanton - Locations / Hangar / ATC - Multiple hangar requests at the same Onyx Facility will result in ATC not responding for some players
+- PU - Stanton / Lorville - Maria Pure of Heart - Locations / Shopping / UI - Players are unable to purchase and sell items due to shop missing inventory
+- PU - Design / Locations / Live Services - Players can spawn in the center of Pyro or Stanton after selecting their Primary Residence
+- PU – Stanton – New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- MultiWeapon - PU - Weapon / Graphics - Inventory / Backpack Reloading - Weapons reload invisible magazine when reloading from backpack (alt+1 to respool until you can store the weapon in a locker and re-equip)
+- PU - Stanton - Onyx Facility - Mission Content / mobiGlas / UI - The Player cannot Set Route to the Delivery Locations for ASD Missions
+- PU - Onyx Facilities - Mission Content / UI / Shipping & Delivery Kiosk - There is a chance that Covalex Kiosk screen will be stuck on "Please Standby" after pressing the "Drop Off"
+## Features & Gameplay
+Locations
+- Onyx Facility Performance, VFX, Audio, and Art Polish
+- Added cloud cover to the poles of Pyro 3
+## Bug Fixes
+- Potential Fix: Hawk radar is flipped 180 degrees (STARC-176593)
+- Potential Fix: PU - Stanton - ASD Delving - Mission Content / Game Code - There is sometimes no Comm Call when Accepting the Missions
+- Potential Fix: PU - ASD Delving - Missions / UI / Quantum Travel - P1M1 - The first mission can be Quantum Traveled to
+- Potential Fix: PU - ASD Delving - Locations / Art / UI - Onyx Engineering kiosk brings up empty popup after selecting download (STARC-176265)
+- Potential Fix: Zenith sniper doesn't charge after overheating (STARC-176166)
+- Potential Fix: PU - Stanton - Onyx Facility - Phase 2_M1 - UI / Mission Content - Mission Objective markers for the pipes do not appear after player enters engineering wing
+- Potential Fix: PU - Stanton - Onyx Facility - Phase 2_M1 / Phase 2_M2 / Phase 2_M4 - Mission Content / UI - There is no Deliver Objective after Collecting Data Drives
+- Potential Fix: PU - Stanton - Armor / UI / Narrative - Clothing / Inventory - ASD Jumpsuit Variant does not include the Variant Edition name (STARC-176081)
+- Potential Fix: PU - Stanton - Onyx Facility- Mission Content / Design - Phase 2 M1 Repeat mission does not reward ASD Drive (STARC-176521)
+- Potential Fix: PU - Stanton/Pyro - Locations / UI - Patient Check-In Kiosks are stuck displaying “Room 0” and are not interactable (STARC-160847)
+- Potential Fix: PU - Pyro - Bloom (Pyro 3) - VFX / GFX - Dynamic Weather - Weather particles are not spawning when the temperature is above a certain level but other weather indictors are
+- Potential Fix: PU - VFX - Dynamic Weather - Visor VFX caused by the snow disappears when facing certain angles
+- Potential Fix: Multivehicle - PU - Vehicles/ UI - Radar shows 34.35m default too short range for vehicle radar default to be 5km
+- Potential Fix: Multitool - Code - Reloading salvage canister into empty multitool does not work
+## Technical
+- Fixed a Client Crash
+- Fixed a Server Deadlock

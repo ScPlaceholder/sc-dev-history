@@ -1,0 +1,3 @@
+Some land vehicles, like the Rover, inherit gravity from their outside environment. So technically this is a possibility for when the gravity generator is turned off or disabled.
+I don't see any technical hurdles for allowing gravity generator to create a zero-g environment inside the ship, even when the outside environment has gravity. It is the reverse of what it does when ship is in space - outside has no gravity, inside does.
+The transition between one gravity setting to another without the actor moving between two zones will need some work. I appreciate that ragdolling the player is not a great experience, but it is a handy solution for handling sudden change in physical environment.

@@ -1,0 +1,52 @@
+## Star Citizen Patch 3.13.1e
+Alpha Patch 3.13.1e has been released to the PTU, and is now available for all backers to test!   Patch should now show: VERSION 3.13.1-PTU.7398642.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Audience: All Backers
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Stability and bugfixes
+- Ship to Station Docking
+- Tumbril Nova
+- Crusader C2 Hercules Starlifter
+- Crusader M2 Hercules Starlifter
+Known Issues
+- Customizations made on the RSI Website are missing in-game for the 300 series
+- Ships can explode as the player leaves / enters
+- Items missing after update / Character Reset / pledge change
+- Abnormally long delay between pick up storing of fps mineables/harvestables/items
+- Players can get Stuck in the Medical Bed of ships (Workaround: getting shot once will pop the player out of bed)
+- "Lie Down" prompt disappears from medical beds after using "Sit" prompt
+- Players are unable to store the Hammerhead once it has been docked at an R&R station
+- Players may not be able to quantum jump with another player in bridge with you
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Constellation can despawn when flying 30km away after undocking
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+## Feature Updates
+Locations
+- Added a Docking Port location marker when requesting landing at a station
+Ships and Vehicles
+- Reduced the emergency state flashing light effects on the interior of the Starlifters
+## Bug Fixes
+- Hercules C2/M2 Co-Pilot should now be able to target enemy ships
+- Players should no longer get extreme FPS drops while in the New Babbage Tram stations
+- There should no longer be missing audio when shutting the Starlifter Cargo doors
+- REC should now be awarded correctly in Arena Commander
+- Radar display in the Starlifters should no longer be missing
+- Starlifter Elevator should no longer clip through closed door when exiting the ship
+- Starlifter Elevator animations should no longer be delayed and broken when outside of the ship
+- The Tumbril Nova should no longer explode when Players exit the Vehicle
+- Mounted gun Ammo boxes should no longer appear as a replace me ball
+## Technical
+- Fixed 5 Client crashes
+- Fixed 5 Server crashes
+- Fixed an issue that could cause a Server to run out of memory
+- Fixed multiple backend service crashes
+- Backend Service Performance Optimizations

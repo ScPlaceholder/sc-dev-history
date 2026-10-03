@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.13.0
+Alpha Patch 3.13.0 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.13.0-PTU.7240320.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled (This release will come with a Reputation wipe)
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Cave Entrances
+- FPS Cave Missions
+- Ship to Ship Docking
+- Signed Distance Fields (SDF) Shield Tech
+- Reputation UI
+- New Quantum Sensitive and Timed Delivery Missions
+- Pushables T0
+- Mounted Guns
+- Force Reactions - Staggers
+- Cyclone MT
+New Issue Council Testing
+Along with 3.13.0 we will be introducing the new, updated Issue Council! Please use this to report any issues with 3.13.0 and forward.
+Links to the new Issue Council can be found here in the feedback thread:
+https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/the-new-issue-council-3-13-0-ptu
+Regression testing thread: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-13-0-ptu
+Known Issues
+- Customized loadouts are reset to default when the ship's name is changed
+- 100 Series is missing ptich/yaw/roll
+- ATC at New Babbage Space Port is not allowing the exit or arrival of ships or vehicles to hangars and garages
+- A Players Ship can enter a state where it cannot be Retrieved
+- An elevator in Lorville Spaceport has invisible collision blocking the entrance
+- Claiming any Constellation variant that's on a pad causes station turrets to blow it up with no crimestat
+- The Quantum Sensitive Cargo can become stuck to the players hand, while lacking all functionality
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Docked merlin enter interactions don't show when constellation is moving
+- Mounting weapon while holding a grenade will cause the player to enter a broken state upon exiting via interaction mode during low FPS
+- Wallace Klim can spawn away from his table, facing the wrong way and floating
+- When accepting a mission or when speaking to Clovus his animations are not fluid and appears to jump around
+- Hammerhead is missing form New Deal
+- The outline for the save changes button is off
+## New Features
+Gameplay
+- Hull Visual Degradation
+Introducing visual wear-and-tear to player ships as they age and degrade. Ships will subtly change depending on how long they have existed in the ‘verse until the ship is repaired using Cry-Astro Services or remade with an insurance claim. With the initial release most ships will have this but the following ships are currently not enabled: Anvil hawk, MISC Reliant, Archemides, Drake Dragonfly, Origin 600i, Anvil Gladitor, Vanduul Scythe, Drake Caterpillar, Anvil Valkyrie, Khartu-al, RSI Ursa Rover, Mustang variants, Anvil Terrapin.
+- Vehicle Names and Serial Numbers
+Adding the ability for certain ships to display custom player-assigned names on the sides of their ships on the hull. Special serial numbers will also be shown, and all other ships will have unique serial numbers displayed, to identify them in the universe.
+- Ship to Ship Docking v1
+Adding the ability to for the Merlin snub ship to dock and undock within the Constellation, along with guidance mode UI to ensure correct alignment during the docking process. Players will be able to use the autoland system and manual flight to dock. To take off from the constellation, press the landing gear keybind (default N). To start the docking process, target the Constellation then hit the landing gear keybind (default N) to initiate the docking UI. You can do the same to dock with another player's Connie but you will need to request permission to dock and have that player approve it after initiating the docking UI with their ship.
+- Reputation - UI Implementation
+This feature adds the addition of a new mobiGlas app that will give players insight into their reputation with the important NPCs and organizations they have interacted with. This will also include a total list of reputation ranks, including those that have been completed and the ones they’re actively working on.
+- Object Push & Pull
+Mechanic allowing players to grab some larger objects and move them around an environment by either pushing or pulling them. The initial implementation will have usable trolleys that players can find in the world at space station cargo decks and underground facilities.
+- Mounted Gun Aiming T0
+Further expanding the player's arsenal by allowing them to take control of a mounted gun on either a vehicle or the ground. These weapons will offer greater firepower and stability at the cost of mobility. With the initial implementation, players can find these scattered around junksites and underground facilities.
+Ships and Vehicles
+- TUMBRIL Cyclone-MT

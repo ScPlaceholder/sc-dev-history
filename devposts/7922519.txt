@@ -1,0 +1,5 @@
+Google gave me the following translation for this, so I apologize if it's wrong.
+"How to solve the error 60012 displayed on the interface"
+In the cases that I'm aware of, this isn't going to be something that a player is going to be able to solve on their own.
+It happens when the game tries to spawn a player in a game server, but then something goes wrong with the game server. The most frequent example of this, is that sometimes there can be location specific server crashes that occur repeatedly. In an ideal situation, we'd want the game to realize this location isn't healthy and have it redirect match making requests to healthy servers, which it does do. But only for accounts that don't already have their characters on that server.
+A fix is going into 4.1.1 that will hopefully allow accounts that are on servers with issues like this be able to swap to a new one but for the time being, the team that I'm on has been identifying servers that are running into these problems and stowing the accounts that are stuck so that they can get into a new server.

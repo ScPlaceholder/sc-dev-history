@@ -1,0 +1,69 @@
+## Star Citizen Alpha Patch 4.3.1
+Alpha Patch 4.3.1 has been released to Wave 1, and is now available to test!   Patch should now show: VERSION 4.3.1-PTU.10215753.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing Focus
+- Stability & Bugfixes
+- Onyx Facilities Part 3 (Only partially in with further sections of Part 3 coming in a later 4.3.1 PTU build)
+- MedGel - Medical Respawn Resource
+- Dropships & Watch Towers
+Not ready for testing and feedback
+- AI FPS Turrets
+- Additional Hairstyles and Beards
+- VOLT LMG "Fresnel"
+- Behring Laser Cannon Art Refactors
+## Known Issues
+The issues below are meant to help give a better indication on things that may happen during gameplay and do not always occur 100% of the time.
+- PU - Stanton - ASD - Location / Respawn Screen - Player will be rescued and respawn back at the facility after being incapacitated
+- PU - Stanton - ASD - Contract Manager / mobiGlas - Phase 3 Missions are not available (Partial Chance)
+- PU - Stanton - ASD - Onyx Facility - Design / Locations - Players are unable to heal on one of the medical beds in the transit lobby medical clinic
+- PU - Actor / Interactions - Inserting MedGel cannister into Medical Kiosk Receptacle removes player ability to interact
+- PU - Stanton - Mission Content / Game Code - Multiple missions don't progress after reaching the mission location
+- Multi-Location - PU - Pyro - AI / Locations - Turrets at Farro Data Centers are not firing
+- Multi-System - PU - Multi-Location - Ladders V2 - Traversal / Actor / Mantling / Locations - Player is unable to mantle ladder from the top to climb down
+- Multi-location - PU - Stanton / Pyro - ASOP / Locations - ASOP Terminal inside hangar remains in spinning loading screen after destroying ship on pad
+- ARGO ATLS  - PU - Mounts / Cargo / Tractorbeam - The ATLS is unable to pull cargo off a ship's cargo grid after it is moved from place of origin to new location
+- PU - Stanton / Pyro - Armor / Loot Box / Inventory / Actor - Equipment and armor dropped on the ground will be suspended in mid-air making them unable to be interacted with
+- PU - Multi-Vehicle - Vehicles / Vehicle Components - IFCS - Proximity Assistance - When Proximity Assistance is enabled, vehicles will lose their movement ability until it is disabled, this can prevent vehicle take off as well
+- PU - Stanton / Lorville - Maria Pure of Heart - Locations / Shopping / UI - Players are unable to purchase and sell items due to shop missing inventory
+- PU - Actor - Player character does not receive fall damage
+## Features & Gameplay
+Gameplay
+Onyx Facilities
+The Onyx Facilities used for the new investigation missions in 4.3.0 have been expanded to include mission content beyond the previous releases. This continues after completing the original Jorrit's missions with a new mission that delves you further into their story.
+MedGel - Medical Respawn Resource
+Medical bed respawning in ships has undergone a significant change to their function to balance their use. Ship Medical beds will now require a resource that it uses to respawn players and heal tier injuries. This is a brand new MedGel resource that can be purchased in medical facilities as an item the player can store and manually use each time the medical beds needs refilling. Different tiers of medical beds will allow for differing amounts of respawns before needing to be filled.  Respawning and healing tier injuries will be quite demanding so make sure you top off your medical beds to be sure you have enough for your next respawn or you will be sent to your home location on death instead.
+Locations
+Dropships & Watch Towers
+Dropships have been re-implemented into the persistent universe in Pyro. At various outposts across Pyro, dropships will spawn when the location population is reduced by a certain amount (ie they are killed). These dropships will spawn, land, deploy reinforcements and then leave. The reinforcements should exit the dropship and search the area for hostiles. They should be allied to the local population. At each location are watchtowers each of which has a terminal at the top. If the player disables all the terminals at a location then no dropships will spawn. There are also missions that require the player to disable all the watchtower terminals at a given location.
+## Bug Fixes
+At time of this release, SC Alpha 4.3.1 contains over 110 bugfixes for issues occurring since 4.3.1 including 17 that originated from the issue council. 4 of which have already been hotfixed onto 4.3.0 LIVE.
+- Potential Fix: ARGO MPUV Tractor - PU - Vehicles - The ARGO MPUV Tractor is unable to lift a full Cargo (STARC-176936)
+- Potential Fix: Kruger L21 Wolf - PU - Vehicles - wolf canopy glass wear and tear causes wolf canopy increasingly difficult to see out of and fly (STARC-176946)
+- Potential Fix: PU - Freight Elevator - Contested Zones - Submit-only Freight Elevators automatically close after opening (STARC-177354)
+- Potential Fix: PU - Pyro - Contested Zones - Ruin Station / Orbituary - Locations / AI - No AI spawning within the Contested Zones (STARC-177712)
+- Potential Fix: Aegis Reclaimer - PU / AC - Vehicles / Art - Template seats in Cafeteria (STARC-173365)
+- Potential Fix: PU - ASD Delving - Locations / AI - Valakkar are respawning instantly (STARC-176846)
+- Potential Fix: AC - Multiple Game Modes - Vehicle / PVP / FPS - Match won't end after time ends (STARC-178161)
+- Potential Fix: PU - Stanton - ASD - Onyx Facility - Art / Locations - Research Wing - There are a couple of unfinished template whitebox assets located in the Research wing that are present in a couple areas (STARC-176496)
+- Potential Fix: ASD - Locations / AI - Onyx Research Wing has frozen rat-like NPCs on the floor (STARC-176497)
+- Potential Fix: KRIG L-21 Wolf - PU - Vehicles - Wolf bespoke guns are listed as item_name on MFDs. (STARC-177013)
+- Potential Fix: RSI Polaris - PU - Vehicles - Polaris Elevator can Clip Through Ships (STARC-173491)
+- Potential Fix: PU - ASD - Locations / Interactables - Onyx Facility Bounty Casket interaction prompts do not match accompanying action (STARC-176140)
+- Potential Fix: PU - ASD - Missions / Vehicles / Quantum Travel - Calibrating and Quantum Traveling to Onyx Facility using "Quantum Beacon" marker from deep space causes slow Quantum Travel (STARC-176204)
+- Potential Fix: PU - Stanton - ASD Delving - Onyx Facility - Location / Mission Content - Maintenance Fabricator option "Cambio SRT" only creates a Cambio Canister (STARC-176604)
+- Potential Fix: PU - ASD - Onyx Facility - SFX - Elevator doors lack sound effects (STARC-176229)
+- Potential Fix: PU - Error - 41058 - Reason="Player Query Failed" and fails to load into PU (STARC-172650)
+- Potential Fix: Multivehicle - PU - Vehicles / Radar - All vehicles with Radar on the MFD do not show what magnification the radar is at and only reads x1
+- Potential Fix: Crusader Starlifter Series Some Variants - PU - Vehicles/ UI targeting - Pilot loses targeting brackets and pips when another crew member enters remote turret from gunner seat
+- Potential Fix: PU - Stanton - ASD - Phase 2_M1 - UI / Mission Content - Mission Objective markers for the pipes do not appear after player enters engineering wing
+- Potential Fix: PU - Ship Battles - Patrol - Missions / AI - Ace Pilot will have chance to be destroyed from soft death ship being destroyed
+- Potential Fix: Multivehicle - PU - Art / Materials / Serial Numbers - Serial numbers are not appearing in their intended locations (includes: Gladius, Starlifters, Meteor, F7C MK2, Guardian, and Zeus)
+- Potential Fix: Mission Content / Locations - Derelict Outposts - Derelict outposts are spawning emergent AI as well as mission AI
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 9 Server Crashes

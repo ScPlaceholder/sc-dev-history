@@ -1,0 +1,28 @@
+Full uninstall, here's what I recommend. Be advised, PTU will have additional folders that you may want to watch for and remove if you used PTU.
+Saving your custom files!
+Before deleting your game and Launcher, you may want to save any custom profiles, keybindings, and user.cfg files.
+If you have custom settings, keybindings, etc, you may want to save those files before fully deleting!
+- Go to the Mappings folder:  (install drive)\Program Files\Roberts Space Industries\StarCitizen\Live\USER\Controls\Mappings
+- Save any profile, keybindings, etc. files to a new temp folder.
+If you created a custom user.cfg file, you may want to save it.
+- Go to the USER folder: (install drive)\Program Files\Roberts Space Industries\StarCitizen\Public\USER
+- Save the user.cfg file to a new temp folder.
+For fully clearing 2.6.3 old files, delete the following:
+- Right click on the Windows icon and select Run.
+- Enter and run %appdata% and click Ok. This opens  Users\CurrentProfile\Appdata\Roaming. Delete any RSI or Star Citizen folders you find here.
+- Right click on the Windows icon and select Run again.
+- Enter and run %localappdata% and click Ok. This opens  Users\CurrentProfile\Appdata\Local. Delete the StarCitizen folder.
+- In the file manager, navigate to (install drive)\Program Files. Delete the entire Cloud Imperium Games folder.
+For fully clearing 3.0.0 files, delete the following:
+- Right click on the Windows icon and select Run.
+- Enter and run %appdata% and click Ok. This opens  Users\CurrentProfile\Appdata\Roaming. Delete the rsilauncher folder.
+- Right click on the Windows icon and select Run again.
+- Enter and run %localappdata% and click Ok. This opens  Users\CurrentProfile\Appdata\Local. Delete the StarCitizen folder.
+- In the file manager, navigate to (install drive)\Program Files. Delete the entire Roberts Space Industries folder.
+Also fyi on the new Delta Launcher, logindata.json exists only while the Launcher is open. When you open the Launcher and login, the file generates. When closed, the file is deleted. This helps with syncing your account credentials for the game after changing your password.
+If you continue to see oddness, and the Launcher loads, check the Settings > Library Folder in the Launcher. Make sure the file location matches your current full game install. Moving your game file and not syncing the location here can cause issues.
+Administrator, Standard Windows user, and appdata files
+If you don't find Star Citizen or RSI files in appdata under your Windows account, it's possible they are under the Administrator account. When you right-click on the Launcher and select "Run as Administrator", Windows uses an Admin or Administrator account and generates appdata folders for it.
+To see what user account folders you have, use a File Manager and navigate to c:\Users. Make note of the name like Admin. After opening an appdata location, you can edit the folder location bar with the admin name. For example: C:\Users\admin\AppData\Local
+Thanks for reading!
+And thanks to @songremains for some helpful notes and feedback.

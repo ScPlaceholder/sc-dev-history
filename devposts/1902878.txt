@@ -1,0 +1,7 @@
+That's intended.
+The math behind the estimation is:
+gasConsumptionRate = totalGasInhaled / timeSinceSpawn
+timeRemaining = tankOxygen / gasConsumptionRate
+So the estimation is based on your lifetime average breathing rate, not recent breathing rate.
+That means the estimation will get more accurate and stable the more you stay alive.
+So in your video, the average gasConsumptionRate is fairly stable, but still decreases faster than tankOxygen, making the estimation go up.

@@ -1,0 +1,35 @@
+Ships and Vehicles
+Engineering Gameplay
+- Shield Balance
+Increased overall shield health. Shield variances have been brought a little closer together. Energy weapons will now damage shields more.
+- Armor Balance
+There is now a minimum damage threshold for projectiles penetrating vehicle armor. This means that ship roles will play a much higher part in damaging higher armored ships. Armor at full health will block certain projectiles from damaging the armor, ship, and components. Armor once brought down to a lower health state will allow smaller bullets to damage the ship and components.
+- Life Support
+Increased Life Support cost to maintain atmosphere. Decreased the exchange rates from Life Support to the room. Decreased the exchange rates between rooms.
+- Radar
+Assigned power affects the aim assist. Increased power demand for all Radars. Activation power is either the same or lower. CS is only picked up on ping. New Radar items created that should be available in game.
+Radar-Based Aim Assist
+Aim Assist Range Now Tied to Installed Radar
+Ship aim assist is now governed by the radar equipped in your vehicle rather than applying uniformly at a fixed distance. The effective engagement window is determined by the power tier and model of your installed radar, defining both the minimum and maximum distances at which aim assist activates. Upgrading to a higher-grade radar will extend the range at which aim assist engages targets, while smaller or lower-powered units will support assist only at closer combat distances.
+Aim assist now also includes a retention buffer. Once aim assist has locked onto a target within range, it will remain active for a short additional distance beyond the listed maximum before disengaging, preventing it from flickering on and off during close-range maneuvering at the edge of its effective range.
+- New Radar Variants Added
+A large number of new radar variants have been added across multiple manufacturers and ship sizes (S0 through S3), significantly expanding loadout customization options. Each variant has been individually tuned with distinct aim assist range profiles to reflect its grade and intended role. Recon-focused units tend to prioritize extended engagement windows, while combat-optimized models offer tighter, more aggressive assist profiles.
+The following manufacturers have new radar variants available:
+·  Basilisk has new S1 and S2 combat models including the Prophet and Cassandra variants
+·  CHCO has an expanded S0 through S4 lineup including FullSpec, BroadSpec, and Observer variants across multiple grades
+·  Garuda/Gorenberg has new S0 through S3 options including the Tige, Vigilance, Savoir, Fidele, Resolu, and Devoue models
+·  Navegante has new S1 and S2 sensor arrays including the SNSR5, SNSR7, and extended variants
+·  Wilon has new S0 through S3 options including the Abetti, Agrippa, Anysta, Capsulo, and Socoria models
+## Bug Fixes
+- Potential Fix: Multi-System - PU - Inventory Rework / Inventory / UI - Proximity detection is not working for all inventories
+- Potential Fix: PU - Nyx - RCD – Locations / Interactions – The fuse and repair doors inside the QV Breaker Station do not open even after a fuse is inserted and the door panel interacted with, blocking mission progression
+- Potential Fix: PU - UI - Inventory Rework / Crafting - Crafted Items do not display their Crafted Stats in their Inventory Interface Descriptions
+- Potential Fix: VR Implementation - Fixed broken gasclouds in VR
+- Potential Fix: Fix HUD for Atlas Mechs in VR. They wont move with the camera and are further away and scaled up - Force EHACM_DirectOffset in mechs/ATLS, so the arm can be moved properly
+- Potential Fix: MultiVehicle - PU - AI - Radar - AI do not care about radar pip distances and will fire at players
+- Potential Fix: PU - The entity count in the Nyx Space territory is abnormally high
+- Potential Fix: PU - Nyx - Nyx Mission Pack 2 - Missions / Courier / Mission Content - Item packages for the FTL Courier missions are not spawning at the Pick Up Locations in Levski
+- Potential Fix: PU - Nyx - RCD - VFX / Locations - Snow kickup from footsteps is not affected by gravity
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes

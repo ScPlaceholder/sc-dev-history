@@ -1,0 +1,66 @@
+## Star Citizen Alpha Patch 4.1.1
+Alpha Patch 4.1.1 has been released to all waves!   Patch should now show: VERSION 4.1.1-PTU.9719902.
+Audience: All PTU Waves
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Mesh Configuration: 7:3:600
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+All players have been given: Ion, Inferno, Retaliator, Eclipse, Harbinger, and Gladiator
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Ship Battle Missions V1 (Patrol, Ambush, and Gilly's Advanced Combat Gauntlet Missions)
+- Handyman Missions
+- Hunt the Polaris Mission
+- UEE Training Mission
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback and are subject to removal
+- Fleetweek Events, New Missions, and Halls
+- Mission Meshing Refactor: Comm Array (Hack/Repair), Animal Missions, Multi-Location Courier, and PVP bounties.
+- New Collector Rewards
+- NPC Comms Call, Dialogue Additions, and Improvements
+- [Redacted]
+## Known Issues
+We are expecting many missing assets around Area18 builds with some replaceme textures around. This is temporary with more inclusions coming in the next builds.
+- Hunt the Polaris is only available in the Hurston region
+- UEE Training Missions will sometimes not progress past the "ping area" objective
+- Blocker: Multivehicle - PU - Quantum Travel - Quantum travel will no longer align and spool to target destinations
+- Critical: PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- Critical: PU - Space Combat Mission- Ambush - Foxwell - Missions / HUD - "Hide Ship Signature" objective marker has a chance to not appear in Ambush missions
+- Critical: Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- Critical: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- High: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+## Locations
+- Feature Update: Lighting updates for the Collector's freight elevator
+## Gameplay
+- New Mission - UEE Training Missions
+The UEE is offering special low difficulty missions during Fleet Week that feature basic objectives meant to introduce players to ship combat. There are three missions done sequentially, all in the ArcCorp area.  Each mission has full voice over instructions and a temporary stand-in reward once all are complete.
+- New Mission - Hunt the Polaris
+New Fleet Week mission. A Polaris has been stolen by the Frontier Fighters and the CDF are tasked by the UEE Navy to hunt it through the Stanton system, isolate it, and kill it.  The mission will be offered rarely, can be shared, and will only have one active at a time.  Once complete a temporary stand-in reward will be given.
+## Ships and Vehicles
+- Updated 890J and Reclaimer flight tuning to match new large ship goals
+- Retuned the S6 Polaris bespoke turret guns for greater damage
+- Added actor based recoil effects when using Polaris main turret
+- Rebalance for military components to make them better suited for combat purposes
+## Bug Fixes
+- Potential Fix: PU - Ship Battles V1 - Missions / Audio - Gilly's Gauntlet Narration Replays (STARC-164371)
+- Potential Fix: MISC Hull C ( MISC_HULL_C.xml ) - PU - Stanton - Vehicle / Locations - Impounding - Hull-C retrieve with extend cargo spindles in L size hanger after impound (STARC-79426)
+- Potential Fix: PU - Ship Battles V1 - Patrol / Ambush - Mission Feature / Mission Refactor - Mission does not progress after destroying targets (STARC-165141)
+- Potential Fix: PU - Stanton - Quantum Travel - Players will frequently travel through the moon's surface when QT'ing to OLP locations not in direct line of sight to the player
+- Potential Fix: Aegis Vanguard ( All Variants ) - PU - Vehicles - Art - Tints / Liveries - There are LOD issues on the ships turret when a tint is applied
+- Potential Fix: PU - Stanton - MultiLocation - Some Elevator Panels / Gateways are not linked to the transit manager
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector - Locations / Room System - There is a corner in the Showrooms missing atmosphere
+- Potential Fix: Game Options - Fix issues with text and option persistence on Target direction and target arrow
+- Potential Fix: Multilocation - PU - Stanton - Locations / AI - Social AI - AI are stuck idle in their spawn locations
+- Potential Fix: AC - Menus - All AC Game Modes - Rental - FPS / Vehicle - Rental FPS Items, Vehicles, and Components area not present for renting for REC
+- Potential Fix: PU - Mining - Refinery Kiosk / Inventory - Starting a New Refinery Job with Warehouse as Source, do not return Ore Containers (STARC-165255)
+- Potential Fix: Anvil Terrapin - All Variants (Terrapin) - Vehicles - Damage / Wear - Canopy glass is extremely difficult to see through at higher wear values
+- Potential Fix: PU - Stanton - Locations / AI - Law / Reputation - Security Guards located around Landing Zones are not reacting to players with a CrimeStat 3 or higher
+- Potential Fix: Basilisk Ace Interceptor Flight Suit - PU - Actor - Armor - Art - The Ace Interceptor (Pilot) physical armor box loses all art material assets when it's Carried by the Actor (STARC-165847)
+- Potential Fix: Multilocation - PU - Ship Battles V1 - Patrol / Mission Feature / mobiGlas / Reputation - Completing a Patrol mission under HeadHunters will not gain faction reputation upon completion
+- Potential Fix: Drake Golem - PU - Vehicles / UI - When in Scan mode ping returns are not showing for what ping value (STARC-161985)
+- Potential Fix: PU - Stanton - Collector - Wikelo Mods - Locations / ATC / UI - The player does not recieve a marker indicating the assigned hangar (STARC-164700)
+## Technical
+- Fixed 3 client crashes
+- Fixed a server crash

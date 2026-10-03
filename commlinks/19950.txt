@@ -1,0 +1,118 @@
+PU Monthly Report
+April 2024
+Welcome to the latest PU Monthly Report, this time detailing all the development progress made throughout April. With the imminent release of Alpha 3.23, most teams began or continued tasks for events and releases coming soon and further into the year.
+Read on for the latest updates on jump points, weapon animation, the Anvil Legionnaire, and more.
+## AI (Features)
+Throughout April, AI Features put significant effort into the Alpha 3.23 release, specifically the kopion creature that will be found across planetary surfaces and in caves.
+“We’re really excited to share this new creature and the gameplay possibilities it provides. Kopions are the first of the creatures we have been working on and have posed many challenges during their development. We also had the pleasure of bringing all the hard work of other teams into a cohesive whole.” AI Features Team
+New features added for creatures include ground alignment tech, which allows them to appear correctly situated when moving across the terrain, and the ability to attack in formation. The attacks themselves require motion warping and melee attack technology to connect with the player. The team also put a lot of effort into ensuring that these functionalities work well across different environments.
+## AI (Tech)
+Last month, AI Tech focused on planetary navigation mesh, with the version implemented recently receiving significant improvements. Firstly, they removed generation limits over planet latitude, which gives stronger coupling with planetary terrain patches, allowing the nav mesh to generate correctly over the planet efficiently. They then improved generation response at lower framerates so that movement over planets in non-ideal performance scenarios results in acceptable nav-mesh generation times.
+The multipath code was then optimized to execute faster, which will result in quicker generation of paths into, out of, and between usables. The team also enabled failure detection code in the movement system component to identify and fix situations where NPCs were standing on usables or out of the nav mesh.
+Another key feature worked on was the boids system used for the new marok creature. April saw the devs improving network synchronization and extending the system to support audio triggers from different agent states. Several optimizations were also made to the overall code.
+Significant time was spent verifying multiple parts of the AI system after evaluating the EPTU optik profiles. For example, the team optimized some of the navigation code involved in the destruction of navigation links and navigation volumes when larger outposts stream out.
+The pathfinder was also switched from running using background jobs to batch jobs. The main pool that serves requests was split into two to better serve multipath and standard-path searches. Moving the calculation into batch jobs allows an increased number of calculations, which provides much faster results and utilizes more CPU time where available. These jobs are lower priorities, so they can always provide space for more urgent calculations and continue work across multiple frames. This should result in quicker response times for NPCs at lower FPS.
+In parallel with supporting the Apollo Subsumption editor, AI Tech are also working on a new UX design for their internal tool.
+Progress was also made on the spaceship combat behavior, which is planned for release in Alpha 3.23. All NPC fighters now use this behavior, which involves them using limited ballistic ammo rather than infinite rounds as before.
+Finally for AI Tech, they implemented point defense cannons that will protect capital ships from incoming missiles.
+## Animation
+In April, the Animation team worked on various creatures, including two predators and a prey animal. They also spent time polishing player movement in space and when prone (which will be live in Alpha 3.23) and implemented hit reactions for when AI is out in the open.
+The Facial Animation team continued to develop facial animations for various game elements.
+## Art (Characters)
+In April, the Character Art team began work on two specialist armors, reworked a utility armor, and supported requests for the Character Customizer. They also continued working on creatures.
+The Character Concept Art team continued developing specialist armors and completed handoff sheets.
+The Hair team kicked off new hairstyles for Alpha 4.0 and undertook R&D on fur.
+## Art (Ships)
+The Ships team progressed with the RSI Zeus, continuing with the beauty and polish stage. The cockpit is now greybox complete, which established the standard for the remainder of the ship. The habitation area is receiving the last elements of polish, including resolving the ceiling and personal storage areas. The cargo room ceiling had a pass and the devs began finalizing the walls. The mess hall is nearing completion, as is the central hallway.
+Work on the exterior progressed well too, which now has a significantly increased level of detail throughout. The team are currently going through all other sections to ensure they have the same level of detail. Ships also started looking at lighting, including a pass of every room and the entire exterior. Following this, it will be outfitted with proper fixtures.
+The Anvil Legionnaire is now whitebox complete, though requests were made to improve its usability when boarding hostile vessels. The devs are currently exploring options for collapsable cover built into the boarding tunnel.
+Elsewhere, Resource Network work was finished for 10 ships, while legacy updates were made to three additional ships to support a new selection of paints.
+## Audio
+For the upcoming Alpha 3.23 release, the Audio Vehicle team completed their first milestone in overhauling the ship audio experience with new thruster sounds, which is rolling out to all new ships.
+“The goal was to restructure our process of designing and implementing ship thruster audio in order to unify the setup of all ships and streamline our pipeline. This ensures that sound designers will have fewer sounds to design, but every asset will have a greater impact. Our objective was to immerse our pilots in hard-hitting and reactive sounds, resulting in a memorable flight experience, whatever ship they choose to fly.” Audio Team
+They are now also using a shared and extensive set of game parameters that modulate different layers in a variety of ways. This, paired with a more extensive matrix of generic assets designed to fit manufacturers, classes, and sizes of ships, results in a much more granular and interactive experience for the player while giving every brand a clear sonic identity. This is supported by bespoke sounds made individually for every ship to give them all a unique flavor.
+Finally for Vehicle Audio, the devs introduced a very early state of manufacturer-based soundproofing – with this, each brand will have a unique soundproofing profile, heard when players are in first person, to further improve immersion. The new thrusters and audio features were rolled out with the Anvil F7A Hornet Mk II and will be utilized on every new ship going forward, with the team converting older ships periodically.
+The Audio Environment team polished the first ambience pass for Distribution Centers while continuing to develop new systemic ambience. Although this new system is still early in development, the team was able to add it into the Distribution Centers, improving ambience for players at these locations. Alongside this, the team finished their pass on the new features for Alpha 3.23, including wildlife.
+## Community
+The Community team started the month by celebrating Triggerfish with the announcement of the MISC R.A.P.T.O.R, the ultimate weapon in the war against garbage! They also supported the April Fools' Arena Commander mode.
+Community support continued for the Overdrive Initiative, including the Overdrive Initiative FAQ.
+Regarding upcoming updates, the team published the Alpha 3.23 Patch Watch, which highlights the features and improvements that do not appear on the Public Roadmap.
+The team also supported the live release of the RSI Launcher 2.0 - a full revamp of the application with the ultimate goal of serving as a reliable tool for the community.
+The Bar Citizen World Tour continues in 2024, with team members joining the fun in Chicago this month. For those looking forward to a future event, a more detailed schedule for this year's Bar Citizen World Tour will be published soon.
+Planning for this year's CitizenCon in Manchester, UK, on October 19-20, is underway.
+"With over 3,700 tickets already claimed, this year's CitizenCon has already shattered previous attendance records, marking it officially the largest Star Citizen event yet! Despite still being April, the team is already deep in planning for the layouts and key components of this year's show and can't wait to see you all in Manchester this October!" Community Team
+In addition, the annual community-created System 7 Racing League, organized by ATMO Esports, is ongoing, with the team continuing their support for the event.
+Finally, the Community Team published the weekly This Week In Star Citizen schedules alongside the most recent updates on the upcoming gameplay features in Roadmap Roundup. The Arena Commander Schedule was also updated to provide better visibility on game mode rotation and special modes. Besides these, many other support tasks were done to prepare for Alpha 3.23, 4.0, and beyond.
+## Core Gameplay
+In April, the Core Gameplay Pillar closed out features and prepared them for release in Alpha 3.23. A significant amount of time was invested into polishing and bug fixing as well as reviewing feedback from the community to improve features where possible.
+For example, various improvements were made to weapons, including enabling the interrupting and canceling of backpack reloading and ammo repooling via actions like weapon swap, sprint, and melee.
+Support was also added for hit-marker sounds, while recoil patterns are now the same for tap-firing and holding the fire button.
+ADS mouse sensitivity is not scaled down for higher FOVs anymore, and weapon bandwidth usage was improved.
+For jump points, the team enabled new fail states if a jump drive detaches or stops functioning and added tunnel push force from the edges of the map to help players stay on course. They also implemented the first pass of procedurally generated tunnels from design parameters, including randomness to tunnel shapes for variety.
+For the resource network and engineering, the team implemented a throttle that manages power in one-SCU segments based on the updated UI design.
+Additional item power range modifiers were added, which enable extra behaviors currently used for heat generation. This entered optimization for eventual release.
+For the life support and room system, the team implemented filters that degrade over time, with the life-support generator ceasing to work once all are used.
+Gas propagation now uses accurate positioning within rooms, while atmospheres will equalize differently depending on whether they’re high or low-atmosphere environments.
+The technical requirements for crafting were scoped out with Design, and room-system documentation was updated to enable other teams to better implement their work.
+April saw continued work on Maelstrom and the radar and scanning feature.
+Planning continued for the transit refactor, and fixes were made for various analytic events not reporting correctly.
+For Arena Commander, the team began refactoring the Spectator module and player component. They also updated how Arena Commander uses comm-link notifications and completed a pass over various game modes and awards for Alpha 3.23.
+Changes were made to Pirate Swarm’s final wave, which now uses two Idris capital ships. Gun Rush now supports multiple weapon lists (controlled by badges) that can be randomized from all enabled weapons.
+VOIP and mute/unmute were added back into Arena Commander too.
+Further development was done on the Contracts Manager, with the team providing code support for cargo hauling missions. ‘Or’ missions were added back in, where players can choose between objectives, and general bug fixing was done.
+Reputation-based hostility was further worked on too. Alongside several issues and improvements, a new neutral zone was added. This is a special restricted area that all players have permission to be in, with NPCs ignoring reputation relationships and criminality and reacting neutrally to everyone. However, access will be revoked for any non-justified hostile act, with everyone else seeing that person as hostile and attacking accordingly.
+To regain access after hostile actions, the offending player will need to exit the zone and wait a set amount of time before entering again. Remaining inside when hostile or entering before the allotted time will completely reset the timer.
+For cargo, Core Gameplay progressed with freight elevators, item banks, and persistent hangars.
+## In-Game Branding
+Last month, the Branding and Vehicle teams worked closely to create brand identities for upcoming and existing vehicles within the game.
+They also continued to develop an in-house tool for all manufacturers, from ships to signage. This will be a versatile and invaluable tool for everyone working on the game and lead to the unification of the different brands across the entire game.
+## Interactables
+The Interactables team completed their work on fire extinguisher recharge cabinets, including both high-tech and low-tech versions. These will be placed in hangars for convenience and aid in ship-fire gameplay.
+Industrial cargo containers had their final art passes, including branding and signage, giving them more credibility as container storage.
+## Lighting
+Lighting spent time in April polishing Distribution Centers before moving on to instanced hangars and freight elevators, with the aim of making every interaction an engaging event.
+## Locations
+The Locations teams spent April closing out features for Alpha 3.23. For example, the Sandbox team completed Distribution Centers, adding the last elements of polish before shipping. The team are looking forward to players getting their hands on these locations and will be looking for feedback that they can take forward as Distribution Centers evolve in the future.
+The Sandbox team are currently finalizing the last few outposts going into Pyro for Alpha 4.0 whilst supporting other Locations teams with their tasks for the upcoming patch release.
+The Landing Zone team finalized art for the cargo initiative and helped out other teams on Alpha 3.23.
+## Mission Design
+Last month, Mission Design continued to polish content for Alpha 3.23, including XenoThreat and fauna-related missions. They also made quality-of-life improvements to missions, including Missing Persons, and supported content for Distribution Centers.
+Work was done on the new Contracts Manager to ensure it has all the existing functionality alongside improvements. They also made the Commodity Update Journal entry a lower-priority notification and reassessed what missions notify players when they’re available. Further bug fixing was done for Overdrive Initiative too.
+The team then used the extra time until the cargo updates to add additional high-quality content and further polish the Cargo Hauling and Kill and Collect missions:
+“The various shipping companies of Stanton often outsource cargo hauling to freelancers through contracts. These job-board missions task the player with picking up the designated cargo shipment at one or more locations and offloading it at one or more destinations. At their core, these missions will test the player’s knowledge of their ship’s specs and their ability to weigh the time spent loading and traveling against the payout.
+They will see the player transport goods back and forth to various jump points, LEOs, Lagrange points, landing zones, and Distribution Centers. These goods consist of various commodities and vehicles of real value, allowing players to get a rudimentary sense of what it will be like to have a hauling career. Simultaneously, this represents our first step toward implementing the logistical structure of the ‘verse in a tangible, playable form, prior to a Quanta-controlled system.” Mission Design Team
+## Narrative
+April was a very busy month for the Narrative team, who worked hard preparing for the Alpha 3.23 patch. This included crafting new Distribution Center missions, creature-hunting missions, polishing the new UI layouts, and reworking hint text alongside bug fixing.
+Looking ahead, the team helped with the upcoming Invictus Launch Week, making sure everything is ready for players to visit in-game. This was a particular focus of the Narrative Design team, who looked at the NPCs attending the event. The team also spent time working on cargo gameplay, providing UI and mission support.
+Additionally, the Narrative team did a lot of planning and pre-production work for Star Citizen 1.0, detailing the scripts and assets that will be needed for its release. This includes looking at legacy work done in the game’s early releases and analyzing how best to update it to meet current standards.
+Another batch of lore went up on the website as well, including a Mirai Portfolio, an excellent batch of new Galactapedia entries, and a Whitley’s Guide to the Drake Vulture.
+## Online Technology
+After several sprints, the Online Services Team completed their refactor of the social services backend. This involved porting the services to gRPC, as well as making updates related to server meshing.
+Online Services also completed work relating to EAC anti-cheat in preparation for enabling the enforcement of sanctions. This is currently going through the first round of QA testing. The team also supported Alpha 3.23 by bug fixing and helping triage performance issues.
+Over the past month, the Live Tools Team worked to ensure compatibility between the Network Operation Center in Hex and the modifications being made on the services side for version 3.23. They're also implementing new modules to assist different types of users.
+Additionally, the team continued to enhance other internal development tools and provide support and maintenance.
+## R&D
+R&D spent April supporting Alpha 3.23. For example, the half-resolution render mode was updated to accompany the new cloud rendering improvements and the introduction of ground fog.
+This mode serves as a good compromise between quality and performance and will be superseded by the temporal render mode, which is still a work in progress. Improvements include the cleaner rendering of silhouettes and foliage, less blurry results from orbit, and better low discrepancy sampling. Due to these improvements, the decision was made to alter the ‘very high spec’ settings for clouds to use the half-resolution render mode and increase the number of raymarching steps. As a result, players will see more consistent and less-noisy cloud rendering (similar to the new "photo mode" quality setting) at reduced GPU cost compared to the previous ‘very high spec’ settings. This will hopefully allow more people to enjoy the new high-fidelity rendering improvements in-game.
+Additionally, further support was given to the Rendering team to roll out PSO caching and request collection to eliminate PSO cache redundancies and certain shader flags for vertex position and texture coordinate modification. This is to minimize the number of shaders and PSOs needed to run the game.
+Support was also given for various Vulkan issues that were revealed during PTU play testing.
+Longer term, work progressed on the temporal render mode. All confidence metrics, which are used to decide whether to keep history data after reprojection, now also factor in scene motion and depth. The temporal render mode was also tested against the various temporal upsampling solutions supported by the renderer.
+## Tech Animation
+The Tech Animation team continued to generate and implement new head assets to the DNA gene pool, and are not far from completing the initiative of 40 heads for each gender.
+Many devs are currently dealing with the complications of players and NPCs putting on and taking off clothes live in the engine.
+“This has been ongoing for some time and, with the addition of animation resources into the mix, we are seeing great headway in both generating the assets for animation and generating usable pipelines to expedite the entire process for everyone involved.” Tech Animation Team
+Additionally, the team are intrinsic in the creation and implementation of new creatures for both the PU and SQ42.
+They’re also involved in work toward consumables and the setup of foodstuffs, with the team aiming to guide this initiative and promote time-saving workflows.
+Lastly, they continued to support Alpha 3.23, ensuring content is integrated, tested, and ready for players.
+## Tech Design
+Tech Design provided general tech support for Alpha 3.23, including fixing bugs affecting doors and fuel tanks not exploding in the new Distribution Centers.
+For ships, iteration was done on weapon balance and AI following director feedback. For the latter, an easier AI behavior was created for use in very easy, easy, and introductory missions.
+A call-to-action prompt was added to the elevator panels of multiple ships, and an issue preventing players from getting out of bed in the MISC Freelancer was fixed.
+For Arena Commander, work continued on the Resource Network game mode, including enabling doors without power to be openable (but not closable) to prevent players from being trapped.
+## UI
+In April, the Montreal-based team focused on the Cargo feature and worked closely with Core Gameplay on the Resource Network mandate, which included getting wireframes signed off. They will begin creating mockups soon.
+In the UK, the UI team added the final touches to the new UIs for the visor, mobiGlas, and maps. They added the final missing features, such as the chat window and law widgets, too.
+Updates were also made based on player feedback, such as reducing the hologram effect on the HUD and bringing back differently shaped quantum-travel markers. The team spent time polishing visuals and bug fixing as well.
+## VFX
+Last month, the VFX team focused on bug fixing for the upcoming patch. This involved playtesting the game to find major issues that needed solving immediately or identifying smaller issues that were safe enough to fix without risking creating other bugs.
+They also worked closely with Graphics and Planet Tech to ensure the supporting effects for water were working as expected and not too expensive. They also worked on a variety of vehicles for an upcoming release.

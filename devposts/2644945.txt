@@ -1,0 +1,69 @@
+## Star Citizen Patch 3.8.0m
+Alpha Patch 3.8.0m has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.0-PTU.3879175.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- General gameplay and traversal
+- Microtech and updated rest stops
+- New look ahead and third person camera updates
+- Patrol, bounty, and mining claim missions
+- Fine kiosk system
+- Hijacked 890 mission
+- Mining and mining laser head attachments
+- Ship components
+Known Issues
+- The mission marker for black box recovery does not update when arriving at orbital mission locations.
+- Switching FPS weapons repeatedly may cause the player to lose one of the weapons.
+- If the quantum travel marker is at the edge of a moon or planet they can QT through the moon and explode.
+- When going prone and using the P6-LR sniper rifle, the scope may appear obstructed.
+- Carriable mission items can fall through flooring.
+- The Sentinel is incorrectly labeled as the Harbinger in the ASOP and Comms channel.
+- Purchased commodities will often visually not appear in the ship's hold.
+- Carriable boxes may fall through the flooring.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## New Features
+Gameplay
+- Minor criminal infractions (battery, vehicle collision, and vehicle destruction) will now not be triggered when against fellow party members.
+## Feature Updates
+Gameplay
+- Adjusted view distance ratios for dropped commodities.
+- Adjusted difficult style patrol mission rewards.
+- Added an option to enable look ahead target tracking to engage automatically.
+- Spring movement on third person camera is now effected by user target offset.
+- Increased max rotation angle for the third person camera.
+- Added an option to disable look ahead completely.
+- Look ahead is now disabled during interaction mode and mobiGlas usage.
+- Reduced unarmed combat movement speed.
+- Updated and tweaked melee stun timing and VFX.
+- Added mineable resources to the new Lagrange point clusters.
+Ships and Vehicles
+- Adjusted visibility of some visor elements.
+- Remixed the ship audio volume levels.
+## Bug Fixes
+- Fixed crimestat generation for AI if they have no crimestat rating themselves.
+- Ships should now be consistently claimable and duplicates should not occur.
+- Shopkeepers should no longer be away from their desks.
+- Party launch should now work consistently.
+- Fixed an issue where wearing specific helmets would cause the players shadow to not show the head.
+- Fixed an issue where objective markers for claim jumper missions would duplicate and not be removed on mission completion.
+- Players should no longer get stuck on a black screen on respawn.
+- UGF missions should track kills and complete normally.
+- There should no longer be a placeholder "Label Name" when scanning for minerals on mineable rocks.
+- Players should no longer be able to accidentally walk into the no-fly zone kill area while on foot around New Babbage.
+- Failed mission objectives should no longer provide rewards when the mission is completed.
+- Spawning a Reclaimer or an 890 at Lorville should no longer cause the ship to explode on the pad.
+- There should no longer be a restricted area above Riker spaceport.
+- The Levski quantum travel marker should no longer appear out of range after Delamar arrival.
+- The escort ship as part of escort missions should now consistently appear upon reaching objective.
+- Players should now be able to land in Lorville hangar 2 and 3.
+- The Lancet mining laser should no longer fire straight down.
+Technical
+- Fixed 6 server crashes.
+- Fixed 4 client crashes.

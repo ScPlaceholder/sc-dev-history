@@ -1,0 +1,3 @@
+Two things here:
+1. Can we make buying bulk snacks and drink possible? Yes, and in fact I've seen many streamers struggle with needing to manually rebuy so much so I will bring this up with design, it would not be that difficult to add.
+2. There's a separate question here about the representation of those items in the data base. Currently in the game our persistence implementation doesn't support a concept of stacks of items, only stacks of commodities. So when buying in bulk it will generate unique items for each unit. However we will be adding item stacks with the icache implementation and global persistence.

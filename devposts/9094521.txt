@@ -1,0 +1,34 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12497254
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns
+- Wikelo Inventory Updates
+- Kruger S65 Stingray
+Known Issues
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+## Bug Fixes & Technical
+- Further Server Load Balancing and Performance improvements
+- Potential Fix: Kruger S65 Stingray cockpit not taking damage correctly, making it effectively invulnerable to targeted fire
+- Potential Fix: Kruger S65 Stingray tail section not covered by the ship's shields, causing damage to pass directly through to the ship body until the vessel was destroyed
+- Potential Fix: Siege of Orison instance being marked as complete immediately after the briefing at the main platform without any objectives being completed, causing the instance to tear down before the mission could begin
+- Potential Fix: ASOP terminal Retrieve button becoming permanently greyed out and unable to spawn or retrieve a vehicle, caused by ATC not correctly stowing the vehicle when the Unified Front End System loaded
+- Potential Fix: Siege of Orison NPCs ignoring their assigned Defend Areas after a server crash recovery and rushing directly toward players instead of holding position
+- Potential Fix: Contracted cargo being duplicated in large quantities in the freight elevator after completing a Recover Cargo mission
+- Potential Fix: Siege of Orison instance being marked as completed prematurely due to an event catch-up running before the player triggered the Action Area event that initiates the session
+- Potential Fix: Levski Borehole Station elevator entrance showing a visible seam and missing geometry due to a visarea configuration issue; the elevator carriage and surrounding architecture have been reworked
+- Potential Fix: Refueling contracts not completing after successfully refueling a Kruger P-52 Merlin
+- Potential Fix: Character customizer camera shifting position when selecting a body type during the transition animation
+- Potential Fix: Weapons and weapon racks in personal hangars and home locations showing no claim cost in the Item Recovery terminal, allowing them to be claimed for free
+- Potential Fix: Battaglia Story Mission 1 Phase 2 comms call directing players to Levski not playing if the player dropped out of quantum travel early before reaching Levski
+- Potential Fix: Battaglia Story Mission 1 "Go to Levski" objective remaining visible on the HUD after the player dropped out of QT during the redirect from Battaglia
+- Potential Fix: Multiple players being sent to the same Battaglia mission location, causing them to arrive at an already-occupied or incorrect site

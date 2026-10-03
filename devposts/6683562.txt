@@ -1,0 +1,66 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.23.0-PTU.9110651-9112469.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Server Info: US Only - PU Only (AC Disabled)
+Audience: Evocati Only
+Long Term Persistence: Enabled
+Pledge Copy: Disabled
+Starting aUEC: 15,000,000
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.23 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+Note: This build will be up for roughly 4 hour from the start of the test (pending and unforseen issues)
+- Stability (Main Focus)
+- Full Character Customizer Revamp
+- EVA T2
+- New Loot Screen
+- New Visor / Lens
+- Backpack reloading
+- Ammo repooling
+- Dynamic Crosshair
+- Physical Shopping UI
+- Server Crash Recovery
+Not Ready For Testing/Feedback
+- Master Modes
+- mobiGlas Rework
+- Starmap
+- Interior Map / Minimap
+- PIE / PIS and Default Item Actions
+- Freight Elevators
+- Hauling Missions
+- Reputation-based Hostility
+- And More
+Known Issues
+Players will want to avoid starting at Lorville due to ASOP terminal issues
+- PU - Stanton - Locations / Kiosk - ASOP / Fleet Manager - ASOP Terminal is unable to access list of available vehicles
+- PU - Stanton - Locations - Graphics / Planet Tech - Underwater Wobble effect is present on the exterior of Lorville
+- PU - Stanton - Multiple Locations - AI - AI are spawning together in group and they can be slow to leave their spawn points
+- PU - Stanton - Locations - Multiple Locations - Transit - Elevators - Hab elevators can infrequently fail to spawn
+- PU - RL - Service Beacons / Missions - Service beacons cannot be created
+- PU - Stanton - Mission Content / UI - Mission markers are not shown to the player
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+- PU - UI - NikNax / VLM - Liveries - All Liveries are missing volume information in NikNax and Vehicle Loadout Manager
+- PU - Performance - Inconsistent frametimes / stuttering during high concurrency due to DatabaseUnloading
+- RSI Constellation ALL Variations - PU - Vehicles / Interactions - Interaction prompt missing for pilot and co-pilot seats
+- Front end - UI / Locations - Inventory - Entitlement - Primary Residence location can be missing from the front end
+## Features and Gameplay
+Characters
+- Character Customizer Revamp
+The Character Customizer has been rebuilt from the ground up and includes multiple new ways to achieve the character look and style you've been dreaming of! This includes multiple new base head models, new hairstyles, new eyebrows, makeup, facial hair, character creation saving and retrieval, and more!
+Gameplay
+- EVA T2
+Bringing the full Squadron 42 EVA implementation into Star citizen for the first time, this greatly improved EVA system adds much needed control, animations, game-play, and finesse for players traversing zero-g from outside their ships
+- Animations and Traversal: Player movement and position is a completely new experience with Star Citizen 3.23. The first thing players will notice is that they will no longer be vertical while maneuvering and instead be in more of a superhero pose. This pose gives much more flexibility with player maneuverability, rotations, and viewing angles while also feeling much more natural and overall more aesthetically pleasing to see! From this new pose, players will have full 360 horizontal rotations while body direction will remain constant, until thrusting in a direction. Slower EVA speeds are now enforced in interior spaces. Improve Strafe maneuverability. Made transition between gravity and no-gravity more robust. There are multiple new animation poses for no weapon, weapon (pistol, stocked, shouldered), grenades & consumable use, 1 and 2 handed items, and mobiGlas use.
+- Fuel system & consumption: Players will now have a limited EVA fuel in their suits which makes planning trips into zero-g much more necessary. This adds support for EVA thrusters on undersuit, torso armour, and backpacks. In an emergency situation, if a player's suit runs out of fuel, their suit will transfer oxygen supply to thrust when fuel supply is empty which could be the slight boost needed to survive. Suit oxygen replenishes quickly while in breathable atmosphere. Nitroxy Pens will resupply suit fuel and oxygen.
+- Visor & Lens HUD Rework
+Converting SQ42 Player Visors over to Star Citizen. The Visor and Lens systems have now been updated to use Building Blocks for improved performance and flexibility. This updated system brings much needed user experience updates to adapt on the fly to the player's situation in and out of combat.
+- FPS Loot Screen
+Introducing a new screen for looting critical items quickly, allowing for more reliable inventory management in tense situations. With this update players can rapidly transfer items to their weapon, magazine, consumables, and throwables slots or transfer all into their backpack. Selecting loot option on a crate will bring up the new FPS looting interface while opening will bring up the original inventory window. Added button on top right of Inventory screens to swap between the new and old looting interface.
+- Physical Shopping UI
+The way items in shops interact with players Augmented Reality has been updated to give clear and detailed information about the physical item they are browsing. Players will no longer need to hold "F" when approaching items on store shelves. Looking at an object while close to it, a new AR informational window will appear next to the objects in view with descriptions of what the item does, it's stats, price, your current funds, and a new hold "B" to buy option.
+- Reload improvements
+Reload Improvements have been integrated from Squadron 42 into Star Citizen. This includes many quality of life additions such as Ammo repooling and backpack reloading. Re-loading during tense situations has been overhauled to allow multiple reload types, allowing players to first reload from their equipment slotted magazines and then from their backpack/personal storage with a bit longer of a search time once those have been exhausted. Implemented similar functionality for Quick Select Wheel “From Inventory” rummaging. This new functionality includes UI on the player HUD to let the player know where their next reload will come from and how many overall munitions they have left in all personal inventories for the currently held weapon. Empty mags will now result in them being tossed away instead of being re-attached to your suit.

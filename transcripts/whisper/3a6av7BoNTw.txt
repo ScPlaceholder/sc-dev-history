@@ -1,0 +1,835 @@
+# Star Citizen Live: Cargo & Hangars
+# https://www.youtube.com/watch?v=3a6av7BoNTw
+[   12.8] Yep, take it in. Hi everybody. It's enough of that. Welcome to Star Citizen Live Cargo and Hangars. I'm your host
+[   26.1] Almost forgot the word host Jared Huckabee. If you've never seen the Star Citizen Live before
+[   30.6] it's where we take about an hour at the end of our week. Invite one of our developers on the show and
+[   34.8] chat about all kinds of stuff Star Citizen. Today's show is focused entirely on cargo and hangars and any conversation
+[   41.9] related to cargo and hangars must involve cargo Chad himself, Mr. Chad McKinney. Chad, how you doing?
+[   48.9] Doing good. Thanks for having me. Now, I thought we had agreed to both shave our beards for this
+[   55.6] We both agreed that you would shave your beard. Is that what we agreed to? That's what I remember. I
+[   62.1] Should read my messages
+[   65.4] No, as I can already see in the chat. No, I did not lose a bet or anything like this
+[   71.3] The answer is I'm you lost a fight with a razor lost a fight with a razor
+[   77.1] Against my my better wishes and against my
+[   81.0] Protestations on this very show for years and years and years. I am getting scanned
+[   86.1] for inclusion in one of the games next week, so
+[   90.9] That's what this is for. I've seen people wondering if it was for CitizenCon or for some big marketing thing. No
+[   97.5] It's just because they're like, hey
+[  100.4] We're gonna put you in the game. Probably gonna make you a janitor or something on the on the bangle or something
+[  105.3] I'm like, cool. I'll be a janitor on the bangle. So that's what this is for. So
+[  109.5] Sorry women and children for the fright. This is what I actually look like
+[  114.4] All right, so getting on with the show
+[  118.5] this is a Q&A show where we collect questions from you the star citizen viewer and
+[  123.0] Pose them directly to Chad. We put up a thread up on Spectrum, which there's bespoke communication platform available on Robert space industries
+[  129.3] Dot-com if you haven't checked that out check that out
+[  131.2] It's your chance to submit questions and vote on which ones you want to see answered most
+[  135.0] We selected the questions that were appropriate for Chad
+[  138.4] Remember that no star citizen developer works on every single aspect of the game
+[  142.3] So while there were many questions that I know folks were
+[  146.4] Feverently wanting answered we do have to find questions that are
+[  151.8] Appropriate for our guests that said we did pick four or five that were still outside as Mandat and went to
+[  157.5] Ian Leyland and Rick Porter to get some answers to those so we did try to include some some of those questions that we normally skip over
+[  163.3] For that so we're trying to best of both worlds here. So Chad, are you ready?
+[  168.6] No, but let's go. All right. So the first question is a real real easy one
+[  175.3] Just just a softball over the home plate
+[  179.4] In the hangers and cargo
+[  181.6] SEL four months ago it was said that it just missed the release and that you were really close
+[  189.1] What the hell happened?
+[  192.8] Time is relative. No
+[  195.6] So a few things on that first is
+[  199.8] When I said that first off I do regret using that exact terminology
+[  206.0] But yeah to be more serious
+[  209.3] When I said that
+[  210.9] That doesn't mean we're really close to going live, right?
+[  214.3] So I think that's one first one thing to consider is that there's still the whole
+[  218.8] Avocado PTU live flow that we have to go through and there's going to be a
+[  223.0] Lead time to getting that out to players like no matter what so it wasn't like
+[  228.2] We were so close to just like pushing the button and being live
+[  232.1] I probably could have been clear on that point
+[  234.8] But on top of all that there's a lot of things that happen even still like you know
+[  240.0] in between like what we would normally go to live and doing further development and
+[  246.3] in particular some things that like ended up being especially problematic
+[  252.0] Like going long was things in particular like ATC and transit
+[  257.4] ATC and transit were two really critical parts of the whole hanger loop, of course
+[  264.5] and the ship loading changes I've been with the ship loading platform and
+[  269.2] Unfortunately, like if you could ask me to pick two systems to not touch at all
+[  276.3] It would be ATC and transit because there are two older systems in the game
+[  281.6] They're very complicated and they have lots of bugs historically. They're problem children for us as systems
+[  288.6] So we knew coming into this that it was going to be a risk
+[  293.4] making changes to those systems and
+[  296.2] what
+[  297.5] Turned out to be I think, you know more of a problem than we anticipated is that like once we started getting like wider testing
+[  305.7] Those systems really buckled underneath
+[  308.5] Load in a way that we weren't really seeing internally. So we would you know, if anybody was on the PTU for example
+[  317.6] Whenever we first started going out
+[  319.9] It would it would be rocky
+[  322.7] We put out some fixes bring in more players and then the thing would fall over and
+[  327.9] As a developer to make it more frustrating fall over in a way where not only could we not reproduce it
+[  333.1] But our own QA oftentimes couldn't easily reproduce it or if they could there wasn't like a coherent
+[  340.0] Understanding about like what the fundamental cause was so for those kinds of issues
+[  344.4] We had to get creative as far as like understanding what was
+[  348.6] Happening and like what to do to address it because again like we couldn't really
+[  352.8] Consistently or fully understand it. So we put in a lot of diagnostics a lot of telemetry
+[  358.4] Try things and then eventually work towards a conclusion on what the actual fundamental problems were
+[  365.5] On top of that like I think
+[  368.3] there was kind of a
+[  371.0] Consideration with those systems about right we're gonna go in here. We're gonna make some big changes
+[  376.0] We know we have to in order to make all of this anger stuff work
+[  379.7] But these are kind of older systems
+[  382.2] Do we rewrite them? Do we you know largely refactor them or do we try to keep them largely intact?
+[  389.6] But with the smaller changes that we need hopefully smaller changes that we need to get us out
+[  394.8] We wanted to hit the release date sooner
+[  397.7] So we made the call that we were not going to largely
+[  401.7] Refactor or rewrite them for this release in retrospect. I'm not sure like if I could do it again
+[  407.9] I would be interested to know
+[  410.4] Would it be longer actually if we just decided to just rewrite them or refactor them first?
+[  415.7] the good news is that we already are
+[  419.3] planning on doing just that and in fact
+[  422.2] Transit is already in progress with the new version which needed to happen anyways for server matching and all this stuff
+[  428.0] So that's good. And then ATC as well. We already have
+[  431.9] Plans on how to rework it and to make it just fundamentally some of the problems
+[  438.0] Play here because ATC as a system is so like centralized
+[  441.4] And it keeps a lot of state internally in a very centralized place
+[  445.9] but these systems are extremely complicated about how they deal with persistence and logging and streaming and
+[  451.4] in particular tracking
+[  453.5] ship
+[  455.5] Allocations in the hangars so there was we would get bugs for example with like ships doubling up in hangars, etc
+[  461.5] Like those things were really challenging the system as well as like the doors not opening
+[  467.4] So like a lot of that stuff. I think we have a lot better idea about what to do about it as a system in the future
+[  474.1] But this release we made the call to try to you know, take the system that we had just kind of like
+[  479.5] You know get it working with a new direction and then hopefully give us some more time
+[  483.4] We felt so much time pressure to make the right adjustments like more fundamentally
+[  488.8] You know, it's a risk we took
+[  491.0] Didn't turn out I think as we hoped but sometimes that's how it goes
+[  495.0] But there was a lot more things than that another thing was the mission system. It's a new mission system
+[  501.1] With a new delivery hookup for the delivery missions
+[  504.0] First outing right there's a lot of new shaky things that we found with in particular the hookup from the freight elevators to the missions
+[  512.3] There's just like a lot of loose ends a lot of things threads would get lost
+[  515.9] we had this whole warehouse system that has to interact with the
+[  519.6] mission system and
+[  521.2] There's just again a lot of these like rare low
+[  524.8] repro
+[  526.1] issues
+[  527.2] that
+[  528.4] In these very fundamental places actually this is another point for HTC and transit like when you have
+[  533.9] moderate
+[  535.0] inconsistent bug in a system that's not as critical
+[  539.2] It doesn't seem as bad not to say that you know bugs are bad. Of course we want the game to be stable, but
+[  545.6] Whenever you have something that's like, let's say it happens one percent of the time or zero zero point one percent of the time
+[  554.7] Unfortunately if that is in a part of the game flow critical system. Yeah. Yeah, it's it's awful. It's unplayable, right?
+[  563.4] So we have to like take even more care with those systems to get them into a better place of the game is more player
+[  571.0] Playable because those bugs have an outsized effect
+[  574.4] But beyond that there's also in particular a lot of issues that we had with
+[  581.6] networking and serialization and the replication layer changes that were coming in in preparation for
+[  587.2] server mashing and
+[  589.3] I can just speak for my own personal experience debugging some of these things there was some very
+[  594.7] complicated hard to understand bugs that we had to work back to eventually being actually
+[  600.7] Corruption in serialized data that was coming from some bugs in the replication layer, which
+[  607.3] We could not reproduce that again internally and that was a wild one to figure out
+[  612.7] It was very very confusing as you can imagine because it's rare and it's random and like the data you get doesn't make sense
+[  619.2] You try to make sense of like how these things come together
+[  622.4] But we got there
+[  624.9] There were
+[  626.5] Design and iteration changes, you know some of them, you know, we were pretty public about like the item bank
+[  631.5] But also tweaks to the freight elevator kiosk
+[  634.7] Changes to how the economy tuning works for example auto loading times and stuff. So like and to be fair we were
+[  643.1] Wanting the patch to be a complete package as much as we could so
+[  648.4] Given that we were already going late. We didn't entirely shy away from
+[  653.3] Taking some of the time to like also like clean things up on the design side while we're also grappling with some of these harder
+[  660.1] engineering problems and
+[  662.7] Then like the final thing I'll say on it is we didn't want the whole schedule to shift
+[  670.3] So we still have a lot of other goals
+[  672.9] One of them obviously was the Atlas, but there's you know things coming up
+[  677.3] 4.0 we're obviously still trying to get you know squadron finish and out the door and
+[  683.5] We didn't want to just take everything and just like take everyone
+[  687.1] You know focus entirely on this release get this release out the door and have our whole schedule change for the whole company
+[  694.0] So we had to like you know keep there was a lot of people who needed to move on to for no goals or whatever
+[  701.9] And so it meant that we needed to keep like the core people that were working on the main line features on the release
+[  707.8] But we didn't have the full force of the company to just close that one specific patch out
+[  713.3] We could have but like I said it would have you know caused problems for our other goals otherwise
+[  718.4] So so you kind of in total
+[  721.0] There's a lot of a lot of things that I feel like I've learned from and I hope in the future
+[  728.7] It gives us a better like framework for how to deal with something this complex and then oh yeah
+[  734.7] One last thing I'll say is I think there was also just a fundamental problem with the the whole
+[  740.9] Conceit of having this many fundamental things in one patch right where I
+[  747.8] Think if I would do it again, I would slice it differently and try to do the
+[  752.7] persistent and instance hangers in their own patch first and
+[  757.4] Then later on top all this other stuff
+[  760.4] we wanted them to come together as an experience and
+[  764.2] I understand you know
+[  766.5] That might have been actually kind of a weird thing for the players to go through to have like this one particular
+[  772.3] aspect of that features that come in without the things that make that make sense
+[  777.2] But from a development perspective
+[  779.2] It would have allowed us to harden on the the aspects of it that were in particular
+[  785.2] Thorny and and more of an engineering challenge and
+[  789.1] Then get that hardened and stable so that we give that to the players and then layer on top of that all this other stuff around it
+[  795.1] But doing it all together. I think really challenged us when some of the
+[  800.1] You know like I said some of the risks didn't break in our favor
+[  803.3] Yeah, you bring up several good points and for those of you in the chat are like wow, this was an easy question
+[  808.9] Hey, does he hard one? I was being facetious. This was the hard one
+[  814.9] There lots of times when we talk about a tier zero feature or whatever
+[  819.3] It's it's we do that thing that Chad was talking about you can basically for anything
+[  823.5] You could basically do one of two courses of action one
+[  826.5] You can split them up into several smaller things or two
+[  829.6] You can try to push out a suite of stuff and we attempted to do this suite of stuff for
+[  836.4] For all of this was originally
+[  838.5] Attached to an even bigger suite of stuff and everything that was 323
+[  842.9] When we've done the separation in the past
+[  847.4] It's a little more stable certain stuff certainly
+[  850.5] But you that's when you tend to see things like well
+[  853.0] I don't understand why this is like this and I don't understand like this and like this and we just have to go
+[  857.2] Well, that's because we didn't give you the second part and the third part and the fourth part
+[  860.6] And when you get the second part and the third part of fourth part that first part will make more sense
+[  864.8] and we try to explain that but
+[  867.0] It
+[  868.2] When you play the game and you see one fourth of an experience
+[  871.5] There's just that there's you're right when you say this doesn't make any sense
+[  875.2] It doesn't because it's one fourth of this overall thing and when you see things like yeah
+[  880.4] The persistent hangers now and where we're going with with with item placement and the item banks and all this stuff like this
+[  886.6] Is still just sections of this thing that will continue to build out later and later and you could expect to hear more about that
+[  892.8] At a big event that's coming up
+[  895.2] In a few weeks how many weeks don't tell me
+[  899.8] But yeah, so we tried to do this nice package thing and
+[  904.8] Yeah, some you never know when you start these things
+[  907.7] You never know whether the package approach is going to be the right one or the slicing it up and no bunch of different sections
+[  913.0] It's gonna be the right one in hindsight always 2020
+[  915.8] But yeah, it's it was a depth. It was a little not the learning experience and I really appreciate and I want to
+[  922.6] Hammer home the part you know you and your team basically there on an island by yourself
+[  928.4] And then you know, it's yeah
+[  929.7] You had help from here and there but for the most part the full resources of the company
+[  933.5] We're not there to to help you the album had to stay on other things
+[  936.3] I'll just you know to keep the progress on 4.0 going and the stuff that's you know beyond you know going so it's a
+[  943.2] I appreciate the work you put in and I think if I can speak for the community
+[  947.2] They all appreciate that you guys we started talking about this
+[  950.0] We were we first talked about this in ISC in October of last year
+[  954.7] That's how long and I've been thinking about it a lot longer than that. Yeah
+[  958.7] Yeah, yeah, yeah, your your small team out there in LA and Montreal has been on this for more than a year and
+[  965.5] Stuff like this and I just I hope we all appreciate the folks watching at home and myself that
+[  971.9] your dedication of staying with this and sticking with this and and
+[  975.4] Getting it resolved or getting as as resolved as you can before the 4.0 the
+[  980.6] 324 release and subsequent hot fixes after that
+[  984.9] All right, what happened with the item drawer change
+[  993.6] It'll be easier after this
+[  998.9] This one it's not like a challenging question
+[ 1001.8] It's kind of on a bit of an arc and I don't think that arc is completely finished
+[ 1007.6] What's was funny about that arc is we've kind of ended up where we started actually is just like in my
+[ 1015.4] In the original proposal for the item bank it works like it does now actually which is like it's the
+[ 1022.4] Personal inventory UI and really like the item bank is more of like an interaction point to trigger that UI
+[ 1028.5] and
+[ 1030.3] The reason to understand why that makes sense is because to think about like what you're doing at the item bank
+[ 1037.6] What you're doing really is we're trying to make it easier to get things that make sense from like a FPS player perspective
+[ 1044.0] Right, so if you want to get metapins you want to get armor a weapon these kinds of smaller items
+[ 1050.3] Which are often equipment
+[ 1052.5] We want to make that intuitive and easy and quick frictionless
+[ 1058.1] the
+[ 1059.6] Personal inventory UI makes sense for that because it has the pay per doll view where you can pull things over and like kind of very
+[ 1067.3] More tangibly interact with the player more quickly equip and un-eclipse swap things out etc
+[ 1074.6] However the personal inventory UI and I think you know everyone that's played the game knows it's not perfect
+[ 1080.4] and there's there's things that we have long wanted to do about it and
+[ 1083.6] In fact for this release it was one of the things that we hope that we could get to but we didn't have the time to that's that's still
+[ 1091.5] We're still going to come back to making improvements to that UI
+[ 1096.3] So for that reason we had some internal discussion on iterating on it and looking at it
+[ 1101.9] And after we had gotten the freight elevator kiosk UI to a pretty good place
+[ 1105.7] I think people saw it before that we originally had this more 3d based UI on the left-hand side of the freight elevator kiosk
+[ 1113.6] Which we may come back to at some point with some rethinking but when we went to the more like kind of
+[ 1120.1] straightforward like grid view
+[ 1122.2] And then added you know certain things like search and better filtering
+[ 1127.0] That experience started to develop in a way that had some functionality
+[ 1132.2] advantages over the personal inventory UI
+[ 1135.1] So we had some discussions internally and decided that we would try you know moving it over to use just the freight elevator kiosk
+[ 1142.2] UI rather than the personal inventory UI and
+[ 1145.4] There was trade-offs of course so like some of the like faster tangible easier
+[ 1150.6] kind of changes are gone, but you have other things like search and filtering that are better and
+[ 1158.5] after giving it to y'all
+[ 1160.8] Been collecting a lot of feedback and
+[ 1163.3] Internally we had to make a call there was it was one of these things where there was very strong voices actually on like kind of both ends of it
+[ 1170.0] So I think no matter what some people you know it actually just went to a bar citizen in Seattle
+[ 1175.1] It is funny like I talked to people and it's like some someone would say man
+[ 1178.3] I'm so happy you made that change and that somebody else would be like why don't you bring back the freight elevator kiosk UI and the item bag?
+[ 1185.0] But I think the answer is gonna be we're gonna probably keep it like it is now
+[ 1190.2] But bring over some of the things from the freight elevator kiosk UI like the search functionality
+[ 1196.2] To make that a better experience itself
+[ 1199.0] So both of them are you know, they are better user interfaces and in UX's
+[ 1205.2] in general
+[ 1209.0] And and yes folks who are in the chat watching who've done the math it is eight o'clock in the morning for for cargo chat
+[ 1217.0] He woke up extra early on a Friday morning in order to do this so
+[ 1222.5] Be kind
+[ 1226.6] You talk about how messed up my face is all you want
+[ 1231.0] But let's try to wake up for a little bit he's doing great
+[ 1236.6] All right, so we got a couple questions here about the hanger itself
+[ 1241.1] so
+[ 1242.5] These are the ones that we ended up going to Ian and Rick these are the design of the physical hanger and the layout and stuff is not
+[ 1249.1] Typically questions that would that would work for Chad
+[ 1252.1] You know as a programmer and engineer and stuff, but we these were important. They were highly voted up
+[ 1257.5] We had access to Rick Porter and Ian so we went and got the answers for them
+[ 1261.5] So the first question here is are we going to have more room to park?
+[ 1267.4] Ships and vehicles on the sides of our hangers the pads are big enough, but the pavement is tiny compared to the rest
+[ 1274.3] There was that question
+[ 1275.6] There was are there any plans to add side rooms to players persistent hangers for things such as
+[ 1281.9] Habs firing range repair modification facilities or even just a large room with a cargo grid where players can customize
+[ 1289.5] as they see fit and
+[ 1292.6] Can you get rid of the garage in our hangers so we can just set up our furniture better too many random cables and boxes lying around
+[ 1300.9] Can you clean up all that garbage? That's a long the sights
+[ 1305.9] I'm merging all these together because the answers the answer to all these are sort of the same
+[ 1311.7] thing
+[ 1312.7] These these are the very first
+[ 1315.4] Okay, I need to rephrase that from a
+[ 1319.4] Player perspective, which is you you know these are probably we were trying to we were trying to figure out before the show
+[ 1325.3] Whether these are the fourth version of the fifth versions of hangers that you've seen
+[ 1329.2] There were two versions made by our partners of behavior way back in the early days
+[ 1333.9] And then we it and then we attempted a first version, which is what you have before and then there's this so this is
+[ 1339.1] I think this is that this is the second version the CIG has made this is the fourth version of hangers and stuff that you guys have seen
+[ 1346.2] And
+[ 1347.3] Not all of the features not all of the intention that we wanted to get in there is in there
+[ 1353.2] I'm gonna read these notes from directly from Ian and
+[ 1357.7] Rick here, so you these are just their words
+[ 1360.6] We plan to add garage modules
+[ 1364.3] So we don't intend to expand the pavement
+[ 1366.7] But there should be more room for vehicles when you could basically add on modules and expand the hangers to the left and right
+[ 1372.9] Into the front and back and there's different sections
+[ 1376.9] The plan is for personal hangers to be able to be customized and
+[ 1380.8] Expanded in the future with with the addition of these hanger modules
+[ 1384.0] The exact list of modules are still being defined at this point
+[ 1387.2] Which so I'm not going to be able to give you a list of whether it's a firing range or something like that
+[ 1392.4] But you will be able to modify your hangers to certain extents and expand them out in other directions and stuff
+[ 1397.9] So that you can bring vehicles out and kind of store them off the side
+[ 1400.9] You don't have to use the ship elevator for bringing all your ground vehicles stuff or just your smaller fighters and stuff up to the side
+[ 1407.7] And as far as cleaning up the garbage around the end
+[ 1411.7] We've already done multiple passes for the base hangar OCs, so we're listening to the community and moving in the right direction
+[ 1417.2] That's Ian speaking there
+[ 1418.6] We want to split the data for instance hangers and personal hangers
+[ 1422.6] Separately so that we can completely remove everything in the personal hangers while still leaving some form of dressing and world-building instance hangers
+[ 1429.6] So what this means is that as we've talked about before you have your home location
+[ 1434.0] And then you have the instance hangers that you'll get at every other location when you go there for those right now
+[ 1439.9] Those are using the same OC so when you remove the the dressing from one you remove the dressing from all of them
+[ 1446.5] we want to split those into two different object containers so that the
+[ 1451.1] Instance hangers that you get at every other space station or whatever those can stay dressed and look good
+[ 1456.3] Nothing, but your personal hangers the ones that get assigned to you at your home location when you log in
+[ 1461.3] Those will be completely empty and you'll be able to decorate those to your heart's intent
+[ 1465.5] That is our intention there no timeline on when that's going to come
+[ 1470.1] and
+[ 1471.6] Then yeah as far as the
+[ 1474.1] That was it oh, and then I'm sorry one more question on that
+[ 1477.1] You're just gonna listen to me for a little bit because these are answers for me in a wreck
+[ 1479.8] So I'm gonna give a chat a little break since Chad did really good in those first two questions
+[ 1483.7] the freight elevators are
+[ 1486.0] Positioned a bit awkwardly in the hangers for loading and unloading in relation to the ship pad where you land a lot of the
+[ 1491.7] Hangar ramps are in the back and then and the freight elevators off to the side
+[ 1496.5] Has a team considered moving the elevator accommodate these
+[ 1499.4] This goes back to the same hangar modules
+[ 1501.9] So of the hangar modules will also be where you place the freight elevator and stuff
+[ 1506.5] So basically when the customization comes in we anticipate you being able to move the freight elevator to wherever
+[ 1513.1] You need it for your particular ship
+[ 1516.1] And then the last one in this
+[ 1518.6] Bollage of questions here that we're not necessarily for Chad
+[ 1522.0] But we're really important that we wanted to get answers to
+[ 1526.1] Are there plans for the station cargo decks to play a role in cargo hauling and logistics gameplay?
+[ 1531.6] Folks, right? Remember we added cargo decks to to space stations
+[ 1535.9] Two years ago three years ago. No, it's a bottle
+[ 1540.1] These need a significant rework
+[ 1542.3] They were built with an intention and a design philosophy that existed back then
+[ 1548.9] we've since
+[ 1550.7] Evolved our thinking on how these things should work
+[ 1553.5] So they will need
+[ 1555.1] To basically rework to incorporate them into the current version of cargo gameplay that Chad and his team have have created
+[ 1561.3] I've gone out in three of 24 and will continue to iterate in subsequent patches
+[ 1565.2] So yes, there are plans
+[ 1567.5] We can't tell you what they are just yet because they're still at a point where it's they're too likely to change between now and the time
+[ 1575.1] We were implemented but when we get closer to a better understanding of how those are going to be implemented
+[ 1580.4] We will share that information with you
+[ 1583.7] and that's
+[ 1585.0] me
+[ 1586.3] speaking for Ian and Rick Porter
+[ 1588.7] The portion of RSEL Chad, did you enjoy your break? I
+[ 1592.3] Enjoyed it. Thank you. Okay back to Chad
+[ 1596.8] The Atlas
+[ 1598.5] This is the new hotness that was that's been revealed over the last week and PTU
+[ 1603.8] has a
+[ 1606.3] Magnificent tractor beam that is making out of every other tractor beam look like
+[ 1611.5] Turret sandwich from a can
+[ 1615.0] Will you implement a mode switch for tractor beams to give functionality like the Atlas has to the multi-two or
+[ 1621.5] Multi-tool or dedicated tractor beams so that there's more parity between the three or is this something that's exclusively to the Atlas?
+[ 1629.6] For the moment, it's exclusive to the Atlas. There is some discussion internally about like maybe doing that
+[ 1636.9] Nothing confirmed. I feel like that
+[ 1640.5] There's some benefit to having it, you know having there be some diversity in the the cinematic universe of tractor beaming
+[ 1648.7] That's our like functionality
+[ 1650.9] To differentiate the advantages and disadvantages of certain things for the moment
+[ 1656.6] We're leaving it as it is but that could change
+[ 1660.7] I think as we've as we've illustrated
+[ 1663.6] That can change with feedback and as we get more experience and we do more analytics
+[ 1667.9] We see how people are using we do always
+[ 1670.9] There will always be some distinction though
+[ 1672.9] We you know you want the handheld for boxes this size and
+[ 1676.4] The larger weapons for the medium boxes in the Atlas for the larger box that is in the ship tractor beams for the larger boxes
+[ 1682.2] That's but yeah, when he says no plans right now
+[ 1686.1] That's what just what that means no plans right now
+[ 1688.5] But if you follow you next week if you've followed star citizen for any period of like at the item bank, right?
+[ 1696.1] We we take feedback seriously
+[ 1698.4] So, you know, we'll we'll figure out what makes sense for the game and but like my understanding as far as like what we're doing right now
+[ 1705.3] With all this is it's just gonna be the way that it is. Yeah, so that's cargo chat and me saying make your points
+[ 1711.8] vote a
+[ 1713.1] Share your point of view
+[ 1714.7] Make your solid considered arguments not just the pitchfork stuff
+[ 1719.3] There are the our history is replete with
+[ 1722.6] Dozens and dozens of examples where we've heard what you said and adjusted these things
+[ 1726.3] So if you feel strongly about it continue to feel strongly about it continue to share that and we'll see what the plan is
+[ 1733.0] later
+[ 1737.5] Will we be so in the sitcom
+[ 1740.8] Goodie pack by the way, there's a sitcom goodie pack. I think it might be available now
+[ 1745.8] I don't know. I'm not in that part of marketing. So I don't know but I think but in the city con goodie pack
+[ 1751.6] There were beds we saw beds
+[ 1755.9] In the goodie pack
+[ 1758.6] This question is asking if we'll be able to log in or out of our hangers moving forward with these beds that are in the sitcom pack
+[ 1770.7] When you get it I
+[ 1773.6] Don't think so but
+[ 1776.1] Look, I'll say this
+[ 1778.1] We plan on and as I've said before about bed logging
+[ 1781.8] We're definitely going to work more on bed logging and we're going to work more on logging in and out and one of the things in particular
+[ 1787.8] That we're going to work on is logging in and out of hangers
+[ 1792.1] Specifically we want to support that as something that we've already been working on to some extent on the technical side
+[ 1798.3] But there's still more work to go there
+[ 1800.8] I
+[ 1802.8] Don't want to say that when you get this particular thing a certain feature is going to be supported in the next release though
+[ 1808.2] So like as far as what that goes like I don't plan on that being a supportive thing by then
+[ 1813.6] but logging in and out of hangers and bed logging is gonna
+[ 1818.8] Be developed further
+[ 1821.5] You said a lot of words. I want to I want to get this very concise
+[ 1825.3] You're telling us that at some point
+[ 1827.7] Not saying the next release, but at some point you will be able to log in and out from your hangers
+[ 1834.3] Yes, 100% that's that's definitely a thing that we're going to support because my least favorite thing in the world is having to wake up in the
+[ 1841.0] Have and go
+[ 1843.1] To the hanger so that would be lovely. Thank you Chad
+[ 1847.2] That's not my least favorite in the thing in the world. David's my least favorite thing
+[ 1851.8] He just did a yelp. It was like a 1950s like a scream Queen. What?
+[ 1858.1] Um
+[ 1860.8] What work is being done to stop our hangar deco from bouncing around so we can make our hangars the way they are shown in ISE
+[ 1868.5] We actually answered this last week with Ben Wah. That's here because I want to refer people back to Ben Wah
+[ 1874.8] Basically, it is not a feature issue. It is a matter of physics
+[ 1878.2] It is the it is physics is one of the largest performance hits to the server
+[ 1883.9] So that is basically it trying to negotiate the physics of all those items placed on other items as
+[ 1890.7] server performance improves as
+[ 1893.3] server meshing
+[ 1894.9] Provides us the benefits to server performance that we all hope it will and so like this that problem will become
+[ 1900.9] Less and less severe as it is and then we'll be able to find them
+[ 1904.5] We'll be able to go in and find the individual edge cases that cause it here and there and there
+[ 1909.2] But basically it's one of those things
+[ 1911.3] It's literally one of those things where it works on my computer and then you put it up on a server with a hundred people and it
+[ 1917.8] Starts flopping around which is why it looks one way on ISE
+[ 1921.5] And it looks another way in life
+[ 1923.5] We show the intention of the feature and how it's supposed to work and it is basically a performance related
+[ 1929.4] Error that's causing it in the in the service right now. So as we continue to optimize we continue to improve performance
+[ 1935.7] That will resolve that will resolve most of those issues and then we can go in and do the edge cases
+[ 1941.2] In the in the 324 Ptu
+[ 1946.6] You were originally able to add one SCU cargo mission boxes into larger eight SCU boxes for transport
+[ 1953.0] That was really nice by the way. This has since been removed since launch. I hate you Chad
+[ 1957.8] Any plans to bring this back?
+[ 1961.6] That's a good question
+[ 1964.0] It's more that there were some issues on the delivery side
+[ 1967.8] We needed more sophisticated logic to handle the freight elevator delivering
+[ 1973.3] nested contents for delivery
+[ 1975.5] so we
+[ 1977.3] Didn't we rolled that back because we were having some issues having that work like consistently
+[ 1982.6] But it is a thing that like we've talked about with the the mission team
+[ 1986.1] And I think at some point we'll probably bring it back
+[ 1988.3] But for the moment it's it's more of just it's one of the things we had to like
+[ 1993.6] Give up on in order to get the release out the door
+[ 1996.7] Okay
+[ 1998.8] Currently in live 324 when we call our ships while we are in a party members hangar
+[ 2004.0] Our ships spawn in our personal hangar instead of the party members hangar. Will that change in the future?
+[ 2012.0] for sure
+[ 2013.1] this is another one of those things where
+[ 2016.3] We had to you know make some calls as far as like what we were gonna try to deliver on this release and
+[ 2023.4] If people saw like they were very early
+[ 2026.9] Actually, I'm not sure this part of it got to a bit caughty or not
+[ 2030.4] But at one point we we actually had a drop down where you could pick on the freight elevator
+[ 2035.5] Kiosk a party member and actually choose their inventory there
+[ 2039.6] So we were trying to like really integrate party members into that hangar experience
+[ 2046.2] But on both of these where we ended up is
+[ 2050.5] Needing to remove it just again, you know to get the release done
+[ 2054.1] But also I think we realized that there's like some more design considerations around the experience of security and permissions and
+[ 2062.0] party membership isn't always the right bit to answer some of those questions anyways, so there's definitely
+[ 2071.5] Some design work to do there as far as like the experience and how you you
+[ 2075.5] Attribute or revokes certain kind of rights and your hangar or each other players
+[ 2080.7] But we do want to allow that that general kind of flow or you can have your friends there that you're playing with be in a party or
+[ 2089.1] Or in a group or an org or whatever and then you know have a way to spawn your ship in there
+[ 2095.4] Additionally the ATC did not really support this pattern very well and it's because the ATC
+[ 2105.1] Is an old system that was originally written with or all sorry in mind and and you know just some landing pads up for all sorry
+[ 2113.6] That was the original implementation of ATC
+[ 2116.3] So this whole idea of like even hangars is kind of alien to that system let alone that multiple people could be in a hanger
+[ 2123.7] And we've kind of had to you know build that into it
+[ 2126.9] But it has some fundamental concepts like this thing called a
+[ 2130.4] Permission token that don't really make sense in that world, which is why we're reworking some of the
+[ 2138.0] implementations to essentially actually this is kind of getting at like one of the core things that we're going to do is
+[ 2143.1] separate out from ATC
+[ 2145.9] Hangar management as a concept and
+[ 2148.7] ATC is going to become a simpler system that all it deals with is requests to land and exit
+[ 2155.5] And so it's really just governing the entry ways to the hangars and that's it and I have a separate system for
+[ 2163.0] Hangar management for ships and all that and included in that can be the idea of like how do you handle different situations and corner cases around?
+[ 2171.3] multiple ships including multiple ships from multiple players
+[ 2175.3] how much
+[ 2177.3] How much do you hate ATC now?
+[ 2180.1] Oh
+[ 2183.8] Can be real it knows what it did
+[ 2188.6] I'm pretty sure that you know ATC has been a part of the P you since it was first introduced in late November early December 2015
+[ 2195.9] I mean it is it is one it is when you say oh, it's an old system. It is literally the oldest system of the P you
+[ 2204.3] I'm not entirely certain even the folks who you made it originally or even still with a project or not
+[ 2210.4] Yeah, they're not so it is it is it is a yeah, it's
+[ 2214.4] It was it was so it's like what we say with the old MFDs and the annual sub it was it was good for its time
+[ 2220.4] And it served its thing for its time
+[ 2221.6] But I think everybody is in agreement both player and developer alike at this point that we need a new more robust
+[ 2228.9] service to replace it
+[ 2231.3] And to be fair to that system like it wasn't really designed with this in mind, right?
+[ 2235.4] So we've been pushing it, but we just have to break it at this point
+[ 2240.5] Better we need to break what do you mean more ambitious for their breaking of it? Yeah, it's a
+[ 2246.6] I'm realizing this is probably not the kind of conversation you'd see it in the in the
+[ 2252.8] promotional material for any other game development there are like are they like like like talking about how much they hate a game feature
+[ 2260.3] Yeah
+[ 2261.6] It's it just it just we recognize the same thing you do it. We're all we're all in the same boat
+[ 2266.9] It needs it needs an update all right now
+[ 2269.1] So that is being specced out and that is being that that work is being assigned out as we speak
+[ 2273.7] There's no ETA on it because like I said still early days and that stuff, but it's
+[ 2278.4] I'm not gonna sit I can't sit here and pretend like it's the greatest thing ever. It's a
+[ 2284.8] No, I mean every time I see a report of players saying or QA finding like a door not opening
+[ 2290.6] I feel it in my bones
+[ 2292.8] Yeah, yeah, what was it?
+[ 2296.0] Rhino separat in 1872 says ATC has stolen millions from me
+[ 2300.8] Yeah
+[ 2306.4] I hope there's like a permanent prisoner in Kleischer once we replace it and we just name him ATC he's just like
+[ 2311.7] I
+[ 2315.2] We were talking about
+[ 2316.6] Vehicle spawning and different hangers is spawning vehicles from the cargo elevator still planned
+[ 2321.8] I think we mentioned it in one of those early ISC's and whatever and nobody we haven't heard much about it since it was removed
+[ 2330.5] Absolutely, and it's still a thing that we want to do
+[ 2334.6] We know that we've had a bit more time. I think we're also considering
+[ 2339.6] That experience a little bit more as far as like how that works and also
+[ 2344.1] Potentially supporting things like the Atlas, but definitely it's a thing that's that's gonna come
+[ 2350.2] Yeah, it's definitely come
+[ 2354.2] Can we have an option to
+[ 2356.9] Remove or disable the alarm in the hangar every time a ship is called
+[ 2364.0] I
+[ 2366.2] Don't know about that
+[ 2368.5] It's not a thing that we've talked about or I've heard even feedback on
+[ 2374.8] But one thing I'll say is we are looking at ways to make it faster that whole that whole loop because we want to make getting
+[ 2383.2] ships like a
+[ 2384.8] Quicker experience like I think at this point people have enjoyed the the pomp and circumstance of getting these ships
+[ 2390.5] It's it's a really cool thing when you do it, but of course with anything, you know, you do it enough times and
+[ 2396.4] Yes, you kind of just want to get your ship, right?
+[ 2399.9] So we're looking at potentially some ways where you know, you're getting
+[ 2404.9] Let's say like a a Titan or something like out of an exhale hangar
+[ 2409.6] You know, it feels kind of absurd like the the the giant experience that unfolds
+[ 2415.9] For you over the period of time it takes right so we're looking at for example, maybe we can like
+[ 2421.9] preset the loading platform high or
+[ 2425.7] Maybe adjust some timings to make it faster
+[ 2429.8] So you don't have to wait quite as long but without changing some of the fundamental elements of that experience
+[ 2435.5] we will we still want it to feel
+[ 2438.6] big and important and
+[ 2441.0] You know have that pomp and circumstance have it feel somewhat epic
+[ 2445.4] But where it makes sense have the ability to like have that time not as long for the smaller requests
+[ 2452.6] I don't know that will
+[ 2455.2] Outright disable the the sound there
+[ 2459.1] Again, if there's lots of feedback on that point maybe
+[ 2462.0] I'll make a suggestion some of the best things and stars isn't came from my ideas
+[ 2469.6] Eventually we have to make some kind of you mentioned it before it's some kind of hangar manager a thing
+[ 2474.5] You know, especially when they start adding the customizable rooms and stuff like this in the hangar manager
+[ 2479.2] there should be like a
+[ 2481.0] couple of default ringtones
+[ 2483.4] Listed in there just like when you get with a new Motorola phone or whatever and you can just set it so that you can change the
+[ 2488.9] Alarm sound it can get the alarm sound can sound like a
+[ 2492.3] Like a French police car or whatever you just just just different sounds so people can change it up every once in a while
+[ 2501.4] Okay, we'll take that into consideration. Thank you. I
+[ 2505.9] Don't think he's really gonna take that into consideration chat. I think chat's shining me on
+[ 2511.1] Um
+[ 2513.4] All right, so a lot of this is focused on hangars and stuff like this
+[ 2517.7] There is a series of vehicles that are kind of out there on the left there the whole series
+[ 2526.5] Talk to us about what they what the end goal for this
+[ 2528.7] I what what is the experience loading and unloading a whole series ship supposed to be like? Well, I mean it's
+[ 2538.3] Obviously what we have now is a
+[ 2540.7] I
+[ 2542.0] Would say a fertile tier zero implementation. We wanted to get something in for the holes that was
+[ 2548.8] Unique because it's a unique ship
+[ 2551.4] In the game it, you know can't land with those spindles extended and it's it's big
+[ 2557.5] it's it's it's
+[ 2559.1] Epic and we wanted the cargo loading for for this ship and the series
+[ 2565.3] beyond that
+[ 2566.8] To feel like it made sense for the cargo trading at that scale and in particular
+[ 2573.9] have that visual be like
+[ 2577.4] Something that was like
+[ 2579.1] compelling and so we wanted to make that
+[ 2582.7] Cargo loading in and out like feel like something that was like physically like building up and reducing on the ship
+[ 2589.3] however, obviously
+[ 2592.0] It's you know just doing this like popping in thing and then also it doesn't support any manual loading so in the
+[ 2599.1] nearer term we are looking at adding support for manual loading for the the whole series and any other
+[ 2607.2] ship that might need to dock
+[ 2609.4] for cargo support and
+[ 2612.7] I'm not gonna say like any particular release or anything, but like absolutely we're looking at bolstering the
+[ 2619.3] Support for those ships is or not just both a bit creating the support for those for for manual loading at those loading areas
+[ 2625.9] On the exterior of the stations and actually adding to them and having potentially multiple
+[ 2632.0] We're considering different ways to make the throughput on that system makes sense
+[ 2637.7] Both to allow for multiplayer and in ships using tractor beams to help optimize that loading time
+[ 2644.2] And I think that will be a really big like meaningful change
+[ 2649.6] Beyond that obviously we still plan on doing a better implementation of the automatic loading for the whole series be it
+[ 2657.0] NPCs or drones. I think that probably is gonna be later because
+[ 2662.5] It's more of like a visual experience and lots of like a gameplay experience
+[ 2667.4] Where it's like the manual loading would be a really big meaningful change from like the actual in-game experience for the players
+[ 2675.0] But that's what we have now blues make you're asking a question about the missions. That's a question for the mission team not for not for Chad
+[ 2684.6] Was a H lander
+[ 2686.9] 1337 says is this the SCL live that announces pyro is coming out? Yes pyro is coming out
+[ 2692.0] Eventually when it's ready
+[ 2694.6] You heard it here and
+[ 2697.4] Everywhere else
+[ 2699.7] Um
+[ 2700.8] What's the current status of hover trolleys are there still plans to give players this or another method to move multiple cargo boxes around locations at once?
+[ 2710.4] Yes, so hover trolleys another thing that was sacrificed to the release gods
+[ 2716.1] in particular the hover trolleys have some new physics around their their behavior and
+[ 2722.0] They were being pretty wonky. I'll put it like that as far as the actual like attachment onto the
+[ 2728.8] Under the hover trolley not with the attachment, but how the hovering dealt with it
+[ 2733.4] So like you suddenly have this attachment in like the thing would kind of like sway around and sometimes like violently flip over or something
+[ 2741.2] so there's some physics issues with it that need to get sorted and
+[ 2746.0] Also, there's some questions about quite how to integrate it into the game loop as far as you know, how you get them or
+[ 2754.0] You know, is that something that's you buy or can you find them in the world?
+[ 2758.6] Etc. Etc. So we took a step back from that to focus on getting the release out the door, but it's not forgotten
+[ 2765.0] They are gonna come back
+[ 2767.2] once we've kind of
+[ 2768.8] smoothed out the
+[ 2771.5] Implementation and like the physics problems and then also pinned down exactly like how we want players to to use them and where they are in the game
+[ 2780.1] So yeah, it's still still coming
+[ 2783.0] I will you know to kind of also there they're
+[ 2788.3] Beyond the hover trolleys or other things in addition that we're always looking at as far as like figuring out how to make the game loop or
+[ 2795.8] Moving cargo better and certainly I think in mass is certainly like a thing that
+[ 2802.4] Now that we have manual loading in the game. We have more experience with it
+[ 2806.2] It's clearly like there's like this interesting
+[ 2810.0] Point where if you're not dealing with the largest boxes in the game some like combinations of medium to small boxes can be cumbersome
+[ 2817.5] So it's definitely like a thing that we're aware of and there's I think gonna be continued design consideration
+[ 2825.1] on the new things like the upcoming Alice
+[ 2828.7] That's it's coming in three three twenty four one
+[ 2832.7] Which is in testing on the P2 you there were a bunch of people asking me
+[ 2838.7] How much the pledge will cost I don't know I'm not in those meetings
+[ 2846.1] We've been talking a lot about manual loading
+[ 2849.3] This is how we'll paying a fee to auto load our cargo work
+[ 2856.9] Isn't that I'm not sure I understand because I pay a fee to auto load now. Yeah, I was gonna say that's a weird question
+[ 2863.0] I thought that was that's pretty much in the end. Oh, we'll skip ahead. Hey, we'll get we'll get out a little
+[ 2866.9] I mean, I can give a maybe I can answer a question. They didn't ask sure
+[ 2871.4] Which is
+[ 2873.5] Is auto loading always going to work work the way that it does now sure answer is is we're gonna
+[ 2880.3] build on that right now auto loading is
+[ 2884.3] Built into the commodity trading experience in part because that was the quickest way that we could do it
+[ 2892.0] I think we'll always want to have that because it's convenient in order to just make those decisions when you're doing trading
+[ 2899.7] However, there are times when it would be convenient to auto load things that
+[ 2904.5] Aren't necessarily part of a transaction or after a transaction like mission cargo can't be auto loaded mission cargo
+[ 2912.8] But also items in general that you have maybe when I load those into the ship and so a
+[ 2918.8] Full auto loading experience is a feature that we're currently looking at as far as making it to where you can just have full
+[ 2925.8] Sets of stuff if you don't want if you just don't want to touch the freight elevator, right? You just like don't like it. That's fine
+[ 2932.4] We're looking at having an experience for you to where you can say like okay
+[ 2936.2] I want this arrangement of stuff and you know as long as it fits into the cargo grids on the ship, then it'll it'll move them around and now that we've
+[ 2944.4] Made it to where the cargo grids support so many different items
+[ 2947.8] That means that there's a lot more opportunity to make that work. Of course, it'll be a small fee associated with it, but
+[ 2955.2] It will I think support
+[ 2957.4] You know, it's kind of a bigger solution to instead of just like solving it specifically for mission items
+[ 2963.2] It's something that you do more generally and then also, you know, we talked about small vehicles very crowded vehicles getting those into your ship. Well
+[ 2972.7] That would be a solution right to if you didn't want to you know, drive it out yourself
+[ 2976.8] Not just spawning a ground vehicle in the cargo, but spawning a ground vehicle in a cargo crate
+[ 2981.8] That can well I'm saying like you could have this ship
+[ 2985.8] Stowed and then request to have the vehicle loaded into like the nice loaded into your vehicle. Yeah
+[ 2996.1] Will the search bar accept actual item names in the future and not just the internal identifier
+[ 3003.2] Right now, I mean, it's it's using the locks what we call the lock string
+[ 3009.1] So, I mean it does but there's the problem is there's various kinds of data associated with these items that are
+[ 3018.2] In different places and what we haven't done is is really built that out
+[ 3023.5] But like it does use the localized
+[ 3026.1] item name
+[ 3028.3] But there are other kinds of fields and stuff that I could
+[ 3032.3] Be built out. In fact, one of the bugs that we had
+[ 3036.2] One of the bugs that we had when we first added it is that the it was just using the lock name and not the localized name
+[ 3043.2] And it would make it really confusing because some things are really close to the actual end string and some things just weren't at all
+[ 3050.5] And you would search for certain stuff and it wouldn't find them
+[ 3054.2] And the reasons because it was searching the lock ID but not the localized name, but that's not the case anymore
+[ 3059.5] But there are other kinds of fields that it's not searching on and sometimes I think to make that a little bit confusing
+[ 3066.7] Sometimes there's different strings shown in different UI. So like for example, the the shop UI might use like a different string for the purchasable display
+[ 3075.6] from like the item ports editing and stuff like that. So
+[ 3080.3] More to be done, but it is using the localized name
+[ 3084.0] There's a localized name and a lock name
+[ 3087.5] Lock ID
+[ 3090.0] So like the localized name is
+[ 3092.7] like if you're
+[ 3094.2] Playing, you know in a certain localization
+[ 3097.1] On the client you see the english version or the spanish version
+[ 3100.8] Is is lock ID is lock and lock ID short for localization?
+[ 3106.1] Uh, yes, so that's sorry. There's some so there's a localization and a lock ID, which is also short for localization
+[ 3113.8] Yes, but like the way to think of it is like a lock ID is a single
+[ 3118.9] Identifier for something that will be localized, right?
+[ 3122.2] So we have to have some hook some way to reference
+[ 3126.0] A string that has a variation for all the different languages
+[ 3130.2] So that that hook that identifier is what we call a lock ID
+[ 3134.7] So it might be like if I have like a mug, right? It might be
+[ 3140.3] mug black one
+[ 3142.3] Jellyfish because there's a jellyfish on it, right?
+[ 3144.8] Um, but then the actual localized string that the players would see would you know some jellyfish mug
+[ 3151.2] Yeah jellyfish mug, but then you know you didn't have a different one in german a different in spanish
+[ 3156.7] Etc etc so that lock ad
+[ 3158.9] Is what in code
+[ 3161.2] And and just like the systems normally pass around
+[ 3164.1] Because it's it's something that's understood both by the server and the client and if you change your localization at runtime
+[ 3170.5] It's it's something that it's consistent. It's also
+[ 3174.8] Yeah, more it's a reference. It's not like a
+[ 3177.8] unstructured data as a string
+[ 3180.5] um
+[ 3181.8] Yeah, I could go on more but yeah
+[ 3184.0] So that's basically it which is just more of an identifier that then gets localized however when you search you want to search on the localized version
+[ 3190.8] And that means on the client the client needs to say when we do a search
+[ 3195.2] Here's the lock ID, but here's the locale. Here's the localization that you're going to use
+[ 3200.3] And then on the back end it needs to use that for the string parsing and we actually have a different database that it searches on
+[ 3207.7] That has a different
+[ 3209.7] localization on each
+[ 3211.4] Because that's that's the only way that you can make it work. You have to have
+[ 3216.2] You search on different
+[ 3218.2] partitions of the data based on the localization
+[ 3221.1] I I get to sometimes ask questions for the community sometimes ask questions for me
+[ 3225.1] That was a question for me and now I have to go fight jens lind
+[ 3229.4] That's unfortunate
+[ 3232.6] There are many items that do not work particularly well on the freight elevators for example mining bags
+[ 3239.4] What's being done to resolve this
+[ 3241.8] Great question. Unfortunately another thing that got cut this one's in particular
+[ 3246.0] It hurt me because I made the the packing and the attachment behavior and the system
+[ 3252.2] The packing and arrangement works, but there was there's one bug I'll get to in a second that didn't
+[ 3257.8] and unfortunately because
+[ 3259.9] most of the items work
+[ 3261.9] another thing that was sacrificed to the release gods
+[ 3266.8] Which hurts me because I like I
+[ 3270.7] I wanted to be good because I like to be proud of my work, but
+[ 3274.6] The the issue in particular with those I feel I'm going to get a little bit technical for a moment
+[ 3280.2] Is the pivot so for things like cargo boxes the pivot is on the bottom in the center
+[ 3286.9] And whenever I originally wrote the packing system way back for the the whole sea
+[ 3291.9] The only thing that we were putting into the cargo grids at that time where the cargo boxes
+[ 3296.9] I knew that more things were coming so the packing system itself can expect any kinds of
+[ 3303.0] dimensions and handles multiple orientations
+[ 3306.1] But the pivot was something that I just didn't have time to generalize
+[ 3311.3] I had to just
+[ 3312.7] Essentially kind of like hard-coded to expect the pivot in a certain place on the item
+[ 3317.6] um
+[ 3318.8] And the the technical challenge there is you might say well, I'm holding the item
+[ 3323.0] How do you not know where the pivot is the the problem is is when you're doing things like calling stuff up from a freight elevator
+[ 3328.7] You don't have the item the entity isn't spawned. You don't have the geometry for it. You can't directly access the pivot
+[ 3334.7] So you have to have some way to know where it would be
+[ 3338.7] Without loading like the skeleton and deriving it which would be incredibly slow
+[ 3343.1] So what we have to do is like essentially like kind of bake that data out into a data set that could be read from an asynchronous
+[ 3350.2] Persistence querying or based on the class data
+[ 3353.0] So that's the work to be done here. It won't take too long
+[ 3357.4] But and it's possible it comes in, you know very very soon
+[ 3362.0] But that's essentially it is like the the reason is uh, the the mining bags and these things they're pivots
+[ 3367.6] Are in a different place than most of the other items in the game and the system isn't yet
+[ 3373.1] Expecting that the pivot might be somewhere else
+[ 3375.8] Then where most of the other items pivots are and for that reason the way that it rotates around or the way that it
+[ 3382.3] Orients itself on on the cargo grid is just wrong for that particular thing
+[ 3386.5] Which particularly for the mining bags suck because they're
+[ 3390.1] Situated in a way that actually puts them through the freight elevator and sometimes when you detach they actually drop down
+[ 3396.2] Which is awful. So like definitely aware of it. Um, but yeah fix is gonna be forthcoming
+[ 3405.2] If you can get technical
+[ 3407.7] Um, okay the last two questions. Jad you're almost at the end and then you can go and start your day proper
+[ 3413.9] Uh, will we be able to spawn multiple ships at once in the same hangar?
+[ 3420.6] Yes
+[ 3424.1] Got any more
+[ 3426.4] How do we envision that?
+[ 3429.0] So, yeah, I mean definitely it's it's a thing that um, we're looking at on the design side
+[ 3434.2] And so I don't want to give like complete answers because that's something that
+[ 3439.0] Might change a little bit but in in short
+[ 3442.0] We want it to be to where you can spawn multiple ships, especially in these excel hangars where you have these huge
+[ 3447.7] platforms and certainly you have the room. There's just some thought that has to go into
+[ 3453.2] Um, all these different permutations. Uh, let's say you have a ship
+[ 3457.3] On the platform and you want to get another ship right now
+[ 3460.2] The way the system works is if you get a different ship, we're going to start the first one
+[ 3464.3] You don't always want to do that
+[ 3466.1] How is how as a player do you express that or how do you understand that what's going to happen?
+[ 3470.5] Do you have any control over the arrangement of it?
+[ 3472.8] Etc etc. So those are things that are getting like pinned down on the on the design sign
+[ 3477.4] um
+[ 3478.3] But the goal itself that we want to be able to spawn multiple and give players more control over that is something that we're
+[ 3486.2] going to do
+[ 3487.6] okay
+[ 3489.0] Uh, and last question is will we or have you ever considered the ability to name our cargo boxes?
+[ 3496.2] So we'll know what was in them when we move stuff around
+[ 3500.2] Yes, um another thing that is on the design side. We're still working on um, I remember talking about this like a year and a half ago
+[ 3509.5] Uh about like how we could handle this um because
+[ 3513.4] Before this release we we added the inventory containers
+[ 3517.3] At the end of last year, but we were working on it, you know before then especially on the design side
+[ 3521.6] So this is something that we've known about for some time and those boxes all look the same
+[ 3527.1] So if you have lots of different boxes, how do you know what's in them?
+[ 3530.0] and we've had lots of ideas so far as
+[ 3533.1] Tinting and labeling and naming etc etc and then also
+[ 3538.0] potentially wanting that to be something that you could maybe search on in the furt elevator kiosk, right?
+[ 3543.6] um, I'm not going to commit to one particular solution there because as I said
+[ 3549.0] um, there's still some design work that needs to be done to like
+[ 3552.7] Make the final call about like what that how that's going to work and then we would do the actual implementation
+[ 3558.7] But it is a thing that we want to address for sure
+[ 3562.9] Well chad
+[ 3564.9] You did it
+[ 3566.4] How do you feel?
+[ 3568.4] Feel great, uh, definitely feel great now that the release is out
+[ 3574.1] Point one is coming soon. I think that there's a lot of good things coming
+[ 3579.2] Uh, I also want to just thank all the players for working with us on this release
+[ 3583.6] I know especially whenever it originally came out. It was like pretty rocky either
+[ 3588.2] There were some really really surprises that happened when we went from ptu to live
+[ 3593.4] We tried real hard to go from that state to something that's more playable
+[ 3598.2] And I think point one is going to be an even bigger jump there
+[ 3601.7] So I just want to thank everyone for having so much fun and and helping us
+[ 3606.0] With this release. It's been a big push
+[ 3608.5] And i'm happy that we're we finally got here
+[ 3612.5] Well, thank you chad. That was chad mckinney. Uh, I don't remember what is what is title? What's your title chad?
+[ 3618.8] senior lead the gameplay senior lead game plan engineer he and his team
+[ 3622.8] Uh, been in the cargo trenches for more than the last year
+[ 3626.7] So thank you for taking the time. This will probably be the last show
+[ 3629.1] We've done six or seven shows on cargo and hangars and this really just for this release
+[ 3633.8] So this will probably be the last one. We'll see you for whatever the next thing is take care chad
+[ 3638.7] You can leave I got to do some housekeep. I got to do some housekeeping stuff. So folks
+[ 3643.1] That's it. That's the show
+[ 3646.1] This is probably going to be the last scl for a while. There won't be an scl next week. Uh, that if you've noticed or if you joined
+[ 3656.1] Late in the show you've seen this absolute horror show right here
+[ 3661.4] I'll be I'll I'll be down getting my face scan next friday
+[ 3665.6] To do that and so there's no show next week. And then we're into the big citizen con
+[ 3670.0] Hustle there. We've only got one episode of isc left
+[ 3673.4] That'll be last week and then isc will go on hiatus until after citizen con
+[ 3677.0] So there might be an scl or one or two that we squeeze in there every once in a while depending on availability and stuff like this
+[ 3683.5] But uh, for the most part we're we're here at the at the threshold of hiatus
+[ 3688.8] So, uh, thank you for watching. I do have uh, a couple announcements though. There are multiple
+[ 3694.6] Occasions coming up where you can meet cig folks in person
+[ 3699.5] This is always the biggest and most social
+[ 3702.3] time of year here
+[ 3703.8] So, uh, twitch con in san diego is next week
+[ 3708.2] There is a bar citizen on friday september 20th at 6 p.m. At the garage kitchen and bar
+[ 3714.8] You can there's a common link on the website the bar citizen world tour you can get the specific information
+[ 3719.2] But that is next friday
+[ 3721.4] Where you'll be able to meet some some staff that are down there visiting for twitch con
+[ 3726.0] There is also
+[ 3727.6] In about a month's time. There is bar citizen week
+[ 3731.4] Here uh here and around uh, basically boss bar citizens all week long in celebration of citizen con
+[ 3737.1] They're happening in cities and locations all around the world. You can check out the bar citizen
+[ 3742.4] bar citizen dot sc
+[ 3745.0] website or bar sit dot i o slash 29 52
+[ 3749.9] He didn't think i was going to read them. I read that i read a url
+[ 3753.1] because
+[ 3754.5] I was born in the 70s and I still do that
+[ 3757.4] So you so you can find all kinds of new bar citizens that are happening all week the week of uh citizen con in areas
+[ 3763.2] That may or may not be close to you and then the last one
+[ 3766.5] Uh at moe sports our old friends there are throwing a major event the largest event that they've ever thrown right next door
+[ 3774.7] They're literally on the other there's a wall here and then there's a wall there and then there's a building where this event happens
+[ 3780.3] The biggest event it's a huge venue with actual theater style scenes the largest
+[ 3785.3] Esports thing that they've done there. That is called enter atmosphere
+[ 3789.7] You can check out the atmoe sports website for that thing. It's atmoe.sc
+[ 3795.2] There's also going to be a sizable cig
+[ 3798.4] Contingent that are visiting there that is that takes place the sunday after citizen con
+[ 3803.7] The sunday the second day of citizen con but after citizen con ends so it's like the unofficial
+[ 3809.2] post party there. Chris Roberts will be there as well as a bunch of other people
+[ 3813.8] There's a big social area with a bar and stuff and they'll be hanging out there to
+[ 3819.3] To meet people and to converse with people and stuff like that and sign autographs take pictures
+[ 3823.4] A lot of stuff like that so it's your chance to meet Chris Roberts and a whole bunch of folks
+[ 3827.1] That is not a star citizen event. It is our friends atmoe sports
+[ 3830.5] But we're we're going to hang out with them because we like them a lot
+[ 3833.8] So that's your chance if you're interested and you haven't picked up tickets for that
+[ 3836.5] You can check that out on their website
+[ 3839.0] As far as how much or whatever I don't know. I just I just get the details for where it is
+[ 3843.4] And if i'm not entirely dead after two solid days of running citizen con i'll probably be there too
+[ 3850.2] I'll just
+[ 3851.3] If anybody seen if anybody who remembers me at the after party for scissor con last year
+[ 3857.7] I will be on zombie mode. So just be gentle with me approach me slowly
+[ 3863.0] Indirect eyesight don't come at me from the sides or behind because I'll spook easily
+[ 3867.3] I will not know where I am, but I will be there. It's along along with all kinds of other cig staff
+[ 3872.5] So that's the housekeeping. Thanks for watching. Uh, yeah, that's all I got
+[ 3879.1] Bye sorry for this

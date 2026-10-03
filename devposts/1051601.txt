@@ -1,0 +1,74 @@
+Last Updated: :rocket: 2018-04-21 10:24 AM CDT / 15:24 UTC
+## :rocket: New Patch Available! :rocket:
+We have pushed a new patch for 3.1.3-LIVE.746975 . Please see the notes for the latest information of what is updated:
+https://robertsspaceindustries.com/comm-link//16530-Star-Citizen-Alpha-313
+When you update, please give the Launcher a moment to get the notification of the update. If you get a 20025/30025 error, you hit Launch game without updating. The rest of these notes will be updated, or new one created. Thanks!
+## Captcha and Launcher login
+Do the following if you get this message:  "ATTENTION! You must confirm your account is not a bot. Please visit the RSI Website and sign in to your account, then try again."
+- Fully close your Launcher. Make sure you don't have multiple Launchers open in your system tray!
+- Access our site: https://robertsspaceindustries.com/
+- Click Account. If you are currently logged in, click Sign Out. It's important to sign out fully.
+- Log back into the RSI site with your Login ID and password. Click I'm not a bot for the Captcha. If you use Chrome, you may not always see this option. You may want to try another browser on a desktop/laptop.
+- Run the Launcher and login again.
+## Box Stuck in Hands Work-Around
+We are working to fix this issue.
+- Baior the Red fix: Walk around with Interaction Mode up. Look down at your hand with the box while walking. An interaction option should be clickable. Select Place and toss that box.
+- Folks in #helpdesk fix: To adjust the box position, use an emote in chat like /sit. Try going to a weapon shop and inspecting/holding a gun which may also readjust the box for placement. This has helped players with cargo boxes stuck to hands.
+:rocket: If they doesn't help, send in a ticket to get your account reset. Issue Council:  https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/STARC-55315-Box_stuck_in_hands
+## aUEC / UEC / REC Items and Cargo Lost on Crash / Death / Disconnect
+We are aware and working on fixes for items lost for a variety of reasons. We understand that this is frustrating and are working on solutions to help! We will have additional information and updates fast as possible.
+:comet: SEEKING REPORTS!:comet:  https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/rec-auec-item-losses-seeking-reports
+## Memory Message
+With 3.1.1-LIVE.741247, we added memory checks and messaging to notify when you are experiencing memory issues.
+What does it mean? Your system is running close to your maximum memory usage. This may be occurring due to a Star Citizen memory leak, possibly other applications consuming memory with Star Citizen. We are actively investigating and diagnosing potential memory leaks in PTU releases to determine fixes.  The memory amounts differ according to your computer.
+## Fatal Crash to Desktop - CSpawnMsg::DoSpawn
+This crash is causing many players issues due to collision and checks for the existing and spawned objects. You can check for this crash issue in your game.log for the following message:  CSpawnMsg::DoSpawn EntityId collision   We have a potential fix for this issue and will be watching the Issue Council below after it is released.:rocket: 3.1.1-LIVE.741247 includes logging and potential fixes to help this issue. More info soon! :rocket:Issue Council:  https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/STARC-55706-Fatal_Error_-_Crash_to_Desktop
+## Javascript Error on Launcher and Game Install
+You may get the JavaScript error when installing: "A JavaScript error occurred in the main process - Uncaught Exception: SyntaxError: Unexpected token".  Recommend: Fully delete the Launcher/game, shutdown the computer, boot up and install. For info on deletes and installs, see: https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/downloading-and-installing-star-citizenIssue Council:  https://robertsspaceindustries.com/community/issue-council/rsi-launcher/RSIL-45619-Launcher_Error__fresh_install
+## All Ships Lost, Large Revel and York, 5+ size ships [HOTFIX APPLIED]
+A hotfix was applied at 0025 UTC 2018-04-05 to correct the issue resulting in a total loss of ships and hangars. You may be missing all or most ships from your ship list and terminals. Or you try to load the Large Revel and York, but can't access or spawn size 5+ ships. We are aware and investigating all of these issues.  
+Issue Councils:
+- Ships/Hangars missing: https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/STARC-55955-Ships_and_hangars_are_missing
+- Large Revel and York/size 5+ ships:  https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/STARC-55290-RandY_Large_Hangar_Not_Loading
+## Expedite Fees & Reclaim Timers
+Updates and changes were released with 3.1.1-LIVE.741247We are aware of issues/concerns and working on a stability patch. The goal is to have it out by April 6th to address the expediting fee, as it's currently set too high, considering the possibility of a client crash.
+## Loaner Ships
+By April 6th, we will have all Loaner ships updated in-game and in Concept Ship Loaners: https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/concept-ship-loaners 
+The following are a few notable changes coming:
+- Adding the Reclaimer Loaner for Hull D, E, Orion
+- Adding Cyclone Loaner to 600i Explorer,  Cyclone variants
+- Adding the Hornet Loaner to Constellation Aquila, Reclaimer
+## Missing Subscriber and Concierge Items after Crash
+We are working on a fix for this issue along with other missing issues/ships. The items are still on your account, just not returning to your list after destruction of your ship, game crash, etc. 
+:rocket: Send in a ticket to get your account reset.
+## Headless/Golfball Character
+We are aware of an issue where characters in-game are suddenly headless, unable to wear clothin, or turning into a golfball. You may have this happen when wearing specific armor in particular situations or locations. 
+:rocket: Send in a ticket to get your account reset.
+## Insurance Claim and duplicate ships:
+We are working on a fix for this issue! More info soon as available. The issue: duplicate ships generating during an insurance claim. Any ship and/or vehicle may have this happen. Current reports indicate the following:
+- The original ship can be used/insurance claimed, duplicates never work
+- The original ship cannot be used/insurance claimed, one or more duplicates work
+- Vehicles may spawn in a duplicated ship, but may not work
+Issue Council: https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/STARC-53994-Claim_bug_-_after_fix___Duplicate_ships___Missing_ship_in_list Thread:  https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/duplicate-ship-insurance-claim-issue
+## Disable Windows Game Bar
+Windows Game Bar is causing crashes to black screen for players. For more information on disabling the Game Bar, see this article: https://www.windowscentral.com/how-disable-and-remove-game-bar-windows-10-creators-update
+- Right-click the Windows button.
+- Click Search, and search for Game Bar. You will find it in Settings > Game > Game bar.
+- Disable by clicking the switch under "Record game clips. Screenshots, and broadcast using Game bar."
+Also see Graphics Guide: https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/graphics-gpu-guide-for-star-citizen
+## Lumberyard error on graphics driver
+We are aware of an issue with the Lumberyard screen popping up an error message for incorrect graphic drivers.  The message is incorrect, and pops because Lumberyard detects the Integrated GPU instead of the high performance card (Nvidia/AMD).  Information in this guide: https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/graphics-gpu-guide-for-star-citizen  look for "Lumberyard Error & Setting Preferred GPU".
+- Issue Council:  https://robertsspaceindustries.com/community/issue-council/rsi-launcher/RSIL-54493-Launcher_Driver_Outdated_Error
+## Authenticator Code and Duration Issues
+We are aware of an issue with authenticator codes not accepted when logging in.
+- Verify you have a Duration selected (it may not have one selected by default).
+- If you have issues with the Launcher,  clear the Launcher cache.
+See the guide for all steps and details: https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/two-step-authenticator-troubleshooting-guide
+## REC Ships are no longer available in the Persistent Universe
+Ships obtained with REC were never intended for use in the Persistent Universe. While they have been available for a little while, the root cause of their presence in the PU has been corrected. REC Weapons are still currently available for use in the PU but please be aware that if you lose your ship with REC Weapons attached, you will lose access to those weapons in both the PU and Arena Commander!
+## Ground Vehicle Reclamation
+When filing an insurance claim on a ship, always remember to first file a claim on any ground vehicles stored in the ship first. If this is not done, the vehicles stored within the ship will be lost.
+## Data.p4k and Download Issue
+We are aware of the issues with the data.p4k download and install of Star Citizen. We are working towards a solution for this issue. If you have download and install issues, please enter a ticket with details. Please use this Issue-Council Report:  https://robertsspaceindustries.com/community/issue-council/rsi-launcher/RSIL-45804-Failed_to_verify_file__Data_p4k_file
+## ISSUE-COUNCIL!
+As always, if you are encountering issues while playing Star Citizen Alpha 3.1.0, please take the time to contribute to the Issue Council: https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/ If you need to update your IC Profile, you can find those settings here: https://robertsspaceindustries.com/community/issue-council/specs .

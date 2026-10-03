@@ -1,0 +1,76 @@
+## Star Citizen Patch 3.6.1
+Alpha Patch 3.6.1 has been released and is now available!  Patch should now show: LIVE-2437696.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Persistence Wipe: YES
+Known Issues
+- Recently claimed ships may show as "locked" on the VMA. W/A: App switch or reopen to refresh.
+- 600i interior elevator doors do not open unless the ship is unlocked.
+- Reclaimer interior doors do not open unless the ship is unlocked.
+- The forward lift on the Reclaimer sometimes has collision issues causing damage to the player or the player to fall out.
+- Wheel and suspension animations are not working on wheeled vehicles.
+- VOIP may not be functioning at release, but we are looking into a server side hotfix.
+## Feature Updates
+General
+- Updated audio for size 3 ballistic cannons and Ballista missiles.
+- Updated FOIP camera selection with "camera mode" which includes the choice of camera, resolution, framerate, and color space. Recommended modes are marked with a "*" and modes below 320 or above 1920 are excluded.
+Universe
+- Added Ballista class missiles to Centermass store.
+- Brought down the number of AI security reinforcements to avoid accumulation of AI ships.
+- Increased the ship detection commodity buying radius for some stash houses.
+Missions
+- Updated probability volume to lower the frequency of AI service beacons.
+UI
+- Disabled pitch ladder for ground vehicles.
+- Added HUD warning message for security encounter.
+- VOIP UI "speaking" notification now ignores players who are out of range.
+FPS
+- Raised the P8SC sight attachment point.
+Ships and Vehicles
+- Updated dimensions for Freelancer Max and Vanguard to better select landing pads/hangars.
+- Temporarily removed the VTOL animation from the Cutlass to restore forward/reverse strafing when in hover mode.
+## Bug Fixes
+- Players should no longer experience a dramatic framerate drop when in 1st person.
+- Fixed missing orbital markers at multiple locations.
+- Updated armor tagging for Star Marine so the outlaws now have a complete set.
+- Fixed an issue causing tire trail VFX for the Ballista to not appear.
+- All crew members of the Ballista should now have ship computer audio.
+- Holding LMB should now work to quick place carried items.
+- Security attacking the player should now be flagged as hostile.
+- The UI should now show correct numbers for weapons when not wearing a helmet.
+- The camera should no longer appear to be inside the player's head when respawning in Star Marine.
+- Players should no longer experience an infinite loading screen when logging into the PU.
+- Fixed an issue causing bounty type missions to appear in the same areas around GrimHex.
+- Fixed an issue where the REC total wasn't displaying at the top of the screen on the Arena Commander menu.
+- Destroying an enemy ship when in the presence of security should no longer cause a crimestat.
+- Fixed an issue where mineable asteroids could be detected at much longer ranges than intended.
+- Modified shield proxy for Reclaimer to fix shield holes.
+- Ruto's appointment mission should no longer be offered before the player completes the prerequisite mission.
+- Fixed an issue where missiles were not inheriting velocity.
+- Players should no longer get stuck on a black screen after death.
+- Ships should no longer be missing components upon insurance claim return.
+- There should no longer be excess AI ships around GrimHex, lowering local FPS.
+- Switching genders in the character customizer should no longer cause a skin tone mismatch.
+- Vehicles should now be able to be repaired and restocked at Lorville and Levski.
+- Secondary quantum travel route jump points should no longer be obstructed when traveling to a planetary body.
+- Mission givers should be in their correct positions and functioning.
+- Emissions should now display properly on MFD and support screens.
+- There should no longer be a floating boxing ring just outside of Lorville.
+- Players should no long stare at a black screen when attempting to respawn.
+- Fixed an issue that caused ship repairs to not work when degradation was present.
+- Fixed an issue where Pro Tem bounties would spawn inside asteroids.
+- Players should no longer get stuck on an infinite loading screen when entering the PU.
+- Repair costs should no longer be exceedingly high when degradation is present.
+- Players should no longer see pink or purple graphical issues around ArcCorp if they updated to the latest drivers.
+- Players should now be able to purchase commodities at Hurston moon outposts.
+- Players should now have their ships detected once landed at CRU-L5.
+- The player's ship should no longer explode when quantum traveling to a party member in atmosphere.
+- Mission description and contractor are now placed in the correct fields on the mobiGlas.
+- Fixed an issue causing some optics to be not sighted in correctly.
+- Restock should work consistently for all ground vehicles.
+- Lawful missions should no longer appear on GrimHex if the player has a crimestat.
+- Fixed an issue where VOIP did not automatically connect the client back to proximity chat after disconnecting from a direct call or party chat.
+- Removed emotes from falling to fix using them to avoid falling damage.
+Technical
+- Fixed 10 client crashes.
+- Fixed 4 server crashes.
+- Fixed a memory leak.

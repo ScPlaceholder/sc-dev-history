@@ -1,0 +1,47 @@
+## Star Citizen Alpha Patch 3.24.3
+Alpha Patch 3.24.3 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.3-PTU.9408732.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+Note: Today's build does not have new ships available just yet. We are planning on adding these during PTU phases for 3.24.3 before release.
+- Stability & Bugfixes
+## Known Issues
+- PU - Social - AR markers - Party markers are not visible to other party members
+- The Argo ATLS currently cannot be destroyed (Not intended end goal and player inside is still vulnerable)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables (Asteroid Fields not affected)
+- PU - Stanton - Multivehicle - MFD - MFDs can be interacted with while in mobiGlas
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+- PU - Stanton - Landing Zone (LZ) - New Babbage - Personal Hangar - Locations / Art / Graphics - A large opaque plane will be visible when viewed from the ASOP/Storage Access area if hangar doors are open
+- PU - Locations / Physics - UGF - The interior of UGFs inherit the planet or moon's gravity
+## Features & Gameplay
+Ships and Vehicles
+- Aligned Misc Starfarer annuciators to be vertical and made smaller
+Core Tech
+- Further Weapon Particle GPU Performance Improvements
+- Further Entity Spawner Reliability Improvements
+- Add MT graph to r_displayFrameGraph
+## Bug Fixes
+- Fixed - PU - Stanton - Actor / Health - Audio / SFX - Medical / Respawn - Permanent Incapacitated Audio loop after respawning (STARC-121829)
+- Fixed - PU - Missions / Vehicles / AI - There is a duplicate Hangar platform that can appear on Floor 1 of the 890J (STARC-132042)
+- Fixed - Drake Cutlass Blue - PU/AC - Vehicles / Vehicle Components - The Cutlass Blue spawns in the PU and AC with no fuel tanks (STARC-129870)
+- Fixed - PU - Stanton - microTech - Bloodshot Ridge - Locations / Art - Hole in the floor inside a building in Bloodshot Ridge (STARC-134858)
+- Fixed - PU - Stanton / Pyro - Locations - Medical - Art / Interactions - Terminals of medical beds are black (STARC-130219)
+- Fixed - Cyclone MT - Stanton - Vehicles/ Missile Operator mode /Missiles - Tumbril Cyclone MT missile racks are not functioning (STARC-2438)
+- Fixed aspect ratio of Freelanceer and Starfarer Annunciator Panels
+- Fixed - PU - Art / Locations / GFX - microTech - Ghost Hollow - There are ReplaceMe balls on the inside the derelict Reclaimer’s cockpit/bridge stair area/entrance
+- Fixed - Multivehicle - PU - Vehicles - Quantum Drives - quantum travels starts and then stops
+- Fixed - Aegis Sabre - PU - Vehicles / Art - Aegis Sabre has pixelated reflection texture on the cockpit canopy glass
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 5 Server Crashes

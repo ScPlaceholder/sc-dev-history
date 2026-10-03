@@ -1,0 +1,19 @@
+Hi everyone,
+We're excited to announce that High Dynamic Range (HDR) support is on its way to Star Citizen, and it's set to make its debut in the upcoming patch Alpha 3.20! We understand that many of you have been eagerly awaiting this feature, and our development team has been working on optimizing the game to ensure you can fully immerse yourself in its beauty. Below is a brief HDR introduction, including information on how to set up HDR. As always, please feel free to share your thoughts and questions in the replies.
+What is HDR, what can I expect?
+Technically, compared to Standard Dynamic Range (SDR), High Dynamic Range (HDR) provides higher peak brightness while maintaining the darkness of shadow tones, therefore increasing the contrast ratio.
+In practice, HDR allows for stronger highlights and preserves more visible detail in bright areas, like a snowy surface on a sunny day or clouds in the sky. It's a common misconception that HDR makes the entire picture brighter or ‘pop’ more. To prevent eye fatigue and give sufficient headroom for bright features, the average image brightness of HDR productions is usually the same or even slightly lower than that of SDR, with just highlights and emissive sources being considerably brighter.
+What are the optimal viewing conditions for HDR?
+For an optimal experience, HDR content is supposed to be viewed in a dim room. In a bright environment, even the best displays will reflect 1-2% of the ambient lighting, resulting in muddy shadow tones and a perceived loss of contrast.
+What is the best setting for 'HDR Peak Brightness'?
+The best HDR experience is achieved when the 'HDR Peak Brightness' slider is at its maximum (which is the maximum brightness the display supports). However, for a more comfortable viewing experience during longer sessions at night time, we provide the ability to lower the peak brightness.
+What is the best setting for 'HDR Brightness (Ref-White)'?
+It's recommended you adjust the 'HDR Brightness (Ref-White)' slider to a value that the overall picture brightness (mostly mid tones) appears pleasing to you. A fair rule of thumb is to set the HDR brightness to a level similar to your SDR brightness (when HDR is disabled). The lower you can keep the slider though, the more headroom you have for strong highlights, giving you a better HDR experience in general.
+If you have a display with a low peak brightness, like an HDR400 monitor, it's highly recommended to keep the 'HDR Brightness (Ref-White)' slider below 120 nits so that you still have a 3x factor of HDR headroom. If the image feels too dark, see if you can lower the ambient lighting in your room by switching off lights or closing the window blinds.
+What can I do if the available peak brightness is lower than expected?
+We rely on the Windows DXGI API to report the maximum luminance of the display the game is running on. If that returns a wrong value for some reason, or does not recognize an HDR display as being HDR-capable, we provide a workaround for now.
+To enforce showing the HDR settings in the graphics options menu of the game, put the follwing into your user.cfg file:
+r_HDRDisplayDeviceLimits=0
+Then, you can manually adjust the 'HDR Peak Brightness' slider to the maximum luminance supported by your monitor. For example, 400 nits for an HDR400 display. Special care has to be taken to not set that value too high, otherwise the tone mapping will kick in too late and highlights get clipped rather than smoothly rolled off.
+What color space does the game use in HDR?
+While HDR displays usually support HDR output and an extended color space (wide color gamut), the two are completely independent and separate features. At the moment, Star Citizen still uses the standard Rec. 709 color primaries for which all game content was authored.

@@ -1,0 +1,42 @@
+## Star Citizen Alpha Patch 3.24.3
+Alpha Patch 3.24.3 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.3-PTU.9395201.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+Note: Today's build does not have IAE or new ships available just yet. We are planning on adding these during PTU phases for 3.24.3 before release
+- Stability & Bugfixes
+## New Global Event: "Save Stanton" Playtest!
+Tonight on the 3.24.3 servers we will be running the first 3 phases of a new global event called Save Stanton!
+This will start up shortly after the build has been released and run overnight with mission phases 1-3.
+## Known Issues
+- PU - Social - AR markers - Party markers are not visible to other party members
+- The Argo ATLS currently cannot be destroyed (Not intended end goal and player inside is still vulnerable)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables (Asteroid Fields not affected)
+- PU - Stanton - Multivehicle - MFD - MFDs can be interacted with while in mobiGlas
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+- PU - Stanton - New Babbage - Locations / Actor / Interactions / Kiosk - Interacting with the Insurance Terminal in the Hospital makes the Player walk backwards out of range of the terminal
+- PU - Stanton - Landing Zone (LZ) - New Babbage - Personal Hangar - Locations / Art / Graphics - A large opaque plane will be visible when viewed from the ASOP/Storage Access area if hangar doors are open
+- PU - Locations / Physics - UGF - The interior of UGFs inherit the planet or moon's gravity
+- AC - Spawning not possible after rejoining lobby
+## Features & Gameplay
+Core Tech
+- Dedicated Borderless Mode has been re-added to graphics settings to allow resolutions outside of monitor ratio (using 16:9 on a 32:9 monitor)
+- GPU Graph Console Command enabled:  "r_displayFrameGraph 1"
+## Bug Fixes
+- Fixed - Front End - Core Tech - Graphics - Resolution / Upscaling / GPU / NVIDIA - While Vulkan is on, Enabling Nvidia DSR upscaling causes a bigger fullscreen window than the native monitor resolution (STARC-107329)
+- Fixed - FPS - Bullets such as the grenade launcher projectile do not explode correctly on contact
+## Technical
+- Fixed 1 Client Crash
+- Fixed 7 Server Crashes
+- Fixed 3 Hybrid Crashes

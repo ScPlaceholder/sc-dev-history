@@ -1,0 +1,47 @@
+Hi everyone!
+I am excited to announce support for D-BOX haptic system in the Star Citizen game client starting from tonight's 4.8 PTU.
+A group of passionate developers at CIG got together (yours truly included and fully geeking out) to build our very first integration with the D-BOX SDK and enable support for their haptic systems. This is the first in what will be a series of updates to our motion telemetry support, and for the time being it is considered experimental.
+Star Citizen is a game built around the fantasy of being in the cockpit, and we want the physical experience to match what's on screen or headset. We know our players have been building incredible custom cockpits and simrigs setups of every shape and size, from compact desk rigs, spherical displays, and custom physical cockpits all the way to a literal bus (omg!). We want the game to be able to leverage that hardware to bring you the next level of immersion.
+What is a haptic platform?
+A haptic system is built from motion actuators, which are motor-driven units that mount under your seat or rig. Each actuator can produce two types of output: physical movement (pushing the platform up and down) and haptic rumble, which can range from subtle fine vibrations you barely notice to deep reverberations that move the entire rig.
+A basic two-actuator setup gives two degrees of freedom: Roll and Pitch, as well as vibrations and texture. Four-actuator configurations add more range and precision with a third degree of freedom added: Heave.. Higher-end setups running up to eight actuators can support full  Sway, Surge and Yaw on top of that. D-BOX is one of the leading manufacturers of these systems, and their technology is what we've integrated with for this release.
+What's supported in this release?
+We focused this first pass entirely on the cockpit experience. Everything integrated so far is tuned for space and atmospheric flight:
+•	Ship engine rumble
+•	Directional G-forces
+•	Directional hits (with attenuation based on shields vs. hull damage)
+•	Missile launches
+•	Countermeasure launches
+•	Landing gear movement
+•	Decouple/couple engagement
+•	Weapons and gun recoil
+•	Boost and afterburner
+•	Impacts and explosions
+What can I expect?
+The goal of this integration is to make piloting feel visceral, especially in combat.
+You'll feel your ship's engine rumble scale with its size, so a Pisces hums while a Hammerhead growls through your seat. Hitting afterburner or boost gives you a real kickback. Firing weapons produces recoil that matches the output and launching missiles or popping countermeasures each have their own reaction. When something hits your ship, the impact is directional and attenuated based on whether your shields absorbed it or it punched through to hull. A glancing hit against full shields feels very different from a torpedo connecting with bare armor.
+Beyond combat, the platform responds to the G-forces your pilot is experiencing, so hard turns, acceleration, and deceleration all translate to physical movement in your seat. Deploying and retracting landing gear has its own tactile signature and switching into decouple mode gives you a distinct engagement feel, so you know the moment your flight model changes. When it all comes together, your body starts reacting before your brain does. That's when you know the immersion is working.
+Note that this release is focused on the pilot seat experience. Turret positions have a preliminary pass for weapon fire and movement, but broader multi-crew coverage and FPS/EVA are not covered yet and are on our radar for future updates.
+How do I activate it?
+If you have a D-BOX system, install the motion code for Star Citizen and it will automatically detect the haptic system and start processing telemetry. The platform should initialize its up/down cycle. That's it.
+You can grab the motion code by accessing D-BOX HaptiSync Center. There is no need to configure anything on your game client to activate the integration.
+Once installed the motion code also has a series of options and profiles you can tune to your liking. Most of the settings consists of changing the intensity of each sub-signal.
+How does it work?
+The game client transmits real-time telemetry through the SDK at frame rate. This matters because motion processing demands very high update rates and very fast response times to feel enjoyable and genuine. Any lag, stutter or silence between what you see and what you feel breaks the illusion immediately.
+We build a data packet by pulling from the actor system, flight instruments, IFCS, weapons, and all the other game systems that power what you experience when you're flying your ship. The motion code interprets this data in real-time to drive the actuators. Performance impact on the game client is negligible since the telemetry piggybacks on data the game is already computing.
+What's cool here is that even though we submit raw telemetry data (angles, values, structures), the motion code interprets it using audio-style signal processing and transforms it into frequencies. We worked closely with the haptic developers at D-BOX to build the motion code so that it models how each moment is felt, not just what happened. They can shape effects to match envelopes, impacts, ramps, and transients from our telemetry, so the result feels reactive and natural, not canned.
+The great advantage of our integration is that this single integration point can drive systems of any actuator count. From single or dual actuator seat products to larger four or eight actuator systems. We've even seen giant 6'+ full-size cockpits driven by the same integration. This means we can support a much larger range of products and setups while controlling and maintaining the quality of the experience across all of them.
+What's next?
+This is still an experimental release and our first pass at motion telemetry. Our objective is to give every major system in the game a haptic expression: flight, combat, traversal, all of it. We're treating this as a living integration that grows with the game.
+Next up is FPS and EVA coverage: gunfire, grenades, footsteps, sprinting, jumping, EVA push and boost. We're also experimenting with feeding CIG audio signals directly as data inputs, which would let us cover things like large sonic impacts automatically without requiring custom event hookups for each one.
+Beyond motion, we're also working to expand our telemetry data output to support other channels and integrations. We'll have more news on this front as we get closer to 4.9.
+How to contribute!
+If you have the material and want to contribute, please us #Haptics tag category on the IC for reports.
+We will also pop up some feedback threads in the next couple of weeks to engage on initial feedback.
+A personal note
+Building simrigs is a huge hobby of mine, so this one hit close to home. I've built a few rigs across CIG offices over the years, and there's a moment that never gets old. Watching someone sit down, take off from a landing pad, and realize they can feel the ship. Their whole expression changes. That moment, when the game stops being something on a screen and becomes something around you, is honestly one of the most satisfying things I've gotten to be part of here. (Add a VR headset and omg...)
+While I'm only the messenger, big thanks to all at CIG who supported this at CIG. Special o7 @YogiKlatt-CIG 🫡
+I really hope this first step into motion telemetry lands well with those of you who have the hardware. This is just the beginning, and we're excited to keep building on it.
+I still owe you all a desync deep-dive post, it's coming, I swear :smile:
+See you on the platform. Literally!
+-b

@@ -1,0 +1,63 @@
+Star Citizen Patch 3.10.0s
+Alpha Patch 3.10.0s has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.0-PTU.5767918.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- Ship flight in and out of atmosphere
+- Updated building blocks ship UI for all flyable ships.
+- High speed combat changes
+- Turret gameplay
+- Origin M50 Improvements
+- Electron FPS Weapons and Electron Damage
+- Body Dragging
+- Citizen Trading App
+- New Targeting Method
+- Delivery Mission Improvements
+Known Issues
+- Repair/Refuel at HUR-L4 Station will cause a client crash. (Please avoid using these services at this location in this build)
+- When the user ping scans an asteroid and then ping scans again the blob / asteroid relocates.
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- Landing gear will take multiple presses of the keybind to activate.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- The Greycat ROC cannot extract all of the child crystals, some are left behind
+- Hammerhead atmo entry effects clipping through interior of the ship
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- Multi-Tool in Klescher Prison Commissary does not come with a OreBit mining attachment
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+- Shots from remote turrets may appear desyned but still connect with the target.
+## Feature Updates
+Gameplay
+- Temporarily updated Pro Trem Missions to not spawn around Delemar to avoid an issue with the target not spawning
+- Increased the time it takes doors to start shutting after it detects the ship has left the hangar bounds
+- Increased the signature range for scanned mineables
+Ships and Vehicles
+- Temporarily changed the Banu Defender loadout to use fixed S2 Tachyons to prevent the singes from being swapped to other ships
+- Removed Nox Kue, Dragonfly Yellowjacket, Titan Renegade, and Sabre Comet from shops in the PU
+Core Tech
+- Updated the error messaging received upon server disconnect
+## Bug Fixes
+- Wind should no longer blow inside landing zone hangars.
+- Singe weapons should no longer incorrectly damage multiple shield faces per hit.
+- Repairing should now restore a ship's flight behavior to normal after repairing damage such as broken wings / thrusters / ship parts.
+- Ping scans should now correctly show where a mineable deposit is on planet surfaces.
+- Fixed an issue that was causing AR icons for ship mineables to frequently not display when intended.
+- The Player Ship should no longer be destroyed shortly after flying into a Restricted Area / Zone around the Spaceport after leaving a Hangar
+- Autopilot should now correctly give control back to the player after taking over in a landing spline.
+- Hangar Doors should no longer remain closed when the Hangar is assigned to a Landing Players Ship
+- Player's VOIP connection should now correctly reconnect again after a previous disconnect
+- The Aim of the Mining Lasers on the Argo Mole should no longer become offset when aiming at a Mineable Rock.
+- The mineable deposit AR icon shuld no longer disappear when in field of view.
+- Boxes should no longer be labeled as "ObjectiveSetup" in HUD when completing Covalex delivery and Recovery from wreck missions.
+- Fixed an issue causing bodies to float above the ground when dragging a body up stairs.
+- Fixed an issue causing the Bartender to sometimes wait long periods before being able to interact with usables.
+## Technical
+- Fixed 3 Client crashes
+- Fixed 2 Server crashes

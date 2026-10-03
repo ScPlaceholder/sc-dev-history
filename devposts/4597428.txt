@@ -1,0 +1,4 @@
+Our GPU profiler unfortunately takes a small amount of CPU time if included in the build (even when disabled), so we strip the code to maximise performance.
+But it’s way too detailed for most players, so we can probably instead provide some simplified statistics (eg. cost for geo, shadows, RTT, lighting, post effects etc). I also wanted to include a simple debug display to point out in clear English what the main bottleneck is, whether it’s GPU, CPU render submission, or the rest of the CPU work, because there’s often so much confusion in this area.
+This is all post Gen12  though.
+Ali Brown

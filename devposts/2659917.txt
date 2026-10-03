@@ -1,0 +1,59 @@
+## Feature Updates
+Characters
+- Moved Wallace Klim to GrimHex.
+- Moved Miles Eckhart to Lorville at MacIntyre & Victor's Bar.
+- Increased the speed of most first person animations.
+Locations
+- Updated planets and moons to Planetary Tech v4.
+- Updated the distribution of biomes on Hurston.
+- Updated sound effects and ambience at junksites.
+AI
+- Improved AI ship collision avoidance.
+Gameplay
+- Adjusted view distance ratios for dropped commodities.
+- Updated mission icons.
+- Updated some of the barriers in UGFs to allow vaulting.
+- Adding scoring for Pisces in Arena Commander.
+- Adjusted spawn rates for valuable mining materials.
+- Updated instability on FPS mineables.
+Ships and Vehicles
+- Updated third person camera/chase camera for ships for improved behavior and stability.
+In third person, the camera now follows the physical movement of the ship and better scales for ships of different sizes.  The camera also behaves as if on a spring to allow it to swing, drift, and bounce with ship/vehicle motion in a more natural way.
+- Replaced the front fixed guns on the Pisces with mounted gimbals.
+- Updated landing gear and thruster nozzle LOD ratios on the Bucc, M50, Merlin, and Archimedes.
+- Rebalanced mineable rocks and lasers for expanded range of laser heads and to expand difficulty.
+- Swapped power plant on Heartseeker to military grade.
+- Changed Reliant wing animation to activate on VTOL key and engine rotation to activate with landing gear.
+- Disabled the ability of the player to get out of the seat when the Reliant is in vertical flight configuration.
+- Disabled canopy interactions during quantum travel.
+- Reduced camera shake for thrusters.
+- Updated the size and scale of ship status visor displayed and moved some ships displays to exclusively MFD.
+- Updated and rebalanced ship components (shields, powerplants, coolers, quantum drives.) around manufacturer characteristics so that each item is now unique with unique strengths and weaknesses related to their intended use.
+- Added Ballista to New Deal and Astro Armada.
+- Updates to glass reflections the several ships.
+- Updated all targeting keybinds to "tap" logic (press and release to activate).
+- Brought the mining laser/tractor beam close to the reticle point.
+- Remixed the ship audio volume levels.
+- Disabled bed logout in shops that are in other ships to work around a crash.
+- Tweaked boost camera shake so it's not so extreme.
+Weapons and Items
+- Reduced the amount of shake on the Arrowhead when charging a shot.
+- Updated shop logos for Lortell, Doomsday, Gallenson, and Ultiflex brands.
+## Major Bug Fixes
+- NPC security at major stations should no longer occasionally get stuck in a combat ready pose.
+- AI mission target ships should now consistently spawn for all related missions.
+- Fixed an issue on multiple ships where a player could eva through landing gear without collision.
+- Missiles should now correctly fire to sub-target.
+- The player should now be aligned properly to the MFD and interaction nodes when laying in the bed of the Mustang Beta.
+- Small vehicles should no longer be able to enter Port Olisar's airlocks.
+- Vehicles at Lorville gates should now be properly restricted by the restricted area.
+- The turret gunner in AI Cutlass should no longer be standing up.
+- Bindings for target scanning controls should now be visible in the binding menu.
+- Commodities purchased should now visibility appear on the ship's cargo hold.
+- Switching FPS weapons should no longer cause them to occasionally drop and be lost.
+- Respawning within 50m of another player should no longer cause proximity VOIP to not work between them.
+- Party AR makers should now show up consistently.
+- Players should no longer be able to cause their character to become invisible when setting options in the character customizer.
+- Cacti on planetary surfaces should now have collision.
+- The quantum drive on the Constellation series ships should now be swappable.
+- Players should no longer be able to duplicate harvestables and hand mineables when dropping them on the ground.

@@ -1,0 +1,53 @@
+## Star Citizen Alpha Patch 4.1.1
+Alpha Patch 4.1.1 has been released to all backers to test!   Patch should now show: VERSION 4.1.1-PTU.9738925.
+- Audience: All PTU Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Tonight's build contains multiple server and client performance optimizations that were uncovered during the weekend stress test. We will continue to improve this as the 4.1.1 PTU continues this week.
+Expo Halls will be running on a 2 hour rotation overnight on PTU
+- Stability & Bugfixes
+- Ship Battle Missions V1 (Patrol, Ambush, and Gilly's Advanced Combat Gauntlet Missions)
+- Handyman Missions
+- Animal Missions
+- PVP Bounties
+- Hunt the Polaris Mission
+- UEE Training Mission
+- Fleet Week Halls & Idris Tour
+- New Wikelo Rewards
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback and are subject to removal
+- NPC Comms Call, Dialogue Additions, and Improvements
+- [Redacted]
+## Known Issues
+- Blocker: PU - Stanton - Locations / VisArea - Area 18 - Portions of Area 18's spaceport is missing visually
+- Critical: PU - Area18 - Locations / Transit - Area18 Hab Elevator Carriage does not open at Lobby level
+- Critical: PU - GLOBAL - Locations - Corpses are not being cleaned up at landing zones
+- Critical: PU - Fleet Week 2025 - Locations / Transit - Elevator Exterior Panels within the Expo Hall have Grey UI and do not call carriages when interacted with
+- Critical: Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Critical: PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- Critical: PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- Critical: Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- Critical: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- Critical: PU - Shopping / Inventory - Purchasing Items in quantities above 1 to Backpack Inventory results in Failed Transaction due to "Invalid Item"
+- Critical: PU - Stanton - microTech - New Babbage - Brentworth Care Center - Medical / Locations - The medical kiosks have an infinite load and do not check players into rooms
+- High: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+- High: PU - Hangars - Locations / Lighting - Freight elevators filled with fog and bright light
+## Features and Gameplay
+- Core Tech
+Synchronize Party Launch
+Updating the Party Launch feature to have better functionality for server queues.
+When party leader joins PU from the front end, party launch notifications are now sent as soon as the Party Leader joins a Shard Queue so that the party is all queued at the same time.  Previously, the party launch notifications were taking place after the party leader transitions into PU so this will make the process much cleaner for parties when there is a longer queue. Along with this, party launch UI notifications are now displayed. If party leader cancels a Join Queue, party members still in queue will also get a cancel (with UI notification indicating the party leader canceled queue).
+## Bug Fixes
+- Potential Fix: PU - Fleet Week 2025 - Locations / Vehicles / Interactions - Invictus Idris's docking collar can be locked (STARC-166800)
+- Potential Fix: PU - Actor - Item Recovery - Inventory / Weapons - Quitting the game while having a weapon unholstered on the left backpack item port will force the weapon to be lost upon relog (STARC-161557)
+- Potential Fix: Argo Raft - PU / AC - Vehicles - All damage passes through shields and hits the ship directly (STARC-166086)
+- Potential Fix: PU - Ship Battles V1 - Hostility - Ninetails Probe doesn't appear hostile when targeted or scanned
+- Potential Fix: Multivehicle - PU - Vehicles / UI - Player ships show the players names instead of the serial of the ship prior to scanning the ship
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes

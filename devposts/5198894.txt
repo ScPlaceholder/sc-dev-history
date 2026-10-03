@@ -1,0 +1,94 @@
+## Star Citizen Patch 3.17.2
+Alpha Patch 3.17.2 has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.17.2-PTU.8121594.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Audience: Wave 1
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 10,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- Hit Registration Ship Combat Tests PU/AC
+- Derelict Reclaimers V1
+- Derelict Colonialism Outposts
+- New Space Stations and Lagrange Points
+- Grim HEX Hospital Expansion
+- Combat Service Beacons V2
+- Illegal Collect and Delivery Missions
+- Player and AI Networking Updates
+Known Issues
+- Locations - Transit / Elevator - Multiple Station EZ HAB Elevators Broken
+- AI / Characters - Inventory - Looting the weapon from an unconscious AI will cause it to teleport back into their hand a short period after picking it up
+- Mission Content / UI - Mission objective marker disappears once arrived at Derelict Outpost 2
+- Missions - Bounty / Mercenary - Dying in lawful UGF missions causes player to respawn at Grim Hex
+- Bunker turrets - lawful missions - bunker turrets will shoot at a player with a lawful mission to be at the bunker
+- UGF Raid - Missions / AI / Combat AI - Some Enemy AI will not engage Security AI or Players
+- Physics / Vehicles / Actor Tech / EVA - When entering a ship's physics grid from EVA, the player may be forcefully repelled
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- Shopping Kiosk / Multi-Buy - When using the buy Max feature, or buying the max of an item ( 1000 ) - Further attempts to purchase from the store will result in an Inventory Error or Insufficient Stock
+- Missions - "Halt Illegal Surveillance" / "Unauthorized Surveillance Detected" - Missions Do Not Generate A Mission Marker or Initialize On Arrival
+- Ships - Components and interior zones remain when ships are destroyed
+- Missions - UGF Locations - NPCs Not Spawning at Mission Locations
+- When purchasing a rental vehicle from a rental kiosk the money taken will not be displayed properly on the Kiosk or the mobiGlas
+- Locations - Elevators / Physics - Hangar elevator's collision grid pushes player through its path when called (Multiple Locations)
+- Shopping Kiosk - UI / Building Blocks - Controls / Mouse - When selecting the text field box for "Quantity Multiplier" you lose control of the in-game mouse cursor
+- Locations / Art / Tech Art - Elevators have portals / Vis areas when their doors open
+- Stanton - ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+## New Features
+Locations
+- Derelict Reclaimers V1
+Added additional points of interest that will be scattered both on planets and in space. These Derelict Reclaimers come with puzzle traversal elements along with multiple legal and illegal mission types which include delivery and FPS combat in and around the crash sites using the new planetary navigation mesh. There are multiple Reclaimer Derelicts in space with three associated delivery, investigation, and mercenary missions. We've also added a new ground-based Derelict Reclaimer site inhabited by NPCs called "Ghost Hollow," which involves delivery, bounty hunter, and mercenary missions.
+- Derelict Colonialism Outposts
+Added new derelict versions of the Colonialism Outposts into Stanton. This initial release will see 5 unique outpost locations on microTech with new delivery missions, small traversal puzzles, and all but one of them having AI guards that utilize the new planetary navmesh along with the new drop ship reinforcement system.
+AI
+- AI - Planetary Navigation
+This system allows NPCs to move on planetary surfaces using a dynamically generated navigation mesh. This will efficiently process planetary terrain and objects to prioritize the processing of the environment around the players into navmesh, allowing the use of all existing functionalities on planets. The first implementation of this feature will be at the Reclaimer and Colonialism Outpost Derelict Points of Interest.
+- AI - Landing Improvements
+This enables AI ships to land and deliver reinforcements on non-structured ground areas like planetary terrain where a pre-defined landing area and assistance from Air Traffic Control is not available.
+Gameplay
+- Illegal Collect and Delivery Missions
+New set of delivery missions focusing on illegal cargo. These will be offered by Red Wind Linehaul once the player reaches rank 2 reputation with them as a courier. The player will be sent generally to sketchy, run-down locations like drug labs and stash houses and is tasked with delivering goods between them, some of which may not be legal. The intro mission should be available in Hurston if you have rank 2 courier rep with Red Wind Linehaul. The illegal missions should be available outside Hurston (in Crusader, ArcCorp, and microTech) if you have rank 2 courier rep with Red Wind Linehaul and have completed the intro mission in Hurston. These missions come in 5 different versions, each with a different quantity of cargo and a corresponding monetary and reputation reward given on completion.
+- Added Marker for Friendly AI that are Associated with your current FPS Mission
+Weapons and Items
+- Added New Lootable Item: Greycat Salvage Backpack
+- Added New Armor to Shops and Lootable Containers: RRS Specialist Heavy Armor (Morozov-SH Brushdrift, Redshift, and Snowdrift variants)
+## Feature Updates
+Locations
+- Reststop Hangar Additions
+Updated existing reststops to have small and medium hangars.
+- Additional Stanton Lagrange Points
+Added additional, unique MIC and ARC reststop locations with full amenities such as clinics, habs, shopping, and services. This update includes both the stations themselves and the gas clouds surrounding them.
+- Grim HEX Hospital Expansion
+Expanded Grim HEX to add many additional medical rooms.
+AI
+- Improved NPC face randomization to be more diverse
+Gameplay
+- Combat Service Beacons V2
+Updates to Combat Service Beacon Gameplay for a more varied and rewarding experience. This update hooks combat service beacons into quantum to allow the system to determine when, where, and what difficulty will occur. This brings a range of 10 levels of difficulty to space combat beacons which will start players at low tiers with easier targets and at with increased reputation scale up massively at higher difficulty levels to include tougher targets, larger payout, and rare encounters that may require teams of players to take down the target.
+- Food and Drink QoL Purchasing Update
+Food and drinks can now be purchased in multiples using many shop kiosks in the PU.
+- Shopping Kiosk QoL Updates
+General UI polish pass. Added check functionality to Quick Buy confirmation popup, so that it is now a quick passive popup and requires no interaction. Updated filter section to be multi-line and added field to support search inputs.
+- Higher-Valued Gems Will Now Be Much More Rare in Loot Crates
+- Players Will Now Drop Empty Magazines While Reloading
+- Added Friendly AI Marker to Mission NPCs
+- Disabled Corpse AR Marker Showing for Other Players
+Ships and Vehicles
+- Mustang Alpha QoL Updates
+Made changes to the cargo grid to add a new 4 SCU cargo hold with animated doors. Updated the cargo boxes used by the Mustang so that they can open and hold loose cargo. Greatly increased the cargo bay health.
+- Blade Performance Polish
+Retuned weapons to increase velocity. Increase wing hull health. Changed lateral velocities, boost multiplier, and aerodynamics.
+- Decreased Scorpius Max Speed in Atmosphere
+- Updated Scorpius Passby Audio
+- Adjusted Drake Mule Weapon Rack Interactions to Be Easier to Select
+Weapons and Items
+- Updated Dimensions and mSCU for Missiles and Torpedoes
+Core Tech
+- Player Networking Update
+Enabled new remote movement and new client authoritative position systems. With this update, players should see great improvements with on foot player positions and less jittery behavior while viewing remote player movements.
+- Made Many Improvements to On-foot AI Networking to Improve Their Movements, Responses, and Reduce Rubberbanding
+- Performance Polish Pass on Large Planetary Storms
+- Performance Polish Pass for Entity Streaming
+- Updated ReShade to Version 5.2.1

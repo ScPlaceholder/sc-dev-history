@@ -1,0 +1,1 @@
+I'm not sure how many cores/threads we're using at the moment, but yes, the idea is that a lot of the time consuming work that's currently on a single dedicated render thread can be handed off in pieces to the Job System that manages our other multithreading, letting us build the GPU command lists in parallel.

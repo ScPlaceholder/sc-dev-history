@@ -1,0 +1,89 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9146828.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 2
+Server Info: US/EU - EPTU Channel - PU/AC
+Replication Layer: Enabled
+Server Recovery: Disabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+Xenothreat Will be enabled in various phases tonight and Friday on the EPTU while we test compatibility and performance
+- Stability/Performance/Bug Fixing
+- Master & Operator Modes: Vehicle Combat and Experience
+- Vulkan Renderer (Off by Default in Graphics Settings)
+- Full Character Customizer Revamp
+- mobiGlas Rework / Starmap / Interior Map / Minimap
+- Distribution Centers
+- EVA T2
+- New Loot Screen / New Visor / Lens
+- Full FPS Combat Refactor / Dynamic Crosshair
+- Backpack reloading / Ammo repooling
+- Physical Shopping UI
+- New Arena Commander Features: Engineering Game Mode, Grav Royale, New Race Tracks, and New Pirate Swarm Final Wave
+Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs.
+Distribution Center missions sometimes show the wrong location markers inside so might be difficult to know exactly where you need to go to.
+Server and Client Performance is something we are constantly monitoring and working on fixes and changes for 3.23. Currently we are seeing quite a few issues that are reducing the experience and looking into these.
+- AC - Backend / Network - Searching for a Match will always load a new instance despite other matches waiting for players
+- AC - Backend / Network - Infinite loading when two players launch from lobby
+- PU - Vehicle Purchase Kiosk - Shopping / Locations - Unable to purchase vehicles from kiosks
+- PU - UI / Mission Content - Players Cannot accept shared mission
+- PU - Stanton - Loot / UI - New Loot Menu does not appear when looting
+- PU - Stanton - Distribution Centers ( DC ) - Locations / Physics - Hangars missing collision for incoming flight traffic
+- PU - Stanton - Hurston/Crusader - Lorville/Orison - Locations / Transit - Lorville/Orison transits are off set from the station doors causing visual and collision issues
+- PU - Shopping / Art / UI / Locations - Weapon display in stores are rotated 90 degrees
+- PU - Multiple Locations - Locations / Art - GrimHEX and Kareah airlocks are missing breathable air and doors
+- Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Locations - Grim Hex - Hospital - Elevator - Elevator is missing at Grim Hex's hospital
+- PU - Stanton - Character - HUD / UI - No body marker after death
+- PU      - Stanton - Lorville - Transit / Locations - Trams missing from Perimeter Line West
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+- PU - Terminal - Locations / Interactions / UI - Unable to interact with the Medical Insurance Terminal to manage regeneration
+- PU - UI - NikNax / VLM - Liveries - All Liveries are missing volume information in NikNax and Vehicle Loadout Manager
+- Front end - UI / Locations - Inventory - Entitlement - Primary Residence location can be missing from the front end
+- AC - Front-End - Engineering: Duel - UI / Lobby / Menus - Missing ship model on lobby screen
+## Features and Gameplay
+AI
+- Added More Variety to Outlaw NPC Loadouts
+Gameplay
+- Water VFX: Wake improvements
+Added control of the wake width based on the bounding box of the ship. Added a strength offset for the vfx effect to trigger.
+- MasterModes Spool times: SpoolTime balance pass
+- Added GSafe On/Off keybinds
+- mobiGlas and Interior Map Polish Pass
+- Increased ammo for Vanduul weapons, increased bullet velocity for Vanduul cannons
+Ships and Vehicles
+- Master Modes - Balance - Made Slight Max Angular Velocity Increases to Scorpius and Scorpius Antares to match the flight archetype
+- Master Modes - Balance - Made Adjustments to Cutlass Black, Cutlass Blue, Cutlass Red, and Cutlass Steel to match the flight archetype after recent changes changed the stats
+Core Tech
+- Made Further Server Performance Optimizations
+- Made Further Client Performance Optimizations
+- Hurston Ocean Performance Optimizations
+## Bug Fixes
+- Fixed - PU - UI / HUD / Interaction - Mouse cursor is invisible while using interaction mode, mobiGlas, and shop kiosks (STARC-93364)
+- Fixed - PU - HUD - Contracts UI - UI doesn't update automatically, but updates once when Untracking and then tracking the contract again
+- Fixed - After server recovers the player receives a "Disconnected for being inactive for too long" message and is disconnected (STARC-105607)
+- Fixed - PU - UI - Flight HUD - Toggle-able flight HUD elements are virtually indistinguishable from ON or OFF in all manufacturer palettes (STARC-84137)
+- Fixed - PU - UI - mobiGlas - Starmap - There are no icons for jump point stations at the system-wide zoom level (STARC-104022)
+- Fixed - Server Recovery - Vehicle present in hangers are impounded or stored after server recovery (STARC-99569)
+- Fixed - PU - Cargo / Weapons - Tractor Beam - Handheld Tractor Beams will instantly deactivate when attempting to move items
+- Fixed - Quantum Travel - When jumping to a target in a route it can be tricky/impossible to select the next target in that route
+- Fixed - Vanguard Sentinel - Loadout is identical to the Harbinger rather than the expected loadout
+- Fixed - PU - Stanton - AI - Combat AI can shoot players at any angle before turning to them
+- Fixed - Code - AI - FPS - Defenders leaving their cover when their cover is still best
+- Fixed - PU - Stanton - Actor / Core Tech - Player's Bodies Despawn After Death Outside Armistice
+- Fixed - PU - Actor - EVA / Animation - Entering a ships pilot seat from EVA causes the player to enter a standing pose momentarily
+- Fixed - PU - Stanton - NPE - Mission Content / mobiGlas / UI - The NPE is using an incorrect loadout
+- Fixed - Graphics - Upscaling/DLSS - Wielding a weapon with a scope can cause intense lens flare
+- Fixed - Neutral Territory does not make the inhabitants hostile to trespassers
+- Fixed - Global - Gamewide - Audio / Audio Code - Ship computer dialogue stops triggering / stops being audible once the ship has been powered off then back on again
+- Fixed - SFX Events on Audio Triggers in Mannequin Inconsistently/Unpredictably play audio across all player animations
+- Fixed an issue causing rifle scope reticles to blur while moving
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed 2 Vulkan Specific Client Crash
+- Fixed a Client Deadlock

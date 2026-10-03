@@ -1,0 +1,82 @@
+## Star Citizen Patch 3.20.0b
+Alpha Patch 3.20.0b has been released and is now available on the LIVE environment!   Patch should now show: VERSION 3.20.0-LIVE.8749605.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The default shader folders can be found here %localappdata%\Star Citizen.
+Short Term Database Reset: Yes (Loss of items not stored in LTP)
+Long Term Persistence (LTP): Enabled
+Starting aUEC: 20,000
+Known Issues
+- UI / Menus - Controls - Keybindings - The Default Preset Images for the keyboard and gamepad control schemes do not match what is bound by default
+- AC - Client Crash - All FPS Modes - FPS Loadouts Customization - Armor / UI - Scrolling down to the very bottom of the leg armor rental list will result in a client crash
+- PU - Crusader / Orison - Locations / Transit - It's possible for turn gates to not open preventing players from entering shuttles
+- PU - Art - Items / Character / Textures - Multiple clothes / armor / undersuit variants lost color / using the default base color
+- PU - Multivehicle - Vehicles / Ships / Ship Components / Weapons - Laser Repeater occasionally stops firing but still consumes ammo
+- Stanton - Multivehicle - RSI Constellation Series - Ship Feature - Snub Ship clips through Constellation variants in vertical position when retrieved from ASOP
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout after dying in the armistice zone
+- Stanton - Actor - Personal Inventory - Right click item interaction menu cannot be closed once opened
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- Multiple Locations - Inventory - Equipped items are lost after dying in the landing zone
+- Drake Caterpillar - ALL VARIANTS - PU - Salvage - All of Caterpillar Hull give invalid material message for Salvager
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- ASOP - Ships - Vehicles - Clicked to "Store" ship at ASOP but it was "Destroyed"
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- Vehicle Maintenance Services - Ship repair doesn't happen but still charges you
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Inventory / Personal Inventory - Inventory can enter a state of becoming unresponsive, preventing the player from being able to eat or drink
+- Stanton - AI - Mission Giver - Wallace Klim is not visible at his location in Grim Hex
+## New Features
+Ships and Vehicles
+- New Flyable Ship: Anvil F8C Lightning
+Core Tech
+- Localization Support
+We’ve recreated functionality for our community localization volunteers to build and use their own translations via a localized global.ini file. Instruction on how and where to insert the file into your Star Citizen directories are below.
+Technical Steps:
+For our community localization volunteers: We now will allow a localized global.ini file to be used for translations and supported by a variety of new fonts. Instructions on how and where to insert translation files into your Star Citizen directories are below.
+1. Create a new folder in the following directory: \StarCitizen\LIVE\data\Localization\New Folder
+2. Rename the folder to one of the following:
+- chinese_(simplified)
+- chinese_(traditional)
+- english
+- french_(france)
+- german_(germany)
+- italian_(italy)
+- japanese_(japan)
+- korean_(south_korea)
+- polish_(poland)
+- portuguese_(brazil)
+- spanish_(latin_america)
+- spanish_(spain
+3. Put your previously translated global.ini file into the new folder.
+4. Add one line from below of CVAR into your “user.cfg” file in your \StarCitizen\LIVE folder
+- g_language = chinese_(simplified)
+- g_language = chinese_(traditional)
+- g_language = english
+- g_language = french_(france)
+- g_language = german_(germany)
+- g_language = italian_(italy)
+- g_language = japanese_(japan)
+- g_language = korean_(south_korea)
+- g_language = polish_(poland)
+- g_language = portuguese_(brazil)
+- g_language = spanish_(latin_america)
+- g_language = spanish_(spain)
+5. Launch the game as normal and the localization should work.
+## Feature Updates
+Gameplay
+- Added updated Ground Vehicle Handling Tweaks: Easier Throttle Control and Suspension Tweaks
+## Bug Fixes
+- Client Crash recovery should now correctly function
+- Cargo ATC should no longer fail to detect vehicles within the loading zone or fail to initiate cargo transfers
+- Fixed an issue with audio starting to cut out for extended periods after some time playing
+- Fixed an issue causing character's view to get stuck wiggling when colliding in EVA
+- Fixed targeting reticle and other Vehicle HUD elements not updating in real time in Arena Commander
+- Fixed an issue that could cause server performance to create rapid Spikes in Charge Level when Mining
+- Fixed SDR Brightness/Contrast/Gamma settings causing degradation in HDR quality
+## Technical
+- Fixed 1 Client Crashes
+- Fixed 4 Server Crashes
+- Physics Deadlock Fix
+- Fixed a Server Memory Leak

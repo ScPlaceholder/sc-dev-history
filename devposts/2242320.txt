@@ -1,0 +1,89 @@
+## Star Citizen Patch 3.6.0m
+Alpha Patch 3.6.0m has been released to PTU and is now available to test!  Patch should now show: PTU-2109978.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Law and Criminality System
+- Weapon optics
+- Ship component degradation
+- Ship combat balance: Ship shields, missile damage, missile counter-measuring
+- Flight: Hover mode, acceleration control
+- Head tracking
+- P-72 Archimedes
+- Hacking gameplay
+- Pip accuracy and ship flight jitter
+- Vanguard Warden and Hoplite
+Known Issues
+- Textures will display across the visor on some helmets.
+- Depending on ship, sometimes when attempting to file an insurance claim the timer will either start with a long delay or never start at all.
+- The cargo lift elevator of the Reclaimer may move the wrong direction.
+- AI ships have an unintended wing wobble behavior.
+- Accepted combat assist beacons will sometimes not spawn in correctly.
+- If you are having issue with the Vanguards or the Prospector, try recopying your account to PTU.
+## New Features
+General
+- Added an option to use the "raw" head tracker output.
+- Added optional head "roll" for head tracking for seated position.
+Ships and Vehicles
+- Added "misfire" events to ship components.
+Ship components now have a chance to misfire.  Components will not misfire when in perfect condition.  Misfire chances increase with increasing degradation, damage, and heat.  Misfires can be minor visual blips, major with periods of reduced functionality, or critical temporary shutdowns.
+FPS
+- Added customizable weapon attachments: optics.
+Some FPS weapons can now be customized via various attachments.  Available attachments are red dot (1x zoom), holographic (3x), a telescopic (4x), and a telescopic (8x ).
+## Feature Updates
+Universe
+- Changed vehicle destruction from a misdemeanor to a felony.
+- Improved interdictions and environmental missions so they spawn closer to planetary bodies.
+Missions
+- Quality of life polishes for the hacking window and interaction.
+- Reduced hacking times for comm arrays.
+Ships and Vehicles
+- Improved atmospheric flight handling of the M50.
+- Updated neutron cannon VFX to match those of the neutron repeater.
+- Scanning while mining is now based on gimbal aim direction rather than fixed forward.
+- VFX and lighting update for Vanguard.
+- Reducing audio-driven camera shake on weapons.
+## Bug Fixes
+- Players should no longer respawn in their EZ hab after loading back in if they previously logged out in a bed on a planet surface.
+- Bed logout should consistently work.
+- Targeting pips should no longer continue to show and lock to screen after a weapon is destroyed.
+- Text color should now reflect the header color for chat settings.
+- The "warning, storage full" audio should no longer play when the player isn't attempting to fill their hold.
+- Collision sounds should now play when in EVA.
+- Comm array hack missions should be back in the mission broker.
+- Fixed head tracking being considered inactive when centered.
+- Fixed an issue where some MFD screens would be blank from the copilot or support seat.
+- Fixed missing information on the 19/6 MFDS.
+- Acceleration Axis (abs) binding should now work properly.
+- Interdictions should now occur as normal.
+- Fixed missing transit timers at Lorville gates 1, 2, and 3.
+- The Greycat should properly break apart when it explodes.
+- Escorted ships as part of missions should no longer just fly in circles.
+- Fixed an issue where a player's elevator can visibly pass through another's.
+- Fixed missing Joker Distortion Cannon impact VFX.
+- Fixed some odd head tracking angles.
+- Weapon rack usable added back to Hoplite interior.
+- Comm array missions should now be able to be completed correctly.
+- Fixing an invisible carousel selection issue on the character customizer.
+- Fixed for AR scan marker for contact blob remaining at origin position after contacts have vanished.
+- Mineable entities should now consistently complete their scans and display rock energy level.
+- Landing in the Avenger should no longer be subject to frequent ship shaking.
+- Cycling in and out of scan mode should no longer cause details to be lost until the player noses off and on again.
+- Fix for weapons and weapon sights lagging behind camera while in EVA.
+- Players on the Marine side in Echo-11 should no longer occasionally spawn into EVA.
+- The weapon ammo counter on the ArcLight pistol should now fit correctly.
+- Fixed desync that caused players to be seen incorrectly inside ship interiors.
+- Power draw on the mining laser for the Prospector should no longer cause it to shut down.
+- Counter missions for comm array hacking should now be generated correctly.
+- Ping scan blob VFX should now be present for single mineable entities.
+- Fixed missing moving part and ambient sounds on some ships.
+- VFX for fracturing rocks should now spawn at the correct locations.
+- Unlawful goods should now properly be generated during associated missions at the GrimHex delivery locker.
+- Hammerhead turret rooms should no longer lack atmosphere.
+- Ship weapons should now properly cease firing when they overheat.
+Technical
+- Fixed 6 server crashes.
+- Fixed 17 client crashes.

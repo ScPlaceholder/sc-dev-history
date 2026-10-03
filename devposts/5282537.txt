@@ -1,0 +1,68 @@
+## Star Citizen Patch 3.17.2w
+Alpha Patch 3.17.2w has been released to the PTU and is now available to test!  Patch should now show: VERSION 3.17.2-PTU.8166823.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Audience: All Backers
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 10,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+This PTU cycle accumulates many hotfixes that we have released onto the LIVE environment over the last week which includes many client and server crash fixes as well as new fixes to elevators not working properly, UGF and Siege of Orison AI spawning and behavior issues, and party launching issues.
+- General Bug Fixes and Stability
+- Siege of Orison Playtest Saturday for 6 hours starting at 1200 CDT | 1700 UTC
+- Ninetails Lockdown Playtest Sunday for 6 hours starting at 1200 CDT | 1700 UTC
+Known Issues
+- Mustang  Alpha - Vehicles / Interactions - Cargo Pod  Cannot open from the inside resulting in player becoming stuck
+- Aegis Gladius - ALL Variants - Stanton - Vehicles / Paint - Foundation Skin Cockpit's View is obscured
+- Players may have to restart the game after getting kicked to the main menu from a 30k server crash
+- Targeting - A ship's targeting pip may be missing or disappear for some players; they cannot be targeted when this happens
+- Multivehicle - Ships floating in the hangar when stored with the engines left on then retrieved again
+- Targeting - A ship's targeting pip may Ships / Character Animation - The player character arm will misalign when seated in ships, causing obstruction of HUD and view
+- Vehicle / Spawning - The Khartu-al spawns on the hangar floor sideways
+- Vehicles / Ships - Shields - Weapon fire penetrates shields when ships are moving
+- Vehicles / ShipRefuel - While docked to a Starfarer multiple vehicle types will continuously tilt instead of remaining stationary and snap away from the arm if any movement is attempted
+- Vehicles – The Argo Raft's elevator controls cannot be interacted with from either deck
+- Crusader Ares - Headlights on Ares are too dim to notice at reasonable range
+- Medical Beacon- Medical beacon does not complete mission/payment when player is brought back from incapacitation
+- Animation - Weapons - All weapons are held like a pistol whilst moving in EVA
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- Armor / Weapons / Utility items may disappear between sessions
+- Inventory - Weapons - Weapons looted directly equipped from containers/boxes are missing attachments
+- ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+- Missions - UGF / Bounty Hunter - Turrets around bunkers respawn very quickly, sometimes almost instantaneously
+## Feature Updates
+Locations
+- Snakepit Racetrack Audio Polish Pass
+Gameplay
+- Combat Assistance Beacon Balance Pass
+Additional balance pass to Combat Assistance Payments and adjusting probabilities of mission difficulties spawn frequency.
+## Bug Fixes
+- Fixed an issue where elevators around the PU were blocking entry and use (Please note there is also an additional failsafe that will reset an elevator if it detects them being stuck after about 60 seconds)
+- Fixed an issue causing UGF Missions AI to go missing and block missions from completing
+- Fixed a bug with the Search and Destroy mission where probes destroyed counter reports wrong if you destroy the probes before the mission says you located them
+- Ships should no longer get stored at Klescher upon completion of prison sentence
+- Fixed further issues with party launch not functioning as intended
+- Fixed a cargo hold area of space Derelict Reclaimers that allowed players to clip and see through the hull
+## Dynamic Event Changes and Bug Fixes
+We have made many changes to Siege of Orison mission flow since releasing to LIVE. Some of these changes were hotfixed onto the LIVE environment but many you will see when we run Siege of Orison this weekend on the PTU.
+- You should now see optional objects for the AntiAir that should complete if you Destroy the turret or Disable the islands IFFI
+- Fixed an issue where rewards where not being given for each action
+- Upped the reward for each boss killed
+- Added a reward per AntiAir control regained
+- Players will no longer get a double trespassing crime when the mission is over if you have not left the island (This is now failure to comply)
+There are now 4 stages to the end of mission, the 3 original timers on the last one you get the restricted area warning, you then have an extra 15 mins to leave
+- The mission will end for people not in the zone when the final objective is finished
+- If a player leaves the zone the mission will finish for them
+- Anyone in the mission area when the final timer goes will be arrested but before hand i will complete the mission
+- If the transfer succeeds the next run of the mission (without shutting the server down) the hack should no longer be broken
+- When you destroy ships it will now Play the voice line when you hit a certain percentage of ships destroyed
+- If all types of ships are reduced to 0 it should fail that objective (e.g. if you destroy all the starlifters)
+- You shouldn't hear random dialogue when you are not in the event anymore
+- Added Security AI around the Solanki Shuttle and additional cover
+- Fixed an issue where a boss could spawn with the wrong datapad
+## Technical
+- Fixed 1 Client Crash
+- Fixed a Backend Service Crash

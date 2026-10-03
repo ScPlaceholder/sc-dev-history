@@ -1,0 +1,47 @@
+## Star Citizen Patch 3.13.0l
+Alpha Patch 3.13.0l has been released to the PTU and is now available to test! Patch should now show: VERSION 3.13.0-PTU.7274064.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Cave Entrances
+- FPS Cave Missions
+- Ship to Ship Docking
+- Signed Distance Fields (SDF) Shield Tech
+- Reputation UI
+- New Quantum Sensitive and Timed Delivery Missions
+- Pushables T0
+- Mounted Guns
+- Force Reactions - Staggers
+- Cyclone MT
+Known Issues
+- Players cannot use the Pitch, Yaw, or Roll controls whilst flying the 100 Series
+- Players may get a random Crime Stat when Killing a Bounty
+- ASOP displays as "unable to spawn at this time" and could fine the player for spawning a ship with one already on the pad
+- Constellation Ship Elevators lose collision when snub ship is undocked
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Character will suffocate for a few seconds whenever you change helmet
+- Weapon icon, Ammo count and Grenade count are missing from the user HUD
+- Leaving a trolley in a door way will clip through the floor erratically and can kill players
+- Bright / Opaque fog volume encompassing cockpit of ships at Lagrange point / Near gas clouds
+- Client can crash if player is idle and tabbed out of the game while at Port Olisar
+## Bug Fixes
+- Fixed an issue causing massive log spam while FOIP camera is enabled
+- Alt-tabbing out of the game and back in, when it is set to fullscreen, should no longer cause the image to become frozen
+- Blowing up enemy Valkyrie bounty should no longer sometimes give players a crimestat
+- Ship impound should no longer start immediately after summoning them
+- Prowler wing "feathers" should now have SDF shield coverage
+- Cutlass Red & Blues Airlocks should now be able to be opened
+- The '100% fuel' announcement should no longer repeat until quantum fuel is refilled when refuelling with hydrogen full
+- Fixed an issue causing some characters on the mobiGlas Reputation App to have a very low texture resolution
+- Upon arrival at ECN alert mission location the mission should now correctly start and spawn NPCs
+- Fixed an issue causing a characters rotational step animation is missing after walking or sprinting forward with MedPen in hand
+- Fixed multiple textures on the Reclaimer BIS Edition showing as ReplaceMes, preventing the player from seeing out of the ship
+## Technical
+- Fixed 3 Client crashes
+- Fixed 4 Server crashes

@@ -1,0 +1,15 @@
+## Star Citizen Patch 3.2.1g
+Alpha Patch 3.2.1g has been released to the PTU, and is now available to test!  Patch should now show: PTU-832719.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- Hornet ball turrets do not align with other weapons and cause reticle aim to break when using gimbals. W/A: Remove the ball turret and/or replace with a flashfire mount.
+- There is no way to disable turret aim assist or gyro-stabilization when a target is selected. W/A: Temporarily hold interaction mode to disable them if needed for out of combat movement.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- Turret combat against AI and players.
+## Feature Updates
+## Bug Fixes
+- Updated the aim position on turrets to avoid it attempting to point into the direction the ship is traveling from and avoid gyro-stabilization activating when not targeting a ship.
+- The turret guns on the Caterpillar should now have proper weapon size restrictions.
+- Lead pips should once again activate properly.

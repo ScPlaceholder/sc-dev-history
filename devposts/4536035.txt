@@ -1,0 +1,27 @@
+## Major Bug Fixes
+- Fixed an issue causing some players to repeatedly encounter 30009 errors when attempting to join the PU
+- Fixed an issue causing less than the intended number of trees to appear around microTech
+- Ships on landing pads should no longer end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+- Quantum paths should no longer lead you under terrain at Area18 and other locations causing you to explode
+- Ships on landing pads should no longer end up in an "unknown state" for location after the ship stored
+- Using the inverted FPS pitch mode will no longer invert the interaction mode cursor
+- Fixed an issue that was causing Bartenders to never interact with players
+- Prison escapees should no longer be sent back to prison upon death if they are in uncontrolled space
+- There should no longer be two Inner Thought Prompts for Opening and Closing the Pilot Canopy in multiple ships
+- Fixed an issue causing aUEC and unequipped items to randomly disappear from player's inventories
+- There should no longer be a color difference between player character heads and bodies
+- Fixed an issue causing ASOP terminals to not function on the first interaction
+- Fixed an issue causing players to sometimes take collision damage when entering ships
+- Asteroid FPS Deposits should now be able to be scanned
+- FPS AI should no longer continue to shoot through other enemy AI while attacking a player
+- New Deal Ship Shop stairs leading down near the Hammerhead should no longer be missing collision
+- Players should no longer be able to auto dock a parasite ship into the Constellation from above which would cause it to collide into it
+- Multiple player checkpoints should no longer display at the same time in Arena Commander Race modes
+- Trolleys found in Area18 hangars should no longer be clipping through the floor, removing functionality
+- Fixed an issue with character Resets on accounts with a large number of items having multiple in-game issues
+## Technical
+- Fixed 6 Client crashes
+- Fixed 5 Server crashes
+- Backend service timeout fix
+- Server and Client Performance Optimizations
+- Player character networking optimizations to help reduce players sliding and teleporting while on foot

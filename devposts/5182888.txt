@@ -1,0 +1,4 @@
+The physics team has provided fixes this week (don't hold your breath!) but it is unlikely we will ship them with 3.17.2.
+The changes contain a lot of low level physics code changes and experience tells us that most of the edge cases take 6 to 8 weeks to be found. Other than that they come at a performance hit specifically for the server ... that is not a problem in the main dev stream as it has tons of other optimizations on collision code. However those changes are not in 3.17 either. So in all in all it'd be a pretty volatile change and the physics team does not feel it is ready for the live environment.
+What we will do though is test those changes in ETF environments soon to get a first round of feedback. But everybody else has to wait at least (!) for 3.18 as this gives QA enough time to deep test all possible scenarios surrounding collision detection.
+Hope that makes sense.

@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.7.0n
+Alpha Patch 3.7.0n has been released to PTU, and is now available to test!  Patch should now show: PTU-3180042.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+We have altered the way we report known issues so that the list is more in depth than before.
+Testing Focus
+- Banu Defender
+- Caves
+- FPS mining, harvesting, and personal inventory
+- ATC crimestat restrictions
+- Ship rental system
+- Vanguard variants
+- The Good Doctor Star Marine map
+- Proximity Assist and Manual VTOL
+- Pirate Swarm Updates
+- New ship weapon Kroneg FL series
+- New FPS weapon attachments
+- Character Customizer v2
+- Mission sharing, mission rewards, and AI service beacons
+Known Issues
+- Closer range FOIP animations are not transmitting to other players.
+- REC rentals for Star Marine fail to process but still subtract REC.
+- In Star Marine's Demien Comms enemy indicators can sometimes be seen through walls.
+- Players may experience a stall when loading and firing weapons in Star Marine.
+- AI ships can get stuck and not continue on their route.
+- NPC beacons will sometimes display an incorrect distance.
+- Attempting to quantum travel to destinations from orbit of ArcCorp or its moons may result in the player colliding with the surface.
+- Ships can spin excessively out of control when their wing is clipped.
+- Landing illegally and having your ship despawn while a mission box is inside will break mission progress.
+## Feature Updates
+Gameplay
+- Toned down break up VFX for successful FPS mining.
+- Lowered the density of surface FPS mineables.
+- Updated some kiosk manufacturer logos.
+## Bug Fixes
+- The snoopy cap should no longer appear as a hair option in the character customizer.
+- The 350r's bed should no longer occasionally be detached.
+- OM markers should now appear correctly around planets and moons.
+- Linked spline jumps should no longer cause one party member to teleport to the center of the universe.
+- Player heartrates should no longer get stuck at high rates.
+- Improve what ships spawn for bounties to fix ships failing to spawn at mission destination.
+- Changing items and armor in the Star Marine customizer should no longer occasionally fail.
+Technical
+- Fixed a memory issue that could cause audio to stop playing after awhile.
+- Fixed a server crash.

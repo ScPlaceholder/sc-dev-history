@@ -1,0 +1,45 @@
+## Star Citizen Patch 3.16.1b
+Alpha Patch 3.16.1b has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.16.1-PTU.7926273.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Audience: All Backers
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Derelict Spaceships V1
+Known Issues
+- It is possible that some servers may stop updating their mission offerings. If the issue persists, try leaving the server, waiting a few minutes and rejoining the PU, or change region.
+- Attempting to log back into a ship bed may result in a long loading screen before being sent back to the Main Menu w/ Error 30009
+- Players will experience positional desync with one another after they have died and respawned
+- Many mineable asteroids can’t be scanned
+- Spawn closets do not recognize unconscious AI and close the door on them possibly leaving mission critical AI unreachable
+- A Shattered Large FPS Deposits base displays a Collectable Diamond Icon
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- Logging out from the Reliant ship's bed and back in will cause the Reliant to be in flight mode and the player is stuck inside the ship sleeping area
+- Cannot Repair, Refuel, Restock at LEOs
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+- Ship may despawn after player death instead of staying at it's last location
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+## Feature Updates
+Gameplay
+- Derelict Spaceships Polish pass
+Added additional mines around derelict puzzles. Fixed various issues around derelicts including fixing multiple visarea issues, collisions and locations where players can get stuck, fixing some physgrids, fixing skirts and debris.
+Weapons and Items
+- Reduced Mustang Delta Rocket Pod Damage
+## Bug Fixes
+- Pressing and holding F to "Freelook" should now work when piloting the Nox and prevents start up of vehicle
+- Freelancer Variant loadouts should now be able to be modified
+- Fixed multiple shield holes in the Aegis Sabre
+- Destroying the tail of the Redeemer should no longer break apart the entire exterior without killing the ship
+- Fixed an issue causing Grav-Lev vehicles to experience oscillating / bouncing when the client framerate drops to 15 or lower
+- Valkyrie bubble turret MFDs should no longer be difficult to interact with due to overriding Inner Thought prompts
+- Fixed an issue that allowed players to equip rocket pods onto other ships that are not intended
+- Mustang Delta Rockets should no longer ignore shields and destroy components
+- Fixed multiple visarea issues on closed doors on the upper deck of the 600i ships
+- Fixed an issue causing the Area18 Hospital elevator "Open Door" interaction to not function
+- Fixed issues with external atmospheric audio bleeding into buildings
+## Technical
+- Fixed 2 Client Crashes

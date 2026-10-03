@@ -1,0 +1,6 @@
+Hi MrBobarian,
+Generally speaking the wear and material blending is driven through either unique or tiling texture masks, depending on the application. We don't have any procedural tech for it as such.
+For props we use a texture we call WDA, this stands for Wear(red), Dirt(green), Ambient Occlusion(blue). The texture's red, green and blue channels are split to do each job. The wear values blend between two tiling materials, for instance the base material could be a painted metal and the wear material a bare metal. Dirt overlays a flat colour specified in the material and Ambient Occlusion is precisely that, baked AO.
+Depending on the size and type of prop we will use either a unique unwrap, a tiling panel material or generic tiling wear/dirt. We also use the object's vertex colours as a mask on top of the generic texture. These values are then hooked up to sliders in engine that increase and decrease their intensity based on a specified ramp.
+I hope this helps clear things up for you!
+- Cory

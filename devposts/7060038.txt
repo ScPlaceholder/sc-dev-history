@@ -1,0 +1,74 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9256674.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Evocati
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of Evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.24.0 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+For tonight's publish, Please everyone set your initial spawn to Area18 for the first couple hours for stress testing!
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+Not Ready for Testing/Feedback
+- Cargo Commodity Rebalance
+- Dynamic Event: Blockade Runner
+## Known Issues
+Please avoid Lorville in this publish due to large visarea issues around elevators
+- PU - UI - Item Bank / Storage Access - Search - The search bar button in the Item Bank terminal does not function when selected
+- PU  - New Babbage - Hangar Elevator - Party leader's hangar is the only  option that appears in a hangar elevator's floor selection, even if a  member has a ship retrieved in their hangar
+- PU  - UI - Kiosks / Terminals - Global Chat - Pressing Enter when  interacting with any terminal opens the Global Chat causing player to  lose game interaction
+- PU  - Stanton - GrimHEX - Locations - Transit - Hangar Elevators - Hangar  Instance elevators can be called and arrive at the current floor but the  doors do not open
+- PU - Stanton - Locations / Vehicles / ATC - Ground Vehicles do not spawn at the allocated garage location
+- Stanton - Locations / Performance - Item Bank / Freight Elevator - Frame rate will dramatically drop if players own many items
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP Terminals fade to black when accessed after delivering a vehicle
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- Robert Space Industries - PU - Vehicles/EMP - unable to activate EMP
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multiweapon - Backpack Reloading - Sometimes weapons fail to reload if reloaded from Backpack
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Features & Gameplay
+Gameplay Updates
+- Persistent Hangars
+Completed work for Shard Stowing of Persistent Hangars. This will allow personal hangars to save their state when moving between shards and crash recoveries.
+- Increased the grace period that players are allowed to tow an owned vehicle to 10 seconds before they receive a Crime Stat in order to allow them to remove blockages
+## Bug Fixes
+- Fixed - PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (STARC-118808)
+- Fixed - PU - Hangar/teleportation - After a player in a ship flies or quantum jumps an impound/teleportation event occurs without a fine and returns the player to an ASOP lobby (STARC-120436)
+- Fixed - PU - Stanton - ATC / Hangars - ATC Gateway queue message will stack on players in the same instanced hangar trapping players in hangar (STARC-119660)
+- Fixed - PU - Personal Hangar - instance transition - Transition between instance hangar and PU is out of order Stations and rest of PU are out of sync (STARC-120102)
+- Fixed - Stanton - Shopping / Selling - Cargo - Unable to sell from an Auto-Load order (STARC-119391)
+- Fixed - PU - Stanton - Locations / Transit - Instanced Hangars / Personal Hangars - Render Culling - Camera cannot see elevator zone / visarea issues inside elevators (STARC-118748) (Fixed everywhere but Lorville)
+- Fixed - Multivehicle - PU - Vehicles - When docking or retrieving a ship to a docking port at a station, the docking arm will not extend (STARC-86292)
+- Fixed - PU - Locations - Orison / Lorville / Area18 - UI - Elevators / Transit / Hangars - Too long of names and Extra Large Hangars text will overlap its intended UI space for the Elevator panel when calling for a Hangar
+- Fixed - PU - Actor - Interactions Network Optimization - Doors - Automatic doors fail to open when in proximity (STARC-119340)
+- Fixed - PU - Locations - Outposts - Freight Elevator - Tractor beam is not usable inside the freight elevator area (STARC-119105)
+- Fixed - PU - Multiweapon - Backpack Reloading - Sometimes weapons fail to reload if reloaded from Backpack (STARC-112052)
+- FIxed - PU - Menu - Party Launch Failed: Server Full Error appears for large parties (STARC-103898)
+- Fixed - Anvil Valkyrie - PU - Vehicles / Components - Turrets / UI - mobiGlas - VMA - The S3 nose turret on the Valkyrie still restricts to S2 guns despite having S3 guns equipped by default (STARC-116640)
+- Fixed - PU - Stanton - RSI Constellation Series - Vehicles / Docking - Snub Fighter cannot request docking clearance (STARC-86519)
+- Fixed - PU - UI - Social - HUD - Visor & Lens - Direct Message Chats after Player calls cannot be deleted (STARC-93231)
+- Fixed - PU - Missions - Cargo Hauling - UI / HUD - The Objective UI appears twice when the mission is accepted
+- Fixed - Manticore Helmet - PU - Actor / Armor - Manticore Helmet grants additional equipment slots (STARC-115593)
+## Technical
+- Fixed 10 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed a Hybrid Crash

@@ -1,0 +1,13 @@
+How will gravity work as game mechanic? Will there be variances in gravity depending on the body providing it? So different strength depending on planet/moon size.
+In Star Citizen we have an system called the 'Zone System.' It provides a lot of functionality, but for this particular case it is responsible for the coordinate/grid system.
+The physics grid ( owned by the zone ) allows us to define a custom influence of gravity and how it is applied to objects.
+Planets have a predetermined gravity value which falls off the further the object is away from the center.
+Ships on the other unhand have a constant gravity value relative to the inside.
+We can even change the strength of gravity in each grid at run time.
+Will there be such thing as escape velocity (can I launch my spacebike of a planetoid if the escape velocity is low enough?)?
+Yes
+Will differences of gravitational acceleration occur in the same sphere of influence?
+An object, including the player, can only be in one zone at a time.
+You can be walking on the ceiling of the ship ( Player in the zone of the ship ) while the ship is in free-fall ( Ship in the zone of the planet ).
+Will I be able to adjust the gravity in my ship?
+One day.

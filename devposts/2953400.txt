@@ -1,0 +1,4 @@
+Found out what it was. While I cleaned out a lot of unused code I also removed a line that switched the condition to swap the Vjoy and relative mode when a mouse is used. So what actually happened is while the relative mode was still working, it was added on top of the Vjoy. The mix wasn't on purpose, it's entirely unusable ... it just went unnoticed for a couple of months as not a lot of people are using relative mode. So just a small bug really ... that's why you guys are testing.
+EDIT: I just submitted the change ... I do not know if it's in the next build, but it will be in the build after that. Please test it thoroughly and let me know if anything feels off.
+EDIT2: Deploying the fix might take a bit longer due to some branching issues on my side.
+EDIT3: The fixes will NOT be in the next build but the one after that!

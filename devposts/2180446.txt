@@ -1,0 +1,72 @@
+## Star Citizen Patch 3.5.1
+Alpha Patch 3.5.1 has been released and is now available.  Patch should now show: LIVE-1835013.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+1835013 Update:
+- Fix for server performance slowdown.
+Known Issues
+- NPC assist beacons no longer function correctly if the server has been up for awhile.
+- Bed logout doesn't work on planetary surfaces and may be inconsistent elsewhere.
+- AI and player ships can sometimes appear to jitter or vibrate.
+- CPU spikes (observed as a client hang) may be observed at Lorville.
+## New Features
+General
+- Added ship customization for the 300 series.
+Ship customization is available on the website. When test-pledging for a new ship with customization options available, there will be an additional button on the test-pledge store page to allow a player to apply their personal touches immediately after completing the test-pledge. If you already own a customize-able ship, there will be a customize button on the test-pledge when viewed in the "My Hangar" interface. For this initial rollout, you will be able to customize the 300 series hull color, cockpit finish, yoke, seat (model, material, and finish), bedding, decorations/flair, and select from various component packages (powerplant, cooler, weapons, ect).
+Ships and Vehicles
+- Ship loadout (components, weapons) modifications are now restored to the ship when filing an insurance claim.
+## Feature Updates
+General
+- Updated menu button background videos.
+Universe
+- Audio ambience pass for Echo-11.
+- Updates to glass reflectiveness around Area18.
+- Expanded the available locations where unrefined Altruciatoxin can be sold and purchased.
+- Added several new ship items from the customizer (powerplants, coolers, shields) to shops around the verse.
+- Added new buildings, lights, decals, and updated LODs at Area18.
+- Lowered box carry position for female characters to allow them to better see over.
+Ships and Vehicles
+- Polish to 300i audio.
+- Retuned 300 series flight behavior.
+## Bug Fixes
+- Restricted area audio alarms should no longer keep playing continuously.
+- Delivery missions should no longer be occasionally withdrawn upon delivery.
+- Players should no longer occasionally load into the game before the ground, causing them to fall to their deaths.
+- Some ships should no longer spawn partway into the ground, damaging them.
+- Fixed areas around Area18 that had variable gravity.
+- Seize and destroy narcotics should no longer occasionally fail when destroying the drugs.
+- Guards should no longer stay hostile after killing the player.
+- Fixed an issue causing ships to sometimes spawn in a different location than listed on the ASOP terminal.
+- Fixed broken kiosks in Area18 Casaba Outlet.
+- Improvements to AI ship flight to reduce wing wobble habits.
+- The downed satellite (Darneely) mission should now properly progress.
+- Turrets and FPS AI should no longer respawn if one player in a group dies while doing a related mission.
+- Fixed an issue on one of the underground facilities in Lyria which was missing ground collision.
+- Players should no longer be able to eject from the Hawk in Astro Armada.
+- Switching genders in the character customizer should no longer occasionally cause a skin tone mismatch.
+- Arena Commander and Star Marine rentals should no process correctly.
+- Added missing impact effects for the Coda Pistol.
+- Missiles should now consistently do damage.
+- Fixed some issues that prevented Altruciatoxin showing in cargo after purchase.
+- Purchased cargo should now correctly appear in the hold of the Avenger Titan.
+- Fix for missing audio ambience at Lorville security/customs.
+- Fix for scanning loop retriggering repeatedly when mining.
+- The steal stash mission marker should no longer disappear if the user dies during second objective.
+- There should no longer be missing shadow for some graphical settings, causing a "film grain" effect.
+- Ruto's maintenance mission should now correctly update.
+- Players should no longer get "near restricted area" UI warnings when not near a restricted area.
+- Delivery lockers at Riker Memorial Spaceport should now consistently spawn boxes.
+- Fix for glasses that disappear when dropped at the G-Loc bar.
+- Players should no longer be able to bypass transit system collision to get out of the train in the city and walk around.
+- Black box recovery missions should no longer be withdrawn as the player is flying away with the box.
+- Vehicles should no longer bounce and clip through ship lifts.
+- Hits should now properly register and pips should be relative accurate.
+- The 300i should should no longer experience improved acceleration at certain damage states.
+- Players should no longer dip between the transit platform and the train at Lorville, occasionally causing injury or fall through.
+- The doors on the Caterpillar should now be properly locked.
+- Buying commodities at an outpost should now change the inventory level.
+- Fixed an issue where mineable deposits would show up if the player was less than 1000 meters away when scanning.
+- Destroyed ships are now read only in the VMA, including in the hangar, preventing them from going into a bad state.
+- Passengers on other ships should now have their spawn location saved upon arrival at a new station.
+Technical
+- Fixed 3 server crashes.
+- Fixed 3 client crashes.

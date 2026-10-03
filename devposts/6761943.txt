@@ -1,0 +1,82 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9142594.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 1
+Server Info: US/EU - EPTU Channel - PU/AC - Replication Layer Enabled/Recovery Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+- Stability/Performance/Bug Fixing
+- Master & Operator Modes: Vehicle Combat and Experience
+- Vulkan Renderer (Off by Default in Graphics Settings)
+- Full Character Customizer Revamp
+- mobiGlas Rework / Starmap / Interior Map / Minimap
+- Distribution Centers
+- EVA T2
+- New Loot Screen / New Visor / Lens
+- Full FPS Combat Refactor / Dynamic Crosshair
+- Backpack reloading / Ammo repooling
+- Physical Shopping UI
+- New Arena Commander Features: Engineering Game Mode, Grav Royale, New Race Tracks, and New Pirate Swarm Final Wave
+Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs.
+Distribution Center missions sometimes show the wrong location markers inside so might be difficult to know exactly where you need to go to.
+Server and Client Performance is something we are constantly monitoring and working on fixes and changes for 3.23. Currently we are seeing quite a few issues that are reducing the experience and looking into these.
+- PU - Vehicle Purchase Kiosk - Shopping / Locations - Unable to purchase vehicles from kiosks
+- PU - Stanton - Hurston/Crusader - Lorville/Orison - Locations / Transit - Lorville/Orison transits are off set from the station doors causing visual and collision issues
+- PU - Shopping / Art / UI / Locations - Weapon display in stores are rotated 90 degrees
+- PU - Multiple Locations - Locations / Art - GrimHEX and Kareah airlocks are missing breathable air and doors
+- Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Character - HUD / UI - No body marker after death
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+- PU - Terminal - Locations / Interactions / UI - Unable to interact with the Medical Insurance Terminal to manage regeneration
+- PU - UI - NikNax / VLM - Liveries - All Liveries are missing volume information in NikNax and Vehicle Loadout Manager
+- Front end - UI / Locations - Inventory - Entitlement - Primary Residence location can be missing from the front end
+- AC - Front-End - Engineering: Duel - UI / Lobby / Menus - Missing ship model on lobby screen
+## Features and Gameplay
+Gameplay
+- Operator Mode / UI Updates
+Moved default binding to enable quantum drive to Left Mouse Button. Long press for swap master modes (B). Optimised pitch ladders and disabled them and top greebles when mobiglas is open or in a ship seat. Updated control hints to prompt to change Master Mode (if not in the correct mode when prompting to change Operator mode). Ensured QS and PIT hints were applied for ships. Fixed tractor beam fire mode prompts only showing.
+- mobiGlas Text Readability and UI Polish Pass
+- Included Minimap Additions for GrimHEX
+- Modifying AI Pilot traits to lower difficulty of early game bounty mission AI
+- Changed KLWE mass drivers & BANU Singes into Charge Cannons with a full rebalanced on Damage, Speed, Lifetime, and Mass
+- AC Update: Added ability to mute/unmute players via Scoreboard for VOIP
+- AC Update: Removed Auto-Invites for Parties
+Ships and Vehicles
+- Updated 400i, Syulen, Hull-C, and Carrack External Elevator Panels to new Standard
+Core Tech
+- Vulkan Renderer (Beta)
+Vulkan Renderer has now been enabled in Star Citizen. This new renderer will be off by default but has been added to the Graphics settings menu. In this first release, the focus is on hardware/driver issues, stability, and any major performance issues. At this point we do not expect Vulkan to be outperforming D3D11 on the CPU usage due to the fact we haven't enabled multi-threading of the rendering submission yet, but do expect CPU performance to be within a 30% margin. Once we have multi-threading enabled we expect a significant net-gain. On the GPU side we should be closer to parity.
+Performance improvements and stability improvements will be on-going throughout 3.23, with the aim to make Vulkan the default and more performant implementation in a following release. In the meantime we appreciate any and all feedback towards this.
+Additionally, you may see a few new folders now in Star Citizen's appdata. These relate to our new Graphics Settings file (just includes the Graphics Renderer setting for now), Vulkan's Shader Cache, and Vulkan's Pipeline Cache. HDR will be available in the next build but for today's release, SDR will be the only option.
+Please also update your Graphics Drivers to their latest versions as this can enable certain missing functionalities required for our Vulkan implementation to function correctly.
+- Planetary Weather Performance Pass
+Optimizations to default planetary ground storm effects, including removing settings that were forcing the lods to be non-deterministic. Updated Hurston wind to increase chances of non-wind durations.
+- Adjusted Transit System's Safe Teleport Points in Orison's August Dunlow's Ext Transit so that the player lands on the space port platform when the server recovers from a crash
+- Nvidia Shadowmap Memory Performance Optimizations
+- Visarea Performance Optimizaitons
+- Physics Thread Performance Optimizations
+- Water Performance Pass
+## Bug Fixes
+- Fixed - PU - UI - mobiGlas - mobiGlas UI is misaligned
+- Fixed - PU - Stanton - UI - Mobiglas - MAPS screen cannot be closed by [X] or <F2>
+- Fixed - PU - Stanton - Landing Zone (LZ) - Locations / AI - Social AI present in some areas within Landing Zones remain idle in their spawn closets
+- Fixed - PU - UI - Game Settings - Dynamic Crosshair Game Settings Placeholder Text
+- Fixed - PU - Armistice zone broken after Server Crash recovery
+- Fixed - Anvil Hornet Series - (All Varients ) - PU - Vehicles / Components - Turrets - The Ball turret is grey art with no texture
+- Fixed - AC - SHIPPING - Front end - AC menus - player is returned to main menu after completing a match
+- Fixed - PU - Stanton - NPE - Mission Content / mobiGlas / UI - The NPE is using an incorrect loadout
+- Fixed - ARGO RAFT - PU - Vehicles / Art / GFX - Visarea - There is a visarea issue in the restroom and a portal issue from the airlock area in the RAFT
+- Fixed - Banu Defender - PU - Vehicles / Art / Graphics - VisArea issue at pilot and co-pilot doors
+- Fixed - Anvil Carrack - PU - Vehicles / GFX - Visarea - There are several visarea issues seen in hallways and hangar
+- Fixed - PU - Stanton - Covalex Shipping Hub Gundo - Locations / Art - Interior of Covalex Shipping Hub Gundo is misplaced
+- Fixed - PU - Stanton - Distribution Center (DC) - Locations / Mission Content / Design - Missing Person mission corpses spawning inside the walls
+- Fixed - Vulture Missing FLT Operator Mode
+- Fixed multiple optics range and Zero distance readouts having an incorrect screen positioning
+## Technical
+- Fixed 10 Client Crashes
+- Fixed 6 Server Crashes
+- Fixed Multiple Server Deadlocks

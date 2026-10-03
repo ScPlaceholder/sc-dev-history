@@ -1,0 +1,42 @@
+## Star Citizen Patch 3.13.0n
+Alpha Patch 3.13.0n has been released to the PTU and is now available to test! Patch should now show: VERSION 3.13.0-PTU.7286501.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Cave Entrances
+- FPS Cave Missions
+- Ship to Ship Docking
+- Signed Distance Fields (SDF) Shield Tech
+- Reputation UI
+- New Quantum Sensitive and Timed Delivery Missions
+- Pushables T0
+- Mounted Guns
+- Force Reactions - Staggers
+- Cyclone MT
+Known Issues
+- Visor chat sometimes is unavailable on the HUD for the player
+- Players may get a random Crime Stat when Killing a Bounty
+- Placing a trolley under a large elevator and calling it can damage the ship with colliding
+- After (un)docking the merlin, no other player can undock it
+- The name of the ship is not displayed via vehicle canvas after insurance claim
+- The customizable nameplates do not appear to be visible anywhere on the Carrack Expedition
+- ASOP displays as "unable to spawn at this time" and could fine the player for spawning a ship with one already on the pad
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Weapon icon, Ammo count and Grenade count are missing from the user HUD
+- Leaving a trolley in a door way will clip through the floor erratically and can kill players
+- Bright / Opaque fog volume encompassing cockpit of ships at Lagrange point / Near gas clouds
+## Bug Fixes
+- Space stations at Lagrange points should no longer take several minutes to stream in
+- Large rocks on Daymar should no longer be missing collision
+- Fixed an issue that could cause players to drop weapons on the ground when swapping weapons
+- Players should no longer be able to Equip the Misc Prospectors Mining Laser Gimbal Mount and the Mining Laser onto other Ships
+- Reputation favorites should now be saved when swapping between tabs in the mobiGlas
+## Technical
+- Fixed 1 Client crashes
+- Fixed 2 Server crashes

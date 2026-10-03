@@ -1,0 +1,80 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9139742.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 1
+Server Info: US/EU Server Regions - EPTU Channel - PU/AC - Replication Layer Enabled/Recovery Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+- Stability (Main Focus)
+- Master & Operator Modes: Vehicle Combat and Experience
+- Full Character Customizer Revamp
+- mobiGlas Rework / Starmap / Interior Map / Minimap
+- EVA T2
+- New Loot Screen / New Visor / Lens
+- Full FPS Combat Refactor / Dynamic Crosshair
+- Backpack reloading / Ammo repooling
+- Physical Shopping UI
+- New Arena Commander Features: Engineering Game Mode, Grav Royale, New Race Tracks, and New Pirate Swarm Final Wave
+Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs.
+Distribution Center missions sometimes show the wrong location markers inside so might be difficult to know exactly where you need to go to.
+- PU - Vehicle Purchase Kiosk - Shopping / Locations - Unable to purchase vehicles from kiosks
+- PU - Stanton - Hurston/Crusader - Lorville/Orison - Locations / Transit - Lorville/Orison transits are off set from the station doors causing visual and collision issues
+- PU - Shopping / Art / UI / Locations - Weapon display in stores are rotated 90 degrees
+- PU - UI / HUD / Interaction - Mouse cursor is invisible while using interaction mode, mobiGlas, and shop kiosks
+- PU - Stanton - Hurston - Lorville - Transit / Locations - Trains can be missing for Central Business District from Leavsden Station
+- PU - Multiple Locations - Locations / Art - GrimHEX and Kareah airlocks are missing breathable air and doors
+- Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Shopping - When attempting to purchase a ship, the value is 0 and the transaction will fail
+- PU - Stanton - Character - HUD / UI - No body marker after death
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+- PU - Terminal - Locations / Interactions / UI - Unable to interact with the Medical Insurance Terminal to manage regeneration
+- PU - UI - NikNax / VLM - Liveries - All Liveries are missing volume information in NikNax and Vehicle Loadout Manager
+- PU - Performance - Inconsistent frametimes / stuttering during high concurrency due to DatabaseUnloading
+- Front end - UI / Locations - Inventory - Entitlement - Primary Residence location can be missing from the front end
+- AC - Front-End - Engineering: Duel - UI / Lobby / Menus - Missing ship model on lobby screen
+## Features and Gameplay
+Characters
+- Updated Character Animation on Character Customizer Review Page
+AI
+- AI Flight will now Use an effective weapon range ratio to determine when to fire
+Gameplay
+- Further mobiGlas UI Polish
+- Updated visuals of the Visor minimap routing UI and added icons.
+- Flight: Added additional buttons for throttle trim
+- Updated Vehicle entrance and Unattended vehicle markers
+- Added bindings to tell whether you are in a turret control (manned, remote, etc.)
+- Further Thruster Water Interaction Tuning
+- Gave Water Interaction Limits to Explosions
+- Moved button binding for cargo docking to ralt+n
+- AC: Allow Power Distribution in PreGame
+Weapons and Items
+- Adjusted Behring smg, Gemini SMG, and Ravager Shotgun recoil
+- Reduced Behring, Gemini, and Ravager shotgun damage
+## Bug Fixes
+- Fixed - Menu - Character creator - not able to accept character creator
+- Fixed - Starmap - Markers are inconsistently interactable
+- FIxed - PU - mobiGlas - Some notifications are appearing blank
+- Fixed - PU - Cannot accept shared mission due to incorrect mission invite notification
+- Fixed - PU - UI / mobiGlas / commLink - CommLink Tab is is blank and does not display any information when opened with keybind F11
+- Fixed - PU - UI / Visor / Chat - Visor chat only exits focus with ESC key and "X" on widget
+- Fixed - PU - Stanton - Yela - Landing Zone (LZ) - Grim HEX - Locations / Transit - Elevators between the Lobby and Main Concourse are missing at Grim HEX
+- Fixed - PU - Locations - Klescher Rehabilitation Facility / Everus Harbor - The loading screen after being sent to or from Klescher does not go away
+- Fixed - PU - Stanton - UI - Mobiglas - VEHICLES panel in HOME screen does not show any ship data
+- Fixed - PU - Actor - Prone - Player character can spin rapidly when exiting prone
+- Fixed - PU - Stanton - Actor / Weapons - Incorrect ammo count after repooling is interrupted
+- Fixed - PU - Stanton - Actor / Weapons - Repooling with high quantity of magazines goes on indefinitely
+- Fixed - PU - Weapons / Controls - Pyro Multi-Tool - Mouse sensitivity increases by lifting vehicles with the Multi-Tool depending on the weight
+- Fixed - PU - Stanton - Animation - Shopping / Interaction - Rotating the item in Inspect mode would highlight nearby items
+- Fixed - Aegis Hammerhead - PU - Vehicles / GFX - VisArea - There are several visarea issues throughout the Hammerhead
+- Fixed - Code - AI - FPS - Death and Pain wildlines not working in PU
+- Fixed - AC - Engineering Squadron Battle - When opposing team ends the game by suicide they are awarded the victory
+- Fixed - AC - Crusader A2 Hercules Starlifter - AC - Engineering Game Modes - UI / Vehicles - All items can be powered simultaneously
+- Fixed - AC - Endless Vanduul Swarm - 2953 Vanduul Aggressor Badge is not unlockable
+- Fixed - AC - Resource Network - Ships / Vehicles / Game Code - Only the 1st Fuse Slot in a Fuse Box affects Power Flow
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 4 Server Crashes

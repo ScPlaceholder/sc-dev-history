@@ -1,0 +1,3 @@
+The rain/snow on the visor/canopy takes your velocity, wind and gravity into account. Internally the simulation is done on a flat plane rather than curved surface, so the direction of travel won’t always be a perfect match on some edge areas on the glass, but this approach allows us to increase the quality and performance significantly. We use the RTT system in combination with the GPU particle system, and the artist did an awesome job with the melting snow effect.
+I don’t know the specifics of the ship handling and IFCS system but I believe the wind is taken into account and will effect handling.
+Ali Brown

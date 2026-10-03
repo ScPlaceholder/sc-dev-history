@@ -1,0 +1,57 @@
+## Star Citizen Alpha Patch 4.7
+Alpha Patch 4.7 has been released and is now available to test on the PTU environment!   Patch should now show: VERSION 4.7.0-PTU.11475995.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+## Testing/Feedback Focus
+We are expecting blueprints from the previous two PTU builds to save and appear in tonight's PTU build.
+- Stability, Bugfixes, LTP between PTU releases
+- Operation Breaker Station and QV Breaker Stations locations
+- Inventory Rework
+- Crafting Fabricator and Blueprints
+- Engineering Updates
+- Radar Assisted Targeting (Radars components in shops will be arriving in a future PTU patch)
+- Nyx Social Stations
+Known Issues
+- The main front elevator of the 890j has been temporarily disabled pending further fixes
+- Multi-System - PU - ASOP Terminal / Locations - Moving the mouse cursor over a different vehicle in the ASOP when attempting to deliver a specific vehicle will deliver the different vehicle instead
+- Multi-System - PU - ASOP Terminal / UI - There is a chance that a blank information of the Vehicle may appear on Hangar Delivery Request using the ASOP Terminal
+- PU - Nyx/Levski - Transit - Going prone whilst in a moving Limbo Elevator Carriage, will cause the player to fall out of the carriage
+- PU - Starmap / MobiGlas / UI - Starmap is zoomed into the ship when in a cockpit instead of showing the system or region of space in
+- PU - Inventory Rework - UI - Inventory does not update Capacity and Space changes in Personal Inventory
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+## Features & Gameplay
+Gameplay
+Operation Breaker Stations Polish
+Further location minimap markup. LOD, lighting, signage, and performance polish.
+Inventory Visual Polish
+Updated item card perspectives. Further character lighting polish.
+Crafting
+Added fabricators back to refinery shops. Fabricator UI Polish pass. Updated overall mineable quality chances for slightly higher quality chances.
+Weapons & Items
+- Added food and drink to Pyro JP Station Refinery item shop inventory
+## Bug Fixes
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues
+- Potential Fix: Multi-System - PU - UI / mobiGlas / Starmap - Starmap search bar dropdowns will only show location icons stacked on top of each other  (STARC-197193)
+- Potential Fix: PU - Stanton - New Babbage - Locations / Kiosks / Shopping - No radars can be purchased at Omega Pro in New Babbage (STARC-199733)
+- Potential Fix: Nyx - RCD - Resetting - Refractor Arrays not resetting
+- Potential Fix: PU - Nyx - RCD - Creature / AI - Juvenile and Adult Ice Valakkar are idle and do not target
+- Potential Fix: PU - Nyx - RCD - Locations / Art / Proxy - Breakable Ice entity visibly stays intact after shooting icicles (STARC-198248)
+- Potential Fix: PU - Mining / Cargo - Shopping / UI - Gem Quality not shown on commodity sale terminal (STARC-197494)
+- Potential Fix: PU - Stanton - ASD Delving Onyx Facilities - Research Wing – Locations / AI – Most of the AI are spawning at a single location and some are within the building's concrete geometry (STARC-199152)
+- Potential Fix: PU - Stanton - ASD Delving Onyx Facilities - Location / Respawn Screen - Player will be rescued and respawn back at the facility after being incapacitated
+- Potential Fix: RSI Aurora Series ( All Variants ) - PU - Vehicles - The interaction range is too short on the right side weapon locker making it difficult for the user to deploy the weapon racks
+- Potential Fix: PU - Nyx - Nyx Mission Pack 2 - Kill Ship / UI - Some Bounty missions don't have markers on the mission target
+- Potential Fix: Banu Defender - PU -Vehicles / Components / Animation - Vehicle stays in landing position after raising landing gear, preventing use of weapons (STARC-198255)
+- Potential Fix: PU - Stanton - Volatile Cargo - Mining / Game Code - Quantanium is not Volatile (STARC-199002)
+- Potential Fix: PU - Nyx - RCD - Mission Content / Locations / Design - Array code terminal is displaying the old UI in the Operations room
+- Potential Fix: Multi-Item - PU - Armor / FPS - Helmet flashlight remains off unless Inventory/Cycle Camera View is used (STARC-199851)
+- Potential Fix: PU - Crafting / Blueprints - Missions / ASD - ASD Phase 3 repeat missions do not award blueprints
+- Potential Fix: PU - Stanton - Crafting / UI - The time on "Work Order" and "Dismantle" tab of Redimake Item Fabricator is showing "Refined Materials" instead of the correct crafting time
+- Potential Fix: PU - Vehicle Components - Radar Components cannot be tractor beamed or moved
+## Technical
+Tonight’s build has more updates to Nyx entity counts to help reduce unintendedly high amounts
+- Fixed 5 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed multiple Hybrid-Service Crashes
+- Various Networking Performance Optimizations and Improvements

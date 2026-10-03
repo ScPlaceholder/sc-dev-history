@@ -1,0 +1,52 @@
+- Infiltrate and Defend Missions
+Implementing a series of new missions at Underground Facilities (UGF) to replace the old ones along with the addition of several new UGF locations. These new missions come in 5 types along with lawful and unlawful variants with more difficult types unlocked through reputation gains.
+Eliminate Specific (Lawful / Unlawful): This mission is the most simple in that the player is given the task of going to the UGF to kill a specific target inside. Other enemy AI will spawn at the location but they do not necessarily need to be dealt with.
+Eliminate All (Lawful / Unlawful): Here the player must go to the UGF and kill all the targets that spawn, a counter should display at the top center of their screen indicating the remaining targets when they head down the elevator of the UGF.
+Eliminate Boss (Lawful / Unlawful): This mission begins the same as the ‘Eliminate All’ mission, the player must clear the beginning AI shown as a counter on the top center of their UI. After they have done this, a boss with increased health will spawn with some guards which the player must kill to complete the mission.
+Defend: This mission begins with a one minute timer when the player goes down the elevator of the UGF, where they should observe friendly AI waiting around. Once the timer finishes Wave 1/3 begins an a series of enemy AI spawn. The player should work together with the friendly AI to take out all of this hostile wave. Once this is done another minute timer will begin, to prepare for wave 2. This process repeats and once wave 3 is wiped out the mission is complete. The player should receive bonuses based on the amount of friendly AI that are alive by the end of wave 3.
+Collect: This mission requires the player to enter the UGF with the instruction of locating, and extracting 3 boxes based on reference numbers provided via the contracts manager. There are lots of boxes with random numbers within the UGF which the player must sift through until they find the correct boxes. During this process enemy AI will spawn which the player will need to deal with in order too be able to extract the boxes safely. These boxes should be taken back onto planet surface, loaded onto the player ship and delivered back too the drop off point.
+- Bombs
+The addition of Bombing mechanics into Star Citizen which allows ships, such as the new Starlifter A2, to drop bombs. This system is accessed using the current Missile Operator Mode if your ship is equipped with bombs. While active, it will give players a selection marker by pressing RALT+T (Default keybind) that allows them to define an area where they want the bomb to drop. As these bombs drop with gravity and are not controlled after release, players will get a new UI alignment and drop HUD feature after selecting a target location on the ground that they can follow to get as close to the center of their targeted area as possible. All the other behaviour(s) of MOM will apply here, such as increasing number of bombs to drop at once, waiting for them to arm, using the same keybinds, etc. Initially, only the A2 will have bombs, and it will not have any missiles, so this idea of being able to cycle between missiles and bombs won’t apply.
+- Ships and Vehicles
+- Added New Ship: CRUSADER Starlifter Hercules A2
+- Added New Ship: Origin 400i
+Weapons and Items
+- Added FPS item: Curelife Medical Tool
+- Added FPS item: Greycat Multi-tool Healing Attachment
+## Feature Updates
+Locations
+- Orison - Landing Zone V2
+The addition of more shops across to expand the various services available in Orison. This includes the Crusader Industries Showroom which displays the Hercules Starlifter, Ares Starfighter and Mercury StarRunner. Cousin Crows Custom Crafts ship parts shop. Providence Surplus for Industrial clothing and gear.
+- Port Olisar Relocation
+Port Olisar has been moved closer to Crusader and in synchronous orbit above Orison.
+- Arena Commander and Broken Moon Refresh
+This update we are converting the scoreboards in Arena Commander and Star Marine to work with Building Blocks. The new interface will give players real-time access to position, name, rank, score, objectives, kills, deaths, assists, and ping. We have also updated Arena Commander's Broken Moon map by increasing overall size, adding new playable areas, more cover options, and new space assets.
+Gameplay
+- Default Joystick Profile Updates
+Updated default joystick profiles for multiple setups including Thrustmaster Warthog Hotas and Pedals, T16000m (Single, Dual, and Throttle), T.Flight Hotas X, VKB Gladiator NXT Premium Duals, and VKB SCG Premium Duals.
+- Ship Combat Updates
+Updated capacitors so that systems with 0% power will continue to reload slowly. Rewrote autogimbal slew rate and smoothness to be more usable.
+Ships and Vehicles
+- AEGIS Gladius - Gold Standard
+Weapons and Items
+- Backpacks
+With the new changes to inventory management, we have separated backpacks from being part of full sets of armor and made them their own item that can be equipped or unequipped. Players can now purchase multiple sizes of backpack that will require different sizes of armor to use. This will make the largest backpacks equipable on heavy armor while medium and light armors will be able to equip certain smaller backpacks.
+## Major Bug Fixes
+- Fixed an issue causing some players to repeatedly encounter 30009 errors when attempting to join the PU
+- There should no longer be two Inner Thought Prompts for Opening and Closing the Pilot Canopy in multiple ships
+- Fixed an issue causing aUEC and unequipped items to randomly disappear from player's inventories
+- There should no longer be a color difference between player character heads and bodies
+- Fixed an issue causing ASOP terminals to not function on the first interaction
+- Fixed an issue causing players to sometimes take collision damage when entering ships
+- Asteroid FPS Deposits should now be able to be scanned
+- FPS AI should no longer continue to shoot through other enemy AI while attacking a player
+- New Deal Ship Shop stairs leading down near the Hammerhead should no longer be missing collision
+- Players should no longer be able to auto dock a parasite ship into the Constellation from above which would cause it to collide into it
+- Multiple player checkpoints should no longer display at the same time in Arena Commander Race modes
+- Trolleys found in Area18 hangars should no longer be clipping through the floor, removing functionality
+## Technical
+- Fixed 5 Client crashes
+- Fixed 3 Server crashes
+- Backend service timeout fix
+- Server Performance Optimizations
+- Player character networking optimizations to help reduce players sliding and teleporting while on foot

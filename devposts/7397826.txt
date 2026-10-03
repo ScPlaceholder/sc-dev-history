@@ -1,0 +1,43 @@
+## Star Citizen Alpha Patch 3.24.3
+Alpha Patch 3.24.3 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.3-PTU.9412741.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- IAE Halls
+- New Global Event
+- New Vehicle: Polaris
+- New Vehicle: Starlancer Max
+## Known Issues
+- PU - Social - AR markers - Party markers are not visible to other party members
+- The Argo ATLS currently cannot be destroyed (Not intended end goal and player inside is still vulnerable)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - Multivehicle - MFD - MFDs can be interacted with while in mobiGlas
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+- PU - Stanton - Landing Zone (LZ) - New Babbage - Personal Hangar - Locations / Art / Graphics - A large opaque plane will be visible when viewed from the ASOP/Storage Access area if hangar doors are open
+- PU - Locations / Physics - UGF - The interior of UGFs inherit the planet or moon's gravity
+## Features & Gameplay
+Ships and Vehicles
+- Polaris Performance, Lighting, VFX, and Art Polish Pass
+- Starlancer Max Art, VFX, and Lighting Polish
+## Bug Fixes
+- Fixed - Polaris Torpedo's do not restock STARC-138719
+- Fixed - RSI Polaris - PU - VFX / Vehicles - Atmo heating effect is too small / weak for the ship
+- Fixed - RSI Polaris - PU - Vehicles / Design - Polaris turrets have incomplete atmosphere volume STARC-138741
+- Fixed - FPS Gameplay / Mounted Turrets - Resource Network - Mounted turrets located at various FPS locations do not fire
+- Fixed - Aegis Sabre Raven - PU - Vehicles / Art - Sabre Raven's weapon rack spawns outside of the ship when equipped with a Livery STARC-133636
+- Fixed - Origin 400i - PU - Vehicles / Art / GFX - Visarea - There are visarea issues with the component bays and cargo bay door in the 400i STARC-105219
+- Fixed - PU - Stanton - IAE2024 - New Babbage - Locations / Vehicle - Day 3 MISC - The ramps of the MISC Starfarer and MISC Starfarer Gemini do not extend blocking access to the vehicle STARC-69579
+## Technical
+- Fixed 1 Client Crash
+- Fixed 8 Server Crashes

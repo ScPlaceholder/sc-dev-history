@@ -1,0 +1,88 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9360177.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: Wave 1
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- New Arena Commander Updates
+## Known Issues
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP terminal screen will be stuck on the getting vehicle list screen until terminal times out
+- PU - Stanton - Locations / Transit / Hangars - Some elevators have greyed out panels and do not respond when called
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Stanton - Missions / UI - Mission Objectives are missing from multiple UI elements
+- Multivehicle - PU - Vehicles / Ship Refuel - MISC Starfarer is not refuelling other ships
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+- Multivehicle - PU - Resource Network - Mining and Salvage heads throttles default to 0
+- PU - Stanton - Multivehicle - Vehicles / MFDS / UI - Scanning MFD reverts to Ready to Scan after scanning ships with no cargo stored (STARC-130414)
+- Gatac Syluen - PU - Vehicles / Elevator - Syulen is missing the internal elevator (STARC-130168)
+- Carrack bottom right MFD has no display (STARC-130157)
+## Features & Gameplay
+Gameplay
+- Weapon Controller: Added actions to allow firing weapon groups independent of whether they are selected or not
+- Added Exit Button to Fine Terminals
+Ships and Vehicles
+- Origin 400i Atmospheric Flight Improvement Polish
+- Further Visual Polish to Ship/Vehicle Render To Texture Shaders
+- Updated Scorpius MFD Material to Remove Doubling Effect
+Weapons and Items
+Rifles
+- Rifles have had their horizontal recoil toned down to make them far more consistent at distances contesting SMGs.
+There's a large bias towards people loving the S71 with it's much more relaxed recoil profile so tuning the rifles horizontal recoil down will make them more consistent across ranges.
+P4AR
+- Reduced visual recoil
+- Reduced Horizontal aim recoil per shot from 0.07 to 0.02
+Karna
+It's had a damage increase to become more of the high skill, high damage weapon you'd expect where it depends on hitting initial shots far more
+The alt fire mode fire rate adjustments are to make less 'deadtime' in the weapon
+- Magazine size increased from 30 to 35
+- Increased the fire rate of alt fire from 60 to 350
+- Damage increased from 16 to 17.5
+- Karna Weight adjusted from 6.9 to 4.20
+- Karna Magazine weight adjusted from 1.62 to 0.60 (Karna weight was a heavy outlier compared to other ARs)
+- Adjusted Karna Recoil to start consistently then get more inconsistent as it fires, this is done to help it fit into that more 'AK' category we have carved out for it.
+- Minor adjustments to visual recoil to improve visual fidelity`
+SMGS
+Aim return time is how long it takes for the weapon after firing to return to it's default position
+SMGs were snapping really hard on this so for visual fidelity the return times have been increased
+Keep in mind the stated return time is not actually how long it takes, it's got a longer duration then stated because it has extra settle / bounce time
+C54
+- Smoothed out return aim recoil
+- Increased maximum aim return time from 0.75 to 1.1
+Custodian
+- Adjusted min / max return time and curves to be in line with other SMGs
+- Damage increased from 11.1 to 11.11
+P8SC
+- Smoothed out return recoil
+Snipers
+The following sniper adjustments are intended to make 1HK to a non-heavy target viable at longer distances as the old values were too punishing and not allowing the sniper fantasy to be possible
+- Smoothed in sniper aim down sight procedural animation
+P6-LR
+- increased distance before damage fall off from 200M to 550M
+Scapel
+- Increased distance before damage fall off from 150M to 335M
+## Bug Fixes
+This build contains many further fixes for greyed out elevator panels around the PU
+- Fixed - Multivehicle - PU - Vehicles / Locations / Physics - Ships fall through hangar elevator platform on retrieval resulting in being stuck under hangar
+- Fixed - Multivehicle - PU/AC - Vehicles / QED / EMP - EMP/QED can be powered on but not fired (STARC-130228)
+- Fixed - Origin 890 Jump - PU - Vehicles / Actor - Interaction Prompt - The interaction point to sit in the 890 Jump dining chairs is not accessible (STARC-101445)
+- Fixed - Multivehicle - PU - UI / Vehicles - Entrance markers remain on HUD for ships that have been streamed out (STARC-95920)
+- Fixed - PU - Multivehicle - Audio - External animating elements are missing audio entirely or fail to produce audio until the player has entered the vehicle
+- Fixed - SC - Hornet Series - Hornet series ships do not have MFDs or HUD displays setup correctly
+- Fixed - ANVIL ARROW - PU - Vehicles - MFDs are not displaying
+- Fixed - Nomad - PU - Vehicles / Art - There is a Portal / VisArea issue at the entrance of the Nomad
+- Fixed - PU - Filler Station UI - UI / Ships / Vehicles / Salvage - The Filler Station is unable to Craft Items
+- Fixed - Multivehicle - PU - Resource Network - Mining and Salvage heads throttles default to 0
+- Fixed - Multivehicle - PU - Vehicles / MFDS / UI - Scanned ships do not have a model in the vehicle MFD screen
+- Fixed - Nova Tank - PU - Vehicles / Ground Vehicles / UI / MFD - Large Vis area issue at the back of the Nova
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 6 Server Crashes

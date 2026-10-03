@@ -1,0 +1,93 @@
+## Star Citizen Patch 3.13.1c
+Alpha Patch 3.13.1c has been released onto the LIVE environment! Patch should now show: VERSION 3.13.1-LIVE.7491200.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled (General changes to what isn't stored in LTP is ongoing. Certain items such as merits, consumables, and ammunition may be removed in this release and into 3.14)
+New Player Starting aUEC: 20,000
+Hangar Module is currently disabled
+Known Issues
+- Cursor may remain visible, and isn't constrained to the game window
+- Items missing after update / Character Reset / pledge change
+- A maximum of 50 contacts show in-game, regardless of how many friends are present on Spectrum
+- Abnormally long delay between pick up storing of fps mineables/harvestables/items
+- Ship positional Desync
+- Meet Miles Eckhart not working
+- Swapping FPS weapon drop weapon
+- Medical Pen (Medi Pen) not healing blood loss
+- Oxygen is depleted while sitting in ship
+- Getting crime stat for killing lawful bounty targets
+- Mission target NPCs not loading in / taking a long time to load in when the objective is reached
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Constellation can despawn when flying 30km away after undocking
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+## New Features
+Gameplay
+- Ship To Station Docking
+Adding the ability for players to dock large ships to docking ports at space stations. Including various related work such as having ATC assign you docking ports when appropriate, new docking connectors, and new lobbies in space stations for large ships to connect to. This initial implementation will give docking access to the 890 Jump and Hammerhead. Players can ASOP spawn or hail the station like before and be assigned a docking port instead of a hangar with these ships. While docking, hailing the station will assign a docking port and bring up the docking interface for players to align their ship's docking port to the docking collar either manually or using the auto-land system by holding N (default).
+Ships and Vehicles
+- Added New Vehicle: Tumbril Nova
+- Added New Ship: Crusader M2 Hercules Starlifter
+- Added New Ship: Crusader C2 Hercules Starlifter
+## Feature Updates
+Gameplay
+- New Arena Commander mode: 1 vs 1 Duel
+- Location security response will now be more aggressive based on criminal heat in the area
+- Armistice Violation Changes
+Changed the armistice violation to give no grace warning and be able to generate multiple infractions in a short time if violations are persistent. Increased the duration armistice violation and aggravated vehicle damage remain on the player's criminal record.
+Ships and Vehicles
+- Updated cockpit glass wear effect on Hornet F7A, F7C, F7CM, and all razor variants
+- Ongoing Carrack Performance Optimization pass
+## Major Bug Fixes
+- Fixed an issue that could cause Star Citizen to crash immediately after pressing "Launch Game" in the Launcher
+- Fixed an issue causing improper and inconsistent collision between ground cover such as small vegetation having collision / large rocks having no collision, and vehicles
+- Accounts with large personal inventories should no longer cause server performance issues when joining a game server
+- 300 series customizations should now apply to ships in game
+- Players should no longer experience an infinite loading screen when attempting to load into the PU
+- Players should no longer get stuck in an infinite load screen after using bed logout in a ship
+- Chat should no longer be partially off screen on super/ultrawide displays
+- All missions that take players to underground facilities will no longer withdraw when approaching
+- Freelancer MIS/MAX/DUR turrets should no longer have limited motion and should now be aligned correctly
+- Players should no longer be able to steal other Players Ships/Ship AI and Push Ships through collision using the gravity on the 890 Jumps Hangar
+- SDF shields should no longer allow damage penetration while the ship is at speed
+- Refuel and Rearm services at New Babbage should now function correctly
+- The docked Merlin on pirate Constellations should no longer be friendly and give the player a friendly fire warning during combat
+- Drake Buccaneer landing gear should no longer disappear when retracted and should be visible when deployed
+- Landing gear should now animate correctly on all Freelancer variants
+- Esperia Talon should now sit properly and not clip its nose into the landing pads
+- Pushing a trolley onto the cargo ramp of the Constellation will no longer cause the player to speed up while going over the ramp
+- Players should no longer be able to take other players medPens from their suits by interacting with them
+- Wallace Klim should no longer spawn away from his table, facing the wrong way and floating
+- Chairs in the dining area of the Reclaimer should no longer be placeholder models
+- The Door Open/Close Toggles on the ROC DS should now correctly close the pilot seat door
+- There should no longer be two Exit Prompts in the Turret Seat of the ROC DS
+- Fixed an issue causing the Greycat ROC to not receive as much damage as intended when a mineable explodes near it
+- The vehicle barrier in the Carrack should now be able to be closed after raising it
+- The side turret seats within the Anvil Carrack should no longer be missing the orange highlight when interacting with them
+- The Hammerhead elevator should no longer collide with the landing bay at Port Olisar, causing the ship to move
+- The Gladius ladder door animation should now play properly and close after the ladder is stored
+- Leaving a trolley in a door way as it shuts should no longer clip through the floor erratically and kill players
+- Attempting to place food or drink in New Babbage should no longer sometimes cause the player to consume it instead
+- Fixed an issue causing mineables to not spawn on Arial
+- Players clothes should no longer clip through undersuit when viewing PMA on the mobiGlas
+- Fixed an issue causing some moons to have surface temperatures of 0°C and apply no environmental / temperature affects to players
+- Localised text should no longer be present when right clicking a party channel
+- Stowing a weapon and walking at the same time should no longer send the weapon back into the player's hands
+- The Anvil Hawk wingtips should no longer be missing SDF shields
+- Talon and Talon Shrike should now be able to be bought in game
+## Technical
+- Fixed 13 Client crashes
+- Fixed 6 Server crashes
+- Fixed 4 Main Thread Deadlocks
+- Fixed multiple Backend Service crashes
+- Backend Service Performance Optimizations
+## HOTFIX 3.13.1b - Build# 7445322
+## Feature Updates
+Core Tech
+- Moved Join PU selection above hangar module
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash
+## HOTFIX 3.13.1c - Build# 7491200
+- Fixed an issue causing massive log spam that could potentially use gigabytes of storage space and cause performance issues
+This fix will not remove old .log files in your game directory that have already been created. You may want to manually delete these logbackups that could be taking quite a large amount of storage space. These .log files can be found in [installdirectory]\StarCitizen\LIVE\logbackups and are safe to delete.

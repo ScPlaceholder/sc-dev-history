@@ -1,0 +1,405 @@
+# Inside Star Citizen: Alpha 4.0 - Meshing Forward
+# https://www.youtube.com/watch?v=Mgbgp4pRSJ4
+[    0.1] So it's been a while, so we had you in here.
+[    3.6] What's happened since then?
+[    5.5] Hi, Steve.
+[    8.5] Well, we all went back home and we didn't do anything
+[   10.9] for about a year and a half,
+[   13.0] and then suddenly we made sure our mission happened.
+[   15.5] No.
+[   16.5] We've been busy.
+[   19.1] Busy taking all of the feedback and all of the data
+[   22.8] that we gathered during the last series
+[   24.5] of tech preview tests.
+[   26.5] We've really been developing the technology
+[   28.8] and making sure it covers all the use cases
+[   32.0] that the system requires.
+[   34.0] And it's rolling that forward into new and exciting stuff.
+[   38.4] What new and exciting stuff?
+[   55.1] Okay.
+[   55.9] Jump point detected!
+[   57.2] Jump point detected!
+[   58.9] Incredible!
+[   59.7] It's AC, so...
+[   63.9] You probably noticed we are pushing player counts
+[   66.8] higher and higher as the weeks go by.
+[   69.0] Why did we do this with real players?
+[   71.2] Why don't you guys just script something or use bots?
+[   74.5] It never matches the actual real-time environment
+[   78.7] that players can actually represent.
+[   80.7] Putting real players in the build
+[   83.6] is the only way to really see the true depth
+[   87.3] of the troubles that we're in.
+[   89.5] We'll always start out with a kind of a safe test
+[   93.0] at 100 players.
+[   94.1] But we verify here that we haven't introduced new crashes
+[   97.3] that would determine the experience
+[   99.9] and that the performance is on par with what we would expect
+[  103.2] for a single server with 100 players.
+[  106.3] Let that run and soak for like 30 to an hour,
+[  109.1] 30 minutes to an hour.
+[  110.1] And then it was where we've confirmed
+[  111.7] that that's actually functional.
+[  112.8] Then we go to higher numbers.
+[  115.5] Initially, when we were pushing up to 500 players,
+[  118.1] that was putting a lot of burden on a number of systems.
+[  121.4] It's one of the reasons why we needed
+[  124.0] to replace our message queue.
+[  125.6] Where now we needed more parallelism
+[  127.9] into how we shuffled messages across the hybrid
+[  130.4] because the amount of data that it has to shuffle
+[  132.8] is a lot higher than we expected.
+[  135.1] From what I understand, same mesh.
+[  136.4] So 250 for servers.
+[  138.2] Right now we're at 231 players.
+[  141.7] Making our jump to Pyro system.
+[  144.2] So we decided to take a couple of months out
+[  146.5] and completely rewrite it.
+[  148.4] We came back then with what you've heard us referring to
+[  150.4] as the replication message queue or RMQ.
+[  153.1] So RMQ is a product of the UK networking team.
+[  156.1] So that's Clive Johnson, Dave Kaplan, Jordan Wood,
+[  160.8] Nathan Matias, Santi Ortiz.
+[  163.5] Those guys, I mean, they really put their heads down.
+[  166.2] I think they really delivered on something
+[  167.8] that is going to scale to the future.
+[  170.4] The intention of RMQ was to provide us
+[  173.4] with a more stable foundation.
+[  175.6] And going into the first test,
+[  177.4] because it being new code and it being written
+[  180.2] like specially for large volumes of messages,
+[  185.3] we expected it to perform better than an RMQ.
+[  189.3] They didn't.
+[  191.9] RMQ is performing actually pretty good.
+[  194.3] The actual element that we identified back
+[  198.3] at the beginning of the year when we did our first
+[  200.2] server meshing test were actually solved
+[  202.2] and we're now running at very fast speeds.
+[  204.8] But it revealed another layer of the onion.
+[  207.7] A lot of shifts over here.
+[  208.5] So yeah, probably not working, which is too bad.
+[  211.2] And I have no idea what's going on.
+[  213.5] Oh, the FPS, come back to me.
+[  215.9] Load, load.
+[  217.2] We were disappointed that we were still seeing
+[  220.1] interaction delay.
+[  221.4] We were still seeing high latency.
+[  223.7] On the back end, we were seeing high levels of packet loss.
+[  229.3] Oh no, it's going to lock me in.
+[  230.8] I might have to grab a smaller ship or something.
+[  232.8] Why am I locked in here?
+[  234.7] So this hanger might be busted.
+[  236.1] I just saw somebody else take off.
+[  237.3] So not all hangers are busted.
+[  238.9] That's not good.
+[  239.8] Interaction delay is caused by messages
+[  242.3] taking a long time to go through the hybrid.
+[  244.3] So when you press F to open a door or exit a ship,
+[  247.8] a message is sent from your client to the hybrid,
+[  250.2] then processes the message, and then sends it to a game server
+[  253.4] and back to your client.
+[  254.7] So this loop, when it's too slow and takes time,
+[  258.4] will manifest itself as interaction delay.
+[  261.1] What causes interaction delay from the hybrid's perspective
+[  264.6] is when we basically have a traffic jam on one thread.
+[  268.3] So the application is using multiple CPUs,
+[  270.7] but at some point in our code, the way we're processing it,
+[  273.9] we will be all jammed on one that will create a traffic jam,
+[  277.3] which will cause the messages to take a long time to do that loop
+[  280.7] and that immediately creates interaction delay.
+[  283.7] When analyzing issues with interaction delay,
+[  286.8] we saw that everything that was going wrong
+[  289.8] was kind of focused in on where all of the code that runs NMQ was.
+[  294.4] So when we went to try and optimize that,
+[  297.3] we discovered that we're kind of in this dead end.
+[  300.2] We can't really figure out how to,
+[  302.9] with the structure of NMQ, improve it.
+[  305.7] So with our NMQ, we kind of addressed those problems
+[  310.7] kind of at their root and really, really thought about
+[  313.2] how we can not end up in this dead end again.
+[  315.7] That is the jump point.
+[  317.9] So we are going to...
+[  319.9] Oh, well, that is not the jump point.
+[  321.5] That is where we're going.
+[  324.2] Within that amazing visual,
+[  328.4] there is a delightful jump point for us to go through, hopefully.
+[  332.4] I'm not entirely sure if it's working.
+[  334.4] I know people were telling me...
+[  337.1] Because it's in Iwakati,
+[  338.4] which is a very, very, very early build of 4.0,
+[  342.6] sometimes it's not working, but we'll find out together.
+[  347.0] What we expected from that
+[  348.4] is that we would be able to achieve a much higher throughput,
+[  352.2] which it does. It can achieve that.
+[  354.6] But by optimizing that, we see what was behind NMQ.
+[  359.4] That was also causing issues
+[  362.2] that wasn't getting the opportunity to really stretch its legs
+[  365.4] to the point where it was able to become an issue.
+[  367.8] NMQ was at a dead end.
+[  370.5] There wasn't so much we could do there
+[  372.2] just to the nature of how that had been written.
+[  374.5] The game we were building at the time when that was written,
+[  377.4] radically different.
+[  378.3] It couldn't grow. It couldn't evolve.
+[  380.2] Exactly. It was limited in its nature.
+[  383.1] Yeah, our game is massively complicated.
+[  385.4] We produce so much data from everything,
+[  388.0] not just players, NPCs, from ships, from doors,
+[  391.6] from elevators to everything going on,
+[  394.8] the NMQ at least, and then the RNQ's just like, no.
+[  399.7] So, RNQ's focus was, yes,
+[  402.7] to immediately try and solve some of the issues we had seen,
+[  406.6] but also to provide us some room to grow.
+[  409.7] And right away, we noticed a distinct lack of parallelization
+[  414.1] when we update dirty messages.
+[  416.0] So a dirty variable is a piece of information
+[  418.4] or a variable attached to an object
+[  419.9] that hasn't been communicated to all other members of the mesh.
+[  423.4] The SinkDirty stuff is just absolutely...
+[  428.1] It's taking up most of the frame.
+[  429.6] So where we were originally seeing,
+[  431.8] let's say that we have this and this amount of space,
+[  434.2] we were seeing NMQ take up this much
+[  436.2] and then the rest of the network update taking this much,
+[  438.8] but now we're seeing SinkDirty take this much
+[  442.0] and the rest of the network updates take this much.
+[  443.8] And then RNQ just says, it's tiny little sliver now.
+[  445.5] So we've addressed RNQ, but, oh, wow,
+[  447.5] that underneath all of this, there was this other problem
+[  449.9] that never really got the chance to generate that load.
+[  453.2] Oh, it's just closed.
+[  456.4] Huh. Oh, no.
+[  461.2] OK, lining up. Oh, my God.
+[  463.1] Entry requirements met.
+[  465.3] Oh, my word, this is happening.
+[  469.8] Tuning complete.
+[  471.9] Oh, the music is actually giving me shivers down my spine.
+[  476.2] So we fix this by paralyzing the work
+[  479.8] or optimizing the work that's happening in that thread
+[  482.6] so that it goes faster.
+[  484.1] And so there's multiple approaches to this,
+[  486.1] but the number one thing that we've been doing
+[  488.7] in the first series of tests,
+[  491.1] I've really been optimizing and paralyzing the work
+[  494.0] for synchronizing dirty variables.
+[  495.8] Paralyzing this allows us to add more lanes.
+[  499.4] It's just like going from a single lane road onto a highway.
+[  503.8] We can just handle much more at the same time.
+[  506.8] So the server needs to send out
+[  508.7] any change that happens to the game.
+[  510.3] You move, you shoot, and send it to every other client
+[  514.0] that can also see that entity.
+[  516.2] What happens is that that then needs to go through
+[  518.4] every single client and go,
+[  519.4] oh, you can use this, can you see this, can you see this,
+[  521.1] can you see this, and then synchronize dirty state.
+[  524.8] That then is what produces the message that updates you.
+[  527.8] What's a really, really easy optimization to make there,
+[  529.9] especially at higher player counts is we can just go,
+[  531.9] oh, every single client we can do at the same time,
+[  534.8] they're not modifying any data,
+[  536.3] they're just reading it because that's what sending it out is.
+[  540.5] You're just reading the data.
+[  541.5] And reading the data, just reading the data,
+[  544.1] not modifying it means that we can run
+[  545.9] all of that information at the same time.
+[  547.4] So with not too much work,
+[  549.5] we can get a really, really big optimization.
+[  553.1] Oh, okay.
+[  557.5] Opening jump point.
+[  558.9] Guys, what the heck, man?
+[  560.6] This is next level.
+[  562.9] Entering jump tunnel.
+[  565.2] After that first wave of parallelization,
+[  567.7] we've seen some immediate benefits.
+[  570.5] It's feeling really good.
+[  571.4] Server's feeling good.
+[  572.5] Knock on wood, no server errors so far,
+[  574.4] no crashes, stuff like that.
+[  575.9] So I appreciate that greatly.
+[  578.0] We started to see reductions in those key metrics
+[  580.9] for interaction delay and game responsiveness
+[  584.0] and then packet loss.
+[  587.4] That was quite a dramatic exit, I have to say.
+[  590.4] I got very lucky.
+[  591.5] I didn't just get slammed into one of these asteroids.
+[  596.6] Can you hear me?
+[  597.5] Jump, jump if you can hear me.
+[  601.5] I'll jump again if you can hear me.
+[  603.1] Oh, nice, nice, you can hear me, let's go.
+[  605.1] Things were showing signs of improvement.
+[  606.7] So you see, we pushed the player count up again.
+[  610.0] This was our first test going past 1,000 players.
+[  613.5] And pretty rapidly, we ran into the next bottleneck,
+[  616.9] which was the binds.
+[  618.9] And a bind in very simple terms
+[  621.9] is effectively the connection between your client
+[  625.6] and your view of the game world
+[  627.3] to the server's view of the game world.
+[  629.1] So if I see a copy-cop on the table in front of me,
+[  632.6] it's because my client running on my computer
+[  636.0] has bound over the network to the server's view
+[  639.0] and knowledge of the existence of that entity.
+[  643.1] All right, so here we go with more FPS drops.
+[  648.7] Baza, it's primarily the medical areas, terrible.
+[  652.2] Ooh, what is this?
+[  653.3] Open.
+[  654.9] Ooh, fuses.
+[  656.0] Ha ha ha, down with your colony.
+[  659.2] In our game, we have a lot of entities.
+[  663.3] Last time I checked, Stanton was at well over a million
+[  667.4] in an average kind of game session
+[  669.7] and numbers just get bigger and bigger as time goes on.
+[  673.1] Ivan said there were a million entities.
+[  675.8] That's like starter numbers, right?
+[  677.5] So that was just with Stanton.
+[  680.9] So Stanton, initially when we seed Stanton,
+[  684.4] so seeding is like just us putting
+[  686.2] all the initial state there.
+[  688.1] That is about 720,000 entities.
+[  691.0] I am at area 18.
+[  694.8] So now we're gonna have another experience.
+[  697.1] Oh my God.
+[  699.4] Hey, I definitely feels a lot more variety.
+[  701.5] That's good, looking good.
+[  703.7] Relax, pal, just walk right through me, jeez.
+[  706.1] After a little bit of soak time, so say a week,
+[  710.1] we see that very, very quickly grow
+[  711.9] to around three million entities per shot.
+[  714.8] So yeah, things grow pretty quickly
+[  716.4] and like from there, we see things kind of
+[  718.2] continue to grow.
+[  719.7] This is kind of why we need like this big focus
+[  721.4] on like cleaning up entities and stuff like that.
+[  723.4] It doesn't just help the game,
+[  725.0] it also helps the network with the replication
+[  726.9] and the interaction delay.
+[  728.1] So in order to optimize the binds,
+[  730.4] what we need to do is properly assess
+[  733.5] what part of a big bind can be done in parallel
+[  736.8] with another so that they don't interact with each other.
+[  739.6] That allows us to go wide, use more lanes to go faster.
+[  743.1] The motorway is completely clear,
+[  744.4] we just can't get the things up the on-ramp faster.
+[  747.7] So what we're trying to do is basically add more on-ramps.
+[  752.0] So with binds, what that means is we might have the same
+[  755.0] number of entities that we need to actually get,
+[  757.2] that you want to see, that you want to see updated.
+[  759.9] But what we can try and do is try and do that faster.
+[  763.1] So with parallelization, with some clever optimizations
+[  767.0] among other things, hopefully.
+[  772.9] Progress is looking positive.
+[  774.8] So we've been working on a lot of the more
+[  776.3] tedious little details, which has been kind of figuring out
+[  780.5] how we get information into our message queue
+[  783.9] in the most optimal way possible.
+[  786.6] But that's also setting us up for being able to then be
+[  790.4] very clever about how we parallelize the binds.
+[  793.7] Here we go.
+[  794.5] I just click on the left, click on the mouse,
+[  796.7] so I open the channel.
+[  798.8] Here we go.
+[  799.7] Here we go.
+[  800.6] We are opening it.
+[  802.3] All right, entering the channel.
+[  804.7] Here we go.
+[  806.1] So smooth.
+[  807.7] So smooth.
+[  808.6] So smooth.
+[  810.1] Okay.
+[  811.1] I am really excited to see this progress further.
+[  813.8] Already the jump gates feel really smooth
+[  815.9] and reliable to make use of.
+[  817.3] This is going to make a very exciting addition to the game
+[  820.0] when it comes to live and opens up so many possibilities
+[  823.5] for the future.
+[  824.3] Everyone at CIG is doing an incredible job
+[  826.8] of bringing this to reality.
+[  828.2] Amazing work all around.
+[  830.2] All right, so now that I've kind of let the FPS
+[  832.7] kind of catch up with me here,
+[  833.9] and you know, I'm kind of trying to let the,
+[  835.5] all the shaders load.
+[  836.6] So that's probably hopefully a lot of what you're seeing
+[  838.9] with lag and it's not just optimization issues,
+[  841.7] but it's starting to feel better
+[  843.1] now that I'm kind of just standing here for a moment.
+[  845.2] We really think that unlocking that will allow us
+[  847.4] to go to at least 10X performance
+[  849.3] on the versus the current game experience online,
+[  852.6] which is at 100 players.
+[  854.4] But this will also allow us to uncover more layers
+[  857.3] of the onion that we can optimize to go
+[  858.9] up even higher numbers on one single hybrid,
+[  862.2] which will last and go bigger,
+[  863.6] just like we did with RMQ from NMQ,
+[  866.2] just like we did with the 30 variables,
+[  867.9] optimizations, binds will last and go further,
+[  870.6] but it's not the end of the tunnel.
+[  871.8] We still have more work to do
+[  873.9] to get even more player counts on one hybrid.
+[  877.3] All right, we're going to see what's inside here.
+[  880.4] Oh my God.
+[  882.9] This is so crazy.
+[  884.1] Oh, too much light.
+[  885.9] A player, incredible.
+[  888.5] Hello, hello, sir.
+[  892.0] The visuals are crazy.
+[  895.0] We want to push further.
+[  896.2] And the message from Chris is,
+[  898.9] go as big as we can, as quickly as we can.
+[  902.0] We want to do that in a way that delivers
+[  904.1] a better feeling or responsive game.
+[  906.8] We're not just going to jump to big numbers
+[  908.4] just because we can.
+[  910.3] There's nothing stopping us going
+[  911.6] and putting a couple more zeros at the end
+[  913.7] of the player cap,
+[  914.7] but that's not going to lead to a good experience
+[  917.2] until we continue to address the bottlenecks
+[  920.6] that we know we have
+[  922.2] and more that we'll discover as we go forward.
+[  924.6] We have a lot that we can improve on
+[  926.1] and a lot of that looks very, very intimidating,
+[  929.7] but I'm excited would probably be the emotion
+[  933.1] to kind of use for it
+[  935.8] because we spent so long trying to figure out
+[  937.8] how we can do server meshing
+[  939.1] that we've not really had a chance
+[  940.6] to kind of slow down and look.
+[  943.0] And now we're kind of in that phase
+[  944.1] where we can kind of look at where,
+[  946.2] like, things that have existed for the past 10 years
+[  949.7] can be improved.
+[  951.4] And being able to then tear out huge systems
+[  955.3] and replace them, like with NMQ and RMQ,
+[  958.1] and really try and make the most,
+[  962.0] the best thing that we possibly can is really exciting.
+[  969.3] So what did we learn this week?
+[  971.1] That the progress of moving server mission forward
+[  973.6] is only made possible with the help of testers like you.
+[  976.9] That each new win, like RMQ,
+[  979.0] peels back another layer of the performance onion
+[  981.6] to be addressed next, like Binds,
+[  983.8] which since the time these interviews were recorded
+[  985.9] have made tremendous progress
+[  987.7] and are already revealing the next layers underneath.
+[  990.6] And that this work doesn't stop with the upcoming Alpha 4.0
+[  994.9] because as the game grows to the site set
+[  997.3] and Star Citizen 1.0 and beyond,
+[  999.3] so too must the efforts to continuously optimize.
+[ 1002.4] And I want to give a special thanks
+[ 1003.9] to Star Citizen's Adam Moth,
+[ 1005.8] Citizen Kate and Will,
+[ 1007.6] Dominguez, Evenlis, Hybrid V,
+[ 1010.3] Le Rigue d'Ere, I tried.
+[ 1012.3] Morphologist, LA 43, Speedfrager and Tirada,
+[ 1015.7] as well as everyone else who's been documenting
+[ 1017.8] this process from the other side of the table.
+[ 1020.1] For Inside Star Citizen, I'm Jared Huckabee.
+[ 1022.5] Thanks for letting us share the people
+[ 1024.2] and process of game development with you.
+[ 1026.3] And as next week as IAE, instead of ISC,
+[ 1029.9] there's gonna be something a little bit different
+[ 1031.7] coming your way next Friday.
+[ 1033.5] We'll see you there.

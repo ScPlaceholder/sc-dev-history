@@ -1,0 +1,5 @@
+Hi Maxou
+Do you have vsync disabled in the main menu, under graphics settings? If it's enabled your frame rate should be limited to 60 fps. If you prefer to have vsync turned off but still want to limit your frame rate you can set it via the sys_MaxFPS cvar in either your console window or user.cfg, e.g.
+sys_MaxFPS=50
+The default value for this cvar is zero, which means unlimited fps, or as fast as your system can run the game. Just remember that this cvar only has an effect when vsync is disabled.
+Hope this helps

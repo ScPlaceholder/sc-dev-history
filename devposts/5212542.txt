@@ -1,0 +1,62 @@
+## Star Citizen Patch 3.17.2i
+Alpha Patch 3.17.2i has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.17.2-PTU.8128264.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Audience: Wave 1
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 10,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+In this build we have made further server performance changes that should hopefully help assortment of issues on the PU with AI and other server authoritative features.
+- Turret Acceleration changes
+- Derelict Reclaimers V1
+- Derelict Colonialism Outposts
+- New Space Stations and Lagrange Points
+- Grim HEX Hospital Expansion
+- Combat Service Beacons V2
+- Illegal Collect and Delivery Missions
+- Player and AI Networking Updates
+Known Issues
+- AI / Characters - Inventory - Looting the weapon from an unconscious AI will cause it to teleport back into their hand a short period after picking it up
+- Combat AI will teleport around the environment at UGFs and other mission locations
+- Animation - Weapons - All weapons are held like a pistol whilst moving in EVA
+- Hijacked Reclaimer - Datahunt - Mission/Design/locations - Player may get a crime stat after completing the final objective
+- Missions - Bounty / Mercenary - Dying in lawful UGF missions causes player to respawn at Grim Hex
+- Ghost Hollow - Art/Locations - Unwanted trees all over the reclaimer crash site
+- UGF Raid - Missions / AI / Combat AI - Some Enemy AI will not engage Security AI or Players
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- Shopping Kiosk / Multi-Buy - When using the buy Max feature, or buying the max of an item ( 1000 ) - Further attempts to purchase from the store will result in an Inventory Error or Insufficient Stock
+- Ships - Components and interior zones remain when ships are destroyed
+- Ship Features - Elevators _ The Carrack Elevators do not function correctly and appear to desync
+- Missions - UGF Locations - NPCs Not Spawning at Mission Locations
+- Missions / UI - Rescue Beacons do not cancel properly when rescuer gets a crime stat or is sent to Prison
+- Mission  Feature / Mission Content / UI - Downed player UI will not correctly  display the name of the player coming to the rescue
+- When purchasing a rental vehicle from a rental kiosk the money taken will not be displayed properly on the Kiosk or the mobiGlas
+- ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+## Feature Updates
+Gameplay
+- Turret Velocity Pass
+Tuned the turret velocity and acceleration values, such that the feeling and weight of turrets matches their size, and it doesn’t negatively impact aiming experience.
+- Combat Assist Beacon Polish Pass
+Polish Pass for payments received when completing Combat Assistance Beacons. Updated reinforcements for various difficulties.
+- Adjusted "Critical" display status for hunger & thirst widgets to appear at about 25% full (Up from 15%)
+- Added self-destruct timer to the 'Seize the Data' mission when sequence has started
+## Bug Fixes
+- Players should no longer lose control of their mouse cursor when selecting the shopping kiosk text fields
+- Fixed an issue causing AI reinforcements to not exit the vehicle until the Player get within a close proximity
+- Fixed an issue that was causing airlocks to open without requiring players to cycle them
+- 'Restricted Area' warning should no longer occur inside UGFs if player has a lawful mission
+- Collect and Deploy Probe mission marker should no longer disappear near deployment site
+- Ruto breach and steal mission should now in the personal tab
+- Reclaimer Side Airlocks should no longer prevent player entry from EVA
+- Fixed an issue causing some Juice Bars found at several R&R stations to not have anything for sale
+- Morozov-SH Redshift helmet flashlight should no longer be missing
+- Fixed an issue causing a Failed Invalid Location error when trying to buy from various Pharmacy kiosks in the PU
+## Technical
+In this build we fixed an issue that was causing the client crash handler to hang for up to 30 minutes. The crash handler should now take no more than 60 seconds before allowing a submission. If possible please wait the full 60 seconds after a client crash to allow the crash handler to appear. This should help us be able to track down other hanging issues with the client that many players are experiencing.
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed 3 Main thread Deadlocks

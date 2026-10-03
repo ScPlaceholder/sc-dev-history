@@ -1,0 +1,64 @@
+## Star Citizen Patch 3.11.0n
+Alpha Patch 3.11.0n has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.0-PTU.6197507.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Pledge Copy: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Volunteer Regression Thread: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-11-0n
+Testing Focus
+- Origin 100 series ships
+- New Cargo Decks
+- New Space Station layouts
+- BEHR BR2 Shotgun
+- BEHR Grenade Launcher
+- Front End Refactor
+- Exterior Space Station Green Zone Removal
+- Player and External Inventory Interactions
+- Throw T1
+- Force Reactions T1
+- Missile and Countermeasure QOL Improvements
+Known Issues
+- When retrieving ships at New Babbage or Lorville's spaceports, the UI telling you what Hangar your ship is placed is missing
+- The Chaff Counter Measures appear with Placeholder / [PH] CHAFF Text on the Ship Flight HUD
+- Mission givers are leaving their designated areas / wandering from their posts
+- The Bartender will not play a wildline and will sometimes not serve the player when they approach
+- Constantine Hurston is missing the correct skin tone on his face
+- After destroying ship, player will wake from bed in EVA and die shortly after
+- Global chat is unavailable in the visor HUD
+- Character can be two different skin tones and not the gender the player picked
+- The Player is unable to use auto-land within some hangars in New Babbage
+- Ships landed at Lorville cannot be stored
+- Ship NavMarkers and Target Highlight can become detached from Ships when Pitching Up and Down and traveling forwards
+- The Mantis Snare will not prevent the other player from completing their QT (Short Range QT)
+- Purchasing OxyPens or MedPens from the shelf will not place the item in the player's inventory
+- Pilot of a ship containing a passenger will be charged with Negligent Homicide if their ship is rammed and destroyed by another player
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- mobiGlas 2 advert screen is missing from the elevator interiors and Factory Line exterior
+- Female Shopkeeper has LOD issues which cause AI to have a graphical issue and A-pose from a distance
+- Imprisoned player can log out, customize their character and respawn in the Prison Hub wearing their default flightsuit and gun
+- Ground Vehicles can’t be spawned at Gate 05 in Lorville
+- Star Marine - Player is unable to fire their primary weapon until they switch to their secondary weapon first
+## Bug Fixes
+- Fixed an issue causing 10003 and 16008 error upon launching the game.
+- Players should no longer have to click twice on the main menu to select an option.
+- Users should no longer occasionally die when exploring around New Babbage Plaza.
+- Player should no longer be killed when walking to or from any of the landing pads at Port Olisar.
+- Fixed an issue that allowed FPS mined minerals/harvestables to be repeatedly, infinitely re-sold.
+- Icon showing ships location should no longer display after entering a ship.
+- The internal "Open Door" / "Close Door" button by the Carrack's ramp should no longer disappear when the door is closed.
+- Fixed an issue causing players to be displaced from their last Position, often intersecting Level Geometry, when recovering Instance after a crash.
+- Landing Gear should no longer clip through the top of the 100 series ships wings during retract / deploy animations.
+- Fixed an issue causing flares to teleport back to a player's hand if thrown.
+- Fixed an issue causing players to not be knocked down by most Ship Collisions.
+- Shop display shelves should now be present in Cargo decks on space stations.
+- Players who leave a ship VOIP channel while still talking should no longer appear to be still talking on that ships UI notification.
+- Face Tracking animations should now work correctly when on the character customizer screen.
+- Moving slowly in a ship into a Restricted Area should no longer cause the player's vehicle to get stuck with the autopilot not moving the ship.
+- Fixed an issue that was causing the Constellation to not be able to fly in atmo around Hurston/Lorville.
+## Technical
+- Fixed 5 Client crashes
+- Fixed 5 Server crashes
