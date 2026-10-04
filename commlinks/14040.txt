@@ -1,0 +1,64 @@
+## Greetings Citizens,
+Last week we wrote to update you all on our work towards patch 12.5 and shared details about how we are going about solving the current multiplayer rubber banding, matchmaking, and connectivity issues. It is with a happy heart that we are able to announce today that patch 12.5 has been reviewed internally and is approved for release to the community. Before we get into what’s new, changed, or otherwise different about 12.5 we would like to express our appreciation to the community. So, thank you for your assistance in finding and reporting on these issues as well as your patience and enthusiasm as we worked through the problems. Without further ado, here is what you can expect from patch 12.5…
+All ships and items have undergone heavy internal testing, we’ve reviewed a bevy of player feedback, and we’ve iterated on changes a number of times. Keep in mind that game balance is an ongoing process and will never be hit perfectly the first time, especially with the complexity of our ships and their simulated systems. With top to bottom changes of virtually every tweak-able value on every ship and item what we’ve ended up with is the most balanced multiplayer dogfighting that we’ve had to date and we look forward to your continued feedback on this.
+As many of you know, when we released patch 12.4 we increased the number of backers participating in multiplayer testing eight fold. When we did, the increased community participation exposed many weaknesses in our nascent backend and matchmaking systems that did not manifest until we reached much higher numbers of concurrent players. For patch 12.5 we’ve diagnosed and addressed most every problem that the increase in players had exposed. For players this means that you will connect successfully to a match much more often, experience far fewer random disconnects, and in the event you are disconnected you will be able to rejoin the match much more readily. On top of this we’ve also better stabilized the game servers and resolved most all of the known crashes. Suffice to say that 12.5 should bring a much more stable and reliable multiplayer experience for you.
+Surely if you’ve been reading our updates on 12.5 you’ll know that one of our major focuses for this patch has been to resolve the persistent rubber banding issues that players are encountering in multiplayer. In our quest to resolve this particular issue we’ve investigated down many paths and put in place many potential fixes. Over the course of the past weeks we’ve been all through the IFCS code, network code, game server code, and many of the associated systems. We’ve been resolving issues and improving/hardening each system along with adding a menagerie of useful debug tools that we’ll carry into the future. While not all of these fixes have been successful at addressing rubber banding specifically, they are all included in the current patch and do in fact resolve issues or otherwise improve the multiplayer game and improve the resilience of the systems.
+Now specifically to the solution for rubber banding. We are now at a point where we feel like we have made such a significant improvement to the rubber banding (position/rotation/velocity divergence) that we want to get it into player’s hands. We’ve significantly reduced the occurrence of the divergence and also implemented systems to correct it much more quickly and seamlessly. Throughout this process we have also identified areas in which we could further improve synchronization for future iterations of Arena Commander and eventually the Persistent Universe. These future changes include dead reckoning to increase the visual quality of ship movement while simultaneously reducing the amount of data sent to the game clients, along with adding time synchronization to allow the client to display the current game state sent from the server more accurately. In addition, we plan to expand the physics based prediction for dead reckoning by adding spline based prediction, making remote ship movement look even better. Getting this perfect (as humanly possible) is our goal for our players and for Star Citizen. So while patch 12.5 greatly improves the rubber banding issue and for most should hopefully reduce it to a point of being unnoticeable we aren’t going to rest on our laurels.
+Now for some fun stuff! Patch 12.5 also includes the Jukebox for subscribers to listen to their favorite music in their hangar. There is also a new Vanduul to be on the lookout for, see if you can spot it. We have also included a variety of smaller bug fixes and tweaks to ship models, sound effects, damage states, and visual effects as well as hit/impact reactions to generally improve the overall feel and experience.
+You can find the full patch notes below and thank you again to all our community for your help in testing the game at such an early stage! Because of this amazing community we are not only able to build our collective dream game but also make sure that our game performs and lives up to our vision. We feel privileged to have a community that is so actively involved and truly appreciate everyone’s ongoing support throughout the development process. Patch 12.5 is now released we hope that everyone enjoys the update and we hope to get the rest of the community into the multiplayer testing as quickly as possible following these improvements.
+Cheers,
+Travis Day
+## Additions/Improvements
+- Added subscriber jukebox
+- Adding visual and auditory feedback for incoming fire and weapon impacts
+- Missile sounds polished and improved
+- Additional shield sounds added (power down, power up, taking damage)
+- Added new Vanduul ship designated [REDACTED] by UEE Naval Command
+- Added Victory/Defeat/Draw messages on end of round scoreboard
+- Added voice over announcement to denote which team has won the round
+- Added additional Hornet top bar warning lights
+- Freelancer bunk beds can now be used
+- Freelancer bathroom and toilet can now be used
+- Revised for Aurora interior to increase fidelity
+- Added Aurora warning indicator lights
+## Networking Improvements/Fixes
+- Fixed issues that resulted in being kicked back to hangar during match load
+- Positional correction fixes to reduce rubberbanding
+- Failed connection attempts to HubServer will now timeout after 10 seconds
+- Removed socket disconnections due to login timeouts
+- Networked physics is now independent of framerate
+- Reduced server load caused by console logging
+- Creation of http interface to capture server statistics
+- Fixed players not connecting to matchmaker
+- Added a handshake system to guarantee the correct initialization of servers
+- Server-to-server connection improvements
+- Adjusted ship network packet priorities
+- Fix for disconnections while in the hangar
+- Reworked network correction to use network sync’d packets and direct physics pushes instead of IFCS system
+- Greatly reduced hitching and performance issues associated with players joining or exiting a match
+## Fixes
+- Mantis cannons no longer takes damage without overheating
+- Player can no longer zone into a match standing in the cockpit
+- Helmet is no longer invisible
+- Fixed 300i landing gear placement
+- Fixed rare crash when loading into Vanduul Swarm
+- Fixed crash when receiving connection error
+- Fixed crash caused by players spawning on top of each other at beginning of map
+- CPU optimizations to improve client performance
+- Gatling gun audio stops when no longer firing
+- Destroying an asteroid no longer counts as a final kill
+- Energy bolts now scale properly when fired to the side
+- Winning music no longer plays at match end for losing team. You get nothing, you lose, good day sir.
+- Fixed ships in holotable no longer showing hologram model
+- Notifications, points, scoreboard and timer should now be shown in third person
+- Player movement prevented when interacting with helmet stand
+- Friendly killed audio no longer plays Hostile Eliminated, Target Destroyed or Enemy down
+- Removed use icon on ladder
+- Correct game mode descriptions added in Arena Commander UI
+- Adjusted bloom of objects on radar
+- Projectiles scale properly when firing in decoupled mode
+- Particle emitters now properly destroy themselves, reducing lag
+- Ship Energy system optimizations
+- Fix for sound velocity/speed being calculated incorrectly if its position is changed multiple times per frame.
+Whew! And that’s the short list. You can find the complete list of updates and fixes in the official Release 12.5 patch notes.
+The Star Citizen team will be observing the impact of today’s patch on the general public over the weekend. If the improvement we’re hoping for translates to Arena Commander ‘in the wild’ then we will prepare to make the multiplayer portion of the game available to further users. If there are further issues, we’ll get to work patching them immediately. Until then… pilots, man your planes!
