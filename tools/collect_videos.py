@@ -119,15 +119,23 @@ def classify(stderr: str) -> tuple[str, str]:
     return "failed", last
 
 
-def run_ytdlp(args: list[str], timeout: int) -> tuple[int, str, str]:
-    """The only place that talks to YouTube. (rc, stdout, stderr); rc 124 on timeout."""
+def run_child(cmd: list[str], timeout: int) -> tuple[int, str, str]:
+    """Run a Python child and read its output as UTF-8. (rc, stdout, stderr); rc 124 on timeout.
+    The child is TOLD to write UTF-8: on Windows a piped Python writes cp1252 otherwise, and a title with a curly
+    apostrophe arrives with the apostrophe destroyed (it did, on the first real run of this tool)."""
     flags = getattr(subprocess, "CREATE_NO_WINDOW", 0)
+    env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONUTF8="1")
     try:
-        r = subprocess.run([sys.executable, "-m", "yt_dlp"] + args, capture_output=True, text=True,
-                           encoding="utf-8", errors="replace", timeout=timeout, creationflags=flags)
+        r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace",
+                           timeout=timeout, creationflags=flags, env=env)
         return r.returncode, r.stdout or "", r.stderr or ""
     except subprocess.TimeoutExpired:
         return 124, "", f"ERROR: TIMEOUT after {timeout}s"
+
+
+def run_ytdlp(args: list[str], timeout: int) -> tuple[int, str, str]:
+    """The only place that talks to YouTube."""
+    return run_child([sys.executable, "-m", "yt_dlp"] + args, timeout)
 
 
 def acquire_lock(path: Path):
@@ -681,6 +689,11 @@ class Collector:
             self.check_branch(branch)
             self.work.mkdir(parents=True, exist_ok=True)
             (self.work / ".gitignore").write_text("*\n", encoding="utf-8")
+            try:                            # the log never grows past a few MB: keep its newest megabyte
+                if self.log_path.stat().st_size > 3_000_000:
+                    self.log_path.write_bytes(self.log_path.read_bytes()[-1_000_000:])
+            except OSError:
+                pass
             self.recover()
         cool = "" if ignore_cooldown else self.cooling_down()
         if cool:
@@ -698,6 +711,9 @@ class Collector:
             except Refused as exc:
                 self.say(f"Stopped: {exc}")
                 rc = 2
+            except Exception as exc:        # no network at logon, YouTube changed a page... say so and end cleanly;
+                self.say(f"Stopped by an error: {type(exc).__name__}: {exc}")   # what is already written is kept
+                rc = 1
         if self.dry:
             return rc
         try:
@@ -1107,6 +1123,31 @@ def _selftest() -> int:
         assert classify("ERROR: [youtube] x: Sign in to confirm your age. This video may be inappropriate")[0] == \
             "failed"
         assert classify("ERROR: TIMEOUT after 5s")[1].startswith("timeout")
+
+    @case("15 a title with a curly apostrophe survives the trip from the yt-dlp child process into the files")
+    def _(root, tmp):
+        curly = "Grey" + chr(0x2019) + "s Market Basher"
+        rc, out, _err = run_child([sys.executable, "-c", "print('Grey' + chr(0x2019) + 's Market Basher')"], 60)
+        assert rc == 0 and out.strip() == curly, f"the child's output arrived as {out.strip()!a}"
+        tube = FakeTube({V: [entry("NEWvideo001")]})
+
+        def with_curly(args, timeout):
+            rc, out, err = tube(args, timeout)
+            return rc, out.replace("Title of NEWvideo001", curly), err
+        c = collector(root, with_curly)
+        assert c.run() == 0
+        head = (root / "transcripts/whisper/NEWvideo001.txt").read_bytes().split(b"\n")[0].decode("utf-8")
+        assert head == "# " + curly, f"transcript header is {head!a}"
+        assert json.loads((root / "chronology/records.json").read_bytes())[0]["title"] == curly, "records title"
+
+    @case("16 a listing that fails for another reason ends the run with exit 1, no crash, nothing recorded as a bot check")
+    def _(root, tmp):
+        def offline(args, timeout):
+            return 1, "", "ERROR: Unable to download API page: <urlopen error [Errno 11001] getaddrinfo failed>"
+        c = collector(root, offline)
+        assert c.run() == 1, "exit code is not 1"
+        assert "botcheck" not in c.local and not c.state["failed"], "an outage was recorded as something else"
+        assert "getaddrinfo" in (root / "_video_work/collect_videos.log").read_text(encoding="utf-8"), "not logged"
 
     width = max(len(n) for n, _ in results)
     for name, problem in results:

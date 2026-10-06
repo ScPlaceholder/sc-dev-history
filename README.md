@@ -32,6 +32,7 @@ one timeline from 2012 to today.
 | `chronology/devtracker_state.json` | Devtracker backfill position and body status |
 | `chronology/search_index.json.gz` | The compact search index SC Toolbox downloads (built by `tools/build_index.py`) |
 | `chronology/title_patch.json` | Titles recovered for videos missing from the original metadata |
+| `chronology/video_state.json` | Which new videos `tools/collect_videos.py` has transcribed, and which failed and why (so runs resume) |
 
 Transcripts are machine-produced (auto-captions or Whisper) and will contain recognition errors, especially in names
 and ship designations. When it matters, check the video.
@@ -55,7 +56,35 @@ all"), bring them in from your PC:
 
 Posts in private Spectrum forums (Focus Testing, Evocati and the like) keep only the teaser the public Devtracker
 shows; the collector never tries to get past a permission check. Video transcripts are not collected by this
-workflow.
+workflow: see the next section.
+
+## New videos and streams (runs on a PC)
+
+`tools/collect_videos.py` finds CIG's new videos and finished live streams on the official YouTube channel,
+downloads the audio track only, transcribes it locally with Whisper (faster-whisper, on the CPU, at below-normal
+priority), writes `transcripts/whisper/<video_id>.txt`, adds it to `transcripts/whisper/_index.jsonl`,
+`chronology/records.json` and `chronology/playlist_ids_oldest_last.json`, deletes the audio and commits exactly the
+files it wrote. The daily workflow above then rebuilds the search index. It cannot run in GitHub Actions: YouTube
+blocks datacenter addresses, and it needs a local Whisper (`pip install yt-dlp faster-whisper`).
+
+    python tools/collect_videos.py --dry-run     # what a run would download, add and change; touches nothing
+    python tools/collect_videos.py --limit 2     # a real run, at most 2 videos
+    python tools/collect_videos.py --selftest    # every rule against a fake YouTube, no network
+
+Everything adjustable is in `tools/collect_videos.json`: the sources, the date before which nothing is taken
+automatically, the caps per run (videos and audio hours), the pause between downloads, the Whisper model, and
+`"push"`, which is `false`: commits stay local until you push them or set it to `true`. It works one video at a
+time, skips anything still live, and stops for the day if YouTube shows its "confirm you're not a bot" check. A
+video whose download fails is recorded with the reason in `chronology/video_state.json` and retried on the next
+runs, up to three times. Measured on the maintainer's PC (2026-10-06, `small` model, int8, 4 CPU threads): an
+8-minute video transcribed in 47 seconds, about 10.7x realtime, so a two-hour Star Citizen Live takes roughly 11
+minutes of below-normal-priority CPU.
+
+To run it by itself on Windows (a few minutes after logon, then every 6 hours, hidden, never two at once):
+
+    powershell -ExecutionPolicy Bypass -File tools\register_video_task.ps1 -Show   # print the task, register nothing
+    powershell -ExecutionPolicy Bypass -File tools\register_video_task.ps1
+    powershell -ExecutionPolicy Bypass -File tools\unregister_video_task.ps1
 
 ## How it is used
 
