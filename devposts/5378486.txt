@@ -1,0 +1,8 @@
+As explained we have two threads (MainThread and RenderThread) which compute the majority of the game at the moment.
+All other cores are being used by various systems like physics, networking, background loading and much more but have lots of gaps.
+See the attached image i've created with my amazing Paint skillz!xP
+Your CPU performance is determined by the slowest thread, which is usually the MainThread.
+We will get rid of the RenderThread eventually with Gen12&Vulkan.
+Our goal is to parallelize more and more work from the MT, so all cores are evenly distributed in work.
+This means as time progresses our engine will keep scaling better the more cores you have.
+If you really want to go deep, i suggest watching this talk here: https://www.youtube.com/watch?v=SV9_chUpDgc

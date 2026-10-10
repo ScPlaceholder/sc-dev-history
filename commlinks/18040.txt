@@ -1,0 +1,93 @@
+Character Tech Team AMA Recap
+## Each month we host an open submission live Q&A on Spectrum joined by developers from various specialties across CIG. These questions and answers were collected from the Spectrum AMA on March 16, 2021.
+This time, we welcomed four guests from the Character Tech Team, which is the link between purely code-focused programming and creative art. They’re currently working on the character tech pipeline, providing the artists with the tools they need to achieve their visual goals.
+- Andreas Rohr – Principal Technical Artist
+Hey guys, my name is Andreas Rohr and I’m a principal character tech artist/technical animator/tools programmer based in the Frankfurt office. I’m part of the Tech Animation Team, which is split between our Wilmslow, Derby, and Frankfurt studios. Besides working at CIG, I’m a proud veteran Star Citizen backer who hasn’t missed a single Wingman’s Hangar, Around the Verse, and Inside Star Citizen episode since our humble beginnings.
+My main focus over the past years has been developing our in-house facial rigging pipeline/toolset and improving our DNA character customization system.
+I also push our next-gen cloth and hair simulation tech and generally strive to ensure all our animation and deformation systems are both easy and efficient to work with and reach near-filmic quality levels when the big day comes.
+- Chris Van Compernolle – Technical Artist
+Hi, my name is Christopher Van Compernolle, but call me CVC for short. I am an embedded technical artist for the Character Art Team.
+My specialties include rigging, skinning, and coding tools. This includes modular armor, hair creation pipelines, and character optimizations. So if you have any Python tools questions, let’s chat!
+- James Ku – Principal Character Artist
+Hi, my name is James Ku and I’m a principal character artist at CIG. I work in the LA studio with our great group of character artists on the Character Tech Team. My job is to create characters, R&D new tech and software for the character creation pipeline, and set a high quality bar for the look of our characters.
+In the last few years, my primary task has been to focus on Squadron 42, specifically the faces of the main characters. I’ve been working on things like the skin, eyes, and hair of these characters to try to make them more realistic and appealing.
+- Forrest Stephan – Principal Technical Artist
+Greetings citizens! Forrest Stephan here reporting for duty as a principal technical artist at CIG. I am a pipeline supervisor that helps our talented artists bring you the best darn looking pixels possible. I am heavily embedded in the Character Team and support the needs of departments scattered across the globe with character-related requests.
+I have a long investment in development and a huge love for the project as I have been working on Star Citizen since the beginning, starting way back on the original crowdfunding campaign. So whether you want to go down memory lane or chat about the latest and greatest in our character art pipelines, I’m here for you!
+This AMA is complete but keep an eye out for upcoming ones for your chance to ask us anything!
+## Will backpacks also have exterior slots, with visible content (just like the armour)?
+Chris Van Compernolle:
+Yes, we are planning on having physical components on backpacks, just like we do with armors. The backpack itself is actually getting treated as attachable to an armor.
+## Beards?
+Chris Van Compernolle:
+We do plan on including beards and other facial hair in the PU at some point down the line. However, they have many other things in front of it.
+## Any new about the cloth tech animation we saw in a CitizenCon for characters?
+Andreas Rohr:
+Many thanks for this great question and for remembering our little presentation back in 2018 – always happy to see people care about our characters, their animation and deformation quality – and cloth simulation in particular.
+The vcloth (vertex cloth) simulation tech is a great example of priorities shifting over the course of production – which is perfectly normal in game development. In the case of vcloth, the successful roll-out of the feature depends on three main pillars:
+1) The basic cloth solver needs to be implemented by our physics team, needs to have all the core features like tweakable dynamics parameters, collision, self-collision etc. and needs to run fast enough so it can be applied to a reasonable number of characters simultaneously. Apart from that it also needs to be robust and ‘stable’ in the sense of not ‘exploding’ due to the extreme accelerations that can often occur from one frame to the next in the context of games. Lastly, it needs to support the needs of the (tech) art and content centric teams and give them full control over how the cloth behaves and its look and feel, under all the drastically different conditions you’ll end up seeing it in, from fps fights to slow-paced hero cinematic close-ups.
+2) An efficient pipeline between DCC (digital content creation) applications such as Maya and our engine needs to be established, as well as tools on the DCC side that allow efficient setup and markup of the simulation assets. The sheer number of assets in our game requires these solutions to be scalable since once the tech comes online, most existing assets (that are deemed worth it) will need to be moved over, i.e. all current assets that use the old ‘pendulum sim’ system, and then some. Good tools and pipelines glue everything together, it’s where our productivity lies.
+3) Lastly, the assets themselves need to be there and need to be suitable for simulation in terms of how they were built and their structure. If you model, say some trousers that are rather baggy you’ll find that they end up looking pretty bad and unnaturally stiff/rigid in the game if they ‘don’t have sim’ because the solver and pipeline aren’t ready yet. But if you need the outfit for an upcoming release you’ll likely concept and model them with a tighter fit so the deformation/movement will match the expected behavior in motion. However, once the vcloth tech does come online you’ll obviously want assets that allow it to shine and look super cool. You’ll want cloaks and trenchcoats and cool leather jackets and all kinds of dynamic attachments – you’ll want players to want to take off their armor in the landing zones cause it looks 10x cooler and more individualistic. But it’s a all dependency on the solver and pipeline being fully ready.
+At CitCon 2018 we were at a point where they were only about halfway there but initial results already looked so excitingly cool and promising that we wanted to share them with you. What happened then is simply game development.
+The same physics wizards that can give us fancy cloth solvers for cool looking assets are also the folks that implement some core features of our engine which are the foundations for actual gameplay. They work i.e. on physics grids and spatial query acceleration structures which keep track of where objects are in space and whether they collide, are hit by projectiles etc. They are a core component of all AI path-finding logic without which all AI, both NPC ships and agents, would not have any awareness of their environment whatsoever – nothing that could even trigger a behavior/action in the first place. They would just ‘T-pose’, even outside of server perf being an issue, and I guess nobody wants this. So in this case progress on some of the most fundamental systems our games are built upon, was prioritized over the cool shiny stuff, for more than two years.
+As much as the visual tech nerd in me that hand-optimized the config.sys and autoexec.bat files on his DOS-PC in the 90s in order to see the fancy additional effects this enabled in the early Wing Commander games – as much as this part of me would have loved to bring you vcloth on characters by now – the other part of me that wants to see our game come together and Chris’ vision realized, is fully convinced that this was exactly the right thing to do. And to be clear – we’ve obviously already tried to clone our physics peeps in order to speed up the process, but it didn’t quite work out, sadly.
+That being said, work on ‘vcloth’ has been picked up again and will continue, gameplay-related physics-duties permitting. It’s a highly complex technical challenge and we look forward to sharing more visual/tangible progress with you at some point. Bear in mind that not all the teams that take part in this initiative are currently represented on the public roadmap yet, which is due to change though.
+## Are ya’ll committed to making GOOD Black (4C) hairstyles available, besides just afros and braids, such as high-top fades, curly tops, and waves? Tired of my character lookin’ like he permed his hair straight like it’s the 50s.
+Chris Van Compernolle:
+While we havn’t had the opportunity to implement any of these hairstyles just yet, this is definitely something we want to do and is very important to us. We want to make sure we achieve a good representation of these types of hairs styles.
+## Layered armor anytime soon? I would love to use my helmet with my regular clothing or my jacket with my flight suit.
+Chris Van Compernolle:
+Currently there are no plans to do anything like this. Our armors and clothing adhere to a strict set of rules defining how they interact with one another. To allow for the layering of these two systems will require a major refactor of those rules.
+## Hi James Ku, you mentioned R&D’ing new tech. Is there any tech in particular we do not yet know about you could tease us a little on?
+James Ku:
+Sorry I cant post any spoilers, but an example of the r&d that was done in the last two years is the new hair that you’ve seen in SQ42. That involved creating an in house custom art tool to create the hair and new shader tech in the game engine.
+## Good morning Character Tech team! What is the current status of being able to remove/put on our helmets in-game?
+Chris Van Compernolle::
+We are currently in the process of researching how best to handle helmets. There are a lot of dependencies from the artwork, to animation, to UI. Once we have all of dependencies defines, we will begin refactoring all of previous assets to utilize the new tech.
+## Is the new hair tech coming to the PU ?
+Forrest Stephan:
+Hair tech is built to support both SQ42 and PU.
+## Are there plans for deeper customisation options like sliders for each facial feature?
+DNA blending system is great, but sometimes you just want to fine tune a specific feature.
+Andreas Rohr:
+As a general answer to this and other PU character customizer related questions:
+We acknowledge the fact that the current PU customizer is limited in terms of usability and choice, i.e. face options, hair options, beard options and other things.
+It can be considered a v1 of the system – and wherever there’s a v1, there’s likely gonna be a v2 if and when it can be put on the schedule.
+The current PU customizer uses a very old system for drawing and interacting with the UI elements since the new building blocks system wasn’t ready by the time the v1 customizer was implemented.
+As a result we didn’t get the interaction model to be as easy and intuitive as we had wanted.
+The quality of assets in there is not up to the same standards we can achieve internally by now.
+## Can you tell us anything about the progress on alien characters?
+James Ku:
+Once again sorry I dont wanna post spoilers, but as you’ve seen we have worked on the Vanduul. I can say our character artists are always excited to work on creatures and aliens.
+## I believe it’s been said there are problems with creating tattoos. Do you have ideas on how to overcome those problems?
+Do you face the same difficulties with badges for clothes and decals for armor / gear / vehicles or would those offer different problems?
+Forrest Stephan:
+There are two types of decals our character’s shader supports. Stencil decals and diffuse decals. Stencil decals work similar to real-life stencils, think screen-printing or stickers. Stencils do minimal color with a mask to determine where the color is visibly projected. For more detailed art, such as tattoos, diffuse details are required which provide a fuller color and detailed spectrum. The challenge with this is they are projected through UV’s onto the skin diffuse texture. This diffuse decal system requires material variants to support the extra texture slot. This can exponentially increase material counts. How to minimize physical material variants is a challenge we are continually trying to solve.
+## Any update on the holo-skull helmet blockers?
+Forrest Stephan:
+The initial blocker with the hologram helmets was related to the shader’s original design which was built for static objects or RTT projections. We tried it on the skin files and it was unable to animate with the character’s skeleton/rig. We decided to take the shader back to the drawing board and ensure it supports the needs specific to the characters.
+## Hello the team,
+First of all, thank you for taking the time to answer our questions.
+Simple one, what is your top priority at the moment concerning character art ? Do you plan to add more diversity into the character creation tab ? If so, what can we expect in the coming year ?
+Regards
+James Ku:
+Hi, thanks for taking the time to ask us questions in the AMA. I can tell you that my top priority in regards to character art is quality. When I build a character I’m always trying to push myself in terms of quality and set a good example for the team.
+## What lessons have you learned from players using the current character creator? How did they compare to your original assumptions and how will they change what you do going forward?
+Forrest Stephan:
+We learned how important the heads are that make up the pool. The initial selection of heads where arbitrary without taking the customizer into account. Once the customizer was fully functional, we quickly learned the importance of having a variety of shapes since the customer allows interpolation between DNA head shapes, “ex: ears, eyes, nose, etc.”. Having a bigger DNA pool has necessary benefits; The more heads, the larger the variety options between the heads.
+## Will we be able to equip armour for our left and right arms separately?
+Forrest Stephan:
+The armor is broken up in 5 items: core, arms, legs, hands and helmets. There is no armor a-symmetry due to increasing customization further can cause both texture memory and draw call implications which we decided to avoid for performance reasons.
+## What major tech or pipeline improvements are you most excited for to improve your work?
+James Ku:
+Personally, I’ve been recently trying improve my skill with using this art software called Marvelous Designer. We use it a lot to make clothing for our characters.
+Forrest Stephan:
+The authoring of character assets uses a combination of traditional sculpt and baking for normal maps with a shared PBR material library to define the surface of the character using blend masking texture techniques. The authoring of the blend maps required a more intuitive visual workflow than the current Photoshop to engine pipeline. In order to solve this we are implementing a Substance Painter and Substance Designer pipeline for surfacing to allow for 3d painting while being able to visualize the final look of the character simultaneously. This is an exciting pipeline improvement for the artists to allow a nex-gen texturing system to now match a nex-gen authoring workflow.
+## Can we have navy / UEE uniforms please? and berets?
+James Ku:
+Unfortunately I don’t decide what uniforms the players get in the PU. I can say that I worked on a few uee uniforms and I liked working on them a lot.
+## Procedurally generated clothing/armor?
+Forrest Stephan:
+A procedural approach to spawning NPCs built on loadout modularity using a system called “spawn closets” is in the works. In addition, we are expanding the ship tinting system onto the characters to allow for color palette customization.
+## Disclaimer
+The answers accurately reflect development’s intentions at the time of writing, but the company and development team reserve the right to adapt, improve, or change feature and ship designs in response to feedback, playtesting, design revisions, or other considerations to improve balance or the quality of the game overall.

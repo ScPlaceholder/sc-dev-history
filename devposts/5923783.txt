@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.19.0 8465349
+Alpha Patch 3.19.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.19.0-PTU.8465349.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 2
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Testing Focus
+- General Stability
+- Lorville Skyline 2.0
+- Salvage Contract Missions
+- Tractor Beam - T0.5 - Item Attaching and Detaching
+- Ghost Hollow Reclaimer PVP Mission
+- Mission Density Management
+- Mining Balancing v01
+- New Player Experience
+Known Issues
+- AC - PTU/LIVE - WaitForPlayerSpawn Connection Timeout
+- Locations / Terminals - Lorville - New Deal and Vantage Rental Kiosks Are Missing stands but still function
+- Multilocation - Locations / Shopping / Interactions - Pharmacy kiosk terminals "Use" interface and Interactions are misaligned
+- Weapon  Feature / Game Code - Tractor Beam - If you activate the tractor beam  in hangar, you can bring the activated tractor beam back and use it in armistice zone
+- Locations  / Shopping / Interactions - Grim Hex - Skutters - Skutter's second  shopping kiosk has misaligned / offset interaction space
+- Aegis Reclaimer - All Variants - Stanton - Reclaimer main on-elevator control panels do not respond to input
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Multivehicle - Stanton - UI / Vehicles / Mining - Mining UI is appearing in Low Resolution
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Stanton - Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Stanton - Multitool - FPS Hull Scraping - The Salvage attachment has the VFX of the tractor beam and does not function
+- Stanton - Security Post Kareah - Mission Content / Art - VisArea - Contraband screens have a visarea issue
+- Stanton - Yela - Grim Hex - Mission Giver - AI / Missions - Wallace Klim becomes stuck under the floor near the hangars after being streamed out and streamed back in
+## Feature Updates
+Locations
+- Lorville No-Fly Zone Polish to adjust locations and reduce size (Will be further adjusted in later PTU builds)
+- Lorville LOD and Collison Polish Pass
+- Ghost Hollow Location Art Polish Pass
+Gameplay
+- Mining Economy Polish
+Increased full range of mining profit. Added more locations to sell Janalite and one place to buy Iron.
+- Salvage Contract Balance
+Made unlawful salvage contracts available everywhere in Stanton, increased mission lifetime from 5 to 15 minutes, more mission instances generated.
+- Reworked Green Zone system to allow Tractor Beam use in Hangars
+- Tractor Beam UI Polish Pass
+## Bug Fixes
+- Fixed - Reclaimer rear hatch can't be opened from outside/inside
+- Fixed - ArcCorp - Area18 - NPE - UI / mobiGlas- After abandoning the mission, the player is still unable to access mobiGlas tabs
+- Fixed - Area18 - NPE - Locations / Missions - When using an elevator other than the marked elevator the mission marker doesn't update
+- Fixed - ArcCorp - Area18 - Locations - City map screen blank at some distances
+- Fixed - ASOP / UI - NPE - Missions - ASOP Terminals are unusable and fade to black when accessed during phase 3 of tutorial
+- Fixed - Law / Actor Feature - Players dropping an incapacitated player to their death will not be charged with the death
+- Fixed - Expo Halls - Locations / PIT / Armor - Armour can be removed from the Mannequins in the Fleetweek Lobby
+- Fixed - Missions / Salvage Contracts - Salvage Contractor Missions - Players will get a Crime Stat when destroying their own salvage ships
+- Fixed - Multilocation - Shopping/Kiosks - Shop item pictures and descriptions missing
+- Fixed - ASOP / Fleet Manager / UI - ASOP Terminals are unusable and fade to black after renting more than 10 ships
+- Fixed - ArcCorp - Area18 - NPE - Design / Mission - Duplicate consumables spawn on the eat / drink objective
+- Fixed - Hurston - Lorville - Restricted Area warning on Lorville landing pads, teleporting player away and impounding ship immediately
+## Technical
+- Fixed 2 Client Crashes

@@ -1,0 +1,41 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12456044
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (reputation speed increase for PTU testing)
+- Wikelo Inventory Updates
+Known Issues
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Feature Updates
+Siege of Orison: Mendo Ren Balance
+Mendo Ren's accuracy was a bit much in previous PTU releases. We have done some accuracy and firing behavior updates in tonight's PTU that should have a noticeable affect on the balance.
+ASOP Terminal
+Claim button labels now correctly display "Claim Insured Loadout" and "Claim Default Loadout" instead of showing a generic "Claim" label for both options
+## Bug Fixes & Technical
+- Fixed 1 Server Crash
+- Universal corpse cleanup: Corpses in tonight's PTU build will cleanup on a set 10 minute timer instead of not cleaning up at all. This is currently an aggressive timer for testing and is global to all AI (includes bosses and ship pilot corpses). Let us know how much this short timer is doing as we will be looking for feedback!
+- More instance performance improvements, entity cleanup, and fixes
+- Particle effects across the game updated to stream textures correctly, reducing memory overhead from effects that were previously loaded as static non-streamable assets
+- Further instance handling improvements
+- Potential Fix: All active Siege of Orison instances simultaneously collapsing and becoming unphysicalized, causing all players inside to fall to their deaths
+- Potential Fix: Players crossing from the dogleg transition instance into the main Siege of Orison instance not transitioning correctly on the server side, causing desync and damage when moving through the barrier
+- Potential Fix: Siege of Orison Command Center entrance airlock not resetting after a player died and respawned inside it, permanently blocking other players from entering
+- Potential Fix: Battaglia Story Mission 2 "Emergency: Blinding Hope in Trouble" not appearing in the mobiGlas after completing Story Mission 1
+- Potential Fix: Collision missing at the Battaglia office exit in Levski which could cause players to fall through the floor when leaving
+- Potential Fix: Siege of Orison dogleg staircase missing collision after transitioning to the main instance, causing players to fall through
+- Potential Fix: Loot boxes not spawning at multiple locations
+- Potential Fix: Freight elevator platform getting permanently stuck showing "Transferring..." after lowering mission cargo and then attempting to raise it again
+- Potential Fix: Players able to clip through pinched collision proxies in various locations due to an aggressive tunnelling prevention algorithm; the tunnelling prevention logic has been disabled pending a rework
+- Potential Fix: Refueling missions showing 0 SCU of hydrogen required in the contract description for some Rank 3 Urgent Convoy Refuel missions
+- Potential Fix: Battaglia Story Mission 2 hook audio line playing when accepting the mission instead of the correct mission accept line

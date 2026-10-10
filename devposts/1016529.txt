@@ -1,0 +1,95 @@
+## Star Citizen Patch 3.1.0
+Alpha Patch 3.1.0 has been released and is now available to test! Patch should now show: PTU-733018
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- 40014 will cause a client crash. W/A: If this occurs, wait 10 minutes and relaunch.
+- The missing person/crew missions immediately abandon after accepting.
+- IFCS fixes are still pending.
+- Some ships still intended are missing (Reclaimer, Terrapin) while awaiting some final bug fixes.
+## New Features
+General
+- Added a logout timer when logging out in range of other players.
+- Implemented the Character Customizer.
+- Players will be required to create a character when attempting to access the "Universe" menu.
+- Available to customize: Head, eye color, hairstyle, hair color, and skin tone.
+- Once selections are made, players can "accept" or "revert" back to default.
+- After a custom character is created, that character will be used for all game modes.
+- Character's can be changed after being accepted via the "Character Customization" tab on the "Universe" menu.
+Universe
+- Safe/persistent logout locations: Ship beds, major stations (Levski, GrimHex, Port Olisar). Note: These logout locations should persist between sessions.
+- Added the ability to earn virtue reputation for killing NPC pirates.
+Ships and Vehicles (coming soon, but not part of initial focus)
+- Added: Tumbril Cyclone.
+- Added: MISC Razor.
+- Added: Nox Kue
+- Added: PRAR Distortion Scattergun including size 4(Salvation), size 5(Absolution), size 6(Condemnation).
+- Added: APAR Ballistic Scattergun including size 1(Havoc), size 2 (Hellion), and size 3 (Predator).
+- Added: KBAR 10-Series Greatsword (size 2)
+- Added: GATS Yellowjacket Ballistic Gatling (size 1)
+- Added: KLWE CF-447 Rhino Repeater (size 4)
+- Added: Omnisky IX Laser Cannon (size 3)
+UI
+- Added visual change to better indicate when the player is in "focus mode" of interaction mode.
+- Replaced old combat markers with new 3D markers including target brackets, hit indication, and missile locks.
+- Added outline and further polish to target/self visor screens including additional hit effects for shields and hull areas.
+- Added an additional MFD screen to customize the view angles of the target/self visor screens.
+Star Marine
+- Added: KSAR Custodian.
+## Feature Updates
+General
+- Removed the port modification system from all vehicles.
+- There is now an interaction trigger to exit a usable (seat, stool, ect.).
+- Reduced the sideways sway of the camera during breathing.
+- Minor adjustments to options menu text to increase readability.
+- Updates to AI behavior relating to accuracy variability and missile usage, along with bug fixes.
+Universe
+- Expanded the interactable seating in GrimHex.
+- Increased the brightness of the interaction highlight on GrimHex's elevator buttons.
+- Lock on interactions during quantum travel to prevent passengers from climbing out mid-travel.
+- Improved GrimHex audio ambience.
+- Expanded seating usables and updated some interaction points in Port Olisar.
+- Lowered the virtue cost for ramming and removed the virtue pentalyt for illegal parking.
+- Updated lighting within Levski hangars.
+- Updated the various shopkeepers with additional performance capture and dialogue.
+- Updated surface textures and topography of Crusader's moons.
+- Expanded the "00" landing pad at Port Olisar to accomodate the Reclaimer.
+- Additional environmental missions added.
+Missions
+- Polish to admin NPC animations.
+- When first opening the MobiGlas the contract maanger should now display the first mission.
+- When accepting a mission, the MobiGlas contract manager automatically displays that missions objectives.
+- Updated missions with additional dialogue.
+- Reduced the virtue penalty for criminal missions and added virtue reward for killing criminal players.
+FPS
+- Improved the planetside audio effects for all first person weapons.
+- Removed UI shake from weapon recoil animations.
+UI
+- Various menu and MobiGlas audio fixes and improvements.
+- Visor's target/own screens should now default to the "live", rotating view.
+- The VMA should now function while in the hangar.
+- VMA and PMA now use RTT.
+- Improved character lighting, color, and brightness for the PMA.
+Ships and Vehicles
+- Updated glass shader on MFDs for the following ships: Vanguard, Cutlass, Prospector, 85x, Hornet F7C, Nox, Dragonfly, 300 series, M50, Prospector, Gladius.
+- Increased the power draw of the EMP when charging, increased the cooldown after use, lowered distortion damage.
+- Added new distortion values to all ship items capable of taking that kind of damage.
+- Increased the self-destruct timer length on ships that require multiple interactions to exit.
+- Increased the EM and IR signatures on countermeasures altered ship countermeasure sizes and loadouts to better reflect their relative signatures.
+- Reduces shield health, updates shields to operate as independent faces for regen, increased setback, lower regen and regen acceleration.
+- Adjusted countermeasure signal decay to reduce the need to spam CMs to divert missiles.
+- 300 series: Increased the hardpoint size of all gun mounts: 325A: Nose S4, wing S3. Other 300 series: All mounts S3. Updated fuel usage and retuned atmospheric flight.
+- Decreased the spread on the Sawbuck repeaters.
+- The Scorpion Gatling is can now be mounted on any size compatable hardpoint.
+Arena Commander
+- Removed ejection ability from multiplayer modes.
+- Allowed the Prospector to be selected in race modes.
+- Players will now periodically gain lives during swarm modes.
+- Removed the interaction nodes for open/close esterior and lock/unlock ship in competitive multiplayer.
+- Reduced the health of Vanduul scavengers.
+Star Marine
+- The prior loadout customizer has been replaced with management system mirroring the PMA app of the StarMap.
+Cargo and Trading
+- Kiosks should now display first two digits after decimal place under buy/sell price.
+- Altered the despawn timer on cargo so it will persist for longer.
+- Various polish to box carry animations and placing.
+- Added a holo effect to held items when attemtping to "place" them so players aren't visually blocked by the held item. Added a "quick place" mechanic where you can hold LMB to start placing (don't need to select the place interaction).

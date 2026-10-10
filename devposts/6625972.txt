@@ -1,0 +1,67 @@
+## Star Citizen Patch 3.22.1
+Alpha Patch 3.22.1 has been released and is now available to test on the LIVE Environment!   Patch should now show: VERSION 3.22.1-LIVE.9097523-9107126.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here %localappdata%\Star Citizen.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+3/14/2024 - LIVE Has been hotfixed with build 9097523-9107126
+Known Issues
+- Anvil Hornet Series -  PU - Vehicles / FPS Weapons - MultiTool - Tractor Beam - The ball turret  and nose canard cannot be targeted by FPS tractor beam
+- Anvil Hornet - PU/AC - Vehicles / ball mount - Ball  turret and specialty fixed mount sits high and not nested into the ball  slot correctly
+- The San'tok.yai and X1 flight tuning is not fully complete and will require tuning in a later release
+- The Final Boss NPC won't spawn during the Illegal Retrieve Consignment Mission (Legal version still spawns correctly)
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend (STARC-86292)
+- Stanton - Ship to Station Docking - Docking arm on LEOs does not disengage correctly, causing the ship to be impounded (STARC-49759)
+- PU - Locations - Transit - Elevators - Elevator is missing, no carriage, mesh or doors and player falls through if they walk in (STARC-62581)
+- PU - Multiweapon - Multiple weapons do not have recoil when shot (STARC-94529)
+- PU - Locations / Missions / AI - Too many AI are spawning during the Additional Derelict missions (STARC-73170)
+- PU - Stanton - Locations / UI - AR Marker showing your assigned hangar does not appear (STARC-83819)
+- PU - Stanton - Actor Status / Medical / Respawn - Unable to move after respawning and long load times (STARC-81772)
+- Multivehicle - PU - Vehicles / Physics - Vehicles with revised ground vehicle physics suffer excessive vibration at low speeds or when stopped (STARC-82528)
+- PU - Stanton - RSI Constellation Series - Vehicles / Docking - Snub Fighter cannot request docking clearance (STARC-86519)
+- PU - Stanton - Locations / Interactables / Actor - Comm Array - The insert interaction for the cryptokey occasionally lost (STARC-92241)
+- PU - Stanton - Derelict Settlement - Multiple Locations - AI - AI are spawning together in group and they can be slow to leave their spawn points (STARC-95361)
+- New Player Experience - Players can spawn with unintended armor on
+- PU - Stanton - Actor - Players can become stuck in bed upon login (STARC-96822 Fixed in Later Build)
+- PU - Stanton - Mining / UI - Player is unable to mine asteroids as scan info does not appear (STARC-97113)
+- PU - Stanton - Starmap - Locations / UI - Multiple Derelict settlement's QT markers are not present on the starmap as intended (STARC-96240)
+- MULTIVEHICLE - PU - Vehicles / VFX - Vehicle debris detaches from the ship skeleton on hard death leaving floating VFX and art floating in mid-air (STARC-93866)
+- PU - Controls - Keybindings - Double Key bind / Modifiers Not Working (STARC-94351)
+## New Features
+Ships and Vehicles
+- Added New Ship: Anvil F7C Hornet Mk II
+## Feature Updates
+Gameplay
+- Gravlev Balance Updates
+Updated acceleration restrictions to gravlev player height changes. Full Balance Pass for performance changes for all gravlev vehicles.
+- Distortion Temporary Changes
+Distortion damage has been effectively removed from all item except power plants and dashboards. This is a temporary measure until we rework how distortion damage penetrates vehicle hulls. Shields now have a 75% to 95% resistance against distortion weapons (based on power triangle assignment).
+- Updated mining item descriptions and HUD to reference Inert Material Level instead of filtering
+- Added a mild push impulse force on catastrophic shatter of mineables (with a smaller force for FPS variants)
+## Bug Fixes
+- Fixed an issue that could cause aUEC purchased ships to be lost from LTP after a patch
+This LTP bug fix will take affect going into future updates but not going into 3.22.1. This issue was sometimes causing ships that were insurance claimed to become unsaved from LTP unless the ship was ASOP spawned and then restored into a location.
+- UGF Elevators should no longer go missing
+- Fixed an issue causing the Klesher elevator to not be present for players exiting prison
+- Mercury Star Runner AI in HRT Bounty Hunter missions should no longer spawn as civilians
+- The "Perform Treatment" text should now appear correctly when using the treatment menu in medical beds
+- Fixed an issue causing the "Target Attackers" hotkey to not select the target that is target locking onto you
+- Fixed an issue causing some hostile AI drop their weapon when entering combat
+- Emitting flares/decoys from large ships should no longer cause massive server hitching
+- Distortion damage should no longer cause severe performance decreases proportionate to ship size
+- Esperia Blade should no longer be missing its personal storage
+- Toggling the Engine of Ground Vehicles should no longer cause the Engine SFX to Play at full volume, even when idle
+- Fixed an issue causing invulnerable areas around weapon Syulen hardpoints
+- The Proximity sensor doors on the Drake Corsair should now properly respond to players
+- Fixed an issue causing the Reclaimer bridge to fill up with fog when quantum traveling to MIC L1
+- The interior ambient machinery audio volume should no longer be overly loud in the Hercules Starlifter
+- Fixed an issue causing the ROC Mining Laser to not be able to be activated
+- Fixed an issue causing all energy-based weapons to show "0/0" in Ammo count on ships and not be able to fire
+- Fixed an issue that could cause Refinery Kiosks to be stuck at "Signing out"
+- Player tractor beans should no longer fail to work on a container if multiple players interact with the same cargo container using a Tractor Beam at the same time
+- Players should no longer be able to land ships at the transit platforms of the Lorville Central Business District, blocking access to the entire area
+- Fixed an issue causing the small windmill towers around the derelict settlements to be missing collision
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 4 Server Crashes
+- Fixed a Server Deadlock

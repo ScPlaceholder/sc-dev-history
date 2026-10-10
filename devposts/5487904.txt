@@ -1,0 +1,19 @@
+That's correct. Gen12 is split across many patches.
+The first Gen12 code was in 3.14 which was just post processing effects.
+3.17 had all static geometry rendered with Gen12 but transparent objects and other stuff was still on legacy.
+3.18 will have all scene geometry and many more passes rendered in Gen12.
+On top of that we managed to get the pipeline centric rendering working as well, which is a very specialized codepath to render one single view (imagine the main view or an rtt or a cubemap).
+Both of these combined and no longer having to render legacy+gen12 at the same time will improve RenderThread performance massively.
+How much this will have an affect on your overall framerate we still don't know. We've never tested it in a full release environment, but im eager to see some analysis from you once it's in your hands:)
+There are still a few more passes to port:
+- GPUSkinning
+- Lensflares
+- Damagemap rendering
+Expect to see that in our monthly reports the coming months.
+But 3.18 is the biggest milestone for Gen12. This marks the point where we can finally get rid of all the legacy rendering code and that is a LOT.
+Porting everything to Gen12 is mandatory to get vulkan fully up and running.
+Also let me emphasize again that the current Gen12 renderer hasn't been optimized at all.
+Expect to see some big performance improvements to our renderer in the upcoming patches after 3.18.
+Again: How much this affects your FPS i do not know. It's a very complicated topic.
+For more and deeper information i recommend my Gen12 update i did a few weeks ago: https://youtu.be/-0cIaf3mPLw?t=372
+Silvan

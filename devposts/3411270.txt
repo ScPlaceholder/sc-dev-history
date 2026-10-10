@@ -1,0 +1,66 @@
+## Star Citizen Patch 3.11.0k
+Alpha Patch 3.11.0k has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.0-PTU.6167935.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Volunteer Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-11-0k
+Testing Focus
+- New Cargo Decks
+- New Space Station layouts
+- BEHR BR2 Shotgun
+- BEHR Grenade Launcher
+- Front End Refactor
+- Exterior Space Station Green Zone Removal
+- Player and External Inventory Interactions
+- Throw T1
+- Force Reactions T1
+- Missile and Countermeasure QOL Improvements
+Known Issues
+- The Player gets an infinite load screen when attempting to Load into PU after Logging Out of a Ship Bed
+- CPU usage can reach 100% while just idling in game (please let us know if this is happening in the regression)
+- Mission givers are leaving their designated areas / wandering from their posts
+- NPCs walking around the exterior of the CBD are not posing correctly
+- Ships landed at Lorville cannot be stored
+- Polygon spikes are seen on Hurston
+- HUD elements for enemy ships are massively offset at ultrawide resolutions causing them to be invisible to the player
+- Ship NavMarkers and Target Highlight can become detached from Ships when Pitching Up and Down and traveling forwards
+- The Player Can Spawn in a Dead State unable to interact or Respawn
+- The Mantis Snare will not prevent the other player from completing their QT (Short Range QT)
+- Turrets don't always open fire after respawning
+- Purchasing OxyPens or MedPens from the shelf will not place the item in the player's inventory
+- Players are timed out of using a Kiosk or an ASOP terminal after 1 minute when interacting with it
+- Constantine Hurston is missing the correct skin tone on his face
+- Specific sentry turrets take no damage against missiles & torpedos
+- There are multiple AI characters standing on top of seats when an OC is streamed back in
+- No charges are given to a player that rams and destroys another ship with players
+- Pilot of a ship containing a passenger will be charged with Negligent Homicide if their ship is rammed and destroyed by another player
+- Ramming and destroying another player with a ship does not generate a crime
+- Various tables and chairs around Promenade and Commons have template chairs and replaceme texture
+- Some ships and vehicles can be left in a broken state after spawning
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad
+## Feature Updates
+Locations
+- Added scrollbar to prison commissary machines and updated the opacity of several aesthetic elements.
+Gameplay
+- Sentry turrets at rest stops and space stations now have proximity guidelines that will cause them to explosively self destruct if too far away from their post.
+- SFX pass on updated incoming missile UI.
+## Bug Fixes
+- When building Heat at Low Orbit Stations, Security Patrols should now correctly show up to engage players.
+- Fixed an issue causing player's loadouts not to change If they Exit to Menu/Disconnects/Crash during the Loading Screen out of Prison.
+- Fixed an issue that could cause a large, stationary arrow to appear in front of your ship when targeting an enemy ship.
+- Fixed an issue that was causing S10 turrets at rest stops to not pitch and fire at at their full intended angles.
+- Fixed an issue with aim assist not functioning when targeting station turrets.
+- Turret Ramming should now correctly give a crime stat.
+- Fixed an issue that could cause thrown flares and boxes to teleport back to players hands.
+- Fixed a brightness and irradiance issue with the dark sides of microTech's moons 4b/4c so they no longer have zero visibility at night.
+- Camera should no longer follow mouse inputs when using External Inventory while in EVA.
+- Fixed an issue causing the priming animation on grenades to trigger multiple times when rapidly pressing a mouse button.
+- Fixed an issue with weapon looping fire events double triggering causing a very noticeable spike in volume after a certain distance from the listener.
+## Technical
+- Fixed 1 Client crash
+- Fixed 1 Server crash
+- Fixed 2 Server Deadlocks

@@ -1,0 +1,24 @@
+Hey everyone!
+It's time for another update on Gen12 as a lot of exciting things has been happening behind the scenes and we've been hearing a lot of voices in the community about the recent performance improvements.
+I'm proud to announce that our first big milestone has been reached with Gen12 in 3.17!
+This means all our opaque static geometry, which are brushes and all objects scattered on planets+asteroids, now run through Gen12 which more than doubles the RenderThread (RT) performance for these kind of objects.
+Before you freak out, hold your breath as this right now actually means nothing in terms of getting more FPS.
+Internal measurements showed that we are rarely CPU bound by the RenderThread.
+Ultimately this means that a faster RenderThread doesn't change the overall framerate in most cases. It also depends on your CPU/GPU combination.
+However, Gen12 pretty much makes it impossible to be limited by the RenderThread ever again,
+which means every single bit of performance improvements on the MainThread (MT) will be seen directly on your FPS as long as you are not GPU bound.
+Something which a lot of you already have observed in our latest 3.17 PTU  Patch.
+The performance improvements you're seeing are from @ChristopherBolte who did some major improvements
+in the Entity Centric (ECUS) System, Zone Host Updates and a lot of other stuff improving the MT performance greatly.
+Here are more Gen12 Updates:
+- Internally all Renderproxies like ships, characters and Planets are already going through the Gen12 Pipeline. They didn't make it for 3.17, but will be ready for the next big patch.
+> I've heard a lot of ships on screen tend to be heavy on the RT, so ship meetups and the like might get big benefits (would appreciate if someone can test this then!)
+- We're about to turn on Gen12 for Cubemaps+RTTs as well which let's us kill a lot of legacy code!
+- Some stuff still needs to be ported like all the Planet atmosphere passes, GPUSkinning and GasCloud rendering, which will all be started soon.
+- Major work on the transparent geometry has been started. This is the last big milestone we have to finish.
+So all in all Gen12 is looking really promising right now. RT performance is more than twice as good and we're almost done with everything.
+As explained in my previous post (https://robertsspaceindustries.com/spectrum/community/SC/forum/50259/thread/current-and-projected-cpu-core-and-thread-count) after Gen12 there are still tons of other improvements planned which will give us even more performance. And of course Vulkan!
+One more thing: Due to the mixed rendering of legacy+Gen12 the engine right now has to go through both rendering codes which actually decreases the MainThread performance slightly.
+Once the transparent geometry is ported, we no longer have to do that and we will see the full potential of Gen12. Until then, stay tuned and fly safe!
+See you in the verse~
+Silvan

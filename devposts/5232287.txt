@@ -1,0 +1,37 @@
+## Star Citizen Patch 3.17.2o
+Alpha Patch 3.17.2o has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.17.2-PTU.8139394.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Audience: All Backers
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 10,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- Turret Acceleration changes
+- Derelict Reclaimers V1
+- Derelict Colonialism Outposts
+- New Space Stations and Lagrange Points
+- Grim HEX Hospital Expansion
+- Combat Service Beacons V2
+- Illegal Collect and Delivery Missions
+- Player and AI Networking Updates
+Known Issues
+- Stanton - Network - Actors are teleporting around after networking updates (Ongoing improvements and testing)
+- Missions / AI / Combat AI - Some Enemy AI will not engage Security AI or Players
+- GrimHex - Atmosphere - Several locations at grimhex do not have an atmosphere
+- Animation - Weapons - All weapons are held like a pistol whilst moving in EVA
+- Seize the Data - Mission Feature / Law / Criminality - Destroy the Reclaimer Objective Results in CS2 for destruction of vehicle
+- UGF Raid - Missions / AI / Combat AI - Some Enemy AI will not engage Security AI or Players
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- Ships - Components and interior zones remain when ships are destroyed
+- ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+- Missing Ships on SCOUNDREL PACK (and others) on PTU 3.17.2 (This is a PTU only issue that is being worked on)
+## Feature Updates
+Bug Fixes
+- 'Restricted Area' warning should no longer appear for players who re-accept a shared mission after abandoning it
+## Technical
+- Fixed 1 Client Crashes
+- Fixed 3 Server Crashes

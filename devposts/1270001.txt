@@ -1,0 +1,46 @@
+## Star Citizen Patch 3.2.0j
+Alpha Patch 3.2.0j has been released to PTU, and is now available to test!  Patch should now show: PTU-791185.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- There's an issue where the UI is showing all nodes for mineable rocks regardless if one is actually there.
+- Escort missions do not progress past the rendezvous stage.
+- Purchasing Commodities at GrimHex for your ship will cause it to be 'destroyed' and have to pay the insurance claim, along with losing the cargo.
+- If the master ship player enters QT after calibrating/spooling for a group quantum link, but leaving one more more members behind, the party will have broken quantum travel functionality.
+- Its possible for the master ship in a quantum link to send calibration data from far outside the intended range, breaking the link interaction.
+- Some features may be missing or partially implemented, but not ready for testing and as such are not listed in the initial release notes.
+- Gimbals are currently locking onto AI ships when activating gimbal lock.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- New "destroy probe" mission.
+- Mining: Scanning, mining, extraction, and Prospector function.
+- Flight and function of the following: Avenger series, 600i, Eclipse, Blade.
+- Orbital quantum travel.
+- G-force effects.
+- Ship power tuning and power triangle usage/effects.
+- Manned and remote turrets.
+- Group system.
+- Quantum linking.
+## New Features
+General
+- Added "make party leader" option to mG commslink.
+UI
+- Added UI prompts to notify the player when items are reaching their overheated state.
+- Added quantum drive cooldown to the UI.
+## Feature Updates
+Ships and Vehicles
+- Added range to mineable rock marker.
+## Bug Fixes
+- The Terrapin headlights should now be able to switch on or off.
+- Mineable rocks should no longer only appear behind the player after scanning.
+- Mineable rock scan markers should no longer appear for players on foot or in non-Prospector ships.
+- UI hints should no longer remain onscreen until hints are disabled.
+- The mG commlink "invite to party" should now function if the player is in a separate instance.
+- Ships spawned from the ASOP terminal should no longer flight ready in SCM mode.
+- Shopkeepers should have their eyes back.
+- PMA port names should no longer have placeholder text.
+- Nearby ships should once again show up at outpost commodity terminals.
+- ESP should no longer cause oscillation around the target (over-aim and under-aim).
+Technical
+- Fixed 2 client crashes.
+- Fixed 3 server crashes.

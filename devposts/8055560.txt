@@ -1,0 +1,68 @@
+## Star Citizen Alpha Patch 4.2
+Alpha Patch 4.2 has been released to All Backers!  Patch should now show: VERSION 4.2.0-PTU.9856488.
+- Audience: All backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Storm Breaker All Phases
+- Lazarus Facility Freight Elevators
+- Apex Valakkar
+- Dynamic Rain
+- Radiation
+- VOLT Laser "Prism" Shotgun
+- ARGO ATLS IKTI, IKTI GEO, IKTI Rad (Version Found at Storm Breaker)
+- New Wikelo Ship Additions
+- New Hairstyles
+- Sterling Exploration Suit
+## Known Issues
+- PU - Orison - Locations / Transit - Some parts of the shuttle ramp has no collision
+- PU - Weapons / Reload - Audio / SFX - Permanent Ammo Repool Audio loop after spawning
+- PU - FPS - Heart monitor beeping never stops after being revived
+- PU - Storm Breaker - locations - Valakkar - Adult valakkar are spawning in the air the ground is sloped behind the tower
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+## Features & Gameplay
+Gameplay
+Storm Breaker and ASD Location Polish
+Updated ASD Facility Freight Elevator to be one way out to the transport hub. Further LOD, Lighting, Art, and Performance Optimizations at ASD Locations.
+Locations
+- Further Exterior Proxy Polish Pass to Space Stations and Landing Zone Locations
+Further Rain Polish
+Better balancing of the near and far effects, so the camera blur issue looks less skittish. Also reduced draw distance and overall count of the splat particles"
+Ships and Vehicles
+- Reworked the angle constraints of the Polaris Front Turret to not clip
+Core Tech
+- Further Global and Storm Breaker Server Performance Optimizations
+- Area18 traffic CPU to GPU Conversion Update
+- Further 3d comms call Visual Polish Pass
+## Bug Fixes
+- Potential Fix: PU - Storm Breaker - Locations / Mission Content - Valakkar egg already in rotten state when in the egg chamber
+- Potential Fix: PU - Stanton / Pyro - Medical Beacon / UI / Notification - Medical Beacon notification does not show up for the Victim and Medic Player
+- Potential Fix: PU - Stanton - Locations - Rest Stops - ASOP Kiosk / UI / ATC - ASOP terminals are stuck on the loading animation with trace error "NO LINK TO ATC - Verify and export OC" / "Stand by, accessing list of available vehicles" (STARC-171390)
+- Potential Fix: PU - Dynamic Rain - Audio Code - Cutlass Black side doors produce inconsistent rain audio when they are in different open states to each other
+- Potential Fix: PU - Locations - Executive Hangar - Actor / Damage - Comp Boards - The Executive Hangar's death zone remains active after all comp boards are inserted (STARC-166156)
+- Potential Fix: PU - Stanton - MultiLocation - Some Elevator Panels / Gateways are not linked to the transit manager (STARC-165142)
+- Potential Fix: All Remote Turrets - UI - VJoy and several PIPs missing (STARC-168157)
+- Potential Fix: PU - Storm Breaker - Locations / Collision - Valakkar Egg at Storm Breaker event clips / falls through ground if you fall over (STARC-171204)
+- Potential Fix: Multivehicle - PU - Vehicles / SFX - Dynamic Weather - The rain SFX inside ships are the same as being outside in the rain
+- Potential Fix: PU - Stanton - Performance - Mining / Game Code - Server and Client Performance drops when Shattering Large FPS Deposits
+- Potential Fix: PU - Pyro - Storm Breaker - Props - Egg has no visible degradation when its health is at 0%
+- Potential Fix: RSI Constellation Aquila - PU - Vehicles / Vehicle Components - SCM / NAV - The Constellation Aquila has lower SCM and NAV speeds than all other Constellation series spaceships
+- Potential Fix: Multivehicle - PU - Audio / Vehicles - Leaving and boarding a vehicle that is in NAV mode will cause the SCM -> NAV mode switch SFX to trigger with an infinite spooling sound (STARC-107508)
+- Potential Fix: PU - Shopping/Kiosk - Refinery - Refinery Orders once completed cannot be loaded onto a cargo ship (STARC-161528)
+- Potential Fix: PU - Weapon / Multi-tool / Attachment - After switching the attachment, the Multi-Tool doesn't work and doesn't Display Which Attachment is attached
+- Potential Fix: PU - Pyro - Storm Breaker - Pyro 1 - Locations / AI - All AI at Lazarus Complex are not hostile to players when they are entering the Research facility
+- Potential Fix: GATAC Syulen - PU - Vehicles / Vehicle Components - Physical Damage Modifier - The GATAC Syulen is missing the ARMR Physical Damage Modifier
+- Potential Fix: PU - Multivehicle - Vehicles / Ship Components / Tractor Beam - Once internal Ship Components are detached from a vehicle via Tractor Beam, they can't be placed back in their Component Bays (STARC-146054)
+- Potential Fix: PU - Storm Breaker - Locations / Inventory / Design - You are unable to store the IKTI Rad via the vehicle / freight elevator
+- Potential Fix: PU - Pyro - Stormageddon - Radiation / Actor - Radiation from the egg is able to penetrate walls / objects
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 1 Server Crash

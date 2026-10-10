@@ -1,0 +1,104 @@
+PU Monthly Report
+September 2023
+It’s an exciting time in and out of the ‘verse, with the upcoming launch of Alpha 3.21 and the return of an in-person CitizenCon on October 21-22. Check out September’s PU Report for the final tweaks to content you'll be experiencing very soon and progress on features coming later in the year and beyond.
+## AI (Features)
+In September, AI Features focused on the ongoing male-to-female animation retargeting, ensuring that Pyro’s female characters are up to the same standard as their male counterparts. Recent work included retargeting combat and social animations.
+On the code side, the team worked on PU performance for the upcoming patch. They also solved issues involving NPCs not reacting to players pointing guns at them and fixed bugs with usable alignment slots not working as intended.
+## AI (Tech)
+AI Tech continued developing various features throughout September, including boids and the Apollo tool, and began focusing on performance improvements and polishing existing features.
+For boids, the base structure that allows the designers to define boid states (wandering, fleeing, idling, dead, etc.) and transition between them was implemented. These transitions contain rules, including when they should be selected, and animation data, such as birds taking off and landing. Iteration was also done on suitable physics properties for boid agents that need to be affected by gravity to walk on terrain. The team also added health components to agents so players can damage and potentially kill them.
+For the Apollo Subsumption tool, the team completed an error-reporting panel that will provide detailed information on behavior issues. This will help the designers to catch problems sooner and solve them more easily. Various quality-of-life improvements requested by the designers were implemented too.
+Performance improvements were also made, with the team looking closely at systems that impact performance on dedicated servers. For example, optimizations were made to how navigation islands compute after parts of the navigation mesh are regenerated. For navigation volume, code was cleaned up and ‘event dispatching’ was moved to ‘update job,’ which better distributes to multiple threads. The team are currently investigating and implementing optimizations to planetary navigation generation and pathfinding request processing.
+A small update and new functionality were added to the collision avoidance system. Now, collision avoidance agents have support for skipping and ignoring lists, which is used when agents move together as a group.
+For NPCs using trolleys, improvements were made to collision avoidance, and a new component was added to the trolley that will trigger the regeneration of navigation mesh when it stops moving.
+Regarding flowgraph Subsumption nodes, the team can now generate nodes with dynamic input based on Subsumption’s event description. This will help the designers to write more complex behaviors for NPCs and missions.
+The AI Tech team also supported the Alpha 3.20 release, CitizenCon, and the SQ42 Feature teams.
+## Animation
+Last month, the Animation team worked toward ensuring all male animations are also available for the female character.
+“You’ll see female characters doing more in an upcoming patch. Keep in mind that with this large volume, there will be considerable visual artifacts we need to sort out.” Animation Team
+They also created the initial animations for a new creature.
+## Art (Characters)
+In September, the Character Art team finished the Headhunter outfit and progressed with the Dusters outfit. Alongside this, the Character Concept Art team explored ideas for fauna and medical backpacks and prepared handoff sheets for a racing suit.
+## Art (Ships)
+In the US, a new vehicle variant was completed, with final bug-fixing and polish currently underway.
+The whitebox for one of the new vehicles mentioned in the previous PU Report is nearing completion. Last month, the team solved some of the space issues, opting for smaller beds with a tighter layout. They also separated out the base model from the variants.
+The Aopoa San'tok.yāi is almost content-complete, including cockpit animations that heavily lean into the alien language. The interior damage pass is also nearly done, including a new map generated specifically for Aopoa. Upcoming tasks include lighting polish before the LOD pass.
+Finally, work continued on remote-tractor-beam gameplay, including how the hardpoint should be used to create the best player experience.
+## Audio
+Last month, Audio focused on Pyro, ensuring all essential sound effects were implemented. They also finished tasks for several upcoming ships and are actively working on the new audio thruster and component system.
+Alongside essential bug fixes, the Audio Code team refined the recently introduced resonance tech and continued developing the walla system.
+## Community
+Last month, the Community team continued preparing for CitizenCon 2953. The biggest-ever celebration of all things Star Citizen takes place in Los Angeles, California, from October 21 to 22 - tickets and the Digital Goodies Pack are available now.
+At the beginning of the month, the team supported the Ship Showdown 2953 Finals, including a Free Fly of the Final Four and the crowning of the Best in Show champion, the Drake Corsair.
+Before its replacement in Alpha 3.20, the team kicked off their farewell to Port Olisar, allowing players to gain a unique Spectrum badge. They also published two Patch Watch threads, Mission Featured! and Quality of Life, highlighting some of the improvements and features in the coming patch that aren’t on the Roadmap.
+They then supported the community during Pirate Week, including hosting a Treasure Hunt Screenshot contest.
+The team was also heavily involved in supporting the release of Alpha 3.20: Fully Loaded. Alongside the Player Experience team, Community tracked and directed player feedback on the latest features and discussed solutions to bugs and quality-of-life issues with the development teams.
+They also published the MISC Hull C Q&A and updated the Mirai Fury Q&A with questions on the Fury LX. They also communicated the new features and updates in Alpha 3.20’s Arena Commander overhaul with a dedicated comm-link and the Experimental Modes schedule.
+“In-person socializing was also not neglected as we brought developers and Banu Tholo code cards to a fantastic Bar Citizen event held inside a public amusement park in Vienna, Austria, as part of the Bar Citizen World Tour.” Community Team
+## Economy
+The Economy team set up shops at three jump-point stations to provide the Hull C and other cargo ships with additional trade routes. They also worked on rebalancing commodity trading in Stanton and Pyro as part of a larger initiative to improve the gameplay experience for haulers and traders.
+Economy then supported other teams, such as Character Art and Interactables, with pricing for new player equipment. Lastly, the tool that extracts live game data to help inform the profitability of various gameplay loops and assist in balancing was completed.
+## Engine
+Throughout September, a large portion of the Core Engine, Physics, and Entity teams’ focus was on release support. This included optimizing code, looking into server-side memory consumption, and fixing memory leaks. These improvements will appear in public releases over the next few months. Additionally, the Core Tech teams supported the Hull C and its unique technical requirements.
+Besides release work, the teams rolled out StarBuild, the custom code-build system, and updated Visual Studio to version 2022.
+On the renderer, transitions toward the final version of Gen12 continued. This included enabling the RenderGraph, which can utilize the GPU better with less CPU cost. The team also removed several legacy GPU access APIs, including MapAndWriteDiscard, which won’t be supported by Gen12 due to low-level code complexity.
+Furthermore, the streaming system received improvements.
+“We no longer need to maintain a separate code path and instead update all our objects from within the rendering callback. This reduces code complexity, as we only need to maintain a single code path going forward, and reduces memory consumption as well.” Engine Team
+The team then added more strict debug modes and high-level checks for the ECUS code to detect and report potential race conditions earlier. Also on the entity-system side, more strict checks were added to entity access functions to ensure they only happen on threads where it’s permitted.
+For the Editor, time was spent enabling entity streaming code to allow the designers to work with the PU’s significant amount of content more easily. This was done last month as the team first had to get the foundation of streaming working. The editor also has more complexity than the pure game as objects can also be modified.
+On the Physics side, the team is currently adding numerous improvements to the simulation, which will be revealed soon.
+Finally, the Engine teams supported the Network team on Server Meshing and worked with the Location teams to make more efficient use of low-level engine resources.
+## Features (Characters & Weapons)
+Alongside squashing a significant number of bugs for Alpha 3.20, many of the features worked on this year received a second pass to improve quality and feel. For example, the slide mechanic saw updated velocity curves with steeper initial acceleration alongside improved screen effects.
+For the new prone motion set, work was done to stabilize the player character’s wrists in first-person view; some initial updates were made, though the team now has a longer-term plan to further improve the visuals.
+## Features (Gameplay)
+The EUPU team continued working toward the release of the ship tractor team, including an update to the general Salvage HUD to allow it to show tractor-beam information (this is still a work in progress).
+Several important bug fixes were made for Alpha 3.20. This included fixing instability problems with server performance and adding a temporary fix to the speed of hull scraping.
+The team also made significant progress on Structural Salvage (formerly Munching) and continued their ongoing work on the Resource Network.
+## Features (Mission)
+Mission Features continued their work on modularizing the new-player experience. Last month, New Babbage saw its first working version, with the team currently focusing on polish.
+Various mission content was also worked on, including the reactivation of the Crusader platform missions, which tentatively passed its go/no-go review. Blockade Runner also progressed through development following internal playtests and feedback.
+The Steal Evidence mission passed go/no-go and has been activated for Alpha 3.21, while the design for a courier version of the Steal and Recover cargo mission moved into production.
+Further polish was made on Data Heist, including internal playtests in preparation for its debut. Siege of Orison 1.1 entered the QATR phase, where it will be tested for stability and performance issues ahead of future activation.
+The team also continued to look at and balance the cargo manifest system for Bounty and Salvage missions, and designs were pitched for long-term reputation goals. Ship Trespass has passed its gate review and is approaching a release-ready state.
+## Features (Vehicle)
+In September, the Vehicle Gameplay team focused on bugfixing and quality-of-life support for Alpha 3.20. The flight balance, health, and stability of some ships were tweaked to improve overall balance too.
+The team also provided feature support for the Resource Network, allowing items placed inside interior object containers to be connected to the network, such as doors and lights.
+## Graphics, VFX Programming & Planet Tech
+In September, the Graphics team progressed with several in-development features. For example, the new water-simulation and rendering systems now have their fundamental building blocks complete and are currently being balanced to ensure they look good under the game’s huge variety of conditions.
+The R&D on Global Illumination was merged into the main branch to see it working across various PU locations. However, a lot of work remains, including major aspects like moving zones, characters, and optimization.
+Work also continued on several longer-term features, such as fire support for entities, a screen space occlusion effect for gas clouds to increase their lighting detail, and support for Maelstrom, the new physics destruction system.
+## In-Game Branding
+Last month, the Branding team progressed with navigational signage for the exterior of the underground facilities.
+They also created holograms and assembled navigational signage for an upcoming event.
+## Interactables
+The Interactables team progressed with various upcoming content, including a variety of new style props, and supported the ongoing development of the new underground facilities.
+## Lighting
+Lighting continued their work across multiple initiatives. They mainly focused on Pryo, though performance improvements were made across Stanton too.
+## Locations (EU)
+Last month, the Locations team continued developing a variety of new locations for Pyro. They also worked on several legacy locations in pursuit of maintaining the wider Stanton system, and supported the Mission Feature team on one of their upcoming initiatives.
+The Sandbox and Organics teams progressed with several upcoming locations, including Pyro and the new underground facilities.
+## Narrative
+The beginning of September saw the Narrative team closing out any remaining bugs for the release of Alpha 3.20. Looking ahead, the team completed work on another batch of missions for Pyro organizations and gangs.
+Additionally, they continued working on several new missions for Stanton, including Blockade Runner and Data Heist. Scripts were also written for automated computer systems that will be used in missions and at new locations.
+The Narrative Design team continued improving the lives of AI around both Stanton and Pyro with more naturalistic behavior patterns. Several discussions were held focusing on how they can better capture the feel of Pyro based on how its NPC population behaves at stations and outposts.
+On the website, the team published a Whitley’s Guide to the San’tok.yāi, another thought-provoking batch of Loremakers: Community Questions, as well as a variety of Galactapedia entries. Subscribers can also read additional lore every two months in Jump Point magazine before it becomes available anywhere else.
+## Online Services
+September saw the Online Services team working on the Seeding Service, a new star service for Server Meshing. This is a C++ gRPC service that reads data from the game files to seed global, graveyard, and shard databases by using the Entity Graph service.
+A refactor of the Character Customizer began, with the goal being to replace the backend used by the current customizer to leverage both the entitlement and identity services to reduce the database load on login and persist DNA and customization across patches.
+The team also continued to update Easy Anti-Cheat in an attempt to eliminate false positives as well as implement sanctions in the future.
+Significant time was also spent on database research to resolve some of the recent deadlock issues and explore other potential database providers.
+## R&D
+The R&D team worked on a variety of important updates to the game engine that will be shown to the community soon.
+## Tech Art/Animation
+Tech Animation supported numerous teams across the project with a wide variety of animation tasks, including asset implementation and maintenance.
+Great progress was made on creating and implementing creatures across the PU. As part of this, work was done on toolsets for rigging and physics proxy authoring and implementation.
+Comms calls and dialogue were a major focus in September too, with the goal being to create content at speed.
+“This has been hugely successful and collates many lengthy manual processes into a singular toolset with a great user interface.” Tech Art/Animation Team
+Finally, they continued to provide additional faces for the game to source from, providing much more variation to NPC populations.
+## UI
+Alongside debugging for Alpha 3.21 and future releases, UI supported Mission Features on the Blockade Runner screens and with final touch-ups for another ongoing mandate.
+The team progressed with the Reputation app, adding new styles to the item shops. They’re currently doing final tests on Pyro’s airlock screens.
+## VFX
+Last month, the VFX team progressed with a variety of Pyro locations. Several vehicles were worked on too, with one being completed.
+They also focused on optimization and bug fixing for Alpha 3.20.

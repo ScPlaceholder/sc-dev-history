@@ -1,0 +1,31 @@
+Alpha Patch 4.10.1 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.1-PTU.12578875
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Orison Relief Support
+## Features & Updates
+New Event: Orison Relief Support
+In the wake of the Nine Tails attack on Orison, Crusader Industries is hosting a relief initiative to help rebuild the affected regions and upgrade their defenses. Players can take on a rotating slate of contracts through the mobiGlas and earn points toward a shared reward track that unlocks blueprints for new weapons and armor along the way.
+Contract Types include:
+- Construction Aid (Cornerstone Developments): gather and deliver construction resources to Orison or Seraphim Station
+- Medical Aid Hauling (Covalex): collect medical supplies and iodine from New Babbage or Port Tressler and deliver them to Orison or Seraphim
+- Medical Aid Delivery (Ling): collect medical supplies and iodine from New Babbage or its rooftops and deliver them to Orison or the Orison rooftops
+- Crafted Aid (Cornerstone Developments): craft and deliver a batch of prototype thrusters
+- Ship Ambush (Foxwell): intercept and destroy hostile ships threatening supply lines
+- Ship Wave Attack (Foxwell): defend against waves of hostile ships in space combat
+- Eliminate All (Foxwell): clear out remaining Nine Tails from targeted outposts in FPS combat
+Completing contracts earns points toward a single shared reward track. Rewards are distributed as blueprints unlocked along the track rather than individual mission payouts, covering three new FPS weapons and three new armor pieces.
+## Bug Fixes & Technical
+Tonight's 4.10.1 build includes all the previous hotfixes don't in 4.10.0 including the latest nvidia driver crash fix.
+An item limit has been added to the freight elevator platform to prevent the simultaneous unstowing of more cargo than the platform can handle, preventing server-side instability during high-volume cargo operations
+- Potential Fix: Armistice zones not active anywhere at Orison, allowing players to be freely attacked throughout the location; a zone system optimization has been applied and the issue is now being monitored for resolution
+- Potential Fix: Tactical Strike Group Full Strike missions not progressing past the initial "Go To Objective" phase
+- Potential Fix: Drake Clipper hull taking no damage across most of its surface due to multiple geometry proxies on the body and doors not being set up as individual parts; doors on the underside now correctly detach when destroyed
+- Potential Fix: Ground vehicles not entering soft death state when critically damaged, instead continuing to operate or destroying outright
+- Potential Fix: Ships delivered to personal hangars landing on the elevator platform incorrectly, causing the landing gear to clip through the floor when the ship detached from the elevator
+- Potential Fix: Refueling contract details in the mobiGlas showing the incorrect aUEC per SCU price for fuel
+- Potential Fix: Refueling intro missions listing quantum fuel as a required fuel type instead of hydrogen only
+- Potential Fix: Odyssey II Undersuit Alpha missing its necksock, causing a gap between the helmet and undersuit collar
+- Potential Fix: Weapon attachments missing from loot at DC Delving and other locations

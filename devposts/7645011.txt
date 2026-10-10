@@ -1,0 +1,58 @@
+## Star Citizen Alpha Patch 4.0.1
+Alpha Patch 4.0.1 has been released onto the PTU!  Patch should now show: VERSION 4.0.1-PTU.9482684.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US/EU Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:500
+Hangar Spawning: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability, Performance, and Bugfix Testing
+- Save Stanton Chapter 2 Event in Pyro
+Chapter 2 of Save Stanton will run throughout the PTU phases in 4.0.1. This is a continuation of the event from 3.24.3 into the Pyro side of events.
+For Feedback and Discussion of this build, please check out the latest post for this release in the Focus Testing forums!
+https://robertsspaceindustries.com/spectrum/community/SC/forum/190049
+## Known Issues
+- PU - Pyro - Courier - Mission Content / UI - Boxes are not marked upon accepting the mission
+- PU - Cargo - Hauling Missions - Warehouse orders not counting collected & delivered cargo correctly
+- PU - Cargo Hauling - Mission Content / Mission Refactor / Game Code - Supplies will remain in players warehouse and not successfully deliver
+- PU - Stanton / Pyro - Mission Refactor - Cargo Hauling missions - No cargo is visible in the Freight Elevator Kiosk at the pick-up location
+- PU - Stanton - Locations - Hurston / Rappel - Storage Kiosk - Can't Interact with Storage Kiosk
+- PU - Pyro - Frontier Outposts - XS Outpost - Locations / Art / Tech - XS Outpost Main Building interior and Storage Shed interior is missing multiple assets and collision
+- PU - Pyro - Asteroid Bases - Hangar - Locations / Collision - The collision for the hangar doors does not stream in until the player is inside the hangar
+- PU - Pyro - Mission Refactor - Hauling - Mission Content / Reputation - Players are able to access the other intro missions after completing one for a different Org
+- PU - Stanton - Shopping / Selling / Cargo - Commodity Kiosks - Commodity kiosks are empty preventing any purchases or sales
+- PU - mobiGlas - UI - Contract Manager - Contracts can overlap with sections below them when expanded
+- PU - Pyro - Physics - Locations - Contested Zones (CZ) - Plastic Curtains have solid collisions against projectiles and cannot be passed through if ADS
+- RSI Polaris ( RSI_Polaris.xml ) - PU - Vehicles - VLM - Occasionally lose Components By Pressing A New Insurance Claim or Repairing A Damaged Polaris
+- Contested Zones - Weapon intersecting with the ground
+## Features & Gameplay
+- Locations
+- Contested Zones: Client Performance Polish Pass. LOD and Lighting Polish. Removed more geometry that could get players stuck.
+- Frontier Outposts: Pyro Landing Zone Inventory list has been updated with all Medium and Small Frontier Outposts with added local inventory. LOD Polish Pass at Extra Small Outposts. Polish to fix numerous clipping assets and floating loot boxes around outposts.
+- New Babbage: Lighting Polish and Performance Polish Pass. Location stairs polish to reduce excessive head bobbing while traversing.
+- AI
+- Quasi Grazer Animation Polish Pass
+- Gameplay
+- Enabled Handyman Missions
+- Added Harvestables to Pyro Rock Caves
+- Ships and Vehicles
+- Starfighter Ion: Behr LaserCannon Charge Mechanics Removed and DPS Rebalanced
+- Mirai Guardian: Greatly Increased Mav and Retro Thruster Health. Cockpit light in player view glow reduced by 90% strength. Elevator Entry Marker, Chaff and Countermeasure Polish
+- Anvil Ballista: Added personal storage. updated cockpit to match with the personal storage. Further Proxies and Mesh Setup and Polish
+- Nomad: Added Personal Storage to Nomad's Interior Hab. Updated Geo and Mesh. Fixed collision missing between hab and cockpit.
+- Tumbril Nova: Added Personal Storage Inside
+- RSI Mantis: Added Personal Storage, updated bedframe, added proxies for storage. Added Annunciators on the Dashboard.
+- Aurora: Removed rear clamp from Aurora cargo rack to allow easier loading and unloading
+- Added Annunciators to Banu Defender, Xian Scout, Xian Nox, and Reliant Series
+- Newly Added to In-Game Shops: Pulse
+- Weapons and Items
+- F7C Nose Turrets Added to Shops
+- Arena Commander
+- Added Polaris Captain seat to Crew options in AC Multicrew
+- Core Tech
+- Added Pyro specific quantum travel music
+- Light Entity Optimizations
+- Rogue Lighting and Entity Cleanup around Stanton Landing Zones

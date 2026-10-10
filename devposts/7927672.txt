@@ -1,0 +1,52 @@
+## Star Citizen Alpha Patch 4.1.1
+Alpha Patch 4.1.1 has been released to all backers to test!   Patch should now show: VERSION 4.1.1-PTU.9754854.
+- Audience: All PTU Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5:600 (Newly updated authority configuration)
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Ship Battle Missions V1 (Patrol, Ambush, and Gilly's Advanced Combat Gauntlet Missions)
+- Repair Mission
+- Animal Missions
+- PVP Bounties
+- Hunt the Polaris Mission
+- UEE Training Mission
+- Fleet Week Halls
+- Wikelo New Rewards
+## Known Issues
+Going into the LIVE release of 4.1.1, we are expecting equipped items and armor to disappear off the player. This issue is fixed in builds after 4.1.1 is LIVE but going into this build it will occur.
+- Critical: Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Critical: PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- Critical: PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- Critical: Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- Critical: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- Critical: PU - Shopping / Inventory - Purchasing Items in quantities above 1 to Backpack Inventory results in Failed Transaction due to "Invalid Item"
+- Critical: PU - Stanton - microTech - New Babbage - Brentworth Care Center - Medical / Locations - The medical kiosks have an infinite load and do not check players into rooms
+- High: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+- High: PU - Hangars - Locations / Lighting - Freight elevators filled with fog and bright light
+## Features & Gameplay
+- Gameplay
+- Enabled QT to Owned Unattended Vehicles
+- Party member markers now override visible parent icon (at lower priority than Player marker)
+- Weapons and Items
+- Added S3, S5, and S10 bombs to Convention Center and Centermass at Area18/New Babbage
+- Core Tech
+- Network Performance Optimizations to help reduce interaction delays
+## Bug Fixes
+- Potential Fix: Multivehicle - PU - Vehicles / VMA - Claiming the ship removes previously equipped default items from inventory, preventing their re-equipment (STARC-157233)
+- Potential Fix: PU - Vehicles - Quantum Travel - Client Crash recovery - If there is a client Crash during Quantum Travel and a player reloads into the game the Ship cannot fire weapon, scan, or quantum travel
+- Potential Fix: Invictus Convention Purple/Pink Error Text Falls Down Screen (STARC-113256)
+- Potential Fix: PU - Pyro - Rundown Stations - Cargo Center contains room with missing door allowing players to exit map (STARC-151675)
+- Potential Fix: PU - Wikelo Mods / Ship Battles V1 - Missions - Collector - ACE Pilot helmet Wikelo mission objective not completable (STARC-166879)
+- Potential Fix: PU - Ship Battles - Ace Pilot - NPC - Player is unable to interact with ace pilot & can clip though AI body (STARC-165302)
+- Potential Fix: PU - Transit / Elevators / Locations - Upon initialization of the transit manager, carriages may not open when called and the server claims that they are missing doors (STARC-163671)
+- Potential Fix: VOLT Quartz Energy SMG - PU - Actor - Weapons - Weapon Behavior - Volt SMG does not automatically reload when empty (STARC-166304)
+- Potential Fix: Mining Gadget - Game Code / Props / Mining - The Player can store a destroyed Mining Gadget, then drop/equip it, causing the Gadget to re-explode and can be used to kill other Players / AI in Armistice Zones (STARC-148102)
+- Potential Fix: PU - Ship Battles V1 - Patrol / Ambush / Assault - Headhunters - 3D Comms Notifications / UI - Stows & Gilly are missing in the 3D comms on the vehicle MFD for their missions
+- Potential Fix: PU - Area18 - Locations / Transit - Area18 Hab Elevator Carriage does not open at Lobby level
+- Potential Fix: PU - Stanton - Missions - PVP Bounty - Bounty mission remain active when criminal player surrender themselves
+## Technical
+- Fixed 4 Client Crashes

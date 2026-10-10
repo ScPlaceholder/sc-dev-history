@@ -1,0 +1,10 @@
+Greetings,
+We have made a number of small, but noticeable, changes to how a ship behaves in normal flight.  This includes the addition of jerk to both linear and rotational motion, which smooths the motion of ships as they recenter in both linear and rotational motion, but still allows fast counter motion.  The goal of this addition is to smooth out jerky flight and rotation so ships feel smooth and fluid but still maneuverable and precise.  We have also changed mixed thrust commands (ex. mixing up/forward/left) behave by treating the command as a blended vector of motion rather than a blend of thrust.  The result is more predictable pathing behavior that blends each input command and no passive vector changing when the ship is drifting to a stop.
+We are still experimenting with these values and very keen on hearing your thoughts.  Specifically we want to know about:
+- Acceleration and maneuvering accessibility
+- If ships have smooth, predictable rotation
+- If inputs (mouse, joystick, gamepad) have smoother motion
+- If ship motion feels precise and predictable
+Thanks for your feedback!
+-Baior
+Player Experience Team

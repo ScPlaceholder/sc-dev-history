@@ -1,0 +1,60 @@
+## Star Citizen Patch 3.14.0g
+Alpha Patch 3.14.0g has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7627001.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: Wave 1
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Current cloud tech is still in active development and not yet final. There's ongoing work on SDF occlusion which should help alleviate the graphical artifacting (visual dots in the clouds). Additionally, we are working towards having local VFX for the clouds (similar to the gas clouds around rest stops) which will make a big difference in overall quality.
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Known Issues
+- Gas Clouds on Crusader appear to have moving graphical artifacts that appear as dots. Current clouds are still in development and not final. See note at the top of patch notes
+- Orison objects & textures loading very slowly
+- Orison volumetric fog pops on and off depending on camera direction
+- Various UI markers are faded and hard to read
+- Unable to scan for FPS or ROC-sized mining deposits until very close
+- Port Tressler is missing QT marker when Player returns to microTech planet
+- Port Olisar has no quantum marker
+- Enter ship animation is glitchy and jumpy for multiple single seat fighters
+- Large black cubes and bright light particles can been seen within the snow storm clouds on microTech & in the "dust" storm on Hurston
+- Snow effects are seen in the interior of New Babbage space port and other areas including the commons
+- Security Ships do not recognise illegal goods onboard a ship when being carried by a player
+- Players can clip through the exterior door of the 890 Jump whilst it is docked
+- A second player spawning a ship at a Docking Tube can cause ships still in the vacinity of the tube to lose collision
+- Missions do not recognize players entering zone and AI are unresponsive or not visible to player during missions
+- Players may Rubberband back into their bed in the Loreville hab when getting out of bed
+## Feature Updates
+Gameplay
+- Ongoing Ship Capacitor, Balance, and Polish Pass
+We have done further core tuning for ships. Added secondary effects besides regen to capacitor assignments. Assignments to each system above default (33%) will now give you: more energy weapon ammo, more shield damage resistance, or reduced thruster boost costs scaling upward with increasing assignhment. Updated weapon regen pools for small fighters. Reduced damage on ballistic gatlings and repeaters. Tweaked heat per shot on ballistic gatlings. Added heat bar to the HUD for displaying weapon's temperature ratio. Replaced turret cannons with repeaters on Caterpillar. Changed Terrapin to use 2x S2 shields. Changed Caterpillar to use 2x S3 shields. Changed Hurricane to use 1x S2 shield. Changed Constellation to use 1x S3 shield. Increased base health of the Terrapin and Constellation series.
+Ships and Vehicles
+- Updated lens and vehicle HUD settings to be more legible against bright backgrounds
+## Major Bug Fixes
+- Fixed an issue that could cause a Player's cursor to get stuck on the game screen
+- Docking UI should now be present after requesting docking
+- Missiles should no longer hit the player's own ship when they are fired while the ship is moving forward at speed
+- Fixed an issue causing ground vehicles to have a chance to randomly explode while crossing Hurstons terrain anywhere on the planet
+- Fixed an issue causing the AI at UGFs and Kareah to be desynced from their actual locations
+- Fixed an issue causing a single location to only appear if the player spools their drive before setting destination
+- Fixed an issue causing Ping Scans to be unable to detect FPS and Large FPS Deposits
+- Fixed an issue causing NPCS to navigate the environment while sunk into the floor and not animating
+- Door to the Constellation series bridge should no longer appear to be blocked due to a visarea issue
+- Freelancer MIS scanning UI should now appear when toggling on Scanning Operator Mode
+- Fixed a visarea issue causing the Mercury Star Runner turrets to be missing textures
+- FOIP calls with players using some seats or stations in ships should no longer display a grey screen
+- Origin 600i lift should no longer be missing
+- Fixed an issue causing some new game settings to revert after exiting the client
+## Technical
+- Fixed 5 Client crashes
+- Fixed 5 Server crashes
+- Backend Service Optimizations

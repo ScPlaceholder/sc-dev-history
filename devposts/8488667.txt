@@ -1,0 +1,5 @@
+1. HUGE question, requires an essay… main take away is that a large chunk of the Vulkan implementation is multi-threaded so scales well with more cores.
+2. No major change, basically comes down to GPUs & drivers that support Vulkan 1.2/1.3, which is pretty much everything mainstream for over the last 5 years.
+3. Most “busy” locations are CPU limited, so Vulkan will only give minor gains there.
+Cheers,
+Ali Brown

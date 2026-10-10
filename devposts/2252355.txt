@@ -1,0 +1,65 @@
+## Star Citizen Patch 3.6.0p
+Alpha Patch 3.6.0p has been released to PTU and is now available to test!  Patch should now show: PTU-2180046.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Law and Criminality System
+- Weapon optics
+- Ship component degradation
+- Ship combat balance: Ship shields, missile damage, missile counter-measuring
+- Flight: Hover mode, acceleration control
+- Head tracking
+- P-72 Archimedes
+- Hacking gameplay
+- Pip accuracy and ship flight jitter
+- Vanguard Warden and Hoplite
+Known Issues
+- After being interdicted, all present ship AI will often despawn after a short amount of time.
+- Security reinforcement system isn't currently functioning.
+- Dropping the hacking chip on planetary surfaces can cause it to fall through.
+- Entering a no fly zone while in hover mode will cause the ship to get stuck.
+- Significant first person framerate reduction can occur.
+- Textures will display across the visor on some helmets.
+- Escort NPC ships fly in a circle and never reach destination.
+- Players have to accept/reset the character customizer at each game entry.
+- The cargo lift elevator of the Reclaimer may move the wrong direction.
+- AI ships have an unintended wing wobble behavior.
+## Feature Updates
+Universe
+- Updated AI search interdictions so its easier to avoid an accidental infraction.
+Missions
+- Temporarily removed escort and distraction style missions.
+- There are now as many PVP bounty missions offered as there are eligible criminal player targets.
+Ships and Vehicles
+- Updated lighting on Vanguard series.
+## Bug Fixes
+- NPC service beacons should now have consistent mission markers.
+- Mineable rock highlights and AR markers should no longer show outside of scanning/mining mode.
+- Players should no longer lose fire and velocity control after scanning another ship or rock.
+- Other players should no longer become invisible when entering the interior of another player's ship.
+- Players should no longer rag doll a second time after falling once.
+- Dialogue audio from security ships should no longer be drowned out by loud background noise.
+- Rejoining a session when crashing near a space station or rest stop should no longer place the player in the middle of nowhere or inside the station geometry.
+- AI ECN ships should no longer use the distress audio comms unless they have actually been shot by an enemy.
+- The UI icon for landing gear should now update correctly.
+- Target selector MFD should no longer show AI ships as "AI_crew".
+- Fixed some visual issues and replaceme balls with the Vanguard.
+- Fixed an issue where some ship MFDs were appearing slightly blurry.
+- Moving patrol EM spawning out form Port Olisar to avoid them engaging players within the green zone and putting an interdiction field over the station.
+- Reduce the probability of security EM spawns.
+- Fixed an issue that caused bounty AI security to not spawn and pursue players with a crime stat.
+- Fixed replaceme textures on the Osidian hide delivery crate.
+- Fixed an issue where certain NPCs were missing clothing or naked.
+- The Lorville New Deal shopkeeper should no longer have a mismatched voice.
+- Players should no longer recieve leg damage when descending the personnel elevator on the Constellation series ships.
+- Increased the frequency of all misfires and increased some severity factors.
+- Automated turrets should no longer continue firing after being destroyed.
+- Facial animations should now be visible to other players.
+- Both Eslin and the ATC controller at Lorville should be present with correct audio when requesting landing.
+- VOIP should now work consistently.
+Technical
+- Fixed 4 client crashes.
+- Fixed 2 server crashes.

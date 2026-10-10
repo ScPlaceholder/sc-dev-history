@@ -1,0 +1,61 @@
+## Greetings Citizens,
+We’ve released a new patch for Arena Commander! Today’s patch fixes a number of bugs discovered by QA and Star Citizen’s backers and also further prepares for the full multiplayer rollout. The first 20,000 accounts have been given access, and more will follow soon! You can find the full report in the Patch Notes.
+New Features/Fixes
+- Arena Commander
+- Arena commander menu now accessible through options menu
+- Proper score awarded when an enemy is destroyed in Vanduul Swarm
+- All ballistic weapons now use ammo boxes
+- Frozen effect no longer appears for everyone after ejecting
+- Command pp_rebindKeys layout_joystick_spacesim now properly works
+- HOTAS X55 Joystick is diplayed under controller options menu
+- Run no longer toggled off when user interacts with something
+- Cockpit and ship should now despawn after ejecting
+- All ship controls now have smoother animations
+- X-box right joystick can now be inverted
+- Countermeasures should now be more effective
+- Hornet chaingun audio should no longer cut out
+- No longer stuck unable to respawn if chat open while killed
+- Spawn warping audio no longer heard by everyone in the match
+- Broadsword when equipped now has ammo and properly overheats
+- Ship debris can no longer pass through cockpit
+- Improvments to zero-g movement
+- Various performance improvements
+- Various server and client crash fixes
+- Switched spawn points so that players respawn next to their own bases in CTC
+- Match end after reaching over 100 points.
+- Helmet Animations
+- Various matchmaking tweaks (public matches were requesting private ones)
+- Reduced texture sizes on the 300i
+- Implement new win mechanic into Team Deathmatch. Fixed up next kill wins mode, audio and HUD alerts.
+- Item Balancing
+- Shield energy reallocation does not lose energy but realloc existing energy
+- Loading screen remains on screen after the level has loaded
+- Pausing the game as DFM loads from hangar sticks on a black screen
+- Added directional indication for shield impacts not in view (similar to an older verison of the shield) for gameplay feedback.
+- ReExported LandingGear_deploy animation
+- Player is able to enter ship while he is also able to ‘press X to respawn’. Ship now correctly rez’s out when landed after ejection.
+- Improved lighting but for real this time
+- If a Vanduul becomes sufficiently damaged they disappear from the map and their name in-game becomes “undefined”. Need to be destroyed to progress. Added missing return to fix.
+- Allow custom user CFGs to be specified in cmd line.
+- When one player ejects from their ship, the frozen visor FX may appear on all player’s screens.
+- After destroying another player their body will float in space in a t-pose.
+- MP Fix – Player is now hidden following a vehicle destruction death as in SP.
+- Hangar
+- Buggy can now drive properly in the Business Hangar
+- Turrets no longer mountable on missile racks hardpoints
+- Third person camera no longer rotates using Q and E
+- Replace me ball no longer present under Hornet Trainer
+- Improvements to Trainer Hornet rear landing gear geometry
+- No longer able to place 325a engine on other ships
+- Hornet Ghost engine no longer able to be equipped on other ships
+- Resolved issue of no ammo when chaingun removed and added back to ship
+- Fix for third person camera rotating when pressing Q or E when not in zero-g
+- Created basic mapping for Logitech G940. Fixed up a number of asserts it caused in the Joystick device handler.
+- The Logitech G940 completely changes if you install the correct drivers. Updated the mappings to work with those drivers rather than the default windows ones.
+- AC menu can be navigated using a gamepad
+Known Issues:
+- HUD target indicator arrows can be missing
+- Graphical issues can occur while using SLI/Crossfire
+- It can be possible to sometimes load into a black screen when choosing an Arena Commander match
+- Hornet gatling guns take heat damage when not being fired
+- Hornet gatling gun ammo temporarily shown as missile racks in the Holo-Table

@@ -1,0 +1,61 @@
+## Star Citizen Patch 3.8.2f
+Alpha Patch 3.8.2f has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.2-PTU.4620102.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: YES
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- Anvil Carrack (Landed specific issues)
+- Long Term Persistence (LTP)
+- General gameplay and traversal
+- Bug regression list
+Known Issues
+- Escort missions may not proceed after reaching the rendezvous marker.
+- Sometimes repair services are unavailable when they should be present.
+- After a ship is repaired, detachable components will remain attached to the ship when destroyed and a duplicate component will fall off.
+- Repair fails if you select repair and refuel simultaneously.
+Work-around: Select each service individually.
+- Cycling through character customizer options can sometimes cause a client crash.
+- Once an Animus spare magazine has been emptied the player can no longer equip fresh magazines in the same slot.
+- Ships can be displayed as "unknown" after destruction, be available for spawn, but not appear on their specified hangar.
+- Entering or exiting via EVA can sometimes cause the player to turn/spin suddenly and harm themselves.
+- Objects can fall through the floor when dropped.
+- When server FPS is low the mobiGlas can sometimes close immediately after open.
+- An extra static train can appear at Lorville and prevent the use of trains.
+- The visuals of the ships on the rental screen may have missing areas or disappear completely.
+- The Caterpillar will occasionally rock or tip over on itself after landing on a planetary body.
+- CryAstro services may not work at various stations and major ports.
+Work-around: Hover before landing and request services just above the pad.
+- Rentals and/or rental timers may not work when renting a second ship.
+- Party makers will vanish form their respective players if they die far from their respawn point.
+- If a player's ship is destroyed after bed logout they will return to the server at origin.
+- NPCs may sometimes be doing usable animations in places that they shouldn't.
+- Countermeasures are not working as intended to deter missiles.
+- The 890 Jump does not have the correct cargo capacity.
+- The Combine Cannon and distortion weapons are not working as intended.
+- If the quantum travel marker is at the edge of a moon or planet its possible to QT through the moon and explode..
+- Purchased commodities will often visually not appear in the ship's hold.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## Feature Updates
+Ships and Vehicles
+We have made a couple temporary changes to the Carrack that will help us track down some issues with how it behaves while landed. With these we would like to have people test the Carrack in certain landing circumstances to see how it handles!
+Test out the spawning, landing, and takeoff cycle in hangars and on planetary surfaces as many times as possible. We are looking into the jittering while landed issue to see if it happens more on the initial spawn of the ship or if it continues to happen while landing the ship in other locations either manually or with autolanding in hangars.
+- Temporarily increased the spawning requirement on the Carrack to size XL landing pads/hangars.
+We are tracking down issues related to the Carrack clipping into hangar objects and doors and have temporarily made this change while we continue to investigate. This will limit spawning of the ship to Area18 and Lorville.
+- Temporarily removed the ability to swap most components out on the Carrack.
+Due to the mass calculation issues with component swaps we are removing this functionality temporarily while we investigate further. Swapping weapons should still function normally.
+- Temporarily increased the Carrack's QT fuel storage.
+This is a temporary change to help with the lack of ability to use more efficient Quantum drives.
+- Moved Carrack landing gear springs closer to the body to improve reliability while landed.
+- Added open/close button near the bottom left of the Carrack ramp.
+- Adjusted height of the railing around lifts in the Carrack.
+- Completed further lighting polish pass on the Carrack.
+- Completed further Carrack VFX, LOD, and Art polish pass.
+## Bug Fixes
+- Carrack VTOL thruster VFX should now show correctly.
+Technical
+- Fixed a client crash.

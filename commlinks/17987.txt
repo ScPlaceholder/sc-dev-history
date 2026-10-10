@@ -1,0 +1,75 @@
+## This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+Attention Recruits,
+What you are about to read is the latest information on the continuing development of Squadron 42 (SCI des: SQ42).
+Thanks to the work of dedicated field agents and operatives, we’ve uncovered information on the Volt Parallax electron rifle and UltiFlex Novia crossbow, the Xi’an language, and work continues on all ground-based FPS environments.
+The information contained in this communication is extremely sensitive and it is of paramount importance that it does not fall into the wrong hands. Purge all records after reading.
+UEE Naval High Command
+## AI (General)
+January’s general AI work included improving debug draw for the special action component that allows for a better understanding of which actions are available at any given time. Time was also dedicated to the support of Alpha 3.12 and 3.12.1.
+Most notably, the new year saw a reorganization of the AI teams into a more efficient structure to encourage knowledge sharing and a more holistic approach to prioritizing tasks and goals.
+The department is now split by content, features, and tech:
+- AI Content create behaviors, usables, and other related content
+- AI Features implement project features. For example, new combat behaviors and ship maneuvers
+- AI Tech handles all core functionalities that require a more structural design
+## AI (Content)
+The Content Team spent January working on early versions of the engineer, hygiene, hawker, and tourist behaviors.
+The first pass on the engineer handles maintenance operations for wall panels inside ships and hangars, including inspecting internal fuses and replacing them if damaged. The initial implementation of the hygiene behavior gives NPCs the ability to use toilets, sinks, and showers, while the Hawker is a generic activity that handles various street vendors and speakers. For example, NPCs manning hotdog or taco stands. The first pass on the tourist behavior deals with characters going to and traveling around areas to look at points of interest.
+The team are also looking to introduce new behaviors into the ‘leisure’ and ‘eat and drink’ activities, such as vending and arcade machine use.
+## AI (Features)
+AI Features started the year by introducing the first traits affecting AI pilot tactic selection, which allows them to craft more realistic and personal encounters. For example, some pilots will choose safer approaches during combat while others will show-off and use specialist maneuvers.
+Support for different operator modes began too, which will enable NPCs to correctly use the same new functionalities exposed to players. This includes setting QT mode when they want to quantum jump and returning to the default mode before piloting or fighting.
+On the enemy-combat side, dodge actions now utilize blend space. This allows NPCs to align correctly when dodging for a more fluid and immersive combat experience. More controls were introduced to define attack-action limits and to allow the interruption of combo attacks. AI Features also added the ’WeaponConfidence’ stat that’s used to control the firing pace for characters based on their weapon proficiency.
+## AI (Tech)
+AI Tech implemented new functionality to validate Subsumption code events. This allows them to verify bad setups, missing files, and ensure that variables carried by events are configured correctly. They also began supporting feature tests for Subsumption behavior and logic. To achieve this, they exposed a way to request that NPCs execute a custom logic assignment. This gives them a flexible way to request the execution of specific logic to NPCs that stacks on top of the systemic behaviors at the appropriate time.
+AI Tech also optimized the Subsumption ‘DebugTaskTree’ and Subsumption update. The DebugTaskTree optimization reduces runtime allocation, bringing the performance of the internal build closer to the release build. The Subsumption update reduces locks in the memory allocator. Local tests have shown that this saves around 5ms when updating 500 active NPCs at a given time.
+## Animation
+The Animation Team worked on player features throughout January. This included blocking out of hurt locomotion, final animations for mounted guns, Volt Parallax animations, short-distance staggers, mag-stripping state machine blockouts, zero-g traversal, and player fall-to-move-forward assets.
+On the AI side, the team implemented final motion capture for a number of sets. Alongside this they progressed with state machine graphs for mess hall sitting and eating, character wildlines, formal rail-leaning, vending machine blocking, wall panel maintenance, the weapon vendor, and guard animation sets to combine them with patrolling.
+For Combat AI, focus was on final motion capture implementation and blockouts for the Vanduul pinning the player character down.
+## Art (Characters)
+Last month, Character Art worked on Chapter 4a. Their main focus was on Rebecca Trejo, with the team polishing her head, creating hair, and developing a new outfit. Old Man received polish as well, which predominately involved adding the new eye assembly. Revisions to the Xi’an were also made and passed onto Tech Animation for rigging. A few minor characters also received new assets and polish passes.
+## Art (Weapons)
+The Weapon Art Team continued to work on the Volt Parallax electron rifle, taking the art to ‘greybox complete.’ The majority of the mesh was modeled and the team are currently rigging and animating the weapon before heading further into the final art phase.
+The UltiFlex Novia crossbow progressed through final art and was handed over to Tech Art to finalize the rig due to the unique challenges of the weapon.
+Early in the month, an investigation was made into the mag stripping feature to assess what will be needed once feature work starts. The team took this opportunity to make a pass on the grip-nodes setup too.
+Finally for FPS weapons, the team added a new healing Multi-Tool attachment. They also updated the battery and resource canister to be detachable to futureproof the weapon for additional functionality. Work also began on a new standalone Greycat Industrial cutter tool.
+On the ship weapons side, work continued on the FireStorm Kinetics Colossus MOAB, which moved to final art. At the end of the month, development began on an all-new weapon too.
+## Cinematics
+Following on from a successful chapter milestone in December, the Cinematics Team kicked off the first of 2021, polishing further chapters to production quality.
+When the team created the pipeline for this and further milestones, they divided the production phases into separate passes:
+- Pre-vis: Performance capture and other elements like cameras and FX are added in a very crude form. No editing is done other than basic mo-cap edits from the video editor.
+- Kick-off: A basic pass where all scene members are loosely aligned, though heavy misalignment is corrected. The state machine is also looked at, so a basic break-up of animation fragments is undertaken.
+- Implementation: Full alignment is done, all animation fragments are created (mostly to correct length) and basic pose-matching is completed. LookIK is enabled.
+- Production: All animation elements are polished to a high standard, all pose matching is complete, and a LookIK polish pass is done based on what the actor was going for and where they were looking.
+- Finalization: The final pass before shipping, includes ensuring fingers are animated correctly and a minor detail polish.
+The new milestone contains both scenes in space and scenes inside space stations, with both of them differing in needs and requirements. For example, a scene in space typically begins as a timeline sequence of comms calls between NPCs (some were planned to just be comms calls but were upgraded to full cinematic cutaways over time). In these scenes, the player will be able to experience the action in first-person using the ‘break-free’ feature should they want to.
+Once the calls are complete, they team lay down the action elements. This allows them to space out the comms as needed and begin crucial nav-spline work. Control points, ship speed, spline tangents, roll, pitch, and yaw all need to be dialed in carefully.
+For example, the splines could start with the player approaching several mercs to scan them. While laying this out, the team pay significant attention to the direction, color, and intensity of the sun (or where it will be in the final mission layout), as the wrong angle could mean the whole scene is ‘flat-lit’ and less interesting.
+Another consideration is how costumes, ship loadouts, and cockpits could change, as some aren’t finished or feature meshwork being worked on later in the milestone. A balance needs to be struck in terms of what the designers want to do and what they can do on a first pass, as the spline skeleton needs to be dialed in first. Realistic pathing is vital here, particularly as the scene will be viewable from either first or third person and from a variety of angles.
+The current milestone features a scene around a table at a noodle bar, which has challenges very different from animating kilometer-long nav-splines. For example, a character eating noodles with chopsticks means the team have to animate fingers, sticks, a box, and noodles (and possibly film themselves eating on their lunch break for reference). The scene’s state machine must be considered too, with animation idles and fragments in mind. They must also cater for players arriving at varying times due to potential side activities on the way to the scene.
+## Features (Gameplay)
+The SQ42 Feature Team implemented new TrackView weapon functionality to allow the cinematic designers to control characters firing missiles. Technical investigation was completed too, which involved looking at performance and how TrackView could be updated across multiple cores. Currently, it’s single-threaded and automatically pre-caches animations to stop glitches when it’s waiting for an animation to load.
+SQ42 Features worked with the designers to fix problems with moving the missions to work with object container streaming and went through the requirements of mission-fail conditions. They also continued to help develop the firing range and get it fully working in-game.
+## Gameplay Story
+The Gameplay Story Team completed a mo-cap session before the end of 2020, so they kicked off the year by moving the captures through the pipeline. They also finished a handful of polish tasks remaining for the Morrow Tour.
+Alongside this, they began updating and maintaining their scenes from chapter 4a, which is a wider development focus of Q1 2021. However, progress was also made on other game sections, including the first chapter. This involved preliminary work on the Correl walk-and-talk and adding placeholder audio to additional vignettes.
+## Graphics
+The Graphics Team started the year finalizing several outstanding bugs and features that didn’t quite make the Q4 deadline. Once complete, focus moved to the Gen12 renderer, which received various improvements to features like depth-of-field.
+A major rewrite of the tessellation shaders was done to streamline the code and fix a number of bugs. The shadow pass conversion was also completed, with the team now looking to see if they can enable this codepath by default.
+## Level Design
+The Social Design Team benefitted from their focus towards the end of 2020, using the tech and tools they upgraded to make great progress on scenes and narrative sections.
+The Level Design Team are currently working through all ground-based FPS environments, adding additional setup for the various player paths. The Space/Dogfight Team worked alongside AI to bring an enemy faction’s combat behaviors to the ‘gold standard.’
+## Narrative
+The Narrative Team continued to work closely with the Design Team to review progress on various levels. This included calling out potential moments that might require additional dialogue or scenes to either explain gameplay intent or to make areas feel appropriately populated. They then worked with Audio to create placeholder assets utilizing text-to-speech and temporary recordings so they can be reviewed in situ.
+They also drafted initial ideas for the target range aboard the Idris, which covered everything from general training to game modes. Elsewhere, they supported other departments with environment documents, mission text, and script revisions.
+## QA
+Cinematics continued to rely on QA for recordings of each level so they could ensure scenes worked correctly and are of the expected quality. They also supported the development teams with issues and tested various changes and updates across the project.
+## Tech Animation
+The Technical Animation Team kicked off the year with Xi’an character body and facial rigs and are currently exploring the alien species’ language, body movement, and joint placements. Skinning tests are also underway to ensure the best foundation possible for the animation rigs.
+Time was also devoted to Vanduul combat behaviors, animation implementation, and head rigging for upcoming cinematics. This tied into rigging work currently underway for creatures found in the PU.
+## UI
+The UI Team worked alongside Vehicles to implement the new Aegis UI HUD style in the Gladius. In parallel, the artists created an updated UI for RSI that will feature in several campaign ships.
+The UI programmers began the groundwork for an improved Starmap, interior map, and radar. This is a significant project and will take several months to complete but will greatly help with navigation around the game world.
+## VFX
+VFX worked closely with Art and Design to flesh out the interior ‘cells’ of the Coil, with VFX Tech Art taking an active role in moving the location forwards. Progress was also made on chapter 4’s VFX requirements.
+## WE’LL SEE YOU NEXT MONTH…

@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.15.0t
+Alpha Patch 3.15.0t has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.0-PTU.7862115.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Current Audience: All Backers
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Server Crash Ship Recovery
+- Healing and Actor Status
+- Hospitals
+- Starlifter Hercules A2
+- Origin 400i
+- Bombs
+- Infiltrate and Defend Missions
+- Loot Generation
+- Personal inventory
+- Orison V2
+- Arena Commander Revamp
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Players may not be able to Repair, Refuel, Restock at LEOs and other locations in the PU
+This build has a partial fix to help with this put in it but will not completely resolve the issue.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu. Players may need to exit the game and reload after a server crash to fix this error.
+- Surface FPS Deposits are missing collision, preventing mining
+- Swapping weapons drops or removes weapons
+- Players may encounter black squares instead of smoke, clouds, and fog
+- Weapon projectiles trajectory will not behave correctly when shooting from one zone inside a ship to another outside
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Destroying mission-spawned reinforcement type ships does not always trigger the ongoing 'Call to Arms' mission rewards
+- Missiles can hit the players ship when they are fired whilst the ship is moving forward
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round
+- Demon Fang Combat Knife asset is missing from the game
+## Major Bug Fixes
+- Fixed an issue causing less than intended trees to appear around microTech
+- Fixed an issue causing the Carrack medbed to not fully function as intended
+- Players should no longer have a chance of previously equipped items disappearing when they exit and load back in as the opposite gender or customizing their character
+- Quantum paths should no longer lead you under terrain at Area18 and other locations causing you to explode
+- Fixed an issue that caused fully minable nodes to drop when dropping gems on the floor
+- Ship and FPS weapon tracers / VFX should no longer be offset when fired
+## Technical
+- Fixed 3 Client crashes
+- Fixed 3 Server crashes

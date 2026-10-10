@@ -1,0 +1,52 @@
+## Major Bug Fixes
+- Player friends list in game should no longer be capped at a maximum of 50 players
+- The Loading screens should no longer be enlarged and zoomed in on aspect ratios higher than 16:9 (i.e. 21:9 and 32:9)
+- Fixed an issue that could cause a Player's cursor to get stuck on the game screen
+- Player emotes should now correctly play through slash commands and the inner thought wheel
+- Fixed an issue causing purchased carryable items to disappear very quickly after they are dropped or placed on the ground
+- Quantum Traveling to a party member close to a planet surface should no longer sometimes cause the player to fly into the planet
+- Miles Eckhart should now function correctly and update the mission
+- Ramming another player while in the borders of your own pad should no longer impound your ship
+- Ships should no longer fail to restock ammo and missiles/torpedoes when using restocking services
+- Player's oxygen levels should no longer start to deplete after using QT in a ship
+- Fixed an issue causing players to damage their ships If the player exits their seat and re-enters their seat during quantum travel and then later exits the ship
+- Fixed an issue causing players to not spawn back inside their ship if their client crashed within an armistice zone.
+- Fixed the multi-tool dispensed from the Commissary units so that it will show the Orebit attachment in the PMA after they are stowed
+- Workaround fix for the SCU amount displayed for the 890's cargo capacity so it should no longer be incorrectly at 32
+- Fixed an issue causing the ECN alert mission countdown timer to not display
+- Weapons placed in ship weapon lockers should now persist in all ships correctly when it has been stored and retrieved
+- Large ships attempting to autoland in Rest Stop/Orbital Station hangars should no longer become stuck
+- Mission givers AI will no longer break if an NPC sits in their designated seat before they do
+- There should no longer be very obstructive reflections on the 85X Canopy
+- When you throw a grenade it should no longer have a chance to reappear in your hand, or throw with a desync and with no VFX on the explosion
+- Vehicles with weapon gimbals should now correctly default to fixed mode when the setting is turned on
+- Fixed an issue where players could not fire an FPS weapon directly after reloading or switching weapons until the second ( LMB ) press
+- Players should no longer remain in ADS when reloading an FPS weapon and have let go of ADS key
+- NPCs should no longer be able to push a player away from kiosks / ASOP terminals while using them
+- The Hot tub in the Constellation Phoenix should no longer be missing some geometry
+- The 2951 Auspicious Red Paint should no longer be displayed as -PLACEHOLDER- in the VMA and should now correctly change the appearance of the ship when applied to it
+- Friendly AI ships during missions should now quantum away correctly after all hostile AI ships in the area have been destroyed and the user completed the mission
+- Fixed an issue causing many inner thought prompts to be missing or broken from ship beds and non-pilot seats which may prevent standing up or logging out functions
+- Tevarin War Dress White Uniform Jacket texture should no longer appear zoomed in
+- Bartenders should no longer be missing from Rest Stop bars
+- Fixed an issue causing players to be unable to claim their ships using the ASOP terminal's claim button
+- When performing an Unlawful delivery mission, pilot's drug box should now get despawned correctly after a Security AI ship finishes scanning their vehicle
+- Armor shop mannequins should no longer be T-posed in Garrity Defense and other armor stores
+- Underground Facility turrets should no longer be missing
+- Cruise Control speed should no longer ignore the limiter when player is not in the pilot seat
+- Player's head should now correctly remain looking at ceiling upon respawning in a bed
+- Wiping the helmet visor should now correctly clear Icing VFX impairing player vision
+- Fixed a noticeable performance drop of up to 10 FPS when navigating around the lower rear section of the Prowler when on a planetary surface
+- The power triangle should now function and be interacted with within the MFD inside ships
+- SparkJet Pro power plants should now show the correct size and grade
+- Turning ship into no fly zones at Area18 should no longer result in auto pilot pulling player to the ground
+- Ships should no longer be able to continue to throttle when their hydrogen fuel has been depleted completely
+- Fixed an issue that sometimes caused ship parts to duplicate when blown off of the ship
+- CryAstro services should now function correctly at the New Babbage Commons Garage
+- Fixed an issue causing players to not be able to stand up from New Babbage tram seats
+- Fixed an issue causing players to desync inside the Constellation Taurus and the Constellation Aquila
+## Technical
+- Fixed 8 Client crashes
+- Fixed 5 Server crashes
+- Fixed a Server Deadlock
+- Made Multiple Backend Service stability fixes and optimizations

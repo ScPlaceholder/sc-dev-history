@@ -1,0 +1,75 @@
+## Feature Updates
+General
+- Updated carry and pickup animation transitions to smooth out motion some.
+- Updated some of the carrying animations for EVA.
+- Updated lighting for Lorville hangars.
+- Default keyboard and gamepad controls have been revised.
+- Updated footfall and general first person audio.
+- Changed the keybind for gimbal lock to R which will (eventually) cycle between gimbal modes.
+Universe
+- Visual updates and refinement for Wallace Klim.
+- Re-entry VFX are now systematically driven by IFCS atmospheric physics.
+- Clean up and minor improvements to NPC collision avoidance system.
+- Updated sound effects and ambiances for Lorville's CBD.
+- Updated lighting at various rest stops.
+- Added an automatic door to Constantine Hurston's office.
+- Updated some shopkeeper animations.
+- Updated text for armor types to include color variants.
+Missions
+- Expanded black box, investigation, collect, and kill confirm missions to additional derelicts.
+- Reduced the shields on the satellites for the destroy probe mission set.
+- Updated steal and ECN missions with new waves of enemies and different "protect" ships.
+- Improvements to delivery mission assets.
+UI
+- Temporarily removed visible geometry from helmets that was impeding mobiGlas visibility.
+- Replaced claim/retrieve buttons and ASOP terminal with a single, context sensitive button.
+FPS
+- Updated vaulting animations for smoother usage.
+- Added additional aim recoil to the KSAR Ravager.
+- Updated the perception of FPS combat AI to react to players better.
+Arena Commander
+Star Marine
+- Extensive update to Echo-11.
+Echo-11 has undergone a complete redesign to create better pathing between zones, more varied cover and positions, and better flow between each point of interest or control point.
+- Control area capture now has updated gameplay mechanics
+You can now start the capture by just tapping F, which will interact with the keyboard for 2 seconds. You will then automatically detach, allowing you to protect yourself against any incoming players. While the capture is taking place an AR marker appears in-world displaying the capture area.  If you step outside of this area the capture will slowly decay back towards its last state and if more members of your team join you inside the area, the capture will go faster. If members of the opposing team step into the area, the capture will go slower - or stall completely if there are the same number of players from each team. Capture points also now go via a Neutral state, so if you die part way through a capture your progress (past half way) is "saved" and the point has to be re-captured by the opposing team.
+- Last Stand is now three rounds instead of four.
+- Reduced Star Marine elimination player cap to 12.
+- Added a smaller version of Station Demien, "Station Demien Comms", which will be used for elimination.
+IFCS Update
+- All ship thruster output and tunings have been reworked for a more drifty feel.
+- IFCS netcode has been updated for more efficient performance.
+- ESP has been updated for new flight tunings. SCM and PRE bespoke modes have been removed.
+- "Afterburner" as has been removed.
+- Comstab has been removed.
+- "Boost" is now referred to as "Afterburner".
+- Added “speed limiter” functionality
+The speed limiter is a preset velocity that is applied to all strafe directions and is controlled independently of ship motion.  Core ship movement is now controlled via "strafe" in the desired vectors.  Additionally, there is a "cruise control" (C key) toggle that activates automatic thrust forward for longer distance travel.
+- Velocity is now shown as actual velocity.
+- Ship audio has been reworked including new thruster audio, new ship sounds, and audio linked ship vibration.
+- The center flight HUD has been reworked to better fit the updated flight model.
+- Atmospheric flight has been re-tuned and now includes lift in addition to drag.
+- Gravlev control has been reworked.
+Ships and Vehicles
+- Revision of the Gallenson Tactical Systems GT-870 series ship weapons.
+- Updated Gladius entry/exit animations.
+- Added faster bed animations to the Prospector.
+- Improved and updated the ship heat system .
+- Full balance pass on thruster power usage.
+- Updated death VFX for Vanduul Scythe.
+- Adjusted the Freelancer landing pad position to avoid the rear of the ship being too close to an edge.
+- Adjusted Hornet seat position to be more consistent for all variants.
+- Increased the self-destruct timer for the Reclaimer.
+- Missile guidance should now work between different zones.
+- Updated AI pilot behavior to include break-away under fire tactics and separate lateral and frontal attacks for larger ships with turrets.
+- The mining arm of the Prospector will now shake when firing the laser.
+- Minor updates for entry, exit, and pass-out animations for numerous ships to eliminate pauses.
+- Power priority is now functional.
+- Slightly raised the Sabre's flight HUD.
+- Disabled look behind view for shop parked ships.
+- Moved the power plant and quantum points on the MISC Reliant away from the wings to avoid loss of control when they are damaged.
+- Ship thrusters should now be damagable via direct fire.
+- Updated audio for some ship weapons and weapon impacts.
+- Thrusters should now be damagable by direct fire.
+- Reduced all ship weapon velocity with a greater reduction for cannons.
+- Rebalanced cannon damage.

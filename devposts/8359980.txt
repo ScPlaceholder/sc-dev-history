@@ -1,0 +1,15 @@
+Hi,
+The scope shader was added to Star Citizen very soon after Citizen Con in 2023 (can't recall exact release number). This includes various features such as:
+- Parallax (offset image)
+- Eye relief (clear image only when at ideal viewing position)
+- Defocus (blur at non-ideal viewing position)
+- Vignetting (tunnel vision)
+- Chromatteic abbertion
+- Diffraction/glare
+- Scope shadow
+- Light amplication (selected scopes)
+The cool thing about the scope shader is that it isn't a fake effect that only applies to a special first person model, it's actually always present on every scope, and can be seen when examining a scope in your hands or one just sat in the environment, so long as you can find the correct viewing position (eye-relief).
+However the initial release missed one key feature shown in the 3rd image above, which is the ability to zoom the image slightly. In the above image this is somewhere bewteen a 10-20% enlargment, with the majority of the zoom coming from the main camera zoom, however the slight extra soom inside the scope does a lot to help the feeling of a real scope. Unfortunately it can't be a full zoom inside the scope as this brings about a HUGE performance hit, that even the beefiest machines would struggle with, and would also require a LOT of extra complexity in the engine as we'd need to be able to support all our complex feature sets in secondary viewports (planet clouds, space/gas clouds, atmosphere, fog, rain, etc). The reason this smaller zoom wasn't shipped at the time was that it didn't support anti-aliasing or upscaling (due to a lack of also zooming the depth buffer and motion vector buffer), and so in practice it wasn't usable. However, since then the required work has been completed and S42 now has the extra zoom inside the scope, and this will be making it's way to Star Citizen once the latest engine features are integrated over (which could take a while, so I won't be able to predict exactly when).
+Cheers,
+Ali Brown
+Senior Director of Graphics

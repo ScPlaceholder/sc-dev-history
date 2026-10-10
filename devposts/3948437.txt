@@ -1,0 +1,55 @@
+## Star Citizen Patch 3.13.0m
+Alpha Patch 3.13.0m has been released to the PTU and is now available to test! Patch should now show: VERSION 3.13.0-PTU.7281044.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Cave Entrances
+- FPS Cave Missions
+- Ship to Ship Docking
+- Signed Distance Fields (SDF) Shield Tech
+- Reputation UI
+- New Quantum Sensitive and Timed Delivery Missions
+- Pushables T0
+- Mounted Guns
+- Force Reactions - Staggers
+- Cyclone MT
+Known Issues
+- Players may get a random Crime Stat when Killing a Bounty
+- Placing a trolley under a large elevator and calling it can damage the ship with colliding
+- After (un)docking the merlin, no other player can undock it
+- The name of the ship is not displayed via vehicle canvas after insurance claim
+- The customizable nameplates do not appear to be visible anywhere on the Carrack Expedition
+- ASOP displays as "unable to spawn at this time" and could fine the player for spawning a ship with one already on the pad
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Weapon icon, Ammo count and Grenade count are missing from the user HUD
+- Leaving a trolley in a door way will clip through the floor erratically and can kill players
+- Bright / Opaque fog volume encompassing cockpit of ships at Lagrange point / Near gas clouds
+## Major Bug Fixes
+- Fixed an infinite textures load issue that caused many assets and missions to not load in for long periods of time
+- SDF Shields should no longer allow damage through that they shouldn't when the ship is in motion
+- Pitch, Yaw or Roll controls on the 100 series ships should now correctly function
+- Fixed an issue causing the Star Runner fuel scoops to not function fully
+- Deadbolt V should no longer overheat after one shot
+- NN-14 Cannons should now correctly fire when used
+- Fixed an issue causing mounted guns to not fire when used
+- Mounted guns should no longer be overly bright and cause Blinding Lights at night when firing
+- Talon canopy viewport should no longer toggle without user input
+- EMP charge on HUD should no longer be missing from ships
+- Fixed an issue causing ship cockpit glass to become blurry from wear after a very short period of time
+- Misc Prospectors Mining Laser Gimbal Mount and the Mining Laser should no longer be able to be attached onto other Ships
+- The Engine On / Off prompt and keyboard input should now have functionality when using ground vehicles
+- Fixed an issue causing rented ships to not appear on the ASOP terminals
+- Fixed an issue causing cargo retrieve mission status to not update if a Tractor Beam was used to initially pick up the cargo
+- Fixed an issue causing the player to drop their box as soon as picking it up from a landing pad around New Babbage
+- Fixed an issue causing the rotation animation to not work when a player is holding a medpen
+- Fixed an issue causing NPCs to appear very dark when sitting at chairs in the mining store at the refineries
+## Technical
+- Fixed 5 Client crashes
+- Fixed 3 Server crashes
+- Fixed 2 Server Deadlocks

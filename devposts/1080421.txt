@@ -1,0 +1,31 @@
+## Star Citizen Patch 3.1.2
+Alpha Patch 3.1.2 has been released and is now available!  Patch should now show: LIVE-744137
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Major Known Issues:
+- If you logout with a beacon still open, along with the subsequent aUEC deposit, you will lose the money. W/A: Cancel beacons before logging out.
+- Occasionally ships will be able to pass through each other as if missing collision.
+## Feature Updates
+General
+- Players should now respawn in their ship or best available location following a disconnect or client crash
+Now when a player logs out in their ship bed or the client crashes, the next time you connect, the game will attempt to log you back into your most recent ship and location. Your ship will despawn after 10 minutes has elapsed if the ship is empty. If the player attempts to reconnect after this timeout, the player should respawn back in the ship in the best bed/seat available the next time the player connects, assuming the ship has not been destroyed.
+Universe
+- Added the Gemini ballistic shotgun and magazine to PU shops.
+Missions
+- Increased number of instances of each mission type.
+UI
+- Mission Objective Markers were adjusted to not overlap with its location on the Star Map.
+Bug Fixes
+- Fixed rotating elevators in hangars that were rotating in place, causing players to get stuck.
+- Fixed missing animation events for Admin NPCs.
+- The rear elevator on the Reclaimer should no longer be unlocked all the time.
+- The loading screen should no longer finish too early and cause an audio corruption.
+- Fixed bounty hunt missions not completing properly or having correct naming.
+- When switching game modes the loading screen should no longer show the previous mode.
+- Ships should no longer duplicate on the ASOP terminals after making a claim.
+- Fixed AI pirates and security spawning on top of one another when comm arrays are switched on/off.
+- Fixed an issue where outpost markers would disappear after landing on the surface of a planetary body.
+- Search prompts on corpses now stop displaying after being activated
+Technical
+- Fixed multiple memory leaks.
+- Fixed 16 crash events including several server crashes.
+- Various performance tweaks.

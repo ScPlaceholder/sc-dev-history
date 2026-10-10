@@ -1,0 +1,82 @@
+## Star Citizen Alpha Patch 4.4
+Alpha Patch 4.4 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.4.0-PTU.10591300.
+- Audience: Evocati Only (Standard Evo NDA)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 6:2:2:600
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+As this is the initial branch release of 4.4.0, testing and feedback focus is narrowed until further features come online.
+- Stability & Bugfixes
+- New Star System: Nyx
+- Delamar/Levski
+## Known Issues
+Levski Hangars appear to be crashing clients quite frequently in tonight's build when retrieving vehicles. It may be a 1 way trip to land there for now!
+- PU - Nyx - Jump Point Stations - Nyx-Pyro Jump Point - Locations / ATC / Design - Instanced hangars are de-spawning after being requested
+- PU - Nyx - Jump Point Stations - Locations / Art / Design / Hangar - Instanced hangars are staying closed when requested
+- PU - Nyx - Jump Point Stations - Nyx-Castra Jump Point - Locations / Freight Elevators - Players are unable to lower the freight elevator
+- PU - Nyx - Levski - Locations / ASOP Terminal / Fleet Manager - Vehicles are in claim state upon retrieving
+- PU - Nyx - Delamar - Levski - Locations - UI / Quantum Travel - Vehicles - mobiGlas / Starmap - Levski Quantum Travel marker is not present and cant be travelled to (i'm sure evo will find a way!)
+- PU - Multi-System - Locations / Starmap / Quantum Travel - Quantum Markers for Pyro-Nyx Jump Point and nearby Rest Stop Station are not visible making travel to this location difficult
+- Stall / Freeze - Client - PU - Multisystem - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing Commodities Kiosks at locations like at TDD and Admin Offices in Pyro
+- Multi-Location - PU - Stanton - Locations / Actor Respawning - Players may not respawn at their primary residence after using self-destruct or force-respawn
+- PU - Nyx - Levski - Physics / Locations - Elevator Transit Entrance has no Collisions which causes players to EVA while entering and Exiting the Elevator
+- PU - Nyx - Levski - Network / Locations / Server Error - Player in an elevator was repositioned stuck inside the elevator shaft after server error recovery
+- PU - Nyx - Levski - AI / Location - Social AI are killing each other in Levski
+- MISC Hull C - PU - Cargo / Vehicles / Missions - Hull C not loading cargo
+- PU - UI / Inventory - Freight Elevator - Kiosk - The Search function of the Freight Elevator terminals ignores localized item names
+- PU - Locations - Klescher Rehabilitation Facility - Elevators are backwards preventing players from leaving after serving their sentence
+## Features & Gameplay
+New Star System: Nyx
+Implementing the Nyx star system into the persistent universe. In tonight's build, Nyx will include Delamar, Levski, and New Jump Points, but not the three planets Nyx I, Nyx II, and Nyx III.
+For this initial test, we are expecting Cross-System hauling and Exterior Freight Elevators to partially function but we are not collecting feedback on this just yet.
+Ships and Vehicles
+Patch 4.4.0 introduces further refinements to PDT tuning and their interactions with Missiles and Torpedoes.
+PDT changes
+- PDT's guns alpha damage has been reduced by 50%, resulting in an overall DPS decrease.
+- PDTs mass has been lowered, as their previous weight was considered too high.
+Missile/Torpedoes changes
+- Missile health has been reduced by the same percentage as the PDT alpha damage reduction (approximately 50%).
+- Torpedoes health has also been reduced, though to a lesser extent, around 33% less HP overall.
+Additional Ship Updates
+- Anvil F8C Lightning: Buffed Forward Gs and Roll angular speed
+- Slight adjustments to angular acceleration to the Anvil Hawk, Anvil Arrow, and Esperia Scythe
+- Slight Medium Interceptor tuning improvements for flight performance (Saber Raven/Firebird, Buccaneer, herald, Mantis)
+## Bug Fixes
+Star Citizen Alpha 4.4.0 currently contains nearly 140 bugfixes for issues occurring in 4.3.2, 33 of which originated from the issue council.
+- Potential Fix: PU - Error - Error 41013 - Error 41013 can appear upon logging in/loading screen into PU after restarting/closing the game
+- Potential Fix: PU - Commodity Trade / Economy / Locations - Commodities cannot be sold at TDD locations
+- Potential Fix: PU - Onyx Facility - Level Design - Keycode door in security room doesn't work - code is not accepted
+- Potential Fix: PU - Cargo / Commodities / Vehicles / Cargo ATC - ATC fails to detect vehicles within the loading zone or fails to initiate cargo transfers IF THE VEHICLE IS NOT PARALLEL WITH THE CARGO TRANSFER BOX
+- Potential Fix: Pu - Vehicles - Medical - Ursa Medivac medical screen does not deploy upon bed utilization.
+- Potential Fix: PU - Pyro - Contested Zones - Lootables / Interaction / Locations - Orange Armor Loot Boxes Aren't Interactable
+- Potential Fix: PU - Locations - Cargo / UI / Vehicles - Commodities Kiosk - Purchasing cargo directly to a stored vehicle is not possible as you cannot select an amount for the selected commodity
+- Potential Fix: PU - Missions / mobiGlas / UI - Collector - Wikelo Emporium - The "Trade Merc Scrip for Favors" banner is giving Players the "Trade Council Scrip for Favors" mission
+- Potential Fix: PU - Onyx Facility - Missions / mobiGlas / UI - "Retrieve Seismic Data" mission not completing despite all objectives being completed
+- Potential Fix: ARGO Mole / ROC DS - PU - Vehicles / Mining / UI - Mining UI and scanning HUD are not working when targeting a mineable from the mining turrets
+- Potential Fix: Multivehicle - PU - Vehicles/ PDC - PDCs are not firing not targeting missiles or ships
+- Potential Fix: ANVL Paladin - PU - Vehicles - Paladin body damage transfers to cockpit in the target status hologram
+- Potential Fix: Multivehicle - PU - Vehicles - Vehicle MedBeds medgel interaction ports absent
+- Potential Fix: Anvil Paladin - PU - Vehicles / Art - The players idle animation is incorrect when sitting in the habitation bench seats
+- Potential Fix: Multi-Item - PU - LTP - Core Tech - Medals do not persist between patches
+- Potential Fix: PU - Missions - Hauling - Some Hauling missions are giving extra mission cargo
+- Potential Fix: PU - Armor - UI / Inventory - Narrative - ORC-mkX Core Armor series mislabeled as Light Armor in the Item Description on the Inventory UI
+- Potential Fix: Anvil Asgard - PU / AC - Vehicles / Turrets - Top missile turret can be easily destroyed (40x increase in turret health)
+- Potential Fix: Sol-III Helmet Aviator - PU - Armor / Character - Sol-III Helmet Aviator will remove facial hair when equipped
+- Potential Fix: Morozov SH-I Helmet Series - PU - Actor - Armor - Lightning / GFX - The Helmet's Flashlight is lighting up from the default left temple
+- Potential Fix: Multivehicle - PU - Vehicles / Damage / Weapons - No distortion damage in latest patch
+- Potential Fix: Anvil Paladin - PU - Vehicles - Right gunner's seat is missing its right footrest
+- Potential Fix: Anvil Paladin - PU - Vehicles - Co-Pilot Missile operator mode does not display correct missile payload number
+- Potential Fix: PU - Stanton - Wikelo's Emporium / The Collector - Mission Content / UI - Multiple missions are missing a required item for mission completion (ATLS, Polaris, armors, and weapons)
+- Potential Fix: Greys Market Shiv - PU - Vehicles / VFX - The Shiv's engines animate as on when the ship is off.
+- Potential Fix: Aegis Idris series - PU - VMA - Idris IFR-BC7 Turret fitting can break attaching on VMA leaving the turret empty
+- Potential Fix: Drake Corsair - PU - Vehicles / Art - Landing gear bays fail to animate on close
+- Potential Fix: RSI Apollo ( All variants ) - Vehicles / Art - Objects get stuck in Apollo Medbay doorway due to invisible collision at edges
+- Potential Fix: PU - Salvage - UI / Narrative - Refinery - Construction material scrap rubble and salvage names are cut off when viewing them in the refinery kiosk
+- Potential Fix: AEGS Reclaimer - PU - Vehicles - Reclaimer: PDC hardpoints have tokens names in VLM
+- Potential Fix: PU - Missions / UI / mobiGlas - Destroy Satellite - Mission name and description are blank in contract manager
+- Potential Fix: ORIG 400i - PU - Vehicles / Art - Sofa on habitation floor has a bugged material, missing part of the mesh
+- Potential Fix: PU - Pyro - Farro Datacenters - Locations / Design - "No Access" Single door spawn closets open from both sides allowing players to walk into them
+## Technical
+- Fixed 4 Server Crashes

@@ -1,0 +1,2 @@
+Yeah, it's just a question of resolution. Where do you want your pixels, on the surface, where you can see them? Or layered inside the object where you can't?
+The other advantage of a mesh is that it's a sparse representation of the object, individual points are at precise locations, so you can have small details on a big object for no extra cost. A 3D texture, by comparison, can only display something at the resolution of its cells, so adding fine detail means increasing the memory cost.

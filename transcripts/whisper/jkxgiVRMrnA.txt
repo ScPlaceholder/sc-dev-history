@@ -1,0 +1,140 @@
+# Inside Star Citizen | Alpha 4.3 Patch Report
+# https://www.youtube.com/watch?v=jkxgiVRMrnA
+[    0.0] You're here, I'm here, we got one take.
+[    3.7] Let's talk about the elevator in the room.
+[    6.3] Now up until this point, freight elevators were mostly used in single player short term environments like personal hangars.
+[   13.8] There would usually only be one user and on the back end it would be stowed when you left and a fresh new freight elevator presented every single time you went back in.
+[   23.7] Now while certainly not perfect, these tended to operate better than the ones out in the wilderness, let's say outposts,
+[   31.4] which like many other things in the verse tended to compound their issues over time the longer they were left to run.
+[   38.0] Now of all the known issues with all the freight elevators in the game,
+[   41.7] most tend to revolve around simple things like it just doesn't work and bigger problems like all my items have vanished and they're now lost forever,
+[   51.0] which itself can often tie into other issues with things like long term persistence,
+[   56.5] which we're going to have an SEL on with Benoit soon to discuss some new developments there,
+[   61.6] so if it's okay with you we're going to stick to freight elevators for the time being.
+[   66.6] Now at this point, I'm not really telling you anything that most active players don't already know,
+[   72.9] but it's important to note that these issues have been egregious enough that we'd already started a directed repair initiative months ago.
+[   81.3] It's just not completed yet, obviously, maybe super obviously.
+[   89.8] As with transit, when working these issues we try really hard to avoid what are known as pack fixes
+[   96.2] and focus instead on trying to uncover what is ultimately the root cause that will create all this instability underneath,
+[  103.6] and that process can often seem like absolutely nothing is happening for days or even weeks at a time.
+[  111.3] So last month, what happened with Race for Stanton?
+[  115.7] Well, sometimes changing how we use old features can be just as painful as adding a bunch of new ones.
+[  122.0] With a higher concurrency in daily active users than any patch this year,
+[  126.9] large numbers of players were driven from their private freight elevators and their personal hangars
+[  132.1] to the more troublesome ones out in the PU.
+[  135.7] Statistically, rare states became common and less common issues became fertilized and grew into bigger, unavoidable ones.
+[  144.7] Although in many cases, this still took hundreds or even thousands of players using each freight elevator to manifest a single issue.
+[  153.7] Now, like with transit before it, or the infamous 30k issues of old, who remembers those?
+[  159.3] The issues you encounter in the PU are not always due to one or two bugs,
+[  164.1] but often dozens and dozens of underlying conditions beneath and around it,
+[  169.0] which throwing thousands and thousands of players at have helped us address more successfully than ever before.
+[  175.8] And since the release of Alpha 421 and up until the recording of this video,
+[  180.9] we've identified the root causes of 44 individual freight elevator issues,
+[  185.9] with 20 of them being classified as blockers or critical,
+[  189.4] and almost all of them with causes only revealed by running thousands of people into them
+[  195.8] over and over and over again throughout this event.
+[  200.0] Now, in a phrase that should be very familiar to our software engineer enthusiasts out there,
+[  204.6] as we work to fix each issue we encountered,
+[  207.4] the resolution would often reveal another lying in wait underneath.
+[  212.2] But this is a good thing, yeah?
+[  214.4] We did all this intentionally to force progress so we can finally fix freight elevators like we did 30k
+[  220.2] and are still doing with transit? No.
+[  225.8] Now, while the project will definitely benefit from what happened long term with all the fixes
+[  230.5] and hardening that's been going in and that will continue to go in throughout Alpha 4.3 and beyond,
+[  236.0] the answer to what really happened isn't particularly exciting or salacious or any
+[  242.8] different than what I imagine most of you already suspected.
+[  246.2] We knew there'd be issues like there have been,
+[  248.6] but we underestimated how they'd compound on top of one another at higher stresses.
+[  255.1] It's been a sometimes frustrating process for everyone on both sides of the project,
+[  260.3] but at the same time, we're super proud of the content and cadence we've achieved this year,
+[  265.9] and of the strides all of our teams are making to make this the most compelling year of Star Citizen
+[  271.4] gameplay yet. For every single step backwards, I truly believe we're taking multiple strides forward,
+[  278.5] and the overall improvements to the experience along the way are what keep many of us motivated
+[  284.2] to continue going month after month. And with this new Onyx Facilities content drop
+[  291.1] being spread out over multiple releases, we're going to continue taking the time
+[  295.9] to improve existing experiences along the way. And to that end, as some of you probably have
+[  302.7] already heard, it was in the loading screen and whatnot, we're also going to go ahead and extend
+[  307.9] the Race for Stanton missions while we continue to work on freight elevators throughout Alpha 4.3.
+[  314.2] It'll mean another month for folks to try to dethrone Hurston from the lead they hit so very
+[  319.2] early for you to earn any of the individual rewards that are still outstanding, and for us to
+[  326.6] continue beating on freight elevators about the head and neck with the proverbial pipe along the way,
+[  332.0] and all while you continue your exploration of ASD's latest malpractices.
+[  338.9] Speaking of which, we've also made the decision to keep relatively quiet on Onyx Facilities and
+[  345.1] ISC and beyond. We do this to better let you investigate and discover things for yourself,
+[  351.4] but that doesn't mean there isn't more that August has to offer. So let's go ahead and use our
+[  356.8] remaining time this week to explore the other aspects of this new release in Patch Report Alpha 4.3.
+[  379.6] For several years now, we've had these ground storms with rain and snow and whatnot,
+[  385.3] and those are sticking around for a while yet, but in Alpha 4.2 we continued to get our feet
+[  390.6] wet with the first iteration of Dynamic Rain, and now two months later in this release we're
+[  395.9] continuing our climate campaign with the nascent version of Dynamic Snow, which leverages the
+[  401.7] same system to sleep the skies wherever the surrounding situation is sound. It's a small
+[  409.2] thing to let us avoid rain falling on snowy areas, but these insipient iterations will continue to
+[  414.9] develop both in gameplay and in its sights and sounds over subsequent releases. And meanwhile,
+[  421.7] in things you can wear and hold, almost every patch this year has had a new armor and weapon to
+[  426.7] discover, and in August you'll find the new specialist light stealth armor. There are a
+[  431.8] few different variations floating around, including a neat ASD one and this one from Wiccolo.
+[  438.4] It's an interesting visor, but it does beg the question, with the blast shield down, how can I
+[  443.8] even see? How am I supposed to fight? To which the answer is I probably shouldn't quote Star Wars,
+[  451.5] because Disney has lawyers. We've also got a new vote weapon this month called the Zenith Sniper
+[  457.7] Rifle that, and let me read this text I have on the screen here from Zach, combines the raw punch
+[  463.7] of a charged sniper shot with the rapid fire precision of a marksman rifle, which doesn't
+[  470.6] sound OP as heck at all, Zach. Now there are some notes here about how loud it will be and how important
+[  476.8] managing heat is, because if you don't it becomes essentially inoperable, like me, and it's the latest
+[  483.0] in this year's line of vote weapons, and like all the others before it, you can be the judge if
+[  487.3] its advantages are worth the trade-offs. Also, hangar respawning returns. Now it's a small thing,
+[  495.0] but the ability to spawn directly into your personal hangar and get back into the fray
+[  499.3] should be a welcome one for anyone that's played the game for a while. Personal hangars
+[  503.7] are slowly becoming our first true homes in the verse, and this is yet another step in the right
+[  508.9] direction. Also another step in the right direction, spotting ground vehicles from the frayed elevators,
+[  516.2] which is not coming in alpha 4.3, but I've got a platform and I'm going to use it to say everybody
+[  522.4] wants it Benoit, and we're going to find time to prioritize it for the schedule, after more fixes
+[  528.8] in the next couple months first. Let's move on to virtual currencies. Now this year we introduced
+[  534.9] Wikolo, the collector and his emporium of esoteric effects, not the actual name, and over the last
+[  541.3] couple months we've seen vehicles new and old get added to his inventory as variants with
+[  545.7] unique paints and components, and that's great. Or at least it was once we killed the RNG thing.
+[  552.4] Yay! But what about the various ship shops in the verse? Where's my golem? The fortune?
+[  559.5] The Guardians? Well in alpha 4.3 inventories are getting updated with many of the most recent ships
+[  565.7] that have been released. What this means is while you can still pledge for ships to support the
+[  570.7] continuing development of Star Citizen, and you can still work for those fancy component variants
+[  576.0] of many with Wikolo, you should also be able to pursue the base versions of newer vehicles for
+[  581.6] AUEC and in a more reasonable timetable from now on. It's our way of saying, yeah we'll be better
+[  589.2] at this going forward. It was Tyler Wiccan's fault. And while we're talking about spaceships,
+[  598.3] starting back in May and continuing with each monthly patch after that, the vehicle experience
+[  603.2] team began the next wave of flight tuning adjustments for every ship in the verse,
+[  607.5] hitting most of the heavy and medium fighters and interceptor subclasses within. Now with alpha 4.3
+[  613.8] it's time for some light fighters to get their pass. This includes adjusting SCM and nav speeds
+[  619.8] to increase variation within the class, altering the linear and angular accelerations, adjusting
+[  626.3] health pools, and even swapping out some flight controller components. Now there's a whole list
+[  631.7] with details in the patch notes, but if you haven't flown your light fighter in a while,
+[  635.8] maybe give it a go this patch. And while we're talking about light fighters, what would a patch
+[  642.6] in 2025 be without brand new vehicles? And for August, we've got the long-awaited debut of the
+[  648.6] L21 Wolf. It's sleek. It's slick. It's kind of like a cool spaceship Rorschach test. See some
+[  656.0] people see a fancy hot rod, some people see a super marine Spitfire, and some people like me see a
+[  662.2] NABOO Starfighter. But it's not. It's not. Disney. It's the newest light fighter from Cougar
+[  670.8] inaglactic, a brand previously known for the Merlin and Archimedes, two ships who share the same
+[  676.4] names as characters in an old animated film about King Arthur from... you can learn more about it in
+[  685.0] our dedicated Behind the Ships episode also available on YouTube, and the L21 Wolf will be
+[  690.3] flyable as soon as alpha 4.3 releases. And lastly, let's go ahead and touch on this month's big
+[  697.3] content drop, the new Onyx facilities. Now this is a big swing from our environment,
+[  702.7] level design, mission, sound, and every other team that's worked on them. And that's why I'm not
+[  708.0] going to say a whole lot. Everyone here really wants you to just get in there and experience them
+[  712.8] for yourselves. And don't forget, this is our first multi-part release of the year. So we'll open up
+[  718.7] that third and final wing eventually, and you'll find out what Dr. Yoran ASD has really been up to.
+[  725.6] It's more than just worm torture. I can promise you that. Ultimately, this month like this year
+[  732.9] will continue to see Star Citizen pushing its development into lots of new directions.
+[  737.7] And quite frankly, some are going to work better than others. Some are going to take us a bit to
+[  741.9] figure out. And some are going to be some of the best and most interesting content we've ever
+[  746.4] released. A line of mine, Stormbreaker, Onyx facilities. I just want to shout out all the work
+[  752.5] everyone on dev is doing to keep this year interesting and to continue improving the
+[  756.6] existing gameplay systems along the way. And then of course, the continued engagement with the
+[  761.3] project from you, who are coming back month after month in record numbers to see where we're going
+[  767.3] next. And finally, if you are wondering why I'm at my desk, where I spend most of my day doing my
+[  774.9] other job behind the scenes that has little to do with ISC or SEL, there's this little thing
+[  779.6] called CitizenCon Direct coming up on October 11th. And the spaceship is currently locked down for
+[  785.0] the next eight weeks filming for that. So be sure you check out the latest posts on the Bar Citizen
+[  789.7] Global Watch parties to find out where you can join our staff to watch it as it unfolds.
+[  795.3] For Insight Star Citizen, I'm Jared Huckabee. Thanks for listening to me yack about freight
+[  800.1] elevators for five minutes. And I was going to do a joke here at the end where I pretend to
+[  805.0] push a button and the elevator takes me down beneath my desk. But considering the work that we
+[  810.4] still have ahead of us and fixing them proper, it would probably go a little something like this.
+[  815.9] I'll just say we know what's left to do and we're on it. Thanks for watching. We'll see you next time.

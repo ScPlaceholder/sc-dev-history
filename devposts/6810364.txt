@@ -1,0 +1,38 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9164714.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Open PTU
+Server Info: US/EU - EPTU Channel
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Testing/Feedback Focus
+- Stability/Performance/Bug Fixing
+- New Features & Gameplay Updates
+Known Issues
+For 3.23.0 LIVE, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs. This is not the intended final outcome for missions and recovery and further changes are coming in a later release.
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Graphics / Vulkan - Flight HUD / FPS UI - No UI HUD with Vulkan enabled on AMD GPU
+- PU - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals for ground vehicles at Lorville gates get stuck on infinite load, accessing list of ships
+- PU - Stanton - UI - HUD / AR Markers - Misaligned HUD Markers with Ultrawide or TSR graphics upscaling enabled
+- PU - Gamewide - Using a medpen causes you to drop your weapon
+- PU - Locations - Transit - Elevators - Internal Transit Elevator shows up when called but doors remain closed, no carriage
+- PU - Interactables - Locations - Lorville - Hab doors may fail to open when interacted with, even when there are no delays in responses for other interactions
+- PU - Greycat ROC  - Stanton - ROC Mining Laser Not Activating
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - UI / mobiGlas - Home App - After selecting a vehicle on the home screen the UI indicators appear pixelated and hard to read
+- PU - Locations / Vehicles / VMS - Can't repair/refuel/restock at Pyro Gateway Jump Point Station
+- PU - Stanton - Mission Content - Eliminate Contraband missions not spawning Contraband
+- PU - Stanton - NPE - Missions - Objectives can be softlocked by player leaving bed before their objective record has updated
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - Location / Transit - Grim Hex Hangar Elevators occasionally do not respond to calls
+- AC - Custom Lobbies - Multiple game modes - The several game modes cannot be launched in a custom lobby
+## Bug Fixes
+This build has many streaming changes around Distribution Centers to help stop ships and vehicles falling through and clipping the floors and ground in the area after the locations stream out and back in. With this update, Distribution Centers should stream in before vehicles allowing them to determine position correctly. This issue was causing large amounts of physics performance costs on the servers and reducing their overall framerates.
+- Fixed - PU - Stanton - Port Tressler - Transit - Elevators at Port Tressler may become unusable
+- Fixed - PU - Missions / AI - AI are desyncing during combat inside UGFs (Should hopefully resolve AI teleport jitter)
+- Fixed - PU - Stanton - Actor - Interactions - Consumables - Unable to drink full bottle contents in one nonstop action
+## Technical
+- Fixed 3 Server Crashes

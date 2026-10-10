@@ -1,0 +1,58 @@
+## Star Citizen Alpha Patch 4.0.1
+Alpha Patch 4.0.1 has been released onto the PTU!  Patch should now show: VERSION 4.0.1-PTU.9484757.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:500
+Hangar Spawning: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability, Performance, and Bugfix Testing
+- Save Stanton Chapter 2 Event in Pyro
+Chapter 2 of Save Stanton will run throughout the PTU phases in 4.0.1. This is a continuation of the event from 3.24.3 into the Pyro side of events.
+## Known Issues
+- PU - Pyro - Courier - Mission Content / UI - Boxes are not marked upon accepting the mission
+- PU - Cargo - Hauling Missions - Warehouse orders not counting collected & delivered cargo correctly
+- PU - Cargo Hauling - Mission Content / Mission Refactor / Game Code - Supplies will remain in players warehouse and not successfully deliver
+- PU - Stanton - Locations - Hurston / Rappel - Storage Kiosk - Can't Interact with Storage Kiosk
+- Multivehicle - PU - Vehicles / Exploit - Fuel - Hydrogen and Quantum fuels are not depleted from fuel tanks when performing normal flight or Quantum Travel
+- AC - Pirate Swarm / INS Jericho - AI - Enemy AI does not spawn and will eventually get a disconnection Error: 30000
+- PU - Starlight Service Station - Elevator Terminals / Locations - Calling for Starlight hangar elevator from the hangar may cause you to teleport into an empty elevator shaft
+- PU - Stanton - New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- PU - Actor - Personal Inventory / Storage Access - Loot Box / Armor - Interactions / PIT Wheel - Helmets that are carried then dropped via PIT menu will disappear/become lost
+- PU - Pyro - R&R Station - Stanton Gateway Station - Locations / Shopping - All shops in Galleria are missing items on shelves and in Kiosk
+- PU - Pyro - Frontier Outposts - XS Outpost - Locations / Art / Tech - XS Outpost Main Building interior and Storage Shed interior is missing multiple assets and collision
+- PU - Pyro - Asteroid Bases - Hangar - Locations / Collision - The collision for the hangar doors does not stream in until the player is inside the hangar
+- PU - Pyro - Mission Refactor - Hauling - Mission Content / Reputation - Players are able to access the other intro missions after completing one for a different Org
+- PU - Stanton - Shopping / Selling / Cargo - Commodity Kiosks - Commodity kiosks are empty preventing any purchases or sales
+- PU - mobiGlas - UI - Contract Manager - Contracts can overlap with sections below them when expanded
+- PU - Pyro - Physics - Locations - Contested Zones (CZ) - Plastic Curtains have solid collisions against projectiles and cannot be passed through if ADS
+- RSI Polaris - PU - Vehicles - VLM - Occasionally lose Components By Pressing A New Insurance Claim or Repairing A Damaged Polaris
+- Contested Zones - Weapon intersecting with the ground
+## Features & Gameplay
+- Gameplay
+Save Stanton Ch 2: Added progress tracker journal entries for Save Stanton Chapter 2. Replaced Phase 8 cave destinations with bunkers. Further Mission Description updates.
+IR/EM Class Modifier Adjustments to Slightly Reduce Impact of Stealth Components
+- Ships and Vehicles
+Updated Mustang Alpha Cargo Storage proxies to help with the Cargo loading/unloading
+## Bug Fixes
+- Fixed an issue causing players to get stuck loading and 0 entities for long periods and time out (STARC-151027)
+- Fixed - PU - Pyro - Save Stanton Ch 2 - Phase 6 - Missions - Player can Accept and Complete all 3 faction intro paths softlocking further progression
+- Fixed - PU - Missions - Medical Rescue Beacon - Service Beacon / UI / Mission Marker - The mission marker for the Medical Rescue Service Beacon is missing (STARC-131026)
+- Fixed - Multivehicle - Quantum Travel - Nested vehicles are left behind when transitioning authority boundaries during Quantum Travel (STARC-145688)
+- Fixed - Hawk landing gear is in a 'middle' state between deployed & retracted when spawning (STARC-109275)
+- Fixed - Jump Points - Physical entities outside of a ship in tunnel are not effected by tunnel forces (EVA should no longer work inside a jump tunnel due to this)
+- Fixed - MISC Prospector - Vehicle - HUD UI - Entry Markers - AR Entry markers are missing on the Prospectors Ladder
+- Fixed - PU - Stanton - microTech - Landing Zone (LZ) - New Babbage - Locations / Lighting - Multiple Lighting issues present within the Hospital ward corridors
+- Fixed - PU - Pyro - Save Stanton Ch 2 - Phase 8 - mobiGlas / Missions - Both faction Phase 8 missions have the same title in the mobiGlas
+- Fixed - PU - Storage Kiosk/UI - A transparent box can be seen overlapping the "Transaction Confirmation" Screen when trying to complete hauling missions
+- Fixed - PU - Pyro - Derelict Outposts - Locations / Core Tech / Collision - base of various Derelict building have no Collision in certain spots
+- Fixed - RSI Constellation Series - ( ALL VARIANTS ) - PU - Vehicles - Art / GFX - There is a vertex color issue along the interior bridge struts displaying as purple
+- Fixed - PU - Maker's Point - Locations / UI - Maker's Point Commodity Kiosk inventory selection drop down menu has no inventories available
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed 2 Server Deadlocks
+- Fixed 1 Hybrid Service Crash

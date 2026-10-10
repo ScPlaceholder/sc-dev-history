@@ -1,0 +1,59 @@
+## Star Citizen Patch 3.8.0o
+Alpha Patch 3.8.0o has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.0-PTU.3901514.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: YES
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- General gameplay and traversal
+- Microtech and updated rest stops
+- New look ahead and third person camera updates
+- Patrol, bounty, and mining claim missions
+- Fine kiosk system
+- Hijacked 890 mission
+- Mining and mining laser head attachments
+- Ship components
+Known Issues
+- Shop services may be slow to respond and process purchases.
+- Elevators at Port Tressler and Everus Harbor may not show up when called.
+- Once a magazine is emptied for the Animus Launcher the player can no longer equip fresh magazines.
+- The mission marker for black box recovery does not update when arriving at orbital mission locations.
+- Multi-tool scanned mineables remain on the player's HUD when the multi-tool is stowed.
+- If the quantum travel marker is at the edge of a moon or planet they can QT through the moon and explode.
+- Carriable mission items can fall through flooring.
+- The Sentinel is incorrectly labeled as the Harbinger in the ASOP and Comms channel.
+- Purchased commodities will often visually not appear in the ship's hold.
+- Carriable boxes may fall through the flooring.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## Feature Updates
+Locations
+- Updated sound effects and ambience at junksites.
+- Further polish pass for Planet Tech v4.
+Ships and Vehicles
+- Tweaked boost camera shake so it's not so extreme.
+## Bug Fixes
+- Using emotes on the elevator on Grim HEX should no longer cause players to fall through.
+- The quantum drive on the Constellation series ships should now be swappable.
+- The Lancet Mining Laser should no longer fire straight down when in use.
+- Arccorp Riker Memorial space port restricted areas should no longer trigger a warning above the player when a restricted area isn't present.
+- Ships that have previously been impounded should no longer have a high chance of disappearing when going into quantum.
+- Players should no longer be able to duplicate harvestables when dropping them on the ground.
+- Players should no longer become uncontrollable when going into EVA.
+- There should no longer be extreme frame stalls when riding the trains at Lorville.
+- Players should now be able to purchase commodities at all outposts and rest stops.
+- The enemy AI inside the 890 Jump should now consistently engage the player.
+- Filling the Caterpillar with cargo should no longer cause significant framerate drops for those nearby.
+- Players should now be able to sell trading commodities at rest stops.
+- Drake Cutlass back door should no longer be offset.
+- Cloudy storms should no longer be visible for one player and not the other in the same location.
+- Players should no longer get stuck when moving slowly into a no fly zone.
+- Planets and Moons should no longer have a graphical halo blur issue when viewing from a distance.
+Technical
+- Fixed 5 server crashes.
+- Fixed 3 client crashes.
+- Fixed 2 server deadlocks.

@@ -1,0 +1,84 @@
+PU Monthly Report
+April  2026
+Welcome to April’s PU Monthly Report! With Alpha 4.7 well established in the ’verse and the recent point patch adding new delivery missions around Nyx, most of the devs used the last month to progress with features, content, and other deliverables coming next. Read on for everything that happened behind the scenes of the PU throughout April.
+## AI Content
+April saw the Narrative Design team introduce Tactical Strike Groups. These content drops incorporate new characters and a staged mission progression, which presented several unique challenges, such as ensuring the comm notifications triggered correctly. Narrative Design worked alongside Mission Design to get everything functioning and are eager for the community to start experiencing it.
+The team also supported a performance capture shoot to record content for several other upcoming content drops alongside general population dialogue and conversations. They also tackled bugs affecting social areas and comm notifications for Alpha 4.8.
+## AI (Features & Tech)
+AI Tech & Features began April with various optimization tasks, including a refactor of the Hermite cubic spline implementation to achieve better performance. A major performance offender was also fixed in the derived version of the original spline code used in cinematics. Work is currently underway to replace the current brute force arc linear integration with a more reliable set. The navigation octree memory was further optimized too.
+Time was then dedicated to the flight AI, with the team working to improve air-to-ground combat. For example, when targets are moving planetside, such as the player, a turret, or ground vehicles. They also began improving other mechanics, such as making jousting faster and more intense, close-distance strafing and direction changes more prevalent, and providing better tactic selections and transitions. Fleeing and chasing are being improved, too, alongside formation interceptions.
+For navlinks and the pathfinder, the team upgraded NPCs traversing manual doors via control panels. Elevator and transit system improvements were also made alongside NPCs using airlock systems.
+The devs then restructured melee data to be more modular. This will allow them to more easily reuse the spatial limits in multiple aspects of NPC melee behavior.
+Progress was made on the creature toolkit, including updates to how triggerable actions are handled. The juvenile valakkar was ported to use the AI motive pattern, while updates were made to damage tracking and how worms submerge and emerge.
+Finally for AI, bug fixes were made for NPC ships remaining in close proximity to the surface of central asteroids and failing to respond to player aggression.
+## Animation
+Animation progressed with an upcoming creature, adding new actions and attacks alongside improving existing data. They’re also working on a Super Heavy armor set that carries a large full-auto weapon.
+Facial Animation were on-set for a two-day shoot with the Motion Capture and Narrative teams. As part of this, they captured new content for Recco Battaglia, who will be returning to Levski, with a new mission and two supporting characters, Isaac Kepler and Amir Lucas.
+New content was captured for NPCs around Nyx, expanding the voice packs players will hear in landing locations. Content was also closed out for Alpha 4.8, which includes two new characters for a new mission.
+## Art (Characters)
+The Character Art team spent April developing a new armor set and in-game rewards. They also continued to support the StarWear initiative and polished projects for Alpha 4.8.
+The Concept Art team explored a new gang and finalized handoff sheets for a new combat armor.
+## Art (Ships)
+In the UK, the Ships team progressed with the Drake Ironclad and Ironclad Assault. Both passed their LOD0 review and moved into the final phase. The Command Module was also implemented, which can be seen in the PTU on the Caterpillar.
+Progress continued on other DefenseCon ships. The MISC Starlite passed its LOD0 review and had multiple playtests alongside revisions to its gameplay loop, ensuring it's fit for purpose ahead of its final gate review.
+The Drake Pitbull has its final review scheduled for early May, with the team moving on to bugfixing, while further team members moved on to the Origin M80 to prepare it for its LOD0 and final gate reviews in early May.
+An unannounced ship passed its LOD0 review and is due to have its final review in early May. QA began testing, Ships fixed assorted minor issues, and downstream teams finalized some of the bespoke VFX and SFX for the ship.
+Beyond DefenseCon ships, the Gatac Railen moved toward its greybox review, with the team making sure all areas of the ship are brought to the same high standard. A second unannounced ship continued through whitebox with more devs joining the project to help block out the interior.
+Another unannounced ship passed its whitebox review, with Ships working alongside Mocap to build out and make amendments to the in-game asset to suit the custom enter and exit animations.
+In North America, the Ships team continued to move an unannounced vehicle toward its greybox gate review in early May.
+They also progressed with the Drake Kraken. Having passed whitebox last month, the ship moved into greybox, with special attention being paid to ensuring the asset is as optimized as possible.
+“With a ship this size, it’s critical to ensure the time budget is being spent in the right places before it’s too late.” Ships Team
+The team also worked on integrating some of the bridge station and manned-turret concept work that was highlighted in this month’s subscriber Jump Point magazine.
+## Art (Weapons)
+Last month, the Weapons team put the finishing touches on the new Kastak Arms plasma grenade, preparing it for release. They also completed a polish pass for the UltiFlex Novia crossbow, updating some of the geometry to align it with current weapon standards and ensure it lives up to expectations.
+Work also began on a new large caliber weapon set scheduled for later in the year, while material polish passes continued on numerous existing weapons.
+## Community
+The Community team kicked April off with the publication of the March PU Monthly Report and early prep work for the Captains of Industry event.
+They also announced the winners of the Stella Fortuna ‘Good Luck, Full Speed, Respawn’ video contest.
+“This year's submissions raised the bar. We were blown away by the incredible displays of skill and bravery that our community provided, and we appreciate the efforts of everyone who participated.” Community Team
+Captains of Industry was the centerpiece of April's content work. The team supported the event with a Catch-All thread and a Q&A covering the new MISC Hull B, featuring answers straight from the developers. They also updated the Cargo Guide to reflect the latest hauling vehicles, the MISC Hull B and Greycat UTV, refreshed the Salvage and Repair Guide with recent changes to the inventory, UI, and resource gathering, and updated the New Player Guide.
+The Bar Citizen World tour continued in April, with the team attending both LVL UP EXPO in Las Vegas, USA, and Gamebox in Herning, Denmark. The festivities also included a team-up with CLX to give away a high-end gaming PC. Back home, the team published a Save the Date for DefenseCon 2956, getting the community's calendars marked ahead of time.
+Throughout the month, the team kept a close eye on community sentiment across Spectrum, social media, and in-person events, tracking player feedback and flagging key themes for the relevant development and production teams. This kind of ongoing loop between the community and development staff is a core part of how the team operates and April was no exception.
+As always, the team kept up their regular cadence of This Week in Star Citizen and bi-weekly Roadmap updates.
+## Core Gameplay
+In April, Core Gameplay supported various initiatives and focused on bug fixing for Alpha 4.8.
+Core Gameplay also worked on the last details of Ship Hangar Services T0, preparing it to go live in Alpha 4.8. A list of bugs from the inventory rework was compiled from QA and the players, with the devs working to fix as many of the most critical ones as possible.
+For Refueling, iterations were made to refine the gameplay experience, mechanics, and overall flow, with the main goal of streamlining the feature. For that, Core Gameplay supported Mission Design in the delivery of new missions. Lastly, tasks for an NPC refueling beacon are underway, allowing players who get stranded to call for help.
+Work on vehicle component crafting made progress, exposing a variety of new stats to the Design team to modify as part of the crafting flow.
+StarWear progressed well, too, with the team preparing for an internal demonstration showcasing the ability to customize characters using a variety of clothing and armor pieces.
+## Mission Design
+April saw the Mission team design fundamental changes to the contract system. The first that players will see is a limit on how many contracts they can have active at one time. While the first implementation will help fix exploits, it will not be the final or full version, which will be talked about in more detail at a later date.
+The team also polished the Defend Location ship mission, balancing it ahead of its release, and further progressed with refueling missions. The FPS versions of Defend Location, where players have a variety of competing objectives to complete in the harder difficulties, received feedback and are currently being polished.
+Tactical Strike Groups is also being finalized to ensure it's working as intended and is fun to play.
+“We are very excited for you to play this!” Mission Team
+## Narrative
+Narrative began April by wrapping up content for Alpha 4.8. This involved handling several large-scale content drops, including Tactical Strike Groups, mission text and content for the Refueling missions, and introducing several new factions to support the new gameplay.
+The writers worked closely with the Mission teams to generate scripts for April’s capture session to pick up content for a familiar face.
+Development continued on the Starchitect tool to incorporate narrative needs into the projection of outposts and characters to ensure assets are created in line with planet lore. In an effort to get ahead, there were also initial conversations about initiatives later in the year to try to anticipate what kind of content could be captured sooner rather than later.
+## Online Technology
+In Montreal, the Live Tools team completed various improvements to the internal tools that keep Star Citizen's operations and development running smoothly. There was a major focus on Hex, the team's player investigation and support platform. The team is currently working on a full visual and UX overhaul, named Hex v4.0 that established a new design system to guide all future development. Moreover, the team are adding powerful new capabilities for support staff.
+The team then spent time stabilizing Panic Switch, a recently launched tool for managing live service incidents, fixing editing bugs, improving the dashboard experience, and migrating configuration data.
+Regarding Bootstrap, the tool that helps developers run local environments, the team finished user research interviews and journey mapping. They’re currently moving into the technical design phase for a full client revamp. Work also continued on error reporting, with the team improving crash report reliability and enriching the data captured with each report, including stream context, badge information, and severity levels.
+Alongside these improvements, the whole team contributed to ongoing maintenance across Hex, Bootstrap, and error reporting, resolving dozens of standalone bugs and smaller requests. The team also completed work to unblock the Editor team by delivering key Jira integration features for error reporting.
+“As spring is slowly dressing the trees, the Live Tools team is positioned to continue driving meaningful improvements to the tools that support Star Citizen's development and live operations.” Live Tools Team
+In April, the Online Services Team (OST) completed work on Lazy Inventory Creation and Inventory ID Enforcement. These make the game's item and inventory systems more reliable for players.
+The social features pipeline advanced, with Chat actively in development alongside other features such as Friends, Online Presence, and Party Viewer all queued up as upcoming deliverables.
+As usual, the team continued to provide ongoing support for Mission System 1.0, addressing design requests around instanced operations, per-cycle item limits, and contract advertisement behaviors in instanced environments.
+Work on a Global Database Sharding Service was completed. This behind-the-scenes improvement is aimed at making the game's infrastructure more scalable as the player population grows. The team engaged closely with QA to build a new tracking dashboard for long-term persistence bugs, thus improving visibility and response speed for the live game. Early design and discovery work also began on the Crafting and Refining systems. Across all these efforts, OST remained focused on stability, player experience, and preparing the systems that will power Star Citizen in the future.
+The Network team progressed with a system to manage how players' persistent in-game data, such as inventory and progression, is updated and preserved across different versions and patches. This ensures that nothing is lost when the game evolves.
+A significant round of improvements to Server Meshing was merged into the main game build. These updates replace older components with newer, more capable versions that are better equipped to handle the demands of a dynamically connected universe.
+On the live game front, the team tracked down the causes of an out-of-memory crash affecting the replication layer's Hybrid service. A hotfix was deployed and stability improved, though the team is keeping a close eye on the situation.
+Work is also ongoing to resolve a client disconnection error that some players have been experiencing.
+## R&D
+In April, further changes were made to the shader compile server to significantly improve robustness, latency, and throughput. As a follow-up, client-side communication with the remote shader compile server was also cleaned up and optimized.
+Focus then shifted to further improving the rendering quality of gas clouds. Support for ray jittering and non-linear stepping was added. Evaluation of cloud-edge details was also upgraded to minimize the amplification of noise when undersampling due to performance constraints. These changes revealed potential GPU performance gains, which will be investigated in May.
+## Tech Art/Animation
+Throughout April, the Technical Animation team continued to advance content across characters, creatures, armor, and the underlying pipeline.
+A major development was the scale of work toward new DNA heads currently underway. The team is simultaneously driving gate-five expression and polish passes on a large number of named characters across a broad range of identities and ethnicities that will populate the PU. Two named characters, Amir Lucas and Isaac Kepler, had targeted head-rig feedback addressed and now have ‘ready’ status. An additional number of heads was approved for submission. Head RC errors across the pipeline were resolved and incorrect material IDs on two ‘miner’ character-head meshes were identified and fixed. Work on reducing RigLogic memory overhead continues in the background.
+Work on the apex sand valakkar continued, with the team rigging an entirely new mesh.
+Development of the Super Heavy Combat Suit materials progressed well. Blendspace and animation support were validated and closed out, the Maya rig for the backpack is underway, and animation implementation and testing are in progress. This armor set will bring a new tier of combat physicality to PU players.
+Support for importing motion warp points alongside animation files in Maya was delivered, which is useful for animators working on complex character interactions. Several RC errors affecting character and fish assets were resolved and approved for submission, keeping the asset pipeline clean.
+Across all areas, the team's output reflects continued momentum on Star Citizen's character and creature roster ahead of upcoming release milestones.
+## VFX
+VFX worked through major tasks for Alpha 4.8, such as vehicles, including the Drake Ironclad, Tactical Strike Groups, and the Kastak Arms plasma grenade and UltiFlex Novia crossbow.
+“We also had some additional fire-related requests, which are always fun to do.” VFX Team

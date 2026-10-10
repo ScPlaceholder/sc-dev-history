@@ -1,0 +1,31 @@
+Hi everyone,
+With the upcoming release of Alpha 3.20 to the LIVE environment, we'd like to give you more information and updates on the state of Long Term Persistence (LTP), provide details on how it works, and what to expect.
+First, we want to reiterate that we don't plan to wipe for patch 3.20 and we will hold onto the LTP data from 3.19.1.
+Ships and Vehicles bought through the pledge store will be returned to players in their home location through the patch update to 3.20. Any customized weapons and components will be stripped off the ship and sent to the home location inventory too.
+As a reminder, LTP includes:
+- Ships purchased with aUEC
+- aUEC
+- Reputation
+- Non-consumable items such as looted armor and weapons
+LTP does not include:
+- Ships rented with aUEC
+- Stackable, consumable, items such as food, utility pens, ammo, etc.
+- Refinery Jobs in progress
+- All of the above will not persist between updates
+There are also a few scenarios which will still cause items not to be stored in the LTP database for the 3.20 update, resulting in them being lost – however there are some steps you can take to help prevent this from happening.
+This Includes:
+Looted items will NOT persist if they have never been put into local or ship inventory:
+- Items looted from corpses and loot crates may not get saved into LTP and could be lost on the patch update unless stored in a location inventory such as stations and landing zones
+- If you take your looted items and store them into a local inventory at a station or landing zone, this will update the LTP ledger going into 3.20
+In game purchased Ships and Vehicles left in a destroyed state, as well as attached components and weapons, do not persist:
+- Storing ships and vehicles into a location for the update will give the highest likelihood of the ship and it’s components persisting into 3.20
+Our Live QA team has done many tests and found that Purchased ship components and weapons are persisting, unless attached to a destroyed ship.
+We continue to make improvements to how data is stored and written to the database since the previous LIVE release. Find a few of the recent fixes below.
+3.20 LTP Updates
+- Fixed - Ships bought with aUEC not persisting after patch. Ships purchased from in game shops for aUEC are now saved in LTP
+- Fixed - Ship weapons salvaged from other ships do not persist after a patch. Using a multitool to remove and equip or salvage weapons from other ships will now persist Please note: Ship customizations will revert to default after the update and put all the weapons and components used in the customization in your home city inventory
+We have encountered issues with salvaged ship components not persisting on the public environment and believe this will not work going into 3.20.
+- Fixed – Certain corrupted items had rendered accounts inaccessible
+Maintaining persistence between updates is fundamental to Star Citizen, and while these temporary steps may be tedious, our plan is to put these types of post to rest as the LTP is further improved with the many updates to how objects are written, stored, and retrieved.
+In the meantime, we hope that this information will help you maintain your inventories as we transition to Alpha 3.20!
+Thanks, and we'll see you in-game!

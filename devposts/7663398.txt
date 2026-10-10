@@ -1,0 +1,68 @@
+## Star Citizen Alpha Patch 4.0.1
+Alpha Patch 4.0.1 has been released onto the PTU!  Patch should now show: VERSION 4.0.1-PTU.9488811.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:500
+Hangar Spawning: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Jump Points have been re-enabled in this publish
+- Stability, Performance, and Bugfix Testing
+- Save Stanton Chapter 2 Event in Pyro
+Chapter 2 of Save Stanton will run throughout the PTU phases in 4.0.1. This is a continuation of the event from 3.24.3 into the Pyro side of events.
+## Special request from Zol!
+We are looking for reproductions of Invulnerable Players in this latest 4.0.1 build on PTU!
+We have added loads of extra logging for this issue in tonight's build and if you happen to see the issue let us know here! We need screenshots but preferably videos with either "r_displayinfo 3" or "r_displaysessioninfo 1" active.
+We encourage you to head over to some contested zones and test your FPS prowess!
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-146196
+## Known Issues
+- PU - Actor status - Actor becomes invulnerable from taking damage
+- PU - Pyro - Courier - Mission Content / UI - Boxes are not marked upon accepting the mission
+- PU - Cargo - Hauling Missions - Warehouse orders not counting collected & delivered cargo correctly
+- PU - Cargo Hauling - Mission Content / Mission Refactor / Game Code - Supplies will remain in players warehouse and not successfully deliver
+- AC - Players who've already entered PU will be shown a black screen after launching any arena commander game mode for the first time
+- PU - Stanton - Locations - Hurston / Rappel - Storage Kiosk - Can't Interact with Storage Kiosk
+- Multivehicle - PU - Vehicles / Exploit - Fuel - Hydrogen and Quantum fuels are not depleted from fuel tanks when performing normal flight or Quantum Travel
+- AC - Pirate Swarm / INS Jericho - AI - Enemy AI does not spawn and will eventually get a disconnection Error: 30000
+- PU - Character Customization - The Character Customization screen is blacked out and unusable when the player tries to recustomize their character after exiting to the menu and re-entering PU
+- PU - Starlight Service Station - Elevator Terminals / Locations - Calling for Starlight hangar elevator from the hangar may cause you to teleport into an empty elevator shaft
+- PU - Stanton - New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- PU - Actor - Personal Inventory / Storage Access - Loot Box / Armor - Interactions / PIT Wheel - Helmets that are carried then dropped via PIT menu will disappear/become lost
+- PU - Pyro - R&R Station - Stanton Gateway Station - Locations / Shopping - All shops in Galleria are missing items on shelves and in Kiosk
+- PU - Pyro - Frontier Outposts - XS Outpost - Locations / Art / Tech - XS Outpost Main Building interior and Storage Shed interior is missing multiple assets and collision
+- PU - Pyro - Asteroid Bases - Hangar - Locations / Collision - The collision for the hangar doors does not stream in until the player is inside the hangar
+- PU - Pyro - Mission Refactor - Hauling - Mission Content / Reputation - Players are able to access the other intro missions after completing one for a different Org
+- PU - Stanton - Shopping / Selling / Cargo - Commodity Kiosks - Commodity kiosks are empty preventing any purchases or sales
+- PU - mobiGlas - UI - Contract Manager - Contracts can overlap with sections below them when expanded
+- PU - Pyro - Physics - Locations - Contested Zones (CZ) - Plastic Curtains have solid collisions against projectiles and cannot be passed through if ADS
+- RSI Polaris - PU - Vehicles - VLM - Occasionally lose Components By Pressing A New Insurance Claim or Repairing A Damaged Polaris
+- Contested Zones - Weapon intersecting with the ground
+## Features & Gameplay
+- Locations
+- Expanded asteroid exclusion on Jump Tunnel Exits to prevent asteroids being too close
+- Gameplay
+- Increased the number of handy man missions in Pyro
+## Bug Fixes
+- Fixed - Multivehicle - PU - Vehicles - Power settings reset when changing Master modes (STARC-145236)
+- Fixed - Multivehicle - PU- Vehicles / Resource network - Server meshing - power pips are set to default crossing DGSmesh (STARC-144226)
+- Fixed - Drake Corsair - PU - Vehicles / Beds - Some of the ship's Beds are Missing (STARC-142493)
+- Fixed - PU - Personal Hangars - Spawning in Personal hangar is missing several Audio (STARC-151741)
+- Fixed - PU - Pyro - Handyman - Missions - Objectives can not be completed for repairing pipes (STARC-151811)
+- Fixed - PU - Missions - Lorville / NPE / Tutorial - Your First Steps - Player is occasionally spawned in the wrong room when starting at Lorville (STARC-105760)
+- Fixed - CRUS Spirit A1 - PU - vehicles - Crusader A1 Cargo can occupy same space as bombs (STARC-131552)
+- Fixed - PU - UI / Missions - mobiGlas - Contract Manager - Hovering over the Share option of an accepted contract whilst not in a Party will cause the tooltip to persist (STARC-146227)
+- Fixed - PU - ASOP Terminal / Freight Manager / UI - Accessing an ASOP Terminal / Freight Manager Terminal with a weapon or gadget in-hand can result in user being instantly kicked out of the interface (STARC-147573)
+- Fixed - PU - Vehicles - Law - attempting to land in party members vehicle hangar and bumping the ships causes turrets to turn hostile towards ship attempting to land
+- Fixed - Jump Points - Distortion build up is incredibly slow making a fail virtually impossible
+- Fixed - PU - Front End - Character Creator - Player is unable to go back and return to the Character Creator screen after progressing to Primary Residence selection
+- Fixed - PU - Pyro - Ruin Station - Medical Screens - UI - Overhead medical screens dont display any information after respawning with the medical elevator
+- Fixed - AC - Multiple Modes - Performance - Client stall when commencing FPS game modes
+- Fixed an issue causing no disconnect errors to display
+## Technical
+- Fixed an issue causing large amounts of Client Crashes while using Vulkan
+- Fixed 1 Client Crash
+- Fixed 2 Server Crashes
+- Fixed 2 Server Deadlocks

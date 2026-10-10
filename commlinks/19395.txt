@@ -1,0 +1,108 @@
+PU Monthly Report
+July 2023
+Welcome to July’s PU Monthly Report, where you’ll find the latest development progress on everything related to the Persistent Universe.
+Read on for in-depth updates on vehicles, locations, AI tech, maps, and more.
+## AI (Tech)
+Last month, AI Tech finalized work to allow NPCs to transition between EVA and environments with gravity. This required an update to the usables code, including exposing it to enter and exit location information. Now, NPCs can enter and exit ships through airlocks or hatches by vaulting over ledges. The team also implemented simple behaviors and assignments for entering and exiting ships, which compute a path to a location and utilize the most suitable usable to finish the transition.
+On the navigation-system side, AI Tech upgraded navigation links to connect two volumes from different zones, which is needed for moving platforms. The previous implementation only allowed links between parent and child zones rather than between two unrelated zones. Further optimizations and improvements were made for navigation-mesh raycasts too.
+AI Tech also picked up the ongoing work on boids. They’re currently working on 2D boids agents, such as rodents, that will move across terrain within the confines of the navigation mesh. They’re also adding constraints to avoid navigation-mesh edges to ensure the boids stay inside navigable areas. Next, they’ll look into boids agents playing animations while moving or idling.
+The Subsumption editor received numerous improvements, including a variable-type editor, the ability to copy/paste states while editing a mastergraph, improved views of how mastergraph transitions are presented, an improved activity view for available sub-activities and functions, and a validation panel that presents errors and warning when loading and saving files.
+Various features and AI systems received improvements too. For the usable-group coordinator, designers can now specify that a group of NPCs should synchronize when transitioning from one group of usables to another. For NPCs pushing trolleys, the team optimized the PID controller and adjusted the default parameters to stabilize quicker after turning on a path.
+For NPC perception of audio stimuli, AI Tech began using new functionality exposed by the Audio team, which will utilize the room system to understand if an audio event should be received
+## Animation
+Last month, the Animation team focused on improving visual results for reloads and takedowns. They also worked on basic idles for weapons and knives, which are planned for release in Alpha 3.20.
+They’re currently making improvements to player-prone animations and adding an increasing number of player interactions to improve immersion in specific environments.
+On the facial side, they continued to support new incoming lines for PU pilots and combatants
+## Art (Characters)
+In July, the Character Art team continued working on outfits for the Headhunters and Dusters gangs.
+Alongside this, the Character Concept Art team explored ideas for additional Headhunters outfits and prepared handoff sheets for IAE and Luminalia content.
+## Art (Ships)
+In the UK, the RSI Polaris began its whitebox pass with a thorough breakdown of the content required. The team then imported the concept mesh and completed a basic entity setup. A rough interior whitebox was completed, and several issues with the concept were resolved.
+An as-yet-unannounced ship continued its LOD0 pass, with the majority of tasks completed and a review scheduled. The team is currently focused on adding tertiary details to the interior and exterior as well as finishing the lighting for each phase.
+The Crusader A1 Spirit progressed through final art, with a handful of LODs remaining for its interior and exterior damage. Work also continued on the C1 Spirit cargo variant, with the main differences being minor exterior changes and the cargo room; the latter of which is currently progressing through greybox with most of the core forms refined.
+Work on a new ship variant continued, with the dashboard and cockpit receiving attention. The Design team also resolved the placement of physicalized components ready for the Art team to add at a later date. Another unannounced variant continued through its greybox phase too.
+In the US, the Tumbril Storm approached the end of production.
+“We have built all damage meshes, projected all UV2s, generated most LODs, and are now just polishing up various parts of the vehicle. Lighting is getting another pass and we are working with Systems Design to make most of them procedural so that they will respond to player interaction.” Ship Art Team
+Ship Art also worked alongside Tech Art to solve visual issues with the treads.
+Elsewhere, tasks were started for an all-new vehicle. The team began by breaking apart the concept and putting together an in-game preview while planning out the work required for the base and its variants. The current plan is to whitebox all the variants at the same time and then select which versions will move into greybox first.
+Two new variants went through the LOD0 phase and are approaching content-complete.
+The team also progressed through LOD0 for the Aopoa San'tok.yāi, filling out item housings and doing heavy paneling work on the exterior. They also came to a solution for the dashboard, which still requires polish, but delivers a unique aesthetic for interaction. They’re currently working with System Design to get the ship’s behaviors to trigger correctly.
+Finally for ships, the Origin X1 entered the greybox stage. While waiting on the whitebox review, the team are working to solve various aesthetic issues while ensuring the overall ship makes mechanical sense. They’re also exploring new tools to help generate extremely clean automotive-style geometry to maintain the required Origin feel.
+## Audio
+July saw the Audio team progressing with tasks for Pyro, including implementing imperative sounds. They also discussed how they can interrelate existing work with Squadron 42.
+Improvements were made to the Flight Experience, including updated vibration tech and impacts. Sound effects were also designed and implemented for upcoming spaceship releases.
+## Community
+The Community team kicked off July by launching Foundation Festival 2953, a month-long celebration of the community, with a Free Fly, referral bonus, video tutorial contest hosted on the Community Hub, and an Organization Spotlight gallery. Furthermore, with a focus on helping new recruits, the team posted updates on the New Player Guide, implemented a New Player Chat on Spectrum, curated media on the Welcome Hub, and encouraged veteran players to support new recruits by offering rewards for using the Guide System.
+Later in the month, Community supported the announcement of Turbulent joining CIG.
+The team also prepared for the upcoming return of CitizenCon, the in-person celebration of all things Star Citizen. They announced a collaboration with ATMO esports for the event too.
+"CitizenCon is shaping up to be the most epic one yet, with the cosplay contest, community booths, and now, the biggest dogfighting tournament in the 'verse, Fight or Flight, coming straight from the show floor as well! We have many more cool surprises in store for you, and we can't wait to see you there!" Community Team
+Additionally, the team supported various community-driven in-game events, including the Greycat Social and a military-style parade organized by the French community. They also met passionate players out of the 'verse, returning to the beautiful city of Paris for a Bar Citizen, and attending a virtual Bar Citizen.
+Lastly, Community assisted in the introduction of the brand-new Mission Spotlight series and launched a screenshot contest to reward the best images from players that take on the Arlington Bounty missions.
+## Engine
+The Core Engine team progressed with the development of StarBuild, the new in-house code-build system that will replace WAF; last month, they fixed issues and implemented improvements based on feedback from wider dev use.
+For MemReplay 2.0, the team introduced VirtualMemoryAreas as a concept to the memory allocation system, which will better track OS committed memory and provide an improved visualization of sub-allocations.
+Progress was then made on removing the remaining ‘MapAndWrite’ discard calls in the renderer in preparation for the new Vulkan backend. They also reworked the game-launcher code structure to reduce code duplications and enable Linux-based headless clients, which will help with automatic testing.
+Core Engine also worked alongside the Physics and Vehicle teams in support of the MISC Hull C, ensuring it works correctly and fixing bugs with the ship’s unique systems. Additionally, they fixed further fallout from the last integration and made various other bug fixes and optimizations.
+The Physics team continued helping the game teams fix various physics-related bugs in the game code. They also updated the new cloth system and Maelstrom, and began improving active and animated ragdolls.
+The Entity System team primarily supported various technical initiatives, including RaStar and the Resource Network. This involved exploring ways to create and limit generated locations to provide a rich experience without negatively impacting performance. They also supported the Server Meshing team by adding necessary improvements and fixes.
+Finally, they provided bug fixes for the recently enabled 'async editor loading,' and are currently adding more safety checks for correct entity access.
+## Features (Characters & Weapons)
+July saw the Feature team experimenting with skill progression, which involves players performing specific in-game actions to make them better at similar activities. For example, building up strength will allow players to carry heavier objects with fewer penalties, while performing takedowns will open access to quicker and quieter action sets.
+For player traversal, the team began implementing a sliding mechanic. If a player tries to crouch while sprinting, they will perform a short slide before entering the crouched stance. The speed of the slide is determined by the starting speed of the player and the distance may depend on factors such as the roughness or angle of the terrain. The player will automatically stop when reaching an obstacle, as the prime use case for this feature is to allow players to slide into cover.
+## Features (Gameplay)
+Gameplay Features continued their work on the new vehicle tractor beam, which will also bring improvements to the existing tractor beams. July’s tasks included first iterative test for core balancing and the UI.
+Additionally, the team progressed with the Resource Network, which includes features like engineering gameplay and life support.
+They also worked on several prototypes for Salvage’s ‘munching’ gameplay and are currently discussing the best-fitting technical solution with all dependent teams.
+Finally, they made improvements to mining for Alpha 3.20 based on community feedback, including updates to stability and predictability when mining.
+“A big thank you to the very valuable feedback that was provided. Big shoutout to our helpful community!” Gameplay Features Team
+## Features (Mission)
+Last month, Mission Features’ embedded QA testers supported the developer of Ship Trespass by giving the feature rigorous destructive testing.
+The Retrieve Consignment missions passed final review and are currently being polished and balanced. Alongside this, the current underground facilities were replaced with RaStar to fix a variety of issues and make iterating on them easier.
+Progress was also made on the new Global Event, Blockade Runner. A working prototype was shown to the game directors, who approved its move to development.
+The initial planning for cargo missions was completed with all dependencies identified. The team are now looking deeper into the reputation system to improve the wider delivery and hauling mission gameplay loop.
+Steal and recover cargo missions were also prototyped and shown to the directors and are making good progress. These will see players either recover cargo from disabled ships or disable and board ships before securing their cargo.
+Finally, code work began for reputation. Progression within reputation scopes will give players discounts on various purchases, including items, refueling, and repair. Mission Features also picked up the reputation-based hostility system, which will see NPC orgs more willing to attack those who have a negative reputation with them while providing benefits to those with a positive standing.
+## Graphics, VFX Programming & Planet Tech
+Several new features were added to the Global Illumination system last month, including the initial implementation of temporal smoothing for screen space probes, which will produce more stable results at a lower cost. G-buffer support was also added to environment probes to provide a cheap scene representation for secondary light bounces. In addition, new debug modes were added alongside a new mechanism to gather lights for the GI system.
+A basic implementation of Temporal Super Resolution was completed, which will continue to receive fixes and improvements as it’s integrated into the graphics engine.
+AMD’s memory allocation API was integrated into the Vulkan backend, improving the system’s stability, streaming speeds, and buffer read times. A reduction in streaming/rendering dependencies has improved performance, and new parameters will allow the devs to modify the RenderGraph’s ShaderStage and ownership state. These features were added alongside ongoing bug fixes to visual regression tests with a focus on the render-to-texture system.
+As part of ongoing UI refinements and unifications, the silhouette/highlight feature is currently being improved with a softer and brighter outer glow. The mini-map also received a ping effect, which will blink around objectives for improved in-game navigation.
+The Feature team is working to bring the new unified water shader to the game, adding details such as puddles that splash on impact and fixing collision-detection issues on large water volumes. A new system to manage water simulations is also in progress that will activate regions upon collision, deactivate them when they have settled, and constantly monitor and protect performance by limiting active simulations. Meanwhile, a new hash-map system for allocating water buffer regions and large surface-area-friendly water volumes is actively being worked on so the new unified WaterBuffer system can be enabled by default.
+The WorldBuilder system saw a variety of improvements last month, including a major refactor to the high-level logic that runs background jobs, which should significantly reduce latency, avoid stalls, and simplify the code. In addition, planet ocean patches no longer render in duplicates, and the planet streaming system was fixed for Gen12.
+The VFX Programming team fixed issues impacting damage maps; attached objects now correctly update their damage maps and an issue causing unexpected data to appear in snapshots is being investigated. For VFX-specific work, an issue preventing grouped child effects from spawning correctly was addressed, and bugs on separator tags and external referencing were fixed.
+## In-Game Branding
+Last month, In-Game Branding continued building various assets for an upcoming event and worked alongside Locations on navigational signage for New Babbage.
+They also began work on the underground facilities, working closely with the Concept and Sandbox teams on different mockups for the commercial lobbies.
+Progress was made on the final touch-ups for Pyro too.
+## Interactables
+July saw the Interactables team closeout and polish their work on Pyro’s consumables and shop and prop content. They also created content for Subscriber Flair.
+## Lighting
+The Lighting team polished and cleaned-up various locations around Pyro and worked on the system’s gas clouds. Back in Stanton, they progressed with tasks for Crusader’s new platforms.
+## Locations (EU)
+The Locations team continued working on Pyro’s rundown stations, with a focus on completing polish tasks. They also improved signage around New Babbage, improved and bug-fixed the new Crusader platforms, and worked with Mission Features on new content.
+The Sandbox team progressed with outposts for Pyro and continued their extensive work on the updated underground facilities.
+Improvements were also made to Pyro’s planets, and new technology for clouds was looked into.
+## Locations (Montreal)
+In July, Montreal’s Locations team progressed with additional derelict settlements, which passed greybox before moving into the final phase. Progress was made on underground facilities too.
+Once the above content is delivered, the team will return to the ongoing building-interior mandate.
+## Narrative
+Last month, Narrative continued syncing with the various Design teams to push development on Pyro, specifically focusing on mission content, local mission providers (establishing the tone and voice of how missions will be presented), and examining how the overall mission system will change when the new system is added.
+“To answer that last one, it's led to some interesting discussions about missions that cross over from Stanton to Pyro and vice versa.” Narrative Team
+Elsewhere, the team supported the MISC Hull C by implementing the latest version of the air-traffic-control (ATC) behavior, which will allow players to request a landing spot to load and offload their cargo. This also led to resurrecting work on the overarching ATC behavior, with some potentially exciting updates that will be discussed in the near future.
+The Narrative team is also expanding to include two dedicated narrative designers who will bridge the gaps between Narrative, Design, and AI. They will look at all NPCs, from mission givers to population characters, and refine their behaviors to make them feel more alive and ultimately establish the tone and flavor of the game's various locations. For example, to make the people of Hurston feel distinct from the people of Orison.
+On the website, the team released some answers to the Community’s burning questions in another installment of Loremakers and published another installment of Galactapedia
+articles at the end of the month.
+## Online Services (Montreal)
+The Online Services team spent July further refining the new InventoryID feature and addressing issues that came up during the formal QA testing pass. Time was also spent working on a plan to refactor several of the backend services to gRPC as well as modernize them with new features. Lastly, they researched Easy Anti-Cheat sanctions and enforcement.
+## Research & Development
+In July, further updates were made to atmosphere and volumetric cloud rendering. Guided sampling used in the cloud raymarcher was updated based on last month's improvements to transmittance profiles. The profiles themselves received additional filtering (stochastic resampling) to reduce occasional block artifacts due to profile reuse. Moreover, the temporal render mode currently being developed for atmosphere and volumetric clouds was switched to a low discrepancy-based sequence of sample offsets that are used to set up rays for raymarching over time. Based on recent research publications, cloud shadow maps can now be stochastically filtered, which considerably improves performance and render quality. The new temporal render mode will use the stochastic texture filter by default.
+## UI
+UI made improvements to the data-heist screen throughout July, which involved working closely with Mission Features. They also worked on a style variant for screens throughout Pyro.
+The Core Technology team improved Building Blocks’ runtime performance, as the recent addition of new UI assets led to an increase in size and complexity. This involved coding more aggressive solutions for skipping hierarchy section updates, which led to a reduced CPU footprint and significant performance gains.
+The team also continued adding new features to Bindings and Building Blocks, including a color picker, pagination widget, and stepped lines for the designers.
+Finally, UI worked alongside Graphics to develop a new internal map system to help players navigate the game’s complex cities, planets, and capital ships.
+“This will be a real game changer for players and we're really excited by its progress.”
+## VFX
+Last month, the VFX team continued working on the interiors and exteriors of several Pyro locations.
+“The visual style of these locations differs greatly from many Stanton-based areas, which has been a welcome challenge for the VFX artists, both technically and artistically.” VFX Team
+They also completed their VFX pass on a Size 5 bomb and three upcoming vehicles.

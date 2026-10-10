@@ -1,0 +1,47 @@
+## Star Citizen Alpha Patch 4.4 RC1
+Alpha Patch 4.4 has been released, and is now available to test!   Patch should now show: VERSION 4.4.0-PTU.10717260.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Nyx / Levski / Delamar
+- Interstellar Hauling / External Freight Elevators
+- Vanduul-Tech Smugglers / Vanduul Missions
+- Ballistic Missile Launcher "Boomtube"
+- New FPS Weapon: Triple Threat
+Known Issues
+- PU - Nyx - Levski - Physics / Locations - Elevator Transit Entrance has no Collisions which causes players to EVA while entering and Exiting the Elevator
+- Stall / Freeze - Client - PU - Multisystem - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing Commodities Kiosks at locations like at TDD and Admin Offices in Pyro
+- Multi-Location - PU - Stanton - Locations / Actor Respawning - Players may not respawn at their primary residence after using self-destruct or force-respawn
+- PU - Locations - Rest Stops - Refinery - Mining / Shopping / Selling - Ore Sales Kiosk - When attempting to sell at the Ore Sales Kiosks, the confirmation screen will return with undefined
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- PU - UI / Inventory - Freight Elevator - Kiosk - The Search function of the Freight Elevator terminals ignores localized item names
+- PU - Stanton / Pyro - ASOP / Expedite / UI - Claimed ships will show as delivered once "claim" is selected but still need to be expedited/have a timer till they are usable
+- PU - Stanton - Pyro Gateway - ATC / Locations / Hangars - Unable to contact ATC via keybinding shortcut
+## Features & Gameplay
+Core Tech
+Today’s build has quite a few updates for location streaming, performance, entity count, and ship cleanup all around the system. Part of this should help with the Glaciem Ring streaming out upon arrival.
+## Bug Fixes
+Star Citizen Alpha 4.4.0 currently contains nearly 190  bugfixes for issues occurring in 4.3.2, 33 of which originated from the issue council.
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Locations / Design - Large front-loading hangars are spawning at the wrong gateway (STARC-185089)
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Art / Locations / Graphics - Players, Items, Small and Medium vehicles and are able to bypass / clip through outside windows at Levski to get inside (STARC-184332)
+- Potential Fix: PU - Vanduul-Tech Smugglers - Performance - Unattended vehicles do not get cleaned up if they are left at the location
+- Potential Fix: PU - Locations / Transit - Elevators - Grim Hex elevators are backwards (STARC-184410)
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Locations / Design - Large front-loading hangars are spawning at the wrong gateway
+- Potential Fix: PU - System-to-System Hauling - Mission Content / UI - Contract Description text surrounding the Extended text token makes it seem like the minimum container size represents the total required SCU for your ship's cargo hold
+- Potential Fix: PU - Nyx - Vanduul-Tech Smugglers - Mission Content - Vanduul Cryo Pods are not respawning in the QV stations
+- Potential Fix: PU - Nyx - Nyx Mission Pack 1 - Missions / AI - Hostile NPC ships remain stationary after spawning
+- Potential Fix: PU - Mission -  Comm array missions are available at all locations including Nyx
+- Potential Fix: PU - Mission Content - Courier - Mission does not fail after items have been destroyed
+- Potential Fix: PU - Controller - Virpil AEROMAX - Z axis is not reacting due to custom treatment in Joystick.cpp
+- Potential Fix: PU - Stanton - Wikelos Emporium - The Collector - Mission Content / mobiGlas - Some Collector Missions are missing recipe item "Vanduul Metal"
+- Potential Fix: Vanduul-Tech Smugglers - Location - Interaction - Inserting completed code comp board does not open warehouse C elevator terminal request code insertion after reset
+- Potential Fix: PU - Nyx - Levski - Locations / ASOP Terminal / Fleet Manager - Vehicles are in claim state upon retrieving  (STARC-185832)
+- Potential Fix: PU - Nyx - Jump Point Stations - Locations / Design - After spawning at Levski vehicles are set to claim immediately when requesting them from Jump Point Stations
+- Potential Fix: PU - Missions - ShipAmbush / Mercenary - UI / MobiGlas / Localization - Mission Details consist of "LocationAddress" placeholder (STARC-184332)
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes

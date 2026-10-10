@@ -1,0 +1,6 @@
+Hi,
+Positions are stored in our Zone System, where each Zone is one frame of reference, such as a spaceship or planet. If the Zone is small (eg 1km) then the positions will all be stored with 32bit floats, but otherwise we’ll use 64bit floats. Any calculation testing the position of other objects is done in 64bit. When objects are passed to the renderer we make them relative to the camera, and then convert to 32bit. This is fine because 32bit has lots of accuracy near zero (near the camera), and the precision reduction in the distance is roughly proportional to the reducing size of the object and thus it’s never a problem, even with extreme zooms.
+The cost of using 64bit never really shows up as a significant issue and is dwarfed by complex systems (game logic, AI, physics, rendering)… but it’s also hard to be certain of the exact cost because you’d need an alternate solution to compare against (just using 32bit breaks down VERY badly).
+Hope that helps!
+Ali Brown
+Senior Director of Graphics and Procedural Tech

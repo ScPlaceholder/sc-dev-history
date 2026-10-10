@@ -1,0 +1,51 @@
+## 9/16/2025 RC2 PTU Update VERSION 4.3.1-PTU.10275505
+Quick update today to resolve a few issues for our RC2 update
+- Potential Fix: PU - Medbed - Respawn Screen / Vehicles / Medical Screens - Tier 1 medical bed maximum distance respawn is incorrect (Should also help with other beds and STARC-179887)
+- PU - Medbed - Medical Screens / Vehicles / Exploit - No MedGel is consumed upon respawning at a medical bed that is already occupied (Prevent players from spawning into occupied beds)
+- Potential Fix: PU - Actor - Player character does not receive fall damage
+- Potential Fix: PU - Stanton - ASD Delving - Phase3 - Regeneration Analysis - Mission Content - Multiple manic scientists can spawn at the same time
+## Star Citizen Alpha Patch 4.3.1
+Alpha Patch 4.3.1 has been released to all backers to test!   Patch should now show: VERSION 4.3.1-PTU.10271210.
+- Audience: All Backers
+- Server Info: PTU Channel
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Starting aUEC: 15,000,000
+## Testing Focus
+- Stability & Bugfixes
+- Onyx Facilities Part 3
+- MedGel - Medical Respawn Resource
+- Dropships & Watch Towers
+- VOLT LMG "Fresnel"
+- Ship Armor and Ballistic Damage changes Pt. 2
+- New Ships: RSI Apollo Triage & Medivac
+## Known Issues
+The issues below are meant to help give a better indication on things that may happen during gameplay and do not always occur 100% of the time.
+- PU - Medbed - Respawn Screen / Vehicles / Medical Screens - Tier 1 medical bed maximum distance respawn is incorrect
+- PU - Stanton - ASD - Location / Respawn Screen - Player will be rescued and respawn back at the facility after being incapacitated
+- Multi-Location - PU - Pyro - AI / Locations - Turrets at Farro Data Centers are not firing
+- Multi-System - PU - Multi-Location - Ladders V2 - Traversal / Actor / Mantling / Locations - Player is unable to mantle ladder from the top to climb down
+- Multi-location - PU - Stanton / Pyro - ASOP / Locations - ASOP Terminal inside hangar remains in spinning loading screen after destroying ship on pad
+- ARGO ATLS  - PU - Mounts / Cargo / Tractorbeam - The ATLS is unable to pull cargo off a ship's cargo grid after it is moved from place of origin to new location
+- PU - Stanton / Pyro - Armor / Loot Box / Inventory / Actor - Equipment and armor dropped on the ground will be suspended in mid-air making them unable to be interacted with
+- PU - Missions - Eliminate All - Eliminate All missions are not completing after all AI have been eliminated
+## Bug Fixes
+At time of this release, SC Alpha 4.3.1 contains over 110 bugfixes for issues occurring since 4.3.1 including 17 that originated from the issue council. 4 of which have already been hotfixed onto 4.3.0 LIVE.
+- Potential Fix: PU - Actor / Interactions - Inserting MedGel cannister into Medical Kiosk Receptacle removes player ability to interact (STARC-178933)
+- Potential Fix: PU - Stanton - Mission Feature / UI - Quantum Beacons not present for Service Beacon Medical Assistance missions
+- Potential Fix: PU - ASD Delving - Phase 2_All - Mission Content / Mission Marker - Mission marker remains after completing an objective
+- Potential Fix: PU - Collector - missions - Wikelo Turn is have a 15minute cooldown between turn ins
+- Potential Fix: Pancea MedGel Canister - PU - Actor - Interactables - The MedGel Canister loses Interactions when Dropped/Placed after Opening or Closing the Personal Inventory with it Carried (STARC-179427)
+- Potential Fix: RSI Apollo - ( All Variants ) - PU - MedGel / Vehicles / Actor / Interactions - The RSI Apollo series medical beds will not accept medical canister even when empty (STARC-179659)
+- Potential Fix: RSI Apollo - All Variants - PU - Vehicles / UI - String name is present on the 'Retract' and 'Deploy' elevator rails button
+- Potential Fix: RSI Apollo Series - ( ALL VARIANTS ) - PU - Vehicles / Art - Headlights function but have no visible source art or fixture
+- Potential Fix: RSI Apollo - ( All Variants ) - PU - Narrative / Vehicles / UI - VMA - The ship's module itemports display as locIds in VMA
+- Potential Fix: RSI Apollo - All Variants - PU - Vehicles - Quantum Travel / Vehicle HUD - Co-pilot can change Master Modes, Copilot also blocks Pilot access to Master Modes and QT spooling
+- Potential Fix: RSI Apollo - All Variants - GFX / Vehicles / Performance - Multiple Apollo ships in one area causes performance issues (STARC-179595)
+- Potential Fix: RSI Apollo ALL Variants - AC - Vehicles - Both variants of the RSI Apollo are missing from AC vehicle selection
+- Potential Fix: Multivehicle - PU - Vehicles - Components / Art / GFX - Multiple vehicles Radar Component appears with a broken material applied
+- Potential Fix: PU - ASD Delving - Phase 3 - Cooling Pipes - Mission Content / Desync - Salvageable Pipes are not displaying as broken for certain players with the mission
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 1 Server Crash
+- Fixed a Client Deadlock

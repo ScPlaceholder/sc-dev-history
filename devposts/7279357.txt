@@ -1,0 +1,54 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9381373.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Zeus ES & CL (Evocati and owners will receive these in the build)
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- Quantum Fuel Adjustments
+- New Arena Commander Updates
+## New Global Event: "Save Stanton" Playtest!
+Tonight on the 3.24.2 servers we will be running the first 2 phases of a new global event called Save Stanton!
+This will start up shortly after the build has been released and run overnight with mission phases 1-2.
+If you have any feedback and issues on the event, check out the post here for known issues and to discuss!
+https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/ptu-playtest-global-event-mission-save-stanton
+## Known Issues
+- Multivehicle - PU - Vehicles / Vehicle Components - Quantum Drives - Cannot initiate quantum jump (low chance STARC-131460)
+QT Workaround: De-allocate all power from systems in power management Re-allocate power to Quantum Drive and other systems.
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Locations - Hangars / Network - Hangar at Baijini Point is despawning whilst the player is using the area, without external factors, leaving them stuck inside LEO geo
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables (Asteroid Fields not affected)
+- PU - LTP - Ships / Weapons - Purchased Tractor Beams do not persist in LTP
+- PU - Stanton - Multivehicle - MFD - MFDs can be interacted with while in mobiGlas
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+## Bug Fixes
+- Fixed - PU - Stanton - Locations - Elevator doesn't move to hangar when your hangar button is pressed (STARC-124127)
+- Fixed - PU - Save Stanton - Phase 1 - Mission Content / AI - Enemy ship AI can be unresponsive to the player (STARC-133466)
+- Fixed - ALL MODES - Changing system language using LALT + LSHIFT while Star Citizen is running prevents any further inputs from registering in game (STARC-132222)
+- Fixed - AC - Vehicles - UI - ALL MODES - Cant enable Multi-Crew mode on eligible Game Modes (STARC-132226)
+- Fixed - Weapon and Shield charge and drain times are being impacted by server tick, leading to excessive regen times
+- Fixed - PU - UI / Locations - mobiGlas - Star Map - "Hurston Dynamics Showcase" is misspelled on the Star Map app as "Huston" (STARC-105807)
+- Fixed - PU - Stanton - Multivehicle - Vehicles / MFDS / UI - The Scanning MFD is not displaying ore / cargo in mining bags
+- Fixed - Mining lasers on mole and prospector can not be changed (STARC-133279)
+- Fixed - MISC Starfarer - PU - Vehicles / Ship Refuel - Hydrogen fuel is depleted despite Nozzle being closed and Flow Rate not adjusted
+- Fixed - PU - Save Stanton - Phase 1 - Mission Content - Mission A stops being completable at progress 4/6 and 2/6
+## Technical
+- Fixed 1 Client Crash
+- Fixed 3 Server Crashes
+- Further Server Performance Optimizations

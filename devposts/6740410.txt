@@ -1,0 +1,5 @@
+Hi @Cucobr,
+"Global Illumination" is actually a really broad term that encompasses basically any lighting that isn't coming from a direct light, so it technically covers reflections too. What we're currently working on is a ray-traced approach to the diffuse GI, leaving reflections as they currently are, but we'd like to then move onward to reflections (aka glossy GI).
+Going further down your list, ray-traced ambient occlusion isn't likely to be important to us. AO is a way to improve local details in a diffuse GI system, but since our diffuse GI is going to be ray-traced, we should already be getting those local details.
+Ray-traced shadows are something we've discussed, but they'd slot into our pipeline quite far away from what I'm currently doing so I don't have much useful stuff to say about them.
+Having a path-tracing option is something we couldn't not discuss, really. My view is that if we were going to do it, we'd need all the features above first, so progressing on those features is also progress towards that, should the decision be made to take it on.

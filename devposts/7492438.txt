@@ -1,0 +1,16 @@
+Ciao! It’s Mattia from the Vehicle Experience Team here! :blush:
+After the weekend and the latest PTU 4.0 cycles, I thought it would be helpful to drop a note to clarify the recent changes to the Starlancer MAX's performance.
+1. What’s changed?
+- Technically: Adjustments to some thruster power values, as many of you have seen via datamining.
+- Practically: Barely anything compared to the Alpha 3.24.3 tuning. I know, surprising!
+2. What was wrong in 3.24.3?
+In 3.24.3, the Starlancer MAX had the tuning and performance framework we intended to deliver, except for one issue discovered during the patch cycle: The VTOL thruster mode wasn’t functioning as intended. Specifically, we discovered that the VTOL thrusters remained always active, even when players toggled VTOL mode off.
+3. What did we fix in 4.0?
+We could not address the issue in time for 3.24.3, but the fix is now implemented in 4.0. This fix ensures that VTOL thrusters activate only when VTOL mode is toggled on.
+4. Why did other thrusters change too?
+Fixing the VTOL toggle required rebalancing the intended acceleration provided by the VTOL thrusters. At the same time, we adjusted the force output of the standard bottom-side thrusters to ensure the ship could still perform well in atmospheric conditions with VTOL off—especially when not carrying additional cargo.
+This is why you may have noticed differences in the thruster capacities for both the VTOL and bottom thrusters when using community-developed tools that allow you to analyse game data - but this data does not include the full context.
+5. Did the rebalance change ship performance?
+For individual thruster output, yes. However, the overall accelerations (the G-forces) remain unchanged. So, in practice, the ship performs exactly the same as before, just with VTOL functionality now working properly.
+It’s worth noting that 3.24.3 and 4.0 provide identical performance when VTOL is toggled on. The only difference? Now you can correctly toggle VTOL on or off based on your needs.
+I wish you all a good evening, ciao!

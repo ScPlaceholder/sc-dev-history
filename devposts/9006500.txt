@@ -1,0 +1,53 @@
+## Star Citizen Alpha Patch 4.9
+Alpha Patch 4.9 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.9.0-PTU.12148226
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Recco Battaglia Repeatable Missions
+- Vehicle Hit Marker Updates
+- Behring CQ7 Bullpup Rifle
+- Vehicle Cleanup Updates at New Babbage and Stanton/Pyro Stations
+Known Issues
+- PU - Comms / Audio / VoIP - Proximity VOIP does not take over and party VOIP stops working at 60m meters and below
+- Destroy Narcotics missions disabled temporarily due to a structural refactor
+- PU - Ship Battles - Missions / Locations - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- PU - Ship Battles V2 - EscortShips - Mission Content / AI - Escorted ship does not Quantum Travel away or Go to the Hangar after neutralizing the AI ships in the mission location
+- PU - Missions - Bounty Hunter / Mission Content - When killing the Neutralize target the mission does not progress
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- Multi-System - PU - Locations / Inventory - There's a chance that their primary residence does not contain their items' (Workaround: Recopy account if you need your default local items)
+## Features & Gameplay
+Gameplay
+With tonight’s build we have reverted QT fuel changes back to the current 4.8 SCU and burn rate amounts. This is something we are intending to bring back in with a future patch when the rest of the hydrogen fuel changes are ready.
+Additional Gameplay Updates
+- Nyx Resource Distribution: Common resource distribution adjusted at Glacium and Keeger HPP locations in Nyx
+- Destroy Satellite Missions: Missions are now regional, preventing players from seeing and accepting satellite missions across all of Stanton
+- Salvage mission unlock chain implemented for Adagio paid salvage contracts
+- Commodity kiosks removed from Dumper's Depot and Platinum Bay and replaced with item kiosks.
+- Jump drives added to Dumper's Depot Area18 shelving
+- Food and drink added to Dumper's Depot inventory
+- Additional shop kiosks added to New Deal ship dealership in Lorville
+- Vanduul shields updated with improved glow and hexagon visual effects
+Weapon & Item Updates
+Added New FPS Weapon: Behring CQ7 Bullpup Rifle
+Design Notes from Zac: After a year of very interesting sci-fi weapons  (and some very rusty ones), we heard a lot of feedback of wanting a nice standard lower RPM rifle to be added into the mix. So what better missing 'standard' than a bullpup? that and the amount of times I got sent the old concept art for the behring bullpup on spectrum over my time working here, I knew it had to be this.
+To make this stand out this weapon has a nice sharp TTK for a rifle but having a consistent and followable Y recoil shaped pattern, to those who learn it will be able to consistent land shots on target, Behring weapons typically always have very consistent and readable recoil and this weapon is no different, having a bit of 'bite' to its power but still in the 'feels smooth to use' that you expect from behring. Overall this is a great, all rounder daily driver type of rifle that won't let you down.
+The weapon can be found in Ship In Distress missions as well as Moraine Data Retrieval and Moraine Movements both take you to the base where you can find the QB7.
+- Weight: Average
+- Firemodes: Automatic / Burst
+- Damage: 16.5
+- Projectile Velocity: 550
+- Aim down Sight Time: 0.25
+- RPM: 650
+- Mag size:  40
+## Bugfixes & Technical
+Tonight’s build has new density cleanup management for vehicles and ships at New Babbage and all stations in Stanton and pyro. These locations are to test to make sure it is behaving properly and not removing or storing things it shouldn’t be. Let us know if you see anything abnormal happening around these locations!
+- Potential Fix: Interaction prompts appearing offset from what the player is looking at, making interactables difficult to use
+- Potential Fix: Medical kiosk on medbeds at hospitals and medical vehicles not showing any interaction prompt
+- Potential Fix: NPCs spawning in a T-pose due to missing animations
+- Potential Fix: Eliminate All FPS missions having a chance to spawn an invisible NPC that could not be found or killed to complete the mission
+- Potential Fix: Northrock Service Group not gaining reputation after completing Eliminate Specific missions
+- Potential Fix: Crafting fabricator failing to disassemble items, returning an error
+- Potential Fix: Drake Clipper thruster flaps not detaching on ship destruction
+- Potential Fix: Contract generation failing validation for certain mission types, blocking contracts from being created

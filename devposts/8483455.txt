@@ -1,0 +1,7 @@
+Hi everyone,
+We've seen some players downloading Vulkan SDK Runtime files from developer sites to work around the current Easy Anti-Cheat issue on AMD GPUs. While we understand why this is being shared, we strongly recommend not using this method.
+The Vulkan DLL included with the Vulkan SDK Runtime is intended for development use and not for gameplay. Using it can introduce unexpected issues in Star Citizen and in other games or applications that rely on Vulkan. Depending on where it was installed, it may also remain active in the background and cause conflicts with future driver updates.
+We are actively working with EAC to resolve the issue. For AMD users on driver versions newer than 25.9.1, the smoothest option right now is to roll back to version 25.9.1. After doing so, you should be able to play normally using either D3D11 or Vulkan without any external DLLs. Nvidia users are not affected.
+If you installed the Vulkan SDK Runtime files as part of the workaround, please plan to remove them once the issue is resolved to avoid problems with other games or future drivers. We will share another update as soon as the fix is confirmed.
+If you need to switch back to D3D11, without launching the game, you can do so by deleting the Shaders folder. This resets your graphics settings to default.
+Thank you for your patience and understanding!

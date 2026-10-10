@@ -1,0 +1,24 @@
+That's a mighty big question! Here's a quick list of the main features, but I'm sure we'll have forgotten some stuff!
+- Object space shader damage (allows 4 different types of damage to be permanently inflicted on ships, including cutting holes, and blended seamlessly into the base shading)
+- Real time environment-probe capture and compression (avoids needing to bake probes in space and on planets)
+- Image based lens flares (use entire source image to simulate 4 different physically based lens distortions per colour channel on up to 20 individual elements)
+- Physically based bloom (wide exponential kernel based purely on light intensity)
+- Human eye exposure simulation (capture histogram of light intensity from both screen and surroundings, isolate range of light we intend to focus on, simulate both pupil and photo-pigment reactions for quick and slow reactions)
+- Major improvements to planar lights (far more physical basis now which results in major quality improvements)
+- Intelligent mesh-merging system (repeatedly searches for best bang-for-buck mesh merge opportunity in a scene until we hit a memory limit)
+- Upgraded volumetric fog (e.g. support for planar lights, light-boxes, env-probe priority sorting)
+- Major upgrade to shadow pool system (all lights share one giant pool for better dynamic resolution scaling, shadows can be cached between frames for better performance)
+- Render target pooling (shares memory between internal textures used in the renderer to vastly reduce VRAM usage)
+- Render to texture pipeline (ability to render secondary viewports with full or limited feature set to then be used as textures in the primary scene, e.g. video comms or holograms)
+- Tiled lighting upgrades (use rasterization light culling for greater efficiency, particle support)
+- Density based LOD algorithm (LODs change based on polygon density to ensure consistent appearance, less artist intervention, and promote more optimal art assets with fewer sub-pixel polygons)
+- GGX normal map filtering (gloss adjusted in mip-chain to best fit of our GGX lighting model to give the same results as super sampled normals)
+- Camera relative rendering (allows 64bit world without incurring any rendering performance hit by maintaining 32bit precision for rendering)
+- GPU Particle System (built from the ground up for efficiency, distinct from Lumberyards and CryEngine's GPU particle systems)
+- Various improvements to transparency sorting (generalized system, allow depth of field and motion blur to not effect nearby in-focus objects, order independent transparency for specific shaders such as hair)
+- Artist friendly profiler (captures statistics per art-team, and per area of the level allowing accurate breakdowns and quick diagnosing of performance issues)
+- Physically based atmospheric scattering
+- Hierarchical object management (efficient searches and culling, local coordinate frames for things like ships inside ships on planets which are rotating etc)
+On top of this there's procedural asteroids and the huge amount of tech for procedural planets, but these strictly speaking aren't so much part of the renderer but higher level features that feed content to the renderer.
+Ali Brown
+Director of Graphics Engineering

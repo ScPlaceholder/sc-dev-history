@@ -1,0 +1,17 @@
+Hello everyone!
+Star Citizen 4.10 is on the horizon and we've got a bunch of VR updates for you again. I've also updated my original post to include these.
+For any comments, suggestions or anything else regarding these updates please reply to my message here.
+## Features
+- Holographic elements (ship radars, the New Babbage greeter, Area18 holograms and more) now render correctly in VR.
+- Introduced a new global fading system, offering greater flexibility and full VR support. Added a fade transition when entering and exiting theater mode, configurable via r_StereoTheaterModeFadeTime.
+- Implemented XR_EXT_user_presence support for dynamic stereo switching, extending compatibility to any headset supporting this extension, including SteamVR.
+- Replaced g_headtracking_hmd_fpsResetDistance with g_headtracking_hmd_fpsHeadBoundaryDistance, introducing a new shader-based fade effect in place of the previous hard reset. The effect now begins at 0.4m (up from the previous 0.2m reset threshold) and gradually intensifies. This effect also now triggers by default whenever the camera clips through an object, preventing players from seeing through walls in first person.
+## Bug Fixes
+- Fixed an issue where opening kiosks interfered with the player animation system causing unintended player movement.
+- Resolved a recurring shadow flickering issue where shadows would stop following the camera.
+- Fixed head tracking incorrectly applying to RTT cameras (e.g., comm calls).
+- Fixed third-person camera collision in VR when the camera position was adjusted.
+- VRAM usage in the graphics menu now correctly reflects usage in VR.
+- Disabled chromatic aberration in VR.
+- Fixed multi-choice selection in VR (e.g., holo greeter in New Babbage, which is now visible).
+- Fixed an issue where GForce blink effects were applied independently to each eye instead of in sync.

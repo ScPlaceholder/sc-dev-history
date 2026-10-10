@@ -1,0 +1,47 @@
+## Star Citizen Patch 3.17.2
+Alpha Patch 3.17.2 has been released to the LIVE environment and is now available to test!   Patch should now show: VERSION 3.17.2-LIVE.8148301.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here %localappdata%\Star Citizen.
+Database Reset: Yes
+Long Term Persistence: Disabled (Reputation will be preserved)
+Starting aUEC: 20,000 (Players will receive a stipend based on previous 3.17.1 LIVE playtime)
+Known Issues
+- Party Invite/Group Launch - Unable to party launch with friends
+- Players may have to restart the game after getting kicked to the main menu from a 30k server crash
+- Targeting - A ship's targeting pip may be missing or disappear for some players; they cannot be targeted when this happens
+- Multivehicle - Ships floating in the hangar when stored with the engines left on then retrieved again
+- Ships / Character Animation - The player character arm will misalign when seated in ships, causing obstruction of HUD and view
+- Vehicle / Spawning - The Khartu-al spawns on the hangar floor sideways
+- Vehicles / Ships - Shields - Weapon fire penetrates shields when ships are moving
+- Vehicles / ShipRefuel - While docked to a Starfarer multiple vehicle types will continuously tilt instead of remaining stationary and snap away from the arm if any movement is attempted
+- Vehicles – The Argo Raft's elevator controls cannot be interacted with from either deck
+- Crusader Ares - Headlights on Ares are too dim to notice at reasonable range
+- Medical Beacon- Medical beacon does not complete mission/payment when player is brought back from incapacitation
+- Animation - Weapons - All weapons are held like a pistol whilst moving in EVA
+- Combat AI - UGF Missions are sometimes missing NPC spawns to complete the mission
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- Armor / Weapons / Utility items may disappear between sessions
+- Inventory - Weapons - Weapons looted directly equipped from containers/boxes are missing attachments
+- ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+- Missions - UGF / Bounty Hunter - Turrets around bunkers respawn very quickly, sometimes almost instantaneously
+- Mission Giver /  AI / Locations - Wallace Klim is not aligned to the table and can be seen standing away from it
+## New Features
+Locations
+- Derelict Reclaimers V1
+Added additional points of interest that will be scattered both on planets and in space. These Derelict Reclaimers come with puzzle traversal elements along with multiple legal and illegal mission types which include delivery and FPS combat in and around the crash sites using the new planetary navigation mesh. There are multiple Reclaimer Derelicts in space with three associated delivery, investigation, and mercenary missions. We've also added a new ground-based Derelict Reclaimer site inhabited by NPCs called "Ghost Hollow," which involves delivery, bounty hunter, and mercenary missions.
+- Derelict Colonialism Outposts
+Added new derelict versions of the Colonialism Outposts into Stanton. This initial release will see 5 unique outpost locations on microTech with new delivery missions, small traversal puzzles, and AI guards that utilize the new planetary navmesh along with the new drop ship reinforcement system.
+- Added the Snake Pit Race Track
+AI
+- AI - Planetary Navigation
+This system allows NPCs to move on planetary surfaces using a dynamically generated navigation mesh. This will efficiently process planetary terrain and objects to prioritize the processing of the environment around the players into navmesh, allowing the use of all existing functionalities on planets. The first implementation of this feature will be at the Reclaimer and Colonialism Outpost Derelict Points of Interest.
+- AI - Landing Improvements
+This enables AI ships to land and deliver reinforcements on non-structured ground areas like planetary terrain where a pre-defined landing area and assistance from Air Traffic Control is not available.
+Gameplay
+- Illegal Collect and Delivery Missions
+New set of delivery missions focusing on illegal cargo. These will be offered by Red Wind Linehaul once the player reaches a high enough reputation with them as a courier. The player will be sent to sketchy, run-down locations like drug labs and stash houses and is tasked with delivering goods between them, some of which may not be legal. The intro mission should be available around Hurston if you have rank 2 courier rep with Red Wind Linehaul. The illegal missions are available outside of Hurston's jurisdiction if you have a high enough Red Wind Linehaul reputation and have completed the intro mission in Hurston. These missions come in 5 different versions, each with a different quantity of cargo and a corresponding monetary and reputation reward given on completion.
+- Added Marker for Players and Friendly AI That are Associated with Your Current FPS Mission
+Ships and Vehicles
+- Added New Vehicle: Anvil Centurion
+Weapons and Items
+- Added New Lootable Item: Greycat Aril Backpack Collector
+- Added New Armor to Shops and Lootable Containers: RRS Specialist Heavy Armor (Morozov-SH Brushdrift, Redshift, and Snowdrift variants)

@@ -1,0 +1,48 @@
+Squadron 42 Monthly Report
+August 2024
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 09:04:2024
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 Recruits.
+Welcome to August’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including mo-cap updates, refined behaviors, and additional narrative content.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Features)
+Throughout August, AI Features focused on polishing existing functionality to improve level flow. For example, during ‘buddy’ sections where players are aided by AI characters, the team increased and improved the control mechanisms available to the designers so that they can increase situational awareness. This means that AI characters no longer automatically crouch and draw a weapon when enemies are nearby - this is now a behavior that’s controllable by a designer who can determine the best place for this to occur.
+A new ‘follow along path’ task was added alongside the ‘lead along path’ task, allowing the designer to guide AI while simultaneously keeping up with the player. They’re also improving tech to control when the buddy joins in combat to provide more level-specific situational awareness.
+AI Features also polished various reactions, including the ‘first reactions’ when NPCs respond to audio or visual events. While these behaviors had a solid base, some combat styles, weapons, and scenarios didn’t play consistently. For example, when escalating from a low reaction to a high reaction. To improve this, the team developed a new AI test level called a ‘test cell.’ This is a Building Block setup with different character types, weapons, cover options, usables, etc. that allows the team to pick and mix different setups to produce consistent test scenarios. A particular combination can be exported as one ‘cell’ and imported into a single level where multiple test scenarios can be played simultaneously, allowing the team to quickly spot mistakes, fix them, and retest.
+The test cell is also being used for cover-hit reactions, which have different animation setups per cover type, combat style, and weapon type. Going forward, the test cell will be expanded to provide more consistency across a wide range of areas.
+## AI Tech
+Alongside small improvements and bug fixing, AI Tech worked on editor functionality to allow the designers to set schedule game tags and assign action areas directly to NPCs. Secondly, they worked on a Subsumption task and flowgraph node to enable or disable navigation cost areas and modify their costs.
+## AI (Social Strike Team)
+The AI Social Strike team spent part of August refining idle animations for desk workers. This work adds greater variety to the NPCs seated at consoles, significantly reducing noticeable repetition when multiple characters are positioned next to each other.
+They then expanded the advanced animation set used for repairing and inspecting the Gladius and Hornet. These more advanced and realistic animations move away from basic motions, adding depth and believability to the repair and inspection activities.
+Continuing from last month, the devs made significant progress refining various interactions throughout the game. As part of this, numerous non-essential interactions were removed to prevent confusion about what can and should be interacted with. This clear delineation ensures that when something is interactable it serves a meaningful gameplay purpose. This step is crucial to maintaining intuitive game mechanics and enhancing the overall player experience.
+Work was also done to improve the cargo-handling AI. For example, the utility behavior for AI involved in cargo handling was updated to allow multiple AI characters (not using trolleys) to move cargo from the same pickup location to the same drop-off area. Previously, only one AI character could perform this action at a time, resulting in an illogical sequence of events. With this new update, cargo movement now appears more realistic and dynamic, adding a layer of authenticity to the environment.
+Following an art pass on cargo in the Shubin location, the ‘cav’ vehicle’s AI was re-pathed. This update ensures that the vehicle’s movements align perfectly with the new cargo layout
+Finally for Social AI, numerous smaller bug fixes and improvements were made across the campaign.
+## AI (Game Intelligence Development Team)
+In August, the Game Intelligence Development team concentrated on delivering a clean and stable Apollo StarScript UX update. This involved adding support for higher icon resolutions so they stay sharp when zoomed in and straightening lines for a clearer read.
+Drag and drop was improved too. Now, when hovering, ports with a wider selection range are highlighted. The devs corrected the color and size of imported notes, added arrowheads to links leading to closed groups, and enlarged the hovering area and highlights on links and ports. Drop points were also added to links to identify the desired select line.
+## Animation
+Last month, the Gameplay Animation team worked on zero-g movement on surfaces, weapon first-selects and overheats, improved pickups, scene-specific player interactions, and numerous background animations for life around a key location.
+Significant progress was also made on a number of Human enemy types. On the mo-cap side, the team supported gameplay and story needs with capture shoots and solved data. They also supported the Mo-Cap team so they can be even more efficient and knowledgeable on future shoots.
+The Gameplay and Gameplay Animation teams then joined forces to use their expertise in re-targeting to get faster traction on some upcoming asset sets.
+The team are currently working on the final facial-animation solves for SQ42 before pivoting to fleshing out background AI and improving high-profile story scenes.
+## Graphics & VFX Programming
+Alongside ongoing stability and performance improvements for Vulkan, the Graphics team improved debug tooling for the long-term health of the dev experience.
+For global illumination, support was added for high-gloss specular reflections, which builds on previous rough-specular work. The team also added live updates to GPU raytracing acceleration structures and began working on improvements to transparent objects.
+Performance wise, the global illumination system now supports both temporal and spatial subsampling to accumulate the same visual result with fewer rays fired per frame.
+Ongoing tasks consist of async creation and additional types of destructible renderer objects (such as gas cloud chunks) to reduce frame time spikes on the CPU.
+SQ42’s main fire hazard system wrapped, with the team moving to bug fixes and design balancing. They’re nearly finished with data conversion for better particle effect management, while various performance enhancements are in progress.
+## Narrative
+Toward the end of summer, Narrative continued working with Core Gameplay to refine the number of Galactapedia entries and identify where they will unlock. The aim for the next few months is to lock down the first half of the game from an entry point of view, which will enable the team to fully test the experience and make sure players receive an enjoyable number of entries.
+The team also moved back to live production with pick-up shooting, which involved re-recording a handful of lines for a supporting character. Narrative also supported the Audio department in a ‘walla’ session.
+“If you haven’t heard this term before, 'walla' is a low, persistent series of indecipherable conversations that go alongside our scripted scenes and dynamic conversations to make areas feel more populated.” Narrative Team
+Elsewhere, work continued on the in-fiction collectibles that the team is developing with outsourced artists. They also continued to regularly play through levels to review the implementation of the latest content to ensure things are triggering correctly and iterate on the overall flow.
+## VFX
+Last month, VFX focused on polishing a selection of key scenes alongside Cinematics. They also continued to support the Design and Art teams with ongoing level work.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

@@ -1,0 +1,45 @@
+## Star Citizen Alpha Patch 4.9
+Alpha Patch 4.9 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.9.0-PTU.12170061
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Recco Battaglia Repeatable Missions (reputation sped up for tonight)
+- Vehicle Hit Marker Updates
+- Behring CQ7 Bullpup Rifle
+- Vehicle Cleanup Updates at New Babbage/Lorville and Stanton/Pyro Stations
+Known Issues
+- PU - Comms / Audio / VoIP - Proximity VOIP does not take over and party VOIP stops working at 60m meters and below
+- Destroy Narcotics missions disabled temporarily due to a structural refactor
+- PU - Ship Battles - Missions / Locations - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- PU - Ship Battles V2 - EscortShips - Mission Content / AI - Escorted ship does not Quantum Travel away or Go to the Hangar after neutralizing the AI ships in the mission location
+- PU - Missions - Bounty Hunter / Mission Content - When killing the Neutralize target the mission does not progress
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- Multi-System - PU - Locations / Inventory - There's a chance that their primary residence does not contain their items' (Workaround: Recopy account if you need your default local items)
+## Features & Gameplay
+Gameplay
+- Ship mining laser power has been increased across the board by about 20%
+- Added Behring CQ7 Bullpup Rifle and ammo to shops across multiple locations
+- Tractor beams can now be used inside armistice zones at Distribution Centers
+- Ship Attenuation and Flyby Audio playback rules adjusted across all ships for better audio falloff at range along with flyby audio mix polish
+- Added updated cleanup code for abandoned ships in Lorville landing zone
+## Bug Fixes & Technical
+- Fixed 5 Client Crashes
+- Fixed 3 Server Crashes
+- Potential Fix: Exterior hangar doors at Rest Stops remaining closed while interior doors opened correctly, preventing ships from entering or exiting hangars
+- Potential Fix: Drake Ironclad Command Module undocking by itself mid quantum travel or mid-flight
+- Potential Fix: Drake Ironclad vehicle items going offline after re-docking with the Command Module following a power cycle during undock
+- Potential Fix: Drake Ironclad Command Module cockpit missing a room connector, causing atmosphere and pressurization issues in the cockpit
+- Potential Fix: InterSec Ship Bounty missions not completing after the target ship was destroyed
+- Potential Fix: Defend Bunker friendly NPCs despawning when the mission timer reached zero instead of remaining until the mission concluded
+- Potential Fix: Hauling missions not applying a cooldown after the player abandoned them, allowing immediate re-acceptance
+- Potential Fix: Welcome to Nyx Vanduul-Tech Smuggler hauling missions not applying a cooldown on abandon
+- Potential Fix: Tactical Strike Group central hub door not opening when interacted with
+- Potential Fix: Expel Outlaws contract at Sakura Sun Goldenrod not generating correctly
+- Potential Fix: Invisible collision box in the Orbituary Contested Zone blocking player movement
+- Potential Fix: Salvage vehicle filler station UI not displaying current RMC and Construction Resource quantities
+- Potential Fix: Levski Strata helmet variants displaying placeholder text instead of their correct names and descriptions
+- Potential Fix: Nine Tails boss helmet UV mapping broken, causing texture stretching
+- Potential Fix: QRT medium helmet hose remaining visible when the helmet was worn without the matching QRT undersuit
+- Potential Fix: Prefilled fuel pod listings in shops showing the same name as empty fuel pods with no way to tell them apart (Removed prefilled fuel pods)

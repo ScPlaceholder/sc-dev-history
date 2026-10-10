@@ -1,0 +1,74 @@
+## Star Citizen Patch 3.2.0h
+Alpha Patch 3.2.0h has been released to PTU, and is now available to test!  Patch should now show: PTU-787025.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- The Slave ship will occasionally encounter permanent effects of being Interdicted after Quantum linking with the Master ship.
+- Purchasing Commodities at GrimHex for your ship will cause it to be 'destroyed' and have to pay the insurance claim, along with losing the cargo.
+- Blobs for minable deposit locations only appear at large distances to the player never in close proximity.
+- Various ships are immediately destroyed when blowing off minor tail / wing part.
+- If the master ship player enters QT after calibrating/spooling for a group quantum link, but leaving one more more members behind, the party will have broken quantum travel functionality.
+- Its possible for the master ship in a quantum link to send calibration data from far outside the intended range, breaking the link interaction.
+- Some features may be missing or partially implemented, but not ready for testing and as such are not listed in the initial release notes.
+- Gimbals are currently locking onto AI ships when activating gimbal lock.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- Mining: Scanning, mining, extraction, and Prospector function.
+- Flight and function of the following: Avenger series, 600i, Eclipse, Blade, and Hurricane.
+- Orbital Quantum travel.
+- G-force effects.
+- Ship power tuning and power triangle usage/effects.
+- Store Kiosks.
+- Manned and Remote Turrets.
+- Group System.
+- Quantum Linking.
+## Feature Updates
+General
+- Updated keybinding UI for recent changes.
+Universe
+- Doubled mission rewards, decreased influx of goods to require large-scale shippers to be more dynamic in their routes.
+Missions
+- Increased the fail timer for delivery missions.
+FPS
+- Balance pass on KSAR Scalpel damage.
+Ships and Vehicles
+- Updated ping blob sizes for the Prospector as it relates to resource entities.
+- Added acceleration to laser throttle.
+- Improved overheating rate of the Apocalypse Arms Gatling.
+- Recentered Reclaimer's HUD position.
+- Atmospheric entry setup and thruster VFX polish for the Blade.
+- Lighting update for Starfarers.
+- Added quantum travel VFX to the Blade.
+- Dragonflies now have mav thruster effects.
+- Scanning wave focus should now have appropriate VFX.
+- Mining laser throttle now starts at a minimum value.
+- Decreased the spread on the scatterguns slightly.
+## Bug Fixes
+- The Eclipse rear landing gear should now be flush to the pad.
+- Calibration data should no longer be sent to members who have left the party.
+- Fixed an issue where rapidly thrown grenades cause the player to drop their weapon.
+- Players should no longer be able to continuing firing after crossing into an armistice zone.
+- Using ammo crates in Star Marine should no longer break reload and weapon usage.
+- The announcer should no longer talk over himself when spawning a ship via the ASOP terminal.
+- The Omnisky XV should no longer appear as placeholder text at kiosks.
+- The Galdereen should now animate properly when fired.
+- Filtered out countermeasure controls when in mining mode.
+- Extracting rock deposits should no longer damage the player's ship.
+- The Razor should now have a zero-g exit interaction.
+- Mining kiosks should no longer show "out of stock" messages.
+- The fire mode icon on the visor for FPS weapons should now update properly.
+- Emotes should now be interruptible by firing a weapon, ADS, reloading, and throwing a grenade.
+- The pitch ladder should now work from -90 to +90 degrees.
+- The doors for the Reclaimer's main elevator shaft should now open properly.
+- The buy button options should now have art assets.
+- Updated Avenger Titan Renegade canopy glass to stop excessive reflections.
+- Updated rear part to Avenger to avoid LOD issues.
+- The screens should now move correctly with the dashboard during entry and exit of the Sabre.
+- Breathing animations should no longer impact MFD and 3D radar interactions.
+- The Arclight pistol should no longer be misaligned while ADS and crouching.
+- Ship weapons should no longer be able to be fired after they are switched off on the MFDs.
+- The top bunk animations of the Reclaimer should no longer be offset or push the player around.
+- Ship weapons sounds should now activate consistently.
+Technical
+- Fixed a crash.
+- Performance tweaks.

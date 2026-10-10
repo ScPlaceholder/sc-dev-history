@@ -1,0 +1,49 @@
+Happy Wednesday, everyone!
+Every two weeks, we accompany the Roadmap update with a brief explanatory note to give you insight into the decision-making that led to any changes. This is part of an effort to make our communications more transparent, more specific, and more insightful for all of you who help to make Star Citizen and Squadron 42 possible.
+With that said, let’s go ahead and dive into this week’s Roadmap Roundup!
+-CIG Community Team
+## Notable Changes for April 17, 2024
+## Release View
+As part of our final review process, we've concluded that the quality of the Cargo features that were targeting the launch of Alpha 3.23.0 are not yet at the stage where we need them to be for a release to the live servers. The Freight Elevators and Instanced Hangars in particular are technologically complex features that will require a bit more work before we feel comfortable fully integrating them into the game. This additional time allows the team to test for additional edge cases and include further refinements, which is especially important for features as impactful as these. However, we are not currently planning on shifting them back a full patch cycle. The features below will remain in the 3.23 column on Release View, but are now targeting a 3.23.X release:
+- Item Banks
+- Personal and Instanced Hangars
+- New Missions - Cargo Hauling
+- Freight Elevators
+The following features have been added to Release View, targeting a 3.23.0 release:
+## Vulkan Graphics API Support
+Converting the Star Citizen renderer from DirectX11 to the Vulkan Graphics API. This allows spreading GPU submission work over many CPU cores, and enables many new tech features that were previously unavailable, such as Ray Tracing. Vulkan is able to be opted into via the options menu with this release, but it will eventually fully replace DirectX11 in the future.
+## Water Simulation & Rendering Improvements
+The water in Star Citizen now support a multi-scale GPU wave simulation to support dynamic reaction to thrusters, aerodynamic wake, explosions and collisions. The rendering has also been overhauled, with improved waves, reflections, refraction, underwater fog, and helmet effects.
+The following features have passed their final review for Alpha 3.23.0, therefore we are toggling their status to Committed:
+## mobiGlas Rework
+Reworking the mobiGlas system to use Building Blocks, which will also allow for easier development of mobiGlas apps. This update includes reworked Home, Maps, Contract Manager, and Journal apps.
+## FPS Loot Screen
+Introducing a new screen for looting critical items quickly, allowing for more reliable inventory management in tense situations.
+## FPS Map System
+Implementing a minimap for the HUD as well as interior maps for FPS gameplay, helping players stay oriented in close-quarter encounters.
+## Visor & Lens HUD Rework
+Converting the Visor and Lens systems to Building Blocks for improved performance and flexibility.
+## Player Interaction Experience
+Implementing the updated Player Interaction Experience; a holistic array of complimentary features and systems, all related directly to the player. Player status, item status, environment status, as well as interactions with both the game world and the objects within it, are covered under these systems.
+## EVA T2
+Improved EVA controls and animations for smoother traversal in Zero-G. Introduces limited EVA fuel and encourages the use of zero-G push/pull and the Multi-Tool's tractor beam.
+## Starmap Rework
+Implementing the new and improved Starmap with improved visuals and usability, including easier search and trip planning functionality.
+## Master Modes
+Implementing new modes to vehicles to manage their speed, components, and role-specific functions. This release introduces the NAV and SCM modes, as well as a complete re-tuning of all ships.
+## New Missions - Creature Hunting
+New missions that require players to locate, kill and retrieve valuable parts of creatures roaming the environment.
+## Fauna - Kopion
+Populating the persistent universe with the Kopion, an aggressive, agile animal that travels in packs. You'll find them in a variety of areas, from grassy fields to lurking in the darkness of caves.
+## Fauna - Marok
+Populating the persistent universe with the Marok, a passive flying bird-like creature. Maroks live in flocks and are often found near lush, green environments.
+## Arena Commander: Engineering Experimental Mode
+Three Limited Test Experimental Modes featuring the engineering gameplay (also referred to as "Resource Network") showcased at CitizenCon 2953. Help shape the future of engineering gameplay in Star Citizen by testing and giving feedback to the features and balance showcased in this limited test before it hits the Persistent Universe.
+## Arena Commander: Grav Royale
+Embark on high-speed mayhem in a thrilling new game mode: Grav Royale! Engage in intense vehicular combat across diverse maps, mastering your Gravlev vehicles to outmaneuver foes and seize victory in this gravity-defying battle arena.
+## Arena Commander: Custom Lobbies
+Custom Lobbies, previously referred to as “Private Matches”, makes their return to Arena Commander. Utilizing the new Frontend & Lobby Systems, Custom Lobbies allow players to set up and play matches for any game modes on any map at any time, with their own rules.
+## Arena Commander: New Flight Map - Miner's Lament
+Miner's Lament, previously exclusive to racing & part of the Master Modes tests, now opens its treacherous asteroid-laden expanse to all flight modes. Dogfight in the chaotic beauty of Yela's ring for an intense, dangerous, close quarters showdown.
+That's all for this week! No Progress Tracker updates this week as work continues on long-term planning. For further insights into the planning efforts of our production team, we invite you to review the latest Letter From the Chairman.
+Join the discussion on Spectrum, and check out the Roadmap Companion Guide for more information on the Star Citizen Public Roadmap.

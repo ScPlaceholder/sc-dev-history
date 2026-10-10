@@ -1,0 +1,43 @@
+## Star Citizen Alpha Patch 4.0.2
+Alpha Patch 4.0.2 has been released onto the PTU environment!  Launcher should now show: VERSION 4.0.2-PTU.9580815.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:600
+Hangar Spawning: Disabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+4.0.2 Release Goals
+The 4.0.2 release is highly focused on 3 key points to improve and fix as many top key gameplay issues as possible, improve connectivity/stability, and begin the latest Supply or Die Event.
+- Stability, Performance, and Bugfix Testing
+- Supply or Die Event
+Tutorial Missions have been disabled for 4.0.2. For tonight's build, you may see a black background on the menu screen.
+We have finalized fixes for the largest causes of long load times into the PTU, especially into certain Pyro locations.
+## Known Issues
+- Critical: PU - Transit - Entity carriage is stuck in transit to a gateway, but never arrives which renders the gateway unusable
+- Critical: PU - ASOP / Ship / Cargo - Upon the Ship auto storing through leaving game or leaving hangar; on initial retrieval the Cargo disappears and Cargo Grid is locked from being used
+- Critical: PU - Missions / UI - NPE - The Mission markers are missing from the Tutorial Missions and blocking progression
+- Critical: Mission Refactor - Comm Array Repair - Contract in mobiGlas becomes hidden when another player enters mission location
+- Critical: Mission Refactor - PVP Missions dont work
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Locations - Personal Hangars - Actor - If player ungracefully exits while in hangar, hangar stows and does not unstow upon recovery
+- High: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel
+- High: PU - Pyro - Jump Point - Failing a Jump point will displace the player far away from the gateway station
+## Features & Gameplay
+- Ships and Vehicles
+- Re-added Misc Starlancer Max (NewDeal Lorville and AstroArmada Area18)
+- MIRAI Guardian QI: Insurance Claim Timer and Cost adjustments (12 minutes base - 6180 aUEC 3 minutes expidited)
+## Bug Fixes
+- Potential Fix: Multivehicle - PU - Vehicles / Fuel - Fuel is not updated properly to the ships fuel tank when crossing DGSmesh (Server authority) (STARC-137758)
+- Potential Fix: PU - Locations / Transit - Queuing an instanced hangar and another location, the elevator carriage never reaches the destination and blocks Gateway [0] (STARC-157256)
+- Potential Fix: PU - Pyro - Mission Refactor - AI / Missions / Mission Feature - Enemy AI do not spawn upon arriving at the location (STARC-148377)
+- Potential Fix: PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail (STARC-140959)
+- Potential Fix: PU - Stanton - Derelict Settlements - Locations / AI - Social AI - NPCs can walk into the fire pit causing them to take damage and sometimes die (tweaks to hazard volume sizes and navigation exclusion zones)
+- Potential Fix: PU - Pyro - Firesale - Depots - Locations / Freight Elevators - Commodity can disappear during transfer in the Freight Elevator
+- Potential Fix: PU - Pyro - Firesale - Depots - Prospect Depot Locations / Shopping - One of the commodity shop terminals is not working
+- Potential Fix: The Gladius is constantly playing the "ship pass-by" audio when viewed from a third party
+## Technical
+- Fixed a Client Crash
+- Fixed a Hybrid-Service Crash

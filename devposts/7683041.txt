@@ -1,0 +1,29 @@
+## Star Citizen Alpha Patch 4.0.1
+Alpha Patch 4.0.1 has been released onto the PTU!  Patch should now show: VERSION 4.0.1-PTU.9497712.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:500
+Hangar Spawning: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability, Performance, and Bugfix Testing
+- Save Stanton Chapter 2 Event in Pyro
+## Known Issues
+- Critical: Multivehicle - PU - Vehicles / Exploit - Fuel - Hydrogen and Quantum fuels are not depleted from fuel tanks when performing normal flight or Quantum Travel
+- Critical: PU - Starlight Service Station - Elevator Terminals / Locations - Calling for Starlight hangar elevator from the hangar may cause you to teleport into an empty elevator shaft
+- Critical: PU - Stanton - New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- Critical: PU - Actor - Personal Inventory / Storage Access - Loot Box / Armor - Interactions / PIT Wheel - Helmets that are carried then dropped via PIT menu will disappear/become lost
+- Critical: PU - Pyro - Frontier Outposts - XS Outpost - Locations / Art / Tech - XS Outpost Main Building interior and Storage Shed interior is missing multiple assets and collision
+- Critical: PU - Pyro - Asteroid Bases - Hangar - Locations / Collision - The collision for the hangar doors does not stream in until the player is inside the hangar
+- Critical: RSI Polaris - PU - Vehicles - VLM - Occasionally lose Components By Pressing A New Insurance Claim or Repairing A Damaged Polaris
+- High: PU - Personal Hangars - Spawning in Personal hangar is missing several Audio
+## Bug Fixes
+- Possible Fix: PU - Stanton - Habitation door is locked (STARC-126980)
+- Possible Fix: LIVE/PTU ONLY - PU - Network/Performance - Poor performance on Monox leading to input lag and delays of game updates of high BWin (STARC-149624)
+- Possible Fix: AC - Pirate Swarm / INS Jericho - AI - Enemy AI does not spawn and will eventually get a disconnection Error: 30000
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash

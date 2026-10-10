@@ -1,0 +1,26 @@
+## Star Citizen Patch 3.12.1g
+Alpha Patch 3.12.1g has been released to the PTU and is now available for all backers to test!   Patch should now show: VERSION 3.12.1-PTU.6917293.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Gameplay
+Known Issues
+- Pressing F4 while in a vehicle will reset the Global Chat and the chat history for the Visor UI.
+- Some or all of the player's items that should be kept after a Character / Database reset are lost
+- Player Unable to access mobiGlas after changing armour
+- Being arrested while wearing leg armor causes the player to respawn in prison with a broken multi-tool
+- The Players Ship can become Unresponsive after Mining a Asteroid FPS Deposit nearby
+## Feature Updates
+Gameplay
+- Moved exit interaction location on Retaliator bunk beds to make it more easily found
+- PVP and PVE bounty missions will now fail for the hunter if they are killed by the bounty
+## Bug Fixes
+- Fixed an issue that was causing the Prison kiosks to give a transaction failed message when selling minerals
+## Technical
+- Fixed 2 Server crashes
+- Main thread deadlock fix

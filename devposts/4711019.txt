@@ -1,0 +1,41 @@
+## Star Citizen Patch 3.16.0g
+Alpha Patch 3.16.0g has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.16.0-PTU.7911452 .
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Gravlev Rework
+- Law system Improvements
+- Atmospheric Bounties
+- Dying Star Updates
+- Area18 Hospital
+Known Issues
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- There are multiple doors offering only close options, preventing exterior doors being opened
+- Cannot Repair, Refuel, Restock at LEOs
+- Players may randomly be unable to select a system to join the PU
+- Prison Missions do not spawn in Kleischer Rehabilitation Facility
+- The doors leading into the Orison Cloudview Center Arcade will not open from the outside
+- Pressing and holding F to "Freelook" does not work when piloting the Nox and prevents start up of vehicle using interaction (keybind will need to be used)
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+- Bed logging on a moon or planet - ship falls through surface
+- Ship may despawn after player death instead of staying at it's last location
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+- Weapon will not holster
+## Feature Updates
+Gameplay
+- Gravlev Polish Pass
+Fixed issues where bikes jump too high. Made balance improvements to air control, and strafe control to increase lateral strafe while in hover mode (not in space) and made rides slightly smother on ground. Added spacebrake ability to Gravlev bikes.
+## Bug Fixes
+- Heavy armors should no longer block much of the mobiglas interface
+- Fixed an issue causing elevators in ships to disapear and cause players to be come invisible
+- Large FPS Deposits base should no longer leave behind a collectable Diamond Icon after collecting all the gems
+- Gas clouds should no loner be missing from the Dying Star AC map
+- There should no longer be multiple replaceme textures around space station Refinery Decks
+## Technical
+- Fixed 2 Client Crashes
+- Arena Commander Server Crash Fix

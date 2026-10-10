@@ -1,0 +1,48 @@
+Squadron 42 Monthly Report
+June 2024
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 07:03:2024
+REF: CIG UK, CIG DE, CIG LA, CIG TX,
+FAO Squadron 42 Recruits.
+Welcome to June’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including StarScript, cinematics, and narrative content.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Features)
+Last month, AI Features supported AI Social in wrapping up their tasks for the usable system.
+The ‘usable system’ describes how NPCs interact with machinery and other objects of the world. For example, an NPC running a janitor behavior will need to interact with several usables, such as a locker to equip a uniform, and cleaning equipment, like a mop and bucket. They will then need to move between spots and clean them, playing a mopping animation as they go. The usable system represents these different objects and has information about how NPCs use them, where they need to play animations to enter and exit the usable, and what custom logic to execute.
+These systems often work with complex setups designed to implement complicated interactions for NPCs and, in some cases, the player too. Sometimes, a small change in one element of functionality can have a large knock-on effect on another use case. In addition, there are often specific situations that require specialized solutions. For example, usables often have complicated idle animations with specific pose requirements and should transition into an action or an exit animation at specific times.
+## AI (Tech)
+June saw AI Tech fix several bugs related to NPCs using elevators. They also improved the functionality for usables scooching between different zones, such as transitioning between outside and inside elevator panels.
+On the ship AI side, improvements were added to point-defense cannons that allows them to track and shoot missiles. They also made updates to allow NPCs to follow leaders in formation by utilizing a PID controller for matching leader speed and adjusting roll based on the leader and NPC ship orientation.
+The team also worked on destructible-cover functionality. For each location, they had to determine whether destructible entities were part of the cover surface and register their destructible events. Based on those events, they can then regenerate the cover surface or adjust the locations’ height should it be required.
+Bug fixing was also done for the AI and usable systems.
+## Animation
+The Animation team continued to work on the look and feel of zero-g, including making it feel smoother and more exciting. They also worked on several player interaction animations, scenes for chapter one, and delivered final assets for the several chapters. Improvements were done on clothing usage for the player and NPCs too.
+The team are currently progressing with cover-hit reactions, cover and stair usage, locomotion blending into useables, and more.
+Regarding motion capture, a number of pick-ups were captured to smooth out various scenes. They also captured a few actions needed for one of the main life areas and made improvements to combat reloads.
+For facial animation, the team continued to burndown chapter work and polish the final facial animations for several levels.
+## Gameplay Story
+The Gameplay Story team continued a high production rate throughout June, adding extra audio and facial data to complete the last scene in one of the chapters.
+They progressed through feedback and polish tasks, which involved improving the head and look-at in five different scenes, updating two start idles, a lighting fix, and polishing character finger movements.
+They also delivered four new scenes, beginning with two characters walking down a staircase, around a corner, and through a bulkhead door. The second features six characters moving from a hangar to a brig via a cargo elevator, while the third features two individuals asking the player for help. The final scene has two characters working together on a unique engineering project.
+Chapter 12 also received substantial updates. This involved adding an idle between major parts of one scene, using new mo-cap to improve navigation across a damaged environment, and using new p-cap to overhaul the introduction of another section.
+## Graphics & VFX Programming
+Last month, the stability, performance, and memory usage of Vulkan continued to improve and is now much closer to being the default choice for SQ42 and the PU. The team have also been in contact with AMD, Nvidia, and Intel to diagnose and fix various driver issues.
+The Global Illumination team worked across a variety of areas. For example, they improved radiance cache resolution, made stability improvements, and optimized various areas with Fidelity FX. They also provided rough-specular support, improved motion-and-depth-complexity handling for the screen-space light cache, and updated the cascaded light grid to allow for a greater range of global illumination.
+Gas-cloud color-processing volumes were added to allow the artists to vary the appearance of large gas clouds as players traverse them.
+Support for fire hazards continued, which involved adding directionality to the generalized burn and dirt shader effect for entities. This allows localized burning, such as on one side of a door. Visual improvements were also added to creatures, such as the ability to spawn decals from GPU particles.
+## Narrative
+The Narrative team is nearly finished with the first pass of all the Galactapedia entries and have been taking a closer look at how the entries are triggered alongside the overall player experience. On the text front, the team swept through the various objectives across each level to make sure they provided succinct and clear guidance and accommodated any character limits.
+Playthroughs with other teams continued as more of the content captured at the end of last year was implemented. As the levels solidify, slight adjustments are made, which sometimes require tweaks to the dialogue to accommodate, so scripts have been adjusted to reflect the updated flow.
+Narrative also worked alongside the Audio team to add more ally and enemy voicepacks. These are now going through testing and validation.
+## Tech Animation
+The Technical Animation team continued to invest in a wide range of tasks, facilitating improvements across both projects.
+For example, work progressed on the ‘Put On, Take Off’ initiative, which is close to completion. These animations will soon be integrated into the game and will significantly enhance the realism of character interactions and provide a more engaging player experience.
+Enhancements were also made to the Character Customizer, including the successful integration of new heads. This enhancement will offer players more variety and customization options, further enriching personalization.
+“Our ongoing collaboration with the SST and Cinematics departments remains strong. The focus on ensuring the technical implementation of animations and scene content is of the highest quality is unwavering. This synergy is crucial in maintaining the seamless integration of animations and ensuring a top-tier visual experience for our audience. The achievements of the Technical Animation team this past month are a testament to their hard work and dedication. As we move forward, we are confident that we will continue to reach new heights and deliver exceptional content for our players.” Tech Animation Team
+## VFX
+The VFX team supported Cinematics with major scenes across the campaign, finalizing particles, explosions, background weapon fire and timing, and destruction simulations. They’re currently working closely with other teams on improving environments, weapons, and vehicles to support the narrative and gameplay.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

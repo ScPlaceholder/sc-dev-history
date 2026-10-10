@@ -1,0 +1,53 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to all backers!  Patch should now show: VERSION 4.0.0-EPTU.9463011.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US/EU Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 4:6:500 (4 Servers in Stanton, 6 Servers in Pyro, 500 players total on the mesh)
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Server Meshing
+- Pyro Star System and New Locations
+- Mission Refactor
+- Contested Zones
+- Jump Points
+- Advanced HUD View
+- Home Location Instanced Hangar Spawning
+## Known Issues
+- PU - MultiSystem - Locations - NPE / Vehicles / Quantum Travel - Some orbital markers around Stanton and Pyro sends player into wrong direction when they QT to them (additional logging in this build)
+- PU - Multisystem - Locations / Inventory / Actor - Local and Personal Inventory may disappear when force respawning (Workaround: Force Respawn again)
+- PU - Pyro - Asteroid Bases - Locations / UI - Asteroid Bases airlocks are not cycling
+- PU - Locations / AI - NPCs overspawning gamewide
+- PU - Locations / Quantum Travel - Pyro V - Orbital Markers above Pyro V may path through the planet, not appearing as "Obstructed", causing critical ship components to be destroyed
+- PU - Pyro - Rundown Station (R&R) - Multiple Locations - Locations / Physics / Vehicles - Players flying in the vicinity may explode consistently at random
+- PU - Medical Insurance Terminal / UI - Regeneration kiosk UI does not update after transferring imprint
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+## Features & Gameplay
+- Ships and Vehicles
+- Increased the quantum fuel tank sizes for all ships
+- Core Tech
+- Further Hangar Culling Changes to Make Sure Instanced Hangars Don't Intersect or Stream Assets to Everyone in the Area
+- Enabled Unattended Vehicle cleanup flow by default and made it more aggressive around Rest Stops and Landing Zones (excluding Pyro stations)
+## Bug Fixes
+- Fixed - PU - Stanton - Audio / Locations - While in elevator carriage attached to hangar, you can hear the sound from other players' hangars
+- Fixed - Players encounter "Repositioning Player" message at odd times (STARC-144014)
+- Fixed - PU - Mission Content / UI / Markers - Travel Markers do not re-appear if a player leaves the mission location
+- Fixed - PU - Pyro - Frontier Outposts - Locations / AI - Players Recieve Trespass zone warning that results into the AI becoming hostile regardless of the player's reputation (STARC-144465)
+- Fixed - PU - Hauling Missions - Hauling missions give full reward without delivering all cargo when the "Submit" button is pressed (STARC-120213)
+- Fixed - PU - Stanton - Elevator Terminals / Locations / Transit - Exterior Panels from the spaceport lobby to player hangars are being unresponsive to player inputs (STARC-141834)
+- Fixed - Multiweapon - PU - Weapon / Interaction - NPC dropped weapons cannot be interacted with sometimes (STARC-146179)
+- Fixed - PU - GLOBAL - Stanton - Outposts Airlock - Doors on outposts do not open (STARC-144953)
+- Fixed - PU - Mission Refactor - Missions / ASOP - NPE - Disconnecting during NPE then signing back in after the Pisces Rental has expired will cause the Player to only see blank and black ASOP screens (STARC-146295)
+- Fixed - PU - Pyro - Frontier Outposts - Locations / AI - Players Recieve Trespass zone warning that results into the AI becoming hostile regardless of the player's reputation
+- Fixed - Origin 890 Jump - PU - Vehicles / Art - Cargo and Entrance elevator doors are invisible before and after use (STARC-133350)
+- Fixed - PU - Pyro / Multilocation - Items / Interactables - Some of the fuse could not be picked up from the Fuse Box inside the Contested Zone
+- Fixed - SC - Creatures - Quasi Grazer - Player is unable to harvest from a dead Quasi/Kopion
+- Fixed - AI - Hostile ships not attacking even when hostility is enabled
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes

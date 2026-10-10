@@ -1,0 +1,44 @@
+## Howdy folks!
+Jason Hutchins, here. I’m working with Disco Lando on the update this week since Ben is in Atlanta for DragonCon! Have a great time, Ben! If you’re at DragonCon this weekend, you should go check out the various Star Citizen panels and tell Ben I miss him.
+## The Big Merge Update
+As we wrap up the staging merge this week, we go into final integrations of the Global Instance Manager that was recently deployed with the Social Module update. Some folks are going to work on this final merge step this coming weekend in order to make ready a code review based on the merge. If all goes as planned, we’ll be on a single dev stream early next week! Great news for the overall project.
+To date, the CryEngine 3.7 SDK has been integrated, and the dev stream we used for both the Social Module release and FPS development have been merged into the game development stream. One of the things this has done is point out some conflicts to us, which we are finding and addressing. Many of them require a manual review, as newer is not always better when streams diverge, but we’re getting it done, and pushing every day towards putting Star Marine in your hands.
+And now, because we’re talking about our First Person Shooter… BULLET POINTS! (DL Edit: I’m so sorry…)
+## UI:
+- Last week I mentioned a UI summit. That summit is over, the talking is done and the plans are made. This means that key members of the UI team are in Manchester to lock down the base UI systems that will be used all over Star Citizen – Visor (AKA Player HUD), Ship’s HUD, Diegetic screen displays, HUG and mobiGlas, they are working together to make sure all the systems integrate well and are unified.
+- While the UI team is looking at the work needed for the next major upcoming releases, they are also working hard to get the HUDs working properly in this pre-merge environment. Once the merge finishes, we can resolve conflicts and get back to work on the new HUD widgets needed for on-foot gameplay.
+- Up Next: The HUD’s integrated chat widget, and additional Radar functionality.
+- Engineers and Artists at BHVR are starting work on the interstitial Score Screens and LoadOut Lobbby screens for Star Marine this week.
+## Gameplay:
+- Merging staging stream to Game-Dev
+- Spent much of the week fixing crashes and getting a dedicated server connection to run, largely due to merge conflicts, and we’ve had tremendous success! As of today, we are now able to connect to an internal server.
+- Resolving merge conflicts in the stream, last hand merges should be done by EOD today, to allow for automated merges over the weekend.
+- Engineers are triaging FPS bugs, in general, looking at what must be fixed for launch and what improvements we can make for the next major release after that. We know you don’t want perfection right off the bat, and we also know you are going to help us find bugs we’re not seeing in our small-scale tests.
+- The next Game Mode that we’ll introduce for Star Marine gameplay is shelved and ready to integrate and start testing next week.
+- Cover system progress is being made, fixed up network syncing, other glitches, and moved it into the player’s moving state. This allows for proper transitions, smoother movements, and accurate
+## Art:
+- Finished Arclight laser pistol material/decal revisions.
+- Start work on LH68 Gemini ballistic pistol art cleanup, added iron sights to it, other art clean up issues will continue into next week. We’ll have screenshots to share in next week’s report.
+- Weapons are almost all done and ready for reviews. What’s left?
+- Sniper VFX
+- A new gadget model for the Area Denial system, it is essentially an EMP claymore mine. With new VFX to match the gadgets new size. The old gadget we made was too big, so we are going to repurpose it to be another gadget with different functionality.
+- Working on line art for helmet interiors for the HUD, this is will continue into early next week.
+## Animation:
+- Editing the crouch to vault low mocap data.
+- Helping engineering identify missing assets.
+- Creating pistol walk slow and run fast sets from the matching stocked set.
+- Addressed feedback on the pistol mag check animations.
+- Captured video of weapon selects, deselects and reload for UK Audio team to review and sync.
+- Working on cleaning up sidling (AKA Front Press) left and right mocap data. Sidle and Slide, to very different motions.
+- Reviewing and breaking up Heavy weapon mocap data.
+- Fixed finger pose from re-targeted pistol idle. Finger straight until you are ready to shoot, people! Safety first.
+- Editing no weapon vaulting mocap data.
+- Editing the mantling mocap data.
+- Working on fall animations from vaulting.
+- In order to close down the animations needed for the Star Marine launch, we are systematically cleaning up all available assets, and cranking out the new assets. There’s still a big list to burn down but we have a plan and we are making good progress on it every week. We are all quite eager to get into the unified dev stream and to continue functional testing and playtests. As many people already know, these are not animations isolated to the Star Marine module, these are going to be seen in the hangars, planetside locations, and Arena Commander scenarios!
+## Audio
+- Setting up the general HDR mix this week.
+- Implemented sniper rifle audio assets.
+- Iterating on weapon reload sounds, using video reference provided by the animators at Illfonic
+- Music is being composed and recorded for the Star Marine simulation and its lobby and score screens. We don’t need music to ship it to you for testing of course, so that won’t hold us up.
+Last Friday I mentioned that the Foundry 42 audio team did a recording session of a lot of different firearms for use in environmental audio. I’m happy to share that video with you today. Enjoy! Big thanks to Stephen Rutherford, and Matteo Cerquone at Foundry 42 in Manchester for putting this great explainer video together for us, and even bigger thanks for improving the gun sounds in the environments.

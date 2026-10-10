@@ -1,0 +1,70 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9353512.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: Evocati Only
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of Evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.24.0 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- New Arena Commander Updates
+## Known Issues
+For this update, set your initial spawn to Area18 or Orison as you will most likely run into grey panels blocking access to elevators.
+We have a temporary cvar set that will help with ships falling through hangar elevators when lifting them up. This will be a little weird and teleporty but should help until a full fix is in.
+- Multivehicle - PU - Vehicles / Locations / Physics - Ships fall through hangar elevator platform on retrieval resulting in being stuck under hangar
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP terminal screen will be stuck on the getting vehicle list screen until terminal times out
+- PU - Stanton - Locations / Transit / Hangars - Some elevators have greyed out panels and do not respond when called
+- Multivehicle - PU - Vehicles / Collision - All vehicles clip through planet terrain when player exits the pilot seat
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Multivehicle - Quantum Travel / mobiGlas / Star Map - Unable to plot a route to obstructed destination
+- PU - Stanton - Missions / UI - Mission Objectives are missing from multiple UI elements
+- Multivehicle - PU - Vehicles / Ship Refuel - MISC Starfarer is not refuelling other ships
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+- Multivehicle - PU - Resource Network - Mining and Salvage heads throttles default to 0
+- PU - Stanton - Multivehicle - Vehicles / MFDS / UI - Scanning MFD reverts to Ready to Scan after scanning ships with no cargo stored (STARC-130414)
+- Gatac Syluen - PU - Vehicles / Elevator - Syulen is missing the internal elevator (STARC-130168)
+- Carrack bottom right MFD has no display (STARC-130157)
+- PU - Stanton - Locations / Art / Shopping - Shelf item’s item card have no names/labels
+## Features & Gameplay
+Ships and Vehicles
+- Reverted ship boost speed reductions to previous speeds
+- Added default options for the new ship settings which are applied when a ship spawns for the first time
+- Further MFD/HUD Visual Polish Passes
+Weapons and Items
+- P8-AR ironsights will no longer be flipped when using an optic
+- Slightly Increased the damage of the Custodian
+## Bug Fixes
+- Fixed - PU - Multivehicle - Vehicle/IFCS - Atmosphere range out into space for flight speeds and nav mode speeds (STARC-130037)
+- Fixed - PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List (STARC-129859)
+- Fixed - Error 60016 - Players who join an instance that gets isolated or into a bad state cannot join another until stowed
+- Fixed - Multivehicle - PU - Resource Network tech / Vehicles / Soft Death - Losing power in a ship locks all doors inside a ship (STARC-130236)
+- Fixed - PU - Stanton - Multivehicle - Vehicles / MFDS / UI - Scanning MFD reverts to Ready to Scan after scanning ships with no cargo stored (STARC-130414)
+- Fixed - PU - UI - mobiGlas - StarMap - When zooming out on the StarMap, it will continue to zoom out further than is expected (STARC-129855)
+- Fixed - PU - Stanton - Resource Network - Ships / Vehicles / UI - ORIG 300 Series still has the old MFD UI on the bed MFD (STARC-130290)
+- Fixed - PU - Stanton - Rest Stops (R&R) - Art / Locations - VisArea issues at Medical Clinics at Rest Stops (STARC-129844)
+- Fixed - Origin 890 Jump - PU - Stanton - Vehicles / UI - Velocity gauge is missing from the players HUD
+- Fixed - Stanton - PU - Resource Network - Ships / Vehicles / UI / Weapons / Ship Components - There is no option to Power on EMP's
+- Fixed - PU - Multivehicle - Quantum Travel / mobiGlas / Star Map - Unable to plot a route to obstructed destination
+- MFDs - Add Unequipped state on pips, and fix scrolling behaviour while hovering pips
+- Fixed - PU - Stanton - Commodity Kiosk / UI - The inventories list does not correctly show the vehicles that store in location
+- Fixed - PU - Stanton - Rock Caves - Locations / popping - Rock is popping inside cave
+- Fixed - Stanton - PU - Resource Network - Ships / Vehicles / UI - The Mouse wheel does not allow the Player to Scroll through the Power Management MFD if Mousing over a Power Pip
+- Fixed - Origin 890Jump - Stanton - Vehicles / Room System / Actor Status - 890J Gunner Turret is missing a Room Entity when deployed causing Asphyxiation / Suffocating
+- Fixed - Stanton - PU - Resource Network - Ships / Vehicles / UI / Game Code / Ship Components - The Cooldown for Ship Shield Regeneration Triggers every time Power Allocation is altered
+- Fixed - Multivehicle - PU - Stanton - Vehicles / UI / Annunciator Panel - The QTM Indicator text is shown as QT instead of QTM
+- Fixed - Origin 400i - Stanton - Ships / Vehicles - UI - When opening the Weapons Rack to store a weapon, there is a 2nd place interaction that appears on the floor too
+- Fixed - RSI Ursa Medivac - Vehicles / Art - Inventory Cabinets are left behind after destruction
+- Weapon pools now show unavailable pips correctly
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 3 Server Crashes

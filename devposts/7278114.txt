@@ -1,0 +1,6 @@
+Sadly if we could predict a crash then we would be able to avoid it in the first place.
+There are a couple of things going on that will improve recovery times in the future though
+- First and the biggest one is continuing to improve stability, of course we will always prefer not to see a crash in the first place.
+- Improvements to how we process "dead" DGS's as there's some analysis and cleanup tasks there that we're working to make faster.
+- Improving the startup time for a new DGS, this and the point above are where the big speed-ups in crash recovery are coming from.
+- In 4.0 and beyond, with more DGS's per shard, an individual DGS crash will be less impactful, only affecting the players directly served by that DGS in the mesh.

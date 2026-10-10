@@ -1,0 +1,57 @@
+## Star Citizen Alpha Patch 4.0.2
+Alpha Patch 4.0.2 has been released onto the PTU environment for All Backers to test!  Launcher should now show: VERSION 4.0.2-PTU.9518844.
+Audience: All Backers (no NDA)
+Server Info: PTU Channel - US Servers Only
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:600
+Hangar Spawning: Disabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+4.0.2 Release Goals
+The 4.0.2 release is highly focused on 3 key points to improve and fix as many top key gameplay issues as possible, improve connectivity/stability, and begin the latest Supply or Die Pyro Event.
+- Stability, Performance, and Bugfix Testing
+- Supply or Die Event
+Known issues with Event
+- PU - Pyro - Supply Or Die - Depots - Locations / Freight Elevators - Commodity can disappear during transfer in the Freight Elevator (can happen at Prospect Depot and Slowburn Depot)
+- PU - Pyro - Supply Or Die - Depots - Locations / Core Tech / AI - Entering PhyGrids can result in Players and AI losing collision with building and assets
+- PU - Pyro - Supply Or Die - Missions - event rewards are not obtained after completing the event (Reward is set to a placeholder for PTU)
+- PU - Pyro - Supply Or Die - Depots - Locations - User becomes stuck after riding the freight elevator down at the Depots (This one is on you if you do this )
+- PU - Pyro - Supply Or Die - mobiGlas / UI / Mission Content - placeholder "Total" is on the detail rather than the actual number to be delivered
+## Known Issues
+- Blocker: PU - Transit/Elevators - Elevators are present but panel buttons stop functioning (Tonight's build has loads of extra logging while the team works on the issue)
+- Blocker: PU - Stanton - Area18 / New Babbage - Locations / Collisions / Transit - Transit in some Landing Zones have no collision, causing players to fall through the transit floor
+- Blocker: Mission Refactor - PVP Missions dont work
+- Blocker: PU - Pyro - Courier - Mission Content - Boxes are not spawning during courier missions
+- Blocker: Mission Refactor - Comm Array Repair - Contract in mobiGlas becomes hidden when another player enters mission location
+- Blocker: PU - Kopions - Mission Content / mobiGlas / Creatures - Kopion related missions are not displaying in Contracts
+- Critical: PU - Stanton / Pyro - UI / Vehicles - Quantum Travel Nav Markers become invisible
+- Critical: MISC Starfarer ( All Variants ) - PU - Vehicles / Vehicle Feature - Payment can not be accepted to begin the refueling process
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Mission Refactor - NPE - Multiple Locations - Missions / UI / mobiGlas - Mission stops progressing after landing in hangar
+- Critical: PU - Inventory - Storage Access/Interactables - Storing items from the actor to the Storage Access interface will drop the items and make them lose interactions
+- Critical: PU - Pyro - Frontier Outpost - Design / Art / Physics / Locations - Players falling through the planet when attempting to enter outpost buildings
+- Critical: Multivehicle - PU - Vehicles / Components / Weapons - Ship Weapons are sometimes not firing
+- High: PU - Graphics - DX11/ Upscaling / FSR - The option to use FSR Upscaler is no longer available while using DX11 API, option still available under Vulkan (Fixed in next build)
+## Features & Gameplay
+- Locations
+Planetary Night Brightness Polish Pass
+Biome Streaming Performance Optimizations
+Optimization Pass on Pyro Outposts
+- Gameplay
+Greatly Increased Distortion Falloff Times for S4 Power Plants on the Polaris, Reclaimer, and 890j
+- Ships and Vehicles
+MISC Starfarer: Moved the MFDs down to avoid intersecting with Advanced HUD
+## Bug Fixes
+Further work has been done to fix up locations where players were falling through the planet when entering outpost buildings. There are still some edge cases of this so please let us know if it is still occurring and at which outpost
+- Possibly Fixed: PU - Inventory - Storage Access/Interactables - Storing items from the actor to the Storage Access interface will drop the items and make them lose interactions (STARC-154219)
+- Possibly Fixed: MISC Starlancer Max - PU - Vehicles - Starlancer MAX has no physical floor in the cargo hold (STARC-156503)
+- Possibly Fixed: PU - Graphics - DX11/ Upscaling / FSR - The option to use FSR Upscaler is no longer available while using DX11 API, option still available under Vulkan (STARC-154319)
+- Possibly Fixed: PU - Pyro - Contested Zones (CZ) - Checkmate Station - Design / Locations - There is no audio SFX when a door to a loot room located within the horizon route of the contested zone opens and closes
+- Possibly Fixed: Stanton / Pyro - Medical Rescue / Service Beacons - Missions / UI - If a Player Respawns after another Player has accepted their Service Beacon their NavMarker will persist
+- Possibly Fixed: Multivehicle - PU - Vehicles / Design - Ground vehicles have no power to their engines by default
+- Possibly Fixed: MultiWeapon - PU - Weapon / UI - Timer text for applied drugs on the AR cards doesn't fit inside the AR UI
+- Possibly Fixed: AC - UI - Classic Race / Grav Race - AR Markers missing for next checkpoints (STARC-153876)
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed a Hybrid Crash

@@ -1,0 +1,66 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9156902.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 3
+Server Info: US/EU - EPTU Channel
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+- Stability/Performance/Bug Fixing
+- New Features & Gameplay Updates
+Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs.
+Distribution Center missions sometimes show the wrong location markers inside so might be difficult to know exactly where you need to go to.
+Server and Client Performance is something we are constantly monitoring and working on fixes and changes for 3.23.
+- PU - Stanton - Missions - Eliminate Specific objective marker does not update with the target's location even though it has been spawned
+- Graphics - Upscaling / DLSS - Under any upscaling option, ship HUD clarity is significantly affected when QT HUD is displayed
+- PU - Creatures / Kopion - Animation / AI - The Kopion creatures do not move or attack players
+- PU - Multiple Locations - Locations / Art - GrimHEX and Kareah airlocks are missing breathable air and doors
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Locations - Grim Hex - Hospital - Elevator - Elevator is missing at Grim Hex's hospital
+- PU - Stanton - Lorville - Transit / Locations - Trams missing from Perimeter Line West
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+## Features and Gameplay
+Gameplay
+- Starmap: Updates to transition between starmap and interior map
+Lerping the camera out to a default distance away from the current location. Basing transition from starmap to interior map on whether the crosshair is over the player or current location marker. Starting by default in the starmap when in a vehicle seat. Adding keybind to automatically transition to interior map from starmap (but NOT interior map to starmap).
+- Set Chat Window to show as the default
+- Chat: Allow cycle through chat channels (TAB key) only when chat is focused
+- Adjusted top left Visor region to show the law zones widget when in a vehicle (also resolves STARC-107657)
+- Kopion Fauna can no longer be stunned
+- Lorville minimap Polish Pass
+Ships & Vehicles
+- Lowered Shield Regen times when Swapping Operator Modes
+Shields regen too slowly when returning back to SCM speeds. At full Shield health, the recovery time of a shield from NAV to SCM is now:
+- S1: 3 seconds
+- S2: 4 seconds
+- S3: 5 seconds
+- S4: 6 seconds
+- Re-tuned Cutlass Steel to be in line with other drop ships
+Core Tech
+- Cloud Performance Optimizations
+Atmosphere and cloud raymarching can be expensive. To reduce GPU overhead, we've scaled down the raymarch step count for parts of the screen that are occluded by near field scene objects. This should mostly affect Very High and Photo Mode settings.
+- Made Further Vulkan Performance Optimizations
+- Made Further Entity Streaming Performance Optimizations
+- Made Further Overall Network Performance Optimizations
+- Made Planetary NavMesh Polish and Performance Optimizations
+- Further Dynamic Crosshair Client Performance Improvements
+## Bug Fixes
+- Fixed - Multivehicle - PU - Vehicles / Physics - Ground vehicles have erratic movements when driving (STARC-104822)
+- Fixed - AC / PU - GFX - Camera / UI - Game Menu - Options Menu - The slider values between 0.00 and 1.00 for Global Camera Shake only provide the 1.00 max shake (STARC-102704)
+- Fixed - MISC Starfarer - PU - UI / Vehicles - Refueling / mobiGlas - When the Starfarer has its internal fuel tanks full, the fuel pods can not be refuelled
+- Fixed - PU - Stanton - Distribution Center (DC) - ASOP / Locations / Vehicles - Players cannot spawn vehicles using the ASOP terminals and instead have long loading screen
+- Fixed - PU - Stanton - Actor / Weapons - Ammo repooling does not combine magazines
+- Fixed - SC - Shopping experience - Ship pedestal interactions hide the AR card
+- Fixed - PIE - Default Item Action - Secondary Action (on mouse2) is ignored, and throw is forced instead
+- Fixed delay in updated fire rates after swapping gimbal modes (specifically precision targeting)
+- Fixed - Elevator moves on mini-map (STARC-104083)
+- Fixed - PU - Creatures / Kopion - Animation / AI - The Kopion creatures do not move or attack players
+- Fixed - PU - Stanton - Distribution Center (DC) - Spawn Closets / AI / Locations - AI can seemingly get stuck and stay inside of spawn closets
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 4 Server Crashes

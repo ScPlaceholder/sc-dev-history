@@ -1,0 +1,40 @@
+## Star Citizen Patch 3.13.1j
+Alpha Patch 3.13.1j has been released to the PTU, and is now available for all backers to test! Patch should now show: VERSION 3.13.1-PTU.7426287.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Audience: All Backers
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Stability and bugfixes
+- Fleet Week Playtest
+Known Issues
+- Cursor may remain visible, and isn't constrained to the game window
+- Players are unable to access or leave / get stuck on the 4th floor of the L19 HABs via the inside elevator panel, as it goes blank/unresponsive
+- Items missing after update / Character Reset / pledge change
+- Abnormally long delay between pick up storing of fps mineables/harvestables/items
+- Extra / Duplicate static Train / Tram can appear at New Babbage
+- Bartender is missing at G-loc bar in area18
+- MK-4 Frag Grenade does not detonate after being thrown and vanishes
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Constellation can despawn when flying 30km away after undocking
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+- After using the "Try On" option the characters armor and weapons are invisible
+- Character T poses when viewed on the review tab
+## Fleet Week Specific Updates
+- Added Additional NPC Tourist facial animations
+- Bug Fix - Players should no longer teleport into space if they remain in the docking tunnel of the Javelin when the tour ends
+- Bug Fix - If the player leaves any tour guide mid-speech and then returns, the dialogue should now continue correctly
+- Bug Fix - The doors to get onto the Javelin should now open consistently when the Javelin is docked
+## Bug Fixes
+- Players should no longer sometimes lose the majority of functionality in their ship when leaving and entering the pilots seat during long distance Quantum Travel
+## Technical
+- Fixed 1 Server crashes
+- Fixed a Server Deadlock
+- Fixed a Backend Service Crash

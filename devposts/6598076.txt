@@ -1,0 +1,74 @@
+## Arena Commander 3.22.1 Patch Notes
+New Experimental Mode: Grav Race
+Feel the rush in this exciting new Experimental Mode featuring Grav-lev vehicles racing through 5 new maps: The Snake Pit, The Snake Pit (Reverse), Clio Islands, Rivers Edge & Shifting Sands.
+Master Modes: 3.22.1 Update
+Master Modes testing is more important than ever in Arena Commander 3.22.1 with another large update to this special test of the upcoming system.
+- New Game Mode: Master Modes: Pirate Swarm (Special AI Test)
+We are conducting a very special test of brand-new AI behaviours, focusing on closer engagements and more aggressive traits. Tuned specifically for Master Modes. Play through 13 waves, experience 1v1s and new wingmen. Although the waves are different regular Pirate Swarm will remain active for comparison with the current AI behaviours.
+This mode replaces Master Mode: Endless Vanduul Swarm.
+- Atmospheric Maps
+We have enabled atmospheric maps across all Master Mode game modes to assist in testing Master Modes in more environments. It is important to note that this patch does NOT include the “Control Surfaces” atmospheric flight model demonstrated at Citizen Con 2953.
+- New Ships
+A wider selection of ships has been introduced to all Master Modes tests.
+-   P-52, Snub Interceptor
+-    Gladius, Light Fighter
+-    Buccaneer, Medium Interceptor
+-    Super Hornet F7C-M, Medium Fighter
+-    Vanguard Warden, Heavy Fighter
+-    Constellation Andromeda, Medium Gunship
+-    Hammerhead, Anti-Fighter Corvette*
+*Excluded from Master Modes: Classic Race
+- More Details
+-    Adjusted capacitor tunings,
+-    Rotational buffs under boosting now depend on capacitor assignment.
+-    Retuned shield strength.
+-    All fighters now utilize “bubble” shields.
+- HP changes
+- Slightly reduced health of Buccaneer
+- Slightly reduced health of Super Hornet
+- Drastically reduced health of P52
+- Engines
+- Changed pitch / yaw limiter to NormalizedUniformWithMaxRadius
+- Rotational speed and acceleration modifiers for boosting are now dependent of the capacitor assignment (50% to 100%)
+- Capacitor assignment will not affect the boost burn times unless you are flying an interceptor
+- Reduced overall pool but increased regen by 50%.
+- No regen difference in NAV vs SCM mode for boost capacity
+- Adjusted regen delays (Snubs: 0.25s, LF: 0.5s, MF: 0.75s, HF: 1s, Connie: 2s, Hammerhead: 3s)
+- Shields
+- Shield regen overall has been reduced
+- S1 and S2 shield generators turned into bubbles for now
+- S2 shields are weaker (due to the bubble)
+- Capacitor assignment has now a much bigger impact on the resistance (energy 0% to 50%, Ballistics 0% to 25%)
+- Shield reserve pool in NAV made can now hold 100% of the shield generator's health)
+- Weapons
+- Reduced regen delays (0.25s for anti-fighter, 0.5s for unspecialized)
+Mode Update: Gun Rush
+Weapons of the ‘verse are currently being updated across the board, with this several weapons featured in Gun Rush no longer provide the best experience. To temporarily address this concern, we have updated several ranks in the mode:- note that all ranks have been reduced by one due to the removal of one.
+Rank 1: FS9 -> Demico
+Rank 2: Custodian -> FS-9
+Rank 3: Lumin -> C54
+Rank 4: ArcLight -> P8-SC
+Rank 5: Salvo -> Coda
+Rank 6: GP-33 (Grenade Launcher) -> LH86
+Rank 7: Gallant -> P6-LR
+Rank 8: S71 -> P4-AR
+Rank 9: Ravager-212 Twin -> Karna
+Rank 10: Devastator -> GP-33 (Grenade Launcher)
+Rank 11: P6-LR -> BR-2 Shotgun
+Rank 12: Arrowhead -> S-38 Shotgun
+Rank 13: Railgun -> Scalpel
+Rank 14: Atzkav Sniper (unchanged)
+Rank 15: Knife. (unchanged)
+System & Balance
+- Disabled Ballistic Persistence
+Ballistic Persistence, a system which had you respawn with the same ammo you had upon death, has been disabled in all game modes to see the effects on ballistics in Arena Commander instances.
+- UI Message Queuing
+Resolving several issues related to UI messages overlapping/overriding each other by introducing messaging queuing, messages should now play one after another and restore “Status” messages rather than clearing them when a new message appears.
+- Kill Confirmed Vehicle Scoring
+Kill Confirmed (Vehicle) pickups will now award based on the value of the destroyed vehicle
+- Spawn Screen Improvements
+Several improvements have been made to the UI user experience of the Spawn Screen based on feedback. Including closing the vehicle selection in more ways, a list view of available multicrew ships which is always available, more information on who and how many are aboard a selected vehicle before spawning and more!
+- Misc
+-    Disabled Ready System in Squadron Battle
+-    Improved Team Balancing, to highly prefer keeping Squads together.
+-    Scoreboard in Racing game modes will now display players in order of race position, rather than Lap/Score.

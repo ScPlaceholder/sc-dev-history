@@ -1,0 +1,7 @@
+Your sensitivity curve on roll is likely too extreme causing more than one revolution. You can also see that with pitch and yaw ... If you go to the far right your avatar will at some point look to the left. That's a bug I still have to fix.
+Your profile has very big deadzones which wont play nice with the internal game calibration ... it means the actual free zone for tilting is tiny (because tilt is limited by the game to 45 degrees).
+I would suggest two things:
+1) Remove the deadzone on roll entirely, use a 1:1 profile and then gradually move it your preference. From my experience the roll curves in TrackIR should be a lot more shallow than pitch and yaw.
+OR
+2) Use the option for the raw input. This means you have to take a bit more care about your head but the game and trackir offsets are mapped exactly (when within the limits ... the revolution still persists).
+You can also use both together.

@@ -1,0 +1,53 @@
+Hi Everyone!
+Time again for another Hotfix Central thread to keep you all up to date on things going on outside of the normal patch cycle in SC Alpha 4.9 LIVE!
+This will be a living document of all the hotfixes applied to the current LIVE environment, along with dates as a timeline and when the HOTFIX channel is open and closed.
+## Current 4.9 LIVE Status | 7.30.2026
+https://status.robertsspaceindustries.com/
+https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21168-Star-Citizen-Alpha-48
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN
+- Status: Hotfix Channel Currently OPEN
+- Latest LIVE Client CL: 12344265
+- Latest LIVE DGS CL: 12326004 (12344265 canaried to select servers for testing)
+► 7.30.2026: Client/DGS Hotfix - 12344265
+Client portion of the Hotfix with several client side stability and gameplay fixes is now on LIVE.
+Fixes include:
+- Potential fix for gear freshly equipped appearing black in equipped slots, looting screen have items appear black always.
+- Potential fix for ore deposit kiosk at Klescher Rehabilitation Facility returning a "Transaction Failed" message.
+- Potential fix for inventories being replaced with Wikelo or Fire Extinguishers
+- Potential fix for ship disappearing when landing / leaving the Levski hangar
+► 7.28.2026: Client/DGS Hotfix - 12326004
+Client portion of the Hotfix with several client side stability fixes is now on LIVE.
+We are currently testing some server hotfixes on select shards on LIVE with potential fixes for crash recovery acting incorrectly, 64010 (and similar) disconnect errors, and further server stability.
+► 7.24.2026: Client/DGS Hotfix now on the LIVE channel - 12302499
+We have added a new addition to the HOTFIX below on the hotfix channel. This client side update has fixes in testing to address players losing the ability to be controlled by mouse movement inputs and cannot interact with anything upon loading into PU. If your account is in this current state where you can join the PU but not interact or move, let us know here if this helped!
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-212814
+► 7.22.2026: Client/DGS Hotfix channel open and DGS canaried - 12286454
+We are currently putting together a new Client/Server hotfix for 4.9  LIVE with further docking fixes, docked ship commodity selling, minimap route display fixes, and multiple stability updates.
+The DGS side is currently canaried out to a large number of servers and will replace old servers as they go down and new ones spin up.
+Client Side
+- Fixes for multiple of the top client crashes
+- Potential fix for players being unable to Buy/Sell Commodities with Docked Ships via the Cargo Deck. Default deliveries to go to the player's local inventory from the commodity screen if no valid inventory is specified.
+- Potential fix for Minimap not displaying set local routes
+- Potential fix for Initiating another docking request during a docking procedure detaching the command module but will still have full control of the host vehicle
+Server Side
+- Fixed 3 of the top server side crashes
+- Potential fix for cargo services not responding to hails, making players unable to request a cargo loading zone
+- (Requires DGS+Client Hotfix) Potential fix for crafted items stats not always displaying in the Item's description while inside an Inventory space
+► 7.21.2026: Downtime Hotfix Update - 12269732
+Today's downtime hotfix includes multiple stability, gameplay, and exploit fixes along with the previous server hotfixes tested over the weekend.
+- Fixed 2 Client Crashes
+- Fixed 6 Server Crashes
+- Fix for party member names and distance not displaying on party HUD markers
+- Fix for players being able to stow active plasma grenades to armor (this will now brick the grenade if attempting to stow when activated)
+- Fixes for Nine Tails AI across all mission types spawning without armor or weapons
+- Fix to update loading screen splash art missing when loading into Nyx or Pyro from the main menu
+- Potential fix for players losing all ship control inputs after being granted the IFCS control token during net initialization, with no way to regain control without exiting and re-entering the seat
+- Potential Fix for players in personal hangars occasionally seeing geometry or ships from an adjacent overlapping hangar instance
+► 7.17.2026: Server Side Canary - 12258450
+We are currently testing server side hotfixes for the top 4 DGS crashes as well as a potential fix for overlapping hangars in the PU. This will be tested over the weekend on a few select shards to validate before spreading to more servers.
+► 7.16.2026: 4.9 HOTFIX channel open for testing the client portion of 12248363
+We are currently building a new 4.9 HOTFIX to address the top 5 client crashes, multiple issues with loading screens displaying, hitmarker feedback, VR fixes, Wave Scan faction of the player showing “Unavailable”, drag and drop for ammo magazines and consumables/throwables not working, as well as multiple exploit fixes.
+We did some work on the 19003 issue that some players were getting to resolve this issue on LIVE
+## Using the HOTFIX channel
+The HOTFIX channel will become available for periods of time when the client-side of the game needs the hotfix. This channel will point to the LIVE environment and using this will retain and add progress to your LIVE account as if you were playing normally.
+The best way to play on the HOTFIX channel, when one is available, is to rename your LIVE folder to HOTFIX and verify using the HOTFIX channel on the launcher. Reverse this process to go back to LIVE once it is released or you would like to stop using this channel.

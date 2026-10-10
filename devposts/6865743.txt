@@ -1,0 +1,85 @@
+## Star Citizen Alpha Patch 3.23.1
+Alpha Patch 3.23.1 has now been released onto the LIVE Environment!  Patch should now show: VERSION 3.23.1-LIVE.9179031.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 3.23 comes with a full aUEC wipe for all accounts. Players will start with their base amount from their account ledger + the 20,000 starting aUEC.
+This Spectrum post is an abridged version of the notes. For the full major details, please visit the main notes at the link below!
+Full 3.23.1 Release Notes: https://robertsspaceindustries.com/comm-link/Patch-Notes/19974-Star-Citizen-Alpha-3231
+## Features & Gameplay
+3.23.1 brings in the 2954 Invictus Launch Week with expo halls showing off and renting out new and old ships from May 17th through May 29th.
+For more information on the event, check out the comm-link post here: https://robertsspaceindustries.com/comm-link/transmission/19914-Invictus-Launch-Week-2954-Schedule
+AI
+- Ship AI Pilot Balance Pass
+- NPC Locomotion Polish
+Gameplay
+- Medical Bed Respawn Update
+Ships & Vehicles
+- AEGIS Saber Raven Gold Standard
+Core Tech
+- Made Further Gamewide Client Performance Optimizations
+- Interior Map Materials Optimization
+- Water Caustics Visual Polish
+- Added Character Creator Validations
+- VFX Visual Improvements and Fixes
+## Bug Fixes
+- Fixed - PU - Stanton - UI - Oversized active Armistice Zone icon (STARC-108910)
+- Fixed - PU - Stanton - Actor - Respawning - Players who die and then get disconnected before respawning become stuck in a dead state and are unable to respawn
+- Fixed - PU - Stanton - UGF - Locations - Bunker elevator does not return up when called (STARC-111250)
+- Fixed - Multivehicle - PU - Vehicles / UI - QT effects are breaking HUD UI (STARC-104656)
+- Fixed - PU - Gamewide - Using a medpen causes you to drop your weapon
+- Fixed - PU - Distribution Centres - Elevators - Several elevator transit carriages created & destroyed immediately
+- Fixed - MULTIVEHICLE - PU - Vehicles / Components / Locations - It is possible when vehicles are spawned from fleet manager that radar components and elevator panels can detach from the ship and float permanently in a hangar, causing issues with collisions (STARC-101070)
+- Fixed - ARGO Mole / ROC - PU - Vehicle / UI - Vehicle HUD - Mining Mode UI has a variety of defects obstructing gameplay (STARC-88859)
+- Fixed - Drake Cutlass Black - Vehicles - Drake Cutlass Black is unable to liftoff from landing pads
+- Fixed - PU - Fleet Week 2024 - Actor / UI - Physical Shopping - Physical shopping AR Card is flickering when approached, impacting functionality
+- Fixed - Aegis Reclaimer - ALL VARIANTS - Ships / Salvage / Master Mode / UI - Players are unable to access claw in the copilot seat and the UI changes to QT / NAV master mode without any feedback to the copilot (STARC-111581)
+- Fixed - Anvil Hornet - ALL Variants - PU - Vehicles - Flight controllers have pitch and yaw rotational max speeds reversed
+- Fixed - PU - Stanton - ARC L4 - Locations - Lobby elevators cannot be called (STARC-109845)
+- Fixed - Community Localization - PU - Character Customizer / UI - Some labels cannot be localized (STARC-110101)
+- Fixed - PU - Law / Infractions / Notifications - Players cannot press charges against another player if they commit infractions against them
+- Fixed - PU - Stanton - Locations / Inventory - Users are able to place Hangar flare items in public areas where they cannot be picked back up
+- Fixed - MISC Prospector - PU/AC - Vehicles/Balance - Misc Prospector has invulnerable spot for its nose leading to no damage taken (STARC-109000)
+- Fixed - PU - Stanton - microTech - Creatures / AI - Kopion are jittering and teleporting when running
+- Fixed - PU - UI / Upscaling - Shopping Kiosk UI missing elements when Upscaling is enabled
+- Fixed - PU - Stanton - Mission Content / Law - Trespass timer will go to negative numbers (STARC-95347)
+- Fixed - PU - Option Menu - UI - "Water - Number of Simulated Regions" going back to Medium between sessions (STARC-104172)
+- Fixed - Origin 400i - PU - Vehicles - Life Support / Room System - Two room volumes are missing in the technical deck causing players to suffocate in the 400i (STARC-106700)
+- Fixed - Stanton - PU - mobiGlas / Visor Chat - Visor Chat messages remains visible over the mobiGlas
+- Fixed - PU - Physical Shopping - Locations - Multiple Locations - Items on display at multiple shops will end in 'Transaction Error' when attempting to quick buy
+- Fixed - PU - Stanton - Mission Content / UI / mobiGlas - Completing a contract while the mobiGlas is open on the contract does not open the specific contract in the History tab
+- Fixed - PU - Runtime Cubemaps - Graphics / Lighting - Runtime cubemaps are taking an excessively long time refresh and / or not refreshing at all
+- Fixed - PU - Stanton - Distribution Centers (DC) - Locations / AI - The worker NPCs sometimes use tractor beams to shoot at the player
+- Fixed - PU - Actor - EVA - Depending on orientation, player places weapon through their head and neck when ADS
+- Fixed - RSI Ursa - PU - Vehicles / Design - Cannot enter Remote Turret
+- Fixed - Greycat ROC - Stanton - ROC Mining Laser Not Activating
+- Fixed - Crosshair not showing on GRIN_ROC
+- Fixed - PU - Character Customizer - Clicking the Character Customizer screen after reviewing your model and going back to it will show T-Posed models
+- Fixed - AC - UI / Scoreboard - The Grav Race mode does not show or update player score
+- Fixed - AC - Free Flight - UI - It is possible to select ground Vehicles for AC Free Flight mode, which can cause UI problems once in game lobby
+## Technical Updates
+- Fixed 8 Client Crashes
+- Fixed 6 Server Crashes
+- Fixed an Out of Memory Crash
+- Fixed 2 Vulkan+Upscaling GPU Crashes
+- Made Further Entity Graph Stability Improvements
+## Known Issues & Information
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - UGF - Locations - Bunker elevator does not return up when called
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals for ground vehicles at Lorville gates get stuck on infinite load, accessing list of ships
+- PU - Stanton - UI - HUD / AR Markers - Misaligned HUD Markers with Ultrawide or TSR graphics upscaling enabled
+- PU - Gamewide - Using a medpen causes you to drop your weapon
+- PU - Locations - Transit - Elevators - Internal Transit Elevator shows up when called but doors remain closed, no carriage
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Locations / Vehicles / VMS - Can't repair/refuel/restock at Pyro Gateway Jump Point Station
+- PU - Locations - Distribution Centers - Security Checkpoint elevator vis area and missing collision
+- PU - Stanton - NPE - Missions - Objectives can be softlocked by player leaving bed before their objective record has updated
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - RSI Scorpius Antares - Vehicles/EMP - unable to activate EMP
+- PU - Multivehicle - Vehicles / UI - QT effects are breaking HUD UI
+- Reclaimer Claw Cannot Deploy: Power Required Error Message (Workaround: Press the power button a second time)
+- AC - Squadron Battle - Friendlies showing up as enemies
+- AC - Grav Race - All Maps - Low gravity can launch players far above the track when hitting bumps or hills

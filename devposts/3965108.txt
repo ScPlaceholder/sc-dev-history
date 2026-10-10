@@ -1,0 +1,62 @@
+## Feature Updates
+Characters
+- Character Customization
+Updated the character customization options with new eye color choices.
+Locations
+- Caves Entrances - Drive-in & Sinkhole
+Adding two new cave entrances to the PU. The ‘drive-in' entrance will allow players to enter using a ground vehicle, while the ‘sinkhole' entrance will require players to enter and exit using a ship. These new entrances will replace some of the existing cave entrances as well as adding additional caves onto planets and moons.
+- New Asteroids
+Replacements for the asteroids currently used in the Stanton system using the new organic asset workflow. These new astroids can currently be found scattered around Lagrange points.
+- Refinery Station Non-Commercial Room Overlays
+Introducing new non-commercial overlays to the entry areas of refinery stations to add more variety and better suit the theme.
+- Stanton System Polish
+Visual improvements for all of the Stanton system which includes updating assets, object presets, planet painting, and the global data of all planetary bodies.
+- Degnous Root Harvestable
+Addition of the harvestable Degnous root which is a macroalgae found in the shallow coastlines of Hurston.
+Gameplay
+- Force Reactions T2
+Updates to the Force Reactions system to add staggers based on the severity and direction of the received force. The distance and duration of a stagger increases relative to the received force until the force is great enough to trigger a knock down instead. When staggering into a wall without a weapon, the character will raise their hands, or shoulder (depending on direction vs. surface) to momentarily brace / halt themselves. G-force blackouts are now experienced by actors attached to something in the ship interior (usables, ladders, operator seats, weapon mounts etc.) and actors in prone front or prone back.
+- Shields v2
+Implementing improvements including the use of particles with signed distance fields (SDF) to allow shields to more closely conform to the shape of the hull of the vehicle, providing better visibility at distance, creating clearer visual cues that the shield is being damaged, and its overall health. While SDF shields are designed to protect the hull and main parts of the ship, they may not extend to cover attached items beyond the hull such as weapons that stick out farther than the shields' reach.
+- Mining Components
+Mining sub-components will allow players to customize their lasers to suit specific jobs and encounters. For example, some will make mining easier, some will make it faster, and some will have great stat boosts at the cost of serious trade-offs elsewhere. These can be purchased in-game at shops on refinery decks.
+- Law System Improvements
+Several improvements have been made to the law system. All players aboard a ship will now receive a proxy crime when one player commits a criminal act. There is now an option to hide notifications and criminal rating updates. The “Unmonitored” bounty marker now updates when the bounty spends UEC, when the bounty's mobiGlas remains in use for a period of time, when the bounty destroys a ship, when the bounty kills a player or AI, and when the bounty dies without being arrested.
+- Quantum Sensitive Cargo Delivery Missions
+Addition of local delivery missions that have quantum sensitive cargo which will explode and damage ships if taken into quantum.
+- Timed Multi-Drop Delivery Missions
+Addition of missions with time sensitive cargo in which players are expected to deliver multiple packages each with slightly varied timers meaning players will have to prioritize which box to drop off first.
+- FPS Missions to Caves
+We have added 3 new mission types aimed at FPS combat inside cave s which introduces more NPCs into caves and FPS mission reputation.
+FPS Cave Assassination: The player must navigate their way to a cave and find a civilian target. The player must kill them when they find them. If the player is in a monitored zone this target will count as a murder victim. This mission will become available to players upon completing one Vaughn Assassination mission.
+FPS Cave Bounty: The player must navigate their way to a cave and find a criminal target. The target is protected by armed guards who will attempt to kill the player on sight. This mission will become available upon completing the Crusader Bounty introduction mission for missions around Stanton 2 and available upon completing the Hurston Bounty introduction mission around Stanton 1.
+FPS Cave ClearAll: The player must navigate their way to a cave and kill all the criminals they find there. This mission will become available upon completing the Crusader Bounty introduction mission for missions around Stanton 2 and available upon completing the Hurston Bounty introduction mission around Stanton 1.
+- Updated Bounty Missions
+Bounty Missions have been updated so that are more equally spread about the available mission locations.
+- Updated Mission Descriptions
+Updated several mission descriptions to provide more specific location information.
+- Griefing Prevention
+Updated the law system to prevent griefing where players position themselves over a ship taking off or under a vehicle landing.
+- Turret Accuracy
+Increased the accuracy of all AI S6 & S10 turrets around rest stops and space stations.
+Ships and Vehicles
+- Aegis Gladius Visual Updates
+We have made many changes to updates to increase the visual standards of the Aegis Gladius. This includes many level of detail, decal, geometry, material, and paint changes inside the cockpit and on the exterior of the ship.
+- Increased Terrapin Base Health
+- Smoothed Ramp Collision
+Smoothed the ramp collision proxies for ships to help improve the experience of interacting with pushables and vehicles aboard them.
+- Turret Clipping Fixes
+Removed access to Carrack and MOLE turrets when landing gear deployed/landed to prevent clipping issues.
+- Esperia Prowler Pricing
+Increased in-game price of the Esperia Prowler to be more in line with ships of a similar role and size.
+- Vehicles Added to Shops
+Crusader Mercury Star Runner, Esperia Talon, Esperia Talon Shrike, and CO Nomad have been added to in-game shops.
+Weapons and Items
+- Equipable MedPen
+Replaces the previous functionality of immediately using a FPS consumable (to heal or oxygenate). Medical Pens are equipped by pressing the consume action (C key), or by interacting with a pen and selecting the “Equip” interaction, or when selecting a pen from the FPS Consumable Quick Select Wheel. Pen use on self is triggered by clicking mouse1 (left mouse button), after which the pen is automatically discarded (dropped). FPS Consumable Quick Select Wheel can be opened by holding the C key. Medical Pens can be holstered (re-attached to the suit attachment) by holding R, or by selecting the holster action from the FPS Consumable Quick Select Wheel. Medical Pens can now be interacted with in the same manner as other equippable carryables (e.g. grenades, weapons etc.) via the interaction system, and can be carried, equipped, inspected and stowed.
+- Added Drake Buccaneer Spinal Mount Turret to In-Game Shops / AC Rental
+Core Tech
+- Tobii Eye Tracker Improvements
+Added new profile options for the Tobii Eye Tracker to differentiate between flight and on-foot.
+- User Folder Location Change
+With this update, the USER folder structure has changed a slight amount. This adds a couple of extra layers of subfolders inside the original USER folder compared to previous releases. User folder location change: -install-\USER\Client\0\

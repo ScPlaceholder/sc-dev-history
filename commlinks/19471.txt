@@ -1,0 +1,168 @@
+Alpha 3.18 & 3.19
+Post Mortem
+## Persistent Entity Streaming
+## What Went Well
+The development of Persistent Entity Streaming (PES) involved a diverse strike team of programmers with specialized skills from multiple areas across the Core Tech group and Turbulent. This collaboration was crucial in successfully building this complex system. The strike team followed aligned sprints and goals facilitated by senior engineers and producers that were supported by regular meetings. This resulted in effective communication and minimized miscommunication or technical misunderstandings.
+A high-code-quality bar was maintained by the strike team, who ensured it underwent thorough design, discussion, and multiple reviews before being integrated into the mainline codebase.
+The initial deployment to the Public Test Universe (PTU) and testing with the PTU community went well, setting a positive foundation for further improvements. However, this led to issues (discussed below).
+Finally, PES’ system architecture and API, which are based on durable queues, proved they can recover from the worst kind of problems safely and will always tend towards recovery.
+## What Didn't Go Well
+The research-and-development aspects of PES posed challenges, requiring the engineers to invent ways around unforeseen problems. Due to the foundational nature of PES, integrating it into the Star Citizen game code resulted in significant changes that disrupted the game at a very low level, and some game teams were unprepared for the integration effort required to bring the game systems back to parity or to convert and leverage the new persistence layer for existing features.
+Issues with the changes introduced by PES only became apparent during large-scale use and under heavy player load, which caused delays in identifying and resolving the problems. And features not thought to use persistence at all became affected by trivial delays (like tram systems, spawn queues, and others).
+We also underestimated the multiplication factor between the PTU and Live operations; the group had estimated a 10x increase in backend activity but were faced with a 20x+ increase in requests, stream message sizes, and overall activity, which caused service outages across the board during the initial launch.
+Regarding vehicles, PES heavily modified the way they are entitled and created in-game. This gives a better user experience (where you can choose where a ship ends up being created) but also significantly reduced the size of the inventory/global database for ships that are never used.
+Major issues were also discovered at scale with a third-party database engine that PES leverages for its functionality. These issues gave birth to very unstable request/response cycles as well as heavy queuing. These issues also caused ripple effects where one database server entering a deadlock condition would cause the entire shard cluster (instead of a single shard) to stop processing requests for a period. This was a major cause of the instability throughout Alpha 3.18.x until the team had identified and programmed a workaround to alleviate the effects. Additionally, multiple locking problems at scale were discovered in the global database system (same engine) that would cause a periodic stop of all requests to the inventory systems. The team had to investigate and report to our vendors to determine workarounds and ultimately fixes that would prevent the database engine from locking.
+In the engine, several shards reached previously unknown hard limits of the maximum number of allocated entities, forcing the teams to seed/create new shards and cycle them out, diluting the effect of persistence on those shards.
+Several bugs were uncovered (in those unstable times) with error handling in parts of the login flow that bricked some accounts in different ways related to character creation. Server-crash handling was discovered to take a much longer amount of time due to a new process that kicks in during the post-mortem analysis. This affected the shard post-mortem and delayed players getting stowed back to the global inventory, which could result in a player character being “stuck” in a shard.
+## What We’ll Do Better/Future Plans
+Going forward, we’ll finalize and use the new Cloud Test Launcher to adequately stress test the game shards at scale. This tool will simulate player behaviors and allow QA and the engineers to connect multiple modified game clients to the shard. By utilizing cloud computing resources, effective stress testing can be conducted, which will help identify and address issues relating to heavily loaded servers before moving to Live.
+The team responsible for PES has now moved onto Static Server Meshing and are embracing a transformation approach to the new project. Unlike PES, this foundational technology can be integrated into the codebase gradually, avoiding a disruptive "Big Bang" approach. Parts of the Server Meshing tech are already available to the game team for testing compatibility with their game features. Combined with the Cloud Test Launcher, this approach aims to facilitate a smoother integration process for Static Server Meshing.
+By implementing these measures, we aim to enhance our testing capabilities and mitigate integration challenges, ensuring smoother delivery of foundational technologies while minimizing disruption to the game.
+## Rivers
+## What Went Well
+The inclusion of rivers marked a significant milestone in our quest to create more realistic and immersive planets. We were quite happy with the improvements to river canyons we were able to achieve between Alpha 3.18 and 3.19 due to improvements in our asset pipeline. And the support from the Planet Tech team to address technical issues during this process was remarkable.
+## What Didn’t Go Well
+The procedural river placement tool was not in as good of a state as we had hoped when we started using it. As a consequence, a considerable amount of manual effort was required to meticulously place and verify the resulting rivers to ensure their optimal quality. Moreover, this limitation also led to a decrease in the number of rivers we were able to generate.
+## What We’ll Do Better/Future Plans
+The numerous issues that were successfully identified and addressed during this initial run of rivers have already made a significant impact toward ensuring a smoother experience for next time. Although there is still considerable work ahead before we can consistently create planetary landscapes with rivers that look and feel like the real deal, we have made substantial progress and are now much closer to achieving our goal than ever before.
+## Sand Caves
+## What Went Well
+We were very happy with the results of this initial push to develop an improved pipeline to produce individual rooms for all cave archetypes and to also define the visual identity of our sand caves. That we were able to release a first set of smaller cave systems out of that prototyping phase thanks to the concerted effort from multiple departments was the icing on the cake for us.
+## What Didn’t Go Well
+With neither the tools for procedurally assembling locations nor automatically placing them on planets ready for use, we had to build and place every cave manually, which was the primary constraint on the number of caves we could place on planets in the Stanton system.
+Unfortunately, these caves had to initially be released without missions, making them into locations the player actively needed to seek out to experience.
+## What We’ll Do Better/Future Plans
+We are currently in the final stages of refining the new visuals for rock caves, which will serve as the next archetype. We are looking forward to utilizing the Location Tool to construct a wider variety of cave systems.
+Additionally, we will be working towards support for bigger connections, rooms, and entrances, which is a key requirement before we can replace the old caves.
+## PTV Racetrack
+## What Went Well
+It was created very quickly; we went into it with the idea that it was a simple location with a short timeframe and minimal impact on other teams. However, we achieved a lot more in three weeks than we were initially expecting, with a good modular kit for kart-style racetracks, and the addition of good dressing, theming, and lighting. It was really good to see how the community, especially the racing community, was excited when the track was initially shown to the public. We have since seen organized races on the track. We also got code support for upgrades to the respawning vehicle entity so if people were to crash, break, or abandon the Greycat PTV, it would respawn back at the starting area of the track. We can also set the values of things like time to respawn.
+## What Didn’t Go Well
+Despite finishing the track before Alpha 3.17 was released, it had yet to have a QA pass and be bug-fixed, so we decided to hold it back until Alpha 3.18. Little did we know Alpha 3.18 was going to be delayed so much, so the track, even though complete, made it into the public’s hands a long time after we had hoped.
+## What We’ll Do Better/Future Plans
+We will certainly develop more modular tracks in the future (and have another in the works), but it is on the back burner for the moment. We will try and support other similar-sized ground vehicles like the Greycat STV in the future as well (initial tests have been positive). We will also work with the Mission team to look into adding a racetrack-style mission to the tracks, which will allow the tracking of race times, checkpoints, and laps, and enable the mission to give rewards to players.
+## Security Post Kareah
+﻿
+## What Went Well
+We could never have imagined the level of support we received from the Art team, which really rejuvenated the location.
+The player-triggered sandbox activity was well received, and analytics showed that hacking CrimeStats at Kareah is still very popular, which was a concern for us as we were taking a risk removing the other hacking locations.
+## What Didn't Go Well
+The mission still has rough edges that need ironing out, which is in progress. Also, additional analytics needs on sandbox activities were identified to be able to further understand player participation.
+## What We’ll Do Better/Future Plans
+We’ll continue to iterate on the sandbox activity and location based on the feedback we’ve received and add further analytics to better understand participation.
+## Jumptown
+## What Went Well
+The changes to the location were very well received, player participation was consistently very high, and the support we received from Art was well beyond what we expected.
+## What Didn’t Go Well
+The implementation of PES led to performance issues around the location after a lot of ships were destroyed. We also wanted to redrop the locations with RASTAR. However, we were unable to at the time due to it breaking the shops.
+## What We’ll Do Better/Future Plans
+For the next run of Global Events, we’re planning to redrop the locations on different planets to give different gameplay. For example, in thick atmosphere, higher gravity planets, and forests.
+## Time Trials
+## What Went Well
+The new racing content and time trial modes were well received by the racing community, helped by the Content teams who produced many more tracks than we could have hoped for.
+In the backend, the analytics we added were fantastic and allowed us to make very in-depth analyses of each track, which helped determine where they should go on the difficulty ranking and what the target times should be.
+## What Didn’t Go Well
+Poor server performance meant that a sophisticated new system of checkpoint tracking had to be created, though the markers still do not update as responsively as we would like.
+Analytics also show that relatively few players actually unlock the second track.
+## Infiltrate Missions - Orison
+## What Went Well
+The new FPS environments were well-received and a refreshing change after only having underground facilities for years. The ability to assault the locations on foot or in ships was great too.
+## What Didn’t Go Well
+We had to turn the missions off for Alpha 3.19 because we were aiming to release Siege of Orison, but we were not able to achieve this or the new platform clusters (where we were to relocate them) in time.
+## What We’ll Do Better/Future Plans
+We have relocated the missions to the new platform clusters and will be releasing them when possible.
+## Prison Activities
+## What Went Well
+The Prison Escape mission is surprisingly well-played and offers a new way for players to clear their CrimeStats. Inside the prison, loot on the AI and new selling terminals were well received; players felt the new AI made the prison feel more alive and it gave them another way to earn merits.
+## What Didn’t Go Well
+The Ursa Rover continues to spawn underground, selling items at the prison kiosk still isn’t reliable, and excessive AI are being spawned due to a spawn closet issue.
+## What We’ll Do Better/Future Plans
+For the next release, we’ll fix any bugs we can, including the Ursa spawning issue.
+## Drake Vulture
+## What Went Well
+Adding the long-awaited “starter” of the Salvage career alongside its gameplay loop was a great milestone for the Vehicle team. While the vehicle was started some time ago, we had held on to it to ensure it released strongly with the gameplay loop rather than without, and this allowed the team to squeeze in some more features to the ship to make sure it hit all the current standards.
+## What Didn't Go Well
+A few complaints surrounding the traversal of the ship due to the gameplay mechanics were somewhat a product of the Salvage mechanic evolving over time to require more manual input than initially expected during the vehicle’s concept in 2018.
+## What We’ll Do Better/Future Plans
+Releasing vehicles alongside their gameplay loops rather than earlier in the project (see Starfarer and Reclaimer) is something we’ve been striving to do in recent times, and we’ll continue aiming to do this.
+## RSI Scorpius Antares
+## What Went Well
+The Antares was designed alongside the base Scorpius as an optional variant to put into production in the future, with the tail section of the ship outlined as the part that could be geometry-swapped. However, during development, it was clear the needs of the EMP and quantum drive required slightly more power than planned and the team reacted well to adjust both the base and Antares to allow the component layout to suit both.
+## What Didn't Go Well
+There were a few technical issues that we weren’t able to solve that reduced the ability for the second player to have more control over pilot features and a more enhanced MFD setup.
+## What We’ll Do Better/Future Plans
+With Master Modes and new MFDs coming in the future, we should see the copilot get more gameplay features rather than being half passenger, half button-presser.
+## Salvage & Cargo - Vehicle Gameplay
+## What Went Well
+We were able to support both Feature teams' introduction two key features to the PU, with Salvage requiring a lot of time be spent on the art assets and Cargo requiring a pass across all ships by Design.
+## What Didn't Go Well
+Unfortunately, the scope of the work for Salvage was drastically underestimated, as we thought the existing UV2 damage system all ships used would be suitable out of the box. However, we very quickly realized we’d have to do an entire pass on every ship to up the quality, as you were looking at the visuals much closer than the damage system.
+In addition, the gameplay mechanic was built around the idea that you’d be able to 100% scrape the entire hull. However, this wasn’t a consideration in the UV2 damage setup, so some areas were inaccessible, causing frustration to early testers who couldn’t “100%” a ship.
+## What We’ll Do Better/Future Plans
+We’re now more closely integrated with the teams working on big features like this so issues can be found and investigated before development properly starts, rather than being looped in once the prototype has been completed.
+## Hull Scraping
+## What Went Well
+The long-awaited first iteration of Salvage gameplay finally arrived with Alpha 3.18, which enables players to scrape off hull material and either trade it or use it for field repairs. The core gameplay loop was generally well received and provided a great contrast to other activities.
+We also expanded the harvestable system with ship-wrecks and salvageable metal pieces, and introduced the first miniature version of Crafting by allowing players to create a few select items using RMC.
+Releasing Hull Scraping alongside the Drake Vulture meant that the ship could come out with a proper gameplay system, and the Aegis Reclaimer finally has appropriate gameplay available to it.
+## What Didn’t Go Well
+A lot of features and systems Hull Scraping was relying on were still in active development when we were building the core gameplay system. This meant the feature was handed off to the EUPU team with a fairly compressed timeline for release.
+We addressed the way players would find salvageable objects in the universe way too late in the process, and the balance work for salvageable-object distribution was not properly mapped out.
+Not all vehicles could be upgraded to the new Damage Map, meaning some vehicles still won’t work correctly with Hull Scraping.
+## What We’ll Do Better/Future Plans
+We’ve changed our approach to how early we get other teams involved, meaning that downstream teams get involved as early as the prototyping stage. We’ve also introduced additional milestones where downstream and content teams can review and approve the progress we’ve made before we move on to the next stage.
+## Alpha 3.19
+## Salvage Contracts
+## What Went Well
+We’re very proud of what we achieved; initially, we had only expected to release with Hull Scraping, but were able to get cargo and the brand-new detachable-components feature included. The mission was well received by backers too.
+## What Didn't Go Well
+We didn’t choose the best ships for the mission, as only some have detachable internal components and gold-standard hulls for scraping (which we only found out after the fact). And, due to developer illness, the first release saw a very rough pass of cargo spawning, meaning there was no time to properly balance or verify that all items could be sold.
+The Economy team had to change the value of ship weapons very late into development. This was necessary to balance the problematic insurance issue, which needs a further rebalance. The change meant some backers were disappointed having gotten used to higher rewards.
+## What We’ll Do Better/Future Plans
+For the next release, we’ll choose more appropriate ships with detachable internal components.
+## New Player Experience
+## What Went Well
+We received a lot of positive feedback from new players that the New Player Experience has helped them learn the game. The visual upgrades to Area 18 have greatly improved navigation, alongside new control and contextual hints.
+Throughout the development of NPE, we’ve been able to make many improvements to our mission system, such as the introduction of mission persistence, which allows us to resume a mission at the last active objective if a player loses connection or experiences a client crash.
+## What Didn’t Go Well
+The mission is largely modular but not entirely so, which means more work is needed to bring it to other locations. We didn’t have sufficient time or support to teach the player inventory management or interacting with shops.
+In terms of the production itself, New Player Experience was a cross-team initiative and as such, was complicated to coordinate. Production support for New Player Experience changed a few times as it wasn’t owned by a dedicated team.
+Additionally, we didn’t have sufficient support to remedy the visual issues with the existing HUD elements clashing with the new Control and Contextual Hints.
+## What We'll Do Better/Future Plans
+We’ve started work on modularizing the remaining parts of the New Player Experience to reduce maintenance and allow us to bring it to multiple locations. We will also introduce additional components to NPE, such as inventory management, shopping and more.
+## RSI Lynx
+## What Went Well
+The Lynx started off as a very simplistic adjustment of the Ursa but, as we progressed, we felt it deserved more. So, it ended up with virtually all-new geometry and materials, which paid off as the vehicle now looks the part and sits well with the Constellation Phoenix.
+We also managed to cram a huge amount of interactive content within the vehicle, including animated chairs, TVs, lockers, and fridges.
+## What Didn't Go Well
+Increasing the scope of work for the vehicle (primarily redoing the entire cockpit area) resulted in the Vehicle team working longer than expected, leaving less time for other teams, such as VFX and Audio, to do their work.
+## What We’ll Do Better/Future Plans
+Next time, we’ll ensure scope adjustments are discussed with all teams and that they’re not unnecessarily waiting for all aspects to be delivered to start their pass.
+## Mirai Fury & Fury MX
+## What Went Well
+Despite its size, the Fury series is one of the most complex vehicles we’ve ever put in the game, requiring complex animations and state machines all compressed into a very small spaceframe. It was also delivered ahead of schedule, as we were so excited by the vehicle we actually started production before the concept pass was officially complete.
+Vehicle Features made a pass on the gimballed thrusters to make them work as we had envisioned. This means the Khartu-al and San’tok.yai will benefit from this in the future.
+The MX’s blast shield was our first proper foray into integrating custom Building Blocks UI into the vehicle pipeline rather than reusing other assets, such as door control panels.
+## What Didn't Go Well
+Some of the tech we needed for the thruster rotations took a few attempts to iron out, and we accidentally caused other issues with thrusters on other ships, but all was solved before release.
+The MX was originally intended to have generic missile racks but it was clear early on they needed to be bespoke to prevent them from launching into the body or wings when changed for alternatives. This sadly reduces player customization but ultimately makes it more reliable in use.
+## What We’ll Do Better/Future Plans
+We’re pretty happy with how the Fury and Fury MX turned out and no specific things occurred with their development that need adjustment in the future.
+## Tractor Beam - Item Attach/Detach
+## What Went Well
+Finally, players are able to loot vehicles for components and weapons, greatly expanding the Salvage gameplay loop. This feature also provides additional gameplay opportunities to other features, such as allowing players to swap out mining heads and modules, and provides a strong foundation for the Vehicle Tractor Beam feature.
+Internally, the Vehicle Content team were very responsive to addressing content issues with existing components and weapons.
+## What Didn’t Go Well
+This feature wasn’t originally scheduled for Alpha 3.19, so we had a compressed timeline to work with. The QATR for this feature also revealed a lot of issues with content that couldn’t all be resolved in time for release.
+## What We’ll Do Better/Future Plans
+We’ve started requesting downstream support much earlier in the process so that necessary content changes can be done in anticipation of the feature getting ready, as opposed to doing the handover toward the tail end of development.
+## Mining Rebalance
+## What Went Well
+The community reception has been fantastic and we’re very happy with how the release panned out; long-standing metas and balance issues have been resolved and mining is now a much more nuanced gameplay loop that allows for multiple strategies.
+Changes to tractor beams greatly benefited the Mining gameplay loop by enabling the ability to swap out mining heads, modules, and pods. We also identified a better process to balance gameplay loops holistically.
+## What Didn’t Go Well
+There were some issues that we couldn’t properly resolve until after the release, such as mineable rocks always exploding, and the redistribution and rebalance of shop prices required quite a bit of back and forth between various teams before we got it properly implemented.
+A lot of issues and edge cases with pricing and distribution were revealed during testing that needed constant fixing and readjustment.
+## What We’ll Do Better/Future Plans
+We want to continue to improve our communication around mining with the community and keep listening to critical feedback to make mining the best it can be.
+We’ll also put more trust in the data we gather to help inform future design decisions around mining gameplay.

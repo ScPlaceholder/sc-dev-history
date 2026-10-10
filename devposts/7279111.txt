@@ -1,0 +1,11 @@
+Hey,
+we did a lot of display changes in the past months for better performance, profiling and interactivity.
+One of the changes included a waitable swapchain which is no longer compatible with the exclusive fullscreen mode in D3D11.
+Additionally the exclusive fullscreen was never supported in vulkan and never meant to and it will fully replace D3D in the near future.
+The exclusive fullscreen mode is just cumbersome to support so we decided to drop it since exclusive fullscreen nowaways has no performance penalty on newer window versions (anyone saying differently has no clue what they are talking about).
+Regarding performance: We do have temporal upsampling which should help anyone who played in a lower exlusive fullscreen resolution before.
+DSR: Us Engineers were not aware of this so sorry about that but we're looking actively into it.
+TL/DR: We have heard the complains and we are working on a custom solution right now. A fullscreen mode with custom resolutions will come back in the near future (it will still use borderless mode). DSR should also work with this mode.
+I hope this clears any unknowns.
+Thanks and fly safe o7
+Silvan

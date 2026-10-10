@@ -1,0 +1,77 @@
+## Bug Fixes
+- Players should no longer be able to fall out of the Argo Mole during quantum travel.
+- The mining storage containers beneath the Argo Mole should now have collision.
+- Fixed incorrect animation playing when the female character sprints with a pistol.
+- Melee when using the Animus should now correctly deal damage.
+- Fixed an issue preventing players from getting their intended starting UEC value.
+- Fixed an issue where after a player has rented one ship additional attempts at renting would time out and fail.
+- Fixed an issue where the player would appear offset when entering the Herald's bed.
+- Cargo holds when mining should no longer randomly fluctuate to full or empty their contents occasionally.
+- Players should no longer fall through the planetary surface near landing areas of HDMS Lathan.
+- Shield HUD warnings should now only display when taking damage rather than on startup.
+- PIPs should no longer be affected by head movement.
+- Fixed an issue causing players to get locked in third person camera when using any turret in the Starfarer.
+- Patrol missions should no longer occasionally hang when given a "hold" command.
+- It should no longer be possible for extraction/fracture UI to be switched when mining.
+- The "Call to Arms" mission should no longer be able to be duplicated on the mobiGlas.
+- FPS AI kill sweep missions should now track kills and completely properly.
+- Turret interaction prompts on the Caterpillar should no longer be inverted.
+- Ship outgoing hails should now have UI audio.
+- FPS weapons should now consistently fire when drawn.
+- The Starfarer Gemini should once again have its missile racks.
+- The "Call to Arms" mission should now appear to all players who meet the requirements.
+- Fixed an issue where the Quantum Drive spooling up would sometimes not be heard, particularly on large ships.
+- Fixed the objective timer not ending in during escort missions.
+- The timer for rented ships in the PU should now be consistently displayed on the terminal.
+- Fixed too far away arrival point for quantum travel to New Babbage and Lorville.
+- Regular clothing sounds should no longer be audible while wearing a space suit.
+- The player should no longer occasionally lose the ability to quantum travel to another orbital marker after traveling to one initially.
+- Weapons on the PMA and kiosks should no longer appear heavily out of scale.
+- There should no longer be a fine kiosk at Baijini point that lacks any texturing.
+- Fixed power MFDs displaying the wrong values.
+- Patrol missions should no longer start spawning repeated hostiles when the number of players involved changes.
+- Fixed an issue where the delivery location marker for a Recco delivery was not located on the locker.
+- Recco invite missions should no longer cause multiple markers.
+- The chem run mission issued by Klim should now direct to Grim HEX instead of Levski.
+- The comms MFD should no longer fail to automatically refresh when coming into a new ATC's range.
+- Player arms should no longer flail about when getting on and off of the passenger seat of the Dragonfly.
+- Fixed an issue where ships could be stored at outposts that can't spawn them.
+- Fixed missing rain canopy effects on the Mole.
+- Increased the time available to pickup deliveries for associated missions.
+- Fixed an issue where party chat would refresh every time a player was added or and removed.
+- Fixed overlapping rock scan data on the Mole's turrets.
+- Fixed Eckhart's group bounty mission having the QT marker remain after the target is killed.
+- Fixed an issue where selecting an item you could not afford would cause others to be impossible to buy.
+- The server blade in Clovus' mission should no longer fall through the planet when placed on the ground.
+- Fixed missing audio on the mining arm extension and retraction.
+- Players should no longer occasionally lose all UEC upon relogging.
+- Fixed bugged damage states and shields on the Caterpillar causing it to take no damage.
+- Fixed some rest stops missing CryAstro services.
+- Players should no longer occasionally become unresponsive when transition between EVA and ship or vice versa.
+- Fixed missing audio on Cutlass Landing Gear.
+- Fixed an issue where when attempting to QT, if the player triggered the misalignment warning and then realigned the cursor, the warning alarm would continue to play.
+- Fixed a missing ship computer UI audio trigger for 'Ammo Low'.
+- Fixed missing diegetic music at Casaba outlets in Rest Stops.
+- Audio-driven camera shake should function again.
+- Fixed mobiGlas closing immediately after opening.
+- Party markers should no longer vanish if the player dies far from their respawn point.
+- The game wallet should no longer occasionally freeze and fail to update for an extended period of time, allowing players to set very large UEC service beacons.
+- Escort missions should now proceed correctly.
+- Fix for a bug where other player's footstep sounds would never be triggered if the other player was not in your field of view.
+- Fixed constant fire audio SFX in the left cockpit of the BANU Defender.
+- Fixed missing audio for BANU Defender internal doors and entry ramp.
+- Fixed incorrect/missing audio for Aegis Vanguard rear ramp.
+- Fixed a bug where the Gladius' startup and shutdown audio was very delayed.
+- Fixed a bug where the Gladius startup sound would play for shutdown, and vice versa.
+- Star Marine music will no longer completely cut out when the menu is brought up mid-game.
+- Fixed missing self destruct sound for URSA Rover
+- Fixed missing locker open and close sound on URSA Rover
+- Fixed missing vibration sounds for collisions and landings on the Tumbril Cyclone and the GRIN PTV.
+- Fixed an issue where the Origin 890 Jump ambient audio did not receive ship parameters so was always muffled regardless of the ship's activity level.
+- The non-medical beds in the 890 should now have logout functionality.
+- Fixed an issue where recovery would trigger despite the player pressing "]" to decline.
+- Speculative fix for an issue where the audio engine could get into a state where the player would experience severe audio loss.
+- Fixed an issue where the Glaive and Scythe startup audio could get stuck looping forever.
+Technical
+- Fixed 10 server crashes.
+- Fixed 12 client crashes.

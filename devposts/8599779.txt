@@ -1,0 +1,72 @@
+## Star Citizen Alpha Patch 4.6
+Alpha Patch 4.6 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.6.0-PTU.11063577.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Alliance Aid Event
+- Industrial Mining and Salvage Missions
+- LAMP: Light Amplification System
+- Aurora Gold Standard
+Known Issues
+- PU - Industrial Resource Gathering - Salvage - Ship Weapons / Vehicle Components / Cargo - S6 & S5 Weapons will not fit on Pyro Outpost Freight Elevators
+- PU - Clean Air - Missions / Courier - There are no enemy ships spawning throughout the mission
+- PU - Nyx - Clean Air - Recover Cargo - Missions / UI - Recover cargo mission objectives don't appear after completing the first objective
+- PU - Industrial Missions - Mission Content / Game Code - Multiple Missions are unavailable due to Contract generation errors
+- PU - Stanton - Mission Content / Game Code / UI - Industrial Resource Gathering - Ship Mining - Objectives and HUD marker direct player to Mining Claim instead of Lagrange Points
+- PU - Nyx - Welcome to Nyx - Mission Content / Reputation / mobiGlas - " Vanduul-Tech Smugglers " is not available after getting to the required reputation rank
+- Multi-System - PU - UI / mobiGlas - Selectable elements inside the mobiGlas Tabs have slim areas of deadzone which can make selecting them difficult
+- PU - Nyx - Levski - Locations / Art - The Bottom Deck of Levski is missing a lot of critical assets and collision
+- PU - Nyx - Landing Zone (LZ) - Levski - Art / Locations - Cargo Center/Services - The floor is missing at the entrance to the area and causing AI to become stuck entering/exiting the area
+- PU - Locations / Interactions - All doors requiring fuses cannot be opened after selecting override panel button
+## Features & Gameplay
+Gameplay
+- Alliance Aid: Mission polish and reward balance
+- Increasing signatures for harvestables and mineables by about double the amount
+Ships and Vehicles
+RSI Aurora MK I - Gold Standard
+Updating the Aurora Series to gold standard with new art, audio, physical components, balance, and bugfixes.
+Additional Ship Updates
+- Vanguard Series Flight Performance balance with slight tuning up and down for main, mav, and retro thrusters
+- Updated hud salvage scan result to show "Wreckage"
+- Polaris: Slightly Reduced Cross-Section Signature
+- Origin 100 Series: Updated with correct flight and thruster tuning for their archetype
+Core Tech
+VR Updates
+4.6 Comes with extensive improvements and fixes for VR Implementation
+- Several crash-fixes and better error handling
+- Improved OpenXR error descriptions with clear suggestions for common issues
+- Fixed fog not affecting transparent objects by correctly setting the RT flag
+- Added FPS ADS offset selection for dominant eye
+- Implemented stereo cursor decoupling from head motion
+- Added eye tracking support to control the stereo cursor
+- Added new VR options: Cursor scale, Cursor sensitivity, Cursor decoupling, Mobiglas distance, Depth of field toggle, Eye tracking toggle.
+- Extended mirror mode with left and right eye variants for fill and aspect preserving modes
+- Added mirror mode smoothing zoom and pan controls
+- Added theater mode screen curvature using XR_KHR_composition_layer_cylinder
+- Note cylinder layers are only supported on some runtimes such as Meta and not supported on SteamVR or Pimax. In the future there will be a much more extended Theater Mode which works everywhere with many more options and ambience features
+## Bug Fixes
+Star Citizen Alpha 4.6.0 currently contains over 80 bugfixes for issues occurring in 4.5.0, 28 of which originated from the issue council.
+- Potential Fix: Game settings - Graphics - HDR setting is not saved, reverts to disabled on restart (STARC-188585)
+- Potential Fix: Mirai Fury ( All Variants ) - Vehicles - Vehicle LAMP / UI - All Variants of Mirai Fury is missing the LAMP functionality
+- Potential Fix: PU - Nyx - Levski - Locations - Levski Hangar load in causes players to load into space - hangar misplaced (STARC-193449)
+- Potential Fix: PU - Stanton - Alliance Aid - Escort Ship - Missions - Escort ship does not spawn
+- Potential Fix: RSI Polaris - PU - Vehicles - Player receives damage when climbing the left Cargo Bay ladder
+- Potential Fix: PU - Nyx - Jump point stations - Locations / UI / Starmap - Nyx Gateway Stations are missing in the Starmap in Nyx
+- Potential Fix: PU - Stanton - Locations - Wikelos Emporium Stations - The Collector / Mission Content - Doors to the show floor room are stuck closed with 'Opening Soon' even after completing intro mission
+- Potential Fix: PU - Alliance Aid - Missions / UI - Hauling - The Mission descriptions for Alliance Aid contracts have placeholder text for various commodities
+- Potential Fix: Multi-Location - PU - Stanton - Lighting / Locations - Some Mining Facilities has no lights from the airlocks to inside of the building
+- Potential Fix: PU - Industrial Missions - Salvage / Reputation - The reputation for completing Adagio contracts is rewarded towards Shubin Interstellar faction
+- Potential Fix: PU - Levski - Lighting - Docking ports are dark and have no lighting
+- Potential Fix: PU - Locations / Interactions - All doors requiring fuses cannot be opened after selecting override panel button (STARC-190305)
+- Potential Fix: Multivehicle - PU - Vehicles / Ships VFX Content / Art - Repairing vehicles via Landing Services causes the ship to catch on fire (STARC-186078)
+- Potential Fix: RSI Salvation - PU - Vehicles / Vehicle LAMP / UI - The Vehicle Light Amplification (LAMP) feature is missing
+- Potential Fix: PU - Nyx - Levski - Teach's Ship Shop - Shopping / Location - Some displayed ship weapons are clipping through the rack
+- Potential Fix: PU - Nyx - Levski - Locations / Art - There is a VisArea present on the lobby of Grand Barter
+- Potential Fix: ARGO RAFT - PU - Vehicles / Vehicle Balance / Vehicle Components - The rear right VTOL can be easily broken off due to part having 1 HP (increased to 250hp)
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed a Hybrid-Service Crash

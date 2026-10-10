@@ -1,0 +1,9 @@
+## Hotfix | 1.31.2025 | sc-alpha-4.0.1-9505265-LIVE
+- Client Side
+► Changing shards was causing mission location travel markers to become removed from the player. We have put in a fix to resolve this issue.
+► Weapons on gimbals on gimbals (2x) under pilot were not getting proper weapon grouping and thus not getting a PIP. A fix has put in to help with this.
+► We have put in a change to help with client/server zone mismatching which could cuase many transit/elevator issues. This requires both client/servers to be hotfixed. Please let us know if this reduces or helps with elevators opening to nothing!
+- DGS/Hybrid Side
+► Fixed 1 Server Crash
+► Grim Hex turrets are firing upon players with Crime Stats from other jurisdictions. A fix has been put in as Quantum Travel was not properly handling hostility and not removing it and causing the issue.
+► Mineables in the PU were getting into a state where the render node was getting stuck and not transitioning into an entity. This could take up to an hour for this to unstick itself. We have put in a DGS fix that should aliviate this issue.

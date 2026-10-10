@@ -1,0 +1,72 @@
+## Bug Fixes
+- Fixed an issue causing personal player hangars to overlap with other player's hangars
+- Fixed an issue causing player characters to not fully stow
+- Fixed - Stanton - Locations - Aberdeen - Klescher Rehabilitation Facility - Transit - Players can't leave Klescher because the elevators open to a void instead of sending them to their hab on the surface (STARC-62605)
+- Fixed - PU - Actor - Actor Status - Consumables - Crossing Authority Servers whilst blacked out will cause incapacitation after subsequent actor status changes (STARC-97938)
+- Fixed - PU - Landing Services - Player will have Landing Services available initially but lose access shortly after opening Landing Services app (STARC-146725)
+- Fixed - Multivehicle - Quantum Travel - Nested vehicles are left behind when transitioning authority boundaries during Quantum Travel (STARC-145688)
+- Fixed - PU - Network - Core Tech - Desync - Players can desync and appear as invisible to other players
+- Fixed - Locations / AI - NPCs overspawning gamewide (STARC-146073)
+- Fixed - PU - Stanton - Players encounter "Repositioning Player" message at odd times (STARC-144014)
+- Fixed - PU - Multi-System - Locations / AI - Social AI can be observed jittering while walking (STARC-140822)
+- Fixed - Contracts rewards are giving full amount to every party members (STARC-147433)
+- Fixed - PU - Graphics - UI - Aspect Ratio - Increasing or Decreasing the Aspect Modifier setting does not work (STARC-120930)
+- Fixed - PU - Pyro - UI / Mission Content - Primary Objectives marker for "Hauling" missions does not appear on both the heads-up display (HUD) and starmap
+- Fixed - PU - Stanton - Salvaging / UI / Mission Content - Primary Objectives marker for "Salvaging" missions does not appear on both the heads-up display (HUD) and starmap
+- Fixed - PU - Pyro - Bounty Hunter / UI / Mission Content - Primary Objectives marker for "Bounty Hunter" missions does not appear on both the heads-up display (HUD) and starmap
+- Fixed - PU - Pyro / Stanton - UI / Mission Content - Primary Objectives marker for "Mercenary" missions does not appear on both the heads-up display (HUD) and starmap
+- Fixed - PU - Pyro - UI / Mission Content - Primary Objectives marker for "Local" missions does not appear on both the heads-up display (HUD) and starmap
+- Fixed - PU - Mission Content / UI / Markers - Travel Markers do not re-appear if a player leaves the mission location
+- Fixed - Starmap Faint surface markers, especially on bright side of planets
+- Fixed - Rearming - Rattler II missiles doesn't rearm subcomponents (STARC-93096)
+- Fixed - Multiweapon - PU - Weapon / Interaction - NPC dropped weapons cannot be interacted with sometimes (STARC-146179)
+- Fixed - RSI Polaris ( RSI_Polaris.xml ) - PU - Vehicles - VLM - Occasionally lose Components By Pressing A New Insurance Claim or Repairing A Damaged Polaris (STARC-143962)
+- Fixed - MultiWeapon - PU - Weapons / Actor - Rummage animation is missing, causing player to skip parts of inventory reloading, and preventing repooling of their weapons (STARC-132428)
+- Fixed - PU - Inventory / Persistence - Equipped armor looted from AI disappears when crossing Server Authority Boundaries and between login sessions
+- Fixed - PU – Pyro - Frontier Outpost / Multilocation – AI / Combat AI Feature / Locations – Hostile NPCs are invulnerable to damage
+- Fixed - PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship : TimeOut Fail (STARC-129836)
+- Fixed - PU - Stanton - New Babbage - Locations - New Babbage medium hangar door obstructed (STARC-132481)
+- Fixed - PU - Stanton - Locations - Elevator doesn't move to hangar when your hangar button is pressed (STARC-124127)
+- Fixed - PU - Pyro - Cargo/Hauling - Some Freight Elevators are missing in "First Haul System" mission (STARC-145264)
+- Fixed - Hangar doors don't open at New Babbage (STARC-141528)
+- Fixed - Multivehicle - PU/AC - Vehicles / hit registration - Players with high ping will experience high TTK and phantom hits even after weapon fire has stopped (STARC-145046)
+- Fixed - PU - Locations / Quantum Travel - Pyro V - Orbital Markers above Pyro V may path through the planet, not appearing as "Obstructed", causing critical ship components to be destroyed (STARC-143619)
+- Fixed - PU - MultiSystem - Locations - NPE / Vehicles / Quantum Travel - Some orbital markers around Stanton and Pyro sends player into wrong direction when they QT to them
+- Fixed - Multivehicle - PU - Vehicles/UI - Radar/Ping - Ping Range distances do not show up at all
+- Fixed - PU - GLOBAL - Stanton - Outposts Airlock - Doors on outposts do not open (STARC-144953)
+- Fixed - PU - Actor - Personal Inventory / Storage Access - Loot Boxes / Armor - Items cannot be interacted with after being transferred from local storage to an actor's hand
+- Fixed - PU - Stanton - Distribution Centre - Eliminate All - Mission Content / Game Code - mobiGlas - Location and Starmap Objective Markers do not appear on the HUD or mobiGlas
+- Fixed - PU - Pyro II Monox - Derelict Outpost - Locations / Art / Collision - Derelict Outpost missing collision in section of terrain
+- Fixed - Multivehicle - Pu- Vehicles - Turrets - Unable to target vehicles in turrets
+- Fixed - Mission Refactor - Cargo Hauling missions - After Intro mission is completed, Intro mission is offered again instead of Rank1 missions
+- Fixed - PU - Pyro - Eliminate Specific - Mission Content / UI - There are two neutralizef target objectives and no go to location objective
+- Fixed - PU - Pyro - Asteroid Bases - Locations / UI - Asteroid Bases airlocks are not cycling (STARC-144680)
+- Fixed - Argo MOLE - ALL VARIANTS - Player in the Pilot Seat see no visible mining UI when they are in Mining Mode (STARC-135982)
+- Fixed - PU - Pyro - Courier - Mission Content / Game Code / UI / HUD - mobiGlas - Mission does not generate / display objectives in the mobiGlas / HUD and sometimes have no starmap marker after being accepted
+- Fixed - PU - Mission Refactor - Mission Content / UI - Missions do not update the objective after arriving at location and the objective turns green
+- Fixed - PU - Pyro - Rundown Stations - Design / Locations / Live Services - Player does not spawn into their chosen LZ but instead spawns in the center of the Pyro System in the sun
+- Fixed - PU - Hauling Missions - Hauling missions give full reward without delivering all cargo when the "Submit" button is pressed (STARC-120213)
+- Fixed - PU - Stanton - Area18 - Locations / Animation - Ship storing animation at A18 in a small and medium hangars stops mid-way (STARC-135811)
+- Fixed - PU - Pyro - Contested Zones (CZ) - Checkmate - Locations / Art - Vent has a VisArea that opens to space (STARC-150868)
+- Fixed - Vehicle - Anvil Terrapin - Interactions / Doors - The Ramp and Bathroom Doors on the base Terrapin do not close after they have been opened
+- Fixed - PU - Pyro - Rundown Stations - Checkmate P2L4 - Art / Locations - Player can get stuck in geometry in the airlock to Contested Zone
+- Fixed - PU - UI - UI Feature - Global Chat / mobiGlas / CommLink - Global Chat channel is not present in some shards (STARC-148731)
+- Fixed - PU - Pyro IV - Sacren's Plot - Locations / Inventory - Storage Access Kiosks at Sacren's Plot have no inventory
+- Fixed - PU - New Babbage - Locations - Garage door at NBIS Surface Access does not open
+- Fixed - PU - Pyro - Colonial Outposts - Art / Locations / Tech - Passing through the Physics Grid portal allows to player to fall through the planet
+- Fixed - PU - Pyro - Frontier Outposts - Multiple Locations - Locations / AI / Tech - XenoThreat and Outlaw AI spawning at Citizens for Prosperity Outposts
+- Fixed - PU - Mining / Mineable Composition - Rock with Silicon is available for Mining and when extracted produces no material (STARC-145671)
+- Fixed - PU - Pyro - R&R Station - Locations - Cargo ATC is missing when player arrive
+- Fixed - PU - Pyro - Rundown Station (R&R) - Locations / Design - There is a gap in the armistice zone beside the Spaceport elevators (STARC-150501)
+- Fixed - PU - Pyro - Multiple Locations - Locations / Hangars / Visarea - Fake grey walls and floor appear when the player attempts to leave the XL hangars
+- Fixed - PU - Pyro - Contested Zones (CZ) - Checkmate Station - Design / Art / Locations - There is a VisArea issue visible on the one of the elevators at the entrance to the view room / reward room in checkmate station
+- Fixed - PU - Pyro - Rats nest - Locations / Art / Visarea - There is a large visarea beside the ASOP terminals area
+- Fixed - Rundown Stations - Pyro hangars are very dark and seem to be missing lighting (STARC-144801)
+- Fixed - Origin 890 Jump - PU - Stanton - Vehicles / GFX / Vis Area - vis area block the view when player siting on turret seats (STARC-132076)
+- Fixed - PU - Mission Refactor - Support Attacked Ship - Missions / AI / UI - Mission does not complete despite all AI ships being eliminated (STARC-144939)
+- Fixed - PU - Pyro - Rundown Station (R&R) - Multiple Locations - Locations / Network / Ships - Players flying in the vicinity may explode consistently at random
+- Fixed - PU - Multi-System - Jump Points - Ships / Vehicles / Game Code - Align and Tuned but never being pulled into a Jump Point
+- Fixed - PU - Stanton - Missions / Mission Refactor - Hauling - There is an increased amount of hauling missions present in the contract manager
+- Fixed - PU - Vehicle - Drake Corsair - Interactions / Animations - Lifts / Elevators - After calling the lift to any floor for the first time it will become stuck in that position and fail to transition to other floors on subsequent uses
+- Fixed - PU - Pyro / Multilocation - Items / Interactables - Some of the fuse could not be picked up from the Fuse Box inside the Contested Zone
+- Fixed - PU - Pyro - Contested Zones (CZ) - Ghost Arena - Art / Locations / Interactables - The Wasteland and The Crypt Keycards do not unlock their corresponding reward doors

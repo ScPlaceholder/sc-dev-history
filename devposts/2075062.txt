@@ -1,0 +1,23 @@
+## Star Citizen Patch 3.5.0u
+Alpha Patch 3.5.0u has been released to PTU, and is now available to test!  Patch should now show: PTU-1430143.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- General gameplay
+- Testing AI pilot behavior
+Major Known Issues:
+- No-fly zone autopilot take over is inconsistent.
+- Players arrive at planetary destinations just outside of the trigger for quantum travel points. W/A: Fly forward toward the planet/moon for a moment to trigger the quantum travel points.
+- Certain areas around an outpost can cause the player to get stuck.
+- Some ships at Lorville spawn partway into the ground, damaging them.
+## Feature Updates
+## Bug Fixes
+- Commodity boxes should no longer lose interactions points if the player is running.
+- Player should no longer occasionally have their ship fail to explode upon critical damage, trapping them in the ship.
+- AI in swarm modes should function normally again.
+- Delivery missions should no longer occasionally become withdrawn when placing the delivery box in the locker.
+Technical
+- Fixed 2 client crashes.
+- Fixed a server crash.

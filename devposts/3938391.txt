@@ -1,0 +1,79 @@
+## Star Citizen Patch 3.13.0j
+Alpha Patch 3.13.0j has been released to the PTU and is now available to test! Patch should now show: VERSION 3.13.0-PTU.7257687.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Cave Entrances
+- FPS Cave Missions
+- Ship to Ship Docking
+- Signed Distance Fields (SDF) Shield Tech
+- Reputation UI
+- New Quantum Sensitive and Timed Delivery Missions
+- Pushables T0
+- Mounted Guns
+- Force Reactions - Staggers
+- Cyclone MT
+Known Issues
+- Customized loadouts are reset to default when the ship's name is changed
+- 100 Series is missing pitch/yaw/roll
+- Constellation Ship Elevators lose collision when snub ship is undocked
+- The Quantum Sensitive Cargo can become stuck to the players hand, while lacking all functionality
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Docked merlin enter interactions don't show when constellation is moving
+- Mounting weapon while holding a grenade will cause the player to enter a broken state upon exiting via interaction mode during low FPS
+- When refuelling quantum fuel with hydrogen at full, the '100% fuel' announcement will repeat until quantum fuel is refilled
+- Character will suffocate for a few seconds whenever you change helmet
+- Weapon icon, Ammo count and Grenade count are missing from the user HUD
+- Leaving a trolley in a door way will clip through the floor erratically and can kill players
+## Feature Updates
+Locations
+- Moved cave near Lorville to be outside the city greenzone
+- Improved lighting for cave gameplay area
+Gameplay
+- Increased the ASOP terminal use time before it kicks the player off
+Ships and Vehicles
+- ROC-DS Balance pass
+Updated ROC-DS with a unique mining head that improves it's mining/tractor range and power. Increased cargo capacity.
+- Ship in Ship Docking ASOP and Parasite Ship Changes
+We've made a few temporary changes to how parasite ships such as the p-52 and p-72 are handled for insurance and ASOP spawning. Where ships are granted to the player because the ship (Example: Merlin on a Connie), is part of the ship's default loadout, that secondary "attached' ship should no longer be treated as a separate ship from the ASOP's point of view. Because of this, they will no longer be spawnable via the ASOP unless you have bought in game or pledged for these smaller ships separately. Merlins (and other loadout based ships), will always be claimed by claiming their parent ship and is the only way to replenish them if destroyed. If a party member/friend/anyone is flying your docked Merlin and you make a claim on the Connie, the previous instance of the parasite ship your friend/party member is flying will immediately be considered as a stolen vehicle. Doing this will give the pilot of it a crime stat for stealing a ship.
+- Updated the Cyclone AA/MT missiles to ignite immediately on launch
+- Greatly increased the base health of the Terrapin
+## Major Bug Fixes
+- F12 should now correctly toggle on/off the Comms UI along with the chat
+- Players should no longer be able to cause low framerates for all players on Hurston while near coastlines
+- Players who have a lawful bounty mission should now correctly lose the lawful missions when becoming a criminal
+- Star Runner fuel scoop should now function
+- Ships should no longer spawn in shaking, damaged, or in a destroyed state
+- If a player is in a party or group voice channel their VOIP should no longer switch to the ship VOIP channel when they enter a ship
+- Players should no longer fall through the personal lift in the Constellation series while the ship is in quantum
+- S1 Sukorans shields should no longer incorrectly recharge instantly
+- Target ship's shield status should now be visible on the Target Status MFD or CVI
+- Running into the stairs of the 100 series as the door of the ship opens should no longer cause players to fall through the ground
+- Death "black screen" should now fully stretch to cover ultrawide displays
+- Opening mobiGlas or equipping an item during MedPen Heal animation should no longer cause the player to pull out another MedPen that doesn't work
+- DRAKE Bucaneer and MISC Prospector's thrusters should no longer overheat if they maintain 100% thrust
+- Fixed an issue causing multiple ship bridges to have an overly bright fog volume around them while around gas clouds
+- Fixed an issue causing overly blurry cockpit glass wear buildup after using a ship for a short period of time
+- Valkyrie Liberator right side passenger door should no longer kill the player when mantling up
+- Fixed an issue that allowed some vehicles to sometimes pass through sections of ground, causing damage
+- Fixed many gaps in the floor around cargo decks where trolleys could get stuck or flip when pushed
+- Gun fire from the Revenant Gatling should no longer rapidly create overly bright flashes on the cockpits of ships
+- Reflections from the lights inside the Aegis Eclipse should no longer create a bright ball of light that obscures the players ability to look out of the cockpit
+- Highlights should now correctly appear when interacting with off the shelf ship components at stores in the PU
+- FPS Weapons should no longer block the flashlight when aiming down the sights which caused high reflection on the guns
+- Tecia Pacheco (Twitch) should no longer be missing and away from her chair
+- Players should no longer receive a journal entry is suggesting that they have been fired by Crusader / Hurston security, when they have not been, every time they log back into their account.
+- Quantum Sensitive Cargo should no longer have a change to become stuck to the players hands while holding
+- Procyon cargo carryables for missions should no longer endlessly drop and reapear in players hands when holding them
+- Constantine Hurston objective should now correctly show when accepting his invite mission
+- Fixed Missing geometry around the cave entrance near Lorville which caused players to fall through the world
+## Technical
+- Fixed 13 Client crashes
+- Fixed 5 Server crashes
+- Main Thread Deadlock Fix

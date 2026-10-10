@@ -1,0 +1,91 @@
+Squadron 42 Monthly Report
+May 2023
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 06:07:2023
+REF: CIG UK, CIG DE, CIG LA, CIG TX,
+FAO Squadron 42 Recruits.
+Welcome to May’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including capital ship behaviors, buddy AI, and FPS weapon AI.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Content)
+Throughout May, AI Content progressed with their remaining medical-behavior tasks. Following this, the full medical flow can now be demonstrated in the behavior test map. Additional animation variations for interacting with cupboards, beds, trays, and sinks (both with and without data pads) were created too. Once signed off, the behavior will be implemented in the Stanton and Krugeri’s infirmaries.
+The AI Content team continued work on the ‘fight club’ caged arena, last month implementing the entry bouncer and rush animations for crowd spectators. For the latter, the crowd’s intensity varies pre, mid, and post-fight. As part of this, speed-quality fight animations were developed, with data coming from a recent motion-capture shoot.
+The team also worked on speed-processed locomotion animations for NPCs experiencing severe pain. Part of this involved implementing animations for characters standing and locomoting while exhibiting sickness. They then processed and implemented polished drinking animations into the ‘Sit050’ usable area and created speed-drunk locomotion animations for inebriated NPC movements. Drunk locomotion animations were also created for NPCs holding cups.
+Finally, AI Content implemented mobiGlas and datapad overlay locomotion animations to allow characters to seamlessly interact with digital interfaces
+## AI (Features)
+AI Features continued to work on the buddy AI. Now, buddies ‘cheat’ when finding supplies, looting ammunition that doesn’t match their current weapon. They will also fully restock when they do so, replenishing their grenades and MedPen.
+They also finished the first pass of a boss fight that challenges players to counter or block before they can attack, while progress was made on the targeting and melee attacks for a key enemy behavior.
+AI Features implemented the core components of systemic and boss-fight sniper functionality, enabling the designers to finish it off and provide feedback.
+On the animation side, the team wrapped up the performance capture for various features and implemented the full animation set for a collection of characters with a unique combat style.
+## AI (Tech)
+Last month, AI Tech progressed with their final major Squadron 42 features and addressed feedback on older initiatives. They continued to improve the collision-avoidance system to give better results when ground vehicles pass each other or NPCs. They also added support for driving along a predefined route, similar to how NPCs can move along a path. For this case, the designers can specify certain properties for the route, like the maximum permitted speed, which direction it should be driven, and if it should loop.
+Work then began on a dynamic pathfinding regeneration feature to improve how NPCs find and follow alternative routes. For example, if a hazard (tree falling, vehicle stopping, fire hazard, etc.) impacts a navigation mesh triangle, the navigation volume will notify all related paths and check if new requests are submitted. The first stage of this was implementing an anchor structure to keep track of a location's navigation meshes and triangles, which is notified when a triangle is changed. These navigation anchors are then used to understand when parts of a triangle are modified and to check if new pathfinding is needed.
+May also saw AI Tech begin investigating and implementing a solution for NPCs entering and exiting ships from EVA using the external doors of an airlock system. For this, they set up ship and seat access as a usable to allow NPCs to find their closest entry position, fly to it, and trigger the right interaction. They also had to account for a ship’s rotational velocity and allow NPCs to adjust their orientation as they approach.
+On the AI tools side, improvements continued for both the usable coordinator and Apollo Subsumption. For the usable coordinator, optimizations were made to the code and logic flow. They updated the visuals and changed to a new usable data view too. For Apollo, the team implemented ‘find references’ functionality with support for Subsumption functions.
+AI Tech also completed various support tasks, including creating flowgraph nodes for all Subsumption assignments to help the designers create scripted AI behaviors. More variable types for use as assignment inputs were added alongside support for the usable and tactical point systems.
+## AI (Vehicle Features)
+The Vehicle team progressed with their ongoing rework of combat AI. Last month, they hooked up various events for the AI to react to across the game. This is the final step before integrating the new combat AI into all encounters across SQ42.
+“After that, it’s playtesting over and over again in situ in the levels of the game so we can judge and adjust difficulty, pacing, and so on to fine tune the experience.” AI Team
+The team also improved the logic for how AI ships join splines to make it smoother and more natural looking.
+Ground avoidance during atmospheric flight was also worked on. The aim is to have AI try their best to not collide with the ground when in combat while behaving as naturally as possible.
+## Animation
+In May, the Animation team worked on various skill-level-based takedowns, movement in zero-g, and swimming.
+For AI, the team continued creating assets for background actions to give life to various locations; this will continue as levels are playtested. A second enemy class animation style was developed alongside a knife fight and a melee enemy class. The team also continued to create assets for the various behavior lines and wildlines for both combat and non-combat AI.
+The Mo-cap team spent the majority of the month shooting performances and delivering data for gameplay and cinematics.
+## Engine
+The Core Engine team progressed with their work on StarBuild, adding the remaining Linux support. StarBuild is now on feature parity with the old code build system and will be rolled out to other departments soon.
+For the renderer, the team started removing legacy Gen-12 code. There is a lot to remove, but this will result in leaner and easier-to-maintain renderer code when complete.
+The Core Engine team also progressed with the generic shape system, adding editor support to save generic as well as remaining shapes. Multiple segments will be added before it’s handed to the designers to use.
+For MemReplay 2.0, the team are currently adding more features, including file open dialog, faster loading, and async symbol resolving to get it ready for wider use. They’re also adding optimizations and continuing to stabilize their feature stream to integrate it back into the main development stream.
+Last month, the Physics team focused on improving and bug-fixing the new method for tracking unique geometry parts. They then improved cloth simulation for better simulation results, updated the rope and pulley systems, and added cantilever simulation support.
+## Features (Gameplay)
+Last month, the Gameplay Features team updated the character customizer. This included adding a new ‘sculpting mode’ that allows players to select and drag an anchor point on the face to change the size and shape of a particular facial zone, such as the nose, ear, and chin.
+Further detailing work was done on the firing range, mostly around joining and leaving. Feedback was also actioned on the UI to integrate it better into the environment.
+A new collectible was created that players will be able to find, pick up, and stow during gameplay. These items will then populate the player’s quarters as part of the collectibles system.
+The frontend also received a new difficulty option. This exposes various modifiers to the AI, health, and weapon attributes to allow the Design team to balance the game depending on the player’s desired experience.
+A new feature to allow the designers to create and save damage maps was created too, which enables them to apply pre-damaged areas to ships.
+Following on from the recent Starmap work, the team is now developing the area map. This will render a holographic view of a player’s current environment, either from within the Starmap or as part of the visor, with markers for players, characters, mission objectives, and more.
+## Features (Vehicle)
+Last month, work continued on the ‘control surface’ flight model. The team implemented special handling for ships in gas-filled zero-g locations, such as gas clouds. While ships still favor thrusters in this situation, they will experience drag and lift that slightly impacts how they feel.
+Vehicle Features also iterated on UI and VFX for communicating the Quantum system’s state. They also began utilizing in-world VFX for this purpose, which allowed them to pair back the UI. The feedback on this has been positive so far.
+A new feature for spawning waves of AI ships inside carriers was kicked off (similar to an FPS spawn closet). Now, AI will spawn on landing pads within carriers, take off, and join the fight. This feature can be used to support large battles by naturally spawning ships.
+The Intelligent Flight Control System (IFCS) received updates last month. For example, the team worked on a bespoke relative throttle that allows players to assign a target velocity when the throttle is untouched. Various quality-of-life improvements were made to support this, including a trap for setting target speed to zero, a non-linear rate of change for improved precision at lower speeds, and an improved UI for displaying the throttle.
+Work on the Vehicle UI continued, with the team creating a physical hangar terminal for modifying a ship’s loadout before missions. This enables players to view an inventory of available weapons and items, compare them against each other, and equip them to the ship in the hangar.
+Multi-function displays (MFDs) also received various updates, including a UI pass to make them larger, simpler, and easier to read. The new MFD system also allows players to cast some screens to their visors, with the team changing the layout and aspect ratio of the screens when this occurs. This makes better use of screen space and allows certain elements to be more prominent. Furthermore, after the work last month, MFDs were enabled for wider use in the company.
+## Gameplay Story
+Last month, the Gameplay Story team worked on various scenes involving the Stanton's quartermaster. These updates were requested by Design, with the goal of getting the scenes to integrate properly with the AI behavior.
+New motion-capture data was used to update some significant scenes in the med bay, ensuring characters interact correctly with the latest swiveling-chair setup.
+“It was great to see these scenes updated to use exactly the same setup as the AI, which should make the scenes very robust and future-proof.” Gameplay Story Team
+In May, Gameplay Story began setting up 8 new scenes, bringing their total to 290. They also polished, pose pasted, and updated props in several scenes to ensure they were fully up to date.
+The team also continued to set up operator seats, working to establish proper metrics and solid foundations for these complicated assets. Automated testing of the entities achieved a 100% pass rate, so they can move on to reviewing, improving, and approving the required animations.
+## Graphics & VFX Programming
+The Graphics Feature team spent the month working on performance improvements and new features, including screen space shadows, improvements to quantum jump tunnels, and render-to-texture zone culling. A GPU memory allocator and an upgraded ResourceCache compiler were among the new performance-boosting upgrades, while the evolving Temporal Super Resolution (an automated upscaling system that can now up-sample opaque objects) officially passed its first milestone.
+Global Illumination is well underway. So far, the first iterations of a hash-map-based radiance cache, ray-generation code, and a ray-tracing prototype were completed.
+Improvements to Gen12’s validation error debugger were made to improve the accuracy of bug detection for faster issue assessment. In preparation for deferred Rendergraph execution, Vulkan’s frame synchronization was improved. Issues with gaps in pipeline-resource sets at bind time were resolved with a remapping update that uses continuous resource-set layouts.
+The Planet Tech team started finalizing quantum obstacle generation with generic shapes in asteroid fields. A collision issue detector and wear, dirt, and paint modifiers were also added to the RaStar tool.
+Ongoing improvements to the BiomeBuilder will reduce constant spawn/despawning, which in turn will relieve the Physics team of large destruction queues. Water can now be simulated in-engine and features the new disturbance component improvements.
+VFX finished the new effect setup for quantum travel and are now looking into lightning. Lightning emitters are being refactored to decouple from targeting, and the team is investigating how to use current prototypes to spawn lightning from gas clouds. A crash that occurred when particle emitters attempted to resize using a buffer of 0 was also fixed.
+## Level Design
+Last month, Level Design focused on their two main locations, the Stanton and Krugeri capital ships. Alongside general scene maintenance and bug fixing, they looked into scene ‘handshakes’ that transition NPCs into their required behaviors. This involves ensuring characters are prepped to transition, are pose matched, have holstered held items, and more.
+They also updated the Stanton’s quartermaster scenes to reflect the revised AI vendor flow without negatively affecting performance.
+The team then continued to work on the AI schedules for the Stanton, which has an 80-person crew playing out various behaviors around the ship.
+“With this roll out, we have to keep tabs on NPCs gate-crashing scene content. For example, if the player is in a somber scene with a colleague discussing the horrors of war, we don’t want an NPC barging in with a “Hello Lieutenant” and jumping onto a console.” Level Design Team
+## Narrative
+In May, Narrative held a performance-capture shoot focusing on additional combat and social wildlines. The goal was to capture a wide variety of voices to populate the universe while also maximizing the effectiveness of the content so that it remains within a reasonable scope.
+Narrative also synced with Design on their recent gameplay progress to review adjustments and ensure that dialogue continues to function as intended. In some instances, the team made suggestions on how the revised gameplay scenarios could better align with the emotional tone of the moment. For example, if a puzzle scenario occurs during a particularly stressful sequence of the game, Narrative and Design will discuss ways to maintain the emotional underpinning during the puzzle.
+Meanwhile, progress continued on the text items needed across the entirety of the game, including collectibles, Galactapedia entries, and mobiGlas UI elements.
+## R&D
+In May, the R&D team continued improving the temporal render mode for atmospheric and volumetric clouds.
+Additionally, planetary-terrain height-map generation was optimized to eliminate frame-rate hitches. Aside from using a more suitable partitioning scheme for the tessellation of terrain patches, the changes also include terrain quad viewport culling before further tessellation by the GPU. The resulting height maps are later used to render large terrain shadows and to spawn GPU particles on the ground.
+## UI
+The UI Art and Design teams completed their work on modular fluff screens, getting them set up in different UI styles for various locations. They’re now ready to be handed over to the Art and FPS teams so they can be added to levels.
+They also implemented new FPS weapon screens for the different brands within the game, and worked alongside the FPS and Vehicle teams on augmented-reality (AR) markers, which are floating UI elements that show players where their objectives and targets are. Last month, the art was signed off and the files were prepared for use in-game.
+Work on the final visor UI also continued with the AI Feature team; this will include weapons and ammunition information, notifications, and mission objectives. They also applied improved shaders courtesy of the Graphics team to make the UI appear more holographic.
+The UI Tech team continued to improve their tools, including making performance improvements and adding additional ways to debug the more complex screens. They also further developed the new interior and mini maps, which will bring a significant improvement to in-game navigation.
+## VFX
+Last month, VFX revisited gas-cloud tunnels, working closely with Design and Art to create new hazards that can occur inside the tunnel networks.
+Progress was also made on weapon effects, while support for the Art and Design teams continued across a variety of locations.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

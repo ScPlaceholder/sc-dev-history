@@ -1,0 +1,73 @@
+## Star Citizen Alpha Patch 4.7
+Alpha Patch 4.7 has been released to PTU and is now available to test! Patch should now show: VERSION 4.7.0-PTU.11429312.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Operation Breaker Stations and QV Breaker Stations locations
+- Inventory Rework
+- Crafting Fabricator and Blueprints
+- Engineering Updates
+- Radar Assisted Targeting (Radars components in shops will be arriving in a future PTU patch)
+- Nyx Social Stations
+Known Issues
+- Multi-System - PU - ASOP Terminal / Locations - Moving the mouse cursor over a different vehicle in the ASOP when attempting to deliver a specific vehicle will deliver the different vehicle instead
+- Multi-System - PU - ASOP Terminal / UI - There is a chance that a blank information of the Vehicle may appear on Hangar Delivery Request using the ASOP Terminal
+- PU - Nyx - RCD - Location / Design - Laser Catalysts can't be detached from the Monorail
+- PU - Nyx/Levski - Transit - Going prone whilst in a moving Limbo Elevator Carriage, will cause the player to fall out of the carriage
+- PU - Starmap / MobiGlas / UI - Starmap is zoomed into the ship when in a cockpit instead of showing the system or region of space in
+- PU - Nyx - RCD - Medical Screens / Locations / Medical - Medical imprint cannot be set at the Exclusive Medical Bay locations
+- PU - Nyx - RCD - Locations / Art / Proxy - Breakable Ice entity visibly stays intact after shooting icicles
+- PU - Inventory Rework - UI - Inventory does not update Capacity and Space changes in Personal Inventory
+- Multi-Item - PU - Inventory Rework / Weapons / Art - Some icons become stretched out upon scrolling down the inventory
+- Multi-System - PU - UI / mobiGlas / Starmap - Starmap search bar dropdowns will only show location icons stacked on top of each other
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+## Features & Gameplay
+Gameplay
+Operation Rock Breaker Polish
+Further location performance optimizations. Lighting and art polish pass.
+Inventory Redesign
+Standardized Inventory Navigation, Pagination and Collapse/Expand icons. Adjusted SortButton's size. Removed Apply button. Fixed closing Search when clicking outside (lose focus). Added search active feedback. Added transition when opening/closing search. Fixed loot button overlap.
+Crafting
+Added blueprint reward to RCD Exclusive and Contested missions, correcting some others that are RCD themed and slight movement of some blueprints to different mission types. CFP Recover cargo and Destroy items mission blueprint reward setup. Made quantity bindings (SCU, cSCU sizes) for crafting materials dynamic based on the average cost in the recipe, and always dynamic in the materials list. Fabricator animations polish. Updated weapon crafting times.
+Locations
+People's Service Stations
+Implementing 4 new social stations in Nyx. Managed by members of the People's Alliance, these service stations offer a safe haven with basic restock, rearm, and refueling operations along with many different shopping options for pilots traveling through Nyx.
+Ships and Vehicles
+- Updated Origin 890j with Size 4 radar and 600i with Size 3 Radar
+- Adjusted Heavy Bomber ship flight performance to match their intended values. This includes increases and decreases to thruster performance for the Eclipse, Redeemer, Spirit series, Starfighter, Frelancer series, and Zeus Series.
+- Missile and Ground Missile rebalance damage, explosion radius (min/max), and boost phase duration for Ground Missiles
+Core Tech
+- Further entity count fixes and polish related to Nyx rock breaker locations
+## Bug Fixes
+- Potential Fix: Fixed shield resistance being flipped for energy resistance (Grade A being worse than Grade D)
+- Potential Fix: PU - Nyx - RCD - Missions / Locations - Server error during the mission causes RCD to reset (STARC-198444)
+- Potential Fix: ARGO MOLE - PU - Vehicles / Physics / Collision - The front laser turret area cannot be exited after entering (STARC-198098)
+- Potential Fix: ARGO MOLE - PU - Vehicles / Components / Mobiglas / VMA - Utility options say "Top Left, Bottom Left" (STARC-198058)
+- Potential Fix: ARGO MOLE - PU - Vehicles / Graphics / Art – A floating screen can be seen at the cargo hold interior of the Mole (STARC-198240)
+- Potential Fix: PU - Nyx - RCD - Locations / Design - The fuse door doesn't open after inserting a fuse in the slot
+- Potential Fix: Multi-System - PU - Nyx Mission Pack 2 - Missions - Delivery Pilot / Recover Cargo - Collect objective does not complete after collecting and delivering items
+- Potential Fix: MISC Starlancer MAX - PU -  Vehicle / Collision - Players can fall through the ground when walking in between the section of the Cargo Bay ramp and ground surface
+- Potential Fix: ANVIL Paladin - PU - Vehicles - Art / Graphics - There are visible gaps inside the interior beside the lower bridge door walls
+- Potential Fix: PU - Stanton - Crusader Starlifter C2 - The Recreation Room fuse box is inaccessible to the Player
+- Potential Fix: PU - Stanton - MISC Starlancer TAC - Engineering Screen / UI / Props / Vehicles - There is a disconnected part of the Rear Ramp on the 3D Preview/Map when Toggling Open/Closed
+- Potential Fix: PU - UI / Inventory Rework - The Inventory Filter categories are missing their respective Labels (STARC-196098)
+- Potential Fix: PU - Nyx - RCD - Location / Design - Zone1A & Zone1B Powerless Doors can't be opened after retrieving the power
+- Potential Fix: PU - ASD Onyx Facility - Research - Locations / Interactions - Loot room door doesn't open after selecting "Override"
+- Potential Fix: PU - Pyro - Contested Zones (CZ) - Locations / Interactables - Access doors were unable to be overridden
+- Potential Fix: PU - Vehicles / FPS Weapons - Fire Extinguisher can be stored on Weapons Rack (STARC-185465)
+- Potential Fix: PU - Missions - Crafting / Blueprints - Mercenary / Escort Ships - Missions do not complete upon finishing all objectives
+- Potential Fix: Mutlivehicle - Vehicles / Quantum Travel / Audio -Quantum Sound when returning to ship (STARC-184209)
+- Potential Fix: PU - Missions / UI / mobiGlas - Hauling - Hauling contracts have "Potential Wildlife Location" listed as the Collect or Delivery location (STARC-175376)
+- Potential Fix: Multi-System - PU - Missions – Adagio Holdings / Salvage - Salvage claim ships are not present after arriving at the location (STARC-196856)
+- Potential Fix: Copyright Shows 2012 to 2025 in game load splash screen (STARC-198661)
+- Potential Fix: PU - Nyx - RCD - AI / Looting - Warehouse loot room key card is not spawning in the Juggernaut inventory
+- Potential Fix: MISC Starfarer( All Variants ) - Vehicles - Art - The refueling pods are missing their textures, resulting in a grey appearance
+- Potential Fix: PU - Vehicles - Aegis Redeemer - Interaction point to place the fire extinguisher is misaligned and cannot be used
+- Potential Fix: PU - Nyx - RCD - Locations / Design / Art / Vis Area - The service entrance elevator has a broken visarea / portal
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed a Server Deadlock

@@ -1,0 +1,7 @@
+Hi,
+The unfortunate reality is that there is no simple answer to this. Some of the posts above hit the right points, but for the most part changes don’t break completely unrelated systems (though this can happen too, more on this below) and more often it’s the sheer volume of changes to hundreds of system that cause the complex mixture of bugs we see between each release.
+When we get close to a release we massively limit the number of changes going in, and this is when we see consistent results and more predictable fixes/breakages.
+But for the “random” breakages, these can happen for many reasons. Race conditions are a common one (A relies on B, but A takes longer and B has a bug where it can’t cope with this, but went undetected till now). Another common cause is changes to low level systems, where dozens of game features are affected, in ways that aren’t always predictable by the author, largely because the dependant systems can have bugs or be miss-using the low level system.
+There are many more cases, but that’s a few :slightly_smiling_face:
+Ali Brown
+Senior Director of Graphics and Procedural Tech

@@ -1,0 +1,46 @@
+## Star Citizen Patch 3.18.1
+Alpha Patch 3.18.1-LIVE.8430497 has been released and is now available on the LIVE environment!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Database Reset: Yes
+Long Term Persistence: Disabled (Full Wipe and Reset)
+Starting aUEC: 200,000
+Known Issues
+- Game clients may close without error or crash handler
+- ASOP Terminals are unusable and fade to black when accessed
+- Delivery Objective withdrawn upon reaching mission location
+- There are numerous seat / bed animations that will have a chance to kill / injure the player inside ships (Cutlass cockpit and Aurora bed)
+- Equipping more than 5 components in a single "Save Changes and Equip" VMA transaction will fail
+- Harvestable Deposits may be invisible to players, cause collisions or become unavailable for scanning, mining or salvage gameplay
+- The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Elevators and Trams are "Jittery" during transit of Player Character
+- When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Reclaimer main on-elevator control panels do not respond to input
+- Cargo may be invisible in multiple ships after being purchased
+- When attempting to start a refinery job, players receive the following error ; Something went wrong (Error code: 20)
+- Security Contractor Evaluation is not re-offered upon failure
+- Combat Service Beacon Progress / Rating inconsistent on missions
+- Security Work Assesment Remaining Hostile NPCs Not Spawning In
+- PTV wheels at the Orison BTR area can clip into geometry and become detached from vehicle
+- The snub fighter attached to Constellations lacks interaction prompts to enter it, making it unusable
+- Some ship wreckage erroneously give "No Material" text and do not let you salvage
+- Markers Will Randomly Disappear After Quantum Travel With No Route Set
+## Feature Updates
+Gameplay
+- Initial Ship Delivery
+This change we are making affects how you obtain your vehicle when logging into the game for the first time after a database reset. Instead of being immediately entitled to your home location in-game, ship pledges on our website will now be available at any ASOP terminal labeled as "Deliverable". You can make your ship available at the location for the first time by pressing the "Deliver" button, which functions similarly to the standard insurance claim but is free and only takes about 20 seconds. Once delivered that ship will be available to customize and be used. This change will help address entitlement database spam when new accounts are entering the PU for for the first time. This delivery feature reduces the size of player's default inventories and thus the size of the global databases substantially.
+- Arena Commander Customization Temporarily Disabled
+We have implemented improvements to the API that manages ship customization in Arena Commander and are exploring more, which we believe will further alleviate issues with entitlement. While these changes are being tested, ship customization in Arena Commander will be temporarily disabled for 3.18.1. You will still be able to select ships from your hangar as well as REC rentals, however. We will be providing several vehicle loadout changes in AC that you can use in the meantime with upgraded shield generators and weaponry that we've hand selected. This will temporarily update the loadouts of the base Gladius, Arrow, and Blade. This change will be temporary; customization will be reenabled in the following update. The next update will also include general fixes that didn't make it for 3.18.1's release and/or were blocked by issues with Persistent Entity Streaming.
+- Density Manager Optimizations
+Updated Density Manager values to be more aggressive for removing unneeded entities in the PU to improve server/client performance.
+- Made additional optimizations for loot generation
+## Bug Fixes
+- Players crashing out/quits mid using an ASOP terminal should no longer brick it and make it unusable
+- Players should now be able to pick-up/interact with repair drops in Arena Commander
+- Fixed an issue causing players to occasionally be unable to exit ship seats
+- Gas clouds should no longer cause a memory leak
+- Fixed Various issues in Arena Commander where the waiting for players count would fall below 0 which would cause the match to never start
+## Technical
+In 3.18.1 we have made many dramatic changes to how the ASOP, client, server, and global databases handle entities and entitlements which should help both make things like stowing and unstowing of ships more reliable and snappier as well as address many of the various issues players have been seeing with unstowed characters and many different account errors blocking players from loading into the PU.
+The 3.18 infrastructure needs are a lot higher than previous game versions. Armed with data of the last few weeks of 3.18 the team has also spent considerable amount of time analyze and optimize the cloud footprint of the game, resizing and adjusting layout of the clusters and regions where the game hosts services.
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes

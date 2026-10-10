@@ -1,0 +1,48 @@
+## Star Citizen Patch 3.11.0r
+Alpha Patch 3.11.0r has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.0-PTU.6292337.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Pledge Copy: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+IMPORTANT: With this update we are temporarily removing the chest armor inventory on environmental suits so that the backback will be the only option. In doing this, any items stored in your chest when 3.11b goes live will be deleted. If you have items such as gems or food in your Environmental suit chest inventory please move this to another inventory before 3.11b is LIVE.
+Testing Focus
+This PTU patch is a quick test to check for stability before going to the LIVE environment.
+We have added logging into this build for 3.11.0b to help track down issues players are experiencing with losing their mobiGlas and/or missing their heads while switching out armours. This logging will start working once this patch is on the LIVE environment.
+- General Gameplay
+- Arena Commander match end crash fix
+Known Issues
+- Wallace Klim does not offer missions to players via the mobiGlas contract manager
+- After trying on a hat while wearing any Fieldsbury Bear Helmet, the player's head will be missing when unequipping the helmet
+- Repeatedly Pressing the Random Button on the Character Customizer can cause it to stop functioning
+- Multiple ship preview models will have poor LODs or missing Items
+- When retrieving ships at New Babbage or Lorville's spaceports, the UI telling you what Hangar your ship is placed is missing
+- Global chat may be unavailable in the visor HUD
+- Ships landed at Lorville cannot be stored
+- Greycat ROC may jump up and down on the spot after spawning
+- Players can get their ship into an 'unknown' status after abandoning it and then dying and respawning at some Rest Stops causing an insurance loophole
+- Ground vehicles will be impounded when the player lands at a designated garage at the New Babbage Spaceport planetary surface exit
+- The missile range does not update correctly when swapping missile types that have reduced minimum/maximum range
+- Players are unable to reach the "Enter Ship" prompt on the display Prospector in New Deal in Lorville
+- Members list UI does not animate when player is speaking in proximity chat
+- Using an emote then getting a knockdown at the same time causes animation delay
+- Origin 100 series Rain / slush effects are moving backwards to the direction of travel
+- Greycat ROC mining arm can snap out of place upon re-entering the vehicle if the mining arm had been previously extended prior to exiting the vehicle
+- Player may experience stalls when extracting crystals with the Greycat ROC
+- Origin 100 series beds do not retract
+- Running into the stairs of an Origin 100 series ship as the door of the ship opens will cause players to fall through the ground
+- Players logging out in Klescher Rehabilitation Facility may spawn back in at Grimhex in their prison outfits
+- Players cannot re-enter the Drake Cutlass ships if the ramp is damaged
+- Refueling hydrogen fuel first can prevent you from refueling quantum fuel
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+## Bug Fixes
+- Ships should now be able to lift off in decoupled mode.
+- Temporarily Disabled chest armor inventory on environmental suits to fix an issue that allowed FPS mineables to be infinitely re-sold if stacks of the same item are stored in both the backpack and chest storage.
+- Fixed an issue that was causing players who purchased very large amounts of FPS ammunition to not be able to equip any of them.
+- Security AI should now correctly spawn and engage players with specific CS levels.
+- Clients should no longer crash upon Arena Commander match cycles.
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 2 Backend Service Crashes

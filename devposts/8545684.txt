@@ -1,0 +1,70 @@
+Hi everyone,
+I wanted to take a moment to help clarify what each of our Graphics Settings does and how they impact your experience. Below, you’ll find a brief description of each setting, along with notes on what it affects in terms of performance, visuals, or hardware usage.
+If you have any questions, feel free to ask below. I’ll do my best to jump in and answer where I can.
+Video Memory (VRAM)
+- The horizontal bar in the bottom right of the Graphics Options menu shows the maximum video memory the game will use with the chosen resolution + settings. It is crucial this is kept below the recommended maximum, but if you are running other software (e.g. recording/streaming) then you may need to leave more headroom. If you run out of VRAM, especially on Vulkan, then you will see huge performance dips (e.g. going from 60fps to 10fps) and this won’t recover until the memory goes back under the limit. Actual usage can vary throughout the game, based on locations and other players.
+## Setting Descriptions
+Graphics Renderer
+- [Desc] Changes the graphics API used for rendering (Vulkan/DX11)
+- [Affects] Vulkan is the more modern API, and will be mandated in a future patch as it supports the latest hardware features such as ray tracing, whereas DX11 is no longer being updated
+- Vulkan graphics drivers tend to change more frequently, and so are at more risk of bugs, so we always recommend being on the latest ‘safe’ driver, and avoid experimental drivers. If you hit issues after a driver update then roll back to the most recent working driver. If you have issues running Vulkan on any driver then we strongly recommend you report them so that you are not blocked from running the game in a future patch
+- CPU performance should be much better on Vulkan
+- GPU performance should be broadly similar between APIs
+- Visual quality should be identical on both
+- Behaviour/support for driver related overrides such as frame-generation/motion smoothing may vary between graphics APIs, and is largely beyond CIG’s control. We recommend not using any such driver overrides or render-overlays if you experience any issues
+Resolution
+- [Desc] Sets the final output resolution (after any up-scaling).
+- [Affects] Large impact on VRAM usage and GPU performance. Recommend 1080p for low-spec, and 4k only for more recent GPUs
+Window Mode
+- [Desc] Full screen vs windowed
+- [Affects] GPU performance should be slightly better in full-screen, though using a higher resolution will counteract that
+VSync
+- [Desc] Enable or disable v-sync. Locks image updates to your monitors refresh rate, which also locks your frame-rate to a divisor of your refresh rate (e.g. 120/60/30/20 fps). When disabled you may see ‘screen tear’ where you see partial image updates. We recommend you set your monitor refresh rate via the OS to the maximum and then enable VSync
+- [Affects] Screen tear. Frame-rate clamping.
+Upscaling
+- [Desc] Use a lower resolution internal resolution for some of the rendering (UI is not affected), and use temporal upscaling to recover that detail over time
+- [Affects] Lower resolutions can drastically improve GPU performance, and can save VRAM
+Upscaling Technique
+- [Desc] Change the upscaling technique used. If you have an NVidia card then we recommend DLSS, and for all others we recommend CIG-TSR
+- [Affects] Each technique has a different cost in VRAM and performance
+Upscaling Model ( DLSS only )
+- [Desc] Different variants of NVidia’s DLSS upscaling
+- [Affects] Can be a large performance difference between modes
+HDR
+- [Desc] Enable High Dynamic Range output for improved contrast
+- [Affects] Performance should be near identical. This can have an impact on screenshots and your ability to stream content
+HDR Brightness (Ref-White) ( HDR only )
+- [Desc] Desired brightness of a comfortable ‘paper white'. Adjust based on the light levels in your room. Ideally HDR is experienced in a dim room with a low reference white setting to maximize the contrast of bright highlights. Typical values are between 100 and 300, but vary massively depending on your monitor and viewing conditions.
+- [Affects] Typical brightness of a white object/screen.
+HDR Peak Brightness ( HDR only )
+- [Desc] Maximum brightness to use. Recommended setting is the maximum, which is automatically detected from your display, and only lower if uncomfortable.
+- [Affects] Maximum brightness of lights & reflections
+Overall Quality Preset
+- [Desc] Sets all quality controls below to the same setting
+- [Affects] VRAM, GPU performance & quality (see below for details)
+Object Detail
+- [Desc] Adjusts polygon detail on meshes via changing the distances that each ‘level of detail’ is used, and whether to use hardware tessellation (High and above)
+- [Affects] GPU performance
+Object View Distance
+- [Desc] Controls the maximum distance at which objects are drawn (up to 200% difference between Ultra and Low)
+- [Affects] GPU performance and minor CPU cost
+Textures Quality
+- [Desc] Changes the amount of VRAM used for streaming textures, as well as the target resolution of textures
+- [Values] Ultra = 5800Mb, Very High = 4300Mb, High = 3300Mb, Medium = 2300Mb with 25% quality reduction, Low = 1400Mb with 50% quality reduction
+- [Affects] VRAM, and increased disk access at higher settings
+Detail Textures
+- [Desc] Changes the resolution of textures used for details on characters, weapons and items/props.
+- [Values] High = 512x512, Medium = 256x256, Low = 128x128
+- [Affects] VRAM
+Ground Textures
+- [Desc] Sets the resolution of ground textures used on planets
+- [Values] High = 2048x2048, Low = 1024x1024
+- [Affects] VRAM
+Texture Filtering
+- [Desc] Sets anisotropic texture filtering quality for preserving details at grazing angles
+- [Values] High = 16x, Medium = 8x, Low = 4x
+- [Affects] GPU performance
+Shadow Maps
+- [Desc] Changes the resolution of shadow maps as well as their quality.
+- [Values] Ultra = 200%, Very High/High = 100%, Medium/Low = 50%
+- [Affects] VRAM & GPU performance

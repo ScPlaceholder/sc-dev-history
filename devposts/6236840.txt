@@ -1,0 +1,76 @@
+## Star Citizen Patch 3.21.0
+Alpha Patch 3.21.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.21.0-PTU.8728532.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Update Warning: 3.21 has a nearly 33gb patch diff from 3.20 LIVE
+Audience: All Backers
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Server Regions: US/EU
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the  "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- New Legal/Illegal Mission: Retrieve Consignment
+- New Illegal Mission: Kareah - Steal Evidence
+- Repel Raid on Orison
+- New Crusader Platforms
+- Driver Remote Turret QoL Improvements
+Known Issues
+Please note: Crash handler is currently not functioning but please keep submitting as this will get a fix shortly!
+- UI / Menus - Controls - Keybindings - The Default Preset Images for the keyboard and gamepad control schemes do not match what is bound by default
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- MISC Hull C - PU - Vehicles - Can't undock the Hull-C
+- PU - Crusader / Orison - Locations / Transit - It's possible for turn gates to not open preventing players from entering shuttles
+- PU - Art - Items / Character / Textures - Multiple clothes / armor / undersuit variants lost color / using the default base color
+- PU - Multivehicle - Vehicles / Ships / Ship Components / Weapons - Laser Repeater occasionally stops firing but still consumes ammo
+- Hull C - Spawn / Cargo / LEO - Hull C with cargo can spawn extended in a large Hangar instead of Docking Port
+- Stanton - Multivehicle - RSI Constellation Series - Ship Feature - Snub Ship clips through Constellation variants in vertical position when retrieved from ASOP
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout after dying in the armistice zone
+- Stanton - Actor - Personal Inventory - Right click item interaction menu cannot be closed once opened
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Stanton - AI - Mission Giver - Wallace Klim is not visible at his location in Grim Hex
+## New Features
+Gameplay
+- New Legal/Illegal Mission: Retrieve Consignment
+In this new mission type, player’s will be challenged to go to the Underground Facilities (UGFs) and kill / search for data pads that contain consignments depending on the mission variant. A consignment will have a code on the top for the dispenser which will cause the items listed on its manifest to come out of the dispenser one by one. These items can be taken and sold at commodity kiosk’s around the game for aUEC, this is however optional and players only need to retrieve these items from the dispenser to make way for the mission critical items if they so please. This mission will take part exclusively at the security UGFs, are shareable, and will require the drop-off of at least one box of classified files to complete the mission.
+The Illegal version of this mission is offered by Ruto and the Legal version of this mission is offered by the various Security Organizations of Stanton.
+-    The Legal version of the mission the player will find corpses of dead security at the facility on arrival. On these corpses will be the data pads and the player will have to deal with Ninetails defending the location they have overrun.
+-    The Illegal version of the mission there will be no corpses, just security at the location which will drop the data pads as loot when killed.
+This mission also introduces a new mission module called the AnteUpWaveSpawner, this module will cause AI to continuously spawn in waves at the location. These waves get progressively harder based on triggers, the triggers for this mission are Codes being successfully entered into the dispenser and every 5 minutes the player is at the location(on a looping timer). On this mission the waves will start to spawn once the first boss is killed.
+- New Illegal Mission: Kareah - Steal Evidence
+With this new Steal Evidence mission offered by Twitch, players are tasked with stealing the next Evidence item that spawns from the Kareah contraband dispenser. To obtain this mission, players must talk to Twitch in person after completing her intro mission and having climbing in reputation. Only one instance can be active on the server at any time.
+The first objective simply states to retrieve the Evidence, which will place a marker on the evidence dispenser. The mission description in the MobiGlas has a brief explanation on how to get the access code for the dispenser. When a box of evidence is spawned, the marker moves from the dispenser to the evidence, objective stays the same. Once the box of evidence has been grabbed by a mission player, the delivery destination is marked. If the box of evidence is taken away by another non-mission player, the marker will stay on it to allow recovery of the box by mission players.
+## Feature Updates
+Gameplay
+- Repel Raid on Orison with New Crusader Platforms
+With 3.21 we are bringing back the Repel Raid on Orison missions (Originally called Platform Assault on Orison). These FPS combat missions around Orison will now utilize newly added platform clusters that have been placed around Crusader.
+Re-introduction of Bounty, Assassinate, Clear All, and other missions. These FPS combat missions around Orison will now utilize newly added platform clusters that have been placed around Crusader to provide opportunities for more concurrent missions and more unique locations. These missions include eliminate all missions similar to the current UGF missions. For these islands the player will be tasked with killing everyone in a given building. These Mercenary missions available from Crusader Industries will have three difficulty curves, ranging from an easy clear of one building, to a hard clear of three buildings. Similar to eliminate all missions, Eliminate Specific Missions will  task the player with killing single or multiple Bosses based on difficulty. For players to qualify and receive these missions they first need to complete Security Work Assessment for Crusader Security.
+Ships and Vehicles
+- Driver Remote Turret QoL Improvements
+Zoom has been added for all vehicles where a Drivers/Pilots that can use a remote turret. Press or Hold Z to activate. Gyro mode is now enabled & togglable (G) for Driver Remote Turrets for all ground vehicles.
+## Bug Fixes
+- Fixed - Stanton - Character - Main menu shows "Player Unstowed" without an "Enter Star Citizen Universe" button, unable to load into persistent universe
+- Fixed - Multivehicle - PU - Vehicles / Ships / Camera-Actor - Camera will be forced into third person after the player stands up from any vehicle seat twice
+- Fixed - PU - Stanton - AI - Bartenders are missing in multiple bars in major cities
+- Fixed - AC - Single Weapon Elimination - UI / Gameplay -When a player is one kill from winning the game, they receive the prompt "Enemy Team on Final Kill"
+- Fixed - PU - Actor Feature - Shopping / Camera / Interaction - When Trying On backpacks the camera is stuck looking at the player's feet
+- Fixed - Stanton - Spawn Closet - Mission Content / AI - Enemy AI can spawn out of bounds of their intended spawn points
+- Fixed an issue causing player legs and arms to become contorted in many ship cockpits
+- Fixed - AC - Frontend / UI - Lobby list will display the player's Community Monicker name while the Friends list will display player’s Handle Name
+- Fixed - PU - Docking / Undocking - ATC - After undocking from a location contacting the ATC will repeat "you are clear for launch" and provide no other function
+- Fixed - AC - Frontend - Lobby does not update elements when accepting an "invite to lobby" within a match
+- Fixed - PES / Inventory - Cannot equip looted items after restarting game session
+- Fixed - Multivehicle - Cargo / Salvage - Salvaged weapons and components disappear from ship cargo bay after storing
+- Fixed - PU - Vehicles - Combat / Missile Operator Mode - The Ballista cannot hit locked targets with missiles due to the missile missing and hitting the Ballista instead
+- Fixed - AC / PU - Vehicles - The Tumbril Nova drifts across the ground after a slight movement input
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 1 Server Crash
+- Fixed a Memory Leak

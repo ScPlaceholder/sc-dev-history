@@ -1,0 +1,45 @@
+## Star Citizen Alpha Patch 3.24.3
+Alpha Patch 3.24.3 has now been released onto the LIVE Environment! Launcher should now show: VERSION 3.24.3-LIVE.9423704.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Items not saved to LTP Include:
+- Hangar Decoration Customizations (Decorations will be returned to player's home location inventory)
+- Medpens, Ammo, Ongoing Rentals and Refinery Jobs, and Character Customization (Make sure to Export your Custom Character)
+This Spectrum post is an abridged version of the notes. For the full in-depth details, please visit the main notes at the link below!
+Full 3.24.3 Release Notes: https://robertsspaceindustries.com/comm-link/Patch-Notes/20309-Star-Citizen-Alpha-3243
+## Features and Gameplay
+## Gameplay
+- Starmap Mission Objectives Panel Updates
+## Ships & Vehicles
+- Added New Ship: RSI Polaris
+- Added New Ship: MISC Starlancer Max
+- Updated Standard & Polish: Anvil Terrapin
+- MISC Prospector Full Dash Rework
+- Added Point Defense Cannons (PDC)
+- Updated Quantum Fuel values for most ships to fit designated archetypes and ranges. This will increase some while decreasing others.
+- Temporarily Muted Annunicator Panel Audio (Until a proper fix for looped audio is in)
+- Updated MISC Starfarer Annunciator Scale and Made Vertical
+- Realigned MISC Freelancer Annuciators to be Vertical
+- Vehicle MFDs: Improved layout on target status screen to reduce overlaps
+- Made Slight adjustments to Flight Tuning for the Mirai Fury and Aegs Sabre Firebird/Peregrine
+- Bombs now Inherit the Hostility of the Launcher Entity (AI and PDCs can now detect hostile bombs)
+- Added Rentable Ships in Arena Commander: Sabre Firebird, Anvil Hornet F7C MkII, and URSA Medivac
+## Core Tech
+- Graphics Settings Updates - Borderless and DLSS minimum resolution options
+- Added GPU Frametime Graph Console Command - enabled: "r_displayFrameGraph 1"
+- Further Server and Networking Performance Optimizations
+- Overall Ship/Vehicle Physics Network & Server Performance Optimizations
+- Added New Logic to Trigger Ship Destruction if Physics Threshold is Exceeded (This should help with ships vibrating and intersecting for long periods causing large physics performance hits on the server)
+- Render To Texture Performance Polish
+- Further Weapon Particle GPU Performance Improvements
+- Further Entity Spawner Reliability Improvements
+- Server Physics Entity Rotation Performance Improvements
+- Reduced Audio Mix Volume of Planetary Wind
+## Bug Fixes and Technical Updates
+3.24.3 Contains dozens of fixes for bugs encountered in 3.24.2 including many client and server stability updates.
+- Fixed 6 Client Crashes
+- Fixed 12 Server Crashes
+- Fixed 3 Server Deadlocks
+- Fixed 1 Hybrid Crash
+- Made Several Audio Performance Optimizations
+- Made Several Out Of Memory Server Improvements

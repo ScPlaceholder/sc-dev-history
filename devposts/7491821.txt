@@ -1,0 +1,73 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to Wave 1 testers!  Patch should now show: VERSION 4.0.0-EPTU.9444617.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US
+Audience: Wave 1
+Long Term Persistence: Enabled
+Server Meshing: Enabled
+Mesh Configuration: 2:2:380 (2 solar systems, 2 servers per system, 380 players total per mesh)
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Today's build contains many more updates to the mission system
+- Stability & Bugfixes
+- Server Meshing  2:2:380
+- Pyro Star System and New Locations
+- Contested Zones
+- Jump Points
+## Known Issues
+For 4.0, we have removed the "Extended View" option in the MFD screen and replaced it with a third tab which is called "Enable Advanced HUD". That HUD however is not yet ready and is WIP so won't show anything.
+- PU - Medical Insurance Terminal / UI - Regeneration kiosk UI does not update after transferring imprint
+- PU - Pyro - Network / Streaming / Locations - Certain Rastar Locations will briefly stream in for all player located in Pyro, regardless of distance
+- PU - Multi-System - Jump Points - Ships / Vehicles / VFX - Ships will have a VFX trail in front of the Cockpit after Jumping whenever the Vehicle moves
+- Stall - Client - PU - Jump Points - Performance - There is a brief client stall when travelling through the Jump Point Tunnels
+- PU - Multi-System - Jump Points - Ships / Vehicles / SFX / Audio - The Jump Point SFX are rapidly looping/cut off
+- PU - UI - mobiGlas - mobiGlas UI is displaying incorrectly on several pages/tabs
+- MISC Starlancer Max - PU - Vehicles - Starlancer Max landing gear won't deploy but ship speed is limited as if they were
+- PU - Pyro - Locations - Checkmate - Medium Hangar blocked by station geometry
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- Multiweapon - PU - Actor / Animation / Weapons - Both male and female actors do not animate while reloading weapons
+- PU - Pyro - Orbituary - Locations / Art / VisArea - Navigating from assigned hangar elevator to "Entrance" opens to a VisArea portal above medical clinic
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+## Features & Gameplay
+- Locations
+- Added Interior Map Markup for All Pyro Station Interiors
+- New Jump Tunnel SDF Shaping
+- Asteroid Base Location Polish
+- AI
+- Added New Loadouts and Reduced Amount of AI in Area18
+- Core Tech
+Pyro Dynamic Music
+The music system for the Persistent Universe has had a major overhaul with a new Dynamic Music system. Players will now experience many newly added scores of music and throughout the PU that are triggered and seamlessly transitioned in different situations by location, flight actions like quantum travel and jump tunnels, or combat both in FPS and in Flight.
+- Hangar Streaming Performance Optimizations
+- Contested Zone Optimization Pass
+- Further Server Physics Performance Optimizations
+- Terrain Streaming Performance Improvements
+- Client Shadow Render Performance Optimizations
+- Spawn Closet AI Performance Improvements
+## Bug Fixes
+- Fixed - PU - UI - Party Markers - Party nameplates are not visible after forming party
+- Fixed - PU - Mission Refactor - Missions / Solar System Transitions - Missions located in Stanton can be accepted in Pyro (STARC-137431)
+- Fixed - RSI Polaris - PU - Vehicles / Art - Player can get stuck in cargo elevator shaft (STARC-138678)
+- Fixed - SC - Creatures - Quasi Grazer - There is no tundra quasi tongue present for player to harvest
+- Fixed - PU - Multi-System - Missions - Bombing Run missions do not complete upon destroying fuel tanks marked as objective (STARC-138636)
+- Fixed - PU - Multi-System - Jump Points - Ships / Vehicles / Game Code / Mining - Toggling Mining/Salvage/SCM Mode in the Jump Tunnel breaks the Flow
+- Fixed - PU - Multi-System - Jump Points - Ships / Vehicles / UI - The Player can Repeatedly Trigger Jump Point Activation
+- Fixed - Fixed - PU - Pyro - Rundown Station (R&R) - Checkmate Station - Server Meshing / Locations - Server error recovery kills player functionality when riding an elevator
+- Fixed - PU - UI - The player's corpse marker does not appear when the player dies
+- Fixed - PU - Stanton - AI / Locations / Game code - Some Human NPCs in Orison can be seen jittering, zooming off the Orison's platforms, walking in reverse
+- Fixed - Front End - Character Customizer - Customizable options disappear when scrolling
+- Fixed an issue causing owned ships to sometimes get cleaned up in personal hangars when they normally should not
+- Fixed - PU - Pyro - Contested Zones (CZ) - Checkmate - AI / Locations - NPC's will get stuck in LoopUntil and not move
+- Fixed - Argo MPUV Cargo - Ship / Physics - Argo MPUV Cargo cannot lift off from landing pad
+- Fixed - PU - Stanton/Pyro - ARGO SRV - Ships / Vehicles / Ship Components / UI / Game Code - Using the Argo SRV's Remote Turret causes the Quantum Drive to Stop Functioning
+- Fixed - PU - Stanton - Crusader - Orison - Locations - AI can be found stuck outside of Hab Building rear entrance
+- Fixed - PU - Pyro - Colonial Outposts - Yang's Place - Locations / Art / Physics / Collision - Section of terrain near Storage Access Kiosk missing collision
+- Fixed issue with countermeasure hold ratio not working
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 7 Server Crashes

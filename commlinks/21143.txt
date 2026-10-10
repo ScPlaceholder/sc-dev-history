@@ -1,0 +1,115 @@
+Secure Yours Now
+SHIP HANGAR SERVICES
+COMMAND MODULE
+REFUELING IMPROVEMENTS
+ULTIFLEX NOVIAN CROSSBOW
+KASTAK ARMS PLASMA GRENADE
+BACK to RSI
+Alpha 4.8 New Features & Content
+Alpha 4.8: Tactical Strike arrives with a range of new additions and improvements, and we went straight to the teams involved to ask the questions we knew were on your mind.
+From Ship Hangar Services to the Command Module, refueling improvements to the Ultiflex Novian Crossbow, here are the answers from the devs themselves.
+SHIP HANGAR SERVICES T0
+What is Ship Hangar Services T0?
+Ship Hangar Services T0 is the initial version of a feature that enables ships with dedicated service bays to repair, refuel, and restock the ammo, missiles, and countermeasures of any ship or vehicle that fits within its bays. All services require resources that must be on the host ship’s cargo grid: refueling consumes hydrogen fuel and quantum fuel, repair consumes RMC, and rearming consumes ammunition and missiles.
+To allow the stocking of resources, new countermeasures and ammunition commodities are available in shops. Additionally, missiles can now be stacked on cargo grids. Storage improvements for stacked missiles are in the works, which will allow them to sit cleanly on grids rather than floating.
+What does T0 mean in practical terms, and what can players expect from the feature at launch?
+T0 delivers the base functionality with no cooldown between servicing operations - ships can cycle in and out continuously. Monitoring capabilities, permissions management, and pricing controls are planned for future iterations.
+Which ships offer Ship Hangar Services at launch, and do they all provide the full suite of repair, rearm, and refuel?
+At launch, the Aegis Idris variants, RSI Polaris, Origin 890 Jump and 600i, Anvil Carrack, MISC Starlancer TAC, and Drake Ironclad Assault are supported, with others to come. Currently, all supported ships offer the same range of services.
+Players are familiar with landing zone servicing; what’s different about how Ship Hangar Services works in the field?
+For Tier 0, the UI and procedure will be identical for those requesting services in landing zone hangars. Players must be in their vehicle and landed to access the landing app.
+If I only need fuel and not repairs, can I request just that, or does the system service everything at once? And, if I want the full package, is there a quick option for that?
+The options are the same as at landing zone hangars:
+- ‘Repair’ is all or nothing. If insufficient RMC is available, no repairs occur.
+- ‘Refuel’ fills the hydrogen and quantum tanks until full or by a specific amount.
+- ‘Restock’ replenishes ballistic ammo, countermeasures, and missiles. Ammo comes in several sizes and must match the size of weapon. All countermeasures come in Decoy and Noise varieties, and all ships share the same type. For missiles, racks that still have missiles loaded can only be restocked with the exact same missile type. Empty racks can be restocked with any missile of the correct size.
+An ‘All Services’ button was considered for quick servicing but is unsupported for T0; players must select each service individually.
+How quickly can Ship Hangar Services turn a ship around?
+With this T0 implementation, services are provided almost instantly. In a future patch, wait times will be introduced based on the amount of resources consumed for the services.
+How many ships can be serviced at once, and is there any kind of queue system for managing demand?
+There is currently no limit other than the physical limit of space in the bay. As the feature develops, bays will support a defined number of vehicles at once, with additional ships entering a queue until a slot becomes available.
+For crews who want to lean into the support role, what does running Ship Hangar Services look like in practice? Who’s doing what, and how many hands does it take to run it well?
+For Tier 0, the role of managing a ship’s services requires understanding the fleet it supports to ensure it’s carrying the correct stock in appropriate quantities. For example, while RMC and fuel are uniform across ships, ammo and missile needs vary. After establishing the fleet’s needs, the role involves purchasing, loading, monitoring, and maintaining stock.
+How do you see payment and compensation systems developing within Ship Hangar Services?
+As there is currently no interface for the host ship to set prices, we made the decision to make services free, allowing players to use the feature to support their orgs. As the feature matures, we plan to introduce a dedicated Service Terminal to give host ship operators full control over pricing and permissions.
+Does the system distinguish between an invited guest and an intruder when another player enters your hangar?
+Yes, players who trespass aboard a ship will automatically be blocked from using its services.
+What does the vision for Ship Hangar Services look like beyond T0, and will more ships be added to the roster over time?
+The full feature will aim to include:
+- A Service terminal added to any ship with a service hangar allowing for:
+- Management of permissions depending on the user’s relationship within the social app.
+- Approval of requests from unapproved users.
+- Management of resource pricing depending on the user’s relationship within the social app.
+- Monitoring of resource inventory on grids.
+- Locking of amounts of resources from use in services.
+- Players able to select the amount of ballistics and missiles they want rearmed.
+- Wait time per unit of resource consumed.
+COMMAND MODULE
+What is the Command Module?
+The Command Module is a detachable ship that serves as both the pilot station for the attached craft and an escape vehicle for the craft's crew.
+What can the Command Module do when detached?
+When the Command Module is connected to the host ship, its own systems are disabled and control of the host’s functions is assumed by the module, allowing players to manage power allocation and more from within.
+When detached, both ships operate entirely independently, with each crew controlling only their own systems. The Command Module functions like any other ship. It can fly, quantum travel, and engage in limited combat scenarios due to its weapon loadout.
+How has the Command Module change since it was envisioned?
+Compared to the original Caterpillar module, you’ll notice a slight size increase to accommodate all the requirements of both the original Caterpillar and Ironclad crew sizes for its role as an escape vehicle. In addition, the full set of components to make the ship function is physicalized and accessible, and a ground entrance ladder is now fully set up. All the drop seats have personal storage integrated into their bases and the ship retains some bunk beds too. Overall, the Command Module retains the spirit of the original but has been updated to modern standards inside and out.
+Does the Command Module have a docking collar allowing it to dock with ships beyond the Ironclad and Caterpillar?
+No, the only ships it can currently connect to are the Caterpillar and Ironclads.
+If someone detects my Command Module, can they trace it back to the main hull? Are there any identifiers or signature relationships between the Command Module and the main hull?
+This is not something currently supported but one we want to look into in the future.
+If my Command Module is docked and someone boards my ship, can they detach and steal it?
+Yes… make sure you don’t let unwelcome people aboard.
+REFUELING IMPROVEMENTS AND NEW CONTRACTS
+What improvements and updates have the team made to the refueling mechanics in Alpha 4.8?
+The system has been significantly simplified. Fuel nozzles no longer take damage, and flow speeds are adjustable through item customization. Fuel pods remain closed by default and must be opened manually, then automatically close once the refueling process is complete.
+The refueling process is automated - as long as a fuel pod of the appropriate fuel is opened, the process will start and end automatically once the receiving player confirms their purchase. The base flow speed is now defined by the nozzle, while the different fuel pods add a modifier to it.
+Docking has also been updated. How does that change the experience for refueling pilots connecting to other vessels?
+The docking request can now be sent by both the fuel giver and the fuel receiver. When docking is accepted and the ships get close enough to each other, autodocking is always initiated. Here, the receiver will dock onto the fuel giver.
+What types of refueling contracts can players expect at launch, and are there any prerequisites for accessing them?
+There will be an introductory contract where a new faction offers players their first refueling job. This is immediately available with no reputation requirements.
+Generally, refueling will involve supporting NPC ships. However, depending on the star system, there is a chance of piracy. Some of the higher-ranking contracts might require players to ensure they have protection.
+Can players take on multiple refueling contracts simultaneously, or is it one job at a time?
+Players can accept multiple refueling contracts simultaneously after completing the introductory contract.
+Can refueling contracts be tackled as a group, or are they designed as solo contracts?
+Yes, there will be contracts that have more than one ship to refuel.
+How does payment work for refueling contracts, and what factors influence what players walk away with?
+Players will be paid a set rate for the fuel by the NPC they’re refueling. Upon successfully completing the contract, the United Wayfarers Club will provide an additional completion payment.
+Alpha 4.8 introduces refueling beacons. Can you walk us through how they work?
+Currently, the process is that when a player activates a refueling beacon, an NPC ship will arrive, quote a price, and provide fuel once accepted. To trigger a beacon, you must be in the pilot seat and have no active crimestat. Note that if you are in active combat when the NPC ship arrives, it will leave without initiating the refueling process.
+Player-to-player beacons will be available in the future.
+What does a career in refueling look like for players who want to specialize?
+As organized fleet gameplay continues to develop, we anticipate scenarios in which multiple ships need refueling simultaneously, including massive capital ships that require significant fuel reserves. Refueling specialization will become increasingly valuable as fleet operations expand and pilots look to stay in the fight longer without returning to a station.
+Refueling contracts will offer a variety of ships to service, alongside new equipment to outfit your own, giving you more ways to approach the role. And finally, when player-to-player beacons come online, you’ll be able to respond directly to urgent refueling requests from stranded pilots, becoming a true lifeline across the ’verse.
+ULTIFLEX NOVIAN CROSSBOW
+What role does the crossbow fill in Star Citizen’s FPS arsenal?
+The Novian Crossbow fills a niche no other FPS weapon in the ’verse currently occupies. It's quiet, hits incredibly hard, and is surprisingly lightweight for the damage it delivers. The sway profile is best in class, meaning you can bring it up fast and land shots on targets who think they have the drop on you. It rewards skill and precision in a way that feels totally unique.
+Is there a lore reason for a crossbow existing in the Star Citizen universe?
+Frontier settlers and hunters alike have kept crossbows in their arsenals for centuries thanks to their ability to swiftly and precisely take down big game without alerting the rest of the herd. When special force operatives began to bring crossbows along on covert strikes for similar reasons, UltiFlex decided to make its own take on the classic weapon with modern materials and design that was as suitable for infiltrating enemy strongholds as it was stalking prey through the forest.
+How can players obtain the crossbow? Is it craftable, lootable, or purchasable?
+Multiple variants of the crossbow can be unlocked for crafting via a blueprint available through Tactical Strike Groups or found through various loot pools across the ’verse.
+For players who took part in the Shroud of the Avatar promotion, how do they claim the crossbow?
+If you took part in the Shroud of the Avatar promotion, a special variant of the Novian Crossbow is waiting for you. Find out how to claim it on Spectrum.
+What can players expect from the crossbow in terms of range and damage output?
+The crossbow currently has the highest damage alpha of any stocked FPS weapon and is capable of one-shotting players wearing heavy helmets in its current iteration. However, this is subject to change as we continue balancing. The trade-off is that it also carries the harshest projectile drop and lowest projectile speed of any stocked FPS weapon, so expect a fun mix of aiming ahead of your target and hitting them in exactly the right place.
+How does the crossbow hold up across different combat scenarios? For example, at close, mid, or long-range?
+UltiFlex built this weapon to live up to its name, and it shows. The crossbow’s versatility speaks for itself - at long range, it rewards players who can read projectile drop and speed, while at close quarters, its best-in-class hipfire makes it formidable when things get tight. In the right hands, no range is off limits.
+Does the crossbow have a headshot or precision damage mechanic, and how does accuracy factor into its effectiveness?
+Currently, a single headshot can drop another player, even if they’re wearing a heavy helmet, thanks to the crossbow’s high alpha damage and minimal damage drop-off. As with all stats, these are subject to ongoing tuning based on observed player usage and evolving balance needs.
+Beyond raw damage, what advantages does the crossbow offer over conventional weapons?
+The Novian Crossbow is exceptionally quiet, making it significantly harder for enemies to pinpoint where shots are coming from. It affects NPC audio perception in a similar way to a suppressor, giving you a tactical edge in stealth engagements that no other FPS weapon currently offers. On top of that, it has a best-in-class sway profile.
+Can bolts be retrieved after firing, and what types are available?
+Bolts shatter on impact, so each shot is single use. Default bolts are available and can be crafted. Keep an eye on what else might be available in the future.
+Can the crossbow be used in zero gravity or EVA situations?
+Yes, the crossbow works in zero gravity and EVA situations. Gravity affects projectile drop, so the heavier the gravity, the more you'll need to compensate, and the same is true in reverse.
+KASTAK ARMS PLASMA GRENADE
+What is the plasma grenade and what niche does it fill in Star Citizen’s FPS arsenal?
+The plasma grenade is Star Citizen’s first area-denial utility. Rather than dealing a single burst of damage, it creates a hazard zone that forces enemies to reposition or take sustained damage. Chokepoints or any situation with enemies in a contained space is where the plasma grenade truly shines.
+Where can players get their hands on the plasma grenade?
+Anywhere you’d normally pick up grenades. They’re well stocked across the ’verse, so you won’t have to go far.
+What should players know about the plasma grenade’s blast radius and damage potential when deciding how to use it?
+The plasma grenade creates a significant hazard area that deals sustained damage to anyone caught inside it. Like all weapons, values will be tuned as the game develops, but the intent is clear: enemies who don’t move will not last long. Plan your throws accordingly.
+What does smart deployment of the plasma grenade look like and how does range factor into that?
+As the plasma grenade detonates on contact, the key is landing it centrally to where your target is. The closer an enemy is to the center of the hazard zone, the longer it takes them to escape and the more damage they take. Get familiar with the grenade’s drop and you’ll be placing it exactly where it needs to go.
+Is the plasma grenade hand-thrown only or are there other ways players might be able to deploy a plasma hazard?
+For now, it’s hand thrown. However, we have plans to expand this hazard-creating gameplay as well as introduce more utility gadgets in the future.
+What happens when a plasma grenade detonates inside a ship, and what are the risks to components and life support?
+Detonating a plasma grenade near ship components risks damaging them. The intention is for plasma grenades to create fire hazards inside ships, adding a dangerous new dimension to shipboard combat. That mechanic is targeted for a future update, so expect things to heat up.
