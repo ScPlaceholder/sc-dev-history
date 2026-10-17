@@ -1,0 +1,31 @@
+## Star Citizen Patch 3.3.5
+Alpha Patch 3.3.5 has been released to the PTU, and is now available to test!  Patch should now show: PTU-987405.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state, they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- Hurston, Aberdeen, Arial, Ita, Magda, reststops: Transit, shopping, assets.
+- Lorville: Transit, landing, and shopping.
+Major Known Issues:
+- Adding contacts can cause the client to freeze. W/A: Add contacts by following each other on the PTU website.
+- Lorville ATC is not cleaning up ships, preventing landing and ship spawn. W/A: Land in any available open hangar regardless of permissions.
+- Admins and mission givers may get into an unresponsive state.
+## New Features
+General
+Universe
+- Added: New Planet - Hurston.
+Hurston is the first planetary location, and as such is considerably larger than moons and consists of a variety of biomes.  Additionally, you will find several outposts, labeled HMC (Hurston Mining Centers) and derelicts scattered about the surface.
+- Added: New Moons - Aberdeen, Magda, Arial, and Ita and populated them with a handful of outposts.
+- Added: New Major Landing Zone - Lorville
+Lorville is a large city area, and as such only has one legal area for landing and port entry.  Space above residential and commercial areas are protected by a no-fly zone. Players will be warned when they are entering that zone via HUD warnings, visual indicators, and increasing audio alerts. If they continue into the zone, their ship will be destroyed.  To move around the city, there is a train style transit system and signs to help guide the way.
+- Added: Hurston clothing/armor variants.
+- Players now have expanded interactions with some items.
+## Feature Updates
+Ships and Vehicles
+## Bug Fixes
+- Landing markers on Port Olisar should no longer appear to flicker.
+- Cargo boxes should no longer become stuck to the player's feet/legs.
+Technical
+- Fixed 4 client crashes.

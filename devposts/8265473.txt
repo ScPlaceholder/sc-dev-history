@@ -1,0 +1,56 @@
+## Star Citizen Alpha Patch 4.3.1
+Alpha Patch 4.3.1 has been released to all backers to test!   Patch should now show: VERSION 4.3.1-PTU.10262876.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Starting aUEC: 15,000,000
+## Testing Focus
+Apollo ships will be flyable this weekend on PTU for players who have already pledged for them.
+- Stability & Bugfixes
+- Onyx Facilities Part 3
+- MedGel - Medical Respawn Resource
+- Dropships & Watch Towers
+- VOLT LMG "Fresnel"
+- Ship Armor and Ballistic Damage changes Pt. 2
+- New Ships: RSI Apollo Triage & Medivac
+## Known Issues
+The issues below are meant to help give a better indication on things that may happen during gameplay and do not always occur 100% of the time.
+The Apollo won't be able to accept new medgel canisters to refill it in this build tonight for the weekend. You can refill it this weekend by claiming the ship.
+- RSI Apollo - ( All Variants ) - PU - MedGel / Vehicles / Actor / Interactions - The RSI Apollo series medical beds will not accept medical canister even when empty
+- PU - Actor - Player character does not receive fall damage
+- PU - Stanton - ASD - Location / Respawn Screen - Player will be rescued and respawn back at the facility after being incapacitated
+- PU - Collector - missions - Wikelo Turn is have a 15minute cooldown between turn ins
+- PU - Stanton - Mission Content / Game Code - Multiple missions don't progress after reaching the mission location
+- Multi-Location - PU - Pyro - AI / Locations - Turrets at Farro Data Centers are not firing
+- Multi-System - PU - Multi-Location - Ladders V2 - Traversal / Actor / Mantling / Locations - Player is unable to mantle ladder from the top to climb down
+- Multi-location - PU - Stanton / Pyro - ASOP / Locations - ASOP Terminal inside hangar remains in spinning loading screen after destroying ship on pad
+- ARGO ATLS  - PU - Mounts / Cargo / Tractorbeam - The ATLS is unable to pull cargo off a ship's cargo grid after it is moved from place of origin to new location
+- PU - Stanton / Pyro - Armor / Loot Box / Inventory / Actor - Equipment and armor dropped on the ground will be suspended in mid-air making them unable to be interacted with
+## Features & Gameplay
+Gameplay
+Onyx Facility and Mission Polish
+Reduced the Onyx Facility Phase 3 mission Plasma Fuel Cell requirements to 1. General Onyx Facility Performance, set dressing, and audio Polish.
+Medical Bed Respawn Updates
+Updated medbed respawn flow for separate medgel use per Tier injury. T3 costs 5 medgel, T2 costs 10 medgel, T1 costs 20 medgel. Players will only be charged once for the highest tier the player has, no matter how many injuries are healed at once.
+Medical bed respawn flow updated with tiered allowed respawn ranges. Outside of these distances you will not be able to respawn at your ship.
+- T1 - 750,000,000km
+- T2 - 8,000km
+- T3 - 50km
+Ships and Vehicles
+- Added New Ship: RSI Apollo Triage
+- Added New Ship: RSI Apollo Medivac
+## Bug Fixes
+At time of this release, SC Alpha 4.3.1 contains over 110 bugfixes for issues occurring since 4.3.1 including 17 that originated from the issue council. 4 of which have already been hotfixed onto 4.3.0 LIVE.
+- Potential Fix: PU - Stanton - ASD Onyx - VFX / Locations - There is a flickering smoke effect in the elevator shaft
+- Potential Fix: PU - ASD Onyx Facilities - Missions / Quantum Travel - Player is unable to Quantum Travel back to Onyx facility after dying and respawning (STARC-176869)
+- Potential Fix: PU - Medbed - Vehicles / Interactions / Medical Screens / UI - Vehicle medical beds have no MedGel stocked upon retrieving the ship
+- Potential Fix: MISC Starlancer TAC - PU - MedGel / Vehicles / Interactables - Medical canister receptacle missing all interactions on the Starlancer TAC
+- Potential Fix: PU - Freight Elevator / Cargo - Entities disappear while occupying the loading platform when interacting with the Freight Manager after Server Error and Restreaming
+- Potential Fix: PU - Pyro - Ship Battles V2 - Escort Ship - Mission Content / AI / Missions - Initial arrival at mission site has more enemies present than intended
+- Potential Fix: PU - Live Design - Actor / Respawn - Law - If a Player has a Crimestat and safely Quits to Desktop they will not spawn at Grim HEX
+- Potential Fix: Multivehicle - PU - Vehicles - Med Bed Respawn or Imprint on Vehicles will reset upon QT to another location.
+- Potential Fix: AC - Multiple Game Modes - Crossroads of Crime - Art / Lighting - The main light source for the map is missing (STARC-164973)
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 1 Server Crash

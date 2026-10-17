@@ -1,0 +1,92 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to Wave 2 testers!  Patch should now show: VERSION 4.0.0-EPTU.9458608.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US Servers
+Audience: Wave 4
+Long Term Persistence: Enabled
+Mesh Configuration: 4:6:500 (4 Servers in Stanton, 6 Servers in Pyro, 500 players total on the mesh)
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Server Meshing
+- Pyro Star System and New Locations
+- Contested Zones
+- Jump Points
+- Advanced HUD View
+- Spawning Into Hangars
+## Known Issues
+- PU - Multisystem - Locations / Inventory  / Actor - Local and Personal Inventory may disappear when force respawning (Workaround: Force Respawn again)
+- PU - Pyro - Rundown Station (R&R) - Checkmate - Locations / AI - AI are spawning out of bounds floating inside of the station
+- PU - Pyro - Rundown Station (R&R) - Multiple Locations - Locations / Physics / Vehicles - Players flying  in the vicinity may explode consistently at random
+- PU - Medical Insurance Terminal / UI - Regeneration kiosk UI does not update after transferring imprint
+- Stall - Client - PU - Jump Points - Performance - There is a brief client stall when travelling through the Jump Point Tunnels
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+## Features & Gameplay
+- Gameplay
+Backpack and Armor Capacity Updates
+Increased Occupancy Volume for Backpacks to Prevent Backpack Inventory Nesting. Further Armor size updates to allow some items back into med/heavy armor such as water bottle and med gun.
+- Implemented Health/Wear functionality on Fuses so Fuses Lose Health Over Time When Connected to a Contested Zone Door
+- Updating Spawn Closets tags to ensure the correct NPCs spawn in the correct locations of a Frontier Outpost
+- Adjusted the Jurisdiction of all outposts on the Starmap to make sure they show who respectfully owns it
+- Ships and Vehicles
+Advanced HUD Polish
+- The speed limiter will now have a value of 100% by default
+- The speed limiter will now show up in the MFD config screen
+- The speed limiter value will not change between master modes anymore
+- Fixed Velocity bar Behaviors
+- Moved the speed and acceleration limiters to discrete mousewheel up / down actions instead of an axis. This also fixes accidently triggering weapon group changes when the limiters change.
+- Unused speed actions (set to SCM, set to target speed) have been removed
+- Binding names have slightly changed. If you use the limiters on your setup you might need to rebind them
+- Moved Ship Alerts to Visor
+Additional Ship Updates
+- Added Missing Annunciator panel to Reliant, Nox, Mantis, Scout, Defender
+- Added Mining HUD to Mole Pilot Seat
+- Mining UI: Updated Mining Bars and Setup With ARGO Style
+- Crusader Intrepid: Adjusted exterior proxies that were clipping into the cargo bay, stopping tractor beams from working (Should fix STARC-139944)
+- Core Tech
+Personal Instanced Hangar Spawning
+Tonight's build will further test instanced hangar spawning in all shards. This will allow players who have completed (or skipped) the NPE mission to get faster into space; spawning in their own property. This is not a temporary change to avoid transit. You will also not spawn in rental hangars, so if you park in a different LZ or station you will wake up in a Hab.
+- Further Network and Interaction Delay Improvements
+- Physics Performance Optimizations
+- Entity Cleanup Optimizations
+- Spawn Closet and Fauna Performance Optimizations
+- Jump Tunnel: Performance Optimizations to Reduce Stalls. Audio Mixing Polish
+## Bug Fixes
+- Fixed - PU - Pyro - ALL Contested Zone (CZ) - Locations / Art / Interactions - The client visibly stalls when opening a loot box
+- Fixed - PU - Stanton - Cargo Hauling - Mission Content / Game Code - Cargo isnt being properly counted when being delivered
+- Fixed - Crusader Spirit ALL Variants - PU / Editor - Vehicles / Design - Rear ramp lights are offset from the ramp (STARC-130160)
+- Fixed - PU - Tractor / Cargo / Hangar / Performance - While in Detaching Tractor Mode, moving Containers in Hangar cause Severe Performance Issue (STARC-138794)
+- Fixed - PU - Locations - Outposts - Hurston / Inventory / Economy - Kiosk / Fleet Manager - Location services are not functional at Hurston outposts, blocking trading, fleet manager, and local inventory management (STARC-116193)
+- Fixed - PU - Stanton / Pyro - Salvage Contracts / Localization / Mission Content / UI / mobiGlas - No primary objectives displayed in the contract details
+- Fixed - PU - Stanton / Pyro - Shopping / Shopping Kiosk / UI - Wallet is rounded off to the nearest million in Shopping kiosks (STARC-144307)
+- Fixed - PU - Stanton - ArcCorp - Area18 - Camera / Locations / Art / Core Tech - FOV - Multiple areas across A18 have visarea/portal issues when the Field of view is wide (STARC-104962)
+- Fixed - PU - Klescher / Law / MobiGlas - Prisoners are unable to transfer Merits while the Receiver is Offline (STARC-134850)
+- Fixed - PU - Inventory / Actor - Dragging items on to the player character causes them to move (STARC-142680)
+- Fixed - PU - Multi-System - Multiple Locations - Locations / Hangars - Player's hangar disappears on player arrival
+- Fixed - MISC Starfarer - PU - vehicles - Starfarer Fuel does not flow from pod with its valve open to another pod
+- Fixed - Multivehicle - PU - Vehicles/ Hud - Vehicle dashboard interaction text is blurry with Advance hud active
+- Fixed - PU - UI Tech / Loot Screen - Items and Weapons are not correctly rendered in the Loot Screen
+- Fixed - Crusader Intrepid - PU - Vehicles / Components / Physics - The cooler cannot be removed from the component bay in engineering (STARC-140233)
+- Fixed - PU - Pyro - Gateway Station - Stanton Gateway Station - Locations / Collisions - Player running on the stairs of refinery floor can fall out of map and die (STARC-143151)
+- Fixed - PU - Pyro - Contested Zones (CZ) - Orbituary - Starmap / Locations / UI - Map disappears when attempting to move the Starmap
+- Fixed - MultiWeapon - PU - Weapons / Code - Tractor beam can tether to target in supporting mode, preventing movement / use of the Tractor Beam feature
+- Fixed - Global - Gamewide - Audio / SFX - Footsteps sound as if the player / NPC is walking on rock / concrete when walking on any material
+- Fixed - PU - Pyro - Eliminate All - Mission Content / UI / mobiGlas - The mission objectives are incorrect for Eliminate All missions
+- Fixed - PU - Pyro - Rundown Stations - Ruin Station - Contested Zones - Locations / AI - If a player dies after killing other players in the contested zone they retain hostility on respawn
+- Fixed - PU - Pyro - Mission Refactor - Asteroid Base - Mission Content - Destroy Items - KillShip - Mission progress is not retained upon relog after client crash during the Kill Ship phase
+- Fixed - PU - Pyro - Ruin Station - Mission Refactor / Missions / UI / Bounty Hunter - KillShip - The mission marker for some Ruin Station KillShip bounties is inside the station
+- Fixed - PU - Pyro - Destroy Items - Outpost - Mission Content / Locations - Mission logic does not continue after the PreInit has finished, making the mission impossible to complete
+- Fixed - PU - Pyro - Rundown Stations - Locations - Armistice Zone can be inside personal hangar preventing use of FPS weapons and vehicle weapons
+- Fixed - PU - Stanton - Locations / Art / Graphics - UGF - Various screen panels inside UGF locations display their image stretched out of proportion
+- Fixed - PU - AI / Vehicles - Dropship reinforcements don't work with the Valkyrie ship
+- Fixed - PU - Pyro - Eliminate All - Mission Content / AI - Enemy AI are not consistently spawning at the mission location
+- Fixed - PU - Jump Points - Ships / Vehicles / VFX / UI - Ship Shaped Jump Point VFX/Silhouette visible during Jump Tunnel
+## Technical
+- Fixed 13 Client Crashes
+- Fixed 6 Server Crashes
+- Fixed a Server Deadlock
+- Fixed a Hybrid Crash

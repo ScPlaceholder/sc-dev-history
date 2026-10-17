@@ -1,0 +1,87 @@
+PU Monthly Report
+March 2025
+This month’s PU Report features progress on a variety of ongoing development initiatives, including the recently released Alpha 4.1, upcoming vehicles, AI work, and mission content. Read on for the latest updates!
+## AI (Content)
+For the recent debut of Star Citizen’s first alien NPC, Wikelo, AI Content worked alongside the Narrative Design, Design, Animation, Audio, and Character Art teams to prototype the character’s general and air-traffic-control behaviors. The team also took a more active role in prepping incoming audio and animation files from recent capture sessions.
+Development continued on new behaviors to support some of the story developments happening in the ‘verse in the coming months. Finally for AI, they revisited issues in the population behaviors of existing landing zones.
+## AI (Features)
+In March, AI Feature’s priority was the valakkar, specifically the juvenile variant. As part of the polishing phase, new functionality was added to support upcoming gameplay, including replacing ineffective melee attacks with a submerge-and-relocate behavior when the player gets close. New burrowing modes were also added that allow the creature to submerge on the spot rather than dive into a new position.
+New firing modes were added to give better control over fire rate and damage per shot depending on whether the target is on the ground or the air. Bespoke firing-animation variants were also added when firing at more vertical angles.
+The team also iterated on the kopion, integrating new chase technology for more effective attacks, including a leap.
+For Human combat, iteration continued on the first-reaction flow escalation, specifically focusing on the animation setup for usables so that it works well if the AI is sitting in a chair, leaning on a railing, or crouching to inspect a maintenance panel.
+The team also progressed with reaction animations for when the AI detects compromised cover. This allows NPCs to appear more responsive to the actions of the player and react appropriately to new threats.
+Similarly, the team is refactoring the response to combat tactic events, such as needing to reload. This is now done within the tactic behavior itself rather than at a higher level, which allows more customization depending on the current situation, leading to better and more responsive behaviors.
+## AI (Game Intelligence Development Team)
+In March, Game Intelligence Development had two main focuses: the full implementation of Views and organization and analysis for Mission System 2.0.
+For Views, feature-related tasks are now functional in StarScript, including representation in the script graph. The team also included the new input and output visuals, which makes them more distinctive, while information on the task number was added. An update was also made to the Mastergraph to integrate Views into the various functional connected states. This is still a work in progress, with internal testing beginning soon.
+For the Mission System, the devs continued to explore ways to build a system that will be more efficient and simpler for the game designers to use.
+## AI (Tech)
+Last month, AI Tech continued to work on features that will improve overall detail and quality, including finalizing work for the spatial priority solver and priority beacon system. They also integrated these features into the navigation, pathfinder, and tactical-point systems to help better prioritize and solve requests sent by NPCs close to players.
+Regarding tools, work was completed on StarScript Views to allow the designers to group behavior functions and callback logic. Following this, work began on visualization improvements for the Subsumption MasterGraph. Additional adjustments were made to AI ship logic to enable it to work correctly with the new flight modes.
+The team is currently working on NPC cover generation, optimizing places where cover will be generated, allowing it to be marked with various flags for better context during combat scenarios.
+For the navigation system, the devs fixed various bugs, including issues with tile triangularization generation cases and an object-container export case related to navigation data. They’re currently progressing with improvements to 3D navigation for spaceships and NPCs in EVA.
+## Animation
+The Animation team continued developing various sizes of valakkar alongside making updates to the kopion. They also updated AI background animations and added ‘disabled’ animations to the Argo ATLS. New AI facial animation content was completed too, including for the Banu mission-giver, Wikelo.
+## Art (Characters)
+In March, the Character Art team continued to work on a new creature for the PU alongside StarWear art debt. They also kicked off new heavy armor and continued creating various rewards.
+The Concept Art team also explored ideas for new in-game rewards and armors.
+## Art (Ships)
+In March, the UK-based Vehicle Content team completed the Drake Golem mining ship and Argo ATLS GEO mining power suit. The MISC Starlancer TAC moved into the final development phase, while the Consolidated Outland Pioneer progressed through whitebox, benefiting from the additional concept work shown during a recent episode of Star Citizen Live.
+An unannounced vehicle successfully passed greybox review and moved into the LOD0 phase, two other vehicles received a bug-fixing pass and final-content work ahead of their release, and another new ship is currently being prepared for its greybox gate review.
+The NA-based team progressed with two upcoming RSI ships. The first, the Apollo, successfully passed its whitebox review gate and moved into greybox with support from the Concept team on the medical room design. Some aspects progressed significantly due to utilization of the extensive RSI kit created for the Zeus and Polaris. The second, the RSI Perseus, passed its whitebox review at the start of March. Like the Apollo, some areas progressed visually thanks to the RSI kit.
+Work continued on three unannounced vehicles too: a variant of a popular ship passed greybox review, another variant is approaching greybox review, while an all-new model entered production in preparation for its whitebox review in early April.
+## Community
+The Community team kicked off March with support for Stella Fortuna, launching the Bar Crawl screenshot contest and publishing a catch-all post highlighting the exciting activities available to players.
+For Alpha 4.1, the team published a detailed catch-all post, Q&As for the Drake Golem and Argo ATLS GEO, and a Patch Watch highlighting upcoming features, improvements, and fixes not included in the Roadmap.
+The team spent time with our developer in MTL to help detail out the upcoming Referral Revamp, which aims to include better rewards, more frequently. The team also continued mapping out event-related plans for the year, including supporting the Bar Citizen World Tour, and the upcoming International Bar Citizen Weekend.
+Evergreen tasks continued throughout the month, including regular publications like the weekly This Week in Star Citizen, bi-weekly Roadmap Updates and Roundups, and the monthly refresh of the Arena Commander Schedule. The team maintained their commitment to capturing player feedback, directly channeling community insights to development teams.
+Additionally, the Community team supported and celebrated the 10th anniversary of the Crux Cup, organized by ANZIA Racing. They’re currently preparing for the upcoming community meetups throughout the 2025 Bar Citizen World Tour.
+Lastly, they launched the Squadron 42 Newsletter’s Vanduul Interpreter contest, offering another opportunity for the community to dive deeper into Squadron 42, with participants competing for the chance to win a rare Vanduul Scythe.
+## Core Gameplay
+For the Argo ATLS GEO, the Core Gameplay team completed the suit’s mining and thruster functionality, added a health bar and damage states, and supported additional improvements to the base ATLS.
+They also implemented the first version of the weapon overheat mechanic to the Volt Parallax energy rifle, which enables the player to engage a secondary fire mode at the risk of overheating. More weapons will gain the overheat mechanic in the future.
+Progress was made on Engineering gameplay throughout March, with Core Gameplay supporting various teams with Resource Network issues and bugs. They also added auto-throttling, which reverts to a lower or powered-off state if an item doesn't have power during an update.
+Changes were made to vehicle coolant. Now, effectiveness is based on an item's physical properties, with a specific amount of coolant counteracting heating caused by an equal amount of power. Coolant consumption uses deltas with a dynamic override – the maximum coolant request is based on the maximum power consumption multiplied by a Resource Network global parameter.
+The team also made progress toward implementing heat gameplay for ship thrusters. This involved adding filters to the engineering UI to allow players to only see items of a particular category. For example, all weapons or all items with malfunctions.
+Selection improvements were also added to the UI. Now, ‘left click’ will cycle through the two closest items (useful for doors covering components), and ‘right click’ will show all overlapping items and allow selection.
+Work was also completed toward Item Recovery T0, with various items being added to blacklists alongside fixes for related respawn flow issues.
+Progress was made on FPS radar and scanning. Now, item components can be detected within vehicles while a player is inside and excluded when outside. The feature’s debug tools were improved too.
+The ongoing transit system rework, known as the Transport System, progressed throughout March, with the team adding setup validation and debugging for non-physicalized carriages to better detect setup issues. The ability to connect carriage zones by a transport network (needed for mini-map routing) was added, as were destination categories and priorities along with the means to display destinations on carriage panels.
+A reward mechanic for collection missions was implemented, which is used for the Collector missions, while the ability to automatically retrieve items from freight or ship elevators via HUD notification was added.
+For the mission system, the team fixed a bug preventing introductory contracts not counting toward difficulty progression.
+‘Sharing prerequisites’ was also implemented. This allows players to invite others to accept contracts they would otherwise be ineligible for providing they meet a specific requirement, such as locality or reputation.
+Time was also spent fixing bugs and improving the robustness of the New Player Experience alongside solving issues causing various missions to be disabled.
+Comms notifications progressed too, including one-way comm-calls from mission givers to the players and comms notifications being triggered by changing mission states, such as ‘completed’ or ‘failed’.
+The mission designers can now trigger comms notifications from mission logic. They also began implementing 3D Building Blocks to display more interesting scenes as the previous method was no longer supported by Server Meshing.
+Finally for Core Gameplay, improvements were made to commodity kiosks to give a better flow to transactions, while fixes were made for bugs relating to hangars, freight elevators, and ship deliveries.
+## Economy
+The Economy team provided balancing support for Supply or Die, with the devs deeming it over-tuned on release. Economy worked with Mission Design to address the issues as quickly as possible without imposing hard limits. Going forward, both teams will collaborate more closely to establish a stable and holistic approach to balancing open-ended missions with multiple viable solutions.
+“Our aim is always to maximize player choices and enable emergent gameplay, but balance against exploitable patterns.” Economy Team
+## Graphics, VFX Programming & Planet Tech
+Last month, the Graphics team overhauled GPU memory management. This allowed them to add new options, a visualization of the GPU memory required for each, and auto-detection for suitable resolution, upscaling, and graphics.
+Gas clouds received a major visual upgrade thanks to the same density-shaping and shading technology used by planetary clouds. Global illumination was upgraded too, with improvements to the image stability and accuracy of both diffuse and specular reflections.
+Planet Tech v5 continued to make good progress, with the team finalizing the distribution and shading of much denser rock formations with more physically plausible placement. The virtual terrain system is also closer to completion, with run-time compression being worked on next.
+The VFX Programming team polished several features, such as fire, networking bandwidth for damage maps, and creatures.
+Vulkan stability was also improved after discussions with Nvidia led to the diagnosis of two potential issues - one in the driver and one in the game. Workarounds to both were added to the latest PTU patch.
+## Mission Design
+March saw Mission Design continuing to fix up various older missions that were deprioritized in the refactor.
+“Alpha 4.1 was unveiled to the community on the PTU, introducing a new sandbox activity that players can engage in for unique items. There is a big push for increased production value on missions with a lot of departments helping out to ensure the experience is the best we can get.” Mission Design Team
+The team also worked on Rayari and Wikelo, the two new mission givers who require items found during the new missions.
+## Narrative
+Aligning with the increased release schedule cadence, Alpha 4.1 was a major focus for the Narrative team in March. For the new Hathor orbital mining facilities, this included adding discoverable datapads around the site, polishing numerous missions that utilized the new locations, and working with Art to improve directional signage.
+The patch release also brings the major milestone of Star Citizen’s first alien NPC, the Banu trader Wikelo.
+"We had a lot of fun creating the character and making the Emporium a place players would enjoy exploring.” Narrative Team
+Narrative also ran a capture session that focused on adding dialogue to several upcoming missions as well as introducing two new faction representatives who players will work with during specific contracts.
+Additionally, the team helped to refactor some older missions with updated contracts. There was also ongoing work with Design to refine some of the locations coming this year to ensure they will provide a rich narrative experience.
+## Online Technology
+In March, the Live Tools team focused on improving the usability of their main support tool, Hex.
+The Online Services team worked on the first pass of the services ecosystem to support upcoming development by the gameplay teams.
+Various social improvements were made, including optimizations to kicking members from groups, the ‘create group’ flow, and the rollback strategy for the ‘addMembers’ flow. They also added metrics to identify the origins of ScyllaDB queries, request logging options, and configurations to specify the maximum number of concurrent requests.
+For analytics, configurations were added for HTTP clients and to enable Kafka connections. For missions, entities were removed from the shard tag, while the mission system was updated too.
+## R&D
+In March, gas cloud detail rendering was improved using techniques used by planetary volumetric clouds. Now, the artists can refine the density provided by the original gas cloud volume database (VDB) via procedural noise using runtime shaping and erosion calculations. Moreover, edge albedo can be controlled to further emphasize the cloud’s volumetric structure. Additionally, a configurable gradient was added to control the blend between the original and shaped density. This allows the team to keep the density of the original VDB data in thin areas of clouds while adding more detail to denser areas.
+For dynamic weather, the rain volume calculation was improved to ease content authoring. The vertical distribution along the local height of lightning events was also refined. Furthermore, the volumetric rendering of lightning was enhanced by providing more flexibility in controlling the lightning gradient.
+## Tech Design
+Tech Design spent March working on an upcoming in-game event, supporting Mission Design with gameplay entity and logic flow setup.
+## VFX
+VFX progressed with their tasks for the valakkar. They also supported the Locations team with effects for Alpha 4.1’s new mission locations, including the orbital laser platform, borehole, cave, and satellite dish.

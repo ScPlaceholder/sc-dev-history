@@ -1,0 +1,5 @@
+Hi,
+In the above video we should have been seeing screen space reflections for the sky, but these are oddly missing (I'll get someone to check why, assuming it's not just user options). Instead what we are seeing is the cubemap reflections, which are regularly re-baked on movement or sun angle changes, but currently aren't re-baked with the movement of the clouds as this has only recently been enabled (unexpectedly early!) and we haven't had a chance to improve the cubemap capture system.
+As for GI, this is mostly about bouncing diffuse (soft) lighting rather than specular (shiny) reflections, but we are upgrading the reflections at the same time in order to avoid a disconnect between the diffuse and specular bounced light. However when it comes to the clouds, they won't be ray-traced (cost would be insane), and any ray-traced reflections that miss opaque geometry will fall back to using either screen space reflections or a cubemap, so again the solution will be to bake the cubemaps much more frequently with moving clouds.
+Ali Brown
+Senior Director of Graphics & Procedural Tech

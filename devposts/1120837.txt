@@ -1,0 +1,20 @@
+## Star Citizen Patch 3.1.4b
+Alpha Patch 3.1.4b has been released and is now available!  Patch should now show: PTU-749296.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- ESP has been tuned down and will likely feel too loose, but will be tuned on slowly as we progress.
+- When switching from hover (HOV) to SCM, the Dragonfly and Nox may re-orient.
+- Gravlev bikes may still scrape or bounce, the extent of which we will be assessing.
+- The Gladius has "special" experimental tuning that has yet to be removed and may cause some abhorrent behavior.
+- There are some issues with switching to decouple and not being able to use AB/boost.
+## Feature Updates
+Ships and Vehicles
+- IFCS has been refactored.
+- Fixes for IFCS instability.
+- Fixes for Gravlev hover mode.
+- Changed acceleration algorithm to transient.
+- Improved atmospheric simulation to support drag and gravity in motion control calculations.
+## Bug Fixes
+Technical
+- Fixed a fatal error crash on exit.
+- Memory leak fix.

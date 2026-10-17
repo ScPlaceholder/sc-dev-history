@@ -1,0 +1,71 @@
+## Focus Feature Updates
+General
+- FOV min/max is now defined by screen aspect ratio.
+Universe
+- Changed the time for hacking down wanted levels to vary more.
+- Altered Comm Arrays so they don't overlap with other monitored zones.
+- Created a "Crusader Wanted" tutorial journal entry for when players attain their first wanted level.
+- Increased the abandonment range and the cut off timers for some missions.
+- Visual clean-up and polish at Levski.
+- Added additional lighting to outposts and outpost landing pads for better nighttime illumination.
+Missions
+- Tweaked the lights on the black box to be seen from a greater distance.
+- Enemy AI should now attack civilian ships and cargo manifests have been added to their ships when appropriate.
+Ships and Vehicles
+- MFD Screen focus polish (middle mouse button) and added hotkey focus screen switching (cycle with WASD).
+- Starfarer: Updated with new glass shader.
+Bug Fixes
+- Fixed replaceme textures appearing on ship damage.
+- Accepting the first mission from Eckhart should no longer break the character.
+- Floating debris and props should now properly have physics.
+- Engine trails should no longer be created while the engines are turned off.
+- Kudre Ore should now be properly marked and labeled on both the HUD and the StarMap.
+- Added a check to make sure combat area for patrol missions only triggers once.
+- The "Steal" missions should now have properly text strings.
+- Mission markers should now correctly appear on the StarMap when accessed from the pilot's seat.
+- The Star Kitten Dragonfly should now properly appear in game.
+- The mining machines at moon outposts should now have animations.
+- Fixed various outpost assets that appeared black.
+- AI enemies should no longer spawn inside of asteroids.
+- Added missing MFD options from MFD menu of ARGOs.
+- Fixed various turbulence and atmospheric flight bugs for the Khartu-Al, Glaive, and Scythe.
+- Fixed some floating props around GrimHex.
+- On ship destruction, Sabre pilots should die properly rather than get stuck.
+- Vaulting directly into EVA should no longer cause the player to ragdoll.
+- Fixed an issue that allowed any gun to use any other magazine if swapped via the PMA.
+- The KRIG Quarreler should now properly have overheat.
+- Fixes for mission objectives becoming broken for the "Recover Stolen Goods" mission.
+- Removed the usable interaction from airlocks so players don't drop boxes anymore.
+- Equipping items using the PMA while the character model is facing away should no longer cause the model to become invisible.
+- The copilot of the Dragonifly should no longer lose character control when exiting in EVA.
+- The Hoplite should now properly have door control from the pilot seat.
+- The pilot's hands and feet in the Retaliator should no longer appear twisted and broken.
+- Fixed some atmosphere issues inside of the Vanguard.
+- The Avenger should no longer have a "communications" interaction prompt inside the cockpit.
+- The mission list should now properly update after you accept a new mission.
+- The lifts/elevators should no longer get stuck in the doors closing state at Levski.
+- Weapon fire to the starboard wing of the Caterpillar should now correctly cause damage.
+- The starboard door should now be visible on the Cutlass.
+- Various LOD fixes for all 300 series ships.
+- Improved Gladiator tail damage to be more recognizable.
+- Missiles should no longer bounce off shields without exploding.
+- Plugged in hole in wall assets at Levski.
+- Altered pass-by ship sounds so it no longer cuts off abruptly.
+- Ship landing dust should no longer appear offset from the ship nor cull/disappear at a short distance.
+- Black box missions should now fail if the asset is destroyed.
+- Corrected seat and dashboard interaction highlight for the Retaliator.
+- Chaff should no longer appear to explode inside of or clip through geometry.
+- The planet collect missions that are associated with derelict ships should now have a proper location beacon on the derelict.
+- Fix for boxes being placed into world space but then vanishing.
+- Fixed overlapping MFDs on Greycat.
+- The nose of the derelict Caterpillar should no longer have a missing LOD effect on approach.
+- Fixed LOD issues with the Gladius and updated landing gear bay interior.
+- Fixed buggy behavior of StarMap if accessed during quantum travel.
+- The ARGOs should now properly have HUDs.
+- The lift/elevator should now properly have an interaction highlight on the Retaliator.
+- EVA thrusters should no longer be on while a player isn't moving.
+- Player hands should no longer clip into the dashboard when exiting the copilot seat of the Starfarer.
+- Turning engines on should no longer trigger the "engines offline" audio.
+Technical
+- Numerous crash fixes.
+- Various performance tweaks.

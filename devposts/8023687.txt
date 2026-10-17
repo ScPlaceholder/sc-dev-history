@@ -1,0 +1,79 @@
+## Star Citizen Alpha Patch 4.2 PTU
+PTU Alpha Patch 4.2 has been released to all backers!  Patch should now show: VERSION 4.2.0-PTU.9824874.
+Audience: All backers
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5 - 600 Players
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Storm Breaker All Phases
+- Apex Valakkar
+- Dynamic Rain
+- Radiation
+- VOLT Laser "Prism" Shotgun
+- ARGO ATLS IKTI and IKTI GEO
+- New Wikelo Ship Additions
+- New Hairstyles
+- Sterling Exploration Suit
+## Known Issues
+- PU / Front End - Main Menu - Add Friends - UI - Adding a friend will result in a Friend Request notification with the user's game handle in the notification window
+- PU - Stanton - Locations - Klescher Rehabilitation Facility - Mining / Inventory - Players are unable to store mined Ore into their inventory properly and Ore will be dropped to the ground after attempting to be stored
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+- PU - Ship Battles - Ace Pilot/Assault - Proximity Tracker - Action Area - Logic fails to continue when over 20km away from the tracked object or Action Area Origin
+- Graphics - UI - Shadows not casting in 3d Comms Call RTT window
+## Features & Gameplay
+Gameplay
+- Updated Radiation HUD to further reflect levels of severity
+Storm Breaker Polish
+Art, Audio Mixing, LOD, Lighting, Shuttle, and Performance Polish. Removed ability to set spawn points to Facility interior and moved them to multiple satellite locations outside the facility. Further tweaks and polish for lightning and rain effects, min / max length and min / max spawn frequency for lightning. Keep doors opened for the egg nursery room at the end of the release procedure. Added additional scientists to datalab in cafeteria and weapons testing room."
+Apex Valakkar Balance and Polish Pass
+Changed APEX Valakkar mouth to no longer provide bonus damage. (Weakspots are full damage while armored areas take vastly less damage)
+Further added Apex Valakar and location Radiation effects. The Hazards that the Valakar create will have radiation that decays over time in strength. Apex Valakar Animation and skin texture polish.
+- Reduced reinforcements call time from 40 to 30 seconds
+- Disabled disorientation behavior to improve fight pacing
+- Increased Adult valakkar projectile damage from 25 to 40
+- Improved consistency of VLK adult accuracy
+- Increased Juvinile valakkar projectile damage from 9 to 15
+- Increased apex valakkar explosion max radius from 10 to 20
+- Increased apex valakkar explosion damage from 2.5 to 4 (explosions hit multiple body parts)
+- Increased apex valakkar projectile damage from 5 to 20
+- Increased health of valakkar adult from 350 to 475
+- Disabled being able to stun adult and juvenile Valakkars
+Locations
+- Adjusting rain volume density on Hurston and Arccorp
+- Enabled Dynamic Rain on Pyro IV
+Ships and Vehicles
+Missile and Torpedo Balance Updates
+Across the board, missiles and torpedoes have been readjusted to increase minimum lock ranges and lock timers, added a minimum activation distance for torpedoes (~1500m), decreased min/max explosion radius on hit, and increased health.
+Weapons and Items
+- VOLT Shotgun Audio Polish
+Core Tech
+- Removed ability to disable clouds completely from the user.cfg
+- Extended puddle draw distances
+- 3d Comms Notification Polish
+## Bug Fixes
+- Potential Fix: Explosive Ordnance - Missiles - CS missiles can't be spoofed with CMs
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector - Missions - The Volt SMG Navy skin mission has the incorrect amount for Ace Helmets required
+- Potential Fix: PU - Pyro - Storm Breaker - Locations / VFX - Rain VFX can be seen inside research labs at the Specimen Cache Door
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector - Missions - The 'Need Ore. Will give Guns' mission requires the incorrect mineral
+- Potential Fix: Mirai Guardian MX - Vehicles / Weapons - Mobiglas/VMA - Bespoke missile racks are visible for other vehicle hardpoints in the VMA
+- Potential Fix: Anvil Lightning F8C - Vehicles / Weapons - Mobiglas/VMA - Bespoke missile racks are visible for other vehicle hardpoints in the VMA
+- Potential Fix: PU - Shopping / UI / Locations - Armor - Stirling Exploration Suit - Unable to purchase the Stirling Exploration Suit on Shopping kiosks (STARC-170602)
+- Potential Fix: PU - Hunt the Polaris - Missions / mobiGlas - Fleet week 2025 missions are still showing in the mobiGlas in 4.2.0 (STARC-170465)
+- Potential Fix: PU - Pyro - Storm Breaker - Mission Content / Exploit - Valakkar Egg can be taken from the nursery with a tractor beam skipping the egg procedure (STARC-169639)
+- Potential Fix: PU - Pyro IV - Farro Data Center IV - Locations - Farro airlock asphyxiates player (STARC-168893)
+- Potential Fix: AEGIS Idris ALL Variants - PU - Vehicles / Art / Lighting - Idris Don't Have Exterior Lights (STARC-168380)
+- Potential Fix: AEGIS Idris-P - PU - Vehicles - Idris shield holes (STARC-168367)
+- Potential Fix: Pyro - Locations / Data Centers - Clothing - Lab coat does not allow players to store key cards (STARC-169028)
+- Potential Fix: Anvil C8X Pisces Expedition - PU - Vehicles / Vehicle Balance / Vehicle Components - Flight blades are only changing vehicle accelerations
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 3 Server Crash

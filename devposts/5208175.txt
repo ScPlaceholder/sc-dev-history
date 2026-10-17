@@ -1,0 +1,58 @@
+## Star Citizen Patch 3.17.2g
+Alpha Patch 3.17.2g has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.17.2-PTU.8124794.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Audience: Wave 1
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 10,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+In this build we have reverted a few of the streaming and actor networking changes as a test to track down issues so character streaming may behave differently in this build.
+Jumptown should be running for around 4 hours tonight on the PTU servers starting at 1600 CDT | 2100 UTC
+- Locations - ArcCorp - Area18 - Hospital - Empire Health Services hospital has no gravity and may cause infinite black screen on loading into hospital bed
+Please note that we suggest making sure you avoid loading into the Area18 hospital for this issue by setting your respawn to a different location. if you happen to get this black screen, reloading into the server should respawn you in the hab bed as a workaround.
+- Hit Registration Ship Combat Tests PU/AC
+- Derelict Reclaimers V1
+- Derelict Colonialism Outposts
+- New Space Stations and Lagrange Points
+- Grim HEX Hospital Expansion
+- Combat Service Beacons V2
+- Illegal Collect and Delivery Missions
+- Player and AI Networking Updates
+Known Issues
+- Having specific Helmets equipped during a FOIP call, will show the player as headless or missing eyes/teeth
+- Combat Service Beacons do not fill in InitiatorName
+- Player screen would shake when they respawn after being killed firing their weapon
+- Missions - Bounty / Mercenary - Dying in lawful UGF missions causes player to respawn at Grim Hex
+- UGF Raid - Missions / AI / Combat AI - Some Enemy AI will not engage Security AI or Players
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- Shopping Kiosk / Multi-Buy - When using the buy Max feature, or buying the max of an item ( 1000 ) - Further attempts to purchase from the store will result in an Inventory Error or Insufficient Stock
+- Missions - "Halt Illegal Surveillance" / "Unauthorized Surveillance Detected" - Missions Do Not Generate A Mission Marker or Initialize On Arrival
+- Ships - Components and interior zones remain when ships are destroyed
+- Missions - UGF Locations - NPCs Not Spawning at Mission Locations
+- When purchasing a rental vehicle from a rental kiosk the money taken will not be displayed properly on the Kiosk or the mobiGlas
+- Locations - Elevators / Physics - Hangar elevator's collision grid pushes player through its path when called (Multiple Locations)
+- Shopping Kiosk - UI / Building Blocks - Controls / Mouse - When selecting the text field box for "Quantity Multiplier" you lose control of the in-game mouse cursor
+- Locations / Art / Tech Art - Elevators have portals / Vis areas when their doors open
+- Stanton - ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+## Feature Updates
+Locations
+- Removed some debris causing players to crash and explode on the Snake Pit race track
+Core Tech
+- Made further improvements to on foot AI networking to improve their movements and responses and reduce rubber-banding
+- Adjusted r_DisplaySessioninfo QR code to use screen height for scaling
+## Bug Fixes
+- Fixed an issue that caused FPS AI to "rubber band", teleport, jitter, or move unexpectedly
+- Players should no longer be able to revive unconscious hostile NPCs using the med gun
+- Fixed an issue that was causing AI reinforcement ships getting stuck while landing
+- Tumbril Cyclone MT missile racks should now function
+- Redeemer Disc-Joint should no longer be Invulnerable
+- Shared service beacons should no longer fail until the last player has quit
+- Reclaimer elevator doors should no longer break and stay closed after turning off the gravity on the Failed Negotiations mission
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 3 Server Crashes
+- Fixed 2 Server Deadlocks

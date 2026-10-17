@@ -1,0 +1,80 @@
+Squadron 42 Monthly Report
+August 2023
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 09:13:2023
+REF: CIG UK, CIG DE, CIG LA, CIG TX,
+FAO Squadron 42 Recruits.
+Welcome to August’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including AI perception, vehicle UI, and ambient audio.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Features)
+Last month, AI reviewed perception to fix issues where NPCs wouldn’t correctly recognize that a target had died or that they’d seen a situation before. These issues led to various bugs, including the AI constantly calling for med-pens or remaining in combat after it had finished.
+They also revisited cover usage, polishing various functionality and animations to ensure the feature works across a range of situations and environments.
+Changes and fixes were also made to the tactical point system, which is used to drive where the AI moves. This will help identify what needs to be adjusted when reviewing combat in new locations.
+Balancing was done for AI ammunition usage while maintaining reload and ammo-finding functionality to provide realistic and emergent behaviors and gameplay situations.
+The team continued to review, revisit, and polish combat, including low and high-cover reload animations for different weapons and female animations converted from male assets. They also began developing animations for marine squad hand signals to sell group movement and combat.
+## AI (Tech)
+Last month, AI Tech added undo-and-redo functionality to the Apollo Subsumption tool. They also began improving Subsumption data validation for better presentation and more explicit validation errors. This will allow the designers to iterate faster when creating or adjusting missions and behaviors.
+On the boids feature mentioned in last month’s report, AI Tech continued implementing base functionality to allow agents (rats, birds, etc.) to adopt different states, such as wandering, idling, or fleeing, and transition between them. They’re currently looking for a low-cost solution to keep agents on terrain while moving.
+For NPC audio perception, the team implemented new functionality for how audio stimuli is propagated. This involves using the room system and how rooms are connected to determine whether an audio event should be heard.
+They also continued to improve navigation links. Firstly, how links connect navigation triangles from different zones, which wasn’t working as intended. Secondly, they fixed how animations play when they begin and finish in different zones. For example, when NPCs jump to the ground from a hovering ship.
+Finally, investigation began into performance issues relating to the navigation system and pathfinder.
+## AI (Vehicles)
+Vehicle AI’s priority in August was working through issues preventing the new AI features from working correctly. They fixed faults with the recent aiming system refactor to ensure NPCs shoot correctly and worked with the level designers to fix various miscellaneous problems causing the AI to not work in certain places.
+Following this, the team will focus on game-wide flight AI improvements as they continue to fine-tune the gameplay experience throughout the flight sections.
+## Animation
+The animators collaborated with the level and AI designers to close out animations across various locations, including the med-bay, bridge, mess hall, and hangar.
+They’re currently improving the overall feel of player actions through slides, basic movement, weapon usage, and more. This involves adjusting weapon malfunctions, first-person interactions with the environment (such as opening a hatch), first selects for new weapons, and a selection of other animations.
+Additionally, progress was made on combat AI for both enemies and civilians, and Animation worked with Narrative and Design to get level-specific scenes implemented correctly.
+The Motion Capture team worked alongside the writers to add the finishing narrative touches to certain areas and supported spot improvements to AI behaviors.
+On the facial side, the team completed a large number of behavioral lines and performances to bring the flight combat, ground combat, and background ambience to life. They also progressed with polish tasks for the cast characters.
+## Audio
+Throughout August, the team worked towards a major audio milestone. The aim of this is to provide sound effects for all the work done by the upstream strike teams and identifies any required post-alpha changes or improvements.
+The Tech team made significant progress on the walla (crowd audio) system, which is close to first-pass complete. This system groups NPCs into clusters based on their proximity, allowing for dynamic, localized audio that simulates ambient chatter. Resonance tech progressed too, which was detailed in a recent episode of Inside Star Citizen. They also continued to ensure that the game builds remain stable during development so that the devs could work seamlessly.
+Audio then began tagging cinematic animations with new foley sound effects. This is an integral push towards implementing audible layers to cinematics, with bespoke animations such as punches or fist bumps receiving their initial audio pass.
+The team continued to design and implement effects for a variety of SQ42-specific weapons, including the VOLT manufacturer, ensuring the sounds align with its bold, high-tech designs.
+“We are excited for the community to get their hands on these weapons and feel the brawny impact of a Galson shotgun blast or our VOLT sniper.” Audio Team
+There was also a significant push to create and improve the sound effects for the various puzzles found throughout the campaign; every puzzle being in some way unique opened the doors to providing distinctive and innovative sounds. In-game gadgets, including the flashbang, also received fine-tuning and new implementations.
+Finally for Audio, they made significant post-alpha improvements to the game environments, building on what was already in place and providing locations with more subtle ambience.
+## Features (Gameplay)
+August saw work begin on the vehicle radar’s landing UI. To begin with, the team investigated rendering the environment outside of a ship in the vehicle’s radar display (similar to the minimap) so players can see the area they intend to land on. The geometry will be marked up so will only display the relevant landing area.
+For camera transitions from first-person view to cinematic sequences, the team added the ability to create small TrackView sequences for the initial cut-away with smooth transitions to the cinematic cameras. For example, if the player is in a cockpit seat, the team can create a camera transition out through the windscreen for a better visual flow.
+Elsewhere, Gameplay Features continued extending crane-controller functionality based on a new use case. They also made improvements to hints and tutorials, mobiGlas notification forwarding to the visor, and mobiGlas linking.
+## Features (Vehicle)
+Last month, Vehicle Features worked towards closing out the self-status UI, filling out missing features in the various sub-screens, including information on quantum travel and fuel. They received support from the UI Art team on this to improve the visuals and ship rendering. Relating to this, the turret variant of the self-status MFD can now render a 3D model of the turret, which will also be improved by the UI artists in the near future.
+The vehicle loadout terminal is approaching feature-complete with the addition of special features for group-equipping items. For example, changing a single ship thruster will change the others if required, or equipping a specific missile will automatically swap to the correct missile rack. Additionally, the UI Art team is creating a 3D augmented-reality display for the vehicle loadout terminal. This will be located in the Idris’ hangar where players can customize their ships.
+Vehicle Features began looking into changes to vehicle aiming, exploring a feature similar to ADS. This will allow players to zoom in on their target and receive additional aiming assistance to target subcomponents or line up a better shot. This is still being explored.
+Progress was also made on the Resource Network, with the team providing support for various vehicle items that use fuel and power, such as quantum drives and thrusters.
+“Thrusters using power is one of the more complicated aspects of this, so we’re still working through it.” Vehicle Features Team
+Lastly, Vehicle Features supported Level Design on their gameplay sequences, providing bug fixing and technical support for new smaller features to aid with building out levels and experiences.
+## Gameplay Story
+Most of Gameplay Story’s focus throughout August was on supporting the strike team with improvements and additions around the Idris. This involved refactoring and supporting the recently created deck-crew TrackViews and adding additional idle animations and improved prop interactions to the mess-hall scenes. They also spent a few days working on new turret content to add additional life to these areas.
+New mo-cap data was used to incorporate several dialogue changes to key character scenes requested by Design. They also created several ‘resolve’ and ‘out-of’ animations to help characters exit their scenes and return to AI control.
+Towards the end of the month, the team switched focus to preparing for upcoming narrative shoots.
+“We have about 20 new Gameplay Story scenes being recorded and we are keen to ensure the resulting data can be implemented as smoothly as possible.” Gameplay Story Team
+## Graphics & VFX Programming
+In August, improvements were made to the internal implementation of Temporal Super Resolution.
+Further progress was made on water, with the shader gaining improved lighting and foam. Work on the simulation continued too, with foam propagation and bullet-impact support being added.
+The prototype of the glint shading model was completed and comes in three versions with different performance characteristics. The team are now investigating whether they can take one of these into production. Distant lights are now drawn as tiny bright glows that pass through the existing post-effect system, with the aim of replacing the more traditional 'composite flare' system that can't support post-effects.
+On the tooling side, the streaming debugger was expanded and now provides a powerful tool to track the detailed history of any asset or group to diagnose issues and facilitate optimizations. The Mesh Setup Editor was also expanded to allow finer-grained control of how animated meshes are imported.
+The Vulkan sub-team added new extensions, including Synchronization2, Maintenance4, and TimelineSemaphore, to improve various aspects of the backend. Focus is now shifting to unblocking progress on Global Illumination, as the ray-tracing component is Vulkan-only.
+The VFX Programming team implemented smoke spawning on fire along with various other quality improvements to bring the feature to a visually complete and “rather impressive” state.
+Finally, further improvements to lightning effects were made, which will be used in the future within gas clouds.
+## Level Design
+Last month, Level Design continued to focus on the Idris interstitials.
+Outside of scene maintenance and updates, the Social Narrative team worked closely with AI Content, pushing hard on crew behaviors. This included supporting the implementation of background vignettes in the Idris’ hangar for use after a player lands. These include the deck crew pushing ladders up to the Gladius and climbing on top to carry out maintenance, refueling the ship, and carrying out cockpit and weapons checks. The same was then done for pre-flight vignettes, with the deck crew prepping the player’s ship for take-off with thruster and weapons checks.
+The team also started work on having the previously static Idris moving during interstitials, which is subtle but makes a difference.
+## Narrative
+The Narrative team was heavily involved in recent performance-capture shoots. This included interfacing with the level designers to solidify the flow of levels and scripts as well as working with the Core Gameplay and Audio teams to detail wildline scripts for characters. These included some new characters that had been introduced in the latest levels as well as pickups for a handful of returning actors that had been previously captured. Part of these lines included buddy-AI designs for both FPS and flight sections that had been implemented since the last time they had been captured.
+The subtitle validation work that began last month was completed, with the team reviewing and updating several thousand lines of dialogue to ensure the subtitles accurately reflected what the performers said.
+The team continued to delve into some of the collectibles that players will be able to find scattered throughout the levels. They also progressed with defining the categories and content that will go into the Squadron 42 Galactapedia.
+## R&D
+In August, work on the temporal render mode for atmosphere and volumetric clouds continued; various methods to rectify or reject frame history were experimented with.
+Furthermore, a new disocclusion detection system to reject history was implemented that, in spirit, is similar to the general up-sampling solution.
+Additionally, various code was updated to work with recent Gen12 improvements.
+## VFX
+VFX continued the work discussed in July’s report. In particular, fire propagation visuals were further improved, with fog volumes being used to show smoke accumulating at ceiling height alongside further visual breakup of the fire particle effects.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

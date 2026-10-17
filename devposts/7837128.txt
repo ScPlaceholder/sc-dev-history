@@ -1,0 +1,7 @@
+We've identified that there is a frequent client side crash occurring for some users which have outdated string data in their game installation. For anyone that is encountering frequent in game crashes, here's how to verify if this is the cause:
+1. Immediately after the game crashes ( do not launch the game again), navigate to the installation directory for the game
+2. Open the game.log file
+3. At the end of the file, there will be a log line that says digest=
+4. Find the string of numbers and letters that form the digest ID
+Installations that are running into this issue will see 3cfc1a89a86450923d5e0b9d3dc812ac as their digest ID for the crash.
+If this is the case, delete the Data.p4k file for the game installation and redownload it to get up to date string data.

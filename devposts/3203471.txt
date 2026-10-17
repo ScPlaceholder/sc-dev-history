@@ -1,0 +1,5 @@
+Instructions received! :wink:
+Generally a resolution scale reduces the game resolution while keeping the UI at native res, however many of our UI screens are “in the world” so in our case it’d actually need to render certain parts of the scene at native res too, which throws up some ‘interesting‘ problems where they meet. But my current intention (note: intention does not mean promise or soon) is to add resolution scaling, dynamic resolution scaling (to attempt to maintain a desired FPS), and temporal upsampling (reconstruct the native resolution scene over time if the camera isn’t moving too fast).
+But before all that we need the Gen12 renderer and the Vulkan backend working as this will give the greatest performance improvement for most backers (at least in terms of what my specific team can deliver).
+Ali B
+Director of Graphics Engineering

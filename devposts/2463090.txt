@@ -1,0 +1,33 @@
+## Star Citizen Patch 3.7.1c
+Alpha Patch 3.7.1c has been released to PTU, and is now available to test!  The launcher version number should read: VERSION 3.7.1- PTU.3291516.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: YES
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Quantum travel (interdictions)
+- General gameplay
+- Bug regression
+Known Issues
+- The Banu Defender is unable to refuel at compatible stations.
+- The multi-tool and flare use the same armor utility slot.
+- There are numerous marker and UI issues using ultra-wide monitors.
+- Quantum travel marker does not update correctly when staying aligned to it after quantum travel.
+- The quantum travel HUD will be lost of the player exits the seat during travel.
+- The Reliant series ships ramp will become locked shot if open and closed.
+## New Features
+Gameplay
+- Added an additional utility item port for the flare.
+## Feature Updates
+Gameplay
+- Temporarily disabling Scramble Races due to a mission breaking bug.
+## Bug Fixes
+- Pressing "Tab" to enter scan mode should no longer disable the quantum snare for the Mantis.
+- The keybind should now show properly for the UI prompt of a party invite.
+- Duplicate items from the PU or AC ship list should no longer show in the VMA.
+- Quantum drive audio should now play properly.
+- Player ships should no longer occasionally get frozen when exiting quantum travel.
+Technical
+- Fixed a server crash.

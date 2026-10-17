@@ -1,0 +1,68 @@
+## Star Citizen Alpha Patch 3.23.1
+Alpha Patch 3.23.1 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.23.1-PTU.9172250.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Open PTU
+Server Info: PTU Channel
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Testing/Feedback Focus
+3.23.1 is mostly Fleet Week related but includes some other fixes and updates that might not have made it in time for 3.23.0 LIVE. We are not intending to run the expo halls and tours tonight on PTU but hopefully as early as Monday.
+- Stability/Performance/Bug Fixing
+Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs. This is not the intended final outcome for missions and recovery and further changes are coming in a later release.
+We are expecting ships purchased in game with aUEC right before 3.23.0 went live to come back with 3.23.1 when it goes LIVE.
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - UGF - Locations - Bunker elevator does not return up when called
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals for ground vehicles at Lorville gates get stuck on infinite load, accessing list of ships
+- PU - Stanton - UI - HUD / AR Markers - Misaligned HUD Markers with Ultrawide or TSR graphics upscaling enabled
+- PU - Gamewide - Using a medpen causes you to drop your weapon
+- PU - Locations - Transit - Elevators - Internal Transit Elevator shows up when called but doors remain closed, no carriage
+- PU - Greycat ROC - Stanton - ROC Mining Laser Not Activating
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Locations / Vehicles / VMS - Can't repair/refuel/restock at Pyro Gateway Jump Point Station
+- PU - Locations - Distribution Centers - Security Checkpoint elevator vis area and missing collision
+- PU - Stanton - NPE - Missions - Objectives can be softlocked by player leaving bed before their objective record has updated
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - RSI Scorpius Antares - Vehicles/EMP - unable to activate EMP
+- PU - Multivehicle - Vehicles / UI - QT effects are breaking HUD UI
+- Reclaimer Claw Cannot Deploy: Power Required Error Message (Workaround: Press the power button a second time)
+- AC - Squadron Battle - Friendlies showing up as enemies
+- AC - Grav Race - All Maps - Low gravity can launch players far above the track when hitting bumps or hills
+## Features and Gameplay
+Gameplay
+- Repair Fully Damaged Items
+Ship parts, weapons, components that have been taken down to 0 health should now be repairable. Removing a fully damaged weapon or component with a tractor beam and using the repair tool should now function.
+- Added keybinds for directly entering NAV and SCM
+Core Tech
+- Made Further Gamewide Client Performance Optimizations
+- Interior map materials optimization
+- VFX Visual Improvements and Fixes
+Made Further Particle Visual Improvements for Upscaling. Fixed cyan color cast seen in bright areas near the screen edge due to chromatic aberration processing. Removed jitter processing on terrain rendering leading to poor quality reprojection.
+## Bug Fixes
+- Made Further Entity Graph Stability Improvements
+- Fixed - PU - Stanton - UI - Oversized active Armistice Zone icon
+- Fixed - PU - Stanton - Actor - Respawning - Players who die and then get disconnected before respawning become stuck in a dead state and are unable to respawn
+- Fixed - PU - Stanton - microTech - Creatures / AI - Kopion are jittering and teleporting when running
+- Fixed - PU - UI / Upscaling - Shopping Kiosk UI missing elements when Upscaling is enabled
+- Fixed - PU - Stanton - Mission Content / Law - Trespass timer will go to negative numbers (STARC-95347)
+- Fixed - PU - Option Menu - UI - "Water - Number of Simulated Regions" going back to Medium between sessions (STARC-104172)
+- Fixed - Origin 400i - PU - Vehicles - Life Support / Room System - Two room volumes are missing in the technical deck causing players to suffocate in the 400i (STARC-106700)
+- Fixed - Stanton - PU - mobiGlas / Visor Chat - Visor Chat messages remains visible over the mobiGlas
+- Fixed - PU - Physical Shopping - Locations - Multiple Locations - Items on display at multiple shops will end in 'Transaction Error' when attempting to quick buy
+- Fixed - PU - Stanton - Mission Content / UI / mobiGlas - Completing a contract while the mobiGlas is open on the contract does not open the specific contract in the History tab
+- Fixed - PU - Runtime Cubemaps - Graphics / Lighting - Runtime cubemaps are taking an excessively long time refresh and / or not refreshing at all
+- Fixed - PU - Stanton - Distribution Centers (DC) - Locations / AI - The worker NPCs sometimes use tractor beams to shoot at the player
+- Fixed - PU - Actor - EVA - Depending on orientation, player places weapon through their head and neck when ADS
+- Fixed - RSI Ursa - PU - Vehicles / Design - Cannot enter Remote Turret
+- Fixed - Greycat ROC - Stanton - ROC Mining Laser Not Activating
+- Fixed - Crosshair not showing on GRIN_ROC
+- Fixed - PU - Character Customizer - Clicking the Character Customizer screen after reviewing your model and going back to it will show T-Posed models
+- Fixed - AC - UI / Scoreboard - The Grav Race mode does not show or update player score
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed an Out of Memory Crash

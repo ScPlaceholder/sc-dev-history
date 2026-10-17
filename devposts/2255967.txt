@@ -1,0 +1,40 @@
+## Star Citizen Patch 3.6.0r
+Alpha Patch 3.6.0r has been released to PTU and is now available to test!  Patch should now show: PTU-2211426 .
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Law and Criminality System
+- Weapon optics
+- Ship component degradation
+- Ship combat balance: Ship shields, missile damage, missile counter-measuring
+- Flight: Hover mode, acceleration control
+- Head tracking
+- P-72 Archimedes
+- Hacking gameplay
+- Pip accuracy and ship flight jitter
+- Vanguard Warden and Hoplite
+Known Issues
+- Security reinforcement system isn't currently functioning.
+- Dropping the hacking chip on planetary surfaces can cause it to fall through.
+- Significant first person framerate reduction can occur.
+- Textures will display across the visor on some helmets.
+- AI ships have an unintended wing wobble behavior.
+## Feature Updates
+Ships and Vehicles
+- Disabled hover mode when not in atmosphere.
+- Switched AI Valkyrie and Caterpillar to gunship type behavior.
+- All misfires now trigger at a lower threshold, including criticals, but are less frequent.
+## Bug Fixes
+- Hover mode should no longer cause the player's ship to get stuck in no-fly zones.
+- Further fixes for FOIP to make animations play player to player.
+- Bounty hunter AI ships that spawn as part of environmental missions should no longer despawn in front of the player.
+- Fixed an issue that causes the hacking terminal to be unusable if a player aborts a hack.
+- Players should no longer be required to accept a customized character every time they log in to the PU.
+- The scanning ping particle wave should no longer come from the landing pad rather than the vehicle.
+- The Hurston security depot should no longer appear to be under water.
+Technical
+- Fixed 2 client crashes.
+- Fixed a server crash.

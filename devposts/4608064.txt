@@ -1,0 +1,8 @@
+So Why does it only list 4 of my 6 Devices?
+- Currently SC is limited to 4 DirectInput devices as the legacy bindings screen doesn't handle more. We'll try to sort that out in the future but we currently don't have an ETA for that.
+Why does it get bricked when changing the instance ID?
+- Because we don't do a good job determining if the USB device orders have changed. We'll try to sort that out in the future as well but also here no ETA.
+By what logic or order is Star citizen ordering the sticks? So if i want to write that XML file manually how do i know the order in which i need to give out the binds?
+- Order comes in as devices are listed by DirectInput. During startup there is also a device name check. Anything with "throttle" or "left" gets into slot 2, anything with "rudder" or "pedal" gets in slot 3. The rest is just taken as is. Also here, we're not happy with it and want to change it later.
+How does star citizen know if something is a joystick or a gamepad? (Does it match product names?)
+- I think we just check for a device flag but I can't remember exactly how (will check next week). Anyways, if it's a gamepad we use XInput instead of DirectInput.

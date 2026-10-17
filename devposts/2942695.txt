@@ -1,0 +1,6 @@
+Hi @HkS73
+I feel your pain on this one! This is also an unfortunate drawback to our current implementation of a single static shadow map for static objects.
+This specifically affects the space stations as all the geometry is considered a static set of objects and therefore doesn't get picked up in the semi-dynamic cascades I mentioned above (the ones reaching ~2km). This is where the static shadow map region comes in and it works like this:
+The lighting artist defines a volume for this static shadow map where all geometry inside it is rendered to a fixed shadow map texture. For something like a spacestation however, the region has to be big enough to encompass the boundary of the station and since some station designs are so long and spindly, this results in a huge amount of empty space in that volume dedicated to each polygon to cast a shadow.  This results in a generally ok shadow from a great distance, but some very soft/jagged looking shadows at close range where the dynamic cascade and static cascades intersect (~40m from the camera).
+We're very much aware of this issue and are hoping to fix it in the future (potentially as mentioned above by supporting a secondary static shadow region)
+-ChrisC

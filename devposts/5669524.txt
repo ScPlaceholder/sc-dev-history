@@ -1,0 +1,94 @@
+## Star Citizen Patch 3.18.0w
+Alpha Patch 3.18.0w has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.0-PTU.8335445.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping Drake Vulture/Reclaimer
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations including the Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+Known Issues
+- Equipped armor remains attached to undersuit after character repair
+- Armor on dead NPCs at Solanki Platform are missing texture
+- MULTIVEHICLE - Ships - Ship Features - Flight - Quantum Travel - When entering and exiting any seat during Quantum Travel, there is a high chance you will be ejected into space
+- Missions - Personal Transport Beacon - Transport beacon mission markers to a player ship will display the wrong location until nearby object containers are loaded
+- Server Crash Ship Recovery - After a server crash, ships left on landing pads will be in an "Unknown" state, requiring a claim
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Law & Criminality - Commodities / Cargo - Stolen Cargo does not always behave as such and can sometimes be sold as legal cargo
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Ships / Vehicles - Impounded Vehicles - ASOP - Impounded ships do not finish Transferring to Storage and are no longer Retrievable
+- Items appear not to be removed from the player's inventory when they sell them or hand them in to a contraband kiosk
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Multivehicle - Physicalized Cargo - Multiple ships either partially or entirely fail to physicalize cargo purchased to their cargo grids
+- Stanton - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction
+- Multivehicle - Stanton - Vehicle Feature - Hit box desync - Vehicles do not take damage when attacked at certain parts of its hull
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- VARIANTS ONLY - Weapon / Weapon Feature - Multitool Variants display "HEALING" info regardless of attachments
+## Feature Updates
+Gameplay
+- Bed log out is now blocked in landing areas
+Ships and Vehicles
+- Updated component damage for coolers and power plants
+Core Tech
+- Physics Optimizations
+- Server Performance Improvements
+- Further Gen12 Optimizations
+## Bug Fixes
+- Fixed - [Character Repair] Repairing a character should stow equipped items to home location
+- Fixed - Leaving server session and rejoining to a new shard can make player stuck in long load loading screen at 20539 entities
+- Fixed - Graphics / UI - Terminals / Kiosks - Various screens, terminals and kiosks fail to load their UI and only display a black screen
+- Fixed - VMA - Vehicles / UI - Ship Components - When attempting to make a large number of modifications in a single use of 'Save Changes' to a vehicle, the Save Changes button will disappear
+- Fixed - mobiGlas / Missions / Contract Manager - Personal Beacons - Players cannot select their ship as a Personal Transport Beacon destination within the Beacons tab within Contract Manager
+- Fixed - Location - Daymar / Whistler Crypt / Physic - Walking on hills near Whistler's Crypt can potentially kill or wound the player
+- Fixed - Multivehicle - Vehicles - Gameplay - Explosive ordinance kills pilot through shields and hull
+- Fixed - SDF Shields: Glow Impacts aren't visible anymore
+- Fixed - Personal Inventory - Move All - Move All functionality is failing to move armor
+- Fixed - No Crusader Mercenary certification missions are available for selection
+- Fixed - Ship bounties at derelict outposts not spawning
+- Fixed - Multilocation - Elevators - Elevator doors open mid-transit
+- Fixed - UI - ASOP terminals display 0 cargo capacity for every ship
+- Fixed - Locations - ArcCorp - Area 18 - Hospital - Empire Health Services hospital rooms have low or no survivable atmosphere
+- Fixed - Hurston - Lorville - Design / Vehicles / Locations - restricted area impounds spawned ground vehicles
+- Fixed - Some Missing Persons Derelict Missions are missing from the PU
+- Fixed - AI - AI will inconsistently have their flashlight on
+- Fixed - Vehicles - GravLev Vehicles Will Not Work on Water
+- Fixed - Multilocation / Multivehicle / Terrain - Vehicle tires sink into planet surface and are no longer able to move
+- Fixed - Greycat STV - Vehicles - Greycat STV maximum speed is 10 m/s lower than advertised
+- Fixed - Aegis Reclaimer - Vehicles - Standing near hull wall causes the character's attributes (Oxygen, Temperature) to act as though they were in space
+- Fixed - Aegis Reclaimer - Vehicles - Reclaimer Dorsal Air Lock has no collision
+- Fixed - Multivehicle - Vehicles / Characters / Collision - Medical Beds - Male characters will climb into the ship wall when exiting the medical bed using < W >
+- Fixed - Medical Screens / Actor Feature - When the player uses the "Auto Medicate" feature to heal a wound that isn't treatable they will be given 99.99% BDL
+- Fixed - Drake Vulture - Hull Scraping - Vehicles / UI - The salvage convergence circles are missing in the UI after interacting with the RMC dispenser
+- Fixed - Ships / Vehicles / Game Code - If the Player Exits the Pilot Seat or toggles Salvage Mode while in Gimbal Mode, when they Re-Enter the Pilot Seat the ship fails to resume Gimbal Mode
+- Fixed - Ships - Cockpit - Actor animations - Occasionally unable to exit ship seat
+- Fixed - ARGO MPUV Personnel/Transport - Vehicle / Personal Inventory - The ARGO MPUV Personnel doesn't have an Internal Inventory
+- Fixed - Multivehicle - Aurora Series - Physicalized Cargo - Cargo bought to the Aurora series will not display properly in grid and will clip into the vehicle
+- Fixed - Multi-Vehicle - Game-Wide - Bespoke size 4 missile launchers can be equipped on other ships with size 4 mount
+- Fixed - ANVIL Centurion - Vehicles - The interior door panel for the Centurion does not function
+- Fixed - Origin Jumpworks 600i Executive Edition - Vehicles / Ships - Scanning Seats are missing from the center of the ship
+- Fixed - Inventory / Shopping - Selling single item out of a stack will zero remaining stack weight in personal inventory
+- Fixed - EXPLOIT - FPS - Spamming "2" while firing a primary weapon will minimize/reduce the amount of recoil experiencing when firing
+- Fixed - EXPLOIT - Editing and Setting Game Config Files to 'Read Only' Allows Players to Set Variables Outside of Allowed Tolerances
+- Fixed - Klescher Rehabilitation Facility - Mission Content / UI - "Inmate Maintenance Opportunity" oxygen kiosk mission doesn't show objective
+- Fixed - ArcCorp - Area18 - Art / Graphics / Characters / Locations - Male NPC character can be seen walking around with ReplaceMe trousers
+- Fixed - mobiGlas- UI - The Pressure UI readings are not displaying correctly
+- Fixed - AC - Squadron Battle - End game score is being multiplied by a large amount
+- Fixed - MISC Starfarer - UI / Kiosk / Ship to Ship Refueling - Kiosk displays 0 scu of fuel transferred upon successful refueling
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 8 Server Crashes

@@ -1,0 +1,99 @@
+## Feature Updates
+General
+- Unified TrackIR and FOIP head tracking buttons.
+- Updates and numerous polish to head tracking functionality including the addition of head roll.
+Universe
+- Complete update of Rest Stop exteriors and shapes, including thematic variations.
+- Moved Delamar further away from Crusader and into its own object container.
+- Updated commodity pricing to reflect the addition of black markets and stolen goods.
+- Updated several locations to now use decoupled lighting for improved visual look.
+- Reduced the volume of the combat music and added an option to mute this music event.
+- Added the ability for AI pilots to strafe during passes.
+- Added Oxypen and MediPen to Lorville Tammany and Sons shop.
+- Updated transit system to streamline flow and usage.
+Trains are now on loops with multiple trains on each line, which should reduce waiting times across the board.  Elevators can now move to any pad/hangar and are no longer specific to one hangar/pad.  A selection of available destinations will be available via interaction at the interior elevator button panel.
+- Added "average" skill level for AI pilots to increase variation.
+- Updated and expanded player carriable items.
+- Adding clustering for mineable entities.
+Mineable rocks now appear in medium to large clusters rather than single rocks and their locations have been updated to reflect this.
+- Lighting pass on exteriors of underground facilities.
+- Various visual tweaks around Lorville.
+- Increased refinery kiosk pay out to give a slightly higher yield to mined materials.
+Missions
+- Re-enabled ECN missions.
+- Various improvements to FPS based missions.
+- Temporarily removed escort and distraction style missions.
+- There are now as many PVP bounty missions offered as there are eligible criminal player targets.
+UI
+- Video and lighting improvements to comms calls.
+- Color and names of channels can now be edited in the mobiGlas.
+- Players can now decide which chat channel is directed to the visor.
+FPS
+- Improved the look and feel of the character jump mechanic.
+- Updated ragdoll properties to improve look and feel in all situations.
+- Polish to smooth out first person turns and crouch turns.
+- Added a display screen to the GRIN multi-tool.
+- Added display screen to KLWE Arclight pistol.
+Ships and Vehicles
+- Complete rework of the Aegis Vanguard Warden.
+- Revised the P-52 Merlin.
+- Updated the HUD of the Gladius.
+- Decreased the hull strength of the Arrow.
+- Increased the hull strength of the Reliant.
+- Significantly increased the hull strength of the Khartu-Al.
+- Removed the ability to change paints on the VMA and Arena Commander vehicle editor as it had applied in unintended situations. The ability to swap paints on the Aurora and the Graycat will be added back at a later date.
+- Updated JUST quantum drives for increased durability and more distinction from other classes.
+- Further updates to ship weapon audio.
+- Reworked shield values and functionality
+Shields have been reworked to add major differences between manufacturers and classifications with the goal of providing a difference in feel and value. Size 1 shields have had their health pools readjusted and regen reworked. For size 1, shields now stop regenerating on hit and once a set period of time passes without further strikes, the shields will began to regen again. The functional goal of this is to limit shield regeneration during a fight and have the shield work more to stop the enemy doing significant damage right at a fight's outset. There is one exception, ASAS (manufacturer) shields constantly regenerate, but have a reduced health pool. Size 2 shields work similar to before, but now with more difference between manufacturers. At size 2 there is no damage delay, low regeneration, and a large health pool. Size 3 shields have very large health pools and regeneration rates, with the goal of requiring multiple ships working together to overcome their regen.
+- Reworked ship shields so power setting only impacts regen.
+- Toned down the shield shader VFX.
+- Changed the shield regen delay to be per generator rather than per face.
+- Overclocking no longer affects shield allocation rate or hardening.
+- Updated Prospector main engine with VFX.
+- Updated AI Hammerheads to "gunship" type flight behavior.
+- Updated ship weapon audio.
+- Increased the damage output of missiles.
+- Updated the cooling for Dragonfly and Nox thrusters to make them more usable.
+- Removed collision from the Freelancer's turret forks as a temporary work around to get larger objects in, pending animated retract.
+- Updated rate of fire on all repeater weapons.
+- Added audio feedback for player g-force stress.
+## Major Bug Fixes
+- Missiles should now be able to be counter-measured appropriately.
+- Fixed missing thruster damage VFX for the 300 series.
+- Ship controls for the Nox should now animate when strafing.
+- IFCS sounds for coupled/cruise should now work for all ships.
+- Customized 325a's should no longer have mismatched cargo holds.
+- Strafing should now animate on the Cutlass HOTAS.
+- The HUD should now properly update when changing fire-mode on the KSAR Scalpel.
+- Players should no longer get stuck inside of ArcCorp rooftops when they go prone.
+- Players should now be able to vault or mantle from a crouch.
+- Players should no longer be able to force pass out by jumping.
+- Loading into Arena Commander as a spectator should no longer cause an infinite load screen.
+- The comms MFD should now update properly.
+- Added an interaction to the interior of the cargo bay of the 300 series to avoid players getting stuck.
+- The Eclipse radar should no longer be reversed.
+- Fixed a head-flip and smooth tracking issue when doing fast turns on foot.
+- Fix for visual blurring on rotating asteroids.
+- The attitude flight HUD should now appear properly when flying at Delamar.
+- JUST quantum drives should now have a distinct feel from other types.
+- The Reliant series should now be able to store handheld cargo.
+- Combat music should no longer seem much louder than others.
+- Fixed missing radar on customized ships.
+- Fixed weapons should no longer aim toward the target as if gimbaled when in assist mode.
+- Turret HUD markers should no longer appear if the player isn't facing them.
+- Increased the health of destructible turrets so they can't be destroyed with melee attacks.
+- Turret movement audio should now play properly.
+- Updated spline jumps to avoid impacts with the planetary body.
+- Fixed a visual issue with the Valkyrie camo skin.
+- Assisted gimbals should no longer wander when no target is locked and the ship is in motion.
+- The undersuit should no longer display thruster VFX when not in EVA.
+- Using automated landing at rest stops should no longer cause the ship to move away rather than land.
+- Ship engine and idle glows should now properly be off when the ship is off.
+- Fixed an issue where scan blob contact VFX were played for everyone in the area.
+- Ruto's face should now appear.
+- Female characters should now sit in the copilot seat of the Super Hornet correctly.
+- Party launch and "join friends" should now work from the main menu.
+- Targeting pips should no longer continue to show and lock to screen after a weapon is destroyed.
+- Fixed an issue where some MFD screens would be blank from the copilot or support seat.
+- Players should no longer fall through a planet when loading back in if they previously logged out in a bed.

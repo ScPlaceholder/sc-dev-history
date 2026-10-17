@@ -1,0 +1,42 @@
+## Star Citizen Patch 3.17.2u
+Alpha Patch 3.17.2u has been released to the PTU and is now available to test!  Patch should now show: VERSION 3.17.2-PTU.8148301.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Audience: All Backers
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 10,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+Siege of orison will be running on the PTU servers tonight from 5:30pm to 9:30pm CDT
+- Player Capacity Server Test
+- Turret Acceleration changes
+- Derelict Reclaimers V1
+- Derelict Colonialism Outposts
+- New Space Stations and Lagrange Points
+- Grim HEX Hospital Expansion
+- Combat Service Beacons V2
+- Illegal Collect and Delivery Missions
+- Player and AI Networking Updates
+Known Issues
+- Multivehicle - Ships floating in the hangar when stored with the engines left on then retrieved again
+- Vehicle / Spawning - The Khartu-al spawn on the hangar floor sideways
+- Missions - Red Wind Discrete Courier - Some Delivery Boxes Cannot Be Placed to Progress Mission
+- Animation - Weapons - All weapons are held like a pistol whilst moving in EVA
+- Combat AI - UGF Missions are sometimes missing NPC spawns to complete the mission
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+- Missing Ships on SCOUNDREL PACK (and others) on PTU 3.17.2 (This is a PTU only issue that is being worked on)
+## Feature Updates
+Ships and Vehicles
+- Reduced the HP of multiple parts on the Esperia Blade
+## Bug Fixes
+- Hull-A Empyrean, Horizon, and Dusk Paints should no longer be missing
+- The rear of the Drake Mule should no longer start to float if the vehicle navigates over steep inclines / hills
+- NPCs on dropships should no longer be completely unresponsive for an extended period
+- Fixed an issue causing players to have an infinite load screen after recovering from a client crash while in a ship or vehicle
+## Technical
+- Fixed 1 Client Crash
+- Fixed 3 Server Crashes

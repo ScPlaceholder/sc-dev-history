@@ -1,0 +1,35 @@
+## Star Citizen Patch 3.16.1d
+Alpha Patch 3.16.1d has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.16.1-PTU.7931005.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Derelict Spaceships V1
+Known Issues
+- It is possible that some servers may stop updating their mission offerings. If the issue persists, try leaving the server, waiting a few minutes and rejoining the PU, or change region.
+- Attempting to log back into a ship bed may result in a long loading screen before being sent back to the Main Menu w/ Error 30009
+- Players will experience positional desync with one another after they have died and respawned (This latest build has logging enabled to help track this down)
+- Many mineable asteroids can’t be scanned
+- Spawn closets do not recognize unconscious AI and close the door on them possibly leaving mission critical AI unreachable
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- Logging out from the Reliant ship's bed and back in will cause the Reliant to be in flight mode and the player is stuck inside the ship sleeping area
+- Cannot Repair, Refuel, Restock at LEOs
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+- Ship may despawn after player death instead of staying at it's last location
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+## Feature Updates
+Gameplay
+- Derelict Spaceships Polish pass
+Updated normal and rare loot crate rewards with healing items. Visarea/Lighting/Collision/Texture polish pass. Added derelict loot container animations. Fixed multiple issues where trip-mines were not present around derelicts.
+- Quantum Travel Polish
+Made additional stability fixes that should help Quantum travel engage more consistently
+## Bug Fixes
+- Fixed an issue that was not allowing players to interact with party members on the front end menu
+- Fixed an issue causing players to see extremely bright, flashing lights around gas clouds near space stations
+- Fixed an issue causing players to become stuck in the queue to respawn at an ICU indefinitely
+## Technical
+- Fixed 2 Server Crashes

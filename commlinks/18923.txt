@@ -1,0 +1,113 @@
+PU Monthly Report
+September 2022
+Welcome to the spookiest month of the year! If the terrors in the ‘verse are getting a bit much, you can bury your head in this month’s report, forget about Neville Lott, and learn about everything accomplished throughout September. Read on for the latest news on AI behaviors, upcoming ships, locations, and more.
+## AI (Features)
+Last month, the AI Feature team continued to develop the ‘traits’ that allow the specialization of NPC behaviors in specific levels and scenarios. This included implementing the Sentry trait, which forces characters to use defensive tactics and to never leave cover unless compromised. This will be particularly useful for NPCs equipped with sniper rifles and rocket launchers. The Reckless trait is the opposite, forcing a character to only adopt aggressive tactics and never use cover options. This will be utilized by close-combat “berserker” enemy types. There are also Aggressive and Cautious traits that adopt varying weights of cover use.
+They also implemented usables that allow context-specific search animations to be played around certain level features. For example, vents, over railings, and around crates. This adds life to NPC investigation and gives them more opportunity to use the environment to search along with increasing the tension for hunted players.
+Perception work continued too, with the team supporting the stealth gameplay loop by allowing the player to wear specific clothing to disguise themselves in different environments. The designers can configure which clothing works for each faction and location so that a successful disguise combines both player actions and the configuration of the NPCs in the environment. The perception meter for detecting the player as a foe is then influenced by this parameter, giving the player more time to sneak into areas, especially when at distance from the enemies.
+To support the scaling of perception ranges and times, new wildlines were integrated to signal this new gameplay. For example, a suspicious enemy will challenge the player if their disguise or behavior isn’t convincing.
+On the animation side, AI features progressed with Human female combat animations.
+## AI (Tech)
+Last month, AI Tech extended the functionality of navigation links, which involved finishing their work on ladder extenders. Now, NPCs are able to use and traverse ladders in a similar way to players.
+They also extended navigation links for doors to allow NPCs to use the entire width of doors (useful for wider doors or gaps in general) and enabled collision avoidance while traversing.
+They extended the way NPCs interact with closed doors, too. The aim was to have the AI correctly understand which door panels should be interacted with during traversal. To achieve this, the routing functionality inside the usable system was improved to use entity links.
+For locomotion, they worked on reducing foot sliding and leg-phase blending. This involved reducing foot sliding during stop animations by matching the leg phase, adding support for selecting the best animation option based on the leg phase, and extending the system to implement the use of sharp turns for walking.
+On the internal Subsumption editor, the team addressed usability feedback from the designers, and bug fixing continued. They also began extending the tool to manage the editing of mastergraphs, which has never been possible in the external tool.
+Work was also done to extend two different areas of AI perception functionality: The first not only allows NPCs inside ship cockpits to target on-foot enemies not visible to radar, but also allows NPCs on the ground to visually track large objects, such as vehicles, and engage in ground-to-flight combat.
+The second is audio perception. Previously, NPCs could hear any sound if they were at the right distance from it. Now, the hearing component and audio map use the volume of the sound at its source and then calculate the strength of the audio received by the listener. This is used inside the perception component to influence the perception meter based on how strongly the sound is perceived. The new extension allows the designers to create multiple curves to describe the influence of the different audio semantics. For example, explosions have a different influence than footsteps. Each audio stimulus also has a different maximum value it can push the perception meter to.
+Finally for AI Tech, the idle system was extended to allow the designers to set up different weights in the idle sets available to different usables. This allows them to better customize which idle set should be prevalent during the selection based on the environment they’re creating.
+## AI (Vehicles)
+Vehicle AI and Vehicle Features worked together on AI targeting things other than vehicles, such as turrets, components, and stations. This, combined with special behaviors for strafing runs, allows the AI to perform attack runs on stations.
+## Animation
+The Facial Animation team dedicated most of the month to multiple PU character sets, including lines for rescue-transport gameplay. They also provided mo-cap and on-set facial services for the Marketing team. They’re currently working on cleanup and facial animations for various Q4 events.
+## Art (Characters)
+The Character Art and Tech Art teams prepared various new armors, worked on the Subscriber program, and progressed with Stanton’s ‘Earth-fashion’ outfits.
+On the concept art side, further development was done on frontier outfits, undersuits and helmets, medical armor, and creatures.
+## Art (Ships)
+In the US, the Vehicle team took the Drake Corsair through final art and are currently putting the finishing touches on the wear and tint systems. They created new geometry for the exterior of the docking collar and took it through final art with animations and lighting. Most of the team then moved on to LODs and the damage mesh.
+“We are experimenting with a new setup system to trigger lights on the exterior of the ship for specific states, such as landing, and when using the lift to allow for a more dynamic lighting experience.” Vehicle Team
+Additional support was also given to get the Drake Vulture ready for release.
+In the UK, Ship Art continued work on the Argo SRV, which is progressing through greybox, with only habitation remaining.
+The final art pass on an unannounced ship was completed in preparation for review this month.
+“We’re very pleased with how this ship turned out. It was a great opportunity for us to push the workflow and visuals forward. For example, exterior lighting states, better-looking glass and glows on exterior lights, new damage trims, and new artwork for countermeasures.” Ship Team
+An unannounced ground vehicle passed its final review gate, with some small alterations to the dashboard being made to improve the visibility of the speedometer alongside polish tasks.
+The Hull-C polish pass was concluded, with all major bugs and improvements completed.
+The resource-management pass on the Aegis Hammerhead continued, with a new gravity generator room being added. The team also began implementing the new component bays.
+Work was also completed on an upcoming variant.
+## Community
+The team started the month with a follow-up comm-link on Battle Of The Bricks, detailing how players can link their own charity stream to the campaign. They then acknowledged ten outstanding submissions to Ship Showdown's Phase 1.
+Community invited players to join in with Ship Showdown by launching the Top Eight Free Fly along with a referral bonus and the opportunity to fly the top eight ships from the finals.
+Ship Showdown’s final four (RSI Scorpius, Anvil Pisces, Crusader Star Runner, Anvil Carrack) each qualified for a free limited-edition paint and an in-game challenge coin from their manufacturer. The Anvil Carrack was ultimately crowned Ship Showdown 2952 Champion and will receive an in-game model at a later date.
+The team then headed into Pirate Week, which included a Nine Tails-themed photo contest.
+Preparations for digital CitizenCon 2952 on October 8 continued, including the release of the event schedule.
+Finally for Community, the team continued the Bar Citizen World Tour, visiting Orlando in the USA, Cheongju in South Korea, Paris in France, and Singapore.
+“Thank you for the hospitality and the hearty evenings with many new friends!” Community Team
+## Engine
+In September, the Physics team refactored the ray world intersection (RWI) verification. Requests are now verified when queued. The RWI API now also supports the named parameter idiom to prevent further mishaps in its use. An option was also added to RWI that allows sphere tracing against distance fields. Moreover, changes were done in the level export code to enable the reliable attachment of roped to other entities on the client.
+On the renderer, more progress was made on the Gen12 transition. Cube map back drops, light beams, geom caches, silhouette rendering, water volumes, water reflections, and water caustics were ported. Various editor tools now run with Gen12 as well, such as the character editor and Mannequin.
+Last month’s support for transient graphics passes saw further adoption uptake, with lots more passes now using it. Furthermore, support for transient compute and copy/clear passes was added and work to support transient scene render passes is currently underway. Additionally, memory tracking for graphics passes was added. Gen12 now also supports texture anisotropy overrides as well as a global MIP bias. Material resource binding was refactored, and alpha blending support was added to the hologram shader. Lastly, various optimizations were done to avoid redundant clears on render targets and updates on pass resources.
+The Gen12 port of volumetric cloud rendering was completed.
+On the core engine, the team added support for sys calls in CigProfile and frame time is now included in peak detection cigTrace events. More work is being done to enable p4k files to be memory mappable, which will allow for faster engine startup. As an optimization, the team was able to remove entity-based network wakeups.
+The remainder of the time was spent supporting Alpha 3.18 and the live PU.
+## Features (Characters & Weapons)
+Throughout September, work continued on the underlying system for FPS devices. This involved adding features, such as timer and proximity triggers, and support for behaviors, such as explosions and actor-status effects when devices are triggered. This will, for example, allow the team to replace the out-of-date flashbang logic.
+The Feature team also began prototyping the flow for restraining NPCs and other players, which will be used when an enemy is incapacitated or surrenders. The player can apply wrist and ankle restraints to ensure the enemy is not able to recover and resume hostilities.
+“Of course, another player or NPC may come along and remove the restraint, but it is a small risk for those who want to avoid using lethal action.” Features Team
+## Features (Gameplay)
+Gameplay Features continued to support the release of Salvage T0. Additionally, they made several quality-of-life plans for mining and loot generation that will be worked on after the release of Alpha 3.18. Both features will receive a general balance pass, while the team is looking to improve multi-crew mining. For example, by adding benefits to using an Argo MOLE over several MISC Prospectors.
+Work continued on the resource network, which involved Gameplay Features working alongside Vehicles to unify the way temperatures are controlled throughout ships, including the coolers that some ships carry.
+The EU-based PU team began supporting their US counterparts on the cargo refactor as it approaches release.
+## Features (Mission)
+The Mission Feature team began the month preparing for the go/no-gos for Alpha 3.18’s Security Post Kareah rework, infiltrate missions on Orison platforms, and the prison updates.
+A simple change to help prevent combat logging was also tested, with time being allocated for further work following feedback.
+Testing progressed well on the lessening of CrimeStat 1 and 2 severity. Improvements were also made to help differentiate between a trespass zone and an area controlled by unlawful hostiles. Significant progress was made on time trials too, including improvements to allow the designers to create an infinite number of checkpoints of any shape with the area tools.
+September also saw progress on the investigation mission mentioned in last month’s report.
+“We feel we are ready to let Narrative go wild with creating mysteries aboard a variety of ships and surrounding environments.” Mission Features
+Work with UI on the redesign of the Contract Manager began in earnest, with specific features and problems being worked through each week. Finally for Mission Features, plans for the team’s work up to Q2 2023 were proposed, including many new and long-anticipated mission types.
+## Features (Vehicles)
+Last month, Vehicle Features focused on supporting the release of Persistent Entity Streaming. This included work on the transit system, which received a significant refactor to cope with how things now stream.
+The team also spent time improving other older systems, including Tiles, the underlying tech system that connects objects to power and other resources. They also reworked the aiming and gunnery system, which received upgrades for future releases to simplify and improve things. For example, making weapons significantly more accurate and reliable in vehicles.
+For new systems, the team worked on the EUPU team’s resource network, converting vehicle systems to utilize the new implementation and updating all item behaviors.
+They also progressed with features driven by the needs of Squadron 42. Most notably, the ship MFD system, which has been fully planned out and designed and is currently being implemented in-game.
+## Graphics & VFX Programming & Planet Tech
+In October, the Graphics team completed work on edge-highlight rendering code in support of the FPS scanning of occluded objects. This involved creating a new render-to-texture layer used exclusively for augmented reality rendering, which will be used for all AR/in-world UI rendering going forward. The shader used for AR rendering was also upgraded to support tesselation/smoothing, tri-planar texture mapping, and dynamic multiscale texturing.
+At the request of the UI team, the Graphics team investigated the possibility of using D3D/Vulkan's anti-aliased line rendering for rendering wireframes on UI meshes. However, they decided to go with a shader-based approach using tessellation hardware instead due to performance issues in the drivers.
+The team also began looking into improving and unifying all resource streaming systems, with the goal of simplifying the code while allowing more intelligent use of the available memory so that they can adapt to the different scenarios across the game. Work on the ultra-high resolution screenshot output was completed for the Marketing team too.
+VFX Programming continued work on the damage map feature for salvage. This included supporting the vehicle artists to get the most out of the damage shader, adding support for vehicle debris, and fixing bugs.
+The Planet Tech team are in the process of delivering Rastar V1, the internal tool used to build modules and populate planetary environments with outposts, derelicts, and cities. October’s tasks included bug fixes and usability improvements to better support production requirements. Planet Tech also improved the river tech for Alpha 3.18, with several bug fixes and a new spline system to better match complex topology curvatures. Finally, they made fixes to the Gen12 rendering of planets ready for Alpha 3.18.
+## Lighting
+Lighting continued work on Pyro’s Ruin Station throughout September.
+They also completed the necessary lighting passes on the updated Security Post Kareah, working alongside the core development teams to push it to final.
+Lighting also fulfilled requests for footage that will be used in an upcoming event.
+## Locations (EU)
+The EU-based Locations team focused on Pyro last month, progressing with the art and design of Ruin Station.
+They also developed several other areas, including Security Post Kareah, an upcoming event space, and older landing zones; adding new animations to bring them further to life.
+## Narrative
+After putting the finishing touches on their work for IAE 2952, the Narrative team progressed with many of the initiatives started last month, including mission work for the Alpha 3.18 patch and beyond. In addition to the text players see in the Contract Manager and on the screen as objectives, they also worked closely with Design on the terminals and kiosks that players interact with.
+“It’s important that the screens not only clearly convey their function but provide verisimilitude for how they are supposed to be used in-lore, which can be tricky to balance.” Narrative team
+The Narrative team also assisted with planning future improvements to the Contract Manager mobiGlas app itself to make it a more robust and player-friendly experience. They also began discussing upcoming work to continue improving the new player experience and help players better understand the nuances of playing Star Citizen when they first enter the 'verse.
+September also brought with it new content to the website, including a StarWatch highlighting how Hollywood’s dealing with regen tech, a new BOotyCall about pirate superstitions, a Portfolio for Cousin Crow’s Custom Crafts, and a brand-new set of Galactapedia posts. Members of the Narrative team also made a special appearance on Star Citizen Live to answer lore questions.
+## Interactables
+The Interactables team spent time closing out some of their consumables work for Ruin Station and worked on various marketing assets that will be in players’ hands soon.
+## QA
+QA’s recent focus was on Persistent Entity Streaming related testing. In addition, the PU content teams tested all Alpha 3.18 deliverables, providing continuous assessments for each feature and one final assessment before the official feature review meetings.
+## Tech Animation
+September saw tech Animation progress with the face-scanning initiative mentioned in last month’s report, which aims to add more heads to the game’s gene pool. The initial scan session saw an extra 20 female heads scanned, which are currently being processed by the Art teams. Tech Animation will then rig and implement the assets into the engine.
+Alongside this, the team explored and refined their methods for implementing geometry caches into the engine and Maya’s deformation technology.
+“We have some exciting developments with some of our elements in-game that will take them to the next level of visual fidelity.” Tech Animation
+Tech Animation also assisted in the creation and implementation of new enemy types that are being worked on by other feature teams.
+## Online Services (Montreal)
+In September, the Online Services team gathered in Montreal, with members flying in from Portugal, New Jersey, and Toronto, for a week of planning.
+They also prepared for Alpha 3.18’s Evocati release, which included bug fixing, service deployment testing, and debugging the new login-flow process.
+They also progressed with several features needed for Persistent Entity Streaming and Alpha 3.18, including how shards handle crashed states, transactions, anti-cheat, and account resets.
+Finally for Online Services, they tracked down and fixed a long-standing bug that prevented players from being able to refuel or restock munitions at landing pads.
+## Live Tools (Montreal)
+The Live Tools team finished integrating the new module dedicated to seeing infractions committed by players. They also worked on design improvements for Hex.
+## UI
+The UI team continued their ongoing work on the Starmap, last month adding new tech to allow them to create interactive holo-volumes using the UI system. This provides them extra flexibility without having to rely on the content teams if they want to add a 3D holo-volume to the game. As well as being used on the standard ship radars, this will make it possible to have large real-time holo-spheres on capital ships in the future.
+In preparation for Alpha 3.18, they also closed out the remaining persistence-related UI code that uses loadouts.
+## VFX
+Last month saw the continued prototyping of the quantum travel VFX rework, with a focus on refractive elements to emphasize the forming of the hull-hugging ‘bubble’ while a ship’s drive spools up.
+Salvage effects also continued, with visual balancing to allow the best possible read to help players understand what’s happening throughout the hull-stripping gameplay loop.
+A new vehicle had its VFX pass completed, and two other vehicles entered VFX production after the completion of their pre-production phase.
+Finally, various bugs and tweaks were made to the new derelict locations, as well as some miscellaneous fixes for other areas of the game.

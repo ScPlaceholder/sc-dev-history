@@ -1,0 +1,39 @@
+## Star Citizen Patch 3.11.1d
+Alpha Patch 3.11.1d has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.1-PTU.6460279.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- Intergalactic Aerospace Expo Exterior
+- General Gameplay with client/server stability
+This is a special build meant to test new changes to the variable backend service which should greatly increase its reliability. Please do normal gameplay during this test.
+Known Issues
+- Players do not always spawn in the location they picked
+- Main Grim Hex 02 Elevator has two Elevator Carriages
+- CRU-L4 - Exterior elevator buttons do not function
+- Mining tool attachment will not equip even after equipping it manually or in the PMA
+- The Hammerhead elevator collides with the landing bay at Port Olisar, causing the ship to move
+- Restocking on missiles/torpedoes, then storing and respawning the same ship will have missiles/torpedoes missing
+- Ships landed at Lorville & New Babbage cannot be stored
+- Players can get their ship into an 'unknown' status after abandoning it and then dying and respawning at some Rest Stops causing an insurance loophole
+- Origin 100 series Rain / slush effects are moving backwards to the direction of travel
+- Greycat ROC mining arm can snap out of place upon re-entering the vehicle if the mining arm had been previously extended prior to exiting the vehicle
+- Running into the stairs of an Origin 100 series ship as the door of the ship opens will cause players to fall through the ground
+- Players cannot re-enter the Drake Cutlass ships if the ramp is damaged
+- Refueling hydrogen fuel first can prevent you from refueling quantum fuel
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+## Feature Updates
+Gameplay
+- Increased glow amount for the FPS mining HUD to increase visibility on bright backgrounds.
+## Bug Fixes
+- Fixed an issue causing players to be unable to access services to customize ships, equipment or access character customizer.
+- PIT wheel should no longer become unusable while flying a ship.
+- Ballista should no longer shake and break the door After Opening the Side Door when Spawned at a Levski Garage.
+- Ship Weapon should no longer become muffled / silenced when the Players Ship is above the Level Art in the center of Arena Commander maps.
+## Technical
+- Fixed 1 Client crash
+- Fixed 1 Server crash

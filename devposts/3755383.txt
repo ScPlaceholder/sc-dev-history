@@ -1,0 +1,25 @@
+## Star Citizen Patch 3.12.0b
+Alpha Patch 3.12.0b has been released and is now available on the LIVE servers! Patch should now show: VERSION 3.12.0-LIVE.6787151.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: NO
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+- Selling commodities from personal Inventory causes a service error
+Workaround: Make a commodity cargo box in a ship cargo grid and sell through the ship inventory.
+- When logging into some commodity and refinery kiosks, they can display incorrect Commodity Information and Prevent Sales
+- Attempting to sell minerals in Prison results in a Processing screen and then a transaction failed message
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool
+## Major Bug Fixes
+- Bounty Assessment missions should now show correctly again and let the player progress into further missions after a player does a character reset
+- After exiting Quantum Travel, the QT HUD on ships should no longer get stuck displaying while the QT drive is cooling down
+- Ground vehicles should no longer take intermittent damage during travel across the surface of low gravity moons
+- Players should now be able to activate mining consumables in the Mole using the inner thought UI
+- Players should no longer gain a crimestat after completing bounty missions
+- Fixed an issue causing ships to despawn after a player disembarks for a short duration
+- Contract popups should no longer contain "mission(Title)" instead of the intended text
+## Technical
+- Fixed 7 Client crashes
+- Fixed 2 Server crashes

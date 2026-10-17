@@ -1,0 +1,61 @@
+There is a chance your character could get into a bad state in tonight's ptu, you will need to wait 15 min and try again if this happens and not recopy
+## Star Citizen Alpha Patch 4.8
+Alpha Patch 4.8 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.8.0-PTU.11721630.
+- Audience: Evocati (Standard Evo NDA)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+## Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Mission: Tactical Strike Groups & QV Extraction Stations (Mission Locations increased and lots of art/lod/performance polish)
+- New Event: Return of Xenothreat
+- Item Recovery - Vehicle Loadouts
+Known Issues
+- Multivehicle - PU - Vehicles / Interaction - Command Module - F-interaction for Pilot and Co-pilot seat is missing
+- PU - EVA - Unable to move using mouse control and head is locked in place during EVA giving very little control
+- PU - Stanton - Missions / Location / UI - Missions accepted after a server error or hybrid restart does not progress after completing Go To objective
+- PU - UI - Party connection Playing on repeat after quantum travel after a party member crashes and reconnects
+- Multi-System - PU - Missions / UI - Missions have no QT Beacons present and mission objectives do not progress on the initial / only shard
+- PU - Multisystem - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+## Gameplay & Features
+Vehicles & Loadouts
+Item Recovery - Vehicle Loadouts
+This update focuses on the latest updates to Item Recovery with ship loadouts.
+By default, when your ship is destroyed and you file a claim, you will receive the base loadout for that vehicle. This loadout is defined by either: Your RSI web hangar configuration or the default in-game vehicle configuration. Any modifications you made (components, weapons, etc.) will not be restored as part of the default claim process.
+- Saving a Vehicle Loadout
+Note: For this test a custom loadout is called a “snapshot”, this terminology will change for release.
+You can save the loadout current ship loadout using the camera icon in the ASOP. When going to claim back this vehicle, you will see an option to claim back the loadout you saved.
+Loadout reclaim cost (aUEC) is based on both the hull and the saved loadout configuration.
+This cost will be significantly higher than a default claim
+You can choose to:
+- Claim the base ship (default loadout)
+- Claim the saved snapshot loadout
+- Saving of crafted vehicle components
+We are still working on making crafted vehicle components persist through claims. For this build, crafted items will come back in their default state on next claim.
+- Consumables
+Ammo and missiles are treated as consumables:
+- Ships reclaimed from a snapshot will not include ammo or missiles
+- Fuses are restored according to the vehicle’s snapshot
+- You must restock and rearm via ship services
+- Stored Local Ships & Scrapping
+There is a limit on how many ships can be stored locally within a hangar’s storage.
+Bricked ships will not be automatically removed from a hangar’s storage, allowing you to call them up on the hangar to retrieve any cargo that was within.
+You can scrap ships to remove them from your hangar, scrapped ships which you own can be claimed back later.
+- Vehicle Manager App (VMA)
+- VMA no longer saves ship loadouts for claims. This must now be done via the ASOP to persists a loadout.
+- VMA is now limited to ship customization (similar to tractor beam interactions)
+- VMA will now only display vehicles stored at the current player’s location, regardless if you are the owner of the vehicles.
+- Bricked Items
+Each time an item or vehicle is claimed, it enters a temporary “bricked” state: Grace Duration: 5 minutes (test value)
+After this period, the item or vehicle is non-functional
+- Salvaging
+For this release, selling and salvaging vehicle modules are disabled. Hull scrapping for imprinted or bricked vehicles is functional, but does not reflect the final implementation.
+- Death flow
+When dying, similar to how it is in LIVE, you will respawn with the gear you had equipped at the moment of death.
+- Test Focus
+- Attempt to duplicate items using Loadout Claims (not default claims)
+- Perform repeated claims to stress test backend systems
+- Report any invalid or transient states encountered in ASOP
+- Store vehicles you do not own, Vehicles owned by another player, Bricked vehicles, NPC vehicles
+- Spawn nested vehicles
+- Deliver the constellation (with snub) and Check that the Merlin get it’s own entry. Check the bricked behavior of the merlin when claiming Constellation and vice versa

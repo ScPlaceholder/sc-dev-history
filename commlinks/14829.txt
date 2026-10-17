@@ -1,0 +1,41 @@
+## Greetings Citizens,
+Ghost Sight
+Holo Sight
+Open Sight
+Red Dot Sight 1
+Red Dot Sight 2
+Greetings Citizens,
+Jason Hutchins, Senior Producer at Cloud Imperium Games Austin reporting from Illfonic. While Sean Tracy headed to sunny Wilmslow for a character summit and then over to meet with the guys at Foundry 42’s new Frankfurt studio, Steve Bender and I have remained in Denver to assist with the Star Marine process. Our overall goal is to keep the focus on our core gameplay systems and character locomotion.
+Here is what progress we made as a group this week:
+- An Internal playtest using a new version of the launcher across all of our studios. The new launcher successfully patched itself and the game client, and did it about 3 times faster than older launcher.
+- The internal playtest was also our first run through on the freshly-developed Generic Instance Manager (see Chris Roberts’ latest letter for details on this tech.)
+- There has been a cross discipline effort between animators, engineers, and technical artists, and tools specialists to resolve character locomotion animation issues. One thing to keep in mind is that while we are using CryEngine, what we are doing is not a simple reskin of a game like Crysis 3. There are fundamental differences between Star Citizen and other traditional shooters in the way we keep our 1st person and 3rd person models and camera in sync. Going into why we are in this state is a much longer topic for another day.
+- The complete juke/start/stop set for the Run animation is complete as of today. We are still seeing a slight pop in some quick transitions but it is a significant improvement!
+- The popping we saw in Turns has been resolved, and we look forward to seeing that in our internal test next week.
+- The cover system, which was removed from the build for a review, is now back in and working. It needs tuning and some bug fixing still, but the base functionality is there. When you get near an object that will provide cover, you’ll go into a cover mode. You can strafe or move out of cover to fire, or lean out of cover to fire.
+- Prone animations are much improved and we are looking at a version that has your weapon visible to you while in first person. This will continue next week.
+- We examined some new concepts for weapon sight components on the ATT-4 Laser Rifle. These are modular components and will eventually be integrated into the game for other weapons, too. We want weapons to be as customizable as the ships in future Star Citizen modules, so variety is the order of the day when looking at these kinds of assets. For the short term, we are going to pick one of these to add to the standard load-out on the ATT-4. Which one would you like to see as standard? I’m partial to the ghost sight for close encounters, but that may be just because it reminds me of what I use on my trusty [redacted] 590-A1 shotgun.
+- We have re-integrated a crosshair reticle into the HUD. This is not a traditional eye’s front cross hair, it is more like a visible laser “red dot” aim system that points where your muzzle is pointing. In previous builds, we had disabled this because of weapon animation issues and because QA was using the crosshair exclusively to hip fire their weapons while on the move. We made the decision to bring it back thanks to improvements to the weapons animations. We will deal with the run & gun gameplay using other designer-tunable methods. John Crewe at Foundry 42 has several knobs and dials he can use to tune these values until they feel right to us. Then when we get it into your hands we’ll listen for your feedback and be able to respond.
+- The VFX and Tech Art teams did a performance pass on the Gold Horizon level last week that informed a bunch of optimization work that we were able to integrate this week. Below you can find a video that showcases some VFX in the level that look great and are much less costly to client performance.
+- We have code support to deploy gadgets and grenades working again, and in a consistent manner.
+- We’ve even added some additional art resources, created in the past few weeks. New Proline Grenade models by Behring, have been added and new HUD icons for weapons, grenades and gadgets are in.
+- The teams across the pond are essential, too! Players can now heal themselves or stop bleeding out by using a Medpen gadget from the Foundry 42 team. BHVR mocked up the UI hints for it, which we’ll hook up next week for the playtest.
+- The new Free Play Practice mode (essentially a free-for-all mode on the Gold Horizon map) is all hooked up through the Lobby UI and will be featured in our internal playtest next week. We knew that this ‘free fight’ mode was a big request for the community, so we wanted to make sure it was added.
+Here are our current blockers:
+- Melee attacks aren’t working/animating.There are a couple of animations using the weapons that we need to clean up and properly randomize so players aren’t doing the same attack all the time. It’s a last ditch attack, though, I don’t recommend it. Hopefully you can put a little distance between you and your enemy with these attacks. Sorry, Disco Rambo, no combat knife one shot kills just yet.
+- Ongoing weapon recoil issues: we need to get animation, tools, and code support in a place where designers can effectively tune recoil values; timing, muzzle rise, drift, etc without having to change animation assets.
+- There are still a number of locomotion animations still need to be cleaned up and integrated.
+- Starts/Stops/Jukes for Crouch movement
+- Crouch Locomotion and Idle pass
+- Weapon Select and deselect broken in Standing for all weapons
+- Weapon Select and deselect broken in Crouch for all weapons
+- Weapon Select and deselect broken in Prone for all weapons
+- Hurt/injured Animation Locomotion
+- From healthy to Injured State Animations
+- ADS to Lowered, ADS to Idle, Idle to ADS, Lowered to ADS
+- Jump for Stocked, Pistol- from Standing
+- Jump for Stocked, Pistol- from Crouch
+- New Grenade Throw animation and implementation for Stocked and Pistol in Stand
+- New Grenade Throw animation and implementation for Stocked and Pistol in Crouch
+- Bugs relating to Hit Reactions. Our first person and third animations, being synced, may cause gameplay related issues with getting it. Correcting this will require some additional R&D and tuning to feel good.
+- We are seeing some inconsistencies in the way characters are dying and how they ragdoll.

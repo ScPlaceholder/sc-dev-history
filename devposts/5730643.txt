@@ -1,0 +1,68 @@
+## Star Citizen Patch 3.18.0-PTU.8362604
+Alpha Patch VERSION 3.18.0-PTU.8362604 has been released to the PTU, and is now available to test!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 2
+Server Region: US/EU
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+This evening, we plan to run a stress test on the PTU for Star Citizen Alpha 3.18. This is a critical step in our journey towards hopefully opening the PTU to all backers over the weekend, and we'd love your help! Your involvement and feedback have been a MASSIVE help thus far. That's why we are kindly asking for all hands on deck to hammer the PTU this evening. We're in the home stretch, and your participation will help us get this one out the door.
+The stress test will kick off at 3 PM Pacific / 2300 UTC and run for 2 hours. We encourage all Wave 2 testers to join in and put the servers through their paces. The more players we have online, the more effectively we can simulate the live release conditions and identify any potential issues before truly opening the flood gates on PTU, followed by a swift launch to the live servers.
+During the stress test, we will be monitoring the servers, performance, and stability, and gathering feedback from the community. Your bug reports, feedback, and suggestions are incredibly valuable to us and will play a crucial role in the final stages of launch.
+https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-alpha-3-18-open-ptu-amp-stress-testin
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- Locations / Law - Medguns and Multi-tools can be used in armistice
+- Vehicles / ASOP - Vehicle may be unable to liftoff from pad after retrieved from ASOP
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Wallace Klim is missing from the drug lab in Grim Hex
+- Looted Ammo Clips Drop Off Player
+- Multivehicle - Audio - Missing Audio/SFX with QT travel
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Scanning not showing advanced statistics and details
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Cargo - Performance - Fully loaded C2 landed at Area 18 results in Slow Framerates or Crash
+- Vehicles/IFCS - When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Cargo - Performance - High capacity cargo vessels, when loaded, can cause a severe performance drop on both client and server
+- Actor Feature / Law - Respawn - If a player is placed into Klescher after being rescued with a crime stat, the player is respawned in the facility still incapacitated
+- Breach & Steal - Design/Missions/Locations - The target Reclaimer "October Rising" will disappear when you get very close to it, makin the mission impossible.
+- Ship / Commodity Trading / Cargo Inventory - Selling some of the cargo while the vehicle is stored cause the cargo to show at max inventory capacity
+- Selling - Commodity Kiosk / Cargo - Large amounts of cargo sold at once will cause the transaction to fail the cargo will be taken and no money will be granted
+- Law & Criminality - Commodities / Cargo - Stolen Cargo does not behave as such and can be sold as legal cargo if the ship with the cargo is stored
+- Ships - Cockpit - Actor animations - Occasionally unable to exit ship seat
+- Locations - Transit - Elevators - Players can fall through Elevators
+- LifeTime Management - Sustenance - Items are not destroyed / cleaned up to the persistence limit when in a vehicle after streaming the area out for 60 minutes
+- Rest Stops (R&R) / Rundown Station (R&R) - Design / Transit / Location - The player is unable to call elevator from hangar interiors
+- Vehicles / Docking - A retrieved ship delivered to a docking port will be missing collision
+- Multiple Locations - ASOP Terminal / Ships - When storing a ship, the ASOP terminal will set the ship status to "Claim" instead of "Retrieve."
+## Arena Commander
+- Added Cutlass Steel to AC Duel, Battle Royale, and Squadron Battle modes as a selectable ship
+## Bug Fixes
+- Fixed - Greycat ROC/ROC-DS - Mining - The Extraction laser fails to retrieve shards from a harvestable deposit and include them inside the vehicle cargo
+- Fixed - Mission Content / UI - Infiltrate and Defend - 'Eliminate Each Target' message is still present after player has reached mission location
+- Fixed - MULTIVEHICLE - Ships / Vehicles - Snub fighters docked to compatible Constellation ships despawn after several minutes
+- Fixed - Drake Vulture - Vehicles / UI - Bathroom Door won't unlock
+- Fixed - Drake Vulture - Ships / Vehicles / Game Code / Weapons - Toggling the Salvage Beams can cause animation skips, and incorrect arm states
+- Fixed - Stanton - Crusader - Security Post Kareah - Design / Vehicles - QT for vehicles is currently "obstructed" if players attempt to use their QT in the vicinity of the station up to a distance of 10km from Security Post Kareah
+- Fixed - Multivehicle - Room System / Vehicles / Animation / Actor Status / Room System - Players do not inherit atmosphere of the ship when sitting or laying down in some seats without helmets
+- Fixed - Actor Feature - Personal Inventory - Attempts to move all can fail
+## Technical
+- Fixed 3 Server Crashes

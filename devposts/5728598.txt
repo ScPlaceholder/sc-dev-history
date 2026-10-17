@@ -1,0 +1,68 @@
+## Star Citizen Patch 3.18.0-PTU.8361845
+Alpha Patch VERSION 3.18.0-PTU.8361845 has been released to the PTU, and is now available to test!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 2
+Server Region: US/EU
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Wallace Klim is missing from the drug lab in Grim Hex
+- Looted Ammo Clips Drop Off Player
+- Multivehicle - Audio - Missing Audio/SFX with QT travel
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Scanning not showing advanced statistics and details
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- Salvage / Hull Scraping - Anvil Carrack  - Sections of the hull show as valid but do not allow salvage ; Some only salvage when beams are offset ; Some show as valid but do not allow salvage
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Cargo - Performance - Fully loaded C2 landed at Area 18 results in Slow Framerates or Crash
+- Vehicles/IFCS - When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Cargo - Performance - High capacity cargo vessels, when loaded, can cause a severe performance drop on both client and server
+- Actor Feature / Law - Respawn - If a player is placed into Klescher after being rescued with a crime stat, the player is respawned in the facility still incapacitated
+- Breach & Steal - Design/Missions/Locations - The target Reclaimer "October Rising" will disappear when you get very close to it, makin the mission impossible.
+- Ship / Commodity Trading / Cargo Inventory - Selling some of the cargo while the vehicle is stored cause the cargo to show at max inventory capacity
+- Selling - Commodity Kiosk / Cargo - Large amounts of cargo sold at once will cause the transaction to fail the cargo will be taken and no money will be granted
+- Law & Criminality - Commodities / Cargo - Stolen Cargo does not behave as such and can be sold as legal cargo if the ship with the cargo is stored
+- Ships - Cockpit - Actor animations - Occasionally unable to exit ship seat
+- Klescher Rehabilitation Facility - Locations / Loading - Infinite black screen on loading into Klescher
+- Locations - Transit - Elevators - Players can fall through Elevators
+- LifeTime Management - Sustenance - Items are not destroyed / cleaned up to the persistence limit when in a vehicle after streaming the area out for 60 minutes
+- Rest Stops (R&R) / Rundown Station (R&R) - Design / Transit / Location - The player is unable to call elevator from hangar interiors
+- Vehicles / Docking - A retrieved ship delivered to a docking port will be missing collision
+- Multiple Locations - ASOP Terminal / Ships - When storing a ship, the ASOP terminal will set the ship status to "Claim" instead of "Retrieve."
+## Bug Fixes
+- Fixed - Multivehicle - Vehicles - Destroyed ship thrusters will still not function after being repaired
+- Fixed - FPS Mineables - Mining / Game Code - FPS Gem Shards are cleaned up/vanish when multiple Deposits are Shattered
+- Fixed - MISC Hull Series - Vehicles / Ships / Vehicle Feature / Controls - Alt+K keybind will not retract vehicle spindle
+- Fixed - Mercenary Missions - Security Work Asses./Protect Site - Remaining Hostile NPCs Not Spawning In
+- Fixed - Drake Vulture - Vehicles / Art / VFX - The Drake Vulture is missing countermeasure VFX
+- Fixed - Locations - Art - The Klescher Rehabilitation Facility escape route is missing textures and has gray boxes
+- Fixed - Ships - ASOP Terminal - Spawning ships causes the requested ship to spawn outside of the hangars
+- Fixed - Multivehicle - Vehicles / Docking - A retrieved ship delivered to a docking port will be missing collision
+- Fixed - AC - Elimination - Echo 11 - Spawn points are placing players within geometry.
+- Fixed - Star Marine - Elimination - Player may be able to reach Out of Bounds areas
+- Fixed - Klescher Rehabilitation Facility - Law System - Kiosk / Terminal - Mined ores are worth 1/10 of their intended merit value
+- Fixed - Drake Vulture salvage beams stay on when entering Armistice Zone
+- Fixed - Klescher Rehabilitation Facility - Law - Locations / Actor Feature - Players are unable to leave prison after taking elevator to surface level
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 3 Server Crashes

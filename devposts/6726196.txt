@@ -1,0 +1,71 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9131345.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Evocati
+Server Info: US Only - EPTU Channel - PU/AC - Replication Layer Enabled/Recovery Disabled (for this build)
+Starting aUEC: 15,000,000
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of Evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.23 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+Note: We intend to start leaving builds up as long as they meet stability thresholds
+- Stability (Main Focus)
+- Full Character Customizer Revamp
+- mobiGlas Rework
+- Starmap / Interior Map / Minimap
+- EVA T2
+- New Loot Screen / New Visor / Lens
+- Full FPS Combat Refactor
+- Backpack reloading /Ammo repooling
+- Dynamic Crosshair
+- Physical Shopping UI
+- New Arena Commander Features: Grav Royale, New Race Tracks, and New Pirate Swarm Final Wave
+Not Ready For Testing/Feedback
+Features listed below may be partially in but not in a state we are ready for bug reporting and feedback unless it causes the game to be unplayable.
+- Master Modes
+- PIE / PIS and Default Item Actions
+- Freight Elevators
+- Hauling Missions
+- Reputation-based Hostility
+- And More
+Known Issues
+Avoid using the map app while in Area18 as a client crash can occur.
+- PU - UI - mobiGlas / Visor / Lens - Elements within the mobiGlas / Visor / Lens will not update till the player moves their mouse around a considerable amount
+- PU - Stanton - Multiple Locations - AI - AI are spawning together in group and they can be slow to leave their spawn points
+- PU - RL - Service Beacons / Missions - Service beacons cannot be created
+- Stanton - UI / Shopping Kiosks - Players are unable to select items by clicking 3D icon
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Stanton - Locations / AI / Animation - AI can be seen floating off the ground at multiple locations
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+- PU - Terminal - Locations / Interactions / UI - Unable to interact with the Medical Insurance Terminal to manage regeneration
+- PU - UI - NikNax / VLM - Liveries - All Liveries are missing volume information in NikNax and Vehicle Loadout Manager
+- PU - Performance - Inconsistent frametimes / stuttering during high concurrency due to DatabaseUnloading
+- RSI Constellation ALL Variations - PU - Vehicles / Interactions - Interaction prompt missing for pilot and co-pilot seats
+- Front end - UI / Locations - Inventory - Entitlement - Primary Residence location can be missing from the front end
+## Features and Gameplay
+Locations
+- Green zones around unlawful locations should no longer warn about crime stats
+AI
+- Creature Movement Polish Pass
+Gameplay
+- mobiGlas and Map UI Polish
+Interior map updates: Improved zone-to-zone multi-point path routing. Implemented precursor for transit system based routing. Lerp transition when navigating between zone hosts. Increased waypoint arrival distance as well and incremental route update distance. Show room labels are now displayed in the minimap. Fixed arrow offset issue on lens minimap. Added a new exclusion tag that can be applied to zones where the interior map should not be displayed. Removed offscreen navpoint markers outside of ones contained in a route
+## Bug Fixes
+- Fixed - PU - Stanton - Locations / AI / Animation - AI can be seen floating off the ground at multiple locations
+- Fixed - PU - UI / mobiGlas - The text in the Journal is not displaying until the mouse is hovered over it
+- Fixed - PU - Stanton - Mission Content / UI / mobiGlas - Tracked contracts do not have an identifying symbol to shown tracked status
+- Fixed - Multivehicle - Tech Art - Shields / SDF Fields - Various vehicles SDF Fields do not fully encompass vehicle geometry resulting in shield holes
+- Fixed - Multivehicle - PU - Vehicles - Wheeled Ground Vehicles do not have functional steering
+- Fixed - PU - Stanton - UI / ASOP / Fleet Manager - Insurance / Server Recovery - Ships become listed as Stored with no designated location or retrieval option after server recovery until another ship is claimed/delivered
+- Fixed - PU - Stanton - Microtech - Creatures / AI / Animation - Kopion will not ragdoll but freeze when killed during jump attack animation
+- Fixed - VFX - Water - Water splashes doesn't always trigger when a ship or piece of debris hits water for the first time
+- Fixed - PU - Audio Code - Outer space has "Underwater" filter applied to all audio
+- Green zones around unlawful locations should no longer warn about crime stats
+- Fixed prone characters not detecting the slope correctly if it was too steep, even if it was within the slope limit
+- Fixed prone characters having broken ground detection on planets
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 3 Server Crashes
+- Fixed 2 Deadlocks

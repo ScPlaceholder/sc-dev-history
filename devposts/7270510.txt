@@ -1,0 +1,22 @@
+Hello captains!
+Back with another Server Meshing Test "E" post action report directly from the Server Meshing Strike team.
+Meshing Test "E" was conducted on SC Birthday on Oct 10th.
+This test included 2 major hybrid crash fixes that were encountered at high concurrency in the last test which prevented us from pushing forward. Other optimizations are still under way but did not make their way into the build.
+Our objective in this test was to measure the behaviour of the Hybrid at a 1000 player concurrency.
+Shortly after initial launch, a new crash was encountered (related to client subscriptions). Fortunately, this was a configurable fatal error and so the team was able to disarm it (temporarily) and continue with the test.
+While more optimization opportunities were observed, some key measurements show great progress and stability even at high numbers. Throughput and latency were not always at the rendez-vous, nevertheless the team wanted to use the opportunity further and pushed  to 2000 concurrent players cap to measure stability and shake-out new crashes.
+As expected, the 2000 player tests was especially rough but valuable performance captures will allow progress.
+The same gameplay observation from Test "C" and "D" carry over!
+New observations in Test "E":
+- When at 1000+ player concurrency, long loading screens were observed across many players loading late into the game, caused by waiting for a free Hab to spawn in. (Would be nice to see this on screen!). Looking to see if a queueing mechanism to ease the spawning process can help. (Also looking at other spawning options...more on this later!)
+- Observed several issues occurring with ASOP during the high player count test where the terminals would appear "stuck" waiting for ships/hangars to be unstowed. After investigation, no backend issue was detected. Further investigation is under way.
+- Some players were seen quantum jumping through a server boundary but never actually pivot to the new authority, causing them to be effectively lost. Appeared as if no controls worked (stuck in seat, etc). Investigation under way. Possibly related to some game servers being overwhelmed and not processing the authority transfer in time.
+- A game server with 400 players (!!!) went through a successful server crash recovery...the team cheered.
+- Large area network binds need optimizations, as seen in multiple captures in all tests so far.
+The test was scaled back down to 6:800 and left over running for 8 hours.
+Test "E" is the last test on the 3.24x Tech Preview stream as we now have to merge back to the main 4.0.x development stream and continue.
+The team and I give you all a huge hand of applause for your help as we collectively bid farewell to this code stream to move forward to the next stages.
+The team is now assembling a series of fixes and optimizations for more meshing testing but our next tests will  be performed along the rest of the 4.0.x mayhem!
+See you all at CitizenCon 2954....and subsequently in Test "F"!
+o7
+-b

@@ -1,0 +1,6 @@
+Yes and No.
+There will always be one thread orchestrating the engine (Let's call it the Main Thread)
+It makes sure that all other threads will be getting stuff to do. In an ideal world this would cause a 100% CPU utilization on all cores.
+Unfortunately game engine parallelization is extremely complex, hard to maintain and causes lots of bugs (and headaches for us programmers! :P).
+Our engine is already quite well parallized, but nowhere near optimized since we're still heavily in active development.
+As time goes on i'm very confident that we will reach an optimal state where the Main Thread won't be an issue anymore.

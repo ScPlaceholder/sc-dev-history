@@ -1,0 +1,8 @@
+Hi Garviel,
+As you may have seen in the Citizencon 2949 demo, we've been exploring the use of physics cloth sim and other techniques for wind-responsive props.
+You can break these down into two categories, the physicalised cloth sim assets, such as the rover tarp and lab coat and the vertex deformation based wind effects, as seen with our trees, crate tarps and wind flags.
+The vertex deformation technique I mentioned above makes use of our asset's vertex colour channels to set the intensity, phase and frequency of wind for each vertex on our objects. For instance we can have a cable dangling between two points, and mask out the wind on those attachment points so they remain grounded but the slack in the cable will sway with the wind.  The main disadvantage of this technique is that it's a fairly simple noise multiplied by the wind volume parameters. For objects such as flags, which need to droop realistically when there is no wind it doesn't look that great when you're not in a rapturous storm. However for trees, cables and other soft-body assets that are tied down it works well.
+The cloth sim is certainly a more robust system and can handle a lot of situations with a greater degree of realism but I expect there is some added expense. To what extent? You will have to ask an engineer!
+We will be leveraging everything at our disposal to deliver more movement and interest in our props and we will continue to experiment with the cloth tech again as it continues to mature.
+Cheers,
+Cory

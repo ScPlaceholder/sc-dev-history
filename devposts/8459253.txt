@@ -1,0 +1,1 @@
+Recently my main focus was getting the lighting shader cost down as we tend to have a lot of lights per scene. Now the biggest cost is specular denoising, so I'm looking to squash that down. Besides that there's just a lot of individually quite cheap passes that are copying, sorting, clearing etc, that added together start being a cost in their own right.

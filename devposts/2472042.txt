@@ -1,0 +1,82 @@
+## Star Citizen Patch 3.7.1
+Alpha Patch 3.7.1 has been released and is now available!  The launcher version number should read: VERSION 3.7.1- LIVE.3313125.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+We do not have a reset database for this patch.
+Known Issues
+- Quantum travel target selection does not always update when aligned.
+- The quantum travel HUD will be lost of the player exits the seat during travel.
+- CRU-L5 may be currently missing.
+- Refueling may get stuck in a loop at full and prevent repair/rearm.
+Work around: Do each service one at a time with refuel last.
+- The Defender's Tachyon cannons are not landing hits correctly on moving targets.
+- Players may crash when in a party doing a second quantum linked jump.
+- The quantum travel HUD will vanish if the player exits the seat while in quantum travel.
+- The Combine cannon does function correctly in multiplayer.
+- Missile countermeasures are not working consistently.
+- Distortion damage does not apply correctly.
+- In Star Marine enemy indicators can sometimes be seen through walls.
+- Players may experience a stall when loading and firing weapons in Star Marine.
+- AI ships can get stuck and not continue on their route.
+- NPC beacons will sometimes display an incorrect distance.
+- Ships can spin excessively out of control when their wing is clipped.
+- Landing illegally and having your ship despawn while a mission box is inside will break mission progress.
+- The 890 Jump currently has an incorrect cargo value.
+- Planets/moons are invisible the first time a player opens the StarMap.
+- Sometimes when quickly scrolling on the ASOP the last ship on the list will not appear.
+- Players will crash if they adjust target screen orientation on the MFD.
+## Feature Updates
+Gameplay
+- Removed asteroid interdictions.
+- Adjusted interdiction rates.
+Ships and Vehicles
+- Fixed numerous collision and seat position bugs on the Mantis.
+- Made the Mantis QT jammer and snare count as a hostile act against affected ships.
+- Temporarily removed quantum drive overheat to avoid unintentionally amplifying interdictions.
+- Re-positioned ship status screens to avoid overlap with chat.
+- Raised the health on some of the Defender's parts.
+## Bug Fixes
+- The retro thruster VFX should now be lined up properly on the Banu Defender.
+- Speaking UI indicators for VOIP should no longer get stuck.
+- The female character should no longer snap awkwardly into the Freelancer turret seat.
+- VOIP connected counter should now display the appropriate value.
+- There should no longer be invisible rocks blocking havestables.
+- Ultra wide monitors should no longer see an offset personal inventory marker.
+- Cave audio reverb should no longer be applied outside of the cave.
+- The rock highlight for fractured shards of mineable rocks should no longer be inside of the rock rather than as an outline.
+- The VOIP menu should properly register the player's microphone/headset options.
+- Star Marine REC rentals should now work properly.
+- The inner-thought prompt for compatible NPCs should no longer persist into longer distances away.
+- The Pirate Gladius should now be usable.
+- The Prospector should no longer show the wrong cargo value.
+- The hotkey for closing the mobiGlas should now work consistently
+- The QT UI should no longer be shown immediately after activating "flight ready" on some ships.
+- Derelict recovery missions around Hurston should now properly generate a drop off location.
+- The interior doors of the Reclaimer should consistently work.
+- Invisible collision should no longer block the player path in caves.
+- Entering seats should no longer have a high chance of confiscating whatever is the player's hands at the time.
+- Fixed missing sounds for Mantis interdicting another ship.
+- The Banu Defender should now be able to quantum travel with a party member in the copilot seat.
+- The mobiGlas should now be able to be opened while in a bed.
+- MFDs on the 600i should no longer be replaceme textures.
+- Kiosk and ASOP screens should no longer flicker.
+- The Warlock's EMP should no longer get stuck in a loop by adjusting power.
+- Fix for the ghost train at Area18.
+- Expediting short claim time ships should no longer confuse the ASOP UI.
+- Pressing "Tab" to enter scan mode should no longer disable the quantum snare for the Mantis.
+- The keybind should now show properly for the UI prompt of a party invite.
+- Duplicate items from the PU or AC ship list should no longer show in the VMA.
+- Player ships should no longer occasionally get frozen when exiting quantum travel.
+- Fixed an issue in the Mantis where interdictions were shown at far away distances if other players were interdicted by AI.
+- Fixed an issue with startup/shutdown sounds on some ships being abruptly cutoff.
+- Fixed some ships playing engine shutdown sounds when entering quantum travel.
+- Fixed the Aegis Gladius Pirate not appearing in the PU and Arena Commander.
+- Fixed an issue causing multiple locations in caves to show outside light.
+- Fixed an issue where claiming destroyed ships was causing them to spawn without components.
+- Bed logout should now work more consistently.
+- The comms direct call video feed should now hide properly when switching channels on the mobiGlas.
+- Reliant series ramps should no longer get stuck shut.
+- Fixed an issue where the created character was not initially shown on the customization screen after exiting from the game.
+- The UI sliders on the character customizer should now work correctly after selecting hair options.
+Technical
+- Fixed 3 client crashes.
+- Fixed a server crash.

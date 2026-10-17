@@ -1,0 +1,43 @@
+## Star Citizen Patch 3.3.0x
+Alpha Patch 3.3.0x has been released to the PTU, and is now available to test!  Patch should now show: PTU-978652.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- Teach's Ship Shop
+- VOIP and FOIP
+- Missions: FPS combat mission and scramble races
+- New Ships and Vehicles: Valkyrie, Phoenix, Hammerhead, Mustangs, and Cyclones
+- Manned and remote turrets
+- Changes to ship cannons
+Major Known Issues:
+- Mission markers no longer appear after using crash recovery.
+- There are currently no interdictions.
+- Players will be locked in place, unable to move, when crash recovery is used.
+- Inviting someone to party via the mG causes a client crash. W/A: Invite via interaction mode.
+## New Features
+Ships and Vehicles
+- Quantum drives now have a maximum range per jump that varies depending on the size of the drive.  Some longer jumps may require more than one quantum travel cycle right now as this system is still undergoing some tuning/balance.
+## Feature Updates
+Missions
+- Tripled the UEC reward for scramble races.
+Ships and Vehicles
+- Fuel Updates to quantum travel: Ships can now initiate a QT to a destination they do not have enough fuel to reach, which is communicated on the HUD.  You can still initiate the travel, but will run out of fuel on the way there.
+- Made modifications to Caterpillar loadout and shields to align it with other size 5 ships.
+## Bug Fixes
+- The 300 series ships should now have their HUD.
+- Objectives should now properly populate for delivery missions with a pickup at the rest stop.
+- Fixed some missing ships from the REC rental system.
+- Players should now respawn properly when they do a quantum jump or more away from their spawn location.
+- Players should no longer get a crimestat for storage of legally parked ships.
+- Admins at outposts should now be correctly positioned behind their desks.
+- Fix for Razor zero-g entry animation being misaligned.
+- Satellites should now properly despawn when destroyed during destroy satellite missions.
+- Large ships would once again be spawnable at Port Olisar.
+- Ground vehicles within ships should no longer be despawned/stored by the rest stop's ATC.
+- Players should no longer drop cargo boxes when entering a ship from EVA.
+Technical
+- Fixed 3 server crashes.
+- Fixed a server deadlock.

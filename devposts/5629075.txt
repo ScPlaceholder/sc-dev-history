@@ -1,0 +1,60 @@
+## Star Citizen Patch 3.18.0t
+Alpha Patch 3.18.0t has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.0-PTU.8323027.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- VMA - Vehicles / UI - Ship Components - When attempting to make a large number of modifications in a single use of 'Save Changes' to a vehicle, the Save Changes button will disappear
+- A retrieved ship delivered to a docking port will be missing collision
+- Items appear not to be removed from the player's inventory when they sell them or hand them in to a contraband kiosk
+- Location - Daymar / Whistler Crypt / Physic - Walking on hills near Whistler's Crypt can potentially kill or wound the player
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Multilocation - Elevators - Elevator doors open mid-transit
+- Ships - Ship Features - Snub Fighter - The Constellation Series does not spawn with its associated snub fighter when summoned from the ASOP terminal
+- Stanton - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction
+- Multivehicle - Stanton - Vehicle Feature - Hit box desync - Vehicles do not take damage when attacked at certain parts of its hull
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- UI / Vehicle HUD - It is possible for the Vehicle HUD to vanish for the player during flight and combat
+- VARIANTS ONLY - Weapon / Weapon Feature - Multitool Variants display "HEALING" info regardless of attachments
+## Feature Updates
+Gameplay
+- Salvage Balance Pass
+Increased the material gained per square meter which gives a slight gain in material for the vulture but a drastically noticeable increase for the Reclaimer.
+- Increased Platinum Time Trial difficulty for Snake Pit and Euterpe Icebreaker racetracks
+- Clear Crimestat intro mission will now appear on the personal tab
+- Set Trespass Revoke Warning to 15 minutes instead of 5 for mission locations that have one
+- Set Comm Arrays Trespass Revoke Warning to 5 mins
+## Bug Fixes
+- Fixed - Login/Frontend - Queue login UI does not progress/update
+- Fixed - Vehicles / UI - mobiGlas - VMA - Clicking the "Save Changes and Equip" button in VMA twice removes the button until the app is closed and re-opened
+- Fixed - MULTIVEHICLE - Ships - Ship Features - Flight - Quantum Travel - When entering and exiting any seat during Quantum Travel, there is a high chance you will be ejected into space
+- Fixed - PES Ship Bed Logout - Players told "Ship has passengers" with no passengers on board, blocking logout
+- Fixed - VANGUARD Warden - Ships - Ship Features - UI / Vehicle HUD - HUD breaks sometimes during flight
+- Fixed - Drake Vulture - Vehicles - Vulture DRAKE logo disappears up close
+- Fixed - Derelict Colonial Outposts - Multiple Locations / AI - Reinforcement Ship doesn't always deliver troops
+- Fixed - Guards at SPK have no loot
+- Fixed - Match isn't Cycling at the end of a round in AC/SM
+## Technical
+- Fixed 1 Client Crash
+- Fixed 11 Server Crashes

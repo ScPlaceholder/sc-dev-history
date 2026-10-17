@@ -1,0 +1,72 @@
+## Star Citizen Patch 3.18.0-PTU.8345033
+Alpha Patch VERSION 3.18.0-PTU.8345033 has been released to the PTU, and is now available to test!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US/EU
+Database Reset: Yes
+Long Term Persistence: Enabled
+Account Copy: Disabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- Locations - LEO Stations - Galleria - Audio - The "Visit Orison" Commercial Locks up the Client
+- Ships - Ship Features - UI - Interaction Mode / Inner Thought - Most ship beds no longer have PIT options to interact
+- Actor - Inventory - Equipped Ammo Clips Fall Off the Player
+- Multivehicle - Stanton - Audio - Missing Audio/SFX with QT travel
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- Salvage / Hull Scraping - Nomad - Some sections of the hull show as valid but do not allow salvage
+- Salvage / Hull Scraping - Crusader C2 Hercules  - Some sections of the hull are exceedingly difficult/impossible to salvage
+- Salvage / Hull Scraping - Anvil Carrack  - Sections of the hull show as valid but do not allow salvage ; Some only salvage when beams are offset ; Some show as valid but do not allow salvage
+- Derelicts - Missions / AI / Locations - Once a mission has been completed at the settlement the AI will not respawn for the next mission resulting in it completing upon reaching the location
+- Derelicts - Missions / AI / Locations - If reinforcements do not leave the ship they will be counted towards the hostiles remaining total even once the ship has left resulting in the mission being incompletable
+- Valkyrie bottom turret locks and makes player invisible
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Ships - Quantum entanglement - hostile indicator - QED does not mark ships as hostile
+- Multivehicle EU - Stanton - Vehicles - Destroyed ship thrusters will still not function after being repaired
+- Cargo - Performance - Fully loaded C2 landed at Area 18 results in Slow Framerates or Crash
+- Vehicles/IFCS - When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Stanton - Law System - Users spawn in prison with weapons and armor after dying with crimestat
+- Trading - Cargo invisible in multiple ships
+## Feature Updates
+Gameplay
+- Reinforcement update
+Added a workaround to check to see if reinforcements do not leave the ship they will be counted towards the hostiles remaining total even once the ship has left resulting in the mission being incompletable
+- VMA Update
+Players will currently need to unequip items from the previous ship to equip onto a new ship. UI isn't completely updated to show this but more updates will come in future builds.
+- Assigning specific UI to attract screen & manufacturer for all platinum bay shopping kiosks
+## Bug Fixes
+- Fixed - Klescher Rehabilitation Facility - Mission Content - ClearCrimeStat - Bounty on escapee will persist even after they have cleared their crimestat
+- Fixed - Missions - Racing - mobiGlas - Racing missions not appearing on Contract Manager
+- Fixed - Mining - Ships / Vehicles / Game Code - The Mining Extraction Rate has decreased noticeably
+- Fixed - Arena Commander - UI / Ship Customization - Changes to loadout cannot be saved due to the "Save Changes" button being missing
+- Fixed - UI - Mobiglas - Mobiglas Exit Button "X" incorrectly scaled
+- Fixed - Caterpillar Derelicts - Calliope / Wala - Design/Mission/Locations - Target for the Eliminate_Specific scenarios are not spawning
+- Fixed - DRAKE Cutlass Series - ( All Variants ) - Ships - Ship Features - Turrets - Graphics / Tech / Art - The turret interiors on the Cutlass series have a VisArea and will appear invisible when crewed by players
+- Fixed - Missions - Supply Re-Up - 9000 aUEC + Bonuses / Delivery - Delivering package to Yela drop off doesn't Progress contract
+- Fixed - Kareah - Contraband door not opening when TID is activated through the terminal
+- Fixed - Vehicles/Art - Missing MFD's in Cockpit of Esperia Glaive
+- Fixed - Vehicles - Light persistently blocks the player's FOV within various ship's pilot seats and some variants within Vehicle Loadout Manager
+- Fixed - Missions - Eliminate All - UGF - Mission is failed after a Client Crash
+## Technical
+- Fixed 1 Client Crash
+- Fixed 7 Server Crashes

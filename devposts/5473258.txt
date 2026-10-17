@@ -1,0 +1,6 @@
+Hey!
+We're well aware of this and doing everything we can do to mitigate this Problem.
+Gen12 precompiles all shaders while we load objects on our background workers if a shader wasn't found in the cache.
+This means our main rendering loop is completely decoupled from shader compilation.
+However: as long as we're on d3d11 we have no full control over what the driver is doing behind the scenes.
+With Vulkan we have more control over shader/pso compilation in the driver and they have some neat features we can use to speed compilation up.

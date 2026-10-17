@@ -1,0 +1,6 @@
+Unfortunately this isn’t as simple as it may seem. The streaming system only streams what it must, so if an object is far enough away to draw at a lower LOD then the higher LOD/s may not be streamed in. To stream them in you’d need enough VRAM available, and you’d ideally want them already loaded as otherwise it’d take a while to take your screenshot.
+Soon we’re going to expose the streaming memory budgets for meshes and textures as the final step of a large streaming rework we’ve almost completed. If your system is capable then you can enable loading of higher LODs than would otherwise be required. It’d then be quite a simple task for us to make use of the highest LOD you had streamed in for your screenshot.
+However, I’d be intrigued to know when/where you think this will make a visual difference? We aim to make high quality LODs, so in most cases increasing the LOD doesn’t make a huge difference. One common request is for greater draw distance of vegetation/rocks on planets, but that‘s also not so simple, but something we hope to address after the planet team have finished with the water system updates (spawning vegetation will move to GPU making it much faster and also cheaper to render).
+Cheers,
+Ali Brown
+Senior Director of Graphics and Procedural Tech

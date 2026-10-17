@@ -1,0 +1,63 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9250981.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Evocati
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of Evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.24.0 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+Not Ready for Testing/Feedback
+- Cargo Commodity Rebalance
+- Dynamic Event: Blockade Runner
+## Known Issues
+- Currently the search feature in the Freight Elevator and the Item Banks is not functioning and is causing the screen to lock up and lose control. If you try this, hit escape to open the menu and then escape again to close and this should allow control again.
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination - 22% repro
+- PU - Stanton - Armor / Inventory - Locations - Orison / New Babbage -  Players will be unable to equip carried equipment/armor (Helmet,  Undersuit, Legs, Arms, Backpack) to their character at NBB/Orison, items  will remain stuck in their hands - 100% repro
+- PU - Stanton - Locations / Vehicles / ATC - Ground Vehicles do not spawn at the allocated garage location - 100% repro
+- PU - Actor / Inventory / Armor - When dragging armor from your inventory  onto your character, it creates a box beneath you that can cause  jumping and clipping through the world - 100% repro
+- Stanton - Locations / Performance - Item Bank / Freight Elevator - Frame rate will dramatically drop if players own many items
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP Terminals fade to black when accessed after delivering a vehicle
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- Robert Space Industries - PU - Vehicles/EMP - unable to activate EMP
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multiweapon - Backpack Reloading - Sometimes weapons fail to reload if reloaded from Backpack
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Features & Gameplay
+Gameplay
+- Adjusted mission-tagged cargo resell value when sold outside the mission
+## Bug Fixes
+- Fixed - Multivehicle - PU - Vehicles - When docking or retrieving a ship to a docking port at a station, the docking arm will not extend
+- Fixed - Cargo Hauling missions - Instanced Hangars - Mission Giver Warehouse - When leaving a pick-up location, all mission cargo in your instanced staging hangar's Warehouse inventory is cleared
+- Fixed - PU - Stanton - Orison/NewBabbage - Locations - Personal Hangars - Unable to store ships when retrieved in Medium Hangars
+- Fixed - PU - Stanton - Audio / Locations - While in your personal hangar, you can hear the sound from other players' hangars (STARC-118500)
+- Fixed - PU - Locations / Law / ATC - Personal Hangars - A Player's ship will sometimes be impounded when they land in their assigned Hangar (STARC-119655)
+- Fixed - PU - Stanton - Cargo Hauling - Mission Content / Game Code / UI - Missions markers do not correctly update after cargo has been picked up (STARC-120173)
+- Fixed - PU - Stanton - Cargo Hauling - Mission Content / Game Code - Pressing abandon mission takes the player to the history tab instead of changing the objective but staying on the accepted tab (STARC-119518)
+- Fixed - PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit (STARC-117521)
+- Fixed - PU - Cargo Hauling - Mission Content / UI - LZ delivery locations display the delivery location at the centre of the area and not the Spaceport
+- Fixed - PU - Stanton - Locations - Personal Hangars / Medical Hangars - Players placed in medical elevators will not get sent to hospital
+- Fixed an issue causing expand button on nested containers to not fill the kiosk display until scrolling down the item list
+## Technical
+- Fixed 1 Client Crash
+- Fixed 2 Server Crashes

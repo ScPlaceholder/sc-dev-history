@@ -1,0 +1,49 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9281908.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 2
+Server Info: PTU Channel - US/EU
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Note: In this build we have temporarily made HAB props static to stop them falling through floors as a performance and entity test for landing zones.
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+## Known Issues
+- PU - Stanton - Orison - Locations / Shopping - Physical Shopping - Quick buying items on display at the Orison Vision Center ends in transaction error about invalid Player Inventory
+- PU - Stanton - GrimHEX - Locations - Transit - Hangar Elevators - Hangar Instance elevators can be called and arrive at the current floor but the doors do not open - 100% Repro
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (High Chance)
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- PU/AC - Character - IFCS/camera - Female character does not respect g-force induced head movement game option settings
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Features & Gameplay
+Locations
+- Increased Hangar Elevator and Door Animation Speeds
+- Audio Polish Pass for Personal Hangars
+Ships and Vehicles
+- Made adjustments to the Hull-C Cargo load times and UI
+- Ship Debris Physics Performance Polish Pass
+## Bug Fixes
+- Fixed - Stanton - Multiple Locations / Transit - Trams become stuck after reaching their destination (STARC-58932)
+- Fixed - Multivehicle - PU - Vehicles - When docking or retrieving a ship to a docking port at a station, the docking arm will not extend (STARC-86292)
+- Fixed - PU - Stanton - Locations / ASOP / Fleet Manager / ATC - Players cannot retrieve ships/ground vehicles from ASOP terminals (STARC-119161)
+- Fixed - MISC Hull series all variants - PU - Vehicles/cargo - Removing cargo from the MISC Hull series with a tractor beam causes the containers to shoot to origin of the spindle (STARC-120081)
+- Fixed - PU - Cargo / Hull-C - When stationary in the cargo transfer area the cargo transfer does not happen (STARC-95643)
+- Fixed - PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time' (STARC-108766)
+- Possible Fix - PU - Locations - Personal Hangars - Unable to retrieve any ships at the location after retrieving a previously impounded ship, exiting to menu during retrieval or storing process, or taking elevator to spaceport during retrieval (STARC-93687)
+## Technical
+- Fixed a Server Deadlock

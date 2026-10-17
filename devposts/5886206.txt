@@ -1,0 +1,10 @@
+If an invalid graphics driver call was made the GPU doesn't crash immediately.
+This decision was (presumably) made to ensure the highest throughput possible on a separate hardware unit.
+If you ever saw/experienced an "Device Lost" error this basically means something went wrong on your GPU.
+Unfortunately that is not helpful at all to us developers.
+Enabling this cvar syncs the CPU with the GPU after every driver call.
+You can imagine that this is VERY expensive. The CPU basically asks the GPU after every call: "Are you still OK? Did something go wrong?". If not, proceed as usual.
+This means if one call crashes the GPU we know exactly which one it was.
+That's why it's very useful for us if someone can consistently reproduce a GPU crash and uses this cvar and submits it's error report.
+Silvan
+o7

@@ -1,0 +1,60 @@
+## Star Citizen Patch 3.10.0
+Alpha Patch 3.10.0 has been released and is now available!   Patch should now show: VERSION 3.10.0-LIVE.5789362.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+- At this time, any pledge creation or alteration performed in the last 48 hours will not be reflected in the Live Service. Any new pledges, CCU Applications, reclaimed pledges, or gifts sent/received will not be up to date.
+- Players appear offline on the Front End instead of 'In-menus' until that Player has been in-game
+- Close range FoIP animations are not transmitting to remote clients
+- Comm call screen is extremely translucent while viewing through the HUD
+- Both FPS and Ship Mining methods produce UI stalls resulting in the user overcharging their targeted deposit.
+- Delivery missions with multiple pick-up locations can result in only two drop-off points or a 3rd drop off point that doesn't work if the delivery location is an Aid Shelter, preventing delivery of the third box. (Workaround: Avoid multiple delivery drop off missions to aid shelters)
+- Using the tractor beam on the Greycat ROC to pick up multiple gems at once will cause a significant portion of the gems to vanish
+- Private Arena Commander matches are temporarily disabled due to an issue with the updated group system
+- The player that made the personal transport / escort beacon will not be able to see marker on player that accepted
+- Global chat is unavailable in the visor HUD
+- Planetary ambiances can be heard at various locations in New Babbage
+- Player character can clip through the external doors of certain outpost buildings and Aid shelter buildings' airlocks when entering
+- Hangar Doors can remain closed when the Hangar is assigned to a Landing Players Ship.
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- Landing gear will take multiple presses of the keybind to activate.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- The Greycat ROC cannot extract all of the child crystals, some are left behind
+- Hammerhead atmo entry effects clipping through interior of the ship
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+- Shots from remote turrets may appear desyned but still connect with the target.
+## New Features
+Characters
+- mobiGlas Variants
+Adding the initial implementation of mobiGlas Variants which gives the player the ability to switch out their mobiGlas for another one with various colors. Players will be able to purchase these in-game at the new Factory Line shop in New Babbage on microTech.
+- Added Helmet Visor Wiping
+Action that lets the player wipe their visor clear when it has become too obstructed by snow/rain/moisture. This action is available through the default keybind of ALT+X or through the Inner Thought menu.
+Locations
+- Added SDF atmospheric entry effects
+Updating all ships to use the new SDF (Signed Distance Field) tech to greatly improve the visuals of atmospheric entry. This allows for dynamically changing effects that change based on ship shape, size, and orientation when entering atmosphere and allow for other players to see the ship effect from far away.
+AI
+- NPC Improvements: Bartender
+With this addition of Bartenders to the Persistent Universe, we are introducing the standard that all future vendors will be built from. The job of a Bartender is to serve drinks to the many bar patron's of the Persistent Universe. They can take orders from players and serve anything from bottled beer from the fridges or draught beer from the tap, to making a hand-crafted whiskey and cola in front of their customer. When not serving drinks, Bartenders will be seen keeping their work environment tidy by wiping down counters, disposing of bottles, and polishing glasses, and chatting with patrons dynamically. This includes an overhaul to bars with more NPCs ordering drinks, using tables, and drinking. These improved bartenders will be serving up drinks in Wally's bar in New Babbage, G-Loc bar in Area18, Cafe Musain in Levski, Old 38 in Grim HEX, and M&V Bar in Lorville.
+- Cover Usage V1
+Expanding the tactic selection of Combat AI to analyze the environment and detect, in absence of full cover, possible positions where they can engage enemies without being fully exposed to them. This includes objects such as small crates, which could potentially provide partial cover.
+- Shotgun Assault Tactic
+Added the ability for combat AI to engage the player using a wider variety of weaponry, react dynamically to both player behavior and the environment, and engage strategically and realistically.
+Gameplay
+- Player Trading App
+We are introducing the first iteration of the player trading app, called mo.Trader, onto the mobiGlas. This first implementation will allow players to immediately send in-game aUEC and merits to another player regardless if they are on or offline, or on a different server. Transfers will be charged a percentage tax to complete the transaction.
+- Body Dragging
+Adding the initial functionality to allow players to interact with dead and unconscious characters, and move them. Whilst an actor is dragging they can equip, use and holster 1-handed weapons, i.e. pistols and knives (the dragging character holds onto the victim with their left hand, leaving the right hand free).
+- Thruster Efficiency Curves, Jerk, and Aerodynamics
+Thruster efficiency curves drastically change the way thrusters work in differing atmospheres. In atmosphere thrusters now lose efficiency and become much weaker. This is dependent on the ship and the thruster type to some degree, but ships are now much weaker when in atmospheres and cannot fly in the maneuverable way they used to.
+Aerodynamics - Ships now have individually simulated aerodynamics surfaces that contribute various little forces to the motion of the ship. The result is both much more realistic and enjoyable to fly, and a significantly more detailed simulation. Expect lots of subtle, unique flight characteristics per ship that give them a lot more character. Ships with wings are now able to stall, do level turns, lose speed in tight turns, and various fancy aerodynamic features. The aerodynamic interaction with wind is now more detailed and expect wind to push and pull on ships in more complex ways. Ship aerodynamics will now change as you switch between configurations. Breakable parts now affect the aerodynamics, so break off a wing and the ship will not fly straight anymore.
+Jerk - This is a core change to how ships move, both in space and in atmosphere that makes them much smoother and feel more weighty. Jerk is a measure how quickly the ship’s acceleration changes, and previously it was infinite. Now it’s a finite quantity that means thrusters do not respond immediately to changes in acceleration. Expect weightier feeling ships but with similar levels of maneuverability.
+- High Speed Combat
+Ship systems will now suffer some consequences traveling at high speed, restricting some of the options that players will have which will encourage engagement at lower speeds. When flying above SCM speeds, weapon accuracy, gimbal assist speed, and missile lock speed will be negatively affected.

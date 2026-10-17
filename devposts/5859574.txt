@@ -1,0 +1,56 @@
+## Star Citizen Patch 3.18.2 PTU-8428298
+Alpha Patch 3.18.2 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.2-PTU.8428298.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Database Reset: Yes
+Long Term Persistence: Disabled
+Pledge Copy: Enabled
+Starting aUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Stability and Bugfixes
+- Density Manager Optimizations (Making sure nothing disappears when it isn't supposed to)
+- Xenothreat Playtest (Thursday through Monday Night)
+Known Issues
+- Game clients may close without error or crash handler
+- ASOP Terminals are unusable and fade to black when accessed
+- All Planets - GFX - There are frequent pockets of extremely low client FPS performance in LZs and ships
+- The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Elevators and Trams are "Jittery" during transit of Player Character
+- When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Cargo may be invisible in multiple ships after being purchased
+- Unable to view ships inventory through NikNax
+- When attempting to start a refinery job, players receive the following error ; Something went wrong (Error code: 20)
+- Security Contractor Evaluation is not re-offered upon failure
+- Combat Service Beacon Progress / Rating inconsistent on missions
+- Security Work Assesment Remaining Hostile NPCs Not Spawning In
+- PTV wheels at the Orison BTR area can clip into geometry and become detached from vehicle
+- The snub fighter attached to Constellations lacks interaction prompts to enter it, making it unusable
+- Some ship wreckage erroneously give "No Material" text and do not let you salvage
+- Markers Will Randomly Disappear After Quantum Travel With No Route Set
+- The NPC Coffee Vendor is missing from the various 'Coffee To Go' stalls located throughout Stanton
+## Feature Updates
+Core Tech
+- Density Manager Optimizations
+Updated Density Manager values to be more aggressive for removing unneeded entities in the PU to improve server/client performance.
+- Made further entitlement processing improvements
+- Updated Login Queue Time Display
+## Bug Fixes
+- Fixed - Exploit - Argo RAFT cargo is not removed after selling it and can be sold repeatedly
+- Fixed - Actor Feature / Network - Players in a given instance may experience a response latency of up to dozens of seconds for interactions
+- Fixed - Game Code / Locations / LootGeneration - Lootable Container Slots are Filled but Streamed Out resulting in no Loot in Kareah
+- Fixed - Melting/Upgrading a ship while the player is bed logged in that ship will put the player in a bad state. Error 30018 cant login
+- Fixed - XenoThreat 1.1 - Phase 2 / 3 - Performance - Vehicles teleport / rubberband during gameplay
+- Fixed - Locations - LEO Stations - Galleria - Audio - The "Visit Orison" Commercial Locks up the Client
+- Fixed - Items - Lootboxes - When a user crashes whilst interacting with a loot box, it becomes unavailable to other players
+- Fixed - Hurston - Derelict Colonial Outposts - Art / Locations - A greybox mannequin can be seen floating above the lake located at the outskirts of derelict outposts
+- Fixed - Hurston - Derelict - Art / Characters / Locations - The Player's model will vanish briefly when the Player is walking on top of the End Section of the Constellation Derelict A in Third Person View
+- Fixed - Mission Content - Zeta-Prolanide Salvage Claim - Not all the cargo boxes are spawning in for player to retrieve
+- Fixed - Missions - NPC Beacon - Combat Assistance Mission will not progress after enemy ship has been destroyed
+- Fixed - Exploit / Refining - Player is able to refine mined minerals twice using two separate Refinement Processing Kiosks at the same time, earning money twice on one load
+- Fixed - MISC Prospector - Scanning - Mining / Ships / Vehicles / UI / Game Code / Weapons - Players are unable to Scan Mining Deposits
+- Fixed - Locations / Terminals - Lorville - New Deal and Vantage Rental Kiosks Are Missing
+- Fixed - Ships - ASOP / Fleet Manager - A non-owner player can "Log Out" in the prisoner seat and cause the Hawk to not retrieve correctly after insurance claim, which can be used to occupy all landing pads
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 6 Server Crashes

@@ -1,0 +1,70 @@
+## Star Citizen Alpha Patch 4.4
+Alpha Patch 4.4 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.4.0-PTU.10654799 .
+- Audience: Wave 1 - We will assess further wave viability with the potential of all waves for the weekend overnight
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 6:2:2:600
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+IAE Expo Hall In Orison will be enabled in tonight's build for testing over the weekend
+- Stability & Bugfixes
+- Nyx / Levski / Delamar
+- Interstellar Hauling / External Freight Elevators
+- Vanduul-Tech Smugglers
+- Ballistic Missile Launcher "Boomtube"
+- New FPS Weapon: Triple Threat
+## Known Issues
+- PU - Nyx - Levski - Locations / ASOP Terminal / Fleet Manager - Vehicles are in claim state upon retrieving
+- Stall / Freeze - Client - PU - Multisystem - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing Commodities Kiosks at locations like at TDD and Admin Offices in Pyro
+- Multi-Location - PU - Stanton - Locations / Actor Respawning - Players may not respawn at their primary residence after using self-destruct or force-respawn
+- PU - Locations - Rest Stops - Refinery - Mining / Shopping / Selling - Ore Sales Kiosk - When attempting to sell at the Ore Sales Kiosks, the confirmation screen will return with undefined
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- PU - UI / Inventory - Freight Elevator - Kiosk - The Search function of the Freight Elevator terminals ignores localized item names
+- PU - Stanton / Pyro - ASOP / Expedite / UI - Claimed ships will show as delivered once "claim" is selected but still need to be expedited/have a timer till they are usable
+- PU - Stanton - Pyro Gateway - ATC / Locations / Hangars - Unable to contact ATC via keybinding shortcut
+- PU - Locations / Transit - Elevators - Grim Hex elevators are backwards
+## Features & Gameplay
+Gameplay
+New Event Mission: Vanduul-Tech Smugglers
+Vanduul-Tech Smugglers is a PvE Mission centered around gaining access to high value loot rooms inside a space station. The mission will see players investigating the Shattered Blade base in upon arriving the player will see Vanduul attacking the Shattered Blade. Players will be asked to come for a reward and end up ambushed the player can then explore and find encrypted data and upload it to complete the mission Brace for impact as players dive into the newly unlocked Nyx System, where a familiar menace—the Vanduul—makes their chilling debut in the Persistent Universe. What begins as an investigation mission quickly spirals into a web of deception.
+Players ally with a seemingly oppressed faction under Vanduul attack, only to uncover their true identity: the Shattered Blade. After a promised reward turns into a deadly ambush, players must hunt down encrypted data across hostile zones—Space Station, Asteroid Base, and a ‘Traversable’ Polaris ship.
+Each location reveals brutal skirmishes between the Shattered Blade and the Vanduul, exposing a dark truth: the Shattered Blade has been trafficking alien tech and lifeforms. As the ASD storyline unfolds, players uncover secrets that could reshape the balance of power in the 'verse.
+Locations
+Levski & Delamar
+Further Art, LOD, and Performance Polish. Fixed many locations where players could clip out of the location.
+Weapons and Items
+New FPS Weapon: Triple Threat
+Firing three shotgun shells with each pull of the trigger thanks to it's triple-barrel construction, the bolt-action Negotiator pistol is ready to blast its way through anything from the smallest disagreements to massive dustups.
+Triple Threat Stats;
+- Weight: Light
+- Damage: 2 tap medium armour to the chest within 10m (PVP)
+- Harsh damage fall off
+- 9 pellets, reasonable spread
+- Projectile Velocity: 550
+- Aim down Sight Time: 0.21
+- RPM: 60
+- Mag size:  4(12)
+- Fires 3 barrels at once
+Design Notes from Zac:
+"I adore this thing, a back up close range, bolt action, drum mag pistol to help you out in a pinch with a punishing mag size compensated with incredible fire power. It's the perfect pocket sized CQC weapon.
+You can find this weapon along with the Killshot and the Pulveriser in the weapon shops in Levski
+It is also the weapon featured in 'Single Weapon Elimination' in AC for the PTU.
+## Bug Fixes
+Star Citizen Alpha 4.4.0 currently contains nearly 140 bugfixes for issues occurring in 4.3.2, 33 of which originated from the issue council.
+- Potential Fix: PU / MENU - Nyx - Jump Point Stations - Locations - UI / Main Menu - Jump Point Stations can be selected as the primary residence in Nyx System
+- Potential Fix: PU - Nyx - Levski - Item Bank / UI / Locations - Item Banks in Mercy do not load up inventory UI when interacted with (STARC-184321)
+- Potential Fix: PU - Missions - Missing Person / Investigation - There's a chance that the missing person doesn't spawn at mission location
+- Potential Fix: PU - Missions - Salvage - The salvage claim ship is missing on R&R Salvage Contract
+- Potential Fix: PU - Multi-System - Locations / Starmap / Quantum Travel - Quantum Markers for Pyro-Nyx Jump Point and nearby Rest Stop Station are not visible making travel to this location difficult
+- Potential Fix: PU - Nyx - Levski - ATC / Locations / UI - Missing hangar marker upon hailing ATC for XL hangars
+- Potential Fix: PU - Missions / UI - Recover Item - There is no way to turn in delivery mission items at Nyx Jump Point stations (STARC-184343)
+- Potential Fix: PU - Nyx - Levski - Missions / Interables / Locations - Recover Items – Mission items cannot be placed using the Place interaction at the dropoff points at Levski
+- Potential Fix: PU - Escort Ship - Mission Content / Game Code - Escort missions do not progress upon reaching mission location
+- Potential Fix: PU - Nyx - Delamar - Levski - Locations - Art / Stuck / Actor - Borehole Station - Players can jump behind the desk / railing area in Recco Battaglia room and get stuck underneath the area
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Locations / Art - Decal template visible on hangar floor
+- Potential Fix: PU - NYX - Levski - Cordys - UI / Shopping Kiosk - the UI display for Cordry's shopping kiosk is very bright compared to all other kiosks in Levski
+- Potential Fix: RSI Scorpius ALL Variants - PU - Vehicles - Art / UI / MFD - The MFDs are too dark and can be very difficult to read/use (STARC-170944)
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash

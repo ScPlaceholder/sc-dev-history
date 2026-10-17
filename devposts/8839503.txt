@@ -1,0 +1,52 @@
+Hey everyone,
+Hope you’re all ready to jump into the upcoming Alpha 4.8 patch! We’ve got some solid VR updates in this patch, including a couple of major improvements. Let’s dive in!
+## Interaction Prompts Rendered in World Space
+This is a big one. Interaction prompts and indicators are now rendered directly in world space and work natively in VR. No more flat-screen overlays fighting against your headset view.
+This is the first step in a broader UI rework aimed at making Star Citizen truly VR-native, so expect more improvements as we continue down this path.
+## FPS Crosshair and Hitmarkers Ported to World Space
+The FPS crosshair has also been moved into 3D space and re-enabled for VR.
+To make sure it appears correctly, head into the Game Settings and confirm that:
+- Crosshair Mode is enabled
+- Crosshair Opacity is set to a visible value
+Happy hunting!
+## Additional Improvements
+- Procedural Head Recoil Disabled in VR - Procedural head recoil while firing weapons has now been disabled in VR. Shooting should feel much smoother and significantly less nauseating.
+- Shadow Fix for Split-Eye Rendering - Fixed an issue where shadows could render incorrectly in one eye.
+- Resolution Maintained Across VR Mode Switches - Resolutions are now properly preserved when toggling VR on or off and when switching into Theater Mode. If you enjoy ultrawide Theater Mode and want to jump back into full VR without reconfiguring settings each time, it should now work seamlessly.
+- Fixed Bright Light Artifacts - Fixed an issue where bright lights could sometimes appear when being shot at.
+## What's Coming Next
+The marker rework is next on the list, and work will begin on it shortly, followed by hologram fixes.
+We’ll continue pushing polish and new VR features moving forward. If you encounter new issues or have suggestions, feel free to reply to this thread. We’ll be reading through everything!
+19/05/2026:
+- Fixed non visible Salvage UI in Remote Turrets in VR (Tested Reclaimer and Moth)
+03/06/2026:
+- Fixed all Markers, Tractor and Salvage overlays
+14/07/2026: (Star Citizen 4.9)
+- VR Keybinds like Theater Mode Toggle, Tracking Reset should work now everywhere unless they are explicitly blocked. For example you can use them now during loading and in the frontend which was not possible before.
+- 3D Eva Direction Markers (in fact it was broken even in 2D, so now it should work again)
+- Screen-fading directly on the backbuffer so it also works in VR
+- Updated OpenXR from 1.0.50 to 1.1.60
+- > Implemented XR_EXT_VIEW_CONFIGURATION_VIEWS_CHANGE_EXTENSION_NAME. This means if you use SteamVR and change the resolution in the SteamVR settings it updates now in realtime in the engine!
+- Stereo Cursor Updates:
+- > Fix invisible cursor in ships with a radar
+- > Stereo cursor fully body aligned so it doesn't move anymore with external forces like water or trains, elevator
+- > Restrict cursor to g_headtracking_hmd_cursorMaxViewAngleDeg (default: 40 Degrees) so it no longer can get lost so easily. If you don't like this behavior just set a very high number for this cvar to restore the old behavior.
+- In EVA always force EHACM_DirectOffset as it was causing weird rotations otherwise (only relevant if GroundedLook is active)
+15/08/2026: (Star Citizen 4.10)
+Features
+- Holographic elements (ship radars, the New Babbage greeter, Area18 holograms, and more) now render correctly in VR.
+- Introduced a new global fading system, offering greater flexibility and full VR support. Added a fade transition when entering and exiting theater mode, configurable via r_StereoTheaterModeFadeTime.
+- Implemented XR_EXT_user_presence support for dynamic stereo switching, extending compatibility to any headset supporting this extension, including SteamVR.
+- Replaced g_headtracking_hmd_fpsResetDistance with g_headtracking_hmd_fpsHeadBoundaryDistance, introducing a new shader-based fade effect in place of the previous hard reset. The effect now begins at 0.4m (up from the previous 0.2m reset threshold) and gradually intensifies. This effect also now triggers by default whenever the camera clips through an object, preventing players from seeing through walls in first person.
+- The water simulation and underwater shader have been enabled for VR.
+Bug Fixes
+- Fixed an issue where opening kiosks interfered with the player animation system causing unintended player movement.
+- Resolved a recurring shadow flickering issue where shadows would stop following the camera.
+- Fixed head tracking incorrectly applying to RTT cameras (e.g., comm calls).
+- Fixed third-person camera collision in VR when the camera position was adjusted.
+- VRAM usage in the graphics menu now correctly reflects usage in VR.
+- Disabled chromatic aberration in VR.
+- Fixed multi-choice selection in VR (e.g., holo greeter in New Babbage, which is now visible).
+- Fixed an issue where GForce blink effects were applied independently to each eye instead of in sync.
+See you in the 'verse. 🫡
+Silvan-CIG

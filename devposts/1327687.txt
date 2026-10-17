@@ -1,0 +1,24 @@
+## Star Citizen Patch 3.2.1d
+Alpha Patch 3.2.1d has been released to the PTU, and is now available to test!  Patch should now show: PTU-827813.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- A performance hit occurs at first PU load that can stall the game for several seconds.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- Combat versus AI opponents.
+## Feature Updates
+Universe
+- Reduced the accuracy of AI turrets for the Cutlass, Starfarer, and Constellation.
+- Scaled insurance expedite cost to be proportionate with ship values and changed refuel/repair costs to be a portion of the ship claim expedite cost.
+- Removed EMPs from GrimHex Dumper's Depot as they are not able to be fitted on ships.
+Ships and Vehicles
+- Reduced the firing arc of the Gladius nose gun to be in line with other ships and prevent AI from firing sideways at players.
+- Updated Reclaimer manned turret dashboard UI to render to texture (RTT).
+Star Marine
+- Removed watermelons from Echo 11 due their destruction causing a client crash.
+## Bug Fixes
+- The AR marker for party members should no longer be inaccurate if that member quantum travels away.
+- The UEC/REC wallet should now update properly from account to game (recopy, subtract 100k from in-game wallet to check).
+Technical
+- Fixed a client crash.

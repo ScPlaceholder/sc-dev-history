@@ -1,0 +1,55 @@
+## Star Citizen Alpha Patch 4.0.1
+Alpha Patch 4.0.1 has been released onto the PTU!  Patch should now show: VERSION 4.0.1-PTU.9487629.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:500
+Hangar Spawning: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability, Performance, and Bugfix Testing
+- Save Stanton Chapter 2 Event in Pyro
+Updates to Save Stanton Ch 2
+Chapter 2 of Save Stanton will run throughout the PTU phases in 4.0.1. This is a continuation of the event from 3.24.3 into the Pyro side of events.
+- Fixed - PU - Pyro - Phase 6 - Missions / mobiGlas - WipeOutLocations mission objective incorrectly states to clear the exterior of AI when the AI within the interior of the base also need to be eliminated
+- Fixed - PU - Pyro - Phase 6 - Missions / AI - Ship AI float above the planet surface and do not engage the player
+- Fixed - PU - Pyro - Phase 6 - Missions - DestroySupplyLines contract does not complete after eliminating all targets
+Save Stanton Chapter 2 missions are designed to be reputation locked to the faction you are working towards and due to this, the missions for the event will not be sharable to avoid cross-reputation issues
+## Known Issues
+Important! For tonight's build the Jump Tunnels will not fully work and kick players out shortly after entering. Please avoid using them tonight as we will work on these for Friday.
+- PU - Pyro - Courier - Mission Content / UI - Boxes are not marked upon accepting the mission
+- PU - Cargo - Hauling Missions - Warehouse orders not counting collected & delivered cargo correctly
+- PU - Cargo Hauling - Mission Content / Mission Refactor / Game Code - Supplies will remain in players warehouse and not successfully deliver
+- PU - Stanton - Locations - Hurston / Rappel - Storage Kiosk - Can't Interact with Storage Kiosk
+- Multivehicle - PU - Vehicles / Exploit - Fuel - Hydrogen and Quantum fuels are not depleted from fuel tanks when performing normal flight or Quantum Travel
+- AC - Pirate Swarm / INS Jericho - AI - Enemy AI does not spawn and will eventually get a disconnection Error: 30000
+- PU - Starlight Service Station - Elevator Terminals / Locations - Calling for Starlight hangar elevator from the hangar may cause you to teleport into an empty elevator shaft
+- PU - Stanton - New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- PU - Actor - Personal Inventory / Storage Access - Loot Box / Armor - Interactions / PIT Wheel - Helmets that are carried then dropped via PIT menu will disappear/become lost
+- PU - Pyro - R&R Station - Stanton Gateway Station - Locations / Shopping - All shops in Galleria are missing items on shelves and in Kiosk
+- PU - Pyro - Frontier Outposts - XS Outpost - Locations / Art / Tech - XS Outpost Main Building interior and Storage Shed interior is missing multiple assets and collision
+- PU - Pyro - Asteroid Bases - Hangar - Locations / Collision - The collision for the hangar doors does not stream in until the player is inside the hangar
+- PU - Pyro - Mission Refactor - Hauling - Mission Content / Reputation - Players are able to access the other intro missions after completing one for a different Org
+- PU - Stanton - Shopping / Selling / Cargo - Commodity Kiosks - Commodity kiosks are empty preventing any purchases or sales
+- PU - mobiGlas - UI - Contract Manager - Contracts can overlap with sections below them when expanded
+- PU - Pyro - Physics - Locations - Contested Zones (CZ) - Plastic Curtains have solid collisions against projectiles and cannot be passed through if ADS
+- RSI Polaris - PU - Vehicles - VLM - Occasionally lose Components By Pressing A New Insurance Claim or Repairing A Damaged Polaris
+- Contested Zones - Weapon intersecting with the ground
+## Features & Gameplay
+- Locations
+- Added Harvestables to Acidic Caves
+- Ships and Vehicles
+- Moved Missile Warning Implementation to Advanced Hud Alerts
+## Bug Fixes
+- Fixed - PU - Backend Services / UI - When kicked to main menu after encountering an error, the user is locked on a black screen until the error is acknowledged
+- Fixed - PU - Pyro - Rundown Stations - Cargo Center wall missing collision, allows CZ bypass access (STARC-152737)
+- Fixed - PU - Locations / Art - Terra Gateway station has misplaced geometry at landing pad (STARC-98776)
+- Fixed - Sabre Comet wrong Color (STARC-131037)
+- Fixed - PU - Mission Refactor - Mission Content / Locations - Destroy Items Narcotics - Narcotics are not present in mission location
+- Fixed - Crusader Mercury Star Runner - PU - Vehicles - Physics - Collision - Player can fall through the bed area in Habitation due to missing collision
+- Fixed - Multivehicle - AC - Vehicles / AI - PDC Turrets not shooting at ships if the player is seated in the pilot seat and in an Online game mode (STARC-139933)
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 4 Server Crashes

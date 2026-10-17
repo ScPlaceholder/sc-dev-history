@@ -1,0 +1,95 @@
+## Star Citizen Alpha Patch 4.5
+Alpha Patch 4.5 has been released to Wave 1, and is now available to test!   Patch should now show: VERSION 4.5.0-PTU.10808272.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Engineering and Ship Balance
+- Vulkan Renderer and Graphics Settings Updates
+- Physicalized Helmets
+- Snub Fighters and Interceptors balance pass
+Not ready for Testing and Feedback
+Updates located here are in partial working state and may be subject to removal from this release. At this time we aren’t requesting feedback for these until the feature is closer to ready.
+- FPS AI Improvements
+- Ship Light Amplification Detection
+- PU Loot Refresh/Collector Rebalance
+- Additional Hairstyles
+Known Issues
+- Multivehicle - PU - Vehicles / Repair - Ships are instantly repaired to 75% with repair tool and can be repaired from the inside
+- Multivehicle – PU – Vehicles / Engineering / VFX - Fire is being detected by some clients and not others
+- Multivehicle - PU - Stanton - Fire - Game Code / Vehicles / Resource Network - Extinguished Fires can suddenly re-ignite and spread rapidly
+- Multivehicle - PU - Stanton - Fire - Game Code / Vehicles / Resource Network / Dynamic Atmosphere - Fires are not Extinguished in 0 Atmosphere
+- Multivehicle - PU - Vehicles / Engineering / Components  - Life Support Components not visible on the engineering screen 3D view or mobiGlas Map
+- Multivehicle - PU - Vehicles / Network - Resource Network / Engineering - Engines turn off after transitioning dgs-mesh authority
+- Multivehicle - PU - Vehicles / Engineering / Components / RN - UI / Kiosk - When using the Engineering Kiosk, the vehicle model can become offset by the actor moving around it
+- Multivehicle - PU - Vehicles / Components / Salvaging - Unable to switch to other component modules while in salvaging mode
+- Multivehicle - PU - Vehicles / Salvage / Art - Salvage Ships are unable to detect the scraping surface and is missing the Scraping Laser VFX
+- Multivehicle - PU - Vehicles - Breached doors and ramps do not reset after the vehicle has been repaired and the player is unable to close them
+- PU - Mission Content / UI - Patrol Mission progress halts after reaching location markers
+- PU - Pyro - Storm Breaker - AI / Mission Content / Locations - AI are at the Storm breaker facilities in large quantities
+- PU - Pyro - Storm Breaker - Locations / Missions - Opened safes remain open after 2 hour cooldown
+- PU - Stanton - ASD Delving - Onyx Facility - P3MM - Mission Content / Locations / Design / Art - Pipe status doesn't update when fully repaired
+## Features & Gameplay
+Gameplay
+Engineering and Fire Gameplay Updates
+Further resource network connections updates for nearly all ships. Smoke and propagation adjustments for Fire Hazards. Fire Hazard Rendering, Performance, and VisArea Improvements. Balancing of Heat generation and reduce coolant amount.  Add Door states icons, adjust Critical Warning banner position, adjust Temperature Indicator's tooltip offset. Fixed layout issues and increased clarity of diagnostics MFD state.
+Ships and Vehicles
+Snub Fighters and Interceptors balance pass
+Patch 4.5.0 introduces additional tuning refinements to the Snub Fighter and Interceptor classes, with a focus on strengthening their unique roles, such as combat or racing.
+Ships involved: MIRAI Fury (and variants), ORIGIN 85X, KRUGER, P-52 KRUGER, P-72, MIRAI Razor (and variants), ORIGIN M50, AEGIS Avenger (and variants), ORIGIN 300i series.
+Performance Changes:
+- A comprehensive rebalance of flight performance has been implemented across all the ships listed above.
+- SCM/NAV speeds, Linear Acceleration (Gs), Angular Rotation, and Angular Acceleration have all been updated to align these ships with the broader tuning revisions introduced in earlier patches.
+- Critical HPs have been rebalanced, making small snub ships generally less durable.
+- Racing-dedicated ships received tailored tuning passes to enhance their flight performance while reducing their combat effectiveness (Fury LX, Razor LX, M50, 350r).
+Other significant additional changes:
+- Racing ships now generate 20% higher emissions compared to their combat counterparts.
+- Racing ships have an increased MM spool-up time (+5 seconds).
+- Racing ships now benefit from a larger Boost capacity (+25% over standard ships).
+- Snub Fighters and Interceptors now take 10% additional damage from all sources, reflecting their intended fragility.
+We will continue to monitor these classes closely to ensure they fulfil their intended roles as new game systems and features are introduced in the PTU cycle of Alpha 4.5.0.
+Additional Ship Updates
+- Increased Perseus Weapons/PDT Capacitor output
+Weapons and Items
+FPS Weapon Balancing and Updates
+- Fixed an issue where you would drop your weapon when med penning.
+- Fixed an issue where the player would enter the falling and landing animation on short drops
+Added The following new optics, more details stats can be found in game. UI is currently WIP.
+Klaus and werner
+- 1x and 1.5x Red dot
+- 2x and 3x Holo
+- 2-5x and 3-5x telescopics (s2)
+Volt
+These optics sit CLOSE to the camera (50% closer than most behring optics)
+- 1x Holo, 2x Holo, 3x Holos
+- A new blinding VOLT flashlight has been added that you are unable to turn off
+Prism Volt Shotguns
+- Reduced fire rate from 450 to 385 (Slug mode is unchanged)
+ARMA mod
+- 3 Compensators with all 3 sizes have been added
+- S1-S3 Compensator
+- 2 new suppressors with all 3 sizes have been added
+Pistols
+- Fixed ADS jumping pose
+SMGs
+- Fixed jumping aim down sight pose on SMGs
+Custodian
+- Reworked Spread to make the custodian be more competitive (big min decrease, max spread and per shot reduction)
+- Fixed an issue where the burst mode had incorrect recoil when ADS
+- Increased charged burst shots from 6 -> 8
+Rocket Launcher
+Disabled Cam Shake via Particle Effect
+Core Tech
+- General Particle Rendering Optimizations
+## Bug Fixes
+Star Citizen Alpha 4.5.0 currently contains nearly 140 bugfixes for issues occurring in 4.3.2, 33 of which originated from the issue council.
+- Potential Fix: PU - Nyx / Stanton - Locations / Art / Design - The freight elevators are missing in hangars and on the external freight managers
+- Potential Fix: Gatac Syulen - PU - Vehicles / Hangar – Gatac Syulen is retrieved sideways (STARC-184045)
+- Potential Fix: PU - Stanton - Orison - Locations - Atmosphere is lacking in several areas around Orison (STARC-130936)
+- Potential Fix:  ARGO MPUV Some Variants - PU -  Vehicles - The Cargo and Personnel variants are missing all of their doors
+- Potential Fix: Tech Smuggler - Warehouse Passcode Disks not respawning (STARC-187190)
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 1 Server Crash
+- Fixed a Hybrid Service Crash

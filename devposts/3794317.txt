@@ -1,0 +1,25 @@
+## Star Citizen Patch 3.12.1j
+Alpha Patch 3.12.1j has been released to the PTU and is now available for all backers to test!   Patch should now show: VERSION 3.12.1-PTU.6946719.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Gameplay
+Known Issues
+- Some or all of the player's items that should be kept after a Character / Database reset are lost
+- AI ships just vanish when they are meant to Quantum jump away due to mission conditions being met
+- A Players Ship can enter a state where it cannot be Retrieved
+## Feature Updates
+Gameplay
+- Xenothreat mission updates
+Reduced audio spam if reinforcements haven't spawned. General performance improvements with how ships are cleaned up. Made respawn timer of Idris reinforcements quicker.
+## Bug Fixes
+- Fixed an issue that was causing players to get crimestats for attacking Xenothreat around the wrecksites
+- Players Ship should no longer become Unresponsive after Mining a Asteroid FPS Deposit nearby
+## Technical
+- Fixed 4 Server crashes
+- Fixed a Main Thread Deadlock

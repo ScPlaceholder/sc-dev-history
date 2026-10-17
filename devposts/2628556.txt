@@ -1,0 +1,77 @@
+## Star Citizen Patch 3.8.0
+Alpha Patch 3.8.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.0-PTU.3842892.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: YES
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- General gameplay and traversal.
+Known Issues
+- There is a client crash that occurs on exiting the PU.
+- The player will suffocate in the Terrapin if they sit in the pilot seat without a helmet.
+- If the quantum travel marker is at the edge of a moon or planet they can QT through the moon and explode.
+- Party launch is currently not functioning.
+- If a player interacts with a fine kiosk they will be turned around and unable to interact.
+- There are no items available for purchase at commodity kiosks.
+- Many flight suits and armor are missing from shop mannequins and kiosks.
+- The buttons on the Fine and Citations kiosk can frequently not respond to the player's interaction.
+- There's a chance the enemy AI in the hijacked 890 mission will not react to the player.
+- Personal transport beacons do not broadcast.
+- The Vanguard Sentinel is incorrectly named Harbinger on ASOP and comms channel.
+- Carriable mission items can fall through flooring.
+- Purchased commodities will often visually not appear in the ship's hold.
+- The collision for commodities in a ship's hull is out of place.
+- Carriable boxes may fall through the flooring.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- Player AR markers for party members do not display consistently.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## New Features
+Locations
+- Added MicroTech Planet including the exterior of New Babbage Landing Zone.
+Note, the interior of New Babbage is not completed and is unavailable for now.
+- Added orbital stations above major planetary landing zones.
+- Added new Rest Stop interior variants.
+- Added visor and canopy moisture effects when in appropriate environments.
+- Players now have the ability to select their initial spawn location when it is their first time logging into the game.
+- Grim HEX armistice has been updated to allow non-lethal melee combat.
+- Added wind texture rotation on all planets and moons.
+- Added dust/sand storm effects to appropriate planetary bodies.
+- Wind will now effect the flight model while ships are in flight.
+Gameplay
+- Added "impounding" function to the law system
+Players who incur landing infractions that cause their ship to be forcibly despawned will now see it as "impounded" rather than "stored" when they return to the ASOP terminal.  Players can then see their infraction and either pay to have their vehicle removed from the impound or wait until the vehicle is released.  Different jurisdictions have different fine amounts and impound times.
+- Added new fine functionality to the law system
+Fines are no longer automatically deducted at time of infraction, but instead accumulate on the player until they manually pay them off.  Fines can be payed off at new fine paying consoles, located at all major landing zones.  At the consoles, players can choose which fines to pay (ordered by importance) or simply "pay all" to clear all fines. Fine amounts increase over time to reward quick/early payment. If a fine elapses (goes unpaid after a period of time), the player will incur a felony.
+- Added criminal infraction for "battery".
+- New mission: Rescue hijacked 890 Jump
+- Added "cell type" bounty missions requiring multiple targets to be taken down.
+- Added greater difficulty patrol style missions that spawn harder ships and sentry turrets.
+- Added melee combat including fist and knife fighting along with lethal and non-lethal takedowns.
+Players can now use various kinds of melee attacks including light attacks (tap LMB/RMB) and heavy attacks (hold LMB/RMB). Attacks are directional (LMB for left, RMB for right) and can be chained together for combinations. Players can block incoming attacks using LMB + RMB together and facing the incoming direction. In addition to blocking, dodging is also a defensive option and can be activated by double tapping "A" (dodge left), "D" (dodge right), or "S" (dodge backward). Players can also do "takedowns" if they melee from an undetected direction, usually behind the target, and can be initiated using the middle mouse button. For knife attacks/takedowns, players will need to use a combat knife which can be found at various FPS weapon shops and equipped into a utility slot. When unarmed, melee attacks will do non-lethal damage and takedowns are non-lethal, meaning they will render another player unconscious for a brief moment rather than kill them. Initiate knife combat stance with the "5" key and unarmed melee combat with the "0" key.
+- Added a timer to headtracking to disable after a customizable number of seconds.
+- New Mission: A Call To Arms
+A Call to Arms is a general mission that allows players to gain UEC for killing any criminals they encounter and can be accepted to gain bonuses for each criminal eliminated that are not part of regular missions.  These include any random criminals spawned as part of environmental scenarios as well as interdictions.
+Ships and Vehicles
+- Ship weapon convergence point when no target is active can now be manually set in the options menu.
+- Reworked what was "target focus" into the new look ahead setup as "Look at selected target".
+To use selected target look, set look ahead type to "experimental".  Under "Flight - Targeting" there is a keybind for "Look at selected target" which can be set as a toggle or a hold.  Once a target is selected and in view, toggle or hold and the pilots head/view will follow the target until they get out of a certain threshold.  Additionally, in the game settings you can define the strength of "Look At Target".  The old target focus behavior is still available under the "Legacy" setting.
+- New "look ahead mode" functionality.
+Look ahead mode now has an "experimental" option that opens up additional functionality.  In that mode, look ahead now looks into the ship's "velocity vector", look into turns, rolls into turns, and toward the horizon when near planetary surfaces, dynamically blending when appropriate.  Head motion can also be impacted by g-forces to give an additional sense of motion.  Each of these attributes can have their relative strengths adjusted in the settings menu.
+- Added a new keybind to deselect a target.
+- Added g-force induced head movement, the strength of which can be customized in the game settings.
+- Added new mining vehicle attachment: Mining Laser Head.
+Laser heads are the mining component that is responsible for fracturing and extraction. These components can now be swapped and purchased, with different components offering different advantages and disadvantages when in use.  Laser heads currently can have different instability dampening, resistance modifiers, extraction rates, power transfer rate, optimal charge rate, range, power consumption, heat generation, signature size, and wear characteristics.
+- Added annunciator panels to some ships
+An additional UI panel has been added to some ships that displays various state driven ship conditions. Note, not all ships have these panels.
+- Added a drop shadow to all ship HUDs.
+Weapons and Items
+- New FPS Weapon: Animus Missile Launcher
+Once target lock is achieved, the Animus launcher rapidly fires multiple missiles from its barrels, unleashing the kind of devastation that Apocalypse Arms is known for.
+- New FPS Weapon: BEHR P6-LR - Ballistic Sniper Rifle
+The Behring P6-LR ballistic sniper rifle more than makes up for its slow rate of fire with a high powered 0.50 cal round that's effective from long range. Featuring a scope with variable zoom modes and a barrel composed of a proprietary high-strength alloy, the P6-LR was designed to deliver when needed most.
+Core Tech
+- Implemented server side object container streaming (SSOCS)

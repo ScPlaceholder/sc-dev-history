@@ -1,0 +1,7 @@
+Hi,
+Multi-threaded-rendering will unfortunately not be enabled for this this release (3.23), and will come in a future release (either a point release, or the next major patch).
+The rendering code mostly supports being run on multiple threads/cores in parallel (just a few small changes left to do), however the complexity comes in how we schedule this work in our job system. Currently the 'main' thread creates and schedules all 'jobs' for the game, and the jobs and other threads can't create new jobs themselves (intentional design decision which we want to keep for efficiency). However the rendering currently runs on its own dedicated thread, and because of this it can't create any jobs for splitting the workload of generating the Vulkan command lists. As such we may need to turn the render-thread itself into a job such that we can schedule it and all the Vulkan work from the main thread together, but this could have some unintended knock-ons that we couldn't prioritize fixing ahead of stability issues and hitting the 3.23 deadline. There is an alternate shorter term solution we may investigate that would allow us to kick some jobs on the main thread that run at the end of the frame, and these could attempt to 'steal' work from the render thread, but this isn't ideal as if the render thread runs particularly fast or slow then these jobs may trigger too early/late to be effective.
+HDR support for Vulkan will likely come in the next major release after 3.23.
+Cheers,
+Ali Brown
+Senior Director of Graphics and Procedural Tech

@@ -1,0 +1,66 @@
+## Star Citizen Alpha Patch 4.7
+Alpha Patch 4.7 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.7.0-PTU.11399345.
+- Audience: Evocati Only (Potential for Wave 1  this weekend if build validates)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Operation Breaker Station and Locations
+- Inventory Rework Inclusions
+- Crafting / Material Distibution Inclusions
+- Engineering / Vehicle Armor Updates
+- Radar-Based Aim Assist
+Known Issues
+Note: For this build, music around the PU is disabled
+- Multi-System - PU - ASOP Terminal / Locations - Moving the mouse cursor over a different vehicle in the ASOP when attempting to deliver a specific vehicle will deliver the different vehicle instead
+- Multi-System - PU - ASOP Terminal / UI - There is a chance that a blank information of the Vehicle may appear on Hangar Delivery Request using the ASOP Terminal
+- PU - Multi-System - Location / Art / Lighting - Lighting is in the wrong state in multiple PU locations
+- PU - Nyx/Levski - Transit - Going prone whilst in a moving Limbo Elevator Carriage, will cause the player to fall out of the carriage
+- PU - Starmap / MobiGlas / UI - Starmap is zoomed into the ship when in a cockpit instead of showing the system or region of space in
+- PU - Nyx - RCD - Locations / Design / Interactables - Screen is missing an interaction prompt for the Catalyst rack in Warehouse Control Room
+- PU - Nyx - RCD - Location / Design - Lasing Catalysts can't be detached from the Monorail
+- PU - Nyx - RCD - Props / Tech Design - powercell loses collision and can no longer be attached to item ports after being detached from the monorail
+- PU - Nyx - RCD - Locations / Design / Interactables - Printer hopper closes and screen loses power after printing one lens
+- PU - Nyx - RCD - Medical Screens / Locations / Medical - Medical imprint cannot be set at the Exclusive Medical Bay locations
+- PU - Nyx - RCD - Locations / Art / Proxy - Breakable Ice entity visibly stays intact after shooting icicles
+## Features & Gameplay
+Gameplay
+Operation Breaker Station Polish
+Moved missions to ship mining contract category. Further location Art, LOD, lighting, and audio polish.
+Inventory Redesign
+The inventory system has been fully redesigned to make managing and equipping items significantly faster and more intuitive.
+- Two-Panel Layout
+The inventory now uses a two-panel layout. By default, your personal inventory opens on the left panel and any nearby external inventory opens on the right. The content of each panel is interchangeable. The same inventory cannot be open in both panels simultaneously. If you open your personal inventory on both panels, the left panel defaults to your backpack and the right to your core inventory.
+- Nearby Inventories
+Other inventories within close proximity, including cargo containers, backpacks on the ground, and bodies, are now automatically detected when you open the inventory. These appear as selectable tabs across the top of the UI, letting you browse and transfer items between them without having to separately interact with each container. Hovering over a tab will highlight the corresponding container in the world. If the container is off-screen, a small arrow indicates its direction.
+Inventories accessible through dedicated terminals, such as the item bank and freight elevator, are handled separately and are not part of the nearby inventory tab system.
+Two players cannot have the same inventory open at the same time. If another player is already using an inventory, its tab will appear greyed out and unavailable until they leave.
+- Equipment Panel and Paper Doll
+An equipment panel sits on the left side of the UI and shows your currently held item and holstered weapons and tools. Weapon attachment slots are visible for your currently held item. Clicking a slot in the equipment panel filters the inventory panels to only show items that are valid for that slot.
+The paper doll character view appears at the center of the screen. You can zoom in and out with the mouse wheel.
+- Moving and Equipping Items
+Items can be dragged and dropped between inventory panels, onto equipment slots on the paper doll, or towards your feet to drop them on the ground. Right-clicking an item opens a context menu with options to Equip, Open Inventory, Hold, Rename, and Drop.
+Dragging an item from an external inventory or from the paper doll into your personal inventory panel will automatically place it in your backpack first, then your core inventory, then legs, in that priority order.
+- Search, Sort, and Filter
+A search bar lets you find items by name within the currently displayed inventory. You can also sort items by SCU size or item name, and apply category filters to show or hide particular types of items.
+- Stack All
+A Stack All button lets you automatically combine all stackable items within an inventory in a single action. Items must be truly identical to stack, meaning same stats and same wear state.
+Crafting
+Crafting is now available in Star Citizen, allowing players to use gathered materials to produce items via a new deployable machine called the Item Fabricator.
+- The Item Fabricator
+The Item Fabricator is a placeable crafting station that can be purchased from refinery shops and retrieved through the freight elevator. Once placed in a hangar or base, it serves as the central hub for crafting and dismantling activities. The machine's door must be closed before it can be moved with a tractor beam.
+- Blueprints
+All crafting is done through blueprints, which define what materials are needed and what the output will be. Players begin with a set of default blueprints already on their account. Additional blueprints can be earned as mission rewards and will appear in the Fabricator once obtained. Since adding crafting to 4.7, blueprints are randomized between dozens of different missions ranging from Gilly to FPS to industrial missions with certain bigger missions giving exclusive blueprint chances on completion. Blueprints are bound to the player's account and are retained through death.
+- Material Quality
+All mineables gathered through mining now have a quality value. This value can be viewed in the mining UI, inventory, and the crafting interface. Quality is preserved when materials are refined (for example, turning Iron Ore into Iron carries the quality rating through to the refined output). The quality of materials placed into a blueprint directly influences the resulting item's stats, so higher quality inputs yield better performing outputs.
+- Crafting an Item
+To craft an item, open the Fabricator and select a blueprint. Each blueprint displays the required material slots alongside which stats each slot influences. Players can manually assign materials to slots or use the auto-fill option to automatically populate slots with either the best or worst available materials. Double-clicking a material will place it into the first valid slot automatically. Slots may have minimum quality requirements and will not accept materials below that threshold. Materials can be freely removed from slots before confirming the craft.
+Before confirming, players can set a delivery location for the finished item, either to a local inventory if within range or to the machine's cargo grid. The selected delivery location is remembered when switching between blueprints. Crafted items display their specific crafted stats in the tooltip.
+- Crafting Queue
+Upon starting a craft, players are taken to the queue view. The Fabricator maintains separate queues for crafting and dismantling. Queued items can be moved between in-progress and pending states, and delivery locations can be adjusted per item. The machine also keeps a history tab showing previous completed jobs.
+- Dismantling
+Items that have a crafting recipe associated with them can be dismantled in the Fabricator to recover materials. Items that were originally crafted by a player will return materials at the same quality used to make them. Items found in the world rather than crafted, such as looted weapons, will return materials at a flat default quality value.
+- Material Distribution Overhaul
+There has been a large update to the distribution of ship and FPS mineables with the goal of making it easier to find a particular resource, particularly for ship mineables. Pyro has an increased chance of higher quality materials.  Please note, this is not of course final. Mineable distribution will be changed with planet tech v5 later down the line.
+For ship mineables, all rocks are now 1 resource + inert. Across the board, the amount of SCU of resources within rocks has been reduced. As a general rule for ship mineables, the more valuable the resource, the smaller the SCU size. There are some drastic reductions in the cases of high value materials. Janalite has been added to the surface of some planets and moons. Mineable locations have been updated on planet / moon starmap records.

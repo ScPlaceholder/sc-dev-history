@@ -1,0 +1,39 @@
+## Star Citizen Patch 3.2.1a
+Alpha Patch 3.2.1a has been released to the PTU, and is now available to test!  Patch should now show: PTU-819037.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- ESP with fixed weapons.
+- UEC transactions.
+## Feature Updates
+Missions
+- Reduced the mission spawn timers to increase the frequency and availability of missions.
+FPS
+- Tweaked stamina consumption and regeneration.
+- Disabled radar in Star Marine until signatures and occlusion issues can be addressed.
+Ships and Vehicles
+- Adjusted heat values on the Blade's weapons so the S3 plasma cannon overheats slower and the S2 is capable of overheating.
+- Enabled UI prompts when an item is underpowered and removed MFD power throttle smoothing.
+- Updated to a new algorithm for ESP.
+- Reduced light levels on the bridge of the 600i.
+## Bug Fixes
+- Increasing the mineable threshold to prevent rocks from being highlighted as fracturable when they are extractable.
+- Explosive ammunition (Delta rockets and Combine cannon) should do damage again.
+- MISC and Drake ships should no longer trigger quantum fuel low audio when thrusters are overheating.
+- The Avenger's pilot seat should now properly highlight when selected in interaction mode.
+- Calibration progress audio should no longer persist for the slave ship after the master ship finishes calibrating.
+- Overclocked components should now properly have overheat effects.
+- Grenades should no longer travel toward map origin when thrown.
+- Wearing specific kinds of helmets should no longer cause distant objects to appear blurry.
+- The Nox should no longer have opaque glass.
+- The player should no longer pass out too quickly from spamming crouch.
+- The mining arm on the Prospector should retract when attempting to quantum travel.
+- Turning on the scanning UI while attempting to calibrate should no longer result in nav points getting stuck on screen and the UIs stacking.
+- The mG UI should no longer be offset when entering the pilot seat with a primary weapon drawn.
+- Shield MFDs should now show the correct values for face redistribution.
+- Fixed placeholder text on the Condemnation distortion scattergun.
+- Fix for sprinting interrupt of reload.
+Technical
+- Fixed a server crash.
+- Fixed 2 client crashes.

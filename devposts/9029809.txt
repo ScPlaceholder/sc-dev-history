@@ -1,0 +1,15 @@
+Hey everyone!
+This time there aren't many VR changes for 4.9 as we are busy with other things so I'll post the few changes here instead of making a new thread:
+- VR Keybinds like Theater Mode Toggle, Tracking Reset should work now everywhere unless they are explicitly blocked. For example you can use them now during loading and in the frontend which was not possible before.
+- 3D Eva Direction Markers (in fact it was broken even in 2D, so now it should work again)
+- Screen-fading directly on the backbuffer so it also works in VR
+- Updated OpenXR from 1.0.50 to 1.1.60
+> Implemented XR_EXT_VIEW_CONFIGURATION_VIEWS_CHANGE_EXTENSION_NAME. This means if you use SteamVR and change the resolution in the SteamVR settings it updates now in realtime in the engine!
+- Stereo Cursor Updates:
+> Fix invisible cursor in ships with a radar
+> Stereo cursor fully body aligned so it doesn't move anymore with external forces like water or trains, elevator
+> Restrict cursor to g_headtracking_hmd_cursorMaxViewAngleDeg (default: 40 Degrees) so it no longer can get lost so easily. If you don't like this behavior just set a very high number for this cvar to restore the old behavior.
+- In EVA always force EHACM_DirectOffset as it was causing weird rotations otherwise (only relevant if GroundedLook is active)
+Note: The VISOR Toggle is broken at the moment but will be restored with a hotfix soon. When this happens the Visor can also be toggled on desktop as many people requested.
+Thanks for your time and fly safe o7
+Silvan-CIG

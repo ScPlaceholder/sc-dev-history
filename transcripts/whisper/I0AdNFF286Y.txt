@@ -1,0 +1,1177 @@
+# Star Citizen Live: Q&A Tech Talk
+# https://www.youtube.com/watch?v=I0AdNFF286Y
+[    4.2] Provocative. Hi everybody. Welcome to Star Citizen Live.
+[    9.9] I did it.
+[   11.3] Star Citizen Live.
+[   13.3] Did you know that I have two different shows?
+[   16.3] One is called Inside Star Citizen,
+[   18.6] sometimes abbreviated as ISC,
+[   21.2] and it is prerecorded and goes on Thursdays.
+[   23.4] Other times I have Star Citizen Live abbreviated as S.C.L.
+[   26.5] and it goes on Fridays.
+[   28.6] ISC is where we prerecord and we interview a whole bunch of people
+[   32.7] and we cut them together.
+[   34.7] We make them sound professional sometimes
+[   37.2] and put a bunch of gorgeous B-roll and stuff like that.
+[   40.8] And you put that out and it's about the development of the game.
+[   42.8] And then S.C.L. is where we sit here and I don't know,
+[   49.0] every season we seem to forget what I'm doing.
+[   52.6] They're two different shows,
+[   54.1] despite sometimes me forgetting which one I'm doing
+[   56.9] at the very beginning and a host of Spectrum and Reddit comments
+[   60.9] that continuously invert them.
+[   64.4] And it drives me crazy.
+[   69.9] Joining us on the show this week,
+[   72.0] a special treat, a short abbreviated show
+[   75.5] won't be as long as normal.
+[   76.6] I know I said that a couple of weeks ago.
+[   77.7] This is real because this guy is super important.
+[   79.6] He's got places to be.
+[   80.8] He's a Chief Technology Officer of CIG, Benoit.
+[   87.5] Oh, you're not gonna try the last name, aren't you?
+[   90.0] No, Beau Céjour.
+[   91.3] No, no, no, no, no.
+[   92.4] I stumbled on your first name.
+[   94.6] Okay.
+[   96.9] Like we used to this thing,
+[   97.8] like it used to be the oldest trope of S.C.L.
+[  100.2] We'd get somebody in the hot seat
+[  101.4] and they'd forget their own name.
+[  103.5] I don't think I've ever forgotten my own name.
+[  104.8] What is it that I do here again?
+[  106.4] What is it that you do here?
+[  107.7] Yeah.
+[  108.5] Why don't you tell people?
+[  110.3] Well, sure.
+[  112.3] So I'm the Chief Technology Officer for CIG.
+[  115.5] So I'm basically representing all the engineers
+[  121.5] at Turbudant, yes, but also at CIG at this point.
+[  127.7] So everybody that's even closely remotely doing engineering,
+[  133.3] I basically care for,
+[  135.3] make sure they have what they need to succeed,
+[  137.8] orient the work, get the amazing task of calling priorities
+[  144.6] and basically helping people make sure
+[  146.1] that they win at their jobs
+[  147.8] and that they deliver on what the game needs.
+[  150.7] So that's my job.
+[  151.7] That just sounds like everything is your fault.
+[  155.2] Okay.
+[  156.5] Yes, yes.
+[  157.7] In a way, it's my fault.
+[  158.9] Sure, there's always a way up to my fault.
+[  161.6] All right.
+[  162.4] So Ben Wall has agreed to be on the show this week,
+[  165.3] again, for an abbreviated show.
+[  166.9] So we're in an interesting point in our development
+[  171.2] technology-wise.
+[  172.5] Server messaging is on the horizon.
+[  174.6] We attempted to get a huge tech preview going last night,
+[  179.0] but there were some network issues, as I understand it.
+[  182.6] 324 just went out.
+[  185.1] So it's an interesting moment in our technology history
+[  190.2] so we thought we'd bring them on and answer your questions.
+[  192.3] So as normal, we put a thread up on Spectrum.
+[  194.4] We asked you to submit your questions to Ben Wall.
+[  197.2] Most of them were about things like,
+[  199.5] where's my spaceship?
+[  201.6] Or what can you tell me about this feature?
+[  205.4] And whatnot, that's not specifically what we're here
+[  208.8] to talk about Ben Wall with.
+[  210.6] Talk about Ben, talk about with.
+[  212.2] With Ben Wall.
+[  213.1] Geez.
+[  213.9] I don't know.
+[  215.8] Did you know that I'm not sleeping well?
+[  219.2] So we collected your questions.
+[  221.3] We went through them.
+[  222.2] We chose the ones that are appropriate
+[  223.2] and we're gonna go through them now.
+[  224.9] So the first question I have, Ben Wall,
+[  226.3] is simply we've recently released Alpha 324.
+[  233.6] How'd that go?
+[  235.7] Well, it's an interesting patch.
+[  238.8] Let's just say that.
+[  240.2] So 24 has a lot of new uses to some very large systems.
+[  248.5] And so, some foundational systems.
+[  251.7] Fundational systems, yeah.
+[  253.1] Systems that have been in the game for a long, long time.
+[  256.7] Getting their first update.
+[  258.8] Yeah, exactly.
+[  260.1] And so it's been a bit of a rocky release
+[  265.6] simply because there are some issues that happens
+[  269.1] when more players are present
+[  272.0] that affect core flow of the game.
+[  275.9] So anything that affects you retrieving a ship
+[  278.4] or leaving the hangar or things like that
+[  282.1] are instantly high priority.
+[  286.6] Some of them work well on internal builds.
+[  289.4] And then when we get real players on it,
+[  292.2] there's always something new.
+[  295.0] In this case, for 24, there's a lot of issues
+[  298.6] that happen related to cargo elevators,
+[  301.1] freight elevators, the new hangars and that flow.
+[  304.3] And so we've been hot fixing quite a bit,
+[  306.5] figuring out what was going on,
+[  307.8] some missions that work for the same kind of reason.
+[  309.8] And so we've been kind of analyzing data and hot fixing.
+[  314.8] You won't even say the name, ATC.
+[  317.8] No, well, yeah.
+[  321.2] So let's just say that, like I said,
+[  323.4] there are some systems in the game that are complicated
+[  327.6] that date back to a very long time.
+[  329.9] That's right, been one.
+[  330.8] And ATC is at the core of it.
+[  332.8] It's one of them.
+[  333.8] Show me on the doll where ATC touched you.
+[  338.5] Oh my God, all over.
+[  340.7] But the, and so yeah, ATC transit, you know,
+[  346.0] our systems that, you know,
+[  347.6] there are any issues with these systems
+[  349.9] are debilitating instantly.
+[  352.0] And so, you know, it's not a case of
+[  356.2] if it works 60% of the time, it works every time.
+[  359.8] It's a case of if it doesn't work 1% of the time,
+[  363.2] then it's very high priority to find a fix.
+[  366.6] So we've hot fixed a lot of stuff in the last couple of days.
+[  369.8] There's more coming from the gameplay teams, obviously.
+[  373.6] Some changes to how we deal with obstructions
+[  378.0] in the hangars are coming as well,
+[  380.3] which has been one of the most problematic issues.
+[  383.6] Like the checks on that side were a lot to,
+[  388.4] I like to say hardcore, which, you know,
+[  391.6] would cause a lot of side effects.
+[  393.3] It caused some hangars to break.
+[  394.8] So, you know, we're in the process now
+[  397.6] of changing all of that stuff to release a little bit,
+[  402.0] the hold that the ATC has over clean up,
+[  404.8] and, you know, how it prevents them from stowing.
+[  407.1] So there's already a bunch of objects
+[  408.6] that went live for that.
+[  409.5] So hopefully that will alleviate a lot of the issues
+[  413.1] people have been running into with hangars specifically.
+[  416.2] But otherwise, like 24 is a super interesting patch
+[  420.1] for a lot of reasons also,
+[  423.9] because we've introduced some new metrics
+[  428.1] to Star Engine that have launched in 24.
+[  431.5] So we have now a lot more information
+[  434.6] about the state of the game servers and how they perform.
+[  437.9] So we've instrumented a lot of things in the engine.
+[  441.2] Not to be clear, we've had metrics before.
+[  444.7] This is more about long-term metrics
+[  446.9] that we track over a long period of time.
+[  448.7] So that allows us to really correlate important events,
+[  453.5] like an area streaming in, causing problems,
+[  456.2] certain game components costing us, you know,
+[  459.1] frame time in certain areas.
+[  461.0] And so I like to say that these new metrics are like a,
+[  466.6] if optimizing the game is like a large cornfield,
+[  471.1] we've, the tools that we used to have to do this were
+[  474.6] very optimized, very great microscopes, right?
+[  479.1] But now with these new metrics, we have a radar
+[  481.9] that tells us exactly where to look for and drill down.
+[  484.9] And so I'm hopeful that with 24,
+[  487.5] we've already got a couple of reveals,
+[  489.9] just seeing, you know, the live release roll out
+[  492.8] with these metrics.
+[  493.6] And so I'm hopeful that that's gonna break forward
+[  496.1] a lot more improvements.
+[  497.4] So that's what I'm excited about.
+[  498.9] It's one of those things where I,
+[  502.6] it's hard to see it now, but there's,
+[  504.3] but so much of what we're building towards with the way
+[  507.7] that freight elevators play in a pyro and,
+[  512.5] yeah, stuff that you're going to see at CitizenCon
+[  515.2] later this year, next month.
+[  517.2] Six weeks.
+[  520.5] Are all based on stuff that's in 324.
+[  523.7] It's, I understand it's rough now and stuff,
+[  526.4] but it is a foundational patch that will be built upon
+[  531.4] and will bear fruit in future releases.
+[  535.0] All things.
+[  535.8] Yeah, one of the things that made me,
+[  538.2] I don't know if it's,
+[  539.6] I don't know if we've communicated this way.
+[  541.6] I mean, Chad probably did outline this
+[  543.4] in one of the insights our Citizen,
+[  544.8] but is that the tech behind the way the hangar is function
+[  548.9] is actually an, it's an instance interior, right?
+[  553.3] Mesh.
+[  554.1] This is the first use we have
+[  555.8] of the instance interior system,
+[  557.9] but you can imagine what we'll be able to do
+[  560.7] with that technology moving forward.
+[  563.7] I know that some of you guys have encountered ghost sounds
+[  568.5] when you go in your hanger,
+[  569.8] like in your other stuff from other,
+[  572.5] that's because in reality,
+[  575.1] the hangars are super posed on top of each other
+[  578.5] and an instance in place.
+[  582.7] And so when you go to your hanger,
+[  583.9] there's some, I'll just qualify it as black magic rendering
+[  587.9] coding that happens that you're basically in your hanger.
+[  590.6] That's what you see, right?
+[  591.6] Now there's a bug with audio.
+[  592.7] That's why you're eating.
+[  593.9] You've heard some audio from the other interiors,
+[  596.5] but the reality is all these,
+[  597.7] these hangars are actually on top of each other,
+[  600.5] which is a, when you start thinking about it,
+[  602.7] it's a bit weird.
+[  603.5] And then when you request your ATC gateway,
+[  605.5] that's when your actual instance is moved into place
+[  608.3] so you can exit and enter.
+[  610.0] And so that tech will be,
+[  611.5] it will be able to use that with throughout the universe,
+[  614.7] you know, for a lot more things for,
+[  616.8] for instance, interiors, which is super key
+[  619.0] for a lot of the gameplay we're trying to do.
+[  621.2] All right, so we are 10 minutes
+[  622.9] or one third through our schedule program
+[  624.8] where we got one question down.
+[  626.4] So I'm going to skip.
+[  629.2] You tell me if you tell me when we get,
+[  630.9] when we get to that 30 minute,
+[  632.1] if you can stay later or whatnot,
+[  633.4] but I'm going to try to,
+[  634.3] I'm going to skip to some of the more pertinent questions here
+[  636.9] to make sure we get them in.
+[  640.1] Server meshing.
+[  641.8] So, obviously we had a series of tech previews
+[  645.9] earlier this year.
+[  647.4] We were supposed to start one up last, last night UK time.
+[  651.2] We're hopeful to start one up again today.
+[  654.1] A lot of folks are,
+[  656.4] I'm going to combine three questions here
+[  658.5] and get a broad thing here.
+[  662.6] What are we testing for now?
+[  664.8] Why has the gap been so long
+[  668.0] between tech preview tests for this?
+[  671.6] And is this really working as well as we hope?
+[  678.5] Yeah, so the gap, I'll start with the gap, right?
+[  682.2] So, yeah, later in the spring, end of spring,
+[  685.1] we did a couple of good tests
+[  687.2] that gave us a lot of good data, right?
+[  688.9] So, what we've been trying to do on the meshing side
+[  692.6] is be a bit more pragmatic and methodical
+[  695.5] in how we approach the development.
+[  697.8] And so, these tests really gave us a lot of data, right?
+[  702.0] Because of the way we conducted them,
+[  704.2] we were able to try different mesh configurations,
+[  708.5] look at performance, specifically on the hybrid,
+[  712.4] which is the replication layer of service.
+[  715.4] And to really be able to hone in on what we need to improve
+[  720.2] in order to get the scale that we want.
+[  721.8] And so, what came out of these tests in the spring
+[  725.4] was that there was already things that were touching
+[  729.7] on the performance of the hybrid
+[  732.8] and the game server communications that needed improvement.
+[  737.9] And so, this is what we call the components
+[  742.0] called the NMQ, the network message queue.
+[  744.7] Now, there's a lot of chatter online about,
+[  749.1] all right, there's a replacement thing
+[  751.1] and it's called is it RabbitMQ, whatever it now?
+[  753.3] So, we're not even in that realm.
+[  754.8] We're talking about really the networking component
+[  758.4] that transmits data between game server and client,
+[  762.8] game server and hybrid, hybrid and game servers.
+[  764.9] It's like this, think of it as the communication library
+[  767.9] underneath it.
+[  769.4] So, like all games that technology is using UDP transport
+[  774.3] to get eventually consistent updates out as fast as possible.
+[  779.5] Now, the network message queue had a couple of issues
+[  784.8] when it got a lot of data in a very short period of time.
+[  788.9] So, these spikes would cause, and that's what we saw
+[  792.7] in the final sort of machine tech previews
+[  795.6] was that the, when large areas would stream in
+[  799.0] and a lot of players would join in and leave at the same time,
+[  804.0] the network message queue could go into a tailspin
+[  806.4] where think of it as a drain, right?
+[  809.7] And you're trying to put stuff in the drain
+[  811.2] and at some point, if you exceed the bandwidth of the drain
+[  815.3] then water starts filling up.
+[  817.0] Now, the way that manifests itself in the game
+[  820.2] is interaction delays.
+[  823.1] So, you know, pressing F, trying to get in the ship
+[  825.2] and it takes seconds before the system reacts,
+[  827.5] powering on, ship takes forever.
+[  830.4] Now, I'm not talking about the one offs
+[  832.2] because you can have interaction delay in your game
+[  836.7] based on your connection.
+[  838.0] That can absolutely happen.
+[  839.3] So, it's influenced by your machine, your connection.
+[  841.7] So, if you're playing on a 486 without the turbo button
+[  845.9] on a satellite connection, you might get interaction delay.
+[  850.1] But in this case, we're talking about widespread,
+[  852.1] like when an entire shard gets into that state.
+[  856.5] So, that's what we saw in the tech preview.
+[  858.1] And so that we had to go a little bit back on joint board
+[  860.8] and actually fast track one of the refactors we want to do
+[  864.3] which is the introduction of a replacement message queue.
+[  867.8] Now, we call it replication message queue,
+[  869.8] replacement message queue kind of, you know,
+[  872.7] we've basically called it RMQ.
+[  874.8] And so, this RMQ is a new implementation of this
+[  878.4] that has more abilities to adapt to higher bandwidth
+[  883.4] and react to these large, these large message pushes
+[  887.2] that happen when we start streaming in large areas
+[  889.8] or when a lot of players are coming in and out
+[  891.8] of the game rapidly.
+[  893.1] And so, what we're testing now is RMQ
+[  896.7] in a server mesh setting.
+[  897.8] So, for you guys who don't know, 324,
+[  901.9] half of the servers on live currently run RMQ.
+[  905.3] The other ones are running and in queue still.
+[  908.0] We've been gathering data across both of them
+[  910.2] to see the performance improvements to gains.
+[  913.5] So far, those have been really good,
+[  915.7] a lot of really good improvements.
+[  918.1] And so, now we wanna test this in a server mesh setting.
+[  921.0] So, what changes in a server mesh setting
+[  922.8] is that now the hybrid is gonna manage
+[  925.7] more than one game server that simulate these key areas.
+[  930.2] And so, there's more traffic going through the hybrid
+[  933.2] for this at key moments.
+[  935.0] And so, that's what we wanna test
+[  936.2] with this next set of tech previews.
+[  938.2] So, what our hope is, is that the issues
+[  941.1] that plagued the 800 players last time
+[  943.5] where there was a lot of interaction delays, right?
+[  946.8] Also, some of those tests had a lot of game server crashes
+[  950.7] at the time that we did the test.
+[  952.4] But in this case, we're hopeful
+[  956.2] that all these interactions delays will be, you know,
+[  960.8] basically gone from this bandwidth side of it.
+[  964.5] So, that means we can get to bigger shards
+[  967.1] and the experience is gonna be joinable across that.
+[  970.4] The thing that actually did work really well
+[  972.9] in our spring test was the actual server meshing tech itself.
+[  976.3] So, authority transfer, management of territories,
+[  979.9] all that stuff was fantastic, a really big success.
+[  983.7] But we did need to take a little bit
+[  985.2] of a sideways step to optimize the R&Q,
+[  989.4] which is now done and also getting mission tested right now
+[  992.8] by you guys on 324.
+[  995.4] So, that'll be new information to people who,
+[  998.9] at this moment here, that one half of the 324 servers
+[ 1003.0] are running on NMQ and one half are running on RMQ.
+[ 1007.1] Has there been a noticeable performance difference?
+[ 1010.5] Yes, overall, like the, so we track some
+[ 1015.4] of these interaction delays.
+[ 1017.4] And you'll see this is a common theme
+[ 1018.8] that I've been pushing quite a bit,
+[ 1020.3] is that we need to measure a bit more of these things.
+[ 1022.7] And so, on the long interaction,
+[ 1025.8] we've been looking a lot at the amount of events,
+[ 1029.0] duration of these events, which players get them.
+[ 1032.1] And so, we're able to see a noticeable improvement
+[ 1035.0] on that side.
+[ 1035.9] There are still some interaction lag happening,
+[ 1039.9] but they're not systemic anymore in the...
+[ 1043.5] It's those other causes that you mentioned.
+[ 1045.6] Exactly, yeah, exactly.
+[ 1047.9] So, that's cool.
+[ 1048.8] The thing that's also nice about this
+[ 1050.4] is that we have the ability,
+[ 1052.4] you probably noticed, especially with 24,
+[ 1054.8] that we have a new set of ways to deploy
+[ 1058.1] and canary technology on live to mission test it.
+[ 1061.2] So, not only are we doing tech previews
+[ 1062.8] when it's necessary, but we also are throwing tests.
+[ 1068.2] So, sometimes you might be,
+[ 1069.6] you might end up on a server that's running something new
+[ 1071.4] and you don't even know about it,
+[ 1072.5] but we know about it,
+[ 1073.4] because we're looking at all these metrics
+[ 1074.8] to make sure that the new tech works as expected.
+[ 1077.3] And if it doesn't, we can backtrack and stop the canary.
+[ 1080.1] Things like that.
+[ 1081.1] So, we've been doing a lot of that in the last,
+[ 1083.8] for the entire 24 cycle.
+[ 1086.2] I want to ask a follow-up question.
+[ 1088.4] I feel like I have to here.
+[ 1090.4] If there are people that are just...
+[ 1094.7] We all know that every version of Star Citizen
+[ 1097.8] is a testbed.
+[ 1099.4] Even the full live alphas, that's what alpha means,
+[ 1102.5] it's a testbed.
+[ 1103.8] Evocati, PTU, live, tech preview, whatever you call it,
+[ 1108.1] they're all some level of testbed.
+[ 1111.0] There are people that are just trying to log in and play
+[ 1115.3] right now.
+[ 1116.1] And some of those people are going,
+[ 1118.1] sounds like some of those people are going to 3.24
+[ 1120.2] with RMQ and having a better experience
+[ 1122.7] than some of those people are logging in
+[ 1124.2] through no fault of their own,
+[ 1126.4] are going to NMQ servers and having a degraded.
+[ 1129.8] Do we have a timetable for when we just switch
+[ 1133.6] all of them over to RMQ so we stop?
+[ 1136.8] Now the interesting thing is that currently
+[ 1140.2] for the servers running NMQ,
+[ 1143.7] we're not seeing heightened interaction delays, right?
+[ 1146.9] I guess just comparatively between them.
+[ 1149.7] We do want to keep going at it.
+[ 1152.1] So we're being prudent, right?
+[ 1153.4] So we've started with a couple of shards,
+[ 1155.8] then we moved on to a quarter, then to a half, right?
+[ 1159.2] And so as this is more stable,
+[ 1163.0] it's very possible that within the release
+[ 1166.8] of the next couple of patches,
+[ 1168.2] all servers will be running RMQ.
+[ 1170.5] I mean, at this point,
+[ 1171.4] there's not much stopping that from happening.
+[ 1173.4] It's just prudence to make sure that there's no new issues
+[ 1176.8] that would come on.
+[ 1177.8] Right.
+[ 1178.6] It's like if you replace the net code
+[ 1180.0] for an entire game, right?
+[ 1181.4] Like there might be side effects, you know?
+[ 1184.3] And then the typical invisible player,
+[ 1187.7] new crash on whatever, bad handling of slow connections.
+[ 1191.9] It's responsible not to just switch everybody over.
+[ 1194.3] Exactly, exactly.
+[ 1195.6] So NMQ does work well.
+[ 1197.4] We know where it falls down and at what moment.
+[ 1199.8] We can also identify the shards that we run into this.
+[ 1202.3] There was a bit in 23 of an accumulation in certain areas
+[ 1207.0] that we noticed shards that were a lot older
+[ 1210.8] had this accumulated data.
+[ 1214.8] And it's not persistence data necessarily,
+[ 1216.9] but it's based on the state of the world
+[ 1218.7] where it would transmit more data
+[ 1220.6] and that would cause some more,
+[ 1223.5] a heightened state of interaction delay.
+[ 1225.6] And so that really clued us in a bit more
+[ 1228.6] that our plan to do the RMQ was the right one.
+[ 1231.4] Okay.
+[ 1233.2] Two thirds of the way through.
+[ 1234.2] Our goal is to roll it out to everybody
+[ 1235.8] as soon as we can, that's for sure.
+[ 1237.9] All right, so again, I'm going to the big two ones
+[ 1240.9] because now we're two thirds of the way through.
+[ 1243.6] De-sync.
+[ 1245.1] Yeah, what the?
+[ 1245.9] Well, completely related.
+[ 1249.1] I mean, not completely related.
+[ 1250.5] That's not true.
+[ 1251.4] That's not fair.
+[ 1252.5] The network transmission layer, right?
+[ 1257.9] You know, game server, game client,
+[ 1260.1] client does interpolation, right?
+[ 1261.6] So as your ships or your actions,
+[ 1263.6] the year actor, so your character and your ship
+[ 1268.1] when you're actually piloting a ship,
+[ 1270.1] the client does interpolation about your movements.
+[ 1272.7] So it's trying to predict what the server will say.
+[ 1275.2] And then the server comes in and says,
+[ 1276.6] yep, that's what it is.
+[ 1277.6] And that comes from the network queue.
+[ 1279.2] So obviously when we have congestion on the network,
+[ 1284.2] it's going to cause some of this,
+[ 1286.2] but it's also server FPS,
+[ 1290.5] of course has a very large effect on this, right?
+[ 1293.4] And so, desyncs are a combination of factors, right?
+[ 1298.0] That when you see a desync,
+[ 1299.3] it's, you know, could be because the server is simulating
+[ 1302.8] a piece and he's back in time a little bit.
+[ 1305.8] So he's skipping time steps.
+[ 1307.2] Well, he's not skipping time steps.
+[ 1308.4] It's not the right way to do it.
+[ 1309.3] I'm trying to make it simple
+[ 1310.7] so we don't go too deep into the weeds,
+[ 1312.5] but think about it this way.
+[ 1313.9] If the server is not running at a very decent frame rate,
+[ 1317.3] then when those frame rates dip,
+[ 1320.2] the effect will be some kind of level of desync
+[ 1322.5] for certain kinds of items.
+[ 1325.3] And so with the RMQ, we're hitting on some,
+[ 1329.6] the stuff that's related to the network transmission
+[ 1331.7] that will help definitely.
+[ 1333.6] And with the new metrics in 24,
+[ 1335.8] that helps us to really hone in on what is the cause
+[ 1338.5] of the cost over time on frame time.
+[ 1342.4] Whereas our frame weight, what resources are being used,
+[ 1346.0] what resources are being allocated.
+[ 1347.6] So the thing that might not be clear
+[ 1350.4] when you look at the game,
+[ 1351.4] but so the star engine is really good at streaming stuff
+[ 1355.4] and dynamically and streaming it out dynamically.
+[ 1357.6] That's the key feature of the engine.
+[ 1361.0] But that also has a certain level of cost.
+[ 1363.2] So depending on what players are doing in the game,
+[ 1365.7] the servers might be doing just fine.
+[ 1368.8] Certain areas are just super easy,
+[ 1370.4] but then other areas stream in
+[ 1372.0] and then they become problematic.
+[ 1374.0] And so that's what we're looking at with those metrics
+[ 1376.9] is to see what areas and what entities in those areas
+[ 1380.2] are costing us the most so that we can optimize
+[ 1382.3] the things that really affect those desyncs
+[ 1384.8] in that gameplay, literally.
+[ 1386.5] So right now the improvements we're getting there
+[ 1388.8] is several engine fixes or optimizations, I should say.
+[ 1394.3] And then the network queue replacement
+[ 1396.6] is gonna help on these things quite a bit.
+[ 1398.5] Okay, so like we've said a couple of times,
+[ 1403.5] this has been the truth for as long as I've been here
+[ 1406.0] for 10 years, as far as measuring whites.
+[ 1409.7] A bug doesn't always have just one cause.
+[ 1412.6] Sometimes the same, the manifested effect
+[ 1416.2] can actually be caused by several things.
+[ 1418.3] And that's what makes bug smashing so hard
+[ 1420.2] is you end up finding this cause
+[ 1422.8] and then it still happens.
+[ 1424.0] Oh, this also causes it.
+[ 1425.8] And then it happens half the time
+[ 1428.2] and then you find something else.
+[ 1429.0] Oh, this also causes it.
+[ 1430.5] The same goes for desync performance and stuff like this.
+[ 1433.4] Sometimes it's this that causes it, sometimes it's that.
+[ 1436.5] Yeah, sometimes it's like, I can speak to one bug.
+[ 1439.0] I know you guys like bug smashing,
+[ 1441.4] but for example, at the launch of 24,
+[ 1445.4] we start getting reports that the original
+[ 1447.9] intro cargo missions were no longer functional.
+[ 1450.7] And so at first, you know, shock, like what's going on?
+[ 1455.0] You know, it's not like we haven't tested this flow at all.
+[ 1458.5] We've been running on PTU for a while,
+[ 1460.1] plus internal testing.
+[ 1461.2] So what's going on?
+[ 1462.0] So we start looking into it.
+[ 1464.2] And so long story short,
+[ 1466.5] obviously you need to discover things one by one,
+[ 1468.6] but long story short,
+[ 1472.1] a lot of players on live compared to PTU
+[ 1475.5] will abandon missions, go offline during missions,
+[ 1478.4] cancel missions.
+[ 1479.7] And so the cancellation flow of the missions
+[ 1482.4] would leave the cargo boxes in these inventories
+[ 1486.6] that we use for the missions that are shared.
+[ 1489.5] And so these would accumulate all these cancellations
+[ 1494.5] and it weren't being properly destroyed.
+[ 1496.7] And so at some point,
+[ 1497.6] these inventories reached a point,
+[ 1500.6] I think it was per location, if I remember right,
+[ 1502.6] but that there's so much standby cargo boxes waiting there
+[ 1507.0] that your box is further down the dataset.
+[ 1509.5] And so that, and that code didn't assume
+[ 1513.5] that we'd have that much in those inventories.
+[ 1515.8] It was never meant to have that many items.
+[ 1518.4] We're talking about hundreds of thousands of boxes.
+[ 1520.8] And so at that point,
+[ 1522.4] you would not find your boxes because,
+[ 1524.5] and so you couldn't start your mission
+[ 1525.7] because those boxes were way further down.
+[ 1528.5] And this was completely based on accumulation of cancellations
+[ 1532.2] of players abandoning missions when they're on them.
+[ 1535.4] Or that's a fantastic example of something
+[ 1538.3] that doesn't happen in PTU, that does happen in life.
+[ 1541.6] Because in PTU, everybody's focus is on testing the mission.
+[ 1545.6] So everybody accepts a mission
+[ 1547.4] and the majority of people play through the mission
+[ 1550.8] because they're trying to complete it
+[ 1552.4] because that's the test.
+[ 1554.0] And then you get to live
+[ 1555.7] and you get a completely different behavior.
+[ 1557.5] So it's one of the reasons it's always,
+[ 1560.0] when people ask often,
+[ 1563.9] why did you push it to live and stuff like that?
+[ 1566.0] Because many times this is just one example.
+[ 1568.5] That's the only way we find the outliers,
+[ 1572.4] the big ticket things.
+[ 1574.2] And I mean, shipping patches too,
+[ 1578.7] it is complicating the development in general.
+[ 1582.8] So like I call it the cost of shipping,
+[ 1585.4] but developing, developing, developing is good.
+[ 1589.2] But when you go to,
+[ 1591.3] when we give you guys a patch to test
+[ 1593.3] and we give you guys a patch to play,
+[ 1597.6] that's where a lot of new issues are discovered
+[ 1599.7] for the size of games that we have.
+[ 1601.8] Even PTU, like you mentioned, like people recopy,
+[ 1605.8] they have a behavior that's,
+[ 1608.1] it's not their normal behavior,
+[ 1609.6] they don't go through progression.
+[ 1611.0] They're not cutting in the middle of it.
+[ 1613.0] It's like, it's a lot different.
+[ 1614.9] And so shipping these patches,
+[ 1616.0] the cost of shipping is enormous.
+[ 1618.7] But it is very rewarding in that
+[ 1622.4] we then harden, in the first couple of days,
+[ 1624.6] like I mentioned in 24, was just scramble for,
+[ 1628.2] oh, we need to fix this immediately.
+[ 1630.1] And so a lot of kudos to the teams
+[ 1632.8] that were pushing hard to get those hot fixes out.
+[ 1636.4] But that's basically the,
+[ 1639.9] I think it's shipping these patches
+[ 1641.8] like requires an enormous amount of energy, right?
+[ 1645.3] And it's absolutely worth it.
+[ 1647.6] But it's where, pushing it over the hump,
+[ 1650.8] at some point you need to make a call, right?
+[ 1652.8] Cause the longer a patch stays in this limbo of like,
+[ 1656.8] we're almost there and we,
+[ 1659.3] are we gonna discover something else?
+[ 1661.0] At some point with the model that we have
+[ 1662.7] with the R game being alpha,
+[ 1664.0] we have to move it over the hump,
+[ 1666.9] get those last issues sorted out
+[ 1668.5] so we can continue development.
+[ 1669.9] Cause internally, like it's like a bunch of freight trains,
+[ 1674.4] right?
+[ 1675.2] Like we got this stream of development,
+[ 1677.0] this stream of development,
+[ 1678.4] this release is holding the rest of the developments.
+[ 1681.2] At some point we no longer have a choice.
+[ 1682.9] We do have to move forward.
+[ 1686.8] Last question about performance and stuff.
+[ 1689.2] We talked about de-sync performance,
+[ 1691.4] like the different causes.
+[ 1693.8] Server frame rates are one of the obvious things
+[ 1698.5] that players can often see.
+[ 1700.1] They can turn on the.
+[ 1701.7] We also shared that information.
+[ 1703.4] We reported the client so you can see it
+[ 1705.2] with our display and the phone.
+[ 1706.5] So one of the biggest defenders of server frame rate
+[ 1711.3] is also the reason why in 324,
+[ 1715.8] when you put something on your table,
+[ 1717.3] when you put your gun on your table or something on the table,
+[ 1719.2] it starts bouncing and flopping around
+[ 1721.2] and driving everybody crazy.
+[ 1724.3] Physics.
+[ 1725.6] Sure.
+[ 1727.5] How do we, how do we get the server frame rate up?
+[ 1731.1] Is it just refining, refining, refining physics?
+[ 1735.8] Is it buying bigger servers or better servers
+[ 1741.2] and just increasing the cost of running the game
+[ 1743.3] to an unmanageable thing?
+[ 1745.6] Is there, is the server meshing,
+[ 1748.0] distribute the load across it well,
+[ 1750.1] then that'll get us higher frame rates?
+[ 1751.8] Like, like, what, how do we get server frame rate up?
+[ 1756.2] Well, so, so you're right.
+[ 1758.7] Like our game servers do perform
+[ 1760.9] a lot of physics calculations
+[ 1762.6] and a lot of physics simulation.
+[ 1764.7] That's the nature of the game, right?
+[ 1768.5] You know, thrusters, ship simulation,
+[ 1771.9] like we, we track so many types of geometries
+[ 1774.5] in the physics engine.
+[ 1775.6] It's, it's, it's crazy.
+[ 1777.0] Like we have a really great physics framework and engine.
+[ 1782.1] For sure, like the, the most immediate gain there
+[ 1785.7] is gonna, is server meshing for sure.
+[ 1787.7] Like we've seen in our play test significant frame rate
+[ 1791.9] increase across the board for areas
+[ 1795.2] because you have less physical entities, right?
+[ 1799.8] In general, also that means less geometry,
+[ 1801.6] less allocations, less simulation.
+[ 1804.5] You know, think of the server frame rate
+[ 1806.1] as a, as a bunch of phases, right?
+[ 1809.3] And it's, the engine is extremely well multithreaded,
+[ 1813.6] meaning that we can do a lot of things in parallel.
+[ 1815.5] But the challenge there is always determining
+[ 1817.8] what we can't do in parallel
+[ 1819.3] that doesn't have impact with other things.
+[ 1821.7] So what can we actually simulate
+[ 1823.2] that doesn't depend on anything else?
+[ 1825.4] And so that's true of entities.
+[ 1827.4] So when we do an entity pass or, or, or,
+[ 1830.2] what we call an ECUS update.
+[ 1832.0] So that's every frame.
+[ 1833.8] And it's true of physics.
+[ 1835.2] So, and it's true of networking.
+[ 1836.6] So all these phases at some point need to wait
+[ 1839.8] at the end of a frame for everybody to be completed
+[ 1842.3] before it's on.
+[ 1843.8] And so obviously this is all bound on entity count
+[ 1847.5] and also physical entity count.
+[ 1849.0] So server meshing is the, from the top
+[ 1852.7] is going to reduce that count by a lot
+[ 1854.3] because you have way less areas to simulate.
+[ 1857.4] So less entities to simulate means, you know,
+[ 1861.4] the, that the overall wait time across the frame
+[ 1864.3] will be better.
+[ 1865.2] And so that's the first gain for sure, right?
+[ 1868.4] And then we can control that granularity.
+[ 1870.6] Granularity has our machine technology moved up.
+[ 1873.7] We can control the zones, the size of the zones
+[ 1875.8] that we want to simulate.
+[ 1877.8] Now that doesn't mean that we can't have an area
+[ 1880.4] that's filled with something and it's going to have a high,
+[ 1885.0] you know, either a network or engine cost
+[ 1888.1] or physics time cost.
+[ 1889.4] Oh yeah, because you know,
+[ 1890.2] it'll happen for sure.
+[ 1891.1] You know, when we increase the player counts to 800,
+[ 1893.6] all 800 are going to go and cram themselves
+[ 1896.2] into the same 890 jump.
+[ 1898.0] Of course, of course.
+[ 1899.4] And the, and so that's a bit why you're going to see
+[ 1902.2] some jitters, especially, you know, with cargo,
+[ 1905.4] we're putting a bit more on the gameplay side.
+[ 1908.8] We're putting a bit more of the physics on the spotlight
+[ 1911.6] because we're using them to move, you know,
+[ 1913.6] with tractor beams, moving boxes, things like that.
+[ 1916.9] And so of course we're looking at improvements,
+[ 1919.5] but the first one, well, metrics
+[ 1922.1] has actually already given us quite a bit of
+[ 1925.0] very interesting things to look at.
+[ 1926.8] And so that's, I'm very hopeful, you know,
+[ 1930.0] that that are the radar I was talking about there
+[ 1932.8] is going to, you know, allow us to find even more
+[ 1936.1] optimizations there that we can do.
+[ 1937.7] There's always optimizations, guys,
+[ 1939.2] by the way, it's always a thing.
+[ 1942.0] But server messaging will definitely help quite a bit.
+[ 1944.3] We've seen that in the last test, like, you know,
+[ 1946.3] even with the very large shards, servers were running
+[ 1949.2] on average, much higher frame rate
+[ 1951.9] than our current game shards.
+[ 1953.4] So I'm really hopeful for those games.
+[ 1956.8] Because that's going to be a game changer for the game.
+[ 1958.6] Like obviously performance for the game, you know,
+[ 1961.8] if we gain, you know, one millisecond on frame time,
+[ 1966.4] that's one millisecond directly to your gameplay.
+[ 1969.3] And so for sure, like server optimization
+[ 1972.3] for Star Citizen is at the top of my mind
+[ 1976.0] when I synchronize with game teams.
+[ 1978.3] All right, so server messaging, optimization, obviously,
+[ 1984.0] when I mentioned physics, that's not me
+[ 1986.3] throwing the physics team under the bus.
+[ 1987.8] That's me, as Benoit said,
+[ 1990.2] recognizing how much physics simulation we do
+[ 1993.2] in our universe.
+[ 1995.4] Is there anything else we can do?
+[ 1998.1] Just optimize and distribute the load
+[ 2000.5] across multiple servers?
+[ 2002.1] Correct.
+[ 2003.2] There's also obviously content optimization.
+[ 2005.8] So, you know, like you mentioned,
+[ 2009.4] there's always more than one cause, right?
+[ 2010.9] So optimization is, when we talk about optimization,
+[ 2013.5] because you mentioned one thing in your question,
+[ 2015.2] which was, oh, do we just get bigger servers?
+[ 2017.2] Right, there's a limit to that.
+[ 2018.6] Yeah.
+[ 2019.5] A limit that we've, you know,
+[ 2021.2] I don't wanna say we've reached it,
+[ 2022.9] we're not there yet,
+[ 2023.7] but there's still a server size that makes sense, right?
+[ 2027.8] In terms of cost, cost per player and operations in general,
+[ 2032.0] right, of something that makes sense.
+[ 2034.0] And so when you do optimizations, right,
+[ 2036.7] you need to have a box to fit in, right?
+[ 2039.5] So if you're saying our budget frame
+[ 2042.8] is X amount of milliseconds,
+[ 2044.8] well, then you need to optimize towards that
+[ 2046.6] and you need to touch on everything.
+[ 2047.8] It's never just one cause or one thing.
+[ 2050.9] And so obviously how you multithread,
+[ 2054.6] how you parallelize the work across every phase,
+[ 2057.0] so that touches on every team.
+[ 2059.1] But then there's content as well, right?
+[ 2060.8] Like a good example is the first time
+[ 2063.0] we put cargo boxes in the game,
+[ 2064.4] I forget which patch at this point,
+[ 2066.4] that losing track,
+[ 2067.2] but the actual one SCU box was composed of like
+[ 2072.0] 30 some entities, which we have like,
+[ 2074.9] it looked really good.
+[ 2076.2] Oh, it was such a dumb box.
+[ 2079.8] You know, when we looked at it with the scope,
+[ 2082.4] it's like, okay, yeah, no, we can't do that.
+[ 2084.6] And so, content optimization is the other pass of this,
+[ 2087.6] right, which is reduce the entity counts,
+[ 2089.9] try to be smarter about, you know,
+[ 2092.5] how we construct objects, object containers.
+[ 2096.2] Streaming is also one, you know, how we stream in things.
+[ 2098.7] So the other area of battle
+[ 2100.2] on the server optimization front is,
+[ 2102.4] once you have server frame rates,
+[ 2103.6] so you have entities loaded,
+[ 2106.0] you're simulating them in a frame.
+[ 2108.3] That's one area to optimize.
+[ 2109.7] The next one is putting stuff in
+[ 2111.6] and out of that simulation.
+[ 2112.8] So streaming data in, streaming data out.
+[ 2116.4] And so there's these phases
+[ 2118.2] that every entity and game component go through.
+[ 2121.2] And those are, you know,
+[ 2123.5] these components are written by game developers
+[ 2126.0] and they do different things.
+[ 2127.4] We have, I think over a thousand game components,
+[ 2130.6] they're not all active,
+[ 2131.4] but registered roughly a thousand different game components.
+[ 2135.5] And so each one of those have seven phases
+[ 2138.2] they go through in their life cycle.
+[ 2140.3] Two of them are really important.
+[ 2142.0] It's, they call it register and unregister.
+[ 2144.6] And so this is when a game component
+[ 2146.6] that's attached to an entity.
+[ 2147.8] So entities have components
+[ 2149.8] and entities getting loaded.
+[ 2150.9] We need to run the phases on the components.
+[ 2153.3] So that those components when they register,
+[ 2155.6] that's where they do, oh, you know,
+[ 2157.0] I'm a security component.
+[ 2158.4] I need to register with the security system
+[ 2160.3] and let know of the AI's in the area,
+[ 2162.1] what's going on and things like that.
+[ 2165.2] Those happen when a spawn batch appears.
+[ 2169.3] And so the, what people refer to as the spawn cues
+[ 2172.6] is when the server needs to spawn things, right?
+[ 2175.6] That is a cue that is basically processing these phases
+[ 2179.0] to put the entities into the engine for simulation.
+[ 2182.0] And so that's the other area of battles,
+[ 2183.6] optimizing these phases so that the spawn is faster
+[ 2186.9] and it's sharper and despawning is the same.
+[ 2189.8] Right?
+[ 2190.6] So you finish a mission, you leave away, we stream out,
+[ 2193.0] we need to get this out, right?
+[ 2194.8] And so that's the other area of optimization and battle
+[ 2197.5] that also has an effect on gameplay
+[ 2198.9] that we're really diving into with these new metrics.
+[ 2202.3] Yeah, I'm happy you brought up the content optimization
+[ 2205.0] in addition to feature and service optimization.
+[ 2208.6] One of the recurring criticisms, sometimes valid
+[ 2213.7] and we deserve it and sometimes not,
+[ 2216.4] is how often we rework a thing.
+[ 2220.0] There's been three or four versions of the freelancer,
+[ 2223.6] for instance, and there's a really good reason for that one.
+[ 2226.1] But it's, and that's because we discover inefficiencies
+[ 2230.2] in the way it was built the first time,
+[ 2232.7] not because sometimes because of fault,
+[ 2235.7] sometimes because there just wasn't a better way
+[ 2238.5] to make it then and there is now.
+[ 2240.7] And so revisiting that, reworking that allows us
+[ 2243.9] to make it more efficient.
+[ 2245.4] The freelancer famously, gosh, if old time backers
+[ 2248.8] will remember, I've told the story before,
+[ 2250.4] but if so, if you've heard it, I'm sorry.
+[ 2253.2] There was a second version of the freelancer,
+[ 2255.4] had 200 rivets, little rivets that went around,
+[ 2259.9] the panel lines, and the artist who built it for us,
+[ 2266.2] it was a third party client at that time
+[ 2268.3] because it was still early days.
+[ 2269.9] They copied the rivet from the concept model
+[ 2274.4] instead of, I don't wanna spend time remaking a rivet.
+[ 2278.4] And then just copied and pasted a concept rivet
+[ 2281.9] over the entire ship 200 times.
+[ 2283.6] And so a single freelancer now had a greater resource cost
+[ 2288.6] than the entire Idris in Squadron 42.
+[ 2291.9] And folks for the old Hangar module days,
+[ 2294.3] we'll remember, if you owned all four freelancers
+[ 2298.6] and you loaded that up when they got remade,
+[ 2300.6] your Hangar module was a slideshow.
+[ 2303.4] That was it.
+[ 2304.2] And stuff like that.
+[ 2305.0] I remember also there was a thing
+[ 2307.0] with the original Cutlass Black, the first Cutlass,
+[ 2310.5] that if it would be in your frustum view,
+[ 2313.5] that was it, like that thing was like,
+[ 2316.6] I don't know how many polygons it was.
+[ 2318.0] It was a crazy assembly originally.
+[ 2321.5] But yeah, content optimization is a big part of this, right?
+[ 2324.8] And it's also the hardest
+[ 2327.3] because the universe is very large, right?
+[ 2329.4] So when we talk about content optimization,
+[ 2331.3] I have to box as an example,
+[ 2332.9] but we're talking about harvestable asteroids,
+[ 2337.8] plants, AI characters, your character, like everything, right?
+[ 2342.3] It needs to be looked at under the scope to go like,
+[ 2345.0] is it under the entity budget?
+[ 2347.2] Is it draw calls?
+[ 2350.5] Because the client performance is also important, right?
+[ 2352.4] Like we're talking about server stuff now,
+[ 2354.4] but your client also needs to render that stuff, right?
+[ 2357.9] And so content optimization is a super big part of this
+[ 2361.9] that we have to get a lot better at in general
+[ 2367.2] because our approach is always to make things look right
+[ 2370.6] and they do look right, right?
+[ 2371.8] But then we schedule time to optimize it,
+[ 2375.2] but sometimes we have to,
+[ 2376.8] because of the nature of our development,
+[ 2378.2] we have to put it in one patch
+[ 2379.6] and then optimize it in the next one.
+[ 2380.9] And so that does cause some frame drops at some points,
+[ 2385.4] but yeah.
+[ 2386.7] We make constantly making improvements
+[ 2389.4] for our level of detail system and stuff like that.
+[ 2392.2] We are over by 10 minutes and I'm sorry.
+[ 2394.6] I'm gonna keep you for two more questions.
+[ 2397.6] And I'm gonna say this while you're live
+[ 2399.8] so you can't say no without looking like a dude.
+[ 2401.8] That's okay.
+[ 2402.8] Okay.
+[ 2405.5] Obviously, Turbulent got to start with the project,
+[ 2408.3] building the platform, building the website.
+[ 2414.3] I wanna see how I wanna phrase this.
+[ 2416.0] This isn't a question from the thing,
+[ 2417.2] this is my question.
+[ 2418.3] I've got you here.
+[ 2419.2] Okay, let's reball it.
+[ 2420.4] You're on the hot seat.
+[ 2421.4] Go.
+[ 2422.2] Go.
+[ 2423.0] Hey, come on.
+[ 2428.5] I'm ready.
+[ 2430.8] One of the many annoying things that exist,
+[ 2435.8] one of the most annoying for me and for many people
+[ 2439.7] is that these items that they've pledged for,
+[ 2443.3] these smaller items that they get on the website
+[ 2446.8] that are rewarded from events,
+[ 2448.9] well, they get lost, they fall through the cracks,
+[ 2453.4] they disappear into the unknown
+[ 2456.9] through no fault of people's own,
+[ 2459.2] and there's no way to easily recover that in the verse.
+[ 2462.8] We've been talking about this idea of pledge item recovery
+[ 2465.4] for a while now.
+[ 2468.4] It was actually last November when we first,
+[ 2471.8] really started to talk about it.
+[ 2473.2] It did not arrive in 324 like we and a lot of folks hoped.
+[ 2478.1] Is there anything you can tell us?
+[ 2480.6] Give us some hope.
+[ 2482.6] Well, is this, look, come out tomorrow, please.
+[ 2487.0] So the, in terms of the item recovery in general, right?
+[ 2492.7] The, there's been a lot of discussions in 24,
+[ 2496.7] which was to be honest, very interesting for,
+[ 2499.4] myself and the design team mostly to read,
+[ 2502.5] was the different opinions about the item piosk, right?
+[ 2505.2] And drawer, no drawer or access to inventory.
+[ 2507.8] I mean, this is still gonna go on, right?
+[ 2510.2] And not that we have to, at least one release done
+[ 2512.8] with the current system, but I'm not saying
+[ 2514.4] this is the final one at all.
+[ 2515.4] But that's one of the reasons for why the item piosk exists
+[ 2519.6] also, right?
+[ 2520.6] Was to basically give you guys access
+[ 2524.3] to get your items back, right?
+[ 2526.5] And so I don't wanna say when the feature
+[ 2529.7] is actually gonna drop,
+[ 2530.6] because I don't really know specifically when,
+[ 2532.6] but I can tell you that the adding all those kiosks
+[ 2535.7] in every location, getting them hooked up,
+[ 2538.7] you know, this is, and getting the actual recovery part,
+[ 2542.0] we have to take it out at 24,
+[ 2543.4] because obviously 24 had to go at some point, right?
+[ 2546.0] And there was more pressing, you know,
+[ 2549.3] development and issues to solve with that.
+[ 2551.5] So we have to make that decision.
+[ 2552.9] But the actual kiosks themselves are already in there.
+[ 2556.9] I mean, you see that in the first now they're usable.
+[ 2559.7] And so that means that that feature is in the good place
+[ 2561.8] now to be added in the patch.
+[ 2565.3] I can't tell you which one,
+[ 2566.5] but I can tell you that that's,
+[ 2567.7] we talk about that stuff all the time,
+[ 2570.6] about a, when are we gonna close the loop on this?
+[ 2573.2] When is it gonna land, right?
+[ 2575.2] In terms of the database work too on the back ends,
+[ 2578.2] that's already ready to go.
+[ 2579.5] So it's really about, you know,
+[ 2580.9] when can we get cycles from the game teams
+[ 2583.2] to get that in there?
+[ 2584.3] And I do agree, that's for me is also a bit,
+[ 2588.1] it's a pet peeve of mine,
+[ 2589.1] like being able to get your items back,
+[ 2590.7] especially when they're unique is a super key.
+[ 2593.6] So.
+[ 2594.4] Yeah, I mean, I use the term pledge out of recovery,
+[ 2596.8] but it's really unique item recovery.
+[ 2598.5] It's the thing.
+[ 2599.3] Yeah, yeah, it's, you know,
+[ 2600.2] the ones that you only have one of and that are important.
+[ 2602.3] Now that said, there are plans, you know,
+[ 2605.8] for how this is gonna work for Star Citizen,
+[ 2608.9] not just during the development, but as a whole, right?
+[ 2612.3] Cause, you know, there's more.
+[ 2616.5] And we're gonna discuss about this,
+[ 2617.9] I think it's, it hasn't gone a little bit
+[ 2619.2] with some of the things we're gonna be showing,
+[ 2621.5] but there is a larger plan on how purchased items
+[ 2626.3] are gonna work and how that ties up
+[ 2628.2] to the gameplay of the universe.
+[ 2630.3] And so there's gonna be more updates on that for sure.
+[ 2632.8] Okay.
+[ 2635.1] But not tomorrow?
+[ 2636.8] Not tomorrow, unfortunately.
+[ 2638.5] Okay.
+[ 2639.7] Last question is just sort of a personal,
+[ 2641.8] we've been talking about a lot of tech stuff here today.
+[ 2644.8] You and I go back 10 years now at this point.
+[ 2649.3] There was a time when, you know, it's,
+[ 2651.7] I was one of the few people at CIG
+[ 2654.9] that interacted regularly at day to day
+[ 2656.9] with the turbulent folks.
+[ 2659.4] Your net, you've gone from founder and CTO of turbulent.
+[ 2662.9] And the last time we had you on the show,
+[ 2664.3] we knew this transaction was happening,
+[ 2667.5] but we couldn't tell anybody yet,
+[ 2669.5] which is why we talked a lot about the history
+[ 2671.1] of turbulent net show, by the way.
+[ 2673.3] Now that it's happened and now that it's gone through,
+[ 2676.4] it's still going through,
+[ 2677.9] it has gone through, but the after effects,
+[ 2681.3] the repercussions of it are still happening.
+[ 2685.2] How's that been?
+[ 2686.6] How's that been for you?
+[ 2687.9] Going from CTO of turbulent to CTO of all of CIG,
+[ 2691.9] to going from a web development platform
+[ 2694.3] to full game development thing.
+[ 2697.7] I mean, you know, ultimately it's software, right?
+[ 2700.5] So for me, it's, I'm a bit of a natural there.
+[ 2704.9] It's been a crazy ride for sure in the last year,
+[ 2708.0] going from, you know, I'm gonna use general numbers here,
+[ 2712.6] like 100, 150, you know, maybe engineers in general,
+[ 2716.9] to like, you know, the amount that we have at CIG
+[ 2719.6] and the different teams.
+[ 2721.3] The thing that I find the most satisfying
+[ 2723.8] is that we have so many incredibly talented engineers
+[ 2728.3] at CIG, like from our engine team, graphics, AI, audio,
+[ 2735.1] tools, R&D groups, gameplay teams, you know, VFX,
+[ 2741.5] VFX programming, all these like,
+[ 2743.7] our teams are so talented, it is crazy, right?
+[ 2748.2] And so it's really an honor to have the opportunity
+[ 2751.7] to try to make their lives better, right?
+[ 2755.9] Improve the internal processes that we have
+[ 2757.8] for our engineers, make sure they have career paths at CIG
+[ 2763.2] that they're fulfilled, that they work on things that matter,
+[ 2767.3] right?
+[ 2768.1] So one of the big roles of a CTO is to make sure
+[ 2769.9] that we're working on the right things, right?
+[ 2772.6] That we're not, you know, just developing
+[ 2776.1] and then hoping for a result that we're actually driving
+[ 2778.6] for the results that we want, making the right calls
+[ 2781.8] across that.
+[ 2782.7] So for me, it's been very, very fulfilling,
+[ 2784.6] also very difficult, because my, you know, like the context
+[ 2789.6] which is crazy, right?
+[ 2791.5] Going from all these subjects, right?
+[ 2793.9] But very, very fulfilling.
+[ 2795.3] And I'm so proud of the team that we have,
+[ 2798.3] our engineering teams at CIG are best in class, right?
+[ 2802.5] They're really making miracles with a smallish team,
+[ 2808.2] like in terms of the pure engineering teams,
+[ 2810.2] like making an engine, building the tech
+[ 2812.8] that we need for this game.
+[ 2814.8] I mean, the level of talent is really incredible.
+[ 2817.3] So it's been roughly almost a year now
+[ 2821.2] that I've picked up this role,
+[ 2824.3] and it's been only, you know, positive.
+[ 2828.3] It's also been really positive, I think,
+[ 2830.0] for the Turbidant family in general,
+[ 2831.8] that joined in the CIG family overall.
+[ 2834.6] It's made communications easier.
+[ 2836.9] It's made our missions easier to communicate.
+[ 2841.6] You know, it allows also the cross-culture pollination,
+[ 2845.6] things that Turbidant do well,
+[ 2847.2] things that CIG do well,
+[ 2848.3] we try to get the best out of it,
+[ 2849.7] try to influence each other out of it into one big family.
+[ 2853.9] So it's been a really good ride so far.
+[ 2856.3] I'm really enjoying it.
+[ 2857.8] It's really, really cool.
+[ 2858.6] Plus, I love this project.
+[ 2859.8] Like, you know, there's nothing more that I want
+[ 2862.3] than for all of our tech to come together
+[ 2865.7] and then to really make this game the best thing
+[ 2868.9] that can be by them.
+[ 2870.4] So it's, for me, it's like, I'm just ecstatic about it.
+[ 2874.5] It's been nothing but positive.
+[ 2877.0] It's such a bullshit executive answer.
+[ 2879.2] No, no, hang on, hang on.
+[ 2880.9] I can't say that.
+[ 2881.9] I can't say that.
+[ 2882.8] I can't say that.
+[ 2884.7] What's been difficult is, if you want the downsize of it,
+[ 2888.4] is really catching up to speed to all the disciplines, right?
+[ 2894.6] Understanding the state of things,
+[ 2896.4] to be able to make calls, right?
+[ 2900.4] So, I mean, my people laugh here
+[ 2903.1] because at the office, they locked me up in this office
+[ 2906.9] because I'm always on calls, not stopped from 8 a.m.
+[ 2910.2] to, like, I think the first time I get up during the day
+[ 2912.7] from my desk is at 2 p.m.
+[ 2915.6] And then, oh, I need to eat something
+[ 2917.1] and then, you know, keep going, right?
+[ 2919.1] And so that's the part that's difficult.
+[ 2922.0] The intensity is really up there, right?
+[ 2925.1] Really, really up there.
+[ 2926.3] But at the same time, it's so,
+[ 2928.8] I feel like all these things really move the project forward.
+[ 2931.3] And so it's motivating.
+[ 2933.6] But it is hard on the day-to-day, for sure.
+[ 2938.9] All right, well, Ben-Wong, thank you for staying much longer
+[ 2943.1] than we agreed.
+[ 2945.8] I expected that.
+[ 2947.5] I try to do the short shows every once in a while,
+[ 2949.7] but then I always pair the idea of the short show
+[ 2952.2] with the people who talk a lot.
+[ 2953.8] And it's just, I think I know.
+[ 2956.6] Yeah, that's cool.
+[ 2958.0] I appreciate you staying around.
+[ 2959.3] I'm gonna let you go.
+[ 2960.5] Folks, thank you for watching.
+[ 2961.6] This has been Star Citizen Live.
+[ 2963.6] What did we call it?
+[ 2966.3] Tech Talk with Ben-Wa Bosay Shure.
+[ 2971.5] Oh my God, so good.
+[ 2973.3] I proved it.
+[ 2974.2] Do you wanna know what my orange case is?
+[ 2975.2] Do you remember Fisher Price Constructs?
+[ 2979.1] Oh my God, really?
+[ 2980.4] Yeah, I got my whole, what'd I see in there?
+[ 2984.5] Oh, is it the OG one too?
+[ 2985.9] Yeah, it's the OG.
+[ 2986.7] Yeah, all the, yeah, all the.
+[ 2988.0] I'm an engineer now too.
+[ 2989.2] You've got the constructs in it.
+[ 2990.6] Yeah, I'm an engineer now too.
+[ 2993.4] That builds on my heart.
+[ 2994.6] That means I'm in it.
+[ 2995.4] That means I'm in it.
+[ 2998.3] If you haven't checked out yesterday's
+[ 3000.9] Insights Star Citizen on creatures and characters,
+[ 3009.0] it's a show.
+[ 3011.2] Be sure you watch it.
+[ 3012.8] And then come back here next week.
+[ 3015.1] Next week on ISE, we finally pull the curtain fully back
+[ 3020.4] on the two new zoos that are now coming
+[ 3022.7] in a 324X patch.
+[ 3025.1] It's X because we don't know if it's gonna be
+[ 3026.6] point one or point two or whatnot.
+[ 3028.0] It's meh.
+[ 3029.7] And the new MFD work that's coming alongside it.
+[ 3033.1] The new MFDs are super cool.
+[ 3035.2] And if you're like, how can new MFD be super cool?
+[ 3038.2] Check it out.
+[ 3039.1] They're super cool.
+[ 3040.1] They're super cool.
+[ 3041.6] So that's Benoit.
+[ 3043.9] I'm Jared.
+[ 3045.0] Thanks for watching.
+[ 3046.6] Thanks for just letting me do what I do.
+[ 3051.4] We really thought this yesterday's ISE might be
+[ 3053.8] the last one they let us publish.
+[ 3058.0] Keep your eye on the robertspaceindustries.com website
+[ 3062.0] and Spectrum for news about the Tech Preview Channel.
+[ 3066.4] If that hasn't started yet, it'll start when they're ready
+[ 3069.6] for it and it's really important for the project
+[ 3072.1] and for everybody involved that we get as many people
+[ 3074.1] in there to stress this stuff as possible.
+[ 3077.0] So your participation is tremendously valued
+[ 3079.5] and appreciated if you can make the time to jump in there
+[ 3082.4] and help us out.
+[ 3083.7] So thanks a lot.
+[ 3084.9] I'm Jared.
+[ 3085.8] That was Benoit.
+[ 3086.6] I already did that part.
+[ 3087.4] That's Dave and Pete over there.
+[ 3088.3] You never see them.
+[ 3089.1] Say hi guys.
+[ 3090.0] Woohoo!
+[ 3090.8] Okay.
+[ 3091.6] See you next week everybody.
+[ 3092.5] Take care.
+[ 3093.3] Bye.

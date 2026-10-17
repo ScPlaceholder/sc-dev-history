@@ -1,0 +1,55 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9252113.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Evocati
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of Evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.24.0 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+Not Ready for Testing/Feedback
+- Cargo Commodity Rebalance
+- Dynamic Event: Blockade Runner
+## Known Issues
+- PU - Stanton - Multiple Locations - New Babbage / Orison - ASOP / Fleet Manager / UI - [ F ] interact is not centered on ASOP - 100% Repro
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (High Chance)
+- Stanton - Locations / Performance - Item Bank / Freight Elevator - Frame rate will dramatically drop if players own many items
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP Terminals fade to black when accessed after delivering a vehicle
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- Robert Space Industries - PU - Vehicles/EMP - unable to activate EMP
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multiweapon - Backpack Reloading - Sometimes weapons fail to reload if reloaded from Backpack
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Features & Gameplay
+Gameplay
+- Bumped up many Hauling Mission reward payouts after design discussions and community feedback
+## Bug Fixes
+- Fixed - PU - Stanton - Mission / Career / Reputation - Cargo Hauling Missions do not give Reputation (STARC-119578)
+- Fixed - PU - Stanton - Transit / Locations / Elevators - It's difficult to select/choose a floor on the elevator panel in the GrimHex clinic elevator (STARC-110188)
+- Fixed - PU - Personal Hangars - Locations / Vehicles - It its possible for the "Retrieve" button to become greyed out on fleet manager kiosk in personal hangar after a vehicle is cleaned up at the same time as a vehicle is being retrieved (STARC-118577)
+- Fixed - PU - Stanton - MISC Prospector - Ships / Vehicles / Controls / UI - The Mining Lasers Gimbal is always Fixed (STARC-114249)
+- Fixed - Audio - No sound effects in cockpit (STARC-120433)
+- Potential Fix - Stanton - Locations - Transit - Elevator doors missing, causes player to fall through planet (STARC-40261)
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes

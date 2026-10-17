@@ -1,0 +1,9 @@
+Hi!
+Thanks @nurseman for the tag.
+So I’ve not looked at MFDs in the live release recently, nor am I on the UI team, however I can probably help fill in a few blanks.
+The live release still uses Scaleform as the actual UI rendering system, and this is almost exclusively driven by our own UI authoring tool (Building Blocks) rather than Flash.
+The reason Scaleform is still in use is because the new engine tech hasn’t been integrated into the live release for quite some time, as the focus has been on stability, content, and improving the quality of the of life for players, and large tech changes can risk that (you can find some of my older posts for details rather than us rehashing that here).
+However our new UI rendering system called Paint is in now the default in our main branch and will be coming to the live release soon (I can’t answer when, it’s tied to many other decisions). This is already proving to be faster, less intensive on CPU, and easier to optimise. However UI remains a cost in SC due to the many in-world UI screens, holograms, and effects. As such its the focus of further major optimisations by the UI Tech team at the moment.
+If there are follow up questions please bear in mind I’m not deeply involved with the UI side of things.
+Cheers
+Ali Brown

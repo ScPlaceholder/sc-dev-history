@@ -1,0 +1,50 @@
+## Star Citizen Patch 3.15.1e
+Alpha Patch 3.15.1e has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.1-PTU.7876811.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Current Audience: All Waves
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Easy Anti-Cheat
+With 3.15.1 we are adding EAC into Star Citizen. This currently has a few known issues that we are looking into and may cause a few community tools to not function.
+With this we wanted to gather feedback and edge cases from other software that may cause problems launching the game. This includes running on linux through VM/Wine/Proton, DXVK, or using certain joystick tools like Thrustmaster’s T.A.R.G.E.T. and VPC Configuration Software (Virpil). We would also love extra attention on community tools and mods you may use and all feedback on these working or not working is very appreciated!
+Updates:
+- Reshade v4.9.1 should now be whitelisted (requires renaming of reshade dxgi.dll to d3d11.dll)
+- Devreorder v1.0.3 should now be whitelisted
+Known issues:
+- Investigating 30011 disconnect errors; we may configure some clients to deliberately crash during this error, which allows us to gather more information for this issue
+- Localization tools not working
+- Linux/Wine does not work currently, we are investigating a solution to the problem
+- Symbolic Link not working when linking an environment that does not have EAC files (LIVE: does not have EAC, PTU: has EAC Files)- Work around is to unlink the environment and have seperate folders for each environment.
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Character Customization not saving changes to the PU
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu. Players may need to exit the game and reload after a server crash to fix this error.
+- Players cannot repair, refuel, and rearm at outposts
+- Items not stored in long term persistence such as mined gems are currently not stackable (This is something that will be coming in a future update)
+- After trying on clothing in a store, all equipped items are permanently deleted from the inventory (further logging has been added to this new build to help track down the issue)
+- Swapping weapons has a chance to drop or remove weapons
+- The Prospector door and ladder lack animations
+- When in combat, NPCs can get stuck in cover when trying to exit
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round in Arena Commander
+## Feature Updates
+Locations
+- Updated VFX while flying inside Volumetric Clouds
+Gameplay
+- Updated loadout and health to increase difficulty of Eliminate Boss UGF missions
+## Bug Fixes
+- The custom inventory filter buttons should no longer be oversized and overlap each other
+- Fixed an issue causing many pilot joystick animations to be reversed when flying a ship
+- Fixed an issue that was blocking players from claiming multiple vehicles at platinum bays
+- Fixed an issue causing players to not remain in the carry lowered state when using weapons with a Tier 1 / ArmsLock arm injury
+- Eating a golden medmon should now correctly increase the hunger actor status
+- Fixed an issue causing players with an arm injury to not fully drop a box on the ground and carry it in a lowered state instead
+- Nurses with Datapads should now correctly keep hold of them and not drop them around the floors in hospitals
+## Technical
+- Fixed 1 Client Crash

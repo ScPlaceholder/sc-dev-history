@@ -1,0 +1,3 @@
+The Multithreading for Vulkan is already running internally in our dev branch and the results look very promising. We are seeing massive speedups in comparison to d3d on the RenderThread (RT).
+Don't forget that this doesn't mean it will improve your framerate since we're still mostly bottlenecked by the MainThread (MT), but it will certainly have a positive effect.
+We are integrating these changes into the main branch right now so there is a good chance it will be in the next big release.

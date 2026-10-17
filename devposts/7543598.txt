@@ -1,0 +1,93 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to all backers!  Patch should now show: VERSION 4.0.0-EPTU.9460112.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US Servers
+Audience: Wave 4 (Potentially Further if stability and interaction delays improve)
+Long Term Persistence: Enabled
+Mesh Configuration: 4:6:500 (4 Servers in Stanton, 6 Servers in Pyro, 500 players total on the mesh)
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Server Meshing
+- Pyro Star System and New Locations
+- Mission Refactor
+- Contested Zones
+- Jump Points
+- Advanced HUD View
+- Home Location Instanced Hangar Spawning
+## Known Issues
+- PU - Loading Screens - When attempting to join a server in the PU, players may not connect to an "Authority Server" and eventually encounter a loading timeout
+- PU - Mining - Ship Mining UI / Ships / Vehicles - Some Asteroids do not have a Scan result info in Mining Mode
+- PU - Power settings reset when changing Master modes
+- PU - Multisystem - Locations / Inventory / Actor - Local and Personal Inventory may disappear when force respawning (Workaround: Force Respawn again)
+- PU - Pyro - Rundown Station (R&R) - Checkmate - Locations / AI - AI are spawning out of bounds floating inside of the station
+- PU - Pyro - Rundown Station (R&R) - Multiple Locations - Locations / Physics / Vehicles - Players flying in the vicinity may explode consistently at random
+- PU - Medical Insurance Terminal / UI - Regeneration kiosk UI does not update after transferring imprint
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+## Features & Gameplay
+- Locations
+Planet Gravity and Atmo
+Set Pyro Moons to have -9.81m/s gravity. Updated temperatures to be more inline with design requirements and match current art setup. Set Pyro 4, 5a, and 5d to have breathable atmospheres.
+- Further Contested Zone Navigation Progression Improvements and Fixes
+- Contested Zone Art and Lighting Polish Pass
+- Pyro Planet Ambient Audio Polish
+- Station Interior Map Polish Pass
+- Asteroid Base Interior Optimization Pass
+- Reduced Area18 Hospital NPC Count
+- Further Outpost Missing Ground Collision Polish
+- Gameplay
+Turret aiming and auto gimbal mode
+Turrets will now use a different variant of auto gimbals. While in AUTO mode (check the self status in the visor cast), the crosshair acts like in manual gimbal mode. Gunners have to put the crosshair on the target in order to initiate the auto gimbal process. The UI will let you know when a good firing solution has been achieved. AI controlled turrets also have less of a tendency to fire through their own hull. Fixed VJoy missing in turrets in ADS.
+- Further Combat Backpack and Armor Storage Updates to help certain weapons fit in combat backpack and med guns to fit in armor
+- Tweaked fuse health reduction over time when connected to a CZ door to last ~30 seconds
+- Slightly Reduced Chances of Getting T2 and T3 Injuries
+- Ships and Vehicles
+- Advanced HUD & MFD Visual Optimization and Label Pass
+- Weapons and Items
+- Grin Multitool Tractor Beam: Increased the max distance and lowered the max force
+- Core Tech
+- Further Network and Interaction Delay Optimizations
+- Further Corpse/Ragdoll Physics and Networking Improvements (Will help with jittering corpses and performance)
+- Updated All Loading Screens and Spawn Location Screens to be Specific to their locations
+- Further Spawn Closet Performance Optimizations
+- Instanced Hangar Streaming Optimizations
+## Bug Fixes
+- Fixed a longstanding issue causing invisible asteroids around the PU (Server was procedurally spawning them independent of client)
+- Fixed - PU - Multi-System - Locations - R&R / LEO - GFX - Visarea issue when attempting to enter a hangar (STARC-143478)
+- Fixed - PU - Mission Refactor - Eliminate All - Mission Content / AI / UI / Locations - Friendly AI AR markers are missing from the clients HUD (STARC-63038)
+- Fixed - RSI Polaris - PU - Vehicles / Lighting - Lighting is not correctly applied to external elevator gate (STARC-139248)
+- Fixed - PU - Interaction / ASOP / Server Recover - A Player interacts with an ASOP while a server error occurs can block this kiosk from being interacted with by another player (STARC-73038)
+- Fixed - Multivehicle - Animation /Tech Art - Various vehicles with HOTAS_R_L setups are inappropriately be using animations for hotas (STARC-139112)
+- Fixed - PU - Stanton / Pyro - Mission Refactor - Cargo Hauling missions - No cargo is visible in the Freight Elevator Kiosk at the pick-up location (STARC-137686)
+- Fixed - Argo Mole - Stanton - Ships / Vehicles - Mole elevator can hurt or kill the player when used in zero-g (STARC-70688)
+- Fixed - Argo MPVU Tractor - Ship / Physics - Argo MPUV Tractor can not lift off with containers attached (STARC-123405)
+- Fixed - PU - Multiple Locations - Locations / Jump Point - Either Jump Point and surrounding entities may be missing for all players who travel there on a given shard (STARC-145212)
+- Fixed - Argo MOLE - ALL VARIANTS - Player in the Pilot Seat see no visible mining UI when they are in Mining Master Mode (STARC-135982)
+- Fixed - Multivehicle - PU - Vehicles - Player will clip through ship's geometry and will be pushed outside upon respawning in ship's medbay (STARC-139056)
+- Fixed - RAB-Whiskey Asteroid Entrance has an invisible wall (STARC-145469)
+- Fixed - PU - Mission Refactor - NPE - Mission Content / UI / Markers - Mission markers can be inconsistent and not appear at all
+- Fixed - PU - Multi-System - Mission Content / Bounty Missions - Bounty mission markers cannot be routed to from the Starmap
+- Fixed - PU - Multi-System - Eliminate Specific - Mission Content / UI / AI - Specific target AI to eliminate are not marked
+- Fixed - PU - Pyro - Mission Refactor - Salvage Contracts - Salvage Claim Marker Missing On Spawned Ship
+- Fixed - PU - Cargo - Hauling Missions - Warehouse orders not counting collected & delivered cargo correctly
+- Fixed - PU - UI / Vehicles / Mining - AR markers for harvestables in Asteroid fields are missing when within identification range
+- Fixed - PU - Pyro - Rundown Stations - Checkmate P2L4 - Art / Locations - Player can get stuck in geometry in the airlock to Contested Zone
+- Fixed - PU - Destroy Items Narcotics - Mission Refactor / Mission Content / Locations / UI - Two location markers appear at the mission site displaying the same objective
+- Fixed - Aegis Reclaimer ALL Variants - Vehicles / Actor - Player falls off the personnel elevator when using it
+- Fixed - PU - Mission Refactor - Salvage - Mission Content / UI - The go to location objective will duplicate as the client salvages the vehicle
+- Fixed - PU - Pyro - Contested Zones (CZ) - Orbituary - Design / Locations - Transit elevators start moving before their doors have fully closed
+- Fixed - PU - Mission Refactor - Missions / UI - Reputation - Career and Dossier pages in the Rep tab have lots of missing elements
+- Fixed - PU - mobiGlas - Individual missions on the contracts tabs do not highlight when hovered
+- Fixed - PU - Mission Content / mobiGlas / UI - Completed objectives can be shown as failed in the History Tab of the mobiGlas
+- Fixed an issue causing many outpost airlock doors to not function
+- Fixed FPS AI shooting through their own faction members to attack targets
+- Fixed an issue where knocked down FPS AI would not get back up and return to combat
+- Fixed - PU - Multi-System - Jump Points - Ships / Vehicles / Game Code - The Jump Tunnel can become so small Ships barely fit
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 7 Server Crashes
+- Fixed a Server Deadlock
+- Fixed a Memory Corruption Issue

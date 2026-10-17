@@ -1,0 +1,49 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9272657.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 1
+Server Info: PTU Channel - US/EU
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+Not Ready for Testing/Feedback
+- Dynamic Event: Blockade Runner
+## Known Issues
+- PU - Stanton - Orison - Locations / Shopping - Physical Shopping - Quick buying items on display at the Orison Vision Center ends in transaction error about invalid Player Inventory
+- PU - Missions / UI / Reputation - Affinity appears to decrease after successful mission (UI Issue and reputation is still increasing) - 100% Repro
+- PU - UI - Kiosks / Terminals - Global Chat - Pressing Enter when interacting with any terminal opens the Global Chat causing player to lose game interaction - 100% Repro
+- PU - Stanton - GrimHEX - Locations - Transit - Hangar Elevators - Hangar Instance elevators can be called and arrive at the current floor but the doors do not open - 100% Repro
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (High Chance)
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Features & Gameplay
+Ships and Vehicles
+- Made Further Hornet Series Atmospheric Flight Tweaks
+## Bug Fixes
+- Fixed - PU - Locations / Hangars - ATC assigns the Player to an already occupied hangar (STARC-119508)
+- Fixed - PU - Personal Hangar - Leaving to Menu with a ship on pad does not stow personal hangar for next shard joined (STARC-120885)
+- Fixed - PU - UI - Kiosks / Terminals - Global Chat - Pressing Enter when interacting with any terminal opens the Global Chat causing player to lose game interaction (Should fix Kiosk Search lock) (STARC-118822)
+- Fixed - PU - Stanton - Locations / Interactables / Actor - Comm Array - The insert interaction for the cryptokey lost on server crash recovery during re-uplink (STARC-92241)
+- Fixed - PU - Commodity Kiosk - UI - Autoloading costs are not displayed on Commodity Kiosk
+- Fixed - PU - Stanton - Locations - Transit / Armistice Zone / Law system - Hangar Elevators - It's possible to kill another player in the hangar elevator on the way to a personal hangar even though the trespassing timer is set to 0 seconds.
+- Fixed - PU - Missions / UI - mobiGlas - Contract Manager - The 'Contract Availability' text for Missions is blurry and hard to read
+## Technical
+- Fixed 1 Server Crash
+- Fixed 1 Hybrid Crash

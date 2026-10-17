@@ -1,0 +1,54 @@
+## Star Citizen Alpha Patch 4.7.0 RC1
+Alpha Patch 4.7 has been released and is now available to test on the PTU environment!   Patch should now show: VERSION 4.7.0-PTU.11506930.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+## Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Operation Breaker Station and QV Breaker Stations locations
+- Inventory Rework
+- Crafting Fabricator and Blueprints
+- Engineering Updates
+- Radar Assisted Targeting (Radars components in shops will be arriving in a future PTU patch)
+- Nyx Social Stations
+Known Issues
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+- PU - Stanton - Jump Point / Server Meshing  - There's a chance that a player may end up back to Stanton after a successful jump from Stanton to Pyro using a wormhole
+- Multi-System - PU - ASOP Terminal / Locations - Moving the mouse cursor over a different vehicle in the ASOP when attempting to deliver a specific vehicle will deliver the different vehicle instead
+- Multi-System - PU - ASOP Terminal / UI - There is a chance that a blank information of the Vehicle may appear on Hangar Delivery Request using the ASOP Terminal
+- PU - Nyx/Levski - Transit - Going prone whilst in a moving Limbo Elevator Carriage, will cause the player to fall out of the carriage
+- PU - Inventory Rework - UI - Inventory does not update Capacity and Space changes in Personal Inventory
+## Features & Gameplay
+Core Tech
+VR Technical Updates & Fixes
+Fixed an issue causing the new Inventory Interface windows to overlap each other and eliminate the actor card between them (STARC-196187)
+Added new cvars r_StereoUIWidth/Height to control the UI resolution in VR
+> Default res is 2560x1440 for high crisp text and UI
+> All RTTs rendered after Post Processing use this size and UI Scaleform
+> GetDisplayWidth/Height returns this res in VR
+Large refactor of display/render size values:
+> Rename IDisplay::GetDisplayWidth() to GetOutputWidth()
+> Rename display vars in the renderer to renderWidth/HeightAfterTSR
+> Added new IRenderer::GetRenderWidthAfterTSR() function for RTTs and a few other uses cases as GetDisplayWidth() now returns the UI res in VR
+Render RTT After Post processing only once in VR
+Force PIS wheel in VR to be always centered on screen (will be rendered in world in the future)
+Some code may use the stereo cursor while its not being active. In this case we simply use the view cam pos and viewdir
+Removed r_StereoDebugDrawing as it doesn't give any benefit anymore now with proper UI rendering
+## Bug Fixes & Technical
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues
+- Fixed 1 Client Crash
+- Fixed 3 Server Crashes
+- Potential Fix: (Live/PTU) PU - Multilocation - AI - AI is stuck in cowering (STARC-103423) This fix involves the way they reset to help make sure they go back to normal behavior when threat is removed
+- Potential Fix: PU - Missions - Bounty / Kill Ship - Bounty mission AI has a chance to not spawn (STARC-173649)
+- Potential Fix: PU - Starmap / MobiGlas / UI - Starmap is zoomed into the ship when in a cockpit instead of showing the system or region of space in (STARC-190248)
+- Potential Fix: PU - Nyx - Social Stations - Locations / Design - Players are not given a personal hangar which results in spawning in the habs (STARC-200172)
+- Potential Fix: PU - Nyx - Social Stations - Actor / Location - The usables in the clinic cannot be interacted with
+- Potential Fix: Multivehicle - PU - Vehicles - Vehicle turret tractor beams are not able to remove cargo boxes from cargo grids
+- Potential Fix: Zenith "Landslide" Laser Sniper Rifle - PU - Narrative / Weapons -  VOLT Zenith Landslide variant labeled as Base (STARC-181345)
+- Potential Fix: PU - Commodity / Cargo - Empty SCU boxes remain after selling the contents
+- Potential Fix: PU - Nyx - RCD - Locations - Right section of the Asteroid has a chance to not open up after firing the fully powered laser
+- Potential Fix: PU - Stanton - Fire - Actor / Game Code - Fire Damage to the Player is incredibly low
+- Potential Fix: MIRAI PULSE - Bike can float off and spin as if it has no mass
+- Potential Fix: Mirai Fury ( ALL VARIANTS ) - PU - Vehicles - Fury will not change/cycle  configuration in 4.7 ptu (STARC-199190)
+- Potential Fix: PU - Nyx - RCD - mobiGlas / Locations / Mission Content - RCD contracts are not populating on the players mobiGlas while at certain locations despite reaching the required reputation
+- Potential Fix: PU - RCD - Missions / Locations / Interactables - Sparkplug can clip through the floor after being suddenly dropped (STARC-198831)

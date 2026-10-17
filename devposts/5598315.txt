@@ -1,0 +1,15 @@
+Greetings Testers!
+Ship "soft death" is active for 3.18.0. Some notes on this:
+- Vehicles can now enter soft death state before a regular death state
+- The soft death trigger favors precise damage over blasting major damage
+- In a soft death, the vehicle is left intact and the crew/pilot are left alive
+- Seats can be exited, but not reentered
+- Cargo is left fully intact
+- Additional damage to the vehicle will cause a critical death that will kill the crew and break apart
+- Mission completions related to kills will trigger on soft death
+- Doors unlock on soft death
+- Additional damage after a soft death will trigger a critical death that will kill the crew and destroy a portion of the cargo
+- For now, soft death will kill the crew of AI vehicle
+We are looking for feedback and possible edge cases/issues you encounter with this system. Experiments are welcome and encouraged! Let us know what you run into below.
+-Baior
+Player Experience Team

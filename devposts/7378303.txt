@@ -1,0 +1,27 @@
+## Star Citizen Alpha Patch 3.24.2a
+Alpha Patch 3.24.2a has now been released onto the LIVE Environment! Patch should now show: VERSION 3.24.2-LIVE.9402394.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Items not saved to LTP Include:
+Hangar Decoration Customizations (Decorations will be returned to player's home location inventory)
+Medpens, Ammo, Ongoing Rentals and Refinery Jobs, and Character Customization (Make sure to Export your Custom Character)
+3.24.2a combines all the current hotfixes on LIVE along with many new stability and bug fixes
+This Spectrum post is an abridged version of the notes. For the full in-depth details, please visit the main notes at the link below!
+Full 3.24.2 Release Notes: https://robertsspaceindustries.com/comm-link/Patch-Notes/20255-Star-Citizen-Alpha-3242
+## Bug Fixes
+- Fixed - PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship : TimeOut Fail (STARC-129836)
+- Fixed - PU - Locations - Majority of transit managers can stop functioning for a given shard for hours with no Entity Graph lag present (STARC-133703)
+- Fixed - PU - Interaction / ASOP / Server Recover - A Player interacts with an ASOP while a server error occurs can block this kiosk from being interacted with by another player (STARC-73038)
+- Fixed - Multivehicle - PU - Vehicles / Vehicle Components - Quantum Drives - Cannot initiate quantum jump (STARC-131460)
+- Fixed - PU - Hauling Missions - Hauling missions give full reward without delivering all cargo when the "Submit" button is pressed (STARC-120213)
+- Fixed - PU - Stanton - Actor / Health - Audio / SFX - Medical / Respawn - Permanent Incapacitated Audio loop after respawning (STARC-121829)
+- Fixed - Controls - Pilot / Co-pilot / Gunner - Vehicles - RSI Zeus ALL VARIANTS - PU - When a player is in the co-pilot or gunner seat, the player in the pilot seat will not be able to swap between SCM and NAV modes
+- Fixed - PU -  Transit - Transit appear to be failing to stream back in after being streamed out
+- Fixed - AC - Spawning not possible after rejoining lobby (STARC-130221)
+## Technical
+- Fixed 9 Client Crashes
+- Fixed 23 Server Crashes
+- Fixed 3 Hybrid Crashes
+- Fixed multiple issues with Extremely High Entity Counts in Stanton
+- Made Further Client Physics Performance Improvements
+- Made Further Background Service Stability Improvements

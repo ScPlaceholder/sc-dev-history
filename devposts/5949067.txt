@@ -1,0 +1,78 @@
+## Feature Updates
+Locations
+- Lorville Skyline 2.0
+The major reworking the Lorville skyline to better fit the scale of the city and its distinctive buildings. The goal is to create the visual identity for the high-end, low-end, and generic branding of the city skyline and add navigational signage around the landing zone.
+- Added Updated Volumetric Atmosphere and Clouds to ArcCorp and Hurston
+- Performance Polish Pass for Atmospheres and Clouds
+- Moved Location of Area18 ASOP Terminals Closer to the Hangar Elevators
+- Updated Building Blocks Shop UI for Casaba and Dumpers Depot With Shop Specific Styles
+AI
+- FPS AI Combat Balance
+With 3.19 comes a quality of life overhaul of FPS AI accuracy and behavior. This is intended to make AI feel a bit more realistic, lifelike, and in some ways more forgiving without pinpoint, deadly accuracy at all times, which is something that has caused many of us much frustration while clearing out baddies from underground facilities.
+NPCs should now have a better range of accuracy modifiers, which will ramp up accuracy based on many factors like seeing and losing sight of target, how long the enemy sees it's target after regaining sigh on them, mercy times to assess how much of a threat the target it, and their loadouts. This also implements firing duration and cooldown for rapid fire and other checks with mercy timers that adjust accuracy when determining if a player is a threat or not.
+Gameplay
+- Tractor Beam - T0.5 - Item Attaching and Detaching
+Enabling hand held tractor beams to attach and detach items such as ship components and allowing players to sell those salvaged items for profit. This iteration of the tractor beam gameplay will add the functionality to the tractor beam attachment of the multitool to detach and attach items from ships itemPorts. This functionality can either be used for component exchange, replacement or restocking or to scavenge other ships to use or make a profit. Players can lock and unlock the ability to remove weapons and components from their ship with a new Port Unlock option in the Inner Thought where which in the cockpit or using the new Port Unlock keybind (Default (r-alt + K). While aiming at a component with a tractor beam to detatch it, hold "B" and it will highlight the object with a glow around its perimeter/shape. Left click and drag to pull the component lose from its socket/hardpoint. While attaching components, an AR marker will appear to give players guidance on the correct orientation to attach the component in correctly. If the holo outline is green simply let go of the item and it will attach. If the holo outline is yellow, rotate the item until the outline turns green. If the holo outline is red, the item does not fit the Item port requirements.
+- Mining Balancing v01
+With 3.19 comes updates to both Ship and FPS mining with wide-sweeping balance changes to sell prices, refining effectiveness and costs, component stats, multi-crew mining efficiency, mineable difficulties and masses with larger asteroids, resource distribution, as well as the addition of new mineables. The goal in 3.19 is to make multi-crew mining more attractive and even out all materials to make them all more lucrative instead of a select few.
+Ship mining
+Resource Distribution has been updated to reflect a more distinct distribution of minerals throughout Stanton. Which means that several locations (per planet/moon) now hold exclusive resources rather, than full random resources. Additionally we defined so called “standard” resources that are a given in each minable you will encounter. The rest of the elements have chances to appear in those rocks. The updated resource distribution is also reflected in the trading availability and refining capabilities. Every mining gadget, head, and sub item has had a full balance pass for stats, cost, and efficiencies. Every item that is connected to mining gameplay loop was updated to target specific resources to be mined better or worse depending on the setup of your Mining Head. Multi-crew mining has also been balanced with the Mole getting a buff on instability if the same lasers fire on the same rock, while the Prospector will get a punishment for multiple prospectors firing at the same rock on instability.
+FPS mining
+A new minable is introduced that is only available in the new caves systems and has a high value to encourage players to go mining with their FPS tools outside of prison.
+Changes in the Mining Update
+- Resource Update
+Concept of minable rarities for resources:
+Standard (base resource of a minable always part of any rock, like Iron
+Common (chance to be part of the rock like beryl)
+Uncommon (chance to be part of the rock like Gold)
+Rare (chance to be part of the rock like Qunatainium)
+Dedicated location for resources that have the standard rarity (like Arial having Iron and Quartz)
+Updated properties for resources (each resource should affect the properties of the rock based on their amount)
+Updated mass for minables (resource composition affects the mass of the rock
+More variant rock sizes/masses
+Small ones that do not need breaking to massive rocks that require multiple players)
+Additional rock types with unique chances for resource compositions
+removed Diamonds temporarily
+- FPS Mining Update
+Added Janalite as FPS minable to caves (very rare but very valuable)
+Allowed Mouse Wheel to control throttle - Alt + mouse wheel to control laser intensity.
+Adjusted Difficulty of Hand Mining Various Nodes
+- Resource Refining and prices
+Updated resource prices and demands at TDDs
+The further away from the standard material the more profit
+Updated refinery yield and time for certain material to encourage longer distances to travel for the best money/hour
+- Full item rework
+Mining heads now have a min/max laser power
+Mining heads have different laser power per size
+Mining heads have different extraction speeds where there is also a difference between S1 and S2
+Mining heads have different ideal distances
+Updated resistance values for all mining items
+Updated instability mitigating values for all mining items
+Unified properties for all Mining modules and Mining Gadgets
+Buffed Active modules drastically
+Added new property exclusive to mining gadgets: Called Cluster modifier that clusters element together à if you split a rock it increases the chance that the elements are together in one of the broken pieces)
+Filtering on some items that remove the inert from the rocks you are collecting
+Re-Added Arbor S1 & S2 Mining Head Variants to Shopping Locations
+Sub item slots on Mining Heads are different between S1 and S2
+Resistance reduction now is multiplicative
+Made Instability updates
+- UI Update
+Difficulty forecast that tells you how easy it is to break the rock you are facing
+Reordered some elements of the UI
+Details of the mining items you have currently equipped
+Details on your current cargo
+Clearer scanning display and clearer explanation what is happening during scanning
+- Synergy Tractor Beam
+Allow to detach attach Mining modules/ Heads/ sacks and Place in Ship Inventory
+- Density Manager Mission Updates
+Updated the density manager system so that mission entities and things dropped by missions such as corpses, guns, and debris will be cleaned up when the area is streamed out. As we reuse mission locations such as UGFs, the location will then be cleaned up of all mission items when the area is streamed out while player dropped things remain as usual.
+- Made Insurance Claim Time and Price Increases to all Ships
+- Reduced the Inventory Stock of Ship Weapons, Missiles, and Ship Components Sold in Reststops and LEOs
+- Temporarily Removed Orison Platform FPS Missions for 3.19
+- Temporarily Removed Claim Jumpers Missions for 3.19
+Ships and Vehicles
+- Added Corsair, Cutter, and C8R Pisces to In-game Shops
+Core Tech
+- Optimized Radar Performance While Scanning Large Amounts of Cargo Boxes
+- ASOP UI Performance Optimizations
+- NPC Performance Optimizations
