@@ -1,0 +1,51 @@
+On August 6, 2021, we launched Alpha 3.14: Welcome To Orison, which introduced a number of new features and changes, including Power Management, Missile Operator Mode, and, of course, Crusader and its majestic city in the clouds, Orison. The following is a postmortem from the senior developers themselves, detailing what was delivered and their thoughts on how it went.
+## Locations
+Ian Leyland, Star Citizen Art Director
+## What went well?
+The release of Orison was a huge milestone for the team and the project. It was the most challenging and ambitious landing zone to date, but the team was able to draw upon the experience from previous landing zones to deliver the location.
+Orison is one of the most accessible locations for the player, needing only restricted areas around the main social spaces.
+Alpha 3.14 also showed the lobby spaces of Orison General and Brentworth in New Babbage. These hospital locations will open up with the medical gameplay loop coming in Alpha 3.15.
+Crusader was the first Gas Giant in Star Citizen and with it we saw the first version of a volumetric cloud system.
+## What didn’t go so well?
+Regarding the overall player experience for Orison, there were unfortunately quite a few elements that didn’t make the initial release. For example, specific missions, localized tourism-based interactivity, and, of course, space whales.
+We would also have liked to release Orison with all the planned shop locations, but rather than hold the release of the location, we decided to release these additional shops in the coming patch.
+## What we’ll do differently in the future
+As above, we can always improve on aligning on multi-discipline features so that they’re delivered in time for a location release window and give the best initial experience to the player.
+Improvements and optimizations to some of our new tech features will also benefit the experience and performance of our locations.
+## Vehicle Pillar
+John Crewe, Vehicle Director
+In Star Citizen Alpha 3.14, the Vehicle Pillar delivered some fundamental changes to how spaceship combat plays out with some of the biggest changes to the vehicle system since we introduced IFCS 2.0 in Alpha 3.5!
+## Power Management V2
+## What went well?
+Formally known as “Capacitors”, Power Management v2 evolved over its development to not just include the capacitor system but also the related interactions with other systems and the power triangle on the MFDs. Though outside the original scope of the feature, we managed to incorporate all these additional interactions within the initial delivery, helping increase the quality of the feature out of the box.
+The capacitor system itself provided an instant change to the dynamic between ships during combat, especially so when dealing with multicrew ships and turrets as they have become significantly stronger. This has helped to reduce the often-cited argument of “why bring a friend in my ship when two ships are stronger.”
+## What didn’t go so well?
+While we managed to deliver it all, internally it came in very hot due to staff availability issues beyond our control. This required members from other teams and departments to help pitch in and ensure everything had at least an initial balance pass by the time it hit the PTU.
+A decision fairly late on in production moved the Power Triangle from the HUD to just the MFDs, which caused readability issues in terms of how players interact with the system. This is something we want to look at again in future iterations.
+A few ships had some tricky-to-solve capacitor issues resulting in undesirable shot counts throughout the PTU stage, which caused less than desirable player experience.
+## What we’ll do differently in the future
+As often is the case when we roll out changes that impact the entire plethora of vehicles we have in the game, they take a considerable amount of time to implement. This time around, we were hampered more than planned for. So, when doing these changes in the future, we’ll involve other teams earlier on to help provide support quicker.
+Due to things taking longer than we had planned, we didn’t manage to get it to our internal QA and then Evocati in a complete state. This meant a lot of balance work was done during PTU that should have been done earlier.
+## Missile Operator Mode
+## What went well?
+Missile Operator Mode was a fundamental shift in both experience and mentality for using missiles and I think it was well-received due to the additional clarity and features you get compared to the previous setup. You are now able to competently cycle and arm multiple missiles as well as get better information about the lock state of your target. You also have the ability to dumb-fire missiles, which was previously unavailable.
+The downside of being in a separate mode preventing the use of both guns and missiles was predicted by some to cause some kickback, but the feedback was overwhelmingly positive as it was clear, once some tuning was done, that those two weapon types operate in very different engagement ranges. So, using both together is something that has a very minimal window of opportunity and restricting you to one or the other forces a choice of how you want to engage in combat.
+## What didn’t go so well?
+We didn’t explain the feature well enough during Evocati and PTU, leading to confusion about what the new UI elements displayed and what they were actually doing.
+The feature itself beyond that was pretty robust.
+## What we’ll do differently in the future
+The next logical step is to expand this mode to allow multiple target-locks and incorporate other ordnance types, which you’ll see in Alpha 3.15 with the introduction of the A2 Hercules and its bombs.
+## Canvas Sliced Ship HUDs
+## What went well?
+With the above features coming online, we identified before development began that the current HUD would not be suitable and a replacement was needed. Combined with needing to move away from Flash/Scaleform to our own Building Blocks system, we quickly iterated on multiple concepts that could be implemented in-game rapidly and be adjusted on the fly to help nail down a functional UI.
+The new system in its current public iteration is a generic, single layout only differing in color per manufacturer. However, in the future it will allow us to heavily stylize each manufacturer’s HUD, even down to variants per ship.
+## What didn’t go so well?
+With new tech always comes some quirks. In this instance, we lost a lot of the readability that we’d spent so long achieving with the previous HUD system. It was only during the PTU phase that we managed to bring it back online thanks to the Graphics and UI Tech teams.
+## What we’ll do differently in the future
+As mentioned above, whenever a feature touches all vehicles in the game, we need to provide visibility and guidance to teams who can help us implement it much sooner so they can hit the ground running rather than needing training on how to implement the feature into existing content. For example, the HUD required many aspects of the ship content to be setup in a specific way.
+## RSI Constellation Taurus
+Completing the venerable Constellation series, Alpha 3.14 finally brought the Constellation Taurus to the game, complete with its extended hull section designed to haul more cargo than the other variants.
+Production on the vehicle was relatively straightforward, albeit it often delayed and stop/start due to other company priorities. And, we had planned to improve the cockpit visibility across all the variants as part of this release but decided to save this for its future “Gold Standard” pass.
+One area that changed from the concept was the lower turret, which was originally completely removed in favor of a shielded cargo area. We iterated on a few ideas during production but none felt right or they had big compromises to usability. Having it be externally accessible required a lot of mechanics to be added to a small space reducing the actual capacity it could hold, while having it internally accessible again caused issues with interaction and the movement of cargo through the ship.
+In the end, we decided to repurpose the redundant Merlin docking room into the shielded cargo room, making use of otherwise dead space and allowing us to keep the turret and instead equip it with tractor beams for easier cargo loading and acquisition.
+Overall, the ship was well received and the full line of Constellations being available is a great milestone, but all of them will benefit greatly from a Gold Standard pass to push them to the same quality as other vehicles in the game, especially internally.

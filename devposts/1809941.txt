@@ -1,0 +1,47 @@
+## Star Citizen Patch 3.4.0i
+Alpha Patch 3.4.0i has been released to the PTU, and is now available to test!  Patch should now show: PTU-1024456.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- New Ships: Hawk, Freelancer variants, 600i Touring
+- Lorville Central Business District
+- Hurston mission variants (bounty missions, downed relay missions, FPS AI missions, delivery missions, scramble races)
+Major Known Issues:
+- All items are missing at rest stop shops.
+## New Features
+FPS
+- Added Shipjacker Armor
+Shipjacker body armor set which includes the Clash armor set (Levski, Lorville, GrimHex), Secondlife undersuit (Levski, Lorville, GrimHex), The Butcher helmet (GrimHex), Death's Head helmet (GrimHex) and Why not? helmet (Levski, Lorville, GrimHex).
+Arena Commander
+- Added the ability to rent ship weapons and components from the Arena Commander menu set.
+## Feature Updates
+Missions
+- Updated mission text for Eckhart intro, recovery, assassination, steal, and bounty type missions.
+UI
+- The sub-component target should now highlight on the target visor UI.
+Ships and Vehicles
+- Created enter/exit camera for the rear prisoner seat of the Hawk.
+- Changed the components on the Freelancer MIS to be military grade.
+- Updated the loadout on the Hawk to unify as all fixed weapons.
+- Temporarily removed power priority updates pending further work.
+## Bug Fixes
+- Turrets should no longer noticeably pitch snap.
+- Players should no longer get stuck or die when walking near the landing gear of the Reliant Kore.
+- Fixed LOD issues when viewing the Reliant cargo area interior from a distance.
+- Fixed wrong splash screens at several kiosk locations.
+- Prices on the mobiGlas should now correctly match those on the shopping kiosk.
+- When opening the delivery locker for holiday delivery there should now consistently be a box available.
+- AI should consistently spawn now for underground facility missions.
+- Clear all and assassinate missions should now have distance markers.
+- NPCs should now properly be moving at rest stops.
+- Players should no longer be able to fall between the train and the platform at the CBD.
+- The relay mission should now progress normally.
+- There should no longer be a significant delay before a player can ADS when changing firemodes on their FPS weapon.
+- Large layers of liquid like shadows should no longer appear occasionally on moons.
+Technical
+- Fixed 3 client crashes.
+- Fixed 2 server crashes.
+- UI related performance tweak.

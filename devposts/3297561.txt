@@ -1,0 +1,61 @@
+## Star Citizen Patch 3.10.1
+Alpha Patch 3.10.1 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.1-PTU.5825511.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-10-1
+Testing Focus
+- General gameplay
+Known Issues
+- Global chat is unavailable in the visor HUD
+- Private Arena Commander matches are temporarily disabled due to an issue with the updated group system
+- Player character can clip through the external doors of certain outpost buildings and Aid shelter buildings' airlocks when entering
+- Hangar Doors can remain closed when the Hangar is assigned to a Landing Players Ship.
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- Hammerhead atmo entry effects clipping through interior of the ship
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+- Shots from remote turrets may appear desyned but still connect with the target.
+## Feature Updates
+AI
+- Added updated bartenders and patrons to Rest Stop bars.
+Gameplay
+- Ship targeting UI updates
+Added closure rate for ships that are targeted. Added reticle and pip animation indicating fire solution. Removed outline effects from targeted ship.
+Ships and Vehicles
+- Reverted Banu Defender back to normal default setup.
+- Added manual interaction to the Internal doors in the Avenger series to help with players logging back in not being able to get through the doors.
+Weapons and Items
+- Temporarily converted Tachyon weapons into normal energy cannons.
+## Bug Fixes
+- Locations and portions of locations should no longer stream in slowly or fail to stream in at all.
+- Fixed an issue that was causing the Greycat ROC to not pick up every mined gem with the tractor beam.
+- Greycat ROC storage should now show the correct amount of minerals collected to the nearest decimal point.
+- Mineable resources should no longer shift or move when hit with a vehicle.
+- Changing Undersuits with Legs Armor Equipped will no longer make a Players Equipped Side Arm or Utility Items appear between their feet.
+- Fixed an issue that was causing ships that flew into the autopilot / kill zone to be flown back to the spaceport before exploding.
+- Area18 landing splines should no longer destroy the player's ship on occasion.
+- Fixed an issue causing multiple drop-off delivery missions to not have all 3 drop-off locations.
+- Outpost building at Shubin Mining Facility SMO-13 should no longer be placed too high above ground which was preventing players from entering.
+- Weapons will no longer float near the players back, if they unequip either the Pembroke or Novikov suit and then equip any torso armor.
+- The external elevator screens at the New Babbage Spaceport Metro Loop should no longer be misaligned.
+- Fixed an issue causing Bartenders to get stuck trying to pick up dirty drinks.
+- Upper and lower turret seats in the Caterpillar should now have collision.
+- Camera should no longer slowly pan through the ship interior at the end of an Arena Commander match.
+- Equipping any attachment to a weapon using the inner thought should no longer cause the attachment to sit in the players hand.
+- The 890 jump medical bed "Set preffered ICU" prompt should now be visible without having to lay down in the bed.
+- Player and Ship Art will no longer become offset from the Ship when a player exits the Ship after Exiting Pilot Seat during QT.
+- Fixed multipled reversed decals on the Hornet series.
+- Landing wrench icon should no longer display on a landing pad when spawning a ship.
+- The Open and Close Interaction Mode Prompts on the Rear Interior Door of  the cutlass Red and Blue should no longer appear reversed.
+## Technical
+- Fixed 5 Client crashes
+- Fixed 5 Server crashes

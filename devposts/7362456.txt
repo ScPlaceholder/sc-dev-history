@@ -1,0 +1,49 @@
+## Star Citizen Alpha Patch 3.24.2a
+Alpha Patch 3.24.2a has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9400471.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+3.24.2a combines all the current hotfixes on LIVE along with many new stability fixes and upcoming Save Stanton Updates
+We are planning on running this build throughout the weekend on PTU with the goal to send it to LIVE early next week
+- Stability & Bugfixes
+- Save Stanton Global Event (Starting Saturday Afternoon through Sunday on PTU)
+## Known Issues
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Locations - Hangars / Network - Hangar at Baijini Point is despawning whilst the player is using the area, without external factors, leaving them stuck inside LEO geo
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+## Bug Fixes
+- Fixed - PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship : TimeOut Fail (STARC-129836)
+- Fixed - PU - Locations - Majority of transit managers can stop functioning for a given shard for hours with no Entity Graph lag present (STARC-133703)
+- Fixed - PU - Interaction / ASOP / Server Recover - A Player interacts with an ASOP while a server error occurs can block this kiosk from being interacted with by another player (STARC-73038)
+- Fixed - Multivehicle - PU - Vehicles / Vehicle Components - Quantum Drives - Cannot initiate quantum jump (STARC-131460)
+- Fixed - PU - Hauling Missions - Hauling missions give full reward without delivering all cargo when the "Submit" button is pressed (STARC-120213)
+- Fixed - PU - Stanton - Actor / Health - Audio / SFX - Medical / Respawn - Permanent Incapacitated Audio loop after respawning (STARC-121829)
+- Fixed - Controls - Pilot / Co-pilot / Gunner - Vehicles - RSI Zeus ALL VARIANTS - PU - When a player is in the co-pilot or gunner seat, the player in the pilot seat will not be able to swap between SCM and NAV modes
+- Fixed - PU -  Transit - Transit appear to be failing to stream back in after being streamed out
+- Fixed - AC - Spawning not possible after rejoining lobby (STARC-130221)
+- Save Stanton - Fixed - PU - Stanton - Phase 1 - Mission Content - After accepting the Cargo Recovery mission the "Locate the Missing Ship" objective can complete itself and remove the QT marker before player reaches the mission location
+- Save Stanton - Fixed - PU - Stanton - Phase 1 - Locations / Mission Content / Cargo / Freight Elevators - Resources deposited through the freight elevator go directly to inventory instead of towards mission
+- Save Stanton - Fixed - PU - Stanton - Phase 1 / 3 - Players receive additional duplicate objectives when another player accepts the same mission.
+- Save Stanton - Fixed - PU - Stanton - Phase 2 - Mission B - Subsequent "Sabotage Gang Operation" missions are not appearing after completing the first one
+- Save Stanton - Fixed - PU - Stanton - Phase 2 - AI are sometimes failing to spawn at the mission locations
+- Save Stanton - Fixed - PU - Stanton - Phase 3 - Mission Content / Turrets - Turrets are not hostile to the player upon arriving at mission location
+- Save Stanton - Fixed - PU - Stanton - Phase 3 - Missions / UI - Timer does not update in real-time
+- Save Stanton - Fixed - PU - Stanton - Missions - mobiGlas - Journal Entries - Journal entries to not persist after Clearing Persistent Gamedata
+## Technical
+- Fixed 9 Client Crashes
+- Fixed 23 Server Crashes
+- Fixed 3 Hybrid Crashes
+- Fixed multiple issues with Extremely High Entity Counts in Stanton
+- Made Further Client Physics Performance Improvements
+- Made Further Background Service Stability Improvements

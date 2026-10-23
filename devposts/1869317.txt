@@ -1,0 +1,23 @@
+## Star Citizen Patch 3.4.2b
+Alpha Patch 3.4.2b has been released to the PTU, and is now available to test!  Patch should now show: PTU-1036322.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- General gameplay
+Major Known Issues:
+- Dropped mission crates can sometimes transport to map origin and become unrecoverable.
+- REC ship rentals show as "undefined" and can not be completed.
+- Ship AI can appear immobile and in a bad state.
+- Commodities purchased via kiosk are removed when the ship is spawned
+- Alt-Tabbing may cause game to crash
+## Bug Fixes
+- Kareah Assassination mission is no longer advertised across entire Stanton system
+- Ship canopy should no longer open/close randomly by itself
+- Ships should no longer experience limited functionality following instance recovery after a crash
+- UGF-Elbridge missions should now correctly spawn objectives and markers
+- Comm video calls should now return when players return within distance of each other
+Technical
+- Fixed 3 client crashes.
+- Fixed 4 server crashes.

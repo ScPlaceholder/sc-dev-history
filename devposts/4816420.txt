@@ -1,0 +1,34 @@
+## Star Citizen Patch 3.16.1f
+Alpha Patch 3.16.1f has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.16.1-PTU.7934842.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Derelict Spaceships V1
+Known Issues
+- It is possible that some servers may stop updating their mission offerings. If the issue persists, try leaving the server, waiting a few minutes and rejoining the PU, or change region.
+- Attempting to log back into a ship bed may result in a long loading screen before being sent back to the Main Menu w/ Error 30009
+- Players will experience positional desync with one another after they have died and respawned
+- Many mineable asteroids can’t be scanned
+- Spawn closets do not recognize unconscious AI and close the door on them possibly leaving mission critical AI unreachable
+- A Shattered Large FPS Deposits base displays a Collectable Diamond Icon
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- Logging out from the Reliant ship's bed and back in will cause the Reliant to be in flight mode and the player is stuck inside the ship sleeping area
+- Cannot Repair, Refuel, Restock at LEOs
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+- Ship may despawn after player death instead of staying at it's last location
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+## Feature Updates
+Gameplay
+- Derelict Polish pass
+Multiple polish passes for lighting, collision, geometry, and adding additional trip-mines.
+## Bug Fixes
+- Potential fix for an issue that was causing weapons to holster and unholster unintentionally (This also includes extra logging for the issue just in case)
+- "Get up" Inner thought options should no longer be missing from the Cutlass bunkbeds
+- After dying, the players corpse should no longer fail to spawn, causing permanent loss of their last loadout
+- Item interactions should no longer overlap other items which made it difficult / near impossible to interact with certain items properly
+- Fixed missing central MFD's & annunciator from the AEGIS Eclipse

@@ -1,0 +1,197 @@
+## Greetings Citizens,
+As you may have heard, Star Citizen’s ship development pipeline has recently undergone some updating as it has moved from our Austin studio to our Santa Monica studio to be closer to Chris Roberts. For the last month, we in Santa Monica have been “in the ship” so to speak. We’ve been laying out the plan for the coming year of global ship development. And when we say global, we mean it! Chris Smith and Josh Coons are still building ships in Austin, while the team at Foundry 42 in Manchester will be using this same process to create ships needed for Squadron 42. We thought that this month represents a great opportunity to update the community on the status of all ships currently in various stage of the pipeline and use that as a touch stone to help explain the various stage of ship development, what they mean, and why they are important.
+Before we go too deep into the ship development process and explanation of the pipeline we would like to take a moment to explain some changes that you may have noticed in the recent patches to some of the older Aurora, 300, and Hornet series ships already in your Hangar. If you purchased any of the variants for these ships you may have noticed that in the latest patch they look a bit different. For the last month or so the ship team has been working in close concert with members of the Santa Monica Engineering team to introduce a code driven variant system.
+We are now able to build only the parts of the ship that are different for a variant which not only saves time in making the variants but also saves a tremendous amount of time maintaining the ships and fixing bugs. For example the 300, Aurora, and Hornet series all share the same cockpit with all variants in their series but, under the old system, these were all different models. This means that if we wanted to upgrade the cockpit interior in the Aurora we would have to go make the same geo changes to the Aurora LN, LX, MR, ES, CL so a single change would need to be done 5 times to have it be reflected across all the ships. Under the new system the code manages the ships more like Lego pieces attaching all the bits together. What this allows is for us to change one piece once and have that change be used across all the variants in the lineup as long as they are share that same piece. Not only is this an immense time saver in making the ships, setting up the ships, and upgrading the ships but it also allows us to dramatically decrease the amount of bugs that are created and the time it takes to fix any that crop up.
+To start of this pseudo “State of the Union” on ships it is probably best to talk a bit about the pipeline itself as laid out in the above image, which is our latest process. The process itself breaks down into three primary stages which we’ve also aligned to public facing releases to you, the community. These three primary stages are as follows:
+Concept Ready
+This is where we share a finalized and approved concept to the community. At this stage we’ve internally reviewed and approved the final renders after thorough exploration of functional design. A recent example of this is the Reclaimer.
+Hangar Ready
+This is where we have ships ready to go into the hangar of everyone who has purchased a ship. At this stage the model is mostly finalized and associated character animations are complete. If a ship has any variants our goal is to have any variants in of the ship Hangar Ready at the same time as each other. A recent example of this are the Constellations.
+Dogfight Ready
+At this stage we’ve prepared the ships to be used in Arena Commander and later the Persistent Universe. The important differences is that we’ve refined their LOD’s, setup all of their damage states, visual effects, audio effects, final lighting, etc. A recent example of this is the M50.
+Now we are going to take you on a sojourn through the intricacies of each step in the process to reaching each milestone stage. Hold onto your hats, here we go!
+## Concept Ready
+The road to a ship being concept ready is arguably one of the loosest and most creatively raw. We start quite simply by identifying a role within the Star Citizen universe that we want to fill with a ship. This is done with collaboration between Design, Writers, Production, and of course Chris. The folks involved at this stage are generally Dan Tracy, Ben Lesnick, David Haddock, Chris Roberts, and Travis Day. Once the ship role is defined we discuss which of our universe’s manufacturers would most likely produce this ship, generally what capabilities it will need to have. From there the design team will put together an initial pass at several stats options based on the earlier discussions for Chris to review. At the same time our writers will generate high level descriptions of the ship from a fictional perspective for Chris to choose from or refine. Coming out of this initial Design process we will have approved stats, approved fiction, and an approved name. Once the base model has been approved by Chris we go through much the same process to define the variant models for the ship.
+## High-level concept
+Early sketches of the Vanduul Scythe
+At this point we select the Concept Artist whether internal or external whom we feel is best positioned based on skillset and availability to tackle the concept of this ship. Once selected we provide all the materials and ideas generated above to the artist and have a meeting with them to discuss the documentation, ideas, fiction, and allow them to ask questions and pitch some initial directions they could see off the cuff. From there the artist will take all the information and begin the process of sketching up some quick roughs to show shape language and general design ideas. The concept artist will deliver back sometimes upward of 16 different roughs for Chris to review and provide feedback and direction on. Once Chris has made some selections and provided feedback on them we will continue through this iterative process until we’ve settled on a final detailed sketch.
+## First 3D renders
+Mustang 3D concept model
+To continue the process the Concept Artist will then move into 3D using programs such as Modo or Maya. They translate the 2D sketches into 3D models that, while not nearly as detailed or clean as the final game models, bring the ship into 3 dimensions so we can begin tackling the technical and logistical details. As you all know our ships are designed to be quite functional and it is at this stage that the functionality takes center stage. Our Technical Designers, 3D Modelers, and Technical Animators become involved at this stage to work with the Concept Artist to flesh out details like how the landing gear operate, how the ship will land, where the thrusters will be located for optimal flight characteristics, interior cockpit placement, distance to control surfaces, location of the engineering bay, sleeping quarters, weapon placement etc. It is at this where we can make sure that the dimensions, layout, and design coming out of the Concept stage are going to work once we begin to build out the final in-game 3D ship in 3DS Max, animate in Maya, and ultimately import and setup in the CryEngine.
+The Hobbins Hole
+Funny anecdote from this stage: during this phase of the concept for the Mustang which was done by David Hobbins we discovered that the units of measurement were off from his setup on Maya to the units being used for modelers in 3DS Max. This meant that as the pilot attempted to enter the cockpit the doorway was too small to fit the character so you were stuck in the hole behind the cockpit where the elevator is located. This coined the term around the office of “The Hobbins Hole”.
+Once everything is finalized and Art, Design, Animation have all signed off it is submitted for final review and approval by Chris. Once any feedback has been addressed we will complete this stage by rendering out several in situation shots from multiple angles which show it landed, flying in space, fighting, along with any special contextual functionality like the claw on the Reclaimer. It is at this point that we would release these renders to the community like we did recently with the Reclaimer and we advance the ship onto the phase of becoming Hangar Ready.
+## Hangar Ready
+The M50 in the Asteroid Hangar.
+The process of getting a ship hangar ready is where we start to involve a lot more people in ship creation as the complexity increases and we attempt to streamline as much as possible by parallelizing efforts. The first step, coming out of the Concept Ready stage, is generally done in parallel to the final Concept renders is the “Slice and Dice” proposal and “white boxing” where our Technical Artists and Technical Designers will import the concept model and begin identifying the primary parts of the ship that we want to damage and destroy independently of each other and fleshing out how it will work. You can see an example of this for the Cutlass.
+The importance of this step is to identify how we will need to go about modeling the ship since the ships, though they look whole, are actually comprised of all their functional pieces attached together by code at runtime. Once the this step is complete we can then parallelize the Art work and the Technical Design and implementation to save time.
+Using the slice and dice and white box the Design team can move forward on setting up the vehicle implementation files where we define for the game code what equipment the ship will have by default and begin setting up the thruster positions and testing its flight mechanics and revising thruster placement in preparation for dogfighting ready. Meanwhile the Art team can then move forward with setting up the 3DS Max scene for the ship with each of the different models that comprise the ship and configuring the hierarchy as prescribed by the white box. Generally for this the Artists will use the early concept model as you would a mold for jewelry making where they build the new final game asset around/atop the concept model removing concept model as they complete final game asset pieces until all that is left is the final game asset geo.
+Once we have the base geometry laid built and the hierarchy set properly the Animation team then starts in on character and vehicle part animations for the ship while the Artists continue on to add hardpoints and helper positions to match what the technical designers have setup on the white box model so the that the vehicle implementation files will be properly referencing actual locations on the model the Artist has created. From there they will finish off UV Mapping, texturing, and material settings, configuring blend layers for wear and tear, etc. Once this is complete the model will be sent to Chris Roberts for review and feedback. From here on the 3D Modeler will iterate on the feedback from Chris until final approval and also support the Animators and Designers with any needs or changes that may still be required.
+Last but not least the model and animations will be turned over simultaneously to a Lighting Artist to setup the interior and exterior lighting of the ship and a Sound Designer who will make sure that all the sound effects for the ship, character animations, etc. are integrated and bring the ship to life. At the point that this is complete and we have a ship that we feel is hangar ready we then submit it to Chris Roberts a final time for his review. Following the integration of his feedback and his final approval we then integrate the ship into the next patch that is outbound to the community and shazaam, a new Hangar Ready ship is released.
+## Dogfight Ready
+This stage of ship development is arguably the most technically complex but it is definitely the stage that involves the most people and requires the most close communication and collaboration between all development disciplines due to the complexity and interconnectivity of the ships and their systems. If you look at the Ship Pipeline document in this post you can see that this is where the most parallelization has been implemented and we can do that thanks to the changes that we’ve made earlier on in the pipeline which start to pay dividends here. For example, if you remember the “slice and dice” proposal and the white box… Because we made those and broke the ship up into all its proper pieces for the hangar stage we can now have individual artists work on creating damage states for each of those pieces at the same time since they are each their own separate model and have their own place already laid out in the hierarchy of the ship. Once they’ve completed this they will move on to baking out LODs for each of these pieces.
+Cutlass damage state breakup
+For the damage states in particular we have also developed a new system in collaboration between Engineers, Tech Artists, and our Visual Effects team. If you remember from some of the older behind the scenes videos with Forrest, we used to have to have VFX artists create custom effects and go through setting them up on the model and in XML to trigger the effects to play. With our new system the artists that are actually making the damage states can actually place in helpers on the model themselves at the place where they want visual effects to appear. Based on the name that they give to helper the code will automatically play the effect they’ve chosen at that position they specify. This allows the Artists to place the visual effects where they envision them as they are modeling and the VFX artists to focus solely on making a huge library of cutting edge effects for people to use while spending less time on the technical implementation.
+Cutlass damage state overview
+At the same time our UI team will begin laying in the various HUD and instrumentation elements that they had concepted and created for the ship during the modeling phase and refining them to match with any changes and feedback from Chris Roberts. This is a very iterative process that we are still building some tech to properly support all the creative diegetic displays that our UI Artist Zane Bien is concepting to fit Chris’ vision for the HUD in Star Citizen.
+Finally the VFX and Animation team will create any custom effects and animations required for the ship that it hasn’t gotten in a previous stage. Following that the Audio team will go in make sure that every single animation, effect, HUD element, basically everything, has an associated SFX that brings the ship to life. As they do this design will finalize the implementation of all the damage states, vehicle stats, implementation files, weapons and thruster configuration balance until they are satisfied with their results.
+As with every stage in the pipeline Chris is involved at every turn but it is here for the Dogfight Ready stage that Chris then has his final review and feedback for the ship before it is released out to the public. Following the integration of Chris’ feedback the ship is then integrated into the next patch going live to the public and we all watch like eager parents as the patch goes live and our ship is released into the hands of the community.
+Bringing ships into Arena Commander…so you can blow them up!
+That about wraps up this dissertation on the pipeline and process that we use to develop ships here at Cloud Imperium Games! I can honestly say that one of my favorite things about working on this project is our freedom. By freedom I certainly mean the creative freedom without a publisher but more to the point it is also the freedom to share our development process with everyone in the community that makes this all possible. Having the opportunity to show everyone the development process in this kind of “open kimono” fashion is very liberating and fun for all of us here at Cloud Imperium and we hope that you all enjoy hearing about it as much as we love sharing it. Thank you to everyone in the community who has backed this project and made this kind of unique creative development relationship possible! See you all in the ‘verse!
+Sincerely,
+Travis Day
+Producer – Star Citizen
+This chart shows what the next stage is for each ship in the pipeline. Note that this is not every ship in development; some which have yet to be revealed are not included! (And others, like the newly selected Wave 4 ships, have not yet entered the pipeline.)
+Ship Name
+Current status
+Next Stage
+315p
+Hangar Ready
+Flight Ready
+325a
+Complete
+Complete
+890 Jump
+Concept Ready
+Hangar Ready
+Aurora CL
+Hangar Ready
+Flight Ready
+Aurora ES
+Hangar Ready
+Flight Ready
+Aurora LN
+Hangar Ready
+Flight Ready
+Aurora LX
+Hangar Ready
+Flight Ready
+Avenger
+Hangar Ready
+Flight Ready
+Avenger Variant 1
+Concept
+Concept Ready
+Avenger Variant 2
+Concept
+Concept Ready
+Avenger Variant 3
+Concept
+Concept Ready
+Banu Merchantman
+Concept
+Concept Ready
+Carrack
+Concept
+Concept Ready
+Caterpillar
+Concept
+Concept Ready
+Reclaimer
+Concept
+Concept Ready
+Constellation Andromeda
+Hangar Ready
+Flight Ready
+Constellation Aquila
+Hangar Ready
+Flight Ready
+Constellation Taurus
+Hangar Ready
+Flight Ready
+Constellation Phoenix
+Hangar Ready
+Flight Ready
+Cutlass Black
+Hangar Ready
+Flight Ready
+Cutlass Blue
+Hangar Ready
+Flight Ready
+Cutlass Red
+Hangar Ready
+Flight Ready
+Freelancer
+Hangar Ready
+Flight Ready
+Freelancer DUR
+Hangar Ready
+Flight Ready
+Freelancer MAX
+Hangar Ready
+Flight Ready
+Freelancer MIS
+Hangar Ready
+Flight Ready
+Gladiator
+Concept Ready
+Hangar Ready
+Gladius
+Concept Ready
+Hangar Ready
+Herald
+Concept
+Concept Ready
+Hornet F7C-M
+Hangar Ready
+Flight Ready
+Hornet F7C-R
+Hangar Ready
+Flight Ready
+Hornet F7C-S
+Hangar Ready
+Flight Ready
+Idris M
+Concept Ready
+Hangar Ready
+Idris P
+Concept Ready
+Hangar Ready
+Manticore
+Concept
+Concept Ready
+Mustang
+Concept Ready
+Hangar Ready
+Mustang Beta
+Concept Ready
+Hangar Ready
+Mustang Delta
+Concept Ready
+Hangar Ready
+Mustang Gamma
+Concept Ready
+Hangar Ready
+Mustang Omega
+Hangar Ready
+Flight Ready
+New Corvette
+Concept
+Concept Ready
+Hull C
+Concept
+Concept Ready
+P52 Merlin
+Concept Ready
+Hangar Ready
+Redeemer
+Concept Ready
+Hangar Ready
+Retaliator
+Concept Ready
+Hangar Ready
+Starfarer
+Concept
+Concept Ready
+Vanduul Glaive
+Hangar Ready
+Flight Ready
+Vanduul Scythe
+Hangar Ready
+Flight Ready
+Xi’an Scout
+Concept Ready
+Hangar Ready
+Xi’an Volper
+Concept
+Concept Ready

@@ -1,0 +1,72 @@
+## Star Citizen Alpha Patch 4.1
+Alpha Patch 4.1 has been released to the PTU, and is now available to test!  Patch should now show: VERSION 4.1.0-PTU.9620182.
+## Build Info
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+- Audience: Wave 3
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+This initial release of 4.1 comes with some pretty dramatic changes to items and recovery. This is a first iteration of item recovery with much more to come in future builds.
+- Stability & Bugfixes
+- Enabling Orison and Area 18 NPE
+- T0 Item Recovery
+- Ground Vehicle & FPS Mining Updates
+- Wikelo Collector Missions (Intro Mission Should now function and allow for subsequent Collector Missions to be completed)
+- New Upcoming Event Mission (Keeping all details limited to test in game communication)
+Tonight's build has further Hathor Location Art/Animation/Audio Polish as well as Balance Changes and a full replacement of enemies at the Hathor ground location. We have worked on numerous flow blocking issues for the Hathor locations, Events, and Collector Missions as well as temporarily reduced the Collector mission requirements to about 10% of what will be normally needed.
+This event will utilize 2 new locations in the PU; Hathor Platform Alignment Facilities and Hathor Orbital Laser Platform.
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback
+- Additional Missions updated for Meshing
+- VOLT Weapons
+## Known Issues
+- Critical: PU - Item Recovery T0 - Upon being incapacitated the UI is showing a Fee + Tax % not meant for T0 (visual only and will not take aUEC)
+- Critical: PU - Personal Inventory - Item Recovery - Players respawn without their loadout when holding bound items upon death
+- Critical: PU - Personal Inventory - Item Recovery - User will lose their previously equipped loadout upon leaving Klescher Rehabilitation Facility
+- Critical: PU - Transit - Entity carriage is stuck in transit to a gateway, but never arrives which renders the gateway unusable
+- Critical: Mission Refactor - Comm Array Repair - Contract in mobiGlas becomes hidden when another player enters mission location
+- Critical: Mission Refactor - PVP Missions dont work
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Locations - Personal Hangars - Actor - If player ungracefully exits while in hangar, hangar stows and does not unstow upon recovery
+- High: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel
+- High: PU - Pyro - Jump Point - Failing a Jump point will displace the player far away from the gateway station
+- PU - Stanton - Mission Refactor - Wikelo Collection - Turning in additional items results in the items disappearing and additional items in the freight elevator
+- PU - ReadyGrip Tractor Module - Locations - Shopping / Kiosks - Vehicle Tractor Beams / Vehicle Components - ReadyGrip Tractor Module is listed at 0 aUEC at shops and can't be purchased
+- PU - Missions / Locations - Player in control bunker killed when OLP laser fired
+## Features & Gameplay
+- Locations
+- Further updates to stop entities falling through outpost surfaces
+- AI
+- FPS AI Navigation Pass for Hathor Facilities and Space Stations
+- Further Wikelo Animation and Collector Location Polish
+- Gameplay
+Updated loot container contents around the PU
+- Ships and Vehicles
+- Modified several ships to behave as if the turrets are slaved by default
+Reclaimer = 2x front side turret
+Carrack = Top remote turret
+Valkyrie = Wing Guns
+Raft = Remote Turret
+Starlifter = Chin Turret
+- Further Landing Gear re-tuning for Nomad, Blade, Glaive, and Talon ships
+- Removed 300i cargo railing to allow for better cargo gameplay
+## Bug Fixes
+- Potential Fix: AMD GPUs - PU - Graphics - DX11/ Upscaling / FSR - The option to use FSR Upscaler is no longer available while using DX11 API, option still available under Vulkan (STARC-154319)
+- Potential Fix: PU - Mission Refactor - Missions / UI / mobiGlas - Stanton Mercenary KillAnimal Missions are appearing blank (STARC-133798)
+- Potential Fix: Multivehicle - PU - Vehicles / Salvage - Salvage ships are unable to scrape other ships (STARC-160603)
+- Potential Fix: PU - Multiple Locations - Transit - The carriage instantly teleports to the destination gateway on the server causing all doors to open before the carriage completes the spline on clients (STARC-158653)
+- Potential Fix: PU - Hathor - Missions / Locations - Player in control bunker killed when OLP laser fired
+- Potential Fix: PU - Stanton - NPE / Tutorial - Mission / UI - No objective markers towards elevators after retrieving tutorial ship in "Your First Flight"
+- Potential Fix: PU - Missions / mobiGlas - Stanton missions are available to accept in Pyro
+- Potential Fix: PU - Pyro - Missions - Service Beacons / UI / HUD - Mission Objectives do not appear for Medical Beacon Rescue missions on the player's Helmet HUD in Pyro
+- Potential Fix: PU - Shopping - Vehicles / Components - Multiple vehicle components are missing from in-game shops (ROC/DS mining pods, small Salvage laser)
+- Potential Fix: PU - ReadyGrip Tractor Module - Locations - Shopping / Kiosks - Vehicle Tractor Beams / Vehicle Components - ReadyGrip Tractor Module is listed at 0 aUEC at shops and can't be purchased
+- Potential Fix: AC - Racing - Check point AR marker shows " 0 " instead of checkpoint appropriate #
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 3 Server Crashes

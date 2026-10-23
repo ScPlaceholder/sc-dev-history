@@ -1,0 +1,55 @@
+## Star Citizen Patch 3.12.0j
+Alpha Patch 3.12.0j has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.12.0-PTU.6695134.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Volunteer Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-12-0j
+Testing Focus
+- Space Station Refining
+- Reputation - T1
+- Space Station Refinery Decks
+- Planetary Visual Improvements
+- Restricted Area rework
+- Lagrange Point Spacescaping updates
+- Elevator Panel Updates
+- Multi Tool Tractor Beam (purchasable in locations like Area18 Cubby Blast but shows at "placeholder" for now on the terminal)
+- Ship Entry Identification
+- Mining UI Refactor
+- Gemini A03 Sniper Rifle
+- Behring FS-9 LMG
+Known Issues
+- It's possible to have player timeout trying to login
+- Some clients are not receiving full member list in global channel
+- Player eyes are extra reflective in video.
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool.
+## Feature Updates
+Gameplay
+- Ground vehicle control changes
+Allowed non-explicit free look while look ahead is on. Added custom look ahead options for MGVs. Added separation of free look gimbal aiming in ground vehicles vs space vehicles.
+- UI Polish pass on Refinery Interface
+- Added custom rotation deadzones for Faceware head tracking and removed the old deadzone handling.
+- Updated Tobii eye tracking with new recommended default settings
+Ships and Vehicles
+- Updated the Esperia Talon to use Sukoran shield generators
+- Increased thrusters and roll speed for the Drake Herald
+- Performance improvements to Prospector thrusters for smoother flight
+- Increased thruster performance on the Terrapin for smoother flight and tweaked overheating and fuel use
+## Bug Fixes
+- Players should no longer spawn on or below planet surfaces on Hurston
+- Talon countermeasures should now work and display properly
+- Fixed an issue that was sometimes causing the Refinery UI to become inoperable
+- Fixed an issue that was sometimes causing the sun to be visible through planet terrain
+- Fixed an issue that was causing ships to not be able to restock at multiple space stations
+- Visor Comm should no longer become squished
+- Hand animations when sitting in the Eclipse cockpit should no longer be broken
+- Fixed an issue that could cause the Idris to spawn more than intended when responding to heat in an area
+- Size 3 Neutron Repeaters should no longer be missing from shops in the PU
+- Chairs should no longer be missing from the office in the habitation area of the MSR
+## Technical
+- Fixed 5 Client crashes
+- Fixed 8 Server crashes

@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.13.0s
+Alpha Patch 3.13.0s has been released to the PTU and is now available to test! Patch should now show: VERSION 3.13.0-PTU.7319707.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Cave Entrances
+- FPS Cave Missions
+- Ship to Ship Docking
+- Signed Distance Fields (SDF) Shield Tech
+- Reputation UI
+- New Quantum Sensitive and Timed Delivery Missions
+- Pushables T0
+- Mounted Guns
+- Force Reactions - Staggers
+- Cyclone MT
+- Ship Naming
+Known Issues
+- Client may crash when loading a second player into a server in Arena Commander
+- Cannot refuel or rearm at New Babbage, services claim to be unavailable.
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- ASOP displays as "unable to spawn at this time" and could fine the player for spawning a ship with one already on the pad
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Wallace Klim can spawn away from his table, facing the wrong way and floating
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+- The eclipse spawns with cockpit canopy ladder open with ladder and cover enter / exit animations broken
+## Feature Updates
+Gameplay
+- Increased payout for Quantum Sensitive delivery missions around Hurston
+## Major Bug Fixes
+- Player survival estimate should no longer show stuck at zero
+- ECN missions should no longer fail when arriving at the QT beacon
+- Rented ships should no longer go missing after leaving a server and joining a new one
+- Logging back into a ship's bed should no longer result in the players being unable to move and their health at 0%
+- Hangars at Area 18 should no longer be partially covered by the no fly zone
+- Port Olisar's monitored space should correctly extend to 20 KM around the station
+- Players should no longer fall through Constellation personal lift while the Merlin is undocked
+- Automatic doors in ships should no longer stop working after interacting with beds and turrets while QT'ing
+- Reclaimer table model should now be correct
+- Best In Show 2949 Caterpillar should no longer be missing on the PTU
+## Technical
+- Fixed 1 Client crash
+- Fixed 1 Server crash

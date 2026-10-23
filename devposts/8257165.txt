@@ -1,0 +1,20 @@
+In upcoming PTU builds we will be making the following medical bed changes. Changes are in bold, with some dev comments provided to explain our thoughts and any additional context.
+Amount of MedGel contained within a single canister increased from 100 to 200. The cost of a single canister remains at 100,000 aUEC.
+Respawning still consumes 100 MedGel, however due to the canister change this is now the equivalent of 50,000 aUEC.
+Our goal with the respawn cost was to price it more towards the experienced players and the feedback on this cost has been a mixed bag. To make it more accessible, whilst still providing a decent drain on aUEC over time, the decision was made to reduce the price.
+Healing tiered injuries is now different MedGel costs, rather than a flat amount for any and all injuries.
+Healing a T3 injury will consume 5 MedGel, the equivalent of 2,500 aUEC.
+Healing a T2 injury will consume 10 MedGel, the equivalent of 5,000 aUEC.
+Healing a T1 injury will consume 20 MedGel, the equivalent of 10,000 aUEC.
+The aim of the flat healing cost was to try and keep it very simple where 1 canister = 1 respawn or 2 heals, being mindful that this would be easier to mentally keep track of how much MedGel is remaining if the ship was being operated by a team with members out in the field.
+The injury costs were balanced towards a worse case scenario of having a T1 injury.
+However the overwhelming feedback was this was too much and that the simplicity was not a concern, so we're happy to split them up and make them cheaper. Same as when it was a flat cost, if you have multiple injuries of the same tier, e.g. three T2 injuries then the cost is just 10 MedGel.
+Tier 3 beds have had their capacity increased from 100 to 200.
+Tier 2 beds have had their capacity increased from 200 to 400.
+Tier 1 beds have had their capacity increased from 400 to 600.
+We want the bed capacity to be divisible by the canister amount, which is the main driving force behind this change. However we also recognize that for T3 beds its a nice QoL update to be able to heal a few times and still have 1 respawn in reserve before having to top up again.
+Respawn distance of T1 beds is increased from 150,000,000 meters to 750,000,000,000 meters, enough to cover most star systems.
+The dev (..maybe me) who gave the numbers to team putting together the website design brief referenced the wrong cell in excel when doing an AU to meters conversion and this is now fixing it.
+Medical canisters will be added to LTP.
+A minor note on this, we know there are some of these canisters scattered around hospitals on live. Those will be removed when 4.3.1 goes live, any canisters collected now on 4.3 will not persist into 4.3.1
+Thanks for all the feedback and ideas surrounding this topic, it's much appreciated!

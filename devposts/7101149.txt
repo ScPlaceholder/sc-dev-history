@@ -1,0 +1,57 @@
+Due to large amounts of server crashes after the publish we have closed this build for tonight and plan on working on a fix for a Friday release
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9283212.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 2
+Server Info: PTU Channel - US/EU
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+## Known Issues
+- PU - Stanton - Orison - Locations / Shopping - Physical Shopping - Quick buying items on display at the Orison Vision Center ends in transaction error about invalid Player Inventory
+- PU - Stanton - GrimHEX - Locations - Transit - Hangar Elevators - Hangar Instance elevators can be called and arrive at the current floor but the doors do not open - 100% Repro
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (High Chance)
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- PU/AC - Character - IFCS/camera - Female character does not respect g-force induced head movement game option settings
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Features & Gameplay
+Gameplay
+- Tractor Beam Use Adjustments
+Tractor Beam use on the multi-tool has had its cargo mass balanced to restrict use to cargo sizes under 32 SCU (multi-tool can no-longer move 32 SCU crates) and to reduce usable distance. Both handheld tractor beams have had their movement speeds reduced.
+- Item Bank UI Changes
+Based on feedback we determined the Storage Access flow was not providing the results we wanted. We've thus changed it to open a filtered view of the Warehouse inventory to only show FPS gear, like the Storage Access kiosk did. Search is missing in that view and will be added in a future patch. Fortunately, the Storage Access screen shares a lot of functionality with the Freight Elevator Kiosk, so it wasn't throw-away work.
+- Cargo Hauling Mission Changes
+Greatly Increased Cargo Hauling Mission Rewards. Allowed players to retrieve cargo for shared missions where they aren't the original mission owner. Set Hauling Intro missions to not be shareable.
+Ships and Vehicles
+- Removed SDFs and Shields from Spindles and Attached Cargo of the Hull-C
+Core Tech
+- Made Further Ship Debris Collision Physics Performance Improvements
+- Entity Count Performance Polish for Hurston
+## Bug Fixes
+- Fixed - PU - Stanton - Mission Content / Cargo / Game Code - Only one objective is able to be completed at a time (STARC-121508)
+- Fixed - PU - Cargo / Hull-C - When stationary in the cargo transfer area the cargo transfer does not happen (STARC-95643)
+- Fixed - PU - Physics / Locations - Instanced Hangars - When players leave their hangar through an approved gateway, the server may not recognize they have transitioned from their hangar zone, causing global loss of physics and interior zones (STARC-120365)
+- Fixed - PU - Locations - Personal Hangars - Unable to retrieve any ships at the location after retrieving a previously impounded ship, exiting to menu during retrieval or storing process, or taking elevator to spaceport during retrieval (STARC-93687)
+- Fixed - PU - Stanton - Locations - Klescher Rehabilitation Facility - Mining / Ore Deposit / Kiosk - Attempting to sell gemstones to the Ore Deposit Terminal will return 'Transaction Failed'
+- Fixed - PU - Locations - Instanced Hangars / ATC / Fleet Manager - ASOP times out retrieving vehicle following a failed retrieval cycle due to player walking on the descending landing platform during vehicle retrieval
+- Fixed - PU - Missions / UI - mobiGlas - Contract Manager - Title headers when selecting a contract can be cut off/incomplete when selecting a contract for the first time after opening your mobiGlas
+- Fixed issue with mission cargo not being recognized as mission related after a client crash/recover
+- Fixed - PU - Stanton - Area18 - Locations / Hangar Instances - Missions / Service Beacon - Medical / Respawn / Actor - Players can complete the Medical Rescue Beacon when injecting dead player's body with a MedPen or ParaMed gun before it despawns
+## Technical
+- Fixed 11 Server Crashes

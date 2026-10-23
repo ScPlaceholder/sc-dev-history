@@ -1,0 +1,3 @@
+Currently only graphics devs are using Vulkan. The next stage is to roll this out to all S42 devs. Star Citizen would then take this change on their next pull of the “main branch” of code (usually occurs before each 3.x release, but not 3.x.x releases).
+Initially Vulkan will be optional, but we’ll be cutting off DirectX support as soon as we possibly can.
+I can’t accurately predict dates for each of these stages, especially as the final testing mostly involves finding and fixing unexpected GPU crashes across a range of hardware until there are none left! But we also want to ensure GPU performance is at parity or better for most common hardware, which requires a bit more work than with DirectX. CPU performance is generally expected to be better on all hardware.

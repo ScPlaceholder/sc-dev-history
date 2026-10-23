@@ -1,0 +1,10 @@
+Hey man, sorry for the late reply.
+1. Camera
+a) According to Faceware the best resolution for tracking is 640 x 480. We have not seen big performance impacts using other resolutions. However some cameras only allow 60 fps on higher resolutions which is why we are offering these.
+b) A higher FPS on the camera should yield better tracking results ... however it will also increase the CPU print. Facial tracking is effectively an image analysis which never comes cheap. That means, double the fps, double the CPU impact. If that is okay to do depends on your CPU speed and the number of cores.
+c) already replied above
+d) I don't really know what the Faceware code internally does. But as stated above the main contributor for the tracking quality is the FPS setting. The facial tracking code won't be scaling down the FPS, but your camera might, e.g. when an auto-exposure feature is activated.
+2. and 3. I cannot really reply to as this is also Faceware's territory. In terms of what camera you should prefer I cannot recommend anything specific but I'd look out for the following specs:
+- Should supports 60 fps in 640 x 480 x 60 fps in MJPEG colour space
+- Should have drivers that allow turning off auto exposure features (and other stuff that decrease the frame rate)
+On the last comment: I have some more features in the pipeline for Faceware head tracking, e.g. custom sensitivity curves that should help with the shakyness. No ETA on that though. :slightly_smiling_face:

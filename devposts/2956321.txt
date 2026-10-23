@@ -1,0 +1,10 @@
+Okay slight change of plans, the solution we've worked on yesterday night and today is this:
+- We are adding a new binding called "Lock Rotation" to the flight controls and default bind it to rshift
+- The binding will suppress any rotation inputs you are commanding to the ship
+- The binding will reset all rotation input axes but keeps the VJoy / manual gimbal reticle intact
+- The binding is controller agnostic (means it also applies and can be bound to sticks and gamepads)
+- That also means the default binding for "relative mouse mode" is removed again (so you have to bind it yourself)
+That should give you almost the same experience as before. Not sure when this change goes in, it is still in review and I do not know the cutoff time for the next build. I will post the CL once it is committed.
+EDIT: CL is 5069377
+EDIT2: Deploying the changes might take a day longer due to some branching problems I came across.
+EDIT3: The changes will NOT be in the next build but in the one after that.

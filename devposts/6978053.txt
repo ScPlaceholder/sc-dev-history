@@ -1,0 +1,70 @@
+## Star Citizen Alpha Patch 3.23.1a
+Star Citizen Alpha 3.23.1a has been released onto the LIVE Environment!
+Launcher should now show: VERSION 3.23.1-LIVE.9204897
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Crash Recovery: Enabled
+Starting aUEC: 20,000
+## Known Issues
+- PU - Locations / Vehicles / VMS - Options for repair, refuel and restock are unavailable throughout PU
+- PU - Actor - Interaction - Characters / Game Code / Ships / Vehicles - Placing Items on certain objects causes the Player to back away, place the item on the floor, then the item returns to their hands
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP Terminals fade to black when accessed after delivering a vehicle
+- PU - Actor - Inventory - Player is able to get in a state where items in inventory become inaccessible
+- Multivehicle - PU - Vehicles - When docking or retrieving a ship to a docking port at a station, the docking arm will not extend
+- Stanton - Lorville - NPE - Missions - Tutorial spawns food and drink items in another room
+- PU - Prison/Klescher - Escape route- Klescher Laser mines will detonate even when prone under
+- PU - Stanton - Salvage - Mission Content / Game Code - Destroying the target does not fail the mission
+- PU - Grim Hex - Locations / Law & Criminality / AI - Grim Hex turrets and guards will shoot at players with a crimestat
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - Stanton - Distribution Center (DC) - Locations / Art / Design - Players are unable to use ledge grabs to climb out of maintenance hatches placed on the ground
+- Robert Space Industries Scorpius Antares - PU - Vehicles/EMP - unable to activate EMP
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - Actor / Armor - Equipping an additional helmet on a character while the hip attachment point is occupied will result in asphyxiation
+- PU - Locations - Grim Hex / New Babbage - Physical Shopping - UI / AR Card / Consumables - Tigersclaws on shelf are missing purchase cards
+## Features and Gameplay
+Gameplay
+- Missile Adjustments
+Increased missile lock min/max ranges. Reduced missile speeds. Balanced missile fuel tank amounts.
+Reduced Salvage Coverup Rewards
+Ships & Vehicles
+- Hornet Tuning Updates
+F7a Hornet Mk2 Lateral strafe capabilities have been fixed and should now be in line with tuning expectations. F7CR upstrafing capacity adjustment. Lowered boost fuel use of the entire Anvil Hornet series.
+- Increased Sabre Firebird missile count from 12 -> 24
+- Sabre Firebird ARMR has been modified to reduce all emissions by 40%
+- Updated Retaliator to have Size 3 guns on all turrets and updated turret constraints
+Core Tech
+- Removed vehicle entrance markers when in a different zone or too far away
+- Made Further Client Performance Optimizations
+- Vehicle Hit Damage Network Performance Optimizations
+- Full Ship Weapon Audio Mixing Pass
+## Bug Fixes
+- Fixed an issue causing clients to experience a generic 30000 error and disconnect when loading into the PU
+- Elevators at the Pyro Jump Point Station should now arrive when called
+- Fixed an issue causing carriable objects to fall through many floors around the PU
+- Fixed and issue causing to not hit their target when the target is rotating
+- Fixed AI's reacting to non-hostile players firing causing them to not get an attention target
+- Ship shield VFX should now play correctly
+- Oxygen should no longer deplete excessively fast whilst in Klescher's Work Mines or Prison Escape
+- Fixed an issue causing many Exit/Get up prompts to be missing from beds
+- Destroying the illegal probes during the Halt illegal Survalance missions should no longer cause players to get a crimestat
+- Fixed precision targeting gimbal mode active without being in precision mode
+- Asphyxiation issues should no longer be present in different locations of the AEGIS Retaliator
+- GRIN Pyro Multi-Tool's Tractor beam attachment should no longer force weapon sensitivity depending on lifted weight
+- The Sabre Raven base paint will no longer replace the paint of the Firebird almost entirely regardless of paint applied
+- The ANVIL Ballista gunner seat should now have proper interaction points
+- The Crusader Spirit Olympia Paint should no longer be missing
+- Fixed missing Jumptown locations
+- Fixed Nox missing left and right thrusters
+- Kopion Horn and Marok Gem should now be able to be sold
+- Origin 400i Interior elevator's panel should no longer disappear
+- The F8C Lightning should no longer get a hazy cockpit view while flying through space clouds
+- Fixed various visarea issues around the Aegis Hammerhead
+- AC - Fixed issue that caused squads to get separated into different teams in Online matches
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed a Main Thread Deadlock
+- Fixed an OOM - Out of system memory Client Crash

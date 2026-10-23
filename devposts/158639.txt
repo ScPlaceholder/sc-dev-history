@@ -1,0 +1,22 @@
+Greetings Citizens!
+This update to the patcher focuses on quality of life improvements for those not able to download the game via the normal method and also features additional music from our audio team.
+## Alternative download method:
+The alternate HTTP download method has gone through a stabilization pass and had numerous bug fixes. For those who use this method to download the game, you should see a consistent and improved performance. For those who use the normal download but have issues, you can now switch to the alternate method with a setting in the options menu (previously accessible via a config file.)
+## Music Improvements:
+The music system has been upgraded to generically shuffle valid .ogg, .mp3 and .wav in the Patcher/ui/audio folder into a music playlist on launcher start.
+Luke Hatton from our UK audio department helped get the ball rolling on getting new music for the Patcher. Eight audio tracks have been selected by the audio team, led by Lee Banyard, to be included with the launcher, composed by Darren Lambourne, Matteo Cerquone, Pedro Macedo Camacho, and Ross Tregenza.
+## Changes:
+- Optimized HTTP download settings for general case, and exposed some of these settings in the _HTTPSettings config file.
+- You are able to adjust the number of threads used to download the builds (1 thread per file)
+- You are able to adjust the size of the file chunks pulled from the HTTP source
+- Added manual bandwidth throttle for primary download method. (Manual MB/KB numerical input in the options menu.)
+- Added new music, and auto shuffle system.
+- Added a button to switch download methods in the UI (No longer changed via config file.)
+- Fixed an issue that would not save a user's preference to mute the patcher's music.
+- Fixed an issue that prevented proper file verification using the HTTP download method.
+- Fixed an issue that caused the HTTP download method to not pull all files in some instances.
+- Fixed an issue where the Update/Install button would be left on the screen while downloading in some cases.
+- Fixed an issue that caused error 400 responses during downloads.
+- Removed unused/excess UI asset to reduce patcher size. (Making room for that sweet new music!)
+[Update]
+- Fixed an issue that caused "No Disk in Drive" to pop up on Patcher start has been resolved. Credit to P2063 and seesiedler for reporting the issue and helping test the fix.

@@ -1,0 +1,51 @@
+## We hope you’re all enjoying the new additions that Alpha 3.10 brings to the ‘verse. This month’s report touches on a few of the final flourishes made to the latest patch, but most work done throughout July was for content not-yet implemented. Read on for the details on what you can expect to see in quarter three and beyond!
+## AI (Combat)
+The team continued to refine dodge-action triggering, which is currently used during combat when the player is aiming or shooting toward an NPC. Triggering this action requires careful evaluation of different conditions, such as the space within the navigation mesh needed to play the animation or the time spent aiming.
+All character types will benefit from ongoing improvements to the AI weapon component. This work exposed all fire modes to the various behaviors, with the team enabling the AI to switch between fire modes the same way the player does.
+The team are currently adding ammo box refill functionality for NPCs so that, in combat, any with low or no ammunition can retreat to an ammo box to refill. They’re also implementing specific urgent enter/exit/rummage animations and are improving the looting mechanism that allows players and NPCs to pick ammunition and store it on their loadouts.
+A few bugs were fixed throughout the month too, including one involving raycasts being wrongly validated by the physics engine. Improvements were also made to the animations when NPCs move into and out of cover, and an unwanted behavior was removed that caused NPCs to blind-fire from cover when the player wasn’t there.
+## AI (Ships)
+Ship AI made several improvements to the Tactical Query System, including optimizing the way it handles queries and structures data. They also improved and extended how different keywords are used. For example, in the target selection queries, they added the ‘HasTag’ property to select entities specifically tagged with a role.
+They also extended the way weights are defined so they can configure both the actual weight of a property and the value it must have for weight calculation. A ‘ShipStateMonitorComponent’ was implemented to allow multiple ship states to be easily monitored and cached. This will allow multiple systems to use the data to drive logic.
+## AI (Social)
+The bartender has been mentioned in a lot in reports throughout the year as it has been used to test and develop general functionalities that will be used by all vendors in the PU.
+The first pass of a feature that connects the different bars to the shop services was also implemented. This will enable the vendor to validate the price of items in relation to the player’s available cash and complete a transaction once goods are delivered.
+Away from scenarios, progress was made on the patrol path functionality that allows instant path calculation for short distances. This significantly reduces delays when triggering specific cutscenes or animations for a much smoother experience. Support was also finished for the speed overrides on setups on the edges of paths.
+Bug-wise, the team fixed several problems that were causing NPCs to stand on top of usables. The majority of these were a direct consequence of object container streaming preventing characters from reattaching to usables. For example, one was due to the usable code wrongly overriding the deferred attachment request by multiple characters, while another was a wrong navigation mesh validation when streaming back in where no validation was required.
+## AI (General)
+For global AI, the team improved the functionality of the LookComponent. First, they converted the internal look request queue to a more sophisticated priority-based queue. Each request is now associated with specific semantics that pile on top of each other based on a predefined priority. They currently have the following semantic order, from the lowest to highest priority:
+- Look ahead: When moving on a path, an NPC might try to look ahead based on the path it’s following.
+- Procedural object discovery: When moving around, interesting things might be noticed by the NPC that can then be looked at.
+- Behavior-driven requests: The behavior can sometimes explicitly request the NPC look at something.
+- Trackview: During cutscenes, the designers can override targets based on the scene itself.
+- Synchronization: In a PU environment, the networked target is used by the NPCs on the clients.
+The team also made several optimizations to collision avoidance and subsumption. The component code was adjusted to better support the updated parallelization and server meshing too.
+## Animation
+Last month, the Animation Team worked on force reactions, such as knockbacks, knockdowns, twitches, and flinches. They completed pre-visual work on zero-g push/pull, further developed grenade and object throwing, and undertook tests for high-gravity moves. Work continued on some new weapons too.
+The bartender and bar patrons received attention (specifically bug fixing), as did the useables for flight hangars, cryotanks, and seated consoles. Work on the ‘chowline’ usable began too, which manages NPCs queueing for food.
+They also continued to work through the mo-cap backlog, comms calls, and the review and selection pipelines. Time was also dedicated to developing COVID-19 safety plans for when mo-cap shoots can begin again.
+## Art (Environment)
+“Last month was exciting for the Organics Team. We’ve been waiting for a long time for some of the last remaining features of the organics shader and the planet editor to be finished and, this month, a big update came in: the planet editor now features brushes!” – The Environment Art Team
+A brush is essentially a collection of ingredients that can be painted onto the planet. In the past, Environment Art painted color, objects, and ground textures separately. With this update, the team can now assign all of these to one brush and paint them at the same time onto a surface. And helpfully, everything can be changed on the fly.
+The organic shader also received huge improvements in terms of terrain asset integration; the team can now tell each object to pick up either the color of the bedrock or the terrain. This can be done for the whole asset or selectively for each material layered onto an object.
+Production wrapped up on Pyro III and Pyro IV, and the whitebox assets for Pyro VI were further developed. Pyro V is currently on hold due to it requiring gas giant tech, which is in R&D alongside Crusader. The same goes for the touch-bending of vegetation assets.
+## Art (Ships)
+In the US, the Art Team moved the Crusader Mercury to the final art stage, which involves iterating on feedback, adding textures, and adding LODs. Alongside this, greybox work will continue to hookup animations, implement interactions, set up internal and external doors, and set up RTT/comms calls. Additionally, Design will optimize flight, cameras, and visuals.
+While awaiting the Mercury, the tech artists worked on several Maya rigs for pilot and operator seats. This work will create a template used by players, AI, and cinematics.
+The Origin 100i series is nearing completion, with technical exterior work and the holographic cockpit button currently in progress. Work also continued on one soon-to-be-unveiled ship. Another that won’t be seen for a while is currently in the greybox stage.
+## Art (Weapons)
+Last month, work concluded on the Behring GP-33 grenade launcher, which required tweaks to its ammunition and rig. Weapon Art also finalized the Behring BR2 shotgun and began roughing out the Gemini A03 sniper rifle.
+For ship weapons, the Behring S7 laser repeater was completed and work began on some new turrets. A pass was made on the Behring S12 torpedo to include a destroyed variant.
+The team’s graphic designer spent time finalizing the reticle of the LBCO sniper rifle and completed his tasks on the LBCO ammo counters.
+## Audio
+The Audio Team spent the month supporting gameplay features, items, and locations coming in Alpha 3.11. This included the improved throw mechanics, Behring GP-33 grenade launcher, and cargo deck, which received new music, walla (crowd sounds), and SFX. They also began adding music to locations without dedicated soundtracks, such as caves, and completed the audio reworks of the K&W Demeco LMG and Arclight pistol.
+The team looked into new methods of adding dialogue to missions to give more variation:
+“This is very early, so don’t expect to see any updates in near releases, but we have heard the feedback and are aware of the repetitiveness ourselves!” – The Audio Team
+The also looked into implementing the new version of the Wwise software to give the designers more tools to use when developing.
+## Backend Services
+Backend Services worked diligently throughout July to make improvements to existing technology that will increase the number of concurrent players and provide a higher quality experience in-game and when logging in. They also finished major refactors to the variable service and item caching system that will have the same benefits. These new services will be coming in future releases.
+## Characters
+Last month’s character development focused mainly on supporting upcoming events and future releases. The team worked on several helmets and armors that will be revealed in the coming months.
+Creature development continued and is now requiring the input of other departments. Creatures require AI and other support, so the team is working to secure the engineering manpower needed for a dedicated Creature Team.
+Other work was in pursuit of several upcoming locations and landing zones, including the cargo decks and Orison; any time a character shows up in a render, in-game advert, or behind a counter, the team has to support it.
+## WE’LL SEE YOU NEXT MONTH…

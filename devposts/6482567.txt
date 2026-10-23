@@ -1,0 +1,77 @@
+## Star Citizen Patch 3.22.0
+Alpha Patch 3.22.0 has been released to the EPTU, and is now available to test! Patch should now show: VERSION 3.22.0-EPTU.8989482.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Waves
+Database Reset: Yes
+Technical: All Server Regions - EPTU Channel
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- Stability Testing
+- Structural Salvage
+- Additional Derelict Settlements
+- Inventory: Openable Cargo Containers
+- Procedural FPS Recoil / FPS Weapon Balance
+- Player Hair Update
+- Mineables Balance
+- Arena Commander Multicrew
+Known Issues
+- PU  - Stanton - Locations / ATC / Vehicles - ASOP Terminals - Multiple Locations - After a player destroys their ship in a hangar, it is possible  any further ships retrieved and delivered will end up destroyed when  spawned from the ASOPs
+- PU - Actor / UI - Character spawned headless with EVA crosshair always on screen
+- Multivehicle - PU - Ships / Vehicles / Weapons - Missiles, Bombs, and Torpedo's disappear immediately after traveling a short distance from the player (100% repo)
+- PU - Stanton - Underground Facility / UGF - AI / FPS - AI enemies slow to respond to player location and actions (90% repo)
+- PU - Stanton - Underground Facility / UGF - AI - AI enemies get stuck in a walking animation
+- PU - Missions / AI - Using the middle mouse button to incapacitate hostile AI can cause UGF mission to be stuck
+- Stanton - Tractor Beam / Physics / Cargo - Sometimes when utilizing the tractor beam to move cargo within a ship, the cargo will snap outside of the ship (33% repo)
+- Stanton - Multiship - When Quantum Travelling the player can be left stranded in space and their ship will disappear (10% repo)
+- Stanton - Spawn Closet - Mission Content / AI - Enemy AI can spawn out of bounds of their intended spawn points (66% repo)
+- Stanton - Mission Feature - UGF missions - Remaining hostiles AI not spawning in UGF bunker mission (4% repo)
+- Pu - Vehicles - Repair services - Unable to repair vehicles that have been soft deathed (100% repo)
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend (44% repo)
+- PU - Stanton - ASOP / Fleet Manager - ATC - When retrieving a ship it may spawn outside the hangar it is assigned to (50% repo)
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout and equipped items after dying in the armistice zone (100% repo)
+- PU - Stanton - Multiple Locations - Core Mechanics / Respawn - Player spawns in Hospitals after loading into the PU a second time
+- PU - Actor / Inventory - Player can respawn without backpack after death in Klescher Rehabilitation (75% repo)
+- Multivehicle - PU - Vehicles / UI - Vehicle HUD - When the missiles charge the UI does not update to reflect when they are ready to be fired
+- PU - Stanton - Actor - Player Spawning - Multiple Locations - When multiple players attempt to log in to the same location at the same time they may be assigned the same bed; those that spawn in after the initial player will be stuck
+- Origin 890 Jump - PU - Vehicles - Fleet Manager - When a vehicle is landed in the hangar of the 890J, the 890J can no longer stow correctly via ASOP/Fleet Manager or on logout
+- PU - Tractor Beam / Physics - When multiple players interact with the same cargo container using a Tractor Beam, those players' tractor beams may no longer work correctly on that container
+- Multivehicle - PU/AC - Vehicles / Weapons / Ship Components - All energy-based weapons state "0/0" in Ammo count on naturally spawned ships and cannot fire
+- Multivehicle - Vehicles / UI - Inner Thought - Player cannot exit the ship by using the "Exit Seat" option in PIT
+## Feature Updates
+Locations
+- Updated MicroTech Jumptown location with Denser Forests
+- Derelict Settlement Loot and Shops Polish Pass
+Gameplay
+- Further Structural Salvage VFX Polish
+- Updated Minable Size Scaling Balance Based on Community Feedback
+Ships and Vehicles
+- Added New Vehicles to PU Shops: CRUS Spirit A1, DRAK Cutter Scout, MIRAI Furys, and MISC Hull C
+- Gravlev vehicles are now considered ground vehicles when spawning at ASOP Terminals
+Weapons and Items
+- Reduced Damage and Speed of the Ksar Ballistic Sniper Rifle Projectile
+- Reduced LH86 Pistol Damage
+Core Tech
+- Further Front End UI Polish Pass
+- Further AI On-Foot Navigation Performance Improvements
+## Bug Fixes
+- Further Inclusions and fixes for Derelict Settlements to remove replaceme balls
+- Fixed - PU - Shopping Kiosk - "Invalid Sell Price" error occurs while attempting to sell many items
+- Fixed - Multi-tool tractor beam stops working in ship in hangar
+- Fixed - Stanton - Openable Cargo / Personal Inventory / Locations - Self Storage Containers (SSCs) can be dropped in hangars irregularly
+- Fixed - Stanton - UI / Personal Inventory / Art - When scrolling through the player's local inventory, items will turn black and lose detail
+- Fixed - Multivehicle - PU - Vehicles / Physics - Vehicles with revised ground vehicle physics suffer excessive vibration at low speeds or when stopped
+- Fixed - PU - Stanton - Derelict Settlements - Art / Locations - The textures for the support beams are broken and emitting a bright white light at multiple settlements
+- Fixed - Stanton - Personal Inventory / External Inventory - UI / Utility / Containers - Opening containers in a ship will sometimes result into the PI window disappearing
+- Fixed - PU - Stanton - Retrieve Consignment - Mission Content - There are no corpses present
+- Construction Materials should no longer be able to be sold at Ore sales consoles
+- Fixed missing landing services at HUR-L4
+- Fixed an issue causing On-Foot AI to get stuck while using ladders
+- Fixed - FPS - Light/Medium Arms have heavy damage resist
+- Fixed - PU / Star Marine - Actor / Female Model - FPS / Weapons - Actor Damage - Shooting the female character above the chest cavity causes an instant downed state
+- Fixed - AC Frontend - Game Mode loading screens are not displaying
+- AC - Fixed issue where you could spawn into a Squadmates ship even if they're in a different team
+## Technical
+- Fixed 1 Client Crash
+- Fixed 4 Server Crashes

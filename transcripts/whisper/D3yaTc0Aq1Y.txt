@@ -1,0 +1,142 @@
+# Inside Star Citizen | Engineering Talkin' with Thorsten
+# https://www.youtube.com/watch?v=D3yaTc0Aq1Y
+[    0.1] So we've been talking about engineering in one way or another for several years now.
+[    5.1] Whether that's ISE...
+[    6.1] I am really looking forward to see what you all will be doing with it.
+[   12.1] Or SCL...
+[   13.1] Is engineered this absolutely enormous behemoth thing that's going to ruin everybody's experience?
+[   20.1] If you're into that, yes.
+[   23.1] Or even two different CitizenCon presentations.
+[   26.1] We already talked about it several times.
+[   28.1] But wait, there's one more thing.
+[   32.1] When I was dressed up as a late night television host vampire and dumping sand throughout the LA office without permission.
+[   39.1] Don't ever do this again!
+[   42.1] They're begging me not to continue!
+[   44.1] But we will show them!
+[   46.1] Count Disco does not know how to listen!
+[   48.1] Yes, it was a different time.
+[   50.1] But over the years, the systems have continued to evolve.
+[   53.1] And now, after seven videos, several arena commander and tech preview tests, and the current PTU cycle underway now.
+[   61.1] We've never been closer to bringing the next evolution of spaceflight to life ahead of our intended release later this month.
+[   70.1] So rather than go through every detail once again of what you're already experiencing on the PTU now.
+[   76.1] I sat down with Torsen for this short discussion of what I'm calling...
+[   80.1] Inside Star Citizen, talking with Torsen.
+[   85.1] The eighth show about engineering before it's been released.
+[   90.1] And that's why we didn't do another CitizenCon thing this year.
+[   95.1] Alright, we can probably shorten it to just talking with Torsen.
+[   98.1] So, right off the bat, it's been a year since we did that last ISC on engineering.
+[  108.0] What's the same? What's changed?
+[  110.0] We didn't change a lot. What did change is the main direction of the feature itself.
+[  116.0] Just the main direction.
+[  118.0] Just the main direction.
+[  119.0] Technically, everything that you had in the arena commander, everything that we talked about still stands true.
+[  124.0] So everything that we discussed, all the intentions we had still stands true.
+[  128.0] We had before the direction of things have to happen.
+[  132.0] You have to be on your toes. You have to be very reactive to everything that is happening.
+[  136.0] We noticed that this is not particularly fun.
+[  140.0] Just giving people something to do is not enough.
+[  143.0] Giving people something to do can be really fun, but it pulls too much attention to these rather than of the gameplay that you should experience.
+[  152.0] So the direction that we got was, and we are now acting on, is that engineering gameplay is there to extend the lifetime of the ships,
+[  163.9] rather than making your life miserable on a ship.
+[  167.9] It's a nice change.
+[  169.9] I think it might be worth it, yes.
+[  172.9] Let's refresh ourselves on the basics of how it works for people who haven't gone back and watched the seven previous videos.
+[  179.9] The first thing is preemptive, or preventive stuff. The stuff that happens before things happen.
+[  186.9] Tell me how you use engineering to prepare your ship.
+[  189.9] One of the main things right now that you have to do, or you should do, is prepare for travels.
+[  194.9] So you should buy fuses ahead of time, so that you can replace them once they break on the ship.
+[  201.9] You should buy enough filled arm-seekers so that you are able to repair the components on-site.
+[  208.9] So this is the prep work, the first, hopefully, five minutes, if we can make something work.
+[  216.9] He's trying to get vendors added to the spaceports, so you know how to run around.
+[  221.9] We'll see if we end up with that or not. I'll say it, you don't have to say it. Continue.
+[  225.9] For bigger ships that allow components to be swapped out in fight or in your travels, you can also prepare by buying components and then storing them on the ship so that you can replace them.
+[  239.9] So first part of engineering resource network is preparation.
+[  245.5] In the single-seat ships, the fighters and stuff, does this still affect their day-to-day life?
+[  251.5] No. So yes, but no. So engineering gameplay affects everything.
+[  257.5] What engineering gameplay does there is that it extends the lifetime.
+[  261.5] So imagine you are on your single-seater fighter, you're not doing too well, and you barely survive.
+[  271.3] Now you can use the MFD to repair the components that allow you to travel back home.
+[  277.3] So this is the extension of the lifetime of the ship that you invested time in.
+[  281.3] And so then for ships with interiors up to the bigger multi-crew ships, the next big change with engineering is a damage to your components.
+[  293.3] So on the ships with interior, you will have access to the components.
+[  299.3] By having access to the components, there's the chance for you to repair on-site or repair while they are taking damage.
+[  307.3] Normally you would die in the game that is like pre-at 4.4, but with engineering gameplay, you would be able then to point the repair gun at the component,
+[  319.3] bring it back from zero health to full health, so you get your power plant back, or you extinguish the fire, repair afterwards, and then you're ready to go.
+[  329.3] And that scales now with the amount of people that you can fit on your ship.
+[  334.3] So yes, the next chapter of engineering is repairing and exchanging of components and potentially exchanging fuses.
+[  342.3] And it's not just managing the components, it's managing the relays. How do the relays work?
+[  347.3] They changed a little. So if you recall in the early tech preview and even the early arena commander mode, relays were like the weak point of any ship.
+[  360.3] We thought back in the day that this is a really, really good idea, and to a degree it would be, but with ships where some relays are placed in a very accessible position for getting shot at,
+[  374.3] at some point there will be the expert players that will just target those and you will be rendered useless within a blink of an eye, which disagrees with the statement of we have to bump up the TTK here.
+[  386.3] So relays and fuses are still relevant, but if a relay does not hold any fuses anymore, basically the ship cannot support the full amount of power that the power plant would allow you to have.
+[  400.3] Makes sense to repair or restock the fuses.
+[  403.3] But it's not going to stop your coal. It's not going to prevent doors from opening anymore.
+[  407.3] If you don't effectively, you know, address the needs of your components, anything, it can now generate a new hazard for the interiors of spaceships. Fire.
+[  418.3] So fire can happen in several ways in our game.
+[  424.6] So one aspect is exterior induced damage to your ship that can cause fire.
+[  431.6] Components will trigger fire based on hits from bullets.
+[  437.6] So energy weapons are right now the most effective one in setting interiors on fire if they hit the components on the interior versus ballistics.
+[  446.6] They have a very small chance of igniting the components.
+[  450.6] And the next big thing is mismanagement of your ship.
+[  453.6] So if you make your ship run too hot, so if you, for example, think you don't need the full power on your coolers, that means that all the other components start to overheat.
+[  464.6] We have a system in place that basically has the auto shut off of some of the components, but sometimes that might not be enough.
+[  472.6] So the temperature rises so high that the component itself incinerates and then you have a fire due to this systemic approach.
+[  481.6] And then the third type is malfunction.
+[  484.6] These are induced by the wear and tear.
+[  486.6] So the higher the wear and tear of the component, the higher the chances is in different stages that they can trigger an ignition.
+[  492.6] You've repaired it a few times, but you haven't replaced it.
+[  495.6] Correct. Yes.
+[  496.6] And in dealing with fire, how do you deal with fire?
+[  498.6] So you have the extinguisher that we now place in every ship, which is the active counter to that.
+[  505.6] The more fire extinguisher point to the same fire, so you're much quicker.
+[  510.6] That's the most straightforward way.
+[  512.6] The next way is venting the ship.
+[  515.6] And for the release, the way that you will be able to do that is by daisy chaining doors.
+[  521.6] So what you have to do is basically open the door next to the next door so that you at some point reach a door that leads to the exterior.
+[  530.6] And vent the atmosphere.
+[  531.6] And vent the atmosphere out.
+[  532.6] Sounds like we're the second player playing gyro might back in the day.
+[  536.6] So yeah, repairing with replacement components and fuses if you have interiors.
+[  542.2] Repairing those components and replacing those fuses if they take damage and then dealing with fires.
+[  549.2] That's essentially the engineering loop that's on its way in four or five.
+[  553.2] We've recently been in tech preview testing.
+[  556.2] How's that been going?
+[  557.2] The feedback that we've received has helped us a lot and helped us also to make some points in some of the changes that we have been seeing now between the different tech previews,
+[  567.2] which is really good because it brings the gameplay to exactly what we want to have, which is extending lifetime of ships and not being an annoyance, a constant annoyance.
+[  577.2] One thing that had to come with engineering gameplay is a full rebalance.
+[  581.2] So a full rebalance of all whams, of all ship components, of basically how our character, the ship functions in the game.
+[  590.2] I think we are approaching right now a good baseline for the release.
+[  595.2] So I'm hoping that we get some more testing in because the longer we have the tech preview running, the more we see what needs still to be updated.
+[  606.2] Now at the time that this airs, because we're recording this rather early in November, we'll be on PTO with full blown testing for an intended December release, which is really exciting.
+[  618.2] Ending the year with a new star system wasn't quite enough.
+[  621.2] We want to end the year with this gameplay system.
+[  623.2] It's going to fundamentally change every spaceship in the game that we've been talking about for five years at this point.
+[  629.2] As far as every ship, we say it will affect every ship and not every ship equally at the time of this release.
+[  635.2] My understanding is there's about 80 ships at the point of 4.5 release that will have everything.
+[  642.2] There's about 30 ships in various states of conversion.
+[  647.2] Some have engineering screens but don't have physical as components.
+[  649.2] Some have physical as components but don't have engineering screens.
+[  651.2] Through all of it, you'll either be able to use engineering in one way or another.
+[  656.2] Last thing you want to say to folks, as they're testing in PTO now and they see this ahead of its intended release before the end of December.
+[  664.2] I definitely need to shout out to the people that have been sticking around with me and with everyone involved in that feature.
+[  671.2] It's a huge group but the core people that really deserve a lot of praise are Guillaume Guillermo and Scott.
+[  682.2] Those are my key personnel that without them we wouldn't be here.
+[  686.2] With that out of the way, the feature is made to stay.
+[  690.2] This is Star Citizen. This is the definition of Star Citizen.
+[  693.2] This is what we always wanted and finally we have it.
+[  696.2] We've been talking about going for the last five years.
+[  699.2] It doesn't mean though that what you see right now is set in stone.
+[  703.2] We appreciate all the feedback that we receive.
+[  706.2] We are aware that we don't deliver something that is perfect right away.
+[  711.2] We need your help as always to point out the things where we can still improve.
+[  716.2] We are not done yet with engineering gameplay.
+[  718.2] There are still things that we have on the list and we are consciously holding back those ideas right now
+[  725.2] because we think we already gave a lot and we are a bit scared of overwhelming the players a bit
+[  731.2] and now we want to observe you playing that and basically figuring out what still needs to be added
+[  738.2] or even what we need to adjust.
+[  741.2] Well, that's Torsten Lyman on engineering available on PTO right now.
+[  747.2] If you haven't jumped in and given it a try, do so.
+[  750.2] And yeah, as we head towards our December release for 4.5.
+[  755.2] Oh, and as a COTA, since we've recorded this, we've also decided to add armor into this release as well.
+[  764.1] So keep a lookout for the upcoming engineering guide that will go out with the release of 4.5 to learn more.
+[  770.1] Thanks for watching. We'll see you all again next year.

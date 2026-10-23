@@ -1,0 +1,45 @@
+## Bug Fixes
+- Players should now get a crash handler prompt if the client crashes
+- Fixed an issue causing players in a given instance to experience a response latency of up to dozens of seconds for interactions
+- Buying Pharmacy Items at Empire Health should no longer result in "Invalid Location" errors
+- Player purchased vehicle components should no longer be overwritten by stock components when claiming destroyed ship
+- Fixed an issue causing ships to hit what seems like an invisible box that kicks it in random directions when flying near another ship
+- Entry / Dismount point of the ladders should no longer clip the player through the ship's geometry (Temporarily Disables Ladder Slide)
+- There should no longer be frequent pockets of extremely low client FPS performance in LZs and ships
+- Redeemer should no longer be missing collision on its floor
+- Reclaimer rear hatch can now be opened correctly from outside/inside
+- Players should no longer asphyxiate if not wearing a helmet in Hangar 13
+- EVA changes should no longer cause distortion and artifacts in the UI
+- Large amounts of cargo sold at once should no longer cause the transaction to fail the cargo will be taken and no money will be granted
+- aUEC balances should now synchronize to players after making transactions in-game
+- Some sections of the Crusader C2 Hercules hull should no longer be exceedingly difficult/impossible to salvage
+- The bottom turret glass on the Carrack should no longer be difficult to see out of
+- Fixed the Merlin being unable to undock from Constellation
+- Fixed missing Delivery Missions being unavailable to players
+- Elevators should no longer stop bullets from doing damage when passing through the open door
+- Fixed an issue causing players to be unable to Equip/Unequip a helmet
+- Fixed an issue causing players to be unable to drop a dead body while dragging it
+- Fixed an issue where Players exiting the Pilot Seat or toggling Salvage Mode while in Gimbal Mode would cause gimbal mode to fail when they Re-Enter the Pilot
+- Fixed an issue causing ship parts to  "Duplicate" when repairing a ship with no parts
+- Player-purchased vehicle components overwritten in claimed vehicle loadout can now be sold or equipped
+- Medical Bay Bed and Screens should no longer obstruct hangars
+- BEHR P6-LR Sniper Rifle and GMNI A03 should no longer be missing from Star Marine Loadout Customizer
+- Fixed reversed text in the Pisces cockpit overhead light
+- Fixed the Optimax mining gadget not modifying resistance
+- Greycat STV speedometer should no longer be off-center within its window
+- Delivery missions should no longer spawn in more boxes than are need to be delivered
+- Players should no longer be able to craft a free multitool from the Filler Station in their salvage ships without using RMC
+- The Disable Gravity Prompt during the Failed Negotiations mission should no longer be unresponsive
+- Players should no longer suffocate when exiting the Cutter ship bed after using "lie down"
+- Fixed an issue causing some AI to walk in place
+- Players should now be able to vault / climb / mantle into the side entrances of the Valkyrie
+- Ground clutter rocks should no longer float above the ground everywhere on Wala/Magda/Ariel/Aberdeen/lyria
+- Fixed an issue causing mineable resources or harvestables to not be present in any of the Sand Caves
+- The "Frustrated with Covalex" Delivery Mission should no longer be missing half of its description in the Contract Manager
+- Arena Commander "Find Match" button should no longer be greyed out until player switches game modes
+## Technical
+- Fixed 12 Client Crashes
+- Fixed 6 Server Crashes
+- Fixed a Mainthread Deadlock
+- Backend Performance Improvements
+- Fixed an Nvidia specific client crash

@@ -1,0 +1,68 @@
+PU Monthly Report
+October 2024
+October was a busy month for all CIG staff, with patch launches, Pyro in the PTU, and (of course) CitizenCon 2954. Alongside these major events, progress on upcoming features continued, with many teams finalizing content for Alpha 4.0 and 2025. Read on for all the details.
+To note, this will be the last PU Report of the year, with November and December’s entry coming in January. We’ll see you next time!
+## AI (Content)
+Last month, the AI Content team supported the social behaviors tied to Stanton’s derelict outposts and settlements, which will be used for new mission content. As neutral players can visit these locations, NPCs need to behave ‘normally’ when not under threat or under mission conditions.
+The team also worked on tasks for Alpha 4.0, including validating social AI in various stations around Pyro. They also reviewed Stanton’s landing zones to see where improvements could be made. After additional conversations, the team is looking to capture new content to provide more dynamic conversations to both Stanton and Pyro.
+AI Director Francesco Roccucci also hosted the Brave New Worlds presentation at CitizenCon, which included bringing AI to life and how it affects combat experiences in the ‘verse.
+## AI (Features)
+October saw AI Features improving Human combat features for Alpha 4.0. For first reactions, the behavior was refactored to provide more consistent responses across a range of situations. This was thoroughly tested in the ‘test cell’ mentioned in previous reports.
+The team continued to iterate on functionality for NPCs healing downed friendlies, including changes to the actor states to ensure the animation flow continues correctly between individual and synchronized animations. A test cell was also created to ensure the medic works consistently across different setups, including from different directions around the patient’s body.
+For ammo and weapon management, the devs looked at reload functionality, including behavior for switching to a sidearm when picking up ammo or looting from bodies and then switching back.
+Improvements were also made to NPCs with rocket launchers, who now enter combat even when no cover is available and switch to their sidearm if an enemy gets too close.
+The AI Features and Audio teams partnered to implement and fix wildlines across all AI behaviors, including first reactions, tactics, and investigations.
+The team also debuted the first valakkar gameplay at CitizenCon.
+“This has been a really fun and interesting creature to work on as it is very different from anything else we have in the game so far. We’ll be sharing more details of its implementation and the challenges we’ve faced in the run-up to its release.” AI Features Team
+## AI (Tech)
+AI Tech continued to support Server Meshing, synchronizing the Subsumption component between dedicated servers so that NPCs continue their assigned behaviors when switching.
+They then implemented the first pass on several features presented during CitizenCon, including improvements to enemy vision perception, which now takes planetary lighting cycles into account.
+The first pass of dynamic cover generation for planets was also completed; this can also be used in other locations with navigation areas. As seen at CitizenCon, the team can now generate cover locations and surfaces at the same time as a navigation mesh.
+Functionality was also added to link ‘navigation cost volume’ and ‘navigation exclusion volume’ to areas in different object containers. For example, outpost object containers that feature exclusion or cost volumes can influence how planet navigation mesh is generated.
+They also made improvements to Ship AI features, including planetary surface avoidance, and optimized ship weapon fire validation against allies. They also optimized perception-related components, like vision and hearing. For example, vision zone queries are now faster, while audio stimuli propagation is more accurate as it utilizes a room system graph.
+## AI (Game Intelligence Development Team)
+Throughout October, the Game Intelligence Development team polished StarScript v1.0 for its internal release. For example, they reduced the loading time for the majority of large containers (e.g. a whole solar system) from 10 to 2 seconds and integrated the new ‘groups’ look to more clearly differentiate between groups.
+They also introduced min and max zoom ranges in the graph editor to avoid view breaks, stopped the ‘help’ popup from obscuring task nodes, and implemented the Smart Panel. Graphs are now presented in the same order as their names in the outline, misplaced parallel ports on task nodes were corrected, and displaying two graphs now works correctly too.
+The relationship between the proprieties panel and the selected item on the Smart Panel was improved, while rounded square tasks were integrated into the SmartPanel to mimic the tasks in the graph viewer. Boxes in collapsed groups were enlarged to include long titles, while an icon was added to differentiate activity and mission variables in the outliner.
+Finally for StarScript, a QA testing procedure was created to properly test the most important activities and missions.
+## Animation
+Last month, the Animation team worked on the valakkar and ‘space cow’ alongside adjustments to the kopion. They also continued to provide facial animation support for PU characters and prepped for an upcoming narrative shoot.
+Animation are currently supporting Level Design with a number of player-interaction animations for level traversal.
+## Art (Characters)
+In October, the Character Art team focused on tasks related to CitizenCon. After the event, the team continued creating the utility and specialist armors, including color and material variants to support factions and missions. Work also began on armors for upcoming events.
+The Character Concept Art team created new armors, including utility battle tech and a super-heavy armor.
+## Art (Ships)
+October saw the Ship team complete the final content review for the RSI Polaris, while the final content tasks are currently in progress for the MISC Starlancer MAX.
+The team is nearly finished with two unannounced vehicles, while several more are approaching their whitebox and greybox reviews. Six additional vehicles will begin production soon, too.
+## Community
+The Community team began the month supporting Day of the Vara with the Pumpkin Decorating and Killer Klips from Outer Space contests.
+Alongside the launch of Alpha 3.24.2, the team published a Patch Watch to spotlight lesser-known features and updates, including improvements to the Character Creator, changes to quantum fuel consumption, and visual and quality-of-life enhancements for Arena Commander.
+The team also attended several Bar Citizen events in the run-up to CitizenCon.
+“The CitizenCon New Wakefield Street Takeover was the largest Bar Citizen we’ve ever attended, with an entire street shut down for the occasion! A massive thank you to the Bar Citizen International team for organizing such a memorable event and to every Citizen who joined us. It was an incredible evening that set the perfect tone for CitizenCon weekend.
+However, the highlight of October was undoubtedly CitizenCon 2954. With nearly 5000 attendees at Manchester Central, it didn’t just break records, it completely shattered them, becoming the largest Star Citizen event to date.
+This achievement was a true testament to everyone’s hard work, dedication, and commitment, and we’re incredibly grateful to everyone who made the event unforgettable for the entire community. Special thanks go out to the amazing BTS team who worked tirelessly behind the scenes, the talented cosplayers who brought the 'verse to life, and the community booths that added so much energy and excitement to the event. Thank you!” Community Team
+## Economy
+The Economy team continued their ongoing work on Pyro and began implementing some of the balance changes mentioned in previous Monthly Reports.
+## Mission Design
+In October, the Mission Design team finalized the Save Stanton quest chain. This features three new modular missions. They also created a journal entry for players to track their progression through the event.
+The mission-system refactor progressed, while future ‘handyman’ missions entered QATR and are currently going through the final polish phase.
+“We had a blast attending CitizenCon, met a lot of backers, had a lot of conversations on missions, and shared our plans for Star Citizen 1.0.” Mission Design Team
+They also planned tasks for future releases alongside the fundamental archetypes for some of the guilds unveiled at CitizenCon.
+## Narrative
+The Narrative team tackled a multitude of tasks in the leadup to CitizenCon alongside ongoing work outside of the event. For example, generating mission text and discoverables for Alpha 3.24 point patches and working through the significant amount of text needed to support mission content in Alpha 4.0.
+The team’s major announcement for the month came during The Stars My Destination presentation at CitizenCon, which outlined what Star Citizen 1.0 will look like and the extensive narrative work that will come with it. The talk outlined the introduction of a main story, guilds and factions, and location stories to inject character into the Persistent Universe.
+A Whitley’s Guide for the Idris and a Portfolio on Wildstar Racing were published alongside October’s Jump Point, which featured a deep dive into the People’s Alliance of Levski. There was also another drop of Galactapedia entries to check out here.
+## Online Technology
+In October, the Online Services team progressed with features for Alpha 4.0. As part of this, the refactor of the entity subscription service (used for markers) was completed and is currently in testing.
+The backend social-system changes needed for Server Meshing began internal QA testing. The mission system is also starting its first round of testing, with additional features currently in development to support larger coordinated missions.
+The Live Tools team began finalizing a new tool to provide more detailed and powerful access management to Hex. The testing phase began with the player support teams, with their feedback driving future improvements. The work on the new architecture for the internal error reporting pipeline progressed too.
+## R&D
+The R&D team spent the last few months supporting the introduction of dynamic weather.
+To support evolving clouds, a compute pass was done to animate the global cloudscape based on local planet properties, such as temperature, humidity, and wind. This data is used as a base to shape cloud fronts, which are then locally refined via procedural noise. This data is also used to build a weather map to allow weather to drive VFX, physics, and gameplay. This currently includes precipitation information as well as the extracted positions of potential lightning locations. An API was also implemented to allow the game to sample these weather attributes from both the GPU and CPU in a consistent, simple, and efficient way.
+To render believable wet weather, support for ‘rain volume’ rendering was added to the atmosphere raymarcher. Rain volumes are essentially columns of rain underneath heavy clouds that self-shadow alongside casting shadows into the environment. This is important to prevent incorrectly lit scenes where players would expect dense rain volumes to partially block sunlight (most noticeably at dusk and dawn). Also, changes to indirect lighting were implemented to improve the effect of multi-scattering on the atmosphere and clouds (referred to as "new multi-scatter LUT" at CitizenCon). Multi-scattering is now aware of cloud presence alongside the atmosphere. As a result, overcast skies are less hazy and blue and cloud tops appear brighter.
+To give moving clouds a smoother look, changes were made to account for their movement when sampling cloud shadows as well as the GPU weather map (the latter directly influencing the appearance of rain volumes). Further improvements are being worked on to reduce the noticeable stepping of cloud shadows when the camera moves, which can often be seen when the sun is set low.
+Also, work on rain volumes inspired a prototype for improved ground fog rendering. This will be cheaper to evaluate and render alongside improving the modeling aspect and lighting. It will also self-shadow and cast shadows, like rain volumes and clouds.
+Finally, work began to support and maintain the map storing the accumulated amount of rain. Among other things, this will allow puddles to remain for a while after rain.
+## VFX
+October saw the VFX team supporting various CitizenCon presentations, including those featuring new biomes, base building, and Levski.
+The artists continued to support the Vehicle and Location teams with upcoming deliverables.

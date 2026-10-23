@@ -1,0 +1,61 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9366112.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Backers
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Zeus ES & CL (Evocati and owners will receive these in the build)
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- Quantum Fuel Adjustments
+- New Arena Commander Updates
+## Known Issues
+Not tonight but the next 3.24.2 build after should have a fix in for the fuel prices. They were getting multiplied incorrectly by backend resource network systems so getting worked on now to update later this week.
+- PU - Weapons - Shopping - There is no P8-AR ammunition being sold in the PU
+- PU - Shopping / UI / Shopping Kiosk - Shop UI is horizontally stretched and can't be interacted with
+- SHIP spawns on floating hangar lights (Work around is to go to lobby and spawn ships or store a ship as animations wont have to play)
+- Multivehicle - PU - Vehicles / Vehicle Components - Quantum Drives - Cannot initiate quantum jump (low chance STARC-131460)
+- QT Workaround: De-allocate all power from systems in power management Re-allocate power to Quantum Drive and other systems.
+- Multivehicle - PU - Vehicles - Shields are not negating or blocking damage from weapon fire (STARC-130934)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - UI / Performance - Turret UI names are being shown around Points of interest causing framerate drops (STARC-130999)
+- PU - Stanton - Locations - Hangars / Network - Hangar at Baijini Point is despawning whilst the player is using the area, without external factors, leaving them stuck inside LEO geo
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+- PU - NPE - Missions - Multiple Locations - Tutorial does not progress after leaving the HAB elevator
+- Carrack bottom right MFD has no display (STARC-130157)
+- Multivehicle - PU - Vehicles / VMS - Refuelling Hydrogen takes Player's credit without refuelling and will increase cost after purchase
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+## Features & Gameplay
+Ships and Vehicles
+- Increased Opacity of shield hologram material on Vehicle RTT Self and Target Status MFD visor casts
+- Ship MFD/HUD UI Polish Pass
+- MFD and Annunciator Audio Polish Pass
+## Bug Fixes
+- Fixed an issue causing spawn closets in UGFs to now spawn NPC AI
+- Fixed - PU - Stanton - UI / Performance - Turret UI names are being shown around Points of interest causing framerate drops (STARC-130999)
+- Fixed - Multivehicle - PU - MFD - Cockpit MFD UI may be larger than the bounds of the screen so that the edges are cropped
+- Fixed - Controls - Pilot / Copilot - Vehicle / Multivariant - RSI Zeus ES/CL - Intended seat control hierarchy sometimes not respected between pilot copilot and gunner seats (STARC-131940)
+- Fixed - RSI Zeus Mk. II Series - ( ALL VARIANTS ) - PU - Vehicles / Art /GFX - Lighting - Black artifacts/pixelation can be seen around edges and exterior airlock
+- Fixed - Roberts Space Industries Zeus ( ALL VARIANTS ) - PU - Vehicles - Zeus Pilot (Center) Chair Can't Exit (STARC-131941)
+- Fixed - PU - Stanton - Locations - Art / Collision - Personal Hangars - The landing lights on the loading platform of Self Land hangars float above the loading gate causing collision issues with vehicles (STARC-130055)
+- Fixed - ARGO RAFT - PU - Vehicles - QT - Players can fall out of ships by walking around during quantum travel (STARC-61913)
+- Fixed - Multivehicle - PU - Vehicles / UI - MFDs do not display or are misaligned when entering some turrets (STARC-130557)
+- Fixed - Anvil Hornet F7C MK I - PU - Vehicles / Components / UI - mobiGlas / VMA - Vehicle Loadout Manager has Empty Configurable Slot (STARC-113993)
+- Fixed - PU - Stanton - Graphics / Vehicle MFDs / Ships / UI - Thrusting [ WASD ] and using Boosters [ L-SHIFT ] while inside any type of Avenger ship while the game's graphic setting is set to low, will cause MFDs to blackout (STARC-130246)
+- Fixed - OMNI AFS Sapphire Armored Flight Suit - PU - Actor - Armor - Weapon item port placement is by the suit's legs at ankle length (STARC-129852)
+- Fixed - Esperia Prowler - PU - Vehicles / GFX / Art - VisArea issues around components near pilot seat
+- Fixed - Stanton - Commodity Kiosks / UI - Unable to select specific location inventories while armor is equipped
+- Fixed - PU - Locations - Transit / Hangars / Elevators - LEO Hangar elevator stuck on Elevator Called and does not open
+- Removed incorrect, extra shield components from the Starfarer
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed a Server Deadlock

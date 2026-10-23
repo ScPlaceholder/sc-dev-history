@@ -1,0 +1,1435 @@
+# Star Citizen Live Gamedev: Making Ship Up IV-2
+# https://www.youtube.com/watch?v=CCP8IW0zpnI
+[    0.4] Riddlein44 says, I'm here for the nothing stream.
+[    4.2] Thanks for watching Riddlein44.
+[    6.2] Hi everybody, welcome to another episode
+[    8.1] of Star Citizen Live Game Dev, making ship up 4-2.
+[   12.3] That's a shout out for a Jake O'Capell
+[   14.8] and our fun and fantasy folks here.
+[   16.7] If you've never seen Star Citizen Live Game Dev before,
+[   19.2] it's where we take about an hour
+[   20.3] out of the end of our week
+[   21.4] and we hang out with some of our developers
+[   23.0] and we watch them work, we explore the process,
+[   25.8] we find out a little bit more
+[   27.8] about how game development actually happens.
+[   30.4] Of course, nothing can actually be made in an hour.
+[   33.0] I mean, not maybe a rivet for that old freelancer model
+[   35.8] that was as big as the address once upon a time.
+[   38.0] But other than that, we do a compressed,
+[   40.6] shortened, hyper-fast, super anxious for Alberto here hour
+[   46.1] to show you a little bit of the process.
+[   47.6] And this week, we're doing something,
+[   50.5] we got a twist on it that we've never ever done before.
+[   53.3] So before I get to what the twist is,
+[   55.1] let's introduce our developer compatriots.
+[   57.4] Meet me over at camera two.
+[   59.8] Hi, camera two.
+[   60.8] This is Alberto and Dan.
+[   61.9] Say hi to Alberto and Dan.
+[   64.1] Hi, Alberto and Dan.
+[   65.3] Hello, Alberto and Dan.
+[   68.0] We rehearsed in everything.
+[   70.7] So Alberto, Alberto is a concept artist
+[   73.2] from our vehicle and weapon teams.
+[   75.9] Dan is the sole member of the ship team.
+[   79.6] We made that joke last week.
+[   81.1] I can't just tell people what you actually do, Dan.
+[   83.7] I'm a senior vehicle artist on the ship team.
+[   86.0] Out of how many?
+[   87.8] Loads.
+[   88.6] Loads.
+[   89.5] I made a song about it.
+[   90.8] Over five.
+[   91.6] Yeah, Kingsley, Bone Walker, Nathan Lange,
+[   93.7] Adam Parker, Chris Law, Ben Curtis, John Crew,
+[   95.9] Alberto Petrone, Ben Parthick,
+[   97.2] Melodic, Josh Carter, Koffin, Rich Teller too.
+[   99.2] And I wanna go through the whole thing.
+[  101.2] Last week, we attempted to create a vehicle concept
+[  106.2] in our fourth Making Ship Up special.
+[  108.1] Let's go ahead and show people what the ship,
+[  109.6] what the vehicle was in the end.
+[  112.2] This was this.
+[  113.2] The brief was a 1970s chopper motorcycle inspired
+[  119.4] hover bike in the style of an alien manufacturer,
+[  123.6] probably a Mariah, Gattac, something around there.
+[  128.3] And yeah, a lot of folks liked it.
+[  129.8] It was pretty cool.
+[  131.6] And normally that's where we would have ended.
+[  134.4] But this week, we wanted to show something
+[  138.9] that we've never, ever, ever showed
+[  141.6] in the 1386 videos that I've been responsible for
+[  145.5] for Cloud Imperium Games.
+[  147.3] And that's the feedback process.
+[  149.7] So the feedback process,
+[  152.7] well, how would you describe the feedback process?
+[  154.8] Tears.
+[  155.6] Tears, anything else?
+[  159.4] Frustration.
+[  160.4] Frustration?
+[  162.1] Well, sometimes it's cool.
+[  163.2] I mean, you get to speak to people.
+[  165.6] I don't do that a lot.
+[  167.5] Okay, but tears and frustration
+[  169.2] were the first two words that come to mind.
+[  171.1] The feedback process is where an artist or designer
+[  174.0] or whomever has spent all their time creating something
+[  177.2] that they love, that they enjoy,
+[  178.5] that other people might love and enjoy.
+[  180.3] And then they send it up the chain
+[  182.3] to the various directors who all have responsibility
+[  185.1] of different aspects of the games,
+[  186.5] and they destroy it.
+[  189.4] They remind you of all the things that you forgot.
+[  193.0] They see what you did, and while other people might like it,
+[  196.8] it just doesn't fit their fancy.
+[  199.0] You find out that there are other requirements
+[  200.9] involved at this time.
+[  203.1] These people who are required to make those kind
+[  205.4] of animations are gonna be busy,
+[  206.5] so you can't get into it that way.
+[  208.5] You're gonna need to change the way,
+[  209.6] to get in all manner of things.
+[  211.7] So what we did was we sent the episode
+[  214.4] and the image that you just showed
+[  215.8] off to several vehicle directors in the company
+[  218.5] and collected some feedback,
+[  220.2] which Alberto is going to attempt to process live
+[  224.1] for the second half of this Making Ship Up For Special.
+[  227.0] So there are some curveballs in there.
+[  233.1] We did not let Alberto see the feedback until this morning.
+[  236.0] He did have to prep, you know, there's work here,
+[  237.5] so we had to give him a little heads up.
+[  239.1] But he saw it for the first time this morning,
+[  241.0] and let's go ahead and show some of the feedback
+[  242.8] that we got.
+[  244.2] So upfront, the major first feedback was,
+[  248.3] switch the manufacturer to RSI.
+[  251.2] Just completely different manufacturer.
+[  254.4] How often would you say that's happened in the past?
+[  257.4] That we switch a manufacturer in the early process.
+[  260.7] It happens quite often, and to be fair, it's not a tragedy.
+[  264.0] It happens sometimes a little later.
+[  266.2] It depends, maybe if we do some rebalance
+[  268.4] to what the concept was,
+[  269.9] and it doesn't fit the manufacturer anymore,
+[  271.8] that's something we have to do.
+[  275.6] It's something we know it can happen.
+[  277.4] Right?
+[  278.3] And then make it a two-seater.
+[  280.4] A pretty common request for those old 1970s choppers.
+[  284.1] We did technically make it a two-seater.
+[  285.9] We just gave the second seat to your dog.
+[  289.1] Yeah, so we technically will make it a three-seater.
+[  293.1] Your dog, Bran.
+[  295.4] We have a little 3D printed Bran there.
+[  299.3] I'll put that there.
+[  300.3] There he is.
+[  301.1] Hi, Bran.
+[  302.0] Hi, Bran.
+[  302.8] And then a bunch of minor feedback.
+[  304.7] Add more framework, underlying structure.
+[  306.7] We have no canopy, so we don't get struts,
+[  309.3] but the idea of hard line running along the frame
+[  311.8] could be interesting.
+[  313.1] Lose the curves and add more sharper angles.
+[  315.6] That's a very RSI trait.
+[  317.5] Look, the Scorpius for inspiration.
+[  319.4] The Scorpius is one of our more recent RSI.
+[  322.2] It's not the most recent, but one of our more recent ones.
+[  324.9] Integrate the piano key-style dashboard buttons
+[  327.7] from the Scorpius in some form of HUD.
+[  329.8] We did not incorporate.
+[  331.1] Of course, you can't make a full-blown concept in an hour.
+[  334.6] We need some RSI layering of shapes.
+[  336.9] What's that mean?
+[  338.2] Layering of shapes means that the surface is not
+[  341.0] constituted by a continuous layer,
+[  342.8] like, for example, the canopy of your computer is,
+[  346.3] but is actually made of literally layers,
+[  348.7] like a onion, that are cut with different shapes.
+[  351.6] Every shape is cut on each other,
+[  353.6] and there is what we call E-quink.
+[  356.6] Try to use a few established angles.
+[  360.3] Use this one and overlap them to create nice, dynamic shapes.
+[  363.9] OK.
+[  365.2] It would be great to get the RSI diamond clamshell shape
+[  368.7] from the style guide.
+[  370.0] Could try it behind the rear of the seat
+[  372.2] or integrate it into the thruster design.
+[  374.9] I think I maybe think about integrating the RSI crab claw,
+[  379.5] crab claw engine intakes, into the sides
+[  381.3] of the main body, give it a narrow intake,
+[  383.7] like the Mantis nacelles, the Scorpius wings.
+[  386.6] Was this all?
+[  387.5] Or did we have a whole other page?
+[  389.4] OK.
+[  390.5] And then some questions.
+[  391.9] What interacts at animation is it used?
+[  393.6] Do the wings transition for landing?
+[  395.5] Could they cocoon the player in a more streamlined flight mode
+[  398.1] to give more aerodynamic shape for faster straight-line speed?
+[  400.7] Where are the maps?
+[  402.1] Do you access components?
+[  403.4] Does it have a relay position?
+[  404.8] It doesn't have personal storage.
+[  406.5] The doggo needs a bone.
+[  409.1] So Alberto, you have your work cut out for you.
+[  412.9] So without we've eaten up six minutes of the show
+[  416.1] going through the thread.
+[  417.5] This was just the feedback of two people, by the way.
+[  420.8] In the normal vehicle reviews, there
+[  422.9] is a whole host of chefs in that particular kitchen
+[  426.7] who all have various needs and things
+[  430.2] that they own, aspects of the game that they own
+[  432.0] that they have to look out for.
+[  433.4] So we decided to try to make this as manageable in an hour
+[  436.4] as possible.
+[  436.9] We're still not going to get everything in an hour.
+[  439.1] But all right, so we're back in Blender.
+[  442.0] Show us yours, Alberto.
+[  443.3] Where do we start?
+[  444.1] Yes.
+[  445.1] So this is not going to be done in an hour.
+[  448.3] Like this is not going to be done in a month.
+[  451.5] But there are a bunch of things that we
+[  454.5] can start thinking about.
+[  455.7] For example, the transition to a different manufacturer
+[  459.0] and the change in metrics having a second seat
+[  462.4] are probably the most important things.
+[  465.1] We have here a bunch of boxes in green and red.
+[  470.4] They are the face that have to face the player when
+[  474.3] the components get removed.
+[  475.4] So we have, for example, the cooler.
+[  477.9] We have probably this is the radar.
+[  480.2] We have the computer and the power plant.
+[  483.5] Right, so you can't just make a thing
+[  485.6] be any shape and form you want.
+[  487.4] You do have to consider the internal components.
+[  489.6] Yes, and components are generally, for small vehicles,
+[  492.4] one of the things we crushed our heads in the vehicle concept
+[  495.9] team the most.
+[  497.6] It's really one of the toughest situations.
+[  502.1] Single-seater, well, double-seater with a dog,
+[  505.2] but single-seater kind of.
+[  507.8] This is an easy fix.
+[  509.2] Done.
+[  511.0] Although, how do my character get in and out of it?
+[  516.8] Charlie in the chat says they didn't mention
+[  519.0] get rid of the capes.
+[  520.1] So that's nice.
+[  521.5] That's absolutely.
+[  522.2] We are going to hide them temporarily so that I can look around,
+[  525.7] but it's just hidden.
+[  527.6] Don't panic, guys.
+[  529.4] That's still done.
+[  530.0] So where do you start?
+[  532.0] So I start with the metrics.
+[  534.2] I think is the best way.
+[  536.5] This is a new pose for this character.
+[  538.6] And the old pose was this one.
+[  543.7] So I want to make it compatible with the characters
+[  547.2] from the pulse because they move.
+[  553.8] So it's worth noting these earlier ideas
+[  558.6] of what the pulse concept could look like as well,
+[  562.0] what we were just looking at.
+[  563.4] So you're going to use the pulse as a guide for the metrics,
+[  566.3] but not necessarily for the style.
+[  568.5] Yeah, I just will use this character for testing the entrance
+[  573.9] and exit animation.
+[  576.6] So let's hide the temporary again, the wings.
+[  580.9] And I have just to make sure that the starting position makes
+[  586.0] sense.
+[  587.2] Let's move brand maybe.
+[  589.0] It's getting a little too friendly with the thing.
+[  595.6] I've survived nine years.
+[  596.6] I want to make 10.
+[  599.8] No, I've been here 10 years.
+[  601.6] I can't remember.
+[  608.2] Take all the pieces.
+[  611.5] We don't care about the final position
+[  613.2] because we tweaked the final position in a chopper situation.
+[  616.0] But I at least need to understand that the resting position works.
+[  621.3] And this one doesn't.
+[  623.0] So I have to make sure it does.
+[  628.2] This is an important element that we sort of glossed over
+[  632.6] last week, I think, is that is the importance of metrics
+[  635.6] in determining your shape language for the vehicle.
+[  641.8] It's not that we can't do anything we want.
+[  644.2] I mean, it's our game.
+[  646.2] But the more outside you go from existing metrics and stuff,
+[  651.6] the more additional work is necessary.
+[  653.8] New metrics have to be created.
+[  655.4] New animations have to be created to match those metrics
+[  658.4] and stuff like this.
+[  659.4] It's additional work for additional teams.
+[  661.1] And that can sometimes delay a vehicle beyond the point
+[  664.6] where you want it to be ready.
+[  665.8] Yeah, one of the worst things that can happen,
+[  668.3] and it's something we do everything we possibly
+[  670.4] can to avoid, is being halfway through, let's say,
+[  673.6] like a gray box phase.
+[  674.6] So you've already signed off on white box.
+[  676.0] And then you realize that one of the metrics was wrong.
+[  678.5] Even something as simple as like,
+[  680.4] so a really, really easy example is a chair.
+[  683.4] It needs to be 50 centimeters off the floor.
+[  685.0] That's just something that's pretty locked in across our game.
+[  687.5] And then a bar stool is 75 centimeters.
+[  690.0] If something like that's even off by 5 centimeters,
+[  692.6] that can have knock-on effects.
+[  693.8] Because if you have a desk that's then been made to that height
+[  698.0] and that's integrated into the floor or even the wall,
+[  700.7] that can get quite complicated really fast, something
+[  703.9] as simple as a 5 centimeter chair.
+[  705.8] And metrics themselves can change over the course
+[  708.4] of a project's development.
+[  710.0] I think backers will famously remember the Enville Carrick.
+[  714.4] The Carrick was originally concepted
+[  716.2] at one set of metrics that we understood in 2014, 2015,
+[  721.3] when it was first concepted.
+[  723.0] But when it came time to actually build it in 3D,
+[  726.0] years later, the metrics for the entire project had changed.
+[  729.8] The Precision Universe had come online.
+[  732.0] We now understand how much more room
+[  734.5] that we need for the players to get around, to accommodate
+[  737.1] for third-person cameras in certain situations and stuff.
+[  740.8] And the interior of the Carrick had to be dramatically altered.
+[  746.4] And because our vehicles are often,
+[  748.6] well, they're always one-one internal and external,
+[  751.4] that necessitated changes to the exterior.
+[  754.1] Yeah.
+[  754.9] Sorry for interrupting.
+[  756.7] But in user, you have to transfer the cape.
+[  759.3] Yeah, that makes sense.
+[  760.9] You can put another cape in that guy's face.
+[  763.2] Yeah.
+[  763.9] And you can have three.
+[  766.8] But yeah, you mentioned the Carrick,
+[  768.4] but yeah, that's also like any kind of backlog ship we've got
+[  771.6] and depending on how old it is.
+[  772.9] So obviously, you guys saw Fleet Week,
+[  774.9] you saw the Polaris flying around.
+[  776.9] That's presented challenges as well because of those legacy
+[  780.6] metrics, obviously something that we are acutely aware of when
+[  783.8] we go into the white box phase.
+[  785.6] So it's something we do everything we can to avoid.
+[  788.1] But yeah, it's difficult sometimes.
+[  789.8] I do want to mention this early enough in the process.
+[  792.3] Last week, Obro, you mentioned that you
+[  794.7] might want to consider a sidecar.
+[  796.9] Yes.
+[  797.5] So you do have to make it a two-seater,
+[  799.0] but nothing about the instructions
+[  800.7] said it had to be two in the same cockpit.
+[  804.0] Bran in a sidecar.
+[  804.6] I just saw it was incredibly cute to have Bran on the drive,
+[  809.4] but nobody even said that we cannot have two dogs.
+[  813.2] Two dogs.
+[  814.8] But I would like to focus more on the transition
+[  817.6] to the side first because that's our priority.
+[  821.4] We have these elements that we stole from the polls last week.
+[  826.2] Yeah, they're very MRI on there.
+[  827.8] They are MRI, but it's compatible in some aspect with the RSI.
+[  833.4] They don't clash too much.
+[  838.3] Do you think?
+[  839.0] But for example.
+[  839.7] Do you think your art director would agree with that statement?
+[  842.2] We're about to find out.
+[  844.9] Ben, message done.
+[  846.8] My team is off.
+[  848.1] OK, perfect.
+[  849.2] But the first element that has to go if we're doing a RSI
+[  851.9] is the circular one.
+[  853.8] Yeah.
+[  854.8] So I think this looks much better.
+[  857.2] It still looks pretty cool.
+[  858.1] Yeah, you could put like some kind of like
+[  861.9] hover plate underneath in between the arms, right?
+[  864.3] Pointing down.
+[  865.1] It's like a front section.
+[  866.8] I got a message on teams from Dustin.
+[  869.8] Dustin warning us that the mics were actually live
+[  872.6] during our audio test earlier.
+[  875.2] Dustin, thanks for looking out.
+[  877.9] Nice one.
+[  879.0] We were aware, but I appreciate you looking out
+[  881.4] at us all this time.
+[  884.3] We have these elements that is way too soft,
+[  886.3] but I would like to try and experiment.
+[  888.7] Not a lot of soft around shapes in RSI.
+[  892.4] No, at all.
+[  893.6] I mean, it's not to say that there can't one day
+[  895.9] be an RSI ship that has soft shapes.
+[  898.7] We have this argument.
+[  899.9] I see this argument happen a lot on content creators' pages,
+[  904.3] YouTube's and Twitch.
+[  905.9] We even have it internally.
+[  906.9] RSI.
+[  908.9] There you go.
+[  909.6] Instant RSI.
+[  911.8] This idea that a manufacturer can only have one style,
+[  916.6] but you look at Ford.
+[  918.7] Just look at Ford in the 50s, in the 60s, the 70s, the 80s,
+[  922.1] the 90s.
+[  924.0] Look at just the Mustang alone.
+[  925.6] Look at just the Mustang over the years.
+[  928.1] And our manufacturers are supposed
+[  929.5] to have been around for hundreds, 200s, some of them
+[  931.7] for 300 years.
+[  933.1] So even this exact same make of car
+[  936.9] can go through dramatic shape language and visual changes
+[  940.6] over the decades.
+[  941.7] So I've always understood the idea that, OK, RSI should always
+[  947.9] be angular and stuff like this.
+[  950.2] And we're continuing that here today.
+[  952.5] I'm not going to.
+[  953.0] Yeah, but there's no reason it can't evolve over time.
+[  955.6] There's no reason.
+[  957.2] There can't be an era where a different CEO comes
+[  964.0] in charge of RSI.
+[  965.6] And they decide, no, in my era, I
+[  967.9] want to do something different.
+[  969.5] I mean, remember when that new Dodge charger and the Challenger
+[  974.5] came out?
+[  976.2] Everybody started making cars that looked like that.
+[  978.8] Ford was making them.
+[  980.0] Chevy was making them.
+[  980.8] It's you saw big changes in the Camaro.
+[  983.6] That was all inspired by those original Challenger and Chargers
+[  986.7] from Dodge.
+[  987.5] There's also examples where laws come into place around safety
+[  993.0] that in the real car world, a lot of cars now are really
+[  995.9] rounded because I think there's a rule that you're not
+[  998.9] allowed to have under a certain angle.
+[ 1001.2] It's one of the reasons the Cybertruck can't be sold
+[ 1003.2] in certain countries because it's just a spare in some of its panels.
+[ 1008.1] But then if you look at the older cars, like the old Volvo,
+[ 1011.2] it's really boxy.
+[ 1012.6] I mean, that's kind of its thing, right?
+[ 1013.9] And then you look at the new one, they're super rounded now.
+[ 1016.8] And partially because of aerodynamic and fuel
+[ 1019.5] consumptions and then also just the visual palette of consumers
+[ 1023.4] has changed over time.
+[ 1024.4] There's something that's happened with electric cars.
+[ 1026.3] I don't even get two-fold off on the car.
+[ 1027.9] But so many electric cars are so ugly looking.
+[ 1031.5] There's nothing inherent about the technology that
+[ 1033.9] requires your car to be a weird, rhombus-shaped pseudo-cube.
+[ 1041.0] But everything from the Prius to these things,
+[ 1043.9] I think that's where Tesla first started.
+[ 1045.8] They started making extra cars that actually look like cars
+[ 1048.8] and not these weird shapebox.
+[ 1050.3] And then they, of course, went back, as you said,
+[ 1052.2] with the Cybertruck.
+[ 1053.9] A lot of it's because of their production lines.
+[ 1056.5] If you look at Audi, for example, they're just kind of Mustang.
+[ 1059.2] They're just kind of like bolting over their front grills
+[ 1061.5] because they don't need to cool a radiator anymore.
+[ 1063.6] They can use the same body planters.
+[ 1065.0] I mean, I don't claim to be any kind of expert in this.
+[ 1069.5] But it's just I always like when I looked at Mitsubishi,
+[ 1074.5] which I was saying it, but Mitsubishi makes giant 18-wheel
+[ 1079.0] or tractor trailers.
+[ 1080.8] They make tanks and they make something like the 3000 GT.
+[ 1084.4] And it's all the same manufacturer.
+[ 1085.8] And then you look at the Lamborghini-made tractors.
+[ 1087.4] Ben is saying RSI itself has multiple art styles
+[ 1092.6] and already has evolved a fair amount depending on its age.
+[ 1095.4] So, yeah, there you go.
+[ 1096.4] And he's true.
+[ 1097.4] He's true.
+[ 1098.4] Yeah, that's English.
+[ 1099.8] He's right.
+[ 1100.8] The generation from RSI.
+[ 1101.8] Oh, yeah.
+[ 1102.8] You look at something like the Connie
+[ 1104.1] and you look at what's the Mantis.
+[ 1109.6] Yeah.
+[ 1110.6] It's some basic silhouette reads that are the same,
+[ 1114.2] but the down details is drastic.
+[ 1117.0] I love the Mantis.
+[ 1119.0] The visual.
+[ 1120.0] I don't like its use.
+[ 1122.0] I want a fighter variant.
+[ 1124.3] I want a two-person fighter variant of the Mantis.
+[ 1128.4] Ben, John, remove the swirly thing and put a turret in there.
+[ 1133.2] Like it's a hurricane.
+[ 1143.5] You talk about the, you know, when you said that RSI could get
+[ 1147.1] a new CEO and decide, though, we want to change the in-game law,
+[ 1150.9] like visual direction, but that happens almost in the studio.
+[ 1153.9] Like, I'm sure, like, concept artists join the team
+[ 1157.3] and then they have, like, new ideas for, like, different stuff
+[ 1160.3] for the manufacturer and that kind of, like, in a way,
+[ 1164.9] achieves the same result, right?
+[ 1166.3] Yeah.
+[ 1167.3] Well, as a concept artist, we have the duty to continue the vision
+[ 1169.7] of who can be for us.
+[ 1171.3] Yes.
+[ 1172.3] And these, we cannot make something personal about anything
+[ 1175.9] or everything we do.
+[ 1177.5] But of course, our minds will influence, well,
+[ 1183.5] in the end, everything.
+[ 1184.7] It just has to be consistent.
+[ 1186.5] It doesn't mean that you cannot express personality towards that.
+[ 1189.5] So in the long term, it will change.
+[ 1191.7] I think it's a mistake to...
+[ 1194.1] It's a mistake to think of any company as a monolith,
+[ 1197.5] as this unchanging thing.
+[ 1199.1] We're not the same place we were in 2012, in 2016 and 2024.
+[ 1204.1] And so, you know, each new person that joins the team
+[ 1206.9] brings something to the alchemy.
+[ 1209.3] Yeah.
+[ 1210.3] And if they're a highly talented, skilled,
+[ 1213.7] educated, experienced developer,
+[ 1215.3] of course, we're going to take this new feedback,
+[ 1217.1] these new processes, these new ideas
+[ 1219.7] about the very nature of how to make games in
+[ 1222.1] and adjust our processes.
+[ 1223.3] That happens with anybody.
+[ 1224.5] You know, we're not unique in that regard.
+[ 1228.5] I think as well, there's, like, even earlier...
+[ 1232.1] Yeah, Ben wanted...
+[ 1233.7] a line, a dominating line.
+[ 1235.7] So we're using this because, I mean, we don't know...
+[ 1239.9] we don't know how to play, so...
+[ 1241.3] Jacob L says,
+[ 1242.1] Scorpius is the two-seater Mantis with the tree.
+[ 1244.1] Yeah, but I wanted to look like the Mantis.
+[ 1248.3] Don't understand. It looks cool.
+[ 1250.3] And I want to look cool.
+[ 1252.5] And it looks there is enough space for...
+[ 1253.9] Mantis looks so super.
+[ 1255.9] I want to zoom in.
+[ 1256.9] And the Mantis.
+[ 1260.6] I'm allowed to want things.
+[ 1264.6] Let's find a place for these guys.
+[ 1267.8] This is something I have a lot of respect for
+[ 1269.2] concept artists in particular,
+[ 1270.8] because it's a very quick way to get your concept
+[ 1273.6] ignored by a production artist,
+[ 1275.6] is to not pay attention to the components.
+[ 1278.6] So, like, these are, like, really, really cool.
+[ 1280.4] It's something Mark is very, like...
+[ 1283.6] it's... the first thing you do in white box is, like,
+[ 1285.6] make sure there's space for your components.
+[ 1287.6] It's really, really important.
+[ 1289.4] And if there isn't room in the concept for them,
+[ 1291.2] you have to change the concept.
+[ 1292.6] And that, obviously, at that point,
+[ 1294.6] you're in danger of changing the visual direction,
+[ 1296.8] that the concept artist was aiming for.
+[ 1299.0] So it's really important for the concept team, you know,
+[ 1303.0] to accommodate for these things,
+[ 1306.0] because if they don't, then the design's at risk of changing.
+[ 1309.0] Oh, yeah, I think we talked a little bit about it last week.
+[ 1312.0] You know, we've had some legendary concept artists
+[ 1315.0] come through this place.
+[ 1316.0] You know, the Ryan Church and George Hall
+[ 1319.0] and Jim Martin and so like this.
+[ 1321.0] But a lot of the...
+[ 1323.0] some of them have, at times, struggled
+[ 1325.2] with the one-one nature.
+[ 1328.2] You know, you can be in a... for a movie or a TV show,
+[ 1330.2] you can make it pretty much whatever.
+[ 1331.7] You don't have to worry about metrics.
+[ 1332.7] You don't have to worry about everything fitting.
+[ 1333.7] A lot of different models for different shots.
+[ 1335.7] Yeah, exactly. The inside of the million falcon doesn't fit
+[ 1337.7] in the outside. That's, you know, famously that one.
+[ 1339.7] But here, it's like we require a different standard
+[ 1343.2] for that stuff, because it does all have to fit.
+[ 1345.2] And some have adapted well.
+[ 1347.2] I'm not calling out any specific person.
+[ 1349.2] Some have done really, really well at adapting.
+[ 1352.2] And then, you know, some struggled and were like,
+[ 1354.4] no, it's not for us.
+[ 1355.4] It's like, okay, you know, thank you for your work.
+[ 1357.4] You know, some still great work.
+[ 1359.4] Where was it?
+[ 1361.4] Somebody asked, a Vulcanator says,
+[ 1364.4] is this going to end up being an actual in-game ship?
+[ 1367.4] Chances are no Vulcanator.
+[ 1370.4] We've done...
+[ 1372.4] of these streams where we've had somebody make something,
+[ 1375.4] a prop or a costume or an alien race or ships or whatever.
+[ 1380.4] A few of them have made it into game.
+[ 1384.1] Famously, the UEE,
+[ 1387.1] the vintage UEE uniform from like a hundred years in the past
+[ 1390.1] ended up making it into the game.
+[ 1392.1] The pickleball ended up making it into the game.
+[ 1396.1] The little bobbleheads, the little marine bobblehead,
+[ 1400.1] which everybody absolutely hated when we made that show.
+[ 1403.1] Boy, the comments on that show were...
+[ 1407.7] Yeah, that's a core memory there.
+[ 1411.7] A little bit of trauma on that one.
+[ 1414.4] But that ended up making it into the game
+[ 1416.4] and made it into making it as a piece of physical merchandise,
+[ 1419.4] a soul that last year's Citizen Gun.
+[ 1421.4] So there's been a few things that have started here
+[ 1425.4] and been created here that have made it into the game,
+[ 1427.4] but if you're playing averages,
+[ 1429.4] no, I wouldn't bet on it.
+[ 1431.4] I might have done something stupid, actually.
+[ 1433.4] Oh, I bet you did.
+[ 1435.4] Yep, I deleted any measures.
+[ 1438.4] I made Control-Z's, do you got?
+[ 1440.4] Nah, I got a good story that's similar to this, actually.
+[ 1444.1] So, Albert has just lost his animation now,
+[ 1446.1] so he's lost however much time.
+[ 1448.1] Nah, can be fixed.
+[ 1450.1] Today, I was doing some feedback.
+[ 1452.1] Alberto gave me, actually,
+[ 1454.1] and 3DS Max decided to crash in the middle of me
+[ 1456.1] integrating such feedback.
+[ 1458.1] And let's just say that feedback was very...
+[ 1460.1] Because I had to do it twice,
+[ 1462.1] it became very clear in my mind exactly what I needed to do.
+[ 1464.1] So the second time was better than the first time?
+[ 1466.1] It was, yeah, genuinely was better.
+[ 1468.1] It's not uncommon, you know,
+[ 1470.1] if you have to do something twice.
+[ 1472.8] Of course, handle it.
+[ 1474.8] Yep.
+[ 1479.6] So now your animations now will be even better than they were before?
+[ 1481.6] Yes.
+[ 1483.6] On the second time, they always are.
+[ 1485.6] They better be.
+[ 1495.0] Cleaner?
+[ 1497.0] Nah, but we want to...
+[ 1499.0] Ben Curtis writes,
+[ 1501.0] I've got to get home so I can't watch anymore,
+[ 1503.0] but ask Dan where the blast shields are.
+[ 1505.0] When are they gonna let me do it?
+[ 1507.0] So I asked John about this, actually,
+[ 1510.6] because I don't know
+[ 1519.6] because I really wanted to do it after the Sulin,
+[ 1521.6] but the Polaris
+[ 1523.6] was higher priority.
+[ 1525.6] So Karak fans and Polaris fans
+[ 1527.6] will have to fight out what they
+[ 1529.6] would have preferred to have sooner.
+[ 1533.6] So...
+[ 1535.6] Yeah, yeah, it's a real thing.
+[ 1537.6] I haven't forgot, they won't let me.
+[ 1539.6] See? Better.
+[ 1554.2] There you go.
+[ 1556.2] And that's why we do it twice sometimes.
+[ 1558.2] Is that why?
+[ 1560.9] Yes.
+[ 1562.9] No, Mark, we're talking about the blast shields for the Karak.
+[ 1564.9] Jared is going to make it into the game.
+[ 1566.9] As Jared once,
+[ 1571.5] Chris figures out how to transport people into the game.
+[ 1573.5] Oh, we've...
+[ 1575.5] This comes up semi-regularly
+[ 1577.5] over the years as I approach
+[ 1579.5] somewhere around a decade.
+[ 1581.5] I haven't been here now.
+[ 1583.5] There's...
+[ 1585.5] I am just fine
+[ 1587.5] being the unescapable
+[ 1589.5] person.
+[ 1592.2] Being the unescapable force of everything
+[ 1594.2] outside Star Citizen.
+[ 1596.2] There's enough of this.
+[ 1598.2] Go to Camera 1.
+[ 1600.2] Nobody needs to see more of this.
+[ 1602.2] We had a fun little gag
+[ 1604.2] at the end of the ISE
+[ 1606.2] last quarter,
+[ 1608.2] but nobody needs to see more of this.
+[ 1610.2] The game itself should be the place
+[ 1612.2] where you can escape from that.
+[ 1614.2] So I've already been immortalized
+[ 1616.2] in a couple of ways.
+[ 1618.2] A few little props here and there.
+[ 1620.8] But I appreciate the sentiment.
+[ 1627.1] Let's see to
+[ 1629.1] find a way to give access
+[ 1631.1] to the components once this is laid out.
+[ 1633.1] Isn't Jared's name already
+[ 1639.7] in the game as an NPC pilot?
+[ 1641.7] The NPC pilots actually come from
+[ 1643.7] a generator.
+[ 1645.7] There's actually a list of first names
+[ 1647.7] and a list of last names.
+[ 1649.7] When a auto generates random NPCs,
+[ 1651.7] it just picks one from the one.
+[ 1653.7] So yeah,
+[ 1655.7] just about every employee
+[ 1658.4] here at the time of the
+[ 1660.4] list generation is in there,
+[ 1662.4] as well as a bunch of generic namelets
+[ 1664.4] that you can download
+[ 1666.4] from the internet are in there.
+[ 1668.4] But yeah, my dad actually
+[ 1670.4] caught a Jared Huckabee
+[ 1672.4] in there and sent me a picture once.
+[ 1674.4] That was around the time I found out he was a player.
+[ 1676.4] In a supporter of the game
+[ 1678.4] I was like, oh, hi dad.
+[ 1682.3] That was a good idea.
+[ 1688.6] There's something broken.
+[ 1693.0] I don't know what.
+[ 1696.4] They will fix it.
+[ 1698.4] Yeah, they will.
+[ 1700.4] Just leave them on the list for 3D art.
+[ 1702.4] If there's something that is too boring to do,
+[ 1704.4] they can fix it.
+[ 1706.4] I'm joking.
+[ 1708.4] Kind of a Flintstones car.
+[ 1710.4] I'm joking Corey,
+[ 1712.4] I'm joking.
+[ 1715.7] You can hear Corey for charging from
+[ 1717.7] the other building right now.
+[ 1719.7] Mark's already gone.
+[ 1721.7] I am.
+[ 1723.7] Mark has a little thing
+[ 1727.8] like balance.
+[ 1728.8] As well.
+[ 1729.8] Never heard about it.
+[ 1733.8] That's interesting.
+[ 1736.8] Just to give a bit more dynamic shapes and getting out of the aesthetics of mirai.
+[ 1744.4] That is very performance based, so compatible with the RSI, but I'd like to fill up this
+[ 1751.3] area a little more.
+[ 1754.0] Why do your sounds have accents when you don't?
+[ 1757.0] I don't know what that means.
+[ 1761.1] I'm really space patrolling, chatting, asking a question I don't understand.
+[ 1773.0] The 3D artists that are watching this or people who don't appreciate it, when you see
+[ 1777.9] like a little detail, that cut in that I'll put it removed because it doesn't fit the
+[ 1781.6] style, those little extra flourishes are so annoying to put into a polygonal model.
+[ 1791.5] But they add so much.
+[ 1794.4] I'll often see people post work on Reddit, ship ideas and stuff like that, their own
+[ 1801.3] ship concepts.
+[ 1803.0] I think one thing I'd say to those people, some of them look really, really, really cool.
+[ 1809.0] But definitely, just because something's awkward or difficult to implement, that adds complexity
+[ 1814.9] to your shape and will usually make it look better if it was done in a deliberate way.
+[ 1820.6] So you see there, we've got that shape transition, it's like filling down and then it's creating
+[ 1825.3] this nice sharp angle back.
+[ 1827.6] It would be very easy to just not do that, but he has and now it makes this whole thing
+[ 1834.2] look way nicer.
+[ 1836.3] Do you ever, when you get to the 3D art phase, do you ever take something that was geo in
+[ 1845.8] the concept and make it palm in the actual?
+[ 1850.4] Yeah, for sure.
+[ 1852.3] For those of you that aren't aware what palm is, it's basically like a decal, so a floating
+[ 1857.4] sticker that gives the game engine information which essentially fakes depth or height into
+[ 1864.1] that sticker.
+[ 1865.1] Yeah, it's basically like this.
+[ 1866.8] So you see there that looks like it goes in, but it's actually not.
+[ 1870.5] That's essentially what it is and you can save so much memory.
+[ 1875.1] There are ships where as you're walking through, you look down and there's a grate and you
+[ 1879.0] can see a bunch of wires beneath the grate.
+[ 1881.4] The wires are not there and neither is the grate for that matter.
+[ 1885.2] It's just a fancy shifting texture there.
+[ 1889.6] Yeah, it's a very powerful tool.
+[ 1892.5] But it's one of the ways we can add a lot of detail but maintain decent performance.
+[ 1898.3] Yeah.
+[ 1902.2] Okay, so in the list, I'm not doing the piano keys thing, okay?
+[ 1908.2] Sorry Ben.
+[ 1910.3] It's a great idea.
+[ 1911.3] Another data.
+[ 1912.3] You've got all four components.
+[ 1916.5] Yeah, I got the components with the relay, got turned into the can so we can put it somewhere
+[ 1921.5] else.
+[ 1922.5] Personal storage.
+[ 1924.5] We put it in the seats because it just makes sense.
+[ 1927.3] Like a...
+[ 1928.3] Could it wear?
+[ 1929.3] Under the seat.
+[ 1930.3] Okay.
+[ 1931.3] So what do you...
+[ 1932.3] Like in the polls, you click, it pops out.
+[ 1933.3] Okay.
+[ 1934.3] So you can just say it's done.
+[ 1935.3] I like this helmet because...
+[ 1937.5] Imagine thinking you'd finished and then someone just hand you a piece of paper with all this
+[ 1940.9] on.
+[ 1941.9] You don't have to imagine that.
+[ 1943.9] That is my life.
+[ 1945.9] That's how Bert is like today.
+[ 1948.3] Top and sub at your times.
+[ 1950.3] What about weapons?
+[ 1951.3] Yeah, I accept.
+[ 1952.3] Good idea.
+[ 1953.3] What about weapons?
+[ 1954.3] Put missiles in the wings.
+[ 1956.3] No.
+[ 1957.3] Why?
+[ 1958.3] Because I got the yes.
+[ 1962.2] What weapons do we want for these kind of stuff?
+[ 1964.2] Same missiles, chat.
+[ 1965.2] Sorry?
+[ 1966.2] Tell him to put missiles on it.
+[ 1968.2] All right, chat.
+[ 1970.2] A for ballistics.
+[ 1972.2] B for laser.
+[ 1974.2] C for missiles.
+[ 1976.2] D for...
+[ 1978.2] Chat, you don't want to see me having a panic attack line.
+[ 1983.2] That's right, chat.
+[ 1984.2] Kind of, too.
+[ 1986.2] Press C to pay respect.
+[ 1988.2] Good work.
+[ 1990.2] Looks like you're putting some missiles on it, Chump.
+[ 1993.2] Actually, it looks like all three.
+[ 1995.2] That'll do.
+[ 1996.2] That's just a lot of A, Bs and Cs on there.
+[ 1999.2] So, I don't actually have a tool with which to parse that.
+[ 2003.2] Where are artists?
+[ 2004.2] It was a mistake for me to even ask the chat.
+[ 2006.2] So, I'm just going to say they're saying all three.
+[ 2010.8] Okay.
+[ 2011.8] Our seven-chill.
+[ 2012.8] Good work.
+[ 2013.8] This will be the RSI overkill.
+[ 2016.8] Yeah.
+[ 2017.8] They did want a map on it as well.
+[ 2038.4] He did ask where the maps were.
+[ 2042.6] One of the notes we're asking where the maps were.
+[ 2045.6] Okay.
+[ 2046.6] Maps are quite simple to place for such small...
+[ 2049.6] Yeah, I think that's an easy one.
+[ 2051.6] In general, in our first pass, we do just little ones,
+[ 2058.0] barely placed, not confirmed.
+[ 2060.0] Is this a rocket?
+[ 2064.3] I don't know the size of what it should be,
+[ 2067.3] but I believe it shouldn't be too big.
+[ 2069.3] But I blame the designer for not giving us the proper spec.
+[ 2072.3] Blame Mark.
+[ 2073.3] How many?
+[ 2082.2] You could put them under the wing, or the winglet.
+[ 2085.2] Oh, yeah, yeah.
+[ 2086.2] Under the front little winglets.
+[ 2088.2] Oh.
+[ 2090.2] Sounds horrible idea, but sure.
+[ 2092.2] What's wrong with that idea?
+[ 2094.2] You want rockets at the very, very front
+[ 2096.2] where you're likely to bump into something.
+[ 2098.2] Look at that.
+[ 2099.2] Oh, come on.
+[ 2100.2] It looks like a fighter jet.
+[ 2102.2] Well, yeah.
+[ 2104.2] This would absolutely be a GI Joe or a Cobra vehicle
+[ 2107.2] at this point, just random rockets.
+[ 2110.2] There it is.
+[ 2111.2] That's one too many.
+[ 2112.2] Only one.
+[ 2113.2] Only one.
+[ 2114.2] No, no, no.
+[ 2119.4] If this was actually RSI, it would be integrated
+[ 2121.4] on a non-plane off-phase.
+[ 2123.4] Integrated like here with some...
+[ 2125.4] Oh, that's right.
+[ 2126.4] Very nice boolean.
+[ 2128.4] You got to do it.
+[ 2129.4] RSI.
+[ 2130.4] Do I have to?
+[ 2131.4] Okay, sure.
+[ 2132.4] You're right.
+[ 2133.4] No, you make a good point.
+[ 2134.4] It would be integrated.
+[ 2135.4] Now, the laser guns would be on little pivots.
+[ 2139.4] Yes.
+[ 2140.4] On little...
+[ 2141.4] We've got to explain my therapist
+[ 2143.4] why I cried all afternoon today.
+[ 2145.4] That was before this.
+[ 2147.4] That was before yes.
+[ 2149.4] That's just because I miss my dog.
+[ 2151.4] Yeah.
+[ 2152.4] So the French should be two little size ones
+[ 2154.4] on the gimbals.
+[ 2156.4] That's the word.
+[ 2157.4] It only took me 90 seconds to remember the word gimbal.
+[ 2160.4] Watch them think they said something interesting.
+[ 2164.8] It just says what we put on the slides earlier.
+[ 2173.2] Someone's in Photoshop right now.
+[ 2175.2] Try and labest.
+[ 2176.2] Unfortunately, it's boring.
+[ 2180.8] Feedback is boring?
+[ 2184.7] Fortunately, feedback is boring.
+[ 2187.7] Crab claw engines.
+[ 2193.3] I have no idea what that means.
+[ 2195.3] It's like the...
+[ 2196.3] You could call it a clam shell if you wanted to.
+[ 2199.3] Yeah, maybe.
+[ 2200.3] Yeah, it's the same kind of principle.
+[ 2203.3] You know how the Scorpius has like...
+[ 2205.3] It's kind of like wide kind of rectangular engines
+[ 2209.3] that like...
+[ 2210.3] Yes.
+[ 2211.3] They go like that.
+[ 2214.0] Ah, like in Star Wars.
+[ 2216.0] No, like in Star Citizen.
+[ 2219.0] Is this a replay?
+[ 2236.2] As in Fuse?
+[ 2237.2] No.
+[ 2238.2] This is part two of last week's show
+[ 2240.2] where we take the thing we made
+[ 2242.2] and utterly change it because of feedback.
+[ 2247.2] A crucial part in the concept process.
+[ 2251.2] I've never gotten a showcase before
+[ 2255.1] because nobody was willing to come back the next week.
+[ 2259.1] I mean, I was on the edge.
+[ 2264.1] One thing I wanted to mention
+[ 2269.8] talking about the Mavs on this list.
+[ 2271.8] One thing that the players might not know about Mavs,
+[ 2274.8] which is actually something I found really cool
+[ 2276.8] when I started working on the ship team,
+[ 2278.8] is where they are on the ship,
+[ 2279.8] genuinely make some impact to the design.
+[ 2282.8] So I remember on the Fury,
+[ 2283.8] we had very limited space to put Mavs.
+[ 2286.8] And it was like,
+[ 2288.8] designer like, can you please get this Mav
+[ 2290.8] as far forward as you can?
+[ 2292.8] Which if you look at the canopy on the side,
+[ 2294.8] they make it so actually comes out from the body forward
+[ 2298.8] because we were asked to get it as far forward as you can.
+[ 2302.8] And then when we did the racing variant of the Fury,
+[ 2304.8] Mav got put on the wing where the gun was
+[ 2307.8] because they wanted another one even further forward,
+[ 2309.8] which is probably the reason why it handles so much better
+[ 2313.8] because it's got better turning potential.
+[ 2315.8] So it was really cool when I first started
+[ 2319.8] trying to integrate it.
+[ 2321.8] This is a bit...
+[ 2323.8] But it will do.
+[ 2324.8] It's not your best work.
+[ 2325.8] It's not my best work.
+[ 2330.3] It will do.
+[ 2334.2] Maybe just delete the third one.
+[ 2337.6] Next feedback session.
+[ 2347.9] So, other side is a bit more
+[ 2350.9] space and less
+[ 2352.9] performance, I guess, than the Mirai.
+[ 2355.9] So, I don't want to have
+[ 2358.9] shapes like this.
+[ 2360.9] Right.
+[ 2361.9] I thought there was something that streams lines
+[ 2366.4] from beginning to end.
+[ 2369.4] Oh, and the RSI style intake
+[ 2375.7] would be good for the front.
+[ 2378.7] That was mentioned in the feedback.
+[ 2380.7] No, the Clam-Shell thing.
+[ 2382.7] I thought that was the engine.
+[ 2384.7] So, is that the engine or the intake?
+[ 2388.7] You've got the paper.
+[ 2390.7] Check's notes.
+[ 2393.7] Literally, check's notes.
+[ 2397.7] It just says Clam-Shell-Shake.
+[ 2400.7] What was he talking about?
+[ 2401.7] Intakes. Intakes.
+[ 2402.7] Intakes, okay.
+[ 2403.7] I really don't know how to do it.
+[ 2404.7] Wait, it says Crabclaw for the intakes
+[ 2406.7] and then Clam-Shell just in general.
+[ 2409.7] Let's go look at the Scorpius.
+[ 2410.7] You still got the Scorpius over there?
+[ 2412.7] So, you see the front's like...
+[ 2418.9] And then if you look at the back, it's quite similar.
+[ 2420.9] No, no, he's talking about this.
+[ 2422.9] Those things there.
+[ 2423.9] Now, if you look at the back,
+[ 2425.9] you see it's kind of square.
+[ 2430.6] Okay, I'll try.
+[ 2432.6] Oh, is it gonna work?
+[ 2436.1] Yeah, this is a production model, so it's kind of heavy.
+[ 2439.1] I thought you were gonna say something else about it.
+[ 2443.1] It was made by Monkeys.
+[ 2445.1] Is this the Antares?
+[ 2448.1] I can't tell if it's...
+[ 2449.1] No, no, no.
+[ 2450.1] It's an old Scorpius.
+[ 2451.1] I was trying to work it out from the back.
+[ 2452.1] I don't have many bad things to say about you.
+[ 2460.0] Why didn't you ask for a non-triangulated version?
+[ 2462.0] Because I did it 15 minutes before coming.
+[ 2464.0] Because I find out about all of this this morning.
+[ 2466.0] I didn't give him time to prep.
+[ 2468.0] So, in the context, this wireframe looks crazy.
+[ 2471.0] He actually has to spend his day doing his actual job
+[ 2474.0] before he gets to come.
+[ 2475.0] He's helping me with mine earlier, which is very nice.
+[ 2478.0] And now I'm just annoying him.
+[ 2481.0] You always do anyway?
+[ 2483.0] Yeah.
+[ 2485.0] But yeah, for people who don't know,
+[ 2487.0] you see the Scorpius mesh is like triangles, literally everywhere.
+[ 2491.0] That's because game engines can only read triangles.
+[ 2494.0] So, even though we typically model with engons and quads
+[ 2497.0] and not many triangles,
+[ 2501.0] when it goes into game, under the hood,
+[ 2503.0] it gets triangulated as the term,
+[ 2505.0] which just means turn to triangles.
+[ 2507.0] Oh yeah, just treat that.
+[ 2508.0] Make that the most...
+[ 2515.9] It is called lazy design.
+[ 2517.9] That's pretty cool.
+[ 2519.9] And it works.
+[ 2521.9] This would be hell on Earth to integrate on a production site.
+[ 2525.9] So, definitely do it.
+[ 2541.7] The dollar live says,
+[ 2543.7] Alberto is a master of lazy design.
+[ 2546.7] The dollar is lazy.
+[ 2548.7] Wow.
+[ 2549.7] Whom I stopped moving the mouse off.
+[ 2554.0] Sure deserves more.
+[ 2555.0] That your mom was watching the show, obviously.
+[ 2558.0] That hat is really comfortable.
+[ 2570.2] It is, actually.
+[ 2572.2] I see why you wore it so much, Jared, through the pandemic.
+[ 2575.2] Which I say again.
+[ 2577.2] This hat is really comfortable.
+[ 2579.2] Let's give it up with the normals.
+[ 2589.5] Boy, boy, I'm so blind.
+[ 2596.7] Fadrin says, some say lazy.
+[ 2598.7] I say working effective, efficiently, smarter.
+[ 2602.7] Nicely.
+[ 2603.7] How do we make it look more aside?
+[ 2609.5] Just chuck a bunch of RSI stuff on it.
+[ 2611.5] Yeah, after a while, this doesn't work, I think.
+[ 2617.0] Does that affect the entry exit on him?
+[ 2619.0] No, because they will move.
+[ 2622.0] Okay.
+[ 2623.0] Oh, that would be pretty cool, actually.
+[ 2625.0] You want to give it Mantis QED?
+[ 2632.9] A QED Heverbike.
+[ 2644.2] That would be about as useful as the Rock DS.
+[ 2649.2] Probably more useful.
+[ 2650.2] Without or without?
+[ 2656.1] As then.
+[ 2657.1] Without or without?
+[ 2661.7] Which one?
+[ 2662.7] The Winglets, gentlemen or not?
+[ 2664.7] I like them.
+[ 2666.7] Medium.
+[ 2672.5] Water.
+[ 2673.5] Today is giving me a lot of weird dishes.
+[ 2685.7] It's the keyboard finally rebelling.
+[ 2688.7] Trying to think what else we got.
+[ 2694.5] You haven't got the maps yet, have you?
+[ 2696.5] No.
+[ 2697.5] You need to do a map, don't you?
+[ 2698.5] Let's do the maps.
+[ 2701.7] You know what?
+[ 2702.7] You'll keep it like this with moustaches.
+[ 2703.7] You could also cocoon the player in a more streamlined flight mode
+[ 2708.7] to give a more aerodynamic shape for faster straight line speed.
+[ 2712.7] Oh, that was the thing with the wings collapsing.
+[ 2715.7] We did that.
+[ 2716.7] We don't know.
+[ 2717.7] And I already?
+[ 2718.7] Now, maybe you should add a windshield
+[ 2721.7] just so you can get those RSI struts in.
+[ 2724.7] Just like put a windshield up there
+[ 2725.7] where it's only got the tiniest triangle of actual glass.
+[ 2728.7] The rest is all struts.
+[ 2731.7] Yeah, just put a bar through the centre of the player
+[ 2734.7] while they're flying.
+[ 2735.7] Yeah.
+[ 2738.4] Now that's...
+[ 2739.4] Ah, perfect.
+[ 2741.4] Just for the dog.
+[ 2742.4] Suddenly feels much more familiar to the conneuners.
+[ 2745.4] Ben Curtis stopped watching, right?
+[ 2752.1] Good.
+[ 2753.1] He did, yeah.
+[ 2754.1] Thanks, God.
+[ 2756.1] I want a job among these ones.
+[ 2759.1] That's simple.
+[ 2760.1] Now, stop procrastinating.
+[ 2763.5] Let's do the maps.
+[ 2764.5] Yeah.
+[ 2765.5] Take the strat out.
+[ 2766.5] Could you take the map off the Scorpius?
+[ 2769.5] The muscle.
+[ 2770.5] Why did he put it there?
+[ 2771.5] It's a bit big.
+[ 2773.5] Shrink it.
+[ 2775.5] Thank you.
+[ 2776.5] I didn't know.
+[ 2777.5] Oh, is that how you do it?
+[ 2779.5] That's the one.
+[ 2780.5] I forgot.
+[ 2781.5] Is it the R or S in a blend of the scale?
+[ 2786.5] Yes.
+[ 2790.0] Oh, do we just...
+[ 2793.0] Don't worry, this isn't max, it'll come back.
+[ 2795.0] When was the last time you saved?
+[ 2796.0] It saves automatically.
+[ 2798.0] Oh, that's a job.
+[ 2804.0] Well, since we're waiting, tomorrow there is the
+[ 2806.0] Mercedes in Manchester, and thank you to Chris Lowe,
+[ 2809.0] that printed a lot of this.
+[ 2811.0] We're gonna give about 30 of them.
+[ 2813.0] We can get closer.
+[ 2815.0] To everyone who comes to me or Dan and says,
+[ 2818.0] Brun is a good boy.
+[ 2819.0] Let's get closer to my face.
+[ 2821.0] I didn't even crash.
+[ 2822.0] As soon as I said Brun.
+[ 2824.0] So, what he was saying is that there is a bar citizen
+[ 2827.0] here in Manchester tomorrow.
+[ 2828.0] It's at cargo.
+[ 2829.0] Just Google cargo Manchester, that's the name of the place.
+[ 2832.0] Alberto will be in tents and he'll give little 3D printed
+[ 2835.0] brands to anybody who, I don't know, pushes them or something.
+[ 2842.0] Now you have to come up and say Brun is a good boy.
+[ 2844.0] Because otherwise we're just gonna get people,
+[ 2847.0] that's how we're gonna find out who watched the stream or not.
+[ 2850.0] You have to say Brun is a good boy?
+[ 2852.0] Brun is a good boy.
+[ 2853.0] Or any other bonus points to say Chal Brun.
+[ 2855.0] If you say Chal Brun, that's it.
+[ 2857.0] Probably easier.
+[ 2858.0] There you go.
+[ 2860.6] Back to work.
+[ 2861.6] That's enough of a break.
+[ 2862.6] What men's done do to not go to a psychologist?
+[ 2866.6] Not go to what?
+[ 2869.6] Psychologist.
+[ 2870.6] Psychologist therapist to therapy.
+[ 2872.6] I thought you said toxicologist.
+[ 2874.6] I was like what?
+[ 2875.6] No.
+[ 2876.6] Not myself.
+[ 2878.6] Does it have a relay?
+[ 2880.6] Yes.
+[ 2881.6] Very good.
+[ 2882.6] I don't know where but it does.
+[ 2883.6] Totally up topic but would Jared ever grow his hair back?
+[ 2886.6] Good.
+[ 2887.6] Grows.
+[ 2888.6] It just, it means so much.
+[ 2891.6] It's, it's, I don't know what to do.
+[ 2893.6] Summer now so, yeah.
+[ 2895.6] Live captions.
+[ 2897.6] No, not live captions.
+[ 2899.6] It was like, it was a Windows update with AI.
+[ 2901.6] Yeah, of course.
+[ 2904.6] Okay, what else we got?
+[ 2906.6] Let's go through the list shall we?
+[ 2908.6] Change manufacturer to RSI.
+[ 2910.6] I am not done with that.
+[ 2911.6] That's kind of still happening.
+[ 2913.6] Dollar Live got timed out by Night Rider.
+[ 2916.6] Who got timed out?
+[ 2917.6] Dollar Live, who was that, Leith?
+[ 2919.6] The dollar.
+[ 2920.6] Leith got timed out by Night Rider.
+[ 2922.6] Thank you, Night Rider.
+[ 2925.6] Make it a two.
+[ 2926.6] If you've ever been timed out by Night Rider,
+[ 2928.6] that was a CIG employee that just got timed out by Night Rider.
+[ 2931.6] Yeah, there's no say.
+[ 2932.6] Good job, Night Rider.
+[ 2933.6] Thank you, Night Rider.
+[ 2934.6] Keeping us safe.
+[ 2937.6] Make it a two seat, well it's a three seat earth, so there you go.
+[ 2940.6] 50% extra seats or 100% I don't even know the maths.
+[ 2944.6] Add more framework on the line structure.
+[ 2946.6] You did that, didn't you?
+[ 2948.6] It's going to be time consuming.
+[ 2950.6] You did that.
+[ 2951.6] I know that.
+[ 2952.6] I'd say you did enough when you extended the front
+[ 2955.6] but out to match the thing.
+[ 2957.6] We'll just say that's fine.
+[ 2959.6] Integrate the piano key style dashboard.
+[ 2962.6] You're not doing that.
+[ 2964.6] There's no time for that, do we?
+[ 2966.6] RSI layer.
+[ 2967.6] I do want to give at least one control, one HUD.
+[ 2971.6] We haven't done any interface whatsoever.
+[ 2974.6] We put the pillar in the way, didn't we?
+[ 2977.6] We went the anti-HUD.
+[ 2980.6] There you go.
+[ 2981.6] That's a HUD.
+[ 2983.6] Yeah, stick your texture there.
+[ 2985.6] Really, our HUD planes actually do need these.
+[ 2987.6] The bone, the bone, the bone.
+[ 2989.6] Wait, modelling a bone in blender.
+[ 2991.6] It's dangerous.
+[ 2992.6] Oh yeah, that is dangerous.
+[ 2994.6] I have to do it.
+[ 2995.6] High risk.
+[ 2996.6] Make sure you do it the other way symmetrically.
+[ 2998.6] Not the way that you normally would.
+[ 3001.6] Yes, smart.
+[ 3003.6] They cut the screen share.
+[ 3005.6] You don't have to be just be careful.
+[ 3009.6] Yes, this is the correct way to do it.
+[ 3012.6] If you'd done it the other way, we'd have been in trouble.
+[ 3015.6] I mean, I did it the other year, so...
+[ 3017.6] Okay, so the bone.
+[ 3019.9] I'm still working.
+[ 3020.9] I don't see the bone in the list.
+[ 3021.9] Although I think it's further down.
+[ 3023.9] No, it was in the one now.
+[ 3024.9] Oh, that's the other one.
+[ 3025.9] That's the one.
+[ 3026.9] Oh, that was the personal storage, yeah.
+[ 3030.4] Okay, we did that.
+[ 3032.4] Done that. Exit any man, yeah.
+[ 3034.4] I feel like we can take that one straight away,
+[ 3037.4] but I feel like we should add at least one screen
+[ 3039.4] to satisfy the...
+[ 3042.4] Just extrude that bit.
+[ 3044.4] Yeah, like a little TV or something.
+[ 3047.4] There you go.
+[ 3048.4] I think that was some kind of instrumentation.
+[ 3050.4] There you go.
+[ 3052.4] I'm trying, Ben.
+[ 3055.9] Your employees are unruly.
+[ 3057.9] Get rid of the screen juice.
+[ 3064.8] Get it in his mouth. Why is it there?
+[ 3067.8] There you go.
+[ 3069.8] I think that's smaller.
+[ 3073.4] No, it's okay.
+[ 3074.4] I'll write that.
+[ 3075.4] There you go.
+[ 3076.4] Ben's worth the bigger one.
+[ 3078.4] Okay, ready, Thurs?
+[ 3084.0] All yours.
+[ 3086.0] Good luck, Reddit.
+[ 3093.5] All right, next.
+[ 3094.5] Mavs done.
+[ 3097.5] Wing transition done.
+[ 3099.5] Components done.
+[ 3100.5] Really, this is easy, this.
+[ 3101.5] Look at this.
+[ 3102.5] Relay position.
+[ 3103.5] We're calling that done.
+[ 3104.5] Bone done.
+[ 3106.5] Components are all done.
+[ 3110.8] Players path to entry is obscured by the mechanism.
+[ 3113.8] That was done now, wasn't it?
+[ 3114.8] Yeah, it was done.
+[ 3115.8] I broke the animations again, but it's fine.
+[ 3119.8] Upon going into landing state,
+[ 3121.8] the volume for the ship's silhouette changes in a way
+[ 3123.8] that will not make it compatible with most...
+[ 3125.8] Mark, why are you suggesting that?
+[ 3128.8] No MFDs or HUD elements.
+[ 3130.8] No one's worried about the silhouette of the ship.
+[ 3132.8] It looks too cool to just change it.
+[ 3135.8] I think Mark's worried that it can't fit into the UGFs,
+[ 3138.8] like if we wanted to drive it around inside that.
+[ 3140.8] Then by a pulse.
+[ 3142.8] Yeah, Mark wants us to be able to...
+[ 3147.8] I'm seeing people getting the fury into Microtech.
+[ 3150.8] They literally flying it around the spaceport.
+[ 3154.8] Although the guy's doing it's really passive.
+[ 3156.8] He's not shooting anyone, which is very...
+[ 3158.8] I've got a lot of respect for that level of restraint.
+[ 3161.8] Look at this.
+[ 3166.9] Look at this.
+[ 3168.9] Resolve this bit, I think, on the front a little bit.
+[ 3170.9] You see this piece?
+[ 3171.9] You just want it?
+[ 3172.9] No, like Shell the kind of bonnet.
+[ 3175.9] You see the bonnet here?
+[ 3177.9] I don't know what the bonnet is.
+[ 3179.9] Someone...
+[ 3181.9] We didn't add the...
+[ 3183.9] Shell, that's the battle that was...
+[ 3185.9] We didn't add the little laser repeaters.
+[ 3187.9] Oh yeah, yeah.
+[ 3188.9] Under the front wings, the little size ones underneath the front wings there.
+[ 3192.9] You could probably just set it further.
+[ 3194.9] Then we have to get rid of the iridescent paint.
+[ 3214.4] Why?
+[ 3215.4] Was that in the feedback?
+[ 3217.4] I guess we put it in because it was...
+[ 3219.4] It was really manufactured.
+[ 3221.4] It's a manufacturer.
+[ 3223.4] What's the Oricide colour?
+[ 3224.4] It's like a deep blue and mid grey, isn't it?
+[ 3227.4] Black and orange.
+[ 3232.0] Oricide's black and orange?
+[ 3234.0] I don't know.
+[ 3236.0] You were doing it for a while, isn't it?
+[ 3239.0] I don't know, I'm just trying to think.
+[ 3241.0] Maybe I've been doing all my work.
+[ 3243.0] The Oricide logo, the logo is...
+[ 3245.0] It does have the orange...
+[ 3246.0] Yes, it's tertiary colour.
+[ 3247.0] Black or orange and...
+[ 3248.0] Yeah, you're right.
+[ 3249.0] Like a gunmetal.
+[ 3250.0] Like a gunmetal.
+[ 3251.0] Yes, you are.
+[ 3252.0] Like a gunmetal.
+[ 3253.0] Yo, look at that.
+[ 3256.7] Yeah, under slung.
+[ 3257.7] So they can give them all.
+[ 3259.7] Just changing the materials.
+[ 3262.7] We're done. The feedback's done.
+[ 3268.4] Ginon Tannick says two weeks on this,
+[ 3271.4] Jared's officially completely run out of ideas.
+[ 3275.4] But you're still here watching.
+[ 3277.4] Yeah, I can confirm everything on this sheet is accounted for.
+[ 3291.4] So we'll do another one.
+[ 3293.4] I guess we can render it now.
+[ 3296.8] Let's see if guns are in this position.
+[ 3298.8] Oh, you put them at the ends.
+[ 3300.8] Yeah, look at that.
+[ 3301.8] Oh, you will get more range of motion that way.
+[ 3303.8] Let's get rid of the colour.
+[ 3308.6] Yeah.
+[ 3309.6] Not for my choice.
+[ 3312.0] All right, that's all.
+[ 3320.1] First try.
+[ 3321.1] Oh, that's...
+[ 3322.1] Yeah.
+[ 3323.1] I don't wait.
+[ 3324.1] That's pretty, it was already here.
+[ 3325.1] Do we have a decal, like an Oricide decal,
+[ 3330.7] we can put on the wing?
+[ 3332.7] No, it's with me.
+[ 3335.7] You don't have enough time to prepare.
+[ 3338.7] That's fair enough.
+[ 3339.7] Do we want more mats?
+[ 3345.2] Just imagine there are...
+[ 3352.8] Yeah.
+[ 3355.2] Maybe hide the component boxes now as we know they fit,
+[ 3358.2] because they never look nice in the final render.
+[ 3360.2] Yeah.
+[ 3361.2] Even in-game, like when we're working on this,
+[ 3363.2] we have these placeholder boxes,
+[ 3365.2] but usually we just hide the layer
+[ 3367.2] because they get spawned on in-game later.
+[ 3371.2] Do you know the font that Arisa uses?
+[ 3373.2] No.
+[ 3374.2] No idea.
+[ 3375.2] I have the font.
+[ 3378.0] I just don't know what it is.
+[ 3381.0] Do it in, like, Comic Sans.
+[ 3383.0] Yes.
+[ 3386.0] There's a new CEO in charge of RSI.
+[ 3388.0] That's right.
+[ 3389.0] He's in and he's making a statement.
+[ 3391.0] I don't remember how to change it, so no.
+[ 3396.8] Maybe Leith knows it.
+[ 3398.8] Oh, but he's banned in the chat.
+[ 3400.8] We can't ask him.
+[ 3401.8] Of all people Leith would know how to change it to Comic Sans.
+[ 3404.8] He's back in the chat.
+[ 3406.8] He's back in.
+[ 3407.8] Leith, how do we do it?
+[ 3408.8] It's too late.
+[ 3411.4] He's going to say someone that gets him banned again.
+[ 3413.4] There's no way we can...
+[ 3414.4] You won't be serious.
+[ 3415.4] Oh, wait, you've done it?
+[ 3416.4] There you go.
+[ 3417.4] That'll do.
+[ 3418.4] So this is not going to tell you because you messed with his...
+[ 3420.4] ...house.
+[ 3421.4] I messed with his mouse because...
+[ 3422.4] I think that's fair.
+[ 3423.4] ...because it changed my font.
+[ 3426.4] Yeah, he changed your font.
+[ 3427.4] This is an area of expertise.
+[ 3428.4] He knows how to do this stuff.
+[ 3430.4] Do it the yellow, baby, like Jared has mentioned.
+[ 3441.8] I don't know.
+[ 3445.3] I feel like I'm going to be fair.
+[ 3446.3] No, it doesn't look good.
+[ 3447.3] No, too much light.
+[ 3448.3] White-ish.
+[ 3458.2] There we go.
+[ 3462.0] Oh, do you know what we could do?
+[ 3463.0] I don't know how easy it is to do in Blender,
+[ 3465.0] but can you put, like, blinky lights on it?
+[ 3468.0] You know, like...
+[ 3469.0] You can put lights, not let them blink.
+[ 3472.0] Okay, put some lights on it.
+[ 3474.0] You've got like a minute.
+[ 3475.0] You know, get your render.
+[ 3477.0] No render it.
+[ 3511.5] We just show it in like this.
+[ 3523.6] And then put a cycle on.
+[ 3527.6] Don't crash.
+[ 3528.6] No.
+[ 3529.6] The light is pointing directly on that wing surface.
+[ 3533.6] That's right.
+[ 3534.6] Oh, there you go.
+[ 3535.6] That looks nice.
+[ 3536.6] All right.
+[ 3537.6] Well, there we go.
+[ 3538.6] Not a bad way to spend an hour.
+[ 3545.3] And of course, this is all still from what is essentially
+[ 3549.3] one silhouette, from one thumbnail.
+[ 3551.3] Yeah.
+[ 3552.3] How many thumbnails would you actually create?
+[ 3554.3] It depends by the shape and situation.
+[ 3556.3] I can say that we had 17 for the pose.
+[ 3559.3] We had 17 different thumbnails.
+[ 3560.3] 17 different silhouettes, shapes for the pulse alone.
+[ 3563.3] Yes.
+[ 3564.3] Before you even got into details.
+[ 3565.3] Yeah, we had nine for the studio, for example,
+[ 3567.3] and three for the store room.
+[ 3569.3] So it depends.
+[ 3570.3] And in these two hours, we've done one with some slight,
+[ 3574.3] with some slight, you know, feedback changes,
+[ 3577.3] but essentially one silhouette, one thing.
+[ 3579.3] Yeah, and it is a very junkie.
+[ 3581.3] When we present stuff, especially to the high direction
+[ 3584.3] of the company, we try to polish it a little more.
+[ 3587.3] Suffice to say, there's a lot of...
+[ 3589.3] a lot of work that goes into making these.
+[ 3591.3] Yes.
+[ 3592.3] Unfortunately, yes.
+[ 3594.3] Unfortunately, yes.
+[ 3595.3] Show the animation of it getting in.
+[ 3597.3] No, it's broken.
+[ 3598.3] Yeah, so you accidentally deleted all the animations.
+[ 3600.3] Well, that does it for this week's show.
+[ 3604.3] Thanks for hanging out with us, everybody.
+[ 3606.3] Thank you again to Dan and to Abertto.
+[ 3609.3] After all we've been through.
+[ 3612.3] This is my seventh time here.
+[ 3615.3] Can you think of how much better these shows would be
+[ 3618.3] if they were like a Tuesday when I was still fresh
+[ 3621.3] and not the end of Friday?
+[ 3623.3] Thanks for joining us.
+[ 3626.3] What's the other show we make?
+[ 3628.3] ISC.
+[ 3629.3] ISC comes back next week.
+[ 3630.3] ISC comes...
+[ 3632.3] What's it called?
+[ 3634.3] ISC comes back next week with the first of a three
+[ 3639.3] interesting and unique episodes.
+[ 3641.3] I hope you'll tune in and check them out.
+[ 3643.3] And then of course we'll be back here next week.
+[ 3646.3] Next week's SCL is another game dev special.
+[ 3648.3] We've got members of the environment team on
+[ 3651.3] and we are going to create a forward operating base
+[ 3655.3] as seen in the upcoming Pyro system.
+[ 3657.3] So come on back to check that out.
+[ 3659.3] For Star Citizen Live, I'm Jared.
+[ 3661.3] That's Abertto.
+[ 3663.3] That's Dan.
+[ 3665.3] Dan, thanks for watching.
+[ 3668.3] If you're...
+[ 3669.3] Check the Bar Citizen next this week
+[ 3671.3] as International Bar Citizen Weekend.
+[ 3673.3] If you're in Manchester, Austin, Los Angeles,
+[ 3676.3] Frankfurt or Montreal, there's probably a Bar Citizen
+[ 3679.3] near you happening this week.
+[ 3681.3] Good chance of many devs and folks showing up.
+[ 3684.3] So check out the RSI website for details on that.
+[ 3687.3] And take care and show them around one more time.
+[ 3690.3] Go ahead.
+[ 3691.3] I know you want to.
+[ 3693.3] I haven't told them about that.
+[ 3694.3] Oh, there you go.
+[ 3695.3] There you go.
+[ 3696.3] All right.
+[ 3697.3] Thanks for watching everybody.
+[ 3698.3] Take care.

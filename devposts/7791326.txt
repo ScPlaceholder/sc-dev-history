@@ -1,0 +1,68 @@
+## Star Citizen Alpha Patch 4.1
+Alpha Patch 4.1 has been released to the PTU, and is now available to test!  Patch should now show: VERSION 4.1.0-PTU.9610516.
+## Build Info
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Enabling Orison and Area 18 NPE
+- Wikelo Collector Missions
+- T0 Item Recovery
+- Ground Vehicle & FPS Mining Updates
+- New Upcoming Event Mission (Keeping all details limited to test in game communication)
+Tonight's build has further Location Art/Animation/Audio Polish as well as Balance Changes and Flow Blocking Fixes for the Hathor Locations and Event.
+This event will utilize 2 new locations in the PU; Hathor Platform Alignment Facilities and Hathor Orbital Laser Platform.
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback
+- Additional Missions updated for Meshing
+- VOLT Weapons
+## Known Issues
+We have temporarily disabled laser damage from a certain portion of the New Event at Hathor
+- Critical: PU - Personal Inventory - Item Recovery - Players respawn without their loadout when holding bound items upon death
+- Critical: PU - Personal Inventory - Item Recovery - User will lose their previously equipped loadout upon leaving Klescher Rehabilitation Facility
+- Critical: PU - Transit - Entity carriage is stuck in transit to a gateway, but never arrives which renders the gateway unusable
+- Critical: Mission Refactor - Comm Array Repair - Contract in mobiGlas becomes hidden when another player enters mission location
+- Critical: Mission Refactor - PVP Missions dont work
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Locations - Personal Hangars - Actor - If player ungracefully exits while in hangar, hangar stows and does not unstow upon recovery
+- High: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel
+- High: PU - Pyro - Jump Point - Failing a Jump point will displace the player far away from the gateway station
+## Features & Gameplay
+- AI
+- Gave Shopkeeper and Civilian AI at Derelict Settlements Pistols to Help Defend Themselves
+- Added Multiple new Ninetails FPS AI Loadouts with New Variations
+- Gameplay
+- Added Different Visuals for Amount Variations of Hand/Ground Vehicle Mineables
+- Ships and Vehicles
+- Increased Energy Cannons Max Ammo Load From 15 to 25
+- Added Ships to in-game Ship Shops: ARGO CSV-SM, Crusader Intrepid, Anvil Terrapin Medic, MIRAI Pulse LX, RSI Lynx
+- Weapons and Items
+- Added Size 0 Mining lasers to Shops
+- Added Vulture Tractor Beam to Shops
+- Added ROC/DS Mining Pods to Shops
+- Arena Commander
+- Added Crossroads of Crime Map - Free Flight & Elimination
+- Tank Royale and Team Elimination are now Active by Default (Team Elimination and Tank Royale will only rotate Crossroads of Crime)
+## Bug Fixes
+- Potential Fix: Caterpillar cargo doors not all staying deployed (STARC-160511)
+- Potential Fix: Origin 400i - PU - Actor / Vehicles - Standing up from the 400i seat in the 400i pushes player out of ship (STARC-97616)
+- Potential Fix: PU - Stanton - Locations / MobiGlas / Collector Missions / number of items are not being resolved correctly (STARC-160302)
+- Potential Fix: MISC Prospector - PU - Vehicles - Prospector is invulnerable from damage on the rear side of the ship
+- Potential Fix: ANVIL Hornet - SOME Variants - PU - Vehicles / Vehicle Art Tech - Many Hornet variants weight Balance makes it Rear engine tilt downwards to varying degrees
+- Potential Fix: PU - Personal Inventory - Item Recovery / UI - Players can loot account bound items by pressing the Take All button in the loot UI
+- Potential Fix: PU - Stanton- VFX - The Orbital Laser impact VFX is offset based on planetary rotation
+- Potential Fix: Aegis Hammerhead - PU - Vehicles - Vehicle Tech Art - Vehicle is not correctly balanced and tilts when landed in the personal hangar
+- Potential Fix: KRIG P-72 - ALL Variants - PU - Vehicles / Vehicle Tech Art - Archimedes Weight Blanace makes its rear end tilt downwards
+- Potential Fix: PU - Stanton - Security Post Kareah - AI / Locations / Audio / Dialogue - Social AI - Security Guard AI Wildlines play constantly regardless of distance
+- Potential Fix: PU - Mission Content / Props / Design - Hathor Location PAF Dish Control terminal will not reset card slots after streaming in after event reset
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 4 Server Crashes
+- Fixed a Server Deadlock

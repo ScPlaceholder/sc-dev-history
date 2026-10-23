@@ -1,0 +1,68 @@
+Alpha Patch 4.10.2 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.2-PTU.12770507
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Event missions in Stanton
+- TTK TTD Ship Balance (This is a TECH-PREVIEW within the normal PTU build for the weekend. This is not intended for 4.10.2 but will be a good way to test it!)
+## Features & Updates
+New In-System Event
+More balance and polish for the event. Event points are now split across mission types, and mission unlock progression has been rebalanced. Voice comms added across the patrol and support mission flows. Heavy armored enemies encountered during the event now have the correct armament and are appropriately tougher to bring down.
+Weapon Audio
+Continued mix pass across FPS weapon audio as part of the ongoing weapons audio refactor
+## Bug Fixes & Technical
+Added new login stability updates. Players should no longer be incorrectly kicked with a "Duplicate Login" error when their client silently reconnects after a dropped connection. Previously a reconnect within a fraction of a second could be mistaken for a second machine and boot the player out of an active game session. This would make it look like you were kicked back to the main menu without explanation.
+- Potential Fix: Heavy Combat Hunter 3 helmet variants not applying the snoopy cap or necksock when equipped
+- Potential Fix: MISC Prospector tilting when retrieved from a hangar
+- Potential Fix: Crafting fabricator filtering the TH-01 Propulsor mission item under "Container" rather than "Missions"
+- Potential Fix: Event contracts not being available at certain locations around Stanton
+- Potential Fix: No voice comms playing throughout the event patrol and support mission flows
+- Potential Fix: Event patrol contracts completing prematurely before all objectives were reached
+- Potential Fix: Event shelf tag points facing the wrong direction, causing items to be placed incorrectly
+- Potential Fix: Event NPCs at pickup and dropoff locations standing static instead of moving around the platform
+- Potential Fix: Event delivery boxes offsetting in the player's hands when picked up from the rear
+- Potential Fix: Event progress tracker appearing in the mobiGlas Journal before the event was active
+- Potential Fix: Mirai Pulse and Pulse LX radar UI displaying inverted, with holographic dashboard UI positions adjusted
+- Potential Fix: Power Config MFD showing no tooltip when hovering over component icons; the tooltip now displays the component name and temperature
+- Potential Fix: Physicalized storage decals transitioning to a lower LOD too early across multiple vehicles
+- Potential Fix: RSI Constellation Phoenix piano not playing audio
+- Potential Fix: Arena Commander Kill Collector FPS players missing the holographic skull head during the Day of the Vara event
+- Potential Fix: Event salvage contract title containing a typo, and contract titles and descriptions requesting the wrong commodity
+## TTK Balancing Update Tech-Preivew
+For this weekend's PTU build we are folding in the TTK balancing updates! This is just a test for the weekend and is not intended to arrive with 4.10.2 but this will be a great testbed for this!
+It’s time for TP4, we hope this time it will go well and also dearest apologies to everyone who participated in TP3, it was cursed. TP3 had multiple serious issues
+- Due to in issue in implementation, all shields had double their intended health values. This lead to an increased TTK - absolutely opposite to our goal. Props go out to the one player who noticed and commented under our post. There was also a slight issue in communication, we stated that in TP3 our goal is to “Increase TTK for PVP”, thereby we meant to increase it compared to TP2, NOT compared to live.
+- An error in data entry caused multiple shields to have crazy amounts of power pips causing them to not function in game.
+- We encountered a new bug that causes ships skip their over damage health pool. This means that instead of being disabled first, ships explode right away - 10 times earlier than they are supposed to. This made ships explode right after their shield is gone.
+These issues were addressed mostly in the feedback we received for TP3. Other takeaways were however
+- Ballistics are still too strong
+- Even though ships have double the intended shield health, the TTK for large ships decreased.
+- Power pip assignment cannot be a mean of balancing ballistics at the moment as with current engineering functionality, players tend to max out their shields anyways
+- The AI Modifier is largely disliked - we have noted this, we are already discussing it
+So for TP4 our main objective is to deliver a fixed and refined version of TP3
+- Shields have been adjusted to intended values, this should bring the TTK down again
+- Ballistic DMG has been decreased by 20% compared to TP3
+- AD4B, AD5B, Deadbold IV and Deadbolds V Aplha DMG has been provisionally nerfed by an additional 20% as their they have been called out as OP and impacted feedback
+- We looked closer into shield and health values of large and capital ships and adjusting their values generally they increased to match them closer to the 2/3 shield, 1/3 Armor and critical parts goal.
+- Energy and Ballistic Deflection has been adjusted.
+- AI Modifier has been decreased.
+Unfortunately we were not able to fix the over damage bug yet. We currently have a 25-50% reproduction rate. However we still think that intel will be useful. Please keep that in mind during testing.
+Overall compared to live we have the following changes - most of them could already be found in TP3
+- Shield Health +17%- +70%
+- Armor Health -20% - +100%
+- Alpha Damage +145% for Energy, +116% for Ballistics
+- Armor Deflection for Energy increased  by +80%, for Ballistics +64%
+Adjustment of Shield Resistance
+- 40-50% For Ballistic Damage depending on shield health and power pip assignment
+- 35-45% For Energy Damage depending on shield health and power pip assignment
+Adjustment of Shield Absorption
+- 0-80% For Ballistic Damage depending on shield health
+Slap Down Time increased by
+- +100% for when the shield is damaged - same as TP2
+- +70% for when the shield is broken
+Other Updates
+- Shield Regeneration adjusted according to Health increase. Resulting in slower recharge than Live.
+- AI modifier added for PVE. AI ships take +20% Damage.
+Thanks again for bearing with us on this journey, and we wish you a good time during testing.
+Let us know what you think!

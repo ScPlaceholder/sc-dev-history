@@ -1,0 +1,95 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to Wave 1 testers!  Patch should now show: VERSION 4.0.0-EPTU.9448577.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US Servers
+Audience: Wave 1
+Long Term Persistence: Enabled
+Mesh Configuration: 2:2:380 (2 Servers Running Stanton, 2 Servers Running Pyro, 380 players total on the mesh)
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Today's build contains many more mission integrations for Pyro missions including reward balancing
+- Stability & Bugfixes
+- Server Meshing  2:2:380
+- Pyro Star System and New Locations
+- New Missions and Refactor
+- Contested Zones
+- Jump Points
+## Known Issues
+For this build, we have temporarily disabled the altimeter reading in ships to avoid a nearly 100% client crash.
+For 4.0, we have removed the "Extended View" option in the MFD screen and replaced it with a third tab which is called "Enable Advanced HUD". That HUD however is not yet ready and is WIP so won't show anything.
+- PU - Pyro - Rundown Station (R&R) - Checkmate - Locations / AI - AI are spawning out of bounds floating inside of the station
+- PU - Medical Insurance Terminal / UI - Regeneration kiosk UI does not update after transferring imprint
+- PU - Pyro - Network / Streaming / Locations - Certain Rastar Locations will briefly stream in for all player located in Pyro, regardless of distance
+- PU - Multi-System - Jump Points - Ships / Vehicles / VFX - Ships will have a VFX trail in front of the Cockpit after Jumping whenever the Vehicle moves
+- Stall - Client - PU - Jump Points - Performance - There is a brief client stall when travelling through the Jump Point Tunnels
+- PU - Multi-System - Jump Points - Ships / Vehicles / SFX / Audio - The Jump Point SFX are rapidly looping/cut off
+- PU - UI - mobiGlas - mobiGlas UI is displaying incorrectly on several pages/tabs
+- MISC Starlancer Max - PU - Vehicles - Starlancer Max landing gear won't deploy but ship speed is limited as if they were
+- PU - Pyro - Locations - Checkmate - Medium Hangar blocked by station geometry
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- Multiweapon - PU - Actor / Animation / Weapons - Both male and female actors do not animate while reloading weapons
+- PU - Pyro - Orbituary - Locations / Art / VisArea - Navigating from assigned hangar elevator to "Entrance" opens to a VisArea portal above medical clinic
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+## Features & Gameplay
+- Locations
+- Updated the Quantum Travel markers for Pyro 2 and 3 along with more Star Map Records
+- Further Outpost and Contested Zones Lighting and Audio Polish
+- Further Contested Zone Performance Optimizations
+- Pyro Station Interior and Exterior Lod + View Distance Polish
+- Pyro 3 Planet Ground Fog Polish
+- AI
+- FPS Combat AI Balance: Accuracy change to NPCs to make them more inaccurate at range and to make time since last seen is more forgiving
+- Further AI Voice line and Facial Animation Polish
+- Quazi Grazer: Added Further Idle and Transition Animations
+- Changed Contested Zone NPCs to Pyro Outlaws for Asteroid Base Missions
+- Gameplay
+- Reduced Jump Tunnel Traversal Time
+- Star Map: Added party Member Markers to Marker Databank Panel
+- Added Single to Multi Small Grade Hauling Contracts
+- Removed Default Binding for the Gimbal Source During Manual Gimbal Mode
+- Loot Menu UI: Added logic to hide tab list if only showing 1 tab
+- Ships and Vehicles
+- Tumbril Storm Series Claim Timer Increased to 5 minutes
+- Core Tech
+- Further Networking Optimizations to Help Reduce Interaction Delays
+- Audio Polish: Dynamic Music Audio Attenuation Polish. Audio Propagation Performance and Caching Improvements.
+- Jump Points: Tunnel Shaping, Audio, Lighting, and UI Polish Pass. Physicalizing the Jump Tunnel allowing camera collision to avoid the camera clipping out the tunnel.
+- Camera Vibration Reduced for 3rd Person Ship Camera
+- Fixed Multiple Entities in the PU Causing Large Log Spams
+## Bug Fixes
+Today's build contains quite a few more fixes for missing collision around outposts
+- Fixed - PU - Pyro - Network / Streaming / Locations - Certain Rastar Locations will briefly stream in for all players located in Pyro, regardless of distance
+- Fixed - PU / Frontend - Stanton - Locations / Rest Stop (R&R) / Gateway Stations - UI - Players who log out at a Gateway station have no enter universe button when attempting to rejoin and become locked out of the game (STARC-143528)
+- Fixed - PU - Pyro - Rundown Stations - Multiple Locations - Locations / Shopping - Refuel, repair, and rearm services unavailable when landed on landing pads (STARC-140971)
+- Fixed - Stanton - Hybrid-Service / Network - Restarting or Crashing the hybrid-service will result in the Client not being able to load back into the PU (60030 error) (STARC-122894)
+- Fixed - PU - Stanton - Pyro Jump Point - Locations - Jump Gate is stuck on closing status (STARC-140767)
+- Fixed - Stanton - Characters / Armors / Inventory / UI - Morozov-SH Brushdrift Helmet appearing as a crate in both shopping kiosk and personal inventory (STARC-61325)
+- Fixed - PU - Vehicles - UI - Cancel route button missing on Starmap (STARC-143104)
+- Fixed - RSI Scorpius - PU - Vehicles / Design - Component hatches not usable (STARC-108896)
+- Fixed - PU - Stanton - Locations / Rest Stop (R&R) - Social AI crowd the bars and there are sometimes no spots to order (STARC-117496)
+- Fixed - PU - Multi-System - Jump Points - Ships / Vehicles / VFX - Ships will have a VFX trail in front of the Cockpit after Jumping whenever the Vehicle moves (STARC-143049)
+- Fixed - PU - Pyro - Rundown Station - Lagrange Stations - Locations / Shopping - Repair, Rearm, Refuel listed as "No Service" (STARC-140442)
+- Fixed - PU - Pyro - Contested Zones (CZ) - Checkmate Station - Location - Armistice zone is present in Contested Zone stopping player from drawing any weapons (STARC-136047)
+- Fixed - FPS / Weapons - Sometimes you cannot ADS
+- Fixed - PU - Missions - mobiGlas / Mission Content - Multiple missions types are appearing in regions where they should not be available
+- Fixed - PU - Pyro - Rundown Station (R&R) - Multiple Locations - Locations / Vehicles / Shopping - Quick buy is not functioning for display vehicles
+- Fixed - PU - Pyro - Vatra (Pyro 5b) - Frontier Outposts - Locations / Graphics / Planet Tech - Visual artifacts (z-fighting) on the planet terrain can be seen when navigating around the outpost
+- Fixed - Origin 890 Jump - PU - Lighting / Ships / Ships Features - Bringing up the ship's landing pad will cover it in shadowy visareas
+- Fixed an issue causing the Jump Point Opening to not show due to overlapping Visareas
+- Fixed - PU - Jump Point - There is a chance that the Jump Drive cannot progress past "Requesting Jump" after completing a jump
+- Fixed - PU - Stanton - Crusader - Orison - Locations - AI can be found stuck outside of Hab Building rear entrance
+- Fixed - PU - Pyro - Pyro V - Locations / Planet Tech / Graphics - A pattern of graphical noise can seen on Pyro V when viewed from certain angles
+- Fixed - PU - Pyro - Contested Zones (CZ) - Orbituary - Art / Locations - Interaction Panels on Grating Doors are missing
+- Fixed - PU - Pyro - Asteroid Bases / Contested Zones - Locations / Design - Freight elevator - Explosive red cannisters cause an 'internal error' when attempting to lower elevator
+- Fixed - PU - Stanton - Locations / AI - Social AI - Bartender AI will sometimes not grab a glass causing them to fail the bartender flow
+- Fixed - SC - Creatures - Quasi Grazer - Quasi egg displays <=Placeholder=> when in inventory or while using tractor-beam
+- Fixed - Mission Refactor / New Player Experience - After pressing [Play the Tutorial], the game loads infinitely and eventually times out
+- Fixed - AC - Pirate Swarm / Vanduul Swarm / Squadron Battle - The player is redirected back to the deploy screen after the "Game Starts in" countdown has ended
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 10 Server Crashes (including Jukebox causing DGS crashes)
+- Fixed a Server Deadlock

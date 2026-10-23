@@ -1,0 +1,17 @@
+## Star Citizen Patch 3.5.1e
+Alpha Patch 3.5.1e has been released to PTU, and is now available to test!  Patch should now show: PTU-1835013.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Breaking server performance:  Travel around and spawn AI ships, QT to different places, ect.
+Known Issues
+- NPC assist beacons no longer function correctly if the server has been up for awhile.
+- Bed logout doesn't work on planetary surfaces and may be inconsistent elsewhere.
+- AI and player ships may appear jittery.
+- CPU spikes (observed as a client hang) may be observed at Lorville.
+## Bug Fixes
+Technical
+- Fix for server performance slowdown.

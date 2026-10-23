@@ -1,0 +1,67 @@
+## Star Citizen Patch 3.18.0-PTU.8349208
+Alpha Patch VERSION 3.18.0-PTU.8349208 has been released to the PTU, and is now available to test!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US/EU
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+Jumptown 2.1 playtest! Will be started approximately 1 hour after this build goes to PTU and we expect to run until 9pm CST | 03:00 UTC
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- Drake Corsair has a lower than intended aUEC price
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- Salvage / Hull Scraping - Nomad - Some sections of the hull show as valid but do not allow salvage
+- Salvage / Hull Scraping - Crusader C2 Hercules  - Some sections of the hull are exceedingly difficult/impossible to salvage
+- Salvage / Hull Scraping - Anvil Carrack  - Sections of the hull show as valid but do not allow salvage ; Some only salvage when beams are offset ; Some show as valid but do not allow salvage
+- Derelicts - Missions / AI / Locations - Once a mission has been completed at the settlement the AI will not respawn for the next mission resulting in it completing upon reaching the location
+- Derelicts - Missions / AI / Locations - If reinforcements do not leave the ship they will be counted towards the hostiles remaining total even once the ship has left resulting in the mission being incompletable
+- Valkyrie bottom turret locks and makes player invisible
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Ships - Quantum entanglement - hostile indicator - QED does not mark ships as hostile
+- Multivehicle EU - Stanton - Vehicles - Destroyed ship thrusters will still not function after being repaired
+- Cargo - Performance - Fully loaded C2 landed at Area 18 results in Slow Framerates or Crash
+- Vehicles/IFCS - When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Stanton - Law System - Users spawn in prison with weapons and armor after dying with crimestat
+- Trading - Cargo invisible in multiple ships
+## Feature Updates
+Ships and Vehicles
+- Added Centurion, C8R, Cutter, Corsair, and Mule to in-game shops
+## Bug Fixes
+- Fixed - Mining - Vehicle - Greycat Industrial ROC-DS - Mining UI and HUD does not display
+- Fixed - Mining - Vehicle - Greycat Industrial ROC - Mining laser does not deploy when entering mining mode
+- Fixed - Mission Content / AI - UGF Raid - Bunker / UGF mission NPC kills are not always recorded
+- Fixed - FPS Mining - UI / Game Code - Multi-Tool mining laser energy too high
+- Fixed - Klescher Rehabilitation Facility - Shopping / Kiosks / UI - There is a "USE" prompt when entering inner thought mode at the commissary kiosk
+- Fixed - Multiship - Vehicles / Ship Components / Design / UI - ASOP Terminals state that Filing a Claim on a Ship will spawn a factory setup Ship but will actually spawn the Ship with any custom changes made to the Loadout
+- Fixed - mobiGlas - UI / VMA - When viewing the Drake Corsair via the VMA at certain angles on the preview, it will cause the UI to vanish
+- Fixed - 890 Jump - Ship Features - Art - Graphics - There are numerous panels and doors throughout the 890j that exhibit VisArea Issues
+- Fixed - ARGO MOLE ALL Variants - Vehicles / UI - Argo Mole mining turrets missing HUD and MFD's
+- Fixed - Inventory - Can't split stacked items into smaller stacks
+- Fixed - DRAKE Cutlass Series - Ship Features - Turrets - Graphics / Tech / Art - The turret interiors on the Cutlass series have a VisArea and will appear invisible when crewed by players
+- Fixed - Actor Feature - Actor Status / Inventory - The player suffocates with a helmet on, as the helmet equip appears to be stuck pending
+- Fixed - Volatile Cargo - Mining / Game Code / Ships / Vehicles / Inventory / Refinery - Ships will retain the Volatile Cargo Alarm and Damage on Countdown from Volatile Cargo Removed by the Refinery
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 8 Server Crashes

@@ -1,0 +1,14 @@
+Okay, so there is a bunch of persistent IFCS settings like:
+G-Safe, Decoupled, ESP, Space Brake Enables Boost, Gravity Compensation, etc. ... and pretty much all players have different ideas what those should be.
+Now for each of these internal IFCS settings you will find a separate entry in your options ... not sure what the options will be called but probably along the lines of
+"IFCS - Factory Settings - ESP Enabled - YES"
+"IFCS - Factory Settings - G-SAFE - YES"
+"IFCS - Factory Settings - Space Brake Enables Boost - YES"
+"IFCS - Factory Settings - Speed Limiter On - YES"
+"IFCS - Factory Settings - Cruise Control - NO"
+etc.
+So when an entirely new ship is delivered (which means a new ship out of the factory or in AC, not something you flew already or stored before) the first human (or alien) player to enter the pilot seat of that ship defines what this ship factory settings look like. The game just copies whatever data you have in your options and applies that to IFCS ... and from that point onwards, these IFCS settings are remembered. Anyone else flying your ship will see the exact same settings because not the player owns the IFCS behaviours anymore but the ship.
+The same accounts when you want to fly the ship of a friend. Maybe your friend prefers to fly always in decoupled. So when your friend flew the ship before and you sit in the pilot seat, that ship will be set to decoupled. You can ask ofc to change the settings (or simply press C, that's the same really). However if nobody had ever touched that ship before and you sit down, it will apply whatever your preferred IFCS Factory Settings are.
+But anyways, the TLDR is that the first actual player sitting in a pilot seat defines the ship's initial IFCS settings. After that all changes are remembered to players can e.g. set up their M50 differently than their Reclaimer.
+But again, the factory options won't be there for the initial 3.23.0 release. We'll have to discuss internally when we'll add this.
+Does that make sense?

@@ -1,0 +1,91 @@
+PU Monthly Report
+November/December 2024
+It’s the first Monthly Report of 2025! To kick off the reporting year, we’re looking back to the end of 2024, detailing everything done for the Persistent Universe in November and December. Read on for all the details behind Alpha 4.0’s development and beyond.
+## AI (Content)
+The AI team ended 2024 progressing with tasks for Alpha 4.0. This involved adding and validating social AI behaviors across the new stations and outposts to ensure NPCs are positioned and path-find correctly through each space. This involved playing through the various stations and discussing where it was or wasn’t appropriate to place characters and what type of story is intended to be shown there.
+As many players noticed, dynamic conversations have started to appear in-game, which began with tech from Squadron 42. To improve the experience, a small capture session was undertaken to enable new conversations specific to Pyro and Stanton.
+“This is definitely something we want to leverage more in the future, potentially even allowing us to reference in-game events.” AI Team
+The team also looked back at Stanton’s landing zones to upgrade their behaviors to the standard set in Pyro. For example, they tested population numbers to see how many NPCs could fit in a location without compromising performance. Though the numbers still aren’t where they would like, particular in the bustling metropolis of Area18, it provided valuable insight as they begin to experiment with creating environments with denser populations.
+## AI (Features)
+In November and December, the AI Feature team progressed with combat for Pyro, particularly for Alpha 4.0’s Contested Zones. This led to improved server framerate and stability. For example, ammo-management spoofing is now functional in locations where ammo crates are yet to be balanced. As such, NPCs will reload, run out of ammo, and search for more from downed combatants to provide much-needed ebb and flow to the combat without needing to wait for a full looting rebalance.
+Time was also put into polishing reloading and ammo-management animations and behaviors to ensure they’re ready for Alpha 4.0.
+AI Features also improved the medic behavior that allows MedPen-equipped NPCs to revive their squad mates, providing an extra challenge to players. This also creates gameplay opportunities by allowing players to bait enemies into the open to heal their comrades.
+The team also fixed issues when cover is compromised to ensure NPCs respond quickly when ambushed. Bugs in ‘defend areas’ were fixed too, which are used to shape the flow of combat and set up areas where enemies wait in cover to ambush players.
+Work was then done to simplify and refactor the ‘investigate’ behavior, giving it additional fallback options and enabling it to work more sympathetically with the perception system. This functionality is used to drive searching behaviors across groups when the AI has not fully perceived something or has lost its target.
+Significant work was also done to ensure that perception (particularly vision) checks using client calculations are efficient and correctly distribute checks to characters present at different LODs.
+In addition, AI Features worked alongside Animation to introduce a new creature to the Star Citizen universe, the Quasi grazer.
+“We’ve been working on this for some time now and are so happy to see the positive reaction from players to our bovine friend.” AI Features Team
+Work also progressed on animation stances, which are used by the Quasi grazer when sleeping and grazing. These are particularly relevant to the day/night sleep cycle. A new charge attack type was also introduced.
+## AI (Tech)
+AI Tech spent the last two months making performance improvements to AI systems and progressing with new features.
+They began by enabling dynamic cover generation for planets and some locations chosen by the designers (this was part of the tech presented at CitizenCon). They also implemented a new exporter for dynamic cover generated as part of a location’s object container. For dynamic cover, fixes were made when reusing cover locations after a navigation tile regenerates without NPCs.
+The StarScript design tool received numerous updates. This new tool inherits the logic from Apollo Subsumption and will be used by the designers to define and represent mission behaviors, NPC behaviors, and other design scenario scripts. It also has a modern UI and better functionality for debugging behaviors.
+Multiple improvements were made to the ‘tactical point system’ to provide faster results when searching for usables, cover, or points on the navigation mesh with less impact on the frame-time budget.
+The navigation system received numerous improvements for the Alpha 4.0 release. For example, the team updated how they compute navigation islands by utilizing more threads and splitting the navigation volume tiles into island groups. For planetary navigation, the devs optimized the way they send events that trigger navigation regeneration requests alongside the ability to link navigation area exclusion and navigation cost areas to planetary navigation mesh.
+For boids tech, crashes were solved and the volume of synchronized data used between the server and client was optimized. For scripting reasons, new functionality to easily convert conversation behavior into a flowgraph node was implemented. Updates were made to audio propagation and how NPCs perceive audio events too.
+Ship AI behaviors received a lot of attention, including improvements to quantum travel to better handle failures and updates to reinforcement behaviors and collision avoidance logic.
+Finally, the team began implementing movement requests for chasing targets. This will include updates to how Pathfinder requests are solved and patch existing paths.
+## AI (Game Intelligence Development Team)
+Throughout November and December, the Game Intelligence Development team continued to close down StarScript 1.1, updating the old Apollo documentation to the new UX and adding documentation to the new features. They also defined a QA testing process to detect and address crashes and bugs as early as possible. A ‘cheat sheet’ was then produced to highlight the differences between Subsumption/Apollo and StarScript, including using filters and smart query to quickly obtain results, how to use custom groups, and working with notes.
+Following this, the game designers began using Starscript 1.1 and made requests for features and visual additions. The navigation graph was implemented for StarScript v1.5 alongside a selection of icons to represent key elements, such as the event system, external system, and sub-activity selector.
+## Animation
+November saw the Animation team create player-interaction animations for hacking and door panels. They also worked on various creature animations for the kopion, Quasi grazer, and Valakaar, and prepped for upcoming creatures.
+The devs then undertook several performance-capture shoots before solving the data and facial animations.
+The end of the year was spent developing various animations for existing and upcoming creatures, while Facial Animation continued to create animations from the captured performances.
+## Art (Characters)
+The Character Art team supported StarWear art debt and fixed bugs for the live releases. They’re currently working on two new armors alongside upcoming armor variants.
+## Art (Ships)
+The Ship Art team spent the end of 2024 putting the finishing touches on upcoming vehicles that will be revealed or released this year.
+Alongside unannounced vehicles, several upcoming vehicles progressed through the white and greybox stages, including the Consolidated Outland Pioneer, Drake Ironclad, Anvil Paladin, MISC Starlancer TAC, Argo CSV-FM, and RSI Apollo and Perseus.
+## Community
+The Community team began the busy months of November and December with a recap of CitizenCon 2954 and by making all presentations from the event available on YouTube. They also supported IAE 2954 with an FAQ and manufacturer schedule for this year’s event, as well as the Intergalactic Photography Awards screenshot contest featuring nine unique categories.
+The team published a Spectrum guide to support the Save Stanton Global Event as well as providing Q&As for the Crusader Intrepid, RSI Polaris, Anvil Terrapin Medic, Anvil Paladin, and MISC Starlancer TAC. November also saw the introduction of Star Citizen Comms-Dive, a new series designed to dive into hot topics and ongoing discussions within the community (more of these to come soon!)
+During December, Community helped spread the joy of Luminalia 2954 with a calendar of daily gifts, a referral bonus, and a Gift that Keeps on Giving video contest. They supported the release of Star Citizen Alpha 4.0 preview with a Beauty of Pyro screenshot contest highlighting the planets and moons of this new system, and by publishing three Patch Watch posts, which offered deeper insights into the updated economy, new mining opportunities in Pyro, and more.
+Regular updates were also published for the community, including Roadmap Roundup, This Week in Star Citizen, and the Arena Commander Schedule.
+And lastly, the team spent time focusing on event planning and upcoming activities being planned for the year.
+## Core Gameplay
+All Core Gameplay teams were heavily involved in addressing stability and performance issues found during Alpha 4.0 PTU.
+Alongside this, the programmers worked on jump points, which are critical to connecting Stanton with Pyro (and, later, other star systems). A lot of effort went into creating a strong visual experience and the feeling of controlling the spaceship inside the tunnel.
+The new mission system received the final critical changes to prepare it for the new server-meshed environment. This overhaul is important to ensure missions persist as players cross between server boundaries, on server-crash recovery, and between different servers. As the system was completely overhauled and most of the scripting logic rules changed, all mission archetypes needed to be rewritten. A lot of teams supported the transition and setup of this content by helping locate and identify problems.
+As the number of territories or regions served by one dedicated server increased, more features were found to have issues with authority transfer (unique problems caused by ownership of the entity moving from one server to another). These issues proved challenging to address, but the benefits of more territories made it worth the time investment.
+The teams were also heavily involved in new content, including Contested Zones, and took the opportunity to begin making changes to the PU login flow, including allowing players to spawn directly into their persistent hangars at their home locations.
+Work was done in support of an upcoming ship, fixing quality-of life issues with personal hangar and freight elevators, and a lot of bug fixing.
+## Economy
+The end of 2024 saw the Economy team adjust the prices of quantum and hydrogen fuel to account for new tank sizes. Prices of vehicle components and ordnance were rebalanced with the aim of turning the use of a Size 10 bomb into a serious financial decision.
+Vehicle repair costs were also rebalanced taking into account the new prices for components and commodities. For example, repairing a ship’s hull should now be a lot cheaper than replacing missing components.
+## Graphics, VFX Programming & Planet Tech
+For the graphics department, the end of 2024 largely involved making significant performance and stability improvements to Alpha 4.0.
+The team also finalized internal support for Vulkan and rolled it out as the default renderer for developers. This includes many stability improvements alongside multi-threading improvements to increase CPU performance on multi-core machines. These improvements are in the main branch, so they will reach the PU when the next major pull of the main code branch takes place.
+R&D for global illumination, reflections, and Planet Tech v5 all progressed and will continue at full pace now that the team’s work on Alpha 4.0 is complete.
+## Interactables
+Interactables developed assets for Contested Zones, such as keycards, server blades, and fuse slots, and completed a performance and bug pass.
+## Locations
+The Locations team spent the end of 2024 supporting the Alpha 4.0 build, including polishing, optimizing, and bug-fixing Pyro’s Contested Zones and outposts.
+## Mission Design
+The ongoing mission refactor continued, with bugs being prioritized and triaged. While analytics show high completion rates for missions, some users are still coming across issues. The team are currently attempting to reproduce and fix exactly what is causing them.
+Along with this, Mission Design kicked off new content planned for 2025, more of which will be shared in the coming months.
+## Narrative
+Over the past two months, the Narrative team focused on finishing mission content text for Alpha 4.0. The addition of Pyro meant that there were dozens of mission archetypes with different complexities and steps that needed to be applied to all mission providers in the system. Narrative also worked closely with the mission designers to support the Save Stanton missions.
+Outside of that, evergreen work continued, including generating names and descriptions for items, liveries, weapons, and armor. The team also planned storytelling and character initiatives beginning in the new year.
+On the website, the team released a fascinating Portfolio on the history of Luminalia, which gave insight into the Banu culture, and answered the community’s questions from the Ask a Dev forum in Loremakers.
+## Online Technology
+In November and December, Online Services finalized the backend services crucial to several key features, including the mission-system refactor, the entity-subscription service/marker refactor, the scenario service, and various social services updates. Each of these enhancements played a vital role in the overarching goal of making Server Meshing a reality.
+The team also devoted a considerable amount of time and resources to assist in unblocking accounts experiencing various issues. Furthermore, the team successfully released hotfixes to address these issues over the holidays.
+The Live Tools team continued rolling out new features for Hex that had been in development for several months. The latest includes a tool to manage access and permissions in a more granular way and a new module to help manage in-game events and missions.
+Existing modules continued to be improved to provide a better user experience. The team also worked on significant improvements for the error-reporting pipeline and other internal development tools.
+## R&D
+In November and December, the R&D team continued to finalize the core system components for the first version of dynamic weather. The previously implemented weather-map support was extended to also include a rain accumulation map with physically plausible evaporation and percolation model. This uses a planet's temperature, humidity, and wind map (which also drive terrain and biome generation) as input. Support for rain clustering was added to limit rain to specific regions and types of clouds.
+Similar controls were added for lightning and the quality of lightning event locations extracted from the weather map was improved. The temporal stability of weather was improved, while diffusion in the rain accumulation map (due to re-sampling historic data) was reduced.
+Volumetric cloud shadow rendering was stabilized to further improve occasional stepping artifacts when the camera moved, especially with the sun at low angles above the horizon.
+Additionally, various backend changes were implemented. This included introducing a dependency chain so that runtime-generated cloud and weather maps and their dependencies can update lazily. Also, weather animation states now propagate to all systems and threads working with them, so related gameplay and physics effects should be consistent with rendering.
+## Tech Art/Animation
+The Technical Animation team continued with a range of long-term tasks to facilitate improvements across the board. For example, despite technical challenges, they made substantial progress toward finalizing several creatures, ensuring they’re ready to be deployed across various planets.
+One of the team’s major milestones was the successful integration of new heads into the Character Customizer. This enhancement will offer players more variety and customization options, further enriching personalization.
+A contingent of the Tech Animation team is currently invested in the development and upkeep of player interactions.
+“Most recently, this included the fuse puzzles, which were trickier to implement than you might expect!” Technical Animation Team
+## Tech Design
+Throughout November and December, Tech Design primarily focused on the Contested Zones. Support ranged from setting up new entities, implementing gameplay and reward logic, fixing doors, hooking up lights and sound effects, and playtesting and iterating on the above.
+They also set up entities for the CitizenCon Digital Goodies Pack and identified and resolved small and large workflow issues for themselves and other teams.
+## VFX
+In November, VFX supported the Vehicle teams with the Mirai Guardian and the Locations teams with a variety of Pyro location work.
+December saw further work on Pyro, including Contested Zones, rundown stations, asteroid bases, and the VFX-heavy jump points.

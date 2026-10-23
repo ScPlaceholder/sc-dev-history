@@ -1,0 +1,3 @@
+No, the gravity well starts well before that. But in order to get a precise readout of the altitude we need to do raycheck against the physical surface of the planet. The longer the ray the more expensive it will be (and will cause a lot of performance issues like physicalizing terrain on demand that is still far away). So we minimize the performance impact as much as possible.
+Also when RL aircraft have a ground facing radar to get a precise altitude readout they also have a very limited range. You don't need to know the exact altitude if you're kilometers above the ground. You need to know it when you need to land or do extremely low flying.
+The altimeter display will also show a small R next to the number readout when the radar altitude is used.

@@ -1,0 +1,13 @@
+Hey everybody,
+I have just submitted a change to the 3.6 builds. I do not know when it will pop up in PTU but it will add the following:
+1) An option to use the "raw" head tracker output.
+- Specifically for advanced head tracking users that spent a long time setting up their custom sensitivity curves and deadzones in external tools (like TrackIR).
+- Separate options for the toggle and hold.
+- Effectively disables the internal calibration in Star Citizen --> the recalibration button will not work for the selected head tracking function, use at your own discretion.
+2) Reestablished head roll ... a couple of caveats though:
+- You have to specifically enable it in the Comms, FOIP & Head Tracking options.
+- Head roll is only possible in seats.
+- For now head roll has a maximum angle of 45 degrees to each side.
+- Faceware roll option naturally has been reactivated.
+Please note that while this is likely last head tracking update for 3.6, this is not the final implementation of head roll. You will see changes on this in 3.7 (e.g. we want to reestablish it in FPS as well). Also angular limits will later be dictated by the chosen helmet / armor.
+Once the change goes live we will close the survey and will likely start a new one concerning the native support of additional head tracking devices. Thanks a lot for your continuous feedback. It helped bringing this feature way further than initially anticipated. :slightly_smiling_face:

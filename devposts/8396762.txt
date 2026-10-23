@@ -1,0 +1,54 @@
+## Star Citizen Alpha Patch 4.4
+Alpha Patch 4.4.0 has been released to Wave 1, and is now available to test!   Patch should now show: VERSION 4.4.0-PTU.10633661.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 6:2:2:600
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Nyx / Levski / Delamar
+- Interstellar Hauling / External Freight Elevators
+- Ballistic Missile Launcher "Boomtube"
+## Known Issues
+Setting your initial home location to a JP station instead of a landing zone will cause issues and you will have a bad time. This option will be removed tomorrow.
+- PU - Nyx - Levski - Locations / ASOP Terminal / Fleet Manager - Vehicles are in claim state upon retrieving
+- PU - Multi-System - Locations / Starmap / Quantum Travel - Quantum Markers for Pyro-Nyx Jump Point and nearby Rest Stop Station are not visible making travel to this location difficult
+- Stall / Freeze - Client - PU - Multisystem - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing Commodities Kiosks at locations like at TDD and Admin Offices in Pyro
+- Multi-Location - PU - Stanton - Locations / Actor Respawning - Players may not respawn at their primary residence after using self-destruct or force-respawn
+- PU - Locations - Rest Stops - Refinery - Mining / Shopping / Selling - Ore Sales Kiosk - When attempting to sell at the Ore Sales Kiosks, the confirmation screen will return with undefined
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- PU - UI / Inventory - Freight Elevator - Kiosk - The Search function of the Freight Elevator terminals ignores localized item names
+- PU - Stanton / Pyro - ASOP / Expedite / UI -  Claimed ships will show as delivered once "claim" is selected but still need to be expedited/have a timer till they are usable
+- PU - Stanton - Pyro Gateway - ATC / Locations / Hangars - Unable to contact ATC via keybinding shortcut
+- PU - Locations / Transit - Elevators - Grim Hex elevators are backwards
+## Features & Gameplay
+Locations
+Levski & Delamar Polish
+Audio and Music, Lighting, Art, LOD, and Performance Polish. New Levski NPC voice lines. Added windows to hospital viewdeck and fixed view distance into view rooms from outside. Hangar set dressing cleanup.
+Ships and Vehicles
+MaxOx Neutron Cannon Art Refactors
+Updated several MaxOx Neutron Cannons' art style and geometry: Size 1, 2, and 3.
+Weapons and Items
+New FPS Weapon: Ballistic Missile Launcher "Boomtube"
+Three rockets tapped together in a tube releasing this single deadly payload. This weapon has high spread and an arming distance leaning into its chaotic unpredictable nature of finding the sweet spot distance.
+The Design intent with this weapon is a high power explosive with a singular magazine, finding the sweet spot between being close enough to deal with the weapons inaccuracies but not close enough to trigger a dud (arming distance). Two key notes is that this weapons projectile is slow (135) and performance is heavily dependent on the gravity of the envrioment as lower gravity allows for less projectile drop
+Boomtube Stats
+- Weight: Light
+- Damage: Around 2.5x more powerful than a charged railgun
+- Projectile Velocity: 135
+- Aim down Sight Time: 0.4
+- Mag size:  1
+- Spread: High
+## Bug Fixes
+Star Citizen Alpha 4.4.0 currently contains nearly 140 bugfixes for issues occurring in 4.3.2, 33 of which originated from the issue council.
+- Potential Fix: PU - Nyx - ASOP Fleet Manager / Locations - Levski ASOPs unable to retrieve ships "We are unable to deal with your request at this time" error
+- Potential Fix: PU - Nyx - Levski - Locations / Transit - Levski Hangar Elevator interior panel becomes unresponsive to player input
+- Potential Fix: PU - Freight Elevator / Cargo - Small entities can clip into the gate and get stuck which can stop the FE flow
+- Potential Fix: PU - Nyx - Levski - Actor / Asphyxiation / Locations - Actor Asphyxiation occurs in hab areas and barter junction
+- Potential Fix: PU - Nyx - Levski - Art / Locations - Central Lift UI arrows are facing the opposite direction to direction of travel
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Locations / Design - Landing Services are not available for docked vehicles
+- Potential Fix: PU - Nyx - Levski - Social AI / Locations - Civilian in VIP area of Cafe Musain can be found standing on table
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Locations / UI - The Quantum Travel marker is offset from the actual position of the location (Levski arrival radius set to 60km)
+- Potential Fix: PU - Stanton - ASD Facility - Missions / mobiGlas / UI - Hauling - Contract Destination in the "Description" and "Primary Objectives" changes after Accepting (STARC-176196)

@@ -1,0 +1,72 @@
+## Star Citizen Alpha Patch 4.7
+Alpha Patch 4.7 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.7.0-PTU.11368704.
+- Audience: Evocati Only (Standard ETF NDA - Talk but no show)
+- Timeframe: This will be a timed playtest. We are intending to leave this build up at least 6 hours (possibly overnight)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Tonight’s build will be a timed playtest focusing as much as possible on the Rock Cracker Dungeon locations and their missions and sandbox activities. As tradition, keeping information about how to play somewhat limited for this first playtest to gauge in came communications on the location flows but will have more info in later PTU patches. Reminder: No PVP without agreeing during Evocati only builds!
+- Stability, Bugfixes, LTP between PTU releases
+- Rock Cracker Operation and QV Breaker Stations
+Known Issues
+Due to the mission locations not resetting upon restreaming the location, we are keeping this to a timed playtest
+- PU - Nyx - RCD - Locations - Mission locations do not reset upon restreaming the location
+- PU - Nyx - RCD - Locations / Design / Interactables - Screen is missing an interaction prompt for the Catalyst rack in Warehouse Control Room
+- PU - Nyx - RCD - Location / Design - Lasing Catalysts can't be detached from the Monorail
+- PU - Nyx - RCD - Location / Design - Some Mineable in the Asteroid can spawn in the walls
+- PU - Nyx - RCD - Props / Tech Design - powercell loses collision and can no longer be attached to item ports after being detached from the monorail
+- PU - Nyx - RCD - Locations / Design / Interactables - Printer hopper closes and screen loses power after printing one lens
+- PU - Nyx - RCD - Design / Locations - ReplaceMe textures on terminals in Operations near the array code
+- PU - Nyx - RCD - Medical Screens / Locations / Medical - Medical imprint cannot be set at the Exclusive Medical Bay locations
+- PU - Nyx - RCD - Locations / Art / Proxy - Breakable Ice entity visibly stays intact after shooting icicles
+## Features & Gameplay
+Gameplay
+Rock Cracker Operation - Breaker Stations
+The Rock Cracker Dungeon is a sandbox Location Event based in Nyx that will utilize new Asteroid Mining Stations to task players with rebooting one of these derelict stations so they can mine a large mineral resource at the center of the asteroid. This will primarily be a PVE focused sandbox activities with players fighting NPCs and creatures that have infested the dungeon during the course of restoring the station’s mining capabilities. For feedback focus, this dungeon experience is designed with 4-6 players in mind.
+These locations can have sandbox activities that include interior missions such as recover item, missing person, and eliminate specific and exterior missions to recover cargo, kill ship bounty, support attack ship, and ship wave attacks.
+There are currently 60 Exclusive Rockcracker locations, 30 Contested Rockcracker locations, and 20 General Mission Rockcracker locations.
+## Bug Fixes
+- Potential Fix: Argo MOTH - PU - Vehicles - Salvage / Hull Scraping - ARGO MOTH salvaging at incorrect rates
+- Potential Fix: Argo MOTH - PU - Vehicles - The pilot loses control of the vehicle when the exterior cargo bay is full
+- Potential Fix: Argo MOTH - PU - Vehicles - The co-pilot takes priority of the vehicle controls over the pilot
+- Potential Fix: Argo MOTH - PU - Vehicles / Vehicle Feature - Pilot seat scan does not work when another player is on the salvage turret seat
+- Potential Fix: Argo MOTH - PU - Vehicles - Art / Graphics - The railings of cargo bay have no collision
+- Potential Fix: Argo MOTH - PU - Vehicles - Art / Elevator Panel - Cargo - The Cargo Bay Elevator Panel can become blocked by size 8 SCU Crates and clipping into the crate
+- Potential Fix: Argo MOTH - PU - Vehicles - The Moth will stop auto ejecting cargo when the player Quantum Travels
+- Potential Fix: Argo MOTH - PU - Vehicles / Lighting / Shadows - Shadow of the player is displayed incorrectly in the Habitation room
+- Potential Fix: Argo MOTH - PU - Vehicles / VFX - There are floating sparks in the cargo bay when in emergency state
+- Potential Fix: Argo MOTH - PU - Vehicles / Lighting - Crew elevator loses lighting at certain angles when inside the vehicle
+- Potential Fix: Argo MOTH - PU - Vehicles / VFX / Salvage - Disintegration effects are rotated / misaligned
+- Potential Fix: PU - Nyx - QV Stations - Welcome to Nyx - Locations / Design - Streaming location out and back in causes inventory to stop working
+- Potential Fix: PU - Nyx - QV Stations - Welcome to Nyx - Missions / AI / Locations  - NPC carrying Data Packet at the Polaris does not spawn
+- Potential Fix: PU - Density Manager  / Instanced Hangars - Instanced Hangar can be cleaned up by density manager, causing players to lose their personal hangars
+- Potential Fix: Multilocation - PU - Locations - Art / GFX - Vulkan - While Settings are Set to Low, Surfaces of Moons and Planets Won't Render and Art Assets May Be Distorted/Pixelated
+- Potential Fix: Multivehicle - PU - Vehicles / UI / MFD - Some or all ship MFD displays are blank
+- Potential Fix: Multi-System - PU - UI / mobiGlas - Selectable elements inside the mobiGlas Tabs have slim areas of deadzone which can make selecting them difficult
+- Potential Fix: PU - UI - mobiGlas - Scrolling in contract menu is stuck and cannot scroll through contracts
+- Potential Fix: PU - Industrial Missions - Mission Content / Salvage / Vehicle Components - Components gathered from suggested Salvage Claim players can purchase cannot be turned in for salvage mission
+- Potential Fix: Game settings - Graphics - HDR setting is not saved, reverts to disabled on restart
+- Potential Fix: Crusader Industries Spirit C1 - PU - Vehicles / Engineering / Vehicle Components - Turning off the cooler does not increase the temperature of other components
+- Potential Fix: RSI Polaris - PU - Vehicles - Turrets - Polaris cannot fire torpedoes from bridge
+- Potential Fix: PU - Locations - Klescher Rehabilitation - Escape route fan does not stop spinning after entering code giving "Error"
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Locations / Level Design - The player is unable to climb the ladders
+- Potential Fix: Argo ATLS Geo Ikti - PU - Mounts / Art / Design / Livery - GEO Ikti will revert back to default and lose attachment when equipped with a specific livery
+- Potential Fix: PU - Missions / AI - Distribution Center (DC) - Eliminate Boss - Mission objective could not be completed due to missing AI
+- Potential Fix: PU - Mining / Refinery Kiosk - Refinery Kiosk prevents use due to "Insufficient credits" for players with large amounts of aUEC on their account
+- Potential Fix: PU - Industrial Resource Gathering - Locations / Mining - Aberdeen Cave inside armistice zone of nearby outpost, cannot mine
+- Potential Fix: PU - Ship Battles V1 - Missions / mobiGlas - Ambush / Patrol - There is an excessive cooldown time for the Ship Battle missions to reappear after completing them
+- Potential Fix: PU - Novikov “Expo” Helmet - Exploration helmet turns invisible when Attach to Hip is used
+- Potential Fix: Reliant Series - PU - Vehicles -  reliant series flying in atmosphere causes the ship to roll left/right and doesn't fly straight
+- Potential Fix: CRUS Starlifter Series - PU - Exploit - Vehicles / Actor - Physics - Player's actors lose collision towards other User actors after exiting and clipping through the A2/C2's Kitchen table booth
+- Potential Fix: PU - Pyro - Industrial Missions - Mission Content / Locations - Some missions send players to dropoff locations without freight elevators
+- Potential Fix: PU - Jump Gates - Entering a Jump Tunnel as it is closing causes player to end up in "invalid location" black screen accout unable to load back into PU
+- Potential Fix: Multivehicle - PU - Weapons - Getting hit with Ballistics causes ships to move based on their physics
+- Potential Fix: PU - Locations / Refinery Kiosk / Design - Player is unable to select locations on the Ore Sales or Refinement Processing kiosks
+- Potential Fix: RSI Aurora ( Some Variants ) - PU - Vehicles - Actor / Animation - The female character's animation appears offset when entering and exiting the vehicle bed
+- Potential Fix: PU - Cargo / UI - Commodity Kiosk - Ship inventory is missing from Commodity Kiosks unless it is Stored at the location
+- Potential Fix: PU - Stanton - Wikelos Emporium - The Collector 4.6.0 - Shiny Builder Suit Contract requires more RCMBNT-RGL items than intended
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed a Server Deadlock

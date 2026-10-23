@@ -1,0 +1,73 @@
+## Bugfixing
+Frontend
+- Fixed an issue where switching between game modules or network type would cause you to load into the wrong instance type.
+Maps
+- In all maps, fixed an issue where a map would start with the wrong “Time of Day”.
+- In all maps, fixed several locations which appeared too dark.
+- In all maps, fixed a collection of cases where the player could get out of bounds.
+- In all maps, removed the black & red out effects caused by being out-of-bounds.
+- In The Good Doctor, fixed an issue which caused players to clip under the facility.
+- In The Good Doctor, fixed an issue that caused the planet to become baron.
+- In The Good Doctor, fixed a large collection of vis-area related issues.
+Modes
+- In Classic Race, fixed an issue where races would end after one lap.
+- In Classic Race, fixed the “Fastest Lap” appearing incorrectly on the scoreboard.
+- In Classic Race, fixed an issue where the game feed would report a bad string for checkpoints.
+- In Classic Race, fixed an issue where players would spawn on-top of each other during the pre-game.
+- In Classic Race, fixed an issue where with 4 or more players the player would spawn at checkpoint spawns rather than at the starting line.
+- In Classic Race, fixed an issue where the player would not match cycle.
+- In Control, fixed the scoreboard appearing inconsistently between rounds.
+- In Control, fixed an issue where objective text was not appearing.
+- In Control, fixed an issue where rounds would end prematurely.
+- In Control, fixed an issue where players were getting stuck interacting with the terminals.
+- In Control, fixed an issue where teams were scrambled in Round 3
+- In Control, fixed an issue where players would spawn on the wrong spawn point between rounds.
+- In Control, fixed an issue where the capture area VFX was sized incorrectly.
+- In FPS modes, fixed an issue where the pre-game countdown was ignored.
+- In Squadron Battle, fixed players self-destruct punishment not applying.
+- In Swarm, fixed an issue where victory score awards were not triggering.
+- In Swarm, fixed an issue where the game would not end after all enemies were defeated.
+- In Swarm, fixed an issue where enemy ships would not spawn.
+- In Swarm, fixed an issue where the AI would fly out of the playable area.
+- In Swarm, fixed an issue where if a player left during an active wave the enemy AI would stop spawning.
+- In Swarm, fixed an issue where AI would spawn and not move.
+- In Swarm, fixed an issue where the match would not end after all players lost their respawns.
+- In Swarm, fixed an issue where AI names were not present.
+- In Swarm, fixed an issue where Legendary Pirate or Vanduul names were not present.
+- In Swarm, fixed an issue where an AI assignment node was failing, resulting in AI behaving irregularly.
+- In Pirate Swarm, fixed an issue where several voice lines were not triggering.
+Systems / Misc
+- Fixed an issue where pickups were not collectable.
+- Fixed an issue where pickups did not award the correct number of consumables.
+- Fixed a collection of issues relating to Rounds with a full refactor of the system.
+- Fixed a rare threading crash when flying through Racing Rings.
+- Fixed an issue where players would spawn too early, allowing players to enter combat with them before they had properly spawned.
+- Fixed a collection of issues with spawn invulnerability.
+- Fixed team scoring being inconsistent with actual score earned. Teams now gain 10% of player damage & kill scoring.
+- Fixed suicide & self-destruct punishment contributing to team scoring.
+- Fixed a collection of issues with Analytics where players events were either not reporting Singleplayer instances or providing inaccurate information.
+- Fixed an issue where the player could get stuck spawning due to not waiting for the OC to load.
+- Fixed an issue where games would not end.
+- Fixed broken weapon audio with Lumin V
+- Fixed a crash after receiving your second pickup.
+- Fixed an issue which award players positive score for attacking friendlies.
+- Fixed an issue where the players weapon would randomly drop.
+- Fixed several issues with “Join Friend” for Arena Commander instances.
+- Fixed an issue that prevented players suiciding/self-destructing in all game modes.
+- Fixed various cases of ship names or descriptions being wrong in the VMA.
+- Fixed various issues caused by players joining mid-match.
+- Fixed an issue where the med-dispensers supplied the wrong medpen.
+- Fixed an issue where the med-dispenser marker would not appear.
+- Fixed an issue which caused players to get stuck in a death/respawn loop after killing an AI.
+- Fixed an issue where the player would always respawn in the same spot.
+- Fixed an issue where mineable were appearing in modes other than Free Flight.
+- Fixed an issue where players would matchmake into games that have already started, resulting in a 30014 error.
+- Fixed an issue where “Waiting for Players” count would reset when a player died.
+- Fixed an issue where after renting an item the player would not receive it until they restart their client.
+- Fixed a collection of issues which resulted in an infinite load due to bad spawn parameters.
+- Fixed an issue where match cycling would not select a new random map, causing players to get stuck repeatedly matchmaking into the same map.
+- Fixed an issue where award UI would appear in Offline (prev. Singleplayer), where awards are not possible.
+- Fixed an issue which prevented the mouse being enabled during “Searching for Match” match cycling.
+- Fixed an issue where selecting “Cancel” during “Searching for Match” would not work.
+- Fixed a collection of issues which resulted in the wrong loading screen being displayed.
+- Fixed an issue where the ready system would not timeout after a set time, causing some servers to get stuck with AFK players not starting the match.

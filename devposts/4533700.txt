@@ -1,0 +1,47 @@
+## Star Citizen Patch 3.15.0v
+Alpha Patch 3.15.0v has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.0-PTU.7865275.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Current Audience: All Backers
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+We are currently assessing if there are any performance and other issues while playing on Windows 11. If you are part of the windows insider program with Windows 10 or 11, you may have an option turned on called Diagnostic Data in the windows settings. This option is required for windows insider but appears to degrade game performance and turning this off may help framerates substantially.
+Testing Focus
+- Server Crash Ship Recovery
+- Healing and Actor Status
+- Hospitals
+- Starlifter Hercules A2
+- Origin 400i
+- Bombs
+- Infiltrate and Defend Missions
+- Loot Generation
+- Personal inventory
+- Orison V2
+- Arena Commander Revamp
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu. Players may need to exit the game and reload after a server crash to fix this error.
+- Players may not be able to Repair, Refuel, and Rearm at Outposts
+- Items not stored in long term persistence such as mined gems are currently not stackable (This is something that will be coming in a future update)
+- After trying on clothing in a store, all equipped items are permanently deleted from the inventory
+- Medical beacon does not complete mission/payment when player is brought back from incapacitation
+- Interacting with the 400i door panels can cause the doors to become unresponsive (Workaround: Back away and retry or open doors from cockpit)
+- Swapping weapons has a chance to drop or remove weapons
+- The Prospector door and ladder lack animations
+- When in combat, NPCs can get stuck in cover when trying to exit
+- Some players may see black squares instead of smoke, clouds, and fog
+- Attempting to deposit gems yields a "transaction error" in Klescher Rehabilitation Facility
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round in Arena Commander
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+## Feature Updates
+Gameplay
+- Location inventory max capacity updated from 32 SCU to 100 SCU
+## Bug Fixes
+- Fixed an issue causing corpses, items, and mineables disappearing immediately when dropped on the ground
+- Missions to underground facilities should no longer have a chance of allowing multiple different missions in the same facility at the same time

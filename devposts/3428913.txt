@@ -1,0 +1,5 @@
+Hi,
+I'm trying to investigate this issue, and while I don't yet have any reason to believe it's related to VRAM if you suspect this and want to reduce your VRAM usage then make sure you close down as many windows as possible before launching the game, and use a lower screen resolution. Beyond that I'm hoping to expose a command you can use in the next PTU build to set the amount of memory you wish to use for textures, as this is currently the only other scaleable setting that is safe to change without risking introducing other issues (like missing meshes or effects). It'll work by adding 'r_TexturesStreamPoolSize 1000' to your user.cfg file to allow 1GB. If you load your game.log file you'll be able to find a line saying how much memory the game decided to use, e.g. "Texture Streaming: Actual pool size = 3000", and setting a custom pool size will override this.
+Cheers,
+Ali B
+Director of Graphics Engineering

@@ -1,0 +1,4 @@
+Frame rate!! Many areas of the game are CPU bound due to the number of draw calls. Modularity is very popular across all areas of our game, ships, weapons, environments, and all of this naturally leads to greater draw calls. Also I generally want to see much higher frame rates, north of 60, especially with high refresh rate monitors becoming more common.
+Second to this would be draw distance of characters and ships.
+Planet objects such as rocks and trees aren’t really draw call limited as they are massively-instanced (one draw call renders ALL trees). To increase performance and draw distance of these we need to combine the LODs into fewer objects representing larger areas to give the GPU larger units of work (it hates 50,000 trees that are 10 polys each, and would prefer a 500,000 poly forest).
+Ali Brown

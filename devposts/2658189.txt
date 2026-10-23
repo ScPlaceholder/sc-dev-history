@@ -1,0 +1,38 @@
+## Star Citizen Patch 3.8.0r
+Alpha Patch 3.8.0r has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.0-PTU.3917186.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- General gameplay and traversal
+- Microtech and updated rest stops
+- New look ahead and third person camera updates
+- Patrol, bounty, and mining claim missions
+- Fine kiosk system
+- Hijacked 890 mission
+- Mining and mining laser head attachments
+- Ship components
+Known Issues
+- CryAstro services may not work at various stations. Work-around: Hover before landing and request services.
+- If a player's ship is destroyed after bed logout they will return to the server at origin.
+- Claimjumper missions may occasionally lack markers or spawn NPCs.
+- Elevators at Port Tressler and Everus Harbor may not show up when called.
+- Once a magazine is emptied for the Animus Launcher the player can no longer equip fresh magazines.
+- Multi-tool scanned mineables remain on the player's HUD when the multi-tool is stowed.
+- If the quantum travel marker is at the edge of a moon or planet they can QT through the moon and explode.
+- Carriable mission items can fall through flooring.
+- The Sentinel is incorrectly labeled as the Harbinger in the ASOP and Comms channel.
+- Purchased commodities will often visually not appear in the ship's hold.
+- Carriable boxes may fall through the flooring.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## Bug Fixes
+- Purchasing at various shops should now consistently process.
+- Another fix for weapons vanishing when swapping.
+Technical
+- Fixed a client crash.
+- Fixed 4 server crashes.

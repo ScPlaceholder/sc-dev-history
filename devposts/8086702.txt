@@ -1,0 +1,75 @@
+## Star Citizen Alpha Patch 4.2.1
+Alpha Patch 4.2.1 has been released to Wave 2 Testers!  Patch should now show: VERSION 4.2.1-PTU.9900767.
+- Audience: Wave 3
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Second Life Resource Drive (Currently on a lower turn-in requirement for PTU testing and will be increased for LIVE)
+- Wikelo Recipe Updates
+- Executive Ship Component Updates
+- Stanton Space Station Security Forces
+- VOLT Pistol
+Not Ready for Testing or Feedback
+These items below are a partial list of current goals for the latest release and may be partially in the build and even completable but are not ready for feedback and are subject to removal from this release.
+- New Escort Mission Ship Battle Type
+- Additional Player Hairstyles
+## Known Issues
+- PU - Resource Gathering - Weapons / Mission Content - ArcCorp rewards incorrect liveries and weapon/armor variants
+- PU - Stanton / Pyro - Personal Inventory / Local Inventory / Inventory - While attempting to drop, transfer and/or equip items, there's a chance for it to return to the inventory where it’s from
+- PU - Armor / UI / Personal Inventory - Items equipped and/or attached on the actor can't be dragged to be held by the actor's hands as its port will be missing
+- Multivehicle - PU / AC - Vehicles / Weapons / UI / VMA - Vehicle Weapons are not Interactable or Useable (Affects a handful of ships: Mirai Fury Series, Pulse, P-52, Spartan, and Cyclone Series)
+- PU - Vehicle - Naming ships, melting ships, or updating ship packages will delete any non-stock items that are fitted to the ship including paints
+- Multiitem - PU - Vehicle / Turret / MFD - Idris gimbals are empty and weapons/missiles are unable to be equipped to them (if turret is reequipped in the VLM)
+- PU - Pyro - Storm Breaker - Locations - Lazarus Research Complex - Freight Elevator - UI / Interactions - When placing items on the elevator floor then lowering it, the Freight Elevator will lose the items then raise itself (Moderate Chance)
+- ARGO ATLS ALL Variants - PU - Mount / Cargo Grid - Argo ATLS can be placed anywhere on the cargo grid without following the SCU grid pattern
+- PU - Pyro / Pyro I - Storm Breaker - Locations / Mission Feature / Physics - Bullets will not pass through the Shuttle Station's entrance curtain when firing outside
+- AEGS Idris-P - PU - Vehicles - Idris shields do not stop any laser weapons except panthers
+- PU - Freight Elevator / Contested Zones (CZ) - CZ Freight Elevator displays Internal Error when attempting to move items to the warehouse
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- PU - Pyro - Courier - Mission Feature / Interactables  -  There is a chance that delivery packages cannot be placed on delivery shelves
+## Features & Gameplay
+Gameplay
+Wikelo Recipe Updates
+No more random rewards
+All collector rewards will become deterministic, meaning you'll know what you are going to get when accepting a mission.
+We've defined and split ingredients for the mission into three distinct categories.
+►Core Content Items [Items that are guaranteed with specific content e.g. ]
+- Example: Carinite with Align and Mine
+►Rare Content Items [Items that have a very low spawn rate per run(Below X%), with specific content]
+- Example: Pure Carinite for Align and Mine
+►Content Items [Items that spawn associated with Specific content but are not guaranteed, if you look you will likely find ]
+- Example: Ace Interceptor Helmets for Ship Battles
+► Collector Rebalance
+All the recipes have been re-done and re-balanced
+2 new tabs have been added to the contracts manager to accommodate all the new recipes. Wikelo - Vehicles and Wikelo - Other Items.
+Greenzone Security Re-Activation
+Greenzone security around Stanton Space Stations has been re-activated in 4.2.1. This includes a complete re-balance of security forces with escalating response to accumulated crimerates in the area.
+Further Refining Improvements
+Cost Reduction for most goods in regards to Refining Cost. Removal of Discard Cost to Refining.
+Additional Gameplay Updates
+- Resource Gathering Mission, Bugfixing, and Corporation Branding Polish
+- FPS Mining Beam Brightness has Been Slightly Reduced
+- Added chance of new Small Pure Carinite FPS minable in the Hathor Site cave
+- 2 Handed Carryables are now thrown up with the player takedowns instead of dropped
+Ships and Vehicles
+- Executive Ship Component Loadouts have been reverted to previous higher-tier versions
+- Greatly Reduced Incorrectly High Idris Turret Health
+- Updated base Valkyrie to have the new Doors and Door Panels from the Asgard
+Weapons and Items
+- New FPS Weapon: VOLT Pistol  (Weapon lootable and in AC. Ammo added today into shops)
+- The 5 Qualities of Valakkar Pearls now have separate names so players can identify the Quaility
+## Bug Fixes
+- Potential Fix: Multivehicle - PU - Vehicles / Turret - ships with power set to weapons in capacitor do not update until another shot or turret is powered off and back on for full ammo capacity and recharge rate (STARC-172154)
+- Potential Fix: PU - Stanton - Resource Gathering - Mission / UI / mobiGlas - Resource Drive contract name overlaps the number of contract available (STARC-172648)
+- Potential Fix: PU - Ship Battles V1 - Patrol / Ambush - Mission Feature / Mission Refactor - Mission does not progress after destroying targets (STARC-165141)
+- Potential Fix: MultiVehicle - PU/AC - UI - Missile Lock variables behave erratically
+- Potential Fix: PU - Stanton - Resource Gathering - Open delivery - Mission Content / Cargo - Materials submitted toward resource drive goal are inconsistently counted toward SCU score (STARC-172704)
+- Potential Fix: PU - Storm Breaker - Pyro - Creatures / Mission Content - Creatures aren't spawning once egg has been taken
+- Potential Fix: PU - Creatures - Apex Valakkar/ Audio - Apex audio cuts out for a few seconds
+- Potential Fix: PU - Missions - Resource Gathering - mobiGlas / UI - Your Total progress bar does not scale properly to reflect Your Total SCU Score
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 4 Server Crashes

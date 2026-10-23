@@ -1,0 +1,52 @@
+## Star Citizen Patch 3.2.0o
+Alpha Patch 3.2.0o has been released to PTU, and is now available to test! Patch should now show: PTU-760199.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+NOTE:
+- YOU WILL NEED TO RECOPY YOUR ACCOUNT FOR THIS PTU.
+- Your account UEC wallet is now usable in-game.
+- After copying your account, please verify that your UEC wallet and the UEC associated with pledges is available in game. Bear in mind, this will be in additional to the preset PTU starting value (100k).
+Known Issues:
+- Master ships will not see newly logged in party members on the calibration HUD unless they exit and reenter the pilot seat.
+- Player ships are unable to stop 50 meters away from an opponent.
+- QT Spool Indicator is missing from Flight HUD.
+- Escort missions do not progress past the rendezvous stage.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- New "destroy probe" mission.
+- Mining: Scanning, mining, extraction, and Prospector function.
+- Flight and function of the following: Avenger series, 600i, Eclipse, Blade.
+- Orbital quantum travel.
+- G-force effects.
+- Ship power tuning and power triangle usage/effects.
+- Manned and remote turrets.
+- Group system.
+- Quantum linking.
+## New Features
+Ships and Vehicles
+- Added an "overclock" feature to individual components available on the Power: Items MFD.
+To overclock, go to the power MFD and select the "Items" tab. From there, you will be able to "Power" off individual items as well as "Overclock". You are also shown a power bar for each. For some of your components, overclocking will increase their performance at a steep power cost.
+## Feature Updates
+Universe
+- Rebalanced pricing of goods and services throughout the verse.
+Ships and Vehicles
+- The Avenger series can now swap its nose mount for a size 4 fixed weapon.
+- Further updates to damage state progression on 600i.
+- Increased the range of the 600i elevator interaction node.
+Arena Commander
+- Temporarily removed ammo pickups from Arena Commander pending a fix for ammo drops not working.
+## Bug Fixes
+- Fixed an issue that restricted items from only being equipped once when making changes.
+- The Herald should no longer be displaying inverted colors on various spots of the HUD.
+- Fixed an issue where the AI would not consistently appear on radar.
+- Radar contacts should now clear correctly when they go out of range.
+- The calibration UI should no longer appear while the ship is still in atmosphere.
+- The range indicators for mineable rocks should correctly appear.
+- The Reliant should no longer be able to equip weapons on its utility mounts.
+- The Citadel legs should no longer appear distorted on the PMA.
+- Reclaimer turrets should no longer be swappable.
+- The Eclipse torpedo rack should no longer be listed as the same as the rack on the Retaliator.
+- There should no longer be multiple empty hard points on the Reclaimer's weapon list.
+- Logging out in the Prospector should no longer reset the ore composition to 100% inert.
+Technical
+- Fixed a client crash.

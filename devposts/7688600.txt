@@ -1,0 +1,10 @@
+## Hotfix | 1.29.2025 | sc-alpha-4.0.1-9501436-LIVE
+This first hotfix tackles multiple stability and gameplay issues. The hotfix will be rolled out onto hybrids and server meshes while the client side will first open up to the HOTFIX channel for a period of time for testing. Once we verify the client-side fixes are ok we will then move it over to the LIVE channel for everyone
+- Client Side Hotfixes
+► 1 Client Crash Fix (Fixes a client crash that could happen when going into another party member's personal hangar)
+- Server/Hybrid Side Hotfixes
+► 4 Server Crash Fixes
+► Further Updates to RMQ to help reduce dropped packets
+► Further updates to the Entity Density Manager to help with high amounts of BWin issues. This change helps better remove physical entities that have fallen through planet surfaces as well as entities lost in space. Original issue was posted as Planet Monox but this update is more global (STARC-149624)
+► Further streaming updates to help elevators stream in the proper hangar when traveling between hangars and to not invalidate instance culling when leaving a hangar. This is a potential update that will help with players attempting to get to a hangar and having the elevator open to nothing
+► Added further mitigation for transit carriage getting stuck in the door closing state. This is a potential fix that caused Elevators to be present but caused panel buttons stop functioning. (STARC-121322)

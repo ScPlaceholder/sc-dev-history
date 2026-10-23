@@ -1,0 +1,61 @@
+## Star Citizen Patch 3.17.0
+Alpha Patch 3.17.0 has been released to the PTU, and is now available to test!  Patch should now show: VERSION 3.17.0-PTU.8016740.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Stability and backend testing
+- Ship Positional Desync
+In 3.17.0 we have put in a networking update that should reduce ship to ship desync. We would like to know how well this update works and if there are any observable knock-ons. Relative to 3.16, you should feel as though the facing direction and position of other player ships are much more accurate and real time. We have created a feedback thread in spectrum so please let us know about any potential issues with this that could include ship jittering, rubberbanding, jittering, and other effects of that nature.
+Known Issues
+- All doorways in Orison can kill players if repeatedly walked through
+- Equipment can disappear when trying to equip and is lost permanently
+- Custom mobiGlas Casings breaks the mobiGlas functionality
+- The Player is unable to Place the Mining Gadget on a minable rock
+- Large hangers are missing collisions
+- Starfarer Boom Arm not repairing if destroyed
+- When loading into the PU after customizing the character, the player may become stuck in a staging state
+- Character customization is saved inconsistently, sometimes falling back to a miscellaneous male head
+- Turret HUD - Aiming elements are lagging behind
+- Shubin Interstellar kiosk in New Babbage still using the old Shop UI
+- Players cannot buy components directly into ship storage (will be coming later in the PTU cycle)
+- The 'Sell' page at Live Fire Weapons will not update properly
+- ASOP Terminals can be accessed by other players while in-use by another player
+- ASOP terminal displays successful retrieval with designated hangar number; however, there is no ship marker and designated hangar is empty
+- Cave interiors on planets with breathable atmospheres do not have an atmosphere which will cause the player to die from suffocation
+- Underwater river fog effect is missing
+- AR Markers are present when opening the mobiGlas which can make it hard to read
+- Ships can explode after players exit them
+- The player is respawning with their loadout pre-death, and the medical gown equipped. The player also leaves no corpse present
+- The player sees an infinite black screen upon death
+## New Features
+Locations
+- Lorville Maria Pure of Heart - Hospital Interior Location
+Implementation of Maria Pure of Heart hospital in Lorville, where players can be healed and revived, as well as purchase medical supplies.
+- Space Station Clinics: Variations
+Updated all current space station clinics with new additional modules and layouts to make each space station clinic unique.
+- River T0
+Initial implementation of river tech to enhance the ecosystems of our planets. This first iteration will add a single river with harvestables nearby onto microTech as a showcase with the intention of expanding on this in future releases.
+AI
+- Coffee Shop Vendor
+The addition of a fully interactable coffee shop vendor in Area18. The AI will interact with three new usables – Hot drink dispenser, soft drink dispenser, and drinks fridge – to serve the player with a variety of new drinks.
+Gameplay
+- Ship to Ship Refueling
+Implementing the systems that will allow players flying specific ships to refuel other ships and get paid for it. The player can fill those specific ships' fuel tanks from a station using the newly updated Rearm, Restock, and Refuel interface at Landing Zones and Space Stations. The Starfarer has 6 external fuel pods, and each individual pod can be filled with one fuel type of the player's choosing (hydrogen or quantum). This allows players to carry varying amounts of fuel to cater to refueling needs.
+Refueling consists of the Fuel Giver and the Fuel Receiver. To start the process, the Fuel Giver (Starfarer) must deploy the refueling arm using the refueling terminal on the bridge. This allows the Fuel Receiver (any ship) to request docking by targeting the Fuel Giver and pressing "N" (default keybind). This sends a docking request message to the refueling ship that they can accept or deny. Once accepted, docking can be done manually by following the on-screen UI or automatically by holding "N" (default keybind).
+After the Fuel Receiver is docked to the Fuel Giver, they must use the refueling terminal to define the fuel price. The docked ship can then use their mobiGlas to open the "Vehicle Maintenance Services" app to view the set price and request the amount of hydrogen or quantum fuel they desire. Once they accept the price, the Fuel Giver can open the "Pod Management" screen to adjust flow in or out of fuel pods that contain the desired fuel type. They can then start sending fuel by opening the nozzle and adjusting flow rate, while making sure not to extend past the nominal flow rate for too long. Players will receive a warning error when their flow rate is too high, which can escalate to a danger warning and eventually damage the refueling arm or both ships and result in loss of fuel. When the amount of requested fuel is filled, the player must close the nozzle on the refueling terminal to prevent overflow fuel spillage. Once refueling is complete, funds are transferred, and the two ships can undock from each other by either the refueling ship pressing the "Abort" button on the refueling terminal, or the docked ship holding "N" (default keybind).
+- Shopping and Selling T0
+Giving players the ability to sell items from their local inventory to shops using a new interface powered by Building Blocks. This supports the recently added Loot Generation feature, allowing these items to be sold for money. This includes kiosk and service support for sale of non-commodities. The shops will now dictate which items they will buy based on the type of weapons or armor that they sell. Pricing algorithm takes into account state of item, price of closest retail equivalent, etc. This update also bring in wide sweeping changes to what each weapon and armor shop sells. Many higher end items have been removed from weapon and armor shops and can now be found exclusively out in the PU through looting corpses and exploring locations for loot crates.
+- Mining Gadgets
+Mining Gadgets are tools to help modify the a rock's properties and assist the player with mining a Deposit. There are many differing gadgets that include stats that will positively or negatively modify rock Resistance, Optimal Charge Rate, Overcharge Rate, Instability, Optimal Charge Window, Optimal Charge Rate, and Shatter Damage. The player can attach a device physically to a mineable deposit in FPS to modify its stats, making mining either easier and safer, or quicker and riskier. Players can currently buy these in New Babbage, Lorville, and Port Olisar and attach them to their backpacks as an equipped item that can be held in the hands by pressing 4 (default keybind) and re-stored by holding R. Once a player finds a minable rock/asteroid they want to mine, they can attach the gadget onto it by walking or EVAing up to it, holding it in their hands, and holding left mouse button to place it on the rock. This will allow players to then modify the signal waves to align them on the mining gadget screen and activate it. Once back in their mining ship, the player can scan the rock and will notice an improvement based on the gadget used. Gadgets are retrievable after successfully mining but will take damage and can be destroyed if going above safe mining levels or overcharging a rock.
+- Ship and Ship Components Inventory Updates
+Major overhaul of the ship personal inventory storage to allow for ship components to be stored and transported inside ships. Increased the capacity of Landing zone storage from 100 SCU to 1000 SCU. Added inventory size values to all purchasable ship items along with volume and dimensions which will require certain size ships to transport larger size components that wouldn't normally fit inside the smaller ships. Updated all ships to have more internal storage to accommodate this change. Added inventory filters for components.
+Weapons and Items
+- Added Carryable Storage Container to shops in the PU
+Core Tech
+- Added Updated GameGlass Keybinds for 3.17

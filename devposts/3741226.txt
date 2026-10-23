@@ -1,0 +1,3 @@
+I'm happy to report that we have found the problem and Live servers are being hotfixed as I write this.
+In this particular case, the 30k's were being caused not by server crashes but by an incorrectly set timeout triggering during periods of high bandwidth usage such as initial connection or while streaming areas from the server. When combined with sufficient packet loss or a bandwidth throttled connection this could result in the timeout being triggered and result in a 30k disconnection.
+My thanks to everyone here for helping to raise the alarm. Essentially the bug would occur at random and unfortunately was not frequent enough to be spotted while the build was still on PTU.

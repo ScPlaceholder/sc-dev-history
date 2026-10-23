@@ -1,0 +1,79 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9152897.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 2
+Server Info: US/EU - EPTU Channel
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+This build contains further logging for missing ship HUDs while using Vulkan
+- Stability/Performance/Bug Fixing
+- Master & Operator Modes: Vehicle Combat and Experience
+- Vulkan Renderer (Off by Default in Graphics Settings)
+- Full Character Customizer Revamp
+- mobiGlas Rework / Starmap / Interior Map / Minimap
+- Distribution Centers
+- EVA T2
+- New Loot Screen / New Visor / Lens
+- Full FPS Combat Refactor / Dynamic Crosshair
+- Backpack reloading / Ammo repooling
+- Physical Shopping UI
+- New Arena Commander Features: Engineering Game Mode, Grav Royale, New Race Tracks, and New Pirate Swarm Final Wave
+Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs.
+Distribution Center missions sometimes show the wrong location markers inside so might be difficult to know exactly where you need to go to.
+Server and Client Performance is something we are constantly monitoring and working on fixes and changes for 3.23.
+Riva Tuner is causing some issues loading in with Vulkan enabled. We have a fix in for this in the next build for 3.23 but for tonight, you may want to disable RTSS if you want to use Vulkan.
+- PU - Stanton - Distribution Centers (DC) - Locations / Physics - Hangars missing collision for incoming flight traffic
+- PU - Stanton - Distribution Centers (DC) - Locations - Fleet Manager / UI - ASOP Terminals cannot retrieve ship list and instead has infinite load
+- PU - Stanton - Missions - Eliminate Specific objective marker does not update with the target's location even though it has been spawned
+- Graphics - Upscaling / DLSS - Under any upscaling option, ship HUD clarity is significantly affected when QT HUD is displayed
+- PU - Creatures / Kopion - Animation / AI - The Kopion creatures do not move or attack players
+- PU - Multiple Locations - Locations / Art - GrimHEX and Kareah airlocks are missing breathable air and doors
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Locations - Grim Hex - Hospital - Elevator - Elevator is missing at Grim Hex's hospital
+- PU - Stanton - Lorville - Transit / Locations - Trams missing from Perimeter Line West
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+## Features and Gameplay
+Locations
+- Further Distribution Center Lighting/LOD/Performance/Audio Polish Pass
+- Water Polish: Got rid of seam in wave crest foam and fixed inconsistent normals across water sim
+Gameplay
+- Physical Ship Shopping UI Polish Pass while Interacting with ships
+Weapons and Items
+- Ship Weapon Tuning: Increased RPM & spread on anti fighter cannons
+- Ship Weapon Tuning: Retuned distortion scattergun
+- Ship Weapon Tuning: Increased distortion bullet velocity to 1300 m/s
+- Reduced S1 Quantum Drive Spool Up time by 1 second
+Core Tech
+- Made Server Performance Optimizations for AI Spawning
+- Updated Control Images
+## Bug Fixes
+- Fixed Various Issues Causing Interaction delays in the PU (We will be monitoring and assessing further interaction delays with this release)
+- Fixed - Graphics - Upscaling / DLSS - Under any upscaling option, ship HUD clarity is significantly affected when QT HUD is displayed
+- Fixed - While Vulkan is enabled and client is in windowed mode, ALT Tabbing out will display a black screen in front of everything else
+- Fixed - PU - Graphics / Art - Turning volumetric clouds off makes clouds appear black
+- Fixed kopions teleporting around during jump melee attacks on remote clients
+- Fixed - PU - Actor / UI - Loot Inventory - Unable to store items in loot crates or storage boxes while using the loot screen
+- Fixed - PU - Actor / UI - Loot Inventory - When looting, UI can fail to target a valid slot, causing move attempts to fail
+- Fixed - PU - Distribution Centers (DC) - Locations / AI - AI at Covalex Distribution Centers cannot be killed
+- Fixed - Drake Buccaneer's exit animation can trap the player inside the cockpit
+- Fixed - Anvil Carrack - PU - Vehicles - Life Support / Room Volume - There are areas in the technical deck with gaps in the room volume causing player suffocation
+- Fixed - MULTIVEHICLE - Stanton - Outposts / UGF - Vehicles - Grav-lev vehicles are targeted and fired at by bunker turrets regardless of emissions compared to wheeled vehicles
+- Fixed - PU - Stanton - UI / Shopping - Opening the character inventory while quick buying an item from a shelf/display, will cause quick buy to stop working
+- Fixed - PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- Fixed - PU - Starmap - The drop shadow for the info panel will disappear the first time you open the starmap and zoom into a planet
+- Fixed - Precision Targeting - Sometimes in MP precision targeting is not available
+- Fixed - Interior Map - Route path finding not finding path between zones
+- Fixed - AC - Custom Lobbies - Map selection list is not shown
+- Fixed - AC - Free Flight - Bloodshot Ridge / Winner's Circle - Locations / Spawn - The spawn point for hover vehicles is up in the air causing them to fall down and blow up
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 4 Server Crashes
+- Fixed 2 Vulkan Client Crashes
+- Nvidia DLSS Specific Vulkan Crash Fix
+- Fixed a Server Memory Leak

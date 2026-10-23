@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.10.0r
+Alpha Patch 3.10.0r has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.0-PTU.5737621.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Regression Thread: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-10-0r
+Testing Focus
+- Ship flight in and out of atmosphere
+- Updated building blocks ship UI for all flyable ships.
+- High speed combat changes
+- Turret gameplay
+- Origin M50 Improvements
+- Electron FPS Weapons and Electron Damage
+- Body Dragging
+- Citizen Trading App
+- New Targeting Method
+- Delivery Mission Improvements
+Known Issues
+- Players may not be able to reconnect to VoIP channels after disconnecting from the game
+- Players can load into prison wearing their flight suit and weapons
+- Wind affects ships inside hangars, making takeoff difficult.
+- Boxes are labeled as "ObjectiveSetup" in HUD when completing Covalex delivery and Recovery from wreck missions
+- Hangar Doors can remain closed when the Hangar is assigned to a Landing Players Ship
+- When the user ping scans an asteroid and then ping scans again the blob / asteroid relocates.
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- The Player Ship is destroyed shortly after flying into a Restricted Area / Zone around the Spaceport after leaving a Hangar
+- Landing gear will take multiple presses of the keybind to activate.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- Hammerhead atmo entry effects clipping through interior of the ship
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- Multi-Tool in Klescher Prison Commissary does not come with a OreBit mining attachment
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+## Feature Updates
+Gameplay
+- Updated hangar door detection to shut only after the entire ship has left the bounds of the hangar.
+- Added targeting pip change for when the target is in and out of weapon range.
+- Decreased the amount of 3d rotation the aiming reticle has at high angles to give a clearer crosshair.
+- Jettison Cargo default keybind moved to LeftAlt+J due to a conflict with unlock target.
+Ships and Vehicles
+- Improved flight characteristics of the 600i series in space and atmosphere.
+Weapons and Items
+- Reduced the damage and speed of S2 and S3 Sledge MassDrivers.
+## Bug Fixes
+- Security scans will now recognize the drugs on board a players ship during the Drug Production run missions.
+- Emotes should now correctly work.
+- Ground Vehicles should no longer be pushed off the Elevator when the Player attempts to store them in a 600i or 890 Jump.
+## Technical
+- Fixed 1 Client crash.
+- Fixed 3 Server crashes.

@@ -1,0 +1,43 @@
+## Star Citizen Alpha Patch 4.5
+Alpha Patch 4.5.0 PTU has been released and is now available for all testers! Patch should now show: VERSION 4.5.0-PTU.10917899.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Engineering, Armor, Ship Balance (Repair speed and RMC use will be greatly increased in tomorrow’s PTU)
+- Vulkan Renderer and Graphics Settings Updates
+- Physicalized Helmets
+- Snub Fighters and Interceptors balance pass
+- PU Loot Refresh/Collector Rebalance
+- Additional Hairstyles
+## Known Issues
+- Multivehicle - PU - Engineering - Ships that have gone critical powerplant but then restored through repairing are stuck in a drift even after engines come back on (Fixed in next build)
+- Multivehicle - PU - Vehicles / Weapons / MFD - Some vehicle weapons cannot be allocated any power in the MFD
+- Multi-System - PU - UI / Fleet Manager / ASOP Terminal - Typing in the search bar of the ASOP will make it freeze doubling the input
+- PU - Pyro IV - Storm Breaker - Locations / Missions - Opened safes remain open after 2 hour cooldown
+- Multi-System - PU - ASOP Terminal / UI - Incorrect ship is displayed on the ASOP
+- PU - Graphics - TSR / DLSS - Switching to a new resolution and swapping the upscaling to 50% (performance) causes UI / RTT's to draw repeatedly
+- PU - UI / Gameplay - Party markers are not with party members
+- Multivehicle – PU – Vehicles / Engineering / VFX - Fire is being detected by some clients and not others
+- Multivehicle - PU - Vehicles / Engineering / Components / RN - UI / Kiosk - When using the Engineering Kiosk, the vehicle model can become offset by the actor moving around it
+- Multivehicle - PU - Vehicles - Breached doors and ramps do not reset after the vehicle has been repaired and the player is unable to close them
+- PU - MIssions - Gilly missions are missing in contract manager
+- PU - MIssions - Foxwell Ambush missions are missing from contract manager in Stanton
+## Features & Gameplay
+Gameplay
+Engineering Updates
+Greatly increased repair speeds and RMC use for repair tools. Deactivated degradation from fuses and ship weapons. Slight decrease in 890j shield health. Slight increase in Polaris shield health. Fixed incorrectly high regen rate for capital ship shields. Further Engineering screen and fire Visual and LOD polish. Add temperature to MFD tooltips, hide temperature indicator for components that do not support it. Further armor ballistic and energy weapon damage reduction polish. Removed melee attacks damaging physical components. Updated the Ursa with armor inclusions. Adusted life support mass adding temperature to be the target temperature instead of the current. Prevent applying unnecessary cooling multipliers to room heat equalization.
+## Bug Fixes
+- Potential Fix: PU - Missions / UI / mobiGlas - Multiple Missions - Missions go missing from contract manager after so many are completed per shard (STARC-189497)
+- Potential Fix: Multivehicle - PU - Vehicles / Engineering / UI - Cooling System displays as offline despite power allocation on Coolants (STARC-188618)
+- Potential Fix: RSI Perseus - Vehicles - Art/Geo - Arilock and window geometry are slightly offset causing small visible gaps into the interior (STARC-189836)
+- Potential Fix: Drake Cutlass Series ( All Variants ) - PU - Vehicles / Atmosphere / Room System - No breathable atmosphere in the cargo bay area (STARC-188115)
+- Potential Fix: PU - Stanton - Landing Zone (LZ) - Orison - Level Design / Art / Locations - Players still have access to the Javelin Tour Fleet Week themed docking port at August Dunlow Spaceport (STARC-179931)
+- Potential Fix: MISC Fortune / Freelancer / Greycat MDC - PU – Vehicles / Engineering / UI – The engineering screen is misaligned (STARC-185534)
+- Potential Fix: Multi-System - PU - Fleet Manager / ASOP Terminal / Locations - Retrieving a vehicle at an ASOP Terminal will cause the screen to load infinitely until it times out
+- Potential Fix: Origin 400i - PU - Vehicles / Atmosphere / Room System - Majority of the interior lacks a breathable atmosphere
+## Technical
+- Fixed 6 Client Crashes

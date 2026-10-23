@@ -1,0 +1,48 @@
+## Star Citizen Patch 3.18.0
+Alpha Patch 3.18.0-LIVE.8389318 has been released and is now available on the LIVE environment!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Database Reset: Yes
+Long Term Persistence: Disabled (Full Wipe and Reset)
+Pledge Copy: Enabled
+Starting aUEC: 200,000
+Known Issues
+- Game clients may close without error or crash handler
+- ASOP Terminals are unusable and fade to black when accessed
+- Harvestable Deposits may be invisible to players, cause collisions or become unavailable for scanning, mining or salvage gameplay
+- The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Elevators and Trams are "Jittery" during transit of Player Character
+- Players may occasionally be unable to exit a ship seat
+- When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Reclaimer main on-elevator control panels do not respond to input
+- Cargo may be invisible in multiple ships after being purchased
+- Unable to view ships inventory through NikNax
+- When attempting to start a refinery job, players receive the following error ; Something went wrong (Error code: 20)
+- Security Contractor Evaluation is not re-offered upon failure
+- Combat Service Beacon Progress / Rating inconsistent on missions
+- Security Work Assesment Remaining Hostile NPCs Not Spawning In
+- PTV wheels at the Orison BTR area can clip into geometry and become detached from vehicle
+- The snub fighter attached to Constellations lacks interaction prompts to enter it, making it unusable
+- Some ship wreckage erroneously give "No Material" text and do not let you salvage
+- Markers Will Randomly Disappear After Quantum Travel With No Route Set
+- The NPC Coffee Vendor is missing from the various 'Coffee To Go' stalls located throughout Stanton
+## New Features
+Locations
+- Daymar Crash Site
+The Addition of a large derelict settlement on Daymar using parts of the StarRunner & 600i, as well as some habs adapted to the biome, to create a point of interest with included missions.
+- Sand Cave Archetype
+The addition of the new Sand Cave Archetype across multiple planets and moons in the Stanton System, including Hurston, Magda, Ita, Daymar, and Wala each with their own unique sand cave formations. These new sand caves include the brand new land crustacean known as the Stone Bug with it's new harvestable, the Stone Bug Shell.
+- Stanton Racetrack Locations
+Addition of many new racing locations into Stanton. With this update we are including 6 new and community driven racing locations into the Persistent Universe with updated assets and set dressings to make each racing location a unique and rewarding experience for players to test their racing skills. These Racing Tracks include: Hurston - Lorville Gateways (The Start of the Time Trial missions that leads to further track unlocks), Daymar - Yadar Valley, Orison - Caplan Stadium, Grim HEX - Miner’s Lament, Euterpe - Icebreaker, and AcrCorp - The Sky Scraper.
+- Greycat PTV Race Track
+Implementing a race track into the Orison Vision Center on Crusader in the same location as the most recent Invictus Launch Week, designed for the Greycat PTV.
+Gameplay
+- Physicalized Cargo T0
+This refactor of the ship cargo system allows both found and purchased cargo to be picked up, moved around, and placed into the cargo grid of a ship. The Cargo system has been completely re-written and with this refactor, the cargo boxes that you see in the ship, are actual, individual boxes which can be added to and removed from the grid via the use of a tractor beam and snap to the grid for perfect placement. As part of this refactor, we’ve rebuilt the Commodity Kiosk UI in Building Blocks which will be used to buy/sell cargo to/from the ship/player inventories, and had to update not only the standard trading commodities, but also the harvestable and mineable entities.
+- Security Post Kareah Reactivation
+Security Post Kareah will be taking a more central role in Stanton's security. Crusader Security have moved in a full-time staff and have begun storing confiscated contraband aboard. The station will be off limits to all civilians, unless given prior authorization. Kareah has undergone a full art redesign polish. This includes a new evidence and contraband processing office addition with interactable contraband dispenser, new traversal pathways, new color schemes and branding, and updated set dressing and cover around the whole interior. The interior and exterior of Kareah have been updated with armed admin AI and reinforcements including new crusader security loadouts and police detectives in kevlar.
+Inside Kareah, criminal players will now be able to trigger a boss to spawn after killing several AI. After this boss has been killed players will be able to loot them and find a code on their body that will unlock a terminal inside the evidence storage room. After unlocking, players will be able to activate the contraband machine to dispense drugs. The player will be able to keep getting drugs out of the dispenser until a set amount of items are generated (randomized amount between 15 and 20 items). Once all items have been retrieved, the security terminal will lock itself, and upon leaving, the contraband room the door should lock not allowing players access to the area.
+Along with the Security Post Kareah Reactivation, we are introducing a new mission type called Retake Location. Initially only at Security Post Kareah, this new mission type is generated for players when a location deems itself under attack (e.g. when X amount of a location’s population is killed). This mission will generate for players outside of the location and will allow players to go to that location and lawfully enter and remove all hostile attackers. Each attacker a player kills will give them a bonus after completing the mission. Any players in the area contributing to the mission will get part of the overall reward.
+- Platform Assault on Orison
+Addition of Bounty, Assassinate, Clear All, and other missions that take place on the Inspiration Park platforms created for Siege of Orison. This includes eliminate all missions similar to the current UGF missions. For these islands the player will be tasked with killing everyone in a given building. These Mercenary missions available from Crusader Industries will have three difficulty curves, ranging from an easy clear of one building, to a hard clear of three buildings. Similar to eliminate all missions, Eliminate Specific Missions will  task the player with killing single or multiple Bosses based on difficulty. For players to qualify and receive these missions they first need to complete Security Work Assessment for Crusader Security.
+- New Missions: Time Trials Racing T0
+Racing time trials have finally come to the PU! Players will be able to test their skills versus set times on the newly added Racing tracks around landmarks in the PU, earning rewards based on performance and even unlocking more tracks as they progress. Players can pick up the first racing mission for the outskirts of Lorville and with enough racing prowess, get reputation to move onto the rest of the Time Trials around Stanton! This T0 implementation is focused on Ships and includes reputation progression tracks. (Note for PTU: Currently after completing the Lorville racetrack Time Trial, reputation will unlock the rest of the racetracks at once. This is intended to help test them during PTU and will have normal track unlocking later on in PTU)

@@ -1,0 +1,81 @@
+Hi everyone,
+We're excited to introduce something a little different with Alpha 4.5: early, experimental VR support. As part of our commitment to innovation, we have always encouraged our developers to stay current and explore ideas that could open up new possibilities for Star Citizen. This VR implementation grew out of that exploration mindset, and a small group of passionate engineers took the initiative to experiment with VR on their own, and we are now ready to share the first steps of that work with you.
+This is not our full VR launch. When that day arrives, we will make plenty of noise about it. What we are rolling out today is an opportunity for some early hands-on time, very much in the spirit of Open Development, so you can jump in, see how things are shaping up, and help guide what comes next.
+Because this feature is highly experimental, not all gameplay or interfaces will behave as expected in VR mode. You should expect issues, missing functionality, or elements that simply do not render or interact correctly. This is normal for something at this stage, and we are looking forward to hearing your first impressions and anything that stands out to you.
+There's a lot more to do, but we're excited to have you along for the ride.
+## SAID AGAIN IN BOLD: This is an EXPERIMENTAL feature.
+With that out of the way, let's dive into some further details.
+## Key Features
+VR Anywhere, Anytime
+Experience the entire Star Citizen universe in virtual reality, from the Main Menu to FPS gameplay to flying your ship and everything in between!
+VR Theater Mode
+Toggle between full VR and Theater Mode at any time, giving you the best of both worlds. Theater Mode projects a virtual screen in your headset with full game compatibility using the standard desktop pipeline.
+Love flying in VR but prefer traditional controls for FPS? Just press a button to instantly switch between full immersion and Theater Mode, complete with head tracking support. Theater Mode mirrors your desktop resolution, so you can even play in ultra-widescreen in VR without ever removing your headset.
+VR Dynamic Switch
+Let the engine handle the VR switch automatically. Whenever you put on the headset VR will be enabled on its own. If you take it off you are back in desktop mode!
+Note that not all headsets support this at the moment.
+## Getting Started
+Make sure you are running the game using the Vulkan renderer first. Starting with Alpha 4.5 this should be the default, and the D3D11 renderer is not currently supported. Simply connect your VR headset and ensure your preferred OpenXR runtime is set as active. Star Citizen will automatically detect your headset and initialize the engine for it. If a headset was detected, VR options will automatically appear in Settings → Comms, FOIP, VR & Headtracking section. All you have to do is turn it on there.
+When troubleshooting, if VR options do not appear, check your Game.log file and search for "OpenXR" to identify any initialization errors.
+Default Keybinds
+- Toggle VR on and off: “Numpad /”
+- Toggle Theater Mode on and off: “LALT + Numpad 5”
+- Recenter View: “Numpad 5”
+All bindings can be customized under Advanced Controls/Keybinds → Comms, FOIP, VR & Headtracking.
+VR specific settings
+You will find a series of new settings in the options under Comms, FOIP, VR & Head Tracking. They will only show up when you have a VR headset connected:
+- VR - Enabled: Enables and disables the headset (also available via keybind)
+- VR - Theater Mode: Enables and disables Theater mode (also available via keybind)
+- VR - Theater Mode Scale and Distance: Allows you to adjust Theater mode to your liking.
+- VR - Automatic Switching: Automatically enables / disables VR based on headset detection if your headset supports it via a sensor (verified on Quest 3 - compatibility varies by headset)
+- VR - Interpupillary Distance (IPD) Scale: This allows you to further scale the IPD distance that the VR headset is reporting. Effectively it means you can expand and contract the distance between your eyes.
+- VR - Show Console: self explanatory
+- VR - Monitor Mirror Mode: Allows you to set what your normal screen will show while you play. Useful specifically for streamers.
+- VR - Actor Control Mode: Allows you to define how you want to play the game in VR during the FPS / on-foot sections using the default mouse and keyboard controls. Since we do not support normal VR locomotion yet there are two ways from you can pick:
+- Pitch-locked (default): The mouse yaw allows you to turn but aiming up and down will not move your head but just your gun pitch angle. You have to manually adjust your head to look along the aim line of your gun. This gives you a stable view (which causes less motion sickness) but a somewhat suboptimal aim experience.
+- Direct offset mode: The VR camera is directly offset from your normal game camera. Very easy to use but the camera will tilt while leaning or high pitch angles. It is faster to use in terms of normal SC gameplay but less stable and therefore more prone for motion sickness.
+- VR - Vehicle HUD Projection Distance: Allows you to define at what distance infinity projected vehicle HUD elements are shown (e.g. gunnery PIPs, the Advanced HUD or the aiming crosshair). By default, it is set at 100m at which parallax effects should not be visible anymore.
+- VR - Visor and Lens Aspect Ratio/Distance/Height/Scale: Allows you to tweak placement of the visor and lens elements.
+Additionally, we whitelisted some advanced settings which can be changed via the console. We do not recommend changing them, but you’re free to experiment with them.
+- g_headtracking_hmd_actorIK_offsetPosition_applyInSeat (1 by default): This will adjust the actor rig based on the VR position offset while being seated (similar to what normal headtracking does).
+- g_headtracking_hmd_actorIK_offsetRotation_applyInSeat (0 by default): This will adjust the actor rig based on rotational VR offsets while being seated. Enabling this will adjust the unified actor rig based on where you look with the headset, but it will also induce more motion sickness as the actor posture changes with it.
+- g_headtracking_hmd_actorIK_offsetRotation_applyDefault (0 by default): This will adjust the actor rig based on rotational VR offsets while not being seated. Enabling this will adjust the unified actor rig based on where you look with the headset, but it will also induce more motion sickness as actor posture changes with this.
+- g_headtracking_hmd_vehicleAds_allowPositionOffset (1 by default): If enabled, allows the VR offsets to be applied to the the precision targeting camera.
+- g_headtracking_hmd_actor_shake_applyRotationOffset (0 by default): If enabled allows shake to happen to the VR camera. Until further testing we turned this off, but you’re free to try it out.
+- r_StereoDepthComposition (0 by default): If enabled, provides OpenXR with the scene's depth buffer. This may improve any kind of reprojection behavior. Please let me know if you see any improvements from this! Edit: This needs to be set before starting the engine in the user.cfg. It crashes at the moment when used in game in the console!
+## Performance Considerations
+Enabling VR will impose an additional performance impact depending on your machine's hardware capabilities. Performance may suffer without adequate VRAM or a current-generation GPU & CPU. Our recommendations:
+- Enable upscaling (TSR, FSR, or DLSS) for substantial performance improvements
+- Ensure your system meets or exceeds recommended VR specifications
+- Monitor VRAM usage and adjust settings accordingly
+## Meta Quest Link Users
+We recommend disabling Asynchronous Spacewarp in the Oculus Debug Tool to prevent severe reprojection artifacts when using Meta Quest Link. These artifacts become increasingly pronounced as framerate drops.
+This issue may be resolved in the future once we implement the XR_FB_space_warp extension, but for now disabling ASW provides a better experience.
+## Current Limitations
+The following features are currently disabled:
+- Holographic displays like ship radars
+- Visor effects (frost/rain)
+- Water interaction effects
+## Known Issues
+- Actor look offsets via VR are not visible to other players yet.
+- Precision Targeting doesn't zoom in VR yet
+- In vehicle seats unlocked gimbals may not work when they are slaved to the view direction. We recommend you do not slave the gimbals to your view direction.
+- UI elements (personal inventory, world markers, weapon customization & more) need optimization for VR
+- Gravlev vehicles have an incorrect head position
+You may toggle to Theater Mode for any VR-specific issues you encounter.
+## Bug Reporting
+Please report VR issues on the Issue Council, and use the “Experimental VR” category so that we can isolate and find VR specific issues rapidly.
+Before reporting VR bugs, please verify the issue is VR-specific by testing in Theater Mode or with VR disabled. This helps us isolate and address VR-specific problems more efficiently.
+## Looking Forward
+Our immediate focus is polishing the current implementation and resolving existing issues. Once stable, we'll explore exciting additions like:
+- Motion controller support
+- Full body tracking
+- Face and eye tracking integration
+And more!
+The virtual verse awaits!
+EDIT:
+In case you own an older WMR headset (e.g. HP Reverb G2) which have been bricked by the Windows 11 24H2 update, you can use the Steam Oasis driver by Matthieu Bucchianeri:
+https://store.steampowered.com/app/3824490/Oasis_Driver_for_Windows_Mixed_Reality/
+Within SteamVR we recommend setting the per eye resolution to a reasonable resolution like 100% and disable the motion smoothing.
+Also PIMAX users may experience a crash using the native Pimax OpenXR implementation due to EAC blocking a certain DLL. It is worked on a solution right now.
+In case this happens please try to use the SteamVR OpenXR implementation and make sure the per eye resolution is set to manual within a reasonable resolution!

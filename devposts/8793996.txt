@@ -1,0 +1,33 @@
+## Star Citizen Alpha Patch 4.8
+Alpha Patch 4.8 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.8.0-PTU.11717689.
+- Audience: Evocati (Standard Evo NDA) Will be monitoring to determine Wave 1 viability for the weekend
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Mission: Tactical Strike Groups & QV Extraction Stations (Mission Locations increased and lots of art/lod/performance polish)
+- New Event: Return of Xenothreat
+- Vehicle Command Module
+Known Issues
+- Multivehicle - PU - Vehicles / Interaction - Command Module - F-interaction for Pilot and Co-pilot seat is missing
+- PU - EVA - Unable to move using mouse control and head is locked in place during EVA giving very little control
+- PU - Stanton - Missions / Location / UI - Missions accepted after a server error or hybrid restart does not progress after completing Go To objective
+- PU - UI - Party connection Playing on repeat after quantum travel after a party member crashes and reconnects
+- Multi-System - PU - Missions / UI - Missions have no QT Beacons present and mission objectives do not progress on the initial / only shard
+- PU - Multisystem - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+## Features & Gameplay
+Ships & Vehicles
+Vehicle Command Module
+The Command Module feature introduces a new ship pairing mechanic where a smaller, fully pilotable command ship takes control of a larger host ship that cannot fly on its own. For this 4.8.0 PTU, this applies to the Drake Caterpillar. Without a Command Module attached, the host Caterpillar cannot be piloted.
+The core flow is: The Parasite docks to the Host and initiates a System Migration Procedure (SMP), a brief transitional phase during which both ships are non-functional, after which the Parasite's pilot gains full control of the paired unit through the Host's systems. The process reverses cleanly on undocking.
+Default docking has been moved to a new keybind to avoid collision with landing gear toggle:  RALT+N for Ship-to-ship docking/undocking (preferred over ALT+N to keep ATC requests on tap ALT+N and for HOTAS usability).
+System Migration Procedure (SMP)
+The SMP is implemented as a new mode so it can apply ship-wide changes across UI, audio, and VFX simultaneously to both vehicles.
+During SMP:
+- All MFDs on both the Parasite and the Host display a dedicated transfer UI showing migration progress
+- No thrusters or weapons are operable on either ship
+- The command module cannot undock during this phase
+- Cockpit lights on the command module change color to indicate the transition state
+After SMP completes movement input controls both ships as a single unit. The Power Management MFD controls the Host's power allocation. Self-Status MFD and MFD Casts display the combined Command Module and Host instead of just the command module. All standard vehicle functionality is available: combat, QT, landing services, docking to ships and stations.
+Notes: The Host has no pilot-controlled weapons. The command module pilot cannot fire from the pilot seat while paired. Engineering terminals show Host components only. All command module components are disabled and will not appear. The command module cannot undock from the host while docked to a station or docking tube. The reverse (docking to a docked Host) is permitted.

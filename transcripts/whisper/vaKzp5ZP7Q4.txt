@@ -1,0 +1,219 @@
+# Inside Star Citizen: Alpha 4.0 - Playing With Fire
+# https://www.youtube.com/watch?v=vaKzp5ZP7Q4
+[    0.0] Last week we explored some of the new adventures available to players in space in the upcoming Alpha 4.0.
+[    5.7] But there are even more dangers to be found within your spacecraft and vehicles.
+[    9.8] Fire is blazing a trail towards its awaited debut in the persistent universe.
+[   14.5] And while we don't want to burn any bridges with the resource management team,
+[   19.2] we'll jump out of the fire and into their frying pan in just a few weeks.
+[   23.3] I really bet their ears are burning.
+[   26.9] We're fired up to give the VFX arsonists a chance to set the world on fire this week.
+[   31.5] Or at least just the interior of spaceships.
+[   34.0] Because we don't want them to burn themselves out.
+[   37.3] Playing with fire.
+[   39.4] I'm out of idioms now.
+[   41.6] I'm gonna go see if I can add more fuel to fire.
+[   43.9] 4.0 will have fire inside of ships.
+[   66.9] For our initial rollout we didn't really want players to start fires everywhere.
+[   72.1] For surface they really wouldn't be able to handle it.
+[   74.3] So we decided to focus on the interior of ships.
+[   78.4] They're smaller, more contained and more controlled.
+[   83.1] Fire is tightly integrated with the resource network system.
+[   86.5] And a great fit for a first release within the spaceships where resource network
+[   92.1] will be focusing on as many ships as we can.
+[   97.8] Starting a fire is based on damage.
+[  100.3] And different kinds of damage.
+[  103.5] Fires can be caused by ship items.
+[  107.5] When they hit zero health.
+[  109.8] There are also ways for ship items to cause fires in the normal running and operation of them.
+[  115.4] We're currently looking at making it so that when they miss fire.
+[  119.8] And they have the highest level of wear.
+[  122.2] That there is a chance that they can also cause fires.
+[  126.7] But other types of damage like impacts from weapons or explosions.
+[  131.5] They could also ignite a fire.
+[  134.8] Another way to start a fire is getting the environment hot enough to actually get your
+[  140.2] surfaces to auto combust.
+[  142.7] For example if you open up your door on a really really hot planet and the hot air starts
+[  148.3] to flow into your ship.
+[  150.0] Then if that air is hot enough and some surfaces might start igniting from that.
+[  155.5] Seriously I could open my door and my ship might catch fire?
+[  158.7] You would need a room to reach.
+[  162.1] I think it's like a thousand Kelvin for those materials to start to smoke.
+[  167.2] So it's something that's technically possible but it's not likely.
+[  170.6] If the planet is warm enough, yes.
+[  173.6] Is there a planet warm enough to do that right now?
+[  175.8] I don't think so.
+[  176.8] Okay.
+[  177.8] You're saying systemically it's possible.
+[  181.4] Systemically it's possible.
+[  182.4] It's technically possible but very unlikely.
+[  185.4] Don't worry everybody.
+[  190.2] Part of the fire hazard system propagation is based on the fire triangle which is oxygen,
+[  196.3] fuel and temperature.
+[  199.2] Oxygen is tracked by the room system.
+[  201.3] The atmosphere that is most rooms in the universe have their atmosphere tracked including oxygen.
+[  208.3] The fuels they will be tracked on the surfaces so every surface in the universe is marked
+[  213.8] up with a surface type.
+[  215.7] That surface type has different properties for fire propagation to work.
+[  221.0] The heat that is usually from a ignition source is the damage that could happen but also if
+[  227.2] you have an object already on fire that could start a fire again based on the heat that
+[  233.4] that fire is emitting.
+[  237.1] Fire will start small if you have a small ignition point so it will not start blazing
+[  243.4] immediately so it will start propagating quite slowly but if you leave it untended
+[  248.3] then the fire will start growing and the more it grows the faster the propagation will
+[  254.9] happen and the larger the fire will get.
+[  258.3] It's quite complicated to have a controller that much energy, heat.
+[  263.7] It's a balance.
+[  264.9] I think that's the hardest thing to get having the balance, having the fire texture that
+[  270.5] works well with the particle behaviour, with the heat, the sparks.
+[  275.0] You need to have the whole feeling of heat and danger and it's when you get this spot
+[  280.7] where it really starts to make you look certainly afraid of it that yeah it starts to get good
+[  286.4] I would say.
+[  289.9] Each of the materials that we have marked up they have their properties and we can set
+[  294.7] a material to be combustible or not.
+[  298.4] These surfaces will be combustible, a few exceptions such as glass will not be.
+[  306.3] But the ones that are especially in ships we decided to go for a more tech approach
+[  312.1] so even if metal itself will not easily combust we assume that behind that metal there will
+[  319.1] be pipes and cables that can catch fire.
+[  323.5] Based on the properties that each surface type has for example wood will burn different
+[  328.4] from rubber or plastic or metal so the propagation between those will interact differently.
+[  335.4] Don't worry like not everything will catch fire at the same time we have these different
+[  340.6] properties that will cause different surfaces to catch fire at different times.
+[  347.0] You have to think of the other things that can also catch fire.
+[  350.0] Things like your cargo which you probably don't want to catch fire because if it burns
+[  354.2] out you will lose it.
+[  356.8] Other things might be loose ship items that you have laying around just in case you want
+[  361.6] to repair your ship.
+[  363.3] The player itself will not be able to catch fire but the player will feel the influences
+[  370.4] of fire in their environment so if you step into the fire then you will take damage.
+[  377.0] If you are near to the fire you will feel the heat so your actor status will start showing
+[  382.4] up with like higher temperatures.
+[  385.3] If the fire is not managed properly for example your life support can't feed in enough oxygen
+[  392.8] then oxygen will be drained and your player will start to asphyxiate.
+[  397.2] Why can't I set people on fire?
+[  399.8] Tech.
+[  400.8] Will you commit here now that someday it will set people on fire?
+[  405.4] I will commit to nothing.
+[  407.6] I tried everybody.
+[  413.9] People will have different ways of setting fires to ships, hopefully other people's
+[  418.1] ships not your room.
+[  419.9] It is important to know for 4.0 that we will not have fire outside of ships so if you set
+[  426.5] fire to an item inside one ship you can bring it to another ship given that the medium that
+[  433.1] you are traveling through has enough oxygen to sustain the fire.
+[  437.4] You can set fire by damaging items in the ship so shooting them when an item dies that
+[  445.1] has a chance to set fire.
+[  448.0] Other ways to set fire are bringing in ignited items and placing them in someone else's ship.
+[  460.7] One of the biggest challenges that we recently had with fire was the networking and Francesco
+[  466.5] has done a really really amazing job with getting that ready.
+[  472.6] The presence or absence of fire is a very important thing to convey to players.
+[  477.6] You don't want a player stepping into a thing that doesn't look like it's burning or avoiding
+[  480.9] a thing that looks like it's burning.
+[  482.9] Synchronizing fire was a very important part of making sure that the feature function correctly
+[  487.9] and we have a lot of data that fire generates and a lot of data doesn't work well over
+[  493.3] networks.
+[  494.3] There was a lot of work being put into relying as much as possible on the fact that our fire
+[  500.8] system is stable, it's deterministic, it will always do the same thing given the same
+[  505.4] initial parameters.
+[  507.6] There were a lot of cases, there were cases of players joining in late.
+[  510.8] They obviously don't get where the fire was three hours ago, they just say now, they need
+[  515.3] to know what it is now.
+[  517.5] There's players who have really bad internet connectivity or servers struggling a lot,
+[  521.9] situations that bring a hold to the continuous progress of fire from one end or the other
+[  527.3] and we need to reconcile that.
+[  528.9] So we needed a way to know when fire was no longer suitably similar between what the
+[  536.2] player was seeing and what the server thought was there and refresh it at that point and
+[  541.1] minimize how much data we needed to refresh it at that point.
+[  545.5] We are pretty happy with the way it works now.
+[  547.8] We have it so that it sends as little data as possible to sort of create these summarized
+[  553.0] states for the client and server and only when these differ enough do we actually send
+[  558.1] that relatively big, still compressed by a relatively big snapshot to synchronize everything
+[  561.9] back together.
+[  562.9] A fire that is left unchecked will spread throughout your ship and if it does this and
+[  571.3] it reaches your ship components, then you'll be having a very bad day and this could lead
+[  578.6] to your ship being both crippled or destroyed.
+[  581.9] So this means you will be able to put out fires using a fire extinguisher.
+[  586.6] Where possible, we have made sure that fire extinguishers are readily available throughout
+[  591.5] our ships.
+[  593.1] The extinguishers, they're very simple to use.
+[  595.8] They are point and shoot.
+[  598.0] You have to be careful that you don't start flailing wildly with your extinguisher if
+[  603.6] you have to aim at the base of your fire and then keep it there to cool down the surface
+[  609.2] and take away enough of the heat and the oxygen so that the fire calms down.
+[  614.6] There will be a temperature readout where you can see how strong the fire is still where
+[  619.4] you're aiming.
+[  620.4] And you need to keep your finger on the trigger until it actually goes out.
+[  626.1] Fires can just be smoking there and technically it's very close to being on fire so you really
+[  631.4] do want to make sure it's really out before you move on because if you just leave them
+[  636.6] smoking and then go wandering off, there's a good chance it will heat up again and catch
+[  640.9] fire again.
+[  643.6] It's worth knowing that a fire extinguisher has a limited amount of ammo within it.
+[  649.5] To your benefit, you can also take your fire extinguishers back to where they are stored,
+[  654.6] plug them in and then they will recharge their ammo.
+[  658.0] However, it is important to know that if your ship doesn't have a functioning life support
+[  664.8] at this moment, the recharge will not work.
+[  668.0] If you leave the fire completely untended, then your ship can completely burn out so
+[  674.4] it will be completely black.
+[  677.4] If the life support can keep up providing enough oxygen, then it will just keep going
+[  683.5] until all of the fuel that is the surfaces has been burnt out.
+[  688.5] Or if the life support is not running, then your fire will start to diminish.
+[  694.3] If you don't do anything, the life support will keep feeding in oxygen enough for the
+[  699.7] fire to be sustained and start spreading everywhere.
+[  703.2] You don't want people to put fires out?
+[  705.0] No.
+[  706.0] I want them to die in a fire.
+[  708.5] The views and opinions of Leo Junen represent those of Pletum Fiery and Games, Carbon Space
+[  715.0] Industry, and some city areas.
+[  720.6] There are more ways to extinguish fire with the life support and resource network.
+[  725.7] You can cut power to your life support for a room and that means that there will be no
+[  731.2] more oxygen provided, which means that the fire itself will start using up all the oxygen
+[  737.5] and it will extinguish slowly by itself.
+[  741.1] Another way is to open up your doors to open space and that will mean that all of the atmosphere
+[  748.9] is being sucked out into open space and again no more oxygen for your fire to continue.
+[  755.7] After a fire, you can repair your items or replace them.
+[  760.6] Fire can damage your interior of your spaceship.
+[  764.7] We have some very beautiful burn decals that Francesco and Guillaume have been working
+[  769.7] on to show you where your ship has been burned.
+[  775.4] The visual damage to the surfaces is not something you can repair manually, but you can go to
+[  781.1] a repair station and repair your ship there and that will get rid of all of the visual
+[  787.7] burn.
+[  788.7] But if I want to leave it burned because it looks cool, I can do that.
+[  792.3] You can do that.
+[  793.5] It persists.
+[  797.0] I'm very happy with the current progress.
+[  799.8] It's been a very long road for the team to get to this point.
+[  804.1] It's amazing to finally be able to roll this out to the players.
+[  809.1] What it's amazing to work with is just so fun and the results are very good and very
+[  813.7] quick.
+[  814.7] I'm looking forward to see what people will do with it, what kind of weird edge cases they'll
+[  820.8] find and we'll probably have to fix up.
+[  823.8] But as long as the servers don't die because of fire, I think we will be able to deal with
+[  829.2] it.
+[  833.6] So what did we learn this week?
+[  835.1] Well we learned where and how fire will make its first appearances in the persistent universe
+[  839.6] in your spaceships.
+[  841.0] How it'll spread and the dangers of leaving it unchecked.
+[  844.4] Your spaceships will burn and maybe go boom.
+[  847.2] And both how you'll put them out or potentially spread the fire to other vehicles.
+[  852.1] And I'm thinking you all might find some ways that we missed.
+[  854.9] Now don't forget the ship showdown is still underway.
+[  857.6] It's your chance to vote on which vehicles you like best as well as send John Kruh messages
+[  862.2] on social media that he legally has to respond to during this time.
+[  866.0] Hi all.
+[  867.6] David here.
+[  868.6] Another thing I have to say about this is no.
+[  871.9] Just no.
+[  873.6] Our program will now conclude.
+[  875.9] For Inside Star Citizen I'm Jared Huckabee.
+[  878.2] Thanks for letting us share the people and process of game development with you and we'll
+[  881.6] see you all here next week.
+[  883.5] It's time to go pyro-planet side.
+[  891.3] How do you start a fire?
+[  892.8] First you contact ATC.
+[  894.3] Yeah.
+[  895.3] Yeah.
+[  896.3] I could start with that.
+[  898.4] That would be good.
+[  899.4] I could say that.
+[  900.4] I could say that.
+[  901.4] You want me to do that.
+[  902.4] I want you to do that.
+[  903.4] Well first of all you start, yeah, you call the ATC and they set fire to your ship.

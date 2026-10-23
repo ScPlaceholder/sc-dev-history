@@ -1,0 +1,52 @@
+## Star Citizen Patch 3.3.0
+Alpha Patch 3.3.0 has been released, and is now available!  Patch should now show: LIVE-986748.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Major Known Issues:
+- Players will have to enable VOIP manually in the mobiGlas comms when joining a server, but doing so may introduce some instability.
+- Mission markers no longer appear after using crash recovery.
+- Turrets without gyrostabilization enabled may not move as intended.
+## New Features
+General
+- Integrated voice over IP (VOIP) and face over IP (FOIP).
+Settings can be accessed via the "comm setting" options menu including basic options and webcam facial calibration along with options to enable head-look tracking.  To check if VOIP is active, open the comms section of the mobiGlas and be sure the microphone icon is enabled.  VOIP requires the "NUMPAD +"  to activate and broadcast to party members, proximity (if in global chat), or via direct calls.  A "selfie" camera can be activated to check on FOIP behavior using the "numpad -" key and recalibrated using the "numpad *" key.
+- Numerous updates to grouping and chat services including a new visor chat interface.
+Players can create their own chat on the comms mobiGlas and "tab" between different chats (ie global, party)" on the visor.
+- Added sliders for general mouse and mouse ADS sensitivity.
+Universe
+- Added: Rest stop location - CRU L2
+- Added the repair/refuel/rearm functionality previously associated with CryAstro to all station landing pads (Port Olisar, Levski, Grimhex) and at Rest Stops.  Note: Repair mG function no longer automatically pops up and will need to be manually selected via the service app.
+- Added: Quantum route planning.
+The Starmap now has route planning functionality. To use, plot a final destination via the Starmap (can be any destination, including outposts).  Routing will automatically display a series of quantum jumps along with the fuel required.  Players will still have to calibrate and spool, but after each jump they will automatically be presented with the next destination in the route without needing to open their Starmap.  The quantum interface has also been updated to support this functionality with with "set route", "clear route", and go to current location (appears as a crosshair).
+- Added Teach's Ship Shop to Levski.
+Reached through an elevator in the customs area. You can purchase a ship via interacting with ships on the shop floor (similar to store displays). Ships on the shop floor can be opened and explored, but not flown.  All purchased ships come with insurance.
+- Added: Mission giver Recco Battaglia.
+A former miner, Recco can be found in a side-hall on the lower floor at Levski and organizes resource needs for the base.
+- Added: Asteroid mining.
+Mineable resources can now be found in the asteroid belt around Yela and Delamar.
+Missions
+- Added "Scramble Race" style missions.
+Scramble races are death races using ships in space and using vehicles (Ursa/Cyclone) or Gravlev bikes (Nox/Dragonfly) on moons. Races use a checkpoint system with each player who shoots (ships) or moves over/near (vehicles) a checkpoint accruing a point toward victory.  Additionally, players can destroy race leaders to gain their points.  Races have a registration period after accepting the mission, giving some time for others to register, and a travel period for players to make their way to the start line.  Planetary surface races are located reasonably close to outposts for ease of travel and spawning vehicles.
+Ships and Vehicles
+- Added: Cyclone TR, AA, and RC
+The Cyclone TR includes a rear gunner position, meant for combating infantry and ground vehicles. The AA has missiles and an EMP for dealing with threats from above. The RC is a racing variant with boost functionality.
+- Added: RSI Constellation Phoenix.
+- Added: Aegis Hammerhead.
+- Added: Anvil Valkyrie
+- Coolers now use power, perform according to power, and can be overclocked.
+- The Quantum Drive now performs according to its power state including faster spooling/calibration based on power and the ability to be overclocked.
+- Turret gyrostabilization can now be toggled via an interaction node as well as a hotkey "G".
+- Power target level can now be set independently for each item on the ship MFDs, allowing them to be manually over or under-powered.
+- Added Hurston Dynamics Dominance and Attrition series ship weapons.
+Available in sizes 1 - 3, the Dominance series are high quality scatterguns that fire more pellets as they build up heat. The Attrition series, available in sizes 1 - 6, are laser repeaters that deal higher damage, via increased fire rate, the hotter the weapon gets. Both weapons can be purchased at GrimHex Dumper's Depot.
+- Quantum drives now have a maximum range per jump that varies depending on the size of the drive.
+FPS
+- Added FPS combat AI.
+Available as a mission to Security Post Kareah.
+- Added motion warping to allow sliding during vaulting depending on the object/destination.
+- Added: Kastak Arms Karna assault rifle (available at Live Fire and Skutters).
+UI
+- Kiosks, the PMA, and the VMA all now have functioning item previews.
+Star Marine
+Arena Commander
+- Added Arena Commander in-game rental system
+Available within the Arena Commander menu, players can now rent available ships direct from the client.

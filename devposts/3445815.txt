@@ -1,0 +1,2 @@
+I thought you were onto something there, but alas 4294967295 is actually 0xffffffff (it'd be an even number if the last bit wasn't set). This is the equivalent of -1, and this is how you specify in DirectX-11 that you want a full set of mip-map textures.
+Ali B

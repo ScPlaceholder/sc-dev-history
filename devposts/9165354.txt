@@ -1,0 +1,84 @@
+Hello everyone,
+Today, we are releasing the RSI Launcher 2.18.1
+RSI Launcher can be found here:
+https://install.robertsspaceindustries.com/rel/2/RSI%20Launcher-Setup-2.18.1.exe
+In this version, we're improving the download to better handle edge cases on process exit.
+## :gear: New features:
+What's new in this release:
+- Reworked the installer so each download and patching step runs in its own isolated process. This is fixing 5009 install errors and "file in use" failures on cancel
+- Stopping Launcher memory from building up across paused and resumed downloads.
+- We updated the max number of guides displayed on the Guide System to 999.
+- Access to main org and referral code from the account panel
+## :wrench: Fixed Issues:
+- LCH-2823: We fixed the issue where after changing screen display the Launcher was not visible.
+## :bug: Known issues:
+- If you witness a black rectangle on the bottom right of your screen, please turn off the overlay notification in your notification settings.
+- Some users encounter a flickering Launcher background, which can be partially mitigated by turning off accessibility settings. Please refer to this comment for a potential fix: https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/rsi-launcher-2-0-6-release-notes/7279512
+- The Launcher sometimes fails to create the StarCitizen/Live folders for some users, leading to Error 2000, Error 5008, or Error 5010. Try creating the folder manually and running the Launcher as an administrator.
+- LCH-1030: Launcher suppresses Screen Saver
+- LCH-1958: Never Ending Download loop. Please report the issue; we're having trouble reproducing it.
+- Users might encounter Desync with Language and Proficiencies while using the guide system both on Spectrum and in the Launcher at the same time.
+Please try this version and share your feedback with us! Your feedback is essential for improving the Launcher.
+## :mega: RSI Issue Council - Launcher Project
+https://issue-council.robertsspaceindustries.com/projects/LAUNCHER
+Any additional feedback can be provided in this Spectrum Thread.
+Since RSI launcher 2.0.0, the log.log file can be found by clicking on “GET LOGS” in application settings or under: C:\Users\<username>\AppData\Roaming\rsilauncher\logs.
+## :spiral_note_pad: Updated Error Handling
+--- 2xxx — Installer ---
+2000 - Installer - Catch-all
+2001 - Installer - Fix permission
+2002 - Installer - Cancellation failed
+2003 - Installer - Not enough disk space (During the calculation phase)
+2004 - Installer - Uninstall failed - permission denied
+2005 - Installer - Uninstall failed - files in use (game/EAC/antivirus)
+2006 - Installer - Uninstall failed - unknown
+--- 3xxx — Initial download (NMD) ---
+3000 - NMD - Catch-all
+3001 - NMD - Invalid MD file (corrupted download metadata)
+3003 - NMD - Invalid MD file header
+3004 - NMD - Verification header not found
+3005 - NMD - Not mapped error – unknown
+3006 - NMD - Disk full (During the initial phase)
+--- 5xxx — Datapatcher: disk & files ---
+5000 - Datapatcher - Disk full (During the update phase)
+5001 - Datapatcher - Write permission / Access denied
+5002 - Datapatcher - Game files conflict (file in use)
+5004 - Datapatcher - Corrupted game files
+5006 - Datapatcher - Failed to copy downloaded chunk
+5009 - Datapatcher - IO Error
+5010 - Datapatcher - P4K Error
+5021 - Datapatcher - Error 21 (drive sector size not supported)
+--- 5xxx — Datapatcher: manifest download ---
+5003 - Datapatcher - Manifest - Catch-all
+5030 - Datapatcher - Manifest - Access denied, IP changed (VPN / network switch)
+5031 - Datapatcher - Manifest - Access denied (expired or invalid link)
+5032 - Datapatcher - Manifest - HTTP error (CDN 404/500/503)
+5033 - Datapatcher - Manifest - DNS resolution failed
+5034 - Datapatcher - Manifest - TLS/SSL error (proxy, antivirus, clock skew)
+5035 - Datapatcher - Manifest - Connection reset or timeout
+--- 5xxx — Datapatcher: file downloads ---
+5005 - Datapatcher - Download - Unknown network error (catch-all)
+5040 - Datapatcher - Download - Access denied (VPN / network switch)
+5041 - Datapatcher - Download - Access denied (expired link)
+5042 - Datapatcher - Download - HTTP error (CDN 404/5xx)
+5043 - Datapatcher - Download - DNS resolution failed
+5044 - Datapatcher - Download - TLS/SSL error
+5045 - Datapatcher - Download - Connection reset or timeout
+--- 5xxx — Datapatcher: network, generic ---
+5015 - Datapatcher - Network - Could not resolve host
+5016 - Datapatcher - Network - Failed to receive handshake
+5017 - Datapatcher - Network - Too many files failed after max retries
+5018 - Datapatcher - Network - Catch-al
+--- 5xxx — Datapatcher: other ---
+5007 - Datapatcher - Unknown error
+5008 - Datapatcher - Not all files downloaded successfully
+5011 - Datapatcher - Invalid argument type
+5013 - Datapatcher - Installer exception u00
+5014 - Datapatcher - Standard error
+5019 - Datapatcher - Cancellation error
+--- 8xxx — Launcher support (elevated helper) ---
+8001 - Launcher Support - Permission not granted (UAC declined)
+8004 - Launcher Support - Create directory failed
+8005 - Launcher Support - Fix permissions failed
+## :warning: We are documenting the most commonly shared workarounds:
+https://support.robertsspaceindustries.com/hc/en-us/articles/22514899089431-Error-2000-or-50XX

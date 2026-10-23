@@ -1,0 +1,63 @@
+## Star Citizen Alpha Patch 4.1
+Alpha Patch 4.1 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 4.1.0-PTU.9629718.
+## Build Info
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+- Audience: All Backers
+- Server Info: PTU Channel
+- Long Term Persistence: Enabled
+- Mesh Configuration: 4:6:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Enabling Orison and Area 18 NPE
+- T0 Item Recovery
+- Ground Vehicle & FPS Mining Updates
+- Ship Collision Physics Updates
+- VOLT Weapons
+- Wikelo (Wick-uh-low) Collector Missions (Intro Mission Should now function and allow for subsequent Collector Missions to be completed)
+- New Align and Mine Event
+Tonight's build has further Hathor Location Art/Animation/Audio Polish. Wikelo Collector turn-in requirements are temporarily reduced for PTU testing to about 10% of what will be normally needed.
+This event will utilize 2 new locations in the PU; Hathor Platform Alignment Facilities and Hathor Orbital Laser Platform.
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback
+- Additional Missions updated for Meshing
+## Known Issues
+- Blocker: PU - BWin Spikes and drops to 0 for short stalls
+- Critical: PU - Item Recovery T0 - Upon being incapacitated the UI is showing a Fee + Tax % not meant for T0 (visual only and will not take aUEC)
+- Critical: PU - Personal Inventory - Item Recovery - User will lose their previously equipped loadout upon leaving Klescher Rehabilitation Facility
+- Critical: Mission Refactor - PVP Missions dont work
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- High: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel
+- High: PU - Pyro - Jump Point - Failing a Jump point will displace the player far away from the gateway station
+- PU - Stanton - Mission Refactor - Wikelo Collection - Turning in additional items results in the items disappearing and additional items in the freight elevator
+- PU - ReadyGrip Tractor Module - Locations - Shopping / Kiosks - Vehicle Tractor Beams / Vehicle Components - ReadyGrip Tractor Module is listed at 0 aUEC at shops and can't be purchased
+## Features & Gameplay
+- Locations
+- Further Wikelo Location Polish
+- Hathor Locations Polish: Further Ground and Station Polish Pass. Station Landing Pad Gravity Zone Adjustments. Update loot and medical container contents.
+- AI
+- Juvenile Valakkar Polish: Further Animation and Location Polish. Reduced underground movement speed.
+- Further Inclusions for NPC Dynamic Conversation Lines
+- Gameplay
+- Item Recovery: Marok Gem, Kopion Horns, and Wikelo’s Favor have been excluded from Item Recovery. Updated Deny Icon.
+- Increased minimum Prison Oxygen Repair reward
+- Ships and Vehicles
+- Greatly increased the SRV fuel storage. (4 to 28.5 SCU)
+Ship Audio Updates
+We have increased the audio standard on a handful of ships with 4.1 with new thruster and ambient sounds. This includes the Corsair, Cutlass, Arrow, and Lightning ships.
+## Bug Fixes
+- Fixed an issue allowing players to attach unintended items to armor grenade slots
+- Fixed many heavy armors in the PU appearing without any textureFixed many heavy armors in the PU appearing without any texture
+- Potential Fix: PU - Pyro - Handyman - Missions - Some pipes are not able to be fully repaired due to their angle
+- Potential Fix: PU - Stanton - Hathor - Mission Content / Locations - Platform Alignment Facility Card Slots become in operable and cannot insert next card required
+- Potential Fix: PU - Hathor - Missions / Locations - Player in control bunker has a chance to be killed when OLP laser fired
+- Potential Fix: PU - Personal Inventory / Vehicles - Item Recovery - Player can respawn back at their primary residence medical facility after setting their regeneration point to a vehicle and losing their loadout / vehicle (STARC-160623)
+- Potential Fix: ARGO MOLE ALL Variants PU - Vehicles / Core Tech / Vehicle Components - The front mining turret is missing collision
+- Potential Fix: PU - Stanton - Bounty Hunter Missions - mobiGlas / Mission Content - Bounty Hunter training contract have missing text strings
+- Potential Fix: Greycat ROC - PU - Vehicles / Physics - The wheels of the Greycat ROC can Clip through the hangar floor and cause it to be impossible to steer (wheeled vehicles now perform an additional safety intersection check to catch the points where the initial suspension point is intersecting)
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 4 Server Crashes

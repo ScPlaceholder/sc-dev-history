@@ -1,0 +1,9 @@
+## Hotfix | 1.30.2025 | sc-alpha-4.0.1-9503160-LIVE
+- Client Side
+► A potential fix has put in for power allocation and power pips getting set to 0 or off randomly. Internal testing looks good but please let us know if more issues arise from this once out on the LIVE environment!
+► Loadout custumizations were not saving for players in EA FPS matches. We have put in a fix for this so it shouldn't reset to default loadouts between joining.
+- DGS/Hybrid Side
+► 2 Server Crash Fixes. One of these was in the top 5 DGS crashes since 4.0.1 LIVE and should have a noticable stability improvement
+► We have put in further entity management performance improvements along with the ability to adjust more under planet surface culling of rogue entities if needed
+► We have a change put in that should help with players getting sent to incorrect and unloaded hangars before getting sent to the correct one when spawning a ship from the terminal outside of a hangar.
+We were noticing a delay in the appearance of a player’s personal hangar when requested by an elevator. This delay occurs each time the hangar is requested, but not when revisiting the elevator from within the hangar. The delay is variable and it typically lasts between 1 to 3 seconds. By waiting for this brief period, players can prevent falling into space upon arrival at their Personal Hangar if the issue still occurs after this hotfix.

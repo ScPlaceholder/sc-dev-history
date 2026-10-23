@@ -1,0 +1,77 @@
+## Star Citizen Patch 3.21.1
+Alpha Patch 3.21.1 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.21.1-PTU.8854374.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Up To Wave 2 Testers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- System - Security - Ship Trespass
+- Mission - Defend - Data Heist
+- New Player Experience - New Babbage
+- Vehicle Headlight Refactor
+- Tractor Beam - T2 - Vehicle Tractor Beam
+- Crusader C1 Spirit
+- ARGO SRV
+- FPS AI Behavior Integration
+- Siege of Orison Global Event Re-Activation (Playtest Tonight after build release)
+Known Issues
+- PU - Stanton - Locations / Elevators - Grimhex elevators kill players when entering them from the Main Concourse level
+- The player is unable to climb the interior ladder in the Vulture
+- Grim Hex - Clinic inventory only accessible in clinic lobby
+- Stanton - PU - Graphics - Low resolution textures appear around the PU
+- TRACKING - Cubemaps not rendering in New Babbage (and other locations)
+- Crusader Spirit All Variants - all variants - PU - Vehicles - Spirit explodes from any damaged for particular spot damaged on ship regardless of hull health
+- Argo SRV - PU - Vehicles / Insurance Claim - Argo SRV insurance claim is abnormally short
+- PU - Stanton - Ships - ASOP Terminal - Spawning specific ships will cause them to spawn outside of Hangars
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- PU - Stanton - New Babbage - NPE - Locations/Design - The player will be stuck in their hab's bed if they restart the tutorial by quitting to main menu whilst dead, blocking flow
+- Crusader Spirit A1 - PU - Vehicles / Weapons / Components - Missiles - When the Spirit A1 is travelling at high speed, a fired bomb can rip through the ramp and body of the ship and severely damage the ship
+- PU - Stanton - Hurston - Lorville - Locations / Design / AI - Security AI are missing from Teasa Spaceport Customs area
+- Anvil Lightning F8C ALL Variants - Vehicles / EVA - Using EVA to fly into the Cockpit during Zero G will cause the player to gain gravity and fall into the Cockpit
+- Stanton - Backend Services - Service Beacons - After service beacon is abandoned / canceled / declined, player will be unable to receive or accept other service beacons
+- PU - Stanton - Locations / UI - AR Marker showing your assigned hangar does not appear
+- PU - Mission Content - Retrieve Consignment - Datapad is blank / no code is displayed
+## Feature Updates
+Gameplay
+- Adjusted Max Force Distance for tractor beam and towing beam
+Ships and Vehicles
+- Increased Crusader Spirit Wing Base Joint Health
+## Bug Fixes
+- Fixed Incorrect percentage filled on container inventory UI
+- Fixed - PU - Stanton - SOO - Mission Content / Locations / Transit - Elevators in Crusader Tower won't go to "Roof" level
+- Fixed - PU - Locations - Transit - Elevators - Elevator is missing, no carriage, mesh or doors and player falls through if they walk in
+- Fixed - PU - MaxLift Tractor Beam - Character / Interactables / Tractor Beam - Left hand of female characters do not hold the 2-handed dedicated tractor beam correctly
+- Fixed - Crusader Spirit (ALL Variants) - PU - Vehicles / Animation - The Yoke does not animate correctly when the player is piloting the Crusader Spirit variants
+- Fixed - MULTIVEHICLE - PU - Vehicles - Audio - After a space bed login, engine sounds are missing until returning to atmosphere
+## Technical
+- Fixed 4 Client Crashes
+- Made Several Client Performance Optimizations
+## Siege of Orison Mission Updates
+- Siege now has a warning period for the event, when this initially starts there will be a 30 min warning where Dulli will say something is going down, this is to allow people to prep and accept the mission to know where its taking place
+- The lift from Orison to the rooftop will be disabled by default and only enabled when the event starts.
+- All the shuttle call terminals require the lieutenant’s code to be input one time to unlock.
+- Example would be the shuttle from Easy to Medium islands should use Solanki Boss' code, this includes if you managed to unlock it from Medium island.
+- The only one that won’t have a code is the broken shuttle from H to E island.
+- The barge now has a container that will prevent people from pushing into the barge beyond the first room. This becomes unlocked when all the previous Islands boss' have been complete
+- If you take a Siege Ship out of the area while the event is active we active self destruct that the player can not turn off
+- If you get back in the area it should disable the self-destruct
+- Once the IFFI on the barge is down, players will be free to take the ships as the Self-Distruct will be disabled
+- If you try and take your own ship into the area, you will be impounded back to “the last ATC the player was near"
+- There have been changes under the hood to turrets and the way the IFFI interact
+- If a player commits a crime or attacks another player on the mission they will get a marker placed on them and players still in the mission will be allowed to kill them, with this they will see an objective to do with Nine tails sympathizers and how many have been killed
+You only see markers for sympathizers on the same island as you
+- When you kill the island lieutenant and loot the code you will get a marker on potential IFFI locations
+- We have new audio lines
+- If the player approaches an island and the lieutenant is killed but the AA isn't disabled
+- If you are heading to an island and there are Ninetails sympathizers on that island
+- Along with one saying about more than 1
+- New mission success line
+- New line saying the lieutenant is dead and the iffi is optional they can move on
+- A line for the possible IFFI locations
+- Personal thank you to the player for doing the event
+- If a player kills another player everyone on that island gets informed, there is also a repeat line for this.
+- Fail reason strings have been added to all relevant objectives and the overall mission fails

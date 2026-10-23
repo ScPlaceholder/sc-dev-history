@@ -1,0 +1,67 @@
+## Feature Updates
+Locations
+- Grim HEX Updates
+These updates are to make Grim HEX a complete landing zone. The main changes include new location-branded utilitarian hangars accessible by the main hub with 2 large and 1 extra-large hangar to allow larger ships to land.
+- High Tech Hangars
+Full replacement of the current New Babbage Hangars to the new High Tech Hangars.
+- New Babbage Shop Additions
+Introducing new shops to New Babbage such as a novelty Kiosk in the New Babbage spaceport interior which will sell souvenirs and knick-knacks such as Pico the Penguin plushies. Also coming to New Babbage is The Factory Line, a flagship store for microTech, which sells their top of the line products, such as mobiGlas case variants, simpods, a new microTech cryptokey, and other various pieces of tech.
+- Planet Re-Drop - height maps quality update
+Updates made to all the height maps used on planets and moons to fully take advantage of their higher resolution. This will mean more detail can be utilized during the painting process.
+- Planet Re-Drop of Landing zones
+Planet location re-drop following the Height maps quality update to make sure all landing zones, derelicts, underground facilities, and outposts are set correctly into the updated environments.
+- Ocean Shader Improvements
+Added support for in-game oceans to react to flares and local lights using screen-space and cubemap reflection. Upgraded shading to include a Fresnel component and Sub-surface scattering term, and new shader features, to enhance the realism of oceans with improved refraction and additional detail layers. Added ability for ocean to react to wind conditions to increase or decrease wave turbulence.
+- Quantanium mineable unique visual material
+This is a visual change to Quantanium nodes to give it a new, unique material that will differentiate it from other mineables.
+- Added additional LODs to Port Olisar landing pads and rings to help with assets popping in and out at a distance
+- Added commodity inventory to outposts around microTech
+- Added new ships to inventories at Astro Armada, New Deal, and Teach's Ship shop
+Gameplay
+- Delivery Mission Improvements
+Delivery Missions have been overhauled, including creating new multi-drop off delivery missions and drug running missions.
+- Law System - Impounding Improvements
+We are introducing changes to the Impounding mechanics currently present in the game. When blocking a landing pad on a vehicle without permission, a message will appear on the visor UI of all players aboard it which includes a timer that will count down until the vehicle is impounded. Different actions that cause a ship impounding, such as pad obstruction or reckless operation of vehicle, can now have different impounding times and fines.
+- Restricted Areas V2
+We've reworked restricted areas around spaceports so they now have landing and take-off splines to guide you into, and out of, the allowed area of where you can land your ship. When requesting landing or taking off you will be required to fly down an assigned tunnel, which will show up as an AR 3D path in your HUD.  Along with this, the distance at which restricted area warnings are displays on the ship HUD will now scale based on ship speed and direction of travel.
+- Ship HUD Rework
+Rebuilding of our ship HUDs to use the new building blocks UI system. This includes updates to the design of TVI (Total Velocity Indicator) and reworked center targeting UI. Note: This change is currently not for ground vehicles and will be addressed in a future update.
+- Turret Usability Improvements
+Turrets have undergone a slew of changes to increase their usability. Turrets now have a fixed assist system, using weapon convergence to nudge weapons toward the target, while still rewarding precise aim and area targeting. In addition, we added a modifier for how much target acceleration is taken into account for PIP prediction. We now update the PIP purely on the velocity which gives us a much more stable firing solution and decreases the effects of network jitter of juking behavior.
+NOTE: These turret usability improvements involve a significant keybind rework and it is strongly advisable that you go through your keybinds in detail, rebinding where appropriate or re-familiarizing with the default setup. More information on the specific keybind changes can be found here:
+https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-alpha-3-10-keybinding-changes-additio
+- Updated ship control settings
+We have made updates to the default ESP settings. ESP radius and dampening effect is also now customizable in the options menu.  We have added additional VJoy visibility and functionality settings to the option menu.
+- Updates to Star Marine scoring and REC conversion
+Score for kills in Star Marine has been doubled to 200. Increased score limit for Elimination to 5000 (up from 3000), and adjusted the score to REC conversion due to these changes.
+- Moved the Personal Inner Thought back and page arrows to the middle of the menu and added a dark background behind the wheel
+- Greatly increased the reward payouts for doing Twitch Pacheco missions
+- ECN, Bounty Hunter, and Escort mission rewards should now scale better based on difficulty
+- Added Underground Facilities Missions around microTech and its moons
+- Jettison Mineable Cargo keybind moved from LAlt+t to LAlt+J to avoid a conflict with the new targeting keybinds
+- Temporarily updated Pro Trem Missions to not spawn around Delemar to avoid an issue with the target not spawning
+- Increased the signature range for scanned mineables
+Ships and Vehicles
+- Origin Jumpworks M50 Improvements
+Updates to the Origin M50 to improve the player experience. This includes making the landing gear compressible, updates to bring it to the new damage system, cockpit art improvements, and updating UI metrics.
+- Variable armor values have returned to ships
+We have setup some minor armor variation to ships.  Ships designed to take punishment will now have slightly higher damage resistance (ex. Cutlass Blue).  Stealthier ships will have signature reduction in armor, at the cost of some damage resistances.
+- Drake Buccaneer QoL Update
+Intake/Fuel tanks no longer fall off randomly with sing/engine detachment. Missile Pylon/S3 gun mounts swapped around to provide firepower when a wing is detached. Changed default missiles to a mix of standard IR/CS. Glass dirt/wear pass to help with pilot visibility.
+- Drake Caterpillar QoL Update
+Weapons changed from 4x size 2 (with size 1 installed) to 2x size 3 (with size 2 installed). Turrets updated to be 2x size 4 (manned) and 1x size 3 (remote). Glass dirt/wear pass to help with pilot visibility.
+- Anvil Gladiator QoL Update
+Increased turret from size 2 to 3, increased turret weapons from size 2 to size 3, default weapons changed from gimbaled size 2 to fixed size 3.
+- Xian Scout QoL Update
+Updated flight performance. Weapon hardpoints increased in size from size 3 to size 4. Default equipped weapons changed from fixed size 2 to gimbaled size 3.
+- Polish pass on Dragonfly and Nox handling and increased speed
+- Added rear side thrusters onto the Sabre Raven
+- Repositioned and Increased the amount of retro thrusters to 4 on the MISC Freelancer Variants
+- Added a weapon rack onto the exterior of the Aegis Gladius
+- Temporarily changed the Banu Defender loadout to use fixed S2 Tachyons to prevent the singes from being swapped to other ships
+Weapons and Items
+- Klaus & Werner Mass Driver Mass Driver S1-3 Ship Weapons Rework
+Visual rework of the original Sledge Series Mass Driver ship weapons. Players can buy these in-game at various shops in the PU.
+- Increased overheat threshold for Size 5 and larger Behring M7A Laser Cannons
+- Reduced the damage and speed of S2 and S3 MassDrivers.
+- Reduced Tachyon cannon damage

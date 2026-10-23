@@ -1,0 +1,26 @@
+## Star Citizen Patch 3.1.4
+Alpha Patch 3.1.4 has been released and is now available!  Patch should now show: LIVE-757485.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Major Known Issues:
+- IFCS has been improved but is still in unfinished state.
+- ESP tuning is not ideal and we will be looking to improve this moving forward.
+## Feature Updates
+Ships and Vehicles
+- IFCS has been refactored.
+- Fixes for IFCS instability.
+- Fixes for Gravlev hover mode and smoother transition between HOV and SCM.
+- Changed acceleration algorithm to transient.
+- Improved atmospheric simulation to support drag and gravity in motion control calculations.
+- Adjusted large ship acceleration for take off and surface to orbit transition to compensate for gravity.
+Note: You may be required to orient rear thrusters in such a way to maximize lift off acceleration.  For large ships with multiple thruster orientations, such as the Reclaimer, you will want to gain altitude in landing mode and reorient your ship vertically once moving into SCM/AB to push into orbit.
+- Gravlev speed limit is now only limited by planar velocity.
+- Improved transition between HOV and SCM modes for gravlev.
+- Retuned ESP to better fit the IFCS changes.
+## Bug Fixes
+- Multiple players should no longer spawn into the same EZ Hab room.
+- Fixed a bug with boost/afterburner where boost was heavily over-performing on some ships.
+- Recovering from a crash should no longer present the player with an empty ship list at ASOP terminals
+Technical
+- Fixed 3 fatal error crashes.
+- Fixed a fatal error crash on exit.
+- Memory leak fix.

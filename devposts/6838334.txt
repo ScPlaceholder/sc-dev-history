@@ -1,0 +1,51 @@
+## Star Citizen Alpha Patch 3.23.1
+Alpha Patch 3.23.1 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.23.1-PTU.9173159.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Open PTU
+Server Info: PTU Channel - US Servers Only
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+3.23.1 is mostly Fleet Week related but includes some other fixes and updates that might not have made it in time for 3.23.0 LIVE. Expo halls will run with an accelerated timeframe shortly after this build is released.
+Added additional logging to gain insight for bug: PU / AC - FPS Weapons - FPS weapons won't fire
+- Stability/Performance/Bug Fixing
+## Known Issues & Information
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs. This is not the intended final outcome for missions and recovery and further changes are coming in a later release.
+We are expecting ships purchased in game with aUEC right before 3.23.0 went live to come back with 3.23.1 when it goes LIVE.
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - UGF - Locations - Bunker elevator does not return up when called
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals for ground vehicles at Lorville gates get stuck on infinite load, accessing list of ships
+- PU - Stanton - UI - HUD / AR Markers - Misaligned HUD Markers with Ultrawide or TSR graphics upscaling enabled
+- PU - Locations - Transit - Elevators - Internal Transit Elevator shows up when called but doors remain closed, no carriage
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Locations / Vehicles / VMS - Can't repair/refuel/restock at Pyro Gateway Jump Point Station
+- PU - Locations - Distribution Centers - Security Checkpoint elevator vis area and missing collision
+- PU - Stanton - NPE - Missions - Objectives can be softlocked by player leaving bed before their objective record has updated
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - RSI Scorpius Antares - Vehicles/EMP - unable to activate EMP
+- Reclaimer Claw Cannot Deploy: Power Required Error Message (Workaround: Press the power button a second time)
+- AC - Squadron Battle - Friendlies showing up as enemies
+- AC - Grav Race - All Maps - Low gravity can launch players far above the track when hitting bumps or hills
+## Features and Gameplay
+AI
+- NPC Locomotion Polish
+Improved npc locomotion server-sync extrapolation. Prevent teleporting using extrapolated position. Stop root motion during teleportation.
+- Re-included MK1 Hornet AI Piloted Ships
+Core Tech
+- Water Caustics Visual Polish
+- Added Character Creator Validations
+## Bug Fixes
+- Made Further Entity Graph Stability Improvements
+- Fixed - PU - Stanton - UGF - Locations - Bunker elevator does not return up when called
+- Fixed - Multivehicle - PU - Vehicles / UI - QT effects are breaking HUD UI
+- Fixed - PU - Gamewide - Using a medpen causes you to drop your weapon
+- Fixed - PU - Distribution Centres - Elevators - Several elevator transit carriages created & destroyed immediately
+- Fixed - AC - Free Flight - UI - It is possible to select ground Vehicles for AC Free Flight mode, which can cause UI problems once in game lobby
+## Technical Updates
+- Fixed 3 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed 2 Vulkan+Upscaling GPU Crashes

@@ -1,0 +1,59 @@
+## Star Citizen Patch 3.15.1
+Alpha Patch 3.15.1 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.1-PTU.7868138.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Current Audience: All Waves
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu. Players may need to exit the game and reload after a server crash to fix this error.
+- The  ROC does not collect minerals with the extraction laser, instead they  spiral around the laser and are thrown across the terrain
+- Players cannot repair, refuel, and rearm at outposts
+- Character Customization not saving changes to the PU
+- Tree density update is currently not in this initial 3.15.1 build (Will be updated in a later 3.15.1 build)
+- Items not stored in long term persistence such as mined gems are currently not stackable (This is something that will be coming in a future update)
+- Swapping weapons has a chance to drop or remove weapons
+- The Prospector door and ladder lack animations
+- When in combat, NPCs can get stuck in cover when trying to exit
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round in Arena Commander
+## New Features
+Locations
+- Planetary Volumetric Clouds
+Addition of volumetric clouds around microTech. This is our first implementation of volumetric clouds for a rocky planet and is currently only available around microTech with other planets and improvements coming in future releases.
+Ships and Vehicles
+- Added New Ship: Aegis Redeemer
+- Added New Ship: Crusader Ares Starfighter Ion
+- Added New Ship: Crusader Ares Starfighter Inferno
+## Feature Updates
+Gameplay
+- Dropped Item Performance Polish
+Added dropped clutter prevention to avoid extreme performance issues when players drop hundreds of items into a single area. This will limit dropped carriables to 50 per 20m radius sphere and block further items being dropped until out of this range.
+- Medical UI Polish
+Increased the size of text on Incapacitated screen. Increased visibility of limb damage text when healing yourself with a medical tool. Added a marker to the players last corpse to help them find it after death. This will appear when within about 1500 meters of your corpse.
+## Major Bug Fixes
+- Players should no longer lose all equipped items when trying on clothing in a shop
+- Medical beacons should now complete mission/payment when player is brought back from incapacitation
+- Fixed an issue causing players to see black squares instead of smoke, clouds, and fog
+- Interacting with door panels in the Origin 400i should no longer cause the doors to become unresponsive
+- Attempting to deposit gems in Klescher Rehabilitation Facility should no longer give a "transaction error"
+- Fixed an issue causing a character's head, mobiGlas, and other equipment to go missing after being released from Klescher Rehabilitation Facility
+- Fixed an issue causing players to get a continuous black screen when dying in a hospital gown
+- Scanning a dead AI with the medical gun will no longer show that they still have health
+- Fixed an issue that could sometimes cause the "Equip All" function to attach fruit and other items to magazine slots
+- NPC Nurse head should no longer turn 180 degrees after entering a usable in hospitals
+- Lethal takedowns should now put players in an incapacitated state and no longer instantly kill them unless already incapacitated
+- The interaction range for looting an external loot crate should now match the leash range so that it doesn't close unnaturally while in range
+- Fixed an issue causing the tractor beam multi-tool attachment to cause the AR Cards for medical guns to be indefinitely suppressed when aimed at another target
+- Fixed an issue when equipping guns on to the back of a backpack, the guns are initially placed inside the backpack
+- Players should no longer fall through the bed and bounce back up when placed into medical beds by another player
+## Technical
+- Fixed 5 Client crashes
+- Fixed 5 Server crashes
+- Main Thread Deadlock Fix

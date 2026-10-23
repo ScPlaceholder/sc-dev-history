@@ -1,0 +1,72 @@
+- Player and External Inventory Interaction T0
+Visually manage food, drink, mined rocks and harvested items stored in your personal inventory, moving them between your backpack and suit pockets and any external storage devices (such as the cargo access on certain vehicles). This adds context menus to items by using right click that will allow players to drop and split stacks of items. Players can now interact with the back cargo hold of the Greycat ROC to access its storage and transfer gems between it and the player's inventory.
+- Throw T1
+Improvements to grenade throwing to make it more accurate and reliable, as well as expanding the throwing mechanic to accommodate other objects in the world. Added option to throw items overhand (left click) or underhand (right click) as well as holding the corresponding button to prime the grenade before throwing by letting go of the button. We have also added an AR trajectory display when throwing grenades and other objects.
+- Force Reactions T1
+Using the physics system, visible reactions are systemically triggered for Players and NPCs when punched, shot, and caught in explosions. Actors are made to lean when experiencing strong winds, or the G-forces of an accelerating ship, with extreme shifts in wind and ship velocity knocking actors down.
+- Updated Space Station interior layouts
+Space Station interiors have been adjusted to help players find their way around them. You can use the interior elevators to access multiple levels of the station including the Hangars & Habs, Commons area, and the new Cargo Decks.
+- Missile and Countermeasure QOL improvements
+We have made some changes to missiles and countermeasures aimed to improve and stabilize their use.
+Missiles will react to all countermeasures again. Missiles will lose the lock during the locking process if the pilot does not keep the target in the locking cone. Missiles do not have perfect target knowledge anymore. Fixed missile selection keybinds. Added missile selection HUD widget. Players can select which missiles they launch by cycling, which is shown on the HUD (currently unbound, but bindable in keybinds menu). Players can only simultaneously lock missiles of the same type if equipped to multiple racks, with 4 max. We have added a minimum distance a player can be at when acquiring a lock on another target with missiles and torpedos. This starts at S1 - 1000m, S2 - 1500m, S3 - 2000m, and S4 - 2500m. Size 5+ torpedos use a different method and have a slower release, as these are Torpedos, and all are set to a minimum of 1000 meters. There is now a UI indication for in and out of lock range along with the HUD showing the ranges if the target is out of range. A lock will be lost if the locked target goes under minimum range.
+For countermeasures, players can now either launch or deploy, what we are tentatively calling, decoys or noise fields. A decoy is a projectile that emits a very strong signal to spoof missiles (works on all seekers). A noise field is a limited jamming space which affects all kinds of sensor readouts (including the launching ship if contained in the field). Removed seeker specific countermeasure handling. Replaced countermeasure keybinds. Updated VFX for countermeasures to the new effects system. Added countermeasure ammo counter to HUD. Extended missile warning HUD widgets with shortest time to impact display for each incoming seeker type. Slightly rebalanced all countermeasures so big ships, like the Carrack, have less ammo per launcher but heavier countermeasure projectiles with longer effects.
+- Hostility Updates
+Acquiring a missile lock on a target is now considered a hostile action against AI and other Players allowing them to attack the person locking them without being the aggressor.
+- Added option to default select relative mouse mode in turrets
+- Added option to enable/disable ship crosshair animations.
+- Ship AR marker will now display the landing pad your ship is on.
+- Added Greycat ROC to be purchasable in a ship store in the PU
+Ships and Vehicles
+- Increased the Constellation thrusters in atmosphere to help with angular rotation and slightly reduced its linear drag for a small acceleration increase.
+Core Tech
+- Increased max button limit for joysticks/controllers from 50 to 100.
+- Right Mouse Button (and equivalent for PIT for back/exit on controller and flightstick) should cancel and close Quick Select Wheels.
+## Major Bug Fixes
+- Mining nodes should no longer change composition if a player scans it, leaves the area, and returns.
+- Fixed a bug that allowed players to sell Commodities and Mineable resources at any distance while the ship was occupied by another player.
+- Diamond icons should no longer remain displayed after surface deposits have been mined.
+- Fixed missing geometry inside the Pirate Caterpillar near the upper catwalk doors that was allowing players to fall through.
+- Changing arm armor should no longer cause the mobiGlas UI to disappear.
+- Players should no longer fall over and ragdoll when entering gravity from EVA for the first time after spawning.
+- Space Station ASOP terminals should now correctly show the landing pad the ship is spawned on when looking at the location column.
+- Carrack should no longer be missing SDFs on the nose of the ship.
+- Players should no longer be Launched when Entering/Exiting EVA or end up in an unresponsive state when their client is running at very low FPS.
+- Players should no longer tilt suddenly when Exiting EVA into a Ship if the Ship has Rotated.
+- Players should now teleport into the spaceport instead of a hangar after the ship they are in is impounded on a pad.
+- The elevator pillars in underground facilities should now have collision.
+- Grim HEX clothing shopkeeper should now be in his correct usable position.
+- Placeholder text should no longer be present when accessing the Anvil ships and components via mobiGlas in VMA menu.
+- Player should no longer take damage or fall out of a turret in the Constellations if they exit the lower turrets whilst attempting to move forward.
+- There should no longer be a piece of geometry clipping through the floor and elevator interior at the pad arrival area at HUR-L3.
+- Right-clicking on a player in your contact list near the bottom of the screen in mobiGlas will no longer cut off the drop down UI.
+- Players should no longer A-Pose when interacting with the standing engineering stations in the Hammerhead, Retaliator, or Vanguard.
+- The New Babbage Hangar labeled number 16 from the Outside should now show the correct hangar number.
+- Fixed gaps in the walls near the Grim Hex hangar elevators where players can see out of the game world.
+- Fixed missing ground collision on the plant displays and waterfall walls around Wally's bar in New Babbage.
+- Origin m50 should no longer pitch down on takeoff.
+- Drake Caterpillar should no longer pitch upwards while taking off from landings.
+- Aegis Sabre should no longer pitch downwards while taking off from landing pads.
+- MISC Reliant series should no longer pitch upwards on takeoff.
+- The front of the Prowler should no longer pitch upwards when flying through Atmosphere.
+- Players should now correctly drop their weapons when being killed by a take down melee attack.
+- Fixed an issue that could cause a player colliding with transit platform sign in New Babbage fall through the ground.
+- Atmospheric entry VFX should now cover both arms of the Banu Defender.
+- Lorville glass windows should no longer become excessively blurry while looking through them when close up.
+- ARGO Mole spacebrake should no longer play an excessively loud noise when used.
+- Fixed outpost airlock doors not having collision from the outside which allowed players to run through them.
+- Waste Disposal mission boxes should no longer fall through the floor upon arriving in the general vicinity of outposts.
+- Claimjumper missions should now progress further once the player arrives at the mining claim.
+- MISC Reliant should now correctly cover its turrets.
+- AEGS Retaliator shields should now cover the lower thrusters.
+- BANU Defender shields should now cover the exterior door.
+- Chaff and Flare VFX should now correctly display on all ships when in used.
+- The intractable items such as cups, magazines, and teddy's should no longer be missing from habs.
+- Back button on the trading app should now go back to the correct screen if the cursor has not been moved from previous clicks.
+- Multi-Tool should now be stored in LTP correctly and persist between resets.
+- Attempting to sell loose commodity boxes should no longer display "Insufficient Stock" at kiosks.
+- Combat AI should no longer sometimes get stuck in a standing combat state after being killed in The Price of Freedom mission.
+- The VMA should now properly update the count for mining consumables when equipped to multiple ships.
+- Ship cameras should no longer be off position so players calling a pilot should now see the player in the pilot seat.
+## Technical
+- Fixed 5 Client crashes
+- Fixed 7 Server crashes

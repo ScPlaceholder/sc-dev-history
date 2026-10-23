@@ -1,0 +1,81 @@
+## Star Citizen Patch 3.10.0m
+Alpha Patch 3.10.0m has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.0-PTU.5660400.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- Ship flight in and out of atmosphere
+- Updated building blocks ship UI for all flyable ships.
+- High speed combat changes
+- Turret gameplay
+- Origin M50 Improvements
+- Electron FPS Weapons and Electron Damage
+- Body Dragging
+- Citizen Trading App
+- New Targeting Method
+- Delivery Mission Improvements
+Known Issues
+- Requesting ATC takeoff before entering your ship may cause take-off splines to not appear. (Workaround: Request takeoff after entering your cockpit and powering on your ship)
+- Moving slowly into a Restricted Area can cause the player's vehicle to get stuck, with the autopilot having seized control but not actually moving anywhere.
+- When approaching Outposts in a Ship, the Player will recieve Please Contact ATC to Land UI on their HUD but are unable to request Landing at  Outposts
+- The Player Ship is destroyed shortly after flying into a Restricted Area / Zone around the Spaceport after leaving a Hangar
+- Players are not able to join friends PU instance from the main menu
+- Landing gear will take multiple presses of the keybind to activate.
+- Security scans won't recognize the drugs on board a players ship during the Drug Production run missions
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- Multi-Tool in Klescher Prison Commissary does not come with a OreBit mining attachment
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- Player may get stuck on a loading screen when leaving prison or respawning
+- Player may get stuck on a prison loading screen if sent back to prison a second time without clearing their crime stat
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+- Valkyrie Remote turrets will jump to facing forward when player faces them all the way to the back
+## Feature Updates
+Characters
+- Updated the Visor Wipe default keybind to be ALT+X
+- Increased the duration that the helmet Visor wipe action keeps the player's vision clear.
+Locations
+- Added junksite location on Euterpe.
+AI
+- Adding updated Bartenders and patrons into the G-Loc Bar in Area18.
+- Bartender animation polish pass. Updates animations for order rejection, smoothing out snapping into place animations, hand grips on items, and take actions. Making drink liquid level decrease when bar patrons drink.
+Gameplay
+- Adjusted how wind affects the rotations of ships so that it no longer rotates into the wind and instead properly pushes the ship.
+- Visual improvements to restricted area gates.
+- Added new Wallace Klim drug delivery missions.
+Ships and Vehicles
+- Landing gear icon on ship HUDs should now flash when gear is being raised and lowered.
+- Repositioned and Increased the amount of retro thrusters to 4 on the MISC Freelancer Variants.
+- Increased the Aegis Gladius' roll speed while in atmosphere.
+## Bug Fixes
+- There should no longer be a small door panel on the floor in the center of the frame of the double doors to the mid section of the Cutlass Blue / Red.
+- Players should no longer get stuck on Trading kiosks while using them at Trade Development Division in Area18.
+- New Babbage Omega Pro NPC shopkeeper should no longer be completely stationary and stuck in a pose.
+- Players should now be able to sit in the fold down jump seats in the back of the Cutlass Black.
+- The Rear Exterior Door at the end of the Catwalk should no longer be missing from the Starfarer and Gemini variants.
+- Fixed an issue that was causing weapon gimbals and remote turrets to be offset from aim after leaving the seat and sitting back down.
+- Large Ships will no longer fall towards the Planet without returning control to the Player if autopilot takes over when hitting the no fly zone in exit splines.
+- Drink holding animations should no longer clip into the bar tables when seated and transitioning in and out of the seats.
+- Hangar 08 in Lorville should now be able to accept landing requests.
+- Atmo burn particle lights should no longer be visible throughout the interior of small ships when no windows are present.
+- Planetary weather effects should no longer clip through MFD's in ship / vehicle cockpits.
+- Players should no longer be sent to the Arena Commander menu after Exiting to Menu from the Star Marine game mode.
+- 3D icons in personal inventory should now appear correctly when in the inner thought wheel.
+- Ammo counter is on the Yubarev Pistol should now be correctly rotated.
+- There should no longer be a panel floating in the open ship interior doorway of the Vanguard Hoplite.
+- Fixed atmospheric entry effects clipping into the interior of the Hammerhead.
+- Quantum jumping to Levski from orbit should now correctly QT the player to Levski instead of map origin.
+- Multiple bartenders should no longer attempt to visit a player at the same time.
+- Captain's Bed in the Aegis Reclaimer should now have proper interaction.
+- Fixed an issue causing microTech security to not spawn in around microTech and its moons.
+- Satellite Deploy, CommArray hack, and Constantine Hurston's safe retrieval mission objective markers should should no longer read "Objective Setup" instead of the correct text.
+- Ground vehicles should now be able to be repaired at Platinum Bay outposts.
+- Fixed an issue causing players to not be able to respawn in Arena Commander Classic Race game mode.
+## Technical
+- Fixed 7 Client crashes.
+- Fixed 3 Server crashes.

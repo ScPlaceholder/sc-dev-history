@@ -1,0 +1,91 @@
+## Star Citizen Alpha Patch 4.0.2
+Alpha Patch 4.0.2 has been released onto the PTU environment for Evocati to test!  Launcher should now show: VERSION 4.0.2-PTU.9515634.
+Audience: Evocati Only (NDA - No Streaming or Content Creation that shows the game beyond talking about the build)
+Server Info: PTU Channel - US Servers Only
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:600
+Hangar Spawning: Disabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- 4.0.2 Release Goals
+The 4.0.2 release is highly focused on 3 key points to improve and fix as many top key gameplay issues as possible, improve connectivity/stability, and begin the latest Supply or Die Pyro Event. This build pulls in all the current bug and stability fixes that were not compatible with hotfixing into 4.0.1.
+- Stability, Performance, and Bugfix Testing
+- Supply or Die Event
+Without giving away the full detail, Supply Or Die is Pyro's answer to Jumptown from the Stanton System. This event will run throughout the PTU cycle in 4.0.2 and have factions to join.
+This is going to be a PVP event once out of Evocati, but during this time keep the Evocati No PVP rule in effect until further waves are open. PVP only allowed when players consent.
+Event Known issues
+- PU - Pyro - Supply Or Die - Depots - Locations / Core Tech / AI - Entering PhyGrids can result in Players and AI losing collision with building and assets
+- PU - Pyro - Supply Or Die - Missions - event rewards are not obtained after completing the event (Reward is not present in the build until LIVE release)
+- PU - Pyro - Supply Or Die - Depots - Locations - User becomes stuck after riding the freight elevator down at the Depots (This one is on you if you do this )
+- PU - Pyro - Supply Or Die - mobiGlas / UI / Mission Content - placeholder "Total" is on the detail rather than the actual number to be delivered
+## Known Issues
+- Blocker: PU - Transit/Elevators - Elevators are present but panel buttons stop functioning (Tonight's build has loads of extra logging while the team works on the issue)
+- Blocker: PU - Stanton - Area18 / New Babbage - Locations / Collisions / Transit - Transit in some Landing Zones have no collision, causing players to fall through the transit floor
+- Blocker: Mission Refactor - PVP Missions dont work
+- Blocker: PU - Pyro - Courier - Mission Content - Boxes are not spawning during courier missions
+- Blocker: Mission Refactor - Comm Array Repair - Contract in mobiGlas becomes hidden when another player enters mission location
+- Blocker: PU - Kopions - Mission Content / mobiGlas / Creatures - Kopion related missions are not displaying in Contracts
+- Critical: PU - Stanton / Pyro - UI / Vehicles - Quantum Travel Nav Markers become invisible
+- Critical: MISC Starfarer ( All Variants ) - PU - Vehicles / Vehicle Feature - Payment can not be accepted to begin the refueling process
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Mission Refactor - NPE - Multiple Locations - Missions / UI / mobiGlas - Mission stops progressing after landing in hangar
+- Critical: PU - Inventory - Storage Access/Interactables - Storing items from the actor to the Storage Access interface will drop the items and make them lose interactions
+- Critical: PU - Pyro - Frontier Outpost - Design / Art / Physics / Locations - Players falling through the planet when attempting to enter outpost buildings
+- Critical: Multivehicle - PU - Vehicles / Components / Weapons - Ship Weapons are sometimes not firing
+- High: PU - Graphics - DX11/ Upscaling / FSR - The option to use FSR Upscaler is no longer available while using DX11 API, option still available under Vulkan (Fixed in next build)
+## Features & Gameplay
+- Gameplay
+- Max player look rotation scale for the dedicated tractor tool has been reduced to add a bit more of a weighty feel to heavier items
+- Added new distance values to the spawning of salvage ships around rest stops to avoid clean up
+- Ships and Vehicles
+- MISC Fortune: LOD and Art Polish Pass
+- Mirai Guardian: LOD Transition Polish
+- Tumbril Storm: Removed extra personal storage. Set correct storage amount. Change loc name for all personal storages.
+- Core Tech
+- Further Networking Changes to help Load Times
+- AI Planet Navigation Performance Polish
+- Instance Hangar Performance Optimizations
+- Further Lighting and Rogue Entity Performance Polish Pass for Stanton Landing Zones
+- Added new distance values to the spawning of salvage ships around rest stops to avoid clean up
+## Bug Fixes
+Resolved fixes in builds may have different underlying causes after the main fix has been put in due to the complexity of many systems. Please let us know in the [Bugfix and Issues Discussion] if you find any of the fixes below causing new or similar issues!
+- Possibly Fixed: Server freezes without server error (STARC-154601)
+- Possibly Fixed: Multivehicle - PU - Vehicles / resource network - Power allocation, Power pips, set to 0 or off randomly (STARC-152982)
+- Possibly Fixed: Multivehicle - PU - Vehicles - Quantum travel stops after travelling a short distance before reaching the target location. (STARC-150072)
+- Possibly Fixed: PU - Location / Hangar / Transit Elevator / Physic - Players can enter Non-owner Personal Hangar, Occasionally ending up out of Boundary without Player Control (STARC-147052)
+- Possibly Fixed: PU - Multisystem - Mission Refactor - Missions - Hauling - Missions are not rewarding players with payment after completion (STARC-145989)
+- Possibly Fixed: PU - Pyro - Locations - Freight elevator kiosk missing in RAB locations (STARC-137488)
+- Possibly Fixed: PU - Mission Refactor - Missions / Quantum Travel - Support Attacked Ship - Unable to set a route and Quantum Travel to mission location (STARC-145197)
+- Possibly Fixed: PU - Stanton - Locations - Freight Kiosk / Freight Elevator - Freight Manager gets stuck on "Transferring to Warehouse" when lowering the gate for the Freight Elevator (STARC-143319)
+- Possibly Fixed: PU - Pyro - Outposts - Locations - Monox - Building interior missing from outpost (STARC-151477)
+- Possibly Fixed: Vehicle - Drake Cutlass Red - Art - There is a strut obstructing the pilots view visible above the new MFDs (STARC-131724)
+- Possibly Fixed: Multivehicle - PU - Vehicles / Quantum - Quantum travel from Planet to LEO QT jumps past destination (STARC-151947)
+- Possibly Fixed: PU - Pyro - Derelict Outposts - Locations - Art / Collision - Players can get stuck in between to walls of collision on the side of the Lookout/Watch tower at the Derelict Outposts (STARC-150165)
+- Possibly Fixed: PU - Contested Zones (CZ) - Vehicles / Ship Components / VMA - Unable to equip components from contested zone (STARC-145524)
+- Possibly Fixed: Multivehicle - PU - Vehicles - UI - HUD - Advanced HUD goes away (STARC-145359)
+- Possibly Fixed: Multivehicle - PU - Ships / Ship Feature / UI - There is no F-Interaction on the side door while inside any of the Freelancer Variants or Prospector (STARC-130350)
+- Possibly Fixed: Crusader Hercules Starlifter - ALL VARIANTS - Vehicle / Landing Gear/ Ramp - Hercules spawn/land off balance on hangar floor (STARC-130372)
+- Possibly Fixed: Multivehicle - PU - Vehicles / Locations - Quantum Travel - Ships do not begin QT when the spooling is ready (STARC-146880)
+- Possibly Fixed: PU - Salvage / Filler Station / UI - The Filler Station UI has a black background, text overlaps, and some missing elements (STARC-130086)
+- Possibly Fixed: MISC Fortune - Vehicle / Lighting - Some dashboard lights transition to intense white lights when the vehicle enters lightstates 2 and 3 obscuring the players view (STARC-154485)
+- Possibly Fixed: Drake Caterpillar - PU - Vehicles / Art / Physics - Animating proxies are blocking off the majority of the front cargo module when closed and the entrance when open (STARC-154435)
+- Possibly Fixed: Crusader Industries Mercury Star Runner - PU - Vehicles / Weapons - FPS weapons disappear when placed in the MSR weapon racks (STARC-154465)
+- Possibly Fixed: PU - Game Code / Logging - A detailed report populates in the user's console whenever a nearby actor is killed (STARC-154138)
+- Possibly Fixed: Origin 135c - PU - Vehicles / Cargo - Cargo Bay Geometry Blocks SCU Crates (STARC-152855)
+- Possibly Fixed: ANVL Terrapin - PU- vehicles - Terrapin Medic -> Emergency flashing light activation absent (STARC-146680)
+- Possibly Fixed: Consolidated Outland Nomad - Vehicles - Stanton - Nomad shield generator components difficult to detach (STARC-71388)
+- Possibly Fixed: PU - UI - HUD - AR / Lens - Using strictly uppercase metric distance abbreviations implies incorrect units of measurement (STARC-103748)
+- Possibly Fixed: Inconsistent markers for Salvage Panels (STARC-95577)
+- Possibly Fixed: Some missions are propagating with no reward
+- Possibly Fixed: PU - Pyro - Salvage - Mission Content / Ships / Vehicles / Quantum Drive - Players are unable to QT to mission location
+- Possibly Fixed: MISC Fortune - Vehicle - Animation / Landing Gear -The landing gear clips through the top of the vehicle briefly during deploy and retract animations
+- Possibly Fixed: PU - Pyro - Outposts - Locations - Automatic doors at outposts are not opening
+- Possibly Fixed: Drake Cutlass Series - PU - Vehicles / Collision - When a player walks beneath a raised Cutlass Pilot's seat, they will fall out of the ship
+- Possibly Fixed: PU - Stanton - Cargo Hauling - Mission Content / UI - Freight Elevators - When trying to move over more cargo than the capacity of the elevator the kiosk will say "Obstructed" until you exit
+- Possibly Fixed: Graphics - Gas Clouds - Runtime Cubemaps cause gascloud flickering as the queue processes
+- Possibly Fixed: PU - Missions / mobiGlas - Mercenary - Unverified Contracts offer 0 aUEC reward
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 10 Server Crashes
+- Fixed a Hybrid Crash
+- Fixed a Client Deadlock

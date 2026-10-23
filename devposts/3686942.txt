@@ -1,0 +1,40 @@
+## Star Citizen Patch 3.12.0k
+Alpha Patch 3.12.0k has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.12.0-PTU.6705298.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Space Station Refining
+- Reputation - T1
+- Space Station Refinery Decks
+- Planetary Visual Improvements
+- Restricted Area rework
+- Lagrange Point Spacescaping updates
+- Elevator Panel Updates
+- Multi Tool Tractor Beam
+- Ship Entry Identification
+- Mining UI Refactor
+- Gemini A03 Sniper Rifle
+- Behring FS-9 LMG
+Known Issues
+- When logging into the Terminals at TDDs, they can display incorrect Commodity Information and Prevent Sales
+Workaround: Try other trade terminals at a different location. Test relogging and trying again.
+- Esperia Talon will have power issues with normal use in gravity
+Workaround: Don't go full throttle immediately after take off to give the power plant time to build up
+- Ship canopy may open and close without user input
+- Player can spawn falling through the planet upon login
+- Visiting location from fresh boot will cause player to spawn on the surface on Hurston
+- ASOP spawned ship assets load slowly when first connecting to a server
+- It's possible to have player timeout trying to login
+- Some clients are not receiving full member list in global channel
+- Player eyes are extra reflective in video.
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool.
+## Bug Fixes
+- The enemy AI spawning as intended targets on the Vaughn missions should no longer spawn as incorrect ships or cause the target AI to not spawn
+## Technical
+- Fixed 4 Server crashes

@@ -1,0 +1,13 @@
+Hey everyone,
+Later on this afternoon (2PM PDT) we'll be deploying a patch that will require a DB wipe, and wanted to give you a heads up on what to expect.
+What happened?
+We identified a bug that was causing ships to be incorrectly modified on the back end following repairs. Some of these complex ships, which normally have hundreds of cached items, began having thousands of them. This error overloaded the Cache storing the associated data and subsequently lead to services depending on that cached data to fail.
+What are we doing to fix it?
+After a late-night of investigation and an early-morning of testing, we're hoping to go live with the fixes later on this afternoon (2PM PDT). You'll have to download a very small patch and we will be wiping our temporary databases.
+What does this mean for you?
+You can expect to treat this like a traditional wipe, for the most part, resetting your DNA selection, current and spawn locations, ship and character loadout changes, and cargo currently in ships.
+Due to the nature of these outages and the disruption of the services, we are not sure at this time what has been accurately stored in the long-term persistence database and what will be recovered. In theory, this should be everything, but if there were significant outages, data may have been lost. At this time we expect to be able to carry over money earned and items purchased, but because of the reasons mentioned above, we can't be absolutely sure of that yet.
+You can help us identify what failed and why by taking a quick inventory today, and then reporting to us exactly what is lost. Here’s the thread we've opened for this purpose.
+We'll be updating this post throughout the day to keep you in the loop with any new info!
+Edit: The patch will be deployed at 2PM PDT.
+Please note: This will not affect any lost aUEC due to issues with our wallet system. We have identified the issue and are actively working on a fix. Stay tuned for updates.

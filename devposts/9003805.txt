@@ -1,0 +1,47 @@
+## Star Citizen Alpha Patch 4.9
+Alpha Patch 4.9 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.9.0-PTU.12142716
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Recco Battaglia Repeatable Missions
+- Vehicle Hit Marker Updates
+Known Issues
+- PU - Comms / Audio / VoIP - Proximity VOIP does not take over and party VOIP stops working at 60m meters and below
+- Destroy Narcotics missions disabled temporarily due to a structural refactor
+- PU - Ship Battles - Missions / Locations - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- PU - Ship Battles V2 - EscortShips - Mission Content / AI - Escorted ship does not Quantum Travel away or Go to the Hangar after neutralizing the AI ships in the mission location
+- PU - Missions - Bounty Hunter / Mission Content - When killing the Neutralize target the mission does not progress
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- Multi-System - PU - Locations / Inventory - There's a chance that their primary residence does not contain their items' (Workaround: Recopy account if you need your default local items)
+## Features & Gameplay
+Gameplay
+Vehicle Armor Hit Feedback
+Further updates to visual polish with the addition of correct ship destruction hit marker. Added hitmarker audio based on hit type.
+Ownership Status Scan
+Players can now initiate a scan to check the ownership status of a ship or vehicle
+Freight Elevator Messaging
+Freight elevator "overloaded" error message was not clearly informing players that a partial transfer occurred. We’ve updated messaging and UI for this for improved clarity.
+## Bugfixes & Technical
+- Fixed 2 Client Crashes
+- Fixed 3 Server Crashes
+- Potential Fix: Redimake Item Fabricator has no available blueprints
+- Potential Fix: Personal hangars no longer accessible via the location elevator after changes to transport in 4.9.0
+- Potential Fix: Quantum Travel route resetting after being set in the Starmap
+- Potential Fix: Ships exiting jump tunnel transit before the transition completed, sometimes remaining in the same system as the entrance
+- Potential Fix: ASD Delving Phase 2 mission objective not progressing upon arriving at the ASD facility
+- Potential Fix: Refueling mission objective not progressing after the player reached the beacon marker
+- Potential Fix: AI manning turrets at multiple locations not shooting at players
+- Potential Fix: NPCs triggering erratic animations when handling sharp locomotion turn requests
+- Potential Fix: Crusader Ares Starfighter Inferno BEHR Ballistic Gatling S7 unable to damage armor on larger ships
+- Potential Fix: Vanduul Glaive bespoke weapons dealing incorrect damage, comparable to a Size 4 cannon rather than their intended values
+- Potential Fix: Distribution Center landing pads displaying "UNINITIALIZED" as their AR label
+- Potential Fix: Players receiving a false vehicle impound notification when approaching Distribution Center landing pads
+- Potential Fix: TSG asteroid base central core exterior having no physical collision, allowing ships and players to pass through it
+- Potential Fix: Vending machine props causing a physics performance error by attempting to physicalize as a static object
+- Potential Fix: Vending machine material failing to load a texture, causing a data assert on affected clients
+- Potential Fix: Multiple Nine Tails armor pieces displaying an incorrect chrome texture
+- Potential Fix: Arden helmet variants missing the neck cowl cloth on some color variants
+- Potential Fix: FTA medium helmet visor turning completely black when any amount of dirt was applied
+- Potential Fix: Citizens for Prosperity logo displaying incorrectly in the mobiGlas reputation and contracts screen
