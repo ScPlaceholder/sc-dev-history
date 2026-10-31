@@ -1,0 +1,86 @@
+## Star Citizen Patch 3.6.0l
+Alpha Patch 3.6.0l has been released to PTU and is now available to test!  Patch should now show: PTU-2074651.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  In addition, not all ships are currently available and pledge copy is disabled.  We will provide a small selection of ships for usage for now.
+Testing Focus
+- Ship combat balance: Ship shields, missile damage, missile counter-measuring
+- Flight: Hover mode, acceleration control
+- Head tracking
+- P-72 Archimedes
+- Ship component degradation
+- Hacking gameplay
+- VOIP v2
+- Pip accuracy and ship flight jitter
+- Vanguard Warden and Hoplite
+Known Issues
+- The cargo lift elevator of the Reclaimer may move the wrong direction.
+- CBD at Lorville can occasionally glow extremely bright.
+- The updated criminality and law system is only partially implemented, with some missing behavior and needed elements. We will not be describing or taking feedback on this topic just yet.
+- Textures will display across the visor on some helmets.
+- Depending on ship, sometimes when attempting to file an insurance claim the timer will either start with a long delay or never start at all.
+- Players may get stuck at the bottom of the Vanguard's ramp. W/A: Walk or jump off of the side of the ramp to avoid.
+- There may be numerous collision and visual issues with the Vanguard.
+## New Features
+General
+- Added an option to suppress head tracking during flight.
+Universe
+- Added additional crimestat hacking locations, terminals, and updated the hacking system.
+Hacking now requires a stowable device which can be found at various locations and shops and is stored as a gadget, retrievable using the "4" key.  The devices vary in style and quality, with some more "legal" devices able to do the job with minimal required upkeep from the player but over an extended period of time and other devices of an illicit nature that hack very quickly but require constant interaction upkeep from the player to keep in operation.  Additionally, longer periods put the hacking player at risk as counter-missions can be generated to stop them.  The updated behavior applies to removal of crimestat as well as shutting off comm arrays.  The slow, reliable device can be found at some shops in the verse including Cubby Blast but the more illicit device may require seeking out less reputable vendors. Counter missions to prevent these activities may also be generated.  Additionally, there are expanded locations where a player can attempt to hack away their crime stat.
+Ships and Vehicles
+- Added ship hailing.
+You can now start a video call with the pilot of a ship/vehicle that you're targeting while in your ship/vehicle with a hotkey, selecting the target in either the Comms/Targeting MFD, or in your MobiGlas Comms app.  The default hotkey for hailing a targeted ship is "6".
+- Added ship specific voice channel.
+When entering a ship, you now join its ship channel. When selecting the ship channel after you've joined it, you can VoIP and Chat with other members that are actively in that ship channel. You'll automatically leave the ship channel if you leave the ship for a period of time or move too far from the ship.
+UI
+- The comms visor display now displays which channel you are VOIP broadcasting to, who else is in the channel with you, and who is speaking.
+- Players can now invite an entire channel into their party.
+## Feature Updates
+Universe
+- Rebalanced mining profit slightly.
+Missions
+- Bounty missions will be withdrawn, rather than fail, if the player hasn't entered the mission area when the target dies.
+FPS
+- Added a display screen to the GRIN multi-tool.
+- Added display screen to KLWE ARclight pistol.
+Ships and Vehicles
+- Updated vanguard thrusters to joint rather than fixed with some slight retuning.
+- Deploying the landing gear on the Reclaimer will now also force the ship into VTOL state.
+- Numerous updates to ship thruster and flight audio.
+- Updated the Gladius HUD with clearer hover mode on/off indication and speed indication for when it activates.
+- Significantly decreased the strength of auto-leveling when in hover mode.
+- Increased roll angular acceleration when in hover mode.
+UI
+- Color and names of channels can now be edited in the mobiGlas.
+- Players can now decide which chat channel is directed to the visor.
+## Bug Fixes
+- Tecia Pacheco should now sit flush with her chair.
+- Disabling free look during seat transitions to avoid clipping caused by animations.
+- Players who leave the area of a hack prevention mission should no longer successfully complete it.
+- Fixed a bug where ships got stuck at a low speed in hover mode and started shaking.
+- Fixed missing QT component door for the Vanguard.
+- Fixed damage mesh and LODs clipping into the interior of the component bays of the Vanguard.
+- Fixed misaligned rear ramp on the Vanguard.
+- Updated cockpit canopy interior and exterior on the vanguard with the correct setup.
+- Empty mineable entities should show consistently.
+- Fixed visibility of additional guns on the VMA for the Archimedes.
+- Players should no longer load into the surface of planets prior to the surface spawning, causing them to load into falling to their deaths.
+- Fixed an issue where the mining scan would stop updating when fracture or extraction mode is turned on.
+- Ground vehicles should no longer appear to render in preview images with missing components.
+- The S71 scope should now have a crosshair and reticle.
+- Fixed an issue where players who disconnect don't drop mission items for other players with counter missions.
+- Ship AI in Arena Commander should no longer fly directly into the terraformer beam or simulation boundary.
+- Fixed an issue where Crusader Security ships don't perform any flight maneuvers and leave without engaging the player.
+- Transit arrival and departure times should now be correct.
+- Hacking chips should now be able to be stored in the players inventory via the "gadget" slot (4 key).
+- Fixed an issue where AC loadout preview was zoomed in too far.
+- Comm array lights and sound now matches up with them being turned on or off.
+- Players should be able to do the destroy satellite missions around comm arrays without being considered a trespasser.
+- Fixed an issue where some MFD screens would be blank from the copilot or support seat.
+- There should no longer be replaceme balls inside of Teach's Ship Shop.
+Technical
+- Fixed 3 client crashes.
+- Fixed 4 server crashes.

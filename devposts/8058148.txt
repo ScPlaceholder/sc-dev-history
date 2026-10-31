@@ -1,0 +1,65 @@
+## Star Citizen Alpha Patch 4.2 RC1
+Alpha Patch 4.2 has been released to All Backers!  Patch should now show: VERSION 4.2.0-PTU.9864495.
+- Audience: All backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Stress Test on Saturday 2 hours starting at 2pm CDT | 1900 UTC in the 4.2 PTU. We are looking to push this latest release candidate to its limit for performance and for 2 hours we will be gathering captures and data to make sure we are ready for LIVE next week. We'd like to pile everyone as possible around Pyro 1 for this test! This will help us judge if we need a further build on Monday to address any new issues found. See you there!
+- Stability & Bugfixes
+- Storm Breaker All Phases
+- Lazarus Facility Freight Elevators
+- Apex Valakkar
+- Dynamic Rain
+- Radiation
+- VOLT Laser "Prism" Shotgun
+- ARGO ATLS IKTI, IKTI GEO, IKTI Rad (Version Found at Storm Breaker)
+- New Wikelo Ship Additions
+- New Hairstyles
+- Sterling Exploration Suit
+## Known Issues
+- PU - Weapons / Reload - Audio / SFX - Permanent Ammo Repool Audio loop after spawning
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+## Features & Gameplay
+Locations
+ASD Facility LOD and Performance Polish
+Ships and Vehicles
+Ground Vehicle Scanning Adjustments
+Set ground vehicle driver to be same baseline (0.1) as pilot driver. Standardized scan baselines to signal quality range requirements for ships and ground vehicles scan information:
+0, 0.1 - poor signal
+0.5 - medium signal
+0.76 - good signal
+Core Tech
+- Further Server Frametime Performance Optimizations
+- Terrain Physicalization Performance Optimizations
+- Slightly Reduced Water Light Reflections to be less intense due to Intense Flashing
+LTP Additions
+Added FlightBlade and BombRack item types to LTP Records
+Added Fauna Harvestables to LTP Records:
+- Kopion Horn / Irradiated Horn
+- Marok Gem
+- Ranta Dung
+- Amioshi Plague
+- Irradiated Valakkar Fang (Adult/Juvenile/Apex)
+- Valakkar Skin / Chitin
+## Bug Fixes
+- Potential Fix: PU - Error - Network - 30000 - Reason="Remote Disconnect (STARC-167946)
+- Potential Fix: PU - FPS - Heart monitor beeping never stops after being revived
+- Potential Fix: PU - Stanton - Locations - Rest Stops - ASOP Kiosk / UI / ATC - ASOP terminals are stuck on the loading animation with trace error "NO LINK TO ATC - Verify and export OC" / "Stand by, accessing list of available vehicles" (STARC-171390)
+- Multivehicle / Multilocation - PU - Vehicles / Location / Physics - Ships Experience Increased ICFS/Thruster Activities while inside a Hangar
+- Potential Fix: PU - Pyro - Storm Breaker - Creatures / Server Recovery -The Apex Valakkar corpse will despawn after a server recovery
+- Potential Fix: PU - Pyro - Locations / Collision - Players and AI are able to shoot through glass windows (STARC-160382)
+- Potential Fix: PU - Pyro IV - Farro Data Center IV - Locations - Farro airlock asphyxiates player (STARC-168893)
+- Potential Fix: PU - Pyro - Pyro I - Storm Breaker - Creatures - Irradiated Apex Valakkar does not spawn after activating the Pylon
+- Potential Fix: PU - Pyro - Missions - Ship Battles V1 - Ambush - Travel objective does not complete/update after arriving at the mission location
+- Potential Fix: PU - Comms Notifications - Graphics / UI - 3D comms call has no shadows rendering
+- Potential Fix: PU - Pyro - Pyro 1 - Storm Breaker - Lazarus Research Laboratory - Locations / Collisions - Power Bank outside the research lab has no collisions
+- Potential Fix: PU - Orison - Collision - When entering or exiting a shuttle at Orison, you can fall through the glass door near where it connects to the platform causing players to get stuck and potentially killed (STARC-171061)
+## Technical
+- Fixed a Hybrid-Service Crash

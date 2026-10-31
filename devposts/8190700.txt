@@ -1,0 +1,54 @@
+## Star Citizen Alpha Patch 4.3.0
+Alpha Patch 4.3.0 has been released to all backers! Patch should now show: VERSION 4.3.0-PTU 10069046
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, unstowed vehicles, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Territory Configuration: 7:3:600 (Updated Territory Config)
+## Testing/Feedback Focus
+Tonight's build re-enables the updated ladder improvements
+- Stability & Bugfixes
+- Onyx Facilities
+- Mission Distribution Updates
+- Hangar Spawning
+- Dynamic Snow
+- Updated Ladder Improvements
+- Light Fighter Tuning Changes
+- VOLT Laser Sniper "Zenith"
+- Additional Wikelo Special Ships
+- Additional Player Hairstyles
+## Known Issues
+- PU - Onyx Facilities - Phase 1_M3 / Phase2_M1 - Missions / Network - Missions will fail to populate in the contract manager on certain shards
+- PU - Interaction / Locations - There's a chance from inventory interaction will remove the item from your inventory but not update the interaction
+- PU - Stanton - Locations / Hangar / ATC - Multiple hangar requests at the same Onyx Facility will result in ATC not responding for some players
+- PU - Stanton / Lorville - Maria Pure of Heart - Locations / Shopping / UI - Players are unable to purchase and sell items due to shop missing inventory
+- PU - Design / Locations / Live Services - Players can spawn in the center of Pyro or Stanton after selecting their Primary Residence
+- PU - Stanton – New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- MultiWeapon - PU - Weapon / Graphics - Inventory / Backpack Reloading - Weapons reload invisible magazine when reloading from backpack (alt+1 to respool until you can store the weapon in a locker and re-equip)
+- PU - Stanton - Onyx Facilities - Mission Content / mobiGlas / UI - The Player cannot Set Route to the Delivery Locations for ASD Missions
+- PU - Onyx Facilities - Mission Content / UI / Shipping & Delivery Kiosk - There is a chance that Covalex Kiosk screen will be stuck on "Please Standby" after pressing the "Drop Off"
+- Zenith sniper doesn't charge after overheating (Fixed in next build)
+## Features & Gameplay
+Locations
+- Onyx Facility Performance, LOD, Audio, Lighting, and Art Polish
+Ships and Vehicles
+ESPERIA TALON (and Shrike)
+Now features an updated and improved maneuverability setup:
+- Increased angular speeds (Pitch)
+- Improved angular acceleration (Pitch and Yaw)
+- Buffed linear acceleration (Upward and Lateral)
+Additionally, Cross Section emissions have been adjusted to enhance the ship's stealth profile.
+VANDUUL BLADE
+The previous capacitor buffs have been tuned down slightly following initial feedback and performance data.
+Weapons and Items
+Removed Volt Rifle from Shops in Game (still in loot pools)
+Core Tech
+- Further Server Performance Optimizations
+## Bug Fixes
+- Potential Fix: Multivehicle - PU - Vehicles / UI - NO Missile lock UI
+- Potential Fix: PU - Stanton - ASD Delving - Locations / Transit - Elevator Carriages are not present if player spawns at ASD Onyx Facility (STARC-176219)
+- Potential Fix: Volt Zenith Sniper - PU - Weapons / Animation - Trigger pull animation is missing on VOLT Sniper
+- Potential Fix: PU - inventory - Weapons - Equipping weapons to the armor and then equipping a backpack breaks the weapon from never being able to reload (STARC-171130)
+- Potential Fix: PU - Personal Inventory - Freight elevator / UI - Capacity of the warehouse changes based on what is filtered or selected
+- Potential Fix: PU - GFX - Dynamic Weather - Snow causes puddles to form on the ground

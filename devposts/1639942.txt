@@ -1,0 +1,88 @@
+## Bug Fixes
+- Exiting a ship while scanning should no longer cause the effects to remain until the player returns to the ship.
+- Fixed missing interaction highlights for the side airlocks of the Reclaimer.
+- Player footprints should no longer appear facing the wrong direction near the poles of planetary bodies.
+- NPCs should no longer get stuck trying to use an object.
+- Players landing on occupied pads should now properly be cited for obstructing.
+- Getting into the Prospector should no longer cause the player's head to jerk violently.
+- The Vanguard series should now have a usable gun racks.
+- The Reclaimer's bed exit prompts should now function properly.
+- Fixed an issue where the Gemini F55 would play a change fire mode animation even though it doesn't have separate fire modes.
+- The player's camera should no longer move faster than the players weapon in ADS while in zero-g..
+- Players should now be able to go to the escape menu while in the starmap.
+- Players should now be able to hear the quantum travel arrival "boom" of other players.
+- Mineable rock deposits should no longer remain highlighted after entering 3rd person camera.
+- Fixed missing icons for self and target status on the MFDs.
+- The Hurricane turret seat animations should now have audio.
+- FPS weapons should no longer be missing their visor UI icons.
+- The headlights on the 600i should now work properly.
+- Fixed collision issue on the Starfarer's catwalk.
+- The player should no longer leap into the air when running down stairs.
+- Fix for desync between client and server when respawning after suicide.
+- Exiting the bed of the 600i should no longer occasionally leave the player stuck in the ship's interior.
+- Watermelons have returned to Echo 11, minus their crash causing behavior.
+- Players should now be able to sit at the desk in the Captain's quarters of the 600i.
+- The 600i should no longer struggle to lift back off after landing.
+- Zooming in and out on the Starmap should now be centered on the cursor rather than the center of the view.
+- Ammo pickups in Arena Commander should now function properly.
+- Added g-force reactions to the pilot of the Terrapin.
+- The Khartu-Al's cockpit control animations should now work for left/right strafe.
+- The 85x should no longer have a wobbly take off.
+- Engineering station MFDs should now be able to adjust the power triangle.
+- Child rocks should no longer spawn at different locations than their parents while fracturing.
+- Players should no longer be able to be bumped off of terminal hacks in Star Marine.
+- Outpost terminals should now display the correct message when spawning a second vehicle.
+- ECN missions should no longer instantly fail upon arrival out of quantum travel.
+- The interior cargo space of the Avenger Titan should no appear properly when looking into an open cargo hatch.
+- Mineable rocks should no longer appear at much shorter distances than non-mineable rocks.
+- Removed icons and added a faint silhouette highlighting for nearby rocks within 150m.
+- There should no longer be two purchasable "Midnight" Arclight pistols at the Live Fire Weapons kiosk.
+- The bottom shelf shield components at Dumper's Depot should no longer be floating.
+- The wing ends of the Eclipse should now properly have collision.
+- The 600i should no longer appear to be floating when spawned into the hangar.
+- Opening the mobiGlas when placing cargo should no longer cause the cargo to become unusable.
+- AI spawning into swarm modes should no longer occasionally be motionless.
+- The turret view should no longer snap jarringly.
+- The ejection interaction node on the Sabre should now be reachable.
+- When holstering the pistol the players off-hand should no longer bend at an unnatural angle.
+- The enter ship from EVA animation for the Blade should no longer be misaligned.
+- The decal texture on the Star Kitten Dragonfly and Pirate Edition Caterpillar skins should no longer appear blurry.
+- Players should no longer fall through the floor at the Ursa's side door.
+- Ship debris should now inherent the parent ship's velocity.
+- Fix for player spinning in the seat when using the mobiGlas from the Freelancer's turret seat.
+- Animations for entering the Blade should now be aligned correctly.
+- The Blade should now have internal atmosphere.
+- The pilot's hands should now animate with flight in the 600i.
+- Fix for missing whizby and ricochet audio related to ship weaponry.
+- Players should now start with their weapon unholstered on respawn in Star Marine.
+- Lowered the drone platform inside the Reclaimer so players won't get stuck as easily.
+- Corrected some issues with the LODs on the landing gear feet of the Reclaimer.
+- Couches in the upper lobby of GrimHex should now have available interaction points.
+- The Pyroburst ship weapon should now animate properly when fired.
+- Pressing the back button on the XBOX 360 gamepad should now properly open the mobiGlas.
+- The Vanguard bed bunks should now have proper interaction points.
+- Support screens should now work and stay properly on the Caterpillar.
+- The gun racks inside the Retaliator should now be usable.
+- Opening the mobiGlas in the Freelancer's co-pilot seat should no longer cause the player to T-pose.
+- Player FPS weapons should no longer remain firing if they are being fired at time of death.
+- Player should no longer be able to trick AI to flying out of their defensive area.
+- AI no longer goes unresponsive if a player moves outside of their defensive zone.
+- AI pilots should no longer go inactive if there are already 3 other AI ships attacking an intended target.
+- Grenade explosion VFX should no longer occasionally be out of sync with the actual grenade location.
+- Players should no longer occasionally shoot off into the distance when using vault or mantle near a corner.
+- Players should no longer be able to stand close to the glass at Kareah and fire through it.
+- Missiles should no longer be able to be locked onto a target inside an armistice zone.
+- EMP charging should now be interrupted by entering an armistice zone.
+- Pistols can now be fired faster to coincide with trigger pulls.
+- Added a number of missing interaction highlights on various 600i components.
+- All Arena Commander modes should now reward team revenge kill points.
+- Ship weapon fire should no longer be arrested if the trigger is pulled before the next cycle.
+- Comm array turrets should now fire at players with higher wanted levels.
+- The Ursa Rover and Cyclone can now be powered off properly on the MFD.
+- The player ship target should now clear after it has been removed.
+- The pitch ladder should no longer remain on the HUD after leaving atmosphere.
+Technical
+- Fixed 4 client crashes.
+- Various performance tweaks.
+- Added asynchronous background spawning.
+- Implemented object container streaming (OCS).

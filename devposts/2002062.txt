@@ -1,0 +1,96 @@
+## Bug Fixes
+- Climbing into the Prospector's bed should no longer cause the player's head to clip through the geometry.
+- The Valkyrie should no longer jitter when the ramp is down.
+- Fixed the Retaliator HUD not being centered correctly.
+- The Freelancer beds should no longer have a "Power On" option.
+- Looted weapons in Star Marine should no longer be retained between rounds.
+- The weapon mounts on the Reliant should no longer be sideways.
+- The aim PIP on turrets should no longer jarringly "snap" to target.
+- NPCs should no longer occasionally be standing on seats rather than sitting.
+- Jumping a second time after an initial jump should no longer cause the character to jump a large distance.
+- Adjusted ladder entrance on the Arrow to fix clipping.
+- The magazine attached to the gun should properly show as being removed when reloading from an ammo crate in Star Marine.
+- Players should no longer respawn with the UI showing health damage.
+- Interaction mode should now function correctly when bound to LT/RT on a gamepad.
+- The entry/exit animations for the Valkyrie turrets should now be properly aligned.
+- The scope on the Arrowhead sniper rifle should no longer be non-functional if looted off a player killed while aiming.
+- Updated sky-box and brightness of objects in and around the planet Hurston.
+- One handed carry-able items should no longer have the "carry" option after unstowing.
+- The canopy should no longer be highlighted as if in interaction mode when moving on some ships.
+- The UI in AC/SM for cycling target when spectating should no longer change when the player toggles the HUD on and off.
+- The players hands should no longer clip into their legs when inside the Hawk's prisoner seat.
+- Players should no be able to rent more than one of the same item with REC.
+- The player should no longer be visibly off-center when seated on the Dragonfly.
+- Ships should no longer spawn into Arena Commander with their landing gear deployed.
+- Large layers of liquid like shadows should no longer appear on moons.
+- Interaction mode should no longer occasionally stay active after tapping "F".
+- The pilot seat of the MISC Prospector should now be able to be entered from the left side.
+- Terrain detail should no longer appear on top of carried boxes.
+- Rebound exiting "try on" mode to "E" to avoid conflict with interaction mode key (F).
+- Using an EMP should no longer knock out your own shields.
+- There should no longer be atmospheric gaps inside the Hammerhead, 600i, Avenger, Retaliator, Reclaimer,, Starfarer, Freelancer, and Caterpillar.
+- Swapping weapons while a weapon is charged and fired will no longer cause it to not consume ammo.
+- Hammerhead turret entry interactions should now be more consistently placed.
+- The Freelancer co-pilot should no longer have a flight/combat reticle.
+- The scalpel and rail-gun barrels should now consistently extend.
+- The mobiGlas should work consistently in the beds of the Valkyrie.
+- Changed the animation on the table seats of the 600i to prevent clipping.
+- The interaction prompts for entering the Prospector should now be easier to read.
+- There should no longer be floating props on Echo 11 in Star Marine.
+- Players should no longer get stuck in EVA next to the railing near point B on Station Demien in Star Marine.
+- The correct UI overlay should now be present in Arena Commander race modes.
+- Fixed an incorrect text string for one of the Freelancer MAX's shield generators.
+- The pilot seat of the Freelancer MAX should no longer occasionally kill players.
+- AI ships should now appear with full shields.
+- Players who are not in your party should no longer occasionally appear on your quantum travel calibration UI.
+- Objective markers should no be retained on boxes put down or dropped.
+- Battaglia should no longer occasionally appear offset from her table.
+- The loadout customizer in Star Marine should no longer occasionally become unresponsive.
+- R&R CRU L1 should now have the correct name on the comms MFD.
+- There should no longer be pauses in animation on the Caterpillar's upper turret.
+- Third person camera for the Aurora should no longer clip into the ship during quantum travel when viewed from the front.
+- The P8-SC should no longer have slower than intended ADS.
+- Mineable resources should no longer flicker on approach and remain physicalized/scannable.
+- Levski hangars should now have correct lighting.
+- Fixed Arena Commander and Star Marine not showing the reason for awarding points.
+- The Reclaimer's engine core should no longer spark electricity when it isn't damaged.
+- Ship radar pings should no longer have their cooldown sluggish, unresponsive, or inconsistent.
+- Dying while firing a weapon in Star Marine should no longer result in the weapon continuing to endlessly fire.
+- The wanted level icon should no longer appear in Arena Commander.
+- The Caterpillar should now be fully locked upon spawn.
+- AI pilot opponents should no longer cause the comms to get stuck open and all audio from them to stop.
+- Players should no longer be able to access the selfie camera while interacting with an ASOP or kiosk.
+- Players should no longer clip through the ship when EVA entering the Eclipse.
+- The pilot should no longer be able to fire the Reclaimer's remote turrets.
+- The Star Marine announcer should no longer fail to voice and then spam the player all at once.
+- The Avenger's HUD should now be aligned with the reticle.
+- Realigned the HUD on the Razor.
+- The Reclaimer's cockpit physics grid should no longer extend out of the ship.
+- The shield of the Glaive should now properly cover the front of its blades.
+- Removed broken panels from Avenger interior doors.
+- Sitting in the drone operator seat should no longer cause the player to snap into position.
+- Chaff should now function properly as a countermeasure.
+- There should now be audio for UI comms hailing.
+- One MFD should no longer go to comms if the player has any comms interaction happening on another screen.
+- Non-green variants of the Arrowhead sniper rifle should no longer have a green scope.
+- Quantum calibration targets in close proximity will now update properly when switching between them.
+- Open torpedo doors on the Gladiator should no longer show a gray space and lack collision.
+- The Mustang Beta should no longer have gaps in the interior geometry a player can see out of.
+- Players should no longer T-pose on death in Star Marine.
+- The kill board should now use your player name rather than "you" in Star Marine.
+- The Reclaimer should now be able to have its loadout changed.
+- Thruster effects for the small rear thrusters of the Valkyrie should now properly play.
+- There should no longer be visibility issues when zooming in interaction mode with no helmet from the pilot seat.
+- Battaglia's console should no longer be blank.
+- The transit announcer voice at Lorville should no longer play multiple overlapping audio.
+- Missile lock UI should no longer remain after firing the missile.
+- The Gladiator should now have idle thruster effects.
+- Players should no longer be able to get behind the admin counter at Lorville.
+- Fixed some LOD issues on Lorville approach.
+- Video should now consistently work when calling ATC at Lorville.
+Technical
+- Various performance optimizations.
+- Fixed a number of OCS related stalls.
+- Fixed 8 client crashes.
+- Fixed a server deadlock.
+- Fixed a serve crash.

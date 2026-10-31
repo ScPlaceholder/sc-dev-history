@@ -1,0 +1,34 @@
+## Star Citizen Patch 3.19.1 8526421
+Alpha Patch 3.19.1 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.19.1-PTU.8526421.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Server Region: US Only
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Testing Focus
+- General Stability and Bug Fixes
+Known Issues
+- NPCs will gather and block pathways in various cities
+- ATC  - Hangar door - Hangar doors appear open to players; however, when flying into hangar ship collides with closed hangar doors. Hangar Doors Causing Damage/Ship Destruction
+- Ships / UI - mobiGlas - VMA - Vehicle Components - The Vulture default Baler salvage heads cannot be re-equipped in VMA
+- Players cannot see partied player ships when Quantum Linking together
+- New Deal and Vantage Rental Kiosks Are Missing
+- Ships can explode from collision with invisible asteroids
+- Player corpses will not despawn at Grimhex
+- Players are unable to fully back out of the Primary Residence Selection due to the tutorial selection prompt.
+- Art assets will clip through the Train during the journey in Lorville
+- Substenance items lack "Store" option when carrying the item in Inner Thoughts
+- Weapon Feature / Game Code - Tractor Beam - If you activate the tractor beam in hangar, you can bring the activated tractor beam back and use it in armistice zone
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Racing - Locations - A specific rock formations on the Yadar Valley race track are visible to some player and not others
+- Crusader - Security Post Kareah - Core Tech - Physics - Actor / Player - Transitioning from EVA onto Kareah's landing pads has a high chance of instantly killing the player
+- Transit - Area18 - Orison - Shuttles/Trains/Trams - Players are falling through sometimes disappearing trams and shuttles to their deaths
+- Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+## Bug Fixes
+- Fixed - ASOP / Vehicles / Locations - Claimed and delivered ships load into wrong location when Primary Residence is changed
+- Fixed - Ships / Vehicles - ASOP fails to register ship destruction in specific conditions, allowing retrieval of permanently destroyed ships, and hindering insurance claims
+- Fixed - ASOP / Fleet Manager - Unable to Retrieve ships after player disconnects ungracefully while in the process of Retrieving a ship
+## Technical
+- Fixed 3 Server Crashes
+- Backend Service Crash Fix

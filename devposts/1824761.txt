@@ -1,0 +1,31 @@
+## Star Citizen Patch 3.4.1
+Alpha Patch 3.4.1 has been released to the PTU, and is now available to test!  Patch should now show: PTU-1029815.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- New Ships: Hawk, Freelancer variants, 600i Touring
+- Lorville Central Business District
+- Hurston mission variants (bounty missions, downed relay missions, FPS AI missions, delivery missions, scramble races)
+- Mission Givers: Wallace Klim, Clovus Darneely
+Major Known Issues:
+- Several ships will randomly open their canopies with no player input, most notably after quantum travel.
+- Players will become locked to ship seats when using crash recovery. W/A: Land at a station and logout and back in.
+- Mission markers vanish permanently when using crash recovery.
+## Feature Updates
+## Bug Fixes
+- The turret aim/view cone UI should now be restored.
+- FOIP should now work over direct calls.
+- Free look head tracking should no longer be active in P2P calls even if it is set to off.
+- The personal elevator on the 600i should now extend all the way down.
+- Turrets should no longer roll when hitting rotation limits.
+- Turrets should no longer rotate to 0 position when entered for the first time.
+- Hammerhead turrets should now have a working alternative firemode.
+- FOIP/VOIP should now properly transmit.
+- Large layers of liquid like shadows should no longer appear on planetary surfaces.
+- Mission markers should now consistently populate after accepting a mission.
+- Players should now be able to interact with the discs at the downed relays.
+Technical
+- Fixed a client crash.
+- Fixed 6 server crashes.

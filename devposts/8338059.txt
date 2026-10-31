@@ -1,0 +1,48 @@
+## Star Citizen Alpha Patch 4.3.2
+Alpha Patch 4.3.2 has been released to all backers!   Patch should now show: VERSION 4.3.2-PTU.10446088.
+- Audience: All Backers
+- Server Info: PTU Channel
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Starting aUEC: 15,000,000
+## Testing Focus
+- Stability & Bugfixes
+- Structural Salvage Updates
+- Frontier Fighters Finale
+- Reclaimer Elevator/Docking Updates
+- Yormandi Encounter
+- New Vehicles: Stinger, Shiv, and Paladin
+## Known Issues
+The issues below are meant to help give a better indication on things that may happen during gameplay and do not always occur 100% of the time.
+- PU - Yormandi - Creatures / AI - Yormandis multi beam attack is only hitting 1 target
+- Multi-Location - PU - Stanton - Locations / Actor Respawning - Players may not respawn at their primary residence after using self-destruct or force-respawn
+- PU - Locations - Rest Stops - Refinery - Mining / Shopping / Selling - Ore Sales Kiosk - When attempting to sell at the Ore Sales Kiosks, the confirmation screen will return with undefined
+- ARGO ATLS - PU - Mounts / Cargo / Tractorbeam - The ATLS is unable to pull cargo off a ship's cargo grid after it is moved from place of origin to new location
+- PU - Stanton / Pyro - Armor / Loot Box / Inventory / Actor - Equipment and armor dropped on the ground will be suspended in mid-air making them unable to be interacted with
+- Multi-System - PU - Locations / Interactions - Unable to open the Medical Room given to you by the Patient Check-In terminal
+- PU - Pyro - Contested Zones (CZ) - Ghost Arena / Orbituary - Locations / Collision / Art - Corner of the Entrance elevators have missing collision allowing players to clip into the station
+## Features & Gameplay
+Gameplay
+- Added multiple access cards to find into the Science wing that open access doors to the Yormandi observation area. This replaces the coded door.
+Ships and Vehicles
+- Slightly buffed the Stinger's angular speeds and forward g-forces
+- Stinger and Shiv Damage State VFX Polish
+## Bug Fixes
+- Potential Fix: PU - Stanton - Missions / Locations / UI - The Phase 2 Ship Graveyard ambush mission does not update objective after arriving at ambush location (STARC-181461)
+- Potential Fix: PU - CFP vs HH - Missions / Locations / Loot - Loot crates are not present in mission locations (STARC-181866)
+- Potential Fix: Grey's Market Shiv - When co-pilot seat is occupied, it blocks the pilot from switching flight modes (STARC-182157)
+- Potential Fix: Yormandis will sometimes not relocate other pools
+- Potential Fix: PU - Yormandi - AI - Yormandi still sometimes managing to relocate to a pool with another Yormandi in it
+- Potential Fix: PU - Stanton - The Collector - Missions - Interaction - Yormandi tongue will clip into the freight elevator and can fall underneath
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector - Locations / ATC - Players are unable to store or retrieve ships which breaks ATC
+- Potential Fix: PU - Mission Content / UI - Foxwell Enforcement Defend Ship Mission progress halts after reaching location markers
+- Potential Fix: Arena Commander - All modes - All kills and damage is giving negative points if players are in party together Squadron battle kicks players for friendly fire (STARC-181391)
+- Potential Fix: PU - Stanton - Yormandi – Creatures / Desync / Network – Desync causing live Yormandi to disappear for some players fighting in the same arena
+- Potential Fix: Aegis Reclaimer 2949 BIS - PU - Vehicles - The 2949 BIS Reclaimer variant cannot dock or land at space stations (STARC-182000)
+- Potential Fix: PU - Cargo / Commodities / Vehicles / Cargo ATC - ATC fails to detect vehicles within the loading zone or fails to initiate cargo transfers IF THE VEHICLE IS NOT PARALLEL WITH THE CARGO TRANSFER BOX (STARC-156126)
+- Potential Fix: PU - CFP vs. HH - Missions / UI - Reward notification appears as "You've Earned: Mission(Reward)"
+- Potential Fix: MIRAI Guardian ALL Variants - PU - Vehicles / UI - Communication screen background image is the same as target status
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector - Missions - Interactables / UI - There are some inconsistencies in mission items in the banner and HUD
+## Technical
+- Fixed 2 Server Crashes
+- Fixed a Server Deadlock

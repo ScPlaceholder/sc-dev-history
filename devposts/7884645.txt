@@ -1,0 +1,53 @@
+## Star Citizen Alpha Patch 4.1.1
+Alpha Patch 4.1.1 has been released to Wave 1 Testers!   Patch should now show: VERSION 4.1.1-PTU.9704633.
+Audience: Wave 2
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:600
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Ship Battle Patrol Missions currently have their sharing disabled for these initial PTU releases.
+- Stability & Bugfixes
+- Ship Battle Missions V1 (Patrol, Ambush, and Gilly's Advanced Combat Gauntlet Missions)
+## Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback and are subject to removal
+- Fleetweek Events, New Missions, and Halls
+- Mission Meshing Refactor: Comm Array (Hack/Repair), Animal Missions, Multi-Location Courier, and Handyman, PVP bounties.
+- New Collector Rewards
+- NPC Comms Call, Dialogue Additions, and Improvements
+- [Redacted]
+## Known Issues
+- Blocker: PU - Ship Battles V1 - Patrol - Search & Destroy does not progress when you ping area (Fixed in next PTU build)
+- Critical: PU - Space Combat Mission- Ambush - Foxwell - Missions / HUD - "Hide Ship Signature" objective marker has a chance to not appear in Ambush missions
+- Critical: PU - Ship Battles V1 - Patrol / Training School - Missions / mobiGlas / UI / Location - Some missions are not properly localized
+- Critical: Multivehicle - PU - Vehicles - Vehicle landing gear is left in the PU after a ship is destroyed (Fixed in 4.1.0 hotfixes that will be applied to 4.1.1 soon)
+- Critical: PU - Physics - Players walking around destroyed landing gear of a ship can fall through the ground
+- Critical: PU – Ship Battles V1 – Ambush / Assault / Patrol  - Mission Content / mobiGlas / Locations - Ship Battle missions are not available in the Contracts screen when out in space
+- Critical: PU - Stanton - Ship Battles - Gilly's Gauntlet - Mission Content / Game Code - Mission does not fail after you QT away from the action area while the mission is active
+- Critical: PU - Stanton - Ship Battles - Security Patrol - Asteroid - Mission Content / Game Code / AI - Ace Pilot sometimes does not spawn (Moderate Chance)
+- Critical: PU - Stanton - Ship Battles - Security Patrol - Asteroid - Mission Content / Game Code - Patrol objectives failed to correctly trigger when the player reaches the patrol point (Moderate Chance)
+- Critical: PU - Stanton - Kill Animal - Mission Refactor / Missions - Pest Control missions sometimes don't spawn enough Kopions for completion
+- Critical: PU - Pyro - Courier - Mission Content - Not enough boxes are spawned for the mission (Moderate Chance)
+- Critical: Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- Critical: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- High: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+## Features & Gameplay
+- Characters
+► Addition of multiple new hairstyles to the PU Character Creator
+- Locations
+► Further Wikelo Emporium Location Set Dressing and Polish
+- Gameplay
+► Further Patrol, Ambush, and Advanced Combat Training Gauntlet Polish: Balancing mission rewards for Patrol Missions. Gilly Advanced Combat Training Gauntlet missions have been set to be sequential unlock.
+## Bug Fixes
+- Potential Fix: Stanton - Ships/Vehicles - Commodities / Ship pods - Cargo pods snap incorrectly to ALL cargo grids and pop out of the wrong side when detached (STARC-161962)
+- Potential Fix: PU - Respawning / Actor / Locations - Player account gets into state that is unable to respawn to chosen imprint location and respawns at nearest clinic instead (STARC-162834)
+- Potential Fix: ARGO ATLS - PU - Mounts - Difficult or impossible to snap containers on some vehicles (STARC-127297)
+- Potential Fix: PU - Stanton - Landing Zone (LZ) - Area18 - Locations - There is no restricted flight zones set up around Area 18
+- Potential Fix: PU - Stanton - Area18 - AI / Locations - Social AI located around the Area18 Landing Zone can be seen performing idle animations and do not perform tasks
+- Potential Fix: PU - Stanton - Ship Battles - Mission Content / UI - Ambush / Patrol - Mission Objectives are delayed upon entering the mission location
+## Technical
+- Fixed 1 Client Crash
+- Fixed 2 Server Crashes
+- Fixed a Hybrid-Service Crash

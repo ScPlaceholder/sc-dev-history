@@ -1,0 +1,62 @@
+## Star Citizen Patch 3.14.0m
+Alpha Patch 3.14.0m has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7661160.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: Wave 2
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Current cloud tech is still in active development and not yet final. There's ongoing work on SDF occlusion which should help alleviate the graphical artifacting (visual dots in the clouds). Additionally, we are working towards having local VFX for the clouds (similar to the gas clouds around rest stops) which will make a big difference in overall quality.
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Known Issues
+- Gas Clouds on Crusader appear to have moving graphical artifacts that appear as dots. Current clouds are still in development and not final. See note at the top of patch notes.
+- Quantum traveling to Crusader will place your ship inside the atmosphere, preventing further quantum travel
+- QT from Port Olisar to Comm Array ST2-55 will cause ship to QT to a different direction
+- Assets such as Elevators or Environment content will occasionally be missing in the PU. These assets take time to load in for clients causing players to fall through Elevators or being unable to leave locations
+- Orison objects & textures loading very slowly
+- Missiles do not follow flares as a countermeasure
+- Various UI markers are faded and hard to read
+- Shield is getting hit multiple times on a single distortion explosion
+- Ships are not fully repaired after repairing / refueling them in VMS
+- Banu Defender Power Triangle does not change
+- Demon Fang Combat Knife asset is missing from the game
+- Editing PMA After Changing mobiGlas case prevents mobiglas functionality
+## Feature Updates
+Gameplay
+- Ongoing Ship Capacitor / Weapon Balance, and Polish Pass
+Updated assisted gimbal tracking speed and slightly increased its snapping. Slightly lowered damage and increased ammo for ballistic repeaters and gatlings. Polish pass on damage values for Vanguard specific weapons. Buffed the health of the Vanguard Harbinger. Removed "ammo low" ship computer lines playing for energy weapons. Removed overheat from ship thrusters.
+Ships and Vehicles
+- Legibility Polish Pass for new sliced ship HUD
+Polish pass on ship hud to help players differentiate between targeted hostiles & non-targeted hostile UI markers at the edge of cockpit views
+## Major Bug Fixes
+- Fixed an issue causing Players to desync inside Taurus and Aquila Variants (This may solve the issue in many other locations. Please keep an eye out)
+- Quantum Traveling to a party member close to a planet surface should no longer sometimes cause the player to fly into the planet
+- Fixed an issue causing FPS or ROC-sized mining deposits to have much shorter scanning distances than intended
+- 'Lock ping controls to scan mode' setting should now correctly persist
+- Surface Mining Deposits should now be assigned distance markers when approached
+- Security Ships should now recognize illegal goods onboard a ship when being carried by a player
+- Players should now be able to equip med or oxygen pens on Lamont undersuits
+- Caudillo Steel Helmet should no longer create a source of light when equipped
+- Fixed another issue that was causing players to get a crimestat for attacking legal AI targets
+- Smoke effects around Orison should no longer flicker or flash
+- The stairs on the Orison walkway gantry next to the cooling towers on providence platform should no longer kill players when walked over slowly
+- XXL Hangars in Orison should no longer have invisible ceiling collision when the doors are open
+- Fixed an issue causing AI to not move around G-Loc bar in Area18 and Kel-to shop in Orison
+- Fixed an issue causing the radar to not be visible on Anvil Carrack flight HUD
+- Nova Tank Turret should no longer be equipable on a Hurricane
+- Thematic Space effects like con trails and spaceloop rocks and debris in gas clouds should no longer be missing
+- Fixed an issue causing Ship AI & Sentry turret AI weapon VFX to not be visible during combat
+- Mineral deposit terminal in prison show now correctly show projected time to release
+- Players should no longer be able to enter other players locked Starlifter by using the external elevator
+## Technical
+- Fixed 2 Client crashes
+- Fixed 1 Server crash

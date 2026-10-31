@@ -1,0 +1,80 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has now been released onto the LIVE Environment!  Patch should now show: VERSION  3.23.0-LIVE.9171682.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here  %localappdata%\Star Citizen.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 3.23 comes with a full aUEC wipe for all accounts. Players will start with their base amount from their account ledger + the 20,000 starting aUEC.
+This Spectrum post is an abridged version of the notes. For the full major details, please visit the main notes at the link below!
+## Full 3.23 Release Notes: https://robertsspaceindustries.com/comm-link//19915-Star-Citizen-Alpha-3230
+## Features and Gameplay
+3.23 comes with major updates to default keybinds that have been longstanding. The main keybinds have been updated in the game menu as well as the new updated control hints system.
+Characters
+- New: Character Customizer - Fully Reworked from the ground up with many new features and creative options
+Locations
+- New: Inclusion of Major New points of Interest and Missions With Distribution Centers
+AI
+- Overhauled and More Intelligent AI Ship Combat Behaviors
+- New Fauna: kopion and marok including hunting missions and New Harvestables
+Gameplay
+- New: mobiGlas/Starmap/FPS Map Systems Rework
+- New: Eva T2 with much improved maneuverability
+- Updated Player Interaction Experience: Player Visor & Lens HUD Rework, New Personal Interaction and Inner Thought Systems, Helmet Equipping & Removal, Additional New Player Experience Cities, and more!
+- New: FPS Loot Screen for a much cleaner and quicker looting experience
+- New: Physical Shopping UI
+- New: Reload Improvements with ammo repooling and much much more!
+- New: Dynamic Crosshair and Combat Helmet experience
+- New: Reputation Based Hostility
+Weapons & Items
+- Standalone Salvage Tool Balance Pass
+- Allowing FPS Salvage in Armistice
+- CureLife Medical Gun Polish
+Ships & Vehicles
+- New Vehicles: Mirai Pulse & Mirai Pulse LX
+- Added many existing ships to in game Ship Shops
+- Freelancer Series Component Updates
+Core Tech
+Note: Vulkan Renderer is currently in beta and there are a few known crashes and issues that will require a future AMD or Nvidia driver update that has not been released yet. If you run into major issues you may want to swap back to DX11. If the game crashes on launch after switching to Vulkan, you can reset this by deleting your shader folders in %localappdata%\Star Citizen
+- New Tech: Replication Layer Split and Server Crash Recovery
+- New Tech: Vulkan Renderer (Beta)
+- New Tech: Image Upscaling with DLSS/FSR/and CIGTSR
+- Updated Volumetric Cloud Visuals and Performance
+- New Tech: Water Simulation & Rendering Improvements
+- Added Tobii Eye Tracker Accelerated View
+Vehicle Combat & Experience: Master & Operator Modes
+There are vast changes to Vehicle Combat and Experience coming with 3.23. These new modes and updates are shown in major detail in the main note link above.
+- Major IFCS Changes
+- Master and Operator Modes Added
+- Persistent Ship Settings
+- Precision Targeting / Pip Changes / Gimbal Mode Changes / ESP, Aim Assist, and Weapons Tuning / Sub-targeting / and much more
+FPS Combat Overhaul: Weapons, Movement, and Tech
+- FPS Control Keybind Updates
+- New Scopes, Sights, & Weapon Attachments
+- Major Weapon and FPS Combat Balance Changes
+Arena Commander: New Maps, Game Modes, And More
+- Return of Custom Lobbies (previously referred to as “Private Matches”)
+- Streaming Tech Enabled in Arena Commander
+- New: Engineering Resource Network Experimental Game Mode: Free Flight, Squadron Battle, Duel
+- Added Many New Racing Maps to AC
+- Many System & Balance Updates Including Character Customization for AC, VOIP Enabled, Map Selection, Gun Rush/Pirate Swarm Improvements, Free Flight Ground Expansion, FPS Map Performance Improvements, and more!
+## Known Issues & Information
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - UGF - Locations - Bunker elevator does not return up when called
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals for ground vehicles at Lorville gates get stuck on infinite load, accessing list of ships
+- PU - Stanton - UI - HUD / AR Markers - Misaligned HUD Markers with Ultrawide or TSR graphics upscaling enabled
+- PU - Gamewide - Using a medpen causes you to drop your weapon
+- PU - Locations - Transit - Elevators - Internal Transit Elevator shows up when called but doors remain closed, no carriage
+- PU - Greycat ROC  - Stanton - ROC Mining Laser Not Activating
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Locations / Vehicles / VMS - Can't repair/refuel/restock at Pyro Gateway Jump Point Station
+- PU - Locations - Distribution Centers - Security Checkpoint elevator vis area and missing collision
+- PU - Stanton - NPE - Missions - Objectives can be softlocked by player leaving bed before their objective record has updated
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - RSI Scorpius Antares  - Vehicles/EMP - unable to activate EMP
+- PU - Multivehicle - Vehicles / UI - QT effects are breaking HUD UI
+- Reclaimer Claw Cannot Deploy: Power Required Error Message (Workaround: Press the power button a second time)
+- AC - Squadron Battle - Friendlies showing up as enemies
+- AC - Grav Race - All Maps - Low gravity can launch players far above the track when hitting bumps or hills

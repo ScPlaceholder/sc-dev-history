@@ -1,0 +1,1257 @@
+# Star Citizen Live: Engineer Scrutineer
+# https://www.youtube.com/watch?v=XvrM8W9HBTs
+[    5.2] Hi everybody, welcome to Star Citizen Live Staring Contest.
+[    9.2] Don't break. Get in here on this, Torsen.
+[   30.9] Come on, get in. Move in.
+[   32.9] Move in the frame, Torsen. Come on.
+[   37.6] You're German. Germans like to have fun.
+[   40.6] No.
+[   42.6] Don't break. If you blink, we're done.
+[   50.4] You blinked? God, we lost.
+[   55.1] Alright, we'll do a show about engineer gameplay.
+[   57.1] Hi everybody, I'm Jared. This is Star Citizen Live,
+[   59.1] and I guess we'll do a show about engineer gameplay.
+[   62.1] Joining us on the show this week, a man who definitely suffers from unmoist eyeballs.
+[   69.1] Torsen, how you doing?
+[   71.1] I'm fine.
+[   73.1] You know, they let me do just about anything I want,
+[   80.6] and sometimes I'm like, that's a mistake.
+[   83.6] That's a mistake.
+[   85.6] So, if you've never seen Star Citizen Live before,
+[   87.6] it's where we take about an hour out of the end of our week
+[   90.6] and hang out with the developers and the people who help make Star Citizen possible
+[   94.6] and talk a little bit about their work, what they do, where they're from, all that kind of stuff.
+[   98.6] For the first half of the show this week, we have a gameplay lead game...
+[  105.6] What's your title?
+[  107.6] Lead Systems Designer. Torsen from the EUPU gameplay feature team
+[  112.6] here to talk about engineer, which is the next evolution of our resource management system.
+[  121.6] We did a Journey to 4.0 special that we released to YouTube last week in lieu of last week's ISE.
+[  127.6] So check that out if you haven't already, and then come back. We'll wait.
+[  134.3] Just five minutes.
+[  136.3] The episode was a bit longer.
+[  138.3] Can't double the speed.
+[  140.3] Just wait. Honestly, they're going to start putting rules on what I can do.
+[  146.8] So after that show, people had a lot of questions.
+[  150.8] So we're just going to dive into that because today's show is going to be a little bit longer.
+[  154.8] If you thought I was just wasting time, you know, this week's show will be a bit longer than normal.
+[  159.8] So right off the bat, Torsen, and this was...
+[  163.8] Our first question is actually a bit of a mia culpa for us.
+[  167.8] When we filmed...
+[  169.8] When we filmed... We were in Germany.
+[  172.8] One of the things that you said during filming was we have to include a bit about how not everybody is forced to do this.
+[  180.8] Now, you're not going to be compelled into engineer gameplay, and there are going to be other opportunities for you to go and, you know,
+[  187.8] have your things repaired at space station stuff, and you were really good at identifying that we needed to film that,
+[  193.8] and we needed to include that in the section.
+[  195.8] And then I forgot to put it in.
+[  199.8] So it didn't make the segment.
+[  202.8] So yeah, so I'm going to ask you right now.
+[  204.8] Talk to us about that.
+[  205.8] Is engineer this absolutely enormous behemoth thing that's going to ruin everybody's experience
+[  211.8] and everybody's going to be forced into micromanaging the tiniest and most insignificant details of their ship life?
+[  218.8] If you're into that, yes.
+[  220.8] So we want to allow you to basically have full control over all the ship items, over your ship.
+[  229.8] So it should feel like your ship if you're into that.
+[  232.8] But on the other hand, we also want to allow players that are just like jumping in for, let's say, one hour of game time.
+[  240.8] We don't want to force them into it.
+[  242.8] You have to do a two hour prep and then do another one hour of post-prep for your ship.
+[  249.8] We really want also to have those players being able to fly around and experience all the missions in the persistent universe
+[  259.8] and all what we ever will throw at you.
+[  262.8] So would you say it's kind of what I took from it, from listening to us when we filmed it, from the conversations from you.
+[  270.8] So it's kind of like owning a car today.
+[  274.8] The car is going to work and it's going to function and it's going to do everything that you expected to do with very little work on behalf of the owner.
+[  283.8] And occasionally, a light's going to go on and you're going to have to take it to a service center and get it fixed, pay a fee, somebody else takes care of it and whatnot.
+[  292.8] But if you're an enthusiast, if you're the min-max lifestyle and stuff like this, you can fine tune your automobile to get more out of it, to improve its top speed, to improve its handling and stuff like that.
+[  307.8] And that's where engineer gameplay really comes into play.
+[  310.8] Exactly. You will be the person that actually is able to identify the light bulb that just went on in your car and tell you exactly, okay, this is the engine.
+[  318.8] And then when you open up your trunk, you see, okay, it might be the igniter or whatever.
+[  324.8] So that is your job.
+[  326.8] But if you're not into that, you can still bring it to the shop and have it repaired there.
+[  331.8] So, star citizens like this Dave Bridal here, who are no good at doing this and have no interest in...
+[  340.8] Sorry, I threw somebody under the bus right now.
+[  342.8] That was an in-joke. You're not going to get it.
+[  344.8] You don't want to be an engineer and whatnot. They're still going to be able to operate their ship and run around and do this like this.
+[  350.8] But for those people who want to push a bit more, people who want to get a bit more performance, a bit more capability out of their craft.
+[  357.8] Yes.
+[  358.8] And then from the repair standpoint, from the people who are in the Jeffrey tubes, fixing stuff like this, obviously that's a bit of the outside world imposing in on you.
+[  371.8] What options do people have for that? Just limp home and get it repaired by a service station?
+[  377.8] Yes. So one thing that is even now written behind me on my whiteboard is the main goal that we envision for the engineering gameplay is that player decisions matter.
+[  389.8] And one of the decisions can be, it's not mine, my gameplay. So I'm not into engineering.
+[  395.8] And it's a valid decision. It's your choice. It's your game. It's your ship. Whatever you want to do, you can do it.
+[  401.8] But that has the consequence of you probably will run with the stock settings for the items that you bought.
+[  409.8] And you will regularly have to go to repair. So you have to pay the money to actually be able to repair it.
+[  415.8] And sometimes you might even need to exchange the items for money. So you have to buy a new item to have it then exchanged on your ship and stuff like that.
+[  426.8] But if you then have the other player type who then is interested in like, no, I can maintain my items myself and I can adjust them to my demands so you can get a more like a bigger or longer lifetime of the items out of your ship.
+[  441.8] Or you get like a more effective ship out of your ship, which so you are more effective in the sense of.
+[  452.8] And from the damage standpoint, it's, you know, as time to kill increases as the game continues to evolve, physicalized damage comes in the armor penetrations like this and the natural time to time to live or time to kill ever you want to
+[  468.8] Extends it'll become a choice between knowing what your ship can do without an engineer and knowing when you have to cut and run.
+[  477.8] So you don't have to do that or having an engineer or becoming an engineer yourself and then you can extend your time to time to live.
+[  486.8] Yeah, drastically. So it was even just a discussion that I had today with Yogi where we were briefly talking about the time to kill right now and where we should be going.
+[  497.8] So we were especially talking about the multi cruise ships because right now it's like a hammerhead, for example, dies too fast.
+[  504.8] So there's definitely something that we have to do.
+[  508.8] How it will look like in the future. I cannot tell.
+[  511.8] We have to try it out. But one of our goals, additionally to increasing the time to kill is also like if you are in a soft dead state that you are able to repair to a degree.
+[  524.8] So you might even be able to repair the pieces you are still in.
+[  529.8] And if the engine is still attached, you might be lucky to do an escape because you like pulled out your quantum drive out of the piece that is floating around and then attached it back into a socket that might be fitting.
+[  542.8] And then you somehow boot up the engine and then you fly away and you made the escape.
+[  547.8] One of the eternal challenges of Star Citizen, not just running a live gameplay environment in the middle of your development, but running a continuing behind the scenes documentaries, a storytelling series telling the story of the thing while you're in development,
+[  564.8] is reminding people without having to keep repeating it every 30 seconds and the thing that we design systems for the game we're building towards, not the game as it is today.
+[  577.8] The game as it is today is what's available, what's online, what works, what doesn't work.
+[  584.8] So like that, you know, just gotta be real. But when you design systems, you're not designing for the game as it is today, you're designing for where the game will be with the increased time to kill, with the proper damage penetration and stuff like that.
+[  598.8] We still have the current state of game in mind, right? So we always try to make it like the ultimate goal is to have it where we want it to be in the future.
+[  607.8] But sometimes we can do some slight adjustments on the way there that are more fitting to the current state of the game. Sometimes it's not as easy to achieve.
+[  618.8] Sometimes we even have to do additional work to make it work with the current setup. But yeah, those are decisions that we always have to go through.
+[  626.8] Sometimes the decision is like, okay, we cannot put that much time and effort into creating additional work on us that makes it fit better into the current situation. We aim more for the long run.
+[  639.8] And of course, I introduced the idea of increasing time to kill and stuff. That's obviously where we're working towards for every spacecraft in the game except the Cutlass Steel.
+[  649.8] Yeah, plus one on that.
+[  653.8] Why does it blow up so easily? You can do it in my camera.
+[  658.8] Junk crew, zoom in. Junk crew. Why am I Cutlass Steel blow up so easy? It's like, hey Cutlass Steel, it goes, ah, it explodes.
+[  672.0] It's made out of steel. It's brittle.
+[  674.0] I'm in a mood today. All right. So all that said, and all of that later on the table, just in a simplified form, do people have to be an engineer?
+[  687.0] No.
+[  689.0] There you go. Now, for someone who chooses to be an engineer, can they be all three roles?
+[  696.0] Yes.
+[  697.0] There's something that prevents them from being one?
+[  700.0] Even the person that doesn't want to be an engineer can be all of those three types that we talked about. It's no skill, it's no talent, it's no device, it's not something that you pick.
+[  712.0] It's based on your skill. So based on your skill, your knowledge, you just take up the, we thought the hat might be a clear indicator of that.
+[  722.0] Okay, I'm glad you mentioned the hat. Some of the react videos I saw, people on YouTube or Twitch or even some of the posts I saw on Spectrum, whatever, some people took the hat thing to be very literal.
+[  737.0] Like there was literally a special hat that you put on. There isn't, I'm pretty sure I know the answer, but there isn't an actual hat.
+[  745.0] Except the bandana that is a must have. You cannot be anything, no, no, kidding.
+[  751.0] Yeah, but to a more logical state though, this isn't like switching between a flight mode, like SCM or there's not a special mode somebody goes into to become a tuner versus to become a mechanic.
+[  765.0] This is like difference between salvaging and mining. You decide to do these things.
+[  771.0] There's a dedicated console that is constantly running, which full purpose is to give you an overview of the state of the ship.
+[  779.0] And this can be used by whoever, whatever person you are attached. And once you interact with it, you can be technically called an engineer because you're actually interacting with the system.
+[  790.0] And for the mechanic, it's like, yeah, if there's something, if you as a person, you don't have to be a mechanic, you just run around and you see something is broken, you pull out your multi-tool and fix it, then you suddenly are the mechanic.
+[  806.0] You are wearing your mechanic hat and actually fixing the thing. For the tuner, it's a bit more complicated there. You have to like first pull out the item and then do some adjustments there and then bring it back in.
+[  819.0] So it's almost as when we talk about professions and stuff like that. I think what people can see with mining and what people can see now with salvaging is it's not a mode.
+[  833.0] It's not a thing that you check, check. It's not a thing that you enable. It is an aspect of gameplay and a system that exists for those who are interested in partaking in it.
+[  843.0] And the idea of three different hats and everything is something to be determined by the crew of a ship. You're going to take care of tuner tasks and you're going to take care of mechanic tasks.
+[  854.0] But it's not a gamified, okay, I'm putting on my mechanic thing going. So that allows people to freely bob and weave and dip in and dip out of all three.
+[  867.0] So for example, if you are the pilot, you can also wear all three hats if you want to. You can be responsible for the resource distribution in your ship. You can also run around to fix fuses.
+[  878.0] It might not be the best choice because then you have to leave your pilot seat and actually do the things on.
+[  883.0] Wearing hats and herding cats. Shout out to Jake Bradley.
+[  888.0] All right. So one of the other big questions that we saw a lot in the comments and stuff is how often, now obviously we're not going to ask you for a specific number.
+[  900.0] No, I'm not going to ask you for a specific number. But what are we, we have to keep this a high level kind of philosophical thing because tuning and balance comes at the end of the process.
+[  912.0] But how often are we thinking when you talk, let's talk about malfunctions because malfunctions are the kind of thing it's like it's not somebody shooting me, you know, the damage you get from somebody shooting who's going to happen as often as you get shot at.
+[  924.0] But for a malfunction for like, I'm doing what I'm supposed to be doing. I'm just trying to live my life out in the verse. And my crap breaks.
+[  931.0] What do we think is this is the thing that happens every 30 minutes? Is this the thing that like set some expectations for me here?
+[  938.0] So a, it is dependent on what, like if you fly your stock ship, like the basic example, if you fly your stock ship, like we are still debating if we want to make it based on the distances you travel or based on the time you actually spend in the ship.
+[  955.0] Right now my favor is to go in the distance side so that we make a distance base. But because like you might, like we don't want to punish players that are just jumping around in one system and just doing like, like the comparison again with cars, right?
+[  970.0] If you have a car that you just use to travel short distances in the city, it lives longer than a car that you use to travel. Well, it's not entirely true, but you get the idea.
+[  981.0] So just to throw something out, it's like, yeah, you might have it once a month, once a week, maybe.
+[  994.0] It depends on your amount of usage. It depends on the kind of usage.
+[  998.0] Exactly.
+[  999.0] But we are talking about different numbers once you start to tune it or once you start to travel to locations where they are like environment effects.
+[ 1009.0] Like if you fly into an radiation cloud, these chances are higher that you, they might trigger or might interfere with the ship items and therefore trigger malfunction.
+[ 1019.0] Or if you didn't pay attention and you left the door open and suddenly the entire atmosphere. So basically any state that your ship is that isn't the stock state will affect the chance for malfunction.
+[ 1033.0] So those people that are trying to fast and furious their components and push them beyond the red line and stuff. Yes, they will have to contend with more engineering. You want more, you have to put more into it as far as gameplay.
+[ 1045.0] But there's also the case when you like basically underpower your ships, right? So this even helps you to reduce the chances of malfunction.
+[ 1054.0] For example, that was with the intention of us allowing you to like travel millions and millions and millions of kilometers with your carac to do explore the vastness of space.
+[ 1067.0] So you basically look, you would definitely undertune your items so that they are running with a lower like frequency with a lower capacity with lower resource consumption with lower power.
+[ 1078.0] And that would ultimately result in, yeah, they are more reliable. That means they trigger less malfunctions. So there you might even end up with half a year without a malfunction.
+[ 1089.0] I'm throwing in numbers, but we didn't decide on that because we have to keep it interesting. But we are definitely not talking about like once every 10 minutes, usually a malfunction. That would be crazy.
+[ 1101.0] And I think it's important to state this is one of those things that we could probably reiterate every 30 seconds of the entirety of this conversation.
+[ 1108.0] But all of this is subject to further development, further tuning, further balancing, and most importantly, further testing. I mean, mining is a terrific example.
+[ 1119.0] I might use mining as a great example. Torsen and his team are the other team that have worked primarily on done most of the mining stuff that you see.
+[ 1127.0] And if you've been following the project, mining has grown and evolved and iterated the likes of far beyond a couple other systems and stuff like this.
+[ 1138.0] So, you know, expect that kind of thing from this. Like whatever the first version is that goes out, expect it to continue to evolve, expect it to continue to change and iterate and grow based on your feedback and, you know, our team's intake and understanding of that feedback.
+[ 1156.0] I think you've been very good at demonstrating that in the past. So I want to make sure you get your kudos.
+[ 1161.0] Thank you. But yeah, we are already expecting like so the we are expecting that the values that we put in once we put them into a patch that will be playable by the players.
+[ 1172.0] We expect them to directly react and tune the numbers so that they actually make sense and that like people are actually enjoying.
+[ 1182.0] So one of the questions again we saw was I know we just said you don't necessarily need to have an engineer.
+[ 1190.0] But I feel like the desire for one would probably increase as the size of the ship and the complexity of the ship grows.
+[ 1202.0] So like let's talk about like a scale. Is there likely to be a use for an engineer on something as small as an Aurora?
+[ 1212.0] Then like as we go up to a medium sized ship from a cutlass and a freelancer kind of thing, up to bigger connies and stuff, then in carats and then, you know, you know, addresses and stuff like this.
+[ 1223.0] Talk to me about what you think that progression is. Again, think, you know, go through testing and iteration and stuff. But what are your thoughts on this here?
+[ 1231.0] So my thoughts are that it is so we won't put any numbers there. We want to make it attractive.
+[ 1240.0] So which is a kind of different approach, right? So we don't go in like this ship needs five engineers minimum to function.
+[ 1247.0] We really want to make it like you as a player recognize, OK, this is just the overhead of things I have to do is just so high.
+[ 1256.0] I should really ask a friend to join and take away the mechanic part of my engineering role.
+[ 1264.0] But like since players are really interested in numbers, like for example, an Aurora, yeah, you as the pilot are also the engineer.
+[ 1271.0] Or if you are actually interested in that because you still can go to the shop and get the repairs done there or you don't have to for a ship like cutlass black.
+[ 1284.0] I think it's also still fine that it is one person. The second person will definitely have because then you can sit still in the pilot seat and then have the other person like exchange a fuse or something like that.
+[ 1296.0] Because also like the space allows it on the character.
+[ 1302.0] Now I my personal recommendation here would be a minimum of two dedicated roles there.
+[ 1308.0] So you have one that basically pays attention to the entire setup because like also life support is part of of that.
+[ 1314.0] And gravity is all the artificial gravity.
+[ 1317.0] So there's plenty to manage while you should have a handyman running a handy person running around there and actually fixing stuff.
+[ 1325.0] It's also I want to I want to acknowledge that Torsten is answering these questions coming at it from the perspective of the engineering gameplay.
+[ 1334.0] So there are many, you know, that there are ship teams and other gameplay teams that all come in and it's really going to depend on what you want to do with your ship and how you want to do it.
+[ 1344.0] But I don't think it's unfair to say that if if we're that we're a massively multiplayer game in a universe designed for the intention is to have many, many, many, many people there that if you bring one person to a situation versus you bring two people to a situation,
+[ 1364.0] we should be providing players with the opportunities to make two people more effective than one.
+[ 1370.0] Yeah, it's like not even more effective but more enjoyable.
+[ 1374.0] Right. So if you're the only engineer on the ship and you constantly have like something red flashing and you're just stressed out by like and you cannot keep up with with the damage that has been done.
+[ 1385.0] I think it's for some players it might be fun like having this stressful.
+[ 1389.0] But for me, you know, I would prefer to have like someone else to rely on as well.
+[ 1393.0] So I would and then hammerhead like hey, you take the left side of the ship. I take the right side and yeah.
+[ 1401.0] So I'm looking at the chat some of the questions that are coming in.
+[ 1405.0] A lot of people are curious about how this interacts with repair.
+[ 1409.0] Like right now, the only version of repair that players see is is you know, you landed a thing in the drones by round or you've got you've got a beam, you know, and you should beam at it.
+[ 1419.0] It's is talk to me about how engineering works with repair, either how it is today or where we're going in the future.
+[ 1428.0] Yes, it's more where we are going.
+[ 1430.0] So in the beginning, so right now our focus is in the engineering gameplay and the next step that we then have to take is like fine tuning the repair gameplay.
+[ 1438.0] That doesn't mean that the engineering gameplay doesn't have repair in it as well already.
+[ 1443.0] Right. But we really would like to take repair afterwards a bit further than what we will do that with engineering gameplay.
+[ 1450.0] So the engineering gameplay might look like a more basic type of repair where it's exchanging items, exchanging fuses, using a repair beam to bring up the health of your items, fixing the hull you already know from from the hull scraping part of it.
+[ 1469.0] But there is also like because we are going in this malfunctioning direction where it is like this, like non visible damage that can happen to your items.
+[ 1480.0] There we want to go a bit more creative so that they are dedicated counters to that malfunction that you are facing, which is considered repair.
+[ 1489.0] Right. So you bring back the item to its full functional state.
+[ 1493.0] And yeah, so to sum it up, the engineering gameplay holds in repair functionality, but we want to move it further afterwards.
+[ 1505.0] Chat is going off.
+[ 1507.0] What version of the game is Jared playing? He's talking about repair drones and beams.
+[ 1511.0] Yeah. I'm talking about what came before, what we've presented in the concept promotions for several repair ships like the Vulcan and stuff that aren't out and where we're moving back to in the future with repair.
+[ 1522.0] Jones and flying around.
+[ 1524.0] If one must understand the great mysteries of Star Citizen must take more than a dogmatic view with just the Jedi.
+[ 1531.0] I'm talking everything. Trying to give me crap in the chat.
+[ 1537.0] What version is he playing?
+[ 1538.0] I'm talking about it at all.
+[ 1540.0] So we're talking about the future.
+[ 1544.0] Can somebody sneak into a shit?
+[ 1548.9] Now we've talked about the different roles and stuff like this.
+[ 1550.9] Let's talk about reverse engineering, if you will. Using engineering offensively.
+[ 1558.9] Are there going to be opportunities for players to sneak on board ships and use the tools of engineering offensively?
+[ 1568.9] Yes.
+[ 1571.9] Yes.
+[ 1572.9] Do you want to elaborate on that at all?
+[ 1574.9] I can elaborate on that.
+[ 1577.9] So we want to tie it in with a hacking game play.
+[ 1580.9] So that's one fact that we want to allow you to hook yourself into one of the items and then get even access to like imagine yourself, you being the aggressor on the ship, you plug yourself into the power plant.
+[ 1599.9] If you don't want to, well A, there's the option you physically damage it.
+[ 1603.9] So you might punch it or use a hammer with a wrench on it or use a beam to destroy it.
+[ 1610.9] With our beams?
+[ 1611.9] Yes, that's all about beams.
+[ 1613.9] Or you are the more digital assassin of the ship where you just plug yourself in and go through the hacking game play.
+[ 1623.9] And then once you succeed, you get access to the states, what we talked about for the items.
+[ 1633.9] So you can switch around the states of the item and mess up your ship.
+[ 1637.9] But what you can also do is you can decide to ignore the item and progress further through the ship.
+[ 1643.9] So you basically move from node to node inside the ship.
+[ 1648.9] So once you successfully hack this power plant, you will see all the connected items that you can then select and start the next hacking procedure.
+[ 1658.9] And then you can make your way to whatever item you actually wanted to target and then change its function.
+[ 1664.9] Turn it off or vent a room if you want to target the life support.
+[ 1669.9] Every functionality that you see on the engineering screen would be accessible through that hacking process.
+[ 1677.9] I think chat's going out like hacking.
+[ 1680.9] Yes, hacking has been in the cards for Star Citizen for the Persistent Universe and for Squadron 42 for some time.
+[ 1686.9] Intrepid viewers of the public roadmap might remember there was a hacking card in the public roadmap for quite a while.
+[ 1692.9] We actually had, going back to our conversation just before the show starts, we actually had filmed a segment for ISC way back when detailing how hacking was going to work and what was that.
+[ 1706.9] And it was filmed and it was edited and then somebody had a great idea about how to change it.
+[ 1711.9] And it fundamentally changed.
+[ 1713.9] It's like, no, no, we're going to go this way. And everything in that segment became wrong.
+[ 1717.9] So it's one of the few segments we've ever produced that never got aired and what not happened.
+[ 1724.9] It happens a while. The only constant game development has changed. It affects our video production as well.
+[ 1729.9] But no, when there is a, we already know the time and the place where we're going to reintroduce folks to hacking gameplay and how it's going to manifest and stuff.
+[ 1739.9] So stay tuned. No other updates about that. Just, yeah.
+[ 1743.9] One of the other curiosities that came out of the show, flamethrowers.
+[ 1750.9] Yeah, it's a thing. You have to, no.
+[ 1755.9] Were you being serious when you mentioned flamethrowers? Were you joking?
+[ 1759.9] No, it wasn't a joke. I'm very bad with jokes. I'm German.
+[ 1762.9] Yeah. And the flamethrower that folks saw in the show was literally a, I don't remember which rifle, but you know, Will and Dave, you know, took the rifle and added flame to it to do the thing.
+[ 1773.9] So you're not, you're not actually looking at shooting a flamethrower at a power supply.
+[ 1778.9] Yeah. The blow torch was also an ejection there. So it's more like you can bring up the heat of the room with life support and stuff like that.
+[ 1787.9] So you might have more nonviolent ways of bringing up the temperature if needed.
+[ 1794.9] Yeah. Now, that's not to say that flamethrowers won't make it into the game. The actor feature team is very keen on putting flamethrowers in.
+[ 1801.9] And we're just saying that, I'm sorry.
+[ 1803.9] And I'm not saying that they wouldn't work.
+[ 1806.9] Yeah. So they might damage it.
+[ 1809.9] They're not an intentional part of engineer gameplay. And they're not soon.
+[ 1816.9] On the flip side of that though, exploding toilets.
+[ 1821.9] It actually is not on our list.
+[ 1823.9] It is?
+[ 1824.9] Yeah, it is.
+[ 1825.9] Yeah.
+[ 1826.9] Look in that camera and tell them that exploding toilets is actually on our list now.
+[ 1829.9] Yeah, the exploding toilets is on our list now.
+[ 1831.9] Because you saw it in the show and it was awesome, huh?
+[ 1834.9] Yes.
+[ 1843.0] I should just stop the show right there.
+[ 1845.0] See if we have any more questions from the chat.
+[ 1848.0] So let's recount the basics.
+[ 1852.0] Engineering into your gameplay is a totally optional, or mostly optional profession, like mining and salvaging.
+[ 1860.0] You can do many activities in the persistent universe without diving particularly deep into it if that's not your particular cup of tea.
+[ 1870.0] You'll be able to take your ship back to repair stations or service stations and get the work done automatically as needed.
+[ 1877.0] It is there should you wish to take your space experience further, you know, getting more performance out of your vehicles, getting more performance out of your capabilities, out of your spacecraft,
+[ 1887.0] and being able to stay out in the far reaches of, you know, unexplored systems and stuff like that longer without having to come back and check in and repair.
+[ 1899.0] Flamethrowers are still on the wish list for the actor feature team, not necessarily a distinct part of engineering.
+[ 1906.0] Exploding toilets are the new cornerstone of engineering in all engineering.
+[ 1910.0] I won't go back to that one.
+[ 1912.0] We'll be basically around just trying to keep the toilets in your ships from exploding.
+[ 1916.0] That's why we put bathrooms and toilets on every ship.
+[ 1920.0] That's why Drake's ships are the best. They're the only ones that aren't going to have the exploding toilets.
+[ 1926.0] Am I right in everything so far?
+[ 1928.0] Anything else you want to leave people with before we let you go? Any final words about engineering gameplay?
+[ 1934.0] You've seen your own feedback. You've seen your own comments. What are we missing? What do people need to know today?
+[ 1941.5] Now, we are going to come back with another look at engineering later this year when it's much farther along.
+[ 1947.5] We can actually show you at working and the evolution of the resource management system with it.
+[ 1951.5] So we're not about answering every question and dotting every T today.
+[ 1956.5] I think we touched everything that I also stumbled over where I was like,
+[ 1963.1] yeah, we should talk about that again and clarify things.
+[ 1967.1] Okay. Well, thank you for hanging out with us.
+[ 1971.1] Thank you for having me.
+[ 1973.1] All right. So up next, that was Torsten.
+[ 1976.1] Up next, our next guest couldn't actually be here today, but they could be here earlier in the week.
+[ 1986.1] So we pre-recorded. We're trying something different.
+[ 1990.1] We did half of this week. Star Citizen Live is going to be a Star Citizen Live-ish.
+[ 1996.1] So, yeah, so that's it for the engineer gameplay section.
+[ 2002.1] If that's what you were interested in, you can go back and do something else.
+[ 2006.1] And if you're interested in the life and times of a performance capture artist who works on Squadron 42 and Star Citizen,
+[ 2015.1] stay tuned. We're going to play that and then I'll be back here at the end.
+[ 2027.2] Are you ready?
+[ 2028.2] Okay.
+[ 2030.2] All right.
+[ 2032.2] Maybe I should have combed my hair.
+[ 2034.2] Hi, everybody. Welcome back.
+[ 2035.2] We're here with another episode of Star Citizen Live-ish.
+[ 2039.2] I'm your host, Jared Huckabee.
+[ 2041.2] We've never seen Star Citizen Live-ish before.
+[ 2044.2] It's where we take a little bit of time out of the end of our week and we talk with our developers,
+[ 2050.2] the people who make the Star Citizen universe possible.
+[ 2053.2] This week's show is Live-ish because we're actually shooting it on Wednesday.
+[ 2057.2] We're shooting it on Wednesday. Hello, Wednesday.
+[ 2060.2] Hi.
+[ 2061.2] I didn't expect a Wednesday answer.
+[ 2064.2] We're shooting it on Wednesday because our guest is on a special trip up here from the south of England.
+[ 2071.2] I'm not going to say where. We're not trying to dock somebody here.
+[ 2074.2] Let's just get to the introduction because we're doing it well.
+[ 2076.2] Take no words.
+[ 2077.2] Anna. How you doing, Anna?
+[ 2079.2] I'm great. How are you?
+[ 2081.2] Good. I am renowned for absolutely mispronouncing and destroying your class names.
+[ 2087.2] No, I personally would like to know how you're going to pronounce it just so I can hear that.
+[ 2090.2] And everyone here can hear it too.
+[ 2093.2] Dimitro?
+[ 2095.2] Wow.
+[ 2096.2] Dimitro?
+[ 2097.2] Wow.
+[ 2098.2] Dimitro?
+[ 2099.2] That's my new name now. Dimitro. Let's do it.
+[ 2102.2] I'm happy with that.
+[ 2103.2] How is it?
+[ 2104.2] It's one of those really annoying words that has three vowels at the end so you have to go Dimitrio.
+[ 2109.2] Dimitrio.
+[ 2110.2] IOU.
+[ 2111.2] Greek.
+[ 2112.2] Yes.
+[ 2113.2] Greek separate.
+[ 2114.2] Maybe if I had known that before I would have.
+[ 2116.2] Not really. I was going to murder that regardless.
+[ 2118.2] No research was done.
+[ 2119.2] So, Anna.
+[ 2120.2] Yeah.
+[ 2121.2] You are often on the show. We have our developers. We have programmers and designers and artists and stuff.
+[ 2128.2] We rarely get a chance to have a performer on the show.
+[ 2132.2] So, tell everybody a little bit about who you are and what you do for Star Citizen.
+[ 2138.2] I created the whole thing. It was my idea in the first place.
+[ 2143.2] No one really knows it but no.
+[ 2146.2] I'm an actor on the lower end of the food chain of game development.
+[ 2151.2] I'm joking.
+[ 2152.2] But, yeah, no, I'm an actor.
+[ 2153.2] I do a lot of voices for Star Citizen and is that what you wanted me to say?
+[ 2158.2] You want to go even further back from that?
+[ 2160.2] That's fine.
+[ 2161.2] I was born in 93.
+[ 2162.2] No, no, no.
+[ 2163.2] We just said we were trying not to dots you.
+[ 2165.2] 93 is not toxic. That's my birthday.
+[ 2168.2] Hey, every piece of... You don't understand.
+[ 2170.2] Every piece.
+[ 2171.2] Every piece on the internet?
+[ 2172.2] No, trust me. I stream.
+[ 2174.2] You probably do understand.
+[ 2175.2] Yeah, I have to think about that all the time.
+[ 2177.2] Yeah, okay.
+[ 2178.2] So, you are a performance capture artist for Star Citizen.
+[ 2182.2] You've done a number of roles for Star Citizen.
+[ 2184.2] You were just up here this week doing additional roles for Squadron 42.
+[ 2188.2] We'll talk a little bit about that later.
+[ 2190.2] Yes.
+[ 2191.2] But let's talk about how you got your start.
+[ 2194.2] Let's start.
+[ 2195.2] I said these second half of the shows are usually reserved for getting to know people
+[ 2201.2] and who they are and how they got their start.
+[ 2203.2] The first half is where we're going to talk about the development stuff
+[ 2206.2] and the stuff that people care about and stuff like this.
+[ 2208.2] The second half isn't the part that anybody cares about,
+[ 2210.2] but we're going to do it anyway.
+[ 2212.2] Because I want people to get to know the people that make the game.
+[ 2215.2] That's what this show is about.
+[ 2217.2] So, tell us about how you got your start.
+[ 2219.2] Where did you come from?
+[ 2222.2] The area where your mother is not a character.
+[ 2224.2] But after that, where did you come from?
+[ 2226.2] She just looked, she gave me.
+[ 2228.2] I'm like, that's what she wants to say.
+[ 2230.2] I'm going to make you embellish what you mean by that.
+[ 2232.2] Wow.
+[ 2233.2] Do you mean acting or in life?
+[ 2237.2] Yes.
+[ 2238.2] Both?
+[ 2239.2] Both?
+[ 2240.2] We've got half an hour to film.
+[ 2241.2] I always knew I wanted to be an actor.
+[ 2244.2] I wanted to tell one of those cringe stories, but it's true.
+[ 2246.2] It's all I've ever wanted to do.
+[ 2247.2] I moved to London when I was 19 to go to drama school.
+[ 2251.2] I was at the London Academy of Music and Dramatic Art,
+[ 2254.2] which for anyone else, you might have just heard it, is Lambda.
+[ 2257.2] I was grateful enough to be signed with an agency in third year.
+[ 2261.2] And then I did a couple of feature films, and then video games started coming up
+[ 2264.2] into my kind of audition process about two years into acting.
+[ 2270.2] And I did a VR game for PlayStation called Bravo Team.
+[ 2274.2] It was like my first video game I ever did,
+[ 2276.2] and it was straight into kind of the main voice of that.
+[ 2279.2] A couple of months later, I think, Stusiton came up as an audition.
+[ 2283.2] It was an audition that, you may want to talk about this in depth.
+[ 2286.2] It was an audition that I thought I bombed.
+[ 2289.2] It was the work, to this day, probably the most awful audition I've ever done.
+[ 2294.2] So the fact that they offered me two roles and it completely changed my life,
+[ 2297.2] honestly, this game changed my life, is the funniest thing ever to me.
+[ 2301.2] And it surprises me all the time that happened.
+[ 2303.2] All right, so we'll get there.
+[ 2305.2] Drama school.
+[ 2307.2] Drama school.
+[ 2309.2] Because you went to drama school.
+[ 2311.2] I went to drama school.
+[ 2313.2] I actually taught at a drama school back in the house of an age of 2006.
+[ 2320.2] I was teaching drama school in 2006.
+[ 2325.2] But that's an American kind of thing.
+[ 2327.2] I want to hear about what a UK drama school is like.
+[ 2330.2] I don't have any conception whatsoever of what a UK drama school is like.
+[ 2334.2] Is it just constant Shakespeare monologues every other day?
+[ 2338.2] There wasn't not constant Shakespeare, but I think, I guess,
+[ 2342.2] the reputation would be that it would be hyper English.
+[ 2345.2] And maybe it was, I don't know, but we had lessons in pretty much every aspect of performing
+[ 2350.2] so that you could get to know every, so that you could be prepared for any occasion.
+[ 2355.2] We had singing, we had voice, we had dance, we had fricking flamenco.
+[ 2360.2] Just exactly like that. That was incredible.
+[ 2363.2] I thought that.
+[ 2365.2] I hope that. Can we zoom in on that?
+[ 2367.2] Yeah. We had things like just general movements, like flopping around.
+[ 2371.2] We had all of the cringy stuff that you imagined.
+[ 2374.2] Mind.
+[ 2375.2] Yes, well, actually no mind, but we had more like animal studies so that you could get,
+[ 2379.2] you know, things like that.
+[ 2380.2] All of that is definitely not a stereotype.
+[ 2382.2] That happens. That really happens.
+[ 2384.2] But video games really weren't part of my training at all.
+[ 2388.2] Nowadays, apparently, is I hear what Lambda are doing now,
+[ 2391.2] and they're building, apparently, a mocap studio into the drama school itself.
+[ 2395.2] So games and acting for games is definitely way further along in training side of things now than it was.
+[ 2401.2] But it was all a lot of learning when I started doing it off the cuff.
+[ 2406.2] I had no previous, like there was no training in my body to do with games,
+[ 2409.2] but I just had to learn everything from the scratch, really.
+[ 2412.2] Did you go into acting with the idea that you were going to act for games?
+[ 2415.2] No, and that was the biggest, like, pleasant shock ever that it could even be involved in my life.
+[ 2422.2] I didn't think that that could be part of my job because I thought that they,
+[ 2426.2] I thought it was very separate.
+[ 2427.2] And for a long time it was quite separate.
+[ 2429.2] Video games were done by voice actors exclusively.
+[ 2432.2] And I thought, okay, I'm an actor-actor, not a voice actor, so I can't do games.
+[ 2437.2] And then I realized that, and then nowadays they are just auditioning,
+[ 2440.2] oh, I'm waiting for him to say something.
+[ 2442.2] No, no, I just, I thought,
+[ 2444.2] I'd love to know what the difference between an actor-actor and a voice actor.
+[ 2447.2] Because a voice actor only does voice.
+[ 2449.2] That's generally what a voice actor is trained to do.
+[ 2451.2] So I didn't, generally there wasn't a crossover back when I was doing, when I graduated.
+[ 2457.2] And now games are being cast the same way as film and television.
+[ 2461.2] They're getting screen and screen and theater actors to also be in games.
+[ 2464.2] And there's no, there's no differentiation.
+[ 2466.2] But back then it was like a voice actor does games and a screen actor or theater actor does screen and theater.
+[ 2472.2] So I didn't think it was part of my, it could be part of my job.
+[ 2475.2] And then it was and I was so excited.
+[ 2477.2] You've done voice-overs stuff before.
+[ 2479.2] But I didn't realize that voice-overs would come up in my career.
+[ 2483.2] So when my agent called me and said, oh, we've got a video game.
+[ 2486.2] You don't have to say yes, by the way, it's a video game.
+[ 2488.2] It's just a video game, you know.
+[ 2489.2] And I was like, yes, yes, yes, yes.
+[ 2491.2] And they were like, you sure?
+[ 2492.2] Oh, you don't have to say yes.
+[ 2493.2] I was like, yes.
+[ 2494.2] Because to them, at the time, I think it's honestly the last five years,
+[ 2497.2] because I graduated in 2016, the last few years,
+[ 2501.2] it's considered alongside film, TV and theater.
+[ 2505.2] But back then I think it was, my agent didn't see it the same.
+[ 2507.2] It's really, really come on like leaps and bounds.
+[ 2509.2] So for then it was like, this is a little thing if you want to do it.
+[ 2513.2] And for me, that was just as exciting as film, television and theater.
+[ 2517.2] What was your first non-video game, like professional acting role that you can remember?
+[ 2525.2] Paid? It was a paid short film.
+[ 2528.2] And after that was the lead in a feature film, action film.
+[ 2532.2] That was the Viking Destiny movie.
+[ 2534.2] The Viking what?
+[ 2535.2] Viking Destiny, the Viking movie.
+[ 2536.2] Viking Destiny movie?
+[ 2537.2] Yes.
+[ 2538.2] What is the Viking? I don't know what the Viking Destiny movie is.
+[ 2540.2] I don't know what the Viking.
+[ 2541.2] I feel like it prompted me to embarrass myself in some way.
+[ 2544.2] No, it was a working title.
+[ 2549.2] And then America liked that name so much that they bought it with that name.
+[ 2553.2] So I wish it wasn't called Viking Destiny, but it is called Viking Destiny.
+[ 2556.2] Because the US went, yes.
+[ 2558.2] In the UK it's called Of Gods and Warriors.
+[ 2561.2] But it's, I know, a little bit more.
+[ 2564.2] Of Gods and Warriors.
+[ 2565.2] Yeah, exactly like that.
+[ 2567.2] So that was an action film where I played Viking Princess.
+[ 2571.2] And there was sword training.
+[ 2573.2] It's not a matter of fact, the way she was like, where I play a Viking Princess.
+[ 2576.2] It's just like, it's obviously a Viking and I'm a...
+[ 2578.2] Another Viking Princess.
+[ 2580.2] Yeah.
+[ 2581.2] Done one, done them all.
+[ 2583.2] No.
+[ 2585.2] So, is that all available on streaming?
+[ 2588.2] It was on Netflix for four years.
+[ 2590.2] And then it got, I think it was taken down recently, maybe last year.
+[ 2594.2] It was on there because they kind of just chop and change movies on there.
+[ 2597.2] But it's on Prime and YouTube and Google and stuff.
+[ 2601.2] And your first video game role?
+[ 2603.2] Bravo Team for PlayStation.
+[ 2605.2] Bravo, that was the VR game you just played.
+[ 2606.2] Yes, it was not a great game.
+[ 2609.2] It was not a great game.
+[ 2612.2] Everyone knows that, though.
+[ 2614.2] I think even they, it was quite rushed.
+[ 2616.2] And it didn't do very well commercially.
+[ 2618.2] But it was so nice for me even just to be a part of something like that.
+[ 2622.2] And I played it all the way through and just was blown away by the fact that I was hearing myself back in something I would play anyway.
+[ 2630.2] But we're going to jump over Star Citizen then.
+[ 2632.2] Yeah.
+[ 2633.2] Because you have like, you know, the Viking movie, you know, and then the thing, something you did that was very well received, though.
+[ 2640.2] Is the most recent Plague Tale Super Requiem or I don't know what it's called.
+[ 2644.2] Super Requiem.
+[ 2645.2] Was it the Plague Tale Requiem?
+[ 2648.2] Yeah, the sequel to Plague Tale Innocence, Plague Tale Requiem.
+[ 2650.2] How was that?
+[ 2651.2] They are amazing, honestly so amazing.
+[ 2653.2] Because it was my first, so at this point, at that point, I'd done, I've done about now about 13 video games or so.
+[ 2662.2] Back then I'd done about 10, 11, 10, 11.
+[ 2665.2] And even though I'm very grateful to do a lot of voices, they're often quite either like automated or background or military type characters.
+[ 2675.2] And so, which I love, of course, I love doing all of it.
+[ 2678.2] I love this industry so much.
+[ 2679.2] But Plague Tale was the first time I got to play like a real kind of very human, emotional, had a storyline, feelings, thoughts, you know, kind of person that players could really get attached to.
+[ 2691.2] So that coming out and seeing people love this character or really like this person and get attached to her as a character, the way that I've done with games was so special to me.
+[ 2699.2] So it's been really nice.
+[ 2700.2] Yeah, I did.
+[ 2701.2] You mentioned you always got background, you always got these automation things.
+[ 2705.2] You know, I did, I did the thing.
+[ 2707.2] I went to school and I did plays at 20, 30 plays at the time.
+[ 2711.2] And I made my run at film and stuff.
+[ 2714.2] And I was always told, you look like that guy.
+[ 2717.2] I'm like, what is that guy?
+[ 2719.2] Exactly.
+[ 2720.2] You look like that guy.
+[ 2721.2] You look like that person we kind of sort of know in our lives.
+[ 2724.2] It's like, but you don't stand out was basically what I was told by every casting director.
+[ 2729.2] So you look like just that person.
+[ 2731.2] You're going to be great in the background.
+[ 2732.2] You're going to be great for like the best friend.
+[ 2734.2] They would actually say that to you.
+[ 2735.2] Yeah, you're going to be great for the neighbor.
+[ 2736.2] You're going to be great for the neighbor.
+[ 2738.2] And the only work I ever got were what we call industrials, which actually came up in the conversation with John Schimel.
+[ 2745.2] So if you're watching, watch this episode and watch John Schimel.
+[ 2747.2] I'm sorry.
+[ 2748.2] I'm going to repeat myself a little bit.
+[ 2749.2] But industrials were those videos that you had to watch when you hired into a place.
+[ 2753.2] Like those instructional videos about how not to run people over with forklifts.
+[ 2757.2] Oh my God.
+[ 2758.2] That's like that educational.
+[ 2759.2] Yeah.
+[ 2760.2] Yeah.
+[ 2761.2] So that was the work I got because again, I looked like somebody people.
+[ 2763.2] It was always like, you look like this guy.
+[ 2765.2] I know.
+[ 2766.2] And so it's so it was always running over somebody with a forklift and being contrite or being the victim of run being run over by a forklift.
+[ 2774.2] Or this was actually my bread and butter making sexual harassment videos.
+[ 2779.2] I mean, a lot of sexual harassment videos because they're like, you look like this.
+[ 2784.2] This is what I got.
+[ 2785.2] This is what I heard more than anything.
+[ 2787.2] You look like a decent person who would sexually harass somebody and not know it.
+[ 2793.2] And that's what they want to show in the stretch of mind.
+[ 2795.2] They're trying to show how anybody can do it.
+[ 2797.2] Not even people are supposed to receive that as a sentence.
+[ 2800.2] That was why I got out of the industry.
+[ 2802.2] You go, great.
+[ 2803.2] Thank you.
+[ 2804.2] Wow.
+[ 2805.2] How?
+[ 2806.2] Well, eventually I hired into Disney and in a big orientation at Disney, with like 80 people in this big ballroom and they started playing one of the sexual harassment videos I was in.
+[ 2816.2] No.
+[ 2817.2] And so I'm sitting there surrounded by, you know, people and they're watching me, sexually harassed people.
+[ 2824.2] I'm just like, this is not me.
+[ 2827.2] I'm not a good actor.
+[ 2829.2] It's not a good performance.
+[ 2830.2] It's nobody will see me as anything else.
+[ 2833.2] So I got out of that.
+[ 2835.2] But it was weird.
+[ 2836.2] Good story then.
+[ 2837.2] But it was weird.
+[ 2838.2] But yeah, I was never considered to be a performer or an actor.
+[ 2842.2] It was always, it's like, you're good at explaining how things work and good at explaining why things are done in a certain way.
+[ 2851.2] And that was literally, and then we fast forward here, we see it here.
+[ 2856.2] Now I'm struggling to explain why things are done a certain way.
+[ 2859.2] And I need direction.
+[ 2862.2] The way that you look shouldn't come up in acting as much as it does, but it really unfortunately does.
+[ 2867.2] People are sometimes messaging me and go, you know, is it as superficial as it looks or seems?
+[ 2871.2] And I can't really contest it because it's something that is thought about all the time.
+[ 2875.2] Yeah.
+[ 2876.2] Sometimes in video games you get the thing where they'll take your performance but create a different face or look like last of us, for instance, you know,
+[ 2884.2] famously, you know, some well-regarded voice actors and stuff.
+[ 2888.2] But then they make artificial faces on them so it doesn't really matter what they look like.
+[ 2892.2] But in something like Star Citizen and especially in Squadron 42, we're very much keeping with the actors, you know, look whenever possible.
+[ 2899.2] It's like that.
+[ 2900.2] So it goes both ways in video games.
+[ 2902.2] But yeah.
+[ 2903.2] It's also financials as well.
+[ 2905.2] So if you have to, I don't know if you know Beyond Two Souls that game.
+[ 2908.2] Yes.
+[ 2909.2] If, oh, what's his name?
+[ 2910.2] The guy that plays the Green Goblin.
+[ 2912.2] Willem Dafoe.
+[ 2913.2] Like if you actually have to pay for the actual, for it to look exactly like Willem Dafoe and so everyone plays the game and knows that's Willem Dafoe,
+[ 2920.2] you have to pay for their likeness and paying for the likeness is more expensive than just paying for the voice and reconstructing it onto a different face.
+[ 2927.2] So it's sometimes more cost effective for the game to go, okay, we'll just, we'll create an imaginary appearance so that we don't have, you know, because it's just for finances and stuff.
+[ 2935.2] But.
+[ 2936.2] I would have a hard time as a player if I, Willem Dafoe's delivery is so distinct.
+[ 2941.2] Yeah.
+[ 2942.2] So like imagine hearing Christopher Walken's voice out of somebody who looks like Tom Cruise.
+[ 2946.2] Christopher Walken in a game would be so great.
+[ 2948.2] Oh my God.
+[ 2949.2] The QA reports on that must be insane.
+[ 2951.2] Yes.
+[ 2952.2] Like no, I think it's, I think there's something wrong with the syntax.
+[ 2954.2] I'm like, no, that's working his intents.
+[ 2956.2] No, no, that's.
+[ 2957.2] What role did you play in Plague Tale?
+[ 2959.2] Sophia.
+[ 2960.2] Sophia, yeah.
+[ 2961.2] So there was the main character.
+[ 2962.2] Amicia.
+[ 2963.2] Amicia.
+[ 2964.2] And then.
+[ 2965.2] Of which my dad, when I said, oh, by the way, dad, I'm in this game called Plague Tale Requiem.
+[ 2969.2] I specifically said the name Sophia, but my dad being, I think he was just a little bit,
+[ 2973.2] must have been busy when I explained it.
+[ 2975.2] When the game came out, he sent me this in depth review article praising Amicia's performance.
+[ 2981.2] Who is amazing and one of my best friends.
+[ 2983.2] And he was like, congratulations.
+[ 2986.2] You, you killed it.
+[ 2987.2] And I was like, dad, love you.
+[ 2989.2] That's not who I'm playing.
+[ 2990.2] But thank you so much for the article.
+[ 2993.2] Oh, bless him.
+[ 2994.2] But yeah.
+[ 2995.2] Now, Sophia.
+[ 2997.2] When I was in Macbeth, my father told everybody in the world I was playing with Beth and I
+[ 3002.2] was, I was Macbeth.
+[ 3003.2] I was Macbeth.
+[ 3005.2] And they had never.
+[ 3007.2] They had.
+[ 3008.2] I'm still a good part, but, but they had not shown up for like the last four shows I had
+[ 3013.2] done and I had made a big kind of stink about it, about how they were, my family wasn't
+[ 3017.2] supporting me.
+[ 3018.2] Right.
+[ 3019.2] Because I was destined for industrials.
+[ 3021.2] And, and so, and so my dad made this big thing about telling everybody, oh, my son's playing
+[ 3025.2] Macbeth, my son's playing Macbeth and brought a huge group to the, to the theater expecting
+[ 3029.2] to see me as Macbeth.
+[ 3030.2] Oh my God.
+[ 3031.2] No, these stories are so brilliant though.
+[ 3033.2] And then I was there as Macbeth.
+[ 3035.2] No.
+[ 3036.2] Oh God.
+[ 3037.2] Yeah.
+[ 3038.2] Yeah.
+[ 3039.2] So I feel you.
+[ 3040.2] Beth walks out and they're like, he looks different.
+[ 3043.2] He looks different.
+[ 3044.2] You're watching sharing our traumas with Anna and Jared only on twitch.tv.
+[ 3049.2] Orlman's Trauma.
+[ 3050.2] Slash star citizen.
+[ 3051.2] So let's talk about star citizen.
+[ 3053.2] Yeah.
+[ 3054.2] So how did that come about?
+[ 3056.2] Your agent send you a thing, say there's a, there's a posting.
+[ 3059.2] Yes.
+[ 3060.2] There's like an audition for a game called star citizen.
+[ 3062.2] At this point they knew I was obsessed with video games and every time a game came up they
+[ 3065.2] knew I was excited.
+[ 3067.2] And they were just developing their voice department at the time.
+[ 3069.2] So they were, they were learning too about how the games industry was.
+[ 3072.2] Agency you're with.
+[ 3073.2] Yeah, the agency.
+[ 3074.2] Yeah.
+[ 3075.2] And because I was so enthusiastic and so I was really pushing for it.
+[ 3078.2] I was like, any games I really, really want to be seen for them, please.
+[ 3081.2] You know, when you're an actor and you have an agency you obviously can go, I would love
+[ 3084.2] to do theater.
+[ 3085.2] Please push me for theater or please push me here.
+[ 3087.2] For me, I was like, please push the games because I'm really passionate about it.
+[ 3090.2] I know how they work because I've played them since I was a kid.
+[ 3093.2] I've played video games every day since I was 13.
+[ 3095.2] So I know how they, I know how games often should sound or what a merchant should be
+[ 3100.2] like, you know, in a way that maybe someone that doesn't play games might not.
+[ 3102.2] I'd love to do as many games as possible.
+[ 3104.2] So games were coming up more and more.
+[ 3106.2] So star citizen said, you know, this game and I was a console player.
+[ 3109.2] I'd never played anything on PC.
+[ 3111.2] I'd never even understood how a gaming PC worked.
+[ 3114.2] And I was like, no, but let's do it.
+[ 3116.2] And it was just, it's funny, I talked to Dave about this today, but he was like, I wrote,
+[ 3121.2] he's at a generic US kind of script in a generic UK monologue just to hear accents.
+[ 3127.2] And it was, they were casting for a wide variety of things at the time.
+[ 3130.2] So they, the audition was just to read these monologues in a US accent and a UK accent to camera.
+[ 3136.2] And then shout a few like, I don't know, just like commands and things like that.
+[ 3142.2] Just, but the way that the, this again, this is not star citizen.
+[ 3146.2] This is the casting day.
+[ 3148.2] It was just such a weird day, the way that they decided to go about that audition.
+[ 3151.2] And when I explained it to Dave, he's like, what, but that's how the audition went.
+[ 3154.2] It was so weird.
+[ 3155.2] I did the monologue and then they asked me to run around the room, occasionally stopping
+[ 3162.2] and looking at camera and shouting a command from a piece of paper that I'd read.
+[ 3166.2] At the time I had, I could only assume that we're trying to see physicality.
+[ 3170.2] Maybe they wanted, if it was going to get mo-capped, maybe they wanted to see how we moved in the space.
+[ 3174.2] But it was a tiny room.
+[ 3176.2] There was no space to run around except go back and forth.
+[ 3180.2] And then stop and just be like, sniper ahead, just something like that.
+[ 3184.2] And then run around again and then be like, get down.
+[ 3187.2] And I was inside slowly dying, slowly and surely dying and wishing I could leave the room.
+[ 3193.2] I was waiting for them to tell me to stop and they finally were like, stop.
+[ 3197.2] No one was smiling.
+[ 3198.2] No one was, everything, everyone was tired.
+[ 3199.2] It was a tired day.
+[ 3200.2] Maybe, maybe I was at the end.
+[ 3202.2] Everyone was very kind of drained and no one was giving me any kind of, nothing felt positive in the room.
+[ 3208.2] I was like, I need to go.
+[ 3209.2] I just never get out.
+[ 3210.2] And then I left.
+[ 3211.2] I was like, right, let's just forget that audition experience.
+[ 3213.2] Two weeks later, I get offered two roles in a game that completely changes my life and I have still to this day, no idea why.
+[ 3219.2] But I'm very glad that it happened.
+[ 3222.2] Very glad that it happened.
+[ 3223.2] So those two roles are?
+[ 3225.2] Those two roles were at the New Babbage hologram and all the voices at Microtech at the time.
+[ 3229.2] And then New Babbage and then Rowena Dooley.
+[ 3233.2] Rowena Dooley.
+[ 3235.2] Rowena Dooley.
+[ 3236.2] Rowena Dooley.
+[ 3237.2] Who is Rowena Dooley?
+[ 3238.2] The Xenothreat and Seagivoreson Mission lady who yells at you the whole time tells you that you're tired.
+[ 3242.2] And the whole time tells you that you're terrible at what you do.
+[ 3245.2] All right.
+[ 3246.2] So you recorded those on the same day?
+[ 3248.2] Yeah.
+[ 3249.2] Okay.
+[ 3250.2] So walk me through that day then.
+[ 3251.2] So you get to where were you at?
+[ 3253.2] Imaginary?
+[ 3254.2] That was at Nottingham.
+[ 3255.2] That was in Nottingham Mocap when before everything got moved.
+[ 3259.2] So I went to Nottingham.
+[ 3261.2] So you went, you're in Nottingham.
+[ 3263.2] Do you do Miss Babbage or do Rowena first?
+[ 3265.2] Miss Babbage was first.
+[ 3267.2] And they told me to keep my feet planted because she was obviously a hologram.
+[ 3271.2] So I had to stay still, but I could move the top part of my body.
+[ 3274.2] So it's funny when I walk past and I see her going, this is this or whatever, or the little kind of, she has little hands on hips forward thing.
+[ 3281.2] And that was me.
+[ 3282.2] That was me doing something above the waist so that they had some movement to sound automated.
+[ 3287.2] And then Dooley, they wanted US.
+[ 3289.2] So we did a bit of American for her.
+[ 3291.2] Dooley at the time, I did more Miss Babbage, I think that day.
+[ 3294.2] That was all of Miss Babbage in once and never went back again for Miss Babbage.
+[ 3297.2] And Dooley was just like an hour maybe at the end.
+[ 3300.2] But now, years later, Dooley is the character I've done the most.
+[ 3304.2] Because you've come back subsequently and done the most.
+[ 3307.2] Yes, and done every time I go back now.
+[ 3309.2] It's often a bit of Dooley.
+[ 3310.2] So how would you describe Miss Babbage as a character then?
+[ 3312.2] Like, what do you have to do internally to get in the mode of Miss Babbage?
+[ 3319.2] I just channel Alexa.
+[ 3321.2] No, I don't.
+[ 3322.2] Well, it's more, I love Mass Effect a lot.
+[ 3324.2] And there's a hologram also, I think, at some of the planets that you go to in Mass Effect.
+[ 3330.2] And it reminded me of that.
+[ 3331.2] So I think I was just thinking of that a little bit and trying to stay painfully cheery and welcoming,
+[ 3337.2] as you would if you were a robot, trying to make a place sound appealing.
+[ 3342.2] But I think doing an automated voice or even just doing like the Sainsbury self-checkout type of voice.
+[ 3348.2] That always comes soon.
+[ 3349.2] Like, easy to me.
+[ 3350.2] And I've always done that stuff.
+[ 3351.2] So it all has to just make it a bit more happy.
+[ 3353.2] And then it was fun to do.
+[ 3354.2] And then Marina Dooley is?
+[ 3356.2] Hard-ass. Hard-ass.
+[ 3359.2] Well, they just, I don't think actually they didn't say to miss, like, specifically make her a hard-ass.
+[ 3365.2] It was just the script delivers her in that way because she's very, she's just focused on work.
+[ 3371.2] And also when you leave the fight, she wants you to come back.
+[ 3375.2] If you're not doing well, she lets you know.
+[ 3377.2] And even if you do do well, she's kind of like, well done, but that's move on.
+[ 3380.2] So she was written in a way that...
+[ 3382.2] Do you still remember any of the lines?
+[ 3384.2] The weapons free Yal?
+[ 3385.2] Is that what you're trying to get rid of?
+[ 3386.2] No, I don't know.
+[ 3387.2] There was two moments where she says Yal in the script and it became this whole thing, zero state,
+[ 3392.2] was like, why is she saying Yal?
+[ 3393.2] Because she doesn't have a Southern accent.
+[ 3395.2] And I was like, it's just, it was just in the script.
+[ 3397.2] And that became her like tag line.
+[ 3399.2] Everyone brings up the fact that she's...
+[ 3401.2] Zero state said that?
+[ 3402.2] Zero state, yeah.
+[ 3403.2] It's a thousand years in the future, zero.
+[ 3405.2] You know, crap changes.
+[ 3408.2] Crap changes.
+[ 3409.2] Culture's mix.
+[ 3410.2] Try to assign 21st century norms to the 30th century.
+[ 3413.2] We love you, zero state.
+[ 3414.2] You know, but I, no, don't, we do not.
+[ 3416.2] I do.
+[ 3417.2] I'm annoyed.
+[ 3418.2] You know better.
+[ 3419.2] Weapons free Yal.
+[ 3421.2] So Pete worries when I get really loud like that.
+[ 3424.2] I can see, he goes, mmm.
+[ 3425.2] They're shaking.
+[ 3426.2] I see them.
+[ 3427.2] He's like, don't do that, dude.
+[ 3429.2] He's like, you're supposed to know better.
+[ 3430.2] And like, that's why I never got past industrials, Pete.
+[ 3434.2] And then you remember any of the...
+[ 3436.2] Now, we don't have the modulation, anything,
+[ 3438.2] but do you remember any of the Miss Babbage lines?
+[ 3441.2] Oh, the, I, you know what?
+[ 3443.2] When I first started, I know we're going to talk about Twitch later,
+[ 3445.2] but when I first started streaming Star Citizen on Twitch,
+[ 3447.2] I had a redeem on the channel of Say Align from Miss Babbage
+[ 3449.2] and Say Align from Dooley.
+[ 3451.2] And the Dooley was, I think, Weapons Free Yal or something like that.
+[ 3455.2] And the Miss Babbage one was always where creative innovation
+[ 3458.2] meets innovative creativity, that one.
+[ 3460.2] Because everyone was like, what does that even mean?
+[ 3462.2] Because it's true.
+[ 3463.2] But what does a robot mean?
+[ 3465.2] So right now just give me that line,
+[ 3467.2] separated from all the conversation, in your best Miss Babbage.
+[ 3470.2] Where creative innovation meets innovative creativity.
+[ 3474.2] That's pretty good.
+[ 3475.2] That's pretty good.
+[ 3476.2] What happens in Babbage stays in Babbage.
+[ 3487.1] Except for herpes, that shit will come back with you.
+[ 3491.1] Good job.
+[ 3498.0] Thank you.
+[ 3499.0] Good job.
+[ 3500.0] You did well with the no laughing.
+[ 3501.0] Yeah, yeah, yeah, yeah, yeah, yeah.
+[ 3503.0] You said no one.
+[ 3504.0] Yeah.
+[ 3505.0] I was wondering if you were going to get to some of the friends ones.
+[ 3508.0] The turkey ones.
+[ 3509.0] No, no, yeah.
+[ 3510.0] Went straight in with the turkey ones.
+[ 3512.0] That's right.
+[ 3513.0] I stepped up.
+[ 3514.0] She's my friend and she needed help.
+[ 3516.0] If I had to, I'd pee on any one of you.
+[ 3518.0] Oh, that's the jellyfish line.
+[ 3522.0] Sorry.
+[ 3523.0] I can do Miss Babbage.
+[ 3524.0] Yeah.
+[ 3525.0] If anyone needs any like replacement lines or a patch or something,
+[ 3529.0] you know where to go.
+[ 3530.0] Thank you for being a good sport.
+[ 3532.0] So you mentioned your Twitch channel.
+[ 3534.0] So, yeah, so, before we get to that,
+[ 3537.0] at some point the Star Citizen community discovered you.
+[ 3540.0] Yes.
+[ 3541.0] So I posted a video of the MoCap after I got permission to do so.
+[ 3546.0] It was actually only a clip that they sent me for reference.
+[ 3550.0] So when you go back in and do a character again,
+[ 3552.0] they send you a little clip of what you sound like so that you can match it.
+[ 3555.0] So it's just a reference video.
+[ 3557.0] So I was booked again for a duly.
+[ 3560.0] So they said this is what duly sounds like just so you know.
+[ 3562.0] And they happened to send me a work in progress of duly moving a little bit
+[ 3566.0] and my face next to it with all the dots.
+[ 3568.0] And it was the first time I'd seen myself digitalized ever.
+[ 3573.0] I think it was probably before, I think it was before the game match.
+[ 3577.0] I actually saw myself in game properly.
+[ 3579.0] So I said, yeah, so I hadn't played, Miss Babbage had been out.
+[ 3583.0] They played it.
+[ 3584.0] The community had played it.
+[ 3585.0] I hadn't.
+[ 3586.0] So it's the first time I saw it and I was like, oh my God, this is so cool.
+[ 3588.0] And the nerd in me started getting really excited.
+[ 3590.0] And I thought, I wish I could show my friends, people that know I love games.
+[ 3594.0] I'd be so nice to post this somewhere.
+[ 3595.0] So I messaged Dave, I said, I don't suppose you could give me clearance to post this on social media.
+[ 3600.0] Don't worry if not, I know this stuff is quite, you know, sensitive.
+[ 3603.0] And he said, let me, let me go check for you.
+[ 3605.0] I didn't hear for ages.
+[ 3606.0] Then randomly he messaged me back saying, oh yeah, by the way, you can post that if you want to.
+[ 3611.0] I posted it on Twitter and YouTube.
+[ 3615.0] It was honestly 60 seconds and it was just a little bit of it to keep it there for my memories.
+[ 3620.0] I went to sleep, woke up and in the morning across those platforms, 10,000 people had watched this 60 second clip of just me doing a bit of Rowena Dooley.
+[ 3628.0] And I then realized the scope of this community because I had no idea.
+[ 3634.0] I had no idea at all.
+[ 3636.0] And Cobra TV, amazing creator.
+[ 3638.0] I love him and he's honestly responsible for everything that happened after that.
+[ 3641.0] I owe so much to that streamer Cobra if you're watching legend.
+[ 3645.0] He said, can I interview you on my Twitch channel?
+[ 3647.0] I'd love to ask you some questions.
+[ 3649.0] I didn't know what Twitch was.
+[ 3651.0] I didn't know anything.
+[ 3652.0] I said, sure.
+[ 3653.0] So I went live on his Twitch channel.
+[ 3654.0] He asked me some questions and as a result, fast forward, basically I got a gaming PC to stream this game.
+[ 3660.0] And then I did and it all kind of just took off from there very quickly.
+[ 3665.0] What were your, what were your honest, be honest.
+[ 3668.0] Yeah.
+[ 3669.0] It's just a first impression.
+[ 3670.0] What were your honest first impressions about the Star Citizen community?
+[ 3674.0] The community.
+[ 3676.0] Yeah.
+[ 3677.0] As I start, as I start tracking you down on Twitter, as I follow you to Twitch.
+[ 3684.0] It wasn't as much of a shock how many and how much fandom there was around it because I think being a gamer I understood where that comes from and why.
+[ 3694.0] But I think how utterly positive and honestly non-toxic and non, like it was just so loving the sheer amount of like, can we just help?
+[ 3704.0] It was all very much about coming together and doing nice things for each other.
+[ 3708.0] We're not, not every game has that.
+[ 3709.0] We all know that like not every game has that attitude.
+[ 3711.0] It was so incredible, so incredible.
+[ 3714.0] I've never met a community like it since honestly.
+[ 3716.0] I really haven't even in being, being in other franchises started since really sticks out to me.
+[ 3721.0] And I don't, I'm not just saying that because I'm here, I'm in it.
+[ 3724.0] And so now you stream on Twitch and you play the game?
+[ 3727.0] Once a week.
+[ 3728.0] Yeah.
+[ 3729.0] Yeah.
+[ 3730.0] Usually playing on Fridays.
+[ 3731.0] On Fridays at the moment, yeah.
+[ 3732.0] It might change.
+[ 3733.0] When this airs, which is, so you're actually a direct competitor to the show.
+[ 3738.0] Who knows, who knows by the time anyone's listening to this maybe I will be.
+[ 3741.0] It might be part of the reason why we had to pre-film this on Wednesday.
+[ 3743.0] What?
+[ 3744.0] Because she's like, no I can't miss my Twitch stream.
+[ 3746.0] I can't, I can't not be live.
+[ 3748.0] Cannot be live.
+[ 3749.0] My audience awaits.
+[ 3750.0] The audience?
+[ 3751.0] No, it's nice working for myself though.
+[ 3754.0] I have worked several jobs alongside acting that I didn't love or were really tough on me to support this, you know, this stream that I've had.
+[ 3765.0] And I've worked a lot of things that I didn't love doing that made me really unhappy.
+[ 3769.0] So now having content being my job alongside, I feel like I have this dual career now of being content creator and an actor is just so incredible to have two jobs I love equally.
+[ 3779.0] And I'm so grateful because again this game is the reason why I have that job now.
+[ 3783.0] So, so grateful.
+[ 3785.0] The occasion I stream on my personal channel, I haven't done it in, actually I don't know that I've done it this calendar year.
+[ 3791.0] I follow you.
+[ 3792.0] I don't know that I've done it this calendar year.
+[ 3793.0] I follow you.
+[ 3794.0] But when I do it, it's usually catharsis for me.
+[ 3800.0] It's usually a chance to-
+[ 3801.0] Dent.
+[ 3803.0] Sometimes you just want to climb to the top of a mountain and be heard by people.
+[ 3810.0] And that's what I tend to use my channel for.
+[ 3813.0] It's certainly not to be entertaining.
+[ 3815.0] It's certainly not to provide any form of-
+[ 3817.0] You're like that I do naturally.
+[ 3818.0] That just emanates from me.
+[ 3820.0] That's why I have my own show.
+[ 3822.0] She's not wrong.
+[ 3823.0] Big facts.
+[ 3825.0] But yes, no.
+[ 3826.0] Anybody who looks at me doing this goes, that guy's a professional.
+[ 3830.0] Can't even comb his hair.
+[ 3831.0] You are.
+[ 3833.0] But yeah, so do you find any catharsis in that?
+[ 3836.0] Is that shared?
+[ 3837.0] I've also never interviewed anybody that's ever streamed on Twitch on this channel.
+[ 3840.0] Oh really?
+[ 3841.0] I'll show you.
+[ 3842.0] So it's, do you get that kind of connect-
+[ 3845.0] I do it for a connection.
+[ 3847.0] I do it when I just need to, as strange as it is, I stream when I do the personal stuff.
+[ 3852.0] It's when I need to just make a weird connection with somebody.
+[ 3857.0] It's like I just need to be heard about something.
+[ 3859.0] And it's usually something dumb.
+[ 3861.0] I'll talk about some dumb philosophy thing or whatever, but it's never, it's always about
+[ 3866.0] weirdly finding some kind of connection.
+[ 3870.0] I completely relate to some of that for sure.
+[ 3872.0] I think I've always been, I've been a gamer for a long time and growing up with the friends
+[ 3879.0] that I had at school.
+[ 3880.0] I love my friends so much, but none of them gamed.
+[ 3883.0] Maybe even especially back then, there wasn't very many women that gamed.
+[ 3887.0] I always felt very alone in being a girl gamer.
+[ 3889.0] And I know it sounds cringe, but like a girl gamer is sometimes does feel like a very different environment.
+[ 3894.0] Well they're all fake.
+[ 3896.0] They're all fake, they don't exist.
+[ 3898.0] Even I'm like, even I'm like.
+[ 3900.0] But like being on Twitch and being able to play games and see, first of all, me, I have
+[ 3906.0] now so many wonderful Twitch friends, other streamers that are girls like me and I feel
+[ 3911.0] like I'm not just suddenly by myself in my circles being the only gamer and no one really
+[ 3916.0] understands why I'm interested or what it is about that I love so much.
+[ 3920.0] Twitch suddenly put me into a world where everyone liked the same things as me at the same time,
+[ 3925.0] just as much.
+[ 3926.0] And it was so incredibly beautiful to be in a space that everyone felt like me in that way.
+[ 3935.0] And I could nerd about the graphics for ages about something and everyone would completely understand
+[ 3939.0] what I meant or I could talk about a mechanic that I loved or a gameplay style that I loved
+[ 3943.0] and everyone would be like same or talk about it with me or challenge me on thoughts that
+[ 3947.0] I had about games where no where else I could do that, no where else I could do that.
+[ 3951.0] So it definitely feels like a place that is home in a way in that sense.
+[ 3957.0] And just so this doesn't sound like it's a commercial for Anna's, you know, Twitch chat,
+[ 3962.0] shout out some other Twitch streamers that you've made connections with that have helped you in the test.
+[ 3969.0] Shout out some other star citizen Twitch streamers.
+[ 3974.0] I know we all know and love Captain Berks.
+[ 3977.0] He was also very instrumental I think in teaching me how Twitch worked.
+[ 3981.0] We did collaborations especially at the start.
+[ 3983.0] I was very lucky to have him support me very early on.
+[ 3986.0] He's amazing. Zero State who we love.
+[ 3988.0] Cobra who I love.
+[ 3990.0] Seagalion I love him.
+[ 3992.0] Seagalion I love his stuff too.
+[ 3995.0] There's a lot of people, Noodle, Moist Noodle I love him.
+[ 3998.0] I'm going to feel bad if I miss everybody now.
+[ 4000.0] You're going to miss people. I set you up to fail.
+[ 4002.0] There's so many.
+[ 4003.0] No matter how many you name you're going to forget somebody.
+[ 4005.0] There's so many amazing star citizen streamers but...
+[ 4008.0] And of course we gave them all priority access to 318.
+[ 4012.0] In fact all the problems with access to 318 was so that we could just let the content clear.
+[ 4016.0] Eurelia, Smashly, I love Smashly.
+[ 4020.0] Oh there's so many. There's so many.
+[ 4022.0] It's been so nice to meet these people and see...
+[ 4026.0] Everyone plays star citizen so differently as well.
+[ 4028.0] Everyone has a complete...
+[ 4029.0] Because it's such a vast game. There's so much to it.
+[ 4031.0] People play it in different ways for different reasons.
+[ 4034.0] So it's nice to see everyone's different approach to the same game.
+[ 4038.0] Really fun.
+[ 4039.0] So we're just about out of time.
+[ 4041.0] Yeah.
+[ 4042.0] Are you game to try one more thing?
+[ 4047.2] It won't be like the...
+[ 4049.2] It'll sort of be like the Miss Babbage thing.
+[ 4051.2] You get it? I want to try.
+[ 4053.2] Let's see if we can do this.
+[ 4054.2] I'm silent. I don't know what he's going to ask me.
+[ 4056.2] David, let's kill the lights.
+[ 4058.2] Oh my god.
+[ 4060.2] Bring up left...
+[ 4062.2] Left 44. Just left 44.
+[ 4065.2] No, I'm sorry. Right.
+[ 4067.2] You knew what I was trying to do anyway. Thank you.
+[ 4069.2] So that's right 44. I called it wrong.
+[ 4071.2] So this is your spot.
+[ 4073.2] This is your spot.
+[ 4074.2] I have...
+[ 4075.2] Going back to your drama school route.
+[ 4077.2] Oh god.
+[ 4078.2] I have provided...
+[ 4080.2] I have printed up. I went to the internet.
+[ 4082.2] I left behind...
+[ 4083.2] And printed up 412345.
+[ 4089.2] Printed up five potential Shakespearean monologues.
+[ 4093.2] Oh my god.
+[ 4095.2] Can we go to her...
+[ 4096.2] Her direct... There we go.
+[ 4097.2] Look at your spot.
+[ 4098.2] This is a lovely spot.
+[ 4099.2] It's a little hot, but it's all right.
+[ 4101.2] It's dramatic.
+[ 4102.2] So would you mind giving us a dramatic...
+[ 4105.2] That's what they say. It's a little hot, but...
+[ 4107.2] Which one are you choosing?
+[ 4109.2] It's got to be Hamlet.
+[ 4111.2] Got to be Hamlet?
+[ 4112.2] I think because people that are watching right now will know it the most.
+[ 4116.2] That's how it is.
+[ 4117.2] So this is your camera right here.
+[ 4119.2] And let's see a dramatic...
+[ 4121.2] I never get to have an actor on.
+[ 4123.2] I never get to have a performer on.
+[ 4124.2] It's true. So Jared has gone...
+[ 4126.2] Dance monkey dance!
+[ 4128.2] That's what's happening here.
+[ 4130.2] Your best dramatic reunion.
+[ 4133.7] It's actually been such a long time since I've done Shakespeare.
+[ 4139.3] And I've also never done it professionally.
+[ 4140.3] I did it loads at drama school.
+[ 4141.3] And then never since.
+[ 4143.3] You get a hair flick.
+[ 4144.3] You're also not allowed to laugh again in this one.
+[ 4149.7] No.
+[ 4150.7] To be or not to be?
+[ 4157.9] That is the question.
+[ 4161.7] Whether it is noblow in the mind to suffer the slings and arrows about rage's fortune
+[ 4167.7] or to take arms against a sea of troubles and by opposing end them.
+[ 4174.9] To die.
+[ 4175.9] To sleep.
+[ 4177.9] And by sleep to say we end the heartache and the thousand natural shocks
+[ 4186.8] that flesh is heir to.
+[ 4187.8] To the consummation devoutly to be wished.
+[ 4190.8] Don't let me do any more.
+[ 4195.7] That was really good though. So good.
+[ 4197.7] Alright, you can go back to normal lighting.
+[ 4199.7] No, Jared's turn please. Put the spotlight on him.
+[ 4201.7] What?
+[ 4202.7] Yes.
+[ 4203.7] No, just normal lighting.
+[ 4204.7] I don't...
+[ 4205.7] I told you I'm a...
+[ 4207.7] Theater background.
+[ 4208.7] You're wasted.
+[ 4209.7] You're wasted here.
+[ 4210.7] Yes!
+[ 4219.1] Come on!
+[ 4221.1] Right.
+[ 4222.1] Is this a dagger Jared sees before him?
+[ 4224.1] I reckon.
+[ 4225.1] I do.
+[ 4226.1] Okay, so I've got Marc Antony.
+[ 4227.1] I've got Porsche.
+[ 4229.1] Alright, I'm not going to try to do dramatic.
+[ 4233.1] I'm not a dramatic actor.
+[ 4234.1] Okay, come on.
+[ 4235.1] Are you going comedy?
+[ 4236.1] So I will...
+[ 4237.1] No.
+[ 4238.1] I'm going to try to do...
+[ 4239.1] I'll do melodrama.
+[ 4240.1] Okay, can you do a...
+[ 4241.1] I will do...
+[ 4242.1] Brutus accent?
+[ 4243.1] Come on.
+[ 4244.1] Okay, okay.
+[ 4245.1] I will do...
+[ 4246.1] So Lawrence Olivier.
+[ 4247.1] Yeah.
+[ 4248.1] As Emperor Palpatine.
+[ 4251.1] Yeah.
+[ 4252.1] I'm setting myself up for some...
+[ 4256.2] As Richard III.
+[ 4257.2] Alright, so this is...
+[ 4259.2] So Lawrence Olivier.
+[ 4260.2] So Lawrence Olivier.
+[ 4261.2] British actor.
+[ 4262.2] I'm already...
+[ 4263.2] Doing...
+[ 4264.2] Emperor Palpatine, also British actor Ian McDermott.
+[ 4266.2] Yeah, but yeah.
+[ 4267.2] As Richard III.
+[ 4271.2] Nobody clipped this.
+[ 4272.2] Everyone clipped this.
+[ 4276.7] Now is the winter of our discontent.
+[ 4278.7] My God.
+[ 4279.7] Made glorious summer by the sun of York.
+[ 4284.7] And all the clouds that lured upon our house,
+[ 4287.7] the bosom of the ocean, buried.
+[ 4291.7] Now are our brows bound with victorious wreaths.
+[ 4294.7] Our bruised arms hung up for monuments.
+[ 4297.7] Our stern alarm changed to merry meetings.
+[ 4301.7] Our dreadful marches.
+[ 4303.7] Two delightful measures.
+[ 4307.7] Grimvizish war has smoothed his wrinkled front.
+[ 4310.7] And now, instead of mounting barbed steeds
+[ 4313.7] to fright the souls of fearful adversaries,
+[ 4316.7] he kept us nimbly in a lady's chamber
+[ 4319.7] to the lascivious pleasing of a lute.
+[ 4326.3] But I am not shaped for sport of tricks.
+[ 4331.3] Nor made a court an amorous looking glass.
+[ 4337.3] Time to turn it around.
+[ 4339.3] Sport I need help.
+[ 4340.3] Okay.
+[ 4341.3] Okay, off book.
+[ 4342.3] Okay, knew it already.
+[ 4344.3] No, that's just better.
+[ 4345.3] No, you knew.
+[ 4346.3] That was some incredible sight reading.
+[ 4350.3] I auditioned well.
+[ 4351.3] And then I get in there and they'd be like...
+[ 4354.3] They say that.
+[ 4356.3] They do say auditioning is its own art form.
+[ 4359.3] Oh yeah, oh yeah.
+[ 4360.3] There's plenty of people who trash auditions
+[ 4362.3] and they're dynamite in the thing.
+[ 4364.3] And there are people who absolutely ace auditions.
+[ 4366.3] And then you get them and they're like,
+[ 4368.3] oh, why did we hire this person?
+[ 4371.7] I never had trouble getting the job.
+[ 4374.7] It was once I got in there, they'd be like, oh no.
+[ 4376.7] Luckily I was here at this place long enough.
+[ 4378.7] Where is he?
+[ 4379.7] Maybe.
+[ 4380.7] Where's that person we had in the audition?
+[ 4382.7] Didn't we hire someone for this role?
+[ 4387.6] No.
+[ 4388.6] Sorry, no.
+[ 4391.1] Not for a while anyway.
+[ 4392.1] I'm not even looking at the right camera.
+[ 4394.1] Not for the last few days.
+[ 4395.1] And yeah.
+[ 4396.1] That's it.
+[ 4397.1] We're going to stop there.
+[ 4398.1] Oh, I'm sorry.
+[ 4399.1] One last thing.
+[ 4400.1] If you use your chance.
+[ 4401.1] I know you have your own stream,
+[ 4402.1] but big audience, there's one last thing you want to say
+[ 4405.1] to the stars is to give you a new name before we let you go.
+[ 4407.1] Anything you want them to know.
+[ 4409.1] I know it just might be the cringiest thing ever,
+[ 4413.1] but I honestly.
+[ 4414.1] No, I just did the cringiest thing.
+[ 4416.1] You're going to be alright.
+[ 4417.1] I wouldn't be so happy and so actualized in my work
+[ 4421.1] if it wasn't for this game.
+[ 4422.1] And for you guys, I know a lot of you probably already
+[ 4426.1] kind of saw the beginning of everything that happened
+[ 4428.1] with me on Twitch and in content and all that stuff,
+[ 4430.1] but I wouldn't be here without you guys in this game.
+[ 4433.1] So thank you so much everyone that is watching
+[ 4436.1] and it's been so nice to get to know more of you
+[ 4438.1] with every week that goes by.
+[ 4439.1] And I love being part of this game.
+[ 4441.1] I'm going and it's a pleasure, honest, complete honor.
+[ 4444.1] So thank you so much for having me as well.
+[ 4446.1] And we buried the lead,
+[ 4447.1] but she was here this week shooting parts for Squadron 42.
+[ 4450.1] We're not going to talk about what or when,
+[ 4452.1] but you know, it's just another more,
+[ 4454.1] if you're already a fan of her work and star citizen,
+[ 4456.1] more to look forward to in Squadron 42.
+[ 4458.1] So yeah, Anna, thank you for taking the time to be on the show.
+[ 4462.1] This part is pre-recorded.
+[ 4464.1] It's going to be inserted into a live show that we do on Friday
+[ 4468.1] with Torsten, which we haven't done yet.
+[ 4470.1] But at this point, I'll just throw it back to future me.
+[ 4473.1] Bye chat.
+[ 4478.9] Thanks, past me.
+[ 4480.9] I forgot I didn't comb my hair even worse today.
+[ 4483.9] It was a hat day.
+[ 4485.9] So ignore the whole first half of the show
+[ 4487.9] where whatever was going on with my head was going on with my head.
+[ 4491.9] That was Anna.
+[ 4492.9] That was Torsten.
+[ 4493.9] Thank you both so much for taking your time to be on the show this week.
+[ 4497.9] For those who are still watching
+[ 4499.9] and you're wondering about the status of Alpha 318,
+[ 4502.9] I said everything that I'm capable of saying about that yesterday in ISC.
+[ 4506.9] I'm going to point you to the robertspaceindustries.com website and the socials.
+[ 4510.9] They're far more connected in with that stuff than I am.
+[ 4513.9] I didn't learn that there's a page called status.robertspaceindustries.com
+[ 4518.9] where you can see all the nitty-gritty about server performance and stuff like that.
+[ 4522.9] So you can check that out if you haven't already,
+[ 4524.9] but really just keep in touch with the folks who run the website
+[ 4529.9] and the socials and stuff.
+[ 4531.9] They're going to have any updates and any meaningful information for you.
+[ 4534.9] I'm a video guy and Anna's an actress and stuff.
+[ 4537.9] And we're not the ones you want telling you what's going on in that regard.
+[ 4541.9] So for Anna and Torsten, I'm Jared.
+[ 4544.9] Thank you so much for watching this week's episode of Star Stas and Live.
+[ 4548.9] We'll be back next week with something or other.
+[ 4551.9] It's hard to ever know.
+[ 4552.9] So take care, be safe, and thanks for letting us do this.
+[ 4561.9] Letting us do weird cringy stuff like read Shakespeare in my words.
+[ 4566.9] Because it's nice.

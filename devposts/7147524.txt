@@ -1,0 +1,3 @@
+Unfortunately, the new GI isn't likely to help with this. Deep space is the one place that the existing cubemap-based lighting is going to be really close to anything we do with ray-tracing: the rays will not hit anything, and will sample whatever lighting is already coming from the space cubemap.
+In theory we could increase the brightness of the stars in that space backdrop, and that would increase the lighting on objects, but if you think of how little you can see on a moonless night* (if there are any other light sources to throw off your adaptation), we'd have to really over-boost them to get anything.
+*stars are brighter in space than on the ground, but a quick search suggests it's only about 1-3 times brighter

@@ -1,0 +1,65 @@
+## Star Citizen Patch 3.18.0-PTU.8346551
+Alpha Patch VERSION 3.18.0-PTU.8346551 has been released to the PTU, and is now available to test!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US/EU
+Database Reset: Yes
+Long Term Persistence: Enabled
+Account Copy: Disabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations | Time Trials
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Scanning not showing advanced statistics and details
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- Salvage / Hull Scraping - Nomad - Some sections of the hull show as valid but do not allow salvage
+- Salvage / Hull Scraping - Crusader C2 Hercules  - Some sections of the hull are exceedingly difficult/impossible to salvage
+- Salvage / Hull Scraping - Anvil Carrack  - Sections of the hull show as valid but do not allow salvage ; Some only salvage when beams are offset ; Some show as valid but do not allow salvage
+- Valkyrie bottom turret locks and makes player invisible
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Ships - Quantum entanglement - hostile indicator - QED does not mark ships as hostile
+- Multivehicle EU - Stanton - Vehicles - Destroyed ship thrusters will still not function after being repaired
+- Cargo - Performance - Fully loaded C2 landed at Area 18 results in Slow Framerates or Crash
+- Vehicles/IFCS - When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Trading - Cargo / Commodity Kiosk - Cargo invisible in multiple ships after being purchased
+## Feature Updates
+Gameplay
+- Prison Kiosk Location change
+Moved ore and contraband kiosks into mines. There is now three in the first chamber of each mining route rather than at the entrance to the hub. This is to reduce ganking at the one chokepoint where players can drop off goods
+- Race Track Progression Reenabled
+Re-added Racing Time-Trial reputation progression. This progression starts at the Lorville Outskirts Racetrack and unlocks subsequent racetracks as you gain reputation. Reputation earned increases based on medal bracket.
+## Bug Fixes
+- Fixed - Actor Feature - Inventory - Equipped gear can be lost when player dies in armistice zone
+- Fixed - Exploit - Character Repair - After the player bedlog offline in a starship, and the player initiates a character repair which will create duplicate starship components at home primary residence inventory
+- Fixed - Mission Content / AI - UGF Raid - Bunker / UGF mission NPC kills are not always recorded
+- Fixed - Esperia Blade - Vehicles / Art - There are ReplaceMe textures present across the front and cockpit of the ship, as well as its weapons
+- Fixed - Law System - Users spawn in prison with weapons and armor after dying with crimestat
+- Fixed - MULTIVEHICLE - Ships - Ship Features - UI - Interaction Mode / Inner Thought - Most ship beds no longer have PIT options to interact
+- Fixed - Mission Content - Mercenary - Unable to complete Security Work Assessment, Hostile counter is increasing but no more are spawning
+- Fixed - Shops - Props / Flair - Stormwal Plushie - Stormwal Plushies are shelved in the Kel-To shop's cooled food shelves
+- Fixed - Derelicts - Missions / AI / Locations - Once a mission has been completed at the settlement the AI will not respawn for the next mission resulting in it completing upon reaching the location
+- Fixed - Everus Harbor - Locations/Collision - Player can get stuck between the inner corner of a wall and the foliage of a plant pot.
+- Fixed - ArcCorp - Area18 - Shopping / Locations - There is an empty food rack on the counter of Cubby blast
+- Fixed - MISC Prospector - Ships / Vehicles / UI / Mining UI - The Player cannot Activate Mining Consumables
+- Fixed - Mission Content / AI - Underground Facility (UGF) - Kareah Boss AI is able to spawn at UGFs
+- Fixed - Anvil Valkyrie is missing ballistic damage armour reduction
+- Fixed - Multivehicle - Vehicles / Cargo - Cargo snapping box helper is invisible when outside of Ship
+## Technical
+- Fixed 2 Client Crashes

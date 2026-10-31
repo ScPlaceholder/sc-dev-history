@@ -1,0 +1,4 @@
+Hi Drev4r,
+This isn't actually a second layer of terrain, and is just a second and optional render-pass for the terrain used to improve performance. It's called a "depth pre-pass", and it's where you render a cheaper unshaded version of an object first, and this is then used to occlude further objects behind it. This avoids the situation of having to do complex shading on objects only to then stomp over those pixels with a closer object. We only perform this depth pre-pass on objects where we consider there will be a net performance gain, because there's obviously a cost to this extra pass. For the case of terrain, the depth pre-pass disables the displacement mapping to make it cheaper, and this results in the terrain appearing lower (and flatter), and while this means its not a true match for the shaded terrain it still allows larger hills to properly occlude other parts of the terrain or other objects.
+Ali Brown
+Director of Graphics Engineering

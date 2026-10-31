@@ -1,0 +1,6 @@
+Thanks! That thread was very interesting. So it does seem like there may have been some driver shenanigans, and possibly when combined with a game like ours which has a fairly huge number of shaders we‘ve had many people experiencing this nvidia shader optimising process running in the background, introducing stuttering.
+I’d have presumed this would eventually settle, but if the cache is being wrongly cleared then this would explain the reported permanent frame rate drops. Another possible explanation is the cache has hit some limit and so doesn’t perform any more optimising, but with the manually increased cache size it’s free to complete the building of the more optimised shaders, leading to better performance.
+Either way, there’s not much we can do about it, other than use fewer shaders (something we want, but is quite a big task). I’m tempted to monitor the size of that folder and report it in our debug display, as this might help us spot future issues.
+Cheers!
+Ali Brown
+Director of Graphics Engineering

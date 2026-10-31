@@ -1,0 +1,19 @@
+## 05/10/2026: (Star Citizen 4.10.2)
+New: VR now has its own zoom, which works by narrowing the field of view. As this is rather unusual for VR this is meant to be a temporary solution for scopes until we have fully physicalized Scopes.
+The view zooms in automatically when your view is aligned to the zoom direction. I eagerly await your feedback to improve and tune it as necessary. It's enabled for:
+- F Interaction Zooming
+- ADS / Precision Targeting in ships
+- FPS weapon scopes
+A new Zoom Gameplay Strength option controls how strong the zoom is. Set it lower to reduce the effect, or set it to 0 to turn VR zoom off completely.
+Advanced users can use these cvars for a more customized experience:
+- r_StereoZoomScopeMin (1.0): scopes at or below this magnification don't zoom.
+- r_StereoZoomHeadTrackingRotationScale (1.0): makes the view turn less than your head while zoomed, to reduce discomfort. 0 turns it off.
+- r_StereoZoomLockAngle (10): how close (in degrees) your head must point to your aim for the zoom to apply.
+- r_StereoZoomLockReleaseScale (1.5): extra margin before the zoom releases, so it doesn't flicker.
+- r_StereoZoomScopeAlignDistance (0.04): how close (in meters) your eye must be to the scope's line of sight.
+- r_StereoZoomSmoothTime (0.2): how many seconds the zoom takes to ease in and out.
+Bug Fixes
+- Fixed some UI icons disappearing after their spawn animation.
+- Fixed mouse smoothing and acceleration resetting when switching to VR.
+- Grounded Look now uses your aim direction for hand mining and similar actions.
+- In Freelook (Z), you can now aim the tractor beam with your head.

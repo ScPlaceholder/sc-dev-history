@@ -1,0 +1,62 @@
+## I just want to shoot other spacemen in the face. Is that too much to ask?
+## Jason Hutchins, reporting for duty.
+What can I say? Another week where devs across the company are working hard on stabilizing our development branch. Most of this week was fixing crashes, blockers, and continuing work on server stability. This morning ATX QA staff enjoyed the Star Marine Free Play mode on a release build connected to the very servers we hope you’ll soon be playing on! This is great progress, and another important step towards being ready to push to our Public Test Universe for all you backers to play.
+Early in the week we discovered the reason for recent gun handling and ADS problems: a joint that wasn’t being exported properly that related to hand inverse kinematics on the new character rig. After identifying the missing joint, we fixed up the problem tool, and started the process of re-exporting the rig and testing the assets. Once the animation assets are done, code will need to be adjusted to handle the transitions between animations. We do this in code so we don’t have to create bespoke animations for each weapon. It’s another way we work to streamline all aspects of production.
+I’ll give you an example. The ATT-4 rifle, the Devastator shotgun, and Laser sniper all share the stocked weapon animation set even though they have slightly different primary hand positions on the weapon and wildly different support hand animations on the weapon. Another example is the camera position in relation to the player’s head and optics or sight system on the weapon are all very different. Once the code is complete, designers will be able to tweak some values in relation to speed to ADS, DoF changes, zeroing, etc.
+The re-export of the animations for stocked weapons is finishing up today. Pistols will finish up early next week. Once all of that is done, we’ll be able to a have the player models hold weapons properly, animate in ADS and firing. As you can imagine, trying to play the game without being able to accurately shoot is not very fun. Our goal is to get another internal playtest going as early as possible.
+Begun the Thumb Wars Have
+Now, recently Chris talked about a way for players that want to have a more pacifistic experience in our persistent universe to settle disagreements via the use of thumbwar. QA was able to do an initial test of that system today, and I’ve attached a screenshot so you can see the first phase of thumbwar: initial hand placement. If you are familiar with arm wrestling at all, you know how important initial positioning can be. Future phases will utilize the HAT thumb-stick on your HOTAS set-up, to move your thumb, and you’ll press the hat to deploy your thumb and force your opponent to submit.
+That paragraph was a test to see if anyone is actually reading these things…
+I kid, I kid! What that picture really shows is a bug that occurs when you don’t have a weapon equipped in the loadout where we are still playing the stocked weapon animations. Two bugs really. We need to make the UI not allow you to choose no weapons for a match, and the other bug is to properly default to no-weapon animation set when your hands are empty.
+One nice thing I want to point out is that Ladders, which were previously having lots of issues especially in networked games, seem to be in pretty good shape. Character locomotion in both 1st person and 3rd person cameras is looking much better on ladders, too. At the bottom of this post is a short video so you can see for yourself. Please ignore the floating Medpens hanging off he player’s left thigh. We’ll fix that next week.
+Besides fixing lots of blocker issues, missing assets and crashes this week, we did many other things outlined below:
+## Gameplay Engineering
+- Lots of crash fixes and network support to get the game running this week.
+- Fixed a crash with the personal shield & hologram gadgets
+- Continuing work on the weapon ADS issues with hand IK. There are some tricky math problems in the way we handle this IK. One of our CryEngine animation specialists, Ivo, will be looking into that over the next couple of days.
+- Continuing work on the decibel system for radar. Gadgets, grenades and guns are all hooked up. Working on the player movement triggers now.
+Light Marine WIP HUD
+Medium Marine WIP HUD
+Heavy Marine WIP HUD
+Light Outlaw WIP HUD
+Medium Outlaw WIP HUD
+Heavy Outlaw WIP HUD
+## UI
+- Fixed the hit indicators as they weren’t showing in Game-Dev (the swf needed recompiling) – needs testing.
+- Fixed a problem with new ammo & magazine counter display widget.
+- Implemented the kill feed widget and added the player join message.
+- Fixed over scaled radar in helmets.
+- Moving around the widgets of the HUD – each helmet type was finished today. I’ve included WIP screenshots of the helmet positions here.
+- Fixed a few asserts that were happening from things in the visor.
+- Fixed an issue where some of the helmets (medium marine and all outlaw) were pointing at the wrong flash setup.
+- Looking into the line work being set incorrectly for helmets when in multiplayer.
+- Awaiting design feedback from Todd about the reload button prompt and also the HUD ECG line as Luke H would like to add audio to it.
+## Art/Weapons
+- Ze’ev at Illfonic started working on the new AOD (Area of Denial system) gadget this week. He’ll continue working on this gadget through next week.
+- Lee did a first pass on Sniper Rifle vfx, and artists at SQ42-UK are doing final passes on the vfx this week, and syncing up with the UK audio team to mix sound with it.
+- During a performance testing pass, we discovered that there several 4k textures on all of the weapons and gadgets that did not need to be so large. Ze’ev has fixed these is testing them now. This will help with performance on any map that uses FPS weapons and gadgets.
+## Animation
+- Starts, Stops and Steps are in for the Stocked motion set.
+- Getting a pass from QA, then some slight polish before getting feedback.
+- Jukes have been temporarily removed in preparation for the PTU launch. We will continue juke R&D work and will add this back in a future release.
+- Working on weapon setup in mannequin.
+- Double checking on right weapon bone/locator for pistol locomotion set.
+- Continued re-exporting all i_Cafs (animation files) for hand IK. Stocked should be finished by EOD and will start on pistol set next week.
+- Investigating grenade throw anim issues, this is one of our PTU blockers. Throwing grenades puts you into a default T-pose at best or will throw the grenade in unexpected directions.
+## Audio
+- Finished bullet/laser crack by sounds.
+- Done the draw/holster implementation for the sniper rifle.
+- Changed “managedAudio Object” on the audio anchors point on the prefabs to better manage audio leaks of virtual voices.
+- Done a first pass implementation of the sniper overheat to match new visuals and a fix in the audio code to finalize.
+- Working on an audio pass for gadgets.
+- Started working on the footsteps and Foley for the ladder animations – there’s a bug here with audio being triggered multiple times.
+- Working on audio for the energy weapon recharge station, will need coding support with flowgraph set up.
+- Will work on bullet cases next week, ties into work needed to have sounds attached to grenade bounces.
+- Submitted work on the code for the medpen sounds.
+- Working on the radar displaying audio generated from other players.
+- Finishing putting in the music into the lobby.
+- Tried to fix up the walk animation audio as it’s missing 4 of the 6 triggers in the animation cycle.
+- Finished the code for the downed (injury) states and now a start on UI audio code.
+- Put the metal sound effect in as the default footstep audio for FPS as a backup.
+## So when do we get to play Star Marine on the PTU?
+Overall, it’s been another week of terrific progress. I’m proud of this team and the things we’re accomplishing as each day we move closer and closer to an initial PTU push. At present, we’re working on a patch release based on the new code-base for Star Citizen. We’ll need your help testing Star Citizen’s new code base and server changes in 1.3.0 and we hope you’ll get that very soon. If Star Marine is in the bare minimum shape to release it to you on PTU we will include it in 1.3.0. If it isn’t, we’re going to hold it until we feel it is. These are the hard choices, but it’s important we have something that you can test for us effectively before we go to PTU. Just know that everyone here wants this in your hands as much as you do, and we look forward to everyone seeing the very first iteration of Star Marine as soon as we can. It’s almost here!

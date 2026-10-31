@@ -1,0 +1,60 @@
+## Star Citizen Alpha Patch 4.3.0
+Alpha Patch 4.3.0 has been released to all backers! Patch should now show: VERSION 4.3.0-PTU.10053562.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, unstowed vehicles, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Territory Configuration: 7:3:600 (Updated Territory Config)
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Onyx Facilities
+- Mission Distribution Updates
+- Hangar Spawning
+- Dynamic Snow
+- Light Fighter Tuning Changes
+- VOLT Laser Sniper "Zenith"
+Not Ready for Testing or Feedback
+- Additional Wikelo Special Ships
+- Additional Player Hairstyles
+## Known Issues
+- PU - Pyro - Executive hangar Pyam Exchange entrance can be blocked off breaking access to the location forever (Fixed in next build)
+- PU - Design / Locations / Live Services - Players can spawn in the center of Pyro or Stanton after selecting their Primary Residence
+- PU – Stanton – New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- PU - Lorville / Maria Pure of Heart - Locations / Art / Collision - The floor at the lobby of the hospital has no collision
+- PU - Stanton / Pyro / Multi Location - Ladders v2 - Locations / Actor / Traversal - Various ladders do not allow the player to climb them fully to the top
+- MultiWeapon - PU - Weapon / Graphics - Inventory / Backpack Reloading - Weapons reload invisible magazine when reloading from backpack (alt+1 to respool until you can store the weapon in a locker and re-equip)
+- PU - Stanton - Onyx Facility - Mission Content / mobiGlas / UI - The Player cannot Set Route to the Delivery Locations for ASD Missions
+- PU - Onyx Facilities - Mission Content / UI / Shipping & Delivery Kiosk - There is a chance that Covalex Kiosk screen will be stuck on "Please Standby" after pressing the "Drop Off"
+- PU - Onyx Facility - Phase2_M1 / Phase2_M2 / Phase2_M3 - Mission Feature / mobiGlas / Markers - Mission objective differs to the location of the NavMarkers in the contract
+- PU - Stanton - Onyx Facility - Locations / Transit - Elevator Carriages are not present if player spawns at ASD Onyx Facility
+- PU - Stanton - Onyx Facility - Art / Locations - "ASD" NPCs are spawning with incorrect loadouts
+## Features & Gameplay
+Gameplay
+Onyx Facility Polish
+Further Onyx Facility Art, Lighting, Audio, VFX, and Performance Polish
+- Extensive music system updates including combat edits, transition rules, streaming setup
+- Balanced mission payouts
+- Lobby & Signage: Multiple branding updates and signage fixes
+- Power Hub: Scaffolding refinement, tunnel room work, lighting cleanup
+- Lab Areas: Gravity room lighting polish, ship room combat lighting
+- Material Updates: Rock tweaks, caustics texture improvements
+- Room Closeout: Final art passes on various rooms
+- Elevation Room: Visual noise cleanup, mesh count reduction, better wayfinding
+Ships and Vehicles
+- Ships added to shops: DRAKE Golem, MISC Fortune, Mirai Guardian, ANVIL Hornet F7CS Mk II
+Core Tech
+- Added Dynamic Snow to Bloom
+- General Performance Optimizations
+## Bug Fixes
+- Potential Fix: PU - Onyx Facility - Missions - Phase 1 - Party member rejoining after exiting to menu causes the "Leave Onyx Facility" objective to not complete after all party members have left the mission location
+- Potential Fix: Geist Helmet Series - PU - Armor / UI - Dynamic Crosshair is not present with Geist Helmets (STARC-176085)
+- Potential Fix: PU - Onyx Facility - Phase 2 - Mission Content / Interactable - The maintenance terminal dispenses the hard drive in a vertical position
+- Potential Fix: PU - Lorville / Maria Pure of Heart - Locations / Art / Collision - The floor at the lobby of the hospital has no collision
+- Potential Fix: Multi-Location - PU - Stanton - Onyx Facility - Atc / Locations - Should a player enter a non party members hangar they will be repositioned on top of the ASD facility structure (Should now teleport into Lobby)
+- Potential Fix: PU - Stanton - Locations - Onyx Facility - Elevators - Research Wing Elevator internal gates do not open (STARC-176440)
+- Potential Fix: PU - Orison - Missions - New Player Experience / Tutorial - The tutorial mission for Orison did not activate upon loading
+## Technical
+Tonight's build contains partial fixes for audio client crashes while using ships. We are expecting some more to still occur but should be greatly reduced
+- Fixed 1 Client Crash

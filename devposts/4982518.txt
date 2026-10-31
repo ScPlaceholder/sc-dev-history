@@ -1,0 +1,20 @@
+Following our first Alpha 3.17 Patch Watch last week, we're following up with more details of features you'll experience in the 'verse soon.
+Turret Stagger Rework
+Previously, all weapons would stagger by weapon group, with the lower RPM weapon setting the stagger rate. Now, weapons will stagger by weapon type and then weapon group. This means that stagger rate will be calculated for each weapon type within a group. However, only weapons up to a fire rate of 750 RPM will stagger (it doesn't make sense for higher RPM weapons to stagger due to the stagger rate being too high to notice a difference). Also, pilots can now stagger their weapons alongside turret gunners. There is currently no default key binding for staggered firing in pilot seats assigned.
+Cluster Missiles
+Cluster missiles now launch their mini-missiles again, doing so when close to their target (below a specific time to impact). If they were dumb-fired or lost their target, they will launch their mini-missiles after a few seconds. In addition, missiles with no target will now attempt to fly straight instead of maintaining their angular momentum (so should no longer fly in circles).
+Quality of Life Changes
+IFCS: A ship's afterburner will now only drain when actually thrusting, while enabling cruise control when decoupled will force coupled mode on.
+We also added an optional weapon keybind to fire all weapon groups at once. To assign a keybinding please launch the game, click Options, Keybindings, and then on Advanced Controls Customization at the bottom left. In the Vehicles - Weapons tab, you'll find Fire Weapon All.
+Ground Vehicle Signature Emissions Changes
+We have adjusted ground vehicle signature emissions so that they are more difficult to detect at increased distances.
+Physicalized Ship Components
+We completed a major overhaul on ship personal inventory storage to accommodate the recent addition of ship components to the inventory. These changes will allow you to move ship components and weapons to different inventory spaces, including into ships, and transport them to other locations. As part of this update, all ship components have been given new SCU sizes relative to their game size.
+To better allow players to transport these components, ships have had their personal inventory sizes increased. However, you may need a larger ship to transport larger components. As a note, this is a temporary measure while we await the cargo refactor.
+Quantum
+Quantum has now been integrated into the backend of the game in a very limited fashion for testing.
+It is now simulating NPCs purchasing quantum fuel, regular fuel, and repairing at stations, which players will notice primarily via the prices of those three commodities fluctuating more than before.
+In addition, Quantum is now impacting the frequency of certain environmental missions in certain areas (mostly around rest stops), such as the pirate scout EM, freighter EM, and a few others.
+Ability to Disable Camera Spring Movement
+While in third-person mode, the camera spring can add dynamic motion when a vehicle is moving. However, sometimes this isn’t desirable, particularly when trying to get long lens shots where even the smallest movement is greatly exaggerated.
+Turning the camera spring off will disable this extra motion and keep the camera perfectly locked in place relative to the vehicle.

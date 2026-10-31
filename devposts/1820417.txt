@@ -1,0 +1,30 @@
+## Star Citizen Patch 3.4.0l
+Alpha Patch 3.4.0l has been released to the PTU, and is now available to test!  Patch should now show: PTU-1028053.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- New Ships: Hawk, Freelancer variants, 600i Touring
+- Lorville Central Business District
+- Hurston mission variants (bounty missions, downed relay missions, FPS AI missions, delivery missions, scramble races)
+- Mission Givers: Wallace Klim, Clovus Darneely
+Major Known Issues:
+- Mission markers will sometimes fail to appear. W/A: On the mobiGlas, untrack and retrack the mission to generate a marker..
+- The 600i's lifts are currently not functioning.
+- VOIP/FOIP is currently not functioning.
+## Feature Updates
+General
+- Numerous improvements to C. Hurston.
+## Bug Fixes
+- Wallace Klim should no longer be occasionally facing the wrong way.
+- The assassination mission around Hurston should now get an objective after accepting.
+- AI ships should no longer appear to not respond or engage.
+- FPS AI should no longer appear to not respond or engage.
+- The Ruto hologram should now work.
+- Fixed missing screens inside the Transfers Exchange.
+- The delivery lockers should no longer become stuck open if the player abandons the mission.
+- The relay panel should now be interactable on associated missions.
+Technical
+- Fixed 2 server crashes.
+- Fixed 3 client crashes.

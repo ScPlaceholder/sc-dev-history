@@ -1,0 +1,93 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9372109.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel - US servers Only
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Zeus ES & CL (Evocati and owners will receive these in the build)
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- Quantum Fuel Adjustments
+- New Arena Commander Updates
+## Known Issues
+- Multivehicle - PU - Vehicles / Vehicle Components - Quantum Drives - Cannot initiate quantum jump (low chance STARC-131460)
+- QT Workaround: De-allocate all power from systems in power management Re-allocate power to Quantum Drive and other systems.
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Locations - Hangars / Network - Hangar at Baijini Point is despawning whilst the player is using the area, without external factors, leaving them stuck inside LEO geo
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+## Features & Gameplay
+Locations
+- Hangar Cargo Platform Lighting Polish Pass (work in progress to increase lighting)
+Gameplay
+- UI Readability Improvement Polish
+Made numerous updates to Holographic MFD visuals and other holographic elements to improve legibility. Improved legibility of Many HUD Elements. Scale down chromatic aberration on lower resolutions / factor in chromatic aberration options setting. Magnification hookup setting for Aiming Elements. Fixed TVI Opacity Logic. Crosshair Contextual weapon ammo counts. Aiming UI: Sized elements based on frustum ratio instead of absolute pixels but keep line widths and text sizes sized to pixels. Updated vehicle objective quad to be chevron instead. Added new AR geometry material, updated markers, and offscreen marker material. Updated contextual weapon info. Made further reticle visual improvements. Radar Visibility Polish: Shrink radar sphere of screen radar and increase/improve clarity of markers and other elements to compensate.
+- Hangar Spawn Logic Updates
+When retrieving ships into newly created persistent hangars, we now also check for existing vehicles and store them. Also, when despawning ships we wait for async response to the vehicle owner query - (else we'll destroy ships where that's not been received yet). This avoids ships clipping into each other after spawning them into non-empty persistent hangars.
+- Quantum and Hydrogen Refueling Times Temporarily Set to be Instant
+- Improved Item Kiosk Camera Positioning
+Ships and Vehicles
+- Hornet Series Lighting Polish
+Adjusted the blue lights on the canopy to not be blinding (all hornets). Removed the canopy annuciators on the f7cm and added the new ones to the dashboad screens. Made general lighting tweaks inside the F7cm.
+- RSI Mantis Polish
+Reworked MFD and associated material to resemble those of other RSI ships. Moved MFDs up in order to be in view when player is looking straight ahead.
+- Zeus ES/CL Reduced headlight and landing light intensity and FOV
+- Zeus ES/CL Claim timers and Cost Polish
+- Zeus ES/CL HUD/MFD Polish
+- Titan Renegade claim time and price adjusted
+- Annunciator Panel Audio Polish
+Weapons and Items
+- Multi-tool UI Polish and Added Repair tool UI to show part maximum repairability
+Core Tech
+- Graphics Options Changed to Make Fullscreen Borderless the Default Option. Removed outdated Fullscreen Option.
+## Bug Fixes
+- Fixed landing services reading fuel increments incorrectly causing abnormally high costs
+- Fixed - [PU/AC] - Vehicles / Shields - Some ship shields do not protect the ship and weapon fire goes right to hull damage with shields on
+- Fixed - PU - Weapons - Shopping - There is no P8-AR ammunition being sold in the PU (STARC-130627)
+- Fixed - PU - Stanton - UI / Performance - Turret UI names are being shown around Points of interest causing framerate drops (STARC-130999)
+- Fixed - Multivehicle - PU - Vehicles / Ground Vehicles / UI - Resource Network - Targeting Pips are not present for all ground vehicles
+- Fixed - Chat window always visible while in a pilot seat (BUG-202199)
+- Fixed - Multivehicle / ARGO ATLS - PU - Mounts / Vehicles - Components - Tractor Beam - Vehicle-mounted tractor beams cannot reliably move the ATLS (STARC-127336)
+- Fixed - Drake Interplanetary Cutlass ALL Variants - PU - Stanton - Vehicles - Cutlass door cannot be closed using the button near rear ramp (STARC-132190)
+- Fixed - Anvil Carrack - Vehicle / Visarea - Carrack Top Hangar is visually missing when fully closed and viewed from the Interior (STARC-130278)
+- Fixed - Origin Jumpwork 890 Jump - PU - GFX / VisArea - Vehicles - 890 jump has multiple Visarea issues on the interior of the ship (STARC-105171)
+- Fixed - Multivehicle - PU - Vehicles/UI - Scanning - Scan results are not populating (STARC-130434)
+- Fixed - Zeus interior ramp control panel does not have an interaction prompt
+- Fixed - PU - Stanton - Weapons / UI - Shopping Kiosk - MaxLift Tractor Beam battery named as Gallant Rifle Ammo on shop Display (STARC-93901)
+- Fixed - PU - UI - mobiGlas / Visor & Lens / Minimap - FPS / on foot navigation does not have route (STARC-130699)
+- Fixed - PU - UI / Interactions - Vehicle - Drake Cutlass Blue - There are currently no interactions on the vehicle dashboard to activate and control the vehicles Quantum Enforcement Device
+- Possible Fix - PU - Vehicle feature - UI/AR Markers - Snare Event Markers do not appear when another player is snared (STARC-125995)
+- Fixed - Origin Jumpworks 300series - All RSI website Customized Variants - PU - Vehicles/ UI - 300 series that are customized through RSI website for additional flair items does not have any flight HUD/UI (STARC-111758)
+- Fixed - PU - Stanton - Small Hangars - Pulling a new ship with one already present will cause the new ship to spawn on the ship elevator doors and fall through. Hangar ASOP only. (STARC-131902)
+- Fixed - PU - Stanton - Locations / Collisions - Invisible wall in large hangars near freight elevator kiosk (STARC-130081)
+- Fixed - Multivehicle - PU - Vehicles / UI / MFD - Staggering Fire and Larger Aiming UI Options missing from Vehicle Configuration Screen
+- Fixed - Banu Defender - BANU_Defender.xml - PU - Vehicles / Design - VLM missing 'Liveries' section for Banu Defender (STARC-131277)
+- Fixed - Crusader Spirit - All Variants - PU - Vehicles / Graphics - Terrain and structures are culling in the lower left of the cockpit view (STARC-131898)
+- Fixed - Aegis Vanguard ( Some Variants ) - PU - There is a visarea issue that affects the shower/bathroom door and the inside of the room when looking out (STARC-130078)
+- Fixed - PU - NPE - Missions - Multiple Locations - Tutorial does not progress after leaving the HAB elevator (STARC-130065)
+- Fixed - Argo ATLS - PU - Actor / Mounts - Actor turn stop anim causes the player to unnaturally squat into the geo of the ATLS
+- Fixed - Vehicles / Physics - Crusader C1 Spirit - When the ramp is lowered the vehicle can drift/slide as the ramp makes contact with the ground plane
+- Fixed - Multivehicle - Vehicles / UI / MFD / HUD / Inner Thought - Holding F and Right Clicking the Radar does not lock the zoom on some ships
+- Fixed - RSI Ursa ALL Variants - PU - Resource Network - Ground vehicles - MFD / Weapons / Power Management - Vehicle is absent of Weapons power column in Power Management
+- Fixed - Resource Network - Ballistic weapons are still able to fire even when no power pips are assigned
+- Fixed - Aegis Dynamics Hammerhead - PU - Vehicles / MFD - Flight Stick is blocking player view of MFD screen
+- Fixed - PU - Resource Network - Ships / Vehicles / Game Code / Multivehicle - Ship Turrets MFD's and Pilot seat MFD's are blank
+- Fixed - Multivehicle - PU - Vehicle Weapons / UI - QED / EMP - Utility weapons share the same ammo type in the Weapon config MFD
+- Fixed - Vehicle Art - PU - Mantis - Mantis MFDs flicker on/off when boosting and completely flicker off when going into mobiglass
+- Fixed - PU - Stanton - Distribution Center - Locations / Art / Graphics - Distribution Centers have a lot of assets with ReplaceMe textures
+- Fixed - Banu Defender - PU - Vehicles / Art / Graphics - VisArea issue at pilot and co-pilot doors
+- Fixed - Greycat Some Variants - PU - Vehicles / MFD / UI - There are Green MFD Screens When Spawned and Driving
+- Fixed an issue causing fullscreen borderless to minimize when going out of focus
+- Fixed - PU - Stanton - Blockade Runner - Mission Content - Some objective ships can spawn with no Zeta-Prolanide on board (STARC-124451)
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 8 Server Crashes
+- Fixed a Server Deadlock

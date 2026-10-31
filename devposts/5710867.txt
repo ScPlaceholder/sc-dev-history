@@ -1,0 +1,72 @@
+## Star Citizen Patch 3.18.0-PTU.8352563
+Alpha Patch VERSION 3.18.0-PTU.8352563 has been released to the PTU, and is now available to test!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 2
+Server Region: US/EU
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- Salvage / Hull Scraping - Nomad - Some sections of the hull show as valid but do not allow salvage
+- Salvage / Hull Scraping - Anvil Carrack  - Sections of the hull show as valid but do not allow salvage ; Some only salvage when beams are offset ; Some show as valid but do not allow salvage
+- Derelicts - Missions / AI / Locations - Once a mission has been completed at the settlement the AI will not respawn for the next mission resulting in it completing upon reaching the location
+- Derelicts - Missions / AI / Locations - If reinforcements do not leave the ship they will be counted towards the hostiles remaining total even once the ship has left resulting in the mission being incompletable
+- Valkyrie bottom turret locks and makes player invisible
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Ships - Quantum entanglement - hostile indicator - QED does not mark ships as hostile
+- Multivehicle EU - Stanton - Vehicles - Destroyed ship thrusters will still not function after being repaired
+- Cargo - Performance - Fully loaded C2 landed at Area 18 results in Slow Framerates or Crash
+- Stanton - Law System - Users spawn in prison with weapons and armor after dying with crimestat
+- Trading - Cargo invisible in multiple ships
+## Feature Updates
+Gameplay
+- Reverted GForce Values back to 3.17 model
+Ships and Vehicles
+- Added Avenger Renegade, Sabre Comet, Gladius Valiant, C8 Pisces, F7C Wildfire, MISC Hull A, STV, and RSI Scorpius into in-game shops
+Core Tech
+- Widescreen QoL Changes
+Addition of some quality of life changes for Widescreen monitor players. Keep vertical FOV but scale horizontal FOV if resolution becomes ultra-wide. Updated FOV slider with new values for current resolution. Added new 32:9 Aspect Ratio in FovGlobalSettings which had a too narrow one being calculated resulting in a clipped visor. Completely disabled the behavior that the chat moves down when entering a ship, since it's not very useful and can even be reset when resolution changes. Inventory overhaul for widescreen with items and scaling no longer being cropped on ultra widescreen resolutions.
+## Bug Fixes
+- Fixed - MULTIVEHICLE - Vehicles/IFCS - When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Fixed - Drake Caterpillar - Vehicles / Art / Graphics - Caterpillar body has a large Visarea when viewed from the Cockpit
+- Fixed - R&R - Art / Locations - Refinery Decks have multiple ReplaceMe textures
+- Fixed - Klescher Rehabilitation Facility - Mission Content / UI - Prison escape mission is lacking text on the waypoint for the Datachip collection
+- Fixed - Klescher Rehabilitation Facility - Actor Feature / Characters - If player enters prison naked they will leave prison with prison loadout equipped
+- Fixed - Multilocation / Multivehicle / Terrain - Vehicle tires sink into planet surface and are no longer able to move
+- Fixed - EXPLOIT - Economy - Item Shop - Vehicles / Components - Players can sell unequipped stock vehicle components and claim the vehicle to repeat sale indefinitely
+- Fixed - 890 Jump - Ships - Ship Features - Art - Graphics - There are numerous panels and doors throughout the 890j that exhibit VisArea Issues
+- Fixed - Law and Criminality - UI / Terminals ( Law ) - If a player with CS3+ pays off their fines they are still able to surrender to the terminal
+- Fixed - UI - FPS UI / mobiGlas - Accepting a mission while in party removes party markers
+- Fixed - Mission - Boarding Action in Progress can become uncompletable
+- Fixed - Salvage / Hull Scraping - Crusader C2 Hercules - Some sections of the hull are exceedingly difficult/impossible to salvage
+- Fixed - Security Post Kareah - AI / Mission Content - The boss does not spawn in Kareah after a number of enemies have been eliminated
+- Fixed - Ship - Port Olisar / ASOP - Retrieving a ship can potentially spawn it on the wrong pad instead of where it should be
+- Fixed - Mercenary Missions - Security Work Asses./Protect Site - Remaining Hostile NPCs Not Spawning In
+- Fixed - Security Post Kareah - Evidence room datapad will not display the 0 in the door code if it is the first digit
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 10 Server Crashes
+- Fixed a Server Deadlock

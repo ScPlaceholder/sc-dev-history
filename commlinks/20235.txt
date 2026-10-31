@@ -1,0 +1,35 @@
+Squadron 42 Monthly Report
+September 2024
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 10:02:2024
+REF: CIG UK, CIG DE, CIG LA, CIG TX,
+FAO Squadron 42 Recruits.
+Welcome to September’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including narrative scenes, zero-g traversal, and corpse details.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI Tech
+Last month, AI Tech enabled the designers to set default schedule areas and tags on instanced NPC entities and then export them in object containers. This makes it easier for levels with preplaced NPCs, as information is no longer required to pass through scripting. Navigation cost volume can now also be enabled and disabled through flowgraph nodes and modify its initial cost at runtime.
+On the performance side, further improvements were made to the vision, observable, and perception components. For example, update frequency was adjusted based on AI character LOD, so that closer entities are more responsive. The team also implemented lighter AI zone handling for observables, which will deliver significant improvements when zone queries are made by NPCs.
+## AI (Social Strike Team)
+The narrative designers spent September working on key social scenes. On the AI side, the team polished locations and added additional life via utility behaviors – locations worked on include a ship's hangar, gym, bridge, barracks, bathrooms, and mess hall.
+## Animation
+September saw the Animation team improving on the zero-g flow. They also adjusted weapon reloading, first selects, and how players interact with the environment to improve overall combat AI, while code was updated to fix various cover bugs.
+The Facial team progressed through the remaining animations for the game, which is nearing completion. They will then transition to improving all facial animations, starting with the key cast characters.
+The Mo-Cap team assisted the Gameplay team with Body Type 2 animations and captured additional data for various gameplay story sections.
+## Art (Environment)
+Environment Art focused on key chapters, pushing the boundaries of art and lighting for a high-fidelity cinematic experience. They also looked at dynamic environmental destruction and continued to flesh out planet-side content for chapter seven.
+## Gameplay Story
+Gameplay Story’s priority in September was supporting wider efforts to polish. Alongside this, they used new mo-cap to significantly improve two scenes in chapter four. The team also looked closely at chapter five, restructuring a complex scene featuring three characters meeting with variable timing.
+“This previously looked a little disjointed depending on the timing of the meeting. However, following reorganization and new mo-cap, the scene is looking much better and is far more robust.” Gameplay Story Team
+A number of scenes in chapter 13 were blocked by a problem with the level, which the devs solved by submitting a setup fix. Following this, numerous updates were submitted and resolved.
+Gameplay Story continued making steady progress on additional scenes in chapter 15, implementing a significant amount of performance-captured data.
+## Narrative
+Following improvements to the scanning mechanic, the Narrative team spent time fleshing out information for corpses that players will encounter during the game. This also exposed some improvements to how scanning information is applied so that it can be properly localized into other languages.
+Additionally, the team had several meetings to perform a moment-by-moment analysis of one of the more narratively intense levels to refine the dialogue, environmental storytelling, and enemy behaviors to ensure that they all work together. This resulted in various adjustments, including the timing of specific dialogue triggers and the location of certain props.
+The team also wrote several dialogue lines for automated systems that play in one of the chapters to contribute to creating the proper narrative atmosphere.
+## VFX
+The VFX team continued working toward their current milestones, supporting the Cinematics, Gameplay, Locations, and Weapons teams with their content deliverables. The VFX team is currently working on optimizations to ensure the best experience for all players.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

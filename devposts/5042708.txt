@@ -1,0 +1,19 @@
+Hey everyone!
+With Star Citizen 3.17 going live soon and the first huge milestone reached for Gen12 we updated our minimum system requirements.
+Our Gen12 implementation for DirectX uses the 11_1 Feature Level which is not supported on older hardware and operating systems. This decision was made to further improve performance and facilitate cleaner code.
+This means that a few of you will no longer be able to play Star Citizen until those specs are met.
+From what we have gathered on the PTU so far this includes Graphics Cards of the NVIDIA 700 series or less.
+Note that Windows 7 does not support this feature level regardless of your GPU, hence 3.17 will not run on Windows 7 anymore.
+Important: We have observed that third-party tools like Reshade or any other program modifying the d3d11.dll can also trigger this error message, so please make sure you don't have any of this installed or enabled before jumping to any conclusions.
+They seem to be a fix going around as well, so try that if you really want to keep ReShade: https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/psa-reshade-does-work-with-3-17-fix-inside
+How do I find out which feature levels I have?
+Press the Windows key, type in dxdiag and run it.
+Go to the Display tab. On the right side under Drivers you will see Feature Levels.
+Make sure 11_1 is listed in there (Image attached for reference)
+If you still hit this issue for some other reason yet to be discovered please let us know in the Issue Council or comment here!
+Also, please attach your gamelog and save the dxdiag output which is very helpful.
+Thanks for your understanding and help
+o7 Silvan
+Official announcement: https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/alpha-3-17-new-directx-minimum-requirements
+Link to Official Minimum System Specs: https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements
+Issue Council for this Issue on PTU: https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-34988

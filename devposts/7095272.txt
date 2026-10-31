@@ -1,0 +1,46 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9278907.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 1
+Server Info: PTU Channel - US/EU
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Blockade Runner will not be run in tonight's build while we focus on further update and fixes to the global mission.
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+## Known Issues
+- PU - Multiple Locations / Transit - At  locations with a Transit Loop, one direction of the loop does not function - 100% Repro
+- PU - Orison - Locations / Inventory - Storage  Access kiosks at The Vision Center at Orison do not display any inventory - 100% Repro
+- PU - Stanton - Orison - Locations / Shopping - Physical Shopping - Quick buying items on display at the Orison Vision Center ends in transaction error about invalid Player Inventory
+- PU - Missions / UI / Reputation - Affinity appears to decrease after successful mission (UI Issue and reputation is still increasing) - 100% Repro
+- PU - UI - Kiosks / Terminals - Global Chat - Pressing Enter when interacting with any terminal opens the Global Chat causing player to lose game interaction - 100% Repro
+- PU - Stanton - GrimHEX - Locations - Transit - Hangar Elevators - Hangar Instance elevators can be called and arrive at the current floor but the doors do not open - 100% Repro
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (High Chance)
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Bug Fixes
+- Fixed - PU - Network / Actor / Locations - Local area is temporarily missing atmosphere after Server Recovery causing the player to take varied amounts of damage (STARC-104335)
+- Fixed - PU - PersonalHangar/ Elevator - Transit - When using the elevator with different size hangar options the listed destinations can take you to different locations than selected (STARC-119899)
+- Fixed Cargo Grid Hardpoint Position - RSI Aurora Series - ( ALL VARIANTS ) - Stanton - Ships - Core Tech - Collision / Cargo - The cargo grid of the Aurora is very difficult to use with a tractor beam and can cause ship destruction (STARC-60944)
+- Fixed - PU - Locations - Personal Hangars / ASOP - After retrieving two vehicles inside hangar and destroy them player cannot retrieve any vehicle
+- Fixed - PU - UI - Item Bank / Storage Access - withdraw - attempting to withdraw items from item storage kiosk results in infinite load
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 6 Server Crashes
+- Fixed a Backend Service Crash

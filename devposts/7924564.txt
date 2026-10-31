@@ -1,0 +1,67 @@
+## Star Citizen Alpha Patch 4.1.1
+Alpha Patch 4.1.1 has been released to all backers to test!   Patch should now show: VERSION 4.1.1-PTU.9750366.
+- Audience: All PTU Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Ship Battle Missions V1 (Patrol, Ambush, and Gilly's Advanced Combat Gauntlet Missions)
+- Repair Missions
+- Animal Missions
+- PVP Bounties
+- Hunt the Polaris Mission
+- UEE Training Mission
+- Fleet Week Halls
+- Wikelo New Rewards
+## Known Issues
+Going into the LIVE release of 4.1.1, we are expecting equipped items  and armor to disappear off the player. This issue is fixed in builds  after 4.1.1 is LIVE but going into this build it will occur.
+We are expecting the new 3d comms calls to work but there's a chance they won't always appear on some sessions. Relaunching the game may help resolve this but we are looking for further updates Friday to help.
+- Critical: PU - Vehicles - Quantum Travel - Client Crash recovery - If there is a client Crash during Quantum Travel and a player reloads into the game the Ship cannot fire weapon, scan, or quantum travel
+- Critical: PU - Area18 - Locations / Transit - Area18 Hab Elevator Carriage does not open at Lobby level
+- Critical: Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Critical: PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- Critical: PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- Critical: Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- Critical: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- Critical: PU - Shopping / Inventory - Purchasing Items in quantities above 1 to Backpack Inventory results in Failed Transaction due to "Invalid Item"
+- Critical: PU - Stanton - microTech - New Babbage - Brentworth Care Center - Medical / Locations - The medical kiosks have an infinite load and do not check players into rooms
+- High: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+## Features & Gameplay
+- Locations
+Opened Wikelo's Showroom to Citizens
+- Gameplay
+Hunt The Polaris
+Hunt The Polaris is now set up to reward all players with scrip instead of just mission leader in advance of any remaining changes to allow it to be accepted by entire server
+- Ships and Vehicles
+- Disabled ATLS Tractor Beam in Green Zones
+- Increased Scorpius and Hurricane Turret Ammunitions
+Ship Weapon Recoil Reactions
+We're testing out recoil for a few vehicle weapons in this release which will visually affect the player when firing certain ship weapons. An option to scale the effects of the recoil and to disable them has been added.
+The following weapons have been equipped with recoil:
+- K&W CF-337 Panther Repeater (S3)
+- A&R XII Cannon (S4)
+- RSI Polaris Cannon
+- Core Tech
+3D Comms Notification Building Blocks Update
+Updating Comms calls with new 3D building blocks updates, passing the character's face and animations through to the viewers during many missions and other communications.
+## Bug Fixes
+- Potential Fix: Multivehicle - PU - Art / Quantum Travel - Multiple Vehicles goes invisible to everyone after travelling to new dgs (STARC-166622)
+- Potential Fix: Multivehicle - PU - Vehicles/ missiles - Cannot flare off missiles when closer than 2k
+- Potential Fix: Multilocation - PU - Stanton - Locations / AI - Social AI - AI are stuck idle in their spawn locations (STARC-104458)
+- Potential Fix: PU - UI / Options Menu - Changing an options slider by any value will lock it to the lowest value (STARC-167212)
+- Potential Fix: PU - Locations - Executive Hangar - Actor / Damage - Comp Boards - The Executive Hangar's death zone remains active after all comp boards are inserted (STARC-166156) (We have lowered the timers on the Executive Hangars for this PTU publish for testing)
+- Potential Fix: AC - Multiple Game Modes - Crossroads of Crime - Art / Lighting - The main light source for the map is missing (STARC-164973)
+- Potential Fix: Multivehicle - PU - Stanton - Wikelo's Emporium - The Collector - Location / Vehicles - Ships are not being recognized as having landed at the Wikelo Emporium Stations
+- Potential Fix: Hang - Client - AC - Client Hangs after unequipping any system/weapon/paint (STARC-166916)
+- Potential Fix: Argo Mole - PU - vehicles - Argo Mole shields penetrated by weapons fire
+- Potential Fix: PU - Locations - Landing Zone (LZ) - Area18 - Bevic Convention Center - FleetWeek 2025 - Guild Scrip - Scrips can spawn under ship platforms, above the halls and on the ceiling, making it unreachable for players
+- Potential Fix: PU - Stanton - Fleetweek 2025 - Hunt the Polaris - Mission Content - Unable to accept mission when it has already been accepted by another player
+- Potential Fix: PU - Stanton - Landing Zone (LZ) - Area18 - Art / Locations / Graphics - The lobby of the Million Mile High Club is being culled when the player moves closer to it
+- Potential Fix: PU - UI - Missions Content - Collection - Mission description refers to juvenile Valakkar fangs with their entity string name (STARC-164829)
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 3 Server Crashes

@@ -1,0 +1,12 @@
+This refers to the reload animation / action blocking other actions
+Situation;
+- you have 13/30 bullets in your P4
+- you reload
+- during this reload, you attempt to sprint, this action is blocked till the reload is over
+- You finish reloading, 30/30
+- you can sprint again
+This change would be
+- you have 13/30 bullets in your P4
+- you reload
+- during this reload, you attempt to sprint
+- you enter sprint, cancelling the reload

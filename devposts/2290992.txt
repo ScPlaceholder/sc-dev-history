@@ -1,0 +1,34 @@
+## Star Citizen Patch 3.6.1e
+Alpha Patch 3.6.1e has been released to PTU and is now available to test!  Patch should now show: PTU-2395337.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Ship component fix
+- General gameplay
+Known Issues
+- Levski garage pads do not recognize the Ballista as parked.
+## Feature Updates
+Universe
+- Brought down the number of AI security reinforcements to avoid accumulation of AI ships.
+- Increased the ship detection commodity buying radius for some stash houses.
+Missions
+- Updated probability volume to lower the frequency of AI service beacons.
+## Bug Fixes
+- Players should now be able to purchase commodities at Hurston moon outposts.
+- Players should now have their ships detected once landed at CRU-L5.
+- The player's ship should no longer explode when quantum traveling to a party member in atmosphere.
+- Repair, rearm, and refuel services should now work at city locations.
+- Players should no longer occasionally see UI markers labeled "unknown".
+- Repair ground vehicles should now properly deduct UEC.
+- Mission boxes should no longer fall through ships when placed inside.
+- Mission description and contractor are now placed in the correct fields on the mobiGlas.
+- Missions givers should now be in their correct positions.
+- Fractured rock chunks should no longer fall through the surface when mining.
+- Fixed an issue causing some optics to be not sighted in correctly.
+- Restock should work consistently for all ground vehicles.
+Technical
+- Fixed 2 client crashes.
+- Fixed 2 server crashes.

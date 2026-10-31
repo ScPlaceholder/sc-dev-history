@@ -1,0 +1,3 @@
+The terrain actually already uses tessellation to remove harsh/straight edges, but often (and here) people usually mean tessellation + displacement mapping. This is something we want to look at because beyond the obvious benefits over POM it might also help alleviate some texture blending costs we have (for reasons that I can’t succinctly explain here) which will then allow us to improve the quality of the texturing.
+One thing I constantly need to remind people on this topic (backers and devs alike) is that the physics doesn‘t take POM or displacement into account, so these techniques are only useful for small details which you’re happy for your feet to clip straight through (5-10cm max).
+Ali Brown

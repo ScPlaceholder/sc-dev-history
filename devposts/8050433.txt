@@ -1,0 +1,53 @@
+## Star Citizen Alpha Patch 4.2
+Alpha Patch 4.2 has been released to All Backers!  Patch should now show: VERSION 4.2.0-PTU.9844762.
+- Audience: All backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Storm Breaker All Phases
+- Lazarus Facility Freight Elevators
+- Apex Valakkar
+- Dynamic Rain
+- Radiation
+- VOLT Laser "Prism" Shotgun
+- ARGO ATLS IKTI, IKTI GEO, IKTI Rad (Version Found at Storm Breaker)
+- New Wikelo Ship Additions
+- New Hairstyles
+- Sterling Exploration Suit
+## Known Issues
+- Multivehicle - PU - Vehicles/ UI - Unable to Locate Ships or QT Back to Them After Bed Logging
+- PU - Orison - Locations / Transit - Some parts of the shuttle ramp has no collision
+- PU - Weapons / Reload - Audio / SFX - Permanent Ammo Repool Audio loop after spawning
+- PU - FPS - Heart monitor beeping never stops after being revived
+- PU - Storm Breaker - locations - Valakkar - Adult valakkar are spawning in the air the ground is sloped behind the tower
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+## Features & Gameplay
+Gameplay
+Storm Breaker and ASD Location Polish
+Added one way freight elevators to Lazarus location allowing transfer of good from near the Apex Valakkar to outside at the transit facility. Further ASD location AI Pathing Polish. Apex Valakkar Arena Ground Polish.
+Ships and Vehicles
+- Adjusted Excessive Polaris Ground Turbulence
+- Added Missing C8 Pisces Armor Damage Reduction Modifier
+Core Tech
+- New Spawn Closet Subsumption logic to pause and reset auto spawn tasks. This will help limit locations to the amount of FPS AI we set for the area.
+- Further Server Performance Optimizations
+## Bug Fixes
+- Potential Fix: PU - Pyro I - Storm Breaker - Locations / UI / Missions - Egg Pylon timer out of sync with location cooldown
+- Potential Fix: PU - NPE / Tutorial - Mission / Location - There's a chance that the "Take an elevator to the tutorial ship's hangar" wouldn't update even after taking the elevator to tutorial ship's hangar
+- Potential Fix: Multivehicle - PU - Vehicles / SFX - Dynamic Weather - The rain SFX inside ships are the same as being outside in the rain
+- Potential Fix: PU - Storm Breaker - Pyro - Creatures / Collision - The Apex Valakkar has no collision once killed
+- Potential Fix: PU - Stanton - Performance - Mining / Game Code - Server and Client Performance drops when Shattering Large FPS Deposits
+- Potential Fix: RSI Ursa Rover ALL Variants - PU - Vehicles / SFX / Audio - Missing audio on opening and closing ramps and doors (STARC-171363)
+- Potential Fix: PU - Storm Breaker - locations - Valakkar - Adult valakkar are spawning in the air the ground is sloped behind the tower
+- Potential Fix: PU - Pyro - Storm Breaker - Locations - New safe codes do not open safes after streaming out / in if the safe has previously been opened
+## Technical
+- Fixed 5 Client Crash
+- Fixed 1 Server Crash

@@ -1,0 +1,64 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9138466.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 1 (No longer under NDA)
+Server Info: US/EU - EPTU Channel - PU/AC - Replication Layer Enabled/Recovery Enabled
+Starting aUEC: 15,000,000
+Testing/Feedback Focus
+- Stability (Main Focus)
+- Master & Operator Modes: Vehicle Combat and Experience
+- Full Character Customizer Revamp
+- mobiGlas Rework / Starmap / Interior Map / Minimap
+- EVA T2
+- New Loot Screen / New Visor / Lens
+- Full FPS Combat Refactor / Dynamic Crosshair
+- Backpack reloading / Ammo repooling
+- Physical Shopping UI
+- New AC Features: Engineering Game Mode, Grav Royale, New Race Tracks, New Pirate Swarm Final Wave, Custom Lobbies.
+Known Issues
+- PU - Vehicle Purchase Kiosk - Shopping / Locations - Unable to purchase vehicles from kiosks
+- PU - Stanton - Hurston/Crusader - Lorville/Orison - Locations / Transit - Lorville/Orison transits are off set from the station doors causing visual and collision issues
+- PU - Shopping / Art / UI / Locations - Weapon display in stores are rotated 90 degrees
+- PU - Multiple Locations - Locations / Art - GrimHEX and Kareah airlocks are missing breathable air and doors
+- Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Character - HUD / UI - No body marker after death
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+- PU - Terminal - Locations / Interactions / UI - Unable to interact with the Medical Insurance Terminal to manage regeneration
+- PU - UI - NikNax / VLM - Liveries - All Liveries are missing volume information in NikNax and Vehicle Loadout Manager
+- PU - Performance - Inconsistent frametimes / stuttering during high concurrency due to DatabaseUnloading
+- Front end - UI / Locations - Inventory - Entitlement - Primary Residence location can be missing from the front end
+- AC - Front-End - Engineering: Duel - UI / Lobby / Menus - Missing ship model on lobby screen
+## Features and Gameplay
+AI
+- Removed Infinite Ammo / Capacitors from AI Piloted Ships
+Gameplay
+- Maps UI Panel Polish
+- Water Interaction Visual Polish Pass
+Core Tech
+- Made Client Shader Cache Performance Optimizations
+## Bug Fixes
+- Fixed a StarMap Deadzone while in pilot seat
+- Fixed the Starmap losing all functionality after QT
+- Fixed an issue causing Full or partial search results on the StarMap to not be clickable
+- Fixed - PU - Graphics - Opening mobiGlas or inventory causes black artifacts to appear on screen
+- Fixed - PU - UI - mobiGlas - The assets pages is stuck forever loading the second time the tab is selected
+- Fixed - PU - Game Code - Players can get kicked for being idle whilst they are mid flight / Quantum Travel
+- Fixed - PU - mobiGlas / UI / Missions - Mission contracts app dropdown cannot be collapsed in mobiGlas app, sometimes preventing mission contracts from being able to be selected
+- Fixed - SC - PU - Stanton - mobiGlas - UI - wallet is not updated on escort beacon creation
+- Fixed PU - Actor / AI - NPCs are shaking / jittering when pathing through PU
+- Fixed - PIE - Interaction Prompt - Prompt moves sporadically around its entity, popping between various bounding box points
+- Fixed - PU - Camera / Fleet Manager / Shop Kiosks - Being too close to Kiosks when interacting causes camera to shake
+- Fixed PU - Cargo - Vehicle / Gameplay - Cargo crates can disappear upon placing them onto a ship's cargo grid in various ships
+- Fixed - Cruise Mode / Sticky Throttle is missing HUD indication, so it is hard to use
+- Fixed - PU - Cannot accept shared mission due to incorrect mission invite notification
+- Fixed - Character Customizer - Randomize All Doesn't Affect Eye Color
+- Fixed - PU - Creatures / Kopion - Animation / AI - The Kopion creatures sometimes do not move or attack players
+- Fixed - PU - Actor - Prone - Whilst holding a grenade, performing the helmet unequip / equip to hip actions doesn't force the player out of prone
+- Fixed - 890 Jump - PU - Actor / Vehicle - Interaction - Interaction prompts for 890 Jump interior elevators are missing text, fail to respond to input
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed a Client Deadlock
+- Backend Service Crash Fix

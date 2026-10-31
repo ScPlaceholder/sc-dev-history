@@ -1,0 +1,4 @@
+We still have a few GPU Crashes we are investigating.
+But most of them are coming from AMD GPUs so potentially there are still driver issues with it.
+What's most helpful to us is if you can repro the crash with r_enable_full_gpu_sync = 2 typed into the console (or by creating a user.cfg file in /LIVE and putting that in there but delete it once you're done since it severly impacts performance).
+Doing this after each drawcall the state of the GPU is checked and if it crashed we know exactly where the problem was.

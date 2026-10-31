@@ -1,0 +1,5 @@
+Hi FritoBandito,
+No we don't have plans to add foveated level-of-detail controls at present because it wouldn't actually improve the performance of our game as it stands. The only route to improve performance is to remove/speed-up your bottlenecks, and texture resolution and mesh detail is not a bottleneck for us in the overwheling majority of the game (e.g. >99%). Our current bottlenecks are mainly CPU related and there are several major inititaves in progress to improve these. Once our new renderer is completed later this year (and we hopefully see CPU performance improve) my team will shift focus onto GPU performance, and will likely identify some bottlenecks there, for example our lighting and volumetric passes can become expensive at higher resolutions. However we'd want to focus on broader optimisations (of which there are plenty) as these return the biggest "bang for buck" before more niche hardware-specific optimisations.
+Thanks,
+Ali Brown
+Director of Graphics Engineering

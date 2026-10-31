@@ -1,0 +1,69 @@
+## Star Citizen Patch 3.21.1
+Alpha Patch 3.21.1 has been released to the EPTU, and is now available to test! Patch should now show: VERSION 3.21.1-PTU.8876586.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Up To Wave 4 Testers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+Tonight on the PTU we will be running the Expo Halls as well as Jump Town tonight for around 10 hours starting around 6pm CST
+- System - Security - Ship Trespass
+- Mission - Defend - Data Heist
+- New Player Experience - New Babbage
+- Vehicle Headlight Refactor
+- Tractor Beam - T2 - Vehicle Tractor Beam
+- Crusader C1 Spirit
+- ARGO SRV
+- FPS AI Behavior Integration
+- Siege of Orison Global Event Re-Activation
+Known Issues
+- TRACKING - AC - Vanduul Swarm - Broken Moon - No hostile AI spawn
+- PU - FPS/weapon - tractor beam - MaxLift Tractor beam cannot be equipped
+- PU - Lorville - Shopping - Kiosks - Shops do not have any items in their inventory (fixed in later build)
+- Klescher Rehabilitation Facility - Prison / Mining / Multitool - There is a chance you won't be able to mine or scan the rock with your Multitool while mining to reduce prison sentence
+- PU - Orison - Stratus - Art / Graphics / Locations -      Visarea causes the Stratus elevator's interior/upper floor to not be      visible
+- PU  - Rental Kiosk / ASOP Kiosk - After Renting a ship and letting the rent  timer expire. A couple of ships or rows will not be visible at the  ASOP.
+- PU - Stanton - AI / Mission Content - UGF AI falling through the stairs / floor
+- PU - Stanton - Locations / Elevators - Grimhex elevators kill players when entering them from the Main Concourse level
+- Argo SRV - PU - Vehicles / Insurance Claim - Argo SRV insurance claim is abnormally short
+- PU - Stanton - Ships - ASOP Terminal - Spawning specific ships will cause them to spawn outside of Hangars
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- PU - Stanton - New Babbage - NPE - Locations/Design - The player will be stuck in their hab's bed if they restart the tutorial by quitting to main menu whilst dead, blocking flow
+- Crusader Spirit A1 - PU - Vehicles / Weapons / Components - Missiles - When the Spirit A1 is travelling at high speed, a fired bomb can rip through the ramp and body of the ship and severely damage the ship
+- PU - Stanton - Hurston - Lorville - Locations / Design / AI - Security AI are missing from Teasa Spaceport Customs area
+- Anvil Lightning F8C ALL Variants - Vehicles / EVA - Using EVA to fly into the Cockpit during Zero G will cause the player to gain gravity and fall into the Cockpit
+- Stanton - Backend Services - Service Beacons - After service beacon is abandoned / canceled / declined, player will be unable to receive or accept other service beacons
+- PU - Stanton - Locations / UI - AR Marker showing your assigned hangar does not appear
+- PU - Mission Content - Retrieve Consignment - Datapad is blank / no code is displayed
+## Feature Updates
+Gameplay
+- Ground Radar Adjustments
+Increased ground vehicle emissions and reduced the ground sensitivity on all ship radars so the overall distance is unaffected for ships, but will allow ground vehicles to see each other from further away.
+- Rebalanced Defend missions along with adding new AI activities and traits and balancing the rewards
+- Turning on shields in a ship while being tractored will now break the ship free from the tractor beam
+- Slightly Increased Reputation Requirements for 'Retrieval Ops' mission
+Ships and Vehicles
+- Increased the Speed and Torque of the Greycat STV
+## Bug Fixes
+- Fixed an issue that was causing players to desync while going into EVA and appear in multiple places at once or become invisible
+- Fixed an issue causing spacesuit EVA thrusters to sometimes remain on while while walking around outside of EVA
+- Fixed an issue causing many details and decals to be shown in low resolution textures
+- Fixed - Stanton - Lorville - Metro Center/Teasa Spaceport Train - Audio SFX - Lorville train missing sound effects
+- Fixed - PU - Stanton - Hurston - Lorville - Locations / Graphics - transit station platform doors are opaque
+- Fixed an issue causing Vehicle Tractor Beam VFX going through ship hulls
+- Fixed - ARGO SRV - PU - Vehicles - Refuelling - Unable to dock with Misc Starfarer for refuelling
+- Fixed - ARGO SRV - PU - Animation / Vehicles - Landing gear doors close before landing gear is fully retracted
+- Fixed - PU - MaxLift Tractor Beam - Interactables / Tractor Beam / UI - The 2-handed dedicated tractor beam tool cannot be interacted when dropped within armistice area
+- Fixed - PU - Tractor Beam / Physics - Multiple Active Tractor or Tow beams on the same object can make it float without an active tractor beam on it
+- Fixed quantum not failing correctly when towing beam is detached mid quantum
+- Fixed - Anvil Ballista - PU - Vehicles / VFX / Lighting - Headlight light entity is floating in front of the light fixture and emits light when disabled
+- Fixed - PU - Vehicles / UI - Ship Trespass - "PRIVATE PROPERTY" UI text remains after reloading from main menu after trespassing on another player's ship
+- Fixed - PU - Stanton - Mission Content / mobiGlas / UI - NPE - "Welcome to the 'Verse" Journal entry gets copied every time the player restarts NPE without leaving Hab
+- Fixed - PU - Stanton - Mission Content - NPE - Selecting the 'Carry' prompt to drink the water will not progress the mission
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 1 Server Crash
+- Fixed a Server Deadlock

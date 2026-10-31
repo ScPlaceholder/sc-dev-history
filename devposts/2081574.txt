@@ -1,0 +1,24 @@
+## Star Citizen Patch 3.5.0v
+Alpha Patch 3.5.0v has been released to PTU, and is now available to test!  Patch should now show: PTU-1445492.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+This now includes a QR code to help us track down server issues in your bug reports.
+Testing Focus
+- General gameplay
+- Testing AI pilot behavior
+Major Known Issues:
+- No-fly zone autopilot take over is inconsistent.
+- Players arrive at planetary destinations just outside of the trigger for quantum travel points. W/A: Fly forward toward the planet/moon for a moment to trigger the quantum travel points.
+## Feature Updates
+Missions
+- Delamar asteroids are now viable locations for mercenary missions.
+- Bounty, steal, and recovery missions all now progress in difficulty.
+- Updated ships that spawn in pirate blockades.
+## Bug Fixes
+- The PVP bounty mission is now available after completing any mission for local security.
+- Interdiction ships shouldn't all despawn at the same time.
+- Attrition repeaters should no longer penetrate through shields.
+Technical
+- Fixed 2 client crashes.

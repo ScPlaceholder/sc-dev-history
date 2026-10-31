@@ -1,0 +1,47 @@
+Star Citizen Patch 3.20.0
+Alpha Patch 3.20.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.20.0-PTU.8692935.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 4
+Database Reset: Yes
+Server Regions: US/EU (Please select one of these instead of BEST or loading will fail)
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Known Issues
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- PU - Missions - Service Beacons / UI - Beacons do not show up  in 'Personal' tab
+- Multiple Locations - Inventory - Equipped items are lost after dying in the landing zone
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- ASOP - Ships - Vehicles - Clicked to "Store" ship at ASOP but it was "Destroyed"
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Vehicles / Ship Components - Ships that do not have missiles as a standard weapon cannot restock their countermeasures.
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Performance - Client Performance drops around Ghost Hollow
+- Mission Content - UGF - AI Counter will drop to 0 after streaming location in and out again
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- GrimHEX - Dumpers Depot - Art / Locations - The Dumper's Depot within GrimHEX has a VisArea that allows players to clip inside of location.
+- Vehicle Maintenance Services - Ship repair doesn't happen but still charges you
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Multiple Locations - ASOP Terminal / Ships - When storing a ship, the ASOP terminal will set the ship status to "Claim" instead of "Retrieve."
+- Exploit / Ships / Vehicles / Game Code / Multiplayer - When two Players Salvage a Ships Hull simultaneously the Hull will recover and be infinitely Scrapeable
+- Inventory / Personal Inventory - Inventory can enter a state of becoming unresponsive, preventing the player from being able to eat or drink
+- AI / Art - VFX - Hostile AI bullets visually clip through walls
+## Feature Updates
+Gameplay
+- Reverted mobiGlas Opening Back to the Original F1 Default Keybind
+## Bug Fixes
+- Fixed - AC - Spawning - Spawning Logic is ignored and/or drastically changed in recent patch
+- Fixed - PU - Stanton - Audio Feature - ASOP / Fleet Manager - Audio - Incorrectly states all hangars are currently in-use
+- Fixed - PU - UI - Vehicles - Quantum Travel Linking - Party members do not receive any notifications when party leader initiates Quantum Travel functions
+- Fixed - PU - Stanton - UI - StarMap - Location name texts are missing / not displaying in StarMap
+- Fixed - PU - ASOP / Fleet Manager / Vehicles - Sometimes when retrieving a ship from ASOP, it will give you a hangar number and UI, but there will be no ship in the hangar
+- Fixed - PU - Cargo / ATC - With a pending Cargo Transfer, calling the Cargo ATC will not give an answer on the first try or at all
+- Fixed - Aegis Sabre Forward Engines Show Arrows
+- Fixed - Stanton - AI / Locations - NPC reinforcements will wreck themselves continuously, creating piles
+- Fixed - Ship to Station Docking - Audio - UI - When docking, the audio can become stuck in a loop and loudly blast through the front of the ships decks
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 3 Server Crashes
+- Fixed a Mainthread Deadlock

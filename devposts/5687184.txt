@@ -1,0 +1,61 @@
+## Star Citizen Patch 3.18.0z
+Alpha Patch 3.18.0z has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.0-PTU.8344026.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US/EU
+Database Reset: Yes
+Long Term Persistence: Enabled
+Account Copy: Disabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Ballistic Changes
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- Salvage / Hull Scraping - Nomad - Some sections of the hull show as valid but do not allow salvage
+- Salvage / Hull Scraping - Crusader C2 Hercules  - Some sections of the hull are exceedingly difficult/impossible to salvage
+- Salvage / Hull Scraping - Anvil Carrack  - Sections of the hull show as valid but do not allow salvage ; Some only salvage when beams are offset ; Some show as valid but do not allow salvage
+- Derelicts - Missions / AI / Locations - Once a mission has been completed at the settlement the AI will not respawn for the next mission resulting in it completing upon reaching the location
+- Derelicts - Missions / AI / Locations - If reinforcements do not leave the ship they will be counted towards the hostiles remaining total even once the ship has left resulting in the mission being incompletable
+- Valkyrie bottom turret locks and makes player invisible
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Klescher Rehabilitation Facility - Mission Content - ClearCrimeStat - Bounty on escapee will persist even after they have cleared their crimestat
+- Multivehicle EU - Stanton - Vehicles - Destroyed ship thrusters will still not function after being repaired
+- Cargo - Performance - Fully loaded C2 landed at Area 18 results in Slow Framerates or Crash
+- Vehicles/IFCS - When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Stanton - Law System - Users spawn in prison with weapons and armor after dying with crimestat
+- Trading - Cargo invisible in multiple ships
+- Ships / Vehicles - Storing ships at a non-home location will result in a locked state, "Transferring to Storage"
+## Bug Fixes
+- Fixed - Actor Feature - Respawn - Unable to respawn upon player death, stuck on splash screen
+- Fixed - Console has scaling issues on non 16:9 aspect ratios
+- Fixed - Actor Feature - Actor Status / Inventory - The player suffocates with a helmet on, as the helmet equip appears to be stuck pending
+- Fixed - Rest Stop (R&R) - MIC-L1 Shallow Frontier Station - Collision / Locations - There is invisible collision at Pad 01 blocking the player from entering the station
+- Fixed - Hurston - Lorville - City gates - Art / Graphics / Locations - Visareas issues are present when entering the customs area of city gates
+- Fixed - Ships - Quantum entanglement - hostile indicator - QED does not mark ships as hostile
+- Fixed - Mission Content - Zeta-Prolanide Salvage Claim - Not all the cargo boxes are spawning in for player to retrieve
+- Fixed - Shopping / UI / Vehicles - Vehicles purchases through rental are missing from ASOP terminals, preventing access / use of the rented vehicle
+- Fixed - Klescher Rehabilitation Facility - Shopping / Kiosks - Sell option on item is still present after selling at contraband kiosk
+- Fixed - TMBL Nova - Vehicle / Damage / Salvage - Most of the ship cannot be salvaged or damaged
+- Fixed - Mining - Ships / Vehicles / Game Code / UI - Increasing the Mining Lasers Power via the Power MFD only increases the Lasers VFX not its Laser Intensity
+## Technical
+- Fixed 3 Client Crashes

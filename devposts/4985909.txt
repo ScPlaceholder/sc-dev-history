@@ -1,0 +1,60 @@
+## Star Citizen Patch 3.17.0l
+Alpha Patch 3.17.0l has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.17.0-PTU.8021249.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Attention There are some elevator and ship spawning issues with this new build that could possibly be worse than the current PTU. We will be monitoring the PTU and may have to roll back to the previous build if this is much worse.
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Ship Positional Desync Test
+In 3.17.0 we have put in a networking update that should reduce ship to ship desync. We would like to know how well this update works and if there are any observable knock-ons. Relative to 3.16, you should feel as though the facing direction and position of other player ships are much more accurate and real time. We have created a feedback thread in spectrum so please let us know about any potential issues with this that could include ship jittering, rubberbanding, and other effects of that nature.
+- MISC Hull-A (see known issue for ship claim)
+- Lorville Hospital and Space Station Clinic Variations
+- River
+- Coffee Shop Vendor
+- Ship-to-Ship Refueling
+- Mining Gadgets
+- Shopping and Selling T0
+- Ship and Ship Components Inventory Updates
+- Player Injury Updates
+- DNA Head Texture Updates
+Known Issues
+- Insurance Claiming a ship always claims next ship down the ASOP terminal (Claiming a ship may require character reset or destroying the ship above the one you want to claim on the ASOP and claiming that)
+- Elevators from the metroloop to NBIS terminal are not functioning consistently
+- Ship is invisible on retrieval and does not have marker
+- All doorways in Orison can kill players if repeatedly walked through
+- Custom mobiGlas Casings breaks the mobiGlas functionality
+- The Player is unable to Place the Mining Gadget on a minable rock
+- Large hangers are missing collisions
+- Starfarer Boom Arm not repairing if destroyed
+- Players cannot buy components directly into ship storage (will be coming later in the PTU cycle)
+- ASOP terminal displays successful retrieval with designated hangar number; however, there is no ship marker and designated hangar is empty
+- AR Markers are present when opening the mobiGlas which can make it hard to read
+- Ships can explode after players exit them
+- The player is respawning with their loadout pre-death, and the medical gown equipped. The player also leaves no corpse present
+- Player is unable to drop items from their inventory within the Hull A due to "Area too cluttered"
+- Many mineable asteroids can’t be scanned
+- While docked to a Starfarer the Valkyrie will continuously tilt instead of remaining stationary
+## New Features
+Ships and Vehicles
+- Added New Ship: MISC Hull-A
+## Feature Updates
+Gameplay
+- Scatter Gun and Rocket Polish Pass
+Decreased damage and radius of explosions from rockets. Decreased damage and removed explosion damage from scatter guns.
+## Bug Fixes
+- Fixed an issue that was causing players to experience extreme delays with asset streaming
+- Inner Thought prompts should no longer be missing from many usables around the PU
+- Players should no longer be able to interact with another player's ASOP terminal while it's in use
+- Fixed an issue that blocked players from refueling ships while docked to a station
+- Minerals should no longer spiral around the ROC collection laser and be thrown across the terrain instead being collected
+- Valkyrie and Valkyrie Liberator HUDs should no longer be positioned too high
+- Fixed an issue that prevented engaging afterburner / boost when only rotating
+- Players should no longer be able to equip the Redeemer's remote Turret to various other ships
+- Organization descriptions should no longer be missing from the reputation app
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 4 Server Crashes

@@ -1,0 +1,63 @@
+## Star Citizen Patch 3.18.0x
+Alpha Patch 3.18.0x has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.0-PTU.8340717.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US/EU
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Ships / Vehicles - Impounded Vehicles - ASOP - Impounded ships do not finish Transferring to Storage and are no longer Retrievable
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Stanton - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction
+- Multivehicle - Stanton - Vehicle Feature - Hit box desync - Vehicles do not take damage when attacked at certain parts of its hull
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- Multiweapon - PU / SM - FPS Devices / Throwables / Weapon Feature / Actor Feature - When using a throwable the previously equipped weapon is thrown instead and a duplicate weapon remains equipped
+- Shopping/Selling - Off The Shelf - Players can equip and keep items from the mannequins bodies displayed in store without purchasing the items
+- Salvage / Hull Scraping - RSI Constellation Andromeda - Some sections of the hull show as valid but do not allow salvage ; some become invisible ; some do not transition into a damage mesh
+- Salvage / Hull Scraping - Kruger P-52 Merlin - Wingtips show as valid but do not allow salvage
+- Salvage / Hull Scraping - Nomad - Some sections of the hull show as valid but do not allow salvage
+- Salvage / Hull Scraping - Crusader C2 Hercules  - Some sections of the hull are exceedingly difficult/impossible to salvage
+- Salvage / Hull Scraping - Anvil Carrack  - Sections of the hull show as valid but do not allow salvage ; Some only salvage when beams are offset ; Some show as valid but do not allow salvage
+- Area 18 - Shopping / Personal Inventory - Items on Casaba and Cubby Blast shelves can be picked up and carried out of store without paying
+- Derelicts - Missions / AI / Locations - Once a mission has been completed at the settlement the AI will not respawn for the next mission resulting in it completing upon reaching the location
+- Derelicts - Missions / AI / Locations - If reinforcements do not leave the ship they will be counted towards the hostiles remaining total even once the ship has left resulting in the mission being incompletable
+- Origin 400i - Ships - Components / Materials - Paints - Applied paints do not apply to the exterior face of the airlock
+- Mission Content / Locations - Multiple mission locations are Disabled due to AA Not Found
+- Greycat Industrial Roc - Vehicles/mining - ROC Inventory fills up past the intended capacity
+- Valkyrie bottom turret locks and makes player invisible
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Ships - Quantum entanglement - hostile indicator - QED does not mark ships as hostile
+## Feature Updates
+Locations
+- Made Improvements to the visuals of Cliffs
+Gameplay
+- Disabled bed log around Outposts
+- Adjust first-time user messaging in the commodity kiosk to select an inventory
+- Improved layout of commodity price alerts journal entry to list by commodity type rather than location
+- Removed Physical Pressure from Distortion Weapons
+Core Tech
+- Ship Recovery from DGS crash Now Functions with PES
+- Added large-scale diffuse to planet-driven shading mode of organics shader
+- Further Gen12 Optimizations

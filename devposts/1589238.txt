@@ -1,0 +1,45 @@
+## Star Citizen Patch 3.3.0u
+Alpha Patch 3.3.0u has been released to the PTU, and is now available to test!  Patch should now show: PTU-974900 .
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- Teach's Ship Shop
+- VOIP and FOIP
+- Missions: FPS combat mission and scramble races
+- New Ships and Vehicles: Valkyrie, Phoenix, Hammerhead, Mustangs, and Cyclones
+- Manned and remote turrets
+- Changes to ship cannons
+Major Known Issues:
+- Players can get a locked cursor when interacting with kiosks. W/A: Wait 2 minutes for time out or alt-tab and return.
+- Players often drop boxes when entering ships from EVA.
+- Starfarer derelicts currently lack lighting.
+- Mission givers may not be functioning correctly.
+- Inviting someone to party via the mG causes a client crash. W/A: Invite via interaction mode.
+- Ships rented from the front-end do not show up in ship selection list.
+- Ships are able to quantum travel to locations they do not have enough fuel to reach.
+## Feature Updates
+General
+- Updated FOIP/VOIP keybinds: Numpad '/': selfie cam, Numpad '*': Calibrate face tracking, Numpad '-': Toggle head tracking, Numpad '+': Push to talk.
+UI
+- Added mission UI to the Covalex collect and ambush missions.
+Ships and Vehicles
+- Changes to gravlev vehicles to handle slightly better.
+## Bug Fixes
+- FPS AI should spawn properly upon accepting the mission.
+- Players should no longer be able to interact with the race announcer's ship in scramble races.
+- Countermeasure ammo should now update after restocking.
+- The reststop should now have shop inventories.
+- The missile locking UI should no longer freeze or lock-up when locking multiple missiles back to back.
+- Ship and vehicle EMPs should now work correctly.
+- Players should no longer be able to fire weapons while the mobiGlas is open.
+- Retuned Avenger Titan and Warlock to correct slow acceleration.
+- Missile markers should retain their correct state after going to 3rd person camera and back.
+- The front lift on the Reclaimer should now work properly.
+- Fixed an issue with ship debris mass that would cause them to spin around strangely.
+Technical
+- Fixed 3 server crashes.
+- Fixed a server deadlock.
+- Fixed 2 client crashes.

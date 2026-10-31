@@ -1,0 +1,30 @@
+Alpha Patch 4.10.2 is now available to test on the PTU environment! Patch should now show: VERSION 4.10.2-PTU.12858901
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Event missions in Stanton
+- Physics Networking Overhaul
+- Experimental VR Feature Updates
+## Features & Updates
+Physics Networking Overhaul
+The netcode that governs how loose physics objects behave across the network has been rewritten. Previously the client treated the server's view of an object as either entirely correct or entirely wrong, which meant a single bad state could cascade into persistent desync, rubber-banding, and objects sliding or bouncing for no visible reason.
+The new system calculates a trust score for incoming server state rather than applying it unconditionally. Trust is reduced when the client has just done something the server cannot know about yet, such as bumping into a crate, or when the server's state is stale. Corrections are now applied as velocity nudges rather than teleports, and a teleport is only used as a last resort after a sweep check confirms the destination is clear. All tolerances now scale with your current latency and the size of the object rather than using fixed values.
+This change currently applies to freely simulated rigid bodies. Ships and vehicles still use the previous system.
+This system is currently enabled on a CVAR and we are intending on keeping this enabled unless something goes catastrophic through testing
+Experimental VR Feature Updates
+- StereoZoom 2.0, a reworked zoom system that triggers when your headset view aligns with the target, with new CVars for customization
+- Zoom now aligns correctly on the scope in grounded look with decoupled aim direction
+- Positional tracking is no longer locked during zoom, which feels considerably better in grounded look
+- Mouse smoothing and acceleration no longer reset to zero when switching to VR
+- Wearing the headset now registers as user activity, so players observing without input are no longer kicked for inactivity
+- Fixed invisible 3D UI actor icons
+## Bug Fixes & Technical
+Fixed 1 Entity component Client Crash
+- Potential Fix: Ships taking heavy or fatal collision damage from the magazine of a weapon the player was carrying, triggered when the player left a seat
+- Potential Fix: Heavy Combat Hunter 3 helmets, all variants, not applying the snoopy cap or necksock when equipped
+- Potential Fix: No drop off markers appearing for the event Scavenger Hunt contract, leaving players without a delivery destination
+- Potential Fix: Some ship components displaying no manufacturer logo in the inventory and vehicle loadout screens
+- Potential Fix: Hyaoklo Meditation Focus displaying the name "Ochelo" instead of its correct name
+- Potential Fix: Event Salvage contract descriptions now confirm that players may keep any RMC they recover during the contract

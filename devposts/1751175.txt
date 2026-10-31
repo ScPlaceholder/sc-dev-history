@@ -1,0 +1,4 @@
+Interpreting your post as "what is this light ball in reflections?":
+What you're seeing there is one of the lights in the scene. The way we calculate specular (ie glossy) lighting on an object involves calculating the probability that a reflected ray will hit a spherical light source. In cases where the surface is very smooth and flat, this translates to just showing a sphere reflected in the surface.
+We have a couple of tech-based partial solutions for this - for things like fires and vague glows, we support a soft-specular mode which blurs sphere quite a lot, but this can make smooth surfaces look rougher than they should and can generate long streaky highlights, or we support rectangular light sources, though they're more resource-intensive and a lot less physically accurate so you'll often see a rectangular light fitting with a spherical highlight.
+Where those tech solutions aren't useful, we rely on the art/lighting team to work around any issues that arise.

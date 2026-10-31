@@ -1,0 +1,64 @@
+## Star Citizen Patch 3.19.1 8493517
+Alpha Patch 3.19.1 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.19.1-PTU.8493517.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Regions:  US Only
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Testing Focus
+- General Stability and Bug Fixes
+Known Issues
+We found a bug that will block users who don't have an uploaded avatar picture on their account from copying to the PTU. Adding one should resolve this!
+- Players cannot see partied player ships when Quantum Linking together
+- New Deal and Vantage Rental Kiosks Are Missing
+- Ships can explode from collision with invisible asteroids
+- Player corpses will not despawn at Grimhex
+- Unstowed Player ships must be claimed after a 30K (Error 30000) (Hopefully Fixed in a Service Update in the next couple days)
+- Art assets will clip through the Train during the journey in Lorville
+- The entrance of the Lorville hospital has a large Visarea issue
+- Substenance items lack "Store" option when carrying the item in Inner Thoughts
+- Players cannot see partied player ships when Quantum Linking together
+- Weapon Feature / Game Code - Tractor Beam - If you activate the tractor beam in hangar, you can bring the activated tractor beam back and use it in armistice zone
+- Aegis Reclaimer - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction from ship exterior
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Racing - Locations - A specific rock formations on the Yadar Valley race track are visible to some player and not others
+- Crusader - Security Post Kareah - Core Tech - Physics - Actor / Player - Transitioning from EVA onto Kareah's landing pads has a high chance of instantly killing the player
+- Transit - Area18 - Orison - Shuttles/Trains/Trams - Players are falling through sometimes disappearing trams and shuttles to their deaths
+- Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+## Feature Updates
+Gameplay
+- Added MRAI Fury, Fury MX, and Drake Corsair to Free Flight, Racing, and Pirate/Vanduul Swarm modes in AC
+Core Tech
+- Update Tobii SDK to 7.4.2.17
+Should fix a conflict with OBS web socket port 4455 showing as a bad actor when using Tobii
+## Bug Fixes
+- Fixed - Aegis Reclaimer - All Variants - Reclaimer main on-elevator control panels do not respond to input
+- Fixed - UI - Controls / Interaction Mode / Inner thought - Interactions not working after opening Starmap
+- Fixed - Ship Features - Ship To Station Docking - HUD / UI - When requesting docking permission the assigned docking collar HUD element does not appear
+- Fixed - Law - ATC - Ship impound when calling atc multiple times
+- Fixed - Leaving and Returning to Salvage Mission resets progress
+- Fixed - Mining - Game Code / Ships / Vehicles / Weapons - Deposits Shattered at Optimal Range cause Damage to the Players Ship
+- Fixed - Rest Stop (R&R) - ARC-L4 - Design / Transit / Locations - Players are unable to call elevators from rest stop refinery
+- Fixed - Actor - Interactables / UI - Inner Thought - The player is unable to see or use inner thought text prompts on certain spawned items
+- Fixed - Mouse Cursor - UI / Controls / Mobiglas - Press Interaction Keybind while Mobiglas Opening Animation is Playing Break Mouse Control
+- Fixed - Ships / UI - Vehicle HUD - Multiple Vehicle Components - FPS Weapons - Multi-Tool - Tractor Beam T0.5 - Gravlev vehicles have permanently unlocked item ports without notification or ability to toggle
+- Fixed - ArcCorp - Baijini Point - Locations - Atmosphere - In the walkway on Sec Port B on Baijini Point, there is no atmosphere and players suffocate without a helmet
+- Fixed - Everus Harbor - Ships / Performance / Locations / Art / PU - Getting close to a certain spot on Everus harbor with a Drake Corsair causes performance to drop drastically
+- Fixed - Hurston - Locations - Environment - Art - Missing terrain at cave entrance near Lorville
+- Fixed - Mission Content - Investigation - Missing Person - The missing person does not appear at the wrecksites
+- Fixed - ASOP / Fleet Manager - Terminals become unusable for other players after a player disconnects while interacting with them
+- Fixed - EXPLOIT - Locations / Ship Components - UGF / Weapons / Tractor Beam - Bunker manned turret gun can be detached using tractor beam and attached to your ship, and the Gatling has infinite ballistic ammo
+- Fixed - 19003 Error on Character Retrieval Readiness during launch
+- Fixed - Missions - NPC Beacon - Combat Assistance Mission will not progress after enemy ship has been destroyed
+- Fixed - Harvestables - If multiple nodes attempt to shatter at once, the server can stall for multiple seconds
+- Fixed - Vehicles - UI - Personal Inner Thoughts - Text for Requesting to Takeoff stays as Request Landing
+- Fixed - Multivehicle - UI / Vehicles / Mining - Mining UI is appearing in Low Resolution
+- Fixed - ARGO MOLE - Vehicles / UI - The interaction prompts for ALL mining turrets are easy to miss/in unintuitive locations for players
+- Fixed - Interactions - If the player attempts to get into a pilot seat and opens their inventory in quick succession, they will lose most functionality
+- Fixed - PES / Inventory - Cannot equip looted items after restarting game session
+- Fixed - Vehicles - UI - Personal Inner Thoughts - Text for Requesting to Takeoff stays as Request Landing
+- Fixed - Missions / Salvage Contracts - Progress bar flickers when multiple players salvage
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 7 Server Crashes

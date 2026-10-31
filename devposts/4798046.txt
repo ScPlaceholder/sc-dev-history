@@ -1,0 +1,38 @@
+## Star Citizen Patch 3.16.1c
+Alpha Patch 3.16.1c has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.16.1-PTU.7928101.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Derelict Spaceships V1
+Known Issues
+- It is possible that some servers may stop updating their mission offerings. If the issue persists, try leaving the server, waiting a few minutes and rejoining the PU, or change region.
+- Attempting to log back into a ship bed may result in a long loading screen before being sent back to the Main Menu w/ Error 30009
+- Players will experience positional desync with one another after they have died and respawned
+- Cross Section missiles/torpedoes have trouble locking onto a target
+- Many mineable asteroids can’t be scanned
+- Spawn closets do not recognize unconscious AI and close the door on them possibly leaving mission critical AI unreachable
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- Logging out from the Reliant ship's bed and back in will cause the Reliant to be in flight mode and the player is stuck inside the ship sleeping area
+- Cannot Repair, Refuel, Restock at LEOs
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+- Ship may despawn after player death instead of staying at it's last location
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+## Feature Updates
+Gameplay
+- Derelict Spaceships Polish pass
+Updated normal and rare loot crate rewards. Visarea polish pass. Collision pollish pass to fix various areas where players can get stuck. Fixed Multiple texture flickering issues. Fixed trip mines that were behind collision. Fixed various areas where players were falling through the world. Fixed Decorative crates and mission assets spawning inside each other.
+- Ship Shield Delay Changes
+Shield face regen delay timer will now also trigger if the ship hull is hit and shield face is already down. Shield regen delay timers will now trigger for all faces when the power state of any shield generator is changed.
+## Bug Fixes
+- Fixed an issue causing items to not immediately transfer from loot crate to personal inventory
+- Fixed an issue causing boxes and backpacks outside of inventory to not be intractable
+- Currently held cargo will no longer become unusable if a player interacts with cargo while holding cargo
+- Gas clouds VFX in Dying Star should no longer be black while flying through them
+- Large FPS Deposits base should no longer display the Collectable Diamond Icon after being shattered
+## Technical
+- Fixed 1 Client Crash

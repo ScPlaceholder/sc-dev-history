@@ -1,0 +1,76 @@
+## Star Citizen Patch 3.21.1
+Alpha Patch 3.21.1 has been released to the EPTU, and is now available to test! Patch should now show: VERSION 3.21.1-PTU.8867388.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Up To Wave 3 Testers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- System - Security - Ship Trespass
+- Mission - Defend - Data Heist
+- New Player Experience - New Babbage
+- Vehicle Headlight Refactor
+- Tractor Beam - T2 - Vehicle Tractor Beam
+- Crusader C1 Spirit
+- ARGO SRV
+- FPS AI Behavior Integration
+- Siege of Orison Global Event Re-Activation (Playtest tonight shortly after release)
+Known Issues
+- PU - Lorville - Shopping - Kiosks - Shops do not have any items in their inventory
+- PU - Stanton - Locations / Elevators - Grimhex elevators kill players when entering them from the Main Concourse level
+- Stanton - PU - Graphics - Low resolution textures appear around the PU
+- PU - Shopping / Selling - Consumables / Items - Items can be seen stacked on each other in mid-air
+- PU - MaxLift Tractor Beam - Interactables / Tractor Beam / UI - The 2-handed dedicated tractor beam tool appears in the weapon inventory tab
+- TRACKING - Cubemaps not rendering in New Babbage (and other locations)
+- Crusader Spirit All Variants - all variants - PU - Vehicles - Spirit explodes from any damaged for particular spot damaged on ship regardless of hull health
+- Argo SRV - PU - Vehicles / Insurance Claim - Argo SRV insurance claim is abnormally short
+- PU - Stanton - Ships - ASOP Terminal - Spawning specific ships will cause them to spawn outside of Hangars
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- PU - Stanton - New Babbage - NPE - Locations/Design - The player will be stuck in their hab's bed if they restart the tutorial by quitting to main menu whilst dead, blocking flow
+- Crusader Spirit A1 - PU - Vehicles / Weapons / Components - Missiles - When the Spirit A1 is travelling at high speed, a fired bomb can rip through the ramp and body of the ship and severely damage the ship
+- PU - Stanton - Hurston - Lorville - Locations / Design / AI - Security AI are missing from Teasa Spaceport Customs area
+- Anvil Lightning F8C ALL Variants - Vehicles / EVA - Using EVA to fly into the Cockpit during Zero G will cause the player to gain gravity and fall into the Cockpit
+- Stanton - Backend Services - Service Beacons - After service beacon is abandoned / canceled / declined, player will be unable to receive or accept other service beacons
+- PU - Stanton - Locations / UI - AR Marker showing your assigned hangar does not appear
+- PU - Mission Content - Retrieve Consignment - Datapad is blank / no code is displayed
+## Feature Updates
+Locations
+- Adjusted gloss values of screens around Area18 and Grimhex to eliminate strong glare and improve screen readability
+- New Babbage Signage Art Polish Pass
+- Seraphim Station Exterior Lighting Polish Pass
+Gameplay
+- Tractor Beam Gameplay Updates
+Implemented new dedicated tractor beam UI. Added target distance indicator, added Range Bar, added time transitions to bars. UI fixes for max angle, deflection, and stats. Temporarily Updated Salvage Mission Ships to Not be Tractorable.
+- AI Ship Cargo Manifest Balance Changes
+Re-balancing the cargo amounts and types that spawn inside derelict and AI ships in the PU using a new distribution algorithm.
+Ships and Vehicles
+- Ship Mass Balance (Part 1)
+Tumbril Nova, Corsair, Vanguard, Caterpillar, Mole, Raft, and Star Runners have all had a balance pass on their actual masses in the universe.
+## Bug Fixes
+- Fixed - TRACKING - Siege of Orison Killing Ninetails Sympathizer gives CS
+- Fixed - PU - Stanton - SOO - Mission Content / AI - Some AI do not leave their spawn closets
+- Fixed - PU - Stanton - SOO - AI / Mission Content - Hostile AI Ships unstream shortly after spawning
+- Fixed - PU - Stanton - SOO - Mission Content / Vehicles - Players are able to manually deactivate the self destruct sequence on the seige ships when flying too far from the event
+- Fixed - PU - Stanton - SOO - Mission Content / Locations - Datapad will fall through floor when placed in Garcia Greens
+- Fixed - PU - Stanton - Ships - ASOP Terminal - Spawning specific ships will cause them to spawn outside of Hangars
+- Fixed - F8C main thrusters sounds not working
+- Fixed - Data Heist - AI reinforcements not arriving as intended
+- Fixed - PU - Stanton - Data Heist - Mission Content - Server closest to the mainframe (S-594) will indefinitely halt the upload if disconnected
+- Fixed - Stanton - Spawn Closet - Mission Content / AI - Enemy AI can spawn out of bounds of their intended spawn points
+- Fixed - PU - Lorville - Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- Fixed - PU - Tractor Beam / Components / Vehicles - Removing a Vehicle Tractor Beam off of ships using a Multitool Tractor beam leaves the Vehicle Tractor Beam unmanipulable & non-functioning
+- Fixed - Drake Caterpillar ALL Variants - PU - Vehicles - Tractor beam - The tractor beam object component has noticeable LOD transitions when the player is nearby
+- Fixed an issue allowing players to use tractor beams to move small ships while their shields are still enabled
+- Fixed - Crusader Spirit C1 - PU - Vehicles - Art / GFX - Decals - The A1 nameplate logo appears on the left side of the C1 variant
+- Fixed - HoverQuad - Stanton - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Fixed - Stanton - Shopping Kiosk - Live Fire Weapons / Kiosks - UI - The quantity multiplier will remain blank
+- Fixed - PU - Stanton - NPE - Mission Content / Interactables / Actor Feature - During the New Player Experience Tutorial, picking up the Helmet Objective will cause the player to be unable to look around
+- Fixed - PU - MaxLift Tractor Beam - Character / Interactables / Tractor Beam - Left hand of female character do not hold the 2-handed dedicated tractor beam correctly
+- Put in multiple fixes to help prevent player corpses falling through planet surfaces when falling at speed
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 5 Server Crashes
+- Server Performance Optimizations for Ship Debris

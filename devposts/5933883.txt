@@ -1,0 +1,76 @@
+## Star Citizen Patch 3.19.0 8470603
+Alpha Patch 3.19.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.19.0-PTU.8470603.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Testing Focus
+- General Stability and Performance
+- AI FPS Combat Improvements
+- Lorville Skyline 2.0
+- Salvage Contract Missions
+- Tractor Beam - T0.5 - Item Attaching and Detaching
+- Ghost Hollow Reclaimer PVP Mission
+- Mission Density Management
+- Mining Balancing v01
+- New Player Experience
+Known Issues
+- Lorville 2.0 splash screen is missing from main menu (Next build will have it!)
+- Players cannot see partied player ships when Quantum Linking together
+- Medical Beacon does not return to the contract manager after being abandoned in an unfinished state
+- Front End - Main Menu - Friend Request - Unable to send friend requests on the main menu
+- Multilocation - Locations / Shopping / Interactions - Pharmacy kiosk terminals "Use" interface and Interactions are misaligned
+- Weapon Feature / Game Code - Tractor Beam - If you activate the tractor beam in hangar, you can bring the activated tractor beam back and use it in armistice zone
+- Aegis Reclaimer - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction from ship exterior
+- ARGO MOLE - Vehicles / UI - The interaction prompts for ALL mining turrets are easy to miss/in unintuitive locations for players
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Multivehicle - UI / Vehicles / Mining - Mining UI is appearing in Low Resolution
+- Racing - Locations - A specific rock formations on the Yadar Valley race track are visible to some player and not others
+- Crusader - Security Post Kareah - Core Tech - Physics - Actor / Player - Transitioning from EVA onto Kareah's landing pads has a high chance of instantly killing the player
+- Transit - Area18 - Orison - Shuttles/Trains/Trams - Players are falling through sometimes disappearing trams and shuttles to their deaths
+- RSI Constellation Multivariant - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Multilocation/Multivehicle - Shopping - Store kiosks won't populate locations if certain ships are stored
+- Multitool - FPS Hull Scraping - The Salvage attachment has the VFX of the tractor beam and does not function
+- Security Post Kareah - Mission Content / Art - VisArea - Contraband screens have a visarea issue
+- Yela - Grim Hex - Mission Giver - AI / Missions - Wallace Klim becomes stuck under the floor near the hangars after being streamed out and streamed back in
+## Feature Updates
+Locations
+- Lorville No Fly Zone, Performance, Collision, and VFX Polish Pass
+AI
+- FPS AI Combat Balance
+With 3.19 comes a quality of life overhaul of FPS AI accuracy and behavior. This is intended to make AI feel a bit more realistic, lifelike, and in some ways more forgiving without pinpoint, deadly accuracy at all times, which is something that has caused many of us much frustration while clearing out baddies from underground facilities.
+NPCs should now have a better range of accuracy modifiers, which will ramp up accuracy based on many factors like seeing and losing sight of target, how long the enemy sees it's target after regaining sigh on them, mercy times to assess how much of a threat the target it, and their loadouts. This also implements firing duration and cooldown for rapid fire and other checks with mercy timers that adjust accuracy when determining if a player is a threat or not.
+Gameplay
+- Ghost Hollow PVP Mission Balance
+Increased maximum amount per terminal. Decreased time between ticks. Increased base tick amount by 50% (100 to 150) and increases more overtime. Increased amount after changing user to 75% (from 50%). Reduced the maximum reset cooldown.
+- Mining Sub Items Can Are Now Grabbable and Storable in Inventories
+- Updated Mining UI With better Volatile Cargo Warnings
+Core Tech
+- NPC Performance Optimizations
+We will be monitoring and collecting data on this NPC fix that. We are hopeful this may help with a few other issues as well but are holding off expectations until we can get it out on the PTU with you all for a while to monitor.
+## Bug Fixes
+- Fixed - Grim Hex - Mission Giver - AI / Missions - Wallace Klim becomes stuck under the floor near the hangars after being streamed out and streamed back in
+- Fixed - Mining / Multiple Locations - Players cannot sell mined Janalite or any FPS mined resource at the trading console the inventory where it is stored is not shown
+- Fixed - Performance - Client - High dedicated video memory usage leads to severe framerate drops at Lorville
+- Fixed - Salvage Contractor Missions - UI / Mission Content / mobiGlas - Timer for unlawful salvage mission does not show in the contract manager
+- Fixed - Law / Actor Feature - Players dropping an incapacitated player to their death will not be charged with the death
+- Fixed - Missions / Salvage Contracts - SalvageContractor_Lawless - Progress bar flickers when multiple players salvage
+- Fixed - UI / FPS Weapons / Multi-Tool - Mining attachment - Scrolling to increase or decrease the mining laser intensity has a significant amount of lag making it difficult to operate
+- Fixed - Tractor AR is showing on the top left of screen
+- Fixed - Multivehicle / Components - Tractor Beam - detaching and re-attaching components can cause them to "eject" from the vehicle when subsequently stored and retrieved
+- Fixed - Cargo / Tractor Beam - AR Preview for placing containers on cargo-grid are not visible
+- Fixed - Mining Gadgets - The stalwart does not change the optimal charge window size of minables
+- Fixed - Area18 - Lorville - Orison - New Babbage - Animations - Interactables - Coffee machine missing "Make Coffee" interaction
+- Fixed - Anvil Valkyrie - Vehicle / Art / Graphics - The back and sides of Valkyrie ship have intense vehicle wear
+- Fixed - Medical / Medical Beds - UI - The UI fails to update after healing an injury
+- Fixed - Weapon Feature / Game Code - Tractor Beam - If you activate the tractor beam outside of green zones, you can bring the activated tractor beam back and use it in armistice zone
+- Fixed - Locations / Shopping / Interactions - Area 18 - Dumpers Depot - Dumper's Depot second kiosk has no interaction prompt
+- Fixed - Client Crash - Klescher Ore Kiosk / Janelite - Having a Janelite Harvestable in Backpack and Interacting with a Klescher Prison Crash the Client
+- Fixed - Mining - Selling / UI - Commodity Kiosk - Location Inventory - Janalite does not populate as option for compatible, in-demand admin kiosks
+- Fixed - Aegis Reclaimer - Asset / Components / Tractor Beam - The 2 salvaging Heads cannot be reattached with multitool
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 1 Server Crash
+- Fixed a Server Deadlock

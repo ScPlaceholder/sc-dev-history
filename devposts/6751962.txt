@@ -1,0 +1,51 @@
+## Vehicle Combat and Experience - Patch Notes 3.23
+There are vast changes to Vehicle Combat and Experience coming with 3.23. Here is a rundown of the major changes to Master & Operator Modes for the newly updated Vehicle Combat and Experience.
+IFCS - Master modes enabled across the game
+All spaceships now have a master mode setup. Your ship can be in one of two master modes: NAV and SCM.
+SCM mode is used for any gameplay that is not traversal (meaning going from A to B). Your shields are functional, your weapons work and salvaging and mining can be used normally. However your speeds are harshly limited.
+NAV mode is used for traversal. When activated your quantum drive will start spooling up and once completed you can go very fast (around 1km/s) with your thrusters and your quantum travel techniques are available to you. Weapons and shields will still be powered and regenerating, however shields will be ineffective and weapons are not allowed to fire. If your quantum drive gets powered off or becomes distorted, the high speeds will be unavailable again. Your quantum drive in general is very susceptible to distortion damage so make sure you are not in danger when entering NAV mode.
+Swapping the modes can be done via “HOLD B” (so you don’t accidently swap it) but it will take a few seconds between the mode swaps.
+You will find an indicator for the currently used NAV mode in the top left of your HUD. It also shows a spool time when the modes are being swapped.
+Cockpits - Operator Modes
+Operator modes (not to be confused with Master Modes) change the behaviour of your current cockpit dashboard. They have been in Star Citizen (e.g. Salvage, Mining, Missiles, Guns, Quantum Travel) for years but we are now making them very explicit in the UI. In the top left of your flight HUD you will see a label. The first part of the label denotes the current MASTER MODE (NAV or SCM) whereas the second part of the label denotes the current OPERATOR MODE.
+You can use the Middle Mouse Button (MMB) to cycle through your available operator modes. Unlike before MMB will not just change between GUNS and MISSILE mode but between all available operator modes of your dashboard.
+Specifically for the NAV Master Mode we also added a generic FLIGHT operator mode (FLT) which allows you to just fly around without the Quantum Markers.
+Please note that turrets currently do not have an indication about the current operator mode. This will be added with the MFD rework later.
+IFCS - New flight tunings
+Due to the inclusion of master modes a lot of things have changed in IFCS. All ships got an initial tuning pass for master modes. They are currently relatively close to each other, we will roll out more drastic differences in later quarters. Keep in mind that we’re starting with a clean slate and that we need your feedback to help shape the tuning correctly.
+IFCS - Boost
+Thruster Boosting will now ramp up instead of instantly firing with the full strength. Thruster boost won’t be available for a short amount of time after usage.
+Boost will now also affect rotation rates, the actual increase however is dependent on the capacitor assignment.
+IFCS - Safeties & Precision Mode
+When the landing gear is extended, IFCS will now limit the speed to 20 to 30 m/s. An option to disable those safeties will be added later.
+IFCS - Reworked Cruise Control and Throttle Trim
+The core functionality of cruise control has been reworked to be more like a “sticky” throttle. Instead of pressing a button and the ship lurching forward with max acceleration, swapping to cruise mode will put the ship into a “sticky throttle” mode.
+When you switch to it (by pressing LALT+C), IFCS will use your current forward speed as the goal speed it tries to retain. Pressing W + S (or using your main throttle axis) you can then smoothly decrease and increase that forward goal speed. To reset it to zero, press or hold X (same button as the space break).
+When Cruise Control is active, your speed gauge will show you a second number that shows the goal speed. Cruise control is not automatically cancelled when you swap to decoupled.
+As an advanced function mainly for dual-stick users that use a spring loaded axis for throttle control we added a Throttle Trim function to automatically keep a speed without using cruise control. It works by the pilot setting a certain throttle value (e.g. 75%) and then pressing the “set” button. The pilot can then let go of the stick and IFCS will retain 75%. Any further inputs are scaled based on those 75%. The pilot can release the trim by pressing the appropriate button. Our recommendation is to use a long press to set the trim and a short press to release it.
+There are also additional key bindings that allow you to set the trim to a specific value (50% and 100% available at this point). This allows you mimic the old cruise mode behaviour. Search for the button binding Throttle - Trim - Set to 100% under Spaceship - Movement. You can reset the trim by pressing X.
+Currently there is no UI for trim, the new throttle widgets for the Q2 release will show it though.
+For advanced users: If you want the input axes to reset when you swap into cruise mode, set the following CVAR: v_ifcs2_input.throttle_mode_swap_behavior = 0
+Persistent Ship Settings
+We removed a lot of user options in favour of replacing them with persistent ship settings. Certain things like decoupled, ESP, GSafe, UI gunnery magnification and a few other things will now be persistently saved for each individual ship. For the time being you need to use keybinds to change them. For the upcoming MFD rework in future releases these can also be changed by dedicated MFD screens.
+Gunnery - Precision Targeting
+Precision targeting is available on all pilot seats and turrets. You get the most use out of it with gimballed weapons. On switching to Precision Targeting (LALT+RMB for now) the view will zoom in on your current target and (if you have scanned the target) all available sub-targets will be highlighted. Use your crosshair to “paint” the target at a certain position and your weapon computer will automatically lead your gimbals to hit the target at the marked spot.
+Precision targeting will also heavily reduce fire rates on certain weapons to decrease the spread.
+Please note that there is a outstanding bug that does not create graphical outlines for sub-targets that are positioned inside the OC of a ship. Shield generators, etc. will currently not be visible.
+Gunnery - Gimbal Modes and turrets
+By default all ships and turrets are now equipped with gimbals. There are a few exceptions to rule, e.g. when the guns have been built into the frame of the spaceship itself, e.g. the nose guns of the Vanguard, the S7 guns of the Ares or in general on all Vanduul ships.
+That means just as with pilots, turret gunners now swap the used gimbal modes with G.
+In cases where a ship has a mix of gimballed and fixed weapons, the fixed weapons will NOT fire outside of the fixed gimbal mode.
+Auto gimbal mode has been removed for pilots and is now exclusively available to turrets for the time being.
+Gimbal modes are now also affecting fire rates and (within precision targeting) the spread angles. Fixed modes have the highest fire rate, i.e. highest DPS output.
+Turrets do not have a functioning weapon status UI yet. This will be fixed with the MFD rework.
+The ship loadouts also have been updated. Where possible the gimbal mount sizes were updated as from now on a gimbal of a specific size will carry a weapon of the same size.
+Gunnery - PIP changes
+There are too many changes to the gunnery system to count them all up but here the most player facing ones
+- PIPs are now calculated per weapon and are visibly summarized in groups with the same projectile speed
+- The more diverse weapons you mount, the more PIPs will be visible
+- The following points are persistent options. In 3.23 they can only be changed via keybinds, when the new MFDs release you will also find them there:
+- PIP Grouping allows you to change whether PIPs are combined or shown for every individual weapon
+- Gunnery UI magnification will increase the visible size of the PIPs and the crosshair
+- Precision Lines will give you an indication of how close you need to be on target based on the aim assist and the spread values of the used weapons.
+- PIP Fading allows you to set whether the PIPs fade away when they are directly over the target or too far away from the crosshair.

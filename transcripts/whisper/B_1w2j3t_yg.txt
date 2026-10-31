@@ -1,0 +1,707 @@
+# Star Citizen Live: Q&A Contested Zones and Asteroid Bases
+# https://www.youtube.com/watch?v=B_1w2j3t_yg
+[    0.1] Hi everybody, welcome to another episode of Star Citizen Live. I'm your host Jared Huckabee. What have we called this week's show?
+[   10.1] Q&A Contested Zones and Asteroid Zones. No, Contested Zones and Asteroid Bases.
+[   14.8] I let David do the Tyvee on this week, so I didn't do it myself. I didn't know.
+[   19.5] If you've never seen Star Citizen Live before,
+[   22.2] it's an absolute train wreck at the end of our week where we take a couple of a handful of our developers.
+[   28.4] We ask them to stay late, especially if they're in Germany,
+[   31.6] and take a little bit of their time to answer questions from you, the Star Citizen player.
+[   37.3] As usual, we put up a thread up on Spectrum earlier in the week where we collected your questions.
+[   42.4] You got to vote on which ones you wanted to see answered most.
+[   45.4] And then our guests this week went through the questions, picked the ones that were appropriate for their
+[   52.1] areas of expertise and work, and we're here to talk about them now. Before we get to that,
+[   57.7] let's go ahead and introduce our esteemed group of Frankfurt level designs.
+[   62.6] Level design? You're all level design. Level designers.
+[   68.4] Let's start with Khan. Hey Khan, tell everybody who you are and what you do for Star Citizen.
+[   74.0] Hey guys, I'm Khan, Lead Level Designer for Star Citizen.
+[   79.4] And when does a Lead Level Designer do?
+[   81.9] A Lead Level Designer manages a lead, not a lead.
+[   86.6] A team of level designers.
+[   89.4] And work through new initiatives like the Contested Zones and Astride Stations.
+[   95.7] Do you... How often is there an annoying American in the office that just does the William Shatner bit with your name?
+[  106.9] Quite often, but I think the last name is a bit more difficult.
+[  110.7] Yeah, I've already used up my swear, so I'm not even going to take a try at the second name.
+[  116.5] John, tell everybody who you are and what you do for Star Citizen.
+[  120.5] Hi, I'm John. I'm a level designer too, and I tend to do whatever Khan tells me because he's my boss.
+[  127.8] What makes it a level designer too?
+[  132.8] I did a good enough job as level designer one.
+[  138.2] Is that quantifiable? Is that on paper somewhere?
+[  142.2] I mean, obviously there are criteria for promotions.
+[  146.2] I was level designer one for a couple of years and gained enough experience to earn that promotion.
+[  151.7] So I'm a level designer too now.
+[  155.2] And last, Manuel, tell everybody who you are and what you do for Star Citizen.
+[  159.7] Hey, I'm Manuel. I'm a senior level designer.
+[  164.0] Last I did the implementation for the personal hangers, for the player hangers.
+[  170.1] But you might also know me from Area 18, Prison and some other things.
+[  175.1] And soon, asteroid bases.
+[  176.9] People might know you from Prison? Sounds like a story.
+[  180.6] Maybe. Maybe you've seen me there.
+[  183.4] Are you mean Klaisher?
+[  185.3] Yes.
+[  188.8] Senior level designer, level designer two.
+[  192.4] Which ones were?
+[  197.3] I'm two steps below John.
+[  199.5] Jesse.
+[  200.5] The other way around.
+[  202.5] No, no, no. Not that it matters.
+[  205.5] I was in the Frankfurt offers to film for this episode a few weeks ago.
+[  210.1] And you guys have a very collaborative work environment here,
+[  214.8] where you were always over at one person's desk and another person's desk helping each other out.
+[  217.7] Even during the interviews, some of you sat next to each other during the interviews
+[  223.4] and helped each other out with the answers and stuff.
+[  225.5] I make a joke about level and everything, but you guys are clearly a very tight knit team.
+[  230.4] Plus, we did that neat ISE even earlier in the season,
+[  233.8] where we got to meet the team here while you were visiting
+[  237.1] and talk more about your work and stuff.
+[  239.6] You guys have shown, I think, that you guys are all pretty like this.
+[  243.4] Maybe I'm managing it.
+[  245.1] And unlike John, I only do sometimes what Khan wants me to do.
+[  250.7] That's the benefit of climbing those ranks.
+[  252.4] You can start to do your own thing.
+[  254.2] Fair enough.
+[  255.3] All right, so we've collected some questions from the backers.
+[  258.7] Let's go ahead and jump right in.
+[  260.2] These are in no particular order.
+[  262.2] These are going to bounce our two main topics for this week's show
+[  265.2] are the new asteroid bases and the counters within
+[  268.2] that are scheduled to come for the upcoming Alpha 4.0
+[  271.1] and the new contested zones, which are the PVPVE kind of almost,
+[  277.9] we hesitate to use the word dungeon experience.
+[  280.2] It's the closest analogous term to other games,
+[  284.5] but it's not quite accurate for us that are within the Pyro Space Stations.
+[  288.9] And then we'll jump into some generic level design stuff.
+[  292.2] First question off the bat says, what's the plan for all the new locations
+[  297.6] so that they do not end up being quote unquote boring bunkers
+[  302.6] with the same missions on a loop over and over and over again?
+[  309.9] What's the do with the honors?
+[  311.4] I guess I do it and starting with the asteroid base bit.
+[  317.2] I mean, asteroid bases are a bit like bunkers 2.0,
+[  321.6] more or less like a development.
+[  325.1] In the sense of it's a more condensed space,
+[  329.0] but we try to segment them a bit more like in different categories in disregard.
+[  334.3] Like also encounter design, like encounter asteroid bases that we have
+[  339.2] over that we plan for covering more like sandbox mission designs.
+[  344.7] Then we want to have more explorative ones and then also contested ones
+[  348.9] that tie more into the contested zone experience that Khan and John are working on.
+[  354.7] But yeah, we try to cover more different gameplay types,
+[  357.3] more different player interests or play interests in certain game mechanics or types.
+[  365.6] Can you give us an example of something I don't want to go through every aspect of the experience
+[  370.8] we just did an ISC on it, but can you give me an example of something
+[  374.3] that players will do in asteroid bases specifically?
+[  378.5] I mean, if you go over to one of the encounter asteroid bases, you can find bodies,
+[  382.7] you can kill X amount of guys.
+[  386.5] That's more like for the mission ones, but they will always be populated,
+[  389.6] so you don't need the mission to go there.
+[  391.4] You can just go there and check it out yourself.
+[  393.7] But these are more like the playground for missions,
+[  396.6] but you can also find other ones that are inhabited and you can just explore and do puzzles.
+[  402.1] At least that's the plan going ahead.
+[  404.3] And certain kinds of puzzles and treasures to be found?
+[  408.3] Yes.
+[  412.1] With contested zones, because these are these open areas, what's being done to avoid bottlenecks
+[  419.9] and other obvious camping spots that negatively impact the player experience?
+[  427.8] I guess I should go for that one, John, right?
+[  431.1] How are you both going though?
+[  432.8] Okay.
+[  433.7] We're looking for multiple entry points, like establishing multiple entry points that
+[  438.7] can come from the interior, but also from the exterior of the station.
+[  442.2] So that, you know, we just don't have one bottleneck.
+[  445.6] I mean, I guess you kind of spread the options out a bit.
+[  450.1] We can't fully eliminate the possibility of this, but at least giving players the option
+[  455.7] and giving them some sense of opportunities in and around the station to enter this contested
+[  462.7] zone will definitely help it out.
+[  466.1] Yeah, exactly.
+[  466.8] I think whenever you have an entrance into a place like this where PVP is possible,
+[  471.6] it naturally creates a bottleneck.
+[  473.9] You have to be able to enter the space and there could be people camping that space,
+[  479.1] waiting for you to enter.
+[  480.1] So what we can do as designers is try and offer alternate paths in, as Khan said.
+[  485.6] You know, there are side elevators.
+[  488.5] There are ways in from the exterior of the station.
+[  491.7] So we're just trying to provide as many different opportunities to enter that space
+[  494.8] so that it's more difficult to, you know, use those bottlenecks if you are of a grieving mindset.
+[  502.0] Yeah, what's also important is that there's like exfiltration points inside these contested zones.
+[  507.1] So if you hit a specific depth of the contested zone, you can get to a part that offers you
+[  513.4] one way exit that brings you to the social area.
+[  517.7] So back to practical safety.
+[  520.6] Interesting.
+[  521.7] And you're talking about things that we can do to battle or defeat the bottlenecks and stuff,
+[  530.4] the camping and stuff like this.
+[  532.2] But some aspect of that is intentional.
+[  535.6] Some aspect of that is not a bug.
+[  537.2] It's a feature.
+[  537.9] It's these are still intended to be PVP zones.
+[  540.7] There is, they are intended to still have a certain level of friction.
+[  547.3] The balance in all of this is in finding the right level of friction,
+[  553.2] not eliminating all the friction altogether.
+[  556.5] Yeah, that's a tough part of designing a map like this.
+[  562.5] Definitely finding the right balance.
+[  565.3] Yeah, ultimately it is a PVP space and grieving, unfortunately,
+[  569.7] something you try to design against.
+[  573.2] But this is a kind of a whole philosophical debate we could get into about grieving versus PVP.
+[  578.8] But grieving is just PVP ultimately at the end of the day.
+[  582.4] There's technically nothing wrong with someone finding a defensible position and using that
+[  586.8] as an advantage over another player.
+[  590.1] And that aspect of being on the defensive in the PVP kind of equation
+[  594.0] is you dealing with those bottlenecks and those camping positions.
+[  598.4] Which cover do you use?
+[  600.6] How do you approach a room?
+[  601.6] Do you breach the room?
+[  602.7] Do you use grenades to flush out a room before you enter it?
+[  607.1] Scouting opportunities.
+[  608.1] And there are things we can do as designers to aid that as well with cover placement
+[  612.4] and lighting and things like that that can alleviate these issues.
+[  618.0] But ultimately you can't get rid of them and you probably shouldn't
+[  621.1] because ultimately this is Pyro and this is a PVP space as well as PVE.
+[  626.3] It's also part of opting in, right?
+[  628.1] This is like you want to do PVP.
+[  631.6] And then I mean that can also spark like new things.
+[  634.7] Imagine like back then in the days in WoW Classic, right?
+[  637.5] When Crossroads was raided and then suddenly you try to ally with some friends or like
+[  643.7] people and just like try to push back on things.
+[  646.2] And I think that's can be really interesting.
+[  649.0] Yeah.
+[  649.3] We obviously do want to, this is not the place to do a giant griefing versus PVP
+[  656.4] discussion.
+[  656.9] We've actually done that on SEL a number of times.
+[  662.0] But ultimately just because I can already see the chat now.
+[  665.6] Hi Twitch chat.
+[  666.8] And I can already imagine the YouTube comments later.
+[  670.0] At the end of the day, I think a baseline here is that there has to be
+[  678.1] an alternative.
+[  679.0] There has to be a solution available to the player who's being attacked in order to turn the tables.
+[  687.7] When there's not a solution, when there's not an option that's accessible to that player
+[  694.2] to continue to go on and have a good experience, to continue to do the things that they want to do,
+[  699.8] that's when PVP turns to griefing.
+[  702.8] When you take away the gameplay experience, not just make it difficult, that's PVP.
+[  710.5] But it's a fine line.
+[  712.2] And I think every US city, we could march a parade of 500 developers in front of this camera
+[  718.3] and you'd probably hear solid 400 different answers about what that is.
+[  722.8] So for those of you who are already working up your YouTube videos and stuff saying,
+[  728.5] CIG says this or CIG says that, that's not what's happened now.
+[  732.3] We're hearing a couple people express some individual opinions on what the difference is.
+[  736.9] And again, I promise if you brought 400 people in here, you'd get 300 different answers.
+[  742.0] So at the end of the day, it's about our job here in this situation.
+[  748.4] This is me where I'll put on the CIG hat and speak on behalf of CIG here.
+[  752.0] Our job in those situations is to find alternatives for the players who are suffering
+[  758.8] at the hands of PVP.
+[  760.0] Find ways that they can counter it, provide ways that they can counter it,
+[  763.4] provide alternatives that still provide the same experience, other places where they can go,
+[  768.0] other things like turrets and things like factions, that NPC factions that can come in
+[  774.9] and help defend, to find the things that can help when a player runs out of options.
+[  782.0] And the only thing they can do is be killed over and over and over again.
+[  788.6] That's where there's a problem.
+[  791.6] I said some friction is intended, but it's all about finding that point.
+[  799.1] We're talking about contested zones and asteroid bases.
+[  802.9] How widely spread are these contested zones and asteroid bases around the Pyra system?
+[  808.8] The Pyra system is pretty darn big.
+[  812.9] What are we talking about as far as how far these are spread?
+[  818.2] So currently we are planning for about five contested zones and these are in a select
+[  825.3] a few stations, all pretty evenly spread along the Pyra system.
+[  831.1] Some of them being in very specific places that are only be able to be accessed once you progress
+[  840.2] to a specific stage or once you have actually gained a couple items, you can get to that location
+[  848.5] and unlock the interior basically. So multiple contested zones might not be immediately accessible
+[  854.8] to the player. There is some that will require you to complete others to them find the keys to
+[  861.8] others basically or to specific branches within these contested zones. So it's a mix and match a bit.
+[  867.4] Okay. Is there anything intended or planned that would start you in one contested zone
+[  876.5] and make you go to another contested zone to finish or complete?
+[  881.8] Or are they just contained experiences within each one?
+[  889.0] So, John King explained this a bit better after me, but the intention is that we have contested zones
+[  895.8] or we give certain categorization to certain branches or sections of the contested zone. So we
+[  903.1] have a short-term kind of branch, for example, we have a mid-term and a long-term one. And in the
+[  908.0] long-term it is a requirement to find specific ingredients in other places to be able to access
+[  915.9] that long-term branch. And whilst short-term or mid-term ones are there to complete the dungeon
+[  924.0] itself or basically go in there and do some farm runs or loot runs.
+[  930.4] Yeah. Gotcha. So there's not going to be too much advantage at just holding up in one. You're not
+[  935.4] going to be able to complete the ultimate objectives of these contested zones by just staying put in
+[  941.5] one place and holding it forever. You will have to go to multiple of them and progress.
+[  949.0] Yeah. You might do it to take away somebody else's enjoyment, but you won't gain anything
+[  954.0] as far as the progression of your character and stuff by doing so.
+[  959.4] Okay. With asteroid bases, will there be asteroid bases without enemy NPCs or non-violent gameplay
+[  967.3] as well? For example, scavenging, environmental puzzles, rescue missions, finding missing people.
+[  972.2] Is there something to do in asteroid bases for players who just want to bring peace to the galaxy?
+[  977.6] I'm not sure about peace, but certainly. The current intention and goal we have
+[  987.2] in developing these is like as previously touched on a bit before. The encounter ones are solely
+[  992.6] the sandbox environment for the whole mission stuff. So people who want to engage in missions and want
+[  997.7] to engage in combat and do these things. But I also want to have this like more safer spaces.
+[ 1003.9] I mean, you can't prevent PvP from happening, obviously, but the exploration ones are more
+[ 1010.5] dedicated to solving puzzles and finding like rewards by entering rooms that are not so obviously
+[ 1018.5] like enterable. You have to do some things, not hack a door, but find means around the space and
+[ 1027.6] then get more like higher rewards in there. So yes, that's like no NPCs and anything is planned in there.
+[ 1036.9] Manio, can you give me a big like a heroic pose, something like this real quick?
+[ 1044.3] Everybody screenshot that with the words, I don't know about peace underneath that.
+[ 1050.4] I'd like to see that on Reddit before the end of the show, please.
+[ 1054.4] Are there plans or does the tool set allow for the creation of non-derrile like dasteroid bases,
+[ 1061.4] whether functional or productive? Like could they be could they be seen in a system like
+[ 1065.2] Stanton but as abandoned, but or inhabited the mooring? Oh, oh, too, but they're going
+[ 1071.7] way into the lore there. The mooring like Nix. So basically, can we make asteroid bases that aren't
+[ 1078.0] just rundown beat up abandoned places is what they're asking. I mean, yes, the whole concept
+[ 1084.3] of asteroid bases is quite expandable and it has lots of potential because it's a very small
+[ 1090.7] scale and doesn't need that much development time like a big flagship location. It's not for the
+[ 1097.3] initial release right now. So we are focusing more on the three archetypes that we are currently
+[ 1102.2] looking into. But there's certainly a lot of potential and stuff we would like to do going
+[ 1107.5] forward in the future and expanding on social spaces as well. Okay, yeah, one thing when I when
+[ 1114.6] we prototype these one aspects that we envisioned was for refuelling. Like instead of needing a large
+[ 1122.2] station, you could have these astro bases like strategically placed around where you could,
+[ 1127.9] for example, refuel, rearm. So we definitely envision this as an expandable feature. But yeah,
+[ 1135.9] something we want to do in ISC just just yesterday, you know, which was about the more social aspects,
+[ 1142.4] not the combat stuff. But we mentioned that, you know, the pyro system is so much bigger than
+[ 1147.1] Stanton that the distances between planets are such that having to strategically figure out where
+[ 1154.6] you can stop and refuel along the way just to get to the outer ends of the solar system is
+[ 1160.4] an important part. And that's what you just mentioned is a great kind of follow up thing. I mean,
+[ 1165.2] obviously, we've been adding to the Stanton system for years and years and years, we'll continue to
+[ 1168.7] add to the pyro system after the release of 4.0. And that's an easy consideration. You know,
+[ 1174.5] well, maybe there's an asteroid base gas station there and that'll help deal with a stress point
+[ 1180.0] along that travel route and stuff. Yeah, I think that's more interesting as well, because, you
+[ 1184.2] know, we have these gigantic stations. But, you know, when you travel down the motorway in the
+[ 1189.4] middle of nowhere, you hit a little gas station. And I think there's some fun there, there's some
+[ 1194.2] different kind of style and aesthetic we could use, a different experience than, you know,
+[ 1199.7] having to go into a station and everything that comes with that. Okay,
+[ 1206.8] last we got. Let's go back to contested zones for a little bit. We talked a little bit about this
+[ 1212.0] with the sometimes you have the direct route out, but I'm willing to bet there's more here.
+[ 1216.5] How will we be able to extract something from the contested zones if people spawn right next to it
+[ 1222.4] and are back in one to two minutes after we kill them? It sounds super annoying to deal with.
+[ 1229.2] So we, yeah, we obviously have considered that and have you.
+[ 1235.6] I'd like to hope so. So the way that the contested zones is by design, the deeper you go, the better
+[ 1244.4] rewards there are to find. And if, for example, you encountered a PVP situation or you yourself
+[ 1251.3] were killed by a PvE encounter, you know, getting back to where you were, it's not so straightforward.
+[ 1256.6] It's not just a case of a one, two minute run in if you were, you know, deep within the contested
+[ 1261.8] zone. Not to mention that, you know, you'd have to rearm yourself. I mean, you could run in with your,
+[ 1266.8] you know, your suit and a pistol, but will you be able to successfully get back to your body if you
+[ 1273.1] don't equip yourself well? And similarly, if, you know, in a PvP situation, if you kill someone,
+[ 1279.0] you know, you succeed at PvP, you take their stuff, are they going to pop up a minute later?
+[ 1283.5] I doubt it. You know, within the contested zone, not only are there, you know, traps,
+[ 1290.9] you know, hazards, lots of PV enemies that will be respawning. So even if you cleared out and,
+[ 1296.9] you know, your path behind you, they're going to be respawning in like you would see in a typical
+[ 1301.8] dungeon. You also have exfiltration routes available to you as Khan said earlier. So,
+[ 1308.7] you know, you could decide that that person might be coming back for you again, they might turn up,
+[ 1312.6] you know, in five minutes and 10 minutes, they might bring friends. Now's my time to get out.
+[ 1317.3] I'm going to head for that exfiltration route, leave, get back to the social space,
+[ 1321.5] and, you know, take my loot home. So I, this is something that we obviously want to see play
+[ 1327.8] out. We want to see how players, you know, in testing. And if any changes are required,
+[ 1335.7] we'll look to do that. But I think the design currently will hopefully avoid that.
+[ 1343.5] Someone in the chat asked if there were that lightsmith asked, will there be multiple ways in
+[ 1348.0] and out? Yes, we mentioned that earlier in the show, lightsmith, you can watch the replay up on
+[ 1351.8] YouTube if you missed that earlier information. You keep mentioning traps. And this was even
+[ 1356.8] during the old record, old, the filming for the last ISC. Every time you say traps, I keep imagining
+[ 1362.9] like a classic Dungeons and Dragons mimic, like a thing that looks like a, looks like a treasure
+[ 1367.8] chest, looks like an item box, and then it explodes and sprays gas at you and kills you.
+[ 1374.2] Like, like, I don't know if we've got time to squeeze it in, but would you guys, for me, consider
+[ 1380.4] some, some explosive item boxes that look like, oh, look, there's loot in there.
+[ 1386.1] I think I can say, speak for everyone, when I say that we would love to develop a whole range
+[ 1390.2] of traps and hazards. You know, we are implementing ones that we have currently like tripmines,
+[ 1395.6] explosive canisters, hazard zones, radiation, fire, but a mimic chest would be amazing.
+[ 1402.5] Yeah, it can't just be, it can't just be, there's nothing you can do about it. Like,
+[ 1406.5] you got to be, you got to be able to scan it. You got, there's got to be a way to detect it and
+[ 1409.7] stuff and, and, and avoid it. You can't just be random, oh, well, I did nothing and blew myself up.
+[ 1415.9] But, you know, for the people who are in an, in too big a hurry and don't do the due diligence,
+[ 1420.1] those people deserve to have a box blow up in their face. I mean, hey, maybe it's like a
+[ 1423.8] weird alien creature, right? And it's, it's in the form of a chest. I was about to say like, yes,
+[ 1430.6] yes, have a face hug, right? Yeah. Implement something in you and then you die in the next one,
+[ 1435.1] trying to loot your body. Suddenly it bursts. Okay. What do you think the, what do you think
+[ 1440.2] the over and under are that I can convince Daemon DeVoe to create a mimic, like an actual creature?
+[ 1449.8] All right. Not going to say, I'm not going to say it's going to happen, but
+[ 1454.1] it's now my new mission in life and I don't care about the show. So I'm just going to go do that.
+[ 1457.7] Thank you. What group sizes are contested zones designed around?
+[ 1468.2] Yeah. Definitely, like, you can't do it solo, but we wouldn't recommend that. Like John just
+[ 1475.2] said earlier, these are PVP, PVP centric spaces, even if you're where there were no players
+[ 1481.9] in your vicinity, you'll still face quite the challenge. So our recommendation. So at least
+[ 1486.6] go with one friend. We are currently envisioning like, or in our test, at least we are going in
+[ 1493.0] by four, five player groups with the recent test also involving another group. So,
+[ 1500.0] but yeah, we're seeing it to be able to scale up to 40 players per dungeon.
+[ 1507.7] Now you said this isn't the first time you've said they can be soloed. Is anybody
+[ 1513.2] ever actually, are you talking about like, like technically, like the way that the inside of
+[ 1517.3] a ship can technically catch fire if that, if the temperature outside is hot enough? You're
+[ 1521.4] saying it can technically be done or has there actually been somebody through testing that has
+[ 1525.9] managed to just run through the whole thing by themselves?
+[ 1531.0] Did anyone? I don't think I did. Did you, John?
+[ 1535.1] It's difficult. I mean, initially, you know, in the earlier sections, I think it's doable. It's
+[ 1541.7] if you're good enough, it's manageable. But we do scale up like the enemies, the DP you get,
+[ 1547.0] and the intention is that, yeah, you might need to bring some help.
+[ 1552.2] Cry? Sometimes if the AI is broken, you can do it.
+[ 1556.0] Yeah, about server maybe. Yeah.
+[ 1560.8] A bunch of a combination of letters and numbers followed by ages and quiz it,
+[ 1564.3] or in the chat says this cannot be live. It's way too professional.
+[ 1569.2] What if and show are you watching?
+[ 1573.2] I appreciate compliments. Thank you. Yeah. Thank you.
+[ 1576.8] I feel like I'm a nervous. Obviously, we knew that message was going to be sent and we responded
+[ 1582.1] because this is recorded. John, is that John? Is that your mom?
+[ 1587.7] Say just inquisitor your mom.
+[ 1590.5] Will asteroid bases appear as quantum markers always, or is exploration mission,
+[ 1598.4] or is exploration stuff necessary to travel with them?
+[ 1602.1] No, they will be always there, always present for you. As I said, you can also go to them
+[ 1608.3] if there's no mission running, even the mission sandbox you want, the encounter
+[ 1612.5] asteroid bases, you can travel there without requiring a mission. There will be AI population
+[ 1618.6] regardless. It's the mission stuff added on top of that. But all of them you can see from the get go.
+[ 1624.9] There might be plans for the future. That's what I wanted to get at. You're speaking about how it
+[ 1629.8] is in 4.0. In our initial release, anybody that can remember the initial release of the PU,
+[ 1636.6] the Stanton system back in late November, early December, 2015. You look at that version of the
+[ 1642.9] Stanton system versus the version of the Stanton system you have now. Obviously, these things
+[ 1646.0] change. These things grow over time. Pyro will be no different. Even as we continue to add star
+[ 1651.8] system after star system after star system after that, we're not our intentions never to abandon
+[ 1656.5] the previous ones. There are new stuff coming to Stanton in 4.0. We haven't gotten to talking about
+[ 1662.1] that yet. It will be on ISE in a couple of weeks. But 4.0 isn't just all Pyro and we forget Stanton.
+[ 1669.3] We're talking about Pyro as it is in 4.0. Obviously, as we continue to introduce more
+[ 1676.6] exploration based ships, everybody knows the Zeus is on the public road map coming up here
+[ 1683.7] in a future release. One of the variants for that is an exploration based stuff.
+[ 1689.4] People here are very keen to start developing exploration based stuff like discovering transient
+[ 1697.3] jump points, finding an asteroid base or maybe even a derelict space station that nobody's found
+[ 1704.2] before. Those stuff will become more prevalent as the footprint gets larger. The footprint of the
+[ 1711.8] game gets larger and larger. We're all very excited to do that. Not in 4.0, but...
+[ 1717.7] No, not yet. But we have lots of ideas internally and we really would love to expand and iterate on it
+[ 1723.7] and more things. Another asteroid base question. We mentioned that some of the asteroid bases had
+[ 1729.4] copians inside. Are these placeholders later to be replaced by more fitting creatures? Oh,
+[ 1736.1] this person's calling you out. Apparently, they don't want to be copians should be an asteroid
+[ 1740.9] basis. But... I think they can make narrative sense in there. You can have domesticized
+[ 1748.1] copians. They bring with them. As far as I know, we have variants inside the box. We actually have
+[ 1755.0] a domesticated variant. They just look feral right now. That will be more fitting looking.
+[ 1763.7] But I don't think it's a fast stretch that they can narratively be around there. But if we have
+[ 1769.3] more fitting creatures as well in the future, that's it. But for now, it's what we have, what we
+[ 1774.8] are working with. Human NPCs and then the copians. We try to utilize what we have to create more
+[ 1783.1] variety and more interesting combat with the ingredients that we have.
+[ 1788.7] Manuel, what's the interest to have a space cow in an asteroid base? Oh, yes.
+[ 1793.1] Yes. We don't really talk about it for the rest of the season. But the domesticated
+[ 1799.8] copians are one of the new aspects that are coming online with 4.0. These are domesticated
+[ 1806.2] for NPCs and stuff. We're not stealthily adding pet gameplay to players just yet.
+[ 1814.5] No, they're attack dogs essentially. We have them in contested zones. The narrative idea is that
+[ 1820.8] they have been breeding them and training them and they will attack you. So as you engage a group
+[ 1826.7] of outlaws, there could be a couple of attack copians that they have that are charging at you,
+[ 1831.3] which I think provides a really interesting gameplay dynamic. You're not just dealing with
+[ 1835.0] human men who's now. You also have these fast moving low creatures that are attacking your
+[ 1839.4] ankles. And it adds a whole new aspect to combat. And the process of developing copians that react
+[ 1846.5] to NPCs. There are entities that they don't attack that are friendly to them that can issue commands
+[ 1853.3] and stuff. This is all a step closer to what I could already see. Some of you are already thinking
+[ 1860.1] pet and player ownership of stuff. It's not to say that you'll be able to own a copian specifically.
+[ 1864.8] It's not to say that you don't. So say, I don't know the answer. But I know that there hasn't
+[ 1871.1] been a week. There has not been a week in the last three months where I haven't heard either
+[ 1876.0] CR or Rich mention something about we got to get pets in there and stuff. So this is the next step
+[ 1881.9] towards that. Yeah. I mean, to go back to what Manuel said, I think as he said, I think we can
+[ 1889.9] narratively explain why there are copians on the unbanded asteroid bases. I think it would be a
+[ 1895.4] shame to remove them just to lessen the encounter variety. And I definitely agree that it would
+[ 1901.7] be cool to get those like the mimic face hugger chest we talked about. These kind of alien creatures
+[ 1907.3] that you would expect to see on about asteroid bases in the future would be amazing. But for now,
+[ 1912.1] I think they do offer something useful. Yeah, I said nothing about face hugger. That was all for you.
+[ 1918.5] Nope, that's you. I just wanted a little chest that killed people. I didn't say anything about
+[ 1924.7] how to hug your face. That was what they do, right?
+[ 1931.1] If you use an opinions of Joe, do not represent those. All right, next question.
+[ 1936.6] Will some contested zones vary in terms of difficulty and overall loot? For instance,
+[ 1941.5] one station having relatively fewer enemies and loot compared to another with an abundance of
+[ 1945.8] heavily armored enemies and very valuable loot? Yes, we are alternating some of this based on
+[ 1954.0] the contested zone you're in. We also have a very specific one, which we call the ghost arena,
+[ 1960.2] but don't really want to spoil that yet. At the same time, so for us, what is really important
+[ 1968.1] when it comes to the ward stuff is that things are actually substantial and unique. What we put in
+[ 1976.0] there has to be, has to not be widely available, right? So, and that's the thing that we want to
+[ 1985.0] really balance out with the rest of the universe to make it worthwhile and to make
+[ 1990.6] to balance it also out between the contested zones themselves.
+[ 1994.7] Yeah, one of the, I think anybody who's played Star Citizen for a while knows that one of the,
+[ 2001.2] I'm just going to call it weird, it was one of the weird limitations of the mission system and
+[ 2005.6] the game itself was the inability to distribute rewards, in-game rewards to players. It's one of
+[ 2014.7] those things that somehow with the development of everything else and whatnot, it was just always
+[ 2019.6] that we'll get to it, we'll get to it, we'll get to it and we just never seem to get to it.
+[ 2025.5] In 4.0 and beyond, a big chunk of the mission feature team, the stuff like this, has now been
+[ 2032.3] going to developing, to adding that functionality in there so that now you saw it with the operation
+[ 2038.3] overdrive and stuff, and now there are things you can do in-game and now get rewarded for an item
+[ 2043.0] in-game. So that kind of technology expands and continues into asteroid bases, into contested
+[ 2049.3] zones and into things like a ghost arena that we're not going to talk about, stuff like that.
+[ 2055.9] You're going to see more and more unique things that are rewarded to you through playing the game
+[ 2062.2] as development continues to 4.0 and beyond and stuff like that. That's really exciting because
+[ 2067.7] I think if I can, if I can speak, you know what I'm speaking for the devs, but if I can speak for
+[ 2073.1] the fans for a while, I think the sense of progression, the sense of I'm doing things and
+[ 2078.6] I'm earning things that I can't get anywhere else, it's like this, has been missing from the game
+[ 2084.2] for a little while. So it's one of the more exciting aspects to me of 4.0 is this work that
+[ 2090.3] we're talking about today, the contested zones and the asteroid bases, because to me, this seems
+[ 2095.8] like the birth of, the very beginnings, the birth of actual player progression to something greater
+[ 2103.0] and I'm really excited about that. So I hope that's coming across in the highest scene in this. If
+[ 2107.9] it's not, I'm sorry I tried. Next question. What's the ghost thing? Stop being a weenie, just tell us.
+[ 2117.0] The ghost thing? The ghost of the natural elements. What's it called? Ghost arena. Oh, that one.
+[ 2123.9] I guess. Oh, I wish I could describe it. Do you know running man? I guess. Okay, that's all
+[ 2132.6] I'll say, that's enough. That's enough. Cool. I love running man. Do contested zones have one main
+[ 2140.6] objective or are there different areas with things to gain from each of them? Yes. So this ties into
+[ 2148.7] what Khan was just saying in terms of progression and rewards. On the kind of smaller scale of a
+[ 2155.5] singular contested zone, we do also have a bit of variety in what you can do and your goals.
+[ 2162.7] We kind of have broken it into three areas. So you have like a short term goal where you just
+[ 2168.6] want to go into a contested zone. You just want to get some loot, kill some enemies and get out.
+[ 2173.2] And that's kind of one quick playstyle we're looking at. A second one is that maybe you want to
+[ 2179.8] complete the entire contested zone. So get to the final reward room, complete the entire thing.
+[ 2186.7] And that takes a little bit more effort and maybe coordination and maybe some help.
+[ 2193.0] For example, we have these security doors that require keys, specific keys that you'll have
+[ 2199.1] to find from within the dungeon to be able to progress into the deeper parts. So that's kind
+[ 2204.9] of a second playstyle that we're envisioning. And the third one is, as Khan said, this overall
+[ 2209.9] progression where you now have to engage with multiple contested zones with Astro bases and
+[ 2215.0] kind of go along this whole flow. And all the rewards are scaled to kind of those,
+[ 2219.5] the effort involved in each of those.
+[ 2222.2] Mopsphere in the chat says, I want to know because I want to marry that sandworm.
+[ 2229.3] You know, Mopsphere, if you believe in yourself and you work hard, all things are possible.
+[ 2239.7] Except that. Well Astroid bases have any enclosed docks that would handle a capital class ship.
+[ 2248.8] For example, a capital class hangar with atmosphere, but with an enclosed zero gravity space.
+[ 2253.8] This is a really specific question. Will you make this very specific thing for this very specific person?
+[ 2261.9] So I probably have to disappoint you in this regard. So the initial set of Astroid bases,
+[ 2270.4] we are putting out, right? We don't do social spaces. So there's no official landing. So no
+[ 2276.1] hangars or landing pads, services whatsoever, right? So that will come down later on the line.
+[ 2284.2] And even then, if we add the more smaller social spaces like gas stations and so on,
+[ 2290.4] it's probably more to sort of smaller medium sized ships, more not to big, big capital size ships.
+[ 2299.7] We might have docking tubes at some of them later on. So that could be your only access point
+[ 2305.7] if that's supported for your ship. But hopefully not. I mean, if you buy in the ship, right?
+[ 2311.7] Then you have certain stations available to you. That's the fantasy, right?
+[ 2319.4] During the ISC, back up, over the course of the development of this game, we've seen a lot of
+[ 2326.9] procedural tools done. The Rastar and stuff that can generate certain layouts for different
+[ 2336.4] space stations and everything. In the ISC, we specifically mentioned that the Astroid bases
+[ 2343.1] were not procedural. Can you talk to us about why that change was made? Why are the Astroid bases
+[ 2350.9] created bespoke? There's actually an inappropriate reason to use that word there, people. So
+[ 2358.0] you can drink if you want to. But why did we do these by hand instead of using the procedural tools?
+[ 2364.5] I think there's always a balance to be had with how much you do stuff procedural versus how much you
+[ 2371.3] want to control the general flow of things. So we're talking procedural, in our terms,
+[ 2378.0] it used to be a lot like you stitch a room one by one together based on some parameters and logic.
+[ 2387.5] That eliminates our ability to handcraft an experience that flows throughout a multi-room setup.
+[ 2399.7] So what we're looking at right now instead is hand stitching certain sections together that can
+[ 2407.1] combine into a gameplay bubble and then utilizing multiple gameplay bubbles that we can then stitch
+[ 2413.2] together with this procedural tool. So we have a bit more control on the scale of things that is
+[ 2419.2] a bit larger than just the room but accommodates for multiple rooms basically.
+[ 2426.2] That's in line with things we've seen before. There are other games out there who very famously
+[ 2432.3] everything is procedural and some of the struggle of that is that nothing is really unique because of
+[ 2439.3] that. And no, I'm not talking about the one you're obviously thinking I'm talking about another one
+[ 2444.1] that's older back from like 2017-2018. We've always said that we use procedural generation as a tool,
+[ 2451.7] not an ends. We use it to help us move forward. We use it to help us flesh out but not just
+[ 2459.8] the sole creation of a thing because we have and I think if we've demonstrated anything
+[ 2467.6] in the 11 years that you know ISC, ATV and everything has been around and stuff like this
+[ 2472.6] is that we have an incredible team of artists. Not just the 3D artists, the 2D artists, the
+[ 2479.3] tech artists, the animators. There's all kinds of stuff that gets us the look and feel that we have
+[ 2487.6] and we're never going to, I can't see us ever just fully handing that over to procedural
+[ 2495.5] generation, generative AI, anything else. We might use these things as tools again to help
+[ 2500.2] flesh out the other areas once we've designed the critical path and the second critical path
+[ 2504.2] and the third critical path and just using it to flesh out some stuff as you said. But that's
+[ 2508.2] been a hallmark. That's been what we've been saying about procedural tools from the very beginning.
+[ 2512.6] So it's nice to see that it's here anyway that it's still the case.
+[ 2516.1] Will we be able to manipulate the environment of contested zones like turn on and off gravity,
+[ 2526.7] life support, turrets, doors, stuff like that?
+[ 2531.3] Not right now from the get go, right? It's something that can become more interesting
+[ 2536.5] once resource network hits. So yeah, not initially. Though that's that, we have doors with key cards.
+[ 2546.7] So there's like infuses. So there's some elements where you can already manipulate,
+[ 2551.5] but I guess what players might have more in mind with these systems that you can manipulate like
+[ 2555.9] power resources and all these things. We'd really love to implement them once we have the systems
+[ 2561.1] available to us. Now, you said something there and I want to make sure that we get some clarity on
+[ 2567.6] that. At this moment, the moment that we're recording, what day is this? Friday. What's the
+[ 2574.5] date? As of Friday, August 16th, resource network is scheduled for release in 4.0. These things are
+[ 2584.8] scheduled for release in 4.0. What when manual says when that stuff is in, when that stuff's ready,
+[ 2590.0] he means when it's up and running and functional for him to utilize it in the design of this
+[ 2596.5] experience because these experiences are being developed concurrently. And so like this, it's,
+[ 2602.7] we can't have them sitting around waiting, can't have asteroid bases sitting around waiting
+[ 2606.7] for work on resource network to come along. So the first version will use little pieces of it,
+[ 2612.9] like you said, the key cards and the fuses and stuff like that. But as things progress, 4.0,
+[ 2619.2] whatever, 4.0, whatever, whatever after that. And so like this, then as the feature hardens and gets
+[ 2624.2] more developed and stuff, we'll be able to utilize more and more aspects of that. You've already seen,
+[ 2629.0] if you watched ISC yesterday, some of the locations teams are already using aspects of the
+[ 2634.5] resource networking system for their charge and drain stuff and for the different homesteads and
+[ 2642.0] habitats and so like that. So it's just a question of, do we want to wait or do we want to put out
+[ 2648.1] a first version that can do all of these other things and then add that later? And that's what
+[ 2652.3] he's talking about here. Exactly. I think it would be, or like we all think it would be a shame
+[ 2656.8] holding on with the Astro bases and contested zones. It's already a playable content that works
+[ 2664.6] without the resource network already, right? So it's like, why wait, get it out in the hands of
+[ 2669.4] players, have them play and also getting feedback, right? And see like how players engage with the
+[ 2675.2] environment and how we can improve upon that. And then we already have also ideas like, or we can
+[ 2681.2] implement or like add in the future once the systems are more refined.
+[ 2686.8] Eagle 6. I'm sorry, go ahead. I was just going to add on a little bit as well. I think it's
+[ 2691.1] worth adding that we have definitely viewed the contested zone Astro bases a little differently
+[ 2696.4] to past things we've put out. We want these locations to kind of stand alone, like as themselves,
+[ 2704.7] you know, be a bit more sandboxy and have more interactable elements in them. And the resource
+[ 2710.6] network that will eventually come is a part of that. But things like the key cards and the
+[ 2716.0] security doors and traps and think we're trying to push more of that into the environment to make
+[ 2722.4] them kind of be more standalone and exist as a space that you can interact with and have gameplay in.
+[ 2729.5] Yeah. I was going to say Eagle 6 Airsoft says it's not ISC live without 20 disclaimers. Well,
+[ 2736.0] it's not ISC live at all. But yeah, no, there's lots of disclaimers because I've been doing this
+[ 2747.4] for 10 years and there's nothing they're honest to God, the absolute worst thing in my entire life.
+[ 2758.9] Yeah, I'm not, I'm not, I'm not going to qualify that it is the worst thing in my life is
+[ 2764.5] watching somebody take something from one of my programs and misunderstand it.
+[ 2772.9] Not maliciously. Not the people who twist things because they're looking for clicks or whatever.
+[ 2777.0] I'm not talking about that. I'm talking about the good, the good people who simply heard it,
+[ 2784.1] heard something and took it a certain way. And that's not the way it's going to be. And then I
+[ 2789.7] watch that person get excited. I watch that person get excited. I watch that person get hyped.
+[ 2794.5] I watch that person get so hopeful for a thing that's not actually going to happen the way
+[ 2799.0] that they think that we said it because we didn't take 10, 15, 20 seconds to clarify it,
+[ 2805.8] to disclaimer it. So yeah, there are about 20 or so disclaimers and clarifications on SCL
+[ 2812.8] every week. And that's part of my responsibility, not just to you, but to the developers to make
+[ 2818.6] sure that the things that they say are properly understood and in the proper context. And if I
+[ 2823.6] didn't, there'd probably be three more people in the chat jumping on me for not clarifying. So
+[ 2831.4] I'll take the hit. I'll take the little hit for, oh, there's too many disclaimers and whatnot,
+[ 2835.4] because ultimately the alternative is far worse. All right, we've been talking, we've been sort of
+[ 2843.7] dancing around this and I don't know how much you're going to be able to get into it, but I'm
+[ 2846.6] going to go ahead and ask you, what kind of rewards are there from the contested zones? Is there a
+[ 2852.7] shared PVP mission item to recover or are there a loot small enough to carry in a backpack example?
+[ 2858.6] Obviously, we don't want to spoil everything. We still want some level of discovery, but as
+[ 2866.9] much as you can share, what are people working towards in a contested zone?
+[ 2871.5] I guess I can give some examples. So for the first part, what kind of rewards are you going to get?
+[ 2880.6] Of course, our first step is to make things unavailable,
+[ 2884.9] like widely unavailable, something that you just can't not get from the shops in Stanton or in
+[ 2890.5] Pyro. It has to be something that has only been retrievable right here. And what we're looking at
+[ 2897.6] right now after talking with system design about it and other people is that ship components are
+[ 2904.2] one of the big steps like that, like military stealth class or even competition class ship
+[ 2909.7] components could will be made exclusive in some capacity, certain parts of it and only be widely
+[ 2918.8] available or exclusively available in reward rooms or in the final
+[ 2928.4] Let's call it the grand prize. I'm going to stop you there. That's plenty. We don't want to share
+[ 2933.6] everything, but yes, I'm taking next week off and then I'm in Germany the following week to film
+[ 2939.9] with Torsten and the gang there about resource networking and one of the neat talking points.
+[ 2947.4] And I think we actually kind of feel like I actually said this last week, but I'll say it this
+[ 2950.5] week too. You might remember an old series of articles that John Crew and I wrote back when I
+[ 2954.8] was a community manager 2016 2017. I've been a community manager in five or six years.
+[ 2962.1] But back then we wrote a series of articles for the website called the shipyard where we broke
+[ 2967.2] down basically the overall plan for how ships are supposed to work. And one of the things we
+[ 2971.2] talked about there was the classifications of materials, not just in quality, but in type,
+[ 2977.3] military, competition, luxury stuff like that. So this along with resource network,
+[ 2984.4] and I'm not going to go into it too much here because we've got the episode coming,
+[ 2988.7] is the beginning of that realization of multiple ship components that are actually tuned to different
+[ 2996.5] abilities and tuned to different performance thresholds and stuff. So after 4.0 is where
+[ 3003.9] the world of, okay, my M50 behaves like this, but I'm going to rip this out and I'm going to rip this
+[ 3010.2] out and I'm going to go do a contested zone. I'm going to get this and I'll pop that and I'm going
+[ 3013.6] to go do an asteroid base and get this and I'll pop that in. And now my M50 behaves differently
+[ 3018.9] than the stock thing that comes off the market. 4.0 is where the start of that begins to happen.
+[ 3023.8] And I'm, as I said, it's the co-author of the shipyard articles with John Cruz so many years ago.
+[ 3030.0] It's one of those things that I've been waiting, waiting, waiting, waiting, waiting, waiting,
+[ 3032.1] which is why you brought it up. So I'm going to be excited about it.
+[ 3038.6] All right.
+[ 3039.7] I hope I didn't spoil too much.
+[ 3041.2] Nope, that was just enough. That was just enough. You're a good con.
+[ 3047.6] Tell us everything else. No, I'm just kidding.
+[ 3051.9] No, well, yeah, to the second part of the question about how we extracted
+[ 3057.2] freight elevators. It's not just going to be backpacks or something that you can carry, right?
+[ 3061.4] There's going to be freight elevators inside this zone that are positioned in a way where you can
+[ 3067.2] extract certain things in a more efficient manner.
+[ 3072.9] Corn 44's TV says, say it again. I wasn't listening.
+[ 3077.3] Sorry?
+[ 3078.5] Nothing. I'm just, okay.
+[ 3080.9] I appreciate, sometimes I appreciate a solid low level troll.
+[ 3086.9] Are asteroid bases, as gameplay locations, a precursor in test for player-owned asteroid
+[ 3093.4] bases, or are there no connections to be drawn careful manual?
+[ 3102.8] No, not yet at least at the moment. They're currently designed as purely focused for gameplay
+[ 3109.3] and content for a first and foremost. Yes. That is all they're intended for at this time.
+[ 3121.8] Watch CitizenCon. That's actually not a bad asteroid basis, but I just meant,
+[ 3128.9] I shouldn't have even tied those two together. That's not fair to tie those two together,
+[ 3131.5] but you should watch CitizenCon.
+[ 3135.1] How do you envision contested zones evolving over time to prevent them from becoming static content?
+[ 3143.9] Well, yeah, yeah, totally. I mean, it's a live game, so we will continuously update
+[ 3150.4] these places with anything, any new items that might be popping up, any new systems. I mean,
+[ 3157.7] we have to maintain, we are constantly, as level design is going back to all locations and giving
+[ 3162.0] them an upgrade when some change to a system comes up. So, the same would apply here for the
+[ 3170.7] contested zones as well. Right. As something like Pet Copians does become available, the players and
+[ 3176.4] stuff like that, we'll have to revisit the balance of that. As the light amplification scopes that
+[ 3183.5] are scheduled to arrive in four-point-one and stuff, I'm sure that had to change a couple of things
+[ 3189.3] with, oh, we thought that was a dark corner, not anymore, and stuff like that. So, yeah, so it's,
+[ 3194.8] you make a really great point, Conrad. I'm grateful that you brought it up. It's, every time a new
+[ 3199.7] gameplay system comes online and stuff like that, there's always something that has to get revisited
+[ 3203.9] and has to be reiterated upon in order to incorporate that stuff in, and these will be no different.
+[ 3209.3] Yeah.
+[ 3211.6] Will contested zones have any time pressures that player must manage, or can players just take
+[ 3217.9] their time? There's going to be time pressures, specific locations even have timed gates. So,
+[ 3228.4] during these timers, we attract players to be there. Other times, certain things will be locked,
+[ 3233.8] so there's no point in going there. So, yeah, there's going to be time gates. The other added
+[ 3239.6] pressure is just the population that exists there, right? Like, you won't be able to fully
+[ 3245.2] eliminate the static AI population or the traps that just exist in this space. So,
+[ 3252.4] there's a physical pressure, and then there's also the other side with timed gates.
+[ 3258.2] Yeah, that kind of ties back to early discussions about PvP and camping as well.
+[ 3262.4] But we want the PvE environment to be constantly pushing against the players as well.
+[ 3268.5] So, yes, you could find a loot box, loot it, and then try and stay there to see if you can
+[ 3273.6] loot it again later. But we would then want the environment to be pushing back on you to
+[ 3277.7] go respawning enemies, patrolling enemies, to really not allow that.
+[ 3286.0] I was looking at this. You said timed, and I just had terrible flashbacks. I was at Blizzard,
+[ 3293.7] when we did the gates of Encarage, and this time, the first timed event, and told everybody in
+[ 3300.9] Azeroth to go to one place the exact same time, and what that did to performance and stuff like this.
+[ 3308.5] This isn't going to be the same thing, right, a timed event, and suddenly we're going to make
+[ 3311.3] everybody go to one of five places? Or? It will be a bit more loose than that.
+[ 3317.5] Okay. Thank you. Okay. Yes, I still have trauma. It's 20 years ago. Oh my gosh, it's 20 years ago.
+[ 3324.6] Well, it's 19 cents on Carage. But,
+[ 3328.8] TechSulu says, Jared's in a studio and the others are on WebCamps. I'm not in a studio.
+[ 3335.3] I'm in outer space. See? I'm in outer space. No, the other guys are in Germany, and it's not very
+[ 3348.2] cost-effective to fly three people over here just doing an hour-long show. We do try not to
+[ 3354.3] spend money on it, or we don't have to. I want that too. Why don't we have cool props?
+[ 3360.9] I could tell you, but the answer would not make you happy. True, true. Actually,
+[ 3367.7] you're in Manchester recently, Manuel. You should have, you know, grabbed a couple, right?
+[ 3371.6] I mean, I'm not sure if Jared counted all his home, that's fine.
+[ 3381.8] For both asteroid bases and contested zones, we're almost out of time.
+[ 3385.9] How varied will they be from base to base? Six. Sorry? I said, for asteroid bases and contested
+[ 3395.8] zones, how varied are they? We know there's about five of this and whatever this. Are they
+[ 3399.9] substantially different? Are they variations on a theme? What are we talking about as far as variation?
+[ 3406.3] For asteroid bases, we're talking right now. We're working on three
+[ 3409.2] variants. So, like Manuel mentioned earlier, we got the encounter variant. We got a more
+[ 3413.7] explorative variant, which has a lot more of an abandoned theme to it.
+[ 3420.3] And then we got kind of the contested zone. It's not specifically contested zone, but it is
+[ 3428.1] a location that ties to the overall progression that we are planning for.
+[ 3433.1] Okay. And last question. We mentioned this is lots of MMOs going back to the end of the beginning
+[ 3448.3] of time here and make no mistake, Star Citizen is an MMO. Our single-player experience of Squadron
+[ 3456.0] 42 or the Persistent Universe is our multiplayer experience. That's not to say that there isn't
+[ 3463.3] a way to make your living as a solo player, but I mean the overwhelming majority of the game is
+[ 3467.9] designed for a multiplayer experience. That's why we have a single player and a multiplayer.
+[ 3474.2] What was I going with this? Oh, for a lot of MMOs, dungeons are normal occurrence.
+[ 3481.7] Everything has some area that counts as their dungeon. Some, they go in here, there's an entrance,
+[ 3487.1] there's a progression through, there's mobs to fight, there's an occasional boss. We talked a
+[ 3492.2] little bit about your desire for boss fights, John, when we filmed the ISC. This last question
+[ 3498.6] says, what lessons, if any, from other games have informed your approach to creating what is our
+[ 3507.8] first version of that kind of experience with asteroid bases and contested zones? What have
+[ 3513.0] you learned from other games? So when we first started looking into this and we were in kind of
+[ 3519.8] pre-production, we obviously looked at all current MMO dungeons. I think between the level
+[ 3528.7] designers, we've kind of played a lot of them. So, wow, Final Fantasy XIV, all the obvious ones.
+[ 3534.6] And we obviously looked into the dungeons and how we could apply what they have to what we tried.
+[ 3540.0] And we did originally kind of internally call them open dungeons. And the idea was to have a kind
+[ 3546.5] of traditional experience of, there's a start and an end, it gets harder, the DP you get,
+[ 3551.9] there are packs of enemies. But because we are Star Citizen and we are a unique MMO in that these
+[ 3560.2] are open, we kind of looked more to the old school MMOs for a bit more of where to pull from,
+[ 3567.1] like EverQuest, which had those open space dungeons where lots of players could go in.
+[ 3572.2] So we kind of pulled on that thread a little bit. And then we also looked in terms of like map
+[ 3578.1] layout designs. We were pulling from Guild Wars II and things where we looked at how they laid out
+[ 3585.0] their dungeons, the branches and the way to move players around the space. So we did pull from
+[ 3594.6] existing and old MMOs. Lessons. At the same time. You're not talking about floor plans,
+[ 3598.5] you're talking lessons. No, sorry. I should clarify lessons. Yes.
+[ 3602.0] You're going to get a lawyer busted through my door here in five minutes.
+[ 3605.8] No, no. We certainly have our unique layouts. Yes, the lessons we pulled from these and our
+[ 3610.9] experience is playing them as to what we could apply to what we were doing. And yeah.
+[ 3619.8] I mean, that said, if you want to build Karazhan and Star Citizen, I'm all for it.
+[ 3624.5] Oh, that's right. Little Red Riding Hood. Let's do it.
+[ 3626.9] I mean, we're already have ghosts. So yeah, why not have Karazhan as well?
+[ 3632.3] Anybody else want to add to that? Khan, Manuel?
+[ 3636.9] I mean, pretty much what John said, why does like we need to, we are building something that we
+[ 3643.2] think is fun in the first iteration. And like also, like as we are being vivid MMO players as well.
+[ 3651.2] And we build something that I think fits the game a lot. But obviously, we need to find out like
+[ 3661.3] we want to know about the player experience and see their reactions and what they like and what
+[ 3664.9] they don't like about it. So we can refine the existing ones and we can make the new ones we're
+[ 3671.0] working on like even better and so on. I think we've all the great games, right? It's like
+[ 3676.0] they're building something and then see how what the players like in particular for like their game
+[ 3681.3] bubble and then trying to make it that better. That's a great point. We're in a position that
+[ 3687.3] other games don't get. We can, we don't have to, and this will upset certain people and a certain
+[ 3699.3] selection of people and that's okay. It's the truth and if it upsets, it upsets. We don't have to
+[ 3705.3] figure every single thing out ahead of time. Because we run a live environment in the middle
+[ 3712.2] of our development, we can afford to test. We can afford to put a thing out there and try it.
+[ 3719.6] And instead of assuming that people will react this and assuming people will react like that and
+[ 3725.0] assuming people will like this and assuming people will hate that, instead of assuming we can actually
+[ 3730.2] put these things out there and test them and get actual feedback and go, okay, okay. So that
+[ 3735.3] wasn't as bad as we thought it was. So there's something there. This didn't work the way that
+[ 3739.8] we thought it was. So we can move away from that. And that's been a hallmark of Starz as a development
+[ 3744.6] since the PU began in 2015. So we have this double-edged sword that definitely cuts both ways
+[ 3754.5] where we can use the virtue of our live environment in the middle of our development
+[ 3760.2] to test certain things that other games might not even ever attempt. But at the same time,
+[ 3766.3] it means that there are a lot of decisions that sometimes come out and there are plenty of players
+[ 3773.0] who are scratching their heads and they're like, that was never going to work. And what not. It's
+[ 3778.0] like, that's certainly an opinion and it might even have been the right one. But we don't have to
+[ 3783.3] guess. We can afford to test and try out and that's ultimately a benefit to our project.
+[ 3789.2] And I really liked your answer there, Manuel. So that was just me saying I really like your answer.
+[ 3795.5] Folks, that's it. Thanks for watching another episode of Star Citizen Live. What's it called?
+[ 3800.9] Contested Zones and Asteroid Basis. I remembered it. If you haven't already, check out yesterday's
+[ 3806.5] Inside Star Citizen about the Pyro system and non-combat shooting gameplay stuff.
+[ 3813.8] Everybody's got this idea that Pyro is just carnage and chaos. But it's not just.
+[ 3821.3] There's more stuff too. So check out ISC from yesterday. Next week, SEO will be off. I'm gone
+[ 3828.7] for the entire week because it's my birthday. I'm old. ISC is we're going to be airing,
+[ 3836.9] we're going to be airing it. I'll just be honest with you, we're going to be airing a segment that
+[ 3839.8] we shot more than a year and a half ago. We shot it for our last ship showdown and didn't use it.
+[ 3847.3] So we're using it this week. Oh, I'm gone. It's a retrospective. Look back at the amazing
+[ 3854.0] contributions of Superstar Concepts, Gavin Wathory. If you've never seen him or heard of him or
+[ 3859.2] whatever, we think you're going to love him. He's one of my dear favorite people that work on the
+[ 3862.6] project responsible for more spacecraft and vehicles than any single human being in Star Citizen.
+[ 3867.3] So he's got quite a legacy there. So you check that out if you want. And then we're back in two
+[ 3871.8] weeks. Our ISC, we're going back to Pyro. We're going back to all the combat and carnage and chaos
+[ 3878.8] with a few new elements that you may not be suspecting. So check that out. We're going to
+[ 3884.1] check out Xenothret's Home Turf. And that's pretty cool. Let's just say they do not clean up after
+[ 3889.8] themselves, which will be a surprise to no one. So for Star Citizen Live, I'm Jared. That was Con.
+[ 3897.6] That was Manuel. That was John. That's David and Pete on the buttons over there. Thanks for watching.
+[ 3904.6] Take care. Keep an eye out on PTU for updates on 324. Voting for ship showdown should be underway.
+[ 3913.2] Be sure you vote on which ship gets whatever the prizes and stuff are this year. I should have
+[ 3918.9] looked it up before the show. Remember that guy early in the show that said this can't be live?
+[ 3922.9] It was too professional? Not my show. Thanks for watching everybody. Take care. Try not to burn
+[ 3932.9] everything down while I'm gone for a week. Bye.

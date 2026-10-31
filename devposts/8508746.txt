@@ -1,0 +1,45 @@
+## Star Citizen Alpha Patch 4.5
+Alpha Patch 4.5.0 PTU has been released and is now available for all testers! Patch should now show: VERSION 4.5.0-PTU.10879294.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Tonight’s build contains further loot pool and collector recipe adjustments for the refresh to loot around the PU
+- Stability & Bugfixes
+- Engineering, Armor, Ship Balance (armor display hookups coming later this week)
+- Vulkan Renderer and Graphics Settings Updates
+- Physicalized Helmets
+- Snub Fighters and Interceptors balance pass
+- PU Loot Refresh/Collector Rebalance
+- Additional Hairstyles
+Known Issues
+- Multivehicle - PU - Engineering - Ships that have gone critical powerplant but then restored through repairing are stuck in a drift even after engines come back on (Fixed in next build)
+- Multivehicle - PU - Vehicles / Weapons / MFD - Some vehicle weapons cannot be allocated any power in the MFD
+- Multi-System - PU - UI / Fleet Manager / ASOP Terminal - Typing in the search bar of the ASOP will make it freeze doubling the input
+- PU - Pyro IV - Storm Breaker - Locations / Missions - Opened safes remain open after 2 hour cooldown
+- Multi-System - PU - ASOP Terminal / UI - Incorrect ship is displayed on the ASOP
+- PU - Graphics - TSR / DLSS - Switching to a new resolution and swapping the upscaling to 50% (performance) causes UI / RTT's to draw repeatedly
+- PU - UI / Gameplay - Party markers are not with party members
+- Multivehicle – PU – Vehicles / Engineering / VFX - Fire is being detected by some clients and not others
+- Multivehicle - PU - Vehicles / Engineering / Components / RN - UI / Kiosk - When using the Engineering Kiosk, the vehicle model can become offset by the actor moving around it
+- Multivehicle - PU - Vehicles - Breached doors and ramps do not reset after the vehicle has been repaired and the player is unable to close them
+- PU - MIssions - Gilly missions are missing in contract manager
+- PU - MIssions - Foxwell Ambush missions are missing from contract manager in Stanton
+## Bug Fixes
+- Potential Fix: Linux displaying Black Screen for Vulkan and D3D on 4.5.0
+- Potential Fix: Multivehicle - PU - Vehicles / Vehicle Components - PDT's targeting lags behind hostile targets missing the target (STARC-186176)
+- Potential Fix: PU - Stanton - Distribution Centers (DC) - Loot / Locations - Weapon loot containers are not present at Distribution Centers
+- Potential Fix: PU - Cargo / Freight Elevator - External Freight Elevator platforms are orientated at a 90 degree angle, causing them to not be usable
+- Potential Fix: Multi-System - PU - LTP - Local Inventory / Core Tech - Some items are duplicated after a new patch
+- Potential Fix: PU - Nyx - QV Station - Locations - Central Atrium Warehouse terminal is missing
+- Potential Fix: Multivehicle - PU - Vehicles / Vehicle Components - Jump Drive component does not get highlighted when aimed with FPS repair tool
+- Potential Fix: ESP settings not persistent
+- Potential Fix: Fire Extinguishers are missing from shops
+- Potential Fix: PU - Missions / UI / mobiGlas - Eliminate All - Foxwell FPS mission is blank in the contract manager
+- Potential Fix: Multivehicle - PU - Vehicles / Salvage / Art - Salvage Ships are unable to detect the scraping surface and is missing the Scraping Laser VFX
+## Technical
+- Fixed a Server Hang
+- Fixed 5 Client Crashes
+- Fixed 1 Server Crash

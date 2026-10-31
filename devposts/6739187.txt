@@ -1,0 +1,91 @@
+Build has been updated to VERSION 3.23.0-EPTU.9135832-9136446 with Memory Corruption fixes. The main issue was appearing from New Babbage so more traffic to this  area might tell us if this fix was successful. We will assess this build  overnight to make sure we are at a point to open to further waves.
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9135832-9136446.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Evocati
+Server Info: US Only - EPTU Channel - PU/AC - Replication Layer Enabled/Recovery Enabled
+Starting aUEC: 15,000,000
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of Evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.23 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+- Stability (Main Focus)
+- Master Modes
+- Full Character Customizer Revamp
+- mobiGlas Rework / Starmap / Interior Map / Minimap
+- EVA T2
+- New Loot Screen
+- New Visor / Lens
+- Dynamic Crosshair/ Full FPS Combat Refactor
+- Backpack reloading/Ammo repooling
+- Physical Shopping UI
+- AC Features: Grav Royale, New Race Tracks, and New Pirate Swarm Final Wave. Custom Lobbies.
+Known Issues
+Mk2 should now be in EPTU. You will need to recopy your account for pledge copy to pull it over from LIVE
+- PU - mobiGlas / UI / Missions - Mission contracts app dropdown cannot be collapsed in mobiGlas app, sometimes preventing mission contracts from being able to be selected
+- Stanton - Multi-location - UI/Physical Shopping - Vehicles - Purchase UI Appears Under Ship And Can't Be Bought
+- PU - Actor / Graphics - Player character can spawn with an invisible body
+- PU - Camera / Fleet Manager / Shop Kiosks - Being too close to Kiosks when interacting causes camera to shake
+- PU - RL - Service Beacons / Missions - Service beacons cannot be created
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+- PU - Terminal - Locations / Interactions / UI - Unable to interact with the Medical Insurance Terminal to manage regeneration
+- PU - UI - NikNax / VLM - Liveries - All Liveries are missing volume information in NikNax and Vehicle Loadout Manager
+- PU - Performance - Inconsistent frametimes / stuttering during high concurrency due to DatabaseUnloading
+- RSI Constellation ALL Variations - PU - Vehicles / Interactions - Interaction prompt missing for pilot and co-pilot seats
+- Front end - UI / Locations - Inventory - Entitlement - Primary Residence location can be missing from the front end
+## Features and Gameplay
+Characters
+- Character Customizer
+Audio - Music: Imported new character customizer assets with better mix. Turned down character customizer music by a small amount. Implemented better exit audio transition.
+Polish - Set new eye colour material (to grey instead of white). Set new opacity mask to fade necks in a better way.
+- Updated Prone Revive and get up Animations
+- New EVA Transition Animations Added
+Locations
+- Updated Ocean Materials for Planets
+- Added Water Disturbances for All Ships
+AI
+- AI Flight Polish
+Enabling Strafer & Jouster behaviours in Atmosphere. Updated Accuracy Base Profiles for AI flight
+- Kopion and Marok Audio Updates
+Gameplay
+- StarMap and mobiGlas Lighting Polish
+Reduced light intensity for sun. Fix for location names on some planet or moon being difficult to read on sunny side. Changed text alpha for improved visibility. Made Further Starmap Marker Visibility Updates. Added missions widget to Starmap. Made Quantum Marker text contextual. Distance from player should appear below the name in the search list.
+- Lorville and New Babbage New Player Experience Mission Polish
+Ships and Vehicles
+- Greatly Increased Ares Inferno and Ion Ammo Count
+- Corrected asymmetrical lateral boost modifier on RSI Aurora ships
+Weapons and Items
+- Frag Grenade: Increased the fuse timer and decreased HUD icon distance
+Core Tech
+- Further Polish for Planetary Effects, Visual Improvements, and Optimizations
+- Tweaked Some Tobii Eye Tracker Defaults
+## Bug Fixes
+- Fixed - Multivehicle - AC / PU - Vehicles / MFD - Self Status MFD does not display shield status
+- Fixed - PU - MFD - Ship displayed in the MFD screens are very small
+- Fixed - PU - Stanton - Locations / AI / Animation - AI can be seen floating off the ground at multiple locations
+- Fixed - FPS NPCs are ignoring their firing duration when a target is in cover
+- Fixed - PU - All Locations - Actor / Consumables - Players are unable to use any Pens on other Players
+- Fixed - PU - Actor / UI - Loot Inventory - Inventory & Loot UI doesn't close when a downed player is revived, allowing a player to continue looting them
+- Fixed - PU - Weapon Feature - Optics - Weapon attachments are unresponsive when customizing a weapon
+- Fixed - PU - HUD - Contracts UI - UI doesn't update automatically, but updates once when Untracking and then tracking the contract again
+- Fixed - When placing a custom map marker, in the text input box the blinking cursor blinks on a character index -1 behind the actual position, causing the cursor to consistently lag behind any text entry
+- Fixed - PU - Stanton - mobiGlas - UI / AI / Missions - Mission Giver - Contracts offered by mission givers after the initial appointment are not present in the Contracts tab
+- Fixed - Multi-Vehicle - PU - Vehicles / Audio / SFX - Interior ambience does not blend between rooms
+- Fixed - Targeting UI - "selected" state is not visible when a target is locked
+- Fixed - PU - New Babbage - Aspire Grand - Art / Locations / Lighting - The lighting in The Nest Apartments is divided into columns of colors
+- Fixed - PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- Fixed - Interactions / Vehicle - Drake Caterpillar - Unable to interact with or enter into any Operator Seats Stations or Turrets
+- Fixed - PU - Actor - UI - PIE/PIS - Swapping carriables will drop the holding item even if there is store space
+- Fixed - PU - Actor - EVA / Animation / Inventory - Player is unable to unequip armor whilst in EVA
+- Fixed - PU - Stanton - UI - MobiGlas - COMMS and VEHICLES screens stop working when using some of the undersuits
+- Fixed - MISC Freelancer ALL Variants - PU - Vehicles / Design - All cockpit seats can power on the Freelancer
+- Fixed - Stanton - UI / Shopping Kiosks - Players are unable to select items by clicking 3D icon
+- Fixed the position of the Marok landing approach
+## Technical
+- Fixed 10 Client Crashes
+- Fixed 9 Server Crashes
+- Fixed a Server Memory Corruption Error
+- Fixed Crash when changing resolutions in client

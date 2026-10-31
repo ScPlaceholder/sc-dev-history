@@ -1,0 +1,42 @@
+## Star Citizen Patch 3.7.1e
+Alpha Patch 3.7.1e has been released to PTU, and is now available to test!  The launcher version number should read: VERSION 3.7.1- PTU.3367344.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Once we go live, a database wipe is planned to accompany this hotfix patch to fix the myriad of account reset issues discovered in 3.7.1. We take the decision to perform a reset very seriously, and try to do them as infrequently as possible. We don't perform unscheduled wipes unless we have exhausted all alternative options, and are sure it will make your experience significantly better, and this is one of those cases.
+We were actually able to gather a lot of meaningful data on some of the various issues that would not have been possible if we had performed a wipe initially. This will help us better understand what is going wrong and implement long-term fixes. As a reminder, we are working on solutions that will reduce the frequency of these wipes, and eventually plan to phase them out altogether. In the meantime, we appreciate your patience.
+Database Persistence Wipe: YES
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- General gameplay
+Known Issues
+- Quantum travel target selection does not always update when aligned.
+- The quantum travel HUD will be lost of the player exits the seat during travel.
+- CRU-L5 may be currently missing.
+- Refueling may get stuck in a loop at full and prevent repair/rearm. W/A: Do each service one at a time with refuel last.
+- The Defender's Tachyon cannons are not landing hits correctly on moving targets.
+- Players may crash when in a party doing a second quantum linked jump.
+- The quantum travel HUD will vanish if the player exits the seat while in quantum travel.
+- The Combine cannon does function correctly in multiplayer.
+- Missile countermeasures are not working consistently.
+- Distortion damage does not apply correctly.
+- In Star Marine enemy indicators can sometimes be seen through walls.
+- Players may experience a stall when loading and firing weapons in Star Marine.
+- AI ships can get stuck and not continue on their route.
+- NPC beacons will sometimes display an incorrect distance.
+- Ships can spin excessively out of control when their wing is clipped.
+- Landing illegally and having your ship despawn while a mission box is inside will break mission progress.
+- The 890 Jump currently has an incorrect cargo value.
+- Planets/moons are invisible the first time a player opens the StarMap.
+- Sometimes when quickly scrolling on the ASOP the last ship on the list will not appear.
+## Feature Updates
+## Bug Fixes
+- The player lens should now respect aspect ratio.
+- Personal inner-thought should now display correctly at wider aspect ratios.
+- Player ships should no longer spawn without components.
+- Ship reclaims should now work consistently.
+- The Pirate Gladius should now be available.
+Technical
+- Fixed a server crash.
+- Players will now see an error message if they are unable to connect to the game on initial load.

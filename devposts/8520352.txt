@@ -1,0 +1,62 @@
+## Star Citizen Alpha Patch 4.5
+Alpha Patch 4.5.0 PTU has been released and is now available for all testers! Patch should now show: VERSION 4.5.0-PTU.10929724.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Tonight’s build contains further loot pool and collector recipe adjustments for the refresh to loot around the PU
+- Stability & Bugfixes
+- Engineering, Armor, Ship Balance
+- Vulkan Renderer and Graphics Settings Updates
+- Physicalized Helmets
+- Snub Fighters and Interceptors balance pass
+- PU Loot Refresh/Collector Rebalance
+- Additional Hairstyles
+- Experimental: VR Support
+Known Issues
+- Multivehicle - PU - Engineering - Ships that have gone critical powerplant but then restored through repairing are stuck in a drift even after engines come back on (Fixed in next build)
+- Multivehicle - PU - Vehicles / Weapons / MFD - Some vehicle weapons cannot be allocated any power in the MFD
+- Multi-System - PU - UI / Fleet Manager / ASOP Terminal - Typing in the search bar of the ASOP will make it freeze doubling the input
+- PU - Pyro IV - Storm Breaker - Locations / Missions - Opened safes remain open after 2 hour cooldown
+- Multi-System - PU - ASOP Terminal / UI - Incorrect ship is displayed on the ASOP
+- PU - Graphics - TSR / DLSS - Switching to a new resolution and swapping the upscaling to 50% (performance) causes UI / RTT's to draw repeatedly
+- PU - UI / Gameplay - Party markers are not with party members
+- Multivehicle – PU – Vehicles / Engineering / VFX - Fire is being detected by some clients and not others
+- Multivehicle - PU - Vehicles / Engineering / Components / RN - UI / Kiosk - When using the Engineering Kiosk, the vehicle model can become offset by the actor moving around it
+- PU - MIssions - Gilly missions are missing in contract manager
+- PU - MIssions - Foxwell Ambush missions are missing from contract manager in Stanton
+## Features & Gameplay
+Gameplay
+Engineering Updates
+Critical timer for powerplant doubled. Only the power plant will receive damage now (and not other components and thrusters) when a critical part, such as the ship hull, reaches zero health. Increased shield regen and health for S2 shields. Fixed fuse damage modifier for single seater ships with no interior. Fixed shield balancing for capital ships. Further Idris M and Starlancer tac armor updates to differentiate military variances. Fix for ships overheating when initially spawned by asop. Add Legend to the 3D View. Adjust AlertIcons to support static critical icon. Fixed Rooms Buttons circle size. Add darkening background to Filters. Made font sizes and spacing more uniform. Adjustments to weapon nudge and angles. Added fuses and more filled salvage canisters to ship component shops.
+- Setting default interaction of harvestables to be store, instead of carry.
+Core Tech
+Experimental Feature: VR Implementation
+4.5 brings Virtual Reality into Star Citizen a new experimental feature. We will be accepting bugs and feedback through issue council and spectrum.
+As this feature has been in the works for long time, we have made a full post to go over the features, settings, and CVARs you can use to make this feature fit your playstyle.
+https://robertsspaceindustries.com/spectrum/community/SC/forum/190048/thread/star-citizen-vr-support-experimental-release
+## Bug Fixes
+- Potential Fix: PU - Actor / UI - Medical  - Med Beds / Interactions - Actor is unable to heal injuries on all medical beds (STARC-188455)
+- Potential Fix: PU - Locations - ASOP Kiosk / UI  - Performance / Stall - Search Filter - When typing in the search bar/filter the client will stall and cause a double input text to occur for the key that was pressed
+- Potential Fix: Multivehicle - PU - Vehicles / UI / Vehicle Feature  - Salvage / Crafting - The tab to crafting does not function on the filler station
+- Potential Fix: Multivehicle - PU - Vehicles - Breached doors and ramps do not reset after the vehicle has been repaired and the player is unable to close them (STARC-168107)
+- Potential Fix: AC - Pirate Swarm - AI - Enemy AI does not spawn after completing the Wave 2 (STARC-186385)
+- Potential Fix: Anvil Hornet F7MK2 Series (Multivariant) - Vehicles / Weapons - VMA / Inventory - The TMSB-5 turret will break into individual parts and cease to function if equipped then immediately unequipped to a compatible Hornet (STARC-157321)
+- Potential Fix: Multi-System - PU - Combat AI Feature / AI - Some hostile AI will not shoot
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Locations / Art / Design - Medium hangars have an excessive amount ASOP Terminals
+- Potential Fix: PU - Engineering - Vehicles / VFX - Smoke will pulse when life support is active
+- Potential Fix: PU - Vehicles - Objects - Engineering - Satellites on missions can be brought to 0% hull but will never be destroyed because no powerplant available to explode (STARC-188890)
+- Potential Fix: PU – Missions – Defend Ship - There's a chance that the ship to protect is not present on the mission location
+- Potential Fix: PU - Stanton - Looting / AI / Inventory - "move all" from legacy inventory screen does not move all loot from AI to backpack
+- Potential Fix: Esperia Stinger - PU - Vehicles / Vehicle Combat / Ship Weapon - Wrath Cannon weapon does not fire when used (STARC-189111)
+- Potential Fix: Multivehicle - PU - Vehicles / Weapons / MFD - Some vehicle weapons cannot be allocated any power in the MFD
+- Potential Fix: PU - Pyro - Contested Zone (CZ) - Checkmate Station - Locations / Animation - If fuse breaks while door is opening the opening animation will cancel and play the closing animation instead
+- Potential Fix: Multivehicle - PU - Vehicles - Engineering/Fire - inconsistent materials used causing fire propagation to be extreme in some ships
+- Potential Fix: PU - Nyx - Delamar - Levski - Locations - Docking Ports - Art - 3D Map / Interior map / Starmap - UI / mobiGlas / HUD - The Map layout for the Docking Ports are missing when traversing the areas
+- Potential Fix: Multivehicle - PU - Vehicles / Vehicle Components / Weapons - Physicalized components do not take damage from FPS weapon fire
+- Potential Fix: PU - Missions - Nyx - Intersec Defense solutions missions are blank on contract manager
+- Potential Fix: AEGS Idris ( All variants ) - PU - Vehicles - Docking - Idris inner docking door "Open" Interaction absent (STARC-188791)
+## Technical
+- Fixed 1 Client Crashes
+- Fixed 2 Server Crashes

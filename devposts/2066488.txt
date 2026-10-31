@@ -1,0 +1,30 @@
+## Star Citizen Patch 3.5.0r
+Alpha Patch 3.5.0r has been released to PTU, and is now available to test!  Patch should now show: PTU-1381322.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- General gameplay
+- Testing and reporting server stalls
+Major Known Issues:
+- No-fly zone autopilot take over is inconsistent.
+- Players arrive at planetary destinations just outside of the trigger for quantum travel points. W/A: Fly forward toward the planet/moon for a moment to trigger the quantum travel points.
+- Players can't move after respawn if they die with chat activated.
+- Unable to rent ships in Arena Commander.
+- Shubin Mining outposts are missing from Lyria.
+## Feature Updates
+Universe
+- Additional lighting and polish pass on Area18.
+Missions
+- Turned off old ECN missions, to be fully replaced by combat assist missions.
+## Bug Fixes
+- Fixed an incorrect calculation on mining transaction causing unintended high profits.
+- Mission related boxes should now have correct names.
+- Space based derelicts around Hurston should no longer occasionally spawn within the planet.
+- The mission marker for Eckhart's bounty mission should now properly appear.
+- There should no longer be a rectangular shaded area on Yela when you view it from orbit.
+- AI ships should appear to be moving again (but may still be jittery).
+Technical
+- Fixed a client crash.
+- Fixed 2 server crashes.

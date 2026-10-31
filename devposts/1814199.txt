@@ -1,0 +1,53 @@
+## Star Citizen Patch 3.4.0j
+Alpha Patch 3.4.0j has been released to the PTU, and is now available to test!  Patch should now show: PTU-1025819.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- New Ships: Hawk, Freelancer variants, 600i Touring
+- Lorville Central Business District
+- Hurston mission variants (bounty missions, downed relay missions, FPS AI missions, delivery missions, scramble races)
+Major Known Issues:
+- Klim may ocasionally be facing the wrong way.
+- Ruto's hologram currently doesn't appear.
+- FPS AI are not responding correctly.
+- Party invites have issues inviting more than one person.
+- The 600i's lifts may be missing interaction prompts.
+## New Features
+General
+- There's now a keybind for stowing and retrieving mission specific utility items "6", which may be required for drug and server blade (relay) related missions.
+## Feature Updates
+General
+- Added sub-targeting control keybinds to turret controls.
+Missions
+- Moved the "distraction" mission that was at a rest stop to a comm array.
+- Added drug delivery specific missions for Klim and recovery style mission for Hurston.
+FPS
+- Adjusted recoil on the Ravager shotgun.
+Arena Commander
+- Updated Hawk and Arrow Arena Commander scoring.
+## Bug Fixes
+- Players should now be able to change fire-modes on their weapon while in ADS.
+- Players should no longer be able to clip through the rear hatch of the Reliant and take damage.
+- FPS AI in underground facilities should now consistently have a weapon equipped.
+- Text on the Patrol missions should now display correctly on the mobiGlas.
+- There should now be atmosphere in the hab unit of the Mustang Beta.
+- Adjusted target position for sub-target main thrusters on several ships.
+- Sending a party invite to another should no longer display them as "default".
+- Players should no longer remain in a direct message call after one of them dies.
+- The crimestat UI should now properly display when rejoining the game.
+- After renting an item the selected ship should no longer default to the first ship on the list.
+- The mobiGlas should no longer require constant scrolling to zoom in and out.
+- Mission markers should no longer take players to the wrong location before updating.
+- Fix for liquid like shadows appearing on Delamar and other locations.
+- The underground facility defense turrets should eventually self-repair.
+- Mission markers should now properly appear on delivery boxes once a player has interacted with it.
+- Fixed EMP audio loop after usage.
+- Ships should no longer go from PRE to SCM when activating flight ready.
+Technical
+- Fixed a fatal error.
+- Fixed 7 client crashes.
+- Fixed a server deadlock.
+- Fixed 4 server crashes.

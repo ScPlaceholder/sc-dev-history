@@ -1,0 +1,43 @@
+## Star Citizen Patch 3.16.0f
+Alpha Patch 3.16.0f has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.16.0-PTU.7910297.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Disabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Gravlev Rework
+- Law system Improvements
+- Atmospheric Bounties
+- Dying Star Updates
+- Area18 Hospital
+Known Issues
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- PVE Bounty Target name may not match the target name given in the contract. Killing this ship before it is given a proper name (so it still has a long name ending in numbers) you will not complete the mission as the pilot.
+- Cannot Repair, Refuel, Restock at LEOs
+- The doors leading into the Orison Cloudview Center Arcade will not open from the outside
+- Pressing and holding F to "Freelook" does not work when piloting the Nox and prevents start up of vehicle using interaction (keybind will need to be used)
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+- Bed logging on a moon or planet - ship falls through surface
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+- The Emergency Elevators do not send a valid player to the hospital once the Admit Patients UI has been activated, remains stuck on "Checking Availability"
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Weapon will not holster
+## Bug Fixes
+- Fixed an issue that was causing AI bounty ships to stall indefinitely
+- Fixed a spawn closet issue that was causing UGF missions to now spawn all the intended AI
+- Players should no longer become stuck in the queue to respawn at an ICU indefinitely
+- Speculative fix for players becoming invisible while using the 400i ship elevator
+- Fixed an issue that was causing gravlev bikes to fling high into the air when a player exits them
+- Players should no longer enter a strange incapacitated state after crashing a Gravlev bike
+- Fixed split arrows from not showing when splitting items in personal inventory
+- Fixed an issue causing the prison escape keypad to fail If the prison keypad code starts with a 0
+- Fixed an issue that allowed players to use containers to phase through Jumptown building exteriors
+- The Mining Consumable Timer should no longer break if Toggling Mining Mode whilst it is active
+- Fixed multiple visarea issues around the Grim HEX Hospital
+- Fixed multiple visarea issues around the Area18 Hospital
+## Technical
+- Fixed 4 Client Crashes
+- Backend Service Crash Fix

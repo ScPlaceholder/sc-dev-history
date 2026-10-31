@@ -1,0 +1,93 @@
+PU Monthly Report
+July 2025
+With last month’s patch launching and a new one fast approaching, no Star Citizen dev has been short of things to do. Read on for all the latest development updates from each team, including AI, Ships, Core Gameplay, Narrative, and VFX.
+## AI Content
+July saw the AI Content team continue the ongoing initiatives mentioned in recent Monthly Reports, including the push on new combatant wildline sets, which will be completed following some integration work.
+The team also revisited shop behaviors to look for new opportunities to make the population feel more interactive. For example, leveraging the recent behavior found in medical stations (where NPCs voiced their concerns about the regen crisis) to add even more lore and flavor.
+AI Tech also planned for several of their upcoming releases, outlining the required work and highlighting potential obstacles they will need support to overcome in order to deliver the intended experience. Alongside this, the team continued to support the Mission and Design teams in implementing additional comms calls into the game.
+## AI (Features)
+In July, the AI Features team continued to develop new creatures, including prototype gameplay for a boss fight. As part of this, new tech was created that makes this process faster and more iterative, providing a better toolkit for the designers by compartmentalizing behaviors and making them data driven.
+For Human combat, the team fixed numerous smaller bugs and issues. They also added various ‘polish’ features, including a close-range shove attack that allows the AI to respond rapidly to the player or other NPCs getting too close.
+AI Features then continued to tweak, refine, and bug-fix perception and investigation when used by group behaviors. Group perception time is now used to determine how long a target has been out of range rather than the individual’s. The time before they timeout, go into investigation, and return to idle was reduced too.
+Progress was also made on the AI weapon interface and dynamic condition weapons. For example, when weapons change from rapid fire to single fire when overheating.
+The team also prototyped tech for AI ‘bounding overwatch,’ which relates to NPCs coordinating to traverse cover when moving to an area. This required changes to the TPS system to enable AI to find cover positions near paths.
+## AI (Game Intelligence Development Team)
+In July, the Game Intelligence Development team continued to work on the prototype for Mission System v2. This involved moving node states in the graph and reflecting them in copy, paste, and undo.
+The streaming profiler was also elaborated on. The ‘entity component update scheduler’ (ECUS) is a core system that determines what's in range and provides the fundamental proximity information for all streaming decisions.
+Furthermore, visual prototypes were developed for the density profiler, which previsualizes large scenes when there are too many entities. It includes a choice of pixel level and/or volume level to quickly identify problematic areas.
+The team also continued to fix various small bugs and worked on features requested and suggested by the game designers to improve StarScript.
+## AI (Tech)
+AI Tech began the month improving navigation. For example, they fixed island connections for the planetary navigation mesh and made link improvements to navigation types and metrics.
+Flags can now be added to navigation cost areas to prevent NPCs from stopping within them, while updates to the Tactical Point System prevent points from generating in areas where NPCs are not allowed to stop.
+For Ship AI, updates were made to various movement blocks following the addition of new features, while a new flight movement request type was implemented to blend ship movement to splines.
+Optimizations were also made to the ‘vision’ components, such as preventing lock contention from submitting or cancelling ray casts.
+For tools, the team added support for dragging and dropping multiple items into StarScript’s outline view. They also added display platforms and layer names as part of the variable type in Outline view, and made improvements to the Conversations view.
+New functionality was also added to the flowgraph to let designers mark which Subsumption global function behaviors are allowed to be used in scripting logic.
+For the usable builder, support was added for ‘helper geometry’, and for selecting a useable channel for testing rather than an animation. Usable setup changes are now directly applied to the entity without needing to reload the tool too.
+Finally for UI Tech, fixes were made for various small issues, such as the name alignment slot not displaying properly, attached entities snapping to the wrong locations, and helpers not validating properly.
+## Animation
+Last month, the team progressed with a new ship enter/exit template animation alongside pickups for bespoke gameplay features for an upcoming PU release.
+The Facial Animation team processed content from June's performance-capture shoot, including several new mission givers and a mini boss. They then worked alongside Narrative to create and finalize animations for various TV broadcast characters that will populate the verse, including James Herriman.
+The devs were also back on set with the Mo-Cap and Narrative teams, capturing additional content for Alpha 4.3.1 and future releases.
+## Art (Characters)
+The Character Art spent the month creating new armors and armor variants. Meanwhile, the Concept Art team prepared handoff sheets and began the exploration phase for new flightsuits alongside requests from other teams.
+## Art (Ships)
+In the UK, the Anvil Paladin had its greybox gate review. This highlighted some challenges with the side turret setup, resulting in further rounds of iteration to get something that plays well whilst adhering to the original concept.
+Further navigation flow updates were made to the Drake Ironclad, including new elevators and revised staircase locations to improve traversal times around the ship. The Ironclad Assault also progressed through whitebox, with the team implementing the key differences between it and the base.
+The RSI Meteor was also launched into the PU alongside a full interior retrofit for the Mantis.
+Four unannounced vehicles progressed down the pipleline too. The first was kicked off and is approaching the end of the whitebox phase, while the second passed its whitebox review and progressed into greybox. Some issues around its cargo mechanism were identified during the review but were rectified afterward.
+The third continued through development, with all its rooms receiving further geometry refinement alongside additional animation work for its moving elements. The final unannounced vehicle passed a combined gate review. This was done to provide more time for the Audio, UI, and VFX teams to add additional details with the aim of setting new standards for their disciplines.
+In North America, the RSI Apollo Medivac and Triage passed their LOD0 reviews and are now in the final stages, with damage setup, paints, and LOD levels being created.
+The RSI Perseus progressed into the LOD0 phase; the exterior is now receiving the fine detail work to visually bring it in line with other RSI ships.
+Finally, the Drake Kraken had further pre-production work done. This identified more areas where kits from the Ironclad will help speed up production, as well as some more challenging internal areas that require updated concept time, such as engineering and the recently added small medical facility.
+## Community
+Much of July was spent on ensuring player feedback was landing in front of the relevant developers/teams, alongside ongoing planning and support for the upcoming CitizenCon Direct. The team also continued with evergreen tasks like the Roadmap Updates and Roundups, the Arena Commander Schedule Update, and Monthly Reports (like this one). July also kicked off with the Foundation Festival, which was accompanied by a post explaining how to join the Guide System alongside showcasing the rewards for participating. The team shared a New Player Essentials post featuring a collection of resources to help newcomers get started, an Org Spotlight Comm-Link highlighting several player organizations recruiting new members, and the Kindness & Camaraderie screenshot contest that challenged players to share heartwarming moments of teamwork and friendship. Additionally, July marked the debut of the revamped Referral Program, featuring an improved user experience and refreshed rewards that unlock more frequently.
+With the launch of Alpha 4.2.1, the team published a Resource Drive FAQ covering key details about the event. A Q&A for the RSI Meteor was also released, answering questions about this new ship and highlighting improvements to the RSI Mantis and quantum interdiction system.
+Following up on June’s Alien Week, the team released a digital cookbook featuring alien-themed recipes submitted by players for the Wikelo’s Nine Tastes contest.
+The month wrapped up with the launch of Ship Showdown 2955, as players began rallying behind their favorite flyable and drivable vehicles by submitting original creations to the Community Hub and X.
+The Bar Citizen World Tour continued with two stops: Quantum Vegas and Tempa Bar Citizen, where both events brought together new and familiar faces for energetic, heartfelt meetups.
+## Core Gameplay
+Throughout July, the Core Gameplay teams focused on freight elevators, providing fixes for critical issues raised during the Resource Drive event while also improving the debugging tools alongside the QA team. This will ensure that future issues can be triaged faster with more initial information for investigation.
+Work was also done alongside Online Technology on contract generation and how missions utilize locations, both in terms of finding and reserving, to prevent them from becoming overrun. Immediate fixes were implemented and several future improvements were planned.
+Core Gameplay also improved the spawning flow to allow for another attempt of players spawning directly into their personal hangars instead of their home location hab. This work also paves the way for allowing players to spawn where they were (within reason).
+Core Gameplay began technical work toward refreshing parts of the inventory and continued bug fixing for freight elevators.
+For crafting, the team continued reevaluated the scope for the first public release, while the Inventory UI concept shown recently on Star Citizen Live entered development, with the team doing preparation work and setting up the new canvas.
+For hacking, more options were added to help teach players how to use the feature alongside bug fixing.
+Core Gameplay also supported Weapon Content in implementing a bespoke flap animation used during the charge-up sequence of the VOLT sniper weapon.
+July saw Engineering gameplay enter Tech Preview preparation, with the devs moving the code into a new staging stream. They also added the ability to limit the number of active items per pool. Thruster temperatures are now visible on the screen and the iconography between the diagnostics and engineering screens have been unified. The team also added further damage balance modifiers. For example, making fuses on sturdier ships harder to destroy. Diagnostics also received severity filters and item categories to make it easier to identify critical issues.
+As part of the ongoing ‘looting and harvestable’ quality-of-life initiative, the team completed a new implementation of loot generation. This system is twice as fast as the previous version and includes better controls for the designers alongside improved debug tools.
+The ‘item expiry’ feature kicked off, which will allow the designers to define the functionality lifetime of items. This is intended for items, such as key cards, that are only meant to be usable for a limited amount of time before they become non-functional. An item's expiry state and timer will be visible in the inventory. Progress on ‘item recovery’ tier 1 continued, including various setup and debug tool tasks.
+The team completed the refactor of quantum interdiction for Server Meshing, which was released in Alpha 4.2.1. There are still a few outstanding tasks to complete that will be delivered as part of future releases.
+The team also continued work on the flight system. For example, Control Surfaces’ fly-by-wire system was finished, which will feed pilot commands to IFCS to correctly adjust control surfaces in atmosphere, much like a modern fighter jet would. This also included the implementation of auto trimming and various bugs that came out of playtesting.
+For quantum travel, the team continued working on the implementation of the new mechanics.
+FPS Radar and Scanning saw additional progress through July, with further improvements allowing the designers to define custom scan data. AI can now react to being scanned and respond accordingly. Players will also be able to identify if enemy NPCs have a radar equipped and could perceive the player scanning.
+The ongoing transport refactor continued, with additional work for dynamic destinations, such as instanced hangars. Core Gameplay also supported the Content teams in delivering the recent Resource Drive and escort missions.
+For the upcoming August release, Core Gameplay worked with the Content teams to expose more controls for item rewards. Additional support for the mechanics of an upcoming creature was also provided.
+The team then invested time in addressing critical issues preventing the usage of drop-off lockers that are required for an upcoming set of missions. Various bugs, edge cases, and exploits were also addressed.
+## Economy
+The Economy team is currently analyzing their recent community poll.
+“We would like to thank everybody for the extremely useful feedback that you provided. Your answers will help us better prioritize our focus for the next few months.” Economy Team
+They also reviewed engagement metrics for the new content introduced this year, with the aim of balancing it in a way that’s both fun and fair.
+As an ongoing effort to make the game more accessible, the team are adding the ammunition used by most FPS weapons to a significant number of shops. Now, players should be able to find the ammo for their favorite weapons more easily. However, ammo for the more special weapons will remain exclusive.
+## Mission Design
+The Mission Design team monitored the Resource Drive event to see how players interacted with the event, fixed small exploits, and helped Engineering fix the mission-generation system.
+They then looked at old locations that weren't included in the Alpha 4.0 refactor and, therefore, don't currently have missions. Once complete, players will see existing combat missions begin to target some of these locations.
+Alongside this, the team supported Alpha 4.3 deliverables by creating missions that encourage players to engage with the new content. Wikelo also received new missions and new cosmetics, balancing tweaks were made, and work began on the ‘accept mission in world’ system.
+## Narrative
+Last month, the Narrative team were deeply involved in getting the upcoming Alpha 4.3 patch ready for release by refining and tweaking mission text, objectives, UI screens, and branding to deliver a cohesive narrative experience at the new location. The team also had a performance-capture session that covered content for several upcoming patches; Narrative have been doing smaller and more frequent capture sessions this year to better match the cadence and needs of this release cycle.
+Additionally, the team crafted mission text and placeholder scripts for several gameplay scenarios that will be introduced later this year.
+“Because we need to record scripts far enough in advance for the material to be processed and placed in-game, we work with Design to record additional material to account for any future adjustments that may need to be made as the gameplay is polished. It’s a careful balancing act between getting extra coverage and not bogging down sessions with material that will never be used.” Narrative Team
+Also, the team began filling in additional details for an upcoming location, honing specifics to help further guide art and design as they populate it with locations and gameplay. They also crafted lore for a new ship seller, who the Narrative team hopes will be a fun addition to the ’verse.
+## Online Technology
+Live Tools improved how developers report bugs through the crash handler, making it more reliable. It also supports a wider range of use cases to help catch and resolve issues faster than ever.
+The Online Services team worked on the stow-context API, and supported missions on both the server and game sides.
+Tasks for the Blueprint Library also began, with API development planned for August. Finally, the team continued their work and discussions on Item Imprint v1.
+## R&D
+In July, the R&D team’s focus shifted exclusively to analyzing performance and optimizing engine and game code. This will remain the primary focus for the foreseeable future.
+## UI
+The UI team continued to support an upcoming gameplay event, contributing more interactive and environmental screens than ever before. This followed the usual process of working closely with the game designers to create the layout, defining the look with concept art, then working with Tech Design to implement them in the game.
+The devs also started work on the Inventory UI that was revealed in the Star Citizen Live episode ‘Earning in the ‘Verse.’
+“It’s a complex UI that covers several things for future gameplay, so we'll be working on it for a while.” UI Team
+Finally, the team created the dashboard and MFD UI for an upcoming vehicle, which has several unique visual features.
+## VFX
+VFX’s main focus throughout July was Alpha 4.3, including new locations, bespoke events, vehicles, and weapons. They also began preparing for Alpha 4.3.1 as related tasks started to arrive.

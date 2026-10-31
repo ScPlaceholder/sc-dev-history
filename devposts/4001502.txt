@@ -1,0 +1,46 @@
+## Star Citizen Patch 3.13.1b
+Alpha Patch 3.13.1b has been released to the PTU, and is now available for all backers to test!   Patch should now show: VERSION 3.13.1-PTU.7369595.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Audience: All Backers
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Stability and bugfixes
+Known Issues
+- Star Citizen may crash immediately after pressing "Launch Game" in the Launcher (Fix put in for a later build)
+- Ships on your account are not available for any Arena Commander mode except Free Flight
+- Customizations made on the RSI Website are missing in-game for the 300 series
+- Items missing after update / Character Reset / pledge change
+- Abnormally long delay between pick up storing of fps mineables/harvestables/items
+- Elevators at Grim Hex fails to complete animations and elevator can lose functionality
+- An elevator in Lorville Spaceport has invisible collision blocking the entrance
+- Having specific Helmets equipped during a FOIP call, will show the player as headless or missing eyes/teeth
+- Client may crash when loading a second player into a server in Arena Commander
+- Players may not be able to quantum jump with another player in bridge with you
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Constellation can despawn when flying 30km away after undocking
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+- The eclipse spawns with cockpit canopy ladder open with ladder and cover enter / exit animations broken
+## Feature Updates
+Gameplay
+- Location security response should now be more aggressive based on criminal heat in the area
+Ships and Vehicles
+- Updated cockpit glass wear effect on Hornet F7A, F7C, F7CM, and all razor variants
+## Bug Fixes
+- Accounts with large personal inventories should no longer cause server performance issues when joining a game server
+- Chat should no longer be partially off screen on super/ultrawide displays
+- All missions that take players to underground facilities will no longer withdraw when approaching
+- SDF shields should now change shape correctly to conform to the ship when parts are blown off
+- Repairing a Constellation without the Merlin attached will no longer spawn a new Merlin docked in the ship
+- Freelancer MIS/MAX/DUR turrets should no longer have limited motion and should now be aligned correctly
+## Technical
+- Fixed 2 Client crashes
+- Fixed 7 Server crashes (including Ursa Rover crash fix)
+- Backend Service Crash Fix

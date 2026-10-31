@@ -1,0 +1,87 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to Wave 1 testers!  Patch should now show: VERSION 4.0.0-EPTU.9442861.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US
+Audience: Wave 1
+Long Term Persistence: Enabled
+Server Meshing: Enabled
+Mesh Configuration: 2:2:380 (2 solar systems, 2 servers per system, 380 players total per mesh)
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Server Meshing  2:2:380
+- Pyro Star System and New Locations
+- Contested Zones
+- Jump Points
+## Known Issues
+Tonight's build contains further mission inclusions as well as the updated Mission Service. Please let us know about any issues with missions in the issue council!
+Tested Working
+• Mercenary in Stanton
+• Handyman in Pyro
+• Bombing Run in Pyro
+• Ship Heist in Pyro
+• Bounty in Pyro
+• Salvage in Pyro
+Tested With Issues
+• Courier in Pyro (doesn't exist in Stanton)
+• Hauling in Pyro and Stanton
+• Bounty in Stanton
+• Missing Persons in Pyro
+For this build, we have temporarily disabled the altimeter reading in ships to avoid a nearly 100% client crash.
+- PU - Pyro - Network / Streaming / Locations - Certain Rastar Locations will briefly stream in for all player located in Pyro, regardless of distance
+- PU - Multi-System - Jump Points - Ships / Vehicles / VFX - Ships will have a VFX trail in front of the Cockpit after Jumping whenever the Vehicle moves
+- Stall - Client - PU - Jump Points - Performance - There is a brief client stall when travelling through the Jump Point Tunnels
+- PU - Multi-System - Jump Points - Ships / Vehicles / SFX / Audio - The Jump Point SFX are rapidly looping/cut off
+- PU - UI - mobiGlas - mobiGlas UI is displaying incorrectly on several pages/tabs
+- MISC Starlancer Max - PU - Vehicles - Starlancer Max landing gear won't deploy but ship speed is limited as if they were
+- PU - Pyro - Locations - Checkmate - Medium Hangar blocked by station geometry
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- Multiweapon - PU - Actor / Animation / Weapons - Both male and female actors do not animate while reloading weapons
+- PU - Pyro - Orbituary - Locations / Art / VisArea - Navigating from assigned hangar elevator to "Entrance" opens to a VisArea portal above medical clinic
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+## Features & Gameplay
+- Locations
+- Contested Zone and Asteroid Base Lighting, Art, AI, and Performance Polish Pass
+- Jump Point Set Dressing, VFX, and UI Polish
+- AI
+- Quasi Grazer Animation Polish Pass
+- Ships and Vehicles
+- Starlancer MAX Acceleration and Thruster Power Slightly Reduced
+- Core Tech
+- Made Further Networking Optimizations and Performance Improvements
+- Made Further Physics Optimizations
+- FPS AI Movement Rendering Optimizations
+- AI Spawn Closet Performance Optimizations
+- Further Audio Mix Pass for Ambience, Weapons, UI, Interactables, and Dialogue
+## Bug Fixes
+- Fixed - PU - Vehicles - Jump gates - Jump gates repel groups of players attempting to utilize it (STARC-101694)
+- Fixed - Mission Refactor - Cargo Hauling missions - No cargo is visible in the Freight Elevator Kiosk at the pick-up location (STARC-137686)
+- Fixed - RSI Polaris - PU / AC - Vehicles - The Polaris rear-side manned turrets will constantly slowly rotate when the gyro is active (STARC-139012)
+- Fixed - Multivehicle - PU - Vehicles - Locations - Landing Services - Unable to restock vehicle ammunition at spaceport docking collars
+- Fixed - PU - Pyro - Elevators / Personal Hangars - Ruin Station - Locations - Elevators from personal hangars to the entrance can send the player to an incorrect elevator
+- Fixed - Argo ATLS - Missing tractor beam component
+- Fixed - PU - Pyro - Rundown Station (R&R) - Orbituary - Locations - Hab elevators are broken and do not open when called (STARC-140525)
+- Fixed - PU - Landing Services - The player may open the landing services app before the backend service is ready. No request will be sent until the service is ready and the app is refreshed (STARC-136767)
+- Fixed - PU - Stanton / Pyro - Locations / Transit - Elevator doors to hangar are doubled and one set of doors without collision remains closed after carriage arrives at hangar destination (STARC-134288)
+- Fixed - SC - Character Customizer - Camera is offset and does not stay in place while editing character (STARC-142669)
+- Fixed - Aegis Reclaimer ALL Variants - Vehicles / Actor - Player falls off the personnel elevator when using it (STARC-130926)
+- Fixed - Stanton - Vehicle Animation / Viewports - Multivehicle - Viewports on the Esperia Talons and Prowler defaults to clear/off and do not respond to vehicle power state changes (STARC-67895)
+- Fixed - Multivehicle - PU - Vehicles / Radar - Vehicle radar does not give ping returns after first return
+- Fixed - PU - Stanton/Pyro - Jump Points - Ships / Vehicles / Game Code - Ships outside the Jump Tunnel are able to enter the visarea and Intersect through the Tunnel
+- Fixed - PU - Stanton/Pyro - Jump Points - Ships / Vehicles / UI - Obstruction Notification remains on Screen even when Misaligning
+- Fixed - PU - Pyro - Ruin Station - Medical Screen / Locations - Clicking transfer imprint does not change imprint location
+- Fixed - Sub Targeting - Code - Players cannot subtarget PDCs
+- Fixed - PU - UI - mobiGlas - mobiGlas UI is displaying incorrectly on several pages/tabs (STARC-142005)
+- Fixed - Anvil Terrapin Medic - PU - Vehicles / Controls - Flight-Ready cannot be triggered at the dashboard (STARC-139949)
+- Fixed - Pyro - Narena's rest ground is not level with the buildings (STARC-137176)
+- Fixed - Anvil Terrapin - Vehicle Art - Tech Art / Interactions- Personal Storage - The interaction points for the Terrapins personal storage is offset from the relevant storage cubbies and has no related physical button
+- Fixed - PU - Pyro - Rundown Station (R&R) - Multiple Locations - Locations / Vehicles / Shopping - There are display vehicles missing from the vehicle dealership
+- Fixed - Aopoa Khartu-al - PU - Vehicles - Weapons attached to gimbals seem to have the wrong orientation, clipping into the ship's geometry
+## Technical
+- Fixed 9 Client Crashes
+- Fixed 8 Server Crashes

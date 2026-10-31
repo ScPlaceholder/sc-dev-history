@@ -1,0 +1,5 @@
+1) Doubtful that we'd include a higher-res resource, since it's already very disk and memory hungry, however what could be exposed as a quality setting is the distances at which lower-resolution chunks begin to be used.
+2) We did experiments with more weights, the results didn't look much different. So while it's totally feasible to support an 11-weight version, I don't think we'd do it if we couldn't find something that it made look good.
+3) There are a couple more performance improvements:
+- We render gasclouds at half resolution and upscale them on the lower quality settings while we render at full resolution on the higher ones. It can theoretically go down to 1/4 resolution, but the results so far weren't too reliable.
+- We have a CVar that lets us take fewer samples along the ray than we ought to need, relying on the data being low-frequency and/or temporal antialiasing to clean up the results. On higher specs, this undersampling could be turned off

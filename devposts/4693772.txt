@@ -1,0 +1,70 @@
+## Star Citizen Patch 3.16.0d
+Alpha Patch 3.16.0d has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.16.0-PTU.7907165.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Disabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Gravlev Rework
+- Law system Improvements
+- Atmospheric Bounties
+- Dying Star Updates
+- Area18 Hospital
+Known Issues
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- Cannot Repair, Refuel, Restock at LEOs
+- Medical bed not healing injury
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+- Bed logging on a moon or planet - ship falls through surface
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+- The Emergency Elevators do not send a valid player to the hospital once the Admit Patients UI has been activated, remains stuck on "Checking Availability"
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Weapon will not holster
+- Area18 Hospital Pharmacy kiosks do not populate with items for purchasing, remains on "Awaiting Selection"
+- The doors leading into the Orison Cloudview Center Arcade will not open from the outside
+- Vehicles with Grav-lev can get launched into the air when the sides and rear of the vehicle collide with static assets, regardless of speed
+- Exiting Gravlev vehicle causes it to fling you into the air
+## New Features
+Locations
+- Area 18 - Hospital Interior Location
+Implementation of a working hospital located in Area 18, where players can be healed and revived, as well as purchase medical supplies.
+## Feature Updates
+Locations
+- Reduced snow velocity stretch to prevent elongated snow effects on Microtech
+Gameplay
+- Gravlev Polish
+Reduced max speeds and updated Gravlev raycasting to help reduce unwanted hits on hills and ground objects.
+- Dying Star Updates
+Updating the Dying Star map to bring it inline with the recently updated Broken Moon map by increasing overall size, adding new playable areas, more cover options, and new space assets.
+- Jumptown Polish
+Event General
+1.) Players should now receive a warning when the event is about to expire. After this warning the drug Spawner will cease production and new players will no longer be able to accept the event-related missions. After this warning will be a grace period where player's can keep their mission and event-specific locations will continue to buy Maze at an increased price.
+2.) Maze sell price at event-specific drop-off locations should now be correctly increased for the duration of the event.
+Criminal Mission
+1.) Criminal Mission should now require players to pay Ruto 5000 aUEC for his information.
+2.) Criminal Mission should now display as "+Bonuses" for its reward, indicating that Ruto might make additional payments due to player actions.
+3.) Criminal mission will now only start with one marker from Ruto, indicating where the drug lab is located. This marker is not Quantum-Travel-able.
+4.) On arrival at the drug lab, Ruto will inform the player of a connection who is very interested in buying the goods from this event.
+Dev Note: For this release, the buyer will always be located at Grim Hex. Future iterations will likely add variation to this.
+5.) When selling at the Preferred Buyer, players will receive an additional mission payment and reputation from Ruto on top of the commodities' sell value, as thanks for selling to his connection.
+Lawful Mission
+1.) Lawful mission should now display a reward of "5000+Bonuses" for Successful completion.
+Ships and Vehicles
+- Ares Ion Balance Pass
+Tweaked the Ares Ion weapon to have a higher RPM with more DPS and made aim adjustments, making it harder to track and one shot single seat fighters.
+- Redeemer Balance Pass
+Adjusted the turret velocities on the Redeemer.
+- Added radars to the Constellation series copilot seats
+## Bug Fixes
+- Players should no longer damage ships while exiting them
+- Fixed an issue causing UI HUD elements to randomly become distorted
+- Fixed an issue causing UGF missions to not spawn all the intended FPS AI
+- Fixed an issue causing Bounty hunter missions to stall indefinitely if leaving the area before it updates on a slow server
+- Fixed and issue causing bounty target markers to disappear
+- GravLev vehicles should no longer take damage and explode with normal use
+- Barton Flats Aid Station should no longer be inside the Klescher Trespassing Zone
+## Technical
+- Fixed 2 Client Crashes

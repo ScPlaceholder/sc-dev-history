@@ -1,0 +1,21 @@
+## Happy Tuesday, everyone!
+First things first, we wanted to give you an in-depth update on the continuing work on Alpha 3.18 and its upcoming patches. Last week, the teams focused on load testing and validating the game changes that went into 3.18.1, primarily focused on the ASOP delivery feature, which reduces the size of player's default inventories and thus the size of the global databases substantially. This is aiming to alleviate some of the entitlement issues you all have been experiencing.
+In addition, on the infrastructure side, an updated set of tools tailored for 3.18 load testing as virtual service clients were augmented and deployed to improve the resilience of the system overall. This is a huge step for service testing as it allows the publishing teams to perform large-scale traffic tests automatically by having those virtual clients perform the full login flow, go through entitlement processing, request ship deliveries, etc.
+With these updated automation tools, publishing teams are now able to validate whether the system functions (or not) as it should under different conditions without needing QA groups or PTU deployments. This also opens the door for chaos/destructive testing (which some of you may have noticed over the weekend), where random services are killed or restarted while the workloads are running. This enables us to ensure alerting and recovery functions as it should. It also facilitates discovery, regression, and validation of issues that happen only under higher concurrency and that are typically very hard for us to reproduce, even on PTU.
+Armed with the data of the last few weeks, the team has also spent considerable amount of time analyzing and optimizing the cloud footprint of the game to resize and adjust the layout of the clusters and regions where the game hosts services. This is all due to the needs of Alpha 3.18's infrastructure being a lot higher than previous game versions.
+The team has made significant progress toward the launch of 3.18.1, and we're looking to have this in your hands shortly. Once again, thank you all for your continued support, patience, and understanding as our teams work to get things running smooth again.
+## Now, let's see what's going on this week:
+This Tuesday, the Lore Team will make the Portfolio on WiDoW available, first appearing in an issue of Jump Point. Highly addictive to users and highly profitable to distributors, WiDoW went from an ultra-exclusive opioid to what the UEE has called “one of most significant public health issues of the 30th century.
+On Wednesday, we'll repost last week's Squadron 42 Monthly Report as a Comm-Link.
+Friday won't have a new episode of Star Citizen Live, but we'll be back soon! You'll also see our weekly newsletter in your inbox.
+Have a great week everyone!
+Jake Bradley
+Community Manager
+## THE WEEKLY COMMUNITY CONTENT SCHEDULE
+## TUESDAY, APRIL 11, 2023
+- This Week in Star Citizen
+- Lore Post: Portfolio - WiDoW
+## WEDNESDAY, APRIL 12, 2023
+- March 2023 SQ42 Report Comm-Link
+## FRIDAY, APRIL 14, 2023
+- Weekly Newsletter

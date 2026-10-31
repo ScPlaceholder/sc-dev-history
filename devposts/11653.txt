@@ -1,0 +1,24 @@
+Spectrum Alpha 0.3.0e
+New Features
+Added additional server-side analytics to track room traffic
+Bug Fixes & Improvements
+Minor adjustments to legalese text in Spectrum About.
+Fixed a bug where going from a new private lobby to a public one would cause a crash. (Thanks @Kefeinzel)
+Hopefully fixed private lobby read count resetting across multiple browser tabs
+Fixed a bug where UTF Russian characters would prevent Spectrum from loading
+Temporarily added special handling for lobby presence list on large lobby groups (no longer expandable)
+Fixed a bug where private lobby server error would cause and infinite load loop
+Fixed the layer index for the mention and command completers
+Fixed layer index for the message input versus the modal windows
+Eliminated console log spam from production build
+Fixed a bug where closing a private lobby would cause an application error when over the lobby limit
+Fixed a bug in forums where the channel thread count would be missing one page.
+Fixed a bug where server-side presence updates were sent multiple times
+Fixed OpenGraph generation in Spectrum pages to truncate it's content
+Increased the Away TTL to 15 minutes (from 5 __minutes__)
+Known Issues
+Emoji list is missing Unicode 9 latest updates (No avocado or salt shaker WHAT!)
+On mobile,  the message input closes when you type. It's bad. We're on it!
+We are investigating client performance rendering  the user presence lists. We're on it!
+"General, prepare your troops for a surface attack."
+-b

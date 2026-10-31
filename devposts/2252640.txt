@@ -1,0 +1,11 @@
+@G_Trevize, okay in order to explain that you have two things:
+1) The look target --> this is what your headtracker wants the head to go
+2) The look direction --> this is where your head is currently looking at
+3) The distance which is the difference between 1 and 2.
+Both things are simply vectors or angular offsets in X, Y, Z (actually quaternions but it doesnt matter really).
+Assume you look somewhere ... you command a new look target via head tracking. The look direction will then "slew" to that new look target (and reach it after a couple of frames).
+However the head-tracking is commanding a new look target in every frame. Since you cannot physically hold your head entirely still you will likely never produce the same look target again ... even if you manage to hold your head still you will always be causing slight shaking. This would cause very slight shaking on the screen.
+This is where the threshold come in. It allows a new look target only, if it is more than the X degrees off the old look target ... if it is within those X degrees, it will simply not do anything ... and the view stays stable that way. It is effectively a deadzone (but we decided with the community that this was too confusing due to other "dead zones" in head tracking).
+The smoothing is related to that. Say your look target and your look direction are off by 20 degrees. Within the next game update, the look direction will try to "slew" towards the look look target. But the speed of that process is dictated by the setting. So if you set it to 0.1, it will only go for 10% of the whole way ... so it would shelve off 2 degrees of that distance in one frame. As you in following frames that distance between look target and look direction shrinks further ... but since always 10% of the current distance are shelved off, that movement speed slows down over the frames. Additionally some modifiers are in place when the distance is smaller than the threshold ... it will further decrease the speed as it just looks nicer. If you do not want any smoothing at all, set it to 1 ... but it arguably does not look as nice. It's not really elaborated but it does the job.
+Smoothing and Threshold do nothing on TrackIR though ... it has its own internal smoothing and thresholds.
+Makes sense?

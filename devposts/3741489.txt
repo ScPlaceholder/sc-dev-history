@@ -1,0 +1,3 @@
+Although maybe related from a conceptual point of view Head Tracking and VR are not the same thing and have different requirements. From internal testing we are convinced that coupling the translation offsets to the view direction will offer the better experience for head tracking.
+As I said we are not opposed to adding an option to decouple the translation from the orientation but we will stick to the current defaults for Faceware and Tobii. TrackIR has a similar concept called "TrueView" which can be enabled / disabled within the TrackIR tool (and which is enabled by default).
+As for the artificial sway ... this is likely coming from the breathing motion and idle animations of the actors. We likely won't have a perfectly static camera in the cockpit.

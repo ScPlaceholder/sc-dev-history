@@ -1,0 +1,4 @@
+A real day-ruiner is what they are :smile:
+At first we had them down as the result of an accidental memory corruption from another part of the game, and when chasing that lead memory corruptions were found, so we didn't panic.
+After a concerted effort to reproduce and debug it under controlled circumstances by a load of people in the UK and DE graphics and test teams (though nothing I tried was really helpful, I did get to fly a Terrapin and entertain one player who found me squatting by the ASOP terminal trying to use the console), we're fairly sure it's the combination of 1) a flaw in the GPU memory management that would go wrong when a pool is greater than 4GB and 2) A system that's consuming a lot more memory than it should be. We didn't see it until PTU, because the memory usage was dependent on hanging around lots of players who fiddle with their loadouts.
+Touch wood, we've got it in hand. Or the LA team have, anyway, it's late here.

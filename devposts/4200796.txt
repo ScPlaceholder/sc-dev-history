@@ -1,0 +1,67 @@
+## Star Citizen Patch 3.14.0j
+Alpha Patch 3.14.0j has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7643356.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: Wave 1
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Current cloud tech is still in active development and not yet final. There's ongoing work on SDF occlusion which should help alleviate the graphical artifacting (visual dots in the clouds). Additionally, we are working towards having local VFX for the clouds (similar to the gas clouds around rest stops) which will make a big difference in overall quality.
+Issue Council Update: When creating a report, players are now asked whether they would like to allow developers to contact them about their reports if it is not already enabled. This setting is purely optional to help us track down hard to reproduce issues and can be disabled at any time in the Issue Council settings menu.
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Known Issues
+- Gas Clouds on Crusader appear to have moving graphical artifacts that appear as dots. Current clouds are still in development and not final. See note at the top of patch notes.
+- Orison objects & textures loading very slowly
+- Missiles do not follow flares as a countermeasure
+- Single location will only appear if the player spools their drive before setting destination on the starmap (Workaround: Spool quantum drive before opening the starmap and then open it and set route)
+- Various UI markers are faded and hard to read
+- Unable to scan for FPS or ROC-sized mining deposits until very close
+- Security Ships do not recognise illegal goods onboard a ship when being carried by a player
+- The Player is unable to QT in Succession without Toggling the QT Drive off/on again
+- Landing gear proxies are missing on certain ships
+- Port Tressler is missing QT marker when Player returns to microTech planet
+## Feature Updates
+Locations
+- Orison Performance and Lighting Polish Pass
+Gameplay
+- Ongoing Ship Capacitor, Balance, and Polish Pass
+We have done further core tuning for ships. Reduced range of S1 to S4 cannons. Increased cannon power efficiency. Further polish pass on cannon fire rate and delay. Upgraded Hurricane power plant. Slightly reduced the Hurricane's health.
+- Law System Changes
+Greatly increased time and cost of impounding for Parking Violations and Reckless Vehicle Operations around landing pads.
+- Updated the new Missile Lock UI
+- Vehicle ping and blob effect polish pass
+Ships and Vehicles
+- Sliced HUD polish pass
+Added HUD indicators for Velocity limiter on/off, VTOL on/off, and G-Safe on/off.
+## Major Bug Fixes
+- Fixed an issue causing fog volumes in Orison to not render when viewed at certain angles
+- Fixed an issue causing signs to have graphical issues and appear wobbly and blurry when walking around them
+- Ping blobs should no longer be visible in 3rd person view
+- Fixed an issue that was causing flickering/shivering asteroids around Grimhex
+- Docked ships should now have correct collision
+- Fixed an Invisible wall blocking stairs to the Trade and Development Division in the Plaza in New Babbage
+- Cryastro Services should now function correctly at the New Bagbage Commons Garage
+- AI turrets should now correctly use targeting prediction
+- Fixed an issue causing large black cubes and bright light particles to be seen within the snow storm clouds on microTech & in the "dust" storm on Hurston
+- Fixed an issue causing Seams to be visible in the terrain of Hurston when it LOD switches
+- Players should now be able to re-enter the Reliant series cockpits after loging out and back in with the reliant's bed
+- Talon and Talon Shrike should no longer appear damaged in the VMA
+- Players should no longer be given an extra 'Escaped from Custody' crime when sent to prison
+- Fixed an issue causing Arena Commander modes to get stuck on " searching for match "
+- Arena Commander Duels should now end correctly when score limit is reached and should no longer lead to the game finishing early when points reached is too high
+- Respawning in various AC game modes should no longer cause the player to instantly die again
+## Technical
+- Fixed 4 Client crashes
+- Fixed 1 Server crashes
+- Fixed 2 Main Thread Deadlocks
+- Fixed 3 Backend Service crashes
+- Made multiple Backend Service stability fixes and optimizations

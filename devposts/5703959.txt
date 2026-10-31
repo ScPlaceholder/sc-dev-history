@@ -1,0 +1,48 @@
+Hello everyone!
+Let's talk about ultrawidescreen.
+As you may already have noticed in the latest PTU the console stretching has finally been fixed.
+This was just a tiny spoiler of what's about to come, hehe.
+This morning i have submitted all my other changes fixing a variety of widescreen issues.
+Let's go through them one by one:
+1.) FOV and FOV slider in the options menu doesn't update when changing screen resolutions and certain elements like the player HUD were cut off sometimes (https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-48836)
+> The initial FOV ranges were dependent on the current screen resolution and subsequent changes to the resolutions didn't update it all. This was causing some weird behavior of zooming in when changing screen resolutions and the FOV slider didn't update.
+This has been fixed entirely. Whenever the screen resolution changes the Vertical Field of View stays the same, but the horizontal extends if changing to ultrawide. The slider now also correctly updates.
+There was one more issue with 32:9 ratio screens which was calculating a too narrow FOV which caused the player HUD to be slightly out of screen. I've added a new entry in our global FOV settings which fixes this as well.
+What decides the min/max values of the FOV slider?
+This is dependant on the aspect ratio/screen resolution. The engine calculates it in a way to keep a vertical FOV of roughly 54-66 degrees:
+Aspect Ratio:       Horizontal FOV:
+4:3                        69-83
+16:9                      85-100
+16:10                    80-95
+21:9                      100-115
+32:9                      122-134 <----- This entry was added (was 117-128 before)
+48:9                      140-148
+If your resolution does not has any of these aspect ratios: the two closest ones are taken and the average will be used.
+2. Chat moves to the bottom left when entering a ship in ultra ultra wide resolution (https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-3735)
+> This is really OLD code and still uses the flash technology. Unfortunately i'm not able to change any flash implementations. However: I found the code calling into it and  disabled it.
+This means the chat won't move down anymore when entering a ship. No more hacky macky for you :grin:
+Also keep in mind that everything flash related will be replaced by BuildingBlocks in the future.
+3. 21:9 - Cannot see full info of shop items on counter / Help popups are out of screen (https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-16773)
+> This is also rendered by flash. I could reproduce it on my end when i started investigating it, however after my latest changes it's gone all of a sudden. So either one of my changes fixed it as well
+or it was fixed by someone else in the meantime. If it still happens for you there's nothing i can do since it's old flash technology. The building blocks implementation will fix it however in the future.
+4. Big QT Markers/Starmap markers (https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-55697)
+> Old flash technology. I'm not able to fix this however we're already working on the building blocks version so stay strong for a little longer!
+5. Subtitles are cut off (https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-48463)
+> Wasn't able to reproduce this at all. Potentially already fixed. Also it's flash so will be changing in the future anyway.
+6. Menu screens do not fill up entire screen (https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-32185)
+> Flash. Will be fixed once we have a building blocks menu. Also it's not really a gamebreaker anyway.
+7. Inventory close button can not be used on ultrawide display (https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-54750 )
+> 3.18 issue only since it's a new button on the top right. I forwarded it to the respective teams to fix it.
+8. Inventory items scale weird (https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-56466)
+> Ooooooooooffff. This was very interesting I was spending days in and out digging through the building blocks UI code. It wasn't just one bug, it was 5 different ones in total!! I almost went insane:')
+But i'm happy to tell you that they are all fixed! The inventory items will work now on all resolutions pixel perfect.
+Some things may still be questionable from a design perspective with ultra wide screen resolutions, but that's something i can't change.
+For example the inventory is attached to the left/right so having a very wide resolution (e.g. triple monitor setup) it's quite a chore to use it. I will talk to the UI team and see what we can do about it.
+9. Frozen/Rain on First Person Helmet (https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues/STARC-1297)
+> I haven't had time to look into this yet, but this may be tricky to fix since the effect is being rendered on our usual player visor mesh. I will try my best to fix it for 3.18.
+That's it for now!
+I hope that resolved the biggest struggles for you out there!
+Feel free to ping me anytime if you have more widescreen issues.
+Enjoy Star Citizen and fly safe o7
+Also big thanks to @DavidGill and @simonwhite for supporting me in a few things.
+Silvan

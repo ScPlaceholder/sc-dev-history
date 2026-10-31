@@ -1,0 +1,73 @@
+## Star Citizen Alpha Patch 4.7
+Alpha Patch 4.7 has been released to the PTU!   Patch should now show: VERSION 4.7.0-PTU.11414557.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Tonight's build will also have Nyx mission pack 2 enabled which will have existing mission types that send players to QV Breaker Stations around Nyx (these locations will not have the rock breaker activity)
+- Stability, Bugfixes, LTP between PTU releases
+- Operation Breaker Stations and QV Breaker Stations locations
+- Inventory Rework
+- Crafting Fabricator and Blueprints
+- Engineering Updates
+- Radar Assisted Targeting (Radars components in shops will be arriving in a future PTU patch)
+## Known Issues
+- Multi-System - PU - ASOP Terminal / Locations - Moving the mouse cursor over a different vehicle in the ASOP when attempting to deliver a specific vehicle will deliver the different vehicle instead
+- Multi-System - PU - ASOP Terminal / UI - There is a chance that a blank information of the Vehicle may appear on Hangar Delivery Request using the ASOP Terminal
+- PU - Nyx - RCD - Location / Design - Laser Catalysts can't be detached from the Monorail
+- PU - Nyx/Levski - Transit - Going prone whilst in a moving Limbo Elevator Carriage, will cause the player to fall out of the carriage
+- PU - Starmap / MobiGlas / UI - Starmap is zoomed into the ship when in a cockpit instead of showing the system or region of space in
+- PU - Nyx - RCD - Medical Screens / Locations / Medical - Medical imprint cannot be set at the Exclusive Medical Bay locations
+- PU - Nyx - RCD - Locations / Art / Proxy - Breakable Ice entity visibly stays intact after shooting icicles
+- PU - Inventory Rework - UI - Inventory does not update Capacity and Space changes in Personal Inventory
+- Multi-Item - PU - Inventory Rework / Weapons / Art - Some icons become stretched out upon scrolling down the inventory
+- Multi-System - PU - UI / mobiGlas / Starmap - Starmap search bar dropdowns will only show location icons stacked on top of each other
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+## Features & Gameplay
+Gameplay
+Operation Breaker Stations Polish
+Reduced overall amount of Breaker Stations mission stations in Nyx. Large increase to buy-in cost for exclusive location access with reduced buy-in cost for non-exclusive. Ice Juvenile and Ice Adult Valakkar added and polished to Breaker Station locations. Increased respawn time for laser room combat AI. Performance updates with new meshes and LOD adjustments. Ambient audio adjustments. Temporarily added 3 more laser catalysts to processing room for PTU.
+Inventory Redesign
+Added Apply/Clear buttons to the Search. Added support for fixed grid size specification for inventory UI items that does not change the size based on the orientation. Adjusted inconsistent use of dimensions throughout inventory system.
+Crafting Fabricator & Blueprints
+Missions have been set up with their own blueprint pools allowing blueprints uniquely designated to specific missions. Added Vaughn FPS, Headhunters FPS, NorthRock, and BitZeros Blackbox recovery missions with blueprint pools. Added guaranteed blueprint chance for missions that give them. Further weapon blueprint inclusions. FPS Weapon and Armor blueprint rebalance based on rarity. Reduced default dismantle quality return and removed some blueprints from default list. Crafting UI adjustments to the button sizes and alignment. Implemented Paging support for UI to replace current scrolling mechanic. Updated fabricator queue screen to support updated UI. Adjusted recoil balance for crafted weapons.
+Shop Price adjustments and additions
+- Aegis Redeemer shop price greatly reduced
+- Item Fabricator price increased
+- Added Anvil Hornet F7CM Mk2 Ball Turret
+- Updated MXOX Neutron Cannon S1, S2, S3 added
+- Esperia Stinger and Grey's Market Shiv added to ship shops
+- New ship rentals added: RSI Apollo Medivac and Triage, Esperia Prowler Utility, Drake Golem, MISC Fortune, and Aegis Avenger Titan.
+- Added 2 handed tractor and salvage tool to more shops
+Ships & Vehicles
+- Added limited gimbals to the Aegis Vanguard's nose gun
+Core Tech
+- Music inclusion updates into 4.7
+- Further entity count updates in Nyx to reduce unintended high amounts
+## Bug Fixes
+- Potential Fix: Fixed an issue of s1 weapons not being able to damage a lot of ships
+- Potential Fix: Multivehicle - PU - Vehicles / Salvage - Reclaimer and Moth can fracture itself, causing it to explode (STARC-198054)
+- Potential Fix: PU - Nyx - RCD - Locations - Asteroid opening cap does not reset after completing the flow and restreaming the location
+- Potential Fix: PU - Nyx - RCD - Locations / Elevator Terminals - Service Entrance Elevator panels do not function at Shared and Sandbox locations
+- Potential Fix: PU - Inventory Rework / Camera / Controls - When scrolling within the inventory on either the left or right panel, the paper doll camera zooms in and out (STARC-196034)
+- Potential Fix: Item fabricator does not show the materials required to craft some items (STARC-198329)
+- Potential Fix: RSI Apollo ALL Variants - PU - Vehicles / Vehicle Tech Art - The nose takes no damage as it is all passed up to the body
+- Potential Fix: Crafting materials "stick" to the side of the screen if dragged off-screen
+- Potential Fix: RSI Constellation Some Variants - PU - Vehicles / Elevators - Actor must jump to get on Elevator (STARC-120847)
+- Potential Fix: Multi-System - PU - Recover Item / Courier - Nyx Mission Pack 2 - Mission Content / UI - Item port shows "No Appropriate Item" despite player holding mission critical box
+- Potential Fix: Shader Eye in Specular Overlay render in front of the glass material (STARC-192503)
+- Potential Fix: PU - Nyx - RCD - Design / Interactables / Mission Content - Refractor Arrays are not being detected as powered upon activating them (STARC-198716)
+- Potential Fix: PU - Nyx - Levski - Locations / Actor / Actor Status - Asphyxiation in Service Sections of Hangars (STARC-184322)
+- Potential Fix: MultiVehicle - PU - Vehicles - The interaction range is too short on the weapon racks / lockers making it difficult for the user to place a weapon
+- Potential Fix: RSI Hermes - PU - Vehicles - The RSI Hermes Co-Pilot Seat is Missing (STARC-198062)
+- Potential Fix: PU - Nyx - RCD - Power Core - Location / Design - PGR Capacitor are removed from the slot if player push the lever when not all slot are filled
+- Potential Fix: PU - Inventory Rework / UI - Unable to clear the local inventory search text due to the entered word disappearing (STARC-196025)
+- Potential Fix: PU - Nyx - RCD - Design / Locations - Interaction prompt on the other side of fuse doors is present and functional from the wrong side (STARC-198468)
+- Potential Fix: APX Fire Extinguisher - PU - Weapons / Actor / Physics - Using the Fire Extinguisher causes the player to throw the Fire Extinguisher (STARC-198488)
+- Potential Fix: PU - Nyx - RCD - Collision / Locations - Players can fall through the floor near the elevator door connector at Power Core
+- Potential Fix: Multi-System - PU - Inventory Rework / Hangars / Containers -  Hangar Storage Kiosk allows player to drop large SCU cargo boxes through drop option (STARC-196141)
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 4 Server Crashes
+- Fixed multiple out of memory DGS issues

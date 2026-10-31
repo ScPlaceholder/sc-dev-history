@@ -1,0 +1,55 @@
+## Bug Fixes
+SC Alpha 4.1.1 contains over 140 bugfixes for issues occurring in 4.1.0, 38 of which originated from the Issue Council
+- Potential Fix: PU - Mining / Harvestables - Some mining nodes on planet surfaces cannot be scanned or mined and are lacking collision (STARC-162659)
+- Potential Fix: PU - Actor - Inventory / Interactions -  Cannot hold anything through "Carry" from Inventory into Hands unless item is dropped (STARC-134958)
+- Potential Fix: PU - Mission Refactor - Missions / AI - UGF - Eliminate Specific - Shooting at enemies at the mission site fails the mission (STARC-148847)
+- Potential Fix: Stanton - Ships/Vehicles - Commodities / Ship pods - Cargo pods snap incorrectly to ALL cargo grids and pop out of the wrong side when detached (STARC-161962)
+- Potential Fix: MISC Hull C - PU - Vehicles / Resource network - Hull C  is immune to distortion resulting in not getting distorted and turned off (STARC-158503)
+- Potential Fix: ANVL Valkyrie - Pu - Vehicles - Turrets - Valkyrie bottom turret glass wrong color (STARC-163340)
+- Potential Fix: Golem pilot seating position causes right leg to clip (STARC-162010)
+- Potential Fix: PU - Stanton / Pyro - Transit / UI / Locations - Interior elevator panels can become unresponsive (STARC-142083)
+- Potential Fix: PU - Locations - Hathor - OLP Control Panel unable to print laser keycard after PAFs aligned and power banks in place (STARC-163187)
+- Potential Fix: Players report being matched to shards that are no longer active, leading to a loading timeout; if they attempt character repair, it fails as it tries to force stow their character on the dead shard
+- Potential Fix: Disconnection error 60012 - some accounts are unable to join a game server
+- Potential Fix: PU - Exploit - Pyro / Stanton - Landing Zones / Contested Zones (CZ) - Actor / Animation / Emote / Doors - Flex emote can be used to clip into locked doors with a door panel on the other side to unlock the doors (Also disabled interaction while in an emotion animation)
+- Potential Fix: PU - Deadhead Helmet Lucky Break - Subscription Gear / Armor / UI / Graphic - The entire screen is distorted while wearing the helmet
+- Potential Fix: PU - Hathor - OLP - Removing the card before pressing the button will break the laser firing mechanic
+- Potential Fix: Crusader Hercules Starlifter - ALL VARIANTS - PU - Vehicle / Ramp - When the Ramp is Opened, the Starlifter shift off balance
+- Potential Fix: PU - Multi-System - Jump Points - Ships / Vehicle / Network / Game Code - A Players Ship Desyncs with the Server Mesh after Jumping Solar Systems causing Issues when Landing
+- Potential Fix: PU - Stanton - Instanced Hangars - Ships / Vehicles / Game Code / Locations - Instanced/Staging Hangars are not Force Storing/Closing correctly when the Player Leaves via Elevator
+- Potential Fix: PU - Transit / Locations - Selecting a second destination while in transit to your instanced hangar will take you to the gateway for the unstreamed hangar
+- Potential Fix: PU - Actor - Interactions - Loot / Quick Interact - The Quick Interact option for Loot is not displayed unless approached by the right angle
+- Potential Fix: ARGO ATLS - PU - Law System / Mounts - Destroying an ARGO ATLS gives player a CS3 Homicide Charge
+- Potential Fix: Place From Inventory - Spamming F breaks placing into itemport
+- Potential Fix: PU - Personal Inventory / Respawn screen / Item Recovery - Users will load into Klescher Rehabilitation Facility after breaking out of prison and relaunching client
+- Potential Fix: PU - Personal Inventory / Respawn screen / Item Recovery - User corpses will despawn upon death after breaking out from Klescher Rehabilitation Facility
+- Potential Fix: PU - Missions - Locations / AI - EliminateAll - Enemy AI do not spawn in at OLPs when accepting a Lawful EliminateAll contract at these locations
+- Potential Fix: PU - Cargo Hauling - Unable to retrieve mission Cargo from the terminal at Orbital Laser Platform
+- Potential Fix: PU - Stanton - Wikelo Mods - Locations / ATC - The player needs to hail twice to receive a hangar
+- Potential Fix: PU - Stanton - The Collector - Missions / Cargo - Additional non-mission cargo submitted at the same time as mission cargo is not transferred to location inventory and will be lost
+- Potential Fix: PU - Multilocation - Locations / Actor / Respawn - Upon death, player gets stuck on black screen with current location of "INVALID LOCATION ID"
+- Potential Fix: PU - Missions / AI - Hijacked 890Jump - The counter reaches 0 but the mission doesnt complete
+- Potential Fix: PU - Pyro - Checkmate - Courier - Mission Refactor / UI / Mission Content - 'Checkmate Stroll' Courier mission does not have a designated drop off point
+- Potential Fix: Anvil F8C Lightning - PU/AC - Vehicles / Audio - Engines can still be heard after shutting off.
+- Potential Fix: PU - Stanton - Beam Weapons - Actors / Game Code / Weapons - Beam Weapons fire is obstructed by Worn Equipment
+- Potential Fix: PU - Pyro - Rundown Stations (R&R) - AI / Locations - Social AI - Bartender AI will walk around to where player stands and drink from their glass
+- Potential Fix: PU - Pyro - Courier - Mission Content - Boxes are not spawning during courier missions
+- Potential Fix: PU - Pyro - Multi Location - Courier - Mission Refactor / UI - Courier missions to Pyro Stations Refinery do not have delivery markers
+- Potential Fix: MISC Hull C - PU - Vehicles / Lighting - The elevator appears pitch black when lowered
+- Potential Fix: Origin 890 Jump - PU - Actor / Vehicles / Interactables - Interacting with a seat inside the 890 Jump bar will cause the actor to disappear and be unable to leave the seat
+- Potential Fix: MISC Starlancer Max - PU - Vehicles - Room system - Atmosphere missing in starlancer engineering section
+- Potential Fix: RSI Polaris - PU - Vehicles - Hangar doors after being destroyed only open 10% of the way not allowing for entry
+- Potential Fix: PU - Missions - NPE - NPE at New Babbage occasionally not starting on initial sign-in
+- Potential Fix: PU - Stanton - Missions - NPE / Tutorial / UI - Nav Markers can not trigger during Tutorial Mission
+- Potential Fix: PU - Stanton - Missions - NPE / Tutorial - Dying during Tutorial sometimes sends the player to Clinic and interferes with objectives
+- Potential Fix: RSI Ursa Rover - PU - Vehicles / Art / Graphics - Ursa Rover is missing its rear door and ramp
+- Potential Fix: PU - Armor - Male/Female - Duster Armor Helmet and variants break animations when player attempts to remove & re-equip helmet
+- Potential Fix: PU - Pyro - Unoccupied Derelict - Interactable / Props / Locations - Loot crates at Unoccupied Derelict can't be interacted with
+- Potential Fix: PU - Pyro - Monox - Jackson's Swap - Delivery Contracts - Mission Content / Locations - Delivery mission shelf has excess collision preventing interaction with mission box
+- Potential Fix: PU - Actor - Armor - Interaction - Some Helmets cannot be attached to the hip
+- Potential Fix: PU - Stanton - microTech - New Babbage - Locations / AI - Social AI - AI are stuck idle in their spawn location at Aspire Grand and NBIS
+- Potential Fix: PU - Pyro - Multiple Locations - Multitool / Shopping / Buying - Locations / Design - Multiple locations shopping kiosks do not sell the Cambio-Lite SRT Multitool attachment or the Cambio SRT
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 9 Server Crashes
+- Fixed a Mainthread Deadlock

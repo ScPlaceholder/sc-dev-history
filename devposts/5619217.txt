@@ -1,0 +1,58 @@
+## Arena Commander 3.18 Patch Notes
+With 3.18 Arena Commander (inc. Star Marine) has been the start of a focus of Quality of Life and bug fixing following discussions & feedback from players. As well as the successful integration of Persistence Entity Streaming into the module. We are extremely excited to elevate AC to a better state and encourage players to contribute to IC Reports and Feedback threads so we can continue improvements to the Arena Commander module.
+System / Balance
+- Persistent Entity Streaming successfully integrated into Arena Commander & related systems.
+- Added grey screen effect when dead for all modes.
+- The system used to white/blacklist ships from game modes has been completely reworked.
+- BleedOut will now award the shooter, both for causing the bleed out and for all bleeding damage inflicted afterwards.
+- Several UI systems have been updated to Building Blocks.
+- The 3 topmost scoring players in all game modes now gain an additional 2000, 1500 & 1000 score respectively. While all other players gain a 500 score participation award.
+- In team game modes Victory now rewards 2000 score, while defeat rewards 500 score.
+- The top scoring player in any game mode is now awarded MVP, displaying in the GameFeed.
+- Hemorrhage now displays as a secondary scoring event.
+- Ballistic Pickup amount increased from 50% to 80%, split across all ballistic hardpoints.
+- Items & Vehicle should now appear alphabetically in the Rental/Customization screens.
+- The following ships are now rentable in Arena Commander:
+Aegis Hammerhead, Reclaimer, Vanguard Harbinger/Sentinel, Vanguard Sentinel, C8 Pisces, Carrack/Expedition,  Aopoa Khartu-al, Nox/Kue, Argo Mole/Carbon/Talus, Raft, Banu Defender, Consolidated Outlands Hoverquad, Drake Dragonfly, MISC Hull-A/Prospector/Starfarer/Gemini, Origin 890 Jump, RSI Mantis/Scorpius.
+Modes
+- Increased player limit of FreeFlight from 8 to 24.
+- Decreased required player count for Last Stand from 6 to 2.
+- Removed 3rd Person Camera from Elimination.
+- Last Stand now displays your objective in the top right of the screen.
+- Duel, Battle Royale & Squadron Battle have been limited to Light & Medium Combat Ships
+- Classic Race has had its allowed ship list expanded.
+Maps
+- Adjusted skybox in Dying Star to match the upcoming Pyro System.
+- Dying Star has undergone a visibility pass, reducing cloud density, glare and size of smoke particle effects which lead to poor visibility and motion sickness for some players.
+Bug Fixes
+- (GameWide) Closure rate marker fixed to give correct velocity towards target rather than full relative speed.
+- Damaging a friendly with a missile now correctly gives a negative score based on the damage dealt.
+- Damaging a friendly with a missile in modes where friendly fire is disabled will no longer damage the friendly target.
+- Explosions and Collisions now follow friendly fire rules.
+- Last Stand will no longer respawn an already spawned player at the start of a round.
+- Duel Mode should no longer affect the Battle Royale Leaderboards.
+- Fixed various issues with collisions of asteroids in Broken Moon & Dying Star.
+- Fixed various issues with missing geometry in Dying Star.
+- Fixed various issues causing poor performance in Dying Star.
+- Fixed various vis-area issues across OP Station Demien, Echo11 and The Good Doctor.
+- Fixed various issues where killing a player would not award the full score pool, most notiably when getting headshots.
+- Fixed an issue where ships would duplicate repeatedly for players who were stuck on the loading screen.
+- Fixed an issue where players would spawn into ships with missing components.
+- Fixed an issue where a player could spawn into a ship that had no seat, causing the player's character to get into a bad state.
+- Fixed an issue where the player would retain the recoil camera shake from death to their respawn.
+- Fixed an issue where destroying another ship in Squadron Battle would award 10k team points rather than the value of the destroyed ship.
+- Fixed an issue where players who killed themselves in Squadron Battle would give their team -10k points.
+- Fixed an issue where friendly fire would affect the team score.
+- Fixed an issue where occasionally when renting an item, you would experience a large hang.
+- Fixed an issue where bleedout kills displayed incorrectly in the game-feed.
+- Fixed a crash when loading into an empty team-based game mode.
+- Fixed an issue where self-destructing awarded positive points.
+- Fixed an issue where an attacker would receive -1 kill if the target bled out.
+- Fixed an issue where the marker for medpen & ammo containers was not appearing.
+- Fixed an issue where attackers would not be credited for kills against players who killed themselves.
+- Fixed a crash when acquiring pick-ups.
+- Fixed a crash on finishing an Elimination match.
+- Fixed a crash when joining Team game modes.
+## Technical
+- Fixed 10 Other Crashes
+- Various optimizations to systems including PlayableArea, GameRules and Rental Services.

@@ -1,0 +1,62 @@
+## Star Citizen Patch 3.6.0
+Alpha Patch 3.6.0 has been released and is now available!  Patch should now show: LIVE-2247930.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+New Launcher
+We are using a new, unified launcher (version 1.2.0): https://robertsspaceindustries.com/download
+Known Issues
+- Players may get stuck on the initial loading screen.  W/A: Alt+F4 and restart or attempt to suicide your character (on load screen) to force a respawn.
+- Missiles on the Anvil Ballista may occasionally be unable to lock and/or fire.  W/A: Reclaim or respawn and try again.
+- Mission givers can sometimes be in the incorrect position and may not interact normally.
+- The HUD vanishes when the quantum drive is enabled.
+- Dropping the hacking chip on planetary surfaces can cause it to fall through.
+- Significant first person framerate reduction can occur.
+- Textures will display across the visor on some helmets.
+- AI ships have an unintended wing wobble behavior.
+- The terrain on Lyria might disappear in some areas (high terrain in high density areas),
+## New Features
+General
+- Added a hold to activate option for head tracking (available at the comms menu).
+- Added option to select head tracking source and camera selection.
+Universe
+- Added additional crimestat hacking locations, terminals, and updated the hacking system
+Hacking now requires a stowable, single-use device which can be found at various locations and shops and is stored as a gadget, retrievable using the "4" key.  The devices vary in style and quality, with some more "legal" devices able to do the job with minimal required upkeep from the player but over an extended period of time. Other devices, of a more illicit nature, hack very quickly but require constant interaction upkeep from the player to keep in operation.  Additionally, longer periods put the hacking player at risk as counter-missions can be generated to stop them.  The updated behavior applies to removal of crimestat as well as shutting off comm arrays.  The slow, reliable device can be found at some shops in the verse including Cubby Blast but the more illicit device may require seeking out less reputable vendors.  Additionally, there are now expanded locations where a player can attempt to hack away their crime stat.
+- Added automated turrets to GrimHex.
+- Complete overhaul of the law and criminality system
+Crimestat now directly impacts the level of opposition and how active their pursuit style. The higher the crimestat, the more active and difficult the pursuers.  Crimes are split into less severe misdemeanors, which are enforced via fines, and more punishing federal offenses which will result in the player being engaged by hostile AI and bounty hunters.  Law is enforced in a jurisdiction system with the main jurisdiction for the Stanton system being UEE, which tracks and enforces federal offenses.  Regional jurisdiction is specific to a given area (ie. Crusader, Hurston) which police their own misdemeanors and have their own rules for control substances and unique security forces.  The rules and crimes for each region will be listed in the mobiGlas "Journal" for that jurisdiction and are updated as you move through the regions.  GrimHex is a unique case of a jurisdiction that does not respect the authority of UEE and does not report crimes to them. GrimHex also field dampens the area around it to protect its visitors.  Misdemeanor fines are deducted from your account directly, provided you have the funds as a temporary measure until fine payoff kiosks are implemented.
+Various security forces may also randomly approach the player as they  move around the verse.  If the player encounters these forces and is a felon or in current possession of a ship that has been reported stolen (another player has made an insurance claim on that ship), they will immediately be attacked.  If not, the player will be requested to halt and submit to a scan via ship to ship comms.  If the player fails to stop within a certain time period, with repeated warnings, they will be given a crimestat and attacked.  If the submit to a scan and are in possession of illegal goods, they will be fined and the goods removed.
+Stolen goods and illegal commodities can now only be sold at less than reputable locations, some of which may require some investigation to locate.
+Missions
+- Added illegal style delivery missions for prohibited and stolen goods.
+Ships and Vehicles
+- Added hover mode.
+Hover mode will automatically engage near planetary surfaces with atmosphere below a certain velocity threshold.  When engaged, ships will swap to VTOL thruster modes, which will include alternate thruster configurations when applicable. When in hover mode, the ship will hover level until the player gives an input.  Pitch forward/backward will result in moving forward/backward and roll will result in lateral movement.  If the ship attains enough forward velocity it will automatically switch to rear thrust driven forward flight.
+- Added ship purchasing kiosks to ship shops around the verse.
+- Added ship component degradation.
+Ship components (coolers, power plants, shields) now suffer from noticeable degradation which can accumulate through time and through specific behaviors (frequent overheating, damage). Degradation can be repaired with any other ship damage at major stations.
+- Added "misfire" events to ship shields, thrusters, power plants, and coolers.
+Some ship components (coolers, power plants, shields, thrusters) now have a chance to misfire.  The base chance for a component in perfect condition is extremely low.  Misfire chances increase with increasing degradation, damage, and heat.  Misfires can be minor visual blips, major with periods of reduced functionality, or critical temporary shutdowns.
+- New Ship: Kruger Intergalactic P-72 Archimedes.
+- New Vehicle: Anvil Ballista
+- New Ship Weapon: MaxOx Neutron Repeaters
+Rapid fire short-mid range weapons found in sizes 1 through 3.  Uses "neutron" style damage, which has damage that increases over its range. Neutron Repeaters are available at Centermass in Area18.
+- Added nozzle flaps to the F7C and F7CM.
+- Grouped thrusters into a "power group" which can now be throttled to control thruster acceleration.
+Thruster power throttle is default bound to RALT+mouse wheel and is available in the keybinding menu.  To allow players to track current power throttle to thrusters, a meter of percent power has replaced what was the hydrogen fuel meter and hydrogen fuel has moved to a static percent readout on the bottom of the HUD.
+- Added a cargo grid to the Valkyrie.
+- Added ship hailing.
+You can now start a video call with the pilot of a ship/vehicle that you're targeting while in your ship/vehicle with a hotkey (6), selecting the target in either the Comms/Targeting MFD, or in your MobiGlas Comms app.
+- Added ship specific voice channel.
+When entering a ship, you now join its ship channel. When selecting the ship channel after you've joined it, you can VoIP and Chat with other members that are actively in that ship channel. You'll automatically leave the ship channel if you leave the ship for a period of time or move too far from the ship.
+FPS
+- Added customizable weapon attachments
+Some FPS weapons can now be customized via various attachments.  Available attachments are red dot (1x zoom), holographic (3x), a telescopic (4x), and a telescopic (8x ).  These can be found at FPS weapon shops that carry compatible weapons.
+- Added the ability to free look and activate head tracking while holding a weapon.
+- Free look in first person now operates as a hold rather than a smart toggle.
+- New FPS Weapon: Behring S38 Pistol
+This reliable Behring sidearm features a streamlined design and a lightweight polymer frame that helps to minimize recoil. And with the quick fire semi-automatic fire mode, it's easy to see why the versatile and dependable S38 has become a standard sidearm across the Empire for both citizens and law enforcement officers.  Can be purchased at Center Mass and Port Olisar.
+- New FPS Weapon: Klaus & Werner Lumin V SMG
+A solid and dependable laser submachine gun with a reputation for durability, reliability, and accuracy. Can be purchased at Center Mass and Conscientious Objects.
+UI
+- The comms visor display now displays which channel you are VOIP broadcasting to, who else is in the channel with you, and who is speaking.
+- Players can now invite an entire channel into their party.
+- Players now default auto-join the global proximity VOIP channel.
