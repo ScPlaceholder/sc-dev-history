@@ -1,0 +1,40 @@
+Alpha Patch 4.10.3 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.3-PTU.13055118
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Missions: Vanduul Incursion
+- New FPS Weapon: LBCO Skarnov Rifle
+## Features & Updates
+New Missions: Vanduul Incursion
+- Players should now be able to quantum travel to Shattered Blade Raid locations
+- Contracts now correctly award their blueprint rewards on completion
+- Vanduul NPCs now load their armor correctly rather than appearing unclothed
+- Vanduul can no longer be stunned or tractor beamed by players
+- Mauler health reduced following its weapon damage increase
+- AI pass across incursion locations, with three distinct attack layers, bespoke corridor routing to spread defenders out, and reworked loot drops
+- Only one blue Vanduul cryopod now spawns per location
+- Space combat music from Welcome To Nyx now plays when fighting Vanduul
+- Eliminate Specific contract text revised, and the Neutralize Boss objective renamed to Neutralize Target
+- Further economy balance pass across contract missions
+LBCO Skarnov Rifle
+Damage
+- Energy damage per shot: 10 to 30
+- Electron chain jump range: 3.8m to 7.5m
+- Damage falloff floor corrected. It was set to 30 energy while base damage was only 10, so the minimum exceeded the base. It is now 20 against a base of 30, and the redundant distortion and stun floors were removed
+Mass changes that affect handling
+- Rifle mass: 4.9 to 2.9
+- Magazine mass: 1.12 to 1.05
+- Slight recoil reduction on the rapid fire mode
+Every one of the ten weapon report audio triggers was an empty string, so the rifle had no firing report at all in any environment, interior or exterior. All ten are now populated to give clear weapon audio.
+The barrel attachment port was unintentionally only accepting ballistic barrels rather than energy ones. This is now fixed.
+Loading Screen
+Updated 4.10.3 loading screen art
+## Bug Fixes & Technical
+- Potential Fix: The Collector intro contract not appearing in the contract manager, blocking entry to the Collector mission line
+- Potential Fix: Autoland not completing the “Land at LEO” objective during Part 3 of the New Player Experience
+- Potential Fix: A failed shop purchase timing out and then blocking every subsequent purchase request until the player changed server
+- Potential Fix: Landing services in the mobiGlas becoming stuck on the “Processing” or “Blocked” prompt
+- Potential Fix: A large quantity of duplicate cargo appearing in the freight elevator after completing a Recover Cargo contract
+- Potential Fix: Hostile AI ships in bounty and mercenary contracts sometimes failing to return fire, as they now cycle back to SCM mode once an interception completes
