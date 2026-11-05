@@ -1,0 +1,15 @@
+Hey all, just to provide a heads-up on a few things we're doing to address the legibility issues with the Starmap. This list is not extensive, and there's quite a few more things being worked on to improve the UX.
+particularly on microtech, the text disappears behind the planet sometimes while rotating the planet model.
+That is exactly what is happening unfortunately due to a render bug. The marker and text will render behind the planet, making it very faint. We have a fix in the works.
+there is a weird curved jittering rainbow lcd screen effect on planet surfaces
+The color banding is probably due to a shader effect on the planet. We're investigating what the cause of it is.
+the location markers are too hard to see on the sunny side of microtech.
+We have a fix in the works that will adjust the brightness of the lighting in the Starmap and are also working to make the surface of planets have more contrast.
+sometimes the text becomes blurry for a couple of frames.
+We have a tentative fix for this in the works.
+the auto brightness adjustment when leaving mobiglas after looking at microtech sunny side view for a while takes a long time for the brightness to adjust
+The eye adaptation kicks in due to the relative brightness of microTech compared to the rest of the screen when you zoom in.
+Adjusting the brightness of the lighting, the shader of the planet and tweaking the camera settings when the mobiGlas / Starmap are open are currently in the works to improve on this behavior.
+Rest assured, we're aware of those issues and are actively working to fix them.
+Please, keep the feedback and IC reports coming if you find other issues that affect the functionality / UX of the Starmap.
+Thanks!

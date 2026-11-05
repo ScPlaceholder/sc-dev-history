@@ -1,0 +1,47 @@
+## Star Citizen Alpha Patch 4.1.1
+Alpha Patch 4.1.1 has been released to Wave 2 PTU Testers! Patch should now show: VERSION 4.1.1-PTU.9709304.
+- Audience: Wave 2
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Ship Patrol Missions have been disabled for today's PTU testing and will return in in the next couple of days.
+- Stability & Bugfixes
+- Ship Battle Missions V1 (Ambush, and Gilly's Advanced Combat Gauntlet Missions)
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback and are subject to removal
+- Fleetweek Events, New Missions, and Halls
+- Mission Meshing Refactor: Comm Array (Hack/Repair), Animal Missions, Multi-Location Courier, and Handyman, PVP bounties.
+- New Collector Rewards
+- NPC Comms Call, Dialogue Additions, and Improvements
+- [Redacted]
+## Known Issues
+We are expecting many missing assets around Area18 builds with some replaceme textures around. This is temporary with more inclusions coming in the next builds.
+- Blocker: PU - Ship Battles V1 - Patrol - Search & Destroy does not progress when you ping area
+- Critical: PU - Space Combat Mission- Ambush - Foxwell - Missions / HUD - "Hide Ship Signature" objective marker has a chance to not appear in Ambush missions
+- Critical: PU - Physics - Players walking around destroyed landing gear of a ship can fall through the ground
+- Critical: PU - Stanton - Ship Battles - Gilly's Gauntlet - Mission Content / Game Code - Mission does not fail after you QT away from the action area while the mission is active
+- Critical: PU - Stanton - Ship Battles - Security Patrol - Asteroid - Mission Content / Game Code / AI - Ace Pilot sometimes does not spawn (Moderate Chance)
+- Critical: PU - Stanton - Ship Battles - Security Patrol - Asteroid - Mission Content / Game Code - Patrol objectives failed to correctly trigger when the player reaches the patrol point (Moderate Chance)
+- Critical: PU - Stanton - Kill Animal - Mission Refactor / Missions - Pest Control missions sometimes don't spawn enough Kopions for completion
+- Critical: PU - Pyro - Courier - Mission Content - Not enough boxes are spawned for the mission (Moderate Chance)
+- Critical: Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- Critical: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- High: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+## Bug Fixes
+- Potential Fix: The Redeemer VectorLocks are missing half the thrusters. (STARC-134755)
+- Potential Fix: Cast MFDs have no/blank information for most pages (STARC-131535)
+- Potential Fix: Redeemer Helmet Self Status HUD wrong (shows Turret not vehicle) (STARC-133653)
+- Potential Fix: AEGS Redeemer - PU - Vehicles - MFD - Redeemer target status MFD missing information (STARC-131219)
+- Potential Fix: Can't replace the second power plant on the Redeemer (STARC-133333)
+- Potential Fix: PU - Stanton - Transit / Locations - Train / Tram carriages at New Babbage and Lorville have VisArea issues until they arrive at the gateway
+- Potential Fix: Argo RAFT - PU - Cargo / Tractor - Using Hand-held Tractor to place Containers prevents Detach
+- Potential Fix: PU - Missions / UI - mobiGlas - Collection - "Interested in Building a better future?" - The requested item in the description does not match the primary objective item (STARC-164816)
+- Potential Fix: PU - Align and Mine - Mission Content / Props / Design - PAF Dish Control terminal will not reset card slots after streaming in after event reset (STARC-160684)
+- Potential Fix: PU - Stanton - Yela - Landing Zone (LZ) - GrimHex - Locations / Art - The sign on the glass of the Grim Hex Hospital is culled when still in the players view
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 1 Server Crash

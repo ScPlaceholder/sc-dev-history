@@ -1,0 +1,71 @@
+## Star Citizen Patch 3.9.0s
+Alpha Patch 3.9.0s has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.9.0-PTU.5107460.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Bug Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-9-0r
+Testing Focus
+- Esperia Prowler
+- Contact and Party System Update
+- Caterpillar Prison Ship Mission
+- New Babbage and microTech's Moons
+- Personal Interaction System
+- Mining: Volatile cargo and mining consumables
+- Prison Systems
+- Actor Status System
+Known Issues
+- Duplicate, static trains may appear at Lorville or New Babbage.
+- Ground vehicles can not be spawned at outpost ASOP terminals, but can still be spawned at New Babbage, Lorville, and Levski.
+- Players can become stuck when jumping over some railings.
+- Ships can hitch or teleport at times when observing their motion.
+- For ECN alerts, the rescued Starfarer will sometimes circle endlessly after all waves are cleared.
+- The player can spawn with their prison suit still on after ending their sentence.
+- Being  in a large party can cause party markers to fail to appear when inside a ship.
+- If a player crashes while transitioning into prison they will be unable to use their multitool.
+- Players can not see through the scope of the Arrowhead or P6-LR when crouched.
+- FOIP animations are not transmitting to others nearby.
+- Cargo boxes left behind after a ship explodes appear to blink in and out while the player is moving.
+- Player inner-thought and interaction system is off-set in wide screen resolutions
+- Autopilot sometimes does not disengage after triggered by no-fly zone.
+- Heavy environmental suit armors block portions of the mobiGlas.
+## Feature Updates
+Locations
+- Added items to commissary vending machines in prison.
+Gameplay
+- Made murder and inmate murder against party members be automatically forgiven.
+- Crashing a ship with players aboard will no longer award the pilot with a homicide crime stat.
+- Improved landing area checking for pad ramming infraction.
+- Increased unlawful mission rewards by 50%.
+Weapons and Items
+- Updated Hadonite merit value on the prison kiosks.
+- Added Crypto Keys to Omega Pro Kiosk.
+Ships and Vehicles
+- Lowered assisted gimbal slew speed.
+- Removed roll from axis rotation lock for ships and changed label of lock rotation to "Lock yaw pitch movement".
+## Bug Fixes
+- Fixed an issue that was causing duplicate, static trains and elevators.
+- Player should no longer get stuck on a loading screen when exiting prison or respawning.
+- Criminal Database should now show the correct text when hacking prison record.
+- Text popup while exiting the prisoner transport caterpillar should now be correct.
+- Fixed multiple hairstyles showing up as bald while on the character customizer.
+- Fixed missing server blades at the crash site for the Scavenge Relay mission from Clovus.
+- Player should no longer be affected by strong wind while moving around on the two platforms at the Central Business District.
+- Cargo boxes created from personal inventory should now be able to be sold at the commodities kiosk.
+- Fixed an issue with the personal inventory that allowed players to duplicate commodities.
+- Fixed multiple different sachet cubes food items having the same texture when being eaten.
+- Players should no longer get into a state where VOIP group, party, ship, or proximity chat can be heard by everyone on the server.
+- The Constantine Hurston recovery mission should now have a proper delivery destination tagged.
+- Ships should no longer be immediately destroyed on spawn at Area18.
+- Armistice Zone in Levski should now fully cover all locations including the hangars and Teach's Ship Shop.
+- When setting a Cutlass Red ICU bed as a respawn point, the player should no longer be teleported back to the bed after a few seconds when leaving the bed after a respawn.
+- Escaped prisoner Bounty Assignment missions should no longer be issued for prisoners that have left the server.
+- Player should no longer be killed after being moved from their ship when pad ramming another player.
+- Fixed an issues causing several URSA Rover vehicles to spawn on top of each other inside the garages above the Prison shafts.
+Technical
+- Fixed 3 main thread deadlocks.
+- Fixed 4 server crashes.
+- Fixed 3 client crashes.
+- Client crash fix for party leader launch into the PU.

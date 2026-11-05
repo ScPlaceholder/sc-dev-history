@@ -1,0 +1,43 @@
+## Bug Fixes
+- Players should no longer spin wildly when exiting a ship into EVA
+- Fixed an issue that was causing players to take unintended damage at the moment of transitioning from a ship grid into EVA
+- Fixed an issue causing players to become unbound and invisible to other players
+- Enemy combat AI should no longer be slow to respond or react
+- Fixed an issue causing the ROC's mining laser to not function
+- Fixed an issue causing the glass material to be blocked on ships with an activated view port (Talon, Prowler, ect)
+- Fixed an issue causing vehicles to be undeliverable from ASOP terminals
+- Fixed an issue causing interaction mode to constantly re-center the screen
+- Fixed an issue causing the starmap to not show planets the first time they open it
+- Fixed misaligned inventory items on widescreen resolutions
+- Fixed an issue causing looted items to not be equipable after restarting the game session
+- Fixed Medical Beds sometimes obstructing ships in hangars
+- Spawning ships causes the requested ship to spawn outside of the hangars
+- Ships should no longer show as 'Destroyed' when clicking 'Store' on the ASOP
+- Fixed an issue causing NPC reinforcements at outposts to wreck themselves continuously, creating piles
+- Fixed an issue causing CryAstro services to not offer the option to repair/refuel/restock ships
+- The Vulture default Baler salvage heads should now be able to be re-equipped in the VMA
+- Transit - Area18 - Orison - Shuttles/Trains/Trams - Fixed an isssue causing players to fall through some trams and shuttles to their deaths
+- Equipping more than 5 components in a single "Save Changes and Equip" VMA transaction should no longer fail
+- Fixed an issue causing ships to sometimes no load in the VMA
+- Fixed an issue causing players the sometimes lload in with their character dead, T-Posing, and partially submerged into the hab floor
+- Fixed an issue causing the Greycat Salvage Backpack to not equip correctly
+- Female player character should now be able to fully reach the medical bed terminal screen in various ships
+- Artimex Helmet's respiratory tube should now fully attach correctly when using the set
+- Fixed an issue causing ships to float away when landed on planets (Separate issue from blown away in the wind)
+- Players should no longer be instantly downed when transitioning from EVA to Gravity with a Tier 1 leg injury
+- Deadbolt V Cannon fire should no longer be inconsistent in its damage to players on foot
+- Ursa rovers outside of Klescher Rehabilitation Facility should no longer spawn under the garages, preventing prisoner escape
+- Transaction failures should no longer occur when attempting to deposit Harvestables in Klescher
+- ASOPs and ATC should no longer report all landing pads full despite empty hangars
+- New Deal and Vantage Rental Kiosks should no longer be missing
+- Mining Deposits Fracture Difficulty should no longer randomly change
+- Refinery terminals should no longer give a "Processing Your Request" message and not load the interface
+- The total transaction cost of renting ships/vehicles that's displayed on rental kiosks should no longer be incorrect to what the player is actually charged
+- Players should no longer be able to enter the ANVIL Carrack via interacting with the manned turrets on foot or via EVA
+- Greycat Multitool should now consistently stay attached to the Drake Vulture weapon rack
+- Paints should no longer cause the captain and crew quarters windows to be opaque in the Origin 400i
+- Fixed an issue causing Ultrawide resolutions to inhibit cursor movement and block the inventory close button
+- Fixed an issue causing lootable containers to displays a red loot prompt that is not intractable
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 10 Server Crashes

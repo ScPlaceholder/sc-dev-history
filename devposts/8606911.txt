@@ -1,0 +1,57 @@
+## Star Citizen Alpha Patch 4.6
+Alpha Patch 4.6 has been released to all testers!   Patch should now show: VERSION 4.6.0-PTU.11079139.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Alliance Aid Event
+- Industrial Mining and Salvage Missions
+- LAMP: Light Amplification System
+- Aurora Gold Standard
+- VR Updates
+Known Issues
+- PU - Clean Air - Missions / Courier - There are no enemy ships spawning throughout the mission
+- PU - Nyx - Clean Air - Recover Cargo - Missions / UI - Recover cargo mission objectives don't appear after completing the first objective
+- PU - Industrial Missions - Mission Content / Game Code - Multiple Missions are unavailable due to Contract generation errors
+- PU - Stanton - Mission Content / Game Code / UI - Industrial Resource Gathering - Ship Mining - Objectives and HUD marker direct player to Mining Claim instead of Lagrange Points
+- PU - Nyx - Welcome to Nyx - Mission Content / Reputation / mobiGlas - " Vanduul-Tech Smugglers " is not available after getting to the required reputation rank
+- Multi-System - PU - UI / mobiGlas - Selectable elements inside the mobiGlas Tabs have slim areas of deadzone which can make selecting them difficult
+- PU - Nyx - Levski - Locations / Art - The Bottom Deck of Levski is missing a lot of critical assets and collision
+- PU - Nyx - Landing Zone (LZ) - Levski - Art / Locations - Cargo Center/Services - The floor is missing at the entrance to the area and causing AI to become stuck entering/exiting the area
+- PU - Locations / Interactions - All doors requiring fuses cannot be opened after selecting override panel button
+## Features & Gameplay
+Gameplay
+- Added further new salvagable debris and made them scannable
+Characters & AI
+- Added new loadouts to NPC AI around Levski
+Ships and Vehicles
+- Made Ballista Torps/Missiles have infinite attempts to relock the target if they pass it during chase phase
+## Bug Fixes
+Star Citizen Alpha 4.6.0 currently contains over 80 bugfixes for issues occurring in 4.5.0, 28 of which originated from the issue council.
+- Further technical performance fixes were put in place to help with the large stalls seen in the PTU build over the weekend
+- Potential Fix: (Live/PTU) PU - Multilocation - AI - AI is stuck in cowering (STARC-103423)
+- Potential Fix: PU - Clean Air - Missions / mobiGlas / UI - Milestone missions are blank in the mobiGlas
+- Potential Fix: PU - Clean Air - Missions / UI / mobiGlas - Milestone missions do not appear after reaching 50% for the division
+- Potential Fix: PU - Clean Air - Missions / Freight Elevator / Cargo - Recover Cargo - VIP Milestone mission does not complete after cryopods are delivered
+- Potential Fix: PU - Clean Air - Economy / Mission Content - UEC reward amounts are incorrect across all Clean Air missions
+- Potential Fix: PU - Clean Air - Mission Content / mobiGlas - Higher difficulty Defence missions are available in Stanton without having completed the prerequisites
+- Potential Fix: PU - Industrial Resource Gathering - Salvage - Ship Weapons / Vehicle Components / Cargo - S6 & S5 Weapons will not fit on Pyro Outpost Freight Elevators (replaced with S3 and S4 weapons for the mission)
+- Potential Fix: PU - Industrial Resource Gathering - Mission Content / Cargo / Props - Fuel Pods do not snap to External Freight Elevator Cargo Grids
+- Potential Fix: PU - Industrial Missions - Mission Content / Salvage / Vehicle Components - Missions requiring Industrial S2 Quantum Drives incorrectly accept S2 Shield Generators instead
+- Potential Fix: PU - Nyx - Levski - Locations - Levski Hangar load in causes players to load into space - hangar misplaced (BUG-374969)
+- Potential Fix: Multivehicle - PU - Engineering - Vehicle/Ship Balance - Equipping multiple shields increases damage taken proportionally to health gained, resulting in identical time-to-kill (STARC-190721)
+- Potential Fix: MISC Starfarer ALL Variants - PU - Vehicles / MFD / UI - MISC Starfarer's Radar appears reversed and in single line (STARC-185586)
+- Potential Fix: RSI Aurora GS - ( All Variants ) - PU - RSI logo on wing at different angles will switch between two different font sizes
+- Potential Fix: CRUS Starlifter Series - PU - Vehicles / Actor - Physics - Player's actors lose collision towards other User actors after exiting and clipping through the A2/C2's Kitchen table booth (STARC-193018)
+- Potential Fix: PU - Stanton - Locations / UI - Lyria - UGF Outpost has a placeholder label of <=UNINITIALIZED=> for a quantum marker instead of its actual name (STARC-86361)
+- Potential Fix: RSI Aurora GS - ( All Variants ) - PU - Interactions - interaction storage showing @interaction_condition_Placeonitemport_Gadgets1Only (STARC-193636)
+- Potential Fix: FPS - Sprint is holding as a toggle when interrupted by aiming (STARC-189038)
+- Potential Fix: RSI Aurora GS - ( All Variants ) - PU - Vehicles / Atmosphere / Actor - Player actor briefly suffocates when entering vehicle bed
+- Potential Fix: PU - Stanton - Hurston - Locations / Mining / Armistice - Cannot mine inside the cave due to being near in an Armistice Zone
+- Potential Fix: PU - Pyro - Storm Breaker - Creature / Network / AI - Irradiated Apex Valakkar despawns after recovering from server error
+- Potential Fix: Multivehicle - PU - Vehicles / Vehicle LAMP / Audio - SFX is not present when the vehicle lamp is being activated
+- Potential Fix: PU - LTP - Welcome to Nyx - Wikelo/Rayari Collections - Vanduul Items do not persist between patches; MG Scrips - PU - LTP - Local Inventory / Core Tech - MG Scrips do not persist after a new patch
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash

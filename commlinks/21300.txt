@@ -1,0 +1,217 @@
+Improving the Live Experience
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+## Ut Labore et Dolore
+Magna Aliqua
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+## Lorem Ipsum
+Quis Nostrud Exercitation
+Last month, we shared that we were changing the way we prioritize some of Star Citizen's most persistent problems. Today, we want to share an update on the progress we’ve made so far, the issues we’ve resolved, and the work that went into fixing them.
+We’re focusing on the problems that have the biggest impact on your experience. Instead of looking at bugs one at a time, we’re stepping back and focusing on the parts of the game you rely on every time you play, grouping bugs by the system they break. Your ship should be where you expect it to be. Your inventory should load. Your missions should work. These are basic expectations, and we know that when they fail, it does not matter how impressive the rest of the game is. If you cannot get your ship, lose the gear you were carrying, or spend 15 minutes trying to get past a connection error, that is the experience you remember.
+To keep focus on the player experience, we’ve handed ownership of identifying and prioritizing these issues to our Player Experience team. Alpha 4.10 has been the biggest application of this approach so far, and today we want to show you what that looks like.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+## Ut Labore et Dolore
+Quis Nostrud Exercitation
+## Putting It Into Practice with Alpha 4.10
+Our focus has been on the following core areas:
+- AI
+- Docking & Refuelling
+- Economy & General Exploits
+- First Hour Quality of Life
+- Freight Elevators
+- Hangars & ASOP
+- Inventory
+- Login & Connection Errors
+- Quantum Travel & Starmap
+- Ship Loss
+Twice a week, QA, Production, Player Experience, and Community teams come together to look at the issues having the biggest impact on players. We weigh what we’re seeing internally against your Issue Council reports, looking at how often an issue is reported, how many players it affects, how long it’s been around, and how severely it impacts gameplay. We pull those factors together into what we call an “Impact Score,” which helps us decide what needs our attention most.
+Your Issue Council reports play a significant role in that. In several cases, detailed reproduction steps, supporting information, and video evidence have helped us get from knowing something is broken to understanding why it’s broken - and that makes a huge difference for getting a fix.
+With Alpha 4.10, we can start to see the results of that approach.
+At the time of writing, Alpha 4.10 has reached 1,239 bug fixes submitted over its release cycle, compared with 295 in Alpha 4.9. Those numbers naturally vary depending on the size and scope of each patch, and 4.10 is a significantly larger release with more content, which means more issues to identify and resolve.
+What matters more is the context here though. Of those fixes, 479 addressed bugs that were already present in Alpha 4.9 or earlier. That's a more useful measure of the progress we're making toward improving the existing Live experience, rather than simply counting issues discovered and fixed while developing new content.
+We’ve also seen a significant improvement in client performance. Over the last few months, new content without corresponding performance improvements had contributed to a steady decline, with Instancing and Siege of Orison making that gap particularly apparent. That led to a coordinated effort across Engine, Physics, AI, Gameplay, Rendering, and Content to address some of the worst performance offenders.
+Across all hardware configurations, measured in equally populated Landing Zones between Alpha 4.9 and Alpha 4.10, average client FPS has improved by 15.5%. Your next Lorville run should show a noticeable improvement!
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+## Sed Do Eiusmod
+Ut Labore et Dolore
+## Behind the Scenes: Alpha 4.10
+One question we see after nearly every release is some version of: if you knew about these issues, why did you ship?
+Fair question. The list of known issues is never zero, so deciding when a build is ready for Live means weighing what we can safely fix and verify, and whether the build in front of us is an improvement over the one you're playing today. We don't always get it right, especially considering that sometimes the full weight of the live environment is necessary to truly put things through their paces, but they're decisions we take seriously.
+Later today, we'll publish a pilot for a potential series we're calling Inside CIG, taking you behind the scenes of Alpha 4.10 to show you what this process actually looks like. You'll sit in on our meetings, spend time with developers at their desks as they work through issues and content you're testing in the PTU, and see how testing, telemetry, and your feedback come together as we work toward a Live release.
+Quis Nostrud Exercitation
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+## Ut Labore et Dolore
+Magna Aliqua
+## A Closer Look at the Fixes
+The goal of this initiative isn't simply to fix bugs quickly. We want those fixes to remain fixed. That means taking a more methodical approach to investigating the underlying causes of persistent issues rather than addressing only the symptoms you see.
+Similar to the Transit Bugfix initiative, we've applied this mindset across several core game systems, with a focus on improving our ability to identify root causes, gather better diagnostic information, and validate that fixes continue to hold up in a Live gameplay enviroment.
+Empty Inventories
+STARC-211218 - Empty inventories
+This ended up being three separate problems stacked on top of each other.
+The visible symptom was "pending moves" accumulating. Every inventory interaction added one, they never resolved, and once the queue was stuck, the inventory would appear blank the next time it was opened. Underneath that, the first stow request to the service was timing out. The subsequent retry then came back with an "already exists" response, meaning the original request had actually succeeded and we simply never received confirmation. Since "already exists" isn't a retryable error, the client gave up at that point and the move stayed pending indefinitely.
+We addressed this by fixing the event handling on the service side and reducing the timeout. That said, two smaller issues mattered just as much for how the problem felt to players. First, there was no loading state, so an inventory that was mid-load looked identical to one that was broken. Second, the grid remained interactive during loading, which allowed players to pile up additional failing requests on top of the ones already stuck. Adding a loading widget that blocks interaction while a move resolves is what turned the perception from "my inventory is gone" into "my inventory is loading".
+Ships Disappearing From Hangars
+STARC-186319 - Ships disappearing from hangars
+With server meshing, a single entity can be streamed in on more than one server at once. This isn't supposed to happen often, but it occurs near server boundaries and around entities with very large streaming radii. Levski turned out to be particularly prone to it. The code responsible for deciding whether to stow a ship was gated on a check called IsAuthorityPossible(). The problem was that this check returns true on every server, not just the one that actually owns the hangar.
+Getting to that root cause took two passes. The first pass revealed that our tracing didn't record why a vehicle had been stowed, or which server had done it. Worse, several code paths (unowned impounds, freight elevator recovery) were stowing vehicles while bypassing the standard function entirely, leaving no trace at all. We addressed that first, so that every stow request now runs through a single function, logs a reason, and reports which server initiated it. That additional logging is what ultimately made the authority bug visible.
+The actual fix replaced the faulty check with a real ownership test, HasAuthority(), in the landing area's cleanup path. A good example of a fairly straightforward fix, that was only evident once the true nature of the bug revealed itself.
+Lorem Ipsum
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+## Tempor Incididunt
+Consectetur Adipiscing
+## Other Fixes
+The list below highlights a selection of the bugs we've addressed across Alpha 4.9 and 4.10. It isn't intended to be a full list of fixes that have gone into these releases, but rather a broader look at the work happening across the core areas this initiative is focused on.
+Any issues marked with ▲ are directly linked to an active Issue Council report.
+Ship Loss
+▲ STARC-186319 - Ships could vanish and get flagged as "stored" on the ASOP terminal right after landing at or leaving station hangars (such as Levski), dropping the pilot to the floor.
+- The cause was a race condition where two separate processes could attempt to destroy and re-stow the same vehicle simultaneously, in some cases triggered by ships spawning with a bad zone or access token. The fix adds a check that prevents a vehicle from being torn down while it's already in the process of being stowed elsewhere.
+▲ STARC-206457 - Retrieving a ship from a hangar could spawn it already mid-quantum-jump, sending it flying into the hangar door or walls the instant the ship elevator animation finished.
+- The underlying issue was that a ship could resume an in-progress quantum travel state on spawn, even when materializing inside an enclosed hangar. The fix blocks quantum travel from resuming for ships spawning in enclosed spaces, and follow-up testing across multiple stations and ships found no further reproductions.
+▲ STARC-152514 - The ASOP terminal in station lobbies could incorrectly show a ship as needing to be "Claimed" even though it was safely stored on its pad.
+- ASOP was only checking the ship's direct storage state, but a stored ship is actually held as a child of the hangar itself — so if the hangar finished stowing while the player had walked too far away, ASOP lost track of it. The fix has ASOP also check the hangar's own inventory directly.
+Hangars & ASOP
+▲ STARC-128568 - Hangar doors at some stations could leave the exterior door shut while the interior door opened, locking players out of (or inside) the hangar
+- The hangar's exterior and interior doors weren't properly linked on the backend, allowing one to open independently of the other at stations like Stanton Gateway, Ruin Station, and Orbituary. The links between the hangar and its doors have been restored so both now open together correctly.
+▲ STARC-205924 - Mined ore disappearing after storing a mining ship in a hangar
+- The issue traced back to the backend database that tracks ship cargo becoming unstable under load, which caused a mining ship's cargo container to revert to an earlier state when stowed and retrieved. A backend fix resolved the instability, restoring ore persistence across storage.
+▲ STARC-207340 - Fuel in external fuel pods lost when storing a ship via ASOP
+- This shared the same root cause as the mined-ore loss bug above, the backend losing track of stored data during the stow process, and was resolved by the same fix.
+▲ STARC-186642 - Retrieving a ship needing a different hangar size than one already stored could fail, auto-store, or destroy the ship
+- The game only supported one instanced hangar size active per player at a time, so requesting a differently sized hangar while another was in use could silently fail or, in the worst case, destroy the incoming ship. The fix properly tears down the old hangar instance and spawns the correctly sized one. A follow-up fix also stopped elevators from routing players into stale hangar instances that had already been unloaded, which had been making ships falsely appear "claimable."
+Players without a helmet could suffocate in certain hangar service and elevator areas at Levski
+- Some service areas of hangars were missing atmosphere coverage. That coverage has now been extended across those areas to fix the issue.
+Freight Elevators
+Freight elevator platforms could get permanently stuck on a "Transferring..." screen after repeatedly raising and lowering mission cargo, locking players out of it entirely.
+- The root cause was a mission's collection objective completing on partial, not full, item pickup, and putting items back didn't un-complete that objective, which corrupted the elevator's transfer state. The fix routes re-stowed mission items to personal inventory instead of back into the mission to avoid the conflict, with a later follow-up closing an edge case that could queue an empty transfer request. Testing was unable to reproduce the issue afterward across many locations and mission types.
+▲ STARC-153267 - Hauling mission cargo could be missing entirely from the pickup location, making the mission impossible to complete.
+- This traced back to a race condition on the backend, where an inventory-count update could overwrite newer cargo data with a stale cached copy. The Warehouse Manager, which handles this flow, was reworked and now processes these updates in the correct order to prevent the overwrite, and testing found no repeat failures afterward.
+"Elevator Overloaded" message didn't make clear that a partial cargo transfer had actually happened, leaving players confused about what made it onto the platform.
+- The wording was corrected to clarify a partial transfer occurred. A separate, still-open issue tracks the underlying capacity-calculation problem that can trigger the message unnecessarily.
+▲ STARC-199979 - Turning in Boreal Quasi Grazer Eggs at a Freight Elevator during the Nyx Mission Pack 2 content failed to complete the resource-gathering mission.
+- The cause was missing default setup data on the creature's underlying object, after an earlier attempted fix proved ineffective. A corrected fix has since been verified.
+▲ STARC-211218 - Personal, station, or loot inventory could go completely empty and become inaccessible for minutes, blocking mission item pickups and drop-offs
+- The root cause was backend inventory "stow" requests occasionally timing out without completing, causing pending moves to pile up and the inventory to appear empty. A client-side fix adds a loading/spinner state while this resolves.
+▲ STARC-204415 - Double-clicking an armor item in the inventory could simultaneously equip an adjacent item as well, sometimes removing the undersuit slot entirely and leaving the character unable to unequip gear
+- This turned out to be caused by the same issue as an earlier armor-equip fix; once that fix was fully rolled out, testing confirmed the problem no longer occurred.
+▲ STARC-200719 - Equipping certain undersuits (notably after release from Klescher) removed the undersuit slot icon from the inventory UI, locking players out of swapping undersuits
+- The root cause was a shirt worn before entering Klescher never actually unequipping, which conflicted with the undersuit slot. A fix now properly removes the shirt on prison entry.
+Some keycards and hard drives could vanish when interacted with, becoming hidden until another item was picked up
+- These carry-only items had an invalid "Equip" interaction available, which sent them into limbo instead of carrying them normally. The fix removes the Equip option from affected keycards and drives.
+▲ STARC-202297 - Clicking "Carry" on an inventory item while already holding something (such as a multitool) played a holster animation but made the held item vanish entirely
+- The root cause was the Carry interaction not handling already-held items correctly, stowing them into an internal container instead of personal inventory. The fix corrects the handling and adds validation to prevent items from being lost this way.
+▲ STARC-200139 - Inventory, freight, and crafting kiosk category-filter menus could get stuck open and overlap when hovering or clicking quickly, cluttering the UI with stacked menus
+- The cause was a hover state that failed to reset when the cursor left the filter button too quickly, leaving old menus on screen. A fix now force-closes other open menus whenever a new one is opened.
+▲ STARC-204772 - Certain weapons appeared as black silhouettes in equipped gear slots and looting UI right after being equipped, until the inventory was closed and reopened
+- A rendering fix resolved the issue.
+▲ STARC-213375 - Dragging or shift-click-transferring looted items into backpack or core-armor slots failed across many locations
+- The affected UI panel needed a different rendering mode to properly register drag events.
+The Buy button on the Nyx refinery shop kiosk at Levski was visually misaligned, making it hard to click accurately
+- Fixed by correcting the button's on-screen positioning.
+Splitting a stack of items in personal inventory, then stacking them back together, could leave the inventory in a broken state
+- The root cause was split items keeping duplicate internal IDs until the local cache updated, made worse by loadouts leaving items without a proper sort order. Multiple fixes addressed both issues, and extensive testing confirmed it holds.
+Newly picked-up items (such as fuses or ore) couldn't be placed from inventory until the player opened and closed their inventory once
+- The cause was a stale inventory cache. Fixes now properly update the cache when an item is picked up and remove an old workaround that caused pressing ESC to invalidate the cache.
+Restocking ammo only pulled magazines from core armor slots, ignoring spare magazines stored in the backpack
+- Caused by the same stale inventory-cache issue as the place from inventory bug, and resolved by the same fix.
+Login & Connection Errors
+▲ STARC-178776 - Players getting bounced to the main menu with a 64008 "Spawn Resolver Error" when trying to load into the Persistent Universe
+- There were two separate causes over time: an earlier wave came from a bad data-exclusion bug, and a later resurgence was traced to a backend desync in players' account state that could also cause 64006 disconnects. A backend service fix addressed the dominant cause.
+▲ STARC-162848 - Players getting stuck with a 60029 error and unable to join the Persistent Universe
+- Affected accounts had their character records left in a broken state on the backend, effectively "stowed" in two places at once. A backend service fix resolved the underlying issue, and support tools were used to manually repair accounts that were already stuck.
+▲ STARC-177979 - A 64010 spawn error where players would time out after 12+ minutes waiting for the server to resolve their last known location
+- The root cause was throughput and availability limits in the backend service responsible for resolving player locations, not a client-side issue. This is addressed by backend service improvements.
+▲ STARC-210544 - A 64006 disconnect ("Location Resolution Request failed") that occurred when the backend couldn't find a player's character record to bring it back online at login
+- This was a transient desync in backend account-state tracking, not an actual loss of character data, and could self-resolve anywhere from seconds up to about 15 hours later. It was responsible for the majority of a related wave of 64008 errors, and both are addressed by the same backend service fix.
+Quantum Travel & Starmap
+Quantum travel routing from inside a station hangar failed when the destination wasn't in direct line of sight
+- The station itself was blocking the route calculation because stations were flagged with a map object type that had navigation points disabled; enabling nav points on stations resolved routing from hangars.
+Clicking a tracked mission marker on the starmap zoomed the camera in far too close
+- The zoom distance was calculated from the marker's own tiny radius instead of a sensibly-sized nearby object; the fix bases the zoom/focus distance on a more appropriate reference object instead.
+▲ STARC-170842 - Party members got a "connected" notification every time a teammate's server authority changed, not just when they first joined
+- The backend messaging service was firing the notification on every server-meshing handoff instead of only the first time a player joined a shard. The notification has been disabled for now via a config flag.
+Ships could quantum travel straight through moons that should have blocked the route
+- The collision check used to validate quantum travel arrival points wasn't accounting for moon occlusion, letting ships fly through them; the check now properly detects moons blocking the path.
+Erratic enemy ship combat behavior, including AI freezing mid-fight or flying straight into the player
+- The causes included a missing fighter-class tag on one ship type, a broken maneuver that caused visible wobble, and a stop command that fired unconditionally and froze AI in place. Each cause was addressed individually, and follow-up testing confirmed proper maneuvering with no more freezing or ramming.
+Vanduul Scythe fighters spawning passive instead of engaging at a mission site
+- The pilot's AI configuration was incorrectly pointing to a leftover default activity from an unrelated project instead of the correct idle-then-engage behavior. Correcting the reference fixed the passive spawns.
+Yormandi getting stuck idle and refusing to resume attacking after being staggered
+- A combined logic and data fix addressed the creature's AI motive and pain-reaction interrupt handling. It briefly resurfaced in a specific mid-attack edge case, but a follow-up fix resolved that as well.
+Docking & Refuelling
+▲ STARC-203449 - Ships assigned a docking collar by ATC could fail to dock even when perfectly aligned
+- Ships across Stanton, Nyx, and Pyro were sometimes locked out of hangars and stations because a nearby second player could interfere with the docking process, and docking tubes could get stuck in an "already associated" state that blocked further attempts. A fix has been confirmed working across many stations and ship types.
+Cargo ATC services could stop responding, blocking cargo loading zone requests
+- Hailing Cargo Services at stations across Stanton, Nyx, and Pyro would sometimes go unresponsive, preventing players from getting a loading zone to auto-load cargo.
+First Hour
+STARC-177016 - Players could get stuck trapped inside a ship's cockpit after a collision destroyed it
+- The cause was a seat occasionally detaching from a wrecked ship before the destruction sequence had fully completed, leaving the pilot alive but trapped with no way to exit or eject, sometimes indefinitely. The fix makes that kind of seat detachment complete the destruct sequence properly instead of stranding the player.
+Retrieved vehicles could spawn with landing gear clipped into the hangar floor, blocking takeoff
+- Retrieving a vehicle while leaving during its store animation could cause it to spawn with the landing gear clipped into the floor, and re-retrieving it could lock up the ASOP terminal's retrieve button. A fix adds a validation/repair pass that corrects vehicle placement when this happens.
+Ship radar and other systems stayed off after a power cycle
+- Turning ship power off and back on could leave the radar and other systems dead — a rough first impression for new pilots. The root cause was a timing race in the power system; the fix now tracks and automatically restores any systems that failed to repower.
+▲ STARC-179201 - Patrol missions with a satellite-scan objective could get stuck when a satellite failed to spawn
+- Some patrol missions require pinging a designated area via satellite scan, but a satellite could occasionally fail to spawn in that area, permanently blocking the objective and softlocking the mission. The mission logic wasn't getting confirmation that the satellite spawn actually succeeded; the fix adds a fallback spawn location so the objective can still complete if the original spot fails.
+Ping scans showed a target's name and faction as "Unavailable"
+- Scanning a target with the ship's ping wave or Target Status MFD showed its name and faction as "Unavailable" even when that data should have been known. A fix now displays the scanned vehicle's model name immediately.
+Manned and remote turrets defaulted to different, inconsistent aiming modes
+- Manned turrets defaulted to gimbal/auto-aim while the same turret operated remotely defaulted to pip aiming, so behavior depended on who was in the seat. The turret's aim-mode logic wasn't reinitializing correctly when switching between manned and remote control.
+Selecting Repair at a landing pad didn't block other services fast enough
+- Selecting Repair at a landing service didn't lock out other options quickly enough, so a conflicting service request could sneak in and silently cancel the repair. The underlying race condition between the two requests has been fixed.
+▲ STARC-214209 - Requesting multiple landing services at once could leave Repair needing a second request
+- Requesting Repair alongside Restock or Refuel at the same time showed everything as processing, but the repair would silently fail and need to be requested again.
+▲ STARC-131916 - Setting a route on the minimap didn't draw a route line
+- Plotting a custom route through the minimap produced no visible guide line, leaving players without a path to follow to their destination. The routing calculation was only available server-side; the fix calls the pathfinding logic directly so the route line renders as expected.
+Many FPS weapons rendered as blocky, low-detail models at moderate distances
+- Rifles, SMGs, shotguns, and sniper rifles showed noticeably low level-of-detail (LOD) models in inventory and crafting-kiosk thumbnails, and even at moderate viewing distances in-world. The LOD transition settings for these weapons have been adjusted so higher-detail models show up as expected.
+▲ STARC-127424 - Klescher's Ore Deposit Kiosk always failed the gemstone-for-merits transaction
+- Prisoners at Klescher Rehabilitation Facility couldn't trade mined ore for merits toward their sentence — the Ore Deposit Kiosk always returned a "Transaction Failed" error. The kiosk was misreading whether the ore was stowed in a backpack and routing the sell request to the wrong inventory list. That lookup has been corrected.
+▲ STARC-214870 - Selling ore from a freight elevator through a commodity kiosk failed with an entity-query error
+- Selling mined ore (Dolivine, Aphorite, Hadanite) stored on a freight elevator through a commodity kiosk failed with a "Failed Entity Query" error instead of completing the sale. The client was miscalculating the transaction price, causing server-side validation to reject it. The calculation has been corrected.
+Depleted mining-node bases weren't cleaning up when the node respawned
+- Harvestable/mining node bases stuck around indefinitely after being depleted, cluttering mining spots even after a fresh node respawned in the same location. The cleanup system's timeout queue was sorted in the wrong order, so despawn timers never fired. That ordering has been corrected.
+Refueling hint stuck on-screen after respawning mid-mission, blocking other notifications
+- A variant of the "Dock with Refueler" hint getting stuck on-screen, this time after respawning mid-mission during a refueling mission.
+Live/armed grenades were missing their HUD warning marker
+- Thrown grenades that were still armed didn't show the HUD marker meant to warn nearby players of the danger. The FPS radar that marker depends on had been disabled entirely as a leftover workaround from an old exploit fix. Removing that workaround restored the grenade warning indicator.
+▲ STARC-191377 - Party HUD markers showed only a chevron and distance, not member names
+- The HUD marker for party members displayed a direction chevron and distance but not the member's name. A UI data binding controlling name-label visibility was stuck returning zero; that binding has been fixed.
+Economy & General Exploits
+While we don't publicly share all exploit fixes, we did want to note that we've fixed 17 of them for Alpha 4.10.
+This includes the #1 reported Economy Exploit in the game, which injected a significant amount of aUEC into the game and had to be repeatedly course corrected by our Game Security staff.
+Ut Labore et Dolore
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+## Magna Aliqua
+Lorem Ipsum
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+## Quis Nostrud Exercitation
+Lorem Ipsum
+## What's Next?
+Alpha 4.10 doesn't mean this work is finished. There are still issues we're working through, fixes already in progress, and problems that will only reveal themselves once 4.10 is being played at Live scale. This initiative is ongoing, and the priority list will continue to evolve as issues are resolved and new ones emerge.
+You can also expect more hotfixes following the release as we continue tackling issues as they come up, with some scheduled for later this week. Our goal is to reach a point where these core systems are stable and reliable enough that you don't have to think about them or build your play session around avoiding them. These systems should simply work.
+Maintaining that focus also means making difficult prioritization decisions elsewhere. For the time being, we've deprioritized a number of other initiatives and feature work so we can maintain momentum on these core issues and give them the attention they deserve.
+And we need your help to keep this moving. Issue Council reports and feedback across other platforms help us understand which problems are affecting the largest number of players and where our efforts can have the greatest impact. Detailed reproduction steps, videos, and supporting information make a huge difference in knowing a bug exists and actually understanding why it's happening. And if something we've marked as fixed isn't fixed for you, we need to hear that too.
+Most importantly, thank you to everyone who has taken the time to report issues, share videos, provide reproduction steps, and help us track these problems down. We know some of you have been dealing with these issues for longer than you should have had to. Your feedback makes a massive difference to our teams, and it helps us make fixes that last.
+There's more work to do, and we'll keep you updated as we do it.

@@ -1,0 +1,63 @@
+Ships and Vehicles
+- Forward/backward on vehicles can now be assigned to axes
+- Added missile incoming alerts to building block based ship HUDs
+- The velocity limiter can be now adjusted while disabled, with a faded line indicating where the limiter will be once reactivated
+- Returned missiles to tap to lock, hold to launch and added a keybind (not bound by default) for unlocking
+- Increased the headlight range of the Vanguard series
+- Added a small screen for medbed interactions in the 890 Jump
+- Shifted the mass on the Anvil Ballista from front to body to prevent the rear lifting continuously
+- Argo Mole can now attach size 1 mining lasers
+- To temporarily offset some of the issues with shield holes, damage to some ship components (some weapons and turrets) no longer passes through to the ship hull
+- Added on damage delay to ASAS shields
+- Reduced gravity compensation in partial landing to make landing easier
+- Added rain canopy VFX to the Avenger, Eclipse, Arrow, Gladiator, Hawk, Hornet, Herald, Merlin, Starfarer, Freelancer, Prospector, Razor, 300i, 85x, and Sabre
+- All PU purchasable items should now be available to REC rent
+- Ships rented with REC should now be customizable
+- Increased available deadzone range for vjoy by 20%
+- Set default vjoy deadzone to 4.5%
+- Lowered assisted gimbal slew speed
+- Mouse relative mode is now an optional setting for mouse control but not  bound by default
+- Players can low lock the rotation of their ship using the Rshift key
+- Increased wing health of all Reliants
+- Added missiles to all Reliants
+- Added second gimbal turret to Reliant Kore
+- Streamlined some aim and flying controls to reduce complexity in preparing for future updates.
+Many of the custom settings for manual gimbal aiming and aim/look controls have been changed to streamline for future updates.  You can find a detailed post on those changes here: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/3-9-0-update-changes-to-some-aim-and-flight-contro
+Weapons and Items
+- Tweaked combat damage of S2 mass drivers to bring them more in line with similar sized weapons
+- Reduced head camera shake, reduced spread, and increased climb/drift for the Karna rifle
+- The extreme weather heavy armor suits Pembroke (extreme heat) and Novikov (extreme cold) can be found at Lorville's  and Port Tressler's armor shops respectively.
+## Major Bug Fixes
+- Fixed an issue that was causing the player wallet to get set to 0 aUEC after character wipes and database resets
+- Pressing backspace on the main menu should no longer cause the menu to disappear
+- If a players uses both the pilot and bridge control seats, one should no longer get stuck
+- Players should now be able to logout in the beds of the 890 and the Reclaimer
+- Carrack headlights should now function
+- Fixed an issue that could cause the player to get stuck on the character customizer screen
+- CryAstro repair services should now work normally without the need to hover prior to landing
+- Ships should no longer get into an invulnerable state sometimes after repair
+- Ships should no longer rotate to align with an invisible plane before engaging non-spline quantum travel
+- Look behind camera should no longer occasionally clip into ship geometry
+- Area18 habitation floors should now have atmosphere
+- Logging out of the Caterpillar's beds should no longer cause the player to log back in the pilot seat
+- Patrol missions should now correctly appear in the Crusader area
+- Fixed an issue where multiple ships could place a size 3 to 5 remote turret onto a gun hardpoint
+- Traveling to OM-1 should now send the player to the correct location and not to the center of Stanton
+- Carrack upper command ship controls should now have a HUD
+- There should no longer be a constant light reflection in the Sabre's cockpit that obstructs the player's view
+- Breathing should no longer be occasionally heard while in a loading screen
+- Avenger bed interaction should now work correctly
+- AI ships should no longer spin wildly when in combat
+- The character customizer should no longer become unresponsive
+- Player should now be able to look through sniper scopes correctly while crouching and prone
+- FPS AI should no longer aim in a random direction prior to aiming at the player
+- A ship should no longer be able to snag another ship in its physics grid, moving it out of sync and allowing access to cargo
+- Fixed a VOIP issue that was causing players to get into a state where Proximity and/or Primary channels can be heard globally after entering another primary channel
+- Refuel / restock / repair options should now work correctly at HUR-L4
+- Valkyrie Liberator variant should now be able to hold cargo
+- Players should no longer see the withdrawal of every mission element when the Call to Arms mission is withdrawn
+- Manned turrets should no longer appear out of sync and to not move to other players
+- Players should no longer encounter invisible players who are out of sync
+- Players should no longer be able to set direct QT routes or skip in-between jumps
+- Player should no longer be affected by strong wind while moving around on the two platforms at the Central Business District
+- Cargo boxes created from personal inventory should now be able to be sold at the commodities kiosk

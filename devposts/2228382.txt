@@ -1,0 +1,25 @@
+Good morning,
+before you post here please go through these instructions on what changed with head-tracking. Please note that this is just a first step. We do not consider this feature complete yet.
+1) Head tracking via TrackIR and Faceware has been unified.
+2) Head tracking does not move camera anymore but the actor head.
+3) You need to setup head-tracking under the options tab "Comms, FOIP and Headtracking". By default it is off, you also need to choose your source for headtracking.
+4) Related keybindings can be found under its own category Headtracking & FOIP.
+5) There are two modes for headtracking:
+- Toggle functionality: turns head tracking on / off (default Numpad*). The behaviour of that toggle can be configured in the options. You can automatically deactivate it in certain game conditions. More options might be added here.
+- Hold button: Turns headtracking momentarily on as long as the button is held. It is pretty much the same as freelook but does not block your aim movement.
+6) If you want to use head tracking via webcam / Faceware, you must enable FOIP!
+7) We added specific Faceware head tracking options for smoothing speed and head-tracking threshold (which is something like a deadzone to keep your view stable).
+:sunglasses: Head tilting / rolling has been removed as the actor head does not support that movement. If you want that in the future please put this in the survey.
+9) Translational axes (X, Y, Z) of TrackIR have been removed as the game cannot use them at this time.
+10) At this point we do not support any head-tracking devices or other optical trackers other than TrackIR or webcams via Faceware. EDTracker should work via TrackIR emulation. If you want support for other devices (Eyetrackers, etc.) please mention it in the surveys.
+11) Head tracking is forced off during ADS. The reason for that is that you can easily clip through your weapons. If this is important for you please put this in the survey.
+Known issues:
+- In certain setups (like in QT) head-tracking still conflicts with the mouse. We'll try but this will likely NOT be fixed in 3.6.
+- The headlook / freelook direction is not replicated over network. So you cannot nod at your friends yet. This will be fixed in 3.7.
+- Atm you cannot use head-tracking to gimbal your ship weapons yet. We will try to get this in for 3.7.
+- In certain walking modes, you can actually move the actor head further than what should be possible. I am still trying to fix that for 3.6.
+Other stuff:
+- When you report a bug please clearly indicate in what game situation that happens (QT, walking, flying) and what your head tracking options are.
+- We are currently looking into creating tutorials to ease with the process of FOIP and headtracking.
+Cheers,
+Yogi

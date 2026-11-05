@@ -1,0 +1,20 @@
+Welcome, everyone, to the first 3.17.2 Patch Watch!
+As with previous Patch Watches, we don't want to miss the opportunity to spotlight some of the upcoming fixes and improvements that aren't on the Public Roadmap.
+Actor Downstream Networking Improvements
+Alpha 3.17.2 adds improvements to actor downstream networking, which vastly improves how players and NPCs move over the network. The new system should provide much smoother motion with less jittering and unnatural movement along with improved starts/stops, with actors now playing the correct animations instead of tap dancing. In addition, the new system deals with low/variable framerates or variable network conditions much more cleanly. There will be ongoing improvements to this system and further tuning will be done to various parameters in future patches.
+Reduced Floating Rocks
+Environment Art performed a general polish on planetary surfaces, including Daymar and Yela, tweaking asset-scattering settings to reduce floating rocks and foliage.
+Refueling Fixes & Adjustments
+The system designers solved some refueling bugs before adding more depth. Here is a selection:
+- Fixed an issue with the MISC Reliant series to stop the ships from clipping into the fuel nozzle
+- Ship paints will no longer change when refueling
+- Auto-refueling now correctly indicates that a service is needed
+- Auto-docking to the tank arm has been fixed across multi ships
+- Disabled the ability to quantum travel with a ship attached to the boom arm
+Ship & Weapon Balancing
+The Vehicle Feature team integrated some balancing adjustments:
+- Retuned the Vanduul Blade to be closer to the Aegis Gladius. The Blade is slightly ahead in terms of raw numbers (about 1G) and is better in forward boost than the Gladius. However, the Gladius is better in lateral boost
+- Plasma cannons adjusted to 1400 m/s with greater capacitor costs to offset it. So, it holds the same amount of damage in the energy magazine as the Gladius
+- Plasma cannons turned to full energy damage (distortion damage numbers are under review)
+Mission Box Added to Mustang
+Did you ever wish to transport mission boxes with the Consolidated Outland Mustang? Well, so did the US Vehicle Content team, who have been looking into several options for adding this ability. It's not final, as the team has found an even better solution, but for Alpha 3.17.2, you'll be able to open the Mustang's cargo box and place a mission box inside.

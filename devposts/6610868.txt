@@ -1,0 +1,65 @@
+## Star Citizen Patch 3.22.1
+Alpha Patch 3.22.1 has been released and is now available to test!   Patch should now show: VERSION 3.22.1-EPTU.9063902.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: All Backers
+Server Regions: US Only
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- General Stability & Bugfixes
+- New & Updated AC Game Modes
+- New Dynamic Event Playtest
+We will be enabling the new Dynamic Event tonight shortly after release to the EPTU and run overnight.
+Known Issues
+- The San'tok.yai and X1 flight tuning is not fully complete and will require tuning in a later release
+- The Final Boss NPC won't spawn during the Illegal Retrieve Consignment Mission (Legal version still spawns correctly)
+- PU - Stanton - UGF - Elevators can disappear when entering the UGF (STARC-94120)
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend (STARC-86292)
+- Stanton - Ship to Station Docking - Docking arm on LEOs does not disengage correctly, causing the ship to be impounded (STARC-49759)
+- PU - Locations - Transit - Elevators - Elevator is missing, no carriage, mesh or doors and player falls through if they walk in (STARC-62581)
+- MULTIVEHICLE - PU / AC - VFX / Vehicles - Components - Weapons - Guns - Distortion damage causes severe performance decreases proportionate to ship size
+- PU - Stanton - Data Heist - Mission Content - Data Heist server upload bars do not progress (STARC-96752)
+- PU - Multiweapon - Multiple weapons do not have recoil when shot (STARC-94529)
+- PU - Locations / Missions / AI - Too many AI are spawning during the Additional Derelict missions (STARC-73170)
+- PU - Stanton - Locations / UI - AR Marker showing your assigned hangar does not appear (STARC-83819)
+- PU - Stanton - Actor Status / Medical / Respawn - Unable to move after respawning and long load times (STARC-81772)
+- Multivehicle - PU - Vehicles / Physics - Vehicles with revised ground vehicle physics suffer excessive vibration at low speeds or when stopped (STARC-82528)
+- PU - Stanton - RSI Constellation Series - Vehicles / Docking - Snub Fighter cannot request docking clearance (STARC-86519)
+- PU - shopping/Refinery Kiosk - Refinery Kiosk is stuck at "Signing out" (STARC-88225)
+- PU - Stanton - Locations / Interactables / Actor - Comm Array - The insert interaction for the cryptokey occasionally lost (STARC-92241)
+- PU - Stanton - Derelict Settlement - Multiple Locations - AI - AI are spawning together in group and they can be slow to leave their spawn points (STARC-95361)
+- New Player Experience - Players can spawn with unintended armor on
+- PU - Stanton - Actor - Players can become stuck in bed upon login (STARC-96822)
+- PU - Stanton - Mining / UI - Player is unable to mine asteroids as scan info does not appear (STARC-97113)
+- PU - Stanton - Starmap - Locations / UI - Multiple Derelict settlement's QT markers are not present on the starmap as intended (STARC-96240)
+- MULTIVEHICLE - PU - Vehicles / VFX - Vehicle debris detaches from the ship skeleton on hard death leaving floating VFX and art floating in mid-air (STARC-93866)
+- PU - Controls - Keybindings - Double Key bind / Modifiers Not Working (STARC-94351)
+- AC - Grav Race - Locations - Players occasionally spawn on top of each other when spawning / respawning
+## Feature Updates
+Gameplay
+- Added a mild push impulse force on catastrophic shatter of mineables (with a smaller force for FPS variants)
+## Bug Fixes
+- Fixed - PU - Stanton - Prison - Klescher Rehabilitation Facility - Transit - Elevator not present for player to exit prison
+- Dynamic Event Fix - All Stages - Missions / mobiGlas - Priority mission is not appearing for everyone in the mobiGlas
+- Dynamic Event Fix - PU - Missions - Stage 1 - Data Heist - Mission Content - Data Heist server upload bars do not progress
+- Dynamic Event Fix - PU - Missions - Stage 1 - Receiving incorrect non-Xenothreat Trespassing message
+- Dynamic Event Fix - PU - Missions - Stage 1 - screens around UGF have a code before the Remote Connection has been accepted
+- Dynamic Event Fix - PU - Missions - Stage 3 - Missions - Mission is not available in the contract manager after completing the requirements
+## Arena Commander Updates
+- Master Modes Updates
+- Slightly reduced rotation rates of F7CM and Vanguard
+- Set MM pitch yaw limiters to ellipsoid
+- Increased boost ramp times
+- Reduced ammo speed of all MM weapons, P-52 ammo increased
+- Increased P-52 health
+- Fixed - AC - Multiple Modes - UI - "Return to Simulation" text appears before deploying a ship
+- Fixed - AC - Duos Showdown - Player can get disconnected for inactivity after dying while the game is still running
+- Fixed - AC - X1 & Variants - X1 & its variants is still not available to people who pledged for it
+- Master Modes Fix - AC - Master Mode: Pirate Swarm - Audio / Dialogue - The match starting announcement dialogue is incorrect
+- Master Modes Fix - AC - Master Modes - Releasing boost or lowering speed with the speed limiter appears to lock decoupled strafe movement (Force coupled when above allowed speed limit in MM)
+- Fixed Duo Showdown not rewarding both players
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 1 Server Crash

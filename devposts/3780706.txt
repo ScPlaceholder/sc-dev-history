@@ -1,0 +1,43 @@
+## Star Citizen Patch 3.12.1e
+Alpha Patch 3.12.1e has been released to the PTU and is now available for all backers to test!   Patch should now show: VERSION 3.12.1-PTU.6899484.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- General Gameplay
+Major Known Issues
+- Some or all of the player's items that should be kept after a Character / Database reset are lost
+- Attempting to sell minerals in Prison results in a Processing screen and then a transaction failed message
+- Player Unable to access mobiGlas after changing armour
+- Being arrested while wearing leg armor causes the player to respawn in prison with a broken multi-tool
+- Opening/Closing a Cargo Crate shelf can Open/Close the adjacent shelf
+- Character animation incorrect while holding damaged QT sensitive cargo crate
+- Amistice Zone may cause crimestat for Defenders
+- AI ships just vanish when they are meant to Quantum jump away due to mission conditions being met
+- The Players Ship can become Unresponsive after Mining a Asteroid FPS Deposit nearby
+## Feature Updates
+Gameplay
+- Increased the monitored space around Jericho to reach out and cover the wrecksite
+- Increased time it takes for Xenothreat mission phases to restart once completed
+- Xenothreat supply reward udpates
+We have changed the way that aUEC rewards are handled for the supply mission in Phase 2. Player who turns in the supplies should now get 90 aUEC per turn-in while the rest of the amount goes into a general "Contribution Payout" bar for all players in a party who share the mission
+## Bug Fixes
+- Players ship should no longer become clipped / stuck to the Starfarer wrecksite physics grid when close
+- Fixed an issue causing players to be unable to QT to the wreck site upon arrival at security station Jericho
+- Passive Scanning should no longer loop repeatedly when mining
+- Talon Shrike should no longer become unable to fire missiles
+- Fixed an issue causing the player do not be given a mission progression counter when they arrive at a Claimjumper mission location
+- Duplicate, despawned Derelicts from a previous Xenothreat mission on a server should no longer respawn when a new instance of the mission is initiated
+- Time sensitive (Zeta-Prolanide) crates should no longer be able to be sold at Jericho trade terminals when they have Expired
+- Damaged cargo crates should no longer be able to be sold at the trade terminals
+- The Goodbye/Exit Screen when Closing a Refinery Terminal should now display correctly
+- Player attacks on the Javelin should no longer cause a Voice line to play that misleads other players
+## Technical
+- Fixed 2 Client crashes
+- Fixed 2 Server crashes
+- Backend shop service optimizations

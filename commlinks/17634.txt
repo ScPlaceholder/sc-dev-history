@@ -1,0 +1,161 @@
+Theaters of War AMA Recap
+## Each month we host an open submission live Q&A on Spectrum hosted by developers from various specialties across CIG. These questions and answers were collected from the Spectrum AMA on June 3rd, 2020.
+This time, we welcomed four guests from the team working on the upcoming game mode, Theaters of War (working title):
+Sean Tracy – Technical Director
+Jonny Jacevicius – Senior FPS Systems Designer
+Tom Solaru – Senior Producer
+Milan Pejcic – Director of Development Operations
+This AMA is complete but keep an eye out for upcoming threads for your chance to ask us anything!
+## What Changes have been made since the CitizenCon 2019 Reveal/Evocati Tests?
+Sean Tracy:
+The sheer amount of changes since CitizenCon would be hard to list as we were based on 3.7 for citizen con. The biggest updates that we had to consume were the planetV4 updates and a physics system refactor. This meant a change to the map itself, updates to many systems and is why the evocati weekend event would have looked quite different (conceptually the same design) but visually different. We even changed planets from Hurston to MicroTech.
+Just to give a further idea in the last two weeks there’s been over 150 changes directly addressing feedback so the list would be large and would need to include the patch notes of 3.8 and 3.9
+## Will it get medic / engineer / support roles?
+Jonny Jacevicius:
+Certainly something we’ll want to incorporate eventually, but right now our priority is getting the combat feeling good in a combined arms scenario before moving onto more specialized roles.
+As medical gameplay and other systems come online in future quarters for the PU, we’ll be looking closely at how we can incorporate them into Theatres of War.
+## What was the outcome of the Theatres of War Evocati Tests?
+Sean Tracy:
+The weekend event was actually successful in achieving the objectives we set out to achieve with it. I could do a whole hour just on this, but to summarize the objectives/accomplishments/outcome.
+- Most importantly because of our new metrics/analytics we discovered that someone, somewhere made a kill with a fire extinguisher…
+Server performance was great
+- We ran into challenges every time we scaled concurrency to some degree (and this instance was not different).
+- We reached the highest concurrency we’ve had, almost 5x what we had tested with previously.
+- We found issues in platform (that remain and are being looked at that affect everything) we ran into some persistence / service issues and finally the popular and more difficult topic we’ve found our game is running much more poorly than expected on our player’s hardware, at least when you have “action” happening and 40 people in relatively tight proximity consistently.
+- Tons of new features were proven out at scale which included Chat/Party/Friends joining into AC/SM servers as well as voip
+- Pulled a good amount of very specific analytics. The evocati played straight for 6-8 hours with round cycling (means no downtime just round after round after round) and those metrics are validating (and in some cases not) much of our gameplay (map wise).
+- Map/Mode balance validated for example: 117 rounds played, 54% win rate for defenders so it’s fairly equal (slightly stilted to defense but would expect that to level out as people learn the map)
+- Ships balance got highlighted between Buccaneers and Arrows (2x spawn rate of buccaneers over Arrows which is likely that they die twice as much) and community highlighted this which is great and we’ve adjusted.
+- We managed to confirm a few facts for the resources requirements of ToW instances.
+Performance is and continues to be the biggest issue and addressing that will help everything. Whether that the perception of a desync, to feel to responsiveness etc… No game feels good at all below 20fps (except maybe Civilization or Risk!)
+## Will we see a ToW game mode where the emphasis is on space combat rather than ground combat, yet still incorporates combined arms concepts? (Example: “Capture the Idris” game mode as discussed in early AC development). (EDIT: this would also incorporate multi-crew/turrets in, which would touch more of the SC experience as a bonus).
+Sean Tracy:
+Yes! The intention of this particular scenario was to ensure ground vehicles and infantry would co-exist and to match them up against the ships, but not so many of them. For our next scenario you can expect it to be turned on it’s head where the focus will be space and ship combat as a central component but using the same template of phases/objective game-play.
+## How will you fix the desync problem?
+Sean Tracy:
+Sometimes lack of responsiveness for certain systems or actions can be conflated into desync issues. This is then further exacerbated by low frame rate! So sometimes what might seem like a desync isn’t and is instead a different issue (be it responsiveness or lag). Quite a few actual desyncs were addressed for ToW and are much easier to track and fix comparatively to the PU. For example the 250ms injected delay was completely reworked (approximately 50 same as most other games) and adjusted to serve ToW as the server runs at a solid 30Hz. Short answer desyncs are addressed as they are discovered but often times responsiveness and low frame rate are the bigger culprits.
+## Are these “low framerates” you noted issues with map geometry or optimization? I would imagine that people would expect the same (or better) FPS in this arena-like instance and therefore are calling out a performance issue different than what they experience from PU.
+Sean Tracy:
+Great question and I wish I could answer clearly in a single sentence but there were some many optimizations to be made on all angles art, design setup, implementation of some features, rendering code, vfx, sounds basically all aspects are adding up together. There wasn’t one silver bullet unfortunately but we’ve done a single sprint fully focused on performance and have saved quite a bit with more to come. Again ToW lets us see these issues obviously and analytically so it’s been incredible useful for more than just the small ToW team and this includes engineering around the company.
+## I appreciate your answer. There‘s a situation I always face in PU that the grenade flying out after the throwing hand animation is finished. Is this a case of lack of responsiveness? Will this be fixed in ToW?
+Sean Tracy:
+Grenades are being actively worked on this quarter! Not specifically for ToW but was scheduled already as developers AND players see the same wonkyness and this isn’t really desync but a slowly rotted implementation. So basically it’s already being done
+## Will FPS AI ever be introduced in ToW to make the battlefield even larger? Could this be a test bed for FPS AI to get them ready planetside in the PU outside of bunkers?
+Sean Tracy:
+It actually already has some AI (not FPS) that we wanted to prototype as the obvious comparison is with games such as Battlefront. ToW is not exclusively a PvP only mode and scenarios can make use of AI when it makes sense. It would be immensely useful to have bots for internal testing as well (even if they aren’t that good) but with AI focus needing to be on PU and S42 we have to be mindful of the resources and the ToW group doesn’t have any of these specialists for AI.
+## With the amazing introduction of the uee navy during the invictus fleet week we got to see and battle the mighty idris and javilin, would it be possible to create a tow scenario where we could battle them? This in turn could allow of continuous data to help tweak and balance these powerful and important space behemoths.
+Milan Pejcic:
+Yes! This is something we are definitely looking to do. We want to provide diverse scenarios that would be interesting and fun for you as well beneficial for us to balance and polish. Capital ship fight scenario is on our radar. Which specific ships would take part will be dependent on our ship pipeline progression.
+Sean Tracy:
+Copying from another answer (similar question) Yes! The intention of this particular scenario was to ensure ground vehicles and infantry would co-exist and to match them up against the ships, but not so many of them. For our next scenario you can expect it to be turned on it’s head where the focus will be space and ship combat as a central component but using the same template of phases / objective game-play.
+## FPS Movement in the PU has been rather clunky, have you made any significant improvements to player movement in TOW in regards to the way we move and handle our FPS Weapons?
+Jonny Jacevicius:
+ToW has been great for identifying issues with on-foot combat, due to the concentration of combat and the variety of environments it takes place in. As a result, we’re making some great steps toward making the movement feel much more responsive and to improve the weapon handling. Some of these changes have already gone live over the last couple of updates or will be coming in the near future, but here are a couple of examples off the top of my head:
+- Movement and strafe speed increases
+- Total stamina and regeneration increased (increasing overall sprint time and reducing weapon sway)
+- Animation speed increases (weapon reloads and ship and vehicle enter/exits)
+- Weapon spread and recoil improvements
+## Will we see some vehicles like the Nova Tank in ToW before it’s in the PU?
+Sean Tracy:
+The tonk is very dear to me, and is needed for some key balance to the ground combat (direct fire heavy weapon). ToW has, however, managed to increase the priority of the tonk for such gameplay needs. It would hit PU at the same time.
+## The ToW 40 player cap seems a little dated in this day and age; especially for a game that is promising a single shard universe; is there a reason why we’re still capped at these low player numbers per instance?
+Sean Tracy:
+Mostly comes down to performance of vehicles and the intensity/balance of the mode itself vs. the size of the playspace. Some of the discoveries during the Evocati testing has been that our relative player performance costs are far less than anticipated and thus could increase this in a larger map setting as the cost of players is less in ToW than in SC as far as the server is concerned. We aren’t at all locked to 40 players but this count suited the Crossroads of Crime map design and we are considering higher player counts for future scenarios.
+## How big is the ToW team and are they dedicated to working on ToW?
+Milan Pejcic:
+We are cognizant of resources available and other high profile priorities for the company. Main intent was to provide an environment where we can get appropriate information which would result in multiple improvements across the board. All the development playtime and feedback provided directly benefits the needs of Star Citizen and Squadron 42.
+Team of people specifically dedicated to ToW is very small. Total team size of 10 consists of 4 designers, 2 engineers, 3 artists and 1 producer.
+## You say Theatres of War is the working name… what other names you are considering?
+Milan Pejcic:
+Theaters of War is the title we have been using internally so far. We are considering several names as we progress with development. We want to make sure that name works well within our universe and identity before making further commitments.
+What is your feedback for current working title? Do you have other interesting ideas?
+## How will CIG devote resources differently to ensure the ToW remains a lasting, developer-supported game mode option for players?
+Milan Pejcic:
+There is a strong desire to continue our efforts for developing and maintaining ToW related content. This directly benefits our SC, S42, AC, SM needs. We are committed to delivering polished and fun games for you and ToW work is a crucial component of enabling that.
+We are looking into ways of scaling the team which is highly dependent on multiple circumstances such as hiring rates, virus delays, specific profile of new hires, etc.
+## Will we see ToW incorporate multi-crew ships eventually, including possibly dropships for troop insertions?
+Jonny Jacevicius:
+We’re already using them! We are currently utilizing a Valkyrie and Vanguard, though this may change due to ongoing balance changes.
+## How has ToW helped balance the game as a whole?
+Jonny Jacevicius:
+It has been incredibly helpful. Previously the main opportunity for mixed arms gameplay has been in PU encounters, which could be quite uncommon due to its size. Having a game mode where you’re immediately in a focused combat scenario, where FPS, ground vehicles and ships are all interacting has given us an opportunity to see how everything interacts.
+It’s also influenced sweeping FPS weapon changes and fixes as it’s allowed us to tune our weapons for longer (and more realistic) combat ranges due to the size of the map, and distance at which you can encounter enemy players.
+## Do the Dev’s working on ToW understand how important it is for this game mode to be polished and balanced on release? or it will be dead within the first week and never touched again
+Milan Pejcic:
+There is a strong desire to continue our efforts for developing and maintaining ToW related content. This directly benefits our SC, S42, AC, SM needs. We are committed to delivering polished and fun games for you and ToW work is a crucial component of enabling that.
+We are actively working on improving performance related and player feedback related issues from the latest playtest. You can find more info on that in one of Sean’s answers above.
+## Will there be Squad Management / pre-made queues/features, or will it be a 20vs20 free for all?
+Milan Pejcic:
+Party system is already implemented. You can join as a group through party leader and play in the same instance.
+We will be looking into improving the UX/UI elements that would make this easier and more visibility in some areas like scoreboard for example.
+## Is FPS (frame rate) improved in ToW especially compared to Star Marine?
+Sean Tracy:
+No. We have basically 3 SM maps in one + a planet and we include vehicles (ground and ships) so compared to the current SM maps it runs slower but honestly to be expected and with the changes we’ve talked about we are getting closer and closer to SM performance.
+## Will ToW be released to more players as an Alpha? OR will it be more complete and polished product?
+Milan Pejcic:
+We are looking to expose the mode to larger groups of players instead of Evocati only. Once we feel more comfortable that the intended experience or parts of that experience are ready for broader consumption we will be communicating that proactively.
+Evocati and PTU groups are treated as gates. Based on your feedback and backend data we are making guided decisions on how/when to proceed. Your feedback and playtesting is incredibly valuable for our ability to achieve the intended experience.
+## Balance can make or break a game mode, how fast can we expect balance related changes given the current 3 month cadence, and will those same changes be reflected in the PU as well?
+Jonny Jacevicius:
+It really depends on the nature of the change. Balance changes to things like the weapons or vehicles are issues we can likely solve in point patch or incremental patch. Larger changes we want to make, like alterations to the map or game-mode are things you’d be more likely to see in one of the quarterly major updates.
+Any changes we make in Theatres of War will be made in the PU. All of the weapons, armour, items and ships etc. are all part of the same game.
+## Star Marine scopes and sights are famously inaccurate. Is there any progress on weapon sight zeroing?
+Sean Tracy:
+Yes, Jonny himself even did pass just recently to dial in all alignments across FPS scopes based on the feedback from the evocati weekend test. So expect that to be fixed/addressed on the next event and next PU patch.
+## When can we expect to see a ToW scenario beyond the initial one presented at CitCon?
+Tom Solaru:
+We’re currently looking at testing with Evocati again this weekend in order to get more feedback on our recent gameplay tweaks, bug fixes and performance improvements. We’re looking to ensure a positive experience for players before opening the game mode wider to even more backers.
+Milan Pejcic:
+We are starting scenario 2 work next quarter.
+## Will ToW feature a “Downed” state before death? to give your teammates a chance to get you up in feet, similar to current Battle Royale games?
+Jonny Jacevicius:
+This is something we’re currently looking at alongside the incoming body dragging mechanics and medical gameplay.
+## How are the Internal Tests going for ToW?
+Jonny Jacevicius:
+Really well! The development staff seem to really enjoy playing and we’re really grateful for all the issues they’ve found and the feedback given.
+The team have been using the regular playtests to trial changes and continually iterate to improve the experience.
+## Having played the CitizenCon playtest, balance seems hard and it looks to me that the defenders were “balanced” to win more often than the attackers… what do your stats say?
+Jonny Jacevicius:
+We’ve seen varied results from different tests, but we do sometimes see an attacker/defender advantage depending on what phase of the game they’re in. Our last set of analytics showed 117 rounds played, with a 54% win rate for defenders, so overall it’s fairly equal (slightly stilted to defense but would expect that to level out as people learn the map). We will have our eye on the stats going forwards and will make changes to ensure a fair fight for both sides.
+## Can you name and quantify your criteria for when you will consider tow ready for release?
+Sean Tracy:
+We have specific review gates and will not release or push out anything without having passed these given gates as a very strict rule. For example one of these are the current evocati weekend events which we’ve not yet passed. Reviewing the analytics (for balance, performance and more) inform the decision making about taking it to the next stage.
+For example, the next for us will be a larger audience playtest and we will review the data and make decisions accordingly. Some of the KPI’s though are concurrency, performance, and visual fidelity.
+## ToW has asymmetric vehicles, ships and loadouts – was it really necessary to overcomplicate things for yourselves that much; wouldn’t have mirror matchups been at least a little easier on everyone?
+Milan Pejcic:
+We have a very diverse and abundant amount of vehicles and weapons within our universe. Using various scenarios would enable us to balance and polish our content and gameplay better. For example with this testing and feedback we have made changes to various ships to balance them out more.
+Doing things in an easier and quicker way often doesn’t translate in best experience for the players.
+## How does development currently align with the 3.x releases? Back at citizencon you were working off a separate branch to keep development stable. Are you still slightly behind the latest and greatest or keeping up with tech going in the upcoming 3.10
+Tom Solaru:
+We’re not far off parity with 3.10, we’re still working in 3.9.1 for this next Evocati weekend but then will integrate over and work in that branch so we can stay in-sync.
+## One of the big problems I thought TOW had was the tiny artificial boundaries. A sniper couldn’t take up position in the forest, because going 20 meters from the building was considered out of bounds. Has this been addressed at all?
+Tom Solaru:
+We have relaxed the outer boundaries so hopefully players will enjoy more freedom to move around in the next build.
+## Will there be something like C4, we can’t have a game mode like this without jeep stuff
+Jonny Jacevicius:
+We have loads of really cool throwable, deployable and consumable items coming to the game in the future. I don’t want to give too much away, but there’ll certainly be a lot of items you can utilize for combat!
+## Are there spawn limits? Like do the defenders only have 8 respawns each? Or is it unlimited respawns.
+Tom Solaru:
+It’s currently a choice of four preset loadout classes per team with unlimited respawns.
+## ToW looks amazing – looking forward to the AMA
+Tom Solaru:
+Thanks DaleChristopher! Hopefully we can answer all of your questions fully. We’ve recently put another round of art polish in to the build so we’re excited to see what people think of the changes.
+## ToW is for 3.10?
+Tom Solaru:
+We’re testing another 3.9.1 build with Evocati this weekend and will be looking to open it wider to more backers as soon as we’re happy that it will be positive experience for everyone.
+## Disclaimer
+The answers accurately reflect development’s intentions at the time of writing, but the company and development team reserve the right to adapt, improve, or change feature and ship designs in response to feedback, playtesting, design revisions, or other considerations to improve balance or the quality of the game overall.
+## End Transmission
+Comments
+038.0
+## Feedback
+Add New Comment
+## Settings
+View mode:
+One column
+Two columns
+Sort by:
+Oldest first
+Newest first
+Most appreciated first
+Loading Additional Feedback

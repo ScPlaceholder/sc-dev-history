@@ -1,0 +1,44 @@
+## Star Citizen Patch 3.17.1d
+Alpha Patch 3.17.1d has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.17.1-PTU.8073467.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- General gameplay
+- Scorpius
+- Javelin Tour Playtest
+Fleet Week Updates
+- Bug fix - Javelin Tour will not start unless a player is within close proximity to where the Javelin would spawn at Baijini Point and Port Tressler
+- Bug fix - Fixed an issue that was causing Javelin docking arm doors to unintentionally stay closed
+Known Issues
+After reviewing data and feedback from players we have decided to keep the current Scorpius flight tuning for now
+- The Platinum Bay shops at the reststops will temporarily have the generic depot attract screen on them until the proper Platinum Bay attract screen is created
+- Orison - The AR Marker for the Players designated landing area only appears when the Player gets within a close proximity to the Spaceport
+- Ships can explode after players exit them
+- While docked to a Starfarer the Valkyrie will continuously tilt instead of remaining stationary
+- Damage to player health can become delayed and can trigger after the player has fully healed themselves
+- The Argo Raft's elevator controls cannot be interacted with from either inside deck
+- A ship's targeting pip may be missing or disappear for some players; they cannot be targeted when this happens
+- Character's head, mobiGlas, and other equipment can sometimes go missing after being released from Klescher
+- Medical beacon will not complete mission/payment when player is brought back from incapacitation
+- Character animations are not playing when looking at them at a distance through scopes
+- Spawn closet doors do not open or remain open for friendly AI
+- 890 Jump - AI do not spawn appropriate number
+- Bunker turrets will shoot at a player with a lawful mission to be at the bunker
+- Remove Claimjumpers - Mission does not progress after player has reached mission location
+- ReplaceMe balls around Outposts on Daymar
+## Bug Fixes
+- Elevators should no longer collide with players while moving to their destination
+- Fixed an issue where elevator entrances can occasionally become persistently unresponsive to the player who called it
+- The Drake Mule should no longer be missing audio, which was causing it to beep
+- Fixed an issue causing larger weapons such as the Animus Missile Launcher to not spawn inside loot crates
+- After dying, a player's corpse should no longer fail to spawn, causing permanent loss of their last loadout
+## Technical
+- Fixed 1 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed 2 server deadlocks

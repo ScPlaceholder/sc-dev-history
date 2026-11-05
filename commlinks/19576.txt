@@ -1,0 +1,93 @@
+PU Monthly Report
+October 2023
+With Alpha 3.21 and CitizenCon us, many development teams diverted their attention to the upcoming patch releases closing out the year.
+Read on for all the latest updates on ships, locations, missions, and more coming soon and into 2024.
+## AI (Features)
+Last month, AI Features focused on bringing AI combat functionality from Squadron 42 to the PU for the Alpha 3.22 release. This involved introducing SQ42’s accuracy calculation, perception reactions, ammo management, hazard avoidance, medic behaviors, and combat tactics.
+“We’re really looking forward to you getting your hands on the updated AI combat and providing us feedback on it!” AI Features Team
+The team also ramped up bug fixing, which included improving firing validation to allow multiple “observable points”. This allows NPCs to fire at the player if they're behind chest-high cover. Before, they would only validate towards the aiming position but now extend to the first visible observable position that validates successfully.
+Issues with AI not reloading in cover, medic AI not correctly aligning with characters when healing, and AI not shooting while strafing were also fixed along with a crash caused by navigation link raycasts.
+A new structure for AI combat dialogue and wildlines was implemented, and the flow of first reactions before combat when standing in a usable was closed off. The team continued to polish the retargeted animations for Pyro’s female combatants and civilians too.
+## AI (Tech)
+In October, the AI Tech team continued work on the boids system and Apollo Subsumption tool alongside optimizations and improvements for the wider PU, Pyro, and CitizenCon.
+For the boids system, they began by fixing issues relating to spawning and unspawning and moving properties for agents. They then iterated on and improved the rules for flying groups and updated the separation rule for a better rapport between distance and strength in relation to other agents. Functionality for adjusting position during animation transitions was also added so that, for example, landing animations appear smoother. The logic for spawning agents on navigation mesh was updated too. The next step for boids is to iterate on death states and how they transition into ragdoll.
+October saw the Apollo Subsumption tool receive numerous improvements alongside bug fixing. For example, new functionalities were implemented to allow conversion between conversation activity and secondary conversation activity. The team also updated the sorting functionality for variables to allow manual reordering and refactored variable data to use less memory.
+Several AI systems were updated too: For collision avoidance, the team improved how they change collision resolution mode between NPCs standing, moving, and sitting in a vehicle. They also updated collision avoidance logic for cases when NPCs are part of a conversation so that, when computing nearby agents and obstacles, they can also account for conversation members and ignore them. They then updated collision avoidance parameters to give better results for cases like NPCs pushing a trolley and multiple NPCs in a conversation (either moving along a path or staying still).
+On the behavior side, multiple improvements and integrations were completed for both ship AI and NPCs to add the same functionality from SQ42.
+AI Tech also continued the process of adding navigation anchors to more of their systems, which allows them to be more efficient in calculating and keeping track of where a position is on the nav mesh. Last month, navigation anchors were added to the pathfinder (for requests) and the movement system component (to keep information about which navigation triangle an NPC is on).
+Various bugs were also fixed throughout October, including with how cover locations are calculated based on the simplified cover path, as the team found a bug in the calculation that could have led to the creation of unnecessary cover and therefore excessive memory usage. They also fixed a scenario where planetary navigation mesh tiles were created and wrongly destroyed even though there were still NPCs around the area.
+## Animation
+The Animation team spent the month delivering facial animations for combat AI, including female combatants, and various background characters. They also planned out the required actions for some new creatures.
+## Art (Characters)
+In October, the Character Art team began work on a racing flightsuit and its helmet, started new creature models, and prepared for CitizenCon. Alongside this, the Character Concept Art team further explored ideas for fauna and medical outfits.
+## Art (Ships)
+In October, the Crusader A1 and C1 Spirit both reached the end of final art, while an all-new ship reached final art, with its final reviews approaching soon.
+Whitebox work for the RSI Polaris increased as more artists were freed up from other projects. Last month, the team focused on the habitation areas at the front of the ship, working their way back to ensure that everything is set up and ready for Design to make a pass. The exterior whitebox is nearly finished, with elements like turrets in progress.
+The team also worked on changes to the Aegis Reclaimer to support structural salvage, including altering the claw and interior salvage stations.
+A new variant mentioned in last month’s report continued through greybox, with all vehicle components being added. Once these geometry changes have been completed, it will receive a damage pass.
+Finally, on the run-up to CitizenCon, the team completed a pass on the Crusader A2 Hercules to add relays for the Resource Network demo as well as creating the relay asset itself.
+## Community
+October was CitizenCon month, with the team traveling to Los Angeles to lead all of the various initiatives surrounding the convention.
+The team supported the community booths, volunteers, the ATMO Esports tournament, the cosplay contest, as well as overseeing the event itself. Additionally, they supported the launch of the Preview Channel, putting the Pyro system into the hands of players at home after the show had concluded.
+October also brought Day of the Vara, 2953’s Halloween equivalent. The team brought back the fan-favorite pumpkin-carving contest as well as a new video contest challenging the filmmakers in the community to create a one-minute horror machinima video within Star Citizen.
+Lastly, the team assisted with the flyable launch of the Anvil F8C Lightning. Alongside the Live QA and Player Experience teams, Community launched the gold and platinum ticket events, where players engaged with developers for a chance to take home an F8C of their own.
+## Economy
+In October, the Economy team continued balancing the profitability of commodities for Pyro and Stanton.
+They also began reviewing and balancing the aUEC prices of vehicles, identifying various criteria to help inform how they should be priced to better reflect their current potential. Similarly, they started balancing the prices of armor using an algorithmic approach based on information pulled from live game data. Vehicle and armor price balancing feeds into the team’s goal to holistically balance effort vs. reward across the game and provide other teams with guidelines on how to price items in the future.
+Economy also supported other teams on gameplay features, including the vehicle tractor beam, salvage contracts, and the profitability of loot found in vehicle wrecks.
+Additional support was provided for various events, including CitizenCon, the Intergalactic Aerospace Expo (IAE), the F8C hunt, and Day of the Vara.
+## Engine
+The majority of the Engine team’s work last month involved preparing for CitizenCon.
+“All teams were hands on deck to deliver features and support other teams on work related to what we showed at CitizenCon. This is always an interesting time, as it is very stressful but also rewarding when everything comes together due to the focused effort.” Engine Team
+The Core Engine team primarily worked on bug fixes for the live release, including some long-standing memory leaks on the live server.
+The Physics team focused on delivering improvements to the Maelstrom destruction system and cloth and hair tech.
+Lastly, the Entity System Tech team supported the Online team to deliver the Server Meshing demo while continuing to work on editor entity streaming.
+## Features (Arena Commander)
+October saw the Arena Commander Feature team finishing support for Alpha 3.21. They also supported several things shown at CitizenCon and continued to polish various features.
+The Engineering team primarily focused on the development of multi-crew gameplay and spawn locations, adding features such as locking and unlocking vehicles for spawning and seat selection within vehicles.
+Another primary focus was on custom matches. The team connected the remaining service code to the game code and began adding the final hooks into the UI, utilizing the new custom lobby UI created by Design. They also created a new game mode featuring Master Modes and added various quality-of-life improvements and bug fixes for Alpha 3.22, including a rework of the friendly-fire system.
+They also enabled the ‘award service’ in the PU, which was most recently used for the Anvil F8C hunt and 999th Test Squadron badge reward. Finally for engineering, work was completed on the solar-flare hazard, which was featured in the Pyro Playground at CitizenCon.
+Design continued work on multi-crew gameplay and spawn locations alongside Engineering. They also created the custom lobby UI, made various improvements to existing UIs, and completed work on multiple new FPS and atmospheric flight locations.
+Another pass over all of Star Citizen's vehicles was done, which involved hooking up seats and tags with the information needed to enable multi-crew gameplay. For example, they updated scoring to account for multi-crew and better-defined ship classes to include some that weren’t previously featured due to requiring a crew to work as intended.
+A successful go/no-go was also achieved for various game modes and locations coming in Alpha 3.22.
+## Features (Gameplay)
+Last month, the Features team made significant progress on Engineering gameplay, including the UI. They also progressed with structural salvage and are currently in the final phase of their vehicle tractor-beam work.
+## Features (Mission)
+Mission Feature’s work on data heist intensified, with the mission making it past its third gate review and entering the QATR stage; QA are currently testing the mission alongside a dedicated designer who is fixing bugs as they’re found. The mission received its narrative pass too, so all the text is now complete, while various UI screens were brought up to the desired quality.
+“An interesting addition has been new dialogue SFX, which the servers play to give players important feedback of their current cooling states.” Mission Features Team
+Work continued on the Blockade Runner Global Event, with focus given to deciding which commodity is to be transported. Improvements were also made to the scenarios that occur when a player is interdicted during the event and important work on the event backend means it can now be scheduled better.
+Mission Features worked alongside Economy to more accurately balance the cargo manifest seen in salvage, bounty, and assassination missions to ensure they don’t break the economy.
+The steal and recover courier missions saw their first whitebox playthrough with the start-to-finish flow complete. The team are now switching to the polish stage and building variants.
+The ship-trespass feature passed its go/no-go and was integrated for the next release. The team are currently investigating nonviolent means to remove trespassers from ships.
+Mission Features continued their previously unrevealed work supporting Pyro, including new bombing-run and destroy-vehicle missions. These use a variant of the ‘DestroyItems’ module used in the destroy-drugs mission. The team also began setting up and implementing the SQ42 AI trait system shown at CitizenCon.
+The updated Siege of Orison Global Event and New Babbage’s New Player Experience are currently going through the QATR and final-polish stages. Designs for future content also progressed.
+## Features (Vehicle)
+In October, the Vehicle Gameplay team focused on bug fixing and quality-of-life improvements for Alpha 3.21 and CitizenCon.
+They also improved the handling of ground vehicles across different terrains to make them more predictable and tweaked various other ship systems to improve gameplay balance. A tuning pass began for various upcoming ships and vehicles too.
+## Graphics, VFX Programming & Planet Tech
+For the Graphics, Planet Tech, and VFX Programming teams, the majority of October was spent polishing the many features demonstrated at CitizenCon, including the water simulation, global illumination, Maelstrom, fire, and rifle scopes.
+The Vulkan sub-team continued tackling the remaining performance and stability issues, which all need to be addressed before a public beta test can be considered.
+## Interactables
+Last month, the Interactables team worked towards CitizenCon, producing assets included in the Digital Goodies Pack.
+They also supported the new underground facilities, pushing the boundaries to create new and interesting props, and worked towards Pyro, helping to close out areas for dressing in multiple locations.
+## Lighting
+Alongside CitizenCon, the Lighting team worked to close out multiple locations across Pyro.
+## Live Tools
+The Live Tools team worked on new features in support of CitizenCon and the Server Meshing demo. Tasks also began to improve the usability of tools within the Network Operation Center; this is progressing well and new modules are currently being designed for future implementation.
+## Locations (EU)
+Last month, the Locations team progressed with Pyro’s rundown stations, and added improvements to New Babbage.
+The Sandbox team continued to work on Pyro’s settlements and the new underground facilities. Alongside this, the Organics team worked on planets and some smaller features for Pyro.
+## Narrative
+October saw a flurry of activity for the Narrative team as they worked towards finalizing content for CitizenCon. While Narrative didn’t have a presentation at this year’s show, they supported other teams and worked hard to get content polished and ready for the Pyro showcase, which featured numerous new missions from brand-new factions.
+The Narrative Design team spent time polishing AI behaviors in the system to ensure its NPC population has the right look and feel. Additionally, they joined in on internal Pyro playtests, where they helped spot and address last-minute bug fixes. The team also supported the release of Alpha 3.21 with new missions, items, and locations.
+Looking ahead, Narrative dedicated time to future improvements, such as evaluating how to improve the stability of the game’s various mission givers, as well as long-term planning of additional future content with more narrative focus.
+Last month also saw the release of a Whitley’s Guide on the 600i, a Portfolio on the Unification Wars, an updated Galactic Guide for the Pyro system, and a host of new Galactapedia entries.
+## R&D
+In October, time was dedicated to cloud-shaping improvements for use in Alpha 3.21 and beyond, which will allow the team to author more varied cloud content. For example, it is now easier to break up cloud fronts. The improvements also provide more flexibility in blending shape noise at height. As a result, the consistency of short vs. long-distance reads was improved and tiling from orbit is less noticeable. More improvements are planned, particularly with regards to improving details at cloud fringes.
+The first iteration of ground fog was also made available to the content teams, which follows terrain up to a specified height per location and fully integrates into the atmosphere. As a result, it receives volumetric shadows from both clouds and terrain along with dampening direct and indirect light scattered through the atmosphere into the view ray.
+Moreover, support was added to cast volumetric shadows from clouds into the atmosphere. This includes various optimizations to sample and evaluate volumetric cloud shadows. As a byproduct, volumetric cloud shadows now also update lazily to further reduce cost when the camera or sun isn't moving significantly. Cloud shadow quality at low sun angles was also improved by compressing the available space in the shadow map to allow for more details around the camera. Additionally, a few long-standing issues with cloud rendering have been fixed. For example, the ghost lines on clouds that were occasionally visible when looking at them and towards the virtual planet horizon were fixed, and the setup of LOD constants for cloud-shaping-related texture lookups was updated to avoid excessive blurring when rendering clouds at half resolution.
+Lastly, work on ground fog resulted in various optimizations as well as a fix for subsample-sized holes in planet terrain height maps. These height maps are used for various purposes, such as building planet terrain shadows or spawning GPU particles on the ground. The latter was especially subject to those holes as they could cause infrequently erratic spawning of particles.
+Looking forward, work on the new temporal cloud render mode will commence in November.
+## VFX
+Last month, the VFX team completed their work on Pyro in preparation for Pyro transitioning into player hands.
+They also worked on the all-new water simulation and effects alongside the Graphics team and provided VFX support for various other teams' CitizenCon presentations.

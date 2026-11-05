@@ -1,0 +1,69 @@
+## Star Citizen Alpha Patch 4.1
+Alpha Patch 4.1 has been released to Evocati, and is now available to test!  Patch should now show: VERSION 4.1.0-PTU.9602163.
+## Build Info
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+- Audience: Evocati Only (looking to open further waves as quick as possible over the next couple days)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Enabling Orison and Area 18 NPE
+- New Upcoming Event Mission (Keeping all details limited to test in game communication)
+This event will utilize 2 new locations in the PU; Hathor Platform Alignment Facilities and Hathor Orbital Laser Platform.
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback
+- T0 Item Recovery (disabled in this initial PTU release)
+- [Redacted] Location
+- Updated Character Skin/Eye Shaders and Wrinkle Maps
+- Meshing Mission Updates
+- VOLT Weapons
+## Known Issues
+This initial 4.1 build contains extensive transit logging to help track down the hardest to find issues.
+- We have temporarily disabled laser damage from a certain portion of the New Open Event
+- Critical: PU - Transit - Entity carriage is stuck in transit to a gateway, but never arrives which renders the gateway unusable
+- Critical: Mission Refactor - Comm Array Repair - Contract in mobiGlas becomes hidden when another player enters mission location
+- Critical: Mission Refactor - PVP Missions dont work
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Locations - Personal Hangars - Actor - If player ungracefully exits while in hangar, hangar stows and does not unstow upon recovery
+- High: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel
+- High: PU - Pyro - Jump Point - Failing a Jump point will displace the player far away from the gateway station
+- PU - Law & Criminality / Mounts - Destroying an ARGO ATLS gives player a CS3 Homicide Charge
+- MIRAI Guardian - Vehicles - PU - The Guardian will spawn without its landing gears deployed and the player is unable to enter the ship
+## Features & Gameplay
+- Ships and Vehicles
+- Heavy Fighter General Archetype Balance Pass: Joint health, thruster power, and max speeds have been adjusted for Heavy Fighter Archetypes. Most of these speed and thrust adjustments were needed due to thruster weight changes that have gone into 4.1 and should bring them back in line with 4.0.2 so please keep an eye at Heavy Fighters and let us know if some feel different.
+- Landing Gear Rebalance for many ships to help balance their weight distributions
+- Argo ATLS: Can now be destroyed. Updated with health and damage states
+## Bug Fixes
+- Potential Fix: PU - Transit / Locations - Data Carriage may arrive at a gateway and make it unusable
+- Potential Fix: PU - Locations / Law & Criminality - Players are teleported to nearby Safe Zone when entering unauthorized vehicles at Outposts and near R&R Stations (STARC-159331)
+- Potential Fix: PU - ASOP / Ship / Cargo - Upon the Ship auto storing through leaving game or leaving hangar; on initial retrieval the Cargo disappears and Cargo Grid is locked from being used (STARC-151964)
+- Potential Fix: PU - Locations / Jump Points - Using ship bed logout at a Jump Point then joining a different shard will disable your ship from being able to activate and travel through the Jump Point (STARC-145828)
+- Potential Fix: MISC Starlancer - PU - Vehicles / Graphics - When using F4 view, internal ladder can be seen poking outside of ship from specific angle. (STARC-157743)
+- Potential Fix: AEGS Vanguard - PU - Vehicles - Storage wall has a Visarea in Warden and Harbringer (STARC-140977)
+- Potential Fix: Multivehicle - PU/AC - Vehicles / MFD Interactions - Interaction in cockpit around MFD can cause large client performance stutters (STARC-113415)
+- Potential Fix: PU - Stanton - Rest Stops (R&R) - Locations / UI - Medical Clinics - Regeneration kiosks don't specify which "Kel-To RX Clinic" and the different Station clinics all have the same label on Regen terminals (STARC-153499)
+- Potential Fix: Mirai Guardian ALL Variants - PU - Vehicles / Interactions - External Weapon storage has no point of interaction. (STARC-158028)
+- Potential Fix: CDS ADP-mk4 (Modified) Xenothreat Helmet - PU - Armor - UI - The Xenothreat ADP Helmet has no Dynamic Crosshairs (STARC-158500)
+- Potential Fix: Mirai Pulse - Vehicles / Vehicle Components - The vehicles weapon does not fire (STARC-159008)
+- Potential Fix: Heartseeker paint doesn't apply to executive F7A MKII (STARC-157274)
+- Potential Fix: Mustang Beta - PU - Vehicle - Interactions - The interactions for Bed Logout is missing from the bed (STARC-140216)
+- Potential Fix: Mustang Beta Uses Old UI Elements (STARC-140213)
+- Potential Fix: Origin 325a is missing its Storage door (STARC-146781)
+- Potential Fix: PU - Kopions - Mission Content / mobiGlas / Creatures - Kopion related missions are not displaying in Contracts
+- Potential Fix: Stanton - Orison / New Babbage - NPE - The Player can unable to spawn the Pisces or access their Hangar when using Spaceport ASOPs
+- Potential Fix: Multi-System - PU - Stanton / Pyro - Transit / Locations - Interacting with an elevator panel to call an elevator will not update the interface to state “Elevator Called”, and will remain on “Call Elevator” elevator does not come
+- Potential Fix: MISC Starlancer MAX - PU - Vehicles - Starlancer QD component bay door contains 2nd door that wont open.
+- Potential Fix: MISC Starlancer MAX - PU - Vehicles - Art / Graphics / Visarea - Interior of the Lower Deck has graphical problems when traversing the ship
+- Potential Fix: PU - Stanton - Missions - NPE / Tutorial - HUD objectives can be missing during Tutorial Missions, not flow blocking
+- Potential Fix: Stanton - NPE - mobiGlas - There are blank objectives present in the mobiGlas Contracts tab for Part 2 and 3 of the NPE mission
+- Potential Fix: AC - The Good Doctor - Free Flight - Art / Locations - There is foliage clipping through the floor near the back entrance of the facility
+- Potential Fix: PU - UI / MFD - Vehicle velocity number disappears when pointing at a QT marker
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 6 Server Crashes

@@ -1,0 +1,58 @@
+Squadron 42 Monthly Report
+January 2024
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 02:07:2024
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 Recruits.
+Welcome to January’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including Archon station, hygiene behaviors, and capital ships.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Content)
+Throughout January, AI Content progressed with Shubin station content for chapter 5, with a focus on the main hangar, security, tram stations A and B, social hub, and main bridge. This included working on the utility, deck, bridge, and engineering crews, and security, tram passengers, hub patrons, and vendors.
+AI Content also continued to focus on improving a variety of personal locations and lockers. Specifically, NPCs approaching lockers, changing out of their base outfits, entering cubicles to shower, and then returning to their lockers to get dressed again.
+## AI (Features)
+Last month, AI Features continued to polish the technology used to fire arced rocket pods. This system solves equations that have multiple variables (angle of throw and speed) and a range of solutions that need to be evaluated. On top of the arcing solution, collision checks must be performed, which repurposes existing technology created for grenades and other arced-fire weapons.
+Finer polish of behaviors in levels is currently underway to ensure the details of animations and systemic behaviors form a cohesive whole.
+## AI (Tech)
+AI Tech picked up where they left off last year, cleaning up the ability for multiple NPCs to use ladders simultaneously when moving in the same direction.
+The transit system received upgrades to make the ‘UseTransit’ logic smoother and more robust when handling fails, retries, and fallbacks.
+For NPCs using elevators, the flow was improved to create a more efficient sequence. For example, characters won’t go back and forward anymore and will instead board the elevator directly, eliminating unnecessary waiting or interim positions.
+AI Tech are currently refining a new loading procedure for Subsumption data. This will allow stricter requirements on the data so they can immediately identify issues. This functionality will be enabled as an additional step when submitting for validation.
+For spaceships, the team focused on numerous bug fixes and improvements specifically for combat scenarios and AI traits, the latter of which helps to influence AI logic. For example, by allowing NPCs to prefer certain behaviors over others. This allows the designers to balance gameplay based upon the enemy faction players are fighting. Existing traits include Strafer Override, which forces the pilot to always choose the strafer tactic, and Speedfreak, which always chooses to boost and has slightly higher speeds.
+## Animation
+Last month, the Animation team further refined the feel of the AI in a number of chapters to better tell the story. They also worked on malfunctions, prone, EVA, and several boss fights, and further refined combat animations for different enemy types.
+They’re currently implementing several new story beats to better align how levels feel. This is supported by the Mo-cap team via focused shoots that quickly add improvements in to the game.
+On the facial front, the team is hard at work implementing additional lines for Old Man to add more value to the player’s relationship with him.
+## Art (Environment)
+January saw Environment Art’s strike teams progress with chapters one, four, and five.
+“We’ve pushed a lot of the Core Development teams into delivering these chapters alongside the Design teams. It’s been rewarding to see the progress we’ve been making together on these locations.” Environment Art Team
+Locations-wise, passes were made on the interior hangar, security, social, and bridge sections of Archon station, while the whitebox metric art for store interiors was converted to final.
+The Javelin received a complete pass this month, including intact and damaged interiors, a full lighting pass, and dynamic dressing that reacts to the damaged version of the ship. Environment Art also continued to update the Javelin’s exterior to a new, higher standard for capital ship exteriors. Once completed, they’ll move on to the damaged version.
+Locations in chapter four were also worked up to a high standard, including the interior of some asteroid truckstops and an abandoned ship.
+Finally for Environment Art, the Odin system was updated with a new sun nebula that can be seen during downtime.
+## Core Gameplay
+Polish on the Starmap’s features continued in January, including new box-outs to give information about the selected location and what services it provides. It also gives the option to set quantum routing, drawing the route between the current location and destination (similar to the current Starmap).
+The character customizer gained further improvements allowing the player to save and load in their character, which also enables the backing up and sharing of customized character appearances. A randomization function was also worked on to give aesthetically pleasing results. Core Gameplay worked alongside the Backend team to help with data serialization and compress the data size as much as possible to make sending character data to other clients as efficient as possible.
+## Gameplay Story
+The Gameplay Story team began the year improving scenes across different chapters. For example, several scenes were updated with new mo-cap at the start or end (or both) to pose-match to systemic animations. This ensures they dovetail well with the rest of the game and makes them more robust.
+“One tricky scene in chapter 14 was completely overhauled with new mo-cap and is now considered by Design to be bulletproof!” Gameplay Storm Team
+Alongside this, the team communicated with stakeholders to establish a proper standard for the grip setup for helmets. They’re currently batch updating helmet animations to use the new setup, which will unblock a lot of long-standing issues.
+## Level Design
+Social Narrative started the year where they left off, striving to close out Archon station’s social area. This walk-and-talk section presents particular challenges, including the potential for players to leave their guide and explore the station.
+The devs also closed out outstanding issues on the social section of chapter one and continued to focus on the Idris interstitials and a key scene in chapter eight. Work was also done on conversations between the Idris crew, who reference the player and current in-game situation.
+## Narrative
+The Narrative team began the new year further refining the narrative elements of SQ42. For example, the team identified a few key moments where additional loudspeaker announcements would help drive a sense of urgency. First, they added placeholder recordings and, once the team is satisfied with how the moments feel in-game, they'll be recorded with professional voice actors. The team also made passes on various UI elements, providing new text as needed alongside revising text to provide further clarity or impact.
+Work also continued on the game’s collectibles. The teams continue to coordinate with the artists to create memorable and eye-catching things to discover.
+Additionally, the team spent time diving deeper into how players will learn information on the game’s lore through Galactapedia entries as they naturally progress through the story.
+## UI
+In January, the UI team continued to polish the vehicle UI, including getting some of the holographic elements to appear on physical screens for the lower-tech ships. They also improved the display of quantum-travel information and polished elements of the turret UI.
+They also added various animated screens to make the scenes in-game more interesting, including enemy tech, screens for civilian areas, and help show the story in a key section near the start of the game.
+Regarding FPS UI, a pass was started to bring the lens up to standard now that the visor is in a good state.
+“We’ve been working on some updated concepts to give it a fresher look, whilst also including some of the improvements we created for the visor.” UI Team
+## VFX
+Last month, the VFX team continued to support the Art, Design, and Cinematics teams with their VFX requirements. This included updating the dynamic fire effects to work in additional locations to accommodate new gameplay scenarios.
+They also created a new rota system to make sure the number of VFX-related data errors was reduced to zero; each week, an artist is picked to work directly with the embedded VFX QA team member to ensure the existing bug list is kept at zero week-to-week.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

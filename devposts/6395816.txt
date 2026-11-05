@@ -1,0 +1,42 @@
+## Bug Fixes
+- Fixed an issued causing Hab elevators to frequently fail to spawn
+- Status effects for medical pens should no longer wear off after 15 seconds (Increased to 15 minutes)
+- Fixed an issue causing players to be considered Trespassing immediately after completing a UGF mission, causing turrets to destroy any ships near the facility
+- Fixed an issue causing players to not be able to send invites or join in on contacts from the main menu until entering a party within the Persistent Universe
+- Shopkeepers throughout the PU can should no longer face the wrong way or be far away from their desk usables
+- AI Guard arms should no longer clip into its body during the Idle animation in hangers only
+- Fixed an issue causing spacesuit EVA thrusters to sometimes remain on while while walking around outside of EVA
+- Eddie Parr and other Bartender AI should no longer have animation issues while idle and while preparing a player's drink
+- The elevator in the Stratus building in Orison should no longer abruptly turn 180 degrees when it moves
+- Mission objectives should now correctly display while in remote turrets
+- Fixed an issue sometimes causing the assigned hangar AR Marker to not appear
+- Inventory container items such as backpacks and legs should no longer incorrectly show as 0% filled when they contain items
+- Vehicle debris that detach from the ship skeleton on hard death should no longer create floating, immovable debris such as ship ladders and landing gear, floating in mid-air
+- The weapons locker UI panel in the Origin 400i should no longer be labeled as an unlocalized variable
+- The Super Hornet should no longer lose yaw and partial pitch control if the nose turret is removed in VMA
+- Enabling auto-gimbal should no longer cause fixed wing gun convergence to be set too close
+- Fixed the MISC Reliant not being able to transform into its Vertical flight mode
+- Cargo UI markers from inside your ship should no longer appear on and clutter your HUD while flying
+- Fixed an issue causing some ship elevator animations to desync after reaching the floor
+- Fixed an issue that was causing players to get a "Failed to find Match" error message when attempting to launch multiple Arena Commander Game Modes
+- The 600i cockpit light should no longer be overly bright
+- F8C main thruster sounds should now work correctly
+- The Yoke should now animate correctly when the player is piloting the Crusader Spirit variants
+- The Drake Caterpillar Command Access room ladder should now function correctly
+- Loot containers should no longer be deleted by the entity density manager which caused them to despawn in front of players
+- Fixed an issue causing the Mirai Fury LX to not appear in Arena Commander
+- Tractor Beam/Salvage Beam VFXs should now correctly sync across clients
+- The jump seats in the ARGO MPUV Transport should now have full interaction
+- Fixed the HoverQuad vehicle spawning slightly stuck in the ground
+- Anvil Ballista headlight entity should no longer be floating in front of the light fixture and emitting light when disabled
+- On-grid Containers should no longer be barred from being sold and off-grid Containers should no longer be downsized in volume or blocked from being sold
+- Fixed Visarea issues with Rest Stop Hub Walls
+- Fixed the Lorville Room System not protecting players from extreme exterior weather conditions
+- The "Illegal Surveillance Detected" Mercenary mission should no longer send players to Security Post Kareah as the mission location causing SPK to be hostile to them and fire on their ship
+- Shopkeepers throughout the PU should no longer sometimes be seen facing the wrong way / away from their desks
+- Players should now be able to receive or accept other service beacons after their service beacon has been abandoned / canceled / declined
+## Technical
+- Fixed 9 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed a Server Deadlock
+- Ship components should now correctly save and be stored in Long Term Persistence

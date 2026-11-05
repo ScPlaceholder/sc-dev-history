@@ -1,0 +1,65 @@
+## Star Citizen Alpha Patch 3.24.3
+Alpha Patch 3.24.3 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.3-PTU.9419143.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- IAE Halls
+- Save Stanton Global Event
+- New Vehicle: Polaris
+- New Vehicle: Starlancer Max
+- New Vehicle: Crusader Intrepid
+- New Vehicle: Anvil Terrapin Medic
+- New Vehicle: F7C-R and F7C-S
+- Updated Standard & Polish: Anvil Terrapin
+## Known Issues
+- MISC Starlancer Max - PU - Vehicles - Starlancer Max landing gear won't deploy but ship speed is limited as if they were
+- PU - Social - AR markers - Party markers are not visible to other party members
+- RSI Polaris - PU/AC - Vehicles / Turret UI - Polaris Turret pips are missing on locked targets
+- The Argo ATLS currently cannot be destroyed (Not intended end goal and player inside is still vulnerable)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - Multivehicle - MFD - MFDs can be interacted with while in mobiGlas
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+## Features & Gameplay
+Locations
+- Reduced Audio Mix Volume of Planetary Wind
+Gameplay
+- Save Stanton Phase 4 now set to complete on Idris Pilot Death instead of full fleet
+Ships and Vehicles
+- Polaris Polish Pass
+Added extra collision to hangar interior floor as part of the exterior, to counter large ships going through the floor from outside the physics grid. Further Torpedo Loading Optimizations.
+- Starlancer MAX Polish
+Pilot MFD + Hud rework. Lighting and Audio Ambience Polish Pass. Added working mirrors to Starlancer MAX HAB Bathrooms
+- Further LOD and Performance Polish for Polaris, Terapin Medic, Starlancer MAX, and Intrepid
+- Further MISC Prospector Dashboard Art Feedback/Polish
+- Further ANVIL Terrapin Medic Thrusters fx, Audio, and Deathmask Polish
+## Bug Fixes
+- Fixed - MISC Starlancer - PU - Vehicles / Bed logout - no option for bed logout (STARC-138614)
+- Fixed - UI Tech - Vehicle RTT - Sometimes a ship will fly off the Vehicle RTT on both casts and MFDs. (STARC-129864)
+- Fixed - Origin 400i - PU - Vehicles / Art / GFX - Visarea - There are visarea issues with the component bays and cargo bay door in the 400i (STARC-105219)
+- Fixed - PU - Stanton - IAE2024 - New Babbage - Locations / Vehicle - Day 3 MISC - The ramps of the MISC Starfarer and MISC Starfarer Gemini do not extend blocking access to the vehicle (STARC-69579)
+- Fixed - Crusader Hercules Starlifter - ALL VARIANTS - Vehicle / Landing Gear/ Ramp - Hercules spawn/land off balance on hangar floor (STARC-130372)
+- Fixed - Multivehicle Polaris/Retaliator/Eclipse - PU - Vehicles / Weapons - Unable to remove missiles or torpedoes from animating racks (STARC-139461)
+- Fixed - RSI Polaris - Vehicles - PU - Player falls out of Polaris when falling inside reactor pool (STARC-138742)
+- Fixed - RSI Ursa Medivac - PU - Stanton - Vehicles / Vehicle Feature - Medical Bed - The med bed exit animation is not working properly and has player clipping into the bed upon exit (STARC-135797)
+- Fixed - PU - VFX / Vehicles - Bullet impact decals appearing above surface of ship
+- Fixed - RSI Polaris - PU - Vehicles / Audio - Player hears beep sounds while in or around the Polaris
+- Fixed - Anvil Terrapin ALL (Variants) - PU - Vehicles / GFX - Objects can be seen culling early from the pilot seat in certain areas of the cockpit glass when not intended
+- Fixed - Anvil Terrapin Series - Vehicles / Multivariant - Tech Art / Damage - PU - Debris element between the Terrapins main thrusters and the body of the ship can be broken off extremely easily
+- Fixed - PU - Save Stanton - Phase 1 - Mission A - AI / Missions - AI will stop shooting the attacked hauler mid-way through the phase
+- Fixed - PU - Save Stanton - Phase 4 - Missions - The Slicer Idris' PDC are tagged as UEE Advocacy and are causing attacking players to be flagged as hostile
+- Fixed - PU - Stanton - AEGS Retaliator - Ships / Vehicles / Ship Components / Game Code - The AEGS Retaliator cannot enter Nav Mode
+- Fixed - Tumbril Storm - Vehicles / Art - Gun turret has misaligned collision
+## Technical
+- Fixed 3 Client  Crashes
+- Fixed 4 Server Crashes

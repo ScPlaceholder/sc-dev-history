@@ -1,0 +1,44 @@
+## Star Citizen Patch 3.21.1
+Alpha Patch 3.21.1 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.21.1-PTU.8892745.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- System - Security - Ship Trespass
+- Mission - Defend - Data Heist
+- New Player Experience - New Babbage
+- Vehicle Headlight Refactor
+- Tractor Beam - T2 - Vehicle Tractor Beam
+- Crusader C1 Spirit
+- ARGO SRV
+- FPS AI Behavior Integration
+- Siege of Orison Global Event Re-Activation
+Known Issues
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- PU - Stanton - AI / Mission Content - UGF AI falling through the stairs / floor
+- PU - Lorville - Locations - Transit - HAB Elevators - There is a chance that the HAB elevators do not arrive when called
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player  loses loadout and equipped items after dying in the armistice zone
+- SRV Tow UI shows invalid or no target despite meeting the criteria for a valid target prior to attempting to tow a ship in QT
+- PU - Rental Kiosk / ASOP Kiosk - After Renting a ship and letting the rent timer expire. A couple of ships or rows will not be visible at the ASOP
+- PU - Stanton - Data Heist - Mission Content / Game Code - If players fail the Very Easy mission they can't reaccept it
+- Multivehicle - ASOP Retrieval - Various vehicles spawn with wings/engines/landing gear in their "in-flight" state instead of their "landed" state when retrieved from ASOP
+- Multivehicle - PU - Vehicles / Usables - Exiting bench seats ignores collision
+- AC / SM - Menus - Ship / Equipment Rental - Renting a ship / Equipment for 3 days display incorrect rental times
+- AC - Single Weapon Elimination - Weapon / FPS - Player who has takedown performed on them has their gun despawned
+- PU - Stanton - Halo - Desync / EVA / Vehicle / Ships - Players can desync when transitioning to or from EVA from one ship to another ship
+- PU - Missions / Reputation - Data Heist - The hard missions are not appearing despite meeting the requirements
+- PU - Stanton - Location - Seraphim - ASOP / Fleet Manager - The ASOP terminal loading screen will not end
+- PU - Shopping Kiosk - "Invalid Sell Price" error occurs while selling specific items
+- PU - Stanton - New Babbage - NPE - Locations/Design - The player will be stuck in their hab's bed if they restart the tutorial by quitting to main menu whilst dead, blocking flow
+## Bug Fixes
+- Fixed an issue with many VFX particle effects to be missing from Arena Commander
+- Fixed - PU - Stanton - Data Heist - Mission Content / Game Code - If players fail the Very Easy mission they can't reaccept it
+- Fixed - AC - Front End - Failed to find Match message prompted when attempting to launch multiple game modes
+- Fixed - PU - Shopping / Selling - Consumables / Items - Multiple items in shops seem to have items they sell in their store floating within the store
+## Technical
+- Fixed 2 Client Crashes

@@ -1,0 +1,1 @@
+OK that is interesting. Most likely explanation is a difference in the shader compilation leading to a GPU specific bug (Vulkan uses a different compile on our side, but also inside the driver, and the driver one varies between GPUs). I'll ask for this to be investigated.

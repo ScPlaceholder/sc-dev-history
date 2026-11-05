@@ -1,0 +1,3 @@
+Hi. What you are describing is not the norm and not experienced by any of our QA, or AFAIK reported during PTU, so we need to diagnose what’s going on.
+Does your VRAM bar in the graphics options show you are using appropriate settings for your GPU? Can you confirm the performance issue is on DX11 (as Vulkan is not working, likely due to the known issue with driver overrides to frame smoothing). Can you use the console to type r_displayinfo 4 and take a screenshot and post it here so we can diagnose what is happening?
+Thanks.

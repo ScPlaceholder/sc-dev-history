@@ -1,0 +1,94 @@
+## Star Citizen Patch 3.18.0v
+Alpha Patch 3.18.0v has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.0-PTU.8328236.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- Character Creation doesn't occur automatically on first PU login
+- Selling single item out of a stack will zero remaining stack weight in personal inventory
+- Floating kiosk screen with missing body at New Deal in Lorville
+- MULTIVEHICLE - Ships - Ship Features - Flight - Quantum Travel - When entering and exiting any seat during Quantum Travel, there is a high chance you will be ejected into space
+- Players who recopy their accounts can get stuck in entitlement processing followed by Error 19004
+- Missions - Personal Transport Beacon - Transport beacon mission markers to a player ship will display the wrong location until nearby object containers are loaded
+- Missions - Personal Delivery Missions - Property Reclamation - Mission not updating after grabbing package
+- Server Crash Ship Recovery - After a server crash, ships left on landing pads will be in an "Unknown" state, requiring a claim
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Law & Criminality - Commodities / Cargo - Stolen Cargo does not always behave as such and can sometimes be sold as legal cargo
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- MULTIVEHICLE - Medical Screens / Actor Feature - When the player uses the "Auto Medicate" feature to heal a wound that isn't treatable they will be given 99.99% BDL
+- Ships / Vehicles - Impounded Vehicles - ASOP - Impounded ships do not finish Transferring to Storage and are no longer Retrievable
+- MULTIVEHICLE - Vehicles - Gameplay - Explosive ordinance kills pilot through shields and hull
+- Items appear not to be removed from the player's inventory when they sell them or hand them in to a contraband kiosk
+- Location - Daymar / Whistler Crypt / Physic - Walking on hills near Whistler's Crypt can potentially kill or wound the player
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Multilocation - Elevators - Elevator doors open mid-transit
+- Multivehicle - Physicalized Cargo - Multiple ships either partially or entirely fail to physicalize cargo purchased to their cargo grids
+- Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction
+- Multivehicle - Vehicle Feature - Hit box desync - Vehicles do not take damage when attacked at certain parts of its hull
+- External Inventory - Loot Boxes will Eventually Load Indefinitely
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- VARIANTS ONLY - Weapon / Weapon Feature - Multitool Variants display "HEALING" info regardless of attachments
+## Feature Updates
+Core Tech
+- Server Performance Improvements
+- Further Gen12 Optimizations
+## Bug Fixes
+- Fixed - 30009 upon attempting to rejoin PU
+- Fixed - UI - Shopping - Shopping Kiosks - Can't move after closing shop kiosk with "x" UI button
+- Fixed - Klescher Rehabilitation Facility - Actor - Force respawning or dying inside prison will respawn the character without any loadout
+- Fixed - Actor Feature - Personal Inventory / UI - Capacity bars on inventory can fail to show correct percentage, and in some instances show negative
+- Fixed - Actor Feature - Inventory - Equipped armor remains attached to undersuit in local inventory when player dies in armistice zone
+- Fixed - UI / Network - Menus - When selecting "exit to menu", game stalls on black screen for a long time before the loading screen appears
+- Fixed - Mission Content / AI - UGF Raid - Bunker / UGF mission NPC kills are not always recorded
+- Fixed - Ships - Ship Features - Graphics / Art - Multiple vehicles are displaying glowing interior screens instead of normal decals
+- Fixed - ORIGIN 890 Jump - Vehicles / Mission Content - The 890J used in the URGENT: Boarding Action mission will spawn with no elevator platforms or elevator doors
+- Fixed - Multivehicle - Hull Scraping / VMA - The port side Salvage Head Sub-Item Slots do not update correctly
+- Fixed - Multivehicle US - Vehicle - Toggling G-Safe off and on using PIT wheel hails ATC and assigns landing pad
+- Fixed - Vehicles / Collision / Cargo - Moving cargo in Drake Caterpillar causes collision issues
+- Fixed - Star Marine - Players with a Crimestat in the PU will have their loadout swap to the prison suit after dying in Star Marine
+- Fixed - AC - Broken Moon - Player is unable respawn when dying in blue terraformer light.
+- Fixed - Multiweapon - Inventory / Weapons - The narrative description of multiple weapon magazine sizes differ from their actual capacity
+- Fixed - Inventory / Shopping - Players are able to purchase items exceeding intended inventory capacity
+- Fixed - Stanton - Lorville - When loading into Lorville, the entity count can be almost double what it should be peaking at 150000
+- Fixed - Landing Zones / VMs - After repairing a ship, button shows 1 aUEC for repair
+- Fixed - MULTIVEHICLE - Ships - PES / Spawning - Player-docked snubs are ejected when Constellation is retrieved from ASOP
+- Fixed - PU - Law System - Armistice Zones - Gameplay/Locations - Armistice zones that fully prevent weapon usage are rendering player characters and ships invulnerable
+- Fixed - There is a broken vault near the start of the prision escape route that trapped players
+- Fixed - Graphics / UI - Terminals / Kiosks - Various screens, terminals and kiosks fail to load their UI and only display a black screen
+- Fixed - Locations - Klescher Rehabilitation Facility - Actor - Traversal / Mantling - Players cannot mantle a required ledge to return to the escape route after falling
+- Fixed - FPS Mining - Dying while carrying a mineral can cause a new mineable node to appear
+- Fixed - Exploit - Law / Klescher - The player can select an unmined mineral deposit while in Inventory view and select-drag drop into inventory to be sold to the kiosk
+- Fixed - RSI Constellation Andromeda - Stanton/AC - Vehicles/Art - Ship has reversed text decals
+- Fixed - AI will inconsistently have their flashlights on/off in lit or dark areas
+- Fixed - Aegis Reclaimer - Vehicles - Reclaimer cargo elevator ramps folding up too soon
+- Fixed - FPS Weapons - Art / Graphics - Greycat Multitool - Salvage Canisters that have been emptied after collecting salvage will show as ReplaceMe Balls
+- Fixed - Sneaky Replaceme Ball in Daymar wreck site cave
+- Fixed - Locations / Klescher Rehabilitation Facility - Personal Inventory / Mining Deposit Kiosk - Mining Deposit Kiosks in Klescher don't detect harvestables in the player's inventory
+- Fixed - Multivehicle - Vehicle Balance - Racers have Atmospheric Speed discrepancy between 3.17.4 and 3.18.0
+- Fixed - Scraper Beam modules have multitool attachment icon
+- Fixed - Crusader Security missing shader on armor
+## Technical
+- Fixed 9 Client Crashes
+- Fixed 3 Server Crashes

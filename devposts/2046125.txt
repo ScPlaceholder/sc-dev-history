@@ -1,0 +1,45 @@
+## Star Citizen Patch 3.5.0n
+Alpha Patch 3.5.0n has been released to PTU, and is now available to test!  Patch should now show: PTU-1365647.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- IFCS: Heat Rework, Atmospheric flight, Arena Commander
+- Balance: Assisted gimbals, manual gimbals, auto-convergence, cannons vs repeaters vs scatterguns, ship roles
+- Locations: ArcCorp, Area18, Lyria, Wala
+- Star Marine: All game modes
+- Female Character
+- DNA face customization  system
+- 300i
+Major Known Issues:
+- Some ships are unable to connect when landing, bouncing back into hover. W/A: Power off quickly after touchdown.
+- Arena Commander is not rewarding REC.
+- Players are frequently killed instantly in their cockpit during dogfights.
+- Dropping a mission box instantly fails the mission.
+- NPCs are not moving at Lorville and Levski.
+## Feature Updates
+Universe
+- Lowered restricted area around tower at Area18.
+- Audio pass on rooftop ambience on ArcCorp.
+Ships and Vehicles
+- Made ESP ramp-in curve softer to prevent being kicked off.
+## Bug Fixes
+- Wallace Klim should no longer be standing too far behind his desk.
+- Pistols should longer be out of position when the female character is prone.
+- The no-fly zone autopilot should no longer occasionally fly you into the ground.
+- Ship headlights should no longer be on when the ship is made flight ready.
+- Pacheco should now more consistently notice the player.
+- Players should no longer be able to abandon the Pacheco mission and end up breaking the competitive destroy stash mission.
+- Area18 should no longer have lights flickering as the player walks around.
+- Fixed an issue with some HUD elements being misaligned with aspect ratios different than 16:9.
+- Cargo boxes should longer fall through the 300i's cargo lift.
+- Fixed orbital spline jumps occasionally ramming the player into the planet.
+- Fixed an issue where ship pass by sounds could be heard from the player's own ship.
+- Further fixes for AI ship jitter and/or stationary issues.
+- Players should be able to get their ship back whole if they file a claim after ejected out of it.
+- Corrected pitch ladder to display level flight horizon rather than visual ground horizon.
+- Ship thruster nozzle animations should once again be playing correctly.
+Technical
+- Fixed 2 server crashes.
+- Fixed 4 client crashes.

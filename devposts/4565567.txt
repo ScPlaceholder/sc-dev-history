@@ -1,0 +1,43 @@
+## Star Citizen Patch 3.15.1f
+Alpha Patch 3.15.1f has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.1-PTU.7878626.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Current Audience: All Waves
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Easy Anti-Cheat
+This build will have EAC disabled while on the PTU. You may want to delete all the game files but keep the data.p4k and then update/verify once the PTU is updated.
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Character Customization not saving changes to the PU (Fixed in a later buiild)
+- Bounty hunter mission updates slowly on a slow server
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu. Players may need to exit the game and reload after a server crash to fix this error.
+- Players cannot repair, refuel, and rearm at outposts
+- MFD screens are often blocked by cockpit interaction prompts
+- Items not stored in long term persistence such as mined gems are currently not stackable (This is something that will be coming in a future update)
+- After trying on clothing in a store, all equipped items are permanently deleted from the inventory (further logging has been added to this new build to help track down the issue)
+- Swapping weapons has a chance to drop or remove weapons
+- When in combat, NPCs can get stuck in cover when trying to exit
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round in Arena Commander
+- When undocking, ships will occasionally become caught on the docking arm instead of detaching smoothly
+## Feature Updates
+Locations
+- Further polish pass for interior VFX for volumetric clouds on microTech
+Ships and Vehicles
+- Redeemer Polish Pass
+Updated AEGS Redeemer exterior door panels to be using the AEGS UI. Updated AEGS Redeemer pilot seat to be facing towards pilot by default.
+## Bug Fixes
+- Fixed an issue causing the character customization to not work
+Note:  This is a temporary workaround that only allow customization on the 1st entrance into the PU. Subsequent changes will not update character appearance until a character reset.
+- Fixed an issue that allowed players to request docking with a Redeemer
+- Male Characters should no longer become Stuck in the MISC Prospectors Pilot Seat
+- Fixed an issue causing certain exterior lights of the Redeemer to not function
+- Fixed an issue causing some NPCs to get stuck while walking around the Grim HEX hospital
+## Technical
+- Fixed 1 Client Crashes

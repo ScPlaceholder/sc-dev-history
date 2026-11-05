@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.18.2 EPTU-8414091
+Alpha Patch 3.18.2 has been released to the EPTU, and is now available to test! Patch should now show: VERSION 3.18.2-EPTU.8414091.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Database Reset: Yes
+Long Term Persistence: Disabled
+Pledge Copy: Enabled
+Arena Commander: Disabled
+Starting aUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Stability and Bugfixes
+- Xenothreat Playtest (Current plans Tonight Through Sunday Night)
+- Jumptown 2.1 Playtest (Current plans for Sunday through Monday)
+Known Issues
+- ASOP Terminals are unusable and fade to black when accessed
+- The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Elevators and Trams are "Jittery" during transit of Player Character
+- When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Cargo may be invisible in multiple ships after being purchased
+- Unable to view ships inventory through NikNax
+- When attempting to start a refinery job, players receive the following error ; Something went wrong (Error code: 20)
+- Security Contractor Evaluation is not re-offered upon failure
+- Combat Service Beacon Progress / Rating inconsistent on missions
+- PTV wheels at the Orison BTR area can clip into geometry and become detached from vehicle
+- The snub fighter attached to Constellations lacks interaction prompts to enter it, making it unusable
+- Some ship wreckage erroneously give "No Material" text and do not let you salvage
+- Markers Will Randomly Disappear After Quantum Travel With No Route Set
+- The NPC Coffee Vendor is missing from the various 'Coffee To Go' stalls located throughout Stanton
+## Bug Fixes
+- Fixed - Planet Tech - Locations / Harvestables - Harvestable Deposits may be invisible to players, cause collisions or become unavailable for scanning, mining or salvage gameplay
+- Fixed - Mercenary Missions - Security Work Asses./Protect Site - Remaining Hostile NPCs Not Spawning In
+- Fixed - EXPLOIT - MULTIVEHICLE - Stanton - Economy - Commodities - Players can back out of commodity sales to keep the profit without removing sold cargo
+- Fixed multiple areas of the prison escape route where players could not vault out of
+- Fixed - EXPLOIT - Stanton - Vehicle Feature - If a vehicle has a repaired hull section, that section no longer takes damage and blocks damage to areas behind it
+- Fixed - Ships are sometimes being claimed at another location than the terminal it's being claimed on
+- Fixed - AI victim names not displaying in "Crime Committed Against" name field
+- Fixed - Stanton - Entitlements - 2 Extra Odyssey II Alpha Undersuits in inventory
+- Fixed - EXPLOIT - Stanton - Shopping / Commodities - When purchasing less than 1SCU of cargo into a ship, 1SCU is delivered and price will continuously lower
+- Fixed - EXPLOIT - SHIPPING ONLY - Stanton - Network - Desynchronization / UI - Party members who die in ship combat can become undetectable to other each other and dev tools on foot or in vehicles
+- Fixed - Missions / Gameplay / Vehicles / Ships - Exploit - QT Sensitive crates do not explode when placed inside a ship or vehicle that is within another ship.
+- Fixed - Movement of the players head is not smooth with TrackIR
+- Fixed - GFX - There are frequent pockets of extremely low client FPS performance in LZs and ships
+- Fixed - Hurston / Microtech - Rivers - Planet Tech / Graphics / Locations - Trees spawn inside rivers
+- Fixed - Locations / Terminals - Lorville - New Deal and Vantage Rental Kiosks Are Missing
+- Fixed - EXPLOIT - MULTIVEHICLE - Stanton - Economy - Commodities - Players can back out of commodity sales to keep the profit without removing sold cargo
+- Fixed - Crime/Law - Missions - "Fugitive Recovery" results in crimestat for bounty hunter. Escapee can press charges on Bounty Hunter upon being downed or death.
+- Fixed - Missions - Eliminate All / Caterpillar Crashsites - Additional FPS AI spawning after planet is streamed out and in
+- Fixed - Ships - ASOP Terminal - Spawning ships causes the requested ship to spawn outside of the hangars
+- Fixed - Aegis Reclaimer - All Variants - Stanton - Reclaimer main on-elevator control panels do not respond to input
+- Fixed - Salvage / Vehicle Hull Scraping - Salvage lasers sometimes visually scrape hull but will not provide any RMC
+- Fixed - Salvage - Vulture - Entering or exiting the seat in the Vulture can cause Salvage beams to become desynced from their displayed settings
+- Fixed - The Anteres QED has low health and is easily knocked out once shields are down
+## Technical
+- Fixed 10 Client Crashes
+- Fixed 10 Server Crashes

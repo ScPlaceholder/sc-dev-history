@@ -1,0 +1,56 @@
+## Star Citizen Alpha Patch 4.8.1 LIVE
+Alpha Patch 4.8.1 has now been released onto the LIVE Environment with a new hotfix! Launcher should now show: VERSION 4.8.1-LIVE.11952564.
+Important Build Info
+- Long Term Persistence: Enabled
+- Starting aUEC: 20,000
+This Spectrum post is an abridged version of the notes. For the full in-depth details, please visit the main notes at the link below!
+## Star Citizen Alpha 4.8 LIVE Release Notes
+## Feature Updates
+Player Trade Notifications Refactor with Economy Authorization Service
+Replacing the player aUEC trade flow with an authorization-ticket model that will require both parties to consent to the trade before it completes. The receiving player will receive a notification alert when aUEC is sent, prompting them to accept or deny. The sender will have a pending message. If not accepted in time by the receiver, the transaction will cancel. This system also introduces trade rate limits and amount caps.
+For further information on aUEC trades, head on over to the community post about this topic
+https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/player-to-player-trade-update
+Hangar Collision Insurance Update
+Players will now receive a free insurance claim when their ship is destroyed due to collision inside a hangar.
+Experimental VR Updates: 3d UI Markers & Tractor AR
+- Added new 3D Versions for all marker types which can be activated with CVAR "ui_markers.enabled_3d", i.e. Vehicle Entrance, Object Markers, POI Markers, proper 3D transformation to Jump point markers.
+- Tractor and Structural AR: 2D version has been removed. Desktop also uses the new 3D version now.
+IMPORTANT Notes:
+- The 3D versions look slightly different but they are almost identical to the 2D version:
+- New projection helpers have been added to calculate the proper AR RTT local space position and the projected distance which scales with FOV and distance so 3D elements have always the same size
+New Cvars:
+- ui_markers.enabled_3d - Switches markers between legacy 2D screenspace positioning and the new 3D world-space transform system.
+- ui_markers.scale_3d - Uniform size scale applied to all 3D markers.
+- ui_markers.max_distance_3d - Clamps the render distance of 3D markers to avoid floating-point precision issues from Building Blocks 32-bit coordinate space.
+- ui_markers.offscreen_distance_3d - World-space distance from the camera at which offscreen (edge) markers are placed.
+- ui_markers.offscreen_angle_3d - How far from screen centre offscreen markers sit, in degrees. Higher values push them closer to the FOV edge.
+- ui_markers.offscreen_pitch_offset_3d - Tilts the reference forward direction for offscreen markers; intended for VR comfort tuning.
+- ui_markers.bounds_offset_scale_3d - Flat multiplier on the above/below offset used to position labels relative to the ship's bounds. Increase to push labels further away from the ship body.
+- ui_markers.bounds_offset_angle_3d - Angular offset (degrees) added to the 3D bounds position at range.
+- pl_visor_markerAR.hud_ar_projected_size_scale - Scales the entire UI by this factor which uses the projected size
+## Bugfixes & Technical
+Escort Ship missions are currently unavailable while we test fixes for blocking issues. Once the fixes are confirmed as resolved, the missions will re-appear in your Contracts Manager on LIVE.
+This update includes multiple client and server stability improvements and crash fixes.
+This update also includes half a dozen exploit fixes. Due to the nature of these, they will not be listed.
+We've completed further technical work to address the character repair causing a number of accounts to "brick" and have included that in today's hotfix.
+- Potential Fix: Issue where the active route would reset when switching between SCM and NAV modes on ships equipped with the Command Module
+- Potential Fix: Issue where vehicles would stop mid-flight or during Quantum Travel and the Command Module would undock on its own
+- Potential Fix: The interaction prompt for the Cargo Module disappears after reclaiming insured vehicles with the Cargo Module equipped
+- Potential Fix: Issue where Quantum Travel markers did not behave correctly when a route was set on an Ironclad or Caterpillar spawned with the Command Module attached
+- Potential Fix: Issue where the "Route" button's clickable area did not match its visible UI element on the Starmap
+- Potential Fix: Issue where players were unable to dock at spaceports using Docking Collars across multiple systems
+- Potential Fix: Issue where the MISC Starfarer's external fuel tanks could be detached via the fuel console without first unlocking the vehicle item ports.
+- Potential Fix: Issue where Meteor weapons could be swapped out for generic Size 5 weapons
+- Potential Fix: Issue where the Aegis Tiburon pilot lost their targeting pips when another player entered a remote turret.
+- Potential Fix: Issue where targeting pips jittered out of place in the Aegis Tiburon
+- Potential Fix: Issue where Mustang Delta rockets used incorrect ammunition and carried too few rounds
+- Potential Fix: Issue where Bit Zero's ship would not spawn in the hangar during the Easy Pickings mission in Pyro
+- Potential Fix: Issue where the UtiliFlex Crossbow bolt appeared as a white box instead of the correct visual
+- Potential Fix: Thruster textures are missing on some Anvil Hornet variants
+- Potential Fix: Issue where a generic transaction error was displayed at the end of a successful AI refueling transaction.
+- Potential Fix: Issue where multiple panels in Riker Memorial Spaceport displayed placeholder images
+- Potential Fix: Issue where doors in the Specimen Cache Room at Lazarus Complex in Stormageddon remained open after a reset.
+- Potential Fix: Ship Hangar Services - Mustang Delta rockets use S9 ammo and way too little of it
+- Potential Fix: Issue causing the Syulen buttons to be difficult to press
+- Potential Fix: Defend Bunker Friendly NPCs despawn once the timer reaches 00:00
+- Potential Fix: Fuel Nozzles bought on refinery shop does not appear on local inventory

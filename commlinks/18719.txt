@@ -1,0 +1,105 @@
+PU Monthly Report
+May 2022
+Welcome to May’s PU Monthly Report! Naturally, Invictus Launch Week was a feature on many teams’ agendas last month, but significant progress was made on plenty of upcoming content and features too, including new locations, unannounced vehicles, and persistent tech. Read on for all the details.
+## AI (Content)
+Throughout May, the AI Content team focused on improving the visuals of general AI locomotion. The animation director identified 'locomotion overlays and fidgets' (animations blended with movement animations) as a vital area of improvement. So, the team authored 40 new overlays, including scalp scratching, knuckle cracking, and stretching. The overlays build on the walk-cycle work completed earlier in the year to provide more visually pleasing AI locomotion.
+Alongside this, AI Content began using the dynamic conversations tech recently delivered by AI Tech, which allows groups of AI to spontaneously begin conversations. The aim is to have this implemented across a variety of usables. Three use-cases have been created so far: the four-person mess-hall table, the idle spot, and the arcade machine.
+## AI (Tech)
+AI Tech worked on spaceship functionalities, including several improvements to quantum travel and quantum boost. Now, ships can accelerate while spooling before the actual jump. This functionality was also exposed as an assignment for missions.
+The team cleaned up and activated several feature test-maps into the main game-dev stream. These maps were validated to ensure the team can better track features that might be impacted by the changes of different teams.
+For Subsumption, focus was on improving the usability of editing conversations (or coordinated subactivities). The internal representation of the GUID and SuperGUIDs was improved too.
+Building on last month’s work, feedback was addressed regarding NPCs pushing trolleys. The team now have better control over what forces are applied to the trolley by using an angular and two linear PID controllers. They also improved the exact positioning logic at the end of a path and added stuck detector usage.
+For Human combat, an initial skeleton of the DefendArea assignment was implemented to allow the designers to specify areas that NPCs can use for their behaviors. For example, guards will use this to understand which zones they should patrol.
+Occlusion calculation was restored to stop NPCs from ignoring hidden enemies while shooting, which will help them preserve ammunition and prevent individual targets from being overly targeted (unless fire control is forcing the shooting).
+The team also improved the friendly-fire validation and can now assign different factions different behaviors. This includes “bad guys” only trying to preserve the life of their group, while “good guys” also trying to avoid hitting neutral factions, like civilians.
+Several fixes to the usable code were added, including one causing NPCs to use usables they were not authorized to use. They also extended the usable code to allow them to set up slotting functionalities through loadout entries, allowing them to access item ports not exposed directly in Data-Forge. For example, setting up a Gladius as a usable with varying inspection usables depending on whether missiles are equipped or not.
+## AI (Vehicle Features)
+The AI Vehicle Features team completed the flight AI tool. This enables the developers to control and set up specific AI scenarios across various ships. They're currently porting the new dive attack maneuver to the combat pilot AI, which allows ‘reckless’ and ‘aggressive’ pilots fighting against capital ships to dynamically choose this maneuver when required.
+They also made changes to the way they apply the backwash thruster effect as it was negatively affecting AI. Now, it controls forces by the size of the ship’s surfaces, so smaller ships have less of an impact on larger ships.
+## Animation
+For the PU, the Facial Animation team finished off performances for various in-game emotes, worked on a new mission giver, and created the facial animations for female vendors and male and female workers.
+## Art (Characters)
+Character Art spent the month wrapping up Q2 assets, which included work on several armor variants. They also continued to work on the Pyro frontier outfits.
+## Art (Ships)
+Last month, the UK team began improving the damage maps on all ships in preparation for the salvage mechanic. Development also continued on several vehicles:
+An unannounced ground vehicle progressed into final art and design, while a new ship entered the early greybox stage, with work on the cockpit and dashboard progressing well.
+The Banu Merchantman continued to move through greybox, with May’s focus on the ship’s exterior art. The team are currently working on the underside and the look and feel of its wings.
+The Argo SRV began production and is nearing whitebox-complete, with the final whitebox review scheduled soon.
+In the US, the team continued building the Drake Corsair. On the interior, major passes were completed on the turret airlock and manned-turret cabin, while most of the crew quarters were finished, including the captain’s quarters near the cockpit. The entire cargo hold was blocked out and details are currently being added. The main airlock/staging room on the starboard side of the ship was also completed.
+On the exterior, progress was made on the greybox, including the nacelles and main/retro thrusters. Development began on the landing gear and remote turrets too.
+## Community
+The Community team spent had another busy month in May with much focus directed towards supporting sentiment tracking and messaging for Invictus Launch Week and it's related publishes.
+They published the Manufacturer Free Fly Schedule and a Spectrum FAQ before updating the Welcome Hub, Welcome Back Pilot page, and the New Player Comm-link for those making their first visits to the ‘verse. Everything was compiled in the Invictus Launch Week Details page.
+In tandem with the event, they held a screenshot contest and the 2952 Dunlow Derby race (in full collaboration with the racing community - SCR.GG) and further supported Invictus 2952 with sentiment tracking and server status communications. They also announced the winners of the MISC Bumper Sticker and the Tour of Stanton contests that began at the end of April.
+The team also updated the Roadmap's Release View to reflect the rollout of key technologies in 2022, as mentioned in the latest Letter from the Chairman.
+A few team members had the opportunity to attend the Be@con event (an epic community-organized meetup/convention) in Belgium and meet members of the wonderful community in person again.
+"We had an absolute blast and want to thank everyone who came out and said hello. It was great seeing everyone in person again, and we can't wait for the "Bar Citizen World Tour" this Summer!" - Community Team
+They also hosted the Drake Mule and Anvil Legionnaire Q&As, giving the community the opportunity to ask the vehicle’s developers their most burning questions.
+Work also continues on the new Community Hub, with steps being taken to port the work from a staging environment to the live servers (but not visible to non-staff). This is a huge step because it means the new Community Hub is actually populating with real player content. The team is continuing to relay feedback and assist in the overall design, to prepare for its public debut in the very near future.
+Looking a bit ahead, the team is deep in planning for this year's Foundation Festival, Ship Showdown, upcoming Dynamic Events, and much more.
+## Engine
+In May, the Physics team added a new dynamic entity (ropeentity_ex) to simulate a rope running over a pulley wheel. As an optimization, round-robin free lists were added for factories to reduce contention when creating or destroying objects. Additionally, vehicle pad normals are now cached to speed up collision processing.
+On the renderer, work on the Gen12 transition continued. APIs for transient resource sets and various transient buffer types further matured and all relevant client code was updated to make use of them. The Gen12 pipeline to render cube maps was enabled, and Gen12 support for fog volumes and various other render nodes was also enabled. A new reflection buffer API was implemented and worker contexts were established throughout the client code. Resource sets are no longer unnecessarily created and material updates are not pushed into processing queues if there isn't anything to update. Support in debug comparison code was added for stencil state checks, skinned objects, and forward stage.
+“Speaking of the forward stage, a lot of work went into it this month and we hope to enable it soon.” Engine Team
+Support for eye overlay pass was added too.
+The Gen12 port of planet ground fog was completed and Gen12 ports of atmospheric and volumetric cloud rendering commenced. Additional improvements to planet terrain height map rendering and spherical cloud and planet terrain shadow rendering were made.
+On the core engine, various improvements were made to the profiling system to better analyze fibers and their preemption, and to track callers of semaphore waits and file reads. Support to collect peaks was also added (to prioritize optimization tasks). Various optimizations from recent performance captures on the PTU were implemented. Also, power scaling is now disabled for all threads the engine spawns with normal or time-critical priority, which helps thread scheduling (main, render, physics, batch worker, etc.) and improves performance. Additional optimizations were made, including removing the final lock in the background job manager, checking authority requirements when activating component updates based on ECUS events, and skipping updates of hidden entities. Lastly, improvements were made to reduce the size of Windows executables and their symbol files.
+The remainder of the time was spent supporting and bug fixing Alpha 3.17.
+## Features (Arena Commander)
+Alongside progressing with scanning improvements, the team fixed bugs, most notably those that had been affecting the gameplay of Arena Commander and Star Marine.
+“Continual feedback from the community regarding these areas of the game has been hugely helpful and is greatly appreciated by our team!” Feature Team
+Improvements to the racing mode were made too, which are planned for an upcoming release.
+## Features (Characters & Weapons)
+In May, the team continued updating the scanning feature, improving the visual effects when triggering a ping wave while on foot and how it highlights different contacts. Interactable items and points of interest critical to mission progression will be highlighted too.
+The team is also increasing the amount of information gathered from scanned objects. For example, a door will reveal its current state and if it can be affected via hacking, NPCs and other players will show the contents of their physical inventories, and player corpses will reveal their cause of death.
+“Hooking up all this data can be quite a time-consuming task as it requires a lot of data-mining of different systems and their variables. Part of the work is ensuring the addition of future data will be frictionless.” Feature Team
+The team also created a model for serializing damage maps online, which is required for salvaging. The client is able to make accurate predictions but can also rewind and replay applications of hits on the damage map. The server will still send the full map to a client when required but this prediction will keep the need to send full data to a minimum.
+## Features (Vehicles)
+Vehicle Features spent time throughout May working on Alpha 3.17 and Invictus Launch Week.
+Outside of release support, great progress was made on quantum travel boost, primarily making it feel right as ships accelerate and attempt to maintain heading. This feature also supports points of interest, allowing pilots to fly towards highlighted destinations.
+The team are continuing to update persistent-tech features to use the new systems and fixing problems along the way (usually connected to systems such as streaming, networking, and persistence).
+General balance work continued too, including a pass on general item health to stop ships from shutting down from explosions. They also continued to balance the refueling mechanic, deciding on the volume of fuel the Starfarer can carry and the sizes of ships it can refuel.
+The setup and balance of the new ground-vehicle physics is progressing well. The team now have baseline handling and are laying out the remaining dependencies to make them game-ready.
+## Graphics & VFX Programming
+Work on damage maps continued last month, with the team focusing on debris creating its own map based on the parent map. They also implemented an interface for querying damage within an area and persistent snapshots as well as optimalizations for processing hits.
+For Gen12, the team improved the viewport API and continued porting the region copy pass in RTT to Gen12. They enabled more stages/systems to work with Vulkan, including material fallbacks and depth read back. Fixes were made for the tessellation output of organic shaders and planet array textures not using texture 2D arrays. They also refactored screen capture to work with Vulkan and updated to the latest SDK.
+Work continued on improving image tests, with CVARs being created to wait a custom number of frames before capturing to alleviate some of the timing issues seen on recent tests. They also investigated a number of performance-related issues, including a particle effect problem caused by a huge particle count and the cost of refraction resolves.
+A number of bugs were fixed in the RTT system, including a series of asserts caused by setting a large aspect ratio to an RTTO, as well as fixes for holo-volume sorting issues in the mobiGlas.
+The team also continued improving shaders with experimental improvements to the hair-color model and Wear v2, including the addition of primer/compliment in LayerBlend v2.
+## Lighting
+May saw the Lighting team continuing to support the Siege of Orison mission.
+“The playable space of the mission is massive, which means a lot of lighting work goes into covering the whole area to provide an interesting and unique atmosphere at night and day while also ensuring good player visibility on objectives and AI.” Lighting Team
+Polish and optimization were also done. The space being a fully man-made exterior location means a lot of light entities and shadows must be rendered, so the team spent time ensuring performance was smooth without too much visual sacrifice.
+They also worked on the new derelict Reclaimer locations, which involved embedding them into the planet's surface and dressing and lighting each version.
+## Locations (Montreal)
+The Locations team spent the month working on the Reclaimer space missions and derelict Reclaimer settlement. They’re currently polishing and bug fixing in preparation for their release, which will complete the initial proof of concept for the derelict settlements.
+The next stage is to take the proof of concept and see how much more depth can be added, with variations to both environmental art and level design. They’re also looking to add more module and habitation variations, more missions with different modifiers, and potentially new gameplay elements.
+The 600i and Mercury derelict settlement, which will be located on Daymar, progressed well throughout the month. The Level Design team are currently looking at what the Environment Art team has done in preparation for adding missions and AI.
+The rework of Lorville’s cityscape is ongoing, with the team switching from concept/pre-production to production.
+Finally for Locations, the building interiors mentioned in last month’s report entered the concept phase.
+“We’re still in early days and are discussing how best to organise the conception so that concept art, environment art and level design all work together in the most efficient way. We’re also defining what we want to tackle in the proof of concept and what should be our target. Everyone here is eager to tackle this challenge and find a way to add pockets of gameplay directly inside landing zones.” Locations Team
+## Narrative
+Last month, Narrative continued to work with Design on a handful of new missions and initiatives. This included discussing new mission archetypes and tackling the new-player experience to devise a system to introduce new players to the game’s various mechanics.
+Preparations commenced for the upcoming motion-capture session scheduled for next month. This involved syncing with various teams to see if they had content ready to capture. Once complete, production began locking down dates and sourcing actors.
+Narrative also continued to release new lore content, starting with another Loremakers where the team answered community questions from Spectrum. This was followed by Homesick, a short story that originally appeared in Jump Point magazine, and an Empire Report detailing a scandal around the discovery of new life. The month ended with another batch of Galactapedia articles.
+## QA
+The Manchester-based development side of QA focused on the Invictus Launch Week mission and continued to support the Alpha 3.17 and 3.17.1 releases by verifying fixes and stability issues, regressing resolved issues, and supporting the development teams.
+Towards the end of the month, planning and testing for Alpha 3.17.2 and 3.18 began. This involved working through QATRs for each patch’s deliverables to ensure features are tested as much as possible before being published.
+The Frankfurt-based QA team also tested the Siege of Orison mission and continued to support various development teams via their embedded testers.
+For AI, integration checks were completed for updates to existing and new features, which were then added to the main branch. They also tested the AI used throughout the Siege of Orison mission.
+Locations QA tested the new mission location and expo halls. They also began working more with the editor to better support the team in creating test levels with relevant systems.
+For the Engine team, focus was on PageHeap testing and locking down memory issues in-game. They also continued to learn more about Flowgraph and coding for future automation.
+The Tools team continued to receive support with continued testing of DataForge, StarWords, ExcelCore, CopyBuild, and the sandbox editor.
+## Tools (Montreal)
+In May, the integration of the Mighty Bridge into the editor was completed. This also allowed the deployment of the first official Mighty Bridge tool, Vegetation Scattering v1, which will allow teams to deploy vegetation without collisions, brushes, and entities on planetary surfaces and objects. This will be especially useful for derelict settlements and outposts but will still be used across many PU locations. The next step is to develop a tool for creating crashed ship craters and tails in the ground in less time and at higher fidelity.
+The procedural location creation tool is also progressing well - the foundation is now a lot stronger and the team have begun creating basic layouts. They’ve also moved to supporting corridors and corridor loops as well as supporting the various required templates (space stations, caves, underground facilities, etc.). The team’s current goal is to get v1 to the designers and artists so they can gather feedback and get it production-ready.
+## Tech Animation
+The Technical Animation team spent part of the month addressing small tasks that will ultimately improve the quality of life for all devs. Several of these revolve around the asset pipeline in Maya, which was refactored to both consolidate multiple workflows and galvanize the core pipeline code with the knowledge gained throughout production so far.
+One of the team’s new initiatives to load skin data from the engine’s data files is yielding excellent results, with a 1200% speed increase in loading data.
+They also continued with another long-standing initiative to replace slow rigging solutions with a new plugin.
+“This will see us redefine our workflows for creating rigs and see a much-needed improvement to character deformation throughout the game. It will take a long time to develop, but it’s a worthwhile venture.” Technical Animation
+## UI
+May saw the UI programmers support the various PU releases by fixing bugs and adding requested features. They also refactored backend code to support the persistent tech that will come online in Alpha 3.18.
+## VFX
+May saw the VFX team complete their work for Invictus Launch Week alongside tasks for the RSI Scorpius and Drake Mule.
+VFX Concept Art began work on the quantum travel rework. This included storyboarding the gameplay requirements at the different stages of the process, such as spooling up, entering, and exiting. They’re currently investigating how it could look in-engine.

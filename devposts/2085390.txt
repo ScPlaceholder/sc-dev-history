@@ -1,0 +1,23 @@
+## Star Citizen Patch 3.5.0x
+Alpha Patch 3.5.0x has been released to PTU, and is now available to test!  Patch should now show: PTU-1460999.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- General gameplay
+- Testing AI pilot behavior
+Major Known Issues:
+- No-fly zone autopilot take over is inconsistent.
+- Players arrive at planetary destinations just outside of the trigger for quantum travel points. W/A: Fly forward toward the planet/moon for a moment to trigger the quantum travel points.
+## Feature Updates
+Missions
+- Unlocking PVP bounty requires the player to complete any local security mission (Crusader, Hurston, or Blackjac) and unlock the North Rock intro mission.  Completing the North Rock intro mission unlocks PVP bounties for players with wanted level 2 or higher.
+## Bug Fixes
+- PVP bounty shouldn't display "TargetName" anymore.
+- Fixed several missing Shubin mining outposts on Lyria.
+- Landing pads and hangars should no longer be missing geometry if the player dies while in EVA after quantum travel.
+- Additional fixes for jittering and slowly moving AI ships.
+Technical
+- Fixed a client crash.

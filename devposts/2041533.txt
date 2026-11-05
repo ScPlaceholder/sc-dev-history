@@ -1,0 +1,44 @@
+## Star Citizen Patch 3.5.0m
+Alpha Patch 3.5.0m has been released to PTU, and is now available to test!  Patch should now show: PTU-1358879.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- IFCS: Heat Rework, Atmospheric flight, Arena Commander
+- Balance: Assisted gimbals, manual gimbals, auto-convergence, cannons vs repeaters vs scatterguns, ship roles
+- Locations: ArcCorp, Area18, Lyria, Wala
+- Star Marine: All game modes
+- Female Character
+- DNA face customization  system
+- 300i
+Major Known Issues:
+- Some aspect ratios do not work well with the ship HUD.
+- Some ships are unable to connect when landing, bouncing back into hover. W/A: Power off quickly after touchdown.
+- Sometimes after ejecting ships claimed on insurance will be returned without their seats. W/A: Recopy account to get ships back.
+## New Features
+Universe
+- IFCS will now engage autopilot and attempt to turn your ship out and away when intersecting with a no-fly zone.
+## Feature Updates
+Universe
+- Updated no-drive barriers around Lorville.
+Missions
+- Added locations to comm array location missions to indicate where they are.
+- Adjusted some of the ships for patrols and bounty hunters.
+Ships and Vehicles
+- Updated ESP so dampening will increase the curvature on yaw/pitch so at max deflection you always get full angular velocity, making it easier to track targets.
+## Bug Fixes
+- Players should now be able to interact with the 300i's bed.
+- The 300i should now have functioning headlights.
+- Players should now be able to buy and sell commodities at outposts around Hurston.
+- NPC service beacons (combat assist ECN) should now work around Hurston.
+- Players should be able to add new players to their contact list, in-game or from the front end.
+- Automated turrets at underground facilities should no longer continue fire after being destroyed.
+- Continued fixing for AI ship jitters and issues.
+- Using ASOP terminals should no longer cause a large drop in framerate.
+- AI ship waves should now properly spawn for Hurston bounty missions.
+Technical
+- Fixed 3 client crashes.
+- Fixed 2 server crashes.
+- Crash fix associated with picking female character heads.
+- Landing performance optimizations near Area18.

@@ -1,0 +1,71 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9149464.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 2
+Server Info: US/EU - EPTU Channel - PU/AC
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+- Stability/Performance/Bug Fixing
+- Master & Operator Modes: Vehicle Combat and Experience
+- Vulkan Renderer (Off by Default in Graphics Settings)
+- Full Character Customizer Revamp
+- mobiGlas Rework / Starmap / Interior Map / Minimap
+- Distribution Centers
+- EVA T2
+- New Loot Screen / New Visor / Lens
+- Full FPS Combat Refactor / Dynamic Crosshair
+- Backpack reloading / Ammo repooling
+- Physical Shopping UI
+- New Arena Commander Features: Engineering Game Mode, Grav Royale, New Race Tracks, and New Pirate Swarm Final Wave
+Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs.
+Distribution Center missions sometimes show the wrong location markers inside so might be difficult to know exactly where you need to go to.
+Server and Client Performance is something we are constantly monitoring and working on fixes and changes for 3.23.
+- PU - UI / Mission Content - Players Cannot accept shared mission
+- PU - Stanton - Distribution Centers ( DC ) - Locations / Physics - Hangars missing collision for incoming flight traffic (Fixed in next release build)
+- PU - Multiple Locations - Locations / Art - GrimHEX and Kareah airlocks are missing breathable air and doors
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Locations - Grim Hex - Hospital - Elevator - Elevator is missing at Grim Hex's hospital
+- PU - Stanton - Lorville - Transit / Locations - Trams missing from Perimeter Line West
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+- PU - UI - NikNax / VLM - Liveries - All Liveries are missing volume information in NikNax and Vehicle Loadout Manager
+- Front end - UI / Locations - Inventory - Entitlement - Primary Residence location can be missing from the front end
+- AC - UI - Classic Race - No HUD indicator for next checkpoint
+## Features and Gameplay
+Characters
+- Character Customizer Updates: Added DNA Blend Slider
+Locations
+- Fixed some unnatural shading on subsurface ocean foam
+Gameplay
+- Shopping Experience Updates
+Set shopping pedestals to work properly with the connected entity. Added correct building blocks canvases to the pedestals. Added strings for types under the purchasable component for all vehicles and some other items. Corrected some racks that were displaying UI incorrectly.
+- Updated Starmap List items to match the rest of the mobiGlas
+Ships and Vehicles
+- Added Progress Bar to Ship Scanning UI
+- ARGO Mole Master Modes Flight tunings to introduce individual characteristics
+- MISC Prospector HP tunings to introduce individual characteristics + a tuning adjustment to backwards linear acceleration
+- Ship Weapon Balance: Decreased damage of non charged ARES ION bullets
+Core Tech
+- Water Visual and Performance Tuning Pass
+- Server Performance Optimization Pass
+- Vulkan Performance Polish Pass
+## Bug Fixes
+- Fixed - PU - Vehicle Purchase Kiosk - Shopping / Locations - Unable to purchase vehicles from kiosks
+- Fixed an issue causing Marok to not spawn on microTech in multiple biomes
+- Fixed an issue causing much fewer Kopions to spawn around locations in the PU
+- Fixed - Rental fails for most FPS equipment in AC
+- Fixed - EXPLOIT - It is possible to achieve limitless boost by pulsing the afterburner input around 24% in SCM (STARC-107899)
+- Fixed - PU - Graphics - Fullscreen mode Vulkan Renderer with a lower resolution than native monitor result in small fullscreen
+- Fixed - PU - Locations / Physics - Distribution Centers - Entering / Exiting vents near landing pads for Corporate Entrance causes player to fall through the environment
+- Fixed - AC - Backend / Network - Searching for a Match will always load a new instance despite other matches waiting for players
+- Fixed - AC - Backend / Network - Infinite loading / Disconnection 30018 when two players launch from lobby
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 4 Server Crashes
+- Fixed a Vulkan Client Crash

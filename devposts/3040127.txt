@@ -1,0 +1,6 @@
+Hi. While I can't give you an ETA on when players will have better control over their ship interior light states, I can confirm for you that this "aura" you mention is actually a bug.
+What's happening is there is a dynamic cubemap that follows the player/camera and updates periodically, capturing the surrounding brightness and reprojecting it as ambient light. The flickering is probably the cubemap re-capturing the correct/dark ambiance, and then occasionally picking up something it shouldn't. This issue is obviously more noticeable on dark planet surfaces where the cubemap is already so dark that even a minor unintended highlight could have a large effect on the surrounding ambient light.
+This issue is something we're continuing to try and improve and generally involves tagging certain assets and lights to always be excluded from the dynamic cubemap.
+The other issue of this orange blobby glare in the cockpit glass is a very unfortunately placed light entity which is hitting the glass at a horrible angle for the player's seated position. I currently don't have a lot of involvement in the ship pipeline (which is why I sometimes don't catch issues with ship lighting) but this is simple enough that I'll fix it now.
+Hope this clarifies a few things for you!
+- ChrisC

@@ -1,0 +1,45 @@
+## Star Citizen Patch 3.9.1b
+Alpha Patch 3.9.1 has been released to PTU and is now available to test!   Patch should now show: VERSION 3.9.1-PTU.5218324.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+Pledge copy has been DISABLED for now.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Bug Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-9-1b
+Testing Focus
+- General Persistent Universe Gameplay
+- Bug Regression
+Known Issues
+- Its possible for players to get in a state where they are not able to connect to the global chat channel
+- The multiTool from the prison commissary does not come equipped with an OreBit mining attachment.
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed.
+- Ships can be displayed in an "unknown" state, unclaimable and irretrievable.
+- When going into ADS and crouching with the P6-LR/Arrowhead the player will be unable to see through the scope.
+- Some security guards are behaving unnaturally.
+## New Features
+Ships and Vehicles
+- New Ship: Drake Cutlass Blue
+## Feature Updates
+Core Tech
+- Adjusted the amount of wind present on planets to reduce the overall frequency of storms.
+## Bug Fixes
+- CryAstro Services should now correctly work at all locations.
+- Duplicate/Static trams should no longer appear at landing zones.
+- Reclaimer soap dispensers in the bathroom should no longer be replaceme balls.
+- The player should no longer standing up on the bed, causing them to clip through the geometry, after logging back into the PU in certain ships.
+- Fixed missing LODs and collision issues with security docks on space stations.
+- Autopilot should now correctly disengage after triggering it by flying into the restricted area.
+- Headlight glow textures on the Argo Mole should now all display correctly when the headlights are on.
+- Fixed reflection lighting issues on the interior cockpit glass of the Freelancer, Starfarer, and Prospector.
+- Fixed multiple "Replace Me" Textures present around the cockpit and exterior of the ANVIL Valkyrie Liberator variant.
+- Fixed an issue in Arena Commander single player mode that was causing players to be unable to change ship selection.
+- Rear Aft turrets should no longer be missing from the Carrack and Carrack Expedition.
+- Lower Aft Turret on the ANVIL Carrack should no longer have intrusive reflections that obscure the player's view.
+- Fixed clipping issue on entry/exit of military style bunks on the Hammerhead, Carrack, and Reclaimer.
+- Female characters should no longer exit out of the Prospector's bed on the wrong side.
+- Players should no longer hear VOIP party or proximity chats globally.
+Technical
+- Fixed 4 server crashes.
+- Fixed 6 client crashes.

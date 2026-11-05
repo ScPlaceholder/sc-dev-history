@@ -1,0 +1,56 @@
+## Star Citizen Alpha Patch 4.2
+Alpha Patch 4.2 has been released to Wave 2 testers!  Patch should now show: VERSION 4.2.0-PTU.9815640.
+- Audience: Wave 2
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players with a new Mesh that Splits Pyro I and IV
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Tonight's build has multiple changes to help with server performance and desync as well as a new mesh configuration. We will be monitoring overnight before opening up to further waves.
+- Stability & Bugfixes
+- Storm Breaker Phases 1 and 2
+- Dynamic Rain
+- Radiation
+- VOLT Laser "Prism" Shotgun
+- ARGO ATLS IKTI and IKTI GEO
+- New Wikelo Ship Additions
+- New Hairstyles
+- Sterling Exploration Suit
+## Known Issues
+- PU - Vehicles / Starmap / Quantum Travel - Cannot route Quantum Travel back to Ship
+- PU - Ship Battles V1 - Search and Destroy - Sometimes gets stuck indefinitely, which means the mission script stalls and breaks progression
+- PU - Stanton - Locations - Klescher Rehabilitation Facility - Mining / Inventory - Players are unable to store mined Ore into their inventory properly and Ore will be dropped to the ground after attempting to be stored
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+- PU - Ship Battles - Ace Pilot/Assault - Proximity Tracker - Action Area - Logic fails to continue when over 20km away from the tracked object or Action Area Origin
+- PU - Actor / Armor / Locations - Player is able to retain Prison Suit and Backpack upon being released from Klescher
+- Graphics - UI - Shadows not casting in 3d Comms Call RTT window
+## Features & Gameplay
+Gameplay
+- Further Storm Breaker Gameplay, LOD, Art, Audio, Visual, and Performance Polish Pass
+- Further Wickelo Favor Recipe Adjustments
+- Reward Balance for Rayari Gathering Missions
+- Adjusted all Radiation Emitter Sources to use a Falloff Curve
+- Further Rain/Storm Audio Polish with Planetary Surface Material Type Inclusions
+Ships and Vehicles
+- Reduced the Anvil Asgard/Valkyrie Cross-Section Emissions
+## Bug Fixes
+- Potential Fix: PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" From Spawning Vehicle Delayed (STARC-131542)
+- Potential Fix: PU - Pyro - Radiation / Actor / UI - There is discrepancy with the numerical REM values in the mobiglas and widget
+- Potential Fix: PU - Stanton - Orison - Locations / Transit - Tram doors are not opening upon arrival at the station (STARC-169450)
+- Potential Fix: Aegis Idris ALL Variants - PU - Vehicles / Vehicle Balance / Vehicle Components - Ship Weapons - Ship weapon is overheating in 1 shot (STARC-168811)
+- Potential Fix: PU - Pyro - Locations / Interactables - Contested Zones (CZ) - Checkmate - Fuse by the first door does not have interactions
+- Potential Fix: PU - AI / Locations - Combat AI slide erratically when entering, exiting, and peeking from cover
+- Potential Fix: PU - Storm Breaker - Data Facility & Research Facility - Design / AI - AI can be seen stuck outside doors when trying to path through them
+- Potential Fix: PU - Pyro - Pyro 1 - Storm Breaker - Lazarus Research Laboratories - Locations / Design / Actor - Players are unable to set their regeneration point to the Lazarus Research Laboratories using the standalone medical terminals in the infirmary
+- Potential Fix: Multivehicle - PU - Stanton - Quantum Travel / UI - After the first jump on a multi-jump Quantum Travel route, it will show all available jump destinations instead of the optimal route to the player's set route
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 1 Server Crash

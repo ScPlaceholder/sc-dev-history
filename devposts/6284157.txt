@@ -1,0 +1,59 @@
+## Star Citizen Alpha 3.21.0 LIVE.8779972 Patch Notes
+Alpha Patch 3.21.0 has now been released and is now available on the LIVE environment! Patch should now show: VERSION 3.21.0-LIVE.8779972.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here: %localappdata%\Star Citizen
+Update Warning: 3.21 has a nearly 34gb patch diff from 3.20 LIVE
+Short Term Database Reset: Yes (Loss of items not stored in LTP)
+Long Term Persistence (LTP): Enabled
+Starting aUEC: 20,000
+Known Issues
+- Misc  Reliant - All Variants - The Reliant's wingstate  does not change from its horizontal configuration with appropriate  inputs after ASOP spawn
+- UI / Menus - Controls - Keybindings - The Default Preset Images for the keyboard and gamepad control schemes do not match what is bound by default
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- MISC Hull C - PU - Vehicles - Can't undock the Hull-C
+- PU - Crusader / Orison - Locations / Transit - It's possible for turn gates to not open preventing players from entering shuttles
+- PU - Art - Items / Character / Textures - Multiple clothes / armor / undersuit variants lost color / using the default base color
+- PU - Multivehicle - Vehicles / Ships / Ship Components / Weapons - Laser Repeater occasionally stops firing but still consumes ammo
+- Hull C - Spawn / Cargo / LEO - Hull C with cargo can spawn extended in a large Hangar instead of Docking Port
+- Stanton - Multivehicle - RSI Constellation Series - Ship Feature - Snub Ship clips through Constellation variants in vertical position when retrieved from ASOP
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout after dying in the armistice zone
+- Stanton - Actor - Personal Inventory - Right click item interaction menu cannot be closed once opened
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Stanton - AI - Mission Giver - Wallace Klim is not visible at his location in Grim Hex
+## New Features
+Locations
+- New Jump Point Rest Stop Stations and Lagrange Points
+Addition of 3 additional Rest Stops to Stanton that act as the final stop before entering Jump Points. Each location is set up similarly to all the other Lagrange Points and consists of a parent Gas Cloud, a smaller Child Gas Cloud, a Gateway Rest Stop and and structures leading to the Jump Point itself. It is important to note that Jump Points are currently non-functional in 3.21 as Stanton is the only available system at this time.
+These 3 new Stations with Jump Points that leave the Stanton System are:
+- Pyro Gateway - (Stanton>Pyro)
+- Magnus Gateway - (Stanton>Magnus)
+- Terra Gateway - (Stanton>Terra)
+Gameplay
+- New Legal/Illegal Mission: Retrieve Consignment
+In this new mission type, player’s will be challenged to go to the Underground Facilities (UGFs) and kill / search for data pads that contain consignments depending on the mission variant. A consignment will have a code on the top for the dispenser which will cause the items listed on its manifest to come out of the dispenser one by one. These items can be taken and sold at commodity kiosk’s around the game for aUEC, this is however optional and players only need to retrieve these items from the dispenser to make way for the mission critical items if they so please. This mission will take part exclusively at the security UGFs, are shareable, and will require the drop-off of at least one box of classified files to complete the mission.
+The Illegal version of this mission is offered by Ruto and the Legal version of this mission is offered by the various Security Organizations of Stanton.
+- The Legal version of the mission the player will find corpses of dead security at the facility on arrival. On these corpses will be the data pads and the player will have to deal with Ninetails defending the location they have overrun.
+- The Illegal version of the mission there will be no corpses, just security at the location which will drop the data pads as loot when killed.
+This mission also introduces a new mission module called the AnteUpWaveSpawner, this module will cause AI to continuously spawn in waves at the location. These waves get progressively harder based on triggers, the triggers for this mission are Codes being successfully entered into the dispenser and every 5 minutes the player is at the location(on a looping timer). On this mission the waves will start to spawn once the first boss is killed.
+- New Illegal Mission: Kareah - Steal Evidence
+With this new Steal Evidence mission offered by Twitch, players are tasked with stealing the next Evidence item that spawns from the Kareah contraband dispenser. To obtain this mission, players must talk to Twitch in person after completing her intro mission and having climbing in reputation. Only one instance can be active on the server at any time.
+The first objective simply states to retrieve the Evidence, which will place a marker on the evidence dispenser. The mission description in the MobiGlas has a brief explanation on how to get the access code for the dispenser. When a box of evidence is spawned, the marker moves from the dispenser to the evidence, objective stays the same. Once the box of evidence has been grabbed by a mission player, the delivery destination is marked. If the box of evidence is taken away by another non-mission player, the marker will stay on it to allow recovery of the box by mission players.
+Ships & Vehicles
+- Added New Flyable Ship: Crusader Industries A1 Spirit
+## Feature Updates
+Gameplay
+- Repel Raid on Orison with New Crusader Platforms
+With 3.21 we are bringing back the Repel Raid on Orison missions (Originally called Platform Assault on Orison). These FPS combat missions around Orison will now utilize newly added platform clusters that have been placed around Crusader.
+Re-introduction of Bounty, Assassinate, Clear All, and other missions. These FPS combat missions around Orison will now utilize newly added platform clusters that have been placed around Crusader to provide opportunities for more concurrent missions and more unique locations. These missions include eliminate all missions similar to the current UGF missions. For these islands the player will be tasked with killing everyone in a given building. These Mercenary missions available from Crusader Industries will have three difficulty curves, ranging from an easy clear of one building, to a hard clear of three buildings. Similar to eliminate all missions, Eliminate Specific Missions will task the player with killing single or multiple Bosses based on difficulty. For players to qualify and receive these missions they first need to complete Security Work Assessment for Crusader Security.
+- Added Support for Players to Sell Things Owned by Members of Their Party Without it Being Considered Stolen
+Ships and Vehicles
+- Ground Vehicle Physics Updates
+Made further Ground Vehicle Handling Improvements for the Nova Tanks and all Wheeled Vehicles. Made Throttle Control easier and made suspension tweaks.
+- Driver Remote Turret QoL Improvements
+Zoom has been added for all vehicles where a Drivers/Pilots that can use a remote turret. Added Stages to Turret Zoom: None, 2x Zoom, and 4x Zoom. Press or Hold Z to activate. Gyro mode is now enabled & togglable (G) for Driver Remote Turrets for all ground vehicles.

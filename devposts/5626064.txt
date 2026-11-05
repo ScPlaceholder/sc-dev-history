@@ -1,0 +1,54 @@
+## Star Citizen Patch 3.18.0s
+Alpha Patch 3.18.0s has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.0-PTU.8322192.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US only
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- ASOP Terminal / Ships / Vehicles - Ship / Vehicles disappears from player's ASOP after destruction
+- Multivehicle - Stanton - Vehicles / Docking - A retrieved ship delivered to a docking port will be missing collision
+- Items appear not to be removed from the player's inventory when they sell them or hand them in to a contraband kiosk
+- Location - Daymar / Whistler Crypt / Physic - Walking on hills near Whistler's Crypt can potentially kill or wound the player
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Multilocation - Elevators - Elevator doors open mid-transit
+- Merlin will not undock from Constellation
+- Mercury Star Runner only loads 6 SCU of cargo
+- Stanton - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction
+- Multivehicle - Stanton - Vehicle Feature - Hit box desync - Vehicles do not take damage when attacked at certain parts of its hull
+- External Inventory - Loot Boxes will Eventually Load Indefinitely
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- UI / Vehicle HUD - It is possible for the Vehicle HUD to vanish for the player during flight and combat
+- VARIANTS ONLY - Weapon / Weapon Feature - Multitool Variants display "HEALING" info regardless of attachments
+- Orison - Mission Content / Locations - A hostile AI is stuck inside a wall at HMR-A and one hostile appears missing at BWD-G for Bounty Assignment: Neal Garrison mission
+- Inventory / Loot Boxes - Loot Boxes will Disappear on Approach or after Opening
+## Feature Updates
+Locations
+- Added multi-tool and all attachments to Grim Hex Shops
+## Bug Fixes
+- Fixed - Respawn - UI - There are no Respawn Transition Screens
+- Fixed - The player will not be returned to the frontend after dismissing a disconnection error
+- Fixed - DRAKE Corsair - Ship Features - Art / Graphics / Misplaced Geometry - There are numerous sections of interior geometry protruding through the exterior hull of the Corsair
+- Fixed - AC/SM - UI - "Press [X] to respawn" remains on-screen post respawn
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 12 Server Crashes

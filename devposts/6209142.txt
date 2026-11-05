@@ -1,0 +1,10 @@
+Hi,
+We output with the PQ HDR colour space, not bt709 which is Standard Dynamic Range [see my reply for a correction/clarification on this].
+There are two brightness settings, and their default are the recommended settings. Peak brightness is the maximum your monitor can support, and should only be lowered if you have discomfort with the brightest parts of the image, or if the max brightness of your monitor has been incorrectly reported by Windows.
+The (ref white) brightness is what you might consider the brightness of a white piece of paper, or white UI text. You can think of this as the max brightness for things in “standard dynamic range”. This should be set substantially lower than the Peak Brightness setting, otherwise you are limiting the dynamic range of the image. If you find the image dark then if possible you should see if you can reduce the ambient lighting conditions so that you can retain the larger dynamic range.
+The best HDR experience is achieved in a dark viewing environment, with Brightness(ref-white) at around 150-200 nit, and Peak Brightness at 1000 nits (if you‘re lucky enough to have a monitor that supports it).
+By the way, in practice a white piece of paper in the game often won’t actually match the brightness/ref-white setting. This is because as with other games/films we still want a dark scene to feel dark and a bright scene to feel bright, and so we adjust the image intensity as desired. Monitors have nowhere near the required brightness for us to output real world light intensities (eg sunny outdoors) and so this exposure control/compensation is a necessity.
+One final note, HDR is currently flagged as experimental because not all the game content has been balanced for HDR as yet.
+Cheers,
+Ali Brown
+Senior Director of Graphics and Procedural Tech

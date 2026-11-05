@@ -1,0 +1,57 @@
+## Star Citizen Alpha Patch 4.0.1
+Alpha Patch 4.0.1 has been released onto the PTU!  Patch should now show: VERSION 4.0.1-PTU.9493308.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:500
+Hangar Spawning: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability, Performance, and Bugfix Testing
+- Save Stanton Chapter 2 Event in Pyro
+Chapter 2 of Save Stanton will run throughout the PTU phases in 4.0.1. This is a continuation of the event from 3.24.3 into the Pyro side of events.
+Updates to Save Stanton Ch 2
+- Fixed - PU - Pyro - Save Stanton - Chapter 2 - Phase 6 - Missions / AI - Ship AI float above the planet surface and do not engage the player
+- Fixed - PU - Save Stanton - Phase 7 - Missions - InfiltrateFreedomFightersOutposts - No objective explosives spawn
+- Fixed - PU - Pyro - Save Stanton - Phase 7 - DestroyServerShip - Missions / mobiGlas / Starmap - Unable to set a route to the DestroyServerShip mission locations in the Starmap
+- Fixed - PU - Pyro - Save Stanton - Phase 7 - Missions - InfiltrateFreedomFightersOutposts - Explosive crate mission markers are not visible in the world, only on the minimap
+Save Stanton Chapter 2 missions are designed to be reputation locked to the faction you are working towards and due to this, the missions for the event will not be sharable to avoid cross-reputation issues
+## Known Issues
+- Blocker: PU - ASOP / Vehicles / Locations - Vehicle can't be stored at assigned hangar after landing
+- Critical: Infinite Loading - Players experience a long or infinite load screen
+- Critical: Players can't leave Klescher because the elevators open to a void instead of sending them to their hab on the surface
+- Critical: Multivehicle - PU - Vehicles / Exploit - Fuel - Hydrogen and Quantum fuels are not depleted from fuel tanks when performing normal flight or Quantum Travel
+- Critical: AC - Pirate Swarm / INS Jericho - AI - Enemy AI does not spawn and will eventually get a disconnection Error: 30000
+- Critical: PU - Starlight Service Station - Elevator Terminals / Locations - Calling for Starlight hangar elevator from the hangar may cause you to teleport into an empty elevator shaft
+- Critical: PU - Stanton - New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- Critical: PU - Actor - Personal Inventory / Storage Access - Loot Box / Armor - Interactions / PIT Wheel - Helmets that are carried then dropped via PIT menu will disappear/become lost
+- Critical: PU - Pyro - Frontier Outposts - XS Outpost - Locations / Art / Tech - XS Outpost Main Building interior and Storage Shed interior is missing multiple assets and collision
+- Critical: PU - Pyro - Asteroid Bases - Hangar - Locations / Collision - The collision for the hangar doors does not stream in until the player is inside the hangar
+- Critical: PU - mobiGlas - UI - Contract Manager - Contracts can overlap with sections below them when expanded
+- Critical: PU - Pyro - Physics - Locations - Contested Zones (CZ) - Plastic Curtains have solid collisions against projectiles and cannot be passed through if ADS
+- Critical: RSI Polaris - PU - Vehicles - VLM - Occasionally lose Components By Pressing A New Insurance Claim or Repairing A Damaged Polaris
+- High: PU - Personal Hangars - Spawning in Personal hangar is missing several Audio
+## Features & Gameplay
+- Locations
+- Buffed Size 6 and 10 Station Turrets Aiming Prediction
+- Ships and Vehicles
+- Disabled Drop Shadow on all Holographic Ships' MFDs
+## Bug Fixes
+- Possible Fix: PU - Stanton - Audio / Locations - While in your personal hangar, you can hear the sound from other players' hangars (STARC-118500)
+- Possible Fix: PU - Missions - Lorville / NPE / Tutorial - Your First Steps - Player is occasionally spawned in the wrong room when starting at Lorville (STARC-105760)
+- Possible Fix: PU - MultiSystem / MultiLocation - Shopping / Shopping Kiosk / Interaction / ASOP Terminal - Interacting a kiosk within a certain range will kick the player out of interaction (STARC-153508)
+- Possible Fix: Ship Loadout will not save after inserting salvaged parts (STARC-150084)
+- Possible Fix: Hit Registration/Pip Calculation Incorrect (STARC-152351)
+- Possible Fix: Multivehicle - AC Only - Vehicles / VMA - Remote turrets can be equipped to weapon slots that are not meant to be Size 4 Hard Points
+- Possible Fix: PU - Storage Kiosk/UI - A transparent box can be seen overlapping the "Transaction Confirmation" Screen when trying to complete hauling missions
+- Possible Fix: PU - Pyro - Courier - Mission Content / UI - Boxes are not marked upon accepting the mission
+- Possible Fix: PU - Cargo - Hauling Missions - Warehouse orders not counting collected & delivered cargo correctly (STARC-145445)
+- Possible Fix: PU - Vehicles - Law - attempting to land in party members vehicle hangar and bumping the ships causes turrets to turn hostile towards ship attempting to land
+- Possible Fix: PU - Stanton/Pyro - Jump Points - Ships / Vehicles / Game Code - Jump Failure does not always Place the Player at a Random Failure Point
+- Possible Fix: PU - Cargo Hauling - Mission Content / Mission Refactor / Game Code - Supplies will remain in players warehouse and not successfully deliver
+- Possible Fix: PU - Pyro - Mission Refactor - Hauling - Mission Content / Reputation - Players are able to access the other intro missions after completing one for a different Org
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 1 Server Crash

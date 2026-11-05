@@ -1,0 +1,89 @@
+Last Updated: Mar 19, 2018   10:36 am CDT |  15:36 UTC
+You may think no one can figure out your account credentials. Then again, why take the chance?
+Two-Factor/Two-Step/Multi-Step authentication adds a strong, extra layer of security to your account.  With an authenticator, you need to enter your Login ID (always keep this secret, precious!), password, and a generated code sync between your authenticator and computer. Even if someone figures out your credentials, they are blocked without the code.
+This guide provides some info on authenticators, how they work, and some troubleshooting!
+## What authenticators do we support?
+- Email: An email is sent to your RSI account email with a code. We recommend whitelisting our domain  cloudimperiumgames.com  with your email provider to always receive our emails through your inbox or per rules you set up.
+- Mobile Apps: We provide an RSI Authenticator app and support Google Authenticator, Authy, etc.
+## How do they work? The techie bits.
+When you attach an authenticator, and verify it, the two stay in sync by a shared secret. Shhh! For example, when you add a Google Authenticator, you scan a QRcode. This is the "secret" connected on your authenticator mobile app and in your RSI account. It gets more technical than that, but you get the point. It also syncs the time between system time and your phone.
+All of our supported authenticators work using  HOTP and TOTP algorithms.
+- With HOTP, the server and client share a secret value and a counter, which are used to compute a one time password independently on both sides. Whenever a password is generated and used, the counter is incremented on both sides, allowing the server and client to remain in sync.
+- TOTP essentially uses the same algorithm as HOTP with one major difference. The counter used in TOTP is replaced by the current time. The client and server remain in sync as long as the system times remain the same. This can be done by using the Network Time protocol.
+When authenticators get out of sync, you begin to understand why! Example, you buy a new phone or reset your phone. You install the Google Authenticator and scan the QRCode...and it doesn't work. The QRCode secret was for the old authenticator. The secrets don't match, this won't work anymore. And so on...
+When you log in, you enter your credentials, code, with a set duration. The system generates a cookie! The authenticators create, evaluate, and work on cookies. Important things to know:
+- If the system can't generate and store a cookie, the authenticator will prompt to login and creates a new device in a vicious cycle. So if you have cookies blocked on your browser, you will get asked for the code every time you login, regardless of Duration.
+- If the cookies are cleared, it will prompt for a login and generate a new cookie. This adds a new device in your security logs.
+- If the Duration expires, it will prompt for a login and generate a new cookie.  This adds a new device in your security logs.
+- The cookie includes a duration (as seen on Connected Devices in your Security tab) and other data.
+## Add an Email Authenticator
+- Start by visiting our site and click Account to login.
+- Select Security.
+- Security is password protected! Enter your current password for your RSI account.
+- Select EMAIL as an authenticator. You will receive codes via your email account. This is recommended if you don't have a smartphone.
+- Complete authentication. You will receive a code to enter via email to enter.
+- Enter the code, and then set how often you wish to verify: every login, monthly, or yearly.
+- All done! A cookie is generated on your local device allowing you to login for the duration. If you have cookies blocked, you will be asked for the code every login.
+## Add a Mobile Authenticator
+- Start by visiting our site and click Account to login.
+- Select Security.
+- Security is password protected! Enter your current password for your RSI account.
+- Select AUTHENTICATOR MOBILE APP to receive codes via a mobile app.
+- We support the following apps that you can find on Google Play and the Apple App Store: RSI Star Citizen Mobile Authenticator,  Google Authenticator, Authy.
+- Open the app on your phone to complete setup. For the RSI App: Tap Scan QR Code. Google or Authy: Tap Add, and click Scan Barcode.
+- Use the phone's camera to scan the QR code displayed on your RSI Account page. If you can't scan the code, complete configuration using the Manual mode.
+- A code displays in the mobile authenticator.
+- Enter the code, and then set how often you wish to verify: every login, monthly, or yearly.
+- All done! A cookie is generated on your local device allowing you to login for the duration. If you have cookies blocked, you will be asked for the code every login.
+## Save those Backup Codes!
+We recommend you download and save a copy (print out/file) of the back up codes. These codes let you:
+- Login if you forgot your phone or don't have email access.
+- Login to remove your authenticator if you uninstalled it on your phone, or changed your email address.
+## My credentials are correct, but it's not working? Let's start with Duration!
+We have a bit of glitch where the website and Launcher may not select a default Duration. Make sure to select a Duration.
+When logging in with a mobile authenticator, you may have an authenticator error. Your credentials and code may be correct, but you may need to select a Duration. You may also get this issue when logging into the site on your smart phone or tablet.
+- Visit our site and log in to your Account on your desktop computer.
+- When entering the code, make sure to select a Duration for the Authenticator. For example, select month or year.
+- A cookie is created locally on your system for the authenticator.
+## Sync your Mobile App
+You may need to sync your Mobile App. It's a quick and easy click of a button. If you change your system clock, you definitely need to sync the app! The algorithm logic for all authenticators is based on a mix of parameters, cookies, and system clock.
+RSI Authenticator
+You can sync the timezone between the RSI mobile app and RSI servers:
+- In the Authenticator App, select the menu icon in the top right (three dots), then select Settings.
+- Tap the option Time correction for codes. The device will synchronize with the server.
+Google Authenticator
+To make sure that you have the correct time for your Google Authenticator app:
+- Go to the main menu on the Google Authenticator app
+- Tap More triple dot icon, then Settings.
+- Tap Time correction for codes.
+- Tap Sync now.
+On the next screen, the app will confirm that the time has been synced, and you should now be able to use your verification codes to sign in. The sync will only affect the internal time of your Google Authenticator app, and will not change your device’s Date & Time settings.
+## Authenticator works on site, not in Launcher!
+If you have issues in the Launcher, clear the Launcher cache:
+- Right click on the Windows icon and select Run.
+- Enter the following and click OK: %appdata%\rsilauncher
+- Select and delete the following folders: GPUCache and Cache.
+- Run the Launcher or our site and Account to try logging in. Your authenticator code should work.
+If you Run as Administrator, you need to clear the cache in that specific Admin folder. To see what user account folders you have, use a File Manager and navigate to c:\Users. Make note of the name like Admin. After opening an appdata location, you can edit the folder location bar with the admin name. For example: C:\Users\admin\AppData\Local
+## Cookies blocked?
+It's possible you have your cookies blocked on your browser. This can affect your Launcher too.  Check the cookie settings in your browser. This article can help with information for all major web browsers: https://www.wikihow.com/Enable-Cookies-in-Your-Internet-Web-Browser
+## All else fails...Clear COOKIES!
+So you have synced, cleared the Launcher and web browser cache, but the code still isn't accepting. You may have a new mobile authenticator, or synced settings, but the cookie may need to be replaced. This article can help with clearing cookies for all major browsers: https://www.lifewire.com/how-to-delete-cookies-2617981
+## I can't complete authentication/Account Recovery on my mobile!
+Please try on a desktop, laptop, a non-mobile system. We're investigating possible issues with mobile for generating cookies and handling logins.
+## Mismatch between header and cookie session id error!
+You may receive the error "Mismatch between header and cookie session id" when logging into the My RSI website and game with the wrong credentials. Usually, you receive the error when trying to login with your email address and password. My RSI, Spectrum, and the Delta Launcher require your Login ID and password.
+Here is some helpful information I share with everyone about logins:
+- The website and game will always use your Login ID and password to access.
+- When you change your password, you will enter your email through Account Recovery (in My RSI).
+- When you change your password, you are automatically logged into the site. After that, switch to Login ID and password.
+## Replacing your Authenticator
+If you replace your Mobile Authenticator app by switching, or just uninstalling and adding a new one, you must REMOVE THE AUTH FIRST!
+Remember, when you scanned that QRcode or confirmed the connection between the app and your account? They shared a secret. That secret key is associated only with that installed authenticator.
+Removing the Authenticator:
+- Login to your Account on our site.
+- Click Security. You'll need to enter your password again. This is to add security to your account settings.
+- Remove the authenticator.
+- Uninstall the authenticator on your mobile phone.
+- Add it all over again, just like the first time!
+## :rocket:  More coming soon!

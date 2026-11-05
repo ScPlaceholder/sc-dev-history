@@ -1,0 +1,37 @@
+## Star Citizen Patch 3.13.1k
+Alpha Patch 3.13.1k has been released to the PTU, and is now available for all backers to test! Patch should now show: VERSION 3.13.1-PTU.7445322.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Audience: All Backers
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Stability
+This build should make a noticeable difference in client stability along with a server crash fix. We also wanted to move the PU selection to be the first selection on the list which should make it an easier experience for new players.
+Known Issues
+- Cursor may remain visible, and isn't constrained to the game window
+- Items missing after update / Character Reset / pledge change
+- A maximum of 50 contacts show in-game, regardless of how many friends are present on Spectrum
+- Abnormally long delay between pick up storing of fps mineables/harvestables/items
+- Ship positional Desync
+- Meet Miles Eckhart not working
+- Swapping FPS weapon drop weapon
+- Medical Pen (Medi Pen) not healing blood loss
+- Oxygen is depleted while sitting in ship
+- Getting crime stat for killing lawful bounty targets
+- Mission target NPCs not loading in / taking a long time to load in when the objective is reached
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Constellation can despawn when flying 30km away after undocking
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+## Feature Updates
+Core Tech
+- Moved Join PU selection above hangar module
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash

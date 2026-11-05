@@ -1,0 +1,25 @@
+Hello, everyone!
+As already mentioned, our devs are currently working on many improvements and bug fixes that, although not on the roadmap, will certainly improve your experience in Alpha 3.11.
+So, we would like to give you some feedback on how your suggestions for some of the game elements already implemented have been taken up by our teams, and which changes you can welcome on patch day.
+Space combat is undoubtedly an important element in Star Citizen, and this includes missiles and countermeasures. Our current goal is to include some long-awaited fixes in Alpha 3.11 to missile and countermeasure gameplay. We are also preparing the tech and gameplay for some bigger changes coming next year, with the so-called Missile Operator Mode. Please keep in mind that the missile gameplay improvements in Alpha 3.11 is not the end of the road, but is a strong step in the right direction towards a deeper combat experience.
+Thus, we spoke with the Vehicle Experience Team to find out more:
+Missiles
+The missiles themselves have numerous changes to support more interesting gameplay and avoid the frustrations of Alpha 3.10:
+- We now only allow four simultaneous missile locks at the same time. Additionally, you can only lock one missile per rack. This means that ships with more missile racks will be able to utilize more locks and launching multiple missiles will be better distributed across the ship.
+- The locking process has changed - if a pilot allows a target to fly outside the locking cone, the missile will disarm itself and the locking process must be reinitiated.
+- Missiles no longer have persistent knowledge about their target; if a pilot successfully evades a missile, it will try to re-lock rather than immediately heading towards the target. If unsuccessful, it will self-detonate after some time.
+- Players can only fire one missile type at a time. If a player has a valid missile lock but decides to swap to a different type (e.g. from Ignites to Arresters), all existing locks will be canceled.
+- Missiles will now react properly to countermeasures.
+Countermeasures
+We decided to step away from the existing countermeasure management to allow more interesting gameplay choices. The most significant difference compared to Alpha 3.10 is that the player does not select a specific countermeasure for a specific seeker type anymore. Instead, the player decides "how" the missile should be countered. This is done by either launching a "decoy" or deploying a "noise field." (these are just working titles as we are still determining the lore behind the tech and looking for appropriate names.)
+- A "decoy" is an object that effectively creates a powerful signal source that missiles are attracted to. In Alpha 3.11, all missile types will react to decoys to varying degrees. Of course, a decoy has a limited time in which it is active. Once a decoy is burned out, an incoming missile will try to regain a lock on to its original target. You can even try to use your own countermeasures to protect your friends in another ship.
+- A "noise field" creates a small space in which signatures are actively distorted and jammed. A ship deploying a noise field fires a small projectile that explodes and spreads out tiny particles that confuse sensors, regardless of whether they're based on EM, IR, or CS signatures. If the ship's signature is low enough, a pilot can even hide in that cloud. However, this will also actively jam the ship sensors as well, so radar contacts will disappear. Missiles are affected by this in the same way, of course.
+- Bigger ships like the Carrack have larger countermeasures with longer and stronger effects.
+- All keybindings concerning countermeasures have been updated. We have removed the cycle keybinds (next, previous countermeasure) in favor of launching countermeasures directly.
+- Countermeasure visual effects have also been updated and will now be properly replicated in the PU.
+Missile related HUD updates
+To support the changes to missile gameplay, we have added and tweaked a couple of HUD widgets:
+- We re-added an ammo indicator showing the number of available countermeasures (bottom left of the HUD).
+- We added a widget showing data about your currently selected missile (bottom right of the HUD). It shows you what kind of seeker the missile has, how many missiles you have left on your ship, and the number of active missile locks.
+- The missile warning system has been extended. It will now show the estimated time-to-impact for each category of incoming missiles. That will allow you to better strategize how you want to combat an incoming missile.
+As with every new or updated feature, we are eagerly awaiting your feedback after your first dogfights in Alpha 3.11.

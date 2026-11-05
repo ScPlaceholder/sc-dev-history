@@ -1,0 +1,79 @@
+## Star Citizen Alpha Patch 4.8
+Alpha Patch 4.8 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.8.0-PTU.11759767.
+- Audience: Wave 3
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Disabled in current PTU builds
+## Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Mission: Tactical Strike Groups & QV Extraction Stations (New reputation gate tonight)
+- New Event: Return of Xenothreat
+- Item Recovery: Vehicle Loadouts
+- Command Module
+- Flight Suits & G-Force Resistance
+- New Mission: Defend Location - Ship Battles V3
+- Kastak Arms Plasma Grenade
+- UltiFlex Crossbow
+Known Issues
+Note for tonight: Consider recopying your account if you see strange behavior, like hab spawning instead of hangar on launch to home location, missing items, vehicles retrieved incorrectly
+- Multivehicle - Docking - Keybinds - conflicting keybinds not allowing ship docking to stations
+- PU - Missions - Tutorial - Your First Flight - NPE / UI / ASOP Terminal - The tutorial vehicle is not present on the ASOP Terminal
+- PU - UI - Party connection Playing on repeat after quantum travel after a party member crashes and reconnects
+- PU - Multisystem - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+- PU - Multi-System - Stall / Freeze - Client - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing and using Commodities Kiosks
+- PU - Armor / Clothing / Inventory Rework - "Right Click > Equip" does not function if a paper doll slot is occupied, prevents further inventory interactions
+## Features & Gameplay
+Gameplay
+## New Mission: Defend Location - Ship Battles V3
+Ship Battles V3 introduces the Defend Location archetype, a style of ship combat mission that has been a design goal since the original Ship Battles release. The premise is straightforward: a location is under attack and it is your job to stop it. Enemy bombers make coordinated strafing runs on fuel storage and other critical infrastructure, and your task is to intercept them before they can complete those runs. Let too many get through and the mission fails.
+Alongside the core Defend mission, V3 also introduces a combined archetype that layers an escort objective on top of the defense. While you are shooting down bombers, a friendly ship is either launching from the station or inbound for landing, and hostile fighters are focusing on it. Both objectives are active at the same time. Completing both is required to succeed, and failing either ends the mission. This combined variant is the more demanding of the two and is designed to stress different ship classes, with interceptors and heavier fighters filling different parts of the engagement.
+V3 also updates the existing Escort Ship archetype from V2 with Ace Pilot spawns and more varied escort ship flight paths, increasing the difficulty ceiling and reducing the predictability of those missions for players who have already run them extensively. Defend Location missions are available across asteroid mining bases in Stanton, Pyro, and Nyx at a wide range of difficulty tiers and are issued by Foxwell, Head Hunters, CFP, Rough and Ready, and several corporate and logistics organisations depending on location.
+Mission Details
+- Available at asteroid mining bases across Stanton, Pyro, and Nyx via Contract Manager
+- 385 total mission locations across both systems, spanning 149 individual bases
+- Difficulty ranges from Very Easy through to Super tier (6 difficulty levels)
+- Missions are rep-gated; Foxwell contracts additionally require completion of the Foxwell intro mission before becoming available
+- Abandoned and personal cooldown time of 15 minutes per mission
+Rewards
+- Completing Defend Location contracts earns aUEC, Faction Reputation, and Scrip with the issuing organisation
+- Foxwell contracts pay Mercenary Scrip; Head Hunters contracts pay Council Scrip
+- Blueprint rewards are available at higher tier completions
+- No cost to accept any Defend Location contract
+## TSG Missions Polish
+All TSG missions (full TSG and solo missions) are now only available to players that are in NyxSystem, have completed the Intersec intro mission, and have Rank 3 or above with intersec. Further polish to performance, art, LOD, and audio. Updated aUEC and blueprint rewards.
+## Flight Suits & G-Force Resistance Polish
+Add message about perceived gForce resistance percentage, extends vehicle message system with float values. Flight suits added to Area18 Cubby Blast and Grim HEX Skutters
+## Item Recovery: Vehicle Loadouts Salvage Polish
+Salvage Tool - Added Registration Icon and modified color themes for registration and bricking status
+- Items registered to you will have a Green Registration icon and show the text in green
+- Items registered to other players will have a Red Registration Icon and the text will be red
+- Items that are bricking or bricked will have their status text set to Red with a timer
+Weapon & Items
+## New FPS Weapon: UltiFlex Crossbow
+Implementing the base version long-awaited UltiFlex crossbow. Featuring a devastating, shattering bolt and harsh projectile drop, the UltiFlex Crossbow rewards skilled aim with immense power. Its near-silent firing mechanism lets you strike quietly and gain the upper hand on your foes.
+The craftsman at UltiFlex went through hundreds of prototypes to discover the perfect lightweight material with the right combination of strength and flexibility for its Novia crossbow, an ideal companion on everything from frontier expeditions to tactical infiltrations. With a pull of its firing action, the Novia near-silently launches a heavy bolt that shatters on impact causing devastating damage to close-range targets. Players can currently use the new crossbow in Single Elimination AC matches as well as receiving the blueprint as a reward from completing TSG. (Currently just the base version of the crossbow is in the PTU)
+Crossbow Stats
+- Weight: Light
+- No damage drop off
+- Projectile Velocity: 185 (3/4x Slower than most FPS weapons)
+- Aim down Sight Time: 0.18
+- RPM: 42
+- Mag size:  5
+- Custom Sway Profile, 'Very sticky' allowing for flicks
+- Audio: 35M perception radius (Weapons are 150m) and custom attenuation falloff.
+Damage:
+- 2 tap medium armour to the chest (PVP)
+- 1 tap heavy helmets (PVP)
+Design Notes from Zac
+"Kept ya waitin huh? The long awaited crossbow is here featuring some very competitive stats such as it's fast aim time, amazing hipfire, high alpha damage and light weight build but with the downside of a visible tracer, limited ammo capacity, slow and heavy drop on the projectile.
+Overall the weapon allows for high skill expression being a nimble, light weight devastating weapon in the right hands"
+## Bugfixes & Technical
+Fixed 2 Client Crashes
+Fixed 4 Server Crashes
+- Potential Fix: Multivehicle - PU - Vehicles - Command Module - The Command Module will undock / the player will lose control of the Caterpillar when entering zone with other clients - STARC-204143
+- Potential Fix: PU - Landing Zones - Hangar Spawning / Locations - Players have a chance of spawning inside a different player's Hangar - STARC-147041
+- Potential Fix: PU - Tactical Strike Group - Mission Content / Locations / Art -  encountered an invisible asteroid while following Gabe
+- Potential Fix: PU - Stanton - Transit / UI - Transport Refactor - Carriage panel sometimes displays "Restricted" and can relocate players - STARC-201887
+- Potential Fix: Multivehicle - PU - Vehicles / Docking - Command Module - When Command Module docks with another ship it will gain control over that vehicle - STARC-204211
+- Potential Fix: PU - Inventory Rework - UI - Inventory does not update Capacity and Space changes in Personal Inventory - STARC-196200
+- Potential Fix: Drake command module missing animation audio

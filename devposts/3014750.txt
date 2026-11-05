@@ -1,0 +1,29 @@
+## Star Citizen Patch 3.9.0s
+Alpha Patch 3.9.0s has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.9.0-PTU.5167379.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Note: This is a small patch to fix issues with persistence. Please avoid recopying to PTU and log money changes session to session, resetting occasionally to check function.  Use the regression to report issues: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-9-0s
+Testing Focus
+- Character reset
+- LTP
+- aUEC stability
+- Character state stability
+Known Issues
+- Ships can end up in an unknown and irretrievable/claimable state.
+- Players cannot access the private lobby in Star Marine or Arena Commander.
+- Players are unable to change ship selection in Arena Commander modes.
+- The multiTool from the prison commissary does not come equipped with an OreBit mining attachment.
+- If the player exits to menu/disconnects/crashes during the loading  screen into or out of prison their loadout will not be changed.4
+## Feature Updates
+## Bug Fixes
+- The character should no longer become invisible and unusable.
+- Players should no longer spawn without their mobiGlas attached.
+- Duplicate ships should no longer occasionally generate.
+- aUEC should remain consistent after a character reset.
+- aUEC should re main consistent from session to session.
+Technical
+- Improved LTP to be more optimized and to make issues easier to investigate.

@@ -1,0 +1,47 @@
+Spectrum Alpha 0.3.5 - Release Notes
+(2017-06-09)
+New Features
+New User Forums Settings!
+You can now select your preference for how threads are sorted (hot, last-activity, top, new) in channels via the Settings.
+You can now select your preferred thread view mode (nested, classic) via the Settings.
+You can now select your preference for how thread replies are sorted (top, new, old) via the Settings.
+The forum category default sort setting has been removed and is replaced by a user-specific setting.
+The thread type chosen in previous Spectrum versions has been replaced by a user-specific setting pair (sort and view mode)
+Threads will now persist your preferred view mode and sort if you change it from your user-specific setting.
+A new forum category level setting allow you to enforce that threads must be created with a tag.
+Roles: Community admins can now set specific roles to be tracked for display in the threads list
+Forums: Threads list will now indicate which threads contain posts made using tracked roles in that community (Staff posts will be marked in the SC public community)
+Forums: You can now bookmark forum tags directly to your sidebar!
+Forums: You can now browse the tags available for each forum category and community index
+Bookmarks: You can now edit your bookmark aliases by visiting the "Manage Bookmarks" view.
+Search: New filters are now available to search by author and role within your communities.
+Improvements
+Categories: Improvements to the forum category threads list to include yellow unread markers in a tighter interface
+Categories: More responsive layout for threads list on thinner window sizes
+Categories: Major improvements in loading speeds for forum category thread listing
+Threads: Spectrum now tracks if you read each reply in a thread and will display a yellow unread marker to indicate a reply you have never read
+Threads: Spectrum will now properly propagate the OpenGraph images if a thread has a media preview when using permalinks
+Search: UI is now available also on mobile and tablet size displays
+Lobby: Presences are now rendered using virtual lists to allow fast display of large groups (no more: Too many users to display)
+Emoji: Data set was upgraded to include Unicode 9 / Emoji 4
+Bug Fixes
+Spectrum no longer tries to apply style on link, emoji and mention entities
+Sidebar: Communities are no longer partially obscured when the list is expanded
+Lobby: Inline styles are now allowed within /me command
+Lobby: Ensure the message is saved after editing even if only the styles where modified
+Lobby: Fixed issue that prevented using up arrow to edit the last message a second time
+Threads: Posting a reply to a thread will now properly mark the thread as read up to your reply.
+Threads: New reply bar will now properly update once a thread is read fully
+Forum: Editing a thread OP or reply no longer resets the thread last-activity in the category
+Categories: Fixed misbehaving navigation bar and sticky header on iOS
+Categories: Fixed sort selector rendering on Internet Explorer
+Embed: GIPHY is now a supported .gifv source
+Search: You are no longer obligated to provide a search term for results to be fetched
+Image modal should now be centered properly on mobile screens
+Known Issues
+The search indexer is currently re-indexing all messages to fix a problem with badly reported authors. It should be done in the next hour!
+A big shoutout to all the "Spectrocatis" for helping us test and iterate on this branch!
+@ChrisK3 @Conflict_Viper  @Dast_ro @Eskel_Gorov @Holan @J0sh @Joth_Morrow @Malakie @lord_rive @Odeis @Seb71 @secretTempler @vertagoOne
+Special thanks to @Void-Singer, @Kefeinzel, @WhiskeyOmega for being so relentless :blush:
+"Cross My Heart, Smack Me Dead, Stick a Lobster on My Head"
+-b

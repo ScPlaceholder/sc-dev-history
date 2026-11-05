@@ -1,0 +1,51 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to all backers!  Patch should now show: VERSION 4.0.0-EPTU.9470730.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US/EU Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 4:6:500 (4 Servers in Stanton, 6 Servers in Pyro, 500 players total on the mesh)
+Starting aUEC: 15,000,000
+## December 19th Hotfix
+This Client/Server Update fixes
+- 3 Server Crashes
+- 4 Client Crashes
+- Fixed - PU - Inventory / Persistence - Equipped armor looted from AI disappears when crossing Server Authority Boundaries and between login sessions
+- Fixed - Players encounter "Repositioning Player" message at odd times
+- Fixed - Inventory - Place From Inventory doesn't work unless you re-open personal inventory
+## Testing/Feedback Focus
+- Server Meshing
+- Pyro Star System and New Locations
+- Mission Refactor
+- Contested Zones
+- Jump Points
+- Advanced HUD View
+- Home Location Instanced Hangar Spawning
+## Known Issues
+- PU - Stanton - Audio / Locations - While in elevator carriage attached to hangar, you can hear the sound from other players' hangars
+- PU - MultiSystem - Locations - NPE / Vehicles / Quantum Travel - Some orbital markers around Stanton and Pyro sends player into wrong direction when they QT to them
+- PU - Multisystem - Locations / Inventory / Actor - Local and Personal Inventory may disappear when force respawning (Workaround: Force Respawn again)
+- PU - Locations / Quantum Travel - Pyro V - Orbital Markers above Pyro V may path through the planet, not appearing as "Obstructed", causing critical ship components to be destroyed
+- PU - Pyro - Rundown Station (R&R) - Multiple Locations - Locations / Physics / Vehicles - Players flying in the vicinity may explode consistently at random
+- PU - Medical Insurance Terminal / UI - Regeneration kiosk UI does not update after transferring imprint
+- PU - Rundown Stations (R&R) - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- PU - Actor - Personal Inventory / Storage Access - Loot Box / Armor - Interactions / PIT Wheel - Helmets that are carried then dropped via PIT menu will disappear/become lost
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+## Bug Fixes
+- Fixed - Multivehicle - Quantum Travel - Nested vehicles are left behind when transitioning authority boundaries during Quantum Travel (STARC-145688)
+- Fixed - Locations / AI - NPCs overspawning gamewide (STARC-146073)
+- Fixed - PU - Pyro - Contested Zones (CZ) - Ghost Arena - Art / Locations / Interactables - The Wasteland and The Crypt Keycards do not unlock their corresponding reward doors (STARC-143701)
+- Fixed - PU - Mining / Mineable Composition - Rock with Silicon is available for Mining and when extracted produces no material (STARC-145671)
+- Fixed - Multivehicle - PU/AC - Vehicles / hit registration - Players with high ping will experience high TTK and phantom hits even after weapon fire has stopped (STARC-145046)
+- Fixed - PU - Pyro - Asteroid Bases - Locations / UI - Asteroid Bases airlocks are not cycling (STARC-144680)
+- Fixed - Crusader Hercules Starlifter - ALL VARIANTS - PU - Vehicle / Ramp - When the Ramp is Opened, the Starlifter shift off balance (STARC-146453)
+- Fixed - PU - Actor - Personal Inventory / Storage Access - Loot Boxes / Armor - Items cannot be interacted with after being transferred from local storage to an actor's hand
+- Fixed - Multivehicle - Pu- Vehicles - Turrets - Unable to target vehicles in turrets
+- Further fixes for Players encountering "Repositioning Player" messages
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 1 Server Crash

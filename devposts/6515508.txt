@@ -1,0 +1,8 @@
+Heya,
+turning off cruise mode on throttle input is intended. Although at this point though I am pretty confident we'll remove cruise control the way it currently works. It will be replaced by extending the normal absolute throttle axis where you can swap it over into a relative / sticky mode. Together with some additional stick functions this will be way more flexible.
+Parts of that are already in 3.22 although there is still some work left like:
+- have only one axis to assign for throttle (abs), not three (abs, rel, abs/rel)
+- add additional UI that tells me about sticky vs absolute throttle
+- make sure the ingame throttle animation mirrors the player input
+- optionally add safeties so extending landing gears, etc. resets the sticky throttle
+Hope that makes sense.

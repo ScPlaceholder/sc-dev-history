@@ -1,0 +1,51 @@
+## Star Citizen Alpha Patch 4.4
+Alpha Patch 4.4 has been released, and is now available to test!   Patch should now show: VERSION 4.4.0-PTU.10664228.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 6:2:2:600
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+IAE Expo Hall In Orison will be enabled in tonight's build for testing over the weekend
+- Stability & Bugfixes
+- Nyx / Levski / Delamar
+- Interstellar Hauling / External Freight Elevators
+- Vanduul-Tech Smugglers Mission
+- Ballistic Missile Launcher "Boomtube"
+- New FPS Weapon: Triple Threat
+## Known Issues
+Levski performance and design polish is ongoing during PTU
+- PU - Nyx - Levski - Physics / Locations - Elevator Transit Entrance has no Collisions which causes players to EVA while entering and Exiting the Elevator
+- PU - Nyx - Levski - Locations / ASOP Terminal / Fleet Manager - Vehicles are in claim state upon retrieving
+- PU - Nyx - Law / Locations - No CrimeStat when committing crime in Nyx system; Law appears not to be set up as charges cannot be filed
+- Stall / Freeze - Client - PU - Multisystem - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing Commodities Kiosks at locations like at TDD and Admin Offices in Pyro
+- Multi-Location - PU - Stanton - Locations / Actor Respawning - Players may not respawn at their primary residence after using self-destruct or force-respawn
+- PU - Nyx - Levski - ATC / Audio / Locations - Multiple ATC voice lines all play at once when requesting take-off
+- PU - Locations - Rest Stops - Refinery - Mining / Shopping / Selling - Ore Sales Kiosk - When attempting to sell at the Ore Sales Kiosks, the confirmation screen will return with undefined
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- PU - UI / Inventory - Freight Elevator - Kiosk - The Search function of the Freight Elevator terminals ignores localized item names
+- PU - Stanton / Pyro - ASOP / Expedite / UI - Claimed ships will show as delivered once "claim" is selected but still need to be expedited/have a timer till they are usable
+- PU - Stanton - Pyro Gateway - ATC / Locations / Hangars - Unable to contact ATC via keybinding shortcut
+- PU - Locations / Transit - Elevators - Grim Hex elevators are backwards
+## Features & Gameplay
+Locations
+- Nyx: Further overall mission inclusions into Nyx. System wide Quantum Travel Music transition polish.
+- Levski and Delamar: Further performance optimization, lighting, and LOD polish.
+- Further IAE Hall Art and Lighting Polish
+## Bug Fixes
+Star Citizen Alpha 4.4.0 currently contains nearly 140 bugfixes for issues occurring in 4.3.2, 33 of which originated from the issue council.
+- Potential Fix: PU - NYX - Levski - Cordys - UI / Shopping Kiosk - the UI display for Cordry's shopping kiosk is very bright compared to all other kiosks in Levski (STARC-184393)
+- Potential Fix: PU – Nyx – Levski – Replace Me / Art / Locations - ReplaceMe Balls can be seen near Grand Barter passageway (BUG-339812)
+- Potential Fix: PU - Nyx - Levski - UI / Kiosks / Locations - Some of the vehicle names listed on the Teach's Ship Rental & Ship Shop kiosk contain placeholder strings (STARC-184375)
+- Potential Fix: Levski Hangar - Ship Calling Animation is broken
+- Potential Fix: PU - System-to-System Hauling - Mission Content / mobiGlas - Various Interstellar Covalex master rank contracts state to move cargo from 'Levski to Levski'
+- Potential Fix: PU - Boomtube Rocket Launcher - Weapons / VFX - Arming distance is not present, rockets will explode at any distance
+- Potential Fix: PU - Nyx - Recover Cargo - Missions / Cargo / Game Code - Cargo does not spawn inside the mission ship and objective shows Deliver 0/0 Cargo Boxes
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Locations / Art - External sunlight is leaking to the interior of the Teachs
+- Potential Fix: PU - Nyx - Vanduul Tech Smugglers - Mission Content - Killing Vanduul before completing the goto objective will mean the "defeat vanduul" objective will remain onscreen
+- Potential Fix: PU - Nyx - Vanduul Tech Smugglers - Locations / AI - AI can get trapped inside crate asset at Cargo Deck B
+## Technical
+- Fixed 1 Client Crash
+- Fixed 2 Server Crashes
+- Fixed a Server Deadlock

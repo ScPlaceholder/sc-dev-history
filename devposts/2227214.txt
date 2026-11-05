@@ -1,0 +1,84 @@
+## Star Citizen Patch 3.6.0
+Alpha Patch 3.6.0 has been released to PTU and is now available to test!  Patch should now show: PTU-2041640.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  In addition, not all ships are currently available and pledge copy is disabled.  We will provide a small selection of ships for usage for now.
+New Launcher!!!
+We are using a new, unified launcher (version 1.2.0).  You must download the new launcher here to access 3.6.0 PTU:  https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/rsi-launcher-1-2-0-testing-notes-1
+Testing Focus
+- Ship combat balance: Ship shields, missile damage, missile counter-measuring
+- Flight: Hover mode, acceleration control
+- Head tracking
+- P-72 Archimedes
+- Ship component degradation
+- Ship purchasing
+- Pip accuracy and ship flight jitter
+Known Issues
+- You will likely experience some instability and crashes. We are gathering data on the back-end and will be monitoring closely.
+- ASOP terminals at Area18 may not function correctly.
+- The updated criminality, law system, and VOIP/FOIP updates are only partially implemented, with some missing behavior and needed elements. We will not be describing or taking feedback on this topic just yet.
+- Hover mode has some impending changes/updates, we will not be taking feedback on it until those are complete.
+- Textures will display across the visor on some helmets.
+- Depending on ship, sometimes when attempting to file an insurance claim the timer will either start with a long delay or never start at all.
+- Headtracking
+## New Features
+General
+- Added a hold to activate option for head tracking (available at the comms menu).
+- Added option to select head tracking source and camera selection.
+Universe
+- Added automated turrets to GrimHex.
+Missions
+- Added illegal style delivery missions for prohibited and stolen goods.
+Ships and Vehicles
+- Added hover mode.
+Hover mode will automatically engage near planetary surfaces at a low enough speed.  When engaged, ships will swap to VTOL thruster modes, which will include alternate thruster configurations when applicable. When in hover mode, the ship will hover level until the player gives an input.  Pitch forward/backward will result in moving forward/backward and roll will result in lateral movement.  If the ship attains enough forward velocity it will automatically switch to rear thrust driven forward flight.
+- Added ship purchasing kiosks to ship shops around the verse.
+- Added visual wear to ship components and tweaked the parameters of wear.
+Ship weapons now have visual degradation and the rate of normal degradation for all ship components has been increased.  Degradation can accumulate through time and through specific behaviors (frequent overheating, damage).
+- New Ship: Kruger Intergalactic P-72 Archimedes
+- New Ship Weapon: MaxOx Neutron Repeaters.
+Rapid fire short-mid range weapons found in sizes 1 through 3.  Uses "neutron" style damage, which has damage that increases over its range. Available at Centermass.
+- Added nozzle flaps to the F7C and F7CM.
+- Grouped thrusters into a "power group" which can now be throttled to control thruster acceleration.
+Thruster power throttle is default bound to RALT+mouse wheel and is available in the keybinding menu.  To allow players to track current power throttle to thrusters, a meter of percent power has replaced what was the hydrogen fuel meter and hydrogen fuel has moved to a static percent readout on the bottom of the HUD.
+- Added a cargo grid to the Valkyrie.
+FPS
+- Added the ability to free look and activate head tracking while holding a weapon.
+- Free look in first person now operates as a hold rather than a smart toggle.
+- New FPS Weapon: Behring S38 Pistol
+This reliable Behring sidearm features a streamlined design and a lightweight polymer frame that helps to minimize recoil. And with the quick fire semi-automatic fire mode, it's easy to see why the versatile and dependable S38 has become a standard sidearm across the Empire for both citizens and law enforcement officers.  Can be purchased at Center Mass and Port Olisar.
+- New FPS Weapon: Klaus & Werner Lumin V SMG
+A solid and dependable laser submachine gun with a reputation for durability, reliability, and accuracy. Can be purchased at Center Mass and Conscientious Objects.
+## Feature Updates
+General
+- Translational and roll motion for head tracking has been temporarily removed.
+- Unified TrackIR and FOIP head tracking buttons.
+Universe
+- Complete update of Rest Stop exteriors and shapes, including thematic variations.
+- Moved Delamar further away from Crusader and into its own object container.
+- Updated commodity pricing to reflect the addition of black markets and stolen goods.
+- Updated several locations to now use decoupled lighting for improved visual look.
+- Reduced the volume of the combat music and added an option to mute this music event.
+- Added the ability for AI pilots to strafe during passes.
+- Added Oxypen and MediPen to Lorville Tammany and Sons shop.
+- Updated transit system to streamline flow and usage.
+Trains are now on loops with multiple trains on each line, which should reduce waiting times across the board.  Elevators can now move to any pad/hangar and are no longer specific to one hangar/pad.  A selection of available destinations will be available via interaction at the interior elevator button panel.
+- Added "average" skill level for AI pilots to increase variation.
+- Updated and expanded player carriable items.
+- Adding clustering for mineable entities.
+Mineable rocks now appear in medium to large clusters rather than single rocks and their locations have been updated to reflect this.
+- Lighting pass on exteriors of underground facilities.
+- Various visual tweaks around Lorville.
+- Increased refinery kiosk pay out to give a slightly higher yield to mined materials.
+Missions
+- Re-enabled ECN missions.
+- Various improvements to FPS based missions.
+UI
+- Video and lighting improvements to comms calls.
+FPS
+- Improved the look and feel of the character jump mechanic.
+- Updated ragdoll properties to improve look and feel in all situations.
+- Polish to smooth out first person turns and crouch turns.

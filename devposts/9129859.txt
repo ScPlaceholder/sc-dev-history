@@ -1,0 +1,44 @@
+Alpha Patch 4.10.1 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.1-PTU.12625701
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Orison Relief Support
+- Ship Hangar Elevator Flow
+Tonight's build brings in a lot of technical updates to how the player hangar elevator retrieves and brings in ships. Let us know if you have any issues with ships failing to spawn, being offset on load, or any other issues encountered with retrieving and storing ships!
+## Features & Updates
+Orison Relief Support
+The event requirements for completion have been reduced by quite a lot in today's ptu. Blueprints have been removed from the Orison Relief Support reward track and are now direct rewards granted to your account. These should be attributed to your PTU account only when completing on PTU.
+Freight Elevator
+An item limit has been added to the freight elevator platform to prevent unstowing more individual items than the platform can handle
+Hauling Contract Distribution
+Cargo distribution across multiple pickup locations now accounts for SCU weight per location, producing more sensible splits and percentile-based cargo amounts corrected
+Added error reporting for contracts where dropoff and pickup counts do not match to help track down any further issues with these.
+## BUG FIXES & TECHNICAL
+Shard Recovery
+Players who become stuck unable to connect to a shard, either because that shard is isolated or because their spawn repeatedly fails, are now automatically diverted to a healthy shard rather than looping on the failing one. This one is a tough test on PTU due to its nature so please let us know if you run into any issues getting locked to a shard!
+Performance
+Improved audio thread handling to reduce frame rate drops caused by repeated thread initialization
+Better memory management for zone partition object page lists, reducing frequent allocation cycles
+- We have further logging and are testing changes with Battaglia Story 2 and Story 3 contracts never being created on populated shards. Testing these out in tonight's build would be great
+- Potential Fix: Ships Delivered in Personal Hangars are not Properly Positioned and can be damaged
+- Potential Fix: ASOP Terminal unable to retrieve any vehicles due to a vehicle becoming permanently stuck in a "being stored" or "changing ships" state
+- Potential Fix: Ships getting stuck in "Moving to Storage" when the player streamed out of the hangar while the storing animation was still playing
+- Potential Fix: Freight elevator kiosk queuing a duplicate inventory request when opened while an unstow was still processing
+- Potential Fix: Orison Relief Support Wave 1 not spawning all hostile AI ships, leaving the objective incompletable
+- Potential Fix: Mendo Ren spawning without his correct weapon equipped
+- Potential Fix: Ground vehicles not entering the soft death state when critically damaged
+- Potential Fix: Drake Clipper taking no damage across most of its hull, with underside doors now correctly taking damage and detaching when destroyed
+- Potential Fix: ATC landing and takeoff hotkey not working, requiring players to use the comms menu instead
+- Potential Fix: Orison Relief Support ship spawn missions using an incorrect detach direction; mission balancing also adjusted
+- Potential Fix: Contracted cargo losing its contracted status
+- Potential Fix: Hauling contracts not refreshing their objective tokens
+- Potential Fix: Vehicle pilot compass showing an incorrect bearing compared to the FPS compass
+Crash Fixes
+2 Client Crashes Fixed: I'm testing listing out client crash technical reasons in case one of them happens to be a frequent specific crash a player is hitting constantly.
+- Potential Fix: Client crash in Matrix34_tpl::Determinant(). This is a UI interaction crash that could happen while moving the mouse over interactive UI (mobiGlas, kiosks, MFDs, the starmap, anything built on the Building Blocks system).
+- Potential Fix: Client crash in CComputeSkinningStage::Execute(), This is a rendering crash tied to characters or creatures being removed from a scene such as NPCs despawning.
+We will be going over the ICs for related bug fixes from today's PTU build as well as discussions in this thread for issues that may be still occurring after a fix was put in.
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN
+As always, we can't thank you all enough for all your help!

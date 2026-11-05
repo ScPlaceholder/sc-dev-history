@@ -1,0 +1,59 @@
+## Star Citizen Patch 3.11.1
+Alpha Patch 3.11.1 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.1-PTU.6425973.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Volunteer Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-11-1-1
+Testing Focus
+- Intergalactic Aerospace Expo Exterior
+- General Gameplay with client/server stability
+Known Issues
+- Main Grim Hex 02 Elevator has two Elevator Carriages
+- CRU-L4 - Exterior elevator buttons do not function
+- Mining tool attachment will not equip even after equipping it manually or in the PMA
+- The Hammerhead elevator collides with the landing bay at Port Olisar, causing the ship to move
+- Restocking on missiles/torpedoes, then storing and respawning the same ship will have missiles/torpedoes missing
+- Ships landed at Lorville & New Babbage cannot be stored
+- Players can get their ship into an 'unknown' status after abandoning it and then dying and respawning at some Rest Stops causing an insurance loophole
+- Origin 100 series Rain / slush effects are moving backwards to the direction of travel
+- Greycat ROC mining arm can snap out of place upon re-entering the vehicle if the mining arm had been previously extended prior to exiting the vehicle
+- Running into the stairs of an Origin 100 series ship as the door of the ship opens will cause players to fall through the ground
+- Players cannot re-enter the Drake Cutlass ships if the ramp is damaged
+- Refueling hydrogen fuel first can prevent you from refueling quantum fuel
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+## New Features
+Locations
+- Intergalactic Aerospace Expo Exterior
+IAE 2950 will take place on microTech in the New Babbage landing zone and is accessible by taking one of the tram lines.
+## Feature Updates
+Gameplay
+- Increased the length of time a player has to accept or deny a press charges notification.
+- Updated FPS mining HUD to use drop shadows and to use dynamic brightness to make it more visible against bright backdrops.
+## Major Bug Fixes
+- Ground vehicles should no longer roll or fall through planetary surfaces when powered on.
+- Purchasing OxyPens or MedPens from the shelf will now correctly place the item in the player's personal inventory.
+- Multi tools bought at the prison commissary should now correctly have the mining attachment.
+- Vehicles should no longer slide / move on planetary surfaces when powered on.
+- Players should no longer be able to fire missiles and destroy players on landing pads at Port Olisar while outside the greenzone.
+- Models on the character customizer should no longer stand in an A Pose until selected.
+- Fixed an issue that was causing ships in Arena Commander to not be customizable.
+- Stow option should now function consistently when FPS mining and picking up gems.
+- ASOP landing pad location should now display correctly after spawning a ship.
+- The missile range should now update correctly when swapping missile types that have reduced minimum/maximum range.
+- Prospector Mining UI should no longer be oversized.
+- Aegis Reclaimer bunk bed door should no longer trap the player when laying down.
+- Ursa Rover Turret names in the Vehicle loadout manager should no longer be string ID placeholder text.
+- Clovus Darneely's position should no longer shift slightly during certain animations.
+- Ground Vehicles should now be able to be spawned at Gate 05 in Lorville.
+- First notification after dying should no longer be empty.
+- Mousing over an item in the inventory should no correctly indicate how much capacity that item is taking up.
+- Players calling a pilot now correctly see a player in the pilot seat.
+- Members list UI should now correctly animate when player is speaking in proximity chat.
+- Text chat color in the mobiGlas should no longer reset when leaving and reopening the chat window.
+## Technical
+- Fixed 8 Client crashes
+- Fixed 4 Server crashes

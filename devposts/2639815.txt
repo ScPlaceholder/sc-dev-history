@@ -1,0 +1,69 @@
+## Star Citizen Patch 3.8.0l
+Alpha Patch 3.8.0l has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.0-PTU.3855389.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: YES
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- General gameplay and traversal
+- Microtech and updated rest stops
+- New look ahead and third person camera updates
+- Patrol, bounty, and mining claim missions
+- Hijacked 890 mission
+- Mining and mining laser head attachments
+- Ship components
+Known Issues
+- Players are unable to land in hangar 2 at Lorville.
+- The Lancet mining laser will fire straight down when equipped to the Prospector.
+- If the quantum travel marker is at the edge of a moon or planet they can QT through the moon and explode.
+- Party launch is currently not functioning.
+- The buttons on the Fine and Citations kiosk can frequently not respond to the player's interaction.
+- There's a chance the enemy AI in the hijacked 890 mission will not react to the player.
+- Personal transport beacons do not broadcast.
+- The Vanguard Sentinel is incorrectly named Harbinger on ASOP and comms channel.
+- Carriable mission items can fall through flooring.
+- Purchased commodities will often visually not appear in the ship's hold.
+- Carriable boxes may fall through the flooring.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## Feature Updates
+Locations
+- Updated inventory at several shops to increase variety.
+Gameplay
+- Some rebalancing to patrol missions.
+- Updated Arlington gang mission rewards.
+- Added additional points to fix variation navigation issues for AI enemies moving around the 890.
+- Further polish on melee combat sound effects.
+- Updated 890 mission rewards and timers for accepting.
+- Added an abandoned cargo location light (blinking) for cargo that is ejected from a destroyed ship.
+## Bug Fixes
+- The player should no longer suffocate when in the pilot seat of the Terrapin without a helmet.
+- There should no longer be replaceme textures on the outside of the Constellation Phoenix.
+- Flight suits and armor should no longer be missing from kiosks and mannequins at rest stop shops.
+- Commodities purchased should now visibility appear on the ship's cargo hold.
+- Hangar decorations should once again be placable in all hangars.
+- The Rayari building at Deacons Outpost should no longer be floating.
+- There should now be audio for getting into and out of the Herald support seat.
+- Fixed bed logout not working on some ships.
+- The player should no longer rotate around when attempting to use the fine kiosk.
+- The dashboard interactions on the Valkyrie should no longer be reversed.
+- Switching FPS weapons should no longer cause them to occasionally drop and be lost.
+- The dissolve VFX for extracting rocks should play properly.
+- The character status UI should no longer appear offset.
+- Players should no longer randomly suffocate and die.
+- The 890 should once again have interior audio sounds.
+- The EMP on the Sentinel should once again be operational.
+- Fixed missing landing dust on the Prospector.
+- Fixed issue with offset on planetary surface markers on the Starmap.
+- Fixed an issue on some weapons where equipping an optic and using ADS would cause the weapon to be held too high.
+- Respawning within 50m of another player should no longer cause proximity VOIP to not work between them.
+- Party AR makers should now show up consistently.
+- Players should no longer randomly get ejected into EVA while in quantum travel.
+Technical
+- Fixed 3 client crashes.
+- Fixed 6 server crashes.
+- Fixed a server deadlock.

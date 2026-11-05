@@ -1,0 +1,8 @@
+Hey,
+as of now we are already utilizing all cores. However, there are two threads (Main Thread and Render Thread) which have a very high utilization depending where you are in the game.
+In draw call heavy scenes like Lorville, Newbab etc. the game is mostly bottlenecked by the RenderThread. This is quite a big dealbreaker at the moment and is the major reason why the game is so slow in big locations and why maxed out single thread performance is still so important for Star Citizen.
+Gen12 along with Vulkan will improve this massively. The first step will be the new Gen12 renderer which will already improve performance by a big margin due to improved Render Thread performance.
+Starting with 3.14 we will be slowly rolling out parts of gen12. However, you will see the big performance improvement only once everything is fully transitioned, specifically once we enable the gen12 scene rendering.
+In parallel we are working on the vulkan backend which comes along quite nicely as well. It is to be expected that we can roll out vulkan shortly after the full Gen12 renderer is working.
+Once that is done we will push into parallelizing the whole scene rendering even more and get rid of the entire Render Thread.
+When this is done the rendering will be utilizing all available cores as much as it can and we should no longer be bottlenecked by the rendering.

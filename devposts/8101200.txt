@@ -1,0 +1,76 @@
+## Star Citizen Alpha Patch 4.2.1
+Alpha Patch 4.2.1 has been released to all backers!  Patch should now show: VERSION 4.2.1-PTU.9916134.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Second Life Resource Drive (Currently on an increased reward speed for testing)
+- Wikelo Recipe Updates
+- Executive Ship Component Updates
+- Stanton Space Station Security Forces
+- VOLT Pistol
+Not Ready for Testing or Feedback
+These items below are a partial list of current goals for the latest release and may be partially in the build and even completable but are not ready for feedback and are subject to removal from this release.
+- New Escort Mission Ship Battle Type
+- Additional Player Hairstyles
+## Known Issues
+- PU - Resource Gathering - Weapons / Mission Content - ArcCorp rewards incorrect liveries and weapon/armor variants
+- PU - Stanton / Pyro - Personal Inventory / Local Inventory / Inventory - While attempting to drop, transfer and/or equip items, there's a chance for it to return to the inventory where it’s from
+- PU - Armor / UI / Personal Inventory - Items equipped and/or attached on the actor can't be dragged to be held by the actor's hands as its port will be missing
+- Multivehicle - PU / AC - Vehicles / Weapons / UI / VMA - Vehicle Weapons are not Interactable or Useable (Affects a handful of ships: Mirai Fury Series, Pulse, P-52, Spartan, and Cyclone Series)
+- PU - Vehicle - Naming ships, melting ships, or updating ship packages will delete any non-stock items that are fitted to the ship including paints
+- Multiitem - PU - Vehicle / Turret / MFD - Idris gimbals are empty and weapons/missiles are unable to be equipped to them (if turret is reequipped in the VLM)
+- PU - Pyro - Storm Breaker - Locations - Lazarus Research Complex - Freight Elevator - UI / Interactions - When placing items on the elevator floor then lowering it, the Freight Elevator will lose the items then raise itself (Moderate Chance)
+- ARGO ATLS ALL Variants - PU - Mount / Cargo Grid - Argo ATLS can be placed anywhere on the cargo grid without following the SCU grid pattern
+- PU - Pyro / Pyro I - Storm Breaker - Locations / Mission Feature / Physics - Bullets will not pass through the Shuttle Station's entrance curtain when firing outside
+- AEGS Idris-P - PU - Vehicles - Idris shields do not stop any laser weapons except panthers
+- PU - Freight Elevator / Contested Zones (CZ) - CZ Freight Elevator displays Internal Error when attempting to move items to the warehouse
+- PU - Pyro - Courier - Mission Feature / Interactables - There is a chance that delivery packages cannot be placed on delivery shelves
+## Features & Gameplay
+Gameplay
+- Further Wikelo Recipe Updates
+Station Defense Updates
+Increased health and damage output of size 10 station defenses. Made improvements to the way they take damage to ensure the weapon never stops firing before the base is destroyed and will now delete the weapons on destruction.
+To prevent uninvited players getting aboard docked ships (technically any ship near enough a station) we now teleport trespassing players out of ships they don't own (unless in party with owner) when within 5km of an ATC with teleport points.
+Ships and Vehicles
+Ship Flight Tuning Changes
+► Heavy Fighters & Interceptors:
+Minor rebalance and a general increase in maximum angular speed, providing improved maneuverability across all ships in these categories.
+► Medium Fighters & Interceptors:
+A comprehensive tuning pass has been applied to Medium Fighters to deliver more distinct flight characteristics per ship.
+Alien ships such as the Glaive, Scythe, San'tok.yāi, and Reliant variants are included.
+Key adjustments focus on:
+- Angular rotation max speeds
+- Angular accelerations
+- Linear acceleration (Gs)
+- SCM speeds
+► Gun Boats and other medium-size ships:
+Several ships in this class have received updates aimed at refining flight dynamics, including:,
+- Angular rotation speed
+- Linear acceleration (Gs)
+- SCM and NAV top speeds
+► Other aspects of some of the ships in all the categories mentioned have been addressed:
+Mercury Star Runner:
+- Increased Quantum Fuel capacity for extended travel range
+- Slight buff to critical health hardpoints
+- Retains previously boosted top speeds
+Ares Inferno:
+- SF7B Gatling spread got reduced for improved weapon accuracy.
+400i:
+- Added an additional S2 Powerplant and Cooler back to the default loadout
+Other Ship Updates
+- Salvage Balance: Reduced Reclaimer Hull Scraping Efficiency and increased Vulture and Fortune Efficiency
+Weapons and Items
+- VOLT Pistol Audio and Overheat Polish
+## Bug Fixes
+- Potential Fix: Multivehicle - PU - Vehicles / Art - Single usable seats are showing as template geometry (STARC-172249)
+- Potential Fix: AEGS Retaliator - PU - Vehicles - Retaliator headlights are always on (STARC-141441)
+- Potential Fix: PU - Lorville / Maria Pure of Heart - Locations / Art / Collision - The floor at the lobby of the hospital has no collision (STARC-172507)
+- Potential Fix: PU - Stanton - Resource Gathering - Mission Feature / SFX - Completing mission can sometimes trigger an incorrect voiceline
+- Potential Fix: PU - Transit / Locations - Art / Graphics - Area18 - Transit carriages have severe visarea and lighting issues when used
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash

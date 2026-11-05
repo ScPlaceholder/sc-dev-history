@@ -1,0 +1,74 @@
+## Star Citizen Alpha Patch 4.1
+Alpha Patch 4.1 has been released to Wave 1, and is now available to test!   Patch should now show: VERSION 4.1.0-PTU.9606780.
+## Build Info
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+Audience: Wave 1
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:600
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+This initial release of 4.1 comes with some pretty dramatic changes to items and recovery. This is a first iteration of item recovery with much more to come in future builds.
+- Stability & Bugfixes
+- Enabling Orison and Area 18 NPE
+- T0 Item Recovery
+- Ground Vehicle & FPS Mining Updates
+- New Upcoming Event Mission (Keeping all details limited to test in game communication)
+Tonight's build has further balance changes and flow blocking fixes for this event.
+This event will utilize 2 new locations in the PU; Hathor Platform Alignment Facilities and Hathor Orbital Laser Platform.
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback
+- Additional Missions updated for Meshing
+- VOLT Weapons
+## Known Issues
+You may want to avoid New Babbage in this build if the elevator interactions break there. We are seeing an uptick in these failing specifically at that location
+We have temporarily disabled laser damage from a certain portion of the New Event at Hathor
+- PU - Stanton - Wikelo Mods - Collector / Missions - The new harvestable ores can't be submitted as mission items
+- PU - Item Recovery T0 - Upon being incapacitated the UI is showing a Fee + Tax % not meant for T0 (visual only and will not take aUEC)
+- Critical: PU - Transit - Entity carriage is stuck in transit to a gateway, but never arrives which renders the gateway unusable
+- Critical: Mission Refactor - Comm Array Repair - Contract in mobiGlas becomes hidden when another player enters mission location
+- Critical: Mission Refactor - PVP Missions dont work
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Locations - Personal Hangars - Actor - If player ungracefully exits while in hangar, hangar stows and does not unstow upon recovery
+- High: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel
+- High: PU - Pyro - Jump Point - Failing a Jump point will displace the player far away from the gateway station
+## Features & Gameplay
+- Locations
+- Hathor Locations Lighting, Visual, Geographic, and Audio Polish (Beam Audio)
+- Collector Asteroid Lighting and Visual Polish Pass
+- FPS Minable LOD Polish
+- AI
+- Added Audio Attenuation to Bartender Voicelines (No more 100% Volume from all distances)
+- Gameplay
+- Revised Collector missions with updated requirements
+- Added Rayari intro mission, objectives, and marker
+- Reduced Shop Availability and Drop rate of Grenade launcher Ammo and Increased Buy Price
+Item Recovery T0
+Introducing the first implementation (T0) of Item Recovery - a long-awaited system that gives players more control over their gear after death.
+This T0 initial implementation of Item Recovery will have players respawn with the exact gear they had equipped at the time of death minus stored items in their backpack and pockets.
+- Upon death you respawn with your entire loadout (including mags/weapons/medpens) BUT not your inventory. Su you will lose anything in your pockets/backpack. This includes spawning at medbed on ship and back at landing zone.
+- Your armor/weapon is then fused to your corpse - so it would have a blocked interaction preventing looting indicated with a red icon and tool tip. On death, held weapon is moved to available holster, to be fused with corpse.
+- Ammo, medpens, grenades etc along with anything in your inventory/backpack would be lootable by you or other players.
+Note: With T0, players will respawn with their weapon reloaded, this is a temporary thing until T1 is introduced.
+For more information about the future of Item recovery, check out our community post here!
+https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/alpha-4-1-first-look-at-item-recovery
+- Ships and Vehicles
+DRAKE Caterpillar Tech Art Update
+Initial Cargo Bay Elevator functionality has been added allowing them to open and extend down to the ground. Added new controls to side and front doors.
+- Arena Commander
+- Enabled Astor's Clearing Free Flight
+## Bug Fixes
+- Potential Fix: PU - Stanton- Wikelo Mods - Locations / MobiGlas / Missions - Player cant use mission marker to set Quantum Travel route
+- Potential Fix: PU - Stanton - Wikelo Mods - Missions / Interactables - Unable to deliver Kopion Horns for Collector Mission
+- Potential Fix: PU - Locations / Art - Organics - Loot Cave - Missing minables throughout the Hathor cave once it has been formed by the mining laser (STARC-160473)
+- Potential Fix: PU - Mission Refactor - Missions / Reputation - Players can increase their reputation standing with opposing factions simultaneously (STARC-156827)
+- Potential Fix: Drake Caterpillar - PU - Vehicles - Ladders - The player is unable to climb up the ladder in the Caterpillars Engineering Bay
+- Potential Fix: Aegis Retaliator - PU - Vehicles / Animation / Actor - Ladders - Actors hands are misaligned from rungs and can clip into them
+- Potential Fix: Multivehicle - PU - Vehicles / UI / MFD / mobiGlas - Communications MFD and mobiGlas screens do not hang up after taking off or landing in hangar
+- Potential Fix: PU - Pyro - Locations / Art - XS Bunker Outposts near settlements have cave entrances but are missing cave interiors, showing holes into the planet
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 4 Server Crashes

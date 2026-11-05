@@ -1,0 +1,63 @@
+## Star Citizen Alpha Patch 3.24.3
+Alpha Patch 3.24.3 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.3-PTU.9417366.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+Note: Evocati will have access to the new ships immediately with today's build. Players will be able to rent them in the appropriate expo halls once they appear.
+- Stability & Bugfixes
+- IAE Halls
+- Save Stanton Global Event
+- New Vehicle: Polaris
+- New Vehicle: Starlancer Max
+- New Vehicle: Crusader Intrepid
+- New Vehicle: Anvil Terrapin Medic
+- New Vehicle: F7C-R Mk II and F7C-S Mk II
+- Updated Standard & Polish: Anvil Terrapin
+## Known Issues
+- Anvil Terrapin Medic  - Vehicles - Art / VisArea - The medical bay culls when viewed through closed glass door from cockpit
+- PU - Social - AR markers - Party markers are not visible to other party members
+- RSI Polaris - PU/AC - Vehicles / Turret UI - Polaris Turret pips are missing on locked targets
+- The Argo ATLS currently cannot be destroyed (Not intended end goal and player inside is still vulnerable)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU – Stanton – New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - Multivehicle - MFD - MFDs can be interacted with while in mobiGlas
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+## Features & Gameplay
+Gameplay
+- PDC Improvements
+Added support for PDCs to fire at fighters. Will now detect dumbfire missiles instantly and notify perception.
+Ships and Vehicles
+- Added New Ship: Crusader Intrepid
+- Added New Ship: Anvil Terrapin Medic
+- Added New Ship: F7C-R Mk II
+- Added New Ship: F7C-S Mk II
+- Updated Standard & Polish: Anvil Terrapin
+- Polaris Polish
+Double shield health & regen. Added player collision to the gates and sides of the elevator platform. Slight Dash and MFD Layout adjustments. Further Lighting and Audio Polish.
+- MISC Starlancer MAX Polish
+Polished art, Interior lighting, LOD, and other various geometry fixes
+- MISC Prospector Dash Rework
+- Temporarily Muted Annunicator Panel Audio (Until a proper fix for looped audio is in)
+Core Tech
+- Further Server and Networking Performance Optimizations
+- Overall Ship/Vehicle Physics Network & Server Performance Optimizations
+- Added New Logic to Trigger Ship Destruction if Physics Threshold is Exceeded (Ships vibrating and intersected causing large physics performance hits)
+- Render To Texture Performance Polish
+## Bug Fixes
+- Possible Fix - Multivehicle - Stanton - Ships / ASOP / Docking Port - Retrieving a ship to a docking port can cause the ship to be spawned inside the waiting area of the docking port instead of the end of the docking tube
+- Fixed - RSI Polaris - Vehicles - PU - Polaris Torpedo's do not restock (STARC-138719)
+- Fixed - RSI Polaris - PU/AC - Vehicles / Turret UI - Polaris Turret pips are missing on locked targets (STARC-138644)
+## Technical
+- Fixed 1 Client Crash
+- Fixed 3 Server Crashes

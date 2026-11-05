@@ -1,0 +1,62 @@
+## Star Citizen Patch 3.21.0
+Alpha Patch 3.21.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.21.0-PTU.8745000.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- New Jump Point Rest Stop Stations and Lagrange Points
+- New Legal/Illegal Mission: Retrieve Consignment
+- New Illegal Mission: Kareah - Steal Evidence
+- Repel Raid on Orison
+- New Crusader Platforms
+- Wheeled Vehicle Handling Improvements
+- Driver Remote Turret QoL Improvements
+Known Issues
+- There is a high likelihood of Crashing to Desktop (CTD) when opening loot boxes in the current build. Perfect time to test out the fix for Client Crash Recovery! :wink:
+- PU - Stanton - Jump Point - All Jump Points - Rest Stop (R&R) - Locations - The Patient Check In medical kiosks do not work and are stuck on "Checking availability" loading
+- PU - Stanton - UI / Locations - Multiple Locations - Crashing in a restricted area will give you never lasting "Restricted Area" alerts
+- PU - UI / Art / Graphics - Green Imperial Medical Regeneration Kiosks screen have no UI
+- UI / Menus - Controls - Keybindings - The Default Preset Images for the keyboard and gamepad control schemes do not match what is bound by default
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- MISC Hull C - PU - Vehicles - Can't undock the Hull-C
+- PU - Crusader / Orison - Locations / Transit - It's possible for turn gates to not open preventing players from entering shuttles
+- PU - Art - Items / Character / Textures - Multiple clothes / armor / undersuit variants lost color / using the default base color
+- PU - Multivehicle - Vehicles / Ships / Ship Components / Weapons - Laser Repeater occasionally stops firing but still consumes ammo
+- Hull C - Spawn / Cargo / LEO - Hull C with cargo can spawn extended in a large Hangar instead of Docking Port
+- Stanton - Multivehicle - RSI Constellation Series - Ship Feature - Snub Ship clips through Constellation variants in vertical position when retrieved from ASOP
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout after dying in the armistice zone
+- Stanton - Actor - Personal Inventory - Right click item interaction menu cannot be closed once opened
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Stanton - AI - Mission Giver - Wallace Klim is not visible at his location in Grim Hex
+## Feature Updates
+Gameplay
+- Made further Ground Vehicle Handling Improvements for Cyclones, Rovers, Ballista, Greycats, and Nova Tanks
+- Added Support for Players to Sell Things Owned by Members of Their Party Without it Being Considered Stolen
+## Bug Fixes
+- Fixed - PU - Stanton - Game code / Online Services - Client crash recovery doesn't work
+- Fixed - PU - Stanton - Game Code - The player may not have their server assignment reserved during the ungraceful disconnection timer, even when space is available
+- Fixed - PU - Vehicles - Hull C - auto-docking the Hull C can cause it dock wrong into the port and damage the ship.
+- Fixed - Stanton - VoIP/FoIP/Audio - mobiGlas - Comms Call - Audio in Comms Call is quiet to the point where players become unintelligible
+- Fixed - PU - Stanton - Rest Stops (R&R) - Shopping - Unable to interact with off the shelf items in Rest Stop Stations
+- Fixed - PU - Shopping / Selling - UI / Commodity Kiosks - Commodity Kiosk's popups do not have a visible background
+- Fixed - PU - Multiple Locations - Art / Locations - ReplaceMe textures on Spacesuit Lockers in ASOP Areas of Space Stations
+- Fixed - Multivehicle - Stanton - Vehicles / Ships - Actor - Interactions / Inner Thought - The inner thought actions do not work on passenger jump seats
+- Fixed - PU - Multivehicle - Actor / Animation - Actor's hands snap out of the ship's controls when using Flight Ready
+- Fixed - AC - Endless Vanduul Swarm - Damage Modifiers do not appear to work
+- Fixed - AC - All Modes - Cannot Access Chat in Post-Game
+- Fixed - AC - Gun Rush - Weapons / Loadouts - When levelling up to a new level loadout in Gun Rush, the weapon may cease to fire
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 4 Server Crash
+- Fixed a Server Deadlock

@@ -1,0 +1,4 @@
+Hi,
+There won’t be any major changes to RAM or VRAM usage with Gen12. The renderer generally doesn’t use very much RAM (CPU), especially compared to systems like physics. It uses a lot more VRAM (GPU), but we’ve been able to maintain support for 3GB GPUs so far, though 4GB is strongly recommended. Most of this is used for mesh and textures, and we recently started work on updating our streaming logic for these, and as part of this intend to expose more control to the player in the options menu to balance the memory usage vs image/mesh quality.
+Ali Brown
+Senior Director of Graphics & Procedural Tech

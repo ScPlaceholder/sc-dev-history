@@ -1,0 +1,21 @@
+## Star Citizen Patch 3.2.1e
+Alpha Patch 3.2.1e has been released to the PTU, and is now available to test!  Patch should now show: PTU-829574.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- Constellation turrets lock players into the turret seat, requiring exiting the game to fix.
+- All turrets with an orientation inversion do not function correctly.
+- New turret values are still being tweaked/tuned.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- Remote and manned turrets versus AI and player opponents.
+## Feature Updates
+Universe
+- Adjusted and polished the ship preview image on Dumper's Depot kiosks.
+Ships and Vehicles
+- Turrets: Made several aim assist changes to help player stay on target when using turrets including reticle changes,  enlarged aim extents, increased speed ramp toward outward extents,  increased gyro-stabilization, and added pip stickiness behavior.
+## Bug Fixes
+- Switching from Commlink to another app should no longer cause the chat logs to be lost.
+- Switching between mG apps should no longer duplicate chat channels in Commlink.
+- Gladius MFDs should no longer have flickering "replaceme" textures for AMD users.
+- Reclaimer turret entry should no longer break on repeated usage.

@@ -1,0 +1,90 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9359298.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: Wave 1
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- New Arena Commander Updates
+## Known Issues
+- PU - Stanton - Locations / Transit / Hangars - Some elevators have greyed out panels and do not respond when called (Prison Elevators currently not working)
+- PU  - UI / Vehicle HUD - All sentries/guns are displayed at once at a space station, leading to performance and readability issues
+- Multivehicle - PU - Vehicles / Locations / Physics - Ships fall through hangar elevator platform on retrieval resulting in being stuck under hangar
+- PU - Mounts / UI / ASOP / Fleet Manager - The ARGO ATLS has placeholder text
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP terminal screen will be stuck on the getting vehicle list screen until terminal times out
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Stanton - Missions / UI - Mission Objectives are missing from multiple UI elements
+- Multivehicle - PU - Vehicles / Ship Refuel - MISC Starfarer is not refuelling other ships
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+- Multivehicle - PU - Resource Network - Mining and Salvage heads throttles default to 0
+- PU - Stanton - Multivehicle - Vehicles / MFDS / UI - Scanning MFD reverts to Ready to Scan after scanning ships with no cargo stored (STARC-130414)
+- Gatac Syluen - PU - Vehicles / Elevator - Syulen is missing the internal elevator (STARC-130168)
+- Carrack bottom right MFD has no display (STARC-130157)
+## Features & Gameplay
+Gameplay
+- MFD button bindings
+A lot of MFDs button bindings were unlocked, some are still hidden away while we work on some stuff. Right now you will find bindings for:
+- Select which MFD you want to cycle to
+- Change the displayed page of a selected MFD
+- Directly jump to a specific MFD page
+- Options for persistent ship settings + MFD page
+Ships and gunnery seats have so-called persistent settings for things like IFCS decoupled, IFCS gravity compensation, etc. which can be set in the configuration MFD page. Those settings are persistently saved whenever you store your ship. However when you spawn a new ship in AC or when you got a replacement ship via insurance in the PU those settings are lost (because technically you have a new ship).
+3.24.2 there introduces a new set of options for every persistent setting. When you as a player enter a ship seat for the first time (and only for the first time!), the game will copy your options to that seat. From there onwards things will be persistently saved again.
+So if you spawn a ship and your friend enters a ship seat for the first time before you do it, the ship will use the default settings from your friend instead. Once the default settings have been set by anyone, they will not be automatically be changed anymore and need to tweaked manually via the configuration MFDs.
+- New weapon grouping system + MFD page
+Vehicle gunnery seats now come with a changed grouping system and access to a new weapon group configuration MFD page. Instead of having two fire buttons there is only one fire button, but up to four different groups for your guns. By default weapons are fired with LMB and you can iterate forward and backwards through your groups with the mouse wheel.
+Weapon groups contain both guns and “non”-guns like EMP or QED devices.
+By default all guns will be added to fire group 1 and after that split out by energy, ballistic and distortion guns sorted by projectile speed. Players are able to edit all gun weapon groups with the new weapon configuration MFDs.
+For QED and EMP devices custom and un-editable weapon groups are created after the guns. Button bindings that have been added:
+- fire weapon group
+- iterate to next and previous weapon group (no overflow → you cannot switch from the last to the first group)
+- iterate to next and previous weapon group (overflow → you can switch from the last to the first group )
+- Short bindings to directly access every weapon group separately
+- Precision Targeting & Mining Mode
+Since precision targeting is now available in almost all operator modes (except salvage) the following default bindings change:
+Toggle Laser Type is now on LALT+LMB
+- Starmap Info UI Polish
+Implemented hovered marker info panel to display condensed information about the marker hovered with the cursor. The primary marker info panel will now display the full information for only the selected marker, which will mean the panel information will never erroneously change when trying to interact with the set route button.
+- Temporarily disabled cursor showing on elevator panels/supporting non-focused kiosk mode; now requires interaction mode to see a cursor on an elevator panel once again. This is temporary for the time being since we're missing some additional feature work to make it function properly on every terminal like ASOPs
+Ships and Vehicles
+- Misc Prospector MFD Polish
+Removed top 2 prospector Displays. Made improvements to mining mode and MFD materials. Added grounding effects for radar and mining HUD. Fixed Extended Info Visibility based on Mining / Salvaging modes.
+- Updated Vanduul MFD Color Palette to White to Help With Status Readability
+- Balanced Heat for Ballistic Weapons
+Weapons and Items
+- Updated P8-AR recoil to smooth out some jarring sections of the recoil
+- Tweaked 'oomph' of the P8-AR
+- Normalized nvtc 4x to have similar benefits as the other 4x optics"
+## Bug Fixes
+- Fixed - PU - Salvage / Mission - Wrecked Salvage Contract ships still have power which prevents Structural Salvage (STARC-130393)
+- Fixed - Error - 30009 - Bed logging in "StantonSolarSystem" results in 30009 error - reason="Remote Disconnect - Cannot send the current solar system for 'SendCurrentSolarSystem' (STARC-130526)
+- Fixed - PU - Inventory - UI - Item Bank / Storage Access - No Pop-Up window opens when using Right Click on Inventory Interfaces (STARC-130029)
+- Fixed - PU - Multivehicle - Quantum Travel / mobiGlas / Star Map - Unable to plot a route to obstructed destination (STARC-130071)
+- Fixed - PU - Actor - Cargo - Players can Attach Commodity Cargo boxes to their own actor or others slowing down their movement and increase the heart rate (STARC-108988)
+- Fixed - Esperia Blade - PU - Vehicles / MFD - Blade is missing MFDs (STARC-129875)
+- Fixed - Anvil Carrack - PU - Vehicles/Elevator - Carrack is missing internal elevators (STARC-130050)
+- Fixed - UI Tech - Vehicle RTT - Sometimes a ship will fly off the Vehicle RTT on both casts and MFDs (STARC-129864)
+- Fixed - Drake Cutter ALL Variants - PU - Vehicles / UI - Rear ramp of the Cutter cannot be closed using the internal and external control panels (STARC-130334)
+- Fixed - ARGO RAFT - Stanton - Vehicles / UI - Interactions - The Flight Ready button will change into Power ON button and not work for the pilot, if another player enters and remains in the co-pilot seat before the pilot does
+- Fixed - MultiVehicle - Vehicle Weapons / Gimbal Modes - When remote turret is in any mode other than manual the turret will not properly follow the Reticle
+- Fixed - PU - FPS Salvaging / Drake Vulture - UI - Crafting (Empty) Cambio SRT Containers results in receiving fully filled containers
+- Fixed - PU - Character Customizer - UI - STYLING - Piercings sometimes cannot reset to none and may skip the option for slider
+- Fixed - PU - Klescher Rehabilitation Facility - Mission Content / UI - Prison O2 Kiosk percentage text is visible while kiosk displays the error
+- Fixed - Multivehicle - PU - Vehicles / Ground Vehicles / UI / MFD - Resource Network - Ground vehicle MFD power management screens does not show column UI
+- Fixed P8-AR being unable to reload
+- Fixed A2 Gunner Seats still on old UI MFDs
+- Fixed - Arena commander - Vehicles - loadout - Missing MFD casting
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 9 Server Crashes
+## Arena Commander Frontend Visual Updates
+The Arena Commander Frontend (main menu) has had its visual overhaul with new and updated 3d hangar and interface menus.
+Alongside this visual upgrade we have made several quality-of-life improvements and feature additions, from “Remember My Selection” for mode selection to a Force Launch feature.

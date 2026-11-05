@@ -1,0 +1,1 @@
+Yes, we have occlusion culling. Currently CPU-side, which makes it easier to do things like prevent shadow calculations from even being submitted, though this has the downside that it can sometimes get holes in it when moving quickly.

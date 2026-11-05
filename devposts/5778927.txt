@@ -1,0 +1,56 @@
+## Star Citizen Patch 3.18.0-PTU.8387153
+Alpha Patch VERSION 3.18.0-PTU.8387153 has been released to the PTU, and is now available to test!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Server Region: US/EU/AUS/ASIA
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- DNA  Character Customizer - Blend Head selection - Default Character starts  with dark complexion which reverts once altered and persists if not  altered
+- UI - Quantum Travel - Markers Will Randomly Disappear After Quantum Travel With No Route Set
+- Aegis Reclaimer - All Variants - Reclaimer main on-elevator control panels do not respond to input
+- RSI Constellation Multivariant - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Actor - Inventory - Equipped Ammo Clips Fall Off the Player
+- Multivehicle - Audio - Missing Audio/SFX with QT travel
+- Scanning not showing advanced statistics and details
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Vehicles/IFCS - When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Actor Feature / Law - Respawn - If a player is placed into Klescher after being rescued with a crime stat, the player is respawned in the facility still incapacitated
+- Ship / Commodity Trading / Cargo Inventory - Selling some of the cargo while the vehicle is stored cause the cargo to show at max inventory capacity
+- Selling - Commodity Kiosk / Cargo - Large amounts of cargo sold at once will cause the transaction to fail the cargo will be taken and no money will be granted
+- Law & Criminality - Commodities / Cargo - Stolen Cargo does not behave as such and can be sold as legal cargo if the ship with the cargo is stored
+- Ships - Cockpit - Actor animations - Occasionally unable to exit ship seat
+- Locations - Transit - Elevators - Players can fall through Elevators
+- Multiple Locations - ASOP Terminal / Ships - When storing a ship, the ASOP terminal will set the ship status to "Claim" instead of "Retrieve."
+## Feature Update
+Gameplay
+- Reduced large/rare salvage derelict spawn probabilities
+## Bug Fixes
+- Fixed - Locations - Landing area is offset from the Hangar floor preventing item clean up when streamed out
+- Fixed - Entitlements - Klesher Inmate Worksuite in inventory after patch
+- Fixed - Network - Desychronization / Stall - Streaming locations during quantum travel can cause server-wide lag spikes for all clients
+- Fixed - Locations - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Fixed - Self-destructing multiple ships full of cargo in the same area can severely drop server and client performance
+## Technical
+This build contains multiple improvements to help with server and client performance
+- Fixed 3 Server Crashes

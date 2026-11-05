@@ -1,0 +1,67 @@
+## Star Citizen Alpha Patch 4.2.1
+Alpha Patch 4.2.1 has been released to Wave 1 Testers!  Patch should now show: VERSION 4.2.1-PTU.9886217.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+This initial build is a stability focused playtest for Evocati on EPTU. There may be features in various states of completeness but we are currently not focusing on feedback on these.
+- Stability & Bugfixes
+- Second Life Resource Drive (rewards are now functioning for the event)
+Player’s will be tasked with different missions to achieve this including:
+- Resource Gathering - They ask the player to source and gather X resources.
+- Recover Cargo - Players go to retrieve cargo from a vessel that has broken down/attacked. Or retrieve cargo from a stolen stash.
+- Support Attacked Ship - Defend a cargo ship from waves of pirates trying to destroy and rob the ship.
+- Hauling - Retrieve resources that have been processed and are ready to be delivered.
+## Weekend Concurrently Playtest - Sunday 1400 CDT | 1900 UTC
+This weekend on Sunday we will be taking 2 hours starting at 1900 UTC for the team to gather data on the state of the shards after being online for the weekend. This will be a more highly focused time to gather captures.
+Not Ready for Testing or Feedback
+These items below are a partial list of current goals for the latest release and may be partially in the build and even completable but are not ready for feedback and are subject to removal from this release.
+- Ship Battles V2
+- VOLT Pistol
+- Wikelo Location and Recipe Additions
+- Additional Player Hairstyles
+## Known Issues
+- PU - Armor / UI / Personal Inventory - Items equipped and/or attached on the actor can't be dragged to be held by the actor's hands as its port will be missing
+- Multivehicle - PU / AC - Vehicles / Weapons / UI / VMA - Vehicle Weapons are not Interactable or Useable (Affects a handful of ships: Mirai Fury Series, Pulse, P-52, Spartan, and Cyclone Series)
+- PU - Vehicle - Naming ships, melting ships, or updating ship packages will delete any non-stock items that are fitted to the ship including paints
+- Multiitem - PU - Vehicle / Turret / MFD - Idris gimbals are empty and weapons/missiles are unable to be equipped to them (if turret is reequipped in the VLM)
+- PU - Pyro - Storm Breaker - Locations - Lazarus Research Complex - Freight Elevator - UI / Interactions - When placing items on the elevator floor then lowering it, the Freight Elevator will lose the items then raise itself (Moderate Chance)
+- ARGO ATLS ALL Variants - PU - Mount / Cargo Grid - Argo ATLS can be placed anywhere on the cargo grid without following the SCU grid pattern
+- PU - Pyro / Pyro I - Storm Breaker - Locations / Mission Feature / Physics - Bullets will not pass through the Shuttle Station's entrance curtain when firing outside
+- AEGS Idris-P - PU - Vehicles - Idris shields do not stop any laser weapons except panthers
+- PU - Freight Elevator / Contested Zones (CZ) - CZ Freight Elevator displays Internal Error when attempting to move items to the warehouse
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- PU - Pyro - Courier - Mission Feature / Interactables  -  There is a chance that delivery packages cannot be placed on delivery shelves
+## Features & Gameplay
+Gameplay
+- Added ex-collector tinted special weapons as rare loot in the PU
+- Carryables are now thrown instead of dropped when falling due to damage
+Locations
+- Lazarus Research Facility Location Art, LOD, and Performance Polish
+## Bug Fixes
+- Potential Fix: PU - Dynamic Weather - VFX - Frame rate drops will cause the rain to look jittery in third person
+- Potential Fix: PU - Location - Docking port entering ship causes black screen that cannot be escaped requires closing starcitizen entirely (STARC-166324)
+- Potential Fix: Executive Hangars have cards stuck inside (STARC-168927)
+- Potential Fix: PU - Stanton - Resource Gathering - Support Attacked Ship - Mission Content - SCU score isn't awarded upon mission completion (STARC-172293)
+- Potential Fix: Stanton - Crusader - Security Post Kareah - Core Tech - Physics - Actor / Player - Transitioning from EVA onto Kareah's landing pads has a high chance of instantly killing the player (STARC-67072)
+- Potential Fix: PU - Pyro - Storm Breaker / Collector / Creatures / Mining - Irradiated Apex - Some Apex Valakkar limpets will vanish when they are successfully fractured (STARC-170609)
+- Potential Fix: PU - Stanton - Hurston - Lorville - New Deal - Locations - Physical Shopping - The C.O. Mustang Beta on display has raw text "<-=PLACEHOLDER=->" for the Ship purchase description when attempting to purchase
+- Potential Fix: PU - Stanton - New Babbage - Performance / Locations - Severe performance issue when loading into a Personal Hangar at New Babbage causing framerate to drop between 0.0 and 0.2
+- Potential Fix: PU - Stanton - Locations - Rest Stops - ASOP Kiosk / UI / ATC - ASOP terminals are stuck on the loading animation with trace error "NO LINK TO ATC - Verify and export OC" / "Stand by, accessing list of available vehicles" (STARC-171390)
+- Potential Fix: Multiitem - PU - Vehicle / Turret / MFD - Idris gimbals are empty and weapons/missiles are unable to be equipped to them
+- Potential Fix: Multivehicle - PU - Vehicles / Radar / Scanning - Targeted vehicles can be scanned when outside of the scan range
+- Potential Fix: PU - Transit / Locations - Art / Graphics - Area18 - Transit carriages have severe visarea and lighting issues when used
+- Potential Fix: Multivehicle - PU - Vehicles / Ships / Personal Hangars - Ships Delivered in Personal Hangars are not Properly Positioned and can be damaged (STARC-118610)
+- Potential Fix: PU - Storm Breaker - Locations / AI - Juvenile and Adult Valakkar can remain unresponsive with no collision and cannot be killed during Apex fight at the Research facility
+- Potential Fix: PU - Core Tech / Game Code - Entity Recovery - Player actors can end up in a recovery loop when falling through Freight Elevators that are on planetary surfaces
+- Potential Fix: Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped (STARC-167879)
+- Potential Fix: PU - Instance hangars - Law - Hangar Trespassing is NOT relocating players who are trespassing in someone elses hangar (STARC-147077)
+- Potential Fix: PU - Cargo / UI / Mounts - Freight Elevator - Freight Manager UI doesn't provide enough context on why un-owned ATLS suits are obstructing the elevator
+- Potential Fix: PU - Stanton - Resource Gathering - Mission Content / Priority - mobiGlas - Accepted Mission by Another Player Disappears and Reappear after 2 minutes
+- Potential Fix: PU - Pyro - Radiation / UI - Radiation widgets stay present on HUD after you take a suit off
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 7 Server Crash
+- Fixed a Server Deadlock

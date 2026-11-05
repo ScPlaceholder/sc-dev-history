@@ -1,0 +1,31 @@
+## The (Last) Big Merge Update
+Jason Hutchins, reporting for duty.
+It all went as planned! After the long weekend of manual merge conflict resolutions as well an enormous code review, we are now on a single dev stream this week! Great news for the overall project. As someone observed on the forums last week, this means the beginnings of persistence!
+While the merge is done, there are still many challenges waiting to be conquered. Every day we’re finding blockers, fixing them, and finding new blockers, but we have both the team and the tools necessary to persevere, and we’ll be getting into playtest games and iterating on assets in short order.
+You may have noticed that we rolled out a 1.2.1 patch to the PTU last night, the patch has bug and stability fixes for AC, and changes to the Generic Instance Manager. Our server team in Austin is merging that code into the dev stream today and will be cleaning that up next week. This will allow us to run more playtests in the near future.
+And now it’s time for… BULLET POINTS! (JH Edit: Don’t be sorry, DiscoLando, that is some high quality punsmanship right there.) (DL Edit: Ugh.)
+## Gameplay
+- On Thursday, the engineers at Illfonic were able to successfully play through a few rounds of the new Headquarters-style game mode which is progressing nicely. Capturing and destroying HQ points is a lot of fun, and the system is being reviewed by our game designers in Frankfurt who will assist with tweaking values such as point acquisition, capture time, spawn times, and more. “Headquarters” is not the final name, or even final design, of this game mode, but merely the convenient shorthand we’re using internally at this time. People that play popular modern shooters know what that means, and it has a nice quick abbreviation: HQ.
+- Cover system progress continues, fixing up network syncing, remaining glitches, and transitioning it into the player’s moving state. These changes will be committed once other changes to the stream are made.
+## Art
+- Finished LH68 Gemini ballistic pistol art cleanup, added iron sights to it.
+- Last week I promised that we’d have screenshots to share in week’s report. Other work has prevented this from happening, but check back next week for these images.
+- Artists are switching over to game-dev and integrating the past several week’s worth of work into that stream.
+- Weapons are almost all done and ready for reviews.
+- Sniper VFX – will begin next week.
+- A new gadget model for the Area Denial system is essentially an EMP claymore mine, and will also begin work next week.
+- Line art for helmet interiors for the HUD is complete and handed off to the UI implementers so they can put the Visor widgets into their proper place.
+## UI
+- Engineers and artists are working on stream integration, and recently fixed up some data that was causing a widget not to display correctly.
+- Fixed up a collision detection widget. This widget will be used in visors when you are in an EVA or ZeroG situation, and may have difficulty seeing an imminent collision with an object. Imagine you are strafing sideways and tracking an object: Your armor sensors are going to warn you just as it would were in a ship.
+- Work on the HUD’s integrated chat widget continues, including additional Radar functionality.
+- Engineers and Artists at BHVR are starting work on the interstitial Score Screens and LoadOut Lobbby screens for Star Marine this week.
+## Animation
+- Editing of the “no weapon set vaulting” and “mantling” mocap data is ongoing.
+- Completed the re-targeting of pistol and stocked hit reactions from v4 to v7.
+- Fixing mannequin errors in game-dev.
+## Audio
+- Designing the overpowering/discharge for the sniper rifle
+- Grenade asset work, cooking, indicators, bounces, explosions.
+- Iterating on weapon reload sounds, per weapon.
+- Editing additional recording session materials for implementation into the game.

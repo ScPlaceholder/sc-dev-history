@@ -1,0 +1,822 @@
+# Star Citizen Live: Talkin' VFX
+# https://www.youtube.com/watch?v=ZZWKR-r-2AQ
+[    4.7] The thing about Top Gun on the NES was that you had to land on the aircraft carrier and most people could not land on the aircraft carrier like
+[   12.9] Billy Escobar and Daniel Kaboo and I we all had Top Gun we would get together
+[   16.8] We would play we could only play the first way could play the first mission and then you would crash on the aircraft carrier
+[   22.0] So then you could play the second mission you would crash on the aircraft carrier and then you only had one life left
+[   26.6] So you could only play the third mission we crash in the aircraft carrier
+[   29.2] We never got to play the fourth mission and beat the game for years the fourth mission was you attacked us
+[   33.8] We didn't we didn't know for years
+[   35.7] We had no idea what the fourth mission was and it was only four missions in the whole thing
+[   39.7] And then like we came back to it like high school and we magically landed on the aircraft carrier one time
+[   44.7] It's like what and then we got to see the fourth mission and it's you attack a space shuttle
+[   48.9] Wow, you're in an F-14 and you would attack a space shuttle before it can take off
+[   54.3] It's a great game
+[   55.5] But that the landing on the aircraft carrier was so
+[   58.8] Devastatingly difficult that for years we never like a real thing then
+[   63.8] Yeah, it's just you could only play three levels and you could only play the three those if you were perfect
+[   67.7] Yeah, because you couldn't you couldn't survive landing on the aircraft. Wow
+[   71.7] You never you never know no never played it
+[   76.4] The second one
+[   79.0] Hi everybody
+[   80.5] Welcome to star citizen live your weekly showcase of NES and game facts news
+[   84.9] I'm your host Jared Huckabee and if you've never seen stars isn't live before
+[   89.0] it's where we take about an hour at the end of our week hang out with our CIG developers and
+[   93.9] Waste of time on the show this week. We have two esteemed members from our VFX team here in the Manchester UK
+[  100.5] We have mr. Mike Snowden. Hi, and mr. Leo. I'm gonna let you say it cuz I
+[  106.8] Got that point and I should have asked you before
+[  109.7] It starts with a V. I'm like it's really difficult here in UK, but once think is to as like Dutch
+[  115.8] I've never heard you pronounce it. No really?
+[  117.8] Do you let it go?
+[  119.0] once think is to
+[  121.4] I've never heard you pronounce that like I mean never asked you we just you just leave I tend to not
+[  127.4] Try even because people have so much trouble with it
+[  131.9] Yeah
+[  135.2] I'm impressed. Yeah, it's very regular name in Belgium
+[  140.6] But
+[  143.4] Yes, this American in this British person is very impressed, but it's a very common
+[  149.3] Where you guys doing very well, thank you. Yeah, thank you for coming down. It's your first time. I said this was your first time
+[  155.8] This shit. Yes. Well, welcome to the only constant. It's the the only constant is that it's two levels underground and
+[  162.7] Has no recognition. Hey, I like it
+[  165.6] It's a nice and toasty. Yeah, it's a bit it's a bit warm today. We're working on the air conditioning problem. So
+[  173.3] because every show is
+[  176.1] Somebody's first show and because we haven't had you guys on in a while
+[  180.2] Let's take a few moments to introduce yourself
+[  183.0] Mike will start with you. Who are you and what do you do for Star Citizen in the VFX team?
+[  188.4] I'm Mike Snowden and I am the VFX director
+[  191.0] So I have sort of in charge of the VFX department for CIG make sure everyone's kind of happy in the team and know what they're doing and
+[  200.2] You know uphold the standards that are expected of
+[  203.8] Star Citizen squadron 42 VFX
+[  206.4] What's a what's a traditional day like for a director for a VFX director?
+[  210.9] You know directors for different teams are different, but as a VFX director, just walk me through it. Yeah
+[  217.1] What's a Tuesday like Tuesday? Well, I get in very very early in the morning
+[  222.8] Check all my messages. There's usually a few although to be honest. I'll probably check them the night before
+[  228.5] Yeah, just check through the emails check through the teams messages see what kind of things need dealing with instantly
+[  234.6] Do a little bit of editor work on this like because I'm not really as the director
+[  239.3] I sort of don't really do as much of that
+[  241.8] But yeah playground with the editor test things out test the builds make sure that they're kind of working for when everyone else gets in
+[  250.9] By that point people have started to come in themselves and then they'll be inevitably
+[  255.1] The team will people in the team will be coming with questions and they'll be needing things reviewed
+[  260.3] And yeah before you know it you're in the meetings that you know the established meetings of the day and eventually it's the end of the day, you know
+[  269.4] Kind of typical day I can vouch for you answering the messages
+[  274.7] Anything on the off hours are not supposed to because the off-hours messages. I send you are usually hey
+[  279.7] I saw this emulator console done by this thing on Kickstarter
+[  283.8] Have you seen this is this a decent one or I found this old archaic, you know a console that was only
+[  289.7] Ever released in Switzerland and then check this out and what not select this so that's usually what we talk about now
+[  295.8] But you're always like there late night Sunday like why are you messaging me? Oh, it's not about work. It's about well exactly
+[  303.6] Leo who are you and what do you do for Star Citizen?
+[  307.0] I'm Leo von Stink is there right? I'm a principal VFX artist. I
+[  313.2] I know artists what I'm saying. I'm a principal VFX programmer. So I
+[  320.0] It's it's it's a big difference
+[  325.1] Must be nerves, but yeah, it's I lead a small team of VFX programmers and
+[  332.1] Basically, we do what Mike tells us to do
+[  336.2] So it's we work on the tools to VFX to create VFX we work on
+[  342.3] Making sure VFX are visible
+[  345.2] We work on like the graphics engine side to make
+[  349.5] Yeah, the particles
+[  352.7] Do their thing their magic basically, but yeah, that's that's what I do
+[  358.4] Well, we know I should tell you we do keep a list internally of people who mess up their own names on the show
+[  364.5] You know, we've been doing this. Well, I mean this show existed before me
+[  368.4] This show goes all the way back to wingman's hangout back in you know early 2013
+[  372.9] But for the time that I've been you know running it for eight years now
+[  377.1] We do keep a scorecard of people who forget their own names or the thing that was a free at your own title
+[  382.2] So we're gonna get only count point five. So Tom if you can add point five for Leo
+[  388.2] It's a score. It's not bad. It's not doing well. You doing well. Yeah
+[  391.8] I
+[  395.2] Get caught on things sometimes and it's like I really I know I should really move on like if I were a professional and this were like a
+[  402.5] Better show at a different place like they'd be like move on but I get stuck
+[  412.2] Thank you
+[  415.6] So the VFX so VXX team is is one of these teams, you know, we're all returning to office and it's like this and
+[  422.0] Because I spent most of my time in LA and I don't see one visits and stuff like this
+[  427.0] I never appreciated just how large the VFX team is and plus in the other building
+[  433.1] Sometimes we had to be scattered around because of the logistics of the building the new building
+[  436.6] You guys are all gathered in one place and when I turn a corner. There's just this
+[  442.1] Enormous crop of VFX people. How big is the team now? I think it's 21 21 of us including
+[  449.3] Everyone yeah, including 20
+[  452.4] Yeah, I think it's 21 21 people for the managing the VFX for two games
+[  457.9] You know start citizen squadron for you games and unlike the core the core tech side of it as well
+[  462.9] Cortex I you get called on for like the trailer stuff occasionally
+[  468.6] Yeah, not so much not so much these days
+[  471.0] But but yeah, I mean the the engine itself the improvements to the to the engine and to the effects per
+[  477.0] Leo's description of what his guys do
+[  480.5] So every time we have you on here
+[  483.2] We're just gonna hit the
+[  485.8] Greatest hits here at the beginning
+[  488.2] There's always a discussion about what is and isn't VFX
+[  491.4] There's a lot of things that people see in the game that because it's visual and
+[  497.6] Because it seems to have some effect on game player or whatever
+[  500.8] They just make this assumption that it's that it's VFX and whatnot
+[  504.5] talk to me about
+[  505.9] What is and isn't VFX since you deal with this misconception far more than I do?
+[  511.0] Yeah, I mean, I think the common one in in our game at least is or in our games at least is is clouds
+[  519.1] Gas clouds planetary clouds. There's a kind of an assumption that that's part of the VFX teams work
+[  525.6] Which is conceivably in other places it could be and it would be but here we
+[  531.4] We provide support for gas clouds and clouds in as much as we'll provide like the lightning effects the the space
+[  538.4] All the kind of dust inside them helping with that sense of motion when you're inside these these kind of gas cloud
+[  545.0] Areas, but we don't really author the actual clouds themselves
+[  549.4] There's there's kind of other artists and other engineers who deal with with that that side of it
+[  555.3] So what do what do you do? We started off with what you didn't do but what what what is VFX?
+[  561.1] For someone who looks at Star Citizen today, you log in
+[  566.0] And you're looking at what what what part of what they're seeing is that's the work of the VFX team
+[  571.9] The obvious ones starting with the obvious ones really like any kind of smoke effects that you see smoke plumes
+[  578.2] explosions things like that
+[  580.2] thrusters effects coming from the thrusters the glow in of the thrusters
+[  585.6] Weapon muzzle flashes anything that's kind of
+[  589.5] Energy like energy in motion
+[  592.2] Is typically done by by the VFX team a lot of those things you just mentioned
+[  597.5] Emit light, but that's not the work of the lighting the lighting team. It's it's so much
+[  605.6] I'm just exploring yeah that this this point where they cross over and bleed over huge amount of crossover and it's collaboration
+[  612.4] Isn't it as well? So we do actually as VFX artists
+[  615.8] We do spawn lights in the game actually we spawn a lot of lights with through the VFX, but we've got our own special
+[  622.5] Lights that we spawn they they come from the particle system itself and they're not shadow casting
+[  628.7] We're not allowed to blow the budget
+[  631.2] So we don't have shadow casting option
+[  633.2] But like if we make an energy weapon effect, we'll usually have like a particle light that spawns along with the particles themselves
+[  641.6] So yeah, there's crossover and collaboration
+[  643.6] So that was actually leading to my next question. So I'm glad you touched on it the the lighting
+[  648.5] But you know everything in games has a budget. Oh, yeah, and when we use the term budget as developers
+[  654.3] We're not talking about money, you know a lot of people hit here that thing
+[  658.3] I think oh, that's how much money you spend on know we're talking about it's a performance budget
+[  662.0] Yeah, it's every single thing you ask a computer to do
+[  666.0] has a cost of that computer so
+[  669.0] Getting performance out of anything is about managing your your budgets your cost
+[  674.3] because your stuff
+[  676.1] I'm gonna basically I'm just trying to start a fight between you and the lighting team because your stuff creates lights and something like this
+[  681.6] Do you fight over lighting budget?
+[  684.1] Is is is are do you do these things in the lighting teams like no?
+[  689.5] You're taking into our lighting budget we need your answer like you can't cast shadows
+[  694.2] Anything talk to me about this interplay without you know the start of war
+[  697.8] I don't give crap Chris Campbell's a fit if Chris Campbell's a friend. I was gonna say Chris Campbell
+[  701.7] No, there's there's a fight with Chris. There's there's no there's no falling out at all to be honest with you
+[  706.0] Do I do know it's we don't really have like a fixed budget per se anyway. It's not like right vfx guys you've got
+[  714.4] 20 lights we've got a hundred lights. It doesn't really work like that. It really just is what what does the game need like what?
+[  721.0] What is the use case?
+[  723.4] So there's not really any we don't really fall out over it well, that's because we're a PC
+[  728.0] Tile, you know, we don't have that
+[  729.3] We don't have the standardized hardware that you would find a console you only do these things what not it's we're still pushing the technology
+[  735.8] And as we develop new technologies combined, you know the new gen gen 12 renderers and stuff like that
+[  740.7] So the numbers keep changing so yeah, so it's just kind of but there's there has to be a point
+[  745.4] where
+[  747.5] You know you're pushing though. There's a point where it's like yeah
+[  751.3] Like like some like some bell in your head is like to be go too far with that
+[  756.7] It's like can we go far to farther talk to me about this process? How do you manage?
+[  761.5] How do you manage wanting something to look as giant and dynamic and as crazy and as detailed as possible with?
+[  769.5] Knowing you might create some heartbreak or heartburn as the case may be for others
+[  775.8] If you I think I think it just comes with it at least from for me it just comes with experience
+[  781.3] It's like I sort of intrinsically know
+[  783.9] Not to use too many lights for an effect like I just you just use as few as you can and it's the same for the particles
+[  790.4] It's everything just just use as few as you possibly can whilst retaining like the high quality expectations
+[  796.8] So I can honestly say like I've never really I've not really had the conversation with Chris Campbell. Hey, hey, dude
+[  804.1] Like am I using too many lights are we stealing from your your budget?
+[  808.4] I think he'd let me know if we were there. I'm sure he would Chris Campbell send your letters to make snowden
+[  814.2] Commander Carl Kip Messer says is this live? No, it was pre-recorded tomorrow
+[  820.0] Leo when I asked you what you did one of the things you said was you do what Mike tells you and what but
+[  827.2] I see him not in his head part of what you know
+[  831.1] I've been doing this a long time and when I talk to designers versus programmers and stuff
+[  835.8] Designers have the ideas and we want to do this and then programmers are usually the ones that are like
+[  841.9] Yeah, okay
+[  843.0] I can give you that part of that and that part of that and that part of that but you can't do this without
+[  848.7] negatively impacting this other so talk to me about
+[  851.3] that balance and finding that balance and and how you work to
+[  855.6] Get these people the things that they're asking for and how you balance not
+[  861.5] Causing problems along the way performance or any otherwise. Yeah, it's it's it's a lot about kind of
+[  868.9] trying to teach people
+[  871.4] on what like how things affect each other
+[  875.2] and
+[  876.0] yeah, it's
+[  877.8] Basically sharing the knowledge that that's the best way to to kind of tackle these these kind of problems
+[  884.4] and
+[  885.5] Another part is then offering tools
+[  888.3] so one of the things that we need to do is it's kind of
+[  892.5] Like the take care of the budget, but then if people can't see what they're how they affect the budgets
+[  899.4] They can't do anything about it. So like on our side, how do we how do we handle that?
+[  904.7] We provide tools for artists to actually check themselves
+[  908.2] What what does your effect actually do?
+[  911.7] What effect does it have on the performance and yeah, so it's it's
+[  917.4] Those tools together with then actually telling people what does it mean when you know this tool shows this or that
+[  925.2] That that kind of helps artists to to better understand like and to better optimize
+[  931.6] For yeah for the game. Well, we've got a great very new example of that. Haven't we with the overdraw?
+[  937.4] and previewer
+[  939.0] Which I it's like my new it's my favorite thing
+[  943.5] Generally speaking, there's never a question. I don't know the answer to on a show like this
+[  947.8] But I've never heard this term. So I'm going to ask you to explain it and yes, don't get me fired
+[  952.2] So well, so basically like with with particles
+[  955.3] There's there's a high transparency cost to them because it because it's all it's you know
+[  959.3] There's opacity or there's there's lack of opacity
+[  962.2] And that that incurs a cost which which I know is like the transparency cost
+[  967.1] But it's it's also the overdraw aspect of it and liable explain it in a more like concise way
+[  973.1] But for me, it's basically we can we can quickly
+[  976.4] Blow the budget
+[  977.8] We can we can really hit the kind of the the frame the frames per second with our transparency costs
+[  983.7] If we get too carried away with adding particle after particle
+[  986.6] So it's how they all stack up over each other and the overdraw
+[  990.0] Previewer basically just it shows a heat map
+[  992.1] So it's like it's like a toggle and it just draws the screen as a heat map and it's kind of got a
+[  997.9] There's a guide showing you basically if it gets to this color. It's it's it's too high
+[ 1003.0] So it's like the the overdraw cost is too high and it's you're wasting particles
+[ 1006.7] That can't be seen because there's something yeah, yeah exactly so the great
+[ 1009.4] It's great. You just toggle it on and off you can see oh wow great, you know
+[ 1012.5] I can't really see many effects on the screen right now
+[ 1015.5] There's maybe some kind of subtle
+[ 1018.6] Dust scrolling but you you stick it into the overdraw
+[ 1022.1] Preview mode and it's fully white and that's that's just it's too expensive and we need to we need to dial that back
+[ 1028.2] So it's a great way to see things hidden behind other things
+[ 1031.9] Don't need to be there because you can't see it from that perspective exactly and it's like leo says the the great
+[ 1036.2] The great skill that leo and his his guys have got is that they they make our lives easier
+[ 1041.2] They make they make they do as many things as they can to make our job easier to help us to stay within the limits of of of again the budget
+[ 1049.3] Um, is that true you make us like easier leo?
+[ 1053.0] Yeah, that's gonna say I'm answering for him
+[ 1056.2] Well sometimes yeah
+[ 1058.5] We try to but yeah for for the overdraw
+[ 1062.2] Visualizer shout out to Alejandro like he did that as one of the graphics programmers see that as like a kind of side project
+[ 1070.1] And and he basically gave it to us. We've taken it over and will maintain it
+[ 1074.8] But like this is kind of nice collaboration again like then the graphics guys
+[ 1080.0] Yeah, well, there's a there's a massive crossover with graphics and vfx programming anyway
+[ 1084.7] Yeah, it's like kind of like almost like don't want to sound too cheesy, but the same family isn't it and yeah
+[ 1089.9] You're kind of a niche part of of that. Yes that department. So yeah shout out
+[ 1099.0] Captain lewis cornato says three cherry coax on his desk. How do we get jerry to drink more before we're in the show?
+[ 1106.0] David let's
+[ 1108.7] Remember to check to make sure that I've hidden my caffeine habit
+[ 1112.0] Before we start the show. This is actually
+[ 1115.2] A cherry pepsi max. Uh, it's the most delicious sugar-free soft drink available in the united kingdom
+[ 1122.3] They're they're really good and and they're widely available here because of the
+[ 1127.8] Really impressive sugar tax this country has you can't find them in the states because
+[ 1132.2] It's overrun by high fructose corn syrup, but here cherry pepsi max freely available anywhere and it's delicious
+[ 1140.1] Sponsor me send me a shirt
+[ 1146.6] Yeah, that happens. Yeah, that happens
+[ 1149.8] Uh, let's go back to two games
+[ 1153.2] Now you've got you said you got 2021 people working on your team
+[ 1156.3] Some folks are working on stuff for star says and some are working for squadron 42
+[ 1159.9] Some are bouncing back and forth as the case would be talking about the the different the process
+[ 1165.4] The differences in process between working on
+[ 1168.3] A single player game that is often only seen from limited perspectives like this and a
+[ 1174.4] massively multiplayer game that can be seen from 100 plus different perspectives all at once
+[ 1180.3] Talk to me about the differences here
+[ 1183.2] Do you want me to take that one start with? Yeah
+[ 1186.5] Yeah, I mean Leo's shoulders just fell
+[ 1189.4] He's like thinking about he's like, uh, I just watched leo to like get defeated
+[ 1193.5] He went from superman to clark kent. It's like, uh
+[ 1196.7] So yeah, you take this leo you recover. Yeah, I mean from my point of view the the the kind of there's a lot of similarities
+[ 1202.2] But they do they do have very
+[ 1204.3] different challenges
+[ 1206.9] squadron 42
+[ 1208.6] Obviously, I can't give away spoilers, but everyone knows it has vfx. It has vfx. It's got lots of them
+[ 1215.6] Lots of destruction, but it's but it's more importantly. It's more kind of as a game
+[ 1220.5] It's more traditional in that there's a series of levels that you linearly progress through
+[ 1226.0] And with that there's a lot more control. So the effects can be controlled
+[ 1231.8] Much more and when I say control, I mean we we're much clearer on kind of camera positions and things like that and
+[ 1238.8] Cinematic sequences we know that the camera may or may not be fixed at certain points on it
+[ 1244.0] Whereas and therefore we can we can again going back to the overdraw thing
+[ 1248.1] We can kind of look at it specifically at a frame a point on the location
+[ 1253.7] And we understand that that's that's what we're working with and we can kind of start to dial in the effects to suit them
+[ 1259.9] suit them specific kind of viewpoints whereas
+[ 1263.7] having some kind of sequence
+[ 1265.9] similar in star citizen
+[ 1268.1] Which is much more modular and much more free and and not at all linear
+[ 1272.5] You've just got to kind of be able to factor lots more things in
+[ 1276.0] and I guess like
+[ 1277.5] That's why the the tools that you provide
+[ 1280.3] To help us kind of have as much information as possible with that as super useful for it
+[ 1285.2] You know again talking about budgets in star citizen. We don't really know
+[ 1289.6] How many ships are going to be in any one place and and it could be hundreds could be dozens
+[ 1295.4] It could just be all of them right and and inside a gas cloud which is full of all kinds of other
+[ 1301.9] Things and it's just yeah, it's really kind of the scalability of star citizen
+[ 1307.5] Is a vastly different challenge to to the to the squadron 42 cinematic experience
+[ 1312.8] There's one thing you can always I was talking about this with the the jump point guys
+[ 1316.6] Yeah, I was like if there's one thing you can absolutely count on
+[ 1320.0] It's that how many how many people does the server hold?
+[ 1323.4] That so many people are going to try to use the jump point at the same time. Yeah, it's like not accidentally like intentionally
+[ 1330.3] That there will be we're all going to log on. We're all going to go to the same place
+[ 1334.2] You know, it's going to it's going to be a hunt
+[ 1336.0] It's going to be a hundred auroras all trying to get through the jump get at the same time
+[ 1339.2] It's going to be a it's going to be a an 890 jump with 100 people all shooting off fireworks at the same time
+[ 1344.7] Just the fireworks still go as they go through. It's you know
+[ 1348.5] Our people they put it they put it through the test. They're all they're all inherent
+[ 1352.7] You know, you know qa testers at heart and some absolutely
+[ 1355.7] And well, it's just very creative isn't it the the the things that are that the backers do in the game
+[ 1361.0] We can't always guess that they're going to do them. So there's a lot of creative uses of
+[ 1364.8] Of the of the stuff that's in our game. Yeah
+[ 1369.5] I want to follow up on one of the things you talked about perspective now, obviously, you know, you know, some aspects of
+[ 1376.0] Of squad and you know may have a locked camera some obviously will not and whatnot
+[ 1380.4] You know, it's part of that immersive cinematic experience
+[ 1382.7] You know be where you want to be when the certain things happen. So I just the
+[ 1387.3] But at some point it's it's still just a single point of view. You're always still just drawing for the one player
+[ 1392.3] So I imagine that when it comes to vfx
+[ 1396.2] You can take a more like
+[ 1398.3] Hollywood approach where you don't have to build the entire building
+[ 1402.2] You only have to build the facade that's good that the camera is going to see if the camera is never going to push inside the building
+[ 1407.5] You don't have to build, you know a building. It's a back lot
+[ 1411.3] You know, it's like there are parts of this spaceship set that we're on
+[ 1414.7] Spoiler alert that the camera will never show and they don't exist the spaceship goes to a point and then it stops
+[ 1420.4] It's because it's like don't tilt the camera up
+[ 1423.7] It's like this. So you can do that with a single player game, but in a multiplayer game
+[ 1428.8] These things have to work from every possible conceivable
+[ 1432.0] Exactly angle and that's that that changed the way you author
+[ 1436.2] Things it's yeah, yeah, well it changes the way you you kind of
+[ 1440.5] Yeah, like everything has to be systemic like it's buzzword
+[ 1444.3] But like for sarsets and like everything we do needs to be like possible on all
+[ 1449.9] Scales on like you can look
+[ 1452.8] Like if it's big enough you can look from it from like very far out
+[ 1457.4] But then you also go inside and like you're like
+[ 1461.4] Inside a gas cloud or whatever and then like the whole scale like
+[ 1466.7] the
+[ 1467.2] The travel from outside to inside even like you
+[ 1472.3] Everything has to work and it has to work from all angles and yeah, it gives
+[ 1478.2] A nice kind of like an interesting problem to solve for us
+[ 1482.7] Um, so we try to make as much as possible systemic
+[ 1486.3] But then the squadron guys come come in and they ask like how do we control this?
+[ 1492.0] Yeah
+[ 1493.6] Yeah, that's then like the other side of your question is like yeah just
+[ 1498.6] We need them to provide some control over this systemic kind of
+[ 1503.6] Yeah nature of the game
+[ 1506.1] So we're almost out of time
+[ 1509.1] But Mike today in the uk
+[ 1511.8] is employee appreciation day
+[ 1514.5] and
+[ 1515.6] I'm not
+[ 1517.6] Insensitive to the fact that the last time I had you on
+[ 1521.2] Uh for I don't know why I did it you're you are you gonna pull out already? I'm ready. I'm going so the last time I had you on
+[ 1527.6] I
+[ 1528.5] Unfortunately asked you to basically name every single person on your team and and you did really well, but you with 20 people
+[ 1536.3] You missed one or two and I caught so I caused some
+[ 1539.6] Strife that was entirely on me. So I'm pleased to see that you have
+[ 1545.6] Yeah, I'm gonna I'm just gonna name trust everyone in there
+[ 1548.0] So let's do this for some employee appreciation day. Why don't you why don't you call out?
+[ 1552.2] Some of the folks in your team and maybe share with us a little bit about what they're currently working on
+[ 1556.2] Yeah, well, I'll start with I start with our producers. We've got we've got where's your camera. Look at this camera
+[ 1562.3] Nope, this one. Hmm. That's your camera right there. Yeah. Yeah, you're pointing right there. Okay. Play appreciation
+[ 1568.2] So start with our producers who who without our producers. We couldn't get anything done. So
+[ 1574.3] Mark White, Callum Whiteley, this is for you guys. Thank you very much for producing us
+[ 1580.7] This feels ridiculous by then
+[ 1582.7] Um, and then we've got senior vfx concepts artists. And by the way, I know everyone
+[ 1587.5] It's just hard to remember them all live tv live tv. It's pressure
+[ 1590.8] So we've got we've got Rob Lujan who's who's our senior vfx concept artist. So Rob, you know, you're awesome
+[ 1596.4] So keep being awesome. What's he working on now? Oh, sorry. What's he working on?
+[ 1600.2] So Rob's actually at the moment. He's working on some am I allowed to say what he's working on?
+[ 1605.8] We'll say it and then I'll tell you. Okay. He's he's been he's currently working on some quantum travel
+[ 1610.4] Improvements, so he's he's working on concepts for different different types of quantum travel. No, you can't show that yet. Okay. So
+[ 1618.4] so that's that
+[ 1620.6] And Rob's also doing loads of weapon stuff as well. So
+[ 1623.3] He's doing great work
+[ 1625.0] We got then we got the senior vfx artists. So we got we got Rory
+[ 1628.3] I'm just going to go with first names by the way. We've got Rory. We've got Carthage. We've got Ali
+[ 1632.0] We've got geom. These are all our kind of senior group
+[ 1635.2] Rory Carthage and geom are all working on squander 42. You're doing a fantastic job on that. You know, you are
+[ 1641.0] Ali's working on star citizen because we've basically got like half the half the artists on star citizen half the artists on squadron
+[ 1649.2] Um, I can't really go into much about what they're doing because it's all spoilers
+[ 1653.5] But they're doing lots of locations lots of destruction sequences
+[ 1656.4] Etc etc etc and then we've got vfx artist 3
+[ 1660.6] Riot and Diego riots working on star citizen doing some low-vill skyline improvements at the moment
+[ 1667.6] And we've got Diego who is mr. Houdini. So Diego doing loads of amazing stuff with destruction for squadron 42
+[ 1676.7] Again, we can't go into too much details. Then we've got vfx artist 2. We've got Joyce. Joyce is actually on maternity leave
+[ 1682.8] Joyce works on star citizen and
+[ 1685.7] Does everything ships
+[ 1687.8] locations feature work weapons all sorts of stuff
+[ 1692.3] and then we've got
+[ 1694.8] Vfx artist one level we've got will Wallace who's just come back from from a career break
+[ 1699.0] Traveling the world and will is on star citizen doing great work at the moment with the miss call C
+[ 1704.5] and
+[ 1705.5] Then we've got amrico, uh, nicolas and uh, they're both on squadron 42
+[ 1710.0] So we're currently going into too much detail about what they're doing, but there's lots of cool location stuff
+[ 1714.0] And then we've got ricardo who has just joined us this week and is working on star citizen
+[ 1718.3] So he's just onboarding so we kind of do like an onboarding process that lasts a couple of weeks
+[ 1722.7] We and it culminates with doing like a weapon effect
+[ 1725.5] so
+[ 1727.2] Welcome to the team ricardo. It's great to have you
+[ 1730.3] And we've actually got four interns
+[ 1732.7] All the way from sweden. We've got david kevin axel and nazir and they're two of them
+[ 1739.1] Kevin and axel are working on squadron 42 and
+[ 1742.0] David and nazir are working on star citizen
+[ 1745.5] And nazir is doing like gpu conversions david's working on miss
+[ 1750.6] fury
+[ 1751.9] And then we've got jake who is embedded qa. Jake just kind of keeps us all right
+[ 1758.3] Anything that's not working. He highlights it. He helps his debug problems. So jake you're doing great
+[ 1764.4] Uh, and then i'm going to hand over to you for the program as leo. Do you want my cheat sheet?
+[ 1769.6] I don't have that many people so that's fine should be able to remember them. Oh, yeah, okay, okay, so we have
+[ 1777.5] curin and francesco the effects programmers
+[ 1780.5] and
+[ 1781.7] alexander mayer also one of the interns from sweden
+[ 1785.8] so
+[ 1787.2] curin has been working on the quantum travel
+[ 1790.3] effects then
+[ 1791.9] francesco has been working on fire hazard visuals
+[ 1796.3] and then
+[ 1797.4] alexander has been working on
+[ 1800.4] Particle tools. So he's like a more tools programmer. So uh, extra on ref. It's called like the project
+[ 1806.3] But it's something to organize our particle libraries a little bit better
+[ 1811.5] But yeah, I appreciate you guys
+[ 1816.1] Anybody else just double checking even even with the list on self-conscious that i might have missed someone
+[ 1820.8] Hey, you did good. All right. Well gentlemen, thank you so much for taking the time to hang out with us
+[ 1826.0] We're gonna we're gonna take a short break. We're gonna play a video. Um,
+[ 1830.0] I just realized we didn't queue up a different one. So I think it's probably yellow yellow yellow again from last
+[ 1835.8] week
+[ 1836.7] David's put that on the list
+[ 1838.5] Because I didn't switch it out. So enjoy a repeat of yellow yellow yell and when we come back
+[ 1844.8] We'll have a
+[ 1846.8] Dear friend of mine that we've I don't think we've ever had on camera before so stay tuned. See you in a few minutes
+[ 1864.8] Lost all my cargo back on yellow
+[ 1869.3] All my a uc on yellow
+[ 1873.8] It stored my ship for me on yellow can't get it back from yellow. Oh yellow
+[ 1880.4] Go get some cargo. They said to me
+[ 1885.0] Sell it and double your a uc
+[ 1888.2] Oh
+[ 1889.5] When out there thinking it would be easy
+[ 1894.1] Mean my way over to our court my knee
+[ 1897.9] And I was like
+[ 1902.6] Up on my cargo with what I could buy of barrel
+[ 1907.0] And I was like
+[ 1911.0] I made it out past at mo and the server crashed. Oh, no, no, no, no, no
+[ 1919.5] Lost all my cargo back on yellow
+[ 1924.1] All my a uc on yellow
+[ 1926.7] Oh, no, no
+[ 1928.7] It stored my ship for me on yellow can't get it back from yellow. Oh yellow
+[ 1950.5] Can't get it back
+[ 1953.0] From yellow
+[ 1972.6] You want to hear before I guess I don't really have any great stories. Hi everybody. Welcome back to stars in this life
+[ 1979.2] that was uh
+[ 1980.9] yellow yell the redux
+[ 1983.2] Repeat from last week's uh interstitial because I forgot to swap out the video. That's entirely on me
+[ 1988.4] Before we get to our next yes, uh, we we've started this thing where we start to talk a little bit about many of the
+[ 1994.4] Decorative items we have here on the only constant this week. I want to point out
+[ 1999.8] These two lovely
+[ 2002.2] Helmets here
+[ 2003.6] This is the this is a variant of the star kit and dragonfly helmet and this is a this is the you know the famous and much beloved
+[ 2011.2] Abe's
+[ 2012.4] Tavaan helmet these helmets were actually created 3d printed and painted by star citizen named mighty heidi
+[ 2020.8] And sent to us for a display here on the ship. So
+[ 2024.4] If you haven't seen us her work, you can view it on twitter
+[ 2028.6] As you can see it's very high quality and and and we were really proud to have it here
+[ 2033.2] We are slowly building out a wall of of helmets, which we're we haven't shown yet because it's got holes and gaps in it
+[ 2040.0] But we're slowly starting to fill them in and stuff. So just a shout out to star citizen
+[ 2044.6] mighty heidi
+[ 2046.0] Who makes these wonderful wonderful helmets?
+[ 2049.6] with that
+[ 2050.9] john
+[ 2052.0] Jared i'm good. I feel like i'm having you know an interview on a museum stage
+[ 2057.3] There's all this great stuff around
+[ 2059.6] Well, that was what we were going for an old stodgy museum. That's very much what people think when they see me
+[ 2065.9] Uh, I didn't say stodgy. No, I added stodgy
+[ 2069.3] I think that's just I think museums are I I have a personal aversion to museums that I don't really
+[ 2075.5] Let's not go there
+[ 2077.5] John shimel
+[ 2078.6] Jared huckabee, how are you doing? Good man? How are you? We have never we we go back. We've gone back
+[ 2084.5] It was probably 2015 when we first met. Yeah
+[ 2088.6] At one point you were one of my bosses
+[ 2090.9] It's at various points in my career. Uh, we'll get to all that
+[ 2096.0] For folks who don't have watched the show
+[ 2098.6] That first half is where we talk about development and so like the second half is where I just have somebody
+[ 2102.4] I really like on the show and we get to know them and get to know more about them. So that's what we're doing here
+[ 2106.8] John shimel
+[ 2108.1] For folks who have never heard of you, which should be everybody in this case
+[ 2111.0] Well, let's watch the stars in the stars isn't community. Tell them who you are and what you do for clad imperium games
+[ 2119.5] I am john shimel. I currently have the title of executive producer
+[ 2123.7] I'm almost certain that that's because they don't know what else to call me
+[ 2127.3] um
+[ 2128.5] I have cycled through the company in a in a kind of a
+[ 2133.2] I think of it as almost a utility player role. I started out
+[ 2138.8] Running the narrative group and worked with dav haddock and then also will wise bomb on the
+[ 2144.4] story for squadron 42 in the early scripts
+[ 2148.0] and uh, then I got sort of asked to produce the
+[ 2151.6] um
+[ 2152.6] motion capture shoot that we
+[ 2154.9] Had in 2015 and 2016 and at the imaginary and at anti-circuses studio the imaginary and the e-ling london
+[ 2163.2] Which was I think 90 days of shooting
+[ 2168.0] We can talk about that in a moment. That was bedlam
+[ 2171.8] And uh, and then I we finished that and I ran global video production for a while, which I guess is when I was your boss
+[ 2179.7] um
+[ 2181.4] And that was spectacular. I got to travel all the different
+[ 2184.9] You're doing this now sort of I got to travel all the different studios and interview the geniuses that are making the game and and
+[ 2191.8] and really learning what is involved in making this thing
+[ 2196.4] as spectacular as it is
+[ 2199.7] And now I have a kind of multiplicity of of roles. I'm producing the
+[ 2206.6] Performance and motion capture shoots with you know, the rest of the team
+[ 2210.5] Um, and with Dave Haddock and Ross Richards and Emma Dobson and those people
+[ 2216.0] um, I was supervising the
+[ 2218.8] buildout of stage six, which is our
+[ 2221.9] new and spectacular motion capture studio and of this place
+[ 2226.8] um
+[ 2228.3] I now have been conscripted into putting signs up on the stage
+[ 2234.4] Yeah, because I know a lot about that
+[ 2236.8] um
+[ 2238.2] Yeah, I think one of the reasons you would well as we talk more it'll
+[ 2244.4] It'll become apparent why
+[ 2246.6] why why why john and I connected very easily it's our paths are
+[ 2251.8] Remarkably similar both in our times before being here and then here
+[ 2256.9] I've often joked that you know your title is where you start
+[ 2260.3] In this place. I've had six or seven titles when I it's this place this place is really good about
+[ 2266.4] Recognizing where you can make your contribution and saying well go make your contribution there
+[ 2271.1] It's like well, I was I was gonna do this just yeah
+[ 2273.5] But we can find somebody else to do that you can do this and and you're moving along and finding where you can make your greatest
+[ 2279.3] Contributions to the project for those of us who get bored easily. It's fantastic
+[ 2283.6] Right. Yeah, so so we'll get into that. Let's let's go back to before star citizen. So
+[ 2292.0] I took a very winding path to get here
+[ 2295.4] My phone is making a noise. It's never made before
+[ 2299.6] Supposed to well no it is muted. It was it's like a it's like a like an amber alert or something but here in the UK
+[ 2305.1] I don't know what that is
+[ 2307.6] Apparently it gets through a do not disturb
+[ 2310.0] means the sun shining in the Manchester
+[ 2313.1] so
+[ 2314.4] What was that? Oh, so the path I worked
+[ 2318.0] I had 37
+[ 2319.6] You know professions before I got here and all kinds of matter stuff. Yeah, your path is
+[ 2325.0] In my opinion, it's a little more interesting. The mind is talk to me about the journey of john shimmel from
+[ 2330.6] When you left the nest to how you ended up in video games
+[ 2334.4] Um
+[ 2335.4] Circuit is yeah, that's right. Um
+[ 2338.5] I started my professional life
+[ 2341.0] as a
+[ 2343.1] Base player in new york city. Um, I was actually splitting my time early on between
+[ 2349.0] playing bass for strange experimental theater and
+[ 2352.9] Going to math graduate school at the coran Institute and at nyu
+[ 2358.0] and for reasons that
+[ 2359.9] certainly my parents didn't understand I chose to drop the math program and
+[ 2365.5] spend my days doing conference of the birds with peter brook at the
+[ 2370.3] at the
+[ 2371.3] International center for theater research, which was housed at the brooklyn academy of music at the time anyway
+[ 2377.2] I cycled through
+[ 2379.0] that and spent about
+[ 2381.6] 15 years in new york, I guess
+[ 2384.4] um
+[ 2385.6] playing everything from cbgb to big band music to
+[ 2390.6] and and uh
+[ 2393.1] There were three Broadway shows and in there I
+[ 2396.6] played for and sort of musical director a show called runaways, which was we
+[ 2401.1] we
+[ 2402.1] concocted out of workshops blue suede os was the
+[ 2406.5] Brain brains behind that and we had a cast that included
+[ 2410.8] seasoned actors and runaways that we found in various shelters and and um
+[ 2416.4] So it was that and then I I did um
+[ 2420.4] I was the musical director of the jewish orchestra in the cherry orchard, which we did at the uh
+[ 2426.7] Vivian bowmont theater at at lincoln center with meryl streep and ral julia and
+[ 2432.8] Irene e worth was extraordinary
+[ 2435.3] um
+[ 2436.2] Andres serban directed that and it was it was
+[ 2440.0] amazing
+[ 2442.0] The greatest moment in my theater life was the the night we were doing that and
+[ 2447.7] The new york blackout happened and we uh, so there was no lights by intermission
+[ 2454.3] And there were candles that were part of the set and so the stage hands filled coffee cans with candles
+[ 2460.2] And stood around the stage with torches and the ushers and knelt in the front with flashlights
+[ 2464.9] And we did the second half of cherry orchard to flashlight and candlelight
+[ 2469.2] anyway, um, and then uh six of us
+[ 2474.3] concoct wrote a show called pump boys and dinettes which was um
+[ 2479.1] basically a bar band
+[ 2481.1] and
+[ 2482.8] and two women that had a
+[ 2484.6] Sisters act that got together and we did we put together this show that ran on broadway for a couple of years and got tony nomination and
+[ 2493.2] Was stupid fun
+[ 2495.6] You got to play the tony you got to play the tony awards that year. I got to play the tony awards
+[ 2499.6] I stood in line for makeup behind robert press and I thought I was gonna die
+[ 2504.4] anyway
+[ 2505.6] Robert press in for you sci-fi nerds played centauri in the last starfighter
+[ 2510.9] I would say the music man, but you're a bunch of sci-fi people. So I put it in your terms, but
+[ 2516.2] Yeah, yeah, probably 76 trombones. It's not at the forefront of everybody's consciousness. Just you and
+[ 2522.9] yeah, um
+[ 2525.1] somewhere between
+[ 2529.5] before
+[ 2530.8] What happened before pump boys and dinettes is that I had sort of had enough of new york and
+[ 2537.2] sent a friend of mine who was a screenwriter
+[ 2541.0] An idea for a film
+[ 2542.8] I said, you know, does this sound like a good idea and he said yeah, it does. Why don't you come to la and and write it with me
+[ 2549.2] So I did before I closed up shop in new york and I went to la and we wrote the script and we sold it to fox
+[ 2557.3] And we did a rewrite for fox and then we
+[ 2561.3] Turned the rewrite in and our producer who we met with said it's the best rewrite I've ever seen
+[ 2567.2] I'm going downstairs to find directors
+[ 2570.0] That was at 10 o'clock in the morning at 4 o'clock in the afternoon. They abandoned the project
+[ 2575.4] Which is hollywood in a nutshell
+[ 2578.6] and
+[ 2580.8] Amazing and I got drunker than anybody is allowed to to survive and flew back to new york
+[ 2587.5] I actually hiccuped all the way to new york and then all the way to connect it on the train and then spent about a week recovering
+[ 2594.4] And then went to new york and called some friends and said i'm back and those that's how I ended up in pump boys
+[ 2600.0] They were you know putting that show together
+[ 2602.8] Um anyway when pump boys was done
+[ 2606.2] uh
+[ 2607.2] I was sort of done with new york. We had had you know our 15 minutes of celebrity and and and all of that and
+[ 2614.2] Coincidentally the woman that I was soon to marry
+[ 2617.7] um
+[ 2618.8] Was hired by disney to be a producer on the little mermaid
+[ 2622.8] So disney we got an embossed folder that said moving with mickey, which one was terrifying
+[ 2628.6] And we were moved to to la and started our la our la lives and she was at disney for a while and I
+[ 2635.6] Sort of put myself
+[ 2638.0] In a race against myself whether writing or trying to be a development executive would come first
+[ 2643.5] and um
+[ 2645.2] I worked as a script reader for a while and then I was hired by warner brothers to be a script reader
+[ 2650.3] And then I ran the story department of warner brothers for a while and then they started kicking me upstairs
+[ 2655.4] And then they asked me to run the animation division and I said no, thank you
+[ 2659.2] And you don't say no, thank you. So I left and uh sort of meandered through hollywood for a while ended up
+[ 2666.4] I ended up but but found myself eventually working for michael douglas and steve ruther at douglas ruther
+[ 2672.7] Which was on the paramount lot. We produced faceoff among other things
+[ 2677.3] rainman
+[ 2678.5] Rainmaker sorry
+[ 2680.8] And then that company as do many independent production companies lost financing and I worked for michael for a while
+[ 2688.2] And then I went to work with steve because I found warner brothers lock because he had 50 million dollars to spend and I thought that sounded nifty
+[ 2695.6] And then that company went belly up and I um started to work with chris
+[ 2702.8] So that was your cue it is no no no no words than you needed it's great
+[ 2706.9] My we obviously won't go through my path, but it has a remarkable number of similarities there
+[ 2713.5] I
+[ 2714.6] Might when I was trying to be an actor won't go into everything, but we were telling the story earlier for the prep
+[ 2721.5] I got hired I was doing industrials like my entire acting career was industrials
+[ 2725.1] Right, uh, you know those those videos that they make you watch when you when you hire in like here's an instruction video
+[ 2731.1] Just to tell you how to not run somebody over by a forklift
+[ 2734.2] I have been crushed by so many forklifts and I have run over so many people at forklifts
+[ 2738.8] And yet here you are yeah, and that's what I did and we did there was one series
+[ 2742.0] You know there was that was specific where you know it was at the end
+[ 2745.0] It was always like well, what did we learn in this video?
+[ 2747.1] I'm a which is by the way where the phrase comes from goes all the way back to my history in uh,
+[ 2751.5] in uh the industrials, but
+[ 2754.0] I eventually hired in disney and this your story reminded me that and I'm at my orientation at disney
+[ 2759.7] And it's 200 people in this enormous ballroom. We're all sitting around tables and we're all in different groups
+[ 2764.7] I'm in I'm in green table or whatever
+[ 2767.6] It wasn't a little Mickey it wasn't a little mermaid table, but it was like a hercules table movie shortly after that
+[ 2773.1] And they start playing a sexual harassment video
+[ 2776.4] And it's me
+[ 2777.9] And it's me in the video. Oh my god, basically
+[ 2782.5] Being a jerk and whatever and just everybody at my table starts to look at me and that's why I knew my acting career was over
+[ 2787.8] I'm like, yeah, I don't know. I transition out of I had transitioned out of performing
+[ 2792.6] At that point the minute I had I was stuck in a room with 200 people and had to watch one of my performances. I was like
+[ 2799.0] Very funny, I'm just going to be me from now on
+[ 2801.3] Yeah, also sexual harassment in a room sort of with goofy and many it's just too bizarre
+[ 2807.2] It was pretty I did get some advantage when they afterwards are doing the questionnaires
+[ 2811.8] Who can tell us what the person on the screen did wrong and be like?
+[ 2815.5] Like not you. Yeah
+[ 2817.7] So you've met chris. How did you look up with chris? I was um
+[ 2822.3] About I was between jobs and and hollywood was sort of in a strange time. So you took what you could get
+[ 2829.0] And I was about to go to work with somebody who is written up in more than one book about hollywood is the worst person in the world to work for
+[ 2837.0] and
+[ 2838.2] I had met a guy named hawk coach. He was the line producer on on the schwarzenegger movie collateral damage that I helped produce
+[ 2845.3] And hawk called me up and said you can't do that and he had he had just
+[ 2850.1] Become a partner in ascendant pictures, which was chris's film company, right?
+[ 2854.8] Which he was the venture that he did between the wing commander stuff and
+[ 2858.9] and um
+[ 2860.5] so I met chris and his partners at the time and
+[ 2865.2] He brought me on as president of production at that company. We made
+[ 2870.0] It was a really interesting company. We we had
+[ 2874.6] we were somehow the the
+[ 2877.6] American agents for a german tax fund and and um
+[ 2881.9] For anybody that knows about filmmaking. We were we had 20 first money and last money out to contribute to movies
+[ 2889.4] Which made us incredibly valuable and we we did lord of war and we did
+[ 2896.1] Outlander and uh, you know lucky number sleven and a bunch of interesting films and then that
+[ 2902.6] You know company went the way of production companies, right? It's really hard to
+[ 2908.0] You know the distribution deals make it really hard to survive
+[ 2912.8] Um now you're in video games and then I yeah after that went away. I chris and I had lunch
+[ 2918.6] You know once a month for for a while while he was putting this together
+[ 2922.6] chris and me and his giant dog pattington who would we would walk to
+[ 2928.0] Luncheon and feed bread his favorite bread from the restaurant. We always ate at anyway
+[ 2934.2] At some point chris asked me if I you know, he said he had put this together and asked me if I wanted to
+[ 2938.8] come
+[ 2940.0] Run narrative and I said, yeah, sure
+[ 2943.7] Uh, and that was 10 years ago. That's 10 years ago. Yeah, you you're one of the og's
+[ 2948.8] You know in one of the og's with a few people that predate even me at this point
+[ 2952.2] Uh, so your time here you you you know, we won't filter through every single, you know position you have
+[ 2958.4] I do want to I do want to talk to you a little bit about that squadron shoot back in uh,
+[ 2963.1] Ealing now
+[ 2966.0] Let's avoid names and stuff like this because we don't want to we don't want to accidentally mention some
+[ 2971.2] It's something that hasn't been mentioned yet. But uh, so
+[ 2980.1] Tell me a story. Tell me what that shoot was like
+[ 2984.2] um
+[ 2985.6] That shoot was like nothing. I think anybody has ever encountered
+[ 2991.0] um, uh
+[ 2992.7] my actually
+[ 2994.1] my
+[ 2995.7] The first month the first rule I had on that shoot was that from los angeles. I decorated a house in
+[ 3001.7] Ealing for chris and dav haddock and myself and hummus apple to live in
+[ 3007.0] um
+[ 3009.0] So we had this sort of communal communal house
+[ 3011.2] We had turned the living room into the face scan place and I turned the garage into a clubhouse with a giant television in it and
+[ 3018.8] And we were about a block from the studio. So that was pretty wonderful. Um
+[ 3025.2] We
+[ 3027.4] The conceit of that shoot was it was 2015 and we were going to release the game in 2017. So we were in sort of a hurry
+[ 3035.0] um, so we started that shoot with
+[ 3038.4] It was a 90 day shoot. We had I think three days of pre-production meetings. Maybe
+[ 3044.4] um, and we had
+[ 3046.9] I think seven out of what eventually became 20 one or 23 scripts written
+[ 3053.2] um, and so
+[ 3055.6] uh
+[ 3056.7] harness and dav and phil meller and I
+[ 3061.4] Basically built a schedule together
+[ 3064.6] um
+[ 3065.6] Based on an outline we would go well, this is what's going to happen in this scene. Well, that'll probably take three days, right?
+[ 3071.4] and and
+[ 3072.9] insane and and then started making these giant cast deals, right because we had that
+[ 3079.8] spectacular cast but we were
+[ 3082.5] Sort of guessing about how much time we were going to need for it. So there was a little um
+[ 3087.4] Wasn't exactly relaxing
+[ 3089.5] that process
+[ 3090.8] um, I started there with a with
+[ 3093.3] Just me and a production manager and then chris brought on on this
+[ 3097.5] Amazing line producer philip a knot and i'm going to say her name because she's amazing and she deserves
+[ 3103.0] employee
+[ 3104.7] appreciation and this
+[ 3107.4] And and the three of us ran the production office and it was on fire most days
+[ 3113.5] And the goal was to not allow that fire to touch the set so that chris could you know have a
+[ 3119.2] As relaxed a metaphorical fire a metaphorical fire
+[ 3123.3] But we you know, we were juggling actors and trying to make deals and and and you know script pages
+[ 3130.6] I don't know why haddock or wisefarm are alive. They were they were you know
+[ 3136.0] Dave especially was on set all day because he was valuable to chris as a creative partner on set
+[ 3141.2] And then he'd go home and write scripts and then he'd show up in the morning with the pages. They were going to shoot that day
+[ 3145.6] nuts
+[ 3146.8] um
+[ 3150.2] But it was really fun
+[ 3152.2] The the imaginarium crew at the time we didn't really have much of an in-house mocap crew so the imaginarium crew
+[ 3159.1] we
+[ 3161.3] sort of half of the control area and they were
+[ 3164.4] wonderful
+[ 3165.6] and
+[ 3167.1] And our side, you know was
+[ 3170.1] Will and dav and chris and myself and hannis and this completely irreverent
+[ 3177.2] um
+[ 3178.4] Script supervisor whose name I will leave out
+[ 3181.3] Um who would say anything to anybody and it was just we laughed for 90 days basically
+[ 3186.9] You know, it was enormous fun
+[ 3189.3] and uh, and we got great great stuff. I think that
+[ 3194.9] It was still early in the mocap
+[ 3198.4] technologies life
+[ 3200.1] so many of our actors especially the name actors had never done it before
+[ 3205.0] and
+[ 3208.1] What they discovered was a kind of democracy on the set because everybody was wearing the same
+[ 3214.7] Not flattering
+[ 3216.7] suit right and suit with the jumpsuit with it with the buttons on it
+[ 3221.0] There are no real sets on stage. You know, sometimes we would pull up a set from the game
+[ 3226.6] But mostly you're working on with digital set. I mean with with with plywood and and two by four timbers, right?
+[ 3234.4] because
+[ 3235.7] The motion capture cameras don't see anything on set except the balls
+[ 3239.6] So it doesn't matter what they look like it. They just need to match the measurements in the engine so that people aren't like
+[ 3246.1] Leaning through a bar sleeping in the middle of a bed or something, right?
+[ 3250.8] um
+[ 3252.1] so it was they
+[ 3254.1] variously described it as kindergarten as blackbacks theater
+[ 3258.5] But it required tremendous imagination on their on their part and they mostly love not everybody but mostly loved it
+[ 3268.0] Yeah
+[ 3272.2] Yeah, it's uh
+[ 3273.8] It's a lot like you know doing a play
+[ 3276.6] It's a lot like doing a play you're doing a play or rehearsing a play rather because the audience isn't in the
+[ 3281.1] Isn't in the room and stuff like that
+[ 3283.3] Well, and the other the other thing is that you know if you're doing a movie or you're shooting a television show
+[ 3290.1] And this is part of the challenge this is part of the challenge of shooting it of acting it and of writing it
+[ 3295.7] You don't have a focus. You know what? I mean you're you're you're playing to the world
+[ 3300.5] Because everything in the in the environment is
+[ 3304.1] Is visible and possible
+[ 3306.6] So you're you're playing for big you're playing for small you're playing for next to you you're playing for somebody across right?
+[ 3312.0] It's it's it's very interesting
+[ 3314.7] um
+[ 3316.4] So you mentioned you mentioned phillip. I'm glad you mentioned phillipa because you and phillipa and uh caroline
+[ 3322.9] I want to add that we're instrumental in making this
+[ 3326.5] happen
+[ 3327.5] Yeah, you know this happened
+[ 3329.1] I don't want to share too much about the process of this and then because I leave a little bit of the mystique and you know
+[ 3335.1] It's still new and stuff like this, you know, we'll come back
+[ 3338.2] You know once the luster is worn off of us, you know having a spaceship
+[ 3341.5] Well, you know we'll talk more about the story. Luster will never lay on where off
+[ 3345.7] But uh, but yeah, it's it's it's one of the one of the more enjoyable times of of my time here
+[ 3352.3] Where what was starting from the are we finally going to do this?
+[ 3356.4] Are we finally going to pull the trigger and do this crazy thing that chris has been talking about forever and ever?
+[ 3360.9] Right and then you know getting empowered with you and phillipa and and and caroline's story
+[ 3367.3] to shout out caroline
+[ 3370.1] To create this and to design this and and you know
+[ 3372.9] Uh
+[ 3374.1] Change things as they needed from the in-game model to suit the nature of a live studio environment
+[ 3381.5] It was also just good to to get to work with you again because you know, I said it had been since
+[ 3387.1] That was 2016. It was 2016 when you were running gvp. I feel I think that's right 16th
+[ 3394.1] They all do start to blur. Yeah, I don't really remember it was a couple of years
+[ 3397.7] Yeah, I was still a blur together after a while you were but yeah, it's uh
+[ 3401.7] It's been a long strange journey between the different
+[ 3407.0] Experiences we've had
+[ 3409.1] Not just outside of cg but then within cig and moving for through the different stuff and uh, yeah, I just um
+[ 3416.2] I wanted to take this moment. You were here
+[ 3419.0] You're here working on some of those things that you talked about there's stuff going on the performance studio and so like this and I just like
+[ 3425.3] Uh, since we reformatted the show a bit, you know in the and the the business upfront in the
+[ 3432.0] Party in the back. I guess we're the mullet of star citizen programming. I didn't intend for that analogy, but we'll go with it
+[ 3437.1] I'm not sure I'm happy about that
+[ 3439.4] but uh
+[ 3441.2] I I found great enjoyment for me
+[ 3443.7] Maybe less for the viewers. I don't know but I found great enjoyment for me in getting to use the back half to
+[ 3447.8] To meet people we don't normally get to talk about I had nick and nick and robby elms
+[ 3452.0] We're on a couple weeks ago and they got to talk about playing d&d with chris as a kid and something
+[ 3456.8] That's why I like using the back half of that. I was just you being here. I was just really pleased that you
+[ 3461.1] Were here and you were you agreed to be on the show. So thanks for inviting me
+[ 3464.6] You're easily in like my top 30 favorite people here. So wow
+[ 3470.1] I don't know what state of that. I was pouring it on a little hard there and I'm like I need to bring it back
+[ 3474.4] Yeah, you did. I mean
+[ 3476.6] Not tip my hand how much I like you and the
+[ 3478.9] So, yeah, so that's it for the show everybody
+[ 3482.4] Thank you for hanging out with us for another episode of stars that is in life
+[ 3486.2] Uh, if you haven't checked out be sure you watch uh yesterday's episode of inside stars
+[ 3490.9] citizen, uh, it's a great look at the current white box progress of the new underground facilities
+[ 3496.3] Which are the massive
+[ 3499.1] just
+[ 3500.1] ridiculous in scope new playgrounds
+[ 3502.7] That the that the teams are built the uu sandbox two teams building that will house
+[ 3507.3] All variety of star citizen gameplay for the stand system the pyro system and systems beyond
+[ 3513.3] And then uh, yeah come back come back
+[ 3516.5] Next week
+[ 3520.0] I want to be careful in how I
+[ 3522.5] Sell this one for next week because I don't want to oversell it because we value people crazy or whatever
+[ 3527.7] But if you remember the design brief investigations segment that we did at citizen con last year
+[ 3533.7] We are doing a new design brief
+[ 3536.1] For for for next week show. It's another journey to 4.0 a special
+[ 3539.8] It's a design brief for another aspect of game by so it's not a follow-up of investigations
+[ 3543.8] But it'll be the very first earliest looks at a new type of gameplay
+[ 3550.1] Uh a system that is being developed uh for star citizen. So
+[ 3554.5] Check that out. What is it? I don't well, I do know but I'm not going to tell you because I don't want
+[ 3558.4] I don't want a week of hype just going crazy. So you'll have to tune in next week to find out
+[ 3563.0] So for star citizen live, I'm jared huckabee. That was john schimmel. Thank you again to mike snodin and uh, leo
+[ 3570.4] Uh, leo uh for being on the show this week and I will see you next week everybody. Take care

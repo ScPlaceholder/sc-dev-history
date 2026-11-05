@@ -1,0 +1,7 @@
+Hi there!
+Sorry for the late reply, I don't often check the Ask The Devs section as most questions seem to be gameplay, where I'm not the right person to answer questions.
+I developed the  ground cover buoyancy feature that you see on the roadmap, and I've been wanting to clear this up for a while as there seems to be some confusion around it on here and reddit.
+The feature you see on the roadmap is NOT physics based. It is in fact a shader effect, where a flat(ish) mesh can be deformed in order to conform to the waves on the ocean below/above it. Essentially, it reads the ocean's displacement map and mimics that. There's also a version of it where whole meshes (like ice chunks) can appear to float, rather than deforming like seaweed. But it is all entirely shader based, and relies on ocean tech to work.
+As for a physics-based approach, we do also have physically simulated buoyancy in engine! This wasn't me, but a couple of the other features I've been working on have used physical buoyancy. I'm not the best person to answer whether our physics-based approach will work in gas giants, but I'd assume not. Our current buoyancy model is based on a fixed level (ocean level) rather than atmospheric buoyancy, and while in real-life physics fluid buoyancy covers liquids and gases, their effects are so different that it would likely be simulated differently in code.
+Thanks for the question :slightly_smiling_face:
+figwig

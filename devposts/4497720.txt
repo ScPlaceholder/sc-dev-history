@@ -1,0 +1,65 @@
+## Star Citizen Patch 3.15.0q
+Alpha Patch 3.15.0q has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.0-PTU.7850324.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Current Audience: All Backers
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Server Crash Ship Recovery
+- Healing and Actor Status
+- Hospitals
+- Starlifter Hercules A2
+- Origin 400i
+- Bombs
+- Infiltrate and Defend Missions
+- Loot Generation
+- Personal inventory
+- Orison V2
+- Arena Commander Revamp
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu
+Players will need to exit the game and reload after a server crash to fix this error. This is part of the bug where players used to see a Bad Token after a crash which blocked them from re-entering but with the latest changes, that error is no longer displayed.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- There's a chance after a player loots a body, they will stay in the Looting / Free View  Camera. This will also leave the looted body in use, preventing further  interaction / looting
+- New Babbage train will make a stop at an empty void
+- Medical beacon does not complete mission/payment when player is brought back from incapacitation
+- Surface FPS Deposits are missing collision, preventing mining
+- Ship/camera shake's frequency is too high when accelerating
+- Cannot Repair, Refuel, Restock at Everus Harbor
+- Players aren't given undersuit or helmet when respawning back in a hospital
+- Items from personal inventory are inaccessible from local inventory after dying and respawning in the same city
+- The Player can have previously equipped items disappear altogether when they exit and load back in as the opposite gender
+- When requipping items from a loot box in zero-g, equipping the torso and arms will cause large amounts of inventory camera shaking
+- The Player is unable to Select Ground Vehicles as a Sell Location on Trade Terminals/Kiosks
+- The Player is unable to Select a Stored Ship in the Refinery Terminal
+- Weapon projectiles trajectory will not behave correctly when shooting from one zone inside a ship to another outside
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Destroying mission-spawned reinforcement type ships does not always trigger the ongoing 'Call to Arms' mission rewards
+- Parts of Area18 cityscape can be seen clipping into the surface of the Spaceport highway
+- Missiles can hit the players ship when they are fired whilst the ship is moving forward
+- AC Players can spawn facing the wrong way at the start of the match or after dying
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round
+- Demon Fang Combat Knife asset is missing from the game
+## Feature Updates
+AI
+- FPS and Ship Combat AI Polish
+Increased distance at which FPS AI will fire upon players. Made hit prediction performance improvements to help with ship AI hit prediction.
+Gameplay
+- Corpse Lifetime Limit
+We've set a limit to how many corpses each player can have in the universe at any given time. This current rule will cap players to 3 corpses at once which should help with performance.
+## Major Bug Fixes
+- All VJoy types for mouse should now have the correct full movement
+- Fixed an issue that allowed players to use hat interaction in their inventory to no clip and glitch to move their character
+- Fixed an issue causing AI in space station clinics to stand idle and not move around as intended
+- Selecting the carry prompt on weapons inside inventory should no longer equip the weapon instead
+- Multiple bartenders should no longer spawn in the same location and occupy the same space
+## Technical
+- Fixed 2 Client crashes
+- Fixed 3 Server crashes

@@ -1,0 +1,82 @@
+## Star Citizen Patch 3.10.0p
+Alpha Patch 3.10.0p has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.0-PTU.5717611.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Special Note: We have redone much of the targeting system and subsequent keybinds. Please review the list of changes and go through your bindings in game, as they likely changed.
+We have a new feedback thread with more information about these changes here:
+https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/ptu-feedback-updating-ship-targeting
+Testing Focus
+- Ship flight in and out of atmosphere
+- Updated building blocks ship UI for all flyable ships.
+- High speed combat changes
+- Turret gameplay
+- Origin M50 Improvements
+- Electron FPS Weapons and Electron Damage
+- Body Dragging
+- Citizen Trading App
+- New Targeting Method
+- Delivery Mission Improvements
+Known Issues
+- Hangar doors may remain closed when the hangar is assigned to a landing player's ship
+- Ships can become stuck if they enter the restricted area of a hangar while manually landing
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad
+- The Player Ship is destroyed shortly after flying into a Restricted Area / Zone around the Spaceport after leaving a Hangar
+- All 3D icons in personal inventory don't appear correctly when in the PIT
+- Landing gear will take multiple presses of the keybind to activate
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- The Greycat ROC cannot extract all of the child crystals, some are left behind
+- Hammerhead atmo entry effects clipping through interior of the ship
+- Security scans won't recognize the drugs on board a players ship during the Drug Production run missions
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport
+- Legally landed ships may be impounded
+- Multi-Tool in Klescher Prison Commissary does not come with a OreBit mining attachment
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+## Feature Updates
+Locations
+- Increased the time it takes for hangar doors to close at landing zones.
+- Added Cutlass Blue and Prowler to ship shops in the PU.
+Gameplay
+- Improved cycling of Selected targets in the view cone. Targets now iterate in order of angular offset to the look direction (closest to center first). Auto-selection is disabled while cycling, and turns on again once the player is no longer actively cycling.
+- Added the cycling of Locked targets in the view cone. Targets now iterate in order of angular offset to the look direction (closest to center first).
+- Added the cycling of all Locked targets in range, including those outside the player view cone. Can cycle hostiles, friendlies, attackers, and all targets. Each list will be sorted by distance (closest first). 'Lock Nearest Target' functionality is now implemented as 'Cycle Lock - Reset to Closest'.
+- Order of targets to be cycled over will now be cached until the player is no longer actively cycling, or they reset the list. Which target will be cycled to is now more predictable as a result.
+- Added ability to Lock the target under the reticle. By default, this shares a keybind with cycling Locked targets in view, but acts contextually (if something is under the reticle, lock it, else cycle). Can be rebound to separate keys.
+- 'Lock Selected Target' is now unbound by default.
+- Pin Index controls no longer require a hold.
+- Removed first-in-first-out pinning controls and cycling of pins.
+- Removed unnecessary menu options.
+- Gimbal mode has moved from R to G
+- Countermeasures have moved from G and H to H and J
+- VTOL toggle has moved from J to K
+- Lights (and FPS torch) have moved from T to L
+- Toggle all doors and Lock all doors have been unbound (used to be on K and L)
+- Enable Lookahead has been unbound (used to be on LAlt+R)
+Ships and Vehicles
+- Increased rotational jerk for all ships.
+## Bug Fixes
+- Player ships should no longer be destroyed when using the landing splines around Area18.
+- Situational markers should now correctly appear without first having to interact with the target.
+- Player should no longer appear floating in space. without a body. and unable to move after being released from Klescher Prison.
+- Fixed an issue causing the Prowler's QT effects to show as red in first person.
+- Sledge 1-3 Series Mass Driver Cannons should now have a correct rental price in Arena Commander.
+- Targeted vehicle silhouette should no longer display when in 3rd person view.
+- VOIP audio quality should no longer be low volume and poor quality when close to the player who is talking.
+- Orbital Sentries from the 'Remove Claimjumpers' missions should no longer have a chance of spawning inside asteroids.
+- Fixed an issue causing players to not be able to drag bodies into many ships.
+- Running along multiple counters should no logner cause the Bartender to serve you from far away.
+- Fixed inner thought prompts sometimes not appearing when picking up FPS Mineables/Harvestables in succession.
+- Fixed planetary fog effects remaining illuminated after turning off vehicle headlights until the vehicle moves a bit.
+- Fixed a collision issue at the foot of the bed in the 600i master bedroom/captain's quarters that would clip players through the ship.
+- Fixed an issue that allowed players to get stuck in the freelancer Bunks by walking into them.
+- Starfarer top turret should no longer retain the default paint after new paint is applied.
+- Fixed an issue that was causing NPC patrons to not drink while seated at tables.
+## Technical
+- Fixed 1 Client crash.

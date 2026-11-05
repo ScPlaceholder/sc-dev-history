@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.11.0p
+Alpha Patch 3.11.0p has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.0-PTU.6218077.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Pledge Copy: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Volunteer Regression post: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-11-0p
+Testing Focus
+- Origin 100 series ships
+- New Cargo Decks
+- New Space Station layouts
+- BEHR BR2 Shotgun
+- BEHR Grenade Launcher
+- Front End Refactor
+- Exterior Space Station Green Zone Removal
+- Player and External Inventory Interactions
+- Throw T1
+- Force Reactions T1
+- Missile and Countermeasure QOL Improvements
+Known Issues
+- Strafing upwards after flight readying the Aegis Avenger can lead to the ships destruction
+- When retrieving ships at New Babbage or Lorville's spaceports, the UI telling you what Hangar your ship is placed is missing
+- Mission givers are leaving their designated areas / wandering from their posts
+- Global chat is unavailable in the visor HUD
+- Character can be two different skin tones and not the gender the player picked
+- Ships landed at Lorville cannot be stored
+## Feature Updates
+Gameplay
+- Added a boost to AI accuracy convergence speed so that Enemy AI Weapons should now hit Player ships when they are Strafing, even at low speed.
+- Temporarily removed quick buy option for Med/Oxy pens as this wasn't placing them in global inventory.
+Ships and Vehicles
+- Increased Origin 100 series velocity, hydrogen fuel capacity, and fuel intake.
+## Bug Fixes
+- Fixed multiple issues causing EMP to be more powerful than intended.
+- Extracting groups of ore with the Greycat ROC should now correctly update the cargo inventory with correct amount collected.
+- Hammerhead and Scythe should no longer be missing shields.
+- The Esperia Prowler viewport should now open correctly.
+- Crashing/destroying a ship on the assigned landing pad should no longer leave that ship unclaimable via ASOP.
+- Trading kiosks inside the Trade and Development Division buildings should now be able to be interacted with.
+- Imprisoned players should no longer be able to log out, customize their character and respawn in the Prison Hub wearing their default flight suit and gun.
+- The Inmate Backpack in prison should now display correctly on players backs.
+- Ramming and empty ship or a S6 turret should now give the offender a proper crimestat.
+- After destroying ship, player should no longer wake from bed in EVA and die shortly after.
+## Technical
+- Fixed 5 Server crashes

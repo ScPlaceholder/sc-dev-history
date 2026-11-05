@@ -1,0 +1,49 @@
+## Star Citizen Alpha Patch 4.0.1
+Alpha Patch 4.0.1 has been released onto the PTU!  Patch should now show: VERSION 4.0.1-PTU.9496096.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:500
+Hangar Spawning: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability, Performance, and Bugfix Testing
+- Save Stanton Chapter 2 Event in Pyro
+Save Stanton Updates
+- Fixed: PU - Pyro - Save Stanton - Chapter 2 - Missions / UI - Not all targets will appear with HUD markers across various missions in Chapter 2
+- Fixed: PU - Pyro - Save Stanton - Phase 6/7 - Missions / UI - Mission Objective Locations narrative is giving random location context compared to its actual location
+- Possible Fix: PU - Pyro - Save Stanton - Phase 7 - InfiltrateFreedomFighterOutposts - Missions - Mission location is at other locations that aren't FF outposts
+Chapter 2 of Save Stanton will run throughout the PTU phases in 4.0.1. This is a continuation of the event from 3.24.3 into the Pyro side of events.
+## Known Issues
+- Critical: PU - Network/Performance - Poor performance on Monox leading to input lag and delays of game updates of high BWin
+- Critical: PU - Pyro - Audio / Weapons / Locations - FPS Weapon Audio missing in Contested Zones after spawning in hangar at Pyro Primary Residence
+- Critical: Multivehicle - PU - Vehicles / Exploit - Fuel - Hydrogen and Quantum fuels are not depleted from fuel tanks when performing normal flight or Quantum Travel
+- Critical: AC - Pirate Swarm / INS Jericho - AI - Enemy AI does not spawn and will eventually get a disconnection Error: 30000
+- Critical: PU - Starlight Service Station - Elevator Terminals / Locations - Calling for Starlight hangar elevator from the hangar may cause you to teleport into an empty elevator shaft
+- Critical: PU - Stanton - New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- Critical: PU - Actor - Personal Inventory / Storage Access - Loot Box / Armor - Interactions / PIT Wheel - Helmets that are carried then dropped via PIT menu will disappear/become lost
+- Critical: PU - Pyro - Frontier Outposts - XS Outpost - Locations / Art / Tech - XS Outpost Main Building interior and Storage Shed interior is missing multiple assets and collision
+- Critical: PU - Pyro - Asteroid Bases - Hangar - Locations / Collision - The collision for the hangar doors does not stream in until the player is inside the hangar
+- PU - Stanton - Shopping / Selling / Cargo - Commodity Kiosks - Commodity kiosks are empty preventing any purchases or sales
+- PU - mobiGlas - UI - Contract Manager - Contracts can overlap with sections below them when expanded
+- PU - Pyro - Physics - Locations - Contested Zones (CZ) - Plastic Curtains have solid collisions against projectiles and cannot be passed through if ADS
+- RSI Polaris - PU - Vehicles - VLM - Occasionally lose Components By Pressing A New Insurance Claim or Repairing A Damaged Polaris
+- Contested Zones - Weapon intersecting with the ground
+## Features & Gameplay
+- Weapons and Items
+- Added Pembroke/Novikov Environment Suits to shops in Tressler, Lorville, and Grim Hex
+## Bug Fixes
+- Speculative Fix: PU - Network/Performance - Poor performance on Monox leading to input lag and delays of game updates of high BWin (STARC-149624)
+- Possible Fix: PU - ASOP / Vehicles / Locations - Vehicle can't be stored at assigned hangar after landing
+- Possible Fix: Multivehicle - PU/AC - Vehicles / MFD Interactions -Interaction in cockpit around MFD and MFD can cause large client performance stutters (STARC-113415)
+- Possible Fix: PU - Stanton - Minimap - Locations - Other player's personal hangars show up on the mini-map and may overlap (STARC-119256)
+- Possible Fix: PU - Personal Hangars - Spawning in Personal hangar is missing several Audio (STARC-151741)
+- Possible Fix: PU - Pyro - Audio / Weapons / Locations - FPS Weapon Audio missing in Contested Zones after spawning in hangar at Pyro Primary Residence
+- Possible Fix: Multivehicle - PU/AC - Vehicles / Shields - Damage is being applied to the ship and bypassing shields that are full (STARC-153724)
+- Possible Fix: PU - mobiGlas - UI - Contract Manager - Contracts can overlap with sections below them when expanded (STARC-144674)
+- Possible Fix: PU - Pyro - Derelict Outposts - Locations - Doors on small building won't open
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 1 Server Crash

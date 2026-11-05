@@ -1,0 +1,26 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12464883
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (Progression speed increase for PTU)
+- Wikelo Inventory Updates
+Known Issues
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+## Bug Fixes &Technical
+- Fixed 1 Server Crash
+- Further NPC client performance updates
+- Potential Fix: Keycard Elite enemies and Boss NPCs in Siege of Orison being cleaned up by the density manager as if they were regular NPCs, causing them to despawn before players could kill them and obtain their keycards
+- Potential Fix: Siege of Orison instance elevator becoming uncallable from the dogleg after the assigned DGS crashed and recovered
+- Potential Fix: Incorrect comms audio line triggering after resetting the first node on the 8th floor of Solanki Platform, playing the wrong audio cue for players
+- Potential Fix: Ships unable to auto-dock to the Starfarer for AI beacon refueling missions due to fuel nozzle collisions blocking the docking process; nozzle collisions are now disabled during docking
+- Potential Fix: Battaglia playing her "busy" dialogue line when approached to accept Story Mission 3, before the mission had even been accepted
+- Potential Fix: Battaglia Story Mission 1 "Hostiles Eliminated" counter jumping back to 0% when players entered or exited the Command Module or left and returned to the ship during the Board Ship phase

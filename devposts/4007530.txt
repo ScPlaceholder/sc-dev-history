@@ -1,0 +1,65 @@
+## Star Citizen Patch 3.13.1c
+Alpha Patch 3.13.1c has been released to the PTU, and is now available for all backers to test!   Patch should now show: VERSION 3.13.1-PTU.7388528.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Audience: All Backers
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Stability and bugfixes
+- Ship to Station Docking
+- Tumbril Nova
+- Crusader C2 Hercules Starlifter
+- Crusader M2 Hercules Starlifter
+Known Issues
+- Replaceme Balls and missing floor in M2
+- Customizations made on the RSI Website are missing in-game for the 300 series
+- Items missing after update / Character Reset / pledge change
+- Abnormally long delay between pick up storing of fps mineables/harvestables/items
+- Client may crash when loading a second player into a server in Arena Commander
+- Players may not be able to quantum jump with another player in bridge with you
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Constellation can despawn when flying 30km away after undocking
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+- The eclipse spawns with cockpit canopy ladder open with ladder and cover enter / exit animations broken
+## New Features
+Gameplay
+- Ship To Station Docking
+Adding the ability for players to dock large ships to docking ports at space stations. Including various related work such as having ATC assign you docking ports when appropriate, new docking connectors, and new lobbies in space stations for large ships to connect to. This initial implementation will give docking access to the 890 Jump and Hammerhead. Players can ASOP spawn or hail the station like before and be assigned a docking port instead of a hangar with these ships. While docking, hailing the station will assign a docking port and bring up the docking interface for players to align their ship's docking port to the docking collar either manually or using the auto-land system by holding N (default).
+Ships and Vehicles
+- Added New Vehicle: Tumbril Nova
+- Added New Ship: Crusader M2 Hercules Starlifter
+- Added New Ship: Crusader C2 Hercules Starlifter
+## Feature Updates
+Gameplay
+- PVE Bounty QT Beacon
+Re-added the PVE Bounty QT beacon and adjusted the arrival range
+## Bug Fixes
+- Fixed an issue that could cause Star Citizen to crash immediately after pressing "Launch Game" in the Launcher
+- Players should no longer get a 30018 error after a long wait period while loading into the PU
+- Players should now correctly be able to select ships and enter Arena Commander modes
+- Fixed an issue causing the main elevator at Grim HEX double and not open
+- Convergence setting should now persist sessions
+- Freelancer MIS/MAX/DUR turrets should no longer fire in incorrect directions
+- The ROC /ROC DS Mining UI should no longer be overly bright making it difficult to read
+- Players should now be able to store the 890 & Hammerhead once it has been docked at an R&R station
+- Docking Port arms on all space stations should now have oxygen
+- Ships should no longer experience a lot of rocking / shaking when attempting to undock which may cause them to take damage
+- The door to the Hammerhead no longer be inaccessible while it is docked at a rest stop and should now have collision
+- Fixed an issue causing the harvestables Sunset Berries and Heart of the Woods to not be sellable
+- Players clothes should no longer clip through undersuit when viewing PMA on the mobiGlas
+## Technical
+- Fixed 8 Client crashes
+- Fixed 5 Server crashes
+- Backend Service Crash Fix
+- Backend service optimizations
+## HOTFIX 3.13.1c - Build# 7389099
+## Technical
+- Fixed 1 Client Crash
+- Temporarily removed the Starlifter door sensor panels to fix a major server crash and deadlock

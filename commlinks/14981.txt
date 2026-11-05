@@ -1,0 +1,56 @@
+## Greetings Citizens,
+I wish I had a more exciting update for you! The past two weeks have been about fixing crashes, blockers and addressing issues with server stability. The biggest news this week is that Austin QA was able to play a Free Play practice match on a release build while connecting to internal servers! That’s a good indicator of progress, but there’s still work to be done.
+What kind of issues are we talking about? Let me talk about one example of a complicated issue that we feel we need to resolve before the initial release. That is: something is causing weapon aim not to return to the center of the screen where it needs to go. There’s some type of lag that is keeping the aim offset from the center. We have been working on solutions involving modelling, animation, programming and scripting in order to address this and the team feels confident we’re close… it’s looking better than it had, and we hope to show you a ‘before and after’ video next week.
+Issues like this are the reason we aren’t ready to release a playable build just yet. We are so eager to get Star Marine in your hands, but it doesn’t help us with development if we ship with issues we know we can solve… especially issues that prevent you from having fun. We want your feedback, but we want it to be valuable balance feedback rather than have you run into the same issues we’re seeing.
+I’ve read the reactions to the “Thumb Wars” on the forums and I’m glad you liked my little joke. While we may not do Thumb Wars via thumb-stick any time soon, we will be using the system to add other actions into the game: motions to settle bets or make decisions. That’s coin flips, dice rolls and other RNGs… even an animated Ro-Sham-Bo emote setup (rock, paper, scissors, lizard, Spock, if you prefer.) After all, in the full game you’ll need to resolve your conflicts in ways beyond just shooting virtual people in the face!
+Below you will find the weekly list of changes, updates, fixes and issues. We’re getting very close to release; those that remember the early days of Arena Commander will remember how frustrating it was that last minute blockers continued to pop up… and the same is true here. It’s part of the process, for sure, but a part we’ll be happy to be done with very soon.
+## Gameplay & Engineering
+- Continued investigating / working on weapon issues.
+- Continued tweaks to the Arrowhead sniper rifle.
+- Fixed weapon animations not playing
+- Committed a first pass of the decibel based visor Radar system
+- Fixed crash with decibel based visor Radar system
+- Working on sniper overcharge vFX display system as per feedback from game director.
+- Currently tracking down animation issues with weapons/IK
+- Looking into crashes caused by API changes the network spawning of gadgets
+- Updated left hand IK bone rotations on all stocked weapons to fix broken wrists
+- Updated medium character item attachpoints to be better aligned
+- Looking at various cover/ladder/MedPen bugs
+- Fixed ladder footstep SFX triggering incorrectly now
+- Fixed crash relating to Area Denial asset
+- Fixed missing crosshairs on some weapons
+- Trialed xml position/rotation offsets on weapons now code is in, but ran into some issues.
+- Unified recharge rate for energy weapons
+- same speed of recharge for all of them but some take longer due to larger mags
+- Looking at bugs moving slightly out of cover
+- Investigating additional audio hook ups to the breathing manager, to hook into stamina and player injury states
+- Tech artists removed old shoulder flashlight that mysteriously reappeared after the 1.2.0 merge, and hooked up new illumination devices that are helmet mounted. This will be a good thing when you are investigating that asteroid you landed on, walking the ArcCorp dark alleys, or clearing that dark corner on the abandoned Gold Horizon station. The lights on GH are flaky and easily broken!
+## UI
+- Fixing bugs related to HUD visor widgets and internal helmet Geo
+- Changed the size and color of the FPS indicators
+- Reviewed the new line work on the light helmets for both Marine and Outlaw
+## Weapon Art
+- Almost ready to roll out weapon manufacturer style guides. Artists will use this to unify our concept art so we can start cranking out additional concepts and then get more weapons and gadgets into full production.
+- Did a large weapons texture clean-up last week. This will help reduce used texture memory in the Star Marine and Persistent Universe or Arena Commander maps that have any personal weapons in them.
+- Fixed P4-AR iron sight alignment issues in the art asset.
+- Investigated issues with personal shield gadget collision issues.
+- Continued work on new Area of Denial gadget.
+- Included is a shot of the WIP on the high poly model that we received last night, which is much smaller than the old briefcase sized gadget.
+- Attached is also a picture of my feedback, which needs to be approved by Todd and Tobi early next week. Todd is on a much needed holiday today, and by the time I sent my feedback for Tobias to review he’d already gone for the night. Ah, the challenges of distributed development…
+## Animation
+- Working on weapon fire animations, to address feedback and changes regarding procedural code and the new rig. This work will continue into next week.
+- Re-targeting of some animations as needed when bugs are found by tech design and engineering.
+- Created missing stocked crouch forward and backward turn animations
+- Fixed prone roll popping bugs.
+- Working on 1st person movement for stocked weapon locomotion set.
+- Helped fix the Fixed P4-AR iron sight alignment issues in the art asset.
+- To give a little more detail on this, we are using the P4AR Ballistic rifle as our gold standard once we have animations, IK issues, camera positions, and designer set up all working we will use that as our basis for the way other stocked weapons are set up, as well as the basis for pistol type weapons, and in a future Star Citizen or Star Marine module release, heavy weapons.
+- Investigate issues with throwing grenades. This work will continue into next week.
+## Audio
+- Player hit feedback is now submitted
+- Looking into the UI/Radar feedback
+- Hooking up sounds to the energy recharge stations
+- Tested grenade cooking audio
+- Fixed up some material SFX
+- Downed sound is tested and checked in, need to review in game.
+In closing, it’s been another week of solid progress. We get closer and closer to putting this into your hands. I hope to have a video for you next week detailing one of the major blockers that’s kept Star Marine out of your hands thus far, including the solution we’re in the process of implementing even as I write this.

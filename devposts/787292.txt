@@ -1,0 +1,74 @@
+## Focus Feature Updates
+Universe
+- Tweaked the fuel consumption rate back to previous values but kept the new fuel tank capacities and recharge rates.
+- Moved Starmap icons to be camera facing in default view.
+- Removed ATC from Cryastro.
+- The Drake Cutlass Black has joined the derelict ranks.
+- Added flares on planet derelicts to make them more visible at night.
+Missions
+- Increased the time of the Eckhart issued escort mission so that it doesn't fail regularly.
+- Rebalanced the pirate waves to remove the M50s.
+UI
+- Added item port highlights to the PMA.
+Ships and Vehicles
+- Feature Update - Ship health and armor balance pass. Ship health now correlates more closely with the size of a ship. All ships now have varying degrees of armor, with those ships more dedicated to combat being more heavily armored. Note from the designer: "This means the smaller ships like the M50, Aurora and Mustangs will not have much health relative to the larger ships. This is intended as we are trying to apply a proper scale of health to all the ships. Armour has been balanced around the ship’s function. The intent is to balance it so that a ship’s armour reduces energy damage more than physical damage. The exception is with Vanduul ships, which have their damage multipliers reversed."
+- Ursa Rover: Turned on interior auxillary lighting, reduced overall health.
+- Gladiator: Added more interaction prompts for entry and made interacting with them easier.
+Bug Fixes
+- Ships should now no longer be able to occupy the same space when returning after bed logout.
+- The pilot's feet should no longer be contorted backwards on the Dragonfly.
+- Hangar flair plants should now properly render when placed.
+- The port-side landing gear should now function properly on the Glaive.
+- The throttle animation on the Mustangs should no longer be reversed.
+- Various repairs to the Avenger Warlock and its EMP to get the ship fully functional again.
+- Quantum jumps should now take planetary rotation into account, so players will no longer end up off of their intended destination.
+- The copilot of the Cutlass should no longer steal weapon control from the pilot.
+- Fix for Port Olisar not always obstructing quantum travel destinations.
+- Adjusted seat access highlights for the Caterpillar command module to have interactions be at eye level and less prone to odd behavior.
+- Altruciatoxin and Widow commodities should now be properly placed inside the destination ship when purchased.
+- There should now be atmosphere in the zone between the body and the cockpit of the Herald.
+- Weapons and turrets should now properly take and transfer damage to their parent ships.
+- Entering the beds of the Constellations from 3rd person view should no longer snap the camera to the pilot seat.
+- The player should now properly exit the seat when finished interacting with Eckhart.
+- Fixed unattended ship marker remaining on the UI when a ship is cleaned up after illegal landing.
+- Dying and then respawning in 3rd person view should no longer place the camera inside of the player's head.
+- Fixed holographic objects casting shadows from player helmet lights.
+- The rear door of the prospector should now highlight properly when accessed via interaction system.
+- Computer consoles and books should no longer overlap the delivery area at Port Olisar.
+- Player suicide action should now function properly again.
+- Fixed some seat exit issues with the Scythe so it should now work reliably.
+- Fixed flight ready prompt on the Prospector floating away from the panel.
+- The ship's 3D radar should no longer generate particle effects.
+- Removed a pillar in the Caterpillar cargo area where the ladders are located so the player doesn't get stuck with a full cargo load.
+- The cargo door control panel on the Reliant should now highlight properly with interaction system.
+- Players should no longer have actions locked into a "carrying" state when throwing a carry-able item.
+- Audio should now properly play when requesting a landing pad or landing.
+- Dying while talking to the admin NPC should no longer break all interactions with them.
+- The radar should no longer stay on when the Freelancer is powered off.
+- The Aurora series should now have a radar.
+- Added some missing Retaliator QT effects.
+- Fixed incorrect targeting keymap for cycle friendly targets.
+- Attempting to open the Starmap while inside an EZHab should no longer cause the player to get stuck.
+- Swapped the VMA and Comms app icons.
+- The Cutlass should now orient properly for auto-landing.
+Technical
+- Various Crash Fixes.
+- Various small performance tweaks.
+- Added internal tools to diagnose CPU spikes.
+## Non-Focus Feature Updates
+Arena Commander
+- Adjusted the shield components on Vanduul and pirate swarm enemies.
+FPS
+- New sniper scope texture.
+Bug Fixes
+- Fixed a spawn/respawn issue in Vanduul swarm that would casual the cycle to repeat until you win.
+- Various polish and fixes to visual issues in the VFG Industrial hangar.
+Known Issues:
+Content missing key elements:
+- User Interface
+- Insurance and Persistence
+- Internal Ship Docking
+- Comm System
+Bugs, issues, and work arounds (W/A):
+- Items and ships placed in hangars are not persisting between sessions.
+- Repaired wings don't always restore weapons.

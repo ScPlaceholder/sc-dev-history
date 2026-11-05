@@ -1,0 +1,83 @@
+## Star Citizen Patch 3.19.1
+Alpha Patch 3.19.1 has been released to the LIVE, and is now available to test!   Patch should now show: VERSION 3.19.1-LIVE.8526421.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here %localappdata%\Star Citizen.
+Database Reset: Yes
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+Going into 3.19.1 we are not performing an LTP wipe. With that said, Persistent Entity Streaming and going into 3.19.0 has created a few knock-ons with how Long Term Persistence is behaving which may cause some items to go missing without certain steps taken. These major issues are now resolved in 3.19.1 but we wanted to point toward our previous thread about this to help give anyone who missed out an understanding about what has happened in case some items do go missing.
+https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-alpha-3-19-1-important-long-term-pers
+- New Deal and Vantage Rental Kiosks Are Missing
+- Ships can explode from collision with invisible asteroids
+- Player corpses will not despawn at Grimhex
+- Players are unable to fully back out of the Primary Residence Selection due to the tutorial selection prompt
+- Art assets will clip through the Train during the journey in Lorville
+- AI / FPS - Enemy combat AI is slow to respond or react
+- Vehicles - Destroyed ship thrusters may not function/be restored after being repaired
+- Character - The player can sometimes initially spawn or fall outside of the bed in habs or hospitals
+- Substenance items lack "Store" option when carrying the item in Inner Thoughts
+- Art / VFX - Esperia ships with activated viewports (Talon, Prowler) have opaque glass material blocking vision
+- Locations - Aberdeen - Klescher Rehabilitation Facility - Missions - Ursa rovers can sometimes spawn under the garages, preventing prisoner escape
+- Weapon Feature / Game Code - Tractor Beam - If you activate the tractor beam in hangar, you can bring the activated tractor beam back and use it in armistice zone
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Racing - Locations - A specific rock formations on the Yadar Valley race track are visible to some player and not others
+- Salvage / Hull Scraping - Anvil Carrack - Sections of the hull show as valid but do not allow salvage
+- Crusader - Security Post Kareah - Core Tech - Physics - Actor / Player - Transitioning from EVA onto Kareah's landing pads has a high chance of instantly killing the player
+- Transit - Area18 - Orison - Shuttles/Trains/Trams - Players are falling through sometimes disappearing trams and shuttles to their deaths
+- Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+## Feature Updates
+Gameplay
+- ASOP Technical Refactor
+With 3.19.1 comes a technical refactor to ASOPs. While this is a mostly transparent update under the hood, itdoes have a few key directly observable advantages and fixes.
+Key changes for this refactor are the removal of waiting for ship spawning. Ship delivery time is now 0 by default. Optimized the update of on screen information by not having to re-query the list after a ship's state changed. Fixed multiple buttons being displayed on top of each others. Fixed bad ship states when opening the terminal while having pending queries. Removal of ATC location assignment delays. Removed static delay when calling ATC. Fixed impounding fees that were not being applied. Fixed ATC getting stuck in a bad state upon a failed unstow request and handling of ASOP screen when unstow fails. Prevent multiple spawns in ASOP so players cannot accidentally spawn the same ship twice causing the previous ones to become impounded. Speed up fade when accessing ASOP. Fixed "unknown" state after a ship was stored while looking at the terminal, giving the "claim" button. Fixed wrong selected ship index when moving the mouse after having pressed a button. Adjusted alpha of disabled button state on the ASOP. Change "Transferring to Storage" with "Moving to Storage" as the string was 1 character too long and the first word was split on the UI. Added time remaining to the ASOP status column when a ship is being delivered. Fixed multiple ship highlight selection when moving cursor fast over the vehicle list. Fixed red message showing up at random times indicating an error.
+- Tractor Beam QoL
+Now Ignores rotation when attaching Mining items, gimbal, salvage items, and rockets.
+- Mineable Scanning Update
+Made it so that the scan results on the mining HUD account for active laser modifiers, without having to shoot the mineable with the laser.
+- Added Fury, Fury MX, and Drake Corsair to Free Flight, Racing, and Pirate/Vanduul Swarm modes in AC
+Ships and Vehicles
+- Fury Polish
+Made Improvements to Rotational Performance and Fuel Usage
+- Increased Corsair Maneuvering Thruster HP
+Core Tech
+- Updated Tobii SDK to 7.4.2.17
+Should fix a conflict with OBS web socket port 4455 showing as a bad actor when using Tobii
+## Bug Fixes
+- Fixed multiple causes of 19003 and account Unstowed issues
+- Fixed multiple issues causing AI to duplicate in locations around the PU
+- Fixed an issue causing debris to obstruct and not clear from Hangars
+- There should no longer be Medical Bay Bed and Screen Obstructions in hangars
+- Ships should no longer show in the ASOP as Destroyed when storing
+- Claimed and delivered ships should no longer load into wrong location when Primary Residence is changed
+- ASOP should no longer fail to register ship destruction in specific conditions, allowing retrieval of permanently destroyed ships, and hindering insurance claims
+- Players should no longer be unable to retrieve ships after disconnecting ungracefully while in the process of retrieving a ship
+- ASOP Terminals should no longer be unusable and fade to black when accessed
+- Leaving and Returning to Salvage Mission contracts should no longer reset progress
+- Reclaimer main on-elevator control panels should now respond to input
+- Fixed an issue where players could not equip a new mobiGlas after unequipping and loses it
+- Fixed an issue where interactions were sometimes not working after opening the Starmap
+- Fixed an issue where the assigned docking collar HUD element would no appear when requesting docking permission
+- Fixed an issue causing ships to be impounded when  calling the ATC multiple times
+- Mining deposits shattered at optimal range should no longer cause damage to the player's ship
+- ARC-L4 rest stop refinery elevators should now properly arrive when called
+- Fixed an issue causing many spawned items to not have proper inner thought prompts
+- Pressing Interaction keybind while the mobiGlas opening animation is playing should no longer break mouse control
+- Gravlev vehicles should no longer have permanently unlocked item ports without notification or ability to toggle
+- Fixed missing pockets of no atmosphere inside multiple space stations
+- Client performance should no longer drasticly dip when getting close to certain spots on Everus Harbor while in a Corsair
+- Fixed missing terrain at the cave entrance near Lorville
+- Fixed an issue causing the missing person tonot appear at the wrecksites for the Missing Person missions
+- Terminals should no longer become unusable for other players after a player disconnects while interacting with them
+- Bunker manned turret gun can no longer be detached using tractor beam and attached to your ship
+- Combat Assistance Mission should now progress correctly after enemy ship has been destroyed
+- Fixed an issue that was causing server stalls If multiple harvestable nodes shattered i quick succession
+- Inner thought text for requesting to takeoff should no longer display as "Request Landing"
+- Mining UI should no longer appear in low resolution
+- The interaction prompts for ALL mining turrets are easy to miss/unintuitive locations for players
+- Players should no longer lose functionality if attempting to get into a pilot seat and opening their inventory in quick succession
+- Salvage Contract progress bar should no longer flicker when multiple players salvage the same object
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 8 Server Crashes
+- Multiple Backend Service Updates and Crash Fixes

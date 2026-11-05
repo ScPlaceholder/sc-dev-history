@@ -1,0 +1,43 @@
+## Star Citizen Alpha Patch 4.9 RC1
+Alpha Patch 4.9 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.9.0-PTU.12218630
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Recco Battaglia Repeatable Missions (reputation sped up for tonight)
+- Vehicle Hit Marker Updates
+- Behring CQ7 Bullpup Rifle
+- Vehicle Cleanup Updates
+- Vehicle Weapon Balance Pass
+- Valakkar Behavior Updates
+Known Issues
+- PU - Armor / Clothing / Inventory Rework - "Right Click > Equip" does not function if a paper doll slot is occupied
+- PU - Nyx - StarMap / Locations - QV Breaker Stations can be traveled to anytime at Nyx without RCD missions active
+- PU - Ship Battles - Missions / Locations - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- PU - Ship Battles V2 - EscortShips - Mission Content / AI - Escorted ship does not Quantum Travel away or Go to the Hangar after neutralizing the AI ships in the mission location
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+## Features & Updates
+Vehicle Armor Hit Feedback
+Audio for vehicle armor hit feedback is now fully implemented and playing correctly
+ASD Facilities
+Valakkars added to areas throughout the ASD facilities, providing an additional creature threat
+Combine C-788 S4 Cannon Balance
+- physical damage reduced from 1200 to 1090 per shot
+- armor penetration distance reduced from 12.24 to 2.24
+- fire rate delay increased from 40 to 50 RPM
+VR Feature Test Updates
+- Stereo cursor is now fully body-aligned and no longer shifts position when affected by external forces such as water, elevators, or trains
+- Fixed stereo cursor being invisible when hovering over radar UI elements
+- Fixed a performance issue caused by an optimization that was submitted in a previous PTU build
+## BUG FIXES
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes
+- Potential Fix: Contested Zone airlocks in Pyro not cycling correctly (follow-up fix addressing temperature and atmosphere edge cases)
+- Potential Fix: Unable to drag, drop, or click items when looting an external inventory using the FPS loot interface
+- Potential Fix: Patrol Ship Battles mission not triggering a failure state when the protected ship was destroyed, leaving the mission stuck with no way to complete or fail it
+- Potential Fix: Players getting stuck inside the cockpit of certain ships after a collision
+- Potential Fix: Juvenile Valakkars not moving away from the player after submerging, causing them to resurface directly on top of the player
+- Potential Fix: Yormandi Eye displaying "Marok Gem" as its name when tractor beamed instead of the correct item name
+- Potential Fix: Ships disappearing when landing at or departing from Levski hangars (additional fix: missing condition check identified)
+- Potential Fix: Interaction prompts appearing offset from the object the player is looking at when the object is near the edge of the player's field of view

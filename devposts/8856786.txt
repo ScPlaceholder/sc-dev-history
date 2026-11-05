@@ -1,0 +1,8 @@
+Ciao!
+The expected damage behaviour when the Command Module is docked to the Ironclad/Caterpillar is as follows:
+- Armour: The Command Module inherits all armour values of the ship to which it is docked.
+- Damage Propagation: When bullets strike the Command Module while docked, the damage is transferred directly to the host ship. This damage remains with the host ship and is not transferred to the Command Module upon undocking.
+- Shields: When docked, the Command Module is covered by the host ship's shields and utilises only the host ship's shield items, never its own.
+If any of these behaviours are not respected, you may have encountered a bug. In that case, we would appreciate it if you could contribute to an existing Issue Council report or create a new one if needed.
+Thanks!
+Montic - Vehicle Experience Team

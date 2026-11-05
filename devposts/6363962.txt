@@ -1,0 +1,63 @@
+## Star Citizen Patch 3.21.1
+Alpha Patch 3.21.1 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.21.1-PTU.8849787.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Up To Wave 1 Testers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- System - Security - Ship Trespass
+- Mission - Defend - Data Heist
+- New Player Experience - New Babbage
+- Vehicle Headlight Refactor
+- Tractor Beam - T2 - Vehicle Tractor Beam
+- Crusader C1 Spirit
+- ARGO SRV
+- FPS AI Behavior Integration
+- Siege of Orison Global Event Re-Activation (Will run again once blocker issues are resolved)
+Known Issues
+- PU - Stanton - Locations / Elevators - Grimhex elevators kill players when entering them from the Main Concourse level
+- Stanton - PU - Graphics - Low resolution textures appear around the PU
+- TRACKING - Cubemaps not rendering in New Babbage (and other locations)
+- Crusader Spirit All Variants - all variants - PU - Vehicles - Spirit explodes from any damaged for particular spot damaged on ship regardless of hull health
+- Argo SRV - PU - Vehicles / Insurance Claim - Argo SRV insurance claim is abnormally short
+- PU - Stanton - Ships - ASOP Terminal - Spawning specific ships will cause them to spawn outside of Hangars
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- PU - Stanton - New Babbage - NPE - Locations/Design - The player will be stuck in their hab's bed if they restart the tutorial by quitting to main menu whilst dead, blocking flow
+- Crusader Spirit A1 - PU - Vehicles / Weapons / Components - Missiles - When the Spirit A1 is travelling at high speed, a fired bomb can rip through the ramp and body of the ship and severely damage the ship
+- PU - Stanton - Hurston - Lorville - Locations / Design / AI - Security AI are missing from Teasa Spaceport Customs area
+- Anvil Lightning F8C ALL Variants - Vehicles / EVA - Using EVA to fly into the Cockpit during Zero G will cause the player to gain gravity and fall into the Cockpit
+- Stanton - Backend Services - Service Beacons - After service beacon is abandoned / canceled / declined, player will be unable to receive or accept other service beacons
+- PU - Stanton - Locations / UI - AR Marker showing your assigned hangar does not appear
+- PU - Mission Content - Retrieve Consignment - Datapad is blank / no code is displayed
+- PU - Lorville - Locations - Transit - HAB Elevators - There is a chance that the HAB elevators do not arrive when called
+- SOO Blocker: PU - Stanton - SOO - Mission Content / Locations / Transit - Elevators in Crusader Tower won't go to "Roof" level
+- SOO Blocker: TRACKING - Siege of Orison enemy AI not spawning
+- SOO Blocker: PU - Stanton - SOO - Mission Content / AI - Combat - Hartmoore Boss can sometimes fall through the platform when spawned making him inaccessible to players
+- SOO Blocker: PU - Stanton - SOO - Framerate / Performance - FPS consistently below 10 affecting mission flow
+## Feature Updates
+Locations
+- Adjusted Gloss Values of Screens around  New Babbage, Lorville, and Orison to Eliminate Strong Glares (Area18 coming soon)
+Gameplay
+- Tractor Beam UI, VFX, and Gameplay Polish
+Limit player rotation speed when controlling heavier objects. Made various UI and VFX Polish Passes. Tractor UI fixes for max distance and max distance for target.
+- Data Heist Mission flow, loot container, and Bug Fix Polish Pass
+Ships and Vehicles
+- Increased SRV Remote Turret Acceleration Speeds
+## Bug Fixes
+- Fixed - MultiWeapon - Tractor Beams - PU - Weapons / Art - Player tractor beams can tether onto entities that can't move
+- Fixed - Multivehicle - PU - Vehicles / Tractor Beam / VMA - Ship tractor beams components are not present in the VMA / VLM loadouts
+- Fixed - ARGO SRV - PU - Vehicles - The vehicle inventory storage capacity is extremely low in the SRV
+- Fixed - ARGO SRV - PU - Vehicles - Art - The screen for the cargo elevator panel is embedded into the panel housing
+- Fixed - PU - Law System / UI - Crime notification not displaying message when committed against a player
+- Fixed - PU - Missions / UI - VLRT Tracker Training Permit mission description has text copied from investigation / cave bounty missions toward the end of the text
+- Fixed - PU - Shopping / Tractor Beam - The Longhaul Tractor Beams are incorrectly named Suregrip in the Refinery Kiosk
+- Fixed - PU - Stanton - UI / Locations - Multiple Locations - Crashing in a restricted area will give you ever lasting "Restricted Area" alerts
+- Fixed - PU - Stanton - Mission Content / Game Code - Some mission locations will be named "MissionLocation" in contract manager and description
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 1 Server Crashes
+- Fixed a Server Deadlock

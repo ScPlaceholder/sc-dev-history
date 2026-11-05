@@ -1,0 +1,5 @@
+Hi!
+All transparent objects are sorted and rendered in the “correct” order. Unfortunately for intersecting transparent objects there is no “correct“ order, as it really needs sorting per pixel (vastly more expensive and very few games do this). Also bugs can sometimes cause objects to report an incorrect size, leading to sorting issues. And finally, water and some of the weather/wind particles have yet more complexities that make sorting difficult to work in every scenario.
+So for the most part any sorting issues you see are a bug that needs reporting and fixing, because the tech should be able to handle most cases.
+This is pretty much the same story for every game.
+Ali Brown

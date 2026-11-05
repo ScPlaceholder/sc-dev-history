@@ -1,0 +1,67 @@
+## Star Citizen Alpha Patch 4.2 PTU
+Alpha Patch 4.2 has been released to All Backers!  Patch should now show: VERSION 4.2.0-PTU.9831127.
+- Audience: All backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Storm Breaker All Phases
+- Apex Valakkar
+- Dynamic Rain
+- Radiation
+- VOLT Laser "Prism" Shotgun
+- ARGO ATLS IKTI and IKTI GEO
+- New Wikelo Ship Additions
+- New Hairstyles
+- Sterling Exploration Suit
+## Known Issues
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- PU - Ship Battles - Ace Pilot/Assault - Proximity Tracker - Action Area - Logic fails to continue when over 20km away from the tracked object or Action Area Origin
+## Features & Gameplay
+Gameplay
+Storm Breaker and ASD Location Polish
+Further FPS AI Storm Breaker Facility Navmesh Improvements to help with navigation including in and out of spawn closets and obstacle avoidance. Adjusted ASD Shuttle Navigation Splines and Air Shield Shader. Further Lazarus Complex exterior cover polish. Fine-tuned transition rules for Worm Combat Music and created a sub-mix change on the playlists for Storm and the tracks for the Valakkar. Further Storm Breaker Density Manager Optimizations for AI corpse and abandoned vehicle cleanup at ASD Locations. (Vehicles in the area that are abandoned will be cleaned up after 2 hours).
+Apex Valakkar Polish
+Apex Valakkar Weakspot Spash VFX Polish.
+Radiation Polish
+Radiation Now displays rounded values for Env. Emission, Suit Protection, and Total Radiation.
+Wikelo Collection Polish
+Updated Wikelo Recipe and Favors Menus with Mercenary Scrip, Council Scrip, and Caranite. Added back in the ship battle favor conversions.
+Ships and Vehicles
+- Added Behring CST-313 Castillo Bomb Rack to PU Shops (Centermass ect.)
+- Slightly Reduced ARGO ATLS GEO IKTI Landing Dust Effect
+Weapons and Items
+- Volt Shotgun VFX Polish to make Impacts more Impactful
+Core Tech
+- Further Server Performance Optimizations
+## Bug Fixes
+- Potential Fix: PU - Stanton - Locations - Klescher Rehabilitation Facility - Mining / Inventory - Players are unable to store mined Ore into their inventory properly and Ore will be dropped to the ground after attempting to be stored
+- Potential Fix: PU - Pyro - Storm Breaker - VFX / Visor - Rain droplets are present on the screen in third person when inside the research facilities
+- Potential Fix: PU - Comms Notifications - Graphics / UI - 3D comms call has no shadows rendering
+- Potential Fix: PU - Pyro - Storm Breaker / Collector / Creatures / Mining - Irradiated Apex - Some Apex Valakkar limpets (Pearls) will vanish when they are successfully fractured (STARC-170609)
+- Potential Fix: PU - Pyro - Storm Breaker - Mission Content / Exploit - Valakkar Egg can be taken from the nursery with a tractor beam skipping the egg procedure (STARC-169639)
+- Potential Fix: PU - Stanton - Landing Zone (LZ) - Area18 - Locations / Design - There is no restricted flight zones set up around Area 18 (STARC-166057)
+- Potential Fix: PU - Pyro IV - Farro Data Center IV - Locations - Farro airlock asphyxiates player (STARC-168893)
+- Potential Fix: PU - Pyro - Storm Breaker - Locations - Players can use the tractor beam to insert the egg into the Pylon before the cooldown timer is up
+- Potential Fix: PU - Pyro / Pyro I - Storm Breaker - Lazarus Complex - Exploit - Tractor Beam can clip through the door and grab the ATLS IKTI (STARC-169565)
+- Potential Fix: ARGO ATLS All Variants - PU - Mounts / Physics - ATLS suit will not move when operated by the player while it is attached to any cargo grid (STARC-169608)
+- Potential Fix: PU - Freight Elevators - UI / Locations - Cannot fill freight elevator to full capacity with commodity crates (STARC-168922)
+- Potential Fix: PU - Stanton - Landing Zone (LZ) - New Babbage - Freight Elevators - Design / Locations / Physics - Cargo overlaps other crates and spawns outside the cargo grid when a fully loaded freight elevator retrieves it from the warehouse "
+- Potential Fix: Pu - Stanton - Wikelo's Emporium - The Collector - Locations / Collision - There is no collision on the bridge railing
+- Potential Fix: PU - Pyro - Radiation / UI - Widgets for body and suit radiation begin to flash red at the incorrect values
+- Potential Fix: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+- Potential Fix: PU - Pyro / Locations - Ruin Station - Hangar doors open but another wall/set of doors with partial collision prevents exit (STARC-148211)
+- Potential Fix: PU - Pyro - Pyro 1 - Storm Breaker - Lazarus Research Laboratory - Locations / Design - Multiple areas of the research lab exterior are missing markup required to make them visible to the player on the minimap
+- Potential Fix: PU - Actor - Actor Status - Medical / Consumables - OxyPen only refills oxygen by a small percentage or none at all
+- Potential Fix: PU - Creatures - Irradiated Kopion - Kopion plays attack animations but does no damage to player
+- Potential Fix: PU - Storm Breaker - Locations / Design / Interactions - Security doors lack their inner UI and prompt if door hasn't been used to enter the Data Processing room
+## Technical
+- Fixed 1 Client Crash
+- Fixed 2 Server Crashes

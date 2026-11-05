@@ -1,0 +1,42 @@
+Universe
+Planetary Surfaces
+- We have implemented the first fully modeled, explorable planetary surfaces. These include three moons; Yela, Daymar, and Celin, as well as the mining planetoid Delamar. Each planetary body has unique atmospheric composition, pressure, and gravity as well as a variety of surface outposts and derelict ships to explore, many tied to our new missions system.
+Planetary Motion
+- Planetary bodies now have rotational motion complete with dynamic day/night cycles.
+Surface Outposts
+- Planetary surfaces are dotted with surface outposts representing a variety organizations and functions. Each outpost is unique and has its own power system and oxygen supply, many with usable Kiosks and landing pads with associated ASOP terminals.
+Persistence and Insurance
+- Persistence: Your character and ship's persistence state is now being updated every few minutes and on logout. After death, you will respawn in the station you last visited. Visiting is determined by proximity.
+- Insurance: At any point you are able to claim a replacement ship through the ship selection screen. When you make a claim you will pay an initial % cost of the ship's price as a deductible. There will be additional multiplier of the deductible for each previous claim in the past 24 hours (real time). Once deductible is paid, the ship will be processed and delivered to the station where the claim was made. Processing time will vary depending on the size of the ship. You can pay an additional fee to fast-track the processing.
+Air Traffic Control (ATC)
+- Landing and take off at public facilities is now controled by Air Traffic Ontrol (ATC). The ATC acts as the connection between you and the landing tower using the MFD comm function in every ship. When attempting to land, you will open a communication channel to the tower and ask for permission. The tower then checks if all the requirements are fulfilled and will advise appropriately. Selecting a target location will happen via the MFD Comm System.
+New Locations
+- Levski: Levski is a base built into the rock on Delamar, an asteroid hidden deep in an asteroid belt. The base was originally an active mining facility but after being left derelict for a number of years new residents moved in and it became a hotbed for political radicals & criminals. The main areas are controlled by various political groups with a strong anti UEE sentiment, they try to keep order best they can. Levski has the choice of numerous shops spread across multiple floors, many missions will be available (both illegal and legal) you can access Levski by; foot, ship or ground vehicle.
+- Shops: New items (clothing, armor, weapons, components) added to shop inventory. Added Dumper's Depot to major locations.
+AI Subsumption
+- We have introduced the basics of subsumption. You should now see NPCs going about their daily lives at all 3 major landing zones (Grim Hex, Port Olisar, and Levski).
+Kiosks
+- We have introduced shop Kiosks. The main variants of the Kiosk will be used for Buying/Selling General Items, Buying/Selling Commodities, and for General Landing Pad Services (Repair/Refuel/Restocking). The intention is that you will have separate inventories at each Station and Major Landing Zone. Kiosks will only be able to interact with items that are local to the shop's location. The kiosk will be able to interrogate, and manipulate, any cargo, loadout, or the inventory of these local elements. By default, the kiosk will show everything you have access to in that location, but will be able to drill down to facilitate any specific ship, cargo manifest, or station storage.
+Afterburner
+- There is now a single afterburner with the ability to achieve higher top velocity under certain conditions, giving us AB SCM and AB Cruise with the only distinction being two different speeds. You can only enter AB Cruise if your flight path is a straight, forward line. Otherwise you're limited to AB SCM, i.e. while maneuvering/strafing. Once in AB Cruise you can release the afterburner key and go into an AB idle mode to maintain your current speed. Throttle setting and y-axis strafe level allows incremental speeds, but you will decelerate if you change your vector. If you continue to hold AB and maneuver, you drop to AB SCM speed until you return to straight-line flight. AB Idle holds your current velocity as long as you're not maneuvering and decoupled rotation is allowed while in AB idle.
+Quantum Travel System
+- Quantum travel (QT) destinations are now selected via the MobiGlas Starmap app.
+- Whether or not an object can be targeted for QT is determined by the drive's detection range and is based off gravitational values (The larger the object the further away you can detect it, large objects with small objects in orbit drown out their detection capabilities at long ranges). Meaning you will not be able to travel from point A to B at all times, but instead may need to move into orbit of a larger body to detect destinations also in orbit. For example, to get to a station orbiting a moon that orbits a planet, the route is Planet>Moon>Station.
+- There's now a short range quantum travel for moving around different orbital points of moons and small planetary bodies.
+- Quantum travel speeds and spooling and cooldown times are variable based on the size and quality of the drive.
+Mission System
+- The missions system has been revamped with new missions, mission givers, and greater variety. Each of the below missions has many variants and types, including lawful/unlawful, and many can be done in cooperation with other players. Some variants will require the player to gain a certain kind of reputation.
+- Delivery
+- Deploy
+- Recovery
+- AI Bounty Hunt
+- AI Assassination
+- Collection
+- Waste disposal
+- Patrol
+- Derelict investigation
+- Escort
+- Mission Givers: Ruto and Eckhart
+Doors and Airlocks
+- Doors and airlocks have been updated with additional functionality in preparation of the room system.
+- Introduced basic ship security.

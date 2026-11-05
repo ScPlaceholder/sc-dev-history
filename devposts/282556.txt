@@ -1,0 +1,13 @@
+Hi @Angstrom and @night55,
+Those SERIALIZED_METADATA_BEGIN/SERIALIZED_METADATA_MEMBERVAR/SERIALIZED_METADATA_END macros are actually how we extend the serialization system. For example, a variable for a 3D co-ordinate may be made from a C++ class called Vec3, which stores 3 values, x, y and z. To allow our system to recognize Vec3 we only need to add a block of macros like this...
+SERIALIZED_METADATA_BEGIN(Vec3)
+SERIALIZED_METADATA_MEMBERVAR(x)
+SERIALIZED_METADATA_MEMBERVAR(y)
+SERIALIZED_METADATA_MEMBERVAR(z)
+SERIALIZED_METADATA_END()
+This creates the "meta data" for the Vec3 class. We only need to create the meta data for Vec3 once and we can then use that class with as many serialized variables as we want. Meta data can also be used inside the meta data for other C++ classes, so using these macros we can very easily extend our serialization system to handle new C++ classes that it has never seen before.
+As @night55 said, the variables themselves are a runtime object built from a templated wrapper around the class you want to serialize. So, let's say we want our entity to have a member variable, which also happens to be a serialized variable, that stores its position. We want the variable to use the Vec3 class, because it's already choc-full of all the 3D co-ordinate goodness we need. In C++ adding the new variable looks like this:
+CSerializedVariable<Vec3> position;
+The only other thing we need to do is register this variable with the entity it belongs to. Registration is also when we say whether a serialized variable is networked, persistent, part of save game data, or any combination of those three.
+Coherency and volatility go hand-in-hand. What we want to avoid is updating only some of the variables on an entity. That could lead to situations where the replica of an entity on a client has some combination of values in its variables that never actually existed on the server. That way lies desync madness. Instead for any single entity we will either, send all of its previously unsent changes (latest values only), or send nothing at all. This is the eventual consistency guarantee often discussed when networking real-time interactive systems. Eventual consistency buys us a lot of flexibility, and allows the netcode to choose exactly when, and how often, it wants to send updates for each individual entity. We're yet to take advantage of this fully, but it's definitely on the schedule.
+Hope that answers your questions

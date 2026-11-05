@@ -1,0 +1,62 @@
+## Star Citizen Patch 3.11.0l
+Alpha Patch 3.11.0l has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.0-PTU.6177143.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Volunteer Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-11-0l
+Testing Focus
+- New Cargo Decks
+- New Space Station layouts
+- BEHR BR2 Shotgun
+- BEHR Grenade Launcher
+- Front End Refactor
+- Exterior Space Station Green Zone Removal
+- Player and External Inventory Interactions
+- Throw T1
+- Force Reactions T1
+- Missile and Countermeasure QOL Improvements
+Known Issues
+- Global chat is unavailable in the visor HUD
+- The Player is unable to use auto-land within some hangars in New Babbage
+- The Player gets an infinite load screen when attempting to Load into PU after Logging Out of a Ship Bed
+- Ships landed at Lorville cannot be stored
+- Ship NavMarkers and Target Highlight can become detached from Ships when Pitching Up and Down and traveling forwards
+- The Mantis Snare will not prevent the other player from completing their QT (Short Range QT)
+- Purchasing OxyPens or MedPens from the shelf will not place the item in the player's inventory
+- No charges are given to a player that rams and destroys another ship with players inside
+- Pilot of a ship containing a passenger will be charged with Negligent Homicide if their ship is rammed and destroyed by another player
+- Ramming and destroying another player with a ship does not generate a crime
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+## Feature Updates
+Locations
+- Updated explosion VFX for station defense turrets.
+Gameplay
+- The Stanton System should now be selected by default on the visit location menu after a player's second login.
+- Criminals will now respawn at GrimHex if they die without being arrested or log out without using a ship bed.
+- Armour mitigation of force reactions should now extend to attached items such as weapons, magazines, and grenades.
+- Restricted level 5 crimestat missions to 1 per server.
+Ships and Vehicles
+- Increased the decoy countermeasure count on the Xi'an Scout to bring it on par with the other ships.
+## Bug Fixes
+- HUD elements for enemy ships should no longer be massively offset at ultrawide resolutions causing them to be invisible to the player.
+- Players should no longer be timed out of using a Kiosk or an ASOP terminal after 1 minute if actively interacting with it.
+- ' Warning: Major Unexpected Torque Imbalance ' should no longer persist on ship the ship HUD.
+- The Ore Deposit Kiosks in the Prison Work Mines should now display the correct amount and value of ore units present inside a user's backpack inventory.
+- GrimHex's Jurisdiction should no longer respect the UEE's laws.
+- Wanted level 5 UEE Navy kills should now correctly count toward the mission tally.
+- Players should now be able to roll when flying the Prowler after retracting the landing gear.
+- The lower part of the Constellation HUD, which was showing missile and countermeasure info, should no longer be cut off.
+- Thruster effects should no longer be visible in cargo bay of the MISC Starfarer when hovering.
+- The cartography hologram should no longer be able to be seen through walls of the Carrack or on top of characters.
+- Fixed an issue causing close range FoIP animations to stop working the moment the two players try calling each other and accept the call.
+- Fixed an issue causing place mode to place objects in the wrong location away from where the player selected.
+- Ursa Rover should no longer be missing their target status on the Vehicle / Remote Turret HUD or MFD Screens.
+- Shopkeepers in Port Olisar should no longer be spawned at off angles and / or away from their desks when on a fresh server.
+- Fixed an oversized particle effect when ground vehicles collided with planetary bodies.
+## Technical
+- Fixed 4 Client crashes
+- Fixed 2 Server crashes

@@ -1,0 +1,68 @@
+## Roadmap Roundup
+Happy Wednesday, everyone!
+Every two weeks, we accompany the Roadmap update with a brief explanatory note to give you insight into the decision-making that led to any changes. This is part of an effort to make our communications more transparent, more specific, and more insightful for all of you who help to make Star Citizen and Squadron 42 possible.
+This week we have a wealth of new deliverables as the downstream teams’ schedules have been set for Q3. As a reminder, since these teams are largely reactive to upstream, their schedules on the roadmap only show one quarter into the future, as opposed to upstream’s four quarters. Additionally, some increased visibility on the tasks needed for Server Meshing and Persistence have been added to the Network and Persistent Tech teams. Check out all the new deliverables below, but definitely take a peek at these teams on the Progress Tracker to see what else they’re working on in Q3!
+With that said, let’s go ahead and dive into this week’s Roadmap Roundup!
+-CIG Community Team
+## Notable Changes for July 14th, 2021
+## Progress Tracker
+These deliverables have been added to the Progress Tracker:
+Laser Trip Mine
+Implementing laser trip mines into the game, which are explosives that use light beams as triggers. When someone or something comes into contact with the beam, the mine goes boom.
+Frontier Clothing
+Generating concepts for frontier-style clothing for players and NPCs.
+Female Player Head
+Completing a modeling and texture polish for the female player’s head. After this pass on this asset, it will be sent to Tech Animation for a rigging update.
+DGS Mesh Node
+DGS Mesh Node implements multiple Dedicated Game Servers (DGS) and clients connected to the same instance of the Hybrid service, and allows DGS to exchange entities and authority over them.
+Shard Manager
+Add functionality to the Hybrid for what will become the Shard Manager component service. The Shard Manager functionality is responsible for creating a shard in the EntityGraph database, ensuring it is “seeded” with an initial population of entities, communicating with matchmaking so that players can join a shard, and talking to provisioning services so that a Hybrid and Dedicated Game Servers (DGS) can be assigned to a shard.
+Inventory Unstow
+“Unstow” refers to fetching an item from an inventory and placing it into a Shard. For example, a ship loaded with cargo being unstowed, removes the ship and it’s associated cargo from the inventory and places them into the game. This work implements moving an item’s persistent data from an inventory into a Shard managed by the EntityGraph, and adding the item to the Replication Layer.
+Entity Stow/Destroy
+“Stow” refers to moving an item into an inventory. For example, a ship loaded with cargo being stowed, stores the ship and it’s associated cargo. This work implements removing items from the Replication Layer, moving its persistent data into an inventory managed by the EntityGraph.
+Itemport Mod API
+This API allows tools like the Vehicle Modification App (VMA) to modify ship loadouts inside inventories.
+Shard Data Query API
+This API allows gamecode access to common queries against entity graph data.
+Free Form Variable API
+Blackboard service for gamecode systems to write generic persistent variables.
+AI – Navigation Links – Ladders/Ledge Grab
+Implementing special adapters to allow the navigation system to be informed of potential navmesh connections offered by ladders or ledge grab markup. The navigation links already allowed the creation of adapters that contain gamecode specific functionality to function as sort of translators between system-specific domain into the navigation system.
+AI – Trolley Push & Pull
+This will be the first pass on implementing the ability for NPCs to use trolleys and trolley-like entities. They will be able to move in the environment pushing and pulling those entities to place them from/to specific locations. This requires the creation of a special pathfollower that can take into consideration external forces that needs to be balanced to achieve the desired speed.
+AI – Ground Vehicles
+This is the first pass on supporting NPCs controlling and driving ground vehicles. This requires the implementation of a new pathfollower that can take care of the vehicle’s physical abilities to transform the NPCs movement request into actual movement.
+AI – Unmanned Missile Turrets
+Adding AI controlled missile turrets to improve defense of green zones.
+AI – Medical
+Implementing a variety of medical AI behaviors. A patient will arrive at the hospital and check themselves in at a terminal then wait to be seen called to a room for a diagnosis. The patient can then see doctors and nurses tending to sick and injured people. Other patients will wait to be called. Doctors and nurses can be seen washing their hands, checking medical stock and dispensing medicine. Some patients will be asleep in medical beds.
+AI – Leisure
+The leisure behavior is a segment of our new civilian behavior system, controlling how the AI behaves when they have free time during their schedule. AI will create a lifelike environment by relaxing and having fun, using the things that are available to them, such as exercise equipment, jogging routes, TV monitors, seats/benches, and their mobiGlas.
+AI – Dancing
+Dancing is a segment of our new civilian AI leisure behavior. After work, some civilians will have the urge to spend time at a nightclub and dance the night away. This will bring new life and movement to our bars.
+Fire Hazard
+The Fire Hazard system will track fire & temperature on static and dynamic objects. For the initial release of fire, the feature will be setup on a select few vehicles.
+Destructible Workflow
+Building out a workflow to allow artists and designers to work with destructible objects.
+Maya Live Link
+Maya Live Link establishes a link between Maya and the engine Sandbox Editor. It is primarily meant to give animators the best possible, “what you see is what you get” style preview quality by seamlessly integrating the Editor-rendered images in the Maya viewport.
+Rescue/Transport Mission
+Taking advantage of AI follow behaviors to create missions where players transport customers from one location to another, along with prototype missions where player must rescue imperiled clients from dangerous situations and escort them to safety.
+Infiltrate/Defend Mission
+Underground Facilities are the first place to benefit from the addition of spawn closets which allow us the expansion of the suite of missions that take place there. Missions range from all-out assaults to situations where you may be able to complete objectives without the need to engage in combat at all, and include both lawful and unlawful versions.
+Comm Array Mission Improvements
+Several mission improvements and totally new missions set across and around the Comm Arrays, with a specific focus on PvP content.
+——
+Physical QT Movement
+This deliverable had been previously removed from the roadmap. It has returned to the Progress Tracker as it has been scheduled to be worked on in Q3 by the Physics team.
+MISC Hull B
+The Hull B was originally scheduled to be worked on simultaneously with the Hull A. However additional resources needed to be allocated to the Hull A, therefore we’re temporarily removing the Hull B from the Progress Tracker until it has been rescheduled.
+## Release View
+These deliverables have been added to Release View in the Alpha 3.17 column:
+Persistent Hangars
+Players will have the ability to have their own Persistent Hangars. This will bring changes to the Cargo gameplay loop by allowing players to buy cargo and send it to their hangars, then maximize their cargo storage space by allowing them to pack the goods themselves. Gone will be the days of getting booted from your hangars because you were there for too long.
+Outpost Homestead – Independent & Outlaw
+A small home for AI to live and shelter. They consist of a central hub and a few optional internal and external modules. They provide the basic necessities to support a small group of people for an indefinite amount of time.
+——
+That’s all for this week! Join the discussion on Spectrum

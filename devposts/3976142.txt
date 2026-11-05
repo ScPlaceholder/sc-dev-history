@@ -1,0 +1,33 @@
+## Star Citizen Patch 3.13.0t
+Alpha Patch 3.13.0t has been released to the PTU and is now available to test! Patch should now show: VERSION 3.13.0-PTU.7334707.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Stability and bug fixes
+Known Issues
+- Bed logout may cause an infinite loading screen when rejoining the PU (Character Reset may be required to fix)
+- Abnormaly long delay between pick up storing of fps mineables/harvestables/items
+- Client may crash when loading a second player into a server in Arena Commander
+- Cannot refuel or rearm at New Babbage, services claim to be unavailable
+- Players may not be able to quantum jump with another player in bridge with you
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Constellation can despawn when flying 30km away after undocking
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Wallace Klim can spawn away from his table, facing the wrong way and floating
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+- The eclipse spawns with cockpit canopy ladder open with ladder and cover enter / exit animations broken
+- Chat HUD is partially off screen when using ultrawide resolutions
+## Bug Fixes
+- Fixed an issue that could cause a server to spawn doubled assets such as elevator doors
+- Fixed an issue causing players to die when placing boxes on ship lifts
+- Picking up a weapon off the floor should no longer break some animations such as leaning, crouching & jumping
+- Players should no longer be able to acquire or equip the mounted gun optic attachment and block all bullet damage
+## Technical
+- Fixed 1 Server crash

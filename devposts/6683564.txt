@@ -1,0 +1,35 @@
+- Dynamic Crosshair
+Combat helmets now support the dynamic crosshair which allows for quicker target acquisition in close-quarter situations.
+The Dynamic crosshair is a system which allows the crosshair to accurately represent to the player where the projectile will leave the barrel and hit. Unlike most first person shooters, our projectiles fire from the barrel, and when firing in hip mode this can make it difficult to judge just where bullet is going to land. The dynamic crosshair can help combat this issue with moving with the player when they move their mouse input around the screen. For example, if the player should move around the corner of a building, the crosshair will stick to the wall until the entire barrel has moved past the wall and will then appear in the foreground. We want the crosshair to be dynamic to your movement and actions. The crosshair is animated while you move and perform an actions to help the demonstrate the amount of spread your movement has on a projectile.
+Players will have a choice of 2 options when it comes to the dynamic crosshair. Have it permanently off or have it permanently on screen when wearing any combat helmet. Players can decide to toggle the crosshair on and off via the settings options.
+Combat Helmet Required: In terms of the lore of Star Citizen, the crosshair will appear on the players helmet visor via augmented reality. This means if they player does not have a combat helmet on, they will not be able to use this feature. Taking your helmet off or using a non-combat rated helmet will cause the dynamic crosshair to not display. In the PU, with there being multiple brand manufactures for helmets, there is an option for the crosshair to change it’s visible looks, based off the manufactures designs. The crosshair will not snap to different objects, since we are trying to add a level of AR realism, the crosshair should be responsive but soft float onto different objects.
+Hit Markers: With the return of crosshairs, we also want to introduce a new hit marker back into the game. Currently we have a flash setup for the hit markers in game but 3.23 brings this over into building blocks. These hit markers are visible from both the hip and also in ADS mode. The new hit markers will have style and sound changes based on body, head, and kill shots. Hitmarkers are directly tied to the dynamic crosshair so if the player turns off the crosshair in the options or changes to a none combat helmet, they will not receive any hitmarkers for hitting their target.
+Core Tech
+- Replication Layer Update
+Over the course of the 3.23 patch cycle, the Replication Layer will be moved off of the game servers and set up as its own standalone service. In the short term, this allows for game servers to recover without disconnecting players so their progress will not be lost. During a crash, as message will display saying the server is recovering. In this phase, it could take as long as 2-5 minutes so please wait on this to complete and the replication layer will move everyone to the new server.
+## Bug Fixes
+- Fixed - PU - Stanton - Players receive Disconnection (CODE 30000) when attempting to enter the PU
+- Fixed - PU - Stanton - Shopping - All shops are missing items off the shelf and in kiosks
+- Fixed - PU - Stanton - Locations / POI / UGF - Missing Elevator
+- Fixed - PU - Stanton - Locations / AI / Animation - NPCs stand on furniture
+- Fixed - Anvil Hornet Series - PU - Vehicles / Audio - The Hornet Mk2 audio may use placeholder/other ship sounds
+- Fixed - Origin X1 ( All Variants ) - PU/AC - All Origin X1 Variants fail to spawn correctly when retrieved or the game mode starts
+- Fixed - GATAC Syulen - PU/AC - The Gatac Syulen fails to spawn correctly when retrieved or the game mode starts
+- Fixed - Drake Corsair - PU / AC - The Corsair fails to spawn correctly when retrieved or the game mode starts
+- Fixed - PU - Stanton - Locations / AI - Security Post Kareah - Spawn Closet - AI do not spawn inside Security Post Kareah
+- Fixed - PU - Inventory - When repeatedly pressing i to access inventory, the inventory HUD fails to display as well as the actor's head may be missing
+- Fixed - PU - Locations / Missions / AI - Too many AI are spawning during the Additional Derelict missions
+- Fixed - PU - Mission Content / Mission Feature - Bounty does not complete after killing the target
+- Fixed - PU - Locations - Ariel (Stanton1a) - Many rock assets have physics proxies that can trap the player in a falling state when walking over them
+- Fixed - PU - Stanton - Multiple Locations - Some caves have gaps in geometry players can fall into
+- Fixed - PU - Stanton - Locations - Can't open assigned hospital room's door
+- Fixed - PU - Stanton - Animation - Art - Interactables - Player holds medical trays incorrectly, hands clipping through
+- Fixed - EXPLOIT - PU - Stanton - Locations - Hangars/Vehicles/Ships - Closed hangar doors of a hangar occupied by a ship will open when another ship collides with them
+- Fixed - PU - Client - Performance / Locations / Multi-vehicles / Vehicles - When flying large size ships near planet and moon surfaces, client performance will drop / degrade significantly
+- Fixed - PU - Mining / Refining - When attempting to get a quote, players receive the error "Something went wrong (Error code: 20)"
+- Fixed - PU - Stanton - Game Code / Character / Locations / Server Crash Recovery - Player stuck in bed after loading into PU after recovering from a server crash
+- Fixed - PU - Stanton - Server Crash Recovery / Missions - Accepted missions will be abandoned after the server has recovered from a crash
+- Fixed - PU - Performance - Inconsistent frametimes / stuttering during standard gameplay
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 5 Server Crashes

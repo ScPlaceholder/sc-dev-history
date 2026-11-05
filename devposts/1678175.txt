@@ -1,0 +1,33 @@
+## Star Citizen Patch 3.3.5h
+Alpha Patch 3.3.5h has been released to the PTU, and is now available to test!  Patch should now show: PTU-996871.
+It is strongly recommended that players delete their USER folder for the  Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- Hurston, Aberdeen, Arial, Ita, Magda, rest stops: Transit, shopping, assets.
+- Lorville: Transit, landing, and shopping.
+- Recco Battaglia and associated missions.
+- General missions.
+Major Known Issues:
+- VOIP may be inconsistent or not working properly.
+- Enemy AI ships often appear to not take damage.
+- Players may experience stuttering when initially arriving or spawning at Lorville.
+## Feature Updates
+Universe
+- Temporarily removed "beer" as an option from the Lorville bartender.
+- Hiding comms contacts from MFD screen on display ships in ship shops.
+- Swapped default spawn back to Port Olisar.
+## Bug Fixes
+- The Lorville bartender should now move on if the player is in the process of making a choice and moves away.
+- Legal delivery missions should now properly appear on the mobiGlas.
+- Fix for an issue where aligning with a quantum destination prior to complete recharge would cause a calibration failure.
+- The client should no longer hang when purchasing at certain kiosks.
+- The couch in the Lorville EZ Hab should now be interactable.
+- Further fixes to missing ATC audio.
+- It should no longer be possible to take the whiskey bottle from the bartender mid-pour.
+- Fixed an issue where the first player to join a party will be kicked when additional players join.
+Technical
+- Fixed 4 client crashes.
+- Fixed 2 server crashes.
+- Further Lorville performance tweaks.

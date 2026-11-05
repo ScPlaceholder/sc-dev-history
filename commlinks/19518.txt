@@ -1,0 +1,82 @@
+Squadron 42 Monthly Report
+September 2023
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 10:04:2023
+REF: CIG UK, CIG DE, CIG LA, CIG TX,
+FAO Squadron 42 Recruits.
+Welcome to September’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including updates to female animations, fight sequences, and performance-capture data.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Features)
+AI Features began the month resolving an issue with Vanduul attacks not harming the player or friendly AI. They also fixed behavioral issues related to AI taking cover, which will also enhance the situational awareness of friendly AI when encountering enemies.
+The team then began providing animation support for cover transitions for each of the in-game factions. Issues were also addressed with attack-and-defend areas to ensure that AI units correctly advance to or defend a designated location.
+Significant progress was made on a key battle, with the team implementing behaviors to allow the enemy to learn from the player’s actions. These learning behaviors will prevent players from exploiting specific actions to win. The team is also exploring design tweaks to the battle to enhance the overall experience.
+Throughout the month, the animators concentrated on improving male-to-female retargeting to ensure that female marines move naturally during combat.
+They also continued to provide animation support for crouch locomotion. Now, when players adopt a stealthy playstyle, AI buddies will follow their actions and crouch accordingly.
+## AI (Tech)
+AI Tech continued developing various features throughout September, including boids and the Apollo tool, and began focusing on performance improvements and polishing existing features.
+For boids, the base structure that allows the designers to define boid states (wandering, fleeing, idling, dead, etc.) and transition between them was implemented. These transitions contain rules, including when they should be selected, and animation data, such as birds taking off and landing. Iteration was also done on suitable physics properties for boid agents that need to be affected by gravity to walk on terrain. The team also added health components to agents so players can damage and potentially kill them.
+For the Apollo Subsumption tool, the team completed an error-reporting panel that will provide detailed information on behavior issues. This will help the designers to catch problems sooner and solve them more easily. Various quality-of-life improvements requested by the designers were implemented too.
+Performance improvements were also made, with the team looking closely at systems that impact performance on dedicated servers. For example, optimizations were made to how navigation islands compute after parts of the navigation mesh are regenerated. For navigation volume, code was cleaned up and ‘event dispatching’ was moved to ‘update job,’ which better distributes to multiple threads. The team are currently investigating and implementing optimizations to planetary navigation generation and pathfinding request processing.
+New functionality were added to the collision-avoidance system. Now, collision avoidance agents have support for skipping and ignoring lists, which is used when agents move together as a group.
+For NPCs using trolleys, improvements were made to collision avoidance, and a new component was added to the trolley that will trigger the regeneration of navigation mesh when it stops moving.
+Regarding flowgraph Subsumption nodes, the team can now generate nodes with dynamic input based on Subsumption’s event description. This will help the designers to write more complex behaviors for NPCs and missions.
+## AI (Vehicles)
+Vehicle AI spent September improving various elements of SQ42’s gameplay. Last month’s work involved reworking the fly-by-maneuver that the ship AI use in combat. It’s now much more aggressive and can adapt to what the player is doing. At higher difficulty levels, the AI will do a ‘skidded roll attack' during fly-bys, where they roll and strafe slightly as they approach, making them more difficult to hit.
+Vehicle AI also exposed various features to the designers to help them tune and balance combat encounters, such as burst fire controls for ships. The AI can now also detect when a ship has entered soft death (disabled but not fully destroyed). Enemies will stop attacking in this case.
+Various tweaks, improvements, and updates were also made to enhance the overall game experience.
+## Animation
+The Gameplay Animation team spent the month working on weapon first-selects, a key combat encounter, the military pilot Multi-Tool, spec-ops cover animations, female animations for missing player interactions, and fixes to the firing range’s security behavior.
+They also focused on cockpit- and environmental-interaction animations to increase immersion, pick-ups for AI medical and ship-hull interactions, and a variety of facial animations for flight combat and comms calls.
+## Audio
+The Dialogue team completed their performance-capture pick-up shoots and moved on to asset editing and mastering. Content was captured for the breathing system too, which is being prepared for implementation.
+“There was plenty of great quality content recorded to cap off a successful shoot.” Audio Team
+Focus was also given to the Actor Status and asset mastering, and planning began for walla recording sessions to add background chatter to the game's more populated areas.
+The SFX team continued efforts to fill environments with ambience in line with their sprint milestones.
+The game’s weapons are currently being implemented with relevant sound effects and the first audio passes on in-game VFX began, such as lightning strikes.
+The tech required to implement sound into cinematics was also completed, with the team breaking down the effect requirements for chapter one to bolster the impressive cinematics with impactful audio.
+Code and tech work continued on the walla system, and numerous bugs were fixed too.
+## Engine
+On the renderer, transitions toward the final version of Gen12 continued. This included enabling the RenderGraph, which can utilize the GPU better with less CPU cost. The team also removed several legacy GPU access APIs, including MapAndWriteDiscard, which won’t be supported by Gen12 due to low-level code complexity.
+Furthermore, the streaming system received improvements.
+“We no longer need to maintain a separate code path and instead update all our objects from within the rendering callback. This reduces code complexity, as we only need to maintain a single code path going forward, and reduces memory consumption as well.” Engine Team
+The team then added more strict debug modes and high-level checks for the ECUS code to detect and report potential race conditions earlier. Also on the entity-system side, more strict checks were added to entity access functions to ensure they only happen on threads where it’s permitted.
+## Gameplay Story
+The Gameplay Story team supported a performance-capture shoot and made improvements to a range of scenes across the campaign.
+The team then used some of the new motion-capture data to create a scene with a key character entering and using an airlock. A long start idle was also added to a three-person scene early in the game, a console interaction was improved, and props were fixed and polished for a large mess-hall scene.
+A new way to trigger lines while animations are already playing was documented so it can be used in other areas across the game too.
+## Graphics & VFX Programming
+In September, the Graphics team progressed with several in-development features. For example, the new water-simulation and rendering systems now have their fundamental building blocks complete and are currently being balanced to ensure they look good under the game’s huge variety of conditions.
+The R&D on Global Illumination was merged into the main branch to see it working across various locations.
+Work also continued on features such as fire support for entities, a screen space occlusion effect for gas clouds to increase their lighting detail, and support for Maelstrom, the new physics destruction system.
+## Level Design
+The Level Design team continued to make progress on their Idris interstitials. Along with the usual bug fixing and scene iteration, they completed the backend of the Reputation system. Now, the Idris crew will track a player's reputation via interactions. For example, selecting a negative, neutral, or positive conversation option, or walking off mid-conversation.
+The team then moved on to Fortunes Cross, using the background AI to enhance its “past-its-sell-by-date shopping mall at 4 am” aesthetic. For example, they added NPCs lazily eating noodles, wearily sipping on a coffee, and carrying out shady transactions.
+They also completed additional work on a social section in chapter one.
+“We have our narrative scenes set up but, to reinforce the tone, we now have the background crew carrying out maintenance and repairs, watching frontline reports, and writing messages to loved ones.” Level Design Team
+## Narrative
+Narrative spent the first half of the month supporting the recent performance-capture shoot. They also continued to meet with the various level designers and leads to make final tweaks based on the latest level updates.
+“It was an intense three-week shoot, but it yielded some fantastic performances and moments that will really enrich the overall experience. During the shoot, we also welcomed back some of our original supporting cast for some final pickups.” Narrative Team
+The footage captured at the shoot is currently making its way through the content pipeline as editorial selects are pulled and passed along to the Animation and Audio teams.
+Additional wildlines based on combat-AI feedback and Vanduul content were also captured to fill in areas and supply more specific dialogue to support gameplay.
+With the shoot complete, the team continued tackling many of the game’s text needs, from Galactapedia entries to environmental storytelling and collectibles. The team is also passing along script revisions to the Localization team.
+## R&D
+The R&D team worked on a variety of important updates to the game engine that will be shown to the community soon.
+## Tech Animation
+Tech Animation supported numerous teams across the project with a wide variety of animation tasks, including asset implementation and maintenance.
+Great progress was made on creating and implementing creatures. As part of this, work was done on toolsets for rigging and physics proxy authoring and implementation.
+Comms calls and dialogue were a major focus in September too, with the goal being to create content at speed.
+“This has been hugely successful and collates many lengthy manual processes into a singular toolset with a great user interface.” Tech Art/Animation Team
+Finally, they continued to provide additional faces for the game to source from, providing much more variation to NPC populations.
+## UI
+The UI team looked at conversation text, updating its style to match the rest of the game-level screens, such as the radial menus. And, after a lot of iteration trying to find the perfect style, a direction for the Drake cockpit UI was unanimously approved and will soon move into production.
+The team also began adding ‘AI fluff’ screens into some of the main levels of the game.
+“Overall, they look great, though we’ve spotted a few areas for improvement and have been working on adding some extra variety as well as improving the underlying system so that we can use a single design on differently shaped physical screens. For example, we can make an engineering screen that fits on portrait, 16:9, or super-widescreen terminals in the level.” UI Team
+The team also polished the visuals and ironed out issues with the visor and vehicle HUDs as they’re used in-game and come up against unexpected situations.
+They’re currently polishing the map and radar systems, improving the visuals and usability.
+## VFX
+Last month, VFX continued working with Art and Design on several locations, helping to add extra polish. They also continued fine-tuning the fire-propagation effects.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

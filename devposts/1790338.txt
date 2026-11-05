@@ -1,0 +1,79 @@
+## Bug Fixes
+- Pressing "L" while dead in Star Marine should once again open the loadout screen.
+- Rejoining a Star Marine match should no longer disable a player's ability to capture a point until the following round.
+- Proximity alert should no longer cancel the Lorville restricted area warning, causing it to not return.
+- The overcharge sensor should properly reset when mining and moving from one rock to another.
+- Recco should properly remember that she has met you.
+- Impact prediction (pips) now make better use of acceleration.
+- When pads are full and a player requests a ship, they should no longer be given a queue position of 0.
+- AI contacts should clean up properly on the ship radar.
+- The mining laser should no longer become heavily offset on occasion.
+- The player's sit position should now be correct in the Valkyrie's jump seats.
+- QT graphical effects should no longer be visible inside some ships.
+- The Dragonfly should now have a self destruct timer and message.
+- Ship weapons should now behave correctly according to power distribution.
+- Corrected some mislabeled lagrange points.
+- Fixed an issue where the GForce blackout effect was stronger than intended.
+- FPS AI should no longer get stuck if a player exits through an airlock.
+- NPCs at Lorville should no longer be standing on benches.
+- Zooming while in interaction mode should now be centered on the cursor.
+- The Anvil Arrow's missiles should no longer be floating beside it.
+- The player character should no longer get a boosted jump by jumping a few times in a row.
+- Fixed elevators in Levski appearing invisible from certain angles.
+- Patrol missions should consistently work now for updates.
+- NPCs should now be properly be moving in the borehole corridor.
+- Landing rights should now be revoked if the player leaves the ATC area.
+- Fixed multiple Lorville guards occupying the same space.
+- Fixed some areas of Lorville L19 that had double gravity.
+- Ships should no longer be cleaned up/stored at outposts.
+- The Anvil Arrow should now consistently appear on the ASOP if the player owns it.
+- The Mustang series ships should no longer spawn with the ladder down.
+- The landing gear and wing folding should now trigger properly on the Mustang series.
+- Larger ships should no longer be occasionally assigned small hangars at Lorville.
+- Guns dropped by players should be cleaned up before the next round in Star Marine.
+- Flight and throttle animations should play for all ships.
+- The player should no longer be transported to map origin when in the driver's seat of a Greycat when it explodes.
+- Fix for HMC Ryder having no waypoint on ITA.
+- Fix for HDMS Anderson being missing on Aberdeen.
+- Players should no longer be able to eject from Valkyrie as it isn't intended.
+- The ship HUD and MFDs should no longer reload when the player switches from 3rd to 1st person.
+- Admin clerks at rest stops should now interact with players.
+- Chat lines should longer exceed the bounding box of the mobiGlas comms app.
+- The Venture Executive flight suit should no longer function as an invisibility suit.
+- Blade entry animations should now be properly aligned.
+- The Cyclone should now have surface sound effects when maneuvering.
+- Slightly toned down the heat haze effect on Daymar.
+- The snow effect on Yela should no longer appear inside outposts and ships.
+- 100% full mining container indicator should now have a consistent color.
+- Adjusted the rear door of the Avenger's ramp so it reaches the ground.
+- Toned down the Lorville hangar ambient audio.
+- Ship loadouts should no longer be locked permanently after spawning a ship in the PU.
+- The Arrow turret can no longer be placed onto any weapon hardpoint.
+- The targetting UI should no longer remain on after a target is destroyed.
+- The shield display on the CVI should no longer be significantly delayed updating from real time.
+- ATC audio should play correctly when requesting landing at Lorville.
+- Fixed markers not appearing for some delivery and bounty missions.
+- Fixed objectives not updating for some delivery missions.
+- Vehicles spawned should no longer appear to move erratically.
+- ATC should no longer be buried at the bottom of your contacts on the ship comms MFD.
+- Turrets should no longer experience snapping when rotating while their parent ship is rotating.
+- Ship turrets should no longer snap rotation to the other limit when crossing 180 degrees.
+- Turret slots should now be editable for the Constellation, Caterpillar, and Cyclone TR on the VMA.
+- The Karna magazine should no longer be mislabeled as Demeco.
+- Rifles should no longer clip into the player when they are crouched.
+- Players should no longer take damage on stairs, when mantling, or when making small jumps.
+- MFD focus should no longer cause the screen to become blurred.
+- The UI alert "shields down" should no longer get stuck.
+- The admin office at Lorville should now have atmospheric pressure.
+- Patrol missions should now update after the "hold" instruction.
+- Orbital markers (OMs) should now properly rotate with the parent planetary body.
+- Adjusted no-fly zone visual so it should no longer clip into hangars.
+- The admin clerk's idle animation should no longer be dramatic enough to cause the player to select the wrong interaction.
+- Players should no longer be able to lose their box if they immediately place it back in the delivery locker.
+- The player should no longer be placed underground after ship cleanup at Lorville.
+- There should no longer be replaceme balls inside Teach's Ship Shop.
+- While searching for a player the FPS combat AI should no longer stop frequently and hitch.
+Technical
+- Fixed 7 client crashes.
+- Fixed a server crash.
+- Various performance tweaks.

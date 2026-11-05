@@ -1,0 +1,36 @@
+## Feature Updates
+Locations
+- Underground Facilities - Rastar Update
+Rastar is a tool which is used to quickly build POI’s on planet surfaces by combining pre-built modules together at the click of a button. They also change the way which mission locations are setup and streamed in, essentially, they are the future of creating planetary locations. This update moves all our original UGF’s over to the new Rastar tool workflow. All UGF's have been replaced in the same positions as they were previously, with the settings they previously had applied to them reapplied where appropriate. This means functionally the current locations should be no different than they were before on the mission side of things and also art wise should be the same barring some minor adjustments to the exterior layout of each location.
+Gameplay
+- Wheeled Vehicle Handling Improvements
+Updates and improvements to current ground vehicle movement parameters and simulation, allowing for more robust tuning and identity between various ground vehicles.
+- AI Ship Difficulty Rebalance
+Until now, there has been a very small pool of ships available for use as AI in missions. With this new change we have included every ship able to QT into the mix for both Criminals and Civilians, though some that didn’t make sense for Criminals have not been added, like Cutlass Blue for instance. This update includes a full AI Ship Rebalance of difficulties. Ships have been divided into difficulty bands which have mainly been derived from large data sets based on PVP analytics. Finally, we have also made a new ship difficulty band of Very Hard which is now reflected in the Very Hard bounty/assassination missions.
+- Vaulting & Mantling - Air Ledge Grab Improvements
+Implementing updated Vaulting & Mantling improvements that make the process much more smooth and intuitive for players. This update allows players to now be able to grab ledges while running and jumping, low/high vault while running and/or in mid-air, and allows low/high mantle while running and/or in mid-air.
+- Server Crash Recovery QoL Update
+Server Crash Recovery has been updated for PES to now remember the last location the ship hailed for landing and landed/docked at. This will allow players who hit a server crash to have their ship spawn back at the last hailed location instead of their chosen home location where the landing area may not be equipped to handle their ships, such as a fully loaded or extended Hull-C.
+- Anti Combat Logging
+Along with 3.20, we have added a new Combat Logging mechanic to avoid as much of this issue as possible. With this updated mechanic, while a player is in combat and outside of a green zone, the player and their ship will remain in the PU for a short period after exiting the game fully or to the menu. This also comes with a warning while exiting to menu to make sure you are in a safe area before leaving as it will leave your ship and character vulnerable at the location they left the server.
+- Notifications and Communication Settings
+We have added multiple new options to help control what notifications and comms you will receive from other players. This includes blocking comms calls from non-friends as well as block friend requests, notifications from friend requests, party invites, and aUEC transactions.
+- Ship Quantum HUD Alignment
+We have done a full pass on all ships to make sure all the Quantum HUDs have been properly aligned in view. Along with this, much of the Quantum UI has been removed to be much cleaner and remove unnecessary elements until a full, future quantum HUD update.
+- Argo MOLE Pilot Improvement
+Added the ability for the Pilot in the Argo MOLE to use the ships mining scanners. This will not allow the pilot to use the lasers from the seat but will give the pilot the much needed information directly while scanning mineables.
+- MFD Persistence
+Custom Vehicle MFD selections should now persist for as long as you keep the vehicle intact. Players should only have to set MFD menu selection once per vehicle but losing and insurance claiming it will create a new vehicle, thus losing the saved custom MFD.
+- Mobiglas Background and Darkness Occlusion
+Visual updates to help the mobiGlas more readable on bright backgrounds. Vehicle/Ship HUD and other selective UI is now hidden while opening the mobiGlas in a pilot seat.
+- Mining Stability and Polish
+Enhanced lifetime of ROC coolers to help adjust them overheating while in use and breaking down too quick.
+Ships and Vehicles
+- Greatly increased the internal storage of the Drake Corsair
+Core Tech
+- Keybinds Updates for 3.20
+There have been many changes to default keybinds in this latest 3.20 update including removing some as default keybinds. Activate Ping changed to hold & release V, Flight ready changed to Right Alt+R, Decoupled mode moved to C, Cruise Control moved to Left Alt+C.  (Please note: The default keyboard visual has incorrect bindings shown for this release. Please reference the "Advanced Controls Customization" for full list of updates.)
+- Updated EAC SDK to 1.15.5
+- Made Several Server Performance Improvements
+- Made Further Planetary Performance Optimizations
+- Made Further Engine Rendering Performance Improvements

@@ -1,0 +1,54 @@
+## Star Citizen Alpha Patch 3.23.1a
+Alpha Patch 3.23.1a has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.23.1-PTU.9188344.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+At this time, this update does not contain data that requires a new environment and we are working to keep it that way until it is released to LIVE. Players should not lose items such as medpens, ammo, rentals, and refinery jobs when the build is released to LIVE.
+Audience: Open PTU
+Server Info: PTU Channel - US Servers Only
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+3.23.1a is highly focused on Jumptown, Xenothreat, and Exploit updates. We will be Jumptown starting shortly after the build is released and throughout the PTU Cycle
+- Stability/Performance/Bug Fixing
+- Jumptown
+## Known Issues
+- PU - Hurston - Locations / Mission Content - Jump Town - Echo Isle (Hurston JT) location missing
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals for ground vehicles at Lorville gates get stuck on infinite load, accessing list of ships (fixed in 3.23.2)
+- PU - Locations - Transit - Elevators - Internal Transit Elevator shows up when called but doors remain closed, no carriage
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Locations - Jump Point Stanton-Pyro - Transit - Elevators at pyro jump point cannot be called
+- PU - Locations / Vehicles / VMS - Can't repair/refuel/restock at Pyro Gateway Jump Point Station
+- PU - Locations - Distribution Centers - Security Checkpoint elevator vis area and missing collision
+- PU - Stanton - NPE - Missions - Objectives can be softlocked by player leaving bed before their objective record has updated
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - RSI Scorpius Antares - Vehicles/EMP - unable to activate EMP
+- Reclaimer Claw Cannot Deploy: Power Required Error Message (Workaround: Press the power button a second time)
+- AC - Squadron Battle - Friendlies showing up as enemies
+- AC - Pirate Swarm - Player unable to spawn/choose deployment options into game after match start countdown
+- AC - Grav Race - All Maps - Low gravity can launch players far above the track when hitting bumps or hills
+## Features and Gameplay
+Ships & Vehicles
+- Increased Sabre Firebird missile count from 12 -> 24
+- Sabre Firebird ARMR has been modified to reduce all emissions by 40%
+- Updated Retaliator to have Size 3 guns on all turrets and updated turret constraints
+Core Tech
+- Removed vehicle entrance markers when in a different zone or too far away
+- Made Further Client Performance Optimizations
+- Vehicle Hit Damage Network Performance Optimizations
+## Bug Fixes
+Volunteer Bug Fix Survey: https://forms.gle/kEnExgFuZCTWkaVt9
+- Fixed an issue causing clients to experience a generic 30000 error and disconnect when loading into the PU (STARC-110129)
+- Fixed AI's reacting to non-hostile players firing causing them to not get an attention target
+- Fixed - PU - All Ships - VFX Content - Ship shield effects do not play correctly
+- Fixed - Multivehicle - PU - Vehicles / UI - Exit/Get up prompt is missing from beds (STARC-108578)
+- Fixed - PU - Missions - Halt illegal Survalance - destroying the illegal probes causes players to have crimestat (STARC-110004)
+- Fixed precision targeting gimbal mode active without being in precision mode
+- Fixed - AEGIS Retaliator - PU - Vehicles / Room System / Actor Status - Asphyxiation - Asphyxiation issues present in different locations of the ship
+- Fixed - GRIN Pyro Multi-Tool - PU - Weapon / Controls - Multi-Tool's Tractor beam attachment forces weapon sensitivity depending on lifted weight (STARC-111034)
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 1 Server Crash
+- Fixed an OOM - Out of system memory Client Crash

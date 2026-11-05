@@ -1,0 +1,59 @@
+## Star Citizen Alpha Patch 4.7
+Alpha Patch 4.7 has been released and is now available to test on the PTU environment!   Patch should now show: VERSION 4.7.0-PTU.11485118.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+## Testing/Feedback Focus
+We are expecting blueprints from the previous two PTU builds to save and appear in tonight's PTU build.
+- Stability, Bugfixes, LTP between PTU releases
+- Operation Breaker Stations and QV Breaker Stations locations
+- Inventory Rework
+- Crafting Fabricator and Blueprints
+- Engineering Updates
+- Radar Assisted Targeting (Radars components in shops will be arriving in a future PTU patch)
+- Nyx Social Stations
+Known Issues
+- The main front elevator of the 890j has been temporarily disabled pending further fixes
+- Multi-System - PU - ASOP Terminal / Locations - Moving the mouse cursor over a different vehicle in the ASOP when attempting to deliver a specific vehicle will deliver the different vehicle instead
+- Multi-System - PU - ASOP Terminal / UI - There is a chance that a blank information of the Vehicle may appear on Hangar Delivery Request using the ASOP Terminal
+- PU - Nyx/Levski - Transit - Going prone whilst in a moving Limbo Elevator Carriage, will cause the player to fall out of the carriage
+- PU - Starmap / MobiGlas / UI - Starmap is zoomed into the ship when in a cockpit instead of showing the system or region of space in
+- PU - Inventory Rework - UI - Inventory does not update Capacity and Space changes in Personal Inventory
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+## Features & Gameplay
+Gameplay
+Operation Breaker Stations Polish
+Further LOD, performance, and lighting optimization. Removed ability to set and respawn at QV Breaker Stations medical beds. Fixed various holes around the exterior of the location.
+Inventory Redesign
+Further lighting and shadow visual polish. Updated support for mining gadgets and radars.
+Crafting
+Further fabricator and crafting audio inclusions.
+Core Tech
+VR Updates & Fixes
+Cursor wasn't working in a ship with mobiGlas in Vehicle view due to a filtered action. Rewrote the cursor again but this time moved everything into StereoFramework for easier maintenance. The cursor is now being controlled directly via mouse and no longer via actions. Won’t block any inputs when the vr cursor isn't active.
+## Bug Fixes
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues
+- Potential Fix: PU - Multi-Item - Crafting - Mining - Inventory / Harvestables - FPS Mineable of the same quality are not stacking in the inventory (STARC-194028)
+- Potential Fix: Multi-System - PU - mobiGlas / UI / Starmap - The Starmap flickers when the player zooms in / out and moves across the map (STARC-198280)
+- Potential Fix: PU - Hand Mining - Stacking minerals upgrades lower quality to higher quality minerals (STARC-199598)
+- Potential Fix: r_DisplayFrameGraph console command is disabled (STARC-198487)
+- Potential Fix: PU - Pyro - Checkmate - Interactions / Locations - Contested Zone Airlock Access does not cycle and not allowing players to access the Contested Zone (STARC-199120)
+- Potential Fix: Multi-Item - PU - FPS Weapon / Crafting - No materials are produced after dismantling Ammo using the RediMake Item Fabricator
+- Potential Fix: ARGO MOLE - PU - Vehicles / Components / Mining - Physics - Bags can't be snapped / reattached back on to the ship after removal (STARC-198068)
+- Potential Fix: ARGO Moth - PU - Vehicles - ARGO Moth side turret windows are missing collision
+- Potential Fix: MISC Hull C - PU - Vehicles - The Hull C spindle is not able to be deployed / retracted (STARC-198420)
+- Potential Fix: RSI Aurora LX - PU - Vehicles - Aurora LX ( GOLD STANDARD ) atmosphere reentry effects applied upon vector change anywhere in atmosphere (STARC-194331)
+- Potential Fix: PU - RCD - Missions / Locations - Refractor Beam codes do not work after server error (STARC-199459)
+- Potential Fix: PU - Nyx - RCD - Locations / Art / Proxy - Breakable Ice entity visibly stays intact after shooting icicles (STARC-198248)
+- Potential Fix: PU - Nyx - RCD - Locations / Starmap - Local map missing from the Starmap / Minimap for QV Breaker Stations (STARC-198791)
+- Potential Fix: PU - Nyx - RCD - SFX / Audio / Mission Content - Laser Firing announcement triggers and repeats on a loop upon entering the Mining Laser room before powering up Operations
+- Potential Fix: PU - Nyx - RCD - Locations / Design / Interactables - Lens hopper is open whilst a lens is present in the printing slot after a reset
+- Potential Fix: PU - Nyx Mission Pack 2 - Delivery Pilot / UI - Collect objective will stay active after collecting the mission items
+- Potential Fix: PU - ASD Delving - Phase 3 - Missions - There is a chance the Terminal will say "Not Authorized" on download despite completing the required puzzle objective (STARC-179897)
+- Potential Fix: PU - Pyro - Storm Breaker - Lazarus Complex - Locations / Interactables - Code is missing for Security Room 04 of Lazarus Complex
+- Potential Fix: PU - Missions / AI / Locations - DC - Courier - Players can be considered trespassing during Courier missions at Distribution Centers (STARC-199419)
+## Technical
+Tonight’s build has further Nyx entity count updates to help reduce unintendedly high amounts
+- Fixed 1 Client Crashes
+- Fixed 7 Server Crashes
+- Fixed a Main-Thread Deadlock

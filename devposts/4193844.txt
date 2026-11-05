@@ -1,0 +1,4 @@
+We'll have the following changes in one of the next upcoming patches:
+1) Shield regen (!) delay on capacitor assignments is removed. There is still a 2.5s delay on establishing the shield resistances (so that you will not have any resistance for the time after you changed the assignment). Currently though there is no UI for it. :disappointed:
+2) We cut off 0.5 seconds from all weapon delays.
+3) We removed the delay when the weapon is already regenerating and you increase the weapon assignment. That specific delay was not really supposed to be there, it was just an artifact from the system. The normal cooldown (when weapons request to be generated) is still there though.

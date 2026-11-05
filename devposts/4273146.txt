@@ -1,0 +1,47 @@
+## Star Citizen Patch 3.14.1
+Alpha Patch 3.14.1 has been released to the LIVE environment, and is now available to test!   Patch should now show: VERSION 3.14.1-LIVE.7721742.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+- Upon launching the game, the player may receive a 16008 error (Most likely requires a character reset and logging out of the launcher)
+- After a server connection timeout (Error 30K), a "Bad Token" error may be presented, preventing loading back into the Persistent Universe (requires game restart to workaround issue)
+- Star Citizen may crash immediately after pressing "Launch Game" in the Launcher (Recent potential app conflicts: Acronis Active Protection, Comodo, Sonic Studio Contact RSI Technical Support if the issue persists)
+- Elevators or environment content will occasionally be missing in the PU
+- Players are unable to leave a party from the Main Menu (Workaround: Open Star Marine Multiplayer (any mode) > select "Invite" > select "Leave Party" > exit back to main menu)
+- The chat window is positioned too low to be fully readable whilst in a vehicle on Ultrawide monitors
+- Using a medipen may occasionally have no effect
+- Swapping FPS weapons drops or removes the original weapon
+- Mineable commodities data in Scan Mode displays incorrect Percentage Values
+- The player may become unable to open Hammerhead turret doors, leaving them trapped inside
+- Constellation Andromeda co pilot unable to target while in missile operator mode
+- Elevators at Grim Hex fails to complete animations and elevator can lose functionality
+- Search missions such as shipment lost and lost cargo do not update once the player has collected the cargo box
+- Unable to complete box delivery missions in Area18, as kiosk rejects boxes
+- Distortion weapons can lead to the friendly fire threshold being met in only a few shots
+- Demon Fang Combat Knife asset is missing from the game
+- When entering the pilot's seat of the 100i, the animation may not complete, leaving the player facing away from the windscreen
+- Occasionally, the Quantum Drive may start spooling with no known cause
+- Sometimes, after spooling and calibrating the Quantum Drive and attempting to initiate the jump, nothing happens (Workaround: Move ship reticle away, then move back to recalibrate)
+## Feature Updates
+Ships and Vehicles
+- Increased the power plant of the F7C-R Hornet Tracker
+## Major Bug Fixes
+- Fixed an issue causing characters to get soft reset and lose location and reputation progress after doing different things such as updating items on the hangar page, renting ships, and various other circumstances.
+- Editing PMA After Changing mobiGlas case should no longer prevent mobiGlas functionality
+- Players should now be able to insurance claim ships on the ASOP terminals
+- Fixed an issue that could cause players to get an infinite load when logging back in after use bed logouts
+- 'You are here' marker should now appear correctly on the star map
+- If a player crashes within the armistice zone they should no correctly persistent spawn back inside their ship without having to claim their ship
+- Weapon capacitor at 90% should no longer disable 600i weapons
+- Weapons with splash damage should no longer cause aggravated criminal assault far faster than conventional weapons
+- Delivery boxes from legitimate delivery missions should no longer be considered stolen goods by security patrols
+- Fixed an issue causing players to become stuck and invisible after leaving prison
+- Fixed an issue that allowed players to create multiple amounts of refinery jobs from the same materials
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 9 Server Crashes
+- Further fixes for entity stalls that could cause desync
+- Fixed 5 Backend Service Crashes
+- Fixed multiple Backend Service Memory Leaks and timeouts

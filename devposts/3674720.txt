@@ -1,0 +1,3 @@
+@Damatheus,
+interesting idea. I don't think that works for continuous head tracking. Think about going up a round stairway or similar ... at some point you will reach the end point of your head movement.
+What we could do instead maybe is using the hold function of head tracking (it is a separate binding that allows you to enable head tracking only as long as the key is held down) and hook it up so that when you let go of the key, your actor would turn into that direction in which you last looked at. That is probably more suitable for FPS gameplay.

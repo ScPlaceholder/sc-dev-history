@@ -1,0 +1,45 @@
+## Star Citizen Patch 3.13.1g Hotfix - 7419754
+- Fixed an issue causing the Nova Tonk to crash servers
+- Tram doors at New Babbage should now consistently open when at stations
+- Fixed a Client Crash
+## Star Citizen Patch 3.13.1g
+Alpha Patch 3.13.1g has been released to the PTU, and is now available for all backers to test! Patch should now show: VERSION 3.13.1-PTU.7419525.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Audience: All Backers
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Stability and bugfixes
+- Fleet Week Playtest
+Known Issues
+- Players may cause damage to ships when exiting or entering them
+This build has extra logging to help track down the cause of ships taking damage when players exit or enter them. We would love any help trying to track this down and in this latest build if you could use the command to show the QR code info using "r_DisplaySessionInfo 1" and give us video of the issue happening or screenshots right after it happens with the QR code present that would be amazing. Thank you!
+Nova Tonk is currently disabled for spawn due to an issue with this build
+- Customizations made on the RSI Website are missing in-game for the 300 series
+- Items missing after update / Character Reset / pledge change
+- Abnormally long delay between pick up storing of fps mineables/harvestables/items
+- Players may not be able to quantum jump with another player in bridge with you
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Constellation can despawn when flying 30km away after undocking
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+## Fleet Week Specific Updates
+- Further Performance and Lighting Polish pass on Javelin, Bengal, and expo halls
+- Bug Fix - Fixed a pricing issue with the dynamic trading profits that allowed some commodities to give much more than intended profits
+- Bug Fix - Fixed an issue where players could become trapped between Tourists in the Javelin Doorways
+- Bug Fix - NPC marines in the expo hall areas should no longer die after a period of time
+- Bug Fix - Bengal should no longer get stuck if knocked off its flight path
+- Bug Fix - Fixed an issue causing the fleet escorts to randomly veer off and back into formation during the Bengal flyby
+- Bug Fix - Fixed an issue causing NPCs to sink into/rising from the floor when in Usables
+- Bug Fix - The Javelin tour trespassing warning message should now appear correctly if players stand perfectly still while the tour is ending
+- Bug Fix - There should no long be missing collision in the Bengal hull between the hulls and the turrets
+- Bug Fix - Tannoy Fleet Week Voice over lines should no longer play in everyone's mobiGlas throughout the PU
+## General Bug Fixes
+- Ship Dialogue lines should no longer overlap instead of queuing or interrupting each other
+- There should no longer be a replaceme ball on the back wall in the Area18 spaceport

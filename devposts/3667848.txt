@@ -1,0 +1,22 @@
+Hello everyone,
+As we approach the release of Alpha 3.12, our teams continue to work on a variety of improvements and bug fixes that you’ll experience soon. Similar to previous Patch Watch's, we wanted to take the opportunity to highlight some of the polish and bug fixing work we’re doing that doesn’t appear on the Roadmap.
+Specifically, the Vehicle Experience Team has continued its work on countermeasures while implementing exciting new head tracking features to make space combat even more immersive. Read on!
+Countermeasure Updates
+- The effect of a single decoy has been weakened, and additive effects come into play. That means if you have a high signature, dropping a single decoy might not be enough to spoof a missile. You have to learn how many decoys you need to drop for every specific ship type. It’s a good idea to keep track of your own signature readout to somewhat estimate how many decoys are needed to create a stronger combined signature than your own ship.
+- Noise-field launchers do not have a lot of ammo, and a single press of "J" will deploy a single field.
+- Decoy launchers, on the other hand, fire their ammo in bursts. The default burst size is one - that means a single press of "H" will release one decoy. You can increase and decrease the default burst size via "RALT+H" and "LALT+H." It’s a good idea to adapt the setting based on the flown ship type. Some ships have a very strong IR signature, so increasing the default burst size before you take off is a good idea.
+- Holding "H" will start an adaptive burst mode. Starting at one, the burst size will increment over time until you release the button again. The decoy launchers will then fire this burst.
+- If everything fails, you can still execute the panic decoy launch. This is unbound by a default and will instead empty 25% of the current magazine size in an effort to overpower the seekers of any incoming missile. Please check "The Reunion Part 1" for a good reference. You will find the key binding under Flight - Defensive.
+- The countermeasure widget on HUD (lower left) will always show you the data of each countermeasure launcher. It will display the type, ammo, and the currently set up burst size.
+Head Tracking Updates
+- With Alpha 3.12, you can now use the translational/positional offsets with your head tracking device. This will work with FOIP Head Tracking, TrackIR, and the Tobii Eye Tracker.
+- This means that inside your cockpit (and while seated in general), you can now freely lean around in any direction (as far as the seat allows it). So, you can move closer to read your MFDs better, look over your shoulder during dogfights, or simply move a bit to the side to get a better view of the landing pad.
+- Please note that positional offsets are only used when you are seated or while using the F4 external cameras. You cannot offset in any direction for more than one meter, though you will notice that there are restrictions in first-person. All movements done via head-tracking will actually control your in-game body, so there are natural limits in how far you can move.
+- For Tobii and FOIP-based head-tracking, you will find options to set a positional scale and deadzones. The scale allows you to scale the input from your movements to the game. So, if you want your movements to be exaggerated in-game, increase the scale. The deadzones, on the other hand, allow you to define a center deadzone in which the positional offsets will not be applied. The deadzone size is given in meters.
+- You also have the option to disable positional offsets completely.
+- Head-tracking recalibration and auto-recalibrate have been reworked. The only exception here is TrackIR, as the calibration is handled outside of the game via the TrackIR tool.
+- We extended the general head tracking options to allow for greater customization.
+- We fixed the "snapping issue" that would cause your actor's view to jump instantly to the other side.
+- We enlarged the movement range for head-tracking devices in seats. Instead of the previous 70-degree limits to the sides, you can now enjoy much higher freedom of movement.
+- All look actions are now suppressed if head tracking is active.
+These are only just a few of the changes coming in Alpha 3.12 that are not listed on the Roadmap. Stay tuned for more updates soon and we'll see you in the 'verse! o7

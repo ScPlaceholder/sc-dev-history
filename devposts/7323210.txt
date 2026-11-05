@@ -1,0 +1,7 @@
+I just have submitted the new fullscreen mode which should arrive in 3.24.3 soon. In this mode the selected resolution will become the base render res and the engine spatial upsample/downsamples it at the end to your native fullscreen resolution.
+Note that the console and some UI like the menu will always render in the native fullscreen resolution. This can be combined with temporal upsampling, e.g. with a 4k monitor and 1080p res and 66% Temporal upsampling the engine renders in 720p before TSR.
+Temporal upsampling min resolution (e.g. DLSS) has also been lowered from 1080p to 720p.
+Note that selecting resolutions with a different aspect ratio than your monitor breaks the UI at the moment. It will be fixed in the future.
+If you still experience any issues feel free to reply to this thread, i'll check on it ocassionally.
+Thanks and fly safe
+o7 Silvan

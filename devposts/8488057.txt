@@ -1,0 +1,70 @@
+## Star Citizen Alpha Patch 4.5
+Alpha Patch 4.5.0 PTU has been released and is now available for Wave 1 testers! Patch should now show: VERSION 4.5.0-PTU.10840216.
+- Audience: Wave 3
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Engineering, Armor, Ship Balance
+- Vulkan Renderer and Graphics Settings Updates
+- Physicalized Helmets
+- Snub Fighters and Interceptors balance pass
+Not ready for Testing and Feedback
+Updates located here are in partial working state and may be subject to removal from this release. At this time we aren’t requesting feedback for these until the feature is closer to ready.
+- FPS AI Improvements
+- Ship Light Amplification Detection
+- PU Loot Refresh/Collector Rebalance
+- Additional Hairstyles
+## Known Issues
+- PU - UI / Gameplay - Party markers are not with party members
+- Multivehicle - PU - Vehicles / Repair - Ships are instantly repaired to 75% with repair tool and can be repaired from the inside
+- Multivehicle - PU / AC - Vehicles / Engineering / Fire - Fire VFX is not visible
+- Multivehicle – PU – Vehicles / Engineering / VFX - Fire is being detected by some clients and not others
+- Multivehicle - PU - Stanton - Fire - Game Code / Vehicles / Resource Network - Extinguished Fires can suddenly re-ignite and spread rapidly
+- Multivehicle - PU - Stanton - Fire - Game Code / Vehicles / Resource Network / Dynamic Atmosphere - Fires are not Extinguished in 0 Atmosphere
+- Multivehicle - PU - Vehicles / Engineering / Components  - Life Support Components not visible on the engineering screen 3D view or mobiGlas Map
+- Multivehicle - PU - Vehicles / Network - Resource Network / Engineering - Engines turn off after transitioning dgs-mesh authority
+- Multivehicle - PU - Vehicles / Engineering / Components / RN - UI / Kiosk - When using the Engineering Kiosk, the vehicle model can become offset by the actor moving around it
+- Multivehicle - PU - Vehicles / Components / Salvaging - Unable to switch to other component modules while in salvaging mode
+- Multivehicle - PU - Vehicles / Salvage / Art - Salvage Ships are unable to detect the scraping surface and is missing the Scraping Laser VFX
+- Multivehicle - PU - Vehicles - Breached doors and ramps do not reset after the vehicle has been repaired and the player is unable to close them
+- PU - Nyx - Sworn Enemies- Mission Content / Reputation / mobiGlas - " Vanduul-Tech Smugglers " is not available after getting to the required reputation rank
+- PU - Mission Content / UI - Patrol Mission progress halts after reaching location markers
+- PU - Pyro - Storm Breaker - AI / Mission Content / Locations - AI are at the Storm breaker facilities in large quantities
+- PU - Pyro - Storm Breaker - Locations / Missions - Opened safes remain open after 2 hour cooldown
+- PU - Mission Content / Locations / Art - PAF - Multiple assets are missing at all PAF II locations
+- PU - Stanton - ASD Delving - Onyx Facility - P3MM - Mission Content / Locations / Design / Art - Pipe status doesn't update when fully repaired
+## Features & Gameplay
+Gameplay
+Engineering and Fire Gameplay Updates
+Weapon fire rate and ammo damage/speed/lifetime balance to bring them back to 4.4.0 levels. Slight reduction in armor health across all ships. Added health bar to show armor and critical part damage. Power generators can now be repaired to stop the core from going critical. Implement room visualizations on the engineering screen using render layer groups feature. Added status warnings for low power combined with other critical warnings. Further smoke visibility improvement polish.
+Ships and Vehicles
+- Added Krig L-21 Wolf to ship shops
+- Hornet Hearseeker Turret added to shops
+- Fire extinguisher added to shops
+Weapons and Items
+- New Weapons, Armors, Attachments and Clothing priced and added to shops
+- Removed glint from new optics
+## Bug Fixes
+Star Citizen Alpha 4.5.0 currently contains nearly 140 bugfixes for issues occurring in 4.3.2, 33 of which originated from the issue council.
+- Fixed an issue where S2 optics were not S2
+- Fixed an issue with the LH86 having no spread
+- Potential Fix: Volt x1, x2 sight has a sound for mode switch like zoom but no function
+- Potential Fix: Multi-System - PU - Locations / Actor / Animation - Incorrect bed exit animation leads to the actor clipping through the hab wall (STARC-188019)
+- Potential Fix: Multivehicle – PU – Vehicles / Engineering / VFX - Smoke is too thick to navigate inside the vehicle's interior
+- Potential Fix: Multi-Item - PU - Armor / Helmet Props / UI / PIT Wheel - When the player attempts to equip a helmet on the ground through the PIT wheel, they are unable to and are told to remove their current helmet
+- Potential Fix: PU - Pyro - ALL Contested Zones (CZ) - Combat AI / Locations - Some AIs in Contested Zones are missing loadouts
+- Potential Fix: PU - Nyx - Levski - AI / Hostility /Locations - Levski Security Guards target each other
+- Potential Fix: Multi-Location - PU - Stanton - Hangars / Locations / Collision / Physics - The players character is not transitioning to the Distribution Center hangar physics grid when entering it
+- Potential Fix: PU - Stanton - Wikelos Emporium - The Collector 4.5.0 - Locations / Mission Content - Mission " Shiny Builder Suit " has been incorrectly removed from Wikelos Showroom
+- Potential Fix: PU - Front End - Menu / UI / Nyx - The description for Nyx is missing on the location selection screen
+- Potential Fix: Aegis Avenger Warlock - PU/AC - Resource network - Warlock EMP cannot be turned on
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector 4.5.0 - Missions - Art / Interaction - Yormandi Gun is missing interaction points preventing players from accepting mission
+- Potential Fix: PU - Stanton - Engineering Screen - UI  - Doors have Placeholder Names
+- Potential Fix: PU - LTP / Contested Zones - Unequipped Contested Zone items do not persist between patches
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski -  Art / Locations / Physics - Players may bounce or fall through gaps when transitioning between physics zones in Levski Hangar elevators
+- Potential Fix: MENU / PU -  FOIP / VOIP / Options Menu / Camera - Unable to Calibrate the Camera (STARC-186265)
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 1 Server Crash

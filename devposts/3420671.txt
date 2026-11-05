@@ -1,0 +1,3 @@
+The despawn of ships are a real pain in the A** - it was working fine for a few patches, now my ships despawn again as I get out of them for no reason
+The intention was to make more player ships immune to clean up, not less. If you're seeing ships getting cleaned up, please report it to the issue council.
+For the loadout issue, having players able to change the loadout of the ship has some very serious runtime implications that the system is not designed to account for (for example you could modify a ship that is streamed out or very far away from you, or modify a ship in a way that would cause physics intersections). This does not necessarily mean that you will never be able to do that, but for now it is something that can lead to some very bad issues on the server.

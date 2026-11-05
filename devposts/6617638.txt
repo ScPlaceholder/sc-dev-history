@@ -1,0 +1,18 @@
+Heya,
+just to explain a few things, aim assist is done per gun and is calculated based on the angular difference between the barrel and the optimal aim point for each gun.
+The assist values are composed of min angle, max angle and max possible nudge angle.
+A couple of releases we had:
+0.7 / 3 / 3 ... that is quite strong. The criticism of players predominantly flying light fighters was that there was no evasion gameplay for them.
+So a little bit later we tried out this:
+0.7 / 1.5 / 1.5
+For this one we oversteered quite a bit. LF pilots had their evasion back but it made them almost invulnerable to turrets and specifically less experienced players.
+Currently we set it to this:
+0 / 3 / 3 ... this is still less than we had originally but a lot more than in the previous build. The reason for those has more to do with 3.22.1 popping soon and I do not want to find myself in a situation where the MM AC modes are only enjoyable for our upper end PVP players, thus reducing the amount of players playing it.
+Upcoming iterations of that will be:
+- 0 / 3 / 2.25
+- slightly reducing the side strafe accelerations but increasing the down strafe of LFs
+- decrease g-thresholds (i.e. faster exhaustion) on down-strafing
+And then we'll see where we land.
+Just to make clear what our goal here is ... in the past LFs were extremely dominant in mashups. That is supposed to change as we do not want to make any ship archetype a dominant force but rather find ourselves in a situation where every ship class has its place. LFs still need to rely on agility, etc. but they cannot be as invulnerable to turrets and other ships as they have been in the past.
+But frankly we haven't hit that yet and I do believe that the amount of assist plays a big role here. So we'll go through more iterations ... just need to wait for a good point in time.
+TLDR: Yes, we will go through more variations, probably not before 3.22.1 hits though.

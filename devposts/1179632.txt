@@ -1,0 +1,20 @@
+## [3.7.9 ... 3.7.13]
+Fixed
+- Fixing incorrect highlight color when switching threads via bookmarks
+- Fixed being unable to remove other members' custom emojis despite having emoji remove permissions in your community
+- Fixed mobile rendering of elements that were not receiving proper height
+- Fixed message input component incorrectly appearing in lobbies where you have read permissions but no send permissions
+- Fixed missing highlight color on posts made using highlighted roles
+## [3.7.5 ... 3.7.8]
+New
+- Update emoji set to Emoji 5.0 through Emojione 3
+Fixed
+- Fix non-square custom emojis repeat/offset
+- Fixed private lobbies crashing when containing deleted messages
+- Fixed validation error when reordering roles in community settings
+- Fixed non-admins in communities being unable to manage custom roles despite have "manage roles" permission
+- Fixed error when displaying the member who added an emoji in community emojis table
+- Fixed community settings members table throwing errors due to missing role data
+- Custom emojis will now show up in new threads
+- Some emoji aliases that weren't being picked up are now working again
+- Fixed incorrect highlighting applied to thread OP when switching between them using bookmarks

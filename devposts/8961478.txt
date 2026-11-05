@@ -1,0 +1,48 @@
+Hey everyone,
+We’ve seen a lot of reports and feedback come in since the release of Alpha 4.8.1, and the teams are working hard to address the issues you’ve been raising.
+Before diving into the list, we want to acknowledge that some of these issues are having a significant impact on your game experience. Our teams have been spending a great deal of time investigating reports, reviewing logs, reproducing issues internally, and deploying fixes where possible. While some issues can be resolved quickly, generally through a hotfix, others require additional investigation to fully understand and address. We wanted to share where things currently stand on some of the most visible reports. Please note that the list is not exhaustive.
+## :scroll: Currently Investigating
+The following issues are actively being investigated, tested, or reviewed by the team:
+- Inventory becoming unavailable, with backpack, station, and loot inventories appearing empty or inaccessible. We've identified a likely cause and are continuing to work through it with the goal of getting a fix in place as soon as we can.
+- We've seen the reports around docking issues and are actively working to reproduce and isolate the causes behind them.
+- Mined ores disappearing after storing a vehicle. Current investigation points toward resource container values reverting to a previously serialized state after stow/unstow.
+- QV Warehouse loot not respawning or resetting correctly if cargo is looted without progressing through the mission, preventing subsequent players from accessing intended rewards. The team is actively testing potential fixes and reviewing the mission flow.
+- Ironclad oxygen issues affecting multiple rooms: Resolved for most locations, with a small number of remaining reports still under investigation. A more comprehensive solution is planned for an upcoming update.
+- Crafted item stats not always appearing in item descriptions while inside inventory spaces, making it difficult to verify item properties after crafting.
+- Refueling notifications and Helpful Hints can become stuck and prevent notifications, party invites, mission shares, and other UI prompts from appearing correctly. The following workaround could help you out while we're working on a solution: Enable Helpful Hints and Keybind Hints in the Game Settings, close the menu, reopen it, then disable both options again and close the menu. Notifications should begin functioning normally again, though previously queued notifications may still appear afterward.
+- Shard lock issues preventing some players from joining or remaining connected to sessions. This remains one of our high-priority investigations. We've already identified and addressed several contributing issues, and the team is continuing to work through additional fixes.
+- Drake Command Module playing Quantum Travel spooling audio when spawned or streamed while attached to a host vehicle. This issue is known and under review for a future update.
+## :hourglass: Pending Implementation
+Potential fixes pending implementation to the Live version, fixed internally:
+- Fuel nozzles on ships cannot be detached and swapped.
+- Starfarer refuel exchange displaying incorrect values between microSCU and SCU.
+- Players can asphyxiate inside the Drake Command Module despite having a helmet equipped.
+- Pressure and temperature levels can spike drastically during navigation in the Drake Command Module due to atmosphere-related issues.
+- Players can experience high pressure levels in certain areas of the Ironclad after undocking and re-docking the Command Module.
+- Ironclad tractor beam range of motion and camera controls have been improved for better usability and cargo handling.
+- ROC, ROC-DS, and Prospector mining heads now align more accurately with the mining reticle, improving mining precision.
+- Visual issues affecting Banu Defender and Aopoa Khartu-Al paints have been resolved.
+- Players can once again exit the Argo MPUV Tractor pilot seat reliably using standard exit controls.
+- The MIRAI Guardian radar display orientation has been corrected.
+- Material issues affecting the front hull of the MISC Prospector have been fixed.
+- Material issues affecting the Stinger canopy and HUD have been fixed, reducing excessive visual artifacts from rain and wear effects.
+- F7 Mk I turret weapons now persist correctly and can once again be swapped as intended.
+## :white_check_mark: Fixed
+The following issues have been fixed in the current Live version:
+- Drake Command Module unexpectedly undocking during Quantum Travel or general flight. Fixed in 4.8 11904230.
+- Aegis Tiburon tracking pips jittering out of position. Fixed in 4.8 11930495.
+- Syulen interaction buttons being difficult or impossible to use. Fixed in 4.8 11940252.
+- And more recent fixes in 4.8.1 LIVE - Hotfix 11952564.
+## :eye: Additional Reports We're Tracking
+The teams are also working hard on the following issues:
+- Freight Elevators becoming stuck in personal hangars and blocking cargo access.
+- Freight Elevators becoming stuck at outposts, preventing hauling missions from being completed.
+- Missing Quantum Markers impacting navigation to destinations across the PU.
+- Missing Jump Point markers after transiting in the Ironclad.
+- Ironclad atmosphere inconsistencies affecting environmental conditions aboard the ship.
+- Extremely low interior temperatures being reported inside certain ships.
+- Command Module radar displays failing to appear in some situations.
+- Moving an undersuit into inventory causing equipment functionality issues.
+We'll continue to share updates through our Patch Notes threads and on Spectrum. For known issues and available workarounds, the Known Issues thread remains a great resource and is regularly updated as new information becomes available.
+We'll also continue to keep you informed through the Status Page whenever degraded performance is detected. This doesn't necessarily mean a server outage has occurred, but rather that we're investigating elevated error rates or other service disruptions that may be impacting the experience.
+As always, thank you for your reports, especially on the Issue Council, as it plays a crucial role in helping us identify, investigate, and resolve issues.

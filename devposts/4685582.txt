@@ -1,0 +1,12 @@
+IR / CS / EM
+The left number for each signature is your ships total emissions ( including all items and modifiers ).
+The right number for each signature is your observed ambient levels ( room system / nearby / counter measures / and so on - and soon asteroids ).
+Roughly 1 emission level is approximate 1 meter of detection. This can very a bit depending on the radar but for the sake of this example we can assume 1 to 1 ratio.
+Additionally, radar and ping can pierce through ambient, but again lets assume 1 unit of ambient reduces 1 unit of signature.
+So if we are emitting 2000 IR. Then a radar with IR can see us at 2000 meters.
+If you have 1500 IR ambient then most likely someone can see us at 500 meters ( 2000 emission - 1500 ambient ).
+With this information at hand (in your picture above), 5698 is units of emission being generated and 4612 is the ambient value at your location. So under an 1 to 1 approximation, then 5698 - 4612 = 1086 meters is approximately how far out someone can detect your IR. Again, this also depends on the other radar system as the units can very a bit but not dramatically ( exception is ping since it shows you where you are and where the pinger is ).
+If you want the entire formula then its roughly:
+DetectedSignature = (EmittedSignature - (Ambience x (1 - RadarPierce)) )  x RadarSensitivity
+If any DetectedSignature  >= DistanceToTarget then you can observe it on radar/ping.
+Should note some signatures like cross-section generate a different EmittedSignature based on the rotation of the ship to the radar. So its more of an approximation of your highest value which can be observed from another party.

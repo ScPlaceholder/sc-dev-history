@@ -1,0 +1,82 @@
+## Star Citizen Alpha Patch 4.3.1
+Alpha Patch 4.3.1 has been released to all waves!   Patch should now show: VERSION 4.3.1-PTU.10228504.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing Focus
+- Stability & Bugfixes
+- Onyx Facilities Part 3 (Only partially in with further sections of Part 3 coming in a later 4.3.1 PTU build)
+- MedGel - Medical Respawn Resource
+- Dropships & Watch Towers
+- VOLT LMG "Fresnel"
+- Ship Armor and Ballistic Damage changes
+## Known Issues
+The issues below are meant to help give a better indication on things that may happen during gameplay and do not always occur 100% of the time.
+- PU - Stanton - ASD - Location / Respawn Screen - Player will be rescued and respawn back at the facility after being incapacitated
+- PU - Stanton - ASD - Contract Manager / mobiGlas - Phase 3 Missions are not available (Partial Chance)
+- PU - Stanton - ASD - Onyx Facility - Design / Locations - Players are unable to heal on one of the medical beds in the transit lobby medical clinic
+- PU - Actor / Interactions - Inserting MedGel cannister into Medical Kiosk Receptacle removes player ability to interact
+- PU - Stanton - Mission Content / Game Code - Multiple missions don't progress after reaching the mission location
+- Multi-Location - PU - Pyro - AI / Locations - Turrets at Farro Data Centers are not firing
+- Multi-System - PU - Multi-Location - Ladders V2 - Traversal / Actor / Mantling / Locations - Player is unable to mantle ladder from the top to climb down
+- Multi-location - PU - Stanton / Pyro - ASOP / Locations - ASOP Terminal inside hangar remains in spinning loading screen after destroying ship on pad
+- ARGO ATLS  - PU - Mounts / Cargo / Tractorbeam - The ATLS is unable to pull cargo off a ship's cargo grid after it is moved from place of origin to new location
+- PU - Stanton / Pyro - Armor / Loot Box / Inventory / Actor - Equipment and armor dropped on the ground will be suspended in mid-air making them unable to be interacted with
+## Features & Gameplay
+Gameplay
+Onyx Facilities
+Onyx Facility Polish and Further Mission Inclusions for Science Wing that delves further into the story.
+Ships and Vehicles
+Armor and Ballistic Damage changes
+In order to enhance the overall ship ballistic weapons in game the team delivered these changes for the upcoming 4.3.1 patch
+Base armor ballistic reduction damage has now been set to 40% across all ships (previously 50%) with some few exception that the team think required a specific unique tuning.
+This means that ballistic guns will be more effective across the board against all targets.
+Shield ballistic absorption reduction damage has now been set to 20% for all shields (previously 30%).
+This means that ballistic guns will be more effective across the board against all targets even when they have their shields up and running.
+Some Ground vehicles were missing the proper ballistic armor damage modifiers.
+This should be fixed now and every vehicle in game should respect the above new standards mentioned.
+Gladius Flight changes
+After an initial metrics and feedback analysis post 4.3.0 the team decided to adjust Gladius performances further
+- Gladius Forward accelerations are now increased (from 13 Gs to 13.6 Gs)
+- Gladius angular accelerations are now improved and should provide enhanced reactiveness to flight controls.
+Missiles damage radius adjustments
+The team adjusted and increased the missile explosion radiuses to help with the overall missile effectiveness.
+These changes involve all missile from S1 to S7.
+Missile Size | Min. Explosion Range (meters) | Max. Explosion Range (meters)
+- S01 - 1 - 2m
+- S02 - 1.5 - 2.5m
+- S03 - 2.5 - 3.5m
+- S04 - 2.5 - 5m
+- S05 - 3.5 - 5m
+- S07 - 4.5 - 7m
+Additionally, the proximity explosion fuse has been set to 0.5m for Missile and Torpedoes of all sizes.
+Weapons and Items
+VOLT LMG "Fresnel"
+The engineers at VOLT crafted the Fresnel LMG to bring a powerful energy weapon to the frontlines. Initiate the fight with a rapid spray of deadly blasts, but as the weapon heats up, the shots become slower and more powerful - naturally providing a controlled finish to the combat encounter. But a weapon of this magnitude demands a strong foundation; operators are encouraged to fire from a crouching position to allow for better recoil management.
+The VOLT Lmg is the first LMG that has been released in a while and has been given some extra love in terms of future proofing the design intent of LMGs.
+- Is able to use S3 optics
+- Crouch and prone each have their own recoil reduction modifiers making braced operators have far less recoil
+- Features it's own 'super heavy' sway profile which means the weapon has a delay to resetting it's sight on targets upon horizontal / vertical aiming movement (TBD if this doesn't occur when crouched / Prone)
+VOLT LMG Stats:
+- Volt LMG mags and weapon are very heavy (150% heavier then FS9)
+- Damage: 6.85 -> 54.8
+- Projectile Velocity: 110
+- Aim down Sight Time: 0.43
+- RPM: 550 -> 82.5
+- Mag size:  165
+- Recoil: Stance Sensitive
+Other FPS updates
+- Added FPS Weapons Shop to Lorville Security Tower
+- Updated medium (Rifles) aiming sway feel to make weapons feel heavier (let us know what you think before we do a pass on light / heavy type weapons)
+- Reduced parallax on NVTAC branded scopes making them bounce less when firing
+## Bug Fixes
+- Potential Fix: PU - Freight Elevator - Server Error while a player is using a Freight Elevator kiosk causes that kiosk to kick the player out, preventing them using it, until it is streamed out and back in
+- Potential Fix: Idris series - PU - Tier 3 medical beds are missing from medical room
+- Potential Fix: Vehicle- Multivariant / Mirai Guardian Series - Bedlog - Getting out of Guardian beds from bedlog causes actor to animate to the wrong side of the bed and clip out of the ship
+- Potential Fix: Idris Series - PU - Idris Tier 1 medical bed has refill station for medical goop behind the medical bed not correctly positioned (STARC-178944)
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash

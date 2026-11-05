@@ -1,0 +1,58 @@
+## Star Citizen Alpha Patch 4.2
+Alpha Patch 4.2 has been released to All Backers!  Patch should now show: VERSION 4.2.0-PTU.9834229.
+Audience: All backers
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5 - 600 Players
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Storm Breaker All Phases
+- Apex Valakkar
+- Dynamic Rain
+- Radiation
+- VOLT Laser "Prism" Shotgun
+- ARGO ATLS IKTI and IKTI GEO
+- New Wikelo Ship Additions
+- New Hairstyles
+- Sterling Exploration Suit
+Not Ready for Testing and Feedback
+- Lazarus Facility Freight Elevators
+In tonight's build you may notice new freight elevators around the Lazarus Facility and transport hub. These are currently not enabled in tonight's build but will be enabled in an upcoming PTU build for 1 way freight transport out to the transport hub.
+## Known Issues
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- PU - Ship Battles - Ace Pilot/Assault - Proximity Tracker - Action Area - Logic fails to continue when over 20km away from the tracked object or Action Area Origin
+## Features & Gameplay
+Gameplay
+- Fix for loot containers not opening and also prevented players from being able to manually close them so players always know if a location has been looted
+Storm Breaker and ASD Location Polish
+Location LOD, Lighting, and Art Polish. AI Navigation and Behavior Polish. Location Music Improvements.
+Valakkar Polish
+Removed adult explosion radius (was not intended). Reduced Apex Valakkar explosion radius from 20m to 10m. Adjusted Apex Valakkar Non-weakspot damage multiplier to 1%. Stopped it so when you mined the Valakkar pearls everyone would die. Animation and Attack Movement Polish. Removed ability to scan the Apex Valakkar from above the storm with a ship.
+Ships and Vehicles
+- Added new Scanning Mode UX Updates for more clean information
+- Updated all 300 series loadout kits to use 1:1 gimbal size setup to match current game design as originals used size down gimbals
+Core Tech
+- Further Server and AI Navigation Performance Optimizations
+## Bug Fixes
+- Potential Fix: Origin 300i - ALL VARIANTS - Ship / Customization / Components - 300i Series Customizations are missing in Live (STARC-148868)
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector - Missions - The Polaris mission has the incorrect amount for Wikelo Favors required (60→50)
+- Potential Fix: Radiation - SFX - Geiger Counter audio sticks on the initial sound even if the radiation level changes
+- Potential Fix: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- Potential Fix: ANVIL Carrack ALL - Vehicles / Art / Cargo - The ANVIL Carrack and Expedition Variant are missing their Cargo Grid, Cargo Bay Doors and the corresponding collision
+- Potential Fix: PU - Place holder - Shopping Kiosk / Economy / UI - Subcategory for flight blades and bomb racks is named "Placeholder"
+- Potential Fix: Freelancer MIS is missing missiles (STARC-131512)
+- Potential Fix: ARGO ATLS All Variants - PU - Mounts / Cargo / Inventory - ATLS suits with a player inside can be stored via freight elevators
+- Potential Fix: PU - Pyro I - Storm Breaker - Locations / UI / Missions - Egg Pylon timer out of sync with location cooldown
+- Potential Fix: PU - Pyro - Missions / Locations / AI - Farro Data Center - Eliminate All - Data Center Turrets open fire on Player with a lawful mission for that location
+- Potential Fix: PU - Stanton - Missions / UI - PVP Bounty - There is no notification pop-up if an accepted contract is withdrawn for any reason
+- Potential Fix: PU - Creatures - Irradiated Kopions- Irradiated Kopions can be found stuck not moving (but in idle) at their spawn locations
+- Potential Fix: ARGO ATLS GEO IKTI - PU - Mounts / Vehicles / VMA / MobiGlas - Player can equip Mining Laser heads to their ATLS GEO IKTI via VMA
+## Technical
+- Fixed 1 Server Crash
+- Hybrid-Service Crash Fix

@@ -1,0 +1,71 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9377274.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Zeus ES & CL (Evocati and owners will receive these in the build)
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- Quantum Fuel Adjustments
+- New Arena Commander Updates
+## New Global Event: "Save Stanton" Playtest!
+Tonight on the 3.24.2 servers we will be running the first 2 phases of a new global event called Save Stanton!
+This will start up shortly after the build has been released and run overnight with mission phases 1-2.
+If you have any feedback and issues on the event, check out the post here for known issues and to discuss!
+https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/ptu-playtest-global-event-mission-save-stanton
+- Removed Starfarer and Reclaimer from mission pool
+- Fixed - PU - Save Stanton - Phase 1 - Mission Content - Mission A stops being completable at progress 2/6
+- Fixed - PU - Save Stanton - Phase 2 - Mission Content / UI - The Remaining Slicers' Asset number does not updated during or complete the mission
+## Known Issues
+- Multivehicle - PU - Vehicles / Vehicle Components - Quantum Drives - Cannot initiate quantum jump (low chance STARC-131460)
+- QT Workaround: De-allocate all power from systems in power management Re-allocate power to Quantum Drive and other systems.
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Locations - Hangars / Network - Hangar at Baijini Point is despawning whilst the player is using the area, without external factors, leaving them stuck inside LEO geo
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+## Features & Gameplay
+Locations
+- Hangar Elevator and Alarm Sounds have been temporarily muted
+Gameplay
+- Starmap and Radar Decluttering and Performance
+Removed Turret Markers from the Starmap/Radar. Reworked marker culling categorization: Navpoints will now be prioritized over other non-essential markers. Refactored marker canvases to reduce number of inactive Building Blocks nodes getting created/updated per marker on radar and starmap. Increased Scan reveal Duration from 5s -> 10s.
+- Refueling Time Re-added and Balanced
+- Added Weapon Group Number to Crosshair Switch Pop-up
+Ships and Vehicles
+- Argo ATLS added to Ship Shops
+- F7C mk2 Added to Ship Shops
+- Retaliator Module category added to shops
+- Re-orderd Annunciators
+- MISC Starfarer and Freelancer Annunciator Setup and Polish
+## Bug Fixes
+- Fixed - PU - Freight Elevators / Locations - Settlements / Outposts / Junkyards - Freight Elevator Retrieval UI filled with all owned and items gets stuck on "transferring to warehouse" (STARC-129603)
+- Fixed - ARGO MOLE - UI all red / no scan information for Mining Laser turret (STARC-132775)
+- Fixed - MISC Hull C - PU - Vehicles - Quantum Travel - The Hull C is unable to engage quantum travel (STARC-131056)
+- Fixed - Multivehicle - PU - Vehicles / UI / MFD - The Larger Aiming UI option on the Vehicle Configuration MFD does not function
+- Fixed - PU - Stanton - Mining UI - Ships / Vehicles / UI / Game Code / Mining - Item Resource - UI - UI doesn't switch between fracture/extraction modes (fracturemode binding does not update)
+- Fixed - Multivehicle - UI / HUD - Various vehicles lack UI element indicating the lock status of their components and weapon hardpoints (STARC-131865)
+- Fixed - RSI Zeus Mk. II - ( ALL VARIANTS ) - PU - Vehicles / Actor - Interactions / Design - Closing the door on the cockpit weapons locker links to close the cockpit engineering bay door button as well
+- Fixed - PU - Stanton - Vehicles - Replaceme Balls are in the 400i cargo bay (STARC-130077)
+- Fixed - Aegis Sabre Firebird - PU - Shopping / Economy - The vehicle is priced at 0 aUEC
+- Fixed - PU / AC - Disabling/Enabling weapons on ships with Retractions will enable auto gimbal on ship
+- Fixed - Window pops up for anyone who previously had Borderless mode
+- Fixed - PU - Save Stanton - Phase 1 - Mission Content - Mission A stops being completable at progress 2/6
+- Fixed - PU - Save Stanton - Phase 2 - Mission Content / UI - The Remaining Slicers' Asset number does not updated during or complete the mission
+- Fixed issue with Hull C not requiring docking collar when cargo present
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 4 Server Crashes
+- Fixed a Deadlock

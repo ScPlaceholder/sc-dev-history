@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.17.0s
+Alpha Patch 3.17.0s has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.17.0-PTU.8038043.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Current Audience: All Waves
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+3.17 contains new streaming changes that we are testing on the PTU and players may experience infinite loading or very long load times along with possible missing assets in game such as elevators or ships not streaming in. We are updating and fixing these issues as we find them and each new build will hopefully address these more and more.
+- Ship Positional Desync Test
+In 3.17.0 we have put in a networking update that should reduce ship to ship desync. We would like to know how well this update works and if there are any observable knock-ons. Relative to 3.16, you should feel as though the facing direction and position of other player ships are much more accurate and real time. We have created a feedback thread in spectrum so please let us know about any potential issues with this that could include ship jittering, rubberbanding, jittering, and other effects of that nature.
+Due to recent improvements on desync we have uncovered hitreg bugs which we likely cannot resolve for 3.17. In the direction of the velocity vector the collision shape of a ship will be slightly in front of visual model (the exact offset is velocity dependent). There is currently no work-around so avoid hovering inside the velocity vector of another ship and lead your shots a bit more during combat.
+- MISC Hull-A
+- Lorville Hospital and Space Station Clinic Variations
+- River
+- Coffee Shop Vendor
+- Ship-to-Ship Refueling
+- Mining Gadgets
+- Shopping and Selling T0
+- Ship and Ship Components Inventory Updates
+- Player Injury Updates
+- DNA Head Texture Updates
+Known Issues
+- The Extraction Laser picks up more Shards than it can Collect at once, causing them to collide and be thrown
+- Unable to see some accounts when adding to friends list
+- Kiosks will inconsistently show rows of blank entries with no picture, price, or information
+- Custom mobiGlas Casings breaks the mobiGlas functionality
+- Turret acceleration changes have been reverted to pre-3.17.0 while we work on rebalancing and will be coming back in a future release
+- Players cannot buy components directly into ship storage (will be coming later in the PTU cycle)
+- AR Markers are present when opening the mobiGlas which can make it hard to read
+- Hornet Pirate AI Pilot Doesn't Load In stalling the mission when destroyed
+- Ships can explode after players exit them
+- Many mineable asteroids can’t be scanned
+- While docked to a Starfarer the Valkyrie will continuously tilt instead of remaining stationary
+- Players with positive health can enter a state similar to being downed without the incapacitated UI or VFX
+- Attempting to log back into a ship bed may result in a long loading screen before being sent back to the Main Menu w/ Error 30009
+- Equipment in inventory doesn't equip properly to character and bounces back into inventory
+## Feature Updates
+Weapons and Items
+- Added blinking light to mining gadgets when not attached to a mineable node
+## Bug Fixes
+- Quantum Drive should now engage consistently
+- Ground mineable rocks should no longer spawn inside other rocks
+- Players HUD should no longer be spammed with constant assist notifications
+- Quickly trying to equip items should no longer cause them to sometimes be dropped on the floor
+- Fixed an issue that was causing equipment to disappear and be lost permanently when trying to equip
+- Last held Item should no longer teleport back into player's hands
+- Casaba Outlet shops at Rest Stops should no longer have empty shelves
+- Lorville Trading Terminals in Business District should now have proper interaction
+- Displayed ship paints should no longer change after docking with the MISC Starfarer
+- Mining Gadgets should no longer slide down the face of mineable nodes on planets and moons
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 1 Server Deadlock

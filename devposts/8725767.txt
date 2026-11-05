@@ -1,0 +1,31 @@
+Hey everyone,
+Hope you’re all enjoying the ’verse. We’ve got another round of VR improvements coming with Alpha 4.7, some of which you may have already noticed. Let’s dive in!
+## ATLS Mech UI
+The ATLS mech Geo UI is now functioning properly in VR. Stomp away.
+## Stereo Cursor Rewrite
+The stereo cursor has been completely rewritten. Instead of relying on screen-based offsets, it now accumulates mouse movement directly.
+The result: no more boundary. Previously, the cursor was limited to a fixed screen region, creating an invisible wall. That limitation is now gone.
+One thing to note: since the cursor is no longer tethered in the same way, it can move outside your field of view when decoupled from head movement. If it seems to disappear, simply toggle it again to recenter.
+## Separate UI Render Resolution
+This is a big one. The engine can now render UI at a separate resolution from the 3D scene. In practice, this means UI elements like the inventory and other full-screen interfaces now display correctly in VR.
+This is controlled through two new cvars:
+- r_StereoUIWidth
+- r_StereoUIHeight
+The default is set to 2560x1440, which works well for headsets like the Quest 3. If you’re using a higher-resolution headset, you can increase these values for sharper UI. These settings can be adjusted at runtime, so feel free to experiment, including with widescreen resolutions. We may add this to the settings menu in the future. Changing the resolution will impact performance only very slightly.
+With that being said the Show Console (In VR) option is no longer needed and has been removed from the menu and is now on by default.
+## PlayerInteractionShortcut (PIS) Wheel
+No longer moves with the view and is always centered onto the UI screen. In the future this will be rendered in 3D space where the interactable is when we refactored the system.
+## Native Pimax OpenXR No Longer Blocked by EAC
+As many of you have discovered, the native Pimax OpenXR runtime is no longer blocked by EAC and can now be used freely. The main benefit here is improved performance. SteamVR can introduce noticeable overhead, so bypassing it should provide a meaningful boost.
+Additionally, the native runtime may expose OpenXR features that SteamVR doesn’t support, opening the door to more possibilities for Pimax headsets moving forward.
+## What's Still in Progress
+Close-range markers are still a work in progress. This requires deeper changes from the UI Tech side, so it’s not something we can quickly patch. Thanks for your patience while we get this right.
+At the moment, the Meta (Quest) Link runtime can cause reprojection artifacts with low framerates. We’re still investigating whether the XR_FB_space_warp extension can resolve this issue in the future. To prevent this in the meantime, you can disable the Asynchronous Spacewarp in the Oculus Debug Tool (usually found in C:\Program Files\Meta\Support\oculus-diagnostics\ or C:\Program Files (x86)\Oculus\Support\oculus-diagnostics\). This needs to be done each time you start Meta Quest Link.
+As an alternative, we also recommend using Virtual Desktop if you have a capable WIFI router with a strong connection. On top of that you may also reduce the FOV Tangents slightly in the settings to improve GPU performance (i.e. tangents set to 90%).
+That’s all for 4.7 for now. We’ll keep pushing on polish and new features for VR, so stay tuned. See you in the 'verse. 🫡
+Update 19/04/2026:
+- Fix 3sec action delay in VR, i.e. when picking up objects
+- Fix placements of objects using wrong view direction
+- Adding new cvar g_headtracking_hmd_cursorInactivePitchOffset (Default value is -12)
+> This cvar can be used to rotate the view vector up and down for interacting when the cursor is not active. -12 Rotates it slightly downward so it feels more natural to interact with objects when looking at them.
+Silvan-CIG

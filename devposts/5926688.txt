@@ -1,0 +1,63 @@
+## Star Citizen Patch 3.19.0 8467657
+Alpha Patch 3.19.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.19.0-PTU.8467657.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 2
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Testing Focus
+- General Stability
+- Lorville Skyline 2.0
+- Salvage Contract Missions
+- Tractor Beam - T0.5 - Item Attaching and Detaching
+- Ghost Hollow Reclaimer PVP Mission
+- Mission Density Management
+- Mining Balancing v01
+- New Player Experience
+Known Issues
+- AC - PTU/LIVE - WaitForPlayerSpawn Connection Timeout
+- Multilocation - Locations / Shopping / Interactions - Pharmacy kiosk terminals "Use" interface and Interactions are misaligned
+- Weapon Feature / Game Code - Tractor Beam - If you activate the tractor beam in hangar, you can bring the activated tractor beam back and use it in armistice zone
+- Performance - Client - High dedicated video memory usage leads to severe framerate drops at Lorville
+- Aegis Reclaimer - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction from ship exterior
+- Aegis Reclaimer - All Variants - Reclaimer main on-elevator control panels do not respond to input
+- ARGO MOLE - Vehicles / UI - The interaction prompts for ALL mining turrets are easy to miss/in unintuitive locations for players
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Multivehicle - UI / Vehicles / Mining - Mining UI is appearing in Low Resolution
+- Racing - Locations - A specific rock formations on the Yadar Valley race track are visible to some player and not others
+- Crusader  - Security Post Kareah - Core Tech - Physics - Actor / Player -  Transitioning from EVA onto Kareah's landing pads has a high chance of  instantly killing the player
+- Transit  - Area18 - Orison - Shuttles/Trains/Trams - Players are falling through  sometimes disappearing trams and shuttles to their deaths
+- RSI Constellation Multivariant - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Multilocation/Multivehicle - Shopping - Store kiosks won't populate locations if certain ships are stored
+- Multitool - FPS Hull Scraping - The Salvage attachment has the VFX of the tractor beam and does not function
+- Security Post Kareah - Mission Content / Art - VisArea - Contraband screens have a visarea issue
+- Yela - Grim Hex - Mission Giver - AI / Missions - Wallace Klim becomes stuck under the floor near the hangars after being streamed out and streamed back in
+## Feature Updates
+Locations
+- Further Lorville Restricted Area Lowering and Optimizing
+- Lorville LOD Performance Pass
+Gameplay
+- Mining Pass
+Mining Location, Sales Premiums, and Availablility Balance Pass. Increased probabilities for multiple Minable resources Including Quantainium. Change to Gold Availablity for Trade Routes. Gold Mine Outposts for Bulk Trade are now locked to Crusader, Far away from their best prices at Arc and Microtech.
+- Ghost Hollow Reclaimer PVP Mission Balance Pass
+Changed the max payout from 100k to 125k per terminal. Lowered the maximum mission reset cooldown. Reduced cooldown per additional player in the fight, up to a maximum of 8 players.
+Core Tech
+- Optimized Radar Performance while scanning large amounts of cargo
+- ASOP UI Performance Optimizations
+## Bug Fixes
+- Fixed - EXPLOIT - Stanton - Shopping / Services - Salvaged weapons can be sold infinitely
+- Fixed - Ships spawning in populated hangars
+- Fixed - Stanton - Ships / Navigation - Entry / Dismount point of the ladders clips the player through the ship's geometry. (Temporarily Disables Ladder Slide)
+- Fixed - Missions / Salvage Contracts - Unlawful - Objectives may not update upon accepting the mission
+- Fixed - UI / Vehicles - Quantum Travel - Quantum travel UI is not present
+- Fixed - Interactions / Locations - Area18 / Casaba Outlet - The "Use" prompt is offset from the shopping kiosk preventing interactions in certain positions
+- Fixed - Missions - Delivery - Some Delivery missions require players to travel between moons or planets with quantum sensitive cargo
+- Fixed - Aegis Reclaimer - Asset / Components / Tractor Beam - The 2 salvaging Heads cannot be reattached with multitool
+- Fixed - ArcCorp - Area18 - NPE - The "Land at Bajini Point" objective marker is visible for all players doing the New Player Tutorial and changes to a new hangar each time a player calls ATC
+- Fixed - ArcCorp - Area18 - NPE - Interaction - There's no inner thought option to drop or place the water bottle in the New Player Experience tutorial after drinking from it
+- Fixed - Ghost Hollow - Art / Graphics - ReplaceMe / Replace Me balls can be located around Ghost Hollow / Reclaimer PvP site
+- Fixed - Multivehicle - Vehicles / Components / Tractor Beam - Physicalized Components cannot be removed from ships while the ship is fully destroyed
+## Technical
+- Fixed 1 Client Crashes
+- Fixed 4 Server Crashes

@@ -1,0 +1,893 @@
+# Star Citizen Live: Making Missions II
+# https://www.youtube.com/watch?v=KR8sSsMfsCQ
+[    4.6] Hey everybody, I'm old and tired looking at the Reddit comments.
+[   10.6] Hey everybody, what are we doing?
+[   15.6] Oh, welcome to Star Citizen Live, the semi-sometimes weekly showcase
+[   21.6] where we take about an hour at the end of our week,
+[   24.6] and we're just on, that's a lie, because it takes like several hours to set this stuff up.
+[   28.6] So you see an hour and then we gotta do all this stuff for time before that.
+[   32.6] We take about an hour that you see at the end of the week, and we do a lot of things.
+[   37.6] Sometimes we do a question and answer thing, sometimes we interview folks and get to know them.
+[   41.6] Sometimes as we're doing for the last couple weeks and for the next couple weeks,
+[   45.6] we're doing our game dev specials where we invite a developer to basically disconnect their computer
+[   52.6] and carry it from one building to another building. We're in a different building here.
+[   56.6] Hook it up here and then work for an hour and show you a bit of their process.
+[   60.6] And that's what we're doing this week. This week's show is called Making Missions 2.
+[   65.6] It's a sequel to a previous series of episodes we did called Making Missions.
+[   72.6] Those ones were with Elliot Maltby. They were okay.
+[   77.6] Not as good as I had hoped, mostly due to the guest.
+[   81.6] But we've trained it up. We've got different guests this week, so we're hoping our results will be better.
+[   88.6] Let's go ahead, now that I've sufficiently just poked that bear, let's go ahead and introduce our guest this week.
+[   93.6] Meet me at camera too. Our guests this week are Yorick and Nick. How are you doing guys?
+[   99.6] Hello everybody. How are you? Amazing.
+[  102.6] Before we get started, let's take a few minutes because every show is somebody's first show,
+[  105.6] and if this is your first show, I'm sorry. Go ahead and introduce yourselves.
+[  110.6] We'll start with you Yorick. Who are you and what do you do for Star Citizen?
+[  113.6] Hey, I'm a mission designer, so I make missions. You might know me from something like the Crusader Platform missions.
+[  121.6] I've also done some work on Siege of Orison, and I've been doing some tweaks on the new player experience
+[  127.6] to make sure they're available basically at every landing zone.
+[  129.6] What do you mean they might know you? To play your missions or to know you?
+[  135.6] Oh yeah, that's basically my whole personality.
+[  139.6] This is one of the shows where I just got to do the intro and then I'm like, I take a nap.
+[  144.6] I'm looking forward to it. Nick, who are you and what do you do?
+[  147.6] Yeah, I am Nick. Waddle, I'm on the economy team with Andre and with Connor.
+[  154.6] And I think we all do a bit of everything, but my main focus is player progression and player rewards.
+[  161.6] Economy team? Do we have an economy?
+[  164.6] We do. Okay.
+[  167.6] Edgy like Declan Frost.
+[  170.6] We do. We do have an economy and we will have even more of an economy.
+[  175.6] And in fact, 324 is going to be a great place to discover that economy.
+[  183.6] Yeah, we had you and, oh gosh, Andre.
+[  188.6] Andre, jeez. On SCL a couple of weeks ago, introducing the new team that has been building up here in the UK.
+[  193.6] That work is starting to take fruition. We saw some of the early fruits of that in 323.
+[  198.6] You'll see more with the cargo missions that are coming in 324 and then on and on as we go into 4.0 and beyond.
+[  206.6] So what are we doing this week? You all right?
+[  210.6] Well, this week we're going to show you a little bit about the cargo hauling missions that we've been building.
+[  217.6] So usually, cargo hauling is the kind of thing where it seems pretty straightforward.
+[  223.6] You go to a location, you grab some containers, put them on your ship, fly somewhere else, put them down and get paid.
+[  231.6] But actually, today we're going to show you that in Star Citizen. It's a lot more interesting.
+[  236.6] Now, this will be one of the shows where you're working for the hour.
+[  239.6] So you won't see the results of that mission this week.
+[  242.6] We will be back next week where we'll actually jump into the game.
+[  245.6] We'll actually play the mission that we're creating here live today.
+[  248.6] So this is one of the shows where it's going to be a bunch of talking and you're not going to see much.
+[  253.6] So if you're salty, you might go ahead and punch your chair now.
+[  256.6] I'm assuming that you already have twice by this point.
+[  259.6] But join in. It's fun.
+[  262.6] Not less for the chair.
+[  264.6] But I think we're selling new chairs soon.
+[  267.6] Oh, look at how I worked that in there, didn't I?
+[  270.6] I worked that in there.
+[  271.6] All right. So I'm going to turn it over to you.
+[  274.6] Get us started.
+[  276.6] Sounds good.
+[  277.6] Your show.
+[  278.6] All right. So, Nick, how do you make a Star Citizen hauling mission?
+[  283.6] Well, I mean, I think the first thing that we ought to do is find out from the community what they think,
+[  288.6] because after all, we are making this game.
+[  290.6] Exactly. That's precisely what I did.
+[  292.6] The hand for the community.
+[  293.6] Mm-hmm.
+[  294.6] So I started off by doing some research and going on Spectrum, our official Star Citizen forums.
+[  299.6] And I also had a look at what people were saying on Reddit,
+[  302.6] as well as checking out some YouTube videos out there from our community.
+[  306.6] So a few things I noticed immediately right off the bat was what people were discussing when it came to sandbox commodity trading,
+[  314.6] is that currently, you know, you're required to have quite a sort of built-up capital for you.
+[  319.6] Look at that camera.
+[  320.6] Yeah, that one.
+[  321.6] Oh, all right.
+[  322.6] There you go.
+[  323.6] You're supposed to have quite the sort of built-up capital already for you to actually go to a location
+[  328.6] and buy all these commodities to be able to even transport it anywhere and, you know, make a profit off of that.
+[  334.6] So that's definitely something we've been taking into consideration.
+[  337.6] Another conversation I've seen is people discussing what sort of the best cargo hauling ship would be.
+[  345.6] And if actually some of the smaller ships out there are still going to have a purpose when the cargo hauling missions come out.
+[  351.6] So that's also something that we're going to be talking about today.
+[  354.6] But most importantly, I think what people are most excited about is the role of cargo hauling missions within...
+[  361.6] I know I am.
+[  362.6] ...within the economy.
+[  365.6] And so after doing my research, I reached out to the economy team.
+[  370.6] And there I spoke a little bit with Connor, which is Nick's colleague out in Austin, Texas.
+[  376.6] Hey, Connor.
+[  377.6] Hey, Connor.
+[  378.6] And he showed us something very interesting.
+[  381.6] So let's switch to our screen here.
+[  383.6] What Connor showed me is this amazing logistical sheet that he'd been imagining, which essentially maps out all of the connections between different locations within the Stanton system.
+[  402.7] So as you can see, if a commodity would come in from the jump point and it would need to go somewhere, well then it gets connected to an L.E.O.
+[  413.7] And then from the L.E.O., it can be transported to another L.E.O. or to a L.A. Grange point.
+[  418.7] Or maybe if it needs to go down to the planet surface, it will go through the landing zone to the outpost.
+[  423.7] Or maybe even if the outpost is closer to a distribution center, go to a distribution first and then to the outpost.
+[  431.7] And each of those are at different sizes and different ships are involved.
+[  438.7] But every single one of those journeys can be turned into gameplay, right?
+[  445.7] Exactly, yeah.
+[  446.7] So the next step was I basically did some research about all of the different planets and moons and all of the different locations that exist in the Stanton system.
+[  461.7] And I basically mapped Connor's logistical rule set and structure onto those locations.
+[  469.7] Here you can see for example the planet Hurston and I've connected up all of the different locations with their sort of structure.
+[  477.7] So in this case, a mining outpost would be connected to a distribution center.
+[  482.7] So all of the stuff that they mine is going through there.
+[  486.7] And then when that distribution center has collected stuff, it will connect up to the L.E.O. of that planet.
+[  492.7] So in this case, Everest Harbor.
+[  494.7] And from there, you know, it goes to probably the closest or cheapest Lagrange point that has a refinery where the ore is refined and it can be sent over to the different other L.E.Os depending on who needs it.
+[  510.7] Yeah, I'm going to add in here for the folks who are, many folks are probably thinking the obvious question, well what about quantum and stuff like that?
+[  517.7] These are representations of the same type of information that is in there that's still being worked on.
+[  523.7] It's still not quite ready for prime time, but we can take the modeling and the information that are from there and get started on missions now and then it's just about finding a place and stuff.
+[  532.7] Exactly. So how about we pick one commodity and try to trace its entire route?
+[  538.7] Yep, from where it originates to where it might be needed.
+[  542.7] Exactly. So what I'm thinking is let's pick titanium.
+[  546.7] And what you can see is that I've actually mapped out on this board what the crust of the different planets is made of.
+[  554.7] So here you can see that the Hurston has iron and all of its moons have different combinations of different ores.
+[  561.7] What I can see is that titanium is mostly found on the moons around Crusader.
+[  567.7] Now this is data.
+[  569.7] So where did you get that information from?
+[  571.7] This is data that was provided to me by Connor and Connor is also the point of contact for the people who are placing around the minibles,
+[  579.7] which means that whatever planet has a particular kind of ore in minable, that will also use essentially the same information and data that the cargo hauling missions use to figure out what ore should be hauled.
+[  591.7] And just like Jared was saying, Stasim is eventually going to be in charge of managing these relationships.
+[  599.7] Exactly.
+[  600.7] Stasim, is that officially the new name or is that just one of those things we're playing around with?
+[  606.7] Maybe. Yeah. Star hair, star cloth, Stasim, why not?
+[  612.7] Alright.
+[  613.7] When you see a full on video, like when you see someone standing at CitizenCon saying that's called that, that's when you can take it for the reality.
+[  622.7] Alright.
+[  623.7] So as you guys know, Raor is specifically mined at Mining Outpost.
+[  629.7] We've got plenty of different kinds of locations across the Stanton system.
+[  633.7] But in this case, for example, on Jella, we can see Arcorp has a Mining Outpost here.
+[  639.7] On Deymar, we've got Shubin and Arcorp Mining Outpost.
+[  644.7] And then I believe that Celen only contains a hydrofarm and research outpost.
+[  649.7] There's little icons here.
+[  650.7] Those are locations that will be receiving a freight elevator for the 3.24 patch.
+[  655.7] And that's where cargo hauling missions can currently take place.
+[  658.7] And then these locations will be available as sort of pickup locations for a mission that asks you to move or titanium ore.
+[  668.7] And you'll be asked to move those to Seraphim Station, which is the L.E.O.
+[  673.7] And from there, Seraphim Station will connect those ores to Crew L1,
+[  679.7] which is the closest L.E.O. point with a refinery.
+[  683.7] And at that point...
+[  684.7] What kind of purposes, what kind of uses would titanium have?
+[  687.7] Like why would titanium need to be spread around the system?
+[  690.7] Titanium is worth crap now, right?
+[  693.7] Oh, well...
+[  694.7] Right now, yeah, it doesn't seem to have much use, but...
+[  697.7] Well actually, titanium from the L.E.O. point can be sent to a number of different kinds of locations.
+[  702.7] Hurston, for example, if you've visited the renewed Lorville cityscape,
+[  708.7] you'll see that it has loads of different kinds of production facilities and industry.
+[  713.7] So it will be used for construction there.
+[  715.7] It might be used in all sorts of tools.
+[  718.7] It will also be transported back to Crusader from Crew L1,
+[  721.7] because for example, the shipyards on Orison, they'll be making ship components with titanium,
+[  728.7] or be using it maybe for decoration.
+[  731.7] I want to add something here.
+[  732.7] Again, because I don't even have to look at the chat, I've been doing this for 10 years now.
+[  737.7] These things that we're talking about, this is 324 stuff.
+[  741.7] We are showcasing the work that went into creating the very new cargo missions
+[  747.7] that are part of the upcoming 324 patch.
+[  749.7] So this isn't a concept for something much farther out.
+[  752.7] This is the process and the very information we're using to create the next missions
+[  758.7] that are going to be in your hands.
+[  760.7] Exactly.
+[  761.7] So from there, titanium can basically go everywhere.
+[  765.7] If there are other star systems that maybe have a deficit of some kind of commodity,
+[  770.7] it doesn't have to be titanium.
+[  771.7] That means it'll be transported over to Everest Harbor,
+[  775.7] where it can be shipped out to different kinds of systems as well.
+[  779.7] So yeah, so you're talking like through the jump points?
+[  782.7] Exactly.
+[  783.7] In this case, the jump points aren't active yet, as we know,
+[  786.7] but we do have missions that allow you to drop off commodities at these jump points
+[  791.7] where then hypothetically they'd be sent through to the other side.
+[  795.7] So yeah, we can see that the different L.E.O.s are sort of connected to Hurston.
+[  799.7] Hurston is the main point of contact for sort of interstellar cargo hauling travel,
+[  805.7] and from there, different missions go to the three jump points in the Stanton system.
+[  811.7] So when you say different missions, that sounds like a lot of missions.
+[  814.7] Oh yeah, every single one of these steps that I mentioned, from an outpost to the L.E.O.,
+[  820.7] to the refinery, to all these other places,
+[  823.7] every single one of those connections is a mission,
+[  826.7] and we've made them for nearly every single commodity in the game.
+[  830.7] So that is a lot of connections and a lot of different commodities
+[  836.7] and a lot of different missions that you could play.
+[  840.7] So how about when it comes to the titanium example, we just decide to build one for the showcase.
+[  847.7] So well you said that it could get to seraphim, so maybe it needs to be refined.
+[  854.7] That's right.
+[  855.7] So where's the nearest refinery to seraphim?
+[  857.7] We'll make a mission that brings titanium from seraphim station to Cruell one,
+[  862.7] the Lagrange point with the refinery.
+[  864.7] What we do to make missions, if you've seen the previous episode where we made missions with Elliot Maltby,
+[  870.7] is this program called DataForge.
+[  873.7] DataForge is the place where we create different mission records that are then essentially loaded into the game when they're done.
+[  880.7] And when you open your MobyGlass and look into the Contracts app,
+[  883.7] that's where you'll see every single one of these listed.
+[  886.7] So there is a lot of them there.
+[  888.7] We're going to just show how one is made essentially.
+[  893.7] I'm just going to be filling in some of these fields,
+[  896.7] but you guys can go ahead and answer some questions in the meantime if you want to.
+[  900.7] Stilltomo2 says, so quanta is dead, this is just set step.
+[  907.6] No, I'm going to guess that, you know, when Venice is mine,
+[  911.6] it's saying, bro, we just answered that three minutes ago.
+[  913.6] It was more like 10 minutes ago, and maybe stilltomo just got here.
+[  918.6] But yeah, this is where you guys can help instead of, you know, putting another chatter down,
+[  922.6] just to share the information they might have missed,
+[  924.6] or maybe they were in the kitchen making a sandwich,
+[  926.6] or maybe they were in their room punching their chair.
+[  928.6] I mean, people have things to do, and they might miss, you know, key pieces of information over the hour,
+[  933.6] so we can help those people out.
+[  935.6] It's like this, but no.
+[  936.6] Quantum is still in development.
+[  938.6] We're hoping that you're going to hear some more of that too as the team gets built up,
+[  943.6] and I know Ben Waspin is some more time now.
+[  946.6] Now that Ben Waspin is fully integrated in the project with the merger with Turbulent stuff,
+[  950.6] there's a lot more involvement that he's got and stuff,
+[  952.6] and we're looking to, I was just talking to Andre,
+[  955.6] we're looking to hopefully do something a little more dedicated to the ongoing development of Quantum.
+[  962.6] I'm going to say before the end of this year is a reasonable expectation.
+[  967.6] I don't want to do anything more than that.
+[  970.6] I mean, you know us in schedules, so that's not it coming out.
+[  973.6] That's when I can tell a story about it is what I'm talking about.
+[  976.6] So, yeah, what else we got?
+[  979.6] I wondered if you wanted to talk about the difference between the current system and the hauling.
+[  984.6] So like there's been soul traders and the hauling missions, so like Jorat mentioned,
+[  990.6] start with the currently obviously people can trade commodities,
+[  994.6] and they can haul quite large amounts,
+[  999.6] but they have to put up the capital to buy the commodities to start with,
+[ 1002.6] and then they have to trade them and make a profit on them,
+[ 1005.6] which is completely valid gameplay, and the hauling missions are not intended to replace that.
+[ 1010.6] It's just that the hauling missions will allow players who don't necessarily have the capital
+[ 1014.6] and want to engage in that kind of gameplay to still use the freight elevators,
+[ 1019.6] use their cargo ships, and move cargo from A to B.
+[ 1024.6] Of course, the difference is that the hauling missions are contracted,
+[ 1029.6] so an organization say, who would it be? Covalex?
+[ 1035.6] Sure.
+[ 1036.6] Yeah, would put up a contract that says we need this amount of titanium transporting from here to here,
+[ 1044.6] and we need it doing within this time,
+[ 1047.6] and so anybody that wants to take that contract is going to get paid this amount of money to do that.
+[ 1054.6] As opposed to if you wanted, you could go get some gold, buy it from here, take it to there,
+[ 1061.6] and sell it for a profit.
+[ 1063.6] So both of those types of gameplay are going to be happening in parallel,
+[ 1067.6] and will enable people with varying amounts of capital to progress as they want to through the universe.
+[ 1074.6] You'll see some examples of those missions in action in ISC in two weeks from tomorrow.
+[ 1083.6] Next week's show is another experiment that will definitely make some people punch their chairs.
+[ 1089.6] And then we're back to normal stuff the following week, and these two guys, and Elliot and everybody else,
+[ 1095.6] back talking about the new blockade runner event, and then we're actually showing you a few of these missions
+[ 1103.6] that we're talking about today, so active and working in 324.
+[ 1107.6] Cool. In the meantime, I've filled in all the information that I could.
+[ 1111.6] A lot of it was sort of pre-filled in because I'm actually working with header records
+[ 1116.6] that sort of persist all of the information down to any sort of new cargo hauling mission I make,
+[ 1121.6] so a lot of this stuff is already filled in.
+[ 1124.6] I just need to do the details of this particular mission, and now we've reached a point where I'm going to need some help with the economy.
+[ 1131.6] So as you can see, I've filled in the fact that this hauling order is going to contain some titanium,
+[ 1137.6] and it's now time to figure out how much SU we actually need moving.
+[ 1141.6] Jackson's face says, two weeks from tomorrow, ISC on a Saturday? Come here. Come here.
+[ 1147.6] Do I look like I know the difference between tomorrow and yesterday?
+[ 1151.6] No. Nobody's ever looked at this face and said, that guy knows the difference between tomorrow and yesterday.
+[ 1157.6] Alright, Nick, what do we do?
+[ 1166.1] Well, I think we should use a convenient little economy tool that I made to work out what the EVR should be for this mission.
+[ 1179.1] What's EVR?
+[ 1180.1] So, EVR is effort versus reward.
+[ 1185.1] EVR is a universal algorithm that allows us to balance the effort that anybody puts in for anything with the amount of reward that they should get for it.
+[ 1197.1] And the reward could be UEC, it could be reputation, it could be all manner of things coming soon to you.
+[ 1204.1] But it basically allows us to create a baseline for calculating fair reward based on time and difficulty.
+[ 1216.1] Obviously, there are a lot of other factors that come into all these things, but EVR allows us to have a baseline to work from.
+[ 1223.1] So, to get that baseline for one of these missions, the first thing we need to do is decide what grade of mission we're going to do,
+[ 1233.1] which is going to tell us how much needs to be taken.
+[ 1238.1] That's right.
+[ 1239.1] So, we have the progression.
+[ 1241.1] This is the grade progression that we've landed on, which is essentially what kind of missions you get to see as you start in your cargo hauling career,
+[ 1250.1] when you've not really made a name for yourself, you're kind of a nobody.
+[ 1255.1] And that means the missions that are available to you will be very low volume, lower risk, and you'll be moving less value and volume as well.
+[ 1265.1] So, that means the small grades you can see here at the very bottom, those are relatively low in quantity.
+[ 1272.1] And then as you progress through the ranks, you'll start unlocking and seeing multiple different kind of other grades show up in your contract app.
+[ 1282.1] So, supply grade would be a little bit bigger for the bigger kinds of ships until at the very end game of your career.
+[ 1289.1] When you're really trusted, you've proven yourself, that's when you get to do the really big hauls, and that's when sort of missions will show up.
+[ 1295.1] That asks you to move things even just from jump point to jump point and stand to the places that don't even have you stop here.
+[ 1303.1] Chad's talking about poop missions.
+[ 1305.1] Poop.
+[ 1306.1] Poop missions.
+[ 1307.1] Every MMO has got to have a poop mission.
+[ 1310.1] Agricultural supplies. We do have those as commodities, so if you want to be a poop hauler, we got you covered.
+[ 1317.1] Miss you Elliot.
+[ 1323.6] Okay, well, we should...
+[ 1325.6] We're just next door, you want to do something about it? Do something about it?
+[ 1329.6] Continue.
+[ 1330.6] Alright, in this case I think the volume of titanium that would have been moved all the way from the different outposts to Seraphim station would be about supply grade.
+[ 1341.6] It's bigger than small, isn't it?
+[ 1342.6] Yeah.
+[ 1343.6] But maybe let's do a simple one, so maybe supply grade early?
+[ 1346.6] Yeah, that sounds good. Titanium is the kind of material, at least the raw ore, that wouldn't be considered that sort of valuable or that risky.
+[ 1355.6] Okay, so why don't we look at a really useful EVA tool?
+[ 1358.6] Yeah.
+[ 1359.6] Okay, so supply early. Let's find supply early.
+[ 1362.6] Supply early.
+[ 1364.6] Okay, so it's telling me we're going to have to move between 80 and 112, so I think it's really important to point out that these hauling missions are contracts.
+[ 1373.6] So a player is going to take the hauling mission, the contract, to move the commodity that's needed between A and B, but every time they get that mission it might be a slightly different specific amount of SU, but it's going to be within a range.
+[ 1387.6] So supply early in this case is between 80 and 112.
+[ 1390.6] And the reason for that is not just variety, it's because different ships have different cargo grid sizes and they allow for different volumes to be moved, so we want to allow players to have that range of experience and to look at the mission and decide for themselves.
+[ 1405.6] You know, can I do this in one run? Do I need to do this in two runs? Do I have a Gatax Sulean, which means I probably need to do it in 58 runs?
+[ 1412.6] And so how am I going to approach this? Because that's the logistics, that's what being a hauler is. It's not just pick up the boxes, move them and put them down.
+[ 1420.6] Ubi Montreal Legion, there's a name. Will there be higher EVR calculations for the entire pyro system or is EVR only calculated across all systems for the moment?
+[ 1434.6] EVR, because it's just time and difficulty and it isn't a flat curve, it's an exponential curve, can work for any situation anywhere, but it's just a baseline.
+[ 1448.6] And when we're designing, we work with mission designers to make sure that the other appropriate considerations are taken into account.
+[ 1454.6] So the purpose of EVR is to allow a baseline for an approach to any situation, whether it's structured in missions or whether it's sandbox.
+[ 1462.6] I mean, in theory, you could actually reverse it. So instead of saying, for this time and difficulty, how much reward should I get?
+[ 1469.6] You could say, given that the amount of reward in this area of space is this, how difficult should it be in time and difficulty to access that?
+[ 1477.6] So you can flip it either way.
+[ 1481.0] Okay, so let's pick a titanium supply early.
+[ 1486.4] That's the one.
+[ 1487.4] And as we know, every good mission needs a name. So I think we should call this one, whole cargo A2B raw or titanium stuntman 2 supply grade. What do you think?
+[ 1495.4] Yeah, sounds perfect.
+[ 1496.4] Sick. Okay.
+[ 1497.4] I'll change mine then.
+[ 1502.4] Okay, so difficulty. Right. What do we think? What's the first thing? Oh yeah. Okay. How much combat are we going to be doing? No combat.
+[ 1510.4] Yeah, there's no combat design than this.
+[ 1512.4] Zero combat. What's the next one? Oh right. How complicated is it? So I think it's routine.
+[ 1519.8] Yeah, yeah. Just moving some containers, putting things with your tractor beam on the cargo grid.
+[ 1524.8] All right. So I got to ask right here. Hold on. You said no combat designed for this.
+[ 1529.8] Correct, correct.
+[ 1530.8] But I mean, if this mission spawns closer to Grimhacks or...
+[ 1535.8] Right.
+[ 1536.8] That's a variable that we would change, even though we're not intentionally adding combat to it.
+[ 1540.8] Correct. You have to take where it's going to...
+[ 1543.8] Absolutely.
+[ 1544.8] ... where it's going to happen in those.
+[ 1545.8] Absolutely. So we know this one is Seraphim 2, Cruell 1.
+[ 1548.8] Oh yeah.
+[ 1549.8] But absolutely, it wouldn't be zero risk of action in any case where it's not zero risk.
+[ 1553.8] Absolutely. Not with Birks out there.
+[ 1555.8] Well.
+[ 1557.8] Yeah.
+[ 1559.8] So, we aren't going to be breaking a sweat.
+[ 1563.8] No.
+[ 1564.8] Because it's not complex.
+[ 1565.8] Not very complicated.
+[ 1566.8] And...
+[ 1568.8] Apparently even breaking a sweat. Is that an official term?
+[ 1571.8] Yeah. These are for designers.
+[ 1573.8] Okay.
+[ 1574.8] And I think we need to know how to fly docking quantum.
+[ 1576.8] Yeah. That would be preferable if you're going to do these missions.
+[ 1579.8] All right. So it says easy.
+[ 1580.8] Easy mission.
+[ 1581.8] Okay.
+[ 1582.8] There will be a whole range for other ones as well.
+[ 1584.8] Yeah. Absolutely. Yeah. They're going to go all the way up to the top.
+[ 1586.8] This is also one of those times.
+[ 1588.8] I'm going to rely on chat to remind people of this throughout the show.
+[ 1592.8] This is a simple front end created to start a conversation to have this with you and stuff.
+[ 1599.8] Obviously, quantum is still in development.
+[ 1603.8] All this stuff gets automated and stuff and all the variables out.
+[ 1606.8] But tools like this are great to check our answers.
+[ 1609.8] Basically, you do it here in a simplified, where all design starts.
+[ 1613.8] Yeah. An Excel spreadsheet.
+[ 1614.8] And then you do the same thing in quantum.
+[ 1616.8] And when you get the same results, you're like, okay, quantum is good.
+[ 1618.8] And when it's not, you find out where the problem is.
+[ 1621.8] So for the purposes of this show, we're showing you the simple tools,
+[ 1624.8] the little troubleshooting tools that we use.
+[ 1626.8] So, okay. Absolutely.
+[ 1628.8] Yeah. EVR is an algorithm. It's not an Excel spreadsheet.
+[ 1632.8] This is just for illustrative purposes.
+[ 1634.8] This is one of those times where we have to trust the audience.
+[ 1637.8] Yeah.
+[ 1638.8] Share the message.
+[ 1639.8] Yeah.
+[ 1640.8] Okay.
+[ 1641.8] All right. The next part of EVR is time.
+[ 1643.8] Yes.
+[ 1644.8] So we're going to figure out how long this mission would take more or less.
+[ 1646.8] Okay.
+[ 1647.8] So I just happened to know, based on numbers that we have tested internally,
+[ 1653.8] that somewhere in the middle, let's say around 95, because that's between 80 and 110,
+[ 1660.8] that would take you around four, four and a half minutes to load.
+[ 1663.8] And you're going to have to load it and unload it.
+[ 1665.8] So let's put nine in loading.
+[ 1666.8] Okay.
+[ 1667.8] Now you're going Serifim to Cruell one.
+[ 1670.8] So there's no orbits involved.
+[ 1672.8] So that's zero and zero on those two.
+[ 1674.8] Trying to leave or enter atmosphere would increase the time.
+[ 1677.8] It would, because you're going to have to get through the 10K and back again.
+[ 1680.8] And then the actual quantum travel is what, a minute between Serifim?
+[ 1685.8] I mean, generously.
+[ 1686.8] It's probably 30 seconds.
+[ 1687.8] Spooling up and everything.
+[ 1688.8] Yeah.
+[ 1689.8] Okay. So that is 10 minutes total.
+[ 1693.8] So we have the mission.
+[ 1695.8] We have the difficulty.
+[ 1696.8] We have the time.
+[ 1697.8] So if we hit the magic calculate button, again, just as a caveat, this is an illustrative tool.
+[ 1703.8] This is not the way that we work out for all of the missions.
+[ 1706.8] That involves code and algorithms.
+[ 1708.8] But if you hit the magic button, hit it, then somebody knows how to write script.
+[ 1714.8] There we go.
+[ 1715.8] In Excel.
+[ 1716.8] And it makes a little pretty number.
+[ 1719.8] Now I know that there's a lot of people looking at that going 4,000 UEC.
+[ 1723.8] That's ridiculous.
+[ 1724.8] What's the point?
+[ 1725.8] If you take into account, this is a 10 minute mission.
+[ 1729.8] So if you were organized, you could do maybe five of these an hour.
+[ 1736.8] So then you're looking at 20K.
+[ 1738.8] Or you could maybe even do a bit more if you had a friend helping you.
+[ 1741.8] So the comparison is going to be a tricky thing right now because all anybody rightfully knows and understands is how it's been before.
+[ 1750.8] Absolutely.
+[ 1751.8] As this means develop a new scale, we'll begin to emerge.
+[ 1757.8] Has this continues to evolve?
+[ 1758.8] Has this begins to grow?
+[ 1760.8] The idea of what 4,000 credits will change over time.
+[ 1764.8] Some people will embrace it.
+[ 1767.8] Some people won't.
+[ 1768.8] Some people will punch chairs.
+[ 1769.8] Yeah, I'm on that.
+[ 1770.8] I just found out about it like five minutes before the show.
+[ 1772.8] So it's like new information to me.
+[ 1775.8] But yeah, so just keep that in mind that this is a scale that will continue to evolve and change and stuff like that.
+[ 1781.8] We can actually illustrate that.
+[ 1782.8] So here's what I prepared earlier.
+[ 1784.8] If you just pick a slightly later one supply late, okay?
+[ 1789.8] And so then we need a titanium one for supply late, which is going to be many more.
+[ 1793.8] So somewhere around 300, 400 SCU.
+[ 1796.8] And this one is a multi-four.
+[ 1798.8] So what does that mean multi-four?
+[ 1800.8] That means that this mission has been generated to multiple locations in a single hall.
+[ 1808.8] So the one we've been doing and been discussing is you've got one location where you pick things up and one location where you drop things off.
+[ 1815.8] But actually within the Stanton universe, sometimes it's just more efficient to send a single supply ship to either deliver or collect cargo from multiple nearby outposts.
+[ 1826.8] So in this case, that's one of those examples where you'll be asked to do a slightly more complicated mission.
+[ 1832.8] You've got to pick things up in one place.
+[ 1834.8] I believe this one will be from Seraphim Station and then you've got to deliver it in any sort of different order.
+[ 1840.8] And that means, you know, the mission will be taking a bit more time.
+[ 1842.8] And that means you've got to consider completely different things like how do you pack?
+[ 1845.8] How do you load your cargo bay?
+[ 1847.8] If you're going to go to this place first, you don't want to put that in the middle.
+[ 1851.8] You want to put that near an edge.
+[ 1853.8] So you have to actually think about the logistics of how you're unpacking and packing the cargo bay and what will fit and what you're doing in more order and that kind of stuff.
+[ 1861.8] And that will become especially interesting once you find missions that ask you to deliver multiple commodities to multiple locations.
+[ 1868.8] Because what you can't do is pack, you know, all the titanium in the back and then, you know, all the iron or what it would be in the front.
+[ 1877.8] Because then once you arrive at your first location, I ask you for a little bit of titanium and a little bit of iron.
+[ 1882.8] Well, you've got to undo it all and take it all again.
+[ 1885.8] So this really asks you to have knowledge of your ship and to understand how to do the logistics of putting things on your cargo grid.
+[ 1892.8] Which is probably the... there's a lot of big changes in 324, but that's probably the one that...
+[ 1898.8] Yeah.
+[ 1899.8] There are people who understand it.
+[ 1901.8] There are people who understand it and understand the fundamental change that is to start a citizen.
+[ 1907.8] But I still think it's going to surprise some folks.
+[ 1910.8] You know, it's like, oh, like now so many more tasks that were meaningless before now have additional weight, have additional importance to the overall experience.
+[ 1919.8] And again, absolutely no number you ever see in ISC or SEL is ever the final number.
+[ 1927.8] Ever, ever, ever, ever, ever, ever.
+[ 1931.8] That's true.
+[ 1932.8] We're always working properly.
+[ 1934.8] Okay.
+[ 1935.8] So actually this is a good example of a different one.
+[ 1937.8] So because we have a multi-form, we're in and out of what?
+[ 1941.8] Don't go punching your chair over at times.
+[ 1945.8] Because we're in and out of orbit because we have to go to more places.
+[ 1949.8] This is no longer a zero risk of action.
+[ 1951.8] So I reckon there's a distinct possibility of some kind of PvE.
+[ 1955.8] I mean, you could get unlucky.
+[ 1957.8] You might get pirated by Birx or anyone else.
+[ 1959.8] Other pirates are available, Voidi.
+[ 1961.8] Or you, so you're going to need moments of intense concentration.
+[ 1966.8] I would say you're going to be more than breaking a sweat.
+[ 1968.8] You might even lose your cargo.
+[ 1970.8] Your ship could get damaged and you're going to need those mechanics.
+[ 1973.8] So that is now a medium.
+[ 1975.8] So that's obviously going to ramp it up on the EVR scale.
+[ 1979.8] But also the time is different.
+[ 1980.8] So we did some quick calculations and we think that in total,
+[ 1984.8] it would take you to deliver this cargo in 16 SCU boxes,
+[ 1990.8] which is what a supply late grade is,
+[ 1992.8] 43 minutes to load and unload all of those different times.
+[ 1996.8] Now, if you had a crew, you might be able to do that quicker.
+[ 1999.8] If you were smart, where you packed it, you might be able to do it quicker.
+[ 2002.8] If you play the game better and smarter and faster, you're going to do better.
+[ 2008.8] You're going to need to do three orbits from surf from down to up, down, up, down.
+[ 2014.8] And you're going to need four downs.
+[ 2016.8] So three ups and four downs.
+[ 2018.8] And you're going to need nine minutes of quantum travel in between.
+[ 2022.8] So that is pretty much an hour of gameplay for just that one mission.
+[ 2028.8] So if you press the magic button now, it's definitely not magic, it's just Excel.
+[ 2034.8] Ah.
+[ 2035.8] Okay. So that's how EVR scales.
+[ 2037.8] So you could do it quicker and faster with more people,
+[ 2043.8] and then you could do it in less than an hour.
+[ 2046.8] And then you could afford to pay people to fly with you.
+[ 2049.8] And you could do all manner of things if you think about it.
+[ 2052.8] The calculate time is sort of like a par for the course.
+[ 2057.8] That's a great...
+[ 2058.8] This is what we expect it to be.
+[ 2061.8] It's not that it can't take longer, it can.
+[ 2064.8] It's not that it can't be done quicker.
+[ 2066.8] Absolutely.
+[ 2067.8] But yeah, it's interesting.
+[ 2068.8] Yeah, that's exactly what it is.
+[ 2069.8] Par for the course would be this.
+[ 2071.8] And if you get a birdie, you're better, you're making more money.
+[ 2073.8] Exactly.
+[ 2074.8] All right.
+[ 2075.8] I think that means we've now found out the numbers that I need to find out.
+[ 2079.8] 4,250.
+[ 2080.8] The other one was 4,250.
+[ 2081.8] All right.
+[ 2082.8] Do you remember the SCU class?
+[ 2084.8] Yes, I do, because it's definitely not written down on this piece of paper.
+[ 2087.8] 80 and 112.
+[ 2089.8] I'm going to go do a thing.
+[ 2092.8] You guys keep going.
+[ 2093.8] All right.
+[ 2094.8] An eight, yeah.
+[ 2095.8] We've got a computer here.
+[ 2096.8] This is a 4,250.
+[ 2098.8] That would be the payout.
+[ 2100.8] Yeah.
+[ 2101.8] There you go.
+[ 2105.3] Okay.
+[ 2106.3] We save it from here.
+[ 2107.3] And basically, that's how you make a single cargo hauling mission.
+[ 2113.3] So there's a lot more of these, a whole host of different records that the system can generate.
+[ 2121.3] This is the mission that we just discussed on the map, which is a hauling mission from
+[ 2130.3] Seraphim Station to the refinery.
+[ 2133.3] And that's what it would look like.
+[ 2134.3] Is that description correct?
+[ 2136.3] Yeah.
+[ 2137.3] Yeah, that's correct.
+[ 2138.3] Right.
+[ 2139.3] So we can quickly go in-game so I can show you what that looks like.
+[ 2145.3] Yeah, we should just make sure that everything is right before we do that.
+[ 2155.2] Keep going.
+[ 2156.2] It's all right.
+[ 2157.2] Okay.
+[ 2158.2] I just gave David a little button he could push.
+[ 2160.2] Normally, what we would do is we would save this thing, boot the bootstrap, start the
+[ 2166.2] client.
+[ 2167.2] If you've seen Elliot's episode, then you know the whole shebang.
+[ 2169.2] But actually, we can find one that I made earlier.
+[ 2172.2] Are you saying we're more organized than Elliot?
+[ 2175.2] That's not hard.
+[ 2177.2] No comment.
+[ 2178.2] You can, yeah, good job.
+[ 2179.2] You can hide the, just bring the letters back up when it's, when you feel like it's necessary.
+[ 2184.2] So here we are on Seraphim Station, which is, as you know, the location where this mission
+[ 2190.2] can be found.
+[ 2191.2] And here in the contract app, we can see there's a new tab available now called hauling.
+[ 2196.2] And there we go.
+[ 2198.2] That's our mission.
+[ 2200.2] It's real.
+[ 2201.2] It's existing right now in the game.
+[ 2204.2] So is she just clicked on the, who's Jack Axton?
+[ 2208.2] Who knows?
+[ 2209.2] Who knows?
+[ 2210.2] Only Jack Axton knows.
+[ 2212.2] I'm serious.
+[ 2215.3] I don't know who that is.
+[ 2217.3] It's a guy who makes YouTube videos.
+[ 2219.3] Oh, about, about cargo hauling.
+[ 2221.3] Cargo hauling, yeah.
+[ 2222.3] So we, we know you.
+[ 2223.3] We've seen you.
+[ 2224.3] And this, this is a mission for you.
+[ 2226.3] Absolutely.
+[ 2227.3] This is actually only for Jack.
+[ 2228.3] I mean, it says in the description, hello Jack Axton.
+[ 2231.3] Nobody else should, should accept this mission.
+[ 2233.3] Oh, Jack Axton, he's friends with Max Power.
+[ 2235.3] Got it.
+[ 2236.3] Love Max Power.
+[ 2238.3] So as you can see, this is sort of what the contract would look like in your Moby glass.
+[ 2244.3] There is a new little feature here, which previews the different objectives that this mission will require from you.
+[ 2250.3] So again, if this is a multi sort of delivery mission, that means more objectives will show up.
+[ 2255.3] But the mission that we discussed earlier, which is moving titanium ore from serif him station to crew L one.
+[ 2262.3] That's what this mission is about.
+[ 2265.3] King's shocker says, can they explain what the expected rewards will be?
+[ 2270.3] Well, that's in a way, that's what we've been trying to do for the last, for the last 20 minutes or so.
+[ 2275.3] We're, we're showing you the EVR algorithm.
+[ 2278.3] We're showing you some of the considerations that are made as far as what the actual numbers will be.
+[ 2283.3] That's a thing that quite honestly will always be in flux.
+[ 2287.3] You know, and anybody who's worked on an MMO in the past, anybody's played an MMO for several years.
+[ 2292.3] We'll tell you that an economy hasn't ever changed any ever fluctuating thing.
+[ 2296.3] And at the scale that we're attempting to simulate across multiple star systems and stuff, it will be here too.
+[ 2301.3] So whatever that number reads today will not be what that number is.
+[ 2305.3] However many weeks or months after that will not be however it is.
+[ 2309.3] However many weeks or months after that, that is the virtue of quantum, which is again, still the system in development.
+[ 2315.3] Still where all this goes eventually.
+[ 2317.3] It's just, we're at a point now where it's like, cargo, 324 is so important to us, cargo is here.
+[ 2323.3] It's like, we don't have to wait until the finished thing to start laying the foundation of these new types of missions.
+[ 2329.3] We can use these, we can use these other tools that we have.
+[ 2332.3] We can simulate all the same decisions and then it's just a matter of plugging it into the system when that, when that eventually comes online.
+[ 2340.3] So it's one of the more exciting aspects of 324 personally.
+[ 2344.3] I mean, I know all the hanger stuff and it's cool, but the idea that we're going to have these more involved missions that go from chain from one point to another point,
+[ 2354.3] from another point that are generated based on the need and stuff that you've been talking about is probably, for me, it's the signature element of 324.
+[ 2363.3] And again, in two weeks on ISC, we'll be talking about some of the content that's coming in 324, including a whole bunch of these missions we'll be showing you and all that stuff.
+[ 2371.3] We're actually also already thinking ahead of how this can tie in to sort of an automated system in the future that basically robo-yorets me.
+[ 2381.3] So all of this, you know, the mirror that I've shown you earlier, all of this whole rule set of what needs to go where that system can be automated somewhere in the future and then when that system hooks into there.
+[ 2396.3] There's many working parts to the back-end systems, which are variously called Quantum or StarrSim or whatever they're called.
+[ 2404.3] And just like Jared said, this is an illustration of our intent. It's not the final working system.
+[ 2412.3] We will be trying to plug in and we're going to get you a second computer and we'll be trying to play this mission next week and actually show you live one of the new cargo missions that you'll be playing in 324.
+[ 2424.3] Vengeance's mind says, do these cargo things have a buy-in?
+[ 2429.3] Ah, no. Because the... OK.
+[ 2434.3] So originally the design for the cargo missions was how are we going to make sure that players don't just decide this is a perfect opportunity to take a cargo grid of stuff for themselves.
+[ 2445.3] So they need a buy-in.
+[ 2447.3] But of course that feels just the same as commodity trading where you have to have the money in order to do the thing.
+[ 2453.3] And that didn't feel inclusive enough.
+[ 2455.3] And also at a very large scale you want to be able to use your large ship to do long complex logistical exercises.
+[ 2466.3] If you also have to risk a huge amount of money to do that at the same time, you fail once. That doesn't feel good either.
+[ 2473.3] So the whole design ethos change to allow this to be an environment that people could play and thrive in if they follow the rules.
+[ 2483.3] But if they didn't want to follow the rules then because it's a sandbox people will do whatever they will do.
+[ 2489.3] And the interesting thing is that these are not mission boxes.
+[ 2493.3] These are real commodity boxes that are being transported.
+[ 2497.3] And so if you were to misappropriate those boxes and do something else with them, they would be considered stolen cargo.
+[ 2506.3] And they are marked as owned by the corporation that has given you them to transport.
+[ 2511.3] So you would have to sell them at a fence and you wouldn't be getting full market value for them.
+[ 2518.3] Yeah, because even fences consider these cargo containers to be high risk.
+[ 2523.3] Everybody knows that they are originating from a reputable source.
+[ 2528.3] These major corporations of Stanton are basically trading above our heads.
+[ 2532.3] And really whenever they need you they'll just sort of hire you as a space trucker.
+[ 2536.3] Which means a fence location that gets their hands on these.
+[ 2540.3] Chances are they'll probably give you a significant portion less.
+[ 2543.3] And Duran says so no missions will have buy-ins now.
+[ 2545.3] No, we're talking about the differential between commodity missions and cargo missions.
+[ 2550.3] Yes, specifically hauling missions.
+[ 2551.3] So these are a specific new type of mission that do not have the buy-in.
+[ 2556.3] The original missions that require those, those commodity missions still exist and we'll still be making more and more of those.
+[ 2561.3] We got a whole other star system fill and then another one after that, another one after that.
+[ 2565.3] Those missions don't go away.
+[ 2567.3] These are a new type of mission that exists alongside those.
+[ 2570.3] Buy-in is a completely valid mechanic and it's useful for certain archetypes.
+[ 2574.3] But we didn't want to use buy-in for hauling missions.
+[ 2576.3] Because this allows us to essentially build the hauling experience for even the early game.
+[ 2584.3] Where usually sandbox commodity trading would require you to already have capital as we mentioned before.
+[ 2589.3] Here you can go ahead and accept some of these space trucker missions from the corporations.
+[ 2595.3] And at the beginning it will be sort of low value, low risk kind of thing.
+[ 2598.3] But after a while they'll really start counting and after a while maybe you'll be comfortable enough to the point where you'll think of starting your own little freelance business
+[ 2610.3] and going off and buying commodities in the sandbox.
+[ 2613.3] So what does happen?
+[ 2615.3] You've accepted one of these hauling missions.
+[ 2617.3] You haven't had to put up any capital up front.
+[ 2620.3] You've now collected all of these boxes and say you do lose one.
+[ 2626.3] Or one gets damaged or whatever.
+[ 2629.3] What happens to you?
+[ 2631.3] So nothing ever goes wrong in Star Citizen.
+[ 2635.3] I mean you literally stares are fine right?
+[ 2638.3] But just in case something did go wrong.
+[ 2645.9] Just in case something did go wrong.
+[ 2647.9] Pirate comes by for example?
+[ 2648.9] I mean for example a pirate.
+[ 2649.9] Because the commodities have real values?
+[ 2651.9] Yeah or maybe the cargo grid misbehaves or whatever.
+[ 2654.9] Or maybe you run out of time.
+[ 2655.9] Maybe you decide that you're definitely going to do that supply late mission in your Aurora.
+[ 2660.9] Yeah these companies expect their cargo to be moved within a reasonable deadline.
+[ 2665.9] So you have the option to complete the mission early essentially.
+[ 2671.9] So you have the complete button and if you press the complete button what it will do is the mission will take where you currently are at
+[ 2677.9] and it will submit that as your best effort.
+[ 2680.9] Then you will get a partial reward in terms of money and reputation if you do well enough.
+[ 2687.9] And if you don't do well enough you will get a partial slap on the wrist in terms of reputation.
+[ 2693.9] So if you decided to mislay 80% of your cargo grid's worth of titanium
+[ 2700.9] then the people who asked you to transport it probably wouldn't be offering you that mission again anytime soon.
+[ 2705.9] So you take a rep hit.
+[ 2707.9] Right.
+[ 2708.9] And you might make a little money off the side fencing it.
+[ 2711.9] Right.
+[ 2712.9] But you're going to take a rep hit and your future opportunities from that particular guilt will be diminished.
+[ 2717.9] Correct.
+[ 2718.9] Exactly.
+[ 2719.9] So yeah that is essentially it.
+[ 2724.5] We got a few more minutes.
+[ 2726.5] We also got some questions.
+[ 2727.5] Let's see will there be possible small extras that mission givers can give in addition to UEC like small gifts
+[ 2735.5] if you have a good standing six pack or some food.
+[ 2738.5] Super small staff that makes mission givers feel like people that sometimes throw in a non-bonitory bonus.
+[ 2744.5] So basically mission rewards besides just money.
+[ 2747.5] I think this is from the birth of the mission system.
+[ 2751.5] This has been the number one top tier most requested thing.
+[ 2756.5] And we started to see the very first bits of that with the Zeno thread and Operation Overdrive.
+[ 2764.5] We started to see quest rewards beyond just the UEC.
+[ 2768.5] Can this be expected at some point for us?
+[ 2772.5] So I don't want to speak to the entire progression system because that is a design owned by someone else.
+[ 2778.5] But EVR is designed to handle any kind of reward.
+[ 2784.5] So maybe.
+[ 2788.9] I believe we mentioned in last year's CitizenCon that the reputation system will be including this sorts of rewards depending on the kinds of guilds.
+[ 2798.9] I can just go ahead and say he won't speak for it but I can go ahead and say that yes.
+[ 2802.9] Obviously the reputation based rewards through the organization system are one way in which you'll receive items that are not just money
+[ 2810.9] but also there is an ongoing effort to evolve the mission system itself to be able to just outright award items beyond just money.
+[ 2820.9] So when that gets used, where that gets used, that's going to be the discretion of the game design team and the folks who are creating the missions and stuff.
+[ 2826.9] But the tech is there and it's been worked on and you should see more of that just like you saw with the Overdrive and Zeno thread stuff in the near future.
+[ 2836.9] I honestly have no idea what that is.
+[ 2840.9] Shout out to Luke Presley making the reputation system.
+[ 2844.9] Luke I miss you. Love you.
+[ 2846.9] He's still here, I just haven't talked to him.
+[ 2848.9] I just said, sound like he died.
+[ 2850.9] I was talking to him yesterday about this exact thing.
+[ 2852.9] That said, these missions also aren't just built by the mission design team and the economy team in a vacuum.
+[ 2858.9] The whole reason why you might remember seeing Elliot Maltby on the stream building a mission previously, he had to open up the subsumption editor to do the node based logic and that sort of stuff.
+[ 2870.9] These cargo hauling missions have been completely built with code basically.
+[ 2875.9] So shout out to our programming team as well, CGP6 team Dave for helping out and setting up all the logic and the code in the back end.
+[ 2884.9] CGP6, we've got to get better at naming things.
+[ 2888.9] Core gameplay team six.
+[ 2890.9] Yep, that's it right now.
+[ 2892.9] And also thanks to team chat of course for building the freight elevators because without those this wouldn't even be possible.
+[ 2898.9] Yeah, for sure.
+[ 2900.9] This bothers me so I'm going to reveal it.
+[ 2902.9] There was an effort made to give all these teams really cool names but nobody could decide whether they wanted to be named after corporations or named after vehicles.
+[ 2913.9] Like team Anvil or team Valkyrie and stuff like this.
+[ 2917.9] And because we couldn't get a consensus that's why they're still called GP6.
+[ 2922.9] That's just some dirty laundry and it upsets me still that we don't have the cool names.
+[ 2928.9] And so as far as we talk about the types of things that you could haul.
+[ 2938.6] Somebody in chat is unfortunately his name is scrolled by, I've lost it.
+[ 2943.6] He asked how big a thing are we talking about?
+[ 2947.6] Could there conceivably be delivering vehicles and stuff like a whole haul of the new auroras to some other place for a short room or something?
+[ 2957.6] So we do have a design for hauling vehicles but that won't be for this release.
+[ 2962.6] Currently for the release we're basically making use of the different resource containers.
+[ 2968.6] That will mean anywhere from one SCU to I believe 16 SCU?
+[ 2973.6] 32 as well.
+[ 2975.6] So that means it's basically all sorts of shapes and sizes and organizations to do within the cargo grid.
+[ 2984.6] Fury Force is delivering rocks to mining outposts?
+[ 2987.6] Rocks maybe.
+[ 2988.6] Nobody would order a rock DS.
+[ 2990.6] Food?
+[ 2992.6] I thought literally meant delivering rocks to mining outposts.
+[ 2995.6] I was like surely a mining outpost would have loads of rocks already.
+[ 2998.6] Why would they need rocks?
+[ 3000.6] Baibu says let's see the mission Jared.
+[ 3003.6] Next Friday.
+[ 3004.6] Basically we've only got a few minutes left before we have to wrap up this week.
+[ 3007.6] So there's not enough time to even get started.
+[ 3009.6] So we play in a local bootstrap version of the game.
+[ 3012.6] It takes a bit longer to load up and stuff.
+[ 3015.6] Plus we're going to get a second computer in here next week.
+[ 3017.6] So we're going to make Nick and Jared couldn't decide who the better player was.
+[ 3022.6] So I'm just going to make them both play the mission.
+[ 3024.6] It won't be me. I'm terrible.
+[ 3028.6] Any new commodities you can tease?
+[ 3031.6] I know we're talking specifically about the cargo missions but there been any new commodities?
+[ 3036.6] I think there are but I couldn't tell you what they are but Conor would know.
+[ 3040.6] But I think there are new commodities, yes.
+[ 3042.6] Are there new commodities unique to Pyro?
+[ 3045.6] I don't know.
+[ 3048.2] I'm not sure.
+[ 3049.2] Conor is your man for that.
+[ 3050.2] He knows everything about that.
+[ 3052.2] Why are you on the other side of the planet?
+[ 3056.2] We are trying to make use of as many commodities as possible which is why I went through every single one in the game.
+[ 3062.2] And I try to make sense building this whole infrastructure, figuring out what should go where.
+[ 3068.2] Which means you might actually come across some commodities that you haven't seen before.
+[ 3072.2] For example, we've definitely got some missions set up where you're moving quantum fuel, hydrogen fuel, ship ammunition.
+[ 3078.2] And that turns out that this is actually the commodity that is being removed from a location whenever a player lands at a hangar and asks for a refuel and a rearm.
+[ 3088.2] I will say that there are commodities specific to Pyro.
+[ 3093.2] I know that much.
+[ 3095.2] We've had a mission or two in the past where a vehicle was actually provided to do the mission.
+[ 3104.2] Something in the chat is asking if we'd ever revisit that.
+[ 3108.2] Could one of these cargo missions be like, yeah, I got the ship.
+[ 3112.2] It's all loaded.
+[ 3113.2] I just don't have a pilot to fly it for me.
+[ 3116.2] Do we have a space for something like that?
+[ 3119.2] This is something that I actually spoke about with some other designers.
+[ 3121.2] And we decided to not do that this time because there are a lot of different kinds of considerations that come with that.
+[ 3127.2] For example, what if you damaged a ship?
+[ 3129.2] Currently that would probably get you a crime stat because you're damaging somebody else's vehicle just like you would do another player.
+[ 3135.2] Would you have to deliver that vehicle back to the owner in some way?
+[ 3139.2] That adds a whole bunch of different steps and considerations for the law system.
+[ 3144.2] You could rent if you didn't own the ship.
+[ 3147.2] Or rent the ship.
+[ 3148.2] That's essentially what it is.
+[ 3150.2] It's just a question of, you know, you basically have the mission giver basically rent you the ship.
+[ 3156.2] So it is yours during the time being.
+[ 3158.2] Yeah, for sure.
+[ 3160.2] Time's up, Jared.
+[ 3162.2] No, we still got time.
+[ 3164.2] Will we see NPC ships also making these same hauling runs or will transfers just run in the background?
+[ 3170.2] So that's actually a Stasim quantum conversation.
+[ 3174.2] And the sensible answer is it depends.
+[ 3180.2] What you're essentially asking is will NPCs in the Stasim system be physicalized?
+[ 3188.2] That's essentially the question you're asking.
+[ 3190.2] And the answer is it depends.
+[ 3192.2] Yeah, and that's been in the quantum design for ever.
+[ 3196.2] I'm still not used to calling it Stasim.
+[ 3198.2] There will be a selection of them that are physicalized and then the overwhelming majority of them will not be.
+[ 3205.2] Just because it's not, there's no use taking the performance hit for that.
+[ 3209.2] So the answer to how many will be will almost certainly come down to a performance thing.
+[ 3215.2] As the game continues to evolve and as server mission comes online and we start seeing the various performance improvements that we get from that.
+[ 3222.2] As all the game systems are hardened and developed in line with server mission and those begin to harden.
+[ 3227.2] We start to see all these performance improvements that I swear we're all dying for just as much as you are.
+[ 3233.2] That will determine how many of those other ones we can physicalize and put in and stuff.
+[ 3238.2] Because it's we all, there's not a person who works here that doesn't want to see that line of ships leaving area 18 and going up into orbit and hitting quantum and stuff.
+[ 3252.2] We all want it. But it will always come down to a question of do we have that or do we have another player?
+[ 3260.2] And we're always going to pick another player first.
+[ 3263.2] So that's not a question that we have an answer for. There will be some amount of it.
+[ 3266.2] But we couldn't tell you how many yet.
+[ 3268.2] That's actually super interesting that you say another player, Jared, because these missions will tend to concentrate players.
+[ 3276.2] So because the routes are grade specific and the grades are ship specific, then you will tend to find traffic of a certain type on certain routes.
+[ 3289.2] Yeah.
+[ 3290.2] So the chances are that as more players become available on a server, you'll see actual sort of shipping lanes and logistical distribution centers.
+[ 3301.2] Exactly. All of that sort of form and actually it being player driven.
+[ 3306.2] Glitch loading says will there be bounties for when goods are stolen from a cargo mission?
+[ 3312.2] Well, because it's real cargo, you actually, you being the cargo hauler do have the option, assuming it hasn't glitched out the ship and disappeared forever,
+[ 3322.2] you do have the option of retrieving your cargo if you can retrieve it, because it is specific cargo for your mission that you need to deliver.
+[ 3332.2] It isn't the case yet that you could just replace your missing iron with some other iron.
+[ 3338.2] That would be a different mission type. That would be resource gathering coming in the future where you're basically asked to just provide them with an item or commodity from anywhere in the universe.
+[ 3349.2] That's not stolen.
+[ 3351.2] Yeah, yeah, probably not stolen.
+[ 3353.2] Unless you can scratch the vent off.
+[ 3356.2] Chris has talked about that too.
+[ 3358.2] A way to legalize stolen, again for a smaller vic and whatnot.
+[ 3363.2] So if you get pirated on one of these missions, you could totally ask a friend who has really good shots to come out and follow the baddies and get your cargo back before the timer runs out.
+[ 3373.2] Or you could just negotiate.
+[ 3375.2] Glitch was just asking if it would automatically generate a bounty mission kind of thing.
+[ 3380.2] I mean, it sort of does, because if the infraction is above a crime stat three, then a bounty gets generated.
+[ 3387.2] So in a way, because it's systemic, the actions of the aggressor will generate a bounty.
+[ 3395.2] This is one of our first times having, Nick.
+[ 3398.2] You've done one SCL before, and then your first ISC will air in about two weeks and stuff like this.
+[ 3404.2] You talk with the everybody's demeanor is different.
+[ 3407.2] Nick has the trauma that only a developer can have.
+[ 3411.2] You can see, like, the players who play Star Citizen, they've got all their own stories and how many times they've 30K, how many times they've been killed by an elevator and stuff.
+[ 3421.2] Developers have a whole other special kind of trauma of just why doesn't this work?
+[ 3426.2] Not even like there's another bug that's causing it to work.
+[ 3429.2] Like, I just coded this. It should work. Why doesn't it work?
+[ 3432.2] And I appreciate how you've hedged some of your answers to it.
+[ 3437.2] Like, gosh, if that thing works, yeah, you should be able to do this.
+[ 3441.2] And gosh, if that thing works, that's saying, no, we don't put, you know, spokespeople in front of the camera and stuff.
+[ 3446.2] We just get the real people.
+[ 3447.2] And I just, I hope you all appreciate that as much as I do.
+[ 3450.2] It worked on my machine.
+[ 3452.2] Let's see.
+[ 3455.2] The cargo will have a mark like they do now with smaller boxes?
+[ 3461.2] A mark?
+[ 3462.2] A mark.
+[ 3463.2] A mark.
+[ 3464.2] I'm not sure what that means.
+[ 3466.2] You will be able to differentiate hauling mission cargo from player bought commodity cargo.
+[ 3472.2] You will be able to differentiate that visually.
+[ 3474.2] Okay.
+[ 3475.2] Currently, you could do that using a tractor beam where it will actually give you information about the different kinds of things that you're moving.
+[ 3481.2] So you'll have information about the commodity that you're moving, but also it should mention whether it's contracted or not.
+[ 3486.2] And then further in the future, we're looking into making that information available with your ship scans as well.
+[ 3492.2] So if you're a pirate, you scan a ship.
+[ 3495.2] In the future, you should be able to differentiate.
+[ 3497.2] Not just pirates, you could be an escort.
+[ 3499.2] Sure.
+[ 3500.2] You should be able to distinguish what cargo is worth taking and what isn't.
+[ 3505.2] All right.
+[ 3506.2] Well, that about does it for our time.
+[ 3508.2] Thank you so much, Yoran and Nick, for taking the time to put this together.
+[ 3512.2] We'll be back some weirdness notwithstanding next week to actually play through one of the missions live.
+[ 3520.2] This will be your first chance outside of tech preview channel stuff to actually see one of the new cargo missions of Star Citizen played live.
+[ 3527.2] And then the following week, you'll see ISC where we'll showcase a couple of different ones and a little more, a much more compact kind of version of what we're doing these two weeks.
+[ 3535.2] So like this.
+[ 3536.2] If you haven't, check out this week's Inside Star Citizen.
+[ 3540.2] Yesterday's episode was our How We Work special on the level design team.
+[ 3545.2] Lots of great looks at some aspects of Pyro that you haven't seen, as well as a really nice discussion about taking the lessons we've learned in Stanton and applying them to Pyro.
+[ 3555.2] And I know I've seen a lot of the comments like, you're going to apply those lessons back to Stanton?
+[ 3559.2] We sure hope so.
+[ 3560.2] It's always just a matter of priorities and just being real with you.
+[ 3564.2] We would all like to.
+[ 3565.2] And then last week, our Meet the Team weapon content special.
+[ 3571.2] So bad it makes people punch the chair even before they've seen a frame of film.
+[ 3582.3] Don't do it.
+[ 3583.3] It's a new chair.
+[ 3585.3] These chairs are pretty good.
+[ 3587.3] They could take a punch.
+[ 3589.3] And then come back for ISC next Thursday.
+[ 3595.3] That's one that'll probably make a couple of people punch the chairs.
+[ 3599.3] There's not a second of gameplay footage in that episode.
+[ 3602.3] That's our Dev Diary episode where we invited members of the UK networking team to basically tell us all about the seven major tech preview tests that have gone on between November 2023 and April of this year.
+[ 3618.3] Where the very first server messaging stuff and the first server recovering stuff.
+[ 3621.3] And it's basically just them telling you how it went and stuff.
+[ 3623.3] But it doesn't really look like anything.
+[ 3625.3] So it's a Dev Diary.
+[ 3627.3] We're going to try a thing.
+[ 3628.3] And then we'll be back with these guys.
+[ 3629.3] So you have a week to prepare yourself for an ISC with no B-roll.
+[ 3635.3] Punch your chair, punch your friend's chair.
+[ 3638.3] Just go to Florida.
+[ 3640.3] I'm sorry.
+[ 3642.3] You just told me about it like five minutes before the show.
+[ 3646.3] I hadn't seen it.
+[ 3647.3] I didn't know about it.
+[ 3648.3] And it was just right there in the front of my brain.
+[ 3651.3] Don't punch your chairs, people.
+[ 3653.3] There's better ways.
+[ 3654.3] Chairs have things too.
+[ 3656.3] I'm not going to go that far, Nick.
+[ 3658.3] That's weird.
+[ 3659.3] For Star Citizen Live, that's Yorick.
+[ 3662.3] That's Nick.
+[ 3663.3] I'm Jared.
+[ 3664.3] Come back next week when we'll actually play a mission live.
+[ 3666.3] And we'll see you then.
+[ 3667.3] Take care, everybody.
+[ 3668.3] Bye.

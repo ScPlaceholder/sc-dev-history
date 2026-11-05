@@ -1,0 +1,59 @@
+## Star Citizen Patch 3.13.0k
+Alpha Patch 3.13.0k has been released to the PTU and is now available to test! Patch should now show: VERSION 3.13.0-PTU.7266741.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Cave Entrances
+- FPS Cave Missions
+- Ship to Ship Docking
+- Signed Distance Fields (SDF) Shield Tech
+- Reputation UI
+- New Quantum Sensitive and Timed Delivery Missions
+- Pushables T0
+- Mounted Guns
+- Force Reactions - Staggers
+- Cyclone MT
+Known Issues
+- Players cannot use the Pitch, Yaw, or Roll controls whilst flying the 100 Series
+- Game  client console is spammed with "[Info][Code][Services][Social]  <WebRTC/Janus plugin> [PluginHandle::SendData]" when camera enabled (this could cause performance issues so we recommend not using FOIP this build)
+- Players may get a random Crime Stat when Killing a Bounty
+- ASOP displays as "unable to spawn at this time" and could fine the player for spawning a ship with one already on the pad
+- Constellation Ship Elevators lose collision when snub ship is undocked
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- When refuelling quantum fuel with hydrogen at full, the '100% fuel' announcement will repeat until quantum fuel is refilled
+- Character will suffocate for a few seconds whenever you change helmet
+- Weapon icon, Ammo count and Grenade count are missing from the user HUD
+- Leaving a trolley in a door way will clip through the floor erratically and can kill players
+- Prowler wing "feathers" do not have SDF coverage
+- Bright / Opaque fog volume encompassing cockpit of ships at Lagrange point / Near gas clouds
+- Star Marine Elimination ends in a draw immediately after game start, If 2 or more players join before game start countdown is complete
+## Feature Updates
+Locations
+- Enabled ship firing within the Port Olisar Greenzone
+## Major Bug Fixes
+- Fixed an issue causing ships to becoming impounded shortly after summoning them
+- Fixed an issue causing players to be unable to interact with any seat in multiple vehicles if they leave it while in Quantum Travel / QT
+- Ship loadouts should no longer be removed when naming a ship
+- Fixed an issue that could cause the player to let go of pushable trolleys when it wasn't intended
+- Alt-tabbing out of the game and back in, when it is set to fullscreen, should no longer cause the image to become frozen
+- Docked merlin enter interactions should now show when Constellation is moving
+- The RSI Constellation Andromeda should no longer be missing doors and elevators when spawned with livery green paint
+- Players should no longer be missing the animation or get stuck in seats when using "Sit" at multiple locations as a female character
+- Fixed an issue causing ships to fall through a planet surface collision after entering the pilot's seat upon return from logout
+- Fixed an issue causing the Star Runner Fuel scoop to not gather enough fuel to restore ship's fuel tank
+- Exiting a vehicles turret while moving the mouse should no longer cause the players steering to be stuck
+- Fixed an issue causing Ground Vehicle Remote Turrets to not fire
+- When the player is interrupted via a mission details pop up while using the search bar in the Delphi tab thier game should no longer become unresponsive upon leaving the mobiGlas view
+- Fixed an issue causing mission locations around New Babbage from appearing
+- Fixed missing geometry near the cave entrance near Lorville causes player to fall through the world
+- Opening mobiGlas or equipping an item during MedPen Heal animation should no longer cause the player to pull out another MedPen that doesn't work
+- ReplaceMe textures should no longer be present on the floor of the Lorville customs gate
+## Technical
+- Fixed 2 Client crashes
+- Fixed 2 Server crashes

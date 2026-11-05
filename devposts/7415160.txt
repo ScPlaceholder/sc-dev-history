@@ -1,0 +1,59 @@
+## Star Citizen Alpha Patch 3.24.3
+Alpha Patch 3.24.3 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.3-PTU.9420892.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- IAE Halls
+- Save Stanton Global Event
+- New Vehicle: Polaris
+- New Vehicle: Starlancer Max
+- New Vehicle: Crusader Intrepid
+- New Vehicle: Anvil Terrapin Medic
+- New Vehicle: F7C-R and F7C-S
+- Updated Standard & Polish: Anvil Terrapin
+## Known Issues
+- Multivehicle - PU - Vehicles - Player will clip through ship's geometry and will be pushed outside upon respawning in ship's medbay
+- PU - Stanton - IAE2024 - New Babbage - Locations / Vehicle / Renting / UI - All Days - The Drake Mule and Argo MPUV Cargo found in the Cargo Showroom have the pop-up AR rental UI (Workaround: Use Rental Kiosk)
+- PU - Social - AR markers - Party markers are not visible to other party members
+- RSI Polaris - PU/AC - Vehicles / Turret UI - Polaris Turret pips are missing on locked targets
+- The Argo ATLS currently cannot be destroyed (Not intended end goal and player inside is still vulnerable)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - Multivehicle - MFD - MFDs can be interacted with while in mobiGlas
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+## Features & Gameplay
+Ships and Vehicles
+- Crusader Intrepid Polish
+Based on player testing and feedback on the Intrepid's firepower, we have upgraded the default loadout from a Size 3 to a Size 4 KLWE Laser Repeater.
+- Starlancer MAX: Copilot now has Radar Access. Various Starlancer MAX Lighting, LOD, and Art Polish.
+- Updated Quantum Fuel values for most ships to fit designated archetypes and ranges. This will increase some while decreasing others.
+- Bombs now Inherit the Hostility of the Launcher Entity (AI and PDCs can now detected hostile bombs)
+- Terrapin Medic additional breakable parts and destruction VFX Polish
+- Terrapin and Hornet Variant Afterburner Polish
+Core Tech
+- Further Entity Performance Polish
+## Bug Fixes
+- Fixed - AI - PDC - Prevent PDCs firing at their owner ship's ordenance (STARC-139967)
+- Fixed - Aegis Eclipse - PU/AC - Vehicles / UI - Radar is in center of hud elevated above intended radar position (STARC-130274)
+- Fixed - Multivehicle - PU - Medical - Ship medical bed screens are stretched and cannot be interacted with (STARC-132489)
+- Fixed - MISC Freelancer - PU/AC - Vehicles / Invulnerable Spots - Freelancer has invulnerable spots causing it to take no damage (STARC-135414)
+- FIxed - Polaris Fuses are destroyed easily and shuts power off to ship (STARC-139854) (Disabled Fuse system as setup not intended for 3.24.3)
+- Fixed - RSI Polaris - PU - Vehicles / Audio - The Audio cue for enabling and disabling weapons and shields via the power management MFD does not play
+- Fixed - Multivehicle - PU - Vehicles - UI - Star Map UI will briefly pop up over the radar when the player exits the pilots seat
+- Fixed - Anvil Terrapin Series - Vehicles / Multivariant - Tech Art / Collision - Landing Gear- PU - The Anvil Terrapin lacks complete landing gear collision allowing players to walk through them
+- Fixed - Crusader Intrepid - PU - Vehicles / GFX - Lighting - It is not possible to change room light states manually anywhere but engineering
+- Fixed - Anvil Hornet F7C - All Variants - PU/AC - Vehicles/loadout - The F7A Mk2 Nose Turret is equippable on the F7C Mk2 Variants
+- Fixed - PU - Stanton - IAE2024 - Lobby - New Babbage - Locations / Streaming / Performance / Transit - All days - When moving from the IAE halls via the elevator to the IAE main lobby it is slow to stream in
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash

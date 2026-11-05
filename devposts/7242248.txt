@@ -1,0 +1,62 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9357571.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: Currently Wave 1
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+The current build is no longer under NDA
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- New Arena Commander Updates
+## Known Issues
+There are still a few locations around the PU such as Grimhex, Prison, and a few areas of New Babbage and Orison that have greyed out elevator panels. New Babbage and Orison will be fine to get to the hangar but won't let you back up into the spaceport.
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP terminal screen will be stuck on the getting vehicle list screen until terminal times out
+- PU - Stanton - Locations / Transit / Hangars - Some elevators have greyed out panels and do not respond when called
+- PU - UGF / Mission Content / Locations / AI - AI are not consistently spawning inside or around UGFs
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Multivehicle - Quantum Travel / mobiGlas / Star Map - Unable to plot a route to obstructed destination
+- PU - Stanton - Missions / UI - Mission Objectives are missing from multiple UI elements
+- Multivehicle - PU - Vehicles / Ship Refuel - MISC Starfarer is not refuelling other ships
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+- Multivehicle - PU - Resource Network - Mining and Salvage heads throttles default to 0
+- PU - Stanton - Multivehicle - Vehicles / MFDS / UI - Scanning MFD reverts to Ready to Scan after scanning ships with no cargo stored (STARC-130414)
+- Gatac Syluen - PU - Vehicles / Elevator - Syulen is missing the internal elevator (STARC-130168)
+- Carrack bottom right MFD has no display (STARC-130157)
+## Features & Gameplay
+Ships and Vehicles
+- Ship Hud Polish
+Added New weapon ammo type icons to Weapon Config Screen. Added tooltip for MFD.  Changed cursor when able to scroll the Power Management List.
+- Reduced Overall Hull and Thruster Health for the Hornet Series Ships
+Core Tech
+- Render to Texture Shader Improvements
+-Added additive blending of source pixels to scene with multiplier
+-Added additive blending of bloom with scene (with multiplier) along with a saturation factor
+-Combined hard drop-shadow offset with blurred soft shadow, along with individual multipliers for both
+-Added chromatic aberration with custom offsets
+## Bug Fixes
+- Fixed - Resource Network - Default power distribution does not balance pools equally
+- Fixed - PU - UI - mobiGlas - Starmap / Quantum Travel - Cannot set route while in close proximity to the surface of a planet (STARC-116277)
+- Fixed - ARGO ATLS - PU - ASOP / UI - The ARGO ATLS suit is appearing at top of ASOP list and not with the rest of ARGO ships (STARC-127256)
+- Fixed - ARGO RAFT - PU - Vehicles / FPS Weapons - Multi-Tool - Tractor Beam / Tractor Beam Rifle / Cargo - An invisible barrier blocks tractor beams from hitting boxes attached to the cargo grid when standing under the ship (STARC-123302)
+- Fixed - Multivehicle - PU - Vehicles / UI / MFD / HUD / Inner Thought - cockpit button interactions overlap the MFD after being initially hovered over (STARC-130562)
+- Fixed - Salvage / CryAstro / Restock - Using Cryastro restock service fill up the fillerstation to maximum capacity with salvage material (STARC-129445)
+- Fixed - PU - Inventory / UI - Custom Filter tick box not showing a clear selection indicator for the chosen category (BUG-197375)
+- Fixed - RSI Constellation Series - ( ALL VARIANTS ) - PU - Vehicles / Actor - Interactions - Interaction points to lower the elevators to enter are out of reach from the ground (STARC-130676)
+- Fixed - PU - Vehicles/Elevator - Carrack is missing elevators
+- Fixed - PU - Vehicles/Elevator - Syulen is missing elevators
+- Fixed - PU - Vehicles/Elevator - Hull-C is missing elevators
+- Fixed - PU - MFD hotkeys - There is no option to continue cycling with the MFD hotkeys
+- Fixed - PU - Stanton - Multivehicle - Vehicles / UI / MFDS - Ground vehicles have ship configurations in their general configurations
+- Fixed - PU - Front End / DNA Character Customizer / UI - Hair/Facial Hair - The Hair/beard/scalps textures will mix up and will not match each other
+- Fixed - Multivehicle - PU - Vehicles / Ship Refuel - MISC Starfarer is not refuelling other ships
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 3 Server Crashes
+- Fixed 1 Server Deadlock

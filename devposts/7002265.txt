@@ -1,0 +1,72 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9221646.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Evocati
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of Evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.24.0 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+This build will have a shut-off time at 10pm CDT with the caveat that we may have to take it down sooner if the build stability hinders testing.
+- Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hover Trolleys
+- Hangar Decorations
+Not Ready for Testing/Feedback
+- Cargo Hauling Missions
+- Cargo Commodity Rebalance
+- Dynamic Event: Blockade Runner
+## Known Issues
+- Multivehicle  - PU - Vehicles / Physics / Transit / Locations - Stanton - Instanced  Hangars - Players transitioning from a vehicle transit carriage to  instanced hangar floor will instead transfer to planet physics grid and  fall through surface
+- PU  - Kiosk - Storage Access / Inventory - If a player force closes /  disconnects while taking out/withdrawing items from storage, the items  will be lost that were being withdrawn - 100% Repro
+- Stanton - Locations / Performance - Item Bank / Freight Elevator - Frame rate will dramatically drop if players own many items
+- PU - Stanton - Graphics - Flashing artifacting when looking in certain directions
+- PU - mobiGlas - Comms Link - UI - Cannot enter text in chat for app
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP Terminals fade to black when accessed after delivering a vehicle
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- Origin Jumpworks 300series - All RSI website Customized Variants - PU - Vehicles/ UI - 300 series that are customized through RSI website for additional flair items does not have any flight HUD/UI
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- Robert Space Industries - PU - Vehicles/EMP - unable to activate EMP
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multiweapon - Backpack Reloading - Sometimes weapons fail to reload if reloaded from Backpack
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Features & Gameplay
+Gameplay
+3.24 fundamentally changes how players interact and organize their belongings. From Cargo, to items to ships. Freight Elevators will introduce a new mechanic for retrieving and storing larger items at various locations. Hangars will now be instanced and in case of personal hangars, persist everything within them. Ships are now spawned via Ship Elevator and Item Banks now replace the omnipresent local inventory. To connect these updates with other existing content, we’re also introducing Hover Trolleys and Hangar Decorations.
+- Personal & Instanced Hangars
+Introduction of new tech that creates an instance of the player's hangar to allow for uninterrupted management of cargo, inventory, and vehicles. Personal hangars are found at the player's home location and allow for customization and organization of the hangar interior.
+All hangar types are instanced, meaning they are able to physically stack on each other in the same location without interference. All hangar types have ASOP terminals, Item Banks, and Freight Elevator (SCU amount depends on hangar size). All hangar types have ship elevator platforms which will lower when players request a ship to be spawned. Any ships already on the platform will be lowered and then stored via asop. All hangar types should be accessible to party members of the Hangar owner. Players can only retrieve ships while inside a hangar that fit the size of the hangar.
+Personal Hangars exists for the player at the selected home location at all times and is as big as the largest ship on the player’s account (ships purchased in-game don’t increase size of personal hangar). Any items left inside the Hangar will persist indefinitely, though items on the Ship loading platform may disappear
+- Freight Elevators
+Implementation of systems and content for players to physically load and unload cargo to and from their ships by conveying cargo to and from hangars, landing pads, garages, and docking collars. For the new cargo flow we will be storing cargo in the local player inventory and allow them to use the freight elevator in their hangar to access the inventory physically. This will be extended to cover the location inventory access that is currently handled by personal inventory. This means that anything stored to or retrieved from local inventory at a location must be accessed by the freight elevator. Furthermore we will remove the 'invisible' player inventories for vehicles in favor of using physicalized inventory inside the ship. All ships have at least some small personal inventory that the player can put personal items for easy access. Additionally, we will be adding physicalized inventory containers available for purchase that players can use to store and haul larger items in the cargo hold. The freight elevator kiosk will have added functionality for inventory management including sub inventories like these boxes so players can move things around and recall it for manual transfer on/off their ships.
+Players can find Freight Elevators in personal and staging hangars, as well as outposts and scrapyards. Players can interact with a Freight Elevator Kiosk (FEK) to load items onto the elevator platform. Players can put items on a Freight Elevator platform and then interact with the kiosk to store items to their warehouse. Players can see information about mission relevant items when storing and retrieving them via Freight Elevator Kiosk.
+- Commodity Kiosk Updates
+Players can buy different SCU-sized containers via Commodity Kiosk. Upon purchase of commodities, players can chose to automatically load them onto a stored ship at a cost of aUEC for the automatic loading service. This will take an amount of time during which the ship will be inaccessible for automatic loading process (information on loading progress is visible on ASOP terminal).
+- Storage Access
+Storage Access kiosks exist in various places in all landing zones and space stations. These kiosks replace the old local inventory. Using these kiosks, players can store and retrieve FPS items via the Storage Access UI.
+- Hover Trolleys
+Players can purchase Hover Trolleys at Cargo Decks in space stations and Dumpers Depot in Landing Zones. These can be retrieved and stored via Freight Elevators. These new hover trolleys can navigate much rougher terrain than wheeled trolleys.
+- Hangar Decorations
+3.24 brings decorations into player's hands. These new decorations can be purchased at Kel-To and Dumpers Depot then retreived from their hangar's freight elevator. These decorations can be placed anywhere a player wants in their Hangar and have full interactions like sitting on chairs and couches (caveat that the Ship Platform will delete items stored on the ship elevator while storing ships). Hangar Decoration will persist in personal hangars but will get deleted in staging hangars (Hangars that you don't own outside of your main landing zone)
+- Added ESP Dampening Strength Modifiers to Game Settings Tab
+- mobiGlas Contract App UI Polish
+Ships and Vehicles
+- Made Further Minor Flight Controller Tuning Changes to most ships for Afterburn and SCM Speeds
+- Increased RSI Mantis Engine Attachment Health
+- Reduced RSI Mantis Emissions
+- Greatly Increased the Health on All Ship Gimbal Sizes

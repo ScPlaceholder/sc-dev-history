@@ -1,0 +1,52 @@
+## Star Citizen Patch 3.14.0
+Alpha Patch 3.14.0 has been released to the LIVE environment, and is now available to test!   Patch should now show: VERSION 3.14.0-LIVE.7698044.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+- Upon launching the game, the player may receive a 16008 error (Most likely requires a character reset and logging out of the launcher)
+- After logging out in a ship bed or crashing, logging in can result in Error 20018 or a long loading screen where ship/player spawns at Stanton star (Most likely requires a character reset and logging out of the launcher)
+- After a server connection timeout (Error 30K), a "Bad Token" error may be presented, preventing loading back into the Persistent Universe (requires game restart to workaround issue)
+- Star Citizen may crash immediately after pressing "Launch Game" in the Launcher (Recent potential app conflicts: Acronis Active Protection, Comodo, Sonic Studio Contact RSI Technical Support if the issue persists)
+- Elevators or environment content will occasionally be missing in the PU
+- Players are unable to leave a party from the Main Menu (Workaround: Open Star Marine Multiplayer (any mode) > select "Invite" > select "Leave Party" > exit back to main menu)
+- The chat window is positioned too low to be fully readable whilst in a vehicle on Ultrawide monitors
+- Using a medipen may occasionally have no effect
+- Swapping FPS weapons drops or removes the original weapon
+- Mineable commodities data in Scan Mode displays incorrect Percentage Values
+- The player may become unable to open Hammerhead turret doors, leaving them trapped inside
+- Constellation Andromeda co pilot unable to target while in missile operator mode
+- Elevators at Grim Hex fails to complete animations and elevator can lose functionality
+- Search missions such as shipment lost and lost cargo do not update once the player has collected the cargo box
+- Unable to complete box delivery missions in Area18, as kiosk rejects boxes
+- Distortion weapons can lead to the friendly fire threshold being met in only a few shots
+- Demon Fang Combat Knife asset is missing from the game
+- When entering the pilot's seat of the 100i, the animation may not complete, leaving the player facing away from the windscreen
+- Occasionally, the Quantum Drive may start spooling with no known cause
+- Sometimes, after spooling and calibrating the Quantum Drive and attempting to initiate the jump, nothing happens (Workaround: Move ship reticle away, then move back to recalibrate)
+## New Features
+Locations
+- New Planet: Crusader
+- New City: Orison Landing Zone
+Comprised of a latticework of platforms suspended in mid-atmosphere on the gas giant Crusader, Orison is considered one of the most picturesque locations in Stanton.
+- New Babbage Hospital Interior Location
+Adding the interior of the Brentworth Care Center in New Babbage. The first pass of this location will add in the hospital lobby and as well as remodel of the Aspire Grand lobby to accommodate the expansion and future gameplay.
+Gameplay
+- Law System v2: Surrender
+The addition of Surrender allows players to be arrested without losing their life, an important feature as the game moves closer to mechanics where the decision to surrender or risk death by fighting / fleeing will carry much more weight. Players will be able to surrender by coming to a halt and powering down their ships when ordered to by security. Security will halt their attack and arrest criminal players (and impound the ship if owned by a criminal). Surrendering will give the player a reduced sentence when sent to prison. All players inside a criminal's ship at the time of surrender, regardless of criminal status will be sent to prison when the ship is impounded. In the current implementation, players can not surrender to other players.
+- Missile Operator Mode
+The new Missile Operator Mode will be used to separate the gun and missile/torpedo gameplay within ships. Using this mode will give pilots additional control over what missiles/torpedoes are fired, and give them a more distinct and important role in the overall flow.
+Accessing Missile Operator Mode: Players can toggle in and out of Missile Operator Mode using the default keybind (middle mouse button). Upon accessing the mode, players will lose control of any other ship weapons and gain control of the missile systems. All other weapons will return to neutral gimbal positions, stop tracking, etc., while the missile weapon systems deploy. Activation of Missile Operator Mode will cause the ship to emit increased signals.
+Selecting Ordnance: Rather than being limited to a certain size or tracking type, Players will now be restricted to only be able to lock and fire one kind of missile at a time (e.g. Ignite/Rattler/Arrester). In addition, each missile rack will only be able to stock one model of missile. Note that while pre-existing split loadouts might still technically 'work', they are not intended to be supported so there may be UI issues. On entering the mode, one type of missile will be automatically selected, ordered by model for consistency across ships and play sessions. Players can then cycle forward and back through these missile types, with the currently selected missile prominent on the HUD. The display will also show the previous and next missile so the operator is aware of what they will cycle to next. Players can set how many missiles they wish to fire in a burst (G and LAlt+G by default) up to a maximum value. They must then wait for each missile to arm before it can be fired.
+Locking a Target: If a player is in Missile Operator Mode and has a Locked combat target, the missile will automatically begin locking onto the target. The locking process is no longer binary - after a minimum level of lock to acquire the target, the longer you lock for, the ‘better’ the lock becomes, and the harder the missile will become to spoof. This is achieved with a simple multiplier of the targets signal (e.g. a target may have a real signal of 1000, and at full lock the signal amplification may be x5, so the missile would perceive a signal of 5000 instead). This means that the missile requires other contacts to have a significantly larger signal than the original to be distracted by them. A target must be fully resolved (i.e. its signal must be the largest in the detection radius) before a missile will track it, meaning that enemy targets can try and outplay another ship locking a missile to them by releasing countermeasures or flying close to larger targets before the missile is even launched. If the missile's target isn’t fully resolved before launch, it will simply dumbfire forward.
+Firing Ordnance: At any point after the first missile has been armed, the player can initiate the launch procedure, which will fire any currently armed missiles and begin a cooldown until they can next begin arming missiles. If the player begins firing missiles without a lock, the missiles will be dumb-fired. This can be used for ground targets, bombing runs, emergency situations, or to avoid enemy ships being notified about incoming missiles/combat locks. If more than one rack has the same type of missile, then missiles will be expended from the racks in a staggered rotation (e.g. if three racks each have 8 Ignite missiles on, and the player chooses to fire 8 Ignite missiles, the first two racks will each fire 3 missiles and the third will fire 2, in ABC rotation).
+- Missiles - Guidance & Control Rework
+Converted missiles to use the IFCS guidance and control systems. This will improve missile performance and tracking ability, enabling greater control over general missile behaviors.
+Ships and Vehicles
+- New Ship: RSI Constellation Taurus
+Core Tech
+- Planetary Volumetric Clouds v1
+Initial version of a bespoke system to convincingly render multi-layered, volumetric clouds of varying scale within planetary atmospheres. This initial version is meant for the gas giant, Crusader
+- Graphics Setting Additions
+Added several new graphics settings to help give more control over the player's experience in the PU. Added Volumetric Cloud Graphics options. Added Low/Medium(original default)/High Spawning Distance options to allow the player to pick the distance from the camera at which scattered objects spawn. Also added Low/Medium(original default)/High Terrain Tessellation Distance options.

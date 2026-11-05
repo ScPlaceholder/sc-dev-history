@@ -1,0 +1,62 @@
+Alpha Patch 4.10.2 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.2-PTU.12702947
+- Audience: Evocati Only (Standard NDA)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Event missions in Stanton
+## Features & Updates
+New In-System Event
+A new event has arrived in the Stanton system. Head to Stanton and check your mobiGlas contract manager to find the available contracts. The event includes a dedicated mobiGlas tab, a progress tracking UI, a journal entry, and a reward track.
+VR Feature Test
+- VR is now enabled automatically when turned on in the Launcher. Previously it also had to be enabled separately in the in-game menu, which caused confusion
+- New VR zoom implemented for F-key interaction, precision targeting in ships, and FPS weapon ADS and scopes. A new option, Zoom Gameplay Strength, has been added to reduce the effect or disable it entirely when set to 0. Precision targeting now temporarily snaps the view to the target and significantly reduces look rotation to stabilize the view and reduce nausea
+- GroundedLook mode now correctly uses the aim vector for hand mining and similar activities
+- In Freelook mode, tractor beam aiming can now be controlled with head movement, allowing the same speed of use in the ATLS in VR as on desktop
+Shield Resistance
+Shield resistance values now function correctly when minimum and maximum resistance are set to the same value; previously the restriction that minimum must be lower than maximum caused resistance to be ignored entirely
+Abandoned Ship Cleanup
+Vehicle lifetime overrides extended to Everus Harbor, Seraphim Station, Bajini Point, and Port Tressler, improving cleanup of abandoned ships at these locations
+Character Customizer
+Brow dye opacity slider now defaults to 0, matching the behavior of the hair and beard sliders
+## Bug Fixes & Technical
+2 Client Crashes Fixed
+- Potential Fix: Client crash in VehicleLandingGearSystem compontents
+- Potential Fix: Client crash in the chat caused by cross-entity corruption
+Bug Fixes
+- Potential Fix: Multiple mission types showing "Contract Unavailable" when accepted through the mobiGlas
+- Potential Fix: Combat Supplies cargo being identified as Ship Ammunition by the tractor beam and freight elevator, blocking mission completion
+- Potential Fix: Battaglia Story Mission 2 not completing after delivering the hard drive and speaking with Battaglia
+- Potential Fix: Courier mission item compilation and file path issues preventing missions from generating correctly
+- Potential Fix: Vehicles becoming unresponsive after quantum travel under poor network conditions
+- Potential Fix: Freight elevator loading platform snapping into a raised position with cargo present and the doors closed after state recovery
+- Potential Fix: Remaining cargo disappearing on SingleToMulti hauling missions when all mission cargo was turned in at the first delivery location and sent down the freight elevator twice
+- Potential Fix: Refunded hauling cargo being consumed or incorrectly modifying the remaining cargo
+- Potential Fix: Drake Cutlass (all variants) being raised when lowering the rear ramp, preventing entry through the side doors
+- Potential Fix: Drake Cutlass decals on the right wing remaining visible after the material has been salvaged
+- Potential Fix: Players being flagged as trespassing at Cry-Astro locations while a legal delivery mission was active; unlawful locations and outlaw-controlled Distribution Centers are now excluded from delivery mission location searches
+- Potential Fix: Spawning a Drake Caterpillar with a crew manifest not filling the pilot seat; AI pilots placed in parasite ships on spawn are now supported
+- Potential Fix: Siege of Orison Command Center airlock entrance and exit doors opening unexpectedly during the Mendo Ren encounter
+- Potential Fix: Siege of Orison comms towers not spinning after resetting nodes
+- Potential Fix: Battaglia salvage objective reaching 0% before most or all of the target ship hull had been scraped
+- Potential Fix: Salvage contracts in the Orison Relief Support event being completable quickly enough to finish the entire event and earn a disproportionate amount of aUEC
+- Potential Fix: Event patrol contracts blocked by satellite placement, salvage ships not spawning, and elimination mission AI not behaving correctly
+- Potential Fix: Odyssey II Racing Helmet Alpha having no necksock when equipped with any undersuit
+- Potential Fix: Skullcap Helmet drawcall merging broken, and glass refraction set incorrectly
+- Potential Fix: Aegis Gladius Dunlevy missing its SQ42 decals on the rudders and rear wings on retrieval
+- Potential Fix: Nyx Rock Cracker Dungeon refractor array codes displaying as "0000" despite still working when entered
+- Potential Fix: Habitation area bathroom door showing abrupt LOD detail changes when viewed from a distance
+- Potential Fix: Size 00 radars presenting a group sensitivity multiplier below zero
+- Potential Fix: Yormandi eye socket missing its red texture material when the eye is removed
+- Potential Fix: Players unable to submit multiple mission cargo items at once in the same freight elevator
+- Potential Fix: Main thread deadlock in the mission factory service during universe hierarchy registration
+- Potential Fix: Event platform stair proxies causing movement issues
+- Potential Fix: TH-01 Propulsor fabricator description showing overlapping text
+- Potential Fix: Ground vehicle tires intermittently appearing blurry as though vibrating
+- Potential Fix: Motion vectors on landing gear and bone-attached components not accounting for the previous frame, causing ghosting artifacts
+- Potential Fix: Lephari radar listed in the VMA as Class A instead of Class C
+- Potential Fix: Demeco "Streamline" LMG missing the word "Barrel" in its attachment description
+- Potential Fix: Skullcap Helmet red glowing eyes effect culling when viewed from a distance
+- Potential Fix: Ground vehicle treads not animating with vehicle movement
+- Potential Fix: Event platform tint albedo rendering as pure black
+- Potential Fix: Event relay race and rental contract descriptions containing incorrect text

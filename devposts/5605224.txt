@@ -1,0 +1,87 @@
+After detailing the upcoming balance adjustments and quality-of-life improvements based on your feedback, we're back with the third edition of Alpha 3.18 Patch Watch. Let's get started!
+## Jumptown v2.1
+What started as emergent gameplay before being implemented as a Dynamic Event is now in its third iteration.
+After evaluating your feedback, Jumptown's illegal drug labs have doubled in size for version 2.1. They also now have a second entrance, a second drug dispenser, and multiple windows and skylights. To improve gunplay inside, we made the labs circular and removed most of the doors for better visibility and fire lines.
+And, if you run the mission on the illegal side, you can now also sell the captured Maze at junkyards alongside Grim HEX.
+## MuyMuy Ambrus Suit
+The latest outfit from fashion label MuyMuy finds its way into the 'verse and combines smart-casual design with natural fabrics to give you an elegant look this party season.
+The Ambrus suit will be available in the Aparelli shop on microTech.
+## Ship Bug Fixes
+Everyone loves their spaceships, so here are some fixes that made it into Alpha 3.18 that will make your favorite vessel shine even brighter.
+- Siren lights on the Anvil C8R Pisces have been improved over those in Alpha 3.17.4
+- Gunracks for the jumpseats on the Anvil Valkyrie are now functional
+- Fixed the Aegis Hammerhead's front lifts
+- Shifted the Origin 890 Jump's hangar lifts and doors around so they can be salvaged and scraped
+- Aegis Reclaimer will no longer have issues with players crouching in the cargo bay
+- Origin 600i Touring should now have an atmosphere in the midship lounge
+- Aegis Hammerhead component bays were added in the engine room
+- Smoothed floor collision in the Origin 400i, so there are no tiny gaps in the doors that make you duck down for a split second
+- Argo MOLE and Aegis Vanguard's lockers will now close after being opened
+- Improved the access point for the Esperia Talon's pilot seat to make it safer
+- Aegis Redeemer's rear turret angles tweaked
+- Aegis Redeemer's atmospheric hole near the cockpit fixed
+- MISC Starfarer's rear turret angles tweaked
+- Aegis Vanguard Sentinel's engineering power triangle fixed
+- We have identified and fixed a bug that caused the Greycat PTV to explode while driving on the ice lake outside New Babbage
+- Origin 890 Jump's weapon rack slots should all be functional now
+- Aegis Reclaimer received a minor flight retune to aid its atmospheric performance
+- Aegis Reclaimer has 120 SCU of temporary cargo grids added to the salvage deck to allow easier storage of salvaged materials before requiring transport to the cargo deck area. (This is an interim measure until a more comprehensive rework of the Reclaimer is done to bring it up to gold standard)
+- Further iteration on ground-vehicle speeds (blue = no change, green = increase, red = decrease)
+## Arena Commander Improvements
+With Alpha 3.18, Arena Commander and Star Marine have received quality-of-life and bug fixes following discussions and feedback from players. As well as the successful integration of Persistence Entity Streaming into the module, we're extremely excited to elevate Arena Commander and Star Marine and encourage players to contribute to Issue Council reports and feedback threads so we can make further improvements.
+System / Balance
+- Persistent Entity Streaming successfully integrated into Arena Commander and its related systems
+- Added grey screen effect when dead for all modes
+- The system used to white/blacklist ships from game modes has been completely reworked
+- Bleed-out will now award the shooter, both for causing the bleed-out and for all bleeding damage inflicted afterwards
+- Several UI systems have been updated to Building Blocks
+- The three topmost-scoring players in all game modes now gain an additional 2000, 1500, and 1000 points respectively. All other players gain a 500-point participation award
+- In team game modes, victory now rewards 2000 points, while defeat rewards 500 points
+- The top-scoring player in any game mode is now awarded MVP, which displays in the GameFeed
+- Hemorrhage now displays as a secondary scoring event
+- Ballistic pickup amount increased from 50 to 80%, split across all ballistic hardpoints
+- Items & vehicles should now appear alphabetically in the Rental/Customization screens
+The following ships are now rentable in Arena Commander:
+Aegis Hammerhead, Reclaimer, Vanguard Harbinger & Sentinel; Anvil C8 Pisces, Carrack & Carrack Expedition; Aopoa Khartu-al, Nox & Nox Kue: Argo RAFT, MOLE & MOLE Carbon & MOLE Talus; Banu Defender, Consolidated Outland HoverQuad; Drake Dragonfly; MISC Hull A, Prospector, Starfarer & Starfarer Gemini; Origin 890 Jump; RSI Mantis, Scorpius.
+Modes
+- Increased player limit of FreeFlight from 8 to 24
+- Decreased required player count for Last Stand from 6 to 2
+- Removed third-person camera from Elimination
+- Last Stand now displays player objective in the top right of the screen
+- Duel, Battle Royale, and Squadron Battle have been limited to light and medium combat ships
+- Classic Race has had its allowed ship list expanded
+Maps
+- Adjusted skybox in Dying Star to match the upcoming Pyro system
+- Dying Star has undergone a visibility pass reducing cloud density, glare, and size of smoke particle effects, which led to poor visibility and motion sickness for some players
+Bug Fixes
+- Closure rate marker fixed to give correct velocity towards target rather than full relative speed (game wide)
+- Damaging a friendly with a missile now correctly gives a negative score based on the damage dealt
+- Damaging a friendly with a missile in modes where friendly fire is disabled will no longer damage the friendly target
+- Explosions and collisions now follow friendly-fire rules
+- Last Stand will no longer respawn an already spawned player at the start of a round
+- Duel Mode should no longer affect the Battle Royale leaderboards
+- Fixed various issues with asteroid collisions in Broken Moon and Dying Star
+- Fixed various issues with missing geometry in Dying Star
+- Fixed various issues causing poor performance in Dying Star
+- Fixed various vis-area issues across OP Station Demien, Echo11, and The Good Doctor
+- Fixed various issues where killing a player would not award the full score pool, most notably when getting headshots
+- Fixed an issue where ships would duplicate repeatedly for players who were stuck on the loading screen
+- Fixed an issue where players would spawn into ships with missing components
+- Fixed an issue where a player could spawn into a ship that had no seat
+- Fixed an issue where the player would retain the recoil camera shake from death to respawn
+- Fixed an issue where destroying another ship in Squadron Battle would award 10k team points rather than the value of the destroyed ship
+- Fixed an issue where players who killed themselves in Squadron Battle would give their team -10k points
+- Fixed an issue where friendly fire would affect the team score
+- Fixed an issue where, when renting an item, players would occasionally experience a large hang
+- Fixed an issue where bleed-out kills were displayed incorrectly in the game-feed
+- Fixed a crash when loading into an empty team-based game mode
+- Fixed an issue where self-destructing awarded positive points
+- Fixed an issue where an attacker would receive -1 kill if the target bled out
+- Fixed an issue where the marker for MedPen and ammo containers was not appearing
+- Fixed an issue where attackers would not be credited for kills against players who killed themselves
+- Fixed a crash when acquiring pick-ups
+- Fixed a crash on finishing an Elimination match
+- Fixed a crash when joining team game modes
+Technical
+- Fixed 10 other crashes
+- Made various optimizations to systems, including the playable area, game rules, and rental services

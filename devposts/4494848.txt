@@ -1,0 +1,83 @@
+## Star Citizen Patch 3.15.0p
+Alpha Patch 3.15.0p has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.0-PTU.7849045.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Audience: All Waves
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Issue Council Updates
+- You can now delete your own report before it is confirmed by the community (reports in the "Open" status only). Note: All contributions & comments will also be lost.
+- You can delete any of your own contributions and comments at any time. Note: Any replies will also be lost.
+Testing Focus
+- Server Crash Ship Recovery
+- Healing and Actor Status
+- Hospitals
+- Starlifter Hercules A2
+- Origin 400i
+- Bombs
+- Infiltrate and Defend Missions
+- Loot Generation
+- Personal inventory
+- Orison V2
+- Arena Commander Revamp
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu
+Players will need to exit the game and reload after a server crash to fix this error. This is part of the bug where players used to see a Bad Token after a crash which blocked them from re-entering but with the latest changes, that error is no longer displayed.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Medical beacon does not complete mission/payment when player is brought back from incapacitation
+- Multiple bartenders can be spawned in the same bar at various locations over time
+- Water in Orison is green
+- Player is unable to Enable Freelook in Multiple Ships
+- Cannot Repair, Refuel, Restock at Everus Harbor
+- The Player can have previously equipped items disappear altogether when they exit and load back in as the opposite gender
+- Surface FPS Deposits are missing collision, preventing mining
+- Selecting the carry prompt on weapons inside inventory equips the weapon instead
+- When requipping items from a loot box in zero-g, equipping the torso and arms will cause large amounts of inventory camera shaking
+- The Player is unable to Select Ground Vehicles as a Sell Location on Trade Terminals/Kiosks
+- The Player is unable to Select a Stored Ship in the Refinery Terminal
+- Weapon projectiles trajectory will not behave correctly when shooting from one zone inside a ship to another outside
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Destroying mission-spawned reinforcement type ships does not always trigger the ongoing 'Call to Arms' mission rewards
+- Parts of Area18 cityscape can be seen clipping into the surface of the Spaceport highway
+- Missiles can hit the players ship when they are fired whilst the ship is moving forward
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round
+- Demon Fang Combat Knife asset is missing from the game
+## Feature Updates
+Gameplay
+- Inventory Polish Pass
+Made further performance improvements. Further polish pass on item grid sizes and SCU sizes for many items.
+- Healing, Downed State, and Medical Polish Pass
+Increased the time and distance thresholds for placing actors into medical beds. Polish pass on medical gun and healing animation, UI, and interaction.
+- Quantum QOL
+Made multiple fixes to help Quantum Drive engage more consistently. This should greatly help with issues related to aligning and spooling to a quantum target such as it not triggering when fully spooled and hitting B. Increased distance players QT into comm arrays so that they don't exit directly into the restricted area.
+- AI Behavior and Spawn Closet Polish
+Made Improvements to help with unresponsive and teleporting AI in UGF missions and other locations in the PU. Spawn closets in UGF missions will now randomize which closets spawn friendly and hostile AI. This will also restrict each randomization to 1 faction (hostile or friendly) so that each closet cannot spawn opposing faction AI.
+## Major Bug Fixes
+- Backpacks should now persist correctly between patches and resets
+- Mouse VJoy movement should now allow full rotation potential when flying ships
+- Prison escapees should no longer be sent back to prison upon death if they are in uncontrolled space
+- When downed with a CrimeStat, the respawn location should now correctly update to show the player Grim Hex / Klescher
+- Eliminate All missions should now correctly update upon player arrival at UGF
+- Players should now correctly be able to QT to UGF security post missions
+- Panels around the Starlifter series should now longer use the Origin logo
+- All Actor Status widgets and weapon ammo count UI should no longer go missing after a player 'Grabs' / 'Equips' a Helmet crate or 'Equips' a Helmet directly from corpse
+- Fixed an issue that was sometimes causing the medical scan highlight to not disappear after switching away from the target
+- Drug status effects that are applied to the player should now be cleared correctly upon entering a Medical Bed
+- When trying to customize an FPS weapon, the weapon should no longer be stored in personal inventory, and the attachment is held in hand
+- Alternating between Attachments using the Weapon Customization UI should no longer break it and prevent further changes
+- Using Resugera on an overdosed player should no longer give you a crime stat
+- Fixed an issue causing players to asphyxiate and be in a downed state when relogging If they crash out of the game while not in breathable atmosphere
+- When requipping items from a loot box in zero-g, equipping the torso and arms will no longer cause large amounts of inventory camera shaking
+- Approaching freestanding medical kiosks should no longer cause the player's camera to spin rapidly
+- Trying on an armor set in a store should no longer remove all weapons, consumables and backpacks from the player
+- Fixed an issue causing ship weapons to cease working entirely after dying and respawning in Arena Commander game modes
+- Carrack w/ C8X and Carrack Expedition w/ C8X owners should have their ships on PTU
+## Technical
+- Fixed 4 Client crashes
+- Fixed 3 Server crashes

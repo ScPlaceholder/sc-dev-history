@@ -1,0 +1,15 @@
+## Star Citizen Alpha Patch 3.24.0 Hotfix
+Alpha Patch 3.24.0 has been released onto the LIVE servers, and is now available to test! Patch should now show: VERSION 3.24.0-LIVE.9296942.
+## Technical
+This hotfix will not affect non-LTP items in game so you will not lose consumables, rentals, refinery jobs, character/hangar customization, and home locations.
+## New Fixes - Sept 6th
+- DGS Fix - PU - Jumptown - Missions - Confiscate Contraband - Dispensers do not resume producing Maze following Server Error Recovery
+- Fixed a Vulkan Renderer Specific Client Crash when dogfighting
+## Previous Fixes
+- Fixed - PU - Personal Hangar - ASOP/Ship spawn - Entities that clip under the ship elevator can break personal hangars and ASOP
+- Fixed - PU - Shopping - Trading - Commodity Kiosk - Unable to sell Ores due to "Transition Cost Mismatch" error
+- Fixed - PU - Personal Hangars - When delivering a ship using ASOP, it appears to be stuck at 00:00 until leaving and re-entering the ASOP terminal
+- Fixed - PU - Actor / Vehicles - After streaming out a medical vehicle within a hangar, attempting to respawn in it will break the player character
+- Added handling for spawning when the player's ship cannot be found - fixes some 30009 disconnect on connection errors
+With the medical vehicle changes above, we've re-allowed you to set your respawn to vehicles in hangars, if you die and the vehicle is either streamed in, or was streamed out when not in a hangar, the respawn will put you in the vehicle, otherwise it'll be your last hospital location instead of giving you no location to respawn.
+- Fixed a Server Deadlock

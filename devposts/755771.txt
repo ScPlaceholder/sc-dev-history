@@ -1,0 +1,23 @@
+Greetings, Testers!
+In this post, I'm going to walk you through the basics of logging GPU Crash data so that we can collect as much information on these crashes as possible.
+If you're on an NVIDIA card, we've integrated a library called Aftermath to track what the GPU is doing at the time of a crash. A gpu_error.log that contains additional information will be uploaded to CIG by the crash handler.
+## Requirements:
+- Be on the latest 3.0 build.
+- Have an NVIDIA GPU running the latest drivers.
+- Encounter frequent crashes to desktop.
+## How to see if your latest crash was a GPU Crash:
+- Open a Windows Explorer (WIN+E) and enter : %localappdata%\Star Citizen
+- Open the game.log file in a notepad.
+- Ctrl + F and search for: Is GPU crash:
+- If Yes then follow the steps below!
+## What to do:
+- Close Star Citizen and the RSI PTU Launcher entirely.
+- If you already have a user.cfg file, add the following line and save the file: r_gpuMarkers = 3
+- If you do not already have a user.cfg file, create a new text file in your \Roberts Space Industries\StarCitizen\LIVE directory.
+- Add the following line to the file: r_gpuMarkers = 3
+- Save the File as user.cfg !
+- Run the RSI PTU Launcher and Verify Files.
+- Play as normal.
+If you happen to encounter a GPU Crash after following these steps, we will start receiving your crash data once you upload your report via the Public Crash Handler.
+Once you've sent your data via the Public Crash Handler, please leave a note here with any info you can provide about what you were doing at the time the client crashed!
+Thanks!

@@ -1,0 +1,19 @@
+Hello everyone!
+Back with another Server Meshing Test "D" post action report directly from the Server Meshing Strike team.
+Meshing Test "D" was conducted on Oct 2nd.
+This test primarily included some important optimizations to how the hybrid service processes and "fans out" entity updates to connected clients and servers. This is an optimization opportunity that was observed in previous tests "C". The test also include a a crash fix on the hybrid related to Quantum Jumps.
+While the test did not go as well as we wanted, mainly because of a fast-reproducing crash at higher player counts, we were still able to make important observations.
+The same gameplay observation from Test "C" carry over.
+New observations in Test "D":
+- The optimizations we were verifying in this test were confirmed as working! (No more large stalls in the entity updates)  This delivered major performance to the hybrid even at 900+ players. Very encouraging!
+- A crash in the hybrid at high concurrency prevented the test from being more valuable or testing at even higher counts. The crash did not happen at lower numbers (500). This is the focus of the next test.
+- Confirmed some stalls were still occurring on large streaming batches, most likely responsible for some teleport / warping seen with many players in the same spot.
+- Observed some players getting damage from the reported teleports, especially when many players are close to each other (like in trams)
+- Most ping times and roundtrips were much more stable even at higher player counts. Good to see.
+- Congestion on habs & hangars were still egregious, especially for the hangar elevators.
+The test was scaled back down to 4:500 and left over running for 8 hours.
+We saw full trams and very densely populated areas, spaceport, etc it was really great to see the world come alive...while it lasted!
+We hope the next test will allow us to benefit from the optimizations for a longer period.
+See you all in Test "E"!
+o7
+-b

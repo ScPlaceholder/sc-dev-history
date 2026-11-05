@@ -1,0 +1,70 @@
+## Star Citizen Patch 3.5.0j
+Alpha Patch 3.5.0j has been released to PTU, and is now available to test!  Patch should now show: PTU-1344504.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- IFCS: Heat Rework, Atmospheric flight, Arena Commander
+- Balance: Manual gimbals, auto-convergence, cannons vs repeaters vs scatterguns, ship roles
+- Locations: ArcCorp, Area18, Lyria, Wala
+- Star Marine: All game modes
+- Female Character
+- DNA face customization  system
+- 300i
+Major Known Issues:
+- Some aspect ratios do not work well with the ship HUD.
+- Quantum travel will sometimes drop you out just short of the range in which you can see orbital markers. W/A: Fly forward toward the planetary body until they pop up.
+- Ship AI is still appearing jittery.
+- Zooming in and out of the Starmap is extremely slow. W/A: Use pressing the mouse wheel and dragging the mouse up/down.
+## Feature Updates
+Universe
+- Updated LODs around Area18.
+- Further lighting polish around Area18.
+- Updates and polish to props around Area18.
+- Updated more undersuits to be compatible with the female character and some armor/suit related bug fixing.
+- Populated Area18 with more commodities.
+- Adjusted drug prices and profitability for different commodities.
+- Adjusted restocking and insurance pricing.
+- Added comm arrays to ArcCorp.
+Missions
+- Revised Pacheco mission to have separate objectives for delivering the maze and returning the ship.
+- Temporarily disabling admins so all delivery missions go through locker system.
+- Adjusted hostility marking for bounty missions.
+- Increased mission giver mission rewards.
+FPS
+- Disabling interaction quick select for weapons that are being carried.
+Ships and Vehicles
+- Updated new turret UI for the Caterpillar, Valkyrie, and Hurricane.
+- Reduced the damage of the Tachyon cannons to intended levels.
+- Various audio updates and polish for 300i thrusters.
+- Numerous thruster VFX updates  for polish and to fix some ships missing retros.
+- Adjusted fit of QT VFX for Starfarer, Vanguard, and M50.
+- Reduced retro thrust overheating on the Freelancer.
+## Bug Fixes
+- The Center Mass signs should no longer overlap.
+- Voice should now properly transmit for player to player comms calls.
+- The shop keeper at Area18's Dumper's Depot should now have a mobiGlas.
+- Street vendors should now be standing at their kiosks.
+- Loadout changes on the Star Marine customizer should now persist into game.
+- Repair/refuel/rearm should once again function at all stations.
+- Turret entry for the Constellation series should no longer appear to snap.
+- Players should no longer occasionally be instantly killed in their cockpit from incoming weapons fire while shields are up.
+- Activating the second head in DNA should no longer also activate the slider on the third.
+- Fixed an issue where the mobiGlas menu buttons were appearing in the wrong position.
+- Fix for AR markers for radar contacts that can't be scanned showing up as question marks.
+- Female characters should no longer be placed inside the Greycat geometry when climbing in.
+- Removed Vanduul weapons from shops.
+- Players should no longer get their cruise control stuck at 0 m/s on rare occasion.
+- Hangars at Area18 should have their ambient audio back.
+- Audio should no longer be lost after using an ASOP terminal.
+- Scoring updates for damage in Arena Commander should now consistently display.
+- There should no longer be copious amounts of fog inside the Central Business District at Lorville.
+- Area18 should now consistently assign a hangar when requested.
+- Fixing debug text at several reststops on comms.
+Technical
+- Fixed 5 client crashes.
+- Fixed 2 server crashes.
+- Fixed a server deadlock.
+- Area18 performance tweak.

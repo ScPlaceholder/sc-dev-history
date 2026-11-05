@@ -1,0 +1,37 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12448924
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (reputation speed increase for PTU testing)
+- Wikelo Inventory Updates
+Known Issues
+- Multi-Location - PU - Locations / Loot Generation - No loot boxes are spawned in multiple locations
+- PU - Battaglia - Story 2 - Missions / mobiGlas - "Emergency: Blinding Hope in Trouble" / Story 2 does not populate the mobiGlas (still has a possible cause)
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Feature Updates
+Recco Battaglia
+New Story Rewards: Additional blueprint rewards added to Battaglia Story Mission 1, 2, and 3 reward pools
+VR Feature Test
+Fixed the G-Force blink effect showing differently between the left and right eye in VR, which was causing a disorienting visual mismatch; both eyes now use the same randomness seed based on the current frame ID
+## Bug Fixes & Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash
+- Made further instancing backend stability polish
+- Polish for frequent global lag spikes affecting player's PTU sessions
+- Potential Fix: Collision missing on the Siege of Orison dogleg staircase after transitioning to the main instance, causing players to fall through the floor
+- Potential Fix: Battaglia failing to recognize the player as a valid entity when they walked into her office, causing her not to react or trigger dialogue
+- Potential Fix: Salvage missions not awarding any reputation to the player's salvage faction standing after completion
+- Potential Fix: Nine Tails NPCs in Siege of Orison carrying externally attached magazines and medpens not intended for their loadouts, contributing to performance overhead from excess entity attachments
+- Potential Fix: Package Recovery missions completable by delivering only one package instead of all required packages
+- Potential Fix: Contested Zone final loot room hangars incorrectly rescuing downed players

@@ -1,0 +1,2 @@
+I’m taking about frame rate. The client never waits on the server to proceed with the update/render of a frame.
+It however is entirely plausible that some game code (like enabling QT) could be programmed to be server authorative and need to wait on the server confirming an action before proceeding with some other gameplay logic (eg starting QT) and exhibit a form of lag/delay, but at no point will execution of code or rendering slow down.

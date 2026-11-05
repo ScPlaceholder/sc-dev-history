@@ -1,0 +1,69 @@
+## Star Citizen Patch 3.21.1
+Alpha Patch 3.21.1 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.21.1-PTU.8839699.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Up To Wave 1 Testers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- System - Security - Ship Trespass
+- Mission - Defend - Data Heist
+- New Player Experience - New Babbage
+- Vehicle Headlight Refactor
+- Crusader C1 Spirit
+- FPS AI Behavior Integration
+- Siege of Orison Global Event Re-Activation (Running Sunday on EPTU)
+Features in Partial State and Not Ready for Feedback
+- Tractor Beam - T2 - Vehicle Tractor Beam
+Currently Ship Tractor Beams is in but is having quite a few issues with different ships and functionalities. Currently the C1 Spirit is in the best shape to test this while other ships like the SRV has very disruptive audio issues while using the beam and other ships may not be able to use their tractor beams fully (Nomad, Cutlass Black, 315p, Caterpillar, Hull-C).
+- ARGO SRV
+Known Issues
+- ARGO SRV - PU - Vehicles - Art - The screen for the cargo elevator panel is embedded into the panel housing
+- Stanton - Lorville - Client Performance - Significant drops in framerate when idling at Lorville L19 Habs Lobby
+- Stanton - PU - Graphics - Low resolution textures appear around the PU when settings are maxed
+- PU - Stanton - Ships - ASOP Terminal - Spawning specific ships will cause them to spawn outside of Hangars
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- PU - MultiLocation / Inventory - Inventory Interface does not open in front of some vendors
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- Crusader Spirit A1 - PU - Vehicles / Weapons / Components - Missiles - When the Spirit A1 is travelling at high speed, a fired bomb can rip through the ramp and body of the ship and severely damage the ship
+- Anvil Lightning F8C ALL Variants - Vehicles / EVA - Using EVA to fly into the Cockpit during Zero G will cause the player to gain gravity and fall into the Cockpit
+- Stanton - Backend Services - Service Beacons - After service beacon is abandoned / canceled / declined, player will be unable to receive or accept other service beacons
+- PU - Stanton - Locations / UI - AR Marker showing your assigned hangar does not appear
+- PU - Mission Content - Retrieve Consignment - Datapad is blank / no code is displayed
+## Feature Updates
+Locations
+- New Babbage Lighting Polish Pass
+AI
+- FPS AI Behavior Integration
+With this latest 3.21.1 we have completed the full integration of FPS AI behavior from Squadron 42. These updates, that have been polished and worked on outside of Star Citizen release builds until now, will vastly improve overall difficulty, reaction times, animations, behaviors, and other traits and make combat with them a much more dangerous but rewarding experience.
+Gameplay
+- Data Heist Mission Polish Pass
+Mission Art and Audio FX Polish Pass. Increased data heists personal cooldowns depending on difficulty and decreased the mission deadline from 2 hours to 1 hour.
+- Polish Pass on Tractor Beam UI
+- Balance Update for Tractor Beam Tolerances,Rotational Speed, and Towing Behavior
+- Data Heist Mission Art and Audio FX Polish Pass
+- Further New Player Experience Mission Polish & Bug Fixing
+Ships and Vehicles
+- ARGO SRV Art and Lighting Polish Pass
+- Argo SRV Tractor Beam arm art polish
+- Final Crusader C1 Spirit Art, LOD, and Geometry Polish Pass
+Weapons and Items
+- Added Grappling Recoil to Tractor Beams
+## Bug Fixes
+- Fixed - PU - Stanton - Locations - Multiple Locations - Transit - Elevators - Hab elevators can infrequently fail to spawn
+- Fixed - PU - Stanton - Missions / Law and Criminal - Players are considered Trespassing after completing a UGF mission, destroying any ships near the facility
+- Fixed - PU / AC - Main Menu - UI / Commlink - Players cannot send party invites or join in on contacts from the main menu until entering a party within the Persistent Universe
+- Fixed - Origin 600i - PU - Vehicles / Lighting - The light in the cockpit is too bright
+- Fixed - Drake Caterpillar - PU - Vehicles / Actor - Players are unable to climb the ladder in the Command Access room
+- Loot containers should no longer be deleted by the entity density manager
+- Fixed Players T-posing when using the Caterpillar's Tractor Engineering Station
+- Fixed - Argo SRV - PU - Vehicles - Audio / Components - Tractor Beam - When the tractor beam is engaged in the SRV a constant high pitched frequency is played
+- Fixed - Stanton - UGF - Missions / Locations / AI - Grunt AI do not leave their spawn closets unless the player interacts with them
+- Fixed - PU - Data Heist Mission - When a server is destroyed the disconnect screen vanishes after a while and the screen becomes blank
+- Fixed an issue causing ship components to not always save properly to LTP
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 4 Server Crashes
+- Fixed Server Memory Corruption Issue

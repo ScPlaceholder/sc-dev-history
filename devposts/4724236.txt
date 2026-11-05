@@ -1,0 +1,50 @@
+## Star Citizen Patch 3.16.0i
+Alpha Patch 3.16.0i has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.16.0-PTU.7912978.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Gravlev Rework
+- Law system Improvements
+- Atmospheric Bounties
+- Dying Star Updates
+- Area18 Hospital
+Known Issues
+- Spawn closets do not recognize unconscious AI and close the door on them possibly leaving mission critical AI unreachable
+- Laser Repeaters can directly damage ships through shields
+- Prison Missions do not spawn in Kleischer Rehabilitation Facility
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- Logging out from the Reliant ship's bed and back in will cause the Reliant to be in flight mode and the player is stuck inside the ship sleeping area
+- Cannot Repair, Refuel, Restock at LEOs
+- Players may randomly be enable to select a system to join the PU
+- Pressing and holding F to "Freelook" does not work when piloting the Nox and prevents start up of vehicle using interaction (keybind will need to be used)
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+- Bed logging on a moon or planet - ship falls through surface
+- Ship may despawn after player death instead of staying at it's last location
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+- Players can spawn facing the wrong way at the start of the match or after dying
+- Players can spawn facing the wrong way at the start of the match or after dying
+- Weapon will not holster
+## Feature Updates
+Gameplay
+- UGF Mission Polish
+Changed UGF security from police to guards so Assaulting an Officer is not triggered. Increased leniency on damage taken from friendly-fire threshold of AI.
+Weapons and Items
+- Increased cost of Size 10 bombs
+## Bug Fixes
+- Fixed an issue that was causing players to damage ships while exiting them
+- Medical Beds should now correctly heal injuries
+- Stars should no longer appear to flicker / shimmer intensively when viewed by players
+- AI names on bounty targets should now correctly match the mission descriptions
+- Items should no longer highlight grey instead of green and become unable to change character loadout with affected grey highlighted items.
+- Players should no longer become stuck in the queue to respawn at an ICU indefinitely
+- Killing an AI wearing heavy armour with a knife takedown will no longer cause them to get back up, drop their weapon, and stop responding
+- Gravlev vehicles should no longer be able to be flown to space by rolling side to side
+- After gaining a trespassing crime outside Klescher, logging out and back in will put the player at their original persistence location rather than GrimHEX
+- There should no longer be ReplaceMe balls in the drug rooms of Jumptown
+## Technical
+- Fixed 1 Server Crash
