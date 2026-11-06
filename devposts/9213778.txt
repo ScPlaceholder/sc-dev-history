@@ -1,0 +1,88 @@
+- Build: 13119881 - PTU Channel
+- Wave 1 testers
+- Timeframe for test: Overnight until 2pm Central 20:00 UTC Friday
+Welcome to the first 5.0 PTU! Across our recent Tech Previews we brought new location archetypes to Nyx I, introduced Intraplanetary Server Meshing, and added the Procedural Generation Tracker so that mineables, harvestables and fauna could run across the mesh. With this build we move into PTU proper. The focus this time is the planet itself: Nyx I has had a substantial environment pass covering biomes, flora placement, weather and lighting, alongside new guild halls with mission boards and another round of contract work.
+## Nyx I Environment Pass
+The surface of Nyx I has had a broad polish pass this cycle, concentrating on how the biomes read at both close range and distance. Flora placement rules have been tightened so species no longer appear on ground types they have no business growing in, and the color work has been reconciled between near and far viewing distances so a forest looks the same whether you are standing in it or flying over it. We have also reworked how rock surfaces and medium terrain layers render, which should give geology considerably more depth than it had previously.
+- Forest density updated, with Heart of Woods now spawning in different locations
+- Gutierrezia and green Heart of Woods no longer spawn on beach soil, matching the other land plants
+- Mature Populus now receives random yaw and tilt instead of a fixed orientation
+- Summer foliage darkened, with far-distance color tuning to match close-up color
+- Lemna seasonal offset corrected so near and far colors agree
+- Snow biome accumulation now uses the same surface grouping as the other biomes
+- Clay and granite colors corrected, having previously been derived from the wrong color space
+- Rock shading classes now support parallax occlusion mapping, with height reworked to suit
+- Medium terrain layers now scaled for maximum precision against texture range
+- Bush shading class tweaks, and new shading classes for Nyx I
+- The environment team updated rock and environmental assets with explicit wheeled collision behavior setup per sub-asset following a drivability review
+- Several Nyx I rock variants now ignore wheeled vehicles entirely
+- Dalbergia physical collision restored after being lost in an earlier change
+- Potential Fix: Ground cover floating above the terrain, which now takes the lower of bedrock displacement and soil (STARC-221075)
+## Weather and Atmosphere
+Atmospheric lighting has been reworked so that sky illumination responds to actual cloud cover rather than cloud type. Overcast skies now carry the light that genuinely scatters through a thick layer, which means brighter conditions beneath heavy cloud and a noticeably brighter night sky when it is overcast. Rain, lightning and the day-night temperature range now all follow real coverage too, and the snow effects have been retuned for the elevations Nyx I actually has.
+- Ground storm snow effects reworked, with the elevation ruleset changed so the main effects appear at the higher altitudes needed for Nyx I
+- Rain no longer accumulates below the snow line
+- Lightning strength calculation reworked, separating event location weighting from event strength
+- Lightning strikes are now more likely in lower density cloud clusters
+- Potential Fix: Lightning strikes culling too quickly on planets, with spawn shapes now sized to the targeting mode and strike frequency recalculated on each attempt
+- Planet audio queries now batch surface data lookups
+- Nyx I color grades and far-distance lookup tables updated
+## Guild Halls and Mission Boards
+Guild halls have arrived on Nyx I, giving each guild a physical presence on the planet where contracts can be picked up from mission boards. Alongside these, the wider location kit has had an art and lighting pass, and loot distribution across settlements has been rebalanced following director feedback.
+- Guild hall walls, colors and room tinting reworked, with mesh pieces swapped to give logos breathing room and gloss reduced
+- Guild hall screen materials and cover window geometry added
+- Mission board and notice board backdrops added
+- Command and bridge buildings reworked, including floor heights, ceiling heights and visarea cleanup
+- New depot, campsite and bunker tiles, with loot added throughout
+- Loot quantity and quality increased in locked command building rooms
+- Sniper weapon racks and ammunition loot boxes added to watchtowers, with more ammunition caches across compound tiles
+- Logistics exterior cladding, wall kits and window frames refined
+- Watchtower and storage exterior fixes, plus a new vent prefab
+- Climbable ledges added across depot tiles, agriculture tiles and extractor sites
+- Placeholder ladders replaced with finished prefabs
+- Irrigator and extractor visual effects added
+- Lighting passes across habitation, storage, depot, agriculture, extraction, maintenance and watchtower tiles
+- Defensive turret health increased by 50% at sizes 1 through 3
+- Mining extractor kill volumes set up
+- Level 3 keycard NPCs removed from all combatant class pools except First Legion
+- Potential Fix: Shelf top item ports taking 1 SCU containers where they should take two-handed items
+- Potential Fix: Missing ceiling in an exterior alcove, inner railings around AA turrets, a replace-me decal, and a misaligned door interaction point
+## Contracts
+Contract work continues across the guilds, with the Covalex sets coming online this cycle alongside campsite and missing person work. A number of generation and spawning problems that blocked contracts in the last preview have also been addressed.
+- Covalex contracts enabled, with a first pass on reward balance
+- Campsite contracts enabled, including the Hockrow missing person campsite
+- Eckhart Global contract fixes
+- Missing person mission hooks restored
+- Ship graveyard mission locations added around Nyx I
+- Contract titles and descriptions updated across the Nyx I set
+- Eliminate and Destroy contracts now share a resource slot with interior Eliminate Specifics
+- Espionage and diagnostics data disks are no longer stackable
+- Potential Fix: Red Wind lost shipment recovery contracts not appearing in game
+- Potential Fix: Eckhart Security target AI not spawning
+- Potential Fix: Missing person corpse not spawning
+- Potential Fix: Harvestable mission items being rejected by freight elevators
+- Potential Fix: Contracts requiring too many resource slots across multiple phases
+- Potential Fix: Eliminate All objectives at multi-location contracts
+- Potential Fix: Server rack entity tags for destroy server contracts
+- Potential Fix: “Opening” text wrapping incorrectly
+## Intraplanetary Server Meshing
+Following the introduction of Intraplanetary Server Meshing and the Procedural Generation Tracker in the Tech Previews, this build focuses on the spatial systems underneath it. The entity tracking structures that decide what gets streamed, replicated and simulated have been substantially reworked for planetary scale, and the declaration ceiling for location entities has been raised to cope with the density of procedural surface content.
+- Spatial partitioning rework across entity streaming, the aggregate manager and network replication
+- Maximum location entity declarations raised to 256
+- Fleet service can now mark an unhealthy instance, and provisioned mesh instances can be queried directly
+- AI can once again use cover on planetary surfaces
+- Potential Fix: Party member connection notifications firing whenever a party member changed server authority after a crash recovery
+- Potential Fix: Navigation mesh generation between terrain patches
+- Potential Fix: External navigation link issues
+- Potential Fix: Dynamic objects failing to stream in their surroundings due to instance culling
+## Bug Fixes & Technical
+Fixed 9 client crashes and 1 server crash
+- Potential Fix: Players losing collision with their own ship after leaving a seat, leaving ramps and elevators non-solid (STARC-201214)
+- Potential Fix: Items being lost after being carried (STARC-221212)
+- Potential Fix: Ground vehicles and powersuits not being recoverable through insurance claims
+- Potential Fix: Delivery item ports deleting mission items placed on the wrong port
+- Potential Fix: Only one PvP law enforcement contract being offered at a time
+- Potential Fix: Control terminals in Arena Commander Control not being interactable
+- Potential Fix: Female Levski guards displaying placeholder textures
+- Potential Fix: ASOP terminal sound effects
+- High Risk bounty contracts now award 4,000 reputation rather than 2,000 (STARC-114590)
