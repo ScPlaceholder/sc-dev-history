@@ -1,0 +1,79 @@
+## Star Citizen Patch 3.4.0
+Alpha Patch 3.4.0 has been released to the LIVE, and is now available!  Patch should now show: LIVE-1028053.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Major Known Issues:
+- Several ships will randomly open their canopies with no player input, most notably after quantum travel.
+- Players will become locked to ship seats when using crash recovery. W/A: Land at a station and logout and back in.
+- Mission markers vanish permanently when using crash recovery.
+- VOIP is off by default and will need to be activated manually by the player using the comms app of the mobiGlas.
+## New Features
+General
+- Added sensitivity controls for headtracking in the options menu under "comms".
+- There's now a keybind for stowing and retrieving mission specific utility items "6", which may be required for drug and server blade (relay) related missions.
+Universe
+- Added Lorville Central Business District.
+The Central Business District at Lorville can be reached via the Central Line transit leaving from Leavsden Station.  Within the district you'll find the Transfers Commodity Exchange, the trading headquarters of the city and the office of Jr. Outsourcing Agent Constantine Hurston. The district also features the Hurston Dynamics Showroom where the latest weapons from the arms manufacturer are proudly on display for purchase.
+Missions
+- Added New Mission Giver: Wallace Klim
+Klim is a chemist and a drug dealer found deep within the bowels of Levski.
+- Added Hurston variants for delivery, patrol, bounty/assassination, and ECN missions.
+- Added scramble races to Hurston and its moons.
+- Added Hurston underground bunker FPS AI missions.
+Ships and Vehicles
+- Added Anvil Hawk.
+- Added 600i Touring Variant.
+- Added Freelancer MIS, Freelancer DUR, and Freelancer MAX.
+- Added Constellation Phoenix Emerald.
+- Added visual deployment states and animations for fracturing vs extracting modes on the Prospector.
+FPS
+- Added KSAR Ravager Shotgun.
+The Ravager Shotgun can be found at LiveFire, Skutters, and Conscientious Objects shops.
+- Added Shipjacker armor.
+Shipjacker body armor set which includes the Clash armor set (Levski, Lorville, GrimHex), Secondlife undersuit (Levski, GrimHex), The Butcher helmet (GrimHex), Death's Head helmet (GrimHex) and Why not? helmet (Levski, Lorville, GrimHex).
+UI
+- Added the ability to scan navigation points while in scanning mode.
+- Added an early implementation of sub-system targetting.
+Players can cycle target to different ship components using "I/O" for cycling forward/backward (LALT-T/LALT-Y for keyboard advanced) and "P" (LALT+U) to reset back to core target.
+- Added turret aim/target direction indicators to both the turret and pilot visor.
+A white cone/pyrimid indicates the direction the turret is facing, which will tint red when the turret gunner is firing. If a turret locks onto a target, an orange dashed line will be drawn from the turret toward the target. These are visible to all other turret gunners and the pilot.
+Arena Commander
+- Added the ability to rent ship weapons and components from the Arena Commander menu set.
+## Feature Updates
+Universe
+- Updated party marker.
+- Added a unique outline color for untargetted, unscanned rocks when mining.
+- Changed the repair and refueling cost at the rest stops to reflect a small degree of scarcity associated with them.
+- Smoothed out AI animation to prevent stair bobbing and teleportation.
+- Adjusted mining volumes and mineable entity geometry.
+Missions
+- Updated mission objective marker to be more visible and include a secondary objective where appropriate.
+- Bringing an invalid vehicle or placing your vehicle within another should now disqualify you form scramble races.
+- Improved FPS AI strafing behavior.
+- Increased the time given to the player for delivery missions.
+- Improved missile management for AI piloted ships.
+- Temporarily disabled the admin at Lorville.
+- Updated Battaglia's mission description to state where she is located.
+- Moved the illegal deploy mission to the "personal" tab.
+- Temporarily removed the "recover stolen goods" mission due to outdated mission flow.
+- Added Eclipse, Arrow, and Terrapin to ship scramble race option.
+UI
+- Improved 3D ship model preview manipulation controls.
+- Added a UI warning for whem attempting to extract with a full hold of mineable ore.
+- Players can now hold "F" and use WASD in vehicle seats to quickly flick between MFDs.
+- Added visor chat to the comms MFD.
+- Interaction mode now has a quick select option.
+Pressing "F" quickly will activate the default interaction option of the hightlighted objected.  Disabled while in the pilot seat.
+- Creating 3D icons for mining.
+- Removed unused and unneeded port information from the shopping kiosk.
+- Updated quantum travel markers.
+Travel markers now have unique symbols for different types of destinations (outposts, major stations moons, planets, ect), a dashed outline to indicate locations on the far-side of a planetary body, and marker size correlated to distance.
+- Added a "disband group button" for the party leader.
+- Made the video call feed on direct P2P comms calls less transparent.
+FPS
+- Balance pass for the Karna rifle.
+Arena Commander
+- Added a select/rent ship button to main Arena Commander splash screen.
+- Added manufacturer's logos to the ship selection screen.
+- Updated rental text.
+- After successfully renting a ship the selection now shifts to that ship.
+- Updated Hawk and Arrow Arena Commander scoring.

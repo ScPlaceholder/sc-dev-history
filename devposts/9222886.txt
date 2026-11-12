@@ -1,0 +1,14 @@
+Alpha Patch 4.10.3 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.3-PTU.13160301
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+## Bugfixes & Technical
+Further final performance and logging updates
+- Potential Fix: Vanduul Incursion Defend Ship contracts are incorrectly spawning a Mauler on the lower difficulty variant (STARC-222178)
+- Potential Fix: ASOP terminals leaving the Retrieve option greyed out indefinitely when a hangar loading platform became stuck mid-movement. The platform now re-synchronises itself against its doors, and a pending store or retrieve is cancelled cleanly rather than leaving the player stranded in the changing-ships queue (STARC-214984)
+- Potential Fix: Assigned hangars at Levski containing no elevator or elevator control panel, preventing access to the location entirely (STARC-223491)
+- Potential Fix: Vehicles failing to spawn for Battaglia medium salvage contracts (STARC-218966)
+- Potential Fix: Players able to reach the engine room aboard the Drake Caterpillar during Battaglia
+- Potential Fix: Players clipping past the barricade blocking the Command Module door during Battaglia Story 1 Phase 2 and becoming stuck
+- Potential Fix: The uplink card being ejected after insertion into the card reader during Battaglia Story 2, with the drive now correctly destroyed on delivery
+- Potential Fix: The Drake Golem missing its audio alert when carrying unstable Quantanium

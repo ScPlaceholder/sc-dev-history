@@ -1,0 +1,848 @@
+# Star Citizen Live | Tech Talk with Benoit Beausejour
+# https://www.youtube.com/watch?v=k1bXLQ5U-w8
+[    5.3] Hi everybody, welcome to Star Citizen Live Tech Talk with Benoit Bossejour.
+[   11.3] I'm your host, Jared Huckabee, and if you've never seen Star Citizen Live before,
+[   16.3] no, it's where we take usually about an hour out of our week and we chat with the developers.
+[   23.6] On these special shows that we do with our good friend Chief Technology Officer
+[   27.6] and all around swell guy Benoit Bossejour, we usually take a bit longer.
+[   32.6] Last time we took three hours, the first time before that, it was close to three hours,
+[   37.6] it was maybe two and a half hours. This time we're clocking in at about two hours
+[   41.6] because we have meetings that we have to go to at about two hours.
+[   46.6] So, yeah, I ran out of gas. What else do I do in the intro?
+[   54.4] Oh, I got introduced to person. So, I've mentioned this person in Benoit Bossejour a few times.
+[   61.9] So, let's go ahead and meet Benoit Bossejour. Benoit?
+[   65.9] Hi.
+[   66.9] Hi.
+[   67.9] I have to say I'm impressed with your pronunciation.
+[   70.9] It's been like 12 years now.
+[   73.9] No, but it keeps getting better every time it's been.
+[   76.9] I practice privately.
+[   78.9] There you go. I know. Thank you everybody. Hi everybody.
+[   81.9] Tell everybody who you are and what you do for Star Citizen.
+[   84.9] So, I'm Benoit Bossejour. You want me to say it again?
+[   87.9] No, okay, good. I am the Chief Technology Officer at CIG.
+[   91.9] So, I guess the best way to describe it is if it has a computer chip in it,
+[   96.9] I'm kind of involved in a way. So, I run the engineering teams,
+[  100.9] a star engine group, and I meddle with all areas of the game,
+[  106.9] trying to get us forward to our 1.0 release.
+[  110.9] Meddles are good to worry.
+[  111.9] Yeah.
+[  112.9] My blood sugar is weird or something. I can't see with my glasses.
+[  115.9] I'm getting better without my glasses, so we're going to take off my glasses.
+[  118.9] Although, I'm going to have to do the show like this.
+[  121.9] Now, I can't see anything else, but I can see this.
+[  124.9] All right. So, on these shows, on these special tech talk shows,
+[  130.9] we are going to cover a variety of topics.
+[  133.9] So, these topics have all been discussed ahead of time.
+[  136.9] We worked out Benoit as involved as he is with so many aspects of the game,
+[  142.9] so we're going to be able to get the opportunity to check in with other directors
+[  145.9] and get updates on what they're doing and so that we can provide you
+[  148.9] the most up-to-date and accurate information.
+[  150.9] So, this will be a show that's less about taking questions from the chat
+[  154.9] or from the community and more about just a very candid conversation
+[  158.9] about the current state of the game, the development, where we've been,
+[  162.9] where we are, where we're going, and that stuff like that.
+[  165.9] So, I've divided the show up at this point into sort of three things.
+[  170.9] Teams for Benoit.
+[  172.9] Oh, that wasn't in chat. I was just talking to myself.
+[  179.2] No, that wasn't chat.
+[  183.2] Send a DM after the show.
+[  186.2] That's not appropriate.
+[  188.2] So, we're going to start the show with updates to existing endeavors.
+[  191.2] So, this is the third one of these we've done.
+[  193.2] We've talked about a couple of things.
+[  195.2] So, I'm going to update on a few of these topics that we've been covering through this
+[  198.2] before with the second section where we get into some new things that we haven't discussed.
+[  202.2] So, let's start with the biggest one, which is server meshing.
+[  206.2] We're now a year on.
+[  208.2] We talked about it. Ad nauseam leading up to this thing.
+[  212.2] It's now been out a year.
+[  214.2] This is probably the last time we're going to talk about it for a while again
+[  217.2] until dynamic comes and we're not going to put any dates on that.
+[  221.2] So, let's just put the story of server meshing.
+[  225.2] Let's put a button on the story of server meshing and break it down into four sections.
+[  230.2] How's this gone? How's this last year been?
+[  233.2] Well, so, like if I recap, like almost same date this year, last year,
+[  238.2] almost, yeah, was when we actually launched 4.0 and server meshing actually went to the live environment.
+[  245.2] And so, yeah, it's kind of the one year anniversary of the tech being available for all players.
+[  251.2] It's been surprisingly solid.
+[  255.2] I like to say that this way because it's a very large system.
+[  259.2] But it has been, it has given us just good foundation for what we have to do last year
+[  269.2] in terms of the content drive that we've pushed forward,
+[  272.2] the performance improvements that we wanted to deploy.
+[  275.2] It was like we were expecting a lot more turbulence with the release of server meshing than we've had in a year.
+[  282.2] It's been a very, very stable system overall.
+[  286.2] And so I would say like, you know, if I look back at the year,
+[  289.2] obviously there's always problems with new technologies,
+[  292.2] but server meshing itself has been very, very, very solid for us.
+[  297.2] So in the quite frankly years leading up to it, talking about it,
+[  303.2] it began to get this mythology that it was going to be this silver bullet.
+[  309.2] It was going to be this one-stop fix that was going to fix so many issues.
+[  314.2] It didn't fix every issue in the world. It was never going to fix every issue.
+[  318.2] But I want to talk about what it has enabled for us in this last year.
+[  321.2] So what are some of the benefits that we can draw a direct line from server meshing that we've experienced in the last year?
+[  328.2] Well, like if you walk back to the start of an experience before 4.0,
+[  333.2] so before server meshing got introduced, you know, a server crashing, that was the end of your session.
+[  341.2] You would lose your ship, you would lose your cargo, everything would disappear.
+[  344.2] You'd have to reconnect, restart the client, start over, right?
+[  349.2] I mean, anybody who's lived through the first years of development of the project know how intense this was, right?
+[  356.2] And so the first thing that server meshing brought us is server recovery.
+[  361.2] And so because of the fact that the replication is separated from the simulation,
+[  366.2] when a game server crashes, which is where most of the crash risk exists,
+[  371.2] well, the state of the replication is still good.
+[  375.2] So we just tell you, hey, we're getting another server, you stay there.
+[  379.2] And when it comes back, we can recover exactly where you were.
+[  381.2] You don't lose your ship, you don't lose your cargo, you don't lose your materials.
+[  385.2] And I think that's been a very, very big, it's kind of the Hansang hero feature of server meshing.
+[  391.2] It helps with engagement, playing longer sessions, finishing missions.
+[  396.2] And so for me, that's like one of the big, big, big pluses that was brought in with server meshing.
+[  403.2] On top of that, and we did have some crash isolation to be clear in 324 and before, right?
+[  411.2] But what server meshing really brings also on top of that is crash isolation.
+[  415.2] So if a server is in charge of the Crusader area, and he's the one running into issues,
+[  421.2] then only that area is affected.
+[  423.2] And so the player who's, you know, bounty hunting in pyro, something like that, he's completely saved from his crash.
+[  429.2] And that just, the perceived stability has increased a lot based on that.
+[  434.2] On top of all the work we've done to prevent servers from crashing in the first place,
+[  438.2] but just this whole setup has made the game a lot more stable in that sense.
+[  444.2] So that's just the kind of meat and potatoes of what meshing has brought us.
+[  449.2] But the key bit it brought us also is much larger player counts.
+[  454.2] And so we used to be limited to 100 players per server, which had the whole universe to simulate.
+[  460.2] Now we've got a series of servers simulating the universe.
+[  464.2] And so we also laid between caps of 600, 700, 800.
+[  468.2] We're still experimenting going higher with this, depending on multiple factors that cap changes for the moment.
+[  475.2] But just the fact of having more players in the same shard means you can have an event where 200 people show up at one area.
+[  482.2] Surprisingly enough, we've also discovered things through this,
+[  485.2] that sometimes game servers actually perform better with more players in one area
+[  490.2] than one server simulating the whole universe would, because he has less entities streamed in.
+[  496.2] And now it's all about updating the components in that area.
+[  499.2] So we've seen certain events, because players always find a way to organize something that should be a problem.
+[  508.2] But there was a 400 player party in one of the bars on New Babbage,
+[  514.2] and we looked at the server performance through that, and it was actually very, very decent.
+[  519.2] So we expected the full meltdown, but it was actually good.
+[  522.2] That enables that experience. Obviously there's a million other problems to solve for this to be a really good experience,
+[  527.2] but from a server meshing point of view, that was a big win.
+[  531.2] You've got a 500 player meetup coming, I just saw some of that.
+[  534.2] I know, it's like that becomes a kind of common thing, and we love it, because that's exactly what the tech is meant to enable.
+[  541.2] And then obviously the two other things that meshing has brought us this year is two new solar systems.
+[  550.2] And so for years we've been stuck in Stanton, expanding the Stanton system, more POIs, more plan, more things.
+[  557.2] And now suddenly we were able to branch into Pyro, which was everybody at CIG was really looking forward to that.
+[  564.2] It was like, it was internal tension at when are we going to launch this thing?
+[  569.2] I've been working on this for a long time, and so that was really a relief to be able to get players to cross the JumbGate.
+[  576.2] So the JumbGate technology obviously comes with meshing, and so expanding into two systems in one year.
+[  581.2] Being able to add Pyro in January, you know, tech preview was in December of the year before, but it went live in January,
+[  587.2] and then next goes live in November of the same year.
+[  590.2] It's this the most common question.
+[  596.6] We've been doing this for a long time now, here.
+[  599.6] Forget other places, we've been doing it just here for a long time.
+[  602.6] And one of the most common persistent questions is about the pace of development,
+[  607.6] and people have been waiting very long for certain things, justifiably so.
+[  613.6] And we've always maintained that its development kind of works on a...it builds, it builds and it builds,
+[  622.6] and you get more efficient after you build the tools, after you build the foundations,
+[  625.6] you get more efficient, you can do more later on this year.
+[  629.6] Because of server meshing, we were able to kick out two-star systems, and we're still expanding on Nix.
+[  635.6] Every patch this year will expand Nix even more.
+[  640.6] The one in March is looking to expand a bunch of the service stations,
+[  648.6] and our first big content drop, which I'll go ahead and say right now, is supposed to be Rock Cracker.
+[  655.6] If you watched what was it called? Citizen on Direct?
+[  659.6] We have names. You can learn more about that, but we're currently working towards that as our March release,
+[  665.6] and then on and on just continuing to build out Nix until, I think in the Road to 1.0 presentation at Citizen on two years ago,
+[  675.6] well a year and a half ago, Rich Tywer acknowledged that Caster would be our next system whenever that comes online.
+[  683.6] So it's just this technology.
+[  685.6] It's unlocked the capabilities to do what you're doing.
+[  688.6] We can actually start to deliver so many of these things that we've been talking about, working on behind the scenes,
+[  694.6] Instancing has some role in that.
+[  696.6] Absolutely, absolutely.
+[  698.6] There's one more thing that server meshing brought us that's not negligible,
+[  704.6] is a very substantial gain of performance on the game server in general.
+[  708.6] So like 3.24 game servers were running, we had a very low bar for acceptance on FPS for game servers,
+[  718.6] because we just had to deal with so much.
+[  720.6] Nowadays server FPS is magnitude higher, so that actually allowed some of the content we've already produced actually shine,
+[  730.6] because it was working properly, and so that's because servers have less to simulate, we can optimize their workload,
+[  737.6] we've also reduced even, I mean we've talked about this before, but we've reduced the size of the game servers,
+[  741.6] because they just have to simulate one area, and so overall we're trying to, meshing has improved server performance by big magnitudes.
+[  751.6] Yes, Chet, no my head is not smaller, my hair is just bigger, it was very windy and rainy today, and it's just, whatever.
+[  761.6] No, I haven't had a dye job, it's grayer than it's ever been.
+[  764.6] No, we're not taking questions from Chet, but I will comment on every one of you commenting on my appearance.
+[  778.4] So that's static server meshing, we know the next big stage of server meshing is dynamic, what can you tell us if anything about that?
+[  787.4] Well so the dynamic, dynamism, and...
+[  791.4] Dynamism?
+[  792.4] Dynamism?
+[  793.4] Dynamism, I guess.
+[  794.4] So we're running out of words internally to define what the next step of server meshing is.
+[  801.4] Currently we're working on quasi-dynamic server meshing, which is we're trying to iterate on the static mesh,
+[  808.4] to bring it so that if an area is empty, and nobody's there, we can spin down a server,
+[  815.4] and if people go to that area we can spin up a server.
+[  818.4] To achieve all this, all of the mechanics required for a full dynamic mesh need to be there.
+[  824.4] So like mass authority transfer between servers, because when a server goes out and it has X amount of entities that it currently has authority over...
+[  832.4] It needs to give all those entities to another one, and that obviously you don't want that process to lock up the parent server.
+[  839.4] So that whole mechanism is what we're working on at the moment.
+[  844.4] In fact we've done over the break, the team has actually reached a milestone.
+[  848.4] We were able to run with our internal testers a test of quasi-dynamic server meshing internally.
+[  854.4] So that's good.
+[  855.4] I mean it's the first test so you know, a bit rough, but it basically requested I think 200 servers to run the mesh.
+[  862.4] That was a little bit of a...
+[  863.4] Yeah, our ops teams, Ahmed specifically, I got a call from Ahmed immediately.
+[  871.4] But anyway, so wait, you've been calling it quasi-dynamic and I've been trying to workshop a new name for you.
+[  880.4] I've just got just a little bit of dynamism.
+[  882.4] So you did your first test of this quasi-dynamic server.
+[  887.4] Like hey server, you tried to determine how much you need and the first thing it did was ask for 200 more servers.
+[  893.4] Yeah, exactly.
+[  894.4] Well, you know, a little bug in the assignment, a system.
+[  897.4] That sounds like human nature.
+[  899.4] Correct.
+[  900.4] So that's what we're working on right now.
+[  903.4] That's the next step towards the full dynamic mesh.
+[  906.4] Obviously the goal with the dynamic mesh just to recap it is that instead of having a subdivision that we pre-make in advance,
+[  915.4] like currently every patch we look at the territory assignment is what we call it, of like what's coming.
+[  921.4] Like oh, we have an event at this place and you know, most players are going to go to this system and so we adjust the mesh.
+[  927.4] And sometimes we get it wrong and it's a very manually intensive process and we don't want to keep doing that.
+[  934.4] So the goal with the dynamic mesh is to be able to just adapt to where the players are, the cost of the location they're in,
+[  941.4] to be able to provision compute dynamically up and down.
+[  944.4] So there's also the unfortunate cost equation in this, right?
+[  949.4] The current static mesh will always provision in the server for every territory that's configured.
+[  954.4] And so there's a little bit of savings we can go and get there.
+[  957.4] But more importantly, the dynamic aspect of it is to be able to always make sure that the proper compute is available for players when they're in an area doing something.
+[  966.4] Right, so that's the goal.
+[  968.4] Chats debating whether the servers have actually achieved AGI and have played the game.
+[  972.4] Just like, we've played the game.
+[  975.4] Give me 200.
+[  977.4] So that's server meshing.
+[  983.3] Last year was coined as the year of playability.
+[  991.3] So we've just backdoor at a whole bunch of playability improvements that server meshing, which dropped last year, enabled.
+[ 1000.3] So we've had all of those improvements last year that made the game far more playable than it was in any previous year.
+[ 1007.3] But that phrase has been used, it's weaponized, it's thrown back every once in a while, every time somebody encounters any kind of bug whatsoever.
+[ 1018.3] So I want to talk, and that's not entirely unfairly, because everybody's bug that they're encountering is the most important bug in the universe at that given moment.
+[ 1030.3] And that one is not resolved because they're encountering it.
+[ 1033.3] I want to talk a little bit more about what we did gain last year.
+[ 1038.3] So whether that's the transit system stuff, the 30Ks finally being killed, the creatures and boss fights and stuff.
+[ 1049.3] When you tell me, how did our year of playability go in your head?
+[ 1054.3] Well, so I think that obviously coming from the server meshing improvements, there was also some failings at the beginning of the year.
+[ 1062.3] Where we saw transit became a very big problem.
+[ 1067.3] That's an example of a system.
+[ 1068.3] Only because we tried to use it.
+[ 1070.3] Well, yeah, or tried to serve you, but badly.
+[ 1073.3] But that's an example of a system that was built years ago that wasn't properly scaled over time.
+[ 1082.3] And so when you added dynamic gateways for the transit system plus the meshing situation, that became a really problematic system.
+[ 1090.3] And so that was, I think, the first order of business once we launched 4.0 was like we need to really take action on transit.
+[ 1097.3] And so we talked about this last year, but we did create the Transit Heroes Group, which was a coalition of volunteers.
+[ 1108.3] Well, they got volunteered.
+[ 1110.3] Volunteered?
+[ 1111.3] Yes, exactly.
+[ 1114.3] To come and give a bit of oversight on this to look at the system to see, okay, what do we need to actually have stable elevators and trains and make sure that that's always available.
+[ 1126.3] Because the traversal of the game, if that doesn't work, then the game doesn't work at all.
+[ 1131.3] If you can't take an elevator to get out of the habs, then you know, good luck.
+[ 1136.3] So the Transit Heroes team, I think, has done a fantastic job.
+[ 1140.3] They haven't re-engineered the system in that strike team, but they really focused on self-healing strategies.
+[ 1147.3] If a manager loses a carriage for some reason, for any reason, well, just create another one and get this thing rolling.
+[ 1155.3] Now, they couldn't fix in this effort, they couldn't rebuild the system.
+[ 1160.3] There was fundamental flaws in how it was engineered for server meshing support.
+[ 1165.3] But at least they got into working conditions.
+[ 1167.3] So I do think, like, if you look at the game now, Transit is no longer the big problem it used to be.
+[ 1173.3] It actually functions when you need it.
+[ 1176.3] Now, that says...
+[ 1177.3] Most times.
+[ 1178.3] It fixes itself, right?
+[ 1180.3] So it's still getting in a weird state, but it fixes itself.
+[ 1183.3] So, you know, we've done more about this and we'll talk about it later.
+[ 1187.3] And we're building the transport system concurrently.
+[ 1191.3] Absolutely.
+[ 1192.3] While this team is repairing the trans-assist and we're building a new bespoke transport system.
+[ 1197.3] Right, so transport is basically the fix for this, like the real fix.
+[ 1202.3] Let's get to transport when we talk about it.
+[ 1205.3] What else did we get last year?
+[ 1208.3] Well, I got a list here that I worked out a little bit with Jens just to gather up because the game is so big.
+[ 1215.3] So I'm going to limit you a little bit on this time.
+[ 1218.3] You've got...
+[ 1219.3] Okay.
+[ 1220.3] I'm going to give you five minutes.
+[ 1222.3] Sounds good.
+[ 1223.3] I'm going to give you five minutes.
+[ 1224.3] A big time box.
+[ 1225.3] Because we do want to get to the new exciting consciousness.
+[ 1228.3] I'll go for it.
+[ 1229.3] This is important.
+[ 1230.3] Okay, so we talked about 30K protection.
+[ 1232.3] Hold on, I'm going to give you my clock up.
+[ 1234.3] There we go.
+[ 1235.3] Go for it.
+[ 1236.3] Go.
+[ 1237.3] You should be a producer.
+[ 1238.3] Okay, 30K protection, Transit improvements to make it stable.
+[ 1243.3] A stable tech base for the content teams.
+[ 1245.3] What doesn't show is that to achieve the content we shipped in 25, we actually froze a lot of the technology to give the content teams a stable base to work of.
+[ 1255.3] Before it was a bit more of a maim.
+[ 1258.3] So we did that.
+[ 1260.3] We...
+[ 1263.3] As we built all of this content last year, so a monthly patch was a very heavy cadence.
+[ 1268.3] Ten patches last year.
+[ 1269.3] Yeah.
+[ 1270.3] I think that what's really cool is that we've built kind of a library of locations and events that if you start playing Star Citizen today, there's that to do.
+[ 1279.3] We never had that before.
+[ 1281.3] Like a real set of locations that have like a full on storyline to follow.
+[ 1287.3] So that's really cool.
+[ 1288.3] In these locations, we're able to ship some new creatures.
+[ 1291.3] So a lot of new creatures and boss fights.
+[ 1293.3] So we had the first couple boss fights this year with your Mandy, Stormbreaker.
+[ 1298.3] So that's like a brand new design discipline for us to design boss fights for multiplayer elements.
+[ 1305.3] So that's new.
+[ 1306.3] Spawn and Hangar is something that we've actually been able to enable this time.
+[ 1310.3] So we tried to enable it in the end of 24 and that was a bit of a disaster.
+[ 1316.3] 25 now, Spawn and Hangar is there.
+[ 1318.3] So if your anger is available, you spawn directly there.
+[ 1320.3] That's actually a very large quality of life improvement.
+[ 1323.3] I play the game a lot.
+[ 1325.3] Not having to go to the Habs is fantastic.
+[ 1328.3] We've been able to put weather in key locations, including some of those big hero locations we talked about.
+[ 1334.3] We're hoping to do more.
+[ 1335.3] But for now it actually is there.
+[ 1339.3] Two new star systems we talk about this.
+[ 1340.3] Jump Gates, which is a whole, a game on its own.
+[ 1345.3] The way it functions is actually super interesting as you're going through the zone is moving and you're moving within the zone.
+[ 1350.3] It's really a fun system to go through.
+[ 1353.3] So that's in.
+[ 1355.3] We fixed the goddamn bounty beacons, which is one of the coolest loop in the game.
+[ 1360.3] I love it.
+[ 1361.3] And that was obviously not working.
+[ 1364.3] So now we've actually got them to work again, which is a big win.
+[ 1368.3] Quantum interdiction was in the same bag where now with a server mesh, having proper interdiction was kind of difficult.
+[ 1376.3] So restoring it was an interesting one.
+[ 1378.3] We had to actually build systems to allow that because not every server has a view of the entire shard anymore.
+[ 1384.3] And so in order to interdict cross server, you needed to have a special tech to do that.
+[ 1388.3] That fixed also quantum linking.
+[ 1390.3] Now, routing is still, yeah, there's still issues, right?
+[ 1395.3] It's getting there, but at least there's been some quality of life improvements on that side that we've done this year.
+[ 1401.3] Freight elevator, ongoing, ongoing.
+[ 1406.3] We'll have a whole section on freight elevator.
+[ 1408.3] But there's been a lot of, I mean, if throughout the year, freight elevators have received tons of.
+[ 1413.3] Compared to where they started when we attempted to push them to the forefront for an event.
+[ 1420.3] Compared to where we started.
+[ 1424.3] We talked about server FPS and stability from the meshing and the cleanup that we've put in place.
+[ 1431.3] Also, we've pushed the, at the middle of the year, it came for you guys at the end of the year, but actually we merged it at the middle of the year.
+[ 1439.3] But a whole new tech base, including at least a year of graphics update, including Vulkan coming into the game now.
+[ 1446.3] That's what will allow us this year to do some pretty large changes as well.
+[ 1452.3] The first weaponized mech.
+[ 1455.3] So the Atlas Ikti came in.
+[ 1457.3] So that's also a really big boost.
+[ 1460.3] We still don't know if it's a vehicle.
+[ 1462.3] John Crew and I have this ongoing feud.
+[ 1465.3] He says it's not.
+[ 1466.3] I say it is.
+[ 1467.3] You're dipping into content here.
+[ 1468.3] I'm not going to let you count the Ikti.
+[ 1470.3] That's content.
+[ 1471.3] Oh, that's fine.
+[ 1472.3] Yeah.
+[ 1473.3] Although the jump jets are where feature.
+[ 1476.3] There you go.
+[ 1477.3] Give you half credit for the Ikti.
+[ 1480.3] Correct.
+[ 1481.3] Thank you.
+[ 1483.3] Thank you.
+[ 1484.3] I will take that.
+[ 1485.3] Coms notification got a big facelift.
+[ 1488.3] It's something that we want to use a lot more of.
+[ 1491.3] And so we needed the proper tech to be able to render that properly and not just the quick lines, which, you know, you need more immersion than that.
+[ 1501.3] So that was actually a pretty big thing with facial animations and tracking.
+[ 1505.3] And so that's that's in there.
+[ 1506.3] And then CrossShard progress for events.
+[ 1509.3] So, you know, what powered a lot of the content this year was a new service in the background of the game called the scenario service, which, you know, whether you're doing, you know, clean air or the resource drive last year, the CrossShard progress of these events is tracked by the scenario system.
+[ 1528.3] And so that's how we were able to show tables about, you know, many resource drive and resource drive stuff like that.
+[ 1534.3] Exactly.
+[ 1535.3] That's a pretty good list.
+[ 1538.3] You just got, it says 502.
+[ 1540.3] Yes.
+[ 1541.3] Look at that.
+[ 1542.3] Look at that.
+[ 1543.3] On time.
+[ 1544.3] And you didn't even mention like item recovery.
+[ 1546.3] No, I did not mention item recovery.
+[ 1551.3] And there was one other that I had until I got distracted by my own.
+[ 1554.3] Solid blur.
+[ 1555.3] I got distracted by my own clock.
+[ 1556.3] Basically, you know, it's hard.
+[ 1562.3] The thing about how I want to say this.
+[ 1565.3] If you've been watching this show long enough, you know that I'm not above taking a few, taking a section, in this case, five minutes of the section to basically go through some talking points that I want, that I think are important, that I think people want to hear.
+[ 1582.3] It is, we have had things like the year of playability thrown back at us in comms and what we see.
+[ 1588.3] I tune into a Twitch stream or YouTube thing.
+[ 1591.3] And somebody gets a very, a very, a very frustrating experience.
+[ 1598.3] I was looking at experience of somebody, you know, just going to town with their whole sea and they went through a jump point and it took them, trying to go to one system and kick them back out to the next system.
+[ 1609.3] Then the thing crashed.
+[ 1610.3] Then they got back in and the spindles, they tried to open the spindles, but the spindles were closed.
+[ 1616.3] They were closed, looked closed, but they were actually open.
+[ 1619.3] So they were, they were in the wrong state.
+[ 1622.3] Tried to get refueled, tried to go to refuel.
+[ 1625.3] The refueled thing wasn't working and then stowed the ship and spawned the ship and it didn't come back on the docking port.
+[ 1631.3] It came back in their hangar full of cargo and it's like this.
+[ 1635.3] It's like, we acknowledge that.
+[ 1639.3] I'm sitting here.
+[ 1640.3] I'm sitting here saying, we acknowledge those things.
+[ 1643.3] But there was so many massive improvements last year.
+[ 1647.3] There is, this is used, they used an analogy last time we did with this about, about, it was the big freight container, the big giant Suez Canal shipping things that you don't just turn the direction around.
+[ 1660.3] You don't just spin the wheel and suddenly you're facing a new direction.
+[ 1663.3] It takes time to move these things.
+[ 1665.3] And the efforts of your teams and the people under you, these strike teams, these hero teams as you call them, to turn that ship, this ship that we call the Persistent Universe around the last year has been phenomenal.
+[ 1679.3] If I'm allowed to have a personal opinion being the shill for the company that I am, it's been phenomenal.
+[ 1684.3] We haven't gotten everything.
+[ 1685.3] We haven't gotten everything.
+[ 1686.3] We still got another year.
+[ 1687.3] We still got another year.
+[ 1688.3] We still got another year.
+[ 1689.3] We're still going to, we're, the work continues.
+[ 1691.3] But I want, it's my show and I wanted to take five minutes to acknowledge the tremendous work of those teams and a whole lot was accomplished last year.
+[ 1700.3] In addition to the amazing content work, you know, I said 10 patches and I realized we actually had 11 because we kicked engineering out.
+[ 1707.3] We kicked engineering out in December.
+[ 1709.3] So it was actually 11 patches.
+[ 1711.3] You know, 11 patches in 12 months is pretty crazy.
+[ 1713.3] So you allow me to have a moment to have some time to sit there and sing the praises of those people because I've seen where we were.
+[ 1722.7] And I know where we are and we're in a much better place now.
+[ 1726.7] Still, still places to go.
+[ 1731.7] That scenario I just described was like last week and we have still places to go.
+[ 1736.7] Yes.
+[ 1737.7] But it doesn't mean we don't acknowledge the progress we've made.
+[ 1740.7] I think it's a testament to kind of the systematic approach we've taken to solve some of these issues instead of previously we used to just assign tickets to people and they would, you know, find the fastest way to solve it.
+[ 1752.7] And now we're kind of work as a team with the teams and quality assurance that are basically the Arbinger like, no, it's not fixed.
+[ 1761.7] I can still repro, right?
+[ 1763.7] And these guys have been going through a systematic approach for it.
+[ 1766.7] I think that's paid off a bit, you know.
+[ 1768.7] We get better.
+[ 1769.7] Yeah.
+[ 1770.7] Not always.
+[ 1771.7] But we try.
+[ 1773.7] And in this case, in this case, we've definitely gotten better.
+[ 1775.7] There were some big changes to internal infrastructure and stuff in the last year or two and we're seeing the results of that stuff.
+[ 1783.7] All right.
+[ 1784.7] So now let's go into some specific updates here.
+[ 1787.7] So let's talk about the transport system.
+[ 1789.7] We don't need to talk about transit so much anymore.
+[ 1792.7] The transport system is what will one day replace this thing.
+[ 1798.7] I've heard talk about there being a tech preview of it soon.
+[ 1802.7] Talk to me about the transport system.
+[ 1804.7] Also transit was problematic, wasn't designed for server meshing.
+[ 1809.7] And so transport is a complete rebuild of the transit system but using more server native, sorry,
+[ 1819.7] server meshing native approaches for how different pieces are going to manage elements that are streamed out and streamed in.
+[ 1827.7] We're also moving away from some previous misconceptions that were put into the transit system.
+[ 1833.7] For example, one of them was responsible for trains going into space.
+[ 1839.7] We don't want trains to go into space.
+[ 1841.7] You might not.
+[ 1843.7] Well, I mean, unless we do a space elevator.
+[ 1846.7] Astro train.
+[ 1847.7] Yeah, astro train would be great.
+[ 1849.7] So the state of transport, right?
+[ 1851.7] So at the end of last year.
+[ 1854.7] Sorry, I'm going to pause.
+[ 1856.7] What's included in transport?
+[ 1858.7] So what are we talking about?
+[ 1861.7] Transit and transport manage elevators, in-ship elevators, trains,
+[ 1867.7] anything that has to move when you press a button and you call it.
+[ 1870.7] So it's a network of carriage, peripheral and gateway.
+[ 1874.7] So you take an elevator to go to your hangar.
+[ 1877.7] That's transit.
+[ 1878.7] You take a tram.
+[ 1879.7] You take a tram.
+[ 1880.7] Anything that's automated.
+[ 1881.7] Anything that moves you, not under your control.
+[ 1884.7] And he's the one moving the carriages.
+[ 1886.7] So he needs to deal with carriages being streamed out, prediction for that stuff.
+[ 1892.7] So transport is a rebuild of the original transit, which has been, as we talked about, problematic.
+[ 1898.7] So the state on transport is at this point, it's functional.
+[ 1904.7] So the team at the end of last year actually completed the first transport link,
+[ 1910.7] which was we tested this internally with our QA teams extensively at this point.
+[ 1915.7] All of the new Babbage Habs links.
+[ 1917.7] So we took one link in the universe, that one, and we tested the crap out of it right now.
+[ 1923.7] That's a static link.
+[ 1924.7] So it's going, when I say static, it means the two points that the elevator goes to exist.
+[ 1930.7] They always exist.
+[ 1932.7] Now, so we know that works.
+[ 1935.7] Then the state at the moment is we also support hangars.
+[ 1939.7] So these are dynamic gateways.
+[ 1941.7] Because if you're online and you're at the location, your hanger is spawned there.
+[ 1946.7] That's a dynamic gateway.
+[ 1948.7] When you leave, that gateway disappears.
+[ 1950.7] So the system needs to deal with dynamic gateways.
+[ 1952.7] The previous system, Canada.
+[ 1956.7] And the canabit was the piece that wasn't great.
+[ 1959.7] And so we've got internally at the moment, new Babbage, we've got hangars and Habs.
+[ 1964.7] So the state of transport now is the team is working at converting all of Area 18.
+[ 1970.7] So we're talking Habs, hangars, transit trains, all of Area 18 to the transport system.
+[ 1977.7] So we're going to go to Tech Preview with that.
+[ 1980.7] That's our plan.
+[ 1981.7] And the reason why we need to go to Tech Preview is because we need players.
+[ 1985.7] We've tested this internally.
+[ 1987.7] We can't muster as much players as we want.
+[ 1990.7] So we're going to try to see if you guys want to come and help us out, test the new Babbage transit for real on a Tech Preview to validate all the assumptions that are in the system.
+[ 2000.7] So we're going to launch Tech Preview and ask people to just come and ride the elevators.
+[ 2004.7] Correct.
+[ 2005.7] Come and ride the trams.
+[ 2006.7] And their hangars.
+[ 2007.7] And their hangars.
+[ 2008.7] And hope nobody dies.
+[ 2011.7] No trains in space.
+[ 2012.7] No doors opening to nothingness.
+[ 2016.7] That'd be great.
+[ 2018.7] No passing through the floors in the carriages.
+[ 2023.7] The single most exciting Tech Preview will ever do.
+[ 2026.7] But incredibly important because it's a Tech Preview that doesn't just affect Area 18.
+[ 2030.7] It's one that can literally affect quality of life in every single landing zone, on board every single spaceship.
+[ 2036.7] That has an elevator.
+[ 2037.7] The ships that have elevators and stuff.
+[ 2039.7] Well then, space stations, it's going to be this little thing for Area 18, but it ripples out to everything.
+[ 2045.7] So after Tech Preview, if everything is validated, there's one thing too we want to try to avoid is the train prediction taking like you in 32 seconds to come in.
+[ 2054.7] Where the train says train arrives in 1,016,000,000, you know.
+[ 2058.7] Obviously we hope that's correct.
+[ 2060.7] I just thought it was a metaphor for the project.
+[ 2062.7] I don't know.
+[ 2064.7] If I'll have to say that.
+[ 2067.7] At this point you are.
+[ 2070.7] After Tech Preview, we're going to scale this out to every landing zone.
+[ 2075.7] And we're going to see which patch this will load in.
+[ 2078.7] But at that point we hope to bring transport in and completely deprecate the transit system from the game and a new kit from orbit.
+[ 2086.7] Oh, yeah.
+[ 2088.7] And that's next week.
+[ 2091.7] We don't give dates.
+[ 2093.7] The best effort, but it's looking good.
+[ 2095.7] Like this Tech Preview is going to be where we're going to evaluate really like where we're at with scale.
+[ 2100.7] Because the issues of transit typically come up with scale most of the time.
+[ 2105.7] Fair enough.
+[ 2106.7] I told you we get back to freight elevators.
+[ 2108.7] Yeah.
+[ 2109.7] So what can you tell me about freight elevators and what still needs to happen?
+[ 2117.7] So the freight elevators are way more complicated than we can imagine because they get affected by other systems like hangers, like planetary locations.
+[ 2129.7] There's also multiple flavors of them, top loading, side loading, and they all operate very differently.
+[ 2136.7] So this year we've had issues at the beginning of the year, clearly with the freight elevators like losing items and obstruction, blocking them from functioning.
+[ 2146.7] You said the beginning of the year, but that really came to a head in July.
+[ 2150.7] Yeah, where we had even an event that would rely on them, which was in retrospect.
+[ 2155.7] Well, we knew there was a collection of issues, but we also, all of our data said they were only localized.
+[ 2165.7] It wasn't until we went to scale that we realized, oh, this is actually even worse than we thought.
+[ 2173.7] There's also a couple of things for that event specifically, which was we concentrated missions in key locations.
+[ 2180.7] That's one thing that has been in our discussions all year was how we distribute missions.
+[ 2187.7] If we launch a new mission tomorrow morning and we send everybody to the same spot, that is problematic, not just because it's not fun, because it's a traffic jam, but also it causes other issues.
+[ 2197.7] So that we learned a lot from that on the design side, I think overall.
+[ 2201.7] So freight elevators though, so we're pretty happy with some of the core mechanics, but there's still very egregious issues that we're tracking.
+[ 2211.7] So there's roughly 73 total issues that we know about.
+[ 2217.7] 51 of those have been resolved.
+[ 2219.7] So I've asked one of our teams, our Nathaniel Fisher resident expert and freight elevators to track that.
+[ 2228.7] So the rest of these issues are, some of them are really problematic.
+[ 2232.7] One of them we actually discussed just before the show was how if you're turning in wiccolo items, you need to put one by one.
+[ 2239.7] You have to be able to put things in a box.
+[ 2240.7] You have to be able to put things in a box.
+[ 2242.7] You have to be able to put things in a box and have it suck up that box.
+[ 2246.7] Yes, I agree, 100%.
+[ 2248.7] And so that's going to be one of the first ones I think we need to look at.
+[ 2252.7] The other one is a bit more problematic because we don't have a proper reproport for, but sometimes there are lost items that fail if there's like a back-end slowdown when things get stowed.
+[ 2265.7] So we have a couple of reports for this, not many, but the ones that we have are critical.
+[ 2270.7] And so this is kind of a rule we've set on the CGP team.
+[ 2275.7] So Jens and I are pushing this to everybody.
+[ 2278.7] It's like the golden rule for everything related to freight elevators or anything that touches inventories, a player should never lose an item interacting with these systems.
+[ 2289.7] We need trust in them 100%.
+[ 2292.7] And so that's why we're tracing on those issues.
+[ 2294.7] So there's still a lot more work required on freight elevators for different edge cases.
+[ 2299.7] A new one we started seeing in 4.6, which seems affected by another change, but is sometimes like putting stuff on the elevator, not on the grid will cause it to disappear, which is kind of a physics cleanup conflict.
+[ 2313.7] So I know we're looking into this right now because that's a big one.
+[ 2317.7] And then everything that has to do with stacking, so having a stack in your inventory that you want to un-stow onto the freight elevator, that mechanism from a back-end perspective
+[ 2328.7] is actually a creation. I know that sounds weird, but you have a stack of 10. That's one item with a stack of 10.
+[ 2333.7] You may bring it. It's a creation of nine.
+[ 2336.7] So that bit is not stable right now. We're trying to improve that mechanism.
+[ 2342.7] It's hard because there's a lot of the chat right now is debating Wikilow at the moment.
+[ 2349.7] Wait, did I say his name?
+[ 2352.7] Well, if I say it three times, he shows up on the screen.
+[ 2356.7] But a not insignificant part of the dislike for Wikilow is directly related to that freight elevator.
+[ 2365.7] We have a section later on. We asked around. We'll give you a preview.
+[ 2372.7] We started talking like, what is the single greatest quality of life thing that we can do?
+[ 2380.7] We went around and I asked a couple head honchos here on the coming.
+[ 2384.7] I was curious. I did an interview before. What to you is the single biggest quality of life thing we can do?
+[ 2391.7] The single biggest. On more than one occasion, shout out to Yens.
+[ 2395.7] I'm going to spoil here. Not losing items. Just not losing items.
+[ 2402.7] That seemingly simple, benign, innocent little thing.
+[ 2410.7] Everything else is important. Everything else is super important. Everything else is super necessary.
+[ 2415.7] It absolutely is. But God is my witness if we can just make it so people don't lose their items.
+[ 2423.7] Shout out to the heroes of the freight elevator.
+[ 2428.7] Hero Squad, I thought was Strikes, but rebranded during this call as Hero Squad.
+[ 2432.7] I like it. We'll do it.
+[ 2434.7] Everybody, the people on item recovery, the people in the new inventory system right now, it's everybody working to fix that.
+[ 2444.7] That's just the single most demoralizing thing in the world to me.
+[ 2450.7] Speaking of item recovery, we launched V0 or V1 or whatever the heck we called it.
+[ 2457.7] I'm hearing that there's a T1 on the horizon. Talk to me about it.
+[ 2463.7] Obviously, tier zero was a fairly large change to the game.
+[ 2470.7] In the case where you die in the verse, instead of having to run a corpse run to recover your items, you would actually respond with them.
+[ 2477.7] This was mainly done to, you know, we're in an alpha game. We needed to do some compromises.
+[ 2483.7] So we looked at that.
+[ 2484.7] Item imprint, there's multiple names for this at this point.
+[ 2488.7] Item imprint, item recovery, tier one entitlements, 2.0. Those are all sort of related.
+[ 2498.7] So the gist of it, and this ties into some other subjects, is that currently when you play the game and you look at your ASOP terminal,
+[ 2509.7] the list that you see there is the list of entitlements that you own.
+[ 2517.7] Which ship that you own, you have a right to. Then that's cross-linked with the actual ship.
+[ 2523.7] Do you have it? This entitlement, let's say it's a Connie, what is it in the game?
+[ 2528.7] And where is it? And that's how the ASOP terminal shows you the list.
+[ 2532.7] So that's why you're able to have a row when there's no ship and it says,
+[ 2535.7] retrieve or deliver, right? That creates the ship.
+[ 2538.7] Then deliver brings you to ship on the platform.
+[ 2541.7] Those entitlements currently, they don't live across patches. We recreate them.
+[ 2547.7] The first time you log in, there's a big process that reconciles your account, grabs your web purchases, grabs your LTP records and recreates those entitlements.
+[ 2558.7] Obviously, long-term persistence is always been a difficult problem to solve.
+[ 2565.7] It sounds simple, but it is not, I assure you.
+[ 2568.7] But in order to facilitate all this and also other item recovery needs,
+[ 2575.7] we've decided to basically persist those entitlements across batch.
+[ 2578.7] So these things will never get wiped anymore.
+[ 2581.7] And so losing a ship is not going to be a thing. That's not going to be technically possible.
+[ 2586.7] We never really delete entitlements.
+[ 2589.7] And so you have insurance on those records so you can claim insurance.
+[ 2592.7] The only way to lose a ship will be if you no longer have insurance on it.
+[ 2595.7] You still have the deed for it, but you can't claim it.
+[ 2597.7] So item recovery is a rework of the entitlement system.
+[ 2602.7] It touches on how you claim insurance on ships.
+[ 2606.7] It allows snapshotting of ships, but also FPS items so that these live with an insurance loadout that we can keep.
+[ 2615.7] And recover.
+[ 2617.7] And then will give us the ability to recover or claim your even FPS items.
+[ 2622.7] So think of it as an insurance system for FPS items.
+[ 2626.7] So this whole mechanic ties into LTP as well.
+[ 2630.7] We're also hoping through the system to solve some of the issues that exist with, you know,
+[ 2636.7] taking components off of a ship and claiming the ship losing the components.
+[ 2640.7] And or in some cases being able to duplicate some default components.
+[ 2644.7] This whole loop is a, you know, insurance has always been a problem design wise for how this functions.
+[ 2649.7] So item imprint V1 allows you to imprint items, save that state, and then recover it on death or when you claim insurance.
+[ 2657.7] I have a couple of questions here based on when I heard you keep mentioning insurance.
+[ 2662.7] Are we talking, are you saying that insurance will be in alongside V1 or just, yeah, exactly.
+[ 2669.7] Correct.
+[ 2670.7] It's the, I say insurance because that's the same kind of loop in terms of what the services are doing to do this.
+[ 2676.7] But basically it's a snapshot we recover from.
+[ 2679.7] Exactly.
+[ 2680.7] So when item recovery V1 comes out, it'll still be much like it is today as far as insurance.
+[ 2686.7] Everybody will just have global, everybody has LTI on everything at the moment right now until that very specific
+[ 2692.7] Gameplay system is implemented.
+[ 2694.7] So this is not that.
+[ 2696.7] You're using lower case I insurance.
+[ 2699.7] Yes.
+[ 2700.7] Sorry, I just needed to, I'm like, I underscore I.
+[ 2702.7] I didn't think ship insurance was coming in this one.
+[ 2705.7] So just to clarify that before folks go off.
+[ 2711.7] You're saying that because it's a change to the entitlement system and everything will just get snapshot and mowed over.
+[ 2717.7] When you say people will no longer lose ships, you're talking about that whenever a patch comes out, people come in and they're talking about the ships that they've earned in game.
+[ 2726.7] So ships they've either bought with AUEC or stolen or whatnot.
+[ 2730.7] Those will, those should persist.
+[ 2732.7] If you have an entitlement for something, we no longer wipe that between patches at all.
+[ 2738.7] We keep it completely.
+[ 2740.7] So that should give us a lot more.
+[ 2742.7] In fact, it is exactly the way you would expect it to function right now, except the way the systems were built in the past.
+[ 2749.7] Didn't account for that.
+[ 2750.7] So in those cases where you could lose something that you own because it was left unstowed in a shard or something like that.
+[ 2757.7] And so now with the entitlement system, we keep that cross-patch.
+[ 2760.7] So the first question I have in response to that is how will people get rid of things?
+[ 2767.7] Because, because, quite frankly, I might go joyriding one day or I might buy a thing for AUEC and fly it and then decide I don't want it.
+[ 2779.7] And now it's just sitting there staring at me in the ASOP.
+[ 2783.7] If these things don't go away between patches now, every time I want to try to try a ship or I just move away for a ship or John Crue nerfs the hell out of the ship and I don't want to fly it anymore.
+[ 2793.7] Goddamn John Crue.
+[ 2795.7] I might want to get rid of it.
+[ 2797.7] Will there be, is there going to be a mechanism for getting rid of these things?
+[ 2801.7] Not with item imprint, as part of this, no.
+[ 2805.7] But there are, I don't want to go too much into details into this, but I can give an example of like you have a ship filled with cargo that you stow into your location inventory in New Babbage.
+[ 2820.7] And you claim that ship, right?
+[ 2823.7] In the current way the system works, that cargo is lost, right?
+[ 2828.7] That ship will get deleted and you're done, right?
+[ 2830.7] You can get a new one, but it's the same entitlement, right?
+[ 2833.7] With the new system we have the ability to also show you ships that you own that had an entitlement on it.
+[ 2838.7] And so what that means is you could claim that ship, you'll get a new, let's say it's a caterpillar filled with cargo and you're like, I need to claim it for some reason.
+[ 2847.7] You can claim the ship, the other ship will be bricked, right?
+[ 2851.7] That's how the design is functioning.
+[ 2853.7] So it's no longer usable, but you can still retrieve it.
+[ 2856.7] You can still retrieve the bricked ship and get it.
+[ 2858.7] And then if you destroy the ship or tow it out, then it'll go away from your entitlement.
+[ 2863.7] But there's going to be more system, of course, to remove that from your ASAP terminal longer term, but not in this phase, but longer term, yes.
+[ 2871.7] I'm just thinking about the long-term players, the people who have been here for a while who have acquired a rather massive fleet already.
+[ 2882.7] I'm a victim of this.
+[ 2883.7] You know, and you start buying ships and I'm guilty, but there's just sometimes I don't want this anymore.
+[ 2889.7] I don't want to look at a, I don't want to look at a, I don't know, a rock DS anymore.
+[ 2896.7] Just wanted out of my ASAP.
+[ 2899.7] I bought it mistakenly from Astro Armada.
+[ 2903.7] I just had a momentary memory of this.
+[ 2907.7] I don't want that rock DS staring at me and my ASAP for the end of time because you've done a wonderful thing with item recovery, you know, V-
+[ 2914.7] But now you keep it.
+[ 2915.7] Now that you're so simple.
+[ 2916.7] Some things aren't meant to be persistent.
+[ 2921.7] So I just want to take this opportunity to just encourage.
+[ 2925.7] That's a good conversation.
+[ 2926.7] There should be some way to remove.
+[ 2929.7] I'm very curious about why you singled up the rock DS out of this.
+[ 2932.7] How much time do you have?
+[ 2939.3] Jared hates the rock DS confirmed.
+[ 2941.3] Oh, you haven't been watching for a while.
+[ 2943.3] If you're just getting that confirmed now.
+[ 2948.7] Jared, you're not supposed to be going on shows and telling people you hate certain ships.
+[ 2953.7] You're supposed to be championing everything.
+[ 2955.7] I'm like, yeah.
+[ 2960.2] I hate the rock DS.
+[ 2963.2] It's just, it's just, it's comfy though.
+[ 2966.2] Let's just do everything the first rock does but require two people.
+[ 2970.2] Look.
+[ 2975.0] I've never lied to you.
+[ 2976.0] I never will.
+[ 2977.0] It's the only promise I've ever made people.
+[ 2982.0] You've been mentioning long-term persistence.
+[ 2984.0] So let's just wrap up this, this storyline of losing stuff, keeping stuff.
+[ 2992.0] The last time we had this conversation, you talked about utilizing this entitlement system.
+[ 2999.0] Is that what we were just talking about?
+[ 3001.0] Or is there more stuff to do?
+[ 3002.0] There's more.
+[ 3003.0] So we're, I mean, there's a lot of work ongoing on this, on the long-term persistence side.
+[ 3009.0] So just for those who don't know what long-term persistence is or LTP.
+[ 3014.0] There's a mechanism we put in place to allow you to keep things between patches, right?
+[ 3021.0] So the, every patch we basically destroy, like when you come into four to seven, when it comes out,
+[ 3032.0] that's a brand new database, right?
+[ 3034.0] The whole thing is fresh and then we recreate things.
+[ 3037.0] Now, why do we recreate things?
+[ 3039.0] It's because these things are still changing.
+[ 3041.0] So the Hornet you had in 4.5 is probably different than the Hornet you have in 4.6.
+[ 3047.0] Item port locations have changed, materials have changed, serialized variables and all the data that goes with it has changed.
+[ 3053.0] The gold standard Aurora that we just launched is technically an entirely different ship.
+[ 3057.0] The whole entity is different.
+[ 3059.0] Exactly.
+[ 3060.0] So the whole system is under the hood.
+[ 3061.0] To the backer, it looks like, okay, you just added some, you added some fins and blah, blah, blah.
+[ 3066.0] But under the hood, it's an entirely new set of entities.
+[ 3069.0] And so in order to allow us to keep stuff, we've built this system on the side that kind of keeps records of what you own.
+[ 3078.0] So it says you own a Hornet, right?
+[ 3081.0] That system has always been kind of a, I want to say a crutch because it did function for a long time,
+[ 3088.0] but it's been a bit of a mess, quite a bit.
+[ 3090.0] There are also many cases where you would, we would remove records of things that you own because they're in play in a shard.
+[ 3096.0] That's been proven to be a bit of a bad decision overall.
+[ 3100.0] And so that's why we've had multiple issues over the years of like players losing ship entitlements in the new patch or having more items than they were supposed to get.
+[ 3110.0] And that, like, you know, some people have shown some screenshots of demultiplication of things between patches.
+[ 3117.0] And so it's been a big issue, right?
+[ 3119.0] So with the other imprint work, we're tying into that we're reducing the footprint of what LTP manages by a lot because it will no longer store your entitlements.
+[ 3129.0] We just keep those as is.
+[ 3131.0] So that's one big bit removed from that system.
+[ 3134.0] The other complexity on that side is that it needs to manage nested inventories.
+[ 3141.0] Back to the freedom.
+[ 3143.0] That's just completely crazy.
+[ 3145.0] So like, you know, I have a handgun stored in the glove box of my Merlin that's attached to my Connie that's parked somehow inside of my, you know, Idris and stowed in my location inventory.
+[ 3159.0] Well, I need to give you a record for that gun, right?
+[ 3163.0] And so that system needs to reread data and store it.
+[ 3168.0] And it's really complicated.
+[ 3170.0] Which is why people have gotten to the habit before a wipe, or before not wipe, but before a patch.
+[ 3174.0] Yeah.
+[ 3175.0] Freudian slip, huh?
+[ 3177.0] Just already, I just, I know you people.
+[ 3184.0] But before a patch, people stow things in certain inventories to have their best chance to set it up.
+[ 3190.0] Right.
+[ 3191.0] So on long term persistence, ultimately, we don't want the system.
+[ 3195.0] Right.
+[ 3196.0] Ultimately, we want to get to a point where we don't need it.
+[ 3199.0] So step one is to reduce its footprint.
+[ 3202.0] So that's part of item imprint is that.
+[ 3205.0] So that's a big deal.
+[ 3207.0] But the next steps are very start from the very low level and will require some large company change.
+[ 3215.0] We need to be able to migrate your old Hornet to the new one.
+[ 3219.0] Right.
+[ 3220.0] Or at least be able to know it changed enough.
+[ 3223.0] I need to give you a new one.
+[ 3224.0] Right.
+[ 3225.0] Or being able to just migrate the shape of the hierarchy, the item port locations and the serialized variable formats on these things.
+[ 3234.0] Now, the thing that's, you got to think about the way the ships are built.
+[ 3238.0] Right.
+[ 3239.0] The entities have components on them, which enable them to do something.
+[ 3243.0] I'll give you an example just for the layman.
+[ 3246.0] You have a health component on an entity that says, Hey, I got a hundred hit points.
+[ 3251.0] When that reaches zero, then we destroy the entity or something else happened.
+[ 3255.0] It destroys itself.
+[ 3256.0] Right.
+[ 3257.0] That component is written in code.
+[ 3258.0] There's a game programmer and it's maintaining this.
+[ 3260.0] We actually have a health component.
+[ 3262.0] It does way more things than this, but just to keep it simple.
+[ 3265.0] So a game programmers programming this and he needs to persist the value of health so that when this ship is now either.
+[ 3272.0] Put an inventory then brought back into the game that the values of the health components on the parts on the individual parts have persisted and we reloaded.
+[ 3281.0] Right.
+[ 3282.0] This is true for everything in the game.
+[ 3284.0] Right.
+[ 3285.0] We have serialized variables and components across the game.
+[ 3287.0] There's, you know, I think your character at the moment has like 800 serialized variables on it or something like that.
+[ 3294.0] Right.
+[ 3295.0] So those are all different components.
+[ 3296.0] Are you crouched?
+[ 3297.0] Are you standing?
+[ 3298.0] Are you, you know, a health of all the limbs?
+[ 3301.0] You know, stuff like that.
+[ 3302.0] Right.
+[ 3303.0] So the programmers between patches, they just changed that, you know, I removed this one, you know, and I put a new one in and then because, you know, some of those variables, it doesn't matter if it changes.
+[ 3313.0] Some of them matter.
+[ 3315.0] Right.
+[ 3316.0] If you change that, like it's the, it's a different shape.
+[ 3318.0] It was a different CGA model, whatever.
+[ 3320.0] Right.
+[ 3321.0] So that's the big problem about how we need to forward migrate is we need to do this at the very low level.
+[ 3326.0] So currently our network team and our online teams are working at this mechanism to be able to differentiate the important from the important SVs, the serialized variables on components.
+[ 3340.0] So that's all across all components in the game.
+[ 3342.0] There's over 1500, 2000 components, individual code components in the game.
+[ 3349.0] So, you know, for example, I don't need to know if you're crouched when I stole you in your inventory.
+[ 3355.0] Right.
+[ 3356.0] I don't need to know that.
+[ 3357.0] Right.
+[ 3358.0] But I need to know that when we're running and you're a crouch, right.
+[ 3360.0] So we differentiate the two and then we'll, we have a mechanism to migrate the data format from one to the other.
+[ 3367.0] What, when we get that functionality in and reliable, what that means is that we will just keep the database and that is huge because now that means there's no database.
+[ 3378.0] There's no longer a process between patches that transfers stuff or moves it around or recomputes things.
+[ 3384.0] It's just, it's the same database.
+[ 3386.0] We're just moving its version forward on demand.
+[ 3390.0] And now we've looked at multiple different options for that.
+[ 3393.0] Some of them were like, you know, just migrate people from one to the other, but then we'd have to keep five databases behind.
+[ 3399.0] It's just impossible.
+[ 3400.0] And so right now we're working at that option and that's the longer term vision that we have for that.
+[ 3405.0] First reduce the footprint of the LTP system.
+[ 3407.0] So it just manages some things, not all, and then work on the real fundamental issue, which is we need forward migration on all this data.
+[ 3416.0] How many times in your life has an errant, random, unexpected serialized variable been the cause of this rest in your life?
+[ 3425.0] I mean, it's crazy.
+[ 3426.0] This is the single most important thing because like in case you guys don't know, every time we do either, well, full patch is easy because we patch certain things.
+[ 3434.0] It's easy because we patch server, client, hybrid, everything goes in one at once.
+[ 3438.0] But when we perform hot fixes and God knows we've done a lot of hot fixing this year, right?
+[ 3444.0] That's part of our process now.
+[ 3446.0] But there's like specific steps where we have our live QA team need to do compatibility checks and any change to any serialized variable,
+[ 3456.0] added, removed, changed the format, changed the data, whatever, incompatible client.
+[ 3462.0] Getting our processes in place to catch those before they get introduced, right, is really taxing because, you know, there's always a, oh yeah, also fix this bug,
+[ 3474.0] and that make the whole hot fix incompatible and we can't launch it.
+[ 3477.0] So we have to backtrack, change our approach, whatever.
+[ 3480.0] And so that's the kind of thing we're dealing with.
+[ 3482.0] This will also solve that if we can make it.
+[ 3485.0] And before somebody says you should have just made a simpler game, Benoit.
+[ 3489.0] Have you considered just making a simpler game?
+[ 3492.0] Yeah, yeah, cool.
+[ 3494.0] All right, I want to move into our quality of life section here.
+[ 3499.0] We talked about it a little bit before because I just, we just talked a whole lot about not losing things and all the efforts being made of not losing things.
+[ 3512.0] But there are other major quality of life things.
+[ 3514.0] For me personally, after the not losing the things, it's social.
+[ 3521.0] Yeah, it's social.
+[ 3523.0] I, the ability to group with people, the ability to communicate with people, the ability not to communicate with people, the ability to just be like, oh, hey, that's a bad person.
+[ 3542.0] That's a bad person with bad thoughts and bad intentions and kick them into the pit from 300 and whatnot.
+[ 3549.0] Never to see or hear from that person again.
+[ 3552.0] All the tools for joining up, finally, people have been creating and managing orgs on our website since 2013.
+[ 3563.0] And this is 2026 and those orgs still not in game.
+[ 3569.0] Correct.
+[ 3571.0] What are we doing?
+[ 3572.0] It's, we're reenacting a little play because Benoit and I have had this conversation.
+[ 3578.0] It's almost verbatim furloughed on the, I'm just doing the conversation we had in private for you guys right now.
+[ 3586.0] So my question, Benoit.
+[ 3589.0] Yeah.
+[ 3590.0] Friend, person whom chat has dubbed brother, my brother from another mother.
+[ 3597.0] When Benoit, when please, dear God and heaven above or down below, who do I have to talk to?
+[ 3605.0] Sure.
+[ 3606.0] Give me something good.
+[ 3608.0] Yeah.
+[ 3609.0] Well, so what is it now?
+[ 3611.0] It's all a blur.
+[ 3613.0] A social universe, right?
+[ 3615.0] The last panel that we did at CitizenCon that outlines the vision of what we want to do with social.
+[ 3623.0] Now with the year that we just had, we had to take a little bit of a detour on that initial plan.
+[ 3628.0] But right now we have, we have completely formed the social strike team.
+[ 3634.0] And so a bit like the heroes team, right?
+[ 3637.0] The social strike team, its only mission is to execute this plan.
+[ 3642.0] Right.
+[ 3643.0] And so.
+[ 3644.0] So don't bury the lead.
+[ 3645.0] There is now an official dedicated team on the social strike team.
+[ 3648.0] Yes.
+[ 3649.0] Okay.
+[ 3650.0] Exactly.
+[ 3651.0] So this group is currently looking at all of the components that make up the social systems now, right?
+[ 3659.0] Fortunately for us, the work didn't stop on this side, even though we couldn't enact the changes in the game.
+[ 3665.0] On the back end side of things, there's been a lot of progress on social.
+[ 3669.0] And so even though the systems look primitive in game, their capabilities have grown quite a bit, even in 25.
+[ 3676.0] It's just not using it.
+[ 3678.0] We do have a block list that we leverage now.

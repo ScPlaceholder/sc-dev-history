@@ -1,0 +1,26 @@
+## Greetings Citizens,
+Kastak Arms Devastator
+Kastak Arms Devastator
+Klaus & Werner ATT4
+Klaus & Werner ATT4
+Klaus & Werner ATT4
+Behring P4AR
+Behring P4AR
+Behring P4AR
+As you can imagine, teams across the company were working very hard to support the Gamescom presentations (both the public event and the press demos at the show) in Cologne last week. As a result, the FPS update this week is a little lighter than usual: we slowed down in some places in order to achieve stability for the demos Chris Roberts used in Cologne, and we performed a stream lockout while we made sure we had solid demo builds in the oven.
+That doesn’t mean we got a chance to rest during the lead up to the show, however! Here is a summary of what we finished, what we started and what issues we’re seeing. You can expect the standard bigger update at the end of the week. Also included are beauty renders of three of our weapons showing some of the update work they’ve received; enjoy!
+## Gameplay
+This week, we ran another small playtest between the LA, ATX, and Illfonic offices that generated more good feedback. Some new things came online for the playtest (Directional Hit Indicators and the new Ammo/Grenade/Weapon widget) went over very well, while other things came up that needed further investigation. We’re still seeing issues with player prediction, accuracy of simulation, player sliding and warping as well as hitches in player locomotion. We’ll be working from this feedback this week, working out how to address some of what we learned.
+Our engineers in the UK did additional work on the ladder code in order to make them (ladders) more designer friendly, along with a general tidy-up of the code. This was a real win, with the improvements to the ladder already showing well in the weekly cross-studio playtest. The update includes, among other things, the automatic holstering of weapons when engaging a ladder. We also made some changes to rolling while prone (keys: Q & E keys) to be hold-based instead of a toggle.
+Several general bug fixes and stability improvements were made this week, including an issue preventing personal shields from being placed, one where the ATT4 sights didn’t line up properly in ADS, some random juke issues and a bug where throwing one grenade accidentally fires two. So, you can thank us for that one the next time you find yourself cornered and realize you still have one grenade left!
+## Gameplay Blockers
+- The UI HUD Radar is having significant issues, preventing it from working in some cases.
+- The Cover system needs further attention and will be getting some cross team focus this coming week.
+- Weapons reload animations are not cleaning up the magazines properly. This is an ongoing gameplay code issue. This game code can lead to dropped weapons or to weapons not attaching and detaching to the character properly.
+## UI
+The first pass at the directional hit indicators in the HUD are in and we reviewed them in the playtest. Looking good! The paperdoll UI indicating damage states has been hooked up in game code for the health widget, but it didn’t make it into the playtest. We’ll give it a look this coming week. We added an additional display for the equipped weapon’s fire mode (single shot, burst, full auto, etc.) to the weapons widget and we added a message indicating when you’ve picked up ammo.
+## Animation
+The big news this week is that the final tweaks to the new rig have been test and approved. So the retargeting of existing animations and the creation of new animations based on mocap, or new bespoke anims starts now!bThe UK team is set up to start on weapon transition and gadget throw animations now that they have approval to use the new rig. In the meantime, they have been working on animations that will be used by the system AI system in other modules. This will all be essential for Squadron 42, so they’re the group to make it work!
+The ATX team was working on Gamescom and Social Module support last week and is starting on the No Weapon animation set. This will be used in Star Marine any time you holster a weapon. Most of the time, though, you’re probably going to have your weapon at the ready! (For now… of course, that won’t be the case on many planets in the persistent universe!) Illfonic has been working on addressing crouch feedback and have started on crouch to prone and back transitions, finished the pistol set jump, and changed the weapon pivot points to match up with hand parenting on both the P4AR and Gemini pistol.
+## Animation Blockers
+I want to make this point extremely clear: now that we have the approved rig, it will take some time for us to process the 3,000+ animations that are needed to launch Star Marine. How much time? We’ll know more after we do some sets to completion, at which point production can schedule out the rest of the process accurately (the typical schedule includes rate of work, testing and finishing out.)

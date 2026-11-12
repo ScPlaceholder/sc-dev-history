@@ -1,0 +1,25 @@
+## Star Citizen Patch 3.6.1b
+Alpha Patch 3.6.1b has been released to PTU and is now available to test!  Patch should now show: PTU-2333061.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Ship component fix
+- General gameplay
+Known Issues
+- Some landing pads will not highlight when requesting landing.
+- Players are sometimes able to QT through planets, exploding their ship.
+- The Ballista currently can't be restocked at outposts.
+- mobiGlas does not come up when getting a mission from Recco Battaglia
+- Players with spawn point set at Area18 will respawn in the air above the city after dying W/A: Avoid area or re-log to spawn.
+Ships and Vehicles
+- Temporarily removed the VTOL animation from the Cutlass to restore forward/reverse strafing when in hover mode.
+## Bug Fixes
+- Emissions should now display properly on MFD and support screens.
+- There should no longer be a floating boxing ring just outside of Lorville.
+- Players should no long stare at a black screen when attempting to respawn.
+- Fixed an issue that caused ship repairs to not work when degradation was present.
+- Fixed an issue where Pro Tem bounties would spawn inside asteroids.
+- Players should no longer get stuck on an infinite loading screen when entering the PU.

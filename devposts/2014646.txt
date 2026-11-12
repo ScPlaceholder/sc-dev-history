@@ -1,0 +1,69 @@
+## Star Citizen Patch 3.5.0h
+Alpha Patch 3.5.0h has been released to PTU, and is now available to test!  Patch should now show: PTU- 1324583.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- IFCS: Heat Rework, Atmospheric flight, Arena Commander
+- Balance: Manual gimbals, auto-convergence, cannons vs repeaters vs scatterguns, ship roles
+- Locations: ArcCorp, Area18, Lyria, Wala
+- Star Marine: All game modes
+- Female Character
+- DNA face customization  system
+- 300i
+Major Known Issues:
+- You WILL CRASH if you manually land at Area18. Use Autolanding only.
+- Some aspect ratios do not work well with the ship HUD.
+## New Features
+General
+- Removed Million Mile High Club from main menu as it is now accessible via Area18
+## Feature Updates
+Universe
+- CenterMass and armor shops throughout PU have updated inventories and may differentiate in price at different locations
+- Updated dressing in player habs
+- Multiple performance optimizations around Lorville
+Missions
+- Updated ArcCorp area missions.
+- Added dialog to AI for bounty hunting missions
+- Players now drop contract items when disconnecting to prevent breaking mission flow for other players
+Ships and Vehicles
+- VFX pass on 300i damage and destruction states
+- IFCS tuning pass on 300i including mass corrections
+- Quantum drive audio updated
+- Increased interaction distance for larger ships in in-game stores
+## Bug Fixes
+- Female characters should now have a helmet HUD.
+- A section of the upper hull of the 300i should no longer be indestructible and lack shield VFX.
+- The restricted area at Area18 should no longer kill players inside the sky bus.
+- Idle thrust effects and engine trails should no longer play if the engine is shut off.
+- Fixed incorrect engine trail VFX for Reliant series when in landing configuration.
+- The female character should no longer be misaligned in the Gladiator.
+- Fixed missing flak burst VFX on Pyroburst scatterguns.
+- Fixed various pieces of geometry clipping through Dumper's Depot.
+- Fixed flickering decals on the Astro Armada side door.
+- The Kareah terminal should once again reduce crimestat rating.
+- Fixed clipping boxes at Levski's Dumper's Depot.
+- Fix for missing Constellation bed animations for the female character.
+- Players should now be able to spool their quantum drive again, after cooldown, when exiting quantum.
+- Fixing transit ticker to show sky bus times.
+- The lag pip should now function properly when activating gimbal lock.
+- Ships spawned via the ASOP terminal should no longer be missing thruster VFX.
+- Fixed a visibility issue near the player habs at Area18.
+- Fixed missing thruster nozzle animations for some ships.
+- Teasa Spaceport at Lorville should no longer have large swaths of mission texture around the hangars.
+- Players should no longer be able to get stuck in collision near the Astro Armada reception desk.
+- Kiosks at Area18 should now be able to detect player ships for commodity purchasing.
+- Fixed several incorrect materials for female armors.
+- Female player model should no longer clip through seats.
+- Fixed clickable areas in Character Customizer.
+- Personal beacons should no longer be invisible for acceptable clients.
+- Fixed multiple female model seat and hand positions while sitting.
+- Fixed mining/scanning UI not displaying correct optimal power level.
+- Ship claim interface should now show correct claim/expedite times and prices.
+- Fixed Area18 Casaba door popping when opening/closing.
+- Area18 hangars should no longer immediately destroy some ships.
+Technical
+- Fixed 2 server crashes.
+- Fixed 7 client crashes.

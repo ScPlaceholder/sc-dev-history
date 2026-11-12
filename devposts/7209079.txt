@@ -1,0 +1,52 @@
+Hi everyone!
+I hope you're all having a great week so far. I wanted to take a moment to give a brief update on Server Meshing and share a bit of a recapitulation, post-action report for recent playtests, and a glimpse into our intents for the next phases.
+## A quick recapitulation
+Back in March '24, following Server Meshing Test "A", we confirmed a critical design flaw in the Network Message Queue (NMQ) used by game servers and hybrids. The NMQ is responsible for transmitting data over UDP sockets for both reliable and unreliable (eventually consistent) traffic, as well as ensuring the security of this data transmission. All game data, including serialized variables, entity properties, and remote method calls, pass through this message queue. The identified flaw caused issues when processing large amounts of binds and messages, leading to performance problems causing large bottlenecks in the queue. Its usage of memory bandwidth was also problematic. To address this, the team went into focused development mode to create a replacement: the Replication Message Queue (RMQ).
+The RMQ is designed to significantly improve bandwidth efficiency and maintain security for game servers, clients, and replicants. Most importantly, it aims to prevent major networking bottlenecks that players would typically experience as prolonged interaction delays affecting multiple users simultaneously.
+As previously shared, we introduced the first version of RMQ in early 3.24.0 releases as a "canary" on selected shards. It's now fully deployed across all 3.24.1 shards. We're closely monitoring RMQ performance in relation to shard age, as we observed in 3.23.1 that as shards aged, the number of binds and messages increased significantly.
+Encouragingly, since implementing the RMQ, we've observed clear improvements in our metrics and performance captures. We're optimistic that these positive trends will persist as shards age, though we'll continue to monitor the situation closely.
+## Server Meshing Tests
+With RMQ in place, along with other hybrid improvements, we have resumed Server Meshing tests using the current patch codebase at 3.24.
+Our test objectives are to:
+- Identify areas needing optimization to achieve low-latency replication at scale with the actual game and real players.
+- Pinpoint game features that require adjustment for high player counts.
+- Pinpoint game environments that need adjustments for higher player counts.
+- Uncover bugs related to server transition, server recovery, and other quirks introduced by the meshed setup.
+- Confirm changes and improve the game experience at higher player counts (from a networking point-of-view)
+We are aiming for a rapid iteration cycle to test our corrections and optimizations, ensuring progress at each step without interference from other changes to the game. Our goal is to conduct weekly tests, until it is time to rejoin the main development branch for the 4.0 PTU waves.
+We will only proceed to a Tech Preview test in each week if we have sufficient changes and improvements validated for you all to play.
+Our tests should mostly follow a given pattern:
+- First start with a single-server setup to validate no new problems
+- Expand to midsize configuration, aka 3 servers 500 players
+- Expand to a larger size configuration, aka 6 servers 1000 players
+- Reel back to a comfortable player cap and server amount based on performance to leave the test open for a few hours so more players can experiment and we can capture data
+In these tests, Missions will not be available as the mission system is currently being refactored to be server meshing compatible in 4.0. Several game systems (like social) are also being adjusted for server meshing but those changes are not in the Technical Preview builds which we aim to isolate for any ongoing development, bar networking code. The testing of these systems will resume when 4.0 hits PTU with server meshing enabled.
+## Meshing Test "B" post-action report
+Meshing Test "B" was conducted on September 12 and was the first test on RMQ.
+The results were disappointing and unexpected, but the previously identified bottleneck identified in Test "A" was confirmed fixed. While interaction delay at scale had improved, allowing us to leave players testing a 4:350 set up, the problem remained. The next performance bottleneck to be solved was identified.
+Observations:
+- Zoning in and out times were problematic, with a lot of players stuck loading when a rush of players occurred
+- Latency and interaction delays made the game unplayable at large player counts
+- Problem area would also affect game server connections, making the problem worse.
+- Silver lining: the original problem from NMQ was confirmed fixed through metrics and captures
+The test was shut down early.
+## Meshing Test "C" post action report
+Meshing Test "C" was conducted on September 19 and included performance optimizations.
+Test C was the first to use a build with the legacy NMQ system stripped out. This was an important step as RMQ has been designed for greater parallelism, but these optimizations could not be unlocked while we still needed to support NMQ. Test C included the first round of these planned optimizations and significantly improved our ability to scale before the interaction delay grows and the game becomes unplayable.
+This test also allowed us to start seeing more gameplay-related issues as players spread around the game world and were able to experience a meshed universe.
+This test was a big step forward. We were able to successfully identify additional issues present, but walked away from this playtest feeling optimistic.
+Observations:
+- Zoning in and out times were still problematic at higher player counts
+- Many players have XL-Hangars, but there aren't enough XL Gateways when many players spawn in a short period of time. ATC Queue times were too high.
+- Social systems are still tied per game server (and not game shard), causing channels to be empty for players in other areas. Player count max look capped at 100 even though the system is not limited. This work will happen 4.0 stream so as not to introduce large changes in Tech Preview.
+- Higher player count and markers are a usability/visiblity issue and have a performance cost on the client.
+- Bathrooms in New Babbage were clogged causing massive conga lines as players queued up to wait for their turn. (:troll:)
+- Latency and interaction delays went up in the 1000-player test, where clear new performance optimization hotspots were found. This is the focus of the work until the next test.
+- A hybrid crash would cause 30k error sporadically in the meshing setup. This is the focus of the work until the next test.
+## Onwards
+While these early results are promising steps forward, we're aware that challenges remain. We're committed to tackling each hurdle through rapid iteration, always aiming to improve your gaming experience.
+To those of you who participate in these tests: your dedication is truly inspiring. Taking time out of your day to come and try out new features and tech, much respect. It's a pleasure and a privilege to progress on this technology together. Your insights and patience are invaluable as we transform our game to be the MMO we want it to be.
+We're excited about the path ahead and will keep you all updated on our journey.
+Thank you for being an integral part of this ambitious project with us!
+o7
+-b

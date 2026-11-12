@@ -1,0 +1,74 @@
+## Star Citizen Patch 3.8.1b
+Alpha Patch 3.8.1b has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.1-PTU.4125354.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- General gameplay and traversal
+- Bug regression list
+Known Issues
+- Escort missions may not proceed after reaching the rendezvous marker.
+- Sometimes repair services are unavailable when they should be present.
+- After a ship is repaired, detachable components will remain attached to the ship when destroyed and a duplicate component will fall off.
+- Repair fails if you select repair and refuel simultaneously.
+- Players can die in Area18 when exiting EzHab or the transit system.
+- Cycling through character customizer options can sometimes cause a client crash.
+- Once an Animus spare magazine has been emptied the player can no longer equip fresh magazines in the same slot.
+- Ships can be displayed as "unknown" after destruction, be available for spawn, but not appear on their specified hangar.
+- Entering or exiting via EVA can sometimes cause the player to turn/spin suddenly and harm themselves.
+- Objects can fall through the floor when dropped.
+- When server FPS is low the mobiGlas can sometimes close immediately after open.
+- An extra static train can appear at Lorville and prevent the use of trains.
+- The visuals of the ships on the rental screen may have missing areas or disappear completely.
+- The Caterpillar will occasionally rock or tip over on itself after landing on a planetary body.
+- CryAstro services may not work at various stations and major ports.
+Work-around: Hover before landing and request services just above the pad.
+- Rentals and/or rental timers may not work when renting a second ship.
+- Party makers will vanish form their respective players if they die far from their respawn point.
+- If a player's ship is destroyed after bed logout they will return to the server at origin.
+- NPCs may sometimes be doing usable animations in places that they shouldn't.
+- Countermeasures are not working as intended to deter missiles.
+- The 890 Jump does not have the correct cargo capacity.
+- The Combine Cannon and distortion weapons are not working as intended.
+- Elevators at Port Tressler and Everus Harbor may not show up when called.
+- If the quantum travel marker is at the edge of a moon or planet its possible to QT through the moon and explode..
+- Purchased commodities will often visually not appear in the ship's hold.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## New Features
+Gameplay
+- Added basic "MedBed" gameplay functionality.
+Medical beds can now be used for healing and respawn after death.  Initial game login is still set by the menu selection, if it's the first login, or by the last ATC landing at a major station.  After initial login, players can manually set their respawn to a medical bed by entering the bed and selecting the "Set as preferred ICU" interaction.  Medical bed spawning can also be cleared in the same way by selecting "Clear as preferred ICU".  Upon death, the player will respawn at the desired medical bed.  Currently this functionality is only available on ships with medical beds (just the 890 for this build) and will only work if the ship is available (not despawned or destroyed).  If the ship is not available, players will instead respawn at their default location until they have manually set another medical bed. Additionally, if the player is injured they can use a medical bed to heal by selecting the "Treat Injuries" interaction, which is only visible when the player has treatable wounds.
+- Added wait and instruction objective and timer to patrol mission starts.
+- Added a checkbox in game options to disable film grain graphical effect.
+Ships and Vehicles
+- Added weapon report audio for ship weapons in atmosphere.
+## Feature Updates
+Gameplay
+- Security scans now give people more time to stop.
+Ships and Vehicles
+- Updated surface VFX for the Pisces.
+- Reworked/updated the Drake Cutlass thruster audio.
+- Improved audibility of ship component overheat cockpit warning.
+## Bug Fixes
+- Players should no longer occasionally lose all UEC upon relogging.
+- Drug assets should once again have correct VFX and SFX when destroyed.
+- Contracts should now properly reset offerings when a player hacks away their crimestat.
+- Fixed placeholder text for the Pisces.
+- Fixed bugged damage states and shields on the Caterpillar causing it to take no damage.
+- Fixed some rest stops missing CryAstro services.
+- Delivery boxes should no longer be dropped when using a ship ladder.
+- Fixed escort rescue missions so the location the player is directed matches the location of the mission.
+- Players should no longer occasionally become unresponsive when transition between EVA and ship or vice versa.
+- Fixed missing audio on Cutlass Landing Gear.
+- Fixed an issue where when attempting to QT, if the player triggered the misalignment warning and then realigned the cursor, the warning alarm would continue to play.
+- Fixed a missing ship computer UI audio trigger for 'Ammo Low'.
+- Fixed missing diegetic music at Casaba outlets in Rest Stops.
+- Audio-driven camera shake should function again.
+Technical
+- Fixed 2 client crashes.
+- Fixed a server crash.

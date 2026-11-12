@@ -1,0 +1,59 @@
+## Feature Updates
+Locations
+- Underground Facilities - Rastar Update
+Rastar is a tool which is used to quickly build POI’s on planet surfaces by combining pre-built modules together at the click of a button. They also change the way which mission locations are setup and streamed in, essentially, they are the future of creating planetary locations. This update moves all our original UGF’s over to the new Rastar tool workflow. All UGF's have been replaced in the same positions as they were previously, with the settings they previously had applied to them reapplied where appropriate. This means functionally the current locations should be no different than they were before on the mission side of things and also art wise should be the same barring some minor adjustments to the exterior layout of each location.
+Gameplay
+- Wheeled Vehicle Handling Improvements
+Updates and improvements to current ground vehicle movement parameters and simulation, allowing for more robust tuning and identity between various ground vehicles.
+- AI Ship Difficulty Rebalance
+Until now, there has been a very small pool of ships available for use as AI in missions. With this new change we have included every ship able to QT into the mix for both Criminals and Civilians, though some that didn’t make sense for Criminals have not been added, like Cutlass Blue for instance. This update includes a full AI Ship Rebalance of difficulties. Ships have been divided into difficulty bands which have mainly been derived from large data sets based on PVP analytics. Finally, we have also made a new ship difficulty band of Very Hard which is now reflected in the Very Hard bounty/assassination missions.
+- Vaulting & Mantling - Air Ledge Grab Improvements
+Implementing updated Vaulting & Mantling improvements that make the process much more smooth and intuitive for players. This update allows players to now be able to grab ledges while running and jumping, low/high vault while running and/or in mid-air, and allows low/high mantle while running and/or in mid-air.
+- Mining Stability and Polish
+Enhanced lifetime of ROC coolers to help adjust them overheating while in use and breaking down too quick.
+Core Tech
+- Updated EAC SDK to 1.15.5
+## Bug Fixes
+- Fixed - Stanton - AI / FPS - Enemy combat AI is slow to respond or react
+- Fixed - Art / VFX - Esperia ships with activated viewports (Talon, Prowler) have opaque glass material blocking vision
+- Fixed - ASOP / Fleet Manager - Locations - Unable to deliver any vehicles from an ASOP terminal
+- Fixed - Mouse - Controls / Game Code - The Screen will constantly Re-centre when in Interaction Mode
+- Fixed - Multiple Locations - Social AI - AI Standing / Crouching on Benches Throughout The PU
+- Fixed - UI - Starmap - No planets are visible the first time the player opens the Starmap
+- Fixed - PES / Inventory - Cannot equip looted items after restarting game session
+- Fixed - Ships - ASOP Terminal - Spawning ships causes the requested ship to spawn outside of the hangars
+- Fixed -  Ships / Vehicles - VMS / CryAstro Services - CryAstro services does not offer the option to repair/refuel/restock ships
+- Fixed - Ships / UI - mobiGlas - VMA - Vehicle Components - The Vulture default Baler salvage heads cannot be re-equipped in VMA
+- Fixed - Transit - Area18 - Orison - Shuttles/Trains/Trams - Players are falling through sometimes disappearing trams and shuttles to their deaths
+- Fixed - UI - mobiGlas - VMA / Ship Components - Equipping more than 5 components in a single "Save Changes and Equip" VMA transaction will fail
+- Fixed - Vehicles / UI - mobiGlas - VMA - Ships will not load in VMA
+- Fixed - Actor / Respawn - Players may load in with their character dead T-Posing partially submerged into the hab floor
+- Fixed - Character - The player can sometimes initially spawn or fall outside of the bed in habs or hospitals
+- Fixed - Character - When attempting to equip the Greycat Salvage Backpack, sometimes the backpack won't equip correctly
+- Fixed - Character - UI - Medical Screens - Female player character can't fully reach the medical bed terminal screen in various ships
+- Fixed - Art - Artimex Helmet's respiratory tube is unattached on both male and female player characters
+- Fixed - Physics / Ships - Planets / Multiship - Ships Cannot Land And Will Float Away
+- Fixed - Actor Feature - Player Status / EVA - Players are instantly downed when transitioning from EVA to Gravity with a Tier 1 leg injury
+- Fixed - AI / FPS - Enemy combat AI is slow to respond or react
+- Fixed - Deadbolt V Cannon - Vehicles / Vehicle Tech / UI - Cannon fire is inconsistent in its damage to players on foot.
+- Fixed - Multivehicle - Locations - Medical Bay Bed and Screen Obstruction in Hangars
+- Fixed - Locations - Aberdeen - Klescher Rehabilitation Facility - Missions - Ursa rovers can sometimes spawn under the garages, preventing prisoner escape
+- Fixed - Locations - Aberdeen Moon / Klescher Rehabilitation Facility - Prison Kiosk / Ore Sale - Game Code / Transaction - Transaction failure occurs when attempting to deposit Harvestables
+- Fixed - Locations / ASOP / ATC - ASOPs and ATC reporting all landing pads full despite empty hangars
+- Fixed - Locations / Terminals - Lorville - New Deal and Vantage Rental Kiosks Are Missing
+- Fixed - Mining - Game Code / Weapons / Mining - Mining Deposits Fracture Difficulty can randomly change
+- Fixed - Shopping / Mining - Refinery terminal endless message "Processing Your Request" and does not load interface
+- Fixed - Shopping - The total transaction cost of renting ships/vehicles that's displayed on rental kiosks is incorrect to what the player is actually charged
+- Fixed - Vehicles - Players can enter the ANVIL Carrack via interacting with the manned turrets on foot or via EVA
+- Fixed - Vehicles - Drake Vulture - Greycat Multitool rarely stays in weapon rack ; will teleport back into players hand
+- Fixed - Vehicles - Art / GFX - Materials - Components - Paints - Multiple paints cause the captain and crew quarters windows to be opaque in the 400i
+- Fixed - Ships - Ship Features - Art / Graphics / Lighting / Shadows - The cockpit door of the Valkyrie is very darkly shadowed any time the door is not animating
+- Fixed - RSI Constellation Multivariant - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Fixed - Multivehicle - Cargo Grid / Commodities - Cargo that has been moved off-grid and out of vehicle persists on-grid at the commodity kiosk, which prevents purchases from filling those empty cargo on-grid slots
+- Fixed - Graphics / UI - Inventory - Ultrawide resolutions inhibit cursor movement, cannot click Close button
+- Fixed - Interactable - Lootable Container displays a Red Loot Prompt that is non-interactable
+- Fixed - EXPLOIT - Inventory - Ammo duplication when picking up from floor
+- Fixed - EXPLOIT - Physics - Emotes - Players can use emotes to attach themselves to a ships hull
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 9 Server Crashes

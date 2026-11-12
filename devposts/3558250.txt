@@ -1,0 +1,63 @@
+## Star Citizen Patch 3.11.1
+Alpha Patch 3.11.1 has been released onto the LIVE servers and is now available!   Patch should now show: VERSION 3.11.1-LIVE.6538054.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+- Visiting location from fresh boot will cause player to spawn on / below the surface
+- Powering off ships may cause it to sink into the ground on planets (Workaround: Keep ships powered on when landed)
+- Weapon SFX not playing when vehicle weapons are fired
+- GRIN ROC extracting crystals can fail to fill the cargo bar
+- Crash occurs when exiting to main menu shortly after crashing & destroying your ship
+- The Hammerhead elevator collides with the landing bay at Port Olisar, causing the ship to move
+- Restocking on missiles/torpedoes, then storing and respawning the same ship will have missiles/torpedoes missing
+- Ships landed at Lorville & New Babbage cannot be stored
+- Players can get their ship into an 'unknown' status after abandoning it and then dying and respawning at some Rest Stops causing an insurance loophole
+- Origin 100 series Rain / slush effects are moving backwards to the direction of travel
+- Origin 100 series beds do not retract
+- Greycat ROC mining arm can snap out of place upon re-entering the vehicle if the mining arm had been previously extended prior to exiting the vehicle
+- Running into the stairs of an Origin 100 series ship as the door of the ship opens will cause players to fall through the ground
+- Refueling hydrogen fuel first can prevent you from refueling quantum fuel
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+## New Features
+Locations
+- Intergalactic Aerospace Expo Hall
+IAE 2950 will take place on microTech in the New Babbage landing zone November 20th through December 2nd and is accessible by taking the tram lines.
+Ships and Vehicles
+- New Ship: Crusader Mercury Star Runner
+- New Ship: Consolidated Outland Nomad
+## Feature Updates
+Gameplay
+- Increased the length of time a player has to accept or deny a press charges notification
+- Changed external inventories so that they can only be accessed by 1 player at a time
+Ships and Vehicles
+- Removed Origin 890j medbed up/down animation to avoid bed clipping issues
+## Major Bug Fixes
+- Ground vehicles should no longer roll or fall through planetary surfaces when powered on.
+- The Greycat Roc should no longer be able to enter a state of duplicating its inventory and capacity indefinitely.
+- AR trajectory when throwing grenades should no longer be missing.
+- Fixed Z-Fighting issues on the two system access panels in the interior section of the Cutlass Blue and Red by the rear door / ramp.
+- Vehicles should no longer slide / move on planetary surfaces when powered on.
+- Players should no longer be able to fire missiles and destroy players on landing pads at Port Olisar while outside the greenzone.
+- The missile range should now update correctly when swapping missile types that have reduced minimum/maximum range.
+- Prospector Mining UI should no longer be oversized.
+- Aegis Reclaimer bunk bed door should no longer trap the player when laying down.
+- Ursa Rover Turret names in the Vehicle loadout manager should no longer be string ID placeholder text.
+- Clovus Darneely's position should no longer shift slightly during certain animations.
+- Ground Vehicles should now be able to be spawned at Gate 05 in Lorville.
+- First notification after dying should no longer be empty.
+- Mousing over an item in the inventory should now correctly indicate how much capacity that item is taking up.
+- Players calling a pilot now correctly see a player in the pilot seat.
+- Members list UI should now correctly animate when player is speaking in proximity chat.
+## Technical
+- Fixed 5 Client crashes
+- Fixed 2 Server crashes
+## Hot Fix 3.11.1a
+- Fixed an issue causing ships to fall through planet surfaces when powered off.
+- Female Characters should now have correct sit animations for the under counter seat in the Nomad.
+- Paints should now be able to be applied to the Sabre Comet.
+- "Illegal Cargo" text will no longer show up in trading kiosks when a player has no illegal cargo.
+Technical
+- Fixed a Server Deadlock
+- Fixed a Backend Service Crash

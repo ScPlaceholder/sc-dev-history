@@ -1,0 +1,50 @@
+## Star Citizen Patch 3.14.0l
+Alpha Patch 3.14.0l has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7651022.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: Wave 2
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Current cloud tech is still in active development and not yet final. There's ongoing work on SDF occlusion which should help alleviate the graphical artifacting (visual dots in the clouds). Additionally, we are working towards having local VFX for the clouds (similar to the gas clouds around rest stops) which will make a big difference in overall quality.
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Special Note: This build has a speculative fix to help with desync players have been experiencing during ship maneuvering. Especially after quantum traveling. This fix is to hopefully fix players exploding when hitting atmosphere as well as many other things like a player inside a ship seeing the ship at one location when the pilot has quantumed to another. We do not expect this to fix combat positional offsets but please keep an eye out for this as well. If you are able to, we would like players to test this and if the issues still occur, provide video if possible.
+Known Issues
+- Gas Clouds on Crusader appear to have moving graphical artifacts that appear as dots. Current clouds are still in development and not final. See note at the top of patch notes.
+- Orison objects & textures loading very slowly
+- Players may need to unequip all missiles from every rack to see other types of missiles
+- Missiles do not follow flares as a countermeasure
+- Single location will only appear if the player spools their drive before setting destination on the starmap (Workaround: Spool quantum drive before opening the starmap and then open it and set route)
+- Various UI markers are faded and hard to read
+- Unable to scan for FPS or ROC-sized mining deposits until very close
+- Security Ships do not recognise illegal goods onboard a ship when being carried by a player
+- The Player is unable to QT in Succession without Toggling the QT Drive off/on again
+- Landing gear proxies are missing on certain ships
+- Docked vehicles have misplaced collisions
+- Port Tressler is missing QT marker when Player returns to microTech planet
+## Feature Updates
+Gameplay
+- Ongoing Ship Capacitor, Balance, and Polish Pass
+Fixed regen cost of some S5 energy cannons. Fix bullet damage in KLWE laser repeater S1. Reduced delay on Warlock's EMP. Adjusted Hornet variants rotation velocities. Adjusted power control for Starlifter, giving pilot higher access than the copilot.
+- Polish pass on IFCS thruster Wind dust volumes on planet surfaces
+Ships and Vehicles
+- Legibility polish pass for new sliced ship HUD
+## Major Bug Fixes
+- Speculative fix for ship desync issues
+- Fixed an issue causing player's to twitch and jerk incorrectly when moving around inside ships
+- Players should no longer get a crimestat for killing legal bounty targets
+- Fixed an issue causing assisted gimbal to snap onto targets instead of a slower slew
+## Technical
+- Fixed 1 Client crash
+- Fixed 2 Main Thread Deadlocks
+- Fixed 1 Backend Service Crash
+- Fixed a log spam issue

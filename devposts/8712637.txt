@@ -1,0 +1,58 @@
+## Star Citizen Alpha Patch 4.7
+Alpha Patch 4.7 has been released and is now available to test on the PTU environment!   Patch should now show: VERSION 4.7.0-PTU.11458882.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+## Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Operation Breaker Station and QV Breaker Stations locations
+- Inventory Rework
+- Crafting Fabricator and Blueprints
+- Engineering Updates
+- Radar Assisted Targeting (Radar components now in shops)
+- Nyx Social Stations
+- Ship Armor Rebalance
+## Known Issues
+The main front elevator of the 890j has been temporarily disabled pending further fixes
+- Multi-System - PU - ASOP Terminal / Locations - Moving the mouse cursor over a different vehicle in the ASOP when attempting to deliver a specific vehicle will deliver the different vehicle instead
+- Multi-System - PU - ASOP Terminal / UI - There is a chance that a blank information of the Vehicle may appear on Hangar Delivery Request using the ASOP Terminal
+- PU - Nyx/Levski - Transit - Going prone whilst in a moving Limbo Elevator Carriage, will cause the player to fall out of the carriage
+- PU - Starmap / MobiGlas / UI - Starmap is zoomed into the ship when in a cockpit instead of showing the system or region of space in
+- PU - Nyx - RCD - Medical Screens / Locations / Medical - Medical imprint cannot be set at the Exclusive Medical Bay locations
+- PU - Nyx - RCD - Locations / Art / Proxy - Breakable Ice entity visibly stays intact after shooting icicles
+- PU - Inventory Rework - UI - Inventory does not update Capacity and Space changes in Personal Inventory
+- Multi-Item - PU - Inventory Rework / Weapons / Art - Some icons become stretched out upon scrolling down the inventory
+- Multi-System - PU - UI / mobiGlas / Starmap - Starmap search bar dropdowns will only show location icons stacked on top of each other
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+- Multi-System - PU - mobiGlas / UI / Starmap - The Starmap flickers when the player zooms in / out and moves across the map
+## Features & Gameplay
+Gameplay
+Operation Rock Breaker Polish
+Further location performance, LOD, and lighting optimizations. Added kill volume inside Rock Cracker asteroid outside of mission opening. Increasing savrilium rock count within the asteroid. Further minimap markup.  Adjusted defend areas around the location to allow for the reinforcement enemies to use cover correctly.
+Crafting
+Fabricators moved to different shops (Kelto/Dumper's Depot - Currently missing from Levski). Cleaned up of some armor blueprints and correction of weapon recoil reductions to be even on energy and ballistics. Updated fabricator physics proxies. Added fabricator LODs. Tonight we are testing blueprint persistence between builds and are expecting blueprints gained in tonight's build to persist into the next PTU build.
+Ships and Vehicles
+Engineering Updates
+Large health increases for Doors, Ramps, and Elevator across all ships
+Core Tech
+VR Updates
+- Fix Mirror Mode Smoothing which was smoothing the camera incorrectly and not the headsets hmd rotation
+- Fix hardware mouse not returning same values when transforming from and to display space due to rounding errors
+Completely rewrote VR Cursor:  VR Cursor no longer has any bounds and can be moved indefinitely. Cursor updated only once per frame with the position multiple times since view camera also gets updated multiple times. Hide VR cursor in personal inventory which V2 no longer needs . Add EVA yaw/pitch mouse actions to inMobiGlas_menu since they control the vr cursor. Removed EVA action-fails from PMA_Mobiglas which was stopping the cursor from being moved. Note: I'm not sure if this can have unintended sideeffects. Alternatively the vr cursor can be controlled directly via the mouse-movement events, but doing it this way its hooked through our normal action system and should work with any other controls directly as well
+Ships & Vehicles
+- Added purchasable ship radars to Omega Pro in New Babbage
+## Bug Fixes
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues
+- Potential Fix: Multivehicle - PU - Vehicles / Vehicle Components / Vehicle Balance - Ramp HP too low; low counts of FPS rounds drop ramp (STARC-169513)
+- Potential Fix: PU - Inventory Rework / Items / UI – The stackable item in the inventory remains unstacked after clicking the “Autostack” option (STARC-196038)
+- Potential Fix: Stanton - Personal Inventory / UI - 'MOVE ALL' button doesn't work (STARC-199094)
+- Potential Fix: Multi-Item - PU - Crafting / UI / Art - Some item previews on the Fabricator are too small, making it difficult for the player to clearly see the items
+- Potential Fix: PU - Nyx - RCD - Locations / Design / Interactables - Catalyst rack will not reset if fewer than all 8 catalysts are removed from the rack
+- Potential Fix: PU - Nyx - Nyx Mission Pack 2 - Mission Content / AI / Locations - Any space ship mission AI have a chance to spawn inside the Rockcracker Asteroid
+- Potential Fix: PU - Stanton - Locations - Wikelos Emporium Stations - The Collector / Mission Content - Doors to the show floor room are stuck closed with 'Opening Soon' even after completing intro mission
+- Potential Fix: PU - Crafting / Blueprints - Missions / Mercenary - HeadHunters Eliminate All and Eliminate Boss do not award blueprints
+- Potential Fix: PU - Nyx - RCD - Mission Content / Props - Lens clips into geometry when placed on cargo grid (STARC-198719)
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed a Backend-Service Crash

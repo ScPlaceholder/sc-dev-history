@@ -1,0 +1,68 @@
+## Star Citizen Alpha Patch 3.24.3
+Alpha Patch 3.24.3 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.3-PTU.9405451.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+Note: Today's build does not have new ships available just yet. We are planning on adding these during PTU phases for 3.24.3 before release.
+- Stability & Bugfixes
+- IAE Halls at New Babbage
+- Save Stanton Global Event
+## Known Issues
+- IMPORTANT! Multivehicle - PU - Stanton - Vehicles / Quantum Drives - Quantum Drive is not allocated any power by default upon entering NAV mode
+- PU - Multiple Items / Inventory Kiosk / Personal Inventory - Some items placed into Character's hand are dropped
+- PU - Stanton - Orison - Vision Center elevator carriage attaches to incorrect side of elevator door
+- PU - Social - AR markers - Party markers are not visible to other party members
+- The Argo ATLS currently cannot be destroyed (Not intended end goal and player inside is still vulnerable)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - Multivehicle - MFD - MFDs can be interacted with while in mobiGlas
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+- PU - Stanton - Landing Zone (LZ) - New Babbage - Personal Hangar - Locations / Art / Graphics - A large opaque plane will be visible when viewed from the ASOP/Storage Access area if hangar doors are open
+- PU - Locations / Physics - UGF - The interior of UGFs inherit the planet or moon's gravity
+## Features & Gameplay
+Ships and Vehicles
+- New: Added Point Defense Cannons to Constellation Phoenix
+- Updated MISC Starfarer Annunciator Scale
+- Realigned MISC Freelancer Annuciators to be Vertical
+- Made Slight adjustments to Flight Tuning for the Mirai Fury and Aegs Sabre Firebird/Peregrine
+- Added Rentable Ships in Arena Commander: Sabre Firebird, Anvil Hornet F7C MkII, and URSA Medivac
+## Bug Fixes
+- Fixed - Anvil Aerospace Carrack - PU - Vehicles - Carrack medical screen grants access to inventory upon striking ( F ) [ short press ] instead of medical screen
+- Fixed - PU - Stanton - Missions / AI - Ship AI move erratically and crash into the planet surface
+- Fixed - Hull A No atmosphere in Cabin (STARC-130810)
+- Fixed - PU - UGF - Missions / AI / Locations - Ninetails and Guard AI are overlapping and clipping in each other outside of the UGF (STARC-134907)
+- Fixed - PU - Stanton - Locations / AI - Turrets cannot be targeted (STARC-133658)
+- Fixed - Origin 400i - Ships / Vehicles / Art - Elevator - Elevator Panel buttons disappear on upper floor (STARC-130245)
+- Fixed - Origin 400i - PU - Vehicles / Art / GFX - Visarea - There are visarea issues with the component bays and cargo bay door in the 400i (STARC-105219)
+- Fixed - Origin 600i All variants - PU - Vehicles / Tech Art - Interior of the 600i doesn't render properly through doors (STARC-131448)
+- Fixed - Multivehicle - PU/AC - Vehicles / Resource Network - Full Power weapon assignment takes additional power away from other systems (STARC-133570)
+- Fixed - PU - Stanton - GLOBAL - Locations / Lighting - Illumination Issues with light probes and popping shadows (STARC-133622)
+- Fixed - Multivehicle - Physics / Collision - Mining / Items / Mining Pods - Detached Mining Pods improperly collide with vehicles and prevent players from loading them into other ships (STARC-120794)
+- Fixed - PU / AC - Clio - Locations / Graphics / Vulkan - The water on Clio has striping effect when flying nearby with Vulkan enabled (STARC-131702)
+- Fixed - Multivehicle - PU - Vehicles / Art / Vehicle Components - Vehicle components and interactables remain static when the vehicle is destroyed
+- Fixed - Multivehicle - PU - Vehicles / Resource Network - Animating vehicle weapons are powered on and in their 'deployed' state when spawned from an ASOP terminal
+- Fixed - Gemini LH86 Pistol - PU - Weapons / VFX - Muzzle flash is not present when firing
+- Fixed - PU - Stanton - MicroTech - Distribution Centers - Locations / Art - Planet surface has visual artifacts when arriving at POI's
+- Fixed - Aegis Sabre - PU - Vehicles / Art - Aegis Sabre has pixelated reflection texture on the cockpit canopy glass
+- Fixed - SC - Hair - The Tied Dreadlocks hair/mask Props do not show up on hair
+- Fixed - SC - Hair - Long Afro Hair - The hair Simulation jumps a lot when colliding with head proxy
+- Fixed - Banu Defender - Vehicles / UI / MFD / HUD - Unable to complete scan of other vehicles or see scan results (copilot now also has radar control)
+- Fixed - PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+- Fixed - Salvaged Skull 4 SCU Container - PU - Art / Inventory - 4 SCU variant of the Salvaged Skull set has the appearance of a default 4 SCU Container
+- Fixed - PU - Multitool - Multitool is stuck on tractor beam mode / first attachment used when using other attachments
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 12 Server Crashes
+- Fixed 3 Server Deadlocks
+- Fixed 1 Hybrid Crash
+- Made Several Audio Performance Optimizations
+- Made Several Out Of Memory Server Improvements

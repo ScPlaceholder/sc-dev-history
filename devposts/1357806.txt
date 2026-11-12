@@ -1,0 +1,93 @@
+## Star Citizen Patch 3.2.1
+Alpha Patch 3.2.1 has been released, and is now available to test!  Patch should now show: LIVE-834470.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Major Known Issues:
+- The Mustangs Alpha and Delta have a severe bug that causes players to drop through the surface after landing.  All owners have been given a temporary Aurora MR loaner while awaiting a resolution.
+- Although there have been some updates to turret effectiveness, their function still has room for improvements which we will continue to iterate on moving forward.
+## Feature Updates
+Universe
+- Adjusted the R97 shotgun price to be more consistent with other weapons.
+- Reduced the accuracy of AI turrets for the Cutlass, Starfarer, and Constellation.
+- Scaled insurance expedite cost to be proportionate with ship values and changed refuel/repair costs to be a portion of the ship claim expedite cost.
+- Removed EMPs from GrimHex Dumper's Depot as they are not able to be fitted on ships.
+Missions
+- Reduced the mission spawn timers to increase the frequency and availability of missions.
+FPS
+- Tweaked stamina consumption and regeneration.
+- Disabled radar in Star Marine until signatures and occlusion issues can be addressed.
+Ships and Vehicles
+- Adjusted heat values on the Blade's weapons so the S3 plasma cannon overheats slower and the S2 is capable of overheating.
+- Enabled UI prompts when an item is underpowered and removed MFD power throttle smoothing.
+- Updated to a new algorithm for ESP.
+- Reduced light levels on the bridge of the 600i.
+- Updated UI sounds for the mining system.
+- Updated Cutlass seating position to avoid strut obstruction.
+- Overclock state is now calculated based on power variables.
+- Reduced the firing arc of the Gladius nose gun to be in line with other ships and prevent AI from firing sideways at players.
+- Updated Reclaimer manned turret dashboard UI to render to texture (RTT).
+- Ship cannons or cannon type weapons are now semi-automatic fire.
+- Manned and Remote turret controls have been updated to stabilize motion and ease aiming.
+Star Marine
+- Removed watermelons from Echo 11 due their destruction causing a client crash.
+## Bug Fixes
+- Fixed an issue where players could get trapped while while hacking a control point in Star Marine.
+- The extraction SCU throughput should no longer remain after the rock has been fully extracted.
+- Fixed the lack of weapon sway when ADSing and fixed holding breath to have a noticeable effect.
+- Fix for the lack of friction on the lift preventing vehicle traction for the 600i.
+- Refueling should properly charge and refund you if you interrupt services.
+- The character should no longer vanish when trying on clothing and armor.
+- Weapon fire audio should no longer continue after the gun overheats and shuts down.
+- The Starfarer should have its catwalk railing back.
+- The Starfarer should no longer be stuck in auxiliary lighting after the ship is powered on.
+- Increasing the mineable threshold to prevent rocks from being highlighted as fracturable when they are extractable.
+- Explosive ammunition (rockets and Combine) should do damage again.
+- MISC and Drake ships should no longer trigger quantum fuel low audio when thrusters are overheating.
+- The Avenger's pilot seat should now properly highlight when selected in interaction mode.
+- Calibration Progress audio should no longer persist for the slave ship after the master ship finishes calibrating.
+- Overclocked components should now properly have overheat effects.
+- Grenades should no longer travel toward map origin when thrown.
+- Wearing specific kinds of helmets should no longer cause distant objects to appear blurry.
+- The Nox should no longer have opaque glass.
+- The player should no longer pass out too quickly from spamming crouch.
+- The mining arm on the Prospector should retract when attempting to quantum travel.
+- Turning on the scanning UI while attempting to calibrate should no longer result in nav points getting stuck on screen and the UIs stacking.
+- The mG UI should no longer be offset when entering the pilot seat with a primary weapon drawn.
+- Shield MFDs should now show the correct values for face redistribution.
+- Fixed placeholder text on the Condemnation distortion scattergun.
+- CryAstro should now properly restock ammunition.
+- Disabling the quantum drive during an interdiction should no longer cause the VFX to stick.
+- The countermeasure UI should now show properly after returning from scanner mode.
+- Sniper rifles should no longer replay muzzle flash VFX when coming out of ADS.
+- Players should now be able to equip more than one of the same weapon onto ship turrets.
+- After switching channels in visor/mobiGlas chat messages and notifications should no longer be duplicated.
+- AI should no longer spawn motionless into swarm modes of Arena Commander.
+- The AR marker for party members should no longer be inaccurate if that member quantum travels away.
+- The UEC/REC wallet should now update properly from account to game.
+- Switching from Commlink to another app should no longer cause the chat logs to be lost.
+- Switching between mG apps should no longer duplicate chat channels in Commlink.
+- Gladius MFDs should no longer have flickering "replaceme" textures for AMD users.
+- Reclaimer turret entry should no longer break on repeated usage.
+- 600i should no longer run out of power while flying in atmosphere.
+- The Ursa Rover should no longer run out of power while shooting.
+- The Hurricane turret should now be able to fire while the shields are recharging.
+- Fixed weapon groups on 350r so semi-auto weapons are not grouped with full auto.
+- The Freelancer should now be able to fire its weapons while recharging its shields.
+- Altered the weapon groups on the Buccaneer to avoid mixing semi-auto with auto.
+- Altered power on the Scythe/Glaive so they can fire their size 5 weapons more reliably.
+- The Reclaimer should no longer quickly overheat when in combat scenarios.
+- The Avenger should now be able to fire while the shields are recharging.
+- The Mustang series should no longer overheat quickly or get stuck in an overheat loop.
+- The default weapons of the Super Hornet should now be able to be fired without losing power.
+- The heat sink component should no longer be visible on the VMA.
+- The bridge of the Caterpillar should no longer be stuck in a low light state.
+- Star Marine control terminals should once again work normally.
+- Party member AR markers should no longer be reflected.
+- Fixed an issue where the Starfarer rear turret gunners didn't have the ability to control their radar.
+- All port slots should no longer be duplicated in the VMA.
+Technical
+- Fixed 4 server crashes.
+- Fixed 2 client crashes.
+- Fixed an issue that caused shopping services to crash.
+- Fixed an occasional disconnect issue (20009/30009).
+- When disconnected from the game, the player entity should no longer get stuck inside the server.
+- Fixed a shader issue that caused client performance to dip significantly when first loading into the PU.

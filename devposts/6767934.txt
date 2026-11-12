@@ -1,0 +1,3 @@
+We've discussed this in the past, and while it's a cool idea, in reality you need to transfer any data between the GPUs via RAM which is going to be slow, and also deal with scheduling issues between two drivers. So in practice you'd almost certainly hit barriers that made this not practical or performant for real time games at high frame rates.
+Ali Brown
+Senior Director of Graphics and Procedural Tech

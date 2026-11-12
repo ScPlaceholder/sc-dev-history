@@ -1,0 +1,35 @@
+## Star Citizen Patch 3.14.0t
+Alpha Patch 3.14.0t has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7689058.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: All Backers
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Known Issues
+- Some players have reported that they are Unable to select a system (may require an account recopy as well as logging fully out of the launcher and logging back in and possibly deleting user folder)
+- The pipe system has a distribution bug which affects weapon capacitor outputs especially on bigger ships like the 600i
+- Players may experience an infinite load when rejoining the PU after a bed logout
+- Editing PMA After Changing mobiGlas case prevents mobiglas functionality
+- Missiles do not follow flares as a countermeasure
+- Ships are not fully repaired after repairing / refueling them in VMS
+- Fan Made Localizations will not function
+## Feature Updates
+Gameplay
+- Arena Commander PvP Pick-up Rework
+With the changes to ship combat and ammo counts we have reduced the rate of pickups in Arena Commander. Pickups are no longer specifically connected to kills, a player must now gain a given score to unlock a pickup which will then spawn on their next kill. (May take approximately 3-4 kills) All pickups have have been adjusted to give a percentage of the requested resources rather than fixed values. Removed Fuel pickups.
+## Major Bug Fixes
+- Players should now be able to Buy or Sell Commodities at Admin and TDD Terminals
+## Technical
+- Fixed 1 Server Crash
+- Backend Service Optimization

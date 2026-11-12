@@ -1,0 +1,123 @@
+PU Monthly Report
+June 2022
+Alpha 3.17.2 is on the horizon, so this month’s report features a mix of features you’ll be experiencing very soon and things to look forward to in the coming months and beyond. Read on for all the details.
+## AI (Content)
+In June, a new narrative-focused AI designer joined the team and began improving the current shopkeeper behavior by expanding the variety of voices and dialogue. However, this AI is placeholder until the team finish converting the bartender to support different shop types, including food, clothing, and weapons. Further progress was also made on the dynamic conversations mentioned in previous reports.
+The team also set up the leisure-behavior AI to use the mobiGlas from different usables. Upon review, these animations were deemed too generic or unconvincing, so the designers are now undertaking previsualization to add more emotion and realism.
+## AI (Tech)
+One of AI Tech’s focuses in June was optimizing and improving Alpha 3.17.2. This involved adding functionality for the planetary nav-mesh and AI-reinforcement features.
+“This is the first iteration of the nav-mesh and reinforcement features but we are extremely proud and excited to see them available to all of you!” AI Tech Team
+Work continued on the locomotion code. This included improving the transitions between different locomotion states by further developing the initial implementation of pose matching. They also implemented linear speed warping, including a way to dynamically calculate a spline into a specific pose. For example, the enter position of a usable. This allows the team to make the transition between movement and interactive objects smoother and more believable. They also began improving and fixing idle steps, which are special animations used for extremely short paths (max 75cm).
+For 3D navigation, the team improved the implementation of ORCA 3D for collision avoidance and continued to develop break splines. Break splines can be dynamically attached to the systemic movement of any entity that uses 3D movement (currently ships but will include characters in EVA in the future). The entity can then select the appropriate spline based on its skills, direction, and other conditions before smoothing its entrance, allowing it to perform a cinematic movement into a systemic behavior.
+For trolley use, the team focused on tasks to allow an NPC using a usable (in this case a movable object) to be dynamically attached to another usable (such as a parking spot). They also supported the trolley lightweight update and tweaked path following to allow it to minimize the distance of the trolley from the path.
+On the Subsumption side, multiple tool aspects were upgraded and bugs were fixed to move development into the ‘improvement’ phase. A new panel was also added to give an advanced selection of parameters when the dropdown menu becomes too large.
+## AI (Vehicle Features)
+In June, AI Vehicle Features enabled the AI to control different ship modes. For example, this allows NPCs to switch to the correct mode when quantum jumping or using missiles.
+## Animation
+Throughout June, the Facial Animation team worked on outlaw characters, rescue and transport missions, AI bartenders, and player emotes. They also supported Pyro with motion-capture (mo-cap) alongside the Narrative team.
+Regarding mo-cap, the new studio is progressing well, with the truss being completed. The team are currently setting up the cameras, computers, and other equipment.
+## Art (Characters)
+June saw the Character Art team further develop the frontier outfits and begin work on high-fashion clothes for Stanton. They’re also creating new outfits for various upcoming events and promotions.
+## Art (Ships)
+Last month, the UK-based Ship Art team continued developing the Banu Merchantman’s exterior. Significant progress was made towards finalizing the larger forms as well as figuring out some of the finer details, such as intake design, decorative patterns, and the cargo ramp.
+The team also progressed with the final art pass on an unannounced vehicle, which should be wrapped up this month. Remaining tasks include polish before the LOD and damage passes.
+Work on the Argo SRV moved into the greybox phase. On the exterior, the team completed the hull, cargo lift, and entrance lift and made significant progress on the nacelles and landing gear. Inside, greyboxing continued for the cockpit, seat, and dash.
+Development of another unannounced ship continued, which is currently in greybox. June’s focus was on the landing gear, exterior doors, cockpit, dash, and pilot seat.
+## Community
+Alongside working on the new Community Hub, June saw the Community Team celebrating Pride with the Show Us Your Colors Celebration 2022 and publishing the Anvil Legionnaire Q&A.
+They then announced the Bar Citizen World Tour and Bar Citizen Day on June 12, which was celebrated in all CIG home cities. The team is actively planning events throughout the rest of the year and wants you to stay tuned for updates on this front coming soon.
+In support of July’s Foundation Festival, the team asked community orgs to answer their Promote Your Organization call. They also announced Battle of the Bricks, a charity build-off with the Eve Online Community team.
+Community also published several comm-links in celebration of Alien Week, including a scavenger hunt, Banu and Xi'an language challenges, and the Alien Ship Poster and Intergalactic Mix-Off contests.
+They also highlighted some of the lesser-discussed improvements coming in Alpha 3.17.2 in the first of two Patch Watch posts and detailed the Nine Tails Lockdown and Jumptown 2.0 Dynamic Events schedule.
+In addition to the regular output of content, the team has been hard at work and focused on the upcoming new Community Hub, which is now functioning on the live environment (main website, but only visible to staff). Porting over the hub from a staging environment to a live environment has been a huge milestone as the hub is finally being populated with real user content. The team is excited to share more soon.
+The team has also been hard at work planning and expecting all plans related to CitizenCon and the “Road to 4.0” which as mentioned in the last Letter From the Chairman, will present regular 4.0-related content between now and the release of 4.0. They are currently expecting to roll out this info-series in September.
+The Community Team also continues to provide gameplay training for incoming new hire staff, which has been massively praised by folks looking to learn more about the ‘verse.
+Finally, the team has been deep diving more options for incentivization related to the PTU in the short term, with a much broader variety of incentives in the mid to long term.
+## Engine
+In June, the Physics team made several improvements to ray world intersections (RWI), which now contains a semi-continuous mode to trace against rigid bodies. This makes projectile intersection tests more robust with fast-moving ships. RWI was also significantly optimized (3-5x on heavy usage).
+The tiling of dense SDFs was introduced, and SDF coordinate conversion and trilinear interpolation were optimized. Support for ‘player only collision’ geometry nodes inside CGFs/CGAs was fixed and extended, while work on the new ropes continued. Various bug fixes and other improvements were submitted too.
+On the renderer, the Gen12 transition continued with more passes being ported over, including responsive AA and decal rendering in the forward stage. The processing of scattering queries was reworked and a debug UI was added for them too. Buffer copying of sun shadow cascades was ported as well. The format of the previous HDR frame has been adjusted (reprojection, temporal AA) to be more efficient, and the cleanup of the render thread began.
+The Gen12 ports of atmospheric and volumetric cloud rendering continued as a generalized processing context, and new stages to decouple view-dependent resources from the core systems that operate on them have been introduced. The atmosphere shader code was adjusted to compile well with DXC and SPIR-V. Various improvements were made to prevent concurrency issues when streaming in properties of multiple planets at the same time and relaying them to the atmosphere and cloud-rendering systems.
+On the core engine, entity areas now utilize tags to track what entities/areas events send to each other. This replaces the hidden hierarchy logic that caused various issues and allows for more efficient code. Work on running the entire code base through include-what-you-use (IWYU) continued. The goal is to eventually make IWYU part of the continuous integration pipeline (trybuild) to keep code clean. Furthermore, a recent integration into the main development branch saw the introduction of the cigSTL/eaSTL namespace, which is planned to become a customizable STL library for StarEngine. The entity component update scheduler received updates to avoid iterating component lists when using manual update policies (performance). Work on improving file location (IO) continued, which should eventually lead to improved loading times for small files. Also, work on an improved r_displayinfo continued. Lastly, the old FPS analytic buckets were replaced with an array-based frame time bucket that allows for more accurate profiling information.
+The remainder of the time was spent supporting and bug fixing for Alpha 3.17.2.
+## Features (Arena Commander)
+The Arena Commander Features team fixed issues and added quality-of-life improvements to both the Arena Commander and Star Marine modules. Improvements were also made to the implementation of doors, controllers, and elevators, which will result in quicker, more robust setups in both vehicles and stations.
+Plans were also kicked off for new maps and gameplay experiences for Arena Commander and Star Marine.
+## Features (Characters & Weapons)
+Throughout June, the Features team worked on longer-term improvements to the personal inventory system based on feedback from recent live releases.
+“An often-requested feature is the ability to move a large number of items from one inventory to another - so we’ve added a "move all" button. This may sound trivial, but it needs the underlying logic to ensure the resulting service request is as small as possible and all condition logic is executed for the bulk of items being moved.” - Features Team
+Other features include being able to interact with items on the floor near the player and being able to move already equipped items from one port to another. Some of these features are already in larger-scale internal testing.
+Elsewhere, previously reported fundamental changes to how actor movement synchronization is handled were completed. The new logic successfully progressed through internal testing, which allowed the team to enable the feature in a limited capacity on some PTU servers. This identified additional issues for the team to work through, though the goal is still to have it enabled across all servers in Alpha 3.17.2.
+Star Citizen has long had a ground alignment system that ensures the foot placement of a character correctly interacts with the environment. June saw the team looking into extending this system to hand placements. As a use case, the vault traversal mechanic was used with increasingly complex-shaped ledges to stress test the functionality. This will be another useful tool to increase the fidelity of character animations and how they look across the PU’s dynamic environments.
+## Features (Gameplay)
+Last month, Gameplay Features began working on the next steps for the salvage profession, which involved evaluating the possibilities for the ‘munching’ mechanic, ship tractor beams, and the salvage grinder.
+The Aegis Reclaimer and Drake Vulture’s hull-scraping feature progressed well and is currently awaiting elements from the cargo refactor.
+Engineering and life support are proceeding well too. The team are now able to show all relevant items, rooms, doors, and their corresponding controls and data in an early blocked-out UI screen. The initial interactive elements and the first exchangeable/interactable ship items were added too.
+## Features (Vehicles)
+Last month, Vehicle Features worked on a variety of tasks to ready their systems for the release of persistent streaming. This involved the ongoing refactor of the transit system so they can simulate train networks when the carriages aren’t spawned in on any machines.
+The team also continued to refactor/redesign restricted areas.
+“We conducted some playtesting and found issues with the UI and user-experience side of things, which we’re working on now. We’ve now also set up a whole city using the new system to test out developer tooling, which has been quite successful.” Vehicle Feature Team
+Vehicle Features worked alongside AI to allow use of different ship modes, such as missile operator mode. This is still in development though progressing well.
+On the balance side, further tweaks were made to the new ground-vehicle handling, while a review and rebalance of fuel use began, which aims to improve the refueling experience.
+## Graphics, VFX Programming & Planet Tech
+Last month, the Graphics team continued porting features to Gen12, including gas clouds, rivers, frozen oceans, refraction, and multi-pass support. Fixes were also submitted for tessellation partitioning for planet ground fog. For the Vulkan backend, the team fixed issues caught by the validation layer, including mismatched texture types and mismatches of unused vertex input attributes (which are now reflected from the shader).
+For the render-to-texture system, the team fixed a crash caused by the wrong resolution being calculated when the screen resolution was changed, along with an issue with RTT holograms occasionally pixelating.
+Bugs were also fixed for the LOD merger, including an update to allow combining objects with more than 64 sub-materials. They also investigated issues with the rendering of invalid static shadow region entities. Significant progress was made on the hair shader too, including updates to greying controls, variation tiling, and melanin selection.
+VFX Programming continued investigating offline damage maps with persistence. They also continued implementing ImGUI debug tools for damage maps and a dynamic bitset data structure for damage-map queries. Changes were also made to damage-map materials alongside optimizations to hit processing and rendering.
+The Planet Tech team focused on bug fixes to help unblock the sandbox teams. They also looked at module placement fine tuning for RaStar and further developed automatic river placement validation.
+## Lighting
+The Lighting team onboarded new artists with work on the race track currently being added to the surface of Clio, with the aim of helping players navigate the course and providing mood to the location.
+The team completed a pass on the new gas clouds and rest-stop stations being added to ArcCorp and microTech’s Lagrange points. This was done using the already established palette and lighting language for quick integration.
+The team also continued to light the new derelict outposts and ship locations before refocusing on the upcoming colonial outpost location set. This is a huge new location and a new challenge for the team as they build the lighting to allow for dynamic and player-driven light state changes.
+## Locations (Montreal)
+A major focus throughout June was bug fixing, polishing, and addressing Evocati feedback on the derelict Reclaimer settlement and space missions.
+The Lorville cityscape progressed through the whitebox phase; the outskirts of Lorville were added and placed with the proper scale.
+“With these new outskirts, we now have a better idea of the scale of the “new” Lorville (hint: it’s bigger!).” - Locations Team
+They also validated Lorville’s transit system to ensure it could be modified to fit the city’s new layout.
+A new crash site, containing the 600i and Mercury derelicts, is approaching whitebox-complete. The team refined the composition and placement of the two ships to create a compelling settlement that will give a different flavor than the Reclaimer derelict.
+## In-Game Branding (Montreal)
+The new Montreal-based In-Game Branding team began their first task of revisiting all landing-zone signage to make it easier for players to orient themselves.
+“This is an ideal mandate since it is developing a close working collaboration with existing teams. The philosophy of this team is to listen to the community and leverage every aspect of in-game branding to offer a better player experience.” - In-Game Branding Team
+They also started tasks for an upcoming in-game event.
+## Narrative
+During June, the Narrative team spent time on their remaining tasks for Alpha 3.17.2, including getting strings for new items, missions, locations, and vehicle liveries ready to be added to the patch.
+Meanwhile, the team continued to work on a new mission archetype planned for a future release.
+“More narratively intense than other missions, it has been an exciting challenge for us to figure out solutions for offering the players a compelling story while ensuring re-playability and scalability.” Narrative Team
+Additionally, the writers created several scripts and had a recording session for the frontier vendors, who will populate bars and shops in the more remote corners of the universe. These line sets were expanded to include the ability for the vendors to offer players jobs and missions in preparation for when that mechanic becomes available.
+June also saw the team conduct narrative reviews of a few upcoming vehicles. During these reviews, the team meets with the designers and artists to look at each vehicle’s smallest details to ensure the lore is consistent throughout. This led to the team writing up suggestions for several new decals.
+Finally, the team celebrated First Contact Day with the community, which involved writing Xi’an and Banu language posts. On top of that, an in-depth look at Brentworth Care Center was republished and several new articles were added to the Galactapedia.
+## QA
+QA focused on the Alpha 3.17.2 patch and the integrations from their supported team streams.
+For AI, integration checks were completed for new and updates to existing features before they hit the main branch. They also updated all existing checklist documents in accordance with the new features coming for testing from the development teams.
+The embedded Locations testers continued to learn the editor and team’s workflow to better support them by creating test levels. Focus last month was on room systems and the tools used to create outposts and stations. Regular landing zone checks also continued to ensure they haven’t deteriorated.
+For the Engine team, QA continued to focus on PageHeap testing to keep on top of memory issues in-game. They also continued to learn Flowgraph and coding for automation use.
+The Tools team continued to receive support with the testing of their core tools.
+## Tools (Montreal)
+The Tools team continued rolling out Mighty Bridge to all teams and organized workshops on how to use it.
+The Programming team began tackling two major topics: wrapping up the ability to bring geometry from the editor into Houdini and UX improvements to Mighty Bridge.
+On the technical art side, the procedural location creation tool is progressing well, with the team expecting to put the first version into the hands of the team soon. Advancements were made to a suite of asset-scattering and environmental integration tools. For example, the first prototype will be a tool to create a destruction trail behind crashed spaceships in derelict settlements. Instead of having to edit by hand, the environment artists will be able to draw a spline that will automatically create the trail before adjusting a set of variables to make the trail looks exactly how they want.
+This type of tool can represent great gains in productivity. For example, creating a trail by hand took an artist around a week. This tool should reduce the time to half a day.
+## Tech Animation
+Tech Animation team continued wrapping up the animation pipeline refactor mentioned in last month’s report. This involved creating new rigs and tools and stripping out old code for more elegant and performant solutions.
+They also continued work on a new system that puts fidelity above all else. Although rarely used in gaming due to its expense and limitations, this type of system is ideal for performance pieces.
+Planning was done for the coming quarters, and numerous new character heads progressed towards animation support too.
+## Online Services (Montreal)
+The team progressed towards the new login-flow implementation and are currently fixing the remaining bugs found during QA review. This refractor is a necessary step towards the goal of achieving persistent entity streaming.
+The team also managed to fix the ‘stream sniper bug,’ a long-standing exploit allowing players to obtain another player’s marker despite not being in the party.
+## Live Tools (Montreal)
+Live Tools worked hard on the design of a new network operation center module dedicated to monitoring and troubleshooting login issues, which is now ready for development.
+The reputation and entitlement modules are now using a new technology to communicate with services. This migration will eventually be applied to all the modules.
+The team is also progressing with a new feature that lets users view player inventories, which will be used to troubleshoot ship and equipment issues more easily.
+## Turbulent (Web Platform)
+The Web team continued to prepare for upcoming promotions and to move forward with expanding the Alexandria product. The improvements and product evolution will increase ROIs with a global skin and theme library, allowing for a focus on quality, performance, and updating services. As the number of product users continues to grow, the team is focusing on ensuring the tool is both efficient and flexible, allowing the players to gain better insight with consistent branding, communication, and overall content.
+The Backend Web team completed the implementation of a new media management service. Although only used by a small subset of micro-services, the media management service will provide much more efficient processing when images are uploaded and retrieved. The team also began standardizing the authorization tokens so that all micro-services use the same method across the platform.
+DevOps worked on an initiative to completely switch over the web platform to Kubernetes, while Turbulent’s Experience team continued reworking the customer journey to make it easier and clearer for new users to get into the game.
+Time was also dedicated to adding features to the new Community Hub. With the migration almost complete, the team continued to add moderation tools, user profile pages, Twitch integration, and following features.
+“We can’t wait to release this into the wild as it will act as THE place to be if you want to feel the pulse of the Star Citizen community!” Web Platform Team
+## UI
+Throughout June, UI worked on the Starmap, hooking up quantum travel on contextual menus to make the process more intuitive. They also investigated how to show large-scale space clouds.
+Time was also invested into upgrading the underlying systems to work with persistence, particularly around vehicles and character loadouts for the various game modes. They also ported the in-game chat to Building Blocks as part of the ongoing conversion of the lens and visor.
+The UI Tech team worked on new approaches to aspect ratios to make it easier for the developers to set up resizable screens. They also upgraded the new 3D UI cards system so that they can easily create layered, floating UI with curved surfaces. This will help create better-looking interactive holographic UIs and animated billboards in key areas.
+## VFX
+The VFX team worked on several locations last month, including a Grim HEX hospital location, several derelict Reclaimer variants (planetary and out in space), and some derelict outposts. Work was also completed on an upcoming vehicle and salvage effects were further iterated upon.
+Finally, optimizations were made to planetary ground storm effects, which had caused performance issues for some players due to a change in the planetary data that determines how the effects spawn.

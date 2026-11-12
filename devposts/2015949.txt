@@ -1,0 +1,9 @@
+Cory! Answer in yellow! :wink:
+Following on with graphics-side info...
+Layer textures are very small (256 or 512px depending on the library) and are cached in memory (I kind of understand this but again, not a graphics programmer so you're better off getting details from one of those).
+The layer libraries are stored in a texture array, which allows us to index them arbitrarily (meaning the artists can mix and match materials) but also imposes the limitation that everything in the array has to be the same resolution, so this is why we have two fixed resolutions for them to choose from.
+Are maybe all the textures atlased at some point ?
+How are all these maps packed together ?
+The textures aren't generally atlased or packed aside from the layer libraries above, besides any hand-packing that a given artist chooses to do.
+What about color depht, 8 or 16 Bits ? RGBA or greyscale to be used with shader color ?
+Albedo is ideally authored at 16-bit RGB, but that's mostly to preserve detail if changes are made. Engine-side, it's usually compressed to BC1 or BC7 hardware formats, which are both based on palletising 4x4 blocks of the texture so it's hard to say that they have a specific colour depth. In BC1 the colour palette is based on values with 5 bits for red and blue, and 6 for green, while trying to talk about the colour depth of BC7 is kind of a rabbit hole - see https://docs.microsoft.com/en-us/windows/desktop/direct3d11/bc7-format for more information than you'd ever want :slightly_smiling_face:

@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.17.0
+Alpha Patch 3.17.0 has been released to the LIVE, and is now available to test!   Patch should now show: VERSION 3.17.0-LIVE.8052409.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here %localappdata%\Star Citizen.
+Database Reset: Yes
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+The recent work done in 3.17.0 to reduce desynchronization issues has unfortunately introduced a new bug related to how ships register hits. Currently, the collision shape of a ship will be slightly in front of the visual model in the direction of its velocity, with the amount the collision shape is offset increasing alongside the velocity. Due to timing, and the value of the new desynch improvements, this issue will not be fixed in time for the patch release and there is currently no workaround. It is recommended that players lead their shots a bit more during combat and avoid hovering within the velocity vector of other ships.
+- Ships can explode after players exit them
+- While docked to a Starfarer the Valkyrie will continuously tilt instead of remaining stationary
+- Items do not immediately transfer from loot crate to personal inventory
+- It's not possible to "De-select" attachments on FPS weapons in shops that sell them
+- Combat Assistance Mission Fails to Progress - Hornet Pirate AI Pilot Doesn't Load In stalling the mission when destroyed
+- Damage to player health can become delayed and can trigger after the player has fully healed themselves
+- Combat AI can sometimes rubberband, teleport, jitter, or move unexpectedly
+- The Argo Raft's elevator controls cannot be interacted with from either inside deck
+- Emptying and reloading consecutive magazines will break reloading
+- A ship's targeting pip may be missing or disappear for some players; they cannot be targeted when this happens
+- Character's head, mobiGlas, and other equipment can sometimes go missing after being released from Klescher
+- Medical beacon may not complete mission/payment when player is brought back from incapacitation
+- Weapon holsters or un-holsters unintentionally
+- Players cannot buy components directly into ship storage
+## New Features
+Locations
+- Lorville Maria Pure of Heart - Hospital Interior Location
+Implementation of Maria Pure of Heart hospital in Lorville, where players can receive medical treatment, regenerate, make imprints, and purchase medical supplies.
+- Space Station Clinics: Variations
+Updated all current space station clinics with new additional modules and layouts to help each location feel more unique.
+- River T0
+Initial implementation of river tech to enhance the ecosystems of our planets. This first iteration will add a single river with harvestables nearby onto microTech as a showcase with the intention of expanding on this in future releases.
+AI
+- Coffee Shop Vendor
+The addition of a fully interactable coffee shop vendor in Area18. The AI will interact with three new usables – hot drink dispenser, soft drink dispenser, and drinks fridge – to serve the player with a variety of new drinks.
+Gameplay
+- Ship to Ship Refueling
+Implementation of the systems that will allow players flying specific ships to refuel other ships in exchange for payment. The player can fill those specific ships' fuel tanks at space stations and landing zones using the newly updated Rearm, Restock, and Refuel interface. The Starfarer has 6 external fuel pods, and each individual pod can be filled with one fuel type of the player's choosing (hydrogen or quantum). This allows players to carry varying amounts of fuel to cater to refueling needs.
+Refueling consists of the Fuel Giver and the Fuel Receiver. To start the process, the Fuel Giver (Starfarer) must deploy the refueling arm using the refueling terminal on the bridge. This allows the Fuel Receiver (any ship) to request docking by targeting the Fuel Giver and pressing "N" (default keybind). This sends a docking request message to the refueling ship that they can accept or deny. Once accepted, docking can be done manually by following the on-screen UI or automatically by holding "N" (default keybind). Ships that are completely out of fuel will still be able to maneuver to dock with the Starfarer if they request docking while they are in close proximity.
+After the Fuel Receiver is docked to the Fuel Giver, they must use the refueling terminal to define the fuel price. The docked ship can then use their mobiGlas to open the "Vehicle Maintenance Services" app to view the set price and request the amount of hydrogen or quantum fuel they desire. Once they accept the price, the Fuel Giver can open the "Pod Management" screen to adjust flow in or out of fuel pods that contain the desired fuel type. They can then start sending fuel by opening the nozzle and adjusting flow rate, while making sure not to extend past the nominal flow rate for too long. Players will receive a warning error when their flow rate is too high, which can escalate to a danger warning and eventually damage the refueling arm or both ships and result in loss of fuel. When the amount of requested fuel is filled, the player must close the nozzle on the refueling terminal to prevent overflow fuel spillage. Once refueling is complete and the funds are transferred, the two ships can undock by either the Fuel Giver pressing "Terminate" button on the refueling terminal or the Fuel Receiver holding "N" (default keybind).
+- Shopping and Selling T0
+Added the ability for players to sell items from their local inventory to shops using a new interface powered by Building Blocks. This supports the recently added Loot Generation feature, allowing these items to be sold for money and includes kiosk and service support for sale of non-commodities as well. The shops will dictate which items they will buy based on what they sell while the pricing algorithm will determine how many credits are offered based on the state of item, price of closest retail equivalent, and other factors.
+This shopping update also brings sweeping changes to what each weapon and armor shop sells. Many higher-end items have been removed from weapon and armor shops and can now be found exclusively by looting corpses and crates. The shopping interface has also been updated with the ability for players to type in the amount of items they want to purchase, as well as navigate using an updated paging system.
+- Mining Gadgets
+Added Mining Gadgets to allow players to modify a deposit's properties. Different gadgets will positively or negatively modify various deposit properties like Resistance, Optimal Charge Rate, Overcharge Rate, Instability, Optimal Charge Window, Optimal Charge Rate, and Shatter Damage. While in FPS, the player can attach a device physically to a mineable deposit, making mining either easier and safer, or faster and riskier. Players can currently buy these gadgets in New Babbage, Lorville, and Port Olisar. Once purchased, they can be attached to backpacks as an equipped item that can then be held in the hands by pressing 4 (default keybind) and re-stored by holding R. Once a player finds a deposit they want to mine, they can attach the gadget onto it by walking or EVAing up to the deposit, holding the gadget in their hands, and holding left mouse button to place it. Players can then modify the signal waves on the mining gadget screen to bring them into alignment before activating it. Once back in their mining ship, the player can scan the deposit and notice that the properties have changed based on the gadget used. Gadgets are retrievable after successfully mining but will take damage and can be destroyed if going above safe mining levels or overcharging a deposit.
+- Ship and Ship Components Inventory Updates
+Major overhaul of the ship personal inventory storage to allow for ship components to be stored and transported inside ships. Increased the capacity of Landing Zone storage from 100 SCU to 1000 SCU. Added inventory size values to all purchasable ship items along with volume and dimensions, which will require certain size ships to transport larger size components that wouldn't normally fit inside the smaller ships. Updated all ships to have more internal storage to accommodate this change. Added inventory filters for components.
+Ships and Vehicles
+- Added New Ship: MISC Hull-A
+Weapons and Items
+- Added Carryable Storage Container to shops in the PU

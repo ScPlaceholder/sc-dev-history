@@ -1,0 +1,1088 @@
+# Star Citizen Live Gamedev: Making FOB
+# https://www.youtube.com/watch?v=KvgbNwmuP10
+[    5.7] Hi everybody. Welcome to CIG Reacts. I'm your host, Jared Huckabee.
+[   11.2] On today's program, we're just going to sit and watch a bunch of videos made by you
+[   15.7] and tell you what we didn't like.
+[   18.6] It would be a pretty good episode. You should have CR in here reacting.
+[   28.4] Let's just go to camera two.
+[   30.4] I'm lying. Welcome to Star Citizen Live everybody. I'm Jared. This is John.
+[   36.4] Welcome to the show. I see a lot of first-time chatters in the Twitch stream.
+[   42.4] People always say, why do you do the same intro every single time?
+[   46.4] I'm like, have you seen the number of first-time chatter boxes? We're going to do it.
+[   49.4] If you've never seen an episode of Star Citizen Live before, it's where I come really close to getting fired each and every week.
+[   55.4] Hi. It's where we take about an hour out of the end of our week, sometimes longer, sometimes shorter.
+[   63.6] We talk to you. Sometimes we answer questions that come from the community.
+[   70.6] Sometimes we answer questions that come from me. Sometimes we just get to know people.
+[   75.6] Sometimes, which is what we do on today's show, which is a Game Dev show, we sit and watch process.
+[   80.6] We get to watch how the developers actually build the items and the places and the things of the stars as in the universe.
+[   87.6] Joining us on today's Game Dev show is a good friend of mine.
+[   94.6] One of those people, he's one of my gossip buddies. I come to his desk and I'm like, oh my gosh, did you hear about that?
+[  100.6] He's like, oh yeah, what are you doing? That's what I really want to talk about.
+[  103.6] It is, what's your title now?
+[  105.6] I'm still Lead.
+[  106.6] Lead.
+[  107.6] Environment Artist.
+[  108.6] Lead Environment Artist.
+[  112.6] First name?
+[  113.6] John.
+[  114.6] John.
+[  115.6] Almost forgot then.
+[  116.6] My own name.
+[  118.6] John Griffiths.
+[  119.6] John, how are you doing?
+[  120.6] Yeah, I'm good. Thank you.
+[  121.6] This is not a great intro to the show, is it?
+[  123.6] Oh, I think it's good. It's keeping it loose.
+[  126.6] It's hard. We take a week off. It's just really hard to get back going.
+[  132.6] So yeah, so what are we doing today, John?
+[  135.6] So we are going to create a new variation.
+[  139.6] Something that already exists in the game, but given a different kind of lick of paint almost,
+[  144.6] and kind of reusing it and putting it down as an independent thing.
+[  150.6] But it's not just a facelift. So I'll go into a little more detail here.
+[  156.6] If you're playing Alpha 323, now you might have found the new distribution centers,
+[  162.6] these big giant hulking, heaping areas of gameplay scattered throughout the planets.
+[  168.6] Just the planets. There's not anything on the moon, is there?
+[  170.6] Just planets.
+[  171.6] Just the planets of the Stanton system.
+[  173.6] For the upcoming Pyro system, considering the Pyro is far more, sometimes it's certain aspects of it.
+[  181.6] And I want to, not all of it, but certain aspects of it are more combat oriented, combat focused,
+[  185.6] we are evolving the distribution centers in certain ways to include more opportunities for better combat.
+[  193.6] Working with the level design team, implementing things like greater elevation,
+[  200.6] and just more complex areas that are really conducive to firefights.
+[  205.6] And that's what we're doing today.
+[  208.6] Yeah, sure.
+[  209.6] A lie, right?
+[  210.6] So we're doing the art side of it.
+[  211.6] Yeah, we're doing the art side.
+[  212.6] But I will be able to show you what the art impacts, because just by moving a box from the left to the right,
+[  222.6] the ledge grab stuff has to go with that.
+[  225.6] So we're just going to kind of blanket, ignore that for today, and just look at the picture.
+[  229.6] And these are the little ancillary areas that are kind of off to the side of these distribution centers, like the big heaping building.
+[  237.6] Yeah, so we've got the compounds or FOBs, as people call them.
+[  243.6] And we're just focusing on that.
+[  245.6] And we created a new kind of location archetype with these separate to the DCs.
+[  252.6] But we're using the content that we made from the DCs to an extent.
+[  256.6] It's one of those things where we build modularly so that we can reuse these things in multiple different configurations.
+[  262.6] And that's exactly what we'll be doing today.
+[  264.6] So without further ado, because there's way too much to do as it is, let's switch over to the screen share.
+[  271.6] And I'm going to turn it over to Master of Ceremonies, John Griffiths.
+[  276.6] What are we looking at?
+[  277.6] So this is for people who play the distribution centers.
+[  280.6] This sits outside of them on the peripheral.
+[  284.6] As kind of like after you've got through the security defenses, you'll probably have to go here for the first part of the mission before going into the distribution center themselves.
+[  293.6] So this thing you've already seen, and we're going to take this as our base.
+[  298.6] But yeah, this is basically how we set them up in levels.
+[  301.6] So we have the actual base unit, ignore whatever that is.
+[  307.6] And then we have these overlays that sit on top.
+[  309.6] So it means that we keep the same base, but the overlay switches.
+[  313.6] So it's kind of, yes, you can be modular in your kits, but you can also be modular on the next level up, which is quite nice.
+[  321.6] So I've already done a bit of setup, and we're going to go over here to number two.
+[  326.6] So one of these already exists, and we're just going to do another variant of them.
+[  330.6] So to answer the question in chat, what does FOB stand for?
+[  335.6] In our term, we use forward operating base.
+[  338.6] So those who are guessing forward operating base and chat, correct.
+[  342.6] I saw another pretty good field operation base, absolutely applicable name.
+[  347.6] But yeah, forward operating base is what we're referring to them as.
+[  350.6] So in this version that I've already done, we needed to make it look more abandoned.
+[  356.6] And before I was talking about how things we change then has an impact on other disciplines like design, like lighting, sound, that kind of thing.
+[  369.6] So for this version, we will try not to change too much because time, time pressures and such.
+[  379.6] And resource. But in this case, what we can get away with doing is just changing the tint.
+[  386.6] So these were yellow, they were this color in the original, and we can increase the wear and the dirt.
+[  392.6] So we get kind of a different look straight away without really doing a lot, which is really handy for us.
+[  400.6] I'll just go back over to the one that we're going to be working on just so I can demonstrate that.
+[  405.6] But if we grab this building here, let's just turn these helpers off so you can actually see.
+[  414.6] And in here, where?
+[  422.2] So if we bring this down, back up so you know, you can see quite easily how we can make things feel look different just by moving a slider, which is really handy for us.
+[  435.2] Obviously, there's lots of other things and I won't be able to get into absolutely everything today, but things like you could, if I turn the layers on, that would help.
+[  446.2] Things like we could change what number it is. So maybe this is number eight, and there you go. It's changed to a number eight.
+[  456.2] So things like decals on the ground, we could move these around. We have dirt in different places than we have before.
+[  463.2] But what we really want to do today is change this substantially. So I'm not going to really be thinking about how level design and where all the markup needs to go.
+[  475.2] But let's just do something that's a bit different using parts that we already have that you've probably seen before.
+[  481.2] And then we can get it down onto planet. You can see that process or at least how we used to do it and how we go from A to B.
+[  490.2] This is where I issue the same disclaimer we issue every single time, because again, every show is always first show.
+[  497.2] Nothing, absolutely nothing in game development is made in less than an hour. Not well or good or enjoyable or shipable anyway.
+[  508.2] So we're going to show a very abbreviated, very condensed version that doesn't have any of the peer review, that doesn't have any of the calling,
+[  517.2] Con and Antoine from the level design team. Is this right?
+[  521.2] I broke it again.
+[  522.2] They're just like, no, no, it's not. So as we can see now, you're already pulled out. The first thing you started with is you pulled out those big tanks.
+[  529.2] Yeah. So I think for me, so things to kind of keep in mind are the building we want to keep and the walkways around it,
+[  537.2] because this is where we have, you know, our spawn closets. So this is where the AI would pop out of.
+[  543.2] And it makes sense that out of everything that's on this platform, that the, you know, the building stays, you know, that's the purpose.
+[  551.2] That's the reason why we're going there. Now, this doesn't have an interior at the moment, so we won't be changing anything inside.
+[  557.2] But that would also be something that you could change quite easily, putting a new interior to.
+[  561.2] That is essentially a very big spawn closet right there.
+[  564.2] Yes.
+[  565.2] Yeah, it's always difficult to know, you know, somebody has watched everything we've made for the last 11 years, and so they can audit a, you know, a two year degree in game design.
+[  575.2] And some pretty has just, you know, this is their first or second show or whatever they've never heard of the spawn closet is so spawn closet is basically a place to generate AI from.
+[  585.2] So you don't have to have recurring bad guys just pop out of the middle of nowhere, which breaks immersion.
+[  591.2] So whenever you're building at any FPS level, or even even a spaceship level in certain certain situations, you build spawn closets in places for the ships or people to come from that are believable.
+[  604.2] They're conceivable. And you know, you don't question it.
+[  607.2] Yeah, other than saying, wow, a bunch of guys were on lunch break and said that that room weren't they?
+[  612.2] Yeah.
+[  613.2] Yeah. Yeah.
+[  614.2] So you might be saying, well, why John, you're not deleting everything.
+[  620.2] Is your mind needed?
+[  621.2] Yeah, exactly. I'm just deleting it because this is how I work. You know, and everyone works differently.
+[  626.2] I quite like having stuff to one size that we could probably just drag back on later if need be.
+[  632.2] Or we could group it and use it somewhere else right now and trying to just clear out this area so that so in the other ones, we have some build up.
+[  642.2] But what else could we put here that would kind of change the silhouette of the overlay itself?
+[  648.2] Zorb says, I was born in a spawn closet.
+[  652.2] It's awkward. First time chatter. First time chatter. It's the first thing Zorb's ever offered to the show.
+[  657.2] Wow.
+[  658.2] Good job, Zorb.
+[  659.2] It's only up from here, isn't it?
+[  661.2] Hard to go much lower.
+[  663.2] Trevok says, if an in spawn closet's break immersion, that they do Trevok.
+[  668.2] And our spawn closets don't spawn immediately.
+[  671.2] There are timers that break that kind of thing up and stuff.
+[  674.2] And then permission, there's a certain number of resources so that you can effectively clear it and stuff.
+[  680.2] Okay, so we're getting somewhere with this.
+[  684.2] So we have things on, as you've noticed, I've got the layer outliner open.
+[  688.2] So we have things on different layers.
+[  690.2] And that just means that multiple people can work on the same location at one time, which is really handy.
+[  698.2] So you're not overriding each other's work.
+[  701.2] And yes, that does happen from time to time.
+[  704.2] And there's not a lot we can do about it, apart from telling people to make sure that they get latest layers.
+[  710.2] And if they're not sure, please ask.
+[  715.2] Crown8 says, this is Jared's birds and the bees talk.
+[  718.2] Oh no, you haven't heard my birds and the bees talk.
+[  721.2] It's pretty serious.
+[  726.1] And this is the other fun thing we've got to do.
+[  728.1] We'll find out where these things live.
+[  730.1] And the best thing to do is just, there you go, turn things off and on until you find them.
+[  738.1] So now we have a huge gaping hole.
+[  746.4] And don't forget the lights.
+[  748.4] So all the lights are still there.
+[  750.4] So we just need to get rid of them.
+[  752.4] Only have an hour.
+[  761.5] She has got done saying how you don't like to delete anything.
+[  764.5] I know, I know.
+[  765.5] But in this case, lighting would have to come back in and change it to or adapt what they had to what we have.
+[  773.5] What we are going to put in here.
+[  775.5] So it's a bit of column A, a bit of column B.
+[  778.5] At the end of this, we should just send them on Strasse to Chris Campbell and be like, can you like this please?
+[  783.5] Yeah.
+[  784.5] Waste an hour.
+[  785.5] It was like, maybe a bit longer than an hour.
+[  789.5] Okay, so we've made.
+[  791.5] Well, until he figured out that this wasn't.
+[  793.5] Yeah, yeah.
+[  794.5] So we've made a hole.
+[  796.5] And that's great.
+[  797.5] Let's turn some layers off so we don't change them going forward.
+[  804.5] Give that a save.
+[  806.5] It's only Carl asks, does the editor allow multi-select merging so you can at least temporarily merge the building and walkways into a single entity for the purpose of movement, copying and placement?
+[  818.5] Yes, it does.
+[  819.5] Yes, it does.
+[  820.5] So what we can do is we can grab this and say this thing and then we can put them into a group, call it whatever.
+[  830.5] And then we have this and you can move the whole thing around.
+[  834.5] So yeah, we will group things a lot, which is very handy.
+[  839.5] I would be surprised and I'm going to say this and someone's going to point out a software that doesn't do it.
+[  845.5] So I would be surprised in any layer based software that doesn't allow the ability to group because these collect these any subsequent work of significant depth and time is going to get really crazy with the layers and you've got to be able to group layers.
+[  862.5] Yes.
+[  863.5] Yep, yep, yep.
+[  864.5] I surely that's just standard.
+[  868.5] Yeah.
+[  869.5] Although again, there's going to be some software out there that doesn't and someone's going to point it out and chat in a few minutes.
+[  877.0] Cool.
+[  878.0] So you could go for something like that.
+[  879.0] That's changing it quite significantly.
+[  881.0] We now have, you know, a point of interest on the horizon as you come in.
+[  885.0] You know, it's quite tall at the moment.
+[  888.0] It's yellow.
+[  890.0] So something like that could work.
+[  892.0] And you know, in terms of the actual layout of the space sort of fits, we still have this sunken area.
+[  899.0] Maybe we could tart it up a little bit.
+[  902.0] She's leaving lights flowing everywhere.
+[  904.0] Yeah, we'll deal with that in a moment.
+[  906.0] But I'm just reusing parts that, you know, if we look over here, these are from the DCs.
+[  914.0] And so it's kind of like, well, what, what can I reuse from other places?
+[  919.0] I've also got, where was it?
+[  922.0] So mapper asks, does your job also imply 3D modeling or is it only using assets made by other teams and build levels?
+[  931.0] Interestingly, this is not John's job.
+[  934.0] John's job is the 3D modeling.
+[  936.0] Is the 3D modeling and the overseeing of the teams who make the 3D modeling.
+[  941.0] The arrangement of these things is usually done by a level designer.
+[  946.0] I wanted a level designer and they weren't interested, so I had to sell it for John.
+[  951.0] So I would say yes and no to that.
+[  956.0] I would say, oh, did that.
+[  959.0] Oh, I would say the, yes, level design, they do the white box and then we follow that as best we can.
+[  970.0] Obviously, some assets are bigger or smaller than you originally think they're going to be.
+[  976.0] And so what can we do to massage them into place?
+[  982.0] There we go.
+[  984.0] The misnomer is that it's you only do this or they only do that.
+[  991.0] We make hybrid gameplay teams where it's people of multiple disciplines and the more each person understands of the other disciplines,
+[ 1001.0] even if it's not technically your job, the more you understand of their discipline,
+[ 1005.0] the easier the shorthand becomes, the easier it is to communicate,
+[ 1009.0] the easier they can say, oh, like that thing out there and goes, yes, I understood why you did that so I can replicate that here and stuff like this.
+[ 1016.0] So which is why John can do a show like this for us when yes,
+[ 1021.0] in all likelihood it would probably be more appropriate for a level designer to be here.
+[ 1026.0] But I hadn't done a show with John in a while.
+[ 1029.0] Forget the joke I had before.
+[ 1031.0] The truth is I haven't done a show with John in a while.
+[ 1033.0] I missed him.
+[ 1034.0] And I'd been asking him to do this for about six weeks.
+[ 1038.0] Yeah.
+[ 1039.0] So the, I don't do 3D modelling really as part of my day job.
+[ 1048.0] Yeah, I'm, that's, leave that to the professionals.
+[ 1052.0] Which you used to be.
+[ 1054.0] Which I used to.
+[ 1055.0] And then you came on.
+[ 1056.0] Yeah.
+[ 1057.0] Now I do the jobs that no one wants to do.
+[ 1062.0] No, I enjoy doing that work.
+[ 1066.0] We're joking about it here, but there is a very real thing in game development.
+[ 1073.0] It's not just game development.
+[ 1074.0] It's in any corporate environment where, you know, as you're working your way up,
+[ 1079.0] eventually there's a point where you become leadership, you become management,
+[ 1083.0] and you get to do less and less of the day to day stuff that got you into the business,
+[ 1088.0] got you into the industry.
+[ 1090.0] And it's always a struggle.
+[ 1093.0] We've had several, we've had several people who have been promoted to lead,
+[ 1098.0] and then they have to do responsibility.
+[ 1101.0] They have to do, you know, HR stuff and reviews and management stuff.
+[ 1105.0] And they're like, well, I was a very good artist or I was a very good programmer.
+[ 1109.0] I was a very good, but I'm not a very good supervisor.
+[ 1114.0] And so they usually then move out of the lead into a position that we refer to a lot of times as principal.
+[ 1121.0] Principal is somebody that's kind of at the height of the workhorse field,
+[ 1128.0] and they get to work kind of on their own a lot of times in silos, building stuff.
+[ 1133.0] A great example of a principal that you might be familiar with is Zane from the UI team.
+[ 1139.0] He's got so much experience and so much talent and skill that, you know, he can kind of,
+[ 1144.0] we can set him off on a thing and he can build something like building blocks for us
+[ 1148.0] while other leads lead the team and stuff like this.
+[ 1152.0] I'm probably an exception to that.
+[ 1159.0] I try to delegate stuff.
+[ 1162.0] I've done much better the last year and a half delegating stuff to David.
+[ 1167.0] Say hi, David.
+[ 1169.0] I don't know if you could hear that.
+[ 1171.0] I've done much better in the last 18 months delegating stuff to David,
+[ 1176.0] and the result has been, ISE's gotten all, you know, I pulled myself out of a lot of those responsibilities.
+[ 1189.7] But it's not an easy thing for a lot of people.
+[ 1193.7] We're just talking, this isn't a game to have conversations.
+[ 1195.7] This is any management conversation.
+[ 1197.7] Some people are good leads and some people are meant to be principals when they reach the certain level.
+[ 1203.7] I'm probably closer to a principal to be honest because I like doing the work,
+[ 1207.7] but I am where I am because that's where I need to be.
+[ 1211.7] You're generally a pretty good lead.
+[ 1215.7] Oh, that's so kind.
+[ 1218.7] When I talk to your guys and I talk to Ian and stuff, you're a pretty good lead.
+[ 1224.7] I'm not the best.
+[ 1226.7] I try to do good by the people I work with.
+[ 1232.7] Do you miss getting to spend a lot of time on?
+[ 1237.7] I mean, I think, not really.
+[ 1245.6] I think I am quite happy to let people, you know, I quite like the high level,
+[ 1253.6] how do things come together to become this location?
+[ 1258.6] The decision-making.
+[ 1260.6] Where's this going to go?
+[ 1261.6] How many do we want?
+[ 1263.6] Who's involved?
+[ 1264.6] What kind of resource do we have?
+[ 1266.6] How are we splitting up the work?
+[ 1269.6] I really enjoy that aspect of it.
+[ 1272.6] You don't really get to do that when you're a mid-level doing the modelling.
+[ 1279.6] So in a way, I kind of had to work up that and then come here.
+[ 1285.6] I've been a lead in other places,
+[ 1287.6] but here I feel like I'm near the top of my game in being the best lead I can be
+[ 1296.6] for the people that I'm working with.
+[ 1298.6] This is maybe just starting to be the best and just starting to be the best.
+[ 1302.6] Diplomatic. You called yourself the best.
+[ 1305.6] Very diplomatic.
+[ 1306.6] The best I can be.
+[ 1307.6] Diplomatically. I'm the best.
+[ 1312.6] So this is kind of annoying because it's like this mesh here has got these,
+[ 1316.6] what you call it, like holders on it.
+[ 1319.6] So ideally we'd want something to go between them, but I don't really have a thing.
+[ 1325.6] But I'm just going to freewheel.
+[ 1328.6] I'm just going to leave it.
+[ 1329.6] There might be something we could use.
+[ 1331.6] There might be something we could use.
+[ 1333.6] If we go down here, where's that pipe?
+[ 1337.6] Is it in this layer?
+[ 1339.6] Yes it is.
+[ 1343.7] But I mean having said that, I do get my hands dirty.
+[ 1347.7] I don't do 3D modelling so much anymore, but I do do this kind of stuff where we're creating
+[ 1353.7] something new from something that we already have.
+[ 1359.7] We got a message from Callum Dainty.
+[ 1362.7] Oh yeah.
+[ 1363.7] He says, tell John to turn the number to a three.
+[ 1367.7] The number to...
+[ 1368.7] No.
+[ 1370.7] I...
+[ 1372.7] No.
+[ 1376.7] So when we were working on the DCs, there is a story behind this.
+[ 1380.7] Concepts, and originally it started in concept art, they kept putting zero threes on everything.
+[ 1386.7] A bit of scale, a bit of a number somewhere.
+[ 1389.7] You know, that's great.
+[ 1391.7] I think it gives a bit more kind of reality to things.
+[ 1395.7] But the problem you then encounter when you're actually in development is that every artist
+[ 1401.7] then puts a zero three on what they're doing.
+[ 1404.7] So you go to a place and all you can bloom and see is zero three.
+[ 1408.7] Very fine.
+[ 1409.7] And everyone thinks they're being original.
+[ 1412.7] They're not.
+[ 1414.7] So yes.
+[ 1417.7] So that's why I opted for, well my first one zero four, that's actually my favourite number.
+[ 1422.7] Not zero.
+[ 1423.7] Four.
+[ 1424.7] Four.
+[ 1425.7] Why is four?
+[ 1426.7] I think it's just a nice, even, I don't know, one syllable, something about it.
+[ 1435.7] It's like that.
+[ 1437.7] Love it.
+[ 1439.7] What are we doing again?
+[ 1444.1] You're watching our favourite numbers only on twitch.tv.
+[ 1447.1] My favourite number is 86.
+[ 1450.1] 86.
+[ 1452.1] 86.
+[ 1454.1] And why is that?
+[ 1456.1] Because I grew up loving an old show on television called Get Smart.
+[ 1462.1] And it was a secret agent comedy show and Maxwell Smart was Agent 86.
+[ 1467.1] And he was about as competent as I felt I was.
+[ 1472.1] Okay, fair.
+[ 1473.1] Which is not very much growing up.
+[ 1475.1] So I really related.
+[ 1476.1] See if there's anything else we can just pinch.
+[ 1480.4] Fuzzy Eagle, first time chatter, says, what causes the invisible walls that you can't shoot through in assets?
+[ 1488.4] Oh, so that would be some sort of, it could be down to a material or it could be that it's a mesh that's set to transparent.
+[ 1501.4] And then therefore you can't shoot through it.
+[ 1503.4] We try not to use invisible collision.
+[ 1507.4] And it will, I think on some, you know, great in it's kind of like you, I think it's, we try it.
+[ 1518.4] So on this, for example, if the AI is below you, they can't shoot you and you can't shoot it them because the holes are too small.
+[ 1527.4] But in say a chain link fence, that's when you might be able to have things pass through because that's more likely to have bullets, you know, passing through it.
+[ 1536.4] So it's, it's kind of finding the line of do we want the people to fight each other through this?
+[ 1548.4] Or is it just too much of a bad gameplay experience?
+[ 1552.4] So therefore we make it so that you cannot.
+[ 1556.4] I don't know if you'll ask answer this.
+[ 1560.4] Do we have a status on the arrastra?
+[ 1563.4] The status of every ship is the always the same.
+[ 1566.4] Check the public roadmap.
+[ 1568.4] Public roadmap is where you're going to learn the of the imminent release of any ships or vehicles.
+[ 1574.4] I believe in just this week's roadmap update that the Zeus, two of the Zeus's were added to the roadmap for Alpha 4.0.
+[ 1583.4] Beyond that, there won't be any updates.
+[ 1586.4] Morgan Maliphson says that is actually a skyfire, the transformative version of the Valkyrie toy.
+[ 1606.8] So we have Starscream Net yet.
+[ 1607.8] This is, this is, okay, you're talking about this guy.
+[ 1613.0] Let's go to my camera.
+[ 1615.0] So this, this was the best transformer ever.
+[ 1620.4] It was, it was stolen from the, from the Macross line.
+[ 1624.4] And then there was a lot of whatever's and they couldn't do it anymore.
+[ 1627.4] This is, this is the original skyfire jet fire.
+[ 1629.4] Now this, you can't make, they can't really make toys of it anymore.
+[ 1633.4] This is actually a Macross Veritech that is painted in the skyfire slash jetfire colors.
+[ 1639.4] Cause they're like, we won't let you make it anymore, but we can make it.
+[ 1644.4] Which is why you see the Macross logo at the bottom.
+[ 1647.4] So when I saw a Macross Veritech in the colors of my favorite jetfire, I had to get it.
+[ 1653.4] So that's what that is.
+[ 1654.4] Now I want sideways operating bases.
+[ 1675.2] So, lol.
+[ 1678.2] Okay.
+[ 1687.8] You know, this is for a fast job.
+[ 1690.8] This is not too bad.
+[ 1692.8] You know, we've got some silhouette breakup from a distance, which is nice.
+[ 1700.8] And then when you get into it, this is not my finest work, but you know, you've, you've still got this downstairs area.
+[ 1711.3] You could potentially, you know, let's go out over that and up there.
+[ 1717.3] If this is a bit of a death trap though.
+[ 1719.3] So maybe I'll bring the stairs back in and have them there.
+[ 1723.3] Which are, which is this one.
+[ 1732.7] Yes.
+[ 1736.3] As others have pointed out, if you do have a question for John and myself,
+[ 1741.3] preface your question with the word question in capital letters.
+[ 1745.3] It helps me pull it out from the rest of the chat.
+[ 1747.3] I will remind folks that John is an artist and I'm a dummy who makes videos.
+[ 1755.7] So keep your questions appropriate.
+[ 1761.2] I guess for our work experiences.
+[ 1766.1] Yes.
+[ 1767.1] Yeah.
+[ 1769.5] So that's a bit better now.
+[ 1770.5] I think Khan would, even though he probably hate this design, he would at least be like, there's a way out because that's what we don't want to do as well.
+[ 1778.5] You know, you don't want to send people to dead ends essentially because then that's no fun for the people playing.
+[ 1788.5] So let's get a longer.
+[ 1791.5] Let's call Khan and see if the lens.
+[ 1793.5] Yeah, we'll do it.
+[ 1798.2] Four meters.
+[ 1800.2] Just call Khan.
+[ 1802.2] Does he pick up?
+[ 1805.7] I don't know.
+[ 1806.7] We're going to find out.
+[ 1808.7] I mean, it is Friday at 5.30 there.
+[ 1812.7] So and usually when a CIG developer gets a call from me, they think it's like the grim reaper like he's suspect.
+[ 1824.7] He's asking me to be in a video.
+[ 1826.7] It's like that.
+[ 1827.7] So I could see why he would not want to answer.
+[ 1829.7] All right.
+[ 1830.7] So Khan's not going to answer.
+[ 1832.7] Okay.
+[ 1833.7] I'm going to that's obviously not aligned.
+[ 1834.7] I'm just going to ignore that.
+[ 1836.7] We don't need to worry about that right now.
+[ 1839.7] These pipes.
+[ 1841.7] Wait till QA Gears it up.
+[ 1843.7] Yeah.
+[ 1845.7] Pipes.
+[ 1849.1] Yeah, just a whole bunch of people who suffer through teams just got triggered.
+[ 1855.1] Apologies.
+[ 1857.1] For you folks who have teams at work, how are you dealing with the new custom emojis?
+[ 1863.1] Did your work enable them?
+[ 1865.1] Are you being absolutely tormented by your QA?
+[ 1870.1] Are you a bevy of custom emojis?
+[ 1884.5] One of my pet hates.
+[ 1888.5] I'm probably going to do my own pet hate now and not fix it correctly.
+[ 1894.5] But I don't like it when things don't terminate correctly.
+[ 1900.5] So pipes and they just kind of go to nothing and when they just go into the wall and you're like just cover it up.
+[ 1907.5] Surely.
+[ 1908.5] Just takes three seconds.
+[ 1911.5] Here's a question.
+[ 1913.5] When are we going to see more roads linking bases and garages and stuff?
+[ 1918.5] Well, more roads.
+[ 1920.5] My favorite thing about the distribution centers was it was the very first any kind of implementation of roads.
+[ 1926.5] I mean, yeah, it was within them and stuff like this, but it was just like.
+[ 1932.0] So that was interesting doing that sitcom.
+[ 1936.0] So not only did we make the biggest sandbox locations go in the game, you know, no cares about that.
+[ 1943.0] The roads.
+[ 1945.0] Roads.
+[ 1948.5] Yeah, don't know.
+[ 1950.5] I'm going to say to that one because I actually don't know.
+[ 1956.5] It wasn't a question for John.
+[ 1958.5] Yeah.
+[ 1959.5] I set him up.
+[ 1960.5] Roads.
+[ 1963.0] People love roads.
+[ 1965.0] And in some locations we do have roads.
+[ 1968.0] If you can't use them.
+[ 1971.3] They haven't released yet.
+[ 1977.1] The what?
+[ 1978.1] Things on pirate.
+[ 1980.1] What things?
+[ 1981.1] Like locations on pirate have roads.
+[ 1984.1] Like what location?
+[ 1985.1] Like the train post?
+[ 1987.1] Yeah, the outpost.
+[ 1989.1] Yeah, so some of the train posts have roads.
+[ 1991.1] Some of them have roads going through them.
+[ 1994.1] Oh, that's right.
+[ 1996.1] The light tracks.
+[ 1998.1] Yeah, they're dirt roads.
+[ 2000.1] Very clearly.
+[ 2001.1] Roads.
+[ 2002.1] Thoreau fairs.
+[ 2003.1] Roads.
+[ 2004.1] I get what you're saying.
+[ 2005.1] They're not exactly like gravel.
+[ 2006.1] No, no, they're all tarmac.
+[ 2008.1] Oh yeah, yeah, yeah.
+[ 2009.1] You know.
+[ 2010.1] I get what you're saying.
+[ 2011.1] They're not these.
+[ 2012.1] Yeah, they're thoroughfares.
+[ 2014.1] There are areas that are specifically, it's very, you can tell immediately the intention is to drive a vehicle through there.
+[ 2021.1] Yeah, yeah, yeah.
+[ 2025.7] But the broader roads, Lincoln Place's hard maybe.
+[ 2035.8] We would love to, but we have more questions.
+[ 2038.8] Yeah, I don't know if Pyro is the right system for a series of complex interconnected highways and stuff like that.
+[ 2046.8] No.
+[ 2047.8] That's not under the vibe of Pyro.
+[ 2053.9] Jared, did you watch the Atmo Greycat social race that took place in the issue?
+[ 2057.9] Not all of it.
+[ 2058.9] I caught, I was tripping through Twitch the other day and I caught about 15 minutes of it.
+[ 2066.9] You know, I follow Atmo, so whenever they pop, whenever I open Twitch, I see them on my follow channels and whatever.
+[ 2072.9] I always check them out because what they do is always, what they do without any kind of internal tools and stuff is incredibly impressive.
+[ 2083.9] It is the work of incredibly dedicated and incredibly dedicated and, what's a word that means full of a lot of effort?
+[ 2095.9] What's a word?
+[ 2096.9] Just people who don't get scared by the amount of work that's involved.
+[ 2101.9] They have that in spades, whatever that word is that I can't think of.
+[ 2104.9] Brave?
+[ 2105.9] No, I don't.
+[ 2107.9] Brave is overcoming fear and stuff like that.
+[ 2111.9] But yes, I did get to watch a little bit, not as much as I ever liked to.
+[ 2116.9] As always, it was very cool.
+[ 2118.9] But yeah, after we did the whole, you're not going to be able to get vehicles inside the distribution centers.
+[ 2125.9] Yeah, they were like, what up?
+[ 2127.9] Yeah, that was basically a set up, wasn't it?
+[ 2130.9] I only ask the question when a developer says the answer, like that's like, you want to go on record?
+[ 2140.9] I said, you want to go on record saying you can't get vehicles in there?
+[ 2144.9] And they're like, yeah.
+[ 2146.9] That's Sam.
+[ 2148.9] Okay, so.
+[ 2152.8] Oritude is a good word.
+[ 2153.8] Oritude is a good word.
+[ 2154.8] That was probably the word I was looking for.
+[ 2160.2] Health Cules?
+[ 2162.2] Health Cules?
+[ 2163.2] Like Hercules, but with health?
+[ 2165.2] I don't know.
+[ 2166.2] It says when creating levels, how much does the narrative play into the design of the level?
+[ 2173.2] I think it depends on the location.
+[ 2176.2] I think we think about who's going to occupy the space and then how is it going to be branded because of who's going to be occupying it.
+[ 2190.7] I think at SICKON there was, Adam did a presentation on rough and ready.
+[ 2197.7] We've taken over the pyro space stations.
+[ 2199.7] So in a way, all the branding was done to represent rough and ready's better look.
+[ 2206.7] So there's definitely a which gang will be in here, who will be in here and then the brand to reflect that.
+[ 2215.7] Beyond just the branding and stuff, the narrative stuff, in about three weeks, no.
+[ 2223.7] Yeah, in about three weeks on ISC, you'll see we're going to introduce you to a whole bunch of the planet side locations that you're going to encounter in the pyro system.
+[ 2235.7] And you'll see immediately that the farms, the scrapyards, the training posts that are operated by the citizens of prosperity are pretty differently dressed than the same type of locations that are owned by the headhunters gang, for instance.
+[ 2256.7] One clearly is more interested in putting forward a good first impression to people or the best first impression that a harsh place like pyro will allow them.
+[ 2266.7] And the others are just like, nah, nah, we're not interested at all.
+[ 2270.7] And then two weeks after that, or five weeks after that, when we get to, you see, you start seeing the Xeno threat locations, the places where they live and stuff.
+[ 2281.7] They're just, they're definitely built to be a little more intimidating.
+[ 2285.7] I feel like that.
+[ 2286.7] It's like they want just the sight of their place to be fearful.
+[ 2292.7] It's like that.
+[ 2293.7] So, yeah, so the answer to that question is yes.
+[ 2297.7] Certain narrative elements do come into play.
+[ 2299.7] Again, it depends on what's available.
+[ 2303.7] There's not always a narrative element available, but when it is available, yes.
+[ 2307.7] How long did he say to that ISC?
+[ 2315.0] It's three weeks until the first surface-side episode, and then it's five weeks until the second surface-side episode.
+[ 2325.0] We're trying to space him out, but we're in our Alpha 4.0 phase.
+[ 2330.0] Yesterday's show on 324 was our last show on 324 for whenever it goes out.
+[ 2338.0] There were a lot of questions.
+[ 2340.0] We saw a lot of concerns and stuff about the hangers and the inventory system and the freight system.
+[ 2346.0] We wanted to revisit that topic one more time.
+[ 2349.0] I know I saw more than one react.
+[ 2356.0] It was just like, oh my God, talking about cargo again.
+[ 2360.0] And I'm like, it got 14,000 hours of watch time in less than the first 24 hours,
+[ 2367.0] because we only had 24 hours when we started the show.
+[ 2369.0] So it had 14,000 hours of watch time before the show.
+[ 2372.0] Obviously, some people had questions and wanted to know about it.
+[ 2376.0] But things like the search system and the removal of the armistice zones for the hangers.
+[ 2381.0] It's some important information to get out there.
+[ 2391.3] How about Apollo's question suggestion?
+[ 2393.3] I didn't see Apollo's question suggestion.
+[ 2395.3] Sorry, it must have scrolled up while I was talking about other stuff.
+[ 2399.3] Question is ISC now fully dedicated to 4.0?
+[ 2402.3] ISC has never fully dedicated anything.
+[ 2405.3] We're going to take a break.
+[ 2408.3] There's an episode around the top 16 or the top eight of Ship Showdown,
+[ 2414.3] where we take a week and we're going to talk to Gav Rothery,
+[ 2419.3] concept artist extraordinaire who's visually designed more vehicles for Star Citizen than any others.
+[ 2427.3] We're going to take a little break that week and talk to him.
+[ 2430.3] For the most part, the next 8 episodes are all dedicated to 4.0 content.
+[ 2441.3] With that one little break in between to support the Ship Showdown.
+[ 2445.3] Okay, hopefully this doesn't crash.
+[ 2450.8] There we go.
+[ 2452.8] I looked back and there was a donut.
+[ 2455.8] Hopefully, Khan would be proud of this.
+[ 2459.8] Now, let's think about this as a gameplay space.
+[ 2462.8] We've got the what I'm coming in, I'm seeing from a distance, but how's it going to play?
+[ 2468.8] We've already got the stairs in, so that's good.
+[ 2470.8] It's more of a through route through here, but also we thought about if you could clamber up and out here.
+[ 2476.8] There's three points of entry.
+[ 2478.8] Then also, it's the still quiet and open space.
+[ 2482.8] They'll probably say you need something in the middle level design,
+[ 2486.8] but at least now if you're coming into it, you can duck down behind cover.
+[ 2491.8] You can still shoot out.
+[ 2492.8] You're not really protected from there, I guess, but then you could run over here.
+[ 2497.8] Likewise, if you're coming in from here, you're basically screwed,
+[ 2502.8] but we could put something like a fence panel here so that you could at least duck out from it, which might help.
+[ 2511.8] You could also, what does this look like?
+[ 2516.8] Well, this is currently empty, so I should probably delete these bits,
+[ 2519.8] but if you were, say, jump the rail in here, run, run, run down, and then get down here,
+[ 2524.8] you've just still got some protection from over here.
+[ 2529.8] Then likewise, I mean, you're basically screwed.
+[ 2532.8] I thought, I mean, they probably wouldn't allow this gap, which is fair,
+[ 2538.8] because ideally, the AI would use the same cover that you use,
+[ 2544.8] and they would probably get stuck there, so we'd probably move that.
+[ 2549.8] But it's an interesting consideration.
+[ 2551.8] I'm glad we're talking about it.
+[ 2552.8] It's like not everything can go everywhere.
+[ 2554.8] Sometimes certain mechanics, both gameplay and technological,
+[ 2559.8] require the placement of certain things in certain places.
+[ 2562.8] Definitely, and I think as well, it's kind of what we were saying before,
+[ 2565.8] is that we all have our roles, but we have to be aware of other people's roles as well.
+[ 2571.8] And so there is a case of, you know, that looks like a problem area,
+[ 2576.8] so instead of waiting for somebody to call that out,
+[ 2579.8] why don't I just make some changes now and then take it from there?
+[ 2585.8] I'll follow those reposting questions.
+[ 2587.8] Would you ever consider releasing tools to allow players to design a location
+[ 2591.8] like an outpost, space space, or other locations,
+[ 2593.8] to be submitted to the team that could possibly be used in the verse if it were good enough?
+[ 2598.8] I'm going to do you one better, Apollo.
+[ 2601.8] Meet me at Camera One.
+[ 2605.8] You should check out one of the last presentations at last year's CitizenCon,
+[ 2609.8] where we introduced the upcoming player base building stuff.
+[ 2615.8] There's a whole, not the whole presentation,
+[ 2618.8] there's a big chunk of that presentation dedicated to the start of letting players
+[ 2623.8] add permanent locations to the verse.
+[ 2626.8] So I don't think we would do it in a thing where we would create a thing
+[ 2630.8] and let you submit to us and we would put it in.
+[ 2633.8] We're just going to give you the tools to start building places of your own.
+[ 2638.8] And you should check out last year's CitizenCon.
+[ 2640.8] I'm not telling you anything new.
+[ 2641.8] No, nobody's, there's no leak or information here.
+[ 2644.8] I'm telling you something that came out in October last year.
+[ 2646.8] Check it out.
+[ 2647.8] That's how we do it.
+[ 2648.8] That's how we're going to do it.
+[ 2649.8] What I'm doing now, it doesn't want to do it.
+[ 2665.2] Fine, be like that.
+[ 2666.2] They're asking one question.
+[ 2670.9] It's like, I can answer one question, then Chris Roberts will come busting through the Kool-Aid man.
+[ 2678.9] Actually, that's not true.
+[ 2679.9] Chris Roberts will probably tell you when.
+[ 2681.9] How are we going to do it?
+[ 2685.3] But no.
+[ 2686.3] When it's ready.
+[ 2687.3] The answer to all when questions are when it's ready.
+[ 2689.3] Anything else is unfair.
+[ 2695.3] It's like, it's like, it's like, it's like last week, last week we had the 500th episode of ISC.
+[ 2704.2] And I said in the outro hosting that we were targeting 4.0 for something earlier than the end of the year.
+[ 2712.2] We are.
+[ 2713.2] We want.
+[ 2715.2] We are all working towards a release that is sooner than the last week of December, which is, I think, what a lot of people are saying.
+[ 2725.2] Now, is that the same as me saying it's going to be?
+[ 2728.2] No.
+[ 2729.2] It's not.
+[ 2730.2] I don't know when it's going to be.
+[ 2731.2] The answer to when it's going to come out is always the same, when we think it's ready.
+[ 2736.2] But it's, there's this thing that happens where people ask us.
+[ 2742.2] People ask us when, people ask us when.
+[ 2744.2] And then we share.
+[ 2745.2] We're targeting, we're attempting, we're all working towards getting it out at this time.
+[ 2751.2] And then it doesn't happen at that time.
+[ 2753.2] And there are invariably somebody that's like, oh, CIG promised.
+[ 2758.2] I'm like, that's not the definition of a promise.
+[ 2761.2] We told you what we were trying to do.
+[ 2763.2] And that's us being honest.
+[ 2765.2] And that's us, well, we're honestly trying to do.
+[ 2767.2] Sometimes we, I mean, we just don't make it because that's how game development is.
+[ 2773.2] But it's, so we do try to be responsible with how many times and how many places we share that information.
+[ 2778.2] Because if you just keep saying, we're trying for this, this, we're trying for this, we're just, we're trying for this, this.
+[ 2783.2] And then they don't happen.
+[ 2784.2] They keep happening and stuff like this.
+[ 2786.2] It's like, there's plenty of people, there are plenty of people who preferred that I didn't say anything at all.
+[ 2793.2] Yeah.
+[ 2794.2] Because they get their hopes up and then it doesn't make it.
+[ 2797.2] So it's a catch 22.
+[ 2798.2] It's if we never say what we're trying to do, then people say, you're not sharing anything.
+[ 2804.2] You're not telling us what you're trying to do.
+[ 2806.2] You're not telling us what's going on.
+[ 2807.2] And then if I tell you what we're trying to do and then we don't make it, then people go, I wish he hadn't told us.
+[ 2813.2] And it's like, I'm on your 10.
+[ 2816.8] I'm on your 10 of this.
+[ 2817.8] I'm on your 10 of this.
+[ 2819.8] I'm not super phased by it anymore.
+[ 2821.8] But it's, I will, I mean, I'm pretty responsible with it.
+[ 2826.8] At the end of last year, I said, you know, I gave a list of things we were targeting for the first six months.
+[ 2831.8] And those things all came out in the first six months.
+[ 2834.8] And I came back the first show this year.
+[ 2836.8] I said the first six months of the year again.
+[ 2838.8] And there were those things were out in the first six months.
+[ 2841.8] So I am, I try to be pretty responsible with my estimates.
+[ 2845.8] But yeah, it's, we are targeting.
+[ 2848.8] We are trying everybody, everybody, everybody here is working very hard to get 4.0 out sooner rather than later.
+[ 2856.8] The work for 324 does not block the work for 4.0.
+[ 2861.8] They're in different streams and whatnot.
+[ 2863.8] So we're trying real hard to get it out.
+[ 2866.8] We want it out.
+[ 2867.8] I mean, it's just going to be real.
+[ 2871.8] How badly do you want 4.0 out?
+[ 2873.8] Oh, really?
+[ 2874.8] Yeah, I can't weigh you.
+[ 2875.8] It's going to be great.
+[ 2876.8] It's like, it's like, I comment, I comment on the show a lot that we have all the same conversations, the backers do.
+[ 2883.8] We have all the same feelings, the backers do.
+[ 2885.8] We just had them 12 weeks earlier.
+[ 2887.8] Yeah.
+[ 2888.8] We all, we all want this stuff out because we want to move to the next day and the next thing and the next day and the next thing.
+[ 2895.8] So yeah, what I said last week still holds true.
+[ 2899.8] We are targeting a release earlier than the end of this year.
+[ 2902.8] And we're all working very hard to make that happen.
+[ 2905.8] So, okay.
+[ 2910.0] So in that interlude, I did another thing that we can do as well, which is use the tint system.
+[ 2918.0] So this means that we keep all the same geometry and stuff, but we have loads of primary secondary tertiary colors in this format.
+[ 2930.0] And you change the colors to whatever you want.
+[ 2932.0] And then you apply them.
+[ 2934.0] But if you're not happy with that kind of color arrangement, you can then say, I want to swizzle it.
+[ 2939.0] So then I'm going to go swizzle.
+[ 2941.0] So secondary secondary primary, or you could have, you know, whichever combination of these three numbers, you swizzle it and you apply it and it changes it.
+[ 2950.0] So again, that's a really quick way of saying, okay, this one's head hunters.
+[ 2956.0] This one's rough and ready.
+[ 2958.0] This one is micro tech.
+[ 2960.0] This one is husband dynamics.
+[ 2964.0] So I've changed it to I wanted an orange if I'm being perfectly honest, because I think it would look cool and work quite well with the yellow and the gray that we already have, but I couldn't find one.
+[ 2975.0] So I've gone with the cobalt X red because I knew where that was.
+[ 2980.0] And also it means that, you know, again, we're looking for a red object on the horizon, something that stands out isn't that great.
+[ 2989.0] So now we're just going to tidy things up a bit because I made a bit of a mess.
+[ 2993.0] And then we're going to get this exported and sent over to planets.
+[ 3000.0] I can remember what the controls are.
+[ 3003.0] So now we're deleting everything that I didn't need because I didn't need it.
+[ 3008.0] Or if I had more time, potentially I would do a slightly better job.
+[ 3013.0] Hassam Abbas has a good question.
+[ 3017.0] How come CIG don't take a little time to update the design documents and let us know if anything has conceptually changed?
+[ 3024.0] Well, that's what we did last week with intro to jump points.
+[ 3029.0] We literally just went over the entire design from start to finish of the current design after years of saying it might be this or it might be this and stuff like this.
+[ 3036.0] Why we're not constantly going back and updating the old stuff.
+[ 3041.0] We work on the stuff that goes out soon.
+[ 3049.4] We work on the stuff that's right in front of us.
+[ 3051.4] It's in order to get 324 out in order to get 4.0 out in order to get 4.1 after that and what that.
+[ 3057.4] Those are where our focuses are.
+[ 3059.4] Those are where our focuses are because they have to be.
+[ 3061.4] Those are our immediate tasks.
+[ 3063.4] They take up all the brain space.
+[ 3064.4] They take up all the effort.
+[ 3065.4] We work on that stuff.
+[ 3066.4] Too much think, if you remember, the folks who were here watching the old days of Weanmen's Hangar.
+[ 3074.4] It's like that.
+[ 3075.4] Weanmen's Hangar was a great show.
+[ 3077.4] But if we're being completely honest, a lot of things were said in that show that don't apply to a Star Citizen today.
+[ 3084.4] The problem with projecting out too far is that people change.
+[ 3089.4] Ideas change.
+[ 3090.4] Technology changes.
+[ 3092.4] You discover you can do something new that you couldn't do when you had that original design.
+[ 3097.4] And so then your design changes.
+[ 3099.4] You discover that you can't do something that you originally wanted to do.
+[ 3103.4] And so your design changes.
+[ 3105.4] New people come in with brand new ideas.
+[ 3108.4] Nobody wants to hire you into a game studio or any game studio, rather.
+[ 3113.4] And you're full of ideas.
+[ 3116.4] You're full of experiences.
+[ 3117.4] You're full of knowledge.
+[ 3118.4] And you don't want to come into this environment.
+[ 3121.4] Like, oh, well, every decision has been made.
+[ 3123.4] Every decision was made in 2013.
+[ 3125.4] And there's nothing for you to contribute.
+[ 3127.4] There's nothing for you to add to the project.
+[ 3129.4] You're like, oh, well, why am I going to be here?
+[ 3131.4] I'm just going to go somewhere else.
+[ 3132.4] So every new person who joins the project has not every new person.
+[ 3136.4] A lot of new people who joined the project have new ideas, new thoughts and stuff like this.
+[ 3140.4] So we like to synthesize all that information and use it.
+[ 3145.4] One of my favorite things about CIG, and I've said this before,
+[ 3147.4] is that we're never afraid of the better idea.
+[ 3150.4] When the better idea comes along, the only thing that matters is,
+[ 3155.4] is it, do we believe it to be a better idea?
+[ 3158.4] If we believe it to be a better idea, we go with that.
+[ 3161.4] Sometimes it's not.
+[ 3162.4] Sometimes we try a thing and it's not the better idea.
+[ 3164.4] It's like, well, we all thought it was the better idea.
+[ 3166.4] Yeah, now we know it's not.
+[ 3167.4] Let's look for another better idea.
+[ 3169.4] That's game development, not game construction.
+[ 3172.4] But that's the reason why there's not a whole lot of time.
+[ 3176.4] And you'll find this at, I don't want to speak for every single game studio in the world,
+[ 3181.4] but you'll find this at quite a lot.
+[ 3183.4] I mean, I've been in this industry since we launched World of Warcraft of Blizzard back in 2004.
+[ 3188.4] You'll find this in a lot of places that you tend to spend your energy on the things that are right in front of you.
+[ 3195.4] This release, next release and the release after that.
+[ 3198.4] Because there's too much that can change in my world, in your world, in our world, in the technological world.
+[ 3206.4] That means that whatever plan you make for three years from now is likely not going to be in place three years from now.
+[ 3212.4] Because there's just too many other variables that change it.
+[ 3215.4] So that's the, I was going to say short answer.
+[ 3219.4] It's short for me.
+[ 3221.4] I'm not a very terse person.
+[ 3224.4] I tend to talk.
+[ 3226.4] But that's the Jared answer for why there's not a lot of time spent constantly updating old design docs of stuff that we're not going to be working on in the next three to six to nine months.
+[ 3238.4] So when it comes time to work on those things, then we revisit the design docs and we make the decisions and the updates with the people that we have,
+[ 3246.4] with the technology that we have, with the process that we have.
+[ 3249.4] And we find that that's a much more effective manner and it reduces a whole lot of wasted time and reduces a whole lot of wasted and unfortunate heartbreak.
+[ 3261.4] Because we haven't filled your heads with a bunch of stuff that we're not certain we can do, which is what we used to do way back in the day.
+[ 3271.4] We're just more responsible with it now is the short answer.
+[ 3274.4] What are you doing now?
+[ 3279.2] What we're doing now is we're just creating a quick layout with our new overlay.
+[ 3288.2] So it's one thing having the overlay.
+[ 3290.2] We've changed the silhouette of the place.
+[ 3292.2] We've got some new gameplay area in there.
+[ 3295.2] But what else can we do to kind of make this more of an established place?
+[ 3299.2] So you'll see that we've already got a couple of these already.
+[ 3303.2] Those are the trade federationships from the attack of the clones.
+[ 3306.2] There you go.
+[ 3308.2] No, not the map.
+[ 3310.2] Again, so on the landscape you're coming in on your ship.
+[ 3316.2] You've got a read on the location and then as you get close to your light, yes, I remember this one.
+[ 3321.2] It's the one with the two red columns.
+[ 3323.2] That's great.
+[ 3325.2] So what we're doing now is we're just using again assets that already have.
+[ 3329.2] So these derelict kind of containers.
+[ 3332.2] And we've got these ingress points around the location.
+[ 3339.2] But if you just go on head on with no cover at all, you're just going to get murdered.
+[ 3346.2] So it's kind of like, what can we give the player to give them an advantage over the occupant in this space?
+[ 3355.2] So these things will be actors cover, but also you can get on top of them.
+[ 3359.2] So you can get have more of a kind of like a higher look over the location.
+[ 3365.2] And then we also place them in areas of natural elevation as well so that you can be on a hill looking in going, OK, well, I need I know I need to go here.
+[ 3376.2] Maybe I can get in through here, work around and go through there.
+[ 3379.2] So OK, so now I'm going to trundle down.
+[ 3381.2] OK, how's it looking now?
+[ 3384.2] Can I see any guard pass or this fence is blocking the way?
+[ 3387.2] So maybe I can go over here.
+[ 3389.2] I can climb up onto these boxes.
+[ 3392.2] OK, the guards are not there.
+[ 3394.2] OK, now I'm going to go in and then you're in it.
+[ 3397.2] But you know what you're getting into as opposed to I'm just going to land and see how it turns out.
+[ 3403.2] So just a little bit of population.
+[ 3406.2] So let's just grab all this.
+[ 3408.2] This is the nickel version of level design.
+[ 3414.2] Any accomplished long term FPS player will tell you how important FPS design is.
+[ 3423.2] It's the length of a chord or the amount of turns, the number of dead ends and the number of kill boxes and stuff.
+[ 3432.2] There's a reason why the newest versions of popular games like Halo and Call of Duty and stuff are still revisiting maps from 2002,
+[ 3443.2] 2004 and stuff because when you get a good map and you get that map,
+[ 3447.2] my favorite was always Wake Island in the original Battlefield in 1942.
+[ 3453.2] Whenever Wake Island came up, I was just like, that's the one that was made for me.
+[ 3458.2] Usually because I just put a satchel charge on the bottom of the zero and just hid in the bush and waited for somebody like,
+[ 3463.2] oh, the plane's there and they got in there like, I'm so happy.
+[ 3466.2] Oh, I'm going to get a plane.
+[ 3468.2] And then I let them start taking off.
+[ 3470.2] And right as they get like a foot off the ground, I blow up the satchel charge and take it away from them.
+[ 3475.2] Oh, hello, export failed. I wonder why that is.
+[ 3480.2] I really didn't want this to happen, but you're going to actually watch me try and solve an error.
+[ 3487.2] If I can get the window open.
+[ 3491.2] Well, that about does it for this piece.
+[ 3495.2] Yeah, yeah, yeah. Last hurdle.
+[ 3498.2] Oh, I mean, we're so good.
+[ 3501.2] Oh, it's a pub to pub three.
+[ 3506.6] So needs to have a pivot.
+[ 3509.6] That would help. Maybe it doesn't have that. No, that doesn't make sense, though.
+[ 3514.6] Because it would already have one surely.
+[ 3517.6] It doesn't. Oh, it does. I know. I know the error.
+[ 3523.6] And we're just going to fix that by moving this to the root.
+[ 3531.5] Come on, eyes. Save export.
+[ 3537.9] It's not not my first rodeo. No, it's not.
+[ 3542.9] That's why he gets paid the big buck.
+[ 3544.9] Says the Zeus for talk.
+[ 3547.9] Zeus for Zeus for.
+[ 3549.9] So what is the pivot point?
+[ 3552.9] It's essentially so we export things with cool inside of object containers, which is essentially a group.
+[ 3561.9] Other things can then interpret.
+[ 3564.9] So essentially the pivot point is where the so you have a pivot on a mesh.
+[ 3569.9] It's the same principle.
+[ 3570.9] So it's where you're going to rotate on what transform from.
+[ 3574.9] Jarnator says John doesn't care for Jared stories.
+[ 3577.9] It's just British.
+[ 3578.9] I.
+[ 3580.9] I mean, if you I can't even remember what you're talking about now.
+[ 3584.9] Actually, yes, I will tonight five hours from now.
+[ 3588.9] But it's more I in a polite way.
+[ 3594.9] No, no, no.
+[ 3595.9] You know, so doing my work.
+[ 3597.9] No, there's a very real thing.
+[ 3599.9] Streamers, professional streamers who can play the game and talk and be personable at the same time.
+[ 3606.9] That is an incredible skill.
+[ 3608.9] As an incredible skill that is usually built over lots of times, lots of people watch streamers.
+[ 3613.9] They think it's this easy thing.
+[ 3614.9] It is not.
+[ 3615.9] It's it's not actually a skill I particularly have when I a few times I stream.
+[ 3619.9] If I'm when I talk, I'm crap at the game.
+[ 3621.9] And when I'm good at the game, I'm not saying any word like I can't do both.
+[ 3624.9] Whatever.
+[ 3625.9] Most people are not professional streamers.
+[ 3627.9] So what happens a lot of times when we do these shows, switch to the cool.
+[ 3631.9] A lot of times when we have these shows, we usually have me and somebody else here because it lets the person who's at the machine focus on their work and doing their work.
+[ 3640.9] And then we provide the peanut gallery commentary.
+[ 3643.9] We didn't want to take another person away from their work today.
+[ 3646.9] So it's just John and I.
+[ 3647.9] So that left more of the peanut gallery stuff on me.
+[ 3650.9] So I would venture to say, and John, you're welcome to tell me if you're wrong that you were grateful for my stories because they gave you a chance to focus on your work.
+[ 3657.9] Yes, I am.
+[ 3658.9] Yeah, you can tell me if it's not you can tell me stories.
+[ 3661.9] I know.
+[ 3662.9] I mean, I'm looking at the camera and tell Jarranator.
+[ 3665.9] He's wrong.
+[ 3666.9] What?
+[ 3667.9] Look at the camera and tell Jarranator.
+[ 3668.9] He's wrong.
+[ 3669.9] Jarranator.
+[ 3670.9] You're wrong.
+[ 3672.9] Didn't want to screw your name up live.
+[ 3675.9] So it took so long for me to say.
+[ 3677.9] Okay, so let's do some location scouting.
+[ 3681.9] So this is Deymar suit.
+[ 3684.9] This is nice because it gives us natural elevation.
+[ 3687.9] It's just we can't put it on a, you know, a cliff side.
+[ 3693.9] So that's where one exists already.
+[ 3695.9] So you don't want to be too close to that.
+[ 3697.9] Bit flat.
+[ 3701.4] Bit flat.
+[ 3702.4] Bit flat.
+[ 3703.4] You know what?
+[ 3704.4] You know when you think, oh, put it here and you're like, no, I can't put it in the first
+[ 3709.4] place I find.
+[ 3711.4] And then here we are just going over the same terrain going, I really wish I'd just touch
+[ 3717.4] that first one.
+[ 3718.4] And it's almost like I wish you could put like little flags down.
+[ 3722.4] Yeah, yeah, yeah.
+[ 3723.4] I'm going to keep looking, but I want to put a flag here.
+[ 3726.4] Okay.
+[ 3727.4] Maybe.
+[ 3728.4] It's all right.
+[ 3731.4] Nice.
+[ 3732.4] I think I got half of a valley going here.
+[ 3736.4] This doesn't look great though with all these things in, but I don't think.
+[ 3740.4] You're being very artistic.
+[ 3741.4] I am, I am.
+[ 3742.4] I don't think I can do anything about that.
+[ 3744.4] Just put the damn fog down.
+[ 3745.4] Yeah, sorry.
+[ 3746.4] Let's just, let's just do that.
+[ 3747.4] Let's get this thing done.
+[ 3749.4] This is why nothing comes out on time.
+[ 3752.4] You're the problem.
+[ 3753.4] It's me.
+[ 3754.4] You're the problem.
+[ 3755.4] Cool.
+[ 3756.4] Oh God, now I'm in my own head and I'm like, oh, what about this?
+[ 3760.4] It's one of those space.
+[ 3763.4] Cause it's also the footprint as well.
+[ 3766.4] What the God damn.
+[ 3768.4] Yeah.
+[ 3769.4] Christian John.
+[ 3770.4] Okay.
+[ 3771.4] We'll do it here.
+[ 3772.4] We'll do it here.
+[ 3773.4] It's the two minutes past time.
+[ 3774.4] Yes.
+[ 3775.4] You're right.
+[ 3776.4] Right.
+[ 3777.4] So we need a new layer and it's called new layer and we should put it in the right place,
+[ 3779.4] but we're not going to.
+[ 3780.4] And then we're going to use our old tool because we've got another one in development and we're
+[ 3784.4] going to quickly hopefully it doesn't crash.
+[ 3787.4] Hello.
+[ 3791.0] Okay.
+[ 3792.0] It was doing it.
+[ 3793.0] Right.
+[ 3794.0] So let's just go.
+[ 3795.0] It doesn't make that noise.
+[ 3797.0] That's just me doing it on top when you've done this a thousand times.
+[ 3801.0] You've got to keep it interesting.
+[ 3803.0] Right.
+[ 3804.0] Here we go.
+[ 3806.0] I never make my own mouth noises for videos.
+[ 3809.0] Oh, and then we click and hey presto.
+[ 3817.0] And that's the rest.
+[ 3819.0] That's how we do it.
+[ 3820.0] So I did put some terrain modifiers in and you can tell that they're having little to
+[ 3825.7] no effect.
+[ 3826.7] But I mean, it doesn't look too bad if it's meant to be abandoned because that's like
+[ 3835.0] that.
+[ 3836.0] That's the thing.
+[ 3837.0] I like why it's on the other side.
+[ 3839.0] No, no, no.
+[ 3840.0] Go back.
+[ 3841.0] You show people what you did.
+[ 3843.0] But we can still adjust it by where's the transform.
+[ 3849.0] So we do it like this.
+[ 3851.0] And we just bump this up a little bit.
+[ 3853.0] Maybe move it over here a little bit.
+[ 3859.3] Yeah.
+[ 3864.9] This was such a bad place to put it.
+[ 3866.9] Right.
+[ 3867.9] So let's go the other side.
+[ 3870.9] No other games did you in the world would show you this part of the process.
+[ 3873.9] And go down.
+[ 3874.9] And you know, this is a rough job on my part.
+[ 3880.0] So we're going to have some issues for sure.
+[ 3884.0] But actually this is looking a bit better.
+[ 3890.5] So, so yes, this could be a bit tired yet, but that's fine.
+[ 3895.5] And this could be a slightly tired yet, but that's fine.
+[ 3898.5] It could be that we just need to move it up by a meter.
+[ 3902.5] But you know, not too bad.
+[ 3906.5] We extended the bases already.
+[ 3908.5] So that's fine.
+[ 3909.5] And we have some of that abandoned look.
+[ 3911.5] And we have the natural elevation I was talking about.
+[ 3915.5] So hello, happy accident.
+[ 3918.5] You did that absolutely intentionally.
+[ 3920.5] And then, you know, those parameters you put in.
+[ 3925.5] In a way you can.
+[ 3927.5] Can we force those?
+[ 3928.5] Probably not.
+[ 3930.5] We still see the towers from a distance, the color of them.
+[ 3935.5] You know, there's plenty of.
+[ 3937.5] Yeah, you could put your ship down actually, you know, a bit bumpy, but out here,
+[ 3943.5] safe protected, make your way in.
+[ 3946.5] And then you've got, you know, the containers still, you can make your approach.
+[ 3953.5] Yes, it's going to be harder from this side, but you just,
+[ 3958.5] surely you would just go, well, it's a bit barren over here.
+[ 3961.5] So I'll go around.
+[ 3962.5] And then it's kind of like, well, does it still look good when it's, you know,
+[ 3967.5] the sun's back.
+[ 3968.5] Oh, look at that.
+[ 3970.5] Let's turn the old path helper off.
+[ 3974.5] We're seeing the LOD.
+[ 3976.5] Yes, yeah.
+[ 3977.5] We turned the LOD stuff on.
+[ 3978.5] I tried it.
+[ 3980.5] I might be able to do it in console.
+[ 3985.5] Where were you?
+[ 3988.5] Let's do this off camera because I don't know it completely off by.
+[ 3993.5] Oh, this one.
+[ 3995.5] It's LOD, it's LOD, uh, cold debug, I think.
+[ 3997.5] Yeah.
+[ 3998.5] Yeah, see you.
+[ 3999.5] It's this one.
+[ 4000.5] There we go.
+[ 4002.5] There you go.
+[ 4003.5] It looks good.
+[ 4008.2] You've got to be careful not to see the reveal.
+[ 4010.2] I know how all this works.
+[ 4012.2] That looks great.
+[ 4013.2] Cool.
+[ 4015.2] If the sun's on the other side, back of step.
+[ 4022.3] That will look good for about an hour's worth.
+[ 4031.4] It's good enough for SEO.
+[ 4034.4] Nothing good ever happens.
+[ 4036.4] Nothing good has ever created.
+[ 4038.4] That's not true.
+[ 4040.4] We have moments.
+[ 4042.4] All right.
+[ 4043.4] That's it.
+[ 4044.4] We've got to wrap up.
+[ 4045.4] Lovely.
+[ 4046.4] We've got to wrap a screenshot.
+[ 4047.4] All right.
+[ 4048.4] Do you want me to wrap this up?
+[ 4054.2] Please.
+[ 4055.2] Thank you for watching.
+[ 4056.2] See you next time.
+[ 4057.2] No, too fast.
+[ 4059.2] It's the panic being on the spot.
+[ 4063.2] Don't you just love doing these with me?
+[ 4066.2] I do actually.
+[ 4067.2] This is why I fought for this for so long.
+[ 4070.2] Thank you for watching, everybody.
+[ 4071.2] This has been Star Citizen Live Game Dev, Making Fobs.
+[ 4074.2] I was Jared Huckabee.
+[ 4075.2] That was John Griffiths.
+[ 4077.2] This is a production of CIG, the Cloud Appearance Games.
+[ 4082.2] No reasonable information was discerned at any time.
+[ 4086.2] Be sure to tip your waitress.
+[ 4088.2] Tell Jarnator he's wrong every time you can.
+[ 4091.2] Be sure you tune in if you haven't.
+[ 4093.2] Check out this week's episode on hangers in freight
+[ 4095.2] in Alpha 324.
+[ 4096.2] answers a bunch of questions about the new personal persistent hangers and
+[ 4100.8] stuff that are coming alongside also how manual loading and automatic loading
+[ 4104.9] works, the surge function coming to all the kiosks and stuff like that, and the
+[ 4108.4] removal of armistice zones. Well I guess you don't have to watch it because I just
+[ 4111.6] told you everything. Tune in next week, tune in next week where we're back to our
+[ 4120.7] Alpha 4.0 stories with a look at pyro space-based activities. Once you go
+[ 4126.5] through the jump point, some of the cool things you get to do when you're in space,
+[ 4130.5] including, remember if you watch the the public road map this week we revealed
+[ 4136.7] asteroid bases and contested zones. You're gonna learn all about them next
+[ 4141.0] week's show. So be sure to check that out. Contested zones, I'm not usually the hype
+[ 4146.1] guy, but contested zones for my money are probably the most exciting aspect of
+[ 4150.7] 4.0 for me. It's a whole new kind of gameplay experience. So be sure to
+[ 4154.7] check that out. Then the next week after that is fire. We haven't talked about
+[ 4160.1] fire for a while. We're gonna go back and talk about fire which is also coming.
+[ 4163.2] It's finally making its way to the persistent universe in 4.0. I don't
+[ 4167.9] know if that's in the public road map or not, but we're talking about that. And
+[ 4171.1] then we go back to pyro down service side with an episode entirely dedicated to
+[ 4175.5] the social experience. You might say social experience in pyro. I'm like yes,
+[ 4178.7] there are things to do in pyro besides fight. I know a lot of people are
+[ 4184.4] fighting and it's just gonna be this giant meat grinder of stuff. But there's
+[ 4187.6] actually a whole lot of content being built for the not fighter, for the
+[ 4193.0] lovers like John Griffiths. And then after that we take our break for a ship
+[ 4198.4] showdown with our Gavin Wathery special. And then we're back to pyro with an
+[ 4203.6] episode entirely dedicated to fighting because I mean there's a whole lot of
+[ 4207.5] fighting and a lot of cool new stuff to fight with in that episode. So check that
+[ 4212.9] out. And then after that it's engineering and life support and another
+[ 4217.9] creature feature and stuff. And it's just lots of cool stuff. The Zeus and
+[ 4221.7] MFDs. We got a lot of episodes between now and Citizen Gun. So I don't know why
+[ 4227.5] I felt the need to tell you all that stuff just now. But I did. I hope you're
+[ 4232.9] watching it down. I really do keep most of the stuff on my head. Thanks for
+[ 4240.7] watching. Take care. If I made a joke and poor taste, don't take it too seriously.
+[ 4247.7] You'd be like, to have fun here. And don't you remember? Remember the video games
+[ 4251.7] are fun. And making video games are fun. And this whole process is supposed to be
+[ 4257.9] fun. So if you find yourself skewering to the side of angst and distress and stuff
+[ 4267.4] like this, it's okay to take a break. It's okay to take a break and find the fun
+[ 4273.0] again. This is important to remember. It's always supposed to be fun. So thanks
+[ 4277.8] for watching. See you next week, everybody. Bye.

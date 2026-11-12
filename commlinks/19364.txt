@@ -1,0 +1,108 @@
+PU Monthly Report
+June 2023
+Welcome to June’s PU Monthly Report. Read for everything done across CIG’s global studios last month in support of the Persistent Universe, including new developments in water tech, AI pathfinding, and item wear.
+## AI (Tech)
+Last month, AI Tech finalized their work on dynamic pathfinding regeneration. As mentioned in previous reports, this feature allows dynamic paths to detect when a navigation mesh is modified and check whether it’s still valid or if a new path request is needed. When a new dynamic path is requested, the pathing component creates and stores navigation anchors. These anchors notify the pathing component each time the mesh changes, which then checks through navigation raycasts to see if the path is still valid. If not, the last part of the path is recomputed.
+Next, the team continued developing a feature to allow NPCs to enter and exit a ship’s airlock from EVA. For this, they had to consider cases when a ship or space station is moving or slightly rotating. They’re currently working on a scenario for transitioning from a ship with gravity to zero-g by vaulting over a ledge.
+For tools, AI Tech continued improving and extending functionality for Apollo Subsumption, including adding two new windows for the task-archetypes and variable-type editors. This will allow the team to better visualize and modify archetypes and variables.
+The other AI tool, the usable group coordinator, received improvements too. This included a minor flow refactor to reduce the performance impact from bad setups and to more clearly notify the designers what’s wrong.
+Last month, AI Tech also supported existing features and the upcoming release builds. For navigation links, they created new flowgraph nodes that allow the designers to disable and re-enable navigation links for a platform or object container. For example, this will enable NPCs to use moving platforms.
+## Animation
+Last month, the Animation team worked on facial animations for a new character set. They also progressed with their ongoing work on ‘boids,’ which relate to animals flying in flocks or swarms.
+## Art (Characters)
+In June, the Character Art team continued working on the Dusters and Headhunters gangs, creating new outfits for the former and polishing existing items for the latter.
+Alongside this, the Character Concept Art team began the exploration phase for a new Headhunters gang member and prepared handoff sheets for additional Dusters outfits.
+## Art (Ships)
+The Tumbril Storm is nearing the end of the LOD0 stage, with some areas approaching final content. Materials were also polished, internal damage was built, and most LODs were created. The team are currently undertaking customization work and will move onto UV2 projections in July.
+Following last month’s report, the Aopoa San'tok.yāi is awaiting its second greybox gate review pass.
+“It failed the first time around due to a missing dashboard implementation plan - we have now created a dashboard and generated the bulk of the art for it. We simply need to make it past the gate and we will be officially in LOD0 stage.” Ship Art Team
+The San'tok.yāi’s cockpit also received a polish pass before the team moved on to the rest of the ship. Ship Art then worked with Narrative on Xi’an language translations, which will appear in the ship’s UI and character Inner Thought system.
+## Community
+The Community Team celebrated Pride Month throughout June by bringing back the Show Us Your Colors celebration, which received a huge number of impressive entries. Visit this year's submissions comm-link for a wealth of community creativity.
+The team then supported Alienweek 2953, which starred a Banu ship souli’s human-focused advert. During the event, players were invited to explore alien lore and spaceships and enter the Alien Encounter screenshot contest. The community’s xeno-linguists also deciphered a Banu-language message containing secrets of the mysterious tholo.
+“The first opportunity to get hold of a digital Banu tholo was at the International Bar Citizen Weekend, where we handed them out as code cards to every guest. We loved meeting so many of you this weekend as we hosted an afternoon of Star Citizen near our studios in Los Angeles, Austin, Montreal, Manchester, and Frankfurt.” Community Team
+June saw the continuation of the Bar Citizen World Tour, with members of the Star Citizen team traveling to Asia to visit players in Shanghai and Hong Kong, and Incheon in Korea.
+“Thank you for having us as your guests. It was absolutely amazing to meet more than 1900 of you in China and Korea!”
+The team also supported the announcement and ongoing planning of CitizenCon 2953, which is coming to LA, USA, on October 21 and 22. This included ticket details, an FAQ about the event and location, a guide to L.A., and details of how to take part via community booth or this year's cosplay contest.
+Plus, in preparation for this year's Foundation Festival, Community launched the Tutorial Contest and invited the player organizations that make the 'verse a better place with their teamwork to introduce themselves.
+## Engine
+In June, the Core Engine team finished integrating the latest changes into the main development branch. This took a significant effort, but the team managed to stabilize and roll out the many major rewrites made over the past few months.
+Additionally, experiments were done on a more cooperative threading model to execute physics code, which should deliver general performance improvements.
+For generic shapes, all editor-side work for regular shapes was finished and is now with the artists for feedback. The next stage is editor support for multiple sub-segments to allow the team to build more complex shapes out of primitive sub-shapes.
+The StarBuild, P4K v2.0, and memReplay systems received various improvements and new features in preparation for them rolling out to other teams. Core Engine also worked with Physics to provide tech support for the MISC Hull C.
+The Physics team supported the game teams with various bug fixes, progressed with cantilever beams for the Maelstrom editor, and investigated solver improvements for driven ragdolls.
+An ImGUI view was then implemented to allow rapid tweaking of simulation parameters for character-attached cloth so that changes become immediately visible.
+Regarding team structure, the Entity System Tech team transferred to the Core Engine team.
+“While their focus will still be on everything related to Server Meshing, bringing the team over brings the knowledge and ownership of the entity system together, which should allow more efficient communication.” Engine Team
+Entity System Tech also integrated their recent improvements into the main development branch. They then worked on various spawning-time improvements and cost visualizations to allow for further guided loading-time optimization.
+Finally, async entity loading was enabled in the editor for faster startup and improved efficiency.
+## Features (Arena Commander)
+In June, the Arena Commander Feature team's focus was on polishing and bug fixing for Alpha 3.20. Engineering also completed the new competitive-scoring and team-balance systems.
+A small quality-of-life refactor was done to the Flash-based FPS loadout editor. Now, game modes automatically supply consumables to the player, allowing the team to simplify the editor to only include armor and weapons. They also continued work on the new spawn screens being introduced to most game modes in Alpha 3.20 before moving on to in-game vehicle selection.
+Design continued polish passes across various locations, including adjusting Security Post Kareah's control variant based on playtest feedback.
+For Tank Royale, the mode’s Magda location failed its go/no-go due to underwhelming visuals and gameplay. In response, Design worked on two replacement locations to provide greater variety and more visual interest, Daymar and Mya (Leir’s second planet, where The Good Doctor map is set).
+Design then reworked all existing race tracks to utilize the new racing system being developed for release in a future patch.
+Finally, the team concluded work on three new experimental modes that feature the new flight system, “Master Modes”: Free Flight, Duel, and Endless Vanduul Swarm.
+## Features (Characters & Weapons)
+In June, the Features team began extending item wear to weaponry. This means that as a weapon is used, ages, or is kept in poor condition, it will become increasingly worn. For example, if a weapon is used while dirty, it will accumulate wear faster. As a weapon becomes worn, it will become less reliable and may overheat faster and start misfiring. This can cause minor or major jamming, requiring the user to spend time fixing the malfunction.
+The team also looked into a minor rework of the inventory screen.
+“The current inventory screen is great for managing loadout and inventory storage, but we have been looking at options for speeding up looting while in combat.” Features Team
+As part of this, the team experimented with a new UI that remains in first-person view, allowing players to assess combat-related items and then quickly loot or exchange MedPens, ammunition, grenades, and weapons.
+## Features (Gameplay)
+Following the release of Alpha 3.19.1, the Gameplay Features team began focusing on upcoming patches. This included work on the vehicle tractor beams, with relevant vehicles being set up to support the feature. For example, the upcoming Argo SRV was tested internally and towed its first ships.
+The Resource Network also progressed well, with the team pleased with its current state. They then moved onto supporting Resource Network-relevant features, including engineering and life support.
+## Features (Mission)
+Last month, Mission Features were redirected to cargo and Pyro-based missions; they’re currently developing cargo-hauling and ship-piracy missions that leverage the new cargo grid and freight elevator features.
+The Development of a new cargo and escort-focused Dynamic Event began. Blockade Runner will replace Nine Tails Lockdown, keeping its strengths and removing its weaknesses by using new features and proven designs.
+Work was completed on the Ship Coverup mission suite. This entails scraping the hull off a criminal ship to make it unidentifiable to the approaching security forces. The team was also tasked with turning the New Player Experience into a modular mission that can be run in any location with the correct setup.
+For combat missions, most quantum-travel-capable ships were added to the pool that missions can spawn from. However, some that don’t make narrative sense weren’t added. For example, criminals won’t use the Drake Cutlass Blue. As part of this work, the game’s ships were divided into difficulty bands derived from data mentioned in last month’s report, which was gathered from pitting every ship against each other 1000 times.
+A technical design document was completed for the system that governs player reputations with in-game orgs (such as Crusader Industries or Nine Tails). This relates to things players can do outside of missions, such as killing rival NPCs.
+Gameplay Features also made improvements to the Defend Kareah mission, including splitting trespasser tracking between the station’s interior and exterior to help players better understand where to search.
+“We are also prototyping a means to take the turrets temporarily offline and do a momentary ping on intruders, which may or may not be used.” Mission Features Team
+Work continued on the Data Heist, Retrieve Consignment, and Ship Escort missions alongside the ship-trespass feature.
+Finally, Mission Features worked with Actor Features to get the ‘ledge grab’ feature enabled in the PU, seeing it through the QA and go/no-go processes. This feature allows players to grab onto ledges while in mid-air, significantly improving climbing and allowing players to reach ship entrances that were previously out of reach. They also made a pass on the Prison Escape mission alongside the USPU team to ensure the new feature could be used to its fullest.
+## Graphics, VFX Programming & Planet Tech
+June saw the Planet Tech team wrapping up their latest tools and working on the new water system. Water ripples can now be simulated across region borders, and further reworks to rendercode integrations with planetary atmospheric passes made the process smoother. Quantum obstacles for Generic Shapes were also physicalized and passed to the Engine team for integration.
+The Graphics team spent part of the month fixing bugs, improving the render thread, and developing the upcoming temporal-upscaling system. For global illumination, a ray-tracing prototype is now in progress, and work began on screen-space probes. Screen-space shadows are now more consistent, and canvas-decal streaming issues were resolved.
+Gen12 and Vulkan also received various bug fixes that impacted rendering and streaming performance. The GPU resource lifetime was restructured, and WAW hazards for RenderGraph deferred execution are handled more efficiently too.
+The first iteration of entity spawning based on MeshSetup and CGAs was submitted, which is required for Maelstrom.
+Alongside the UI Tech and SQ42 teams, Graphics improved the performance and visual quality of the area map. The interior and FPS mini-maps now use the Render Layers feature, which can now be applied to CGA joints, skin, and CGF attachments. Incorrect UI edge cases were also resolved and now scale correctly with scene exposure.
+The VFX team enabled DataForge to support particle library groups in preparation for the upcoming changes to weapon-effect setups.
+A crash impacting fire-related child effects was fixed, and an entity-wide burn state can now be applied that uses dirt parameters and object temperature to determine damage and glow; glow uses a specific shader from permanent effects for game-wide consistency.
+Lightning was also improved. For example, lightning cascades can be timed with a new controller and ship shields now trigger when struck by lightning.
+## In-Game Branding (Montreal)
+Last month, Branding worked closely with EU Locations 2 on navigational signage for New Babbage and began building various artwork assets for an upcoming event.
+They also progressed with artwork for Pyro, including the final touch-ups on navigational signage for Ruin Station.
+The Branding Team began work on the underground facilities too, which involved creating different mockups for the commercial lobbies.
+## Interactables
+Throughout June, the Interactables team explored new ideas for props that haven’t been seen in the ‘verse before. They also created new Flair items for Subscribers.
+## Lighting
+The Lighting team continued to work on outposts for the Pyro system, helping to sell the ‘wilderness’ feel. They also worked on several other initiatives for Pyro alongside the Locations team.
+## Live Tools (Montreal)
+In Montreal, the Live Tools team entered the analytics phase of the usability research done last month. When complete, the team will establish an action plan that will determine their next priorities in improving the usability of the Hex network’s operation center.
+“This month also marked a great milestone, with the team shipping one of the key features that will provide more support to Persistent Entity Streaming technology. This new versatile tool will allow the users to have an overview of the different entities in the game.” Live Tools Team
+## Locations (EU)
+Last month, the EU Locations team progressed with closing out rooms for Rundown Station.
+“The station has had some great TLC and we hope players will enjoy exploring these new areas!” EU Locations Team
+They also completed tasks for an upcoming event before beginning various new projects.
+The Sandbox team closed out Pyro’s outposts and moved on to planetary distribution work. Development of the underground facilities continued too, with the team exploring new areas and further expanding these already considerable locations.
+The Organics team continued cloud development for planets and worked on new and interesting flora that players will find in Pyro.
+## Narrative
+June saw the Narrative team further developing and populating Pyro. As a lawless system, it presents a lot of interesting opportunities for the team to explore how existing game systems may change and take on new nuance. The team worked on further outlining mission content and providers, refining the unique food options that will be available at some of the remote space stations, and detailing signage and graffiti that will be placed around various locations.
+Narrative also continued their final push toward the release of Alpha 3.20. This included naming and writing descriptions for numerous assets, reviewing new text for gameplay features, and further refining new mission content. Additionally, they made deeper dives into an alien species’ lore as xeno-linguistic development continued. This involved listening to new audio samples and debating which style of speech fit best with the culture and lore.
+Last month also saw numerous narrative content releases, including a Whitley’s Guide to the Tumbril Cyclone, a special message in honor of Alien Week from the Njassi Religion Souli, an episode of Star Citizen Live featuring the Narrative Team, and another batch of Galactapedia entries.
+## Online Services (Montreal)
+In June, the Online Services team completed a major refactor of the inventory system. These changes won’t be visible to players but will touch on every inventory type in the game, with the goal being to address some long-standing bugs and improve PES performance and stability.
+The team also worked on server and engine-side integration for the return of private lobbies in Arena Commander.
+Lastly, Online Services fixed various bugs relating to long-term persistence and login issues.
+## Research & Development
+In June, work on atmospheric and volumetric cloud rendering continued. Transmittance profiles and their filter chains were optimized and improved to reduce noise and artifacts in raymarch results. Further research went into the temporal upsampling of those results to produce a stable and detailed full-resolution frame that can then be composited into a scene.
+## Systemic Services & Tools
+The Systemic Services and Tools team began planning the required services refactor in support of Server Meshing.
+They also began code clean-up and working through tech debt for the diffusion architecture and general instance manager. Additionally, the team supported USPU with bug fixes and integrations toward the MISC Hull C and cargo feature release.
+## Tech Art/Animation
+June saw Tech Animation integrate their long-awaiting changes to the DNA system. This enables new head assets and provides a pipeline that will open new ways to author and customize new game content.
+The team then began new initiatives while they wait for further head art. This included updating the Maya pipeline codebase from Python 2.7 to 3.7 and thoroughly testing it. This was released to the user base in June, with the team currently working through the final bugs.
+## VFX
+The VFX team increased support for several locations across Pyro, including Ruin Station’s interior and exterior and various derelict settlements and outposts. Due to the modular nature of these locations, time was taken to ensure the artists understood which file level to add effects to. For example, for a food stall, they need to add hot-steam effects directly to the stall asset rather than its location.
+The team also supported several new platforms on Orison, including falling and rustling leaves, water fountains, and more. Several ships progressed throughout June too.

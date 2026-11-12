@@ -1,0 +1,33 @@
+Greetings,
+Based on feedback, we have updated targeting controls and visuals.  The overall update includes markers for passive target, the ability to cycle friendlies, selected, pinned, hostiles, and attackers including functionality to target the nearest of each.  The keybinding setup is expansive, but is meant to provide customization  potential.  Due to numerous changes in bindings, its definitely advisable to go through your combat keybindings and check settings or bind again from scratch. From the notes:
+- Improved cycling of Selected targets in the view cone. Targets now iterate in order of angular offset to the look direction (closest to center first). Auto-selection is disabled while cycling, and turns on again once the player is no longer actively cycling.
+- Added the cycling of Locked targets in the view cone. Targets now iterate in order of angular offset to the look direction (closest to center first).
+- Added the cycling of all Locked targets in range, including those outside the player view cone. Can cycle hostiles, friendlies, attackers, and all targets. Each list will be sorted by distance (closest first). 'Lock Nearest Target' functionality is now implemented as 'Cycle Lock - Reset to Closest'.
+- Order of targets to be cycled over will now be cached until the player is no longer actively cycling, or they reset the list. Which target will be cycled to is now more predictable as a result.
+- Added ability to Lock the target under the reticle. By default, this shares a keybind with cycling Locked targets in view, but acts contextually (if something is under the reticle, lock it, else cycle). Can be rebound to separate keys.
+- 'Lock Selected Target' is now unbound by default.
+- Pin Index controls no longer require a hold.
+- Removed first-in-first-out pinning controls and cycling of pins.
+- Removed unnecessary menu options.
+- Gimbal mode has moved from R to G
+- Countermeasures have moved from G and H to H and J
+- VTOL toggle has moved from J to K
+- Lights (and FPS torch) have moved from T to L
+- Toggle all doors and Lock all doors have been unbound (used to be on K and L)
+- Enable Lookahead has been unbound (used to be on LAlt+R)
+Note, some of these keys have been changed and moved around to make room for some the new default keybinds in the updating targeting. The complete targeting keybinds, for reference, are attached to this thread. We will use the same test scenarios and key feedback points from before.
+Test scenarios
+- 1v1 engagements
+- Close range dogfighting
+- Long range initial engagements
+- Furballs (masses of enemies and allies)
+- Non-hostile contacts at all ranges
+Key feedback points
+- Situational awareness
+- Target orientation and vector reading
+- Targeting flow (hostile, friendly)
+- Visibility (pip, targeting UI, trail, sight)
+- Let us know what you think below!
+Let us know how it goes below!
+-Baior
+Player Experience Team

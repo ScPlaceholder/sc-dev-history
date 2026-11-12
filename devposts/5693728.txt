@@ -1,0 +1,11 @@
+Hello everyone!
+We're deploying an update to the RSI Launcher tomorrow morning, around 8am Central Time. While testing this update with Evocati, we encountered a few issues when running the launcher on Linux.
+A workaround for this has been found and tested. Here's the steps all Linux users will need to complete once this update goes live:
+- Download RSI-Setup-1.6.2.exe
+- In Lutris:  Run RSI-Setup-1.6.2.exe inside Wine prefix → select the setup.exe
+- Install launcher
+- 4. Configure:
+- Game option: Executable →Browse and find the Launcher.exe file( usually: “RSI Launcher.exe” not the setup file)
+- Game option: Arguments = --no-sandbox - System options: enable Advanced => Enable CLI mode
+If this is your first install of the game, manually create the folders “Star Citizen” and “LIVE”(Or “PTU”) to have the following path: Roberts Space Industries\StarCitizen\LIVE (or Roberts Space Industries\StarCitizen\PTU)
+Thanks everyone, and we'll see you in the 'verse!

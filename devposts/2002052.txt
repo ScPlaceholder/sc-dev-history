@@ -1,0 +1,56 @@
+## Star Citizen Patch 3.5.0
+Alpha Patch 3.5.0 has been released to PTU, and is now available to test!  Patch should now show: PTU-1308388.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- IFCS: Heat Rework, Atmospheric flight, Arena Commander
+- Balance: Manual gimbals, auto-convergence, cannons vs repeaters vs scatterguns, ship roles
+- Locations: ArcCorp, Area18, Lyria, Wala
+- Star Marine: All game modes
+- Female Character
+- DNA face customization system
+Major Known Issues:
+- Some parts of Area18 have an invisible no-fly zone that will kill the player.
+- ATC at Area18 is unresponsive.
+- Female characters are missing their visor UI.
+- Dying at Area18 results in a blood loss death loop. W/A: Logout and back in.
+- Locking gimbals will not allow you to return them to free.
+- Some aspect ratios do not work well with the ship HUD.
+## New Features
+General
+- Added DNA face customization system.
+Character selection and creation now uses a DNA face customization system. Initially you will be able to choose a gender, then select from a set of currently available characters and customize the blend of their facial features that will be represented in your own character. System includes “Simple” and "Advanced" modes that allows you to customize your face with preferred level of complexity. Additionally, "Eidonomy" selection provides the ability to select individual traits such as eye and hair color, skin tone etc.
+- Added playable female characters.
+- Adding "headphones" setting in audio menu.
+Universe
+- Planetary Locations: Planet ArcCorp and its moons Lyria and Wala.
+Unlike the other planets in the Stanton system, the ArcCorp has the distinction of being almost entirely developed and built on. Nearly every square kilometer of the planet has been allocated for habitation, commercial use, industrial plants, and massive warehouses. As such, a strict, low level no-fly zone is in place for protection, though many choose to construct their buildings taller than the zone in order to offer landing opportunities. ArcCorp has two moons: Lyria, an icy moon dotted with cryogeysers and cryovolcanoes and Wala, a low density moon notable for its large crystalline outcroppings.
+- Major Landing Zone: Area18.
+Area18 happens to be one of the few landing zones designated by ArcCorp for interplanetary traffic and is one of the main commercial ports for the surrounding region. If travelers manage not to be overwhelmed by the hectic sights and sounds of this landing zone, they can find a variety of goods from trusted names as well as unique local providers. ArcCorp has contracted with the PMC group "BlacJac Security" to ensure that their world and its surrounding environs are kept safe and open for business.
+- Added new mission giver: Tecia "Twitch" Pacheco.
+Twitch came up as a soldier who transitioned into freelance security work after her service ended. Things seemed to be working out until she suffered nerve damage on a job for BlacJac Securities and they unceremoniously cut her loose. Now, left without employment and with a very specialized skill-set that she couldn't use, she turned to the criminal element that she used to hunt. These days, she lurks around the back alleys of the megacity Area18, making deals and introducing people or as she calls it "enjoying her retirement."
+- Added Hurston Security ship variants for areas in and around Hurston.
+Missions
+- Added a patrol mission to Delamar.
+- Added destroy satellite missions into Hurston area.
+- Added additional delivery mission variants.
+Ships and Vehicles
+- Added: MISC Reliant variants Tana, Sen, and Mako.
+- Added Anvil F7C-M Super Hornet Heartseeker.
+- Added voice feedback for events while mining.
+- Items and components now wear at a very slow rate.
+- Items and components can now be repaired.
+- Added ship weapon auto-convergence
+Fixed and gimbal weapons now auto-converge disparate weapon velocities and ranges into a single pip based on the slowest and shortest range weapon you have equipped.  Additionally, gimbal and fixed weapons have a very small amount of target convergence (still being tuned).
+FPS
+- Added: Gemini S71 assault rifle
+A well balanced and designed Assault Rifle, favored by wealthier private military professionals who want to make a display.
+- Added: Kastak Arms Coda pistol
+A no frills, raw, heavy ballistic pistol that packs a heavy punch if it connects. What it lacks in fire rate and magazine size, it more than makes up for in range and power.
+- FPS weapons now have dry fire audio when out of ammunition.
+- Added color variants to many armors and undersuits.
+UI
+- Added several new ship UI icons for additional kinds of contacts.

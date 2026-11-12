@@ -1,0 +1,2 @@
+We've found that mult-threading the renderer has given a huge boost to the time of the 'Render Job' (e.g. from 30ms to 10ms or less in a complex scene)... however we've also seen that the 'Render Job' often isn't the bottleneck, so it's very context specific (scene + hardware) as to whether you'd see a large benefit or none at all.
+It remains the case that the 'main-thread' is nearly always the performance bottleneck (assuming you have a sensible GPU for the chosen resolution).

@@ -1,0 +1,50 @@
+Following last week's Alpha 3.14 Patch Watch on Initial Shield & Weapon Balancing, we’re following up with another insight into the ongoing balancing process.
+Please keep in mind that this is just the first step in wider combat balancing. The aim is to achieve a workable, archetypal class balance for our fighters that will serve as a solid foundation for further development in subsequent patches. After Alpha 3.14, each ship can be balanced according to its in-game and in-fiction role without disturbing the overall combat experience of the game.
+So let's jump into it:
+## Thrusters Tuning
+Design goals:
+- The maximum g-force acting on a pilot should roughly reflect what humans can endure
+- Avoid nose-to-nose ship combat, ‘PIP wiggling’, and movement scripts
+- Turn Afterburner into Boost (which should be used tactically and is managed by the Power Triangle)
+Outcome:
+We tuned each ship toward its intended role. This means tuning ships to fit within an expected performance envelope for the use cases they were designed for while having clear pros and cons. For simplicity, during this ongoing balancing process, we used basic fighter archetype classes:
+Light Fighters
+- Excel at 1v1 dogfights or swarm tactics
+- Low durability
+- Highest agility. Excel at lateral acceleration, high rotation rate
+- Boost affects mostly lateral acceleration
+Interceptors/Interdictors
+- Excel at forward acceleration
+- Low durability
+- Often carry specialized equipment
+- Highest forward acceleration, average agility
+- Boost affects mostly forward acceleration
+Medium Fighters
+- Excel at loadout flexibility due to more hardpoints and equipment choices
+- Average agility
+- Average durability
+- Boost affects all axes equally
+Heavy Fighters
+- Excel at prolonged combat. Multiple ship engagements
+- Only fighter class capable of equipping manned-turrets, Size 2 shields, and heavy weaponry
+- Poor agility
+- Boost affects all axes equally
+Boost (former afterburner)
+- Reworked to offer only brief advantages and discourage constant usage
+- The amount of boost available is dictated by the thruster capacitor charge (your HUD will show the current boost available when you engage it)
+- Heat is no longer the short-term limitation
+- Needs a minimum capacitor charge to engage and suffers from a regen delay after use
+- Engaging doesn't force an instant reaction from your ship - it needs to spool up for a short time before engaging
+- Also affects rotational acceleration (very useful on bigger ships)
+- The space brake does not automatically enable boost anymore (although you can change this within the options menu)
+## Ships
+Design goals:
+- Tune each ship towards the role that it should fulfill while feeling different enough from its competitors to promote varied combat
+- Prevent any one ship from being the best at everything as every benefit comes with a drawback
+Outcome:
+Most ships have been updated in terms of how much HP they have on the hull and some items. Certain elements (like wings) are sturdier and won't fall as easily. Ship parts that carry many items, such as the Vanguard’s engine nacelles, are now much sturdier.
+As we already mentioned in the last 3.14 Patch Watch about shields and weapons, manned-turrets have been significantly boosted. Therefore, we highly encourage you to crew ships together, test the manned-turrets' performance, and drop us your feedback. Keep in mind: It's dangerous to go alone! Take a gunner with you. :wink:
+## Power Triangle Update
+The team will be testing several behavioral differences that the various shield manufacturers, types, and quality levels can grant.
+In Star Citizen Alpha 3.14, shields have varying degrees of damage hardening bonuses that are automatically applied if the power triangle is directed towards the shields. On the other hand, if you tweak the power triangle towards weapons, you'll be rewarded with slightly higher weapon capacitor output, giving you more loaded energy weapon shots. Any assignment on thrusters will slightly reduce the cost of boost, allowing you to stay on speed longer. So, the more you adjust the power triangle into one direction, the greater the advantage will be.
+Following this implementation, the team will be looking at more options for behavioral differences to give you versatile energy management gameplay when interacting with ship components. Again, please test these changes out and let us know how they play.

@@ -1,0 +1,42 @@
+## Star Citizen Patch 3.10.2
+Alpha Patch 3.10.2 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.2-PTU.5883115.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Disabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- Persistence Only Testing
+IMPORTANT: We have turned off pledge copy so players will only start with an Aurora ES and a Greycat ROC. We have given all PTU accounts 15 million aUEC to purchase ships from in game shops to test a fix to ships persisting in LTP. (If you had a previous PTU account you will start with your old ships/aUEC/items. Please recopy to get a fresh one so that you get the aUEC for testing) Please spawn in a location that sells ships (Area18 or Lorville) and purchase as many ships as you can with this as we will be doing random database resets throughout this PTU cycle to test the persistence of these ships. We would also like players to test character resets after using the ships for a while to make sure they are not removed.
+- General gameplay, spread out among different areas
+Known Issues
+- Global chat is unavailable in the visor HUD
+- If the Player Unequips Armor/Weapons/Utilities and Saves Changes, whatever was Unequipped will no longer be available in the PMA until the PMA is re-opened
+- The Elevator panel on the Carrack may fail to work on spawn.
+- Private Arena Commander matches are temporarily disabled due to an issue with the updated group system
+- Player character can clip through the external doors of certain outpost buildings and Aid shelter buildings' airlocks when entering
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- Hammerhead atmo entry effects clipping through interior of the ship
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+- Shots from remote turrets may appear desyned but still connect with the target.
+## Bug Fixes
+- Ships purchased in the game should now be saved correctly to Long Term Persistence.
+- Ships should no longer spawn in a flight ready state when a player logs back into the ship's bed.
+- Fixed an issue that allowed players to sell 1 SCU of cargo indefinitely when it is placed in a ship that is within another ship.
+- IFCS should no longer lower ship velocity while using a HOTAS when a player uses interaction mode or opens their mobiGlas.
+- Derelict recovery missions that take place around MicroTech should no longer send the user to deliver the box to Area18.
+- Character eyes should no longer appear large in certain goggles in the universe.
+## Technical
+- Fixed 1 Client Crash.
+- Fixed 3 Server Crashes.
+- Fixed a memory leak.
+- Fixed a GPU memory usage issue.

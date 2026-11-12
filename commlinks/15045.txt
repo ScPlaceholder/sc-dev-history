@@ -1,0 +1,50 @@
+## Greetings Citizens,
+What has happened this past week in Star Citizen Alpha 2.0. development I hear you cry?
+Well we’ve still been tweaking, polishing, and refining any remaining pieces of content whilst the rest of team go to battle with the list of Blocker and Critical bugs so this week’s report will read a little more like a QA report! We are battening down the hatches and getting on with some good old fashioned bug smashing!
+The 2.0 release stream is in lockdown now and the Star Citizen Team are doing everything in their power to get this build ship-shape for you guys. Each developer has to be extra careful in testing their work and getting it peer reviewed with risk assessment for approval by Production before it’s allowed in to our precious stream. This is welcome news to Production because we’ve encountered some really frustrating bugs recently, that on top of our more persistent issues we could really have done without. Huge new technological systems like Large World, EVA and Multicrew Ships taking a little longer than expected is no big surprise, in fact it’s more or less expected! But what you don’t want (or at least do your best to reduce) is delays on the logistical side of managing the build process.
+One issue we had recently was with our exclusion system – Exludibur! – a system that we use to configure what is and is not in any given build (without an exclusion system, we’d be releasing hundreds of gigabytes of un-optimized, partially-completed game elements with each release!) So when some of the environmental geometry had not been listed for inclusion in the QA build from the 2.0 release stream, it was no surprise that when it got tested that it simply wasn’t there in the game! And what makes it worse is that when that happens, the code still tries to call the geometry that isn’t there, gets very upset, and crashes! We still managed to test our main Game Dev stream to progress with our work but it’s things like this that still take time in our Production and we need to focus to get it right.
+Another issue we might have been able to avoid was to do with a new Main Menu that we’re making for you. As you may or may not know, we have internal versions of the build called “Profile” that can sometimes produce slightly different test results when compared to a “Release” version of the game. Release is the best for the most authentic testing conditions but we sometimes need the Profile build for some debug options or to get around issues such as a black screen hang that was happing in one of our Release builds earlier in the week. The black screen was due to the introduction of a new main menu screen that wasn’t hooked up in that mode and therefore unable to test. The Profile build however was able to bypass the issue, so we could continue our work and test the rest of the content in the game. Again, it’s just another consideration in the Production that we have to make sure is checked off to get it ready for release.
+I’m sure you’re all wanting to hear a little more about the Main Menu now – right? So the call for the Main Menu was a decision made to improve your user experience by helping players get in to the game more quickly with the initial boot up and also when coming back out of any standalone gameplay such as a gamemode in the Arena Commander simulation. We are now allowing the player choose whatever they want to load with this new menu, and avoid having to wait for content that they’re not looking to access. You guys have been speaking up about this on the forums, so we’ve listened and are doing something about it! We hope you approve of it once it’s all implemented in 2.0 and I’m sure you’ll let us know if you don’t! Just please note that it’s a first iteration.
+In other UI related news, we have been putting the finishing touches on the ship screens which you will see in one of this week’s update videos which shows you the all new and improved Avenger, Cutlass, and Constellation. These are again a first iteration with lots more work left to do (ie. Adding the wireframe ship to the Avenger) and the “System Unavailable” messages should give you an indication of cool things still to come with this multi-layered system for managing your beloved spaceships.
+So that’s just about it for this week’s report. We really hope that we won’t need to write another, or many, of these reports because we are certainly “close” to the 2.0 release, it’s just really, really hard to predict just how close we are. It’s a tough fight in the 2.0 trenches but we have an incredibly talented and dedicated team that no amount of bugs can keep down for too long! So thank you for your patience, we will keep you posted but please know that it IS coming!
+Now here are the high level items broken down for you by the team…
+## Gameplay and Engineering
+- Looking at a Quantum Travel bug where two ships can come out of travel inside each other
+- Improved engineering screen FoV for multicrew ships
+- Continued work to improve the EVA experience
+- Improving weapon movement for FPS combat
+- Fixed up an issue where dying in FPS combat left the weapon floating in the air
+- Performance optimisation
+- General bug fixing
+## UI
+- Added support for notification of REC awards
+- Lots of bug fixing & polish:
+- Multicrew ship screens
+- mobiGlas Mission Manager
+- mobiGlas Journal
+- Added respawn countdown
+- Quantum Travel HUD
+- Visual skinning of transport elevator console panel
+- Mission Manager live updating, when you have it open
+•* More polish and bug fixing
+## Art
+- Final environmental polish and LODs
+- Final lighting changes to Crusader map
+- Final VFX polish on Ship damage, Crusader map and EMP
+- Finalizing LODs for Avenger
+- Optimisation for Retaliator
+## Animation
+- Further refining base character locomotion
+- Additional work on finalising stocked and pistol locomotion
+## Audio
+- Dialogue session has been completed so the mastering of these assets is now progressing
+- Working on improving the sound design for EVA
+- Continued improvements for ship fly-bys (see video update for more details)
+- General bug fixing
+## Blocking Issues
+- Probe for Quantum Travel marker isn’t working properly so the player can’t travel to a mission location
+- Missing space station geometry due to Excludibur (now resolved and verified fixed)
+- Missing geometry for Arc Corp elevator due to Excludibur
+- Server crash when spawning Multicrew ships
+- General server stability issues with 17+ players in-game; but vastly improved from just 2 players when playing two weeks ago!
+- Black screen hang on boot in Release (now resolved and verified fixed)

@@ -1,0 +1,58 @@
+Hello everyone,
+Patch Watch is back! This is where we spotlight upcoming features, improvements, and fixes that aren’t listed on the Public Roadmap: updates we think you’ll appreciate.
+Right now, Alpha 4.1 is in testing across all PTU waves. We’re in the final stretch, refining the last details, and your continued support means the world to us. Thank you!
+## Corsair Balancing
+In the Drake Corsair, when the co-pilot seat is empty, the pilot now has  full control over all six guns. However, we've fine-tuned the stats to  maintain balance while staying true to the ship's original intent.
+The nose guns have been standardized to Size 4, while the wing guns pack  a punch at Size 5. If a co-pilot hops in, they’ll take command of the  lower two nose guns, ensuring a dynamic multi-crew combat experience.
+## Improved Pilot Firepower
+Some ships now have their remote turrets linked to the pilot seat by default, allowing pilots to control them without additional crew. However, when the designated turret operators take their seats, they take full control from the pilot.
+Ships included in this initial pass are:
+- Anvil Valkyrie → Wing guns
+- Anvil Carrack → Top remote turret
+- Aegis Reclaimer → 2x front side remote turret
+- Argo RAFT → Remote turret
+- Crusader Hercules → Chin turret
+Notably, pilots can only fire these turrets within their forward view arc, as they don’t have access to the full remote turret view. A dedicated operator is required to utilize the turret’s full pitch and yaw range.
+## Valkyrie Expanded
+We've raised the height limit by one row on the Valkyrie's cargo grid, officially increasing its capacity to 90 SCU.
+## Combat Collision Improvements (Physics)
+Ship collision damage handling is now done using full collision data passed down by physics. This means mass and speed is now fully calculated in the collision and will make the damage between larger and smaller vehicles more realistic. So, your Anvil Arrow WILL no longer be able to run full speed into an RSI Polaris and provide it with a rapid unscheduled disassembly.
+## Radar Style Update
+We've improved the radar display for a smoother, more intuitive data reading experience in both combat and navigation.
+The background has been replaced and radar contacts have been slightly enlarged to make nearby vehicles easier to see in space - a small adjustment that should enhance the overall cockpit experience.
+## Arena Commander Additions
+Alpha 4.1 introduces two new maps:
+Astor’s Clearing - A Stanton settlement on microTech ported from the PU. While it didn’t quite fit other modes, we’re bringing it to Free Flight for exploration.
+Crossroads of Crime - The largest Arena Commander map ever! This map will be featured in multiple game modes:
+- Free Flight
+- Tank Royale
+- Team Elimination
+- Elimination (and all its variants, set on a low-orbit space station with low gravity!)
+- Single Weapon Elimination
+- Gun Rush
+- FPS Kill Confirmed
+Note that team-based modes in Alpha 4.1 now let you choose between Light, Medium, or Heavy armor instead of being locked into a preset.
+In the future, we’ll expand this to full in-game FPS loadout customization across all applicable modes. Also, the next featured weapon in Arena Commander Single Weapon Elimination will be the Pyro SMG!
+Bonus Lore about Crossroads of Crime:
+Discovered in SEY 2445, the United Nations of Earth was conflicted about what to do with the Nexus system. Since the only jump point at the time was through Cathcart, they tried to use the system as a dedicated military training system; but budget issues forced the government to sell exclusive mining rights to the system to the Hathor Group in a deal that ultimately inspired the sale of Stanton System centuries later.
+Hathor indiscriminately stripped the system of its resources then abandoned it. Over the decades, outlaws, squatters, and refugees began to move in as the system slipped into obscurity. It wasn’t until 2931, after Dean Kellar’s, infamous run that the UEE realized how dangerous and entrenched these criminals had become and decided to take it back.
+The year is now 2934. The UEE is still attempting to restore order by sweeping out the outlaws and squatters who have taken residence in the system. Experience the Crossroads of Crime how it was on the day that the UEE Advocacy tactical team battled against the Supreme gang in the battle for the Hathor Mining Facility on Nexus III.
+## AI Improvements
+NPCs previously had a habit of shooting at downed players, perhaps to ensure they were truly dead. We've refined their behavior so they now focus only on live targets only!
+Additionally, some NPCs didn't always react properly to player presence. You may have encountered situations where enemies exited their search behavior but failed to engage correctly, either firing at corpses or simply staring at the player without attacking. We've fixed one of the key issues behind this, where a mismatch in internal state caused NPCs to behave incorrectly. Be ready for more reactive NPCs in 4.1.0!
+## Mining Updates
+To better define mining gameplay and progression, we’ve split FPS and ground-vehicle mineables into separate categories. Previously, resources like aphorite, dolivine, and hadanite were shared between both mining methods. But now, each has its own exclusive minables with distinct difficulty ratings. This change ensures that mining with vehicles, like the Greycat ROC, offers a unique experience separate from FPS mining and allows for a clearer progression path from beginner to expert-tier resources. Additionally, we’ve introduced four dedicated Size 0 mining heads for the ROC, each offering specialized benefits, such as improved instability reduction, resistance reduction, optimized charge windows, and increased laser power. These are the Arbor, Hofstede, Klein, and Helix mining heads. The ROC DS also has a new modifier attached to it that gives a bonus to the optimal charge rate for all mining lasers attached.
+Recent adjustments based on your feedback include doubling the power of ground-vehicle mining lasers, halving the charge time required to break rocks and making FPS mineables harder to extract with vehicle lasers to reinforce the intended gameplay balance. These changes aim to introduce core mining mechanics, like resistance and instability gradually, to allow miners to develop their skills before taking on more complex challenges. More advanced mineables will be introduced over time, with some already in-game, such as janalite... you’ll see just how demanding expert mining can be! We have also slightly increased the laser power of the Multi-Tool.
+Updated Adjustments to Ground Vehicle Mineables
+- Beradon (easy beginner mineable)
+- Glacosite (medium beginner mineables)
+- Feynmaline (hard beginner mineable)
+- REDACTED (medium expert mineable)
+Updated adjustments to FPS Hand Mineables
+- Aphorite (easy beginner mineable)
+- Dolivine (medium beginner mineables)
+- Hadanite (hard beginner mineable)
+- Janalite (medium expert mineable)
+- REDACTED (medium professional mineable)
+- REDACTED (medium professional mineable)
+- REDACTED (medium expert mineable)

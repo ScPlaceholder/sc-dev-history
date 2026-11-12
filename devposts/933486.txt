@@ -1,0 +1,34 @@
+## Star Citizen Patch 3.0.1
+Alpha Patch 3.0.1 has been released to the PTU, and is now available to test!  Patch should now show: PTU-706028
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+NOTE: To avoid needing a full game download, the "C:\Program Files\Roberts Space Industries\StarCitizen" folder can be copied and renamed "C:\Program Files\Roberts Space Industries\StarCitizenPTU" prior to updating.
+You will need to return to the RSI PTU Launcher for this build to work: https://install.robertsspaceindustries.com/star-citizen/RSI-Setup-1.0.0-ptu.33.exe.  For those of you who have forgotten or lost your PTU password, you will need to run account recovery here: https://ptu.cloudimperiumgames.com/account/settings.
+Major Known Issues:
+- Account copy is currently broken, if you already copied your account to PTU during the 3.0.0 PTU cycle your copy is still valid.  If you did not copy your account during 3.0.0 PTU, we will be unable to grant access until the issue is resolved.
+- DO NOT USE THE VEHICLE MANAGER APP(VMA) Doing so will leave potentially resource expensive, small ship models behind.
+## New Features
+General
+- Added monocle to PMA and added eye accessory slot as option in PMA.
+## Feature Updates
+Ships and Vehicles
+- AI now have specific shield generators that provide half the shield health/shield regen.
+- For all ships, shield HP reduced, regen lowered, regen ramp up time increased.  Shields now allow more physical damage through the less health they have.
+- For all ships, armor reduced to 1.00 for physical and 0.90 for energy for all ships.
+- Missile damage and explosive radius reduced.
+Bug Fixes
+- Players should no longer be sorted into races that have already started, causing an error code.
+- Speculative fix for ships missing items.
+- Reputation should now persist between player sessions.
+- Fix for ship EMP weapons charging much faster than intended.
+- Fix for certain weapon families starting at max spread and recovering significantly slower than expected.
+- When trying on/inspecting clothes your face should no longer be illuminated by helmet lights that aren't there.
+- Fix for ships duplicating if changes were made to the pledge while an insurance claim was being made.
+- Admin NPCs should now accept boxes and allow players to complete related missions.
+- Boxes placed on admin counters should no longer fall through to the floor.
+- REC rented items should no longer invalidate prior rentals and rentals with time remaining from the prior patch should now be available.
+- Carryable crates dropped from vehicle destruction in excess of SCU crates in Cargo Grids will now spawn on positions of Cargo Grids instead of near world origin.
+- Players should no longer be able to break their character and be stuck spawning as a white sphere.
+Technical
+- Various crash fixes.
+Known bugs, issues, and work arounds (W/A):
+- When using the Mobiglas there is a chance to cause a graphical glitch that will remain for the duration of the session.  W/A: Relaunching into crusader should fix it.

@@ -1,0 +1,48 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9266874.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 1
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+Not Ready for Testing/Feedback
+- Dynamic Event: Blockade Runner
+## Known Issues
+- PU - UI - Item Bank / Storage Access - Search - The search bar button in the Item Bank terminal does not function when selected
+- PU - Stanton - Orison - Locations / Shopping - Physical Shopping - Quick buying items on display at the Orison Vision Center ends in transaction error about invalid Player Inventory
+- PU - Missions / UI / Reputation - Affinity appears to decrease after successful mission (UI Issue and reputation is still increasing) - 100% Repro
+- PU - UI - Kiosks / Terminals - Global Chat - Pressing Enter when interacting with any terminal opens the Global Chat causing player to lose game interaction - 100% Repro
+- PU - Stanton - Missions - mobiGlas - Contract Manager - Retrieval Op Mission - The Retrieval Op mission will auto abandon shortly after accepting the contract - 66% Repro
+- PU - Stanton - GrimHEX - Locations - Transit - Hangar Elevators - Hangar Instance elevators can be called and arrive at the current floor but the doors do not open - 100% Repro
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (High Chance)
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP Terminals fade to black when accessed after delivering a vehicle
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+- AC - All Modes - INS Jericho - Crash - Game crashes after launching any mode using the INS Jericho map
+## Bug Fixes
+- Fixed - PU - Stanton - Locations / Vehicles / ATC - Ground Vehicles do not spawn at the allocated garage location (STARC-119187)
+- Fixed - PU - Stanton - Missions - mobiGlas - Contract Manager - Retrieval Op Mission - The Retrieval Op mission will auto abandon shortly after accepting the contract (STARC-112154)
+- Fixed - PU - Stanton - ASOP / Fleet Manager / UI / Personal Hangars - When another player is on the pad in a hangar instanced on top of yours, you can't deliver or retrieve a ship and it reverts you back to the ASOP list
+- Fixed - Option Menu - The toggle for "Interaction prompt: Display input icon" will revert back to "yes" upon game restart (STARC-115125)
+- Fixed - Multivehicle - PU - Vehicles - When docking or retrieving a ship to a docking port at a station, the docking arm will not extend (STARC-86292)
+- Fixed - Stanton - Locations - Freight Elevator - Players are able to stop the freight kiosk from working by leaving objects by the door
+## Technical
+- Fixed 2 Client Crashes

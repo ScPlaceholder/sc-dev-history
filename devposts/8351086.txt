@@ -1,0 +1,3 @@
+Yes it‘s fully deterministic, because the server and client don’t share any information about the planet generation at runtime but need to perfectly match. We’ve had nasty bugs in the past where the precision of certain operations on Linux were slightly different leading to different results, which then means you can smash into an invisible rock (server says you hit it, but client didn’t spawn it).
+Cheers
+Ali Brown

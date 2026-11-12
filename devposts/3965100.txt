@@ -1,0 +1,38 @@
+## Star Citizen Patch 3.13.0a
+Alpha Patch 3.13.0a has been released onto the LIVE environment! Patch should now show: VERSION 3.13.0-LIVE.7334707.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled (This release will come with a Reputation wipe to support the new Reputation manager)
+Starting aUEC: 20,000
+Known Issues
+- Bed logout may cause an infinite loading screen when rejoining the PU (Character Reset may be required to fix)
+- Abnormaly long delay between pick up storing of fps mineables/harvestables/items
+- Client may crash when loading a second player into a server in Arena Commander
+- Cannot refuel or rearm at New Babbage, services claim to be unavailable
+- Players may not be able to quantum jump with another player in bridge with you
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Constellation can despawn when flying 30km away after undocking
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Wallace Klim can spawn away from his table, facing the wrong way and floating
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+- The eclipse spawns with cockpit canopy ladder open with ladder and cover enter / exit animations broken
+- Chat HUD is partially off screen when using ultrawide resolutions
+## New Features
+Gameplay
+- Hull Visual Degradation
+Introducing visual wear-and-tear to player ships as they age and degrade. Ships will subtly change depending on how long they have existed in the ‘verse until the ship is repaired using Vehicle Maintenance Services or remade with an insurance claim. With the initial release most ships will have this but the following ships are currently not enabled: Anvil hawk, MISC Reliant, KRUG Archemides, Drake Dragonfly, Origin 600i, Anvil Gladitor, Vanduul Scythe, Drake Caterpillar, Anvil Valkyrie, Aopoa Khart-ul al (Scout), RSI Ursa Rover, Consolidated Outland Mustang variants, and Anvil Terrapin.
+- Vehicle Names and Serial Numbers
+Adding the ability for players to display custom-assigned names on the hulls of certain ships. Additionally, to help with identification, all ships will display unique serial numbers (with some ships displaying specially designated serial numbers).
+- Ship to Ship Docking v1
+Adding the ability for the Merlin snub ship to dock and undock within the Constellation, along with guidance mode UI to ensure correct alignment during the docking process. Players will be able to use the autoland system and manual flight to dock. To take off from the Constellation, press the landing gear keybind (default N). To start the docking process, target the Constellation then hit the landing gear keybind (default N) to initiate the docking UI. You can do the same to dock with another player's Constellation but you will need to request permission to dock and have that player approve it after initiating the docking UI with their ship.
+- Reputation - UI Implementation
+This feature adds the addition of a new mobiGlas app, named "Delphi," that will give players insight into their reputation with the important NPCs and organizations they have interacted with. This will also include a total list of reputation ranks, including those that have been completed and the ones they’re actively working on.
+- Object Push & Pull
+Mechanic allowing players to grab some larger objects and move them around an environment by either pushing or pulling them. The initial implementation will have usable trolleys that players can find in the universe at space station cargo decks, landing zone hangars, and underground facilities.
+- Mounted Gun Aiming T0
+Further expanding the player's arsenal by allowing them to take control of a mounted gun on either a vehicle or the ground. These weapons will offer greater firepower and stability at the cost of mobility. With the initial implementation, players can find these scattered around junksites and underground facilities.
+Ships and Vehicles
+- Added New Vehicle: TUMBRIL Cyclone-MT
+- Added New Vehicle: Greycat ROC - DS (Dual Seat)

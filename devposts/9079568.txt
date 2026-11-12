@@ -1,0 +1,39 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12442953
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (reputation speed increase for PTU testing)
+- Wikelo Inventory Updates
+Known Issues
+- PU - Scanning - Scan radar ping on surface of planet causes large frame drop
+- PU - Battaglia - Story 2 - Missions / mobiGlas - "Emergency: Blinding Hope in Trouble" / Story 2 does not populate the mobiGlas (still has a possible cause)
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Bug Fixes & Technical
+- Fixed 1 Client Crash
+- Streaming instancing performance updates for load balancing
+- Potential Fix: Battaglia Story Mission 3 blueprints awarded as rewards unable to be crafted due to material assignments missing
+- Potential Fix: Battaglia Story Mission 3 "Talk to Battaglia" objective not updating correctly if the player abandoned then re-accepted the mission while already inside the instance, leaving the marker pointing at Levski with no way to progress
+- Potential Fix: Nyx Dungeon (RCD) mission not progressing after activating the Power Core, blocking mission completion
+- Potential Fix: Players getting stuck at an infinite standby gate in the Siege of Orison dogleg when joining a party that already had an active instance, caused by the instance Broker not being streamed in on the correct DGS before the loading barrier lowered
+- Potential Fix: Armistice zone missing from the Battaglia Employment Center and dogleg at Levski
+- Potential Fix: Preliminary bounty intro missions spawning no target AI
+- Potential Fix: Hull-C automated cargo loading not initiating when stationary inside a loading zone
+- Potential Fix: Ship power allocation unable to be increased via the engineering MFD even when power pips were available
+- Potential Fix: Hauling missions with multiple pickup locations placing all cargo in a single location inventory despite showing separate pickup markers
+- Potential Fix: Kopions being attacked in a Contested Zone turning the entire station security hostile toward the player
+- Potential Fix: Ships retrieved via ASOP while in a quantum travel state flying into the hangar door when the elevator animation completed
+- Potential Fix: Orison Relief Support "Delivery Pilot" contract showing placeholder text in the mission details description
+- Potential Fix: Siege of Orison intro mission remaining available to accept in the mobiGlas after the player had already arrived at the Arrival Center
+- Potential Fix: Ballistic Gatling S5 weapon incorrectly trying to apply vehicle tint, causing a visual error on the weapon model
+- Potential Fix: Prison keypad default generated access code not working, blocking escape missions

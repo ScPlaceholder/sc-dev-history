@@ -1,0 +1,57 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9271280.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 1
+Server Info: PTU Channel - US/EU
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+Not Ready for Testing/Feedback
+- Dynamic Event: Blockade Runner
+## Known Issues
+- PU - Stanton - Orison - Locations / Shopping - Physical Shopping - Quick buying items on display at the Orison Vision Center ends in transaction error about invalid Player Inventory
+- PU - Missions / UI / Reputation - Affinity appears to decrease after successful mission (UI Issue and reputation is still increasing) - 100% Repro
+- PU - UI - Kiosks / Terminals - Global Chat - Pressing Enter when interacting with any terminal opens the Global Chat causing player to lose game interaction - 100% Repro
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (High Chance)
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Features & Gameplay
+Gameplay
+- Added slight boundary violation grace time to Planet Kill Volumes for vehicles. (This may help with many random deaths while flying close to planet surfaces and water)
+Ships and Vehicles
+- Made Hornet and Arrow Aerodynamic adjustments to avoid unintended behaviors while Yawing in atmosphere
+## Bug Fixes
+- Fixed - PU - Stanton - Audio / Locations - While in your personal hangar, you can hear the sound from other players' hangars (STARC-118500)
+- Fixed - PU - Area18 - Hangars - Locations / Ships - Ships can spawn at the bottom of the ship elevator without being raised up preventing access (STARC-120015)
+- Fixed - PU - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals for ground vehicles at Lorville gates get stuck on infinite load, accessing list of ships (STARC-108960)
+- Fixed - Multivehicle - PU - Vehicles - When docking or retrieving a ship to a docking port at a station, the docking arm will not extend (STARC-86292)
+- Fixed - PU - Game options - ESP curvature tuning does not save between play sessions (STARC-119986)
+- Fixed - PU - Stanton - Cargo Hauling - Mission Content / Game Code - Cargo crates can be counted towards multiple objectives (STARC-120999)
+- Fixed - PU - Stanton - GrimHEX - Locations - Transit - Hangar Elevators - Hangar Instance elevators can be called and arrive at the current floor but the doors do not open
+- Fixed - Stanton - Shopping / Selling - Commodities - Unable to purchase or sell commodities from the kiosk through auto-loading
+- Fixed - PU - Multivehicle - Hurston/MicroTech - Bed Logout - Using ship's Bed Logout while beside a distribution center will teleport the ship to the center of Stanton
+- Fixed - PU - Stanton - Multiple Location - VMS / UI / CryAstro Services - Players are unable to use any vehicle services when landed at GrimHex
+- Fixed audio notification message when leaving a ship so it no longer says player was "Kicked from the Channel"
+## Technical
+- Fixed 1 Client Crash
+- Fixed 6 Server Crashes
+- Fixed 1 Hybrid Crash
+- Fixed 1 Backend Service Crash
+- Fixed an issue causing excessive network spam while salvaging

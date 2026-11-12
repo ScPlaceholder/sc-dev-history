@@ -1,0 +1,68 @@
+## Feature Updates
+Characters
+- Player Hair Update
+Updating the Star Citizen character customizer with 20 hairstyles from Squadron 42 using our latest hair tech. This includes the addition of new, longer hairstyles along with updates and changes to existing short hairstyles.
+Locations
+- Updated MicroTech Locations With Denser Forests
+- Increased Crusader Planet Comm Array Range to Encompass All of the Planet
+Gameplay
+- Procedural Weapon Recoil and FPS Combat Balance
+Introduction of Procedural Weapon Aim Recoil to FPS combat. With this update we have overhauled the recoil of the majority of the weapons to use the new and improved procedural recoil tool shown at CitizenCon, this will improve the diversity of the weapon sandbox allowing each weapon to fulfil a more specific and niche role whilst allowing for more intense visual recoil.
+Overall you will find greater weapon variety in how weapons play and feel with tweaks such as weapons now having consistent recoil patterns and the removal of ADS spread.
+- Full Weapon Reworks: The Arclight Pistol has had a full rework and is now a burst pistol with an alt fire mode of single fire. The LH86 Pistol is now fully automatic.
+- Fire Rate Changes:  Demenco, S71, and P4AR have all been reworked to increase their fire rates. Lumin V burst delay has been decreased.
+- Force Reaction Updates: Forces have been tweaked across a range of weapons to make knockdowns only occur in situations where that would 'feel' that should occur. This should appear as an overall reduction in staggers & knockdowns.
+- Other changes include balances to sniper rifles to avoid players in heavy armor being 1 shot when hit by a sniper rifle while still allowing this to happen to players wearing medium armor.
+Along with weapon balance changes we have adjusted player health, damage modifiers, and medical to increase time to kill (TTK).
+- Damage modifiers have been adjusted to allow for more consistent fire fights & times.  Removed increased stamina costs on limb HP pools being low. Removed movement speed penalty on limb HP pools being low. Medical Pens will now fully heal players.
+This is overall the first pass major pass towards a new TTK goal, the FPS team is eager to hear feedback about how you feel about the current values!
+- Tractor/Towing UI Updates
+Made several UI positional changes to help increase readability. Several updates include: Deflection flipped in SRV cockpit, range bar ease factor, target name above status, force bar fixes and includes centering force, throttle/gimbal widgets hidden in turrets, towing UI scale-up, turret orientation feedback more marked, radar plane more perspective, range bar readability improvements
+- Ship Mining Balance Pass
+Adjustment to scaling for ship mineable nodes to adjust mining to trend slightly closer to Prospector difficulties.
+- Added New Vehicles to PU Shops: MIRAI Furys, and MISC Hull C
+- Armor Shop Prices Have All Been Increased Across the Board. (Excluding Flight Suits and Undersuits)
+Ships and Vehicles
+- Shield Components Have Been Removed from Most Bikes
+- Gravlev Vehicles are Now Considered Ground Vehicles When Spawning at ASOP Terminals
+- Adjusted Spring Stiffness for Hover Bikes
+Weapons and Items
+- Updated Behring FS-9 Ballistic LMG to an ammo count of 75
+- Updated the R97 Shotgun to an ammo count of 18
+- Reduced Damage and Speed of the Ksar Ballistic Sniper Rifle Projectile
+- Reduced LH86 Pistol Damage
+Core Tech
+- Front-End Style Update
+Updated menu title text, colors, and logos. Updated Button Styles and button state changes (idle/over/down/disabled), added messaging and UI info for Friends / Party / notification lists. Updated secondary title type size (ex: Primary Residence and Current Location titles). Updated frontend tooltips explaining why a server can't be changed to include crash recovery as well as combat logging.
+- AI On Foot Performance Optimizations
+## Bug Fixes
+- Fixed an IFCS issue causing ESP to not dampen input correct
+- Fixed an issue causing many AI in UGF locations to fall through the floor and stairs
+- Fixed an issue causing AI enemies to be slow to respond to player location and actions
+- Fixed an issue causing entities such as cargo boxes to slide on all ship lifts during animation
+- Fixed an issue causing a larger than intended increase of entity count when loading into Orison
+- Fixed an issue causing enemy ships to not spawn in unless the player is within 12 km of them (Should be more than 20+ KM now)
+- Fixed an issue causing vehicles to stream out at much shorter distances than intended
+- Player ships should no longer disappear and strand players in space randomly when Quantum Travelling
+- Fixed visarea and lighting issues on freelancer cockpit and rear ramp
+- Undersuits should no longer have a chance to be permanently lost when you equip a helmet
+- Put in further fixes to help resolve wheeled ground vehicles continuously vibrating when stationary in atmo
+- Fixed an issue that was causing player health damage to not correctly apply to the actor status UI on client-side
+- Fixed many locations having "Replace Me Balls" around forest biomes on MicroTech
+- Fixed Structural Salvage AR progression animation in client not playing correctly
+- Fixed an issue causing players to occasionally phase out of their streaming radius, causing the area to unstream and stream back in with collision issues
+- Tumbril Storm AA missile loadout can now be changed in VMA for the Storm
+- Fixed Structural Salvage AR progression animation in client
+- Both NPCs of New Deal Ship Shop should no longer share identical voiceset dialogue
+- The gurneys in the elevator shaft of the medical drop off locations should no longer be missing
+- The Greycat STV passenger seat should now have correct interaction
+- Players should now be able to press [W] to leave the seats inside a transit shuttles
+- Lorville tram tunnels should no longer appear solid black after the tram leaves
+- Fixed an issue causing the Argo SRV to sometimes not be be able to re-engage the tow beam on a ground vehicle
+- The Vulture's cockpit glass should no longer be obscured with lights when any non-default tint is applied
+- The entire "asphalt" surface at ground level in Area18 should no longer be missing collision
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed a Service Crash
+- Fixed a Client Deadlock

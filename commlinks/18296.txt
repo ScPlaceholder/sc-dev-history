@@ -1,0 +1,112 @@
+## Welcome to August’s PU Report! With all Alpha 3.14 tasks closed out, most teams focused their sights on content for Alpha 3.15 and beyond. Read on for the details of everything worked on throughout the month, including jump points, dynamic events, AI behaviors, and several top-secret vehicles.
+## AI (Content)
+Throughout August, AI Content supported Level Design by creating a new ‘worker’ behavior. This enables the designers to apply traits to the various AI archetypes, refining which usables they use, such as sitting, leaning, inspecting, and cooking.
+The team modified various usables to utilize the first reaction system, which allows NPCs to break out of usables during animations. For example, if an NPC is typing at a console and hears a gunshot or sees an enemy, they will stop typing and react appropriately. This was completed for the standing and sitting console, leans, seats, stairs, railings, search spots, attack spots, and more. They’re currently working with the Engine and Animation teams to improve the visuals.
+Pre-vis began on two new products for a future delivery: the dealer behavior and Pyro location usables.
+The dealer is a mobile vendor that players can buy from and sell to. This NPC stores one-handed items on their person, though if a player wants a two-handed item, they’re guided to the dealer’s “shop” nearby. The TrackView pre-vis went through its second iteration, with the team currently building consensus with all the different design teams.
+AI Content identifying several usables to help sell Pyro’s theme of sickness, greed, and poverty. The second pre-vis pass was completed, which will be presented to the directors before the new usables begin production.
+The team also continued to develop the hospital respawn experience for Alpha 3.15 and the subsequent vendor rollout to various locations around Stanton.
+## AI (Features)
+AI Features continued to work on combat scenarios. Throughout August, they improved visual perception by adjusting the field-of-view form and exposing more information for the designers to tweak. The aim of this is to create a stealth combat mechanism from the player’s perspective, which requires adjustable perception timings and field of view.
+New functionality was also added to the tactical point system. This enables it to compute path distances when selecting viable relocation points or cover locations during combat, rather than just direct distance. NPCs were also set up to use missile turrets.
+## AI (Tech)
+AI Tech improved the pathfinder system to work with planetary navigation mesh tiles, enabling them to place NPCs on planets and move them from one location to another. They also started the work for generating planet navigation mesh automatically based on a player’s proximity.
+One feature delivered this month allows the player to lead a formation of AI ships. This was initially requested for Squadron 42 but should be available in the PU in the future.
+Improvements were also made to the collision avoidance system, including physics optimizations for obstacle queries and a small restructure of related data.
+Significant effort was also directed at improving AI design paths and how NPCs follow them. As the design paths can be quite complex with multiple branches, they were updated to allow NPCs to follow them from any starting place.
+Work also continued on the Subsumption editor, this time completing the multi-graph view.
+## Animation
+The Animation team spent part of August focusing on vendors for illegal goods, food, drink, and other items, which involved creating animation pre-vis videos showing how the assets should be used in Pyro. These videos will also enable the team to better communicate with Design how to combine assets for different useable into other useables to extend asset use and give more variety. This work will be used to improve the existing bartenders too.
+The team progressed with the overall medical behavior, including patron pre-vis videos, hospital healing functionality, and related useables. They’re also working on drunk locomotion for status changes (in both weapon and no weapon stances), with the first drop containing functional assets.
+The cowering and surrender behaviors mentioned in previous reports progressed throughout the month, while additional seated idling animations were added to make characters feel more alive.
+A motion capture (mo-cap) shoot was arranged to cover blockouts for the hygiene cubicle, hacking, navigation, arcade machines, unwell seating, additional vendor animations, and locomotion R&D. The Marketing team were supported on an upcoming video too.
+On the facial side, progress was made on vendor lines and chowline animations.
+## Art (Characters)
+Last month, Character Art completed a large batch of new assets for Alpha 3.15, including a heat-resistant heavy armor that will replace the Caldera Pembroke suit.
+The team also finalized several new backpacks, including three based on the Clark Defense Systems brand and one on Doomsday. They also reworked existing backpacks previously attached to armor cores to make them individual, modular items. From Alpha 3.15 onwards, each new armor will come with a backpack in the same style.
+## Art (Ships)
+In the UK, the yet-to-be-announced ship originally mentioned earlier in the year was completed, with the team’s final task of creating additional paints currently underway.
+The Redeemer is approaching final-art complete, with the team finalizing the interactive buttons in the cockpit, remote turret bays, component room, and making the final polish of the lower deck.
+Work also commenced on the MISC Hull A, which is close to being whitebox complete. Its larger sibling, the Hull C, is currently being brought up to ‘gold standard.’ August’s focus was on the exterior, with the team switching out materials to the newer shader and making sure it’s ready for the current paint system.
+Two unannounced vehicles continued to progress through the pipeline. One recently completed its greybox review and is approaching final art, while the other is awaiting its greybox review though is close to having a finalized exterior.
+Refueling work was also done on the MISC Starfarer. The refueling arm mentioned last month is now complete, with focus turning to the tractor beam assembly at the rear that forms part of the refining feature.
+The Crusader A2 Hercules passed its final art review too.
+In the US, the Crusader Ares moved through the final art phase, with the cockpit, enter/exit system, component housings, landing gear, and thrusters receiving polish.
+The cockpit, habitation area, ladder passage, and cargo hold are all nearing greybox complete for the Drake Vulture.
+An all-new vehicle is almost greybox-complete, while art for the variant mentioned last month was finished.
+## Audio
+The SFX and Dialogue teams revisited Orison in August, this time adding ambiances and spot effects to three areas. New voiceovers and music were implemented to fill out the audio experience too.
+Ambiances and spot effects were completed for the Grim HEX hospital and incidental voiceovers were recorded to inform players how painful treatments can be.
+Mechanism and explosion effects were also added to the ‘Mother Of All Bombs’.
+Tech Sound Design helped implement the hacking system for the SFX team, adding sounds alongside the usual team support.
+Finally, prep for CitizenCon 2951 continued. Audio Code collated assets ready to show off their new tech, while SFX supported the Locations teams with level ambiance sounds that will be demoed during the event.
+## Community
+The Community team supported the Star Citizen Alpha 3.14 launch with three engaging contests:
+Players that wanted to invite a friend to the ‘verse and claim a unique referral bonus could participate in the ‘Wish You Were Here’ Greeting Card Contest by creating a greeting card of Orison.
+The Finding Finley Screenshot Contest starred Crusader’s stormwals, Francis and Finley, while the Constellation Coloring Contest encouraged community creativity focused on RSI’s famous tourer.
+Newcomers to the Star Citizen were supported with an updated New Players Comm-Link, and players were briefed about the updated XenoThreat dynamic event.
+The team also kicked off Ship Showdown 2951, the annual head-to-head battle to determine the community’s favorite in-game vehicle.
+## Engine
+In August, the Physics team progressed with physical quantum travel. In their development stream, they now have a proper quantum grid (per solar system) and a quantum-obstacle component that registers an analytical representation of an obstacle. Some to-be-sorted issues aside, they can now make the equivalent of a blind quantum jump and drop out before hitting a moon along the travel path.
+They also continued to improve performance. Among other things, the destruction of static physical entities now runs time-sliced, while querying and processing parts of a physical entity during collision detection was improved. The physics system code cleanup continued too. For example, the physical world’s time-step function now makes individual phases of the time step clearer.
+The transition to the Gen12 renderer progressed throughout August. Shader activation was made thread-safe and no longer requires explicit synchronization via locks, volumetric fog volumes now run natively in Gen12, and the team refactored the use of several reflected shader parameters throughout render code and shaders. Tint support was added as well as scattering query support for forward-shaded objects, and several pieces of legacy code across the renderer code base were cleaned up.
+Regarding atmosphere and volumetric clouds, time was spent reworking the reprojection and filter chain to ultimately allow raymarching at lower resolutions for improved GPU performance. Improvements were made to the placement of samples for raymarching. This involved reprojecting results from previous frames, filtering and denoising cloud depth, and up-sampling inscatter and transmittance results to full resolution for various problematic view scenarios. These scenarios include orbital views, scenes with high depth complexity, and any scene with strong camera movement. This is all still work in progress, though the team hopes to roll it out shortly.
+Work was submitted to improve cloud shading by better blending between forward and backward scattering inside them, which is important for rendering the silver lining. Moreover, improvements were made to the look of cloud edges to give them a more volumetric feel. The stepping code for local cloud shadow details was reworked to allow more details for the same performance cost.
+On the core-engine side, time was spent optimizing the low-level system. For example, various improvements were made to CigFunction, which serves as a vehicle to capture and pass C++ lambdas (in this particular case code and data for deferred asynchronous execution as a job). The next focus was optimizing the entity unloading stalls plaguing the PU. As a result, several entity-unload bottlenecks were rectified. Furthermore, the management of component events was optimized and code to create and destroy them improved.
+Work was also done to deliver multiple optimizations in the spatial culling system, which will be used for server meshing. Lastly, the entity component update scheduler was changed to allow more than one update per component pass to enable the more flexible use of components.
+## Features (Characters & Weapons)
+In August, the Features team focused on bug fixing and polishing for the new player inventory and actor status features.
+“Some of the more amusing bugs included looting a dead player and finding their ship, and all its vehicle weapons, in their inventory, and lowering a gurney to put an injured player on it but at the end of the animation it starts bouncing around killing everyone.” -The Features Team
+On the technical side, the team began work to separate the complex animations required for humanoid and creature skeletons from the more mechanical skeletons. The latter, of which there are normally significantly more of in a scene, will benefit from a much more streamlined animation update flow. This also allows the animation system’s update rules to be better tailored to each skeleton type. As well as improving update time, this should see a reduction in memory usage in heavily populated areas.
+## Features (Gameplay)
+The US Gameplay Feature team progressed with the NikNax work mentioned in last month’s report. The app is now ‘feature complete’ and in the polishing phase of production, while the look and feel are currently being finalized.
+They also continued to develop dynamic events.
+“We began working on Jumptown 2.0, the next dynamic event, where outposts become hyper-lucrative, tempting players to fight to control the area and gather as much profit as possible. More information on that coming very soon.” -The Gameplay Feature Team
+They also continued to work on TDDs for the cargo refactor, the character archetype editor, and the new shopping and selling initiative, all of which should be at the review stage soon.
+## Features (Vehicles)
+Last month, the Vehicle Feature team ramped up the development of jump points, creating the gameplay and development tools required to deliver the feature and make it easier to work with for other teams.
+In addition, the team progressed with a number of internal debug tools to monitor IFCS and more easily inspect things like missiles, which will improve future workflow. They also supported the PU Feature team with refueling, continued to work on HUD improvements, and supported Vehicle Experience with bombing-related UIs for Alpha 3.15.
+Vehicle Experience focused on finishing the development of the bombing feature, which entered the review stages. They also worked to balance upcoming ships for Alpha 3.15 and beyond and wrapped up final issues with the current patch release.
+## Graphics & VFX Programming
+Last month, the Graphics team progressed with the render-to-texture system, which is receiving a mini-overhaul to cope with some new UI systems that make extensive use of 3D icons and compositing, such as the personal inventory.
+They enabled dynamically rendered textures to be cached to allow them to generate a large number of high-quality, super-sampled images with minimal cost. They also dynamically reduced texture resolution in out-of-focus areas (e.g. when using the mobiGlas) to reallocate more resources to the rest of the game.
+For Gen12, the shadow and real-time-probe systems were converted and will soon be activated by default in the main branch. Streaming of real-time probes was also completed and enabled, which solves memory issues in scenes with numerous probes, such as Orison.
+Alpha 3.15 will mark the first release that utilizes extensive auto testing for VFX tech, so the Programming team spent time resolving bugs to achieve a solid baseline. This also improved the overall quality of particle effects.
+Alongside this, they began adding support for refraction into the GPU particle system, matching the functionality of the CPU particle system and surpassing its visual quality. This marks the end of a long-standing goal to implement counterparts of all legacy mesh and sprite functionality in the new CPU particle system.
+The VFX Programming team also continued with the fire hazard system. It now utilizes the new compressed physics render-mesh, which obtains accurate surface data without relying on lower-resolution and lower-accuracy physics proxy meshes. The way fire spreads through doorways was improved too.
+## Lighting
+The Lighting team primarily focused on upcoming content for Alpha 3.15 and future deliverables for Pyro.
+Passes were completed on locations within Orison, including the Crusader Showroom, Cousin Crow’s Custom Craft, and Providence Surplus. Lighting work was completed for the space clinics and hospital in Grim HEX, and progress continued on the medical areas in Area18 and Lorville. The team also tackled some smaller backlog items, such as further Orison optimization and general bug fixing.
+Lighting also assisted Planet Content, making a pass on the atmospheric and color-grading settings for Pyro’s planets and moons, helping to make each feel unique and interesting.
+## Narrative
+The Narrative team focused on Alpha 3.15 throughout August, working with Design on contract text for new missions and expanding the organizations and gameplay scopes represented in the Delphi mobiGlas app. Medical gameplay and the new hospital and clinic locations were also worked on, with the team making passes on all related UI and branding. New dialogue was recorded to help populate the clinics and new Orison locations.
+Beyond Alpha 3.15, the team worked on content for IAE 2951 and upcoming dynamic events. Additionally, they recorded mission audio for the various security forces in Stanton that will add further depth to future content.
+Preliminary work began on a new mission type, with the team working closely with Design to begin prototyping dialogue to support the gameplay. The development of narrative content continued for Pyro, further defining what players can expect to encounter in the new system.
+New lore was also released, including a Congress Now debating the appointment of a Xi’an ambassador, along with The Shakedown, a serialized fiction story set on ArcCorp. A new selection of Galactapedia articles was added too.
+## Player Relations
+‘Player Relations Live QA’ launched this month. This new team will concentrate on the live experience, including reproducing and triaging player-reported bugs on the Issue Council. They also began early Alpha 3.15 work, focusing on the player experience before it hits Evocati.
+The Player Relations team also expanded in the UK and DE to support the ever-growing player base, patch releases, and upcoming events.
+## QA
+QA’s primary publishing focus was on Alpha 3.14, testing XenoThreat and Ninetails Lockdown. Mid-month, they were publishing every day to the PTU, testing stability, verifying fixes, and gathering details of issues not reproducible internally.
+Development-wise, the team undertook familiarity testing with some of the new features and systems planned for Alpha 3.15.
+Scheduling was also completed in preparation for upcoming testing, and plans were drawn up ahead of feature testing.
+## Systemic Services & Tools
+In August, Systemic Services & Tools continued their work on Quantum (the economy and AI simulation), making improvements to the tools that allow the designers to adjust these various systems.
+The team also worked on edge cases for the backend services, adding stability to the service HUB and variable filter services.
+August saw work wrap up on the player and AI info service to allow the Quantum simulation (or any other backend service) to pull more data at a faster rate as needed. The service engineers also aided their gameplay counterparts with improvements to the physical inventory.
+Work began in earnest on the NPC tracker, which will allow the tracking of NPCs between servers. The system will be used by any gameplay loop that wants or needs to track NPCs as they shift from instantiated to virtual AI and move around the ‘verse.
+Finally, a new generic escrow service wrapped up, allowing for a more streamlined money transaction loop that SST is hoping integrates with the various gameplay loops.
+## Turbulent (Services)
+Turbulent’s Live Tools team completed the base framework for the new windowing layout in Hex along with some of the core functionality. They also supported the PU Locations with the Might Bridge tool. Working alongside members of the QA and Publishing teams, improvements were made to the crash handling pipeline, refining deduplication for Sentry crashes.
+The Game Services team achieved key milestones in the server meshing project, delivering the first version of the new matchmaking system. The service communicating with the new database now has all the required main features too, and several optimizations were made.
+## Turbulent (Web Platform)
+Both of Turbulent’s web teams worked on technical projects to add new capabilities to the engineering platform.
+Ecommerce is working on a new database indexing solution to give the team new capabilities to efficiently search for and create new content. This is primarily for the Pledge Store but it will also help to create new pages that don’t hinder the site’s performance.
+The Architecture team is working on a system to improve the way information passes between their various services. This will improve existing systems and enable the team to hit the ground running on new micro-services that interact with other elements on the platform.
+## Vehicle Tech
+The Vehicle Tech team put the finishing touches on the radar, scanning, and ping refactor for vehicles. They also prepared to incorporate the improvements to first-person gameplay. Some improvements were identified in the existing systems and functionality, which have been included in upcoming plans accordingly. Bugs were also fixed for Alpha 3.14.
+## VFX
+Last month, the VFX team revisited the new vehicle SDF-based shields. A simplified setup was provided, with better scalability options allowing fewer effects to be used across the wide range of ship scales.
+They also began working on ship-wake effects with the Vehicle Feature team, which will allow surface dust, snow, etc. to be displaced when ships are rapidly flying along the surface. This is a continuation of the work recently completed for thruster wind volumes.
+VFX passes were also done for the Crusader A2 Hercules, one of the unannounced ships mentioned earlier in the report, and for the Crusader Ares’ S7 weapons.
+## WE’LL SEE YOU NEXT MONTH…

@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.8.1e
+Alpha Patch 3.8.1e has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.1-PTU.4200480.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- General gameplay and traversal
+- Medbed gameplay
+Known Issues
+- The initial shader load is significantly slowed in this build, resulting in large sections of purple textures and invisible items/NPCs.  This may be encountered frequently with larger cities and ships.
+Work-around: Allow the area to load and then do not delete your shader folder. Once a region of the PU is loaded it should load smoother next time.
+- Active scanning of ships may cause a client crash.
+- Cargo capacity will fluctuate when extracting mineable materials.
+- AI ships do not recover from EMP disables.
+- Sometimes repair services are unavailable when they should be present.
+- After a ship is repaired, detachable components will remain attached to the ship when destroyed and a duplicate component will fall off.
+- Repair fails if you select repair and refuel simultaneously.
+- Once an Animus spare magazine has been emptied the player can no longer equip fresh magazines in the same slot.
+- Ships can be displayed as "unknown" after destruction, be available for spawn, but not appear on their specified hangar.
+- Entering or exiting via EVA can sometimes cause the player to turn/spin suddenly and harm themselves.
+- Objects can fall through the floor when dropped.
+- An extra static train can appear at Lorville and prevent the use of trains.
+- The visuals of the ships on the rental screen may have missing areas or disappear completely.
+- The Caterpillar will occasionally rock or tip over on itself after landing on a planetary body.
+- CryAstro services may not work at various stations and major ports.
+Work-around: Hover before landing and request services just above the pad.
+- Rentals and/or rental timers may not work when renting a second ship.
+- If a player's ship is destroyed after bed logout they will return to the server at origin.
+- NPCs may sometimes be doing usable animations in places that they shouldn't.
+- Countermeasures are not working as intended to deter missiles.
+- The 890 Jump does not have the correct cargo capacity.
+- The Combine Cannon and distortion weapons are not working as intended.
+- Elevators at Port Tressler and Everus Harbor may not show up when called.
+- If the quantum travel marker is at the edge of a moon or planet its possible to QT through the moon and explode..
+- Purchased commodities will often visually not appear in the ship's hold.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## Feature Updates
+Gameplay
+- Toned down some lens flare effects.
+Ships and Vehicles
+- Updated nose collision on the Caterpillar to allow damage to the main/front door.
+## Bug Fixes
+- The Pisces should no longer appear as placeholder text on commodity kiosks.
+- Entering a ship via elevator at Area18 should no longer kill the player.
+- Fixed bounty missions not progressing and unlocking further variants.
+- There should no longer be misaligned collision blocking a suite in the 890 Jump.
+- Players should no longer get first degree battery changes for killing NPCs inside destroyed ships.
+- Players should no longer randomly die in the EzHab area upon exiting the transit system at Area18.
+- Fixed an issue where if multiple players set their preferred ICU to the same medbed and die at the same time, one would spawn at map origin.
+Technical
+- Fixed 2 server crashes.
+- Fixed a server deadlock.

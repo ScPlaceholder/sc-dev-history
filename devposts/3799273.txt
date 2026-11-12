@@ -1,0 +1,67 @@
+## Star Citizen Patch 3.12.1
+Alpha Patch 3.12.1 has been released and is now available!   Patch should now show: VERSION 3.12.1-LIVE.6975085.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Server Player Cap: 40
+Known Issues
+- Some or all of the player's items that should be kept after a Character / Database reset are lost
+- A Players Ship can enter a state where it cannot be Retrieved
+- Lighting / Shadow issues affecting players using AMD 6800 and 6900 graphics cards
+## Feature Updates
+Locations
+- Removed Delamar from the Stanton System
+Gameplay
+- EVA QOL updates
+Made improvements to how live ragdoll physics are handled and greatly increased the angular acceleration of the thruster packs in EVA
+- PVP and PVE bounty missions will now fail for the hunter if they are killed by the bounty
+- Polish pass on names and location descriptions of various bounty missions and Northrock PVP Bounty Missions
+- Temporarily removed patrol missions
+- Reduced starting inventory levels of multiple commodities at TDDs to prevent their inventory from being constantly maxed out
+- Increased inventory and refresh rate of all shop items to reduce the frequency that items run out of stock
+- Increased the availability of prison repair missions
+- Made further optimizations to help with AI flight movement when server framerate is erratic
+- Moved exit interaction location on Retaliator bunk beds to make it more easily found
+## Major Bug Fixes
+- Chat order should no longer become reversed by going into MG while not in a vehicle or 3rd person view while in a vehicle
+- Fixed an issue causing the claim function to not be available at ASOP terminals
+- Fixed an issue causing ships to not be able to restock
+- Vehicle damage charges should no longer be given to the wrong player when two ships collide
+- Fixed an issue causing the fuel intakes on the Star Runner to scoop less than intended amounts of hydrogen fuel
+- Fixed an issue that could cause a players ship to enter a state where it cannot be Retrieved
+- Fixed an issue that was causing the Prison kiosks to give a transaction failed message when selling minerals
+- Fixed an issue causing players to get a broken multi-tool if they are sent to prison while wearing leg armor
+- Shields should no longer be able to be penetrated by laser scattergun weapons such as the Dominance
+- Talon Shrike should no longer become unable to fire missiles
+- The C-788 cannon should now correctly deal damage against friendly targets
+- Multiple FPS weapons should no longer be missing collision on the front of their barrels which allowed them to shoot through walls/ships
+- Fixed a server fps issue causing enemy fighters to change direction instantly and have unnatural behaviors
+- Items Dropped or Placed by a Player should no longer sometimes immediately disappear
+- Players Ship should no longer become Unresponsive after Mining a Asteroid FPS Deposit nearby
+- Turrets at rest stops now respawn correctly after being destroyed
+- Fixed an issue causing turrets to not spawn for Claimjumper missions
+- Turrets should now be hostile in lawful Claimjumpers missions
+- Fixed an issue causing the player do not be given a mission progression counter when they arrive at a Claimjumper mission location
+- Bounty targets should no longer take a long time to spawn once the location has been reached
+- Players should no longer be able to clip through the hull of the Idris to steal it
+- The mission named " A Very Difficult Task " should no longer automatically complete when accepted
+- Increased the pay-out to the intended amount of 45000 aUEC for successfully completing the Capture Arlington Gang Leader Maltrox Arlington mission
+- When a second player arrives at the bounty location without the mission the objective marker should no longer read last known location for a brief moment
+- Fixed an issue causing more than intended reinforcements to sometimes spawn for easy bounty hunting missions
+- Fixed an issue where reinforcement ships on easy bounties could sometimes spawn harder than intended ships
+- Fixed an issue that made wheeled vehicles to easy to get stuck on their side
+- Fixed an issue causing weapon raise not to work near objects while in EVA
+- Andromeda Landing gear deploy animation should now fully play
+- Players should now be able to use the interaction system to power on the Nox
+- Players should no longer be able to Duplicate Mined Gems Infinitely
+- Fixed an issue causing players to not be able to Exit Ground Vehicle Remote Turrets by using interaction mode
+- There should no longer be a chance that no audio or video will go through on a call from a player who is on a planet surface
+- The Goodbye/Exit Screen when Closing a Refinery Terminal should now display correctly
+- Eclipse torpedo animation should now correctly play when firing
+- CRU-L5 quantum travel should no longer be obstructed from most planets and moons
+## Technical
+- Fixed 14 Client crashes
+- Fixed 10 Server crashes
+- Fixed 2 Main Thread Deadlocks
+- Backend shop service optimizations

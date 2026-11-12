@@ -1,0 +1,5 @@
+Hi @deathmachine!
+I'm not the guy who did this work, but I can give you a rough overview:
+Damage isn't applied to the ship's standard textures or its normal UV space. Instead, it's got a second UV layout which is used to look up an entirely separate texture. The separate texture has different information in each channel, so it can store temperature, scorching, crumpled-ness, and the ship has a specialised shader which reads that extra data and interprets it visually (eg in crumpled areas it blends in a tiled crumpling texture, in hot areas it looks up a heat gradient texture for the glow).
+Entirely separately from drawing the ship, there's a process run every frame to paint new bits of damage into the texture, and a global update that does things like reduce the temperature. Applying a new piece of damage in the right place isn't a trivial task, so we have another texture (pre-calculated) that maps 3D positions around the ship to specific locations in texture space (I'm a little hazy on how that part is done).
+Hope this helps!

@@ -1,0 +1,6 @@
+Off the top of my head, here's a few things that set them apart:
+1) How fast do they need to change? A smoke grenade probably needs to develop in shape quite quickly
+2) Can the player dance around it? Clouds are generally far enough away that they look the same from frame to frame, except for camera rotation. This means you can reproject old data and build up a high detail image over several frames. For a smoke grenade you can step around the side and look at the whole thing from a new angle, which makes it very hard to decide what pixel is "last frame's pixel".
+3) Does stuff go behind it? Clouds may not always be the backdrop in this game, but you can get a long way by assuming they're nearly the backdrop. For instance you don't need to worry about high-quality transparent objects being behind them.
+4) How many of them? For something like a smoke grenade, you're opening yourself up to players throwing a dozen down in an area, in some cases overlapping with one another. Sometimes you can afford the GPU budget to do an effect once, but can't afford to do it a bunch of times.
+That's all I can think of for now, though bear in mind I've not looked at this cloud code, only seen/heard updates from its author.

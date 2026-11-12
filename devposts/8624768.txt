@@ -1,0 +1,1 @@
+Hmm, openxr has its own frame prediction (lookup xrWaitFrame). What this does is sync the engine with whenever openxr thinks the next frame may be ready. This can introduce large waiting times on the CPU before we predict the next headpose. This is entirely controlled by openxr so nothing I can control. My guess is that you changed some settings which affects this behavior.

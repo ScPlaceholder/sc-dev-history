@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.15.1b
+Alpha Patch 3.15.1b has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.1-PTU.7871047.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Current Audience: All Waves
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu. Players may need to exit the game and reload after a server crash to fix this error.
+- Players cannot repair, refuel, and rearm at outposts
+- Items not stored in long term persistence such as mined gems are currently not stackable (This is something that will be coming in a future update)
+- Tree density update is currently not in this initial 3.15.1 build (Will be updated in a later 3.15.1 build)
+- After trying on clothing in a store, all equipped items are permanently deleted from the inventory
+- Swapping weapons has a chance to drop or remove weapons
+- The Prospector door and ladder lack animations
+- When in combat, NPCs can get stuck in cover when trying to exit
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round in Arena Commander
+## Feature Updates
+AI
+- Updated all existing guards in the CBD area of Lorville to the new CBD variant Quirinus Tech Armor
+Gameplay
+- Dropped Item Performance Polish
+Updated max number of nearby items when trying to drop from the inventory to be lower (10 instead of 50), within a smaller radius (7 instead of 20)
+- Medical UI Polish
+Corpse marker will now be removed when the player's body is interacted with. Added new PIT Action to dismiss current corpse marker.
+Ships and Vehicles
+- Ares Polish Pass
+Polish pass on performance, animations, and audio. Balance pass on Ares Ion cannon. Fixed the mass of the Ares ships. Fixed angular acceleration decay values for the Ares. Ares Ion itemport error fixes. Ares Inferno power triangle should now work correctly.
+- Redeemer Polish Pass
+Polish pass animations and audio. Polish pass on Aegis Redeemer door panels. Increased Redeemer Quantum Fuel Tank. Additional tint tweaks (glossier).
+Weapons and Items
+- Fixed AMRS scatter gun damage due to explosive fixes
+- Rescaled shields to have less drastic benefits in the A and B category, sizes 1, 2 and 3
+## Bug Fixes
+- Partial Restocking of different missiles should no longer result in missile racks being filled with the wrong missile
+- Fixed an issue blocking players from looting bodies that are in an overdose state
+- Fixed an issue that could cause players not to be able to unequip an undersuit after equipping an undersuit from a dead NPC
+- Fixed Inverted Interactions while in ground vehicles
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 1 Server Crash
+- Main Thread Deadlock Fix

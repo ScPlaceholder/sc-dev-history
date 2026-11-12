@@ -1,0 +1,27 @@
+Hi all,
+Thank you all for all the feedback that we have been recieving, especially in the last couple of days.
+Before I provide a summary of the recent updates, I want to mention few things first.
+We will soon publish a guide that will give in-depth information about Engineering Gameplay, including giving an insight on future changes.
+Naturally, we're also still in active development for the Engineering Gameplay feature as stated in the ISC, and as frustrating it might sound for some, this requires a lot of iteration to get right (especially in our PTU testing environment).
+For example, the armour system currently is one of the systems that we'll iterate on quite heavily moving forward, like implementing thresholds so that smaller caliber projectiles cannot damage or penetrate stronger armor.
+Let's talk about TTD / TTK and a little bit about the shield topic since both topics caused some confusion.
+You will have noticed we went through various changes throughout this PTU cycle, but fundamentally, we still want ships to be disabled more often than them exploding. We still want to allow players to have access to all the gameplay that comes with disabled ships. It also still stands true that experiencing a critical failure or your ship exploding will be mainly driven by the state of the power plant.
+Currently implemented, there are four scenarios where a ship can explode, aka hard death:
+1. If Power Plant goes critical after being destroyed and the player fails to repair or remove it in a given amount of time, which is Power Plant dependent. This shouldn't happen all the time.
+2. If one critical part of the ship is destroyed aka is at 0 health, has a chance to cause the Power Plant to experience a critical failure, like in the first example. Players will still have the option to counter act this by repairing or removing the Power Plant within the given amount of time.
+3. If one the ship is hit by a very powerful projectile that does do a lot of damage the ship will directly explode. An Idris Railgun hit should still take out an Arrow in a single hit.
+4.If all critical parts are destroyed and the ship is still being shot at persistently, the ship will at some point will be fully destroyed and explode. Currently this is tuned to require 10x the hull damage before this occurs, but is subject to further balance.
+As you can tell there is no guarantee for ships to always explode and we want players to have the opportunity to perform field repairs or board disabled ships. The chance of a ship exploding through critical power plant failure overall is lower than 30%, though, we have seen some bugs here that the explosions occur more often than they should, which we are working on to get them fixed.
+However, we still want to adhere to established design goals, such as extremely strong weapons having the ability to do serious damage to lighter and less armoured ships, or even take them out in single hits.
+And though the patch notes yesterday shared the changes we did around the Ship Overkill mechanic did not go into enough detail, we fundamentally want to prevent scenarios were disabled ships are quasi-invulnerable without negating existing gameplay loops like piracy or component salvage.
+The above is emulating some of the highly detailed physical damage simulation that Maelstrom will eventually bring to Star Citizen. Parts will have structural integrity, and will at some point no longer be able to withstand sustained damage and break apart.
+To summarize:
+Ships should be disabled a lot more often than explode.
+Critical failures should still allow you to recover and escape
+Disabled ships can still explode if enough damage is applied
+As for shields, we are still working on a fix that causes redundant shields not to auto activate for ships with more than two shield generators. Additionally, the patch notes from yesterday made it sound as if recently we made drastic changes to shield behavior, when in reality the update was meant to convey how it already functions in 4.4.0. Currently, all shield generators contribute to the overall health pool of the shield, but only the powered shield generators contribute to the shield recharge rate.
+We really appreciate all of your feedback and I guarantee you that we hear you. We review and digest your feedback daily, have passionate discussions about how to best address your concers.
+I hope you understand that we can't reply to all posts, but we do read them and our excellent Player Experience team is constantly in touch with you all to keep us in check.
+We knew that the release of Engineering would be a challenge and that due to the amount of the changes we've introduced it can be even trickier to get things right. Some of the balance changes we did early in this PTU cycle have been temporarily reverted to ensure we have a more stable base to balance and eliminate factors that could cause unforseen edge cases.
+As mentioned during the recent ISC, Engineering Gameplay is here to stay and we will do our best to work with you all and make it the best it can be.
+Cheers,

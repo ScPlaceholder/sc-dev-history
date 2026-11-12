@@ -1,0 +1,75 @@
+## Star Citizen Patch 3.19.0-PTU.8458571
+Alpha Patch 3.19.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.19.0-PTU.8458571.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 1,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- General Stability
+- Lorville Skyline 2.0
+- Salvage Contract Missions
+- Tractor Beam - T0.5 - Item Attaching and Detaching
+- Ghost Hollow Reclaimer PVP Mission
+- Mission Density Management
+Coming Soon to PTU
+These features are in an unfinished state and will be coming fully in a later PTU publish so we are not requesting feedback on these at this time.
+- Mining Balancing v01
+- New Player Experience
+Known Issues
+- Multilocation - Shopping/Kiosks - Shop item pictures and descriptions missing
+- Harvestables - Harvestable Deposits may be invisible to players, cause collisions or become unavailable for scanning, mining or salvage gameplay (mining may be blocked in this build)
+- ArcCorp - Area18 - Interactables / Locations - Players can be injured or killed when getting out of the chair in the HAB
+- ArcCorp - Area18 - Art / Locations - ReplaceMe Ball in player Habs
+- Performance - Client - High dedicated video memory usage leads to severe framerate drops at Lorville
+- AC - PTU/LIVE - WaitForPlayerSpawn Connection Timeout
+- Ships - Redeemer is missing collision on its floor
+- Aegis Reclaimer - Stanton - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction from ship exterior
+- Aegis Reclaimer - All Variants - Stanton - Reclaimer main on-elevator control panels do not respond to input
+- ARGO MOLE - Stanton - Vehicles / UI - The interaction prompts for ALL mining turrets are easy to miss/in unintuitive locations for players
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Global - UI - 21:9 resolution - Hints do not appear when loading into universe on an Ultra Wide setting
+- Multivehicle - Stanton - UI / Vehicles / Mining - Mining UI is appearing in Low Resolution
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Shard - Shards can fail to load after a crash / restart with a "RESOURCE_EXHAUSTED" error during QueryZoneHosts
+- Stanton - Actor Feature - Greycat Multitool / RMC Canister - Issues with RMC Canister reload behavior
+- Stanton - AI / FPS - Enemy combat AI is slow to respond or react
+- Stanton - Ghost hollow - Reclaimer PVP Mission / Game code / Mission Feature - Extraction terminals cannot be interacted with before and after the comms array has been de-activated
+- Stanton - Locations - Aberdeen - Klescher Rehabilitation Facility - Missions - Ursa rovers can sometimes spawn under the garages, preventing prisoner escape
+- Stanton - Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Stanton - Multitool - FPS Hull Scraping - The Salvage attachment has the VFX of the tractor beam and does not function
+- Stanton - Security Post Kareah - Mission Content / Art - VisArea - Contraband screens have a visarea issue
+- Stanton - Ships - ASOP Terminal - Spawning ships causes the requested ship to spawn outside of the hangars
+- Stanton - Shopping - Area 18 - Pharmacy Kiosk - Buying Pharmacy Items at Empire Health results in "Invalid Location" error
+- Stanton - Yela - Grim Hex - Mission Giver - AI / Missions - Wallace Klim becomes stuck under the floor near the hangars after being streamed out and streamed back in
+## New Features
+Gameplay
+- Mission - Salvage Contracts - T0
+Addition of Salvage Contracts to the PU. This new contract called the Salvage Resource Rush is a mission where a faction or mission giver requests the scrapping of a derelict or husk in their possession, either on the ground at a junkyard or in space in a debris field. Players accepting the mission are tasked to scrap the derelict to the best of their ability and sell the RCM to a shop. Once the player is finished with the scrapping of the derelict, they can complete the mission in their MobiGlass. This mission will have three variations:
+Lawful: a lawful mission giver or organization requests the scrapping of a derelict. The location is secured by the organization with orbital sentries or Centurions.
+Lawless: a mission giver requests the scrapping of a derelict. The location is not secured in any way, risk of being raided by pirates is present.
+Unlawful: an unlawful mission giver or organization asks for the salvage of a recent battle, which is not accessible to civilians/cordoned off. The location is secured by hostile orbital sentries or Centurions.
+- Ghost Hollow Reclaimer PVP Mission- (Not ready for feedback and testing)
+Adding a new mission type to the Ghost Hollow crash site on MicroTech. Making use of the comm-array as well as AI nav-mesh, this mission type will create PVP encounters where players will need to fight for control over terminals for a chance at big credit payouts.
+This is a mission with Outlaw UEC terminals in the Reclaimer derelict. When active, they generate UEC that anybody can withdraw, creating PVP encounters between players trying to control the terminals (which are also guarded by Outlaws AI). To start the terminals, the comms array must be disabled. If that is done, the terminals can be activated in the tower next to the derelict ship. To start this event at the Ghost Hollow Crash Site, a player will need to disable the Stanton4 comm array above MicroTech which will enable the terminals and  a Mobiglas communication is sent to all nearby players.
+## Feature Updates
+Locations
+- Lorville Skyline 2.0
+The major reworking the Lorville skyline to better fit the scale of the city and its distinctive buildings. The goal is to create the visual identity for the high-end, low-end, and generic branding of the city skyline and add navigational signage around the landing zone.
+- Added Updated Volumetric Atmosphere and Clouds to ArcCorp
+- Performance Polish Pass for Atmospheres and Clouds
+- Moved Location of Area18 ASOP Terminals Closer to the Hangar Elevators
+Gameplay
+- Tractor Beam - T0.5 - Item Attaching and Detaching
+Enabling hand held tractor beams to attach and detach items such as ship components and allowing players to sell those salvaged items for profit. This iteration of the tractor beam gameplay will add the functionality to the tractor beam attachment of the multitool to detach and attach items from ships itemPorts. This functionality can either be used for component exchange, replacement or restocking or to scavenge other ships to use or make a profit. Players can lock and unlock the ability to remove weapons and components from their ship with a new Port Unlock option in the Inner Thought where which in the cockpit or using the new Port Unlock keybind (unbound by default). While aiming at a component with a tractor beam to detatch it, hold "B" and it will highlight the object with a glow around its perimeter/shape. Left click and drag to pull the component lose from its socket/hardpoint. While attaching components, an AR marker will appear to give players guidance on the correct orientation to attach the component in correctly. If the holo outline is green simply let go of the item and it will attach. If the holo outline is yellow, rotate the item until the outline turns green. If the holo outline is red, the item does not fit the Item port requirements.
+- Ghost Hollow Reclaimer PVP Mission
+Adding a new mission type to the Ghost Hollow crash site on MicroTech. Making use of the comm-array as well as AI nav-mesh, this mission type will create PVP encounters where players will need to fight for control over terminals for a chance at big credit payouts.
+This is a mission with Outlaw UEC terminals in the Reclaimer derelict. When active, they generate UEC that anybody can withdraw, creating PVP encounters between players trying to control the terminals (which are also guarded by Outlaws AI). To start the terminals, the comms array must be disabled. If that is done, the terminals can be activated in the tower next to the derelict ship. To start this event at the Ghost Hollow Crash Site, a player will need to disable the Stanton4 comm array above MicroTech which will enable the terminals and  a Mobiglas communication is sent to all nearby players.
+- Density Manager Mission Updates
+Updated the density manager system so that mission entities and things dropped by missions such as corpses, guns, and debris will be cleaned up when the area is streamed out. As we reuse mission locations such as UGFs, the location will then be cleaned up of all mission items when the area is streamed out while player dropped things remain as usual.
+- Reduced/Rebalanced of the amount of ship weapons, missiles, and ship components that are currently sold in Reststops and LEOs
+- Temporarily removed Claim Jumpers and Orison FPS missions for 3.19
+Ships and Vehicles
+- Added Corsair, Cutter, and C8R Pisces to in game shops

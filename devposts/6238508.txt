@@ -1,0 +1,2 @@
+We are expecting performance gain on the game server. Since the game server itself will no longer have to "fan out" messages to connected clients  and manage the replication state itself. This is the replication layer’s job.
+Running on tech-preview with real player behaviors will allow us to quantify this gain as well as identify areas of the code that might prevent us from having a gain (which will need to be addressed before we graduate the RL for Live).

@@ -1,0 +1,3 @@
+I’ve followed up on this. There are more issues to dig into; however, I believe fixing the following two bugs will help the most. I’ve debugged both and written up tickets:
+- Destroyed powerplant can’t be salvaged – the ship still reads as “Power On.” This also happens with bricked ships.
+- Cargo grid keeps cargo locked on disabled/bricked ships, which prevents non-owners from taking the cargo.

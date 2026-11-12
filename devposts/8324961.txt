@@ -1,0 +1,44 @@
+## Star Citizen Alpha Patch 4.3.2
+Alpha Patch 4.3.2 has been released to all backers!   Patch should now show: VERSION 4.3.2-PTU.10433370.
+- Audience: All Backers
+- Server Info: PTU Channel
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Starting aUEC: 15,000,000
+## Testing Focus
+- Stability & Bugfixes
+- Structural Salvage Updates
+- Frontier Fighters Finale
+- Reclaimer Elevator Updates
+- Yormandi
+## Known Issues
+The issues below are meant to help give a better indication on things that may happen during gameplay and do not always occur 100% of the time.
+The Reclaimer now has a docking port on the back left side. This is not ready for testing or feedback as docking works but calling the ship and stowing does not function yet due to the known issue below
+- Multivehicle - PU - Vehicles - ASOP registers vehicle on docking collar as on PAD, preventing storage or usage of station services.
+- PU - Stanton - Yormandi – Creatures / Desync / Network – Desync causing live Yormandi to disappear for some players fighting in the same arena
+- PU - Yormandi - Creatures / AI / Animation - Yormandi snaps into final resting position after death animation has completed
+- PU - Yormandi - Creatures / AI - Yormandis multi beam attack is only hitting 1 target
+- PU - Creatures - Yormandi - VFX - Yormandi and its particles are not visible upon emerging unless approached
+- Multi-System - PU - ASOP Terminal / UI / Locations - Action button to retrieve will be missing after storing the ship
+- PU - Stanton - ASD - Location / Respawn Screen - Player will be rescued and respawn back at the facility after being incapacitated
+- Multi-Location - PU - Pyro - AI / Locations - Turrets at Farro Data Centers are not firing
+- ARGO ATLS  - PU - Mounts / Cargo / Tractorbeam - The ATLS is unable to pull cargo off a ship's cargo grid after it is moved from place of origin to new location
+- PU - Stanton / Pyro - Armor / Loot Box / Inventory / Actor - Equipment and armor dropped on the ground will be suspended in mid-air making them unable to be interacted with
+- Multi-System - PU - Locations / Interactions - Unable to open the Medical Room given to you by the Patient Check-In terminal
+## Features & Gameplay
+Gameplay
+Yormandi Polish
+Further polish for the arena area and Yormandi Animations, attack, audio, and gameplay. Increasing health, adjusting ranges and in combat areas for the fight, cooldowns, Added hazard to the arena flow, and cover adjustments.
+## Bug Fixes
+- Potential Fix: PU - UI - MFDs - MFD page navigation no longer loops around (STARC-179068)
+- Potential Fix: AC - Character Art - Single Weapon Elimination - Crossroads of Crime - Player loads into the mode without a body and a glowing skeleton head (STARC-181766)
+- Potential Fix: PU - Missions - Mercenary / AI - There is a chance some AI will not spawn during mission
+- Potential Fix: AC - Multiple Game Modes - Crossroads of Crime - Art / Lighting - The main light source for the map is missing (STARC-164973)
+- Potential Fix: PU - Area18 - Locations / Character Art - Female NPC in Empire Health has invisible portion on left arm (STARC-181451)
+- Potential Fix: PU - Mission - NPE - Completing the tutorial just not update player location at LEO and login is at home location
+- Potential Fix: PU - Stanton - Onyx Facility - Yormandi – Locations / Design – Players not kicked out of Yormandi Boss Fight Arena during / after reset
+- Potential Fix: PU - Mission Content / Locations - Data Processing doors do not open after inserting key card at Farro Data Centers
+- Fixed an issue causing the atzkav not dealing full damage
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash

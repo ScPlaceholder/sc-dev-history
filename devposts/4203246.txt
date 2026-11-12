@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.14.0k
+Alpha Patch 3.14.0k has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7647574.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: Wave 2
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Current cloud tech is still in active development and not yet final. There's ongoing work on SDF occlusion which should help alleviate the graphical artifacting (visual dots in the clouds). Additionally, we are working towards having local VFX for the clouds (similar to the gas clouds around rest stops) which will make a big difference in overall quality.
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Known Issues
+- Gas Clouds on Crusader appear to have moving graphical artifacts that appear as dots. Current clouds are still in development and not final. See note at the top of patch notes.
+- Orison objects & textures loading very slowly
+- XXL Hangars are exhibiting invisible ceiling collision when ships try to disembark
+- Single location will only appear if the player spools their drive before setting destination on the starmap (Workaround: Spool quantum drive before opening the starmap and then open it and set route)
+- Unable to scan for FPS or ROC-sized mining deposits until very close
+- Security Ships do not recognise illegal goods onboard a ship when being carried by a player
+- Landing gear proxies are missing on certain ships
+- Port Tressler is missing QT marker when Player returns to microTech planet
+- Shield is getting hit multiple times on a single distortion explosion
+- Demon Fang Combat Knife asset is missing from the game
+- Surface Mining Deposits are not assigned distance markers when approached
+- Food stalls around different zones in Area18 Plaza do not spawn food or drinks for players to purchase
+## Feature Updates
+Gameplay
+- Ongoing Ship Capacitor, Balance, and Polish Pass
+Fixed fire rate of GATS Ballistic Gatling S2. Replaced Origin 325a nose cannon with S4 Ballistic Gatling. Tweaked mass driver damage. Heat and power tuning for the Origin 350r. Updated the Reliant Tana's health.
+## Major Bug Fixes
+- Fixed an issue causing players to become stuck loading when trying to load into the main menu
+- Missile Operator Mode should now work in the Origin 100 series and Hurricane
+- Radar targeting sound should now play to notify pilots correctly when a their ship is targeted by another ship
+- Missile racks should no longer get stuck with the wrong prepped missile, causing them to not fire all armed missiles
+- Power button on shield MFD menu in ships should now work correctly to turn shields back on
+- ADS reticle should no longer appear off center for Animus and Railgun weapons when using ultrawide monitors
+## Technical
+- Fixed 1 Client Crash
+- Fixed 3 Server Crashes
+- Fixed 2 Main Thread Deadlocks
+- Fixed 2 Backend Service crashes
+- Fixed a Backend service timeout and Out of memory issue

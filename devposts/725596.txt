@@ -1,0 +1,62 @@
+## Focus Feature Updates
+Universe
+- Quantum travel VFX minor polish.
+- Adjusted LODs and lighting at outposts.
+- Various lighting and functionality polish for comm arrays.
+- Various interaction cursor updates.
+- Texture and collision polish to derelict Caterpillar.
+- Ship bed persistence spawning is now on. Note from the designer: This should allow players to log off (disconnect) from a PU server via a ship bed. This is done by using player interaction mode to get into bed and then triggering the “log out” interaction via the inner thought. This persists the location of the player in their current ship and the ship’s position. On re-connection, if the player was the ship's legal owner, they will be put back in the bed and the ship will be respawned at the point the player logged off at. If the ship the player was in got destroyed after the player logged out (i.e. you were in a friend’s ship when you logged out so it wasn’t instantly removed), you should respawn back at the last station you were at.
+- Added automated defense turrets around Port Olisar and security post Kareah.
+- To improve performance we have removed 50% of NPC's from stations.
+- Automated landing can now trigger from slightly further away from the assigned pad.
+Missions
+- Increased the time to report to the start of a patrol mission.
+- Moved corpses into better locations, adjusted the derelicts to allow better flow & added pirates to the derelicts.
+Ships and Vehicles
+- Gladius: Updated top displays to 4:3 aspect, converted displays to full MFDs, and updated ship headlights.
+Bug Fixes
+- The TroMag EMP on the Sabre Raven should now have proper bubble VFX.
+- Fix for dying/crashing while carrying a box leaving you with it permanently attached to your hand even after log off/log on.
+- All ships should now be locked to non-owner players by default when spawned at the ASOP terminal.
+- Updated Star Kitten Dragonfly to have correct seat texture.
+- Shops and commodities should again be available throughout the verse.
+- Fixed animation on mining machines.
+- Fixed various collision and visual issues at derelicts.
+- Kudre Ore outpost should now be properly labeled and marked.
+- Ships spawning into Arena Commander modes should no longer have landing gear down or have landing mode thrust levels.
+- Corrected mis-aligned VFX thruster positioning on the Retaliator.
+- The game should no longer crash when equipping a weapon that is already equipped in another slot.
+- Fixed odd camera display when requesting a ship from Levski ASOP terminals.
+- Fixed yaw/roll joystick animations being incorrect on various ships.
+- The two struts opposite the main cargo area of the Starfarer should now have collision.
+- Fixed an issue where the player would not have any stance active while ducking, allowing them to survive without oxygen indefinitely.
+- Several fixes to prevent missions breaking due to loss or destruction of mission critical items.
+- Fixed LOD popping issue with Constellation turrets.
+- Fixed HUD position being too low on the ARGOs.
+- Raised the thruster overheat cap and lowered the heat, power and atmosphere heat factors to prevent engines overheating and cutting off with afterburner (more balance on this will come later).
+- Players should no longer be able to set the Starfarer or the Caterpillar as delivery destinations at GrimHex on the kiosk, where they can't be spawned.
+- The controls in the Khartu-Al should now properly reflect roll.
+- Fixed some issues with Eckhart interactions.
+- Various fixes for camera view from seats and beds.
+- Reduced the number of M50s spawned in various enemy waves.
+Technical
+- Several crash fixes.
+- Various performance tweaks.
+## Non-Focus Feature Updates
+UI
+- Added ship view to the Arena Commander loadout manager.
+Cargo
+- Added running sound for kiosks.
+- Carry-able commodity crates dropped from a destroyed vehicle will now appear in persistent data when placed inside of another vehicle.
+Known Issues:
+Content missing key elements:
+- User Interface
+- Insurance and Persistence
+- Internal Ship Docking
+- Comm System
+Bugs, issues, and work arounds (W/A):
+- Items and ships placed in hangars are not persisting between sessions.
+- Ballistics leave "replace me" textures in Star Marine.
+- You can make claims on ships that are not lost, destroyed, or damaged.
+- Vehicle customizer app on wrong MobiGlas button and not yet functioning.
+- Repaired wings don't always restore weapons.

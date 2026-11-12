@@ -1,0 +1,64 @@
+## Star Citizen Patch 3.12.0a
+Alpha Patch 3.12.0a has been released and is now available!   Patch should now show: VERSION 3.12.0-LIVE.6742772.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+- When logging into some commodity and refinery kiosks, they can display incorrect Commodity Information (TF20) and Prevent Sales
+Workaround: Try other trade terminals at a different location. Test relogging and trying again. Area18 specifically will error and fail in the Admin Office trade terminals
+- Player is unable to activate mining consumables (Workaround: Toggling scan mode allows consumables to be used)
+Workaround: Using the consumables from a different player in the mining seats will work. If you are working alone with the Mole and leave the pilot seat to use a turret, toggling scan mode will help force consumables to work.
+- Illegal drug terminals are missing from their intended locations in rest stops
+Workaround: We have temporarily added Slam sell inventories to two junk sites in the PU
+- The mission named " A Very Difficult Task " automatically completes when accepted
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool
+## Feature Updates
+Gameplay
+- Balance pass on mission payouts to make them more rewarding
+- Updated NorthRock group bounty price and made them local to systems
+- Changed it so if a bounty hunter kills a PVP bounty the mission is withdrawn rather than failed for any other hunter players with that mission
+- Added warning to refinery terminal letting players know that unselected materials from a ship will be discarded when creating a job
+- Interim pricing adjustment on restocking ship ordnance (Missiles, torpedoes, and Countermeasures)
+- Decreased min and max insurance claim wait times for non starter ships
+- Made interim tuning changes to EVA movement that will allow you to turn more easily and also arrest any spin caused by collision more quickly
+- Increased the drop shadow amount on the ship mining UI
+Core Tech
+- Updated settings steps in options menu for tobii eye head ratio to 0.01
+## Major Bug Fixes
+- Ship Canopies should no longer open and close randomly without player input
+- Fixed an issue causing the Talon engines to overheat and ship to lose power when powering up.
+- Corrected the Constellation increase in hull health that came with 3.12.0 to the correct intended amounts
+- Holiday boxes should now be able to be sold
+- ASOP spawned ship assets should no longer load slowly when first connecting to a server
+- There should no longer be 2 AI NPC's standing behind the guild office desk at mining shop on refinery decks
+- Fixed an issue that was causing some players to infinitely load while joining the PU
+- Fixed an issue causing players to sometimes get stuck on the splash screen when loading into the game
+- Fixed an issue causing some clients to not receive the full member list in global channel
+- Fixed an issue causing Shadows cast by the light from the Stanton star to pop in and out while in cities
+- The Talon weapon rack has should now have a prompt to close it after it has been opened
+- Fixed an issue causing some players to see a pixelated film grain when it was disabled
+- A blank contract available notification should no longer be displayed during game play
+- Fixed visarea issues when using turrets in most ships
+- Fixed the Pitch Ladder not being aligned properly in Mixed Mode
+- Lorville cinematic music should now play correctly
+- Player will now still send a video feed in a FOIP call if the player does not have a mic.
+- Miles Eckhart will no longer have a long pause after the player sits down
+- Fixed an issue causing certain keybinds to not be removable
+- Assaulting Vehicle infraction should no longer be applied instantly so that it can be forgiven
+- Numerous assets and structures should no longer fail to load in each of the classic race maps
+- Account resets should no longer sometimes fail and lead to multiple issue such as all ships being doubled in game
+- Fixed an issue in Arena Commander causing players to display on the same team.
+- Players should no longer be able to equip an extra weapon to the left wing on the Aegis Gladius in the VMA
+- Fixed an issue causing the 890j missions to not pay as much as intended
+- Fixed another issue causing blank contract available messages to appear on screen
+- There should no longer be placeholder text for the paints for the Talon and Talon Shrike in the VMA
+- Aegis Hammerhead BIS edition should now be available in game
+- Aegis Reclaimer BIS edition should now be available in game
+- Fixed an issue causing Arena Commander and Star Marine UI to be offset on widescreen monitors
+## Technical
+- Fixed 11 Client crashes
+- Fixed 7 Server crashes
+- Backend service optimizations

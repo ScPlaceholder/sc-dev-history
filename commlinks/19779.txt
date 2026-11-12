@@ -1,0 +1,84 @@
+PU Monthly Report
+January 2024
+Welcome to January’s PU Monthly Report! Our teams kicked off the new year strong by making significant progress in a variety of areas including ships, locations, AI, and UI.
+## AI (Features)
+AI Features began the year working on a key AI-driven initiative for Alpha 3.23. This involved a variety of improvements and new behaviors that required frequent discussions between various disciplines.
+## AI (Tech)
+AI Tech started 2024 picking up where they left off last year. For example, they added the ability for multiple NPCs to use ladders simultaneously when moving in the same direction, which completes the feature.
+The transit system received upgrades to make the ‘UseTransit’ logic smoother and more robust when handling fails, retries, and fallbacks.
+For NPCs using elevators, the flow was improved to create a more efficient sequence. For example, characters won’t be seen going back and forward anymore and will instead board the elevator directly, eliminating unnecessary waiting or interim positions.
+The development of generating navigation mesh on planets continued, particularly close to poles, to support outpost locations with NPCs. To achieve this, a new ‘TileName’ system for planets was implemented, which translates position locations into terrain patch IDs for more accurate navigation around poles.
+AI Tech also continued to support the designers with additional functionalities and quality-of-life fixes for Apollo. This included the ability to delete functions directly from the multi-graph view, enhanced clicking behavior when zoomed out far enough, improved menu options, and functionality to define shops in platforms.
+For spaceship behaviors, the latest fixes and changes to the new pilot-combat behavior were included in the new Arena Commander mode added in Alpha 3.22.
+The team are currently developing a new data-loading procedure for Subsumption data. This will allow stricter requirements on the data so they can immediately identify issues. This functionality will be enabled as an additional step when submitting for validation.
+Alongside these highlights, AI Tech continued to support release builds and addressed numerous smaller improvements and bug fixes.
+## Art (Characters)
+In January, the Character Art team completed the racing flightsuit and its helmet, and continued working on Headhunter outfits.
+The Character Concept Art team began exploring legendary armors and worked on handoff sheets.
+## Art (Ships)
+Last month, the RSI Zeus continued to progress through the greybox stage, with some areas moving slightly beyond. The team are currently focusing on finishing various areas, including the entrance ladder and engineering, while polishing previous areas to make them match the contemporary RSI style.
+A previously announced vehicle completed its LOD0 phase, with the team also working on paints throughout January.
+“Some areas have already made it through final content, and we hope to be completely hands off in a couple of weeks before moving on to additional promised content work.” Ship Art Team
+The RSI Polaris is currently in greybox, with modular pieces done for the lifts, habs, corridors, and hangar.
+An unannounced ship progressed well, receiving an updated lighting pass, including POMs to meet the current visual standard, three different lighting states, standardized headlights, geo updates, and glows in the thrusters. It also received a material refactor and other updates.
+Two variants continued development: One moved through greybox and began the LOD0 phase, while the other completed LOD0 and is awaiting its gate review. Several related bugs were also fixed.
+Finally for Ship Art, gold-standard work on the Aegis Retaliator began.
+## Art (Weapons)
+January saw the Weapons Art team redesigning and changing the dimensions of weapons optics. Improvements were also made to the FPS weapon wear map, while various animations were fixed for ship weapons.
+## Community
+The Community team kicked off the new year by announcing the winners of the Luminalia Greeting Card Contest. They received hundreds of submissions from passionate backers who created wonderful pieces of art!
+Community and other teams participated in the Daymar Rally organized by ATMO Esports. CIG’s Bike and Buggy teams performed alongside other players competing in the dirtiest race in the 'verse.
+“The event was a blast, and participating in the Daymar Rally was a great way to enjoy Star Citizen with everyone, connect with the community, and compete in the greatest marathon in Stanton!” Community Team
+They then published the Arena Commander Schedule as a comm-link for better visibility. This will be updated every month so that everyone can discover the new game modes coming to Arena Commander.
+The team also spent a considerable amount of time planning CitizenCon 2954... more information to come very soon!
+Finally, members of the Community and development teams visited Spain last weekend for Bar Citizen Barcelona.
+“We were humbled to see so many of you at the Space Cowboy, where we had lots of heartwarming chats and shared some special loot only available in Bar Citizens that CIG staff attend! The team is also happy to announce that the Bar Citizen World Tour continues in 2024! Just like before, we want to hear from you about where we should visit. Feel free to contact the Community team on Spectrum and they'll add it to the list of locations to consider. Read more about Bar Citizen World Tour 2024 here!”
+## Economy
+Last month, the Economy team completed a balance pass on the UEC prices of FPS weapons. They’re currently looking into the impact of structural salvage on the in-game economy.
+## Core Gameplay
+To amplify efforts, the Character, Vehicle, Gameplay, and Arena Commander sections are no longer separate, as the Gameplay Features team was reorganized toward the end of the last year (including teams for SQ42, the PU, and Arena Commander) to operate as one unified Core Gameplay Pillar. As such, their progress will be reported under the ‘Core Gameplay Pillar’ moving forward.
+Last month, the Core Gameplay teams continued porting some of the SQ42 features seen at CitizenCon to the PU, which included making many features multiplayer-compatible.
+The porting efforts and remaining code work on recoil improvements and dynamic crosshair were completed and refined to give players the best experience possible. EVA was also ported over and now has more intuitive strafing behavior and multiplayer support.
+For player interaction improvements, the team fixed various bugs. They’re currently making sure that the interaction prompt, default actions, and control hints all work together to make it clear what will happen when players interact with something. Master Modes testing and refinement is ongoing too, with several successful playtests and rounds of positive feedback.
+The resource network and life-support features were further developed, the devs scoping out the remaining work needed for feature release and clearing important tech debt. They also continued to work on jump-point gameplay, including the procedurally generated tunnels and flow of entering the jump points.
+Progress was also made on several tech initiatives in January. For example, support continued for Server Meshing and server-crash recovery. Notably, there were improvements to the usable code for robustness and reliability.
+For Maelstrom (the dynamic-destruction system), the current workload involves evaluating existing setups and generating workflows to fit the new pipeline. The team have already started retrofitting existing systems, including improvements to allow ship landing gear to detach with maelstrom debris and simplifying the design markup for configuring item control within vehicles. These changes not only facilitate the new pipeline but improve on the implementation based on feedback.
+The team also continued last year’s work on the transit system, preparing it for an upcoming refactor and completing work to ensure the current version is suitable for Server Meshing and Crash Recovery. This involved implementing a safe-recovery system for players who experience a server crash while inside moving transit. Engineering also continued refactoring the docking and landing systems, including a rewrite of the automatic dock/undock feature.
+For the former Arena Commander Feature team, January’s focus was on transitioning to the Persistent Universe and becoming familiar with the workflow and systems. While the team's focus is now the PU, they’ll continue to maintain, improve, and provide regular content updates for Arena Commander, albeit with reduced velocity. That being said, the team finished work on three special events and formed a strike team to close out the Resource Network Experimental Mode.
+January also saw two successful go/no-gos for Arena Commander: Grav Race, where players race grav-lev vehicles across five racetracks, and a major update to Master Modes, which includes a limited test of the new AI behaviors tailormade for Master Modes. Atmospheric maps were also added across all Master Modes game modes.
+After last month’s successful tests, the team began implementing ‘streaming bubbles’ across all Arena Commander locations for improved performance and easier map setup. Additionally, they continued to refactor several UI systems to Building Blocks, improving the overall UI.
+Finally for Core Gameplay, the team worked on a wide range of features for the upcoming cargo update. This includes new cargo freight elevators, instanced hangars, personal hangar persistence, commodity trading changes and associated commodity kiosk updates, cargo grid improvements, hover trolley support, hauling mission support, and more.
+This is a significant endeavor that involves working closely with teams across CIG including, UI, Design, Art, Animation, Narrative, and Core Tech to deliver on the full vision.
+“So far, we are right in the thick of building out core functionality and establishing pipelines, with early prototyping proving out functionality and providing input for iteration. There is still much work to come, but progress has been solid to date.” Core Gameplay Pillar
+## In-Game Branding
+Alongside the Environment team, In-Game Branding continued integrating branding elements into the new distribution centers.
+The development of Pyro’s outposts continued too, with attention on finalizing signage to enhance visibility and communication.
+## Live Tools
+The Live Tools team developed and implemented several new features to assist the Player Support teams. They’re currently ensuring that the Network Operation Center becomes easier to use and meets the evolving needs of the different users.
+In addition, the team is further improving other internal development tools and providing the necessary help and maintenance.
+## Locations (EU)
+EU Sandbox 1 continued to develop the upcoming Distribution Centers, while Sandbox 2 worked on location markup for the new Starmap and high-tech and colonial cargo elevators.
+Progress was made toward Pyro’s initial release. This involved finalizing the placement of outposts and integrating content, such as the new ‘defend’ mission.
+Alongside this, the Landing Zone team continued to work on the Cargo feature, including freight and ship elevators for hangars.
+## Locations (Montreal)
+Montreal’s Locations team began the year closing out mandates, starting new ones, and planning for 2024. For example, they closed out the final bug fixing for additional derelict settlements and kicked off the whitebox for building interiors. They also continued their work on the Distribution Centers mandate.
+## Mission Design
+Mission Design continued to fix Siege of Orison for the live release, tackling many long-standing issues using new evidence. Work also continued on Blockade Runner, including finishing iteration cycles and fixing bugs.
+Numerous quality-of-life fixes were also made and planning was done for future releases.
+## Narrative
+The Narrative team came back from the holiday break to multiple large-scale initiatives that will add more story and character content into the game. They also met with the various design teams to generate text for some of the systemic missions being introduced in upcoming patches.
+The team then looked back to the existing lore and science of other planets and moons to make adjustments based on gameplay needs.
+“This back and forth is crucial to aligning the established lore to maximize fun game loops, like resource gathering, as well as endeavors undertaken by the Environment team.” Narrative Team
+On the Narrative Design front, the team continuing examining existing behaviors and looking for ways to fix bugs and pops while building a more comprehensive system based on what was learned during Squadron 42’s development. The first initiative is building a general civilian line set to populate larger spaces. The team is also looking at updating the tourist behavior to accommodate large-scale events like Invictus and IAE.
+Another volley of lore posts hit the website in January too – a Whitley’s Guide on MISC’s unique Reliant lineup, a Portfolio on Pyrotechnic Amalgamated, which dives into the history of the famed mining company, and finally a Galactapedia article exploring Humanity’s perilous connection with AI development.
+## R&D
+In January, further progress was made on the temporal render mode for atmosphere and clouds. Among other things, ghosting around cloud fringes was reduced. Also, a code interface was implemented to allow gas clouds to hook into the temporal reconstruction process, as R&D would like to explore the possibility of sharing this render pass. This will allow gas clouds to benefit from associated performance improvements as well.
+Furthermore, the support in capturing and extracting auxiliary call stacks for memory corruptions (specifically, double deletes and write after free events) mentioned in last month's report was implemented on both the engine and tool sides, with its integration into Sentry currently being investigated by Turbulent.
+## UI
+In January, a Building Block framework was worked on for the freight elevator UI. This was accompanied by the ongoing creation of art mockups to ensure a visually cohesive experience. A user-experience (UX) pass is also underway for the freight elevator and Resource Network mandates. Additionally, wireframes were crafted for the commodity kiosk UX, while attention was given to enhancing the overall user experience within the item shop.
+## VFX
+Last month, the VFX team focused on fixing ‘log spam’ that had built up over time. This involved solving minor data errors that don’t break the game but can be problematic to devs working in the editor if too many accumulate. For example, a missing texture referenced by a particle effect.
+They also continued to support several locations, including the latest version of Siege of Orison and a few Pyro outposts.
+## Web Platform
+Last month, a new Launcher team was created to enhance the user experience of the RSI launcher. Their first major focus is the development of Launcher 2.0, which will bring a fresh UI design and up-to-date technology to support the Star Citizen community. The Evocati community was given the first version of the new launcher to assess the sign-in, download, verify, launch, and game library location features. Testing will continue up to its release to the wider community.
+Alongside this, the Content Experience team worked on a simple image component to provide an efficient solution for image management. With features like lazy loading, customizable formatting, and centralized control, it streamlines performance, scalability, and flexibility. Its easy integration and prevention of content shifting make it an essential tool for maintaining a unified image-handling approach.

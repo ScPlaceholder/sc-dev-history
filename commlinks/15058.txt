@@ -1,0 +1,44 @@
+## Greetings Citizens,
+Star Citizen Alpha 2.0. development update. Week Four… let’s go!
+Well it’s been a fun week working on the game. As much as it can be stressful at times, it’s easy to forget what an amazing project we’re all working on thanks to you guys with your incredible support. Everything else aside, we are all really happy to be part of the team building the dreams in to a reality! The First-Person Universe will be something that has not been done before in the history of video games so any project this ambitious is always going to be a challenge – and who doesn’t love a challenge! Nothing worthwhile comes easy.
+Star Citizen is a game we’re building to be enjoyed for many, many years to come and we’re now reaching at a turning point on a very special journey together with the 2.0 release. We hope we don’t leave you waiting much longer for this first real taste of what Star Citizen can become. It was a tough decision to make in putting our efforts behind this one huge release because it always had the potential for added risk for delays in production but we know it was the right decision to make for good of the project because it will give us the right foundations to build upon for the long term. A Publisher might not have been so brave because they don’t have the BDCE (Best Damn Community Ever!).
+Get out your lucky pants and three-leaf clovers out because Murphy’s Law was in full force this week! No, it’s not a new game feature – we suffered some unfortunate news in our Lead FPS Programmer falling off his bicycle and breaking his wrist! This certainly wasn’t in the schedule so with him out of action for a few weeks we’ve had to pool some resources from other areas to help pitch in with getting 2.0 out of the door. It’s certainly not what we needed at such a critical time in the project but these things do happen.
+In better news, we’re very nearly finished with our Excludibir process, with just one more QA report thus far of missing assets from the Release build with the Gladius causing a black screen hang on the Tutorial of the game. So that’s been addressed and should hopefully be the end of it for 2.0.
+The new ship UI screens we posted footage were very warmly received last week which is exactly the kind of feedback that really gets a buzz around the office and makes our community such a great group of people to work for. We are never totally sure on how something will be received until it’s out there so that was certainly a good way to dip our toe in the water with this one to check the temperature with you guys. We have now finished up the last of the gameplay code hooks so that is in full test now to make sure that clicking all of those buttons will actually do something! Please note that the sections that are labelled as “System Offline” in the video will not be functional in this release but will be coming in subsequent patches as we iterate on it.
+The item component for EMP is being hooked up and in put in to full test this week so we’re eagerly anticipating the results of that and Design have been busily reviewing the new IFCS Flight Modes – SCM (Space Combat Maneuvering), Precision and Cruise. These are coming all along nicely but it’s always weird to begin with when first testing out a new control system. It often takes time to get familiar with them and we want to ensure that you guys get a solid base so that we it feels comfortable and fun and can then iterate from there.
+The worst bug of all bugs that’s been a thorn in our side over the past week has been server degradation. It took the whole QA two days to track this very nasty issue down but one of our programmers has just at the time of writing this report committed a fix which we hope will be verified as fixed in the next QA build. The issue was gradually preventing players getting in to a game server after an extended play period so we came to suspect a leak and had to go about back-tracking the sequence of events leading to the issue to look for what might have caused it. It was an awkward one to repro because it needed a large amount of players testing for hours on end. We eventually managed to trace it back to an issue with the ship selector and the player accounts so we really hope that this fix will alleviate a number of related issues that we were experiencing on the server-side. It’s been a perfect example of how one small discrepancy in the build can have huge knock-ons!
+Speaking of knock-ons, we’ve also unearthed some new Blockers on our Release builds with the as listed below in the bullets but fortunately we have workarounds for them all in our Profile Builds so have been able to continue our work – however, this sadly means that the build is not ready for public consumption yet!
+Production, QA and Dev are doing some serious triage work on the remaining unresolved issues and looking for any creative problem solving to get a solid release candidate together. We’re making some tough decisions to agree upon what is classed as a “must-fix” for Release. The triage will help us minimize the chance of any further unnecessary knock-ons and get you something to play sooner rather than later!
+Below we have a list of high level items that you might like to scan over to see what the various teams have been focused on this past week…
+## Gameplay and Engineering
+- Fixed a major issue where the server performance would degrade over time
+- Fixing memory leaks in the new zone system when destroying vehicles
+- Working on fixes for Quantum Travel
+- Working on a fix where multiple ships going to the same destination don’t end up inside each other
+- Working on a fix for being teleported back to the start point when emerging from Quantum Travel
+- Implementation and balancing of a new fuel type – Quantum Fuel
+- This depletes in Quantum Travel and requires players to refuel or risk being stranded in deep space
+- Network optimizations
+- Performance optimizations
+- General bug fixing
+## UI
+- Bug fixing and polish
+- Removed the tool tip to heal other players when you are near an injured player, since we have temporarily removed the ability to do so until we fix the animation for the medpen.
+## Art
+- Bug fixing and polish
+Animation
+- Bug fixing and polish. ADS is much improved, and I’m looking forward to doing more FPS combat playtests around the stations outside of the Armistice zone.
+Audio
+- Mastering and implementation of recorded dialogue
+- Designed custom convolution reverbs, mainly for interior spaces
+- Polishing of audio across the whole of the crusader map
+- Working on improving the sound design for EVA
+- Continued improvements for ship fly-bys
+- General bug fixing
+## Blocking Issues
+- Server degradation preventing causing spawning issues (fix committed)
+- Quantum Travel causing a crash on Release
+- Player not able to pick up a weapon for FPS at Security Post Kareah on Release – BREAKING: This is fixed!
+- Climbing in to small and medium ships causing the player to spawn at point origin (0,0,0) on Release
+- Low repro cases of Quantum Travel failing to deliver the player to the intended mark on Release
+- Refueling is broken at CryAstro

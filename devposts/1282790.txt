@@ -1,0 +1,52 @@
+## Star Citizen Patch 3.2.0n
+Alpha Patch 3.2.0n has been released to PTU, and is now available to test!  Patch should now show: PTU-795153.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Known Issues:
+- The Citadel legs a appear distorted in the PMA of the player model.
+- Player ships are unable to stop 50 meters away from an opponent.
+- We are tracking a client hang/freeze. If you freeze, please leave the game frozen for 5 minutes so we can collect data.
+- QT Spool Indicator is missing from Flight HUD.
+- Escort missions do not progress past the rendezvous stage.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- New "destroy probe" mission.
+- Mining: Scanning, mining, extraction, and Prospector function.
+- Flight and function of the following: Avenger series, 600i, Eclipse, Blade.
+- Orbital quantum travel.
+- G-force effects.
+- Ship power tuning and power triangle usage/effects.
+- Manned and remote turrets.
+- Group system.
+- Quantum linking.
+## Feature Updates
+Universe
+- Added the Hornet Flashfire mount to Dumper's Depot shops at GrimHex and Port Olisar.
+- Added more random variation in mineable rock composition.
+- Removed "Equip to" buttons from Kiosks, for now.
+FPS
+- Further weapon balance: P8-SC ADS recoil reduced, altered Custodian recoil, P4-AR ADS recoil stabilized and reduced, very small damage increase for Demeco and Gallant, reduced delay after firing Arrowhead.
+UI
+- Uneditable weapon hardpoints should now be faded out on the VMA.
+Ships and Vehicles
+- Updated scanning "ping" functionality included detection ranges and "blob" generation.
+- Updated to the number of mineable rocks and rock AR markers.
+## Bug Fixes
+- Entering the remote turret of the Super Hornet should no longer kill the engines.
+- Player corpses in Star Marine should no longer have the prompt for "invite to party".
+- Weapons mounted on a gimbal should no longer lag behind ship motion.
+- Players should now be able to purchase the De Leon shoes.
+- You should once again be able to try on clothes and inspect weapons.
+- Fix for dramatic performance drops when mining/surface scanning.
+- Offline players should no longer appear as online on the mobiGlas commlink.
+- Fixed unusual numbering system on Eclipse dashboard.
+- Shop kiosks should now consistently have button art.
+- When exiting the pilot seat, the player should no longer snap back and end up standing in the seat.
+- Ship weapons should now properly overheat and cease firing.
+- The Blade's weapons should no longer be able to be swapped.
+- Medium and heavy armor should now be available on the Star Marine loadout editor.
+Technical
+- Performance improvement for bullet spawning.
+- Fixed 4 server crashes.
+- Fixed 5 client crashes.
+- Fix for client hang when toggling decouple.

@@ -1,0 +1,47 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9280065.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 1 (Possible Wave 2 shortly after)
+Server Info: PTU Channel - US/EU
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+## Known Issues
+- PU - Multiple Locations / Transit - At locations with a Transit Loop, one direction of the loop ceases to function - 100% Repro (May need to take the 2nd tram at most cities)
+- PU - Orison - Locations / Inventory - Storage Access kiosks at The Vision Center at Orison do not display any inventory - 100% Repro
+- PU - Stanton - Orison - Locations / Shopping - Physical Shopping - Quick buying items on display at the Orison Vision Center ends in transaction error about invalid Player Inventory
+- PU - Missions / UI / Reputation - Affinity appears to decrease after successful mission (UI Issue and reputation is still increasing) - 100% Repro
+- PU - UI - Kiosks / Terminals - Global Chat - Pressing Enter when interacting with any terminal opens the Global Chat causing player to lose game interaction - 100% Repro
+- PU - Stanton - GrimHEX - Locations - Transit - Hangar Elevators - Hangar Instance elevators can be called and arrive at the current floor but the doors do not open - 100% Repro
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (High Chance)
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Bug Fixes
+- Fixed an issue causing cargo hauling mission reputation to overflow causing reputation to be negative (STARC-121699)
+- Fixed - PU - UI - Inventory - Item Previews in the Inventory Interface are larger than intended (STARC-104826)
+- Fixed - AC - Pirate Swarm - AI / Vehicles - The enemy AI can become inactive and drift out of bounds
+- Fixed - PU - UI /Missions - Blank / Empty Yellow HUD objectives present at top right of screen
+- Fixed an issue causing hangar elevator sounds to play on entrance to hangar
+- Possible Fix - PU - Physics / Locations - Instanced Hangars - When players leave their hangar through an approved gateway, the server may not recognize they have transitioned from their hangar zone, causing global loss of physics and interior zones (STARC-120365)
+## Technical
+- Fixed 1 Client Crash
+- Fixed 4 Server Crashes
+- Fixed a Backend Service Crash
+- Fixed an issue causing 30007 mismatch errors

@@ -1,0 +1,40 @@
+Gunnery - Aim Assist Suppression
+As a hold button binding you can disable all aim assists that your gunnery system does for you. While most player won’t need this, it might help in the occasional PVP match when pilots use maneuvers that distract the bullet prediction. You can find the key-binding under Vehicle - Weapons. It is unbound by default
+Gunnery - ESP
+- ESP was reworked to account for existence of multiple PIPs.
+- We decided to remove all player facing ESP options except for the a single “strength” slider. This allows us to tune ESP individually for every ship differently, avoid confusion what the settings mean and remove potential exploits for PVP environments.
+- ESP is also used during precision targeting, but the ESP point is the ship itself and the radius is as big as the ship.
+Gunnery - Weapon Tuning
+All weapons in Star Citizen have been retuned and have very diverse characteristics. Since that is a complete diversity pass there will be certain outliers. Please keep using as many different weapons as you can and feedback to us which weapons work for you and which don’t.
+As a rough guideline we split the weapons into the following categories:
+- Anti-Fighter: high projectile speeds, low DPS
+- Anti-Material: low projectile speeds, high DPS
+- Unspecialized: jack of all trades that are neither very fast nor very damaging.
+- Specialized: highly specialized weapons (distortion weapons, scatter guns, mass drivers, etc.)
+Targeting - Button changes and Auto Targeting
+The targeting system now features an auto targeting functions. You can tell by the shape of the target brackets when it is on or off. Auto-Targeting will automatically switch to the next best hostile target in your view. This is useful in a furball or when trying to quickly re-target after chaff is dropped.
+- By default it is enabled but any kind of manual targeting interaction will disable it.
+- You can always HOLD T to enable and disable it.
+Targeting - Subtargeting
+The functionality for sub-targeting has slightly changed. When you press R to enable it, the first sub-target will be the one closest to your crosshair. Further presses on R will then iterate to the next available sub-target based on the angle to your crosshair. After a certain time (currently 0.75s) the order will reset and your next press on R will again target the sub-target closest to your crosshair.
+Use LALT+R to disable sub-targeting.
+You can tell that sub-targeting is active when the target bracket is not surrounding the ship but an area on the ship itself.
+Targeting - Button changes and Sub-Targeting
+- T (short): reset target in view and iterate
+- T (long): Enable / Disable Auto-Targeting
+- R: Cycle sub-targets and iterate (Initial selection is based on your crosshair position. Further presses cycle outwards)
+- LALT+R: Disable Sub-Targeting
+- 4: Reset to closest attacker and iterate
+- 5: Reset to closest hostile and iterate
+Head Bobbing & Look Ahead
+There were several updates to the head-bobbing which is now reacting a lot more to g-forces and rotational movements. Unintended motions from missing eye stabilization have been removed. The only thing that remains is the slight breathing motion.
+Due to the legacy HUD layouts in 3.23 (where the HUD elements are placed between the dashboard and the player) there is a risk that certain players might get motion sick. In that case you have the option to freely define the strength of the headbobbing. In the options menu go to the game settings and set G-Force Induced Head Movement to 0. That gets rids of the head bobbing.
+Look Ahead is a small helper where the game tries to help you to look at the direction you might be interested. Certain people might find this jarring as well, so it also can be turned off. Either by LALT+L or disabling it in the options. The appropriate options are called Pilot / Turret / Driver - Look Ahead - Enabled.
+Keybind: ATC Cargo Transfer Request changed
+To avoid conflicts with look ahead, the keybind for calling ATC has been moved to RALT+N.
+G-Force Induced Afterburner Zoom
+By default the zoom during boosting is now enabled. When you boost you will see visual effects and FOV changes. You can change the strength of that via the options.
+Quantum Traveling
+- Your quantum drive will automatically be spooled once you are in NAV mode.
+- To initiate a jump align yourself with your jump target and long press the left mouse button (LMB). (Change coming in next build)
+- Holding B is now reserved for switching master modes instead. (Change coming in next build)

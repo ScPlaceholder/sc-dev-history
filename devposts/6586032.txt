@@ -1,0 +1,3 @@
+In general the speed limiter does not affect the acceleration ... what we have though is so-called "ramp-down-jerk" which scales the accelerations down once you get close to your goal speed. The amount varies by ship and we will not remove that because it smoothes the movement out.
+However some ships are tuned a bit too strong in that regard where the jerk value is too low so that it actually affects the intended tuning. But we're currently overhauling all tuning values for the MM patch so we'll look at those as well.
+So you will not be able access 20Gs from 0 to 5 m/s ... in your case the acceleration would last for 30 ms which is less two frames at 60 fps.

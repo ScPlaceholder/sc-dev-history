@@ -1,0 +1,48 @@
+## Star Citizen Patch 3.6.0n
+Alpha Patch 3.6.0n has been released to PTU and is now available to test!  Patch should now show: PTU-2130837.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Law and Criminality System
+- Weapon optics
+- Ship component degradation
+- Ship combat balance: Ship shields, missile damage, missile counter-measuring
+- Flight: Hover mode, acceleration control
+- Head tracking
+- P-72 Archimedes
+- Hacking gameplay
+- Pip accuracy and ship flight jitter
+- Vanguard Warden and Hoplite
+Known Issues
+- Dropping the hacking chip on planetary surfaces can cause it to fall through.
+- Entering a no fly zone while in hover mode will cause the ship to get stuck.
+- Weapon optics on display shelves can't be purchased.
+- Significant first person framerate reduction can occur.
+- Textures will display across the visor on some helmets.
+- Depending on ship, sometimes when attempting to file an insurance claim the timer will either start with a long delay or never start at all.
+- The cargo lift elevator of the Reclaimer may move the wrong direction.
+- AI ships have an unintended wing wobble behavior.
+- NPC beacons are sometimes unable to find a safe spawning position and fail to generate.
+## Feature Updates
+General
+- VoIP and FoIP should now be on by default in global chat.
+- Reduced audio-driven camera shake from ship weapons.
+Missions
+- "Contract no longer available" should now show when a mission has already been accepted by another player.
+## Bug Fixes
+- Entering free look during landing should no longer cause the player to be locked in free look once exiting the ship.
+- The mission related server blade should no longer fall through ships.
+- Security forces should now be able to detect illegal goods during scan checks.
+- The S71 scope UI should no longer be affected by motion blur.
+- Gray boxes should no longer appear on the sights of some optics.
+- Modified the shield bubble on the Vanguard so it now covers the turret, guns, and animated bays.
+- Fixed an issue where the Hornet's cargo module took no damage.
+- Players should no longer be attacked for failing to comply after getting fined for a misdemeanor amount of cargo.
+- Hacking chips should no longer have collision issues within ships.
+- Removed turrets from GrimHex temporarily to avoid them shooting at players who claim their ships.
+Technical
+- Fixed 3 client crashes.
+- Fixed 3 server crashes.

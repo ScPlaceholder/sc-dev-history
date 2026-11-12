@@ -1,0 +1,9 @@
+Brush - Static object with no gameplay associated. Eg wall, floor.
+Entity - Object with some form of gameplay/logic. Can be dynamic. eg ship, character, weapon, terminal.
+Prefab - Editor-only grouping of objects for convenience.
+Object Containers - Group of exported objects, including but not limited to entites. Can include other object containers to build hierarchies. Eg Room, building, town, city, planet, system.
+Entity-Aggregate - Run time grouping of entities that should update together to simplify multithreaded code. Eg ship+guns+items.
+Zone - A static or moving reference point in space, into which objects can be added, as well as child zones. Used for various spatial searches such as visibility testing. eg planet, spaceship, space station.
+Cheers,
+Ali Brown
+Senior Director of Graphics and Procedural Tech

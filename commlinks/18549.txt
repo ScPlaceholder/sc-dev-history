@@ -1,0 +1,51 @@
+On December 22, 2021, we launched Alpha 3.16: Return to Jumptown, which introduced a number of new features and changes, including the release of the Dynamic Event Jumptown 2.0, the grav-lev rework, and derelict ships with traps to avoid and valuables to secure.
+This was a unique patch cycle. As we mentioned in a Roadmap Roundup back in December, Star Citizen Alpha 3.15 took longer to get out the door than we had initially planned, which limited the amount of time we had to stabilize the 3.16 code base. For this reason, we opted to branch from the 3.15 development stream to avoid risking overall stability (which has been the best we've had in years). Taking this approach meant we'd operate on the same code base that's currently on the live servers, while manually integrating 3.16 features (specifically those we deem low risk to integrate).
+The following is a postmortem from the senior developers themselves, detailing what was delivered and their thoughts on how it went.
+Vehicles
+John Crewe, Vehicle Director
+The Vehicle Pillar had a relatively small delivery for Alpha 3.16, with the Vehicle Feature and Experience teams primarily focusing on delivering the grav-lev rework.
+## What went well
+The prior state of grav-lev left a lot to be desired, both from the internal side and the public-facing side, as it never quite behaved how we wanted. Numerous issues were present with it both technically and visually that the rework tackled and almost entirely fixed. The experience now is much more visceral, allowing players to select their height and make much more dramatic banked turns without the risk of rolling. Crash recovery and auto descending after dismount also fixed long-standing issues with the system where bikes would often be left unreachable or immobile.
+## What didn’t go so well
+Overall, the new system is significantly better but still has occasional issues detecting surroundings, typically when entering more confined vehicles. While many vehicles were never intended to have grav-lev bikes inside, we want to make the experience better for those who give it a try.
+## What we’ll do in the future
+On the Vehicle Content side, we released the Drake Cutlass Steel. This debuted alongside additional work from the Actor Feature team who expanded upon their mounted-gun tech to allow it to support animated deployment states. The Steel provides an alternative dropship to the popular Anvil Valkyrie, rivaling it in guns and troop transport capacity with a smaller and more nimble chassis. In future patches, we’ll look at its handling and armor values to help improve its survivability coming into dropzones, where it’s currently not quite hitting the desired goals.
+## AI
+Francesco Roccucci, AI Director
+The AI team didn’t have any major deliveries for Alpha 3.16. Our main focus was on improvements to the Bartender experience.
+## What went well
+In general, the release branch has been very stable for us, allowing us to close down a lot of issues, submit a lot of improvements, and work well together towards a very specific goal.
+## What didn’t go so well
+We had several cases of submissions stomping on other changes, especially on the Mannequin animation database (ADB) side. This caused previously fixed bugs to resurface, which led to some frustration.
+The current structure we use is good in terms of keeping some branches more stable, but it can also require the team to dedicate more time when integrating fixed bugs in the feature streams.
+## What we’ll do differently in the future
+We are currently focusing on the creation of feature testmaps. These will be the gate when validating submissions as they will make sure that changes don’t have side effects or contain wrong data.
+We also want the team to sit down and define a checklist that needs to be followed before doing submits until we can get more automatic validation tools.
+## Locations
+Todd Papy, Star Citizen Live Director
+## Derelict Ships (MTL)
+## What went well
+The level designer owned all gameplay aspects of the location, including where it was located, the navigation gameplay, the distribution of gameplay ingredients and lootboxes, which mission was available, and the flow within each location.
+Internal playtests and data from the PTU provided a lot of meaningful feedback on navigation and readability. The team was extremely impressed with the level of feedback coming from the community, which will help as these types of locations are developed. All interaction by the community was really appreciated by the team.
+The collaboration between the Design, Art, and Lighting teams was fun, efficient, and provided impressive results with minimal frustrations.
+## What didn’t go so well
+Getting traction on features supported by other teams was difficult at times (mines, loot, mission debug, scanning).
+We didn’t have enough QATR (Quality Assurance Test Request) testers. This resulted in the team having to find and write many of the bugs that affected these locations.
+We had some setbacks surrounding the branching to release process (mentioned in the intro above) that ended up condensing the amount of time we had to release. This resulted in a last minute rollback, re-branching to an older version instead, which caused strain on the team, and has been discussed as something we would really like to avoid doing again.
+## What we’ll do differently in the future
+We’ll kick off with a better task breakdown and define the level structure and production workflow before we start building stuff.
+An entity sanity pass will be done before use (the caterpillar assets had many issues) and allow more time for polish and iteration. We’ll also aim to get the first playable version at the actual location earlier, and an audit of features and dependencies on other teams should happen earlier.
+For testing, we’ll provide QA with early, elaborate design documents to allow their test plans to be ready on time for QATR and be more effective at finding legit game-breaking issues. The testers should also have proper tools for testing missions and forcing missions in certain locations.
+## Jumptown 2.0
+## What went well
+The original/initial drug lab outpost was quite bland and didn’t provide any visual art for the player, opportunities to explore and loot, or provide any PvP/cover to players. For Jumptown 2.0, we wanted to change things to deliver a better player experience.
+We had a strong initial kick-off where we laid out the limitations of what we could do that was agreed on and stuck to. We then gave the outside of the drug labs a visual overhaul, adding options for both ground and roof cover. On the inside, we provided the players with physical cargo dispensers to haul cargo from and new and improved drug lab sections. It was really great to have the time to expand the outposts more than we'd anticipated and I think it's much better for it.
+## What didn’t go so well
+The last-minute addition of the mounted turrets was a bit hairy; ideally this should have been built in from the start.
+While it’s great to see these outposts updated for the Dynamic Event, they will ultimately be replaced when we create the v2 of high-tech outposts.
+We faced some struggles related to having the team split between Austin and the UK. Moving forwards, we will look into having more thorough handovers and an additional stakeholder based in the EU timezone to improve collaboration.
+As mentioned above, having to switch content streams so late in the process resulted in additional strain on the team.
+## What we’ll do differently in the future
+Overall, the new and improved drug lab is significantly better but still has some issues and we believe that if there were more time and support from other teams, the overall experience of the event could have been much better.
+One aspect that we would want to improve on is the size of the base and drug lab. However, this will require a more significant time investment. By making the inside bigger, we would have more options for cover and PvP gameplay. Another aspect we could improve on is how players enter the base. By adding extra entrance and exit points, we could avoid players being ambushed by others through the only door.
+Finally, it would be good to spread the cover further out from the lab to provide more cover from above from incoming ships and bombers, which would encourage more ground-based PVP action.

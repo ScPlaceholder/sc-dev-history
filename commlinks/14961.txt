@@ -1,0 +1,44 @@
+## Life in a post-Big-merge world.
+Lobby Menu Loadout Screen Annotated
+Lobby Menu Loadout Screen
+Jason Hutchins, reporting for duty.
+My production partner at Illfonic, David, sums it up well this week. “For the most part, this week has been spent stabilizing game-dev and getting everything back in order there after the merge, which is still ongoing.”
+Across the company, people are working hard on stabilizing our development branch in order to get us back into the shape we were in for the release of 1.2.0. The unified development focus is a great thing, and necessary to carry us across the finish line. Nobody wants to play this module as much as I do. Well, maybe Tyler does. He just figured out how to double jump.
+Note to self: Talk to Todd and Tony about double jumping…
+Last week I said I hoped we’d be doing some playtests this week, and QA has been able to do just that! The next segment of Which Glitch promises to be a good one.
+It’s typical in these cases to find some missing assets, and once missing assets are restored to find that related code got clobbered. Each and every day is the dance of finding blockers, fixing blockers, and revealing the next blocker. I’m proud of what our team is accomplishing each and every day in our pursuit of bringing Star Marine to the masses. With that, let’s take it to the bullet points:
+## Gameplay Engineering
+This week, there was plenty of work on the gameplay engineering side! We finished off code support for reloading while in cover and added a feature where a player’s item in hand will be placed back onto the body where it was pulled from. This is for holstering weapons, gadgets, and eventually looting or swapping equipment. Additionally, we added a hurt speed scale to all armor sets, which makes it so that designers can modify the speed of player movement when they are in an injured state on a per armor set basis. This way some armors may be very heavy, and slow you down more, or armor could give a power assist to slow the player or NPC down less.
+There was plenty of cleanup, too. We went through all the V7 loadouts/weapons/armor and then engineers removed references to old v5/v6 weapons/armor/loadouts. Next, we investigated other cover issues in which some interactions in prone are broken. Support was added for area shapes to HQ capture points, and we rapped up and handed off the Headquarters game mode to designers at Foundry 42 UK. We restored the necessary gadget xmld that didn’t survive the merge, and are now working on a list of other glitches related to the cover animation.
+Gemini LH86 Ballistic Pistol
+Gemini LH86 PBR Test
+There were plenty of plain old fixes this week, listed below:
+- Fixed an issue with entering cover while ADS and ADS Firing.
+- Fixed a crash when joining/ending a round due to a bug in GameObject extension cleanup and dependencies.
+- Fixed allowed game rules for Gold Horizon.
+- Fixed breath stabilization in prone.
+- Fixed and cleaned up prone rolling.
+- Fixed bone names to reflect new v7 rig.
+- Fixed weapon accessory attach points.
+## Animation
+New Iron Sights for the Gemini LH86 Ballistic Pistol
+Our animators were hard at work this week dealing with the new weapon rigs. They regretted and explored all weapon animations to the new rigs and then reskinned and exported all weapons.We’ve zeroed the sights on the weapons based on updated numbers from John Crewe and re-exported all the stocked and pistol animations. Fixes to mannequin errors caused by missing assets are done, and work is ongoing on Juke assets by an animation engineer. We also updated the pistol animation assets and the stocked animation sets with ADS and Hand IK bones this week, and troubleshot a number o fasset errors found in the editor.
+## UI
+Gemini LH86 PBR Test
+In the attached screenshots, you can see that the Lobby and in-game load out screens have been implemented in the game using the new player character art by HVR. QA testing has revealed some minor issues, as noted on the screenshot. These issues won’t stop us from the initial releasing to PTU, and can be polished up later. The UI team also submitted code for the collision detection widget. A ‘press R to reload’ UI hint is ready and has flown off for code review. We also made a fix to the MedPack item, changing the keybindings for healing others so that it requires a hold.
+## Audio
+Gemini LH86 PBR Test
+Audio engineers finished attaching sound to reloading animations (klick!) and they implemented the holster/draw foley audio for the shotgun (ker-woosh). Ongoing work includes teaming up with programmers to fix some issues with the mannequin which are preventing other weapon drawing animations to play, bullet and laser crackles and player hit UI feedback. We also expect to review injured/dying state audio early next week. And finally, audio ended the week working on grenade sound effects, which was blocked by some of the animation bugs earlier in the week.
+## Network Engineering
+While the programmers in Austin are working on GIM, chat services, and overall network stability fixes we have engineers at BHVR, Turbulent, Wyrmbyte, and F42-UK setting up to test the backend services needed in order to send leaderboard data to the website, as well as platform package info to earn and spend REC on Star Marine equipment. This will determine what you can equip during Star Marine matches. Some backers will have access to some stretch goal weapons in Star Marine, though everything will be available for REC. This deserves its own post, and we’ll have more for you when we’re ready to launch to the PTU.
+## Art/Weapons
+Meanwhile, at Foundry 42 Frankfurt, Tobias and Todd are working on a couple of new ship’s weapons. In an effort to consolidate our weapon designs Tobias is looking at the way ship’s components are made so the look and feel of manufacturers that also make personal weapons is consistent and visually distinct. A Behr looks like a Behr, a Gemini like a Gemini, for example. We’ll cover that in another feature story at some point.
+Here’s an example of missing assets discovered after the merge, and during general clean up:
+Light Marine Helmet Visor Line Art Sample
+Last week, we had an artist create some line art that designates the bounds of the interior helmet geometry. An example is attached so you see what I mean. A UI artist will use this to tell where they can place the various visor widgets in the UI: Radar, health, chat widget, etc. Some of the helmet views are more obstructed than others. This line art can also be colored to match helmet manufacturer color schemes, as needed. The art was done using the v6 rig, rather than v7. We then, in a fit of zealous asset clean up, removed all the v6 work that was no longer being referenced. Don’t worry, the assets aren’t gone as we aren’t destructive in our asset clean-up, it simply manifests in a bug where nobody has helmets, even though they are called for in the loadout. An honest mistake, and one easy to make when so many moving pieces are involved.
+All of the weapons will need their skin weights adjusted for the v7 rig, as well as the corresponding weapon rigs updated to zero out the sights at the proper ranges. Bryan is doing this on most of the weapons now (the LH86 and Devastator being the exceptions). Ze’ev is currently fixing the missing work on the LH86 (as shown in the screenshots this week, and Devastator 12 (shown in previous updates), and Bryan will get those adjusted once he is finished.
+What’s left for weapon art? Not a lot. Lee Amarakoon in Austin is working on new VFX for the laser sniper as of today. We’ll be reviewing and tweaking that next week.
+Ze’ev will start on the new smaller ADS gadget next week as well, as soon as the asset adjustments above are done.
+## Conclusion
+That about does it for this week’s Star Marine report. I know that this still seems like a lot of work each week, but the absolute truth is that we’re getting these tasks knocked down and are moving ever-closer to our goal of getting the game in your hands. We are still dealing with the aftershocks of the code merge, but everyone on the team agrees that we can see everything coming together. Next week, we’re hoping to have a company-wide play test. The results will be valuable, and almost as importantly we’re eager to share our progress with the rest of CIG. First the whole of Cloud Imperium, then the world!
+P.S. We’ll leave you with a fun bug we discovered this week below. Presenting: The STAR MARINE LUNCH TRAY DISPENSER!

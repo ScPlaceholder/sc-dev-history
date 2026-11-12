@@ -1,0 +1,2 @@
+Star Citizen uses an "internal offset" for the head angles. When you enable head tracking that offset is reset ... this is to avoid your head going all over the place when you switch in and out of head tracking.
+When you use the "raw" option in the VOIP / FOIP / Head tracking options, that internal offset will be ignored though ... as it then uses directly the output from the head tracking device. That option though only makes sense with TrackIR.

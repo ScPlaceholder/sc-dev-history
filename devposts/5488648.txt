@@ -1,0 +1,7 @@
+We are very hesitant towards any options which disable certain graphics features.
+The are two reasons for that:
+1. We want a coherent experience for everyone.
+2. Having more options complicates the rendering pipeline. Since Gen12 was a complete refactor of that it didn't make much sense to add any of this yet.
+I know there are people who dislike certain effects like motion blur etc but adding all these options makes it also harder for us to test and not break anything, hence slows us down.
+Once gen12 is completely done and there won't be any major changes to our renderer anymore we can think about adding more options for you :slightly_smiling_face:
+EDIT: Because people got confused and thought we'd remove any of these options: No we won't. Everything you can turn off right now will still work in 3.18. I was just talking about new options.

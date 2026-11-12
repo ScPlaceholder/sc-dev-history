@@ -1,0 +1,45 @@
+## Star Citizen Patch 3.19.0 8478820
+Alpha Patch 3.19.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.19.0-PTU.8478820.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Testing Focus
+This build is an accumulation of the hotfixes applied to the PTU over the weekend that helps resolve multiple server crashes and debugging for invisible players.
+- General Stability and Performance
+- AI FPS Combat Improvements
+- Lorville Skyline 2.0
+- Salvage Contract Missions
+- Tractor Beam - T0.5 - Item Attaching and Detaching
+- Ghost Hollow Reclaimer PVP Mission
+- Mission Density Management
+- Mining Balancing v01
+- New Player Experience
+Known Issues
+- Ships can explode from collision with invisible asteroids
+- FPS weapons are selling for much lower than intended
+- Player corpses will not despawn at Grimhex
+- Art assets will clip through the Train during the journey in Lorville
+- The entrance of the Lorville hospital has a large Visarea issue
+- Substenance items lack "Store" option when carrying the item in Inner Thoughts
+- Players cannot see partied player ships when Quantum Linking together
+- Multilocation - Locations / Shopping / Interactions - Pharmacy kiosk terminals "Use" interface and Interactions are misaligned
+- Weapon Feature / Game Code - Tractor Beam - If you activate the tractor beam in hangar, you can bring the activated tractor beam back and use it in armistice zone
+- Aegis Reclaimer - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction from ship exterior
+- ARGO MOLE - Vehicles / UI - The interaction prompts for ALL mining turrets are easy to miss/in unintuitive locations for players
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Multivehicle - UI / Vehicles / Mining - Mining UI is appearing in Low Resolution
+- Racing - Locations - A specific rock formations on the Yadar Valley race track are visible to some player and not others
+- Crusader - Security Post Kareah - Core Tech - Physics - Actor / Player - Transitioning from EVA onto Kareah's landing pads has a high chance of instantly killing the player
+- Transit - Area18 - Orison - Shuttles/Trains/Trams - Players are falling through sometimes disappearing trams and shuttles to their deaths
+- RSI Constellation Multivariant - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Multilocation/Multivehicle - Shopping - Store kiosks won't populate locations if certain ships are stored
+- Multitool - FPS Hull Scraping - The Salvage attachment has the VFX of the tractor beam and does not function
+- Security Post Kareah - Mission Content / Art - VisArea - Contraband screens have a visarea issue
+- Yela - Grim Hex - Mission Giver - AI / Missions - Wallace Klim becomes stuck under the floor near the hangars after being streamed out and streamed back in
+## Bug Fixes
+- Fixed - PES / Inventory - Cannot equip looted items after restarting game session
+## Technical
+- Fixed 3 Server Crashes

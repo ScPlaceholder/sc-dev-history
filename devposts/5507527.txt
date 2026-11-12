@@ -1,0 +1,5 @@
+We have isolated two remaining different problems (those are impacting both roles and ranks btw):
+- one about the access rights (this is producing the Javascript error you saw)
+- one about the fact that attempting to save a rank or role with a value you already used for this exact same rank or role will produce a duplicate error (you will still have a success message even though nothing was saved)
+Bottom line is attempting to change any rank or role until we fix these would be useless as it will not work.
+I will keep you posted!

@@ -1,0 +1,74 @@
+Welcome everyone to the second Alpha 3.17.2 Patch Watch! Following last week's Patch Watch, we want to share how some of the working going to the upcoming event, Siege of Orison, is making a positive impact on the general quality of life in the 'verse.
+The new Dynamic Event: Siege of Orison will pit you against the Nine Tails in a brutally epic battle in the otherwise idyllic Orison in Alpha 3.17.2. However, what is often overlooked above the hissing of rocket launchers and barking of gunfire that follow every play test are the myriad quality of life improvements and bug fixes that will impact your gameplay experience in every part of the PU.
+To highlight the work of the numerous teams involved, and to give you a sense of the many benefits that will be coming to the game with Siege of Orison, we're sharing a list of some of the new features, bug fixes, and improvements that have been added during development so far (with even more to come during our PTU testing phase!).
+## New Features & Fixes (not only) for Siege of Orison
+Actor Feature Bug Fixes
+Various bugs were fixed by the Actor Feature team:
+- Downed players may become desynced
+- AI ragdoll wildly after changing from animated entities after death
+- When a player performs a stomp takedown on a downed or unconscious player or AI, the body will violently change position, possibly damaging the player
+- Vaulting can seriously injure the player
+- Players can see other player’s death markers, leading to exploits
+- During the "bleed" generated from electric weapons, AI will fail to animate while walking
+- Corpses with their eyes closed don't consistently have eyes closed on the client
+- When the player attempts to grab an item or weapon off the floor, the animation can be delayed
+- Medical bed drug dosage for injuries they cannot treat is too high to be useful to the player
+- Dragging and dropping a magazine into the player's armor can cause the inventory to infinitely load and not respond to player action
+A way to randomize the facial features (not skin or hair color) of NPCs was also added.
+AI
+Various bugs were fixed by the AI team:
+- AI staring into the sky while roaming
+- AI can be seen twitching and rotating erratically
+- Enemy AI will sometimes continue to fire on the player if the line of sight is broken
+- AI can briefly shoot through cover when a player moves behind it with a chance to hit them
+- Enemy AI appear to be shooting at the player's feet when the player is within close proximity
+- Hostile AI do not engage revived players
+- AI spawn alert instead of casually patroling
+AI will now also turn on flashlights out of combat based on the time of day.
+Art & Props
+Various bugs were fixed by the Art and Props teams:
+- Invisible collision on many assets interferes with projectiles
+- Animation faults
+- Most corpse poses do not have closed eyes
+- Corpses cannot hold weapons
+Audio
+Fixed an issue with sounds (apart from the player's breathing) being disproportionately affected by injuries.
+Content
+Fixed a bug causing LMGs, sniper rifles, rail guns, and missile launchers to not spawn in loot crates.
+Physics
+Fixed an issue where water volume buoyancy was 'world space,' causing things to float in the air near water volumes.
+Lighting
+Player and AI flashlights now have flares.
+Mission Features
+Various bugs were fixed by the Mission Feature team:
+- Players cannot see marker over other players and AI sharing the same mission
+- Spawn closets don't clean up corpses when they reach a defined limit and time
+- Spawn closet doors remain open for corpses
+- NPCs cannot block doors from closing, causing AI to get trapped
+- Spawn closets don't treat unconscious AI as dead
+- Spawn closets are not completely server dependent
+- A mission isn’t being notified of spawns
+- Corpses don't spawn loot
+- AI does not spawn loot on their person (Cave AI, Nine Tails, Security forces: Crusader, BlacJac, Hurston, and microTech
+Vehicle Content
+The Vehicle Content team fixed an issue with the Greycat PTV loading in exceptionally frail, allowing it to be destroyed by punching.
+Vehicle Features
+Various bugs were fixed by the Vehicle Feature team:
+- Elevator vis areas
+- Shuttles teleport back to their start point when they reach their destination
+- Shuttles can arrive with both of their doors open instead of just the one connected to the platform
+- Second shuttle can intersect with first, killing occupants
+- Spawned ships can appear in different locations on clients and servers
+- Players can bypass the No-Fly Zone by logging out and in via their vehicle's bed while within the NFZ
+- Skyway shuttles in Orison flying in reverse
+- Elevators can push players out of the world
+They also added a new shuttle type that can be called by players like an elevator.
+Weapons
+Various bugs were fixed by the Weapons team:
+- Players can achieve an infinite ammo exploit when switching between weapons dropped by AI
+- When various weapons are pressed up against objects, they phase through the wall allowing the player/AI to shoot through objects
+- Weaponry dropped by dead AI will continue to fire, greatly affecting client performance
+- Empty magazines are not automatically discarded by the player
+- User cannot scroll the medgun while ADS, making it impossible to modify the dose for other players/NPCs
+- Emptying and reloading consecutive magazines will break reloading
+Players will now also drop empty magazines.

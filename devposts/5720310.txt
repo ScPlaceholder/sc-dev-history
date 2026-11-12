@@ -1,0 +1,3 @@
+I already know what the problem is. It's happening due to the visor being rendered into an offscreen buffer. This happens if too many fullscreen render-to-texture objects are in the scene. The limit is 4 right now.
+So if there are 4 holovolumes on the screen this happens. Working on a fix as we speak:)
+Oh and the black bands are only visible with high fov/ultra widescreen. Otherwise you just see the UI getting blurry (which means it's being rendered in a lower resolution into the offscreen buffer)

@@ -1,0 +1,52 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9290875.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: All Backers
+Server Info: PTU Channel - US/EU
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+- Blockade Runner Global Event
+Blockade Runner will start tonight shortly after build release with reduced mission requirements. We are initially setting these requirements very low to about 400 but will adjust if needed.
+## Known Issues
+- PU - Multiple Locations - Storage Access Kiosk / UI / Locations - Opening the Storage Access Kiosk will cover the player's POV.
+- PU - Stanton - Orison - Locations / Shopping - Physical Shopping - Quick buying items on display at the Orison Vision Center ends in transaction error about invalid Player Inventory
+- PU - Actor / Inventory / Armor - When dragging armor from your inventory  onto your character, it creates a box beneath you that can cause  jumping and clipping through the world
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Missions / Service Beacons - Escort beacons are not visible to other players
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- PU/AC - Character - IFCS/camera - Female character does not respect g-force induced head movement game option settings
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Features & Gameplay
+Ships and Vehicles
+- Added many new Cargo Hauling Rentals to all Rental Shops (except Vulture for now)
+## Bug Fixes
+- Fixed Planetary Rocks and Asteroids becoming invisible and causing player collision and explosions (STARC-22985)
+- Fixed - PU - Personal Hangar/ATC - When an instanced hangar is assigned an exit door, the external door does not open properly (BUG-179699)
+- Fixed - PU - Personal Hangar - Leaving to Menu with a ship on pad does not stow personal hangar for next shard joined (STARC-120885)
+- Fixed - Stanton - Players are observing extremely high entity counts across Stanton as well as high memory usage
+- Fixed - Ships and Vehicles that are parked anywhere inside of a personal hanger are always stored when the player exits to menu
+- Fixed - PU - Missions / Hauling / Cargo - Mission offerings below rank 4 of hauling career can force players to accept boxes 16 SCU and up, blocking early freight ships from completion
+- Fixed - PU - Stanton - Locations / Hangar - VMA - Vehicle cannot use the repair, restock and refuel services in hangar until it has left and landed again
+- Fixed - PU - Location / Freight Manager - Freight Manager kiosks can become stuck with 'Loading Contents' or 'Transfer Completed' popup
+- Fixed - PU - Stanton - Cargo Hauling - Mission Content / Game code - Moving cargo from the warehouse to elevator and back in the freight manager cause the cargo to be lost
+- Fixed Kopion Horn sell prices being lower than intended
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 4 Server Crashes
+- Fixed a Hybrid Service Crash
+- Fixed a Client Crash Related to Intel 13/14th gen CPUs

@@ -1,0 +1,44 @@
+## Star Citizen Patch 3.14.0o
+Alpha Patch 3.14.0o has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7671777.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: All Backers
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Known Issues
+- Some players have reported that they are Unable to select a system (may require an account recopy as well as logging fully out of the launcher and logging back in and possibly deleting user folder)
+- Editing PMA After Changing mobiGlas case prevents mobiglas functionality
+- Distortion weapons are bugged against large ships
+- Missiles do not follow flares as a countermeasure
+- Missiles can hit the players ship when they are fired whilst the ship is moving forward
+- Various UI markers are faded and hard to read
+- Security Ships do not recognise illegal goods onboard a ship when being carried by a player
+- Ships are not fully repaired after repairing / refueling them in VMS
+## Feature Updates
+Gameplay
+- Ongoing Ship Capacitor / Weapon Balance, and Polish Pass
+Reduced overheating across all thrusters. Adjusted shield absorption scaling for all damage types. Fixed heat issues with some energy weapons. Tweaked Hurricane Health Points. Updated shield regen on MSR and some drop ships. Corrected MPUV Speeds.
+- Missile Operator Mode Polish Pass
+Polish pass on assisted gimbal and missile cone UI. Added warning messages for missile mode when missile is too close or too far to lock.
+- Adjusted friendly fire thresholds
+## Major Bug Fixes
+- Fixed an issue causing Crusader atmosphere to extend much further than intended which blocked QT
+- Fixed an issue that was causing players to receive a 16008 error constantly on loading in
+- Fixed an issue causing shields to get hit multiple times on a single distortion explosion
+- Players should no longer sometimes see black squares instead of smoke, clouds and fog
+- Synced Assassination mission objectives should no longer spawn extremely close to each other
+- Fixed an issue causing players to not be able to stand up from New Babbage tram seats
+## Technical
+- Fixed 2 Client crashes
+- Main Thread Deadlock Fix

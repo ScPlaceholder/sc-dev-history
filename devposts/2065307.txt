@@ -1,0 +1,1 @@
+While we do store some data at half-precision (ie 16-bit) to save memory, CPUs don't provide instructions to operate on them, besides to convert them up to 32-bit or back down. If the instructions were there though, then you're right that it would probably be faster in some cases.

@@ -1,0 +1,92 @@
+## Star Citizen Patch 3.5.0k
+Alpha Patch 3.5.0k has been released to PTU, and is now available to test!  Patch should now show: PTU-1350446.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- IFCS: Heat Rework, Atmospheric flight, Arena Commander
+- Balance: Manual gimbals, auto-convergence, cannons vs repeaters vs scatterguns, ship roles
+- Locations: ArcCorp, Area18, Lyria, Wala
+- Star Marine: All game modes
+- Autogimals
+- Female Character
+- DNA face customization  system
+- 300i
+Major Known Issues:
+- Some aspect ratios do not work well with the ship HUD.
+- Insurance claims at Lorville are currently not functioning.
+## New Features
+Universe
+- Added security reinforcement mechanic
+AI security pilots in active pursuit of a criminal now broadcast their location, resulting in a steadily increasing density of security  that will engage the felon.
+Ships and Vehicles
+- Added automated gimbals
+Automated gimbals are an additional setting for gimbals that allow them to attempt and automatically track targets within a cone in front of the ship.  The cone is designated by a dashed circle, which is separated into two when the gimbals do not have a lock on the target and closes into a single circle when they develop a lock.  This mode can be cycled to via the "R" key.
+## Feature Updates
+General
+- Added delay to carousel selection in DNA system to communicate click better.
+Universe
+- Further lighting polish for Area18.
+- Added QT locations and markups for other city points of interest around ArcCorp
+- Updated city tile and Area18 LODs.
+- Disabled ship AI over Area18 to test performance gains.
+- Numerous bug fixes for missing assets on ship displays.
+- Further updates to add Female emote animations.
+Missions
+- Adjusted Recco's patrol mission text and reward price.
+- Reduced the number of NPCs inside large and extra-large hangars.
+FPS
+- Updated firing sounds for the Arclight pistol.
+Star Marine
+- Removed "Training" as an option in Star Marine.
+Ships and Vehicles
+- Altered values on all ship engine glows for better visual feedback.
+- Expand the angle in which "reticle focus" targeting detects and targets.
+- Updated Constellation, Starfarer, Vanguard, Cutlass, Reclaimer, Hammerhead, and Retaliator turret HUD.
+- Changed the priority of HUD warnings so critical failures show above general warnings.
+## Bug Fixes
+- Clovus Darneeley's first mission should now correctly give the mission objective.
+- Scoring kills in Star Marine should now register on the leaderboard correctly
+- Fixed multiple weapons to not firing after reloading from an empty magazine.
+- StarMap zoom should once again function correctly.
+- Delivery lockers should now issue items even if multiple players abandon boxes within.
+- Repeated Klim missions should no longer fail to produce mission objectives.
+- The button for the lift in the Reclaimer should once again function.
+- There should no longer be a severe positional mismatch between the player driving a vehicle and those watching.
+- There should no longer be replaceme assets inside of the Retaliator.
+- The Million Mile High Club door at Area18 should no longer become stuck open.
+- The retrieve button on the ASOP should no longer be able to be used to bypass trading travel times.
+- Stowing small items should no longer end up placing them at the player's feet.
+- Scan UI should no longer get stuck on the screen if activated during quantum travel.
+- The circular progress bar should now properly update when scanning a mineable entity.
+- Hair should no longer poke through the helmet.
+- Players should no longer receive service beacon spam when loading into Stanton.
+- Quantum travel markers should no longer appear around Hurston in a giant cluster.
+- Clothing in shop kiosks should now display their manufacturer's logo.
+- Fixed multiple Female clothing materials to the correct textures.
+- Updated position of several shopkeepers so they correctly stand at their store counters.
+- Fixed Clovus Darneely's dialogue audio cutting off when there is no mission available.
+- Fixed incorrect textures on Female Odyssey armors.
+- Fixed FoIP Facial animations not being played on local player unless in selfie cam.
+- Quantum Fuel on the star map should now correctly update live while in quantum travel.
+- Players should no longer leave behind a stuck QT markers of themselves when they join a party.
+- You should no longer be able to hear atmospheric flight noises while inside hangars and elevators at Area18.
+- Accepting Pacheco's mission should now properly populate to the player's active mission list.
+- Ground vehicle barriers at Lorville should now function properly.
+- Fixed collision preventing ship interaction inside Astro Armada.
+- Fixed collision preventing shop item interactions at Area18's Dumper's Depot.
+- Automated turrets at underground facilities should no longer continue firing after destruction.
+- AI security should no longer spawn inside of Arena Commander matches when a player with a wanted level is present.
+- Fix for client hangs/stalls around Area18.
+- Service beacons should now properly broadcast to other players.
+- Player to player calls should no longer drop shortly after the train leaves the platform at Lorville.
+- Short orbital spline jumps should no longer occasionally crash the player into the planetary body's surface.
+- The prior customized character should now load when revisiting the DNA system.
+- Movement should no longer cause the players HUD/UI to occasionally blur.
+- AI ships should no longer jitter and rubberband.
+Technical
+- More performance tweaks for Area18.
+- Fixed 13 client crashes.
+- Fixed 6 server crashes.
+- Fixed a server deadlock.

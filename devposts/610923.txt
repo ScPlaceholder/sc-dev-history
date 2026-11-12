@@ -1,0 +1,5 @@
+We are currently testing a potential definitive fix for the mobile keyboard behaviours.
+This has been a huge problem to fix and we've been waiting on our upstream (we use an open-source component for input) to address this but it seems it is completely out of their priorities to properly support mobile, so we have begun to attempt a fix ourselves.
+The problem stems from how mobile browsers use the composition events (like for autocompleting words, or inserting multiple characters), this is usually very apparent on Chrome under Android.
+Believe me, we want this bug fixed, ASAP.
+-b

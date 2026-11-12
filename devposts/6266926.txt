@@ -1,0 +1,60 @@
+Star Citizen Patch 3.21.0
+Alpha Patch 3.21.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.21.0-PTU.8761472.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+New Jump Point Rest Stop Stations and Lagrange Points
+New Legal/Illegal Mission: Retrieve Consignment
+New Illegal Mission: Kareah - Steal Evidence
+Repel Raid on Orison
+New Crusader Platforms
+Wheeled Vehicle Handling Improvements
+Driver Remote Turret QoL Improvements
+Known Issues
+This build adds extra logging to track down issues with: Moving parts of stations can be invisible / not synchronized with visuals, leading to unavoidable ship collisions
+- Anvil Lightning F8C Executive Edition - PU - Vehicles / Art / GFX - Executive edition is missing textures and displays as grey
+- Anvil Lightning F8C ALL Variants - Vehicles / Weapons - VMA - Some of the ships weapons are missing and cant be adjusted such as missiles and gimbal slots (Reopened)
+- PU - Stanton - Jump Point - All Jump Points - Rest Stop (R&R) - Locations - The Patient Check In medical kiosks do not work and are stuck on "Checking availability" loading
+- PU - Stanton - UI / Locations - Multiple Locations - Crashing in a restricted area will give you never lasting "Restricted Area" alerts
+- PU - UI / Art / Graphics - Green Imperial Medical Regeneration Kiosks screen have no UI
+- UI / Menus - Controls - Keybindings - The Default Preset Images for the keyboard and gamepad control schemes do not match what is bound by default
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- MISC Hull C - PU - Vehicles - Can't undock the Hull-C
+- PU - Crusader / Orison - Locations / Transit - It's possible for turn gates to not open preventing players from entering shuttles
+- PU - Art - Items / Character / Textures - Multiple clothes / armor / undersuit variants lost color / using the default base color
+- PU - Multivehicle - Vehicles / Ships / Ship Components / Weapons - Laser Repeater occasionally stops firing but still consumes ammo
+- Hull C - Spawn / Cargo / LEO - Hull C with cargo can spawn extended in a large Hangar instead of Docking Port
+- Stanton - Multivehicle - RSI Constellation Series - Ship Feature - Snub Ship clips through Constellation variants in vertical position when retrieved from ASOP
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout after dying in the armistice zone
+- Stanton - Actor - Personal Inventory - Right click item interaction menu cannot be closed once opened
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Stanton - AI - Mission Giver - Wallace Klim is not visible at his location in Grim Hex
+## Feature Updates
+Gameplay
+- Vehicle and Ship Improvements
+Updated Nova Tank Ground Vehicle Handling. Greatly increased the nose health of the Gladius. Made Several Thruster performance changes and Fight Tuning changes for the P72. Polish Pass on Star Fighter acceleration decay.
+- Added F8C Lighting into all AC game modes
+Ships and Vehicles
+- F8C Assets, Fuel tank, and Missile Rack Polish Pass
+## Bug Fixes
+- Fixed - Stanton - Multivehicle - Locations - Medical Bay Bed and Screen Obstruction in Hangars
+- Fixed - PU - Stanton - Mission Feature - Defend - Defend mission does not start after arrival
+- Fixed - PU - Stanton - AI - Social AI - Animation - NPCs that lean are facing the wrong direction when performing the animation
+- Fixed - PU - Stanton - UGF - Mission Content / AI / Locations - Unconscious AI can prevent spawn closet doors from closing when inside them, causing no more AI to spawn
+- Fixed - Stanton - Missions - Supply Re-Up - Drop off location for SLAM doesn't appear to be working properly and wont complete the mission
+- Fixed - PU - Stanton - Mission Content - Salvage - Player who accepts shared salvage mission will not have permission to be in salvage area
+- Fixed - PU - UI / Art / Graphics - Green Imperial Medical Regeneration Kiosks screen have no UI
+Technical
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes

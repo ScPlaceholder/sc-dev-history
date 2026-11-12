@@ -1,0 +1,68 @@
+## Star Citizen Alpha Patch 4.3.2
+Alpha Patch 4.3.2 has been released to all backers!   Patch should now show: VERSION 4.3.2-PTU.10397247.
+- Audience: All Backers
+- Server Info: PTU Channel
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Starting aUEC: 15,000,000
+## Testing Focus
+- Stability & Bugfixes
+- Structural Salvage Updates
+- Frontier Fighters Finale
+## Known Issues
+The issues below are meant to help give a better indication on things that may happen during gameplay and do not always occur 100% of the time.
+- PU - Stanton - ASD - Location / Respawn Screen - Player will be rescued and respawn back at the facility after being incapacitated
+- Multi-Location - PU - Pyro - AI / Locations - Turrets at Farro Data Centers are not firing
+- ARGO ATLS  - PU - Mounts / Cargo / Tractorbeam - The ATLS is unable to pull cargo off a ship's cargo grid after it is moved from place of origin to new location
+- PU - Stanton / Pyro - Armor / Loot Box / Inventory / Actor - Equipment and armor dropped on the ground will be suspended in mid-air making them unable to be interacted with
+## Features & Gameplay
+Weapons and Items
+- Updated the following weapons to have consistent SCU sizes (these were inconsistent outliers): Volt LMG, FS9, P4AR, P6LR, F55, Arclight, Ravager
+Heavy weapons (Shotguns, Snipers, LMGs)
+New sway profiles on heavy weapons, Sniper has it's own profile (except the aztkav)
+Snipers
+- Fixed an issue where ballistic snipers would not penetrate shields
+Atzkav
+- Increased damage from 100 to 120 (can 1 tap heavy heads)
+- Increased projectile speed from 500 to 750
+- Fixed all atzkav optic skins to have a functional optic
+Scalpel
+- Aim down sight time decreased from 0.4 to 0.28
+A03
+- Aim down sight time decreased from 0.435 to 0.35
+LMGs
+VOLT LMG
+- Damage increased from 6.5 - 9
+- Min fire rate with heat modifier increased from 0.15 to 0.2
+- Damage modifier with heat decreased from 8 - 6
+- This should make the VOLT LMG more effective at low heat keeping it's damaging profile feeling good throughout usage as well as buffing the high end
+SMGs
+Ripper
+- Fall off damage start increased from 22.5m to 35m (Has no fall off akin to other laser weapons)
+Custodian
+- Decreased max spread from 7.25 to 4.5
+- decreased shot per spread from 1.02 to 0.77
+- increased damage per shot from 12 to 13
+- Aim down sight time decreased from 0.235 to 0.21
+C54
+- Decreased max spread from 6.5 to 5
+- Decreased spread per shot from 1.35 to 0.8
+Quartz
+- heat damage multiplier adjusted from 3 - 1
+- Heat, Heat multiplier adjusted from 1.5 - 1
+- Damage increased from 185 to 225
+LMGs
+F55
+- Decreased max spread from 13.5 to 6.5
+- Increased spread decay from 2.5 to 4
+Special
+Reverted an unintended adjustment to the animus missile launcher (speed and range decreased reverted)
+## Bug Fixes
+- Potential Fix: CFP vs HH - Fix for the body in EliminateSpecific despawning while the mission is in progress
+- Potential Fix: RSI Constellation All Variants - PU - Vehicles / Server Meshing - Docked Merlin disappears from Constellation upon server authority transition (STARC-150580)
+- Potential Fix: Origin 600i ALL Variants - PU - Vehicles - Glass door visareas show outside of the vehicle rather than the connecting room
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector - Missions - Art / Narrative - Wikelo banners have the incorrect textures asking for the wrong item
+- Potential Fix: PU - Stanton - ASD Delving - VFX / Art / Assets - The destruction VFX on the destructible servers placed around the ASD Delving facilities look incorrect
+- Potential Fix: PU - CFP vs HH - Missions - Audio / Dialogue - Lima Endicott has no comms call notifications
+## Technical
+- Fixed 1 Client Crash

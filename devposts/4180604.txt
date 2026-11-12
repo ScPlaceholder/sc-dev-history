@@ -1,0 +1,67 @@
+## Star Citizen Patch 3.14.0
+Alpha Patch 3.14.0 has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7618230.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: Wave 1
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Current cloud tech is still in active development and not yet final. There's ongoing work on SDF occlusion which should help alleviate the graphical artifacting (visual dots in the clouds). Additionally, we are working towards having local VFX for the clouds (similar to the gas clouds around rest stops) which will make a big difference in overall quality.
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Known Issues
+- Gas Clouds on Crusader appear to have moving graphical artifacts that appear as dots. Current clouds are still in development and not final. See note at the top of patch notes.
+- Orison objects & textures loading very slowly
+- Single location will only appear if the player spools their drive before setting destination on the starmap (Workaround: Spool quantum drive before opening the starmap and then open it and set route)
+- Various UI markers are faded and hard to read
+- Unable to scan for FPS or ROC-sized mining deposits until very close
+- Port Olisar is missing QT marker
+- Large black cubes and bright light particles can been seen within the snow storm clouds on microTech & in the "dust" storm on Hurston
+- The AI at UGFs and Kareah will have desync issues
+- After being approved for a docking request, there is no docking UI present, making docking virtually impossible to complete
+- Unable to shoot with Hammerhead turrets, ammo displayed as 0/0
+- Missiles can hit the players ship when they are fired whilst the ship is moving forward
+- Security Ships do not recognise illegal goods onboard a ship when being carried by a player
+- Ping Scans are unable to detect FPS and Large FPS Deposits
+- Calls with players using certain seats or stations will display a grey screen
+- Players can clip through the exterior door of the 890 Jump whilst it is docked
+- Missions do not recognize players entering zone and AI are unresponsive or not visible to player during missions
+- There are uneven physics proxies at the hospital entrance which prevent players from taking trolleys, walking frames, and gurneys in and out of the hospital
+- Multiple ships can be observed having looping animations with their missile racks, impacting their ability to fire their payload. After the first fire, subsequent attempts to fire a missile can no longer work
+- The Pilots Weapons HUD will no longer be visible after entering / exiting a Turret
+- Cave FPS Missions - Mission is Withdrawn when nearing planet / cave
+- AI Ship Nameplates are missing and show as PLACEHOLDER
+- Intense fog can be seen in docking port interior at all rest stops with docking
+- The Player has no Collision when they are Manning the Mining Turret of the ROC-DS preventing damage from Weapons Fire
+- There is flashing that occurs intermittently when viewing the VMA in the MobiGlas at locations with environmental lighting
+## New Features
+Locations
+- New Planet: Crusader
+- New City: Orison Landing Zone
+Comprised of a latticework of platforms suspended in mid-atmosphere on the gas giant Crusader, Orison is considered one of the most picturesque locations in Stanton.
+- New Babbage Hospital Interior Location
+Adding in the interior of the New Babbage Hospital. This first pass will add in the location lobby and additional remodeling of the lobby near the habs in New Babbage to accommodate the hospital and gameplay in a future release.
+Gameplay
+- Law System v2: Surrender
+The addition of Surrender allows players to be arrested without losing their life, an important feature as the game moves closer to mechanics where the decision to surrender or risk death by fighting / fleeing will carry much more weight. Players will be able to surrender by coming to a halt and powering down their ships when ordered to by security. Security will halt their attack and arrest criminal players (and impound the ship if owned by a criminal). Surrendering will give the player a reduced sentence when sent to prison. All players inside a criminal's ship at the time of surrender, regardless of criminal status will be sent to prison when the ship is impounded. In the current implementation, players can not surrender to other players.
+- Missile Operator Mode
+Missile Operator Mode is a new operator mode that will be used to separate the gun and missile/torpedo gameplay within ships. Using this mode will give pilots more control over what missiles/torpedoes are fired, and give them more character and purpose in combat. They should no longer be viewed as ‘just another weapon’, but have a more distinct and important role in the overall flow.
+Accessing the Operator Mode: Access to the operator mode is given by a keybind (default middle mouse button), on a toggle (toggling out of the mode will enter the default mode for the seat). Upon accessing the mode, players will lose control of any other ship weapons and gain control of the missile systems. All other weapons will return to neutral gimbal positions, stop tracking, etc, while the missile weapon systems will deploy and the ship will emit increased signals
+Selecting Ordnance: Players will only be able to lock and fire one kind of missile class at a time (e.g. Ignite/Rattler/Arrester, not just size or tracking type). In addition, each missile rack will only be able to stock one model of missile (pre-existing split loadouts will still 'work' technically but are not intended to be supported so there may be UI issues). On entering the mode, one type of missile will be automatically selected, ordered by class for consistency across ships and play sessions. Players can then cycle forward and back over these missile types, with the currently selected missile prominent on the HUD, and the previous and next class of missiles also visible so the player knows what they will cycle to next. Players can set how many missiles they wish to fire in a burst (G and LAlt+G by default up to a maximum value). They must then wait for each missile to arm before it can be fired.
+Locking a Target: If a player is in Missile Operator Mode and has a Locked combat target, the missile will automatically begin locking onto the target. The locking process is no longer binary - after a minimum level of lock to acquire the target, the longer you lock for, the ‘better’ the lock becomes, and the harder the missile will become to spoof. This is achieved with a simple multiplier of the targets signal (e.g. a target may have a real signal of 1000, and at full lock the signal amplification may be x5, so the missile would perceive a signal of 5000 instead). This means that the missile requires other contacts to have a significantly larger signal than the original to be distracted by them. A target must be fully resolved (i.e. its signal must be the largest in the detection radius) before a missile will track it, meaning that enemy targets can try and outplay another ship locking a missile to them by releasing countermeasures or flying close to larger targets before the missile is even launched. If the missile's target isn’t fully resolved before launch, it will simply dumbfire forward.
+Firing Ordnance: At any point after the first missile has been armed, the player can initiate the launch procedure, which will fire any currently armed missiles and begin a cooldown until they can next begin arming missiles. If the player begins firing missiles without a lock, the missiles will be dumb-fired. This can be used for ground targets, bombing runs, emergency situations, or to avoid enemy ships being notified about incoming missiles/combat locks. If more than one rack has the same type of missile, then missiles will be expended from the racks in a staggered rotation (e.g. if three racks each have 8 Ignite missiles on, and the player chooses to fire 8 Ignite missiles, the first two racks will each fire 3 missiles and the third will fire 2, in ABC rotation).
+- Missiles - Guidance & Control Rework
+Converted missiles to use the IFCS guidance and control systems. This will improve missile performance and tracking ability, enabling greater control over general missile behaviors.
+Ships and Vehicles
+- New Ship: RSI Constellation Taurus
+Core Tech
+- Planetary Volumetric Clouds v1
+Initial version of a bespoke system to convincingly render multi layered, volumetric clouds of varying scale within planetary atmospheres. This initial version is meant for the Gas Giant, Crusader.

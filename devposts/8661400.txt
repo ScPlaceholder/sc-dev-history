@@ -1,0 +1,5 @@
+Thanks for the tag. I’ve not seen this issue, so we’ll do some digging and report back. But it’s likely one of two things:
+1. The new graphics settings are very different to before, and it may be that on 8GB GPUs you’re using a lower texture quality than the system auto assigned you previously. The streaming system is quite complex, but when theres too much content to fit then some textures need to be lower resolution, and depending on the art setup this can sometimes be too aggressive on some meshes.
+2. We’ve been overhauling the streaming system to make it much faster, and it’s possible this is just a bug. It could also be a combo of 1 & 2, ie a bug that is most evident when the system is pushed hard.
+Cheers,
+Ali Brown

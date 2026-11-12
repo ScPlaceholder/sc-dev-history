@@ -1,0 +1,41 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9165930.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Open PTU
+Server Info: US/EU - EPTU Channel
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Testing/Feedback Focus
+- Stability/Performance/Bug Fixing
+- New Features & Gameplay Updates
+Known Issues
+For 3.23.0 LIVE, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs. This is not the intended final outcome for missions and recovery and further changes are coming in a later release.
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Graphics / Vulkan - Flight HUD / FPS UI - No UI HUD with Vulkan enabled on AMD GPU
+- PU - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals for ground vehicles at Lorville gates get stuck on infinite load, accessing list of ships
+- PU - Stanton - UI - HUD / AR Markers - Misaligned HUD Markers with Ultrawide or TSR graphics upscaling enabled
+- PU - Gamewide - Using a medpen causes you to drop your weapon
+- PU - Locations - Transit - Elevators - Internal Transit Elevator shows up when called but doors remain closed, no carriage
+- PU - Greycat ROC  - Stanton - ROC Mining Laser Not Activating
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - UI / mobiGlas - Home App - After selecting a vehicle on the home screen the UI indicators appear pixelated and hard to read
+- PU - Locations / Vehicles / VMS - Can't repair/refuel/restock at Pyro Gateway Jump Point Station
+- PU - Stanton - NPE - Missions - Objectives can be softlocked by player leaving bed before their objective record has updated
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+## Bug Fixes
+Made further streaming optimizations for Distribution Centers to help prevent ships on the surface from streaming in before the location which was causing them to fall through and create performance issues.
+- Fixed - PU - Solar system wide Armistice Zone is keeping the Player from using their Vehicles and FPS weapons (STARC-108082)
+- Fixed an issue that was causing some Distribution Center Elevators to lose collision and drop players
+- Fixed - PU - Location / Transit - Grim Hex Hangar Elevators occasionally do not respond to calls (STARC-108985)
+- Fixed - PU - Law System / Legal Salvage - Players can gain Crimestat by fracturing a legal salvage contract target wreck (STARC-104177)
+- Fixed - PU - Stanton - UI / Shopping - Holding [F] Triggers Focusing instead of Quick Buy
+- Fixed - PU - Interactables - Locations - Lorville - Hab doors may fail to open when interacted with, even when there are no delays in responses for other interactions
+- Fixed - PU - Stanton - Actor / UI - Actor Status - mobiGlas - Oxygen does not naturally refill through intended means
+- Fixed - NPC locomotion is bugged during exact positioning into usable/cover causing them to slide and stop incorrectly
+- Fixed - AC - Custom Lobbies - Multiple game modes - Several game modes cannot be launched in a custom lobby (GravLev)
+- Fixed - Long Term Persistence - Salvage and refueling components do not persist between builds in LTP (STARC-99959) Note: This fix will only apply to items created after this fix was put in
+## Technical
+- Fixed 2 GPU Client Crashes (Inventory filter upscaling crash fix)

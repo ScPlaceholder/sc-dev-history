@@ -1,0 +1,48 @@
+PTU DGS/Client has been hotfixed with CL 10967244 for multiple stability issues as well as updates for audio buffer issues (STARC-186503) and mobiGlas deadzone issues.
+## Star Citizen Alpha Patch 4.5 RC2
+Alpha Patch 4.5.0 PTU has been released and is now available for all testers! Patch should now show: VERSION 4.5.0-PTU.10966564.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Engineering, Armor, Ship Balance
+- Vulkan Renderer and Graphics Settings Updates
+- Experimental VR
+- Physicalized Helmets
+- Snub Fighters and Interceptors balance pass
+- PU Loot Refresh/Collector Rebalance
+- Additional Hairstyles
+- Ore Refining Economy Updates
+Known Issues
+- Multi-System - PU - ASOP Terminal / UI - Incorrect ship is displayed on the ASOP
+- Multi-Location - PU - ASOP Terminal / UI - There is a chance that a blank information of the Vehicle will appear on Hangar Delivery Request using the ASOP Terminal
+- Multivehicle - PU - Vehicles / Engineering / Components / RN - UI / Kiosk - When using the Engineering Kiosk, the vehicle model can become offset by the actor moving around it
+- PU - Missions / Interactables - "Vanduul-Tech Smugglers" auxiliary station laptop with the code is missing
+- PU - ASD Onyx Facility - Research - Locations / Interactions - Loot room door doesn't open after selecting " Override "
+- Multivehicle - PU - Stanton - Dynamic Atmosphere / Vehicles / Engineering / Resource Network - Room connectors for external doors can be slow to update when entering or leaving station hangars
+- PU - Multivehicle - Fire Alarm - Engineering / Game Code / Audio / Vehicles - Fire Alarm SFX persist after Fire is extinguished until re-entering the affected room
+- SC - VFX Code - Vehicles - Deathmask VFX Does Not Always Trigger
+## Features & Gameplay
+Gameplay
+Engineering Balance Updates
+Ship Overkill: Once all ship parts reach 0 health we activate another health pool buffer (this amount is hidden). Once the buffer reaches 0 health, it will trigger an unavoidable explosion of the ship. If the player manages to repair the hull (to counter it), the buffer is ignored. If the hull reaches 0 health again the buffer starts again.
+Multi-shield Implementation: When a ship now has more than 2 shields, all shields will contribute to overall shield health, even the ones not given power by the generator. This will affect overall regen speed as the regen speed of up to 2 shields will be used based on power assignment. By default the shields with lowest minimum power requirement will be powered first.
+Ore Refining Economic Balance
+Refining of ores has undergone changes to a smaller volume of yield output (From ~85% to ~45%) while significantly increasing the refined sale price to compensate. Effectively, you can now transport more value of refined ore with smaller SCU space with this latest update.
+The base prices of nearly all commodities have been significantly increased across the board. This affects all major brackets of sandbox commodities. (32/24s, 16s, 8s, and 2s). Price differences within brackets have been pressed closer together in order for dynamic pricing to better influence which goods are optimal.
+## Bug Fixes
+- Potential Fix: Vehicle failures are being incorrectly triggered by any part of the ship being broken off (this was occurring with antenna, wing stabilizers, and even the smallest attachments to ships)
+- Potential Fix: RSI Perseus - PU - Vehicles / Engineering Gameplay – Switching from SCM to NAV mode turns off Engines and does not power the Quantum drive in the Perseus
+- Potential Fix: PU - UI / HUD - Missions / NPE - Notifications - Notifications are not being displayed on the HUD when an appropriate action is performed by the player after abandoning tutorial
+- Potential Fix: PU - Nyx - Levski - ASOP Terminal / Art / Locations - ASOP Terminal Kiosk Screen has excessive amounts of grime around the edges
+- Potential Fix: PU - Global - UI / HUD / Options Menu - The player's visor UI will continue to shake after Camera Shake is disabled in the options menu
+- Potential Fix: PU - Combat AI Feature / AI / Respawning - AI do not engage player after dying and respawning back at the location
+- Potential Fix: PU - Nyx - Vanduul-Tech Smugglers - Mission Content / AI - AI are not spawning inside the Polaris and Auxiliary Station
+- Potential Fix: PU - Nyx - Vanduul-Tech Smugglers - Missions - Mission Content - The AI Corpse in the Registration Room is missing
+- Potential Fix: PU - Missions / Interactables - "Vanduul-Tech Smugglers" auxiliary station laptop with the code is missing
+- Potential Fix: Multivehicle – PU – Vehicles / Engineering / SFX – Emergency alarm SFX continues to play after the player respawns
+- Potential Fix: Aegis Idris Series - PU - Vehicle/graphics - Bottom Idris turrets unable to see out of ship black screen covers view
+## Technical
+- Fixed 5 Client Crashes

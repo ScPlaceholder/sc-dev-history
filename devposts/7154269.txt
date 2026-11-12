@@ -1,0 +1,81 @@
+## Star Citizen Alpha Patch 3.24.1
+Alpha Patch 3.24.1 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.24.1-PTU.9315193.
+Audience: All Backers
+Server Info: PTU Channel - US/EU
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Starting  REC: 10,000,000
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+## Testing/Feedback Focus
+- Stability and Bugfixes
+- Argo ATLS (Available for Evo and Wave 1 testers to spawn)
+The ATLS Suit spawns like a ship in hangars from the elevator and there are a few known issues to know about for the ATLS
+- Players cannot exit the ARGO ATLS using the PIT Menu ( [Y] to exit should still work)
+- Player ragdolls out of the ARGO ATLS when incapacitated and snaps back in to the ATLS while still downed
+- Players in the ARGO ATLS suit don't react to getting shot
+- Unable to log out in a vehicle containing the ATLS (Remove the ATLS from the ship to logout)
+- ARGO ATLS is sometimes unable to lift 16 or 32 SCU crates, causing them to scrape on the ground (Workaround is to hold RMB to shoot it up in the air, and catch it again with LMB)
+- When launching crates with RMB, first LMB input will not function (Players just need to double click to activate the tractor beam again)
+- Tractor Beam placement can fail to ignore blocking geometry, causing unnatural collision on placement
+## Known Issues
+- PU - Area 18 - Commodity Kiosk - Players can't set the amount of Recycled Material Composite to buy
+- PU - New  Babbage - Brentworth Care Center - Insurance Terminal - Insurance  Terminal at Brentworth Care Center has no F-Interaction button
+- PU - Stanton - ASOP / Fleet Manager / UI - Players are unable to Retrieve Ships from ASOP
+- PU - Multiple Locations - Storage Access Kiosk / UI / Locations - Opening the Storage Access Kiosk will cover the player's POV
+- PU - Stanton - Multiple Locations - Inventory / Storage Access / Item Bank - There is a chance when accessing Storage Access that the inventory wont appear and or disappear when accessed/opened
+- PU - Stanton - Multiple Locations - Server Recovery / Locations / Transit - Shuttles and Trams for all Major Landing Zones will disappear after server recovery causing the player to fall to their death at certain positions along their route
+- PU - Stanton - Cargo Hauling - Mission Content / Game Code - After abandoning mission, returned cargo on freight elevator causes "Elevator Obstructed" error
+- PU - Mission / Cargo Hauling - Hull C cargo loads one box and stops loading the rest of cargo mission boxes and remains at 00:00 time
+- PU - Stanton - Locations / Performance - Client framerate drops to single digits at ArcCorp Mining Area 157 on Yela
+- PU - Stanton - Cargo Hauling - Mission Content / Reputation - Players are still able to reaccept the Intro mission despite being "not eligible"
+- PU - Stanton - Locations / Graphics / Personal Hangars - There is a noticeable streaming issues on the exterior geometry of the freight elevator depending on the players location in Self Land Hangars
+- PU - Locations - Transit - Elevator won't show up at Spaceport with high traffic
+- PU - Locations - Personal Hangars / Medical Hangars / Art - Medical elevator panels inside hangars are missing geometry
+- PU - Orison - Locations / Inventory - Storage Access kiosks at The Vision Center at Orison do not display any inventory
+- PU - Kiosks - UI - Item Bank / Freight Manager - Moving items will fail when the dragged item transitions between the two inventories unless you move the item quickly
+- PU - Stanton - Landing Zone (LZ) - Lorville / Area18 / Orison - Freight Elevators - Locations / Art / Graphics - There is a noticeable delay in loading the player's persistent hangar when they arrive via the elevator.
+- Crusader Hercules Starlifter ALL Variants - PU - Vehicles / Animation / Art - Personnel elevator is detached from vehicle and elevator doors do not open
+- PU - Stanton - Location / Mission - Klescher Rehabilitation Facility - Player is sent back to Klescher after completing "Need An Out" prison escape mission
+- PU - Tractor Beam / Physics - Multiple Active Tractor or Tow beams on the same object can make it float without an active tractor beam on it
+- PU - Lorville - Locations - Transit - HAB Elevators - There is a chance that the HAB elevators do not arrive when called
+## Features & Gameplay
+Gameplay
+- Vehicle Terminal Scrollbar Will Now Stay in Position When Swapping Screens to Deliver and Claim
+Ships and Vehicles
+- Argo Astronautics ATLS Suit (Currently Available for Evo and Wave 1 testers to spawn)
+The ARGO ATLS is a powered suit that the player can mount / enter, designed to assist them in performing more heavy-duty cargo movement tasks.
+The player can retrieve their ATLS via the Instanced Hangar ASOP Terminal. The suit cannot be retrieved via Spaceport ASOP terminals, or ground vehicle ASOP terminals.
+The ATLS has its own bespoke tractor beam, that acts differently to the handheld GRIN Tractor beams, and the Tractor Beam found on vehicles.
+Rather than picking an item up at the point where the beam hits its target, the beam will pull the tethered item towards the player, holding it above the ATLS, whilst the player moves the placement preview. Upon placing the preview, the item will then move to the placement location. The player can also reset the rotation of the preview by pressing < MMB >
+## Bug Fixes
+- Fixed - PU - Freight Elevators - Players are able to buy 32 SCU commodity boxes at outposts which are too large to retrieve with the freight elevator (BUG-176806) (Currently in a LIVE hotfix)
+- Fixed - PU - Stanton - ASOP / Personal Hangars / Vehicles - Error "Your Claim Currently Cannot Be Processed" when claiming/retrieving (STARC-74935)
+- Fixed an issue causing Missing Markers for Bounty Hunter Missions (STARC-121216) (Currently in a LIVE hotfix)
+- Fixed - PU - Shopping/Selling - Commodity Kiosk - Unable to sell carryable items (STARC-123434) (Currently in a LIVE hotfix)
+- Fixed - PU - ATC / Personal Hangar - When retrieving a ship, then swapping servers and retrieving another ship, they will both be present in your hangar
+- Fixed - Hull-C - Vehicles - PU - Cargo transfer is absent if spindles are not extended before entering loading bay (STARC-88176)
+- Fixed - Stanton - Ships / Vehicles - Commodity Kiosk / ASOP / UI - When player's have a pending manual sell order, the 'store' option will be missing from the ASOP Terminal
+- Fixed - Anvil Hornet F7A Mk2 - PU/AC - Vehicles/ IFSC - Atmospheric flight causes F7A Mk2 to pitch down and whip around
+- Fixed - Character Customizer - Male/Female - DNA / Blend/ UI - Top row blending heads not selectable (STARC-106854)
+- Fixed - Stanton - Missions/Hauling - Mission will NOT update/complete on delivery using the cargo deck with the Hull C
+- Fixed - PU - Stanton - NPE - Locations / Interactions - Stuck inside Habitation as door doesn't open (STARC-104559)
+- Fixed - PU - Personal Hangars - Freight elevator - Landing Zones Freight Elevator Stuck on Loading Contents (STARC-124244) (Currently in a LIVE hotfix)
+- Fixed - PU - Personal Hangars - When delivering a ship using ASOP, it appears to be stuck at 00:00 until leaving and re-entering the ASOP terminal (STARC-119399) (Currently in a LIVE hotfix)
+- Fixed - PU - Inventory - Multiple Locations - UI / Camera - Storage Access - Location Inventory interface opens behind the storage kiosk when using the new interaction flow (STARC-123515)
+- Fixed - PU - Stanton - Missions / Locations - NPE - Orison - New Player Experience mission won't progress past the "Prepare for Takeoff" objective (STARC-120564)
+- Co Pilot seat can now activate the Tractor Beam in the back of the Cutlass (STARC-119274)
+- Fixed - PU - Personal Hangar - ASOP/Ship spawn - Entities that clip under the ship elevator can break personal hangars and ASOP (STARC-120895) (Currently in a LIVE hotfix
+- Fixed - MPUV falls when cargo attached to grid (STARC-123417) (Thruster Strength Adjusted for cargo mass)
+- Fixed - When de-selecting a commodity and reselecting the cargo box size selection is reset when the selection should stay the same
+- Fixed - PU - Mission / Cargo Hauling - Hull C cargo loads one box and stops loading the rest of cargo mission boxes and remains at 00:00 time (STARC-88176)
+- Fixed - PU - Shopping - Trading - Commodity Kiosk - Unable to sell Ores due to "Transition Cost Mismatch" error (STARC-125264) (Currently in a LIVE hotfix)
+## Technical
+- Fixed 2 Client Crashes
+- Fixed a Vulkan Renderer Specific Client Crash when dogfighting
+- Fixed an Intel 13/14th gen Specific Client Crash
+- Fixed 8 Server Crashes
+- Fixed a Server Deadlock
+- Fixed 2 Hybrid Service Crashes

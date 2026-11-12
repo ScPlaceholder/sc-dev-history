@@ -1,0 +1,59 @@
+## Star Citizen Patch 3.18.1
+Alpha Patch 3.18.1 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.1-PTU.8410680.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Database Reset: Yes
+Long Term Persistence: Disabled
+Pledge Copy: Enabled
+Audience: All Backers
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+3.18.1 implements multiple new systems that should significantly reduce strain on the backend which were causing various issues with inventory, entitlements, and account loading. This also accumulates the numerous hotfixes that have been applied to LIVE over the last couple weeks along with a new database.
+- New Ship Delivery System
+- General Stability and bug
+Weekend Stress Playtests on PTU! This weekend we will have multiple 1 hour concurrency tests where we are trying to get as many people in as possible to stress the database services to see how well they are behaving and logging issues as they occur to address them.
+https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-alpha-3-18-1-update
+Playtest Schedule
+Each playtest will run for 1 hour each, starting at the times listed below.
+- Friday, March 24 - 8pm CDT | Saturday, March 25 - 1am UTC
+- Saturday, March 25 - 2pm CDT | Saturday, March 25 - 7pm UTC
+- Saturday, March 25 - 8pm CDT | Sunday, March 26 - 1am UTC
+- Sunday, March 26 - 2pm CDT | Sunday, March 26 - 7pm UTC
+- Sunday, March 26 - 8pm CDT | Monday, March 27 - 1am UTC
+Known Issues
+- Rented ships disappear from the ASOP list when Stored until terminal is reopened
+- Game clients may close without error or crash handler
+- Harvestable Deposits may be invisible to players, cause collisions or become unavailable for scanning, mining or salvage gameplay
+- The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Elevators and Trams are "Jittery" during transit of Player Character
+- When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Reclaimer main on-elevator control panels do not respond to input
+- Cargo may be invisible in multiple ships after being purchased
+- Unable to view ships inventory through NikNax
+- When attempting to start a refinery job, players receive the following error ; Something went wrong (Error code: 20)
+- Security Contractor Evaluation is not re-offered upon failure
+- Combat Service Beacon Progress / Rating inconsistent on missions
+- Security Work Assesment Remaining Hostile NPCs Not Spawning In
+- PTV wheels at the Orison BTR area can clip into geometry and become detached from vehicle
+- The snub fighter attached to Constellations lacks interaction prompts to enter it, making it unusable
+- Some ship wreckage erroneously give "No Material" text and do not let you salvage
+- Markers Will Randomly Disappear After Quantum Travel With No Route Set
+- The NPC Coffee Vendor is missing from the various 'Coffee To Go' stalls located throughout Stanton
+## Feature Updates
+Gameplay
+- Initial Ship Delivery
+This change we are making affects how you obtain your vehicle when logging into the game for the first time after a database reset. Instead of being immediately entitled to your home location in-game, ship pledges on our website will now be available at any ASOP terminal labeled as "Deliverable". You can make your ship available at the location for the first time by pressing the "Deliver" button, which functions similarly to the standard insurance claim but is free and only takes about 20 seconds. Once delivered that ship will be available to customize and be used. This change will help address entitlement database spam when new accounts are entering the PU for for the first time.
+- Arena Commander Customization Temporarily Disabled
+We have implimented improvements to the API that manages ship customization in Arena Commander and are exploring more, which we believe will further alleviate issues with entitlement. While these changes are being tested, ship customization in Arena Commander will be temporarily disabled for 3.18.1. You will still be able to select ships from your hangar as well as REC rentals, however. We will be providing several vehicle loadout changes in AC that you can use in the meantime with upgraded shield generators and weaponry that we've hand selected. This will temporarily update the loadouts of the base Gladius, Arrow, and Blade. This change will be temporary; customization will be reenabled in the following update. The next update will also include general fixes that didn't make it for 3.18.1's release and/or were blocked by issues with Persistent Entity Streaming.
+## Bug Fixes
+- Fixed - Players crashing out/quits mid using an ASOP terminal will brick it and make it unusable
+- Fixed - Arena Commander - Swarm - Player is unable to pick-up/interact with repair icon
+- Fixed - Ships - Cockpit - Actor animations - Occasionally unable to exit ship seat
+- Fixed - GPU - VFX / Locations - Gas clouds are causing a memory leak for players when observed
+- Fixed - Arena Commander - Players leaving during ready up causing incorrect waiting for players count and ready count
+- Fixed Various issues in Arena Commander where the waiting for players count would fall below 0 which would cause the match to never start
+- Fixed Issue where several player would join which would break the ready up system in Arena Commander
+## Technical
+We've made many dramatic changes to how the ASOP, client, server, and global databases handle entities and entitlements which should help address many of the various issues players have been seeing. While this isn't the complete resolution to the entitlement disruptions we are seeing, this should improve the experience overall.
+- Fixed 2 Client Crashes
+- Fixed 1 Server Crashes

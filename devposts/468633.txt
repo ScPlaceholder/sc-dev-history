@@ -1,0 +1,60 @@
+## Spectrum Alpha 0.3.6 - Release Notes
+(2017-09-14)
+## New features
+- Spectrum will now track Karma when other members upvote your content within each community.
+- Spectrum will now track your post count when you create forum threads or replies within a community.
+- Threads which contain roles that are tracked (e.g. staff posts) will now contain buttons to jump directly to those special replies within a thread.
+## Changed
+- Flagging posts in private orgs will no longer create misconduct reports
+- The RSI login page will now redirect you to your previous location in Spectrum
+- New Search UI to search for all, erased or nonerased content (nonerased being default)
+- Spectrum will now always display the member who soft-erased a reply or message
+- A new global permission can be given to roles to allow members to reveal and search soft-erased content
+- Member Profile Popup
+- Cleaner, more space-efficient design
+- Integrated message box to send a quick private message to the member without having to switch to the private message view
+- Post Count and Karma display!
+- Removed 'content' from flag notifications sent to officers (redundant)
+- Added send button to mini profile popup on mobile
+## Fixed bugs
+- Fixed long words in names breaking thread reply layout
+- Fixed tracked post links having 100% viewport height in Safari
+- Fixed broken channels filter in the thread creation view
+- Fixed large vote counts spilling out of vote button
+- Fixed broken 'continue this thread' link in nested mode
+- Fixed permalink modal on mobile incorrectly stating link had been copied to clipboard (now just selects text so user can copy it themselves)
+- Fixed nested reply collapse buttons only targeting and collapsing the last reply in a chain
+- Fixed bizarre behavior for renamed bookmarks when an entity referenced by a bookmark had been deleted.
+- Fixed thread reply actions button overlapping list navigator due to creation of new stacking context
+- Fixed long community monikers and handles breaking chat lobby layout
+- Fixed duplicate emoticon for emoji :slightly_smiling_face: :disappointed:
+- Fixed issue where "Convert emoticons to emoji" setting was not respected when editing a message
+- Fixed a bug where certain thread replies would not get updated in the search index
+- Fixed an issue where a link would stay active when removing a url from a message
+- Fixed issue with empty code blocks
+- Deleted messages will now properly show who deleted them
+- Member profile popup no longer swaps users due to lobby activity
+- Fixed message edit input not gaining focus when pressing up arrow in chat lobbies
+- Fixed Lobby getting into bad state when pressing up arrow to edit a message immediately after having sent one to the server and before the server response arrives
+- Fixed your own newly created chat message from visually jumping if another was received before the server responds to your message creation request
+- Fixed thread reply moderation menu appearing behind subsequent replies
+- Private community officers should now receive notifications about flagged content in their own communities
+- Fixed issue with URL containing @
+- Fixed infinite loop when crash in render and willMount contains async call
+- Fixed errors being thrown when a message list contains null values
+- Fixed thread reply mod actions menu behind hidden behind other posts
+- Fixed redundant thread tag hiding behind tracked reply button in threads
+- Fixed some alignment and color issues in thread and message items
+- Fixed chat messages being editable after deletion
+- No longer displaying broken bookmarks to entities for which users have lost permissions
+- Fixed missing member displayname in role update notifications
+- Fixed issue where underline and strike-through could not be use together
+- Member profile no longer throws error when opened from private lobby
+- Fixed issue with images not displayed on mobile in classic threads
+- Fixed a bug where a notification would be sent when being mentioned in a org you are not a member of.
+- Fixed a bug where an incorrect size was returned in OpenGraph tags for certain threads with uploaded images.
+## Known issues
+- The default filter (Non-erased) in the advanced search is not returning any results.
+- Post count and karma is not returned if you open the mini-profile from the "Last Activity" column in the forums.
+We are re-evaluating our versioning for Spectrum so expect a change in our versioning scheme range starting with our next updates.
+"Questions are for the briefing room, not the field. "

@@ -1,0 +1,63 @@
+## Star Citizen Patch 3.20.0
+Alpha Patch 3.20.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.20.0-PTU.8686278.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 2
+Database Reset: Yes
+Server Regions: US/EU (Please select one of these instead of BEST or loading will fail)
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Known Issues
+- PU - Audio / ASOP / Fleet Manager - ASOP Fleet Manager "click" audio loops after retrieving ship
+- PU - Shopping / UI - Kiosk / Terminal - Item Shop - All item preview thumbnails are displaying as armor crates
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- PU - Vehicle - MISC Prospector - Door doesn't work from the inside
+- PU - Missions - Service Beacons / UI - Beacons do not show up in 'Personal' tab
+- PU - Stanton - Missions / UI - Medical Rescue Beacon - The marker for rescue beacon is not showing on HUD or Starmap after accepting it
+- PU - Stanton - Missions - Rescue Medical Beacon - Service Beacon / Backend Service / UI - Downed player can't send another rescue medical beacon if the player who accepts it cancels
+- PU - Global - Locations / Art / AI - AI are floating above their seats
+- Multiple Locations - Inventory - Equipped items are lost after dying in the landing zone
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- ASOP - Ships - Vehicles - Clicked to "Store" ship at ASOP but it was "Destroyed"
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Vehicles / Ship Components - Ships that do not have missiles as a standard weapon cannot restock their countermeasures.
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Performance - Client Performance drops around Ghost Hollow
+- Mission Content - UGF - AI Counter will drop to 0 after streaming location in and out again
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- GrimHEX - Dumpers Depot - Art / Locations - The Dumper's Depot within GrimHEX has a VisArea that allows players to clip inside of location.
+- Vehicle Maintenance Services - Ship repair doesn't happen but still charges you
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Multiple Locations - ASOP Terminal / Ships - When storing a ship, the ASOP terminal will set the ship status to "Claim" instead of "Retrieve."
+- Exploit / Ships / Vehicles / Game Code / Multiplayer - When two Players Salvage a Ships Hull simultaneously the Hull will recover and be infinitely Scrapeable
+- Inventory / Personal Inventory - Inventory can enter a state of becoming unresponsive, preventing the player from being able to eat or drink
+- AI / Art - VFX - Hostile AI bullets visually clip through walls
+## New Features
+Gameplay
+- Added Combat Logging Timer
+Along with 3.20, we have added a new Combat Logging mechanic to avoid as much of this issue as possible. With this updated mechanic, while a player is in combat and outside of a green zone, the player and their ship will remain in the PU for a short period after exiting the game fully or to the menu. This also comes with a warning while exiting to menu to make sure you are in a safe area before leaving as it will leave your ship and character vulnerable at the location they left the server.
+- Added Option To Allow Comms Calls from Only Friends
+## Feature Updates
+Ships and Vehicles
+- Ship Quantum HUD Alignment
+We have done a full pass on all ships to make sure all the Quantum HUDs have been properly aligned in view. Along with this, much of the Quantum UI has been removed to be much cleaner and remove unnecessary elements until a full, future quantum HUD update. As this is different for all ships, if you see any that you believe are not quite right still, let us know in the IC!
+- Argo MOLE Pilot Improvement
+Added the ability for the Pilot in the Argo MOLE to use the ships mining scanners. This will not allow the pilot to use the lasers from the seat but will give the pilot the much needed information directly while scanning mineables.
+- Greatly increased the internal storage of the Drake Corsair
+## Bug Fixes
+- Fixed - Persistent Universe - Character becomes invisible due to not being bound on other clients machines
+- Fixed - MISC Hull C - PU - Vehicles - Visarea issue on the main elevator
+- Fixed - AEGIS Hammerhead - Ships -  Audio - UI - When docking, the audio can become stuck in a loop and loudly blast through the front of the ships decks
+- Fixed - Interaction - Interaction mode does not work properly with custom mouse binding (button4/5)
+- Fixed - Fix misaligned inventory items on widescreen resolutions
+- Fixed - AC - All Modes - Lobby / UI - Lobby no longer works for other the player when the host exits to main menu during a match
+- Fixed - AC - Frontend - UI - Player names will be duplicated after joining a lobby and be counted twice client side
+- Fixed - AC - Classic Race - UI / AC Menus - The Map Selection menu is not displayed by default
+- Fixed - AC - Classic Race - lap counts are wrong in offline mode
+- Fixed - EA - Star Marine - Last Stand - VFX - There is a chance that the capture boxes are not showing the correct size or not showing at all to some clients
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 1 Server Crash
+- Replaced Ocean Tessellation with screensize based solution to improve planetary performance

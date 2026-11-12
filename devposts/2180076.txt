@@ -1,0 +1,26 @@
+## Star Citizen Patch 3.5.1d
+Alpha Patch 3.5.1d has been released to PTU, and is now available to test!  Patch should now show: PTU-1798586.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+NOTE: If launching the customizer causes "error while calling customizer start API", please delete PTU website cookies to work around
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Ship customization
+- 300 series ships
+- We have added logging to pinpoint the source of the server despawning the player's only ship when they exit the vehicle.  Go get your ship despawned!
+Known Issues
+- NPC assist beacons no longer function correctly if the server has been up for awhile.
+- Bed logout doesn't work on planetary surfaces and may be inconsistent elsewhere.
+- AI and player ships may appear jittery.
+## Feature Updates
+Ships and Vehicles
+- Further increased performance and lowered hull health to the 350r to better suit a racing variant.
+- Slightly increased retro thrust on the 300 series.
+## Bug Fixes
+- Players should now be able to add other players to their groups.
+- Fixed a CPU spike/stall around Lorville.
+- AI pilots should now properly react to players.
+Technical
+- Fixed 2 server crashes.

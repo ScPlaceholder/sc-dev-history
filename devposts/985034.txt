@@ -1,0 +1,17 @@
+That's a solid copy @TheMilitant
+Without going into too much detail, all I can say is that we needed to replace the old system.
+As I mentioned in the Actor Status ATV episode, the old system was realistic and accurate, but inflexible.
+https://youtu.be/JdS8q2_d76o?t=1730
+Rest assured, the new system supports most of what the old system did(1), and a lot of what the old system didn't(2), while running faster and more predictable(3).
+(1) new system no longer supports certain subtle behaviors, like the natural adaptation of the human body under the effects of GForce;
+this behavior was out of the player's control, so the they couldn't reliably make use of it; not to mention readability.
+(2) the old system was tied to the vehicle code, and was only affecting the pilot; the new system has nothing to do with vehicles - any acceleration produces GForce.
+new system is completely integrated with the Actor Status System (which means it can directly affect, and be affected by, other status effects).
+so for example we can reduce your GForce tolerance if your torso is damaged; or if you're not breathing enough Oxygen; etc.
+we have not decided what we want to do yet, but we have the code support for a lot of new stuff.
+(3) new system simulates the old behavior using a simpler logic, which means more entities can run it at the same time;
+it's more consistent, so bugs are more obvious and easier to catch.
+In conclusion, the problems you're noticing in 3.0 are caused by the fact that the new system is not trying to imitate the old one.
+It's up to the design team to decide whether we want to imitate the old system or go a new route.
+In any case, it will take a few iterations to get to what we want.
+Thank you so much for your involvement and support.

@@ -1,0 +1,50 @@
+## Star Citizen Alpha Patch 4.1
+Alpha Patch 4.1 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 4.1.0-PTU.9639392.
+## Build Info
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+- Audience: All Backers
+- Server Info: PTU Channel
+- Long Term Persistence: Enabled
+- Mesh Configuration: 4:6:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Tonight's build has many further updates to reduce BWIN spikes and Delays around the verse
+- Stability & Bugfixes
+- Enabling Orison and Area 18 NPE
+- T0 Item Recovery
+- Ground Vehicle & FPS Mining Updates
+- Ship Collision Physics Updates
+- VOLT Weapons
+- Missions updated for Meshing: Medical Beacons, Courier, Prison 02 repair, and 890j Boarding Action
+- Wikelo (WICK-uh-low) Collector Missions
+- New Align and Mine Event
+## Known Issues
+- Critical: PU - Actors / Consumables / Weapons - FPS Weapons and consumables trail behind an actor's hands while in motion
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Stanton - Mission Refactor - Wikelo Collection - Turning in additional items results in the items disappearing and additional items in the freight elevator
+- High: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel
+- High: PU - Pyro - Jump Point - Failing a Jump point will displace the player far away from the gateway station
+## Features & Gameplay
+- AI
+- Juvenile Valakkar Art Texture Updates
+- Added Dozens of New NPC Heads for a wider range of looks around populations
+- Ships and Vehicles
+- Fixing Corsair gun loadout having wrong wing gun on it by default. This brings it back to the intended 4xS4 and 2xS5 not 5xS4 and 1xS5.
+- Core Tech
+- Updated Loading and Splash Screens
+## Bug Fixes
+- Fixed an issue causing transit gateway doors to desync, leading to doors opening to a void
+- Potential Fix: PU - Gamewide - Graphics - Vulkan and DLSS enabled causes graphical artifact issues and can cause crash the client to crash with Nvidia GPUs that have GPU Driver v572.16
+- Potential Fix: PU - Stanton - Locations - Freight Kiosk / Freight Elevator - Freight Manager gets stuck on "Transferring to Warehouse" when lowering the gate for the Freight Elevator (STARC-143879)
+- Potential Fix: PU - Personal Inventory / Item Recovery - Clothing items are not kept as part of the loadout when a player respawns (STARC-160651)
+- Potential Fix: PU - Personal Inventory - Item Recovery - User will lose their previously equipped loadout upon leaving Klescher Rehabilitation Facility
+- Potential Fix: PU - Item Recovery T0 - Upon being incapacitated the UI is showing a Fee + Tax % not meant for T0
+- Potential Fix: PU - Stanton - Area18 / Lorville - ASOP / Elevator / Location - Baijini Point and Everus Harbor ASOP and elevator terminals can not be interacted with
+- Potential Fix: PU - Stanton - Bunker - Locations / physics - players can fall through the ground at Hathor bunkers
+- Potential Fix: ARGO ATLS - ALL Variants - PU - Mounts / Weapons / Vehicles - Player is able to fire their equipped weapon while seated on the ATLS
+## Technical
+- Fixed 1 GPU Client Crash
+- Fixed 1 Deadlock

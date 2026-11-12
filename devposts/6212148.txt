@@ -1,0 +1,50 @@
+## Star Citizen Patch 3.20.0
+Alpha Patch 3.20.0 has now been released and is now available on the LIVE environment!   Patch should now show: VERSION 3.20.0-LIVE.8701927.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here %localappdata%\Star Citizen.
+Short Term Database Reset: Yes (Loss of items not stored in LTP)
+Long Term Persistence (LTP): Enabled
+Starting aUEC: 20,000
+Known Issues
+Note: QR Code option is enabled by default in this build. This can be disabled in the Graphics Options menu by changing 'Session Information QR Code' to 'No'.
+- UI / Menus - Controls - Keybindings - The Default Preset Images for the keyboard and gamepad control schemes do not match what is bound by default
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- MISC Hull C - PU - Vehicles - Can't undock the Hull-C
+Workarounds: First, If the Hull-C has cargo as part of the end of the flow, try and request detach via the Cargo center rather than regular ATC. Second, if the Hull-C doesn't have cargo, make sure the spindles are collapsed then store, retrieve again, and request via regular ATC on mG comms.
+- PU - Cargo / Commodities / Vehicles / Cargo ATC - ATC fails to detect vehicles within the loading zone or fails to initiate cargo transfers
+- AC - Client Crash - All FPS Modes - FPS Loadouts Customization - Armor / UI - Scrolling down to the very bottom of the leg armor rental list will result in a client crash
+- PU - Crusader / Orison - Locations / Transit - It's possible for turn gates to not open preventing players from entering shuttles
+- PU - Art - Items / Character / Textures - Multiple clothes / armor / undersuit variants lost color / using the default base color
+- PU - Multivehicle - Vehicles / Ships / Ship Components / Weapons - Laser Repeater occasionally stops firing but still consumes ammo
+- Hull C - Spawn / Cargo / LEO - Hull C with cargo can spawn extended in a large Hangar instead of Docking Port
+- Stanton - Multivehicle - RSI Constellation Series - Ship Feature - Snub Ship clips through Constellation variants in vertical position when retrieved from ASOP
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout after dying in the armistice zone
+- Stanton - Actor - Personal Inventory - Right click item interaction menu cannot be closed once opened
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- Drake Caterpillar - ALL VARIANTS - PU - Salvage - All of Caterpillar Hull give invalid material message for Salvager
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- ASOP - Ships - Vehicles - Clicked to "Store" ship at ASOP but it was "Destroyed"
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- Vehicle Maintenance Services - Ship repair doesn't happen but still charges you
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Inventory / Personal Inventory - Inventory can enter a state of becoming unresponsive, preventing the player from being able to eat or drink
+- Stanton - AI - Mission Giver - Wallace Klim is not visible at his location in Grim Hex
+## New Features
+Locations
+- Seraphim Station
+Bringing the Crusader Port station in line with the other stations and replacing the long standing Port Olisar, Seraphim Station brings many of the amenities needed to accommodate the various features required of a station such as hangars, cargo decks, shopping, clinics, and habs.
+Gameplay
+- Automated Cargo Transfer and New Cargo Packing System
+Alpha 3.20 includes the addition of the new automated cargo transferal experience to the PU for the Hull-C. The existing cargo transaction system, which other ships will still use for this release, will instantly pop all of the purchased cargo into a ship or instantly remove all sold cargo off the ship after the transaction has completed. The Hull C however requires a new experience where the player after buying or selling the cargo at the commodity kiosk will be prompted to pick it up/drop it off at a loading area. To do so the player retrieves their vehicle then hails the location's Cargo Services to get assigned a loading area (similar to getting assigned a landing area from ATC). After flying their ship to the loading area they will be prompted to stop moving, and then extend the spindles on their ship. Once the ship is ready cargo will be added onto the cargo grids of the ship over a period of approximately 5 or so minutes, depending on the size of the load. Currently these boxes will just pop into place.  If the player moves or someone enters the area the transfer will be interrupted until the disruption is addressed or the loading area is eventually revoked. After transfer is completed successfully the player will be prompted to leave the area, eventually getting a warning for impounding if they do not.
+With the changes for the Hull-C comes a complete rewrite of how the cargo system places cargo into ships (any ships, not just the Hull-C). Previous versions of the system only dealt with 1 SCU containers, and could use fairly simple logic for placement or removal. We are now supporting various sized boxes to be placed in the cargo holds (1, 2, 4, 8, 16, 24, and 32) as well as supporting various orientations of placement in the grid to work around grid obstructions. This also includes temporary tractor beam strength changes to support the attachment/detachment of those various sized boxes using the tractor beam.
+- New Mission: Illegal Salvage Coverup Mission
+Salvage Coverup is a new variation on the salvage missions. These new missions come as a new, illegal mission contract called The Tar Pits to cover up for the perpetrator of a crime, in this case NineTails, who want to keep their involvement under the radar. You are tasked to hull scrape their entire ship, to remove the NineTails paintjob before the ship evidence is discovered by security. If security forces arrive before you manage to perform the coverup, the security ships spot the hull colors, report back, and you will fail and be attacked if at the location. Do it in time, and the Tar Pits will pay you handsomely for your efforts, and your silence.
+Ships and Vehicles
+- New Ship: MISC Hull-C
+- New Ship: Mirai Fury LX
+Core Tech
+- HDR Implementation
+High Dynamic Range (HDR) is now enabled for players with a compatible monitor. This is activated in Windows by going to the 'Windows Display Settings' and selecting 'Use HDR'. Then, open Star Citizen and select 'HDR' in the 'Graphics tab'.

@@ -1,0 +1,76 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9364372.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: Wave 4
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Zeus ES & CL (Evocati and owners will receive these in the build)
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- Quantum Fuel Adjustments
+- New Arena Commander Updates
+## Known Issues
+- PU - Shopping / UI / Shopping Kiosk - Shop UI is horizontally stretched and can't be interacted with
+- SHIP spawns on floating hangar lights (Work around is to go to lobby and spawn ships or store a ship as animations wont have to play)
+- Multivehicle - PU - Vehicles / Vehicle Components - Quantum Drives - Cannot initiate quantum jump (low chance STARC-131460)
+- QT Workaround: De-allocate all power from systems in power management Re-allocate power to Quantum Drive and other systems.
+- PU - UGF / Mission Content / Locations / AI - AI are not consistently spawning inside or around UGFs (STARC-130858)
+- Multivehicle - PU - Vehicles - Shields are not negating or blocking damage from weapon fire (STARC-130934)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - UI / Performance - Turret UI names are being shown around Points of interest causing framerate drops (STARC-130999)
+- PU - Stanton - Locations - Hangars / Network - Hangar at Baijini Point is despawning whilst the player is using the area, without external factors, leaving them stuck inside LEO geo
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+- PU - NPE - Missions - Multiple Locations - Tutorial does not progress after leaving the HAB elevator
+- Carrack bottom right MFD has no display (STARC-130157)
+- Multivehicle - PU - Vehicles / VMS - Refuelling Hydrogen takes Player's credit without refuelling and will increase cost after purchase
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+## Features & Gameplay
+Gameplay
+- Quantum Travel Polish
+We have made large adjustments to Quantum Travel speeds, accelerations, fuel storage, use, and prices in 3.24.2 that will help balance movement around the PU. Ship fuel take sizes have been balanced across all ships to adjust for archetype with some getting less fuel and others being able to hold more. Quantum Drives have all been adjusted for fuel use, speed, and acceleration to balance ship travel based on shorter and longer distance archetypes. Cooldown times have not been adjusted.
+Ships and Vehicles
+- Cannon Max Ammo and Regen Balance Pass
+All sizes of cannons have had their regen rate and held ammo count reduced to balance against repeaters.
+- Modified the default Ship Power distribution to allocate full power to most pools, but less to triangle pools
+- Zeus Art, Lighting, and Interactions Polish Pass
+- MFD Polish: Added support for multiple pips connected together
+- Greatly Increased Ship Turret Health Pools
+- Reduced A2/C2 Held Countermeasures
+- Added new Textures / Materials to Holographic MFDs
+- Improved Prospector Radar Grounding effects
+Weapons and Items
+- Karna Recoil Pass
+Slightly increased visual recoil. Adjusted recoil over time min start value from 0.5 to 0.75. Increased Horizontal aim recoil per shot from 0.033 to 0.05. Increased Vertical aim recoil per shot from 0.26 to 0.345.
+## Bug Fixes
+- Fixed - PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship (STARC-121382)
+- Fixed - PU - Front End - Friends / Party Feature - Party Leader not able to pull party members into the Persistent Universe
+- Fixed - Multivehicle - PU - Vehicles / VMS - Refuelling Hydrogen takes Player's credit without refuelling and will increase cost after purchase (STARC-130302)
+- Fixed - Weapons penetrate hull and do multiple instances of damage (STARC-131491)
+- Fixed - PU - mobiGlas / UI - Stanton Star will be set as the first stop when setting a route (STARC-131879)
+- Fixed - F7A MK2 and an incorrect, extra power plant (STARC-131565)
+- Fixed - SRV Towing mode HUD is offset and not facing the pilot (STARC-130267)
+- Fixed - PU - UI - Visor & Lens / Graphics - Chat window's text becomes blurry in the FPS HUD (STARC-131284)
+- Fixed - Multivehicle - PU - Vehicles - Vehicle tractor beams will not activate
+- Fixed - Drake Corsair - PU/AC - Vehicles/Hotkeys - Corsair wings do not extend with the cycle configuration hotkey but work with the interaction prompt on dash (STARC-130099)
+- Fixed - Anvil Carrack - Vehicle / Art / Visarea - There are portal/visarea culling issues entering and leaving the Carrack medical bay (STARC-131523)
+- Fixed - Anvil Valkyrie Liberator - Vehicles - The Valkyrie Liberator is missing from the vehicle selection list in the mobiGlas, ASOP / Hangar (STARC-131700)
+- Fixed - Drake Interplanetary Caterpillar - Caterpillar Module 1 exterior open/close is not interactable (STARC-119129)
+- Fixed - RSI Constellation Series - PU / AC - Vehicles / Weapon Components - Stock Missiles will be loose in the cargo bay when retrieved/accessed (STARC-130042)
+- Fixed - Origin 400i - Ships / Vehicles / Art - Elevator - Elevator Panel buttons disappear on upper floor (STARC-130245)
+- Fixed - PU - Stanton - Locations / Art / UI - Crusader - Orison - Green Circle Apartments - August Dunlow Spaceport - Elevator panels have bright blue background and narrowed list/column of buttons (STARC-130850)
+- Fixed - MISC Freelancer ALL Variants - PU - Stanton - Vehicles / UI / MFD - Ship does not have annunciators visible in the cockpit.
+- Fixed - PU - Commodity Kiosks - Area 18 / Orison - Players are unable to set the amount of RMC to buy, making purchasing impossible
+- Fixed missing Constellation Phoenix Emerald Elevator and Cargo Lift
+## Technical
+- Fixed 9 Client Crashes
+- Fixed 1 Server Crash
+- Fixed 4 Deadlocks

@@ -1,0 +1,92 @@
+## Star Citizen Patch 3.15.1
+Alpha Patch 3.15.1 has been released to the LIVE environment! Patch should now show: VERSION 3.15.1-LIVE.7878626.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: No
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+We are currently assessing if there are any performance and other issues while playing on Windows 11. If you are part of the windows insider program with Windows 10 or 11, you may have an option turned on called Diagnostic Data in the windows settings. This option is required for windows insider but appears to degrade game performance and turning this off may help framerates substantially.
+Easy Anti-Cheat
+EAC has now been enabled in Star Citizen. This currently has a some known tools that will no longer function and some that we are looking into getting to work for future updates.
+Known to Work:
+- Reshade v4.9.1 (requires renaming of reshade dxgi.dll to d3d11.dll)
+- Voice Attack (1.8.4 64-bit)
+- Joystick Gremlin version 13.3, Thrustmaster’s T.A.R.G.E.T.
+- Track IR and Tobii v1.39.12028.0
+- OpenTrack (2021.1.3)
+- GameGlass (Latest Version 0.44.6.0)
+Known to Not Work:
+- Devreorder
+- Localization tools not working
+- Linux/Wine/DXVK/Sandboxie Plus do not work currently
+- LED lighting (LEDKeeper2)
+- EVGA Precision X1 may have issues
+- VorpX
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Bounty hunter mission updates slowly on a slow server
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu. Players may need to exit the game and reload after a server crash to fix this error.
+- Players cannot repair, refuel, and rearm at outposts
+- MFD screens are often blocked by cockpit interaction prompts
+- Items stored in long term persistence such as mined gems are currently not stackable (This is something that will be coming in a future update)
+- Swapping weapons has a chance to drop or remove weapons
+- When in combat, NPCs can get stuck in cover when trying to exit
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round in Arena Commander
+- When undocking, ships will occasionally become caught on the docking arm instead of detaching smoothly
+## New Features
+Locations
+- Planetary Volumetric Clouds
+Addition of volumetric clouds with internal VFX onto microTech. This first implementation will only be available around microTech with other planets coming in future releases.
+Ships and Vehicles
+- Added New Ship: Aegis Redeemer
+- Added New Ship: Crusader Ares Starfighter Ion
+- Added New Ship: Crusader Ares Starfighter Inferno
+- Added New Vehicle: Anvil Spartan
+## Feature Updates
+AI
+- Updated all existing guards in the CBD area of Lorville to the new CBD variant Quirinus Tech Armor
+Gameplay
+- Dropped Item Performance Polish
+Added dropped clutter prevention to avoid extreme performance issues when players drop hundreds of items into a single area. This will limit dropped carriables to 10 per 7 meter radius sphere and block further items being dropped until out of this range.
+- Medical and Downed State UI Polish
+Increased the size of text on Incapacitated screen. Added name and distance of player who accepted revival beacon on the incapacitated screen. Added label to corpse marker. Add option to PIT menu to dismiss corpse marker. Dismiss corpse marker based on interaction. Increased visibility of limb damage text when healing yourself with a medical tool. Added a marker to the players last corpse to help them find it after death.
+- Updated loadout and health to increase difficulty of Eliminate Boss UGF missions
+Ships and Vehicles
+- Re-scaled shields to have less drastic benefits in the A and B category, sizes 1, 2 and 3
+- Fixed AMRS scatter gun damage due to explosive fixes
+Weapons and Items
+- Added Quirinus Tech Artimex Armor to shops in the PU
+## Major Bug Fixes
+- Fixed an issue causing the character customization to not work
+Note: This is a temporary workaround that will only allow customization on the 1st entrance into the PU and you will need to do a character reset with this release to update your character appearance. Subsequent changes will not update character appearance correctly until a character reset.
+- Players should no longer lose all equipped items when trying on clothing in a shop
+- Fixed an issue causing ships on landing pads ending up in an "unknown state" for location
+- Fixed multiple issues causing players to be unable to loot the belongings from the personal inventory of a downed player
+- Restarting / Quitting and re-joining will no longer get the player out of a downed state or respawn them at their persistence location
+- Male Characters should no longer become Stuck in the MISC Prospectors Pilot Seat
+- Medical beacons should now complete mission/payment when player is brought back from incapacitation
+- Fixed an issue causing players to see black squares instead of smoke, clouds, and fog
+- Interacting with door panels in the Origin 400i should no longer cause the doors to become unresponsive
+- Attempting to deposit gems in Klescher Rehabilitation Facility should no longer give a "transaction error"
+- Fixed an issue causing a character's head, mobiGlas, and other equipment to go missing after being released from Klescher Rehabilitation Facility
+- Fixed an issue causing players to get a continuous black screen when dying in a hospital gown
+- Scanning a dead AI with the medical gun will no longer show that they still have health
+- Double pressing [RMB] over an item in the location inventory should no longer cause the tooltip to be stretched out from its original position
+- Fixed an issue that could sometimes cause the "Equip All" function to attach fruit and other items to magazine slots
+- NPC Nurse head should no longer turn 180 degrees after entering a usable in hospitals
+- Lethal takedowns should now put players in an incapacitated state and no longer instantly kill them unless already incapacitated
+- The interaction range for looting an external loot crate should now match the leash range so that it doesn't close unnaturally while in range
+- Fixed an issue causing the tractor beam multi-tool attachment to cause the AR Cards for medical guns to be indefinitely suppressed when aimed at another target
+- Fixed a shield hole / vulnerability located at top starboard side of the Argo Mole
+- Fixed an issue when equipping guns on to the back of a backpack, the guns are initially placed inside the backpack
+- Players should no longer fall through the bed and bounce back up when placed into medical beds by another player
+- Fixed an issue causing the New Babbage tram to display the incorrect next destination on the screens in tram interiors
+- Fixed an issue causing some NPCs to get stuck while walking around the Grim HEX hospital
+- Reequipping a helmet via the PIT menu will now complete correctly without creating duplicate helmet in the location inventory
+- Fixed Inverted Interactions while in ground vehicles
+## Technical
+- Fixed 10 Client crashes
+- Fixed 6 Server crashes
+- Main Thread Deadlock Fix

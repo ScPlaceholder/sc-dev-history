@@ -1,0 +1,57 @@
+Star Citizen Patch 3.17.0aa
+Alpha Patch 3.17.0aa has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.17.0-PTU.8052409.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Current Audience: All Waves
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+3.17 contains new streaming changes that we are testing on the PTU and players may experience infinite loading or very long load times along with possible missing assets in game such as elevators or ships not streaming in. We are updating and fixing these issues as we find them and each new build will hopefully address these more and more.
+- Ship Positional Desync Test
+In 3.17.0 we have put in a networking update that should reduce ship to ship desync. We would like to know how well this update works and if there are any observable knock-ons. Relative to 3.16, you should feel as though the facing direction and position of other player ships are much more accurate and real time. We have created a feedback thread in spectrum so please let us know about any potential issues with this that could include ship jittering, rubberbanding, jittering, and other effects of that nature.
+Due to recent improvements on desync we have uncovered hitreg bugs which we likely cannot resolve for 3.17. In the direction of the velocity vector the collision shape of a ship will be slightly in front of visual model (the exact offset is velocity dependent). There is currently no work-around so avoid hovering inside the velocity vector of another ship and lead your shots a bit more during combat.
+- MISC Hull-A
+- Lorville Hospital and Space Station Clinic Variations
+- River
+- Coffee Shop Vendor
+- Ship-to-Ship Refueling
+- Mining Gadgets
+- Shopping and Selling T0
+- Ship and Ship Components Inventory Updates
+- Player Injury Updates
+- DNA Head Texture Updates
+Known Issues
+- Ships can explode after players exit them
+- Landing Pads Are Missing Guiding Light Squares Around Pads
+- While docked to a Starfarer the Valkyrie will continuously tilt instead of remaining stationary
+- Ship retrieval can time out and place a ship in a claim state
+- Items do not immediately transfer from loot crate to personal inventory
+- It's not possible to "De-select" attachments on FPS weapons in shops that sell them
+- Combat Assistance Mission Fails to Progress - Hornet Pirate AI Pilot Doesn't Load In stalling the mission when destroyed
+- Undocking ships can result in desync issues causing ships to disappear, move to other locations, or become unusable
+- Damage to player health can become delayed and can trigger after the player has fully healed themselves
+- Players may experience delayed or infinite loading when joining the PU
+- Combat AI can sometimes rubberband, teleport, jitter, or move unexpectedly
+- After hitting accept on a mission, the mission sometimes does not show up in "accepted tab"
+- The Argo Raft's elevator controls cannot be interacted with from either inside deck
+- Emptying and reloading consecutive magazines will break reloading
+- A ship's targeting pip may be missing or disappear for some players; they cannot be targeted when this happens
+- Complimentary Flight Suit is sometimes not supplied to the Player upon respawning at most locations
+- Character's head, mobiGlas, and other equipment can sometimes go missing after being released from Klescher
+- Medical beacon may not complete mission/payment when player is brought back from incapacitation
+- Weapon holsters or un-holsters unintentionally
+- Players cannot buy components directly into ship storage
+## Bug Fixes
+- Fixed an issue causing Reputation to not increase after completing many types of missions
+- Fixed an issue that allowed players to bypass supply and demand levels when buying and selling commodities
+- Mining Lasers should now correctly apply their properties when mining deposits
+- Gravity should no longer be too high within Klescher, which was preventing prison escape game loop
+- Fixed an issue causing larger weapons such as the Animus Missile Launcher to not spawn inside loot crates
+- Food and drink should now consistently fill hunger and thirst
+- Buying food or drink at a kiosk should no longer display the pickup animation far away from the actual food location
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 1 Server Crash

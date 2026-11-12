@@ -1,0 +1,43 @@
+## Star Citizen Alpha Patch 4.9
+Alpha Patch 4.9 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.9.0-PTU.12118066
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Recco Battaglia Repeatable Missions (story missions disabled in tonight's build)
+- Vehicle Hit Marker Updates
+Known Issues
+- Destroy Narcotics missions disabled temporarily due to a structural refactor
+- PU - Ship Battles - Missions / Locations - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- PU - Ship Battles V2 - EscortShips - Mission Content / AI - Escorted ship does not Quantum Travel away or Go to the Hangar after neutralizing the AI ships in the mission location
+- PU - Missions - Bounty Hunter / Mission Content - When killing the Neutralize target the mission does not progress
+- Front End - Socials / Add Friends - UI / Online Services - Searching for friends on the Add Friends search bar will result in a "Service Unavailable"
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- Multi-System - PU - Locations / Inventory - There's a chance that their primary residence does not contain their items'
+Workaround: Recopy account if you need your default local items
+## Features & Gameplay
+Gameplay
+Missile Cargo Grid Visuals & Ship Servicing Improvements
+Missiles/Torpedoes placed on a cargo grid will now display a bounding box frame around them, giving a clearer visual reference for the space each missile occupies. This frame is visible anywhere a cargo grid is present, including ship interiors and freight elevators. When snapping a missile into position, both the missile and its frame are now shown in the hologram preview, and players can choose the snapping direction during placement. Additionally, capital ships no longer need their pivot point fully inside a servicing zone to access hangar services, any portion of the ship overlapping the zone is now sufficient.
+Vehicle Hit Marker Updates
+Further hit marker polish and updates for hitting components, armor penetration, and shields.
+## Bug Fixes & Technical
+- Fixed 4 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed 1 Service Crash
+- Potential Fix: ASOP "Claim Insured Loadout" cooldown not being enforced, allowing instant vehicle reclaims
+- Potential Fix: Battaglia Create Uplink Repeatable Mission does not progress past the Go To objective
+- Potential Fix: mobiGlas Wallet app Send button remaining locked after a transaction until the app was exited or a new amount was entered
+- Potential Fix: Bounty Hunter intro certification mission continuing to appear in other regions after already being completed
+- Potential Fix: Mission-critical repair pipe spawning inside a rock and becoming inaccessible in Minor Repair Needed missions near Shepherd's Rest
+- Potential Fix: Hauling contract generation failing for ORS small hauling contracts
+- Potential Fix: Aegis Retaliator annunciators missing from the pilot seat dashboard
+- Potential Fix: RSI Ursa Medivac interior side door panel misplaced and clipping through the wall
+- Potential Fix: High-Tech Hangar elevator entrance missing a wall section at landing zones
+- Potential Fix: Ships vibrating on spawn due to hangar platform lighting collision
+- Potential Fix: Players asphyxiating in the service sections of Levski hangars due to an oxygen gap near the elevator
+- Potential Fix: Player hands becoming stuck in a box-holding pose after interacting with the Super Heavy HMG placement action
+- Potential Fix: Weapon attachments failing to attach to new weapons via loadout
+- Potential Fix: All Valakkars failing to emerge from the ground correctly
+- Potential Fix: FPS compass pointing in incorrect directions inside ship interiors

@@ -1,0 +1,14 @@
+Hi @ConstantinCray !
+Thanks for the question!
+tldr; Yes as of this exact moment, this is artistically intentional.
+The way it functions is that there is a hierarchy of colorgrading volumes from very large scale (around a planet) down to very small (a shop in a landing zone). The general thought process is that as ships appear in a very wide variety of environments, they should take on the look and feel of that environment. This is why so far we haven't set up any ship-specific colorgrading to override whatever local grades might be active.
+Now a few points.
+- An argument could be made that a ship should always appear the same in the interior, no matter where the ship is in space (eg, add a specific "neutral" colorgrade to each ship)
+- If you did that, you would probably want to exclude adding that grade to any rooms in the ship that contain windows to the exterior or cockpits. Otherwise, when flying the ship or looking out a hab window, planets would appear different to if you were EVAing or walking around on the surface.
+- Therefore, there is a possibility that for larger ships, in windowless rooms, we would treat it as its own "location" with its own colorgrade.
+And some caveats...
+- Unfortunately, for the purposes of colorgrading, the engine only cares about whichever volume the player is currently inside. It has no concept of looking through a window and showing another colorgrade outside that window.
+- Likewise, if we were to neutralize the colorgrade in only windowless rooms, depending on how many windows a ship has, you may end up in a situation where the colorgrading is constantly switching on/off as you pass through various rooms with/without windows which may feel janky and hurt immersion.
+As with everything else, the overall colorgrading of the game is something we continue to adjust and monitor as we go.
+Cheers,
+ChrisC

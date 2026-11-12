@@ -1,0 +1,80 @@
+## Game Modes Adjustments
+- Gun Rush: Gun Rush, our first ever experimental mode, is now the first experimental mode to be promoted to a Core game mode. Experience Gun Rush anytime through the patch cycle as an ‘always on’ mode! To celebrate you can earn 1.5x REC!
+- Squadron Battle: With the introduction of Multicrew the mode has expanded! Squadron Battle now features almost all ships. Join a team-mates crew or go it solo, the choice is yours.
+- Retired Core Modes: Duel, Battle Royale, Elimination. Core Game Modes are modes which flagship their target demographic. While we love these modes, we feel that there were too many game modes competing for the same player-base, diluting players across many game modes rather than concentrated on a few. Rather than having all these modes always active they will be added to the Experimental Mode collection, returning for weekly rotation, on occasion.
+## System & Balance
+- Experimental & Special Event Banner & Timer: Below the game mode selection on the frontend you can now find a banner which details any currently running Experimental Modes and the countdown until the next rotation. This banner is overridden during special events, such as Luminalia, to display details for that instead.
+- Friendly Fire System: Friendly Fire was among the systems lost to time, we’ve refactored the system to produce warnings and kick players once again for excessive friendly fire. In addition, the system now tracks distortion damage.
+- Distortion Scoring: In our continued effort to facilitate and award support roles we’ve added scoring for applying distortion to hostile ships, with additional awards for fully disabling components.
+- Disabled Ballistic Persistence: A few patches ago we enabled persistence of ballistics among other things in our flight modes, with pickups being the only way to restock. After several changes to ballistics, we are disabling persistence to monitor how ballistics are utilized when replenished upon spawn.
+## Classic Race Updates
+- Race & Lap timings now include milliseconds.
+- Race & Lap times will now show as notifications upon completing them.
+- Racers will now be punished 5 seconds of their lap time for deaths during the race.
+## Death Recap
+Re-enabled ‘Death Recap’ UI which details how you died and how you performed in that life alongside a collection of bug fixes that caused it to be disabled.
+## Achievements
+Below are all achievements earnable in 3.22. Upon achieving each, a UI notification will appear confirming this. A client restart is required to see this reflected in-game. Each achievement earns you a Spectrum Badge, others may reward other goodies!
+*Rewards are disabled in Offline play.
+- 999th Test Squadron: New Requirements. A player must participate, until match completion, in every Experimental Mode featured during this patch cycle. Note that leaving the match before the post-game scoreboard appears will not count towards the badge.
+Modes include: Tank Royale, Team Tank Battle, Single Weapon Elimination, Master Modes: Squadron Battle (replaced Master Modes: Duel), Master Modes: Classic Race, Master Modes: Endless Vanduul Swarm, Kill Collector (FPS), Kill Collector (Vehicles), Duo Showdown, Team Elimination.
+- 2953 Vanduul Aggressor: Survive 25 Minutes Endless Vanduul Swarm. Additional Rewards: Vanduul Glaive Pledge Unlock
+- 2953 Pirate Aggressor: Complete Pirate Swarm. Additional Rewards: Pirate Gladius Pledge Unlock and Pirate Caterpillar Pledge Unlock
+- Tank Commander – Finish 1st place in either Tank Royale or Team Tank Battle
+- Master-At-Arms – Finish 1st place in Gun Rush
+- There are Several Special Event Achievements to be revealed closer to the events!
+## Experimental Modes: Master Modes (Detailed)
+Featured Game Modes
+- Master Modes: Squadron Battle
+- Master Modes: Classic Race - Featuring an exclusive new racetrack around the Pyro Jump Point! Containing a mixture of long stretches, curves and tight complex turns.
+- Master Modes: Free Flight
+- Master Modes: Endless Vanduul Swarm
+The experimental versions of existing game modes will NOT affect the original game modes.
+Flight Model changes (applies to MM ships only!)
+- Updated the MM tri-chording limiter, it is a lot less punishing when the accelerations push forward
+- Updated Gladius FM (higher base accelerations, less boost)
+- Added MM & FM setup for new archetypes: F7C-M (medium fighter), Vanguard (heavy fighter) and Buccaneer (medium interceptor)
+- Boost: removed 150ms pre-delay
+- Boost: will now spool up and down
+- Boost: reduced rotational acceleration modifier
+- Boost: rotational rates may now increase while boost is held
+- Boost: adapted times for all archetypes
+Master Modes
+- New features still enabled (see details in 3.20, 3.21 patch notes)
+- Press “B” to switch between SCM and NAV modes.
+- SCM mode allows weapons and shield usage, regeneration times are shorter, however top speeds are harshly limited
+- NAV mode disallows weapon and shield usage, regeneration times are longer, however ships can reach their full speeds
+- Capacitor gameplay moved from low-pool-high-regen to high-pool-low-regen Gunnery & Targeting
+- New aiming system and targeting features still enabled (see details in 3.20, 3.21 patch notes)
+- Auto Gimbal mode deactivated (will not be available for the time being)
+- Added MM variants of several weapon records
+- Decreased fire time of Gatlings
+- Massively increased weapon ranges
+- MM variants have a mix of energy and ballistic weapons which cannot be adjusted
+Known issues:
+- Lag PIPs do show up correctly around Security Post Kareah
+## Bugfixing
+Frontend
+- Fixed an issue where a new player joining would unready all players.
+- Fixed an issue where joining a lobby where players are already readied up caused desync with the ready system.
+- Fixed an issue that caused the players name on the vehicle preview to appear as an invalid value.
+- Fixed an issue that caused player names to duplicate in the lobby list.
+- Fixed an issue that prevented inviting players from parties.
+Maps
+- In multiple racing maps, fixed inconsistencies in checkpoint inner-turn triggers.
+- In Yadar Valley, restored multiple missing geometry.
+Modes
+- In Classic Race, fixed an issue where lap count would be incorrect in Offline mode.
+- In Control, fixed an issue where the control area would appear the wrong size.
+Systems / Misc
+- Fixed an issue where attachments would not save for the second “primary” weapon.
+- Fixed an issue where after using a medpen the wrong weapon would automatically pull out.
+- Fixed an issue where Primary 1 & Primary 2 weapons were the wrong way around in the FPS Customizer vs In-Game.
+- Fixed an issue that caused post-game victory and defeat voice lines to not trigger.
+- Have now enabled suicide in game modes where it was previously disabled.
+- Fixed an issue that caused desync with the pre-game ready system.
+- Fixed an issue, related to fire-modes, that prevented guns from firing in FPS modes.
+- Fixed an issue where suicide would not award negative score.
+- Fixed an issue that caused “Damage” score to be added to only one player in the score feed, rather than separate entries.
+- Fixed an issue where “Rounds Won” appeared on the scoreboard for non-round modes.
+- Fixed an issue that caused repair pickups to inflict friendly fire punishment to attackers of the person who picked up the repair.

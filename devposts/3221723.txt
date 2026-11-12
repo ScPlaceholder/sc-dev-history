@@ -1,0 +1,6 @@
+EDIT:
+At this time no translational inputs from TrackIR are used. We'd like to use them on the actor at some point (so leaning forward, sideways, etc.). We can also not expose them easily to the control system, so you cannot assign them for the time being, sorry :disappointed:
+OUTDATED:
+The axis is actually supported. Go to the Comms, FOIP & VOIP options tab and scroll down a bit. We have an option there to allow head rolling, the default is off. Just make sure that you do not use a perfect "roll" deadzone in the TrackIR options, because that will introduce a math error that will cause very snappy and jittery camera movements. I still need to fix that bit.
+Also head rolling is only allowed in seats. During FPS it is very easy to clip through weapon geometry so we do not allow that atm.
+Oh and if you are very experienced with TrackIR I recommend using the "raw" options in the same option tabs ... it will then just use the raw TrackIR input and avoids some helpers which are useful when you use FOIP head tracking.

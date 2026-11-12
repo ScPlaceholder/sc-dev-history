@@ -1,0 +1,61 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9361816.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: Wave 2
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- New Arena Commander Updates
+## Known Issues
+- SHIP spawns on floating hangar lights (Work around is to go to lobby and spawn ships or store a ship as animations wont have to play)
+- Multivehicle - PU - Vehicles / Vehicle Components - Quantum Drives - Cannot initiate quantum jump (low chance STARC-131460)
+QT Workaround: De-allocate all power from systems in power management Re-allocate power to Quantum Drive and other systems.
+- PU - UGF / Mission Content / Locations / AI - AI are not consistently spawning inside or around UGFs (STARC-130858)
+- Multivehicle - PU - Vehicles  - Shields are not negating or blocking damage from weapon fire (STARC-130934)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - UI / Performance - Turret UI names are being shown around Points of interest causing framerate drops (STARC-130999)
+- PU - Stanton - Locations - Hangars / Network - Hangar at Baijini Point is despawning whilst the player is using the area, without external factors, leaving them stuck inside LEO geo
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+- PU - NPE - Missions - Multiple Locations - Tutorial does not progress after leaving the HAB elevator
+- Carrack bottom right MFD has no display (STARC-130157)
+- Multivehicle - PU - Vehicles / VMS - Refuelling Hydrogen takes Player's credit without refuelling and will increase cost after purchase
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+## Features & Gameplay
+Ships and Vehicles
+- Misc Starfarer: Added new Annunciators to the Pilot Dashboard
+Weapons and Items
+- Added Behring P8-AR Rifle Mags to Shops
+- Temporarily removed the MultiTool reload screen until battery draining requires reload to function
+## Bug Fixes
+- Fixed - PU - Multi-System - Locations / Transit - Some elevators have greyed out panels and do not respond when called (STARC-130391)
+- Fixed - Multivehicle - PU - Vehicles / Locations / Physics - Ships fall through hangar elevator platform on retrieval resulting in being stuck under hangar
+- Fixed - PU - Stanton - ASOP / Fleet Manager / UI - ASOP terminal screen will be stuck on the getting vehicle list screen until terminal times out
+- Fixed - PU - Stanton - Arial - Planet Tech / Locations - Arial missing surface (STARC-130335)
+- Fixed - PU - Stanton - GFX / Performance - If a player moves their mouse pointer off screen while they have the game open, the game's performance will start to degrade until the mouse pointer has return back to the game
+- Fixed - Origin 400i - Ships / Vehicles / Art - Elevator - Elevator Panel buttons disappear on upper floor (STARC-130245)
+- Fixed - ARGO_ATLS - PU - Mounts / UI / ASOP / Fleet Manager - The ARGO ATLS has placeholder text (STARC-131162)
+- Fixed - MSR now has Size 3 shield, but quadrants not adjustable (STARC-131203)
+- Fixed - Mutlivehicle - PU - Vehicles/UI - Radar/Ping - Scan operator mode UI is missing ping signatures for returned pings (STARC-131483)
+- Fixed - Argo Mole ( All Variants ) - Mining - MFDs - PU - The MFD's will disappear once the player enters the mining turret seat (STARC-130114)
+- Fixed - PU - Multivehicle / Game Code / Resource Network / Controls - ASOP Spawned Vehicles headlights are Enabled and need to be Toggled Twice to turn off (STARC-129843)
+- Fixed - Multivehicle - PU - Vehicles - unable to influence Drake Cutter internal lights (STARC-111858)
+- Fixed - Multivehicle - PU - Vehicles / Ship Refuel - MISC Starfarer is not refuelling other ships
+- Fixed - PU - Missions - The Price of Freedom/MissionGiver - Price of Freedom cryopods on the caterpillar do not show prisoner numbers or "release"
+- Fixed - Stanton - PU - Resource Network - Ships / Vehicles / Components / Game Code / Multivehicle - Components are Overheating even when Provided Sufficient Coolant
+- Fixed - MISC Prospector - PU / UI - Vehicles - Prospector radar is projected over and above the ship panel
+- Fixed - SC - Ships / Art - Anvil Carrack - Carrack command station MFDs UV are displaying incorrectly (Clipped at the bottom)
+- Fixed - AC - Frontend - Hangar Anims are noticeably loud in AC Front end
+- Fixed - AC Rentals are not functioning
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 5 Server Crashes

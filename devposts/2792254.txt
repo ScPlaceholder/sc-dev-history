@@ -1,0 +1,11 @@
+Greetings,
+We have added an early version of long term persistence to allow player purchases and UEC balance to persist between database wipes. We will persist the following:
+- FPS item purchases
+- Ship component purchases
+- Ship purchases
+- UEC balance
+Items, components, or weapons equipped to your ship or character will be returned to inventory after a database wipe.  Recopy will bypass long term persistence, so for now avoid using it. For this version, ship states, reputation, purchased commodity cargo, and ship rentals will not persist between wipes.  Manual resets will no longer wipe long term persistence, so you may now give this a try in addition to the database wipes we perform.  Please not, any bugs directly related to resets (such as it failing) please report to the issue council under the "Character Reset Tool" tag.
+For testing, please play as normal, earn UEC, purchase items, and equip items.  Keep a record of your inventory and UEC, we will be wiping the database tomorrow morning (central time US) and afterward verify your inventory and UEC persisted as expected.  If you encounter any issues please create an issue council report and link the issue below for investigation.  If you have any feedback on this initial implementation, please voice that below as well.
+Thanks for helping test this out!
+-Baior
+Lead Player Experience Analyst

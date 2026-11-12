@@ -1,0 +1,97 @@
+PU Monthly Report
+August 2024
+Welcome to August’s PU Monthly Report! With the recent release of Alpha 3.24: Cargo Empires, most development teams spent the month both finalizing patch tasks and progressing with exciting new features coming further down the road. Read on for all the details.
+## AI (Features)
+Last month, AI Features polished various reactions, including the ‘first reactions’ when AIs respond to audio or visual events. While these behaviors had a solid base, various combat styles, weapons, and scenarios didn’t play consistently, such as when escalating from a low reaction to a high reaction. To improve this, the team built a new AI test level called a ‘test cell.’ This is a Building Block setup with different character types, weapons, cover, usables, etc. that allows the team to pick and mix different setups to produce a consistent version of test scenarios. A particular combination can be exported as one ‘cell’ and imported into a single level where multiple test scenarios can be played simultaneously, allowing the team to quickly identify mistakes, fix them, and retest.
+The test cell level is also being used for cover-hit reactions, which have different animation setups per cover type, combat style, and weapon type. Going forward, the test cell will be expanded to provide more consistency across a wide range of areas.
+## AI (Tech)
+AI tech continued to improve how NPCs transition between servers, including serializing movement requests and navigation paths.
+They also updated navigation generation elements, including one relating to computing navigation islands and one used when exporting processes into object containers. Progress was also made on converting the Apollo tool’s UI style. A new feature continued development too, which the team will share more about in the future.
+## AI (Content)
+In August, the Social AI designers joined the Narrative team to form a larger group focused on improving the Star Citizen experience. As part of this, they began meeting with Design and the creative directors to walk through various locations, looking for opportunities to clean up existing behaviors or add new ones. While many of the behaviors will be based on work done for Squadron 42, the expansive nature of the PU will require bespoke additions.
+AI Content is also in the process of reviewing locations throughout Pyro, ensuring the environment and behavior setups work correctly together and instill a sense of the intended narrative. The team also met with the designers of an upcoming mission to provide support for some of the locations that will be visited by players, including applying believable behaviors to NPCs.
+Aside from outlining behavior improvements and needs for Star Citizen 1.0, Narrative Design kicked off several initiatives to determine the required tech and use cases for future social spaces. This will ultimately lead to a vertical slice showing a gold-standard social space with the level of interaction the game will aim for.
+## AI (Game Intelligence Development Team)
+In August, the Game Intelligence Development team concentrated on delivering a clean and stable Apollo StarScript UX update. This involved adding support for higher icon resolutions so they stay sharp when zoomed in and straightening lines for a clearer read.
+Drag and drop was improved too. Now, when hovering, ports with a bigger selection range are highlighted. The devs corrected the color and size of imported notes, added arrowheads to links leading to closed groups, and enlarged the hovering area and highlights on links and ports. Drop points were also added to links to identify the desired select line.
+## Animation
+August saw the Facial Animation team developing content to flesh out more of the game world’s characters.
+Gameplay Animation continued to work on a selection of creatures previously seen in teaser videos alongside improving the creatures already in the PU. They also progressed with an unannounced addition that the team is “looking forward to seeing in-game.”
+## Art (Characters)
+Character Art continued working on utility and specialist armors, while Character Concept Art supported IAE and progressed with their ongoing exploration of fauna.
+## Art (Ships)
+Last month, Ship Art moved several unannounced vehicles toward their greybox reviews, while others approached their LOD-zero and final-content reviews.
+Work on the RSI Polaris also continued, with the ship’s exterior approaching completion.
+## Community
+In support of Alpha 3.24, the Community team made improvements and updates to the New Player and Welcome Back Pilot guides. They also provided an update to the Cargo Guide alongside a Q&A for the recently released Aegis Sabre Peregrine. The team also focused heavily on compiling and sharing player feedback internally.
+The team’s standout event last month was Ship Showdown 2954, with players from across the community submitting creative entries to determine which ships made it to the top. Phase 1 saw citizens submitting original creations of their favorite vehicles to the Community Hub and social media before the Top 16 faced off in daily voting battles.
+After much voting, the Anvil F8C Lighting was crowned Ship Showdown Champion 2954.
+The Community team also supported the release of a limited number of General Admission CitizenCon 2954 tickets before connecting with the community at Gamescom 2024 in Cologne.
+“This stop on the Bar Citizen Tour brought together players for an unforgettable experience, including a treasure hunt, prizes, and two Bar Citizens events! Later in August, the team met with more fans in Seattle at PAX West during another Bar Citizen event at Stoup Brewing. Looking ahead, we’re excited to meet even more Star Citizen players in Marinha Grande, Portugal, and during TwitchCon US in California!” Community Team
+The Progress Tracker was also updated with the latest production schedule through 2024. It introduces a significant shift in how deliverables are tracked while maintaining transparency throughout the year. Further updates, including 2025, will follow soon.
+With CitizenCon 2954 coming in October, the team spent much of August gearing up for the event, including setting up the venue layout, preparing community booths, and more.
+## Core Gameplay
+Throughout August, the various Gameplay Feature teams continued to improve the hangar and cargo flows for Alpha 3.24 based on feedback from the PTU. Meanwhile, a lot of behind-the-scenes changes progressed that will improve how various gameplay systems handle environments that span multiple servers.
+Progress was made on the ‘overheat’ mechanic, with Core Gameplay adding support for different atmospheric temperatures. For example, weapons will overheat at different rates based on their environment.
+‘Charge and drain’ progressed too and now features client-side prediction to give immediate feedback to players when they’re charging or draining, even if there’s latency between the client and server.
+The team began adding logic to declutter the UI by grouping markers of the same type, while the implementation of weapon groups and group presets continued.
+August saw continued progress on jump points, which began with improved debugging tools to better visualize potential exit points for players. Turbulence was also implemented, which will affect the flight experience within the tunnel; the designers are currently tweaking the strength to get the desired impact. Visual effects were added too, including cockpit vibration based on where in the tunnel the player is located, and obstacles were placed that players will be required to navigate around. Further failure states for jump tunnels were determined before the feature was submitted to QA for testing.
+Progress was then made on the resource network, engineering gameplay, and life support.
+For example, Core Gameplay implemented a new behavior for critical components, which will replace the existing soft death mechanic. When live, only certain items, like powerplants, will trigger an explosion or soft death when destroyed.
+The engineering screen was polished, while a new room selection UI was added for life support. The team also gave Design the ability to control the total power output of multiple active powerplants. This way, more powerplants don’t necessarily result in linearly increasing power production. Significant time was also dedicated to fixing stability issues and bugs following QA testing.
+July’s work on ‘radar and scanning’ continued throughout August, with the team reviewing it in Arena Commander to assess the impact on the player experience and tune values to achieve the desired effect.
+They also focused on closing out feature work for delta signatures, giving Design more control over how to react to changes. Tasks were completed for audio signatures too.
+Core Gameplay continued supporting transit in the run-up to the live release while adjusting how transit data is stored to lower the maintenance overhead on Level Design.
+Elsewhere, the team reworked the ‘shot’ annunciator - it will turn red if someone targets the player and fires their weapon. Annunciators for weapons, power, thrusters, and shields were completed, while ‘overheating’ and ‘off’ states were implemented.
+The ongoing mission-system refactor progressed, with the team fixing various issues causing existing behaviors to break or function incorrectly. The mission system can now run in minimal mode, allowing it to be included in the seeding service and upcoming ‘MissionFactory’ service, which generates contracts.
+Clients can now query available missions, and the contract generator can apply legacy settings to work with the previous system too.
+Implementation of service beacons for the mission-system refactor began, while Core Gameplay supported Mission Design on remaining Blockade Runner and cargo-hauling issues.
+Developers working on cargo gameplay primarily focused on major remaining stability and gameplay issues. For example, they fixed several problems with hangar instance queues getting stuck and players being assigned the wrong hangar. Functionality was also added to the instanced interior manager to better support removing non-active hangar instances.
+Several hauling-mission bugs were solved relating to warehouse-manager and freight-elevator-kiosk interactions alongside issues with the kiosk transferring items on/off the loading platform.
+Bugs were also fixed relating to Hull C auto-loading, auto-loaded commodity transactions, and ship-loading platforms getting broken by obstructions, with the fixes set to be implemented in the near future.
+Finally for Core Gameplay, the devs spent considerable time reviewing internal and external feedback to plan further improvements to the features released in Alpha 3.24.
+## Economy
+The Economy team spent the month getting closer to uniting all their work into a cohesive economy consisting of ships, items, missions, fuel, consumables, freelancing, careers, and more. Progress was also made on the economy setup for Pyro.
+## Graphics, VFX Programming & Planet Tech
+Alongside the ongoing stability and performance improvements for Vulkan, the Graphics team improved debug tooling for the long-term health of the dev experience.
+For global illumination, support was added for high-gloss specular reflections, which builds on the previous rough-specular work. The team also added live updates to GPU raytracing acceleration structures and began working on improvements to transparent objects.
+Performance wise, the global illumination system now supports both temporal and spatial subsampling to accumulate the same visual result with fewer rays fired per frame.
+Ongoing tasks consist of async creation and additional types of destructible renderer objects (such as gas cloud chunks) to reduce frame time spikes on the CPU.
+For Planet Tech v5, the team focused on enhancing terrain performance through a compute shader-driven pipeline that caches material attributes to reduce redundant computations.
+Alongside this, the revamped material scattering system now supports physically based distribution, allowing for denser biomes, such as jungles and forests, by eliminating distinctions between small and large mesh ground covers.
+A new per-object climate concept and new terrain attributes were introduced, including geology and soil maps.
+Planet Tech also spent part of August supporting the Montreal Tools team on the location-scatter tool. For this, they provided a new terrain query API for large-scale queries and extended query capabilities, with future tasks aimed at supporting SDF-based terrain queries.
+Support for the live release included fixes for the ‘invisible asteroid’ bug and other issues.
+Following on from last month’s report, the VFX team focused on fire hazards. The feature work is now complete, with focus shifting to bug fixing and design balance.
+Particle effect connections for jump tunnels were implemented. The devs are now focusing on polishing the VFX and supporting graphics technology.
+The team also progressed with a significant data conversion to add GUIDs, which will help the VFX artists manage particle effects more efficiently.
+Elsewhere, performance improvements are underway, including using multiple threads for particle updates and adjusting VFX regression tests to detect issues earlier.
+## Interactables
+The Interactables team spent time in August on items for Pyro mission content.
+## Lighting
+The Lighting team continued to support multiple areas of development, including Pyro’s space stations, acidic caves, and closeout work for Alpha 3.24.
+## Locations
+Last month, the Landing Zone team progressed with tasks for Alpha 4.0, including adding new areas and additional polish to Pyro’s space stations.
+The Locations team pressed forward with ground bases, moving the initial modules through greybox. Improvements were also made to several new location types coming with Pyro.
+## Mission Design
+Mission Design spent time in August updating the Salvage Mission archetype, enabling it to spawn ground panels and provide FPS gameplay at scrapyards.
+They also continued to work on the Repair Location missions recently shown on the ‘Social Gameplay of Pyro’ episode of Inside Star Citizen. The team is targeting three main gameplay elements for the initial release:
+- Charge and drain: Charging devices that use batteries for operation
+- Replace component: Replacing fuses in relays
+- Repair pipe: Fixing damaged pipes using RMC
+The team also continued to design resource gathering, including determining which commodities buyers in Stanton would want extracting from Pyro.
+They’re also expanding the mechanic to include FPS resource gathering, which will be the first step toward basic MMO-type fetch quests. Elsewhere, a new mission type progressed that the team will discuss in a future update.
+## Narrative
+The Narrative Team spent time last month working with Design and Branding to further develop the new Contested Zones and enhance the gameplay that players will experience there. The team also made improvements to the cargo-hauling missions and continued work on unannounced mission content that will be coming to Stanton and Pyro.
+The Narrative Design team focused on improving AI behaviors at settlements to give a more natural feel to the NPCs that players will encounter there. They also fleshed out the new social AI testbed.
+New lore was added to the website, with a Whitley’s Guide to the Cutlass Red and additional Galactapedia Entries. Plus, there was a very special Star Citizen Live with the Narrative Team.
+## Online Technology
+In August, the Online Services team progressed with features scheduled for Alpha 4.0. Significant progress was made on the updates for the Mission and Marker systems, and the team completed the new Player Trade service, which will allow players to trade game currencies in a server-meshed environment.
+Time was also spent testing and gathering metrics for a newly enabled EAC anti-cheat feature in Evocati and the PTU.
+Alongside helping to stabilize the Alpha 3.24 release, Online Services helped Player Relations unblock accounts with lingering login issues.
+Regarding Live Tools, the team met with Player Support and Player Experience during a visit to the Montreal studio.
+“It was a great opportunity for both teams to sit together and work on the future of the Network Operation Center and how it could improve the quality of life for the support teams with its current and upcoming features.” Live Tools Team
+Elsewhere, the architecture for the error-reporting tool progressed well.
+## VFX
+The VFX team continued their support for jump points and dynamic fire, both of which were shown in recent episodes of Inside Star Citizen.
+They also completed their work on acidic caves, two vehicles, and an unnamed energy weapon that has functionality not seen before in the PU.

@@ -1,0 +1,65 @@
+## Greetings Citizens,
+Jason Hutchins here for the weekly Star Marine update.
+It has been all hands on deck in all studios working towards all of systems and features of Star Citizen and the on foot first person experience is a no exception. Here’s the good news: I GOT TO SHOOT A SPACEMAN IN THE FACE! Earlier this week the build was stable enough to do some internal playtests. Unfortunately, I can’t tell you too much about what we were testing this week without ruining what we have in store for you at CitizenCon… so tune in tomorrow to see what we’ve been working on!
+I did, however, work with the dedicated QA testers in Austin, and our very talented new video editor, Justin Chambers, from the Santa Monica studio to make you this teaser video. Those shots were literally taken this morning and we put them together this afternoon. Thanks to Pedro for another superb music track to work with. Next week, I’ll share some of the behind the scenes footage that went into making the final trailer you see today.
+Of course we also did work to push the FPS development forward, building up to what will be a public release as soon as we can. Thanks for tuning in, see you at CitizenCon 2015!
+Here are the bullets.
+## Gameplay and Engineering
+- Fixed crosshair not showing up on Arrowhead
+- Updated Grab Magazine / Insert Magazine reload animation timing
+- Added alternate fire modes (semi, burst, auto fire) to ATT-4
+- Continued investigating issues with grenades and gadgets
+- Updated P4AR shells helper to align better
+- Stripped down keyframed recoil animations from the P4-AR and made new animation files.
+- Reload animation event timing tweaks for the P4-AR
+- Working on procedural weapon sway/recoil animations for the P4-AR
+- Fixed a bug with the weapon not following when moving the camera up/down
+- Then connected these settings to the weapon data.
+- Crouch and crouch+ADS Procedural animation setup
+- Fixed an issue where guns would float in the air with the owner died. They fall to the floor now. They were leaving their attachments behind, fixed that bug, too.
+- Fixed some bad diagonal sprint strafe blends.
+- Finished first pass on cover lean system. Will need proper animation assets for the next pass.
+- Stated support for weapon changing, need animation assets to be created/implemented.
+- Next up, low cover ADS cover support.
+## UI
+- Worked on Quantum Travel HUD (spoilers!)
+- Working on a the Mission manager display for an upcoming release.
+- Helped the audio team with hooks for the FPS visor HUD
+## Technical Art
+- This week we did a huge cleanup of environmental textures that were much larger than they needed to be. This saved almost 1.7 GB in allocated texture memory. As you can imagine, that was a big performance improvement.
+## Animation
+- The team in the UK is making excellent progress on base locomotion as well as procedural weapon animations. You’ll see what I mean in the video.
+- Smoothing start transitions for the first person view
+- Submitted fixed Stocked motion set prone transitions
+- Cleaning up the Stocked walk start transitions
+- Revived the Weapon Pose for Procedural animation clips
+- Looked into an animation conversion issue
+- Removed all ADS and iron transitions – they looked bad
+- Added WeaponSway and WeaponPose to Stocked transitions
+- Adjusting look poses to correct aim point in ADS
+- Found an issue with another bone that wasn’t being exported by one of our internal tools.
+- Sniper rifle crosshair adjustments.
+- Started working on to/from prone animation transitions
+- Continued polishing first person movement on stocked weapon set.
+- Shotgun fire animation tweaks.
+## Audio
+- Working on breathing manager
+- Made another pass on the bullet cracks
+- Done a pass on EVA thruster audio
+- Debugging and fixing environment and props in Gold Horizon
+- Making another pass at ADS audio
+- Debugging audio for grenade cooking, burst fire, and destroyable props
+## Blocking Issues
+I’m going to start providing a list of the issues that we feel we must fix before we open the tests to backers.
+- Pistol animations need to be implemented and cleaned up, once we finish the stocked weapon set.
+- All Armor Types – Taking damage while swapping weapons causes character to lose weapons.
+- Stocked Weapons clip into the characters face while prone.
+- Damaging breakable objects causes random objects to move.
+- Using the Hologram causes a crash.
+- When pistol is selected user is unable to throw grenades or use gadgets.
+- All Armor Classes – Characters are missing line art/interior helmet geo/Hud elements.
+- P4-AR Ballistic Rifle – Rear sight and part of gun vanish when user goes into ADS
+- ATT-4 Energy Rifle – Rear sight and part of gun vanish when user goes into ADS. (JH edit: I think this one was fixed today – was broken yesterday, though.)
+- Devastator-12 Energy Shotgun – Rear sight and part of gun vanish when user goes into ADS.
+- Throwing a grenade can cause a crash.
+- All loadouts – Sometimes you are unable to shoot your weapon until you cycle through all of the fire modes (press V).

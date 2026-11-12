@@ -1,0 +1,58 @@
+## Star Citizen Patch 3.7.0m
+Alpha Patch 3.7.0m has been released to PTU, and is now available to test!  Patch should now show: PTU-3167526.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: YES
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+We have altered the way we report known issues so that the list is more in depth than before.
+Testing Focus
+- Banu Defender
+- Caves
+- FPS mining, harvesting, and personal inventory
+- ATC crimestat restrictions
+- Ship rental system
+- Vanguard variants
+- The Good Doctor Star Marine map
+- Proximity Assist and Manual VTOL
+- Pirate Swarm Updates
+- New ship weapon Kroneg FL series
+- New FPS weapon attachments
+- Character Customizer v2
+- Mission sharing, mission rewards, and AI service beacons
+Known Issues
+- The Cutlass Black can sometimes fail to spawn.
+- Changing loadouts in Star Marine Last Stand may cause the player to spawn in with no weapons.
+- Players can get stuck at a high heart rate. W/A: Crouch and stand up to reset.
+- Snoopy cap appears in hair style options on the character customizer.
+- In Star Marine's Demien Comms enemy indicators can sometimes be seen through walls.
+- AI ships can get stuck and not continue on their route.
+- NPC beacons will sometimes display an incorrect distance.
+- Attempting to quantum travel to destinations from orbit of ArcCorp or its moons may result in the player colliding with the surface.
+- Ships can spin excessively out of control when their wing is clipped.
+- Landing illegally and having your ship despawn while a mission box is inside will break mission progress.
+- The default hair may be present under other hairstyles.
+## Feature Updates
+Gameplay
+- Optimization pass on The Good Doctor Star Marine map.
+- Adjusted trade prices back to 3.6 values.
+- The "store all" action is now only available when standing inside the cargo grid of a vehicle.
+Ships and Vehicles
+- Updated the Arrow to only have one shield generator to match original spec.
+## Bug Fixes
+- Players should no longer be able to buy items directly into their personal inventory.
+- Darneely should no longer use "no mission available" style dialogue when he has a mission.
+- Landing gear adjustment so ships are enterable by passengers and vehicles.
+- Removed Gladius startup animation from all seats except the Gladius.
+- The Defender should no longer significantly gain acceleration when losing one arm.
+- One of the Area18 Sky Buses should no longer be misaligned with its route.
+- The inventory keybind should now be rebindable.
+- Corpses in the cave mission person missions should now be interactable.
+- The Defender's shield should now have a name.
+- Fix for stationary AI at Lorville.
+- Guards should no longer shoot at NPCs and players when they do not have a crimestat.
+- Vehicle destruction should now properly be reported as a UEE felony rather than a local crime.
+- Rental purchases should no longer time out and fail.
+Technical
+- Fixed 3 server crashes.

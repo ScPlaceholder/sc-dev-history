@@ -1,0 +1,7 @@
+Hi,
+There are many different mappings involved in the planets, and V4 has tweaked and improved these somewhat, but there is no perfect answer and ultimately it’s a choice between different compromises, usually performance.
+A cube projection is really 6 projections and requires blending 3 of those at the corners and 2 at the edges. This makes it impractical for many use cases.
+We actually use a combination of cube, spherical, and stereographic projections for different aspects of the tech, with some blending between the latter two, but never a 3-way blend.
+Hope that helps.
+Ali Brown
+Director of Graphics Engineering

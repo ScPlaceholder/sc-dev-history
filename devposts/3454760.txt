@@ -1,0 +1,2 @@
+Okay, I think there is a bit of confusion concerning my last statement. What we changed in the last couple of releases was the way how IFCS behaves in coupled to keep the commanded velocity vectors. That is independent of the space brake.
+As for the space brake itself, it is simply an override for the currently commanded velocity vectors. It should do the same in coupled and decoupled ... slowing you down to 0 ASAP but without changing the direction. So it is more meant to be an emergency panic button than anything else.

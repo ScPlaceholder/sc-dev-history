@@ -1,0 +1,66 @@
+## Feature Updates
+Characters
+- DNA Head Textures Update
+Art updates for DNA archetype heads that greatly improve the quality of all DNA heads, both for players and common NPCs. This update brings additional archetype heads, while also updating base textures, wrinkle maps, and irises for the original heads.
+Locations
+- Separated Low Orbit Stations and Landing Zones to each have their own inventories
+- Greatly increased landing zone storage
+Gameplay
+- Ground Vehicle Signature Emissions Changes
+Adjusted ground vehicle signature emissions so that they are more difficult to detect at higher ranges.
+- Ship Thruster Boost Adjustments
+The afterburner capacitor minimum cost has been removed and it now only drains when the ship accelerates in linear or rotational motion. The balance has been adjusted as a result and will be iterated on as we receive feedback and more data. More changes will be done to this in the future so expect slightly different burn times.
+- Shield Face Balance Pass
+Converted heavy fighter and larger ships with size 2 shields to have front-back shield faces instead of bubble shields.
+- Ship Weapons Polish Pass
+Increased stagger fire threshold to include all weapons up to 750 RPM to allow the option to be stagger fired.
+- Player Injury Polish Pass
+We have overhauled the injury system to increase the likelihood of injuries occurring during repeated combat encounters and decrease the chance of instant death. There is now a scaling percent chance of triggering early injuries when taking damage to a body part. This is assessed each time the body part receives additional wear and has a short cooldown between triggers to prevent it from occurring too frequently.
+- FPS Weapon Refactor
+Ongoing updates to make procedural animations more natural for holding FPS weapons. Adjusted weapon sway and recoil values across a wide range of rifles, SMGs, shotguns, and sniper rifles.
+- Hunger and Thirst Polish Pass
+Increased the decay rate of hunger and thirst values.
+- Added keybind option to request ATC landing and takeoff (unbound by default)
+Core Tech
+- GPU Particle Performance Pass
+Converted Xi'an Scout and Aopoa Nox thruster particles to render through GPU instead of CPU
+## Bug Fixes
+- Fixed an issue causing the repair and restock functions to not work consistently
+- Fixed an issue where players were unable to claim insurance on vehicles
+- Fixed an issue where ships get could get stored in an unknown state at outposts
+- Fixed an issue causing the quantum drive to not engage consistently
+- Fixed an issue causing players to be unable to set routes or QT towards certain missions
+- Elevators in underground facilities and Grim Hex should no longer become duplicated
+- Repair services should now correctly repair destroyed engines
+- Grenades should now consistently explode when detonated
+- Emptying and reloading consecutive magazines should no longer break reloading
+- Items left on landing pads should now be cleaned up, so that they no longer block ships from spawning on the pads
+- Scanning minable rocks should no longer be unreliable and should no longer give a full red critical display
+- Fixed an issue causing the mission broker to stop updating and displaying new instances of reputation-gated missions
+- Wallace Klim should now correctly offer missions to players via the mobiGlas contract manager
+- Players should no longer experience severe delays when interacting with inventory after loading into locations that have a large amount of stored items
+- Shooting another player should no longer always result with instant death rather than placing player in an incapacitated state first
+- Placing a downed player on medical bed should now complete correctly
+- Hitting your own corpse with a ship should no longer give you a crime stat
+- Fixed several areas of ships where the shields did not fully extend coverage, allowing damage to pass through in the Avenger series, Arrow, Spartan, Hammerhead, Retaliator, Hercules Starlifter series, Buccaneer, 400i, 85X, Tumbril Cyclone
+- The landing gears of the Buccaneer, Phoenix, Aurora LX, and Xian Scout should no longer snap back after deploying
+- Cutlass Steel spotlight should no longer be offset / rotated to right
+- Loading into a Constellation into Arena Commander will no longer spawn the player into the docked Merlin
+- Third person camera should no longer get stuck after ship is impounded
+- The Valkyrie ramp will no longer clip through the floor when players open the ramp, which caused it to bounce throughout the hangar
+- Fixed an issue causing massive reverb muffled sound to get stuck after heavy g-forces
+- Players should no longer get stuck on "Awaiting Selection" and be unable to select ships for AC modes other than Free Flight
+- Accessing the mobiGlas while holding a loot crate will no longer attach the crate to the player, preventing the crate from being dropped except via weapon swap and causing a loss of Grab functionality
+- Hunger and Thirst values should now persist between client sessions
+- Players should no longer have a chance to be stuck in prone if falling down when entering a ship from EVA
+- The player should no longer be kicked out of the Persistent Universe while in a downed state waiting to be revived
+- Fixed an issue causing OxyPens to not replenish oxygen
+- Fixed an issue that was causing hostile actions against AI-piloted ships to not correctly match hostile actions against players
+- Fixed an issue causing the vial to not pop out of the medical when in reaching zero ammo in self-heal mode
+- Fixed an issue causing the medgun's AR cards to display partially off-screen when the player has multiple injuries
+- Fixed an issue causing certain FPS weapons to be incorrectly dropped with Tier 1 arm injuries
+- Fixed an issue causing multiple rooms in the GrimHex hospital to be incorrectly pressurized and not have atmosphere
+- Fixed multiple locations where players can get stuck behind crates in derelicts
+## Technical
+- Fixed 11 Client Crashes
+- Fixed 2 Server Crashes

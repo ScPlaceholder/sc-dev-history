@@ -1,0 +1,87 @@
+## Roadmap Roundup
+Happy Friday, everyone!
+Each and every week, we accompany the Roadmap update with a brief explanatory note to give you insight into the decision-making that led to any changes. This is part of an effort to make our communications more transparent, more specific, and more insightful for all of you who help to make Star Citizen and Squadron 42 possible.
+With that, let’s dive into this week’s roundup!
+-CIG Community Team
+## Notable Changes for January 24th, 2020
+## PU
+## The following cards have transitioned into polishing under the Alpha 3.9 Column:
+- PVP Bounties
+- Bounty Mission NPC Improvements
+## The following cards have been added to the Roadmap under the Alpha 3.9 Column:
+- High Speed Combat
+Ship systems will suffer the consequences of traveling at high speed, restricting some of the options that players will have at maximum velocity creating a vulnerability that will push players into engagement at lower speeds.
+- New Targeting Methodology
+Fundamental changes to how targets are tracked on and off your screen with UI updates to improve the visibility of locked, tracked and the return of pinned targets.
+- Law System v2: Surrender
+In order to allow players to be arrested without losing their life, we will allow them to surrender by coming to a halt and powering down their ships when ordered to by security. Security will halt their attack and arrest criminal players aboard the ship, impounding the ship if owned by a criminal.
+- Player Interaction System Improvements
+Continued development of the interaction system that lets the player select dialogue options, interact with props in the environment, and generally interact with the game. Some of the tasks included in this work will include providing player feedback for when items can’t be used, adjusting UI elements to scale/place correctly with geometry, and bind commonly used actions to hotkeys.
+- Ship AI: 3D Pathfinding – Planet Side
+Building the fundamental technology to allow AI controlled Ships to navigate in atmosphere using information from physics and the planetary tech. The path search will use data from the elevation map of the planet and the physical information about the additional object present in the map (buildings, rocks and so on) to return an obstacle free path. This will be built on top of the current new approach for the 3D Pathfinding that will allow an entity to not only find a path in space, but building over time to optimize calculation and scale using all the engine functionalities as streaming.
+- Ship AI: 3D Navigation – Collision Avoidance
+Building a first pass for the system to correctly handle collision avoidance between moving entities. The idea is to provide a system that can allow AI entities to reciprocally avoid each other while at the same time avoid collisions with the environment. The system considers the projection in time of the position of the agents, their size and their target velocity and provides a steering command that is as close as possible to the original intention of each agent.
+- Weather Locomotion
+The player and other characters will show improvements in locomotion when moving in inclement weather.
+## The following cards have been added to the Roadmap under the Alpha 4.0 Column:
+- Body Dragging
+Implementing the initial functionality for the player to move an incapacitated or dead NPC by dragging the body around an environment.
+- Ship HUD Rework
+As we adapt all our in-game UI to use the new building blocks UI system, we’ve taken the opportunity to re-design the ship HUD and make many much needed improvements.
+## The following cards have moved or been removed from the Star Citizen Roadmap.
+- Gemini C54 Ballistic SMG
+In order to allow downstream teams time to fully complete their implementations, this card has been moved to 4.0.
+- Lightning Bolt Co. Yubarev Electron Pistol
+In order to allow downstream teams time to fully complete their implementations, this card has been moved to 4.0.
+- Repair/Refuel/Restock Kiosk
+After re-evaluating priorities, the decision was made to temporarily remove this card from the roadmap until a target date is decided on.
+- Klaus & Werner Sledge Mass Driver Revision
+In order to allow downstream teams time to fully complete their implementations, this card has been moved to 4.0.
+- Lightning Bolt Co. Atzkav Electron Sniper Rifle
+In order to allow downstream teams time to fully complete their implementations, this card has been moved to 4.0.
+- Death Animation Improvements
+Priorities have changed following Director discussion resulting in this card moving to 4.0.
+- GP-33 Grenade Launcher
+After re-evaluating priorities, this card lands beyond the 4.0 Column, resulting in it not being visible until additional columns are added.
+- Commodity Transfer Timers
+Following discussions, the decision was made to temporarily remove this card from the Roadmap until a new target date is decided upon.
+- Accounting App
+Following discussions, the decision was made to temporarily remove this card from the Roadmap until a new target date is decided upon.
+- Economy Display Terminal
+Following discussions, the decision was made to temporarily remove this card from the Roadmap until a new target date is decided upon.
+- Dynamic Missions System: Economy Generated Missions
+Work on this card has been transferred to a different team, resulting in the removal from the roadmap until the team determines where it will best fit in their priorities and a new target date is decided upon.
+- Dynamic Mission System: Mission Generation along QT Routes
+Work on this card has been transferred to a different team, resulting in the removal from the roadmap until the team determines where it will best fit in their priorities and a new target date is decided upon.
+- FPS Combat: Weapon Types
+Feedback and review revealed that more work was required to bring this card up to our standards. To allow the team to continue iterating on these tasks, we’ve shifted this card to the Alpha 4.0 column.
+- FPS: Cover Usage v1
+Following discussions and review, additional work will be added to this card. This card has been shifted to the Alpha 4.0 column to allow the team more time to complete the new tasks.
+- NPC Improvements: Civilian
+Following discussions, the decision was made to temporarily remove this card from the Roadmap until a new target date is decided upon.
+- Esperia Prowler
+The Prowler was planned to release in a 3.8.X patch in the latter half of March. After evaluating this timeline, we’ve come to determine that doing a 3.8.X patch in the latter half of March would not be ideal, since we’ll very likely be in the middle of the PTU phase for Alpha 3.9. Due to this logic, it made sense to simply move the Prowler release into the 3.9.0 release, which still allows the Prowler debut to take place around the same time without disrupting the publishing process.
+- Cutlass Blue
+There are ongoing discussions about when the gameplay functionality associated with the Cutlass Blue will come online, resulting in our decision to temporarily remove this card from the roadmap until discussions conclude.
+- Multicrew – Expanded Pilot Role
+This task-set (epic) is outdated and does not accurately represent the work the team will need to complete, so we’ve removed it from the roadmap for the time being. You can expect a more accurate version of this card to reappear when the team has completed reevaluating the work needed.
+- Multicrew – Expanded Turret Gunner Role
+This task-set (epic) is outdated and does not accurately represent the work the team will need to complete, so we’ve removed it from the roadmap for the time being. You can expect a more accurate version of this card to reappear when the team has completed reevaluating the work needed.
+- Door System Improvements
+This card has been de-prioritized in favor of other work, resulting in this card being temporarily removed from the roadmap until a new target date is set.
+- Atmospheric Combat
+This card has been de-prioritized in favor of other work, resulting in this card being temporarily removed from the roadmap until a new target date is set.
+- Zero-G Push & Pull
+Following Director discussions, priorities have changed and this card has been removed from the Roadmap temporarily.
+- NPC Healing
+Following Director discussions, priorities have changed and this card has been removed from the Roadmap temporarily.
+- FPS: Combat Improvements and Polishing
+As this is a final step towards a more completed Combat AI experience, this card has been temporarily removed from the Roadmap to allow proper planning to take place on when it will fit in due to other Combat AI tasks moving.
+- Flight AI: Improvements and Polishing
+Tasks expected to be placed into this card have found their home being better suited in different cards. That means this card is redundant and has been removed from the roadmap.
+## SQ42
+- FPS: Cover Usage v1
+After reviewing this system, additional feedback emerged resulting in us reopening the card and moving it to Q1 of 2020. This allows the team to continue working and polishing the system to achieve the quality we are aiming for.
+- FPS Combat Weapon Types
+After reviewing this system, additional feedback emerged resulting in us reopening the card and moving it to Q1 of 2020. This allows the team to continue working and polishing the system to achieve the quality we are aiming for.
+That’s all for this week’s Roundup – join the discussion on Spectrum

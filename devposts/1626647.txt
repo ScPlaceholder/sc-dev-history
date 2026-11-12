@@ -1,0 +1,38 @@
+## Star Citizen Patch 3.3.0aa
+Alpha Patch 3.3.0aa has been released to the PTU, and is now available to test!  Patch should now show: PTU-981976.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- Teach's Ship Shop
+- VOIP and FOIP
+- Missions: FPS combat mission and scramble races
+- New Ships and Vehicles: Valkyrie, Phoenix, Hammerhead, Mustangs, and Cyclones
+- Manned and remote turrets
+- Changes to ship cannons
+Major Known Issues:
+- Players may experience an infinite load screen at the start of this patch.  Please wait 5 minutes for the client to crash so we can collect information on the cause.
+- VOIP/FOIP mG buttons will sometimes not function correctly.
+- Mission markers no longer appear after using crash recovery..
+- There are currently no interdictions..
+- Recco is currently not functioning.
+## Feature Updates
+## Bug Fixes
+- Turned off player death reactions to fix an issue with continuous motion in Star Marine.
+- REC should now properly update after a purchase without requiring a client restart.
+- Turrets should no longer rotate differently with gyrostabilization enabled.
+- Visor chat should now work without requiring cycling the bell icon.
+- Fixed replaceme balls on the surface of Daymar.
+- Patrol missions should now properly update at the "hold position" step.
+- Players should no longer get stuck on an infinite load screen when reconnecting from a disconnect.
+- The scanning sound should no longer play when in mining mode.
+- Fixed an audio issue where ship duress sounds would play all of the time.
+- The elevator doors at the rest stop should no longer be out of position after opening.
+- Players should be able to walk around and move after using crash recovery.
+- Scramble races should be back on the mission list.
+Technical
+- Fixed 2 server crashes.
+- Fixed a server deadlock.
+- Fixed 2 client crashes.

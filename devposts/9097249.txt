@@ -1,0 +1,1 @@
+This effect will not be removed. You can change the trigger distance by using g_headtracking_hmd_fpsHeadBoundaryDistance but it still triggers if the raycast from your headpos to the root position detects a hit. My guess is that the latter happens for whatever reason. I need some repro steps to investigate and fix this then.

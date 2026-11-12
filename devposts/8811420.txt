@@ -1,0 +1,76 @@
+## Star Citizen Alpha Patch 4.8
+Alpha Patch 4.8 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.8.0-PTU.11768487.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Disabled in current PTU builds
+## Testing/Feedback Focus
+- Stability, Bugfixes
+- New Mission: Tactical Strike Groups & QV Extraction Stations (New reputation gate tonight)
+- New Event: Return of Xenothreat
+- Item Recovery: Vehicle Loadouts
+- Command Module
+- Flight Suits & G-Force Resistance
+- New Mission: Defend Location - Ship Battles V3
+- Kastak Arms Plasma Grenade
+- Uniflex Crossbow (Blueprint should be fully working as a drop now from TSG)
+- Refueling Missions & Improvements
+- Ship Hangar Service T0
+- Hammerhead Gold Standard
+Known Issues
+Grim HEX elevators may block movement between certain areas of the lobby. If you are at this location, you may need to "fast travel" to the hospital bed in order to make it back to the hangars.
+- PU - Stanton - GrimHEX / Lobby - Transport / UI / Locations - GrimHEX elevator do not have an option to designated location
+- Multivehicle - Docking - Keybinds - conflicting keybinds not allowing ship docking to stations
+- PU - Missions - Tutorial - Your First Flight - NPE / UI / ASOP Terminal - The tutorial vehicle is not present on the ASOP Terminal
+- PU - UI - Party connection Playing on repeat after quantum travel after a party member crashes and reconnects
+- PU - Multisystem - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+- PU - Multi-System - Stall / Freeze - Client - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing and using Commodities Kiosks
+- PU - Armor / Clothing / Inventory Rework - "Right Click > Equip" does not function if a paper doll slot is occupied, prevents further inventory interactions
+## Features & Gameplay
+Gameplay
+## Refueling Missions & Improvements
+Refueling content in 4.8 comes in multiple parts with new Refueling missions as well as Improvements to the overall refueling playability. The first is a new set of contracts from the United Wayfarers Club that give players who own refueling ships a dedicated mission type to engage with. The second part is a significant overhaul to how ship-to-ship refueling works at the system level, making the process faster, clearer, and less punishing.
+With this update, there is a new operator mode on the refuelling ship to enable Refueling operator mode, just like salvage or mining mode. Players can enter the mode by pressing “M”. Entering the mode will automatically extend/retract the fuel nozzle allowing either party to send requests for docking to initiate the refueling process. Once docked, fuel transfer can be initiated through the Vehicle Maintenance App, just select the amount, confirm the purchase, and the fuel moves. For the fuel giver it changed however: As long as there are relevant pods open, the fuel flows automatically as soon as a purchase was made. Players can still manually control the flow: opening/closing pods and transfer fuel from one pod to another. Ten new fuel pods and nozzles are also being added, along with refueling beacons that let players in need of fuel broadcast a request to anyone in the area.
+Part 1:  Refueling Missions
+▲ Mission Overview
+- Refueling contracts are now available from the United Wayfarers Club via the Contract Manager
+- Contracts are specifically designed for pilots operating refueling ships such as the Starfarer
+- Mission completion requires filling a target ship's tanks to at least 85%
+- Payment is held in escrow during the refueling process and released on successful completion
+- AI ships involved in contracts are always passive and will never initiate docking; the player must send the docking request
+▲ Refueling Beacon (For Ships Out of Fuel)
+- Players who have run out of fuel can now submit a refueling beacon from their MobiGlas, specifying whether they need Hydrogen, Quantum Fuel, or both
+- Within 5 to 10 minutes, an AI Starfarer will respond to the beacon and fly out to assist
+- A ship that is completely out of fuel cannot move, but autodocking does not require fuel, so the stranded player can still complete the connection
+▲ Available Contracts
+Refuel a Stranded Ship Contract: A ship has run out of fuel and is stationary at the marked location. Fly out, extend your refueling boom, dock to the vessel, and fill its tanks to complete the contract. The stranded AI ship will accept your docking request and QT away once refueled. Best suited for Starfarer-class ships with sufficient fuel pod capacity to fill a target tank from empty.
+Receive Fuel from an AI Refueler Contract: An AI Starfarer will quantum travel to your position and offer to refuel your ship. Target the AI ship, press N to request docking, align to their nozzle, and confirm your fuel purchase in the Vehicle Maintenance App. Payment is taken from escrow once fuel transfer is complete and you undock. The AI ship will QT away after the exchange.
+Distress Signal Ambush Variant: Not every distress beacon is genuine. Some contracts will lead you to a decoy satellite broadcasting a fake fuel request signal. Upon arrival, the mission provider will warn you something is wrong before hostile AI ships quantum in and attack. Eliminating the attackers earns a bonus reward above the base contract payout. Running from the engagement still completes the contract for the base amount. Hostile ship count is kept low given you will be flying a refueling vessel.
+Part 2:  Refueling System Improvements
+▲ Docking, Fuel Transfer, and New Items
+- Flow speed is now a fixed property of the nozzle and cannot be manually adjusted. Nozzles can no longer be damaged by incorrect flow speed settings
+- Hydrogen fuel is always delivered before Quantum Fuel when both are requested. Pods for both types can be opened at the same time without manual switching
+- 10 new items are being added: 5 new fuel pods and 5 new nozzles, with existing items rebalanced. Pods and nozzles vary in flow speed, storage capacity, and damage resistance
+- Stats on the fuel nozzle and pods received a rework: Pods now add a modifier on the flow speed that is defined by the nozzle. And we have seperate flow speed for QUA and HDY fuel
+- Refueling pods are now available for purchase at stations via the commodity shop
+▲ UI Changes
+- The pod management interface has been consolidated from two screens into one
+- Pod fill amounts are now displayed as a current/total value (for example, 450/600 SCU) rather than as a percentage
+- Valve control elements have been removed from the pod management screen
+- Payment information, process timeline, and an Abort button remain on screen during active refueling
+- A control hint for entering Refueling Mode now appears in the lower right of the HUD when seated in the pilot seat
+## Ship Hangar Service T0
+Ship Hangar Service T0 brings the same repair, restock, and refuel services you use at landing zones directly onto large capital ships. When landed in the hangar of a supporting vessel, you can open your MobiGlas and request ship services just as you would at any station or outpost. This first release makes the feature available on the Carrack, Idris, Polaris, and 890j, as well as the AI Idris in the Tactical Strike Groups mission.
+Players will need to stock their ship's cargo grid with the necessary items to refuel and restock. Ammunition, countermeasures, Quantum Fuel, Hydrogen Fuel, and Raw Materials Composites (RMC) are now available at admin offices at Seraphim Station, TDD locations, and admin offices at major stations .
+How It Works
+- Land in the hangar of a capital ship that offers servicing and remain seated in your ship
+- Open your MobiGlas and navigate to the Vehicle Maintenance Services app, the same interface used at landing zones and stations
+- Request repair, restock, or refuel as needed; multiple ships can be serviced simultaneously
+- Services do not require any action from the crew of the ship
+- The feature is active during the Tactical Strike Groups mission on the AI Idris
+Economy and Supplies
+- Capital ship service commodities are now purchasable at commodity shops across the Persistent Universe
+- Ammunition, countermeasures, Quantum Fuel, Hydrogen Fuel, and Raw Materials Composites (RMC) are available at admin offices. Seraphim Station, TDD locations, and admin offices at major stations now carry these materials
+- Pricing is set by the AI ship for this release and is not adjustable by players yet
+## Tactical Strike Group Mission Polish
+The general locations have had lots of LOD, performance, art, and lighting polish. We've disabled the respawning of the turrets during the mission so they will no longer regenerate mid mission after being destroyed. Players should now correctly be able to receive the crossbow blueprint as a reward from completing TSG.

@@ -1,0 +1,78 @@
+## Star Citizen Alpha Patch 4.8
+Alpha Patch 4.8 has been released and is now available to test on the PTU environment!   Patch should now show: VERSION 4.8.0-PTU.11681592.
+- Audience: Evocati (Standard Evo NDA)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Mission: Tactical Strike Groups & QV Extraction Stations
+Not Ready for Testing/Feedback
+These features and updates are partially in the build but not fully functional or not ready to be tested.
+- New Event: Return of Xenothreat
+- Refueling Missions and Refueling Improvements
+- Vehicle Command Module
+- Defend Location Missions
+- Transport System Update
+- Flight Suits G-Force Resistance
+- Ship Hangar Service T0
+- UltiFlex Crossbow & Plasma Grenades
+- Hammerhead Gold Standard
+- New Hairstyles
+Known Issues
+- WARNING: Levski Hangar elevator doors are broken in this build so you may want to fully avoid it.
+- PU - Nyx - Landing Zone (LZ) - Levski / Social Stations / Elevator  Terminals - Locations / Art - Hangar elevator doors are not opening
+- Arena Commander - All game modes - Players are unable to load  into any of the AC Game modes they will get stuck on the loading screen
+## Features & Gameplay
+Gameplay
+New Mission: Tactical Strike Groups
+Tactical Strike Groups is a new endgame mercenary contract designed for large, organized player squads. The mission tasks players with assaulting a fortified Nyx asteroid base held by hostile forces, working through a multi-phase assault that rewards coordination across ship classes and combat roles. The contract is accessible from Levski and scales in intensity as each phase of the station is dismantled. The rewards will be great but expect heavy resistance throughout.
+Mission Overview
+- Available via Contract Manager at Levski under Verified Mercenary Contracts
+- Intended for squads of 7 or more ships across multiple sizes and classes
+- Smaller ships (no larger than a Drake Cutlass Black) are required to navigate the station's internal superstructure trenches
+- Larger ships can participate in exterior combat and defense throughout the mission
+Key Mechanics
+- Only ballistic weapons deal damage to hardened station targets including Power Relays while energy weapons will have an effect damaging Cooling Units and Core components
+- Ships will accumulate Distortion Damage when flying inside the superstructure trenches
+- Distortion increases in the core central chamber as soon as the weak points are revealed and the shutter that nests them opens up
+- Station entrance to the interior FPS section opens when core is destroyed. Trench run entrances open up when all power relays are destroyed
+## Bug Fixes & Technical
+- Fixed 6 Client Crashes
+- Fixed 1 Server Crash
+- Potential Fix: The hand carry icon missing from the inventory UI
+- Potential Fix: Actor suffocates inside hangar despite ship life support being active and helmet unequipped
+- Potential Fix: Freight elevator inventory access not working in Nyx warehouses due to QV Station location being incorrectly assigned to the player location
+- Potential Fix: Inventory stopping working at Nyx QV Stations after streaming the location out and back in
+- Potential Fix: Items dragged into equipment slots in the inventory UI intermittently not being equipped
+- Potential Fix: Aegis Vanguard nose array guns not being swappable in the VMA
+- Potential Fix: QV Stations location incorrectly assigned to player location not allowing inventory access on freight elevators in warehouses
+- Potential Fix: Music from the Voyager Bar playing in areas of Orison where it should not
+- Potential Fix: RSI Aurora Mk II modules attached via tractor beam disappearing from the ship and freight manager after being claimed and retrieved
+- Potential Fix: Sparkplug can clip through the floor after being suddenly dropped in QV Breaker Station locations
+- Potential Fix: Jump Point Gateway Stations - Tractor beams are still useable even inside the Armistice Zone
+- Potential Fix: Project Hyperion final terminal returning "Not Authorized" if the player died during the mission
+- Potential Fix: Players suffocating inside a ship hangar despite the ship's life support being active and no helmet equipped
+- Potential Fix: Module attached via tractor beam to the RSI Aurora MKII will be missing from the ship and the freight manager after it was successfully claimed and retrieved
+- Potential Fix: Anvil Paladin pilot seat using an incorrect animation
+- Potential Fix: Argo Mole Carbon and Mole Talus owners not seeing their ships in ASOP or their liveries in the VMA
+- Potential Fix: Enemy ships not spawning when players arrive at the objective in Ship Battles missions
+- Potential Fix: Marok collisions in Wikelo Station hangars causing high physics cost and reduced server performance
+- Potential Fix:  A ReplaceMe ball can be seen in various areas around Levski
+- Potential Fix: Laser ground impact VFX continuing to play after the laser has stopped firing
+- Potential Fix: The Sparkplug item clipping through the floor when suddenly dropped
+- Potential Fix: Radar not appearing under the Avionics tab in the VMA
+- Potential Fix: The ship being refueled appearing to be flung around and the pilot's screen blacking out after connecting with a Starfarer for refueling
+- Potential Fix: Hand mining nodes not respawning on servers, leaving empty visible nodes in the world
+- Potential Fix: MG Scrips not persisting across patches
+- Potential Fix: Bounty hunter blueprint drop rates from verified bounty targets not being 100%
+- Potential Fix: Empty SCU boxes remaining in cargo after selling their contents
+- Potential Fix: "No Step" decals missing from both sides of the RSI Scorpius cockpit
+- Potential Fix: Players being unable to access ship storage containers due to actor height detection
+- Potential Fix: Player heads exhibiting a jiggle or slinky-like motion after unequipping the skull helmet
+- Potential Fix: Powering down a powerplant triggering a false damage alarm on the engineering terminal
+- Potential Fix: The left missile rack item port displaying a raw string key instead of its name in the VMA
+- Potential Fix: A hair accessory clipping through certain helmets instead of being hidden
+- Potential Fix: Players being able to die while riding the Nyx Monorail in transit
+- Potential Fix: Missing floor collision in some Levski shops causing players and AI to fall through
+- Potential Fix: A placeholder "ReplaceMe" ball asset visible in various areas around Levski
+- Potential Fix: Players having too much time to avoid being quantum interdicted

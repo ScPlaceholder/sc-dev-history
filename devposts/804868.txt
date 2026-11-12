@@ -1,0 +1,16 @@
+Hello, Testers!
+RSI launcher 1.0.0-alpha.31 is out on PTU. Your launchers should auto-update automatically.
+## Notes:
+## 1.0.0-alpha.31 - 2017-12-20
+## Changed
+- The launcher window composition is now solid. This should reduce the amount of waste gpu composition cycles while idle.
+- The launcher will now minimize and restore it's window automatically when a game session starts and end.
+- Base application pack is now an optional phase per game release. (can be disabled)
+- The game channel selector is now be disabled during the patching process.
+- Accelerated the rate calculations and refresh of the initial download state view.
+## Fixed
+- Muting the sound system in the launcher will totally dismount audio tracks from memory.
+- The application icon in the task bar will properly turn off from it's green progress state once a patch is complete.
+- Prevent multiple patcher tasks from being started.
+- Fixed a bug where the system tray icon would remain for a short while during application shutdown.
+- The application will now properly display an error popup if a network error occurs during the delta phase.

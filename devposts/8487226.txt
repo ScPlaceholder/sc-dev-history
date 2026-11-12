@@ -1,0 +1,33 @@
+## Star Citizen Alpha 4.5.0 PTU: Engineering Design Doc
+Alpha 4.5.0 introduces Engineering Gameplay, Armor, and Ship Fire Hazards. These interconnected systems fundamentally change how you interact with and maintain your spacecraft and represents some of the most significant ship gameplay changes, affecting nearly every ship and vehicle in the game.
+The goal of Engineering gameplay is to enable ships to perform approximately as well as they did in 4.4.0 in combat and survivability, with the added benefit that engineering and multicrew gameplay can extend capabilities beyond what was possible in 4.4.0. However, you'll now need to actively manage your ship's systems and perform maintenance between battles to ensure you're fully prepared for your next encounter.
+Engineering systems are currently in progress during 4.5.0 PTU phases and may have issues and features not completely functioning. These can be treated as bugs and feedback and we definitely want to hear from you in the issue council and Spectrum about all of your findings!
+## Engineering and Resource Network
+The new Engineering system introduces a comprehensive ship management experience that transforms how players interact with their vessels. This system creates dedicated gameplay roles for engineers aboard multi-crew ships while also providing solo pilots with new depth in ship maintenance and combat survival.
+Engineering encompasses power management, component health monitoring, damage repair, fire suppression, and system prioritization. Understanding these interconnected systems is essential for keeping your ship operational during and after combat, exploration, and everyday flight operations.
+## Multi-Crew Engineering
+The Engineer Role
+On larger vessels, dedicated engineers will be imperative to keeping your ship ready during and in-between encounters. Extending the life of your ship is one of your engineer's main goals through various tasks including monitoring the ship status during combat, prioritizing repair tasks, managing power distribution, fighting fires, and replacing and fixing components.
+Having clear communication between your captain, pilot, and engineers is a must. This will include decision making for what emergencies to prioritize over another. As the engineer, you will have the tools at your disposal to give information about your ship’s current state to all members of your crew, starting with the engineering screen.
+## Engineering Screen UI
+The Aesop Engineering Screen is the primary interface for monitoring and managing ship systems. This screen provides a comprehensive view of all ship components, their health status, power distribution, and system alerts.
+The Engineering Screen can be accessed from: Dedicated engineering stations on larger ships, copilot seats on smaller vessels (for non-physicalized ships), and MFD panels throughout your ship.
+## Interface Elements
+Ship Schematic View
+The central display shows a 3D representation of your ship with color-coded indicators for each component and room. This view allows you to Identify damaged components at a glance, Navigate to specific ship sections, and Monitor real-time damage and and out of combat.
+Displayed Information: Information currently displayed shows Hull damage and health overviews, component names and locations, component health/wear/tear percentages, power distribution status, room atmospheric conditions, and fire alerts. A component info box shows upon hovering over a component, giving a summary of its state.
+Room Display
+Shows fire status, atmospheric conditions, and loss of atmosphere for each room in the ship. Note that this can create significant information clutter on larger vessels.
+Color State Indicators
+Components are displayed with color-coded health states:
+- Green: 100-50% health range
+- Yellow: 50-20% health range
+- Red 20-1% health range
+- White 0% fully destroyed component
+Important Note: The current yellow threshold triggers at 99%+ health, which is considered too aggressive. Design intent is for yellow to appear at 50% health.
+## Presets
+Players can store and load Presets of their power distributions through a dedicated UI section.
+- Flow: Create new preset, give it a name, adjust power levels
+- Presets can be shown in preview mode, which decouples the power management display from the active vehicle. Changes made in Preview can be either saved to a Preset, applied to the active vehicle, or discarded
+- Presets can be shared between players (stored locally in the user folder, similar to the Character Customizer)
+- Presets are stored per vehicle. There are no limits to the amount of presets

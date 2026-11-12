@@ -1,0 +1,74 @@
+## Star Citizen Patch 3.18.0r
+Alpha Patch 3.18.0r has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.0-PTU.8321451.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Servers: US Only for now
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- Pay Fine button can be pressed an indefinite amount of times and will subtract UEC each activate (Press it once than leave the terminal to avoid unneeded charges)
+- Items appear not to be removed from the player's inventory when they sell them or hand them in to a contraband kiosk
+- Location - Daymar / Whistler Crypt / Physic - Walking on hills near Whistler's Crypt can potentially kill or wound the player
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Multilocation - Elevators - Elevator doors open mid-transit
+- Merlin will not undock from Constellation
+- Mercury Star Runner only loads 6 SCU of cargo
+- Stanton - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction
+- Multivehicle - Stanton - Vehicle Feature - Hit box desync - Vehicles do not take damage when attacked at certain parts of its hull
+- External Inventory - Loot Boxes will Eventually Load Indefinitely
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- UI / Vehicle HUD - It is possible for the Vehicle HUD to vanish for the player during flight and combat
+- VARIANTS ONLY - Weapon / Weapon Feature - Multitool Variants display "HEALING" info regardless of attachments
+- Orison - Mission Content / Locations - A hostile AI is stuck inside a wall at HMR-A and one hostile appears missing at BWD-G for Bounty Assignment: Neal Garrison mission
+- Inventory / Loot Boxes - Loot Boxes will Disappear on Approach or after Opening
+## Feature Updates
+Ships and Vehicles
+- Balance pass on Drake Corsair and Cutter Fuel tank holds and fuel intakes
+Core Tech
+- Made Further Client, Server, and Network performance Improvements
+- Shard ID will now continue to display when using r_displaysessioninfo 1
+## Bug Fixes
+- Fixed - Vehicles / UI - mobiGlas - VMA - Some ships in VMA show empty Systems components even if they exist
+- Fixed - Multivehicle - Stanton - Vehicles / UI - Various vehicles are displaying missing or empty weapons from their loadouts despite actually having them when spawned
+- Fixed - Bed Logout - Disconnection Error 30009 - "Remote Disconnect - Failed to spawn vehicle" on normal logout (fallback spawn in their last hab in case it still happens)
+- Fixed - Physics - Grimhex - Flying towards hex can result in hitting an invisible wall that will force a ship to yaw to different degrees
+- Fixed - Physics - Changing direction 180 and burning causes jerk of ship
+- Fixed - Ships / Vehicles - Vehicle Voice Audio - "Self destruct cancelled" Plays when entering and exiting armistice zones
+- Fixed - Ability to repair surfaces does not persist after logout and shows Repairs Not Needed
+- Fixed - Inventory - "Equip All" will not equip all available slots and fails the equip request
+- Fixed - Bounty Hunter - Mission Content / Law System - Players that accept Lawful Bounty Hunter Contracts with a Crimestat 1 will instantly fail the contract and gain negative reputation with the contract provider
+- Fixed - R&R Rest Stops - Multiple Locations - Locations / Shopping - The Refinery shops at several R&R stations are missing many items for sale
+- Fixed - ArcCorp - Locations / Collision / Physics - Outside of the POI locations all surface buildings are missing collision around ArcCorp
+- Fixed - AEGIS Reclaimer - Ships / Vehicles - The Reclaimer VTOL engines / landing gear detach when taking damage rather than passing damage to the body
+- Fixed - Weapons - Greycat Multitool / RMC Canister / Tractor Beam Attachment - Unable to use the Tractor Beam Attachment when an RMC canister is attached to the Multitool
+- Fixed - DRAKE Corsair - Ships - Ship Features - Art / Graphics / Misplaced Geometry - There is geometry clipping through the ceiling in the component room of the Corsair when viewed at certain angles
+- Fixed - DRAKE Cutlass Blue - Vehicles - Soft Death - When vehicle enters soft death gravity remains inside the ship
+- Fixed - DRAKE Buccaneer - Ship Features - Graphics / Art - The engines of the Drake Buccaneer are displaying blank textures, appearing white
+- Fixed - Actor Feature - Player Status - Administering Roxaphen raises the players BDL to the point they overdose
+- Fixed - mobiGlas - UI / Missions - The Delphi tab is almost completely transparent making its information unperceivable
+- Fixed - Art - Xanthule Suit and its variants have textures that appear matte and bright
+- Fixed - Art - Overlord Core armor sets show as red in the Inventory HUD but are different colors on the player
+- Fixed - Touchstone optic and others have no crosshair
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 8 Server Crashes
+- Backend Service Crash Fix

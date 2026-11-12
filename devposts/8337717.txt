@@ -1,0 +1,6 @@
+Hi! Pyremius’s reply is broadly correct. Genesis models natural rules at a fine scale, such as deciding which plants will grow where, and how rocks are distributed based on large scale geologic data sets, and then allows the results to be viewed from orbit. But the actual source data is largely up to the artists to decide, and although they use many simulation and procedural tools to aid this, they can still basically draw continents wherever they please and pick the temperature at any specific location.
+Vegetation uses rules based on soil quality, temperature, humidity, light availability, competition, reproductive rate, and more. Trees will dominate if the conditions are right, but lower quality soil or cool temperatures are likely factors for fewer trees. Also we pick per planet which species are available, so each planet will have a unique combination.
+For rocks, the artists generate rock aggregate size maps, geology type maps, and soil depth maps. The offline simulations for these use erosion and weathering to determine how the rocks and soil are broke down and transported. The run time algorithm then combines these data sets procedurally, and then scatters the rocks based on the combined results.
+Cheers,
+Ali Brown
+Senior Director of Graphics

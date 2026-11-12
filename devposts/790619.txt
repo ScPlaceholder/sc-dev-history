@@ -1,0 +1,66 @@
+## Star Citizen Patch 3.0.0am
+Full patch notes can be found here: https://ptu.cloudimperiumgames.com/spectrum/community/SC/forum/1/thread/star-citizen-patch-3-0-0-ptu-2
+Alpha Patch 3.0.0am has been released to the PTU, and is now available to test!  Patch should now show: PTU-689345
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Important:
+- Focus:  New patcher, station traversing, ship spawning, StarMap app, quantum travel, landing, air traffic control (ATC) system, quantum fuel usage/balance, hydrogen fuel usage/balance, afterburner, shopping, ship MFDs, missions, core combat (mission related).
+- All the ships are flyable, but the following are the ships that have had the most attention and focus: Gladius, Hornet Series, Sabre, Vanguard, Constellation Series, Cutlass Black, Caterpillar, Nox, Dragonfly, Prospector, Freelancer, Aurora series, Argo series, Buccaneer, Greycat, Starfarer series, Khartu-AL, Avenger series, Gladiator, Mustang series, Herald, Merlin, 300 series, Ursa.
+We would like you to focus on the above for this wave of testing and bug reports.
+NOTE: Other content and features are in and listed in the notes, but currently not the focus of this testing phase as they undergo bug fixes and polish. Additionally, there's content that is not listed in the notes that are intended for live release and will be added iteratively during the testing cycle.
+## Key Game-play How Tos:
+Afterburner:  There is now a single afterburner with the ability to achieve higher top velocity under certain conditions, giving us AB SCM and AB Cruise with the only distinction being two different speeds. You can only enter AB Cruise if your flight path is a straight, forward line. Otherwise you're limited to AB SCM, i.e. while maneuvering/strafing. Once in AB Cruise you can release the afterburner key and go into an AB idle mode to maintain your current speed.  Throttle setting and y-axis strafe level allows incremental speeds, but you will decelerate if you change your vector. If you continue to hold AB and maneuver, you drop to AB SCM speed until you return to straight-line flight. AB Idle holds your current velocity as long as you're not maneuvering and decoupled rotation is allowed while in AB idle.
+Show Location: We have added a command that allows you to find your location in coordinates (useful for bug reporting purposes). Enter "/showlocation" in the chat box (make sure you are in a all chat) to get coordinates.
+Ship Start Up: Approach the entry point of your ship, then press and hold "F" to activate the interaction system. Select from the various inner thought prompts using the cursor or mouse wheel to move between them. Once inside your ship, again press and hold "F" and select the "Flight Ready" prompt to run through complete ship start up. Alternatively, you can press the "F5" key for quick start up.
+Landing: Landing now takes place through an Air Traffic Control (ATC) system. When close to a landing location, request a landing by navigating to your "Comms" menu on the MobiGlas (note: this is incorrectly displayed as a ship icon) and pushing the hail button (wifi symbol).  Wait a moment, and ATC should assign you a landing location.  Note, you may need to request take off to leave Levski (trigger opening of bay doors).
+- Quantum Travel: To quantum travel to a destination, open your MobiGlas (F2) and select the StarMap App (diamond shaped symbol). From there, use the mouse to select a destination. Whether or not an object can be selected for QT is determined by gravitational values (The larger the object the further away you can detect it, large objects with small objects in orbit drown out their detection capabilities at long ranges). Meaning you will not be able to travel from point A to B at all times, but instead may need to move into orbit of a larger body to detect destinations also in orbit. For example, to get to a station orbiting a moon that orbits a planet, the route is Planet>Moon>Station. Once you have a destination selected you can "set destination" on your MobiGlas to bring up a quantum travel target.  As before, align with the QT target and press "B" to travel.
+Changes to Default Keybindings: Controls now default to a "basic" mapping that only includes core functions and leaves many things unbound  The "basic" mapping is meant to be simplified controls for beginners.  Players can then go through keybinds and bind how they wish or import an "advanced" binding from among several presets. Experienced players will most likely want to do one of those two things to gain full functionality.
+Major Known Issues:
+- Players are not able to spawn ground vehicles at outposts.
+- You may see some unusual AI, derelict, and asteroid activity around the verse.
+- VMA is a work in progress and has numerous issues including: Unable to unequip shop components, 3D weapon holograms don't rotate with ship, and some ships are missing hard-points.
+- Control changes are incomplete and may have bugs.
+- Some ships may be spawning without items or without the ability to "flight ready". W/A: If this happens please file an insurance claim to replace the ship.
+- First implementation of persistence bed spawning will have numerous bugs and issues.
+- Items and ships placed in hangars are not persisting between sessions.
+## Focus Feature Updates
+Universe
+- Removed the ability to spawn and store ships at outposts.
+Missions
+- Implemented admin desk functionality for deploy beacon missions.
+- Lowered the reputation requirements to access mission givers, allowing players to assist in noting bugs and providing feedback.
+- Added admin desk functionality for steal and recovery style missions.
+Shopping
+- Enabled a scrollbar on multi-line text for the shopping screen of the Mobiglas.
+UI
+- Split VMA into "systems" and "weaponry" categories.
+Ships and Vehicles
+- Balance pass to reduce ship armor damage reduction.
+- Shield health changed so it increases more dramatically with shield size.
+Bug Fixes
+- Cordy's armor should no longer be missing core pieces.
+- The player should now be properly aligned with the ladder of the Herald when entering/exiting.
+- The ladder hatch should no longer remain open after entering the Mustang Omega/Gamma.
+- The wing thruster VFX should now display correct orientation on the Reliant.
+- Enter/exit animations on the Khartu-Al should no longer be offset.
+- Turret seat animations on the Constellation series should now play properly.
+- Players should now be able to logout in ship beds even if the owner doesn't have the ship powered on.
+- Fixed missing VMA hardpoints for the Prospector.
+- Players should now properly receive a UI marker for ships respawned after cleanup.
+Technical
+- Minor crash fixes.
+- Performance tweak.
+## Non-Focus Feature Updates
+FPS
+- Added P8-SC weapon crates to Star Marine.
+Bug Fixes
+- The timer for private matches of SM/AC should no longer start before the player loads in.
+- Fixed an issue where the AI in Vanduul swarm would not spawn and force the next round then repeat until the player wins.
+Known Issues:
+Content missing key elements:
+- User Interface
+- Insurance and Persistence
+- Internal Ship Docking
+- Comm System
+Bugs, issues, and work arounds (W/A):
+- Items and ships placed in hangars are not persisting between sessions.
+- Repaired wings don't always restore weapons.

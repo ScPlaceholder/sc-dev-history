@@ -1,0 +1,47 @@
+## Star Citizen Patch 3.9.0p
+Alpha Patch 3.9.0p has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.9.0-PTU.5061323.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Note: We are investigating issues with desync, where one client sees something entirely different from another.  PM videos with the above settings active to Baior-CIG showing any encountered desync.
+Bug Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-9-0p
+Testing Focus
+- Esperia Prowler
+- Contact and Party System Update
+- Caterpillar Prison Ship Mission
+- New Babbage and microTech's Moons
+- Personal Interaction System
+- Mining: Volatile cargo and mining consumables
+- Prison Systems
+- Actor Status System
+Known Issues
+- Ships are immediately destroyed upon spawn at Area18. W/A: Avoid Area18 for now.
+- Players can get stuck in a loading screen upon leaving prison or entering a second time.
+- Prison suit loadouts are saved after the player exits prison.
+- Prison suit loadouts can be saved if a user exits the PU and enters the hangar.
+- The KC Trending shop keeper stands idly and doesn't not interact with the player.
+- Karoby energy bars are missing from all locations.
+- Changes to the character model do not always persist into the PU.
+- An extra, static train may appear at Area18, Lorville, or New Babbage.
+- Unmanned turrets do not fire at the player if they have a crimestat.
+- Its possible to get the contact notification window stuck behind the main menu.
+- Being in a large party causes markers to not display correctly while inside a ship.
+## Feature Updates
+## Bug Fixes
+- Fixed an issue where inmate homicide infractions weren't applying inside the prison work mines.
+- Players should no longer become invisible to others after riding on any transit system separately.
+- Ground vehicles should now be able to be spawned from ASOP terminals.
+- Display ships outside New Deal in Lorville should now have collision.
+- Fixed an issue causing missiles & torpedo's to despawn before reaching their target if fired at a target that is over 1000 meters away.
+- Prowler engine trails should no longer separate away from the thrusters.
+- Prowler's Interior red fog should no longer clip outside of the ship when in motion.
+- Synced Assassination mission timer should now correctly start upon engaging either target.
+- Players ships should no longer be locked as read only on the VMA.
+- Player reward should no longer be multiple small Uaec rewards when completing the Arlington Bounty.
+- Fixed Carrack maneuvering thruster VFX continuing to play after the engines are off.
+Technical
+- Fixed 4 client crashes.
+- Fixed 4 server crashes.

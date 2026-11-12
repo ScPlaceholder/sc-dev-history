@@ -1,0 +1,37 @@
+## Star Citizen Patch 3.3.6
+Alpha Patch 3.3.6 has been released to the PTU, and is now available to test!  Patch should now show: PTU-998172.
+It is strongly recommended that players delete their USER folder for the  Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- Hurston, Aberdeen, Arial, Ita, Magda, rest stops: Transit, shopping, assets.
+- Lorville: Transit, landing, and shopping.
+- Recco Battaglia and associated missions.
+- General missions.
+Major Known Issues:
+- Players may not be automatically placed into local chat on the visor.
+- Many delivery missions will not update or will have markers spawn in bad locations.
+## Feature Updates
+General
+- There is now a login queue when large numbers of players attempt to login at once.
+## Bug Fixes
+- Possible fix for memory leak.
+- Fixed Lorville music.
+- The commodity kiosk at HMC Pinewood should now recognize ships.
+- Darneely should now say the correct thing if you opt for "sell scrap" and halt his conversation if you walk away.
+- Claiming destroyed ships should no longer duplicate them or cause them to not spawn.
+- Fix for missing train announcer audio.
+- It should no longer be possible to quantum spline through Magda.
+- Players should now be able to repair/refuel/rearm at Lorville.
+- Audio should correctly play when requesting landing at Lorille.
+- Removed Hurston locations for delivery missions.
+- AI ships should no longer be invulnerable in the PU.
+- Fixed interior visual issues near the bed of Avengers.
+- The bartender should no longer get stuck if the player walks away while they are serving.
+- Display ships should no longer be able to be locked.
+- The personal and cargo elevators on the Reclaimer should now work properly.
+Technical
+- Fixed a server crash.
+- Fixed a client crash.
+- Optimization performance tweak.

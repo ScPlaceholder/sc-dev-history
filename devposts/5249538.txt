@@ -1,0 +1,72 @@
+## Bug Fixes
+- Players should no longer be able to directly call another player to constantly monitor their location
+- Players should now be able to see and add other players on their friends list from the main menu
+- Fixed an issue causing attacks against ships to sometimes not register
+- Emptying and reloading consecutive magazines should no longer break reloading
+- Players should no longer become desynced after being downed and revived
+- Player's corpses should no longer clip and fall through surfaces after dying
+- Shopping kiosks search filter should no longer reset to default after transaction success
+- Dragging and dropping a magazine into the player's armor should no longer cause the inventory to infinitely load and stop responding
+- On foot Players/NPCs should no longer appear to pause and teleport when viewed through a scope at a distance
+- AI should now spawn in appropriate numbers during Infiltrate/Defend UGF Missions
+- Fixed an issue causing AI to be slow to respond when engaging players in combat
+- 'Restricted Area' warning should no longer occur inside UGFs if player has a lawful mission
+- Players should no longer receive an armistice crimestat for damaging their own vehicle with another owned vehicle while it is being lifted up/down by a cargo elevator/lift
+- Player Injuries should now fully persist through sessions
+- Fixed an issue causing the Argo Mole to have no cargo capacity which prevented mining
+- Hospital pharmacy kiosks should no longer display Invalid Location message upon purchase
+- Orison Pharmacy Kiosk screen should no longer flash at a distance
+- Crusader Showroom sales terminal should no longer display a black screen
+- Players should no longer be able to duplicate ship components by transferring them from read-only ships on the claim timer and claiming the ship at another location
+- Item boxes left in hangars should now be cleaned up and no longer block a ship that is being spawned
+- Functional claim button should no longer briefly appear after player selects to store a ship
+- Area18 Centermass elevator doors should no longer be duplicated
+- Astro Armada ship consoles displays should no longer have Z-Fighting
+- Orison Covalex Shipping and Trading kiosks should now have proper interaction
+- Refinery shop kiosks should no longer have blank displays
+- Defiance core armors should no longer have the wrong color in inventory
+- Players should now be able to interact with and buy Tigersclaw cryptokeys off the shelf in Grim HEX
+- Shubin Interstellar kiosk in New Babbage should now correctly use the new shop UI
+- Filtered out items on the "Sell" tab should now be correctly removed from the current items list
+- Uncommon loot crates should no longer be missing from Caterpillar derelicts
+- Ships should no longer hop and jump around after being spawned
+- Starfarer Gemini should no longer be missing its table and benches
+- Fixed an issue causing players to impact into planets when quantum traveling to a party marker on the surface
+- The Scorpius quantum drive UI should no longer be very small making hard to read
+- Players should now be able to change the lower weapons on the Scorpius' turret
+- Scorpius headlights should no longer be dim and hardly usable in dark terrain and cause particles effects to blind the pilot's view
+- Players should now be able to interact with top right MFD of the Cutlass series
+- Remote turrets can now be slaved to the driver in the Nova Tank, Argo RAFT, Ursa Rover, Anvil Ballista, and Anvil Spartan
+- Redeemer Nose Turret should now fire correctly
+- Redeemer Disc-Joint should no longer be Invulnerable
+- Fixed an issue causing the control panel and guard rails of the Reclaimer's elevator to not follow along with it
+- Reclaimer's elevator should now correctly show option to "go up" when on the bridge level
+- Jettison Cargo inner thought prompt should be visible inside of the Prospector
+- Hammerhead's front interior airlock doors should now allow players to open and close them correctly when docked to a station
+- Atmosphere should no longer be missing from the lower deck corridor of the rear elevator of the 600i
+- Players should no longer be able to fall through the closed rear ramp of the Cutlass Steel
+- Starfarer should no longer be able to quantum travel when another ship is docked to it
+- Players should now be able to access the Origin 135c cargo bay
+- ROC-DS should now hold its correct amount cargo at 3.5 SCU
+- Tumbril Cyclone MT missile racks should now function
+- The rear of the Drake Mule should no longer start to float if the vehicle navigates over steep inclines / hills
+- AI corpses should no longer despawn too quickly while players are near
+- Vaulting over objects should no longer seriously injure or knock out a player
+- Player EVA animation should no longer appear as them standing in space
+- Legal and Illegal Deploy Probe Missions should now show up correctly in the Contract Manager
+- Arlington Gang Idris should now be able to maintain its flight in atmosphere
+- Morozov-SH Helmet cheek lights should no longer present externally for female characters
+- Klescher Prison Escape rover should no longer spawn offset inside of its garage
+- Players should now suffocate when their suit runs out of oxygen while in the Klescher mines
+- Hacking chips should no longer appear sideways when equipped by a player
+- There should no longer be ReplaceMe balls on the surface near outposts on Daymar
+- Hull-A Empyrean, Horizon, and Dusk Paints should no longer be missing
+- Leaving Star Marine before respawning will no longer spawn the player incapacitated when loading in the PU
+- Fixed an issue where the AC/SM player actor was carrying persistence from AC to the PU and vice-versa
+- Fixed Squadron Battle not auto-balancing past 8 players and causing 1 side to have more players
+## Technical
+- Fixed 19 Client Crashes
+- Fixed 17 Server Crashes
+- Fixed multiple backend server crashes
+- AC score board should no longer crash the client
+- Fixed a crash when killing a player who is contesting an objective in Star Marine

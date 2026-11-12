@@ -1,0 +1,50 @@
+## Star Citizen Alpha Patch 3.24.3
+Alpha Patch 3.24.3 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.3-PTU.9390680.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+Note: Today's build does not have IAE or new ships available just yet. We are planning on adding these during PTU phases for 3.24.3 before release going live.
+- Stability & Bugfixes
+New Global Event: "Save Stanton" Playtest!
+Tonight on the 3.24.3 servers we will be running the first 3 phases of a new global event called Save Stanton!
+This will start up shortly after the build has been released and run overnight with mission phases 1-3.
+## Known Issues
+- PU - Social - AR markers - Party markers are not visible to other party members
+- The Argo ATLS currently cannot be destroyed (Not intended end goal and player inside is still vulnerable)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU – Stanton – New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- Stanton  - Crusader - Orison - Respawn / Relocation / Locations - Jumping off of  the platforms in Orison does not relocate or kill the player
+- PU  - Orison - Location / Restriction Areas / Ship - Restriction Area  impound with little to no warning, the Ship is moved to Unknown Location  at ASOP, and Player is relocated to ASOP Lobby or Javelin Tour Dock.
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables (Asteroid Fields not affected)
+- PU - Stanton - Multivehicle - MFD - MFDs can be interacted with while in mobiGlas
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+- PU - Stanton - Landing Zone (LZ) - New Babbage - Personal Hangar - Locations / Art / Graphics - A large opaque plane will be visible when viewed from the ASOP/Storage Access area if hangar doors are open
+- PU - Locations / Physics - UGF - The interior of UGFs inherit the planet or moon's gravity
+- AC - Spawning not possible after rejoining lobby
+## Features & Gameplay
+Core Tech
+- Graphics Settings Updates
+Borderless mode has now been renamed to Fullscreen. Selected resolutions in this mode causes the game to render in this resolution but the window always stays fullscreen. This now works with DSR (higher resolutions) as well as lower resolutions and can be combined with temporal upscaling. Some things like the console and UI will always be rendered in the native fullscreen resolution.
+DLSS minimum resolution has been lowered from 1080p to 720p. Currently, picking a resolution with a different aspect ratio than the monitor can cause issues at the moment and will be fixed in later releases.
+## Bug Fixes
+- Fixed - PU - Stanton - MISC Hull C - Ship Components / Ships / Vehicles / Resource Network - The MISC Hull C's Quantum Drive and Jump Drive do not turn on with Nav Mode and Quantum Fuel is unavailable
+- Fixed - PU - Interaction / ASOP / Server Recover - A Player interacts with an ASOP while a server error occurs can block this kiosk from being interacted with by another player
+- Fixed - Front End - Core Tech - Graphics - Resolution / Upscaling / GPU / NVIDIA - While Vulkan is on, Enabling Nvidia DSR upscaling causes a bigger fullscreen window than the native monitor resolution
+- Fixed - Motion Blur implementation is broken (STARC-134903)
+- Fixed - PU/AC - Ship/Weapons - Hurston Dynamics Attrition series does not fire or cause damage (STARC-131900)
+- Fixed - Multivehicle - AC Only - Vehicles / VMA - Remote turrets can be equipped to weapon slots that are not meant to be
+- Fixed - Arena Commander - Ships / Scoreboard - Ejecting in an AC match doesnt count towards death count and doesnt give a score penalty
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 2 Server Crashes
+- Made Several Server Side Physics Performance Optimizations

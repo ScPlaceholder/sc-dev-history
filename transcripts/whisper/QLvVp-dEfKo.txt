@@ -1,0 +1,825 @@
+# Star Citizen Live: Q&A - Vehicle Flight and Balance
+# https://www.youtube.com/watch?v=QLvVp-dEfKo
+[    4.0] For me, it's seriously Spock is the only one you can mention. Yes.
+[    8.7] On top of my head right now. Yes, I've asked we've asked you to mention five Star Trek characters
+[   14.1] And all you have or you can do is Spock. Why does this have to start with a roast already like
+[   19.0] Is this special enough? No, no put the camera on him. He's the one that your failure. It's rich failure, right?
+[   24.4] I definitely take responsibility for that
+[   28.3] No, no the why
+[   30.3] Geez you know you gotta show the person who doesn't know Star Trek. Oh
+[   35.2] Yogi no Star Trek you know go to Yogi
+[   38.9] Spock is literally the only character you can mention. Can we talk about Star Wars maybe?
+[   44.7] Okay, fine. Name five Star Wars characters Anakin Obi-Wan, Miss Windu Yoda, Darth Vader
+[   51.1] Okay, now he's a prequel star. Okay. Now outside of the prequels
+[   56.3] Outside of the prequels
+[   58.9] Luke, Jan Solo, Leila. Leila? How's the princess name in English? Leila?
+[   65.1] Okay, that's fine. Princess Leila works
+[   72.2] Hi everybody
+[   74.7] Welcome to Star Citizen Live
+[   77.9] The passion of Mateo Monticelli
+[   80.8] I'm your host Jared Huckabee and if you've never seen Star Citizen Live before what a lucky person you are
+[   88.6] That's where we take roughly about an hour sometimes a little bit less
+[   92.0] Out of an occasional week these days to sit down with our developers and chat things related to Star Citizen
+[   98.8] Or Star Trek or Star Wars
+[  103.4] What other star what are stars are you not familiar with Star Man? You ever seen Star Man? No
+[  108.6] That I know something about Star Citizen though that can help
+[  116.6] So yeah, so joining us on the show this week are esteemed members of our
+[  121.0] Team members who work on all things
+[  124.5] Spaceships and what they do these aren't the folks who build the spaceships
+[  128.2] Those are members of our fantastic vehicle teams who build the physical spaceships
+[  132.5] These are the folks who take those spaceships and and and craft them and hone them and adjust them so that they perform the way
+[  139.8] That we want them across both of our games Star Citizen and Squadron 42
+[  143.9] so
+[  145.0] With that let's introduce
+[  146.9] Some folks because every show is somebody's first show including one of our guests. So Yogi, we're gonna start with you
+[  152.3] You're our old hand here. Tell everybody who you are and what you do for Star Citizen. I'm an old hand. Okay. I'm Yogi
+[  158.9] I'm a
+[  161.3] principal vehicle programmer
+[  163.4] And roughly together with Rich I'm leading the development of the flight model and the flight experience
+[  170.3] Okay, and for those people who may be hearing that term for the first time. What's a flight model?
+[  175.2] Flight model is basically the thing that makes the ship fly the way it flies. So
+[  179.9] How smooth it is how janky how sometimes are broken, but yeah stuff like that. Okay, Rich
+[  188.4] Yeah, so I'm basically Richard and I'm the lead game so I'm not on the vehicle to bridge team
+[  192.7] So I'm kind of responsible Yogi for the overall flight experience turrets
+[  196.8] I'm just a way the general gameplay works with vehicles
+[  199.3] And as you hid your last name so people can't send you letters. Yes. Okay. This is a rich Tyre
+[  208.7] Right I'm gonna sleep that making loaded decisions now
+[  212.1] And the last but certainly not least first timer for SCL, Matea
+[  215.8] Hey, yo, I'm Mattia. I'm a game designer three working with Richard on everything flight spaceship balance related
+[  223.3] mostly for star citizen these days and yeah
+[  226.4] That's what we do. All right. So as we are want to do on Star Citizen Life
+[  232.0] We put a thread up on spectrum where this one so I'm talking to people
+[  238.2] This over for a threat up on spectrum and collected questions from you the star citizen community
+[  243.5] Our folks are lovely folks here went through your questions and pulled a collection of them that they felt they could answer best
+[  250.1] During the course of today's show
+[  252.5] So when you if you've submitted your question like well, why aren't they talking about this and why aren't they talking about that?
+[  257.6] Usually what that means is either we don't have the particular guest that's on to talk about that
+[  263.6] Because we certainly wouldn't want Yogi talking about stuff. He's not involved in or Matea or rich
+[  268.4] Or that's a feature aspect that is not currently in development
+[  273.2] The other big kind of misperception in games is that you work on all the things all at the same time
+[  279.1] We don't so the questions that we're going to talk about today are primarily the things that are currently in active development
+[  284.0] And that relate to the work of these three individuals. So right off the bat. We'll just jump right in
+[  292.2] Yo Jared looking healthy as
+[  295.7] Thank You boomish
+[  297.8] True that was my mom at first
+[  300.4] What is the intended purpose for heavy fighters right now?
+[  304.4] They have a turn rate very similar to ships like the Connie and Corsair, but they lack the shields and firepower of those
+[  311.1] What's up?
+[  313.4] So
+[  316.3] Yes
+[  317.6] So
+[  318.7] We've been playing with every fighter tuning since
+[  321.8] 323 basically the master mode release and our idea about the heavy fighter role Evan
+[  326.9] Hasn't changed much for the time. So basically what we think an every fighter is is basically
+[  333.5] heavier fighter that has lower maneuverability compared to light fighters, but increased durability and increased firepower
+[  339.5] That's as simple as that right
+[  342.4] Currently we have retuned the entire heavy fighter class
+[  346.0] That you know include the ships like the F8 the new Guardian the other guardians and so on and so forth
+[  352.0] To fit a better
+[  353.6] Spot and in our opinion the spot that now the heavy fighters actually cover. It's quite fine
+[  359.1] We do notice that the heavy fighter class is slightly under performing right now
+[  363.9] though
+[  364.4] But we think it's related more to the relationship in between
+[  367.7] Cross classes rather than the heavy fighters tuning per se
+[  370.9] so style for example like how the heavy fighter is
+[  375.2] You know dealing against like a medium fighter for example or a shipper of a bigger size like for example a constellation
+[  381.0] Or stuff like a so we would like to dive more into the tuning for other classes first before assessing the
+[  387.3] You know the overall heavy fighter tuning and if that need to be addressed once again
+[  392.2] So currently this is the state of the heavy fighter class in general
+[  397.1] But we have some even more updates or like more ideas for the
+[  402.5] So the current ratio on where the fighters sit doesn't necessarily need to stay this way
+[  407.4] We have the updated flight model coming and we're using that to
+[  412.6] Basically, I wouldn't say reset but we evaluate especially the relationships between the fighters
+[  417.9] for example in our perspective at the moment with the
+[  421.3] With the updated flight model the heavy fighters
+[  423.4] They just feel a little bit too tanky because they're still fighters, right? So we're currently evaluating whether or not we should make them
+[  429.9] more more vulnerable because if you compare some numbers from for example like gladius versus a
+[  435.5] F8 we're looking at like a five times health that is like quite a lot for fighter class
+[  440.5] So we're evaluating or reevaluate that once the new flight model or the updated flight model is coming online
+[  446.6] And when you say evaluate that means you're still making your decisions. Yeah, sure nothing
+[  450.9] Nothing is nothing is ever set in stone when it comes to that
+[  453.9] You're looking you're asking the question whether that five times is right
+[  457.8] You're not sitting here saying today five times is wrong. No, we're still looking at that and Mattia
+[  463.0] You make a good point about how it's a you don't just you know in order to tune the heavy fighters or any fighter class or any
+[  469.0] Ship class. It's not just the work on that ship. You then have to make a pass on everything else
+[  473.5] It's it's this constant kind of thing where you go through every class and then you go back through and you go through every class
+[  479.0] Then you go back through every class you just refine the entire
+[  482.4] Field of ships over and over again, and that's where you're gonna find out whether
+[  487.1] Five times is right. Maybe maybe five times is right and then things like the Connie and Cutlass need to go up to six or seven or whatever
+[  494.2] It's it's one of those things you're gonna find it through multiple passes multiple passes
+[  497.5] Which is what you guys have been doing for some time now for being you know candid about it
+[  501.9] I mean we can never like really set it to a to a fixing that we can plan as much as we want
+[  506.1] But whether our plans survived in reality is a different question also like sometimes other things coming for example the upcoming armor system
+[  512.6] And so on that will also change these these dynamics. It might just require some other
+[  517.0] Adjustments somewhere else. I imagine your thoughts on these things actually change over time too like
+[  523.7] How many years have you been here now?
+[  529.4] It's close to me I'm on 11 and I'm like I can't remember a time
+[  533.4] You were here I joined 2017 but gameplay since 2019. Okay, so
+[  539.0] I'm certain
+[  540.5] The way you thought about some of these things in 2017 is not the same as you thought of them in 2020
+[  545.5] It's not the same you thought I'm sure there are some things that are still the same
+[  548.2] Yeah, but I think details details change over time a bit right because sometimes you just prove that a or B
+[  554.6] Doesn't doesn't really work for example also the idea to have a perfectly balanced game is a bit this can be
+[  560.3] Sure, we can go for this but it doesn't necessarily need to be that because the relationships of players playing. They're so complex to graphs
+[  568.3] The the hardest case we have in our combat design is
+[  571.9] Same skill same well same pilot same skill same ship to get a fight
+[  576.9] Going in this in a one-day what we on scenario without any other external factors
+[  581.2] This is like when you get this one right then you probably have something that you can really work with
+[  586.9] But it's hard to actually get to that thing because even if you have two players two really good pro players fighting against each other
+[  592.6] It's hard to tell which one of these is better
+[  594.7] I mean you can maybe count kill times or so but there's so many factors and that sometimes how to how to grasp so I'm not entirely sure that
+[  601.0] That we need a completely balanced game because ships are different like people a different
+[  605.8] Real-world airplanes are different have pros and cons and so on but you can never really balance them out completely right so
+[  612.2] We'll see well you just you just given people their first reddit thread, you know, you know, we start developers
+[  619.6] I'm not sure we need a completely balanced game
+[  622.9] So hang on what what we're still aiming for is like we try to avoid a meta game, right?
+[  628.0] That's just like something we're still trying
+[  630.0] It's it will be incredibly hard
+[  631.9] But if we have a game at some point where like almost all ship types have have a purpose where it makes sense
+[  638.5] Also, like maybe maybe in the value that that you bought that ship for in the in-game shop or something like that
+[  646.1] Then we're probably in a good place. Yeah, and it's one of the things it's some ships are meant to be
+[  651.9] There's progression in mind. It's it's not every ship is supposed to be equal some ships
+[  656.4] You're supposed to progress through, you know a gladius is where the light fighter journey starts
+[  661.0] It's not where your light fighter journey is supposed to end sure and stuff like that
+[  664.1] So you have to so just by just by the very concept of progression
+[  669.3] Not all ships can be balanced nor they should they there's supposed to be a you start here and you move here and you move here now
+[  676.2] That will that has changed quite a bit over the years and will continue to change as the game continues to develop
+[  681.1] develop
+[  684.5] There's one more thing I wanted to follow up on and stuff and I lost it
+[  687.8] I lost it because there was there was a guy in the twitch chat like sir, she's a joke and whatever and I was just like and I was like
+[  694.1] I'm like, thanks for watching
+[  698.0] Let's just move on the next question and if I remember it, I'll come back
+[  701.5] What happened with the new quantum travel experience that we saw at CitizenCon 2953 so two years ago
+[  708.0] Okay, so at this point the quantum
+[  711.5] Experience that you saw there was exactly how it was at that time in squadron 42 that design since then has changed a bit
+[  719.2] Also with the requirements of the other flight model changes that we're currently doing
+[  722.6] So in general, there's three parts to the new flight model is like the quantum experience the updated space flight model and the control surfaces
+[  729.0] and all of these got
+[  730.9] changed and
+[  732.1] expanded based on the requirements that we saw
+[  734.9] and
+[  736.1] Right now what we back then described as quantum boosting is basically has changed a little bit so quantum boosting will be used for like
+[  744.1] The slow speed range that you used to you to nap mode with right?
+[  748.7] So if you want to go for so there's basically three speed ranges that you need in star citizen
+[  753.8] one is to go from
+[  755.3] Let's say one PY to another all between planets or something like this like where we're talking
+[  760.7] millions of kilometers, right then you need the
+[  763.3] The range in which you're navigating within these spaces, so let's say
+[  768.9] Going from let's say you have a bubble of like 300 kilometers or so in size
+[  773.0] You want to you need to navigate in between there, but you don't want to fly with your SCM speeds, right?
+[  776.7] So for that quantum boosting will be used and then there's normal SCM speed region
+[  780.7] So basically the thruster based flying which will still be limited to I don't know maybe 300 meters per second or so
+[  786.1] No caveman crafting the twist that says in other words that quantum video was marketing fluff. No, it was not
+[  792.2] No, no, no, no, no literally just said it's exactly how it was in squadron at the time. It was recorded
+[  798.6] Yeah, that's how it was and it was all real. It was real gameplay
+[  802.6] You can actually see that it was real gameplay because during on stage the our left stick broke
+[  808.0] And you can see that in the video because the velocity meter on the left side is constantly twitching because the stick broke
+[  813.9] It was all real
+[  816.5] You try you try you try
+[  819.2] It was real here's a here's a fun question the f8
+[  824.0] Will the f8 ever once more become a mobility monster like it was building in squadron 42 prologue
+[  830.9] I took her at as of the current moment
+[  833.4] It feels like a flying brick and with all the agility of one rich. What the hell are you doing to my baby?
+[  841.3] That's what it says. Yeah rich. It's all it says. It says. Oh, no, I'm just reading it
+[  845.3] Yep, so it's about providing a tuning that fits the archetype of that ship and you know, and that's some of the roles working towards is
+[  852.4] Given ship the archetype and it's you know, and I said it's always working progress
+[  856.5] And that ship in particular is it's you know, it's got loads of guns. It's got loads of thrusters
+[  862.4] You know, and as you say, no all ships have to fit
+[  865.9] The perfect progression of balance and that's you know in that sense
+[  869.8] You know, so we're definitely looking at what the ship should be with a new flight model as well
+[  873.2] You know, there's gonna be some more changes there
+[  875.3] Because a big thing with a new flight model is we're going to have far more tools at our disposal to make ships different
+[  880.6] Where where it's at the moment we've got tools
+[  883.5] But we're quite limited in that context of providing ships that quick
+[  887.8] But a sluggish at the same time
+[  889.8] So we kind of
+[  891.0] You know, we we kind of in a box with the current balance a little bit in that regard
+[  894.8] But with the new flight model, we've got more tools to give us
+[  898.0] Maybe a ship that can be really quick, but actually takes a little bit longer to get there
+[  901.5] You know all the accelerations a little bit slower, but it can move
+[  904.4] In in a faster
+[  907.0] I do I you want anything you want to add Mattea? So we do know that at the current state the overall heavy fighter
+[  914.5] Angular velocities decreased a little bit, but we think it's for the better and once again
+[  919.5] We think the
+[  920.9] feeling and the perception that
+[  922.9] We see
+[  924.1] On the player side these days is mostly related to once again the relationship the relation between those ship classes, right?
+[  931.7] and
+[  933.1] In our opinion once again what we want to reach is like
+[  936.1] a balanced and intended gameplay experience for the ship per se, right? So uh
+[  941.3] having a super OP mega
+[  943.9] Powerful ship it's can be cool the first time that you have it, right? But after a while when it becomes the mate and it becomes the
+[  951.3] Fourth choice game design wise and gameplay wise. I don't think this is a good direction and or either a fun direction
+[  958.1] So what we want? Yeah, that's not healthy
+[  960.1] Now, of course you're going to say that and twitch is about to fill up with people saying but what about this ship?
+[  964.5] And what about that ship and what about that ship that are currently OP and stuff like that and the answer is we'll get there
+[  970.0] Yeah, and that's a big thing about the balances. It's a continuous thing. It's moving. It's evolving all the time
+[  974.9] And we can't tune 200 ships all in one go when we figure something out
+[  979.2] So it has to come in steps, which is why we're doing pass on the medium as well
+[  982.1] We was on the pass on the heavies and then and and that'll keep evolving, but we have to do it in pieces
+[  988.4] Because we just you know, we can't move 200 ships at the same time and also it's more important for us to kind of move those pieces
+[  995.3] Step by step because we understand the dynamics that we generate inside the game a bit better as well
+[ 1000.4] So, you know, we get more knowledge about it. We understand how player
+[ 1004.9] Prefer to use certain type of ship rather than others
+[ 1008.0] So moving those
+[ 1009.4] Lego bricks in tiny blocks
+[ 1011.6] It's easier than just moving one and see how it performs and then try to scale everything
+[ 1015.2] According to that. So that's what we're going to try to do and what we are trying
+[ 1018.8] What we have tried to do and what we are actually doing as well
+[ 1021.7] With the current monthly updated patches. So we always try to deliver something
+[ 1026.8] To address maybe a specific issue or a specific area of the ship
+[ 1030.7] flight in the game
+[ 1032.4] Zodicide says just hire more people to balance at the same time
+[ 1036.1] and he's got that he's got that
+[ 1038.6] The the the one twitch emoji emoji with the kind of sarcastic face
+[ 1042.4] So I think he's going to be I think he's I think that's a sarcastic comment. I'm not sure I'm not up on the popular culture
+[ 1047.0] But but no, it's one of those things where you know, nine doctors don't make a baby in in one month and whatever plus
+[ 1053.6] As I said on on earlier this week to another thing not everybody at ch cg is not a monolith
+[ 1060.4] You have
+[ 1061.6] What you think and what you have what you think and want you have what you think and want
+[ 1065.7] Ideally we find compromise we find places
+[ 1068.1] But you add more adding more people
+[ 1070.5] Will often bring in more opinions and more stuff and actually can make finding consensus even harder
+[ 1075.6] So just one of those things where unfortunately hiring more devs is not the answer to everything if you need to make another location
+[ 1082.0] Possibly, but if you're trying to fine-tune the balance of a thing not always the case
+[ 1087.3] I want to I want to ask two more questions about I remember what I wanted to talk about before
+[ 1092.2] In in balance
+[ 1095.2] You mentioned
+[ 1097.1] Player skill. Yeah
+[ 1099.7] There's this thing
+[ 1101.2] There used to be a guy who worked here of any sanatra. He was he was our qa lead back in uh back in the day in la studio and
+[ 1109.1] That guy could do things in a gladius
+[ 1111.8] That I could not see anybody else do and he it didn't matter what ship you flew
+[ 1116.7] If he was in a gladius, he could kick your ass
+[ 1119.6] And and that was that that was the thing like the gladius the light fighter meta the way that it was it just spoke to him
+[ 1125.7] It it it was it was like this perfect match between pilot and and and ship
+[ 1130.5] But you don't always get that sometimes people
+[ 1133.2] They desperately want to fly they desperately want to fly my superman punching ship right here because it's it's the aesthetic
+[ 1140.0] That they want and it's it has the role that they want, but it's not
+[ 1144.6] perfectly suited for who they actually are
+[ 1147.3] And the comments that come from that are oh well this thing is
+[ 1150.7] Underpowered or this thing moves slower and like this what the answer is well
+[ 1154.6] Maybe this ship actually isn't the one that was right for you. Maybe this other ship is the one that how do you
+[ 1160.7] How do you incorporate that and how do you manage that?
+[ 1163.7] this this player preference and the the player skill level it's
+[ 1168.2] How does that factor into your your balance plans here? So so it's really complex like
+[ 1174.8] so we start off with a shipping concept and
+[ 1177.2] The team we work with you know the vehicle team and the drunk group and we work with them on
+[ 1181.2] Identifying the kind of identity that ship and what it should be and what it will be in the game and then
+[ 1185.9] And then according to that we're building a certain character that we think suits that ship
+[ 1190.5] You know, it could be really fast forwards. It could have really good handling or it or it's really slow and conical
+[ 1195.2] You know, we just don't know but it depends on the ship. So we're trying to apply that
+[ 1199.7] and then
+[ 1200.9] Yeah, it just evolves from the load out of the ship. It can depend on the weapons or you know
+[ 1205.3] Or if you don't have the weapons to defend itself, what does that mean as well?
+[ 1208.5] You know, does that mean work it really tanky? So it can't fight back
+[ 1211.6] But you know, but but it can sustain but all those different things that we have all the tools we have at this vessel
+[ 1216.4] Create what that ship is in the game
+[ 1219.2] and then from that to players themselves have choices within that ship what they can have as well
+[ 1224.6] and
+[ 1225.5] We try and provide as much as we can to give the players to move the ship a little bit more in that place or that place
+[ 1230.0] depending what they want, but the ship always has a
+[ 1233.2] Kind of window that it will operate in and it might creep into other ships if you're you know, I've you know
+[ 1238.7] If you have different components
+[ 1240.9] So for that, but it's always got a core identity
+[ 1244.7] And sometimes that's not going to align with each individual player and and and what they want it to be and that's not a balance issue
+[ 1251.2] That is just that's the thing that happens when you've got a game with 200
+[ 1255.0] You know ships it's my
+[ 1257.5] If I could if I could fly around in any ship and be an ultimate fighter
+[ 1261.3] I'm going to speak about me personally here. It would be it would be the the mantis
+[ 1265.1] I love the aesthetic of the mantis. I think the mantis could have been the coolest damn
+[ 1270.8] fighter ever
+[ 1272.5] And that's not how it was built and what and I've tried the few the few times I still get into the game whatever
+[ 1277.7] I always try to
+[ 1279.0] Fight you know mantis and I and I struggle and that's just because I love the aesthetic of it so much
+[ 1283.7] I want I want that so like that so but it's one of those things. It's like that's not a balanced problem
+[ 1288.2] That is that that is that is simply that ship is not meant to do the thing that I wanted to do and I always have to kind of
+[ 1294.6] Remind myself
+[ 1295.5] I mean there is like a like a good analogy. This is from like there was a german world war two
+[ 1300.9] Ace which was called out of gallant and
+[ 1303.7] and he flew the fork wall of 190 and the me 109 and
+[ 1308.4] Although one of them was better like the the fork was a lot better in terms of like the stats
+[ 1313.3] He actually preferred the bf or the me 109 because it was just better in handling and like it was it's just speaks to the
+[ 1320.3] characters
+[ 1321.3] Characteristics of the ship the ship have their characteristics. I might not be the right ship for you
+[ 1325.1] Maybe you just like focus so much on one ship that your muscle memory is all aligned with how this or that ship should handle
+[ 1330.5] Right, but this is why we have different ships, right? Like these are just different
+[ 1334.7] Well, they give you different access to the universe. Maybe the handling is different
+[ 1337.8] But then you have a big size foregun somewhere else. So
+[ 1341.7] The second question I want
+[ 1343.9] We've said already and we're and folks like we should talk to us more about the flight model. We're gonna do that in just a minute
+[ 1349.7] This is my setup for that. Okay. We have done
+[ 1353.2] Yogi rich we have done a lot of these shows over the years
+[ 1357.4] Whether whether it's here at scl whether it's on an isc or whether it's even a citizen con presentation that we put together and whatever
+[ 1365.5] For for a number of years now. We have said
+[ 1368.9] This next thing is our is our thing. We're waiting for whether that was whether that was master modes or whether that was or that was or that was
+[ 1377.4] Hover mode before before that or whether that was that was
+[ 1381.3] Operator mode whether it's flight model
+[ 1383.6] stuff like this
+[ 1385.1] At various points in over the course of star citizens now 13 year development
+[ 1389.1] It's it's been some thing or other that we're waiting on that unlocks the next thing now, you know and along that it's been
+[ 1396.9] Armor penetration and it's been recently we we put flight blades in there and that allows you to tune things like this
+[ 1404.6] We know that crafting
+[ 1406.3] Is coming up crafting is going to dramatically change how so many of these ships
+[ 1411.8] Go because now you're going to be able to build some version of these ships and and affect their their characteristics
+[ 1417.9] And the one that you buy, you know, we're we're we're selling the stock versions
+[ 1421.8] And right now people are going to be able to craft their own individual versions and who and some level of customization will go into that
+[ 1430.6] Is it futile?
+[ 1432.8] Try to do any
+[ 1434.3] balancing
+[ 1435.6] Along the way
+[ 1436.6] Is this is this just a waste of everybody's time to try to to try to
+[ 1441.3] Balance heavy fighters to try to balance I-Vars when you know, there's so many outstanding systems still
+[ 1446.2] coming no, so I'd say it's part of the journey and
+[ 1450.8] Let's say we throw away everything tomorrow. We still have what we've learned along the way
+[ 1456.6] Um, and that's really important because we're constantly learning, you know, it goes back to you earlier, you know, you know
+[ 1462.0] I've been here seven years
+[ 1463.7] And my understanding of the game and the game mechanics has fundamentally changed in that time
+[ 1468.3] You know and as we've built more systems and we've added more to the game and you know, we do know the game's not complete
+[ 1473.7] But it's kind of exciting because we're building towards that and we're always
+[ 1478.1] Moving in that direction and learning more and getting better. Hopefully you know what we do
+[ 1482.2] Um, you know
+[ 1482.8] So we change things along the way and then we have other systems that come in and they might throw a curve ball in that
+[ 1489.4] You know system that we've made
+[ 1490.9] But we're learning along the way to build what we think is the best game
+[ 1494.9] I can think I cannot something on that from a different perspective because I've joined the team
+[ 1499.1] Roughly around two years ago. So not a long time as these other two veterans try
+[ 1503.6] But it's very important in order to you as a game designer in my case, but in general, I think as a developer
+[ 1510.9] to have that knowledge and
+[ 1512.9] being able to have that experience in tuning and
+[ 1515.7] You know, getting accustomed to the game getting to know how the game is working currently also to understand first of all
+[ 1522.6] What can you do and what can you plan to improve the game in the future in the long run?
+[ 1527.4] And also be prepared for that when the moment comes
+[ 1530.4] You know what to do, you know what to expect, you know what to manipulate in order to create the right experience
+[ 1534.5] Right, so it's never a waste of time and also I guess you guys want to play as well the game, right from 10 to time
+[ 1540.2] So playing a game that isn't is in a better state probably is better than just a game that is not balanced at all
+[ 1546.6] I think there's often over the course of the 11 years. I've been here
+[ 1549.9] There's there's I can I continuously encounter this expectation that
+[ 1553.8] every answer is supposed to be
+[ 1555.8] Figured out before you start making the game and before you start building that's just not how game development works
+[ 1561.0] That's it's construction not development. But it's it's always
+[ 1566.1] From the player perspective, it is always incredibly challenging because it's it's we have
+[ 1572.2] Backers we have players we have citizens out there who want desperately to believe in us
+[ 1577.1] They want desperately to believe that we know what we're doing
+[ 1579.8] They want desperately to believe
+[ 1581.5] That there that there's that there's a master plan and stuff and the reality is that
+[ 1587.1] We know what we're doing and there is a plan but those things change
+[ 1590.8] We know what we're doing
+[ 1591.6] But we learn more along the way and those things that we learn change our perceptions
+[ 1596.6] They change our ideas along the way
+[ 1598.5] We have that plan and then new systems come online and seven that plan has to change and it has to evolve and still
+[ 1604.9] Because and it's never an issue of not knowing what we want to do or or not being able to do it
+[ 1611.4] It is it is this is what game development is is this is constantly evolving never ending
+[ 1618.0] a
+[ 1619.3] Thing to find
+[ 1620.9] This thing that we're all trying to build together
+[ 1623.8] There's chris's vision. There's rich tyre's vision. There's your guys's vision
+[ 1627.6] There's there's everybody's vision and it's about synthesizing that vision along the way and it's going to change
+[ 1633.3] It's going to evolve and it can be very
+[ 1635.3] Can be very frustrating both for player and developer alike
+[ 1639.3] And it's just I don't really know where i'm going with this. I just I feel like I want to acknowledge that
+[ 1643.9] That I don't think so the vision has changed a lot though, right?
+[ 1647.2] I mean like the one thing you can't underestimate is like engineering and design and development. It just takes time
+[ 1654.1] like I mean like
+[ 1655.8] seriously like 90 of all the
+[ 1658.6] Of all the things that player proposed that we should do better
+[ 1661.0] We usually thought about these already right because we this is what we're doing for for living
+[ 1667.8] But it's just takes time to implement these if somebody tells me oh, please add an altimeter or something like this
+[ 1672.8] Then there's 15 different problems. We need to solve it's it's like it's a lot
+[ 1677.1] And those are the easy part as well like because a lot of time player
+[ 1680.8] You know I have very interesting insight and ideas about very complex system that you need that we can potentially put in place
+[ 1687.0] but uh those touches such a vast amount of other features in the game and you know organizing that type of work and
+[ 1694.8] Getting everyone on board and from completely different teams
+[ 1699.4] Especially in a company of the size of stage is very difficult right but in general it's very difficult in video game making
+[ 1705.5] So it's not a unique problem too for us. No, but being difficult is what makes it worth doing
+[ 1710.2] Yeah, we've got like you know, we've got a very complex game
+[ 1712.8] But that's very exciting because it's because we you know because we had to be different
+[ 1716.2] You know we you know all our systems are
+[ 1719.0] Real systems they function they
+[ 1721.1] They work and they do real things based on real
+[ 1723.6] In our physics mechanics that happen and most times most times
+[ 1728.5] There's a few exceptions here and there
+[ 1731.1] But you know most of the time that works really well for us because it's a really complex problem to solve
+[ 1736.2] Actually, it makes stasis and I think really unique for us, you know, and it makes it really fun to work on
+[ 1741.5] Uh, you know, you say yeah, we usually 90% of the time we we we've usually had that
+[ 1747.5] Because there are still plenty there are still plenty of times where we're being completely honest where where you know
+[ 1751.8] An idea has come from the community and it's been like we've been now like oh, that's a really good idea
+[ 1756.6] Oh, yeah, I had it first, right? Yeah. Yeah. Yeah. No, no, no
+[ 1760.6] I you know, you know, I I agree with das wheelie cool
+[ 1765.0] 69 420 that's a thing to do. I just call that a no, but but I mean we we all are based
+[ 1770.8] We've all seen like similar, you know media. We've all seen similar films
+[ 1774.2] We play stars. It's because we probably like wing commander or star wars in the past and so on, right?
+[ 1778.9] So so so there is a common understanding. So oh star trek, right? Yeah
+[ 1785.4] So, uh, I think like I mean like even of some things where we would say oh, we had this idea
+[ 1789.9] It's it probably just came from somewhere else. We incorporate a lot of community ideas in the designs as well
+[ 1795.8] All right, so at this point we're about halfway to the show yo you so I'm gonna I'm gonna turn it over to you
+[ 1800.5] This flight this this this updated flight
+[ 1802.6] Updated flight mode. It's up to now. Obviously
+[ 1805.7] When the time comes we'll probably do an isc or something on it
+[ 1808.6] But but give us give us the the lowdown on on
+[ 1812.3] What this is and what what it will entail and what you're doing right now? Okay, so and I'm just gonna go get a drink if that's cool
+[ 1817.8] I'm just
+[ 1819.3] okay, so following the master mode release we
+[ 1823.4] We listened to the
+[ 1825.0] We read the community feedback and so on we had our own plans with this and basically made the next step
+[ 1828.8] What what the rest should be?
+[ 1831.5] And there's
+[ 1833.4] Three things which are not just the flight
+[ 1836.5] Not just the flight model, but the whole flight experience, right?
+[ 1839.0] So I mentioned before we've got the space flight model, which is how ships use the thrusters
+[ 1843.9] We have the atmospheric flight model which are the control surfaces, which we also demoed in the past
+[ 1850.1] but which got a quite
+[ 1852.4] Quite big update now and there is the quantum experience. So all of these things combined
+[ 1857.4] They're moving the game towards the
+[ 1860.6] Let's say the traversal vision that that's CR ones, right? Because the way the reason why we have nav mode at the moment where you can like
+[ 1867.0] Go into this mode where you can reach I don't know 1400 meters per second
+[ 1870.4] Is just there to navigate in these big spaces that we need to traverse
+[ 1874.2] Because we don't have the quantum the quantum
+[ 1877.8] Well the quantum code for that yet. So in terms of the thrusters
+[ 1882.6] Uh, uh, thruster flying. Um, so this is not like a ground breaking or we do everything else. It's just like a an
+[ 1890.5] An evolution of the of the previous stuff. So it's it's just like building on what we already have
+[ 1895.0] so, uh, the main thing for combat flyers out there is that we're going to have a
+[ 1900.2] A non-sphheric velocity space. This means we can go forward
+[ 1905.1] Faster than we can come backwards
+[ 1907.4] Or to the sides this has the benefit that these typical six degree of freedom problems that we have
+[ 1913.1] In combat like back strafing or kiting. They're much much reduced from our perspective
+[ 1918.2] This just feels better like the the fights are more closer and so on
+[ 1922.5] um
+[ 1923.4] Also, we we added jerk
+[ 1926.8] So jerk is the is the change of acceleration. So instead of going within a frame from zero g to nine g
+[ 1933.5] We're ramping this up now over over short
+[ 1936.5] An amount of time at least for the fighters
+[ 1939.0] Um, and this just makes sure that you have to plan a little bit more ahead and the rotations feels smoother
+[ 1945.6] Um, what else is there?
+[ 1949.0] You can um, oh, yeah, and then we built in a lot a lot of like different steps how to customize ifcs for you
+[ 1956.3] so, um
+[ 1959.0] So what you have in the game right now is more like an ifcs on training wheels, right?
+[ 1963.6] Where at the moment you can turn off a couple of assists like gravity compensation and gsafe and these things
+[ 1969.8] In the future they will actually always mean a little bit of like a buff in terms of like what your thrusters can do
+[ 1975.8] so when you um, so
+[ 1978.6] What you have at the moment in our internal builds you can turn off gravity compensation you can turn off
+[ 1984.5] You can turn off the stability so the stability for example changes the behavior of of ifcs and uh gives your lateral thrust more
+[ 1992.1] Uh more importance than the longer tooling of thrust which means when you're in fights you are better
+[ 1997.4] It's better for you to uh, or it's easier for you to evade shots
+[ 2000.8] But at the same time it makes the flying a little bit more
+[ 2003.5] Dangerous because it doesn't keep the tvi stable anymore. Well, that's like now technically more technical details. I'm sorry
+[ 2010.3] You're falling asleep all right
+[ 2012.6] No, I was looking at i-core 102 who is like this doesn't sound like it's going to solve the problem
+[ 2017.2] We're like oh, yeah four minutes in about in your 20 minute exploration. That's fine. That's fine
+[ 2021.5] I mean like um, honestly, don't don't believe me when when it when it's available play it and then you can can judge it properly
+[ 2028.1] The other thing which is a pretty big chunk, uh, or makes also the big difference is that we don't have top speeds anymore
+[ 2033.6] And now before you, uh, grasp. Oh god unrestricted speeds. Uh, no, um, there are still restricted speeds
+[ 2039.5] But we don't in the game data. We don't have any top speeds anymore
+[ 2043.1] The top speed of a ship is what your thrusters can achieve in a
+[ 2047.7] Fixed amount of time that we define
+[ 2050.0] But the good thing is when you have your power assignment and you put more pips into your engines
+[ 2055.6] Your thrusters will actually produce more thrust and more thrust means then more speed
+[ 2060.3] Um, so artificial speed limit that the universe has applied to you. Well, you're still we we need speed limits
+[ 2066.4] We're a game after all right, um, so but but this basically means like
+[ 2070.7] Um, but because it's based on physics what will happen is um, you have your gladius and you fire a missile
+[ 2076.7] You see, uh, your overall weight of the gladius reduced now
+[ 2079.2] So your thrust have the same thrust output, but your chip is now lighter
+[ 2083.0] So you actually get more g's we had this before but now you also get more speed based on this, right?
+[ 2088.2] And looking further ahead, I mean this is like outside of the new flight model
+[ 2091.0] But when we have measurements on we're also going to have like more realistic ship masses at the moment the gladius weights
+[ 2096.2] 55 55 tons our squadron weight a little bit heavy our squadron
+[ 2101.1] Gladius was up at 180 tons which is like close to 747, right?
+[ 2105.5] But now the squadron gladius is around 20 tons
+[ 2107.7] Which means like the weight of every missile and every component actually matters
+[ 2110.9] So if you for example have your have your gladius or any other ship and you just rip out the most important components
+[ 2117.2] You will just get much much faster. Yeah, this is going to be very very relevant for like smaller craft
+[ 2121.5] Maybe for racing as well
+[ 2123.6] Having lighter components or removing weapons will you know, give you that extra
+[ 2128.4] Wind of off performances that you can exploit throughout the race, right? So, right
+[ 2132.8] So and that is basically just the space part of this on the control surfaces. We have a
+[ 2138.5] A full licensed pilot on the control surfaces for now, right? That's kareem. So he's
+[ 2143.8] He's working on the control surface support. What we have already ready is the
+[ 2147.8] Is the unassisted aerodynamics flight, which means
+[ 2151.1] How the ship feels when you directly affect the
+[ 2154.3] The deflection angles of the control surface. So you can you can glide you can even
+[ 2159.0] You can even like your ship can be entirely off and shut off
+[ 2161.5] You still have control over your control surfaces
+[ 2164.0] Which means if you're getting distorted in
+[ 2166.7] While in atmosphere and you can actually glide down you can flare and you can crash land your ship in a
+[ 2173.0] You can do a controlled crash landing, right?
+[ 2175.4] and
+[ 2176.6] So and and the core on off thing which I just mentioned we introduced a concept which is called the ifcs core
+[ 2183.2] It means what you have right now in the game where this the ship is just constantly
+[ 2189.8] Stabilizing
+[ 2193.1] Compensating for your rotation
+[ 2196.1] This means the core is on so ifc is actively working for you
+[ 2199.0] But ifcs in the future can be can be can be slapped down or even turned off and in this case you don't have
+[ 2206.8] Pure newton flight so also on the rotation which and this also happens when you for example crash into something
+[ 2212.2] For example in the gladiars, let's say it can let's say we know that the glades cannot go below
+[ 2217.0] But let's say 20 g's that we might have a limit in the ifcs core that says you know when that ship goes over over 25 g's
+[ 2223.0] The course is is slapped off for like a couple of seconds and then it needs to reboot
+[ 2227.4] So during this time you still have control over your ship
+[ 2229.7] You can still like use the thrusters and so on but it will not also stabilize yourself
+[ 2233.3] So it's like
+[ 2234.4] More or less like flying like in curbspace program. So it's um
+[ 2237.8] Which means like you will tumble after every after every collision the ship will not recover as fast
+[ 2242.6] And whether the core is on or off also plays a role in atmospheric flight because an atmospheric flight when the core is on
+[ 2247.9] We will have a fly by wire system
+[ 2250.1] That keeps the tbi stable, but when the core is off you directly
+[ 2254.8] Control the control surface directly. So that's I want to jump in a lot. Sorry. Yeah, I want to jump
+[ 2260.5] Who I want to jump in and say give give yo ye a chance to catch his breath that 20 and 25 thing
+[ 2265.9] Those were numbers off the top of his head to illustrate a point
+[ 2269.4] No, don't go up and or update urkul and whatever like that's going to have a 25 20 g only a 20 g tolerance and bubble
+[ 2276.2] This is just examples right just examples
+[ 2280.9] It's just an example
+[ 2284.2] This is great. I want these
+[ 2287.0] We might need it to be fair. Yeah, you know like I'm like hey, matthia need something from you. I'm coming over
+[ 2294.2] So so thrusters uh atmospheric flight control services and the third one was uh
+[ 2300.7] Quantum quantum quantum experience. Yeah quantum experience will change because at the moment, uh, the um
+[ 2306.5] It's very clunky how we traveled through the game. So, uh, I think the best example is a nath mouth will die is probably the uh
+[ 2316.5] Oh
+[ 2320.0] So but but this is like uh, no, no look directly on the camera. Hold on
+[ 2324.4] Which one this one right? Hold on go to the ogis camera
+[ 2329.1] There you go. So yeah say it again. Nath mouth will die
+[ 2334.6] Epson's chat for nav mode everybody. Yeah, um, the reason is more because like it's it's very clunky to uh traverse the verse
+[ 2341.2] So the way how it's currently planned. I'm saying currently it can change right is
+[ 2348.4] It can change of course it can change right like if we if we play it and it's and it's not good
+[ 2353.7] Then we'll change it again. So but but the overall the overall goal is to make the traversal through the through the verse very very fluent
+[ 2362.2] and
+[ 2363.1] When so the thing that will define whether you can do a quantum if you can use a quantum drive or not is just whether it's uh
+[ 2368.8] Powered or not. Um, and this is playing in the resource network problem
+[ 2372.0] So if you select for example, uh, or if you set up your resources so that your quantum drive is not powered
+[ 2377.1] You cannot use quantum if it's powered you can
+[ 2380.2] Um, and then it will be as easy as looking somewhere holding a button and off you go like we had in the past
+[ 2385.4] So there won't be any mode switching anymore. There's no quantum drag that slows you down suddenly with 70 g's or so
+[ 2392.4] um
+[ 2393.6] Yeah, so that will all be uh more more fluent and and this is like i'm not talking it will be it
+[ 2400.1] We have most of this already in squadrons. Um, it's actually my to-do list too on this week to rip nav mode out
+[ 2407.0] Of the pu no
+[ 2409.5] No, no, no, so so the way is that we are um, so um due to the time constraints
+[ 2413.2] We have in squadron we first do these things in squadron, but
+[ 2416.4] Every everything we do on the flight model is directly moved to the code base of the pu
+[ 2421.9] Basically most of the stuff of the new flight model is already in in the current 4.2 code
+[ 2426.2] But of course turned off. We will also not enable it until we have all all things in place
+[ 2431.9] um, including the ship tunings because in the master mode release we uh, matthieu mentioned that before, um, we had to do
+[ 2439.2] We had to go through all the ships very very fast because we had this time window that we needed to commit to the master mode changes
+[ 2445.6] Within two months, right?
+[ 2447.2] For the new flight model the data sets all in parallel
+[ 2450.0] so, uh, which means we can i don't want to say take the time because uh, but you know, we don't need to rush
+[ 2456.6] the implementation or or the the tuning of the new ships because um
+[ 2461.6] Because we don't want the ships to be as similar as the word before we want to give them character
+[ 2465.6] And uh, we don't need to rush to rush this out because we can have the old and the new flight model data side by side without
+[ 2472.5] destroying each other unless
+[ 2474.7] Uh, you do an integration wrong like I did
+[ 2477.2] There was a little buff to the gladius which was due to an integration which I messed up and I apologize for that
+[ 2482.2] So you guys are so fast in catching up with those changes, man
+[ 2485.7] It was like
+[ 2488.7] 20 minutes later, yeah, there were like 20 videos on youtube and 20 seconds later. I
+[ 2493.4] You're gonna be just telling me what I didn't
+[ 2496.0] Let's let's be let's let's be real honest here
+[ 2499.1] There is there are like there are three levels of anything that sort of happens in star citizen at any given time
+[ 2504.4] Anytime a patch comes out one is
+[ 2507.6] We've put a thing out there
+[ 2509.2] It's working as intended and that is either great
+[ 2513.1] Or we learn a lesson we learn a lesson and it's like with master modes
+[ 2517.6] Whatever it's okay. Well it changes like this and that's that's
+[ 2520.8] That's as it should be and what done that and I'm proud to say that I can honestly say that's what happens most of the time
+[ 2527.4] Then there's the second scenario where we do a thing we put it out and it doesn't work the way it's supposed to because of a bug
+[ 2534.3] There's some other competing system that it integrated into our work
+[ 2538.8] And and suddenly like a work rate on my build and here and then we it got into everything else in the pu and it doesn't work
+[ 2545.1] Right. Uh, some underlying system is screwing up. There's some some rare use case that is being used to exploit it whatever it's like
+[ 2554.1] I was like we wish it it's like it kills us because this thing
+[ 2557.7] We just put out doesn't perform exactly the way that we wanted to because of something that was out of our control at the moment
+[ 2564.8] And then there's the third one
+[ 2566.8] Where sometimes we type to seven and we meant a nine
+[ 2570.6] Yeah, and that goes out there and you're like wait, why is that doing that?
+[ 2574.3] And it's like oh no, that was me. Oh no
+[ 2577.6] It's not wonderful. Yeah, this time this time. Oh, no
+[ 2580.8] We have very tiny keyboards. So it's like we need just bigger ones, you know
+[ 2584.8] And it's one of those things like sure you might not hear an admission like that at EA or Activision or whatnot
+[ 2590.4] I guarantee you it happens everywhere. Um, but yeah, we're it's
+[ 2596.0] We're human we're human and and and sometimes we do this because those things happen more often than not
+[ 2601.2] There's a number of times like you just said
+[ 2604.2] Taylor we're watching we're watching a stream. We're watching a youtube going. That's not how that's supposed to go
+[ 2610.0] You go and you're like, oh no
+[ 2613.3] I mean
+[ 2614.8] We we had a case of something similar just with like with the 4.2 release
+[ 2620.0] Like the the ground turbulence
+[ 2622.5] All the ground was meant to be in there since for six months
+[ 2626.3] We didn't notice that was that there was a buck in the in the noise generator. Well, it wasn't really a buck. It was just
+[ 2633.4] Me not being careful enough, right?
+[ 2635.1] Where it basically did not
+[ 2637.2] Work on live environments because the times the time
+[ 2640.8] The time
+[ 2642.0] Difference is bigger, right? Because in our environment in our deaf environments
+[ 2645.0] It's the time since we started the game and the life around in the life environment. It's the time since 1970
+[ 2651.2] So, um, so yeah, the varm was too large in order
+[ 2653.5] Yeah, so the value was too large for the noise generator to actually give us a value. Yeah, he was working for us and
+[ 2660.3] It's great. What's a my machine?
+[ 2662.6] There are what this happens
+[ 2663.7] There are people
+[ 2665.0] Out there who will take admissions like that and stories like that as some indicator of not being professional or not knowing what we're doing
+[ 2671.4] Whatever and and and if you're choosing to take that that way, you know
+[ 2677.3] God be with you. You can do whatever you want that stuff. I prefer
+[ 2681.0] I prefer to always present our stuff as honest and as and as human is like that. We make mistakes just like anybody else and
+[ 2688.6] We have our share. So does everybody I think maybe we're just a little more candid about it sometimes
+[ 2692.9] But thanks for pointing out like for us honestly, especially these days in dpu
+[ 2696.9] Uh, we tend to you know, keep up with try to keep up with a lot of feedbacks and data even from the community run tool as well, right? So, um
+[ 2706.7] guys keep, you know
+[ 2709.2] Shouting and letting us know what is not working
+[ 2712.8] That's thank you for bringing that up. It's it's not just it's not just the content creators and stuff issue council
+[ 2717.7] Oh my god, can you imagine this project without issue council? Honestly like, uh,
+[ 2722.0] Often I see people thinking that the issue council is known and uh, and what I mean by the people
+[ 2726.3] I mean outside of the company is not a useful tool. But honestly for us like, um, having issues with repro step videos
+[ 2734.4] And having directly a ticket in jira, then I can act upon
+[ 2738.1] Immediately asking, you know, directors, oh, can labeling. Can we fix this for this release and so on this world? It's super helpful
+[ 2744.5] So keep up the quality of the ic report guys because that's gonna help us
+[ 2750.2] You've got 15 minutes left. I want to get to some more of these uh questions from the community here
+[ 2757.5] This question's word a little bit. I but it's basically saying capital ships in atmosphere
+[ 2762.3] wtf
+[ 2764.7] Like like everybody's seen everybody's seen the terrible
+[ 2768.5] Everybody's seen that polaris or or or or or or or or that address
+[ 2772.8] You know, you're trying to do a line of mind. You're trying to do a storm again or whatnot or and it's just
+[ 2779.2] It's just
+[ 2780.7] Capitals in atmosphere any hope this quit of a ship of a lot of somebody way. Yeah, that's that's pretty good
+[ 2785.4] This is this is basically this was basically the role model for the players. Okay, so I
+[ 2790.1] I know what you want to say
+[ 2792.8] Okay, so the vertical thing right
+[ 2795.2] That where where ships do this like nobody wants that right?
+[ 2798.4] See, I doesn't want that like he had uh, he had a talk with me
+[ 2802.1] last week, right?
+[ 2803.8] So, uh, but this is also something we probably will only
+[ 2808.0] Fix with the with a new flight model. I don't want to say oh, it's going to be fine in the future
+[ 2811.2] But but it is the plan for this right so right now when you're in atmosphere
+[ 2815.7] We have something called thrust efficiency curves and
+[ 2819.1] The efficiency of your thrusters goes down by about 50 percent in the in the highest case
+[ 2824.6] In the future that efficiency will be much much lower. So what you can expect that if you have a ship, let's say
+[ 2831.4] Give me a ship with the v-tools. I don't know cutlass, right?
+[ 2834.4] Cut let's say cutlass. Yeah, so if you have the cutlass, right?
+[ 2838.0] You can expect that uh, when the cutlass I mean the cutlass is like a light transport
+[ 2842.2] So we will be not be as punishing probably but let's say does the eaters have
+[ 2845.4] V-tools? Yes, but I don't work in a game, but okay cool the bullion. Okay, fine. So let's say the eaters is landed
+[ 2851.6] Um, then you will get you will get a message on the on the heads up display that tells you what your thrust ratio
+[ 2857.8] Thrust to weight ratio against gravity is and if that if that ratio is below one
+[ 2862.5] You will not be able to take off and this is then
+[ 2865.2] Just taking account the the uh, the mass of the ship how much it is loaded on it. So if you have
+[ 2871.0] Have your cargo full of
+[ 2873.7] Lead lead cubes, let's say that right then it is possible that you you will not be able to take off. So now it's possible
+[ 2881.2] Not a guarantee. It's not it's it's it's you can overload
+[ 2884.8] You can overload and then you will not be able to take off
+[ 2887.2] I mean you may try to to boost because boost gives you like a vertically
+[ 2890.2] I think like something like 35 percent most thrust you can put more power into your engine
+[ 2893.9] so you get this natural resource network based buff in your engines, but
+[ 2898.2] um
+[ 2899.2] You will have a hard time just hovering like this, right?
+[ 2902.7] And at the same time because these these are your strongest
+[ 2906.6] Thrusters, but your your retros are usually a lot weaker than the uh than the other thrusters
+[ 2912.2] So if you do this you will eventually just sink down
+[ 2915.2] That's at least the plan, right? So you can expect that larger ships will be will be harder to fly and to land in atmosphere
+[ 2921.3] We will try to give players helpers so that uh new players don't just like crash land this thing, right? But uh,
+[ 2928.4] Still like they're still
+[ 2930.0] They're still physics and like the reason why the ships can hover at the moment at this moment is because they have so much thrust
+[ 2935.7] That they can because all they need to do is to be able to hover in one g or let's say on on earth, right?
+[ 2941.7] When that is when that is not guaranteed anymore, then you automatically automatically have like a
+[ 2946.8] Moralistic and harder harder
+[ 2949.6] Situation there and that's coming tomorrow. That's not coming tomorrow. I'm not gonna share it. No one question. No
+[ 2956.6] But seriously like
+[ 2958.4] We're really keen to put this over as fast as possible
+[ 2961.2] But so the space flight model is done the aerodynamic stuff is halfway done because the flyby y is not completely done
+[ 2968.3] and
+[ 2969.2] What we need on the control surfaces that's left is the ability of ai to use control service
+[ 2973.2] That's like a relatively complex project
+[ 2975.0] But but i'm i'm confident that we can solve that in the next couple of weeks
+[ 2979.1] And then there is the quantum experience when all these things are done
+[ 2982.7] And then it's the first time we can actually let players test this thing in the pu environment
+[ 2986.5] But this is not for tomorrow or also not for like
+[ 2990.9] Until then can we just make it so if you're in a players or an address and you do this in atmosphere
+[ 2997.2] You just instantly go to the klesher. I can but then you're not gonna be able to slow down very fast anymore
+[ 3002.4] Or like no, no, no, no, no, I just just teleport the just teleport the pilot right to klesher if they're doing this in an atmosphere
+[ 3008.4] just
+[ 3010.2] And that would be what I do and that's why i'm not a designer
+[ 3013.2] They'll put me in charge of anything
+[ 3015.2] um
+[ 3016.4] it doesn't
+[ 3017.9] Rich you mentioned turrets earlier
+[ 3020.3] Are there any plans to make industrial ship turrets?
+[ 3023.8] Be a viable deterrent or will they remain a mostly useless p.o.s?
+[ 3029.7] It's slightly subjective for questions
+[ 3033.1] It's possible i'm adding my own spin to some of these things because I have feelings of my own
+[ 3037.3] Yeah, so the the whole point of those turrets is you know the ships can't defend themselves with guns so we've got turrets that
+[ 3045.1] You know and we want the ships to defend themselves with turrets
+[ 3048.6] um
+[ 3049.7] We are working on the kind of general tour experience and
+[ 3053.1] How kind of powerful the turrets are as well, you know, and we've been some changes was last release
+[ 3058.2] Yeah, in general like with the engineering buff we buff them up
+[ 3060.8] Yeah, we buff the ammo we buff maybe some regenerates for specific ships as well
+[ 3065.6] But there's like there's this other thing like the the thing that's we're currently lacking is uh effective medium range weaponry
+[ 3072.2] right now because
+[ 3073.5] A turret that fires projectile
+[ 3075.5] Just like like it's just just the normal gun project. This is a gun project
+[ 3079.5] Are the things like we cannot oh we don't want to twist like the project after we launched it, right?
+[ 3083.8] So what we what we need is like some medium range?
+[ 3087.6] Weaponry we have a plan for this like we would like to try out flak at some point, but it's not ready for multiplayer yet
+[ 3092.5] Um, but it can range this grab this this
+[ 3096.5] It can so it can be effective beyond the the range where where normal gun turrets are are effective
+[ 3102.0] I mean, I guess the question comes mostly from oh, I have this large ship and I'm getting uh, I'm getting shot at by by fighters
+[ 3107.7] Which keep their distance?
+[ 3109.1] um
+[ 3110.0] But the other thing is like coming to more like torsons work
+[ 3114.2] Concerning like the armor system and so on
+[ 3116.9] Um
+[ 3118.1] There's also the question of like if smaller ships will actually be a danger for larger ships because we are going to have like
+[ 3124.8] penetration parameters on the
+[ 3126.9] On the bullets and we're going to have armor and so on
+[ 3129.8] So a lot of these weapons that people use at the moment to damage larger ships
+[ 3133.8] They might not be able to damage them in the future
+[ 3136.5] It's like if you have a pistol and shoot at the tank the tank says, well, okay, right? So
+[ 3142.6] Um
+[ 3143.8] If the ships want to do actual damage on the ships
+[ 3146.2] They probably need to get so close in the future that they can destroy precisely the subsystems
+[ 3151.0] But that's like this is a little bit outside of like
+[ 3153.6] And then that of course provides more utilities some of these heavy fighters or is that that are designed to take on the larger ships?
+[ 3160.6] Yeah, like the air ease would which is actually yeah
+[ 3164.0] Um, we are we are I want to see if we can do at least four more. So i'm limiting you to one second
+[ 3170.7] I should not babble sir sir because I want to I want to hit more of these things before we go
+[ 3173.8] He's got an airplane. He's got to catch
+[ 3176.2] um
+[ 3177.5] weather
+[ 3178.8] Is in four two for you know, uh, or the next iteration of it, uh, weather affecting ships ability to fly
+[ 3185.6] Yes, he's in there
+[ 3187.3] You can try it
+[ 3188.8] Larger ship in general should be less affected by weather effects
+[ 3192.6] Uh, and smaller ship clearly more. Um, and yeah, you can try that defects already that yogi and uh
+[ 3200.6] Ethan, uh, I've been trying to smash through and testing and trying
+[ 3204.8] Uh already in four twenty two so flying two clouds have fun. Yeah, a funny cloud
+[ 3209.8] Because and of course that's that's this next iteration of it. It'll continue to evolve as more weather conditions. Yes. Yes, especially also with
+[ 3217.6] You know when we're gonna update the
+[ 3219.6] Atmospheric system as well
+[ 3221.6] Clearly we're gonna have to adapt everything. Okay, uh recent changes to missiles and torpedoes. Yeah. Are you happy with?
+[ 3228.3] Are you happy with how it's still in pq right now hasn't come to life yet? Yes
+[ 3231.6] So for the targeting system, we are quite happy in it hasn't been easy to kind of
+[ 3236.5] Try to find a sweet spot for the targeting params of missiles specifically. Uh, also, uh, with torpedoes the safety
+[ 3244.0] improvements to avoid certain unwanted behavior like uh, them firing torpedoes too close to couple of ships are in place
+[ 3250.6] And we are looking forward to players testing them and stress testing them as well. Uh, but in general, we are quite happy
+[ 3256.4] What about the thing where they fire the missile or torpedo, but they keep moving forward? Yes, and that and the distance
+[ 3262.4] Yeah, so basically how it's currently working. Uh, it's the safety distance is calculated between the
+[ 3269.7] torpedoes that you launch and your ship itself. So if your ship is moving and torpedoes moving, uh
+[ 3275.1] And you you're not uh, 1.5 kilometers away from uh from the torpedo the torpedo wanted on it
+[ 3279.9] But however, this is not the intended final direction that we want
+[ 3282.9] We are we have already spoke with all these peeps and p.a.t. And uh, um team johnny as well
+[ 3289.2] For uh some updates on the safety mechanics based mostly on the distance travels of the torpedoes and also some safety from the moment it was launched
+[ 3296.5] Yeah, yeah, because that that's a good change right right now because of this
+[ 3300.0] So it's important to say that uh, we wanted to uh, try this stuff first because that was basically the parameter that we had
+[ 3306.5] That we had in place actually since out of time in order to see how the gameplay dynamics
+[ 3311.5] Are looking and now that we know that this is kind of the direction that we want to dive into
+[ 3316.3] We can further work right now if you follow your torpedo missile
+[ 3319.2] It'll it'll too close. It'll just never arm and that that sucks
+[ 3322.2] You want it you want it to you want it to start that that distance timer to start from the moment you launch it
+[ 3327.8] And then if you know if you if you choose to get too close to it when it explodes, that's on you
+[ 3332.5] That's where we're going. Okay. Good
+[ 3337.2] Ground vehicles, why do they suck
+[ 3340.2] Hey, wow, it's very subjective again
+[ 3343.2] Um, so we have you know, obviously made a big kind of change to ground vehicles and we changed the fundamental physics of the ground vehicles
+[ 3350.1] Um, but that still doesn't mean
+[ 3352.4] They're finished
+[ 3353.6] Um, you know, they are still subject to the same kind of physics as the you know rest of the game
+[ 3358.0] And we do know that you know the general collisions don't feel very good
+[ 3361.5] Um, and we do want to improve that
+[ 3363.8] But but also we want to give more purpose to the ground vehicles as well
+[ 3367.7] And that just isn't the ground vehicle itself
+[ 3369.2] It's the guns or it's the torpedoes on the ground vehicle
+[ 3372.0] So it's about improving those systems as well. So players have more of a reason to choose them
+[ 3376.0] You know, especially as we have more environments in the game that
+[ 3379.1] You know, the main limit where ships can go the main limit where ground vehicles can go and you know
+[ 3382.8] Also, you may want to use ground vehicles to defend a certain area
+[ 3385.7] So, you know, if you've got a blister you can have blisters and
+[ 3388.9] It protects an area, but but that isn't just making that
+[ 3391.6] Ground vehicle physically good. It's the systems on it. It's the torpedoes and you know and how that
+[ 3396.8] You know those kind of systems generate the gameplay we want
+[ 3398.9] That's why already we try to bespoke let you in the ballista torpedoes and missiles to kind of fit more
+[ 3404.8] Into the ntro as well as this entourium turret. By the way now the turret has game balls as well
+[ 3409.3] So it's more ranges as more ammo to try to enhance the peculiarities of the ntro vehicles as well
+[ 3415.5] any any hope for some kind of
+[ 3418.0] um
+[ 3418.9] Throttle control or something on ground vehicles
+[ 3422.1] Is it still just a press and you go to your top speed? Can we
+[ 3425.8] I think it's somewhere in some to-do list, but it's uh
+[ 3429.5] Things it's it's relatively able to fine fine tune that control and what not. Yeah, but this is like like in the
+[ 3437.5] It is somewhere as a ticket. I think it's my list even I don't know
+[ 3441.2] But it's but it's like compared to other things like really low priority
+[ 3444.4] So I wouldn't I wouldn't wait for it for now
+[ 3447.3] All right folks, that's it. That's our time. Thank you for hanging out. Thank you for
+[ 3452.8] Uh
+[ 3453.9] Tuning in to stars and live vehicle flight and balance yogi matia and rich as always
+[ 3458.8] Thank you for taking the time out of your thursday to come yogi. You literally have a flight
+[ 3462.6] You have you have a taxi waiting to take you to the airport and go. Thank you for the time now
+[ 3467.2] You've got three minutes
+[ 3469.6] I'm doing my wrap up but trying to convince him to do a show
+[ 3472.7] He's like I've got to leave for an airport. I'm like I promise I'll I'll make it in time
+[ 3476.1] Thank you for taking the time. Thank you for talking so uh in-depth about the the flight model stuff
+[ 3483.2] If just judging from the twitch jet um a lot of I think a lot of folks are anticipating those things
+[ 3488.3] Uh for folks on the the various marketing stuff. Yes, Alien week does launch today
+[ 3493.4] That should launch in roughly two ish minutes. Uh, those people are doing that
+[ 3498.1] That's the Alien week promotion where all those alien ships come back and uh the new
+[ 3502.6] Asperia prowler utility which will have a bts episode that goes live on youtube in just a minute
+[ 3507.6] And you get to learn all about that and uh, yes, virginia. It's true. It's more accessible and it's not nearly as um,
+[ 3515.4] Wallet prohibitive as the original prowler also lots of improvements to the original prowler
+[ 3520.0] You want to check out the q&a for the prowler utility and we go through a bunch of the improvements
+[ 3524.1] We've made to the prowler along with this work. So uh check that stuff out for scl. I'm jared. That's been rich. It's been yogi
+[ 3531.2] That's been matthew. Uh, thank you so much for hanging out with us this week and we'll see
+[ 3534.9] Uh, we'll see you in two weeks. No show next week. Bye everybody. Ciao. Ciao

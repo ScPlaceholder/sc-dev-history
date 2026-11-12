@@ -1,0 +1,51 @@
+## Star Citizen Alpha Patch 4.0.1
+Alpha Patch 4.0.1 has been released onto the PTU!  Patch should now show: VERSION 4.0.1-PTU.9483688.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US Servers
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:500
+Hangar Spawning: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability, Performance, and Bugfix Testing
+- Save Stanton Chapter 2 Event in Pyro
+Chapter 2 of Save Stanton will run throughout the PTU phases in 4.0.1. This is a continuation of the event from 3.24.3 into the Pyro side of events.
+## Known Issues
+- PU - Pyro - Courier - Mission Content / UI - Boxes are not marked upon accepting the mission
+- PU - Cargo - Hauling Missions - Warehouse orders not counting collected & delivered cargo correctly
+- PU - Cargo Hauling - Mission Content / Mission Refactor / Game Code - Supplies will remain in players warehouse and not successfully deliver
+- PU - Stanton - Locations - Hurston / Rappel - Storage Kiosk - Can't Interact with Storage Kiosk
+- PU - Stanton - New Babbage / Lorville / Orison / Area18 – Locations / Transit – Trains are popping in when they arrive
+- PU - Actor - Personal Inventory / Storage Access - Loot Box / Armor - Interactions / PIT Wheel - Helmets that are carried then dropped via PIT menu will disappear/become lost
+- PU - Pyro - R&R Station - Stanton Gateway Station - Locations / Shopping - All shops in Galleria are missing items on shelves and in Kiosk
+- PU - Pyro - Frontier Outposts - XS Outpost - Locations / Art / Tech - XS Outpost Main Building interior and Storage Shed interior is missing multiple assets and collision
+- PU - Pyro - Asteroid Bases - Hangar - Locations / Collision - The collision for the hangar doors does not stream in until the player is inside the hangar
+- PU - Pyro - Mission Refactor - Hauling - Mission Content / Reputation - Players are able to access the other intro missions after completing one for a different Org
+- PU - Stanton - Shopping / Selling / Cargo - Commodity Kiosks - Commodity kiosks are empty preventing any purchases or sales
+- PU - mobiGlas - UI - Contract Manager - Contracts can overlap with sections below them when expanded
+- PU - Pyro - Physics - Locations - Contested Zones (CZ) - Plastic Curtains have solid collisions against projectiles and cannot be passed through if ADS
+- RSI Polaris - PU - Vehicles - VLM - Occasionally lose Components By Pressing A New Insurance Claim or Repairing A Damaged Polaris
+- Contested Zones - Weapon intersecting with the ground
+## Features & Gameplay
+- Locations
+- Further Contested Zone Client Performance Optimizations
+- Further Pyro Outpost Ground Collision Polish
+- Gameplay
+- Added Personal Cooldown to Further Pyro Missions after Completion
+- Lowered the amount of turrets around asteroid bases
+- Further Save Stanton Ch 2 Mission Polish and Adjusting Legality and Reputations
+## Bug Fixes
+- Fixed - Location / Law - Ship despawn in front of Players (STARC-148878)
+- Fixed - PU - Pyro - Rundown Station - Contested Zones (CZ) - Locations - Art / Collision - There is a panel on the outside of the station that lacks collision and allows for players to go inside and into CZ areas with ease and can also get the player stuck (STARC-151243)
+- Fixed - PU - Pyro - Investigation - Colonial Outpost - Mission Content / UI / Locations - "Locate Missing Person" marker is incorrectly displayed alongside intended markers
+- Fixed - Multivehicle - PU - Vehicles / UI / MFD / HUD / Inner Thought - cockpit button interactions overlap the MFD after being initially hovered over (STARC-130562)
+- Fixed - PU - Stanton / Pyro - Mission Refactor - Cargo Hauling missions - No cargo is visible in the Freight Elevator Kiosk at the pick-up location (STARC-137686)
+- Fixed - RSI Polaris - PU - Vehicles / Localization / Weapons - Polaris Torpedo Console Displays Placeholder name (STARC-138754)
+- Fixed - DRAKE Cutter - PU - Vehicles / Cargo Grid - 2 SCU cargo containers cannot be attached to the Drake Cutter cargo grid
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 6 Server Crashes
+- Fixed a Hybrid Service Crash
+- Backend Service Performance Optimizations

@@ -1,0 +1,19 @@
+There have been a lot of questions about how the game’s physics system will work. Is it going to be ‘physics light’ like Wing Commander, an entirely serious model of Newtonian physics like more recent games, or something in-between? Chris Roberts recently addressed this in a forum post and we thought it’d be good to share this background with everyone:
+As someone that was taking Physics at Manchester University before I dropped out to make games full time I can assure everyone that the physics model is COMPLETELY accurate and it’s a full rigid body simulation. I know because I wrote the code.
+Maybe I should have done a better job in the demo, but if you are flying at speed and you set your desired velocity to zero you WILL see the top front thrusters articulating and firing to slow your velocity. If you watch my demo you will notice there is some momentum with the Hornet when I slow down close to the bridge. It may not have been apparent on the screen, but I can assure the Hornet does not stop on a dime. if you load it up with more mass (like extra weapons) you feel the effect of this.
+There is no drag modeled – everything is done as it would be in space.
+Additionally there is actually counter thrust being applied inside the physics and if you had your hands on the controller you would feel it. If you look closely you will see the inertia of this – the ship doesn’t stop rolling or pitching on a dime. There is however a very good reason why you don’t actually see the thrusters fire entirely accurately.
+The problem with visually depicting the proper thrust is that it would actually look pretty horrible (trust me this is how I first did it, and is still pretty easy to switch back to as I’m actually doing some extra work to make the visuals looks nicer).
+The reason is because there is no drag in space, so even a micro amount of thrust starts the Hornet (or any spaceship) rotating until you apply counter thrust. So what is really happening is that the flight control system is always applying micro thrust and counter thrust to achieve the pilot’s inputs. This results in the thrusters flickering off and on in micro amounts and you actually not getting a good feel of the general application of thrust. I think you know I like things to look cool (come on, we all know you probably wouldn’t be engaging in space dogfights at WW2 speeds, but it’s so much more fun than what the reality would probably be), so what happens is that the system is still modeled accurately, but I use the angular /linear velocity delta to drive the visual representation of thrust. Here’s my code comment
+//Note the thrustGoal is actually the linear velocity delta (desired vel – current vel of
+//the vehicle & rotational vel rather than the actual linear & angular acceleration / thrust.
+//This is because, while inaccurate its cooler to see more constant thrust that gives
+//you a visual clue as to what correctional movement / velocity vectors the vehicle is using.
+//If we just used the acceleration as opposed to the desired velocity correction, the thruster flames
+//would flicker on and off – especially in the Wing Commander use case of Space, where
+//there is no atmosphere to provide drag.
+//
+//Of course if you pass the actual accelerations to SetThrustGoal, then you’ll get an accurate //visual representation of what a thruster would really do
+I hope that clears up any confusion!
+I will admit that the ship doesn’t need to have wings or fans on the front, but the idea behind that is for possible atmospheric flight (this is not a promise of planetary action for the early build but allows for expansions in this direction), and as a RAM scoop. Plus it just looks / feels cool!
+Chris Roberts

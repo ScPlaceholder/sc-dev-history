@@ -1,0 +1,38 @@
+## Star Citizen Alpha Patch 4.2.1
+Alpha Patch 4.2.1 has been released to all backers!  Patch should now show: VERSION 4.2.1-PTU.9951003.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Second Life Resource Drive
+- New Mission Type: Ship Escort
+- Wikelo Recipe Updates
+- Executive Ship Component Updates
+- Stanton Space Station Security Forces
+- VOLT Pistol
+## Known Issues
+- PU - Stanton / Pyro - Personal Inventory / Local Inventory / Inventory - While attempting to drop, transfer and/or equip items, there's a chance for it to return to the inventory where it’s from
+- Multivehicle - PU / AC - Vehicles / Weapons / UI / VMA - Vehicle Weapons are not Interactable or Useable (Affects a handful of ships: Mirai Fury Series, Pulse, P-52, Spartan, and Cyclone Series)
+- PU - Vehicle - Naming ships, melting ships, or updating ship packages will delete any non-stock items that are fitted to the ship including paints
+- ARGO ATLS ALL Variants - PU - Mount / Cargo Grid - Argo ATLS can be placed anywhere on the cargo grid without following the SCU grid pattern
+- PU - Pyro / Pyro I - Storm Breaker - Locations / Mission Feature / Physics - Bullets will not pass through the Shuttle Station's entrance curtain when firing outside
+- AEGS Idris-P - PU - Vehicles - Idris shields do not stop any laser weapons except panthers
+- PU - Freight Elevator / Contested Zones (CZ) - CZ Freight Elevator displays Internal Error when attempting to move items to the warehouse
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- PU - Pyro - Courier - Mission Feature / Interactables - There is a chance that delivery packages cannot be placed on delivery shelves
+## Features & Gameplay
+Gameplay
+- Updated Stanton mining asteroid bases with monitored zones
+## Bug Fixes
+- Potential Fix: PU - Cargo / Freight Elevator / Locations - Resource Gathering - After attempting to lower the freight elevator, it does not move and the Freight Kiosk is stuck on "Transferring to Warehouse" (STARC-173387)
+- Potential Fix: PU - Missions - Resource Gathering - Second Life Resource Drive missions missing from contract manager app (STARC-174360) This will also fix many other missions not appearing when they should
+- Potential Fix: PU - Mission - Resource Drive / Recover Cargo - Recovered cargo in the mission is not recognized when the one who accepted the contract abandons the contract and the remaining party member submits it.
+- Potential Fix: PU - Stanton - Resource Gathering - Recover Cargo / Recover Cargo FPS - Mission Content - Mission will not progress to next phase due to multiple drop off locations
+- Potential Fix: PU - Freight Elevator - Internal Error w/ "Failed to read SuperGUID" trace when attempting to move items to the warehouse using freight elevator (STARC-164663)
+- Potential Fix: PU - Missions - Resource Gathering - Missions do not have personal cooldowns after completion
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash

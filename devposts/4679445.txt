@@ -1,0 +1,72 @@
+## Star Citizen Patch 3.16.0
+Alpha Patch 3.16.0 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.16.0-PTU.7904639.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Disabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Gravlev Rework
+- Law system Improvements
+- Atmospheric Bounties
+Known Issues
+- Ships can explode after players exit them
+- There are multiple doors offering only close options, preventing exterior doors being opened (Including Grim HEX Hab doors)
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- Cannot Repair, Refuel, Restock at LEOs
+- Medical bed not healing injury
+- Character's head, mobiGlas, and other equipment are missing after being released from Klescher
+- Bounty hunter mission may stall indefinitely if leaving the area before it updates on a slow server
+- EZHabs in Everus Harbor have no atmosphere and will asphyxiate players with no suit
+- Bed logging on a moon or planet - ship falls through surface
+- There is a high chance selling commodities at admin kiosks will fail
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+- The Emergency Elevators do not send a valid player to the hospital once the Admit Patients UI has been activated, remains stuck on "Checking Availability"
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Weapon will not holster
+## Feature Updates
+Gameplay
+- Gravlev Rework
+Gravlev for hovering vehicles (Nox, Dragonfly, ect.) has been heavily revamped and upgraded to improve the feel of driving along with greatly improved general stability and less glitchiness, and and should greatly improve the general experience of driving all around on hover bikes. This includes major updates to the physics model of the bikes, general stability improvements (i.e. not losing control), added turning, banking, and tilting around, and much faster speeds on bikes. Players can now height adjust how far above the surface they are by holding space to go up or CTRL to go down. Doing this will make hovering vehicles that are closer to the ground go faster with more risk of collision and vehicles higher above the ground slower but with less risk of colliding with ground objects. We've added better powered on and off behavior for gravlev vehicles along with improved dismounting behaviors. Falling from great heights no longer should destroy your bike.
+- Atmospheric Bounties
+The addition of flying bounties in atmosphere to all Stanton (1,2,3,4), allowing the player to now fight AI bounty targets above planetary locations. These can be in areas above Caves, Derelicts, Junksites, Outposts, and UGFs.
+- Law system Improvements
+We've added many additional changes to the law system to help improve it's function in different scenarios.
+Defence of another:  All actors and AI will now see someone going over friendly fire thresholds as hostiles for the length of time they have any hostility toward other actors. This is to address the issue of wanting to defend your innocent friend from an unprovoked attack, but not being able due to you receiving a crime stat as the attacker wasn’t hostile to you. It also means we can remove the crime of Aggravated Vehicular Assault which was only added due to the need to mitigate this issue.
+Reduce the acquisition of low level CrimeStats: We've removed Aggravated Vehicular Assault as this would still be a crime around green zone covered by Armistice Violations as well as  the addition of Defense of another mechanics mentioned above.
+Displaying a victim’s name in infraction notification: This applies to players and any AI with a names. This was to help clear up confusion for players receiving infractions for things like GBH when their victim bled out several seconds after the fact.
+Bounty Hunters being led to trespass zone around prison: Replaced the trespass zones are around prison with the new style and removed the misdemeanor area completely. We have reduced the size of the trespass zones, replaced the misdemeanor area with the new trespass type with warns the player and gets them shot at. The felony trespass area is much smaller, but should keep bounty hunters from camping too close to the prison.
+Criminals should receive a less forgiving friendly-fire allowance: If a player is already a criminal or has an active hostility timer, the friendly-fire allowance is tightened to ensure they don’t keep getting away with the first few shots.
+Missiles and the law: We've made a few changes to missile damage behavior with the law. Firing a locked missile should now max out the friendly-fire hostility duration. Currently locking missile only counts as a “hit”, but it will now render the ship as hostile for as long as a missile is locked. Once the missile is unlocked (without it being fired) it should only add a single “hit”. Fixed an issue that could cause missiles fired at AI to sometimes choose a random friendly target that was close which would cause the player to get an immediate crimestat.
+- Updated rep for Infiltrate and defend missions to not punish on player abandon due to the spawn times
+## Bug Fixes
+- Character Customization should now save changes in the PU when editing appearance
+- Players should now be able to use 'Store' to put Gem Shards or harvestables into their Personal Inventory
+- MFDs should no longer be difficult to interact with due to overriding Inner Thought prompts
+- Items should no longer get in a bad state and highlight as grey instead of green and be unable to update the character loadout and go missing upon logout/login with affected grey highlighted items
+- Minable Rocks should no longer have a small hit box which caused the mining UI to have a hard time tracking the progress of the mining process
+- Players should no longer have the potential to fall through the surface of whatever they're lying on after being revived out of a downed state
+- Capacity UI on equipped armor should no longer appear to be over 100% despite there being not enough items to break capacity
+- Fixed an issue that was causing the main elevators in Grim HEX to duplicate and overlap
+- Fixed an issue causing group bounties to not complete
+- Logging out in a ship bed or crashing, logging in/crash recovery should no longer fail w/ Error 20018, or spawn the ship/player at Stanton star, or return to menu without an error
+- Game should no longer crash after looting an NPC crew member corpse in "Investigate Missing Crew"
+- A Ships Volatile Cargo should no longer suddenly become Critically Unstable
+- The Mining UI should no longer scan deposits every time the Mining Laser is Activated/Deactivated
+- Quantum Traveling towards a party member should no longer cause the player to fly into the planet
+- Moving on hills, stairs, fences, low walls or props should no longer sometimes trip the player, or fling them into the air
+- Player 1 and 2 should no longer lose all control after player 1 attempts to loot player 2's and incapacitated body while player 2 opens inventory
+- Fixed an issue that only allowed players to split one item from a stack at a time
+- Elevator should no longer appear in the entrance to the tram station from the lobby in New Babbage
+- Players should no longer load back into ship beds inside invisible collision after logging out on planet surfaces
+- There should no longer be a high chance for commodity selling to fail at admin kiosks
+- Being knocked unconscious by another player in the escape route in prison should no longer trigger the attempted to escape crime
+- The Argo Raft deck elevator should no longer pop black LODs as it descends from the upper deck
+- Players should no longer encounter deadly wind force reaction when exiting Ship and/or Outpost while carrying a mission crate
+- Fixed an issue causing repair and refuel to not function at outposts
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 4 Server Crashes
+- Backend Service Crash Fix

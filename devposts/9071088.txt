@@ -1,0 +1,41 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12409360
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (reputation speed increase for PTU testing)
+- Wikelo Inventory Updates
+Known Issues
+- PU - Inventory / UI - Double-clicking equippable items failed to equip them to empty equipment slots
+- PU - ORS - Missions / MobiGlas - The mission Deliver Medical Aid are missing on the mobiGlas
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Features & Gameplay
+Performance Update: VFX Texture Streaming
+VFX texture streaming now works correctly, preventing 20ms frame stalls caused by particle textures loading synchronously rather than streaming.
+Along with this, we've added new CVars for advanced users: "r_texturesStreamingVFXDesiredMips" (set in user.cfg, default 2) controls the minimum mip floor for VFX textures, and "e_ParticleTexturePreLoading" (default 0) enables a pre-load pass for VFX effects
+## Bug Fixes & Technical
+- Potential Fix: Hauling missions generating no cargo at the collection point, preventing mission completion
+- Potential Fix: Cargo missing from the freight manager terminal at hauling pickup locations
+- Potential Fix: Double-clicking equippable items in the inventory failing to equip them to empty slots, requiring manual drag and drop
+- Potential Fix: Starmap markers becoming non-interactive after rotating the map by clicking and dragging
+- Potential Fix: Siege of Orison instance object container bounds expanding indefinitely due to AI ships not stopping at the end of their flight path, causing increasing performance degradation over a session
+- Potential Fix: "Deliver Medical Aid" missions were not appearing in the mobiGlas contract manager for Orison Relief Support mission
+- Potential Fix: IKTIs (Argo ATLS mounts) being incorrectly removed by the Hartmoore Platform restricted area during Siege of Orison, preventing players from using them during combat
+- Potential Fix: Siege of Orison Island 2 comms lines for "Deactivate Hartmoore Inverters" triggering in the wrong order
+- Potential Fix: Siege of Orison instance zone events incorrectly emitting into the parent zone's restricted areas, causing unintended triggers outside the instance
+- Potential Fix: Battaglia Story Mission 1 scan area objective not completing after a player died, respawned, and re-streamed into the mission area
+- Potential Fix: Battaglia Story Mission 1 not triggering a mission failure when the Caterpillar or its power plant was destroyed during Phase 2
+- Potential Fix: Wikelo-earned ATLS GEOs and IKTIs not counting as valid mounts for the Collector "Make Jumpy ATLS Shoot" objective; the recipe now uses a base ATLS with additional components
+- Potential Fix: Aegis Hammerhead Nightbreak livery obscuring rear turret visibility due to incorrect material ID on the turret interior glass
+- Potential Fix: Jericho Rocket Pod rockets being invisible with no visible trail or VFX until the moment of impact
+- Potential Fix: Mirai Guardian MX laser damage resistance values not updated to the correct standard following the Vehicle Armor feature introduction, making it incorrectly vulnerable to energy weapons

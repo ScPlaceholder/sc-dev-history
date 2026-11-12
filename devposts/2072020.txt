@@ -1,0 +1,34 @@
+## Star Citizen Patch 3.5.0t
+Alpha Patch 3.5.0t has been released to PTU, and is now available to test!  Patch should now show: PTU-1422079.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- General gameplay
+- Testing AI pilot behavior
+Major Known Issues:
+- No-fly zone autopilot take over is inconsistent.
+- Players arrive at planetary destinations just outside of the trigger for quantum travel points. W/A: Fly forward toward the planet/moon for a moment to trigger the quantum travel points.
+- Certain areas around an outpost can cause the player to get stuck.
+## Feature Updates
+Universe
+- Advertisement, lighting, and signage polish at Area18.
+Ships and Vehicles
+- Reduced thruster heat generation and decreased the overheating window so thrusters are in the overheat window less.
+## Bug Fixes
+- Ships should no longer have extremely high insurance times and expedite fees.
+- Having a player in your vicinity in mining mode should no longer cause others to lose some ship functionality.
+- Item previews should now appear on shopping kiosks.
+- The intro waste disposal mission given by Ruto should now work properly.
+- Prediction updates for pips when targeting AI and player ships to fix some of the jittering.
+- Players should no longer occasionally get leg injuries when walking around Area18.
+- The Starfarer should no longer require a extremely large amount of time to refuel.
+- Additional waves in swarm game modes should no longer occasionally fail to spawn, blocking progress.
+- The 3d radar should no longer occasionally be missing from some ships.
+- Levski terrain should appear correctly when departing.
+- "Legitimate" delivery missions should no longer use abandoned outposts for pickup or dropoff.
+Technical
+- Fixed 2 client crashes.
+- Fixed as server crash.
+- Fixed a server deadlock.

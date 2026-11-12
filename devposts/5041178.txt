@@ -1,0 +1,4 @@
+Almost all games run one (or sometimes more) updates to the world, followed by rendering the updates world, and repeat.
+Some engines however have decoupled the updates from rendering, but to achieve this you need to either predict where objects will be in the future (near impossible) or introduce a significant latency and interpolate (blend) positions between the previous two updates. The latency involved to do this can make games feel sluggish, unless you can update at a high frame rate, but then there would be real gain in decoupling updates and rendering, hence this not really being a mainstream approach.
+Ali Brown
+Director of Graphics Engineering

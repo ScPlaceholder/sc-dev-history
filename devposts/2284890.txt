@@ -1,0 +1,26 @@
+## Star Citizen Patch 3.6.1c
+Alpha Patch 3.6.1c has been released to PTU and is now available to test!  Patch should now show: PTU-2348599.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Ship component fix
+- General gameplay
+Known Issues
+- Vehicles can not be serviced at cities.
+- Players are sometimes able to QT through planets, exploding their ship.
+- Players with spawn point set at Area18 will respawn in the air above the city after dying. W/A: Re-log to spawn properly.
+## Feature Updates
+General
+- Recommended camera modes should appear on the top of the list for FOIP selection menu.
+UI
+- VOIP UI "speaking" notification now ignores players who are out of range.
+## Bug Fixes
+- The Citizencon knife should now have its proper texture.
+- Repair costs should no longer be exceedingly high when degradation is present.
+- Fixed wrong color space in FOIP settings for cameras with more than one color space.
+- Players should no longer see pink or purple graphical issues around ArcCorp if they updated to the latest drivers.
+Technical
+- Fixed a client crash.

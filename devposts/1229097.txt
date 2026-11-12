@@ -1,0 +1,3 @@
+I don't work on Object Containers so take what I'm about to say with a pinch of salt.
+My understanding is that an Object Container is an entity that contains other entities. What makes OCs special is that they are collapsible so we can unload the contents of an OC but keep the OC entity itself in memory. You can think of any large structure in the game (ships and even the solar system) as a hierarchy of OCs. These hierarchies of OCs form the skeletons of these structures and the engine can opt to load or unload the different parts. The skeleton is always there, but the meat on the bones can be stripped back if it isn't needed by a client.
+Possibly that was a bit of a gruesome analogy but I hope it helps get the idea across :slightly_smiling_face:

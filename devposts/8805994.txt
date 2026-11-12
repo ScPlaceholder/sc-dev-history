@@ -1,0 +1,66 @@
+## Star Citizen Alpha Patch 4.8
+Alpha Patch 4.8 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.8.0-PTU.11753569.
+- Audience: Wave 3
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+## Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Mission: Tactical Strike Groups & QV Extraction Stations
+- New Event: Return of Xenothreat
+- Item Recovery: Vehicle Loadouts
+- Command Module
+- Flight Suits & G-Force Resistance
+- Kastak Arms Plasma Grenade
+Known Issues
+Note for tonight: Consider recopying your account if you see strange behavior, like hab spawning instead of hangar on launch to home location, missing items, vehicles retrieved incorrectly
+- Multivehicle - Docking - Keybinds - conflicting keybinds not allowing ship docking to stations
+- PU - Missions - Tutorial - Your First Flight - NPE / UI / ASOP  Terminal - The tutorial vehicle is not present on the ASOP Terminal
+- PU - Vehicles - If the player calls Landing Services in the hangar when in an undocked Command Module the Caterpillar will disappear and the hangar will open as if the player is landing
+- PU - UI - Party connection Playing on repeat after quantum travel after a party member crashes and reconnects
+- PU - Multisystem - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+- PU - Multi-System - Stall / Freeze - Client - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing and using Commodities Kiosks
+- PU - Armor / Clothing / Inventory Rework - "Right Click > Equip" does not function if a paper doll slot is occupied, prevents further inventory interactions
+## Features & Gameplay
+Gameplay
+## Flight Suits & G-Force Tolerances
+What you wear in the cockpit will now have a direct effect on how well your body handles the forces of high-performance flight. Flight suits are purpose-built for this environment and improve your g-force tolerance above the unequipped baseline, letting you sustain tighter maneuvers longer before blacking out. Combat armor works in the opposite direction: it is built for ground engagements and protection, not for sustained high-g flight, and will reduce your g-force tolerance accordingly. This change makes loadout decisions more meaningful for pilots and creates a clearer distinction between gear designed for flying and gear designed for fighting.
+Note: Flightsuits will be added to shops later in the PTU cycle but will also be available as blueprints and TSG looting.
+What Has Changed
+- G-force tolerance is now dynamically calculated based on the clothing and armor worn by the player
+- Flight suits provide a positive g-force resistance modifier, improving your tolerance above the unequipped baseline
+- Combat armor applies a negative modifier, reducing g-force tolerance that increases in increments based on light, medium, heavy types and compared to flying unequipped
+- Undersuits also contribute to the total g-force resistance calculation and are factored into the final value
+- The modifier is distributed across the full armor set, so partial loadouts result in proportionally adjusted tolerance
+- Combat flight suits now provide 15% damage mitigation in addition to their g-force resistance bonus, giving pilots a defensive trade-off when choosing flight gear over combat armor
+- Arena Commander race modes now spawn players in the best available racing flight suit by default, ensuring competitive events start with optimal g-force configuration
+Equipment Tolerance levels
+Higher Tolerances: Racing or Combat Flight Suit
+- Dedicated flight suits are optimized for high-g environments and provide the highest g-force tolerance available. Racing suits are tuned for sustained performance in competition; combat flight suits offer meaningful resistance alongside 15% damage mitigation.
+Baseline: Unequipped (No Armor or Suit)
+- Flying without any armor or suit is the reference point for g-force tolerance. This is similar to the current g-force tolerances pre-4.8. All modifiers are applied relative to this state.
+Reduced: Light or Medium Combat Armor
+- Lighter combat armor loadouts apply a moderate negative modifier to g-force tolerance. Pilots wearing partial or light armor sets will notice reduced resistance compared to flying unequipped, but the impact is less severe than full heavy armor.
+Greatly Reduced: Full Heavy Combat Armor
+- A complete heavy armor loadout represents the lowest g-force tolerance in the system. Heavy armor provides maximum damage protection for ground combat but significantly reduces your ability to sustain high-g maneuvers in a cockpit. Plan your loadout accordingly.
+Weapons & Items
+## New FPS Weapon: Plasma Grenades
+The Kastak Arms Plasma Grenade is the first area-denial grenade in Star Citizen. Unlike fragmentation grenades that deliver a single explosion, the Plasma Grenade detonates repeatedly after landing, unleashing a sustained series of plasma bursts that make the affected zone extremely dangerous to push through. It is designed to hold positions, flush enemies out of cover, and punish opponents who try to advance through a doorway or corridor. Prime it, throw it, and let the grenade do the work.
+Key Mechanics
+- Detonates repeatedly after landing, producing a sustained zone of plasma explosions for several seconds
+- Deals Energy (Plasma) damage with each detonation within a 15-meter effective radius
+- Has no arming time and begins its detonation sequence on a timed fuse after being thrown
+- The grenade can be intercepted and detonated early by enemy fire, so time your throw carefully in contested space
+## Bugfixes & Technical
+Fixed 6 Client Crashes
+Fixed 3 Server Crashes
+- Potential Fix: Multi-System - PU - Actor / FPS / Physics - EVA movement is incredibly difficult or impossible to control - STARC-203430
+- Potential Fix: PU - Missions - A Call to Arms - Neutralization of non-mission spawned criminal AI do not give mission rewards - STARC-202963
+- Potential Fix: Anvil Hornet F7A MK I - PU - Vehicles / Physics -Downwards pitch thrust is inadequate, creating lack of control - STARC-199648
+- Potential Fix: Multivehicle - PU / AC - Vehicles / MFD / Vehicle Components - Switching from SCM to NAV mode turns off engines - STARC-188654
+- Potential Fix: PU - Stanton - Area18 - Locations - Astro Armada's Doorway is inaccessible - STARC-185279
+- Potential Fix: PU - Tactical Strike Group - Missions / AI / UI - Mauler Vanduul Names Placeholder String when scanned or targeted - STARC-203513
+- Potential Fix: Cannot swap MOLE mining heads or modules in VLM or by hand - STARC-203438
+- Potential Fix: PU - Missions - Starmap / Quantum Beacon / UI - Missions have no QT Beacons to route to and objectives do not progress in Shards after the first one  - STARC-203457
+- Potential Fix: PU - Item Recovery - Locations / Vehicles / ASOP Terminal - Stolen AI ships from a mission cannot be detected by the ASOP terminal preventing them from being stored
+- Potential Fix: Multi-System - PU - Refueling Missions - mobiGlas / Mission Content  - Refueling missions for Pyro are available in the mobiGlas in the wrong star systems (not ready for feedback just yet)

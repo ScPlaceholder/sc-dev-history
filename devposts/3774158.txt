@@ -1,0 +1,54 @@
+## Star Citizen Patch 3.12.1
+Alpha Patch 3.12.1 has been released to the PTU, and is now available for all backers to test!   Patch should now show: VERSION 3.12.1-PTU.6873447.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- General Gameplay
+Known Issues
+- Some or all of the player's items that should be kept after a Character / Database reset are lost
+- Player Unable to access mobiGlas after changing armour
+- Being arrested while wearing leg armor causes the player to respawn in prison with a broken multi-tool
+- Attempting to sell minerals at a Prison Kiosk results in a Processing screen and then a transaction failed message
+## Feature Updates
+Locations
+- Removed Delamar from the Stanton System
+Gameplay
+- EVA QOL updates
+Made improvements to how live ragdoll physics are handled and greatly increased the angular acceleration of the thruster packs in EVA
+- Polish pass on names and location descriptions of various bounty missions and Northrock PVP Bounty Missions
+- Temporarily removed patrol missions
+- Reduced starting inventory levels of multiple commodities at TDDs to prevent their inventory from being constantly maxed out
+- Increased shop inventory of medpens, oxycans, and ammo magazines
+## Major Bug Fixes
+- Fixed an issue causing the fuel intakes on the Star Runner to scoop less than intended amounts of hydrogen fuel
+- Fixed an issue that could cause a players ship to enter a state where it cannot be Retrieved
+- Fixed an issue causing the claim function to not be available at ASOP terminals
+- Shields should no longer be able to be penetrated by laser scattergun weapons such as the Dominance
+- Multiple FPS weapons should no longer be missing collision on the front of their barrels which allowed them to shoot through walls/ships
+- Fixed a server fps issue causing enemy fighters to change direction instantly and have unnatural behaviors
+- Items Dropped or Placed by a Player should no longer sometimes immediately disappear
+- Fixed an issue causing turrets to not spawn for claimjumper missions
+- Turrets should now be hostile in lawful Claimjumpers missions
+- Bounty targets should no longer take a long time to spawn once the location has been reached
+- Players should no longer be able to clip through the hull of the Idris to steal it
+- The mission named " A Very Difficult Task " should no longer automatically complete when accepted
+- Increased the pay-out to the intended amount of 45000 aUEC for successfully completing the Capture Arlington Gang Leader Maltrox Arlington mission.
+- When a second player arrives at the bounty location without the mission the objective marker should no longer read last known location for a brief moment
+- Fixed an issue causing more than intended reinforcements to sometimes spawn for easy bounty hunting missions
+- Fixed an issue where reinforcement ships on easy bounties could sometimes spawn harder than intended ships
+- Fixed an issue that made wheeled vehicles to easy to get stuck on their side.
+- Fixed an issue causing weapon raise not to work near objects while in EVA
+- Andromeda Landing gear deploy animation should now fully play
+- Players should now be able to use the interaction system to power on the Nox
+- Players should no longer be able to Duplicate Mined Gems Infinitely
+- Fixed an issue causing players to not be able to Exit Ground Vehicle Remote Turrets by using interaction mode
+- There should no longer be a chance that no audio or video will go through on a call from a player who is on a planet surface
+## Technical
+- Fixed 13 Client crashes
+- Fixed 9 Server crashes

@@ -1,0 +1,95 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12311913
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+Known Issues
+- Multivehicle - PU - Quantum Marker / UI / Vehicle HUD - Quantum beacon markers are misplaced to the top left corner of the screen: Workaround for tonight enable 3d markers: CVAR "ui_markers.enabled_3d = 1"
+- PU - Stanton - Siege of Orison - UI / Interactables - Engine Room airlock doors cannot be interacted with again after closing if it was opened the first time
+- PU - Stanton - Siege of Orison - Missions / Instancing - There is a chance that the force field gate with the "STANDBY" label at Overworld will not open
+- PU - Nyx - Battaglia - Repeatables - Mission Content / AI / Narrative / Dialogue - Battaglia does not go through generic flow of Repeatable missions if they are available to the player (currently blocks mission 3)
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+- PU - ATLS IKTI - IKTI is missing crosshair
+## Features & Gameplay
+Additional Updates
+- Medic gun effective healing range increased from 1.5 meters to 2.5 meters
+## Technical & Bugfixes
+- Fixed 13 Client Crashes
+- Fixed 2 Mainthread Deadlocks
+- Performance Optimizations for Levski
+Missions & Economy
+- Potential Fix: Freight elevators no longer incorrectly show an exceeding capacity message when cargo is under the freight limit
+- Potential Fix: Hangar doors now open correctly for the escort ship during ship battle missions
+- Potential Fix: Players can no longer enter and fly the pirate Cutlass Black during Battaglia's repeatable missions
+- Potential Fix: Repeatable missions from Battaglia now repopulate more quickly after completion
+- Potential Fix: Corrected duplicate fuel tank listings showing different prices for identical stats in shop terminals
+- Potential Fix: Industrial resource gathering missions now complete correctly when any party member delivers the item to the Freight Elevator, not just the party leader
+- Potential Fix: The Refuel Request mission now correctly progresses after reaching the beacon marker
+- Potential Fix: Corrected the Data Decryptor Terminal incorrectly showing all data as processed during the smuggler intel mission
+- Potential Fix: Vanduul fighters now correctly spawn on arrival during the Tactical Strike Group assist mission
+- Potential Fix: The Nyx variant of the Bombing Run mission now correctly appears in mobiGlas
+- Potential Fix: Restored visibility of the Central Hub door panel at the Tactical Strike Group location
+- Potential Fix: The access card is now correctly returned to the player after inserting the Hard Drive during the Download Data repeatable mission
+- Potential Fix: Docking no longer shows an erroneous Error message after completing a refueling mission
+- Potential Fix: The escort ship now correctly appears after neutralizing hostiles during Escort Ships missions
+- Potential Fix: Fixed freight elevators becoming stuck with doors closed and unable to raise or lower
+- Potential Fix: Fixed a contract generation error affecting the Orison Relief Support small hauling contract
+- Potential Fix: The escorted ship in Ship Battles V2 missions now properly leaves after hostiles are neutralized
+- Potential Fix: Registered ATLS vehicles now correctly count toward Wikelo IKTI and GEO IKTI mission objectives
+- Potential Fix: Ore Pods now correctly brick after the first insurance claim following a snapshot
+- Potential Fix: Foxwell and Headhunter ship battle missions now award reputation to the correct scope
+- Potential Fix: Refueling mission AI now correctly accepts the player's docking request
+- Potential Fix: QV Warehouse loot now correctly respawns or resets if looted without progressing the mission
+- Potential Fix: Hostiles now correctly spawn for the Eliminate All mission at the Colonial XS Outpost in Pyro
+- Potential Fix: Fixed party members on different servers getting blocked from abandoning shared missions they weren't meant to receive
+- Potential Fix: Fixed refuel beacons incorrectly reporting Transaction Failed despite fuel being delivered successfully
+- Potential Fix: The People's Alliance Idris now correctly repairs player vehicles during the Tactical Strike Group mission
+- Potential Fix: The Command Module no longer incorrectly enters a claim state after editing its loadout in the VMA
+- Potential Fix: Fixed the Highpoint Wilderness Specialists intro mission remaining stuck as accepted despite completed objectives
+- Potential Fix: Shooting a refueling target now correctly fails the mission
+- Potential Fix: The Full Strike mission at Tactical Strike Group no longer gets stuck at the Go To objective
+- Potential Fix: Fixed Claim Mode being unavailable at a player's home location
+- Potential Fix: The Board Ship repeatable contract now correctly appears and can be accepted
+Ships & Vehicles
+- Potential Fix: Fixed a floating card visual on the Hull A
+- Potential Fix: Corrected a spelling error in the RSI Aurora Mk I MR's Disco livery name
+- Potential Fix: Mining modules can now be equipped to the Drake Golem's mining loadout
+- Potential Fix: Restored a missing thruster particle effect on the Grey's Basher
+- Potential Fix: Nose and ball-mounted vehicle weapons no longer lose their barrels after an insurance claim
+- Potential Fix: Addressed vehicle balance tuning that had deteriorated across several ships over time
+- Potential Fix: Restored the missing back ramp and ramp panels on the Crusader Hercules Starlifter (all variants)
+- Potential Fix: Restored invisible power pips for Shields, Quantum, Tractor Beams, and Coolers on the Railen and Tyilui MFDs
+- Potential Fix: The Tumbril Storm now correctly appears in the ASOP terminal
+- Potential Fix: Fixed vehicles with shot-off parts getting stuck in infinite repair processing
+- Potential Fix: Fixed a spot where players could fall out of the Gatac Tyilui by walking into the bottom of the cockpit glass
+- Potential Fix: Fixed an issue where initiating a new docking request during an active procedure could detach the command module while it retained full control
+- Potential Fix: The Drake Ironclad no longer loses collision on its pilot and command module after an SMP undock
+- Potential Fix: Vehicle items on the Drake Ironclad no longer go offline after redocking following a power cycle during undock
+- Potential Fix: Fixed missing interaction states preventing entry into the Hammerhead and Tiburon via elevators or cargo bay
+- Potential Fix: The tractor beam no longer incorrectly grabs the Greycat ROC itself when trying to remove its Ore Pods
+- Potential Fix: Bricked Ore Pods no longer remain fully functional
+- Potential Fix: Fixed an issue where ship control inputs could stop registering entirely
+- Potential Fix: Removed a collision volume blocking the roof access ladder on the Drake Ironclad series
+- Potential Fix: Items no longer lose collision and drift away when placed at the RSI Polaris's cargo lift
+- Potential Fix: Removed an invisible collision wall in the first cargo module of the Drake Caterpillar series
+- Potential Fix: Fixed external fuel pods on the MISC Starfarer stopping fuel acceptance after repeated transactions at the same station
+- Potential Fix: Repair services no longer fail outright when a fuse is missing during the process
+- Potential Fix: Subsequent docking attempts between two refueling vehicles no longer fail after the first successful one
+- Potential Fix: Fixed being unable to allocate MFD power after storing and retrieving a ship with a Command Module
+- Potential Fix: Fixed being unable to exit the pilot seat of the Argo MPUV Tractor via hotkey or the PIT wheel
+- Potential Fix: Docked vehicles with a Command Module now correctly thrust to stay in place
+- Potential Fix: The MISC Starfarer's boom nozzle no longer auto-retracts when entering the captain seat
+- Potential Fix: Fuel pods no longer require a specific orientation to attach to ships
+- Potential Fix: Corrected mislabeled utility turrets on the Argo MOTH in the Vehicle Loadout Manager
+- Potential Fix: Fixed sections of the Drake Ironclad (all variants) lacking breathable air
+- Potential Fix: External fuel tanks on the MISC Starfarer can no longer be detached via console without first unlocking the item ports
+- Potential Fix: Fixed being unable to restock countermeasures, ammunition, and missiles via the landing tab
+- Potential Fix: Fixed the Retrieve button staying greyed out after exiting to menu mid-animation
+- Potential Fix: Fixed hab room doors on the Railen and Tyilui snapping shut unnaturally when approached mid-close
+- Potential Fix: Module is missing from F7CM/F7CM Heart seeker in VMA not allowing Hornet special varipuck mount or other top turrets to be equipped or removed

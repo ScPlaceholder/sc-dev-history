@@ -1,0 +1,53 @@
+## Star Citizen Alpha Patch 4.0.2
+Alpha Patch 4.0.2 has been released onto the PTU environment!  Launcher should now show: VERSION 4.0.2-PTU.9521869.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: PTU Channel - US Servers Only
+Audience: All Backers
+Long Term Persistence: Enabled
+Mesh Configuration: 5:5:600
+Hangar Spawning: Disabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+4.0.2 Release Goals
+The 4.0.2 release is highly focused on 3 key points to improve and fix as many top key gameplay issues as possible, improve connectivity/stability, and begin the latest Supply or Die Pyro Event.
+Contested Zone Keycards not persisting in LTP has been resolved but will most likely not take into effect until releases after 4.0.2 is LIVE.
+- Stability, Performance, and Bugfix Testing
+- Elevator Behavior (We have been rolling in many updates since the start of 4.0.2 PTU. Please let us know how the overall experience compared to 4.0.1 is!)
+- Courier Missions in Pyro
+- Supply or Die Event
+## Known Issues
+- Blocker: PU - Transit/Elevators - Elevators are present but panel buttons stop functioning
+- Blocker: PU - Stanton - Area18 / New Babbage - Locations / Collisions / Transit - Transit in some Landing Zones have no collision, causing players to fall through the transit floor
+- Blocker: Mission Refactor - PVP Missions dont work
+- Blocker: Mission Refactor - Comm Array Repair - Contract in mobiGlas becomes hidden when another player enters mission location
+- Blocker: PU - Kopions - Mission Content / mobiGlas / Creatures - Kopion related missions are not displaying in Contracts
+- Critical: MISC Starfarer ( All Variants ) - PU - Vehicles / Vehicle Feature - Payment can not be accepted to begin the refueling process
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Mission Refactor - NPE - Multiple Locations - Missions / UI / mobiGlas - Mission stops progressing after landing in hangar
+- Critical: PU - Inventory - Storage Access/Interactables - Storing items from the actor to the Storage Access interface will drop the items and make them lose interactions
+- Critical: Multivehicle - PU - Vehicles / Components / Weapons - Ship Weapons are sometimes not firing
+## Features & Gameplay
+- Gameplay
+- Enabled Courier Missions in Pyro System
+- Ships and Vehicles
+- Flight Markers: Better sorting of essential markers and prioritizing ones closer to center screen
+- Added new ship compass with performance improvements
+- Restricted Heartseeker Weapon and Gimbal to only work on the Heartseeker mount
+## Bug Fixes
+- Possibly Fixed: PU - Stuck in the Queue position 1 and not entering the server/loading (STARC-154900)
+- Possibly Fixed: PU - Stanton / Pyro - Starmap / mobiGlas / UI - There's a chance for the Starmap's search bar and buttons to be difficult to be interacted with while using a mouse (STARC-156485)
+- Possibly Fixed: PU - Stanton / Pyro - UI / Vehicles - Quantum Travel Nav Markers become invisible (STARC-154029)
+- Possibly Fixed: Multivehicle - PU - Vehicles / HUD - pitch ladder/altimeter significantly reduces client performance (STARC-153193)
+- Possibly Fixed: PU - Pyro - Depots - Locations / Core Tech / AI - NavLinks on the crates allow AI to lose collision with the Depot buildings and fall through the world
+- Possibly Fixed: PU - Pyro - Depots - Locations / AI - AI walk over the fires and die at Depot locations
+- Possibly Fixed: MISC Starfarer ( All Variants ) - PU - Vehicles / Vehicle Feature - Payment can not be accepted to begin the refueling process
+- Possibly Fixed: Mirai Pulse - PU - Vehicles / Art - Pulse weapon does not wear
+- Possibly Fixed: AC - Scoring - Pilot & Crewmember Assist Bonus - AI - Enemies destroyed by vehicle PDCs do no count towards any kills, assists or score
+- Possibly Fixed: RSI Constellation Taurus - PU - Vehicles / Ladder / Stuck / Collision - Climbing up the front ladder in the Cargo Bay will cause the player to fall through the floor at the top of the ladder and get stuck (STARC-156952)
+- Possibly Fixed: PU - Pyro - Multilocation - Freight Manager - The freight elevators gets an error message "ELEVATOR OVERLOADED" when moving SCU boxes of Detatrine (STARC-156577)
+- Possibly Fixed: PU - UI / Comms - Visor / Lens - Chat allows multiple subsequent spaces and allows typing channel names (STARC-154089)
+- Possibly Fixed: PU - Pyro - Firesale - Depots - Locations - User becomes stuck after riding the freight elevator down at the Depots
+## Technical
+- Fixed 3 Server Crashes
+- Fixed a Hybrid Crash

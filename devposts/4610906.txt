@@ -1,0 +1,8 @@
+Hi,
+An engine programmer may be able to give a better answer, but I’m reasonably sure we don’t have any systems that “reserve“ ram,  but there are several potential explanations:
+1. It’s possible/likely the “commit size” might be the same in both scenarios (over 16GB), which is the memory the applications has allocated/needs, but the “working set” (what is allocated in physical RAM) will necessarily be lower on the system which can’t fit it all in RAM and needs to resort to using the system’s page file (hard disk).
+2. There may be caching systems in the OS or other DLLs to save file contents in RAM to avoid the cost of future file loads, but these systems won’t do so when there is no memory available.
+3. Differences in GPU or driver will result in different memory usage
+4. Different video resolutions and graphics setting will cause different amounts of textures and other data to be loaded in RAM (not just video memory).
+Ali Brown
+Director of Graphics Engineering

@@ -1,0 +1,68 @@
+Game Systems:
+Arena Commander
+- The size of Pickups (repair/refuel/reload) in Arena Commander should now scale based on distance from player, rather then distance of the camera.
+- Fixed an issue where the characters head would disappear after their ship was destroyed.
+- Stage cameras for Spectate mode in Arena Commander maps should now be correctly accessible.
+- Fixed an issue where players in Arena Commander games could not go into the negatives on their score.
+- Fixed an issue where ships damaged or killed via missiles were granting excessive score.
+- Audio cues have been added for collecting pickups in Squadron Battle.
+- Fixed a number of shader issues in Old Vanderval that would trigger screen tearing before the first checkpoint.
+- Removed the invincible antenna that protruded from buildings into the primary race routes on all tracks.
+- Pirate and Vanduul Swarm*
+- Fixed an issue where a second Warlord would sometimes spawn in Vanduul Swarm after Wave 3.
+- Fixed some issues with the Vanduul Swarm AI flying into the map boundary too often.
+- Pirate Gladiator's in Pirate Swarm now have the correct paint job.
+- Fixed an issue where the kill feed in Pirate Swarm would sometimes show the same kill twice.
+- Fixed the naming and numbering conventions for the AI pilots in Pirate Swarm.
+- Fixed an issue where completing Pirate Swarm, Wave 18 would give the "defeat" message.
+- The UI for the Arena Commander Loadout customization has received a polish pass to clean up minor visual style problems and ensure consistent behavior.
+Star Marine
+- Fixed an issue in OP Station Demien where external audio could be heard in the Mess Hall.
+- The audio from grenade impact collision has been made much more audible.
+- The audio for grenade hold (the cooking beep) has a shorter range.
+- Made a number of tweaks to footstep audio in both Echo Eleven and OP Station Demien.
+- Fixed an issue where player death audio would play twice while in third-person camera view.
+- Fixed an issue where the "Respawning" audio would play too soon.
+- Star Marine simulation voices should now be correctly adjusted by the announcer audio option in game menus.
+- Fixed an issue where the audio in multiplayer matches would become corrupted in very large firefights.
+- Made many small audio tweaks throughout OP Station Demien.
+- Idle audio for the MediPen dispensers in Echo Eleven have been added to match those on OP Station Demien.
+- Fixed a number of dialog cues for the announcer when a match ends in a draw.
+- Fixed an issue where dead players could sometimes continue capturing a point in Last Stand.
+- Fixed an issue where the explosive canisters in OP Station Demien and Echo Eleven would fall through the map after exploding.
+- Fixed an issue where a match would go into a fourth round if one round in Last Stand had ended in a draw, even if the other two rounds had been won by the same team.
+- Made some changes to the death camera in Star Marine to prevent instances of the camera going through collision or the player body.
+- Fixed a number of small collision issues with props around OP Station Demien.
+- Fixed an issue where the light sources on Echo Eleven would sometimes follow players around in EVA.
+- Fixed some issues with projectile bounce and ricochet in Echo Eleven.
+- Many cosmetic art updates and tweaks have been made to OP Station Demien and Echo Eleven.
+- Fixed an issue where the radar and weapon sights would not reappear after respawn in Star Marine.
+- Fixed an issue where the loadout customization would sometimes lock players out from entering a Private match.
+- Fixed an issue where all the weapon images were missing scopes in loadout customization.
+- Fixed an issue where players could quickly toggle between teams and end up in the loadout of the opposite team.
+- Fixed an issue where players could acquire 2 or more primary weapons on a Light loadout if the drop action was interrupted prematurely.
+- The Star Marine models in the loadout editor now move and scale more appropriately for the screen resolution.
+- Fixed an issue where the scoreboard would remember the number of kills between rounds, allowing players to get a revenge kill at the start of a round.
+- Players will now be correctly penalized for suicide, even if they have recently been damaged by an enemy.
+- UI notifications for control points having been taken or lost in Last Stand are much more prominent.
+- Score notifications now appear when a character suicides.
+- Made the friendly/hostile player indicator (known colloquially as "The Dorito") less immediately visible, and fixed a number of issues where the indicator for Hostile players was visible despite no line of sight.
+- Grenade indicator now appears as soon as a nearby grenade is armed, not just when it is thrown.
+- Players who are dead at the end of a round will now be able to correctly see the results and scoreboard.
+- Fixed an issue where grenades were missing from Visor HUDs.
+Social Module
+- Parties formed for private Star Marine and Arena Commander matches should now persist match-to-match rather then break up after a single match.
+- Chat will now work correctly inside of Arena Commander and Star Marine lobbies.
+- Fixed an issue where all contacts would appear as "Online" inside of a Star Marine lobby, regardless of their actual status.
+- Fixed an issue where players could talk or type in the chat window even when it appeared disabled and hidden.
+- This caused a number of issues with players loosing control of their characters during the match.
+- Fixed an issue where the /addignore would not correctly ignore tells from the ignored player.
+- Fixed an issue where accepting a party invite to a Star Marine or Arena Commander match would not correctly pull the player from PU or Hangar.
+- Fixed an issue where players could not accept or decline a game invite while on the Arena Commander loadout editor screen.
+Ships:
+- Some ships had unlimited and near-instant acceleration in decoupled mode. This has been fixed.
+- Fixed an issue where the Rattler missile would fail to deploy rockets.
+- Fixed an issue where players would hear the ship start up audio on respawn, if they died while piloting the Sabre Comet, Gladius Valiant, Hornet Wildfire, or Avenger Titan Renegade.
+- Fixed an issue where the self-destruct audio siren would sometimes not trigger.
+- Fixed an issue where the look reticle would incorrectly reappear after cycling cameras, even if gimbal lock was active.
+- Made some tweaks to the audio for shield activation and deactivation.
