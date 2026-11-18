@@ -1,0 +1,32 @@
+## Star Citizen Patch 3.12.0o
+Alpha Patch 3.12.0o has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.12.0-PTU.673529.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Server Player Cap: 50
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Volunteer Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-12-0n
+Testing Focus
+- General Gameplay and stability
+Known Issues
+- Selling commodities from personal Inventory at Area18 causes a service error
+- Player is unable to activate mining consumables (Workaround: Toggling scan mode allows consumables to be used)
+Workaround: Using the consumables from a different player in the mining seats will work. If you are working alone with the Mole and leave the pilot seat to use a turret, toggling scan mode will help force consumables to work.
+- When logging into some commodity and refinery kiosks, they can display incorrect Commodity Information and Prevent Sales
+Workaround: Try other trade terminals at a different location. Test relogging and trying again.
+- Ship canopy will open and close randomly without input
+- Player eyes are extra reflective in video
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool
+- Visor Comms UI will not update sometimes and will appear as if the video call is not working or is frozen
+- Collisions in EVA spin the player wildly
+- Airlocks consistently stay at 0 atmospheres and do not change when transitioning inside/outside the outpost
+## Bug Fixes
+- Fixed an issue that allowed players to claim the same refining job multiple times with the same materials
+- Fixed an issue causing Arena Commander and Star Marine UI to be offset on widescreen monitors
+## Technical
+- Fixed 1 Client crash
+- Fixed 1 Server crash

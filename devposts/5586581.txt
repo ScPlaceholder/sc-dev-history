@@ -1,0 +1,9 @@
+Heyho!
+First things first: The server performance does not impact the client performance in any way. This is merely a myth.
+As many times said we do have a system in place which gathers all used shader combinations on a remote server.
+The next time we create a new build all used shader combinations are compiled and bundled up into the data.p4k file which we call the shadercache.
+In game if the engine requests a shader it looks for it in the shadercache.
+Only if it's not in there it will start a local compilation which can take up to several seconds in certain cases.
+Note that this is done on a background thread with low prio to minimize stalls, but i've seen it affecting framerate quite a bit since it keeps lots of cores busy depending on how many shaders you compile.
+That being said, on a live build there aren't many local compilations if at all.
+If i remember correctly you should see it even in the console output if a shader was compiled locally (not sure if its active in a release build).

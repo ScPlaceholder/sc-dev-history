@@ -1,0 +1,299 @@
+# Inside Star Citizen:  Dev Diary - Server Meshing
+# https://www.youtube.com/watch?v=pCPaSkcK3mM
+[    1.9] The Core Technology Group, a bunch of big brains found in all five of our studios,
+[    8.0] these are the folks that have been working to expand Star Citizen beyond the limitations of the traditional client server model.
+[   16.4] To distribute what would have been the work of a single server across many.
+[   21.6] This work has many parts, but the collective name for all the technologies that allow this to happen, we call simply
+[   29.7] Server Meshing.
+[   32.0] Beginning late last year, the newly created tech preview channel was used for a series of tests.
+[   39.2] And while the work of Server Meshing is that of our entire development staff,
+[   44.0] toiling in concert with the Core Technology Group,
+[   47.2] we asked members of the small but dedicated UK networking team to speak on their behalf.
+[   54.3] This is Dev Diary Server Meshing.
+[   57.9] Yeah, there was a nerve-wracking one for us because it was the first time, you know, going out public with such a big fundamental change
+[   78.9] for how we run the game.
+[   80.6] Replication layer network codes split out from the dedicated game server running in its own
+[   86.3] service we call the Hybrid Service.
+[   88.0] So these tests are not just for us in Cortec.
+[   91.3] These are also for the game side as well, so they can actually see their systems functioning along with Server Meshing.
+[   97.1] It's kind of one cohesive whole.
+[   98.9] That was the first time trying to deploy that kind of environment, which is
+[  103.2] radically different from what we've had to do before.
+[  105.2] One of the major purposes of tech preview is to expose the game to a much wider audience so that the rest of the development team
+[  113.8] can see more of their work exposed, really help us pick up on all the little corner and edge cases that we don't necessarily
+[  121.1] spot if we only have a hand pool of people testing.
+[  123.7] So it's really good to, you know, have other development teams look at the tech from, you know,
+[  128.5] a development perspective and on a live environment as well.
+[  132.3] In Alpha 318, we introduced the replication layer, our first major milestone towards server meshing.
+[  140.0] It offloaded the entire state of the universe, things like characters, ships, weapons and more away from the game server,
+[  147.5] which we call the DGS.
+[  149.5] It wasn't the smoothest process.
+[  152.8] But the work of splitting the replication layer to be shared between the client and DGS into a new hybrid service still needed to be done.
+[  161.7] As was testing of a brand new server crash recovery system that was long overdue.
+[  168.0] These would be the focus of our first two tech preview tests.
+[  172.0] And everyone was excited to learn everything we could with help from the community.
+[  177.5] Basically, we landed it worked.
+[  179.3] Went surprisingly well for us.
+[  181.0] Yeah, it was great fun.
+[  181.9] Yeah, good job.
+[  182.9] It works.
+[  184.6] We learned that, yeah, the technology was working kind of as we expected.
+[  189.0] It was like surprising how well it actually worked.
+[  192.3] For the backers, the major change that they would have observed through these tests was the improvement for server crash recovery.
+[  198.1] So the first outing with server crash recovery, we were talking 25, 30 minute recovery times,
+[  204.6] frequent crashes all over the place.
+[  206.7] It's almost like we're pulling the tablecloth out from underneath everybody at once.
+[  211.6] So it requires people to make some interesting considerations and kind of chimney that tablecloth back underneath with the with the new server.
+[  220.9] If the server crashes, the game state still survives.
+[  224.2] We can spin up another server and when it connects again, the new server connects again.
+[  228.4] It can get all the game state back and clients can continue on their merry way.
+[  232.1] Basically server meshing for game code all at once in like one big giant transition.
+[  237.0] But I think by the time we were getting to this second and third tests,
+[  240.3] we're starting to see things dramatically quicker, dramatically more reliable.
+[  245.5] Yeah, I think I was probably expecting it to explode.
+[  250.4] Yeah, pretty hard.
+[  251.8] But we were surprised that the game code worked as well as it did without needing changes.
+[  256.7] Backers have a way of finding and breaking, breaking things.
+[  261.5] So having a good few hours testing in backers hands in a more or less real world environment was incredibly valuable.
+[  269.9] Of course, this is still game development.
+[  273.0] And these were tests, not just for the core technology group, but for every other dev team to see just how much work they still had ahead of them.
+[  282.7] Work that continues today, adapting all of Star Citizen's various game systems to the realities of server meshing.
+[  290.3] We found that there were some gameplay systems that weren't quite ready for server crash recovery.
+[  295.5] There were some issues when server crashes and one takes its place.
+[  299.5] So that kind of allowed us to kind of create a bunch of bugs and send them out to various gameplay teams.
+[  305.5] What's cyclical crashing?
+[  306.9] Basically when the server then tries to recover, start back up, it would then deserialize the state that we had stored previously.
+[  313.7] And the state itself was corrupt, so it would just crash and it would just keep trying.
+[  319.2] Pretty annoying. A lot of people were like, ah, this, you know, let's turn off server crash recovery.
+[  324.3] That's the problem when, actually, no, it wasn't the problem.
+[  327.6] It was just the state it was in.
+[  329.4] When it is working, it works very well.
+[  332.7] Star Citizen is a large, complex game.
+[  334.9] Every little bit of it across CoreTech and the actual game system has to function perfectly for server meshing to work.
+[  341.3] The test allowed us to point to parts of the code where things didn't function so we could go back to the game teams and say,
+[  346.9] you need to go back and you need to rework this particular system.
+[  349.5] Being able to allow the replication layer to kind of soak is kind of how we were able to get it from basically having things work for the first time to a production-ready product.
+[  362.4] Making sure that we were in a good state so that we could progress with the next set of tech preview tests.
+[  367.2] It had worked twice now?
+[  368.6] Yes, yeah, the overconfidence was starting to grow, yes.
+[  375.2] With two successful trials in the can, the team broke for the holidays.
+[  379.9] Returning in January with more tests, more fixes, more bugs to discover, and even improvements to the very manner in which we collected and analyzed data itself.
+[  393.9] At this point now, it's not only about just getting sort of a crash recovery working,
+[  399.5] but we're really starting to see changes come in from the game teams for the various systems that interact with it.
+[  405.3] So from those early tests, people would have seen a loss of state for certain systems or things that just didn't recover well.
+[  413.3] If you ended up in a weird condition where, let's just say, you were in the middle of respawning during a server crash.
+[  419.9] This has been, we were noticing a lot of major spikes and a player tries to interact with a door or a ship or tries to pick up something.
+[  427.3] They could be waiting several minutes for something to actually happen.
+[  431.1] But then it was also other game code as well, other teams sending sort of serialized variables and messages across the network.
+[  436.9] And some of them were being sent twice, which I'll say is not ideal because if we're sending messages twice, we only need to send it once.
+[  443.7] Then we've got two messages being sent, which is the backlog or the queue, which is going to get busier a lot quicker.
+[  449.4] So between now and then, data, analytics, metrics, making sure that the development team had the information that they need when they request it as well.
+[  457.6] And having our backend dashboard set up so information is correct and not incorrect because we don't want to provide incorrect results.
+[  464.4] We're starting to see fixes for those kind of strange cases start to come in.
+[  467.6] So the overall experience at this point now would have been much more solid.
+[  473.9] At this point, after a series of necessary wins and a reconfiguration of our analytics dashboard,
+[  480.6] with clients and servers now both connecting to the hybrid service,
+[  485.0] ready to put an end to the DGS crashes causing players to get disconnected,
+[  490.3] it was time to move to the next major milestone.
+[  494.3] Testing configurations of multiple DGSs connected to the same hybrid service,
+[  500.7] or put simply, our first true server mesh.
+[  505.2] The next milestone in our tech preview tested was February 29th,
+[  510.6] which was the first time that we attempted to have two solar systems running on two DGSs connected to the same hybrid service.
+[  521.5] And clients basically able to connect through them, choose which solar system they wanted to play in and go and play.
+[  527.6] So this one was the big surprise.
+[  529.5] So we're really excited to finally get multiple DGSs and multiple solar systems out there into the hands of the backers for testing.
+[  536.7] And also this was a huge milestone for the platform teams,
+[  541.0] because it's their first time having to deploy a full-on server mesh with multiple DGSs out to our live environment.
+[  548.1] That was a super exciting test.
+[  549.8] We still had the single hybrid, which for us, having a single hybrid manage the state of multiple servers was a huge, huge milestone.
+[  559.7] And with those, there may have been some bugs, some interestingness.
+[  565.0] Being able to see crash recovery actually occur and then succeed on the Pyro server,
+[  570.6] really proved to us that we were getting to that milestone point.
+[  575.3] We had tried it internally first, but with the tech previews, it tends to be pretty hot.
+[  580.5] What you see is the build that we've created the day before.
+[  584.6] It's kind of a bit of a wing in a prior to hope it's actually going to work.
+[  588.4] We got a lot of data rather than our performance, and it all seems to be holding up pretty well.
+[  592.4] It keeps saying surprisingly well.
+[  594.1] Were you expecting this to just fall in its face?
+[  596.9] Yes, I've been working in games a long time, and for things to work first time is very unusual.
+[  605.0] So yeah, I was fully expecting something to explode and for us to have to patch something up.
+[  611.4] There's a little bit of anxiety, I feel, with teams that this could...
+[  616.0] We'd never tried anything quite like this before, and the tech might not actually cope with it.
+[  620.1] And then we might have to cancel the test.
+[  622.0] Things thankfully went really, really, really well.
+[  624.5] Generally speaking, when we test and serve matching stuff out,
+[  627.0] it's tender to behave better than people expected at the time.
+[  630.1] So yeah, we've kind of gotten lucky with some of this stuff.
+[  633.0] However, as awesome as it was to finally see two star systems running on the same DGS,
+[  640.1] there was still one last-minute disappointment for every member of the team.
+[  645.6] Unfortunately, we had a last-minute issue with the jump points
+[  649.5] that meant they weren't quite going to make it for that test.
+[  652.3] Originally, we were trying to make it so that the jump gates were functional.
+[  656.7] And you could have done cell system transitions via the jump gates.
+[  660.4] We didn't manage to make that in time.
+[  662.6] I remember being very upset at the jump points that said not to work at the last minute.
+[  666.0] But there was an issue with the jump points where if someone used it,
+[  669.8] the radius to pulling people from the server to go to Pyro was essentially the size of the universe.
+[  677.3] So if you used the jump point, everyone in Stanton was going to Pyro,
+[  682.3] whether they wanted to or not.
+[  686.1] And so how did you enforce people not using it?
+[  689.6] I don't have to remember. I just think it was just said no, don't.
+[  693.5] And the people behaved?
+[  695.3] If I remember, only one person tried it and it broke, so it didn't nothing happen, which...
+[  701.9] very lucky.
+[  704.3] And then, only a week later, on March 7th,
+[  707.7] the first successful test of a jump point assisted server transition occurred.
+[  713.5] For us in the UK, the tech preview releases tend to go out like 11 midnight kind of time.
+[  720.9] And I stayed up and hopped on to kind of give it a look and the excitement that we had
+[  728.1] from being able to actually see us, like thousands of players in a queue,
+[  733.7] jump through the jump points.
+[  735.3] And for things to work with minimal issues is a very exciting time for us.
+[  739.9] Set by the Pyro Jumpgate, watching the first backers come through from Stanton,
+[  745.9] myself a whole bunch of the team were online watching that happen.
+[  750.4] Amazing to see it, kind of culmination of years of work by dozens of teams and hundreds of people.
+[  757.0] I remember being really happy because everyone was thrilled.
+[  760.5] All the backers were really thrilled that they actually saw it themselves.
+[  765.2] I remember the players going through the gate and smashing into each other on the other side.
+[  774.4] They would just come out of the gate and somebody would be parked there from having just come through.
+[  779.0] They would crash into each other.
+[  781.3] They would spin out. It was really funny.
+[  783.8] Yeah, it was pretty great.
+[  786.4] Having people actually be able to do it, something they'd been waiting for for.
+[  790.7] God knows how long.
+[  791.7] Seeing people actually use the jump case for the first time, that was really exciting.
+[  796.1] That I think brought home to the community at large that this was actually server meshing that we're actually doing.
+[  802.1] The real tech here and it actually works.
+[  805.6] We knew it all along, but yeah, it told everybody else that we're doing the real deal here.
+[  812.5] Yeah, I knew it would.
+[  814.0] Oh, you knew it would break?
+[  816.1] In that run-up, we tested nothing but the jump gates because that was our focus.
+[  822.0] UA is so cynical that if they say it works, you can't even believe how it works.
+[  829.4] And with these first successful tests now having proven out the project's ability to
+[  834.4] simultaneously operate two star systems across two DGS's on a single shard,
+[  840.5] the time was fast approaching to test the other core functionality of server meshing technology.
+[  847.4] The subdivision of an entire star system across multiple servers.
+[  852.4] We've done the jump gate, so we focused on just having the stunting system again.
+[  856.5] But this time we split the stunting system between multiple DGS's.
+[  860.9] Super exciting now to finally deliver on what I think a lot of people's vision of server meshing is,
+[  867.3] which is a single solar system being divided into multiple areas that are all being managed by multiple DGS's.
+[  876.2] We were once again really, really nervous about how this is going to work.
+[  880.5] The subdivision of a stanton up into multiple servers is a technically risky thing to do.
+[  887.1] So the way that we did that is we kind of carved up the stanton solar system into what we call territories
+[  892.9] and then we'd assign those territories to different numbers of DGS's.
+[  896.7] And while we were doing that we also tried increasing the player cap.
+[  901.0] We tried two DGS's, 200 players, three DGS's, 400 players, four DGS's, 400 players,
+[  908.5] and then we just decided to go a bit nuts and we tried six DGS's and 800 players.
+[  915.1] And that was really to stress the system, test server crash recovery and kind of get all the
+[  924.4] performance information about how the hybrid service is able to handle these
+[  928.1] higher numbers of DGS's and higher numbers of players.
+[  932.4] And seeing 800 players in a shard and seeing the screenshots on Reddit, very, very exciting to see
+[  938.2] that what we had made was capable of that though there's certainly improvements to be made.
+[  942.9] We actually exposed a bug during that one where you would drop out of quantum travel right at the transition point.
+[  948.9] When someone would transition across that border they would just vanish.
+[  952.5] So yeah, it made it very obvious where the borders are.
+[  954.7] All the backers were like, oh we know where the server boundaries are.
+[  958.0] That was accidental but it provided us a fantastic testing opportunity
+[  962.7] because people could really hammer all sorts of crazy conditions at the boundary to see,
+[  968.8] you know, shooting other ships across the boundary and all throwing cargo boxes across
+[  973.6] and watching it all largely work.
+[  976.7] Shooting across it, EVI in across it, lots of testing that we weren't really expecting to get out of that.
+[  982.8] Actually happened and for the most part it held up really well.
+[  988.4] This configuration of star systems broken up into multiple territories,
+[  993.2] each containing one or more parts of the playable space like a planet or moon,
+[  998.4] distributed between whichever number of DGS's are available,
+[ 1002.4] and spreading the simulation workload across all the DGS's in the mesh,
+[ 1007.3] is what will one day allow us to seamlessly move or transition players
+[ 1011.6] throughout the galaxy without immersion breaking loading screens.
+[ 1015.3] But with this first series of tests now completed,
+[ 1018.6] it was time to step back and ready the replication layer split and server crash recovery for alpha-323.
+[ 1026.7] You know, I watch a lot of streamers and videos and everyone was really, really happy
+[ 1032.0] and that makes me happy. That makes me motivated to do my job.
+[ 1034.9] When the RL split went out in 323, we didn't see too many problems
+[ 1039.6] and things seemed to be working very, very well and I believe that's largely
+[ 1043.2] can be attributed to the amount of testing that we've done kind of leading up with the backers and with the public.
+[ 1048.7] When General QA was testing it, when they first got their eyes on it,
+[ 1052.8] they basically could hear pin drop when they were testing it.
+[ 1055.5] It was so quiet, people were so worried about and then when the test was over, they were just,
+[ 1059.8] they were flawed essentially. They didn't realize that that tech had already been put into the game
+[ 1066.0] and it was actually pretty incredible that it worked so well.
+[ 1069.0] The server recovery stuff was always something we have to get into star system to make the whole thing work.
+[ 1075.6] The crash recovery stuff required a lot of work on the game team side of things
+[ 1078.8] just to make sure that their systems are compatible so that when we do have the crash recovery,
+[ 1082.8] their systems will recover along with the actual server.
+[ 1084.9] It's a testament to our approach to all of this with tech preview,
+[ 1090.0] with getting all of this out into the hands of the backers super early.
+[ 1094.1] It's given us an environment and the place to mature this tech.
+[ 1097.8] So at the time that we came around to delivering it for real in the live release with 323,
+[ 1102.8] we had really good confidence that it was going to work, that it was going to be a good experience
+[ 1107.7] and I think for the large part that's been true.
+[ 1111.5] With Alpha 323 now out, there's still work to be done
+[ 1115.7] and a new series of trials have already begun by the time this episode airs.
+[ 1120.8] Between now and 4.0, we've got a lot of work to do both on the tech side of things within Core Tech Group
+[ 1125.5] with the teams who are actually working on server meshing.
+[ 1127.8] There's a lot of work to do on the game side of things.
+[ 1130.7] We've got to work with the game teams very, very closely.
+[ 1132.9] Pretty much every system in the whole game is affected by server meshing to some extent.
+[ 1136.7] More tech previews in the lead up to 4.0.
+[ 1138.8] That should help us harden some subdivision, multi-system split
+[ 1145.6] and kind of see where we can kind of push things.
+[ 1148.1] Every time they bump up the test, more and more people are like,
+[ 1151.4] oh, now we're going to find more stuff that we don't know about.
+[ 1154.0] Oh no, there's more work coming.
+[ 1155.9] My team's also improving tooling as well, making sure the health of the content
+[ 1161.2] and the world we're building is the best it can be.
+[ 1164.3] Ultimately, these steps between now and Alpha 4.0 and the continuing work beyond
+[ 1170.0] are only made possible by the support of fellow developer and tech preview tester alike.
+[ 1175.9] And it's these efforts that keep the teams moving forward
+[ 1179.2] towards these difficult but attainable milestones.
+[ 1182.2] Has there ever been a point in the last five years where you lost faith?
+[ 1186.2] No.
+[ 1187.3] Really?
+[ 1188.8] No, yeah, no.
+[ 1190.4] No, yeah, no.
+[ 1191.9] No, I mean, there have been some...
+[ 1195.2] It's been a bit rocky at times, but I never lost faith because I believe in the tech.
+[ 1200.9] I don't think we could have done this anywhere else.
+[ 1202.7] Nowhere else would have the patience to really develop this kind of tech
+[ 1206.1] on the promise of something that might happen.
+[ 1208.7] I don't think there is another game company on the planet
+[ 1212.1] that can do what we're doing.
+[ 1215.1] We can take risks to produce amazing technologies that other game companies simply can't take.
+[ 1220.0] I'm pretty convinced that this couldn't be doing anywhere else.
+[ 1223.0] It might sound like we're really confident with how well tech preview has been going
+[ 1226.7] because we are, but we're honestly amazed at how smoothly a lot of this has gone.
+[ 1232.3] Always room for improvement, of course, and there's always things that we wish had gone better.
+[ 1236.0] But by and large, we're really impressed with the maturity of the tech so early on.
+[ 1242.2] How will it perform under really heavy load in a real environment?
+[ 1246.4] This is an incredibly exciting time for me.
+[ 1248.8] I've personally been working on this for almost 10 years.
+[ 1253.0] All the little bits and pieces that we've been doing have all been leading up to this.
+[ 1256.8] This year has been fantastic and actually seeing a lot of it all come together.
+[ 1260.5] And the Jigsaw puzzle is virtually complete now.
+[ 1263.1] There's just the last few pieces to put in.
+[ 1264.9] It's just been amazing to actually see all this work,
+[ 1268.1] all this effort that we've put in actually come together.
+[ 1272.0] And to be able to put it in the hands of our backers and get their feedback
+[ 1277.4] and have them experience what this could mean for the game.
+[ 1280.7] It's amazing.
+[ 1282.2] Star Citizen Alpha 4.0 will be the first time a server mesh consisting of multiple DGSs
+[ 1288.1] with many territories and even multiple star systems
+[ 1291.7] makes its way to the live game environment.
+[ 1294.6] This represents an enormous step forward towards our goal of making Star Citizen
+[ 1299.2] into a massive, seamless, persistent universe.
+[ 1303.1] After 4.0, we'll continue to push this first version of server meshing,
+[ 1307.2] gradually increasing the number of DGSs within the mesh
+[ 1310.3] and the number of players this technology can immediately support.
+[ 1314.1] But to fully unlock the potential of the work being done,
+[ 1317.5] beyond that, we'll pursue dynamic server meshing
+[ 1320.8] where the distribution of players and entities that get streamed in on the DGSs
+[ 1325.2] are managed according to server load.
+[ 1329.3] All in all, the journey to server meshing started nearly 10 years ago
+[ 1333.1] and will continue to evolve beyond its debut in this year's Alpha 4.0.
+[ 1337.5] And we invite you to continue following along with this progress in the Tech Preview Channel
+[ 1342.2] where you can help to ensure the best possible future for its development
+[ 1345.6] as well as keep folks like the UK Network Team,
+[ 1348.6] just one of the many groups dedicated to bringing this technology to life,
+[ 1352.8] energized and empowered to make this dream a reality.
+[ 1356.3] For Inside Star Citizen, I'm Jared Huckabee.
+[ 1358.9] Thanks for letting us share the people and process of game development with you
+[ 1362.5] and we'll see you all here next week.

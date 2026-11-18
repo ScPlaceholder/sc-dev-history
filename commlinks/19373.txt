@@ -1,0 +1,95 @@
+Squadron 42 Monthly Report
+June 2023
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 07:05:2023
+REF: CIG UK, CIG DE, CIG LA, CIG TX,
+FAO Squadron 42 Recruits.
+Welcome to June’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including relaxation activities, water tech, and electromagnetic gas clouds.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Content)
+Last month, the AI Content team continued working on various behaviors. These ranged from NPC behaviors during downtime and rest (eating, exercising, sleeping, etc.) to more official and job-focused behaviors from members of the Stanton and aboard Shubin station. Dynamic conversations were also introduced among the deck crew where they discuss their work to create a more cohesive atmosphere. NPCs were also implemented in several key areas to help flesh out and fill the environments, while various locomotions were also added to these NPCs to make movement and crowds feel more realistic. These ranged from security guards on tram stops, to janitors on Shubin, to 'hawker' kisok-based vendors that can interact with players and NPCs.
+For the Fight Club, speed animations were added for crowd spectators alongside high-quality fight animations.
+## AI (Features)
+Last month, the team worked on reactions to restrained AI, which enables players to use hand and leg restraints to prevent a character from moving. This builds on the healing and waking of downed and unconscious AI. As restraining can work in tandem with other actor statuses, there were numerous cases to deal with, including the AI being awake, unconscious, or bleeding out whilst restrained.
+The team then moved on to a gunfight section within the campaign. In this situation, the AI needs to choose cover opposite the player in a circular arena. This required a bespoke TPS query to provide the cover and special functionality to recognize when to move to a new position.
+They also continued to polish and iterate on a wide range of other functionalities to improve overall quality, including melee attacks, buddy AI, grenade throwing, grenade reactions, and attack and defend areas.
+On the animation side, the team continued to iterate on full animation sets to implement the different combat styles employed by the game’s various factions.
+## AI (Tech)
+Last month, AI Tech finalized their work on dynamic pathfinding regeneration. As mentioned in previous reports, this feature allows dynamic paths to detect when a navigation mesh is modified and check whether it’s still valid or if a new path request is needed. When a new dynamic path is requested, the pathing component creates and stores navigation anchors. These anchors notify the pathing component each time the mesh changes, which then checks through navigation raycasts to see if the path is still valid. If not, the last part of the path is recomputed.
+Next, the team continued developing a feature to allow NPCs to enter and exit a ship’s airlock from EVA. For this, they had to consider cases when a ship or space station is moving or slightly rotating. They’re currently working on a scenario for transitioning from a ship with gravity to zero-g by vaulting over a ledge.
+For tools, AI Tech continued improving and extending functionality for Apollo Subsumption, including adding two new windows for the task-archetypes and variable-type editors. This will allow the team to better visualize and modify archetypes and variables.
+The other AI tool, the usable group coordinator, received improvements too. This included a minor flow refactor to reduce the performance impact from bad setups and to more clearly notify the designers what’s wrong.
+Last month, AI Tech also supported existing features and the upcoming release builds. For navigation links, they created new flowgraph nodes that allow the designers to disable and re-enable navigation links for a platform or object container. For example, this will enable NPCs to use moving platforms.
+## AI (Vehicle Features)
+AI’s Vehicle Feature team spent the month finalizing the new combat AI, enabling it throughout SQ42. This rework has been in development for a while and improves the overall flight combat in the game.
+The team are now tuning, tweaking, and improving the combat experience.
+“We’ll be soon taking a closer look at every single individual combat encounter and fine-tuning them all to feel great.” AI Vehicle Features
+## Animation
+Last month, Animation began a deep dive into every parent asset in the game to cull broken, not-needed, and poorly performing animations.
+They continued to work on zero-g and takedowns, with recent work on heavy denials and sedative takedowns. They also progressed with animations for personal carriers, animals, the janitor behavior, crowds cheering, and player revival by AI. Support was given to scenes across various chapters and data from a recent mo-cap session was processed. Work on malfunctions and new mobiGlas animations progressed. The healing and un-restraining flow now works properly too.
+On the Facial side, the team worked on idle faces for the various states of the AI, including sick, punk, severe pain, tired, scared, and drunk.
+“This will improve the AI considerably, as we believe the moment you see a person’s face you naturally look at it, instead of when that face is hidden by a helmet, you end up looking at the full body. We have also been working on facial animations for many narrative scenes.” Animation Team
+Regarding mo-cap, the team prepared for an upcoming narrative shoot along with one intended to capture specific character actions and pickups. They also prepared for several gameplay mini-captures.
+## Audio
+June saw the Audio team enhancing sounds across the game; SFX designed and implemented essential assets for ambience, weapons, and UI, while Audio Code finished developing cutting-edge propagation tech to redefine how sound travels. July will see them move onto cinematics tech improvements.
+The Dialogue team refined the character-breathing system for different health states, fixing bugs and organizing dialogue across the campaign. This also involved investigating the various health states of the player character and how breathing styles can elevate the experience.
+In July, the team are holding a performance-capture session to cover numerous scenes in the game. In preparation, they created a master document to track every piece of dialogue implemented in the game.
+## Engine
+In June, the Core Engine team finished integrating the latest changes into the main development branch. This took a significant effort, but the team managed to stabilize and roll out the many major rewrites made over the past few months.
+Additionally, experiments were done on a more cooperative threading model to execute physics code, which should deliver general performance improvements.
+For generic shapes, all editor-side work for regular shapes was finished and is now with the artists for feedback. The next stage is editor support for multiple sub-segments to allow the team to build more complex shapes out of primitive sub-shapes.
+The StarBuild, P4K v2.0, and memReplay systems received various improvements and new features in preparation for them rolling out to other teams.
+The Physics team supported the game teams with various bug fixes, progressed with cantilever beams for the Maelstrom editor, and investigated solver improvements for driven ragdolls.
+An ImGUI view was then implemented to allow rapid tweaking of simulation parameters for character-attached cloth so that changes become immediately visible.
+The Entity System Tech team integrated their recent improvements into the main development branch. They then worked on various spawning-time improvements and cost visualizations to allow for further guided loading-time optimization.
+Finally, async entity loading was enabled in the editor for faster startup and improved efficiency.
+## Features (Gameplay)
+Gameplay features spent part of the month adding new mobiGlas applications, including the Galactapedia, which is a reference for people, vehicles, planets, systems, items, and everything else in the universe. As players progress, the Galactapedia will be updated with the information gathered.
+The Personal Status app now has a Skills page, detailing the player’s abilities and how they have improved. It also includes an Attributes page, detailing what items have been unlocked and how progress is going on others.
+The team also implemented a way for the designers to create custom damage maps. These can be applied to vehicles or items, giving more control over how damaged they appear over time.
+Following last month’s work, Gameplay Features further progressed with the minimap, adding markers for the player, NPCs, objectives, and more. These can now be “clamped” to the edge of the map if they’re offscreen.
+Additional work was done on the character customizer too, exposing it to the new hair-rendering tech that allows players to change their hair’s base color and highlights.
+## Features (Vehicle)
+Last month, Vehicle Features supported various design initiatives across SQ42’s chapters, including work on The Coil’s electromagnetic gas clouds. The team worked alongside VFX and Design to implement various special effects to support the player's experience of flying into and around the gas clouds.
+The team also supported smaller changes to other chapters, new features to enable the AI teams to create special set pieces, and ways for TrackView to control vehicles better.
+They also continued to finalize Control Surfaces and the new aerodynamic flight model, which were integrated into the normal ship throttle and speed-control mechanisms. They also integrated other environmental effects relating to Master Modes so they now work across the different flight modes.
+“We should hopefully be at a point now where the new flight model can be enabled game wide and tested in situ in SQ42 gameplay.” Vehicle Features Team
+Vehicle Features further developed various UI areas in June too. To help with the flow of levels, they worked with other teams on a markers-and-objectives system that shows players where to go, what destinations exist, and what things are around them. It also includes new markers for quantum destinations, scanning signatures, and more. These markers can contextually enable and disable depending on progress in the game.
+The team progressed with the ship-loadout terminal. This is a physical terminal in the Idris hangar that allows players to customize their ships before flying out on missions. It’s currently being integrated with the various ship items so they show up alongside the player’s items.
+Multi-function displays (MFDs) also progressed. They’re currently enabled game-wide and are being tested in various levels. Several issues were fixed and the team is now focusing on unique MFDs for the scanning system to show contacts and allow the player to look up information about the things they’ve scanned.
+Focus was also given to the general look and feel of vehicle cockpits. For example, the team added new camera shakes when using the afterburner, stalling when flying with aerodynamics, and other smaller camera movements to improve the overall feel of piloting a ship.
+Lastly, Vehicle Features worked on the boat physics model. The core physics model works well, though improvements and tweaks were made to improve the experience as other features were completed.
+## Gameplay Story
+June saw Gameplay Story continue to maintain and improve a large number of scenes across the campaign. Two scenes were updated to use the approved seated pose, one will now utilize the approved datapad, and another was updated to match the approved button height. Alongside this, a scene in chapter one was expanded with several new encouragement animations and new dialogue.
+The team then supported the wider development initiative on chapter five, improving a character introduction at the beginning to make it more responsive. New start and end animations were added to two different scenes in the middle of the chapter, and a full polish was completed for a large scene at the end.
+Alongside this, the team got all of the bridge-operator seat setups approved (just the air-traffic controller's seat remains). This unblocked several scenes for the Cinematics and wider Gameplay Story team.
+## Graphics & VFX Programming
+June saw the Planet Tech team wrapping up their latest tools and working on the new water system. Water ripples can now be simulated across region borders, and further reworks to rendercode integrations with planetary atmospheric passes made the process smoother. Quantum obstacles for Generic Shapes were also physicalized and passed to the Engine team for integration.
+The Graphics team spent part of the month fixing bugs, improving the render thread, and developing the upcoming temporal-upscaling system. For global illumination, a ray-tracing prototype is now in progress, and work began on screen-space probes. Screen-space shadows are now more consistent, and canvas-decal streaming issues were resolved.
+Gen12 and Vulkan also received various bug fixes that impacted rendering and streaming performance. The GPU resource lifetime was restructured, and WAW hazards for RenderGraph deferred execution are handled more efficiently too.
+The first iteration of entity spawning based on MeshSetup and CGAs was submitted, which is required for Maelstrom.
+Alongside UI Tech and other SQ42 teams, Graphics improved the performance and visual quality of the area map. The interior and FPS mini-maps now use the Render Layers feature, which can now be applied to CGA joints, skin, and CGF attachments. Incorrect UI edge cases were also resolved and now scale correctly with scene exposure.
+The VFX team enabled DataForge to support particle library groups in preparation for the upcoming changes to weapon-effect setups.
+A crash impacting fire-related child effects was fixed, and an entity-wide burn state can now be applied that uses dirt parameters and object temperature to determine damage and glow; glow uses a specific shader from permanent effects for game-wide consistency.
+Lightning was also improved. For example, lightning cascades can be timed with a new controller and ship shields now trigger when struck by lightning.
+## Level Design
+June saw Level Design make another significant push on chapter five’s Shubin Archon content. This is the team’s largest walk-and-talk level, featuring two NPC guides and numerous background scenes and NPCs.
+“It’s been a huge challenge to implement and another maintaining it, but we’re very pleased with where we are at with it now.” Level Design Team
+They also continued to focus on Stanton and Krugeri interstitial scenes. For example, they made a full pass on an emergency medical triage area in the Krugeri’s hangar.
+## Narrative
+Last month, Narrative worked closely with Core Gameplay Design and Audio on player wildlines that will be used throughout the game, covering everything from generic responses to providing additional assistance during puzzles. This work was slightly accelerated as the team prepared to capture the remaining player lines in an upcoming shoot.
+Elsewhere, the team continued to sync with the level designers to refine scripts based on feedback from placeholder audio. Once written, they recorded new placeholder versions so they can experience the flow in future reviews.
+As the scripts continue to solidify, the team expanded tasks to begin addressing the various text needs of the game. This included outlining the game’s version of the Galactapedia (determining which entries will be included from the current list and which will be crafted specifically for SQ42), various collectibles, player skills, and mission performance reviews. Once the team has finished capturing the remaining narrative and gameplay content, they’ll focus more on these text requirements and other requests, including environmental messages and fluff screens that will appear throughout the game to provide additional storytelling.
+## R&D
+In June, work on atmospheric and volumetric cloud rendering continued. Transmittance profiles and their filter chains were optimized and improved to reduce noise and artifacts in raymarch results. Further research went into the temporal upsampling of those results to produce a stable and detailed full-resolution frame that can then be composited into a scene.
+## Tech Animation
+June saw Tech Animation integrate their long-awaiting changes to the DNA system. This enables new head assets and provides a pipeline that will open new ways to author and customize new game content.
+The team then began new initiatives while they wait for further head art. This included updating the Maya pipeline codebase from Python 2.7 to 3.7 and thoroughly testing it. This was released to the user base in June, with the team currently working through the final bugs.
+## VFX
+Aside from the usual support for locations and cinematic sequences, VFX investigated shader requirements for fire propagation. Code-wise, the fire-propagation system has been in progress for a while, but it has now reached the point where the VFX artists can work with Environment Art to decide how various locations should look when burning and burned out.
+Improvements and optimizations were also made for various lightning effects.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

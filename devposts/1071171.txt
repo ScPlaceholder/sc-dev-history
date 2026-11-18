@@ -1,0 +1,14 @@
+## Star Citizen Patch 3.1.2
+Alpha Patch 3.1.2b has been released and is now available!  Patch should now show: PTU-742582
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+We've included increased logging in this build to determine the cause of some more persistent crashes. As a result, you will likely experience increased crashes and decreased performance.
+## Feature Updates
+General
+- Players should now respawn in their ship or best available location following a disconnect or client crash
+Now when a player logs out in their ship bed or the client crashes, the next time you connect, the game will attempt to log you back in to your most recent ship and location. Your ship will despawn after 10 minutes has elapsed if the ship is empty. If the player attempts to reconnect after this timeout, the player should respawn back in the ship in the best bed/seat available the next time the player connects, assuming the ship has not been destroyed.
+UI
+- Improved performance of VMA when selecting ships
+Technical
+- Three crash fixes
+- Added more logging and debug events to track more potential memory leaks and crashes

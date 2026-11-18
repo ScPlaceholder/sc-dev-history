@@ -1,0 +1,7 @@
+Yes unfortunately, this was a bug fixed and deployed in a hotfix on the live release which did not make its way (consciously) to the tech preview.
+Let me outline the rationale.
+We are operating our tech previews at the moment with a very strict policy to keep the code changes strictly to networking code or bug/issues that are complete blockers for the tech preview. This is in order to keep the signal to noise ratio very high for the network team as they iterate. Networking changes have a tendency to have many side effects and so we want to stay completely focused on issues caused by optimizations or changes the team make and not be affected by other changes even if those are actual bug fixes. This all to avoid delays and longer turnarounds for the tech previews. We want to keep the momentum going.
+So since this issue is intermittent and doesn’t affect all players (even though it affected you, sorry!) we did not pull the fix in and probably won’t. (though it did make its way to 4.0 :slightly_smiling_face: )
+I hope the explanation is clear, difficult without diving into inter-dependencies of code streams and game components which would be too long to get into now … though now Jared will pull me in for an ISC  on this … I guarantee it.
+o7
+-b

@@ -1,0 +1,56 @@
+## Star Citizen Patch 3.13.0o
+Alpha Patch 3.13.0o has been released to the PTU and is now available to test! Patch should now show: VERSION 3.13.0-PTU.7293148.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Cave Entrances
+- FPS Cave Missions
+- Ship to Ship Docking
+- Signed Distance Fields (SDF) Shield Tech
+- Reputation UI
+- New Quantum Sensitive and Timed Delivery Missions
+- Pushables T0
+- Mounted Guns
+- Force Reactions - Staggers
+- Cyclone MT
+- Ship Naming
+Known Issues
+- Players may get a random Crime Stat when Killing a Bounty
+- Placing a trolley under a large elevator and calling it can damage the ship with colliding
+- The customizable nameplates do not appear to be visible anywhere on the Carrack Expedition
+- ASOP displays as "unable to spawn at this time" and could fine the player for spawning a ship with one already on the pad
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Leaving a trolley in a door way will clip through the floor erratically and can kill players
+- Bright / Opaque fog volume encompassing cockpit of ships at Lagrange point / Near gas clouds
+## Feature Updates
+Gameplay
+- Polish pass on Reputation app UI
+- Shortened the duration of the bounty hunter location mark
+## Major Bug Fixes
+- Fixed an issue that could cause damage to penetrate SDF shields while the ship is moving
+- Fixed an issue causing missions to not start for a long time when arriving at the destination
+- Space stations at Lagrange points should no longer take several minutes to stream in
+- Ship names should now persist correctly after an insurance claim
+- Fixed an issue causing ships to get impounded shortly after spawning
+- Weapon icon, Ammo count, and Grenade count should no longer be missing from the user HUD
+- Fixed an issue that could sometimes cause large, moving polygon spikes around Hurston
+- A section of the transit route geometry in the tunnel should no longer be missing when taking tram to and from the Commons in New Babbage
+- After (un)docking the merlin from the Connie, other players should now be able to undock it
+- Players should no longer gain a crime stat when colliding with their own ship using their secondary docked ship
+- Fixed an issue causing ground vehicles to clip through/fall out of cargo bays of ships
+- Mining Modules UI should now align correctly when Toggling from one Consumable to another
+- Players should no longer be able to launch someone into the air by jumping while heavy melee attacking them
+- Criminal variant of the Valkyrie should now stream in correctly at distances further than 1000m
+- Audio over VOIP should no longer be significantly quiet and hard to discern in the mix, for both proximity chat and party channels
+- Fixed an issue causing players not to get a prompt to call ATC when approaching a station
+- Doors on the docking arms at stations should no longer open by being shot at
+- The bench in the New Babbage Commons Metro Station should now have proper interaction
+## Technical
+- Fixed 1 Client crash
+- Fixed 2 Server crashes

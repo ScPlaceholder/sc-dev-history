@@ -1,0 +1,35 @@
+Hello folks!
+We are currently looking into this issue. Most of these issues of "no LIVE on left side", "missing Install button", "no news" are due to having melted game packages or only having stand-alone ships on your account. If you melted all game packages or never bought one, you may see all green on the Download page and an Install Launcher button. Then you end up with the empty Launcher screen.
+Another good way is to check your Download page to the following.
+GOOD TO INSTALL:  If you have a Game Package  (with ship), you should be good to go and see this kind of information:
+NEED A GAME PACKAGE: If you melted all of your Game Packages, you may see the following image. If you see a list of ships for Module Access, those are your stand-alone purchases. None means your only ship was from the game package. We're  investigating this screen further to get some better messaging.
+Another way to check your game package is through My Hangar:
+- Log into My RSI on our site.
+- Click on My Hangar.
+- Filter by Game Packages to check for your game.
+- Check for an existing game package.
+If you have a Game Package, but still have no Install or Launch Game button, make sure you installed the Live game from the Download page: https://robertsspaceindustries.com/download
+You should see the Delta Launcher version bottom right as v1.0.0. If you see PTU, you need to delete, download the new launcher, and try that one.
+Still have trouble?
+Send in a ticket with the Launcher log.log and game.log attached:
+- Right click on the Windows icon and select Run.
+- Enter and run %appdata%\rsilauncher
+- A folder view opens. Attach the log.log file to this email/ticket.
+- In the file viewer, go to  (install drive):\Program Files\Roberts Space Industries\StarCitizen\LIVE
+- Attach the "Game.log" file to your email/ticket.
+More helpful info about the Delta Launcher!
+- Ensure the new files are whitelisted in your anti-virus and firewall (new file locations/names):  (install drive)\Program Files\Roberts Space Industries\RSI Launcher\RSI Launcher.exe and  (install drive)\Program Files\Roberts Space Industries\StarCitizen\StarCitizen.exe
+- Ensure these ports are open on your router: TCP 8000 - 8020 and UDP 64090 - 64110. No change but still helpful.
+- If you have trouble with your network getting throttled or slowed, try out Concurrent Downloads (manage number of downloading connections) and Download speed limit (reduce the speed/throughput) settings.
+- The old Gear icon for configs is now the Settings tab.
+- If you are tired of multiple Launchers being open even if you click X to close, go to Settings. Scroll down and click  Quit launcher when window is closed.
+- There is an awesome log for the Launcher. You can find it here:  %appdata%\rsilauncher\log.log   If you have an issue, include it in your tickets. It gives us a map of every action you make, reaction by our servers, and captures errors.
+Want to move your game install? Sometimes you need to install on C : then move it to another drive.
+- Copy the folder (install drive)\Roberts Space Industries to the new location.
+- Open your Launcher.
+- Click Settings and scroll down to Library Folder.
+- Click Change and browse to select the folder of the new location. After done, close the Launcher.
+- Change your Shortcut for the Launcher to the new one:  (new location)\Roberts Space Industries\RSI Launcher\RSI Launcher.exe
+- Test it before deleting the original files from C : !
+Here's the full image of the Settings screen scrolled and all.
+Thanks for reading!

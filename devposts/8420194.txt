@@ -1,0 +1,6 @@
+Hi,
+All rendering is at the same (full) frame rate. Even with upscaling enabled the nearby UI (and a few other elements) also render at native resolution to maximize quality and legibility (i.e. don’t require upscaling).
+Many game components don‘t do a full logic update every frame, but their rendering is always updated.
+It is just the main thread CPU cost of some UI elements that can bring the whole frame-rate down, but as mentioned in my post below this is being addressed.
+Cheers
+Ali Brown

@@ -1,0 +1,717 @@
+# Star Citizen Live: Q&A StarEngine
+# https://www.youtube.com/watch?v=y_QE4qig9sw
+[    0.0] Hello everybody, welcome back to another edition of Star Citizen Live.
+[    3.5] I'm your host, Jared Huckabee, and if you've never seen Star Citizen Live before,
+[    7.8] it's where we take about an hour at the end of our week,
+[   10.2] and we invite our CIG developers here, and we talk about all kinds of things.
+[   15.1] Sometimes we explore the process of their work,
+[   17.9] sometimes we just get to know them a bit personally,
+[   20.5] and on shows like this, a Q&A show, we collect questions from you,
+[   24.8] the Star Citizen backer, and pose them directly to our developers.
+[   28.3] So on this week's show, we are following up to the Brave New World's Star Engine and Genesis presentation
+[   34.5] from this year's CitizenCon, so we have a few select members.
+[   37.4] We couldn't have fit everybody on the show this week,
+[   39.3] but we have a few select members from the teams that contributed to that presentation on to answer your questions.
+[   44.3] So without further ado, let's get into it and meet who we got on the show this week.
+[   48.5] We'll start with Allie. Allie, tell everybody who you are, what you do for Star Citizen.
+[   53.3] Allie Brown. I'm Senior Director of Pixels and Planets, and that's it really.
+[   59.7] I look after about 20 developers who are responsible for all things graphics, VFX, and planet related.
+[   65.7] Did you get them to actually change the title to include pixels, or are you being fun?
+[   69.7] No, that's what I've been using on Spectrum, it's a lot easier to say.
+[   72.7] All right. Will, tell everybody who you are and what you do.
+[   77.3] Hi, I'm Will, I'm a Senior Engine Programmer on the Planet Tech team.
+[   82.3] I make planets and occasionally water and rivers and stuff, and it's great fun.
+[   88.3] And you have a nickname amongst the community, don't you?
+[   92.3] Oh, I certainly do. Water guy. Even though I shouldn't be planet guy, really.
+[   97.3] Water guy. There it is in the chat. Up next, Seb, who are you and what do you do?
+[  104.3] Hi, I'm Sebastian. I'm with the Planet Content team, and I make tools and planets and content for them, I guess.
+[  113.3] Okay. What's the difference between tools and content?
+[  118.3] Will and Allie, they make the magic source, and we make the ingredients that goes into that, and then we get planets out of it.
+[  129.3] All the stones and all the planets and the data that drives the systems and all of that is from us.
+[  136.3] And yeah, we get a nice take to make it work.
+[  140.3] That works. I just wanted to hear you say magic source.
+[  142.3] And Graham, who are you and what do you do?
+[  145.3] Hello, I'm Graham Philipson. I'm Director of Audio Technology.
+[  149.3] So basically we take all these stunning visuals that all these guys create,
+[  153.3] and we try to make them look even better by supporting them with audio.
+[  157.3] We have to be real careful about switching from Seb to Graham because it goes from dark to light.
+[  162.3] Seb, say something.
+[  166.3] Going on the dock side?
+[  169.3] All right. So on the show this week, like we said, we're doing follow-up questions from the Brave New Worlds and Star Engine and Genesis presentation.
+[  177.3] Earlier this week we put up a thread on Spectrum, which is our bespoke communication platform available on robertspaceindustries.com.
+[  184.3] We're going to let you guys submit your questions, vote up which ones you want to see answered most.
+[  188.3] Then we let our four guests here loose on the thread and they collected the ones that they were most capable of talking about now.
+[  195.3] As is always the case in game development, things that are much, much further out are a little too subject to change.
+[  201.3] So we do try to keep our questions and our conversation related to within the next year of content.
+[  207.3] So most of what we're talking about today will be related to the next year and possibly the year after that, depending on specific little elements here.
+[  215.3] So keep that in mind when wondering why we're choosing certain questions over other questions and let's get to it.
+[  221.3] Our first question, maybe this is for Seb.
+[  225.3] We'll see. It says, will Genesis allow you to create more alien-looking biomes in worlds using the Earth-like biomes as a base?
+[  237.3] Yeah, I guess it's more like a content side question than a tech limitation.
+[  243.3] Genesis never really limited us in terms of what we can do.
+[  247.3] It's more like what we do on the content side and make it realistic.
+[  254.3] Obviously, we've made a really nice progress already towards getting closer to what Earth and nature has to offer.
+[  261.3] It's always our primary target and goal just because it's familiar and it's a really great reference point.
+[  269.3] And now we're really looking forward to doing more alien things and adding things that make it feel less familiar and just different.
+[  278.3] But without going into the uncanny valley kind of thing, so it's a balancing act.
+[  282.3] But we have a nice baseline now and now we just go from there and make it more and better and alien.
+[  291.3] Do you think we'll eventually get to something that's just completely unrecognizable?
+[  297.3] Something far more, I'm thinking like Fallujah and Star Wars or something where it's all a bunch of magentas and neon blues and stuff like that.
+[  306.3] Just a completely alien world. Is that something we're working towards?
+[  310.3] It's definitely with dry deserts in the past.
+[  313.3] Actually, Hurston was meant to be like blue trees in the beginning.
+[  316.3] Then we try. It's rated onto it and it ended up being more or less Africa now.
+[  322.3] But yeah, we'll definitely try that again and again until we get it right.
+[  326.3] But it has to feel good and feel believable and make for a nice experience to be in the place.
+[  332.3] But it's definitely on the road map to possibly be a thing.
+[  338.3] Okay. Next question.
+[  341.3] What we saw during the panel was impressive.
+[  345.3] Agree. But could we hear more about how these tools have quantifiably made planet generation faster and of higher quality?
+[  354.3] Well, quantifiable is a weird word here because we're not done.
+[  362.0] So we haven't measured how long it takes to make a planet because we can't make a whole planet yet.
+[  367.0] But the design and the whole way that we've built this tech is with speed, a bit of ration and quality in mind.
+[  374.0] We're already getting quantifiably better quality in areas and we want to keep working until all of the areas are of a higher quality as well.
+[  384.0] But also we can't measure how quick all this will be until it's done, until all the supporting systems are done.
+[  392.0] So just because we can pump out a planet in a day doesn't necessarily mean we can work out everything else that makes that planet an interesting and unique location.
+[  401.0] That requires content from all sorts of other things from narrative to level design to locations to law.
+[  410.0] There's no point pumping out a million alien worlds that are all lifeless. They've got to have meaning and that's kind of what we've done really nicely with Pyro, I think.
+[  419.0] You make a good point there. I'll go ahead and go ahead, Allie.
+[  422.0] I was going to say, I would just clarify we're also not going to be pumping out a planet in a day or a million planets though.
+[  429.0] Certainly not.
+[  430.0] I mean, it's as long as a piece of string, isn't it? You could pump out something in a day whether it's worthy of releasing in a day would be a very different question.
+[  442.0] Right.
+[  444.0] Well, I really like your answer. Basically, there's what the tools can do, but there's still so many more aspects that go into creating a planet at the scale and fidelity of Star Citizen.
+[  459.0] So the Genesis tools and everything will streamline one aspect of that, but as you point out, there is still narrative, there is still creature creation.
+[  469.0] There's all these other things that make a planet thrive. So we won't know how fast this improves the process until we crank out a couple more as we go through Nix and then Castra and then eventually terror after that.
+[  487.0] So it's one of those things I'm sure we'll have. I'm sure this is not the last time we're going to be talking about Genesis or planets and stuff like this.
+[  494.0] And as we learn these answers, we'll share more.
+[  498.0] Absolutely. Letting the hyperbole get a little ahead of me.
+[  501.0] No, no, no. It's easy to get carried away. It's easy to get carried away. We're in year 13. We try to be very responsible with how much we promise at this point.
+[  513.0] It's about doing the work and actually getting the work done now.
+[  517.0] One of the big elements of that Brave New World's presentation was weather. And I want to jump in. We have a lot of weather questions, so I want to jump into some of these weather questions here.
+[  527.0] Outside of thunderstorms, what other weather conditions or systems are we looking forward to implementing?
+[  536.0] So I'll take that. So several have been discussed internally. We haven't confirmed which ones we'll necessarily do first.
+[  545.0] But the things that have been talked about are potentially on the cards, things like sandstorms, obviously snow, and then potentially variations of those like acid rain,
+[  555.0] rather than the type of thunderstorms, which are intended to be our first target. In terms of what we're excited by, I personally want the sandstorms.
+[  562.0] I think the tech is quite well geared for that. They look really good. And, you know, we've got some recent films that give a lot of nice visual cues.
+[  573.0] Yeah, so I'm looking forward to seeing some of that in the game personally.
+[  579.0] Be real honest with me. How much does seeing a major film, something like what you're talking about, I will just say it's Dune and whatnot,
+[  589.0] how much does that ever sway our priorities? Like, oh, no, we really want to do that. It's like this. You can be honest.
+[  598.0] I mean, on the tech side, not enormously, I don't think. We're slightly at the mercy of, you know, the creative directors to tell us where we should put our energies.
+[  609.0] We do.
+[  610.0] Yeah, I mean, I guess, yeah, I mean, I've seen plenty of films that have like, you know, recently they have sand and sandstorms in them and snow.
+[  618.0] I haven't seen an acid rain film recently, maybe if there was one, they would jump to the top of the list, perhaps.
+[  624.0] We do have planets like Hurston and several arid moons that would all benefit from that tech. So it's a, so sandstorm specifically is something that would benefit quite a few different locations.
+[  635.0] Stick with weather for a bit. Is there a plan or a roadmap to improve cloud layer look from orbit? Grid effect, night shading, etc.
+[  646.0] There are bits of info from Devs on Reddit, but we would love to hear more.
+[  651.0] That's probably gonna be my question then.
+[  654.0] So thankfully, the list for what we need to do for clouds is finally starting to get shorter instead of longer.
+[  661.0] Well, that's nice. We like have the fundamental framework falling into place.
+[  666.0] But there's obviously still quite a few more things we want to try and do, like improvements to shaping, shading, performance as well, and make them all more stable.
+[  676.0] As far as the tiling issues are concerned, that's more of a content thing as opposed to a tech thing.
+[  683.0] We have plans to make tools that will definitely improve that and just produce better looking cloud formations with less of those issues showing up.
+[  693.0] Obviously, it would be nice if we could throw unlimited resources at everything, but we are still making a game and we have similar limitations to what we can render on the screen as all other games.
+[  703.0] Adjusting our scale is a bit worse or better, depending on who you ask. It makes it a bit more difficult, but we definitely have plans and know how to tackle those issues a bit better in the future.
+[  714.0] And it's just iterating and iterating and learning how to the best make the data to drive the system in the best possible way.
+[  721.0] Yeah, I know that cloud tech has been something a lot of folks here were waiting for for a long time.
+[  726.0] Obviously, what we have is great, but anything with Star Citizen, we're not one to generally rest on a laurel cell.
+[  733.0] There will be a time where the development wheel turns its hands back to clouds and we get more resources and more time to make that even better.
+[  744.0] Hey, Graham, let's do an audio question.
+[  748.0] With Star Audio and the new Doppler Effect, will we be able to hear the sonic boom in atmosphere?
+[  756.0] Also, do two parts. Also, will ships like the Inferno be able to have a delayed burr?
+[  764.0] Sorry, like the A10 Warthog, and will we be able to hear? Okay, this is like three questions in one, guys.
+[  770.0] than one guys. Okay, let's just do this piece by piece.
+[  772.7] We'll start audio and the new Doppler effect.
+[  775.0] Will we be able to hear a sonic boom in an atmosphere?
+[  778.4] Ultimately, yes.
+[  779.7] It's on our development plan and it's not the most sort of
+[  784.7] difficult thing to do, but the more difficult things to do
+[  787.6] are the fundamentals of making the Doppler sound good,
+[  791.0] making every sound that play in the game work well with it.
+[  794.8] But we do have the data that we need in order to
+[  798.5] thrive sonic boom.
+[  799.5] And as you saw, it's in common with some shockwave stuff
+[  802.7] on distant explosions and that's pretty much the same concept.
+[  806.3] So yeah, we will get there. Absolutely.
+[  809.7] All right, we'll do the second part of this question.
+[  812.9] Also, will ships like the Inferno be able to have a delayed
+[  815.7] BERT sound like the A10 Warthog?
+[  819.3] Again, yes. It's all bound to, I mean, it's kind of a
+[  822.7] content thing really to get the BERT sound itself,
+[  826.5] but there's no reason why we can't then delay that and create
+[  831.5] the sort of horrific experience that you seem to be wanting.
+[  835.1] I'm going to add a follow-up here.
+[  837.3] What are the challenges involved in making a delay seem
+[  841.9] intentional and not a mistake or a bug?
+[  847.4] So those challenges are absolutely significant.
+[  853.0] One of the first things that came up when we first implemented
+[  856.4] the prototype of this was that when you walk away from somebody
+[  860.2] speaking and you start to see the lip sync go out, that's kind of
+[  864.0] like it's realistic, but people have seen movies often enough
+[  868.7] that they don't expect it.
+[  870.2] So we have to strike a balance between realism and the sort
+[  873.9] of the experience people are a little more used to on screen.
+[  878.6] There's also the challenge of camera zoom.
+[  880.4] That's huge.
+[  881.7] So when the cameras zoomed in and the audio listening was actually
+[  885.4] significantly further away than it appears on screen, that caused
+[  890.3] the problems, so we're having to overcome some of that as well.
+[  893.6] But yeah, there are plenty of challenges.
+[  895.9] Okay.
+[  900.9] I think with the...
+[  901.9] There's a stark attack question.
+[  903.2] Let's hit here.
+[  905.0] Would Genesis produce any actually large settlements on the scale
+[  909.9] of small towns or cities, or would that require more bespoke work?
+[  916.1] So yeah, it will be great.
+[  918.9] It can create as big as we want really, but the intention is not to create cities.
+[  922.7] We don't have hundreds of cities.
+[  924.4] We want our cities to feel very unique, want extra care and love to go into them.
+[  929.4] So we're not currently planning to build anything as big as a city with it.
+[  932.4] And you'd probably need to adjust the algorithm a little bit to the scale
+[  936.6] of content to make that work.
+[  939.2] But towns definitely, lots of small, medium-sized towns.
+[  944.4] Yeah, we certainly want as many as them as design think fits the game.
+[  948.9] And I'm actually personally looking forward to lots of really tiny things.
+[  951.5] I want mini-settlements.
+[  953.7] The guy in his caravan and all that.
+[  956.5] I want a bit more of that in the universe.
+[  959.0] But yeah, hopefully lots of small to medium-sized towns.
+[  962.4] And once they get a bit larger, I think that's where you really want to handcraft it
+[  965.5] and make sure that it has a strong narrative backing for it from design.
+[  970.5] That makes sense.
+[  975.0] During the presentation, there was a lot of terms used to describe different footage.
+[  980.4] R&D phase, early footage, gray box.
+[  986.4] Folks know this, you know, there's a nice set list of terms for like ship development.
+[  991.6] But the thing doesn't, the same system doesn't really equate to graphic stuff.
+[  996.8] And when the panel was ended, this person was conflicted over where their expectations should be set.
+[ 1003.0] Is all of this still R&D with clever renders?
+[ 1006.9] Or is this technology at a stage where it could potentially be used to actually build a plan at this point?
+[ 1013.9] So, it's kind of a bit of a toss-up really.
+[ 1018.4] We use the term vertical slice specifically and that's something I'll kind of dive into a bit.
+[ 1024.9] We've kind of tried to do a bit of everything so that we can see the whole picture
+[ 1029.6] and then kind of tweak our design from there and start finishing out each bit.
+[ 1033.6] And that means that yes, we could build a planet, but there's no way we could ship it.
+[ 1037.6] It's not performance enough. It's not varied enough.
+[ 1041.0] It doesn't check all of the boxes that we want.
+[ 1043.2] There'd be all sorts of problems with the tech that is working for the difficult bits,
+[ 1047.3] but not working for the bits that mean that you can have 30 in a solar system
+[ 1051.2] and then 30 in another solar system and so on.
+[ 1053.8] And one of the reasons we've approached it like this is because there's kind of such a fundamental change in the tech.
+[ 1059.1] Like the genesis and the planet tech improvements are not just kind of changes to the output of the existing system.
+[ 1065.7] It is a fundamental kind of reshuffle and redistribution of work,
+[ 1070.6] which is largely because before kind of addressed the needs of planets,
+[ 1077.1] although the planet tech that we have kind of addressed the needs of planets as they were at 3.0,
+[ 1080.9] but nowadays there's a lot more requirements from that tech,
+[ 1083.8] whether it be kind of server meshing things, base building things, harvestables, persistence.
+[ 1088.7] So we've approached it from this vertical slice, which means yes, we can build a planet,
+[ 1092.4] but it's not the standards we want.
+[ 1095.1] But we're now at that point where we take that, we can say, OK, well, here's what worked.
+[ 1099.4] Here's what we need to redesign. Here is what we know is great.
+[ 1102.7] We've solved some of the big tech problems.
+[ 1105.5] Now we're transitioning to more of a kind of milestone based approach where we're saying, OK,
+[ 1109.8] well, now we're going to finish out GPU spawning and now we're going to finish out the orbital look and so on.
+[ 1116.3] And we can start kind of taking chunks of tech and finishing it.
+[ 1120.0] And I think one of the really important things as well is that we're not aiming to release this as one big floodgate.
+[ 1125.1] And suddenly everything is out and boom, you've got Genesis.
+[ 1128.5] It's going to be features coming online bit by bit.
+[ 1131.6] And one of the one of the early bits of tech is actually already in the 4.0 streams that are going out to EPT right now.
+[ 1138.0] The the planet tree rewrite of how we store and subdivide our planet into patches and so on
+[ 1146.1] is already out there in the world and working.
+[ 1148.7] And that's kind of one of the benefits of having done this as a vertical slice.
+[ 1152.3] It means that we're starting to read the benefits already.
+[ 1155.4] In terms of gray box, Seb, you can probably explain better what you meant by gray box in your sections.
+[ 1162.7] So I should drop you in.
+[ 1164.3] Oh, yeah, sure.
+[ 1166.9] So like in art, in that process, we usually have like a white box, gray box and then vinyl and polish.
+[ 1174.0] For vegetation doesn't really work that well.
+[ 1176.7] But like white boxes don't really represent vegetation as it's super well.
+[ 1180.3] So we just make a very rough version of it.
+[ 1183.8] Also, we were asked fairly late into the process of making the videos to add those labels and we might have been a bit sloppy.
+[ 1190.7] So like the swarms were definitely further along than the jungle, for example.
+[ 1193.6] Jungle definitely very much what we consider white box swarms and redwoods a bit further along with the swarms being the furthest.
+[ 1200.0] And yeah, it's all coming together and we are working through them.
+[ 1206.7] And a lot of what you've seen in white boxes further along now and might be close to polished and vinyl.
+[ 1212.5] And then we just need all systems, every other system to make it into new planets and then release the thing.
+[ 1220.4] Maybe one day.
+[ 1221.2] No, I don't know.
+[ 1224.9] Seb, I love you.
+[ 1226.7] So yeah, so basically as Will was saying, it's not an all in one thing.
+[ 1234.3] It is a genesis within Star Engine is a collection of multiple different tools that are all being developed at different paces with different necessities with different requirements of them with different dependencies of other stuff.
+[ 1247.3] So certain things will come online faster than other things, which is another reason why we can't quantify at this point just how much faster it'll make making planets.
+[ 1255.8] Until all that stuff comes online with everything else.
+[ 1258.2] But you like I said, you've already started to see stuff in 4.0, which is the planetary stuff that you mentioned.
+[ 1263.9] And then with 4.1, 4.2, subsequent releases as different elements are come online and are ready to be ready for prime time,
+[ 1273.1] they'll be used to reconstruct certain elements of different planets and stuff to support other features like base building and stuff like that.
+[ 1280.0] So I know one of the things that often happens because I've been doing this for more than a decade here now is this idea that oh, anytime we say this is going back to the foundation or going back.
+[ 1291.4] This is a rewrite of this.
+[ 1293.1] And so I go, why do they keep remaking this and so like this?
+[ 1295.4] This is the normal process of game development.
+[ 1297.8] The difference part is that you don't normally see this exposed to anything else.
+[ 1303.6] It's one of the things that makes Star Citizen unique being in a being in a live service environment during the process of making the game.
+[ 1310.4] So it's not any different or anything unique to Star Citizen and Cloud Imperium Games.
+[ 1314.8] It's other than you get to see it.
+[ 1317.9] So let's do a little asset distribution question.
+[ 1324.8] So with the sheer density of forests and similar biomes and Genesis,
+[ 1330.0] how might this interact with gameplay like landing ships or driving vehicles around?
+[ 1336.2] Obviously, for Citizen One, we made the biomes to look there most intense, most dense.
+[ 1343.8] So we want to see, A, what does it need to look like at its most densest, I guess.
+[ 1350.0] But obviously with the new system and everything being having ideal conditions and less ideal conditions, you will have varying distances.
+[ 1357.2] It could be over multiple kilometers and just like have the forest or like have something turn into a forest over a large distance.
+[ 1365.2] Or it could be over some meters, like clearance in the forest.
+[ 1368.8] The system would support all of that.
+[ 1370.3] We've just only shown the most dense and the most purest version of each biome at CitizenCon.
+[ 1375.0] So that's why they look very dense and not very friendly for landing and everything.
+[ 1378.8] But it's going to be very unique and buried everywhere on the planet.
+[ 1383.2] So you might have very different experiences depending on where you are.
+[ 1386.3] We did see some areas where there were paths carved through the jungle and the forest and stuff.
+[ 1393.5] So it is possible to create paths and stuff through this stuff.
+[ 1401.4] Technically, yeah.
+[ 1402.7] But they would also just happen naturally based on what data we put into the system and what our fertile soil is in certain areas.
+[ 1409.7] And maybe that was washing it away and then you have like a path cleared out from certain species of vegetation.
+[ 1416.3] I don't want to grow there or there's more.
+[ 1418.4] I'm not going to say more rocks there, but there could be more rocks that are enough for vegetation to grow.
+[ 1423.4] But stuff like that.
+[ 1424.8] And it's all going to be more more systemic and also more physically plausible.
+[ 1430.4] We won't have rocks everywhere anymore.
+[ 1432.1] They will be where they would be deposited based on erosion of hydraulic or thermal nature.
+[ 1439.6] So yeah.
+[ 1440.4] Okay.
+[ 1440.9] So I'll be married.
+[ 1442.4] All right.
+[ 1442.6] So if paths generate naturally and stuff through the system with the rule set and everything.
+[ 1449.5] Well traveled paths eventually begin to you to get started to get wider and they start to form what some people might refer to as roads.
+[ 1461.5] Anything you want to tell us about roads?
+[ 1467.5] I don't.
+[ 1469.0] I can say I can say regarding roads is that it's.
+[ 1475.2] Definitely something we want to do a lot of the river tech when it was made was made with kind of like.
+[ 1482.2] And roads in mind in terms of there's a lot of similarities in terms of kind of like dynamically creating and destroying things as you approach it on a cross along spline.
+[ 1492.7] Because if you just load a mesh for 100 kilometer road, that's also not going to work.
+[ 1496.8] But it takes some time and some investment into the tooling and it's making the assets and getting designed and so on.
+[ 1503.0] It's we want to approach it.
+[ 1505.3] We're not approaching it this second.
+[ 1509.3] Yeah, just to add to that we've got.
+[ 1511.3] Yeah, we'll still a lot of the groundwork for that.
+[ 1513.0] So on the planet side, we kind of a lot of the work has been done or wouldn't take much to go to take it further.
+[ 1519.5] You know, there's not a huge difference on the planet side between a river and a road.
+[ 1524.0] Where the work remains is there's a bit of graphics work to do.
+[ 1526.8] Obviously a word doesn't look like a river.
+[ 1528.5] We need whatever.
+[ 1530.0] Stylistically, we need to change that.
+[ 1532.2] And presumably, you know, the whatever assets would be distributed at the side of the road would be slightly different to a river.
+[ 1538.5] But probably the biggest differences we assume it would come from StarCutect.
+[ 1542.3] Like we have to place all these locations on the planet and then we have to figure out what would be the logical distribution of roads.
+[ 1549.0] There would need to be rules that you know, does this planet support roads is the areas of the planet that will and won't have roads.
+[ 1555.2] You know, maybe outlaw bases don't have roads.
+[ 1557.2] They don't maybe want to be signposted with a big motorway to an outlaw base, but you know, some places will.
+[ 1563.0] So it's that element that is the biggest part that's missing.
+[ 1567.0] And then obviously there'll be a bit of once you have decided to connect to towns or locations, there's some code to figure out what is the best path to get between these two.
+[ 1574.8] Do I carve straight through every mountain side or should I weave around them?
+[ 1579.8] So there's a bit there.
+[ 1580.8] So on the planet side, we've kind of done it that mostly on the tool side, we're deciding where the roads would go and then a little bit of graphics to actually make it look like a road.
+[ 1590.5] Literally since planets were first introduced in 3.0, this roads have been the most pressing and recurring question.
+[ 1598.0] Anytime we talk about planet tech on either ISC or SC out.
+[ 1603.2] So it was a few years ago.
+[ 1605.8] It was like, oh, where's the road going?
+[ 1607.8] You know, I'm driving out of Hurston.
+[ 1609.8] Now we have a plan.
+[ 1611.7] There will be somewhere to go.
+[ 1612.5] So at least there's there's a good reason for it now.
+[ 1614.8] Fair enough.
+[ 1616.0] Fair enough.
+[ 1616.5] It's a good answer.
+[ 1617.2] I think folks will appreciate your candor on this.
+[ 1620.7] Let's jump back into weather.
+[ 1625.0] If it stops raining, will the puddles and ground remain wet for a while or will they dry out immediately?
+[ 1632.7] Yes, we've recently just changed that.
+[ 1634.2] So it does do what you would hope it would do.
+[ 1636.5] So it keeps track of the average amount of water in the ground and evaporates over time using a physically plausible model,
+[ 1645.5] which we tweak to be a cross between whether you want it realistic or what feels good for the gameplay based on the scale of our planets, the wind speed and stuff.
+[ 1654.8] Yeah, it will stay wet for some period of time after the rain has passed.
+[ 1659.7] All good there.
+[ 1661.2] Cool.
+[ 1662.0] And I don't know if this is a weather question, but you know, some somebody's thinking creatively if you die in the water, for instance, in a swamp or whatever, do you float?
+[ 1676.5] All we can recommend there is to take a really good friend with you to an ocean or a lake on Microtech, shoot them in the head and see what happens.
+[ 1685.8] You mean do that right now?
+[ 1688.2] Be my guest.
+[ 1690.2] Okay.
+[ 1693.2] Just the views and opinions of Will Hain do not represent those of Cloud Empirion Games, Robert Space Industries or its subsidiaries.
+[ 1702.2] Will we ever see, go back to acid distribution, will we ever see lakes, ponds, waterfalls, cliffs or deep ravines?
+[ 1711.3] I mean, you already see lakes.
+[ 1712.4] There's what 15 of them on Microtech and about 18 of them on Hurston.
+[ 1718.0] We want to take a look at things like smaller ponds that might form without kind of a necessary or a visible water source, but it's not kind of scheduled or roadmapped.
+[ 1729.5] And along with waterfalls and deep ravines, it's stuff that we want to be able to do.
+[ 1735.2] And we are approaching a place where we're in a better position to implement that, but they're not kind of like things that we have tasked out and planned out.
+[ 1745.0] Cliffs is something we are going to take a better look at as part of the current planned work for Genesis.
+[ 1752.0] People are always sharing that old Canyon screenshot from Daimar and that wasn't a viable way of doing that across a planet, but we're hoping to come up with a more holistic approach for doing these cliffs.
+[ 1765.0] And we've already improved the cliff rendering in terms of what is shown on the terrain mesh itself, which is a big part of what's missing at the moment.
+[ 1775.0] So yes, on that one and the others are kind of like from the from my heart, I want to do them, but I have to wait for my heart to match the bullet points on paper.
+[ 1785.0] Fair enough.
+[ 1785.5] Fair enough.
+[ 1788.5] Graham, any questions more a follow up to the Stardio presentation from last year, but we'll get into it.
+[ 1796.5] So Stardio looks great.
+[ 1798.5] However, the audio engine in-game is already having a hard time.
+[ 1803.0] Weapons sound stop randomly and some audio simply doesn't work.
+[ 1807.0] Is this technology a replacement of the entire audio engine or simply an extension of the system we have now?
+[ 1813.0] So it's absolutely been designed as a replacement.
+[ 1817.0] Some of those issues that you hear are due to some fairly naive culling of sounds, which obviously in Star Citizen you can't predict what's going to happen.
+[ 1827.0] We have a very limited budget for how many sounds we can play, how many ships we can play sounds for, things like that.
+[ 1832.0] And Stardio is absolutely planned to replace all of this stuff and improve all of these situations.
+[ 1837.5] So in the example of weapon fire cutting out, we have a much more intelligent budgeting system that will take into account the sort of importance of those sounds to the player at that moment, whether they're visible on screen, how close they are, how many other sounds in the sort of similar categories are playing.
+[ 1856.5] So we can definitely improve all those things with Stardio.
+[ 1861.0] It's just the case of working through all our systems because we have audio systems hooked into pretty much everything the game can do.
+[ 1868.0] So we need to work through all those things one by one and get them all hooked into Stardio.
+[ 1873.0] And eventually, sometime down the line, we won't have any of the old system.
+[ 1877.5] I'm going to follow up here.
+[ 1879.0] Karisaki in the chat simply asks, audio race tracing?
+[ 1884.0] It's something we've talked about a little in the past, myself and Ali, but never really been able to dive into it deeply.
+[ 1894.3] But it's certainly something I'd like to revisit because, you know, for things like reverbs, for understanding what materials are present in a room, understanding the damping effects of those materials, that's something that we really would need something like ray tracing to help us with.
+[ 1911.3] Yeah, but let's let the graphics to their side of ray tracing first and then maybe we can talk after that.
+[ 1920.3] Fair enough.
+[ 1922.3] Looks like maybe it's a stark attack question.
+[ 1927.8] Any plans near or far to incorporate ancient alien ruins slash bunkers into the dynamic planetary systems?
+[ 1935.3] This person thinks it would be cool to uncover lore and a possible storyline about ancient galactic civilizations.
+[ 1942.3] That would be so cool.
+[ 1945.1] And maybe we'll do it, but we'll be lame if you spoil it now, right?
+[ 1950.6] Can't tell you the things you need to discover until you discover them.
+[ 1954.1] Yeah.
+[ 1955.1] I will say the scenes for such things have already been planted with things like this here for the past.
+[ 1966.6] Those who recognize what that is from Citizen Gone New Year past.
+[ 1970.6] It's still like that.
+[ 1971.6] So yes, we don't want to spoil that, but I think you'll be happy at some point.
+[ 1979.2] Let's look back to are there any plans for variable planet rotation speeds?
+[ 1988.2] Obliquity.
+[ 1990.2] There's not worry.
+[ 1991.7] We don't say every day obliquity axial tilt orbit eccentricity and atmosphere makeup or lack thereof.
+[ 2001.8] As far as our side goes for planet orbiting, it could be turned on, but it's going to make quantum traveling anywhere very difficult because the system isn't kind of set up for that as far as we know.
+[ 2015.8] In terms of more complex kind of orbit, most of those things are totally possible with the systems that we have in place.
+[ 2025.3] We would depend on design and law to explain maybe why we want some of those things.
+[ 2030.8] But yes, one of the things that we do need to do, of course, is axial tilt to match our seasons.
+[ 2037.3] The seasons are going to be coming and actually we don't need to wait unlike orbit.
+[ 2041.3] We don't need to wait for any other system to turn on seasons.
+[ 2045.3] We could turn on the seasons and just have it know where the tilt would be even if we can't tilt or move the planets yet.
+[ 2052.3] So that is dependent on us finishing out that stuff and finishing out the content in terms of making it look right and so on.
+[ 2058.8] But yes, very excited for this sort of stuff to come online when it does.
+[ 2063.3] You bring up a good point that sometimes even if a thing is technically capable, you can't turn it on or enable it because of other game-related systems that will break or aren't quite ready for it like the quantum travel system.
+[ 2079.8] That's a good, I'm glad you pointed that out.
+[ 2081.8] Will planets such as Microtech get snowfall and snow accumulation?
+[ 2093.6] So it will be five.
+[ 2097.1] Obviously we need to revisit some of the data that every planet is based on and the goal is more physical possibility and this is definitely a big part of what we want to do.
+[ 2108.6] Will has talked about the separation of different layers and snow being the last one.
+[ 2112.6] Obviously it makes sense to drive this purely by climate and temperature being the most important one for that.
+[ 2119.1] So yeah, there will be a technical requirement to do that and obviously we really want to do it as well just for more consistent, more believable planets.
+[ 2128.1] It's going to be good, I think.
+[ 2130.6] Is this one of those things?
+[ 2132.6] Okay.
+[ 2133.6] No.
+[ 2135.1] Oh, I thought that.
+[ 2136.1] Will we be able to build snowmen?
+[ 2138.6] That's for physics probably and graphics, not me.
+[ 2143.1] Who knows?
+[ 2144.1] Ali, snowmen?
+[ 2150.3] I mean, I'd probably be looking for leaving a snow trail and yellow snow before we get to snowmen.
+[ 2157.8] Is this one of those things where snowfall might come before snow accumulation or is this one of those things where it's a one-one, you don't get one without the other?
+[ 2167.3] So we, like I mentioned earlier, we haven't decided for certain yet with directors which weather systems will come first and obviously the more we work on whether or the less we work on some of the other aspects of Genesis.
+[ 2181.3] So some of that is still to be decided.
+[ 2184.3] But if snow was to become a thing, then it would be easier for us to release snow in places where it already has snow on the ground.
+[ 2193.3] That would be a much easier thing for us to deliver.
+[ 2195.3] So that would be a potential shorter route for us to make it snow in somewhere that has never had snow.
+[ 2202.3] There's a few extra technical challenges there.
+[ 2204.3] We have to build up the snow and then we have to make sure the assets that are there, all the trees and rocks support that technology.
+[ 2211.3] So there might be asset touch-ups to be done.
+[ 2214.3] So it's a bit more complicated for that side of it and then to have the snow evaporate over time, melt.
+[ 2220.3] So yes, so snowing on micro-tech is more likely to happen before snowing at the poles of a more temperate planet.
+[ 2229.3] Okay.
+[ 2233.3] With the implementation of Genesis and the next iteration of planet tech and stuff, will planets like micro-tech be adapted to have biomes located in the correct places based on latitude?
+[ 2246.3] For example, frozen biomes around the poles and temperate forests around the equators?
+[ 2251.3] Yeah, I think it's basically the same answer on the last question as well.
+[ 2257.8] It needs to be, we need to make it all more plausible and the data will be and then it'll just happen.
+[ 2264.8] Fair enough.
+[ 2266.8] We kind of need for the weather, we need the data to be more physically correct so that the weather can match.
+[ 2274.8] We can't have it snowing somewhere that's 20 degrees Celsius.
+[ 2279.8] So yeah, so it comes hand in hand, the weather will be based on physically based stuff, but then Seb has to make sure the planets are following them, physically based rules.
+[ 2289.8] With V5, it'll be automatic with the new planets, but when it comes to the older planets, we'll have to touch them up to make sure they do, but they are plausible.
+[ 2298.8] Okay.
+[ 2299.8] So we'll have to make some bits yet more snowy or less snowy as that happens to make sure it all makes sense physically.
+[ 2305.8] Okay.
+[ 2309.1] Will the mud, well, okay, let's look at two point, two part question here.
+[ 2315.1] Will rains create mud?
+[ 2318.1] Yes.
+[ 2322.0] One of the design points for the new planet shader is that the different soil categories like the kind of visual appearance of soil will kind of have a matching set of what they look like in different amounts of humidity.
+[ 2336.0] So you'll have a cracked clay and a cracked soil and whatever.
+[ 2340.0] And then you'll have a damp and then a saturated and then like an oversaturated.
+[ 2345.0] And then, you know, I've just pulled those categories out, but something like that.
+[ 2348.0] So that's kind of based from the beginning that we want to incorporate that into our data.
+[ 2353.0] And then we will, so some of it will come from static data like being next to a river or just being in an area where there is higher water availability, but then kind of transitioning these based on local rainfall is definitely part of the plan.
+[ 2367.0] Yeah.
+[ 2368.0] The second part of this question is whether that mud that's created from the rain will affect the term that uses crossability, but basically uneven terrain or difficulty in D&D we call it will make it for difficult terrain for people on foot or in wheeled vehicles.
+[ 2387.0] We can report the surface type back to physics and then other systems can change their behavior based on that.
+[ 2395.0] I don't want to speak for all the other systems that would have to then come and change their behavior so that the physics on the on the on the wheeled vehicles and the access and so on.
+[ 2406.0] But all of these systems already do respect different surface types.
+[ 2410.0] And audio is another important one of course as well because soil and mud sound very different.
+[ 2414.0] So by changing the surface type at some sort of threshold, we hope to be able to provide the information needed for this to the systems that would then change those behaviors.
+[ 2425.0] Yeah, this is one of the.
+[ 2428.0] And so I don't know.
+[ 2431.0] I'm trying to think of what I'm trying to say here.
+[ 2434.0] Only star citizens and then I mean this is a compliment would hope that rain would create mud that would create difficulty traversing and accomplishing their their goals.
+[ 2447.0] It's a it's a it's one of the shared interests between us and our fan base here.
+[ 2452.0] I love that I love that question is basically what I'm trying to get at.
+[ 2455.0] And I hope it's something that materializes.
+[ 2460.0] Do clouds move in one direction across the planet, or are they actually dynamic and moving all directions forming cool patterns from space?
+[ 2470.0] All right.
+[ 2472.0] Conceptually, obviously we've looked at a lot of papers and weather simulations and how clouds more form and move on Earth.
+[ 2482.0] And conceptually, they will follow the general planets rotation from orbit and from a larger picture point of view.
+[ 2492.0] They will be deviating from the direction though, just so you get like what you get in nature.
+[ 2497.0] Obviously, we might not be able to do the full thing or they running a full weather simulation on the servers might be problematic for performance, to say the least.
+[ 2506.0] So we're trying to make it as efficient as possible, but also look the best.
+[ 2511.0] So they will be able to deviate from the primary direction they're moving in.
+[ 2515.0] How far we can push this we don't fully know yet.
+[ 2518.0] So we're still exploring what we can do with the tech, how we can improve it a little bit further, and what we can do with the data to make it do more with the same amount ideally.
+[ 2528.0] But yeah, we definitely plan to have very varying weather patterns moving all over the planet in believable ways based on the data that the planet is providing.
+[ 2541.0] Okay.
+[ 2543.0] I want to throw two questions from the chat in here.
+[ 2546.0] The first is from Jesus Pug, first time chatter.
+[ 2552.0] Can we cut down trees?
+[ 2556.5] What is in today?
+[ 2557.5] No, as in the spec for what we're working towards.
+[ 2562.5] We are incorporating some kind of technology decisions into our tech at the moment that will allow us to better kind of support individual behaviors on assets,
+[ 2576.5] which is a long-winded way of saying that there's a lot of stuff that goes into being able to scatter 20 million trees across the planet,
+[ 2586.5] and then being able to point at one of them and say, I want you to be chopped down.
+[ 2593.5] But we're bearing it in mind.
+[ 2596.5] Good answer.
+[ 2597.5] That's how I'm going to leave that.
+[ 2598.5] No, good answer.
+[ 2599.5] I knew I could trust you to answer the curveball.
+[ 2604.5] The other question is the current question that's dominating the chat right now, and that's what any of this means for our corp.
+[ 2613.5] Our corp is not built like any of our other planets.
+[ 2618.6] Everybody knows that.
+[ 2619.6] It's not built with the planet tech system.
+[ 2622.6] Does weather come to our corp?
+[ 2625.6] Do any of these features come to our corp?
+[ 2627.6] And can any of these features be used to improve or further develop our corp in the future?
+[ 2633.6] Or is that something entirely different?
+[ 2636.6] I mean, our corp does use the planet tech.
+[ 2639.6] There's a lot of special cases on our corp.
+[ 2643.6] It shaded differently.
+[ 2645.6] We kind of abuse the system a little bit to get the results we want on our corp, to say the least.
+[ 2652.6] It probably will be a similar story.
+[ 2654.6] We're not planning on spending a year making bespoke our corp tech.
+[ 2660.6] But there is parts of the new system that we're hoping will allow improvements on our corp.
+[ 2667.6] Obviously, things about, you know, the amount of light that will gather underneath a tree and whether a fern can grow isn't really relevant.
+[ 2676.6] But there are many other parts that are relevant with like the density, with the way we position things.
+[ 2682.6] We will, we type of intentionally kind of randomize.
+[ 2686.6] We have a grid pattern for where we're going to put things, but then we randomize it.
+[ 2689.6] We kind of just remove that randomization and get an actual grid pattern more naturally.
+[ 2694.6] And yeah, a lot of these rule sets, they're built for nature, but some of them, again, will, will, they're more powerful this time.
+[ 2701.6] So we might be able to abuse them again to get something nice out of our corp.
+[ 2705.6] But that type of, we're not focusing on that at the moment.
+[ 2708.6] We're making sure that we can deliver every other planet.
+[ 2711.6] And we're hopeful that we will then be able to do something nice with our corp at the end as a result.
+[ 2717.6] Because all planets must eventually use this tech.
+[ 2719.6] There was no option long term.
+[ 2721.6] They all must use it.
+[ 2722.6] It's just a question of how much we have to change to make it suitable for our corp.
+[ 2727.6] And we won't fully know yet until we give it a bash.
+[ 2730.6] Our corp is a natural abomination.
+[ 2733.6] It'll definitely get weather though.
+[ 2735.6] That much, I think we can say.
+[ 2737.6] It'll definitely get weather.
+[ 2739.6] Okay. Very cool.
+[ 2741.6] Will Genesis allow for more realistic placement of mining nodes being placed on the areas of exposed rock layers like cliffs instead of being randomly scattered on a planet's surface?
+[ 2754.6] That's definitely in the cards for sure.
+[ 2760.3] I don't know if we really want to talk about the whole entity thing, but conceptually, yeah, we'll definitely be able to have them.
+[ 2768.3] But now they're tied to the biome they're in, but in the future we can be more specific and spawn them on cliff sides or where the rocks fall down at the base of a cliff and then you will find them there and stuff like that.
+[ 2781.3] It's definitely possible, I think.
+[ 2784.3] I mean, yeah, I think we want to treat a harvestable like any other asset in that if it's a mining rock, we want to spawn it according to parameters that we would spawn a regular rock.
+[ 2797.3] We kind of don't care whether it's a, here's a game entity that you can mine versus here's a static piece of geo.
+[ 2805.3] We kind of want to do them with the same rules and it'd be the same for the because you get those are the revenant trees that you go and no revenants and bushes then there's the heart of the forest tree or whatever.
+[ 2816.3] We want to scatter them just like any other vegetation based on the same data and the same rules.
+[ 2821.3] So if you're asking is it going to be more realistic, then I would say yes.
+[ 2826.3] I think so I've also alluded to the new kind of entity management spawning East stuff.
+[ 2832.3] I don't think I was going to help the specificity of the locations, but it's definitely going to help the density of these things.
+[ 2840.3] And I won't elaborate into that right now because that's the managed entity system is a very techie boring subject that you can't cover without a TED talk.
+[ 2853.3] Well, now we know what we're doing early next year.
+[ 2856.3] I'll come by your desk on Monday and talk to you about it.
+[ 2861.3] Graham, so you talked up you mentioned that Starr audio is intended as a complete replacement of the current audio engine system.
+[ 2871.3] We've been talking about Starr audio for a little while we introduced it I believe last year at CitizenCon.
+[ 2877.3] What are the blockers remaining?
+[ 2880.3] What's between us now and the eventual implementation swap out of the system?
+[ 2889.5] Well, some of the biggest blockers are just the sheer volume of systems that we have running and the design of Starr audio is that we take all the features that are embedded in those game systems and make them all part of the engine.
+[ 2905.5] And we're chipping away at that.
+[ 2907.5] So that's the biggest blocker for it to be covering everything is that we need to have every single possible audio feature covered within the engine.
+[ 2915.5] Right now there's a lot of game code, a lot of very specific code for certain situations that's been designed for those specific situations.
+[ 2923.5] So it's all about making everything as generic as possible and making all these features available to whichever game system wants to use them.
+[ 2931.5] So the biggest blocker is the sheer volume of work involved. That's the only way I could put it.
+[ 2940.5] Will large ships be able to compress trees and plants to land in these dense forests?
+[ 2948.9] We talked about the pads and everything but what if we just try to force it?
+[ 2952.9] This is kind of linked to what I said before with chopping down trees.
+[ 2957.9] There's kind of a few complications that come here.
+[ 2962.9] If you think about I want to knock over a tree in my ship that sounds like a simple behavior, but there's all the gameplay stuff about how you would go around and chop a tree and the kind of design behavior from that.
+[ 2976.9] And so none of that's done. So we need to wait for that.
+[ 2978.9] And then from our end, there's kind of three core bits that we need to worry about.
+[ 2983.9] There's promotion, which is taking our very kind of highly optimized tree asset that renders in a particular way and is spawned by particular system and replacing that with something that we can interact with and uniquely address and tell what to do.
+[ 2998.9] There's the management system, which I alluded to, which is essentially about making spawning of entities server meshing friendly and persistent.
+[ 3008.9] And then there's persistence itself, which is kind of like, okay, what you've crushed a forest with the ridgress.
+[ 3014.9] There were what 700 trees under there that we now need to remember have not done something and actually just creating 700 entities and chucking them in the entity graph is not an efficient way of going.
+[ 3028.9] So we need to make complex decisions like if a tree becomes fallen over next to your base, you probably care about that tree.
+[ 3036.9] But if you knock over 500 trees on your way to new Babbage, we could probably come up with something different to record that there are fallen trees in this area, but not 700 unique entities for each fallen tree.
+[ 3051.9] So there's a whole ton of work that goes into stuff like this and it's not even like, it's not even really kind of planned for or guaranteed at this point.
+[ 3061.9] All I'll say is that we want our system to be able to support more complex behavior and start to approach these problems.
+[ 3069.9] I don't know if Ali or Seb wants to give anything more on that, but absolutely do not take this as any sort of guaranteeing just that.
+[ 3079.9] So I guess the only thing that I did is the problems of like well said are keeping track of how many trees.
+[ 3086.9] If you press your address 10,000 times and now there's a million trees that are being chopped down, we have some serious issues to figure out there.
+[ 3094.9] And there's obviously, Seb's staying quiet, but obviously if we want to chop trees, Seb has a lot of work to do.
+[ 3101.9] Unless they're just going to evaporate in a puff of smoke, that makes life easier.
+[ 3106.9] But yeah, if they if it depends on the level of destruction they're going to get.
+[ 3110.9] That also affects the entity graph stuff, you know, it's whether we just remember 700 trees had gone away with just 700 bits of data, or whether we have to remember that 700 trees have been carved up into 75 pieces and scattered around the universe.
+[ 3124.9] And if we have to remember that, then that's obviously more for the entity graph and the network people will be angry at us if we push it too hard.
+[ 3133.9] Yeah, yeah, so some things to work with type of on the path we know there's a momentum heat or a black hole dragon is in that direction so we are paving the way for these kinds of decisions.
+[ 3144.9] So it's not plausible, but we're paving the way so that the decisions can be made as to the specific, you know, how many trees can they be chopped or they just blow up and fall over and you know, yeah, there's lots to be figured out in specific.
+[ 3157.9] Yeah, it's a paving the way for this kind of thing.
+[ 3160.9] It's a slippery slope from being able to chop down one tree with an axe or a chainsaw to crashing your javelin shallowly like the like the enterprise saucer section and generations and just taking out a three kilometer wide swath of trees and micro tech, which is exactly what people will attempt to do.
+[ 3182.9] So in another game, you might say that the trees grow back in 10 minutes, but that's kind of not our game is it so we have to deal with the type of level of realism, or aiming for implications of that.
+[ 3194.9] It's a little bit harder.
+[ 3195.9] If you're going to gamify this, we could make a lot simpler.
+[ 3198.9] Yeah.
+[ 3200.9] Drake is in the chat is like he almost said three mile I'm trying.
+[ 3204.9] I've been living in the UK for two and a half years now I'm trying I'm trying really hard to convert to kilometers.
+[ 3209.9] It's not easy.
+[ 3214.9] In how much detail will planetary data be used to shape weather patterns and what weather are you looking to simulate.
+[ 3224.4] All right.
+[ 3225.4] So since we need to address the whole general before data was five data anyway for the planets and the clouds are just part of that process anyway, like they will come out of the same tool set basically.
+[ 3237.4] Our aim is to have a default weather behavior for planets.
+[ 3242.4] If you generate a generic planet, it will just create ideally the weather patterns for cold air moving underneath warm air, pushing it up, causing cumulus clouds to form into cumulonimbus clouds.
+[ 3256.4] I hate that word, but and everything in between ideally, and then also having warm air moving over cold air, which will cause the straightest family of clouds to form.
+[ 3268.4] And that's like our default behavior we want to do for every plant if we need to.
+[ 3273.4] And on top of that, there will obviously be different things as in you have like a very plan was specific need for certain weather pattern or like very different or alien planets with alien clouds, whatever that means we don't know yet.
+[ 3289.4] And we just try to do that as well.
+[ 3292.4] But the idea is that we can cover as many different cloud types as possible with the resources we have and then vary it based on planets, individual planet needs.
+[ 3307.4] Why do you hate cumulonimbus?
+[ 3311.4] It's a very hard word to say.
+[ 3313.4] They're really great.
+[ 3314.4] I love the clouds themselves and they're really good and they're the only ones that make lightning really good.
+[ 3319.4] So more or less some exceptions.
+[ 3322.4] All right.
+[ 3323.4] All right, we're in the end game here.
+[ 3325.4] Last weather question.
+[ 3327.4] Any plans for nature's wrath beyond lightning strikes?
+[ 3331.4] We're going to get as crazy as tornadoes, hurricanes, typhoons.
+[ 3335.4] How crazy are we aiming to go with this?
+[ 3338.4] I mean, hurricanes and typhoons, the same thing, just different names depending on where you are on the planet.
+[ 3346.4] It's just like very strong winds and from orbit just this giant circling weather front moving around.
+[ 3355.4] We might not be able to do it like that from orbit.
+[ 3358.4] We'll definitely be able to turn up the knob a little bit on what our weather looks like compared to what you've seen the citizen gone.
+[ 3364.4] Obviously needs a lot of work from different departments to make this all a coherent experience.
+[ 3370.4] Tornadoes, it's not really a weather cloud thing.
+[ 3375.4] They move at a very different rate than the clouds will be able to move.
+[ 3378.4] So it would be more on the effects and graphics and I don't want to commit them to do anything that they might not be able to support anytime soon.
+[ 3386.4] But yeah, definitely we will have certain plans with cyclones on them.
+[ 3391.4] If they will move the way they do in nature, we'll need to see how far we can push the system or if they will be a little bit less.
+[ 3398.4] But yeah, I don't know yet. We'll see.
+[ 3400.4] We're still learning. We're still working with the data and the tools and expanding them, exploring them, making better data.
+[ 3407.4] You can expect a lot of iteration for the weather over the next few months and maybe years.
+[ 3414.4] Allie, any thoughts on Aurora Borealis?
+[ 3420.4] That one does actually come up a bit.
+[ 3423.4] We would kind of like that one.
+[ 3426.4] All of the stuff in the atmosphere ends up being quite difficult, though, especially when the interactivity to us, so the clouds and the atmosphere in the same volume and then the rain is covering the same and then the ground fog.
+[ 3441.4] These things are all overlapping and quite problematic.
+[ 3444.4] For the Aurora Borealis, I take it. I mean, I'm not looking at the science, but I assume it's always above the cloud layer, isn't it?
+[ 3450.4] And if it is, that at least simplifies the problem a bit for the rendering side.
+[ 3455.4] We've certainly made accidents that look like Aurora before in VFX and graphics, usually bugs, sometimes intentional from artists.
+[ 3464.4] Yeah, that's one I quite like personally, and it's possibly easier than some of the others.
+[ 3469.4] But it's also quite separate. We have to intentionally decide we're going to stop doing this.
+[ 3475.4] Aurora is what we want to do. We haven't quite had the creative direction telling us to do that now.
+[ 3482.4] Maybe we want Aurora for this next release, but it's certainly plausible.
+[ 3485.4] That came from up above.
+[ 3489.4] Okay.
+[ 3490.4] Last two questions.
+[ 3493.4] Here's an oldie but a goodie.
+[ 3495.4] Will planets ever be scaled up more than their one eighth size to real life for more realism as it is the mountains feel small?
+[ 3507.4] Write a check, Will.
+[ 3512.0] Right.
+[ 3514.0] I think we'd like that because we feel the small too, especially as we introduce more and more advanced atmosphere.
+[ 3522.0] It kind of breaks our nice illusion that our planets are full scale, which I hope all of you continue to believe because I certainly do in my heart.
+[ 3532.0] The thing about bigger planets is it stretches the complications with precision more, which we're hoping to be able to do away with, but that's one problem.
+[ 3542.0] Obviously, we need high resolution textures at the moment.
+[ 3545.0] If we have a global texture and it's say 2k, that gives us a certain number of kilometers per pixel.
+[ 3550.0] And obviously we have local data too.
+[ 3552.0] But if we make a planet have twice the surface area, then suddenly we have half as much resolution for the same kind of budget.
+[ 3559.0] So we need to consider those decisions and consider how the tech can deal with that.
+[ 3563.0] But you also get kind of game pro problems with that as well.
+[ 3566.0] If I make a real life size planet, we have fast ships, but like suddenly getting from one place to another takes 10 times as long.
+[ 3574.0] And it's not necessarily good for gameplay to have that.
+[ 3579.0] So it's a convoluted question.
+[ 3583.0] We appreciate the reason that people are asking though we feel the same.
+[ 3587.0] But also there's a certain amount of the why question, which I guess you can ask for a lot of our features, which is what we have works, what we have is great.
+[ 3597.0] Should we invest more time in making it bigger?
+[ 3600.0] Is that a good use of our time versus going and doing rivers too or finishing out something else sooner?
+[ 3607.0] Roads.
+[ 3608.0] Whatever. Roads.
+[ 3610.0] So if you put up a poll that said roads versus bigger planets, I bet roads would win.
+[ 3616.0] So yeah.
+[ 3618.0] The eight times is probably, you know, like say, it probably pushes all of them aspects too much, you know, too low res is too much memory.
+[ 3627.0] It's too much of a knock on for the gameplay.
+[ 3629.0] A small increment would be more appealing, I think, you know, like a doubling or something like that.
+[ 3634.0] Because just being able to double the scale of our mountains would be nice and double the scale of our global features, you know, mountain ranges would be nice.
+[ 3643.0] So something two or three X, we know would be more to your but eight X pushing a few too many areas at the same time, probably for.
+[ 3651.0] And yeah, and then the other thing we talked about, we didn't mention is content density.
+[ 3655.0] We have to fill it with stuff as well.
+[ 3657.0] We'll see with start to take totally helps fill that gap of it, but we just don't want to like if the current game we don't want to put things miles apart as we start to see the the product of start to take to make me able to see.
+[ 3671.0] Okay, yeah, the things are feeling too crammed, you know, claustrophobic.
+[ 3676.0] Maybe we do need a bit more space and we'll try and explore that.
+[ 3679.0] Yeah, probably a X is probably pushing it, I think.
+[ 3683.0] And the last question.
+[ 3686.0] Rock distribution.
+[ 3689.6] I got to ask about rock distribution.
+[ 3691.6] You mentioned a little bit of its citizen con and these things.
+[ 3693.6] I know all not all these systems come online at the at the same time.
+[ 3697.6] I think that's the reason why we're doing this.
+[ 3699.6] A lot of the a lot of the desire for roads.
+[ 3702.6] I think besides the aesthetic stuff comes from the incredibly disastrous and detrimental nature of of rock distribution on ground vehicles.
+[ 3713.6] Is there some hope for us in the future of make of thinning these out a bit and making that making the ground vehicle experience, even as we wait for roads a little more pleasant for people.
+[ 3728.8] I mean, we can finally do then sign better vegetation.
+[ 3732.8] So maybe we can do less rocks now.
+[ 3735.8] But we do love rocks.
+[ 3737.8] I know, but I'm getting aside with the new local data.
+[ 3740.8] It will be the distribution will be different.
+[ 3743.8] It will not be as even anymore.
+[ 3746.8] The big rocks will be more out of the way to some extent.
+[ 3749.8] And it will be more obvious where they are.
+[ 3752.8] Most likely be able to drive much further without being constantly thrown around by hitting a rock.
+[ 3760.8] Yeah, it's not like we won't ever have places that do have a lot of rocks, but hopefully the most common snow it might be.
+[ 3765.8] I'm driving down a valley.
+[ 3766.8] There's a nice clear path down here, but upon the on the sides, there's like, you know, you can see the big piles of rocks coming down your side, but you can kind of make a clear path.
+[ 3775.8] And it's not like just a random roll of dice, whether you know rock like immediately in front of you.
+[ 3781.8] So we're hoping it feels better.
+[ 3783.8] But until we have a finish or plan it, drive along it, speed, you know, we'll have to see.
+[ 3788.8] But yeah, we're hoping this leads to much more realistic.
+[ 3793.8] Cool.
+[ 3794.8] And if it doesn't, I know where you all sit.
+[ 3799.1] I'm in Germany.
+[ 3800.1] I'm sorry.
+[ 3801.1] For a while at least.
+[ 3803.1] I can get to Germany.
+[ 3804.1] I can get to Germany.
+[ 3805.1] I can find you.
+[ 3806.1] All right, folks.
+[ 3807.1] Thanks so much.
+[ 3808.1] That was a great show.
+[ 3810.1] I think folks in the chat and if I can speak for the YouTube viewers later, we really appreciate your candor and information on a variety of topics related to star engine and Genesis.
+[ 3820.1] So thank you so much.
+[ 3822.1] Graham, thank you for hanging out with us.
+[ 3825.1] I know we only had a couple of questions for you, but you stuck it out like a champ and your answers were really great.
+[ 3830.1] I think folks are really looking forward to a star audio and the wealth of improvements it's going to make for the star citizen experience.
+[ 3838.1] That's it for this week's show.
+[ 3839.1] If you haven't checked out yesterday's ISE that was with Ben Juan, members of the UK networking team about all the different tech preview tests that are going on right now as we head to 4.0 in that release.
+[ 3852.1] Next week is IAE and something a bit different.
+[ 3856.1] There won't be an SCL next Friday.
+[ 3859.1] There will be something different in the place of ISE and SCL next week on Friday.
+[ 3865.1] So be sure you check that out.
+[ 3867.1] For SCL, I'm Jared.
+[ 3869.1] That's Pete on the dials.
+[ 3871.1] That's Lauren on the buttons and that was Ali, Will, Seb and Graham with the great answer.
+[ 3878.1] So thanks for watching.
+[ 3879.1] I'm Jared.
+[ 3880.1] Take care everybody.
+[ 3881.1] We'll see you next week on whatever that different thing is.
+[ 3884.1] See you then.

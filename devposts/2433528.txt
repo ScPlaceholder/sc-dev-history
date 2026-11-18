@@ -1,0 +1,70 @@
+## Star Citizen Patch 3.7.0k
+Alpha Patch 3.7.0k has been released to PTU, and is now available to test!  Patch should now show: PTU-3145672.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+We have altered the way we report known issues so that the list is more in depth than before.
+Testing Focus
+- Banu Defender
+- Caves
+- FPS mining, harvesting, and personal inventory
+- ATC crimestat restrictions
+- Ship rental system
+- Vanguard variants
+- The Good Doctor Star Marine map
+- Proximity Assist and Manual VTOL
+- Pirate Swarm Updates
+- New ship weapon Kroneg FL series
+- New FPS weapon attachments
+- Character Customizer v2
+- Mission sharing, mission rewards, and AI service beacons
+Known Issues
+- Quantum linking and spline jumping around a planet may teleport or more of the players into map origin or cause a crash. W/A: Do not use quantum linking.
+- The Mustang Gamma and Omega will overheat when starting the quantum drive.
+- Equipping any of the new Kroneg weapons onto a ship will negatively affect the ship's pitch and roll speed.
+- Snoopy cap appears in hair style options on the character customizer.
+- P-72's ship description contains placeholder text.
+- In Star Marine's Demien Comms enemy indicators can sometimes be seen through walls.
+- There's a chance a vehicle will become unresponsive after quantum travel.
+- CRU-L5 is obstructed from most directions.
+- Darneely uses the wrong audio dialogue when offering a mission.
+- NPC beacons will sometimes display an incorrect distance.
+- Players can not complete the Clovus downed satellite counter mission after killing the opposing player when they are in possession of the computer blade.
+- The video feed for ATC is currently blank.
+- AI ships traveling along a route will often get stuck.
+- Attempting to quantum travel to destinations from orbit of ArcCorp or its moons may result in the player colliding with the surface.
+- Ships can spin excessively out of control when their wing is clipped.
+- Landing illegally and having your ship despawn while a mission box is inside will break mission progress.
+- Players in the same ship may see the ship in different locations.
+- There's a large rectangular area missing from the surface of Daymar around one of the caves.
+- Multiple scope crosshairs are off center when viewed in ADS.
+- Players may crash when loading into the industrial hangar.
+- Players may crash when changing hair back to original when using the character customizer.
+- Ships may display as rented if the player exits to title while a claim is in progress.
+- The reformation distortion scattergun currently has a blue light texture issue.
+- The default hair may be present under other hairstyles.
+## Feature Updates
+Gameplay
+- Lorville and Area18 will now restrict access to anyone with a crimestat, one or higher.  Port Olisar will now up to wanted level 3.
+- Set the arrival radius for NPC service beacons to be closer.
+Ships and Vehicles
+- Adjusted the mass of the Defender slightly.
+## Bug Fixes
+- FOIP animations should correctly play even when the player isn't audio transmitting.
+- Scanning using the multi-tool should now work correctly after an instance crash recovery.
+- Surface harvestables should no longer overlap with rocks.
+- Maintenance mission boxes should no longer vanish when dropped.
+- Cruise control should now hold the ship's speed when the pilot leaves the seat.
+- Caves on Daymar and Hurston should no longer fail to update their mission objectives upon arrival.
+- Scavengable items around cave corpses should no longer vanish when the mission ends.
+- Pirate environmental spawns should no longer be fighting one another.
+- UEC amount in the kiosk should no longer be cut off at higher numbers.
+- Reverb effects should no longer be applied outside or caves.
+- Commodity name text should no longer be cut off in the kiosk.
+- Services (shopping, claims, ect) should no longer deadlock and stop responding.
+Technical
+- Fixed 3 server crashes.
+- Fixed 2 client crashes.

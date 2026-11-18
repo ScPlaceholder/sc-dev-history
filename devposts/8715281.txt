@@ -1,0 +1,59 @@
+## Star Citizen Alpha Patch 4.7
+Alpha Patch 4.7 has been released and is now available to test on the PTU environment!   Patch should now show: VERSION 4.7.0-PTU.11468334.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled (Please let us know of any early LTP issues between ptu builds)
+## Testing/Feedback Focus
+We are expecting blueprints from the previous PTU build to save and appear in tonight's PTU build
+- Stability, Bugfixes, LTP between PTU releases
+- Operation Breaker Station and QV Breaker Stations locations
+- Inventory Rework
+- Crafting Fabricator and Blueprints
+- Engineering Updates
+- Radar Assisted Targeting (Radars components in shops will be arriving in a future PTU patch)
+- Nyx Social Stations
+Known Issues
+Tomorrow's build will have further shop updates to make the radars appear correctly at Omega Pro and to bring fabricators back into refineries
+- The main front elevator of the 890j has been temporarily disabled pending further fixes
+- Multi-System - PU - ASOP Terminal / Locations - Moving the mouse cursor over a different vehicle in the ASOP when attempting to deliver a specific vehicle will deliver the different vehicle instead
+- Multi-System - PU - ASOP Terminal / UI - There is a chance that a blank information of the Vehicle may appear on Hangar Delivery Request using the ASOP Terminal
+- PU - Nyx/Levski - Transit - Going prone whilst in a moving Limbo Elevator Carriage, will cause the player to fall out of the carriage
+- PU - Starmap / MobiGlas / UI - Starmap is zoomed into the ship when in a cockpit instead of showing the system or region of space in
+- PU - Nyx - RCD - Medical Screens / Locations / Medical - Medical imprint cannot be set at the Exclusive Medical Bay locations
+- PU - Nyx - RCD - Locations / Art / Proxy - Breakable Ice entity visibly stays intact after shooting icicles
+- PU - Inventory Rework - UI - Inventory does not update Capacity and Space changes in Personal Inventory
+- Multi-Item - PU - Inventory Rework / Weapons / Art - Some icons become stretched out upon scrolling down the inventory
+- Multi-System - PU - UI / mobiGlas / Starmap - Starmap search bar dropdowns will only show location icons stacked on top of each other
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+## Features & Gameplay
+Gameplay
+Operation Rock Breaker Polish
+Further lighting, minimap, LOD, and performance polish. Slight increase in legendary loot box probability. Set stricter limits for amount of FPS AI a spawn closet can generate.
+Crafting
+Further tweaks to crafting UI for slight adjustments to better align boxes and text and general UI cleanup.
+## Bug Fixes
+https://issue-council.robertsspaceindustries.com/projects/STAR-CITIZEN/issues
+- Potential Fix: Fixed a longstanding issue with audio propagation causing audio such as NPC voicelines and weapons fire to be heard from incorrect distances. This will also affect NPC aggro as audio propagation worked for them as well for hearing combat and attacking from large distances.
+- Potential Fix: PU - Industrial Missions - Salvage / Mining - Missions - Mission objectives are completing, but the mission remains accepted (STARC-196529)
+- Potential Fix: Multi-Item - PU - Inventory / Hologram / UI - Transferring an item between inventories will result to the thumbnail image changing to a hologram (STARC-199408)
+- Potential Fix: PU - Nyx - RCD - VFX / Design - The third lens for the laser is missing the effects that surround the outside
+- Potential Fix: PU - Nyx - RCD - Location / Design - Unpowered Fuse doors open after the power is restored
+- Potential Fix: PU - Inventory Rework / Inventory / Looting - Containers are still accessible even if another player moved it away (STARC-196084)
+- Potential Fix: PU - Missions / AI - Distribution Center (DC) - Eliminate Boss - Mission objective could not be completed due to missing AI (STARC-181430)
+- Potential Fix: Multi-Item - PU - Armor / Lighting / Female Character - There's no light projecting on multiple helmets when flashlight is turned on by female character
+- Potential Fix: PU - Actor / Visor / VFX - Frost and Rain effects are not accumulating on the visor in cold environments
+- Potential Fix: Multivehicle - PU - Ship / Tractor - Tractor Beam Rotate Slower than Expected with Larger Containers (STARC-165151)
+- Potential Fix: PU - Inventory Rework / Looting / Locations - Boxes placed higher than the character's height becomes unlootable (STARC-196103)
+- Potential Fix: Multi-Item - PU - Inventory Rework / Weapons / Art - Some icons become stretched out upon scrolling down the inventory (STARC-196026)
+- Potential Fix: PU - Nyx - Welcome To Nyx - Mission Content / Locations / ATC - QV Station ATC does not allocate a landing spot for the player (STARC-186913)
+- Potential Fix: PU - Nyx - Levski - Actor / Asphyxiation / Locations - No Atmosphere at Cargo Services Windows (STARC-194190)
+- Potential Fix: PU - Nyx - RCD - Collision / Locations - Players can fall through the floor near the elevator door connector at Power Core (STARC-198742)
+- Potential Fix: PU - Multi-System - Location / Art / Lighting - Lighting is in the wrong state in multiple PU locations (STARC-198250)
+- Potential Fix: PU - Camera / UI / Helmets / Actor - The players helmet is covering the camera, blocking the players vision
+- Potential Fix: PU - Crafting / Blueprints - Missions / Hauling - Foxwell hauling missions do not award blueprints
+## Technical
+Tonight’s build has further Nyx entity count updates to help reduce unintended high amounts
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash
+- Fixed a Hybrid-Service Crash
+- Fixed a Mainthread Deadlock

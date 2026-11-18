@@ -1,0 +1,25 @@
+Alpha Patch 4.10.2 is now available to test on the PTU environment! Patch should now show: VERSION 4.10.2-PTU.12839153
+- Audience: Wave 3
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Event missions in Stanton
+## Features & Updates
+Refineries
+All refinery capacities have been increased greatly along with the refinery capacity is now data-driven, allowing the economy team to adjust capacities directly without a patch.
+In-System Event (Stanton)
+Balance pass across contracts including mining, salvage, and logistics rewards. Rental contract updated and rental duration adjusted. Points balance updated in the journal. Event reward components added. Event props and location dressing updates.
+Distribution Centers
+The external sections of Distribution Centers now have harvestable slots, so lootable harvestables can spawn outside as well as inside
+## Bug Fixes & Technical
+- Potential Fix: Event Scavenger Hunt contract not progressing correctly
+- Potential Fix: Monolith Backpack and all its variants having no storage capacity
+- Potential Fix: Lost or stowed but undestroyed vehicles being unclaimable at the ASOP terminal, with the vehicle info showing "Remove From Storage"
+- Potential Fix: Dropping the Super Heavy HMG from the stowed slot placing it nose down, causing it to fall through the ground and disappear in some locations. Equipped and holstered items now adjust their drop height based on item dimensions
+- Potential Fix: Event patrol contract comms not playing correctly
+- Potential Fix: Monolith helmet missing its helmet prop helper, with flashlight placement corrected and interior visor geometry added
+- Potential Fix: Origin X1 and X1 Force weapons becoming unusable and unable to fire or move when a gimbal component was equipped
+- Potential Fix: Some weapon racks displaying as a ReplaceMe ball inside the Captain's Quarters and Armoury, and the two-row weapon rack being non-interactive
+- Potential Fix: Some flight blade names and descriptions displaying as "Flight Blade"
+- Potential Fix: Event refuelling contract issue

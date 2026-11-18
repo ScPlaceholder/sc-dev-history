@@ -1,0 +1,50 @@
+## Star Citizen Alpha Patch 3.24.3
+Alpha Patch 3.24.3 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.3-PTU.9415068.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+Note: Today's build does not have new ships available just yet. We are planning on adding these during PTU phases for 3.24.3 before release.
+- Stability & Bugfixes
+- IAE Halls
+- Save Stanton Global Event
+- New Vehicle: Polaris
+- New Vehicle: Starlancer Max
+## Known Issues
+- PU - Social - AR markers - Party markers are not visible to other party members
+- PU - Freight elevator - freight elevator has an invisible collision causing crates to not be placed in the back (STARC-120969)
+- RSI Polaris - PU/AC - Vehicles / Turret UI - Polaris Turret pips are missing on locked targets
+- The Argo ATLS currently cannot be destroyed (Not intended end goal and player inside is still vulnerable)
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - Multivehicle - MFD - MFDs can be interacted with while in mobiGlas
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+- PU - Stanton - UI / Shipping & Delivery Kiosk - Shipping & Delivery Kiosk(Covalex)'s screen will be stuck on "Please Standby" after pressing "Pickup"
+- PU - Stanton - Landing Zone (LZ) - New Babbage - Personal Hangar - Locations / Art / Graphics - A large opaque plane will be visible when viewed from the ASOP/Storage Access area if hangar doors are open
+## Features & Gameplay
+Ships and Vehicles
+- RSI Polaris Polish Pass
+Polaris collision and animation physics optimizations. Animation Sound Effects Polish. Greatly increased the hydrogen fuel tank holds. Bespoke Guns: Fully locked down the hardpoint, added a custom locked down gimbal, includes the changes to the PDC radar priority. Updated and tuned RSI bespoke ballistic cannon ammo and cannon. Cannon is now 50 RPM, Moderate ballistic damage and implemented simple overheat mechanics. Increased VFX size of bullet trajectory to match large turrets.
+- Starlancer MAX Polish
+Detachable Components Health Pass. Updated LODs for Thrusters.
+- Added PDC Radar Access for Phoenix, 890Jump, and Polaris
+- Vehicle Ramp Proximity Detection Polish
+Core Tech
+- Server Physics Entity Rotation Performance Improvements
+## Bug Fixes
+- Fixed - Physics Grids are missing from a number of interior locations across the PU (Will fix locations like UGF gravity) STARC-130112
+- Fixed - Crusader Hercules Starlifter - ALL VARIANTS - Vehicle / Landing Gear/ Ramp - Hercules spawn/land off balance on hangar floor STARC-130372
+- Fixed - RSI Polaris - PU - Vehicles / Design - 'Open Exterior' prompt is opening the internal escape pod doors
+- Fixed - PU - Stanton - IAE2024 - New Babbage - Locations / Armistice - Day 1 / Day 2 / Day 3 / Day 5 / Day 6 / Day 7 / Day 8 - Armistice Zone is not covered in some Halls and during elevator travel STARC-139028
+- Fixed - PU - Stanton - IAE2024 - New Babbage - Location / Transit - All Days - Traversal in elevators taking longer then expected
+- Fixed - PU - Stanton - Landing Zone (LZ) - New Babbage - Personal Hangar - Locations / Art / Graphics - A large opaque plane will be visible when viewed from the ASOP/Storage Access area if hangar doors are open
+## Technical
+- Fixed 2 Server Crashes
+- Fixed 1 Server Deadlock

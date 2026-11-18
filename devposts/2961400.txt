@@ -1,0 +1,9 @@
+The function also resets any rotational inputs ... so it puts the mouse input right in the middle again.
+Star Citizen also only accepts only one input method for any axis at a time. So if you use your pitch and keys, they will automatically cause your mouse inputs to be ignored until the mouse is moved again. So I assume that even after you are pressing your assigned yaw / pitch keys, you are still slightly are moving the mouse.
+So instead of using the default lock rotation binding, try the following:
+1)  Go to your options and navigate to your custom keybinds.
+2) Navigate to Flight - Movement
+3) Select @ui_CIToggleLockRotation and right click to remove the binding (apologies, I obviously forgot so submit the label)
+4) Double click on "Cycle mouse mode (VJoy / Relative)
+When pressed this will then change your input behavior of your mouse from "Vjoy" to "relative" mouse mode ... which means you will control your ship like in an FPS game. This also means the ship will only rotate if you actually moving the mouse ... stop moving the mouse and the ship will arrest its motion.
+Please try that and let me know how it works for you.

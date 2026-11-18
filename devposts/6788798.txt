@@ -1,0 +1,94 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9151395.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 2
+Server Info: US/EU | EPTU Channel | Reputation requirements for missions are currently bypassed
+Replication Layer: Enabled | Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+- Stability/Performance/Bug Fixing
+- Master & Operator Modes: Vehicle Combat and Experience
+- Vulkan Renderer (Off by Default in Graphics Settings)
+- Full Character Customizer Revamp
+- mobiGlas Rework / Starmap / Interior Map / Minimap
+- Distribution Centers
+- EVA T2
+- New Loot Screen / New Visor / Lens
+- Full FPS Combat Refactor / Dynamic Crosshair
+- Backpack reloading / Ammo repooling
+- Physical Shopping UI
+- New Arena Commander Features: Engineering Game Mode, Grav Royale, New Race Tracks, and New Pirate Swarm Final Wave
+Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs.
+Distribution Center missions sometimes show the wrong location markers inside so might be difficult to know exactly where you need to go to.
+Server and Client Performance is something we are constantly monitoring and working on fixes and changes for 3.23.
+- PU - Stanton - Distribution Centers ( DC ) - Locations / Physics - Hangars missing collision for incoming flight traffic
+- PU - Multiple Locations - Locations / Art - GrimHEX and Kareah airlocks are missing breathable air and doors
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Locations - Grim Hex - Hospital - Elevator - Elevator is missing at Grim Hex's hospital
+- PU - Stanton - Lorville - Transit / Locations - Trams missing from Perimeter Line West
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+## Features and Gameplay
+Locations
+- Distribution Centers: Performance, Art, and Lighting Polish. Added new Civilian and Deskworker NPC archetypes to Distribution Centers
+Gameplay
+- Targeting: Disabled requirement to scan a target before subtargets are available
+- Made it so only jamming will block Qdrive spooling
+- Chat: Made tab key cycle to the next channel tab when not in ALL tab
+- Re-Enabled VOIP for Arena Commander\
+- Prevented inventory UI interaction during ammo repooling
+- Removed Pixel Grid and Monitor Effects on Mobiglas Card Materials
+- Added scrollbar to objective page on the contracts manager
+- Lowered Gimbal and Scattergun fire rates
+Weapons and Items
+- Increases to magazine sizes for the Behr Pistol, Karna, P4-AR, and Gemini SMG
+Ships & Vehicles
+- Fury LX: Adjustments of IFCS values in the Flight Controller to addresses the anomalous rotational acceleration
+- Heavy Optimizations to Anvil Pisces thrusters, and visual improvements
+- RSI Mantis Quantum fuel capacity increased to improve ship capabilities
+- Crus Starlifter fuel tanks reverted to previous values as these were erroneously high
+Core Tech
+- Vulkan PSO Precompiling
+With the latest patch Vulkan will now precompile all PSOs (Shader Cache) when the game starts for the current quality setting. This may take up to several minutes but will prevent any stuttering/hitching of the game at runtime due to PSO compilation in the driver. It is advised to wait until this process completes before jumping into the game. There is a text shown in the lower left while this compilation is happening (Optimizing Shaders...)
+Changing the graphics quality settings in the menu will restart this process and compiles all PSOs for the current setting.
+- Made Further Vulkan Renderer Optimizations
+- Further Vulkan Shader Optimizations
+- Made Further Network Performance Optimizations
+- Server Physics Performance Optimizations
+- Location Streaming Performance Optimizations
+- Put in further safeguards to help stop Elevators and transit behaving erratically
+- Lighting Performance Optimizations (Fixed issue where runtime lighting cubemaps were being triggered far too often in complex areas on a planet)
+- Lighting Polish of raised wave crests viewed from a shallow angle
+## Bug Fixes
+- Fixed - PU/AC - UI/GFX - ship HUD can be blocked by cockpit geometry (STARC-102955)
+- Fixed - PU - UI - MobiGlas / HUD - Entering a new message move the HUD Chat position to the very beginning of message history (STARC-105970)
+- Fixed - SC - HUD chat - When clicking an option in the chat dropdown the dropdown doesn't close
+- Fixed - PU - Server Recovery / Locations / Vehicles - Vehicle present in hangers are impounded or stored after server recovery (STARC-99569)
+- Fixed - PU - UI / Mission Content - HUD popups will only be generated for the initial sharing of a contract (STARC-106391)
+- Fixed - PU - StarMap - Unable to interact with search list
+- Fixed - PU - Visor - Pressing TAB while Visor Chat is active will retain the same messages but will change [CHANNEL_NAME] and color (STARC-104610)
+- Fixed - UI / Mobiglas - Home screen tracked mission objective description does not display (Missing binding)
+- Fixed an issue that could cause NPCs to slide around stuck in a cover shooting posture pose
+- Fixed - Stanton - Kareah - Turrets do not attack players for trespassing
+- Fixed - PU - Stanton - Hurston - Landing Zone (LZ) - Lorville - Locations / Law - Security guards are not hostile to players with a CrimeStat 3 or above and do not arrest them
+- Fixed - Fury LX - PU/AC - Capacitor - Fury LX Boost fuel depletes incredibly slow under boost
+- Fixed - Anvil Carrack - PU - Vehicles / Audio - Interior ambience is too loud (STARC-102670)
+- Fixed - DRAKE Corsair - Corsair now is equipped with the correct size cannons (STARC-107476)
+- Fixed - RSI Constellation Series - ( ALL VARIANTS ) - PU - Vehicles - Actor - Interactions - Interaction Prompts - Players are not able to interact with the interaction points to log out in or exit the crew beds (STARC-105366)
+- Fixed - PU - Lootables - Locations / LootGeneration / Game Code - Lootable Containers are not streamed in on initial load
+- Fixed - MISC Hull C - PU - Vehicles - Physics - The rear Engineering section of ship lacks collision causing the player to fall through the ship (STARC-100970)
+- Fixed - PU - Stanton - ATC - ASOP / Fleet Manager - It is possible to have ATC assign large ships like the Hull-C to Hangars instead of Docking Ports
+- Fixed - PU - Character Customizer - Makeup head selection options can disappear when leaving the character customizer and coming back (Option for no makeup disapears)
+- Fixed - PU - Stanton - NPE - Mission Content / mobiGlas / UI - The NPE is using an incorrect loadout causing the player to not have a head
+- Fixed - PU - UI / Missions - Visor / Lens - The mission objectives on the HUD are entirely in lower case text
+- Fixed - AC - Lobby/Match Cycle - Join Friend via AC Frontend will put you into the wrong game mode on match cycle
+- Fixed - AC - Single Weapon Elimination - Locations - Security Post Kareah - The player spawns outside of Kareah on initial match start (STARC-105111)
+- Fixed - Rental fails for most FPS equipment in AC (STARC-104919)
+## Technical
+- Fixed 10 Client Crashes
+- Fixed 10 Server Crashes
+- Fixed 3 Client Deadlocks
+- Fixed a Vulkan Specific Client Crash

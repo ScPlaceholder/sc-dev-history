@@ -1,0 +1,18 @@
+Hello everyone,
+As with previous Patch Watches, we didn't want to miss the opportunity to spotlight some of the features and improvements the teams are working on that don’t appear on the Public Roadmap. So, as we approach release day for Star Citizen Alpha 3.16, here are some additions that will make your dealings with the law system much more interesting. No matter if you break the law or are the law.
+Defense of Another
+When a player without a CrimeStat is attacked without provocation (and the friendly-fire threshold is broken), the attacker will be seen as hostile by all other players and AI for the duration of the hostility timer associated with the attack. The more sustained the attack, the longer the timer. The timer is paused should the attacker be engaged by another player to prevent turning non-hostile mid-combat.
+This allows us to remove the Aggravated Criminal Damage crime which was a stop-gap measure, but which we found to be unfair in the case of accidental friendly-fire as it would give the attacker a lasting CrimeStat. With this new system, the attacker is able to be attacked just the same, but the state is temporary and should the attacker leave the area for a time it is forgiven.
+Also, criminals are no longer given the same amount of leeway to commit friendly-fire on innocents as non-criminals.
+Removal of Aggravated Vehicular Assault
+The amends above mean we can remove the crime of aggravated vehicular assault, which was only added to mitigate this issue. This also reduces armistice violations around green zones, which led to increased low-level CrimeStats.
+Displaying Victim Names in Infraction Notifications
+The names of victims (where possible) will now appear in infraction notifications. This will help clear up confusion for players receiving infractions for things like grievous bodily harm (GBH) when their victim bled out several seconds after the fact.
+Bounty Hunters Being Led to Trespass Zones around the Prison
+We updated the trespass zones around the prison, making them smaller. The misdemeanor area has also been replaced with the new trespass type, which first warns the player before shooting at them. The felony trespass area is now much smaller but should still prevent bounty hunters from camping too close to the prison.
+Criminals receive a Less Forgiving Friendly Fire Allowance
+Criminal players or those with active hostility timers have a reduced friendly-fire allowance to prevent them from getting away with taking a shot, fleeing, taking shot, fleeing (with no hostility timer).
+Missiles and the Law
+The team also made a few changes to missile damage behavior. Firing a locked missile will now max out the friendly-fire hostility duration. Currently, locking missiles only counts as a "hit". In Alpha 3.16, locking a missile will now render the ship hostile for as long as the missile is locked. Once the missile is unlocked (without it being fired), it will only add a single hit. This fixes an issue that caused missiles fired at AI ships to sometimes choose a random friendly target, which would cause the player to get an immediate CrimeStat.
+Atmospheric Bounties
+The sky is not safe anymore! Bounty hunters now bring the law everywhere - even if they are flying through Hurston's atmosphere. That's why in Alpha 3.16 you will be able to hunt bounties in the atmospheres of all Stanton’s planets.

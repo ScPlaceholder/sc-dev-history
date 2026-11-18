@@ -1,0 +1,102 @@
+PU Monthly Report
+February 2025
+Welcome to February’s PU Monthly Report! Read on for all the latest updates from the developers working on the Persistent Universe, including the AI, Core Gameplay, Narrative, Missions, Tech Design, and UI teams.
+## AI (Content)
+AI Content continued updating the broken air traffic controller behavior throughout the main landing zones, with fixes entering the QATR process for validation, stress testing, and to ensure they don’t break other areas of the game. Once successful, the team will begin scheduling it for inclusion in an upcoming patch.
+The devs also worked with the Design, Environment, and Economy teams to iterate on a new character prototype. This included a performance-capture session to record new lines. Updates then continued on Grim HEX to match the behavior reworks done on Stanton’s other landing zones.
+In new initiatives, the team began looking into improvements to the dogfighting experience based on discussions with the Design and Missions teams. AI Tech also tackled a handful of bugs logged by other teams and picked up from general playthroughs.
+## AI (Features)
+Last month, AI Features improved and polished creature behaviors. New technology from AI Tech was added to close-range and melee attacks (as used by the kopion and Quasi grazer) to make them more reactive to moving targets. Rather than stopping or starting locomotion to begin, the attack is considered part of the locomotion request, allowing the creature to react at any point during locomotion or resume locomotion without delay if the target moves.
+For Human AI, the team made a variety of improvements. For example, time was spent on first-reaction flow escalation, giving players direct feedback on an enemy’s awareness state so they can sneak past. This was supported by new callbacks to the mission functionality to allow the designers to script specific level scenarios when an enemy is spotted, such as when radioing for backup.
+On top of this, various smaller bug fixes and improvements were made, which will reach the ‘verse soon. For example, accuracy scaling will now start from the beginning of combat rather than when the player is seen to give more grace time.
+‘Aimed at’ perception was improved, which is used for detecting when an enemy is aiming at civilians, while new functionality was added so that background assignments only influence behaviors rather than completely change them.
+Issues were fixed with overzealous vehicle-based friendly fire, which prevented NPCs from firing when friendly vehicles were close by, and pre-combat attack-area behaviors, including the AI not moving to the area and not attacking.
+Additions were made to Subsumption behavior scripting to allow parallel nodes to terminate when ready, rather than being forced to terminate. This is useful in situations where the designers don’t want to force an animation to quit until the correct point. Updates were also made to the AI state machine to give better control over how to transition between states.
+## AI (Game Intelligence Development Team)
+In February, the Game Intelligence Development team continued to fix StarScript crashes reported by the designers and QA testers. Due to the increasing number of users, the main priority is to stabilize the tool as quickly as possible.
+The team also began analyzing the ongoing mission system refactor in preparation for a summit held in the Manchester studio. Topics include the declarative model, tag system, and the self-validation tool. The implementation of ‘views’ into StarScript 1.7 mentioned in last month’s report continued too.
+Elsewhere, Game Intelligence continued exploring various designs to more clearly display the Mastergraph and its different state nodes. Pictograms were created to simplify the meaning of each state. They also began implementing the MasterGraph design into StarScript.
+## AI (Tech)
+Last month, the AI Tech team progressed with work that will allow them to voxelize huge areas for 3D navigation. This will be used to create paths for AI ships and EVAing NPCs.
+Planetary navigation mesh was extended to receive further information about tall buildings to give a more efficient evaluation of the terrain altitude while keeping track of manually placed object containers. The system to generate navigation for multiple agent types based on those present in the world, such as different-sized creatures and vehicles, was also extended.
+February saw the team finalize the first steps of the spatial priority solver system, which will organize and order the different types of requests that need to be solved. For example, pathfinder and navigation-generation requests.
+A lot of time was also dedicated to adding improved views and functionality to the Subsumption tool.
+## Animation
+Animation progressed for creatures such as new movement for the kopion to give it more ability to traverse its environment. They also worked on facial animations for an upcoming release.
+## Art (Characters)
+In February, the Character team kicked off a new creature, continued to work through StarWear art debt, and progressed with two new stealth armors.
+The Concept art team explored ideas for in-game rewards and new armors.
+## Community
+In early February, the Community team resumed their regular updates to the Roadmap, This Week in Star Citizen, and the Arena Commander Schedule, alongside general support for upcoming patches, sentiment/feedback tracking, and event planning.
+As Red Festival 2955 wrapped up, Community announced the winners of the Envelop the 'Verse in Kindness screenshot contest, published a Q&A for the recently released MISC Fortune, and presented the second installment of the new Star Citizen Comms-Dive series.
+In support of development’s broader commitment to improving quality of life, the team published a discussion thread to gather and compile a list of what players felt were the most impactful bugs and issues currently affecting the game.
+The Community team also helped to spread the love during Coramor 2955 with a lighthearted How Not to Get a Date community contest, a catch-all page, and a Hornet Loadout Guide to accompany the release of the new Anvil Super Hornet Mk II.
+The team then published the 2025 Bar Citizen World Tour.
+“Check it out for upcoming events that will provide players with the chance to meet in person with staff members for drinks and shared camaraderie. We’re looking forward to connecting with many of you along the way!” Community Team
+Community ended the month supporting the Supply or Die event. This included updates to Global Event messaging and a comprehensive catch-all post rounding out a month of significant developments.
+## Core Gameplay
+In February, the Core Gameplay team (one of the primary drivers behind the stability and quality-of-life initiative) continued fixing numerous bugs.
+Elsewhere, they supported upcoming content with smaller features to assist in the creation of missions, sandbox gameplay, and storytelling.
+February concluded many of 2025’s planning tasks that will ensure the team correctly balances the need for bug fixing, quality-of-life updates, content support, and feature development.
+Last month, the Core Gameplay team implemented minor misfires for rapid-fire FPS weapons. This includes a setting that allows the designers to control the duration of the delay until the weapon continues shooting.
+General cooldowns were also added for minor and major misfires to control how much time must pass after a misfire before another of the same severity can happen. Planning was done toward a misfire system for ship components to unify the systems and avoid tech debt. The primary use case for this is engineering gameplay.
+Overheat animations were added or improved for some VOLT weapons, while integrated code changes were added to unblock downstream dependencies.
+For engineering gameplay, the team added panels to the engineering screen to show critical information when items are selected. They also adjusted presets to enable UI popups and reduce duplication and fixed various issues with presets and screen UI.
+Improvements were made to the Resource Network debug tools and ItemPort localization setup to prevent errors. Various player-facing issues causing the Resource Network to not behave as players expected were fixed, while the coolant effectiveness calculation for items was updated.
+Progress was made on base building, with the devs identifying and fixing various bugs, particularly in the client-server flow. Validation for buildings placed on land claims began and localization strings were implemented.
+Regarding crafting, the core feature is now playable using the developer UI, including the use of blueprints, variable material quality, crafting timers, and resource-dependent item stats. A basic queue to craft multiple items at once was added too.
+Elsewhere, the team Implemented basic AR marker grouping logic to reduce the amount of UI clutter in various situations. This is currently disabled internally but available for Design to validate edge cases.
+A strike team was formed to deal with underlying issues affecting the transit system, while another continued with the ongoing refactor toward the new ‘transport system.’
+As part of this, a new suite of debugging tools was created to identify the root causes of transit-carriage and transit-manager issues. The team then addressed multiple issues causing carriages to get stuck and the manager failing to correctly orchestrate transit schedules. With support from QA, more instances were uncovered, investigated, and fixed. The team is still working through a prioritized list of issues and have added mitigating factors to help self-repair aspects of the system where possible.
+The Core Gameplay team is currently investigating poor performance in Pyro, which is caused by entities ending up at the center of the system, and dealing with issues with NPC loadouts, failing attachments, and object container setup.
+The Core Gameplay team made numerous tech debt, performance, and quality-of-life updates. For example, failure positions now works consistently, the entrance UI no longer suddenly disappears, and control hints were improved.
+The application of distortion damage to jump drives was made more consistent, some per-update ‘hacks’ were replaced with proper implementation, and tunnel-generation code was optimized (it now loops once over each spline point, which requires less caching). Various crashes were fixed and performance gains of up to 4ms per frame were achieved.
+Elsewhere, the team continued the initiative to improve the flight model and Intelligent Flight Control System (IFCS).
+“This will include many mechanical, balancing, and visual changes to improve the overall feel of flight. These will not immediately be implemented for the next Star Citizen release, but experimented with and iterated on internally until we feel they’re ready for feedback.” Core Gameplay Team
+This involved adding ‘jerk’ to IFCS to improve the overall feel of flight and smooth out all forces. A retuning pass to various ship classes to account for the changes to the flight model was done too.
+Extra g-force effects based on speed, not just acceleration, were added. While this doesn’t impact gameplay, it adds an extra layer of immersion. For example, via additional camera effects.
+Different velocity limits per axis were implemented. Now, IFCS uses ‘goal time to max velocity’ with acceleration in that axis to define the velocity limit. This means that, for now, velocity limit shape is defined by acceleration limit.
+Variable velocity limits per power assignment were added. Now, assigning different power changes the acceleration and, in turn, max velocity.
+A prototype was designed for improvements to the proximity assist feature that limits speed based on proximity to other objects instead of just vehicle acceleration. Work is ongoing to make the automatic on/off trigger work smoothly, add a UI notification for when it’s active, and activate faster when using AB and/or the spacebrake.
+Finally for the flight system, a ‘Core’ IFCS toggle was added to allow pilots to turn off various assists and fly fully decoupled. This is being used to experiment with a heavily stripped-back IFCS system.
+Numerous bugs were fixed through February too. Now, quantum travel no longer overshoots short distances as the pre-ramp can be canceled early. Aiming fixes were also made, including aim assist being added to unmanned turrets, and some issues with prediction edge cases during fast movement.
+February saw progress on the Radar and Scanning feature. Work included enabling delta-signature markers when detected, progress on a hand-held radar jammer, and exposing more options to change the visuals for highlighting detected contacts.
+Core Gameplay also began work to allow vehicle interior components to be detectable and started a minor refactor of how nearby influencing signatures are handled.
+They also began implementing additional hooks into the room system. This will enable the Design team to define background signatures, which can make radar detection stronger or weaker. For example, heavy PVP areas may have lots of background noise, reducing the effectiveness of the radar and equalizing the playing field to some degree.
+Annunciators now start in the off-state and correctly handle missing vehicle components. Maelstrom movement constraints progressed too, which allows the devs to limit how far broken-off pieces can move.
+The inventory UI rework progressed with new concept art. This is an ongoing initiative to address many visual and user-experience issues with the current inventory UI, including how players equip items on their character.
+A few features were updated for Arena Commander too, such as the addition of assist scoring for crew members and AI, UI for the DNF timer, and loadout preset selection.
+Core Gameplay wrote various technical design documents in February, including for a new mission giver and a new mechanic to communicate mission progress via the comm-calls system.
+The team also worked on the Supply or Die Global Event, including allowing cargo deliveries over the expected SCU amount. They also added support for returning excess cargo when delivering more than expected and made sure delivery missions don’t count destroyed containers. The devs also enabled the designers to hide the ‘Complete’ button for specific hauling contracts (such as those in Supply or Die) and investigated issues with missing mission markers.
+For the mission system refactor, the team fixed various issues with mission logic not proceeding and mission properties not working correctly. A variety of quality-of-life updates were added too.
+Finally for Core Gameplay, the team worked on various issues affecting hangars, freight elevators, the fleet manager, and more that were exposed during Alpha 4.0 Preview and Alpha 4.0.1 Live.
+## Mission Design
+Mission Design focused on updating some old missions that weren’t included in the recent refactor. This includes ensuring existing missions fit with the new factions content. For example, combat missions will fall under Foxwell Enforcement, with some of the new locations from Save Stanton used as forward-operating bases. Bounty contracts will also move under the Bounty Hunters Guild alongside the reintroduction of the hijacked Origin 890 Jump mission.
+Focus was also given to the Supply or Die missions. Alongside fun content for the community, these missions will act as a test for balancing future resource-gathering events.
+The team also began technical conversations with the ongoing prioritization of mission quality. These discussions are about how to improve the audio pipeline to get voiced missions and begin pushing higher-production-value events.
+## Narrative
+A major highlight for Narrative in February was the recent performance-capture shoot focused on adding new narratives and characters. Thanks to ongoing refinements to the capture workflow, players should start seeing these narrative moments in the next few patches.
+Additionally, the team began planning and writing scripts for the next shoot with the overall goal of greatly increasing the amount of dialogue in the ‘verse, both in and out of missions.
+Another recent improvement was the new frontend loading screen for Alpha 4.0.2, which features an in-lore newspaper with headlines pertinent to the new content being released.
+For Alpha 4.0.2, the team dedicated themselves to content and bug fixing, including the new resupply missions. Additionally, further missions are in progress for the rest of the year, including new standard-issue missions, special events, and more involved narrative-focused missions.
+## Online Technology
+The Online Technology team began the year making tweaks and fixes to enable more in-game items to persist long-term.
+For the ongoing mission system refactor, the team worked to allow missions to communicate between distributed locations.
+The team also started finalizing the analytics endpoint rewrite, making improvements to network-error messaging to make them more descriptive.
+Additional optimizations were made to the territory-assignment algorithm to improve robustness, while changes were made to how entities are bound over the network to lay the groundwork for use in a fully dynamic server mesh.
+## R&D
+In February, work on the new method for large-scale soft-terrain shadow generation continued. Support was also given to the Engine team, who are currently taking steps to further parallelize rendering on the CPU side.
+The ongoing work on ground-fog rendering mentioned in last month's report was temporarily put on hold to allow the team to focus on improving gas cloud detail rendering for a higher fidelity appearance.
+## Tech Design
+In February, Tech Design worked closely with Mission Design on upcoming content releases that players will hear more about in the future.
+They also prepared to set up items for scanning and began identifying what items should be scannable and what information they should reveal to the player.
+A major focus last month was on gameplay triggers, a system that allows the designers to easily hook into and expose preexisting functionality.
+“Usually, this kind of work could only be done by engineers, but our code-savvy tech designers have become proficient at creating new gameplay triggers. This allows us to create new gameplay with better player-facing feedback for the content teams to use. For example, easier ways to dynamically enable VFX and SFX and expose ways for the designers to apply effects to players within an area.” Tech Design Team
+## UI
+February saw the UI team focus on bug fixing, user experience, and vehicles.
+As part of this, they took an in-depth look into the upcoming social-universe features shown at CitizenCon, focusing on the user experience. This involved taking the original design, working out user-friendly layouts, and ensuring interactions are well thought out and easy to use.
+The devs also began implementing UI for upcoming vehicles alongside concepting the final UI styles for two manufacturers. Various UI bugs and minor issues were fixed too.
+The UI Tech spent time beta testing an improved 2D UI renderer, as the current version is difficult to improve on and bug fix.
+Elsewhere, they worked on tech to support game localization and progressed with systems to allow players to navigate menus using a joystick or keyboard without a mouse.
+## VFX
+VFX spent part of February prepping for content releasing later this year. They also supported Supply or Die, cleaned up various work from Alpha 4.0.0, and progressed with an upcoming creature.

@@ -1,0 +1,40 @@
+## Time To Kill Balance Pass
+Note: This feature is currently not intended for 5.0 release but is in the build for this weekend for feedback and testing.
+This is a direct iteration on the previous build, and all figures below are relative to it. Based on your feedback, armor health has been raised across the board, size 4 and 5 ballistics have been brought down, and laser beam weapons and ship turrets have been scaled up to match the overall damage increases made across these builds. With this pass the overall picture for fighters should be settled, which lets us begin addressing individual outliers and turn attention toward large and multicrew ships.
+Health and Survivability
+- Armour health increased by 15%
+- Ship turret health and the overkill threshold, the point at which a ship explodes outright from a single large hit, both increased by 145% proportional to the overall damage increase across these builds
+Ballistics
+- Size 4 ballistic alpha damage reduced by 20% and size 5 by 10%
+- AD4B alpha damage reduced by a further 20% and AD5B by a further 10%
+- All Mass Driver projectile speed increased by 10%
+Energy
+- All laser beam weapons buffed by 145%, proportional to the overall damage increase across these builds
+- CF Repeater series alpha damage increased by 10%
+- MaxOx Neutron Cannons and the Yeng’tu Repeater alpha damage increased by 20%
+- WAR Cannon alpha damage increased by 50% and projectile speed by 40%
+- WRATH Cannon alpha damage increased by 80%
+## Bug Fixes and Technical
+General Bug Fixes
+- Potential Fix: Hangar loading platforms stalling after streaming in, leaving ASOP Retrieve greyed out. Live testing showed stuck-platform repairs fall from over a thousand to zero across comparable load counts (STARC-214984)
+- Potential Fix: Ships failing to stow correctly when the landing area checked its own stored vehicle (STARC-195834)
+- Potential Fix: The Welcome To Nyx loot room computer board puzzle (STARC-218553)
+- Potential Fix: Prison escape keycode fan
+- Potential Fix: ASD Delving phase 2 delivery not using delivery lockers
+- Potential Fix: Gemini SMG and pistol missing their muzzle
+- Potential Fix: Drake ship indicator screen lock light status
+- Potential Fix: Crusader Starlancer TAC proxy assignments
+- Potential Fix: Drake Golem ship dimensions
+- Potential Fix: Harbinger second turret slot now accepts both guns and rockets
+- Potential Fix: Shop mannequins replacing material attachments
+- Component minimum power assignment raised to 20% across the board
+- Missile lock interface updated, and gravity gun axis and centre of mass parameters adjusted
+VR Updates and Fixes
+- Separate graphics settings now stored for VR and desktop
+- Potential Fix: Crash when initiating a comms call in VR aboard certain ships
+- Potential Fix: Local light shadows dropping early in VR
+Crash Fixes
+- Potential Fix: GPU crash relating to resource readiness on planets
+- Potential Fix: Client crash from invalid entity transforms during zone changes
+- Potential Fix: Vulkan resource set crash, with additional diagnostics added
+- Potential Fix: Engine initialization optimizations reducing startup work

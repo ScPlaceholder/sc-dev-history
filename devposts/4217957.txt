@@ -1,0 +1,47 @@
+## Star Citizen Patch 3.14.0n
+Alpha Patch 3.14.0n has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7666961 .
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: All backers
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Current cloud tech is still in active development and not yet final. There's ongoing work on SDF occlusion which should help alleviate the graphical artifacting (visual dots in the clouds). Additionally, we are working towards having local VFX for the clouds (similar to the gas clouds around rest stops) which will make a big difference in overall quality.
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Known Issues
+- Quantum traveling to Crusader will place your ship inside the atmosphere, preventing further quantum travel
+This issue is caused by an incorrect obstruction radius around Crusader. This will be resolved in the next PTU release (most likely after the weekend) to place it closer to 150km instead of 750km above the planet. For now leaving atmosphere when at Orison may take much longer than intended. This may also make spline jumps to Orison impossible for now.
+- Gas Clouds on Crusader appear to have moving graphical artifacts that appear as dots. Current clouds are still in development and not final. See note at the top of patch notes.
+- Orison objects & textures loading very slowly
+- Editing PMA After Changing mobiGlas case prevents mobiglas functionality
+- Missiles do not follow flares as a countermeasure
+- Various UI markers are faded and hard to read
+- Security Ships do not recognise illegal goods onboard a ship when being carried by a player
+- Shield is getting hit multiple times on a single distortion explosion
+- Ships are not fully repaired after repairing / refueling them in VMS
+## Feature Updates
+Gameplay
+- Ongoing Ship Capacitor / Weapon Balance, and Polish Pass
+Adjusted gimbal behavior for fixed and manual gimbal modes to increase their range back to normal. Increased wing health of 300 series ships. Increased the Hornet's tail Health. Doubled EM strength of decoys. Changed default keybind for Gyro Mode.
+## Major Bug Fixes
+- Fixed another issue causing players to get a 30009 disconnect error
+- Fixed an issue causing the QT marker to be missing when destination is set via the Starmap
+- Flares deployed from various ships should now move correctly when launched
+- Fixed an issue causing FPS AI to be slow to react to players attacking them
+- Large FPS Deposits should no longer be detected from too far away in the Greycat ROC vehicles
+- Hornet's animated maneuvering thrusters should no longer be frozen in place
+- Radar should now be visible on Anvil Carrack flight HUD
+- Information should no longer be cut off in the Crusader Starrunner and Star Lifter's HUD due to large font
+- Fixed an issue allowing ships to be spawned from the ASOP once Ejected from on the landing pad, resulting in them spawning in an unusable state without a pilot seat.
+- Players should no longer get a "Game starts in %D" error after dying in Arena Commander Swarm modes
+## Technical
+- Fixed a Backend Service Memory leak

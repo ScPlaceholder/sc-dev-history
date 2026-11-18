@@ -1,0 +1,24 @@
+## Star Citizen Patch 3.12.0p
+Alpha Patch 3.12.0p has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.12.0-PTU.6742772.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Gameplay
+Known Issues
+- When logging into some commodity and refinery kiosks, they can display incorrect Commodity Information and Prevent Sales
+Workaround: Try other trade terminals at a different location. Test relogging and trying again. Area18 specifically will error and fail in the Admin Office trade terminals
+- Player is unable to activate mining consumables (Workaround: Toggling scan mode allows consumables to be used)
+Workaround: Using the consumables from a different player in the mining seats will work. If you are working alone with the Mole and leave the pilot seat to use a turret, toggling scan mode will help force consumables to work.
+- Illegal drug terminals are missing from their intended locations in rest stops
+Workaround: We have temporarily added Slam sell inventories to two junk sites in the PU
+- The mission named " A Very Difficult Task " automatically completes when accepted
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool
+- Mission givers AI will break if a NPC sits in their designated seat before they do
+## Bug Fixes
+- Ship Canopies should no longer open and close randomly without player input

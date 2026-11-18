@@ -1,0 +1,69 @@
+## Star Citizen Patch 3.10.0n
+Alpha Patch 3.10.0n has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.0-PTU.5677007.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- Ship flight in and out of atmosphere
+- Updated building blocks ship UI for all flyable ships.
+- High speed combat changes
+- Turret gameplay
+- Origin M50 Improvements
+- Electron FPS Weapons and Electron Damage
+- Body Dragging
+- Citizen Trading App
+- New Targeting Method
+- Delivery Mission Improvements
+Known Issues
+- Attempting to take off or land at Area18 via splines destroys the  player's ship. (please avoid this area altogether for this build and  recopy/reset your account if you are in this location already)
+- Esperia Prowler QT VFX are red in first person
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- The Player Ship is destroyed shortly after flying into a Restricted Area / Zone around the Spaceport after leaving a Hangar
+- All 3D icons in personal inventory don't appear correctly when in the PIT
+- Landing gear will take multiple presses of the keybind to activate.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- Multiple shop doors will not open around Area 18, preventing the player from accessing the stores
+- The Greycat ROC cannot extract all of the child crystals, some are left behind
+- Hammerhead atmo entry effects clipping through interior of the ship
+- Security scans won't recognize the drugs on board a players ship during the Drug Production run missions
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- Multi-Tool in Klescher Prison Commissary does not come with a OreBit mining attachment
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- Player may get stuck on a loading screen when leaving prison or respawning
+- Player may get stuck on a prison loading screen if sent back to prison a second time without clearing their crime stat
+- When the Player is Released from Klescher Prison they will appear in Space, unable to move, with no visible Body
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+## Feature Updates
+Locations
+- Updated Wally's bar in New Babbage with additional bar patrons and new intractable booths and stools.
+AI
+- Polish pass on bartender animations and lighting in the PU.
+Gameplay
+- Increased the size of the Restricted Area Landing Splines.
+- Enabled look ahead for horizon and look ahead target tracking by default.
+- Polish pass on player animations while carrying drinks and sitting in bars in the PU.
+Ships and Vehicles
+- Increased thrusters on the 600i to help it lift off of landing pads.
+## Bug Fixes
+- Fixed broken analog control input while in ships.
+- Fixed an issue when attempting to scan mineable rocks/gems causing the UI to activate and deactivate rapidly.
+- Fixed an issue that was causing transition from EVA to gravity causing characters to abruptly stop and fall or sometimes twist or ragdoll in the process.
+- Fixed an issue causing the Aopoa Nox to overheat quickly while flying in space
+- There should no longer be two Ignite II Missiles missing from the Pirate Gladius Default Loadout.
+- Valkyrie, Terrapin, and Mole should now correctly use the new SDF atmo entry effects instead of the old system.
+- Spawning another ship from ASOP after already having one spawned will no longer give a parking violation and impound the previous ship.
+- Fixed a bug that was causing more asteroids than intended to spawn around Yella.
+- Interacting with the Commodity Kiosk terminal should no longer cause the boxes onboard the ship currently on the pad to disappear preventing the user from performing transactions.
+- Caterpillar atmo entry effects should no longer clip through interior nose of the ship.
+- Remote turrets on the Valkyrie should no longer snap back to the front of the ship if the Player aims either Remote Turret at the Rear of the Ship.
+- Moving while inspecting or customizing on a weapon via Inner Thought will no longer stop the weapon from firing.
+## Technical
+- Fixed 2 Client crashes.
+- Fixed 6 Server crashes.

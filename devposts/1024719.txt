@@ -1,0 +1,87 @@
+## Star Citizen Patch 3.1.0i
+Alpha Patch 3.1.0i has been released to the PTU, and is now available to test!  Patch should now show: PTU-735773
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+NOTE: All ships have been unlocked.
+New Known Issues:
+- All players start with a service beacon rating of 0. W/A: Initially, set the rating requirement to "any".
+Testing Focus
+Arena Commander - Combat in swarm and multiplayer Arena Commander with focus on the behavior of ESP, new ship weapons, and AI pilot behavior. Racing: Razor against/with other racing ships.
+Universe: Service beacon. Reclaimer, Terrapin, and Cyclone testing.
+## New Features
+Universe
+- Re-implemented Service Beacons
+Creating a beacon
+- Locate "Create Beacon" on the far right of the Contract Manager of the MobiGlas.
+- Select a "Beacon Type" and subsequent options.
+- Personal Transport: Destination, reputation requirements, payment offered.
+- Combat Assistance: Reputation requirements, payment offered.
+- Created beacons can be viewed under the "Personal" tab under the "Beacons" group.
+- Created beacons can be canceled at anytime.
+Accepting a beacon
+- Beacons can be found under the "Beacons" group of the "General" tab of the Contract Manager.
+- Beacons will display beacon type, initiator's name, and payment offered.
+- Once accepted, you can cancel/withdrawl from the contract at anytime.
+Completing a beacon
+- Completed beacons will automatically move to the "History" tab.
+- Transport beacons will automatically be completed based on the transport destination.
+- Upon completion or cancellation, players can "rate" the other party (1 to 5).
+- Rating defaults to 3 if a player fails to rate before the time expires.
+## Feature Updates
+Universe
+- Environmental missions have been updated with new features and functionality.
+UI
+- Various polish and updates to the VMA/PMA for better visuals and distinction.
+Ships and Vehicles
+- Lengthened the insurance timer on the Reclaimer to be appropriate to its size.
+- Lightened the interior lighting of the Razor.
+- Temporarily slaved front remote turrets of Reclaimer to pilot and claw operator seat. Disabled rear remote turrets until the Remote Turret mechanic is complete.
+- Increased the overload damage of the distortion scatterguns to increase their impact on ship systems.
+Arena Commander
+- AI pilots should be less likely to run into the boundary in Arena Commander.
+- Increased the brightness of the Dying Star map.
+- Rebalancing ammo drops around increased ammo box counts.
+- Added new AI skill profiles, altered elite waves to increase difficulty, and altered pirate ship loadouts in Pirate Swarm.
+- Replaced a Constellation on wave 8 of pirate swarm with a Cutlass.
+Bug Fixes
+- aUEC should now be properly withdrawn after repairing at CryAstro.
+- Landing gear animations should now play properly for those not piloting the ship.
+- Fix for missing cockpit geometry in the Vanguard.
+- Missiles that expire should now have their HUD alerts vanish properly.
+- Fix for issues with Nox landed states. Should fix being stuck in PRE/HOV and spawning on its side.
+- Removed portmod on vehicles again.
+- Targetted AI ships should retain their target bracket consistently.
+- Missing person missions should no longer be abandoned immediately after accepting.
+- Moved the flight HUD on the reclaimer down and scaled it up slightly.
+- Fix for friendly fire audio spam.
+- Upped the Reclaimer size class to 6 so it can no longer be spawned at Levski.
+- The door inner thoughts on the Argo series should no longer be backwards.
+- UI glass shader update for Starfarer.
+- When selecting Outlaw or Marine factions, the other faction's equipment should no longer be visible in Star Marine.
+- Weapon hardpoints should no longer be duplicated on the VMA menu.
+- Various surfaces on Yela and Daymar should no longer be missing particle effects.
+- The Mustang series should now properly show nose and wingtip quantum effects.
+- Corpses should no longer be shown as enemies on FPS radar.
+- Cutlass crew in Pirate Swarm should no longer designated as "unknown" on the kill message.
+- The MobiGlas should now appear correctly when used from the pilot or support seat in the Terrapin.
+- Respawning in Arena Commander in the Terrapin should no longer play the pilot seat animation.
+- One of the facial skin tones on the character customizer should no longer mismatch the body tone.
+- The player should have an easier time interacting with the bed of the Terrapin.
+- The pilot and copilot seats of the Reliant should now have exit prompts.
+- The player's view should no longer be looking away from the logout prompts in any ship with a bed.
+- There should no longer be invisible collision components when switching landing states in the Reliant.
+- Damage audio should now player with VFX in the Reclaimer engine room.
+- Players should now be able to perform multiple services at once at CryAstro.
+- Dragonfly shield should now encompass driver and passenger.
+- The Reclaimer should now consistently have HUDs, MFDs, and support screens.
+- The Reclaimer's elevators should no longer lose collision when passing outside of the ship.
+- Players should no longer be able to self destruct inside an armistice zone.
+- Internal damage states should now properly trigger on ships.
+- The Reclaimer should now properly have a quantum travel HUD.
+Technical
+- Various crash fixes.
+- Fix for server botteneck.
+- Performance tweaks to fix framerate drop inside Levski.
+- Server crash fix.
+Known bugs, issues, and work arounds (W/A):
+- 40014 will cause a client crash. W/A: If this occurs, wait 10 minutes and relaunch.
+- IFCS fixes are still pending.

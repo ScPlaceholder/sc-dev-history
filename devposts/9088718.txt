@@ -1,0 +1,28 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12473311
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (Progression speed increase for PTU)
+- Wikelo Inventory Updates
+Known Issues
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+## Features & Updates
+Instancing: Respawn Queue Handling
+The respawn queue inside Siege of Orison instances has been moved directly to be handled inside the instance. This should make it so players can no longer get stuck in the medbed queue.
+## Bug Fixes &Technical
+- Fixed a Server Crash
+- Backend Service instancing, ASOP, and density manager safeguard improvements
+- Potential Fix: Claim screen not appearing when delivering a vehicle for the second time in the same session
+- Potential Fix: Character customizer buttons and tabs becoming unresponsive after clicking, requiring a relog to restore functionality
+- Potential Fix: Irradiated Valakkars at the Lazarus Complex teleporting to unexpected positions during combat, caused by the AI defaulting to raw planet pathfinding when no navmesh path was available
+- Potential Fix: Tiburon fuel port positioned inside the ship geometry, preventing other ships from connecting to it for refueling
+- Potential Fix: Super Heavy H4-PBF Ammo Carrier showing weapon and ammo item slots in the inventory UI when the player was carrying it, as if it were a wearable armor piece

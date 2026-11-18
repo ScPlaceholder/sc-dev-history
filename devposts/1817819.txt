@@ -1,0 +1,52 @@
+## Star Citizen Patch 3.4.0k
+Alpha Patch 3.4.0k has been released to the PTU, and is now available to test!  Patch should now show: PTU-1027227.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- New Ships: Hawk, Freelancer variants, 600i Touring
+- Lorville Central Business District
+- Hurston mission variants (bounty missions, downed relay missions, FPS AI missions, delivery missions, scramble races)
+- Mission Givers: Wallace Klim, Clovus Darneely
+Major Known Issues:
+- FOIP/VOIP are temporarily offline.
+- Unable to buy commodities at CBD.
+- Mission markers will sometimes fail to appear. W/A: On the mobiGlas, untrack and retrack the mission to generate a marker.
+- Klim may ocasionally be facing the wrong way.
+- Ruto's hologram currently doesn't appear.
+- FPS AI are not responding correctly.
+- AI ships are often observed not moving.
+- The 600i's lifts may be missing interaction prompts.
+## Feature Updates
+Universe
+- Removed the Secondlife undersuit from the Tammany and Sons shop in Lorville.
+- Updated various animations for Constantine Hurston.
+Missions
+- Added Hawk, Eclipse, Arrow, and Terrapin to ship scramble race option.
+UI
+- Slightly decreased the size of QT markers.
+- Made the video call feed on direct P2P comms calls less transparent.
+## Bug Fixes
+- The drug bag from Klim's mission should no longer be offset in the player's hands.
+- There should no longer be replaceme balls in Klim's area.
+- Canceling quantum travel while enroute to one of the OM points should no longer teleport the player to a random far-off location.
+- Switching into Gyro mode on some ship turrets should no longer cause the player's view to look straight up/down.
+- Fixed price discrepancy between CBD and Lorville Admin for Agricium.
+- The first player to join a party should no longer be kicked out by additional joins.
+- Fixed personal elevator, lift, and landing gear height on the 600i.
+- Players should no be able to purchase cargo at Lorville for ships that haven't been spawned yet.
+- Airlocks should now properly light state switch when cycling.
+- Newer ship weapons should now correctly mount and fire in the correct direction in Arena Commander.
+- Hostile target marking should now work properly.
+- Mission descriptions should now be present for underground facility missions.
+- The patrol mission should now properly progress after eliminating all hostiles.
+- Fixed AI kill counter not updating when the AI are killed by non-mission participants.
+- One of the downed relays should now have proper lighting around it at night.
+- The terminal holding the disks for the downed relay missions should no longer become unusable after attempting to interact with it.
+- UI elements that included the wave counter in swarm modes, the capture UI in Star Marine, and the race UI in classic race should now be present.
+- NPCs should be properly moving now in the lower sections of Levski.
+- Fuel requirements shown on multi-step jumps on quantum routing should no longer display in red text even if the player has enough fuel for each jump.
+Technical
+- Fixed 5 client crashes.
+- Fixed 3 server crashes.

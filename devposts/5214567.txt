@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.17.2j
+Alpha Patch 3.17.2j has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.17.2-PTU.8129574.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Audience: Wave 1
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 10,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+In this build we have made further server performance changes that should hopefully help address some issues with AI and other server authoritative features.
+Jump Town Playtest - Saturday for 12 hours starting at 1000 CDT | 1500 UTC
+Siege of Orison Playtest - Sunday for 6 hours starting at 1200 CDT | 1700 UTC
+- Turret Acceleration changes
+- Derelict Reclaimers V1
+- Derelict Colonialism Outposts
+- New Space Stations and Lagrange Points
+- Grim HEX Hospital Expansion
+- Combat Service Beacons V2
+- Illegal Collect and Delivery Missions
+- Player and AI Networking Updates
+Known Issues
+- AI / Characters - Inventory - Looting the weapon from an unconscious AI will cause it to teleport back into their hand a short period after picking it up
+- Animation - Weapons - All weapons are held like a pistol whilst moving in EVA
+- Hijacked Reclaimer - Datahunt - Mission/Design/locations - Player may get a crime stat after completing the final objective
+- Missions - Bounty / Mercenary - Dying in lawful UGF missions causes player to respawn at Grim Hex
+- UGF Raid - Missions / AI / Combat AI - Some Enemy AI will not engage Security AI or Players
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- Shopping Kiosk / Multi-Buy - When using the buy Max feature, or buying the max of an item ( 1000 ) - Further attempts to purchase from the store will result in an Inventory Error or Insufficient Stock
+- Ships - Components and interior zones remain when ships are destroyed
+- Ship Features - Elevators _ The Carrack Elevators do not function correctly and appear to desync
+- Missions - UGF Locations - NPCs Not Spawning at Mission Locations
+- When purchasing a rental vehicle from a rental kiosk the money taken will not be displayed properly on the Kiosk or the mobiGlas
+- Locations - Elevators / Physics - Hangar elevator's collision grid pushes player through its path when called (Multiple Locations)
+- Shopping Kiosk - UI / Building Blocks - Controls / Mouse - When selecting the text field box for "Quantity Multiplier" you lose control of the in-game mouse cursor
+- Locations / Art / Tech Art - Elevators have portals / Vis areas when their doors open
+- Stanton - ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+- Vehicles / Remote Turret - players are able to open mobiglas in remote turret; view is blurred and players are unable to fire until closing mobiglas
+- Anvil Carrack Remote Turret and Support Console Interaction Prompts are Misplaced
+## Feature Updates
+Core Tech
+- Made further actor system downstream networking movement improvements
+## Bug Fixes
+- Destroying the Reclaimer Objective during the Seize the Data mission should no longer result in in a crimestat 2 for destruction of vehicle
+- Failed Negotiations Ship should no longer despawn with a player still inside, if the location timer ends shortly after the mission was completed
+- Players should no longer receive an armistice crimestat for damaging their own vehicle with another owned vehicle while it is being lifted up/down by a cargo elevator/lift
+- Players should no longer be able to pick up the mission box after completing the Breach and steal mission
+- There should no longer be many unwanted trees all over the Ghost Hollow Reclaimer crash site
+- AI Reinforcement drop ships should no longer take off until all players have left the interior of the ship
+- Esperia Blade weapons should no longer charge inconsistently
+- 600i executive edition should no longer have the incorrect interior module
+- Inner thought prompts should now work correctly in the RSI Mantis
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 1 Main thread Deadlock

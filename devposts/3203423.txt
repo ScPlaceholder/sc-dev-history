@@ -1,0 +1,5 @@
+Hi Fykshun,
+Sorry for the late reply! This is something I’ve certainly considered before and would love to add, but the reality is we’ve just had  higher priority work. We do already simulate some ambient moon light in the atmosphere shading, but for the direct lighting we’d need to include shadowing, and we can’t afford two sets of shadows so we could only use such an approach once you’re further into the night side of the planet and the sun has set. But before we can do this we’d need to generalise the sun shadow code, as currently the shadows are locked to the sun but we’d still need the sun to render as usual (as it will still be casting on the moon and other planets).
+So it’s a no for now, but hopefully a yes in the not too distant future as it’s certainly help with the flat lighting you get at night.
+Ali B
+Director of Graphics Engineering

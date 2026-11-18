@@ -1,0 +1,88 @@
+## Star Citizen Patch 3.18.0y
+Alpha Patch 3.18.0y has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.0-PTU.8342974.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US/EU
+Database Reset: Yes
+Long Term Persistence: Enabled
+Account Copy: Disabled
+Pledge Copy: Enabled
+Starting AUEC: 1,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+There is a pretty severe issue in this build where players will more likely than not get an infinite load after any death in the PU. The workaround for this is that you will have to either exit the game and reload after a death when this occurs or use the character repair tool on the PTU website if that doesn't fix the issue. This bug isn't quite 100% but it appears to be a vast majority of player deaths when it happens.
+With this said, we are releasing this build with the caveat that it might not survive the night and will have to be pulled down if it becomes too severe.
+https://ptu.cloudimperiumgames.com/account/reset
+- Actor Feature - Respawn - Unable to respawn upon player death, stuck on splash screen
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Scanning not showing advanced statistics and details
+- Multivehicle - Stanton - Vehicle Feature - Hit box desync - Vehicles do not take damage when attacked at certain parts of its hull
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- Salvage / Hull Scraping - Nomad - Some sections of the hull show as valid but do not allow salvage
+- Salvage / Hull Scraping - Crusader C2 Hercules  - Some sections of the hull are exceedingly difficult/impossible to salvage
+- Salvage / Hull Scraping - Anvil Carrack  - Sections of the hull show as valid but do not allow salvage ; Some only salvage when beams are offset ; Some show as valid but do not allow salvage
+- Derelicts - Missions / AI / Locations - Once a mission has been completed at the settlement the AI will not respawn for the next mission resulting in it completing upon reaching the location
+- Derelicts - Missions / AI / Locations - If reinforcements do not leave the ship they will be counted towards the hostiles remaining total even once the ship has left resulting in the mission being incompletable
+- Valkyrie bottom turret locks and makes player invisible
+- Salvaging - Some ship wreckages erroneously give "No Material" text and do not let you salvage
+- Ships - Quantum entanglement - hostile indicator - QED does not mark ships as hostile
+- Shopping / UI / Vehicles - Vehicles purchases through rental are missing from ASOP terminals, preventing access / use of the rented vehicle
+- Aegis Reclaimer - Stanton - Ships - Features / UI - Personal Inner Thought - The main elevator of the Reclaimer can stop responding to "Call Elevator" interaction, trapping players
+- Klescher Rehabilitation Facility - Mission Content - ClearCrimeStat - Bounty on escapee will persist even after they have cleared their crimestat
+- Multivehicle EU - Stanton - Vehicles - Destroyed ship thrusters will still not function after being repaired
+- Cargo - Performance - Fully loaded C2 landed at Area 18 results in Slow Framerates or Crash
+- Vehicles/IFCS - When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Stanton - Law System - Users spawn in prison with weapons and armor after dying with crimestat
+- MobiGlas - UI / Ship Components - VMA - Paints and components previously applied to claimed vehicles will no longer be available for use in VMA listings, despite being present in the player's inventory
+- Klescher Rehabilitation Facility - Locations / Loading - Infinite black screen on loading into Klescher
+- Trading - Cargo invisible in multiple ships
+- DRAKE Corsair - Ships - Ship Features - Audio / SFX - Using the crew elevator from the surface will trigger an audio loop
+- Ships / Vehicles - Storing ships at a non-home location will result in a locked state, "Transferring to Storage"
+## Feature Updates
+Gameplay
+- Vehicle/Ship Armour has been rebalanced to account for ballistics piercing through shields as a stop gap until the future armour rework
+Core Tech
+- Made further optimizations to help with slow Inventory
+## Bug Fixes
+- Fixed - Ships / Vehicles - VMS / CryAstro Services - CryAstro services does not offer the option to repair/refuel/restock ships
+- Fixed - Vehicles / UI - mobiGlas - VMA - VMA active tab indicator can become offset switching between ships with different available tabs
+- Fixed - ORIGIN 890 Jump - Ships - Ship Features - Graphics Tech / Art / VisArea / Portal - 890 Jump elevators and lifts have visarea issues or are completely missing
+- Fixed - City window glow is too strong and too frequent for area 18
+- Fixed - Missions - Personal Delivery Missions - Property Reclamation - Mission not updating after grabbing package.
+- Fixed - Ships - mobiGlas - VMA - Components / Mining Laser - Mining lasers display in the wrong tab and can prevent players from equipping or using mining lasers
+- Fixed - Origin 400i - Ships - Components / Materials - Paints - Applied paints do not apply to the exterior face of the airlock
+- Fixed - Actor Feature - Inventory - Equip requests can fail to update in a reasonable / acceptable amount of time, leaving the item in a pending state
+- Fixed - Multivehicle - Ships / VMA - Components - Player customizations to vehicle loadout are permanently lost and reset to default if the ship is claimed
+- Fixed - Exploit - [PES][CHAR REPAIR/RESET] Users are able to get out of prison instantly after a character reset/repair
+- Fixed - Ships / Vehicles - Impounded Vehicles - ASOP - Impounded ships do not finish Transferring to Storage and are no longer Retrievable
+- Fixed - Greycat Industrial Roc  - Vehicles/mining - ROC Inventory fills up past the intended capacity
+- Fixed - UI - MobiGlas - VMA - When saving changes to vehicle loadouts, the 'Unsaved changes'/'Changes Pending' markers are not removed until the player revisits that ship loadout
+- Fixed - Infiltrate and Defend - Mission Content / UI / Game Code - The enemy UI counter is not present when reaching the mission area
+- Fixed - Mission Content / Locations - Repair - Comm Array Repair missions fail to generate property
+- Fixed - Refinery Terminal - Game Code / UI / Locations - Metals and Minerals are Listed as Inert on the Refinery Terminal and cannot be Refined
+- Fixed - MicroTech - Art/Planet - Player and AI can shoot through rock formations across stanton4 surface
+- Fixed - Aegis Reclaimer - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction
+- Fixed - Salvage / Hull Scraping - Kruger P-52 Merlin - Wingtips show as valid but do not allow salvage
+- Fixed - Salvage / Hull Scraping - RSI Constellation Andromeda - Some sections of the hull show as valid but do not allow salvage"
+- Fixed - Area 18 - Shopping / Personal Inventory - Items on Casaba and Cubby Blast shelves can be picked up and carried out of store without paying
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 11 Server Crashes

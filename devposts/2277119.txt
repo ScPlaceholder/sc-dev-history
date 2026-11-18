@@ -1,0 +1,11 @@
+Hi there @Jove_Battleship!
+Oddly enough, we were having a discussion on this subject in the graphics chat last week, then this popped up to the top of the forum.
+I think it's pretty obvious that the third one here is the one that we'd like to have, even if we chose to blur or darken the outer area, and at first glance you might assume that with the render-to-texture infrastructure in place we'd have an easy job doing it.
+The difficult issue, though, is choosing a tradeoff. When we set up an RTT view, we've got quite a lot of options that we can set, but simplistically we have a choice between a full-feature, high cost deferred render of the scene, the way we do the main view usually, and a high-speed approach that skips some postprocessing effects and (in some cases) has certain graphical features totally missing. So to enumerate the options:
+1) Only render the zoomed view: This is what we have now
+2) Only render the non-zoomed view: Terrible option, not sure why I listed it
+3) Zoomed view at high speed, non-zoom at high quality: Viable, but now the part you're paying attention to is ugly. Obviously there's still a decent cost to having drawn two long-distance views at all, but that's the case for all options past this point
+4) Zoomed view at high quality, non-zoom at high speed: Also viable, and you're looking at a nice scope image, but that means any time you aim there'll be an obvious pop where the world around you suddenly gets uglier
+5) Everything at max: This might be the go-to answer for people with killer PCs, but with a big scope you might be looking at a 30-50% increase in frame time*, so unless you're reliably running 50% faster than you actually wanted, you're now going to start dropping framerate exactly as you try to snipe someone. To add to this, several effects such as fog and antialiasing need to keep data from one frame to the next, so the engine would have to be permanently ready to give them a big slice of GPU memory, either by reserving it permanently or by quickly dropping mesh/texture quality somewhere to free up the space. So also, in its way, not great.
+*I've not measured this, please don't sue me
+So in conclusion... there is no conclusion. But rest assured that it's something that weighs heavily on our minds, I guess?

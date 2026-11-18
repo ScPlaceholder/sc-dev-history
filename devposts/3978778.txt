@@ -1,0 +1,6 @@
+Example of how I did this for a game I was playing when I was in college:
+1. Noticed that every now and then, a game I was playing would have intermittent network connectivity problems. Not enough to disconnect me but enough for the game to hitch.
+2. Did a tracert to the servers for the game
+3. Opened a cmd prompt terminal for every hop on the tracert and used these to do a ping -t to every hop
+4. Played the game and waited for the connectivity problem to occur
+5. Found that the second hop was dropping packets. In this situation, this was the router that my land lord was using so bought a new one for them them as a gift rather than telling them their hardware was causing problems for my gaming.

@@ -1,0 +1,75 @@
+## Star Citizen Alpha Patch 4.1.1
+Alpha Patch 4.1.1 has been released to Wave 1 testers on the PTU!   Patch should now show: VERSION 4.1.1-PTU.9698719.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added as they become available. Some features may be implemented in a partial state and as such are not ready for testing and subject to removal. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Ship Battle Missions (patrol, ambush) currently have their sharing disabled for these initial PTU releases
+- Stability & Bugfixes
+- Ship Battle Missions V1 (Patrol, Ambush, and Gilly's Gauntlet Missions)
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback and are subject to removal
+- Fleetweek Events, New Missions, and Halls
+- Mission Meshing Refactor: Comm Array (Hack/Repair), Animal Missions, Multi-Location Courier, and Handyman, PVP bounties.
+- New Collector Rewards
+- NPC Comms Call, Dialogue Additions, and Improvements
+- [Redacted]
+## Known Issues
+- Critical: PU - Space Combat Mission- Ambush - Foxwell - Missions / HUD - "Hide Ship Signature" objective marker has a chance to not appear in Ambush missions
+- Critical: PU - Ship Battles V1 - Patrol / Training School - Missions / mobiGlas / UI / Location - Some missions are not properly localized
+- Critical: Multivehicle - PU - Vehicles - Vehicle landing gear is left in the PU after a ship is destroyed
+- Critical: PU - Physics - Players walking around destroyed landing gear of a ship can fall through the ground
+- Critical: PU - Stanton - Ship Battles - Gilly's Gauntlet - Mission Content / Game Code - Mission does not fail after you QT away from the action area while the mission is active
+- Critical: PU - Stanton - Ship Battles - Security Patrol - Asteroid - Mission Content / Game Code / AI - Ace Pilot sometimes does not spawn (Moderate Chance)
+- Critical: PU - Stanton - Ship Battles - Security Patrol - Asteroid - Mission Content / Game Code - Patrol objectives failed to correctly trigger when the player reaches the patrol point (Moderate Chance)
+- Critical: PU - Stanton - Kill Animal - Mission Refactor / Missions - Pest Control missions sometimes don't spawn enough Kopions for completion
+- Critical: PU - Pyro - Courier - Mission Content - Not enough boxes are spawned for the mission (Moderate Chance)
+- Critical: Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- Critical: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- High: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+## Features & Gameplay
+- Locations
+New Space POIs: Asteroid Cluster Mining Base
+Added Dozens of new Asteroid Cluster Mining Base POIs around Stanton and Pyro used for missions such as the new Ship Battle V1 Mission Additions and more. These Asteroid Bases will have gameplay features such as turrets and gas tanks for use in the various missions but do not have an interior.
+- Gameplay
+Ship Battle Missions V1 (Part 1)
+This content delivery is focused around developing a new set of missions featuring ship combat. Each mission will have improved scenario design and leverage new technology to allow us to improve the narrative flow of missions. The goal is to deliver missions with superior scenario design and a greater level of polish and attention to detail.
+► Patrol Missions
+The Patrol mission takes the player through a series of patrol points. Patrol missions will be offered by Foxwell Enforcement (Legal) and the Head Hunters (Illegal). At each point a semi-random event occurs and escalating ship archetypes may appear depending on mission difficulty and previous events. These missions are gated by location to reduce unnecessary travel time. If you are at Stanton 1 then all the missions you are offered will send you somewhere around Stanton 1. This is to reduce the need for excessive QT times and shift the balance of the QT/gameplay ratio towards engaging with content. Each level of difficulty also has a chance to spawn an Ace Pilot who is an elite member of the Frontier Fighters willing to die for their cause.
+Foxwell offer legal missions against criminals. These will not have a reputation structure and progression will instead be gated by completing early missions a number or times to unlock later ones. Currently any player without a crimestat will move up to the next rank after 5 of each completed mission until Very Hard and Extreme difficulties which will require 10 of the previous to unlock.
+Head Hunters offer illegal missions for Patrol. Any missions offered by Head Hunters in Stanton will be displayed in the Unverified tab and risk sending players against security forces and civilians, giving them a crime stat. They will award an increased amount to offset this risk. Head Hunters has an existing reputation structure, starting with Very Easy Rank 1 and escalating to Extreme at Rank 5+.
+► Ambush Missions
+The addition of a new Ship Battle Mission type known as Ambush Missions. Players must reach a location, head to a spot where their signature will be masked, power down their ship and wait for the hostiles to arrive. Once their targets arrive, the player must attack and destroy all of them. Reinforcements and Ace Pilots, both friendly and otherwise, will appear depending on the level of difficulty. Ambush missions are offered by Foxwell Enforcement (Legal) and the Head Hunters (Criminal). Foxwell offer legal missions against criminals. Any missions offered by Head Hunters in Stanton will be displayed in the Unverified  tab and risk sending players against security forces and civilians, giving them a crime stat. They will award an increased amount to offset  this risk.
+► Advanced Combat Training Gauntlet
+These new Foxwell combat progression style missions from Gilly send players through multiple scenarios of ship vs ship combat.
+Players are tasked with an implicit mission chain where we introduce new challenges and let the player figure their way through things rather than hold their hand every step of the way. The missions are intended to be for players who already know how to fly and are at least somewhat familiar with the game, but don’t necessarily engage in much, if any, ship combat at all.
+There are 8 total scenarios to unlock and progress through with increasing difficulty and complexity.
+- Single Targets
+- Multiple Targets
+- Target Priority
+- Target Stealth
+- Missiles and Countermeasures
+- Multi-Crew Targets
+- Corvette with Escorts
+- Capital Ship Encounter
+- Ships and Vehicles
+Ship Balance Passes
+► Argo Raft Cargo Improvements
+The ARGO RAFT has undergone a few changes that have resulted in a hefty change to it cargo capacity. This is due to the design change on how we want to handle loading and unloading cargo. The 3 arms of the RAFT has been retired in favour of a single grid that supports 192 SCU cargo capacity instead of the previous 96 SCU. In addition due to this change the old style of rail style tractor beam would not function and has now found a new home on the left side framing this station is controlled from the rear control room.
+► Anvil Valkyrie: Greatly increased all around hull and joint health. Further thrust capacity increases but with a very slight max speed adjustment.
+- Weapons and Items
+FPS Balance Passes
+► Karna
+Min spread increased from 0.1 to 1
+Max spread increased from 5.5 to 7
+Spread per shot increased from 1.37 to 1.8
+Reduced alt fire projectile speed bonus from 2.5 to 1.75 (1500 -> 1050, inline with snipers)
+► Gallant
+Adjusted headcam shake to make the weapon feel 'smoother' to fire
+Damage increased from 19 to 21
+► ParaMed Medical Device
+The Paramed is now is used in the pistol slot. The idea around this change is not only to make pulling the medgun out easier (using a pistol keybind that does not conflict with multi-tool) but to also offer some more choice in taking a pistol vs a medical device.

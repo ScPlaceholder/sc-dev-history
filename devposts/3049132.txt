@@ -1,0 +1,69 @@
+## 5250536 UPDATE
+Server, Database, and Backend Fixes
+- The team has been working non-stop on resolving issues with service stability.  Numerous hotfixes have been applied so far and will continue to be put in moving forward.  Note: Because of the outages, your account may be stuck a bad state, which includes missing all ships, missing the mobiGlas, invisible character, or stuck on the CC screen.  Hotfixes will not correct currently broken accounts and those players may need to perform a character reset.
+## Feature Updates
+Gameplay
+- Increased Fleet Week mission timer from 15 to 30 minutes.
+## Bug Fixes
+- Fixed a visarea issue in the Cutlass Black variants that was allowing players to see into the cockpit while standing in the back of the ship.
+- Constellation Aquila should no longer clip into the landing pad or break off components after applying a paint.
+- Invictus Fleet should now consistently spawn at their intended destinations.
+- Fixed issue with the Cutlass Blue flight controller so it should now have its intended rotation values, overheat properly, and have proper amount of afterburner multiplier.
+- Paints attached to the Constellation Aquila should now correctly display on the ship.
+- Fleet week ships should now correctly fire at hostiles when inside greenzones.
+- Fixed an issue causing Javelin turrets to scale larger than intended.
+- Fixed an issue that allowed players to get in and steal NPC F8 and F7a ships.
+- Freelancer DUR should no longer lose maneuverability at 50% fuel.
+- Fixed incorrect QT fuel tank capacities on the Pisces, Terrapin, and 315p.
+- Fixed multiple issues with the Javelin and Idris that were causing extra damage to the fleet when attacked.
+- Increased the health of some components and items attached to the fleet week Javelin and Idris.
+Technical
+- Fixed a client crash.
+- Fixed a server crash.
+## Star Citizen Patch 3.9.1
+Alpha Patch 3.9.1 has been released and is now available!   Patch should now show: VERSION 3.9.1-LIVE.5250536.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled
+Known Issues
+- The no-fly zone around security docks at orbital stations may destroy the player's ship if they enter.  Work-around: Keep a safe distance while in a ship or land and take the elevator to the security dock to watch on foot.
+- The Fleet Week display Anvil Carrack has a non-working ICU bed that players will get stuck in if they set their ICU to it.  Work-around: Do not set your ICU to the display ship.
+- Extra, duplicate, and static trains can appear at Lorville, New Babbage, and Area 18 and may prevent their usage.
+- The multiTool from the prison commissary does not come equipped with an OreBit mining attachment.
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed.
+- Ships can be displayed in an "unknown" state, unclaimable and irretrievable.
+- The PC2 gimbal mounts on Freelancers and Starfarers does not converge correctly.
+- The personal inner-thought wheel does not scale correctly for wide screen usage.
+- All map markers are off set from planet su rfaces.
+- There is a very visible, incorrect reflection on the Super Hornet's canopy.
+- The SCU amount displayed for the 890's cargo capacity is incorrect.
+## New Features
+Ships and Vehicles
+- New Ship: Drake Cutlass Blue
+## Feature Updates
+Gameplay
+- Reduced player's movement speed while charging a railgun.
+- Updated Arena Commander Free Flight to no longer kick players for friendly fire.
+- Temporarily removed scramble races.
+- Friends list on the frontend will now display the number of players on a PU server they are in if you right click on their name.
+- Increased score to REC conversion for all Electronic Access games.
+- Increased REC rewards for Star Marine.
+- Arena Commander scoring pass on all ships.
+- Reduced score required for Battle Royale and Squadron Battle to 15k and 30k respectively.
+- Reduced time limit for Battle Royale and Squadron Battle to 15 minutes.
+- Removed timers for "steal stash" mission.
+- Added Drake Caterpillar, Cutlass Red, and Cutlass Blue to Arena Commander Inventory.
+Ships and Vehicles
+- Changed in-range radar targets to show up as known to remove the "?" AR marker.
+- The Glaive and Blade can now swap shields.
+- The Buccaneer can now equip size 1 gimbals.
+- Increased max speed of the Retaliator to 942.
+- The Valkyrie's pilot guns, wing guns, powerplants, and shields can now be swapped.
+- The Cyclones shields can now be swapped.
+- Adjusted Reclaimer's default shields to intended 3x S3.
+- Cyclones now have shields equipped by default as spec'd
+- Starfarer/Gemini nose mount can be swapped between fuel intake and missile rack with missiles customisable.
+- Increased the distance players can scan and detect Sentries and Probes.
+Core Tech
+- Long term persistence, the wallet, and the ledger have been updated for more stability.
+- Consumables (missiles, medpens, oxypens, flares, weapon magazines) will no longer persistence between resets/wipes.

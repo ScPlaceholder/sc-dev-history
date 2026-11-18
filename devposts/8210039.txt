@@ -1,0 +1,66 @@
+Hi Everyone!
+Time again for another Hotfix Central thread to keep you all up to date on things going on outside of the normal patch cycle in SC Alpha 4.3.2 LIVE!
+This will be a living document of all the hotfixes applied to the current LIVE environment, along with dates as a timeline and when the HOTFIX channel is open and closed.
+These posts will be locked down to comments as the updates will span the entire 4.3.x cycle so please check out the issue council and testing chats for any information you would like to let us know about!
+## Current 4.3.2 LIVE Status | 11.4.2025
+- Status: Hotfix Channel Currently Closed
+- Latest LIVE Client Hotfix CL: 10591185
+- Latest LIVE DGS Hotfix CL: 10591185 (10624847 canaried onto some shards and slow rollout if all is well)
+► 11.4.2025: 10624847 We are currently slowly rolling out a DGS hotfix to fix the Frontier Fighters Finale overall progress not matching completion analytics
+► 11.3.2025: 10591185 Live Client/DGS hotfix
+- Client: PU - Vehicles / Vehicle Tech Art / Quantum Travel - The ship's destroyed parts are visually restored after quantum travel
+- Client: PU - Locations - Cargo / UI / Vehicles - Commodities Kiosk - Purchasing cargo directly to a stored vehicle is not possible as you cannot select an amount for the selected commodity
+- Server: PU - CFP vs HH - Hunt the Polaris - Missions Content / Quantum Travel / AI - Players can take control of the Polaris and Quantum Travel away from the mission location
+- Server: PU - Cargo Hauling / Vehicles - MISC_HULL_C - Automated cargo loading freezes after starting and does not resume
+- Server: PU - CFP vs. HH - Missions / Locations / UI - Freight Elevator - Missions that require delivering the Datapad via Freight Elevator have a chance of not completing
+- Server: PU - Stanton - CFP vs HH - MissingPerson Courier - Missions - Mission objective has a chance to not update when picking up datapad
+- Server: PU - Error - Error 41013 - Error 41013 can appear upon logging in/loading screen into PU after restarting/closing the game
+► 10.22.2025: 10487514 - Hotfix maintenance on LIVE is in progress. This includes approximately 6 updates. Wikelo has been re-enabled.
+- Fixed an issue causing players to not be able to sell commodities at TDD locations
+- Fixed an issue causing the missing person courier mission datapad to not be able to be picked up
+- Fixed multiple issues with Wikelo's mission banners, HUD, and required mission item inconsistencies
+► 10.20.2025: We are currently testing hotfixes that will require a maintenance downtime this week. This includes fixes for datapads not being able to be picked up, commodity trading not working, and Wikelo turn-in issues, and more.
+► 10.19.2025: 10480022 - Client/DGS Hotfix is now on the LIVE channel with the fixes below
+- Fixed 5 Server Crashes
+- Fixed the Argo Mole and ROC DS mining UI and scanning HUD not functioning when targeting mineables
+- Fixed an issue with the Yormandi weak spot destruction not triggering the destruction event
+- Fixed an issue with the Yormandi sometimes relocating to a pool with another Yormandi already in it
+► 10.17.2025: 4.3.2 LIVE updates
+- We have temporarily disabled Wikelo contracts due to issues with incorrect turn-ins and will re-enable once we have further fixes for this.
+- We have removed all the undersuits from accounts that were causing inventory overload. These should no longer appear and break your inventories.
+We are also currently tracking certain inventory issues and loading errors (41013) that are appearing with this release and will update if we have any further information.
+Previous 4.3.1
+With the new release of SC Alpha 4.3.1 LIVE, we are currently looking through hotfixable issues that can be addressed and will update here as soon as these fixes are ready for release.
+► 10.06.2025: 10392434 is currently on the LIVE channel with a fix for a Vulkan client crash
+► 10.03.2025: 10380617 is now on the LIVE channel includes multiple Arena Commander fixes for rewards and player markers.
+► 9.26.2025: 10330904 has started to propagate through 4.3.1 LIVE shards with further stability updates and fixes for constant spawning AI
+► 9.23.2025: 10310799 Client portion of this hotfix is currently on the LIVE environment while select shards are now running 10321721 to test fixes for cargo hauling missions and more.
+Client Side Fixes
+- 3 client crash fixes
+- Multi-Vehicle - PU / AC - Vehicles / IFCS - Landing gear down is max speed of 10m/s instead of 10-30ms
+- PU - Multi-Vehicle - Vehicles / Vehicle Components - IFCS - Proximity Assistance - When Proximity Assistance is enabled, vehicles will lose their movement ability until it is disabled, this can prevent vehicle take off as well
+- PU - Multivehicle - EPILEPSY WARNING - Vehicles / VFX / VOIP - Vehicle Thruster and Jump Point VFX will appear incorrectly when in an Comms Call with another Player
+DGS Fixes
+These will only be on select shards for testing before larger rollout
+- 1 Server Crash
+- Multiple Arena Commander fixes for rewards and player markers
+- fixes for constant spawning AI
+- Multivehicle - PU - Vehicles - Cargo - Freight/Cargo onboard vehicles disappears upon storage + retrieval.
+- PU - Missions / AI / Locations - Mercenary - UGF - Lots of Guard AI spawning at lawful UGFs
+- PU - LTP / Contested Zones - Unequipped Contested Zone items do not persist between patches
+- AC - ALL Chat - Initial player that enters a team based match will be in a separate [ALL] chat from the rest of the Players.
+► 9.19.2025: Servers have now been hotfixed for the low RMC prices
+## Previous 4.3.0
+► 9.3.2025: During the maintenance this morning all the 4.3.0 clients and shards have been updated with the latest 10188864 Hotfix. This hotfix address multiple crash issues as well as overspawning AI issue around locations in the PU and adjust difficulty in final waves of pirate swarm.
+► 8.22.2025: A 4.3.0 LIVE maintenance has been completed with clients and servers being updated to 10147769 during this process
+► 8.22.2025: Client/Server Hotfix 10137604 is now on the LIVE channel with servers gracefully being replaced with the new hotfix when the crash.
+Some of these fixes are on the client while others may require being connected to a hotfixed server when these become available.
+- Multiple Client and Server Crash fixes
+- Fix for "Investigate all Patrol Points" Patrol mission markers not appearing
+- Further updates to Inventory sizes at landing and space station locations to bring them back up to their intended amounts
+- Potential Fix: PU - Mission Content / Quantum Travel / Game Code - Extra-terrestrial  QT to the Onyx Facility QT Beacon without using the Starmap to generate the route uses orbital splines incorrectly
+- Fixes for Arena Commander matches not ending after time ends
+► 8.17.2025: An issue was discovered with landing services inventory regeneration amounts and was hotfixed Sunday to resolve the issue
+## Using the HOTFIX channel
+The HOTFIX channel will become available for periods of time when the client-side of the game needs the hotfix. This channel will point to the LIVE environment and using this will retain and add progress to your LIVE account as if you were playing normally.
+- The best way to play on HOTFIX is to rename your LIVE folder to HOTFIX and verify using the HOTFIX channel on the launcher. Reverse this process to go back to LIVE once it is released or you would like to stop using this channel.

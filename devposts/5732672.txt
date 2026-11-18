@@ -1,0 +1,17 @@
+Hello again!
+It's finally done. Any fullscreen visor effect like the frost and raindrops now work on all aspect ratios up to 48:9 (e.g. 7680x1440) without any clipping.
+They do stretch but this will be fixed in the future by VFX. It's not as immersion breaking as any clipping.
+The changes in detail:
+1. The visor 3d-mesh now dynamically changes based on aspect ratio. Currently supported is 4:3, 16:9, 21:9, 32:9 and 48:9. Anything in between takes the closest one. Big shoutout to @CianSmyth for creating these for me.
+2. The camera now dynamically moves along it's view direction depending on the FOV so that the visor always covers the entire screen.
+This also has the positive side-effect that the UI has a coherent size regardless of aspect ratio and screen size now.
+Bonus:
+If you prefer to play with higher field of views now you can!
+Since field of view does work with the visor now the upper limit has been extended by quite a bit:
+Previous range was 54-67 Vertical field of view. New range is 54-84
+Be advised that the limits in the Graphics Settings are horizontal. They get calculated automatically based on your current aspect ratio. (See http://themetalmuncher.github.io/fov-calc/ if you want to calculate it yourself)
+Example:
+16:9 Aspect Ratio -- Previous Limit: 85 - 100 -> Now: 85 - 116
+This change also fixes the black bands/blurry visor some people have seen in Area18 (https://robertsspaceindustries.com/spectrum/community/SC/forum/50259/thread/black-bands-on-helmet-visors-at-3440x1440p/5682862)
+Have fun playing Star Citizen and fly safe o7
+Silvan

@@ -1,0 +1,48 @@
+## Star Citizen Patch 3.10.0v
+Alpha Patch 3.10.0v has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.0-PTU.5789362.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- Ship flight in and out of atmosphere
+- Updated building blocks ship UI for all flyable ships.
+- High speed combat changes
+- Turret gameplay
+- Origin M50 Improvements
+- Electron FPS Weapons and Electron Damage
+- Body Dragging
+- Citizen Trading App
+- New Targeting Method
+- Delivery Mission Improvements
+Known Issues
+- Both FPS and Ship Mining methods produce UI stalls resulting in the user overcharging their targeted deposit.
+- Delivery missions with multiple pick-up locations can result in only two drop-off points or a 3rd drop off point that doesn't work if the delivery location is an Aid Shelter, preventing delivery of the third box. (Workaround: Avoid multiple delivery drop off missions to aid shelters)
+- Using the tractor beam on the Greycat ROC to pick up multiple gems at once will cause a significant portion of the gems to vanish
+- Some players will be unable to start or join any multiplayer mode
+- Private Arena Commander matches are temporarily disabled due to an issue with the updated group system
+- The player that made the personal transport / escort beacon will not be able to see marker on player that accepted
+- Global chat is unavailable in the visor HUD
+- Planetary ambiances can be heard at various locations in New Babbage
+- Player character can clip through the external doors of certain outpost buildings and Aid shelter buildings' airlocks when entering
+- Hangar Doors can remain closed when the Hangar is assigned to a Landing Players Ship.
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- Landing gear will take multiple presses of the keybind to activate.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- The Greycat ROC cannot extract all of the child crystals, some are left behind
+- Hammerhead atmo entry effects clipping through interior of the ship
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+- Shots from remote turrets may appear desyned but still connect with the target.
+## Feature Updates
+Gameplay
+- Reduced the sell value of holiday letters and boxes found in derelicts to be in-line with other commodities.
+## Bug Fixes
+- There should no longer be long delays for some gameplay updates.

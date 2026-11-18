@@ -1,0 +1,52 @@
+## Star Citizen Patch 3.3.0t
+Alpha Patch 3.3.0t has been released to the PTU, and is now available to test!  Patch should now show: PTU-973591.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- VOIP
+- FPS Combat AI
+- Scramble Races
+- FOIP
+- New Ships and Vehicles: Valkyrie, Phoenix, Hammerhead, Mustangs, and Cyclones.
+- Manned and remote turrets.
+- Changes to ship cannons.
+Major Known Issues:
+- Starfarer derelicts currently lack lighting.
+- Mission givers may not be functioning correctly.
+- Inviting someone to party via the mG causes a client crash. W/A: Invite via interaction mode.
+- Ships rented from the front-end do not show up in ship selection list.
+- Ships are able to quantum travel to locations they do not have enough fuel to reach.
+## New Features
+Universe
+- Activated Teach's Ship Shop functionality.
+You can purchase a ship via interacting with ships on the shop floor (similar to store displays).  Ships on the shop floor can be opened, explored, but not flown. Players have been given additional funds to test this feature.
+## Feature Updates
+General
+- Enabled FOIP hotkeys "7" for lookback camera and "8" for quick calibrate.
+Universe
+- Added shop inventories to the rest stop.
+UI
+- Updated UI for destroy mission.
+Ships and Vehicles
+- Updated the landing flight tunings for the Valkyrie.
+## Bug Fixes
+- Fixed an issue where scramble race starting areas and patrol missions could end up overlapping.
+- Fixed comms remaining open at the the end of a mission.
+- NPCs should now be correctly moving about Port Olisar and GrimHex.
+- Delamar rocks should no longer disappear as the player approaches.
+- Battaglia missions should now work correctly.
+- Missiles should no longer stick in place and cause the ship to shake after launch.
+- The Sabre's engine trails should no longer be off-center.
+- The Freelancer's engine glow should now show at idle.
+- The Sabre's engine glow should now vary properly with thrust values.
+- Emotes should no longer work from the pilot seat.
+- Ship audio should no longer say "missiles dry" when the player still has missiles left.
+- Fixed an issue with derelict based missions where the wrong ship would spawn and disable the mission.
+- Admins should now be standing at their desks at outposts.
+- Fixed Valkyrie bed logout interactions being at an odd angle.
+- The doors on the Hammerhead should now be working properly.
+Technical
+- Fixed 4 client crashes.

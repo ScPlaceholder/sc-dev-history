@@ -1,0 +1,46 @@
+{
+ "_help": {
+  "sources": "Where to look. Each is a YouTube channel tab; the tool reads only the newest 'scan_newest' entries of each. Set enabled to false to switch one off.",
+  "not_before": "Videos published before this date are never taken automatically (they show as 'older gaps' in --dry-run; --backfill takes them). YouTube's listing only gives approximate dates (to the month), so this is a rough line, not an exact one.",
+  "max_items_per_run / max_audio_hours_per_run": "Hard caps for one run. A single video longer than the hours cap is never taken automatically: run it by hand with --hours N.",
+  "pause_seconds": "Wait between two downloads (plus or minus 20 percent).",
+  "max_tries": "A video that fails this many runs in a row is left alone (remove it from chronology/video_state.json to try again).",
+  "botcheck_cooldown_hours": "After YouTube's 'confirm you're not a bot' check or an HTTP 429, nothing contacts YouTube for this long.",
+  "whisper_model": "tiny, base, small, medium, large-v3 ... The existing corpus was made with small. Bigger is slower: see the README for the measured speed.",
+  "device / compute_type / cpu_threads": "cpu + int8 keeps this off the GPU entirely. cpu_threads limits how many cores Whisper uses.",
+  "branch": "The tool refuses to run unless this branch is checked out.",
+  "push": "false: commits stay local. true: after committing, rebase onto the remote branch and push.",
+  "rebuild_search_index": "false: the daily GitHub Action rebuilds chronology/search_index.json.gz after a push. true: rebuild and commit it here (it will then conflict with the Action's own daily commit unless you always push first)."
+ },
+ "_not_included": {
+  "twitch.tv/starcitizen": "Looked at 2026-10-06. Star Citizen Live airs there first, and every episode checked is also uploaded to the YouTube channel's Videos tab within days (trimmed, without the countdown). Taking both would transcribe each show twice, and the corpus names every file by its YouTube id. The one Twitch-only VOD in the last 40 was a 9-hour esports showcase. Not supported by this tool.",
+  "youtube shorts": "Clips cut from the longer videos. Not tested with this tool."
+ },
+ "sources": [
+  {"name": "youtube-videos", "url": "https://www.youtube.com/@RobertsSpaceInd/videos", "enabled": true},
+  {"name": "youtube-streams", "url": "https://www.youtube.com/@RobertsSpaceInd/streams", "enabled": true}
+ ],
+ "not_before": "2026-06-19",
+ "scan_newest": 30,
+ "max_items_per_run": 4,
+ "max_audio_hours_per_run": 4.0,
+ "pause_seconds": 45,
+ "max_tries": 3,
+ "botcheck_cooldown_hours": 12,
+ "min_free_disk_gb": 3,
+ "download_timeout_seconds": 3600,
+ "whisper_model": "small",
+ "device": "cpu",
+ "compute_type": "int8",
+ "cpu_threads": 4,
+ "beam_size": 1,
+ "language": "en",
+ "below_normal_priority": true,
+ "branch": "corpus",
+ "remote": "origin",
+ "push": false,
+ "rebuild_search_index": false,
+ "author_name": "ElahMoth",
+ "author_email": "322847132+elahmoth@users.noreply.github.com",
+ "co_author": "ScPlaceholder <starcitizenplaceholder@gmail.com>"
+}

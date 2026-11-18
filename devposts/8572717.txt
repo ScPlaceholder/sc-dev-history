@@ -1,0 +1,9 @@
+Heya,
+we can't answer "when" questions but I can give a bit of context.
+The FM feature work for S42 is completed (IFCS, control surfaces, quantum, carrier ops, etc.) and we're just doing smaller follow-up work (e.g. code clean-up, tuning, minor bug fixes, UI adjustments, etc.). The same underlying tech is already in the PU dev streams.
+But while S42 is relatively straight forward to tune and balance, it has a much smaller ship roster and as a single player game we have greater control over the experience. The PU with it's PVP parts is a different beast. We have hundreds of ships and variants and every single one needs the flight model retuned for NFM and made sure it sits in the right spot.
+During the MM update we had to update the flight model of all ships within a single release cycle because the technology didn't support parallel flight models. That was very demanding on us devs and initially didn't allow us to focus on the unique characteristics of each ship. The new tech now supports parallel NFM models which means we can take our time with each ship as the legacy FM data is still intact.
+And that's why we're taking a more granular approach this time: Instead of a large, sweeping change, we're gradually going through every ship and setup its individual character from the outset. That involves extensive validation through focused playtesting, iteration, rinse, repeat and that process has been going on for a while now.
+I am actually super happy with the progress but we do not have yet enough ships converted to start public testing. We'll show things when we will feel it's ready.
+I hope that clears it up a bit.
+TLDR: Progress is really good but not ready to show yet.

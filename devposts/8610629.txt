@@ -1,0 +1,71 @@
+## Star Citizen Alpha Patch 4.6
+Alpha Patch 4.6 has been released to all backers!   Patch should now show: VERSION 4.6.0-PTU.11105241.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Alliance Aid Event
+- Industrial Mining and Salvage Missions (FPS versions currently not enabled)
+- LAMP: Light Amplification System
+- Aurora Mk I
+- VR Updates
+Known Issues
+In-Game shopping interface that incorrectly shows "UEC" instead of "aUEC" for certain transactions. This is a visual error only. All affected transactions properly utilize aUEC (alpha United Earth Credits), not the purchasable UEC. No real-money currency is involved in these transactions.
+- PU - Stanton - Actor / Collision - Actor sinks at the surface after reconnecting from ungraceful exit
+- Multi-System - PU - UI / mobiGlas - Selectable elements inside the mobiGlas Tabs have slim areas of deadzone which can make selecting them difficult
+- PU - Nyx - Landing Zone (LZ) - Levski - Art / Locations - Cargo Center/Services - The floor is missing at the entrance to the area and causing AI to become stuck entering/exiting the area
+- PU - Multi-System - Stall / Freeze - Client - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing and using Commodities Kiosks
+- Multi-System - PU - Combat AI Feature / AI - Some hostile AI will not shoot
+- PU - Stanton - Pyro Gateway - ATC / Locations / Hangars - Unable to contact ATC via keybinding shortcut
+- RSI Aurora GS - ( All Variants ) - PU - Vehicles / Atmosphere / Actor - Player actor briefly suffocates when entering vehicle bed
+- PU - Pyro - Ruin Station / Contested Zones (CZ) / Elevators - Ghost Arena B elevator does not arrive when called
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+## Features & Gameplay
+Gameplay
+- Re-enabled place from inventory
+- Clean Air: Defense mission difficulty balance pass
+- Engineering: Introduced a % repair threshold for when repairing ship items (10%). Instead of items functioning instantly during repair, this threshold must be reached before functionality.
+- Updated planet / moon descriptions within star map to include info about potential resources which can be found there
+- Updating the extinguisher effect to support propulsion functions
+Ships and Vehicles
+- Added Aurora Mk I and Apollos to ship and rental shops
+- Added LAMP to Aurora Series
+- Avenger Series Audio Polish
+Weapons and Items
+- Ground Missiles added to CryAstro so they are restockable
+Core Tech
+- Texture Streaming Performance Polish
+## Bug Fixes
+Star Citizen Alpha 4.6.0 currently contains over 80 bugfixes for issues occurring in 4.5.0, 28 of which originated from the issue council.
+- Potential Fix: PU - Engineering - AI - ships are being disabled instead of destroyed with AI ships
+- Potential Fix: Core Tech - Graphics - Enabling NVidia Smooth Motion disables client display (STARC-189220)
+- Potential Fix: PU - Graphics / UI - Settings - VRAM Bar does not display correct information on LINUX
+- Potential Fix: PU - Stanton - Alliance Aid - Mission Content / UI - Notification for completing Tier 3 for Transport does not list the rewards
+- Potential Fix: PU - Stanton - Alliance Aid - Mission / UI - Players total points does not increase after completing mission
+- Potential Fix: PU - Clean Air - Missions - Kill Ship - There is a chance the enemy targets can teleport away to an unreachable location (STARC-193180)
+- Potential Fix: RSI Aurora ALL Variants - PU - Vehicles / VFX - Atmospheric entry effects appear incorrect
+- Potential Fix: PU - Network - Server Recovery / Character - Players get stuck at "Repositioning player" after client or server crash recovery if they are in a location requiring a reposition
+- Potential Fix: PU - Stanton - Hurston - Lorville - AI / Social AI - AI are unable to perform subactivities at multiple Lorville gates
+- Potential Fix: PU - Multi-System- Industrial Resource Gathering - Mission Content / SFX / Comms Notification - Abandon voiceline sometimes plays instead of Mission complete across multiple contracts
+- Potential Fix: Multivehicle - Vehicles / Components / HUD / Lighting - Lamp activates on outside of ship visor not inside (STARC-193968)
+- Potential Fix: PU - Industrial Missions - Mission Content / Game Code - Sub-contracts for Size 0 Component missions aren't requiring their intended component types
+- Potential Fix: Multivehicle - PU - Vehicles / Art - Lights sources has shades of black when activating LAMP
+- Potential Fix: PU - Nyx / Stanton - Locations / Harvestables / Mining / Mission Content - No asteroids have collision within 50km of levski
+- Potential Fix: PU - Yormandi - AI - Yormandi despawns too quickly when the only player gets downed
+- Potential Fix: RSI Aurora  Variants - PU - Vehicles - unable to replace fuse on aurora
+- Potential Fix: PU - Nyx - Levski - Locations / Actor / Actor Status - Asphyxiation in Service Sections of Hangars
+- Potential Fix: PU - Industrial Missions - Hand Mining - Mission Content / UI / MobiGlas - Hand Mining Intro mission is missing it's second objective upon location arrival (STARC-193744)
+- Potential Fix: PU - Locations - Harvestables / Mining / Salvage - There is a ton of Salvage debris scattered across Glaciem Ring / Yela belt / Lagrange Points, making it difficult to track down/scan for Mining Asteroids (STARC-193927)
+- Potential Fix: FPS - Unable to swap weapons whilst sprinting
+- Potential Fix: Anvil Ballista ALL Variants - PU - Vehicles / Vehicle Components - Unable to equip any missiles other than the missiles on the default loadout
+- Potential Fix: Multi-System - Pyro / Stanton - Mission Content / Game Code - Industrial Resource Gathering - FPS Mining - Mission Content / Game Code - Players are directed to drop-off locations in a different system
+- Potential Fix: PU - Industrial Resource Gathering - Mission Content / Cargo / Props - Fuel Pods do not snap to External Freight Elevator Cargo Grids
+- Potential Fix: PU - Industrial Missions - Mission Content / Salvage - Ship Ore Pods submitted via Freight Elevator will not count toward the mission total
+- Potential Fix: Multilocation - PU - Stanton - Locations / Creatures - Juvenile Valakkar can sometimes emerge at building interiors
+- Potential Fix: Front End - Main Menu - UI - Multiple option settings have placeholder text
+- Potential Fix: PU - Industrial Missions - Missions / Ship Mining - Ship Mining Introductory Mission for microTech only appears in ArcCorp
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 2 Server Crashes
+- Fixed a Server Deadlock

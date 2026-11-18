@@ -1,0 +1,74 @@
+## Star Citizen Patch 3.11.0
+Alpha Patch 3.11.0 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.0-PTU.6156962.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Pledge Copy: Disabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- New Cargo Decks
+- New Space Station layouts
+- BEHR BR2 Shotgun
+- BEHR Grenade Launcher
+- Front End Refactor
+- Exterior Space Station Green Zone Removal
+- Player and External Inventory Interactions
+- Throw T1
+- Force Reactions T1
+- Missile and Countermeasure QOL Improvements
+Known Issues
+- Deadlocks may be likely
+- CPU usage can reach 100% while just idling in game (please let us know if this is happening in the regression)
+- Mission givers are leaving their designated areas / wandering from their posts
+- Character can be two different skin tones and not the gender the player picked
+- NPCs walking around the exterior of the CBD are not posing correctly
+- Ships landed at Lorville cannot be stored
+- HUD elements for enemy ships are massively offset at ultrawide resolutions causing them to be invisible to the player
+- Ship NavMarkers and Target Highlight can become detached from Ships when Pitching Up and Down and traveling forwards
+- The Player Can Spawn in a Dead State unable to interact or Respawn
+- The Mantis Snare will not prevent the other player from completing their QT (Short Range QT)
+- Turrets don't always open fire after respawning
+- Purchasing OxyPens or MedPens from the shelf will not place the item in the player's inventory
+- Players are timed out of using a Kiosk or an ASOP terminal after 1 minute when interacting with it
+- Commodities kiosks at Grim HEX and Lorville don't let the user select commodities to sell.
+- Specific sentry turrets take no damage against missiles & torpedos
+- Global Chat text is not always displayed in mobiGlas or visor
+- No charges are given to a player that rams and destroys another ship with players
+- Pilot of a ship containing a passenger will be charged with Negligent Homicide if their ship is rammed and destroyed by another player
+- Ramming and destroying another player with a ship does not generate a crime
+- Various tables and chairs around Promenade and Commons have template chairs and replaceme texture
+- Some ships and vehicles can be left in a broken state after spawning
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+## New Features
+Characters
+- Updated character creator to use new head designs
+Locations
+- Added Space Station Cargo Decks
+Cargo Decks are facilities within Rest Stops where players can handle all their cargo needs. From dropping off and picking up, buying new cargo equipment, and taking on cargo-related missions.
+Weapons and Items
+- New FPS Weapon - BEHR Grenade Launcher
+Enemies will either scatter or splatter when you turn the GP-33 "MOD" in their direction. This military-grade launcher fires 40mm grenades to clear rooms and flush out enemies behind cover. Those that don't immediately flee will feel the pain, as Behring's precision design also includes a feature that primes each grenade to explode on impact. Attachments: Optics (S1), Underbarrel (S1).
+- New FPS Weapon - BEHR BR2 Shotgun
+Originally designed for the military, Behring decided to sell the BR-2 ballistic shotgun to the general public after the initial weapon testers kept requesting to take one home. Featuring a semi-auto fire mode that can rapidly deliver devastating stopping power, the BR-2 is the ideal choice for both offensive and defensive operations. Attachments: Optics (S1), Barrel (S3), Underbarrel (S2).
+Core Tech
+- Ground Cover Buoyancy
+Seaweeds and other ground cover elements on water will simulate buoyancy, floating and reacting realistically to water waves to further enhance the visuals of water on planets.
+## Feature Updates
+Locations
+- Repainting Existing Planets and Moons
+Utilising the new planetary painting tools we've gone through all planets and moons in the Stanton System and repainted the ground surfaces and object presets. This also futureproofs ourselves and allows us to take advantage of new tech in legacy locations.
+- Updated Ground Texture and Geology
+Updating and expanding our current terrain texture library by adding scanned data. On a per object basis we are now able to support HW tessellation displacement on geology distributed across terrain to give it a more organic appearance.
+- Added Hurston material variant for the Hurston Outpost exteriors.
+Gameplay
+- Front End Refactor
+Updating to the Front End UI to use the building blocks system. Adding options to the friends list to pin to the side of the screen and button to remove all notifications.
+- Prison Commissary Vending Machine updates
+Commissary Vending machines in prisons updated to use merits to purchase items.
+- Exterior Space Station Green Zone Removal
+The initial introduction of the relaxation of Green Zones will be removing the armistice zone around the exterior of Rest Stops. This update will allow players to fire ship weapons around Rest Stop exteriors and comes with many updates to the law system and station defenses to help accommodate this.
+Destructible defenses of a few sizes and varieties have been added on and around the rest stops. These range from the small S4 turrets (now destructible) placed on landing pads, through S6 sentries seen in the Claim Jumpers missions, to ALL new S10 turrets on and around the perimeter of the stations. Once destroyed, these currently respawn after 5 minutes (subject to balancing), but in future we aim improve this simplistic system. We have created a Security Response system which while still quite simplistic, adds the CrimeStats of all players in the area (we’re calling this internally the “heat”) and spawns security ships of increasing number and strength in response. The system responds quickly to increases in an area’s heat by spawning in new ships and despawning out any weaker ships they replace. The system responds slower to the killing of its own members (should the heat not be raised by this) and slower still to decreases in heat (to keep security patrolling for a time to ensure the threat doesn't return any time soon). We will develop this system further in the future to also take into account the type of ship the players are using. A new infraction has been created called the Armistice Violation. This is a felony and is given should players damage other ships or station defenses within the Armistice Zone. It does have a grace period and allowance in which the player is warned that further infractions will result in a felony. For it the first implementation, this new infraction will only remain active on the player’s criminal record of 1 day. Should the player enter the Armistice zone while having a CrimeStat or gain a CrimeStat whilst within the zone, they will be shown a warning telling them to leave immediately.
+Players attacked by any NPC or player valid to arrest them should have a start/reset arrest timer started on them. If the player then dies by any means whilst this timer is active, they will be arrested. This timer is ended should the player manage to quantum travel, and will be between one and three minutes, extended by level of engagement with the NPC. This is to get around the unfairness of being arrested simply because an actor valid to arrest you is nearby as now that actor would have had to have attacked you recently. Players are now briefly offered the option to press charges/forgive on crimes committed against them. This is defaulted to press charges for crime committed by non-party members and defaulted to forgive for party members should the notification be ignored. We have converted the indirect killing of players from homicide to the lesser crime of manslaughter in some cases. This includes crushing players with a vehicle, killing via triggering an explosion such as an explosive barrel or a ship-self-destruct. We have also made it manslaughter for every kill aboard a ship other than the pilot. Locking a missile on a ship will now count as hostility and allow that ship to attack you in self-defense. It will cause AI to attack and trigger an “Assaulting an Officer of the Law” infraction if done to law enforcement. Quantum snaring now only gives the player an infraction should they snare a ship and it will give one for every ship snared. Quantum dampening an actor the player has the right to arrest should no longer be a crime. Players should no longer be able to avoid security scans by getting out of their seat. We have fixed several ATC/pad loitering and impounding bugs to ensure the experience is more reliable and consistent. Pad ramming will now be ignored as a crime if committed by a party member. This is mainly to not punish party members for small bumps along the way. You’ll still be able to give a party member a crime stat if the pad ramming is so severe it ends with your death or ship destruction.

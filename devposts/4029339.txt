@@ -1,0 +1,79 @@
+## Star Citizen Patch 3.13.1f
+Alpha Patch 3.13.1f has been released to the PTU, and is now available for all backers to test! Patch should now show: VERSION 3.13.1-PTU.7413748.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Audience: All Backers
+Database Reset: YES
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Stability and bugfixes
+- Fleet Week Playtest
+Known Issues
+- Customizations made on the RSI Website are missing in-game for the 300 series
+- Ships can explode as the player leaves  / enters
+- Items missing after update / Character Reset / pledge change
+- Abnormally long delay between pick up storing of fps mineables/harvestables/items
+- Players may not be able to quantum jump with another player in bridge with you
+- The customizable nameplates do not appear to be visible on multiple ship skins and variants
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Constellation can despawn when flying 30km away after undocking
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+## Feature Updates
+Gameplay
+- Armistice Violation Changes
+Changed the armistice violation to give no grace warning and be able to generate multiple infractions in a short time if violations are persistent. Increased the duration armistice violation and aggravated vehicle damage remain on the player's criminal record.
+Ships and Vehicles
+- Adjusted Tumbril Nova main cannon projectile speed and damage
+- Rotated the Starlifter underside turret view
+- Polish pass on Starlifters emergency lighting and control panels
+- Ongoing Carrack Performance Optimization pass
+## Fleet Week Specific Updates
+- Performance and Lighting Polish pass on Javelin, Bengal, and expo halls
+- Javelin AI tourist animation polish pass
+- Reduced the audio radius of the Javelin turrets
+- Polish Pass on Javelin and Docking area audio with additional music and ambiance
+- Bengal thruster effects polish pass
+- Polish Pass on Fleet Week NPCs with additional animations, wildlines, and updated collision behavior to help reduce them walking in single file lines and through some objects
+- Greatly increased the Fleet Week trade commodity demand
+- Bug Fix - Fixed an issue that was sometimes causing double Bengals to flyby
+- Bug Fix - Fleet week Bengal flyby and accompanying ships should now fly less erratically
+- Bug Fix - Fixed an issue that was causing the Javelin to despawn instead of QTing away after undocking
+- Bug Fix - Fixed an issue that could cause tourists aboard the Javelin to display repeated / rubber banding behavior
+- Bug Fix - The tourists aboard the Javelin should now despawn correctly when event is over
+- Bug Fix - Fixed an issue causing NPCs continuously to walk into walls inside the Javelin tour
+- Bug Fix - Javelin should no longer be missing escape pods
+- Bug Fix - The Briefing Room table in the Javelin should no longer be missing its hologram
+- Bug Fix - Fixed collision In the lower turret room of the Javelin where the player can enter EVA and clip out of the ship under the staircase
+- Bug Fix - Fixed Bengal rear engine proxies to have better collision
+- Bug Fix - Time Sensitive Procyon boxes should no longer explode inside the Javelin, killing players and NPCs
+- Bug Fix - Removed A2 ramp interaction in the Expo halls
+- Bug Fix - Players should no longer be able to fly the p-72 and p-52 in the expo halls
+## General Bug Fixes
+- Fixed a rendering issue that could cause extreme framerate drops in New Babbage trams compared to the rest of New Babbage
+- Fixed an issue that was causing players to not be able to Quantum Travel when a party member is on the bridge with them
+- Fixed a missing zero in the health pool of the Tumbril Nova
+- Players should no longer get stuck in a ship's medical bed after laying down
+- Players should now be able to store the Hammerhead once it has been docked at an R&R station
+- Adjusted the Starlifter landing system to be harder to roll on its nose
+- Fixed an issue that was causing the Starlifter ramps to not reach the ground on flat surfaces
+- Starlifter co-pilot screen should no longer be rotated 90 degrees from its intended orientation
+- Fixed an issue causing Starlifter interaction screens to move and float away from their intended positions
+- Fixed missing buttons on the Starlifter toilet doors
+- Fixed an issue causing weapon lockers in the M2 Starlifter Armory from working
+- Fixed missing buttons on the Starlifter toilet doors
+- 'Warning shields Critical' HUD should no longer continue to remain on the screen after shields have recharged
+- Players should no longer be able to undock a ship from a station while the ship is powered off or has no pilot
+- Female characters should no longer clip inside the bed on multiple Aegis series Ships, which causes the player to not be able to Log Out or Exit the bed
+- Merlin's should no longer be able to dock with another Merlin
+- Caterpillar Cargo Doors should now be able to be opened or closed
+- There should no longer be a Ball of light seen in cockpit view of the Pisces
+- Fixed an issue causing the rear cargo door to vanish on the Argo Cargo when observed at certain angles
+## Technical
+- Fixed 3 Client crashes
+- Fixed 4 Server crashes
+- Backend Service Performance Optimizations

@@ -1,0 +1,85 @@
+## Greetings Citizens,
+Welcome back to our third weekly update on Star Citizen Alpha 2.0. development!
+We’re getting just as excited as you guys are to get this release out so the team are pushing hard every single day to make that happen! The patience and understanding of game development in the Star Citizen Community is often astounding and refreshing to hear so we wanted to let you know that it really drives the team on to hear such words of encouragement. We are really not that far from delivering this huge amount of new content to you all but game development is a complex process that takes time to pull everything together and stabilize it to be ready for a good user experience. We totally understand any frustrations you may have in waiting for such a tantalizing release so we will always do our best to give you visibility on the progress of it, warts and all, so you’re not left in the dark and we’ll keep addressing the main priorities and look to release it the very moment that it’s good and ready!
+We’ve described much of the content that’s been implemented already, so you should have a good idea of all the cool new features you’re going to be getting your hands on, we’ve got the ships and environment ready and we are very much in to the polish phase of the release with the addition of things like energy Recharge Stations to various satellites. The vast majority of the gameplay experience is there to play and we’re really locking things down in terms of avoiding any major new additions to the code base in order to stabilize the build and avoid the risk of knock-ons.
+Performance improvements are a typical part of any video game release. Despite making things as optimal as possible along the way, there’s always a big push towards the back-end of the development cycle in order to bring everything in to acceptable frame rate levels… and we’re not quite there, yet! If we released it to you now, it really wouldn’t do any of the content justice because it needs to play nice and smoothly and be relatively crash-free. Some crashes are inevitable with introduction of new codebase systems coming online so essentially just bugs that we just need to churn through as fast as we can.
+One of the most exciting things about this release is the story element. Arena Commander was our testbed for implementing the ship systems that you see today but with Crusader we will be opening it right up to whole new level of gameplay. For one, the Audio team have implemented some new computer system voices for things like the airlocks and the Comms Array terminals and the vending machines which really brings things to life, and yet we still have even more dialogue to implement that will really hit home those levels of immersion. In this scenario you’re picking up a job on your mobiGlas as a Space Technician and we leave you exploring the beautiful environment, investigating the backstory of events, taking on pirates, working with the UEE security teams and doing things in whichever way you wish! It’s a real sandbox of random scenarios with traders, UEE and pirates quantum jumping around and making you feel a part of something… and yet this is all just be the tip of the iceberg!
+In terms of FPS-specific work, the team has put together a mixed armor set for use in 2.0 this week, complete with the light marine armor, RSI helmet, 2 medPens, helmet, EVA jets and an ArcLight laser pistol as the default loadout for all players adventuring on the Crusader map. There will also be P4-AR Ballistic Rifles available for pick-up on Kareah station. This will be the first taste of Star Marine in the 2.0.0 release, with more to come down the line.
+Work continues on Star Marine proper as well, although the priority is getting Alpha 2.0 (which jumps ahead and introduces FPS gameplay to the persistent universe) ready for launch. To that end, we’re focusing on Star Marine-related tasks that will impact both planned releases, and we are broadening our weekly update to focus more on the task at hand. Expect to hear more about Star Marine proper after 2.0 is released, but know that much of the FPS work happening right now will apply to both releases.
+Let’s get on with the high level breakdown of items from the various teams…
+## Gameplay and Engineering
+- Added energy Recharge Stations to various satellites
+- Added feedback for when a EZ Hab pod is locked to you
+- Restored rotating rings to Port Olisar
+- Finalised the Research Satellite method of mission giving
+- Mark-up for all Asteroids added using the new, more automated method
+- Moving EVA to an improved physical control model
+- Implementing ragdoll animation whilst in EVA
+- Improved ragdoll animation – see WIP video
+- 1st pass implementation of breaking apart of the Retaliator (on destruction)
+- Will be more visually impressive and realistic
+- Performance improvements/optimisations
+- Network optimisations
+- General bug fixing
+* Fixed a bug with health pens not working
+- Weapons not physicalize properly, they remain floating in space, upon death.\
+- Fixing bugs on weapon select/deselect/holstering.
+- Reviewing look poses for Pistol firing with the animation team.
+- Procedural weapon animation work is still in progress. Work on positioning, weapon sway, weapon cant, will go into next week. Recoil is feeling good.
+- Ammo boxes are broken, investigating. Energy recharge stations are working! Lasers; pew pew!
+## UI
+- Multi Crew screens polish
+- Mission manager UI polish
+- Quantum Travel UI polish
+- Screens for Crusader station
+- General reticule polish
+- Multi Crew screens polish
+- Making a first pass and simplified Main Menu, so players don’t have to load into the Hangar every time they start the game or finish a match.
+- Base implementation of a reticule for the EVA HUD.
+- Bug fixing
+## Art
+- Constellation flight ready
+- Retaliator flight ready
+- Cutlass Black flight ready
+- Updated to support the new damage tech.
+- Updated to support multi-crew functionality
+- Final layout polish for the space station interiors with bug fixing galore, profiling, optimising, testing
+- Final lighting polish for the space station interiors
+- Layout and signposting changes to the Cry Astro Fuel facility
+- Space station exterior lighting pass
+- Multi-crew ship damage VFX implementation, including:
+- Exterior damage effects from minor damage through to 100% damage explosions
+- Interior damage effects, including cockpits – triggered when receiving damage and “state” switching when ship health is low
+- General ship damage effects polish
+- General ship thruster effects polish
+- Crusader map ambient effects – including:
+- Airlock pressurisation/depressurisation
+- Derelict space station ambience
+- Giant asteroid field ambience
+- Repair drone effects polish
+- Ship landing dust effects polish
+- Quantum Travel effects polish
+- Missile effects polish
+- General effects optimisation
+## Animation
+- Refining base character locomotion
+- Finalising stocked and pistol locomotion
+* Pistol animation set was reviewed, still needs starts/stop, select/deselect, lowered set-up in mannequin, prone look pose, and crouch look poses. These should be started, and hopefully finished next week.
+- Rifle animation set reviewed, ADS is currently broken, still needs lowered look pose, better weapon pickup anim, and prone look pose need to be exported and hooked up.
+- Rifle look poses for fire are fixed, but firing has a problem with the weapon moving in the hands, investigating now.
+## Audio
+- Another dialogue recording session for some additional lines and some re-records
+- Made improvements to the ship flyby sounds
+- Continued implementation music
+- Finalising audio for map locations
+- General bug fixing
+## Blocking Issues
+- Frame rate is very sluggish at times
+- We have a few crashes which are currently blocking the comms array gameplay
+- Unable to spawn Multicrew ships in release mode
+- EVA needs to be more responsive and much less buggy! Player can spin out of control and also suffer latency issues – hopefully these are fixed in next build with some recent animation code fixes
+- Walking on to a ship can cause it to have no flight functionality but works fine if you debug spawn straight in to the cockpit; probably related to a recent IFCS code change
+- Server Crashes when AI units fire weapons. This blocks other testing, of course.
+- Pistol ADS animations are blocked until we finalize Stocked (rifle) ADS system.
+- Character Sprint animations needs a review once the [weapon] lowered pose is finalized. This is a potential blocker.
+- EVA needs to support personal weapon usage, this will require code support as well as adjustments to the base poses.

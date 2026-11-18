@@ -1,0 +1,72 @@
+Star Citizen Patch 3.10.0o
+Alpha Patch 3.10.0o has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.0-PTU.5702746.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-10-0o
+Testing Focus
+- Ship flight in and out of atmosphere
+- Updated building blocks ship UI for all flyable ships.
+- High speed combat changes
+- Turret gameplay
+- Origin M50 Improvements
+- Electron FPS Weapons and Electron Damage
+- Body Dragging
+- Citizen Trading App
+- New Targeting Method
+- Delivery Mission Improvements
+Known Issues
+- Attempting to take off or land at Area18 via splines destroys the player's ship. (please avoid this area altogether for this build and recopy/reset your account if you are in this location already)
+- Non-targeted or selected contacts within radar range don't show up unless you interact with them in some way
+- Esperia Prowler QT VFX are red in first person
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- The Player Ship is destroyed shortly after flying into a Restricted Area / Zone around the Spaceport after leaving a Hangar
+- Landing gear will take multiple presses of the keybind to activate.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- The Greycat ROC cannot extract all of the child crystals, some are left behind
+- Hammerhead atmo entry effects clipping through interior of the ship
+- Security scans won't recognize the drugs on board a players ship during the Drug Production run missions
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- Multi-Tool in Klescher Prison Commissary does not come with a OreBit mining attachment
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When the Player is Released from Klescher Prison they will appear in Space, unable to move, with no visible Body
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+## Feature Updates
+Locations
+- Removed QT points from Outlaw owned locations.
+Gameplay
+- Polish Pass on targeting UI
+Updated many targeting UI elements for improved visuals and added non-active but within radar range contact markers.
+- Removed black background from the restricted area warning text.
+Ships and Vehicles
+- Improved ship roll speed in atmosphere most ships except the extremely large ones.
+- Increased Prospector thruster power for atmospheric flight
+Weapons and Items
+- Reduced KLWE MassDriver damage to be in line
+- Changed TachyonCannon Damage from laser to tachyon to improve balance
+## Bug Fixes
+- Fixed an issue causing shop doors around Area18 to not open for players.
+- Fixed an issue that allowed players to duplicate money and send funds they don't have through the trading app.
+- Fixed freelancer enter animations clipping player through the hull of the ship.
+- Hangar UI and Wrench Icon should now be present when Requesting Landing in all Locations.
+- Fixed multiple issues causing Bartenders to get stuck trying to fulfill orders to players.
+- The Oxygen Time Remaining value on the mobiGlas should no longer display as 00s after respawning.
+- Player should no longer receive "Please Contact ATC to Land UI" on their HUD when approaching Outposts.
+- Bartender should no longer immediately try to take another order from a player they had just served a drink to.
+- Players should now correctly receive the badge for completing Pirate and Vanduul Swarm modes.
+- ATC Exit tunnel should now appear if a player requests takeoff before getting into their ship.
+- Fixed an issue causing bounty mission reinforcements to not spawn around Stanton 4 and Delmar.
+- Kruger P-72 Archimedes/Emerald should now correctly be affected by atmosphere.
+- Fixed ADS skewed view while prone as a female character with the Atzkav Sniper Rifle.
+- Civilian Ship will should no longer despawn at the end of the Combat Assist Service Beacon mission instead of going to QT.
+- Patron NPCS should no longer idle for minutes at the bartender counter after being served a drink.
+- AI NPCs should no longer twist their arm when shooting from behind cover.
+## Technical
+- Fixed 1 Client crash.
+- Fixed 6 Server crashes.

@@ -1,0 +1,154 @@
+# Inside Star Citizen: Alpha 4.0 - Engineering
+# https://www.youtube.com/watch?v=h8fKhnphE68
+[    0.0] Engineering. The next major step forward in multi-crew gameplay. Built on top of the
+[    5.3] in-development resource networking system. It's self a harbinger, a fire, and a new
+[   10.0] reality for all life aboard spacecraft. It's been the subject of CitizenCon presentations,
+[   15.4] Q&As on Star Citizen Live, explorations on inside Star Citizen, and frequent discussion
+[   20.5] by many of the content creators in our community. And on this final episode of ISC Before Hiatus
+[   26.1] and we turn all of our attentions towards CitizenCon, we invited Torsten, Bastion, and Guillermo to
+[   31.6] update us once again on the current intention and implementation of engineering. And what you
+[   36.4] can expect when the first iteration makes its way into the persistent universe.
+[   42.7] Resource Network enables us to actually give you the gameplay that you were always looking for,
+[   47.0] which is having meaningful multi-crew gameplay, which means that it really makes sense to have
+[   53.0] multiple people running around on your ship, and that wouldn't be possible without the
+[   56.8] Resource Network. So we say the Resource Network is a system that allows all the items and components
+[   79.5] that are part of the ship to talk to each other. Every ground vehicle, every base, everything that
+[   87.7] runs in Star Citizen with resources. Fundamentally, Resource Network is a
+[   93.7] replacement for the pipe system we had in the past that you might have heard about.
+[   97.4] We chose a similar system, basically doing most of what we're doing right now with the
+[  102.9] Resource Network, but in a way that was not as scalable as what we intend to do.
+[  107.7] So right now we just have one type of hydrogen fuel, but if we want to extend that in the future to
+[  113.6] having multiple types that have some specific benefits on the thrusters, it's very easy now
+[  121.0] to add that resource. It's just a data setup. So Resource Network is the underlying technology
+[  127.7] for the system to work, and engineering is the gameplay we intend to have on top of this technology
+[  133.7] so that players may experience it. Your ship flies because you know the thrusters get fueled,
+[  138.2] the power plants output power that the weapons and the sails and also the thrusters use.
+[  143.4] Engineering is all about both maximizing the use you get out of the Resource Network,
+[  149.4] and also getting the Resource Network itself going so that you're not dead in the water.
+[  154.0] It's all things that players will be able to interact with. They will have to dedicate
+[  158.5] roles in their ships so that crew members are assigned to fixing those issues,
+[  162.8] and they can encounter more dynamic situations that will not happen in the systems.
+[  168.4] The goal right now is to have all the components on the ship being physicalized. That means that
+[  176.2] things that will take damage will be the components. That then means that those components
+[  183.4] are the reasons to the failure of your ship. We have the power plants which generate the
+[  189.9] energy that your ship consumes. You have the ship generators which take in some of that energy to
+[  195.3] convert it to shield power. You have a radar system that allows you to target the signatures
+[  202.4] of ships around you. You have crewers that generate the crew and resource.
+[  207.7] It is all the weapons that you have. It's the Quantum Drive, but there are also new components
+[  219.6] that will be added to the mix, and that is the relay with its fuses. Then there's the life support
+[  226.0] generator. The biggest thing we are aiming for is switching from your health pool of the bespoke
+[  236.0] ship to just moving that completely over to the physicalized component. So damaging the component
+[  242.0] is damaging your ship. I think this is the part where the biggest change for the players
+[  248.5] happen because there the gameplay of repair comes in, and then you can revitalize your ship.
+[  255.7] So you can actually use your formerly dead-in-the-water ship after exchanging or repairing the components.
+[  262.9] We mentioned one of the new components which is the life support generator. So let's talk about
+[  268.8] life support. The life support. Does all the tasks necessary to maintain the life support inside the
+[  274.9] ship? So it's the temperature, it's the atmosphere composition, it's the pressure inside the room.
+[  281.8] Your main responsibility is making sure that there is always enough life support resource
+[  289.5] produced to maintain a healthy atmosphere in the ship. So making sure that all the CO2 that you
+[  296.9] breathe out is actually converted into O2 again, or if you vented a room that the room is filled
+[  307.3] again, if your room is getting too hot it's cooled down again. So it's all about managing this resource
+[  318.1] inside the rooms. And as already mentioned in the previous episodes,
+[  324.5] it's life support management is also a good way to counter fire.
+[  330.9] Another aspect the players have to counter or react to is misfires on components.
+[  338.8] Misfires are something that is already in the game in some form. Thrust or surges,
+[  343.7] city generator failure, stuff like that. Or you have to expand the need a bit. And pretty much
+[  347.3] the idea is that items that are damaged, that are too hot, or that for example are very old and
+[  352.7] degraded will start misfiring. In some cases that will be that it will take some extra damage.
+[  357.2] In other cases it will stop working for a while. Other times it will work indefinitely until an
+[  362.4] engineer comes by and manages to do some repairs. And some of the worst cases would be starting a
+[  367.7] fire or in the case of for example power plants, engaging in a critical reactor failure and taking
+[  372.6] the ship with them. There was a chance that if the power plant reaches zero health it will run
+[  378.5] into a critical failure and that critical failure then will cause the entire ship to explode.
+[  384.9] It will give the player the time frame to react to that. So either by removing the component and
+[  392.1] throwing it out of the door and preventing your ship to explode or even countering it by repairing
+[  397.9] the component and bringing it up to life again. For the initial release we have a limited amount
+[  405.2] of misfires but we are preparing the system or we did prepare the system to scale well
+[  412.2] for the future so we can introduce multiple misfires and that leads us to damage penetration.
+[  420.3] So damage penetration is a simplified version of what we'll be getting eventually with a more
+[  425.5] physicalized system but essentially what it means is that now certain types of weapons can
+[  429.7] penetrate through the hull of the ship. This is a function of the weapon itself, its penetration
+[  434.9] values and also the armor of the ship which can be depleted over time. So if you use ballistic
+[  439.9] you have a higher penetration which allows you to cut through the armor more deeply and touch
+[  445.7] the components inside the ship directly. As opposed to this you can also have energy weapons which
+[  450.5] will be more effective at melting down the armor. The goal here is that you first need to bring down
+[  457.7] the armor health value to get to the fullest potential of your penetrating weapons then you
+[  464.1] can penetrate the ship and actually damage the components that sit inside the ship and not on
+[  470.3] the outside of the hull. Obviously there's degrees to this, large and ballistic weapons may have
+[  474.9] enough penetration against smaller ships that it would be able to penetrate directly but it's
+[  479.2] you know it's all of a game of choices and it's gonna depend on your ships and your weapons.
+[  483.7] So with damage penetration and misfires happening that brings us to repair.
+[  490.3] As your fight progresses and components take damage in your ship it becomes a duty of some of your
+[  495.5] crew members to first investigate what are the issues caused by the damage and go there to
+[  503.9] physically replace the parts in your ship. So you have your multi-tools so you have the
+[  508.8] savage and repair and the repair part of it also affects now ship components precisely like what
+[  516.1] you see in the arena command. You will be able to repair items that were fully destroyed.
+[  526.3] You will not be able to repair the item to its fullest so you cannot repair an item that got
+[  531.3] fully destroyed to 100 health again so to repair your ship components to the fullest
+[  538.9] you actually have to bring them to the shop again and do the station repair.
+[  544.2] Or if you did think ahead and brought spare items with you you can simply exchange them to
+[  550.6] pristine new ones but with the caveat it only works just as a reminder for size one and size
+[  557.4] two components size three and above cannot be exchanged using the tractor beam detach and attach
+[  565.4] so now that we looked at what your responsibilities are in the physical space running around in
+[  571.5] your ship let's take a look at what you do on the virtual part which is power management and
+[  577.1] analysis of your ship on the engineering screen. So the first thing that you will see is the 3D
+[  586.5] view of your ship that highlights the location of all the ship components and how they are actually
+[  595.5] connected where the relay positions are what the status of the relays are you will see the
+[  602.5] holograms of each component. As you can see they have different colors what they are representing
+[  608.5] is the overall state of the item so an item that is very damaged or is on fire or is not getting
+[  614.1] enough power will be in a critical state. Items that are less damaged are receiving only partial
+[  618.4] resources or are going through a misfire may have moderate colors and items that are otherwise fine
+[  624.9] will have to function on our blue cords. The biggest change that happened to the engineering
+[  631.7] UI screen is basically the power management part of it. We moved away completely from slider control
+[  640.6] for every individual item. There is indicator now for fuel this is not relevant for the initial
+[  648.6] release but it will be relevant for the future. Next to it you'll see the power plant the power plant
+[  655.9] segments gives you an idea of how many power segments you can distribute to the ship items.
+[  664.3] And on the right of each of the power bars you can generally see the temperature bar.
+[  669.5] If it goes into overheating the item will stop both consuming or producing and it will be completely
+[  673.8] inoperable until it cools down again so that means that assigning power to your coolers in advance is
+[  678.5] probably a good idea if you're going into a fight. All the items on your ship generate heat so this
+[  683.5] is where you can see the amount of heat that each item has accumulated and you can see the amount of
+[  687.6] coolant that you are producing and whether or not you are also running deficit. So what you want to do
+[  693.2] is put as much power as you can into the coolers until your items do not overheat but do not assign
+[  699.0] more resources than necessary because you are running a limited pool of resources. The same applies
+[  703.8] to the life support generators so you have to make sure that you produce enough life support resource
+[  710.0] that the demand is fulfilled in your ship. If your demand isn't fulfilled it will cause some failures.
+[  717.7] Here's also some notifications panel here the main warnings about the state of the ship
+[  721.5] will be displayed. If an item is damaged it doesn't get enough power or is misfiring it will create a
+[  726.7] warning you will be able to see it as a notification. Take a look at it go to the item or just remove it.
+[  732.5] So you have an option that allows you to basically log the controls so that you or the pilot which has
+[  738.6] access to the MFD which shares some of the power management functionality do not conflict with your
+[  743.6] controls so by locking this you are able to override the MFD settings to only have it
+[  750.9] being authoritative from the engineering station. You are able to take the power assignment you have
+[  757.0] under given time and save it locally on your computer meaning that when you fly again with this
+[  761.5] ship or even if it's not your ship but somebody has a ship you can quickly apply your presets
+[  765.7] this is very useful in the middle of combat and you can quickly switch to a combat preset where you
+[  771.0] will give for example more power to seals weapons and thrusters or at the same time you may want to
+[  776.8] have some nap mode preset where you know you reduce the power to everything and just put it on the
+[  781.8] bare minimum so there's no degradation or misfire related to power use. So you can set a preset
+[  787.4] on your ship and then jump on somebody else's ship and load it up? Indeed your presets are stored
+[  792.9] locally so as long as you have access to the screen and we're using the same ship you can apply a
+[  797.2] preset obviously if the components have changed or you know the ship has a different loadout
+[  801.9] the preset might not apply perfectly you might need to adjust it but it gives you a quick baseline
+[  806.6] on how your power is assigned. We hope that with these changes players will have more
+[  813.2] valuable opportunities to experience the game. We'll encounter more situations where it feels
+[  817.7] relevant and enjoyable to have multi-crew game playing the ships so that you do not think it's
+[  823.2] just about filling in the battle positions like the daughter rights and pilot seats but it's more
+[  828.5] in-game play to actually manage your ships and try to fix the ongoing situations that occur within
+[  834.8] them and we also hope that this makes larger vehicles which have more interior space both more
+[  841.0] troublesome but also more enjoyable to play with. We are still working hard to get it done for all of
+[  847.3] you there are ships that already have the functionality there are still ships that we are working
+[  853.7] on but overall we are super excited to finally get it into the PU so the arena command experiment mode
+[  861.2] was already fun to observe what you can do with the entire system and now with having the feedback
+[  867.7] from that adjusting the gameplay a little from the feedback that we received from you I am really
+[  874.9] looking forward to to see what you all will be doing with it. So what did we learn this week?
+[  883.8] What we learned that there's a sweet new interface for dedicated engineering terminals aboard
+[  887.7] spacecraft that the first implementation of armor and damage penetration means that the
+[  892.6] ways that you kill and keep your spaceships alive will fundamentally change and that when
+[  897.5] this arrives in the PU life aboard spaceships will never be the same again. Now that's it for
+[  903.3] this season of Inside Star Citizen well everybody here turns their focus towards the upcoming
+[  908.0] CitizenCon where we'll be showcasing the future of Star Citizen beyond alpha 4.0. Yes it's a show
+[  914.4] you're not going to want to miss so from the small team that makes every ISC thank you so much for
+[  919.6] letting us stretch our proverbial wings this year thank you for continuing to let us share the people
+[  924.7] and process of game development with you and we'll see you all back here after the big show.
+[  930.5] I can't believe we got this

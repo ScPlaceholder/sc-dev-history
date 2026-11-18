@@ -1,0 +1,31 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12432063
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (reputation speed increase for PTU testing)
+- Wikelo Inventory Updates
+Known Issues
+- PU - Battaglia - Story 2 - Missions / mobiGlas - "Emergency: Blinding Hope in Trouble" / Story 2 does not populate the mobiGlas (still has a possible cause)
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Bug Fixes & Technical
+- Made several server load balance calculations and performance optimizations
+- Potential Fix: Party members experiencing widespread desync during Siege of Orison, affecting loot boxes, AI, and mission state simultaneously
+- Potential Fix: AI desyncing from their positions during combat in Siege of Orison, appearing to teleport or freeze for other players in the party
+- Potential Fix: Remy Kettle incorrectly spawning at the Orison Landing Pad during Orbageddon, breaking the boss encounter
+- Potential Fix: Delivering the hard drive and talking to Battaglia not completing Battaglia Story Mission 2 even when she plays the correct acknowledgement dialogue
+- Potential Fix: Battaglia Story Mission 1 Phase 2 progress bar not advancing when quantum traveling away from the Caterpillar while within trigger range, leaving the mission stalled until returning
+- Potential Fix: Battaglia Story Mission 2 and Story Mission 3 reappearing in the contract manager after already being completed, allowing them to be accepted again
+- Potential Fix: Players not respawning at their last checkpoint after dying in Siege of Orison, instead being sent to Orison General or their home location
+- Potential Fix: Siege of Orison instance elevator being recalled to the Shuttle Station when another player called it while it was already in transit
+- Potential Fix: Destroy Satellite missions having no satellites spawned around the Comm Arrays, making them impossible to complete

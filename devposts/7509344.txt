@@ -1,0 +1,86 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to Wave 1 testers!  Patch should now show: VERSION 4.0.0-EPTU.9450491.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US Servers
+Audience: Wave 1
+Long Term Persistence: Enabled
+Mesh Configuration: 3:3:500 (3 Servers in Stanton, 3 Servers in Pyro, 500 players total on the mesh)
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+Tonight's build has further hauling and bounty mission inclusions
+- Stability & Bugfixes
+- Server Meshing
+- Pyro Star System and New Locations
+- Contested Zones
+- Jump Points
+## Known Issues
+- PU - Pyro - Rundown Station (R&R) - Checkmate - Locations / AI - AI are spawning out of bounds floating inside of the station
+- PU - Medical Insurance Terminal / UI - Regeneration kiosk UI does not update after transferring imprint
+- PU - Pyro - Network / Streaming / Locations - Certain Rastar Locations will briefly stream in for all player located in Pyro, regardless of distance
+- PU - Multi-System - Jump Points - Ships / Vehicles / VFX - Ships will have a VFX trail in front of the Cockpit after Jumping whenever the Vehicle moves
+- Stall - Client - PU - Jump Points - Performance - There is a brief client stall when travelling through the Jump Point Tunnels
+- PU - Multi-System - Jump Points - Ships / Vehicles / SFX / Audio - The Jump Point SFX are rapidly looping/cut off
+- PU - UI - mobiGlas - mobiGlas UI is displaying incorrectly on several pages/tabs
+- MISC Starlancer Max - PU - Vehicles - Starlancer Max landing gear won't deploy but ship speed is limited as if they were
+- PU - Pyro - Locations - Checkmate - Medium Hangar blocked by station geometry
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- Multiweapon - PU - Actor / Animation / Weapons - Both male and female actors do not animate while reloading weapons
+- PU - Pyro - Orbituary - Locations / Art / VisArea - Navigating from assigned hangar elevator to "Entrance" opens to a VisArea portal above medical clinic
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+## Features & Gameplay
+- Locations
+- Further Outpost Performance, Lighting, and Art Polish
+- Further Interior and Exterior Pyro Station LOD and Lighting Polish
+- Further Contested Zone Lighting, Shadow, and Performance Polish
+- Temporarily Removed the Rings Around Pyro IV for 4.0 Release (will return in a future build)
+- AI
+- Further FPS AI Combat and Reaction Balance
+- Further Quazi Grazer Animation Polish
+- Gameplay
+- Added Mining Harvestables to Pyro Rock Caves
+- Halved Repair Cost of Ship Hulls
+- Fuses Repriced and Added to Shops
+- Ships and Vehicles
+Advanced Flight HUD
+Enabling the option to display the new Advanced HUD which is aimed for pro pilots. This new HUD is optional and off by default and can be enabled per ship on the ship configuration page or fully enabled through the in game options. This advanced HUD allows players see more extended information than previous HUD iterations and includes new acceleration displays, orientation, VSI, radio altimeter(r-alt) which is the altitude above terrain, above sea level altimeter, atmospheric pressure, and more. This also includes new, interim icons for ship states like landing gear, coupled/decoupled, esp, and more.  These current icons are attached below for quick information.
+- Core Tech
+Dynamic Audio Polish
+Various mix refinements throughout Pyro.. Reduced the level of planet fps ambient tracks to match Pyro2. Reduced level of ContestedZone combat music to match levels in the mix session. Also matched other combat playlists in Pyro to the Contested Zone combat levels. Lowered volume of some ATC music elements.
+Additional Updates
+- Further Particle Performance Optimizations
+- Planetary Terrain Streaming Performance Optimizations
+- AI Navigation Performance Optimizations
+- Further Networking Interaction Delay Improvements
+- Ship Debris Performance Optimizations
+## Bug Fixes
+Today's build contains further performance updates to resolve RASTAR locations streaming to all players in the PU as well as further fixes for missing ground collision and many Pyro outposts
+- Fixed - PU - Pyro - R&R Station - Stanton Gateway Station - Locations / Transit - Player cannot access Galleria as it is missing (STARC-144065)
+- Fixed - Heavy atmo effect around Gaslight as if it's a planet (STARC-144050)
+- Fixed - MISC Starlancer - PU/AC - Vehicles / Radar - Radar is flipped 180 and while a ship is on your left the radar shows it on the right (STARC-141397)
+- Fixed - MISC - Starfarer - PU - Vehicles - Starfarer refuel/refining terminal screen blank (STARC-138267)
+- Fixed - All Vehicles - PU - Actor / Vehicles - Character Animation - Entering some seats for a second time will cause the incorrect animations to play and snap the character to the appropriate position after they complete (STARC-128026)
+- Fixed - MISC Starlancer Max - Vehicles - Weapon Locker / Interactions - Weapons placed in the weapon rack will be placed in the incorrect orientation and can become stuck in the rack (STARC-138972)
+- Fixed - Mutlivehicle - PU - Vehicles/UI - Radar/Ping - Ping Range distances do not show up at all
+- Fixed - PU - Mission Refactor - Server Meshing / Subdivision / Mission Content - When transitioning from one DGS to another the clients mission can be untracked
+- Fixed - PU - Mission Refactor - Missions dont seem to be respecting the Mission Limits of a Location
+- Fixed - PU - Mission Refactor - Missions - Bounty Hunter / Eliminate Specific - Bounty target NPC does not have the same name as the one in MobiGlass
+- Fixed - PU - Mission Refactor - Mission Content / Locations - Destroy Items Narcotics - Narcotics are not present in mission location
+- Fixed - PU - Mission Refactor - Asteroid Base - Mission Content - Destroy Items & KillShip - Mission progress is stalled preventing mission completion as Assassination target cannot be located and eliminated
+- Fixed - PU - Pyro - Destroy Items - Asteroid Base - Mission Content / Locations - Mission logic does not continue after the PreInit has finished, making the mission impossible to complete
+- Fixed - PU - Actor / Personal Inventory - The Move All / Take All button in the player looting screen is not working
+- Fixed - Starmap - Starmap panning and interaction seems to consistently fail / lag
+- Fixed - PU - Stanton - Missions - Lawful Salvage - Mission Content / mobiGlas - Lawful Salvage missions are not available in Stanton
+- Fixed - PU - Missions - Eliminate All - Mission Content / AI / Locations - HeadHunter AI are marked as targets to eliminate
+- Fixed - Anvil Terrapin All variants - PU - Vehicles / Art / VFX - the upper part of the ship do not have degradation
+- Fixed - Aegis Retaliator - PU - Vehicles - The proxy on elevator door caps are flipped 90 degrees preventing the ship from landing correctly
+- Fixed - PU - Actor / UI - Inventory / Loot Inventory - Weapons within 2.5m of a downed AI don't appear on the Loot UI, despite being in proximity of the downed / dead actor
+- Fixed - PU - Pyro - Multi location / Personal Hangar - Audio / Audio Code - ASOPs - The personal hangar ASOPs play the default Stanton voice audio instead of the Pyro themed glitch lines
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 6 Server Crashes
+- Fixed a Server Deadlock
+- Fixed a Server Memory Corruption Issue

@@ -1,0 +1,47 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12479687
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (Progression speed no longer enabled)
+- Wikelo Inventory Updates
+- Kruger S65 Stingray
+Known Issues
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+## Features & Updates
+Added New Ship: Kruger S65 Stingray
+The Kruger S65 Stingray is now available in the Persistent Universe
+If you've already put substantial time into testing the PTU, you may find the Stingray available immediately with today's new build. If you're just getting started with the PTU today, you can earn access by completing 3 Cargo Missions, completing Siege of Orison, or completing a Recco Battaglia Story Mission.
+Access will be granted manually this time, so it may take some time to show up after you've completed one of the activities above. If you've done one of them and don't see the Stingray right away, give it some time and check back later.
+For more information about the stress test and stingray, check out this post here!
+https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/ptu-stress-test-siege-of-orison-recco-battaglia-an
+Experimental VR Updates
+Water simulation and caustics now render correctly in VR, with the screen-space wobble effect reworked to be wave gradient based so it renders consistently in both eyes
+Fixed underwater sun shadow banding and artifacts in VR caused by missing per-pixel dithering
+Fixed hardware mouse cursor remaining hidden after navigating UI with a gamepad or D-Pad
+## Bug Fixes & Technical
+- Fixed 1 Client Crash related to vehicle entities
+- Potential Fix: Expel Outlaws contract at Sakura Sun Goldenrod failing validation and not appearing in the mobiGlas
+- Potential Fix: Instance elevator becoming uncallable from the dogleg after the overworld DGS crashed and recovered, caused by the Transport Manager not re-adding existing instances on gaining authority after a crash recovery
+- Potential Fix: Remy Kettle not teleporting or spawning for the second phase of the Siege of Orison boss fight after being defeated in the first phase
+- Potential Fix: Siege of Orison boss fight reactors opening after a server crash recovery before the player had actually killed Mendo Ren, bypassing the intended completion requirement
+- Potential Fix: Fusebox lever animations not aligning with the lever handle during interaction for both male and female characters
+- Potential Fix: Ore selling at commodity kiosks failing with "Failed Entity Query: Failed Awaiting Manual Delivery to Freight Elevator" due to the transaction price computed on the client not matching server validation
+- Potential Fix: Loose cargo placed on a cargo grid not being detected by the freight elevator and being lost when the location de-streamed, caused by the loading platform not initializing correctly before gravity was set
+- Potential Fix: Battaglia Story Mission 3 Data Drive being obtainable from any Covalex locker rather than only the specific locker opposite Battaglia's office; delivery lockers are now validated by tag before the pickup is permitted
+- Potential Fix: Aegis Redeemer unable to dock with a Starfarer for AI beacon refueling contracts due to an incorrect fuel controller and ATC configuration
+- Potential Fix: Starfarer and Starlite consuming their own internal fuel tanks during ship-to-ship refueling instead of drawing from external fuel pods, and providing internal fuel to the refueling target
+- Potential Fix: Hijacked 890 Jump mission spawning a second hostile 890 Jump as an enemy ship in addition to the target vessel
+- Potential Fix: Security Post Kareah keycode terminal rendering completely blank, preventing players from entering the boss datapad code to unlock the facility
+- Potential Fix: Multiple ASOP terminal kiosks at Levski showing blank actions and no ship management options
+- Potential Fix: Vehicles purchased with aUEC-priced modules lacking collision on the installed component, causing players to fall through or clip into installed items
+- Potential Fix: Inventory UI tabs and buttons becoming unresponsive after clicking in the character customizer, requiring a relog to restore interaction
+- Potential Fix: Inventory tab buttons and controls appearing offset at 1440p on 32:9 ultrawide resolutions

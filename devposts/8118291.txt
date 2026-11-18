@@ -1,0 +1,15 @@
+Greetings!
+Implementation of further ladder systems have been integrated into 4.21. This update includes many new traversal mechanics to all ladders in ships and environments around the persistent universe. This includes:
+- Look around while on ladder (180 degree whilst moving, 355 degree whilst stationary)
+- Mid point enter/exits
+- Being able to Jump off ladders while looking in a direction
+- Leaning (used to dodge debris) function
+- Collision (e.g. other Actor on ladder) prevents traversal up ladder
+- FPS Camera required enter angle
+- Ladder exit into crouch/small spaces
+- Joining and Leaving a Ladder
+Ladders should not vacuum up players who happen to wander past and will require an interaction to step onto them or directly running into them at the proper angle to attach. Approaching a ladder mid-point also provides an interaction prompt to step onto it.
+Ladders can now also be exited by jumping at any point by looking in a  direction and jumping. Jump input on its own will cause the player character to let go, and push away slightly from the ladder while using a WASD key while jumping will send the player in that direction. Entering a stunned, incapacitated, overdosed, or dead state will drop the player from the ladder.
+We look forward to hearing your thoughts, and thanks for taking the time!
+-Shark
+Player Experience Team

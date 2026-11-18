@@ -1,0 +1,27 @@
+Spectrum Alpha 0.3.2
+New Features
+Communities can now be re-ordered in the sidebar (drag/drop)
+Added a new image thumbnail in forum threads list. (Can be disabled in settings)
+Improvements
+Performance updates to lobby including loading of lobbies and rendering of messages
+Removed small member avatar next to "Started by" in forum threads list for better visibility
+Presence tooltips should now correctly render the actual time instead of a out-of-date cached timestamp
+Fullscreen image modal now expand to fill screen size
+Search results now have pagination
+Bug Fixes
+Lobby: Typing members now visible even when logged out
+Tooltips are now displayed correctly in "narrow" mode
+Fixed a bug where markdown formatting was lost when editing a lobby message
+Fixed the loader position in the image modal
+Fixed a bug where mentioning someone in a private lobby would send an incorrect notification
+Fixed a bug where sometimes private lobby corruption would break the "All Private Message" modal
+Fixed a bug in Forum Channels where the page was not properly reinitialize to 1 when browsing to another channel
+Fixed a bug in Forum Channels where it was impossible to browse back from the last page
+Fixed a bug where Twitch embeds would be offset when embedded in threads
+Fixed a bug where no scrollbars would be visible in the Settings page on Firefox
+Fixed issue with up arrow in message lobby input
+Fixed private lobbies overlapping bookmarks in sidebar on iOS 9 Safari
+Fix handling of unsupported emoji and improve handling of emoticons
+Fix conflict between emoji shortcodes completion and emoticon replacement.
+“That’s no moon.”
+-b

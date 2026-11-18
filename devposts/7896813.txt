@@ -1,0 +1,55 @@
+## Star Citizen Alpha Patch 4.1.1
+Alpha Patch 4.1.1 has been released to Wave 4 Testers!   Patch should now show: VERSION 4.1.1-PTU.9715347.
+- Audience: Wave 4
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Ship Battle Missions V1 (Patrol, Ambush, and Gilly's Advanced Combat Gauntlet Missions)
+- Handyman Missions
+Not Ready for Testing or Feedback
+These items below may be partially in the build and even completable but are not ready for feedback and are subject to removal
+- Fleetweek Events, New Missions, and Halls
+- Mission Meshing Refactor: Comm Array (Hack/Repair), Animal Missions, Multi-Location Courier, and PVP bounties.
+- New Collector Rewards
+- NPC Comms Call, Dialogue Additions, and Improvements
+- [Redacted]
+## Known Issues
+We are expecting many missing assets around Area18 builds with some replaceme textures around. This is temporary with more inclusions coming in the next builds.
+- Blocker: Multivehicle - PU - Quantum Travel - Quantum travel will no longer align and spool to target destinations
+- Critical: PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- Critical: PU - Space Combat Mission- Ambush - Foxwell - Missions / HUD - "Hide Ship Signature" objective marker has a chance to not appear in Ambush missions
+- Critical: PU - Physics - Players walking around destroyed landing gear of a ship can fall through the ground
+- Critical: PU - Stanton - Ship Battles - Gilly's Gauntlet - Mission Content / Game Code - Mission does not fail after you QT away from the action area while the mission is active (Fixed in next build)
+- Critical: Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- Critical: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- High: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+- Features & Gameplay
+## Locations
+- Changes to some Pyro Outposts to sell full Cambrio-Lite salvage canisters.
+## Gameplay
+- Replaced the Idris with the Polaris for high level Ambush missions
+## Ships and Vehicles
+- Adjusted the flight tuning of the RSI Polaris to give it a greater sense of size and mass, aligning it more closely with its intended role
+- Disabled proximity assist by default
+## Bug Fixes
+- Potential Fix: FPS - R97 and P8-AR do not reset to initial fire point correctly
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector - Locations / Freight Elevators / Cargo - Cargo grid of the Freight Elevator is significantly offset at all Collector Station Hangars
+- Potential Fix: PU - Stanton - Ship Battles - Wave Attack - Mission Content / Game Code - Mission does not fail after you QT away from the action area while the mission is active
+- Potential Fix: AEGS Retaliator - PU - Vehicles - Unable to interact with Retaliator elevator
+- Potential Fix: Mirai Guardian - All Variants - Vehicles - Animation / Female - Physics / Collision - Exiting the cockpit to the rear of the vehicle with a female character can cause the player to clip into the wall and become trapped in the cockpit
+- Potential Fix: PU - Stanton - Wikelos Emporium - Collector - Locations / Missions - Players not receiving Wikelo Favor as mission reward
+- Potential Fix: PU - Stanton - Locations / AI - Law / Reputation - Security Guards located around Landing Zones are not reacting to players with a CrimeStat 3 or higher
+- Potential Fix: PU - Stanton - Ship Battles V1 - Mission Content / UI / mobiGlas - There are objectives that are blank when checked in the mobiGlas
+- Potential Fix: 30028 - clients can be kicked from the game by the afk timer while loading into the game
+- Potential Fix: Esperia Prowler ( ESPR_Prowler.xml ) - PU - Vehicles - Esperia Prowler - Unable to lift off or maneuver (STARC-164920)
+- Potential Fix : Ship Battles - Adding a second player to objective markers doesn't add them to objective markers
+- Potential Fix: PU - Creatures - Harvestables - The Collector - It is not possible to harvest fangs from the Juvenile Valakkar corpses
+- Potential Fix: PU - Stanton / Pyro - Handyman - Missions / Text / UI - Invalid characters in maintenance journal entry (STARC-164384)
+## Technical
+- Fixed 2 server crashes
+- Fixed 2 client crashes

@@ -1,0 +1,35 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12488012
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (Progression speed no longer enabled)
+- Wikelo Inventory Updates
+- Kruger S65 Stingray
+Known Issues
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+## Features & Updates
+Kruger S65 Stingray
+Armor health values updated following a balance pass
+## Bug Fixes & Technical
+- Fixed 1 Client Crash
+- Potential Fix: Undocking from a ship mid-refuel causing external fuel tanks on the Starfarer to dump their entire fuel load rather than retaining it
+- Potential Fix: Instance elevator on the Orison platform suddenly becoming uncallable for all party members, caused by authority assignment messages being dropped during entity streaming and hierarchy changes; multiple edge cases in the authority propagation system have been addressed
+- Potential Fix: QV Breaker Stations in the Nyx Dungeon having no collision, causing players and items to fall through the floors and walls
+- Potential Fix: MISC Starlite fuel nozzle failing to deploy, blocking it from docking with recipient ships for refueling contracts
+- Potential Fix: Siege of Orison Command Center entrance airlock not resetting after a player died and respawned inside it, permanently sealing the entrance for all other players; additional fix covering the case where a player dies while the airlock is in the process of opening
+- Potential Fix: Mouse clicks, weapon fire inputs, and UI button presses being lost or stuck, caused by a raw mouse input optimization incorrectly dropping legacy input events; the optimization has been reverted pending a rework. (This also restores significantly improved input reliability for players running under Wine/Proton)
+- Potential Fix: ATC landing and takeoff hotkey not working, requiring players to use the comms menu instead
+- Potential Fix: Buying any commodity at a kiosk locking the player out of purchasing additional commodities until the first purchase was removed via the freight elevator
+- Potential Fix: Ships with landing gear connected beneath destroyed thrusters unable to be repaired at a repair terminal, as the transaction manager was incorrectly rejecting items that were parented to other items in the same repair request
+- Potential Fix: Keycards carried by Nine Tails Elite NPCs spawning inside armor item slots rather than the backpack slot, making them invisible and impossible to loot without stripping the NPC's armor first
+- Potential Fix: Fusebox lever animation inclusion file missing, causing the lever up and down animations to not play at runtime despite the animation data being present
+- Potential Fix: Commodity kiosk showing the wrong delivery subtype in certain transactions, causing incorrect delivery destination selection

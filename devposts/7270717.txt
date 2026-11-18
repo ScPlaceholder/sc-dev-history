@@ -1,0 +1,4 @@
+The server "degradation" has many different causes and symptoms. For example, in 3.23.1, we did run into degradation related to the NMQ throughput after shards hit a certain age. The symptom was massive interaction delays, directly linked to the speed of the NMQ bandwidth. Turns out that as shards age, more data is being transported and the NMQ hit its treshold.
+That data is not mostly composed of littered items but instead of your own ships and items....damage maps, ship states accumulate and grow.
+The littered items you see are actually not a problem at all in most cases, unless they are intersecting / twitching with other things, in which case they contribute to physics performance, which is the main thing driving server FPS atm.
+-b

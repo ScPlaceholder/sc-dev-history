@@ -1,0 +1,11 @@
+If people want to know what is being actively worked on by graphics I can give a high level overview:
+- Ray tracing BVH - This is required for ray tracing, and is usually complex & expensive in most games, but even more so with our scale and moving zones
+- Ray traced global illumination - This is making good progress, and has started to be actively used on S42. However there are still improvements required to several areas before it's ready for prime-time.
+- Ray traced reflections - For the first version these will use screen-space colours for objects on screen, and simplified material representations for objects off-screen. Currently there are still some issues with noise/blobbiness to resove.
+- Screen space probes - This system is that triggers and combines the results from global illumination (both ray traced and probe based), reflections (both ray traced and screen-space) and occlusion.
+- Character decals - This tech will be used to place things such as scars, wounds, and potentially tattoos. The intention is for it to be used by cinematics (S42), character customizer (scars/tattoos), and dynamic damage (weapon impacts).
+- Vulkan - There are constant improvement required for performance and stability for Vulkan, and we're frequently adding new extensions to enable new technology or optimisations
+- Planet Tech V5 / Genesis - This is a huge change to how we distribute all content on planets, with the goal of much better visuals, performance, and provide more power to gameplay systems for things like harvestables, mining, creatures etc.
+- Video Memory - We're overhauling how video memory is budgeted to force developers to remain in budget, while giving players explicit control of how they allocate their video memory to each graphical effect. The end result should be better performance for everyone, as low video memory looks to be our number one GPU performance issue.
+- Damage map compression - Damage maps allow for accurate damage and salvage across our ships, but the networking of this data has a significant cost, and so we're compressing these maps down to a fraction of their raw size, such that each packet of data is a maximum of 32kb.
+There are many smaller features and bug fixes that I can't hope to list here, but hopefully that gives you an idea of how busy we are getting new features ready for you!

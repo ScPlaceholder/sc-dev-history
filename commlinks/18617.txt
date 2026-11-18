@@ -1,0 +1,125 @@
+PU Monthly Report
+March 2022
+With Alpha 3.17 approaching fast, many teams spent the month finalizing tasks for the impending release. However, significant progress was made on important features coming later in the year, including Pyro and salvage. Read on for everything done throughout March.
+## AI Content
+Last month, the AI Content team added the final polish to the drink’s vendor feature, which will release in the upcoming Alpha 3.17 patch. The animation polish process begins with the animation director playing through the feature and uploading a video to ShotGrid. From there, it’s annotated with text overlays, painted sketches, and narrated commentary. These points are then actioned by the animator owning the feature to improve the overall visual quality of the delivered product.
+Work on the food vendor is coming to an end, with the designers creating tutorial videos and written documentation to help the Level Design teams implement more food vendors throughout the ‘verse in an upcoming patch.
+Additionally, the team provided bug-fixing support for an upcoming event, including for the tourist and tour guide AI behaviors released last year. These behaviors didn’t move or speak since they were last used which, after an initial investigation, turned out to be caused by changes to the animation database.
+The security, vending machine, and arcade machine work mentioned in previous reports progressed well, with final animation polish passes currently underway.
+“We’re really looking forward to sharing our recent vendor work, so come to Area18 for a drink when Alpha 3.17 releases!” AI Content Team
+## AI Features
+Throughout March, AI Features worked on quality-of-life tasks for AI Content, including how they author usables and how they work with ‘stances,’ which are different character body positions that affect all movement and idle animations. For example, stand, crouch, and prone.
+Previously, stances were set up for use in a specific alignment slot (the different options for accessing a usable). Now, stances are set up for different uses. For example, the wall panel usable has only one place to enter it but has different use slots for the upper and lower panels that require the stand and crouch stances respectively. The team also set up enter and scooch animations that blend correctly from the current stance into the usable’s target stance. This allows them to have different enter animations for each panel.
+Having the correct stance setup in the usable is also important when the character exits the usable unexpectedly. With this in mind, the team recorded first-reaction animations for various stances.
+Finally for AI Features, functionality was implemented to allow the team to process Subsumption events through the audio map, which simulates event propagation as audio stimuli. This is currently used to allow NPCs to alert friendly characters that they’ve found a dead body.
+## AI Tech
+AI Tech began the month addressing feedback on the initial implementation of planetary navigation tech, which was then passed onto several teams for use in various scenarios.
+One improvement is the addition of a priority manager to help calculate which areas require navigation mesh regeneration; the positions of players, NPCs, and vehicles are currently used to determine where nav-mesh is required.
+To enable the designers to request realistic NPC reinforcements on planets via spaceship (as mentioned in February’s report), the team began developing functionality to allow NPC pilots to spawn and adjust the dynamic landing and take-off splines. They also improved the spline creation process for smoother landings and takeoffs, and adjusted the tactical point system queries to work on planets and find the points where NPCs will move to as they disembark. Simple behaviors were implemented to showcase this new feature too.
+The development of technology allowing NPCs to correctly push and operate movable entities, like trolleys, continued. The team also added further improvements for locomotion and grip-posing on trolleys with different layouts and began implementing parking spots for movable objects.
+Several fixes and improvements were implemented into the Subsumption editor tool, including a full graph map of outlier behaviors, a visual grid and snap functionality, the ability to quick-insert nodes at the mouse cursor position, and an easier way to drop connections from a node.
+AI Tech continued to refactor the NPC movement request system to allow for more consistent synchronization of states between server and client and to unify the way NPC movements are processed to reduce inconsistencies.
+They also created more automated feature tests to improve stability and fixed bugs for Alpha 3.17.
+## AI Vehicle Features
+The Vehicle Features team was working alongside AI on behaviors that will benefit both the PU and Squadron 42. The aim is to improve flight behaviors to be more dynamic and closer to how Human players behave in combat. They also focused on a ship tactic for fighters taking on capital ships.
+## Animation
+Animation spent the month focusing on facial animations for numerous shipbound characters. They also worked on the Shubin Interstellar mining tool and finalized the first version of vendors.
+## Art (Characters)
+Character Art focused on the frontier outfits for Pyro alongside various Nine Tails assets for an event later in the year. Subscriber items and a salvage-themed backpack progressed too.
+The team also welcomed new character artists in Montreal, with onboarding and training completed throughout March.
+## Art (Ships)
+In the UK, Ship Art progressed with a number of vehicles, including the Hull A, which is currently being closed out for its release in Alpha 3.17.
+The Scorpius’ cockpit was finalized, including lighting and LODs, while the Banu Merchantman progressed through the exterior R&D phase.
+The first of three unannounced vehicles is now close to being final-art complete. The second is progressing through the greybox stage, while the third had its initial kick-off and is now in the early stages of whiteboxing.
+In the US, the team moved the Drake Vulture down the pipeline, which involved creating further art to support mobile repair as part of repair and salvage gameplay. They also added additional functionality to the pilot’s overhead dashboard to support salvage modes.
+Significant progress was made on various parts of the Drake Corsair too: The co-pilot dashboard was designed and built with an overhang for better visibility, while the co-pilot’s seat is nearly complete and now features a mechanism that moves it down into its final position. The ship’s foyer was finalized, work on the turret interiors began, and development kicked off on the crew quarters and engineering room. The team also progressed with the exterior greybox, with work moving from the now-completed nose back towards the tail.
+## Community
+The Community team started March debriefing the last XenoThreat Dynamic Event, sharing an infographic of how much work players put into defending the Stanton system. They then kicked off the in-lore St. Patrick's Day equivalent, Stella Fortuna, and its Toast the Stars contest.
+In preparation for Alpha 3.17, they published two Patch Watch comm-links, featuring details of lesser-known upcoming features, including the weapons refactor and Quantum. Community also published a step-by-step guide on ship-to-ship refueling.
+Alongside supporting various engagements, work continued on a revamp to the Community Hub, improvements to the Guide System, and other unannounced events.
+## Engine
+In March, the Physics team added a new soft-body deformation approach for character cloth. They also implemented island-wide, broad phase collision detection to reduce the number of external parts of entities to check against. The steering of vehicles' rear wheels at high speeds was reduced too.
+For physical damage, initial changes were submitted for the tracking of breakable clusters. Furthermore, an action was added to move a spaceship entity to a specific state in a set amount of time. Lastly, a prototype using batch workers to step physics to improve thread wakeups and concurrency was implemented.
+On the renderer, the transition to Gen12 continued. For example, the handling of decals in RTT passes was refactored, and various bugs casued by the enabling of brush rendering via Gen12 were fixed. Planet terrain rendering was optimized and support for the sunlight render node was added. Various APIs were improved to make them more consistent, efficient, and less verbose to use. The team also started refining the const correctness of APIs when dealing with returned weak pointers. The shadow mask stage was also refactored to use transient constant buffers and remove reflected constants and binding constants via an explicit layout and buffer instead.
+Planet terrain height maps and planet terrain shadows are now fully ported. Tessellation code for rendering planet terrain patches into height maps was improved for a more consistent triangle density. Meanwhile, a bug in the processing of scattering queries for clouds was revealed to be an application issue and fixed (it was previously worked around).
+On the core engine side, more code was cleaned up using Include-What-You-Use. Additionally, more time was spent on integrating EASTL. Various optimizations were made, including updates to animated lights. More system updates (to the main camera and flagging of vis areas affected by the sun) were moved into parallel jobs to reduce the runtime cost of the main thread. Lastly, global locks were replaced with per-instance locks for fuzzy entity access.
+Support was also given to Alpha 3.17.
+## Features (Arena Commander)
+The Vehicle Technical team completed their transition to the Arena Commander Feature team. As part of the move, they reviewed the backlog of Arena Commander bugs to determine their immediate priorities.
+Radar and scanning is also nearing completion. Door and control panel implementation tool improvements are also underway, paving the ways for easier and more reliable interactions in vehicles and space stations.
+## Features (Characters & Weapons)
+In March, the team improved various features based on feedback from testing Alpha 3.17 in the PTU, including making the inventory more robust. They also worked on issues with the initial spawning flow that caused players to spawn without a body.
+Corpse-spawning logic was also improved to ensure quitting out early doesn't break the flow and to make the flow less likely to timeout or fail to spawn the corpse entity itself.
+The Features team also revisited grenade throwing, as it was reported to be highly unreliable. Grenades should now be significantly less likely to explode in the hands or at the feet of the player throwing them. They should now no longer ‘rubber band’ back into the hand after being thrown and always visibly explode on the local client too.
+A large number of bug fixes were done. For example, ensuring that certain hairstyles don’t clip through helmets, and dropping a carried helmet will no longer cause the player to suffocate. A fault causing some vendor interaction menus and weapon customization UIs to appear offset was rectified too.
+## Features (Gameplay)
+The PU team worked through user feedback and bug fixes for the upcoming release of refueling. Progress was also made on the HUD UI for salvage, which is currently going through the iteration process.
+For engineering gameplay, an example scene was created featuring a village with a battery, power supply unit, and lamp post. The goal was to give an easy introduction to other teams to help them begin utilizing a systemic approach to resources.
+Life support progressed well, with the life-support generator now able to remove the atmosphere from a room and convert CO2 into O2.
+## Features (Mission)
+Mission Features continued to provide game-code support and bug fixes for the new selling UI screens. They also fixed various issues with law and hostility alongside general bugs for the upcoming Alpha 3.17 release.
+## Features (Vehicles)
+Last month, the Vehicle Features team worked on refueling, including integrating the docking systems and rebalancing vehicle fuel efficiency and scooping. They also rebalanced and retuned distortion so that it’s more about negatively affecting a ship rather than outright disabling it.
+“We’re still actively working on this feature, which is planned for release in Alpha 3.17. However, we’re hoping you can give feedback on this and help us improve the balance!” Vehicle Features Team
+They also progressed with a lot of upcoming ship releases, particularly the MISC Hull A and RSI Scorpius, which both use new animation and ship-state tech. On the Hull A, this new tech is used on the extending cargo arms and how they integrate with the cargo system. For the Scorpius, it allows the turret to move along its rail.
+AI flight behavior was further developed alongside the AI team, which will benefit both the PU and Squadron 42. When complete, AI behavior will be more dynamic and closer to how Human players would behave in combat.
+Finally, the team began a deep investigation into net sync issues currently being experienced in the PU. They made some great improvements that are currently being tested in the Alpha 3.17 builds at the moment.
+## Graphics & VFX Programming
+Last month, the Graphics team focused on fixing bugs for Alpha 3.17 and GameDev stability. For example, adding fixes for water volumes not rendering, solving issues with exporting light links, and cleaning up RTT.
+There were also updates to various shaders, with submits for the per-material auto C-buffer layout and minor improvements for Booleans as shader parameters.
+For the ongoing Gen12 transition, the team fixed various bugs from integration into the Alpha 3.17 stream, such as shadow flickering, LOD ratio issues caused by the porting of skinned meshes, and multiple crash fixes. The team continued with the Gen12 scaleform porting, making modifications to the execution order and interface to match the current behavior of RTTM. Work also began on moving scattering query analytical shadows to Gen12.
+For Vulkan, minor changes were made to descriptor indexing for internal bugs, while fixes were made to a crash relating to headless client metric gathering and warning updates for RenderDoc.
+## Lighting
+Throughout March, the Lighting team focused on an upcoming event, with a split between supporting new mission locations and sanity checking existing spaces. A full lighting pass was done on a key exterior location too.
+## Locations (EU)
+Last month, the Locations teams worked across a variety of different areas, all of which are in various stages of completion, from early pre-production to nearing completion.
+Work continued towards ‘final’ on the colonialism outposts, with more variants and modules being completed. In conjunction with the new ‘Rastar’ tool gaining a wider feature set, the team began dedicated playtesting in the lead up to a wider distribution across the systems they’ll first be seen in.
+“Very early pre-production began on some interesting space-based locations, which won’t be seen for a while but are already getting Design and Art’s creative juices flowing.” Locations Team
+The next iteration of the underground facility progressed through whitebox, with layouts being tested to ensure good gameplay and flow. An update to caves is also in whitebox, with a focus on improving the readability and traverse-ability alongside a visual facelift.
+Whitebox work also continued for the rundown space station variants, which are planned for Pyro’s initial release. The wider team supported hardening and bug fixing for Alpha 3.17 too.
+## Locations (Montreal)
+In Montreal, the Sandbox team iterated on the Reclaimer-based derelict settlement. On the art side, they tweaked the silhouette of the crash site and continued progressing toward the final phase. They also continued onboarding the missions system and now have three fully functional missions in this settlement. They’ll be able to iterate further when planetary navmesh becomes available to wider development.
+The derelict 600i and Crusader Mercury derelicts mentioned in last month’s report are progressing smoothly. Last month, the team completed the initial versions of the crashed ships and currently looking into the pipeline to make them salvageable.
+Part of the team began creating space-based missions inside a Reclaimer, with the basic flow and mission logic implemented and working properly. This is part of the team’s onboarding to the mission system, with the objective to start by reusing existing modules. Once they’re more comfortable with the systems, they’ll create variations of the existing missions.
+“We noticed that the Grim HEX hospital could get quite busy, especially during the Jump Town event. To fix this issue, we significantly expanded its size. There used to be only 3 medical rooms available; with this update, we’ll have over 60. This way, all players will be able to respawn and get back into the action as quickly as possible.” Sandbox Team
+Finally, the team officially started the Lorville cityscape update. The concepting phase is done and the layout was blocked out. When complete, the scale of Lorville will be dramatically increased and allow more space for building interiors.
+## Narrative
+Throughout March, Narrative continued to support Design implement an upcoming event scenario, providing mission text and written content to further sell the story.
+The team went through the editorial process on one of the new mission NPCs captured during last month’s mo-cap session and submitted the data for processing. Once the assets make their way through the Animation and Audio teams, Narrative will test the mission with final dialogue. Once complete, they’ll record alternative versions of the script to add variety.
+Looking forward, Narrative began building out some of the shops and franchises that players will visit in the future. Working from a list devised by Design, the initial goal was to outline the various services and items currently provided by stores and build a list to ensure coverage and variety moving forward. Once the types and numbers were decided, the team began brainstorming names and brief descriptions to help sell the flavor of the stores and intended shopping experience.
+Narrative continued to work alongside AI on a system designed to breathe a new level of life into the universe.
+Several members of the team answered community questions on an episode of Star Citizen Live. On the RSI website, the team posted a Portfolio of the armor manufacturer Tehachapi, published a new episode of Showdown that debated the hotly contested issue of AI development, and shared a new Aremis Post article about a Tevarin’s attempts to find a home for their family. The month was capped off with another update to the Galactapedia.
+## Props
+Props spent March finalizing the requested assets for an upcoming event. They also worked on several unannounced items for the community that are coming along well.
+Significant work was also done for Pyro, specifically on the vendor shop signs, trash, and some special extras.
+## QA
+QA’s primary publishing focus was delivering Alpha 3.17 to the Evocati. Live QA shadowed this process, running their own feature and LTP testing. Live QA also took on more publishing tasks as needed and focused on future QATRs for upcoming in-game events.
+Development-wise, the QA team handed off the process between Dev QA and Live QA, gated Alpha 3.17 before Evocati, and verified fixes and stability issues. They then began publishing to Evocati and continued to support publishing. Testing also continued on must-fix issues and in-game spaces for an upcoming event.
+New testers were also onboarded and trained, while new processes between publishing and development were created.
+## Tech Animation
+The Technical Animation team spent the month iterating on their rework of the internal DNA system. This update will allow them to expand the gene pool used to create believable heads in-game and ultimately offer more variety to players.
+“It has been a lengthy initiative but it is finally coming to a close with a heavy round of testing and bug fixing to make it ready for integration into the game.” Technical Animation Team
+Alongside this, they revisited several head assets requiring updates and, in some cases, a complete overhaul. The ongoing head-scanning initiative is currently supplying the team with new archetypes that are being extracted and turned into full, game-ready facial rigs.
+Tech Animation also maintained the existing animation pipeline alongside spearheading initiatives to supersede older technology to expedite in-house workflows.
+## Tools (Montreal)
+Following on from last month’s report, the Tools team completed the integration of Mighty Bridge into the editor and the inclusion of Houdini to Mighty Bridge. This makes Houdini-based tools accessible to everyone inside the company both on the PU and Squadron 42.
+On the code side, the team are adding Houdini-related functionality to Mighty Bridge, including the ability to utilize terrain geometry.
+On the technical art side, two major areas of development progressed. The first is the Procedural Location tool, which will speed up the production of certain locations. The team are currently designing the tool’s template system to allow the designers and artists to procedurally generate various locations, such as derelict outposts and settlements, caves, and underground facilities.
+The second area is biome integration, which involves a collection of tools to help the Art teams better integrate locations into a planet’s specific biome. The first case study uses the derelict Reclaimer settlement. Tools are taking the Art team’s handcrafted proof-of-concept and automating some of the processes to make creating more easier. For example, one tool automatically places vines and dirt around the crashed spaceship, which is usually a time-consuming task.
+## Turbulent (Services)
+In March, Turbulent’s Online Services team delivered the reputation service, which passed QATR with zero reported bugs so far. They also completed the majority of work for the login-flow refactor project, including the rental service, putting together the main login loop, entitlement service, and login service.
+The Live Tools team rolled out improvements to the local dev environment system. They’re now using the new Hex modular UI on the PTU and are starting to leverage the templating system to quickly add new tools in the Network Operation Center.
+The team began drafting new modules to enable the developers, Player Support, and QA to monitor and troubleshoot login issues users might encounter.
+## Turbulent (Web Platform)
+The Web team in Montreal began adding new web features for upcoming events, ensuring all components are reusable and of the highest possible quality.
+The Turbulent Architecture and E-Commerce team added several tools, including a new flow to make redeeming promotion codes easier.
+Two CI pipeline flows were further developed for increased performance and reduced wait time on builds.
+The Turbulent and internal Community teams progressed with the rework of the Community Hub. The Home and Discover pages are ready for launch, while progress was made on the post-creation and follow tools.
+## UI
+Throughout March, UI continued with two long-term projects that will benefit both the PU and SQ42: the visor refactor and the new radar and maps. The visor refactor involves updating the visor and lens so that they work in Building Blocks, which will make it perform better and be easier to work with. Last month’s work focused on weapons, the actor status display, and law-related elements.
+For radar and maps, the team focused on the basics of the full-screen version of the radar and added the ability to zoom in on contacts to see their 3D models.
+On the tech side, support was given and bugs were fixed for radar and maps alongside tasks for Alpha 3.17. The team also updated the mouse cursor to run in-hardware, which makes it more responsive and allows it to change between different elements, such as sliders and 3D controls.
+## VFX
+March saw the team complete the VFX production pass for the MISC Hull A alongside pre-production passes for the RSI Scorpius and an as-yet-unannounced vehicle.
+Progress was also made on salvage effects, with the team adding more refinement to the visuals, including hull scraping and repair effects. They also worked on the refueling effects, which were completed to a functional standard for the feature’s initial release (they will be improved upon at a later date).
+Finally, UI provided bug-fixing and clean-up support for Alpha 3.17.

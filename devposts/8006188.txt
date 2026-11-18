@@ -1,0 +1,74 @@
+## Star Citizen Alpha Patch 4.2
+Alpha Patch 4.2 has been released to Wave 1 testers!  Patch should now show: VERSION 4.2.0-PTU.9812325.
+- Audience: Wave 2
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 10 DGS - 600 Players
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Wikelo Custom Components Going into 4.2 LIVE
+The issue with missing upgraded components on Wikelo ships has been resolved in the 4.2 update. (Executive Hangar ships are being worked on to also be fixed but not in the build just yet)
+Starting with this update, all newly purchased ships from Wikelo will automatically include the upgraded components.
+For players who bought Wikelo ships before 4.2 and still have the base components, there are two ways to receive the upgrade: Store the ship before 4.2 goes LIVE  or file an insurance claim on the ship after the LIVE release. In either case, the ship will return with the upgraded components instead of base.
+- Stability & Bugfixes
+- Storm Breaker (Parts 1 and 2) More to come soon!
+- Dynamic Rain
+- Radiation
+- VOLT Laster "Prism" Shotgun
+- ARGO ATLS IKTI
+- New Wikelo Ship Additions
+- New Hairstyles
+- Sterling Exploration Suit
+Not Ready for Testing or Feedback
+Reminder: These items below are a partial list of current goals for the latest release and may be partially in the build and even completable but are not ready for feedback and are subject to removal from this release.
+- Improved Kiosk Interactions
+## Known Issues
+- PU - Stanton - Orison - Locations / Transit - Tram doors are not opening upon arrival at the station
+- PU - Stanton - Locations - Klescher Rehabilitation Facility - Mining / Inventory - Players are unable to store mined Ore into their inventory properly and Ore will be dropped to the ground after attempting to be stored
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+- PU - Ship Battles - Ace Pilot/Assault - Proximity Tracker - Action Area - Logic fails to continue when over 20km away from the tracked object or Action Area Origin
+- Graphics - UI - Shadows not casting in 3d Comms Call RTT window
+## Features & Gameplay
+Gameplay
+Scanning Mode UI and Feature Update
+The Scanning Mode UI has been updated with further visual improvements. Lowered the required base emission to scan for a the drivers name in a ship from 80% to 10%, allowing you to scan a player name more quickly and from further away.
+Characters
+- Further New Hair Inclusions and New Hair Polish into the Character Creator
+Locations
+- ASD Facilities: Lighting, Music, and Optimization Polish. Added Exclusion area to prevent AI from entering the ASD Facility Clinics.
+Ships and Vehicles
+- ATLS Variants can now be called using the Freight Elevator in the Hangar after delivering it to the location on the ASOP
+- Swapped Regen & Slapdown balance for shield generators
+- Updated all Engineering Components Health Scaling with increases and decreases across components
+- Added Gimbals to Ground Vehicle Remote Turrets
+Weapons and Items
+R97 Shotgun Balance
+- Decreased pellets per shot from 12 - 8
+- increased damage from 3.66 to 4
+- decreased ADS spread modifier from 0.66 to 0.75
+- increased min spread from 2 - 3
+- max spread increased from 5.85 to 6.5
+- increased yaw recoil from 0.3 to 0.45
+Core Tech
+- Updated Rain Effects: Polish, including better balancing with stronger wind, more visible, and adding screenspace collision impacts. Made Default Camera Rain Droplets and Slush Effects More Subtle.
+- Tech Update to add ability for locked doors to require multiple forms of authentication to open (ie: Requiring armor + helmet instead of just one or the other)
+## Bug Fixes
+- Potential Fix: PU - Pyro - Storm Breaker - Locations / Design - Multiple exterior buildings are missing interior atmospheres at Lazarus Research Facilities
+- Potential Fix: PU - Pyro - Stormageddon - Locations / PES - Data Center printer progress will continue even when the location is streamed out
+- Potential Fix: PU - Storm Breaker - Locations / Design / Interactions - Players can become locked in the egg room at the Lazarus Complex when interacting with the egg chamber (STARC-169572)
+- Potential Fix: PU - Storm Breaker - Pyro - Locations / Transit - Players must jump from the shuttle to the Research Facility as the shuttle does not correctly align with the research facility platform
+- Potential Fix: ARGO ATLS IKTI- PU - Storm Breaker - Locations / Mission Content - Research Facility garages are missing the doors and powerbanks
+- Potential Fix: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- Potential Fix: Multilocation - PU - Pyro / Pyro IV - Interactions / UI - Storm Breaker - "Keycard Required" can still be seen and interacted while at the other side of the door
+- Potential Fix: PU - Stanton - Wikelo's Emporium - The Collector - Missions - Armor missions have the incorrect amount for Ace Helmets required (max 3)
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 2 Server Crashes

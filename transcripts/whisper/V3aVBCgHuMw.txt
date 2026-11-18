@@ -1,0 +1,913 @@
+# Star Citizen Live Q&A: Invictus Vehicle Gameplay
+# https://www.youtube.com/watch?v=V3aVBCgHuMw
+[    3.8] Hi everybody, welcome to another episode of Star Citizen Live, our Invictus, all vehicles gameplay Q&A.
+[   11.0] I'm your host, Jared Huckabee, and joining us on the show this week are a few
+[   15.7] esteemed members from the various gameplay feature teams
+[   18.8] throughout Star Citizen Squadron 4G's development that work on features related to the spaceships and vehicles.
+[   26.5] It's always hard. We used to just say it ships and then we were like we started making more ground vehicles
+[   30.6] and I'm like no you got to call it vehicles now not just spaceships spaceships just dismiss all the great work of ground vehicles and now I'm
+[   38.2] Already lost in the show before we get started. I wanted to call out a couple things for folks who
+[   45.7] Were questioning some some of the questions and some of the discussion from last week's show and stuff a lot of the questions
+[   51.6] that are submitted into our
+[   54.3] threads when we pull questions are
+[   56.6] Things that obviously people want to see people want to know about people are anxiously waiting for it doesn't mean they're actually
+[   62.9] Inactive development if a thing is not in what we call active development, which is where a person is
+[   69.3] Literally like their tasks this week are to work on a thing. There's usually no new information to give
+[   76.4] folks who have followed the project for any
+[   79.4] Long period of time will tell you that in the earlier days when we were still all figuring out
+[   85.2] What star citizen was and figuring out what weekly content was and stuff we were sometimes
+[   91.3] quite
+[   93.0] vociferous and
+[   95.0] Lekwacious with our with our verbiage and now I'm just now I'm just reading it for the source
+[  100.5] Basically, we would just talk pie in the sky. Maybe we'll do this and maybe we'll do this and stuff
+[  103.8] And it sometimes it can set expectations that are unfair
+[  107.5] To set in people so over the last few years
+[  111.0] You've probably noticed that we're we hold things a little closer to our vest if a thing is not in active development
+[  116.0] We try not to talk about it too much because there's just too much about game development that can change between
+[  122.3] Now and the moment when we actually start to work on it
+[  125.4] So for that reason you have sure you've noticed in our storytelling
+[  128.6] I SC SEL that we tend to talk more about things that are coming in the next three to six months as opposed to things that are coming in
+[  135.8] The next year to two years and stuff like this
+[  137.7] So for in the question thread there were a lot of questions like what about personal VIP?
+[  143.6] Transport and and so like this which is not currently in active development or what about F
+[  148.4] What about medical gameplay which is well? It does involve vehicles to a certain extent is far more an FPS related feature than it is a
+[  156.7] Spaceship feature we're going to focus the show as we always try to do on the stuff that is currently in active development
+[  162.6] And the features that folks are aware of and can play with right now things like salvaging and mining and combat and stuff like that
+[  170.4] a
+[  171.3] Good example of this there was a question about bounty hunting v2
+[  176.0] For instance, there's a big question was voted up about how how's bounty hunting v2 running on bounty hunting v2
+[  181.7] It's actually not currently in active development
+[  183.9] It's been backburned a bit because we've determined that there are other prerequisite features that are necessary to
+[  189.7] Make it work things like restraints a restraint system a quantum tracking the ability to track people through quantum travel
+[  197.4] FPS and ship scanning we all know that needs additional work and basically the law and security refactor
+[  202.7] So when those things come online and those things are developed then the eye of developments are on will turn back to
+[  209.0] bounty hunting v2 so like this so just a great example of how sometimes the thing is in active development
+[  214.7] Sometimes it becomes not in active element and just a little bit of me at the top of the show
+[  219.8] Wanting to discuss why we sometimes ask certain questions and why sometimes we don't ask certain questions
+[  226.0] If we're not asking it and we're not talking about it
+[  229.0] You can generally assume that it's not something that's currently in active development and we'll get to those topics when we get closer to that time
+[  237.2] It's a little bit for me. All right, so with that let's start the show proper
+[  242.0] We have four beautiful people some of my favorite people and Elliot Malpy joining us on the show this week
+[  248.4] So let's get to meeting them
+[  252.6] You know Elliot, I'm sorry you took the hit there. So we're gonna start with you Elliot. Hi. Say hi
+[  256.9] Tell everybody who you are and what you do for Star Citizen
+[  260.3] Hello
+[  262.3] Elliot Malpy and I am the
+[  265.6] Lead mission designer on the mission design team. So I make all those missions that work perfectly for your all of you
+[  273.7] And at no point do you sit in a corner during beacon Belgium and just
+[  278.9] Scroll through teams finding out what this mission is broken that mission is broken in I
+[  283.5] Don't get a rest just everyone
+[  286.2] Constantly hey, you know your mission is broken. It's like yeah, I built it. I know it's broken. I put on purpose
+[  292.6] Uh, yogi tell everybody who you are what you do for Star Citizen
+[  300.7] Unmute yourself tell everybody who you are and what you do for Star Citizen. I was muted. Yeah. Hello. My name is yogi
+[  309.1] I'm a principal vehicle
+[  312.7] Programmer sorry and I deal mostly with space combat and the flight experience. I'm somewhat of a link between
+[  319.5] Richard and Thorsten
+[  321.7] And yeah, that's what I that's what I do. So I do Cody and designing things
+[  326.1] handle stuff like
+[  327.4] the general flight model development ESP and stuff like that so all these complaints when something is broken usually also go to me
+[  334.7] Not mission related though. Fair enough. I like that the link between Richard and Thorsten. So let's go to Richard
+[  339.7] Rich tell everybody who you are and what you do?
+[  342.9] Yes, I'm basically Richard Tower and I'm and I'm the lead designer on the vehicle experience M side
+[  349.4] so its balance and its gameplay with vehicles and
+[  354.1] Basically, why keep me yogi and anyone else involved with the you know, the kind of general vehicle experience to
+[  359.9] Make the vehicle gameplay good in Star Citizen
+[  363.0] And last but certainly not least Torsten tell everybody who you are what you do for Star Citizen
+[  368.6] Hello, I'm Torsten. I'm the systems designer and I complained a lot
+[  374.4] That's true
+[  378.6] He's not wrong. He's not wrong. And of course as you're seeing all of our major designers and programmers live in the void
+[  386.1] Which and we're so glad that you can join us from the void this week to take questions. So
+[  392.0] Just two top shelf questions before we get into all the questions from the from the backers this week
+[  397.9] Yogi and rich master modes is finally this this big thing you work on a lot of things
+[  403.4] But master modes this this this this enormous project of yours is finally out in the wild with 323
+[  410.4] How's that been? How's that? How's that going? How's that make you feel?
+[  413.1] Yeah, are you done? Are we walking away from it? Is this the last thing or what's what happened here? How happy are we?
+[  421.4] Well
+[  422.8] So I I posed about my feelings concerning master modes about a couple of weeks ago in spectrum
+[  428.5] so in general, I'm very happy with the progress and what we achieved because the
+[  433.5] The swapping to the master mode check meant that we had to update all the ships all in one bulk. So we could not really
+[  441.8] Stretch this out to multiple releases because our our data system is not able to have like two different tuning values
+[  448.6] So two different ways of keeping tuning ships
+[  451.8] balanced at the same time
+[  454.0] So we had to squish all the ships and just to be clear we have about
+[  458.8] 140 different ship records in the game
+[  461.1] So we had to update them all and take the other related tech from from squadron like the new aiming system the ways
+[  466.2] Of the weapons work the gimbling system and so on plus it's part of the UI updates and squish this all into 323 now
+[  472.9] We knew from we we knew before that this was like a pretty tough ask to do
+[  479.4] Because it's just a lot of work
+[  481.6] So overall, I'm really happy with the with the progress. Of course. There's like there's a couple of like
+[  486.9] Let's say balance issues. There's a couple of balance offenders, of course, right? But it was kind of like no, no
+[  493.0] Yeah, well
+[  494.4] We don't need to I don't need to say it's perfect
+[  497.1] No, we never said it's going to be perfect on this release, right?
+[  499.9] But it's it builds a far better foundation from which we can iterate faster going forward
+[  504.8] So beyond three to three. What about you rich?
+[  508.4] Yeah, that's basically right, you know, it's about moving towards the better foundation for the future of the game
+[  513.7] So it's been really cool to get here
+[  516.0] But for us, it's just a start with this but it's been a really cool Jenny. I mean this this Jenny started for us
+[  523.4] Wow, like three years ago, I think it was about three years ago. Maybe more than that now. Yes. Yeah, I lost time
+[  529.2] Yeah, you know, so we got together and you know, we looked at status and I went right
+[  533.6] What do we need to do, you know to make the combat experience good also the general for experience good and
+[  538.9] We came with lots of things and master words was kind of one of the ones that evolved kind of as
+[  543.6] Department feature that we were working on and it's involved so many teams and so much feedback from you know all across the studio
+[  549.6] So it's been an effort, you know, not just was off on yogi, but lots of different teams, you know
+[  555.0] I'm lost different people, you know that I worked on this over the time
+[  558.1] You know that I've been here
+[  559.3] So it's been really good to see out there
+[  561.2] It's been a big push at last minute because as you know, you get said we've got so many ships and every single one of them
+[  566.5] Had to be updated to make this work. So, you know, there's a couple of things, you know that we didn't catch probably
+[  573.2] But that was expected
+[  575.0] Given how many records have changed in the game
+[  578.2] But we believe it's a much better foundation and and you know, we're excited for the feedback that's coming
+[  584.2] You know as it's coming in, you know, and also, you know for the future as well because it's gonna evolve massively, you know
+[  590.5] of the next few releases
+[  592.7] And of course we'll have more questions about master modes when we get to the combat section of today's Q&A
+[  598.1] Before we jump into it Torsten
+[  601.1] Joghain Rich just had their big
+[  604.0] Their big child pushed out in the world. You're up next with engineering and 4.0. How you feeling about your work?
+[  614.7] Pretty excited to be honest so
+[  618.3] With all the work that we we now are starting to put in and
+[  622.9] Next week we will reach a big milestone where we will just force everyone to use resource network in
+[  628.5] in our
+[  630.5] game dev
+[  631.9] Branch, so yeah, but we will be quite exciting times going forward
+[  637.2] Okay
+[  638.3] So and of course what we'll have some more questions about engineering later on the show
+[  641.9] Let's jump into the back of questions. We've separated the questions into a couple different sections for a couple different gameplay features and stuff
+[  648.0] We're gonna start with an oldie refueling
+[  652.1] Refueling and re-army we'll combine the two there this question from the community simply says
+[  657.3] How is re-arming out in the field supposed to work if we land our fighter in a player and a player is for instance
+[  664.2] How do we restock?
+[  665.9] so
+[  668.3] If you if you run ballistic ammunition
+[  671.1] We will allow you to restock the ballistic ammunition and the way that it will work as you will buy
+[  677.3] ammunition containers that
+[  679.0] Then you will use to refill the pool of the ships that you either landed or if you even have
+[  684.8] Like a a capital ship or a bigger ship you will be able to put those boxes with the ammunition inside
+[  693.0] Right now it's a dedicated slot
+[  695.0] but it's subject to change and then it will basically drag the ammunition out of it and then
+[  701.9] Basically put it to the pool
+[  703.9] one one change that would come with that is
+[  707.9] That we will
+[  709.3] So this is something that is coming sooner than later which is we will unify the the ammunition size and that's just for the fact
+[  716.8] That we don't want to have you
+[  718.8] Be spoke ammunition for example for your bearing getling
+[  722.1] But we want you to share the ammunition between different weapons that that share the same size of ammunition for example
+[  729.6] a size 3 getling uses the same round size as a size 2 repeater and it uses the same size as a size 1 repeater so you can
+[  738.4] plan
+[  739.5] Your your lord out accordingly if you just want to buy one type of ammunition for your ship
+[  744.6] And what about four things like bigger things like missiles and torpedoes?
+[  748.8] yeah, that's
+[  750.0] And we already started with that right so the the tractor beam detach attach was the first step already for that
+[  756.6] So the the following steps are then having these I think I
+[  762.4] Don't know if it was ever put out the images of of the
+[  766.7] And I might be leaking something now, but
+[  772.2] Like we had those missile wrecks that the mobile missile wrecks that you could push to into into vehicles
+[  778.6] So these these might also see that the the light of day at some point
+[  782.8] Yeah, no, I don't I don't I don't remember if we shown those other but that's been an idea
+[  787.1] It's been floating around development long enough that we can share that basically the idea of storing Mr.
+[  791.5] Raxon side your vehicles that you can then when the ship lands and something like the pleasure was like a
+[  795.2] And reload and stuff like this
+[  797.5] There's also I have no idea if it's out yet or not
+[  801.3] but Tyler will have a post on
+[  804.0] Spectrum later today concerning some of the weapons for the retaliator and some of the missile counts for the
+[  810.9] for the
+[  812.2] Firebird so I don't know what the details are specifically but check that out. There's there's some improvements coming in a
+[  818.7] 323 one a patch or two again the specifics
+[  824.4] Allude me right now, but there's a
+[  827.1] But I know that the firebird is getting more missiles than it currently has and the retaliator is getting bigger guns
+[  832.3] I think so look look look out for that. That hasn't posted on spectrum yet. It'll post later
+[  839.3] And then trust him for the details not me
+[  844.0] Are we likely to see missions for refueling
+[  847.0] Um
+[  850.7] Yeah, it's something it's something we want to do
+[  854.7] but it
+[  856.2] It's not it's not it's not a simple thing to do
+[  859.1] There's there's a lot of like downstream dependencies that we have to rely on for it
+[  863.8] And there's a lot of edge cases, you know if we're doing refueling and then you board the ship and you know kill the AI pilot
+[  870.2] And you've just got a free ship because you sat there like without any fuel
+[  873.9] You know these are sort of things we need to catch and protect against
+[  877.0] We also need like
+[  878.6] Like an crazy amount of feedback for the player so that you know
+[  883.1] That they're like right i'm nearly full or you know, hey, I need some help or you know, maybe maybe we do like hey
+[  888.8] Here's the first version. It's just refueling. But then we have
+[  891.9] Refueling but you get pirated, you know by some AI pirates, you know the the AI needs to be able to react and communicate with you as the player and
+[  899.3] And sort of like tell you about the situation that's currently happening so you can sort of adapt appropriately
+[  905.4] So long story short. Yes, just probably not yet because we need a few more things
+[  912.1] What you do to oraka oraka in chat says, please don't let this guy do missions
+[  916.7] You got time you got timed out by night writer, but
+[  919.5] Go on night writer. You're making friends out there earlier always. Everyone loves me
+[  928.5] While we're sitting you're talking about missions, let's talk about mining missions, uh, so
+[  932.3] Refueling obviously something we want to do and stuff. It's
+[  935.9] But what about missions really related to mining? Wow the ability to speak here. There it is
+[  941.6] What about mining missions?
+[  943.2] Mining missions. Yes. Um, I mean, yeah, we want them and we're gonna have our first versions of them coming in hopefully soon
+[  950.4] In the form of resource gathering, uh, but these are going to be the first iteration
+[  954.8] Which we kind of call like open resource gathering and this is the idea that like a mining outpost will go
+[  959.5] I want, you know
+[  961.0] A thousand scu of iron and then that that's all they say and then you have to go out and collect it
+[  966.2] You know or I want a thousand scu of quantaneum and you as a player can go mine it and transport it
+[  972.3] Or if you could purchase it from another player or a store you do that or you can pirate people for it and bring it in because they
+[  979.6] They don't care where you've got it from. They just need that resource
+[  983.2] um
+[  983.9] So that will be kind of like the idea of
+[  986.5] The first versions and then later down the line
+[  988.5] We might get more specific with our sort of resources that we want
+[  992.4] We're like we want exactly this, you know
+[  995.9] these mining things from this area because we have bought the sort of uh
+[ 1000.2] Land claim there for those rocks
+[ 1003.2] And then there's there's all that talk about uh, we've talked before about how the mission system
+[ 1009.6] Could potentially plug into like quant uh, a quantum and stuff and when a
+[ 1013.9] When a resource is needed, you know for a particular station or something it could generate a mission, you know for that stuff
+[ 1021.1] Yeah, yeah, exactly. Like this is this is uh, we're it's static because we have to
+[ 1027.2] Pre-set up all of the data, but the idea is that it's all there. So when the sort of quantum uh
+[ 1033.7] Quantum star symbol whatever it's called system comes and hooks in it'll just take over and start generating these on its own and
+[ 1040.8] and balancing these based on like
+[ 1043.2] The needs of the universe and you know, it will react to what players are doing
+[ 1046.9] And that's not to say that missions are the only way like when when these missions come online the stuff and as there are
+[ 1052.1] More salvage missions and more mining missions. That's not the only way to
+[ 1056.6] Make a living with those professions. That's just those are introductory things to draw people to the profession
+[ 1061.7] It's the first time that maybe they hadn't considered before and to supplement
+[ 1065.5] Uh, a little more directed uh initiatives to just the open sandbox stuff that you'll always be able to do
+[ 1072.3] Yeah, it's it's something that me and Thorsten have talked about a few times when it came to uh, when Thorsten first released
+[ 1078.8] salvaging, you know, hold scraping
+[ 1080.8] Um, the gameplay came out and then the missions were a way to help expose it to new people
+[ 1085.5] So they could see the gameplay and find the things a bit quicker. So it's a nice way to sort of
+[ 1090.6] Show you to the world and then let the systemic nature of the universe and let the you know, the the actual
+[ 1097.2] Cost of doing it yourself about a mission come into play when you get more advanced at it
+[ 1103.0] Um, I'm gonna do one more mission question since we just happened to be on here
+[ 1107.1] Uh, are there plans for more robust missions that cross disciplines?
+[ 1112.6] Uh, for instance in here, it says it starts off as a mining job then turns into a repair job
+[ 1117.5] So that you can then do a salvage job and then transport this whatever yada yada yada
+[ 1121.7] Uh
+[ 1123.9] Kind of kind of I guess that I guess the uh overdrive was was the first kind of beginnings of that multi-discipline kind of stuff
+[ 1132.5] Uh, yeah, yeah, we definitely want multi-discipline things. Um
+[ 1136.7] The what we're doing is we're building because obviously as I might have mentioned a few times I build missions modulely
+[ 1143.1] Um, so we build a low load of base sort of modules
+[ 1146.7] So with our resource gathering and our salvage things the idea is that when we get enough of them
+[ 1151.3] We'll start stitching bits of them together
+[ 1152.9] So you might have a mission where you've got to take out a bounty and then you've got a
+[ 1157.2] Whole scraping and then maybe you've got to steal his component
+[ 1159.6] Then you've got to like someone wants that component
+[ 1161.9] So you get another objective like deliver that component to this person
+[ 1165.3] We plan to have missions that take you through multiple bits of gameplay. Um, but all in one mission
+[ 1171.6] But right now our focus is creating the baseline of all sort of generic type missions that we can think of so
+[ 1178.0] The idea of that is that if we build them they can then scale out to you know
+[ 1181.6] All the systems that we have planned and it's it's easier to get a widespread of content
+[ 1186.1] Before we start building into our bespoke sort of things. Okay. And while we're still talking profession stuff, uh
+[ 1194.3] Torsten maybe um any thoughts about making power plants burn fuel
+[ 1199.5] With abandon ships keeping their shields forever. This would be a nice way to address that for salvaging and the like
+[ 1208.1] Yes power plants will consume fuel in the future. So it's not
+[ 1212.4] So it's it has been a plan for quite some time already and we are now looking into when when is the perfect
+[ 1218.5] Time actually to really release it
+[ 1221.1] It's not with 4.0. So it's not with the initial release of the resource network, but uh, it will come
+[ 1228.1] at a later point then
+[ 1229.6] And uh, the goal there is then that the power plants will consume hydrogen fuel
+[ 1234.1] So it's used for the thrusters and the power plants
+[ 1237.6] and uh, yeah, the the reason is because
+[ 1240.9] uh power generated us right now
+[ 1243.4] Create energy out of thin air and especially when we go forward to base building
+[ 1248.9] We we can't do that anymore. So we need a we need a resource that is actually
+[ 1254.5] consumed over time
+[ 1256.9] And the benefit is then in that scenario that is described in that question
+[ 1261.3] Is once your your fuel runs out once your battery is depleted, uh all the systems on that ship then slowly die
+[ 1269.3] and uh
+[ 1270.6] Yeah, you you will be able to
+[ 1273.7] Enter that ship without any shields anymore, but also without any life support. Nice
+[ 1279.2] okay, um
+[ 1281.7] Let's move on to combat
+[ 1283.8] We have quite a few combat related questions here
+[ 1289.9] I'll just start off with the big one
+[ 1292.6] In addition to the in the opening we'll often take a bunch of questions and just combine them stuff. Uh, this was really about
+[ 1300.3] Seven different questions. I'm going to combine into one here
+[ 1303.9] Is balance
+[ 1305.5] possible
+[ 1307.1] Like you mentioned 140 ship records for for master modes. Is this a pipe dream?
+[ 1312.1] Is balance is balance actually an attainable thing?
+[ 1315.4] It's not a pipe dream at all. Um
+[ 1318.5] so
+[ 1319.5] Yes, we had 140 records and we have uh, we did a very quick weapon tuning pass and a little bit of a health pass for some
+[ 1327.8] components and ships, but um
+[ 1330.8] We're also getting a huge amount of data from the players actually playing that stuff
+[ 1335.9] Internally when we develop stuff, it's sometimes hard to judge whether or not we reached the right
+[ 1340.5] Balance because we have a vast array of
+[ 1342.9] ships and and items and all that
+[ 1345.1] But when you watch player playing it, then you get an idea what's happening
+[ 1349.1] um, that's that as I said like the the current pass that we have on the balance should not be treated as a
+[ 1354.7] Oh, this is now the final product thing. It's really just a stepping stone because
+[ 1359.2] it just sets a little bit the stage for the
+[ 1361.8] vastly bigger changes that are coming to
+[ 1364.6] in terms of like
+[ 1366.1] to 4.0 and beyond
+[ 1368.2] um
+[ 1369.4] Because there will be new gameplay loops and so on. Um, I think a huge step we took right now is actually that we set our
+[ 1375.2] Intentions very straight, right?
+[ 1376.8] So we know exactly what we want to achieve and now we actually look for for the datasets
+[ 1382.9] Inside like what what players are actually experiencing right now
+[ 1387.0] And we use this these observations to improve the balance even more
+[ 1393.7] Would you go Ridge?
+[ 1396.3] Yeah on the overall question is balance even possible
+[ 1400.5] Do we want
+[ 1401.8] balance as in do we want everything to be balanced because we
+[ 1406.1] Because the kind of nature of balance is the imbalance imbalance that makes sense for me
+[ 1411.3] Because because because we've got to capture
+[ 1414.6] All the unique characteristics of the ships and that throws them off in all different kind
+[ 1418.8] You know all kind of different kind of directions and we've got to capture that balance
+[ 1422.6] To make sure that within the game context the ship fits within the game
+[ 1427.1] But every ship needs to feel different and offer different things and have different character to them
+[ 1431.7] So it's
+[ 1432.7] That's kind of the complex nature of balance and then we have to balance the game with
+[ 1437.0] The other features that affect flight, you know, so
+[ 1440.4] you know
+[ 1441.5] Basically sugar said this is the starting point
+[ 1444.5] Of the rebalance of the game, but then you know, we're 4.0
+[ 1447.8] It's going to evolve massively, you know with the engineering game players can have a
+[ 1451.9] significant impact on how the ships are in the game
+[ 1456.0] So we're going to kind of reset again there and then we're going to again
+[ 1459.6] We're going to look at the data to see if we're delivering the gameplay we intend
+[ 1465.4] So it's a juggernaut, you know, and it doesn't really ever end with a game like status
+[ 1469.7] Because the game
+[ 1470.9] It's a live product, you know, it's out there. It's evolving. We're adding features. We're changing things all the time
+[ 1476.5] so
+[ 1477.5] You know from my side the balance is yeah, it's not some of that will ever be finished
+[ 1481.8] It's an evolving thing, you know, it's a living breeding thing that's existing the game currently
+[ 1486.8] And we'll carry on to evolve and which is true for any MMO any online online game, right? Yeah
+[ 1492.3] We were talking
+[ 1493.6] I can't I won't be begin to try to pronounce his name
+[ 1497.2] But the main guy in charge of smash
+[ 1499.9] Uh had a had an interview this week or last week
+[ 1503.0] Where he said he released he talked about their internal numbers about how the most successful fighter in all smash brothers had like a
+[ 1509.5] 51% win rate and the least success successful fighter had a 46% win rate
+[ 1515.6] So it was really only about a 5% difference
+[ 1518.6] there and
+[ 1520.4] And torsten you mentioned that he had a youtube channel
+[ 1523.8] That would talk it where he talks about design and stuff. Yeah, it's basically he he talked about like if if you have a fully balanced game
+[ 1531.8] It's basically everything is average and average is boring
+[ 1535.4] Generally, so you always tend to do if you do balancing there's always a peak up or a peak down
+[ 1540.9] So it's more interesting for for players
+[ 1543.6] Worth watching by the way. Yeah, it was like the best best best characters were 51
+[ 1549.5] The worst characters were 45. L. M. Maltby was like 38
+[ 1555.0] It's a little bit of god you can't even pronounce his name
+[ 1558.2] come on
+[ 1560.0] This guy built my childhood
+[ 1562.2] Uh, but yeah, so I think the the moral of that story is ellie it is bad
+[ 1568.1] And balance is an ongoing thing that never ends, but you never want to make it too homogenous
+[ 1573.3] There will always be some level of intentional imbalance because
+[ 1577.8] Like life. That's what makes it
+[ 1579.6] enjoyable and interesting
+[ 1582.2] um
+[ 1583.9] We couldn't talk much about the bounty hunting v2 thing, but
+[ 1587.3] A lot of that that's ship related is has to do with non-lethal damage
+[ 1591.3] So let's talk about non-lethal damage. Can you give us an update on things like EMP?
+[ 1596.4] Distortion and overall ship disabling anything that anything involved in not destroying another ship
+[ 1606.5] Torsen, maybe you take that because that's highly
+[ 1609.7] a resource network, so
+[ 1611.7] I thought you wanted to talk about like EMP and stuff. That's okay. Um, I mean it's like it's it's similar
+[ 1617.2] so
+[ 1618.4] The big question
+[ 1619.5] The big picture hasn't really changed, but there will be some specific details with like software that torsten will talk about in
+[ 1625.4] two seconds
+[ 1627.7] yeah, so
+[ 1629.4] so we we still keep all the the the
+[ 1633.0] Weapon counters that is distortion that is EMP and stuff like that where you can
+[ 1638.8] deactivate a ship
+[ 1640.4] But like for EMP you first have to bring the shield down. So there's some work that comes with it in front
+[ 1646.4] For distortion, we already mentioned it. I think it's on the roadmap now
+[ 1650.5] With a multi-tool that you will be able to counter distortion
+[ 1653.6] So that's that's something that we were missing before that
+[ 1657.0] Distortion damage has actually a valid counter
+[ 1659.9] So, um, you are not only a sitting duck
+[ 1663.3] When you get fully distorted by by someone else, uh, you will be able to drain that so you will be able to
+[ 1670.7] Make your ship work again
+[ 1672.4] But I think the the biggest change that will come with
+[ 1676.1] 4.0 is the change to soft death. Um, I don't know if
+[ 1682.1] All of you already played the arena commander experimental mode
+[ 1686.1] But that already gives a hint at what we are aiming for. So
+[ 1690.6] Right now also in 323
+[ 1693.6] life also in 323.1 live
+[ 1696.9] If you shoot a ship if the ship reaches health zero, it will explode or it will go into the soft date state. Um, but
+[ 1704.1] Yeah, we are right now actively discussing how we want to change that. So we have already some ideas
+[ 1709.8] so one of the big ideas is tied actually to the health or the
+[ 1714.9] the life of the power plant and
+[ 1718.5] Yeah, give give also players a way to
+[ 1722.7] Yeah, maybe
+[ 1724.1] Fix or escape the soft death scenario there. Um, but this is this is as said still an active discussion
+[ 1731.3] but the goal is to have it come with
+[ 1734.8] Everything resource network related for 4.0
+[ 1737.7] And of course, uh, we talked about this in isc, but the the experimental modes for
+[ 1742.7] This season and arena commander have to do with, you know, tuning time to kill and stuff on a lot of these ships
+[ 1751.0] Yeah, correct. Yes. Yeah
+[ 1753.3] It's a huge effort right now that we are going through which is like
+[ 1757.3] I don't know if
+[ 1759.6] We had heavy iterations time, especially in the beginning of the three dot 23 cycle where we
+[ 1766.8] Had it wrong had it wrong had it even more wrong
+[ 1769.9] And then at some point we were heading into a direction. We were seeing suddenly
+[ 1775.0] uh the
+[ 1776.7] Time to kill times being in the in the ballpark area of where we want to see them
+[ 1781.2] We are still not fully there yet. So we are still
+[ 1784.0] improving it
+[ 1785.8] especially
+[ 1788.5] Like
+[ 1789.6] It gets a bit really complicated because some ships are
+[ 1794.5] In some ships, it's easier to to destroy crucial components versus others. But uh, yeah, we we are working on the solution for that
+[ 1804.6] Uh, i'm sorry. I got somebody in chat
+[ 1807.5] Suburbanite 1001 says i've lost all excitement for this game just about a decade ago
+[ 1814.7] But he's still here
+[ 1816.7] It's a different game. Thanks. Thanks for hanging in there. Suburbanite
+[ 1820.8] just
+[ 1824.8] um
+[ 1827.1] More okay here's a question. Uh, elliot
+[ 1829.8] Would you please make a clear distinction between vehicle based combat missions and fps ones? Is this uh
+[ 1837.4] Is that something we even want to do? Do we want to mix them up? Do we that?
+[ 1841.9] They're asking for it
+[ 1844.6] No, that won't
+[ 1846.6] Now i'm joking uh, it's we
+[ 1849.9] We're gonna add
+[ 1851.6] In the future when we you know redo the contract manager app
+[ 1854.2] We're gonna add a sort of section where you can see the sort of gameplay you're going to encounter
+[ 1858.7] So it's a things like you know, maybe you need a multi tool
+[ 1861.9] Maybe you're gonna come up against uh, maybe you're gonna need like fps weapons
+[ 1864.7] Maybe you're gonna need a like a powerful ship. There'll be like a
+[ 1868.7] A section where you can see what it is and the reason that we don't currently make a distinction between the two is because the idea is that in the future
+[ 1876.3] Like your bounty that you're hunting
+[ 1879.2] Might be above like a bunker, but then he might land and go inside and then you've got to infiltrate and fight them
+[ 1885.8] There's there's a whole bunch of different things that we want to happen
+[ 1889.2] So therefore we don't want to make a clear distinction
+[ 1892.6] When there might be no
+[ 1894.3] Why there might be none, you know, you might get there start attacking them and then they get in their ship and take off
+[ 1898.9] And you've got a transition from ground to space base combat. You know, there's
+[ 1903.2] Too clear potential for change. We don't want to make too clear a distinction. Yeah, exactly
+[ 1908.4] I like what you're saying. It's like we could we could give you expectations
+[ 1912.4] The mission giver expects it to be primarily this or primarily that but yeah
+[ 1918.8] I think it's important to leave room for for the element of surprise not just from the the story of
+[ 1925.7] Of your mission team and the narrative and stuff
+[ 1928.3] But the surprise of the other backers the other players and the version exactly
+[ 1932.7] It takes like influence from real life, you know, you take a job and they're like, hey
+[ 1936.6] This is what you're applying for. You're only going to do this and 90 percent of time you'd start and you're like
+[ 1941.1] They give you so much over shit to do at the same time. So
+[ 1944.6] So, no, I think that's good. I think I think that's a reasonable
+[ 1948.6] Expectation and I think it'll help people a lot, you know
+[ 1952.1] We expect it to be primarily this but
+[ 1955.5] The verse is the verse
+[ 1957.9] Um
+[ 1959.0] And no hand-holding no hand-holding no hand-holding
+[ 1962.7] um
+[ 1964.5] Why nerf a call the arms payout when it was already so meager?
+[ 1968.8] Which which mission is called the arms? What am I?
+[ 1971.3] It's internally it's called sandbox criminal kills. It's the one that just gives you money for killing people with crime stats, right?
+[ 1977.1] Right, right
+[ 1979.9] Players seem to always just want money. Um, so I know right we are reactive
+[ 1985.5] um, we try to be reactive mission. So we
+[ 1988.8] We look at them and we see if they're earning too much and they're you know, earning way too much than we'd like we
+[ 1994.1] You know, take it back a bit. Um
+[ 1996.6] But now we have the economy team. They're actually helping with this. So for the they've actually rebalanced this again
+[ 2002.3] So hopefully for the next patch, you'll see a change in the call to arms
+[ 2006.5] Payment because before call to arms was literally balanced by the mission team. Um, and
+[ 2011.9] balancing
+[ 2012.8] UEC for our economy, obviously the reason we have a dedicated team is because it's so big
+[ 2018.3] Like a funny example kind of funny. One of the big reasons that we had to wipe u.e.c. is because of
+[ 2023.8] uh
+[ 2024.9] My team and I'll take soul blame because I submitted it. Um, I
+[ 2029.5] Accidentally managed to make it so that people are doing four billion u.e.c.
+[ 2034.1] Just from salvage missions
+[ 2036.3] And the economy team when they found out I wasn't very happy with me, but that's because
+[ 2040.5] Numbers are absolutely insanity to try and balance. So
+[ 2044.6] Uh, uh, fiercely if it's several people in chat are like, did you just ask what is called the arms? Uh, yeah, sometimes
+[ 2052.1] when i'm on live internet and there's a bunch of lights and
+[ 2056.7] Constantly running five different calculations on how not to say the wrong thing because people will take it to reddit
+[ 2062.9] sometimes I
+[ 2064.9] Say the wrong thing and I forget what a thing is called
+[ 2068.2] It happens
+[ 2070.7] Thanks for worrying about me though
+[ 2074.7] uh
+[ 2077.1] All right, yogi
+[ 2079.1] You knew this was coming how's master modes going and what happens next will there be changes?
+[ 2085.5] Oh changes. Yes, of course
+[ 2088.4] I mean the um, how is it doing right now? It's it's better than what we had in live on three two three two two before
+[ 2095.6] um in terms of like
+[ 2099.0] How successful the change was so far? I think it's pretty positive. Um
+[ 2104.7] We I mean, I can't I can't exactly
+[ 2107.3] um say exact numbers, but the
+[ 2109.8] Relationships of kill death ratios on all ships for examples
+[ 2112.9] They have flattened flattened out a lot a lot a lot of the times in the past
+[ 2115.8] We always had one or two ships which basically were responsible for most of the kills in the game and that's not the case anymore
+[ 2120.7] um, we also have more players uh with uh, let's say more diverse
+[ 2126.2] uh levels of um
+[ 2128.7] Flying and combat skills enjoying the game more so I would count that as a win, but there is a
+[ 2134.0] Huge amount of stuff that is on our list to to do
+[ 2137.1] um, there's like typically examples like esp needs to be needs to be
+[ 2141.8] Needs to be improved. Um, the one these one v one
+[ 2145.1] dog fighting needs to be improved. Um, there's also a couple of things you want to try out with the flight model like
+[ 2150.3] using an x-shaped velocity space to
+[ 2153.3] uh combat the backstrafing problem that whether that works or not we'll we'll see there's um
+[ 2159.1] In general, we want to improve the combat distance a bit
+[ 2161.4] There will be more stuff happening with the four-point or tuning patch concerning
+[ 2165.7] Weapon speeds that also might help with the distances. Um, and there's a couple of bugs like the the camera shaking sometimes is inconsistent the
+[ 2172.4] G for zoom effects are sometimes inconsistent
+[ 2175.2] um, and of course, they're like a couple of ships that feel out of whack
+[ 2179.3] One of the hornets can at the moment pull 35 g's upwards. That is of course not intended
+[ 2184.3] um, so yeah, there's there's lots of stuff
+[ 2187.9] But as I said, like it's like overall I'm I'm pretty happy with the current progress. Uh, is it the final state? Of course not. Um,
+[ 2194.9] but there will be more stuff, uh happening, especially with the uh
+[ 2199.1] With the resource network that will come towards because of course these new feature sets also require some changes in the in the
+[ 2204.9] In the flight model or the way we we target certain parts of the ships
+[ 2209.8] How about you rich
+[ 2211.8] Yeah, I said, you know, I can connect a you know, kind of yogi's comments that
+[ 2215.6] You know, we're personally really happy with how it's gone. Um, it's definitely
+[ 2220.2] There's definitely going to be more changes
+[ 2222.3] a big challenge for master modes for us in I mean in terms of release was
+[ 2227.1] Just how much around master modes changed. So it wasn't just adding master modes to the game. This was
+[ 2232.8] Fundamentally, you know
+[ 2234.7] making some big changes the aiming system and the
+[ 2237.5] You know kind of flight model itself as well. So we had a lot of changes going in that went just to master modes. This was quite hard to manage
+[ 2244.8] Um
+[ 2246.1] But that's part of fun. That's part of fun and games working on this is
+[ 2249.5] You know, we're always trying to improve things always trying to change things for the better. Um, and you know, we're going to carry on
+[ 2254.7] listening to the feedback from the players
+[ 2257.1] You know and also looking at the data as well, you know, because that's
+[ 2260.1] That's that's a big part for us is we need to back up what you know, we basically need to be accountable for what we're doing
+[ 2266.1] So, you know any changes we make they have we've got to prove them that they're actually having the impact in the game that you know that we intended
+[ 2274.0] So that's going to be a big part of moving forward with general balance, but yeah, there's going to be lots more
+[ 2279.3] You know, there's going to be lots more changes. We're going to fix up some of the ships
+[ 2283.0] Because we definitely missed
+[ 2284.6] Some of the ships, you know for various reasons, you know, we changed a lot of ships
+[ 2288.7] And there's some ships that inherit certain records for the ships. Sometimes that can catch us out a little bit
+[ 2293.4] um, but you know, we're basically working on identifying those ships, which we
+[ 2297.8] Are in the process of doing and we'll fix those up
+[ 2300.8] um
+[ 2301.8] And then we'll move towards for
+[ 2303.8] You know for open as well where we basically expect, you know another round of big changes to the balance as well
+[ 2310.3] um, so yeah, so like any other feature, I mean
+[ 2315.1] Obviously since the since the pu first opened up in 2.0 back in november december 2015
+[ 2322.7] We're now in 2024
+[ 2325.2] Obviously every there's there's not a single thing that's gone in that hasn't changed that hasn't evolved that hasn't continued to iterate
+[ 2331.8] Since its first release master modes is no different
+[ 2334.6] It will continue to evolve it continue to iterate it'll continue to
+[ 2338.2] They'll continue to look at your feedback and process your feedback and apply where they think it's necessary and relevant and proper
+[ 2344.4] um, and of course fixing all the bugs and stuff like that speaking of bugs
+[ 2349.6] Chat has been asking about the dupe bug
+[ 2352.9] Uh, uh, yes, the dupe bug is super duper annoying
+[ 2357.1] Um, all I can tell you right now because I'm sitting here live doing a show and I'm not plugged into everything else at the moment
+[ 2363.7] Is that we have a fix internally?
+[ 2366.0] It's working on internal builds, uh, and that that fix will go out in a point patch
+[ 2371.2] Uh, I don't know if it'll be point three or it'll be a point two b or whatever like the they're still working that out
+[ 2376.9] How that's going to be distributed, uh, but we have a fix
+[ 2380.0] It's working internally and it will go out, uh, as soon as
+[ 2384.2] Everything aligns to allow it to work out as far as anything else around that
+[ 2388.7] Uh, another there's a bunch of subsequent questions. I don't have the answers for those ones. So
+[ 2393.0] Hang tight
+[ 2394.1] It's coming
+[ 2396.2] um
+[ 2399.2] Look at these questions here
+[ 2401.4] racing
+[ 2406.4] Does racing have any future
+[ 2409.0] This was the question
+[ 2413.1] Uh, I would say yes
+[ 2415.9] Of course
+[ 2417.1] Yeah, of course, of course it has a future. Well, sure. There's like, I mean
+[ 2422.0] We don't sound more confident guys. Come on. Yeah
+[ 2424.8] He's got a future racing racing. Wow
+[ 2427.9] racing has a few
+[ 2430.9] But but really it's about I mean like the master mode tuning patch
+[ 2435.7] Of course affected the current racing tracks that there are right like the speeds got a lot slower and so on and so some of the
+[ 2441.1] Tracks we have right now that might not work as they do now
+[ 2444.3] But the level design team for example, they also asked, hey, should we adapt the
+[ 2448.0] Racing tracks now and we're like, let's let's we're not completely done with our master mode changes on both the flight model development
+[ 2454.6] So maybe hold off for like doing extensive changes for a while
+[ 2458.7] But racing like I mean, we're celebrating ship. So of course we invested into racing
+[ 2463.1] um
+[ 2464.4] actually one of the um
+[ 2466.6] Specifically for the racing from the racing community. We added something to the flight model back then
+[ 2471.1] That was addressing the lack of certain acceleration when you're not using digital input devices and so on right?
+[ 2476.7] So um, yes racing racing is important and well, we're not oh, Jesus. What the hell
+[ 2482.4] So racing is really important to us
+[ 2484.6] And actually today I got the question from from from knabel. It was one of the uh, german
+[ 2489.8] Oh god podcast as youtube streamers actually don't know he asked if we could add smoke pods to races to racing ships
+[ 2496.1] I have not discussed it with anyone, but I think the idea is really really great
+[ 2500.0] Um, just putting this out there
+[ 2503.4] Rich say more about racing
+[ 2506.3] Oh definitely got a future, you know, because I've well I come from a racing background
+[ 2510.2] You know, I've done a lot of sim racing and I'm a big fan of racing real life. So
+[ 2515.1] You know, and that's the key thing on master mode is it's allowing us
+[ 2519.3] It's going to allow us in the future to kind of give more freedom to allow the racing variants to excel at racing
+[ 2524.9] And that's something we're really keen for because one of the issues we've had in the past is
+[ 2529.9] Is it's balancing the combat experience with the flight experience and the racing experience
+[ 2535.5] Um, if you have a really good racing ship that can use all its guns at the same time everything it can suddenly
+[ 2542.4] Be the dominant force in combat
+[ 2544.4] Which is probably not
+[ 2546.0] intentional
+[ 2547.5] So we're looking at ways where we can balance that so we can have racing ships
+[ 2550.6] Like the best handling ships or the fastest in the straight line
+[ 2553.9] and then basically, you know, as you said, it's about
+[ 2557.3] The um, it's about the tracks as well, you know, because the tracks are where you're racing
+[ 2562.0] So it's important. It's it's important that they're designed around the current flight model
+[ 2566.7] You know, and as we've made a lot of changes, we need to now
+[ 2569.4] Take a step back and look at what tracks are going to make the most out of the handling that we now have in the game
+[ 2575.1] That's it. Um
+[ 2577.1] Starbucks Ian Chet says
+[ 2579.3] Jared is this live?
+[ 2580.9] Unfortunately
+[ 2583.9] now
+[ 2585.8] I think it's always
+[ 2587.4] Good to remind people racing is super important. There's a lot of folks here. I know I know rich
+[ 2592.8] You you had you had a question whether you could even make this show because you were you were gonna head off to a race this weekend
+[ 2598.0] And stuff you didn't know if you could be here and stuff. I mean so many people on the vehicle team
+[ 2601.9] Uh, and just development in general are so big into racing and stuff. It's it's yes
+[ 2606.2] I think it's very close to to a lot of our hearts. Um
+[ 2610.0] Just to sum back up, you know, you know, there's you got to figure out the master mode stuff before we spend a
+[ 2615.1] Whole lot of time doing it, but I don't think I don't I would not bet on on on on
+[ 2622.0] I don't know what I was I trying to say
+[ 2623.6] I would just bet that there's enough people here who like racing and enjoy racing and love racing that
+[ 2630.0] It's time in the when the development son when the development I have saw on
+[ 2634.7] You know, we'll return to it that it'll get a lot of love and attention. I still personally
+[ 2639.8] Just speaking for myself
+[ 2641.4] And yo, you might know where I'm going with this. I still hope for a
+[ 2644.7] Racing master mode personally
+[ 2647.8] Well, I think the easiest I wouldn't go for racing master mode because
+[ 2652.1] Racing if you want to go quickly from a to b, this is what navigation mode is for right?
+[ 2655.6] But we should could should absolutely do something like a racing operator mode where the head up display clears with racing
+[ 2662.3] Specific information. We actually have a stopwatch
+[ 2665.1] On the on the on the hut. I'm not sure players know about this
+[ 2668.3] But this is for example something that we should then just have on by default or having a bigger
+[ 2673.2] I don't know like a bigger tvi and giving you expected deceleration times
+[ 2679.4] Direct interview and and and stuff like that that stuff that's important for the racing experience itself
+[ 2684.5] Well, that's why I'm not a designer or programmer
+[ 2687.8] Is um what I like
+[ 2689.8] On on the mission side for racing also real quick. I'd like to point out rich is being incredibly morrisque rich
+[ 2695.8] aren't you like a champion iracer?
+[ 2699.0] Like it was a long long time ago. I can't remember anymore. I there you go. Yeah champion iracer. So there you go. Um for missions
+[ 2708.7] um
+[ 2710.0] We're in the pu it can be a bit difficult to do racing missions compared to ac because we have the the reach born flow set out for us
+[ 2717.1] So it can take you by a long time to get back to the racetrack where you you know want to do your races
+[ 2722.3] So we're investigating ways we can speed that up. I don't want to speak to any
+[ 2726.8] specifics because they might change
+[ 2729.1] One thing we are doing is we're going to be adding open track versions of the current racing missions that we have
+[ 2735.0] um
+[ 2735.8] Because currently how you unlock the next racetrack is via completing the first one
+[ 2739.8] So what we're going to do is just give out a you don't get a reward. You don't pay a buy in
+[ 2743.7] Here's access to the track will time you like we do in the mission as it is but um
+[ 2748.9] You know, it's just so you can keep practicing
+[ 2751.4] And then going forward, you know, we'll have more advanced races
+[ 2754.4] But races aren't just in ships, you know, they're they're in ground vehicles. We have the damar rally
+[ 2760.2] um
+[ 2761.0] That the community do and that's that's a lot of fun
+[ 2763.0] but they can also extend to on foot races and recently we prototyped a
+[ 2768.2] A race uh time trial race in the escape route of the prison where we time players who could get out the fastest and then award them
+[ 2776.5] Uh like merits for whoever got out the fastest. Um, that's awesome
+[ 2780.9] Um, but um, we we didn't we didn't feel like it fully fits
+[ 2786.7] So we've just kind of like we can do it and you know, maybe in the future you'll see it
+[ 2791.6] somewhere in the game, but um
+[ 2794.1] Yeah, it was a lot of fun. Um, because we we tried to be sort of suggestive with the direction
+[ 2798.9] So if you didn't know the escape route, um, you you could really mess your time up
+[ 2804.3] I do
+[ 2805.4] Well, you mentioned the damar rally. I think that's that's that's as good a transition as any to to one of rich's favorite topics ground vehicles
+[ 2815.1] You're ready rich
+[ 2816.7] always have the ground vehicles
+[ 2819.4] Why do the tanks suck?
+[ 2821.9] well, unfortunately
+[ 2824.7] um
+[ 2826.2] This is one of the problems we're changing so much is
+[ 2830.2] We got caught out by a change
+[ 2832.4] Um on the back end of the game and this had a negative impact on the tank handling
+[ 2836.9] And we just couldn't quite get it fixed in time for the release
+[ 2840.1] Um, it was quite a complicated problem
+[ 2843.0] Um, quite it was quite an interesting problem as well. Um, I'm not gonna go too much into the details
+[ 2848.4] Um, but I can confirm it is now fixed and the tank is now
+[ 2853.1] tank
+[ 2854.1] Well both tanks are driving like tanks again
+[ 2856.7] Um, which is really good. The tanks the tanks are fixed internally not public. Yes. Yeah. Yeah. Yes. Yeah
+[ 2862.4] So, I mean, you know, we've discovered the error. We fixed it
+[ 2865.9] It's gone into our builds. Um
+[ 2868.3] And that'll make its way out there
+[ 2870.3] All right, uh, so what's with all the other wheeled vehicles that are sliding and sometimes bouncing around all the time my poor game
+[ 2877.4] By guys, we're trying to film the the earth's emitting back for isc and they're like is it supposed to have like hydraulic bounce?
+[ 2885.2] Yeah, unfortunately that was another change that
+[ 2888.2] But that wasn't really caught in time to fix but it has you know, it's also been fixed so
+[ 2894.8] Um, so basically the vehicle you saw as a as a player was actually the server vehicle and not the actual player vehicle of the play physics
+[ 2904.2] Um, so it caused a lot of glitching
+[ 2907.1] um
+[ 2908.7] But we've corrected that
+[ 2910.6] And the ground vehicles are now back to being fairly stable ground vehicles
+[ 2915.3] Um, and it's fair to say, you know, we're still looking at in you know, in like it like improving the general ground vehicle experience to
+[ 2922.5] Make it as good as ships because it should be, you know
+[ 2925.1] The all vehicles in the game and all vehicles should be up to the same standard
+[ 2928.1] So we still you know, we're definitely looking at improving the ground vehicle experience still
+[ 2932.7] But we're pretty happy with the you know, kind of major physics overhaul that went through with it
+[ 2936.7] We just need to make it a little bit more game friendly. Um, you know for our environments, you know, which are massive planets with loads of different terrains
+[ 2944.2] um
+[ 2946.4] I get I get you
+[ 2948.1] Loading and chat says Jared. I beg you. Do you have any plans for the cluttered ui problem? These aren't the ui guys loading
+[ 2954.8] but yes, uh, we were was witnessing a big chat with
+[ 2959.1] assignment and bone and and and cr
+[ 2962.1] Just yesterday and then our big creative and technical directors chat and stuff. It's we're aware
+[ 2967.4] It's it's been a forever thing. So I have no information to give you that was just them talking about potential solutions yesterday
+[ 2973.3] So I don't know where they're going with it. Uh, but yes, but these aren't the guys and I just
+[ 2978.0] Uh
+[ 2979.8] What happened to grab lives recently?
+[ 2981.9] Uh, this question says that that they've fallen into a bad state that they had previously
+[ 2986.5] Before their last rework where sometimes they just decide to stop hovering fall down and explode
+[ 2994.3] This one, um, we're not quite sure. It's actually we so we got reports about this
+[ 2999.3] Like mid-week and we started to do our own investigations
+[ 3002.6] Um across different teams to figure out
+[ 3005.0] What's going on because we've changed some of the stuff in the handling
+[ 3007.8] But the back end technology hasn't changed
+[ 3010.6] But again with the game like stasis and the fundamental game engine is updating all the time and there can be
+[ 3018.2] Kind of negative consequences on completely different features because it might use a piece of
+[ 3022.6] Some of the game part which works a certain way which now works different way and that could have an impact. So
+[ 3029.1] It's about figuring out where it's gone wrong
+[ 3031.1] Um, because we're different, you know, we're definitely not happy with the overall kind of grab life experience and we're definitely looking at improving it
+[ 3039.0] Um, you know, because that's something to keep out of racing as well because the grab life racing can actually be really cool
+[ 3042.8] You know when it works really well, it's it's probably one of the cooler race experiences in the game
+[ 3048.1] So we're definitely looking at
+[ 3049.8] You know, what's going wrong in you know, 323 for grab life
+[ 3052.9] Yeah, uh chat's talking about how basically sometimes it flips over and you get your head on the ground and falls down and stuff
+[ 3059.5] It's I mean like I said, we're looking into it. It could be everything from a networking issue to
+[ 3065.0] anything else
+[ 3067.7] Uh, I imagine I imagined when uh, when we find something more. Well, we'll communicate it
+[ 3074.9] um
+[ 3076.3] That said
+[ 3078.7] I like this next question. Um
+[ 3081.1] star citizen is
+[ 3083.3] A lot of things it's pvp. It's pve. It's it's it's
+[ 3088.6] Fps it's spaceships and stuff like that. Um, it's sandbox. It's
+[ 3094.1] Now it's you know chain missions and stuff coming stuff like this. Um
+[ 3098.2] Ground vehicles can sometimes seem like an afterthought
+[ 3101.7] Or or just like an also ran. Uh, so this question simply says, what are you what are you doing to encourage ground vehicle usage?
+[ 3109.0] Uh, are there any new specific any specific new mission types for this maybe?
+[ 3113.4] Um
+[ 3115.8] So there's been lots of discussions about
+[ 3118.6] Ground vehicles in our game and how we use them on the mission side the the main
+[ 3123.4] Thing we face is that when we balance
+[ 3126.5] Like when we balance the mission and balance the economy time is a huge factor in it
+[ 3130.6] Um, and if you can do it in a ground vehicle, you can do it at a ship a hell of a lot faster
+[ 3135.3] So it becomes this thing where we try to make an experience around ground vehicles
+[ 3138.6] But then people just do it quicker in a ship. So then we have to lower the price to not break the economy and then people
+[ 3145.3] Just stop doing the mission. Um
+[ 3148.9] We we want to add a benefit we want to add a reason for people to actually use ground vehicles. Um
+[ 3153.8] Recently like in the distribution centers, there's those massive like gas spheres. Um, and
+[ 3159.2] The ground tourists will shoot at spaceships, but they won't shoot at ground vehicles. So we've seen some players using the
+[ 3164.9] Tonks to destroy them. Uh, so that they don't have as much resistance
+[ 3169.8] um
+[ 3170.9] But we also like we we need some like
+[ 3173.8] Tools or features that help us encourage it. Um, you know a recent a recent
+[ 3179.9] Thing that we was investigating for ground vehicles was to do with the the copians that just got added to the game was
+[ 3185.7] We was having a debate about how we
+[ 3188.4] Discover them how the player discovers them and one of the sort of discussions that we came upon was that maybe the ground vehicle radar
+[ 3195.2] Would be the only thing that could find these copions so that if you wanted to do the mission
+[ 3199.7] You'd have to land to land take your ground vehicle out and use that to try and locate the copions
+[ 3203.8] But we wasn't really happy with that. So we've kind of uh thrown it out. Uh
+[ 3209.3] But yeah, we're always looking for new ways. Um
+[ 3212.6] And how we can encourage it and me and Thorsten have been talking about ways that we could do it
+[ 3216.4] So I'll hand over to Thorsten because I'm sure he's actually wanted to to to say like there's there's some
+[ 3222.1] Things that we already started discussing and that is I think one of the most important parts is that
+[ 3227.7] Environment matter right so depending on what environment the mission takes place and it might be worth bringing your
+[ 3235.3] Your ship or your ground vehicle or even going by foot. So for example, uh, we we already have the case where you have to enter a cave
+[ 3243.7] And you cannot fly in we have some where you can fly in we have some
+[ 3247.3] Yeah, uh ground vehicle also fits in but in general if you have a cave mission you the the
+[ 3254.5] The way to go into that cave is by by foot
+[ 3258.4] But uh, we want to expand on that in the future and we will only we don't only want to expand on that by
+[ 3264.7] the how the environment looks so for example, uh
+[ 3268.3] Last forest you cannot land with your ship, but you can drive into it with with your ground vehicle
+[ 3273.8] but we also want to utilize
+[ 3276.0] The um weather conditions for example, right? So a strong wind for example will
+[ 3281.7] Block your ship from actually landing safely. So it's better to
+[ 3285.9] Be outside of that strong wind area and drop the ground vehicle and then avoid
+[ 3291.1] the the strong wind by by driving in with your ground vehicle
+[ 3294.9] Or with pyro you might have already seen it in the uh city kuzm con
+[ 3300.0] demos with the solar flare when when your ship gets hit by a solar flare. It's basically
+[ 3305.0] It basically drops down because it's turned off. So this is also like the dropping
+[ 3310.9] From the sky is something that you would avoid when you would have come with with the ground vehicle in that situation
+[ 3316.6] But there are also other things that are related to the weather like limited side
+[ 3320.2] It's better or it's safer to go with the ground vehicle versus a spaceship and stuff like that. So there are plenty of
+[ 3328.3] you know
+[ 3329.9] scenarios that we are currently investigating what we can do to actually make a ground vehicles more
+[ 3337.8] like usable or
+[ 3340.0] Like even required for for for missions. Cool
+[ 3344.5] all right, we've got
+[ 3346.8] Five minutes left in the show we might go a few minutes over because I want to talk about our last topic here engineering
+[ 3352.4] Um, obviously engineering, uh, you know, everybody's you know, everybody's rightfully excited for 4.0 pyro and ls stuff
+[ 3359.8] And you and you should be for me
+[ 3361.9] We've been talking about engineering so long. You know my feelings on engineering. That's where the birth of multi-crew stuff comes from
+[ 3367.3] So that's my big thing
+[ 3369.8] Before we get to these questions, let's revisit the scope. What should people expect from engineering?
+[ 3375.3] in 4.0
+[ 3378.4] So as of now
+[ 3380.1] 4 4.0
+[ 3382.0] Let's start with life support. So we will have life support that
+[ 3385.9] has the fire system in it. So
+[ 3389.2] Life support is also a valid counter for fire that you will see on your ships
+[ 3394.8] We will have room propagation. So
+[ 3397.6] You opening a door to the outside will basically evacuate all the atmosphere of your ship to the outside
+[ 3404.8] We have atmosphere maintenance where you as the player are responsible for
+[ 3411.0] Making sure that your life support generator runs
+[ 3415.3] Well enough so that uh, there is enough breathable
+[ 3419.4] atmosphere inside the rooms
+[ 3421.8] And uh, yeah, it's already set. So the life support generator is a new item that we will introduce and uh,
+[ 3427.6] The life support generator then will we do create a new resource that is the so
+[ 3433.1] Right now it's still called life support resource
+[ 3435.9] Like we are really recreative with names. Um, there's
+[ 3440.2] a filter uh, that is also a new item that is uh added
+[ 3445.6] as as the the
+[ 3447.6] consumable for the life support generator
+[ 3450.4] And yeah, that's that's just the life support segment of the resource network release
+[ 3457.0] Um talking about engineering
+[ 3459.6] Uh, here we have the power management that will be introduced. You were not able to see it yet in the arena commander mode
+[ 3466.6] Because we were not ready yet. So especially ui
+[ 3470.4] Um is still a lot of work on us that we need because we need to get it right. It needs to be
+[ 3476.1] accessible it cannot be like this high scientific
+[ 3480.0] method of you
+[ 3482.0] Basically measuring the jewels that the power plant will be we have to make it accessible for the general play audience
+[ 3489.5] But still interesting for those that are really interested in in those
+[ 3494.0] engineering mechanics, um, then
+[ 3497.2] We will introduce the relays
+[ 3499.3] As the connection point between the items with the fuses
+[ 3502.9] So these are already things that you even see in life
+[ 3506.8] In some of the ships that are already prepared. So for example, the retaliator already has the
+[ 3512.0] relay boxes with the fuses inside and in the arena commander experimental mode, you can actually
+[ 3518.6] witness their functionality
+[ 3521.8] A huge thing for for it is uh, so that's more on our side. So on the design side is the rebalance of items again
+[ 3530.4] so but um, we we as already mentioned, um, we have now
+[ 3535.6] With all the pre-work that has been done for for 323. We have a very very clear goal of what we want to achieve here
+[ 3542.4] And that is we want to really facilitate like the items inside the resource network
+[ 3547.6] So items should be more meaningful in ships. So we have a meaningful difference between item classes
+[ 3553.1] For example, where there's a huge difference
+[ 3555.6] On the look and feel in in terms of gameplay for the civilian and military components as well as the grades
+[ 3562.4] So this is this is our internal high goal for the release that we we have a meaningful difference there
+[ 3569.3] So that player's choice actually matters here
+[ 3573.3] And also what we want to achieve here is that it's clearer the differences
+[ 3577.2] So players understand what's the difference between the civilian and an industrial item more easily and it's it's very clear to players
+[ 3584.2] What to pick for for the for the the journey they want to take
+[ 3589.2] Um, something that uh, you know, sadly I had a discussion yesterday. We will not make it for 4.0
+[ 3595.3] Uh, uh, so as of now is the batteries. So we might push the batteries to a later release
+[ 3603.2] Doesn't mean that they won't come it just means they come at a later point because we want to like this is like
+[ 3609.2] It's such a crucial feature and we need to get it right and every time that we can spend on polish
+[ 3615.4] Is better invested than actually forcing
+[ 3618.4] Additional features in so we rather would like to spend time in polishing the feature
+[ 3623.2] And then just making sure that everything is in I think no one would like that that everything is in there and it's
+[ 3629.6] Not working, uh, or it's
+[ 3632.2] Not working
+[ 3633.6] Well enough. That's that's the best
+[ 3636.9] Safe
+[ 3638.1] Phrasing I could come up
+[ 3639.6] And I hear you and I appreciate you sharing this sharing that with us. Obviously, uh, when is he comes back
+[ 3645.1] In about a month. Um, one of the stories we'll be telling on our journey to 4.0
+[ 3649.2] We'll be another revisiting of engineering and life support and stuff like that and you'll get to see how it's all
+[ 3654.5] You know working laid out there. So
+[ 3657.6] Should I continue because I'm not done. Okay
+[ 3661.1] So there's more there's more that uh, and that is a simple repair
+[ 3665.0] So we have the repair of ship items that you also can already witness in the arena commander
+[ 3670.8] experimental mode exchange of fuses
+[ 3673.2] exchange of broken items
+[ 3675.3] and uh
+[ 3676.5] We mentioned that at the beginning of this show that there's a now a distortion counter and that basically leads to the last bit
+[ 3684.1] That we we will introduce with uh,
+[ 3686.7] With the resource network engineering gameplay, which is malfunctions. So here we will start with
+[ 3693.2] Three malfunctions. So the initial release will come
+[ 3696.8] with those three which is
+[ 3698.9] uh, the fire
+[ 3700.4] Uh damage to the item and distortion to the item because we now have dedicated counters to them
+[ 3706.3] So that we can actually introduce meaningful gameplay and you're not
+[ 3710.4] Like just suffering from whatever malfunction the item will suffer from
+[ 3715.8] Um, but we made sure that the malfunction system is so vast that if we notice that those three are not enough yet
+[ 3722.2] That in the later patch or in later releases we can add more
+[ 3726.0] bespoke malfunctions so we
+[ 3728.7] can
+[ 3729.5] Slowly widen widen the gameplay because I can tell you it's already quite a lot that you have to
+[ 3737.0] Manage and learn so it will be fun
+[ 3740.4] But it will be also a huge learning curve that uh, some of us have to go through
+[ 3748.2] Oh, oh cool
+[ 3750.3] That sounds great
+[ 3760.4] I
+[ 3762.3] I would like it known that
+[ 3767.3] Through all these episodes this year and the previous years. Um, I I saw some folks
+[ 3773.8] Giving me credit for asking hard questions or whatever these people are willing to show up
+[ 3779.5] Every week and they're willing to take the hard questions and my dumb
+[ 3784.4] Bullshit like I just did and it's my day off. Yeah. Yeah. Yeah, so it's just it's just
+[ 3792.0] Whatever praise you guys ever ever ever give to me
+[ 3795.9] I pass it on through to the developers who appear on isc and scl
+[ 3799.8] Uh, especially this person wasn't a great example of that or it's like no, no, I got more. I want to share and it's like
+[ 3807.4] Man, I love that shit
+[ 3809.4] I love that
+[ 3810.5] Um, and yeah, this is this is my med pen. I tried to stow it, but it keeps reappearing in my hand
+[ 3816.0] It's an old bug
+[ 3818.1] Boston
+[ 3821.2] Uh, that's it everybody. Uh, thanks for watching our Invictus all vehicles gameplay
+[ 3827.3] SEL, uh, if you haven't checked it out
+[ 3830.3] Look at yesterday's isc where we revealed the the brand new iron chad from drake interplanetary
+[ 3837.5] And we got a look inside the current gray box progress of the rsi polaris
+[ 3841.7] They're both really really really cool looking and i'm really excited to get both of them in the game as soon as possible
+[ 3848.3] We're on hiatus. Uh, so we're gonna we're gonna take a few weeks off from from isc a few weeks off of
+[ 3855.7] Publishing will will be filming
+[ 3858.3] And recording and creating all the great stories for 4.0. We don't get any time off
+[ 3863.1] And I an scl will take next week off because I have a doctor's appointment on the same day
+[ 3868.0] Health's important, but we'll be back with the scl in two weeks. Um until then, uh, thank you again to torsten to elliot to
+[ 3877.2] rich to yogi and of course to everybody who always appears on these shows
+[ 3882.2] Like I said, can't do it without you. I think we're gonna do a raid thing
+[ 3885.6] Probably do a raid thing because you know that I do the raid thing. So can you folks if you're watching you start the raid thing?
+[ 3891.4] um, thanks for watching
+[ 3895.9] I really like my job
+[ 3899.0] And you guys make it possible. So thank you for that. Um, and this is cool met then also I got I got a blue one too
+[ 3906.7] oxygen
+[ 3907.9] And yes a chat was right
+[ 3909.1] Why am I holding it because I look at twitch chat and I needed to recover from the damage
+[ 3915.3] Till next time everybody. Bye

@@ -1,0 +1,4 @@
+As the others say, you are likely running out of VRAM.
+The next bit is a bit techy, so feel free to ignore (but I'm sure some will find it interesting):
+To verify if you are hitting the memory issue you can open the console and type r_displayInfo 4, and look for the line with "VRAM(MB): A / B", where A is what is being used by Star Citizen and B is the budget (though this doesn't account for other applications that may also be using VRAM).
+Also if you see the line "VRAM Demoted: C, OSBudget: D MB" then you are likely suffering the major performance issue I mention, where C is the amount of VRAM that has been transferred to RAM (CPU memory) but is really needed on the GPU, and D is the VRAM budget the the OS would like the game to run within (which factors in other applications).

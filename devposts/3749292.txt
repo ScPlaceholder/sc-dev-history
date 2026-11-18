@@ -1,0 +1,27 @@
+## Star Citizen Patch 3.12.0r
+Alpha Patch 3.12.0r has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.12.0-PTU.6787151.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Gameplay
+- Character Reset bounty fix
+With testing the bounty fix, make sure you do both certification missions and regular local missions and then test doing a Character Reset on the PTU website (not the account recopy). After the reset you should have to redo the certification and the local intro before unlocking the tier of regular missions you were able to do previously.
+Known Issues
+- Selling commodities from personal Inventory causes a service error
+Workaround: Make a commodity cargo box in a ship cargo grid and sell through the ship inventory.
+- Area18 admin office trading terminals will give an error and fail when selling commodities
+- Player eyes are extra reflective in video
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool
+## Bug Fixes
+- Bounty Assessment missions should now show correctly again after a player does a character reset
+- After exiting Quantum Travel, the QT HUD on ships should no longer get stuck displaying while the QT drive is cooling down.
+## Technical
+- Fixed 3 Client crashes
+- Fixed 2 Server crashes

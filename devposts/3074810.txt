@@ -1,0 +1,44 @@
+## Star Citizen Patch 3.9.1e
+Alpha Patch 3.9.1e has been released to PTU and is now available to test!   Patch should now show: VERSION 3.9.1-PTU.5250536.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+Pledge copy has been enabled.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Bug Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-9-1e
+Testing Focus
+- UEE Navy Fleet Defenses (The Fleet is prepared to fight back)
+- Bug Regression
+Known Issues
+- The Fleet Week display Anvil Carrack has a non-working ICU bed that players will get stuck in if they set their ICU to it.  Work-around: Do not set your ICU to the display ship.
+- Extra, duplicate, and static trains can appear at Lorville, New Babbage, and Area 18 and may prevent their usage.
+- The multiTool from the prison commissary does not come equipped with an OreBit mining attachment.
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed.
+- Ships can be displayed in an "unknown" state, unclaimable and irretrievable.
+- The no-fly zone around security docks at orbital stations may destroy the player's ship if they enter.
+- The PC2 gimbal mounts on Freelancers and Starfarers does not converge correctly.
+- The personal inner-thought wheel does not scale correctly for wide screen usage.
+- All map markers are off set from planet surfaces.
+- There is a very visible, incorrect reflection on the Super Hornet's canopy.
+- The SCU amount displayed for the 890's cargo capacity is incorrect.
+## Feature Updates
+Gameplay
+- Increased Fleet Week mission timer from 15 to 30 minutes.
+## Bug Fixes
+- Fixed a visarea issue in the Cutlass Black variants that was allowing players to see into the cockpit while standing in the back of the ship.
+- Constellation Aquila should no longer clip into the landing pad or break off components after applying a paint.
+- Invictus Fleet should now consistently spawn at their intended destinations.
+- Fixed issue with the Cutlass Blue flight controller so it should now have its intended rotation values, overheat properly, and have proper amount of afterburner multiplier.
+- Paints attached to the Constellation Aquila should now correctly display on the ship.
+- Fleet week ships should now correctly fire at hostiles when inside greenzones.
+- Fixed an issue causing Javelin turrets to scale larger than intended.
+- Fixed an issue that allowed players to get in and steal NPC F8 and F7a ships.
+- Freelancer DUR should no longer lose maneuverability at 50% fuel.
+- Fixed incorrect QT fuel tank capacities on the Pisces, Terrapin, and 315p.
+- Fixed multiple issues with the Javelin and Idris that were causing extra damage to the fleet when attacked.
+- Increased the health of some components and items attached to the fleet week Javelin and Idris.
+Technical
+- Fixed a client crash.
+- Fixed a server crash.

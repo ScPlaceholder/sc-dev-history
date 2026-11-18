@@ -1,0 +1,79 @@
+## This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 11:03:2021
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 recruits.
+Welcome to October’s Squadron 42 development report. Enclosed you’ll find details on the latest progress made across the campaign, including updates to vital backend services, AI behaviors, and cockpit communications.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI Content
+Alongside actor status work shared with the PU, the AI Content team progressed with specific Squadron 42 tasks, including the Cryopod and Simpod usables.
+The Simpod usable is a workstation where the player or NPCs can train. Once complete, it will available for NPC gunners to practice turret skills in a safe space.
+The Cryopod usable is a cold-storage container for preserving humanoids, with vital signs displayed on external screens. The first iteration allows NPCs to check the occupant’s health on the terminal and clear frost from the pod’s window.
+The animators also polished the motion-capture data collected earlier in the year. This is the last step in delivering the usable interactions initially request for the Aciedo level.
+## AI Features
+The AI Feature team’s main focus throughout October was on Vanduul combat behavior, which is heavily focused on melee, allowing the team to progress with the previously detailed combo attack system.
+New additions include parameters to combo attacks to rapidly prototype faster melee animations by adjusting a scale factor. This allows them to quickly balance the speed of animations, so the pace of close-range combat can be altered to increase or decrease the challenge to the player.
+Motion-warp targeting now updates throughout melee attacks so that characters can re-adjust their positioning to correctly hit their targets. The team also improved the way staggers can be triggered. Now, larger characters can have staggers triggering after sustained bullet fire to interrupt their melee attacks.
+The team also worked on pre-visualization for the Vanduul cinematic experience, animations for a specific navigation setup to allow NPCs to duck under obstacles, and surrendering and untrained cover usage.
+## Animation
+Last month, the Animation team worked on various AI behaviors, including purposeful and frantic interactions with consoles, navigation under broken doorways, the breaking of computer servers and vents, and searching over railings and around boxes and vents.
+They also spent time working on Vanduul combat alongside the AI Team, blocking out animations for Vanduul breaking through closed or partially closed doorways and breaking equipment. Improvements continued on zero-g gameplay and player ground-based animations.
+On the facial side, the team continued their improvement pass on the next set of characters. The development of in-game scenes continued to give narrative life to the environment, including motion-capture pickup as needed.
+## Art (Characters)
+The Character Art and Tech team spent the month polishing the navy faction of SQ42, reworking many old outfits to match the current quality standards. This included the bridge officer jackets, battle dress uniform sweaters, and navy medical staff outfits. They also polished the heads and hair of important characters like Bishop and Trejo.
+## Art (Environment)
+The Environment Art team supported the project milestone, helping bring a visual quality to the work being shown off by other teams.
+Elsewhere, the team continued work across numerous chapters, including chapters 5, 12, and 13, and pushed vertical slices to a high visual standard on chapters 7 and 19. Further progress was made on creating stellar-looking spacescapes to bring more vibrancy and wow-factor to cinematic space scenes.
+## Audio
+Audio continued to investigate SQ42’s systems and planned their future support for the campaign.
+## Cinematics
+The Cinematics team worked heavily on the opening chapter of the game, which received a much-deserved planet tech and vista overhaul. New spacescaping meant the team needed to assess whether certain shots were still valid or required additional camera scouting to make the most of the new giant storm wall nebula. The cinematic designers always anticipate future elements and frame their cameras with them in mind, but seeing the actual vistas in-camera can occasionally require framing to be reconsidered. The sun changed position by a couple of degrees due to art build-up too.
+Variants of existing ships like the Bengal were concepted, built, and delivered, while new ships were created for the Vanduul fleet. All bridge scenes featuring Admiral Bishop and his Vanduul counterpart progressed too.
+Most scenes received their ‘prop and finger contact pass’. Now, all officers are properly located in their seats, with their hands touching reactive controls and moving as required. For example, fingers grabbing a swivel display properly.
+Time also went into creating reusable stunt sequences of ships battling or getting destroyed that might be viewed by the player from a corridor window or on a ship’s bridge during battle.
+A key turret sequence was fleshed out, with cutaways created to distinguish waves and different challenges. This led to a lot of navsplines being drawn up and improved on.
+Finally for Cinematics, the recent spacescaping, fleet additions, mo-cap polish, and tweaked sun made it possible to rethink the opening shot of the game, making it better and more dynamic.
+## Engine
+Last month, the Physics team spent time on various optimizations. The process of voxelizing triangular meshes was sped up by utilizing a scanline-based acceleration structure instead of a voxel-based one when flood-filling cells. The team also helped AI Code to optimize their update routine for the audio map by batching the stimuli processing. Furthermore, the sorting of collision events was optimized, and default brush physics are now created lazily. A debug visualization for collision history was implemented too. Lastly for Physics, a tree-based quantum grid was implemented that will be used during quantum-travel boosting and regular quantum travel to detect collisions and obstacles along the path.
+For the renderer, significant effort was spent on improving the results of the pipeline profiler for Gen12 and legacy render paths. This was done to gain an accurate assessment of how long render and compute passes take to process on CPUs and GPUs without impacting actual frame rate too much (real-time profiling).
+Significant progress was also made on the Gen12 transition: Pipeline state objects are now compiled on demand to improve loading times, massive instancing is now supported, and instance buffer management was optimized. The Scaleform render stage used for menu and in-game-world UI was optimized to reduce the average stage count from 2000 states to a maximum of 60, with the pipeline state also being created on demand. Additionally, refactoring was done to the particle code, light atlas stage, and shader parser. Content integrity was tightened by adding data asserts for invalid shaders being used in materials. Support for material texture updates (texture animation) was added too.
+Improvements continued to be made to cloud and atmosphere indirect lighting based on the presence of clouds in the atmosphere. The initial part of this work was completed (LUT generation), with work picking up again once planned performance optimizations are in place. To get the latter in place, work on the reprojection and filter chain commenced to allow for temporal and spatial reuse of raymarch results. Specifically for this purpose, R&D work started on performing reprojection without motion vectors (as these can’t represent participating media properly).
+The Core Engine team also worked on entity streaming code, which now supports the sphere-based culling needed for SQ42. A large refactor was submitted to the entity component update scheduler. This includes a new API that uses update IDs instead of passes to allow multiple updates per pass. The engine’s frame profiler was updated to include various statistics from heartbeat events as well as a summary of CPU time and memory usage by the dev teams, build info, and a screenshot into the capture. The memory manager was extended to support separate allocation arenas and thread caches per dev team. In cases of invalid memory access, the exception handler can now indicate which arena an inaccessible memory address maps to. This in turn allows debugging memory crashes with more fine-grained memory check enabled, which typically means the build runs much faster and uses less memory as it otherwise would do with memory debugging enabled globally. Additionally, work continued on improving vis area (frustum) culling and functionality to capture and pass around C++ lambdas without heap allocations was added.
+## Features (Gameplay)
+Gameplay Features completed smaller support tasks alongside progressing on several highly complicated cinematic sequences. Much of this involved technical issues with how the engine has had to change to support object container streaming. As some legacy systems aren’t streaming aware, the team had to find ways to fix references to vehicles that aren’t loaded by default but spawned later on in a mission.
+With the base character customizer working in-game, the team continued to liaise with related teams to prototype the user experience. Several changes were made to remove some hard-coded limits, such as the number of areas on the face players can amend or the number of heads they can blend between. The team notes that it can be challenging to create an intuitive user interface without hampering the power and freedom of the system.
+## Gameplay Story
+Throughout October, Gameplay Story worked on a wide variety of scenes and chapters.
+Polish work was done across chapter 1, with several scenes updated with new audio, while the Graves walk-and-talk in chapter 5 progressed well. A briefing scene in chapter 8 received new mo-cap, while a complicated scene from chapter 12 was completely overhauled.
+Tactile interaction progressed too which, though difficult to implement, makes the characters feel more alive and present in the world.
+## Graphics & VFX Programming
+The Graphics team’s improvements to water volumes continued, this time focusing on how to correctly simulate volumetric lighting under the surface. Two approaches were taken: The first makes use of the general voxel fog system, though this has several limitations that make it not applicable to very large or very small water volumes. The second approach is to re-use the particle lighting model, which is less accurate but can work at more extreme scales.
+Work also started on changes to the material system to allow shaders to become more modular. This is a stepping stone towards building a new suite of shaders that provide more power and flexibility for the artists without always needing complex re-engineering by the graphics programmers.
+Gen12 work continued, with more systems being converted. The team are also looking to complete a large refactor of the texture samplers to make them compatible with Gen12/Vulkan.
+Other completed tasks include new light animation features, technical design work for using damage maps for salvage, gamma correction fixes, and general support for the fire feature.
+## Level Design
+The Space/Dogfight team continued their work on the expanded patrol spaces. Last month they incorporated more optional points of interest in the early parts of the game, with some of the player’s actions in these areas potentially having ramifications on future chapters.
+They also worked closely with the Ship AI team to create more realistic and challenging AI behaviors to allow for better close-quarters dogfighting combat.
+Having gone through the entire ground-based areas of the game down to opening-door level, the FPS team began fleshing out the spaces with AI and new mechanics.
+The Social Design team continued the significant job of implementing all in-game scenes for the various chapters for review and sign-off, which will be the case for many months to come.
+## Narrative
+Last month saw the Narrative team putting the improvements to the placeholder dialogue pipeline outlined in September’s report into action alongside the Dialogue and Design teams. This revised process allows the team to quickly place newly written dialogue into the game for playtesting.
+As the game is being refined, it’s often a single line of dialogue that needs to be adjusted rather than a whole scene. So, revised tracking documentation was worked on to better help the team monitor the status of additional dialogue requests as they come in.
+The team also improved a few tutorial scenes to better instruct the player on key gameplay elements. Scenes that are tied closely to gameplay are often continuously improved as development progresses.
+## QA
+Cinematics continued to rely on QA for regular chapter testing. Also, last month was geared towards cinematic tool testing and ironing out many of the tools’ defects when rendering scenes.
+They also continued to support the AI team’s behavior implementations, last month focusing on Vanduul AI improvements and upgrading existing AI functions.
+## Tech Animation
+October saw Tech Animation complete their long-running task of upgrading the head-creation and animation pipeline.
+“We have rewritten major parts of the DNA system used to create our in-game actors. Coupled with this, we have added support for creating and editing these head assets in Maya through a plugin that shares the same codebase and a huge amount of tooling to use it efficiently. This has allowed us to move beyond our current gene-pool limits and set our eyes on the future.”- Tech Animation
+Now, all types of face rigs are viable (including animals and aliens) along with the prospect of upgrading or customizing the facial animation rigs for whatever is required in the future. This technology is also being prospectively recruited with more complex forms of deformation.
+Tech Animation are nearly ready to present the head-authoring pipeline they created in tandem with the DNA system. This will give them the opportunity to create new face rigs for the DNA gene pools and tightly control the quality of assets.
+Additional tooling was created throughout the quarter to include alembic cache export in the animation pipeline. It was always supported but including it this way has opened up new opportunities for the Animation and Tech teams to directly include it in their animation pipelines as an export preference. The team are planning to leverage this technology for some impressive showpieces during Squadron 42.
+Animation also continued the development of the tools pipeline and refined some older code and tools to keep them working as intended.
+## UI
+The UI team created decals for a specific level and new Building Blocks styles for use on interactive screens in some of the key environments throughout the game.
+## VFX
+VFX continued the work detailed last month, with the ‘strike team’ working closely with Cinematics in particular, helping them populate an epic battle scene with visual effects.
+## WE’LL SEE YOU NEXT MONTH…

@@ -1,0 +1,8 @@
+The capacitor assignment is not irrelevant though as both weapons and shields are still online and regenerate (albeit slower).
+The shields specifically charge into a buffer that is then emptied into the shield faces when you go back to SCM. The process is supposed to only take a few seconds but wasn't properly tuned yet (coming soon though).
+Another thing we'll do beyond 3.23.0 is having the spool timer only from SCM to NAV mode as the spool time is really just the spool up time for the Quantum Drive. You also will be able to always swap modes ... so that will allow you to "cancel" the NAV spooling but you will need to restart if you want to swap into NAV again. Since that changes the code flow of mode swaps it is relatively dangerous to put it in now, so it will likely only come after 3.23 has shipped.
+Specifically the shields will then react as followed:
+- during the NAV spooling they start collapsing into the buffer
+- if you cancel the spool they immediately the shields start dumping the buffer back to the shield faces.
+So if the dumping time is 4 seconds and you cancel the the NAV spooling half way through, 2 seconds later your shields will be at the same strength you had before you started spooling.
+That was a very long winded reply, does it make sense?

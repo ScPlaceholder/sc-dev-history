@@ -1,0 +1,48 @@
+## Star Citizen Alpha Patch 4.6
+Alpha Patch 4.6 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.6.0-PTU.11042450.
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Alliance Aid Event
+- Industrial Mining and Salvage Missions
+- LAMP: Light Amplification System
+Known Issues
+- PU - Industrial Resource Gathering - Salvage - Ship Weapons / Vehicle Components / Cargo - S6 & S5 Weapons will not fit on Pyro Outpost Freight Elevators
+- Multi-System - PU - ASOP Terminal / Locations - Delivering a vehicle is sometimes mismatched
+- PU - Nyx - Levski - Locations / Art - Multiple floor panels are missing from Teaches show room
+- PU - Clean Air - Missions / Courier - There are no enemy ships spawning throughout the mission
+- PU - Nyx - Clean Air - Recover Cargo - Missions / UI - Recover cargo mission objectives don't appear after completing the first objective
+- PU - Industrial Missions - Mission Content / Game Code - Multiple Missions are unavailable due to Contract generation errors
+- PU - Stanton - Mission Content / Game Code / UI - Industrial Resource Gathering - Ship Mining - Objectives and HUD marker direct player to Mining Claim instead of Lagrange Points
+- PU - Nyx - Welcome to Nyx - Mission Content / Reputation / mobiGlas - " Vanduul-Tech Smugglers " is not available after getting to the required reputation rank
+- Multi-System - PU - UI / mobiGlas - Selectable elements inside the mobiGlas Tabs have slim areas of deadzone which can make selecting them difficult
+- PU - Nyx - Levski - Locations / Art - The Bottom Deck of Levski is missing a lot of critical assets and collision
+- PU - Nyx - Landing Zone (LZ) - Levski - Art / Locations - Cargo Center/Services - The floor is missing at the entrance to the area and causing AI to become stuck entering/exiting the area
+- PU - Locations / Interactions - All doors requiring fuses cannot be opened after selecting override panel button
+## Features & Gameplay
+Ships and Vehicles
+LAMP: Light Amplification System
+Adding the ability for Vehicle Cockpits to support light amplification (similar to NVGs) in order to better facilitate gameplay at low/no light conditions.
+Enabled and disabled with Right Alt + L by default while in a pilot or co-pilot seat, this system uses the vehicle style shader to amplify the lighting through the cockpit glass itself. This means that all players on the ship looking through the cockpit glass will see this amplification. This system is independent of operator modes and will function within any of them.
+In this current release, not all ships are supported but are planned to be updated with LAMP in future releases. Currently supported ships include the Avenger series, Eclipse, Gladius Series, Retaliator, Sabre Series, Hornet Series, Arrow, Gladiator, Hawk, Hurricane, Lightning F8C, Terrapin/Medic, Mole, Defender, Mustang Series, Nomad, Ares Ion/Infernal, Intrepid, Buccaneer, Cutlass Series, Golem/Ox, Vulture, Blade, Glaive, Prowler/Utility, L-21, L-22, P-52, P-72, Fortune, Prospector, Razor Series, Reliant Series, Fury Series, 300 Series, 85x, X1 Series, Salvation, Scorpius/Antares, Scythe, San’tok.yai, Pisces Series, MPUV Series.
+Additional Ship Updates
+- Anvil Arrow: Added lighting toggle button to address intense Cockpit and Radar Lighting
+## Bug Fixes
+Star Citizen Alpha 4.6.0 currently contains over 80 bugfixes for issues occurring in 4.5.0, 28 of which originated from the issue council.
+- Potential Fix: PU - Nyx - Levski - Locations / Art / Graphics - ReplaceMe balls are present across Sub-level 00 and Sub-level 01
+- Potential Fix: PU - Stanton - Starmap - Locations / UI - Multiple Derelict settlement's QT markers are not present on the starmap as intended (STARC-96240)
+- Potential Fix: Ripper SMG - Misaligned underbarrel attachment
+- Potential Fix: PU - Stanton - Engineering Screen - UI / Vehicles - Relays only show Connections when Moused over not when Selected
+- Potential Fix: ANVL Hornet Series ( all variants ) - Vehicles - PU - key inputs during the exit seat animation will cause players to be stuck inside Hornet F7C MK II Cockpit after exiting in space (STARC-102726)
+- Potential Fix: PU - Alliance Aid - Missions / Courier - There are no enemy ships spawning throughout the mission
+- Potential Fix: PU - Industrial Resource Gathering - Stanton - Mission Content / Reputation - Missions fail to populate in the contract manager after reaching the top ranks of reputation
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Clinic Floors - Locations / Art / Physical Proxies - Player can stuck after jumping over the fence
+- Potential Fix: PU - Industrial Missions - Mission Content / Game Code - Multiple Missions are unavailable due to Contract generation errors
+- Potential Fix: PU - Stanton - Clean Air - Interstellar Hauling - Nyx Gateway incorrectly listed as Magnus Gateway in mission objective and description;
+- Potential Fix: PU - Stanton - Clean Air - Missions / UI - SCU acquisition amounts are too much for some missions
+## Technical
+- Fixed 1 Client Crash
+- Fixed a Mainthread Deadlock

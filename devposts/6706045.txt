@@ -1,0 +1,82 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9125941-9126995.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Evocati - 4 hour playtest
+Server Info: US Only - EPTU Channel - PU Only (AC Disabled) - Replication Layer/Recovery Enabled
+Long Term Persistence: Enabled
+Pledge Copy: Disabled
+Starting aUEC: 15,000,000
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of Evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.23 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+Note: This build will be up for roughly 4-5 hours from the start of the test (pending and unforseen issues)
+- Stability (Main Focus)
+- Full Character Customizer Revamp
+- mobiGlas Rework
+- Starmap / Interior Map / Minimap
+- EVA T2
+- New Loot Screen
+- New Visor / Lens
+- Full FPS Combat Refactor
+- Backpack reloading
+- Ammo repooling
+- Dynamic Crosshair
+- Physical Shopping UI
+- Server Crash Recovery
+Not Ready For Testing/Feedback
+Features listed below may be partially in but not in a state we are ready for bug reporting and feedback unless it causes the game to be unplayable.
+- Master Modes
+- PIE / PIS and Default Item Actions
+- Freight Elevators
+- Hauling Missions
+- Reputation-based Hostility
+- And More
+Known Issues
+:warning: IMPORTANT - Do not go near the new distribution centers as this will crash the servers
+Spawn closets are not spawning FPS AI correctly in this build so it will be tough to use those to spawn AI for testing the latest FPS changes
+- PU - Stanton - Locations - Graphics / Planet Tech - Underwater Wobble effect is present on the exterior of Lorville
+- PU - Stanton - Multiple Locations - AI - AI are spawning together in group and they can be slow to leave their spawn points
+- PU - Stanton - Locations - Multiple Locations - Transit - Elevators - Hab elevators can infrequently fail to spawn
+- PU - RL - Service Beacons / Missions - Service beacons cannot be created
+- PU - Stanton - Mission Content / UI - Mission markers are not shown to the player
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+- PU - UI - NikNax / VLM - Liveries - All Liveries are missing volume information in NikNax and Vehicle Loadout Manager
+- PU - Performance - Inconsistent frametimes / stuttering during high concurrency due to DatabaseUnloading
+- RSI Constellation ALL Variations - PU - Vehicles / Interactions - Interaction prompt missing for pilot and co-pilot seats
+- Front end - UI / Locations - Inventory - Entitlement - Primary Residence location can be missing from the front end
+## Features and Gameplay
+Locations
+- Overhauled Water
+We have completely reworked the wave simulation and rendering of all water in Star Citizen in addition to creating a new multi-scale region-based water surface simulation system. Oceans and Water Volumes are now affected by all physical objects as well as forces from thruster and ship wake. Caustics are fully reworked to be both faster and driven by the dynamic results of the new water simulation. Underwater fog has been reworked to resolve various rendering issues, and the appearance of water when intersecting the camera has been vastly improved.
+AI
+- Full AI Ship Combat Balance Pass
+With this update you should notice a difficulty increase in all AI piloted ships with multipliers being adjusted.
+Gameplay
+- mobiGlas Rework
+Reworking the mobiGlas system to use Building Blocks, which will also allow for easier development of mobiGlas apps. This update includes completely reworked overwall UI along with reworked Home, Starmap, Contract Manager, Mo trader, Niknax, Journal apps, and more.
+- Starmap Rework
+Implementing the new and improved Starmap with improved visuals and usability, including easier search and trip planning functionality.
+- FPS Map System
+Implementing a minimap for the HUD as well as interior maps for FPS gameplay, helping players stay oriented in close-quarter encounters.
+- Vehicle Targeting Keybind Updates
+With 3.23 we are moving slightly towards the S42 scheme for targeting. This comes with a few keybind changes.
+- T (short press): select target closest to crosshair and iterate forward (based on crosshair angle)
+- T (long press): enable / disable auto targeting, it will pick the closest hostile in view (based on crosshair angle)
+- R: Iterate subsystems (if available and target was scanned, based on angle from crosshair outwards)
+- G: always swap gimbal mode
+- E: turret gyro on / off
+- LALT+R: disable subtargeting
+- Added keybinds to magnify the aiming UI (none  set by default)
+- 4: Target closest ship targeting you and iterate (based on distance)
+- 5: Target closest hostile ship and iterate (based on distance)
+- 6: Target closest friendly ship and iterate (based on distance)
+- 7: Target closest contact and iterate from there (based on distance)
+- LALT+B (short press): Set BOMB target
+- Default binding for turret ESP has been removed but can still be assigned.
+- Ping - Tab (Will be the same for FPS when it's ready)
+- Scoreboard - F1 (Arena Commander)
+- Made Further Physical Shopping UI and UX Improvements

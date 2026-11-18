@@ -1,0 +1,38 @@
+## Star Citizen Alpha Patch 4.1
+Alpha Patch 4.1 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 4.1.0-PTU.9641265.
+## Build Info
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, in-progress refinery jobs, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the update.
+- Audience: All Backers
+- Server Info: PTU Channel
+- Long Term Persistence: Enabled
+- Mesh Configuration: 4:6:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+This build has additional failsafe measures applied to help Align and Mine reset between runs.
+- Stability & Bugfixes
+- Enabling Orison and Area 18 NPE
+- T0 Item Recovery
+- Ground Vehicle & FPS Mining Updates
+- Ship Collision Physics Updates
+- VOLT Weapons
+- Missions updated for Meshing: Medical Beacons, Courier, Prison 02 repair, and 890j Boarding Action
+- Wikelo (WICK-uh-low) Collector Missions
+- New Align and Mine Event
+## Known Issues
+- Critical: PU - Actors / Consumables / Weapons - FPS Weapons and consumables trail behind an actor's hands while in motion
+- Critical: PU - Star Map - Party Members do not appear on the star map or area map
+- Critical: PU - Stanton - Mission Refactor - Wikelo Collection - Turning in additional items results in the items disappearing and additional items in the freight elevator
+- High: PU - Pyro - Jump Points - Locations / Spacescaping - Asteroids that surround the Stanton Gateway can be seen inside the Jump Tunnel and occasionally can cause fatal collisions when exiting the Jump Tunnel
+- High: PU - Pyro - Jump Point - Failing a Jump point will displace the player far away from the gateway station
+## Bug Fixes
+- Fixed an issue sometimes causing Wikelo's Dialog Audio not to trigger
+- Fixed incorrect explosion damage radii on EM S1 missiles causing massively more splash damage than intended
+- Potential Fix: PU / AC - Actors / Consumables / Weapons - FPS Weapons and consumables trail behind an actor's hands while in motion
+- Potential Fix: PU - Personal Inventory / Respawn screen / Item Recovery - User will respawn with the Prison loadout equipped after leaving Klescher Rehabilitation Facility
+- Potential Fix: PU - ATC - Simultaneous ATC hangar requests put players in a queue even though there are available physical hangars to use
+- Potential Fix: PU - AI / Respawn Screen / Actor - Users are able to revive corpses after leaving and returning to the location
+## Technical
+- Fixed 3 Client Crashes

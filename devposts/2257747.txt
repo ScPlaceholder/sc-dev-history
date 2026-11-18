@@ -1,0 +1,35 @@
+## Star Citizen Patch 3.6.0s
+Alpha Patch 3.6.0s has been released to PTU and is now available to test!  Patch should now show: PTU-2229899.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Law and Criminality System
+- General Gameplay
+Known Issues
+- Mission givers can sometimes be in the incorrect position and may not interact normally.
+- The HUD vanishes when the quantum drive is enabled.
+- Dropping the hacking chip on planetary surfaces can cause it to fall through.
+- Significant first person framerate reduction can occur.
+- Textures will display across the visor on some helmets.
+- AI ships have an unintended wing wobble behavior.
+## Feature Updates
+Ships and Vehicles
+- Adjusted in-game ship prices to more closely match actual prices.
+- Added audio feedback for player g-force stress.
+## Bug Fixes
+- Adjusted updates to fix an issue where the ASOP would show "checking" for an extended period.
+- VOIP audio settings should no longer reset to zero when the comms panel is closed.
+- Hurston Outposts should now recognize compatible player ships for commodity purchasing.
+- Bounty and skimmer missions should no longer occasionally overlap.
+- The owner of a stolen ship should no longer be charged with the crimes committed by the thief.
+- Fixed excessive crackling and popping for VOIP audio.
+- Fixed an issue where the Sabre's main thruster had no overheat.
+- Fixed patches of missing collision on Lyria.
+- Security reinforcements should now occasionally appear when fighting AI security ships.
+Technical
+- Fixed a server deadlock.
+- Fixed 2 client crashes.
+- Fixed a server crash.

@@ -1,0 +1,82 @@
+Squadron 42 Monthly Report
+May 2022
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 06:01:2022
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 Recruits.
+Welcome to May’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including updates to first-person combat, locomotion, and Shubin station.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Content)
+Last month, AI Content’s main focus was on adding background life to Shubin station. Part of this involved motion-capturing actor performances for the commuter behavior.
+“We captured people patiently waiting for a tram to arrive and getting frustrated when it didn't come on time, sleeping across benches, and falling asleep in their seats. These are all things you might expect to see on a subway.” AI Content Team
+They then wrapped up work on the arcade machine, which was reviewed to ensure the team were happy with the amount of animation variety. The main aim of this is to prevent the player from seeing any repeated animations. The next step is to hand the usable to the UI team for the finishing touches, including the on-screen visuals of games played, scoreboards, and game-over screens.
+Bug fixing and feature work continued for the deck crew, with the team enabling the AI to interact with the Gladius’ rear fuel port. Next month, they’re aiming to add a pushable diagnostic cart and dynamic conversations to the behavior.
+## AI (Features)
+For the Vanduul, AI Features continued to refine and improve the close-combat and cat-and-mouse gameplay sections. They also utilized the recent mo-cap sessions to take existing block-out animations and add variety and detail, processing the results and integrating new animations into the existing gameplay.
+On the Human combat side, the team worked with Design to implement the new weapon accuracy system that will give greater control to the designers, particularly over difficulty and playability. Previously, weapons would fire directly down the barrel and any inaccuracy would have to come through the simulation of wrong aiming direction, the seek time of the character’s aiming, and recoil. They’re now looking to implement a more controllable accuracy system that takes various factors into consideration when choosing if a shot hits or misses, including distance to target, how long the target has been seen, the angle to the shooter, and the base accuracy of the AI that’s firing. Once the decision to hit or miss has been taken, an appropriate firing direction will be chosen. This will give the designers much more flexibility to create engaging and enjoyable scenarios. For example, they can select how likely off-screen NPCs are to hit the player, as being shot from offscreen isn’t a fun experience.
+For Human animation, the team continued to iterate on the pistol animation set using the overlay approach, which is already seeing benefits to memory, iteration time, and effort.
+## AI (Tech)
+AI Tech worked on spaceship functionalities, including several improvements to quantum travel and quantum boost. Now, ships can accelerate while spooling before the actual jump. This functionality was also exposed as an assignment for missions.
+The team cleaned up and activated several feature test-maps into the main game-dev stream. These maps were validated to ensure the team can better track features that might be impacted by the changes of different teams.
+For Subsumption, focus was on improving the usability of editing conversations (or coordinated subactivities). The internal representation of the GUID and SuperGUIDs was improved, too.
+Building on last month’s work, feedback was addressed regarding NPCs pushing trolleys. The team now have better control over what forces are applied to the trolley by using an angular and two linear PID controllers. They also improved the exact positioning logic at the end of a path and added stuck detector usage.
+For Human combat, an initial skeleton of the DefendArea assignment was implemented to allow the designers to specify areas that NPCs can use for their behaviors. For example, guards will use this to understand which zones they should patrol.
+Occlusion calculation was restored to stop NPCs from ignoring hidden enemies while shooting, which will help them preserve ammunition and prevent individual targets from being overly targeted (unless fire control is forcing the shooting).
+The team also improved the friendly-fire validation and can now assign different factions different behaviors. This includes “bad guys” only trying to preserve the life of their group, while “good guys” are also trying to avoid hitting neutral factions, like civilians.
+Several fixes to the usable code were added, including one causing NPCs to use usables they were not authorized to use. They also extended the usable code to allow them to set up slotting functionalities through loadout entries, allowing them to access item ports not exposed directly in Data-Forge. For example, setting up a Gladius as a usable with varying inspection usables depending on whether missiles are equipped or not.
+## AI (Vehicle Features)
+The AI Vehicle Features team completed the flight AI tool. This enables the developers to control and set up specific AI scenarios across various ships. They're currently porting the new dive attack maneuver to the combat pilot AI, which allows ‘reckless’ and ‘aggressive’ pilots fighting against capital ships to dynamically choose this maneuver when required.
+They also made changes to the way they apply the backwash thruster effect as it was negatively affecting AI. Now, it controls forces by the size of the ship’s surfaces, so smaller ships have less of an impact on larger ships.
+## Animation
+The Facial Animation team spent the month making improvements to a number of Squadron 42 characters.
+The Motion Capture team shot scenes for level events alongside the Story team. They also worked with the Gameplay team on Vanduul combat and pre-post-vis for searching, which involved bringing the designers, coders, and animators together with the Vanduul actor for a mo-cap session. This allowed the teams to quickly try out new ideas and improve the existing version of the Vanduul character.
+The data from the mo-cap session was then worked on and added into the game as close to the on-set performance as possible. The team are currently adjusting the animations for weight and game balance and adding any required additional micro-transitions.
+They also worked on AI pistol animations, making overlays that will properly work on the stocked base-set to more efficiently produce pistol gameplay. They also converted the male spec-ops assets to female versions.
+On the gameplay side, Animation progressed with various social AI aspects, including beds, the chow-line, arcade machine assets, female characters sitting on bar stools, standing console updates, drinking in various useables, and more. AI locomotion progressed too, with the team testing overlays on the base cycles so NPCs appear to think about what they’re doing rather than just moving forward.
+R&D locomotion improvements continued, while custom locomotion fixes were made for certain named characters. They also progressed with zero-g, heavy landings to ledges from jumps, and helmet usage.
+## Art (Characters)
+Character Art spent May working on UEE Navy outfits and Screaming Galson armors. They’re also working alongside the Graphics team on the final version of the hair shader.
+## Engine
+In May, the Physics team added a new dynamic entity (ropeentity_ex) to simulate a rope running over a pulley wheel. As an optimization, round-robin free lists were added for factories to reduce contention when creating or destroying objects. Additionally, vehicle pad normals are now cached to speed up collision processing.
+On the renderer, work on the Gen12 transition continued. APIs for transient resource sets and various transient buffer types further matured and all relevant client code was updated to make use of them. The Gen12 pipeline to render cube maps was enabled, and Gen12 support for fog volumes and various other render nodes was also enabled. A new reflection buffer API was implemented and worker contexts were established throughout the client code. Resource sets are no longer unnecessarily created and material updates are not pushed into processing queues if there isn't anything to update. Support in debug comparison code was added for stencil state checks, skinned objects, and forward stage. Support for eye overlay pass was added too.
+The Gen12 port of planet ground fog was completed and Gen12 ports of atmospheric and volumetric cloud rendering commenced. Additional improvements to planet terrain height map rendering and spherical cloud and planet terrain shadow rendering were made.
+On the core engine, various improvements were made to the profiling system to better analyze fibers and their preemption to track callers of semaphore waits and file reads. Support to collect peaks was also added (to prioritize optimization tasks). Also, power scaling is now disabled for all threads the engine spawns with normal or time-critical priority, which helps thread scheduling (main, render, physics, batch worker, etc.) and improves performance. Additional optimizations were made, including removing the final lock in the background job manager, checking authority requirements when activating component updates based on ECUS events, and skipping updates of hidden entities. Lastly, improvements were made to reduce the size of Windows executables and their symbol files.
+## Gameplay Story
+Gameplay Story spent May working through mo-cap from the session in April. This allowed them to complete numerous small updates to various scenes, including some for chapters one and five. A technically challenging scene involving two characters unloading crates from a spaceship was finished and is looking great in-game.
+They also delivered a substantial new scene for chapter five that features the player getting into an elevator. Finally for Gameplay Story, incremental improvements were made to the walk and talk animations to keep the characters looking natural and alive.
+## Graphics & VFX Programming
+Work on damage maps continued last month, with the team focusing on debris creating its own map based on the parent map. They also implemented an interface for querying damage within an area and persistent snapshots as well as optimizations for processing hits.
+For Gen12, the team improved the viewport API and continued porting the region copy pass in RTT to Gen12. They enabled more stages/systems to work with Vulkan, including material fallbacks and depth read back. Fixes were made for the tessellation output of organic shaders and planet array textures not using texture 2D arrays. They also refactored screen capture to work with Vulkan and updated to the latest SDK.
+Work continued on improving image tests, with CVARs being created to wait a custom number of frames before capturing to alleviate some of the timing issues seen on recent tests. They also investigated a number of performance-related issues, including a particle effect problem caused by a huge particle count and the cost of refraction resolves.
+A number of bugs were fixed in the RTT system, including a series of asserts caused by setting a large aspect ratio to an RTTO, as well as fixes for holo-volume sorting issues in the mobiGlas.
+The team also continued improving shaders with experimental improvements to the hair-color model and Wear v2, including the addition of primer/compliment in LayerBlend v2.
+## Level Design
+Last month, the FPS team completed the layouts of two key chapters. Once implemented, they’ll be ready for final balancing and testing. Some of them also moved on to finalizing content for the next set of chapters ahead of next quarter’s goals.
+The Space/Dogfight Team expanded their focus to the first half of the game, implementing recently completed and polished mechanics, with the aim being to have a large section of the game fully playable.
+The Social Design team continued their ongoing tasks of implementing all in-game scenes.
+## Narrative
+Narrative continued their in-depth level reviews last month, including a moment-to-moment breakdown of a specific chapter to discuss any remaining narrative needs to support the latest gameplay. This included two revised puzzle scenarios and a tutorial sequence to account for possible hints and/or dialogue support the player may need.
+“One of the challenges of game writing is ensuring that we provide assistance when called for without spoiling the fun of the player solving the problems presented.” Narrative Team
+For the revised scripts completed last month, the team finished recording scratch placeholder audio using developers as stand-in performers. The Design team will then place these in-game and begin testing the level flow. Depending on feedback, additional revisions and adjustments may be needed.
+The team also dedicated time to further broadening some of the narrative collectibles that players will be rewarded with if they thoroughly explore the various levels in-game.
+Finally, the team worked to update the overall schedule in order to account for the recent script improvements and narrative adjustments, which is instrumental for the Production team to ensure deadlines are properly projected.
+## QA
+QA supported the Cinematics team by reproducing issues found during development and chasing up outstanding bugs still causing issues. They also worked on bug validation and reporting and continued to make video recordings for review.
+For AI, the team worked on several narrative scenes to confirm fixes and that the general flow is consistent. Checklist testing also began, with QA now regularly testing FPS and ship sections featuring the Vanduul.
+## Tech Animation
+The Technical Animation team spent part of the month addressing small tasks that will ultimately improve the quality of life for all devs. Several of these revolve around the asset pipeline in Maya, which was refactored to both consolidate multiple workflows and galvanize the core pipeline code with the knowledge gained throughout production so far.
+One of the team’s new initiatives to load skin data from the engine’s data files is yielding excellent results, with a 1200% speed increase in loading data.
+They also continued with another long-standing initiative to replace slow rigging solutions with a new plugin.
+## UI
+The UI artists and designers worked on a variety of screens for two key levels. Some are at the early stages, where they take the specs from the game design teams and concept the layout and visual style. Others are nearly complete, with UI working alongside the designers to hook up graphics and animations to react to the player’s input. The team are also working to refine their processes so they can create future screens more efficiently.
+New door panels were created that will be used throughout SQ42, while the programmers developed AR boxouts – popup information that floats over the game screen to give more information about selected things.
+## VFX
+May saw the VFX team continue to work closely with the Art and Design teams. Two larger levels received a clean-up VFX pass.
+“This is good practice when a level has existed for a long time and has lots of older content. This basically brings a level up to date, ensuring there are no ugly or unoptimized effects still in there.” VFX Team
+They also continued work on a highly complex destruction sequence, which is progressing well.
+Finally, the VFX Tech Art team reviewed the gas cloud setup to ensure it’s still functioning as expected and investigated cross-team options for in-game destruction.
+## WE'LL SEE YOU NEXT MONTH...
+// END TRANSMISSION

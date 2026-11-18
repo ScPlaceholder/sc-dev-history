@@ -1,0 +1,42 @@
+## Star Citizen Patch 3.8.0p
+Alpha Patch 3.8.0p has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.0-PTU.3906481.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- General gameplay and traversal
+- Microtech and updated rest stops
+- New look ahead and third person camera updates
+- Patrol, bounty, and mining claim missions
+- Fine kiosk system
+- Hijacked 890 mission
+- Mining and mining laser head attachments
+- Ship components
+Known Issues
+- Shop services may be slow to respond and process purchases.
+- Elevators at Port Tressler and Everus Harbor may not show up when called.
+- Once a magazine is emptied for the Animus Launcher the player can no longer equip fresh magazines.
+- The mission marker for black box recovery does not update when arriving at orbital mission locations.
+- Multi-tool scanned mineables remain on the player's HUD when the multi-tool is stowed.
+- If the quantum travel marker is at the edge of a moon or planet they can QT through the moon and explode.
+- Carriable mission items can fall through flooring.
+- The Sentinel is incorrectly labeled as the Harbinger in the ASOP and Comms channel.
+- Purchased commodities will often visually not appear in the ship's hold.
+- Carriable boxes may fall through the flooring.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## Feature Updates
+Gameplay
+- Visual update on dropped cargo blinky light.
+## Bug Fixes
+- All of the AI should now spawn for the unlawful clear UGF missions.
+- Non-mining vehicles should no longer be able to see mineable resource AR markers.
+- Players should no longer experience a 3k9 error loop after using bed logout.
+Technical
+- Fixed 2 client crashes.
+- Fixed 3 server crashes.
+- Fixed a server deadlock.

@@ -1,0 +1,29 @@
+Alpha Patch 4.10.3 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.3-PTU.13032516
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Missions: Vanduul Incursion
+- New FPS Weapon: LBCO Skarnov Rifle
+## Feature Updates
+Vanduul Incursion
+Mauler weaponry made considerably more dangerous. Space combat music from Welcome To Nyx now plays when fighting Vanduul, and the tension detection system is active again. Board Ship objectives revised and balanced.
+LBCO Skarnov Rifle
+Particle light added to the LBCO Skarnov Rifle secondary fire mode. Updated rifle to 30 capacity.
+Shader Cache
+Removed the 4GB size limit on the Vulkan pipeline cache. Full cache builds exceed this and were previously discarded on load, meaning players lost the benefit of a prebuilt cache entirely. Existing caches will rebuild once
+## Bug Fixes & Technical
+- Potential Fix: Life support able to significantly exceed 100%
+- Potential Fix: A vehicle vented inside a planetary area failing to recover its atmosphere, leaving occupants to freeze or suffocate
+- Potential Fix: Scrolling in the mobiGlas contract menu becoming stuck, making it impossible to scroll through available contracts
+- Potential Fix: Ships clipping into the hangar loading platform when retrieved from an ASOP terminal lobby
+- Potential Fix: The option to pay an impound fine missing from the ASOP interface when a ship has been impounded
+- Potential Fix: Hostile mission AI spawning and then standing still for 20 to 50 seconds before engaging
+- Potential Fix: Mission descriptions directing players to derelict outposts when the objective was actually at a UGF bunker. These locations are now described as Abandoned Facilities
+- Potential Fix: LBCO Skarnov Rifle and magazine descriptions disagreeing on magazine capacity, now set to 30
+Four of today’s fixes come from Issue Council reports:
+- Life support exceeding 100% (STARC-205396), with 249 contributors
+- Ships clipping into the hangar loading platform (STARC-137501), with 101 contributors
+- mobiGlas contract scrolling (STARC-190800), with 83 contributors
+- Impound fine missing from ASOP (STARC-205713), with 39 contributors

@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.11.1g
+Alpha Patch 3.11.1g has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.1-PTU.6525684.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- Crusader Mercury Star Runner
+- Intergalactic Aerospace Expo Exterior
+- General Gameplay with client/server stability
+Known Issues
+- Players do not always spawn in the location they picked
+- Visiting location from fresh boot will cause player to spawn on / below the surface on Hurston
+- Weapon SFX not playing when vehicle weapons are fired
+- GRIN ROC extracting crystals can fail to fill the cargo bar
+- Crash occurs when exiting to main menu shortly after crashing & destroying your ship
+- The Hammerhead elevator collides with the landing bay at Port Olisar, causing the ship to move
+- Restocking on missiles/torpedoes, then storing and respawning the same ship will have missiles/torpedoes missing
+- Ships landed at Lorville & New Babbage cannot be stored
+- Players can get their ship into an 'unknown' status after abandoning it and then dying and respawning at some Rest Stops causing an insurance loophole
+- Origin 100 series Rain / slush effects are moving backwards to the direction of travel
+- Greycat ROC mining arm can snap out of place upon re-entering the vehicle if the mining arm had been previously extended prior to exiting the vehicle
+- Running into the stairs of an Origin 100 series ship as the door of the ship opens will cause players to fall through the ground
+- Refueling hydrogen fuel first can prevent you from refueling quantum fuel
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+## Feature Updates
+Gameplay
+- Changed default fallback spawn location to New Babbage.
+This change will default spawn players in New Babbage now instead of Lorville if the variable service didn't save the player's selected spawn location.
+- Changed external inventories so that they can only be accessed by 1 player at a time.
+Ships and Vehicles
+- Added interaction to the Mercury Star Runner scanning seat to deploy/retract the scanning dish.
+- Increased quantum fuel in the Mercury Star Runner
+## Bug Fixes
+- Fixed an issue that was causing ships and vehicles to fall through planetary terrain.
+- The Greycat Roc should no longer be able to enter a state of duplicating its inventory and capacity indefinitely.
+- Thruster and engine effects on the Mercury Star Runner should now play correctly.
+- Rain and snow effects on the Mercury Star Runner windshield should now flow in the correct direction.
+- 3d holographic radar models should no longer appear in the center of the Mercury Star Runner.
+- Fixed multiple gaps between rooms in the Mercury Star Runner where there was no atmosphere.
+- The Mercury Star Runner coolers should now appear in the component bays in the engineering room.
+- Missiles will no longer clip through hull of the Mercury Star Runner when pressing P to activate/deactivate weapon systems.
+- Mercury Star Runner cockpit door should no longer clip through the ship exterior when opened.
+- Proximity sensors on Mercury Star Runner interior doors should now keep doors open consistently when in range.
+- The Mercury Star Runner doorway in Habitation should no longer flicker
+- Fixed VisArea issues found in the cargo bay of the Crusader Mercury Star Runner under the pipes.
+- Preview icons for Mercury Star Runner paints should now appear correctly in the VMA.
+- Elevator panels in New Babbage should no longer show "@UI" text.
+- New Babbage elevator's Current Floor and Next Floor text will now update correctly if you choose another floor during transit.
+- Fixed Z-Fighting issues on the two system access panels in the interior section of the Cutlass Blue and Red by the rear door / ramp.
+- Videos in the lobbies for the expo hall event days should now have audio.
+## Technical
+- Fixed 6 Server Crashes
+- Fixed 2 Server Deadlocks

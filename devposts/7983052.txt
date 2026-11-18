@@ -1,0 +1,89 @@
+## Star Citizen Alpha Patch 4.2
+Alpha Patch 4.2 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.2.0-PTU.9800043.
+- Audience: Evocati Only (Release under NDA)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 10 DGS - 600 Players
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Tonight's build includes further ASD testing with the first 2 parts of our new sandbox activity starting at the Farro Data Center and moving on to new locations from there.
+- Stability & Bugfixes
+- ASD (Associated Science and Development) Data Center (Pyro IV) and Research Facility (Pyro I) Sandbox Activity (Parts 1-2)
+- Radiation
+- Sterling Exploration Suit
+Not Ready for Testing or Feedback
+Reminder: These items below are a partial list of current goals for the latest release and may be partially in the build and even completable but are not ready for feedback and are subject to removal from this release.
+- Improved Kiosk Interactions
+- Dynamic Rain
+- VOLT Laster Shotgun "Prism"
+- New Wikelo Ship Additions
+- New Hairstyles
+- ARGO ATLS IKTI
+- [Redacted]
+## Known Issues
+Avoid Orison in this build as the tram doors aren't opening
+- PU - Pyro - ASD Locations - Locations / Interactables - Maintenance room door retains previously used keycard after location cooldown, preventing access for subsequent visits
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- PU - Stanton - microTech - New Babbage - Brentworth Care Center - Medical / Locations - The medical kiosks have an infinite load and do not check players into rooms
+- PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+- PU - Ship Battles - Ace Pilot/Assault - Proximity Tracker - Action Area - Logic fails to continue when over 20km away from the tracked object or Action Area Origin
+- PU - Jump Points - Room System / Atmosphere / Vehicles - Jump Tunnels - Player will begin asphyxiating inside their vehicle at the end/after exiting the Jump Tunnel when travelling to both Stanton and Pyro
+## Features & Gameplay
+- Characters
+- Addition of Multiple New Player Hairstyles
+- Locations
+- Further ASD Data Center Location Additions with new Structures and Turrets
+- Gameplay
+- Updated Bounty Hunters Guild missions to use the rebalanced encounters from Patrol Missions V1
+- Ships and Vehicles
+- MISC Starlancer TAC: Weapon/turrets ammo max count buffed. Side turret max speeds reduced with added acceleration and decelerations times
+- Moderate Starlancer Series SCM/NAV/Boost Max Speed Increases
+- Updated Ship UI messaging to reflect the average distortion of the power plant(s) as a percentage
+- Changed the Singe Cannons to be Bespoke to the Banu Defender
+- Slightly Increased the Anvil Valkyrie and Asgard Max Ammo Capacity
+- Increased Anvil Centurion Max Turret Ammunitions
+- Slightly Restricted the Polaris Turret Gimbal Movement to avoid them clipping through the ship
+Shield Regen Updates
+Updates to Shields to reserve buffer per-face instead of as one pool
+Currently, the reserve pool stores all shield health in one pool, then distributes evenly back again. This can lead to easy distribution of health between faces again, e.g. if one face of four is fully down then the reserve pool will store 3/4 the health then distribute it evenly to all faces again. With this update, shields will now store each face separately in the reserve pool to avoid this redistribution.
+Each reserve face stores a % of the current faces health, and regen up to a % of the max face health.  When going from faces to reserve, regeneration won't start the reserve until the face is fully empty. When going from reserve to faces, only ignore regen delay for regen coming from the pool - still get the delay for normal regen (it’s currently ignored for both).
+- Weapons and Items
+- Adjusted Volt Weapon Series Modifiers to Improve Hipfire Recoil Feel
+- Updated All Environment Suit Tolerances to around -150c to 175c
+- Core Tech
+- Temporarily Disabled Rain on Pyro 3 & 4 Added dynamic rain to Hurston
+- Rain and Lightning Weather VFX/Lighting/Impact/Audio Improvement Polish
+- Ripple, puddle, and wetness graphical effect Improvements
+- Removed ability to disable clouds manually via attributes.xml
+## Bug Fixes
+- Potential Fix: PU - Ship Battles V1 - Patrol - Foxwell - Missions - Ace Pilots ships when destroyed can also destroy the body (STARC-165633)
+- Potential Fix: PU - Stanton / Pyro - ASOP / Fleet Manager / UI - After retrieving a ship, the ASOP is sometimes blank, not displaying your hangar name to tell you where your ship is waiting (STARC-123318)
+- Potential Fix: PU - ASD Facility - VFX / Locations - The loadout scanner door VFX are rotated incorrectly (STARC-168869)
+- Potential Fix: PU - ASD Facility - Pyro - Narrative / UI - String name for backpack name and description can be seen when equipping the item (STARC-168995)
+- Potential Fix: PU - ASD Facility - Interactable / Locations - The keycard safes and credential printers can be tractor beamed (STARC-169004)
+- Potential Fix: PU - ASD - Research & Data - AI - AI spawned during the combat sequence can be seen stacking inside spawn closets and not exiting
+- Potential Fix: PU - ASD Facility - Mission Content / Locations - Maintenance security door does not open once successfully scanned at Farro Data Center
+- Potential Fix: PU - ASD - UI / Locations / Mission Content - Entering the Passcode on the Restricted Facility Credentials Printer at all Farro Data Centers won't work and displays " ERROR"
+- Potential Fix: PU - ASD Facility - Mission Content / Locations - Data Processing Key card spawning in place of the Maintenance Key card at Farro Data Centers
+- Potential Fix: PU - Pyro - ASD Facility - Locations / Interactables - Maintenance room door don't have interaction button and card slot
+- Potential Fix: PU - Farro Data Center - Technical Access Card - PU - UI/Interactions - Keycard cannot be interacted with, picked-up and/or tractor beamed from the Safes
+- Potential Fix: RSI Constellation Some Variants - PU - Vehicles / Ship Features / Docking - Unable to re-dock with constellation (STARC-165454)
+- Potential Fix: PU - Missions - Server Meshing / Subdivision - PVP Bounty - If the target of a PVP Bounty contract performs a dgs-mesh transition it will fail the contract for any player that has accepted it
+- Potential Fix: Multivehicle - PU - Vehicles / PDCs - Any ship with Size 1 weapons can equip PDCs that auto aim when fired
+- Potential Fix: PU - Stanton - Hunt the Polaris - Mission Content / UI - Ping Area marker did not disappear when a player is near on the satellites
+- Potential Fix: PU - Patrol / UEE Training Missions - Search and Destroy - Mission Markers for the remaining satellites can hide themselves and never return, making the mission almost impossible to complete
+- Potential Fix: The Centurion turret is missing its gimbals and they cannot be manually equipped
+- Potential Fix: PU - VFX / Visor - Rain droplets do not appear on player's visor when in a storm
+- Potential Fix: PU - Creatures - Valakkars - Juveniles appear to only take damage when the player shoots its lower body
+- Potential Fix: Aegis Idris - PU - Vehicles / Art - The Idris ramp will clip into the floor after being deployed
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 5 Server Crashes

@@ -1,0 +1,37 @@
+## Feature Updates
+Locations
+- Adjusted Gloss Values of Screens Around Major Landing Zones and Most Space Stations to Reduce Light Glare
+- Seraphim Station Exterior Lighting Polish Pass
+AI
+- FPS AI Behavior Integration
+With 3.21.1 we have integrated in much of the FPS AI behavior from Squadron 42. These updates, that have been polished and worked on outside of Star Citizen release builds until now, will vastly improve overall difficulty, reaction times, animations, behaviors, and other traits and make combat with them a much more dangerous but rewarding experience.
+Gameplay
+- Tractor Beam - T2 - Vehicle Tractor Beam
+The inclusion of Vehicle tractor beams and the ability to tow ships has been added to 3.21.1. The vehicle tractor beam feature will not only bring the Tractor Beam to the vehicles but also will extend the FPS tractor beam by adding more functionality and adding a brand new, larger standalone Tractor beam for players to use.
+This update includes much work to add Pilot and Remote turret controlled tractor beams and functionality to lots of ships that allow them. While most ships will have remote turret controlled, ships such as the 315p and Vulture will have Pilot controlled tractor beams. As this is a first, initial pass to add tractor beams to many ships, some tractor beams are not in ideal locations for the intended use, a prime example of this is the cutlass blacks who's tractor beam cannot see the interior of the ship. There current positioning is not final and we do plan to revisit them to make further improvements to there locations and integrations in future releases.
+We have also included the ability for specialized ships like the ARGO SRV to use towing tractor beams, allowing them to grab onto and pull ships that have their shields and engines disabled through space, atmospheres with gravity, and through quantum travel. Towing Crime - We have expanded this so the legal owner of the ship will have the ability to press charges or not when someone tows their ship without being in the party. Turning back on the shields of the towed ship will immediately cut off the towing tractor beam.
+New, additional functionalities will include: A larger, new standalone FPS Tractor beam tool, an update to the balance of all tractor beams and adding different sizes of the tractor beam to allow different masses or volumes to be grabbed. Allowing for multiple tractor beams to affect a single item and allow multiple players to manipulate the same object. Added Grappling Recoil to Tractor Beams. Implemented a new, dedicated tractor beam UI. Added target distance indicator, added Range Bar, added time transitions to bars. UI updates to display max angle, deflection, and stats.
+- Temporary Towing Halt for Mission Spawned Ships
+Some missions have been updated to not break the systemic sandbox activity of the game. This requires a temporary block on towing ships that have spawned for many different missions.
+- Wake of Disaster - Due to the intention of making this a PVP experience we have not enabled towing on these mission ships while we update the design of the mission to keep the experience we want and not break systemic sandbox activity, we are working on a design to allow us to enable towing currently.
+- Cover-up and Illegal salvage - These will give crimes as you wont have permission to tow them however the mission will still work and resolve correctly (Cover-up you can drag them far enough away from the inspection site and the mission will complete as security can't find the ship).
+- Legal Salvage - Can still be tractored but causes potential greifing issues we are working on a resolution for this but likely wont see it in 3.21.1.
+- New Player Experience - New Babbage
+We have done a full update on the New Player Experience mission and signage to bring this feature to New Babbage. This update includes many changes to make the mission flow better through New Babbage as well as the addition of shops, more location signage, and a full lighting polish pass to the landing zone.
+- Ground Radar Sensitivity Addition
+Introduced radar ground sensitivity, so different radars can see ground vehicles from different ranges. This includes a full balance pass on ground vehicle emissions and also adds the ability for ground vehicles using Missile Operator Mode to target lock other ground vehicles.
+- AI Ship Cargo Manifest Balance Changes
+Re-balancing the cargo amounts and types that spawn inside derelict and AI ships in the PU using a new distribution algorithm.
+- UGF Ledge, Cover, and Navigation Improvement Polish Pass
+Ships and Vehicles
+- Vehicle Headlight Refactor
+The Star Citizen lighting teams have collaborated to carry out a headlight rework of every vehicle in the PU. This has been done to create a more consistent look and functionality across each manufacturer. The headlight intensity, radius (distance cast), and color will be set based on the vehicle size and manufacturer. This means each vehicle will fall into one of six size categories ranging from Size 1 with 500 meters of headlight cast distance, up to Size 6 with 3000 meters of headlight cast distance.
+- Partial Ship Mass Balance
+Tumbril Nova, Corsair, Vanguard, Caterpillar, Mole, Raft, and Star Runners have all had a balance pass on their actual masses in the universe. This update will make some slight changes velocities and handling to the ships listed.
+- Tumbril Nova Movement Tweaks
+Adjusted minimum and maximum track friction and steering stiffness.
+- Increased Crusader Spirit Wing Base Joint Health
+Core Tech
+- Made Several Client Performance Optimizations
+- Put in Multiple Physics Changes to Help Prevent Player Corpses Falling Through Planet Surfaces When Falling at Speed
+- Made Server Performance Optimizations for Ship Debris

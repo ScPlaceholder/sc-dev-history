@@ -1,0 +1,84 @@
+Alpha Patch 5.0 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 5.0.0-PTU.13201184
+- Audience: Wave 1 testers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Genesis (Planet Tech V5)
+- Nyx 1
+- Starchitect Points of Interest
+- Mission Boards and Local Missions
+- Intraplanetary Server Meshing
+- TTK (Not a 5.0 feature but in the PTU for the weekend for testing and feedback)
+- Missile Lock Interface Update
+## Feature Updates
+Inventory Overhaul
+Armor, clothing and magazines have had a complete pass on how much room they occupy in your inventory. These previously used measured physical volume, so a full armour set would not fit in a backpack and a handful of magazines filled your torso. Volume is now assigned by category and usefulness, with magazines tiered by weapon class from pistol at the smallest through to HMG at the largest.
+- Full armor sets now fit in backpacks, with light, medium, heavy, environment and super heavy all retuned. Environment suits fit a Combat Medium backpack and the BUL-H4 super heavy suit fits a Combat Heavy
+- Shirts, trousers, jackets and gloves now compress enough to fit in any armor, undersuit or flight suit pocket, with footwear fitting backpacks. Every clothing item now has a defined size, where shirts, gloves, shoes and hats previously had none
+- Flight suits and racing suits now occupy the same room as undersuits
+- Light combat and utility backpacks now fit rifles, shotguns, SMGs, the GP-33 and the Novian Crossbow
+VR Theater Mode
+Theater mode has been rebuilt as a virtual cinema rather than a flat panel floating in front of you. The screen is now curved and sits in a room that it lights, with a selection of environments to watch from, and it can present the game image in stereoscopic 3D using scene depth. Theater mode is now always active in the frontend.
+- Screen size presets covering Monitor, Living Room, Cinema and Giant Screen, with adjustable curvature and height
+- Screen Follows Me option keeps the screen in front of you as you turn
+- Environments: Black, Stars, Aurora, Day and Night, Underwater, Orbit and Storm
+- 3D image option shifts the picture per eye based on scene depth
+- Screen glow lights the floor and surrounding room
+- Your monitor can mirror the headset view of the theater
+- Options menu rebuilt around the new settings, replacing the old scale and distance sliders
+- Potential Fix: VR settings not saving between sessions due to a missing configuration file
+- Potential Fix: The view pitching when a standing player turned their head on a planet with wind
+- Potential Fix: A crash in the options menu when a slider’s step rounded to zero
+Reputation and Contracts
+Reputation and reward structures have been completed across the remaining guilds on Nyx I, and career board progression now has prerequisites in place so contract lines unlock in order. Tonight's build reputation multiplier is active giving 25x the current intended amounts for testing.
+- Reputation and reward setup for Northrock, Rayari and Adagio contracts
+- Rewards, ranks and prerequisites set for Covalex and FTL career board contracts, and rewards added to non-career Ling contracts
+- Transport Guild contracts now require their intro mission first
+- New Wikelo ship contracts added
+- Salvage resource gathering contracts requiring ship components marked as not for release
+- Multi-location Eliminate All contracts reduced to a single location
+- Contract completion banner now shows only the contract name
+- Mission board tooltip layout updated, and an untrack state added to the starmap contract pane
+- Delivery locker interface restyled
+- Potential Fix: Covalex contracts not appearing after completing any other Covalex contract
+- Potential Fix: Text tokens appearing in the Hockrow Return Stolen Cargo contract
+- Potential Fix: Attack on All Fronts objectives not being set up correctly
+Starchitect Locations
+Loot distribution and interior dressing continue across the generated locations, with a pass on how hostile AI read to players and further work on spawn closets.
+- Commodities added to extraction tiles, repair loot boxes added to maintenance interiors, and a loot pass across habitation interiors
+- Safe loot spawning reworked
+- New doorless spawn closet added to maintenance buildings, allowing interior to exterior transitions, with extraction tile AI now spawning from it
+- Delivery drop-off points added to the 120m landing pad, with props repositioned near drop-off points to improve navigation
+- Security locations renamed from a new list
+- Static screens and empty monitors replaced with working prefabs
+- Control panel styling updated
+- Engineers now receive their multitool and tablet through their loadout bundle
+- Crates, loot and AI adjusted on pillbox tiles
+- Interior kit, command kit and bridge glass work, with lighting and dressing passes across maintenance, logistics and habitation interiors
+- Potential Fix: Players climbing down closed vents using ladders
+- Potential Fix: Powerable objectives failing to stream in correctly, along with their animation
+- Potential Fix: Biome decal falloff values
+- Potential Fix: A placeholder mesh appearing at one location
+Genesis and Nyx I
+The main change this build is to how neighbouring terrain patches agree with one another. Patches previously placed and elected their ground cells from their own data, which produced a straight crack along the border with unrelated ground textures on either side. Patches now elect each ground cell at its world centre, so every patch holding that cell agrees on it.
+- Potential Fix: Visible cracks and mismatched ground textures along terrain patch borders
+- Potential Fix: Scatter placement differing between client and server, with temperature and rainfall now read identically on both
+- Ground cover assets enlarged, with new reed vegetation added
+- Imposter wind bending enabled on mature and juvenile tree imposters, matched to full detail flexibility
+- Bedrock roughness adjusted
+- GPU instance culling refactored, and terrain shader optimised to pass fewer attributes between stages
+- Water simulation now releases its resources correctly after submission
+- Potential Fix: Broken planetary colour grading, with a planet-sized area restoring the streaming bubble so colour grade entities load
+## Bug Fixes & Technical
+- Potential Fix: Battaglia failing to find its action area when streamed in
+- Potential Fix: KSAR LMG, KSAR pistol and rifle magazines missing from shops, and missing names on Volt pistol and sniper magazines
+- Potential Fix: ASD Delving code screen (STARC-218810)
+- Potential Fix: ARGO MPUV modules are now purchasable, with names, descriptions and AR data
+- Potential Fix: Room connectors on the GrimHEX airlock doors
+- Potential Fix: Dirt and wear now consistent across non-combatant NPC templates
+Crash Fixes
+- Potential Fix: Arena Commander frontend crash when no game modes were available after filtering (STARC-224275)
+- Potential Fix: Main thread deadlock when queuing entity events
+- Potential Fix: A fatal error during play
+- Engine initialization optimizations across conversation registration, DataCore export checking, shader parsing and Subsumption data release

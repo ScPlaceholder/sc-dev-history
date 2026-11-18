@@ -1,0 +1,89 @@
+## Star Citizen Alpha Patch 4.8
+Alpha Patch 4.8 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.8.0-PTU.11811531.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Tonight's PTU will have a complete LTP wipe but should persist blueprints
+## Testing/Feedback Focus
+Prepare for a very large delta update in tonight's PTU build of over 50 GB.
+- Stability, Bugfixes
+- New Mission: Tactical Strike Groups & QV Extraction Stations
+- New Event: Return of Xenothreat
+- Item Recovery: Vehicle Loadouts
+- Command Module
+- Flight Suits & G-Force Resistance
+- New Mission: Defend Location - Ship Battles V3
+- Kastak Arms Plasma Grenade
+- Uniflex Crossbow (Blueprint should be fully working as a drop now from TSG)
+- Refueling Missions & Improvements
+- Ship Hangar Service T0
+- Hammerhead Gold Standard
+- Ship Armor and Shield Balance
+Known Issues
+- Current claim timers and prices in tonight's build will be at least double the intended rates. This will be changed sometime over the weekend.
+- Multivehicle - Docking - Keybinds - conflicting keybinds not allowing ship docking to stations
+- PU - Stanton - Pyro Gateway - ATC / Locations / Hangars - Unable to contact ATC via keybinding shortcut
+- PU - Armor / Clothing / Inventory Rework - "Right Click > Equip" does not function if a paper doll slot is occupied, prevents further inventory interactions
+- PU - UI - Party connection Playing on repeat after quantum travel after a party member crashes and reconnects
+- PU - Multisystem - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+- PU - Multi-System - Stall / Freeze - Client - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing and using Commodities Kiosks
+## Features & Gameplay
+Gameplay
+Refueling Updates
+Refueling pods have had a sizeable SCU increase to hold nearly twice as much as before.  Added many blueprints for refueling nozzles to missions.
+Vehicle Recovery
+Balance adjustments to vehicle recovery claim timers and aUEC costs for nearly all ships
+Tactical Strike Groups
+Added radiation hazards to interior of station. Decreased entryway size.
+Ships & Vehicles
+Ship Armor and Shield Balance
+Upwards adjustments have been made to armor deflection of larger ships, including cap ships. Updated the ships sitting between heavy fighters and large ships like the hammerhead to have their own armor balancing (Such as Redeemer and Constellation series). Shield updates to shield components across the board to adjust health, shield resistance, and health regen. This update will see most shields have a health pool reduction around 20% while most shield regen speeds increased.
+Ship Weapon/Ammo Adjustments
+Ballistic ammo SCU sizes have been greatly reduced to about 10% of their previous cargo sizes. Attrition Weapons have had a balance pass to reduce their damage by a significant amount while increasing heat per second and increasing charge up time.
+Ship Component and Munitions Price Balance
+With tonight’s update you will see wide pricing updates to ship components, weapons, and munitions. This will see many components get increases to cost while some will have significant reductions in price such as certain fuel tanks, missiles, torps, and more.
+Weapons & Items
+Flight Suit location adjustments
+Added flightsuits to indy tradeposts in Pyro. Added flightsuit and helmet to small and medium CFP Trader inventories. Swapped Flightsuit in Area18 Cubby Blast for MRAI Flight Suit
+Core Tech
+New VR Updates
+F Prompts are rendered in world now and no longer in screenspace so they work natively with VR
+Adding new 3D FPS Crosshair and Hitmarkers for VR. Enabled via cvar w_crosshair_3d which is on by default for VR
+- Note: The new 3D Crosshair looks very similar albeit not identical to the 2D version. Also the 3D version doesn't do any smoothing to it which feels more natural in VR and is tricky to do in 3d space so it still feels responsive enough for FPS
+- The Crosshair is also aligned to the weapon helper and no longer in screenspace, i.e. if you lean to the right the crosshair rotates. Imo this looks better and has a coolness effect so i'm keeping this for now
+- Fix shadow issue in some cases where the stereo-shift wasnt considered
+- Fix VR cropping with fullscreen theater mode - Fix incorrect mouse confine when changing resolutions due to renderer vars not yet updated which the hw mouse was querying
+- Renamed IsStereoModeEnabled -> IsVREnabled to make it more clear that this also means the TheaterMode can be active
+- Maintain resolutions across all VR modes when turning off/on any mode (i.e. theater to non-vr, non-vr to theater etc)
+- Enable stereostrength scaling in editor without gamemode if strength is smaller than 1
+- Disabled broken r_ResolutionScale in VR
+- Disabled pl_proceduralRecoil.enableHeadRecoil in VR as it feels very unnatural and causes motion sickness
+## Bugfixes & Technical
+Fixed 5 Client Crashes
+Fixed 4 Server Crashes
+Fixed as Main-Thread Deadlock
+Further Nyx Performance Updates
+Further Area18 Client performance optimizations (still waiting on some more that didn’t make the build tonight)
+- Potential Fix: Multivehicle - PU - Vehicles  - Vehicles slightly ascend when leaving pilot seat - STARC-201093
+- Potential Fix: SHIPPING - PU - Error / Network - "Error 41070 Player Entity Missing" - PU - Error 41070 - Reason="WaitClientPlayer timed out after 720.01 seconds waiting for client player with id=XXXXXXX to be spawned" - can appear upon loading screen/connect into PU - STARC-172407
+- Potential Fix: MultiVehicle - PU - Engineering - Ships are destroyed at critical hull 0 instead of disabled - STARC-203655
+- Potential Fix: Aegis Idris-P - PU - Vehicles / mobiGlas / VLM - Player cannot change the PDT weapons on Vehicle Loadout Manager - STARC-203472
+- Potential Fix: Multivehicle - PU - Vehicles / UI / Ship Mining UI - Displayed Hephaestanite (Raw) text in Ships UI is overlapping to its quality - STARC-199361
+- Potential Fix: PU - Transport / UI - Elevator party buttons update only after re-entry - STARC-203064
+- Potential Fix: PU - UI - mobiGlas - StarMap - Cannot scroll down on Planet Description & Amenities - STARC-194235
+- Potential Fix: Command Module / Caterpillar - Code / Paints - Command Module will not inherit paint for parent ship record - STARC-204004
+- Potential Fix: Multivehicle - PU - Vehicles / Item Recovery / Ships - The Pitch, Yaw, and Roll of the nested ship cannot be controlled after quantum travelling using its parent ship
+- Potential Fix: Multivehicle - PU - Vehicles / Thrusters - Vehicles' maximum speed is limited to 20 m/s (Wolf and OX ships) - STARC-204633
+- Potential Fix: Multivehicle - PU - Vehicles - Command Module - Requesting docking will cause the landing gears to retract on host - STARC-204144
+- Potential Fix: Ship Hangar Services - Vehicle can service without being landed
+- Potential Fix: PU - Nyx - Tactical Strike Group - Locations / Design - Gabe's ship floats over the ground instead of using Landing Gears
+- Potential Fix: Multivehicle - PU - Vehicles - MFD - Replaceme textures appear on holo display after vehicle has taken significant damage
+- Potential Fix: Anvil Hornet MKII series ( Some Variants ) - PU - vehicles - Several hornets have nose locked in VMA - STARC-204721
+- Potential Fix: Origin 300i - PU - Vehicles - Doors of Vehicles taken from AI lock when retrieved from the hangar - STARC-204640
+- Potential Fix: PU - Missions - Tutorial - Your First Flight - NPE / UI / ASOP Terminal - The tutorial vehicle is not present on the ASOP Terminal
+- Potential Fix: Ship Hangar Services - Missiles can be destroyed on the cargo grid causing chain reaction
+- Potential Fix: Drake Command Module - PU - Vehicles / SFX / Audio / Engines - No Engine Audio Whatsoever (Startup, Power Down, Boost)
+- Potential Fix: PU - Vehicles / Audio / Audio Code / SFX - Vehicle movement audio doesn't restart when reentering ship and engine off oneshot plays
+- Potential Fix: PU - Item Imprint - IDRIS front primary turret cannot be saved for insurance imprint
+- Potential Fix: PU - Pyro - Locations / Ladders - Players fall through planet surface after reaching top of a ladder - STARC-180305
+- Potential Fix: PU - Stanton - R&R / LEO's - Docking / Vehicles - After retrieving a vehicle to a docking port, the doors for the docking collar do not open and the vehicle is inaccessible - STARC-203524

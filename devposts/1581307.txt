@@ -1,0 +1,45 @@
+## Star Citizen Patch 3.3.0s
+Alpha Patch 3.3.0s has been released to the PTU, and is now available to test!  Patch should now show: PTU-972126.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- VOIP
+- FPS Combat AI
+- Scramble Races
+- FOIP
+- New Ships and Vehicles: Valkyrie, Phoenix, Hammerhead, Mustangs, and Cyclones.
+- Manned and remote turrets.
+- Changes to ship cannons.
+Major Known Issues:
+- Players may encounter a 30009 error and endless load upon exiting to menu from the PU. W/A: Restart client.
+- Starfarer derelicts currently lack lighting.
+- Mission givers may not be functioning correctly.
+- Inviting someone to party via the mG causes a client crash. W/A: Invite via interaction mode.
+- Ships rented from the front-end do not show up in ship selection list.
+- Ships are able to quantum travel to locations they do not have enough fuel to reach.
+## New Features
+Universe
+- Added Teach's Ship Shop to Levski.  Note: This is an initial implementation and most of the assets and ship buying functionality are still to come.
+## Feature Updates
+UI
+- Added an off-screen indicator for radar "blobs".
+- Adding mission UI to finding missing person, delivery/dropoff, and destroy satellite missions.
+FPS
+- Slightly lowered Karna projectile damage.
+Ships and Vehicles
+- Increased the shield health and shield regeneration of size 3 shields.
+## Bug Fixes
+- Races should no longer cancel if one of several racers abandons at the start line.
+- The MISC Razor should no longer be missing its engine mesh.
+- Fixed an issue where the Terrapin doors weren't locked on spawn.
+- Score and match UI elements should no longer be missing from Star Marine and Arena Commander.
+- Fixed missing dust VFX for Cyclone and Ursa.
+- The moon surface and random geometry should no longer be blocking portions of Levski.
+- The prompt for the rear door of the Valkyrie should now be working.
+- Moved the chase camera so that it doesn't clipo into ships during quantum travel.
+Technical
+- Fixed 2 server crashes.
+- Fixed 3 client crashes.

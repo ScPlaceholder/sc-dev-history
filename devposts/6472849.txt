@@ -1,0 +1,14 @@
+Hi,
+Some changes that will come in the next build:
+- we updated the UI to help understand the alignment field
+- we updated the internal storage / buffer on the vulture to 13 SCU
+- we updated the internal storage / buffer on the Reclaimer to 240 SCU
+- we updated the values for Construction Materials you gather to fit the alignment field better
+To give you a little insight in our decision for the internal storage sizes:
+We need to account for the common big ships that you find and how big their biggest piece is. Currently there is no way to break them into smaller pieces.
+That means that ships you will find more regularly (through missions) will allow you to pull in the biggest piece fully.
+For the Vulture we are making it slightly bigger than the cargo again to allow for "mistakes" since the amount of gathered materials is hard to control.
+Therefore we need to allow you to do some collecting of a little more than 1 SCU and not screwing up your cargo management.
+And reminder:
+The values are subject to change based on our observations.
+Cheers,

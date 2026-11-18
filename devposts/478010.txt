@@ -1,0 +1,9 @@
+Hi @tom5598!
+First off: the way programmers merge all their work into one build. All our code is managed by some software called Perforce, which is somewhat similar to the Git that @Archaeopteryx mentioned. Put simply, it's a database that tracks every change that's been made to any file checked into it. From a grunt-programmer's point of view, this means they
+1) Hit "get latest" and see the codebase appear in a folder on their PC
+2) Make some changes
+3) BLOODY TEST IT
+4) Run it through Trybuild, which is a system that checks the code will compile correctly for different targets (eg release version, server, a version with strict code analysis etc)
+5) Hit "Submit" and have their changes added to the database.
+It does quite a lot more than that, for instance updating to an older version, merging different streams together etc, but that's the basic overview.
+Deploying the builds: Rather than having individual people building this and that, there's a single definitive version of the game that's built on a server in Austin. This builds both the code and the resources and makes it available to an internal tool called CopyBuild, which does what it says on the can, I guess. Until recently, CopyBuild was essentially a BitTorrent client, but its been replaced with something that's essentially the delta patcher and runs quite a lot faster. Programmers usually want to build their own code, so CopyBuild has a button to skip the binaries, but non-programmers can just press one button to get a whole working build.

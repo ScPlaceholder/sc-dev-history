@@ -1,0 +1,76 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9351284.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: Evocati Only
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of Evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.24.0 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- New Arena Commander Updates
+## Known Issues
+Please set your spawn to Area18 for this test or you will have a bad time getting out of the city!
+We have a temporary cvar set that will help with ships falling through hangar elevators when lifting them up. This will be a little weird and teleporty but should help until a full fix is in.
+- Multivehicle - PU - Vehicles / Locations / Physics - Ships fall through hangar elevator platform on retrieval resulting in being stuck under hangar
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP terminal screen will be stuck on the getting vehicle list screen until terminal times out
+- PU - Stanton - Locations / Transit / Hangars - Some elevators have greyed out panels and do not respond when called
+- Multivehicle - PU - Vehicles / Collision - All vehicles clip through planet terrain when player exits the pilot seat
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Multivehicle - Quantum Travel / mobiGlas / Star Map - Unable to plot a route to obstructed destination
+- PU - Stanton - Missions / UI - Mission Objectives are missing from multiple UI elements
+- Multivehicle - PU - Vehicles / Ship Refuel - MISC Starfarer is not refuelling other ships
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+- Multivehicle - PU - Resource Network - Mining and Salvage heads throttles default to 0
+- PU - Stanton - Multivehicle - Vehicles / MFDS / UI - Scanning MFD reverts to Ready to Scan after scanning ships with no cargo stored (STARC-130414)
+- Gatac Syluen - PU - Vehicles / Elevator - Syulen is missing the internal elevator (STARC-130168)
+- Carrack bottom right MFD has no display (STARC-130157)
+## Features & Gameplay
+Ships and Vehicles
+- Salvage and Mining will now function while in NAV mode
+- Vehicle Experience Weapons Tuning: Reduced damage of all cannon ammo by 10%
+Weapons and Items
+- Multi-tool UI Updates
+To make the Tractor UI more legible and usable with the new, non-Aim Down Sight (ADS) system, we added new indicators to distinguish between Traversal (LMB) and Detachment (RMB) modes.
+- Traversal (LMB): 4-arrows moving icon
+- Detachment (RMB): Chain link icon
+## Bug Fixes
+- Fixed - Stanton - PU - Resource Network - Ships / Vehicles / UI / Weapons / Ship Components - There is no option to Power on EMP's
+- Fixed - Anvil Carrack - PU - Vehicles/Elevator - Carrack is missing internal elevators
+- Fixed - PU - Stanton - microTech - New Babbage - Locations / UI - Elevator panels at the MT Metroloop leading to the NBIS Spaceport have missing text and buttons
+- Fixed - PU - Stanton - Landing Zone (LZ) - New Babbage - Locations / Transit - Tram is misaligned with terminal causing gap that can trap and kill players entering/exiting carriage
+- Fixed - Multivehicle - PU - Vehicles / UI - Vehicle altitude meter remains on the vehicle HUD after leaving atmosphere
+- Fixed - Multivehicle - PU - Stanton - Vehicles / UI / HUD - Target interaction on radar spheres does not update on target screen
+- Fixed - Multivehicle - PU - Vehicles / Ground Vehicles / UI / MFD - Resource Network - ground vehicles MFD power management screens are showing 0 power and missing all columns
+- Fixed - PU - Character Customizer - UI - STYLING - TATTOOS - switching to Advanced mode will hide the last row of library head
+- Fixed - PU - Stanton - Multivehicle - Vehicles / UI / MFDS - The MFD communications list is blank when friend is shown online in mobiGlas
+- Fixed - PU - Character Customizer - Female - STYLING - PIERCINGS - many of the right eyebrows piercings clip into skin
+- Fixed - MultiVehicle - PU - Vehicle / UI - Guns (ALL) Group can have guns disabled, still shows as Guns (ALL) when cycled to
+- Fixed - PU - Stanton - Rock Caves / Acid Caves - Locations / Graphics - Cave entrances have very noticeable LoD transitions
+- Fixed - PU - Stanton - Multivehicle - Vehicles / MFDS / UI - The Scanning MFD screen has missing categories for the scanned target
+- Fixed - Vanguard - Lead PIP calculation is wrong and appears in wrong position when aiming for hits against Vanguards (STARC-130405)
+- Fixed - PU - Stanton - Shopping - Art / UI / Locations - Item Cards for Shelf Items are not displaying correctly, doubled text/UI elements (STARC-130094)
+- Fixed - PU - Stanton - Hurston - Acid Caves - Locations / Collision / Art - There is a section of large Acid Caves that is not accessible
+- Fixed - PU - Stanton - Rest Stop (R&R) - Pyro Gateway - Locations / Cargo - Freight Elevator - Cargo Grid is offset making some spaces on the freight elevator unusable (STARC-130257)
+- Fixed - Origin 400i ship cockpit is too bright for HUD/MFD visibility
+- Fixed - Spawned Freelance Max and left engine missing (STARC-129840)
+- Fixed - Starmap route button not showing the route for the selected marker after hovering a different marker
+- Fixed - Starmap route button not correctly updating when selecting a location from the search list
+- Fixed - Vehicles - Mantis interior doesn't have atmosphere near the nose while sitting in the seat
+- Fixed - Vehicles - Mantis lift missing control panels
+- Fixed - MaxLift Tractor Beam - PU - Weapon / UI - Text elements on the back-weapon screen of the MaxLift Tractor Beam are stretched out of proportion (STARC-130293)
+- Fixed - SC - Facial Hair - Male/Female - Universal Stubble - Does not change color when no beard is attached
+- Fixed - Stanton - PU - Resource Network - Ships / Vehicles / UI - Combined Power Management Pips only Toggle when Selecting the Top Pip
+## Technical
+- Fixed 9 Client Crashes
+- Fixed 11 Server Crashes
+- Fixed a Server Deadlock

@@ -1,0 +1,40 @@
+## Star Citizen Patch 3.12.1h
+Alpha Patch 3.12.1h has been released to the PTU and is now available for all backers to test!   Patch should now show: VERSION 3.12.1-PTU.6928395.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Gameplay
+- Xenothreat Phase 2 and 3
+In this build we have temporarily halved the Phase 2 requirements for supply turn in to help with testing the completion of Phase 2.
+Known Issues
+- Some or all of the player's items that should be kept after a Character / Database reset are lost
+- Player Unable to access mobiGlas after changing armour
+- Ships are unable to be restocked
+- Being arrested while wearing leg armor causes the player to respawn in prison with a broken multi-tool
+- Opening/Closing a Cargo Crate shelf can Open/Close the adjacent shelf
+- Character animation incorrect while holding damaged QT sensitive cargo crate
+- The Players Ship can become Unresponsive after Mining a Asteroid FPS Deposit nearby
+- Defensive turrets are missing from locations
+- Dulli's VO mission broadcasts UI and Audio is not present for the first several minutes on server startup
+## Feature Updates
+Gameplay
+- Xenothreat mission changes
+Reduced starting inventory level of XT Jericho drop off to prevent it from hitting max inventory and preventing players from selling XT commodities. Increased the amount of enemy support ships that spawn with the Xenothreat Idris. Slightly reduced the time sensitive supplies lifetime. Slightly lowered the Javelin shield regen.
+## Bug Fixes
+- Players should no longer get a crimestat for attacking Xenothreat targets while in an armistice zone
+- Fixed an issue with the collision from the Starfarer wreckage's doorways extends too far, Preventing the player from shooting through them correctly
+- Fixed an issue causing the Javelin to act unnaturally after completion of Phase 2
+- Fixed an issue causing the Jericho and Wrecksite mission markers to dissapear from the HUD for players after 'Repel the Xenothreat mission transition occurred
+- Fixed an issue causing wrecksite supplies to not be able to be picked up if it was outside of the shelf it was on if the shelf had been re-closed
+- Audio for the Xenothreat video broadcast should now play reliably
+- Fixed an issue causing Xenothreat capital ships to sometimes spin out of control during combat
+- Players should no longer be able to re-accept the Showdown Phase 3 mission after completion if an enemy Ship remains after completion
+- Fixed an issue where Opening/Closing a Time Cage shelf at the Starfarer wrecksites would Open/Close an adjacent shelf
+## Technical
+- Fixed 3 Client crashes
+- Fixed 1 Server crash

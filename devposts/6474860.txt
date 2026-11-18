@@ -1,0 +1,70 @@
+## Star Citizen Patch 3.22.0
+Alpha Patch 3.22.0 has been released to the EPTU, and is now available to test! Patch should now show: VERSION 3.22.0-EPTU.8976730.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1 (Will evaluate further waves within a couple hours after build release pending stability)
+Database Reset: Yes
+Technical: US/EU EPTU Channel
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- Stability Testing
+- Structural Salvage
+- Additional Derelict Settlements
+- Inventory: Openable Cargo Containers
+- Procedural FPS Recoil / FPS Weapon Balance
+- Player Hair Update
+- Mineables Balance
+- Arena Commander Multicrew
+Known Issues
+Multivehicle - AC - Master Modes - Vehicles / Ship Components - Master Mode-Compatible Ship's engines cannot be powered on within Master Mode
+- PU - Actor / UI - Character spawned headless with EVA crosshair always on screen
+- PU - Stanton - UI Feature - FPS UI - Chat - Global Chat is not visible or functional until the "Send to Visor" setting is toggled
+- Stanton - Area18 / Orison - Core Mechanics/Respawn - Player respawns in HAB instead of hospital after dying
+- Stanton - Multiship - When Quantum Travelling the player can be left stranded in space and their ship will disappear (10% repo)
+- Stanton - Spawn Closet - Mission Content / AI - Enemy AI can spawn out of bounds of their intended spawn points (66% repo)
+- Stanton - Mission Feature - UGF missions - Remaining hostiles AI not spawning in UGF bunker mission (4% repo)
+- Pu - Vehicles - Repair services - Unable to repair vehicles that have been soft deathed
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend (44% repo)
+- PU - Stanton - ASOP / Fleet Manager - ATC - When retrieving a ship it may spawn outside the hangar it is assigned to (50% repo)
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout and equipped items after dying in the armistice zone (100% repo)
+- Multivehicle - PU - Vehicles / UI - Vehicle HUD - When the missiles charge the UI does not update to reflect when they are ready to be fired
+- PU - Stanton - Actor - Player Spawning - Multiple Locations - When multiple players attempt to log in to the same location at the same time they may be assigned the same bed; those that spawn in after the initial player will be stuck
+- Origin 890 Jump - PU - Vehicles - Fleet Manager - When a vehicle is landed in the hangar of the 890J, the 890J can no longer stow correctly via ASOP/Fleet Manager or on logout
+- PU - Tractor Beam / Physics - When multiple players interact with the same cargo container using a Tractor Beam, those players' tractor beams may no longer work correctly on that container
+- Multivehicle - PU/AC - Vehicles / Weapons / Ship Components - All energy-based weapons state "0/0" in Ammo count on naturally spawned ships and cannot fire
+- Multivehicle - Vehicles / UI - Inner Thought - Player cannot exit the ship by using the "Exit Seat" option in PIT
+- AC - All Modes - Card UI Ignores Other Card Layering & Displays Above All Non-Card UI
+## Feature Updates
+Locations
+- Derelict Settlement Lighting and Inclusions Polish Pass
+Gameplay
+- Structural Salvage Polish
+VFX and UI Polish Pass. Re-balanced Reclaimer internal salvage storage buffer to 240 SCU and Vulture to 13 SCU. Updated Salvage Law Component to make sure Fracture Salvaging can trigger hostility. Moved location of Joystick / HOTAS Salvage keybind Options.
+Weapons and Items
+- Updated Behring FS-9 Ballistic LMG to an ammo count of 75
+Core Tech
+- Front-End Style Update
+Updated menu title text, colors, and logos. Updated Button Styles and button state changes (idle/over/down/disabled), added messaging and UI info for Friends / Party / notification lists. Updated secondary title type size (ex: Primary Residence and Current Location titles).
+## Bug Fixes
+- Fixed - Lorville hangars contain rough ground texture
+- Fixed multiple replaceme balls around derelict settlements
+- Fixed - PU - Stanton - Multiple Locations - Transit / Locations - Elevators - All elevator panels are non-functional and do not display correctly in Hangars & Habs area
+- Fixed - AC - Front End - Failed to find Match message prompted when attempting to launch multiple game modes
+- Fixed - Multivehicle - PU - Network / Cargo / Vehicles - Cargo within ship will desync from cargo grid on stream out / in
+- Fixed - PU - Stanton - Mission Content / Locations / AI - Security Post Kareah - Airspace turrets do not attack player for trespassing
+- Fixed - Elevator for Inner Station Transit at CRU-L5 not working
+- Fixed - PU - Reclaimer conveyor belt fails to remember box size in dropdown menu
+- Fixed - PU - Vehicles / Vehicle Feature - UI - Gyro Mode isn't activated by default when accessing remote turret for ground vehicles
+- Fixed - Aegis Redeemer - PU - Vehicles - Components - Paints - BIS 2953 - When the best in show paint is applied to the Redeemer, Origin manufacturer logos appear in multiple places on the ship exterior
+- Fixed - Anvil C8R/C8 Headlights not working
+- Fixed - Novokov/pembroke suit is not giving the correct heavy armor damage mitigation
+- Fixed KLWE Energy Rifle missing recoil
+- Fixed - AC - Team Tank Battle - Player's tank does not take damage in Tank mode
+- Fixed - AC - FPS Modes - Player does not take damage in certain AC FPS modes
+- Fixed - PU - Stanton - Mission Content - Jumptown - Location marker will disappear early on approach to Jumptown if another player has reached location first
+## Technical
+- Fixed 4 Client Crash
+- Fixed 2 Server Crashes
+- Fixed a Server Deadlock
+- Fixed a Backend Service Crash

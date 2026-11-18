@@ -1,0 +1,7 @@
+I was curious and looked in the code
+if (rd->m_pIHV->IsVendor(CIHVTools::EVendor::VENDOR_AMD))
+strArchitecture = pGPUDeviceInfo->architectureVersion == AGSDeviceInfo::ArchitectureVersion_GCN ? "GCN" : "Pre-GCN"
+This part of the engine hasn't been updated for years, just ignore it. We still have the exact GPU name in the log.
+Does that suggest SC has yet to optimise for newer AMD gpu's as Architecture is RDNA, RDNA2 to be exact?
+No it does not. We don't have to do any optimizations for certain Architectures (thank goodnes!).
+There will be many performance improvements in the future though once we have Vulkan.

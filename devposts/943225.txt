@@ -1,0 +1,51 @@
+Last Updated: :rocket: 2018-03-21 11:50am CDT / 16:50 UTC
+## Javascript Error on Launcher and Game Install:
+Seeking reports on receiving this error when installing: "A JavaScript error occurred in the main process - Uncaught Exception: SyntaxError: Unexpected token".  A shutdown/reboot and clearing of %appdata%\rsilauncher can clear the issue. If you need help, enter a ticket of Javascript error. Please also add reports to this Issue Council:  https://robertsspaceindustries.com/community/issue-council/rsi-launcher/RSIL-45619-Launcher_Error__fresh_install
+## Shipped Merch - Tracking number emails:
+We are aware of an issue with the tracking link in new merchandise shipment emails isn't correct. We have a fix completed and working to get this updated.The tracking number is correct; the link is not. Use the following to track:
+https://track.aftership.com/4px/[tracking number]
+## Disable Windows Game Bar:
+The Windows Game Bar is causing a growing number of crashes to black screen for players. For more information on disabling the Game Bar, see this article: https://www.windowscentral.com/how-disable-and-remove-game-bar-windows-10-creators-update
+- Right-click the Windows button.
+- Click Search, and search for Game Bar. You will find it in Settings > Game > Game bar.
+- Disable by clicking the switch under "Record game clips. Screenshots, and broadcast using Game bar."
+This info is also in the Graphics Guide: https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/graphics-gpu-guide-for-star-citizen
+## Insurance Claim and duplicate ships:
+We are currently investigating issues players have with duplicate ships generating during an insurance claim. Any ship and/or vehicle may have this happen. Current reports indicate the following:
+- The original ship can be used/insurance claimed, duplicates never work
+- The original ship cannot be used/insurance claimed, one or more duplicates work
+- Vehicles may spawn in a duplicated ship, but may not work
+:rocket:We are seeking more information based on that list of possible issues players are hitting.
+You can respond to this Issue Council with details:
+https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/STARC-53994-Claim_bug_-_after_fix___Duplicate_ships___Missing_ship_in_list
+See this post for details and more! We are resetting accounts to help: https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/duplicate-ship-insurance-claim-issue
+## Lumberyard error on graphics driver:
+We are aware of an issue with the Lumberyard screen popping up an error message for incorrect graphic drivers.  The message is incorrect, and pops because Lumberyard detects the Integrated GPU instead of the high performance card (Nvidia/AMD). This issue tends to occur on systems with an Integrated GPU (like Intel) and a graphics card (Nvidia or AMD). The Integrated GPU is defaulting for the game, instead of the high performance card.
+QA located the issue, working on a fix. You may need to verify your graphic card is preferred and selected for Star Citizen in your driver. Information will be added for this on this guide for Nvidia and AMD: https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/graphics-gpu-guide-for-star-citizen  look for "Lumberyard Error & Setting Preferred GPU".
+- Issue Council:  https://robertsspaceindustries.com/community/issue-council/rsi-launcher/RSIL-54493-Launcher_Driver_Outdated_Error
+## SOLVED - Insurance Claim Issues for lost/destroyed ships:
+We have pushed a hotfix directly to the game servers, Feb 15, 2018, about 2:30pm CST. All ships and vehicles can be returned using an Insurance Claim at the ASOP terminals. This resolves an issue of blocked claims for 3.0.1 newly purchased or upgraded ships and vehicles.
+## FIXED - Orders not including multiple items
+We resolved an issue with our store and systems for orders with multiple purchases of the same item. When you purchase multiple versions of a ship, upgrade ship CCU, in-game item, etc, you will correctly have those items attributed to your account. All existing orders
+## Authenticator Code and Duration Issues:
+We are aware  of an issue with authenticator codes not accepted when logging in. This may occur with the site Account login or Launcher. To resolve, you can clear the cache in the Launcher and/or web browser. You also need to select a Duration, default option not selected. See the guide: https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/two-step-authenticator-troubleshooting-guide
+## Headless Character:
+We are aware of an issue where characters in-game are suddenly headless and/or unable to wear clothing. You may have this happen when wearing specific armor in particular situations or locations. When your character becomes headless, you may also have problems with your flashlight and other clothing. This issue will require a reset of player data on our servers.
+We are currently investigating a solution for these issues to get everyone back to wearing full flight suits, using their flashlights, and flying again. Contribute your report depending on which reproduction steps best match your issues:
+- Headless issue: https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/STARC-47662-Character_headless_
+- Headless issue: https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/STARC-50775-Headless_Char
+- Headless and Flashlight issue: https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/STARC-48758-Missing_head_bug__Headless_character____Flashlight_not_working_
+- Headless, Flashlight, new flightsuit issue: https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/STARC-49090-Headless__Perma__After_Equipping_New_Flight_Suit___Flashlight_On_Suit_Not_Working
+## REC Ships are no longer available in the Persistent Universe:
+Ships obtained with REC were never intended for use in the Persistent Universe. While they have been available for a little while, the root cause of their presence in the PU has been corrected. REC Weapons are still currently available for use in the PU but please be aware that if you lose your ship with REC Weapons attached, you will lose access to those weapons in both the PU and Arena Commander!
+## aUEC & UEC Items Lost on Crash / Death / Disconnect:
+We are aware that items are being lost for a variety of reasons. We understand that this is frustrating but please rest assured that your UEC items are not permanently lost and you will regain access to them upon the next database reset.
+## Ground Vehicle Reclamation:
+When filing an insurance claim on a ship, always remember to first file a claim on any ground vehicles stored in the ship first. If this is not done, the vehicles stored within the ship will be lost.
+## Data.p4k and Download Issue:
+We are aware of the issues with the data.p4k download and install of Star Citizen. We are working towards a short term and permanent solution. We also have troubleshooting steps to help players with possible network, access, ISP, and other configurations that could be causing issues. Resolving this issue is taking additional time. If you have download and install issues, please enter a ticket with details.
+We are currently investigating a number of potential causes for these issues. Please use this Issue-Council Report:  https://robertsspaceindustries.com/community/issue-council/rsi-launcher/RSIL-45804-Failed_to_verify_file__Data_p4k_file
+## ISSUE-COUNCIL!
+As always, if you are encountering issues while playing Star Citizen Alpha 3.0.1 please take the time to contribute to the Issue-Council found here:
+https://robertsspaceindustries.com/community/issue-council/star-citizen-alpha-3/
+If you need to update your IC Profile, you can find those settings here: https://robertsspaceindustries.com/community/issue-council/specs

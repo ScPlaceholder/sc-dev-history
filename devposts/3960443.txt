@@ -1,0 +1,42 @@
+## Star Citizen Patch 3.13.0r
+Alpha Patch 3.13.0r has been released to the PTU and is now available to test! Patch should now show: VERSION 3.13.0-PTU.7307361.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Cave Entrances
+- FPS Cave Missions
+- Ship to Ship Docking
+- Signed Distance Fields (SDF) Shield Tech
+- Reputation UI
+- New Quantum Sensitive and Timed Delivery Missions
+- Pushables T0
+- Mounted Guns
+- Force Reactions - Staggers
+- Cyclone MT
+- Ship Naming
+Known Issues
+- The customizable nameplates do not appear to be visible anywhere on the Carrack Expedition
+- ASOP displays as "unable to spawn at this time" and could fine the player for spawning a ship with one already on the pad
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Wallace Klim can spawn away from his table, facing the wrong way and floating
+- Trolleys found in Area18 hangars are clipping through the floor, removing functionality
+- Players can spawn facing the wrong way at the start of the match or after dying in Arena Commander
+- The eclipse spawns with cockpit canopy ladder open with ladder and cover enter / exit animations broken
+## Major Bug Fixes
+- Vehicles should no longer fall through ship elevators at the end of the animation
+- Bright / Opaque fog volumes should no longer be seen encompassing cockpit of ships at Lagrange points near gas clouds
+- Leaving the docked parasite ship as it's undocking from the Constellation should no longer prevent players from entering the parasite ship again
+- The cost to refuel quantum fuel and the cost to refuel hydrogen should no longer be incorrect
+- Hologram advertisements at Area18 should no longer be seen through walls other objects
+- Fixed an issue causing the city scape around the ArcCorp planet surface to have an intense blur effect
+- The Argo Cargo should now be able to take off from landing pads
+- Chairs in the dining area of the Reclaimer should no longer be placeholder models
+## Technical
+- Fixed 2 Client crashes
+- Fixed a Mainthread Deadlock

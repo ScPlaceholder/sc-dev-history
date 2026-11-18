@@ -1,0 +1,1865 @@
+# Star Citizen Live: Tech Talk
+# https://www.youtube.com/watch?v=jomkOFHS13c
+[    4.8] So I had this plan and we're not gonna
+[   10.7] Look at this plan at this idea of what this show is gonna be and what not you know you and I we've been doing this
+[   17.4] Every quarter for the last you know since the big change the beginning of last year
+[   21.7] You know we started you know the February of 2025 and stuff like this. We've still got that show and we're still gonna do a bunch of that show
+[   29.3] but
+[   31.4] We just put
+[   33.2] 481
+[   35.2] 41
+[   36.5] 41 42 just put 482 out yesterday
+[   42.6] I've got you we're live yeah, what happened
+[   48.9] Well it started with the an attempt at a bug fix a month ago
+[   55.2] so we
+[   56.5] With this with this
+[   58.5] 4.8 release and the the way we've been doing patches this year we have
+[   63.6] Two streams when we work off the from the the working set
+[   68.1] We have a base stream that we use for the base
+[   70.8] Release of 480 and we have a hot-fix stream where we bring all the continuous changes along
+[   78.4] So there was an attempt at bug fixing something on the address that was actually creating some
+[   84.1] Performance issue somewhere else that was checked into that stream and nobody saw it and went it went through
+[   89.9] So we've been on the hot-fix stream now for a couple for 481 now going to 402
+[   95.7] in 402 we went back to the
+[   98.3] Base stream which are supposed to be at parity at this point except additional content because we've we've added additional content in the patch
+[  105.5] that change was included and
+[  108.0] so
+[  109.7] What's supposed to be a routine?
+[  112.2] update became a massive
+[  115.7] Wide sprawling issue
+[  118.8] Because basically the address was no longer compatible with its persisted copy
+[  124.3] And so what that would do is players have in their a sub terminal. Mm-hmm. They have a version of the address
+[  131.2] That's from 481
+[  133.6] This change which was not supposed to be in the stream at all
+[  137.7] Gets in there and so now the game server is expecting another shape for this
+[  143.5] The game server has a series of checks and balances for this
+[  148.0] But he's the last banker in the chain. Mm-hmm. And so for him if the schema is incompatible
+[  154.6] He's like there's data corruption risk. I'm out
+[  158.3] And so who's he in this analogy?
+[  161.6] He's well, he's the game server. Okay, right? So the game server is trying to spawn the address
+[  167.3] Wherever it is, right?
+[  169.2] So that's called the async spawn
+[  171.5] Chain and so as he's trying to resolve the object containers for this and to materialize the ship in game
+[  177.9] He comes around an incompatibility and then there's a
+[  181.5] There's a hard check for this because if we let those through if we disarm this check for example
+[  186.6] Then the game server might corrupt ships or might be twisting data and then we would go wider than that
+[  193.3] And so the game server would crash so
+[  196.7] There's there's all this
+[  200.5] So there's all this stuff that we have to work on and fix there's all this stuff that we are working on in fixing and
+[  209.9] Yesterday in a patch that was just supposed to just supposed to add, you know, the two new
+[  215.9] you know gattac ships and
+[  218.2] Some hot fixes to some of the more bring back the odd fixes from the odd fix branch and a forward completely
+[  224.9] Unrelated check into the address. Yes
+[  228.3] Somehow made it through validation or missed validation correct
+[  232.7] It's like this got in and now the server which is still built the persistence records, which are still built on
+[  239.6] 481 yeah expecting a 481 version of the ship also 480 40 they're they're
+[  245.2] Compatible really so it's expecting a 480 version of the ship got a 482 version of the ship without
+[  252.2] Knowing that there was supposed to be a difference and just went you know, I'm a head out
+[  256.5] That's right. You did the right the the sponge Bob mean
+[  259.9] Yeah, and so every time an address would be attempted to spawn that server in that region would crash
+[  265.6] And then restart and then try to load the address again and then crash again
+[  269.9] And so as players were unstealing more addresses and more shards more servers got affected
+[  276.9] Until you reach a point where now the ops team is in the background and they're like lighting all the fires like the Rohan
+[  285.0] Yeah, you were calling the Rohan. I saw you online like 330 this morning. Yeah, and
+[  290.2] And so we're looking at this and basically we start cordoning off shards because at the beginning we're not sure what the issue is
+[  298.2] So we start cordoning off shards and
+[  301.4] What happens in this case is like the more shards are getting offline the more
+[  307.2] The less capacity we have for players that are either entering the game or shard hopping
+[  312.2] We have a lot of people shard hopping and so
+[  315.8] What happens is they hit the dreaded 60,000 12 error, which means a there's no capacity in your zone
+[  321.1] There is capacity, but it's we've we've had to restrict it in the meantime
+[  325.8] And so we took a hard decision later in the night to prevent players from spawning addresses
+[  331.4] temporarily just to
+[  333.2] kind of stop
+[  334.6] Breaking other shards. We brought more shards online to keep that playing and then we basically
+[  340.7] Went through and manually
+[  343.6] rectified
+[  344.6] That's what we call percussive maintenance when you see that in the status
+[  348.1] It means we went in and we did a drastic measure to basically fix the addresses that were either spawned in shards
+[  354.3] Or still left in inventories to make sure that they have the proper schema
+[  357.4] And so now we know that all the addresses are are fine. We've lifted that temporary
+[  364.2] Stoppage for that ship and so now we're back
+[  367.6] That's what happened
+[  371.0] Completely at a left field absolutely unrelated to
+[  375.1] Stuff that we're working on the stuff that the patch was supposed to be and what I this is
+[  380.2] this is a cabaret trays being spawned by a
+[  386.1] Some some sub component in the address cargo room
+[  390.7] And it's not even anything specific in this case it's the address, but it's not because that's a capital ship or anything
+[  395.9] It's just it's just it could have been any it in that case
+[  399.3] So normally there's a check-in discipline that we apply especially this year because we have a different
+[  404.4] publishing model this year and so
+[  407.2] ships that have been
+[  409.2] Distributed already in a given major
+[  411.7] minor patch
+[  413.4] Cannot be modified now for some reason this check-in passed all the balochation check and ended up in the build
+[  419.5] this is
+[  423.1] We're gonna we're gonna get to the the show proper guys with what happened last night and been what up
+[  429.5] Until all hours and night I
+[  433.0] To say this is frustrating is understatement and understatement
+[  437.8] It's
+[  439.0] I'm gonna I'm gonna give you some time we're gonna get into the show proper and then I'm gonna come back to
+[  445.9] I'm gonna come back at some point about why is this happening in whatnot?
+[  450.2] It's it's if I've got you here. I've got you know, I've got you guys here
+[  455.0] I'm gonna I
+[  456.7] Have I have we have to get in it. We have we have to get into it. Absolutely. It's it's
+[  463.0] Yeah, let's go ahead and let's go ahead and get started. Let's go ahead and get started the show. Hi everybody
+[  467.6] It's a very weird start the show. I'm Jared
+[  473.4] Content director for cloud and premium games for our space industries and the host of stars isn't live
+[  478.7] Which is the show that you're watching right now
+[  481.1] Every
+[  482.4] Approximately every quarter for the last year and a half
+[  484.9] We have a show where we we have a schedule show where we have our chief technical
+[  489.7] Techno technology tech tech technical your pick one way off the whole script today the chief technical officer
+[  496.2] Benoit on the show
+[  497.9] To discuss what is essentially the current technical state of the game now? I want to be real clear
+[  503.2] This is about the technical state of the game
+[  505.3] Design issues or content issues what not not the realm of the people that we have on today
+[  512.5] Joining us on the show today
+[  515.8] Because we kept threatening to do it and we wanted him last time and whatnot and it's like he made the mistake of promising
+[  521.5] Oh, I'll be on the next one. Yeah is our
+[  524.5] Director of programming a gameplay programming the gameplay engineering gameplay programming yens both of all both at both in the moment
+[  533.1] and
+[  533.9] We're here to talk about for eight
+[  537.4] For a one for a two like this the current state of the current technical state of the game now for eight
+[  543.1] At this point went out about four weeks ago. Yeah about four weeks ago
+[  549.0] There's there was a lot of really great stuff before we just we just had a couple unscripted minutes about
+[  556.0] Some bad stuff and we're gonna get to more challenging stuff in a minute. Let's talk a little bit about
+[  562.6] How for a did I saw a lot of there was a lot of commentary online
+[  568.2] That for eight was as bad as 318 and what none we don't need to rehash 318 what not anybody most people watching the show knows
+[  577.6] 318 at this point
+[  579.4] Was it really as bad as 318?
+[  581.9] No, or talk to me about what's what's your?
+[  586.9] your
+[  589.2] Your take on how for it went
+[  592.6] Well for me if I take from the machine room side of things
+[  595.8] Yeah, like that we've been firefighting since we launched for it. I mean from a whole slew of different issues
+[  601.9] Some of them are to be expected when we launch a page that has this many amount of core changes like for eight has
+[  610.4] We've touched on systems that are really central to this reversal again. So we're talking about the entitlement system
+[  618.3] which
+[  619.5] Has not changed in years at this point and we've completely overhauled the entitlement system in 4.8 to power in
+[  626.7] Part the item in print system, but more importantly to pull the entitlements out of the patch cycle and persist them
+[  634.3] Across patches. So what we call the LTP layer is not just what you have in your inventory
+[  639.9] It's also what you own
+[  641.4] Your ships and all of the items that you purchase in game now have an entitlement record that holds the insurance loadouts for it
+[  648.6] the
+[  649.6] All of the
+[  651.0] Customizations that you make out of it and that's hosted outside the game and not outside the game but outside the game patch
+[  656.9] Which means that when we come back from a patch, there's no risk of oh
+[  661.1] I'm not getting my ship back right what you see in ASAP and the first patch will be exactly the same data source in the second patch
+[  668.5] And so that risk of like losing ships across is completely gone
+[  672.0] So we're very happy in fact that bit actually went very well in 4.8 even though up to the launch
+[  678.5] It was you know, there's always last-minute things they look at
+[  682.3] But we have been firefighting across a multitude of different issues that were tangential to that
+[  688.8] Some of them we can touch on a little bit because I've made some notes to talk about gameplay systems here and why they were affected by some
+[  697.6] Minor infrastructure issues that turned out to be massively contributing to the perception of the patch
+[  704.8] So I'll talk a bit about that in a bit, but basically we've been firefighting since 4.8 zero
+[  712.1] I won't I want to touch on two one thing because we we just had a one-off the cuff moment about the Idris last night
+[  718.4] All right, but two weeks prior to that we had another
+[  723.0] Downtime patch that you know needed a lot of rectification
+[  726.6] So the the people that the teams that run the online group were you know hard at work on this maintenance
+[  733.4] and unfortunately another one of those
+[  737.5] Unwanted check-ins came in during that 4.8 one cycle
+[  742.0] Where in an attempt to fix the VGL flight suits that was missing hands and feet
+[  748.2] and
+[  750.5] Another
+[  752.1] another check-in
+[  754.1] Came in to that removed sub components of this flight suits, but not just remove them from the flight suit
+[  760.8] Deleted them from existence from the game and that's not something that you can do in
+[  766.4] Minor patch and so clearly that's two instances in this patch where
+[  772.3] Changes and check-ins should have been validated and prevented and went in and then after that became
+[  778.1] Infrastructure problem because same issue here if somebody was wearing the VGL flight suit and
+[  784.7] Referred to these
+[  787.2] Entity classes that were actually representing
+[  789.3] I think the nozzle of then the back of the front pack of the suit then the game server would crush and so we had again
+[  795.4] To do percussive maintenance to remove those items
+[  799.2] And fix that and so that highlights to me a
+[  802.5] Massive issue with how we validate check-ins and you know how we get changes in the game
+[  808.7] across persistence until we have full
+[  812.3] Forward porting compatibility on the on the persistence layer, which we don't have at the moment
+[  819.9] Yes, what's your perspective?
+[  827.5] Well, it's
+[  830.1] You know
+[  832.1] Live service you always you always running right?
+[  835.5] You know, it's you always running like we're talking about forward patching. You know if we'd been behind closed doors
+[  842.1] You would have done that right?
+[  843.8] No one's ever seen the game until you've done that piece of technology
+[  848.5] But that's not who we are with we're always running and that's what makes it really really exciting to work here as well
+[  854.3] Right because you know, it's very we're putting us up out there all the time
+[  859.5] But if I look at this specific case you're saying like but we have we have checks
+[  865.1] And we have contracts on what you can and can't do in these
+[  870.0] substreams
+[  871.2] That we've already released where the data management is super super strict and obviously now we
+[  880.6] Invalidating them twice in a row. So it's time to to look at like high. How do we?
+[  888.2] How do we really?
+[  890.3] You know add that extra layer of protection. Why is this happening?
+[  896.9] Why
+[  899.3] Look, it's it's I know
+[  903.1] Have to be
+[  904.9] I'm allowed a lot of latitude here. I'm allowed. I'm allowed a lot of latitude here
+[  909.6] And I appreciate it from from the people that I work for
+[  914.2] but this is
+[  915.9] This is really frustrating
+[  918.7] This is how is it?
+[  921.7] I I understand that
+[  924.8] You know rich tire our senior game director went on stage at citizen con, you know two years ago and laid out
+[  931.5] The roadmap to 1.0. It's it's it's and I understand that through 25 and through the first half of 2026
+[  938.7] We have made some legitimately
+[  942.4] Ridiculous strides towards making this game actually the MMO was always trying to be young if people who follow this project
+[  950.5] 2015 2016 2017 a lot of a lot of you know the years before you know, it's it's very easy
+[  956.9] It was very easy to have questions like where are they going like where are they going?
+[  961.1] What why is why is this like that? Why is that like that?
+[  964.3] It's like it's it's we would often see questions has anybody ever played an MMO before do they know how to do this?
+[  970.3] is like some we and
+[  972.2] There's a reason
+[  973.6] There's a reason we made a major pivot. We made a major pivot at the end of 2024
+[  978.4] In 2025 we went into this content mode anyway, and we said no new features
+[  982.7] No new features we're gonna focus on content while we shore up all these things
+[  986.2] and what I was you and me sitting here more than a year ago, so like this and in the last year and a half
+[  992.1] we have
+[  994.6] Tripled the amount of content that we've put out
+[  997.3] Compared to 2024 compared to 2023 2022 all combined like the amount of content we have put out in the last 18 months is
+[ 1006.7] Amazing and the people here are working their asses off to make it as good as possible
+[ 1012.6] I don't doubt the intentions of any human being here. I don't doubt the dedication of anybody here
+[ 1019.7] We're not we're not here today to apologize for anything. It's a I know that we're
+[ 1024.1] All working as hard except Steve. We're all working
+[ 1028.8] We're all working as hard as possible
+[ 1032.4] Why does this happen? Why is this happening? It's it's I can't I
+[ 1037.8] can't I
+[ 1039.8] Can't sit here and do this job and feel good about my job without asking you outright
+[ 1043.9] Why is this happening if everybody is working as hard as I know they are and everybody is working is if dedicated
+[ 1050.1] Is everybody's as talented as I as I know they are why does something like this still have why does it happen twice in the last two weeks?
+[ 1057.5] No, tell you pointed to me
+[ 1062.5] I think the
+[ 1065.1] There's a part of that which is that we're still paying
+[ 1068.7] We're transforming the game. We're still transforming the game into an MMO
+[ 1075.1] We're still in the process of taking a game that used to run on a single server
+[ 1079.5] In a certain now obviously a server mesh which that's working
+[ 1083.5] but the game systems need to expand as well and
+[ 1087.7] If you add the content pressure on top of that right of getting content into the game
+[ 1093.0] Releasing it at the same time stabilizing it hardening it hardening it and features that come in and do their inverse new features come in and they
+[ 1100.6] destabilize the systems
+[ 1104.4] Without stronger guard rails that also need to evolve with this that's where we ended up
+[ 1108.9] And so I think that to be honest, I think at this right now
+[ 1112.5] we're outpacing our ability at of
+[ 1115.8] verifying
+[ 1117.2] Everything that's been being added to the game and this is where we need to put a lot of our energy at the moment
+[ 1123.0] It's to put in those guard rails so that you know
+[ 1127.3] The the check-in that would cause this crash
+[ 1130.8] Issue right though. Those are identified at this point
+[ 1133.8] And so it's all about adding these validation frameworks to prevent that from happening and keeping the data stable and fully validated now
+[ 1142.4] that sounds
+[ 1144.4] Well, why didn't you do that before right?
+[ 1147.0] You're not saying that there were no guard rails. No, no
+[ 1151.1] There are guard rails in place, but they're not keeping up with the pace, right?
+[ 1156.1] Yes, exactly like we create more we create more content and more features than
+[ 1161.7] We have time to add guard rails and to prevent these these these cases, right?
+[ 1168.0] You know an example I could give on
+[ 1171.9] something unrelated to persistence, right, but you know you have more we're at the point now
+[ 1177.5] We used to like we make a weapon we make a ship. That's it, right?
+[ 1181.3] Now we do we have a team making weapons. They balance the weapons the
+[ 1185.2] You know, they design the weapons they work in that realm. They have guard rails in there, right?
+[ 1189.7] They know what to check for outliers data sets, you know how the our powers distributed, etc
+[ 1196.0] You go to the next team the next team is making ship components. They have their guard rails
+[ 1200.3] They have their approaches. They have their things right they balance it out
+[ 1203.0] You have another team that's making recipes and dismantling right they have their own guard rails
+[ 1207.3] They're out their own systems. You have another team. It's making economy. They have those things to shops
+[ 1212.0] They add pricing they make sure that that's balanced and then they move on to another team
+[ 1216.9] It's making adding this content to loot boxes, right now
+[ 1220.0] We didn't have that a lot of while ago, right and then mission rewards added in there
+[ 1225.3] All of these have validation, but there's no holistic validation across right where we were at the point now where all these systems
+[ 1234.0] communicate with each other all the time, right and
+[ 1236.8] What crafting has changed the game quite a bit on that on that area, right?
+[ 1241.5] And so that translates into more weapons being created more content being created more missions giving more rewards and all these things need
+[ 1248.9] To be validated together not in silos. Is this why is this why in 4-8? There was the
+[ 1255.5] There was the thing where there was there was a weapon. I think it was a ship weapon
+[ 1259.2] I can't remember specifically, but you know you paid
+[ 1263.4] 20,000 pulling a number out of my butt here
+[ 1265.3] You paid 20,000 to buy the ship weapon, but then you dismantled it and you got like
+[ 1271.2] $80,000 worth of materials and so you could sell in one area
+[ 1274.8] that you can send so people were just buying the vendor thing and you're saying that's because the
+[ 1280.1] the weapon and the price and the
+[ 1281.8] The pricing and everything for the weapon was validated in one by one team in one silo if you will and then the
+[ 1289.6] The validation of the crafting and the breakdown stuff was done in a different one sure and there wasn't something
+[ 1296.6] that transversal to check all that and and also like there's
+[ 1301.6] We're get we're definitely now post 4-7 in a realm where just human validation is not enough, right?
+[ 1308.4] And so a lot of game design data is typically, you know managed by the team
+[ 1313.4] But I think that we're way past that and we need machine validation for everything because the game it were the rate at which
+[ 1320.7] We build it and the the amount of technology we're putting in is just too fast for for validation to keep up
+[ 1326.9] Okay, and we can't just rely on endpoint validation because in this case it was machine validation that caught the error
+[ 1335.2] Yes, and stopped it from corruption. Yes. Yeah, exactly like
+[ 1341.2] Correct yes, exactly so
+[ 1344.8] It's a come earlier so is
+[ 1347.1] So for validation we're gonna let's just stay on this topic here for a bit. It's
+[ 1353.9] people are going to as
+[ 1356.9] talented as
+[ 1358.4] Everybody has the skills everybody is in this like this, you know mistakes are gonna be made and the wrong thing is gonna be checked in
+[ 1363.3] And it's like this and and the game is
+[ 1367.7] The game is growing at a scale
+[ 1369.8] Like I've been here for more than a decade and stuff on you know, it's a Jared mean drink anytime I talk about how long I've been here
+[ 1376.8] You can just see it in my hair now
+[ 1378.8] I am so incredibly proud of the game right now
+[ 1387.0] It's the last 18 months have hands down been the best 18 months that this game has had in
+[ 1394.5] Since the pu went online in 2015 and anybody that says otherwise is being disingenuous
+[ 1400.4] They just are you know
+[ 1403.0] I'm being hard with you guys here. I'm gonna be a little harder. I'm gonna be hard. I'm being hard with you guys as well
+[ 1408.9] It's like the last 18 months have been phenomenal for the progression of star citizen
+[ 1414.4] It's our
+[ 1416.4] Daily average users are up our concurrency is up the the content is the best content
+[ 1421.8] We've ever put out TSG is finally realizing we finally have you know, you know coordinated space combat in our you know space kind of bad game
+[ 1431.3] Is this just it is but it sounds like we're moving we're moving fast or we're moving fast
+[ 1439.2] We're doing a lot. You said the guard wells aren't catching up. How do we I get machine validation
+[ 1445.3] I get you got to build build some stuff. Is that all we can do is this is that?
+[ 1452.8] make me feel
+[ 1455.2] Make me feel better about how we're going to fix this is what I'm asking because if I feel better about how we're gonna fix this
+[ 1461.6] Maybe there's a reason for people watching to feel better about how we're gonna fix it. Sure. It's just just the validation issue sure so the
+[ 1469.7] It's it's a problem. We've known we've known about right and we've been trying to solve right and so the more recently
+[ 1476.2] There's more
+[ 1477.9] Changes that have been coming from the engine side to give us a framework for validation when I say framework for validation is
+[ 1485.0] That game designers can participate in this right?
+[ 1488.5] It's not like oh they need to end it up in engineer and engineers busy and you can't do the work and now the validation is not added
+[ 1494.3] Which is the mode that we've been in in the past right and so we've been in the in the process of building a validation framework for all game systems and all
+[ 1504.9] pieces of data stored in the game that can do
+[ 1508.3] Queries across all data. Whatever. It's a I have a mission and dislocation
+[ 1513.1] That requires this that pays out this is that an outlier compared to you know
+[ 1517.8] And so being able to do cross data queries across the entire game, which is not something we've had before
+[ 1524.2] Which allows us then to just express these checks find out liars into like mission payouts find out liars into
+[ 1531.0] how
+[ 1533.1] You know if we go back to the example of the gun is for sale at this location at this price
+[ 1539.5] It's dismantleable into these components that can be sold at this location that
+[ 1544.5] exchange values too high right and so
+[ 1548.2] Creating these validations will become part of the design work completely with this framework
+[ 1553.6] Which will allow us to have all these guard rails on top of that. We've got the technical the more technical validation, right?
+[ 1561.8] so the two issues we got in for it
+[ 1565.5] related to modifying ships that were already in the
+[ 1569.5] distributed in the main patch and
+[ 1572.4] Removing entity classes for example
+[ 1576.0] Both of those things already have lock checks right now, and that's the first thing we did when we discovered them
+[ 1582.6] But we're gonna keep adding more of those compatibility check now
+[ 1586.5] 4-8 also has the beginning of database patching so
+[ 1592.8] In 4-7 we didn't have the full ability to persist all the crafting properties on the weapons
+[ 1597.8] So if you crafted the weapons all the modifiers were not necessarily gonna persist through LTP right in 4-8
+[ 1604.6] We have
+[ 1605.6] introduced in the back end patchable serialized variables
+[ 1609.1] We didn't talk about it much because it's kind of mixed into the crafting system, but
+[ 1614.1] Basically, we now in the schema of a component which stores the data for something
+[ 1619.2] Let's say it's a weapon right and I have the modifiers for it. Let's say elongated nozzle faster damage rate, whatever
+[ 1625.7] these values
+[ 1627.4] We now know which one of those values is patchable
+[ 1630.8] Right, and then we're able this way to persist them and patch them in the next release
+[ 1634.7] We also determine which ones we store when you store it. We don't store all variables which used to be the case
+[ 1640.5] And that's the foundation for us to keep working at what we really want to achieve
+[ 1645.1] Which is a forward patchable data set so that now these even if if you know
+[ 1651.1] The ship team goes in changes all the serialized variables for a ship and rejigs the whole
+[ 1656.5] Object container layout for a ship that will be able to live migrate your ship to the new version without
+[ 1663.1] crashing the game servers in the meantime, so basically embracing this
+[ 1667.1] Moveable data set, but that's tricky to do obviously we've been at this for a long time
+[ 1671.4] But for it has the beginning of that
+[ 1674.1] for just for crafting properties, right that that's great for
+[ 1679.2] Allowing us to
+[ 1680.9] To better manage when somebody checks something in that they they do but what I'm talking about
+[ 1686.6] What are we doing to stop?
+[ 1689.1] The the check-ins that aren't supposed to happen sure like through three validation. I want to let's pre-validation
+[ 1695.1] Right, so when I call this validation framework. I'm talking about is pre-checking. Okay, it's something that I I'm a
+[ 1702.0] I'm working on the game. I'm like I'm gonna add a new gun and I'm gonna price it this and I'm gonna make it super powerful
+[ 1707.6] Right well that would fly I could not yeah, I could not check that in right the system would go
+[ 1713.3] Wait, you need some you need some authorization before you can check this in because of these reasons
+[ 1718.5] Which currently we don't have something like this. That's cross-checking right obviously in each silo. Yes, but not with him
+[ 1725.8] Is this something?
+[ 1727.6] Is this something?
+[ 1730.3] We're gonna have I'm gonna have to I have to ask you the one question here
+[ 1733.1] Is this something that we're talking about that's that's a 20 27 thing is this other parts of this?
+[ 1739.2] Least they can go that can go in is there is there hope for this?
+[ 1743.2] Yes sooner rather than later it wouldn't need this yesterday like I'm aware we need yesterday
+[ 1749.1] But no we're working on this right now like
+[ 1752.5] To get all these checks and balances in place like I don't know if it will be like a 4-9 kind of thing
+[ 1758.2] But it's it's happening now. Okay, because we everybody I run the table
+[ 1763.0] Knows now like it's clearer from the forward experience that machine validation is required across the board so
+[ 1769.9] So why isn't this?
+[ 1772.2] Why isn't this just?
+[ 1774.2] Let's take this tackle this from another from another angle
+[ 1777.8] Why isn't just throwing more QA?
+[ 1781.7] At this the answer what why isn't this just higher?
+[ 1786.5] 500 more QA people and
+[ 1789.2] We can and this gets fixed it's I suspect you probably have an answer for this
+[ 1796.7] You know I mean in this case it took the situation of like the data
+[ 1802.4] How the database on for it 48 48 one was and with the new data from 48 to to create the situation
+[ 1810.3] And that's not something that they create environment has so wherever we do
+[ 1814.7] We as a technology group would have to come in and at least give them that and then if you put your 500 QA on it
+[ 1821.1] Then then they would probably one of them would have spawned a mid-race
+[ 1824.5] But without the environment you could put as many as you like on it. No one would ever have discovered this situation
+[ 1831.9] This is just too far removed and I think that's that's so come back to the large data set right as you have a large data set
+[ 1840.4] This you just can't scale
+[ 1843.2] In manpower alone you need something that scales
+[ 1848.3] way beyond that I
+[ 1850.8] Suppose if you just hired you if you just hired
+[ 1854.0] 500 QA people that doesn't mean there's 500 requisite programmers that can all that can all take that the stuff and fix it
+[ 1861.3] Either I think they would meet some frustration with yeah, they're they're they're out with an hour our ability to
+[ 1868.2] Go it would be we certainly
+[ 1871.5] Creates like separate set of challenges
+[ 1874.7] Also, what's frustrating with this situation is that you know, we've done multiple patches where this just worked fine
+[ 1879.9] Oh, yeah, we've been on this we've been putting out a new piece of content every two weeks since the beginning of this year
+[ 1885.8] You know last year we move, you know
+[ 1889.0] for 2024 and before we were on a schedule of one patch every three months and we didn't I think we actually hit every three months
+[ 1896.6] Once in the five years that we were on that cadence from 3.0 to to four
+[ 1903.2] Eight by way, I can't remember which one which one was January last year
+[ 1907.0] We were trying to do a patch every quarter and we actually hit the quarter date
+[ 1910.8] Maybe one or two times and all that time, but so it was four patches a year
+[ 1915.2] Yeah at most basically is what we were doing and then in 2025 we as part of this major initiative
+[ 1921.7] We switched and we went 11 patches
+[ 1925.7] We went 11 patches in 2024
+[ 1930.0] Again, it's
+[ 1933.9] Again, I don't want to sound like a broken record the content that was that was in those patches is some of the stuff
+[ 1939.9] I'm most proud of that these teams that their team here has ever put out
+[ 1943.6] But we we were able to do that because we pulled back on features
+[ 1946.9] We pulled back on features and it was in which to constant team
+[ 1949.9] There were a couple features here and there that would sneak in and whatnot because oh well
+[ 1953.2] We need this for that and other thing for the most part was all content in 2026
+[ 1958.3] We now switched to and it's been really paying attention following the development would see this
+[ 1963.8] Sorry, we've switched to a bi-monthly patch where we put out a major patch every two months and we do these
+[ 1971.3] Two-week content drops in between so every two weeks
+[ 1975.1] There's there's there's there's there's a certain thing gets turned on people who have been in PT who have been testing
+[ 1980.9] They tested this aspect and then it wasn't there in the patch
+[ 1984.0] And go oh because it gets turned on two weeks and gets turned on two weeks after that
+[ 1987.1] Yes, and that was to to help with engagement throughout there
+[ 1990.7] You know throughout the year to give people more things to do to keep people more interested
+[ 1993.9] It's one of those things that you do when you're running a MMO and
+[ 1997.5] That was that's been great up until the last
+[ 2000.8] Mm-hmm four weeks. That's worked. Yeah, and and so it's I
+[ 2009.0] Don't want to heart I don't want to harp on this
+[ 2010.9] I don't know how much of this is
+[ 2014.0] My own personal I'm stuck on it or whether this is what I'm supposed to be doing
+[ 2019.1] I mean with with with with with the with the show, but it's it seems like it seems like
+[ 2027.5] We know what we have to do you have to solve the process for sure
+[ 2031.0] We have to solve the process we have to we have to solve the process
+[ 2034.0] We have to build more tools we have to scale our validation to match
+[ 2039.1] The rate of content yes that we're doing and the complexity of content to right because this year
+[ 2045.5] We also turned on features we turn on the features picket this year after pulling back on it in 2025
+[ 2051.8] I think I've been having I can't tell if I've been messing up my years this whole time
+[ 2056.9] All right, how confident
+[ 2062.2] How confident do you feel?
+[ 2064.3] How confident do you feel that you've got a handle on this? I think on the I think we know what we have to do I
+[ 2072.7] Think it's gonna take a while to get all of these guardrails in place right
+[ 2077.7] But in the meantime, I mean we just have to respect the rules that we've set forward in the meantime
+[ 2083.5] Right so that while we can't machine check everything this read the second and to be honest
+[ 2088.5] I'm not talking about months of work here on on these validation frameworks, right, but it's about putting in
+[ 2095.0] The ability for every team to contribute guardrails, right which right now
+[ 2101.2] It's a bit splintered and so we need to bring this all back together
+[ 2104.4] So I'm confident that for the especially the errors we just talked about right like
+[ 2111.3] releasing a piece of content that crashes every server on launch or
+[ 2115.9] twice right or
+[ 2118.3] Or
+[ 2120.7] Evident misconfiguration of items or costs or recipes, right?
+[ 2126.4] I'm confident that that will solve the issue that those issues will no longer occur as long as we respect the validation nobody
+[ 2133.4] Tripped them off which you know the valid next battle the validation issues. Yeah, exactly. I think that we can eliminate that
+[ 2141.8] All right
+[ 2144.1] So for the last
+[ 2147.1] 35 40 40 minutes we've been off the program here a little bit the issue that went out
+[ 2155.3] issue that happened with 482 yesterday
+[ 2158.2] because of a validation issue I
+[ 2161.4] Didn't feel like we could go into the program that we had originally planned without
+[ 2167.1] Addressing it. It was just I was very frustrated and sometimes I abused my position
+[ 2174.1] Here to do this. So you're you're laughing. I'm the one that's going to get back and see if you know my bosses are still happy with me or not
+[ 2181.7] We do have a lot
+[ 2183.8] We do have a lot to cover a lot that we wanted to cover and stuff and we're going to start getting into that stuff now
+[ 2188.6] I hope
+[ 2190.2] Watching you'll forgive the diversion that you'll agree that it was worth it
+[ 2195.2] I think there was some very useful stuff there
+[ 2199.0] And I do want to I do want to say I have to say this this is this is this is me personally
+[ 2205.8] so this he goes it was
+[ 2208.9] It was an issue with a ship yesterday
+[ 2212.4] But the ship team the ship teams around the world there's a team here. There's a team in Austin
+[ 2218.9] There's a team of Montreal have been some of the consistently
+[ 2223.1] quality delivering
+[ 2225.1] Delivering teams of this project for years and years and years and years and years, you know, it's easy
+[ 2230.9] It's it's the last couple weeks have been a bit rough, but it's
+[ 2236.5] Man, it's like where would we be? It's it's where would we be without the ship team?
+[ 2240.3] So it's like less this seems like we're coming down on the ship team today
+[ 2244.4] That is not my intention. They they happen to be they happen to be in the hot seat, you know
+[ 2249.9] Yesterday it's like this but this could literally happen to anybody and it did it happened
+[ 2255.2] It was it was it was a whole nother team two weeks ago
+[ 2257.7] And if we don't get these guardrails in place, it'll be a whole nother team two weeks from now. Yeah, so so
+[ 2265.5] That just I can't for me the takeaway is human guardrails are not enough. Yeah, that's the thing. Yeah, just
+[ 2272.0] it's
+[ 2273.5] Yeah, I just didn't want it
+[ 2275.1] It's unfair to make it seem it's unfair to make it seem like the ship team hasn't been absolutely killing it for years and years
+[ 2282.1] And they still are so
+[ 2290.1] Deasink
+[ 2292.1] Let's just let's just
+[ 2295.8] Nobody is ever gonna say yes to being on this show ever again
+[ 2304.0] Then why you I put you on the hook to write a big ol
+[ 2308.1] a
+[ 2309.2] write-up on on on Deasink and
+[ 2311.5] I know it's being worked on I've seen the draft and what it's being worked on between every other
+[ 2316.9] Initiative, you know time spent writing is time spent not actually
+[ 2320.4] Fixing things and making processes better also. We got a couple guest stars in it. I'm hoping we'll make a difference too
+[ 2326.6] So that's still that's still underway. That's still underway and it's it's it's more like a it's it's when we're done with it
+[ 2333.4] It's gonna be more like a one of those it's not a design brief
+[ 2336.2] That's that's not the right thing but you kind of like what you saw with the gameplay guide
+[ 2339.0] It's we're gonna we're gonna break it down and I promise you it'll be the most educated
+[ 2343.4] Thing that you'll ever see from a game from a game studio on on what it is and what what it isn't what causes it and what doesn't
+[ 2349.5] Cause it and stuff like that and the particularities of our game architecture. Yeah, but that said
+[ 2358.5] when 4.8 went out I
+[ 2361.3] Started with four points of four point seven was was was great overall
+[ 2364.5] But but there has been that there's a reason I had to call you and ask that there's been this mounting
+[ 2372.4] De-sync for the last several patches for the last several patches it starts out small and it gets bigger
+[ 2378.1] It affects some people more disproportionately than others
+[ 2381.1] There are there are people there are people that I have talked to where they're at a bar citizen
+[ 2385.5] Or just reading the chat here today or in any other show where they're having a
+[ 2391.2] Virtually unplayable experience and then there are other people who were like that's not my experience. I'm having you know
+[ 2396.7] It's I'm having a wonderful time and whatnot
+[ 2401.3] What can't without just reading the entire doc that we're doing I can't get past this show without talking about it at least
+[ 2409.3] Yeah, what do we know is
+[ 2413.4] Causing at this point. What are we doing to resolve it?
+[ 2417.3] just a simple question well, so
+[ 2421.3] What we know about right now is that there are some meshes when I say meshes
+[ 2426.7] I mean dedicated game server inside a shard that are running way below
+[ 2432.8] FPS spec that we want right and so
+[ 2435.9] We don't have a handle just yet about what is actually causing it
+[ 2440.1] We do have performance captures and we're tracking at least at least six to eight
+[ 2445.3] Very specific optimizations that need to happen one of them is within the area component which is used all over the engine
+[ 2455.0] area and zone component they kind of go in in hand but
+[ 2458.5] where
+[ 2460.8] Again because we're pushing more content right the hierarchy trees of the game world is much bigger
+[ 2466.4] So there's more areas more zones more subdivision more more more more more
+[ 2471.0] There are some areas of that where if you add a lot of entities in those that enter or exit these areas
+[ 2477.4] There's you know the engine provides the listeners to see you track entities entering areas or leaving areas or zones changing right and
+[ 2487.6] Obviously there's concurrency
+[ 2490.5] Constructs around this to prevent one thread from accessing another thread right and so
+[ 2496.4] Just keeping it simple without diving too much into the low level
+[ 2499.1] Which we will probably in some of our decent areas, but there's lock contention in the area component the moment in some place
+[ 2506.6] There's lock contention. Okay in some areas of the game
+[ 2511.3] What I literally mean area like you know if there's many entities in this spot because of the way it's configured
+[ 2518.4] We're seeing like
+[ 2520.6] Basically FPS drops in those areas
+[ 2523.4] And so we're tracking about like I said six to eight major optimizations that we're trying to get in and hot in our hotfix channel
+[ 2530.1] Right to try to get this FPS back up to the spec that we want which is above 20, you know
+[ 2536.5] Across server FPS server FPS correct. Somebody's gonna take so I'm gonna take that clip say oh
+[ 2542.1] It starts it isn't long looking for 20 FPS and gameplay and what I don't know
+[ 2545.7] And it's important to know that like when a server is running low FPS
+[ 2549.5] He doesn't mean that it will create these things but especially when you're interacting with entities that are simulated on that DGS AI
+[ 2557.9] AI characters NPCs
+[ 2560.7] Then the you're gonna perceive these things because the source is slow at creating its its output
+[ 2567.8] and
+[ 2570.1] You know the the traffic goes from your game client to the replication node
+[ 2575.3] Mm-hmm
+[ 2576.4] replication node to game server now if game server is running slow at the beginning of the frame is
+[ 2581.7] Taking the state from the game from the network to the game and applying it at the end of it
+[ 2586.1] He's applying the changes back to the network, right? If that loop is slow, then your client's gonna predict
+[ 2593.2] Something and then that prediction will get corrected the next frame and that will create a rubber band, right?
+[ 2600.1] And so that's the gist of why there's desync in general
+[ 2602.5] Why does the client have to predict because if he doesn't predict then you're gonna be at the tick of the server and you'll see like
+[ 2610.1] Even if it was running perfect you'd see it in an FPS like I guess you're
+[ 2615.5] because your need for it to be you know so so responsive is too high is
+[ 2623.2] this
+[ 2624.7] So
+[ 2625.7] All right, so this so this so this so that so the get the meshes inside the shard are certain ones
+[ 2631.7] Are slowing down correct? It's not widespread in all areas which is why some people are in not gonna
+[ 2637.1] I'm gonna tell you what I'm not gonna tell you which areas
+[ 2645.2] I gotta ask the obvious question then at least it's obvious it seems obvious to me
+[ 2650.8] Is this is this related to the?
+[ 2654.5] Ship cleanup or lack lack thereof
+[ 2657.0] That's one one of those things that we're looking at is how the what how aggressive or not the ship cleanup is actually happening
+[ 2664.6] That's one of the things we're looking at yes
+[ 2666.4] I mean because you can you can you can you can watch a
+[ 2669.8] Twitch stream or look at a you know she counts report and you can you'll see you'll see you'll see
+[ 2676.9] I was I want to say dozens and dozens, but I feel like it's even more you know brick ships
+[ 2682.9] Everywhere because meeting you know with with the with the with the insurance changes and whatnot you know breaking these ships
+[ 2687.9] Yeah, and whatnot is this it's
+[ 2693.0] Is this viably part of what what it is is this is this in part yeah
+[ 2696.8] That's for sure doesn't help because the more entities are replicated the more the server needs to do every frame
+[ 2701.6] And so that contributes to this so yes, you can usually find it when you look at a server that is performing great usually has a larger a
+[ 2710.8] Larger vehicle population certainly the server that is performing great has a larger now a ferment not performed so great
+[ 2718.2] Tends to have a slightly larger vehicle population or a very large active population that can also happen in general just a lot of everything where we're a
+[ 2727.8] We're quite a heavy game
+[ 2729.5] Entity wise we want to avoid getting to the sort of size that we were in
+[ 2734.4] Stanton before we went into meshing right because that was consistently
+[ 2740.6] Difficult to manage. Yeah, but if we're okay, so so if we're so if we're already
+[ 2748.3] Stezig is like fix it super helpful dude
+[ 2753.6] Oh man, it's so easy we're done with this subject. All right, you know what Stezig?
+[ 2758.2] I honestly none of us had thought about that. That's yeah, all right. We don't even need to do the rest of the show
+[ 2763.2] Do we yeah, I know that there's been there's been some changes related to
+[ 2768.9] How we perform entity cleanup so an
+[ 2772.0] unattended vehicle cleanup used to be a separate system right that ran on its own
+[ 2777.0] That's been merged into what we call the density manager, which is basically an engine functionality
+[ 2783.7] that will look at overpopulation in
+[ 2787.8] In clusters of areas that obviously designers of control over
+[ 2792.2] You know, for example, we want to make sure you know like the exit routes for hangers are cleaned up
+[ 2797.1] And so these are you know, I have active cleanup zones configured, right? That's designer controlled now
+[ 2802.7] The engine will then after that apply the logic on the volume determine. Oh, there's too many of
+[ 2809.3] X in this area and it will start popping stuff out right easy on the duty cleanup now for ships
+[ 2814.4] The unattended vehicle clean up system used to be separate now
+[ 2820.4] It's been brought into the density manager. I think end of last year something like this. So it's been a while
+[ 2826.6] and this one tracks whether there's passengers on a
+[ 2830.6] player passengers on a on a vehicle and will
+[ 2834.0] Based on a certain timer configuration and the values are different depending on the areas will
+[ 2840.3] Either stow back the ship into the originating inventory or destroy it depending on if it's a player-owned ship
+[ 2846.8] Or if it's an AI ship depending right now
+[ 2850.6] It does look like maybe there's a misconfiguration in key areas that are leaving ships there
+[ 2855.4] So we don't think the system is
+[ 2857.5] Incorrectly functioning. We think it might be
+[ 2860.5] inaccurately configured
+[ 2862.0] Okay in some areas and so that would allow a very popular area to just accumulate ships like crazy
+[ 2868.5] Right and so that's what we're looking at right now. Are you able to are you able to clean up?
+[ 2873.9] Are you able to clean? Are you able to differentiate between?
+[ 2878.4] You obviously mentioned a ship that has a person on it. That's great, but a
+[ 2883.8] ship that doesn't have a person on it, but it's still a viable ship versus a
+[ 2889.1] Brick versus a destroyed husk versus a you know a brick ship from the imagery
+[ 2894.4] You're able to distinguish between and set timers for
+[ 2898.7] I'm not sure if the density manager will have a modifier specifically for brick or not
+[ 2905.5] But it can I it pens you it does or it will it will okay eventually if it doesn't it will yeah eventually
+[ 2914.2] And it's less about timers is more about density
+[ 2917.0] It's sort of trying to say you have overpopulated this area
+[ 2921.3] Since that's about like that ship has been there for for a long period of time. It's more like there's a lot of ships here
+[ 2927.5] Yeah, let's remove one. Let's figure out which one is best to remove for an attendant vehicle does have a tent the timer as well
+[ 2933.8] So you kind of have these like it's sort of like we talked about validation
+[ 2937.6] You start with a timer then you start adding intensity then you start sort of building up these
+[ 2943.4] Views of the world to kind of understand which areas are problematic like oh, yeah, the entrance to a hangar
+[ 2949.4] We have to be super strict. Yeah
+[ 2952.3] There's there's a place as we're talking about this something that pops in my mind that I think is also
+[ 2957.8] You know in our
+[ 2959.5] Process now not even development process, but let's see. Let's call it live operations of the game
+[ 2966.1] We're very lean in terms of our live operations at CIG because we're in development, right?
+[ 2971.6] And so
+[ 2972.7] Even though we do run a life service the we try to run a really lean ship right on that on that side
+[ 2979.3] And so we don't have an army of site reliability engineers that are looking at like every aspect of like oh
+[ 2988.1] a shark 25 is an overpopulation of
+[ 2992.0] ships at Jackson Swap in you know between this time frame this time frame like we
+[ 2997.7] We don't go in that depth right and so we track overpopulations across all shards
+[ 3003.9] Right, but we can't go granular into this but that is an area where we could improve this and detect those things to
+[ 3011.9] Better tune these values typically right now we will tune the density manager values every patch or every hot fix
+[ 3019.1] But that is a slow cadence
+[ 3022.0] Compared to how you would react if you see oh my god, you know on every sharp dislocations loaded
+[ 3029.2] You know let's affect the density manager change right now right now
+[ 3032.5] We don't have the ability to do that live and that's a problem that would that would improve the game quite a bit
+[ 3038.8] there's folks in the
+[ 3041.1] What I don't want to I don't want to just miss that
+[ 3044.3] There's folks in the chat that are like just make the make the brick ship salvageable or give towing mission stuff
+[ 3050.9] Those are all they are salvage it belongs for us. I know yeah
+[ 3053.8] And the towing missions, but it's those are all game design and and mission design stuff
+[ 3059.2] That's not anything that the tech and even then a solution that requires
+[ 3065.2] entirely player
+[ 3066.8] It relies on the players entirely to solve is not going to get us where we need I don't I don't disagree
+[ 3073.9] I know it's it's the intention. You know, they're supposed to be salvage both or not
+[ 3077.3] They will they will be there
+[ 3078.9] It's just you know having towing missions to take them away and dump them
+[ 3083.1] Somewhere is a great idea and stuff like that, but that can't be the only thing there still needs to be a
+[ 3088.4] technical
+[ 3089.4] And you know solution to clean this up. It's the reason I asked the reason I asked if it could separate everything is because
+[ 3096.4] Yeah, and and
+[ 3099.2] I don't think there's I think I'll think all of them are salvageable. It's it's there's there's
+[ 3103.8] I'm trying to remember an old conversation right now where there were rules about why this one could be salvageable in this one
+[ 3109.1] I know there's been changes related to this as well
+[ 3113.1] But like it's in my head in my head, I'm just like why don't we just
+[ 3117.9] Disappear every brick ship right now until we get a handle on this like like like like just crank the crank the cleanup on
+[ 3124.6] Bricked ships that we know don't belong to anybody just like they get to exist for one and a half seconds and then
+[ 3131.8] They're gone. It's like it's it's like it's there. There's I'm just imagining the reddit post after that
+[ 3138.2] My ship disappeared one second after a brick ship
+[ 3141.4] I'm gonna get a brick ship right a brick ship is there they're back at their back at their ASOP terminal and they've
+[ 3147.8] They've reclaimed it. So what why can't it just?
+[ 3151.8] Vanish now now I'm sure I'm certain
+[ 3154.8] Whenever I go off like this and whatnot and it sounds so simple and it sounds so obvious
+[ 3159.6] And then I get back to my desk and I've got I've got an engineer or something
+[ 3163.0] I guess it's not that simple. Jared. There's this and that there's that there's that dependency and blah blah blah
+[ 3168.0] And I'm like, yeah, I'm just the layman moron who had a very simple idea
+[ 3172.6] But it just it's hard because it's it's I'm no different than half the people watching the show
+[ 3178.9] It's just it's just there are times when
+[ 3182.3] something seems
+[ 3183.8] So easy and so obvious and it's like just do that because that's what my head was screaming that whole time
+[ 3190.1] That's where I was going just just until we get a handle on it destroy the bridge ships right away
+[ 3196.0] I always say if it was easy it would have been done
+[ 3200.5] So by that you have to assume there is reasons that makes it not easy
+[ 3206.6] And it's usually like the complexity in the interactions like when we're talked about
+[ 3211.6] you sell you sell a gun and then you
+[ 3215.8] Deconstructed and then the material can be sold somewhere else for something else these kind of complex interactions
+[ 3223.0] Between lots and lots of different systems are usually what?
+[ 3227.0] Stop that for doing something that take from a tech point of view is literally a flag in the database
+[ 3231.7] It says that's break I can treat it as garbage. Yeah, there's this thing. It's it's
+[ 3237.7] What was the example we had the example I have to look back in our chat there was something in the
+[ 3243.2] before I won it was it was the
+[ 3247.8] one of the old features for the for the hanger module over for the for the
+[ 3253.8] It's a it's it's it's in our chat. It's in our chat. Yeah, you know, it's one of the issues
+[ 3259.1] I said dude, we need to remember that it's in the it's in our chat when I when I said I said we need to bring that up
+[ 3264.8] It's I can't I can't remember
+[ 3268.4] but recently one of the things that
+[ 3272.3] That that that flummoxed 481 was an old system
+[ 3276.0] It was an old system from like six or seven years ago
+[ 3279.8] That hadn't been touched with some new piece of content touched for the first time and it and it and it didn't work
+[ 3285.7] I can't remember it's just it's just it's just one of those
+[ 3289.0] It's
+[ 3291.3] Making games were easy they'd be done
+[ 3295.4] Pivot your
+[ 3297.0] They wouldn't there wouldn't be a studio that closes every every week in the last two years
+[ 3304.6] So what did so for a comes out yeah, there's been other issues
+[ 3308.9] We talked about the catastrophic ones, but there's also other tangential issues
+[ 3314.8] You want you want you want you want it? You want it? I?
+[ 3317.6] We've got a section coming up where we've we've pulled or we've pulled the dashboard and what folks are working on
+[ 3324.2] Get to that in a second if that's where you were going. I want to I want to stay a little bit more into 4.8
+[ 3329.4] So
+[ 3335.1] How I want to do this here
+[ 3338.5] We put up a thread
+[ 3340.3] We put up a thread we collected a bunch of questions
+[ 3343.3] We pulled some of that some of that's affected
+[ 3346.2] We've used that to inform certain of the of the topics here and stuff
+[ 3351.3] One of the
+[ 3352.7] When you go through
+[ 3360.2] Okay, if you had to put I I understand that nothing is simple
+[ 3367.5] I understand and I understand that there that there's probably 14 15 16 underlying causes that all contribute this
+[ 3373.9] But if I ask the simple question
+[ 3378.8] What changed in 4.8?
+[ 3381.6] That affected server performance so much
+[ 3386.3] I'm just on like raw server performance sure whatever
+[ 3390.0] What's the thing that comes to your head?
+[ 3392.5] Um
+[ 3393.6] I might get both of you on sure here. So don't think you get out of this it's it's
+[ 3398.1] Try try to make it for me. It's behaviors. So
+[ 3401.5] You know, there's one thing about running a game server
+[ 3404.8] is that the
+[ 3407.1] It's kind of an organic
+[ 3409.9] Behavioral system, right?
+[ 3411.5] And so you can have a game server with a version of the code a version of the data running a certain way
+[ 3418.6] And then players start doing something different
+[ 3421.7] And that completely changes the performance profile. And so I feel like for in 4.8
+[ 3428.4] Most likely my hunch for these six to eight like performance issues that we're looking at it's related to
+[ 3435.4] Some imprint changes. So the way people use ships
+[ 3439.3] Leaving break ships behind
+[ 3441.6] Are there more claims, you know than before?
+[ 3444.9] Are there other egregious issues that showed up that are creating more claims?
+[ 3449.4] That would affect, you know, the amount of entities on the server
+[ 3453.1] Are is there a malfunction on for example the density manager cleanup that is leaving items in place?
+[ 3460.3] Or is there just people are going to a location that's configured to be very loose?
+[ 3464.8] on its density and it's somehow the
+[ 3469.0] The location that people have decided to go to in this patch. So sometimes
+[ 3473.7] The performance profile of the game servers changes just based on behaviors not on like, oh, we changed something
+[ 3481.3] You're blaming the backers. No
+[ 3483.8] I'm blaming the features that cause behavioral changes
+[ 3488.5] And so that for me, that's what screams
+[ 3490.5] That's that that's what comes out of it for me
+[ 3493.2] For you're talking a raw server performance here. Yeah, I'm not I'm not just the the raw server performance here
+[ 3501.0] What what are you thinking Jens?
+[ 3503.5] I mean, it's hard not to
+[ 3505.9] Just parrot what the more you just said, I mean, it does feel like when I think of for eight
+[ 3512.4] There's nothing there I can go
+[ 3515.0] yeah, and that
+[ 3517.6] those
+[ 3519.5] Changes we made could have caused it the only thing I can think of is we did performance improvements
+[ 3527.2] But there is a large change in how we handle
+[ 3531.9] vehicles
+[ 3533.9] And the lifetime of vehicles you mean you mean the changes with the imprinting and the insurance and so so so so the way
+[ 3541.5] the way that
+[ 3544.3] The life of a vehicle in the universe changed
+[ 3547.8] But it's lifespan with with with the braking and stuff like this and the way that players
+[ 3554.1] Handle them because of the changes that we instituted. I want to I want to clear it. It's it's so you're
+[ 3561.8] You're bringing it back. You're bringing it back a big chunk of it. Not everything back to the number of ships
+[ 3568.6] I mean that would be
+[ 3571.1] Based on what I know of that patch went out it. I just don't see as I don't
+[ 3576.8] I don't recall there being any larger
+[ 3579.8] Changes on the gameplay side. I feel like could explain it. Yeah, we're not we're not talking about them. They're I want to be real clear
+[ 3587.9] it's
+[ 3591.3] Folks watching you have a lot of experience with me and you have a lot of experience with ben why you know less experience with
+[ 3596.9] With the ends here. He's not saying that there are no bugs. There are no bugs. It's like we're talking about raw
+[ 3603.6] Server fps things a bug does not impact server fps
+[ 3608.4] You you know the freight elevator eating your your your your cargo does not affect server fps and stuff
+[ 3615.2] The question I asked was what is affecting the raw
+[ 3618.8] Server fps and that answer is he's they're trying to find an answer specifically to that
+[ 3626.1] If it sounds like we don't know the answer
+[ 3630.4] We're not sure why honestly
+[ 3633.1] We're still working on it. It's it's it's
+[ 3639.5] Somebody in the chat somebody in the chat said it sounds like Jared's frustrated. Of course. I'm frustrated
+[ 3644.8] These two guys the table are frustrated. Quite a lot of people are frustrated
+[ 3650.1] It's I I say it over and over again. We're having the same conversations. You guys are having just you know three weeks earlier
+[ 3656.5] and it's like this it's
+[ 3659.5] There's this
+[ 3661.0] This concept that game development is is game construction
+[ 3664.4] You're just supposed to have all the answers and and you're supposed to know everything and you're and everything's supposed to be
+[ 3669.3] Figured out before you do and stuff and just the reality is that's not how it works. I'm we're not talking I'm not talking about cig here
+[ 3675.2] I'm talking about the entire industry. I'm talking about how games come together. I'm talking about programming quite honestly
+[ 3680.6] It's discovery. It's discovery as you go through it
+[ 3686.4] We always figure it out we out we always figured out like the the
+[ 3691.2] I could sit here. I could sit here and just gush about the quality of the people that we have here
+[ 3697.0] It's like, you know when I go to a bar citizen people always ask me like like is it hard
+[ 3702.9] To go out and do this
+[ 3704.8] You know what I'm doing right now. It's it's you know
+[ 3708.4] Less than less than 12 hours after a patch went out and and was totally borked and whatever and you've got to go out live
+[ 3715.4] And and put on a face
+[ 3717.6] For the project and what on is it is it hard to do that? You know after 318
+[ 3720.9] I had to do the thing after the freight elevators with race for stand
+[ 3723.7] I had to do the thing and whatever you know, is it hard to do that and the answer is no, it's not hard because
+[ 3730.0] Of the people here. I I believe in the people here more than
+[ 3733.9] Anything it's it's when you get when you get I spend more time with the people who work here than
+[ 3740.1] You know across teams of most people everybody's working on their work. My work is the people
+[ 3744.4] so so it's
+[ 3747.2] When I lose faith when I lose faith in the people here, that's when you'll stop seeing me
+[ 3752.1] But it hasn't happened in 12 years. It's not going to happen anytime soon. I love the people here
+[ 3757.3] And they're working on if they haven't figured it out yet, they will figure it out
+[ 3760.5] It's you know, you've already got some tremendous sure and I think the sixth to be honest like on server performance
+[ 3766.0] The six to eight issues we're looking at now are definitely the source of the problems
+[ 3770.4] Do you want to just enumerate what the six to eight issues are?
+[ 3773.6] I just you mentioned it. You've mentioned it a couple times
+[ 3776.4] And it's just why don't we why don't we just use this opportunity? Of course
+[ 3780.8] I can well I I don't want to dive deep dive into each of them because just give me top
+[ 3785.9] That's a bit intense if we go down that route, but there's
+[ 3789.0] At navigation system this by dispatching of tile configuration changes on planets
+[ 3795.1] Which is affects our ai use the nav mesh on planets
+[ 3798.3] So there's a performance call out on that that is costing us a chunk of frame in the servers
+[ 3803.5] That like this is purely based on the servers. We know are affected by this problem
+[ 3807.8] Um, there's a lot of digging
+[ 3810.3] Yeah digging for a lot of data. Yes, you'd find
+[ 3814.2] This is Coleman culprit. They know we're going to make a meaningful impact
+[ 3818.5] Yeah, no, exactly. This is like cross-linking a lot of things. There's um
+[ 3823.2] Um
+[ 3824.3] This is a pet peeve of a pet peeve of mine that I keep pushing on and we're gonna
+[ 3829.0] Definitely resolve that from a software point of view, but there's
+[ 3832.4] uh an entity spawner
+[ 3834.4] In some of the areas that are affected that are coming in and out of streaming and respawning their
+[ 3840.6] spawn set every time this is the NPCs that just go
+[ 3843.5] It just outs out and one example. I have multiple others related to this
+[ 3849.9] That's one the area component we talked about
+[ 3852.1] So the register what we call register with external systems is a phase when the components are
+[ 3858.5] A component or an entity is coming online when it's streaming in it needs to register with external systems. That's a notorious area
+[ 3866.1] That is an issue on multiple components. This one is from the area component is in that place a problem
+[ 3872.2] So the first two are NPC related
+[ 3875.2] Correct
+[ 3876.1] This one is this this one is more engine and
+[ 3881.0] Let's call it area configuration related
+[ 3884.7] This one bleeds into the zone lock that we talked about earlier. So those are two area and zone lock
+[ 3889.7] So this is really tied to the amount of content in the game and the complexity of that content in some areas
+[ 3896.4] Because we're also making more and more complex scenes
+[ 3900.9] you know like space station
+[ 3903.4] and
+[ 3904.2] you know
+[ 3905.2] The content we've put out recently whether it's tsg or rock cracker or like there's a lot more
+[ 3912.4] Complex layouts in those elements that contribute a lot to this and so those are part of that
+[ 3917.3] The ship cleanup
+[ 3919.0] Is another big one that we're looking at at the moment
+[ 3922.2] Which is the source probably of the other two which is the amount of registered entities that have either mfds
+[ 3929.6] And or the flight system active entities that specifically have mfds
+[ 3934.4] Yes, it's it's it's an excessive number of mfds
+[ 3938.9] Yeah
+[ 3940.1] Yeah
+[ 3941.2] Why isn't mfds? So well, we don't know specifically
+[ 3944.6] I bet that if I went into that area and I looked there would be a bunch of mfds
+[ 3950.0] That are somehow visible. So that's been an
+[ 3953.4] These components have a visibility aspect to it where if you look at it, it's going to replicate for you
+[ 3958.1] But if you don't look at it, it doesn't
+[ 3961.0] Might be a malfunction with that. We're not sure right. So the ship is breaking but the mfds are still
+[ 3966.1] Visible. Yeah, it could be like broken ship mfds. You know, like we've seen weird things like you know, everybody knows about the graveyard
+[ 3974.0] There's been other graveyards in other areas, right? So there might be a new one
+[ 3977.3] We haven't found yet
+[ 3978.9] Where there's a somehow mfds end up there, right? So you have a couple
+[ 3983.9] AI mpc related things
+[ 3987.1] Mpcs and the way they interact with the surface of of worlds planets and moons
+[ 3993.5] Mpc spawners, you know, these these things that that that that that load out load and then
+[ 3998.3] Respawn their entire
+[ 4000.5] Their entire allotment of AI when they're already out there
+[ 4004.3] So you got you got some mpc stuff
+[ 4005.5] You've got some locations that the locations are getting more complex and the area system is not properly
+[ 4012.6] Calling them. Yeah, it's it's an optimization at this point. The functionality is correct. It's just it's a lot of
+[ 4019.3] A lot of it. Yeah, and and then and then there's ships ship specific one
+[ 4023.6] Cleanup stuff and then there's some raw entity stuff that we also suspect
+[ 4028.1] Is related to the ship because the ships have the most and one final one that
+[ 4033.2] Is a fire so there's been some
+[ 4038.4] Some ships catch fire
+[ 4040.7] And depending on the size of the voxel grid, we've seen
+[ 4044.8] The area physics properties of how the temperature system interacts with
+[ 4050.4] Fire is actually needs a big optimization and it's costing us frame time
+[ 4054.8] Where that's a combination thing because we internally we can't reproduce it
+[ 4059.2] But we see the the cost on some of the game servers that are running slow
+[ 4064.4] Okay
+[ 4065.8] So these these are the these are the top eight
+[ 4069.6] Yes, ish kind of kind of culprits to just
+[ 4072.5] Raw
+[ 4073.7] Server server performance we can optimize these eight things we should see
+[ 4079.6] Big gains big gains. I wasn't gonna say big but I'll let you say it
+[ 4082.8] You know see big you know big gains and server performance. Yeah now the thing with everything with optimization, right?
+[ 4089.1] It's it's a fog of war right when you
+[ 4092.3] You fix that that's what was slowing it down and you find the next thing ends up you
+[ 4096.1] You know you you get rid of the elephant and behind it. Yeah, it's another one
+[ 4100.2] It's it's it's a seven up can that was slowing us down
+[ 4103.2] You know the pepsi can would have been slowing us down the whole time, but the
+[ 4107.1] Seven up was doing it first
+[ 4109.2] So the pepsi never got a chance to slow us down
+[ 4112.4] You optimize seven up and now pepsi's like my time is here. I can screw you over
+[ 4117.5] I can now be the one on top the choice of a new generation
+[ 4122.1] That's how old I am. Did you guys have that campaign here?
+[ 4124.9] A bunch of children. There's only one nodding head over there
+[ 4127.7] Uh, you know the same properties apply to crashes, right?
+[ 4132.0] Typically when we do like stability checks on on game servers, which by the way, I've other than
+[ 4137.5] The two big issues that we've had
+[ 4140.1] The baseline stability for 4.8 outside of these two events of the missing entity classes and the
+[ 4147.0] And the and the interest problem
+[ 4149.4] Overall stability has been very
+[ 4152.0] Has been in a really good range overall
+[ 4154.4] And so we're we've been happy about this other than now the stats are terrible because of this
+[ 4159.1] So we'll have to take a look but the same properties apply to crashes
+[ 4162.9] So when we look at top crashes
+[ 4165.7] You're like, oh, we just have to fix this one. It's super high frequency
+[ 4169.6] Then we fix it and then oh my god, there's three more
+[ 4172.9] Right and then and so it's a fog of war optimization and crash stability are like fog of war activity or
+[ 4178.7] Yeah, you've got seven now. You know what those are
+[ 4181.6] We fix them. It might be the end of it. It might not be
+[ 4184.9] You can't get clusters as well and that's the same on the performance side
+[ 4188.1] We might be looking very very closely at the the service performing poorly
+[ 4192.4] And we might be
+[ 4193.9] Fixing things that help those but that doesn't help at all to the other servers because they might be running into completely different
+[ 4200.3] Different issues like it. There might be something that's happening specifically on those servers
+[ 4204.4] That's unique to them that brings them to that low rate
+[ 4207.1] Whereas the rest of them don't benefit as much from that
+[ 4209.8] So you always have to sort of look look closely at the details and react to those but
+[ 4214.4] Proactively try to look at the big picture
+[ 4216.9] and sort of take you take you sort of
+[ 4219.4] where are we going
+[ 4221.2] Overall once we fix that cluster there, how do we get all of it to sort of benefit from a smooth
+[ 4228.4] smooth ride
+[ 4231.0] Just a ray of sunshine, yes
+[ 4233.2] That's it. I'm just we want bringing this butter
+[ 4237.2] Yeah
+[ 4238.1] It's gonna be all plain sailing
+[ 4240.4] Um, I wanted to touch on in my notes. I've got because there was other issues in 4.8 that you know
+[ 4248.1] Come from other optimizations that we've done and or
+[ 4253.6] Other improvements that also contributed to some perception on the patch. Okay. Um
+[ 4259.6] So there's one thing that we're battling on on the game side is that
+[ 4263.8] You know, we mentioned how we're we're transforming the game from one model to the MIMO model, right?
+[ 4269.2] And that means scaling systems
+[ 4271.6] When we say that we really mean transforming those systems to be service powered, right?
+[ 4276.6] So instead of being all on the game server and it's all good, right?
+[ 4280.7] We transfer these things to be service powered, right?
+[ 4283.9] So the server no longer has to run transit the server no longer has to run in part, right?
+[ 4288.2] It could be transit. It could be other things, right?
+[ 4291.0] Like for example missions had to have a part of the mission system needed to be pulled out of there
+[ 4296.4] To be able to have server meshed missions, for example, right? So
+[ 4300.5] There's a lot of work behind that that
+[ 4302.9] Basically dissect some services and move them to some game systems and move them to services now
+[ 4310.8] Interacting from the game client with services that are in in on cloud infrastructure
+[ 4317.2] Is kind of a different discipline
+[ 4319.8] Than being a gameplay programmer doing a gameplay feature, right? Let's say I'm doing I'm working on the
+[ 4325.3] The you know, their main character the actor in the actor team like Jens, for example
+[ 4329.4] And I'm doing a feature around that that my world is kind of self-contained to the actor
+[ 4335.4] If I'm also doing the replication side of this which typically we tend to our gameplay programmers do both
+[ 4340.9] But I know about the replication side of things
+[ 4344.8] But that's the bubble. It doesn't exit that bubble, right?
+[ 4348.1] When you talk about cloud infrastructure or cloud services that you need to invoke
+[ 4352.7] You know service apis to do something whether it's inventory service, right?
+[ 4356.5] Whether it's reputation systems, whether it's friend service social systems, whatever
+[ 4362.9] That's a different type of programming that
+[ 4365.4] Tends to always be based in what you know for the layman's is asynchronous programming. So
+[ 4373.2] Not all c++ gameplay programmers are well versed in the asynchronous aspects
+[ 4381.6] No more and more today, but still it's still always a little bit of a jump and so
+[ 4387.1] We've realized that there's a little bit of fragility
+[ 4390.1] In how some of our game systems interact with cloud services
+[ 4394.0] So that one of the particularities with this is that you need to design for things that can fail
+[ 4398.9] That sounds horrible, but that's the way it is, right?
+[ 4403.2] When you visit a website and it's loading assets and one asset doesn't load your browser's going to retry and you're not even going to see the difference, right?
+[ 4410.4] Now the game in some areas and I'm going to focus on the one I wanted to talk about today, which is inventory
+[ 4417.0] Uh is very fragile in its interactions with the back end systems. And so
+[ 4424.6] We had an issue in 4.8 that was from a back end perspective extremely minor. We're talking about
+[ 4432.8] You know 100 requests
+[ 4436.2] Out of millions of requests every two minutes would have a problem, right?
+[ 4442.7] But the net effect because that was affecting the inventories that people's inventory would get stuck
+[ 4448.0] And so the effect on the game was completely magnified from what the back end team did. You can't do anything about your inventory
+[ 4455.0] Really? Well, yeah, so the inventory has this issue this I want to know this that's not an issue
+[ 4460.4] It's a property where
+[ 4462.4] All of the moves that you do in your inventory need to be ordered
+[ 4465.5] They need to be performed in order and that requirement is extreme because you can't go, you know
+[ 4471.1] Put this element in the
+[ 4473.2] On the head and then put this other element on the head and take this one back and stow it and then move the
+[ 4477.8] Core armor and then if I if the back end systems were completely asynchronous and do this in parallel
+[ 4484.1] You would end up with like mixed results, you know, and so we could
+[ 4488.6] Not have prediction which would be the other option, but then obviously we run into the problem that
+[ 4493.7] I put the helmet on my head. Yeah, I'm waiting. Yeah. Yeah, you're waiting to catch up
+[ 4498.5] No, wait, wait, wait, wait for the server. Well, I'm doing that. I can't do anything else. And so the anytime you went for my helmet
+[ 4505.8] And so the the this minor like I said from a back end perspective 100
+[ 4511.0] You know 100 times out of out of two million is what you said 100 out of two million every two every two minutes, right?
+[ 4517.8] Which was a heartbeat problem. Anyway, we it's been fixed, but
+[ 4521.7] The net effect was that you're making moves on your inventory and then one of the moves stays there
+[ 4528.2] To the possible maximum of the timeout, which is eight minutes in this case
+[ 4533.6] Which that's the problem
+[ 4535.7] Long time and so now if you looked at I mean backers at this point that have been with us for a long time
+[ 4540.9] All run with some display info and so they see the pending moves
+[ 4544.1] Debug on the ui and so they can see oh, there's a move that's stuck, right?
+[ 4548.1] Uh, and so that's how these things were stuck if you were unlucky and you didn't move in one of those two minute when these
+[ 4553.9] I say every two minutes, but it was really a three second
+[ 4557.4] Small window if you didn't move in those three seconds, then your inventory was stuck for eight minutes, which is crazy
+[ 4564.4] eternity and you know and so
+[ 4567.3] That I use that example first for to explain it because a lot of people ask the question what's happening when this happens
+[ 4572.8] That's what happened
+[ 4575.4] Now we fixed that issue obviously so that no longer is the the the back end issue is no longer occurring
+[ 4581.9] But we still have that weakness on the client. So that's one thing we need to solve now is
+[ 4587.2] where
+[ 4588.4] We've realized yens and I have had multiple conversations about this
+[ 4591.3] But we've realized that there's a lot of areas in the game whether it's freight innovators
+[ 4595.1] Whether it's inventory management handling and I'm not talking about the ui here. I'm talking about
+[ 4600.4] What's behind that when you do your moves like the ui is where you get to see it? Yeah, it's it's actually something underneath. Okay. Yeah
+[ 4607.9] You know these systems
+[ 4610.5] There's a lot of there's we've identified a series of weaknesses and how
+[ 4616.2] Either legacy systems were built because they were built before these services existed
+[ 4620.4] And then asynchronous calls were tacked on in the middle to you know get something working
+[ 4625.8] uh, and so we we we started to develop a
+[ 4629.4] um a
+[ 4630.8] Charter that we want to we've started to analyze every game system
+[ 4636.9] with this charter right to
+[ 4639.7] It's basically a very simple, uh red amber green kind of
+[ 4644.3] tracking right where
+[ 4646.3] We can look at one system and say we look at inventory management
+[ 4649.2] We can ask all these questions right and we'll with this we will identify all the pitfalls
+[ 4655.7] that
+[ 4657.2] Could that this system needs to resolve so without having a bug report I can just look at the code and go
+[ 4662.4] You know what it's this breaks this principle. I need to fix this principle right so
+[ 4667.7] One example of principle is player items are sacred right so if I have actions to do
+[ 4674.4] For example, I need to turn in
+[ 4677.3] stuff for a mission
+[ 4679.3] I will not delete the items then move progress the mission
+[ 4683.4] I will progress the mission and on success and confirmation
+[ 4686.9] I will then delete and then if the delete fails I need to have compensating actions to move forward, right?
+[ 4691.9] So that's an example of like the analysis that we're doing
+[ 4695.6] Um asynchronous programming we talked about is needs to be explicit for all paths. So we're evaluating all of that
+[ 4702.8] There's multiple other areas in the charter, but that's one of the things we're putting in place to augment the
+[ 4709.3] interactions between game client server and services
+[ 4713.5] so that
+[ 4714.7] When things go wrong and they do right that's the nature of of
+[ 4719.6] Internet packets not being delivered services not being available
+[ 4723.4] Cloud services being there or not
+[ 4725.8] That there's no like irreparable
+[ 4728.4] breakage
+[ 4729.8] And that the experience can still continue and be resilient
+[ 4733.8] Flip says jared looks exhausted
+[ 4736.2] I'm not the one that was up till four o'clock in the morning fixing this thing. You know, I it's it's
+[ 4741.6] It's somebody what was it earlier earlier earlier was like it's like this is what happened. Where is it?
+[ 4748.8] One of our moderators
+[ 4750.9] Anuked it but wrangle mcdangle
+[ 4754.9] Anuked comment says this is what the community looks like when they start to realize the company
+[ 4758.9] They give their morning to money to doesn't really care about them sad
+[ 4763.1] This was this this is the cto who was up until four o'clock this morning, you know bug fixing
+[ 4768.8] You know not not not not not not just not just the directors and the and the and the programmers and the plenty of people with them
+[ 4775.4] And whatnot, but they're up to all hours the night trying to get this stuff going and whatnot
+[ 4779.1] And then they come here and they do this and whatnot. This is not people who don't care
+[ 4783.6] But anyway, that was a comment about how tired I look. This is just how I look
+[ 4787.6] I just it's the gray. Yeah. Well, there's more gray now for some reason
+[ 4794.3] So this is this is this is interesting. I want to touch on the charter
+[ 4798.5] Yeah, I want to I want to I want to touch this this thing that you said real real real real quick
+[ 4803.8] Very quick building
+[ 4807.6] So the system was built
+[ 4810.2] for
+[ 4811.5] Kind of perfection it expects everything to work
+[ 4814.5] The way that the way the way that it wants to and because the system was built without the expectation of some level of failure
+[ 4822.3] It ends up when it gets some level of failure. It fails completely. So you actually get
+[ 4828.1] So in a weird way you if you build something with the expectation of no failure
+[ 4832.9] You end up with a lot of failure and if you build something with the expectation of a little bit of failure
+[ 4838.8] You end up with less failure
+[ 4841.0] Then you otherwise would because it because it's it's more nimble and it can it can adjust and it can it's what it's
+[ 4847.9] Self-healing. Yeah, you know self healing stuff. It's there's this there's this idea of you know, we don't plan for failure or whatever
+[ 4855.2] And every time I hear something like that, we don't plan for a failure or whatever. I'm just remembered of NASA
+[ 4860.3] I'm talking NASA in the 60s like these are people who plan for every kind of failure and that's part of what they why they succeed
+[ 4866.6] Is so, you know, what you're talking about just kind of reminding me of this that this this interesting
+[ 4872.6] paradigm shift or the philosophical shift of
+[ 4877.1] Creating for some level of failure so that so that we can be nimble and and self-correcting
+[ 4883.7] And then we end up having fewer things like what what what we're experiencing where the whole thing just craps out for eight minutes
+[ 4890.8] It's a it's an interesting philosophical
+[ 4894.6] I think there Ben Boy is absolutely right as well with challenges for my from a gameplay side
+[ 4899.1] Certainly if you come from a background of of running thinking only on your local machine, but we're so responsive
+[ 4906.1] Whatever you do is just comes back immediately. I really haven't yeah exactly and suddenly you have to work
+[ 4913.4] On these premises where where your time out might be eight minutes later. It's a it says
+[ 4918.1] You know from a scale extreme. That's a very extreme example and you go
+[ 4924.1] uh, how do you
+[ 4926.3] And then as well as as much as you all you know from my point of view as
+[ 4931.6] From the gameplay side is obviously I still want to always be super super super once with the players
+[ 4936.8] So even if it's self healing out of the hood, you should still see see everything you do have an immediate reaction in game
+[ 4943.3] So that's why we always predict and that's why sometimes things go wrong, but we accept that things will go wrong and we roll back
+[ 4949.9] But we try to sort of be right more than they're wrong. So like you said, you know
+[ 4954.4] We only be wrong a tiny bit at a time not all the time
+[ 4958.1] So, I mean I want to touch on the charter
+[ 4961.1] Just I mean without going into details, but just because people are asking, you know, what are you doing about it?
+[ 4966.1] right, and I think that this kind of audit where we can
+[ 4969.9] Kind of leverage our programmers not just to build the features but all because you know
+[ 4974.0] Gameplay programmers are going to be in their world when they're doing something
+[ 4977.2] And so they're making the feature to try to make it feel good, you know, and then they're like it works
+[ 4982.3] That's the happy path, right now
+[ 4984.9] Let me unplug the internet, right? Let me you know unplug the internet for two seconds and plug it back in right or it's like it's
+[ 4991.9] Basically, you know on in on the online side we call it chaos engineering
+[ 4996.2] Which is more like let's kill processes and see what happens so that we can recover
+[ 5001.6] On the game side, I think that we kind of need to bring this perspective to the table to every developer
+[ 5007.4] So they can evaluate their own work against
+[ 5010.5] you know
+[ 5011.6] basically a rag sheet of like
+[ 5014.1] Explain the longest async chain in this component and does it have every path handled and can it be retried, right?
+[ 5020.3] Well, just with that I solved half the bugs that we can see in some of the
+[ 5024.3] The systems that interact with cloud services specifically
+[ 5027.4] Are the areas that are there's way more principles and stuff to look at in the area
+[ 5032.1] but that's what we've been doing is to
+[ 5034.3] to basically like
+[ 5035.8] Bring this so that it's not just the leaders that bring it the deck sort of the hammer down of like you need to do this
+[ 5041.8] This way and this is what we do. It's more like bring it as a culture
+[ 5045.4] throughout the gameplay teams and the engineering teams
+[ 5049.2] there's a
+[ 5051.6] We're we're we're we're going to get into our end game here and talk about some we've been talking about a bunch of
+[ 5057.7] generalized stuff is that we're actually going to we're actually going to get into
+[ 5062.0] literal bugs here in a bit and and do and do a little
+[ 5067.2] Pseudo bug smashers here for a little bit
+[ 5070.5] Before we get to that because that that that's our last part and then and then we got to go and whatnot. It's
+[ 5077.4] I want to
+[ 5079.2] the conversation that you're seeing here today is
+[ 5083.0] the kind of thing that makes it makes me
+[ 5087.0] Still be here. It's all it it's
+[ 5090.4] There's this idea. There's this idea that happens often that
+[ 5095.0] Any video game company is a monolith?
+[ 5097.5] That ever that that that everybody that works for a video for a video game company all thinks the same thing
+[ 5103.0] All works the same way all has the same level of experience and and and and philosophies and stuff like that
+[ 5109.9] And if there's anything if you've watched the what we just looked at it the other day
+[ 5114.6] It's like like 1600 videos that I've made for this
+[ 5118.6] Place this time if you watch all of those you're gonna the first thing you should know is it's not a monolith
+[ 5124.2] It's you know, we're not a monolith. No studio is a monolith
+[ 5127.4] There are people with different ideas and different philosophies and different aptitudes
+[ 5131.9] All working together to try to make this creative thing
+[ 5134.8] You'll see 100 quotes online about how the creation of a video of a video game is more miracle than anything else
+[ 5142.3] that
+[ 5143.4] we
+[ 5144.6] Take this time
+[ 5147.9] And show that we're not perfect
+[ 5150.4] That we take this time and show that even after
+[ 5153.7] 14 years 15 years. We're still learning
+[ 5156.8] We're still we're still developing. We're still changing the way that we work. We're still we're still getting better at stuff
+[ 5163.1] It's easy to weaponize that
+[ 5166.5] Against us. Oh, they don't have any idea what they're doing or I can't believe they're still figuring this out, you know
+[ 5171.7] this like this it goes
+[ 5174.3] I see the comments
+[ 5176.3] I know there's those of you out here that will do that and there's nothing that I'm going to say or do here today
+[ 5181.0] That will stop you from doing that. So
+[ 5183.9] Do what you're going to do
+[ 5186.4] but
+[ 5189.2] I love
+[ 5190.9] And I think it's more honest
+[ 5192.9] And I think it's more in line with what this project set out to do
+[ 5197.2] Back in 2012
+[ 5198.7] To sit here to have these shows and they have these moments and be like, yeah, we're working on it
+[ 5203.9] We're figuring out we're changing the way we work where it's it's it's we fell behind in this area
+[ 5210.1] We we have we have to we have to change the the way that we
+[ 5214.7] program
+[ 5215.8] Build things for for for for for a for an mmo as opposed to you know what we were doing before and still like this it's
+[ 5223.2] I just I just always appreciate anytime somebody comes on this show and is willing to roll those dice
+[ 5230.2] Because there will be people there are already people in the chat now. There will be people on youtube
+[ 5234.9] there will be people on reddit and like this who will take the things set here today and weaponize them and
+[ 5241.4] That's fine. It happens. It's always going to happen. It'll never stop happening
+[ 5245.9] but it doesn't stop
+[ 5248.9] You from coming here and being as candid as you are and I
+[ 5251.7] I I really appreciate that we really did meet at like nine o'clock this morning and
+[ 5257.4] For three hours talked about you know everything like where we're still going to do this show
+[ 5262.2] It's how do we do this without
+[ 5264.2] Being as honest and as candid as we are and stuff like this. It's it's just I was like we just kind of do it
+[ 5270.2] When you know when you don't know what to do usually I find the truth is the safest bet
+[ 5275.5] Um, so with that said unless you have something you want to add I want to get to the the next the last kind of phase
+[ 5280.7] I got one more thing you got one more thing. That wasn't my list that I just wanted to touch on which is uh shardlock
+[ 5289.5] No, in fact that I'm bringing it by all means what's shardlock? Well, so I I want to say first that
+[ 5297.8] shardlock is a
+[ 5300.4] You know, it's kind of a community word. We didn't come up with this actually
+[ 5304.7] um, but
+[ 5306.9] The way we've architected star citizen
+[ 5310.0] Even though it's an mmo we operate it from a
+[ 5314.4] From an ops side of things like a matchmaker like a match made game, right?
+[ 5319.3] When you come in and you pick a shard or you shard hopped you one of your friends
+[ 5323.7] uh, you're just getting one of the shards that's currently running right and
+[ 5328.7] The process of bringing your character and unstowing it into the shard and then allowing you to
+[ 5333.5] Unstow items from your inventory down into the shard and putting it back up there and getting out of there, right?
+[ 5339.8] It's kind of our attempt at
+[ 5341.8] not applying a classic
+[ 5344.9] MMO setup server setup to star citizen where you would create your character on a server
+[ 5352.0] Which then needs to run at all times
+[ 5355.3] That when it's low population we need to consolidate
+[ 5358.6] That we need to character transfer or character rename and you know this typical kind of
+[ 5365.1] MMO grid system, right?
+[ 5369.3] It's it's it's a company desire to not do that pattern and to instead keep it fluid like it is now
+[ 5375.6] So shardlock is a little bit of a price to pay for the rapid
+[ 5380.6] Movement between shards your character will need to stay in the shard until
+[ 5385.3] The hybrid decides that you've you're properly disconnected
+[ 5389.1] That you've been gone or that you're coming back or not and then move you back up now
+[ 5393.6] In for it. We did run into some issues for some players
+[ 5397.8] So there's a subset of players that ended up being shardlock in this case. It was because of a of an infrastructure failure
+[ 5406.2] uh
+[ 5407.0] a small knock on from a change that we made to as part of imprint but
+[ 5411.7] basically these characters were
+[ 5415.2] We track where you are with what we call the stoke context
+[ 5418.5] And so for the entities that we care about because we don't care about every entity your player entity is definitely one
+[ 5424.0] We care about we track where it is in the game world using your stoke context
+[ 5429.0] So are you stowed in the global inventory and in what inventory are you stowed or are you unstowed in a shard and if so it would
+[ 5435.6] sure
+[ 5438.4] The problem that some characters ran into is that
+[ 5444.8] Some players are not very patient with the system when they go back to the main menu
+[ 5448.4] And so they would go back to main menu and see oh your character's still in the shard, right?
+[ 5452.5] Or they would kill the client sometimes they do that kill the client come back in and then oh your character's still in the shard
+[ 5457.6] I'm shardlock character repair
+[ 5459.7] Well, the character repair in that case is the one that would cause the problem where now the player would never get stowed
+[ 5465.6] Because the repair would try to repair your character and
+[ 5469.0] Anyway, there's a bug there that made it so that now your character cannot be stowed
+[ 5474.3] And so these players were shardlocked others some others ran into another condition
+[ 5478.4] It was a fairly small subset of players overall that got in that situation, but
+[ 5484.3] It took us a while to identify the the root cause that that fix been deployed, but I just wanted to mention that
+[ 5491.2] Shardlock in and of itself isn't a bad thing. It's what enables us to have the
+[ 5496.5] Flexibility to bring you into another shard kind of transparently, but we need to wait for the process to finish on your current shard
+[ 5503.8] Before we can move you up, right now we we've put in place
+[ 5508.4] We're I would should say we are in the process of putting in place
+[ 5511.7] Active monitoring for players that get unstowed in shard and stay there for a long period of time so that we can attempt
+[ 5518.9] self
+[ 5520.2] Directive actions if
+[ 5522.3] We ran into that condition again so that this way we don't need to
+[ 5525.9] Chase the actual source. We can actually get some self healing in place
+[ 5529.9] But I just wanted to touch on what shardlock is and why it's kind of normal and that it's better to be a little bit patient
+[ 5536.1] With a dented jump to character repair right away
+[ 5539.3] Okay
+[ 5540.9] um
+[ 5543.3] Yeah, I don't have anything to add to that. That was me neither
+[ 5546.6] Sounds really good. It's not shardlock unless we have to yeah, and if you shardlocked
+[ 5551.6] Wait for a bit and you'll be good. Yeah, so much of what we've talked about today is
+[ 5558.3] essentially growing pains of this at the end of 2024
+[ 5563.1] you know
+[ 5564.5] The leadership of the project had a good strong look
+[ 5568.0] At everything that we were doing in the direction that we had been going and so like that and said
+[ 5572.8] Is this going to get us where we want to go and it was decided? No, that's we're not going where we want to go
+[ 5578.8] Uh, so we switched things up in january 2025
+[ 5584.0] And you know after again after rich went on stage and said this is the road to 1.0. We've been on this road
+[ 5590.9] All of these major content drops storm
+[ 5594.8] Stormbreaker to asd
+[ 5597.1] You know rock cracker. These are all locations in the 1.0 story
+[ 5601.6] They have content that you're playing now
+[ 5603.7] But these are all part of this larger roadmap of the of the of the major story of 1.0
+[ 5610.4] That will come online with that and the gameplay that's designed to take you through the five star systems
+[ 5614.8] As like that it's we are actively building this 1.0 out in front of everybody
+[ 5619.0] So and we made more progress in the last 18 months than we did
+[ 5623.0] Probably in the four years prior to that. I see if I get in trouble for saying that but it's what I believe
+[ 5628.2] Um
+[ 5630.5] Well, you always want to accelerate so yeah, well, you know, it's it's it's just and the results
+[ 5638.1] The results have spoken for themselves. There's there's this thing
+[ 5644.5] There's this thing. They don't really talk about them. I'm a most much it's uh, concurrency and
+[ 5651.0] daily active users
+[ 5653.1] concurrency is how many people you have online at any given time
+[ 5657.7] Any time and day the average users is how many, you know individual people come in, you know and interact with your game during the day
+[ 5665.3] the
+[ 5670.2] Normally these numbers are not
+[ 5672.5] Revealed publicly. It's it's just it's just if you if you go and you search for for world of worldcraft
+[ 5678.2] d.a.u. And whatnot or whatever you're not going to find that you're going to find a bunch of you're going to find a bunch of
+[ 5682.7] um, you're going to find a bunch of uh estimates and stuff
+[ 5687.0] one of the things that
+[ 5689.5] We're discussing internally right now is actually
+[ 5694.3] Exposing that you want to be because even with we spend a lot of time talking about the problems in 4.8 and whatnot
+[ 5701.7] And 4.8 had
+[ 5703.8] Its share of stuff. Obviously, we don't need to we literally just sat here and talk about it
+[ 5708.1] but it also had some tremendous successes the
+[ 5712.1] Daily average users for instance in i'm waiting for the numbers. I just i just sent the requests
+[ 5718.6] I just sent the request. Thank you
+[ 5720.8] Thank you, uh, michael smith
+[ 5723.4] And whatnot
+[ 5725.0] Oh, I just made him an accomplice
+[ 5726.9] That's it. All right. If I get in trouble for doing this and whatever
+[ 5729.6] so
+[ 5730.3] Versus 2024 numbers
+[ 5733.7] Let's just go by month here to to to to show what this progress because
+[ 5738.3] It's it's one thing for me to say that it's been the great 18 months and whatever but if you don't have
+[ 5743.6] Data to back it up. I'm just
+[ 5746.1] Bullshitting. I'm just saying words. So here's here's the data
+[ 5754.8] in january
+[ 5756.8] 2024 versus 20
+[ 5758.5] Versus 2026
+[ 5761.2] So a 30.1 percent increase in daily average users
+[ 5766.9] 30.1 percent
+[ 5768.7] Between what we were what were the number of users who were logging in and playing star citizen before and after this last day
+[ 5775.2] And as part of this last 18 months of stuff in february
+[ 5779.3] It in 2024 to 2026
+[ 5782.8] 63.8 percent
+[ 5787.6] Increase in daily average users and stuff like that
+[ 5791.4] march
+[ 5793.0] 50.2 percent
+[ 5796.4] april
+[ 5798.4] 59.8 percent
+[ 5801.8] May may is always a big month for us. It was a modest increase of 14 percent
+[ 5807.7] Yeah, because may may november always draws everybody back and whatever never had a problem getting people in in may and november
+[ 5814.4] and then in june
+[ 5816.0] you know, which which is when which is when 48 and like this a
+[ 5821.1] i'm sorry
+[ 5822.2] 55.4 percent
+[ 5825.6] increase over
+[ 5827.7] over 2024 a
+[ 5829.9] 25.1 percent over 2025
+[ 5833.1] In whatnot so so it's been 25 and 25 over the last over the last two dunes and whatever
+[ 5838.1] The game
+[ 5839.5] is
+[ 5840.5] unequivocably
+[ 5841.6] Going in the right direction
+[ 5843.9] It's the amount of users we have the amount of people that are engaged in this isn't new signups. These are people who are actively playing the game
+[ 5851.1] is increase is increasing
+[ 5853.3] every day on average by
+[ 5855.9] 50 percent which is a growth that star citizen has not had at any point like this and
+[ 5862.3] I imagine some aspect of that has to affect all of these issues, you know
+[ 5866.7] Issues that were this big before become this big when all these people go in but
+[ 5871.5] The reason those numbers are
+[ 5873.8] improving
+[ 5875.1] Is because of the work that you're doing and you're doing and and and rich and rick and
+[ 5882.8] And all those guys are doing to make star citizen into the thing that it was always supposed to be
+[ 5888.1] And we weren't going in the right direction like this for the last 18 months there
+[ 5892.6] And it's proving out in the numbers in whatever so it's
+[ 5898.7] My heart's I don't know if you can you can hear my heartbeat right now
+[ 5902.0] I'm way out over the ledge at this moment. I don't know
+[ 5909.8] If we're gonna sit here and we're gonna and we're gonna talk about everything that was wrong and whatnot and stuff like this
+[ 5914.6] I don't think it's fair
+[ 5917.1] without also saying that
+[ 5919.6] These guys out there. Yeah, they've got some work to do. There's some bugs to fix is there's some performance
+[ 5925.7] optimizations that are needed, but
+[ 5929.0] They're killing it. You are killing it
+[ 5932.7] and so
+[ 5934.4] The numbers speak for themselves. So
+[ 5936.6] Thank you and we'll we'll see if I back next week for another show
+[ 5941.0] Um, I mean there are a lot more players. That's for sure. There are a lot more players
+[ 5944.7] There are so many more players now than there was a year ago
+[ 5950.2] And it's just I feel like that has to play that that that has to say something
+[ 5955.1] about
+[ 5956.3] How successful we've been even in spite of all this stuff even in spite of my very
+[ 5962.0] clear frustrations
+[ 5964.7] poor poor
+[ 5966.8] Seb and and and and and
+[ 5970.8] Lauren and whatnot they they got a message for me about an hour and a half before show and says strike the set
+[ 5976.2] We're doing something different. We're not doing the show. It's I just and they're just like what so thank you
+[ 5983.5] For for allowing me that said before we go
+[ 5988.2] Before we go
+[ 5989.5] We have I have a letter. I have a letter. I want to read and then we're going to get into a thing. This is from
+[ 5995.9] uh, the lead producer on star citizen
+[ 5999.7] So this is this is the producers are at all levels. You know, you've seen directors
+[ 6003.3] You don't see a lot of producers. You don't see a lot of producers on
+[ 6006.4] On the shows and whatnot usually because they're too busy running around making sure everybody else is doing their work
+[ 6011.5] I'm like, I don't got time for you. Uh, we tried to get filled here
+[ 6014.7] Today for this and again too busy too busy going through and making sure everything but
+[ 6020.6] Uh, he has to say about me. Yeah, wait a minute. I'm also really busy. You're almost never here Yens
+[ 6026.6] You're clearly very busy. Honestly, it's been a while. It doesn't seem to have anything going on
+[ 6030.4] Oh
+[ 6032.6] That's why he's up in the middle of the night. I know so I'm gonna I'm gonna read this letter from film
+[ 6037.0] That's gonna we're gonna go into our last section here. Okay
+[ 6040.7] So after the release of 480 we reassessed our bug prioritization process
+[ 6046.0] We're into the bug phase of the show here instead of having priority determined by the develop
+[ 6051.6] By the development team and validated by qa
+[ 6054.6] We handed over the selection some elements of the selection and prioritization
+[ 6059.0] In certain categories of bugs to the player experience team
+[ 6063.4] The player experience team is internally always pushing and advocating for issues that players are most impacted by
+[ 6069.7] So this should in theory address a perceived disconnect between us as developers fixing a lot of issues and players feeling like little has improved
+[ 6079.0] Now, that's not to say that the priorities in the past were detached from what players reported on issue counsel spectrum or reddit
+[ 6085.1] But clearly things weren't working as well as they could have been
+[ 6088.8] With 4.9, we will work we will work through a newly refined list of issues affecting instance hangers freight elevators
+[ 6096.6] quantum travel star map
+[ 6099.0] inventory docking
+[ 6101.0] exploits log and flow and issues that falsely destroy your ships and more
+[ 6106.2] On top of that we're tracking a longer list of quality of life issues with new players that newer players new players report regularly
+[ 6113.8] Many veterans know a lot of convoluted workarounds to some of these issues
+[ 6117.8] But really they shouldn't have to deal with those to begin with and because we want to ensure star citizen
+[ 6123.6] Is as new player friendly as it can be we're tackling a wider range of common problems that impact this first hour or so of any session
+[ 6131.3] So in addition to the things we're going to go on there's a there's a new effort about things that specifically affect the very first hour
+[ 6137.8] There are about 80 80 issues remaining on our priority list
+[ 6142.8] And while we tackle a lot of them while we will tackle a lot of them for 4.9
+[ 6146.8] We want to avoid just playing whack-a-mole with some of those bugs
+[ 6150.4] Fixing a lot of bugs is not the same thing as fixing the root causes behind the symptoms that appear as bugs
+[ 6156.2] For instance freight elevators have seen around 70 or 80 bug fixes
+[ 6160.3] This summer but due to the reactive nature of that endeavor players don't feel like it's nearly as stable or reliable as it should be
+[ 6167.8] Now freight elevators will have a lot of interactions with other freight elevators that have a lot of interactions with other systems
+[ 6173.6] Will need to be made reliable, but they're a core gameplay mechanic and must be stable at all times
+[ 6178.6] I misread that sentence, but i'm going to keep going
+[ 6181.6] On the flip side we had a similar situation with transit in 2024 and early 2025 where we fixed a lot of bugs that didn't seem to make a difference
+[ 6189.2] We then invested that time into building better debugging tools and self repair flows
+[ 6193.1] This is self filling what i mentioned before and yielded a much more stable system
+[ 6196.9] Even though on paper way fewer bugs were actually fixed
+[ 6200.7] We want to repeat this methodical approach with other systems like freight elevators hangers and more
+[ 6205.8] For that reason
+[ 6207.3] We don't expect everything to be magically solved for 4.9 zero and i wouldn't read it if he did
+[ 6212.5] Uh, we will we will continue this initiative beyond that into 4.10 and beyond
+[ 6216.6] But we're more confident that in this new transit the same approach that we use for transit
+[ 6221.8] To bring these systems in line with the scale and complexity requirements that star citizen has in 2026
+[ 6227.4] Now what we're about to see or what we're about to talk about see there's nothing on the thing is
+[ 6233.0] What people are working on today?
+[ 6235.8] Do you have your dashboard up? You want you want to hold your dashboard up for the just go hold it up for this camera here
+[ 6239.5] Stand this camera
+[ 6241.0] No, no stand this camera. There you go. Hold the keys. Hold that hold your computer. No that camera right there
+[ 6245.8] It's closer. The bit the bit you see it forward forward. See it. Oh, that doesn't look anything. It's exposed wrong. Okay switch that one
+[ 6253.0] Switch to bend one up bend. What's closer camera?
+[ 6256.7] Ben was camera
+[ 6258.5] Ben was can't no it's still it's still overexposed
+[ 6261.7] All right. Anyway, this is a dashboard of what people are working on today
+[ 6267.2] so
+[ 6268.1] This this this this particular bugs were prioritized in line with the player experience team
+[ 6272.8] This is a new initiative inside the basically
+[ 6276.7] as philip said
+[ 6278.2] Not just what issue counsel says and what dev thinks but we're actually adding a third
+[ 6284.8] Kind of pillar in here and that's hey the people who the people player experience seem like the community time
+[ 6290.4] Like the community team. They're both involved in this
+[ 6292.6] It's you are the ones who are seeing what they're anecdotally saying on spectrum on reddit on twitch on youtube and stuff come in with that
+[ 6301.4] With that
+[ 6304.0] A typical information that anecdotal information and so we can apply the issue counsel stuff with the developer stuff
+[ 6311.2] With the anecdotal stuff and find a new way to prioritize which bugs get fixed
+[ 6315.8] So we're going to try this
+[ 6317.7] We're going to see how it works and to
+[ 6320.2] Do more than just say hey, we're going to do in a way
+[ 6322.6] We're going to tell you we're going to go through and tell you what people are actively working on today
+[ 6327.7] And then you can tell us whether we're on the right track
+[ 6332.2] Benoit, what do you got?
+[ 6334.2] well, so yeah, I thought we would take a look at a couple of those so i've got all the
+[ 6340.0] uh categories that you listed and uh
+[ 6343.6] Give me the category first so i can prime my right right prime your mind in the right setting. Okay, good. So, uh hangers
+[ 6350.8] We're going to start with hangers. That's a tough start. Okay here. I'm ready. Uh, so
+[ 6356.1] Now i'm gonna i'm gonna sort of pick the ones that I think are interesting in the list right
+[ 6361.0] In each segment so we're going to take a look at this so these aren't any particular order. This is just no
+[ 6365.4] There's just some there were there are big work on today right exactly so, um, pu multi locations
+[ 6371.3] Instance hangers exterior hangar doors remain closed while the interior hanger door opens
+[ 6377.9] So that's when your hanger enter your doors open, but the gateway outside is still locked out
+[ 6382.1] Yeah, so they belong to two different parts, right? Yeah, the exterior and you have the interior the interior is yours
+[ 6389.8] You you can control that in your instance
+[ 6393.0] The exterior needs to be synchronized with your interior doors
+[ 6396.1] So what most likely happens there is for some reason your interior thinks you've been given the right to this gateway
+[ 6403.6] Or you could have been given a right to a different gateway and there's an exterior door opening somewhere to a nothing
+[ 6411.0] And and and your door is
+[ 6413.2] Opening to a closed door, right? So there's a few things that could happen there and and
+[ 6419.2] Normally it's that sort of handshake between the exterior and the interior which via the notorious
+[ 6425.6] Notorious atc. See I see jox finn in chat says that's a rare issue to happen
+[ 6430.2] But w if you fix it it's rare for jox finn
+[ 6432.8] But we have the luxury of having logging forever for every single player in the game
+[ 6437.6] And while you've been lucky enough that it's rare for you it is not for many others
+[ 6442.2] But this one goes with his little brother
+[ 6444.8] um overlapping hangers
+[ 6447.3] Player reposition when landing in hanger atc given but seen as trespassing in someone else's hanger results in being repositioned
+[ 6455.0] Which I think is uh sibling
+[ 6457.8] Yeah, yeah, definitely because you're looking at a situation where you think you
+[ 6461.9] You think your interior has been given a certain gateway. You're heading there. Yeah
+[ 6466.1] But it's actually someone else's yeah casa. So you're like
+[ 6470.7] Yeah, not good
+[ 6471.9] Correctly trespassing, but obviously incorrectly been told the trespassing system rocks all
+[ 6478.8] All right, the trespassing system
+[ 6481.7] It's like johnny on the spot. Hey, you're in the wrong hanger, dude
+[ 6485.7] But you're not supposed to be in the wrong hanger. Yeah, and then and then the third trifecta in this
+[ 6490.6] segment which if you put them all together
+[ 6493.4] Is a players can get stuck at repositioning player
+[ 6497.0] Indefinitely after getting imprisoned impounded. Sorry. And so if you get impounded, there's a chance that the server will never
+[ 6504.2] Complete the repositioning that's supposed to take you out of your hanger
+[ 6508.2] Most likely in this case one of our charter elements, which is that there's an asynchronous call
+[ 6513.5] Waiting for a callback that never happens
+[ 6515.8] There should be a timeout so that it can be retried and complete in this case get stuck
+[ 6519.5] Well, it can also be validation
+[ 6522.1] For some reason someone has not given us
+[ 6526.1] the reposition position that were created or no longer in a valid
+[ 6531.3] position because I think one of the rules is you will not
+[ 6535.8] Be repositioned until we know this floor underneath you right
+[ 6539.4] So until this floor and and that's a learning because I'm sure that we repositioned before without checking that
+[ 6545.8] Yes, that led to some interesting ones
+[ 6548.7] Which says I entered my hanger last night and the entire hanger despawned
+[ 6552.8] And someone else came into the same hanger as and I was eva in space on the internal geometry of the station
+[ 6558.8] Sweet that is
+[ 6560.8] Definitely related to this. Yeah, this sounds like his reposition
+[ 6564.3] Precisioning position wasn't amazing in that case. Yeah, also does does disprove my floor
+[ 6570.8] Sure, because he clearly did not have floor right
+[ 6574.2] Okay
+[ 6577.9] This other refresh is interesting. Okay, uh, maybe there's been progress. Okay, so
+[ 6584.6] Next one is the one my personal hanger
+[ 6589.0] Pet peeve is retrieving vehicle while another
+[ 6592.2] Occupies the hanger platform will cause a retrieved vehicle to instantly spawn and clip through the vehicle occupying the platform
+[ 6600.4] All right, so so efs and chat if that's ever happened to you
+[ 6604.8] You you can keep doing what you
+[ 6608.2] Okay, and so this is basically typically that's what I thought. Thank you chat. Just typically happened to anyone
+[ 6615.4] Ah
+[ 6617.9] So typically this
+[ 6620.1] Happens when you use the a sub terminal outside of your hanger and for some reason your hanger was stowed with a ship on the pad
+[ 6628.2] Uh, which normally shouldn't happen in this case happens. And so
+[ 6632.9] There's a lot of missing checks here where basically we don't check if there's a vehicle there
+[ 6637.0] And so it gets spawned into direct intersection
+[ 6640.2] Which is also very bad for the server because it cannot resolve that and so one of those two ships
+[ 6646.6] Is either gonna go
+[ 6649.2] The dreaded pink, uh destruction if you remember that well, there's still got efs and chat
+[ 6654.2] So i'm gonna say that was a high that that's been correctly identified as a high priority. Yeah
+[ 6659.2] All right, what else you got?
+[ 6661.8] in case you've
+[ 6663.1] Not it off after two hours here. Uh, we're going through the bugs that are actively being worked on today
+[ 6668.3] Not like today is
+[ 6670.0] It's ethereally like on june 18th right now. There's literally people on these things right now
+[ 6676.2] Uh, player loses access to persons in hangar at primary residence
+[ 6680.6] Is a classic one my character is actually in this state right now
+[ 6684.3] Where is your hangar?
+[ 6685.8] Area 18
+[ 6687.2] But is it actually still there? Yes, or is it gone?
+[ 6691.2] No, the the hangar is actually there, but i'm responding in it in my case, but i think that some
+[ 6697.3] In the case of these
+[ 6699.0] Most players i've discussed with the
+[ 6701.6] Hangar is actually either stowed in another inventory somewhere else for some reason. So that's the hunch so far
+[ 6708.7] We'll see what the team actually comes up with but that's that's one that we
+[ 6712.4] Definitely want to solve now i've got more on the hangar side, but i figure in this in this system of time
+[ 6718.2] I would keep going with the other categories
+[ 6720.7] We've got log inflow related issues. So we talked a bit about shardlock. That's one of them
+[ 6724.9] So basically being a bit more communicative about shardlock and no longer having shardlock at all for players that
+[ 6731.0] Stay in the shard
+[ 6733.5] 64,008 spawn resolution error
+[ 6738.0] And his little brother 64,006 disconnection again result player location
+[ 6744.9] Um, I can speak to this one a little bit. This is typically a symptom. So we're
+[ 6750.6] If we fix this issue specifically where the display will change, but what actually happens is that when you connect to a game shard
+[ 6759.4] The replication layer so the hybrid that's in front of it is going to coordinate
+[ 6763.5] Bringing your character into the game world
+[ 6765.4] But he doesn't know to start which of the 10 servers he's running your character should be on
+[ 6772.0] And so he needs one of those servers to help resolve your location so that we can
+[ 6777.4] Unstow you in the right area in the tree and then
+[ 6780.7] End off with already to the server that's managing this this region
+[ 6784.6] The way this is done is that the the replication layer will hand this work off to any of the game servers on the shard
+[ 6791.9] now when we have
+[ 6794.1] Idrises blowing up servers less than right
+[ 6797.8] There's a very high chance that the server this will be ended up to
+[ 6801.8] Is dead or is in the process of dying and is rebooting
+[ 6805.3] And so what happens in this case is that you the player will get to the end of the context
+[ 6811.4] Establish your task the cts and he will get a 64,000 eight or 12 error and so
+[ 6817.8] We need to make this a bit more robust on that side so that the
+[ 6821.3] Either we know which servers are alive completely and so that if a server is doing a server reboot
+[ 6826.5] We don't assign them a revolution task. That's would be one thing
+[ 6831.1] But also trying to streamline that right so that it's a bit more efficient
+[ 6834.9] If the server is dead, we shouldn't
+[ 6837.4] Small one I wanted to touch on here was friends list showing zero out of one
+[ 6842.2] Right instead of the player counts per shard. So we're rejigging this bit. It's going to come back
+[ 6848.3] This is a temporary thing. Is that a priority fix though? I mean what what what what is that in the login flow section?
+[ 6855.4] It is all right. Well, it's been reported
+[ 6858.9] Sure, but but it's part of this initiative part of this initiative is to make sure that people are on the most
+[ 6863.8] You know, correct important stuff like this
+[ 6866.8] Give me one for
+[ 6868.6] Tell me if somebody's working on docking
+[ 6871.0] Correct. Let's talk about docking
+[ 6873.5] Uh, the very first one. Okay
+[ 6877.2] Unable to dock using docking colors
+[ 6880.4] That is problematic, isn't it? Correct. I'll do that. Yeah
+[ 6884.3] Uh, we looked at this this morning and it was actually resolved when we were talking it is now reopened
+[ 6891.0] So we're gonna have to dive into that
+[ 6894.2] Uh, but uh, basically docking is is a
+[ 6898.4] Is a subject that's always coming back
+[ 6901.1] Uh, and this patch has been also contributing to the overpopulation of ships because players would just you know, basically
+[ 6907.7] land on pads and leave the ships there or
+[ 6910.2] You know, uh, where there's no impound and so that's a big issue. So
+[ 6914.2] First one is unable to dock using docking colors. So I can quickly just go on
+[ 6918.8] So when you say it's a result and then reopen, so what's what happens there is the developers do the best of their abilities found the issue
+[ 6927.7] The fixed issue they've tested the issue locally then gone
+[ 6932.0] It's it's solid. I know how to cause the error. I put a fix in my fixer been
+[ 6938.6] Validated I've now resolved the solved issue. But obviously
+[ 6943.4] In this case what sounds like the feature is not working at all
+[ 6947.1] Clearly there is a situation
+[ 6950.0] That either they didn't predict or that doesn't happen on a local machine. Again, we talked about yeah, yeah
+[ 6955.8] You know, you don't have to work on my machine. But the second it got up to a network validation
+[ 6960.6] It fell down that said though. I mean, I mean
+[ 6964.2] I will say that we have a very very impressive setup for locally running what is
+[ 6971.6] A replica of what we play in live, which is amazing. It's an amazing system. I've got it. You've got it. There's an entire
+[ 6979.7] pseudo live environment right here in the in the office. It's called the cig diff kits. Yeah, yeah, it's really cool
+[ 6985.4] Um, give me but yeah, unfortunately in this case clearly is there one or two more for docking?
+[ 6991.1] Yeah, after manually docking a vehicle there is a chance for the docking bridge to lose collision causing the actor to start to eva
+[ 6997.8] Okay
+[ 6999.0] most likely
+[ 7002.4] close to another issue we've seen on the command module about
+[ 7007.6] Managing physics skip lists, which is how we
+[ 7011.1] You know elements we want to skip from collision in certain cases from a given perspective
+[ 7019.1] Yeah, they're probably related is this when you you're trying to dock and it ends up just eating you out in the space
+[ 7024.0] Yes, okay. That's right. Yeah, you know
+[ 7026.9] So someone's you are you don't want the docking collar to collide with your ship and cause
+[ 7032.9] Lots of problems there, right?
+[ 7034.5] So there's there's a period in time when the two are trying to get together and it's just people just need to get good
+[ 7039.7] you know
+[ 7041.8] They have to dock perfectly
+[ 7044.2] Cargo services will not respond to hails making players unable to request cargo loading zone related to atc and docking in this case
+[ 7052.2] That's another one. We're looking at
+[ 7056.4] Freight elevators freight elevators. Let's skip to that
+[ 7060.1] Um, so hauling missions have no cargo to pick up at the collect location
+[ 7065.4] So this is basically when you get to your
+[ 7068.1] Your mission location and you know, I was like a pick up this at a night from this location and you get there and there's nothing to pick up
+[ 7073.9] So there's somebody on that right now
+[ 7076.1] Uh, yes, again, everything we're talking about in this section has somebody actively assigned to it working on it right now
+[ 7082.1] That's a bridge between mission and freight elevator, which is interesting
+[ 7085.3] Which is you know, it requires specific people in this case
+[ 7089.2] Um freight elevator is not working and displaying an overload error preventing cargo pickup
+[ 7095.2] Do you want to speak about this one because I think we talked about this today
+[ 7097.8] Well, I think we talked about the overload error is it's one of those that's a little bit too generic
+[ 7104.9] That can imply many different things
+[ 7108.1] Similar to the atc. Oh, they stop saying your ship is unknown
+[ 7112.4] Right, you know, it becomes like becomes a bit of a catchall and and people pull up and it
+[ 7118.0] It's like the pull up and it looks like it's like a small box. And we're they're getting an overload error
+[ 7122.5] The the system thinks the small box is a much bigger box kind of thing and like philip said in the in the letter
+[ 7128.5] You so eloquently read out
+[ 7131.1] Um, obviously we fixed
+[ 7133.2] Tons and tons of bugs on freight elevator to ask part of of a long-going initiative
+[ 7138.6] And and we probably fixed lots of overload issues as part of that but because overload is a catchall
+[ 7145.2] About you know, yeah, unless you unless you get no more granularity
+[ 7149.3] This will be affected by people throwing the water bottles
+[ 7151.7] I was gonna say yeah, because that was that thing
+[ 7153.8] That was that thing a year ago and people would put the bottle on top and just kill the entire
+[ 7159.1] Well, it's a variation of that really because the the freight elevator looks at the volume
+[ 7164.1] Right and we'll make sure that it's got stuff that you own in it and there's no overload on it. So that's one of the things
+[ 7170.6] Um, yeah, it does have good good cleanup to the point where it was cleaning up
+[ 7175.2] See that's that's an example where like there's another bug fear further down
+[ 7178.9] Which is you have a chance to lose your cargo back to vading the freight elevator kiosk
+[ 7183.0] Which is basically a malfunction of that cleanup to prevent the overload. So, you know, that needs to be solved that
+[ 7189.9] I like you just you just casually mentioned the freight elevator eating eating cargo. That's the worst that that's
+[ 7196.1] Well for me, that would be in its top. I mean because that goes against I mean, I
+[ 7201.6] I don't need to be picked wick wickalows PR agent here
+[ 7205.2] but the reason there's the reason there's
+[ 7208.2] And I'm a reason for a lot of the bad sentiment about wickalo
+[ 7212.8] Is because the freight elevator is eating the cargo. Yes, and you know, and it's it's easy to say well
+[ 7217.7] This is a wickalo problem. It's not a wickalo problem at all wickalows wickalows a disembodied head
+[ 7222.8] And torso behind it. You know, so you don't think you just laid the hand there. He's going like yeah
+[ 7227.5] And whatnot it's it's it's it's the it's the freight elevator. It's the freight elevator issue is this is this is
+[ 7234.1] Or maybe wickalo runs a 000 graveyard and we didn't know about that
+[ 7237.6] Well, wickalo is secretly my boss and he's the one that's starting to fire me every time
+[ 7241.3] Nah, man dies except for frustrating. Yes
+[ 7245.0] This violates the first principle in the charter we're putting in place, which is player items are sacred
+[ 7250.2] But that's also highlights that in the same inventory. This is fragility in the
+[ 7256.9] Uh transition between the physical world and the virtual kind of ui world that a lot of the sort of inventory lives in
+[ 7264.9] if you're if sort of back end
+[ 7267.5] Visualization on the back end. It's a virtual item in a way and the physical item
+[ 7271.8] I don't want to spend we're we're over a lot of time and stuff and you you literally have an airplane to catch
+[ 7278.7] to go back, but it's
+[ 7281.6] I'm sorry. The freight elevator disappearing cargo thing is is my
+[ 7286.1] major
+[ 7287.8] Major thing and again when I do my you know simpleton's hat
+[ 7292.5] On it. It seems like it would just be it's like, okay
+[ 7295.2] Like you got an order of operations. You've got a delete
+[ 7299.1] Shouldn't the delete just be the absolute blast?
+[ 7302.5] Shouldn't you shouldn't you just complete every other action that you're supposed to do your mission checking?
+[ 7309.4] And then delete is at the end. It sounds like the elite's just happening too early
+[ 7314.4] Yeah, well in this case, it's a function of the cleanup. Yeah, it could be the cleanup, right?
+[ 7318.4] Then yes, it's something added
+[ 7321.1] To prevent another issue now causing an issue got worse than what we were trying to prevent in the first place
+[ 7327.2] That would come back to that makes more sense. Okay, again, what Phillips said in his letter
+[ 7331.4] this is this is one of the places where we want to go back and kind of go like
+[ 7336.1] Right, so you might mean that in short time, you're not seeing like being being being being lots of like individual fixes
+[ 7341.6] But we're going to go like
+[ 7343.4] Was actually at the very bottom of this where is it?
+[ 7346.4] So it looks like it's an issue with with wicklow, but it's actually an issue with the freight elevator
+[ 7351.0] That's actually an issue with the cleanup system
+[ 7353.2] It's actually it's just make the cleanup system
+[ 7355.6] So the cleanup system is giving the freight elevator a bad rep and the freight elevator is giving wicklow a bad rep
+[ 7360.2] But the issue is okay. Maybe we can find a way that we don't need the cleanup at all. Yeah, all right
+[ 7366.1] Just one last one on freight elevators before moving out is
+[ 7369.8] freight elevators being inoperable
+[ 7372.3] Going inoperable completely
+[ 7374.3] Which is still a thing which you know, we've had multiple fixes for but you know, that's one that we definitely need to close out
+[ 7381.0] Should I jump into qt and star as I was gonna say it's too qt and star map. So
+[ 7386.0] Quantum travel route resets after a setting route
+[ 7390.0] That's uh
+[ 7391.4] It's annoying when the satnav does that that's yeah, not good. So
+[ 7397.0] it's like
+[ 7399.3] It's not exactly
+[ 7401.3] Okay, I was about to say it's not game breaking. It is game breaking because you can't get to where you're going
+[ 7405.9] That's pretty darn game breaking
+[ 7407.7] But it ends up working after a second or a third or a fourth attempt and whatever
+[ 7411.6] That's what I mean by by the thought was it's not game. But it's show
+[ 7415.4] It's just one of those things. It just makes things look so bad. It's like it's like it needs to be flawless
+[ 7421.6] The the because it's that's again a traversal system, right? The star map becomes like the routing system. So
+[ 7427.8] Yeah, I think I think you know again from from gameplay point of view
+[ 7432.6] Want to sound super apologetic anything but that routing is it's one of those that
+[ 7437.4] It's it's written for a few technology iterations ago now. So
+[ 7442.5] um
+[ 7444.4] We got some interesting changing coming with
+[ 7447.6] Yeah, it just it under really high. I think yes little seemingly simple things like that
+[ 7454.5] Small things not simple small things like that just really
+[ 7458.4] erode
+[ 7459.9] Confidence in anything like if I can't even
+[ 7463.9] plot where I want to go
+[ 7465.9] and you can't
+[ 7468.2] Get me there. It's like
+[ 7471.2] It's just so
+[ 7473.0] Also, the first one is it resets
+[ 7475.8] Next is doesn't plot around obstacles
+[ 7479.4] And next is while in station destination on opposite side won't set route
+[ 7484.1] Those are the main ones I think there's there's more obviously being worked on but the those are the main ones I wanted to call out the
+[ 7493.6] On qt tunnel exit can be in the same system as entrance
+[ 7497.9] Where you basically go through the quantum jump
+[ 7501.7] Successfully why you're not you're you're piloting it right you're doing all the things right you get to the end and then you're back in
+[ 7507.3] stand-up
+[ 7509.0] Obviously, but that's not great. So we're looking into that at the moment
+[ 7513.5] I mean
+[ 7514.8] hasn't
+[ 7515.7] Forgive me for being blunt hasn't some version of that
+[ 7519.2] Bug existed since we added jump points in 4.0. Yes
+[ 7524.9] Uh difference different source cause though, I believe yeah, it's one of those things
+[ 7529.2] It's one of those things where you fix that cause and then
+[ 7532.8] You fix seven up and then Pepsi shows up and you fix Pepsi and then you know, yeah
+[ 7536.7] Yeah, so that's why that's why you know coupled with this effort of prioritizing these issues
+[ 7541.6] There's also the robustness evaluation. We're doing across the board right because it's not just about getting the bugs fixed
+[ 7548.2] And then they break again. It's about trying to change the the culture behind how we fix them and then
+[ 7554.4] Sort of what we check in the periphery of the fix right so make sure it's root cause analysis
+[ 7559.4] And that it's not just a patch on top of another one
+[ 7563.3] Uh, so that's quantum in general. I got more if you want to keep going
+[ 7566.5] Uh star map. Oh, I guess I was star map. That was star map and quantum
+[ 7570.7] Let's we haven't we haven't said
+[ 7573.7] One word about exploits. We haven't said one. Okay. Well, what we did technically the the part where you could buy
+[ 7579.9] The the weapon or whatever item it was and then you could break it down
+[ 7583.2] And then you could sell the broken down materials for four times what that's a that's worse than an exploit
+[ 7588.1] That's a that's legal and legit in this case because we put those prices in right so it's not an exploit in this case
+[ 7594.4] But we do we are tracking several
+[ 7597.7] Uh
+[ 7600.0] Potential exploits that you know that range we basically we're not going to go into details into exploits because
+[ 7605.7] That's kind of an area that we own
+[ 7608.2] Too public about you know what people to be using those exploits if they are confirmed or yeah, but uh, well, we benefit
+[ 7617.2] We benefit from
+[ 7619.2] Those people not knowing
+[ 7621.6] We know what we know it lets us track it lets us learn more about it
+[ 7625.8] It lets us find not just that cause of it, but that cause of it and that cause of it
+[ 7630.7] It's it's very easy
+[ 7632.4] It's very easy to be frustrated when you see an exploit go and continue
+[ 7636.5] It's like why the hell isn't cig doing something about it when I it's like well, no we are we just we need we're we're baiting the hook
+[ 7643.7] It's like if we smack this cause of it now
+[ 7647.1] Then we we never get to see this one and we never get to see this one
+[ 7650.2] So so so there are there are reasons why we leave these things going for perhaps longer than some people would prefer
+[ 7657.5] Because it's how we find out
+[ 7659.6] How it's happening. It's how we find out who
+[ 7662.7] is doing it and and it's like this so it's just
+[ 7666.2] it's it's
+[ 7667.5] That's one of those ones where I I I I could see why it's frustrating, but it's actually
+[ 7672.3] It's actually the process working. Yeah
+[ 7675.1] So we like we're tracking exploits across different
+[ 7678.1] range of types of exploits whether they're environment exploits or
+[ 7681.7] related to the economy exploits or duping or
+[ 7684.5] or or adjacent duping or you know mission bypass things like that
+[ 7689.0] So we're we're tracing a bunch of those and we're tracking we have a great team doing this work
+[ 7692.9] By the way, like that support the developers across for what are our crazy questions about
+[ 7698.1] What who and when and how and so these guys are doing great supporting us
+[ 7702.0] We did not talk about inventory. We kind of skimmed over it
+[ 7707.2] I don't know if we could do a whole hour on inventory already did
+[ 7709.6] Yeah, but so items that are being worked on today like you mentioned so
+[ 7713.7] Inventory becomes unavailable and contents of back-back station loot inventory is empty
+[ 7719.2] So this player reporting I've lost everything. Well, the so from our finding so far. You haven't lost everything
+[ 7725.3] It's really the inventory is not loading it for some reason and it will come back
+[ 7729.8] Some of the back-end modifications we've done recently might are going to help on that front
+[ 7736.4] When double clicking an armor item in the inventory and the adjacent armor item is also equipped that's a Russian and 4-8
+[ 7743.7] And so that's a bit of an issue because you know click a core armor and installs the helmet that's above
+[ 7749.2] I know the team's working on that
+[ 7751.7] The undersuit icon slot in the player inventory will be missing after being sent to cletcher. I think that's by design
+[ 7757.6] No, I'm joking
+[ 7759.1] But yeah, that's an issue. So if you go to prison you think criminals don't deserve undersuits. There's no undersuits for criminals, but
+[ 7766.4] No, I'm joking. So, uh, we we got to fix that
+[ 7770.9] What else are we looking at here when opening the inventory and the player has a lot of items
+[ 7775.0] It can be delayed opening it with no items available or missing icons. So
+[ 7780.7] Icon rendering in the inventory has had a lot of work in 4.8 to speed up the rendering
+[ 7788.0] We're still not where we want to be like
+[ 7791.1] We've optimized the way the UI is actually rendering them the way the actual panes is constructed
+[ 7797.6] But now we need to really look at the at the rtt graphics side of this to make that super snappy the goal is really you press i
+[ 7804.5] It's all there. There's no
+[ 7806.5] No delay at all. And so we're not there yet, but we do want to get there now
+[ 7810.4] This is even more pronounced on very large inventories at the moment
+[ 7814.4] so
+[ 7815.3] Yeah, and if the delay for whatever reason is because we we haven't yet been able to
+[ 7820.1] Populate your snapshot of your inventory. There should be an indicator. Yeah, I think they just got lost in transit
+[ 7826.5] I know the the guys we're talking about that. Yeah
+[ 7831.0] Spinning icons spinning icons. Yeah, because the state needs to be displayed as well. That's that's the key
+[ 7838.5] um
+[ 7840.5] Ideally never happened
+[ 7843.5] The icons have been kind of
+[ 7846.1] Questionable for years, but you're talking about the recent. Yes, you know the recent. It's a different
+[ 7854.1] Problem with the icons and the issues we've had with the icons before right. It's not about the look
+[ 7859.7] It's about the timings and getting them on screen. Thank you. I've been while once them
+[ 7865.5] Right like that
+[ 7868.5] There's one more that I want to call it on the inventory, which is like there is
+[ 7873.0] I mean the way it's written is item lost when equipped by mouse click
+[ 7876.5] which is
+[ 7877.7] A bit crazy, but there is a there's a case where items don't end up where you think they end up and so we
+[ 7884.5] We people think they're lost we haven't we don't have evidence that they're lost yet, but
+[ 7888.9] They go they don't go where you're supposed to go. Yeah, exactly. I'm pretty sure that has actually the definition of lost
+[ 7894.8] Lustin I expect it to be in this place, but it's actually in some place
+[ 7898.4] I know normally can be found again by doing it again because it goes where it goes is the same
+[ 7904.4] So your next item will go to the same place which will then replace that item and either send it back or put it into your hands
+[ 7909.8] When he realizes this is again about the going from the sort of virtual item to the physical item
+[ 7916.0] We we we put it on you
+[ 7919.4] But like hidden and then you play out the performance of putting it into your hand
+[ 7925.6] From that state. Yeah, rather than just popping it into your hand
+[ 7932.0] Yeah, that fragility in the
+[ 7935.2] Some more complex scenario when you have
+[ 7938.4] multiple async systems
+[ 7941.1] They have to go through lots of other steps
+[ 7943.8] I didn't go through most of the first hour
+[ 7947.6] Hardening that we're doing as well, but there's a lot of issues that are being tracked
+[ 7952.5] From the first hour of gameplay like basically your new player you come in. What's your first hour of gameplay? So
+[ 7958.4] This goes from ship combat behaviors
+[ 7961.2] Rubber banding we talked about server performance here that definitely is related
+[ 7968.5] Turning off the power and back on the power on the selected starter ships
+[ 7972.7] Doesn't also turn on the radar
+[ 7976.2] You know, these are things these are a bit more less critical but critical to the first hour of gameplay
+[ 7982.3] Right, so that gives you a bit of an idea
+[ 7986.4] All right
+[ 7988.1] somebody
+[ 7989.3] somebody in the chat
+[ 7992.1] Somebody in the chat
+[ 7993.4] At you know when we're talking about exploits
+[ 7995.9] It's like it would be easier if you told us what an exploit is and isn't
+[ 7999.6] Whatever and I've been I've been thinking about that it happened like five minutes ago and whatnot. It's it's it's sticking in my head because
+[ 8008.4] it's like
+[ 8010.1] We can't give a list of exploits because that just draws a bunch of people to those exploits and makes the problem worse
+[ 8016.8] Like that's just that's just not something any online game
+[ 8020.4] Does and there's a long established history
+[ 8024.4] predate cig why you can't do that
+[ 8028.9] And I'm like so so and then
+[ 8031.9] sometimes
+[ 8033.2] Sometimes I'm known for being a little snarky
+[ 8036.3] Really surprised
+[ 8038.3] and so my brain was like
+[ 8042.0] it's like
+[ 8043.4] If you get that if you get that little excited feeling
+[ 8046.8] In your in your stomach like you like you're getting away with something
+[ 8051.6] That that somebody would be upset with if they found out about it
+[ 8055.1] That's probably a good
+[ 8057.2] Indicator that it's an exploit
+[ 8059.2] And if you don't have that and I'm like
+[ 8063.1] It's like my brother never had that so I'm like
+[ 8066.2] That's what I wanted to say. I'm like no my little brother never possessed that so I'm like well, that's not going to work either
+[ 8071.8] So I don't know guys. I don't I don't know. I don't know an effective way of
+[ 8076.1] Explaining what is an exploit and what is an exploit just it's it's just
+[ 8083.1] It's just
+[ 8084.9] Try to utilize whatever judgment you have if you if you don't know ask a friend
+[ 8090.4] Maybe you know, it's it's like I said it's I was I was already with that snarky answer and then I remembered
+[ 8096.2] My own brother would never
+[ 8099.1] Maybe it's my brother a bad person. I don't think so
+[ 8102.7] I maybe um
+[ 8105.7] Anyway, I'm way out the reservation
+[ 8108.6] Um
+[ 8111.2] So yeah
+[ 8112.3] Everybody that's our show
+[ 8114.5] Uh
+[ 8116.8] I hope
+[ 8120.0] I think about how I want to say this
+[ 8122.2] We threw the old show away. We did a little bit of it here at the end
+[ 8125.0] We did what what you just saw was a little bit of what we had in the in the old show and whatnot
+[ 8130.2] So I apologize. It's it's I hope you don't mind us taking the opportunity to
+[ 8135.8] To have this conversation with you again. This is part of our schedule stuff. You were you were you were here
+[ 8140.7] You're literally it's not no coincidence that you're over here and right now to do this
+[ 8144.5] It's part of our our schedule stuff that we set out to do
+[ 8147.7] um
+[ 8149.3] Back at the beginning of 2025 and stuff. Um, I really appreciate that
+[ 8154.7] We get to do this. I really appreciate that you guys take the time to do this
+[ 8158.0] Uh, I appreciate that you all will sit through and listen to this and
+[ 8163.4] I mean I already said everything I needed to say before for those of you who choose not to weaponize it and choose to
+[ 8168.5] recognize that we are human beings who are who who will make mistakes
+[ 8172.6] But you know our on the whole are doing are doing work that i'm incredibly proud of
+[ 8179.3] I appreciate you. Um, that's it for our show. Uh, I think we're back
+[ 8185.0] I have no idea if we're back next week or whatnot, but uh, uh
+[ 8189.1] after that, um, I will say
+[ 8192.6] all of this talk
+[ 8195.5] All of this talk right now
+[ 8198.5] is
+[ 8199.8] meaningless without
+[ 8202.9] action
+[ 8206.4] it is
+[ 8209.1] We've been on this cadence. We've been on this cadence. Uh, if you follow the cadence of patches
+[ 8214.2] this this year, uh
+[ 8216.4] You you you should know that four nine is scheduled for the middle of july
+[ 8220.9] It was the end of january and the end of march and then in may we switched to the to the middle
+[ 8225.8] The next one is june it follows the same cadence as last year. We just had ones in the middle
+[ 8229.7] It's that the cadence has been in place for 18 months now
+[ 8232.4] The next patch is scheduled for the middle of july
+[ 8235.2] Uh, I don't have specific answers for you
+[ 8239.3] yet
+[ 8239.8] But I know there are conversations going on about whether that should happen or not
+[ 8245.5] Whether whether four nine goes ahead is planned, but we remove
+[ 8249.9] content from it
+[ 8251.3] Whether we keep the content in and we push that release back further to give it more time to address the only thing
+[ 8259.6] I can
+[ 8261.1] confidently comment on right now
+[ 8264.1] Is that the people in this room and the other big decision makers that are having this conversation right now
+[ 8271.0] Do not want to repeat
+[ 8273.7] Of what just happened
+[ 8275.4] So we're going to so through one method or another
+[ 8278.5] Whether it's removing content from four nine that we don't think is ready or whether it's pushing four nine back until the content is
+[ 8285.6] I don't know which direction we're going to take but
+[ 8288.5] None of what we've talked about today is worth anything without meaningful action. So
+[ 8294.1] Stay tuned to find out which direction that goes check in with your roadmap round up or
+[ 8300.1] I'm sure there'll be an announcement from the community team or whatever about which path we go
+[ 8305.2] But that's it. That's our show. Thanks for watching. I'm Jared. That was benoit
+[ 8310.9] That was yens
+[ 8312.9] You have a I think your mom was in chat
+[ 8315.1] Yens, there was some there was at least one person here who was like totally in love with you and was like
+[ 8319.0] He should be on the show
+[ 8320.7] Every week and whatnot. So I agree. He should be on the show. So so so so so hi yens's mom. I'm assuming
+[ 8327.4] Thanks for watching. We'll see you next time everybody. Thank you

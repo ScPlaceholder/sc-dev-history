@@ -1,0 +1,81 @@
+Fire has been temporarily disabled on PTU to help with stability
+## Star Citizen Alpha Patch 4.5
+Alpha Patch 4.5 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.5.0-PTU.10800284.
+- Audience: Evocati Only (Standard ETF NDA) (Possibly Wave 1 Saturday or Sunday if build passes validation)
+- Server Info: PTU Channel - US Only
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Engineering, Ship Armor, and Balance
+- Vulkan Renderer and Graphics Settings Updates
+- Physicalized Helmets
+Not ready for Testing and Feedback
+Updates located here are in partial working state and may be subject to removal from this release.
+- Snub Fighters and Interceptors Balance Pass
+- FPS AI Improvements
+- Ship Light Amplification Detection
+- PU Loot Refresh/Collector Rebalance
+- Additional Hairstyles
+Known Issues
+Currently fire is not functioning in many ships. VFX can be seen on C1 Spirit, Perseus, and Starlancer TAC but not in ships such as the Gladius, Cutlass Black, or Corsair.
+- Multivehicle - PU - Vehicles / Repair - Ships are instantly repaired to 75% with repair tool and can be repaired from the inside
+- Multivehicle - PU / AC - Vehicles / Engineering / Fire - Fire VFX is not visible
+- Multivehicle – PU – Vehicles / Engineering / VFX - Fire is being detected by some clients and not others
+- Multivehicle - PU - Stanton - Fire - Game Code / Vehicles / Resource Network / Dynamic Atmosphere - Fires are not Extinguished in 0 Atmosphere
+- Multivehicle - PU - Vehicles / Engineering / Components  - Life Support Components not visible on the engineering screen 3D view or mobiGlas Map
+- Multivehicle - PU - Vehicles / Network - Resource Network / Engineering - Engines turn off after transitioning dgs-mesh authority
+- Multivehicle - PU - Vehicles / Engineering / Components / RN - UI / Kiosk - When using the Engineering Kiosk, the vehicle model can become offset by the actor moving around it
+- Multivehicle - PU - Vehicles / Components / Salvaging - Unable to switch to other component modules while in salvaging mode
+- Multivehicle - PU - Vehicles / Salvage / Art - Salvage Ships are unable to detect the scraping surface and is missing the Scraping Laser VFX
+- Multivehicle - PU - Vehicles - Breached doors and ramps do not reset after the vehicle has been repaired and the player is unable to close them
+- Multivehicle - PU - Stanton - Fire - Game Code / Vehicles / Resource Network - Extinguished Fires can suddenly re-ignite and spread rapidly
+- PU - Nyx - Sworn Enemies- Mission Content / Reputation / mobiGlas - " Vanduul-Tech Smugglers " is not available after getting to the required reputation rank
+- PU - Mission Content / UI - Patrol Mission progress halts after reaching location markers
+- PU - Pyro - Storm Breaker - Locations / Missions - Opened safes remain open after 2 hour cooldown
+## Features & Gameplay
+Gameplay Updates
+Engineering Gameplay
+Introducing dedicated engineering roles aboard ships, allowing players to actively manage power distribution, repairs, and system efficiency in real time. The overall goal and experience with this Engineering update should see ships behaving approximately as well as 4.4.0 in combat and surviveability with the added bonus of engineering and multi-crew to extend this beyond the capabilities of 4.4. Beyond this, players may need to check on their ship between battles to make necessary repairs so that they are fully prepared for their next encounter.
+This introduces numerous updates to all ships and vehicles with the initial implementation of ship armor loads of updates to heat, power, and life support management, diagnostic and engineering screens, large sweeping changes to ship component health, damage resistances, and heat generation, hull health and weapon balancing, as well as updating the repair tools needed for the job.
+Since the previous Tech-Preview, we have made dozens of fixes as well as updates for balance and UI and further updates for more vehicles. Deactivated fire for bullet hits as well as overheating of powerplants, increased coolant provided by the coolers, reduced critical powerplant failure point, updated armor to have health again, fixes to ballistic cooldowns, reducing radar heat, and ship health now tied to critical health.
+As this new update affects every ship and vehicle in the game, many further updates and balancing will be down during the coarse of the PTU phases for 4.5 and beyond.
+Ship Fire Hazards
+Bringing fire hazards to ships and environments, along with Fire Extinguisher mechanics, requiring players to manage and extinguish blazes before they spread. This includes retrievable fire extinguishers aboard ships that have a limited use before needing to be recharged.
+Weapons and Items
+Physical Helmets
+Implementing physical helmets in the persistent universe. Pick one up, rotate it, inspect every detail, carry it around, attach it to your hip, or toss it across a room if you want. When you equip a helmet, you put on or remove the same one you held in your hands, complete with a fully realized interior.
+Core Tech
+Vulkan Renderer Improvements and GPU Settings Updates
+Increasing both the stability and speed of the Vulkan renderer, with many crash fixes, diagnostic improvements, and multi-threaded render-submission, while adding support for HDR and NVidia's DLSS Transformer model. Also included is an overhaul to the Graphics Options, with many new settings, and a VRAM bar to help players configure the graphics for their GPU.
+## Bug Fixes
+Star Citizen Alpha 4.5.0 currently contains about 64 bugfixes for issues occurring in 4.4.0, 26 of which originated from the issue council.
+- Potential Fix: PU - Area18 - Locations / Art - Adira Falls Apartments missing hab level interiors (STARC-181455)
+- Potential Fix: PU - Cargo Hauling / Vehicles - MISC_HULL_C - Automated cargo loading freezes after starting and does not resume (STARC-178833)
+- Potential Fix: PU - Stanton - Refinery Kiosk / Salvaging - Refinery Kiosk failed to detect stored salvaging vehicle as material locations (STARC-181549)
+- Potential Fix: PU - Nyx - Delamar - Levski - Locations - Performance - The client performance around Levski is in a bad state with very low frame rate below 15 fps when traversing through Levski (STARC-185212)
+- Potential Fix: TRACKING PU - AI - NPC AI too accurate and ignores cover (STARC-186755)
+- Potential Fix: ANVL Lightning F8C - PU - Vehicles - F8-C invulnerable areas (STARC-186615)
+- Potential Fix: PU - Nyx - Levski - ATC / Audio / Locations - Multiple ATC voice lines all play at once when requesting take-off (STARC-185085)
+- Potential Fix: Anvil Carrack Series ALL Variants - PU - Medical / Medical Screens / Animations / Vehicles - The Medbed Screen is not deploying when a player is laying down on the Medbed (STARC-185878)
+- Potential Fix: Multivehicle - PU - Vehicles / Ships VFX Content / Art - Repairing vehicles via Landing Services causes the ship to catch on fire (STARC-186078)
+- Potential Fix: PU - Missions - Sworn Enemies - Mission Content - The AI Corpse in the Registration Room is missing (STARC-186394)
+- Potential Fix: PU - Storm Breaker - Locations / Interactables - AAA grade Valakkar pearls not spawning, only AA grade (STARC-179753)
+- Potential Fix: PU - Storm Breaker - Mission Content / Locations - Specimen Cache doors do not open during the Egg Procedure
+- Potential Fix: PU - Missions - Eliminate All - Eliminate All missions are not completing after all AI have been eliminated (STARC-179098)
+- Potential Fix: PU - Quantum Travel - Interdiction - Quantum Interdiction origin remains after crash recovery even with no mantis (STARC-186183)
+- Potential Fix: PU - UI / Inventory - Freight Elevator - Kiosk - The Search function of the Freight Elevator terminals ignores localized item names (STARC-181469)
+- Potential Fix: PU - Freight Elevator - Elevators fail to unstow entities, while they take up space on the loading platform, causing the "Elevator Overloaded" error message (STARC-175060)
+- Potential Fix: PU - Freight Elevator / Locations / Cargo - Tractor Beam is unable to tether to entities on the external freight elevator grid when the actor is too far away (BUG-340605)
+- Potential Fix: PU - Freight Elevator / Locations - Some stations are missing their external Freight Elevators
+- Potential Fix: PU - Nyx - Sworn Enemies - Looting / Inventory - Lootable Vanduul corpses can be stored in personal inventory (STARC-186151)
+- Potential Fix: PU - Creatures - Yormandi - Level Design - The Yormandi does not spawn once the lever is pulled
+- Potential Fix: PU - Sworn Enemies - Mission Content / Locations - Entire mission location can lack collision upon arrival
+- Potential Fix: PU – Missions – New Retrieval Run Available / Delivery – Mission Content / Mission Feature – Delivering the package inside the freight elevator does not complete the mission
+- Potential Fix: PU - Law - hacking comm arrays and disabling them does not get rid of monitored space and all criminal activity gives crime stat
+- Potential Fix: PU - Nyx - Jump Point Stations - Locations / Design - After spawning at Levski vehicles delivered at a Docking Port are set to claim immediately when requesting them from Jump Point Stations
+- Potential Fix: PU - Nyx - Nyx Mission Pack 1 - Missions / AI - Hostile NPC ships remain stationary after spawning
+- Potential Fix: PU - Missions - Nyx - Vanduul do not trigger wildlines
+- Potential Fix: PU - Pyro - Jump Points - Locations / ATC  / Hangar - Instanced hangar not opening when hailed for the first time in Pyro-Nyx Gateway
+- Potential Fix: PU - Nyx - Levski - Elevator is going correct direction, but "next destination" UI is incorrect for the next floor in direction elevator is going
+- Potential Fix: KRIG L-22 Wolf - PU - Vehicles - The missile rack will become offset when dropping LOD level
+- Potential Fix: MISC Starlancer ALL Variants - PU - Vehicles / Vehicle Tech Art - If client holds thruster down when landing in low gravity environment the vehicle will rock side to side

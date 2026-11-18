@@ -1,0 +1,105 @@
+## Roadmap Roundup
+Happy Wednesday, everyone!
+Every two weeks, we accompany the Roadmap update with a brief explanatory note to give you insight into the decision-making that led to any changes. This is part of an effort to make our communications more transparent, more specific, and more insightful for all of you who help to make Star Citizen and Squadron 42 possible.
+With that said, let’s go ahead and dive into this week’s Roadmap Roundup!
+-CIG Community Team
+## Notable Changes for May 19th, 2021
+## Progress Tracker
+The Progress Tracker has had its horizon extended into Q1 2022 for all Upstream teams with this publish. Downstream teams will be updated with their schedules extending into Q3 in a publish near the start of that quarter.
+The following deliverables have been added to the Progress Tracker:
+Identity Service
+Identity service will be a proxy service that will relay information about accounts between the RSI platform, Tavern (Spectrum) and the game client.
+AI – Untrained Combat
+First iteration for untrained characters (such as civilians) to react in battle scenarios. Civilian AI will be able to use weapons to defend themselves in threatening situations, and will try to preserve their lives using cover or surrendering when necessary.
+AI – Planetary Navigation
+First pass at a system that allows NPCs to move on planetary surfaces using a dynamically generated navigation mesh. This will efficient process planetary terrain and objects to prioritize the processing of the environment around the players into navmesh, allowing us to use all the existing functionalities on planets.
+Space Station Clinics – Hospital Interior Location
+Clinics throughout the ‘verse where players can heal, revive, and purchase medical supplies and life insurance.
+GrimHEX – Hospital Interior Location
+GrimHEX hospital interior where players can heal, revive, and purchase medical supplies and life insurance.
+Unified Login Queue
+Creating a shared login queue to prevent massive login waves from negatively affecting backend services.
+Cockpit Button Animations
+Finalize Gladius dashboard buttons with multi-states and fully demonstrable with a procedural animations for each state.
+Derelict Spaceships – Points of Interest
+Points of interest that will be scattered on planets. They will be derelict spaceships with some type of activity (puzzle, traversal, hostile AI) and some type of reward for resolving said activity.
+Mission Manager Updates
+Alongside converting to Building Blocks, this feature includes an updated UI in support of the dynamic mission system. Also includes the ability for players to see the reputational requirements of mission content.
+MISC Hull D
+Building, implementing, and balancing MISC’s heavy cargo hauler, the Hull D, as a flight-ready vehicle.
+MISC Hull E
+Building, implementing, and balancing MISC’s heavy cargo hauler, the Hull E, as a flight-ready vehicle.
+Origin 600i Gold Standard
+Implementing, polishing, and optimizing all features required to bring the Origin 600i to gold standard.
+Greycat PTV Gold Standard
+Implementing, polishing, and optimizing all features required to bring the Greycat PTV to gold standard.
+Lava Tech
+Modifying and tuning river tech to produce impressive lava rivers and lakes.
+Ecosystem Enhancements
+Enhancing the realism of plants and animals in their aspects and behaviors, to better immerse them in their respective environments.
+These deliverables were previously taken off the roadmap temporarily, and are now returning:
+- Bounty Hunter V2
+- MultiGrid SDF – Capital Ship Destruction
+- Weapon Misfire & Wear
+——
+Small Home – Outpost
+This deliverable has been renamed to Outpost Homestead – Independent & Outlaw, encompassing several additional modules as well as rundown variants.
+Previously marked as Unannounced, this deliverable has now been revealed on the Progress Tracker:
+RSI Scorpius
+Building, implementing, and balancing RSI’s heavy fighter, the Scorpius, as a flight-ready vehicle. You’ll learn more about RSI’s secret fighter tomorrow and at it’s unveiling at this year’s Invictus Launch Week.
+## Release View
+Release view has also been given a new horizon of Q1 2022, with the addition of the 3.17 column. Now, the column may look a little light right now, but rest assured many more cards will be added to the 3.17 column in Roadmap updates to come.
+The following deliverables have been added to Release View:
+Weapon Capacitors V1
+Players will have the ability to manage the amount of extra energy that goes into the weapons, making critical decisions on the distribution of energy in order to defend, attack or just run away.
+Thruster Capacitors V1
+Players will have the ability to manage the amount of extra energy that goes into the thrusters, making critical decisions on the distribution of energy in order to defend, attack or just run away.
+Shield Capacitors V1
+Players will have the ability to manage the amount of extra energy distributed to shields, allowing them to choose between maximizing defenses or using that power to attack or escape.
+Planetary Volumetric Clouds v1
+Initial version of a bespoke system to convincingly render multi layered, volumetric clouds of varying scale within planetary atmospheres.
+RSI Scorpius
+Building, implementing, and balancing RSI’s heavy fighter, the Scorpius, as a flight-ready vehicle.
+MISC Hull C
+Encompasses all tasks, including design, art, audio, and tech, required for the implementation of the MISC Hull-C heavy cargo hauler into the PU.
+MISC Hull A
+Encompasses all tasks, including design, art, audio, and tech required for the implementation of the MISC Hull-A cargo hauler in the PU.
+Hangar Manager App
+Creating a mobiGlas app that emulates the functionality of ASOP terminals, allowing players to spawn ships, claim insurance and access the array of landing services to maintain their ships.
+——
+Actor Teams
+During the planning and review process last month, the Actor teams have come to the conclusion that additional time for polish and refinement is necessary for the following features, and have therefore been adjusted to accommodate.
+Moved to 3.15:
+- Personal Inventory
+- Tech – Healing T0
+- FPS Radar & Scanning
+- Hacking – Tech
+- NPC Healing
+- Curelife Medical Tool
+- Greycat Multi-tool Healing Attachment
+Moved to 3.16:
+- Weapon Charge/Drain T0 – Tech
+- Actor Feature – EVA T2
+- Salvage T0 – Tech
+- Zero-G Push & Pull
+- Greycat Multi-tool Salvage Attachment
+Moved to 3.17:
+- Ladders T1
+- Player Interaction Experience
+- Cutting T2
+Temporarily Removed (these items are actively being discussed and will be re-added when discussions/timing are decided):
+- Weapons – Magazine Stripping / Refilling
+- Actor Feature – Lockers and Inventory
+- Fire Extinguisher – Tech
+- Fire Extinguisher
+- Weapon Misfire & Wear
+- Vehicle Module Swapping
+Migrating Legacy Vehicle XMLs to Datacore
+After planning meetings, this task has been reevaluated to be a more gradual process than initially anticipated, and therefore doesn’t have a set release date. For this reason, this deliverable is being removed from Release View.
+Shield Systems Tech Replacement
+Originally planned to be a two-part release, this work was completed for the release of Alpha 3.13 in tandem with Shield Effects v2. Therefore, this deliverable is being removed from Release View.
+Small Home – Outpost – Colonialism
+As mentioned above in the Progress Tracker section, this feature has had a change in scope and is being temporarily removed from Release view until it has been properly scheduled out.
+——
+We know there is a lot of content moving around today, and we strive to communicate changes clearly as soon as we can (even if it means sharing polarizing changes the week of a big event). When we set out to share more info with our new Roadmap earlier this year, we talked a lot about tentative vs. committed. As a reminder, a feature marked as “Tentative” on the Roadmap should be considered fluid, meaning it has higher likelihood of moving around on the schedule. It is our goal to set proper expectations on this front, so you can expect to hear us repeat this a few more times.
+That’s all for this week! Join the discussion on Spectrum

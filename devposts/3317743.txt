@@ -1,0 +1,78 @@
+## Star Citizen Patch 3.10.1
+Alpha Patch 3.10.1 has been released and is now available!   Patch should now show: VERSION 3.10.1-LIVE.5855172.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+We are aware of additional issues that we would like to get fixed and are doing a live release of this patch to collect more information on some of those issues, along with uncover new ones.  Please use the Issue Council and report any problems you encounter.  If you would like to help us investigate, we have some video tracking threads here: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049?page=1&sort=last-activity
+Known Issues
+- Hangar doors may either close too quickly or remain closed when requesting landing. Workaround: Resubmit ATC landing request.
+- Quantum travel can be obstructed by party members on board.
+- Cockpit MFDs on some ships can stop working after a time.
+- FPS ammo can become permanently broken when purchasing large quantities of ammo at once.
+- Bed logging can sometimes return players to the center of the system and/or with their ship in a gear-up state.
+- The pitch ladder can become stuck on the ship HUD.
+- Commodity boxes dropped by exploded ships can sometimes despawn too quickly.
+- The Elevator panel on the Carrack may fail to work on spawn.
+- Private Arena Commander matches are temporarily disabled due to an issue with the updated group system
+- Player character can clip through the external doors of certain outpost buildings and Aid shelter buildings' airlocks when entering
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- Hammerhead atmo entry effects clipping through interior of the ship
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+- Shots from remote turrets may appear desyned but still connect with the target.
+## Feature Updates
+Characters
+- Visual updates to some of the Bartenders.
+- Added updated bartenders and patrons to Rest Stop bars.
+Locations
+- Adjusted the kill mesh around Lorville.
+Gameplay
+- Ship targeting UI updates
+- Added closure rate for ships that are targeted. Added reticle and pip animation indicating fire solution. Removed outline effects from targeted ship.
+Ships and Vehicles
+- Reverted Banu Defender back to normal default setup.
+- Added manual interaction to the Internal doors in the Avenger series to help with players logging back in not being able to get through the doors.
+- Added Reliant variants to New Deal and Arena Commander inventories.
+Weapons and Items
+- Temporarily converted Tachyon weapons into normal energy cannons.
+- Added the Hornet ball turret, flashfire mount, and nose turret to PU shops and Arena Commander REC rentals.
+Bug Fixes
+- Locations and portions of locations should no longer stream in slowly or fail to stream in at all.
+- Fixed an issue that was causing the Greycat ROC to not pick up every mined them with the tractor beam.
+- Greycat ROC storage should now show the correct amount of minerals collected to the nearest decimal point.
+- Mineable resources should no longer shift or move when hit with a vehicle.
+- Changing undersuits with legs armor equipped will no longer make a players equipped side arm or utility items appear between their feet.
+- Fixed an issue that was causing ships that flew into the autopilot / kill zone to be flown back to the spaceport before exploding.
+- Area18 landing splines should no longer destroy the player's ship on occasion.
+- Fixed an issue causing multiple drop-off delivery missions to not have all 3 drop-off locations.
+- Outpost building at Shubin Mining Facility SMO-13 should no longer be placed too high above ground which was preventing players from entering.
+- Weapons will no longer float near the players back, if they unequip either the Pembroke or Novikov suit and then equip any torso armor.
+- The external elevator screens at the New Babbage Spaceport Metro Loop should no longer be misaligned.
+- Fixed an issue causing Bartenders to get stuck trying to pick up dirty drinks.
+- Upper and lower turret seats in the Caterpillar should now have collision.
+- Camera should no longer slowly pan through the ship interior at the end of an Arena Commander match.
+- Equipping any attachment to a weapon using the inner thought should no longer cause the attachment to sit in the players hand.
+- The 890 jump medical bed "Set preffered ICU" prompt should now be visible without having to lay down in the bed.
+- Player and Ship Art will no longer become offset from the Ship when a player exits the Ship after Exiting Pilot Seat during QT.
+- Fixed multiple reversed decals on the Hornet series.
+- Landing wrench icon should no longer display on a landing pad when spawning a ship.
+- Fixed missing collision on the rear personnel elevator struts/supports on the 890j and 600i.
+- The open and close interaction mode prompts on the rear interior door of the cutlass Red and Blue should no longer appear reversed.
+- Players should no longer take collision damage when entering a ship.
+- Players should no longer experience 16k7 lockout issues.
+- Delivery mission boxes should no longer spawn within the ground.
+- The Freelancer series ships should no longer spawn from ASOP with a damaged thruster.
+- The buy UI should no longer become not selectable after selecting an item that the player can't afford.
+- Players should no longer get teleported to a no trespassing zone when their ship is impounded at rest stops.
+Technical
+- Fixed 8 Client crashes
+- Fixed 9 Server crashes
+- Various fixes for memory leaks
+- Various fixes for hub and backend service crashes

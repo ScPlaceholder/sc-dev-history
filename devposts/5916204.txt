@@ -1,0 +1,41 @@
+## Bug Fixes
+- Fixed - Client - Crash - Crash Handler - If the client crashes, it does not prompt a crash handler for the player
+- Fixed - Multivehicle / All Planets - GFX - There are frequent pockets of extremely low client FPS performance in LZs and ships
+- Fixed- GrimHEX - Hangars - Player asphyxiates if not wearing a helmet in Hangar 13
+- Fixed - UI / Actor - EVA changes can cause distortion and artifacts in the UI
+- Fixed - Selling - Commodity Kiosk / Cargo - Large amounts of cargo sold at once will cause the transaction to fail the cargo will be taken and no money will be granted
+- Fixed - UI - mobiGlas - Home Screen / moTrader - Economy - Commodity Kiosk - aUEC balances are not synchronized to players after making transactions in-game
+- Fixed - Salvage / Hull Scraping - Crusader C2 Hercules - Some sections of the hull are exceedingly difficult/impossible to salvage
+- Fixed - Anvil Carrack - Stanton - Ships - Art / GFX - The bottom turret glass on the Carrack is difficult to see out of
+- Fixed - Vehicles / Ships / Docking - Merlin will not undock from Constellation
+- Fixed - Mission Content - Delivery / Collection - The local multi pickup and multi drop off missions are not available to players
+- Fixed - FPS / Locations - Elevators stop bullets from doing damage when passing through open door
+- Fixed - Player / Actor - Personal Inventory - UI - Network - Unable to Equip/Unequip a helmet
+- Fixed - Actor Feature - Body dragging/dropping - Cannot drop a dead body while dragging it
+- Fixed - Ships - Art - Paint - Paints do not have their designated names or descriptions applied to them
+- Fixed - Drake Vulture - Ships / Vehicles / Game Code - If the Player Exits the Pilot Seat or toggles Salvage Mode while in Gimbal Mode, when they Re-Enter the Pilot Seat the ship fails to resume Gimbal Mode
+- Fixed - Ship parts can be "Duplicated" when repairing a ship with no parts.
+- Fixed - Insurance - Economy / VMA - Ships - Multiple Components - Player-purchased vehicle components overwritten in claimed vehicle loadout cannot be sold or equipped
+- Fixed - Multivehicle - Locations - Medical Bay Bed and Screen Obstruction in Hangars
+- Fixed - BEHR P6-LR Sniper Rifle and GMNI A03 missing from Star Marine Loadout Customizer
+- Fixed - Star Marine Multiplayer - Last Stand - visarea / portal Issue appears stopping the view of the level
+- Fixed - Ships - Art - Reversed text can be seen on the Pisces cockpit overhead light
+- Fixed - Mining Gadgets - the Optimax mining gadget does not modify resistance
+- Fixed - Vehicles / UI - Greycat STV speedometer is off-centre within its window
+- Fixed - Mission Content / Game Code - Delivery - More boxes spawn in than need to be delivered
+- Fixed - Mining - Game Code / Ships / Vehicles / Weapons - Deposits Shattered at Optimal Range cause Damage to the Players Ship
+- Fixed - Vehicles/Salvage - Filler Station Crafting - UI - EXPLOIT - Players are able to craft a free multitool from the Filler Station
+- Fixed - Design / Mission / Locations - Failed Negotiations - The Disable Gravity Prompt is Unresponsive
+- Fixed - Drake Cutter - Player will start to suffocate when exiting the ship bed after using "lie down"
+- Fixed - Global - AI - Social AI - AI walking in place
+- Fixed - Valkyrie - Vehicles / Actor - Players are unable to vault / climb / mantle in to vehicles via the side entrances
+- Fixed - Design / Locations - Rocks float above the ground everywhere on Wala/Magda/Ariel/Aberdeen/lyria
+- Fixed - Mining / Locations / FPS / Mining - There are no mineable resources or harvestables present in any of the Sand Caves on all of the Moons that they should be present
+- Fixed - Mission Content - Frustrated With Covalex - UI / MobiGlas - The "Frustrated with Covalex" Delivery Mission is missing half of its description in the Contract Manager
+- Fixed - MULTIVEHICLE - Insurance - Ships - Multiple Components - Player purchased vehicle components are overwritten by stock components when claiming destroyed ship
+## Technical
+- Fixed 12 Client Crashes
+- Fixed 6 Server Crashes
+- Fixed a Mainthread Deadlock
+- Backend Performance Improvements
+- Fixed an Nvidia specific client crash

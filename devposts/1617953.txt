@@ -1,0 +1,41 @@
+## Star Citizen Patch 3.3.0z
+Alpha Patch 3.3.0z has been released to the PTU, and is now available to test!  Patch should now show: PTU-980830.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- Teach's Ship Shop
+- VOIP and FOIP
+- Missions: FPS combat mission and scramble races
+- New Ships and Vehicles: Valkyrie, Phoenix, Hammerhead, Mustangs, and Cyclones
+- Manned and remote turrets
+- Changes to ship cannons
+Major Known Issues:
+- Patrol missions may hang on "hold position" markers.
+- Players are not put into local chat.  W/A: Open mG and click the bell icon twice, then in chat "tab" over to local.
+- VOIP/FOIP mG buttons will sometimes not function correctly.
+- Mission markers no longer appear after using crash recovery..
+- There are currently no interdictions.
+- Players will be locked in place, unable to move, when crash recovery is used.
+- Recco is currently not functioning.
+## Feature Updates
+Ships and Vehicles
+- Reduced the size and brightness of the mining laser beam when at minimum output.
+## Bug Fixes
+- Players should now be able to set the rest stop as a waypoint on their mobiGlas.
+- Fix for heatwave effect playing over top of ship UI.
+- The center HUD area of the Aurora series should no longer appear solid prior to entering the pilot seat.
+- Fixed remote turret behavior for the Valkyrie when in Arena Commander.
+- The AR marker for ping blobs should now show distance to contacts.
+- There should no longer be mineable asteroids that can't be mined and lack collision.
+- Fixed missing wheels on Cyclone previews on the VMA.
+- Players should no longer be able to get stuck in the entrance of the Prospector.
+- The Blade headlight should now be able to be turned off.
+- Fixed depth of field (Fog) issue on Daymar.
+- Alternate fire mode on turrets should now function properly.
+Technical
+- Fixed 2 client crashes.
+- Fixed 2 server crashes.
+- Fixed a server deadlock.

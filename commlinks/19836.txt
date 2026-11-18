@@ -1,0 +1,61 @@
+Squadron 42 Monthly Report
+February 2024
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 03:06:2024
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 Recruits.
+Welcome to February’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including combat encounters, vehicle collisions, and environmental storytelling.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Content)
+AI Content continued to make key enhancements and refinements, with the Idris Stanton receiving focus in February. For example, dynamic conversations were fine-tuned with updates to NPC standing positions and additional randomizations to provide a more authentic feel.
+Updates were also made to the gym, including punch bags that now align perfectly and animate smoothly. They also reworked gym hours to be more balanced, so players will see the correct number of NPCs whenever they choose to visit. Plans for busier times were created too to ensure NPCs can always find a place to work out.
+Additional animations were added to the bridge, including ‘hands-on-ears,’ to demonstrate cross-ship communication and add variety. Throughout the ship, NPCs will now carry a more diverse range of items too.
+Trolly-pushing and cargo-handling animations were refined for added realism, while the security officer outside the bridge salutes players as they walk by.
+## AI (Features)
+Last month, the AI Features team progressed with two key fights and continued to improve combat animations for FPS encounters. Hit reactions were also enabled for NPCs.
+The team also expanded the movement system to allow NPCs to use ad-hoc animations to enter cover locations without passing through dynamically created paths.
+They also continued to support the other SQ42 teams by investigating and fixing various bugs.
+## AI (Tech)
+During February, AI Tech focused on a variety of improvements. For NPCs using trolleys, focus was on the exact positioning of trolleys in the environment. Now, an NPC can correctly push a trolley to a location with an arbitrary orientation. The team also improved transit and elevator usage while pushing trolleys so that the overall flow is more robust and fluid.
+Spaceship behaviors were also iterated on to deliver better ship-vs-turret combat. Fighters will now correctly target standalone turrets and perform appropriate combat behaviors.
+Numerous updates were added to the Apollo tool, such as improved feedback for errors in missions. The team also increased usability when navigating between mission callbacks, allowing the designers to jump to the appropriate logic from multiple elements of the interface. A new UI for the Subsumption tool is underway too.
+Specifically for SQ42, AI Tech focused on support and bug fixes across the project. For example, they fixed the calculation that animations use when NPCs enter cover to ensure they’re facing their target.
+They also fixed an issue with ship operator seats caused by the AI thinking that only a specific animation was available when exiting.
+## Art (Weapons)
+February saw the Weapons team improving wear maps across all FPS weapons. They also redesigned iron sights alongside the screen sizes for dedicated tools and Multi-Tools.
+The Behring P4-AR rifle was reworked and various improvements were made to the fire extinguisher too.
+## Gameplay Story
+Gameplay Story began February updating a number of scenes in Chapter 16 with the newly standardized helmet setup.
+“It felt great to get these scenes finished off and to see the helmet animating nicely as the characters put it on.” Gameplay Story Team
+The team also began receiving new facial animations and mastered audio, allowing them to complete several existing scenes. Alongside this, new motion capture enabled significant updates to a range of scenes. For example, a two-person scene in Chapter 4 was reshot to account for a new location and start poses, significantly improving the overall scene.
+Polish was done for Chapter 1, and a small but significant update was made to the cast in Chapter 14.
+## Graphics & VFX Programming
+Throughout February, the Graphics teams progressed with their longer-term tasks. For example, work is nearing completion on the unification of gas-cloud and planet-cloud upscaling, though challenges caused by animated lights in gas clouds need to be solved. The gas-cloud occlusion effect is also nearing completion, which will increase the detail level of all gas clouds, even in flat-lit scenarios. The team also resolved a long-standing issue that caused a harsh line to appear when 600m from where a gas cloud blends with the near-fog system.
+The Global Illumination team continued to work on a system to approximate complex materials within a ray-traced view of the world. Last month, they began looking into performance improvements before tackling some of the more complex issues, like moving objects and zones.
+Devs from the water strike team closed out the issues that came up in their final review alongside several new features, including SDF interaction for accurate collisions when vehicles hit water and an improved water-intersection shader.
+The rest of the Graphics team focused on improving the upscaling tech. This involved finalizing a new mesh format that gives major performance improvements.
+## Level Design
+The Social Narrative team continued to work on their ‘focus’ chapters, the majority of which are Idris interstitials. February’s work involved making sure the chapter can play out from start to finish and that all narrative and scene content is present and correct. For example, ensuring that the medical flow is working, objectives and markers are in place, emails are set up, ship chatroom content is present, mission-brief text is updated, and the landing and take-off sequences are correct.
+Outside of interstitials, feedback was addressed and polishing was done for Chapter One and the Fortunes Cross and Shubin Archon locations.
+## Narrative
+The Narrative team continued to close out SQ42’s remaining text needs. This included providing chatter for some of the background environments, creating mobiGlas content, writing content for cinematics, and continuing to create other opportunities for environmental storytelling to enrich the locations and provide a sense of history.
+As mentioned in last month’s report, the team continued to work with the Gameplay and Design teams to polish the Galactapedia experience, solidifying the approach for when and how articles unlock. The existing entries were also passed along to the Localization team to start translating.
+“Without spoiling anything, the team kept working closely with an artist to create some exciting content. The team also developed some lore for another set of collectibles that will require art as well. No spoilers!” Narrative Team
+Finally, Narrative continued to review the latest levels via playthrough and video to see if scenes are triggering as intended alongside polishing the overall narrative experience.
+## R&D
+In February, the R&D team continued work on the temporal render mode. History filtering was switched to a custom bicubic filter to avoid diffusion and resampling blur due to repeated history look ups. Care was also taken to eliminate potential ringing artifacts during strong camera movements.
+The temporal filtering of transmittance was improved to avoid glowing thin silhouettes around objects in foregrounds with clouds and the sun behind them. Various improvements were made to preserve history details for as long as possible (slow movement, no significant cloud disocclusion, etc.), and to quickly converge to a full-resolution image in case history needs to be rejected.
+## Tech Animation
+Last month, Tech Animation focused on refining head assets and cleaning up technical debt around their implementation. This comes as a precursor to polishing head assets and refining eye alignment in the editor to ensure characters look as good as possible.
+Further to this, a large contingent of the department is working on asset setup for lockers. These will allow players and NPCs to change their apparel to something more appropriate to their current priorities.
+“This sounds simple but, in practice, we have to support a wide array of assets that can be stowed and recovered from these vessels. It can take quite some time to ensure everything is set up correctly.” Tech Art/Animation Team
+The team also kicked off initiatives to ensure the health of the build remains stable and triage technical debt built up over the course of the project.
+## UI
+The UI team worked closely with the Environment and Cinematics teams last month, creating several pieces of ‘movie style’ UI that appear during cutscenes. They also created screens around the game levels to help with storytelling and atmosphere. Design work was done to help improve EVA and AR markers too.
+## VFX
+Last month, as well as the usual Art, Cinematics, and Design support, the VFX team focused on polishing and optimizing an effects-intensive in-game scenario. As part of this, the artists began looking at areas where they can create bespoke explosion texture sequences to create a more cinematic, high-fidelity experience for the player.
+## WE'LL SEE YOU NEXT MONTH...
+## // END TRANSMISSION

@@ -1,0 +1,40 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12344240
+- Audience: Wave 1
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+Known Issues
+- PU - Stanton - Orison - Orison Relief Support / UI / Crafting / Freight Elevator - TH-01 Propulsor is not correctly physicalized, therefore cannot be delivered once crafted and can brick elevators
+- PU - Multi-System - ASOP / UI / Locations - Vehicle remains in claim status after insurance claim or free loadout selection (Could become marked as captured and require a recopy to PTU)
+- PU - Stanton - Siege of Orison V2 / Instancing / UI - Instancing elevators missing UI on Call Elevator panels
+- PU - Stanton - Siege of Orison - Missions / Instancing - There is a chance that the force field gate with the "STANDBY" label at Overworld will not open
+- PU - Nyx - Battaglia - Repeatables - Mission Content / AI / Narrative / Dialogue - Battaglia does not go through generic flow of Repeatable missions if they are available to the player (currently blocks mission 3)
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Features & Gameplay
+Orison Relief Support
+Fresh off the recent NineTails raid on Orison, they are asking for support to rebuild and ensure all civilians effected are back on their feet. This set of missions will task the player with delivering materials, medical supplies, crafting helpful items, and more!
+Note: There is a known issue preventing the completion of the Small, Medium, and Large fabrication missions in todays publish.
+## Technical & Bugfixes
+- Fixed 3 Client Crashes
+- Fixed 2 Server Crash
+- Potential Fix: Addressed an issue with the escape route fan in the Klescher Rehabilitation Facility not behaving correctly.
+- Potential Fix: Corrected how mineable objects report their destruction, so the object destroyed is now identified correctly rather than being restricted to a mineable entity.
+- Potential Fix: Addressed an issue where selecting Repair from Landing Services did not behave correctly for players who own multiple vehicles.
+- Potential Fix: Freed up audio processing so more audio commands can be handled, and suppressed duplicate commands.
+- Potential Fix: Claim timer for Insured and Free loadout is too long
+- Potential Fix: Removed an outdated loot configuration.
+- Potential Fix: Increased the mass of super heavy armor from 80kg to 160kg.
+- Potential Fix: Filter overlaps during hover and selection interactions in the inventory UI
+- Potential Fix: Fixed the mesh setup for the Neutron Cannon on the Vanduul Scythe.
+- Potential Fix: Corrected the material setup so the command module works correctly with Ironclad materials. Note that this is a temporary fix.
+- Potential Fix: Addressed an issue where Vanduul ships would not spawn during Bounty and Defend Ship missions.
+- Potential Fix: Irradiated Adult Valakkar is missing its spit attack and cannot deal damage to player

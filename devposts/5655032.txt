@@ -1,0 +1,82 @@
+## Star Citizen Patch 3.18.0u
+Alpha Patch 3.18.0u has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.18.0-PTU.8324837.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Server Region: US
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Salvage - Hull Scraping
+- Platform Assault on Orison
+- Security Post Kareah Reactivation
+- Courier Delivery Missions Update
+- Sandbox Prison Activities
+- Drake Vulture
+- Sand Caves
+- Daymar Crash Site
+- Stanton Racetrack Locations
+- Greycat PTV Race Track
+- New Rivers (40 New Rivers on Hurston and microTech)
+- Additional Derelict Outposts
+- Restricted Areas v3
+- Arena Commander Quality of Life Updates
+Known Issues
+- Alt+K keybind will not retract vehicle spindle
+- Refuel, repair, and rearm services unavailable when landed
+- Items appear not to be removed from the player's inventory when they sell them or hand them in to a contraband kiosk
+- Location - Daymar / Whistler Crypt / Physic - Walking on hills near Whistler's Crypt can potentially kill or wound the player
+- Inventory - Equipped gear can be lost when player dies in armistice zone
+- Multilocation - Elevators - Elevator doors open mid-transit
+- Merlin will not undock from Constellation
+- Mercury Star Runner only loads 6 SCU of cargo
+- Stanton - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction
+- Multivehicle - Stanton - Vehicle Feature - Hit box desync - Vehicles do not take damage when attacked at certain parts of its hull
+- External Inventory - Loot Boxes will Eventually Load Indefinitely
+- Transit - Elevators and Trams are "Jittery" during transit of Player Character
+- UI / Vehicle HUD - It is possible for the Vehicle HUD to vanish for the player during flight and combat
+- VARIANTS ONLY - Weapon / Weapon Feature - Multitool Variants display "HEALING" info regardless of attachments
+- Orison - Mission Content / Locations - A hostile AI is stuck inside a wall at HMR-A and one hostile appears missing at BWD-G for Bounty Assignment: Neal Garrison mission
+- Inventory / Loot Boxes - Loot Boxes will Disappear on Approach or after Opening
+## Feature Updates
+Gameplay
+- Removed the nearby drop limit on inventory items
+Ships and Vehicles
+- Corsair rest height adjustment
+Slightly raised Corsair landing height. Extended ramp slightly further and ramp angle is slightly steeper.
+- Tweaked Reclaimer lift speed to help prevent damage
+- Updated Salvage Filler station to allow crafting of multiple items
+Core Tech
+- Physics polish pass
+## Bug Fixes
+- Fixed - Locations - Transit - Elevators - Players can fall through Elevators
+- Fixed - Stanton - Leaving server session and rejoining to a new shard can make player stuck in long load loading screen at 20539 entities
+- Fixed - Scanning not showing advanced statistics and details
+- Fixed - Vehicles / UI - mobiGlas - VMA - VMA takes several minutes to load a chosen ship loadout
+- Fixed - Performance - UI - Client stall when entering the ASOP terminal rendering range
+- Fixed - ASOP - Ships abandoned on planets no longer appear on the ASOP terminal
+- Fixed - ASOP console shows information of another player
+- Fixed - GP-33 grenade launcher does no damage and has no force reactions
+- Fixed - Actor Feature - Personal Inventory - Move All - Move All functionality is failing to move armor
+- Fixed - PU - Law System - Locations - Lorville - Impounding - Restricted area violation triggered too soon
+- Fixed - Vehicle - Vulture - While flying in atmosphere, the Vulture will constantly input a downward pitch that must be constantly countered by the players control inputs
+- Fixed - Vehicles - Logout - Players are able to logout of Constellation beds when under attack and with other players on board
+- Fixed - Drake Corsair - Vehicles / Art / Graphics - LOD issue on right VTOL engine when viewed in external camera
+- Fixed - Vehicle Hull Scraping - Code - Allow player selected salvage beam to persist upon exiting and re-entering the seat
+- Fixed - microTech / Huston - Planets - The merge between rivers and lakes is currently a very harsh transition with terrain flickering in and out at the location
+- Fixed - microTech - River - Planet Tech / Graphics / Locations - River water can be seen floating above the terrain at various mountain tops
+- Fixed - DRAKE Cutlass Series - Vehicles - Interactables - The rear Interior ramp for the Red and Blue can be locked with player stuck outside ship
+- Fixed - Drake Corsair - Ship / Art - The Word "Pressure" on the Corsair's Airlock has a Spelling Error
+- Fixed - Aegis Reclaimer - Physics - Ships - Players can exploit the salvage elevator geometry to clip into the ship by EVA collision
+- Fixed - TUMBRIL Cyclone MT - Vehicles - Vehicle Features - Vehicle Components - Turrets - After firing the missiles from the Cyclone MT, players wil not be able to fire the main cannon
+- Fixed - Orison - Race Track - Design / Locations - If player abandon and/or topple over the Greycats on the race track they are not cleaned up and do not respawn at the race pit
+- Fixed - Stonebug Harvestable - Interactables / Props - The Stonebug harvestable is missing its shuffling/moving legs animation
+- Fixed - Aegis Vanguard Sentinel - Ships - Actor - Vanguard Sentinel lower bunk has no atmosphere
+- Fixed - Interactables / Inventory - Decari Pod uses the same model as the Stone Bug Shell
+- Fixed - 890J Hangar Elevator Gravity Missing
+## Technical
+- Fixed 15 Client Crashes
+- Fixed 4 Server Crashes
+- Fixed a Server Deadlock

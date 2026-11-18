@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.20.0
+Alpha Patch 3.20.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.20.0-PTU.8701927.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Database Reset: Yes
+Server Regions: All
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Known Issues
+- AC - Client Crash - All FPS Modes - FPS Loadouts Customization - Armor / UI - Scrolling down to the very bottom of the leg armor rental list will result in a client crash
+- PU - Crusader / Orison - Locations / Transit - It's possible for turn gates to not open preventing players from entering shuttles
+- PU - Art - Items / Character / Textures - Multiple clothes / armor / undersuit variants lost color / using the default base color
+- PU - Multivehicle - Vehicles / Ships / Ship Components / Weapons - Laser Repeater occasionally stops firing but still consumes ammo
+- Hull C - Spawn / Cargo / LEO - Hull C with cargo can spawn extended in a large Hangar instead of Docking Port
+- PU - Cargo / Commodities / Vehicles / Cargo ATC - ATC fails to detect vehicles within the loading zone or fails to initiate cargo transfers
+- Stanton - Multivehicle - RSI Constellation Series - Ship Feature - Snub Ship clips through Constellation variants in vertical position when retrieved from ASOP
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout after dying in the armistice zone
+- Stanton - Actor - Personal Inventory - Right click item interaction menu cannot be closed once opened
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- PU - Vehicle - MISC Prospector - Door doesn't work from the inside
+- Multiple Locations - Inventory - Equipped items are lost after dying in the landing zone
+- Drake Caterpillar - ALL VARIANTS - PU - Salvage - All of Caterpillar Hull give invalid material message for Salvager
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- ASOP - Ships - Vehicles - Clicked to "Store" ship at ASOP but it was "Destroyed"
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- Vehicle Maintenance Services - Ship repair doesn't happen but still charges you
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Inventory / Personal Inventory - Inventory can enter a state of becoming unresponsive, preventing the player from being able to eat or drink
+- Stanton - AI - Mission Giver - Wallace Klim is not visible at his location in Grim Hex
+## Bug Fixes
+- Fixed - AEGIS Gladius All Variants - Global - Vehicles / GFX - The ship's HUD is being blocked by ship parts and it is cluttering the screen/vision
+- Fixed - AC - Frontend / UI - Spectrum will launch each time when entering some modes
+- Fixed - Hints - The tutorial Hints are displayed in an old format at the bottom of the screen instead of a canvas above the control Hints
+- Fixed - Stanton - PU - AI - Locations - Seraphim Station - Station will continuously fires missiles
+- Fixed - AC - Gun Rush - Weapons / Loadouts - When levelling up to a new level loadout in Gun Rush, the weapon may cease to fire
+- Fixed - PU - Audio - Audio starts cutting out for extended periods after some time playing
+- Fixed - Drake Interplanetary Corsair - PU - Stanton - Vehicles - Corsair flight configuration persists when being retrieved after server crash ship recovery
+- Fixed - PU - Missions / Salvage Contracts - Ship Coverup - AI do not attack the player at the end of the timer
+## Technical
+- Fixed 1 Client Crash
+- Fixed 1 Server Crash
+- Server Deadlock Fix
+- Fixed a Major Server Memory Leak
+- Made Further Server Performance Optimizations

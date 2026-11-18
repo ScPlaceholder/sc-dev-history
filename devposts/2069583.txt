@@ -1,0 +1,35 @@
+## Star Citizen Patch 3.5.0s
+Alpha Patch 3.5.0s has been released to PTU, and is now available to test!  Patch should now show: PTU-1393395.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Analytics events have been included in this build to track network performance during stalls. You may experience increased stalls due to this.
+Testing Focus
+- General gameplay
+- AI pilot behavior
+- Testing and reporting server stalls
+Major Known Issues:
+- No-fly zone autopilot take over is inconsistent.
+- Players arrive at planetary destinations just outside of the trigger for quantum travel points. W/A: Fly forward toward the planet/moon for a moment to trigger the quantum travel points.
+- Players can't move after respawn if they die with chat activated.
+- Unable to rent ships in Arena Commander.
+- Delamar is not streaming in correctly when spawning at Levski and flying away.
+- Players are unable to interact with the chair after completing the meetup mission and being invited by Eckhart.
+## Feature Updates
+Missions
+- Increased the probability of AI beacons around moons and Lagrange points.
+## Bug Fixes
+- Rooftop mission related ship spawns should no longer occasionally overlap, causing multiple ships to spawn on top of one another.
+- Fixed some derelict based missions withdrawing right after accepting the mission.
+- Fixed missing light states inside airlocks.
+- Further fixes to jittering AI ships and pips.
+- Quantum travel VFX should appear normal, no longer occasionally flashing multiple colors wildly.
+- Items placed in your personal hab should no longer get cleaned up.
+- Rest stop hangars should no longer appear to be missing geometry.
+- Players should now be able to buy and retrieve ships with cargo at Area18.
+- The ankles of characters should no longer appear bent at an awkward angle when running along a sloped surface.
+- Patrol missions should no longer occasionally hang when players rendezvous with initial friendly ship.
+Technical
+- Fixed 6 client crashes.
+- Fixed a server crash.

@@ -1,0 +1,49 @@
+## Star Citizen Alpha Patch 4.2.1
+Alpha Patch 4.2.1 has been released to all backers!  Patch should now show: VERSION 4.2.1-PTU.9940652.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Second Life Resource Drive (Currently set full requirements)
+- New Mission Type: Ship Escort
+- Wikelo Recipe Updates
+- Executive Ship Component Updates
+- Stanton Space Station Security Forces
+- VOLT Pistol
+## Known Issues
+- PU - Stanton / Pyro - Personal Inventory / Local Inventory / Inventory - While attempting to drop, transfer and/or equip items, there's a chance for it to return to the inventory where it’s from
+- Multivehicle - PU / AC - Vehicles / Weapons / UI / VMA - Vehicle Weapons are not Interactable or Useable (Affects a handful of ships: Mirai Fury Series, Pulse, P-52, Spartan, and Cyclone Series)
+- PU - Vehicle - Naming ships, melting ships, or updating ship packages will delete any non-stock items that are fitted to the ship including paints
+- ARGO ATLS ALL Variants - PU - Mount / Cargo Grid - Argo ATLS can be placed anywhere on the cargo grid without following the SCU grid pattern
+- PU - Pyro / Pyro I - Storm Breaker - Locations / Mission Feature / Physics - Bullets will not pass through the Shuttle Station's entrance curtain when firing outside
+- AEGS Idris-P - PU - Vehicles - Idris shields do not stop any laser weapons except panthers
+- PU - Freight Elevator / Contested Zones (CZ) - CZ Freight Elevator displays Internal Error when attempting to move items to the warehouse
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- PU - Pyro - Courier - Mission Feature / Interactables - There is a chance that delivery packages cannot be placed on delivery shelves
+## Features & Gameplay
+Gameplay
+- Ladders V2 has been disabled for 4.2.1
+- Updated escort ships to show the health of the weakest point for mission progression
+Docked Ship Trespassing Update
+Reworked ship trespassing around space stations to now only teleport players who are not currently in the owner's party while the ship is docked instead of within a certain radius of the station
+Core Tech
+- Further Network Stall and Interaction Delay Improvement Updates
+## Bug Fixes
+- Potential Fix: PU - Stanton - Resource Gathering - Support Attack Ship - Mission Content / Game Code - Mission did not progress after reaching the mission location
+- Potential Fix: PU - Wikelo Emporium - Missions - The Collector - No gun received for "Fun Kopion Tooth Gun" Mission (STARC-172824)
+- Potential Fix: Resource Gathering - Multiple mission locations - Hauling missions will generate double the amount of cargo spawned by the mission
+- Potential Fix: PU - Law - Interdiction - when quantum starts and on a path to get interdicted the player is alerted of an infraction against them in way too early
+- Potential Fix: PU - Stanton - The Collector - Locations - Showroom door is present at Wikelos Stations on 4.2.1
+- Potential Fix: PU - Resource Gathering - mobiGlas / UI - Fundamentals of Mining journal entry gives tips on salvage and repair (STARC-173129)
+- Potential Fix: PU - The Collector - Mission Content / Commodity / Locations - Unable to buy 8SCU of Atlasium needed for Collector mission
+- Potential Fix: PU - Stanton - Resource Gathering - Missions - Objective is incorrect after player death and return to mission area
+- Potential Fix: PU - The Collector - Mission Content / UI / mobiGlas - Mission does not specify 8 SCU Atlasium required for "Now Make Polaris. Short Time Deal.
+- Potential Fix: PU - Missions - Resource Gathering / Priority - Recover Cargo FPS - Hostile AI and Contract Cargo are not spawning in FOB locations (STARC-172266)
+- Potential Fix: MultiVehicle - PU - Physics - Ladders can cause damage to the actor even being incapacitated from full health (STARC-169481)
+- Potential Fix: Multivehicle - PU - Vehicles / Vehicle Components - The dampener on all ships is a snare (STARC-173867)
+## Technical
+- Fixed 1 Client Crash
+- Fixed 2 Server Crashes

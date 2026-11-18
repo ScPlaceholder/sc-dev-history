@@ -1,0 +1,7 @@
+Hello again,
+We did push a bug fix, this bug was preventing any data to be saved as it was seeing your changes as role duplicates everytime.
+We did not come across that particular JS error during our dev flow though.
+- I created an organization to test it on prod, I had no problem updating ranks and roles labels at first.
+- Then the exact same JS error showed up, I was not able to save anything.
+- It's somewhat intermittent.
+After some more digging, it's another isolated problem we will have to fix. Probably related to roles access from what I've seen.

@@ -1,0 +1,55 @@
+## Star Citizen Alpha Patch 4.2.1
+Alpha Patch 4.2.1 has been released to all backers!  Patch should now show: VERSION 4.2.1-PTU.9933677.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+After a first successful activation of the Ladders V2 feature, we've decided to turn it off for the remainder of the PTU cycle later this week. As stated on the Release View of the Roadmap, we're still targeting a 4.3.0 release and this early activation allowed us to gather some important data at scale on how well existing ladders support the new functionality.  We plan to re-activate the feature in the 4.3.0 PTU cycle. Thanks for everyone who contributed IC reports and shared their feedback!
+- Stability & Bugfixes
+- Second Life Resource Drive (Currently set to lower overall reputation requirements)
+- New Mission Type: Ship Escort
+- Ladders V2 (Currently testing in 4.2.1 and will be fully arriving in 4.3)
+- Wikelo Recipe Updates
+- Executive Ship Component Updates
+- Stanton Space Station Security Forces
+- VOLT Pistol
+## Known Issues
+- PU - Stanton / Pyro - Personal Inventory / Local Inventory / Inventory - While attempting to drop, transfer and/or equip items, there's a chance for it to return to the inventory where it’s from
+- Multivehicle - PU / AC - Vehicles / Weapons / UI / VMA - Vehicle Weapons are not Interactable or Useable (Affects a handful of ships: Mirai Fury Series, Pulse, P-52, Spartan, and Cyclone Series)
+- PU - Vehicle - Naming ships, melting ships, or updating ship packages will delete any non-stock items that are fitted to the ship including paints
+- ARGO ATLS ALL Variants - PU - Mount / Cargo Grid - Argo ATLS can be placed anywhere on the cargo grid without following the SCU grid pattern
+- PU - Pyro / Pyro I - Storm Breaker - Locations / Mission Feature / Physics - Bullets will not pass through the Shuttle Station's entrance curtain when firing outside
+- AEGS Idris-P - PU - Vehicles - Idris shields do not stop any laser weapons except panthers
+- PU - Freight Elevator / Contested Zones (CZ) - CZ Freight Elevator displays Internal Error when attempting to move items to the warehouse
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- PU - Pyro - Courier - Mission Feature / Interactables - There is a chance that delivery packages cannot be placed on delivery shelves
+## Features & Gameplay
+Gameplay
+- Ship Battle Missions will now fail if a player leaves the mission area by more than 12 KM. A 5 second warning buffer will appear once outside the area to re-enter
+Ladders V2
+Implementation of further ladder systems into Star Citizen. This update includes many new traversal mechanics to all ladders in ships and environments around the persistent universe.
+This includes:
+- Look around while on ladder (180 degree whilst moving, 355 degree whilst stationary)
+- Mid point enter/exits
+- Being able to Jump off ladders while looking in a direction
+- Leaning (used to dodge debris) function
+- Collision (e.g. other Actor on ladder) prevents traversal up ladder
+- FPS Camera required enter angle
+- Ladder exit into crouch/small spaces
+- Joining and Leaving a Ladder
+Ladders should no longer vacuum up players who happen to wander past and will require an interaction to step on by directly running into them at a direct angle to attach. Approaching a ladder mid-point also provides an interaction to step onto it.
+Ladders can now also be exited by jumping at any point by looking in a direction and jumping. Jump input on its own will cause the player character to let go, and push away slightly from the ladder while using a WASD key while jumping will send the player in that direction. Entering a stunned, incapacitated, overdosed, or dead state will drop the player from the ladder.
+Core Tech
+- Further Network Updates to help reduce Long Network Thread Stalls
+## Bug Fixes
+- Potential Fix: PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does timeout fail (STARC-171566)
+- Potential Fix: PU - Probability Volumes / Server Meshing / Subdivision - Player can be QT interdicted during QT towards a moon, resulting in them become stuck under the surface
+- Potential Fix: PU - Mission Content - Recover Cargo / Recover Cargo FPS - Delivery location is not marked once the Recover phase has ended
+- Potential Fix: PU - Storm Breaker - Pyro - Creatures / Mission Content - Creatures aren't spawning once egg has been taken
+- Potential Fix: PU - Contracts / mobiGlas - Missions are not repopulating in the Contracts page after Completing / abandoning / failing them
+- Potential Fix: PU - Storm Breaker - Locations / AI - AI are not present upon arriving at some Data Center locations (STARC-172789)
+- Potential Fix: PU - Pyro / Stanton - FPS Gameplay / Mounted Turrets - Resource Network - Mounted turrets located at various FPS locations do not fire
+## Technical
+- Fixed 3 Server Crashes

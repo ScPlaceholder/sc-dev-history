@@ -1,0 +1,2 @@
+They're an error in the sun shadow rendering, we've seen them before internally but I was unaware that they'd made it into a public build.
+Basically, what should be happening is that a higher-detail shadow is inside the box, and fades out around the edges, exactly where the lower detail shadow is fading in. For some reason, though, the lower-detail shadow is starting at the end of the fade-off. If you get a good long-range view, I'd expect you to be able to see another line about five times further away.

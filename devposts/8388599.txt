@@ -1,0 +1,49 @@
+## Star Citizen Alpha Patch 4.4
+Alpha Patch 4.3 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.4.0-PTU.10607776.
+- Audience: Evocati Only (Standard ETF NDA)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 6:2:2:600
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Nyx / Levski / Delamar
+- Cross System Hauling
+## Known Issues
+- PU - Nyx - Jump Point Stations - Locations / Art / Design / Hangar - Instanced hangars are staying closed when requested
+- PU - Nyx - Levski - Locations / ASOP Terminal / Fleet Manager - Vehicles are in claim state upon retrieving
+- PU - Nyx - Delamar - Levski - Locations - UI / Quantum Travel - Vehicles - mobiGlas / Starmap - Levski Quantum Travel marker is not present and cant be travelled to (i'm sure evo will find a way!)
+- PU - Multi-System - Locations / Starmap / Quantum Travel - Quantum Markers for Pyro-Nyx Jump Point and nearby Rest Stop Station are not visible making travel to this location difficult
+- Stall / Freeze - Client - PU - Multisystem - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing Commodities Kiosks at locations like at TDD and Admin Offices in Pyro
+- Multi-Location - PU - Stanton - Locations / Actor Respawning - Players may not respawn at their primary residence after using self-destruct or force-respawn
+- PU - Nyx - Levski - AI / Location - Social AI are killing each other in Levski
+- MISC Hull C - PU - Cargo / Vehicles / Missions - Hull C not loading cargo
+- PU - UI / Inventory - Freight Elevator - Kiosk - The Search function of the Freight Elevator terminals ignores localized item names
+## Features & Gameplay
+Ships and Vehicles
+Additional Ship Updates
+- Vanguard Hoplite: Reduced Nose hp. Increased Body hp
+## Bug Fixes
+Star Citizen Alpha 4.4.0 currently contains nearly 150 bugfixes for issues occurring in 4.3.2, 37 of which originated from the issue council.
+- Potential Fix: PU - Nyx - Levski - Locations / Transit - Levski Hangar Elevator interior panel becomes unresponsive to player input (STARC-184462)
+- Potential Fix: MISC Hull C - PU - Cargo / Vehicles / Missions - Hull C not loading cargo (STARC-177335)
+- Potential Fix: Nyx - Levski - Network / Locations / Server Error - Player in an elevator was repositioned stuck inside the elevator shaft after server error recovery
+- Potential Fix: PU - Nyx - Jump Point Stations - Nyx-Pyro Jump Point - Locations / ATC / Design - Instanced hangars are de-spawning after being requested
+- Potential Fix: Multivehicle - Destruction / Damage Behavior - Vehicle body does not break apart on vehicle death
+- Potential Fix: PU - Nyx - Jump Point Stations - Locations / Narrative / Starmap - Nyx-Pyro Jump Point station is incorrectly called Stanton Gateway in Starmap
+- Potential Fix: PU - Locations - Klescher Rehabilitation Facility - Elevators are backwards preventing players from leaving after serving their sentence
+- Potential Fix: PU - Nyx - Levski - Locations / Art / Collision - Invisible boulder with collision blocking entrance to Conscientious Objects shop
+- Potential Fix: PU - Nyx - Visarea / Elevator / Locations - There is a visarea inside the elevator of Teach's
+- Potential Fix: PU - Nyx - Delamar - Levski - Locations - Transit System / Elevators - There is a couple misplaced elevators on the Customs level that dont function properly and can cause the player to fall into the station
+- Potential Fix: Multi-System - PU - Locations / Freight Elevator - Nyx Jump Points - Unable to lower Freight Elevator from the Freight Manager
+- Potential Fix: PU - Nyx - Levski - Locations / Art - Exterior landing pads are LOD culled too close
+- Potential Fix: PU - AI / Dialogue / Facial - Social AI - Some vendors have lines with desynced audio / face
+- Potential Fix: PU - Nyx - Levski - Locations / Elevators / Visarea - Some elevator doors that leads to Grand Barter and Refinery has visareas
+- Potential Fix: Front End - Main Menu - UI - Primary Residence Selection Button for Nyx System is labeled as "@UI_PREGAME_NYX_NAME" (STARC-184312)
+- Potential Fix: PU/AC - Ships/Vehicle - weapons - C-788 combine cannon does not deal any damage (STARC-106593)
+- Potential Fix: PU - Nyx - Levski - ReplaceMe Balls / Art / Locations - A ReplaceMe Balls are seen in multiple location inside Levski
+- Potential Fix: RSI Polaris - PU - Vehicles - Polaris main elevator panel is blank
+- Potential Fix: PU - Stanton - New Babbage - Spaceport - Regal Luxury Rentals - Locations / Art / AI - Clerks AI are missing from the Regal Luxury Rentals shop
+## Technical
+- Fixed 1 Server Crash

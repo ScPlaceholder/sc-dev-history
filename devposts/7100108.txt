@@ -1,0 +1,1 @@
+On the graphics side (which is the only place I can reliably talk about) we're mostly into lockless thread-safe buffers that collect things/work from wherever, then we double-buffer those so we can be processing one while the next fills. Or we're talking to the GPU and that has its own rules.

@@ -1,0 +1,24 @@
+## Star Citizen Patch 3.6.2
+Alpha Patch 3.6.2 has been released to PTU and is now available!  Patch should now show: PTU-2630206.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: YES
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- 890 Jump: There are a limited number of pads available to spawn a ship of the 890s size and it will be a slightly unusual situation to have everyone on a server attempting to spawn such as large ship at once, as such we expect there will be bottenecks. If there are issues getting to the bridge in time to take off, please let us know as we suspect this may be an issue.  Please be sure to crew up as much as possible.
+Known Issues
+- The 890j is missing some of its exterior LODs.
+- The battlebridge currently lacks pilot remote control.
+## New Features
+Universe
+- Added two more XL hangars to Lorville and Area18 to accommodate the 890 and Reclaimer.
+Ships and Vehicles
+- Added: Origin 890 jump.
+## Feature Updates
+Universe
+- Slightly reworked ship and pad sizes at the largest end.  The Reclaimer and 890j can only be spawned at large ports that can accommodate ships of that size.  For now, those ports are Lorville and Area18
+## Bug Fixes
+Technical
+- Various performance optimizations.

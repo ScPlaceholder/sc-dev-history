@@ -1,0 +1,7 @@
+Greetings!
+The netcode that governs how loose physics objects behave across the network has been rewritten. Previously the client treated the server's view of an object as either entirely correct or entirely wrong, which meant a single bad state could cascade into persistent desync, rubber-banding, and objects sliding or bouncing for no visible reason.
+The new system calculates a trust score for incoming server state rather than applying it unconditionally. Trust is reduced when the client has just done something the server cannot know about yet, such as bumping into a crate, or when the server's state is stale. Corrections are now applied as velocity nudges rather than teleports, and a teleport is only used as a last resort after a sweep check confirms the destination is clear. All tolerances now scale with your current latency and the size of the object rather than using fixed values.
+A feedback survey is available at: Physicalized Entity Netcode Overhaul Survey Form. This survey will be open until Oct 31.
+We look forward to reading your feedback!
+-Shark
+Player Experience Team

@@ -1,0 +1,71 @@
+## Star Citizen Patch 3.15.0r
+Alpha Patch 3.15.0r has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.0-PTU.7858235.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Current Audience: All Backers
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Server Crash Ship Recovery
+- Healing and Actor Status
+- Hospitals
+- Starlifter Hercules A2
+- Origin 400i
+- Bombs
+- Infiltrate and Defend Missions
+- Loot Generation
+- Personal inventory
+- Orison V2
+- Arena Commander Revamp
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu
+Players will need to exit the game and reload after a server crash to fix this error. This is part of the bug where players used to see a Bad Token after a crash which blocked them from re-entering but with the latest changes, that error is no longer displayed.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Surface FPS Deposits are missing collision, preventing mining
+- Players may not be able to Repair, Refuel, Restock at LEOs and other locations in the PU
+- Swapping weapons drops or removes weapons
+- The Player can have previously equipped items disappear altogether when they exit and load back in as the opposite gender or customizing their character
+- Black squares instead of smoke, clouds, and fog
+- Players may get out of wrong side of bed in Microtech habs
+- Some Ship and FPS weapon tracers / VFX are offset when fired at certain locations
+- Weapon projectiles trajectory will not behave correctly when shooting from one zone inside a ship to another outside
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Destroying mission-spawned reinforcement type ships does not always trigger the ongoing 'Call to Arms' mission rewards
+- Missiles can hit the players ship when they are fired whilst the ship is moving forward
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round
+- Star Marine and Arena Commander Leaderboards are empty and do not update for all gamemodes
+- Demon Fang Combat Knife asset is missing from the game
+## Feature Updates
+AI
+- FPS AI Polish
+Made further sync fixes and optimizations for NPC locomotion that should help with AI teleporting and moving without animating. Further improvements to help on foot NPCs react to players and avoid getting stuck in areas inside underground facilities.
+## Major Bug Fixes
+- Revive beacons should now fully complete and pay out for the player who completes it
+- Ships on landing pads should no longer end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+- Fixed an issue that blocked players from selecting Ground Vehicles as a Sell Location on Trade Terminals/Kiosks
+- Fixed an issue causing players to be repeatably knocked over by wind when the wind was not strong enough to do so
+- Fixed an issue that was blocking free look while sitting in multiple cockpits
+- Fixed an issue where Interacting with the door panels in the 400i could cause the doors to become unresponsive
+- Fixed an issue causing several UI prompts for weapon attachments to be missing when interacting with a drawn weapon
+- Ship/camera shake's frequency should no longer be much more than intended when accelerating
+- New Babbage train will no longer stop at an empty void
+- Fixed an issue that was not giving players a complimentary undersuit or helmet when respawning back in a hospital
+- Fixed an issue causing players to get a continuous black screen if dying while wearing a hospital gown
+- Character's head, mobiGlas, and other equipment should no longer go missing after being released from Klescher
+- Fixed an issue that could cause multiple players can spawn in a single hab when entering the PU
+- Nova Tank should no longer display "Within blast range" text meant for bombers
+- "Missile" text should no longer often overlap missile names when in missile operator mode
+- The "Your Balance" section of Fine Kiosks should no longer flicker between the player's original balance to their new balance when paying off a fine
+- Parts of Area18 cityscape should no longer be seen clipping into the surface of the Spaceport highway
+- After the players first death, placing items into the players carry slot on their Personal Inventory UI should no longer cause the item to be removed indefinitely
+## Technical
+- Fixed 10 Client crashes
+- Fixed 5 Server crashes
+- Fixed a log spam issue that could degrade performance
+- Client performance optimization Pass

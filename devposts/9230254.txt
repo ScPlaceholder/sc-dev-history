@@ -1,0 +1,79 @@
+Alpha Patch 5.0 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 5.0.0-PTU.13189690
+- Audience: Wave 1 testers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Genesis (Planet Tech V5)
+- Nyx 1
+- Starchatect Points of Interest
+- Mission Boards and Local Missions
+- Intraplanetary Server Meshing
+- TTK (Not a 5.0 feature but in the PTU for the weekend for testing and feedback)
+- Missile Lock Interface Update
+## Features & Updates
+Starchitect Locations
+The generated locations across Nyx I have had a broad pass covering AI placement, traversal and loot. The largest change is that AI now spawn inside buildings rather than outdoors, which should make encounters read more clearly and stop defenders appearing from open ground. Ledge markup has also been extended across most tile types so climbing routes work consistently.
+- AI spawn closets moved from exteriors into building interiors across compounds, logistics, habitation, agriculture and depot tiles
+- Civilians now populate campsites rather than logistics workers, and AI counts reduced in depot and storage tiles
+- Ledge markup added across compounds, landing pads, walkways, railings and habitation tiles
+- Cover props, loot placement and navigation passes across compound, landing pad and logistics tiles, with repair loot boxes added to guild halls
+- Delivery drop-off areas reworked
+- Guild hall signage, navigation signage and branding passes, alongside command building, storage, logistics and watchtower kit work
+- New cave tile visual effects
+- Potential Fix: First Legion able to take ownership of loose locations
+- Potential Fix: AI becoming stuck in freight elevator spawn closets, and admin NPCs not leaving spawn closets due to insufficient usables
+- Potential Fix: Sticky notes hiding only their text rather than the note when disabled
+- Potential Fix: Props dropping through lower foundations
+- Potential Fix: Lean prompts appearing on surfaces players cannot interact with
+Genesis and Nyx I
+Work on Nyx I this cycle concentrated on the variety and density of surface vegetation, and on the shading of rock and bedrock. A new orange-tinted grass has been added with its own distribution to break up the planet’s palette, and foliage density has been reduced in forest and swamp regions to improve performance.
+- New grass added with an orange tint and a different distribution, with forest and swamp density reduced
+- Tree temperature distribution and density updated, and new mineable rock variants added
+- Scree and bedrock porosity corrected
+- Reduced VRAM use across planet scattering, and terrain level of detail rebalanced at cube edges
+- Water simulation updates and imposter wind bending
+- Potential Fix: Lighting artifacts on vegetation when lit by ship lights
+- Potential Fix: Harvestables not working consistently, and harvestable node refreshes
+Weather and Audio
+Weather on Nyx I has been tuned for frequency and readability, with lightning reworked so strikes are less visually overwhelming while remaining visible at distance. Thunder is now audible, and a new orchestral score has been recorded and mixed for the planet.
+- Rain frequency increased, with cloud shaping and climate maps split and cloud tuning applied
+- Lightning light intensity and spawn frequency reduced, with improved falloff
+- Thunder now audible with managed audio distance increased to 25km, and rain events added with a thunder sound pass
+- Snow and ground effect tweaks, including disabling a level of detail that produced large clumps
+- Player footsteps mix pass and fixes. Footsteps should be more consistent.
+- Improvements to interior/exterior transitions in Starchitect locations
+- All VFX based sounds such as the mining lasers, steams, fireworks, etc should be sounding correctly now
+- New orchestral music mix for Nyx I, a third sound effects pass across Starchitect locations, and lootable food container sounds
+- Potential Fix: Missing client audio
+- Potential Fix: Sound propagation occurring where it should not
+Server Meshing
+Territory generation, which decides how the world is divided between servers in the mesh, has had substantial work this cycle. Territories now capture an entity’s full transform rather than its position alone, and planets and moons are identified from their own component data rather than inferred.
+- Claim reservation bias now estimated from entity count
+- Runtime territory candidates now only considered when explicitly enabled in configuration
+- Potential Fix: Entities being incorrectly culled when physics authority transferred to a client controlled ship
+Reputation and Contracts
+Note: We have worked on and are testing a new multiplier system for PTU builds. Tonight's build has a 10x multiplier in for reputation gains to go along with testing on PTU.
+Guild reputation has had its initial setup pass, with reward and rank structures built out across several of the employers operating on Nyx I. Contracts now carry a scope, which determines how widely they range, and this is surfaced in both the Contract Manager and on mission boards.
+- Reputation scopes implemented across the guilds, with reward and reputation setup for Cornerstone, Hockrow, Ling and Bounty Hunters Guild contracts
+- Notice board contracts now award rewards
+- New difficulty variants for Northrock and Eckhart contracts
+- Mission board contracts now sort by scope as well as rank, with a loading indicator added
+- Contract scope icons and labels added to the Contract Manager
+- Bounty hunting contracts scoped to Starchitect locations
+- Starmap mission list layout adjusted, with the tracked marker indicator moved inside the list and a button state added for displaying unmarked markers
+- Potential Fix: Reputation not splitting correctly between participants
+- Potential Fix: Contract markers disappearing unless looked at directly (STARC-222161)
+- Potential Fix: Delivery contracts failing to generate at freight elevators
+- Potential Fix: Patrol objectives not clearing when the mission phase completed
+- Potential Fix: Text tokens appearing in the HUD and objectives during eliminate phases
+- Potential Fix: Selected mission board contract not clearing on interact
+- Potential Fix: Probe delivery to two-handed mission item ports
+- Potential Fix: Go-to objectives using the action area rather than the location’s own size
+Missile Lock Interface
+The missile lock interface has been replaced with the version built for Squadron 42. The previous display drew an animated pattern around your target that tightened as the lock built, which told you how far along the lock was but nothing else. The new interface shows the locking cone itself in the centre of the screen, so you can see the area a target has to be inside before a missile will acquire a lock, and it tracks target range on a bar alongside it.
+- Locking cone displayed in the centre of the screen, with fade in and out
+- Lock progression now shown as four distinct states: idle, acquiring, locked and resolved
+- “LOCK” now appears beside the target marker the moment a full lock is achieved
+- Range indicator added, including a clear out of range state (too far/near)
+- The interface now takes the colour of your ship’s manufacturer HUD styling

@@ -1,0 +1,11 @@
+The floaty big ships won't get resolved until we roll out the updates to the flight model which will include the control surface tech for atmospheric flight. The general ability of ships to float is simply driven from their ability to counter gravity. It's a bit of a between a rock and a hard place situation ... we don't want to hamstring the ships so that they can't take off but at the same time we also dislike ships hovering with their nose down indefinitely.
+Now there is two ways to handle that:
+1) Balance the thruster efficiencies in a way so that in standard Earth atmo the ships only provide enough thrust if their VTOLs are deployed
+2) Add some fakey FM stuff that auto corrects the ship attitude or even limits it.
+Atm, we're naturally working more towards approach 1 but it has some difficulties that we need to deal with properly. Thrust in general would be very limited and in default 1G environments only vertically (VTOL aided) or forward thrust would provide enough Gs to stay afloat. However that also means that retro or lateral thrust would need to be so weak that at the same time it would be very easy to crash land your ship. Which naturally conflicts with the idea of an approachable game as you can imagine.
+So if we go for that that first approach, we need to add a few more things:
+- automated controls that kind keep your ship from dipping over (maybe even an attitude hold auto pilot mode), specifically during landing
+- a reliable indication of your thrust to weight ration against gravity that takes cargo weight into account (so that you don't try to take off or land overloaded)
+- some more help during landing so that players can land easily without going nose down ... a downwards angled landing cam e.g. or a general landing UI.
+Now that's just me saying what's on your mind atm ... we're currently busy with the FM updates (space FM is done, control surfaces tech and new quantum is not yet) and we'll get to these topics of atmo ship hovering fairly soon. It does not mean that what I described above will ultimately end up in the game though ... we will try these things out internally but we might end up deciding against that if it's too punishing.
+We'll see when we'll get there.

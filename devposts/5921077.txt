@@ -1,0 +1,87 @@
+## Star Citizen Patch 3.19.0 8462609
+Alpha Patch 3.19.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.19.0-PTU.8462609.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 1,000,000
+Testing Focus
+- General Stability
+- Lorville Skyline 2.0
+- Salvage Contract Missions
+- Tractor Beam - T0.5 - Item Attaching and Detaching
+- Ghost Hollow Reclaimer PVP Mission
+- Mission Density Management
+- Mining Balancing v01
+- New Player Experience
+Known Issues
+- AC - PTU/LIVE - WaitForPlayerSpawn Connection Timeout
+- Aegis Reclaimer - Stanton - Ships / Vehicles - Ship Features - Reclaimer has no rear Elevator interaction from ship exterior
+- Aegis Reclaimer - All Variants - Stanton - Reclaimer main on-elevator control panels do not respond to input
+- ARGO MOLE - Stanton - Vehicles / UI - The interaction prompts for ALL mining turrets are easy to miss/in unintuitive locations for players
+- CNOU HoverQuad - Vehicles / Locations - The vehicle spawns slightly stuck in the ground
+- Multivehicle - Stanton - UI / Vehicles / Mining - Mining UI is appearing in Low Resolution
+- RSI Constellation Multivariant - Stanton - Vehicles / Ships / Docking - The snub fighter lacks interaction prompts to enter it, making it unusable
+- Stanton - Locations - ArcCorp / Crusader - Area18 / Orison - Core Tech / Transit Systems - The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Stanton - Multilocation/Multivehicle - Shopping - Store kiosks won't populate locations if certain ships are stored
+- Stanton - Multitool - FPS Hull Scraping - The Salvage attachment has the VFX of the tractor beam and does not function
+- Stanton - Security Post Kareah - Mission Content / Art - VisArea - Contraband screens have a visarea issue
+- Stanton - Yela - Grim Hex - Mission Giver - AI / Missions - Wallace Klim becomes stuck under the floor near the hangars after being streamed out and streamed back in
+## New Features
+Gameplay
+- New Player Experience
+An initiative for improving the initial (first 30 minutes) gameplay experience, which will help players understand the context of the world and introduce them to some of Star Citizen's basic features. This update focuses on the experience in Area 18 and Baijini Point. As players enter the main menu to join the universe they will be prompted with the option to join as normal or accept the New Player Experience Mission chain which will set their spawn to Area18 and begining a walkthrough. Being the NPE we are going to leave the details off to give you all the experience of doing this as close to a new player as possible without information.
+## Feature Updates
+Locations
+- Lorville LOD, Collision, and Lighting Polish Pass
+- ArcCorp Atmosphere and Planetary Metalic Gloss Polish Pass
+Gameplay
+- Mining Balancing v01
+With 3.19 comes updates to both Ship and FPS mining with wide-sweeping balance changes to sell prices, refining effectiveness and costs, component stats, multi-crew mining efficiency, mineable difficulties and masses with larger asteroids, resource distribution, as well as the addition of new mineables. The goal in 3.19 is to make multi-crew mining more attractive and even out all materials to make them all more lucrative instead of a select few.
+Ship mining
+Resource Distribution has been updated to reflect a more distinct distribution of minerals throughout Stanton. Which means that several locations (per planet/moon) now hold exclusive resources rather, than full random resources. Additionally we defined so called “standard” resources that are a given in each minable you will encounter. The rest of the elements have chances to appear in those rocks. The updated resource distribution is also reflected in the trading availability and refining capabilities. Every mining gadget, head, and sub item has had a full balance pass for stats, cost, and efficiencies. Every item that is connected to mining gameplay loop was updated to target specific resources to be mined better or worse depending on the setup of your Mining Head. Multi-crew mining has also been balanced with the Mole getting a buff on instability if the same lasers fire on the same rock, while the Prospector will get a punishment for multiple prospectors firing at the same rock on instability.
+FPS mining
+A new minable is introduced that is only available in the new caves systems and has a high value to encourage players to go mining with their FPS tools outside of prison.
+Changes in the Mining Update
+- Resource Update
+Concept of minable rarities for resources:
+Standard (base resource of a minable always part of any rock, like Iron
+Common (chance to be part of the rock like beryl)
+Uncommon (chance to be part of the rock like Gold)
+Rare (chance to be part of the rock like Qunatainium)
+Dedicated location for resources that have the standard rarity (like Arial having Iron and Quartz)
+Updated properties for resources (each resource should affect the properties of the rock based on their amount)
+Updated mass for minables (resource composition affects the mass of the rock
+More variant rock sizes/masses
+Small ones that do not need breaking to massive rocks that require multiple players)
+Additional rock types with unique chances for resource compositions
+removed Diamonds temporarily
+- FPS Mining Update
+Added Janalite as FPS minable to caves (very rare but very valuable)
+- Resource Refining and prices
+Updated resource prices and demands at TDDs
+The further away from the standard material the more profit
+Updated refinery yield and time for certain material to encourage longer distances to travel for the best money/hour
+- Full item rework
+Mining heads now have a min/max laser power
+Mining heads have different laser power per size
+Mining heads have different extraction speeds where there is also a difference between S1 and S2
+Mining heads have different ideal distances
+Updated resistance values for all mining items
+Updated instability mitigating values for all mining items
+Unified properties for all Mining modules and Mining Gadgets
+Buffed Active modules drastically
+Added new property exclusive to mining gadgets: Called Cluster modifier that clusters element together à if you split a rock it increases the chance that the elements are together in one of the broken pieces)
+Filtering on some items that remove the inert from the rocks you are collecting
+Sub item slots on Mining Heads are different between S1 and S2
+Resistance reduction now is multiplicative
+Made Instability updates
+- UI Update
+Difficulty forecast that tells you how easy it is to break the rock you are facing
+Reordered some elements of the UI
+Details of the mining items you have currently equipped
+Details on your current cargo
+Clearer scanning display and clearer explanation what is happening during scanning
+- Synergy Tractor Beam
+Allow to detach attach Mining modules/ Heads/ sacks

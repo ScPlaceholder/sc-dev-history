@@ -1,0 +1,5 @@
+Hi @StarshipCaptainNemo
+1) This is definitely a bug that we're looking into. It's a strange one, as the hangar should be an identical copy of its neighbor which has all the lighting present...
+2) This one is, unfortunately, a deeper topic that I won't go too far into at the moment. Rest assured though that quite a few of us aren't in love with the current headlight implementation. I added it a little while back as a kind of temporary bandaid to improve players' visibility while navigating the dark sides of planets/moons (as before that, headlights barely reached 20-50m if they did anything at all). It's definitely not our final implementation and we've had several internal discussions on how to fix it. There are quite a few considerations we need to account for to get it right, such as dev resources on the ship and lighting teams, performance impacts from multiple players casting massive shadow casting lights (the eternal struggle) in concentrated areas, balancing flight via instrumentation and/or visuals, whether certain ships or types of ships would have unique exterior light/headlight setups, and how to balance them, etc.
+Thanks for the questions!
+-ChrisC

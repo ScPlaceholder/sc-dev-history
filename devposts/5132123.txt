@@ -1,0 +1,6 @@
+Hi,
+This (unusual!) setup won’t cause any issues with shaders on the game/application side because the shaders on “our” side are GPU agnostic. However the driver for each GPU will have its own compilation stage that happens at run time, and that will be repeated per driver/GPU and potentially cause minor hitches the first time you play the game on each GPU (and also if you update the drivers). But after that you can swap GPUs all you like with no adverse affects. Each driver will have its own cache.
+One minor issue though is that we auto detect the initial graphics quality settings on the first launch of the game, but clearly with different powered GPUs you’ll likely want to change these each time you swap GPU… though to be fair we haven’t done a pass on balancing the graphics settings for a while, with another pass due once Gen12 is complete.
+Cheers
+Ali Brown
+Senior Technical Director, Graphics & Procedural Tech

@@ -1,0 +1,69 @@
+## Star Citizen Patch 3.8.1c
+Alpha Patch 3.8.1c has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.8.1-PTU.4151119.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- General gameplay and traversal
+- Medbed gameplay
+Known Issues
+- The 890 beds can't be used for logout.
+- Sometimes repair services are unavailable when they should be present.
+- After a ship is repaired, detachable components will remain attached to the ship when destroyed and a duplicate component will fall off.
+- Repair fails if you select repair and refuel simultaneously.
+- Players can die in Area18 when exiting EzHab or the transit system.
+- Once an Animus spare magazine has been emptied the player can no longer equip fresh magazines in the same slot.
+- Ships can be displayed as "unknown" after destruction, be available for spawn, but not appear on their specified hangar.
+- Entering or exiting via EVA can sometimes cause the player to turn/spin suddenly and harm themselves.
+- Objects can fall through the floor when dropped.
+- An extra static train can appear at Lorville and prevent the use of trains.
+- The visuals of the ships on the rental screen may have missing areas or disappear completely.
+- The Caterpillar will occasionally rock or tip over on itself after landing on a planetary body.
+- CryAstro services may not work at various stations and major ports.
+Work-around: Hover before landing and request services just above the pad.
+- Rentals and/or rental timers may not work when renting a second ship.
+- If a player's ship is destroyed after bed logout they will return to the server at origin.
+- NPCs may sometimes be doing usable animations in places that they shouldn't.
+- Countermeasures are not working as intended to deter missiles.
+- The 890 Jump does not have the correct cargo capacity.
+- The Combine Cannon and distortion weapons are not working as intended.
+- Elevators at Port Tressler and Everus Harbor may not show up when called.
+- If the quantum travel marker is at the edge of a moon or planet its possible to QT through the moon and explode..
+- Purchased commodities will often visually not appear in the ship's hold.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## New Features
+Ships and Vehicles
+- Added: Drake Cutlass Red
+- Rented ships in the persistent universe can no longer be modified.
+## Feature Updates
+Ships and Vehicles
+- Medbeds now have a maximum respawn range of 4 million km.
+## Bug Fixes
+- Fixed mobiGlas closing immediately after opening.
+- Party markers should no longer vanish if the player dies far from their respawn point.
+- The game wallet should no longer occasionally freeze and fail to update for an extended period of time, allowing players to set very large UEC service beacons.
+- Markers for mineables should no longer fly away as the player moves.
+- Fixed magazine replacement not working once equipped spares are spent for the Animus.
+- Fix for a bug where other player's footstep sounds would never be triggered if the other player was not in your field of view.
+- Fixed constant fire audio SFX in the left cockpit of the BANU Defender.
+- Fixed missing audio for BANU Defender internal doors and entry ramp.
+- Fixed incorrect/missing audio for Aegis Vanguard rear ramp.
+- Fixed a bug where the Gladius' startup and shutdown audio was very delayed.
+- Fixed a bug where the Gladius startup sound would play for shutdown, and vice versa.
+- Star Marine music will no longer completely cut out when the menu is brought up mid-game.
+- Fixed missing self destruct sound for URSA Rover
+- Fixed missing locker open and close sound on URSA Rover
+- Fixed missing vibration sounds for collisions and landings on the Tumbril Cyclone and the GRIN PTV.
+- Fixed an issue where the Origin 890 Jump ambient audio did not receive ship parameters so was always muffled regardless of the ship's activity level.
+- Players that die at the same time and have the same medbed selected should no longer become trapped.
+- Repair services should now properly complete after refueling.
+- The Caterpillar should no longer occasionally roll over when landing on planetary surfaces.
+- Modified shield proxies on Hornet F7C to fix shield holes.
+Technical
+- Fixed 4 client crashes.
+- Fixed 5 server crashes.

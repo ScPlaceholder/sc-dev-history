@@ -1,0 +1,93 @@
+## Star Citizen Patch 3.17.1
+Alpha Patch 3.17.1 has been released to the LIVE, and is now available to test!   Patch should now show: VERSION 3.17.1-LIVE.8073467.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here %localappdata%\Star Citizen.
+Database Reset: Yes
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+- The Platinum Bay shops at the reststops will temporarily have the generic depot attract screen on them until the proper Platinum Bay attract screen is created
+- Orison - The AR Marker for the Players designated landing area only appears when the Player gets within a close proximity to the Spaceport
+- Ships can explode after players exit them
+- While docked to a Starfarer the Valkyrie will continuously tilt instead of remaining stationary
+- Damage to player health can become delayed and can trigger after the player has fully healed themselves
+- The Argo Raft's elevator controls cannot be interacted with from either inside deck
+- A ship's targeting pip may be missing or disappear for some players; they cannot be targeted when this happens
+- Character's head, mobiGlas, and other equipment can sometimes go missing after being released from Klescher
+- Medical beacon will not complete mission/payment when player is brought back from incapacitation
+- Character animations are not playing when looking at them at a distance through scopes
+- Spawn closet doors do not open or remain open for friendly AI
+- 890 Jump - AI do not spawn appropriate number
+- Bunker turrets will shoot at a player with a lawful mission to be at the bunker
+- Remove Claimjumpers - Mission does not progress after player has reached mission location
+- ReplaceMe balls around Outposts on Daymar
+- Area 18 - Centermass elevator duplicated; cannot enter the second, static, elevator door
+- Trying to buy from Pharmacy kiosk causes a Failed Invalid Location message
+## New Features
+Locations
+- Window Interior Mapping Shader
+Added a new graphics shader to buildings around the PU that will display 3D interior rooms that change perspective when looking through windows.
+Ships and Vehicles
+- Added New Ship: RSI Scorpius
+## Feature Updates
+Locations
+- Lighting Polish Pass for Hurston Volumetric Clouds
+Gameplay
+- Ship Paints Update
+Paints can now be stored in personal and ship inventories to allow players to move them around the PU. Added paints filter to inventory tabs.
+- Updated Intro Bounty Mission ship AI to be a more balanced experience for new players
+- Increased Shield Health of Size 2 Shields
+- Added Ability for Players to Purchase Shop Items Directly into Ships That Have Enough Storage Volume
+Ships and Vehicles
+- Added and New Refueling Console to the Rear Catwalk Platform on the Starfarer
+- Updated Min/Max Wait Times and Insurance Expedite Fees of the Drake Cutlass Steel, Consolidated Outland HoverQuad, and MISC Hull A
+Core Tech
+- Made Further Performance Improvements to Streaming Bubble
+- Performance Polish Pass on Large Planetary Storms
+- Updated Gameglass Bindings for 3.17.1
+## Bug Fixes
+- Fixed an issue causing ships and components to duplicate after a character reset
+- Fixed an issue causing bunkers to not clear corpses between mission instances
+- Elevators should no longer collide with players while moving to their destination
+- Selling an item should no longer reset search filters back to default
+- Fixed an issue causing passive detection range to be drastically reduced for all ships and vehicles
+- Reloading weapons should no longer fail when emptying and reloading consecutive magazines
+- Fixed an issue where players could equip any mag to the Behring BR-2 Shotgun
+- Missiles should no longer be able to hit and damage the entity they were launched from
+- Fixed an issue causing torpedoes to prematurely detonate before reaching max lock-on range
+- The Lock Ping Controls to Scanning Mode setting should now correctly apply to Mining Mode
+- AR Markers for ships, turrets, and other objects should no longer visually block the mobiGlas interface
+- The oxygen (O2) timer in the mobiGlas should now correctly take into account the player's suit oxygen supply
+- Traveller Rental Kiosks should no longer have a blank UI / appears black when accessed
+- Fixed an issue causing characters and objects to not display animations and appear to teleport while moving when looking at them from a distance through higher magnification weapon scopes
+- Fixed an issue that was causing the fuel purchase price to slowly increase after players have committed to purchasing fuel from a Starfarer
+- Players should no longer be able to request docking to a Starfarer if the refueling boom arm is not extended
+- Starfarer's upper turret should now have atmosphere
+- Fixed an issue causing 300 Series ships to consume hydrogen fuel at a higher than intended rate
+- "De-select/select" attachments on FPS weapons in shop's confirmation window should now correctly function
+- Carrack should no longer be missing geo for holo compass on the bridge technical deck
+- Fixed an issue causing some of the Carrack's component bays and suit lockers to not be able to be closed after opening
+- Oxygen should now be present in the Carrack's repair room
+- Players should now be able to sit in the chair in the Carrack's Captain's Quarters
+- Starfarer Co-Pilot's Inner thought UI to turn ship off should no longer block MFD access
+- Starlifter Series landing gear should no longer compress, causing the ramp and elevators to collide with the ground
+- MISC Prospector Paint options should no longer be missing from the VMA
+- Cave interiors on planets with breathable atmospheres should now correctly inherit the atmosphere of the planet
+- There should no longer be invisible trees that players can collide with around the microTech river
+- Loot Crates in UGFs should no longer duplicate and overlap inside of each other
+- Added additional robustness to loot transfer to help Items transfer quickly from loot crates to personal inventory
+- Using attachment interface to remove attachments should no longer cause some attachments to become stuck on the weapon and be unremovable
+- Hornet Pirate should now correctly give Combat Assistance Mission credit when destroyed
+- The Price of Freedom Laptop should no longer be missing its UI prompt, preventing a critical aspect of the mission
+- Supply and demand for buying and selling commodities should no longer instantly refill
+- Fixed an issue causing Comm Arrays to be missing their missile defenses and S10 turrets
+- Fixed an issue causing Comm Arrays to incorrectly have trespass zones which will give the player a felony
+- Fixed an issue causing some players to not receive their badge for completing Pirate Swarm in a group
+- Artimex Armor cape should no longer appear to be blown by wind when there isn't any
+- Projectiles fired from UGF turrets should no longer be invisible and have chance of being silent
+- Fixed an issue where ships docked to Starfarer / Starfarer Gemini could fall in atmosphere
+- Fixed VisArea issues with multiple doors on the upper deck of the 400i
+- The "Destroy Illegal Drugs" mission should now complete correctly after destroying all the drugs
+## Technical
+- Fixed 12 Client Crashes
+- Fixed 9 Server Crashes
+- Fixed Multiple Backend Service Crashes

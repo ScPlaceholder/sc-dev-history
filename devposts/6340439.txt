@@ -1,0 +1,61 @@
+## Star Citizen Alpha Patch 3.21.1
+Alpha Patch 3.21.1 has been released to the EPTU, and is now available to test! Patch should now show: VERSION 3.21.1-PTU.8825549.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Up To Wave 1 Testers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- System - Security - Ship Trespass
+- Mission - Defend - Data Heist
+- New Player Experience - New Babbage
+- Vehicle Headlight Refactor
+- Crusader C1 Spirit
+Features in Partial State
+These features are in a partial working state and not fully ready for feedback. They may still be mostly functionable and you can test them as much as you like but at this time we are not accepting feedback.
+- Tractor Beam - T2 - Vehicle Tractor Beam
+Currently Ship Tractor Beams is in but is having quite a few issues with different ships and functionalities. Currently the C1 Spirit is in the best shape to test this while other ships like the SRV has very disruptive audio issues while using the beam and other ships may not be able to use their tractor beams fully (Nomad, Cutlass Black, 315p, Caterpillar, Hull-C).
+- ARGO SRV
+- Siege of Orison Global Event Re-Activation (Feedback threads will be available when event is run next)
+- FPS AI Behavior Integration (Feature fully functional but Feedback thread will be available once Siege of Orison is run to maximize feedback)
+Known Issues
+- Argo SRV - PU - Vehicles - Audio / Components - Tractor Beam - When the tractor beam is engaged in the SRV a constant high pitched frequency is played
+- ARGO SRV - PU - Vehicles - Art - The screen for the cargo elevator panel is embedded into the panel housing
+- PU - Stanton - Ships - ASOP Terminal - Spawning specific ships will cause them to spawn outside of Hangars
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- Crusader Spirit A1 - PU - Vehicles / Weapons / Components - Missiles - When the Spirit A1 is travelling at high speed, a fired bomb can rip through the ramp and body of the ship and severely damage the ship
+- Anvil Lightning F8C ALL Variants - Vehicles / EVA - Using EVA to fly into the Cockpit during Zero G will cause the player to gain gravity and fall into the Cockpit
+- Stanton - Backend Services - Service Beacons - After service beacon is abandoned / canceled / declined, player will be unable to receive or accept other service beacons
+- PU - Stanton - Locations / UI - AR Marker showing your assigned hangar does not appear
+- PU - Mission Content - Retrieve Consignment - Datapad is blank / no code is displayed
+## New Features
+Gameplay
+- System - Security - Ship Trespass
+The interior of players' ships are now considered trespass zones for those without permission to enter. Permission will granted via the party system until more complex systems for managing crew and passengers is created. Players trespassing aboard a ship will see a Trespass Warning and can be attacked by the owner of the ship and any player in their party without fear of committing a crime. This timer has a brief period after they exit the ship to where hostile actions against the trespasser are warranted. If the player is allowed access to a ship due to the owner being a hostile, then the hostile’s hostility timer runs out whilst still aboard, they retain the right to remain aboard until they leave. Should they attack former hostile they would be able to receive crimes and be lawfully attacked in self defense. Should former hostile attack them, they would be able to press charges and be lawfully act in self defense. This update also removes the warning that all players see in a ship when a new person joins, making it much more difficult to tell when your ship has been boarded and by whom until visual confirmation has been made.
+- Mission - Defend - Data Heist
+Implementing unlawful missions that task the player with infiltrating locations defended by hostile NPCs to hack terminals. Players with the mission will be sent to a location to help recover/steal data from servers at the location. They will need to access the main-terminal via hacking or Technicians ID chip (found at the location) and give access via interaction screen to their mission handler who will initiate the download. During the download they will defend the terminal and servers, the latter of which can be destroyed or overheated. Once enough data has been uploaded they will be able to leave the area completing the mission. They will fail if too many servers have been destroyed or not enough data has been uploaded.
+Ships and Vehicles
+- Added New Ship: ARGO SRV
+- Added New Ship: Crusader C1 Spirit
+## Feature Updates
+Gameplay
+- Tractor Beam - T2 - Vehicle Tractor Beam
+The inclusion of Vehicle tractor beams and the ability to tow ships has been added to 3.21.1. The vehicle tractor beam feature will not only bring the Tractor Beam to the vehicles but also will extend the FPS tractor beam by adding more functionality and adding the Standalone Tractor beam to the game.
+Tractor Beam on ships! This update includes Pilot and Remote turret controlled tractor beams to ships that allow them. While most ships will have remote turret controlled, ships such as the 315p and Vulture will have Pilot controlled tractor beams.
+We have also included the ability for specialized ships like the ARGO SRV to use towing tractor beams, allowing them to grab onto and pull ships that have their shields and engines disabled through space, atmospheres with gravity, and through quantum travel (Known issue QT towing is not functional at this time due to a bug).
+New, additional functionalities will include: A larger,  new standalone FPS Tractor beam tool, an update to the balance of all tractor beams and adding different sizes of the tractor beam to allow different masses or volumes to be grabbed. Allowing for multiple tractor beams to affect a single item and allow multiple players to manipulate the same object.
+- New Player Experience - New Babbage
+We have done a full update on the New Player Experience mission and signage to bring this feature to New Babbage. This update includes many changes to make the mission flow better through New Babbage as well as the addition of shops, more location signage, and a full lighting polish pass to the landing zone.
+- Siege of Orison Global Event Re-Activation
+Re-introduction of Siege of Orison into the PU. Many updates to general SOO locations, AI, behaviors, and balance changes have been worked on since the last run of this event. This re-activation will allow us to run Siege in 3.21.1 and later during specific times and dates when needed.
+- Ground Radar Sensitivity Addition
+Introduced radar ground sensitivity, so different radars can see ground vehicles from different ranges. This includes a full balance pass on ground vehicle emissions and also adds the ability for ground vehicles using Missile Operator Mode to target lock other ground vehicles.
+- UGF Ledge, Cover, and Navigation Improvement Polish Pass
+Ships and Vehicles
+- Vehicle Headlight Refactor
+The Star Citizen lighting teams have collaborated to carry out a headlight rework of every vehicle in the PU. This has been done to create a more consistent look and functionality across each manufacturer. The headlight intensity, radius (distance cast), and color will be set based on the vehicle size and manufacturer. This means each vehicle will fall into one of six size categories ranging from Size 1 with 500 meters of headlight cast distance, up to Size 6 with 3000 meters of headlight cast distance.
+- Tumbril Nova Movement Tweaks
+Adjusted minimum and maximum track friction and steering stiffness.

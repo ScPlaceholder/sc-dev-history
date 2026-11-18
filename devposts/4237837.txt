@@ -1,0 +1,22 @@
+## Star Citizen Patch 3.14.0u
+Alpha Patch 3.14.0u has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7690979.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: All Backers
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General gameplay and stability
+Known Issues
+- Players encounter positional desync during gameplay
+- After logging out in a ship bed or crashing, logging in/crash recovery may fail w/ Error 20018 or spawn the ship/player at Stanton star
+- Elevators at Grim Hex fails to complete animations and elevator can lose functionality
+- Search missions such as shipment lost and lost cargo do not update once the player has collected the cargo box
+- Unable to complete box delivery missions in Area18, as kiosk rejects boxes
+- Distortion weapons can lead to the friendly fire threshold being met in only a few shots
+- Demon Fang Combat Knife asset is missing from the game
+## Technical
+- Fixed 1 Server Crash

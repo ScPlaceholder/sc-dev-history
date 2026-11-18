@@ -1,0 +1,59 @@
+## Star Citizen Alpha Patch 4.9
+Alpha Patch 4.9 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.9.0-PTU.12198266
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Recco Battaglia Repeatable Missions (reputation sped up for tonight)
+- Vehicle Hit Marker Updates
+- Behring CQ7 Bullpup Rifle
+- Vehicle Cleanup Updates
+- Vehicle Weapon Balance Pass
+Known Issues
+- Current hitmarker sounds are not playing the correct final audio and a solution is currently being looked into
+- PU - Armor / Clothing / Inventory Rework - "Right Click > Equip" does not function if a paper doll slot is occupied
+- PU - Nyx - StarMap / Locations - QV Breaker Stations can be traveled to anytime at Nyx without RCD missions active
+- PU - Ship Battles - Missions / Locations - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- PU - Ship Battles V2 - EscortShips - Mission Content / AI - Escorted ship does not Quantum Travel away or Go to the Hangar after neutralizing the AI ships in the mission location
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+## Features & Gameplay
+Gameplay
+Nyx Waypoints
+Named waypoints added to key locations across Nyx
+Vehicle Weapon Balance
+- BEHR Ballistic Cannon S4: damage increased from 325 to 1200 physical per shot, correcting an outlier value
+- BEHR Ballistic Gatling S5: damage reduced from 126.5 to 102.5 physical per shot
+- Esperia Deadbolt Cannon S4: damage reduced from 683.1 to 610 physical per shot
+- Esperia Deadbolt Cannon S5: damage reduced from 1024.2 to 950 physical per shot
+- Vanduul Plasma Cannon S5: damage reduced from 1000 to 970 energy per shot
+Hit Markers
+Death hit marker duration increased for better readability
+## Bugfixes & Technical
+Fixed 2 Client Crashes
+Fixed 3 Server Crashes
+Fixed a Mainthread Deadlock
+- Potential Fix for all GPU particle effects playing their audio from world position zero instead of their actual location in the world
+- Potential Fix: Server-side entity spawning failures causing objects, NPCs, or ships to not appear correctly in certain situations
+- Potential Fix: Inventory becoming inaccessible with backpack, station, and loot contents appearing empty
+- Potential Fix: Docking cancelled at 99% completion leaving the ship permanently attached to the docking collar, blocking all future docking attempts at that collar
+- Potential Fix: Welcome to Nyx Vanduul-Tech Smugglers mission stopping progression when the player collected decryption keys before reaching the objective location
+- Potential Fix: Welcome to Nyx Auxiliary Station spawning multiple laptops, making it unclear which one had the correct access code
+- Potential Fix: Yormandi creature missing its weakspot hit zones entirely
+- Potential Fix: Players can be given the same location for select Battaglia repeatable missions
+- Potential Fix: AI ships exhibiting incorrect combat behaviors, sitting still during fights or flying directly into the player instead of maneuvering
+- Potential Fix: Vanduul Stinger pilots flying passively and not engaging in combat correctly
+- Potential Fix: NPCs aboard a ship acquiring and firing on the ship they were spawned on after taking incidental damage from it
+- Potential Fix: Drake Caterpillar elevator clipping players through interior geometry during ascent and descent
+- Potential Fix: Mirai Razor (all variants) player getting stuck inside the ship when exiting to EVA
+- Potential Fix: Aegis Idris medical beds clipping through the actor after standing up, causing the actor to clip into the bed when lying down again
+- Potential Fix: QV Breaker Station airlock door panels not showing an interaction prompt unless approached from a specific angle
+- Potential Fix: Social AI unable to perform sub-activities at multiple city gates in Lorville
+- Potential Fix: Weapons failing to deal damage when hitting the outer edges or extremities of large ships
+- Potential Fix: Remote turrets defaulting to PIP aiming mode instead of target auto, inconsistent with manned turrets
+- Potential Fix: Players unable to place mining gadgets on asteroids while in EVA
+- Potential Fix: Yormandi freezing after stagger recovery and not resuming attacks
+- Potential Fix: Xy'kara helmet showing no head underneath when worn by the player
+- Potential Fix: Quantum Travel spooling audio from nearby ships bleeding through the interior of the Caterpillar during Battaglia Board Ship missions
+- Potential Fix: Anvil Paladin engineering kiosk screen suffering from z-fighting on the lower deck
+- Potential Fix: Scanning a target showed "Unavailable" alongside the faction name and pilot name, making the MFD cast info unclear

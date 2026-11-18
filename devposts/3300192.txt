@@ -1,0 +1,4 @@
+1) No. Well, you might, but the two aren't related to one another
+2) If the conversion works, there'll be no visual difference at all and the performance will be better (in cases where the CPU graphics workload was the limiting factor)
+3) We're working on two fronts. First, we have a new renderer, arbitrarily named Gen12, which wraps the graphics API in an interface that forces things to be Vulkan friendly. The D3D11 backend for Gen12 is already working and we're converting features over to it, so we can test old-D3D11 vs new-D3D11 on a switch, feature by feature. At the same time, work is progressing on writing the Vulkan backend for the same renderer, so the people working on that can compare new-D3D11 vs Vulkan on any of the things that have already been ported to Gen12.
+4) It's possible to run with the Vulkan backend, but it's not working in the sense of being in a playable state.

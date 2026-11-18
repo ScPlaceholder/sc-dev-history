@@ -1,0 +1,6 @@
+SC already uses as much cores as it can gets. We do have lots of stuff running in the background. This is always an ongoing effort to improve though.
+As people pointed out the Main- and Renderthread are the two limiting factors are the moment though. If they can't process their workload fast enough the whole game crawls essentially.
+That is why optimizing the Main- and Renderthread is so important.
+The renderthread won't be an issue anymore once everything runs in Gen12 and is optimized. Future plans involve even in getting rid of it entirely and record all GPU commands in parallel.
+This means the more we get Gen12 done the more you will be limited by the Main-Thread only (unless you are GPU bound of course).
+We're always striving to parallelize work from the MainThread as much as possible. Having as much cores as possible will greatly benefit you for StarCitizen in the future.

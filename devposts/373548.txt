@@ -1,0 +1,5 @@
+A few answers to this -
+In terms of storage, CPU and GPU values are stored in all kinds of bitrates. 8/10/16/32 bit normalised values, and 11/16/32 bit floats are very common on GPU, CPU is generally 32 or 64 bit float, but it's straightforward to pack and unpack into whatever smaller format is convenient.
+On the CPU (as far as I know) we're doing all calculations at 32 or 64, IIRC the instruction set doesn't have extra operations for other bit rates.
+On GPU, we're currently doing everything at 32-bit. Though there are clearly areas that would benefit from 16-bit double-rate operations, we aren't yet using the vendor-specific shader extensions that would allow for it.
+Edit: Correction, I previously thought min16float, min10float etc were AMD language extensions, but they're in the main spec

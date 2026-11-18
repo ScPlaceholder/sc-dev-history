@@ -1,0 +1,37 @@
+## Star Citizen Patch 3.14.0q
+Alpha Patch 3.14.0q has been released to the PTU environment, and is now available to test!   Patch should now show: VERSION 3.14.0-PTU.7678974.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Audience: All Backers
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- Crusader
+- Orison Landing Zone
+- Constellation Taurus
+- Law System v2: Surrender
+- Power Management v2 (Capacitor Gameplay)
+- Missile Operator Mode
+- Radar, Scanning, and Ping T0
+Known Issues
+- Some players have reported that they are Unable to select a system (may require an account recopy as well as logging fully out of the launcher and logging back in and possibly deleting user folder)
+- Players may experience an infinite load when rejoining the PU after a bed logout
+- Legally landed ships are irregularly being treated as blocking flight zones and impounded
+- Editing PMA After Changing mobiGlas case prevents mobiglas functionality
+- Missiles do not follow flares as a countermeasure
+- Ships are not fully repaired after repairing / refueling them in VMS
+## Feature Updates
+Ships and Vehicles
+- Aurora power tuning
+## Major Bug Fixes
+- Players should no longer experience a 30009 error when loading into the PU
+- Fixed an issue causing turrets to not be able to pitch up and down in ships
+- Players should no longer QT through planets when spline jumping
+- Fixed an issue causing Star Marine matches not to end when max point have been reached
+- Medpen should no longer show up twice in Star Marine Loadout Customization
+## Technical
+- Fixed 1 Client crash
+- Backend service stability fixes

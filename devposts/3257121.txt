@@ -1,0 +1,68 @@
+## Star Citizen Patch 3.10.0q
+Alpha Patch 3.10.0q has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.10.0-PTU.5726996.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Regression thread: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-10-0q
+Testing Focus
+- Ship flight in and out of atmosphere
+- Updated building blocks ship UI for all flyable ships.
+- High speed combat changes
+- Turret gameplay
+- Origin M50 Improvements
+- Electron FPS Weapons and Electron Damage
+- Body Dragging
+- Citizen Trading App
+- New Targeting Method
+- Delivery Mission Improvements
+Known Issues
+- Ships can get stuck in Hangar Doors which close before the Ship is clear.
+- Hangar Doors can remain closed when the Hangar is assigned to a Landing Players Ship
+- When the user ping scans an asteroid and then ping scans again the blob / asteroid relocates.
+- Ground  Vehicles will be pushed off the Elevator when the Player attempts to store them in a 600i or 890 Jump and can stop the Elevator from being  interacted with
+- The Bartender will wait long before being able to use usables when the server's FPS is low
+- The user is unable to repair, restock or refuel ships on ship pads at Shubin Mining Facilities.
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- The Player Ship is destroyed shortly after flying into a Restricted Area / Zone around the Spaceport after leaving a Hangar
+- Landing gear will take multiple presses of the keybind to activate.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- The Greycat ROC cannot extract all of the child crystals, some are left behind
+- Hammerhead atmo entry effects clipping through interior of the ship
+- Security scans won't recognize the drugs on board a players ship during the Drug Production run missions
+- The Ship Hologram / 3D Model will take over 20 seconds to load the first time the Player views one in VMA or the Arena Commander Menus
+- The Area18 nav marker will appear at the central plaza, not the spaceport.
+- Legally landed ships may be impounded
+- Multi-Tool in Klescher Prison Commissary does not come with a OreBit mining attachment
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+## Feature Updates
+Gameplay
+- Updated the Targeting UI functionality
+Added selected state on passive markers. Consolidated pinned marker onto passive marker. Add name and range information when pinned. Removed fading logic on label if target is pinned.
+- Added back First-in-first-out pinning and cycling of targets.
+- Add extra hold actions for pinning (unbound by default)
+- Pressing the Cycle in view button "T" should Lock the Selected target if the player does not have a currently locked target.
+- Split controls into two groupings in the options menu for readability. 'Flight - Targeting' and 'Flight - Target Cycling'
+- Enable / Disable Look Ahead is now bound to LAlt+L by default
+- Moved light toggle while on foot back to T (From L) for faster access.
+- Restricted area proximity warnings will now take direction of travel into account.
+- Added a respawn timer on delivery missions so they do not instantly respawn new ones after abandoning other accepted missions.
+Core Tech
+- Put in mechanics to clean up Pico the Penguin when placed to reduce performance cost.
+## Bug Fixes
+- Fixed extreme ambience audio volumes in the Carrack.
+- The map globe on the Carrack's upper bridge should no longer be a Replace Me Ball.
+- Fixed a bug that was causing all surrounding mineables to display on the Multi-Tools UI When the user is aiming down sights.
+- There should no longer be duplicate VJoy - Mouse Deadzone settings in the options menu.
+- Players should no longer clip through the external airlock doors of outposts.
+- Fixed missing QT point to Bud's Growery outpost on Euterpe.
+- The Vanguard Warden should no longer be missing the Munitions Compartment / Weapon Rack.
+- Fixed an issue causing Freelancer and Starfarer turrets to not be properly aimed when the ship is spawned.
+- Fixed Assist from remote turrets should now properly function.
+## Technical
+- Fixed 3 Server crashes.

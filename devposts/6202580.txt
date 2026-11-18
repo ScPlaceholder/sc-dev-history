@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.20.0
+Alpha Patch 3.20.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.20.0-PTU.8695779.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 4
+Database Reset: Yes
+Server Regions: US/EU (Please select one of these instead of BEST or loading will fail)
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Known Issues
+- AC - Gun Rush - Weapons / Loadouts - When levelling up to a new level loadout in Gun Rush, the weapon may cease to fire
+- Tumbril Nova - AC / PU - Vehicles - The Nova drifts across the ground after a slight movement input
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- PU - Vehicle - MISC Prospector - Door doesn't work from the inside
+- PU  - Stanton - Vehicles - It's possible for a player's first person camera  will clip into their body indefinably until they re-enter a spaceship
+- Multiple Locations - Inventory - Equipped items are lost after dying in the landing zone
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- ASOP - Ships - Vehicles - Clicked to "Store" ship at ASOP but it was "Destroyed"
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Vehicles / Ship Components - Ships that do not have missiles as a standard weapon cannot restock their countermeasures.
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Performance - Client Performance drops around Ghost Hollow
+- Mission Content - UGF - AI Counter will drop to 0 after streaming location in and out again
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- Vehicle Maintenance Services - Ship repair doesn't happen but still charges you
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Multiple Locations - ASOP Terminal / Ships - When storing a ship, the ASOP terminal will set the ship status to "Claim" instead of "Retrieve."
+- Exploit / Ships / Vehicles / Game Code / Multiplayer - When two Players Salvage a Ships Hull simultaneously the Hull will recover and be infinitely Scrapeable
+- Inventory / Personal Inventory - Inventory can enter a state of becoming unresponsive, preventing the player from being able to eat or drink
+- AI / Art - VFX - Hostile AI bullets visually clip through walls
+## Feature Updates
+Core Tech
+- Updated "Activate Ping" keybind title to "Activate Ping (Hold & Release)" to clarify keybind & mechanic
+## Bug Fixes
+- Fixed - MISC Hull C - PU - Vehicles / Cargo / ATC - Calling ATC with cargo onboard will assign a hangar if all docking ports are in use
+- Fixed - PU - Multivehicle - Weapons - Missiles - Variant of missiles will arm/not arm but will never fire
+- Fixed - AC - Front End / UI - Duel / Master Mode: Duel - "Player Limit (1) Exceeded" error persists when game mode is changed
+- Fixed - PU - UI - Vehicle HUD - Ships/Vehicles - Some UI elements on the visor lag behind player movement making it difficult to aim
+- Fixed - PU - Stanton - Jumptown - Mission Content / Shopping / Commodity Kiosk - Players can only sell 1 SCU of each type of loose cargo, any extra crates are not shown in the terminal
+- Fixed - PU / AC - Actor - Traversal - Climbing / Vehicles / Locations - Using the shift key while interacting with any ladder will cause the actor movement to stall indefinitely
+- Fixed - PU - Stanton - Locations / Transit - Grim HEX Hospital elevator has no atmosphere when moving between floors
+- Fixed - AC - Gun Rush - UI - Online Services - Gun Rush game mode does not display a chat for the lobby
+- Fixed - AC - TheSnakePit - Checkpoints has a poor trigger area that does not match the hologram
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed Multiple Server Memory Leaks

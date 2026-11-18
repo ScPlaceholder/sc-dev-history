@@ -1,0 +1,66 @@
+## Star Citizen Patch 3.21.0
+Alpha Patch 3.21.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.21.0-PTU.8757283.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+This build pulls in many of the updates from the latest live including localization and the F8C
+- New Jump Point Rest Stop Stations and Lagrange Points
+- New Legal/Illegal Mission: Retrieve Consignment
+- New Illegal Mission: Kareah - Steal Evidence
+- Repel Raid on Orison
+- New Crusader Platforms
+- Wheeled Vehicle Handling Improvements
+- Driver Remote Turret QoL Improvements
+Known Issues
+- Stanton  - Stations - Transit / Locations - Elevators - All elevator panels are  non-functional and do not display correctly in Hangars & Habs area (New Babbage, not 100% chance)
+- PU - Stanton - Jump Point - All Jump Points - Rest Stop (R&R) - Locations - The Patient Check In medical kiosks do not work and are stuck on "Checking availability" loading
+- PU - Stanton - UI / Locations - Multiple Locations - Crashing in a restricted area will give you never lasting "Restricted Area" alerts
+- PU - UI / Art / Graphics - Green Imperial Medical Regeneration Kiosks screen have no UI
+- UI / Menus - Controls - Keybindings - The Default Preset Images for the keyboard and gamepad control schemes do not match what is bound by default
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- MISC Hull C - PU - Vehicles - Can't undock the Hull-C
+- PU - Crusader / Orison - Locations / Transit - It's possible for turn gates to not open preventing players from entering shuttles
+- PU - Art - Items / Character / Textures - Multiple clothes / armor / undersuit variants lost color / using the default base color
+- PU - Multivehicle - Vehicles / Ships / Ship Components / Weapons - Laser Repeater occasionally stops firing but still consumes ammo
+- Hull C - Spawn / Cargo / LEO - Hull C with cargo can spawn extended in a large Hangar instead of Docking Port
+- Stanton - Multivehicle - RSI Constellation Series - Ship Feature - Snub Ship clips through Constellation variants in vertical position when retrieved from ASOP
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout after dying in the armistice zone
+- Stanton - Actor - Personal Inventory - Right click item interaction menu cannot be closed once opened
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Stanton - AI - Mission Giver - Wallace Klim is not visible at his location in Grim Hex
+## Feature Updates
+Locations
+- Placed monitored zones around Stanton Jump Point stations to enable commLinks
+Gameplay
+- Ground Vehicle Handling Improvements
+Ground Vehicle Handling Polish pass on Nova, Glad HP Update, P72 Flight Tuning, and Star Fighter decay change. Rest of Vehicles moved to more forgiving tire curves.
+## Bug Fixes
+- Fixed - PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- Fixed - PU - Stanton - Jump Point - Pyro / Terra - Rest Stop (R&R) - Locations - Area around Live Fire Weapons in Galleria has no atmosphere
+- Fixed - PU - Cargo / Commodities / Vehicles / Cargo ATC - ATC fails to detect vehicles within the loading zone or fails to initiate cargo transfers
+- Fixed - MISC Hull C - PU - Ship / Docking Pad - Attempting to undock results in an error message "Failed to detach vehicle due to control token not being granted."
+- Fixed - Stanton - UI - mobiGlas / Skyline (StarMap) - Starmap will not plot QT courses around Stanton(the star) and can prevent direct QT travel for ships
+- Fixed - Stanton - UI - Quantum Travel - Markers Will Randomly Disappear After Quantum Travel With No Route Set
+- Fixed - PU - Stanton - Crusader Platforms - SOO - Missions / Locations / Art - Rooftops are missing art assets and appear unfinished
+- Fixed - PU - UI - Social - Party Member marker does not show up after party has loaded into PU and a new member has been added
+- Fixed - PU - Stanton - Crusader Platforms - Game Code / Spawn Closet Manager - Spawn Closet Manager contains no Spawn Closet
+- Fixed - PU / AC - Weapons / Actor - Apocalypse Arms Scourge Railgun- Aiming Down Sights (ADS) while moving in EVA zooms in through the barrel of the Railgun
+- Fixed - Stanton - Vehicles - Radar / Scanning - Ping angle keybind can not be modified and the function now seems tied to Scan FOV
+- Fixed - Stanton - PU - Starmap - Quantum Travel - Location on Euterpe is labeled with placeholder text @TimeTrial_Location_Stanton4c_Icebreaker_De
+- Fixed - AC / PU - Multivehicle - Ships / Vehicles - UI - When respawning in any ship a message will display telling the player their shields are down when they are active
+- Fixed missing server racks inside some UGFs
+## Technical
+- Fixed 10 Client Crashes
+- Fixed 5 Server Crashes

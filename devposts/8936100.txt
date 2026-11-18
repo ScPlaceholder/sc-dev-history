@@ -1,0 +1,46 @@
+Hello everyone,
+Today, we are releasing the RSI Launcher 2.14.0
+RSI Launcher can be found here:
+https://install.robertsspaceindustries.com/rel/2/RSI%20Launcher-Setup-2.14.0.exe
+## :gear: New features:
+What's new in this release:
+This release ships an Electron 41 upgrade and introduces a dedicated loader renderer that handles auto-update at startup for a smoother launcher update experience.
+## :bug: Known issues:
+- Some users encounter a flickering Launcher background, which can be partially mitigated by turning off accessibility settings. Please refer to this comment for a potential fix: https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/rsi-launcher-2-0-6-release-notes/7279512
+- The Launcher sometimes fails to create the StarCitizen/Live folders for some users, leading to Error 2000, Error 5008, or Error 5010. Try creating the folder manually and running the Launcher as an administrator.
+- LCH-1030: Launcher suppresses Screen Saver
+- LCH-1958: Never Ending Download loop. Please report the issue; we are encountering trouble investigating it.
+- LCH-2229: We are investigating Network error 5008. Please report your issue there.
+Please try this version and share your feedback with us! Your feedback is essential for improving the Launcher.
+## :mega: RSI Issue Council - Launcher Project
+https://issue-council.robertsspaceindustries.com/projects/LAUNCHER
+Any additional feedback can be provided in this Spectrum Thread.
+Since RSI launcher 2.0.0, the log.log file can be found by clicking on “GET LOGS” in application settings or under: C:\Users\<username>\AppData\Roaming\rsilauncher\logs.
+## :spiral_note_pad: Updated Error Handling
+2000 - Installer error catch-all
+3000 - NMD catch-all
+3001 - NMD InvalidMDFileError
+3002 - NMD DiskSpaceBasepack
+3003 - NMD – InvalideMDFileHeader
+3005 - NMD - Not mapped error
+5000 - Datapatcher - Disk full error
+5001 - Datapatcher - Fix Permissions
+5002 - Datapatcher - Game files conflict
+5003 - Datapatcher - Network access
+5004 - Datapatcher - Corrupted game files
+5005 - Datapatcher - Unknown Network access
+5006 - Datapatcher - Failed to verify backpack
+5007 - Datapatcher - Unknown error
+5008 - Datapatcher - Network fatal error
+5009 - Datapatcher - IO Error
+5010 - Datapatcher - P4K Error
+5011 - Datapatcher - Invalid Argument type
+5012 - Datapatcher - Verification header not found
+5013 - Datapatcher - Datapatcher - Installer exception u002
+5015 - Datapatcher - NETWORK - Could not resolve host: builds.robertsspaceindustries.com
+5016 - Datapatcher - NETWORK - schannel: failed to receive handshake
+5017 - Datapatcher - NETWORK - Too many files failed after max retries.
+5018 - Datapatcher - NETWORK - Catch-all
+5021 - Datapatcher - Error 21
+## :warning: We are documenting the most commonly shared workarounds:
+https://support.robertsspaceindustries.com/hc/en-us/articles/22514899089431-Error-2000-or-50XX

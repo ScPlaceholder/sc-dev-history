@@ -1,0 +1,52 @@
+## Star Citizen Patch 3.12.0
+Alpha Patch 3.12.0 has been released and is now available!   Patch should now show: VERSION 3.12.0-LIVE.6705298.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+- When logging into the Terminals at TDDs, they can display incorrect Commodity Information and Prevent Sales
+Workaround: Try other trade terminals at a different location. Test relogging and trying again.
+- Esperia Talon will have power issues with normal use in gravity
+Workaround: Don't go full throttle immediately after take off to give the power plant time to build up
+- Player is unable to activate mining consumables in the Argo Mole
+Workaround: Using the consumables from a different player in the mining seats will work. If you are working alone with the Mole and leave the pilot seat to use a turret, toggling scan mode will help force consumables to work.
+- Player can spawn falling through the planet upon login
+- Visiting location from fresh boot will cause player to spawn on the surface on Hurston
+- Ship canopy may open and close without user input
+- It's possible to have player timeout trying to login
+- Some clients are not receiving full member list in global channel
+- Player eyes are extra reflective in video.
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool.
+- Players may see duplicate General chat channels in their mobiGlas
+- Refining kiosk warning message is missing that warns players that materials not selected for refinement will be discarded
+## New Features
+Locations
+- Space Station Refinery Decks
+Dedicated areas in Rest Stops that allow players to sell unrefined minerals, drop off mined materials to be refined, and buy or rent new mining equipment and ships.
+Kiosks have been placed in the Refining decks that allow players to take their raw mixed ore from their mining ship and refine it. The player can use these kiosks to create multiple refining jobs which are persistent and complete over a period of time, based on quantity and complexity, and create refined ore that is more valuable than unrefined. There are different kinds of refining processes which produce different percentage yields depending on the type of resource being refined. Additionally, different refineries may have different proficiencies. Once one or multiple jobs are completed, the player can collect the refined materials into a ship with cargo capability and sell at a commodity kiosk, with most goods sell-able at major city ports. Now that we have a specific location where refining takes place in the 'verse, most mineable transactions have been moved there. You can still sell unrefined ore at these locations, or choose to refine them. Levski will also purchase unrefined materials.
+- Spacescaping Stanton: Lagrange Point Updates
+Updating all extra-planetary Lagrange point locations in the PU with improved visuals and first gas cloud implementation.
+Gameplay
+- Reputation - T1
+This system will introduce the first foundational system of reputation added to the game to track a player's relationship with various entities, such as important NPCs and Organizations. This reputation is now stored in long term persistence so that it will remain through database wipes and character resets. Currently, reputation levels with an NPC or Organization are only seen through different dialogs or access to higher paying missions. We are working to add functionality to improve player visibility of reputation in a future update.
+Mission Giver Reputation: All mission givers except Ruto (due to tech requirements for him being a hologram) have been updated to use the new reputation system. Doing missions for a Mission Giver will cause you to gain and lose reputation with them. They should react appropriately, playing different lines of dialogue based on your performance. If you fail too frequently, they will terminate their relationship with you and refuse to work with you missions for a set amount of time. With Alpha 3.12, no new missions have been added specifically for Mission Givers, however, we plan to add new missions in the future now that the reputation framework has been put in place.
+Bounty and Assassination Missions: Many of the Bounty and Assassination mission chains have been updated to use the new Reputation System. In doing this restructure, Bounty missions were split into being given by 4 Local Bounty Departments, each with their own reputation, all presided over by a parent Bounty Hunters Guild. As you increase your reputation with the Bounty Hunters Guild and its children, you will unlock Certification missions. If you complete the Certification Missions, you will unlock a new tier of higher difficulty, higher payout Bounty Hunter missions. Keep an eye on your wallet when you complete bounty missions and you might notice that some organizations will include a little something extra if you have high reputation with them. This is the first of many "Perks" we intend to include. Assassination missions have all of the above, but there is only one Organization for them at this time: a one-man operation run by someone named Vaughn.
+- Weapon Zeroing - T0
+This system provides the player with a way to change the zeroing on their weapon sights. This allows shots at further distances without having to alter aim to account for bullet drop. While in ADS, a player can manually or automatically change a the zeroing range on their scope. Aiming down sights will show the current zeroing setting, and if your scope supports it, a distance finder at your crosshair (max distance varies by scope). You can set your weapon zeroing manually or to the distance finder amount by pressing "page up" and reset zeroing to 0m by pressing "page down".
+- Multi-Tool - Tractor Beam Implementation T0
+Initial implementation of a Tractor Beam Device that attaches onto a Multi-Tool that allows a player to control an object at a small distance without physical contact. Its primary use is to quickly and remotely move smaller cargo and other physics based objects in gravity and zero-g. If in zero-g, it can also be used as a "grapple hook" by tethering to a large object (asteroids, space stations, ships, etc.) and pulling the player towards it. This includes a tractor beam UI that displays Force and Distance Gauge as well as indications if the tether is close to breaking. Players can rotate a tethered item by holding “R” and moving the mouse cursor. Players can get the new tractor beam attachment and the multi-tool at the new Refinery Decks or in various shops in the PU.
+- Ship Entry Identification
+This feature adds dynamic AR markers onto a player's display when in close proximity to your vehicle to aid in entry. These contextually change depending on whether the vehicle is landed or in space to only show valid entry methods. This feature is on by default but has the option to disable in the settings.
+- Ship Thruster Wind Volumes
+Ship thrusters now create wind volumes when in use that will interact and blow away physics based objects, ships, and players.
+Ships and Vehicles
+- New Ship: Esperia Talon
+- New Ship: Esperia Talon Shrike
+Weapons and Items
+- New FPS Weapon: Gemini A03 Sniper Rifle
+A versatile, semi-auto sniper rifle with the ability to fire quickly at the cost of accuracy. This weapon has an integrated scope and attachment points on the Barrel and Underbarrel. Players can currently buy this in game at Skutters in Grim HEX.
+- New FPS Weapon: Behring FS-9 LMG
+Behring designed the FS-9 to be an overwhelming battlefield force. This light machine gun features a full auto mode that makes it ideal for laying down covering fire or holding back advancing enemies. The FS-9 is also acclaimed for its ability to maintain accuracy while unleashing sustained fire.

@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.16.1
+Alpha Patch 3.16.1 has been released to the LIVE environment, and is now available to test!   Patch should now show: VERSION 3.16.1-LIVE.7939065.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: Yes
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+- It is possible that some servers may stop updating their mission offerings. If the issue persists, try leaving the server, waiting a few minutes and rejoining the PU, or change region.
+- Attempting to log back into a ship bed may result in a long loading screen before being sent back to the Main Menu w/ Error 30009
+This issue may require attempting keep attempting to rejoin the PU over and over to get in. This is a tough issue we are tracking errors to track down the cause.
+- Players will experience positional desync with one another after they have died and respawned
+- Many mineable asteroids can’t be scanned
+- Spawn closets do not recognize unconscious AI and close the door on them possibly leaving mission critical AI unreachable
+- Ships sometimes wont appear in the VMA app unless the player spawns the ship first then spawns a different ship after, only then the ship will appear in VMA
+- Logging out from the Reliant ship's bed and back in will cause the Reliant to be in flight mode and the player is stuck inside the ship sleeping area
+- Cannot Repair, Refuel, Restock at LEOs
+- Ship may despawn after player death instead of staying at it's last location
+- Hammerhead doors to turrets may not open for players if they leave the seat during QT, trapping them inside
+## Feature Updates
+Gameplay
+- Derelict Spaceships V1 - Planetside Points of Interest
+Updates to the Derelict Spaceship missions to include more points of interest that will be scattered on planets. These derelict spaceships can now include newly added activities such as puzzles, tripmines, traversal problems, and hostile AI encounters and may reward players handsomely when for resolving the activity. These new derelicts will include the 1st implementation of laser trip mines into the game which players will encounter. This trip mines are explosives that use a beam of light that will detonate the explosive when someone or something comes into contact with the beam.
+- Ship Shield Delay Changes
+Shield face regen delay timer will now also trigger if the ship hull is hit and shield face is already down. Shield regen delay timers will now trigger for all faces when the power state of any shield generator is changed.
+- Quantum Travel Polish
+Made additional stability fixes that should help Quantum travel engage more consistently.
+- Increased scaling ratio payout per crimestat of target for player bounties
+Weapons and Items
+- Reduced Mustang Delta Rocket Pod Damage
+## Bug Fixes
+- Character's head, mobiGlas, and other equipment should no longer go missing after being released from Klescher
+- Fixed an issue that was causing elevators at GrimHEX and Underground Facilities to duplicate and overlap
+- Fixed an issue causing Inner Thought to override the MFD interaction of many ships
+- Fixed an issue that was causing player Hydration & Nutrition to not deplete
+- Fixed issues with multiple ships having shield holes and allowing laser repeaters through when the landing gear was retracted
+- Medical Gurney's in the Area18 hangar should now have correct mouse input steering functionality
+- Fixed an issue that was not allowing players to interact with party members on the front end menu
+- Fixed an issue causing players to see extremely bright, flashing lights around gas clouds near space stations
+- Fixed an issue causing players to become stuck in the queue to respawn at an ICU indefinitely
+- Fixed an issue causing weapons to not holster after entering EVA from Prone
+- Item interactions should no longer overlap other items which made it difficult / near impossible to interact with certain items properly
+- "Get up" Inner thought options should no longer be missing from the Cutlass bunkbeds
+- "Close Exterior" prompts should now correctly close ramps or doors on various ships
+- Fixed an issue causing multiple ships to spawn upside down on landing pads
+- Turrets should now properly attempt to shoot down torpedoes and bombs
+- Drake Caterpillar elevator should now retract correctly and not block players from entering the ship
+- Fixed an issue causing the synced assassination missions to not complete
+- Arlington Bounty Idris should now show it's marker for the player to follow
+- Rocket pods should no longer be able to be equipped on other ships that are not intended
+- Fixed an issue that allowed players to swap and move bespoke ship items across many ships
+- Pressing and holding F to "Freelook" should now work when piloting the Nox and prevents start up of vehicle
+- Freelancer Variant loadouts should now be able to be modified
+- Fixed multiple shield holes in the Aegis Sabre
+- Destroying the tail of the Redeemer should no longer break apart the entire exterior without killing the ship
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 6 Server Crashes

@@ -1,0 +1,59 @@
+## Star Citizen Patch 3.15.1c
+Alpha Patch 3.15.1c has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.1-PTU.7874254.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Current Audience: All Waves
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Easy Anti-Cheat Rollout
+With 3.15.1 we are adding EAC into Star Citizen. This currently has a few known issues that we are looking into and may cause a few community tools to not function.
+With this we wanted to gather feedback and edge cases from other software that may cause problems launching the game. This includes running on linux through VM/Wine/Proton, DXVK, or using certain joystick tools like Thrustmaster’s T.A.R.G.E.T. and VPC Configuration Software (Virpil). We would also love extra attention on community tools and mods you may use and all feedback on these working or not working is very appreciated!
+Known issues:
+- Localization tools not working
+- Linux/Wine does not work currently, we are investigating a solution to the problem
+- Reshade v4.9.1 not working but we are working on a potential fix
+- Symbolic Link not working when linking an environment that does not have EAC files (LIVE: does not have EAC, PTU: has EAC Files)- Work around is to unlink the environment and have seperate folders for each environment.
+Known Issues
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Character Customization not saving changes to the PU
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu. Players may need to exit the game and reload after a server crash to fix this error.
+- Players cannot repair, refuel, and rearm at outposts
+- Items not stored in long term persistence such as mined gems are currently not stackable (This is something that will be coming in a future update)
+- After trying on clothing in a store, all equipped items are permanently deleted from the inventory
+- Swapping weapons has a chance to drop or remove weapons
+- The Prospector door and ladder lack animations
+- When in combat, NPCs can get stuck in cover when trying to exit
+- Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round in Arena Commander
+## Feature Updates
+Locations
+- Re-added dense forests on microTech
+Gameplay
+- Downed state Polish Pass
+Added name and distance of player who accepted revival beacon on the incapacitated screen. Added label to corpse marker. Add option to PIT menu to dismiss corpse marker. Dismiss corpse marker based on interaction.
+Ships and Vehicles
+- Polish pass on Redeemer and Starfighter fuel to bring them more in line with their roles
+Greatly reduced Redeemer fuel tank size. Greatly increased Starfighter fuel tank sizes.
+- Starfighter Weapon Balance Polish Pass
+Increased rate of fire of Ballistic Gatlings and reduced damage per hit while reducing the fixed assist. Greatly increased the damage of the Ares Ion laser cannon while greatly reducing the fire rate and increasing capacitor usage per shot.
+- Starfighter Movement, Thruster, and death Sounds polish pass
+- Redeemer Polish Pass
+Removed weapon groups from the Redeemer so that remote turret can be controlled with left mouse button. Updated control panels in AEGS Redeemer Habitation room. Added locked text to locked panels. Audio Polish pass.
+## Bug Fixes
+- Fixed an issue causing ships on landing pads ending up in an "unknown state" for location
+- Fixed multiple issues causing players to be unable to loot the belongings from the personal inventory of a downed player
+- Fixed an issue causing the New Babbage commons garage to be blocked by a tree
+- Redeemer Turrets should no longer pitch more than intended which caused wild behavior
+- Killing a security guard with the intro Infiltrate / Defend should now correctly fail the mission
+- Orison AI Guards should now engage players with an active Crime Stat
+- Fixed an issue causing Illegal Monitor Missions to spawn on planet security posts
+- Textures on the outside of the Grim HEX hospital should no longer appear corrupted
+- Fixed an issue causing it to be very difficult to fit a medical gurney through the hospital airlock at Grim HEX
+## Technical
+- Fixed 1 Client Crashes
+- Fixed 1 Server Crash

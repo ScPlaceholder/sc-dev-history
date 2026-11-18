@@ -1,0 +1,63 @@
+## Star Citizen Alpha Patch 4.2 PTU
+Alpha Patch 4.2 has been released to All Backers!  Patch should now show: VERSION 4.2.0-PTU.9828054.
+- Audience: All backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Storm Breaker All Phases
+- Apex Valakkar
+- Dynamic Rain
+- Radiation
+- VOLT Laser "Prism" Shotgun
+- ARGO ATLS IKTI and IKTI GEO
+- New Wikelo Ship Additions
+- New Hairstyles
+- Sterling Exploration Suit
+## Known Issues
+Friend requests have been re-enabled in tonight's PTU build
+- PU - Stanton - Locations - Klescher Rehabilitation Facility - Mining / Inventory - Players are unable to store mined Ore into their inventory properly and Ore will be dropped to the ground after attempting to be stored
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+- PU - Ship Battles - Ace Pilot/Assault - Proximity Tracker - Action Area - Logic fails to continue when over 20km away from the tracked object or Action Area Origin
+- Graphics - UI - Shadows not casting in 3d Comms Call RTT window
+## Features & Gameplay
+Gameplay
+- Tritium Trade Base Price Increase
+Storm Breaker Polish
+Unconscious Actors will no longer be detected by Loadout Scanners. Further Pylon Sequence VFX and Lighting Updates. Facility Art and Collision Polish Pass. Removed shuttle doors and used air shield entrances. Adapted entrance dock to adjust for new setup. Added Cover Structures between Infirmary Buildings and Main Facility. More aggressive cleanup of dead Valakkar. reduce the number of the AI reinforcement in the data lab (Interior). Added Kopion around pillar. Updating Autospawn settings for DataLab. Unifying Min/Max spawns to remove randomness in number of NPCs spawning throughout facility. Adjusting storm distortion volumes to fix the natural QT spline approaches from causing distortion.
+Apex Valakkar Balance and Polish Pass
+Added animation events to new submerge and emerge animations. "Roar" and Weakpoint VFX and Audio Polish. Apex Hazard area polish / weakspot impact effect polish / slam polish. Adding some polish to the sweeping projectile attack. Valk Pearls - Updating Master Records, and Added Ability to Store Valakkar Pearls. Updated Cargo Grid Volumes for Valakkar Fangs.
+Locations
+- Added Bigger Cloud Formations to Pyro IV
+Ships and Vehicles
+- Greatly Improved Torpedo Tracking Capabilities
+- Increased Idris alpha damage to meet S7 damage weapon standards 2306 to 6750
+- Moderate Prowler health, damage reduction, and Critical Damage Threshold Increases
+- ATLS IKTI: Visor Reflection Polish. Updated IKTI Category and made Weapon able to be Tractor Beamed off.
+Core Tech
+- Server Performance Optimizations
+- Refactored of how we handle cleanup/lifetime of entities spawned by mission location modules to allow better handling after DGS crash recovery
+## Bug Fixes
+- Fixed an issue causing clouds and storms to be missing from the PU
+- Potential Fix: PU - Storm Breaker - Creatures / Mission Content - Apex Valakkar projectile attack does not cause any damage to player
+- Potential Fix: PU - Wikelo Mods - Missions / UI - Collection - Wikelo ATLS Missions are missing information in the contracts (STARC-170248)
+- Potential Fix: ARGO ATLS GEO IKTI - PU - Mounts / Vehicles / Weapons - Med pen rack on ARGO IKTI will not deploy
+- Potential Fix: ARGO_ATLS - PU - Vehicles / Mounts / UI / ASOP / Fleet Manager - ARGO ATLS IKTI Geo and ARGO ATLS IKTI have placeholder text
+- Potential Fix: AEGIS Idris-P - PU - Vehicles / Ship Weapons - Turrets - The Idris-P has Idris-M's Size 7 bow turrets (STARC-170625)
+- Potential Fix: PU - Pyro - Storm Breaker - Locations / Audio - Rain SFX can be heard inside research labs
+- Potential Fix: PU - Storm Breaker - Locations / Design / Interactions - Players can become locked in the egg room at the Lazarus Complex when interacting with the egg chamber (STARC-169572)
+- Potential Fix: PU - Pyro - Radiation / UI - Radiation widget is shown as 999/999 when the player comes into contact with any amount of radiation
+- Potential Fix: PU - Storm Breaker - Lazarus Complex / Farro Data Center - Locations / Collision - Actors can clip through the floor at Entrance 04 (STARC-170025)
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 1 Server Crash
+- Fixed 1 Deadlock

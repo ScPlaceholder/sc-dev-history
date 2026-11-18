@@ -1,0 +1,61 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to PTU, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9277884.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 1
+Server Info: PTU Channel - US/EU
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+Playtest This Weekend Saturday/Sunday
+- Blockade Runner Global Event
+## Known Issues
+- PU - Stanton - Orison - Locations / Shopping - Physical Shopping - Quick buying items on display at the Orison Vision Center ends in transaction error about invalid Player Inventory
+- PU - Missions / UI / Reputation - Affinity appears to decrease after successful mission (UI Issue and reputation is still increasing) - 100% Repro
+- PU - UI - Kiosks / Terminals - Global Chat - Pressing Enter when interacting with any terminal opens the Global Chat causing player to lose game interaction - 100% Repro
+- PU - Stanton - GrimHEX - Locations - Transit - Hangar Elevators - Hangar Instance elevators can be called and arrive at the current floor but the doors do not open - 100% Repro
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (High Chance)
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+## Features & Gameplay
+Gameplay
+- Updated Rank on certain Hauling Missions to improve progression
+Ships and Vehicles
+- Updated Aurora series cargo physics proxies to help manual loading of cargo
+## Bug Fixes
+- Fixed - PU - Stanton - ATC/Hangars - ATC gateway queue appears to get slowed down and causes hangars to not open with higher traffic (STARC-120837)
+- Fixed - PU - Transit/Elevators - Elevators are present but panel buttons stop functioning (STARC-121322)
+- Fixed - PU - Freight Manager - Hauling Missions - UI / Locations / Missions - Extra Mission Cargo icons show in the Freight Manager Kiosk (STARC-119867)
+- Fixed - PU - Network / Actor / Locations - Local area is temporarily missing atmosphere after Server Recovery causing the player to take varied amounts of damage (STARC-104335)
+- Fixed - PU - Stanton - Personal Hangar - Freight Elevator / Cargo / Kiosk - Players will receive "Internal Error" prompt when attempting to transfer items/cargo to warehouse from the freight elevator (BUG-177957)
+- Fixed - PU - New Babbage - Personal Hanger - ASOP/Vehicles - After retrieving a ground vehicle via ASOP all ASOPs will send ground vehicle to garage and breaks hangar if location isn't the player's Primary Residency (BUG-183149)
+- Fixed - PU - Locations - Personal Hangars - Unable to retrieve any ships at the location after retrieving a previously impounded ship, exiting to menu during retrieval or storing process, or taking elevator to spaceport during retrieval (STARC-93687)
+- Fixed - PU - UI - Inventory - Item Previews in the Inventory Interface are larger than intended (STARC-104826)
+- Fixed - PU - Openable Cargo - Stor-All Containers can be placed from Storage Access kiosks (STARC-118516)
+- Fixed - PU - Personal Hangar - Leaving to Menu with a ship on pad does not stow personal hangar for next shard joined (STARC-120885)
+- Fixed - PU - Locations - ATC - ARC-L5 ATC attempts to assign players a non-instanced, numbered hangar in the old way of assigning hangars (STARC-121020)
+- Fixed - MISC Starfarer Series - ( ALL VARIANTS ) - PU - Vehicles / Balance / Flight - The Starfarer series tuning resembles heavy fighter archetypes instead of a heavy industrial ship (STARC-119251)
+- Fixed - PU - Lorville - Locations - Lorville Perimeter Gates 01 - 06 have misaligned fans (STARC-110971)
+- Fixed - PU - Commodity Kiosk - Autoloading costs are incorrectly calculated at Loreville to be higher than intended
+- Fixed - GLOBAL - Turrets - Manned - AI / Vehicles - AI Manned Vehicle Turrets do not fire
+- Fixed - PU - Hurston - Lorville - Central Business District - Transit / Collision / Locations - All transit station doors at the Central Business District are missing collision and geometry
+- Fixed - Origin Jumpworks 135c - PU - Vehicles/Cargo - 1SCU boxes are extremely difficult to get into the cargo hold if at all
+- Possible Fix - PU - Stanton - Area18 - Locations / Personal Hangar - Crash recovery - Ships / Vehicles / Impound - After a server crash recovery the ship will get impounded, and the actor will teleport under the city of Area18
+## Technical
+- Fixed 2 Server Crashes

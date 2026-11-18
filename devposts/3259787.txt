@@ -1,0 +1,2 @@
+The guns being stuck when you leave control of them is a known issue, it happens on certain remote turrets as well. I'll create a ticket that they should return to their default position once they are let go off. But that is far less important than the previous AG bug.
+As for the difference in the tracking velocity ... each gimbal is independently moving towards the target and the velocity is actually dependent of the angular offset (it slows down before it reaches the target). That would explain why one turrets seems slower than the other. We'll keep an eye on that one.

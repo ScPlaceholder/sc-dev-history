@@ -1,0 +1,67 @@
+## Star Citizen Patch 3.18.2
+Alpha Patch 3.18.2-LIVE.8440578 has been released and is now available on the LIVE environment!
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Database Reset: Yes
+Long Term Persistence: Partially Disabled (aUEC, Merits, REC, and Reputation will be preserved)
+Starting aUEC: 200,000
+Known Issues
+- Shopping - Area 18 - All shops missing sales inventory for players who purchase a Kruger Merlin from Astro Armada
+- Game clients may close without error or crash handler
+- ASOP Terminals are unusable and fade to black when accessed
+- Equipping more than 5 components in a single "Save Changes and Equip" VMA transaction will fail
+- XenoThreat 1.1 / Jumptown - Players cannot sell all quantity of zeta-prolanide or maze from their ship for dynamic events (Selling smaller quantities at a time should work)
+- Ships can explode from collision with invisible asteroids
+- The Trams are out of sync with the station timers, causing trams to overlap or not appear on time
+- Elevators and Trams are "Jittery" during transit of Player Character
+- When flying near another ship, ship seems to hit an invisible box that kicks it in random directions
+- Cargo may be invisible in multiple ships after being purchased
+- When attempting to start a refinery job, players receive the following error ; Something went wrong (Error code: 20)
+- Security Contractor Evaluation is not re-offered upon failure
+- Combat Service Beacon Progress / Rating inconsistent on missions
+- Security Work Assesment Remaining Hostile NPCs Not Spawning In
+- PTV wheels at the Orison BTR area can clip into geometry and become detached from vehicle
+- The snub fighter attached to Constellations lacks interaction prompts to enter it, making it unusable
+- Some ship wreckage erroneously give "No Material" text and do not let you salvage
+- Markers Will Randomly Disappear After Quantum Travel With No Route Set
+## Feature Updates
+Core Tech
+- Density Manager Optimizations
+Updated Density Manager values to be more aggressive for removing unneeded entities in the PU to improve server/client performance.
+- Made further entitlement processing improvements
+- Updated Login Queue Time Display
+## Bug Fixes
+- Fixed multiple areas of the prison escape route where players could not vault out of
+- Ships should no longer sometimes be claimed at another location other than the terminal it's being claimed on
+- AI victim names should now display correctly in the "Crime Committed Against" name field
+- 2 Extra Odyssey II Alpha Undersuits should no longer appear in players inventories
+- Movement of the players head should now be smooth with TrackIR
+- Fixed frequent pockets of extremely low client FPS performance in LZs and ships
+- Fixed trees spawning inside rivers
+- New Deal and Vantage rental kiosks should no longer be missing
+- "Fugitive Recovery" missions should no longer result in a crimestat for the bounty hunter
+- Additional FPS AI, that don't count for the mission, should no longer spawn in during Eliminate All / Caterpillar Crashsites missions
+- Spawning ships will no longer cause the requested ship to spawn outside of the hangars
+- Reclaimer main on-elevator control panels should now fully respond to input
+- Salvage lasers should now fully provide RMC when scraping a hull hull
+- Entering or exiting the seat in the Vulture should no longer cause Salvage beams to become desynced from their displayed settings
+- The Anteres QED should no longer have low health and is easily knocked out once shields are down
+- Players in a given instance should no longer experience a response latency of up to dozens of seconds for interactions
+- Fixed Lootable Container Slots containing no loot when they are streamed out and back in at SPK
+- Melting/Upgrading a ship while the player is bed logged in that ship should no longer put the player in a bad state. Error 30018 cant login
+- Fixed the "Visit Orison" Commercial freezing and locking up clients
+- Loot boxes should no longer become unavalable to other players when a user crashes whilst interacting with it
+- Fixed Zeta-Prolanide Salvage Claims not spawning all the cargo boxes for players to retrieve
+- Combat Assistance Mission should now correctly progress after enemy ship has been destroyed
+- Fixed an issue causing players to be unable to scan mining deposits
+- New Deal and Vantage Rental Kiosks should no longer be missing in Lorville
+- Fixed non-owner players being able to "Log Out" in the prisoner seat of the Hawk causing it to not retrieve correctly after an insurance claim
+- Fixed the Spawn Rates of Salvagable entities are duplicating and substantially higher than intended
+- Players should no longer be injured or bleed out if the cockpit seat animations are clipped
+- Rented Ships will no longer disappear from ASOP when claimed
+- Fixed the Failed Negotiations Disable Gravity Prompt being unresponsive
+- Delivery missions should no longer show Objective withdrawn upon reaching mission location
+- Players should now correctly be able to save changes to their ship loadouts
+## Technical
+- Fixed 10 Client Crashes
+- Fixed 9 Server Crashes
+- Fixed a Server Deadlock
