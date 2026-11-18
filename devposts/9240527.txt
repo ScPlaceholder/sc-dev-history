@@ -1,0 +1,50 @@
+Alpha Patch 5.0 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 5.0.0-PTU.13215521
+- Audience: Wave 1 testers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Genesis (Planet Tech V5)
+- Nyx 1
+- Starchitect Points of Interest
+- Mission Boards and Local Missions
+- Intraplanetary Server Meshing
+- Time To Kill (TTK) Ship Balance
+- Missile Lock Interface Update
+## Feature Updates
+Reputation and Contracts
+Reputation and reward setup is now complete across the remaining guilds operating on Nyx I. The notice board artwork and tooltip layout have been finalized alongside this.
+- Potential Fix: Some Interstellar Transport Guild contracts being impossible to find on any mission board despite existing in the world
+- Potential Fix: Notice board courier contracts and their follow-ups failing to generate because a mission item was missing
+- Potential Fix: Resource gathering contracts completing without awarding their rewards
+Starchitect Locations
+The main focus this build has been traversal. Ledge markup now covers the remaining tile types across depot, campsite, habitation, logistics and surveillance, so climbing routes should behave consistently wherever you find them, and a broad pass has gone through props, chairs and AI placement to remove the spots where players were getting stuck. New lighting flares around locations have been introduced and surveillance towers now respond to their own power state, with their lighting tied to whether the tower is running. Those towers can also be brought back online as contract objectives.
+Elsewhere, guild halls have had signage, branding, and navigation passes with new signage materials, minimap location labels have been added, set dressing continues through habitation interiors and lobbies and with updated  navigation meshes so AI can path around it.
+- Potential Fix: A section of terrain at one location where players would clip through the surface of the planet (STARC-223636)
+- Potential Fix: An office chair in a guild hall that players were unable to stand up from, and another that threw players through a wall when they left it
+- Potential Fix: A railing clipping through the left side of the guild hall steps
+- Potential Fix: Abandoned ships accumulating at locations across Nyx I, which were receiving little to no cleanup
+Genesis and Nyx I
+Biome transitions and species dominance have been re-tuned across the planet, changing how foliage shifts and which plants hold ground in each region. Rain ripple strength has been reduced on wet surfaces, which had been reading too strongly, and there is further work on water and wetting visuals generally. Terrain rendering has also been optimized, including skipping tessellation entirely on distant terrain.
+One notable change for anyone flying the system: the Nyx I Lagrange point has been moved. The old position left the planet poorly lit from Delta Station with the sun directly overhead, so it now sits where the planet reads better from the station.
+- Potential Fix: Lighting missing from the extractor
+Tactical Strike Groups
+The temporary fix applied to Tactical Strike Group interactions has been replaced with a full implementation. The Assist Ship In Combat contract has been temporarily disabled, as recent combat balance changes left it unwinnable rather than merely difficult; it will return once the balance settles.
+- Potential Fix: Tactical Strike Group interaction reset (STARC-215762)
+Server Meshing
+The territory configuration format has been updated with a robustness pass over how territory boxes and grids are loaded. The replication layer now batches entity removal commands rather than issuing them individually, splitting the batch above a configurable limit.
+## Bug Fixes & Technical
+- Potential Fix: Remote turret self status MFD not displaying (STARC-94177)
+- Potential Fix: Squashed buttons on the Mirai Guardian configuration MFD
+- Potential Fix: The Xanthule flight suit and its variants incorrectly describing backpack compatibility (STARC-224277)
+Crash Fixes
+A substantial server stability pass has been done for today's build. Three of these were causing dedicated game server crashes or memory exhaustion, including a leak where physics fences were never released when an entity was deleted, which grew for the lifetime of every server.
+- Potential Fix: Server crash when building collision proxies across multiple threads
+- Potential Fix: Client and server crash from cross-entity writes during parallel area processing
+- Potential Fix: Server memory exhaustion from physics fences never being released on entity deletion
+- Potential Fix: Server crash retrieving a physics controller
+- Potential Fix: Client crash in the user interface when attaching to a freed node
+- Potential Fix: Client crash during texture defragmentation
+- Potential Fix: Client buffer overrun crash (STARC-194468)
+- Potential Fix: Fatal error caused by scaling on rear landing gear
+- Additional diagnostics added to Vulkan crash reports covering shader cache state and processor details
