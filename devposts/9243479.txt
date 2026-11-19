@@ -1,0 +1,56 @@
+Alpha Patch 5.0 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 5.0.0-PTU.13228337
+- Audience: Wave 3 testers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Genesis (Planet Tech V5)
+- Nyx 1
+- Starchitect Points of Interest
+- Mission Boards and Local Missions
+- Intraplanetary Server Meshing
+- Time To Kill (TTK) Vehicle Balance
+- Missile Lock Interface Update
+## Feature Updates
+Contracts and Mission Boards
+Contract scope now has a full visual language in the interface. Each contract carries an icon and color indicating whether it is local, planetary, system-wide or universal, so you can tell at a glance how far a job will take you before you accept it. Hauling objectives have also been improved, with markers now pointing at the nearest valid freight elevator kiosk once you arrive at a pickup or drop-off rather than leaving you to find it yourself. Resource gathering quantities on notice boards have been rebalanced alongside this.
+- Potential Fix: Notice board contracts failing to generate
+- Potential Fix: Objective display on multi-to-single courier contracts
+- Potential Fix: Contract generation failing when searching for locations across multiple shards (STARC-224367)
+- Potential Fix: Data retrieval, download and sabotage contracts using incorrect location tags
+- Potential Fix: Refuelling contracts not completing after the location streamed back in
+Starmap
+The track button now works both ways. Pressing it on a contract that is already tracked will untrack it, rather than doing nothing.
+Starchitect Locations
+Traversal and navigation work continues, with ledge markup now extended across guild halls and every landing pad size, and unnecessary climbing points removed from cluttered desks and similar surfaces where they were never intended. Navigation passes have gone through the compound tiles, and the spawn closet doors in maintenance buildings no longer trap AI trying to get through them.
+A new lighting flare library has been rolled out across exterior tiles this build, covering watchtowers, extraction sets, command buildings and logistics exteriors. Compound and habitation interiors have had further lighting and dressing passes.
+- Potential Fix: Missing collision on several common pipe sets
+- Potential Fix: Bars over roof glass that players could snag on
+- Potential Fix: Salvage vents not presenting their salvageable material
+- Potential Fix: Oversized landing particle effects beneath some ships
+- Potential Fix: NPCs spawning beneath the terrain at Nyx Social Station
+Genesis and Nyx I
+Reeds have been added to Nyx I with updated distribution settings, and scattered rocks now use their proper biome accumulation group, so snow and surface material build up on them as they do on the terrain around them. Rain and lightning have both had further polish passes, and cloud coverage settings have been adjusted to address atmospheric lighting reading too dark under overcast conditions.
+- Water areas are now mirrored correctly into surrogate physics grids and kept in sync as those areas change
+- Potential Fix: Vertex shimmer and fizzling on scattered instances
+- Potential Fix: Temporal anti-aliasing incorrectly handling fast-moving detail
+Audio
+Ships can now be heard taking off and landing from outside the vehicle, with the audio varying by hull size across small, medium, large and capital classes. This sits alongside the existing pass-by and movement audio, so a ship departing a pad near you should now read as an event rather than passing in silence. Audio propagation has also been reworked for ships heard from inside buildings, and faction announcements now play across compound tannoy systems.
+## Bug Fixes & Technical
+- Potential Fix: The Hammerhead failing to spawn on wave 8 of Pirate Swarm, making the mode impossible to complete
+- Potential Fix: The extra life awarded after clearing wave 4 of Pirate Swarm not letting players who had already used all their lives respawn
+- Potential Fix: Ground AI targeting a ship causing the radar lock indicator on the annunciator panel to light up, which now only responds to vehicles and turrets
+- Potential Fix: The Mirai Guardian’s Target Status MFD overlapping its own information and cropping the edges
+- Potential Fix: Long mission names being cut off when sharing a mission with another player
+- Potential Fix: Retrieve consignment screens at underground facilities displaying offset layouts with numeric values in place of button labels
+- Potential Fix: NPCs dying at random to collision from unknown sources when attempting to use interactables
+- Potential Fix: Cockpit and interior components on several ships being incorrectly treated as non-insurable, which prevented those ships from being created correctly
+Crash Fixes
+The server stability work continues, with four dedicated game server crashes addressed this build alongside a longstanding client crash affecting both the PU and AC.
+- Potential Fix: Server crash caused by an entity being linked to the same area twice
+- Potential Fix: Server crash when naming a surrogate manager physics entity
+- Potential Fix: Server crash retrieving component parameters
+- Potential Fix: Client crash when fiber preemption occurred during a profile block flush
+- Potential Fix: Fatal error caused by z-fighting skinned landing gear LODs
+- Potential Fix: Child entities overriding their parent’s persistence record
+- Potential Fix: Mission markers disappearing at the entrance during Pyro ship heists, with objectives delayed until the player entered the base
