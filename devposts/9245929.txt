@@ -1,0 +1,47 @@
+Alpha Patch 5.0 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 5.0.0-PTU.13238477
+- Audience: Wave 3 testers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Genesis (Planet Tech V5)
+- Nyx 1
+- Starchitect Points of Interest
+- Mission Boards and Local Missions
+- Intraplanetary Server Meshing
+- Time To Kill (TTK) Vehicle Balance
+- Missile Lock Interface Update
+## Feature Updates
+Starchitect Locations
+Freight elevators have been restructured. The elevator has been moved out of the interior physics grid so its console has proper collision, and the side room has been separated into a standalone maintenance building, which also resolved players being pushed back when approaching the console. Every landing pad that previously carried the old combined elevator tile now uses the new elevator and maintenance building, with the surrounding areas resized to fit.
+Loot distribution has had a tuning pass across the board. Rifle, LMG, and SMG ammunition is now prioritized in loot boxes, shoes and jackets have been removed from the small generic container, and loose commodities are temporarily disabled until their quality can be set properly. AI now carry spare magazines in their backpack as well as their core, where they have a backpack to carry them in.
+Exterior lighting has had a polish and optimization pass across all tile types, and interior dressing continues through habitation and command buildings.
+- Potential Fix: Logistics chairs rotated the wrong way
+- Potential Fix: A ladder at an incorrect height in the logistics building, and exterior ladders on the command building
+- Potential Fix: A broken foundation on a compound corner, along with clipping cover barriers and missing proxies on compound walls, railings and skirting
+- Potential Fix: Missing ledges on the 100m and 140m landing pads and the 20m maintenance tile
+- Potential Fix: Spawn closets sitting below the mesh, now resized and placed correctly
+- Potential Fix: Turrets at certain compound locations firing when they should not
+Genesis and Nyx I
+The terrain borders have had further work, with a GPU-driven skirt now hiding the discontinuity where neighboring patches meet. Planet scatter collision has also been broadened: assets flagged to ignore wheeled vehicles now ignore all vehicles, including ships and gravlev, so you will no longer catch on small scatter in anything you are flying or driving.
+- Cloud ambient occlusion tuning on Nyx I
+- Terrain pixel shader optimization, and further water improvements
+- Potential Fix: Vehicle MFDs referencing the wrong names for the Nyx gateway stations
+## Bug Fixes & Technical
+- Potential Fix: The Zenith Sniper Rifle series becoming unusable after a manual reload, leaving players unable to fire, aim down sights or interact with anything (STARC-200248)
+- Potential Fix: The Rock Cracker dungeon’s event handling, which has been rebuilt to prevent a race condition (STARC-219137)
+- Potential Fix: Clothing racks at New Babbage and Orison rejecting items due to an outdated requirement on the item port
+- Potential Fix: Attaching a component in an offset component bay causing the normal component bay to stop working
+- Potential Fix: Only one eye of the Moraine Gang heavy armor helmet having a working flashlight, on the female variant
+- Potential Fix: Weapons spiraling out of control when tractor beamed onto an item port
+- Potential Fix: Interaction prompts on the shutter windows at Jackson’s Swap in Pyro appearing far from the shutters, and moving further away after each use
+- Potential Fix: Numbers on the prison escape and garage door keypads at Klescher appearing doubled
+- Potential Fix: Multiple art issues across the three RRS camouflage armor variants, including visor color
+Crash Fixes
+Five crashes addressed this build, four of them affecting the server.
+- Potential Fix: Server and client crash when switching a character to and from ragdoll
+- Potential Fix: Server crash caused by two areas renaming the same shared shape at once
+- Potential Fix: Server crash due to NPC bone and face simulation parameters
+- Potential Fix: Client crash when selecting an empty favorite slot in the Personal Inner Thought menu
+- Potential Fix: GPU crashes affecting both the Persistent Universe and Arena Commander (STARC-223665)
+- Potential Fix: A data error on the Klaus and Werner laser repeaters caused by an invalid character in a material name
