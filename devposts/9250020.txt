@@ -1,0 +1,70 @@
+Alpha Patch 5.0 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 5.0.0-PTU.13248297
+- Audience: Wave 3 testers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+25x Rep reward multiplier is currently active on PTU
+- Stability, Bugfixes, LTP between PTU releases
+- Genesis (Planet Tech V5)
+- Nyx 1
+- Starchitect Points of Interest
+- Mission Boards and Local Missions
+- Intraplanetary Server Meshing
+- Time To Kill (TTK) Vehicle Balance
+- Missile Lock Interface Update
+- VOIP Reliability Improvements
+## Feature Updates
+Starchitect Locations
+Two new location types have been added to Nyx I this build: extraction hubs and medium settlements, which should broaden the range of places you come across while exploring. The landing pads have had a lighting pass covering offset lights, stair and railing decals and a clipping lamp post, and surveillance towers have had their night-time lighting improved, with the rotating lights moved onto the tower itself so they track properly.
+- The Forager’s Guide has been updated for Nyx I
+- Potential Fix: Missing or broken ledges on storage, watchtower, compound and maintenance tiles
+- Potential Fix: Inverted and misaligned cover barrier collisions, railing issues, and incorrect tints across compound tiles in 80m guild halls
+- Potential Fix: Non-usable chairs and stools replaced with usable versions
+- Potential Fix: Terrain modifier settings around turrets causing noisy terrain
+Contracts
+- Remote contract locations now read as “Unoccupied Territory” rather than a blank address
+- Potential Fix: Eliminate Boss contracts failing on the Vaughn target (STARC-200990)
+- Potential Fix: Notice board courier contracts failing to generate
+- Potential Fix: Courier delivery targets being miscounted, with deliveries now distributed correctly across multiple buildings at a location
+- Potential Fix: ASD Delving deliveries not using the freight elevator
+Genesis and Nyx I
+Lightning has been substantially reworked. Strike frequency and interval are now driven by actual cloud coverage and lightning strength from the weather system rather than a fixed random rate, with coverage mapped across a grid so a fully overcast sky behaves differently from patchy cloud. Separate paths now handle lightning spawned by a shape and lightning generated around the camera, and only one strike at a time can drive the volumetric cloud lighting.
+- Creatures and harvestables now spawn in the correct zone
+- Reduced VRAM use and further terrain shader optimization
+- Water surface and caustics now render correctly at distance from the zone origin
+- Cloud and coverage lighting settings corrected
+Audio: Biomes and Weather
+Biome ambience has had a wide set of improvements this build, with a mix pass and content tweaks to bring what you hear in line with what you are looking at. Weather audio has been expanded considerably with cold winds and sandstorms added alongside improved rain content, and there is a first pass at rain occlusion so smaller buildings now offer some shelter from the sound. Rain is also now audible from inside ship interiors, so sitting out a storm on the surface should feel far less silent than before.
+- Further updates to weather audio
+- Improved rain content, with first pass rain occlusion for smaller buildings
+- Rain now audible from inside ship interiors
+- Planetary audio now fades out by altitude as you climb, rather than carrying ground ambience into the sky
+- Large interior reverb added
+- Tree ambience reworked to prevent phasing where overlapping sounds cancelled one another
+Audio: Combat and Movement
+Footsteps have had a full mix pass, and the weapon mix pass continues with more weapons brought in line each build. Explosions on Starchitect tiles have seen many improvements, with further work still to come.
+Audio: Starchitect
+Ambience and interaction design across the Starchitect tiles has had significant work this build, along with a mix pass. Guild halls now have ambient computer and lighting audio, and powerable surveillance towers and satellites give proper audio feedback as they come online.
+Voice Chat
+VOIP has had substantial reliability and networking work on the service side this cycle, aimed at how consistently voice connects and holds up during play.
+Alongside that, two long-standing voice problems have been addressed. Releasing push to talk no longer cuts off your final words, since the game now waits briefly before muting rather than discarding audio still arriving from your microphone. Separately, hearing a party member’s speech repeat itself seconds or even minutes later has been fixed; the game was holding an unplayed second copy of nearby party speech and playing that back when you moved far enough away to switch channels.
+Audio Known Issues
+Audio may stutter, crackle or pop during play. Vegetation interaction sounds are still being worked on, hangars are currently missing their ambience, and the mix at the Nyx stations needs further work.
+Beach and swamp biome ambience still has issues to be tweaked and fixed. Some of the new Nyx biomes report the wrong surface underfoot, so grass may sound like gravel, rock or sand. A number of weapons have yet to go through the mix pass. And when several mining lasers are operating close together, the combined audio becomes extremely loud.
+Virtual Reality
+The Personal Inner Thought, Personal Inner Space, and quick access wheels now render as 3D objects, with selection by head or eye gaze, plus new options for wheel placement and scale
+AR marker limits raised in VR so distant markers no longer disappear early due to the wider field of view
+## Bug Fixes & Technical
+- As a temporary fix we have disabled the Ursa Medivac alarm sound that was causing endless loops
+- Potential Fix: Missiles doing no damage to ships with interiors, with hull hits now resolving in the correct zone (STARC-204924)
+- Potential Fix: Ships failing to stow when the player left the landing area while the ship was on the pad of an instanced hangar (STARC-222180)
+- Potential Fix: Thruster audio looping indefinitely when a ship switched between player and non-player audio models
+- Potential Fix: Players and NPCs falling through the floor when walking slowly out of a guild hall interior
+- Potential Fix: Pirate Swarm wave 10 never completing when the player chose the Idris-M
+- Potential Fix: Missing room system in the Lorville CBD stairwell
+- Potential Fix: Accept and decline prompts displaying as a percentage meter rather than showing their options
+Crash Fixes
+- Potential Fix: A series of GPU crashes affecting both the Persistent Universe and Arena Commander, covering the planet texture bake, fog shader, and fallback textures (STARC-223665)
+- Potential Fix: Client hang while planet assets were loading
+- Potential Fix: Server deadlock between the component scheduler and entity hierarchy locks
+- Potential Fix: Fatal error caused by the Drake Cutter’s rear landing gear
