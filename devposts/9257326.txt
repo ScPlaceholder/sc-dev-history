@@ -1,0 +1,57 @@
+Alpha Patch 5.0 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 5.0.0-PTU.13260598
+- Audience: Wave 3 testers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+25x Rep reward multiplier is currently active on PTU
+- Stability, Bugfixes, LTP between PTU releases
+- Genesis (Planet Tech V5)
+- Nyx 1
+- Starchitect Points of Interest
+- Mission Boards and Local Missions
+- Intraplanetary Server Meshing
+- Time To Kill (TTK) Vehicle Balance
+- Missile Lock Interface Update
+- VOIP Reliability Improvements
+## Feature Updates
+Ship Armor
+Armour values across all ships have been brought in line with the recent balancing changes, and armor is now displayed on the engineering MFD so you can see its condition alongside your other systems.
+Starchitect Locations
+Exterior lighting across the storage and habitation sets has had a polish and optimization pass, with an interior fog pass underway across the storage interiors. Freight elevator and depot lighting have also been corrected.
+- Potential Fix: Chairs in the 60m logistics building being static props rather than usable seats, with a chair behind the administrator's desk that players could not stand up from removed entirely
+- Potential Fix: Floating items on the tiles at Jaquez Storage
+- Potential Fix: Silos behind a storage tile clipping through the railings
+- Potential Fix: Wall corner colliders not matching their geometry on the 100m compound tiles
+- Potential Fix: A plasma canister spawning on an item port that caused it to clip into nearby objects
+- Potential Fix: Exposed pipe ends, now terminated into the floor
+Contracts
+- Potential Fix: Very Hard and Super difficulty Bounty Hunter contracts not appearing in the mobiGlas or on mission boards
+- Potential Fix: Mission boxes displaying as "PLACEHOLDER" instead of their proper name
+- Potential Fix: The Hockrow download contract displaying incorrect text
+- Potential Fix: A pirate ship spawning as an 890 Jump, now restricted from both ship combat contracts and medium difficulty work
+- Potential Fix: Primary target ships and their escorts spawning far apart, leaving the target undefended
+- Potential Fix: Defend Ship attackers spawning too far from the ship to engage it
+Starmap
+Objective markers were previously ordered at random, so zooming out far enough for markers to merge together could leave an untracked objective drawn over the one you were following. The marker you are tracking is now always drawn on top.
+Genesis and Nyx I
+Wet terrain shading has been reworked, and puddles no longer form on bare bedrock where they looked wrong. Rain reflections now rotate into the correct frame, so what you see mirrored in a wet surface matches the horizon rather than sitting at an arbitrary angle.
+- Further VRAM reductions, with ground albedo detail now loaded only near the camera
+- GPU instance culling now supports indirect level of detail
+- Potential Fix: Puddles not rendering correctly across parts of Nyx I
+Audio
+- Potential Fix: The biosign terminal button in some Starchitect locations is sounding too physical, now reworked to read as digital SFX
+- Guild hall computer and lighting audio completed, with compound faction announcement work continuing
+## Bug Fixes & Technical
+- Potential Fix: PvP bounties sometimes persisting after hacking Security Post Kareah to clear them (STARC-214658)
+- Potential Fix: Jump point gateway stations showing no navigation marker when setting a route to them (STARC-223628)
+- Potential Fix: A placeholder sphere visible behind the receptionist's desk at Empire Health Services in Area18
+- Potential Fix: A data error from mission bins being physicalized as static objects despite being animated, which carried a severe performance cost
+- Potential Fix: The Arclight pistol spawning with an empty magazine for new characters, forcing a reload before the first shot
+- Potential Fix: A red tint across the signage at Levski
+- Potential Fix: Vehicle weapons clipping through their display stands at Cousin Crow's in Orison
+Crash Fixes
+- Potential Fix: Client freezing for long enough to trigger the watchdog while planet textures loaded
+- Potential Fix: Client crash when rendering brush groups, caused by them being mistaken for asteroids
+- Potential Fix: Client crash in the interface when a canvas was torn down while still being interacted with
+- Potential Fix: Client crash when moving the cursor over inventory items
+- Potential Fix: Further GPU crash fixes covering particle textures (STARC-223665)
