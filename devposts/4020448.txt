@@ -1,0 +1,2 @@
+I'm afraid those kinds of extensions are neither in the works or planned.
+Specifically for head tracking we suppress any kind of mouse induced look control ... that happens for the reason that is it impossible to tell where a "center" is when you both the mouse and the headtracking adding their offsets to each other. That's why we set on the rule that only one device at a time can supply the look inputs. We had both before active before 3.12 and it was very confusing in certain places.

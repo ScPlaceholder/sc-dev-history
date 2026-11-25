@@ -1,0 +1,65 @@
+## Star Citizen Patch 3.17.0q
+Alpha Patch 3.17.0q has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.17.0-PTU.8035045.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Current Audience: All Waves
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+3.17 contains new streaming changes that we are testing on the PTU and players may experience infinite loading or very long load times along with possible missing assets in game such as elevators or ships not streaming in. We are updating and fixing these issues as we find them and each new build will hopefully address these more and more.
+- Ship Positional Desync Test
+In 3.17.0 we have put in a networking update that should reduce ship to ship desync. We would like to know how well this update works and if there are any observable knock-ons. Relative to 3.16, you should feel as though the facing direction and position of other player ships are much more accurate and real time. We have created a feedback thread in spectrum so please let us know about any potential issues with this that could include ship jittering, rubberbanding, jittering, and other effects of that nature.
+Due to recent improvements on desync we have uncovered hitreg bugs which we likely cannot resolve for 3.17. In the direction of the velocity vector the collision shape of a ship will be slightly in front of visual model (the exact offset is velocity dependent). There is currently no work-around so avoid hovering inside the velocity vector of another ship and lead your shots a bit more during combat.
+- MISC Hull-A
+- Lorville Hospital and Space Station Clinic Variations
+- River
+- Coffee Shop Vendor
+- Ship-to-Ship Refueling
+- Mining Gadgets
+- Shopping and Selling T0
+- Ship and Ship Components Inventory Updates
+- Player Injury Updates
+- DNA Head Texture Updates
+Known Issues
+- Mineable rocks are sometimes spawning inside other rocks (Should hopefully be fixed by the next build release)
+- Kiosks will inconsistently show rows of blank entries with no picture, price, or information
+- Custom mobiGlas Casings breaks the mobiGlas functionality
+- Turret acceleration changes have been reverted to pre-3.17.0 while we work on rebalancing and will be coming back in a future release
+- The Player is unable to Place the Mining Gadget on a minable rock
+- Players cannot buy components directly into ship storage (will be coming later in the PTU cycle)
+- AR Markers are present when opening the mobiGlas which can make it hard to read
+- Ships can explode after players exit them
+- Many mineable asteroids can’t be scanned
+- While docked to a Starfarer the Valkyrie will continuously tilt instead of remaining stationary
+- The Refinery Yield Bonuses are incredibly high
+- Players with positive health can enter a state similar to being downed without the incapacitated UI or VFX
+## Feature Updates
+Locations
+- Performance Pass on Lorville Hospital
+Gameplay
+- Reduced hunger/thirst decay rates
+- Torpedo Balance Pass
+Adjusted all S5 through S9 torpedos to have a longer life span and more fuel.
+Ships and Vehicles
+- Added A2 Starlifter, Starfighter Ion, and Starfighter Inferno to ship shops in the PU (Temporary location of Astro Armada for 3.17.0)
+## Bug Fixes
+- Fixed an issue causing AI Ships to Desync during PvE combat
+- Fixed an issue that was causing abnormally low framerates around Port Tressler
+- The Roc Extraction Laser should no longer pick up more Shards than it can Collect at once, causing them to collide and be thrown
+- It should no longer be possible for players to spawn in a Landing Zone without the Armistice Zone applying to them
+- Fixed an issue causing the Carrack's elevators to not function
+- Fixed an issue causing the 890j elevators to not function
+- Fixed an issue causing a player to be unable to remove their helmet via PIT Wheel while inside a ship interior
+- Equipment in inventory should now equip properly to character and not bounce back into inventory
+- Multiple ships should no longer be missing their paint tab while using the VMA
+- Fixed an issue that was causing players to get infinite black screens when respawning after death
+- Players should now be able to interact with the multi-tool mining attachment after dropping it
+- Sabre and Raven should now correctly have atmosphere in the cockpit
+- Hull-A should no longer appear to have more shield faces than intended
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 7 Server Crashes
+- Fixed 3 Server Deadlocks

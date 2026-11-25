@@ -1,0 +1,31 @@
+## Star Citizen Patch 3.21.1
+Alpha Patch 3.21.1 has been released to the LIVE, and is now available to test!   Patch should now show: VERSION 3.21.1-LIVE.8892745.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE. The Shader folders can be found here %localappdata%\Star Citizen.
+Short Term Database Reset: Yes
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+Known Issues
+- PU - Stanton - AI / Mission Content - UGF AI Can Sometimes fall through the stairs / floor
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- PU  - Tractor Beam / Physics - When multiple players interact with the same cargo container using a Tractor Beam, those players' tractor beams may no longer work correctly on that container
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout and equipped items after dying in the armistice zone
+- SRV Tow UI shows invalid or no target despite meeting the criteria for a valid target prior to attempting to tow a ship in QT
+- Multivehicle - ASOP Retrieval - Various vehicles spawn with wings/engines/landing gear in their "in-flight" state instead of their "landed" state when retrieved from ASOP
+- Multivehicle - PU - Vehicles / Usables - Exiting bench seats ignores collision
+- AC / SM - Menus - Ship / Equipment Rental - Renting a ship / Equipment for 3 days display incorrect rental times
+- AC - Single Weapon Elimination - Weapon / FPS - Player who has takedown performed on them has their gun despawned
+- PU - Stanton - Halo - Desync / EVA / Vehicle / Ships - Players can desync when transitioning to or from EVA from one ship to another ship
+- PU - Missions / Reputation - Data Heist - The hard missions are not appearing despite meeting the requirements
+- PU - Stanton - Location - Seraphim - ASOP / Fleet Manager - The ASOP terminal loading screen will not end
+- PU - Shopping Kiosk - "Invalid Sell Price" error occurs while selling specific items
+- PU - Stanton - New Babbage - NPE - Locations/Design - The player will be stuck in their hab's bed if they restart the tutorial by quitting to main menu whilst dead, blocking flow
+## New Features
+Gameplay
+- System - Security - Ship Trespass
+The interior of players' ships are now considered trespass zones for those without permission to enter. Permission will granted via the party system until more complex systems for managing crew and passengers is created. Players trespassing aboard a ship will see a Trespass Warning and can be attacked by the owner of the ship and any player in their party without fear of committing a crime. This timer has a brief period after they exit the ship to where hostile actions against the trespasser are warranted. If the player is allowed access to a ship due to the owner being a hostile, then the hostile’s hostility timer runs out whilst still aboard, they retain the right to remain aboard until they leave. Should they attack former hostile they would be able to receive crimes and be lawfully attacked in self defense. Should former hostile attack them, they would be able to press charges and be lawfully act in self defense. This update also removes the warning that all players see in a ship when a new person joins, making it much more difficult to tell when your ship has been boarded and by whom until visual confirmation has been made.
+- Mission - Defend - Data Heist
+Implementing unlawful missions that task the player with infiltrating locations defended by hostile NPCs to hack terminals. Players with the mission will be sent to a location to help recover/steal data from servers at the location. They will need to access the main-terminal via hacking or Technicians ID chip (found at the location) and give access via interaction screen to their mission handler who will initiate the download. During the download they will defend the terminal and servers, the latter of which can be destroyed or overheated. Once enough data has been uploaded they will be able to leave the area completing the mission. They will fail if too many servers have been destroyed or not enough data has been uploaded.
+Ships and Vehicles
+- Added New Ship: ARGO SRV
+- Added New Ship: Crusader C1 Spirit
+- Added New Vehicle: Tumbril Storm

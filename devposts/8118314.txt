@@ -1,0 +1,4 @@
+I can’t really advise on specific crashes on Vulkan in SC right now because they’re mostly reported as general “GPU/driver crashes” with no clear cause until further investigation. The code you are running is over a year old and we’ve changed so much in the main branch in that time, including many such GPU crash fixes, but also the addition of various GPU error reporting systems.
+So I’d hope these issue will be resolved, and we’re not aware of any issues with specific hardware with our internal testing, but thats a tiny sample size vs the public. So if we do find such an issue there would likely be a point patch to resolve it, with DX11 still being available.
+Regarding visual issues with DLSS4, there is very little control a developer has over this. We provide basic information about the scene (colour, depth, motion) but DLSS has no specific game-provided knowledge about fog or transparency, so there’s generally nothing we can do.
+Ali B

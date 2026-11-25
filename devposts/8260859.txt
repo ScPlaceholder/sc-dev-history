@@ -1,0 +1,55 @@
+## Star Citizen Alpha Patch 4.3.1
+Alpha Patch 4.3.1 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.3.1-PTU.10244489.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing Focus
+- Stability & Bugfixes
+- Onyx Facilities Part 3
+- MedGel - Medical Respawn Resource
+- Dropships & Watch Towers
+- VOLT LMG "Fresnel"
+- Ship Armor and Ballistic Damage changes
+## Known Issues
+The issues below are meant to help give a better indication on things that may happen during gameplay and do not always occur 100% of the time.
+- PU - Stanton - ASD - Location / Respawn Screen - Player will be rescued and respawn back at the facility after being incapacitated
+- PU - Stanton - ASD - Contract Manager / mobiGlas - Phase 3 Missions are not available (Partial Chance)
+- PU - Stanton - ASD - Onyx Facility - Design / Locations - Players are unable to heal on one of the medical beds in the transit lobby medical clinic
+- PU - Actor / Interactions - Inserting MedGel cannister into Medical Kiosk Receptacle removes player ability to interact
+- PU - Stanton - Mission Content / Game Code - Multiple missions don't progress after reaching the mission location
+- Multi-Location - PU - Pyro - AI / Locations - Turrets at Farro Data Centers are not firing
+- Multi-System - PU - Multi-Location - Ladders V2 - Traversal / Actor / Mantling / Locations - Player is unable to mantle ladder from the top to climb down
+- Multi-location - PU - Stanton / Pyro - ASOP / Locations - ASOP Terminal inside hangar remains in spinning loading screen after destroying ship on pad
+- ARGO ATLS  - PU - Mounts / Cargo / Tractorbeam - The ATLS is unable to pull cargo off a ship's cargo grid after it is moved from place of origin to new location
+- PU - Stanton / Pyro - Armor / Loot Box / Inventory / Actor - Equipment and armor dropped on the ground will be suspended in mid-air making them unable to be interacted with
+## Features & Gameplay
+Gameplay
+Onyx Facility and Mission Polish
+Further Onyx Facility Mission and Location Polish. Further Polish for Art, Environment, VFX, and Audio for Onyx Facility locations and mission flow.
+Medbed and MedGel Updates
+We've made a few balance changes to the amounts of medgel contained in canisters and tiered medical beds.
+- Canister changed from 100 to 200 medgel.
+- T3 Bed changed from 100 (1 revive) capacity to 200 (2 revives)
+- T2 Bed changed from 200 (2 revive) capacity to 400 (4 revives)
+- T1 Bed changed from 400 (4 revive) capacity to 600 (6 revives)
+Weapons and Items
+- Volt LMG: VOLT LMG VFX Polish. Added to Arena Commander
+## Bug Fixes
+At time of this release, SC Alpha 4.3.1 contains over 110 bugfixes for issues occurring since 4.3.1 including 17 that originated from the issue council. 4 of which have already been hotfixed onto 4.3.0 LIVE.
+- Potential Fix: PU - ASD Delving - Phase 3 - Manic Scientist Data - Mission Content / Desync - The scientist's pod door will appear closed for certain players with the mission
+- Potential Fix: AC - Free Flight - UI - Free Flight mode is missing FPS Loadout button on the Front End despite being an Flight and FPS mode
+- Potential Fix: PU - Stanton - ASD Delving - Phase 3 - Biomass processor - Mission Content / Actor / Female only - Female actors are unable to activate the biomass processor
+- Potential Fix: PU - Actor - inventory - Can't equip Pembroke Helmet on Pembroke Exploration Suit (STARC-173364)
+- Potential Fix: PU - Stanton/Pyro - Locations / UI - Patient Check-In Kiosks are stuck displaying “Room 0” and are not interactable (STARC-163125)
+- Potential Fix: PU - ASD - Interactions / Fabricator / UI - Onyx Facility Fabricator doesn't print TruHold Tractor Beam Attachment
+- Potential Fix: AC - Menu - Vehicle loadout - Changing ship components unequips ships weapons for some ships (STARC-176894)
+- Potential Fix: PU - UI / Vehicles - Medical Screens - Vehicle's MedBed screens will initially display as T1 until used (STARC-179021)
+- Potential Fix: Pancea MedGel Canister - PU - UI / Inventory - MedGel Canisters are not stackable (STARC-178990)
+- Potential Fix: PU - Pyro - Pyro I - Storm Breaker - Irradiated Valakkar Egg is missing upon arriving at Lazarus Complex Phoenix I, but Specimen Device functions as if it's present (STARC-171290)
+- Potential Fix: Idris - Incorrect Medical Bed Tier
+## Technical
+- Fixed 2 Client Crash
+- Fixed 3 Server Crash

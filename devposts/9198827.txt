@@ -1,0 +1,9 @@
+Hello Citizens, a few tweaks and fixes have been made to the new zoom for the latest patch.
+Alpha 4.10.3: VR Updates
+- Third-person cameras no longer zoom the VR view when the gameplay FOV changes. Ship ADS no longer zooms the ship's third-person view.
+- Added scope eye relief. While a scope zooms the VR view, the view now moves back along the scope so more of the magnified image stays visible. The pull-back scales with scope zoom up to a maximum (none at 1x, 9 cm at 4x, 15 cm at 6x and above). It adjusts smoothly when you switch zoom levels and fades in and out with the zoom. Vehicle ADS and Interaction Mode zooms are unaffected.
+- Split the VR zoom strength setting into separate Scope Zoom Strength and Ship Zoom Strength sliders. These replace the previous Gameplay Zoom Strength setting. The zoom strength settings no longer affect the Interaction Mode zoom.
+- Default tuning changes: minimum scope zoom raised from 1.0 to 1.6, scope align distance raised from 0.04 to 0.05, and zoom smoothing shortened from 0.2 to 0.15 for snappier transitions.
+- Medbeds now default your VR view to looking up instead of forward at your body, which makes the screen easier to use without breaking your neck!
+- Fixed texture banding on the scope projection texture.
+- Fixed several crashes with the experimental VR depth composition option (r_StereoDepthComposition). Note that this is disabled by default and need to be explicitly enabled via console or user.cfg. Once enabled it keeps its value over subsequent runs.

@@ -1,0 +1,77 @@
+PU Monthly Report
+September 2024
+It’s October, and that means one thing… CitizenCon approaches! Despite the impending festivities, development continued in earnest throughout the month, with teams across the globe progressing with content for Alpha 3.24.2 and beyond. Read on for all the details.
+## AI (Content)
+September saw the AI and narrative designers continuing their work in the Pyro system by setting up the spawn data and markup for the various outposts and space stations. This involved cooperation with the Level Design team to ensure that NPCs were spawning correctly. Then, following discussions with the Mission team, AI Content spent significant time marking up locations in Stanton.
+They also implemented dynamic conversations to make the ‘verse’s bars feel more organic and alive. This tech and approach will be expanded to other landing-zone locations and included in any future captured content.
+## AI (Features)
+With the upcoming release of Alpha 4.0, the AI Features team focused on locking down existing Human-combat features, including first reactions, ammo management, and tactics to ensure they work consistently across a wide variety of situations and environments.
+## AI (Tech)
+The AI Tech team began September focusing on Server Meshing, including how AI systems and components synchronize during server transition. Performance improvements were also made alongside progress on features that will be unveiled shortly.
+Following on from last month’s report, AI Tech finished their tasks for the movement-system-component synchronization and began synchronizing the Subsumption component that updates AI behavior.
+On the performance side, further improvements were made to the vision, observable, and perception components. For example, they adjusted update frequency based on AI character LOD, so that closer entities are more responsive. They also implemented lighter AI zone handling for observables, which will deliver significant improvements when zone queries are made by NPCs.
+Finally for AI Tech, the team updated AI ship-reinforcement functionality, adding support for planetary navigation cost volumes and navigation exclusions.
+## AI (Game Intelligence Development Team)
+The Game Intelligence Development team spent the month working toward the release of StarScript 1.0, with the main goal of improving how the tool feels to use. For example, how the devs zoom in and out and how text becomes visible or hidden at certain levels. They’re also optimizing the search speed of the main smart browser and drawing of the graph view.
+Overall graph view in the new interface
+Close up of one activity with the new group layout and the new icons
+## Animation
+The Animation team spent most of September on the Argo ATLS alongside additional work on the kopion and other creatures.
+## Art (Characters)
+In September, the Character Art team progressed with the utility and specialist armors, new heads for the character customizer, and tasks for the IAE event. Meanwhile, the Character Concept Art team continued exploring fauna.
+## Art (Ships)
+The Vehicle Content team moved several vehicles into their final phases, including the RSI Polaris and several unannounced ships. They also prepared to kick off another series of vehicles.
+## Community
+The Community team began September supporting Alpha 3.24.1 with the Argo ATLS Q&A and by gathering feedback on live releases to help fix bugs and player issues. They then made improvements to the New Player Guide and Welcome Back Pilot page.
+“As we look ahead, the excitement is building for CitizenCon 2954, which is just around the corner! With only a few weeks to go until our largest annual event, we couldn't be more thrilled to meet you all in person at Manchester Central on October 19 and 20. For those unable to attend, we will be livestreaming the show on Twitch and YouTube, so you won’t miss a crumb of what is to come for Star Citizen! Plus, keep an eye out for community-organized Bar Citizen events leading up to the show and an exciting esports showdown with ATMO Esports: ENTER ATMOSPHERE. Get ready with a Digital Goodies Pack filled with exclusive content to get you into the CitizenCon spirit!” Community Team
+The Bar Citizen World Tour 2024 continued in September, with the Community team attending events in Marinha Grande, Portugal, and San Diego, USA, for TwitchCon.
+Lastly, the team supported Pirate Week, including the Show Us Your Plunder contest.
+## Core Gameplay
+Core Gameplay began September supporting the Argo ATLS, which included unique tractor beam behavior that the team are looking to improve and expand moving forward. As the game’s first exo-suit, it required a special technical setup, as it’s neither a traditional vehicle nor a character. This posed some minor challenges when dealing with entitlement, vehicle terminals, the law system, and ship elevators.
+“We have enjoyed seeing all the fun and creative videos featuring the ATLS!” Gameplay Features Team
+For charge and drain, Core Gameplay and Design discussed whether the client-side prediction works as expected and meets expectations. From this, they improved how connections between the Multi-Tool and resource containers are handled, ensuring they correctly deal with edge cases and multiple targets. Mission support continued too, including state changes based on resource-container occupancy.
+Bioaccumulation progressed too, with improved support for wetness visualization and iteration, including a new debug tool for degradation.
+The team then continued converting markers to use the entity-subscription service, which will support markers at server boundaries when required.
+September saw further work on jump points, including improvements to tunnel-wall forces and the failure behavior.
+The team also expanded various designer-controlled values to better control how the jump point opening and traversal sequence is triggered. Alongside this, improved visuals were added at the tunnel exit.
+Gameplay wise, jump drives now use quantum fuel in the tunnel – fuel requirement is per jump, though each drive has an efficiency multiplier – and IFCS now takes time to come back online after a jump. Improvements were also made to the camera and screen effects code, while various stability, flow blocker, and performance issues were dealt with. Jump points are currently with QA for testing.
+Numerous bugs were fixed for the resource network and engineering, including some relating to deleted entities not being removed correctly from the resource host.
+The devs solved issues where items with minimum power requirements were not correctly assigned power as part of the default presets, and fixed items with incorrect components being added to resource networks, which could result in later crashes.
+Work began on item boxout bindings; when clicking on items, a 3D panel view will open with its details.
+The team also improved the ‘item destruction and repair’ behavior. When implemented, when a player destroys an item, it will be removed from the network and added back in if repaired. Player-set values for on, off, and throttle will persist through death and repair too.
+Progress continued on radar and scanning, including delta signatures. This includes a temporary AR marker that will show when detecting a delta signature; if the contact is pinned or locked, the existing AR marker updates temporarily. New UI bindings were added to enable the designers to customize the player-facing UI.
+In related development, the radar jammer will now prevent scan waves, while FPS radar and scanning went through various rounds of playtesting and reviews to improve the overall experience.
+Continuous release support was provided for transit with improved debugging tools, a fallback for when teleporting out of transit fails, improvements to how transit data is stored in object containers, and a refactored transport network visualizer.
+The team also implemented ‘off’ alerts for weapons, coolers, radar, thrusters, and quantum drives alongside ‘misfire’ alerts for powerplants, weapons, thrusters, and shields.
+For Maelstrom, the devs provided support for the triggering of particle effects alongside adding support for cinematic sequences and marking parts as ‘critical.’ When a critical part reaches zero integrity, the whole object will be disabled or destroyed. In the future, this will tie into the resource network.
+The mission-system refactor mentioned in previous reports continued throughout September. Now, missions can be played through to completion using the full mission service implementation, while medical and rescue service beacons are functional using the new system too.
+For contract prerequisites, the team added the option to set locality availability, such as a landing zone, moon, settlement, or distribution center. Design can now also generate multiple contracts with different overrides.
+The team spent considerable time in September improving and fixing various issues for cargo gameplay, including hangar performance, server crash recovery bugs, commodity trading, and sell orders.
+The team is currently assessing how the development and delivery of Alpha 3.24’s cargo features went, including quality-of-life improvements they’d like to implement before taking the next steps.
+## Economy
+The Economy team continued their ongoing work on Pyro and began implementing some of the balance changes mentioned in previous Monthly Reports.
+## Locations
+The Landing Zone team continued the push toward Alpha 4.0, polishing and optimizing content and supporting the Design team in making Pyro as distinct as possible.
+## Mission Design
+Mission Design continued working on location repair missions, moving some of them into a ‘handyman’ archetype.
+They also reviewed the Blockade Runner Global Event, looking at future tweaks and fixing an issue preventing some ships from being filled with cargo; this was due to a race condition with how cargo is spawned in the game code.
+Further tweaks to cargo hauling missions were made, including the possibility of removing negative reputation hits for abandoning the mission while keeping punishments for failing.
+The mission-system refactor continued, which includes over 1700 mission records for Stanton alone. Part of the refactor is streamlining content setup so that the devs don’t have to manage that number of records going forward. This refactor won’t change how players interact with missions or change gameplay - it’s predominately a backend refactor to ensure everything works with Server Meshing.
+Work also began on an improved new-player experience that accommodates more fundamental game mechanics. For example, teaching players about item banks, freight elevators, the respawn flow, component-repair gameplay, Master Modes, and more.
+## Narrative
+The Narrative team continued their support for Alpha 4.0’s upcoming missions. They also provided text for “a really exciting upcoming mission.”
+Narrative then supported Characters by reviewing the costumes for Pyro’s NPCs to ensure the various groups feel narratively consistent and appropriate for the location. There were extensive meetings with the Branding and Environment teams to talk over some of the environmental set dressing for upcoming areas.
+The team also released a new Loremakers, where they answered community questions from the forum, a Whitley’s Guide that explored the history of the Esperia Prowler, and another batch of Galactapedia entries.
+## Online Technology
+The Online Services team began September working on features for Alpha 4.0, including the updated mission and marker systems. Tasks also included part two of the backend social services refactor, which replaces some older diffusion services with gRPC services and adds quality-of-life updates.
+The second half of the month involved design work for new services.
+Live Tools kicked off a new feature to provide better access management to Hex based on various user permissions. Ongoing work involves enabling the ability to display inventories in the network operation center.
+Throughout September, the Networking team prepared to bring Server Meshing to the PU.
+“This included a new series of tests on the Tech Preview channel, where we’re pushing our player counts higher than ever to stress the system and rapidly iterating with performance improvements and bug fixes. Networking Team
+They also supported the various gameplay teams, helping to get their features “Server Meshing ready” and improve the robustness of authority transfers between servers.
+## UI
+The UI team focused on multiple screens for the Pyro system while continuing close collaboration with the Core Gameplay Pillar on jump points and the resource network.
+They also reworked each manufacturer’s vehicle HUDs and MFDs, giving them unique colors and a new layout to reduce screen clutter and improve usability.
+Additionally, the team streamlined the Multi-Tool UI to be more straightforward without the need for floating elements.
+## VFX
+VFX continued their tasks for jump points and supported the Vehicle, Weapons, and Location teams with a variety of deliverables, including the Argo ATLS and RSI Zeus Mk II.

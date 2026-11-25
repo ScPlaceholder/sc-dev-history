@@ -1,0 +1,97 @@
+## Star Citizen Patch 3.5.0i
+Alpha Patch 3.5.0i has been released to PTU, and is now available to test!  Patch should now show: PTU-1338818 .
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- IFCS: Heat Rework, Atmospheric flight, Arena Commander
+- Balance: Manual gimbals, auto-convergence, cannons vs repeaters vs scatterguns, ship roles
+- Locations: ArcCorp, Area18, Lyria, Wala
+- Star Marine: All game modes
+- Female Character
+- DNA face customization  system
+- 300i
+Major Known Issues:
+- Some aspect ratios do not work well with the ship HUD.
+- Some  audio is lost after using ASOP terminal.
+- QT stops outside the point where orbital travel is possible.
+## Feature Updates
+General
+- Players should no longer be able to choose the same head in DNA face customization
+- Added carousel highlighting for selection in the DNA face customizer.
+- Updated Universe splash screen.
+- Added the ability to disable fixed assist "snap aim pip to target".
+- Keybind updates
+Engine, shield, and weapon power toggling on "I', "O", and "P".
+Power adjustments for engines, shields, and weapons on "F5 - F8".
+Shield directional power adjustment on "numpad 2, 4, 5, 6, 7, 8, 9".
+Increase/decrease overall power on "F9" and "F10".
+Look Ahead on "Left Alt + R".
+HOMAS mode on "Right Shift".
+Targeting for cycle backwards is now just "Left Alt" plus corresponding targeting key.
+Exit seat is now "Y".
+Moved cycle friendly to "5".
+- Updated keybind images.
+Universe
+- Tram announcements added for Area18.
+- Further lighting and visual bug fixes for Area18.
+- Changed the pathing and acceleration of the Area18 sky bus.
+- Deferred collision added to No-Fly Zones.
+- Various audio polish around Area18.
+- Various animation updates to Pacheco.
+- Reduced civilian foot traffic in and around Lorville.
+- Setup shop interactions for Center Mass.
+- Updated G-Loc bar menu.
+Missions
+- Locker modules can now properly handle multiple deliveries.
+- Adjusted mission location selections for Mercenary/Eviction missions.
+- Changed the rewards and opposing ships for the mission giver bounty missions.
+Ships and Vehicles
+- Flight tuning pass on Scythe, Glaive, and Khartu to make them more enjoyable and bring them into line with other ships in their role.
+- Tuning pass on Vanguard to bring its rotation more in line with other ships in its role.
+- Updated turret HUDs and MFD controls for t he Gladiator, Constellation series, and Hurricane.
+- Adjusted overly bright boost effect on the Buccaneer.
+- Updated the flight tuning of the 300i.
+- Updated Reclaimer tuning slightly to allow it to take off in atmosphere.
+- Updated ballistics to allow a small amount of damage even at 100%.
+- Updated gatling velocity significantly.
+- Added Banu Tachyon "Singe" Cannons sizes 1 to 3.
+## Bug Fixes
+- Players can now re-enter habs in Area18 after leaving.
+- Players should no longer be able to get stuck inside Area18 hangar props.
+- Lorville Transit signs corrected for wrong stations.
+- Mercenary/Eviction missions should now correctly count number of enemies killed when multiple are killed in a short time-frame.
+- Dry-firing Arclight pistol should no longer animate exhaust flaps.
+- Interdiction EM scenarios should correctly spawn when a player is interdicted.
+- The Reliant pilot should now have strafe animations.
+- Fixed multiple female armor textures that were incorrect.
+- Turrets at underground facilities should no longer respawn too quickly.
+- The neck sock should no longer vanish with certain armor types.
+- There should no longer be a video/audio desync if one player experiences lag using p2p comm calls.
+- There should no longer be replaceme textures on snoopy caps in the PMA.
+- Fixed inconsistent scanning targeting around planetary bodies.
+- Exiting an engineering station should no longer cause odd animation issues.
+- Fixes for female pilot seat animations in the Constellation series.
+- Fixes for female pilot seat animations in the Reliant series.
+- Players should no longer be able to quantum travel through a moon or planet.
+- Players should no longer be able to bypass trade travel using the ASOP "relocate" function.
+- The distortion MFD/HUD effect should now play properly on the effected ship.
+- The reload animation should no longer play when dry firing the P8-SC.
+- Flight ready on vehicles should enable interior lights.
+- Scanning and mining mode should no longer be able to be toggled into when the ship power is off.
+- Mining geodes should now have proper associated VFX.
+- The magazine for the railgun should now be rotated correctly.
+- Cycling shield power should no longer let them start recharging instantly.
+- The downed relay mission should now start properly.
+- Derelicts should now properly spawn salvageable commodities.
+- Traffic around ArcCorp should no longer randomly stop moving.
+- The female character should now be able to vault.
+- The platforms at Lorville should now have collision.
+- Gamepad and HOTAS should now be able to bind an axis to mining throttle.
+- Scanning should no longer trigger when attempting to look at the scoreboard in Arena Commander.
+- AI ships should no longer appear to jitter and freeze.
+Technical
+- Fixed 5 client crashes.
+- Fixed 6 server crashes.
+- Some performance tweaks.

@@ -1,0 +1,5 @@
+So the actor status system (specifically the stamina component) keeps a reference to the current room.
+This reference is updated whenever the actor steps into a new room, or once a second otherwise (in case the atmosphere of the current room changes over time, we need to update the UI to reflect that)
+By default, equipping a helmet overrides the current room and connects to the suit's oxygen supply.
+We can turn off this behavior but it has to be done manually per helmet, because unfortunately there's no way to automatically detect whether a helmet is airtight or not.
+Turning this off for a helmet would make it no longer override the current room, so the character will continue to breathe from whatever room they're in.

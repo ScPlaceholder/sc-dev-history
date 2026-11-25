@@ -1,0 +1,93 @@
+Hello everyone, and welcome to the first Alpha 3.14 Patch Watch, where you'll get an in-depth look at the upcoming first balance pass to ship shields and weapons.
+With the introduction of Capacitor Gameplay/Energy Management v2 and Missile Operator Mode, the team took the opportunity to review and rebalance almost all combat stats for Star Citizen’s ship weapons and shields.
+Some changes are significant and affect the default loadouts of many fighters to better suit their intended role in the 'verse. Of course, you can still customize your ships' loadouts to suit your individual playstyle best, and we're eager to take a closer look at your loadouts. So, please check out the changes in-game, put them through their paces, and share your feedback. We’ll review your comments and, along with the data we collect from the game servers, incorporate them into the next iteration of the balancing process.
+The current stats may be subject to change, as our goal is to achieve a fun combat experience where your decisions as a pilot have a meaningful impact in battle.
+Let’s jump into the specifics:
+## Shields
+Design Goals:
+The goal is to make players feel more in control of their shields via the Power Triangle. It also includes balancing shields by giving fighters faster regeneration and allowing smaller ships to grind through larger ships’ shields rather than battling against instant regeneration.
+Outcome:
+The changes to shields are not extensive for the initial release. However, we have removed a couple of non-player facing delays and tried to split the generator sizes for certain ship classes.
+Specifics:
+Size 0 and Size 4 Shields
+- No changes, as these sizes are only used by vehicle-specific shield generators
+Size 1 Shields
+- Typically used on small fighters and transporters, such as the Gladius
+- High regen/HP ratio
+- Low HP overall
+- Bubble shields only (Bubble is just the term we use (and used prior to SC Alpha 3.0 when they were last in the game) for a shield setup which technically only has one face. Regardless of the current SDF based technology or the prior implementation the hit detection is still divided up into "faces" so think of the Bubble shields having a single face that a hit from any side will deplete.)
+Size 2 Shields
+- Typically used on heavy fighters and larger ships, such as the Vanguard and Freelancer
+- Normal regen/HP ratio
+- Around 4x more HP than Size 1
+- Bubble shields only
+Size 3 Shields
+- Typically used on heavy multi-crew ships, such as the Reclaimer
+- Large multi-crew ship sizes
+- Around 10x more HP than Size 2
+- Quad faces or above
+Additionally, the following changes apply:
+- Shield generators in the same class temporarily all have the same stats to aid the initial balancing pass
+- Shield hardening has been removed as it did not produce interesting gameplay choices. We will redevelop it at a later point
+- The shield UI has changed slightly
+- A lot of time dynamics in the shield regen process have been removed to make it easier to predict when the shields will be up again
+- The regen rate is dictated by the power triangle
+- Powering off one shield generator will remove the shield properties from the shield system (half HP and regen if you turn off one of two generators)
+As the new shield tunings use vastly different multipliers, the following ships have been rebalanced to prevent them from being significantly underpowered or overpowered.
+- Aegis Sabre reduce shields from 3xS1 to 2xS1
+- MISC Razor reduce shields from 2xS1 to 1xS1
+- Origin 85x reduce shields from 2xS1 to 1xS1
+- Origin 600i increase shield from 1xS3 to 2xS3
+- Vanduul Blade increase shield from 1xS1 to 2xS1
+- Anvil Hurricane increase shields from 2xS1 to 1xS2
+- Anvil Terrapin increase shield from 1xS2 to 2xS2
+- Crusader Starfighter Ion reduce shields from 3xS2 to 2xS2
+- Drake Caterpillar increase shield from 1xS3 to 2xS3
+- RSI Constellation increase shields from 2xS2 to 1xS3
+## Weapons
+Design goals:
+The goal was to ensure that different weapon types have advantages and disadvantages and that there are no overpowered meta-weapons.
+Weapon loadout should also be an important decision and have a meaningful impact on playstyle. We also wanted to replace mindless shooting with a carefully considered decision about when weapons are used. Player-controlled turrets should be more powerful and, as with shields, the regeneration rate of energy weapons should be adjustable via the power triangle.
+Outcomes:
+There are a lot of updates concerning weapons and their new associated capacitors, and with how ammunition and regen distribution works for energy weapons. In Alpha 3.14, every ship has a capacitor that produces "ammo" for the energy guns (this item is not visible, though we want to make a proper swappable item out of it).
+Two variables come into play here:
+- Regen: How fast the ship can replenish energy ammo
+- Ammo Load: How much energy ammo the ship can hold at a time
+Both regen and ammo load are distributed across all powered energy weapons on a ship. So if you have one energy cannon and two energy repeaters, you can disable the energy repeaters and send all ammo and regen to the energy cannon. This means that the energy cannon will be able to hold more ammo and regenerate faster.
+In addition, we gave each weapon category an intended purpose:
+Specifics:
+Energy Repeaters Size 1 to Size 4
+- Dedicated anti-fighter weapons
+- Should be the most dangerous energy weapons against fighters
+- Normal regen and ammo load cost
+Energy Repeaters Size 5+
+- Dedicated anti-large-ship weapons
+- Relatively high fire rate to keep larger multi-crew ships shields under strain
+- Normal regen and ammo load cost
+Energy Cannons Size 1 to Size 4
+- Fighter-carried anti-large-ship weapons
+- Should not be very effective in dogfighting against other fighters
+- Regen and ammo load cost is reduced to make them more efficient than repeaters
+Energy Cannons Size 5+
+- Dedicated anti-large-ship weapons
+- Very low fire rate, very high damage
+- Regen and ammo load cost is reduced to make them more efficient than repeaters
+Ballistic Weapons
+- Specialized ‘alpha-strike’ weapons
+- Penetrate shields
+- Not supposed to be a good choice for long-duration engagements
+- Should feel limited in terms of ammo but be very powerful when used
+Scatterguns - Energy & Ballistic
+- Specialized short-range weapons
+- High risk/reward
+- Very high damage output that cannot be employed as easily as before
+Weapon Loadouts
+To reflect the intended gameplay changes, we adapted the default loadouts on some ships:
+- Defensive ship turrets will now always be equipped with energy repeaters
+- Offensive ship turrets will be equipped with either energy repeaters or energy cannons
+- No turrets have scatterguns due to the limited range
+- No turrets have ballistics equipped unless for a specific role, such as a dropship
+- Scatterguns will not be equipped by default as they are specialized weapons
+- On all default loadouts, energy weapons should make up at least 50% of all equipped weapons
+- By default Fire Group 1 should be assigned to energy weapons, Fire Group 2 to ballistics
+Finally, as a reminder, the team is iterating based on the data collected and your feedback, so current stats are subject to change.

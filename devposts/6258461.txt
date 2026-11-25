@@ -1,0 +1,43 @@
+Hi everyone,
+Localizing Star Citizen is critically important to supporting our truly global community. To achieve this, we have a team of dedicated localization specialists at Cloud Imperium who continue to work on developing official language options for the long-term.
+While these official initiatives are in progress and going well, we have been truly inspired by the unwavering dedication of our resourceful community members, who have already proactively translated substantial portions of the game.
+To show our support for these enthusiastic community translators, and to assist those who are eager to embark on their own translation journey while awaiting the official localizations, we've taken some steps to help smooth out the current process for tinkering with these translations.
+For our localization community: We will now allow a localized global.ini file to be used for translations and supported by a variety of new fonts. Instructions on how and where to insert translation files into your Star Citizen directories are below.
+## Technical Steps
+Create a new folder in the following directory: \StarCitizen\LIVE\data\Localization\New Folder
+Rename the folder to one of the following:
+- chinese_(simplified)
+- chinese_(traditional)
+- english
+- french_(france)
+- german_(germany)
+- italian_(italy)
+- japanese_(japan)
+- korean_(south_korea)
+- polish_(poland)
+- portuguese_(brazil)
+- spanish_(latin_america)
+- spanish_(spain)
+Put your previously translated global.ini file into the new folder.
+Add one line from below of CVAR into your “user.cfg”.
+- g_language = chinese_(simplified)
+- g_language = chinese_(traditional)
+- g_language = english
+- g_language = french_(france)
+- g_language = german_(germany)
+- g_language = italian_(italy)
+- g_language = japanese_(japan)
+- g_language = korean_(south_korea)
+- g_language = polish_(poland)
+- g_language = portuguese_(brazil)
+- g_language = spanish_(latin_america)
+- g_language = spanish_(spain)
+After updating, launch the game as normal. Please note that enabling the ability for you to edit the global.ini file is experimental for us, and will likely have issues. We'll be monitoring closely to see how things play out, and work to update/improve support where we can, as resources become available. With the aforementioned official localization still in the works, we don't expect to focus on smaller fixes/improvements at this time.
+Note:  If you don’t have a “user.cfg”, you can create one:
+- Create a text document file and name it as “user.txt“
+- Change the file extension from .txt to .cfg
+- Place the “user.cfg” under: \StarCitizen\LIVE
+- You can open and edit the “user.cfg” using Notepad or other text editors
+Note that textures/signage/3d/Inner Thought text won’t be supported at this time.
+It's important to mention that while the Star Citizen community is rich with talented individuals who have created translation packs and resources, these are not officially created by our team. They should be considered as third-party contributions, and we advise users to exercise caution and use them at their own discretion.
+We hope that you find this update useful in the short-term, and we’ll share more information about the future of official localization as we have it. Until then, we extend our heartfelt gratitude to our passionate community for their incredible dedication and support in making Star Citizen accessible to players around the world.

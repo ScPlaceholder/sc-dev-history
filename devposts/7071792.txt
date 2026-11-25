@@ -1,0 +1,62 @@
+## Star Citizen Alpha Patch 3.24.0
+Alpha Patch 3.24.0 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 3.24.0-PTU.9265382.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Evocati
+Server Info: PTU Channel - US Only
+Long Term Persistence: Enabled
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+The current build is under NDA (Talking about features and testing is allowed but no sharing of game video, screenshots, audio, files, or accounts outside of Evocati)
+Please log out then back in on the issue council site to see the Evocati environment there. Please make sure to only select the Evocati 3.24.0 environment when creating IC reports while the builds are Evocati only
+Please monitor etf-testing-chat in spectrum for updates and testing instructions.
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Persistent Personal & Instanced Hangars
+- Freight Elevators
+- Storage Access
+- Hangar Decorations
+- Cargo Hauling Missions
+Not Ready for Testing/Feedback
+- Cargo Commodity Rebalance
+- Dynamic Event: Blockade Runner
+## Known Issues
+- PU - UI - Item Bank / Storage Access - Search - The search bar button in the Item Bank terminal does not function when selected
+- PU - Stanton - Orison - Locations / Shopping - Physical Shopping - Quick buying items on display at the Orison Vision Center ends in transaction error about invalid Player Inventory
+- PU - Missions / UI / Reputation - Affinity appears to decrease after successful mission (UI Issue and reputation is still increasing) - 100% Repro
+- PU - UI - Kiosks / Terminals - Global Chat - Pressing Enter when interacting with any terminal opens the Global Chat causing player to lose game interaction - 100% Repro
+- PU - Stanton - Missions - mobiGlas - Contract Manager - Retrieval Op Mission - The Retrieval Op mission will auto abandon shortly after accepting the contract - 66% Repro
+- PU - Stanton - GrimHEX - Locations - Transit - Hangar Elevators - Hangar Instance elevators can be called and arrive at the current floor but the doors do not open - 100% Repro
+- PU - Personal Hangars - Locations - Personal Hangars do not open when contacting ATC to take off or land at a destination (High Chance)
+- PU - Stanton - ASOP / Locations - Retrieving a Hull C at locations without a docking port will display 'unable to handle your request at this time'
+- PU - Stanton - ASOP / Fleet Manager / UI - ASOP Terminals fade to black when accessed after delivering a vehicle
+- PU - Stanton - Security Post Kareah - Locations / AI - AI are missing inside of Kareah, only outside Guard AI spawn
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- Turrets can get stuck firing nowhere near their target
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - HUD - Vehicle - Ship warning/alert text is very small and can be difficult to read
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+- Multivehicle - Vehicles - G-force induced head movement is excessive
+- PU - Actor / UI / Locations - Area18 / MobiGlas / Map - Various parts of Area18 Central can't be routed to via mobiGlas Map based on player location
+- AC - All Modes - INS Jericho - Crash - Game crashes after launching any mode using the INS Jericho map
+## Features & Gameplay
+Gameplay
+- Full Balance pass for Automatic Cargo Loading Prices and Loading Times based on SCU Container Sizes
+Ships and Vehicles
+- Greatly increased Anvil Hurricane Nose and Body joint Health
+## Bug Fixes
+- Fixed - PU - Stanton - Cargo Hauling - Mission Content / Game Code / UI - Missions markers do not correctly update after cargo has been picked up (STARC-120173)
+- Fixed an issue where player could not rebind ALT and CTL key combos (STARC-97142)
+- Fixed - PU - Locations - Transit - Elevator won't show up at Spaceport with high traffic (STARC-120525)
+- Made Further Fixes for getting teleported away when entering a pad in a personal hangar (STARC-118499)
+- Fixed - Stanton - Commodity Kiosks / UI - While using the slider, the SCU box selection does not remain highlighted
+- Fixed - PU - Stanton - Salvage - Mission Content / Game Code - Destroying the target does not fail the mission
+- Possibly Fixed - PU - Stanton - ASOP / Fleet Manager / UI / Personal Hangars - When another player is on the pad in a hangar instanced on top of yours, you can't deliver or retrieve a ship and it reverts you back to the ASOP list
+## Technical
+- Fixed 1 Client Crash
+- Fixed 2 Server Crashes
+- Fixed 2 Hybrid Crashes
+- Made Various Improvements to the Shard Stow Flow

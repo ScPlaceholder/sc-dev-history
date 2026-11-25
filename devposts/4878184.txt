@@ -1,0 +1,9 @@
+Hi,
+Some very rough VRAM stats for you:
+- 500mb for 1080p (scales with pixel count, so 4K needs 2GB as it had 4x pixels)
+- 1900MB fixed cost (shadows, RTTs, planets, mesh streaming)
+- 10% of total VRAM left for other applications
+Everything else goes on texture streaming, with a min of 300MB and max of 3GB
+Much of this I intend to expose in the graphics options and allow tweaking where possible.
+Ali Brown
+Director of Graphics Engineering

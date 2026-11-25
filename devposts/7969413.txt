@@ -1,0 +1,63 @@
+## Star Citizen Alpha Patch 4.2
+Alpha Patch 4.2 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.2.0-PTU.9783487.
+- Audience: Evocati Only (Under NDA)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 10 DGS - 600 Soft Cap
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Farro Data Center - Part 1 of New Activity (Partial Opening of Content including a new Data Center location)
+Not Ready for Testing or Feedback
+Reminder: These items below are a partial list of current goals for the latest release and may be partially in the build and even completable but are not ready for feedback and are subject to removal from this release.
+- Improved Kiosk Interactions
+- Pyro Research Facility (Part of the new Activity)
+- [Redacted]
+- [Redacted]
+- [Redacted]
+## Known Issues
+- PU - Stanton - Area 18 / Lorville - Transit / Locations / Graphics  - There are VisArea issues inside the tram carriages
+- PU - PYRO / Pyro IV - Farro Data Center - Locations / AI / Design - AI can sometimes damage the player through thick walls and glass
+- Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- Multivehicle - PU - Vehicles / Target lock - target attacker stops working when a target lock is lost due to locking range or radar dropped
+- PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- PU - Mining / Saddlebag / Cargo Grid - Argo and MISC Saddlebags do not snap to the Argo RAFT's Cargo Grid
+- PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- PU - Stanton - microTech - New Babbage - Brentworth Care Center - Medical / Locations - The medical kiosks have an infinite load and do not check players into rooms
+- PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+- PU - Ship Battles - Ace Pilot/Assault - Proximity Tracker - Action Area - Logic fails to continue when over 20km away from the tracked object or Action Area Origin
+- PU - Jump Points - Room System / Atmosphere / Vehicles - Jump Tunnels - Player will begin asphyxiating inside their vehicle at the end/after exiting the Jump Tunnel when travelling to both Stanton and Pyro
+- Graphics - UI - Shadows not casting in 3d Comms Call RTT window
+## Features & Gameplay
+- Gameplay
+Farro Data Center - Part 1 of New Activity
+This new activity takes place in both Stanton and Pyro at multiple different locations. For tonight's build, we will focus on Farro Data Center on Pyro IV and ends at Step 4 of the list below. This location has multiple locked doors that take different types of credentials to open such as key cards, "computer data security", and uses a new mechanic that requires certain clothing for the door scan to allow you entry. How you get this clothing is up to you. We will keep the details beyond this at a minimum to test the in-game communication and discovery of this activity.
+The activity for this first part will be held at Farro Data Center on Pyro IV
+- The Data Processing Room is locked by doors that require a Technical Access Card to open
+- Technical Access Cards can be found in various loot rooms at the location
+- Inside the Data Processing Room, the players find the Credentials Printer that can give them the Doctor’s Credentials
+- The printing process takes time and causes the alarm to go off, drawing security reinforcements to the Data Processing Room
+## Bug Fixes
+- Potential Fix: Multivehicle - PU - Cargo Grid / Autoloading / Commodity - Containers are loaded in the Cargo Grid offset (STARC-165428)
+- Potential Fix: Aegis Idris Series - PU/AC -Vehicles - Idris Torpedo nose health is low and can be destroyed easily (STARC-168246) (Nose Health Greatly Increased)
+- Potential Fix: Multivehicle - PU - Vehicles / UI - UI HUD no distance and velocity data on bounty target (STARC-145814)
+- Potential Fix: PU - Stanton - Mission Refactor / PVP Bounty - Pro Tem Suspect Apprehension mission will appear multiple times and remain after the player has logged out/been arrested (STARC-167424)
+- Potential Fix: PU - Missions - Server Meshing / Subdivision - PVP Bounty - If the target of a PVP Bounty contract performs a dgs-mesh transition it will fail the contract for any player that has accepted it
+- Potential Fix: Anvil Hornet Mk2 All variants - PU / AC - Vehicles / Vehicle Components - Missile racks cannot be removed (STARC-168098)
+- Potential Fix: Aegis Idris Series - PU/AC - Idris k laser does not deal damage unless pixel perfect aim and can sometimes not calculate damage at different angles even when PiP is on target (STARC-168086)
+- Potential Fix: Esperia Prowler Series - ( All Variants ) - PU - Vehicles / UI - HUD / MFD - When vehicle scanning completes the HUD and MFDs are not updated with any information (STARC-161826)
+- Potential Fix: PU - Multi-System - Mission Content / UI - HUD Objectives periodically appear and disappear during gameplay or do not appear at all (STARC-167460)
+- Potential Fix: PU - Transit - Transit Manager is stuck paused, causing hundreds of "DataCarriageReset" and "Carriage Emergency Reset" events (STARC-162464)
+- Potential Fix: PU - UI - Missions Content - Collection - Mission description refers to juvenile Valakkar fangs with their entity string name (STARC-164829)
+- Potential Fix: PU - Multi-System - Mission Content / UI - HUD Objectives periodically appear and disappear during gameplay or do not appear at all (STARC-167460)
+- Potential Fix: PU - Stanton - Social AI / Dialogue / Locations - Shopkeepers do not acknowledge and greet the player
+- Potential Fix: ARGO MPUV Tractor - PU - Vehicles - The ARGO MPUV Tractor is unable to lift a full Cargo
+- Potential Fix: Multilocation - PU - Stanton - Locations / Art - Aphorite ore display has no texture on refinery shop
+## Technical
+- Fixed 5 Client Crashes
+- Fixed 8 Server Crashes

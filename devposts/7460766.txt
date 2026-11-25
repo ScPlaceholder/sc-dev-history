@@ -1,0 +1,76 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to Wave 1 testers!  Patch should now show: VERSION 4.0.0-EPTU.9437452.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: Wave 1
+Server Info: EPTU Channel - US Servers Only
+Long Term Persistence: Enabled
+Server Meshing: Enabled
+Mesh Configuration: 2:2:380 (2 solar systems, 2 servers per system, 380 players total per mesh)
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Today's build contains many more inclusions from 3.24.3, IAE, and Citizencon into 4.0
+- Stability & Bugfixes
+- Server Meshing  2:2:380
+- Pyro Star System and New Locations
+- Contested Zones
+- Jump Points
+## Known Issues
+Note: A change went into today's build that will make using the jump tunnel extremely difficult. This is not intended but will be a fun challenge if you make it! We recommend setting your home location to the system you want to spend your time in.
+- PU - Stanton / Pyro - Jump Points - Player unable to control ship after making contact with Jump Tunnel obstructions
+- SC - Character Customizer - Camera is offset and does not stay in place while editing character
+- Stall - Client - PU - Jump Points - Performance - There is a brief client stall when travelling through the Jump Point Tunnels
+- PU - Multi-System - Jump Points - Ships / Vehicles / SFX / Audio - The Jump Point SFX are rapidly looping/cut off
+- PU - UI - mobiGlas - mobiGlas UI is displaying incorrectly on several pages/tabs
+- PU - Pyro - Elevators / Personal Hangars - Ruin Station - Locations - Elevators from personal hangars to the entrance can send the player to an incorrect elevator (Fixed in next build)
+- MISC Starlancer Max - PU - Vehicles - Starlancer Max landing gear won't deploy but ship speed is limited as if they were
+- PU - Pyro - Locations - Checkmate - Medium Hangar blocked by station geometry
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- Multiweapon - PU - Actor / Animation / Weapons - Both male and female actors do not animate while reloading weapons
+- PU - Pyro - Orbituary - Locations / Art / VisArea - Navigating from assigned hangar elevator to "Entrance" opens to a VisArea portal above medical clinic
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+## Features & Gameplay
+- Locations
+- Further Contested Zone Location Polish
+- Further Pyro Outpost Art and Performance Polish
+- Pyro Stations Landing Pad Art Polish
+- AI
+- AI NPC Voice Lines and Facial Animations Inclusions Polish
+- Quasi Grazer Audio Polish Pass
+- Gameplay
+PDC Hostility Changes
+PDCs will now defend the ship from anything that attacks it This means they won't attack anything that doesn't attack them first (other than incoming missiles/torpedoes).
+It means they will attack anyone that shoots it above friendly fire threshold, including police and even the ships owner or party members. They have no allegiance to anyone but the ship.
+Starmap Update
+Added party members to list in marker databank panel
+- Core Tech
+- Made Many Physics Performance Optimizations
+- Solar System Transition Performance Polish
+- Jump Tunnel VFX and Network Performance Polish
+- Jump Point Audio Polish and Mixing Updates
+- FPS AI Navigation Optimizations
+## Bug Fixes
+- Fixed - PU - Stanton - Vulkan - Locations - Terrain - Low resolution surface textures (STARC-104367)
+- Fixed - Multivehicle - PU - Ships / Locks - Non-Owners can Interact and Unlock/Open doors, ramps, and elevators on non-owned Ships (STARC-140418)
+- Fixed - PU - Pyro - Rundown Stations - Multiple Locations - Locations / Shopping - Refuel, repair, and rearm services unavailable when landed on landing pads (STARC-140971)
+- Fixed - PU - Pyro - Contested Zones (CZ) - Interactables / Locations - Fuses are not placed into the sockets when performing the place interaction preventing doors from being opened (STARC-141951)
+- Fixed - PU - Stanton/Pyro - Jump Points - Ships / Vehicles / Game Code - Jump Failure does not always Place the Player at a Random Failure Point
+- Fixed - PU - Multi-System - Jump Points - Ships / Vehicles / UI / Game Code - The Player is unable to Fail Jump Tunnels via Distortion
+- Fixed - Law - Removing a mining bag from the Prospector causes multiple impound warnings for pad ramming
+- Fixed - PU - Pyro - Contested Zones (CZ) - Creature AI / BOID / Design - Aloprats do not scurry away from the player when approached
+- Fixed multiple helmets not culling player beards
+- Fixed - PU - Pyro - Rundown Station (R&R) - Locations / Art - There is floating geometry in the vehicle dealership
+- Fixed - PU - Pyro - Frontier Outposts - Locations / Core Tech / Collisions - Grate is missing collision causing players to fall through
+## Technical
+- Fixed 14 Client Crashes
+- Fixed 3 Server Crashes
+- Fixed a Hybrid Crash
+- Fixed 2 Server Deadlocks

@@ -1,0 +1,3 @@
+there are 2 separate things you might be referring to. one is the draw distance for procedurally placed assets and how wrong settings can cause them to pop in instead of fade in smoothly. i'm fairly certain there is a bug report for it already as I've seen my seating neighbor tweak settings for assets on the moons a few days ago :slightly_smiling_face:.
+the other is a soft fade between different LOD levels, which we do have for manually placed assets, but not for procedural ones and the reason is indeed the doubled rendering cost for the fading.
+We might be able to re-evaluate whether or not we can add that for procedural assets as well, but no promises.

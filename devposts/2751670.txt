@@ -1,0 +1,72 @@
+## Star Citizen Patch 3.8.1
+Alpha Patch 3.8.1 has been released to LIVE!   Patch should now show: VERSION 3.8.1-LIVE.4451215.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Persistence Wipe: NO
+4451215 UPDATE - 02/11/2020
+Technical
+- Fixed a server crash.
+_________________________________________________________________________
+Known Issues
+- If multiple players logout of 890 beds and log in at the same time it may spawn one player in a bad state.
+- AI ships do not recover from EMP disables.
+- Sometimes repair services are unavailable when they should be present.
+- After a ship is repaired, detachable components will remain attached to the ship when destroyed and a duplicate component will fall off.
+- Repair fails if you select repair and refuel simultaneously.
+Work-Around: Select services individually.
+- Once an Animus spare magazine has been emptied the player can no longer equip fresh magazines in the same slot.
+- Ships can be displayed as "unknown" after destruction, be available for spawn, but not appear on their specified hangar.
+- Entering or exiting via EVA can sometimes cause the player to turn/spin suddenly and harm themselves.
+- Objects can fall through the floor when dropped.
+- An extra static train can appear at Lorville and prevent the use of trains.
+- The visuals of the ships on the rental screen may have missing areas or disappear completely.
+- The Caterpillar will occasionally rock or tip over on itself after landing on a planetary body.
+- CryAstro services may not work at various stations and major ports.
+Work-around: Hover before landing and request services just above the pad.
+- Rentals and/or rental timers may not work when renting a second ship.
+- If a player's ship is destroyed after bed logout they will return to the server at origin.
+- NPCs may sometimes be doing usable animations in places that they shouldn't.
+- Countermeasures are not working as intended to deter missiles.
+- The 890 Jump does not have the correct cargo capacity.
+- The Combine Cannon and distortion weapons are not working as intended.
+- If the quantum travel marker is at the edge of a moon or planet its possible to QT through the moon and explode..
+- Purchased commodities will often visually not appear in the ship's hold.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## New Features
+Gameplay
+- Added a separate hostility activation under accidental fire threshold for party members.
+- Added wait and instruction objective and timer to patrol mission starts.
+- Added a checkbox in game options to disable film grain graphical effect.
+- Added target nearest friendly functionality and keybind.
+- Camera shake is now a slider option in the options menu.
+- Added auto zooming on selected target (default off).
+A subtle zoom on the target when the weapon prediction points, the aiming point, and the look direction align.  Can be enabled and disabled as well as max zoom value adjusted in the game settings.
+- Added basic "MedBed" gameplay functionality.
+Medical beds can now be used for healing and respawn after death. Initial game login is still set by the menu selection, if it's the first login, or by the last ATC landing at a major station. After initial login, players can manually set their respawn to a medical bed by entering the bed and selecting the "Set as preferred ICU" interaction. Medical bed spawning can also be cleared in the same way by selecting "Clear as preferred ICU". Upon death, the player will respawn at the desired medical bed if they died less than 4 million meters away. Currently this functionality is only available on ships with medical beds (just the 890 and the Cutlass Red for this build) and will only work if the ship is available (not despawned or destroyed). If the ship is not available, players will instead respawn at their default location until they have manually set another medical bed. Additionally, if the player is injured they can use a medical bed to heal by selecting the "Treat Injuries" interaction, which is only visible when the player has treatable wounds.
+Ships and Vehicles
+- New Ship Available: Drake Cutlass Red
+- Added an entrance light ring to indicate where a player should stand to get the entrance interaction on the Mole.
+- Added weapon report audio for ship weapons in atmosphere.
+- There is now a cooldown on player bounties of the same player.
+- Rented ships in the persistent universe can no longer be modified.
+## Feature Updates
+Locations
+- Added footsteps on wood sound effects at appropriate locations in Area18.
+Gameplay
+- Removed aim action from gamepad due to look ahead mode conflicts and to unify setup with default joystick.
+- Security patrol quantum travel interdiction will no longer occur for lawful players but will still occur for players in normal transit.
+- Toned down some lens flare effects.
+Ships and Vehicles
+- Updated mass on the Breton powerplant.
+- Adjusted the position of the bed exit and logout interaction in the Aurora.
+- Synced the light states of the Caterpillar do the exterior door switches.
+- Improved audio feedback on ship weapon impacts. Rebalancing of the volume levels of shield and hull impacts, and adding audible vibration/duress sounds on heavy hits.
+- Tweaks to improve the way ship ambient audio changes with the power state of the ship.
+- Tweaks to improve the audio mix and audio behaviour during quantum travel.
+- Added a new door on the side of the mole to fix problem with sideways opening clipping in to the visible exterior of the ship.
+- Updated surface VFX for the Pisces.
+- Reworked/updated the Drake Cutlass thruster audio.
+- Improved audibility of ship component overheat cockpit warning.
+- Updated nose collision on the Caterpillar to allow damage to the main/front door.

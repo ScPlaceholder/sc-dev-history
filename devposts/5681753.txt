@@ -1,0 +1,51 @@
+## Bug Fixes
+- Fixed - Persistence / ASOP - Vehicles can show as retrievable at locations that the player has not moved or claimed them to
+- Fixed - Ships - mobiGlas - VMA - Components / Mining Laser - Mining lasers display in the wrong tab and can prevent players from equipping or using mining lasers
+- Fixed - Hull Scraping - UI / Vehicles - Inner thought UI is offset for RMC canisters when attached to filler stations
+- Fixed - Actor Feature - Inventory - Equip requests can fail to update in a reasonable / acceptable amount of time, leaving the item in a pending state
+- Fixed - Loot Generation - Loot boxes spawning inside one another
+- Fixed - Aegis Reclaimer - Stanton / Arena Commander - Interaction - The "Engaged Self Destruct" phrase is mirrored/flipped around while in interaction mode in Arena Commander. The button is missing in Persistence Universe.
+- Fixed - Anvil Carrack - Stanton - Vehicles / UI - Carrack top remote turret interaction buttons misaligned
+- Fixed - MULTIVEHICLE - Ships - Ship Features - Flight - Quantum Travel - When entering and exiting any seat during Quantum Travel, there is a high chance you will be ejected into space
+- Fixed - ARGO MOLE - All Variants - Stanton - Ships / Ship Features - PTU MOLE mining cargo capacity is showing 64 SCU instead of the intended 96 SCU
+- Fixed - Drake Cutter - Stanton - Vehicles / Interactables - Landing gear lever on cutter is backwards
+- Fixed - Stanton - Law System - Spawn in prison with weapons and armor after dying with crimestat
+- Fixed - Ships / Vehicles - Impounded Vehicles - ASOP - Pay Fine button can be pressed an indefinite amount of times and will subtract UEC each activate
+- Fixed - GRIN Multitool VARIANTS - VARIANTS ONLY - Weapon / Weapon Feature - Multitool Variants display "HEALING" info regardless of attachments
+- Fixed - Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Fixed - Origin Jumpworks ALL Variants - Stanton - Vehicles/Art/Livery - 600i Sterling paint makes ship lack art materials
+- Fixed - Stanton - FPS / Animation - Weapons will holster and unholster themselves repeatedly at low server FPS
+- Fixed - Ships - Ship Features - Internal elevators can spawn rotated, preventing player access or causing players to be trapped
+- Fixed - Rentals / Vehicles - VMA - Exploit - Rented vehicles can be edited in VMA
+- Fixed - Aegis Reclaimer - Stanton - Physics - Ships - Players can exploit the salvage elevator geometry to clip into the ship by EVA collision
+- Fixed - PU - Characters - Female - Inventory - ADP-mk4 Helmet displays bright visor texture issue
+- Fixed - UI - MobiGlas - SkyLink/CommLink - Player loses mobiGlas access to CommLink and SkyLink through keybinds and PIT after falling from EVA to landing pad
+- Fixed - Exploit / Inventory - Unlimited personal inventory using 'Carry' action
+- Fixed - Interactables / Narrative - The Harvestable variant of the 'Year of the Rooster' Lunar New Year envelope is missing all narrative information from NikNax and the 'Tool-Tip' menu within the Personal Inventory
+- Fixed - Recovery - Mission content - Hurston Safe Retrieval mission does not progress after collecting the objective package
+- Fixed - Multivehicle - UI - MFD - Self and Target Status MFD holo model detaches from the panel when ship moves so hull health cannot be visualized
+- Fixed - Hull Scraping - Weapons / Inventory / Game Code - Any full salvage RMC canister attachment will not attach to a multitool in salvage mode
+- Fixed - Multiple Mission Types - Mission Content / UI - Accepting multiple contracts can show the objective markers for multiple missions at the same time
+- Fixed - Locations / AI - Klescher Rehabilitation Facility - The AI in prison caves take a very long time to move from their spawn closets on a stressed server
+- Fixed - Mission Content - Mercenary - Unable to complete Security Work Assessment, Hostile counter is increasing but no more are spawning
+- Fixed - Multivehicle - Medical - Terminal - Patient medical terminal gets stuck at " Healing in Progress " after performing treatment
+- Fixed - Origin 400i - Vehicles / UI - 400i Exterior Bike Elevator button is missing
+- Fixed - Missions - Personal Transport Beacon - Transport beacon mission markers to a player ship will display the wrong location until nearby object containers are loaded
+- Fixed - Mission Content - Finish Covalex Delivery / Frustrated With Covalex - UI / HUD - Objective marker does not update once package is collected
+- Fixed - MULTIVEHICLE - Ships - Ship Features - Internal elevators can spawn rotated, preventing player access or causing players to be trapped
+- Fixed - MISC Reliant Series - Ships - Audio - Machinery audio in the Reliant main cabin areas is extremely loud
+- Fixed - Mission Content - Zeta-Prolanide Salvage Claim - Not all the cargo boxes are spawning in for player to retrieve
+- Fixed - Rentals / Vehicles - ASOP / UI - Rented vehicles are missing the rental tag and do not display the remaining rental time on the ASOP terminal
+- Fixed - MISC Razor - Vehicle / Animation - When in open space exiting the pilot seat will cause the player to clip into the ship
+- Fixed - Actor Feature / UI - Personal Inventory - Item port helpers are hidden / closed if the player releases the item they are moving in an incompatible location, requiring the filter to be reset
+- Fixed - Multilocation - ASOP - ASOP not showing hangar or pad number, ship not retrieved to any hangar
+- Fixed - Sabre Raven - Vehicle / Animation - When open space exiting the pilot seat and not moving will cause the glass casing to trap the player
+- Fixed - ARC-L1 Galleria Elevators won't call again after being used
+- Fixed - Ships - ASOP Terminal - Spawning ships causes the requested ship to spawn outside of the hangars
+- Fixed - Vehicles - Ship Components - Purchased vehicle weapons applied to a spawned vehicle will have missing assets and cannot fire
+- Fixed - ARGO Raft - Vehicles / Cargo - ARGO Raft's cargo grid clips through its shipping containers
+- Fixed - MULTIVEHICLE - Ships - Ship Features - Flight - Quantum Travel - When entering and exiting any seat during Quantum Travel, there is a high chance you will be ejected into space
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 16 Server Crashes
+- Fixed 1 Server Deadlock

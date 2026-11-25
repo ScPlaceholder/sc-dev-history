@@ -1,0 +1,58 @@
+## Star Citizen Alpha Patch 4.2.1
+Alpha Patch 4.2.1 has been released to Wave 2 Testers!  Patch should now show: VERSION 4.2.1-PTU.9893855.
+- Audience: Wave 2
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 5:5 - 600 Players
+- Starting aUEC: 15,000,000
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Second Life Resource Drive
+Not Ready for Testing or Feedback
+These items below are a partial list of current goals for the latest release and may be partially in the build and even completable but are not ready for feedback and are subject to removal from this release.
+- Ship Battle Mission Addition
+- VOLT Pistol
+- Wikelo Location and Recipe Additions
+- Additional Player Hairstyles
+## Known Issues
+- PU - Stanton - Resource Gathering - Mission Content - Mission rewards are not being distributed despite badging being awarded for completion
+- PU - Stanton / Pyro - Personal Inventory / Local Inventory / Inventory - While attempting to drop, transfer and/or equip items, there's a chance for it to return to the inventory where it’s from
+- PU - Armor / UI / Personal Inventory - Items equipped and/or attached on the actor can't be dragged to be held by the actor's hands as its port will be missing
+- Multivehicle - PU / AC - Vehicles / Weapons / UI / VMA - Vehicle Weapons are not Interactable or Useable (Affects a handful of ships: Mirai Fury Series, Pulse, P-52, Spartan, and Cyclone Series)
+- PU - Vehicle - Naming ships, melting ships, or updating ship packages will delete any non-stock items that are fitted to the ship including paints
+- Multiitem - PU - Vehicle / Turret / MFD - Idris gimbals are empty and weapons/missiles are unable to be equipped to them (if turret is reequipped in the VLM)
+- PU - Pyro - Storm Breaker - Locations - Lazarus Research Complex - Freight Elevator - UI / Interactions - When placing items on the elevator floor then lowering it, the Freight Elevator will lose the items then raise itself (Moderate Chance)
+- ARGO ATLS ALL Variants - PU - Mount / Cargo Grid - Argo ATLS can be placed anywhere on the cargo grid without following the SCU grid pattern
+- PU - Pyro / Pyro I - Storm Breaker - Locations / Mission Feature / Physics - Bullets will not pass through the Shuttle Station's entrance curtain when firing outside
+- AEGS Idris-P - PU - Vehicles - Idris shields do not stop any laser weapons except panthers
+- PU - Freight Elevator / Contested Zones (CZ) - CZ Freight Elevator displays Internal Error when attempting to move items to the warehouse
+- Multivehicle - PU - Vehicles / Target lock - target lock is unlocked at random radar for targets is dropped
+- PU - Pyro - Courier - Mission Feature / Interactables  -  There is a chance that delivery packages cannot be placed on delivery shelves
+## Features & Gameplay
+Gameplay
+- Resource Gathering Polish: Cargo Amount Polish to be more in-line with expectations of size. Payout and Economy Balance
+- Moderate Increase to Carrying Capacity for All Backpacks
+Ships and Vehicles
+- Disabling ground flight turbulence for 4.2.1
+- Cycle Friendlies now only cycles non-hostiles
+- ATLS IKTI gun Muzzle projectile Visual Improvement
+- Enabled Countermeasures in Esperia Prowler Variant copilot seats
+- Reduced BEHR Ballistic Gatling S7 Bullet Spread
+- Increased Talon self destruct to 30s so you have time to escape before explosion
+## Bug Fixes
+- Potential Fix: PU - Stanton - Resource Gathering - Recover Cargo - Mission Content / UI / mobiGlas - Large Recover Cargo mission objective states the incorrect number of SCU required for mission completion
+- Potential Fix :disappointed:  PU - Resource Gathering - Crusader Industries - Missions / mobiGlas / UI - "RESOURCE DRIVE: URGENT MATERIALS NEEDED" contract shows "surface of Waka" in the Details section (STARC-172281)
+- Potential Fix: PU - Stanton - Resource Gathering - Missions - There is a chance for the mission to not progress after arriving at the go to location (STARC-172300)
+- Potential Fix: PU - Creatures - Valakkar - Irradiated Apex - The limpets on the Apex Irradiated Valakkar cannot be mined using a mining multi-tool
+- Potential Fix: PU - Locations / Cargo - Freight Kiosk / Freight Elevator - Freight Manager gets stuck on Loading Contents after exiting the kiosk UI while the platform is descending (STARC-162498)
+- Potential Fix: PU - Pyro - Rundown Stations - Shopping / Selling - Cargo Deck - Shopping display items are missing from the hangers and mannequin
+- Potential Fix: PU - Locations - Shopping - Pembroke and Novikov suits are not available to buy in Refinery Shops (STARC-147008)
+- Potential Fix: PU - Grim HEX - Locations / Shopping / Armor - Defiance Armor is not displayed on mannequin and not available in Shop Kiosk (STARC-152109)
+- Potential Fix: PU - Storm Breaker - AI - Apex Valakkar can lock into an animation and stop moving
+- Potential Fix: Esperia Prowler ( All variants ) - PU - Vehicles - Prowler variants  MFD HUD Buttons Are Duplicated in co-pilot seat. This behavior is not observed in pilot seat.
+- Potential Fix: PU - Pyro - Storm Breaker - Creatures / Server Recovery - The Apex Valakkar molehill will not despawn at the end of the fight if a server error occurs during
+- Potential Fix: PU - Missions - Resource Gathering / Resource Drive - Recovered cargo from the mission doesn’t recognized as “Contract Orders” at the Freight Elevator (STARC-172660)
+- Potential Fix: Resource Gathering - mobiGlas / UI - "The Fundamentals of Mining" journal entry does not exist (STARC-172494)
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 3 Server Crash

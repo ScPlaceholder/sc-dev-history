@@ -1,0 +1,4 @@
+Vulkan gives you a LOT more direct control of the GPU hardware than OpenGL due to that you can be far more efficient, tailoring your graphics pipeline to do exactly what you need, and no more.
+OpenGL on the other hand, takes care of those details for you, but with less options to optimise behaviour. However, OpenGL means you put colourful triangles on the screen with a lot less code.
+Vulkan isn't necessarily faster than OpenGL. You can't just convert the GL code to Vulkan and get a speed boost, you need to rewrite your render code to fit Vulkan's strengths.
+If I work on my own projects and want graphics, I'll use OpenGL, because it's much quicker to get started, and those project rarely need much graphical performance to warrant the development time.

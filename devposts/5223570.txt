@@ -1,0 +1,51 @@
+## Star Citizen Patch 3.17.2l
+Alpha Patch 3.17.2l has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.17.2-PTU.8134233.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Audience: Wave 1
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 10,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- Siege of Orison Playtest
+- Turret Acceleration changes
+- Derelict Reclaimers V1
+- Derelict Colonialism Outposts
+- New Space Stations and Lagrange Points
+- Grim HEX Hospital Expansion
+- Combat Service Beacons V2
+- Illegal Collect and Delivery Missions
+- Player and AI Networking Updates
+Known Issues
+- Stanton - Network - Actors are teleporting around after networking updates (Ongoing improvements and testing)
+- Locations - Transit / Elevator - Multiple Station EZ HAB Elevators Broken (This build has further logging for this issue)
+- Missions / AI / Combat AI - Some Enemy AI will not engage Security AI or Players
+- AI / Characters - Inventory - Looting the weapon from an unconscious AI will cause it to teleport back into their hand a short period after picking it up
+- Red Wind Linehaul Mission - Delivery / Collection - Players cannot pickup/grab the box
+- USPU / Missions - If the "Mission Sharer" disconnects or exits out of client, the Combat Beacon contract will fail for any remaining party members
+- Animation - Weapons - All weapons are held like a pistol whilst moving in EVA
+- Seize the Data - Mission Feature / Law / Criminality - Destroy the Reclaimer Objective Results in CS2 for destruction of vehicle
+- UGF Raid - Missions / AI / Combat AI - Some Enemy AI will not engage Security AI or Players
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- Ships - Components and interior zones remain when ships are destroyed
+- UI / Rental Kiosk - When purchasing a rental vehicle from a rental kiosk the money taken will not be displayed properly on the Kiosk or the mobiGlas
+- ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+- Missing Ships on SCOUNDREL PACK (and others) on PTU 3.17.2 (This is a PTU only issue that is being worked on)
+- Persistence / Inventory - Standalone Storage Container does not persist after character reset
+- GrimHex - Atmosphere - Several locations at grimhex do not have an atmosphere
+## Feature Updates
+Ships and Vehicles
+- Tonkified the Nova Tank with a great increase in health
+Core Tech
+- Temporarily disabled decoupled lighting on lower planetary effect LODs which should give great client side performance gains in storms and dust
+## Bug Fixes
+- Fixed multiple areas of missing atmosphere in the new grimHEX hospital
+- Fixed a visarea issue in the Aegis Hammerhead near the portal leading to the main elevator room
+- There should no longer be a Visarea issue in the Port Tressler galleria
+- Purchasing a rental vehicle from a rental kiosk should now properly update displayed money on the Kiosk and mobiGlas
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 2 Server Crashes

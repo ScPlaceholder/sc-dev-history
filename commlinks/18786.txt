@@ -1,0 +1,87 @@
+Squadron 42 Monthly Report
+June 2022
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 07:06:2022
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 Recruits.
+Welcome to June’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including updates to Human combat, Volt weaponry, and space flight mechanics.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI (Content)
+Last month, AI Content began their work on the master-at-arms behavior, which uses the same AI as the bartender but interacts with different usables and plays other dialogue options. Supporting SQ42’s numerous weapons and their varying shapes and sizes requires an extensive catalog of assets.
+Earlier in the year, the team were pleased with the results of the mo-cap redelivery that led to clear improvements in Graves and Kelly's movement cycles. Last month, they continued the process for the remaining core cast characters. These assets had not been worked on for some time, so required updates to meet the desired fidelity.
+The landing officer is now finished and integrated into the chapter flow. The role of this AI is to help the player land safely and correctly oriented on the landing pad, with character animations playing to assist with positional and rotation changes. This routine can now be viewed on the ship's cockpit display, as solely seeing the AI through the cockpit visor proved challenging.
+Lastly, AI Content received essential bug fixes from AI Tech to allow the movement of trolleys from multiple alignment points. The AI can now wheel a diagnostic cart towards and away from the Gladius when it lands. This has allowed the team to conclude their work on this part of the deck crew behavior.
+## AI (Features)
+Last month, on the Human combat side, AI Features began implementing logic for a selection of different attack archetypes: defender, pusher, and strafer.
+- The defender chooses a position to attack from and remains there until cover is compromised or no longer valid (e.g., the target is out of range or no longer visible)
+- The pusher is more active, rapidly closing the distance between them and the target in order to build pressure
+- The strafer is the more tactical archetype, choosing a lateral position outside the direction the target is aiming in to set up flanking opportunities
+Each NPC can select the attack archetype that they determine to be the best for that situation based on multiple criteria. These criteria include the range of the weapon that the AI holds (e.g., characters with short-range weapons prefer the pusher archetype), how many characters are attacking a target, and how many other characters are using a particular archetype.
+Each criterion gives a certain ‘score’ for each archetype that’s used as a weight when randomly choosing between the archetypes. This supports variation, reaction to different situations, and some intelligence in the makeup of archetypes in any given situation. Tasks from last month involved implementing each of the criteria scoring functions and the system for summing these and weighting the archetype selection.
+For Human combat, work went into the perception, cover, and movement animations for the female skeleton. This is in pursuit of completing the set so that characters with the female skeleton can perform the same combat behaviors as the male skeleton.
+Work continued on the implementation of the new weapon accuracy system mentioned in previous reports. Last month, the prototype was set up. This features debug visualizations of the percentage chance calculated from the different factors, which will allow the designers to easily tweak accuracy to balance difficulty.
+For the Vanduul, the team took advantage of the tech described in April’s report and merged the Vanduul and Human mastergraphs (the top-level state machine that controls the AI behavior of characters). This should make the system far easier to maintain while also allowing for specific behaviors for unique characters. They also selected and processed the animations generated in last month's mo-cap sessions, including bespoke animations for a section of stealth gameplay.
+## AI (Tech)
+June saw AI Tech prototyping a set of fauna behaviors, focusing on the implementation of the entity class, verifying that all the components can function correctly on creatures. They’re currently setting up animations, an initial version of the bspace, a basic creature roaming behavior, and a basic combat behavior based on the combo melee system used by the Vanduul.
+Work continued on the locomotion code. This included improving the transitions between different locomotion states by further developing the initial implementation of pose matching. They also implemented linear speed warping, including a way to dynamically calculate a spline into a specific pose. For example, the enter position of a usable. This allows the team to make the transition between movement and interactive objects smoother and more believable. They also began improving and fixing idle steps, which are special animations used for extremely short paths (max 75cm).
+For 3D navigation, the team improved the implementation of ORCA 3D for collision avoidance and continued to develop break splines. Break splines can be dynamically attached to the systemic movement of any entity that uses 3D movement (currently ships but will include characters in EVA in the future). The entity can then select the appropriate spline based on its skills, direction, and other conditions before smoothing its entrance, allowing it to perform a cinematic movement into a systemic behavior.
+For trolley use, the team focused on tasks to allow an NPC using a usable (in this case a movable object) to be dynamically attached to another usable (such as a parking spot). They also supported the trolley lightweight update and tweaked path following to allow it to minimize the distance of the trolley from the path.
+On the Subsumption side, multiple tool aspects were upgraded and bugs were fixed to move development into the ‘improvement’ phase. A new panel was also added to give an advanced selection of parameters when the dropdown menu becomes too large.
+## Animation
+Throughout June, the Animation team worked on zero-g traversal, helmet usage, female spec-ops AI, and look-dev for weighted characters.
+Improvements were made to the cast locomotion, Vanduul searching, Vanduul in cockpits, sick persons, and ladder blockouts. Weapons-wise, progress was made on the master-at-arms and the Volt SMG and shotgun.
+Pre-vis tests were done on chapter one’s AI, while improvements were made to the reaction system to enable smoother feeling gameplay.
+They’re currently making final passes on several cast members' facial animations.
+## Art (Characters)
+Character Art continued to develop key outfits for the UEE Navy, including the bridge officer uniform, deck crew EVA outfit, and training gear. They also worked on armor for the Screaming Galsons and made major updates to the hair shader alongside the Graphics team.
+## Art (Weapons)
+The Weapons team began the month working on a number of Volt weapons, including an assault rifle, LMG, SMG, and shotgun. They also finalized their work on a physical riot shield.
+While the Art team worked on modeling new assets, Animation worked to give life and functionality to several FPS devices, including the fire extinguisher, laser trip mine, breaching charge, and a Volt sniper rifle. A new Klaus & Werner underbarrel light attachment was created too.
+## Engine
+In June, the Physics team made several improvements to ray world intersections (RWI), which now contains a semi-continuous mode to trace against rigid bodies. This makes projectile intersection tests more robust with fast-moving ships. RWI was also significantly optimized (3-5x on heavy usage).
+The tiling of dense SDFs was introduced, and SDF coordinate conversion and trilinear interpolation were optimized. Support for ‘player only collision’ geometry nodes inside CGFs/CGAs was fixed and extended, while work on the new ropes continued. Various bug fixes and other improvements were submitted too.
+On the renderer, the Gen12 transition continued with more passes being ported over, including responsive AA and decal rendering in the forward stage. The processing of scattering queries was reworked and a debug UI was added for them too. Buffer copying of sun shadow cascades was ported as well. The format of the previous HDR frame has been adjusted (reprojection, temporal AA) to be more efficient, and the cleanup of the render thread began.
+The Gen12 ports of atmospheric and volumetric cloud rendering continued as a generalized processing context, and new stages to decouple view-dependent resources from the core systems that operate on them have been introduced. The atmosphere shader code was adjusted to compile well with DXC and SPIR-V. Various improvements were made to prevent concurrency issues when streaming in properties of multiple planets at the same time and relaying them to the atmosphere and cloud-rendering systems.
+On the core engine, entity areas now utilize tags to track what entities/areas events send to each other. This replaces the hidden hierarchy logic that caused various issues and allows for more efficient code. Work on running the entire code base through include-what-you-use (IWYU) continued. The goal is to eventually make IWYU part of the continuous integration pipeline (trybuild) to keep code clean. Furthermore, a recent integration into the main development branch saw the introduction of the cigSTL/eaSTL namespace, which is planned to become a customizable STL library for StarEngine. The entity component update scheduler received updates to avoid iterating component lists when using manual update policies (performance). Work on improving file location (IO) continued, which should eventually lead to improved loading times for small files. Also, work on an improved r_displayinfo continued. Lastly, the old FPS analytic buckets were replaced with an array-based frame time bucket that allows for more accurate profiling information.
+## Features (Gameplay)
+The SQ42 Feature team continued work on the character customizer, making visibility and usability improvements alongside general polish. Further improvement and polish tasks were also completed for the flight academy application form. The ability to request weapon attachments from the master-at-arms was added too.
+The team also supported persistent entity streaming, as recent changes caused knock-ons that affected several SQ42 missions.
+## Gameplay Story
+Gameplay Story began June implementing the last of the mo-cap data captured at the end of April, which allowed them to complete several scenes to a high standard. It also enabled them to deliver a new scene featuring an NPC dragging a refueling hose over to the Gladius and plugging it in. Further polish work is required but the scene is already visually interesting.
+Mid-June saw a new mo-cap session, with the team preparing to work with the data when it arrives.
+Towards the end of the month, maintenance and pose updates were done for several story scenes. The team also updated all bunk-bed and mess-hall scenes to ensure they correctly ‘handshake’ with the AI.
+## Graphics & VFX Programming (and PTT)
+Last month, the Graphics team continued porting features to Gen12, including gas clouds, rivers, frozen oceans, refraction, and multi-pass support. Fixes were also submitted for tessellation partitioning for planetary ground fog. For the Vulkan backend, the team fixed issues caught by the validation layer, including mismatched texture types and mismatches of unused vertex input attributes (which are now reflected from the shader).
+For the render-to-texture system, the team fixed a crash caused by the wrong resolution being calculated when the screen resolution was changed, along with an issue with RTT holograms occasionally pixelating.
+Bugs were also fixed for the LOD merger, including an update to allow combining objects with more than 64 sub-materials. They also investigated issues with the rendering of invalid static shadow region entities. Significant progress was made on the hair shader too, including updates to greying controls, variation tiling, and melanin selection.
+VFX Programming continued investigating offline damage maps with persistence. They also continued implementing ImGUI debug tools for damage maps and a dynamic bitset data structure for damage-map queries. Changes were also made to damage-map materials alongside optimizations to hit processing and rendering.
+## Level Design
+Last month, the FPS team moved on to three new chapters (two more are in the pipeline for the coming weeks).
+Alongside the other Level Design and System teams, the Space/Dogfight team continued to focus on getting a large part of the game fully playable with functioning mechanics.
+As well as continuing to implement all in-game scenes, conversations, break-outs, and re-joins, Social Design worked closely with Social AI to implement some of the expanded systemic content that will bring life to the levels. For example, engineers going about their daily schedules and crew on downtime in the mess hall.
+## Narrative
+June saw Narrative continuing to sync with Design. This involves moving through the updated mission flow, assessing whether the existing lines still sell the intended story moment, and whether they provide clarity on how to properly progress. If they find a situation where the existing lines don’t apply, they discuss a modification or addition. These syncs also provide the opportunity to deepen the narrative experience, be it providing a backstory for the location or its inhabitants.
+The team then moved onto another of the larger set-piece levels and outlined the prospective scripts and characters. Once decided, they’ll generate scripts and placeholder recordings so the rest of the development team can hear and react to the content in situ.
+Narrative also developed ideas for in-mission collectibles, discussed the presentation and tone of the mission objectives, and outlined the hint system that will help lost players.
+Finally, the producers from all disciplines coordinated to ensure that all remaining tasks were identified and tracked. The Narrative team specifically is going to be entering an interesting but intensive production schedule to capture any of the placeholder content that’s been validated in playthroughs.
+## QA
+QA supported Cinematics by reproducing issues found during development and chasing up outstanding bugs still causing issues for the team.
+General focus throughout June was on bug validation and reporting, and recording scenes for review.
+They also made a push for editor testing to ensure the tools used by the team are working as intended, ensuring the development workflow remains stable.
+## Tech Animation
+Tech Animation team continued wrapping up the animation pipeline refactor mentioned in last month’s report. This involved creating new rigs and tools and stripping out old code for more elegant and performant solutions.
+They also continued work on a new system that puts fidelity above all else. Although rarely used in gaming due to its expense and limitations, this type of system is ideal for performance pieces.
+Planning was done for the coming quarters, and numerous new character heads progressed towards animation support too.
+## UI
+In the near future, UI will begin implementing more streamlined vehicle HUDs and MFDs for Squadron 42. In preparation, they finalized the new layouts and visual concepts.
+For the new Starmap, the team worked on navigation and began preliminary work to show space clouds.
+The UI Tech team upgraded the new 3D UI cards system so that, as well as floating layered UI, they can automatically apply UI to holographic curved surfaces. This allows them to create interesting visuals that weren’t possible before, which will be trialed on the new Squadron 42-exclusive mobiGlas and visor.
+## VFX
+Last month, VFX worked on a key cutscene involving significant amounts of destruction.
+“Due to the extra complexity of this scene, we spent some R&D time trying different ways to convincingly animate metal structures bending and tearing as opposed to simply shattering like in lots of real-time destruction simulations.” VFX Team
+Elsewhere, VFX Concept worked on a new suite of energy-based weapons and support was given to the Art and Design teams across various locations.
+## WE'LL SEE YOU NEXT MONTH...
+// END TRANSMISSION

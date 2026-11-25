@@ -1,0 +1,67 @@
+PU Monthly Report
+January 2025
+Welcome to January’s PU Monthly Report! Hot on the heels of the recent November/December report, we’re back detailing everything done for the Persistent Universe at the beginning of 2025. Read on for all the latest updates on AI, core gameplay, missions, narrative, and much more.
+## AI (Content)
+The AI Content team began the year prototyping an upcoming NPC that will utilize an amalgamation of several behavior types. Work was done on a proprietary tool that will allow the designers to generate a script of the in-engine dialogue flow to ensure the lines work as intended. This will allow for much more efficiency in the writing and capturing of future characters.
+The team then began updating Stanton’s landing zones with bespoke air traffic controllers that better represent the city. While there is still some required technical validation, these characters will start appearing soon.
+Finally, the designers continued their ongoing review of Stanton, this time focusing on Grim HEX to refactor the population to ensure it’s using the correct behaviors and acting appropriately.
+## AI (Features)
+In January, AI Feature’s primary focus was split between bug fixes and creature-behavior improvements.
+For example, the code for throwing grenades was updated to unify some of the code paths. This gives more consistent functionality between cover and open-space launches.
+For Human combat behavior, friendly-fire checks were updated to not consider the large bounding boxes of vehicles as 'friendly,' which could block firing.
+For creatures, the team focused on improving the valakkar’s behavior.
+“We are working hard to make sure this creature arrives in your hands in the best possible way!” AI Features Team
+The devs are currently expanding the ‘group’ system to be more dynamic and better support dynamically spawned entities. The first use case is the Quasi grazer, as having a better understanding of the group they belong to will improve the look and behavior of the herd.
+AI Features also continued to sync their work between projects to ensure that the improvements made for Squadron 42 are available for use in the Persistent Universe as quickly as possible.
+## AI (Game Intelligence Development Team)
+The Game Intelligence Development (GID) team continued their work on StarScript, with January’s goal being the implementation of the ‘views’ feature. This was requested by the designers, who consider it a significant feature of the tool.
+Work involved creating the ‘views object’ and ‘views folder’ in the Smart Outline, managing views functionalities, ordering and deleting views, and grouping graphs. It also involved presenting views and its header in the script graph and implementing back and forward functionality.
+Once complete, GID began implementing StarScript's new MasterGraph design, which will be presented in a sectioned format rather than a global display as in Apollo. This means it will be viewed from the perception of a selected state (this visual design will be created for each hierarchical state).
+A visual improvement was also made to the automatic parenting groups for parallel and selector nodes, making the graph appear less crowded.
+QA are currently testing the tool to identify any issues following procedures.
+## AI (Tech)
+AI Tech began the year fixing bugs, improving features, and kicking off new tech.
+For the latter, work began on a new 3D-pathfinding implementation that will give better results in tight spaces or areas with concave shapes. This will also be utilized by ship AI when traversing complex asteroids or space stations and can also be used by NPCs when EVAing inside ships.
+The internal StartScript tool received multiple usability improvements for creating new behaviors and missions.
+AI Tech also finalized December’s work on the ‘chase’ and ‘melee attack’ movement requests, which delivers a boost in both performance and visual fidelity compared to the previous implementation.
+The ‘conversation’ system also received updates to how avoidance bubbles are computed so that NPCs don’t disturb an ongoing conversation.
+For Alpha 4.0.1, fixes were made to the navigation and boids systems.
+Alongside this, planning was done for the work still required to fully synchronize AI components with the Server Meshing authority transition and other features and systems planned for development this year.
+## Animation
+The Gameplay Animation team began the year working on the kopion hound and various sizes of the valakkar.
+They also created facial animations for various PU characters and events and worked alongside the AI designers on more robust social-AI behaviors.
+AI for the ‘spec ops’ set, alongside two others, is currently underway to add more challenge to combat.
+## Art (Characters)
+In January, the Character team continued working on StarWear art debt. They also modified the Duster armor, progressed with a stealth armor, designed a new backpack, and developed additional creature variants for future patch releases.
+The Concept art team explored ideas for various new items and are currently looking into paint schemes for existing armors.
+## Community
+The Community team kicked off the year by announcing the winners of the Gift that Keeps on Giving video contest. To showcase what was coming up, they released An Epic Month Ahead Comm-link, which previewed the events and activities planned for the rest of January and into February.
+The team also managed the first revamped Squadron 42 Newsletter, alongside launching a contest that offered the chance to win a page of sheet music from the Squadron 42 score. They also supported the Fight for Pyro Global Event with miscellaneous publishing tasks and a comprehensive information post.
+Lastly, but most importantly, the team carried on with evergreen tasks related to gathering/distributing feedback directly to development, and is already deep in discussion on how they can shed more light on the details of any ongoing issues the community may be encountering.
+The team continued to support Red Festival 2955, including a catch-all post, the Envelop the 'Verse in Kindness screenshot contest, a referral bonus, and an updated Arena Commander Schedule.
+Additionally, they supported ATMO Esports’ Daymar Rally 2955 and began finalizing plans for this year’s Bar Citizen World Tour, alongside a variety of other event-related initiatives.
+"We’re eagerly looking forward to meeting you all across the globe as we continue the Bar Citizen World Tour in 2025. We welcome your input on future locations, whether you're interested in a large gathering or a smaller meetup, we want to hear your suggestions. Check out full details here." Community Team
+## Core Gameplay
+Throughout January, the Core Gameplay teams investigated and improved many issues found during Alpha 4.0 Live Preview. Some of these proved difficult to reproduce and resolve, leading to a few false positive fixes. The teams are currently expanding their debugging tools and logging to better understand future problems and ensure the correct solutions are applied.
+Core Gameplay also began planning for the rest of the year, laying the groundwork for upcoming patches and planned features and content.
+Alongside this, technical documentation was created for fundamental improvements or rewrites to some of the core systems, including the transit and hangar flows. This involved cross-team collaboration to ensure that improvements are not solely on the game side but also support content setup and the latest engine features.
+## Economy
+The Economy team kicked off the year gathering feedback and data regarding the changes they implemented in Alpha 4.0. They then tweaked commodity prices and fixed several issues identified in Pyro.
+## Mission Design
+Mission Design spent time fixing bugs for Fight For Pyro, ensuring it was ready for release. Following this, they continued the ongoing mission refactor and shared an update on the status of some old missions on Spectrum.
+They also continued to create new, unannounced content that will improve the quality of all missions, including retroactively improving all existing missions.
+## Narrative
+The Narrative team began 2025 meeting with multiple disciplines to solidify new ways of delivering in-game narrative content. They also focused on increasing the number of characters that players will meet in the ’verse. Through these efforts, their hope is that they will expand on the storytelling opportunities that players will be able to experience and discover in upcoming patches.
+In addition, the team fixed any remaining issues for the Alpha 4.0.1 patch and generated mission text, location strings, and item records for the new content coming in upcoming releases.
+## Online Technology
+In January, the Live Tools team released a new major feature to manage access and permissions in a more granular and versatile way. They’re currently gathering feedback from the different users to discuss future improvements.
+Following the holiday break, the Online Services team continued to add various improvements to the ongoing mission-system refactor, including Global Events and new features. Furthermore, the social and entity-subscription services also received various improvements.
+In the last week of January, both teams met in the Montreal office to establish and plan their 2025/2026 roadmaps.
+“This planning session resulted in more surprises we will share with you in the coming months!” Online Technology Team
+## R&D
+The R&D team began January investigating rare PU crashes inside the planet-spawning code. A bug was found inside the serialization framework causing a concurrency issue with on-demand type ID generation. A fix was made that is now live in the PU.
+Moreover, work started on prototyping a new method for large-scale soft-terrain shadow generation. This will improve quality while reducing the fairly high cost of generating the needed shadow maps.
+As mentioned in October’s report, work on rain volumes inspired a prototype for improved ground-fog rendering. This will be cheaper to evaluate and render and improve the modeling aspect of ground fog and its lighting by self-shadowing and casting shadows (like rain volumes and clouds). Work began on transforming the prototype into production code.
+## VFX
+For Alpha 4.0.1, the VFX team worked on the MISC Fortune and elements of another vehicle, which will be shared soon.
+A big push was also made on previous location work that hadn’t been ready for polish at the time of Alpha 4.0’s release.

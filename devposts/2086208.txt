@@ -1,0 +1,95 @@
+## Star Citizen Patch 3.5.0
+Alpha Patch 3.5.0 has been released to live!!  Patch should now show: LIVE-1524999.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitize\LIVE.   Additionally, due to a complete overhaul of keybindings and updates to the new flight model, it is strongly recommended players start custom bindings from scratch rather than import older bindings.
+IMPORTANT: Please be sure you are on launcher version 1.1.1, fully updated, before you begin downloading the patch.
+Major Known Issues:
+- When exiting the options menu on the character customizer screen, the options will remain up disabling the players' control. W/A: Press "ESC" to go back to the customizer.
+- If the player exits the game with the mobiGlas still open they will return to the universe with a blurry screen. W/A: Close mobiGlas before exiting.
+- Delivery boxes can fall through the flooring of some ships.
+- Ships do not leave behind cargo when destroyed.
+- Ruto's hologram is missing.
+- Some Area18 habs lack atmospheric pressure.
+- Ships can exceed their speed limits by turning slightly while accelerating.
+- Trying on clothing at Casaba can sometimes result in the loss of armor pieces.
+- Ship bed logout may be unreliable or inconsistent.
+- Ship weapons are not firing fixed forward as intended.
+- Switching to external camera from the pilot seat and back when reset the HUD and chat.
+UPDATE:  Applied a hotfix to the Service Beacon Service which prevents Beacons without player/location information from appearing
+UPDATE: We deployed hotfix 1524999 to live to fix a crash during mining.  Hotfix update notes have been appended below
+## Feature Updates
+Universe
+- Various polish to NPCs and usables around Area18.
+- Lighting polish for Lorville, Area18, and UGFs.
+Missions
+- Added more variation to NPC service beacons.
+Ships and Vehicles
+- Adjusted the HUD element on several ships to avoid offset, overlap, or scaling issues.
+- Radar ping results should now appear on the 3d radar.
+## Bug Fixes
+- The sky bus at Area18 should no longer occasionally hitch in its motion.
+- Missile lock and launch should no longer be unbound by default.
+- Darneely's dialogue and animation should no longer become mangled if the player exits and returns to the interaction area.
+- The no fly zone at Area18 should now properly take control of the ship and not fly the player into the ground.
+- "Restricted Area" warnings should no longer display in 3rd person.
+- Players should no longer occasionally become stuck in a powered off, unexploded ship upon taking critical damage.
+- Players should no longer quantum travel to a point just outside of the radius where further travel destinations are visible.
+- Fixed missing weapons at various displays for Cubby Blast.
+- There should no longer be objects preventing interaction with store items at Cubby Blast.
+- Landing dust should no longer persist even with ship power and engines off.
+- Players should no longer be occasionally blocked by the no-fly zone when attempting to land or take-off from side hangars at Area18.
+- Corrected the "destroy stash" mission to reward the correct amount.
+- The "destroy stash" count should no longer fluctuate occasionally.
+- The Freelancers should no longer have cockpit geometry blinking in and out when entering or exiting hangars.
+- Fix for missing ambient audio at Area18 and some UGFs.
+- The snoopy cap should no longer remain attached to the player after removing the helmet.
+- The player should now be able to move on respawn after dying with chat activated.
+- Fixed an issue causing players to get items attached to their feet (note: Those currently affected will still need to be reset to fix older occurrences)
+Technical
+- Fixed 9 client crashes.
+- Fixed 7 server crashes.
+- Additional memory scaling to avoid corruption crash associated with mining.
+## Full 3.5.0 Patch Notes
+## New Features
+General
+- Added DNA face customization system.
+Character selection and creation now uses a DNA face customization system. Initially you will be able to choose a gender, then select from a set of currently available characters and customize the blend of their facial features that will be represented in your own character. System includes “Simple” and "Advanced" modes that allows you to customize your face with preferred level of complexity. Additionally, "Eidonomy" selection provides the ability to select individual traits such as eye and hair color, skin tone etc.
+- Added playable female characters.
+- Adding "headphones" setting in audio menu.
+Universe
+- Planetary Locations: Planet ArcCorp and its moons Lyria and Wala.
+Unlike the other planets in the Stanton system, the ArcCorp has the distinction of being almost entirely developed and built on. Nearly every square kilometer of the planet has been allocated for habitation, commercial use, industrial plants, and massive warehouses. As such, a strict, low level no-fly zone is in place for protection, though many choose to construct their buildings taller than the zone in order to offer landing opportunities. ArcCorp has two moons: Lyria, an icy moon dotted with cryogeysers and cryovolcanoes and Wala, a low density moon notable for its large crystalline outcroppings.
+- Major Landing Zone: Area18.
+Area18 happens to be one of the few landing zones designated by ArcCorp for interplanetary traffic and is one of the main commercial ports for the surrounding region. If travelers manage not to be overwhelmed by the hectic sights and sounds of this landing zone, they can find a variety of goods from trusted names as well as unique local providers. ArcCorp has contracted with the PMC group "BlacJac Security" to ensure that their world and its surrounding environs are kept safe and open for business.
+- Added new mission giver: Tecia "Twitch" Pacheco.
+Twitch came up as a soldier who transitioned into freelance security work after her service ended. Things seemed to be working out until she suffered nerve damage on a job for BlacJac Securities and they unceremoniously cut her loose. Now, left without employment and with a very specialized skill-set that she couldn't use, she turned to the criminal element that she used to hunt. These days, she lurks around the back alleys of the megacity Area18, making deals and introducing people or as she calls it "enjoying her retirement."
+- Added Hurston Security ship variants for areas in and around Hurston.
+- IFCS will now engage autopilot and attempt to turn your ship out and away when intersecting with a no-fly zone.
+- Players can now set quantum travel way-points on members of their party.
+Missions
+- Added environmental missions where AI can police unlawful players and track/call in additional support when doing so. The level and ship of the opposing force will depend on the player's wanted level.
+- Added combat assistance service beacon mission types for AI.
+- Added a patrol mission to Delamar.
+- Added destroy satellite missions into Hurston area.
+- Added additional delivery mission variants.
+Ships and Vehicles
+- Added: MISC Reliant variants Tana, Sen, and Mako.
+- Added Anvil F7C-M Super Hornet Heartseeker.
+- Added automated gimbals
+Automated gimbals are an additional setting for gimbals that allow them to attempt and automatically track targets within a cone in front of the ship.  The cone is designated by a dashed circle, which is separated into two when the gimbals do not have a lock on the target and closes into a single circle when they develop a lock.  This mode can be cycled to via the "R" key
+- Added Tachyon "Singe" cannons.
+- Added new turret UI and sensitivity controls
+Turrets now have a UI overlay that shows their position relative to their parent ship (in degrees), the current sensitivity (slider bar), and with the current fire mode.  Additionally, there are now interaction nodes for increasing and decreasing turret sensitivity directly from the turret seat.
+- Added voice feedback for events while mining.
+- Items and components now wear at a very slow rate.
+- Items and components can now be repaired.
+- Added ship weapon auto-convergence
+Fixed and gimbal weapons now auto-converge disparate weapon velocities and ranges into a single pip based on the slowest and shortest range weapon you have equipped.  Additionally, gimbal and fixed weapons have a very small amount of target convergence (still being tuned).
+FPS
+- Added: Gemini S71 assault rifle
+A well balanced and designed Assault Rifle, favored by wealthier private military professionals who want to make a display.
+- Added: Kastak Arms Coda pistol
+A no frills, raw, heavy ballistic pistol that packs a heavy punch if it connects. What it lacks in fire rate and magazine size, it more than makes up for in range and power.
+- FPS weapons now have dry fire audio when out of ammunition.
+- Added color variants to many armors and undersuits.
+UI
+- Added UI icons for additional kinds of contacts.

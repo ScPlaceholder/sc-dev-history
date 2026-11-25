@@ -1,0 +1,58 @@
+Hello everyone,
+Welcome to another Patch Watch! These posts shine a light on upcoming features, improvements, and fixes that may not appear on the Public Roadmap but are updates we believe you will find valuable.
+For our first Alpha 5.0 Patch Watch, we're focusing on Guild Halls and Contract Boards, mission progression, Starmap improvements, ground vehicle handling, and several updates to Freight Elevators and hauling gameplay.
+Let's dive in!
+## Guild Halls and Contract Boards
+Alpha 5.0 introduces a new approach to finding and completing missions, with Guild Halls and Contract Boards bringing more opportunities to the areas you're exploring.
+Previously, missions available through the mobiGlas could take you across an entire planetary system, with objectives sometimes spread across distant locations. This made it difficult to combine multiple contracts into a single journey.
+Career Contract Boards and Notice Boards
+Guild Halls are physical locations containing different types of boards, each offering its own opportunities:
+- Career Contract Boards provide work from factions associated with guilds, such as the Mercenary Guild and Interstellar Transport Guild. Each board features tabs for factions offering contracts in the area, allowing you to choose who to work for and build your reputation.
+- Notice Boards offer personal jobs from local settlers, such as recovering lost packages or completing nearby tasks. These contracts reward credits without contributing to faction or guild reputation.
+A More Local Mission Experience
+This new approach supports what we call hub-and-spoke gameplay, with Guild Halls acting as central locations where you can gather contracts before heading out into the surrounding area.
+For example, you might arrive at a settlement, pick up several nearby contracts, and travel between objectives without needing to fly across the planet. Some jobs may even be close enough to complete on foot or using a ground vehicle, such as the Dragonfly. Once you're done, you can return to the Guild Hall, browse the available contracts, and head out again.
+The idea is to make it easier to stack missions and spend more time exploring a particular region, rather than repeatedly traveling long distances between objectives.
+Mission Variety and Availability
+The contracts available on each board also depend on the surrounding environment. Locations are organized into clusters containing different facilities, settlements, and potentially hostile-controlled areas.
+Some missions require specific combinations of locations, facilities, or events. For example, a contract might need two hostile locations, a terminal, and a dead drop. If those elements aren't present, that contract won't appear on the board.
+This means different boards can offer different opportunities depending on their surroundings. We've also reworked and combined existing mission archetypes to create new contract configurations built around familiar activities.
+Guild Reputation and Career Progression
+We're introducing guild reputation as an additional layer of career progression.
+Previously, access to career contracts was primarily determined by your reputation with individual factions. Now, certain contracts require both faction reputation and the appropriate guild rank. Even if you've already built a strong reputation with a security contractor, for example, you may still need to progress through the Mercenary Guild's ranks to unlock additional work.
+Completing career contracts raises both faction and guild reputation. Hauling follows the same rules, with higher-ranked contracts covering longer distances and paying more. Experienced haulers can still accept lower-ranked jobs for smaller payouts and reputation gains.
+Nyx I Location Updates
+As development continues on Nyx I, we're refining the distribution and density of locations across the planet. Settlements, location names, and available missions may change as we adjust their placement; the overall distribution will continue evolving as we refine the planetary experience.
+## Starmap Mission Improvements
+We've made several improvements to help you find mission objectives and plan your routes more easily.
+When using the Starmap from your ship, you can now select a mission marker and use Set Route to plot a route to the nearest quantum travel navigation point.
+We've also updated how mission markers are displayed:
+- New icons to better identify tracked mission markers
+- A toggle to isolate tracked missions in the Starmap
+- Untracked mission markers are now visible without having to track each contract individually
+- Improved zoom functionality when navigating the Starmap
+The Mission Complete notification has also received a new banner, making successful mission completion easier to distinguish from regular notifications.
+## Ground Vehicle Handling Improvements
+We're also working on a handling pass for ground vehicles, focusing on stability and consistency across different environments.
+The current updates include:
+- Revised suspension and damping across most ground vehicles, excluding the MULE at the moment, as it runs on an entirely different handling system to allow the skidsteer behaviour.
+- Reduced sliding when applying maximum acceleration at low speeds
+- More consistent handling across the ground vehicle roster
+- Improved collision interactions with foliage
+While driving across uneven terrain should feel more predictable, your choice of vehicle still matters. Larger wheeled vehicles may be more comfortable on open plains, while smaller vehicles such as the Nox are better suited to navigating dense forests, swamps, and marshes.
+## Freight Elevator and Hauling Mission Improvements
+Alpha 5.0 brings a range of quality-of-life improvements and fixes to Freight Elevators, with a focus on clearer feedback and more reliable cargo handling.
+Transfer Feedback and Error Handling
+Previously, failed transfers could display a generic fullscreen error without explaining which item caused the problem. Freight Elevators now provide item-specific feedback, including errors related to contraband, mission restrictions, invalid items, and failed stow or unstow requests.
+We've also improved how transfers are displayed and managed:
+- Individual item progress is now displayed during transfers and stow or unstow operations
+- Validation errors appear directly in the kiosk interface, with checks performed when attempting to stow cargo
+- Loose-item limits are now displayed, with an error when exceeded
+- Transfers now have a limit on the number of items processed at once
+Hauling Mission Improvements
+You can now hand in cargo for several missions in one go at a single Freight Elevator, instead of one mission at a time.
+We've also addressed several longstanding hauling issues, including incorrect cargo validation, stuck transfers, overlapping requests, and mismatches between Freight Elevator visual and functional states.
+One notable fix addresses excess cargo during mission deliveries. Previously, submitting more cargo than a mission required could consume the entire amount. Now, any excess is returned instead of being lost.
+Additional fixes cover stacked items, mission cargo being incorrectly stored during cleanup, and issues affecting exterior Freight Elevators.
+As always, we'll be monitoring your feedback closely as Alpha 5.0 progresses through testing. Balance and functionality may continue to receive adjustments based on your experiences and the data gathered throughout the PTU builds.
+Cheers, and see you in-game!

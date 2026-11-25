@@ -1,0 +1,42 @@
+## Star Citizen Alpha Patch 4.3.2
+Alpha Patch 4.3.2 has been released to all backers!   Patch should now show: VERSION 4.3.2-PTU.10407435.
+- Audience: All Backers
+- Server Info: PTU Channel
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Starting aUEC: 15,000,000
+## Testing Focus
+- Stability & Bugfixes
+- Structural Salvage Updates
+- Frontier Fighters Finale
+- Reclaimer Elevator Updates
+## Known Issues
+The issues below are meant to help give a better indication on things that may happen during gameplay and do not always occur 100% of the time.
+- PU - Stanton - Landing Zone (LZ) - Area18 - Locations / Art - Majority of geometry is missing for floors of the Adira Falls Apartment building
+- PU - Stanton - ASD - Location / Respawn Screen - Player will be rescued and respawn back at the facility after being incapacitated
+- Multi-Location - PU - Pyro - AI / Locations - Turrets at Farro Data Centers are not firing
+- ARGO ATLS  - PU - Mounts / Cargo / Tractorbeam - The ATLS is unable to pull cargo off a ship's cargo grid after it is moved from place of origin to new location
+- PU - Stanton / Pyro - Armor / Loot Box / Inventory / Actor - Equipment and armor dropped on the ground will be suspended in mid-air making them unable to be interacted with
+## Features & Gameplay
+Gameplay
+Salvage Refining and Economy Adjustments
+RMC and Construction Materials repriced. RMC sale prices reduced. Construction material refinery yields decreased while increasing sale prices.
+Additional Gameplay Updates
+- PVP Missions will now be in their own tab on the contract manager
+Ships and Vehicles
+Aegis Reclaimer Cargo Elevator Updates
+Added cargo grid to the lift. Fixed animation length. Fixed animation to make lift go further down. Moved interaction point to be reachable by the player when cargo is loaded on lift.
+Additional Updates
+- Nova gatling and Scorpius turret added to shops.
+Core Tech
+- Onyx Facility OC performance optimizations
+## Bug Fixes
+- Potential Fix: PU - Locations / AI - UGF turrets are not shooting at the Trespassing Player
+- Potential Fix: PU - Multivehicle - Tractor beams can stop a ship and its controls that is still powered when shields are down with active pilot
+- Potential Fix: PU - Vehicles / Salvage / Crafting - Not able to craft multi-tool attachments with salvage mats (STARC-181347)
+- Potential Fix: PU - Engine / Actor - Physics - Weapons - Projectiles are not registered when piercing through water bodies from either way (STARC-180509)
+- Potential Fix: PU - Missions - Medical Rescue / Service Beacons - Contract does not end after the rescued actor is healed on a medical bed (STARC-179965)
+- Potential Fix: Multivehicle - PU - Vehicles / Vehicle Tech Art - Certain vehicles are not taking damage when weapons are fired at their cockpit (Hawk and Sabre)
+- Potential Fix: Multi-Vehicle - PU / AC - Vehicles / Interaction - Vehicle Pilot Seat loses entry interaction if actor exits the seat as vehicle is landing (STARC-179992) (Pilot Enter Seat interaction is disabled if the actor leaves the pilot seat while falling to the ground)
+## Technical
+- Fixed 3 Client Crashes

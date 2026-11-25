@@ -1,0 +1,50 @@
+## Citizen Alpha Patch 4.1.1
+Alpha Patch 4.1.1 has been released to all backers to test!   Patch should now show: VERSION 4.1.1-PTU.9744740.
+- Audience: All PTU Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Mesh Configuration: 7:3:600
+- Server Recovery: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Ship Battle Missions V1 (Patrol, Ambush, and Gilly's Advanced Combat Gauntlet Missions)
+- Repair Missions
+- Animal Missions
+- PVP Bounties
+- Hunt the Polaris Mission
+- UEE Training Mission
+- Fleet Week Halls
+- Wikelo New Rewards
+## Known Issues
+Going into the LIVE release of 4.1.1, we are expecting equipped items and armor to disappear off the player. This issue is fixed in builds after 4.1.1 is LIVE but going into this build it will occur.
+- Fixed in Next build: PU - Audio / UI / Options Menu - When the audio sliders are changed they will revert to 1 and cannot be changed back
+- Critical: PU - Area18 - Locations / Transit - Area18 Hab Elevator Carriage does not open at Lobby level
+- Critical: PU - GLOBAL - Locations - Corpses are not being cleaned up at landing zones
+- Critical: Multivehicle - PU - Vehicles / Quantum Travel - Ships streaming in or streaming out locations on a quantum travel jump has performance drops and frame freezing
+- Critical: PU - mobiGlas - Asset Manager / NikNax - mobiGlas / Inventory / UI - The Assets Manager / NikNax app gets stuck at infinite loading and never loads assets
+- Critical: PU - Multivehicle - Vehicle Components / Bed Logout - Bedlogging in ships can break Quantum Markers
+- Critical: Anvil Valkyrie Series - PU - Vehicles / Components / Weapons - Valkyrie series is missing its mounted door turrets
+- Critical: PU - New Babbage / Brentworth Care Center - UI / Medical Screens - Check-in medical kiosk is stuck on “Checking availability” loading screen
+- Critical: PU - Shopping / Inventory - Purchasing Items in quantities above 1 to Backpack Inventory results in Failed Transaction due to "Invalid Item"
+- Critical: PU - Stanton - microTech - New Babbage - Brentworth Care Center - Medical / Locations - The medical kiosks have an infinite load and do not check players into rooms
+- High: PU - Locations / UI / Shopping Kiosk - Delivery location when purchasing any item is missing if the Player doesn't change the location in the drop down
+## Features & Gameplay
+- Locations
+- Further increased Area18 armistice zone size
+- Ships and Vehicles
+- Greatly increased turret and main weapon capacitor ammunitions across many ships with turrets.
+This includes the Redeemer, Retaliator, Reclaimer, Gladiator, Carrack, Starlifter(s), Valkyrie, Star Runner, Caterpillar, Corsair, Cutlass Black & Steel, 400i, 600i, 890 Jump, Starfarer, Polaris, and Hammerhead.
+## Bug Fixes
+- Potential Fix: PU - Stanton - Locations / VisArea - Area 18 - Portions of Area 18's spaceport is missing visually (STARC-167085)
+- Potential Fix: PU - Stanton - ArcCorp - Area18 - Empire Medical Services Hospital - Fleet Week 2025 - Locations / Transit - Area18 Hospital elevator breaks and won't return players to ground floor (STARC-167155)
+- Potential Fix: PU - AI / Actor Feature / Fauna - Valakkar are invulnerable to damage (STARC-166836)
+- Potential Fix: PU - Ship Battles V1 - Missions / Inventory - Scrips are not stacked when awarded (STARC-166980)
+- Potential Fix: PU - Fleet Week 2025 - Locations / Transit - Elevator Exterior Panels within the Expo Hall have Grey UI and do not call carriages when interacted with (STARC-166914)
+- Potential Fix: PU - Missions / AI - 890J Hijack - Killing Enemy AI Can Fail the 890J mission (STARC-166327)
+- Potential Fix: PU - Stanton - Fleetweek 2025 - Mission Content - Hunt the Polaris - UI / Markers - Stage 2 mission marker is still present during Stage 3
+- Potential Fix: PU - Mission - Hunt the Polaris - Polaris can quantum travel away at different phases and end up at locations it is not meant to be at causing issues completing the mission
+## Technical
+- Fixed 1 Client Crash
+- Fixed 4 Server Crashes

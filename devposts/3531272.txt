@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.11.1e
+Alpha Patch 3.11.1e has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.1-PTU.6491541.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+- Intergalactic Aerospace Expo Exterior
+- General Gameplay with client/server stability
+Known Issues
+- Players do not always spawn in the location they picked
+- Visiting location from fresh boot will cause player to spawn on / below the surface on Hurston
+- Crash occurs when exiting to main menu shortly after crashing & destroying your ship
+- Multiple videos in the lobbies for the event days have no audio
+- When exiting the Carrack port and starboard turrets the player can get stuck behind the turrets or fall through the floor and take damage
+- Main Grim Hex 02 Elevator has two Elevator Carriages
+- CRU-L4 - Exterior elevator buttons do not function
+- The Hammerhead elevator collides with the landing bay at Port Olisar, causing the ship to move
+- Restocking on missiles/torpedoes, then storing and respawning the same ship will have missiles/torpedoes missing
+- Ships landed at Lorville & New Babbage cannot be stored
+- Players can get their ship into an 'unknown' status after abandoning it and then dying and respawning at some Rest Stops causing an insurance loophole
+- Origin 100 series Rain / slush effects are moving backwards to the direction of travel
+- Greycat ROC mining arm can snap out of place upon re-entering the vehicle if the mining arm had been previously extended prior to exiting the vehicle
+- Running into the stairs of an Origin 100 series ship as the door of the ship opens will cause players to fall through the ground
+- Players cannot re-enter the Drake Cutlass ships if the ramp is damaged
+- Refueling hydrogen fuel first can prevent you from refueling quantum fuel
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+## Feature Updates
+Locations
+- Lighting and visual polish pass on Expo halls and exterior lobby.
+- Added extra signage around New Babbage to make it clearer where the IAE event is and guide the player there.
+## Bug Fixes
+- Fixed an issue that was sometimes causing Missiles and Torpedoes to do well below intended damage.
+- Ships landed at Lorville & New Babbage should now be able to be stored.
+- Fixed an issue causing the Ballista Spawned at a Levski Garage to noticeably shake after opening the door and cause it to longer open and close.
+- Item previews in shop kiosks should no longer appear dark/black or not display correctly.
+- The red skin accents and rose tinted canopy should no longer be missing from the Expedition Carrack.
+- Ships spawned in missions should now always spawn with weapons and fire at the player.
+- There should no longer be missing visarea issues with the Banu Defender when looking into the open entrance from a distance.
+- There should no longer be Vis Area issues with the interior of the RSI Mantis when standing in the arch behind the Pilot Seat.
+- Fixed an issue causing ships to sometimes fall through planet surfaces if logging back in from Ship bed.
+Technical
+- Fixed 6 Client crashes
+- Fixed 2 Server crash
+- Fixed a server deadlock
+- Fixed a backend service crash

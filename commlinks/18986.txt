@@ -1,0 +1,37 @@
+Cargo Refactor AMA Recap
+We hosted an open submission live Q&A on Spectrum to cover all things Cargo Refactor and upcoming features to enhance the cargo hauling career further. These questions and answers were collected from the Spectrum AMA on November 8, 2022.
+Before you leap into the Q&A section below, get caught up on all things Cargo by checking out this video!
+accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
+## This time, we welcomed a guest from the USPU Team:
+- Gozer-CIG - Dan Griffis, Lead Designer
+This AMA is complete but keep an eye out for upcoming threads for your chance to ask us anything!
+## Will cargo loading timers be part of 3.18?
+At the moment nothing changes with loading and unloading. This is handled automatically as it has been in the past. Once Manual loading and unloading becomes a reality, you will have the option to choose between the two. If you choose to have the location do the loading and unloading there will be a cost and a time when your ship is unavailable while the process completes, much like the current refinery gameplay.
+## In the ISC Cargo Missions were mentioned, can you go into any detail on what these missions will be like and how they will work. In my mind and hopes they will be something along the lines of this post.
+(https://robertsspaceindustries.com/spectrum/community/SC/forum/61894/thread/mission-type-cargo-contract)
+After 3.18 we want to separate Commodity Trading from Cargo Hauling. Commodity Trading will be high risk / high reward. If you invest a large amount of your money you will also have to manage the cost of loading and unloading as well as protection. On the other hand, Cargo Hauling is just moving things for NPCs from point A to B, and you are not tied to it financially.
+The first step here is we will be adding cargo hauling missions that extend the current box delivery missions once you can manually load and unload your own cargo. They will start small and get larger, and the only thing the players are risking is reputation.
+## Will cargo containers stolen by pirates be recognized by buyers as being stolen? If so, then what happens if I willingly transfer my cargo to another player to sell for me?
+When a player purchases commodities those are owned by the player that purchases them. Anyone else trying to sell them will have to use a "No Questions Asked" terminal and they will not receive full price for anything that they are trying to sell. Even if I give a cargo container to a friend, they would have to sell it at an NQA terminal and they would not get full price for the commodity. GrimHex for example would be a location I could fence my stolen goods.
+## I would love to be able to buy 1 or 2 SCU boxes to be able to put whatever we want in them. Would make org events easier, could buy all the armor for ground battles, extra weapons and ammo, etc.
+I want you to be able to do that as well rather than having to blow up your ship and create them yourself. On top of that, I want you to be able to carry those around, loot bunkers, fill them up, and then snap them to the grid once you are back at your ship. I also want you to be able to do all this and then go back to a station and go sell all of this without having to transfer it all to that station's local inventory in order to do so.
+That said it probably won't make it into 3.18. At some point however it will be a thing! This is where I use the dreaded "Soon".
+## Will cargo boxes have any kind of signatures to be picked up by vehicles pings?
+Cargo containers can be scanned, and AR markers will be present if they survive the explosion. We have also added colored tints to the containers so you can at least identify what category they belong to, such as Metals or Processed Goods.
+## Are we getting any dynamic pricing changes to commodities?
+Commodity prices will not change for 3.18. Mainly because if we did it now we would have to do it all over again as soon as we add manual loading and unloading to the loop. Loading and unloading will dramatically change the whole commodity trading loop.
+## Are larger cargo containers still planned with the refactor like the ones on the raft? Why just 1 SCU? Why not 10 SCU boxes for fewer entities?
+Larger than 1 SCU containers are still planned, but at the moment everything is still bought and sold as 1 SCU cargo containers.
+## Any new commodities coming in 3.18?
+The only new addition that I can think of is RMC which is what you get from hull scraping. These can be sold at commodity kiosks.
+## When it comes to cargo refactor and piracy, what have you thought of to encourage player-to-player boarding actions with this feature?
+Well, so we hinted about this in the ISC and it wasn't very clear. With 3.18 we are introducing the concept of Soft Death. There is a 70% chance a vehicle will die with its interior and cargo intact from combat deaths. Explosive deaths or deaths by game rules ( near a barrier or touching water, for example ) won't trigger a soft death.
+What this means, 70% of the time you and your crew are still alive, and the cargo is still attached to the ship when a combat death occurs (ship reaches 0 health in combat). The 30 % of the time that this doesn't happen your ship explodes and cargo is pushed out and then 0-90 % of that cargo remains, with the average of that being 45 % of cargo surviving.
+## Do I need to neatly stack boxes all square in order to register them correctly?
+Containers are snapped to the grid when they are placed in the ship. Anything in the ship or attached to the grid will be able to sell at the commodity kiosk.
+Buying cargo works just like it does now. You purchase from a kiosk; that cargo is loaded into the ship automatically and attached to the grid. Once outside of an Armistice Zone you are free to move it around and snap it to the grid with a tractor beam however you want.
+## Example: A cutlass. I buy 46 SCU of goods so it's full. On my way, I find a wreck and recover 10 boxes of 1 SCU which I also deposit in my ship. On arrival at the TDD to sell, would I see 46 or 56 SCU?
+You would have a hard time making it fit, but sure. The cargo grid has a max capacity. Anything else is considered "Loose Items" and if they are on the ship you can sell them. This is not to be confused with the "FPS" items though such as guns, ammunition, stims, armor, etc. Those are technically in a third inventory in your ship although I have a plan for that stuff as well.
+## Are the external cargo pods of the Prospector, MOLE, and RAFT going to be detachable and replaceable? If not, what happens to the mined ore and cargo aboard these ships if they are destroyed?
+JakeAcappella-CIG: Tracked this down with several teams! Currently, all of these ships will function similarly to how they do now once 3.18 comes online. Resource pods such as saddle bags or fuel pods won't be detachable in this release, as further work on Vehicle Tractor beams is required.
+Regarding external cargo, such as the Hull series and RAFT, these will detach upon vehicle destruction, as outlined in the ISC episode.

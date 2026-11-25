@@ -1,0 +1,77 @@
+PU Monthly Report
+July 2024
+Welcome to July’s PU Monthly Report. With the upcoming Alpha 3.24 patch now live for testing in the PTU, many teams spent the month polishing and bug fixing alongside exciting new tasks for Pyro and beyond. Read on for all the details.
+## AI (Features)
+Last month, the AI Features team worked on a combination of fixes and new functionality, including an issue requiring a usable to have an interactable component. A problem was also solved with stance not being updated, causing issues with AI exiting cover. This bug was caused by conflicting changes between Squadron 42 and Star Citizen when merging features.
+The team solved problems with tactical-query system conditions silently failing without setting results, which led to uninitialized memory bugs. For example, when running the ‘reachable,’ condition, it occasionally returned a ‘true’ result when the point was not reachable because the result variable had not been initialized as false. This was blocking the testing of the cover hit-reactions test level.
+An issue with vison raycasting allowing NPCs to see through buildings was rectified alongside bugs with NPCs using the Multi-Tool, including one giving them infinite ammunition in Repair mode. The team also added dynamic object handling to the vision component to fix vision raycasts and entities from being blocked when doors change states. The handling of situation changes during ‘aimed at’ events were improved too.
+New functionality was developed to support and restrict movement within assigned schedule combat areas, including being able to set up schedule areas and tags through the editor rather than just through the schedule. This allows the designers to more carefully control fights by giving the AI areas of interest, in a similar way to the existing tech for defend and attack areas, but on a broader scale.
+The AI team also added a significant piece of new functionality - AI groups. This enables perception data to be shared between AI within the same group, giving the designers more control over how NPCs are brought into fights and how they work together. For this, the team added a variety of entity changes, including:
+- AIGroupEntity - allows the designers to assign NPCs groups
+- AIGroupEntityComponent - a runtime component to define NPC groups that can share knowledge, such as perception data
+- AIGroupEntity - exports group members as part of object container data
+- AIGroupEntity - a Dataforge record
+- OnFriendlyCallToArmsHeard - an event to bring the rest of a group into combat
+Elsewhere, the team reviewed and made improvements to how AI use wildlines, including adding new combat-communication wildlines, such as surrendering, grenade reactions and throwing, investigation, hit reactions, reloading, and perception reactions.
+A script was created to check duplicate and unused communication names in pursuit of the gold-standard wildline setup.
+## AI (Tech)
+For AI Tech, the team continued working on the AI vision and movement systems for Server Meshing. This will allow NPCs to transition from one server to another without losing their previous context.
+Various optimizations were made too, including to the ‘observable’ and ‘vision’ components and to collision avoidance when NPCs fly ships and drive ground vehicles. Updates were also made to the tactical-point system queries used by Ship AI behaviors.
+## Art (Characters)
+July saw the Character Art team begin work on utility armor. They also progressed with specialist armors, supported requests for the Character Customizer, and worked through art debt for loot items.
+The Character Concept Art team explored new designs for fauna, while the Hair team progressed with additional hairstyles.
+## Art (Ships)
+July saw Ship Art working toward new milestones for the vehicles currently in production, including the RSI Polaris, Zeus, and three unannounced ships.
+Production of three new vehicles kicked off too alongside two new concepts.
+## Community
+July began with the Community team supporting Foundation Festival 2954, which encouraged experienced players to share their knowledge with newcomers. They also invited players to highlight what makes their organization stand out in the Org Showcase contest.
+The team then published several new guides to help players with weapons, Master Modes, and the industrial, cargo, and medical careers.
+In support of the returning Jumptown Global Event, the Community team collected feedback to improve future events.
+For Alien Week 2954, the team compiled entries from the Xeno-Treat Smackdown contest into an Alien-Themed Cookbook.
+Regular updates were also published for the community, including Roadmap Roundup, This Week in Star Citizen, and the Arena Commander Schedule.
+With CitizenCon 2954 less than three months away, Community is currently working hard to prepare an unforgettable program of exciting content.
+“The month wrapped up with a Bar Citizen event in Washington, DC, where over 150 attendees gathered, seeing organizations meet in person for the first time and even a new org forming at the event. These gatherings exemplify the spirit of Bar Citizens, with more events anticipated in the future. The team is already looking forward to meeting members of the community at Gamescom in Cologne and can’t wait to kick off the two Bar Citizens on August 23 and August 24.” Community Team
+## Core Gameplay
+The Gameplay Features teams progressed with a wide variety of features throughout July, beginning with ‘charge and drain.’ For this, they added networking support to the wider feature, added networking support for bringing unpowered items back to life, implemented weapon rollback, and supported UI implementation. Progress was then made on the ‘overheat’ mechanic, improving ways to tune heat values. Moving forward, all energy weapons will have the potential to overheat.
+Tasks were also completed for light amplification, adding control hints to toggle it on/off on supported scopes, while bugs were fixed for the fire extinguisher and quantum travel for Server Meshing.
+Gameplay Features continued improving control surfaces, addressing various tuning issues, while zero-g traversal markers were implemented.
+For the multi-function display (MFD) rework, comms list, hail target, and comm-call functionality were added. Work also began on weapon groups to allow players to switch between group presets.
+Last month, significant progress was made on jump points, with Gameplay Features providing Design with the ability to define exit locations, which will also have a physics force to push players away from the exit. Players will now also get pulled into the tunnel one by one when making a jump.
+Improvements were also made to tunnel generation. For example, the team now has radial control over eight-way logic, better control-point tension parameters, more accurate section probability, and improved stability. The tunnels are less prone to self-intersection at corners too. Alongside this, updates were made to the jump UI, including icon and color changes, text fade in/out, contextual nav points, and general heads-up display (HUD) fade in/out depending on the approach angle.
+July also saw progress on engineering gameplay, including making fully distorted items consume resources despite not being functional. Support was added for Master Modes too, with quantum drives now going fully offline in SMC mode and shields going offline in NAV mode. The Engineering screens and MFD progressed, with tasks beginning on power presets and the assignment UI. Life support and fuel information were added, while the power display was improved.
+The Radar & Scanning feature progressed, with Gameplay Features adding delta signatures to the HUD and MFD and moving the jammer from the signature system to the radar component for easier integration with other systems.
+More information was added to the charge-scan UI, including maximum held charge, a notification when attempting to scan during cooldown, and fadeout and collapse animations. The overall HUD was polished and decluttered too. For example, nameplates only show for targeted ships, distance only appears for targeted and pinned ships, target information shows for scanned targets, and how long target information is shown was decreased.
+Audio signature emissions were added, while the devs began implementing FPS ping counter-play, with players being detected and highlighted if they FPS ping depending on various factors.
+The new vehicle annunciator system was added, which supports power, weapons, thrusters, shields, proximity, radar, quantum, missiles, coolers, and shots.
+Following last month’s progress on the mission refactor, the team added the option to spawn objectives at random points near planets, both inside and outside the atmosphere. Alongside this, the ability to attach objectives to players was added, contract generation was improved, and the new Contract Broker service was implemented. The latter was created by the Online Services team and enables full contract details and properties to be procedurally generated client-side from contract definition.
+Support was also given to actual missions, with various bugs being fixed and improvements made to the backend of hauling contracts. Further support was given to Blockade Runner, while various issues with the UI were fixed. The contract manager’s abandoned button behavior was extended to hauling missions too.
+Various updates were made for the upcoming cargo release. For example, they added search functionality to the item bank and freight-elevator kiosk, adjustments to auto-loading times based on box size, and debugging functionality to the instanced interior system.
+Bug fixing was also done for the cargo system, air-traffic control, item bank, freight-elevator kiosk, and cargo missions.
+## Economy
+July saw the Economy team progressing with their tasks for Pyro, including the outer rings. They also worked on a refactor that will allow them to create and modify shops in a more scalable manner.
+For cargo, balancing was done to the price and time of autoloading to give players the choice between manually loading or paying for convenience and speed. A balance pass was also done on vehicle components, including new life-support systems and jump drives.
+Finally, the devs continued to develop their understanding of player profiles to ensure that each career is profitable according to the long-term vision of the economy.
+## In-Game Branding
+In-Game Branding continued wrapping up tasks for jump points and the Pyro system, polishing content and ensuring everything fits the environment.
+## Mission Design
+Mission Design continued working on unannounced content alongside a suite that uses individual features to create a complex form of repair missions. For the latter, they identified key structures that would be used to ensure a location stays up and running and made them breakable.
+Using information gathered from cargo gameplay, work began on resource gathering. The current focus is on emergent gameplay that pulls resources from the verse, starting with mining. For example, if a location requests a specific resource, the player can choose how to acquire it, be it mining, buying, or piracy.
+Alongside this, progress was made on the mission-system refactor, which will change how missions are offered and futureproof the wider system. It also creates an opportunity to fix legacy issues and folder structures and reassess existing missions. They'll also be able to implement new features into the mission system to allow greater control and create more MMO-style features and content.
+## Narrative
+The Narrative team spent July continuing to support development for Alpha 4.0. This included a mixture of mission text, brainstorming ideas for additional mission content, and delving into some of the various locations being placed by the Environment and Design teams.
+The narrative designers spent time overseeing the presence of social AI in various locations, making sure the areas are not only marked up correctly but the general “vibe” and feeling of the area is accurately represented. An initiative was also started within the team to overhaul some of the social spaces to better reflect the intended tone of the location.
+On the Star Citizen 1.0 front, Narrative worked closely with Design to define mission providers and aspects of reputation. Work also started on the initial scripting and development of additional location stories for players to discover.
+A variety of lore content was published to the website, including a pair of Whitley’s Guides for the Vulcan and the Carrack, as well as another batch of Galactapedia entries.
+## Online Technology
+In July, the Online Services team collaborated intensively with the Gameplay and UI teams to introduce a significant quality-of-life enhancement to freight kiosks: a search bar. This new feature allows for quick item searches by name, improving the efficiency of locating items within large inventories. They also implemented optimizations to hangar and shard stow mechanics to prevent issues and facilitate recovery processes.
+The team working on potential mission and marker system features for Alpha 4.0 visited the Manchester studio, where they collaborated with the gameplay teams to ensure the seamless integration of these upcoming features.
+In preparation for Alpha 4.0, Online Services began developing a new player-trade service. This will enable players to transfer funds amongst themselves without being subject to the same game server's authority, paving the way for Server Meshing.
+Lastly, the team focused on bug fixes, stabilizing the Alpha 3.24 release, and finalizing the social-services refactor. This extensive project, which Online Services have been working on for the past few months, is now ready to go live, marking a significant milestone for the team.
+The Live Tools team worked on new core features for the Hex tool. The main goal of this is to provide better management of roles and permissions, streamline workflows between different tools, and enable the ability to perform bulk actions.
+The team is also improving other internal tools, such as the error-reporting pipeline, with the implementation of new technical architecture. They’re currently providing the necessary support and maintenance to its users.
+## UI
+Last month, the UI designers and artists worked on the in-game visuals and functionality for the resource network UI and completed the final polishing tasks for jump points. For vehicles, the team replaced the old Flash MFDs and set up new HUDs, resulting in a cleaner and less cluttered flight experience.
+The UI team’s tech programmers worked on performance improvements to speed up the frame rate on various parts of the UI.
+## VFX
+Finally for July’s report, the VFX team continued to support several effects-heavy features, including jump points and dynamic fire.
+They also continued to work on acidic caves and completed their tasks for the RSI Zeus and another unnamed vehicle. Tasks were also kicked off for two new weapons.

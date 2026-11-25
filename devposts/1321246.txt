@@ -1,0 +1,24 @@
+## Star Citizen Patch 3.2.1c
+Alpha Patch 3.2.1c has been released to the PTU, and is now available to test!  Patch should now show: PTU-823435.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- Combat versus AI in the persistent universe.
+## Feature Updates
+UI
+- Updated UI sounds for the mining system.
+Ships and Vehicles
+- Updated Cutlass seating position to avoid strut obstruction.
+- Overclock state is now calculated based on power variables.
+## Bug Fixes
+- Players should now be able to equip more than one of the same weapon onto ship turrets.
+- Sniper rifles should no longer replay muzzle flash VFX when coming out of ADS.
+- Grenades will now travel in the direction the player is throwing.
+- After switching channels in visor/mobiGlas chat messages and notifications should no longer be duplicated.
+- AI should no longer spawn motionless into swarm modes of Arena Commander.
+Technical
+- Fixed a client crash.
+- Fixed a server crash.
+- When disconnected from the game, the player entity should no longer get stuck inside the server.

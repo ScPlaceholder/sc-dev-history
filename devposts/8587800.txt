@@ -1,0 +1,71 @@
+## Star Citizen Alpha Patch 4.6
+Alpha Patch 4.6 has been released to Evocati, and is now available to test!   Patch should now show: VERSION 4.6.0-PTU.11019052.
+- Audience: Evocati Only (Standard ETF NDA)
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Alliance Aid Event
+- Industrial Mining and Salvage Missions (not ready for testing and feedback)
+Known Issues
+- PU - Clean Air - Missions / Courier - There are no enemy ships spawning throughout the mission
+- PU - Nyx - Clean Air - Recover Cargo - Missions / UI - Recover cargo mission objectives don't appear after completing the first objective
+- PU - Nyx - Levski - Shopping / Kiosks - The Supplies Shopping Terminal does not have any items for sale
+- PU - ASOP Terminal / UI - There is a chance that a blank information of the Vehicle may appear on Hangar Delivery Request using the ASOP Terminal
+- PU - Industrial Missions - Mission Content / Game Code - Multiple Missions are unavailable due to Contract generation errors
+- PU - Stanton - Mission Content / Game Code / UI - Industrial Resource Gathering - Ship Mining - Objectives and HUD marker direct player to Mining Claim instead of Lagrange Points
+- PU - Nyx - Welcome to Nyx - Mission Content / Reputation / mobiGlas - " Vanduul-Tech Smugglers " is not available after getting to the required reputation rank
+- Multi-System - PU - UI / mobiGlas - Selectable elements inside the mobiGlas Tabs have slim areas of deadzone which can make selecting them difficult
+- PU - Nyx - Levski - Locations / Art - The Bottom Deck of Levski is missing a lot of critical assets and collision
+- PU - Nyx - Landing Zone (LZ) - Levski - Art / Locations - Cargo Center/Services - The floor is missing at the entrance to the area and causing AI to become stuck entering/exiting the area
+- PU - Locations / Interactions - All doors requiring fuses cannot be opened after selecting override panel button
+## Features & Gameplay
+Gameplay
+Clearing the Air Event
+For weeks, Levski inhabitants and visitors have been getting sick with a mysterious disease that quickly became known as the "People's Ailment." With symptoms like coughing, fatigue, chest pain, and painful lesions in the skull, spine or other bones, it wasn’t until an autopsy was preformed following the death of a maintenance engineer, Samuel Molina, that the cause was discovered - a fungal infection from a new strain of mold growing in faulty air filters purchased from Gyson Inc.
+This event will take place throughout the PU running Hauling, Courier, Resource Gathering, Kill Ship, Recover Cargo, Station Escort, and Defend Ship missions. These will lead to milestone missions after completing many of a specific mission type. (tracked in the mobi journal)
+Subject to change but currently set to:
+- After 25 Hauling Type missions completed, the player receives a VIP urgent care transport, where they have to take a singular cryopod with this VIP inside all the way to MicroTech for healing
+- After 25 Combat mission a Exclusive target appears from the Moraine gang for the player to takeout
+- After 50 Combat missions, a Sick VIP in cryo was stolen by a Pyro gang and is being held for ransom
+## Bug Fixes
+Star Citizen Alpha 4.6.0 currently contains over 80 bugfixes for issues occurring in 4.5.0, 28 of which originated from the issue council.
+- Potential Fix: Esperia Stinger - PU - Vehicles - Damage / Wear - No wear / degradation is applied to the interior cockpit glass (STARC-190822)
+- Potential Fix: RSI Meteor - PU/AC - Vehicles/VMA - Meteor: Weapon - Right Wing "Empty" and Inaccessible from any changes (STARC-188004)
+- Potential Fix: PU - Stanton - Area18 - Locations - Astro Armada's Doorway is inaccessible (STARC-185279)
+- Potential Fix: PU - Stanton - Multi-Location - Loot Generation / Locations - Palatino Backpack Loot box not appearing/spawning in hostile distribution centers (STARC-191100)
+- Potential Fix: Crusader Mercury Star Runner - PU - Vehicles / Vehicle Feature - Internal elevator will be stuck after initial use to reach the upper level (STARC-188056)
+- Potential Fix: AC - Pirate Swarm - AI - Enemy AI does not spawn after completing the Wave 2 (STARC-186385)
+- Potential Fix: PU - ASD Onyx Facility - Research - Locations / Interactions - Loot room door doesn't open after selecting "Override" (STARC-191107)
+- Potential Fix: PU - Ship Battles V1 - Patrol - Missions / Mission Content / AI - Ace Pilots do not have any MG Scrips nor Medals in their inventory (STARC-191014)
+- Potential Fix: Greycat Industrial ROC ( All Variants ) - Vehicles - Mining / Mining HUD - Mining Arm Laser is offset from the aiming reticle on the HUD (STARC-44133)
+- Potential Fix: PU - Missions - Sweep and Clear / Mercenary - Mission did not spawn complete number of hostile AI (BUG-326064)
+- Potential Fix: PU - Nyx - ASOP Fleet Manager / Locations - Levski ASOPs unable to retrieve ships "We are unable to deal with your request at this time" error (STARC-184342)
+- Potential Fix: PU - Pyro - Contested Zones - Orbituary / Checkmate / Locations - Security and Supervisor doors in Contested Zone stays open (STARC-191136)
+- Potential Fix: PU - Art - armor  - Clash Core Armor set is not textured (STARC-189146)
+- Potential Fix: Drake Golem Ox - Vehicles / Components / Lighting - Headlights do not function (STARC-187092)
+- Potential Fix: PU - Vehicles / Missions - Bounty Ship is not counting as destroyed due to engineering components (STARC-188022)
+- Potential Fix: PU - Art - Armor - Geist Armor ASD and Wikelo edition set does not get added cosmetic effect while wearing full set (STARC-190768)
+- Potential Fix: Drake Buccaneer - PU/AC - Engineering - Drake Buccaneer spinal mount with weapons attached does not receive power weapons do not charge (STARC-190933)
+- Potential Fix: PU - ATC / Audio / Locations - Various ATC dialogue such as “You are clear to launch” randomly plays in landing zones (STARC-97495)
+- Potential Fix: MISC Freelancer ALL Variants - PU - Vehicles / Interactables - Fuse Relay Shutter Door does not have F-interact button to open or close (STARC-188034)
+- Potential Fix: PU - Multi-Item - Helmet Props / Animation - There is a missing animation when Equipping a Helmet from a Player's Hip and they hold the Helm in their left hand for 2 / 3 seconds before it appears on their Head (STARC-189189)
+- Potential Fix: Aegis Idris ALL Variants - PU - Vehicles / VLM / Vehicle Components - Incorrect Gimbal Mount size when equipping IFR-BC7 Turret with stock Conqueror-7 (STARC-186575)
+- Potential Fix: Headhunter Metal Chair - PU - Props / Interactables - The item is not present in the game (STARC-191898)
+- Potential Fix: Anvil C8 Pisces ALL Variants - PU - Vehicles / Lighting / Art - Geometries near the cockpit appear and disappear after changing viewing angle (STARC-185882)
+- Potential Fix: Anvil Pisces All Variants - PU - Vehicles - There are some spots that has no breathable atmosphere inside the Anvil Pisces (STARC-189807)
+- Potential Fix: PU - Armor / Locations / Shopping - Port Tressler - Morozov-CH Backpack Snowdrift is listed as 0aUEC and cannot be purchased from Armor Shop (STARC-187988)
+- Potential Fix: ANVL Carrack  - PU - Ladders 2.0 - Vehicles - Not all ladders updated to ladders v2 tech (STARC-174189)
+- Potential Fix: Multivehicle - PU/AC - Weapons - T-21 Tigerstrike can be fitted on other ships and are not bespoke
+- Potential Fix: PU - AI - Yormandi - Yormandi Beam attacks does not do damage and aims above actor
+- Potential Fix: PU - Stanton - Looting / AI / Inventory - "move all" from legacy inventory screen does not move all loot from AI to backpack
+- Potential Fix: PU - Interaction wheel - FPS Pie/Pis has no cursor
+- Potential Fix: Origin 135c - PU - Vehicles / Cargo - Cargo be difficult to tether / lock on to and moving while on the Cargo Grid, sometimes locking on to the ship instead
+- Potential Fix: RSI Polaris - PU - Vehicles - Using the remote turret at certain angles causes the players vision to be blocked by geo
+- Potential Fix: Multi-Item - PU - Helmet Props / Characters / 2 Handed Interaction - Player hands are clipping inside the helmet while inspecting and carrying them
+- Potential Fix: Aegis Retaliator - PU - Vehicles / UI / HUD - The AR markers for entry points are missing
+- Potential Fix: Aegis Redeemer - PU - Vehicles / Vehicle Components - The door for Scanner/Radar Access won't open upon interacting
+## Technical
+- Fixed 7 Client Crashes
+- Fixed 1 Server Crash

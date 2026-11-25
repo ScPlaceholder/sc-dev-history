@@ -1,0 +1,72 @@
+## Star Citizen Alpha Patch 4.0
+Alpha Patch 4.0 has been released to Wave 1 testers!  Patch should now show: VERSION 4.0.0-EPTU.9439034.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Server Info: EPTU Channel - US  Servers
+Audience: Wave 1
+Long Term Persistence: Enabled
+Server Meshing: Enabled
+Mesh Configuration: 2:2:380 (2 solar systems, 2 servers per system, 380 players total per mesh)
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Server Meshing  2:2:380
+- Pyro Star System and New Locations
+- Contested Zones
+- Jump Points
+## Known Issues
+Currently most missions are not available in 4.0. In the next couple of upcoming EPTU builds we will start to integrate them into releases with the mission refactor nearing completion.
+- PU - Multi-System - Jump Points - Ships / Vehicles / VFX - Ships will have a VFX trail in front of the Cockpit after Jumping whenever the Vehicle moves
+- SC - Character Customizer - Camera is offset and does not stay in place while editing character
+- Stall - Client - PU - Jump Points - Performance - There is a brief client stall when travelling through the Jump Point Tunnels
+- PU - Multi-System - Jump Points - Ships / Vehicles / SFX / Audio - The Jump Point SFX are rapidly looping/cut off
+- PU - UI - mobiGlas - mobiGlas UI is displaying incorrectly on several pages/tabs
+- PU - Pyro - Elevators / Personal Hangars - Ruin Station - Locations - Elevators from personal hangars to the entrance can send the player to an incorrect elevator (Fixed in next build)
+- MISC Starlancer Max - PU - Vehicles - Starlancer Max landing gear won't deploy but ship speed is limited as if they were
+- PU - Pyro - Locations - Checkmate - Medium Hangar blocked by station geometry
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" but does not timeout fail
+- PU - Actor - Inventory - UI / Interactions - Helmets can't be dragged to equip when carrying/holding the helmet in the hands of the player to their head as the port will be missing
+- Multiweapon - PU - Actor / Animation / Weapons - Both male and female actors do not animate while reloading weapons
+- PU - Pyro - Orbituary - Locations / Art / VisArea - Navigating from assigned hangar elevator to "Entrance" opens to a VisArea portal above medical clinic
+- PU - FOIP / VOIP - Audio - Players cannot hear other players through any audio channel
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - Hostility not being wiped by QT
+- PU - Derelict settlements - Locations / AI / Spawn Closets - AI do not move after spawning
+- PU - Multivehicle - Quantum Travel / mobiGlas / Starmap - Unable to use plotted route to planetside location while in planet orbit
+- PU - Missions / AI - Repel Raid on Orison - Combat AI are not spawning and automatically is failed
+## Features & Gameplay
+- Gameplay
+Player Injury Polish
+Increase injury value thresholds by 30% and reduced trigger probability. This is an immediate change until a proper, longer term balancing is conducted. (Feedback Thread will be available)
+- Locations
+- Further Contested zone Art and Performance Polish
+- Pyro Stations Exterior Performance Pass
+- Further Pyro Outpost Polish Pass
+- AI
+- Implementing new NPC Voice Packs with many more wildlines and dialog
+- Area18 AI Population and Behavior Update
+- Core Tech
+- Further AI Performance Polish Pass
+- Ship Kiosk Performance Improvements
+- Ensure Local Entities are Spawned for Inventory Preview Performance
+- Further Screen Space Reflections (SSR) Performance And Polish (Should also fix noisy and pixelated SSR - STARC-142683)
+- Further 4.0 Audio Mix pass for Interactables, UI, Weapons, Ambience, and Dialog
+## Bug Fixes
+- Fixed - PU - Stanton / Pyro - Jump Points - Player unable to control ship after making contact with Jump Tunnel obstructions (Jump Tunnels no longer on NG+)
+- Fixed - Jump Drives that have transitioned from one system to another do not have authority on the new server or client (STARC-136087)
+- Fixed - PU - Stanton - Locations / Transit / Personal Hangars - Some spaceport elevators will not list your personal/staging hangar despite being listed in adjacent elevators (STARC-123863)
+- Fixed - Crusader Hercules series All Variants - PU - Vehicles / Graphics - The Anunciator Panel on the Hercules series is blurry/stretched out and unreadable
+- Fixed - PU - Pyro / Stanton - Locations / Design - Freight elevator - Some objects can be thrown outside of the grid boundary, causing obstruction
+- Fixed - PU - Stanton/Pyro - Jump Points - Ships / Vehicles / Game Code - The Jump Point can get stuck in the Requesting Jump Phase
+- Fixed - Jump Points - Code - Quantum Travel Markers are visible in the tunnel and when looking at the Jump Point in the UI cone
+- Fixed - PU - Multi-System - Jump Points - Ships / Vehicles / SFX / Audio - The Jump Point SFX are rapidly looping/cut off
+- Fixed - PU - FPS Weapons - Consumable / Interactables - Hacking Chip - A non-functioning hacking chip with paramed description drops from enemies and contorts actor when held
+- Fixed - Jump Points - Tuning VFX remain present when the ship is Turned off
+- Fixed - Code - AI: Ammo Management - AI don't attempt to loot ammo from corpses
+- Fixed - PU - Pyro - XS Outposts - Locations / Art - Hab building is missing it's interior
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 5 Server Crashes
+- Fixed a Server Deadlock

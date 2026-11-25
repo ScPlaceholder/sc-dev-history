@@ -1,0 +1,6 @@
+You can't just measure the system wide CPU utilization. This is not how game engines work.
+If you look at all the CPU cores you will see that one or two cores have a much higher utilization than any other cores.
+These are the main thread and render thread orchestrating the whole engine.
+With Gen12 and Vulkan we will get rid of the render thread.
+What's left is the main thread which we're always trying to optimize.
+It's not as easy as it sounds since the game keeps developing so any optimization we're doing will be eaten up by something else.

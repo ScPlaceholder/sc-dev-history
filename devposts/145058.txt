@@ -1,0 +1,11 @@
+Hi everyone!
+We're back after the break with the systems migration that we went through yesterday.
+We are currently investigating a few reports so I thought I would drop a line here to inform you guys of what we are investigating and fixing:
+- The imager / embed system currently refuses certain images/URL combination with special characters. It used to accept them, we're going to retro-fix the previous embeds and images in threads once we find the cause. This might cause a "Media Validation" error temporarily while we work on hammering this fix.
+- The notifications were a bit backed up this morning so we added additional capacity to catch up the notifications queue. At this time, all notifications / mentions should be sent properly and in a timely fashion.
+- A problem occurred during the migration and so we had to revert the "Read Markers" for your Private Message lobbies. They are probably all light up right now but revisiting them will clear and reset the markers.
+- Some of the pinned threads might show up in the wrong order on certain thread listings, this should resolve itself automatically with time or by forcibly unpinning and re-pinning the thread in question.
+- There was a temporary error at the end of the migration that would display the erased threads "slots" in the channel listing: this should be already fixed up.
+I will update this thread with more info!
+Thank you!
+-b

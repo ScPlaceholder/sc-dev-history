@@ -1,0 +1,5 @@
+Axis inversion:
+The animation issues with the controllers is not a binding problem in itself, it's more an animation hookup problem. E.g in the Gladius thrusting forward actually pulls the ingame throttle backwards ... that is not intended and already tasked up to get fixed.
+As for the inversion ... that is highly dependent on the stick hardware itself. Some throttles e.g. have their values inverted but we can't really detect that. We currently do not keep a library of all hardware input devices (as it is hard to maintain that list) so you'd have to invert the settings yourself at this time.
+Modifier buttons:
+It's on our todo list to have the option to freely define modifier buttons. Though that won't happen until we get the building blocks support for the bindings screen. :disappointed:

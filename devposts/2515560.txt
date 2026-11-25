@@ -1,0 +1,42 @@
+## Star Citizen Patch 3.7.2
+Alpha Patch 3.7.2 has been released to PTU, and is now available to test!  Patch should now show: PTU-3580118.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: NO
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+Testing Focus
+- General gameplay
+Known Issues
+- Area18's QT marker may be missing.
+- Players can keep rental ships past the 24 hour rental period.
+- Purchased commodities occasionally do not visually appear in ship cargo holds.
+- WHen spooling for a QT jump or already traveling, exiting the seat will result in the loss of the QT HUD.
+## New Features
+Gameplay
+- There's now a notification message when a player accepts a party invite.
+- Temporarily set the default spawn location for new logins to Area18.  If you have played previously, you will still be at your last saved location.
+## Feature Updates
+Characters
+- Polish and behavior fixes for mission givers.
+Gameplay
+- Messaging for inviting to group should now reflect the group name.
+- Moved the chat window further down to avoid slight overlap with self status.
+- Increased the speed of bounty mission marker placement after action area arrival to avoid incidents where players kill the bounty before the marker has been updated.
+Ships and Vehicles
+- Adjusted "ping" power requirements to be more compatible with use while the QED is on for the Mantis.
+## Bug Fixes
+- Delivery locker displays should now have sound effects.
+- The player should now correctly move with the turret in the upper turret of the Caterpillar.
+- Fixed an issue where several of Lorville's AI residents appeared immobile.
+- Deliveries to stash houses should consistently complete.
+- Fixed an issue where the player's microphone could get turned off in game even though the UI will display it as enabled.
+- Fixed an issue where the parasite helmet would move the neck instead of the jaw when used with FOIP.
+- Fixed an issue where staying aligned to the quantum travel target after coming out of quantum would prevent calibration.
+- Fixed an issue where the mission cargo for Battaglia's recovery mission would fail to appear after destroying the target.
+- Players should now be able to select "get up" and "logout" from the Freelancer's bed.
+- The visor chat audio widget should no longer vanish when in a pilot seat.
+- The safe in Hurston's mission should no longer vanish when it is put down.
+Technical
+- Fixed 4 client crashes.
+- Fixed a client crash associated with Avira Game Booster.

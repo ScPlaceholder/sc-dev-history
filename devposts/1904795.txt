@@ -1,0 +1,4 @@
+Sorry yes, I should have been clearer. By "as well" I meant we'd have to maintain support for two modes:
+1) A mode that uses raytracing (though probably not exclusively) in some way to get its results
+2) A mode that doesn't use raytracing, but can achieve a similar look without changing the art assets or lighting setup.
+As an example, when we ported over the voxel fog, we intended for it to be an "as well" feature because it's expensive to run, but eventually ran with it as an "instead" feature because it interprets the fog parameters totally differently, and drastically changes what does/doesn't work in terms of light placement.

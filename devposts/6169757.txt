@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.20.0
+Alpha Patch 3.20.0 has been released to the PTU, and is now available to test! Patch should now show: VERSION 3.20.0-PTU.8671107.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Waves 1 and 2
+Database Reset: Yes
+Server Regions: US/EU (Please select one of these instead of BEST or loading will fail)
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Known Issues
+- Multivehicle - PU - Ship / HUD - PING wave does not visually activate for players
+- MISC Hull C - Stanton - Vehicle / Actor Tech - There is no oxygen/breathable atmosphere at the engineering end of the spindle corridor when it is extended
+- Vehicle Loadout Manager - switching ship components causes all parts of the ship to appear empty
+- PU - Inventory - Local inventory infinite loading after loadout change in VLM and relogging into the game
+- PU - Stanton - AI / Locations - Combat AI will teleport / pop in combat
+- PU - Loot Generation / Interactables - Lootable boxes cannot be opened
+- PU - Vehicle - MISC Prospector - Door doesn't work from the inside
+- AC - Classic Race - Multiple Maps - Maps timeout while loading
+- Belvic Convention Center Train Station is Missing
+- Multiple Locations - Inventory - Equipped items are lost after dying in the landing zone
+- Multivehicle - PU - Vehicles / Actor Feature - Medical / Respawn - Cannot respawn on a ship that has streamed out
+- Room System / Actor / Locations - Room System does not protect player actor from extreme weather conditions in Lorville Interiors
+- ASOP - Ships - Vehicles - Clicked to "Store" ship at ASOP but it was "Destroyed"
+- Vehicles - Players and items can fall through the bottom deck of the Redeemer
+- Vehicles / Ship Components - Ships that do not have missiles as a standard weapon cannot restock their countermeasures.
+- Reclaimer - Vehicles - Stanton - Reclaimer bridge elevator interaction missing
+- Performance - Client Performance drops around Ghost Hollow
+- Mission Content - UGF - AI Counter will drop to 0 after streaming location in and out again
+- Vehicles / GFX - Client FPS will drop as long as players are inside of the cockpit of the Drake Cutlass series
+- The Carrack's main elevator will get locked in place and begin to spin indefinitely after spamming the floors for a few minutes
+- GrimHEX - Dumpers Depot - Art / Locations - The Dumper's Depot within GrimHEX has a VisArea that allows players to clip inside of location.
+- Vehicle Maintenance Services - Ship repair doesn't happen but still charges you
+- Landing Pads - Multivehicle / Shopping - Refuel, repair, and rearm services unavailable when landed
+- Multiple Locations - ASOP Terminal / Ships - When storing a ship, the ASOP terminal will set the ship status to "Claim" instead of "Retrieve."
+- Exploit / Ships / Vehicles / Game Code / Multiplayer - When two Players Salvage a Ships Hull simultaneously the Hull will recover and be infinitely Scrapeable
+- Inventory / Personal Inventory - Inventory can enter a state of becoming unresponsive, preventing the player from being able to eat or drink
+- AI / Art - VFX - Hostile AI bullets visually clip through walls
+## New Features
+Locations
+- Seraphim Station
+Bringing the Crusader Port station in line with the other stations and replacing the long standing Port Olisar, Seraphim Station brings many of the amenities needed to accommodate the various features required of a station such as hangars, cargo decks, shopping, clinics, and habs.
+Gameplay
+- Automated Cargo Transfer and New Cargo Packing System
+Alpha 3.20 includes the addition of the new automated cargo transferal experience to the PU for the Hull C. The existing cargo transaction system,which other ships will still use for this release, will instantly pop all of the purchased cargo into a ship or instantly remove all sold cargo off the ship after the transaction has completed. The Hull C however requires a new experience where the player after buying or selling the cargo at the commodity kiosk will be prompted to pick it up/drop it off at a loading area. To do so the player retrieves their vehicle then hails the location's Cargo Services to get assigned a loading area (similar to getting assigned a landing area from ATC). After flying their ship to the loading area they will be prompted to stop moving, and then extend the spindles on their ship. Once the ship is ready cargo will be added onto the cargo grids of the ship over a period of approximately 5 or so minutes, depending on the size of the load. Currently these boxes will just pop into place.  If the player moves or someone enters the area the transfer will be interrupted until the disruption is addressed or the loading area is eventually revoked. After transfer is completed successfully the player will be prompted to leave the area, eventually getting a warning for impounding if they do not.
+With the changes for the Hull C comes a complete rewrite of how the cargo system places cargo into ships (any ships, not just the Hull C). Previous versions of the system only dealt with 1 SCU containers, and could use fairly simple logic for placement or removal. We are now supporting various sized boxes to be placed in the cargo holds (1, 2, 4, 8, 16, 24, and 32) as well as supporting various orientations of placement in the grid to work around grid obstructions. This also includes temporary tractor beam strength changes to support the attachment/detachment of those various sized boxes using the tractor beam. Cargo grids have also been extended to support non-cargo box attachments and also the smaller mission hand held boxes.
+- New Mission: Illegal Salvage Coverup Mission
+Salvage Coverup is a new variation on the salvage missions. These new missions come as a new, illegal mission contract called The Tar Pits to cover up for the perpetrator of a crime, in this case NineTails, who want to keep their involvement under the radar. You are tasked to hull scrape their entire ship, to remove the NineTails paintjob before the ship evidence is discovered by security. If security forces arrive before you manage to perform the coverup, the security ships spot the hull colors, report back, and you will fail and be attacked if at the location. Do it in time, and the Tar Pits will pay you handsomely for your efforts, and your silence.
+Ships and Vehicles
+- New Ship: MISC Hull-C

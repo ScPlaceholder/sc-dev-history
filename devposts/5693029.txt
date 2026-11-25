@@ -1,0 +1,8 @@
+Hello,
+I can confirm I am getting the same error with Firefox and uBlock Origin.
+A new rule was added to Easylist, preventing the pledge store CSS file from loading, and subsequently the whole store: https://github.com/easylist/easylist/commit/22a3441fe31e5a5be6d1307026961afe0b2a2b7c
+We are using Typekit to load the font the pledge store uses, and as far as I know it is not a tracker, so I am not sure why it was added to the list to begin with. It is apparently breaking other websites as well: https://github.com/easylist/easylist/issues/14723
+As a temporary fix, you can either disable uBlock for the RSI website or add the following to the "My filters" section of uBlock:
+@@||p.typekit.net^$3p,domain=robertsspaceindustries.com
+I will report the issue to Easylist, and see if they can either remove this rule or add an exception for RSI.
+Thanks for the report!

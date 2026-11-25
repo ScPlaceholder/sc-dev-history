@@ -1,0 +1,61 @@
+## Star Citizen Patch 3.2.0m
+Alpha Patch 3.2.0m has been released to PTU, and is now available to test!  Patch should now show: PTU- 794284.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Major Known Issues:
+- We are tracking a client hang/freeze. If you freeze, please leave the game frozen for 5 minutes so we can collect data.
+- QT Spool Indicator is missing from Flight HUD.
+- Escort missions do not progress past the rendezvous stage.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- New "destroy probe" mission.
+- Mining: Scanning, mining, extraction, and Prospector function.
+- Flight and function of the following: Avenger series, 600i, Eclipse, Blade.
+- Orbital quantum travel.
+- G-force effects.
+- Ship power tuning and power triangle usage/effects.
+- Manned and remote turrets.
+- Group system.
+- Quantum linking.
+## New Features
+Universe
+- While in atmosphere, the quantum drive will display the inability to travel to destinations as "In Atmosphere" for clarity.
+- Added new clothing to Casaba at Port Olisar.
+- Set-up new screens for comm array terminals.
+## Feature Updates
+Universe
+- Adjusted ship storage on illegal landing to be less likely to trigger while the player is still in their ship.
+- Minor visual updates to ASOP terminal screens at Port Olisar.
+- Reduced the instability of Agricium, added more variation in geometry to mineable rocks.
+- Edited landing area UI to be more color blind friendly.
+FPS
+- Balance pass: Demeco and Gallant minor damage increase, R97 minor damage decrease, Devastator minor damage increase, F55 large damage decrease and spread penalty, Pistol/SMG small damage increase, SMG minor spread tighten, Scalpel and Arrowhead slight damage increase, heavy armor protection reduction, shotgun slight spread tighten, rifle very slight damage reduction
+Ships and Vehicles
+- Added more consistent methodology for QT targeting and alignment updates.
+- Increased the plasma cannon size on the Blade to S3 and made fixed to match the other weapons.
+- Further updates to ship computer dialogue.
+- Power usage adjustments to flight and shield generators.
+## Bug Fixes
+- The Mustang Alpha ship name should now display correctly.
+- The 600i should now properly have locked doors upon spawn.
+- The quantum link should no longer engage if slave ships are out of range of the master ship.
+- Visor chat should no longer disappear occasionally when the player flight readies their ship.
+- Chat text should no longer go out of the field when the log is full.
+- Manually selected QT points should now clear upon subsequent selections.
+- Quantum linking notifications should now use the proper player name.
+- The legacy outlaw arms should now be purchasable.
+- Fixed an issue where, with the mG open, missions did not complete when objectives were reached.
+- The MFD displays on the Gladius should now fit properly.
+- The Ruto hologram should now remain visible for more than one set of dialogue.
+- The mining laser throttle should now automatically revert to 0.1% following shattering of rock deposits.
+- The mining laser should stop firing when entering interaction mode.
+- The 600i should no longer lose wings and thrusters very quickly into a fight.
+- Hangar nodes should no longer list hundreds of items that can not be placed.
+- "Destroy probe" defenders should no longer occasionally become hostile to one another.
+- Toggling mining mode on and off while landing gear is deployed should no longer render the Prospector stuck in PRE flight mode.
+- The gunrack at the rear of the Vanguard Warden should now function.
+- Players should be able to accept and invite to parties in all circumstances.
+Technical
+- Fixed 6 client crashes.
+- Fixed 5 server crashes.
+- Various graphical fixes for flickering when using SLI.

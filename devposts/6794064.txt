@@ -1,0 +1,66 @@
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9154386.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Wave 2
+Server Info: US/EU - EPTU Channel
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing. When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus". Please issue council all issues related to those in testing focus and in general gameplay.
+Testing/Feedback Focus
+- Stability/Performance/Bug Fixing
+- 3.23 Features and Gameplay
+Known Issues
+For 3.23, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs.
+Distribution Center missions sometimes show the wrong location markers inside so might be difficult to know exactly where you need to go to.
+Server and Client Performance is something we are constantly monitoring and working on fixes and changes for 3.23.
+- PU - Stanton - Missions - Eliminate Specific objective marker does not update with the target's location even though it has been spawned
+- Graphics - Upscaling / DLSS - Under any upscaling option, ship HUD clarity is significantly affected when QT HUD is displayed
+- PU - Creatures / Kopion - Animation / AI - The Kopion creatures do not move or attack players
+- PU - Multiple Locations - Locations / Art - GrimHEX and Kareah airlocks are missing breathable air and doors
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Locations - Grim Hex - Hospital - Elevator - Elevator is missing at Grim Hex's hospital
+- PU - Stanton - Lorville - Transit / Locations - Trams missing from Perimeter Line West
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Interactions / UI - Panels become unresponsive, after highlighting interactables
+## Features and Gameplay
+Locations
+- Distribution Center LOD, Performance, Lighting, and Audio Polish
+- Adjusted Distribution Center AI population to be more Civilian Focused instead of Security
+Gameplay
+- IFCS - Master Modes: Allow cancelling Master Modes swapping at any point
+- Dynamic Crosshair: Hit Marker Sound FX Polish
+Core Tech
+- Added Vulkan Reshade to EAC Whitelist
+- Further Server Performance Optimizations
+- Made Network Performance Optimizations
+- Made Further Water Sim Improvements
+- Put in further updates to help smooth out all NPCs jittering
+- Updated control images for 3.23
+## Bug Fixes
+- Fixed - PU - Stanton - Distribution Centers (DC) - Locations / Physics - Hangars missing collision for incoming flight traffic (STARC-107225)
+- Fixed - PU - Stanton - Distribution Centers (DC) - Locations - Fleet Manager / UI - ASOP Terminals cannot retrieve ship list and instead has infinite load
+- Fixed - PU - Stanton - Distribution Centers (DC) - Locations / Mission Content / Design - Delicate Dealings/Ownership Reassignment delivery point marker disappears at the end of the mission
+- Fixed - SC - Audio Code - Marok death sound not triggering
+- Fixed - PU - Actor / UI - Loot Inventory - When looting, UI can fail to target a valid slot, causing move attempts to fail
+- Fixed - PU - Stanton - Mining / UI - Player is unable to mine asteroids as scan info does not appear
+- Fixed - PU - Stanton - Lorville - Transit / Locations - Trams missing from Perimeter Line West
+- Fixed - Missiles - VFX feature - directional effects will sometimes be oriented the wrong way when spawned via MFX surface type interaction from missiles
+- Fixed - MultiVehicle / Vehicles - PU - When firing the first missile at a water surface, it won't render any VFX or changes to the water
+- Fixed - PU - AI - The interaction prompt from Admin / Bartender / Mission Giver AI will disappear once the Player attempts to select an option
+- Fixed - PU - UI / Mobiglas - The trader / Wallet app has no fail state screen results in infinite processing
+- Fixed - PU - Stanton - Missions - Mercenary / KillAllAnimals - Targets killed with bombs and missiles do not count towards the mission objective
+- Fixed - Anvil Carrack - PU - Vehicles - Life Support / Room Volume - There are areas in the technical deck with gaps in the room volume causing player suffocation
+- Fixed - Anvil Pisces Series - ( ALL VARIANTS ) - PU - Vehicles / UI / Vehicle HUD - Engine On/Off PIT prompt is not aligned with the highlighted button in the cockpit
+- Fixed - Origin Jumpwork 600i - Vehicles - PU - 600i cockpit glass is too reflective (STARC-102422)
+- Fixed - PU - Stanton - Mission Content / UI - Objective marker does not appear for shared mission contracts
+- Fixed - PU - Missions / UI / AI - Space Bounty target AI is not spawning at the marked location (STARC-107206)
+- Fixed - PU - Weapons - When reloading the Behring FS9, any optic attached to the weapon noticeably moves during the reload animation
+- Fixed - PU - Stanton - Salvage - Mission Content / Game Code / UI - Progress bar does not show when salvaging ships during contract
+- Fixed - AC - Engineering Squadron Battle - Scoreboard displays inconsistent clients per team compared to actual active clients per team
+## Technical
+- Fixed 6 Client Crashes
+- Fixed 7 Server Crashes
+- Fixed a Riva Tuner Vulkan Client Crash
+- Fixed 2 AMD Specific Vulkan Client Crashes

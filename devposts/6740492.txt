@@ -1,0 +1,2 @@
+Shaders are generally not compiled on the fly except by mistake. However, when a compiled shader is first used, the driver does a further compilation/setup step to convert it from a generic format to a GPU-specific one.
+D3D11 doesn't offer any explicit ways to counteract this, but Vulkan makes things explicit via Pipeline State Objects (PSOs) that represent the ready-to-use form. The Gen12 team are aware of the PSO-creation stutter and are working to reduce it, as @KnightStar said.

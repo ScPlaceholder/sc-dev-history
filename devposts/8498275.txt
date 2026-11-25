@@ -1,0 +1,48 @@
+## Star Citizen Alpha Patch 4.5
+Alpha Patch 4.5.0 PTU has been released and is now available for all testers! Patch should now show: VERSION 4.5.0-PTU.10869259.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Engineering, Armor, Ship Balance (Wear and tear partially disabled for now)
+- Vulkan Renderer and Graphics Settings Updates
+- Physicalized Helmets
+- Snub Fighters and Interceptors balance pass
+Not ready for Testing and Feedback
+Updates located here are in partial working state and may be subject to removal from this release. At this time we aren’t requesting feedback for these until the feature is closer to ready.
+- FPS AI Improvements
+- Ship Light Amplification Detection
+- PU Loot Refresh/Collector Rebalance
+- Additional Hairstyles
+## Known Issues
+- Multi-System - PU - UI / Fleet Manager / ASOP Terminal - Typing in the search bar of the ASOP will make it freeze doubling the input
+- Multi-System - PU - ASOP Terminal / UI - Incorrect ship is displayed on the ASOP
+- PU - Graphics - TSR / DLSS - Switching to a new resolution and swapping the upscaling to 50% (performance) causes UI / RTT's to draw repeatedly
+- Multivehicle - PU - Vehicles / Repair - Ships are instantly repaired to 75% with repair tool and can be repaired from the inside
+- Multivehicle - PU / AC - Vehicles / Engineering / Fire - Fire VFX is not visible
+- PU - UI / Gameplay - Party markers are not with party members
+- Multivehicle – PU – Vehicles / Engineering / VFX - Fire is being detected by some clients and not others
+- Multivehicle - PU - Vehicles / Engineering / Components / RN - UI / Kiosk - When using the Engineering Kiosk, the vehicle model can become offset by the actor moving around it
+- Multivehicle - PU - Vehicles / Salvage / Art - Salvage Ships are unable to detect the scraping surface and is missing the Scraping Laser VFX
+- Multivehicle - PU - Vehicles - Breached doors and ramps do not reset after the vehicle has been repaired and the player is unable to close them
+- PU - Pyro - Storm Breaker - AI / Mission Content / Locations - AI are at the Storm breaker facilities in large quantities
+- PU - Pyro - Storm Breaker - Locations / Missions - Opened safes remain open after 2 hour cooldown
+- PU - Stanton - ASD Delving - Onyx Facility - P3MM - Mission Content / Locations / Design / Art - Pipe status doesn't update when fully repaired
+## Features & Gameplay
+Gameplay
+Engineering and Fire Gameplay Updates
+Added fixed text when a part is fixed using the diagnostic MFD. Updating Ship status displays with components. Further Engineering screen visual polish with switched door states from locked vs unlocked to open vs closed and removing bright highlights on doors. Fire and Smoke Rendering, VisArea, and Networking Polish Pass.
+Core Tech
+- Updated Stanton flight music system to use newer flight/fps distinction method for more correct music useage
+## Bug Fixes
+Star Citizen Alpha 4.5.0 currently contains nearly 140 bugfixes for issues occurring in 4.3.2, 33 of which originated from the issue council.
+- Potential Fix: Mirai Razor ALL Variants - PU - Vehicles / Vehicle Balance - CS emission values are too high
+- Potential Fix: Multivehicle - PU - Vehicles / Engineering / Vehicle Components  - Engineering panel can be illegible due to FOV distance (STARC-184024)
+- Potential Fix: PU - Stanton - Resource Network / Vehicles / Interactables - Turtles can be used as Fuses (STARC-168576)
+- Potential Fix: PU - Cargo Hauling / Vehicles - MISC HULL-C - Automated cargo loading will complete transfer without giving the player any cargo on their ship
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 1 Server Crash

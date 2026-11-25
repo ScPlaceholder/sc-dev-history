@@ -1,0 +1,68 @@
+## Star Citizen Alpha Patch 3.24.2
+Alpha Patch 3.24.2 has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.24.2-PTU.9374918.
+Characters in this new environment have been built from Long Term Persistence(LTP) data.
+Currently with LTP, certain player states such as personal hangar layout, custom characters, and in-game purchased consumables are not saved between releases which will cause some items to be lost in the next update.
+Audience: All Waves
+Server Info: PTU Channel
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Shard Player Count: 100
+## Testing/Feedback Focus
+- Stability & Bugfixes
+- Zeus ES & CL (Evocati and owners will receive these in the build)
+- Vehicle HUD & MFD Rework
+- New Character Creator DNA Faces, Beards, Tattoos, and Hair
+- New Acidic and Rock Cave Systems
+- Flight Tuning and Archetype Balance (Ongoing during PTU)
+- Quantum Fuel Adjustments
+- New Arena Commander Updates
+## New Global Event: "Save Stanton" Playtest!
+Tonight on the 3.24.2 servers we will be running the first 4 phases of a new global event called Save Stanton!
+This will start up shortly after the build has been released and run overnight with mission phases 1-4.
+If you have any feedback and issues on the event, check out the post here for known issues and to discuss!
+https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/ptu-playtest-global-event-mission-save-stanton
+## Known Issues
+- Multivehicle - PU - Vehicles / Vehicle Components - Quantum Drives - Cannot initiate quantum jump (low chance STARC-131460)
+QT Workaround: De-allocate all power from systems in power management Re-allocate power to Quantum Drive and other systems.
+- Multivehicle - PU - Vehicles / Components - Unable to pull components out from their sockets
+- PU - Stanton - Locations - Hangars / Network - Hangar at Baijini Point is despawning whilst the player is using the area, without external factors, leaving them stuck inside LEO geo
+- PU - Stanton - Online Services / mobiGlas / commLink - Players are unable to receive updates to their Friends List
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- PU - Stanton - ASOP / Locations - Personal Hangar - Retrieving a ship results in "We are unable to deal with your request at this time" and no ship
+- Corsair co-pilot loses manual gimbal after remote turret (STARC-130625)
+- PU - Stanton - ArcCorp - Area18 - Locations / Art - Multiple areas across A18 have visarea/portal issues
+- PU - Stanton - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Harvestables - Game Code / Planet Tech / Mining - Planets and Moons have no Harvestables/Mineables
+## Features & Gameplay
+Ships and Vehicles
+- MFD/Hud Polish and Marker Decluttering
+We've made lots of adjustments to how much information is displayed directly in view with a large de-cluttering pass on markers.
+A set amount of on screen markers are now considered "Essential", meaning that they are always on display (this includes essential items such as hostile/locked/pinned/selected targets, objectives, navpoints, assigned hangars/landing areas, and party markers within distance). Non-essential markers will be hidden by default. This only affects on screen markers and the radar will still display essential and non-essential items. This is a large step in making sure relevant information is clear in your view. To see non-essential markers around you with out the radar, you will need to use the ship ping (TAB default for keyboard players)
+Along with this we've made further marker performance optimizations. Separated materials for starmap, holo radar, and screen radar to allow adjustments per context. Removed all edge markers from radar and fixing issues with determining whether a marker is within the volume on screen radars. Added stroke to Unpowered pips, and fix percent rounding wrapping of last pip.
+- Removed gimbals from non weapon turrets (Ships updated: Argo Mole, CNOU Nomad, Drake Caterpillar, MISC Prospector, ORIG 315P, RSI Constellation Taurus)
+- Tweaked weapons pool sizes and added engineering buffs to some vehicles to fix weapon power deficits
+- Added New Ships to Shops: Mirai Pulse, RSI Ursa Medivac, ARGO MPUV-1T, Aegis Sabre Firebird
+- Retaliator Modules Added in Component Shops
+- Ground Vehicle Emission rebalance
+- Legibility HUD/MFD Pass on BANU Defender and MISC Ships
+## Bug Fixes
+- Fixed - PU - Shopping / UI / Shopping Kiosk - Shop UI is horizontally stretched and can't be interacted with (STARC-131895)
+- Fixed - PU - Multivehicle - Vehicle/IFCS - Camera - When holding ( W ) and switching to 3rd person ship stops accelerating and speeds drop to zero (STARC-129858)
+- Fixed - MULTIVEHICLE / MULTILOCATION - PU - Vehicles / Locations / UI - mobiGlas - VMS - Repair, refuel and restock is not working at various locations (STARC-123488)
+- Fixed - RSI Zeus (ALL VARIANTS) - PU - Vehicles - Player sat in co-pilot seat will be unable to exit if another player sits in the pilot seat (STARC-132418)
+- Fixed - Controls - Pilot / Copilot - Vehicle / Multivariant - RSI Zeus ES/CL - Intended seat control hierarchy sometimes not respected between pilot copilot and gunner seats (STARC-131940)
+- Fixed - PU - Vehicles / Art / Tech Art - Vehicle / Multivariant - RSI Zeus ES/CL - Vehicle is spawned with clipping landing gear if observed during retrieval (STARC-132014)
+- Fixed - Drake Interplanetary Corsair - PU - Vehicles - The Corsair cargo bay is invulnerable (STARC-107838)
+- Fixed - Banu Defender missing multiple components (STARC-132772)
+- Fixed - Origin 315p - PU - Vehicle - Master Mode / Controls - Cannot toggle Tractor Mode (STARC-121510)
+- Fixed - Drake Corsair - PU - Vehicles / Art / Tech Art - When initially spawned with fleet manager, the landing gear of the Corsair is deployed clipping through the closed bay doors
+- Fixed - Crusader Hercules Starlifter some variants - PU - Vehicles - MFDs - Gunner Seats still on old UI MFDs
+- Fixed - PU - Character Customizer - HAIR - female - Back of neck clips through hair for Female Model and in head library
+- Fixed - Multivehicle - Multimode - Audio / SFX - Ship system sounds loop continuously in the cockpit even when the engines / power is off
+- Fixed - AC - Frontend / UI - 3D background hangars do not load the first time AC mode is entered
+- Fixed - Multivehicle - PU - Stanton - Vehicles / UI / MFD - Multiple ground vehicles do not have a velocity gauge
+- Fixed - Stanton - PU - Resource Network - Ships / Vehicles / UI - Quantum Drives are not refunding their Full Power Management Pip Cost when Pip is Toggled Off
+- Fixed - RSI Mantis - PU - Vehicles / MFD - MFD has high translucence and washes out on brighter backgrounds
+## Technical
+- Fixed 3 Client Crashes
+- Fixed 3 Server Crashes

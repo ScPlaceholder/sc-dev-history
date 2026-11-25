@@ -1,0 +1,47 @@
+## Star Citizen Patch 3.3.0p
+Alpha Patch 3.3.0p has been released to the PTU, and is now available to test!  Patch should now show: PTU- 969246
+.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".
+Testing Focus
+- Scramble Races
+- FOIP
+- New Ships and Vehicles: Valkyrie, Phoenix, Hammerhead, Mustangs, and Cyclones.
+- Manned turrets.
+- Changes to ship cannons.
+- Power management, overpower, and overclocking ship systems and components.
+Major Known Issues:
+- Mission givers may not be functioning correctly.
+- Inviting someone to party via the mG causes a client crash. W/A: Invite via interaction mode.
+- Ships rented from the front-end do not show up in ship selection list.
+- Airlocks lack lighting.
+- Ships are able to quantum travel to locations they do not have enough fuel to reach.
+Feature Updates
+Universe
+- Improved LODs on Reststop signage
+- Re-implemented pickup sounds for lootable ammo boxes
+- Smoothed LOD pop-in and surface details on Cellin surface
+UI
+- Reststop model updated for Starmap
+- Added Timer UI to Patrol Missions
+Ships and Vehicles
+- Adjustments made to several Cannons which were not updated in previous pass
+- Updated atmospheric entry cones on Gladius, Aurora, Constellation and Hornet series
+- Cyclone series should now have impact effects
+## Bug Fixes
+- Starfarer - Fixed multiple interaction points that were missing highlighted prompts
+- Players should no longer fall through geometry at the Reststop
+- Avenger engine trails should no longer clip through body when making sharp turns
+- Fixed several LOD/asset "green box" issues around Kareah
+- Corrected some blinking/missing wall LODs in Levski
+- Ship powerplants will no longer permanently overheat in certain situations
+- Turning components on/off no longer bypasses overheat state
+- Fixed an error causing some mission givers to not give missions to players
+- Elevators in Levski and Reststop should now be more responsive/move to selected location
+- Space-based missing crew missions should now be working again
+Technical
+- Fixed 4 server crashes.
+- Fixed 5 client crashes.

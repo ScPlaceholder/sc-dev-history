@@ -1,0 +1,66 @@
+Alpha Patch 5.0 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 5.0.0-PTU.13273298
+- Audience: Wave 3 testers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+25x Rep reward multiplier is currently active on PTU
+- Stability, Bugfixes, LTP between PTU releases
+- Genesis (Planet Tech V5)
+- Nyx 1
+- Starchitect Points of Interest
+- Mission Boards and Local Missions
+- Intraplanetary Server Meshing
+- Time To Kill (TTK) Vehicle Balance
+- Missile Lock Interface Update
+- VOIP Reliability Improvements
+## Feature Updates
+Starchitect Locations
+Interior lighting has had a broad fog and polish pass across the maintenance, generic, command and habitation buildings, with lights added above medical cabinets and shadow distances reduced on casters. Compound lighting has been reworked to stop light leaking through walls, and the turret tiles have had their red and orange lighting rebalanced. Agriculture rings have had spill lighting added.
+- Safes have been moved out of kitchens and into storage rooms
+- Backs added to exposed ladders, so they no longer read as unfinished
+- Maintenance room doors have been correctly centered on their frames
+- Potential Fix: Stacked decals on storage roofs, misaligned roof effects, floating props and a hole in the generic outpost exteriors
+- Potential Fix: A misaligned vent module in the compound wall, with tint and rib placement improved across compound walls
+- Potential Fix: Unnecessary climbing points removed from habitation and depot tiles
+Contracts
+- Potential Fix: The Covalex locker becoming impossible to interact with if another player on a mission had used it first (STARC-218728)
+- Potential Fix: Containers not being recognized as mission cargo during Recover Cargo contracts, so no warehouse order was created
+- Potential Fix: Attack on All Fronts breaking when the player arrived before the location had finished registering them
+- Potential Fix: Objective markers remaining on screen after the objective was resolved, including when another player had already used the terminal
+- Potential Fix: Courier contract packages displaying incorrect names
+- Potential Fix: Recover item contracts dropping off at lockers rather than the previous target, with the items to steal moved clear of new interior dressing
+Genesis and Nyx I
+A wind pass has gone through the Nyx I flora, with several plants reprocessed using skeletal meshes so they move more convincingly. Cloud ambient occlusion has had further tuning, and the ocean rendering now fades its reflections out over long distances, which should stop the odd mirrored artifacts previously visible from orbit.
+- Water settings cleaned up, with orphaned regions no longer left behind when settings change
+- Screen space reflection improvements on water
+- Potential Fix: The Gatala Fungi harvestable showing placeholder text when scanned from inside a vehicle (STARC-225205)
+- Interaction sounds added for the Gatala Fungi
+Audio
+Biome audio has had a significant correction this build. Sound emitters were moving around even while the player stood still, which caused biome ambience to stack on itself and jitter. Levski has also had a mix fix, where ambient audio was excessively loud and audible throughout the entire station rather than staying in its own areas.
+- Further biome audio mixing across Nyx
+- Potential Fix: Biome ambience stacking and jittering while the player was stationary
+- Potential Fix: Levski ambient audio being excessively loud and carrying across the whole station
+Virtual Reality
+These updates are very experimental so please let us know if you find any oddities with these updated VR changes!
+The weapon customization interface has been rebuilt as a 3D object for VR. Attachment ports are now drawn directly on the weapon rather than in a flat panel, selected with the stereo cursor, with the attachment list scrolled using the mouse wheel. Your character also stops leaning to follow your head while the interface is open, which previously shifted the view.
+The stereo cursor now switches between eye tracking and manual aiming automatically, handing control to the mouse when you move it and returning to eye tracking after a couple of seconds
+The radial menus now use the stereo cursor directly, and work from head direction when eye tracking is unavailable.
+## Bug Fixes & Technical
+- Potential Fix: Battaglia not speaking to the player, leaving the mission unable to progress (STARC-216784)
+- Potential Fix: The second Yormandi not spawning at the Onyx Facility during ASD Delving (STARC-182820)
+- Potential Fix: The current location description missing from the front end after loading into the Persistent Universe
+- Potential Fix: Blend sliders in character customization not moving when dragged with the mouse
+- Potential Fix: Exterior lights flickering rapidly on multiple vehicles
+- Potential Fix: Entering the pilot seat of a vehicle on the Crusader Showroom floor repositioning the player and despawning the vehicle (STARC-218640)
+- Potential Fix: The Zeus Exploration helmet light being misaligned, casting shadows while moving and while aiming down sights (STARC-220878)
+- Potential Fix: The MISC Hull C not playing its first retract animation
+- Potential Fix: Undersuits clipping through clothing on Levski NPCs
+- Potential Fix: Gravity generator audio being audible from inside the cockpit (STARC-223999)
+- Potential Fix: Model-K2 Rifle descriptions listing it as plasma rather than laser
+Crash Fixes
+- Potential Fix: Client freeze and watchdog timeout caused by a lock conflict when loading character models
+- Potential Fix: Client crash in wheeled vehicle physics
+- Potential Fix: GPU crashes from invalid maths in the wind and particle shaders (STARC-223665)
+- Potential Fix: Server crash during planet load state queries
+- Potential Fix: Server crash when an entity's density class changed
+- Potential Fix: Several crashes and overflows in the Windows library loading hooks at startup

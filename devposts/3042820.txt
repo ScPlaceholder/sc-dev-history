@@ -1,0 +1,33 @@
+## Star Citizen Patch 3.9.1c
+Alpha Patch 3.9.1c has been released to PTU and is now available to test!   Patch should now show: VERSION 3.9.1-PTU.5229583.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+Pledge copy has been enabled.
+USER.cfg settings:
+r_displaySessionInfo = 1
+Bug Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-9-1c
+Testing Focus
+- General Persistent Universe Gameplay
+- Bug Regression
+Known Issues
+- Outposts on Hurston with a trading console available do not see landed ships.
+- The multiTool from the prison commissary does not come equipped with an OreBit mining attachment.
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed.
+- Ships can be displayed in an "unknown" state, unclaimable and irretrievable.
+## Feature Updates
+Gameplay
+- Added Drake Caterpillar, Cutlass Red, and Cutlass Blue to Arena Commander Inventory.
+Ships and Vehicles
+- Increased the flight speed of the Cutlass Blue.
+## Bug Fixes
+- Fixed an issue that could cause players to lose collision and go into a no-clip state.
+- Player should no longer be given a CrimeStat for not stopping for a security patrol and should correctly be given an infraction.
+- Mission Givers should now speak or animate correctly if player accepts an invite mission while they are not streamed in.
+- Fixed multiple missing LODs and missing geometry on the station security docks.
+- There should no longer be a spot of missing texture at the Teasa Spaceport on Lorville.
+Technical
+- Fixed 2 server crashes.
+- Fixed a client crash.
+- Fixed a server deadlock.

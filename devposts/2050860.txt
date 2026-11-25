@@ -1,0 +1,55 @@
+## Star Citizen Patch 3.5.0o
+Alpha Patch 3.5.0o has been released to PTU, and is now available to test!  Patch should now show: PTU-1369564 .
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- IFCS: Heat Rework, Atmospheric flight, Arena Commander
+- Balance: Assisted gimbals, manual gimbals, auto-convergence, cannons vs repeaters vs scatterguns, ship roles
+- Locations: ArcCorp, Area18, Lyria, Wala
+- Star Marine: All game modes
+- Female Character
+- DNA face customization  system
+- 300i
+Major Known Issues:
+- Quantum travel VFX can sometimes appear off and overly flashy.
+- Some ships are unable to connect when landing, bouncing back into hover. W/A: Power off quickly after touchdown.
+- Sometimes after ejecting ships claimed on insurance will be returned without their seats.
+- Account copy has been temporarily disabled.
+- Players are frequently killed instantly in their cockpit during dogfights.
+- NPCs are not moving at Lorville and Levski.
+## Feature Updates
+Universe
+- Ambient audio pass on the TDD at Area18.
+- Player idle time no longer counts down while in Quantum Travel so players should no longer be kicked for inactivity while traveling in quantum.
+Ships and Vehicles
+- Retuned Buccaneer to better fit new flight model.
+- Reduced Gatling velocity and increased lifetime to maintain normal range.
+- Increased cannon velocity.
+## Bug Fixes
+- Ads around Area18 should no longer have audio that bleeds through backwards.
+- Reputable delivery missions should no longer send you to less than reputable locations such as GrimHex or Abandoned Outposts.
+- Scanning a mining deposit should no longer cause multiple "Scan Complete" audio prompts.
+- Players should no longer be interdicted by Local Security when not wanted.
+- Fixed and issue with the Clovus mission server cradle so that you can now interact with it correctly.
+- Fixed NPC service beacon missions so that they now correctly appear around rest stops.
+- Guards at Lorville should no longer idle in place and should now patrol the area correctly.
+- REC rewards for participating in Arena Commander should now correctly be added to your account ledger.
+- Fixed an issue that was causing AI Service beacon missions for Repair Defense to not show as frequently as they should.
+- Dropping a mission box on the ground should no longer instantly fail the delivery mission and prevent you from picking it up again.
+- Fixed VOIP calls not showing the interiors of their ships to other players.
+- Fixed the following ship to properly achieve landed state: Caterpillar, Gladiator, Merlin, Retaliator, Buccaneer, M50, Scythe, and Glaive.
+- Fixed an issue with certain derelicts spawning too close to the surface of planetary bodies.
+- Attempted fix to jittering and immobile AI ships.
+- Fixed an issue causing the Constellation's cargo bay being destroyed when flying into a hangar on ArcCorp.
+- Players should now be able to start an Introduction quest with a mission giver while other players are already on the quest.
+- Fixed multiple ship glass interiors incorrectly reflecting the exterior environment.
+- Fixed an issue that caused an NPC ship to not appear when interdicting a player.
+- Fixed an issue with Saitek x52/x55 throttles so that pushing up on the throttle correctly initiates thrust.
+- Fixed an issue causing higher difficulty Service Beacon missions to not appear.
+- Updated inventories at all Dumper's Depot locations outside of Area18.
+Technical
+- Fixed 5 client crashes.
+- Fixed 7 server crashes.
+- Fixed 2 Star Marine crashes.

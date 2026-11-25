@@ -1,0 +1,52 @@
+## Star Citizen Alpha Patch 4.4
+Alpha Patch 4.4 has been released, and is now available to test!   Patch should now show: VERSION 4.4.0-PTU.10703813.
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+- Starting aUEC: 15,000,000
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing and subject to removal.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+## Testing/Feedback Focus
+Vanduul-Tech Smugglers Mission is now behind a reduced reputation gate with Intersec to become available.
+IAE Expo Hall In Orison will be enabled in tonight's build for testing over the weekend
+- Stability & Bugfixes
+- Nyx / Levski / Delamar
+- Interstellar Hauling / External Freight Elevators
+- Vanduul-Tech Smugglers / Vanduul Missions
+- Ballistic Missile Launcher "Boomtube"
+- New FPS Weapon: Triple Threat (sold in some shops)
+Known Issues
+Levski performance and design polish is ongoing during PTU
+- PU - Nyx - Levski - Physics / Locations - Elevator Transit Entrance has no Collisions which causes players to EVA while entering and Exiting the Elevator
+- PU -  Pyro System Nyx Jump Point - Unable to claim, store or deliver ships ASOP sends to home location
+- PU - Nyx - Jump Point Stations - Locations / Design - After spawning at Levski vehicles are set to claim immediately when requesting them from Jump Point Stations
+- Stall / Freeze - Client - PU - Multisystem - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing Commodities Kiosks at locations like at TDD and Admin Offices in Pyro
+- Multi-Location - PU - Stanton - Locations / Actor Respawning - Players may not respawn at their primary residence after using self-destruct or force-respawn
+- PU - Nyx - Levski - ATC / Audio / Locations - Multiple ATC voice lines all play at once when requesting take-off
+- PU - Locations - Rest Stops - Refinery - Mining / Shopping / Selling - Ore Sales Kiosk - When attempting to sell at the Ore Sales Kiosks, the confirmation screen will return with undefined
+- PU - Stanton - Transit - Trams from Lorville Metro Centre to Teasa Spaceport will rapidly rotate when leaving the station, which can push the player out of bounds or kill them
+- PU - UI / Inventory - Freight Elevator - Kiosk - The Search function of the Freight Elevator terminals ignores localized item names
+- PU - Stanton / Pyro - ASOP / Expedite / UI - Claimed ships will show as delivered once "claim" is selected but still need to be expedited/have a timer till they are usable
+- PU - Stanton - Pyro Gateway - ATC / Locations / Hangars - Unable to contact ATC via keybinding shortcut
+- PU - Locations / Transit - Elevators - Grim Hex elevators are backwards
+## Features & Gameplay
+Locations
+Nyx System Polish
+General Nyx and Levski performance and streaming optimizations along with audio and LOD polish. The streaming updates may help with locations being streamed out as you exit out of QT to missions in Nyx.
+## Bug Fixes
+- Potential Fix: PU - Nyx - Levski - Physics / Locations - Elevator Transit Entrance has no Collisions which causes players to EVA while entering and Exiting the Elevator
+- Potential Fix: PU - Freight Elevator / Cargo / Locations - External Freight Elevator cargo grid only allows attaching cargo up to 1 SCU in height (STARC-184912)
+- Potential Fix: PU - System-to-System Hauling - Mission Content - Contract is missing any combat encounters
+- Potential Fix: PU - Nyx - QV Logistics Station - Locations / Art / Design - Navmesh is generating through doorways in Central Hub and AI are trying to path through closed doors
+- Potential Fix: PU - Nyx - Logistics Stations - Locations / Design / Room System - Landing Pad 03 interior has no Atmosphere
+- Potential Fix: PU - Nyx - Auxiliary Station - Mission Content - Auxiliary Station Airlock door does not return to a locked state upon reset
+- Potential Fix: PU - Nyx - Vanduul-Tech Smugglers - AI / Audio - Vanduul pilot comms are too quiet throughout the mission
+- Potential Fix: PU - Nyx - Vanduul-Tech Smugglers - Locations - Player will load back into the PU at the Polaris medical bay after logging out at the QV station
+- Potential Fix: PU - Nyx - Nyx Mission Pack - Missions / AI - Hostile NPC ships remain stationary after spawning
+- Potential Fix: PU - Nyx - Nyx Mission Pack - Missions / Courier - Recover Item - Mission markers disappear if player travels too far from AA
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Locations / Design - Large front-loading hangars are spawning at the wrong gateway (STARC-185089)
+- Potential Fix: PU - Controller - Virpil AEROMAX - Z axis is not reacting due to custom treatment in Joystick.cpp
+- Potential Fix: PU - Nyx - Levski - Locations / Art - Untextured ceiling can be seen in Grand Barter
+- Potential Fix: PU - Nyx - Landing Zone (LZ) - Levski - Art / Locations - ReplaceMe rocks are present in the Medical Clinic
+- Potential Fix: PU - Nyx - Levski - Social AI / Locations - Lean spots will occasionally have AI leaning away from the wall (STARC-184565)
+## Technical
+- Fixed 1 Client Crash

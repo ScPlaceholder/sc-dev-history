@@ -1,0 +1,50 @@
+## Star Citizen Patch 3.10.2
+Alpha Patch 3.10.2 is now available!   Patch will now show: VERSION 3.10.2-LIVE.5910184.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: NO
+Long Term Persistence: Enabled
+Starting aUEC: 20,000
+We have gone through and recovered in-game bought ships that were not saved to long term persistence. You can learn more about this here: https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/3-10-2-update-ltp-issues
+Top Confirmed Known Issues
+- Moving from EVA to gravity in ships may damage or kill a player
+- Rest stop may become duplicated causing multiple hangar doors that will not open
+- Purchased weapon magazines don't appear in the mobiGlas
+- Hangar doors may close too quickly
+- Missiles/Torpedoes only hit 1 shield face
+- Drake Herald HUD uses the old HUD system
+- When flying the Prowler in Atmosphere and pitching the nose downwards, the Ship can flip 180 degrees and be facing the opposite direction
+- NPCs may stand on seats throughout the PU
+- 'Current Balance' displayed in the bottom right of the mobiGlas does not update after making transactions
+- Quantum and Hydrogen fuel values are incorrectly the same in the refueling interface
+- Players can lose sound in Arena Commander
+- Global chat is unavailable in the visor HUD
+- If the Player Unequips Armor/Weapons/Utilities and Saves Changes, whatever was Unequipped will no longer be available in the PMA until the PMA is re-opened
+- The Elevator panel on the Carrack may fail to work on spawn
+- Private Arena Commander matches have been temporarily disabled due to an issue with the updated group system
+- Player character can clip through the external doors of certain outpost buildings and Aid shelter buildings' airlocks when entering
+- When firing at AI ships they will appear to Desync and have high packet loss
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+- Crystals and large surface rock deposits don't settle properly after fracturing causing them to vibrate and shake
+- Hammerhead atmo entry effects clipping through interior of the ship
+- Arena Commander/Star Marine usually fail to cycle to the next game, stuck on loading screen
+- The Area18 nav marker will appear at the central plaza, not the spaceport
+- Legally landed ships may be impounded
+- If the player exits to menu/disconnects/crashes during the prison load screen transition their load-out will not be changed
+- When going into ADS and crouching / prone you will be unable to see through the optics scope on the Arrowhead or P6-LR
+- Freelook does not always work properly in turrets
+- Shots from remote turrets may appear desyned but still connect with the target
+## Feature Updates
+Gameplay
+- Increased legal delivery mission rewards.
+## Bug Fixes
+- Ships purchased in the game should now be saved correctly to Long Term Persistence.
+- Ships should no longer spawn in a flight ready state when a player logs back into the ship's bed.
+- Fixed an issue that allowed players to sell 1 SCU of cargo indefinitely when it is placed in a ship that is within another ship.
+- IFCS should no longer lower ship velocity while using a HOTAS when a player uses interaction mode or opens their mobiGlas.
+- Derelict recovery missions that take place around MicroTech should no longer send the user to deliver the box to Area18.
+- Character eyes should no longer appear large in certain goggles in the universe.
+## Technical
+- Fixed 1 Client crash
+- Fixed 3 Server crashes
+- Fixed a memory leak
+- Fixed a GPU memory usage issue

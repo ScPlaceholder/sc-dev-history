@@ -1,0 +1,55 @@
+- Turret Usability Improvements
+Turrets have undergone a slew of changes to increase their usability. Turrets now have a fixed assist system, using weapon convergence to nudge weapons toward the target, while still rewarding precise aim and area targeting. In addition, we added a modifier for how much the acceleration of a target is taken into account for PIP prediction. We now update the PIP purely on the velocity which gives us a much more stable firing solution and decreases the effects network jitter of juking behavior.
+We have also made numerous updates to controls including adding a new binding map for turrets and new optional control tunings. VJoy style controls have been added and set to default (Keybind "Q" swaps between VJoy and relative mouse mode), Added ESP to turrets (Keybind "E" to enable/disable), Gyro Mode (Press "G" to enable/disable), customizable turret velocity limiter (LShift enables and W/S/Mousewheel to change limits), combined/staggered fire mode (Keybind "V" to Swap between), and holding down "C" will automatically re-center the turret.
+Turret UI now shows specific status labels so that there is no uncertainty what the turret is doing including VJoy mode, turret rotation, gimbal borders, and aim quality. In addition, the UI has been given numerous symbols to indicate the position of the turret relative to the ship, the limits of its motion, and the quality of fixed assist action.
+- Updated ship control settings
+We have made updates to the default ESP settings. ESP radius and dampening effect is now customizable in the options menu.  We have added additional v-joy visibility and functionality settings to the option menu.
+- Updates to Star Marine scoring and REC conversion
+Score for kills in Star Marine has been doubled to 200. Increased score limit for Elimination to 5000 (up from 3000), and adjusted the score to REC conversion due to these changes.
+- Moved the Personal Inner Thought back and page arrows to the middle of the menu and added a dark background behind the wheel
+- Greatly increased the reward payouts for doing Twitch Pacheco missions.
+- ECN, Bounty Hunter, and Escort mission rewards should now scale better based on difficulty.
+- Added Underground Facilities Missions around microTech and its moons.
+Ships and Vehicles
+- ORIGIN Jumpworks M50 Improvements
+Updates to the ORIGIN M50 to improve the player experience. This includes making the landing gear compressible, updates to bring it to the new damage system, cockpit improvements, and updating UI metrics.
+- Variable armor values have returned to ships
+We have setup some minor armor variation to ships.  Ships designed to take punishment will now have slightly higher damage resistance (ex. Cutlass Blue).  Stealthier ships will have signature reduction in armor, at the cost of some damage resistances.
+- Drake Buccaneer QoL Update
+Intake/Fuel tanks no longer fall off randomly with sing/engine detachment. Missile Pylon/S3 gun mounts swapped around to provide firepower when a wing is detached. Changed default missiles to a mix of standard IR/CS. Glass dirt/wear pass to help with pilot visibility.
+- Drake Caterpillar QoL Update
+Weapons changed from 4x size 2 (with size 1 installed) to 2x size 3 (with size 2 installed). Turrets updated to be 2x size 4 (manned) and 1x size 3 (remote). Glass dirt/wear pass to help with pilot visibility.
+- Anvil Gladiator QoL Update
+Increased turret from size 2 to 3, increased turret weapons from size 2 to size 3, default weapons changed from gimbaled size 2 to fixed size 3.
+- Xian Scout QoL Update
+Updated flight performance. Weapon hardpoints increased in size from size 3 to size 4. Default equipped weapons changed from fixed size 2 to gimbaled size 3.
+- Polish pass on Dragonfly and Nox handling and increased speed.
+- Added Rear side thrusters onto the Sabre Raven.
+Weapons and Items
+- KLWE Mass Driver S1-3 Ship Weapons Rework
+Visual rework of the original Sledge Series Mass Driver ship weapons. Players can buy these in game at various shops in the PU.
+- Increased overheat threshold for Size 5 and larger Behring M7A Laser Cannons.
+Core Tech
+- Increase ship cull distance to help with ships visually popping in/out.
+- Weapon Impact sparks will now be affected by wind.
+## Major Bug Fixes
+- Authorized Execution Warrant missions from Hurston should no longer award the player with a Homicide crimestat.
+- After the first wave of enemies the patrol beacon should now consistently move to the next patrol area during a patrol mission.
+- Fixed an issue that was causing NPCs to stand in place on seats around the PU.
+- Glass in the Aeroview hangar should no longer be heavily obscured by scratches when looking out of the upper room.
+- Fixed Mustangs being able to equip S2 quantum drives.
+- Fixed audio element of Carrack thrusters so it should no longer be excessively loud to players inside the ship.
+- AI should no longer regularly go into a "relaxed" aim stance during combat.
+- Fixed ADS positions on FPS weapons to be centered so that crosshairs line up to bullet firing.
+- Fixed an issue causing some mission descriptions to display locations as "Destination", "LocationAddress' or 'Pickup/DropoffAddrees' in the description.
+- Ships and Vehicles will no longer hurt themselves when firing their EMP Weapons.
+- Weapon lockers on the 890j, Constellations, Vanguard Sentinel, and Carrack should now persist weapons when the ship is stored and retrieved.
+- Fixed an issue that called Physicalised bottles to spam audio effects in players habs.
+- Hangar 02 in CRU-L4 rest stop should now be accessible via elevator.
+- Starfarer Gemini should no longer spawn the interior damage state active while the ship is at full health.
+- There should no longer be a 5-7 second delay when firing the torpedoes on the Aegis Eclipse.
+- Players will no longer become trapped in the Origin 600i kitchen table after sitting down and standing up from one of the kitchen chairs.
+- Fixed missing areas of gravity on the surface of Delamar.
+## Technical
+- Fixed 5 Client crashes.
+- Fixed 1 Server crashes.

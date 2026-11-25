@@ -1,0 +1,59 @@
+## Star Citizen Patch 3.17.2k
+Alpha Patch 3.17.2k has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.17.2-PTU.8132979.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Audience: Wave 1
+Database Reset: No
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 10,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Testing Focus
+In this build we have made further server performance changes that should hopefully help address some issues with AI and other server authoritative features.
+- Turret Acceleration changes
+- Derelict Reclaimers V1
+- Derelict Colonialism Outposts
+- New Space Stations and Lagrange Points
+- Grim HEX Hospital Expansion
+- Combat Service Beacons V2
+- Illegal Collect and Delivery Missions
+- Player and AI Networking Updates
+Known Issues
+- Stanton - Network - Actors are teleporting around after networking updates (Ongoing improvements and testing)
+- Locations - Transit / Elevator - Multiple Station EZ HAB Elevators Broken
+- Missions / AI / Combat AI - Some Enemy AI will not engage Security AI or Players
+- AI / Characters - Inventory - Looting the weapon from an unconscious AI will cause it to teleport back into their hand a short period after picking it up
+- Red Wind Linehaul Mission - Delivery / Collection - Players cannot pickup/grab the box
+- GrimHex - Atmosphere - Several locations at grimhex do not have an atmosphere
+- USPU / Missions - If the "Mission Sharer" disconnects or exits out of client, the Combat Beacon contract will fail for any remaining party members
+- Animation - Weapons - All weapons are held like a pistol whilst moving in EVA
+- Seize the Data - Mission Feature / Law / Criminality - Destroy the Reclaimer Objective Results in CS2 for destruction of vehicle
+- UGF Raid - Missions / AI / Combat AI - Some Enemy AI will not engage Security AI or Players
+- FPS Weapons - Weapon holsters or un-holsters unintentionally
+- Ships - Components and interior zones remain when ships are destroyed
+- UI / Rental Kiosk - When purchasing a rental vehicle from a rental kiosk the money taken will not be displayed properly on the Kiosk or the mobiGlas
+- ASOP - Ships on landing pads end up in "unknown state" for location and have to be reclaimed after the ship is stored or streamed out
+- Port Tressler - Galleria - Locations / Art - There is a Visarea issue in the Port Tressler galleria
+- Missing Ships on SCOUNDREL PACK (and others) on PTU 3.17.2 (This is a PTU only issue that is being worked on)
+## Feature Updates
+Core Tech
+- Made further server performance improvements
+- Made further actor system downstream networking movement improvements
+## Bug Fixes
+- Gripping 1 SCU containers should no longer cause cursed character animation stretching
+- Automatic reload when a magazine is emptied should now consistently swap the magazine
+- Dropped enemy AI weapons should no longer be placed inconsistently between players or be seen floating
+- Fixed an issue causing ships to despawn when a player leaves after rejoining from a bed logout
+- Turrets around bunkers should no longer respawn much too quickly after being destroyed
+- Collect and Deploy Probe Mission marker should no longer disappear when players are approaching
+- Breach and Steal Last Known location Service beacon should now correctly spawn for player
+- Fixed an issue causing Pacheco's Intro Assassination timer on to be too short
+- Getting off the Derelict Reclaimer ladder should no longer cause players to clip out of ship
+- Hijacked Reclaimer mission QT exit point for the Distress Beacon should no longer be placed too far from beacon location
+- Hijacked Reclaimer Datahunt mission should no longer give the player a crime stat after completing the final objective
+- Derelict Reclaimer Spaceship objective markers should no longer overlap and be unreadable for Eliminate Specific and RecoverStash missions
+- Reclaimer Pilot and Crew seats should now correctly have UI prompts
+## Technical
+- Fixed 4 Client Crashes
+- Fixed 8 Server Crashes

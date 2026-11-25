@@ -1,0 +1,53 @@
+## Star Citizen Patch 3.12.0m
+Alpha Patch 3.12.0m has been released to the PTU and is now available to test!   Patch should now show: VERSION 3.12.0-PTU.6731289.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+- General Gameplay
+Known Issues
+- Ship canopy will open and close randomly without input
+- Player eyes are extra reflective in video.
+- Select CRU series station external elevators are missing (CRU-L1 and CRU-L5)
+- The shopkeepers of both Live Fire Weapons and Garrity Defense are stood away from their desks
+- Being arrested with both utility slots occupied causes the player to respawn in prison with a broken multi-tool.
+## Feature Updates
+Gameplay
+- Decreased min and max insurance claim wait times for non starter ships
+- Balance pass on mission payouts to make them more rewarding
+- Updated NorthRock group bounty price and made them local to systems
+- Changed it so if a bounty hunter kills a PVP bounty the mission is withdrawn rather than failed for any other hunter players with that mission
+- Added warning to refinery terminal letting players know that unselected materials from a ship will be discarded when creating a job
+- Interim pricing adjustment on restocking ship ordnance (Missiles, torpedoes, and Countermeasures)
+Core Tech
+- Updated settings steps in options menu for tobii eye head ratio to 0.01
+## Bug Fixes
+- Fixed an issue causing the Talon engines to overheat and ship to lose power when powering up
+- Commodities should no longer display incorrect text and should now be sellable at trading kiosks
+- Holiday boxes should now be able to be sold (Local admin offices will accept these boxes)
+- ASOP spawned ship assets should no longer load slowly when first connecting to a server
+- There should no longer be 2 AI NPC's standing behind the guild office desk at mining shop on refinery decks
+- Fixed an issue that was causing some players to infinitely load while joining the PU
+- Fixed an issue causing players to sometimes get stuck on the splash screen when loading into the game
+- Fixed an issue causing some clients to not receive the full member list in global channel
+- Fixed an issue causing Shadows cast by the light from the Stanton star to pop in and out while in cities
+- The Talon weapon rack has should now have a prompt to close it after it has been opened
+- Fixed an issue causing some players to see a pixelated film grain when it was disabled
+- A blank contract available notification should no longer be displayed during game play
+- Fixed visarea issues when using turrets in most ships
+- Fixed the Pitch Ladder not being aligned properly in Mixed Mode
+- Lorville cinematic music should now play correctly
+- Player will now still send a video feed in a FOIP call if the player does not have a mic
+- Miles Eckhart will no longer have a long pause after the player sits down
+- Fixed an issue causing certain keybinds to not be removable
+- Assaulting Vehicle infraction should no longer be applied instantly so that it can be forgiven
+- Numerous assets and structures should no longer fail to load in each of the classic race maps
+- Account resets should no longer sometimes fail and lead to multiple issue such as all ships being doubled in game
+- Fixed an issue in Arena Commander causing players to display on the same team
+## Technical
+- Fixed 12 Client crashes
+- Fixed 7 Server crashes
+- Backend service optimizations

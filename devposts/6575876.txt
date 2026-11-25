@@ -1,0 +1,32 @@
+## Star Citizen Patch 3.22.0a
+Alpha Patch 3.22.0a has been released to the EPTU, and is now available to test! Patch should now show: VERSION 3.22.0-EPTU.9035244.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Technical: US Servers Only - EPTU Channel
+Short Term Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- Siege of Orison
+SoO will start shortly after the build is out and is intended to run overnight on EPTU.
+Known Issues
+- The San'tok.yai and X1 flight tuning is not fully complete and will require tuning in a later release
+- The Final Boss NPC won't spawn during the Illegal Retrieve Consignment Mission (Legal version still spawns correctly)
+- PU - Stanton - Underground Facility / UGF - AI - AI enemies get stuck in a walking animation
+- Stanton - Tractor Beam / Physics / Cargo - Sometimes when utilizing the tractor beam to move cargo within a ship, the cargo will snap outside of the ship
+- Stanton - Spawn Closet - Mission Content / AI - Enemy AI can spawn out of bounds of their intended spawn points
+- Stanton - Mission Feature - UGF missions - Remaining hostiles AI not spawning in UGF bunker mission
+- Pu - Vehicles - Repair services - Unable to repair vehicles that have been soft deathed
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- PU - Stanton - ASOP / Fleet Manager - ATC - When retrieving a ship it may spawn outside the hangar it is assigned to
+- PU - Stanton - Area18/GrimHex - Locations / Inventory / Respawn - Player loses loadout and equipped items after dying in the armistice zone
+- Multivehicle - PU - Vehicles / UI - Vehicle HUD - When the missiles charge the UI does not update to reflect when they are ready to be fired
+- PU - Stanton - Actor - Player Spawning - Multiple Locations - When multiple players attempt to log in to the same location at the same time they may be assigned the same bed; those that spawn in after the initial player will be stuck
+- Origin 890 Jump - PU - Vehicles - Fleet Manager - When a vehicle is landed in the hangar of the 890J, the 890J can no longer stow correctly via ASOP/Fleet Manager or on logout
+- PU - Tractor Beam / Physics - When multiple players interact with the same cargo container using a Tractor Beam, those players' tractor beams may no longer work correctly on that container
+- Multivehicle - PU/AC - Vehicles / Weapons / Ship Components - All energy-based weapons state "0/0" in Ammo count on naturally spawned ships and cannot fire
+- Multivehicle - Vehicles / UI - Inner Thought - Player cannot exit the ship by using the "Exit Seat" option in PIT
+## Bug Fixes
+- Siege: Fixed - Missions / Audio - SOO - Dulli comm audio is spamming once code is obtained at Solanki Platform
+- Siege: PU - Stanton - Siege of Orison - Fixed issues with AI NavMesh in a spawn closets on Solanki Platform causing them to not leave correctly

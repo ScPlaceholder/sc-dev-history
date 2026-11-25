@@ -1,0 +1,7 @@
+I've created a general maintenance task for input QOL issues. Concerning the specific requests:
+Gimbal modes: Should be possible to implement.
+Context specific controls for guns and missiles: That should actually happen already but obviously we missed something. We'll bug it up.
+Cruise control: We'll discuss it internally.
+Additional Gear / VTOL: yeah, should be possible
+Space Brake: There is not really a need to discriminate between axes and buttons (both are the same tech wise). The actual problem here is that we do not allow multiple bindings across different HOTAS devices and it's planned for the future to allow that. Right now you can e.g. assign a space brake axis for a stick but still use the X key as a button ... internally it's the same input command though.
+Feel free to put more smaller input related QOL requests in here.

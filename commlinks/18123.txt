@@ -1,0 +1,141 @@
+Reputation System AMA Recap
+## Each month we host an open submission live Q&A on Spectrum joined by developers from various specialties across CIG. These questions and answers were collected from the Spectrum AMA on May 13, 2021.
+This time, we welcomed four guests from different departments who answered players’ questions on how we want to further iterate the Reputation System and provided insights into the decisions we’ve made.
+- Luke Pressley – Lead Designer
+- William Weissbaum – Lead Writer
+- Rob Reininger – Lead Systems Designer
+- Ben Dorsey – Senior Systems Designer
+This AMA is complete but keep an eye out for upcoming threads for your chance to ask us anything!
+## Will some ships be „locked“ behind a reputation wall, so that you need a specific amount of positive reputation with a Company or Organisation, to be able to buy it?
+## If yes, whats happens if one already pledged for that Ship?
+## Could they still use the ship right away or must they also meet the Reputation requirements like the one who wants to buy it in Game?
+Rob Reininger:
+We are looking to gate many things in the game, both items as well as ships, behind the reputation system.
+We have to remember that without a leveling system, reputation is one of our more significant progression in our game, if not THE most, so now that it’s in, we will be looking to get this hooked into all forms of rewards mechanisms moving forward.
+As for what happens with people that already have these ships, you will always have access to these ships through the ASOP.
+However, what you will likely see as we move forward is that mission content (which will ultimately include large scale hauling missions), will likely be gated behind reputation and/or org membership.
+## Follow-up Question: Can you expand a bit on “org membership”? I would assume that you’re talking about NPC orgs like the Bounty Hunter’s Guild or the like.
+Rob Reininger:
+This is correct. The topic of org membership is not finalized, so I’d prefer to wait until we can share more concrete plans for this without causing any speculation or confusion about the matter. What’s important right now is that we built the system with any permutation of this concept in mind, so the system will be able to support whatever way we decide to utilize this feature. (Although to be 100% clear, this is not implemented in the current game/release as of this moment.)
+## Will reputation system allow player to unlock exclusive and not exclusive ship, ship weapon, ship component, FPS weapon, armor, suits, skins etc for some factions and missions givers?
+## For example, the Gladius Valiant for the UEE or Northrock Service Group, the Gladius Pirate for the Pirates factions or the criminal factions, the Mercury Nightrunner for Crusader etc. Other example, with a good Hurston’s reputation, they could give us some free Hurston items.
+## We can imagine all those items would be unlockable in shops after reaching a level with the faction.
+Rob Reininger:
+What we have been talking a lot about lately is exactly “what rewards will be associated with each org/reputation track” and “at which ranks we see these types of things being rewarded.” One of the things we’ve discussed is things like unlocking an org’s paint/tint colors for use on particular item types at some of the higher ranks. (Which I think generally covers what you’re talking about with this question.) The answer is yes, we are 100% looking at the best way to incorporate a much broader use of the paint/tinting system into the game and reputation will be a significant delivery mechanism for this type of reward. As to how I see this working, if you say unlock the “microTech” colors, you would have to go back to New Babbage to a local shop in order to paint/color your item/ship with that tint. For factions/orgs that don’t have as clear of a “home base” as say microTech does, we will have to figure out 1, where we could potentially unlock this feature, and 2, if it’s a smaller org within the game, is their colors something we want to release. But generally yes, this is where we’re going in the future.
+As for shops specifically, we plan on having the items in the shops with purchasable requirements shown to players when we revamp the shopping experience. So you’d see the “reputation specific item” in the inventory, but as an example, you’d see “Required – microTech Rep Rank 8”
+## Follow-up Question: You talk about org paint, you mean unlocking NPC org’s paint don’t you?
+Rob Reininger:
+Yes, this is a correct assumption. I mean that when you get to Rank “X” within Crusader Security org on a particular career track, you might unlock the Crusader Security color scheme. (Maybe available as say, Orison.) Since an organization might have several career paths, this might be the kind of thing that is seen as a reward on all of the careers at a given rank, or potentially their “core” career path. (Of which i mean, if it’s a policing organization, maybe only the bounty hunting track has it available there.) But we have complete flexibility to dole things out at any level within reputation. So if we wanted to offer it at rank 5 in one track, but rank 7 in another, that would be a possibility. The point is, we have the ability do associate these things where we feel it’s appropriate. Later iterations of the reputation manager has a “Rewards” tab that we’d like to add that will catalog the entire org’s set of rewards in one place so you don’t have to click on each rank to see what the benefits are. What you’ve currently got unlocked, etc. As USPU is an extremely busy team, I can’t say for sure when this “Rewards” tab will make an appearance though. Know that it’s “on the list” of stuff we’d like to do to enhance the system though. ;) )
+## Will it be possible to tank a reputation so hard it’s unrecoverable?
+William Weissbaum:
+All reputations will decay towards neutral over time, positive and negative. That said, the worse the reputation the longer it will take for people to forget about just how awful you are.
+## Will some Star Systems be „locked“ behind a reputation wall, so that you need a specific amount of positive reputation with a Company or Organisation, to be able to enter it?
+Ben Dorsey:
+We plan to make things more diegetic than just saying “No you can’t go here until you hit Reputation X”.
+We instead have plans to make it so that an area is heavily patrolled/guarded by Organization X, or a Jump Point is controlled by Organization Y. Then it becomes potentially interesting gameplay to try to deal with those obstacles (which would sometimes be as insurmountable as we can make them).
+## Are missions that we see going to be filtered by reputation? So If group A likes me and group B hates me will is still see missions for group B or only for A?
+Luke Pressley:
+Our current thinking is that you will only be able to see missions you are eligible for or close to being eligible for. This will provide players with a glimpse to the missions available just beyond their current standing for instance.
+## How will reputation work for things like hauling contracts? Will there be conditions like how fast good are delivered, if they are damaged etc?
+Luke Pressley:
+We will definitely be adding levels of success to missions wherever possible. These may be advertised or hidden from the player. We want to try this first with a variant of the time-sensitive delivery mission where players are to deliver as much cargo as possible – gambling that they can load, travel and unload in time. The more you deliver, the bigger the reward in UEC and Rep.
+## Has there been any thought or plans to add “Profession” based contracts to Star Citizen? What I mean is “mining”, “cargo”, “transport”, “medical”, “salvage” etc. For instance, a mining contract to find a new element or deliver refined “Agricium” to a specific location. In turn, this could effect reputation for that profession, which could unlock new contracts or access to mining aides or bonuses. Thanks.
+Rob Reininger:
+So there’s a few things to unpack here. Yes, we will be adding “profession” specific missions. The first of which will likely be cargo hauling. What I mean by that is you are being paid to transport an existing set of cargo FOR a company from one place to another. The idea with other professions, say for exploration, might be to find new celestial bodies or new locations, etc. But yes, as we refactor the cargo system as a whole, we would like to change the current commodity trading such that players can lock in contracts to deliver “X” amount of cargo type “Y” to location “Z” for a guaranteed price per unit. Things of this nature. And other professions will fall in line with similar types of missions as they relate to each profession’s key gameplay goals. As for profession specific reputations, just as we have a generic “Bounty Hunters Guild”, we will have a specific reputation for each profession. This will be a key contributor for when you go to new locations and the types of missions you will see there. (Basically giving you access with a specific org’s mission track without doing some of the beginner missions.)
+## Can you tell us about reputation system and possible interaction with player orgs?
+## Is it something planned for the near future or it’s better to temper our hopes for the time being? Thank you.
+Ben Dorsey:
+We’ve discussed two primary interactions between Player Orgs and Reputation quite heavily.
+- The first is Player Orgs having a reputation (much like a player can) with other NPC Orgs and NPCs. The answer to this one is a resounding yes. Barring unforseen future complications, the framework we have implemented allows for this and we plan to do this.
+- The other interaction is allowing for Player Orgs to set up their own rules for a reputation that players can earn. While the reputation system is built to allow for it, at current we don’t plan to do this. It was heavily debated, and I can’t rule anything out forever, but the current feeling was that the cons outweighed the pros (most of the cons revolved around removing or reducing player interactions and community-building that we want to encourage).
+As for the near future part of your question? These are more long-term plans. The best method of tracking our progress on this will be on the Public Roadmap. It’s not currently slated for this year.
+## What will happen when we will have hunders of quest givers and companies? Are you already planning a redesign for the app? Adding for example filters with star systems/planets etc.
+Ben Dorsey:
+Yes. We’ve planned out multiple additional iterations on the Reputation app (for when more content and systems come online). Two of the things those future versions would add are a filtering system and a sorting system that would allow for grouping similar Organizations and Contacts together.
+These would supplement the Favorite system that we have in the current implementation (clicking the star to the left of an Org/Contact to sort reputations you want to keep an eye on at the top of your list).
+## Hello,
+so Star Citizen will be very based on Missions, Quests and Reputations.
+## But how “widely” and how extensively will this system be implemented, will it take up half of all our future gameplay (and money making), or will we seek our own adventures and not rely too much on Missions and reputation?
+Luke Pressley:
+Reputation will be one of the main progression gates meaning to get the biggest rewards you will likely have to work your way up through the ranks. You are always free to mine, trade, salvage, etc, but if you build reputation with orgs you may be able to sell for more or skip the queue, etc.
+And there will be plenty of content found out in the sandbox which will provide opportunities outside of quests and such. Things like encounters players can come across which may have nothing to do with their reputation or may be affected by their reputation. Take for example coming across a Covalex convoy attacked by NineTails. You might instinctively try to protect the convoy and unwittingly receive reputation with the org for doing so, whilst also taking a rep hit with the NineTails. Next time you come across this encounter, due to your low rep with the NineTails they might prioritise you as a target.
+## If I build my reputation for any career field at Loreville, Will I have to start from scratch for the entire planet of Hurston?
+## What if I go to another planet, will I have to rebuild it at Crusader? Same for Stanton. When I go to Pyro will I have to start from scratch? Will there be an Intergalactic reputation that will span cities, planets and systems, or even Human and Xian space? Or does my reputation from Loreville feed a bigger reputation that spans different locations?
+Rob Reininger:
+If I understand your question correctly, this is what we have the global “Bounty Hunters Guild” reputation for. When you go to a new planet and want to partake in bounty hunting career missions for a specific faction (say Crusader Security’s Bounty Hunting missions), they will consider your BHG’s reputation as to what level of missions you’ll see available from them. While we don’t want this to completely circumvent the career ranks, this will give you access to higher level missions from the start, which should allow you to bypass the lower level ranks fairly quickly. (Which is another incentive to move around the system(s) and participate in content outside of your starting zone.)
+## How do you plan to avoid rep grind as a gameplay necessity?
+Ben Dorsey:
+This is a tricky one, since grind has one heck of a negative connotation (rightfully so in most cases), but I’ve been wanting to elaborate on this ever since the Reputation video was posted.
+The reputation system is built to have very long-term goals, which does mean you will need to play the game for a long time to achieve higher tiers, and that’s sort of a grind. We want players to have long-term goals they can work towards.
+Our goal thus isn’t to avoid any grind, it’s to avoid a bad one. What I mean by a bad grind is anything that forces you to do boring, repetitive gameplay. To avoid this in the future (what we have in the game right now is definitely repetitive, we know) we have a few different things planned:
+- the various sandbox elements of the game
+- allowing different solutions to the same mission
+- encouraging more player interactions (both friendly and foe) by having missions collide more
+- dynamically created missions that pick from a pool of mission pieces so that even the base mission is different most of the time
+- allowing you to build reputation by working for an ally
+All of these are intended to make it so that even if you are “grinding” reputation with Organization X for weeks, it should stay interesting and engaging. You would be earning reputation for things you already want to do.
+## Will reputations become interconnected? example: If I do missions for a “criminal” contact or mission giver will I automatically loose rep with the Advocacy or Crusade security?
+Ben Dorsey:
+Yes, there is a rudimentary version of the Enemies and Allies system in-game right now, but it isn’t driving much content yet (You can see a bit of it with the Bounty Hunter guild gaining reputation when you do Bounty Hunter missions for other affiliated Orgs). We have plans to expand upon this system heavily.
+## Will we be able to bribe our way to a better rep/mission with an org/mission giver or bribe a org/mission giver to overlook bad/undesired conduct/actions.
+Ben Dorsey:
+Yes, in certain cases.
+Some Orgs/Contacts will have interactions where they would normally act in X way because your Reputation is below X threshold, but they might temporarily overlook that reputation if you immediately give them something. Common example: slipping a bouncer some money to get into a club.
+There also are plans to allow you to gain reputation by bringing an Org/Contact something they like (though it should be something more gameplay-interesting than just money). We drew on a few different game types for inspiration when developing the system, and among them were social simulators.
+## Will you be able to level up lawful rep and unlawful rep at the same time (pirate vs bounty hunter), or will doing one diminish the other?
+William Weissbaum:
+With the Ally and Rivalry system, we want to have it so you will need to make decisions regarding who you want to earn reputation with. Working for an organization’s rival will impact your standing with that group.
+## Why do we lose so much reputation for abandoning or failing a mission, especially at higher reputation levels?
+## Explanation: a fresh associate you don’t know very well (low rep level) should lose more rep / lose rep faster than somone who’s extremely high reputation and has proven themselves over and over to be reliable. That way, reputation counts for something! An employee who works for me for 5 years and does an outstanding job will get a lot more slack than someone who just joined the company 1 month ago.
+Luke Pressley:
+Reputation is currently only represented in bounty hunting which is a high risk, high reward field of work. Personally I cut more slack to newer, less experienced employees learning the ropes and expect more from more experienced ones. Failure at a higher level hurts the company more. I get your line of thought totally, but if I was sending employees out to take on bounties and they were bested over and over, I’d definitely feel they were out of their depth and quickly drop them down a level.
+## Will a high reputation with the bounty hunting factions in each jurisdiction allow us to enter areas that normally gives you a trespassing charge so we can hunt down the baddies without committing a crime?
+Luke Pressley:
+Reputation with bounty hunting guilds will, I hope, allow for even more exciting things like being able to carry a non-lethal weapon inside rest stops and such, but yes it will allow you to enter some trespass areas. I should say though that the current implementation of trespass zones is temporary – we currently have to give a CrimeStat for security and defences there to turn hostile and put up a fight. We are working on a security system which, amongst many more things, will allow for players to trespass in a zone and only receive a CrimeStat if spotted/arrested/killed there, while being attacked by the defences.
+## Do we lose reputation over time by not engaging with a certain faction?
+## Explanation: a fresh associate you don’t know very well (low rep level) should lose more rep / lose rep faster than someone who’s extremely high reputation. That way, reputation counts for something!
+## If my associate leaves to travel to another country for a while (solar system in game) and does not work for me during that time, but always did an outstanding job, I will not value him any less when he returns. As a matter of fact, I’d be happy to welcome him back! Much more so than someone who worked for me for 1 month before leaving.
+Luke Pressley:
+Yes, there is decay built into the system and we will be using it. We can decay to the bottom of the current standing and no further or all the way back to zero. The rate of decay will be something controllable between orgs. There is also a decay back to zero should you go into the negative which means even orgs who hate you will be approachable after a time.
+## What kind of non combat organizations are in the planning, development or concepting stage?
+William Weissbaum:
+We are working on having a wide breadth of organizations to cover most of the gameplay activities that we want players to engage in, ranging from food delivery companies to roadside assistance (i.e. spaceside assistance). The basic idea is that there will smaller local companies that service a planetary system, medium companies that service entire solar systems, and larger companies that service multiple star systems.
+## What kind of rewards are planned that are not simply access to more missions or more payout?
+## Are we going to get “VIP” landing pads closer to refineries or access to the hurston main building landing pads for easier access to missions givers / trade and such?
+Rob Reininger:
+This is absolutely something we are looking to expand. Our “rewards” system in general is something that we want to evolve as we move forward. If you haven’t already seen it appear on the roadmap, there is an epic called “Org/Perks Benefits”. This epic task is going to start giving access to a multitude of things. Not only do we want to add the ability to give items as rewards in missions, but we also want to be able to offer things like (but not specifically limited to):
+- - Lower expedite fees for ships
+- - Discounts at shops
+- - Hiring extra workers to repair ships (which will ultimately take time, resources, people, etc)
+- - Free landing services at location “X” (can always repair/restock/refuel for free at ArcCorp)
+- - Ship rental time extensions or reduction in prices.
+- - Access to items gated at rep level at shop
+- - Refining job priority. (Currently it depends on the queue in front of you.)
+- - Free upgrade at refinery for what “method” is used to refine goods.
+And so much more that we’ll add as we expand gameplay functionality. The bottom line is that all of our gameplay systems should be built in a way where we can easily add their functionality as an available option for some level of perk. (Which could be tied to much more than reputation, but rather to the rewards system as a whole.)
+## What feature are you guys most looking forward to come to the reputations system in the short term and the long term?
+Ben Dorsey:
+The feature we are most looking forward to is getting AI hostility to be driven by reputation. There’s a bunch of moving parts to that, but it’s one of the core elements that will allow the system to create the kind of engaging gameplay we really want.
+## Question: Will all orther main organization like Red Wine Linehaul/ProtLife Insurance/Covalex Independent Contractors/Shubin Interstellar etc. be added to the reputation system in a near future? So not only bounty missions are getting the +% payout.
+## To add: With all these major organizations there would be for now the very basic feel of progression in the game (till other systems are developed). It could be possible to make delivery missions (and other missions that are not worth doing) somewhat profitable (from basic 8000aUEC for example to a maximum of 100% gain to 16000aUEC…). Also it would feel like there is actually reputation system for „everything“ and not only bounty missions.
+William Weissbaum:
+We are definitely planning on expanding to more mission types and organizations. What is in-game now was us taking first steps. Rather than waiting to have all the organization done at once, we will be doing a slower rollout to bring the older contracts into the system. Our long-term hope is that if you are doing a mission for most organizations that you will almost always be earning reputation. There will be some exceptions, but we are trying to incorporate as many as makes sense.
+## Will you be able to “hack” your reputation (with hacking gameplay) or hide it with ID spoofing ?
+Ben Dorsey:
+We love the idea of temporarily spoofing your reputation to trick someone. It has been discussed, but not planned heavily out.
+## Disclaimer
+The answers accurately reflect development’s intentions at the time of writing, but the company and development team reserve the right to adapt, improve, or change feature and ship designs in response to feedback, playtesting, design revisions, or other considerations to improve balance or the quality of the game overall.
+## End Transmission
+Comments
+027.0
+## Feedback
+Add New Comment
+## Settings
+View mode:
+One column
+Two columns
+Sort by:
+Oldest first
+Newest first
+Most appreciated first
+Loading Additional Feedback

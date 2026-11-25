@@ -1,0 +1,15 @@
+Hi @Kasian
+Let me address a few things brought up here :slightly_smiling_face:
+Regarding your comment about distant shadows around GrimHEX and other locations.
+Shadows and specifically Sun shadows are one of the most expensive elements on the renderer. The more objects that cast shadows, and the higher detail of those objects can start to massively impact performance. This is why you might notice in many games that there are either very few shadow casting light sources, or you see similar optimizations on sun shadows at a distance where the only periodically update or "shift" every few seconds. While we are trying to push for as many shadows with as much quality as possible, we still need to make use of some optimizations to keep the overall cost down.
+We currently break out sun shadows into several cascades at decreasing levels of resolution further from the camera. We have:
+- Two fully dynamic cascades that reach from the camera out to approximately 5m and  20m. These cascades are very high resolution and are updated every frame and will cast shadows from all static/dynamic objects (unless specifically disabled per-object)
+- Two semi-dynamic cascades from 20m-100m and 100m-400m which also update every frame, but only for certain dynamic objects (ie, Ships) and procedural ground cover assets like trees.
+- One more semi-dynamic cascade from 400m-2000m updating every other frame, for ground cover assets; and
+- One artist-defined Static shadow map which only renders static geometry. This cascade does periodically get updated by things like the sun position moving. The purpose of this cascade is so that for very high-detail areas like landing zones, we push as much static geometry into a less frequently updated cascade as possible to keep shadow quality high near the player.
+Keep in mind that these are just our currently set values and we're constantly rebalancing as we develop new locations.
+On top of this, we do have some artistic control over allowing some specific assets to be rendered dynamically in further cascades, mostly used for super large buildings that sit outside of the range of the static shadow map boundary. We also have large-scale shadows being cast from the planet's heightmap which you may have heard about in recent updates for things like mountains casting shadows while in space.
+I can't speak much to the roadmap card for large shadow improvement or any other further tech changes as that's more Ali Brown's area. On the art side, one issue we're trying to tackle is having a static shadow cascade within the player's immediate area (e.g. ~100m or inside some open space of a landing zone), and having a second static shadow map which can affect the far-reaching city vistas (e.g. looking towards the spaceport from Lorville's habitation area).
+However, the current behavior you notice with distant shadows periodically updating is for the time being a necessary feature to keep shadow quality high around the player, and far-reaching for the enormous scale of our locations.
+Thanks for the question!
+- ChrisC, Lead Lighting Artist

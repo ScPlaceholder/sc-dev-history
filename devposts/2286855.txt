@@ -1,0 +1,21 @@
+## Star Citizen Patch 3.6.1d
+Alpha Patch 3.6.1d has been released to PTU and is now available to test!  Patch should now show: PTU-2360440.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Ship component fix
+- General gameplay
+Known Issues
+- Vehicles can not be serviced at cities.
+- Players are sometimes able to QT through planets, exploding their ship.
+- Some mission givers may appear in incorrect location.
+- Markers have a chance to show "unknown".
+## Feature Updates
+## Bug Fixes
+- Players should no longer respawn in the air at Area18.
+- Lawful missions should no longer appear on GrimHex if the player has a crimestat.
+Technical
+- Fixed a client crash.

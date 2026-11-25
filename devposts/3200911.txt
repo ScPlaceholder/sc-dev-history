@@ -1,0 +1,8 @@
+Hi,
+I can’t answer your question as it’s not my team responsible for this specific area of code, but I wanted to clarify a few things.
+It’s not really a problem with the GPU rendering, but the spawning and render submission. Beyond the “draw distance” these objects literally don’t exist. Each object has its own spawn distance set up by the artists, but there’s an upper limit of a few kilometres.
+The CPU cost of the current setup is partly in the spawning, and partly in the submission to the renderer. Both of these have been optimised, and Gen12 will  likely further improve matters, though at some point you‘re better off changing the algorithm if you need major performance savings.
+But I can also say I have a LOT of confidence in the very talented artists behind S42, and they’ll certainly squeeze the very best out of the system (or force it to be bent to their will!).
+By the way on a related note, vehicle draw distances were recently massively increased to help gameplay and should now be visible till they’re just a few pixels wide, and we’ll review space stations very soon to ensure they’re drawing far enough.
+Ali B
+Director of Graphics Engineering

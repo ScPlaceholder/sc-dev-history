@@ -1,0 +1,74 @@
+## Star Citizen Patch 3.8.2
+Alpha Patch 3.8.2 has been released to LIVE!   Patch should now show: VERSION 3.8.2-LIVE.4640289.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+Database Reset: YES
+Long Term Persistence: Enabled
+Known Issues
+- Captain's Bed in the Carrack currently sends the player through the wall when standing up and is missing the logout function.
+- Main elevator in the Carrack is missing collision on the back wall.
+- If multiple players logout of 890 beds and log in at the same time it may spawn one player in a bad state.
+- AI ships do not recover from EMP disables.
+- Sometimes repair services are unavailable when they should be present.
+- After a ship is repaired, detachable components will remain attached to the ship when destroyed and a duplicate component will fall off.
+- Repair fails if you select repair and refuel simultaneously.
+Work-Around: Select services individually.
+- Once an Animus spare magazine has been emptied the player can no longer equip fresh magazines in the same slot.
+- Ships can be displayed as "unknown" after destruction, be available for spawn, but not appear on their specified hangar.
+- Entering or exiting via EVA can sometimes cause the player to turn/spin suddenly and harm themselves.
+- Objects can fall through the floor when dropped.
+- An extra static train can appear at Lorville and prevent the use of trains.
+- The visuals of the ships on the rental screen may have missing areas or disappear completely.
+- The Caterpillar will occasionally rock or tip over on itself after landing on a planetary body.
+- CryAstro services may not work at various stations and major ports.
+Work-around: Hover before landing and request services just above the pad.
+- Rentals and/or rental timers may not work when renting a second ship.
+- If a player's ship is destroyed after bed logout they will return to the server at origin.
+- NPCs may sometimes be doing usable animations in places that they shouldn't.
+- Countermeasures are not working as intended to deter missiles.
+- The 890 Jump does not have the correct cargo capacity.
+- The Combine Cannon and distortion weapons are not working as intended.
+- Elevators at Port Tressler and Everus Harbor may not show up when called.
+- If the quantum travel marker is at the edge of a moon or planet its possible to QT through the moon and explode..
+- Purchased commodities will often visually not appear in the ship's hold.
+- Players may experience stalls in performance shortly after loading into Star Marine and firing weapons.
+- NPC beacon notifications will sometimes display an incorrect distance.
+- AI ships can often get stuck in the middle of their motion and not advance further.
+- AR makers for enemies can sometimes be seen through walls in Star Marine.
+## New Features
+Ships and Vehicles
+- New Ship Available: Anvil Carrack and Anvil Carrack Expedition
+The Anvil Carrack features reinforced fuel tanks for long-duration flight, an advanced jump drive, and a dedicated computer core for jump charting operations. Originally a military exclusive, the Carrack is now available for civilian use. On-board accommodations include crew medical and repair facilities, and a mapping-oriented sensor suite.
+Core Tech
+- Added initial long term persistence. (LTP)
+We have added an early version of long term persistence to allow player purchases and UEC earnings to persist between database wipes.  For now, we will persist FPS item purchases, ship component purchases, ship purchases, and UEC earnings. While we intend on minimizing the frequency of wipes and persisting as much data as we can, at this stage in development we will still undoubtedly encounter scenarios that require full wipes. We'll communicate these scenarios as they arise.
+## Feature Updates
+Ships and Vehicles
+- Updated interior lighting for the Cutlass Red.
+- Increased the light radius and intensity of the Cutlass Red searchlight.
+- You can now interact with medical bed computer on ships while standing next to it to save your spawning location.
+## Bug Fixes
+- Fixed an issue that was causing FOIP to be turned on by default. (Please note, if you have a previous USER folder from 3.8.1 you will need to delete this as it may still be set to have FOIP enabled)
+- Fixed the missing audio on Cutlass Red medbay door.
+- Fixed a possible click in the Cutlass Red thruster audio.
+- Fixed the game-wide crackling audio caused by weapon fire report audio.
+- Insurance claims should consistently work without duplications.
+- Bed logout should now work consistently and no longer cause an infinite load.
+- Fixed various shield holes on the Aegis Sabre.
+- Fixed interaction text orientation on side airlocks of the Cutlass Red.
+- Fixed missing weapon rack inside the Cutlass Red.
+- Fixed multiple shopping kiosk issues that could result in the transaction going through but the item not being granted to the player.
+- Fixed the missing Interior Cockpit Glass LODs on the Aegis Sabre.
+- Fixed the Cutlass Red interaction text position on the medbed for female avatars.
+- Fine terminals should now show the correct UEC owed and no longer show -1 UEC balance.
+- Scanned mineable rock markers should now correctly show on the edge of the screen while the mineables are off screen.
+- Claimjumper missions should now correctly show waypoints and spawn NPCs.
+- Players should no longer randomly die getting off the tram at Riker Memorial Spaceport in Area18.
+- Fixed multiple lighting effects sometimes being excessively bright on the Vehicle Loadout Manager.
+- Fixed Cubby Blast shop kiosk USE interaction points so that they can now all be interacted with correctly.
+- Fixed an issue where the ship 3D radar did not appear as intended.
+- Certain ship beds (ex. Mole) should no longer cause an infinite loading screen on return from using them to logout.
+- Players should now be able to hack away more than 1 crime per Crypto Card.
+- Rented ships should no longer appear as owned after filing insurance claims or waiting beyond the rental period.
+Technical
+- Fixed 4 server crashes
+- Fixed 13 client crashes.

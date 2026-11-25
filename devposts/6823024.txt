@@ -1,0 +1,40 @@
+Thursday update: This build contains multiple fixes to the entity graph. We will be monitoring the build tonight to make sure things are running smooth!  VERSION 3.23.0-EPTU.9171682
+## Star Citizen Alpha Patch 3.23.0
+Alpha Patch 3.23.0 has been released to EPTU, and is now available to test!   Patch should now show: VERSION 3.23.0-EPTU.9171682.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU.
+Characters in this new environment will be built from LTP data so items such as medpens, ammo, rentals, and refinery jobs will be lost.
+Audience: Open PTU
+Server Info: US/EU - EPTU Channel
+Replication Layer: Enabled
+Server Recovery: Enabled
+Starting aUEC: 15,000,000
+Testing/Feedback Focus
+- Stability/Performance/Bug Fixing
+- New Features & Gameplay Updates
+Known Issues
+For 3.23.0 LIVE, Server Crash Recovery will remove all current missions and mark them as abandoned. This will not reduce reputation when this occurs. This could cause a few trespassing issues in locations like UGFs. This is not the intended final outcome for missions and recovery and further changes are coming in a later release.
+- PU - Stanton - GrimHEX - Locations / Actor Feature - Player corpses will not despawn at GrimHEX
+- PU - Stanton - Lorville - Female / AI - Females - There are no female social AI present around Lorville
+- PU - Graphics / Vulkan - Flight HUD / FPS UI - No UI HUD with Vulkan enabled on AMD GPU
+- PU - Stanton - Lorville - ASOP / Fleet Manager - UI - The ASOP terminals for ground vehicles at Lorville gates get stuck on infinite load, accessing list of ships
+- PU - Stanton - UI - HUD / AR Markers - Misaligned HUD Markers with Ultrawide or TSR graphics upscaling enabled
+- PU - Gamewide - Using a medpen causes you to drop your weapon
+- PU - Locations - Transit - Elevators - Internal Transit Elevator shows up when called but doors remain closed, no carriage
+- PU - Greycat ROC  - Stanton - ROC Mining Laser Not Activating
+- PU - Stanton - Multiple Locations - Transit / Network - Transit will intermittently desync off course
+- PU - UI / mobiGlas - Home App - After selecting a vehicle on the home screen the UI indicators appear pixelated and hard to read
+- PU - Locations / Vehicles / VMS - Can't repair/refuel/restock at Pyro Gateway Jump Point Station
+- PU - Stanton - NPE - Missions - Objectives can be softlocked by player leaving bed before their objective record has updated
+- PU - Multiweapon - Graphics - Backpack Reloading - Weapons reload invisible magazine when reloading from backpack
+## Bug Fixes
+Bug Fix Survey: https://forms.gle/X4wwxh5HgxRxoYF97
+- Further fixes have been put in to help reduce Distribution Center elevators dropping players
+- Fixed a major source of Entity Graph spam
+- Fixed an issue where a Solar system wide Armistice Zone could keep players from using their Vehicles and FPS weapons
+- Fixed an issue causing many PU locations to get into a state where players would receive a 30031 disconnect error indefinitely until they swapped shards
+- Fixed an issue that blocked players from exporting keybinds
+- Fixed an issue that was causing settings menu clicks to click the mobiGlas behind it instead
+Technical
+- Fixed 2 Server Crashes
+- Fixed a client crash that could occur when joining AC Engineering Game Modes
+- Fixed a client crash while using Vulkan + Upscaling at microTech's Dunboro Outpost

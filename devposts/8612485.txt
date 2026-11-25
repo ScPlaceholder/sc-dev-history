@@ -1,0 +1,12 @@
+Hello everyone! We've got some more updates on the way. They will appear in one of the next builds likely tomorrow.
+## HDR Compatibility
+Fixed a crash that occurred when enabling HDR with a connected headset. HDR is now automatically disabled when VR is enabled to prevent display issues.
+However, while I was at it, i've added true HDR support for VR as well. It can be enabled with r_StereoModeAllowHDR=1. This requires an HDR Monitor too.
+Note that there are not many headsets with HDR on the market and if you turn it on with a non-hdr capable headset colors will look very wrong.
+Regardless, the future will be bright for Star Citizen VR :slightly_smiling_face:
+## OpenXR Layer Management
+Disabled motion compensation layer by default to prevent crashes (toggle with sys_openxr_layer_disable_motion_compensation=0 in user.cfg)
+Disabled OpenXR Toolkit by default due to compatibility issues (toggle with sys_openxr_layer_disable_openxr_toolkit=0 in user.cfg)
+## Menu System
+The UI menue is now world-locked in front of the player instead of view-aligned. This significantly improves usability, especially for lower resolution headsets.
+The old behavior can still be restored with CV_r_StereoUIAttachedToView=1

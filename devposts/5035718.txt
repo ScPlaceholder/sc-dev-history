@@ -1,0 +1,53 @@
+## Star Citizen Patch 3.17.0y
+Alpha Patch 3.17.0y has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.17.0-PTU.8048627.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here %localappdata%\Star Citizen.
+Current Audience: All Waves
+Database Reset: Yes
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+This build contains further asset streaming and loading optimizations. 3.17 contains new streaming changes that we are testing on the PTU and players may experience infinite loading or very long load times along with possible missing assets in game such as elevators or ships not streaming in. We are updating and fixing these issues as we find them and each new build will hopefully address these more and more.
+- Ship Positional Desync Test
+In 3.17.0 we have put in a networking update that should reduce ship to ship desync. We would like to know how well this update works and if there are any observable knock-ons. Relative to 3.16, you should feel as though the facing direction and position of other player ships are much more accurate and real time. We have created a feedback thread in spectrum so please let us know about any potential issues with this that could include ship jittering, rubberbanding, jittering, and other effects of that nature.
+Due to recent improvements on desync we have uncovered hitreg bugs which we likely cannot resolve for 3.17. In the direction of the velocity vector the collision shape of a ship will be slightly in front of visual model (the exact offset is velocity dependent). There is currently no work-around so avoid hovering inside the velocity vector of another ship and lead your shots a bit more during combat.
+- MISC Hull-A
+- Lorville Hospital and Space Station Clinic Variations
+- River
+- Coffee Shop Vendor
+- Ship-to-Ship Refueling
+- Mining Gadgets
+- Shopping and Selling T0
+- Ship and Ship Components Inventory Updates
+- Player Injury Updates
+- DNA Head Texture Updates
+Known Issues
+- Assets are shaking causing visual discomfort
+- Turret acceleration changes have been reverted to pre-3.17.0 while we work on rebalancing and will be coming back in a future release
+- Players cannot buy components directly into ship storage (will be coming later in the PTU cycle)
+- AR Markers are present when opening the mobiGlas which can make it hard to read
+- Ships can explode after players exit them
+- While docked to a Starfarer the Valkyrie will continuously tilt instead of remaining stationary
+- Ship retrieval can time out and place a ship in a claim state
+- Equipment loadout stuck and remains highlighted grey
+- Items do not immediately transfer from loot crate to personal inventory
+- It's not possible to "De-select" attachments on FPS weapons in shops that sell them
+- Unable to see some accounts when adding to friends list
+- Combat Assistance Mission Fails to Progress - Hornet Pirate AI Pilot Doesn't Load In stalling the mission when destroyed
+- Undocking ships can result in desync issues causing ships to disappear, move to other locations, or become unusable
+## Feature Updates
+Locations
+- Reduced the number of rocks inside the river
+Gameplay
+- Ship Weapons Rebalance Pass
+Distortion weapons have been replaced with laser repeaters in player and AI variants of the Arrow, Hornet, Terrapin, Cutlass, Freelancer, Hull A, Prospector, 600i, 85X, and Constellation.
+## Bug Fixes
+- Medium and small ships docked to the Starfarer / Starfarer Gemini should no longer fall in atmosphere while refueling
+- The Drake Cutlass Red should no longer be missing its Storage Compartment
+- Origin 890 Jump elevator to the front manned turret should no longer be missing
+- Rain VFX should no longer move in the wrong direction on the Carrack's canopy
+## Technical
+- Fixed 5 Client Crashes
+- Fixed a backend service memory leak

@@ -1,0 +1,46 @@
+## Star Citizen Patch 3.13.0q
+Alpha Patch 3.13.0q has been released to the PTU and is now available to test! Patch should now show: VERSION 3.13.0-PTU.7300019.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: NO
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+Note: This build has a fix put in that should help stop the asset spawn queue from blocking stations, turrets, and mission objectives from streaming in for long periods of time. This was due to a docked ship inside the Connie going through large asteroid belts such as the Aaron Halo overloading the server with harvestables. If you have a Constellation on your account and have time, please test flying through the belt with your docked ship on servers you are on to see if this fix helped with the issue. Thank you!
+- Cave Entrances
+- FPS Cave Missions
+- Ship to Ship Docking
+- Signed Distance Fields (SDF) Shield Tech
+- Reputation UI
+- New Quantum Sensitive and Timed Delivery Missions
+- Pushables T0
+- Mounted Guns
+- Force Reactions - Staggers
+- Cyclone MT
+- Ship Naming
+Known Issues
+- Ground vehicles can be seen to clip through/fall out of cargo bays of ships when under low server FPS
+- The customizable nameplates do not appear to be visible anywhere on the Carrack Expedition
+- ASOP displays as "unable to spawn at this time" and could fine the player for spawning a ship with one already on the pad
+- On landing pads, trolleys are unable to be pushed / pulled up the entryway / cargo ramp, or elevator ramps.
+- Docking with a moving ship lags behind, causing a large snap into the docked position
+- Bright / Opaque fog volume encompassing cockpit of ships at Lagrange point / Near gas clouds
+- Having specific Helmets equipped during a FOIP call, will show the player as headless or missing eyes/teeth
+## Feature Updates
+Gameplay
+- Updated pushable trolleys to have health and to be destructible
+- Updated ship name sizes and darkened the text
+- Changed Ship serial number structure
+## Major Bug Fixes
+- Space Stations, turrets, mission objectives, and other assets should no longer take extremely long periods of time to stream in
+- Fixed an issue with ship serial numbers that could cause the first and last characters to become cutoff
+- Fixed an issue blocking players from receiving normal Vaughn bounty missions if they complete two Vaughn cave missions after the intro mission
+- Fixed an issue causing the game client to appear to freeze after alt-tabbing
+- Fixed an issue causing multiple ship computer responses to not trigger during the Merlin docking and undocking process
+- Fixed an astroid mass issue that could cause deposits to go ballistic or jitter around incorrectly when shot at
+- HUR-L1 and HUR-L5 should no longer be missing giant gaps of floor around the ASOP terminals
+- Fixed an issue causing players to lose collision with other players when picking up a dropped item or taking an item from another's hand
+## Technical
+- Fixed 3 Client crashes

@@ -1,0 +1,6 @@
+Hello folks!
+We have added a crash recovery system so ships that are lost to space after a 30k server crash can be recovered, with cargo and/or inventory, fuel, and ammo intact.  This system works by regular "heartbeats" which ping the status of you and your ship every few minutes.  If the server crashes, the backend will recognize that  and allow you to recover your ship via the ASOP.  Client crashes will be handled the same as before, via crash recovery.
+Note, it will take up to 10 minutes after a server crash for a ship to become available for respawn on the ASOP terminal.  Once on the ASOP, the ship will have the option to be returned to the landing pad in the exact state it was in at the last persistence "heartbeat".  At the moment, it will switch from "claim" to "retrieve" once that time has passed.  This fix is interim and will be more robust after server meshing, but we would still greatly appreciate your feedback on how it functions and what issues you encounter.
+Let us know below!
+-Baior
+Player Experience Team

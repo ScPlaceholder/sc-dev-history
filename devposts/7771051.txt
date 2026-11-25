@@ -1,0 +1,38 @@
+Hello everyone,
+As we prepare for the Evocati Test Phase of our upcoming Alpha 4.1 patch, we'd like to introduce the iterative release plan for Item Recovery—a long-awaited system that gives players more control over reclaiming their valuable gear after death.
+At CitizenCon 2954, we shared our long-term design for crafting, insurance, and item/ship recovery. If you need a refresher, both presentations are available on YouTube and will be a helpful watch before diving into this post:
+- CitizenCon 2954: Crafting Your Home
+- CitizenCon 2954: The Stars My Destination: Star Citizen 1.0
+Today, we want to provide a more detailed breakdown of some of the iterative releases that will start to bring these plans to life.
+The initial T0 rollout will be fairly basic compared to the full system, but it marks a crucial first step. As we shared at CitizenCon, the complete Item Recovery system will be far more robust and nuanced, making gear management a core gameplay element. You'll be able to secure the items that matter most while still allowing room for piracy and emergent gameplay.
+## First Step: T0 Implementation
+With the initial rollout of Item Recovery in Alpha 4.1 (internally referred to as T0), you will respawn with the exact gear you had equipped at the time of death. Emphasis on the term "equipped", as this is different than what you may have had in your inventory. This includes equipped weapons, armor, magazines, and medpens, ensuring that your core loadout is retained. However, items stored in your inventory, such as your backpack or other containers, will remain on your corpse, making them available for looting or retrieval.
+While equipped items will also remain on your corpse too, they will not be interactable, preventing item duplication while still preserving the visual state of your character at the time of death. This approach helps mitigate item duplication issues in the initial implementation while laying the groundwork for future expansions of the system in T1 and T2, which you can read more about below.
+Important Notes:
+- Items stored in your inventory (example: items in your backpack) will not be protected and will remain on your corpse upon death, available to be looted/stolen by other players, or retrieved by you.
+- Items such as magazines and medpens that you have equipped can still be looted from your corpse. However, you will also respawn with these items, as duplication concerns for these types of consumable are less concerning at this stage.
+- T0 Item Recovery applies to all forms of respawning, whether in a medbed on a ship or at your assigned landing zone.
+- To ensure that your weapon in active use is secured as an "equipped" item, it will automatically be stowed to your holster upon death.
+- If you die within a Landing Zone, you will respawn with both your equipped gear and your inventory (Example: belongings in your backpack). This is to help avoid you losing items of any kind, should a death outside of your control happen.
+- With T0, you will respawn with your previously equipped gear already attached to your character.
+Scenario Example:
+While exploring, you loot a rifle and store it in your backpack. If you die, that rifle will remain on your corpse, available for others to loot or for you to re-visit your corpse and retrieve. However, the original rifle you had equipped to your character (in-hand or holstered) at the time of death will be secured and respawn with you.
+## Looking Ahead: T1 & T2
+While T0 lays the groundwork and provides some assurance that your equipped items are not lost, we are already actively developing T1 and T2 implementations. These future updates will add more depth to the system, including a viable path for piracy.
+## T1: Loadout & Ship Registration
+T1 will introduce the ability to register your gear and ships at kiosks or ASOP terminals.
+Important Notes:
+- Personal Loadout: Players can register their equipped items which can be reclaimed for a fee at specific kiosks or freight elevators.
+- Ships & Interiors: Ships, along with their loadouts, decorations, and locker contents, can also be registered. They can then be reclaimed in the state they were previously registered at ASOP terminals for a price.
+- Looting & “Bricked” Items: Once an item is looted, it remains usable until the original owner reclaims it or marks it as stolen. At that point, a Dead Man Switch is activated, meaning it will cease to function after a period of time.
+- While a looted and/or stolen “bricked” item is no longer usable, you can still sell the item for credits.
+- Pledge items are auto-registered and will never lose their registration status. They can always be claimed back, even if they were not manually registered.
+- With T1, you will no longer respawn with your preserved gear already equipped. You will need to visit a location, such as your freight elevator, to reclaim your registered items. We are developing a quality-of-life feature to allow you to re-equip your previous full loadout with one “auto equip” button at this location.
+Additionally, with the implementation of T1, our current plan is to remove the ability to "backspace" out of dangerous scenarios as a way to retain gear.
+## T2: Restoring "Bricked" Items & Crafting Integration
+T2 will introduce a way to restore previously "bricked" items for a price.
+Important Notes:
+- Looting & “Bricked” Items: Once an item is looted, you will have the option to sell it, dismantle it for crafting materials, or restore it (with the potential cost of crafting materials and credits) to make it your own. This system creates a viable path for piracy, allowing you to claim another player’s belongings if you take the necessary steps to legitimize ownership.
+- If an item had a cosmetic applied, restoring it will remove the cosmetic in the process.
+The introduction of Item Recovery is a significant step toward making gear persistence more meaningful while maintaining the risk-reward balance of looting. T0 in Alpha 4.1 is just the beginning, and as we further integrate into the broader crafting and insurance systems, we’ll be actively refining and updating with the help of your feedback throughout the PTU process and beyond.
+We'll see you in the 'verse!

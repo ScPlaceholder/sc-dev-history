@@ -1,0 +1,69 @@
+## Star Citizen Patch 3.11.0m
+Alpha Patch 3.11.0m has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.11.0-PTU.6188826.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: YES
+Long Term Persistence: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Note: This patch does not contain all of the intended features, which will be added iteratively to the notes as they become available. Additionally, some features may be implemented in a partial state and as such are not ready for testing.  When those features reach a playable state they will be detailed on the notes and added to the "Testing Focus".  Please issue council all issues related to those in testing focus and in general gameplay.
+Volunteer Regression: https://robertsspaceindustries.com/spectrum/community/SC/forum/190049/thread/volunteer-regression-3-11-0m
+Testing Focus
+- New Cargo Decks
+- New Space Station layouts
+- BEHR BR2 Shotgun
+- BEHR Grenade Launcher
+- Front End Refactor
+- Exterior Space Station Green Zone Removal
+- Player and External Inventory Interactions
+- Throw T1
+- Force Reactions T1
+- Missile and Countermeasure QOL Improvements
+Known Issues
+- Player will be killed when walking to or from any of the landing pads at Port Olisar (please avoid PO if possible as you may need to recopy your account if stuck in a death loop)
+- The Bartender will not play a wildline and will sometimes not serve the player when they approach.
+- AI guards in hangars can be seen walking on the spot
+- Some ships may still pitch down or turn sideways during initial takeoff after being powered on
+- Global chat is unavailable in the visor HUD
+- The Player is unable to use auto-land within some hangars in New Babbage
+- Ships landed at Lorville cannot be stored
+- Ship NavMarkers and Target Highlight can become detached from Ships when Pitching Up and Down and traveling forwards
+- The Mantis Snare will not prevent the other player from completing their QT (Short Range QT)
+- Purchasing OxyPens or MedPens from the shelf will not place the item in the player's inventory
+- No charges are given to a player that rams and destroys another ship with players inside
+- Pilot of a ship containing a passenger will be charged with Negligent Homicide if their ship is rammed and destroyed by another player
+- Ramming and destroying another player with a ship does not generate a crime
+- Ships can be displayed as 'unknown' after destruction and be available to spawn again, but will not appear on their specified landing pad.
+## New Features
+Ships and Vehicles
+- New Ship - ORIGIN 100i Touring
+- New Ship - ORIGIN 125a Light Fighter
+- New Ship - ORIGIN 135c Light Freight
+## Feature Updates
+Gameplay
+- Adjusted spawning system for ROC and hand mineables to make a variety of minerals more likely to spawn and makes mining on more inhospitable planets more profitable.
+- Reduced the number of clean-up immune vehicles per player from 3 to 2.
+- Polish pass on force reaction g-force leans in larger ships to make them less severe.
+- Re-implemented box all function to the updated inventory system.
+- Temporarily reverted countermeasure names back to Flare and Chaff.
+Core Tech
+- Adjusted ship computer verbosity presets: High preset (enabled by default) is now exactly the same as Full, just without the proximity warning.
+## Bug Fixes
+- Ship pips should now display correctly when inside space station greenzones.
+- Players should no longer have a chance to spawn in a Dead State unable to interact or Respawn.
+- AR trajectory should now display correctly when throwing grenades.
+- Players should no longer be able to change out any ship component & save changes to a ship that's currently in use.
+- Charges should now be given to a player that rams and destroys another ship with players insides
+- Armistice Privileges revoked warning message should no longer persist through a player being arrested and sent to prison.
+- Fixed an issue causing the moon, Arial to get excessively hot on the surface.
+- Fixed an issue causing players to get an infinite load screen when attempting to Load into PU after Logging Out of a Ship Bed near Port Olisar.
+- Fixed an issue causing players to trigger an Armistice violation warning if the player takes self-inflicted damage entering ships from EVA in Armistice.
+- Fixed an issue that could cause ships to Pitch/Yaw/Roll on their own while the ship is being powered on and thrusters are in use.
+- Fixed an issue causing a player's mouse cursor to not move the camera after exiting from interaction menu while holding the F key.
+- Fixed an issue causing smaller ships to sometimes be spawned at large landing pads at Port Olisar
+- Ship ownership AR marker should no longer appear and stay for a player when they enter the pilot seat of a ship in Teach's/New Deal showrooms.
+- The default loadout for the 600i should no longer be missing 3 missile rack components.
+- Selected Comms channel text on visor UI should no longer be cut off.
+## Technical
+- Fixed 6 Client crashes
+- Fixed 8 Server crashes

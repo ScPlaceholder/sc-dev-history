@@ -1,0 +1,51 @@
+## Star Citizen Patch 3.21.1
+Alpha Patch 3.21.1 has been released to the EPTU, and is now available to test! Patch should now show: VERSION 3.21.1-PTU.8889500.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: All Backers
+Database Reset: Yes
+Server Regions: US/EU
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+- System - Security - Ship Trespass
+- Mission - Defend - Data Heist
+- New Player Experience - New Babbage
+- Vehicle Headlight Refactor
+- Tractor Beam - T2 - Vehicle Tractor Beam
+- Crusader C1 Spirit
+- ARGO SRV
+- FPS AI Behavior Integration
+- Siege of Orison Global Event Re-Activation
+Known Issues
+- PU - Locations / Vehicles - When spawning a ship at a Docking Port, the ship will spawn clipped into the docking port geometry
+- Stanton - VoIP/FoIP - Global Proximity Comms - Player cannot hear others while using VOIP, but they can be heard
+- PU - Shopping / Selling - Consumables / Items - Multiple items in shops seem to have items they sell in their store floating within the store
+- PU - Locations / Inventory - Grim Hex - Clinic inventory only accessible in clinic lobby
+- SRV Tow UI shows invalid or no target despite meeting the criteria for a valid target prior to attempting to tow a ship in QT
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- PU - Stanton - Data Heist - Mission Content / Game Code - If players fail the Very Easy mission they can't reaccept it
+- PU - Stanton - AI / Mission Content - UGF AI falling through the stairs / floor
+- Multivehicle - PU - Stanton - Orison - Docking / EVA / Location - Players enter an EVA state when entering a docking arm
+- Social Module - UI / Chat- Party chat does not display in AR HUD if written in CommLink app and mobiGlas is opened
+- Multivehicle - ASOP Retrieval - Various vehicles spawn with wings/engines/landing gear in their "in-flight" state instead of their "landed" state when retrieved from ASOP
+- PU - Stanton - Halo - Desync / EVA / Vehicle / Ships - Players can desync when transitioning to or from EVA from one ship to another ship
+- PU - Missions / Reputation - Data Heist - The hard missions are not appearing despite meeting the requirements
+- PU - Stanton - Location - Seraphim - ASOP / Fleet Manager - The ASOP terminal loading screen will not end
+- PU - Shopping Kiosk - "Invalid Sell Price" error occurs while selling specific items
+## Feature Updates
+Gameplay
+- Tractor Beam Law System Update
+Players whose vehicle is being towed by a non party member will now be given a prompt and have the option to choose if they want to press charges against that player or not
+## Bug Fixes
+- Fixed - PU - Law System - Ship Trespass - "Trespass" warning will inconsistently display if the player enters and exits their ship in a zone they originally trespassed in
+- Fixed - PU - Mission Content / Law - Mercenary - Illegal Surveillance Detected - Destroy_Satellite_Lawful Mission leads players to Security Post Kareah where they are marked as Trespassing and attacked by turrets
+- Fixed - Argo SRV - PU - Tow Beam / Physic - Ships while being towed will Spin without any Apparent Clear Causes
+- Fixed - PU - Control / Tractor Module / Salvage Modules - Flight Ready Keybind doesn't turn on Salvage/Tractor Module
+- Fixed - PU - Stanton - Missions / Gameplay / Vehicles / Interactables - QT Sensitive Crates do not explode when places inside a nested vehicle
+- Fixed - PU - Stanton - Locations/New Babbage - Missions/NPE - Can't progress past "Exit Hab" objective after a previous disconnection before completing that objective
+- Fixed - Stanton - Backend Services - Service Beacons - After service beacon is abandoned / canceled / declined, player will be unable to receive or accept other service beacons
+- Fixed - PU - Missions - Siege of Orison - Player receives crime stat three using force respawn
+## Technical
+- Fixed 2 Client Crashes
+- Fixed 2 Server Crashes

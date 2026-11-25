@@ -1,0 +1,35 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12388491
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns
+- Wikelo Updates
+Known Issues
+- PU - Inventory / UI - Double-clicking equippable items failed to equip them to empty equipment slots
+- PU - ORS - Missions / MobiGlas - The mission Deliver Medical Aid are missing on the mobiGlas
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Features & Gameplay
+Quantum Drive Balance
+We have balanced the acceleration and top speeds of all quantum drives and added variation to cooldown times, spool up times, and interdiction effect times. This should reduce the average travel time by roughly ~22% with the intention for small Quantum drives to have high acceleration but slow top speed and larger quantum drives to have slower acceleration but higher top speeds.
+## Technical & Bugfixes
+- Fixed 1 Client Crash
+- Potential Fix: Mission giver state changes during Battaglia story missions were not being executed correctly, affecting mission flow, AI behavior, and associated UI.
+- Potential Fix: Clicking the tracking mission on starmap zooms in too much on mission location.
+- Potential Fix: The C788 was dealing too much damage. Its damage output has been reduced and its explosion damage removed.
+- Potential Fix: A drastic performance drop when moving the UI.
+- Potential Fix: Mission failure comms notifications were not displaying correctly on Battaglia story missions and during the board ship objective.
+- Potential Fix: The Warehouse Key needed to complete the code step in the "Welcome to Nyx" mission was broken and blocked mission completion.
+- Potential Fix: A Battaglia delivery objective could not be completed. The amount of materials required to hand in has been reduced.
+- Potential Fix: Assorted issues with the Battaglia repeatable missions and Story 3 in Nyx, covering mission content, AI, narrative, and dialogue.
+- Potential Fix: The shopping card was invisible when using the shopping AR interface at Centermass.

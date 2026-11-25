@@ -1,0 +1,66 @@
+## Feature Updates
+Locations
+- Small Derelict Outpost Expansion in Stanton
+Addition of 30 new, small Derelict Outpost locations across more planet-side locations in the Stanton System. These are additional variants of those already placed on microTech in 3.17. Each location features a collection of ruined outposts in varying degrees of degrade along with missions and AI inhabitants.
+- New Rivers in Stanton
+Adding dozens of additional rivers and lakes with biome-specific object rulesets around bodies of water and distributing these around microTech and Hurston.
+- Added Parallax Interior Window Shader for Buildings Around All Landing Zones
+- Restricted Areas v3
+Complete rework of the restricted area tech around landing zones. Instead of ships being autopiloted away or destroyed upon entering a Restricted Area, players are now given more freedom to fly and maneuver around cities. Upon entering a Restricted Area, players will now be given a text warning, a countdown, and an arrow pointing towards the exit. If the countdown ends, or they go further into the Restricted Area, the player will be teleported to a safe location, their ship will be impounded and they will receive a misdemeanor crime stat. This feature also applies to Ground Vehicles. Players outside of a vehicle won’t receive a countdown but will be teleported to safety if they venture too far into a Restricted Area.
+- Caterpillar Crash Sites Improvements V1
+Added base AI to populate caterpillar crash sites. Added kill specific and kill all missions. Including a general polish pass and visual improvements.
+- Derelict Settlements - Reclaimer V2
+General polish pass to the Reclaimer including additional buildings and general visual improvements.
+AI
+- NPC Loadout Updates
+Updated many NPC loadouts throughout Stanton with new Shopkeeper outfits, Earth Fashion Dress, Hospital Surgeon outfits, Service hats and aprons in shops, and armor sets.
+Gameplay
+- Courier Delivery Missions Update
+Addition of new Local Courier Delivery Missions around each Stanton planet system. These new missions are based around the local delivery companies for each planet system in Stanton and give players a more focused area for deliveries. There are 4 new Delivery reputations based on the area you are in. Red Wind Local Delivery, Ling Family Local Delivery Route, Covalex Local Delivery Route, and UDM Local Delivery Route. These new missions can be acquired after completing the intro missions for the local delivery company in your area.
+- QoL Inventory Updates
+Added ability for long term persistence (LTP) items to stack in inventory. Added transfer all button to inventories that work based on selected filters. Added visual feedback attempting to quick move an item that won't fit in the target inventory. Implemented toggle option to the top right of the player's inventory to always show/hide item ports for equipping gear.
+- Law System Improvements
+We have overhauled many aspects of the law system to be less punishing for players with lower level crimes.
+Players with a Crime Stat (CS) 1-2 can no longer be attacked lawfully (their ship marker won’t be red to players) and AI and defenses will not attack them on sight. Murder will still give a CS3 so this will be our new threshold for being able to be killed on sight. Players with CS1-2 will be able to request and receive landing permissions at ATCs. Security ships will not attack players with CS1-2 and will instead scan and tell the player to pay off their fines. The vast majority of crimes can now be paid off as fines rather than needing prison time. However, more serious crimes are very expensive. All crimes accumulate so should you get a couple serious crimes or many minor crimes, you will still reach CS3 though you can still pay it off should you be able to reach a fine terminal (difficult as you will be shot at by defenses and not be permitted to land). As is the case already, security will attack a CS3 player while requesting their surrender and players can power down their ship to surrender. Players are now able to surrender at Fine Kiosks found in rest stops and landing zones, should they not be able to afford to pay off their fines. As before, surrendering gives the player a 25% discount of prison sentence. We have lowered the threshold for CS1 so that it displays when the player gets any minor crime. This is to show the player they have a law issue that needs taking care of. The threshold for CS2 remains where it was and warns players they are either getting dangerously close to CS3 or, if they got it from a single crime, tells them that was a particular serious crime. Players have 1 week to pay off fines for a more reasonable price. Should they allow the fine to escalate, it doubles in price. Given we have made hacking Crime Stats more challenging by limiting it to Kareah, we have greatly reduced the time it takes to remove each infraction.
+- Bed log out is now blocked in landing areas
+- Claim Jumper Missions have been temporarily disabled for 3.18
+Ships and Vehicles
+- Ground Vehicle Speed Changes
+We have done a pass on ground vehicle speeds with some gaining and some losing max speeds.
+- Vehicle Balance Tweaks
+Greatly increased Ballistic weapon shield penetration. Ship armor now grants 50% physical resistance, increasing ship durability against incoming ballistic fire. EM and IR adjustments to shields to support more accurate missiles, reduced overall signal strength, and made them more consistent. Increased shield down delay from 5 to 10 seconds. Distortion does not scale the power output of power plants. Distortion weapon explosive radius has been increased. Distortion weapon heat development has been decreased. Distortion health pool has been increased, it should take a good while longer now to disable a ship. Power plants will turn off binary and take 300 seconds to recover. Coolers cannot be distorted. Item health has been balanced so that a single missile hit cannot instantly kill them. Updated component damage for coolers and power plants.
+- Greatly increased the hull health of the 600i
+Core Tech
+- Enabled Gen12 Rendering
+- Physics Optimizations
+- Server Performance Improvements
+- Updated Commodity Kiosks to Use Building Blocks Tech
+## Bug Fixes
+- Players should no longer receive a Bad token/Missing text on main menu after server crash
+- Combat Service Beacon mission progress and rating progression should no longer be inconsistent
+- Remote Turret aim assist should no longer be broken
+- "Reset to SCM" binding should no longer set vehicle speed to ~80% of the vehicles top-speed instead of the vehicles max SCM speed
+- Players should now correctly receive a flight suit and helmet in their inventory when respawning at hospitals
+- UGF Missions should no longer be missing NPC spawns to complete the mission
+- Hangar elevator collision grid should no longer push players through its path when called
+- Fixed players being unable to call elevators from hangar interiors
+- Cutlass Black Reinforcement AI should now correctly exit the ship
+- The Corsair should no longer nose down without pilot input when flying in a straight line in atmosphere
+- Commodities should now correctly appear in the Commodity Kiosks and be sold
+- The Orison Shuttle to the vision center should now correctly arrive and not get stuck
+- Fixed an issue causing players exiting Klescher to have no head or mobiglas
+- Ship should no longer fall out of quantum when Pressing B or Missile Mode
+- QT markers will no longer disappear when traveling between planetary markers until QT drive finishes spooling
+- Security AI should now spawn in their correct loadouts
+- Hostile AI should now correctly leave their spawn closets
+- PvP Bounty should no correctly complete if the target suicides after being downed
+- Players should now be attached to the cockpit seats in the Star Runner during the enter or exit animations
+- Weapons should no longer holster and unholster themselves repeatedly
+- KLWE scope optic crosshair should no longer be missing
+- Inner Thought wheel Back / Exit button UI should no longer be missing
+- Animations should now correctly line up for Female player characters in the Greycat Industrial STV
+- Fixed various screens, terminals, and kiosks failing to load their UI and only displaying a black screen
+- Fixed purchased ships not being recognized after making an insurance claim
+## Technical
+- Fixed 8 Client Crashes
+- Fixed 6 Server Crashes

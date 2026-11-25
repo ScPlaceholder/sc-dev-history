@@ -1,0 +1,36 @@
+## Major Bug Fixes
+- Fixed bug where all players on the server would have their controls frozen when one player surrendered to the pilot security
+- Fixed an issue causing the main menu interface to have larger buttons and text and intended
+- 'Try on' option on mannequin in stores should no longer delete currently equipped gear
+- Fixed an issue causing players to not be able to place other downed players onto medical beds
+- Ships on landing pads should no longer end up in an "unknown state" for location after the ship stored
+- Many of the Wheelchairs, Walkers and Gurneys within hospitals should no longer spawn in colliding with geometry and constantly making loud banging / rattling
+- Inventory UI should no longer cause several items to share the same inventory icon when moving multiple items
+- Items should now correctly saved in a player's inventory after the player loots a crate
+- Greycat ROC personal inventory should now open correctly when interacting with it
+- Inventory UI should no longer sometimes close immediately when looting a player/npc inventory.
+- Fixed an issue causing healing gun healing cards to sometimes not close
+- Fixed an issue that allowed players to temporarily heal and administer drugs to corpses via the advance mode on the medical gun
+- BEHR Telescopic S2 X4 sight should no longer shoot straight upwards when ADS
+- Fixed an issue causing the 'Switch Fire Mode' button to only work once in manned turrets
+- Mining nodes will no longer drop out of Personal Inventory instead of the ore
+- 600i cargo elevator should no longer be misaligned
+- Drake Dragonfly HUD should no longer be out of position
+- Players corpses should no longer disappear after dying in certain locations and therefore will not be lootable
+- Downed players should no longer bounce/spin out of control when dragged over uneven surfaces and ramps
+- Players should now be able to interact with the inventory again after closing the external inventory of the Gladius or Sabre
+- Clear Out Site / Clear Criminal Nest should now spawn all criminal AI correctly so that the missions can be completed fully
+- Players should no longer be able to store weapon attachments via an equip prompt without having a valid inventory, which caused them to losing the item permanently
+- Prospector ladder and door should now open correctly
+- Saved Luminalia at New Babbage!
+- "Missiles - armed missile count can loop" should now persist sessions
+- The missile counter should no longer loop back to one, regardless of the loop option being set to "NO"
+- Fixed an issue causing polygon spikes to occasionally appear around Lorville and Hurston
+- RSI Constellation Taurus should no longer have debug text on rental kiosks
+- Target's velocity should now display correctly and no longer always display as 0 m/s
+- Tobii Gaze Tracking should now be able to be used without active head tracking source
+- Missile pickup in arena commander should now refill correctly while not in missile operator mode
+## Technical
+- Fixed 12 Client crashes
+- Fixed 2 Server crashes
+- Fixed a server memory leak

@@ -1,0 +1,72 @@
+## Star Citizen Patch 3.15.0n
+Alpha Patch 3.15.0n has been released to the PTU, and is now available to test!   Patch should now show: VERSION 3.15.0-PTU.7835451.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Reset: Yes
+Long Term Persistence: DISABLED (Full wipe for all accounts)
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings: r_displaySessionInfo = 1
+Testing Focus
+Personal inventory is still undergoing UI changes as we progress through PTU and a feedback thread will be opened at a later time
+- Healing and Actor Status
+- Hospitals
+- Starlifter Hercules A2
+- Bombs
+- Infiltrate and Defend Missions
+- Loot Generation
+- Orison V2
+- Arena Commander Revamp
+Known Issues
+New Babbage commons is missing many assets and the bridge to connect domes. This will make locations there not accessible so you may want to avoid this area for now.
+- Ground vehicles and initial spawn point
+With this latest update, your initial spawn chooses the location of all your ships. If you have ground vehicles through the pledge store, selecting an initial home location that supports ground vehicles, like New Babbage, would be best.
+- After a server crash, attempting to reconnect may result an infinite loading screen and being unable to interact with the menu
+Players will need to exit the game and reload after a server crash to fix this error. This is part of the bug where players used to see a Bad Token after a crash which blocked them from re-entering but with the latest changes, that error is no longer displayed.
+- Pledge Items lost on death
+With this upcoming change, players will now lose all items equipped to their character upon death. These items include items from the pledge store including subscriber items. We are currently looking into different solutions for this but for 3.15.x be warned that if you die with subscriber items on, you will lose them in game but they will not be removed from your account or pledge store. These will be returned upon new major patches or through an account reset.
+- Medical beacon does not complete mission/payment when player is brought back from incapacitation
+- Lighting on inventory will dim when moused over
+- The 600i cargo lift / elevator doesn't appear when looking at the ship due to Visarea issues /culling (the player is able to walk onto and use the 'invisible' lift)
+- The Prospector Cargo read out does not display total capacity, or update the capacity bar accordingly
+- CryAstro Refuel, rearm, repair is not working at outposts and shows as Not Available
+- There are multiple replaceme balls around Orison
+- When undocking, ships will occasionally become caught on the docking arm instead of detaching smoothly
+- Inventory icons may block filter buttons unless scrolled fully to the top
+- The Player is unable to Select Ground Vehicles as a Sell Location on Trade Terminals/Kiosks
+- Resetting account failed to clear user items
+- Objective markers and QT nav points are greyed out on the player's HUD
+- Ships left at outposts disappear if the player logs out then logs back in or shortly after disembarking
+- Downed players are dropped or bounce/spin out of control when dragged over uneven surfaces and ramps
+- When Collecting Minerals/Metals with the Extraction Mode Laser the Ships Cargo Randomly Empties
+- There is a small area with no gravity in the airlock to the Grim Hex Medical facility
+- When requipping items from a loot box in zero-g, equipping the torso and arms will cause large amounts of inventory camera shaking
+- Weapon projectiles trajectory will not behave correctly when shooting from one zone inside a ship to another outside
+- Multiple Heavy Armor Arms Clip/Partially Obscure some of the mobiGlas Icons
+- Destroying mission-spawned reinforcement type ships does not always trigger the ongoing 'Call to Arms' mission rewards
+- Missiles can hit the players ship when they are fired whilst the ship is moving forward
+- AC Announcer audio callout for "Match over. You have won/lost the match" can be heard multiple times at the end of a round
+- AC Players can spawn facing the wrong way at the start of the match or after dying
+- Demon Fang Combat Knife asset is missing from the game
+## Feature Updates
+Gameplay
+- Inventory Polish Pass
+Further style and performance tweaks have been made for all aspects of the inventory system. Updated filter system to display tabs showing quick item type sorting along with the original option for more granular filtering. Implemented new interaction dots and numbered ports for consumables (magazines, grenades, medpens). Added capacity display for consumables (magazines, grenades, medpens) on the item and as dots around the item port the item is attached to. Added double click to equip items from inventory. This should swap currently equipped gear and for consumables (magazines, grenades, medpens) should fill empty armor slots instead. Added Swap option to item contextual menu to remove the currently equipped item and replace with another. Updated the inventory to not display if the inventory they have open moves far enough away. Added capacity value the description tooltip of items that have storage space such as backpacks and chest/leg armors. Updated inventory page arrow buttons to be a bit clearer. Added interaction option to close world loot containers.
+- Law System Updates
+Updated most crimestat 1 crimes to be misdemeanors which will still grant the same crimestat but can now be paid off at a fine terminal to remove. (note, the stations will still shoot at you with a CS1) Not paying off a crime at a terminal will escalate the fine and CS impact after a week. Reduced the cooldown between crimes for assaults so they will impact your crimestat more if they happen in succession. Greatly increased the crime stat contribution for all misdemeanors so that fines are much more important to pay off.
+- Downed State Polish Pass
+Updated downed UI to be clearly visible while downed. Increased revival service beacon reward to 15k, up from 10k credits.
+- Healing and Medical Polish Pass
+Disabled tractor beaming, healing, and drugging of other players in greenzones. Drug efficacy balance pass, and adjusted effects of Resurgera to be equally more aggressive towards BDL decay and other drugs' durations.
+- TVI QOL Updates
+Added options to have velocity indicator: Always on, fading (defualt), or always off.
+- Body Dragging Polish
+Made some teaks to body dragging to make it behave more consistent and less jittery.
+- Made intro and rehire UGF missions shareable
+- Added a small reputation penalty for failing or abandoning a delivery intro or re-hire mission
+Ships and Vehicles
+- 400i Polish Pass
+400i landing gear reverted back to it's previous, lower state. Door panel updates: new UI, removing light buttons where not needed & labeling locations.
+Core Tech
+- Made several AI sync improvements to help reduce them teleporting short distances
+- Optimizations for planet terrain and ocean tessellation based on screen size

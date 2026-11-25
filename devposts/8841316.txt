@@ -1,0 +1,54 @@
+## Star Citizen Alpha Patch 4.8
+Alpha Patch 4.8 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.8.0-PTU.11817467.
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+## Testing/Feedback Focus
+- Stability, Bugfixes
+- New Mission: Tactical Strike Groups & QV Extraction Stations
+- New Event: Return of Xenothreat
+- Item Recovery: Vehicle Loadouts (prices greatly reduced today, most likely more balance coming)
+- Command Module
+- Flight Suits & G-Force Resistance
+- New Mission: Defend Location - Ship Battles V3
+- Kastak Arms Plasma Grenade
+- Uniflex Crossbow (Blueprint should be fully working as a drop now from TSG)
+- Refueling Missions & Improvements
+- Ship Hangar Service T0
+- Hammerhead Gold Standard
+- Ship Armor and Shield Balance
+Known Issues
+Due to the known issue below with the command module, the Ironclad/Caterpillar will be blocked from flying tonight but will be spawnable to owners
+- Drake Command Module - PU - Vehicles - Command Module / Vehicles - Collision - Command Module has no interior collision
+- Drake Caterpillar - PU - Vehicles / mobiGlas - Unable to utilize Vehicle Maintenance Services App when using Drake Caterpillar
+- Multivehicle - PU - Vehicles / Landing Services - Unable to restock countermeasures inside another ship that provides landing services despite having resources on the cargo grid
+- Multivehicle - Docking - Keybinds - conflicting keybinds not allowing ship docking to stations
+- PU - Stanton - Pyro Gateway - ATC / Locations / Hangars - Unable to contact ATC via keybinding shortcut
+- PU - Armor / Clothing / Inventory Rework - "Right Click > Equip" does not function if a paper doll slot is occupied, prevents further inventory interactions
+- PU - UI - Party connection Playing on repeat after quantum travel after a party member crashes and reconnects
+- PU - Multisystem - UI / Locations / Vehicles / Kiosks - Vehicle Rentals / Purchase Kiosks preview image will overlap transaction UI once purchased
+- PU - Stanton - UI - Party marker does not show party members' names and distance
+- PU - Multi-System - Stall / Freeze - Client - Locations - Commodity Kiosk / TDD - Performance / Game Code / GFX - Client will freeze / stall when accessing and using Commodities Kiosks
+## Features & Gameplay
+Ships & Vehicles
+- Added New Ship: Drake Ironclad and Ironclad Assault (will be available today for current owners)
+Locations
+- Increased the greenzone size around Area18
+Core Tech
+- Implemented stack size limits for stackable object types to 99 default with 999 for scrips.
+T0 VR Implementation
+- Draw stereo cursor at max distance if nothing was hit so its visible all the time (for easier navigation)
+- Add smoothing to 3d crosshair
+- Fix bright lights
+## Bugfixes & Technical
+Fixed 1 Client Crash
+- Potential Fix: Multivehicle - PU - Vehicles / Actor / Life Support - Actor suffocates inside hangar despite ship life support being active and helmet unequipped - STARC-200446
+- Potential Fix: PU - Area18 - Locations - There is no breathable atmosphere throughout ArcCorp - STARC-205137
+- Potential Fix: Multi-Locations - PU - Stanton - Locations / Mission / Law / UI - Trespassing hauling mission in Distribution Centers - STARC-180105
+- Potential FIx: Multi-Item - PU - Inventory Rework / UI - Some item names are displayed as Placeholder Text and String Names in Local Inventory - STARC-204507
+- Potential Fix: PU - Multi-system - ASOP Terminals/Locations - "Retrieve" button is greyed out after you Exit to Menu during mid-animation of ship retrieval/storage
+- Potential Fix: PU - Nyx - Levski - Locations / Hangar - Ship disappears when landing / leaving the Levski Hangar - STARC-186319
+- Potential Fix: Excess spawning boxes around locations is causing heavy server and client performance degradation
+- Potential Fix: PU - Stanton - Refueling Missions - Refueling_Decoy_Stanton - Missions / Mission Content / UI / HUD - 'Go to' objective does not vanish when the player reaches mission location
+- Potential Fix: Vanduul Mauler - PU - Vehicles - The Mauler cannot be locked onto with missiles and has 0 infared emmision
+- Potential Fix: Drake Caterpillar Series - All Variants - PU - Vehicles / Collision - First cargo module has an invisible collision wall

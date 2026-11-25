@@ -1,0 +1,49 @@
+## Star Citizen Patch 3.4.2
+Alpha Patch 3.4.2 has been released to the PTU, and is now available to test!  Patch should now show: PTU-1034140.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displayinfo = 3
+Testing Focus
+- General gameplay
+Major Known Issues:
+- Dropped mission crates can sometimes transport to map origin and become unrecoverable.
+- REC ship rentals show as "undefined" and can not be completed.
+- Ship AI can appear immobile and in a bad state.
+- Ship canopies can randomly open and close.
+## Feature Updates
+Missions
+- Increased the time limit for visiting mission givers and adjusted the cooldown on various missions.
+Ships and Vehicles
+- Removed additional cargo capacity from 600i touring to match design intent.
+- Added restricted areas, similar to no-fly zones, specific to vehicles at Lorville gates.
+## Bug Fixes
+- Perimeter gates at Lorville should no longer always show the gate as the transit destination on train displays.
+- Fixed incorrect mesh in some areas of Lorville's no-fly zone.
+- Fixed invisible collision area in one of the underground facilities on Hurston.
+- Missions should no longer fail if/when your ship is stored by ATC.
+- There should now be audible ambience in Lorville's admin office.
+- Opening the scanner while spooling your quantum drive should no longer cause a large drop in performance.
+- Fixed graphical issues in the hangar elevators at various rest stops.
+- Delivery lockers should no longer remain stuck open after abandoning the mission.
+- Multiple unrelated missions should no longer use the "bounty danger" text.
+- The Freelancer MAX should now have working headlights.
+- The Freelancer MAX should now be lockable.
+- Players should no longer have the option to "inspect" or "stow" delivery crates.
+- Fixed missing Ruto/Eckhart collect/delivery variant missions.
+- Increased turret respawn range at underground facility to avoid them respawning too quickly.
+- Expanded underground facility missions to accomodate more locations.
+- "Bad Token" text should no longer be present in the on-foot keybinds section.
+- The Reliant Kore should no longer have placeholder text on various VMA item ports.
+- Arena Commander classic race checkpoints should now properly trigger within the rings.
+- FPS combat AI should no longer exhibit a response delay after shooting the first opponent.
+- Ships should no longer have small holes in their shields that allow damage to pass through.
+- FPS AI should now consistently engage after the player runs away and returns to combat.
+- "Joker" ship weapon manufacturer should now have a logo.
+- Player bounty missions should now correctly appear.
+- Added audio effects to mining arm transitions.
+- The objective marker for the leader in a Scramble Race should now properly be a seocndary style marker.
+- The VMA should now save loadouts when used within player hangars.
+Technical
+- Fixed 11 client crashes.
+- Fixed 4 server crashes.

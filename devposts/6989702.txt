@@ -1,0 +1,61 @@
+Hello everyone,
+Today, we are excited to share the RSI Launcher 2.0.1 with everyone
+This past month we tried to gather feedback from Issue-Council and Spectrum to answer the needs of the users since we released 2.0.0.
+RSI Launcher 2.0.1 can be found here:
+https://install.robertsspaceindustries.com/rel/2/RSI-Setup-2.0.1.exe
+## :hammer_and_wrench: Fixed From IC:
+- Launcher listen to key bindings when not focus (LCH-52)
+- Launcher music did not unmute When Start Citizen closed (LCH-48 and LCH-292)
+- Removing session from Connected Devices stays "logged in" (LCH-115)
+- Mute/Unmute does not work when minimized (LCH-160)
+- Download tooltip says “download_resume”(LCH-185)
+- Fixed the name of the directory with no space between "Star" and "Citizen" (LCH-210)
+- Fixed error_os_requirement_text (LCH-221)
+- Fixed Nickname WordWrap (LCH-224)
+- Session expired every 10 to 15 min (LCH-252)
+- Remember me does not work, logs me out every 30 seconds. (LCH-292 and LCH-342)
+- Wipe from right to left on Settings (Polish) (LCH-329)
+- Launcher forgets login after PC Sleeps (LCH-276)
+## :wrench: Other Fixed issues:
+- Updated error handling to directly display the type of error 2000. That way, users do not have to look at their logs to know what type of error they encountered
+- Copywrite update
+- Added “Don’t show this again” checkbox on closing dialog
+- Improved base pack corrupted error (3001)
+- Fixed: Channel getting added to queue being stucked
+- Fixed: User can access previsous verison of the game in the first 10min after an update
+- The Game button stays stuck on Waiting on Queue when refusing ToS
+## :bug: Known issues:
+- A 3001 error may occur when downloading the Base P4K. Verify to fix.
+- Launcher is not able to create the StarCitizen/Live folders for some users. Error 2000, 5008, 5010. Please try creating the folder manually and run the Launcher as administrator.
+- Users can reset the Launcher's state while the game is running using shortcuts.
+Please try out these features and let us know what you think! Your feedback is crucial in helping us make the Launcher the best it can be.
+## :mega: RSI Issue Council - Launcher Project
+https://issue-council.robertsspaceindustries.com/projects/LAUNCHER
+In RSI launcher 2.0.x, the log.log file can be found under: C:\Users\<username>\AppData\Roaming\rsilauncher\logs
+Any additional feedback can be provided in this Spectrum Thread.
+## :spiral_note_pad: Updated Error Codes:
+2000 - Installer error catch-all
+3000 - NMD catch-all
+3001 - NMD InvalidMDFileError
+3002 - NMD DiskSpaceBasepack
+3003 - NMD – InvalideMDFileHeader
+3005 - NMD - Not mapped error
+5000 - Datapatcher - Disk full error
+5001 - Datapatcher - Fix Permissions
+5002 - Datapatcher - Game files conflict
+5003 - Datapatcher - Network access
+5004 - Datapatcher - Corrupted game files
+5005 - Datapatcher - Unknown Network access
+5006 - Dataptcher - Failed to verify backpack
+5007 - Datapatcher - Unknown error
+5008 - Datapatcher - Installer Error
+5009 - Datapatcher - IO Error
+5010 - Datapatcher - P4K Error
+5011 - Datapatcher - Invalid Argument type
+5012 - Datapatcher - Verification header not found
+5013 - Datapatcher - Datapatcher - Installer exception u002
+5015 - Datapatcher - NETWORK - Could not resolve host: builds.robertsspaceindustries.com
+5016 - Datapatcher - NETWORK - schannel: failed to receive handshake
+5017 - Datapatcher - NETWORK - Too many files failed after max retries.
+5018 - Datapatcher - NETWORK - Catch-all
+5021 - Datapatcher - Error 21

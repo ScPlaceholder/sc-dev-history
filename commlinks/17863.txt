@@ -1,0 +1,65 @@
+## This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+Attention Recruits,
+What you are about to read is the latest information on the continuing development of Squadron 42 (SCI des: SQ42).
+Thanks to the work of dedicated operatives, we’ve uncovered classified information on advanced Vanduul combat techniques, capital ship behaviors, Archon Station, and more. Read on for the full debrief.
+Remember, the information within this communication is highly sensitive and must not fall into enemy hands.
+UEE Naval High Command
+## AI (Combat)
+We start with the Character Combat Team, who progressed with Vanduul and Human combat behaviors. Specifically for the Vanduul, the team authored several animations for melee attacks with the direction based on the location of the target. They’re currently adding initial support for ‘animation warp,’ which will enable the Vanduul to procedurally adjust the rotation and translation of the animation. The first pass on combo attacks was added, which gives a more fluid selection of animation when executing a chain of melee attacks.
+The first pass of the ‘surrender’ behavior was completed. This allows NPCs that are under pressure and without ammunition to decide to surrender. During their regular combat behavior, NPCs will try to find lootable ammo boxes (and in the future request help from friendlies and loot available weapons). If no options are available, they’ll try to survive by staying out of dangerous environments.
+The team began implementing support for character traits. This functionality exposes the ability of selected traits in the ‘Character Skills and Traits Editor.’ The designers can then assign traits to templates that are then assigned to characters. These can be used to either modify or enable specific behaviors in certain characters. For example, a ‘coward’ NPC won’t try to put pressure on the player.
+Several bugs were fixed for visual perception, cover usage, and Vanduul dodge reactions, too.
+## AI (General)
+Last month, the AI Team found and fixed more issues related to characters standing on top of usables. This time, the problem was specific to characters streaming in before their usables. Code was added to handle this particular edge case. Some of the recent AI component updates were also updated with stricter dependency rules to avoid conflicting read/writes inside the zone system. This prevents contention when reading entity positions.
+## AI (Ships)
+Ship AI began October extending the quantum travel Subsumption task. This will be used in specific scenarios where a behavior needs to queue quantum travel for a ship and then continue with regular duties, which is particularly useful in multi-crew ships.
+The team continued to iterate on missile targeting, first of all ensuring turrets respond immediately to incoming hostile torpedoes when not in combat mode. They then adjusted targeting priorities to give a better balance when capital ships are fighting multiple targets. This will also improve how seat operators handle burst fire when controlling ship weapons.
+Time was also spent improving how collision avoidance handles missiles, with the team figuring out how to filter out missiles in the code due to them not being part of collision avoidance. For the accuracy calculation, the team implemented different convergence speeds towards targets when the AI is hitting or missing the target. This simulates NPCs trying to hit a target faster when they are missing but relaxing slightly when they’re on target.
+The capital ship combat behavior was also improved to allow longer-range combat. NPCs will now react to an enemy starting to charge a weapon, too.
+Several bugs were fixed and improvements made to the break-away movement request, the patrol-around-position assignment, and the hostility of specific targets.
+## AI (Social)
+Last month, the Social AI Team moved the first version of the mess hall scenario into a state that allows other teams to better iterate on animations, props, and the technical setup. At the moment, the scenario supports usables that provide cutlery, food, and drinks. NPCs can iterate on food lines, retrieve anything their sustenance behavior wants, and then take the food to tables and can consume it. This involves both systemic animations and mo-cap created for specific scenarios.
+All of these usables are item providers, which NPCs can search to obtain specific objects. These objects are actually used by the AI, so consuming food and drink impacts the NPC’s status system. This also expands the use of grip tags in the ‘take,’ ‘prepare,’ and ‘place’ use-channel.
+The team are currently working on several behaviors that will benefit both the PU and Squadron 42, including arcade-machine use and dancing. Playing arcade machines will be one of the available leisure activities, while dancing will likely be a special activity for the patrons of discos and other appropriate areas.
+## Animation
+Last month, the Animation Team worked on staggering, push/pull, stance transition improvements, a handful of new weapons, and improvements to the ‘crouch’ set.
+Tasks progressed for the ‘social and life’ animations, including the chowline, mess hall, bartender drinks, bathrooms, armory character, engineer, and exercises. They also added the AI surrender mechanic and continued with Vanduul melee combat.
+Facial animation assets were created for the Feature teams, including effort sets, and female-player performances continued. On the motion-capture side, new shoots for the Actor Feature, Social AI, and Combat AI teams were planned. A few outstanding scenes were also completed and improvements were made to the MotionBuilder skeleton
+## Art (Characters)
+Character Art’s October involved work on major campaign characters. After submitting major changes to Morrow’s head, the team updated his jumpsuit, which will serve as the basis for all related navy uniforms. The team also revisited Vallon, this time focusing on her hair. The quality is now extremely high and will form the basis of a ‘generic’ hairstyle too. The team is currently updating major assets for a key ship introduction, including bridge officer and deck crew uniforms, engineer outfits, and several heads and hairstyles.
+## Art (Environment)
+Throughout October, the SQ42 Art Team focused on two key areas of the game, Chop-Shop and Archon Station. They also put the finishing touches on Aciedo Station, which was shown extensively during the first briefing room update.
+The Chop-Shop contains a mix of hard surface and organic elements, so the team experimented with both scanned data and procedural systems to achieve the final result. They also worked alongside the Design teams to construct the location’s playable spaces, with the organic and hard surface kits being used with the completed whitebox layouts.
+Archon Station is the largest location that players visit in the game, so the team who worked on Aciedo have now moved over to form a larger Archon strike-team. They began by closing off the hangar and are now starting to break down a kit of shared library assets for use throughout the station. This is driven by a new style guide that provides clear direction for the interior to keep it consistent with the previously completed exterior. Planetside, progress was made on the Chemline Solutions facility, which was placed among new ground terrain.
+Steady progress was made on the Javelin and Idris interiors too, with lighting, material, and geometry polished. The finishing touches were also added to the Javelin’s engine room.
+Elsewhere, excellent progress with made on the space outpost kit. This station asset is unique to the Odin System and will be used to populate space scenes with believable facilities and stations. They also implemented a hugely important story location.
+## Audio (SQ42)
+Audio spent the month finishing editorials for dialogue and implemented improvements into the music system. They also worked alongside the SQ42 composers to create new music.
+## Engineering
+The Actor Team started the month continuing their work on force reactions. Now, characters will respond to either sudden effects such as an explosion or sustained effects like wind or g-force. This is being expanded to include staggers, where the force is strong enough to move the player but not enough to knock them down.
+The team began implementing FPS radar and scanning, accounting for weapon emissions and audio signifiers. Further time was dedicated to cooperative locomotion, with trolly push/pull polished and the smooth locomotion trajectory code refactored to better integrate into AI path-following. This will result in higher-quality visuals, particularly with character strafing. It will also provide better animation alignment when entering usables, which will also help with the in-development motion-matching tech.
+The SQ42 Feature Team continued to improve camera depth-of-field when in conversation or when following an NPC. They also added TrackView support to better trigger the destruction of ships and added additional polish to the dynamic lighting rig.
+The team also improved mission startup, revising which elements object-container-streaming loads first. The firing-range flowgraph setup was revisited, too.
+## Gameplay Story
+October saw the Gameplay Story Team focus on a key introductory chapter, with the scenes themselves now looking impressive and working as desired. The current goal is to support the Code and Design teams in perfecting the blending of scenes via AI locomotion. Although a difficult process, great progress is being made and the results look promising. They also worked alongside Design to implement scenes for chapter 6, 7, 13, and 18, which are needed by the Gameplay Story team.
+## Graphics
+The Graphics Team delivered the iridescent shader, which simulates color shifts based on the camera angle relative to the surface. Shader optimizations and look-up textures were used to reduce the cost of this feature to the point it can be widely used without performance concerns.
+The light-beam shader was also worked on, which underwent significant quality improvements and bug fixes. This feature helps the team simulate distant beams of light beyond the range that can be simulated by the volumetric fog system.
+Work also continued on the Gen12 renderer and the automated testing system.
+## Level Design
+The Social Design Team brought a number of scenes up to their “gold standard,” which include completed behaviors, usables, interrupts, and abandons.
+The Level Design Team moved several FPS sections to a near-complete state. This will highlight any additional mo-cap required to extend the narrative and support the multiple approaches supported across most of the environments.
+The Space/Dogfight Team supported the various feature teams. For example, AI and Flight Gameplay are working on enhanced path-following and hazard awareness behaviors. They also continued to space-scape the Odin System alongside the Art teams.
+## Narrative
+Throughout the month, Narrative met with Design to plan out additional dialogue needed across the campaign. They then scripted lines and made placeholder recordings to enable Design to see how the additions sound in situ.
+As the various environments continue to develop, the Art teams asked for support on additional props or environmental set dressing. These include additional story indicators that reward players who dig a little deeper and explore the game’s locations.
+As mentioned in last month’s report, Narrative continued to work with Audio and Combat AI to develop the Vanduul culture and behavior, while the team’s xenolinguist further developed the language.
+## QA
+QA supported Cinematics with recordings of each level, enabled them to review each chapter to ensure scenes are working and appearing as intended.
+## Tech Animation
+Throughout October, Tech Animation focused heavily on upgrading the head assets in the character pipeline. A huge amount of technical detail goes into every head asset that will be accounted for and restructured throughout the overhaul.
+The team also began overhauling combat animations to remove technical glitches in AI weapon holding, ships were rigged for the Animation Team, and support was given to Social AI.
+## UI
+Much of the UI team’s SQ42-specific work was focused on new tech, including a new system to allow animators to move and position UI within cutscenes. They also further iterated on the 3D lighting system to improve the appearance of ships and items on UI screens and holograms. On the art side, visual target concepts for the Aegis Gladius UI were finalized, including the visuals for the MFD screens.
+## VFX
+Last month, VFX continued to improve the destruction pipeline, focusing on a couple of specific sequences with varying degrees of complexity. They also worked on effects for the Multi-Tool tractor beam attachment.

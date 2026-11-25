@@ -1,0 +1,74 @@
+## Greetings Citizens,
+Welcome to the first Star Citizen Alpha 2.0.0 Status update! We want you to know that we haven’t taken our foot off the pedal, and so we are expanding the weekly Star Marine update to include what the team is doing to prepare for the Alpha 2.0.0 launch.
+It feels like June 2014 again when the whole company pushed together to get the very first “Arena Commander – Dogfighting Module v0.8” release out to the fans. Every department has been working flat out to get all of the exciting new content and gameplay in there, whilst making our systems robust enough to build a whole universe upon!
+It’s a really exciting time for the project and as always we have been pushing the fidelity, improving the performance, fixing up bugs and iterating on new and existing gameplay features around the clock to make this a really enjoyable and solid release… and what we think will be our best yet!
+As you will have seen from our CitizenCon demo, the Planet Crusader map is huge! We placed several new points of interest for you to explore around in your ship and on foot, introducing several basic missions and AI encounters for you to experience a variety of encounters in this beautiful star system. All of these encounters will have a random element to keep you guessing and should give players a taste of what Star Citizen is becoming with unique experiences every time you play, and layers of immersion such as one mission that asks the player to seek out Audio Datalogs from the space stations. It’s moments like this that will help build a story behind the environment and add a rich social history to our Universe.
+Brace yourselves for some brand new gameplay elements! We’ve now got our basic implementation of the refuel, repair and restock systems in-game so pay attention to your Quantum Fuel Tank reserves and choose your Jump Points wisely to make sure you don’t get stranded out there! Then when you’re not busy hurtling around at 0.2c, or fighting pirates in asteroid fields, you can also experience the first taste of “rules and regulations” in the Universe with the introduction of our first “Green Zone” that enforces a non-combat area on all players. This is an important step towards building the bigger picture.
+As I’m sure you’re all aware, the FPS team are working hard at getting the basic movement and gunplay feeling good so that we have a solid foundation to build on from, just like we did with our IFCS system for ships. The new additions of IFCS systems have been in test for the past few days so we’re balancing all of that out with Design and QA. Super Cruise, SCM (Space Combat Manoeuvring) and Precision Mode will soon be ready for you to hone your space flight skills even further; and we’ve even given EVA the “IFCS makeover” to harness all the hard work that went in to that system which will give us a much more natural and precise version of EVA manoeuvring.
+Meanwhile, work on Star Marine proper continues. Some of the deeper features are taking a back seat this week we roll out the basic movement and gunplay that will be available to all players on the Crusader map. This allows us to focus our attention on making the time players are outside their ships a good experience. What’s not included in Star Citizen Alpha 2.0? Game systems such as the score screen and Star Marine lobby UI, as well as some gameplay engineering and design work that is needed for Headquarters game mode. Have no fear, though, for Star Marine will return and your appetite for first person combat will be whetted by the action on Bravo station in the Crusader map. We will continue developing features and gameplay modes that are ultimately for use within Star Citizen, and we will continue to use Arena Commander and the Star Marine modes as a test bed for them. For now, and into the future, the FPS experience will be an integral part of Star Citizen Alpha, and we can’t be more happy about that!
+We hope you like the sound of what is to come in this huge release for Star Citizen and the team will keep you posted every week of how it’s all coming along. Thanks for your amazing support as ever, we’re confident that this will be a release for everyone to remember!
+Here’s a high level breakdown of action from the different departments…
+## Gameplay and Engineering
+- Added extra missions in to the Asteroid Fields.
+- Added Research Stations as well as Storage Stations.
+- Green Zone system now works to prevent combat fire around the main base.
+- EVA and animation system improvements including “Fall and Play” to make death and hit reactions look super realistic.
+- Added Quantum Fuel Tank functionality so now the player’s fuel reserves deplete and the player will need to refuel at the stations.
+- Improvements to procedural FPS camera sway.
+- Improved AI to avoid obstacles in space.
+- Repair respawns turrets.
+- Zero-G out of airlocks.
+- Added a toggle for identification signal; meaning the ship emissions that make you appear on radar can be switched on and off.
+- Journal improvements.
+- Added notifications for player entering a Green Zone.
+- Improved network syncing for crew members of a multicrew ship when entering/exiting Quantum Travel.
+- Smoothed out the exit sequence from Quantum Travel.
+- Optimised the radar for landing areas.
+- Ship selector now takes ship size into account when assigning it to a landing pad.
+- Vehicle destruction and how we handle the interior physics upon destruction is in progress.
+- Putting P-capped animations onto the FPS character rig.
+- Discussion about character loadouts in regard to weapons and armour for the Crusader map.
+## UI
+- mobiGlas mission manager initial implementation has been completed.
+- Quantum Travel HUD additions.
+- Quantum fuel gauges.
+- Quantum travel point of interest marker improvements.
+- New airlock screens are now being implemented.
+- Branding for vending machines are also being implemented.
+- 16:9 Engineering Screens art and implementation.
+- A new reticule for repair landing pads has been implemented.
+## Art
+- Repair drone VFX improvements.
+- Constellation, Cutlass and Retaliator final art, set up and balance.
+- Crusader map environment final art and optimizations.
+## Animation
+- Iterations and new assets for EVA, Death and Hit Reactions, and Fall and Play.
+- The full no weapon animation set is being finalized, work will continue into next week.
+- Lots of FPS basic movement and gunplay iterations and tweaks
+- Gun sway, weapon canting, and recoil procedural animations were tweaked by a strike team of animators, engineers, and designers this week, and we’re on track to finish this next week.
+- Fixed up pistol reload animation.
+- Continued work with IK look poses and aim poses
+- Submitted ragdoll improvements for testing.
+- Ship, prop and environmental interactions for the player.
+## Audio
+- Reviewed audio from the CitizenCon demo and identified areas to improve.
+- Began work on dialogue editing.
+- Working to improve ship audio as a whole by changing our in-house process.
+- Implementation of more music to improve the immersion and emotion in the map.
+- Investigations on how to best improve the breathing manager for ships and FPS combat for the sounds and the code behind it.
+- Tweaking audio on FPS weapons and gadgets, with a focus on pistol and ballistic assault rifle audio, and the medpen.
+- Tweaking to laser recharge ammo audio.
+- Expanding the variety of footsteps heard on surfaces.
+- Addition of audio for HUD notifications when picking up/downloading datapad information.
+- Improvements to the breathing manager.
+## Blocking Issues
+- Mainly the network and multiplayer issues are holding us back on a functionality side.
+- Then it’s sum of the work that’s needed to get it ready for release because we have lots of bug fixing and polish to do including performance improvements.
+- AI do not spawn into encounters, as their triggers aren’t playing correctly! Players can fly to the locations to trigger events but no AI will spawn in. Thankfully they trigger in Missions.
+- The interior physics grid for single seater ships has a bug meaning that you can’t walk around them during flight and will fall to the back of the ship. Fun, but impractical!
+- The No Weapon animation set is not done yet, and not ready to ship. Should be in better shape next week as the team in Austin continues work on it.
+- EVA flight is difficult so needs fine tuning to be able to handle the character better, engineers will look into this next week.
+- EVA look and aim poses need to be created and implemented for the use of weapons.
+- Pistol motion sets need integration, this will be done next week.
+- The prone motion set is now a problem, as we have changed the way we do standing and alerted aim poses. This will change how players aim while prone, whether they be prone forward, or rolled on to the back. Needs some R&D love next week.
+- Issues with some ship and environment terminal UI not working properly

@@ -1,0 +1,57 @@
+## Star Citizen Patch 3.4.2
+Alpha Patch 3.4.2 has been released and is now available to test!  Patch should now show: LIVE-1036777.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\LIVE.
+The persistent database has been reset for this patch.
+Major Known Issues:
+- Ship AI can appear immobile and in a bad state.
+- VOIP is currently off by default and will need to be enabled on the Comms section of the mobiGlas by clicking the bell icon.
+## Feature Updates
+Missions
+- Increased the time limit for visiting mission givers and adjusted the cooldown on various missions.
+Ships and Vehicles
+- Removed additional cargo capacity from 600i touring to match design intent.
+- Adjusted QT Drive overheat/cooldown times for smaller ships
+- Additional audio effects for mining arm transitions and actions added
+## Bug Fixes
+- Perimeter gates at Lorville should no longer always show the gate as the transit destination on train displays.
+- Fixed incorrect mesh in some areas of Lorville's no-fly zone.
+- Fixed invisible collision area in one of the underground facilities on Hurston.
+- Missions should no longer fail if/when your ship is stored by ATC.
+- There should now be audible ambience in Lorville's admin office.
+- Opening the scanner while spooling your quantum drive should no longer cause a large drop in performance.
+- Fixed graphical issues in the hangar elevators at various rest stops.
+- Delivery lockers should no longer remain stuck open after abandoning the mission.
+- Multiple unrelated missions should no longer use the "bounty danger" text.
+- The Freelancer MAX should now have working headlights.
+- The Freelancer MAX should now be lockable.
+- Players should no longer have the option to "inspect" or "stow" delivery crates.
+- Fixed missing Ruto/Eckhart collect/delivery variant missions.
+- Increased turret respawn range at underground facility to avoid them respawning too quickly.
+- Expanded underground facility missions to accomodate more locations.
+- "Bad Token" text should no longer be present in the on-foot keybinds section.
+- The Reliant Kore should no longer have placeholder text on various VMA item ports.
+- Arena Commander classic race checkpoints should now properly trigger within the rings.
+- FPS combat AI should no longer exhibit a response delay after shooting the first opponent.
+- Ships should no longer have small holes in their shields that allow damage to pass through.
+- FPS AI should now consistently engage after the player runs away and returns to combat.
+- "Joker" ship weapon manufacturer should now have a logo.
+- Player bounty missions should now correctly appear.
+- Added audio effects to mining arm transitions.
+- The objective marker for the leader in a Scramble Race should now properly be a seocndary style marker.
+- The VMA should now save loadouts when used within player hangars.
+- Leaving pilot seat and returning while in Quantum Travel should no longer break QT HUD
+- Players should no longer spawn at map origin when logging out in ship bed while not in close proximity of a base
+- Various sections of Lorville hab should no longer be missing ambience and audio cues
+- Kareah Assassination mission is no longer advertised across entire Stanton system
+- Ship canopy should no longer open/close randomly by itself
+- Ships should no longer experience limited functionality follwing instance recovery after a crash
+- UGF-Elbridge missions should not correctly spawn objectives and markers
+- Comm video calls should now return when players return within distance of each other
+- Fixed an issue where character eyes and hair could appear blurry.
+- Missiles in atmosphere should no longer stick to the target's hull and fail to explode.
+- Mission boxes should no longer teleport to origin when put down or dropped.
+- Commodities purchased via the kiosk should no longer be removed when the ship is spawned.
+- Weapons/items should no longer be able to be placed in any slot.
+Technical
+- Fixed 16 client crashes.
+- Fixed 8 server crashes.

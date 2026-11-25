@@ -1,0 +1,18 @@
+## Star Citizen Patch 3.2.1h
+Alpha Patch 3.2.1h has been released to the PTU, and is now available to test!  Patch should now show: PTU-834470.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+USER.cfg settings:
+r_displayinfo = 3
+## Testing Focus
+- Turret combat against AI and players.
+## Feature Updates
+Ships and Vehicles
+- Reduced and smoothed the effect of aim assist on remote turrets.
+## Bug Fixes
+- Grenades should no longer land at the player's feet when thrown.
+- Fixed issues with Hornet gimbals and turret alignment.
+- Targeting should now be functional on the Starfarer's turrets.
+- The right hand on legacy armors should now have proper culling.
+- Remote turret cameras should now have proper UI.
+Technical
+- Fixed a shader issue that caused client performance to dip significantly when first loading into the PU.

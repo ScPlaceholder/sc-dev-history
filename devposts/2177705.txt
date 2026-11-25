@@ -1,0 +1,42 @@
+## Star Citizen Patch 3.5.1c
+Alpha Patch 3.5.1c has been released to PTU, and is now available to test!  Patch should now show: PTU-1779765.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizenPTU\LIVE.
+Please monitor ptu test chat in spectrum for updates and testing instructions.
+UPDATED USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- Ship customization
+- 300 series ships
+- We have added logging to pinpoint the source of the server despawning the player's only ship when they exit the vehicle.  Go get your ship despawned!
+Known Issues
+- NPC assist beacons no longer function correctly if the server has been up for awhile.
+- AI pilots may not react to players.
+- Bed logout doesn't work on planetary surfaces and may be inconsistent elsewhere.
+- Voice chat and facial tracking do not transmit to other players in direct calls.
+- Ships upgraded to a 300 series currently can not be customized properly.
+- The "customize" option under "my hangar" doesn't always function.
+- 300i seat image is invisible on customizer.
+- Customizations sometimes don't display in "my hangar" if ship is in a package.
+- 300i-G and 315p-XC loadout kits show incorrect ship weapons.
+- CPU spikes may occur near Lorville, resulting in a stall.
+- Leaving floor 1 elevator at Adira Falls in Area18 may instantly kill the player.
+## Feature Updates
+Universe
+- Ship item prices have been updated to reflect changes to item pool.
+Ships and Vehicles
+- Increased thruster performance and reduced drag for the 350r.
+## Bug Fixes
+- Auto-land should once again work properly..
+- Ships should no longer lose their texture/paint when destroyed.
+- Players should no longer be able to walk onto the 300 series bed and become stuck.
+- Purchasable ships should now be restored to the New Deal ship shop.
+- Fixed issues with loadout pack items overheating and powering down.
+- Swapping pilots should no longer cause the MFDs to go blank.
+- Claiming insurance on a destroyed ship should no longer occasionally cause it to be returned with no items.
+- Changed the range limiter on the Siren quantum drive to fix short range jump issue.
+- Destroyed ships are now read only in the VMA, including in the hangar, preventing them from going into a bad state.
+- Passengers on other ships should now have their spawn location saved upon arrival at a new station.
+- The cargo bay exterior color of the 300 series should now match the paint of the ship.
+Technical
+- Fixed a client crash.

@@ -1,0 +1,11 @@
+Your question is quite open/vague so hard to answer concisely, but here's a high level overview:
+- Most kinds of changes can be tested very quickly, e.g. less than 5 minutes
+- Art/design changes can mostly be iterated upon live in the editor, but some changes require (re)starting the game (usual startup time, e.g. 2-3 mins)
+- Balancing some game systems can be done live while playing the game
+- Code takes a minute or so to compile small changes (sometimes possible while the game is running, sometimes requires restarting), and up to 10 minutes to build the whole project from scratch (distrubuted build system over many machines)
+- Shader changes happen live, so usually complete in seconds
+- Full builds of the game take between 1-2 hours, but devs just use the last build and add their latest changes to this, so only need to wait for a new build if they are not a programmer but need the latest code changes
+- The build system caches lots of data (textures, meshes, animations, shaders), such that if we wipe the entire cache the first 'clean' build can take several hours longer
+- I don't have up to date statistics on the size of the uncompiled game, but the code-base is millions of lines of code, and the source assets take up several terrabytes
+Cheers,
+Ali Brown, Senior Director of Graphics & Procedural Tech

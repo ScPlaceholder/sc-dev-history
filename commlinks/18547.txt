@@ -1,0 +1,65 @@
+Squadron 42 Monthly Report
+January 2022
+This is a cross-post of the report that was recently sent out via the monthly Squadron 42 newsletter. We’re publishing this a second time as a Comm-Link to make it easier for the community to reference back to.
+TO: SQUADRON 42 RECRUITS
+SUBJ: DEVELOPMENT UPDATE 02:02:2022
+REF: CIG UK, CIG DE, CIG LA, CIG TX
+FAO Squadron 42 Recruits
+Welcome to January’s Squadron 42 development report. Enclosed you will find details on the latest progress made across the campaign, including updates to uniforms, battle flow, and dead-body investigation.
+Thank you for your continued support of Squadron 42.
+Sincerely,
+CIG COMMUNICATIONS
+## AI Content Team
+AI Content began the year integrating the deck-crew behavior into various story scenes. This process is known internally as a ‘scene handshake,’ and describes the transition from a TrackView sequence (story scene) to a systemic AI behavior, such as the engineer.
+To preserve immersion, it’s important that the player can’t see the changeover. However, this isn’t a single-solution problem as there are many scenarios that require seamless transitions that feel as natural as possible. For example, a scene ending with an NPC in the middle of their walk cycle. In this instance, the team pre-caches the AI’s destination for immediate execution once the scene ends.
+AI Content also held a progress review looking at the latest implementation of the deck-crew behavior. They showcased several new actions taking place around the Gladius, including checking the fuel diagnostic terminal and repairing damaged wings. Although the deck crew is starting to feel like a real team of people, more features will be added to increase realism throughout the hangar. For example, movable trolleys, drivable forklift trucks, and dynamic conversations (a selection of appropriate conversations between two or more NPCs).
+They also progressed with the feature testmaps mentioned in last month’s report, adding the arcade machine and vending machine. The next step is to begin testing entire behaviors rather than individual usables.
+## AI Feature Team
+The AI Feature team continued to work on NPCs perceiving and reacting to dead bodies. Bodies are set up as usables, which brings a wealth of functionality. For example, the ability to specify locations around the body for the AI to inspect and the best enter and exit animations when approaching or leaving the body. They also devised an easier way for the level designers to utilize AI code to trigger gameplay when the AI reaches a certain state.
+Progress was made on Vanduul combat, specifically improving their effectiveness at mid-range. New animations were prototyped that telegraph the direction of attack, allowing perceptive players to dodge out of the way and get the upper hand. They also implemented and polished the animations for cowering and surrender.
+## AI Tech Team
+AI Tech implemented a way for the designers to enforce movement style on characters. This is generic functionality that will be used on specific characters, such as Captain White, to add unique style to movements based on the scene.
+## Animation
+Throughout the month, the AI team finished weapon selections, worked on player animation idles, and approached the last stages of cowering and surrender.
+They also created blockouts for the fire suppression device and continued work on Vanduul combat, the firing range useable, dead body investigation, and locomotion improvements.
+## Art (Characters)
+Character Art touched up the concepts for the Screaming Galsons, ensuring they have a spread of different armor weights. They’re currently working on UEE Navy assets, including the bridge officer, battle dress, and class A uniforms.
+## Art (Environment)
+Environment Art continued to develop key locations, this time aiming to get large-scale assets into the game to help shape each area and give them a more distinct feel and purpose. They also began scouting for space locations within the game world.
+Art and Design worked closely on select key chapters.
+“This combined effort is helping shape the environments and gameplay closer to what we’re aiming for and we’re all excited to see this progress.” Environment Art Team
+## Engine
+In January, the Physics teams prepared for the configuration and setup of sim and cloth skins via item ports. Furthermore, code was restructured to allow mesh baking on soft body instances within the animation system. For vehicles, anti-flip measures were implemented for “turtling” vehicles using physical movement. The vehicle inspector tool that's used for development now also allows the team to control stiffness properties.
+For the renderer, further progress was made on the transition to Gen12. Various instance buffers are now precreated to prevent slowdowns at runtime that were caused if created on demand per frame. Render support for not-yet-streamed-in meshes was added. CGA attachments now also render via Gen12. Support for GBuffer decals was added, and empty render passes can now be skipped in the render graph. Additionally, various optimizations for the reference counting of PSO cache instances during rendering were committed. The team are now looking at supporting HW skinning for Gen12.
+Regarding atmosphere and cloud rendering, last month's code cleanup for back integration was completed and the latest code (including various improvements to features and optimized techniques that are still in progress) was submitted to the main development branch. The adoption of volumetric clouds in Squadron 42 revealed an issue with parameters passing into relevant systems during level loading, which was fixed. The next steps are looking at another new idea for data reprojection and to start porting code to Gen12.
+On the core systems, the team refactored the recently introduced arena allocator into a buddy allocator. The entity component update scheduler's (ECUS) visibility culling was improved and old ECUS code was removed now that the new entity-centric component update code is actively used. Furthermore, the job manager's wake-up code was further optimized. Part of the team is currently working on area and tag refactoring as well as continuing to investigate a potential integration of EASTL.
+## Gameplay Story
+Gameplay Story began January following up on the turret work done last year, updating all story scenes to match the newly defined metrics.
+“It is definitely satisfying to see this work come to fruition and for our characters to enter the turrets seamlessly.” Gameplay Story Team
+They also continued adding new bodies, faces, and audio to random-to-NPC scenes. This is progressing well and is expected to carry on throughout the first quarter of 2022. A new animator joined the team, so time was spent onboarding and training, and planning was done for the rest of the year.
+## Graphics & VFX Programming
+January saw the Graphics team support Cinematics with fixes for cubemap rendering in TrackView and add a letter-box feature to the camera code to avoid sorting issues in cutscenes.
+They continued to work on shaders, with various improvements to screen space reflections resulting in much sharper and stable reflections with softer falloff where they can’t be calculated. They also cleaned up the volumetric lighting shader for water and continued to iterate on new wear shaders with the various art teams.
+For render-to-texture (RTT), fixes were implemented to async creation/deletion relating to streaming and reference counting.
+For Gen12, the team fixed multiple issues including particles not being visible and various cubemap problems. They added support for particle GPU refraction and split render-passes to inject another pass, began testing Gen12 shadows, and investigated issues with RTT in Gen12. They also began converting the game’s post-effect system and G-force effect.
+The VFX team focused on damage map work, code interface support for the Weapons team, and made a start on the CPU damage map. They also continued with the fire-hazard feature, investigating issues with the fire igniter not working and fixing issues with resetting fire.
+## Level Design
+The Space/Dogfight team prepared the campaign chapters to flow into each other continuously without reloads and worked towards completing the turret gameplay experience.
+The FPS team completed detailed planning on how to bring several chapters up to vertical-slice quality, while the Social Design team continued the significant task of implementing all scenes to all chapters.
+## Narrative
+Narrative began the year preparing for an upcoming motion-capture session. Along with content that was meant to be shot before the pandemic, it will be used to capture additional vignettes and procedural content for one of the campaign's set pieces, allowing for the first-pass implementation of final content.
+The team also continued to work closely with Design and Art to create scripts and placeholder recordings to help them judge whether scenes are working as intended. Once scenes are signed off, their final capture session will be scheduled.
+## Tech Animation
+Tech Animation spent January addressing long-standing issues and upgraded all team members to the latest version of Maya. This transition created some complications with the source files, which were addressed.
+The team had the mandate of batch-upgrading all Maya animations (around 41000). Legacy character sets were the root cause of some bad animation parsing on file load, so these were dealt with at the same time.
+“Our animation repository is now in the best state it’s been in a long time, and our users have moved over to the new software with minimal problems.” Tech Animation Team
+## UI
+In January, the UI Feature and Tech teams transferring ownership of some UI features to the Feature Team to fast-track their development.
+Work on the new Starmap continued, with progress made on concepts, prototypes, and core technology. They continued building the core systems for the new AR markers while working on icons for the various marker types and states too.
+UI Tech continued developing additional Building Blocks features, some of which will be used in the hacking feature. Additional planning went into the pre-production process of the new Building Blocks editor too, which involved creating wireframes.
+Finally, additional concepts for the new mobiGlas and Origin UI styles were created and iterated on.
+## VFX
+VFX started the year working on the battle scene mentioned in last month’s report. Alongside the Cinematics team, they began fleshing out some of the more elaborate battle effects, paying particular attention to timings and scale to sell the feeling of a battle taking place around the player.
+They also began dialing in effects for a key location, focusing on a vertical slice to show how the rest of it should appear.
+## WE'LL SEE YOU NEXT MONTH...
+// END TRANSMISSION

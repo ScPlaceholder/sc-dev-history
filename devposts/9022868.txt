@@ -1,0 +1,42 @@
+## Star Citizen Alpha Patch 4.9
+Alpha Patch 4.9 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.9.0-PTU.12206539
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Recco Battaglia Repeatable Missions (reputation sped up for tonight)
+- Vehicle Hit Marker Updates
+- Behring CQ7 Bullpup Rifle
+- Vehicle Cleanup Updates
+- Vehicle Weapon Balance Pass
+- Valakkar Behavior Updates
+Known Issues
+- Current hitmarker sounds are not playing the correct final audio and a solution is currently being looked into
+- PU - Armor / Clothing / Inventory Rework - "Right Click > Equip" does not function if a paper doll slot is occupied
+- PU - Nyx - StarMap / Locations - QV Breaker Stations can be traveled to anytime at Nyx without RCD missions active
+- PU - Ship Battles - Missions / Locations - Escort - Hangar doors are not opening for the ship that needs to be escorted
+- PU - Ship Battles V2 - EscortShips - Mission Content / AI - Escorted ship does not Quantum Travel away or Go to the Hangar after neutralizing the AI ships in the mission location
+- PU - Commodity Kiosks - Multiple Locations - "Failed" error appears when buying RMC from Commodity Kiosks
+## Features & Updates
+ASOP Terminal
+Updates to ASOP terminal code to help ships that are currently spawning in transit to a pad to now correctly suppress the claim button, preventing a false claimable state during delivery. Further update have also been done to make it so the terminal can now correctly query vehicles stored in hangar inventory, preventing incorrect "Claim only" status on stored ships
+Valakar Behavior Updates
+Updates to Valakar behaviors have been made to further distinguish types as well as fix issues previously encountered. Sentry Valakkars will not Bite and will instead hide if you get too close. Mobile Valakkars will move in combat to chase you down or reposition. Juvenile Valakkars now have a Bite Attack. Ensured that Valakkars always have a purpose in being above ground (reduces idle wiggling). Fixed bugs with some Valakkar attacks not doing damage.
+Additional Updates
+- Grenade HUD Markers: Live grenades will now display a warning marker on the HUD
+- Hit Markers: Hit marker visuals have been updated to thinner markers and flat crosshairs for a cleaner look
+- Bombing Run Missions: Bombing Run missions are now regional and will only appear in the area of space where the mission takes place, rather than being visible system-wide
+## Bug Fixes & Technical
+- Fixed a Client Crash
+- Potential Fix: Contested Zone airlocks in Pyro not cycling correctly, preventing players from entering the zone
+- Potential Fix: ATC defaulting landing requests to docking ports for ships that support both hangar and docking at dual-support locations such as Rest Stops, sending ships to the wrong landing type
+- Potential Fix: Ships disappearing when landing at or departing from Levski hangars, with the vehicle being stowed incorrectly and freight elevator recovery stalling as a result
+- Potential Fix: Vanduul-Tech Smugglers mission keycard or key-holding AI despawning before the player could retrieve them, blocking mission completion
+- Potential Fix: Patrol Ship Battles mission failing to progress when one of the scan areas had no satellite in range
+- Potential Fix: Second Yormandi failing to spawn at the Onyx Facility, and the first Yormandi sometimes failing to target hostile players after spawning
+- Potential Fix: FPS Human combat AI surrendering during a fight when failing to immediately select a weapon despite having valid weapons available
+- Potential Fix: Outlaw Legacy armor props (arms, core, legs) appearing as untextured material spheres when dropped or placed in the world
+- Potential Fix: Irradiated Valakkar Fang displaying its internal string ID instead of its correct name when tractor beamed
+- Potential Fix: ASOP terminal incorrectly showing a stored ship as "Claim only" instead of showing it as stored in the hangar
+- Potential Fix: Armor carry props floating far away from the player's hands when picked up

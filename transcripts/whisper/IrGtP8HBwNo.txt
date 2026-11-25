@@ -1,0 +1,151 @@
+# Inside Star Citizen:  How We Work - Level Design
+# https://www.youtube.com/watch?v=IrGtP8HBwNo
+[    0.1] Inside Star Citizen is many different things to many different people.
+[    4.1] But at the center of it all is our desire to educate about the very nature of game development itself.
+[    9.6] And this week's part two of our three-part experimentation and format,
+[   14.1] we lean into that aspect and explore some of the foundational philosophies
+[   18.6] that guide just one of the teams that are continuously working to iterate and improve on the persistent universe
+[   24.6] as it prepares to grow in this year's upcoming Alpha 4.0.
+[   28.6] Now where last week we met the team, this week it's how we work level design
+[   33.6] with the folks from the Frankfurt level design team.
+[   37.6] Level design, it's probably one of the hardest things to describe in game development.
+[   60.9] We take gameplay elements and we take the environment and we just bring all that together.
+[   66.9] It is more than some of all of its pieces. You can't just kind of speed level design,
+[   70.9] a forest log cabin that's not enough. Like what is the player doing there, what does it mean?
+[   75.9] Why does this thing exist in this space? What can the player do as well?
+[   79.9] You've got the environment art that makes the art itself, this is not us.
+[   84.9] We have the gameplay teams that make all the gameplay elements and this is not us.
+[   89.9] What we do is we take these two things, we combine them together and make it a cohesive environment for you guys.
+[   95.9] We design the space itself and we also accommodate everything that goes inside of it.
+[  107.1] A lot of the things that you use like hangers, ATC, I hate to say transit systems.
+[  114.1] Elevator rides.
+[  116.1] We're here responsible for the elevators?
+[  118.1] Elevators are our problem, yeah.
+[  121.1] No, we're just a set-up site.
+[  125.1] Sleep?
+[  128.1] If you die in the elevator, that's actually a problem from the coding side.
+[  132.1] We just throwing them under the bus.
+[  136.1] Is it possible in a sandbox game to have level design?
+[  139.1] Yes, because you have to consider all of the individual constituent pieces and why they need to exist together.
+[  145.1] You can throw anything in there, but you have to account for like does this begin to break the game?
+[  149.1] So you have conversations with economy, you have conversations with code, you have conversations with system design, mission design
+[  156.1] and you have to figure out how all these pieces again stitch together.
+[  159.1] So there are six principles for good level design.
+[  164.1] First is readability. This basically means clarity in your environment.
+[  169.1] You're going to make sure within your layouts that everybody can understand where they need to go, what they need to do.
+[  175.1] All the affordances need to make sense. The typical one could be, I've got a door in front of me.
+[  180.1] How do you describe a locked door from an unlocked door?
+[  183.1] For example, you're fighting an AI and they can read easily the elements, the gameplay elements.
+[  189.1] You need to understand your cover space. You need to find the AI within the space.
+[  193.1] If the AI is in a black area, you will not see it at all.
+[  196.1] And this is very important for us. We really focus on this kind of stuff and we make sure that anything you interact with within the environment,
+[  204.1] you can see as clear as possible.
+[  207.1] Next is flow and leading lines.
+[  210.1] It's creating a good composition of all these things from layout, lighting, some props,
+[  217.1] a good mix of combat spaces or combat encounters and then time for exploration and then doing a mix between both.
+[  224.1] We make sure that you're not going always on a straight line.
+[  227.1] We make sure that you're not spending two hours walking from one space to the other.
+[  231.1] In Pyro, you'll come across a lot more players as we funnel them into a certain space.
+[  237.1] With the concentration of missions, for example, or things to do, that is flow to us on the flow level, that is higher on the chart.
+[  245.1] And then certain errors will be a bit more on the lower end of your pacing.
+[  250.1] Leading lines is a compositional technique.
+[  252.1] Some examples can be you are following the cables from one interactable through to another arrow to interact with another element.
+[  260.1] You're being breadacrumbed along, you're being led along these leading lines.
+[  264.1] With Pyro's station, you have the core element, you have the arms pointing towards the center.
+[  270.1] It's a very simple example, but more on a larger scale, but we look at it also on a room basis.
+[  276.1] We're trying to direct you through to a discoverable place over here or trying to direct you through to an event.
+[  282.1] We're using lights and cables to navigate you through these spaces.
+[  288.5] Pyro is options. We want to give you guys multiple options so you can complete your objective the way you want it.
+[  294.5] The context of our game is giving the player the opportunity to approach certain situations in different ways or get an idea of the situation in the first place.
+[  304.5] You have late-forward options, the combat route, you have a more sneaky option for players that don't like to engage in combat so much,
+[  312.5] or you can also have like a puzzle route for players that like to do more interesting environment interactions.
+[  318.5] Then there is clustering.
+[  323.9] Clustering also falls into compositional techniques or more in the layout side of things.
+[  329.9] Clustering means that you start bringing objects together to create something a bit more natural.
+[  335.9] You put importance on things by grouping certain things up into clusters.
+[  339.9] A specific power example would be the outposts where you have a big landing pad in the center and then you have groups of clusters of buildings that are arranged around it
+[  348.9] and they form points of interest by themselves.
+[  352.9] We've not always been successful with clustering but moving forwards into the future, especially with Pyro,
+[  357.9] we're taking a renewed effort to concentrate and cluster things properly.
+[  360.9] Finally there's scale and proportion. Scale is important in how you vary it.
+[  368.3] If everything is large, for example, nothing is larger anymore.
+[  372.3] We are the one that defines all the metrics for FPS but also for ships.
+[  377.3] We're talking about ships that have a few meters to some ships that have hundreds of meters
+[  382.3] and we need to make sure that the transition from A to B feels always smooth and natural, right?
+[  388.3] If you, for example, come from a maintenance corridor or a small little pack or event and expose yourself to this big room,
+[  394.3] you'll get it more likely in a hard moment.
+[  397.3] So we still have very big open spaces but condense the gameplay space a bit more.
+[  403.3] So the players don't have so much options to walk around
+[  407.3] but still get the sense and the immersion of a big open space.
+[  411.3] Proportion is also feed into scale.
+[  415.3] So you can use proportions to be able to scale up.
+[  418.3] What is the background space? What is the foreground space and what is the mid-ground space?
+[  422.3] What is immediately interesting to you as a player and what is in the background that's not yet relevant to you?
+[  428.3] So you can land one outpost on Pyro 2 and you can see yourself in the sort of like habitation outpost village.
+[  435.3] Down the hill you can see there's a refinery area but the main feature of this place that you were drawn to initially was this massive mining tower.
+[  442.3] These become like your immediate foregrounds, your mid-ground and your background.
+[  447.3] But again, you can always come to your ship and go to this massive mining tower.
+[  451.3] Therefore this becomes the new foreground. You're always orbiting it, you're transferring around.
+[  455.3] This becomes your landmark to orientate yourself around all these other spaces nearby.
+[  459.3] Traditionally in level design you start out with a pre-production phase.
+[  464.8] This is where we ideate conceptual lines. We gather references, we do sketches, we do top-down layouts of our brain map, put things together.
+[  473.8] We then go into white box which is literally going into the editor,
+[  478.8] start mocking things up in 3D, creating the space and defining where the gameplay elements are.
+[  485.8] We have a shop on the right, shop on the left, your elevator transit over here.
+[  491.8] We work at different scales at this point and we define basically everything in the location but with very, very basic shapes.
+[  497.8] And then we hand it over to art so the focus lies more on art for grey boxing, making things more pretty.
+[  503.8] With us still having an eye on it to see that the original concept is still intact.
+[  509.8] And then finally we move into final art and the level designers will be able to kind of keep all of these locations.
+[  514.8] Like the intent of the location is kept consistent. It doesn't veer off too much into suddenly it's too big or too small.
+[  519.8] This is the original design direction that we wanted from beginning through to end.
+[  522.8] Once a location is released it's not finished for us because there is always maintenance and additions that we do.
+[  528.8] When there is a new functionality, a new gameplay coming in, we go in and we add them to all the locations, we retrofit the locations.
+[  536.8] So whenever there is a bug in the PU we have to maintain these locations so we would go into a new Babbage and fix AI placements or shops not working anymore.
+[  546.8] But mostly level design is also about coordinating with every team.
+[  551.8] So, be it with like lighting, mission team, environment art, audio, narrative, they work more or less in their pockets.
+[  560.8] And then we try to keep an eye on the big picture to bring everything together and look that everything is coherent and cohesive.
+[  569.8] What is important to us or what we really want you to experience is the nicer flow in the stations.
+[  576.8] I think what we realize with Stanton is you just take a ton of elevators from place to place.
+[  582.8] You kind of want to optimize that for you, make it a bit more efficient so you don't spend a lot of time going from A to B.
+[  589.8] We are trying to bring for example the clinic and the habitation right away into the shopping area and trying to make it much more compact.
+[  598.8] At the same time we really really want to offer some good gameplay content within the stations outside of missions that you can go into and discover on your own as you explore.
+[  609.8] We try to improve pyro stations with all the lessons we've got from Stanton.
+[  615.8] And now for outposts. Each location has to have its own identity. Like, does this outpost fulfill the need for a combat space?
+[  621.8] Does this outpost fulfill the need for like a social space? Does this outpost fulfill the need for like a puzzle space?
+[  626.8] All these factors come into play and come into consideration when creating a whole new location.
+[  631.8] We want you to be able to discover little points of interest around the outposts.
+[  635.8] If you come across an outpost there will be multiple sub-locations around it.
+[  641.8] These could be like villages around it, this could be derelict settlements that are abandoned and you have to go into and can find potentially loot in.
+[  650.8] And once you've landed your ship you are no more than a short walk away from the main reason you've arrived at this outpost, which is to trade.
+[  656.8] We want to encourage you to ground vehicles to be able to pick up your cargo that you bought from this place, load up your little drink mule and drive it over to your ship.
+[  664.8] Load that ship and then fly out with your goods.
+[  667.8] We wanted to create a location that felt real, so you had the logistic is there.
+[  672.8] The AI created roads between different points of interest within the outposts so that it feels logical for a player to walk in or to traverse.
+[  682.8] Pyro is always dangerous, so any social space can turn into a combat scenario.
+[  686.8] So you need to be able to duck into cover at a moment's notice even when you're doing nice easy trade and socials.
+[  692.8] So we have to provide you with opportunities for cover and exciting FPS combat scenarios.
+[  696.8] There's a lot of things to consider for an open world game that on this scale you have to account for multiple situations and have players also be able to deal with all kinds of circumstances.
+[  709.8] So it is a complex undertaking.
+[  711.8] It's a challenging one, but this is what we want to account for in Pyro as much as we can.
+[  717.8] Level design matters always important because we think of a very broad scale and try to craft and create a great experience for you as a player.
+[  729.4] Level design ends up being greater than the sum of all of its parts.
+[  732.4] I get to talk with all these different disciplines at CIG, but also get to kind of like hold the hand of the player and curate that all the way through.
+[  739.4] We focus on the player experience.
+[  741.4] We look at all the features that exist and we try to bring them up all together into a cohesive environment.
+[  747.4] That feels really fun for the players.
+[  749.4] Do you always succeed?
+[  751.4] No, but it's not always like within our hands, but we always try our best to within the framework we have to create like the best possible experience for you guys.
+[  762.4] So we've learned a lot from our time in Stanton and we love hearing what the feedback we get from you as players.
+[  767.4] We want to take the all on board and begin establishing ourselves forwards when we come into Pyro.
+[  772.4] What we really want to do also is balance out gameplay with the visuals.
+[  777.4] I mean in the past we've seen a lot of focus being spent on the visuals and less on the content.
+[  782.4] This needs to switch around and find an even plane and level design is just one way we're doing this in Pyro.
+[  791.4] We as level designers really want to make Pyro and stand in the future great experience for the players from a flow perspective.
+[  798.4] Boring you less, making things more efficient for you as you follow the gameplay loops that you want to follow and offer you gameplay content that you can just discover on your own.
+[  812.4] So what we learned this week?
+[  817.3] While we learned that level design is a discipline that brings many other aspects of game development together to form,
+[  823.3] what we always hope is a cohesive and enjoyable experience for the player.
+[  828.3] That the philosophies and precepts that guide their decisions continue to evolve as they learn important lessons from the development of Stanton and of course apply it to Pyro.
+[  838.3] And that Pyro itself continues to inspire an experience that should be markedly different from the one we have today in Stanton.
+[  845.3] For Inside Star Citizen, I'm Jared Huckabee.
+[  847.3] Thanks for letting us share the people and process of game development with you and we'll see you all here next week.

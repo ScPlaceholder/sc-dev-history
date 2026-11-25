@@ -1,0 +1,754 @@
+# Star Citizen Live: Q&A - Earning in the 'verse
+# https://www.youtube.com/watch?v=tJmpdPnu1Ss
+[    4.8] Hi everybody, welcome. I'm Jared and I'm the host of Star Citizen Live, a show that we used to do every week and have only done like four times this year because
+[   18.3] a bunch of the people who I work with changed the very nature of our project.
+[   24.1] For the better, it's been a good year. If you've never seen Star Citizen Live before and
+[   28.8] and
+[   30.9] so lucky if you haven't.
+[   32.5] That's where we take about an hour out of the end of our week and I invite CIG developers onto the show and we talk about various work things.
+[   41.4] Usually they come back, sometimes they don't, sometimes it's like, Jared, what the heck did you get me into? And I'm like, well
+[   49.2] it's not easy. But on today's show, it's gonna be one of those shows where we get some, we get deep and
+[   57.7] nope, that's not where I wanted to go with that. We're gonna go heavy into one of the most
+[   64.5] attractive and exciting topics of all. Economy, loot,
+[   71.1] mission rewards, inventory systems.
+[   75.2] No, it's gonna be a good one. So joining us on the show this week, we have members from several different CIG teams
+[   81.1] who all come together to work on these various
+[   83.8] systems. So we'll go around and introduce them. This is one of those Zoom calls.
+[   87.5] So everybody's at their desk and because we didn't have enough chairs. So we're going to start with who?
+[   92.4] Let's go to Zoom and see who's on the screen. Who do we start with? Jacob!
+[   97.0] Congratulations, you won Zoom lottery. Who are you and what do you do?
+[  100.8] Yeah, hi. I'm Jacob. I'm a senior gameplay programmer and I'm here this time because I have been
+[  109.0] programming a lot of these stuff for loot and harvestables, which is what all of these wonderful designers
+[  115.3] will be talking about
+[  117.5] for the rest of the show.
+[  120.4] Randomize here. Declan, who are you and what do you do for Star Citizen?
+[  126.4] Yeah, my name's Dex, system designer, I work on crafting, which is a little bit a lot and
+[  132.5] inventory reworks, very exciting.
+[  135.3] Immediately next to you, Luke, who are you and what do you do?
+[  139.3] Hi, I'm Luke and I am here to talk to you about loot.
+[  144.9] Loot? The musical instrument you mean?
+[  147.6] Yeah, I'm gonna play the loot. Okay. Wouldn't be the weirdest thing we've ever done on SEO.
+[  153.9] Andre, who are you and what do you do for Star Citizen?
+[  157.0] Hi, I'm Andre and I'm the economy designer. And what does an economy designer do?
+[  162.1] We take care of almost everything that has to do with the shops, value of our items, rewards.
+[  169.1] Yeah, so almost everything. And you're the reason everybody's unhappy?
+[  177.0] And across from you, Nick, who are you and what do you do?
+[  181.8] Hi, I'm Nick. I'm also an economy designer and also involved in everything, but not the reason that any of you are unhappy.
+[  190.4] So if we have Andre, why do we need you?
+[  193.5] We have four economy people. We have three economy designers and
+[  198.6] an incredible technical person who I'm not even sure what his job title is because he knows so much stuff.
+[  204.4] So Andre is a lead and
+[  208.4] oversees
+[  209.9] everything. I mostly focus on missions and rewards and item prices and
+[  216.4] events and working with the mission team and
+[  219.6] the world famous Elliot Maltby.
+[  222.0] And Connor is
+[  224.7] commodities and trade routes and new systems and all the free trading and all that kind of stuff.
+[  230.4] He's the pretty face of economy.
+[  233.0] Connor is, yeah. Connor is. No, you.
+[  236.0] Come on. Come on. And you mentioned Elliot Maltby. It's a shame that he couldn't be here on the show with us this week.
+[  240.8] Yeah, it is. It's a real shame, but the terrible accident meant that
+[  244.0] he was in trouble.
+[  246.3] Accident completely his own fault and brought upon himself.
+[  250.0] It too right.
+[  252.8] No, I've got people messing with my desk and I'm in a little bit of an SEL.
+[  257.8] Hi. I'm trying to introduce myself.
+[  262.8] I'm Elliot Maltby, the lead mission designer.
+[  267.2] And I spend all my time on Twitch chat.
+[  269.8] Yeah, spend all my time on Twitch chat.
+[  271.9] Or making you all shoot each other according to Reddit.
+[  276.7] I saw a post that said you were one of the masterminds of the entire persistent universe the other day.
+[  282.2] Because you listen to Imagine Dragons.
+[  284.8] Yeah, like I was just playing Schedule 1, chilling.
+[  290.7] All right. So on today's show, we're going to go through a couple different topics.
+[  294.6] This is going to be a bit of a different show than normal.
+[  297.4] We are going to have a section at the end for questions from our community.
+[  301.1] But today I want to go through basically the four
+[  304.9] key pillars of how items and stuff are acquired in the verse.
+[  311.2] And to start, we're going to start with economy or money. Things you can buy with money.
+[  317.6] So Andre and Nick, obviously as the economy designers, we're going to start with you here.
+[  323.8] How do you decide what goes into a shop and where?
+[  330.1] As I mentioned, shops are part of our job.
+[  335.6] So first of all, we want to make sure that everything in the game loop, every career in the game is accessible.
+[  342.5] So every activity I wanted to be accessible.
+[  346.7] So if you want to trade, for example, you're always going to find the
+[  351.4] FPS trading tool or you're going to find...
+[  356.2] Sorry, I'm a bit nervous, obviously.
+[  358.7] You're always going to find...
+[  361.5] If you want to trade, you're always going to find a tractor beam.
+[  365.2] You're going to find a ship that has a cargo grid.
+[  367.9] If you want to mine, you're going to find an attachment for that multi-tool.
+[  372.4] You're going to find a prospector.
+[  375.9] More than that, we try to keep everything tied to narrative.
+[  380.9] So you're going to find burritos in Stanton.
+[  383.3] And then we're going to find the...
+[  385.6] But that's on a stick in Pyro.
+[  388.6] And sometimes we just have fun with it.
+[  391.1] For example, Colonel suggested that every farm in Pyro should have shotguns.
+[  396.3] He's from Texas, by the way.
+[  399.4] Okay. And I think I sent a thread to Nick the other day about how...
+[  405.4] Because Hurston was so salvage focused and everything, maybe
+[  409.8] Hurston should have salvage items in their stores and whatnot.
+[  413.4] There's a lot of thought that goes into positioning where something goes,
+[  417.2] not just how much it costs, yeah?
+[  420.0] Exactly.
+[  420.9] Yeah. And I mean, that's actually the kind of thing that the narrative team...
+[  426.3] They would have a lot to talk about in this SEL as well.
+[  430.0] The narrative team has all of the history of the reverse to date,
+[  435.5] and also all the stuff coming.
+[  437.1] And so they have a pretty good idea of
+[  439.1] the context of each location.
+[  443.4] So when it comes to what goes and what shops wear,
+[  446.9] it's about bringing life to the stories that we already have by letting players,
+[  453.3] like Andre said, access to the game loops that are appropriate in each of those contexts,
+[  457.8] but without stopping people from playing things.
+[  460.9] So enabling game loops that fit the narrative.
+[  465.4] And Andre, you said making things accessible from the start,
+[  469.6] but at some point you go beyond the start.
+[  473.4] You're in mid-game, you get to end-game, stuff like this.
+[  476.0] Is everything supposed to be available in the store?
+[  480.1] Where do you draw the line for that's not something that should be available in the store,
+[  483.8] that's something that should go to one of the other ways that you attain things?
+[  488.3] It's very hard to say that there's a clear line.
+[  491.8] This is where a bit of the art comes in, and at some point you say,
+[  495.4] okay, this is an exclusive item, or this is something that you should only get into the end-game.
+[  501.5] Or maybe a lot of things, not even a maybe, that's going to be a certainty.
+[  506.2] A lot of things you're not going to be able to just buy from a shop,
+[  510.2] because I don't want to make you see the end all of the game.
+[  514.5] You see something that happens to you, helps you play the game,
+[  517.4] helps you fuel your ship or repair your ship.
+[  521.4] But it should not be the way that you get the most important items in the game.
+[  525.8] And it makes sense from an immersion standpoint that you wouldn't be able to go
+[  531.3] to a Hertz rent-a-car and pick up a Polaris or an Idris.
+[  537.0] You can't go to a rental shop and buy a battleship today.
+[  540.2] Now, again, there are always exceptions and stuff like that.
+[  543.4] Someone's going to say the 890 jumps available here and whatnot.
+[  546.3] But obviously with the game system, you make exceptions here and there
+[  550.7] in order to make things available to players in certain parts of your development.
+[  555.1] But on a whole, we don't want to put everything in one place because we want,
+[  560.5] we have to encourage players in traditional game design to go throughout the universe
+[  564.5] and try different things in order to attain their stuff.
+[  569.0] How do you price things? Is there some kind of matrix or are you just also using art?
+[  575.5] We are always using art, but there's a bit of technique that we apply of this.
+[  580.2] Actually, many techniques.
+[  582.2] Of course, we first use an algorithmic approach.
+[  585.3] Otherwise, it would be impossible to put a price or a value on all the thousands
+[  590.7] of items we have in the game.
+[  592.5] And again, those items in different shops at different price points.
+[  597.9] Once we have that value from the algorithm, then we start to apply our own intuition.
+[  606.5] We apply our expertise, we apply the experience we have by playing the game.
+[  612.4] And we do, let's call it a sanity check.
+[  615.9] If we think that the algorithm is giving us the right value or not.
+[  621.0] And then we adjust the price or we adjust the algorithm depending on the situation.
+[  626.2] Nick will use a lot of this algorithm, actually more than myself.
+[  630.7] Because with FPS, you have a lot of different items.
+[  634.2] You have guns and you have armors.
+[  635.7] And maybe he can tell us a bit about how he used the algorithm.
+[  640.5] So it's like you say the number of items and the number of shops and the number of locations.
+[  646.1] And then just even thinking about the future of the game, when that's obviously going to be even
+[  650.3] broader, you can't price everything individually.
+[  653.1] And it wouldn't be sensible to price everything individually.
+[  655.2] And in fact, everything is connected.
+[  657.1] All the prices of everything are connected.
+[  658.7] I don't think that's going to come to a surprise to anyone.
+[  661.7] But if you think of something like ammo, for example, you take a salt rifle ammo,
+[  665.1] well, that's going to be priced relative to the stopping power or possibly the
+[  670.2] desirability of the assault rifle itself, which has its own price.
+[  673.4] And then that's related to, say, the price of pistols or the price of railguns.
+[  677.5] And the price of railguns is an interesting one.
+[  679.8] The decision to make railguns that you see and missile, so you can't buy them in shops,
+[  685.1] is a deliberate decision to encourage not just NPC shop trading, but it's really,
+[  693.8] really important to us to have a vibrant player trading.
+[  696.5] And we don't currently have full systems to support that, but you guys are really
+[  701.0] resourceful and you're going to make it happen.
+[  702.9] And we want to encourage that.
+[  704.8] So yeah, railguns are not available in shops, but they're absolutely available around the
+[  708.2] verse and they have a value and everyone knows that value.
+[  710.8] And then you got armor.
+[  711.9] Sometimes me and Nicolle talk about, we'll look at the black market.
+[  716.6] Absolutely.
+[  717.5] The org that I'm in, we do gunrunning and we sell, and not that I've infiltrated,
+[  724.4] but we use those data points that we do in our org and how we do gunrunning to also influence,
+[  730.8] because obviously we put our worth on it based on the effort that we put up front for you to get
+[  735.5] it, but then you put your own worth on it for you guys to get profit.
+[  738.9] And we take that sort of stuff into account as well.
+[  741.4] It's super important.
+[  742.2] I mean, if you take something like the anti-amamaset, for example, like that has a value,
+[  745.5] it fits in with the algorithm, it makes sense, but the anti-amamaset has a completely separate
+[  749.8] value to the people in the game because of its rarity, because of its availability and content.
+[  754.7] And that's why it's all related to it.
+[  757.3] So certain items are only available through content, certain items are only available.
+[  762.8] There's a whole content waterfall of items coming from the dollar store all the way through
+[  767.9] into the game, and there's an appropriate level of when those things are introduced to various
+[  772.9] parts of the content in the game, and et cetera, et cetera.
+[  776.3] And it's all related.
+[  777.1] And then on the other side of that is mission rewards and sandbox gameplay.
+[  781.3] And this is where EVR comes in so that we can balance the risk and the reward of those kinds
+[  784.8] of things.
+[  785.0] And essentially, both of those come together in the middle.
+[  787.8] And like I say, in the future, we want you to have a better view into how all of these things
+[  795.0] are related to each other.
+[  795.8] That's future work with UI and back-end data.
+[  798.5] So you can make meaningful choices about how you want to spend your money on the particular
+[  802.7] resources or crafting or whatever it is in the future, even though it's quite simplistic right
+[  806.2] now.
+[  806.4] That's not where we want it to end.
+[  808.4] And we need the player economy.
+[  811.1] Do you ever intentionally price something high or weird to make it rare in the first?
+[  817.9] Yeah, we did the ZenoFret helmet, the Commander ZenoFret helmet.
+[  822.8] We rocketed that up.
+[  824.4] And I'm pretty sure we put like 69, 420 in as well because we thought it'd be funny.
+[  829.6] Absolutely.
+[  830.1] Yeah, for sure.
+[  831.0] There are perks of working at CIG.
+[  833.7] If you come to me and tell me I want that to go a bit up or down, you know what?
+[  838.4] I'm going to be your friend.
+[  842.3] Folks paying attention right now know that there's an exploit.
+[  846.8] I think it's a legend to duplicate things like GenoLite and sell it for a whole bunch of stuff.
+[  851.1] Folks are working on that.
+[  852.1] We're not going to talk about the fix for that and the adjustments for that right now.
+[  856.8] That's not being done by any of us.
+[  859.0] But I did want to ask, I mean, the timing on this, we've had the show scheduled for about
+[  863.6] a month and a half and then this happens.
+[  866.8] How frustrating?
+[  868.3] How frustrating is it to you personally to win things like this happen?
+[  872.9] Well, you can only imagine how frustrated it is to have your work affected by a bug that nobody
+[  878.8] could foresee.
+[  881.0] And you're right, we are very grateful to our many colleagues that are working to fix those bugs.
+[  888.6] And last question before we move into Lute and stuff.
+[  893.9] Sorry, I took this one from Reddit here.
+[  896.5] Does Star Citizen even have an economy?
+[  901.7] Wow, that's a multi-layered question.
+[  906.3] It's such a short and simple question.
+[  908.7] But yeah, there are many, many others.
+[  910.9] It's not the comprehensive economy we'd like to have in the future.
+[  916.0] But I think we are step by step getting there.
+[  919.5] I can give you the big picture how we laid the foundation.
+[  922.8] So for example, we started in 2024 by doing a full balance of as many systems and items as
+[  932.2] you could.
+[  932.7] So probably you saw different prices for ships, for FPS items, for armors, for components,
+[  939.3] for fuel, for the rewards for the missions, change commodities, trade routes, and many,
+[  944.4] many more that I cannot even remember from the top of my head.
+[  948.8] This year we are focusing on big data, we are focusing on tools, we are focusing on the back end
+[  955.5] work that needs to be done and those things that needs to be built before we get to that.
+[  963.1] Here insert your objective dynamic, live, responsive, all those things that we want to
+[  969.3] put into the economy, the economy that we all dream to have and the economy that I joined
+[  974.1] the company to build.
+[  976.1] But we need to do that background work first and you're not going to see those results in the
+[  981.4] game for some time.
+[  983.4] Only after that we can focus on UI and the system that is going to expose all that work
+[  992.1] to the player.
+[  993.9] Until then we are doing stuff like you could see still this year, trade routes being adjusted,
+[ 1004.2] you're going to see commodities changing price according to narrative and according to the
+[ 1008.5] events that we put in the game.
+[ 1012.2] We're going to offer more ways for you to extract value from all the content that we
+[ 1016.7] introduced in the game.
+[ 1017.6] So yes, you're going to always see changes, we have an economy.
+[ 1021.4] But step by step we are going to go to that economy that we all dream to have in the future.
+[ 1026.7] I hope that answers the question.
+[ 1028.4] Yeah, no, I appreciate not just that you answered the question but that you allowed me to ask
+[ 1033.0] such a pointed question.
+[ 1035.6] And yes, I think you agreed yourself very well.
+[ 1037.1] Thank you so much for your answer.
+[ 1039.5] Let's move into things you find out in the universe.
+[ 1043.6] Luke, talk on loot here.
+[ 1047.3] What are the rules?
+[ 1048.5] How do we decide what goes into loot and where?
+[ 1054.7] Well, I think anyone who plays games enough kind of knows what to expect from loot and we're not
+[ 1060.6] going to reinvent the wheel there.
+[ 1063.5] But for a long time loot was owned by individual content designers.
+[ 1070.1] So it got a little bit inconsistent.
+[ 1072.3] And in the initiative at the start of this year, I've taken it over as a system designer to try
+[ 1079.0] and get things back to consistent again.
+[ 1081.4] And hopefully you'll notice that.
+[ 1083.4] And it was a lot, what is it, mine to align and the most recent Stormbreaker locations.
+[ 1089.9] Align to mine.
+[ 1090.6] How could you forget?
+[ 1092.9] Well, we called it all begetten, right?
+[ 1096.3] Like you turn it.
+[ 1097.1] It's an internal name.
+[ 1097.5] You're not supposed to share internal names for this stuff.
+[ 1099.7] We have some really terrible names.
+[ 1101.9] Terrible internal names for things.
+[ 1103.1] Yep.
+[ 1103.9] Hectpenetrayer.
+[ 1107.7] Less said about the better.
+[ 1110.8] So basically we just take a few things like into account category of the item,
+[ 1118.2] rarity and size, because we all have to fit in a box.
+[ 1122.4] So we have four main categories, which are weapons and ammo, armor, medical, and then miscellaneous.
+[ 1128.7] And that those ones are distinguished visually by different boxes.
+[ 1135.5] Miscellaneous can then be broken down into more specifics like food, mining, repair.
+[ 1144.6] So if the level designers have like a cafeteria or a garage, they can place
+[ 1150.4] things that make more sense in there.
+[ 1153.3] And then we have five rarities, common on common.
+[ 1158.7] Rare, epic and legendary.
+[ 1161.4] You'll find the first four of those in loot boxes.
+[ 1165.8] We have three different rarities of loot boxes, common on common, rare, epic.
+[ 1171.5] We don't have a box of that, but it appears in all those boxes in a very small amount
+[ 1177.3] with you, you know, more likelihood of getting rare if you are looking at a rare box.
+[ 1184.0] We don't have those distinguished visually yet, but that is the plan.
+[ 1187.4] We will be getting new models for those.
+[ 1189.0] So you'll be able to just glance at a box and see that, oh, that's a rare box.
+[ 1194.3] It'll be a lot shinier than the common one, I assume.
+[ 1198.6] And then we also have size, size of the item.
+[ 1204.7] We have three different sizes of boxes.
+[ 1206.6] And it obviously makes sense that you can't find a rail gun in a small weapons box.
+[ 1213.5] And it tends to be that as things get more powerful, they get larger.
+[ 1218.4] So, you know, you won't get the full suit armors inside the largest armor box.
+[ 1227.5] So it's kind of turned out that as far as gameplay goes, a large box, a size of a box,
+[ 1234.5] is actually, I think, more important than the rarity of a box because
+[ 1237.9] what is rare, like it's kind of like a tint on an item or something like that.
+[ 1246.4] And then we have like legendary items.
+[ 1248.8] And those don't appear in loot boxes.
+[ 1250.3] Those are saved for the location.
+[ 1254.2] So in Paul Begeddon, in Aligned to Mine or whatever it's called, we had the camo rifle,
+[ 1264.0] a bolt rifle.
+[ 1265.5] Don't shake your head.
+[ 1267.8] And we had the camo hunter outfit, hunter armor.
+[ 1272.5] And then in Summer Begeddon, we had Stormbreaker.
+[ 1278.3] We had the bright yellow radiation suits.
+[ 1282.6] And like those will never be found anywhere else.
+[ 1287.3] They'll be found in those locations.
+[ 1288.9] Whereas all the other stuff that's kind of like it's kind of unique to those locations,
+[ 1293.4] it's only unique right now.
+[ 1295.8] As they get older, they'll kind of spill out into other locations as well.
+[ 1302.1] And how we decide where they go, though those individual boxes or the loot,
+[ 1307.3] we draw a map of the location and then we decide how difficult it is to get into all
+[ 1314.4] those rooms and then assign them a loot value.
+[ 1317.0] And that determines whether they can have like uncommon or common loot inside them.
+[ 1324.6] And then...
+[ 1325.4] Maybe good to mention, we are also making it like an active effort to go back through some of
+[ 1329.1] our old locations and update them sort of to snuff.
+[ 1332.9] Obviously there's no date on when that is or when that's going to finish,
+[ 1335.9] but it's something we are trying to do to make sure we be consistent.
+[ 1341.3] Yeah, yeah.
+[ 1342.2] Yeah.
+[ 1343.3] Like and that will be done using the new kind of extension to the system that Jacob's currently
+[ 1349.3] working on, which makes it easier for us just generally to set up loot, to place loot,
+[ 1356.9] but also to define locations.
+[ 1359.7] So you'll start seeing like differences between Stanton and Pyro through loot.
+[ 1366.1] Yeah, so a lot of what Luke has said is things that we're already doing, we're trying to make
+[ 1375.5] each location have its own themed loot in some way, but it currently takes quite a lot of manual
+[ 1381.6] intervention to make that happen. A lot of inefficiencies in the workflow.
+[ 1386.8] So I've been working on some extensions to the system to improve our tools around that
+[ 1392.5] and make it easier for designers to set up things in such a way that it can scale to
+[ 1398.6] all of our different locations or different systems and grow for the future as well.
+[ 1404.4] Yeah, when I first started on this, I remember you saying this system was made to place rocks and trees.
+[ 1412.2] Yeah, one part of the system was made to place rocks and trees.
+[ 1416.9] Yeah.
+[ 1417.7] And now it's grown and it's even placing Atlas Geo suits, I think.
+[ 1422.1] You didn't say I couldn't, Jacob.
+[ 1423.9] If you don't tell me I can't do something, I'm going to do it, all right.
+[ 1428.1] God, that might be the truest way to ever spoken in SCL.
+[ 1432.8] I'm a designer. My goal is to get stuff done by any means necessarily, and if it means I'm
+[ 1439.6] using some kind of half-sort place down on Atlas, I'm going to goddamn do it.
+[ 1443.2] Yeah, yeah. No, I understand that. I respect that.
+[ 1448.4] I still got a...
+[ 1448.7] I still need a bit of time.
+[ 1452.5] So, what I do is I will try to adapt to the changing needs that designers have as we're making
+[ 1463.9] new content and what might not have been supported at one particular time will be supported later.
+[ 1471.1] So, yeah, we keep growing our technology as the needs of our content and gameplay grow as well.
+[ 1477.3] That's actually where I want to take this. I want to ask you now.
+[ 1479.5] So, obviously, we're now using the...
+[ 1482.4] We've now taken the harvestable system and adapted it to better place loot and stuff.
+[ 1491.0] There are technical limitations that we just got done talking about.
+[ 1493.8] Luke, at the beginning of this, you mentioned that there was an organizational limitation
+[ 1498.5] before this year where all the individual content designers were responsible for doing this,
+[ 1502.2] and there wasn't any kind of global overarching theme or process to this.
+[ 1508.2] With the growing technical aspects of the harvestable system or whatever,
+[ 1513.0] we're going to end up renaming it now that we're going to start using it for other things.
+[ 1516.5] And with this new organizational change, Luke, for trying to build a new kind of philosophy
+[ 1524.2] over everything with the efforts Elliot made, I mentioned, to go back and revisit old places.
+[ 1531.0] Folks in a chat are mentioning certain pyro locations that were built with the old mentality
+[ 1536.2] instead of going back and revisiting those. What does the future of this look like?
+[ 1542.7] We're not giving any dates or anything. Where do we go from here?
+[ 1545.3] Did we just keep doing what we're doing, or are there more things we want to push for?
+[ 1549.3] I can say some very far future stuff, but we hope to have consistently themed loot throughout the
+[ 1560.2] whole location. And that would encompass the stuff that the people you find they're wearing,
+[ 1566.5] what they'll be having in their backpacks, or any other clothing items they have,
+[ 1571.1] the stuff that you'll find around the location, and it'll end up being themed towards what that
+[ 1577.5] location is for or related to. So if you find a mining outpost, there'll be more mining related
+[ 1583.0] stuff. It's all about just being able to fine-tune the experience, to be what you would expect to
+[ 1591.5] find there in the verse, and we have various initiatives on the go that are building us
+[ 1597.0] piece by piece towards that. And because everybody gets a question that it's going to be a little
+[ 1603.9] harder to answer, you know, Andre's still sorry for the economy one, I'm not really, he did great.
+[ 1608.8] It's all right. One of the things that separates us from other MMOs is that one of the many things
+[ 1616.3] anyway, is we physicalize everything. All this loot has to be physicalized. You can't just,
+[ 1622.5] we don't have a system where you can just throw something into somebody's bag and it's there,
+[ 1628.0] and they wear it, and it's there, it's all got to take up space, it's all got to be physically
+[ 1633.3] manipulatable and stuff. Does this, I'm pretty sure I know the answer, but I'm going to ask,
+[ 1637.7] does this make your job easier or harder? Fuckton, Adam. Very nice. That's your second bomb, this,
+[ 1647.0] this cool. You gotta be careful there. I'm so sorry.
+[ 1653.3] But yes, it makes it a lot harder for sure. There's like different layers to the physicalization
+[ 1660.3] as well. So, you know, just saying it takes up space, that means even within an inventory,
+[ 1664.9] we are measuring the dimensions of the item and the volume that it will take up,
+[ 1671.9] so that you can't fit a super long thing in a really small box, even if its volume would
+[ 1678.0] technically fit. So that gives more work for me to do in terms of the maths
+[ 1686.6] internally, but then there's more level design and system design kind of perspectives on this as
+[ 1693.6] well, which Luke might be able to say more about of how we choose between when we're going to present
+[ 1699.8] the item to you physically in the world, or when we're going to present you with a loot box that
+[ 1704.4] you have to look inside. Yeah, you asked, does it make it harder? I think it makes it harder for
+[ 1710.6] everyone, even the players, but especially the devs, because we have been physicalizing
+[ 1717.3] certain items. It's always the items that are particularly rare or useful, like if we want
+[ 1724.3] to draw your attention to this, we'll put it in the world. We do that in like an eye catching way
+[ 1730.2] within the level. So a line of mind, we place the vault weapons in gun racks. Recently those got
+[ 1736.5] lit consistently to really show off what's inside there. And there was, again, the radiation suit
+[ 1745.8] is now available on a mannequin. And we'll be using that quite often, I think from now on,
+[ 1751.9] and going back through and placing it. But the reasons, the other reasons, other than technical
+[ 1758.5] reasons, we don't want physicalize loot every era is because loot boxes solve all the downsides of
+[ 1766.3] that. So you can group items together and ease they're in an easily recognizable package, you
+[ 1774.2] know, whereas, you know, a big red box, whatever, physicalize items, you can easily mistake those
+[ 1780.7] for static props on tables and maybe mess them. It massively speeds up the jobs of level designers
+[ 1789.4] and artists to kind of place these things around. Imagine placing individual pieces all over tables,
+[ 1795.7] making sure you've got room for them. And then it makes my job easier, because if anything changes
+[ 1802.1] in loot, we don't have to go back through every level and delete individual bits and pieces.
+[ 1807.0] I just change what's going to spawn in the box with this there. And then finally, like, it just
+[ 1813.3] hides respawning, you know, the respawning of bits and pieces, nothing pops in on tables, it just,
+[ 1819.8] we refresh in Cypher Pox. It's a difficult thing to balance because you're going to have, like,
+[ 1825.1] as Luke says, it does make our life harder. And it can make sometimes as Luke said, the players life
+[ 1830.0] harder, but it can also make the experience better. Like when we're designing things like
+[ 1833.6] Stormbreaker and Alina Mine, you know, you think back to playing games when I was a kid,
+[ 1839.6] a loot room should feel like a loot room, right? Instead of me just seeing a bunch of red boxes
+[ 1844.1] and knowing it's a chance of real loot, I want to see, like, the gold stacked up on a table. I want
+[ 1849.9] to walk in and I want to see a vault shotgun or a vault sniper rifle in a case in front of me,
+[ 1854.7] because it gives two things. It gives affordance to players, because when they look through the
+[ 1858.5] window, they see the reward that they want and they know the door's locked. And aside from you
+[ 1863.8] all clipping through environments, the normal flow would be then you have to go and figure out how
+[ 1868.0] to get through that door without breaking physics, usually. So it's kind of a sort of a toss up between
+[ 1875.3] the two. So what we try to do is we try to choose what we think could be something that we'd want
+[ 1881.8] the player to latch on to visually and think, I want to achieve that, I want to get that. And
+[ 1885.3] that's why, you know, in some places we have the vault weaponry visible so people can sort of see
+[ 1891.1] it and get into it. And we have a few armor mannequins that are the same. I can see it, I want it,
+[ 1895.4] how do I get to it? And physicalizing, physicalizing affords us the opportunity to make a more immersive
+[ 1901.5] universe. It's going to, it's going to become a big part of when player housing and stuff comes
+[ 1906.9] online and being able to decorate your homes and your habs and your hangers and stuff with the things
+[ 1911.9] that you've collected and stuff like this. It's, it's, it is, it makes the job harder, but the rewards
+[ 1919.4] down the line are still everything that we're shooting for and stuff. So it's like anything else,
+[ 1925.1] like a lot of things also start as citizen. We didn't take the easy path, we take the harder path,
+[ 1929.4] but when it works and we, and when we can do it right, it is much more rewarding.
+[ 1934.5] Um, let's move to rewards for specific efforts and basically mission rewards and stuff.
+[ 1942.2] Elliot, the first question actually comes from somebody who just got banned in chat.
+[ 1947.9] Moolix the real asked, Elliot, it seems incredibly immature. Is he right to be a lead designer for
+[ 1954.9] important missions? He doesn't even have situational awareness right now. I'm sorry, I guess that wasn't
+[ 1960.5] a question. No, I can answer it anyway. That was from Pat, not just from you.
+[ 1965.9] Genuinely, it could have been from anyone in this office. My, my, my personal philosophy is
+[ 1971.7] games are meant to be fun. You got to have fun to make fun. So I might seem a little childish,
+[ 1975.9] but that's because I'm having fun at what I do and it just enables me to do a better job.
+[ 1981.0] God help us if making video games for people's enjoyment should not also be enjoyable to do.
+[ 1988.3] God help us. Um, to the real questions here, this year has seen a major explosion in mission
+[ 1995.1] rewards. Was this a technical limitation that we overcame, a philosophy change in development,
+[ 2000.6] or was something else at play? Um, there was a few things that kind of came into this.
+[ 2009.6] We, we firstly, we needed freight elevators. That was the big thing because it's either we do a
+[ 2013.2] bunch of temporary throw away work to get your rewards or we wait and we do it properly the
+[ 2017.4] first time. And the big thing for this was we needed the freight elevator system. And then we
+[ 2021.1] got the freight elevator system. And the next big thing was server measuring. Uh, so it was all
+[ 2026.0] about the mission refactor. Um, but once we got the mission refactor done, it finally enabled us
+[ 2030.1] to take the time to actually make these mission rewards. So it was kind of, it was kind of like
+[ 2035.6] it was a technical limitation. We was waiting. We always wanted to do mission rewards, you know,
+[ 2040.1] way back when, uh, the mission fish feature team was still around. It was always when we talked
+[ 2044.3] about is we want to try and get away from just giving people UEC because UEC can just help you
+[ 2049.1] buy things, but you know, you want to kind of see some other stuff. You want to, you want to have a
+[ 2053.8] gun. So it was sort of like a pushing forward and an initiative to get that. But also because we knew
+[ 2060.0] we was going to do a year of content, what we wanted to try and do as well was have a way of, uh,
+[ 2065.8] incentivizing that content, not just in the aspect of, Hey, it's cool. I want to play it,
+[ 2070.8] but Hey, it's cool. And while I'm playing it, I can gather things for Wickalo that later benefit
+[ 2076.9] me or I'm doing it. I found it. I picked it up and then later on I found that Wickalo wants it.
+[ 2082.8] Um, so that that's where mission rewards come from. It's not going to stay with just Wickalo.
+[ 2087.2] We're going to keep pushing it out. We already have with both Foxwell and headhunters. Sorry,
+[ 2093.4] there's a lot of missions. They give out script obviously, and they give it directly to your
+[ 2098.4] home location. You know, that's something we'll see for all the missions going forward.
+[ 2104.1] Are there ever any considerations for how weighty or meaningful the reward should be?
+[ 2109.0] Like should a mission reward inherently have more value than something you find in a box or buying
+[ 2115.2] a store? Uh, yeah, we, we, it's a balancing act, right? Like most things we, we always want to
+[ 2124.0] try for a mix of here's a mission thing. It's really cool and you can only get it via missions,
+[ 2129.6] because obviously then it incentivizes the mission and then we'll have some items that you
+[ 2132.6] can get via a mission or you could find as potentially a rare drop inside of loot boxes.
+[ 2137.5] Or it's something that you can't get via mission. You can only get via loot. Uh, we, we try to achieve
+[ 2142.4] a nice mix of it, of it all, but we always want to make sure that some items are visually distinct
+[ 2146.9] via the methods of getting them. Uh, this is so say I'm walking around in my, uh,
+[ 2151.8] Stormbreaker uniform that I've got from Wickalo, right? And, um, Nick, um, Wardle, obviously he
+[ 2158.8] doesn't read very well and hasn't read the contract, comes up to me and goes, Hey, I, you know, I've
+[ 2162.8] put my glasses on and I really like the, uh, the armor that you're wearing. Where do I get that from?
+[ 2168.8] And then I can slowly, you know, walk, walk, walk Nick through and be like, Hey, you need to go do
+[ 2172.8] the Stormbreaker event. I know your reactions have degraded and have slowed down, but I'll come
+[ 2176.8] and help you a bit and we'll go through it together and I'll help you get the items you need.
+[ 2180.9] Honestly, and it's something to do with, uh, experience and, you know, the wisdom of years
+[ 2186.2] as opposed to youth and impetuousness. That's your third one. So,
+[ 2194.1] Ellie, it's absolutely right. And I think it's important to discuss what we mean by value
+[ 2199.7] because something can have value to someone and it's nothing to do with UEC.
+[ 2203.4] So the mission rewards have value to people, not because they're worth UEC.
+[ 2209.9] Sorry. I was just, I was just thinking about how much better looking you are than Elliot.
+[ 2214.1] So I listen, I know it. That's the main reason I'm salty.
+[ 2217.7] The other thing which is crazy is like I'm like six foot two, which means I'm like three foot
+[ 2223.6] taller than Elliot. Go, go ahead. Go stand next to him. Right now. Go stand next to him right now.
+[ 2230.1] I swear to God, I'll break your niche.
+[ 2233.6] See it. I'm kneeling. I was kneeling. I was here as a joke.
+[ 2241.8] You weren't kneeling that much.
+[ 2244.8] The goblin confirmed live. Let's go.
+[ 2247.7] Listen, goblin gathering isn't named after me.
+[ 2252.6] I thought it was named after the, the, the gathering card, but I didn't find out what it was named
+[ 2256.0] after. It's a good story. Um, Wickalo has been a major new avenue for mission and event rewards this
+[ 2261.6] year. Where'd that come from and how'd that come about?
+[ 2265.6] Um, so previously, as I mentioned, you know, we, we knew we wanted to do a content year.
+[ 2270.5] We wanted to make some really cool things for players, but we also wanted to make sure that we gave them
+[ 2274.1] more, more reasons than this is just new content to go and engage with it. Um, we wanted to give
+[ 2280.0] specific rewards that are tied to content, um, or tied to multiple pieces of content.
+[ 2286.9] That means that players, if they want these rewards, they kind of have to engage with a bunch of
+[ 2290.4] different, different ways of gameplay. It's also nice because it might show players into gameplay
+[ 2295.8] that they're not really, you used to play them. You know, I watched a really cool podcast with
+[ 2301.2] people when we first released Siege of Orison and they were saying how they was only ever, um,
+[ 2306.4] ship combat players. They'd never done FPS in Star Citizen. And then when, um, when, when we did
+[ 2312.5] Siege of Orison, they was like, well, let's check it out. And now they do a mix because they, they'd
+[ 2316.9] engaged with content for a purpose that was different to just, this is what I normally enjoy.
+[ 2322.8] And it encouraged them to, to check content out and play it more and more. So we kind of use it
+[ 2328.4] like that because obviously not everyone's going to want to play the gobbling gathering, you know,
+[ 2331.9] hauling missions because they're not really interested in hauling, but they might have a
+[ 2335.0] reward that they want to achieve and buy that. They might go, I might try this out because I could
+[ 2339.5] just do thousands of these to hit this, but this one is more dangerous. So it's going to give me
+[ 2343.8] more points towards my overall goal. So I'm going to sort of engage with it like that. Uh, as for
+[ 2349.4] where Wickalo came from, uh, we're a space game. We should have aliens and ones that actually are
+[ 2354.6] sentient and talk to you, even if it is broken English. Um, so, you know, when we was thinking
+[ 2360.3] about it, we, you know, we was like, we want some sort of like figure that's collecting oddities and
+[ 2365.4] it is very mysterious. And the original plan was that you wasn't going to find out that it was a
+[ 2369.5] banu. We was going to have a broken sort of camera and it was going to take your time until you
+[ 2374.2] discovered who they was. But then we was like, we're hiding one of the coolest things. So we
+[ 2378.3] was like, let's get him in there. Let's, let's, let's put some comms in there eventually and have
+[ 2382.4] him speaking to you and maybe even talking pure in banu. Um, so the people who understand banu
+[ 2388.2] can understand it and the people who don't have some subtitles to read because yeah, it's another
+[ 2393.7] language. I don't understand it. I barely understand my language. I'm going to have a migraine
+[ 2399.6] right at the end of this with everybody using the internal names for things. Wait, what did I say?
+[ 2405.3] You said goblin gathering like four times. Oh, right. Well, that's because it's all right.
+[ 2411.1] In my new role, I'm, I don't really care. That's just to be real. Um, should we,
+[ 2416.4] should we give the storm breaker name? We've already, we've already done it. We've even like the last
+[ 2421.4] four names you just haven't been paying attention. I don't think I said apex again. No, no, there's
+[ 2426.2] somebody else, somebody else said or we get in whatever it's just you. What was it going to ask?
+[ 2431.9] I thought, what? What did you think? You said you weren't going to do another live one,
+[ 2435.5] Jared, with Elliot, because of all the, I thought we, no, that was late. That was, that was, that was
+[ 2440.1] late. Just, just never mind. Love you, late, but never again. Okay. Um, so what are the limitations
+[ 2451.7] of this system? So we know it's not precisely how we'd wanted it. And there are some peculiarities
+[ 2456.4] with elevators and, and, uh, the, the wiggler favors and the RNG, which is getting addressed in, uh,
+[ 2462.2] 421. Uh, walk me through what's happening now and, uh, how we're making Wiccalo better in the future.
+[ 2468.9] Uh, I'll break that down into three little bits because you mentioned a bunch. Uh, freight elevators,
+[ 2475.7] obviously have their issues. You know, we're not blind to it. We know about it. It is an incredibly
+[ 2479.3] complex system, um, because it touches so much kinds of things as, you know, it's got the whole
+[ 2484.4] thing that Jacob was on about before with the volumes and the fitting, you know, you can have
+[ 2488.4] so much stuff on that and they're all different dimensions. Like it's a lot of stuff to figure
+[ 2492.6] out. So they are actively working on it. Every single patch to try and make it as, as good of an
+[ 2496.4] experience as can be. Um, but we're working on stuff as well for, uh, the Wiccalo experience,
+[ 2502.3] uh, to make it better. So one of the big things that I know is going to help out of a lot is, um,
+[ 2508.0] what we call like nested item turn ins. So essentially if you had a one SC box and you put
+[ 2513.6] everything in that one SC box, so like I put in my 50, 50 favors and I put in like 20,
+[ 2520.2] medals and I put on 10 copy on tooth and three pearls. I should then just be able to put that
+[ 2525.3] box on the freight elevator and send it down and it accepts it and it kind of completes it. Uh,
+[ 2530.9] like that. Now we don't currently have that. There's a bug like it should work, but there's a bug
+[ 2534.9] that's stopping it from being worked and it's something like actively looking to fix and that'll
+[ 2539.7] improve the experience because instead of like, like I say, we're not blind to it. I have to stand
+[ 2545.0] on that freight elevator as well and manually drop each item for a stack of 50. The problem is that
+[ 2550.9] we want to fix the bug and we don't just want to make the recipes easier to account for that problem
+[ 2555.1] because then it completely devalues the reward at the end. Um, so working on that part of the
+[ 2561.0] experience and another thing is what we call multi location drop off. Um, this is essentially
+[ 2568.6] instead of having to go to a certain wiccolo emporium to do the mission when it's generated,
+[ 2573.4] we're going to be having it so that you can accept it and turn it in at any wiccolo location. So say
+[ 2578.2] I need to get like 10 pearls, 10, 10, uh, irradiated apex pearls and I need to get, you know,
+[ 2585.7] four quasi grazer eggs and I need to turn them in and, you know, station thing is closer to the
+[ 2592.2] pyro jump point. So I want to turn the pearls in there and then the quasi spawn over here and
+[ 2596.9] that's close to this station. So I want to turn it there. We're going to enable it eventually so
+[ 2601.1] you can do that. And what will happen is if you've deposited the pearls here and then you finish the
+[ 2605.3] eggs off in this other location, it doesn't matter where you put it, wherever you complete the recipes
+[ 2610.1] where you'll be given the award, but you can drop them off at any location. This way you can choose
+[ 2614.8] exactly where you want to go and, and finish the mission. Um, and when we get that second,
+[ 2620.0] won't just obviously come to wic, it will come to a bunch of our missions where we notice this is
+[ 2624.2] kind of like a, a pain point of, of, right, well, I have to go all the way over here now and I don't
+[ 2630.2] want to. Um, but that, that should help. That'll be the freight stuff favors. Uh, favors are something
+[ 2637.3] we want to keep because they're, um, in law, they're a representation of the banu because they
+[ 2643.8] don't have, they don't write stuff down. They don't really have that history thing. If you do work
+[ 2648.0] for me, there's, and I'm a banu. I've got, I won't remember that. So a favor is, is like a token
+[ 2653.9] that says, yeah, if I give you this, it means that I've done substantial amount of work for you.
+[ 2659.6] And then I, me as a banu, I'll go, okay, right. Well, like I remember it, but because you have my
+[ 2664.5] favor cube, I will honor the deal, honor the agreement. Um, but favors also act as a purpose,
+[ 2671.5] which is stopping your items being deleted. Um, we have, uh, some technical limitations,
+[ 2677.3] obviously in the game where certain amount of items in one zone, uh, can cause
+[ 2684.1] lag, frame drop, uh, physics to freak out, all of these kinds of things. Um, and what we have is
+[ 2690.6] this density cleanup system that eventually when it violates a rule set, it starts, starts cleaning
+[ 2696.9] them up. Um, but because obviously we need the worth of the items, but we have the limitation
+[ 2701.6] of too many items in one space causes problems. Uh, favors are also used as a conversion method.
+[ 2707.3] So when we ask for you to trade in 50 caronite for one favor, it, like say, it's conversion
+[ 2713.2] instead of asking you to put 500 caronite down and 450 of them be deleted and you're like,
+[ 2720.1] oh, my hard work. No, uh, if you don't get a crash or whatever else, that's, that's why the favors
+[ 2726.2] exist. And they're going to continue existing because they're a really interesting piece of the
+[ 2729.2] law. Uh, but the idea is that we'd be able to have more items in bulk when we can do that sort of
+[ 2736.2] box thing. So favors will stay, but they'll kind of morph a little bit for how we use them.
+[ 2740.8] And then RNG, RNG, uh, this is something obviously we've, we've, we've looked at for
+[ 2748.6] 4.2.1 and we've put in some fixes that play people have been playing. Um, we, you know,
+[ 2755.5] RNG and grinding is very typical for MMO. Um, and it's something obviously we want as well,
+[ 2760.6] you know, we want you to put effort because effort means the valuation of the things you get as a
+[ 2765.1] reward goes up. Uh, you put your time into it. But the, the point where, um, we've changed it was
+[ 2772.8] that the RNG was done a lot more on the reward side. So instead of going, I want this item and
+[ 2780.7] this is all the stuff I need to get for it. We would go, here's a list of a bunch of items you
+[ 2785.5] could possibly get if you give this stuff, which, you know, randomizing the reward isn't as fun
+[ 2792.2] because then you've got all this work done. You go for the excitement of getting the reward. And
+[ 2796.2] then it's like, Hey, you got this. And you're like, yeah, that's not what I wanted. Um, so we've, we've,
+[ 2801.8] we've kind of changed where that, where that is. Um, so what we want to do is, is have you choose
+[ 2807.1] the reward you want. Um, and then on the getting of the items is where we have the, the, the RNG.
+[ 2815.8] And it's something that, uh, me, uh, Torsten Lehman on systems design and the economy team,
+[ 2820.7] Andre and Nick have been working on, which is defining what that is. And we've, we've basically
+[ 2825.1] split into like three distinct categories. You have your core content items. These are items
+[ 2830.5] that you are guaranteed to kind of get while playing a, um, a piece of content. So an example
+[ 2836.9] of core content items will be Karenite, right? You get Karenite from doing the Align and Mindflow
+[ 2843.3] codename, or again, um, then you have your content items. These are items that you, that are not
+[ 2849.8] caught to the experience, but you will like, you can find, you can get. So any example of these
+[ 2854.2] would be the ACE interceptor helmets. And then the ones that help us with the, the sort of the,
+[ 2859.9] the RNG, uh, in a big way, uh, the rare content items, these are things that you will find
+[ 2866.7] less, uh, less likely to find. They still, they still can be there, but they, they increase the
+[ 2871.8] time and help to add that sort of grind aspect to an MMO. So these are new, these are some new
+[ 2877.4] things or things that already exist that which kind of like injecting. So for example, in 4.2.1
+[ 2883.7] when you play and you do, um, I was going to say, oh, we're getting a line of mine. Uh, you will find
+[ 2890.1] pure Karenite now in the, uh, cave. It's a new, new type of resource. Um, but you're going to find a
+[ 2896.4] hell of a lot less of them and you're going to notice that some of the recipes now require that.
+[ 2900.6] You know, if you're doing the Stormbreaker, there's the, uh, grade AAA, uh, Radiate Pearl,
+[ 2907.1] that's going to be a rare content item. We've got a bunch of war badges, uh, for ship battles that
+[ 2913.3] you can find on the ace pilots, but they have a chance to spawn. You can find them in Luke's, Luke's
+[ 2919.6] Luke boxes, uh, but they have a rare chance to spawn. Uh, and this is kind of like how we're,
+[ 2924.9] we're looking to, to keep a little bit of the RNG and keep a little bit of the grind, but you decide
+[ 2930.9] up front, what is your reward you want? Um, so you don't have to end up with like 50 like Terrapins
+[ 2938.4] from Wickalo or just because you wanted a completely different ship. Uh, yeah. Listen,
+[ 2948.8] it was a long question. What do you want me to do? No, no, it was great, great answer, Elliott.
+[ 2955.2] Are you playing with dolls? What are you doing? I want to read two comments from the chat. Uh,
+[ 2960.6] first was from St. Deacon. Uh, this was, this was caught by the auto mod. So I want to make
+[ 2965.8] sure this gets out there. Uh, nine unicorn horns, my virginity, my eldest child and 900 air, 900
+[ 2973.7] hairs from a tix butt. What do you think, Nick? I'm good with that. You want to put that as a recipe?
+[ 2979.0] How does he know this virginity? I think that's reasonable. I'm not sure which one of those is,
+[ 2982.5] I'm not sure which one is the rare content on that one. Is it the, is it the, the butt tix?
+[ 2987.4] Definitely not the virginity for sure. No, he's definitely still got that one. But
+[ 2991.7] uh, and then another comment from blues minks. I love Elliott Malpy. I could listen to him for
+[ 2999.5] hours. Please continue talking about what you're talking about. I look Malpy and don't change the
+[ 3004.2] topic at all. He's being very, uh, gracious and, uh, good in the chat. Um, all right. So our last
+[ 3012.3] pillar here, uh, Declan, you've been waiting patiently and hanging out. Uh, it's your time,
+[ 3018.1] baby. It's your time. Uh, stuff you make and storing it. Now, obviously we're not going to go
+[ 3022.8] too far into crafting as we get closer to the actual implementation of crafting the PU. There'll
+[ 3027.6] be, there'll be ISCs and there'll be SCLs and stuff like that. Um, but because it is yet another
+[ 3033.5] way that people know we're going to get some stuff, I do want to touch on it here. Um,
+[ 3038.8] how does all these other avenues of item acquisition affect what you're doing on crafting?
+[ 3046.4] Uh, it's big with crafting. God knows how many things we're going to inject as rewards as thousands
+[ 3053.9] of blueprints, hundreds of materials. So we really need all of this available to us so we can kind
+[ 3059.7] of dish it out into all various parts of the game. Some places are very more difficult, some places
+[ 3064.0] are very easier, unique resources, different systems. So, uh, it's big because the whole gathering
+[ 3070.9] aspect of crafting is the foundation layer. So it's kind of like the biggest and then the
+[ 3075.3] pyramid finding and the crafting at the very top. It's big, big.
+[ 3084.9] For all of the pieces that we've talked about so far, all of the work that Luke, Nick, Andre,
+[ 3092.2] Elliot is doing, all of that content is things that we'll be able to add blueprints to, add crafting
+[ 3099.5] materials to and in, uh, loot boxes potentially even you might find some precrafted loot, but
+[ 3108.2] we'll, we'll say about that.
+[ 3109.9] And now there's some conversation about separating, uh, gear and cosmetics. What can you tell us?
+[ 3117.8] Yes. So I suppose most people know right now the way we have to do cosmetics and gear at the
+[ 3123.1] moment, like your armors and your guns is a bit annoying because it's like bound to the item rather
+[ 3128.7] than, you know, like a ship paint where you can stop it around. So we are working to separate
+[ 3133.3] out the cosmetic from the gear and you take it to a crafting terminal and be like, I want my gun to
+[ 3138.2] be whatever skin I have available for it and it wouldn't be a physicalized item. Either the paint
+[ 3143.8] won't be physicalized to ships, eventually transitioning to not be physicalized either
+[ 3147.6] the paint aspect of them. Uh, yeah. So that'll be a nice and something we'll hear more about,
+[ 3153.7] obviously when we get closer to the stuff. Um, because crafting is, you know, still a ways in
+[ 3161.0] the future and whatnot. Um, all of this stuff, and this is really the reason I've, I've invited
+[ 3166.2] you here in case I don't know if you were, no, this is not all of the stuff, all this way of
+[ 3170.6] getting stuff, all this way of acquiring stuff. Um, I got to ask you about the inventory system.
+[ 3178.7] Yeah. Help. Help. Help. Help. There is a step done in step.
+[ 3185.2] Back right stuff. It's, I got to just help. What can you, what can you, what can you tell us?
+[ 3191.0] We can help fix it. Well, I'm personally not fixing it. However, the talented folks in Montreal
+[ 3197.4] are working on a rework at the moment. So I will share some concept UI of what I've been worked on
+[ 3203.7] and we can talk through it. Hang on. I don't use zoom much. So here we go. So we're looking at some
+[ 3211.1] concept UI here. Uh, as you can see, there's a visual facelift, but kind of the most
+[ 3216.3] interesting aspect to me isn't super obvious straight away. And that is that you will be able to access
+[ 3222.8] other inventories that are nearby to you within proximity. So if we start drawing, we imagine
+[ 3228.4] we've got our storage box over here and then one, I kill the guy. Yeah. Thank you. We kill the guy.
+[ 3236.6] Here he is. He's on the floor. So he would be accessible as well as the tabs up here. And then
+[ 3244.2] the inventory box would be over here. Same on the other side. And so when you press I to access
+[ 3250.6] the inventory, you can then access the dead bodies inventory access storage box. You can start
+[ 3255.5] moving stuff around if I happen to directly go to the body, go to the box, press F. So it's much,
+[ 3261.1] much quicker to kind of get in there and start looting. We'll just get rid of all this.
+[ 3269.8] If we focus in on one of the panels, you can see it's called personal all. That's just kind of the
+[ 3276.5] default person would be on the left. And it's all because it's showing everything that is stored
+[ 3281.4] upon your person at that moment. If you wanted to see what is in your backpack in particular,
+[ 3285.9] you have the site tabs. And then we have a search function should be added in. If you were to click
+[ 3292.2] this, a search box would come out over here and you can search the item that you want. You have
+[ 3297.7] your select all your capacity. You have your filters. These filters kind of similar to Frey
+[ 3302.2] elevator where you have the drop down box with some categories here. And we're working on these
+[ 3307.8] filters being multi purpose. What I mean by that is at the moment filters you click them once and
+[ 3312.7] it means I want to see these items. If you click them twice, it would hide that category of item.
+[ 3318.3] There's a lot of people with Frey elevators full of decorations they don't really care about at the
+[ 3322.7] time. So they could just hide all the decorations if they want to clear filters, sorting options.
+[ 3328.9] When crafting comes in, this would be big because you want to search by quality items here, that
+[ 3334.5] kind of stuff and then tucked away in the corner is stack all. So that's a nice quality of life
+[ 3340.1] addition as well.
+[ 3343.8] Just just a nice little addition. Just a nice little.
+[ 3348.3] Anything about anything about maybe getting to name our boxes label our boxes?
+[ 3354.1] Yes. So this is your quality box and then this would be like a backpack and one of the options
+[ 3359.6] will be to right click and just rename them. So you could say like, oh, this is my
+[ 3364.7] box with high quality, Janellite and whatever.
+[ 3368.1] You've given boring gamer, salty Mike and space Tomato so much content for the next week.
+[ 3375.1] Bro, we're not done. We've got tools and everything.
+[ 3377.1] Oh my God, here he goes.
+[ 3379.1] So as you can see, look at the inventory, everything's a square now.
+[ 3383.7] Instead of it being a mix of squares and long rectangles that'll also be applied to the Frey
+[ 3387.6] elevator. So the ship guns won't take up half the screen. Get a lot more information available to you.
+[ 3393.9] We have the equipment panel where I know I just said they weren't
+[ 3397.1] the right angles. These ones are for regular weapons on. So I'm technically true, but I was
+[ 3402.7] a lion. You can equip your attachment super easy here. The one two three is basically like the
+[ 3410.0] slot they're in. And then again, if you were to look at your ammunition, you can see which
+[ 3413.8] weapon is viable with if we go over to the character. We have all the slots. The slots
+[ 3419.8] will be shown by default here and their contextual. So if you want to quickly see all the backpacks
+[ 3425.1] you have available to you, if you were to click the backpack slots, then the various
+[ 3428.7] immovables will filter to only show the backpacks.
+[ 3434.5] Yep, we have the new tooltips, which very nice rather than being text. We have bars.
+[ 3440.8] You've got a bit of info here. When we have crafting, then the crafting the person made
+[ 3445.4] it would replace the manufacturer. So it was crafted by whoever it was crafted by. We have
+[ 3451.1] taken into consideration wear and tear with integrity and durability. And I suppose you
+[ 3456.6] know there's more than three starts on a weapon. So if you right click and details, you get the
+[ 3460.9] full view of the scroll bar, the attachments description which can be expanded. If you hover
+[ 3469.3] onto an item of the same type, you'll see the comparison stats as well.
+[ 3475.5] You can make the icons bigger or smaller. If you've got bad eyes, you can make them a bit bigger.
+[ 3482.7] Elliot, don't make a joke about it. The thumbnails as well. Obviously there's a problem where
+[ 3489.8] sometimes they don't load or sometimes they appear as far as grams. That's been worked on as well.
+[ 3494.7] We'll get that fixed. I think that's it. It's probably not everything. There's a lot of stuff
+[ 3501.1] that's going on. It's not everything. We haven't talked about the imprinting and the stuff with
+[ 3507.4] item recovery v2 and stuff like that. But again, we just wanted to share a bit about the at least
+[ 3515.3] the concept for the upcoming inventory revamp for folks in the chats that are saying 2026, 2027.
+[ 3521.7] Possibly. I'm not going to BS you here. It's not inactive development right now. It's just
+[ 3528.2] in the concept phase of being specced out and the work is being figured out and then it will be
+[ 3532.9] scheduled and stuff like this. None of us can speak about when it will be delivered. But that
+[ 3538.7] is the direction we want to go in this moment. I thought it was super cool and I thought it was
+[ 3543.8] super exciting. At the end of a conversation about all the things you can get in the verse and how
+[ 3549.2] you get them, it just made sense to me to cap it off with a look at at least how the future of
+[ 3554.3] managing that stuff will potentially look. With that, folks, we made it. We're at the end.
+[ 3562.1] Andre, Nick, Declan, Elliott, Luke, and Jacob. Thank you, everybody.
+[ 3572.5] Thank you, Jeb. Thank you for hanging out.
+[ 3575.4] And shout out to Connor who wanted to be here, but because we changed the date on him, he couldn't
+[ 3580.7] be here. He wanted to be here, but he's there. Thank you so much. Also, I got a shout out. So
+[ 3587.5] there's a thing before I let the viewers go. I got to bring it up here because I didn't look at it
+[ 3592.1] ahead of time. There is a chat. Was it in? It's in your chat. It might chat. There's a thing called
+[ 3600.2] Quantum Vegas. It's happening on Saturday, July 12th. It's a big community-organized
+[ 3606.3] Star Citizen event like other ones like Beacon in Belgium or Con42 in Germany.
+[ 3614.5] An attendance on July 12th is Sean Tracy, Sandy Roberts, Tyler Wicken,
+[ 3620.6] Galastica, our social media person. There's going to be panels and contests and a bunch of giveaways
+[ 3625.6] and a bunch of stuff that you can get. So if you're in the Vegas area or at least the Pacific
+[ 3630.6] Southwest and you can attend, that's on July 2nd. And you can check that out. Just search for
+[ 3635.4] quantumvegas.space. They had a space thing. And for details on that, and that's July 12th.
+[ 3644.6] As for me, that's it for this week's show. Come back next Thursday. It's a behind the
+[ 3650.7] ship episode dedicated to something I've been waiting for for a long time. No, it's not the
+[ 3662.6] jalopy. It's something else just because I know people were going to think it's a jalopy. But
+[ 3669.9] it's been a ship that's near and dear to my heart. And it's coming to the verse real soon. So check
+[ 3675.4] that out next week. And then, of course, we'll be back. A lot of folks had questions about the
+[ 3679.7] new event that's currently testing on PTO. We have an ISC dedicated and tired of that and how the
+[ 3684.5] rewards work and how you can get all that stuff. That's coming in two weeks after that. So
+[ 3688.7] Go play it. Put some bugs in for me, please. Oh, yeah. I need them. Yes. But if you're in PTO now,
+[ 3693.3] play it. Elliot's work is terrible. And he needs as much knocking on the pipes as possible to
+[ 3701.0] all these other people can fix it. So if it's terrible, it's normally... It needs some play
+[ 3708.5] testing. Go to the PTO. Exactly. He didn't have his glasses on when he was doing the nuts.
+[ 3712.5] I had the screen really big. Somebody in the chat said, do you remember when
+[ 3718.4] SCL used to be professional? And I'm like, no. I've been for every single one.
+[ 3723.5] Does anyone remember the summer show? Was it the summer show or the Christmas one? Which one was it, Jared?
+[ 3728.6] I don't know what you're talking about. We don't talk about the anniversary show.
+[ 3739.2] I hope you're playing Hello Darkness, my old friend right there. Do you not have that queued up?
+[ 3742.7] No. All right. So that's it, everybody. Thanks for watching. Thanks for hanging out.
+[ 3747.4] Jump on to PTO and test if you can. It helps us release these things every single month.
+[ 3752.2] And come back for BTS next Thursday for a pretty, pretty, pretty, pretty, pretty, pretty spaceship.
+[ 3759.1] All right. Thanks. Bye.

@@ -1,0 +1,4 @@
+I expect ICache will have some geo-location key (along with other keys no doubt) to make it fast to find items in a certain physical area in the game. Is this correct, and if so, are you planning to co-locate ICache and the corresponding game server VMs on the same physical hardware/rack?
+We are using something we call a StarHash which is a kind of geohash formatted specifically for our 64bit scale solar systems.
+https://en.wikipedia.org/wiki/Geohash
+These will allow for spatially querying a service called the (you guessed it..) StarHash service, which allows us to query data quickly in certain areas, with the main use case being server streaming. We've had a version of this running as an internal background job since the initial server streaming implementation went in, but now it will be moved out into its own set of services so that server nodes can mutually query on this data set.

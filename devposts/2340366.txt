@@ -1,0 +1,42 @@
+## Star Citizen Patch 3.6.2d
+Alpha Patch 3.6.2d has been released to PTU and is now available!  Patch should now show: PTU-2682903.
+It is strongly recommended that players delete their USER folder for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\PTU.
+Database Persistence Wipe: YES
+Please monitor sc-testing-chat in spectrum for updates and testing instructions.
+USER.cfg settings:
+r_displaySessionInfo = 1
+The new setting will display a QR code that we can use to track down server information when looking at your bug reports and videos.  Then can be disabled by setting it to "0".
+Testing Focus
+- 890 Jump
+Known Issues
+- There are replaceme balls on the 890's upper level atrium.
+- The battlebridge currently lacks pilot remote control.
+Ships and Vehicles
+- Updated art for 890 mav thrusters.
+- Increased the health pool of the 890 so the hull isn't destroyed so quickly and slightly decreased the shield strength.
+- Completed LOD update for the 890.
+- Updated lighting and fixed various lighting issues on the 890.
+- Fixed doors to be interactable on the 890 instead of automated.
+- Updated landing gear animations.
+- Updated the 890's quantum VFX.
+- HRST weapons (Attrition and Dominance) have had their heat based damage bonus removed and been given a slight damage increase to compensate as a temporary work around to the unintended shield penetration.
+- Updated the docking time for large ships.
+## Bug Fixes
+- The starboard side bench in the master suite of the 890 should now have interaction highlights.
+- Missile launchers should no longer clip when in remote turret use.
+- Moved indicator lights to accommodate new landing height.
+- Updated damage model for the 890.
+- The 890 should no longer have LOD related exterior visual issues.
+- There should no longer be extra airlock doors on the 890.
+- Changed 890's elevator UI for personal left to "exit ship" and added enter prompt from below.
+- Fixed UV issues on the 890's manned turret glass.
+- The hangar elevator in the 890 should now have audio.
+- Fixed missing audio in the 890's atrium.
+- Fixed missing audio for the 890's crew bathroom doors.
+- Fixed missing audio for turret rotation on the 890.
+- Slowed down crew lift to prevent players from falling through.
+- The personnel elevator should now have audio.
+- Updated interior VFX states for the 890.
+- HRST weapons (Attrition and Dominance) should no longer penetrate shields.
+- All large hangars should now be accessible on landing and not blocked by the no fly zone.
+- Wine glasses should no longer pile up in hangars and reduce game performance.

@@ -1,0 +1,58 @@
+## Travis Day, Dogfight Producer
+Greetings Citizens!
+Ah what a week it has been! This is one of my favorite points in any project as you approach a release and start to see all the pieces coming together and aligning to the cohesive vision. Our team here in Santa Monica has been diligently pushing through all of their tasks to meet our lofty goals for the release of DFM.
+We’ve seen a great deal of forward progress this week and below are some of the specifics of what various groups have been up to within our studio. There is a lot that goes on each week so apologies for not capturing every detail but here is a good high level overview of the new features.
+## Design
+The design group has been hard at work this week making sure that all our ships are dogfighting ready. This includes analyzing/balancing the mass of ships and their parts, thruster distribution and output, and their responsiveness to player input. We are approaching have the ships flying the way we want them to (pending further testing and feedback ) and behaving in the way you would expect them to given their physical attributes.
+With the work that engineering has put into the signature and missile system, Design has been balancing the cross sections, heat output, and EM emissions of each ship, item, and part. This has led to some great moments in the play tests where you receive and incoming missile alert and rather than dropping chaff/flares (depending on the missile type) you can instead – with a heaping dose of skill and luck – duck into a crater on an asteroid and see the missile fly by above you having lost its firm lock.
+Design is also constantly adjusting and adding inputs for the various control methods based on the feedback gathered during internal playtests and as new features come online.
+## Engineering
+Missile fixes galore! The signature system for detecting enemy ships based on their heat, radar cross-section, and electromagnetic emissions has been overhauled to be more flexible and dynamic. This in turn has allowed us to update the behavior of both the player radar (underway in the UK) and update the way missiles behave based off which type of signature they are able to target.
+The engineers have also implemented and tuned a hit impulse system so that incoming fire from enemy ships will now cause both linear momentum and angular momentum to your own ship. This is based on the kinetic energy and the effect varies based on where it actually hits on the ship relative to the center of mass for your ship.
+Our chat system is also underway! One of the things that became rapidly apparent during our cross-studio playtesting was that we needed the ability to taunt one another if we weren’t in the same room. Luckily we’re close to having a functioning chat system as we close out this week so we won’t have this problem much longer!
+Meanwhile our Graphics Engineer has been updating many of the post-processing and shader effects being used in the game. The holorenderer shader used on the 3D objects in the HUD has been refactored and upgraded to allow better artist control and add some additional effects to sell the holographic/projected nature of these objects. He’s also implemented an effect for g-force induced red out to rival his awesome black out effect.
+## Art
+The Aurora and 300i have been fully updated to properly take advantage of PBR, blow apart beautifully, and LOD out in way that maximizes performance while minimizing the visual impact. Of course our Lead Vehicle Modeler, Chris Smith, with his undying sense of perfectionism couldn’t let the 300i pass without uprezzing and slightly remodeling the interior. He’s just finished up this work and all I can say is that if you thought the 300i looked amazing in the commercial just wait until you see it in the DFM.
+The latest pass of visual effects for the Hornet have been integrated into the game and hooked up (remember those huge XML’s Forrest showed off?) to all the parts, items, impacts, weapons fire, ammo types, and each of their various damage states. This pass has really improved the feel and visual feedback as to what is going happening in and on your ship. During the PAX East demo we were in the process of refactoring the hierarchy of the ship models so we didn’t get to show off as much of this as we wanted to. The 300i and the Aurora are now getting the same treatment as I write this and we should have an update on those next week!
+Last but not least is the ongoing work on the HUD. Many new items have been added to the HUD warning system to bring different important events like missile locks, collision warnings, and other status messages to the player’s attention. We’ve been adjusting some of the HUD elements for better readability, adding elements that need to be better visually communicated, and generally improving upon the visual language being established as we go. Some of these things include adjusting the reticles to better communicate the status of your interaction with the target object/ship. We’ve been adjusting some of the 3D objects for the radar and the HUD to improve their look and readability to the player. Our master HUD artist, Zane, has also concepted out some ideas for the HUD of the Freelancer and Avenger for folks to review.
+## Conclusion
+Well that about wraps it up for this past week of development here in Santa Monica. Again, this isn’t every task that was completed but rather a high level look at some of the more interesting new features and updates to existing features. There was one last discovery made this week worth mentioning however… We’ve noticed from our cross-studio playtesting on the backend that Santa Monica has, without question, the best dogfighters in the company.
+As always, if you have any questions, please feel free to reach out to us on our ‘Ask a Developer’ threads!
+Cheers,
+CIG Santa Monica
+## Eric Peterson, Studio Director
+Hello Citizens, we had quite the week here in Austin on the big Dogfighting push.
+## Art:
+Created some new weapons the Behring M6A laser, and the Omnisky Ultra 1 laser cannon. We continued to setup the aurora so that the geniuses in the Santa Monica office can make it fly correctly, and we continued the modeling on the UEE marine helmet.
+## Graphics:
+Worked on some refraction particle shader issues, worked on the flickering artwork bugs, and continued tweaking the shield including working on the effect for Capture the core.
+## Design:
+Assisted on the testing and debugging of both server and playability of the Dogfight Module.
+## Programming:
+zSupervisor up and running, Profile rigid body asteroids, tested the load system, setting up SC Build system on new dev cluster hardware, helped REDACTED test matchmaking solution, updated account login step.
+## Audio:
+Implemented dogfighting ship damage transitions, weapons SFX, Thruster SFX and Engine SFX.
+## Production:
+Worked with other production teams within CIG to set up proper roll out plan for Dogfighting Module V1.
+## QA
+Testing daily builds of the DFM, debugging logging bugs, checking fixes, and ensuring fidelity of global builds.
+Heading into the big push for the rollout is always fun and exciting, seeing the ships come from barely flyable to super fun and engaging each studio in friendly battles makes us very proud and excited for what we have coming up.
+See you all in the verse.
+Eric
+## Erin Roberts, Studio Director
+Hi from Foundry 42.
+In general pretty much everything in the UK is in content lock down, with everyone focusing on stability, performance and polish. Outside of code, the majority of Foundry 42 is focused back on to the massive capital ships we need for S42 and the PU, as well as fleshing out the first S42 missions for the game. We’ve been having daily playtests over the cloud servers, and feeding back on bugs and polish issues.
+## Design:
+This week we have been concentrating on the capture the core game mode, with the first full playtest of this mode over the last 3 days. It’s feeling pretty fun already, and we have a bunch of feedback from the rest of the team that we are implementing next week to improve it further. We also have added the Vanduul Scythe into the Swarm mode, and their AI is really starting to come together, after a few issues at the end of last week where they wouldn’t move due to thruster issues.
+## Code:
+A bunch of work has been going on in this area. Loads of bugs and issues have been fixed all week, but main points are:
+We’re going through a bunch of feedback on the HUD and it is now much less cluttered with everything not on by default. We are re-working elements of the radar so it is more readable when you are dealing with a lot of targets. Targeting is going through a lot of refining in terms of how you target / identify and lock different ships, and then how you pin them to your HUD. Also a lot of polish has gone into the feedback system, so the player has clear feedback on his score, who is friends / foes are etc.
+The music system for the DF Module was also finished off this week, and we are looking at putting in one or two refinements next week for it.
+Asteroids – A lot of work going on in this area as we are working on making them all destructible, but as you can imagine that has a huge knock on, not only with performance, but network traffic as once you create a bunch of debris, smaller asteroids from the larger ones you blow up it means we have to update, render and keep track of more objects. On the UK side we’ve been looking at reducing the physics overhead on all these objects, so when you have thousands in a scene they don’t kill the CPU. Over the pond a bunch of optimizations have been going in to make the amount of actual information being passed from the client to the server (to do with asteroids) as small as possible to make sure of minimal latency.
+Graphics – On the VFX side a bunch of work has gone in to work out a clean solution to a nasty sorting issue we have. This will be completed next week, and should put an end to some of the flickering you will have seen in the latest footage.
+Stats – Not as exciting as other areas, but just as important so you can see how you are doing. A number of issues were fixed to make sure that points are scored correctly / kills registered etc.
+Stability – A number of re-spawn issues were fixed this week to make sure that when we push the module out it will be in a stable enough state so the community can feedback to us (hopefully) on the important stuff like play balancing, ship and weapons stats etc. rather than just getting frustrated if the game is crashing all the time.
+## Art:
+Art is actually pretty much locked down now with the exception of some extra VFX work to make the game look even better, and some re-organisation of one of our structures (a huge Station ring) for capture the core in the game. The Art department and most of the design guys have been focusing on Capital ship white boxing and now actual art work for a few weeks now.
+## Animation:
+Just some clean up on ejection which is now finished from the UK side.

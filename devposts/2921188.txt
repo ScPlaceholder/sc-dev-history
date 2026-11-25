@@ -1,0 +1,15 @@
+Do code live and die in the service of const correctness, or is it a more laissez faire approach?
+Const correctness is usually enforced, though the extent to which is dependent on the team or system. I tend to be more particular about that kind of thing, but even then there's more than a few places where a
+const type* pPointer = ...
+should really be
+const type* const pPointer = ...
+to be most correct.
+Is a programming guide followed, such as the CPP core guidelines, as far as how code is structured and written?
+We do indeed have programming guidelines. It's not something in particular like say google's c++ guidelines, rather our own which we've developed over time, drawing on the experience of leads and directors in engineering.
+Is there a peer review process that you go through in order to get code merged in?
+All submissions go through code review. It's a small time tax to pay for a much better code base, and fulfills a nice secondary role of spreading knowledge through the team.
+Are there strong types all the way down or is it void * and c-style cast your way to victory?
+void* is only used in some rare cases, usually engine code dealing with foreign data in a generic way. The vast majority of code though is highly strongly typed.
+Are there actually arguments about tabs vs spaces or do you let clang-format take care of it for you?
+Our guidelines are for hard tabs set to two spaces. When I joined the team I found it claustrophobic and still do haha! I prefer soft tabs at 4 spaces which I use in my personal projects, but the guidelines are what they are so that's how I wrote code here and enforce it in reviews.
+Surprised you didn't ask about editors! In case you're curious, obviously we use VS for C++, that said I using VSVim when editing as I prefer programming vim, and for anything not C++ I'll use vim while others may use VSCode, emacs, Atom, or notepad++.

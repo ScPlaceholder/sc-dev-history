@@ -1,0 +1,36 @@
+## Star Citizen Alpha Patch 4.10
+Alpha Patch 4.10 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.0-PTU.12418393
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- Instanced Siege of Orison
+- Hydrogen Fuel Balance
+- Quantum Drive Balance
+- Arlington Lever Action Rifle
+- Orison Relief Support
+- Recco Battaglia returns (reputation speed increase for PTU testing)
+- Wikelo Inventory Updates
+Known Issues
+- If any party member is AFK kicked during a Siege of Orison mission, the mission resets for all remaining party members with objectives starting over from the beginning (Fix in review for next PTU)
+- PU - Battaglia - Story 2 - Missions / mobiGlas - "Emergency: Blinding Hope in Trouble" / Story 2 does not populate the mobiGlas
+- PU - Nyx - Battaglia - Story 2 - Mission Content / Game Code - Delivering the hard drive and talking to Battaglia does not complete the mission
+- PU - Nyx - Mission Content / Game Code - Battaglia - Story2 - Deliver Data Drive objective does not complete after delivering the data card to Battaglia
+- PU - Instancing / Locations / UI - Elevator to instance moves after noticeable delay after pressing the elevator button to the instance
+- PU - Stanton - Instancing / Locations / Performance -  The client will stall/freeze for a few seconds at the second forcefield when the Main instance fully streams in
+- PU - Stanton - Siege of Orison - Performance / Mission / Location - Severe performance dip approaching Solanki platform
+- PU - Stanton - Siege of Orison - ARGO ATLS IKTI - Ground Vehicle / Physics / Physical Proxy - The IKTI can get stuck in the ground after falling from a great height
+## Features & Gameplay
+Client Performance Update: Frame Time Smoothing
+Frame time smoothing behavior tightened to reduce delayed frame rate recovery after sustained performance spikes. This should result in a more responsive and consistent frame pacing.
+Instancing Infrastructure
+DGS Manager configuration optimizations and additions to help improve stability during high instance load
+## Bug Fixes & Technical
+- Fixed 2 Client Crashes (particle texture and inventory related crashes)
+- Fixed 1 Server Crash
+- Potential Fix: Players unable to call the Siege of Orison instance elevator after stale instance entries accumulated in the Transport Manager, blocking mission access entirely; stale instances are now cleaned up automatically
+- Potential Fix: Foxwell Enforcement intro missions incorrectly spawning Siege of Orison Juggernaut Elite Nine Tails enemies instead of standard Nine Tails combatants
+- Potential Fix: Klescher Prison "Inmate Maintenance Opportunity" contract accepting with no objectives listed and no way to complete it
+- Potential Fix: ASOP vehicle list showing a ship as unavailable or displaying incorrectly, causing the ship status to appear wrong
+- Potential Fix: Commodity cargo and contracted cargo containers not being tracked for long-term persistence

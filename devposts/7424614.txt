@@ -1,0 +1,8 @@
+He's not wrong :slightly_smiling_face:
+First thing is indeed to roll the finished/stable/fast version of the Vulkan renderer out. The good news is that it is already the default for Squadron 42 and running well, so as I've mentioned in another thread we just need to wait for this code to reach the PU and fix any issues we find in PTU when we hit larger player counts and more diverse hardware.
+After Vulkan is stable, the next two performance related goals would be:
+- Improvements to memory usage. Avoiding going over budget & using memory more carefully, because there are large performance hits when too much memory is used.
+- Optimisation passes on each shader/system. This has been in limbo for a while because the best GPU tools only work on Vulkan/DX12, and Vulkan can also change a lot about how the GPU performs (e.g. we use a completely different shader compiler), so we needed Vulkan rolled out before we can dig deeper into these shaders.
+On the flip side, GI and reflections will likely come significant GPU costs, so we've got lots of work to do to make headway for these features.
+Ali Brown
+Senior Director of Graphics & Procedural Tech

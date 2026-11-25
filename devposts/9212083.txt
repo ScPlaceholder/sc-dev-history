@@ -1,0 +1,57 @@
+Alpha Patch 4.10.3 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 4.10.3-PTU.13107423
+- Audience: All Waves
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+- Stability, Bugfixes, LTP between PTU releases
+- New Missions: Vanduul Incursion
+- New FPS Weapon: LBCO Skarnov Rifle
+- IAE (On accelerated schedule)
+## Features & Updates
+Gameplay Updates
+- Journal entries now organized by player with priority mission events at the top
+- mobiGlas Assets Manager and NikNax now sort alphabetically and only show counters above one item
+- Multitool now ships with a tractor beam attachment by default
+- High Risk bounty contracts now award 4,000 reputation, up from 2,000, placing them between Medium and Very High Risk
+- Added new hair, eyebrow and facial hair options
+Ship & Vehicle Updates
+- Centaurus: Armor deflection dropped from 531 to 390 physical and 380 to 330 energy. Increased hull health from 25,740 to 30,740. Fuel tank capacity reduced from 46.8 to 32 SCU and thrusters given fuel burn rate value.
+- Polaris: Armor deflection increased against both physical and energy damage
+- S10 and S3 bomb racks added for the Starlifter
+- Default power distribution adjusted globally so critical components are no longer switched off when powering
+- Starlancer, Perseus, and Carrack radars upgraded to Size 3, with the Starlancer radar relocated to engineering and the Perseus relay moved to the console
+Salvage Vehicle Buffer Increase
+Salvage ship modifier balance pass. The lineup of salvage ships has had their internal buffer storages increased.
+- Vulture: 13 SCU → 16 SCU | Largest Box: 1 SCU (+23.08%)
+- Reclaimer: 240 SCU → 448 SCU | Largest Box: 16 SCU (+86.67%)
+- Moth: 64 SCU → 240 SCU | Largest Box: 8 SCU (+275%)
+- Fortune: 13 SCU → 14 SCU | Largest Box: 1 SCU (+7.69%)
+- Salvation: 6 SCU → 8 SCU | Largest Box: 1 SCU (+33.33%)
+## Bug Fixes & Technical Updates
+2 Client Crashes and 1 server deadlock fix with tonight's build
+- Client crash when streaming a render-to-texture texture
+- Client crash in the memory allocator from unchecked weapon binding indexes
+- Fixed a server deadlock on the main thread while an entity was being detached and queued for deletion
+Bug Fixes
+- Potential Fix: Players getting stuck on the powerplant railings during Battaglia Story 1
+- Potential Fix: No place prompt appearing at dumbwaiters
+- High Risk bounty contracts now award 4,000 reputation, up from 2,000, placing them between Medium Risk at 2,000 and Very High Risk at 8,000 (STARC-114590)
+- Potential Fix: The Tactical Strike Group comms call playing on Board Ship contract accept
+- Potential Fix: A visarea in the RSI Zeus Mk II ES cargo bay causing the walls to flicker (STARC-194424)
+- Potential Fix: Turret targeting pip disappearing when aiming too high (STARC-182133)
+- Potential Fix: Dynamic objects failing to stream in their surroundings due to instance culling
+- Potential Fix: Ground vehicles being destroyed on the hangar pad when retrieved (STARC-219816)
+- Potential Fix: Vehicle modules being retrievable through the freight elevator, with module sizes increased to prevent it (STARC-181911)
+- Potential Fix: Battaglia Story 1 not progressing past the Go To Blinding Hope objective because the ship failed to spawn (STARC-221189)
+- Potential Fix: Intersec 3-Way Standoff objectives reporting enemies remaining once all available AI are dead (STARC-222802)
+- Potential Fix: Distortion values on the RSI event reward components not being set up correctly (STARC-221603)
+- Potential Fix: A grinding sound when docking a snub ship to its host (STARC-221546)
+- Potential Fix: Esperia Prowler VTOL thrusters not repositioning when activated (STARC-171832)
+- Potential Fix: Gimbals on the Aegis Idris IFR-BC7 turret not functioning correctly (STARC-193582)
+- Potential Fix: Missing door beside Coffee To Go in the Area18 spaceport (STARC-201891)
+- Potential Fix: The vehicle HUD displaying as placeholder or dark grey textures across multiple ships (STARC-222736)
+- Potential Fix: Organic surfaces appearing smeared or streaked on both Vulkan and DX11 (STARC-215562)
+- Potential Fix: Unable to contact ATC to land at or depart from Distribution Centers (STARC-220137)
+- Potential Fix: ASOP terminals freezing the game for 3 to 4 seconds on interaction, with a one minute failsafe timeout added for requests that never return (STARC-214984)
+- Potential Fix: Destroyed powerplants still counting as powered on, preventing structural salvage (STARC-220786)
+- Potential Fix: The RSI Zeus Mk II has a bad vis area present within the Cargo Bay (STARC-191780)

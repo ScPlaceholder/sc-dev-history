@@ -1,0 +1,6 @@
+The new TSR system which is used for both AA and optional upscaling is much more capable of limiting ghosting than our previous TSAA solution, however some minor ghosting will be unavoidable.
+But TSR does rely heavily on objects correctly reporting their movement to the renderer, and what we have seen in 3.23 is that rigid animated objects (e.g. doors) have a bug where they don't provide this movement information which then causes MAJOR ghosting on them.
+We didn't notice this at first because our main branch (with post 3.23 code) has completely replaced the mesh rendering system with a much faster implementation which doesn't have this bug, and because the issue is already fixed and the fix cannot be retro-fitted to the old system we'll unfortunately have to live with this bug for 3.23 and wait for the next release for the fix.
+Thanks,
+Ali Brown
+Senior Director of Graphics and Procedural Tech

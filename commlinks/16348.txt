@@ -1,0 +1,129 @@
+## Star Citizen Patch 3.0.0
+Alpha Patch 3.0.0 has been released to all Star Citizen backers. This update contains one of our largest feature sets to date – including the three moons of Crusader, a new mission system, improved shopping and cargo mechanics, and increased our server player count from twenty-four to fifty players. Alpha 3.0.0 is also the first implementation of a lot system changes that go on in the background. For example, with commodity trading, we’re testing out the very first iteration of the dynamic economy that will control the marketplace of the universe.
+With our new procedural planet tech, there was a strong need to make sure that we efficiently update all the entities and components in our game world (their number increased significantly compared to 2.6.3). We therefore implemented a new update scheduler that allows us to efficiently batch update them per type and update strategy (range based, manual, always, conditionally). As this puts more strain onto our job system, we further refined its core to allow for even lower latency scheduling and supported even more CPU cores.
+In short, it’s a big update that lays the foundation for larger developments down the road.
+Apart from the improvements already made, there’s still a lot of work that has to be done to get the performance up to where we want it to be, but this will take a bit more time. Object Container Streaming and Entity streaming are major aspects to reduce memory footprint and further scale the game world for many star systems in a seamless way. There will also be a concentrated effort into better scaling of existing game systems with increased player count and world complexity (entity count). We’ve been investigating range based culling of entity updates which will provide significant gains, but still needs additional work to properly integrate into all game systems.
+With the release of 3.0.0, the Persistent Universe is now shifting to a quarter-based release schedule. This approach means that after each live delivery we can return to the main development branch and pick up all the changes and optimizations that have been worked on in the background and ready them for our next live release. 3.0 has been about completely revamping systems and gameplay as well as adding new content. We will now go back into our development branch, which we need to do for our Q1 release in March and will pick up the latest code and concentrate on optimizing performance, using our new gameplay and systems to the fullest, as well as continuing with the balance and polish of the PU.
+Your feedback and engagement is what makes Star Citizen special, so drop into the ’verse, grab your ship and explore the vastness of 3.0.0.
+## New RSI Launcher
+Star Citizen Alpha 3.0 requires the installation of a new launcher which will tremendously reduce the amount of data transmitted during game updates and allow the team to deliver more patches quickly. The RSI Launcher will also be used to deliver Squadron 42 once it begins shipping.
+In order to play Star Citizen 3.0, download the new RSI Launcher. The installation program will guide you to remove the older CIG Patcher and then perform your initial installation of Star Citizen Alpha 3.0.
+NOTE: Once totally installed and patched, Your launcher should display 3.0.0-695052 as the client version.
+## NEW FEATURES
+## Three Crusader Moons
+## Cellin
+- Cellin is Crusader’s closest satellite. Visitors to the moon are greeted by the massive gas giant sitting prominently in the sky above. If you can take your eyes off the sky, then you’ll notice that Cellin’s flat surface is punctuated by dormant volcanoes.
+## Daymar
+- With the thickest atmosphere of the three moons, Daymar is covered with winding canyons and rugged mountain ranges, giving it the appearance of an arid, desert planet. Though Crusader has been granting mining licenses to tap into the moon’s resources, the atmosphere is unbreathable for Humans.
+## Yela
+- The third and final Crusader moon is Yela, the moon’s covered in ice crust on certain sections of the moon, while other parts are dominated by a typical mixture of soil and snow. The temperatures are quite bracing here, so plan to bring a thermos of tea or a nip of something stronger to help stay warm.
+## Levski
+- The home of the People’s Alliance, this new landing zone was founded in an abandoned mining facility as an egalitarian alternative to the UEE.
+## Surface Outposts
+- Over two dozen planetside outposts that can be visited. These buildings cover a variety of operations (both legal and illegal) and can serve as drop-off and pick-up points for missions.
+## Derelict Ships
+- Crashed or abandoned ships within the Stanton system as points of exploration.
+## Mission Givers
+## Ruto
+- This criminal hacker provides the players with missions and introduce the first iteration of the reputation system.
+## Miles Eckhart
+- The head of a private security company, Eckhart provides the players with missions and introduce the first iteration of the reputation system.
+## Mission System
+- Around 20 distinct missions, most with lawful and unlawful variants and all with hundreds of random permutations. These missions can be picked up from the Mission Givers or from the Contract Manager App.
+## Derelict Ships
+- Multiple ship wrecks on planets and in space. Some may contain cargo that can be scavenged and sold.
+## Random Encounters
+- 10+ encounters which the player can come across through travel or by Quantum Travel Interdiction.
+- The area you are within will dictate the types of encounter you can come across
+## Admin Officer AI (mission related)
+- Admin officers will appear at larger landing zones such as Port Olisar and Levski to act as pick up or drop off points for mission related items.
+## Shopkeeper AI
+- Adding the shopkeeper AI to give environments more life.
+## Pickup & Carry objects
+- As we’re introducing cargo with 3.0.0, players will be able to manually interact with their cargo to load and unload it properly on their ships.
+## AI Turrets
+- We are adding the ability for AI to operate turrets in Crusader, so we are working to make sure that they track and fire upon the correct targets.
+## Interaction/PIT
+- We’ve added an interaction mode system which enables you to interact directly with the world around you. This will act as a shortcut way to select actions with your mouse, to avoid remembering complex control binds.
+## Stamina System
+- We are introducing the concept of stamina in to 3.0.0, this will mean that physical actions will have consequences. For instance, sprinting will drain the stamina of your character, causing loss of breath and difficulty in aiming a weapon.
+## Item 2.0 Ships
+- We are converting our available ships over to the item 2.0 system. This will allow for greater player control of the ship and expanded gameplay.
+- Multi-Function Displays (MFD) are being implemented in the new item 2.0 system to give pilots even more control of their ships.
+## ATC System
+- The Air Traffic Control system assigns landing pads to players once permission has been requested. The system also tracks the stored location of player-owned ships and allows for cargo to be delivered to a ship parked in that landing zone.
+## Item 2.0 Doors & Airlocks
+- We are starting to update the doors and airlocks within the game to be more intelligent. In time, this would mean that the door would ‘know’ if a room beyond them is depressurized and would stay shut for safety.
+## Cockpit Experience Improvements
+- Multiple changes that affect how the player moves and reacts in the cockpit as well as the overall feeling for the player while flying (interactions, reacting to hits, etc.)
+## Shopping
+- Commodity buying/selling.
+- Physical item shops.
+## Render to Texture
+- This will have many uses going forwards, but our focus for now is to improve UI rendering and to introduce live rendering of video communications. We’re aiming to improve rendering performance by rendering as much of the UI ahead of a frame. For video communications, this will mean that we don’t have to pre-render the comms and store those files on the hard drive, as is the case with most games, allowing us to maintain fidelity and save hard drive space.
+## Cargo
+- Players can purchase commodities from the kiosk that will be transportable in the cargo holds of vehicles, to be sold in another location.
+- Implementing items to represent units of tradeable cargo.
+## Planetary Tech
+- The Physics Grid for planets and the modular space stations.
+## Planetary Rotation
+- Planets and moons now rotate to give a day/night cycle.
+## mobiGlas Visual Update
+- Redesigned the interface and apps.
+## mobiGlas Apps
+- Contract Manager: This is a redesign of the mission App that is currently available within mobiGlas and is the next step in allowing players more control over their mission tracking.
+- Personal Manager: This App will allow players to review their inventory and customize various aspects of their suit and weapons.
+- Vehicle Manager: This mobiGlas app allows the Player to modify/customize their ships directly rather than using the upright terminals.
+- StarMap: The Starmap will be introduced to allow players to view the Persistent Universe at large and select planets to quantum travel to.
+## Starmap on Ship Radar
+- Incorporating the Starmap into ships with 3D radar so players don’t have to open the mobiGlas app when piloting to select their travel destinations. Remaining ships will be added later.
+## Updated Visor HUD
+- Updating the Own and Target ship displays for both the visor and MFD in the Item2.0 ships. With this enabled in ships, pilots will be able to see the health of their ship and shields
+## Atmospheric Flight
+- With 3.0.0 players will have the chance to land on celestial bodies, which, in some cases, will involve passing through the atmosphere.
+- A modified set of physics parameters to change the flight pattern of ships when they transition into a moon’s atmosphere.
+## Engine Trails/Contrails
+- VFX improvements for engine trails, and the creation of contrails for ships when flown in atmosphere
+## Gravlev (for hover bikes)
+- This tech covers the transitions from flight to hovering and hovering to flight, but also lets the hoverbikes (Dragonfly and Nox) traverse the planetary surfaces.
+## Second Stage Afterburner
+- Adding afterburner functionality to allow you to traverse from space to ground faster.
+## Hint System
+- A first iteration of in-game hints to help new players acclimate to the various complex gameplay mechanics in Star Citizen.
+## EMP Weapon update
+- Updates to the EMP weapon functionality to properly affect ships now the item 2.0 conversion has taken place.
+## Entity Owner Manager
+- The Entity Owner Manager tracks entities that are moved around the universe, making sure we spawn and despawn them at the correct time.
+## Physics Serialisation
+- This will fix a few long-standing threading issues between then network and physics code. Improves separation of physics and netcode for better maintainability.
+## New Message Queue
+- Now that all our messages are strictly ordered, we’ve streamlined the processing, allowing us to send and receive messages with less overhead. The new message queue also has a few extra features to better handle packet loss and jitter, helping reduce average bandwidth and latency.
+## Mission System
+- The overall system that will be used to create mission flows for missions like Patrol, Assassination, Smuggling, etc.
+## Persistence of Ship Damage, Ammo, & Missiles
+- Persistence ensures that your vehicle state is saved between sessions.
+## Ship Insurance & Claim
+- This will be an alpha version of the insurance system where if your current ship becomes damaged beyond repair, you will be able to request a replacement ship (with basic loadout) from the insurance provider.
+## Planetary Navigation Marker Generation
+- A dynamically generated set of Quantum Travel points around planets and moons to enable for quicker and easier traversal around them.
+## Persistent Spawning & Reconnecting
+- First pass at persistence which allows us to save the state and location of the player and ships between game sessions.
+## New & Updated FPS weapons
+- BEHR P8-SC – SMG
+- APAR Scourge – Railgun
+- [UPDATED] KLWE Gallant – Rifle
+- [UPDATED] KLWE Arrowhead – Sniper Rifle
+- [UPDATED] KSAR Devastator-12 – Shotgun
+- [UPDATED] KLWE Arclight – Pistol
+- [UPDATED] Gemini LH86 – Pistol
+- [UPDATED] BEHR P4-AR – Assault Rifle
+## New & Updated Ships/Vehicles
+- [Updated] Cutlass Black
+- Drake Dragonfly
+- Aopoa Nox
+- RSI Ursa Rover
+- RSI Constellation Aquila
+- MISC Prospector
+- Updated RSI Aurora
+- Aegis Sabre Raven
+Back to top

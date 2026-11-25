@@ -1,0 +1,20 @@
+Hello everyone!
+I’m happy to announce that 4.8.1 which is coming soon will fix the majority of remaining UI issues for VR. This includes marker, salvage and tractor overlays. This rework is only active in VR for now and there are a bunch of console variables which can be tuned for your liking with more to come in the future.
+ui_markers.enabled_3d:
+Enables the new 3D world space marker system. When disabled, markers use the legacy 2D screen space positioning. This is already forced on in VR but can be used to enable the 3d markers in desktop mode too. Longterm the 2d version will be removed.
+ui_markers.scale_3d:
+Adjusts the overall size of all 3D markers.
+ui_markers.offscreen_distance_3d:
+Controls how far from the camera offscreen (edge) markers are placed in world space.
+ui_markers.offscreen_angle_3d:
+Controls how close offscreen markers appear to the edge of the screen. Higher values place them closer to the field of view boundary.
+ui_markers.bounds_offset_scale_3d:
+Adjusts the distance between markers and the tracked object. Increase this value to move labels further away from the object.
+ui_markers.bounds_offset_angle_3d:
+Adds an angular offset to marker positioning at longer distances.
+If you have any issues or suggestions please let me know!
+What is still planned:
+- Global variable to set opacity for markers
+- Change opacity of Markers on the backside of a planet
+Fly safe o7
+SilvanCIG

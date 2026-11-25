@@ -1,0 +1,12 @@
+Hi,
+I wanted to find a thread to reply on this topic, because it's a bit complex and I suspected many people would want more details than what was provided for the patch notes.
+There are currently several bugs that can lead to very poor UI quality when using upscaling, and we're working hard to resolve these now. In most cases the UI is being shown at the internal/lower resolution and not (sucessfully) upscaled, however in many cases it's drastically worse than this and can be up to 8x lower resolution, making the game largely unplayable. The more severe issue doesn't always occur, and it can be very situation dependent, but due to it's severity I decided it was better to temporarily limit the new upscaling options while they are being fixed, rather than fully disable them or continue to receive complaints about incredibly blurry game-breaking UI (even though some people won't have experienced the 8x lower resolution issue)... this is the testing phase of the release cycle after all.
+There are 3 cause of these UI issues:
+1. These upscaling techniques generally can't increase textures beyond the source resolution, but can reconstruct the source resolution from multiple lower quality renders. However we are currently always drawing the UI at the internal/lower resolution, and so a higher quality version can't be reconstucted.
+2. The UI is sometimes over budget in terms of memory usage, and so we run out of texture space, and need to downscale everything to make it fit.
+3. A flaw in the upscaling logic resulted in upscaling making it even more likely we'll go over the memory budget, compounding both the above issues.
+Fixes are nearing completion for all 3 of these issues, and we're hoping to squeeze them in before the final release. If we're able to, then we will expand the upscaling options.
+However, our UI is designed to be viewed at 1080p, and because much of it is within the game world (rather than composited on top as with many games) there may still be quality loss when upscaling to 1080p... but until I've seen the fixes to the above I can't judge whether the quality will be OK (hopefully), or if we need to limit the options at lower resolutions, or if we just let people suffer slightly blurry UI if they desperately need the frames.
+Cheers,
+Ali Brown
+Senior Director of Graphics and Procedural Tech

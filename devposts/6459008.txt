@@ -1,0 +1,72 @@
+## Star Citizen Patch 3.22.0
+Alpha Patch 3.22.0 has been released to the EPTU, and is now available to test! Patch should now show: VERSION 3.22.0-PTU.8962480.
+It is strongly recommended that players delete their USER and Shader folders for the Public client after patching, particularly if you start encountering any odd character graphical issues or crash on loading. The USER folder can be found (in default installations) at C:\Program Files\Roberts Space Industries\StarCitizen\EPTU. The Shader folders can be found here C:\Users\%username%\AppData\Local\Star Citizen.
+Audience: Wave 1
+Database Reset: Yes
+Technical: US/EU EPTU Channels
+Long Term Persistence: Enabled
+Pledge Copy: Enabled
+Starting aUEC: 15,000,000
+Testing Focus
+Jumptown 2.1 will be running all weekend starting at 7pm CST and will include a 4th new location as well as a Rastar redrop of the original 3.
+- Stability Testing
+- Player Hair Update
+- Mineables Balance
+- Procedural FPS Recoil / FPS Weapon Balance
+- Arena Commander Multicrew
+Features Not Yet Ready for Feedback/Testing
+The features listed here may be in the build in a partial state and are not ready for testing and may be subject to removal.  We are requesting players not give feedback for these new features listed below.
+- New Derelict Settlements
+- Inventory: Openable Cargo Containers
+Known Issues
+Arena Commander FPS modes have been disabled for this build due to an issue with invulnerable players
+- Stanton - Spawn Closet - Mission Content / AI - Enemy AI can spawn out of bounds of their intended spawn points (66% Repo)
+- Stanton - Mission Feature - UGF missions - Remaining hostiles AI not spawning in UGF bunker mission (4% repo)
+- Pu - Vehicles - Repair services - Unable to repair vehicles that have been soft deathed
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend (44% repo)
+- PU - Stanton - ASOP / Fleet Manager - ATC - When retrieving a ship it may spawn outside the hangar it is assigned to
+- Stanton - Multiship - When Quantum Travelling the player can be left stranded in space and their ship will disappear
+- PU - UI - Vehicle / Marker - Ships are missing their name and hangar number marker when spawned
+- Multivehicle - PU - Vehicles - When docking at a station the docking arm will not extend
+- Multivehicle - PU - Vehicles / UI - Vehicle HUD - When the missiles charge the UI does not update to reflect when they are ready to be fired
+- PU - Stanton - Actor - Player Spawning - Multiple Locations - When multiple players attempt to log in to the same location at the same time they may be assigned the same bed; those that spawn in after the initial player will be stuck
+- Origin 890 Jump - PU - Vehicles - Fleet Manager - When a vehicle is landed in the hangar of the 890J, the 890J can no longer stow correctly via ASOP/Fleet Manager or on logout
+- PU - Tractor Beam / Physics - When multiple players interact with the same cargo container using a Tractor Beam, those players' tractor beams may no longer work correctly on that container
+- Multivehicle - PU/AC - Vehicles / Weapons / Ship Components - All energy-based weapons state "0/0" in Ammo count on naturally spawned ships and cannot fire
+- Multivehicle - Vehicles / UI - Inner Thought - Player cannot exit the ship by using the "Exit Seat" option in PIT
+- AC - All Modes - Card UI Ignores Other Card Layering & Displays Above All Non-Card UI
+## New Features
+Gameplay
+- Salvage: Structural
+Implementing the ability to transform large chunks of metal salvaged from ships into a refinable material.
+Structural salvage is the next step in the salvage profession. Initially, It will bring additional functionality to the two salvage ships, The DRAKE Vulture and AEGIS Reclaimer. It will allow players to convert full ships into the resources RMC and Construction Components that can be sold. It will also bring an update to the way material is stored on the salvage ships. It will introduce the concept of “internal storage” which is a buffer in the ship that will fill. This buffer storage size will depend on the size of the salvaging ship. Once full the virtual storage needs to be emptied using the filler station. For Reclaimer owners, the salvage mode is only operable from the co-pilot seat. The Reclaimer salvage terminal can now export size 1, 2, 8, and 16 SCU cargo containers.
+Salvage Functionality is now split into multiple segments after entering Salvaging Mode (Default Keybind: M):
+- Hull Scraping (Default Keybind: G): The Current Salvage System to remove the hull from ships. If the Hull is not scraped off the material is lost in the process when moving onto steps 2-3.
+- Fracturing Mode (Default Keybind: RightAlt+W): This mode will break up intact ships or derelicts into smaller pieces
+- Disintegration (Default Keybind: RightAlt+S): This mode will generate the resource from the broken down pieces
+To start Fracturing Mode on a ship, point to the ship you want to fracture and enter Fracturing mode. Once fracture mode has been started, the ship will then break apart in a certain period of time based on the size of the ship.
+To Start Disintegration Mode, point to the newly fragmented parts of a ship and engage the Disintegration mode to break apart the chunks and collect them into the salvage buffer storage of your ship. Fracture/Disintegration field salvage speed is linearly proportional base on position and distances.
+Once the salvage material fills the buffer storage, have the filler station fill a commodity box and move to the ship's cargo grid.
+## Feature Updates
+Characters
+- Player Hair Update
+Updating the Star Citizen character customizer with 20 hairstyles from Squadron 42. This includes long hair, tied hair, and includes updates and changes to existing short hairstyles.
+Gameplay
+- Procedural Weapon Recoil and FPS Combat Balance
+Introduction of Procedural Weapon Aim Recoil to FPS combat. With this update we have overhauled the recoil of the majority of the weapons to use the new and improved procedural recoil tool shown at CitizenCon, this will improve the diversity of the weapon sandbox allowing each weapon to fulfil a more specific and niche role whilst allowing for more intense visual recoil.
+Overall you will find greater weapon variety in how weapons play and feel with tweaks such as weapons now having consistent recoil patterns and the removal of ADS spread.
+- Full Weapon Reworks: The Arclight Pistol has had a full rework and is now a burst pistol with an alt fire mode of single fire. The LH86 Pistol is now fully automatic.
+- Fire Rate Changes:  Demenco, S71, and P4AR have all been reworked to increase their fire rates. Lumin V burst delay has been decreased.
+- Force Reaction Updates: Forces have been tweaked across a range of weapons to make knockdowns only occur in situations where that would 'feel' that should occur. This should appear as an overall reduction in staggers & knockdowns.
+- Other changes include balances to sniper rifles to avoid players in heavy armor being 1 shot when hit by a sniper rifle while still allowing this to happen to players wearing medium armor.
+Along with weapon balance changes we have adjusted player health, damage modifiers, and medical to increase time to kill (TTK).
+- Damage modifiers have been adjusted to allow for more consistent fire fights & times.  Removed increased stamina costs on limb HP pools being low. Removed movement speed penalty on limb HP pools being low. Medical Pens will now fully heal players.
+This is overall the first pass major pass towards a new TTK goal, the FPS team is eager to hear feedback about how you feel about the current values!
+- Tractor/Towing UI Updates
+Made several UI positional changes to help increase readability. Several updates include: Deflection flipped in SRV cockpit, range bar ease factor, target name above status, force bar fixes and includes centering force, throttle/gimbal widgets hidden in turrets, towing UI scale-up, turret orientation feedback more marked, radar plane more perspective, range bar readability improvements
+- Ship Mining Balance Pass
+Adjustment to scaling for ship mineable nodes to adjust mining to trend slightly closer to Prospector difficulties.
+- Armor Shop Prices have all been increased across the board. (Excluding Flight Suits and Undersuits)
+Core Tech
+- Updated Frontend tooltips explaining why a server can't be changed to include crash recovery as well as combat logging
+- AI On Foot Performance Optimizations
