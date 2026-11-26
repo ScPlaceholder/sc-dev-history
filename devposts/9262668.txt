@@ -1,0 +1,63 @@
+Alpha Patch 5.0 has been released and is now available to test on the PTU environment! Patch should now show: VERSION 5.0.0-PTU.13284307
+- Audience: All Backers
+- Server Info: PTU Channel - US Only
+- Long Term Persistence: Enabled
+Testing/Feedback Focus
+50x Rep reward multiplier is currently active on PTU
+- Stability, Bugfixes, LTP between PTU releases
+- Genesis (Planet Tech V5)
+- Nyx 1
+- Starchitect Points of Interest
+- Mission Boards and Local Missions
+- Intraplanetary Server Meshing
+- Time To Kill (TTK) Vehicle Balance
+- Missile Lock Interface Update
+- VOIP Reliability Improvements
+## Feature Updates
+Reputation
+Guild reputation pages are now populated in the mobiGlas. The first six ranks for each guild have names and icons, where the pages were previously blank.
+- Bounty names are now color highlighted throughout the full bounty description rather than only in part of it
+- Mission reward strings added across the Nyx I contracts
+Starchitect Locations
+Lighting work continues across the guild halls, compounds, turret tiles and interiors, with light leaks sealed, spill lighting added to light boxes, and shadow casting distances tuned on safes, drop-off points and career boards for performance. Extraction units and building exteriors have been tinted, since white at every location was reading as repetitive.
+Performance has also had attention. The imposter shader is around 25% faster through moving work earlier in the pipeline, and the planet texture bake has been substantially sped up.
+- Building architecture now reads more clearly on the minimap across habitation, landing pads and depots
+- Administrator dialogue now takes priority when speaking to the player, so NPCs no longer talk over them
+- Potential Fix: AI reactions resetting after a nearby NPC was killed, leaving enemies unaware they were under attack
+- Potential Fix: Door panels in the 80m guild hall reading as "Locked" while the door was actually open (STARC-224270)
+- Potential Fix: Fractured mining nodes highlighting orange instead of purple, and disintegrating when fractured with a mining vehicle
+- Potential Fix: A broken ledge in the 60m logistics building, with further ledge adjustments across the landing pads
+- Potential Fix: Overly bright lighting on a prop, and a sorting issue on a compound interactable screen
+Contracts
+- Potential Fix: Contracts sending players to a Tactical Strike Group location where station defenses would attack them (STARC-206902)
+- Potential Fix: Boss markers not reappearing if players died and returned to the location
+- Potential Fix: Ling mining contracts requesting plasma fuel, which was causing generation failures
+- Potential Fix: Three item delivery contracts failing to generate
+Genesis and Nyx I
+Atmospheric lighting has been extended to account for ground fog and rain volumes, so sky light is correctly dimmed beneath them and diffused sunlight is added back.
+- Ground cover now uses soil depth alone, so it no longer floats near bedrock (STARC-221075)
+- More stable surface wetting, and further water and VRAM optimization
+- Volumetric cloud improvements, including optional atmospheric reddening so sunset-lit clouds no longer wash out
+Audio
+- Combat music transition polish
+- Starchitect location reverb polish
+- Ship weapon mix pass
+- Potential Fix: Loud mortar fire explosions audible the moment a player entered a Siege of Orison instance
+## Bug Fixes & Technical
+- Potential Fix: Points of interest missing on ArcCorp, which now appear in navigation
+- Potential Fix: Quantum travel routes resetting immediately after being set (STARC-197023)
+- Potential Fix: "Failed Awaiting Manual Delivery to Freight Elevator" appearing when selling cargo at a commodity kiosk, including from the Hull C
+- Potential Fix: Claim Insured and default loadout timers being extremely long at Levski
+- Potential Fix: Armor providing no protection in Arena Commander, leaving most weapons killing in one or two shots (STARC-200568)
+- Potential Fix: Vehicles retrieved with their lighting stuck in the emergency state
+- Potential Fix: Having to jump to reach the front elevator access point on all Origin 600i variants
+- Potential Fix: Equipped helmets disappearing after approaching the closed hab door during the tutorial
+- Potential Fix: Players taking damage and clipping into the hab desk when standing up from the chair at Lorville (STARC-197923)
+- Potential Fix: 1/8 SCU commodities and mission items fitting inside backpacks
+- Potential Fix: The Palatino backpack (from Vanduul Incursion) appearing offset from the character's hands while being carried
+Crash Fixes
+- Potential Fix: Client watchdog timeout while initializing mission locations
+- Potential Fix: Server crash during persistent spawning
+- Potential Fix: Server crash from a fire extinguisher spawn callback
+- Potential Fix: Server-side assert when destroying stowed entity hierarchies
+- Potential Fix: Client and server crashes from missing paint materials and a missing backpack attachment point
